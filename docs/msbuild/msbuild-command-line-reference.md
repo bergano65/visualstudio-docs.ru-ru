@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90354cdc30785099d68d36781d7916de52b58705
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278401"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072363"
 ---
 # <a name="msbuild-command-line-reference"></a>Справочник по командной строке MSBuild
 
@@ -80,11 +80,12 @@ MSBuild.exe [Switches] [ProjectFile]
 |-distributedFileLogger|-dfl|Записывать выходные данные сборки каждого узла MSBuild в собственный файл. Первоначальным расположением этих файлов является текущий каталог. По умолчанию файлам присваиваются имена *MSBuild\<идентификатор_узла>.log*. Чтобы указать расположение файлов и другие параметры для средства ведения журнала fileLogger, используйте переключатель **-fileLoggerParameters**.<br /><br /> Если вы укажете имя для файла журнала с помощью переключателя **-fileLoggerParameters**, распределенное средство ведения журнала будет использовать это имя как шаблон, добавляя к нему значение идентификатора узла при создании файлов журнала для каждого узла.|
 |-distributedLogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|Вести журнал событий из MSBuild, присоединяя разные экземпляры журнала к каждому узлу. Чтобы указать несколько средств ведения журнала, укажите отдельно каждое из них.<br /><br /> Синтаксис средства ведения журнала позволяет указать средство ведения журнала. Синтаксис средства ведения журнала представлен ниже в описании переключателя **-logger**.<br /><br /> В следующих примерах демонстрируется использование этого переключателя.<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[число]*|-fl[`number`]|Записать выходные данные сборки в один файл в текущем каталоге. Если не указать `number`, выходной файл будет назван *msbuild.log*. Если указать `number`, именем выходного файла будет *msbuild\<n>.log*, где \<n> — `number`. Значение `Number` может быть цифрой от 1 до 9.<br /><br /> Чтобы указать расположение файлов и другие параметры для средства ведения журнала fileLogger, используйте переключатель **-fileLoggerParameters**.|
-|-fileLoggerParameters:[number]<br /><br /> `parameters`|-flp:[ `number`] `parameters`|Указывает любые дополнительные параметры для средства ведения журнала файла и распределенного средства ведения журнала файла. Наличие этого параметра подразумевает, что присутствует и соответствующий параметр — **filelogger[** `number` **]** . Значение `Number` может быть цифрой от 1 до 9.<br /><br /> Можно использовать все параметры, которые указаны для **-consoleloggerparameters**. Также можно использовать один или несколько следующих параметров:<br /><br /> -   **LogFile**. Путь к файлу журнала, в который записывается журнал сборки. Распределенное средство ведение журнала файла добавляет этот путь к именам файлов журнала.<br />-   **Append**. Определяет, добавляется ли журнал сборки в файл журнала или перезаписывает его. Если задать переключатель, журнал сборки добавляется в файл журнала. Если переключатель отсутствует, содержимое существующего файла журнала перезаписывается.<br />     Если включить переключатель добавления независимо от того, установлено значение true или false, журнал будет добавлен. Если переключатель добавления не указан, журнал будет перезаписан.<br />     В этом случае файл перезаписывается: `msbuild myfile.proj -l:FileLogger,Microsoft.Build;logfile=MyLog.log`.<br />     В этом случае файл добавляется: `msbuild myfile.proj -l:FileLogger,Microsoft.Build;logfile=MyLog.log;append=true`.<br />     В этом случае файл добавляется: `msbuild myfile.proj -l:FileLogger,Microsoft.Build;logfile=MyLog.log;append=false`.<br />-   **Encoding**. Указывает кодировку для файла (например, UTF-8, Юникод или ASCII).<br /><br /> В следующем примере создаются отдельные файлы журнала для предупреждений и ошибок.<br /><br /> `-flp1:logfile=errors.txt;errorsonly -flp2:logfile=warnings.txt;warningsonly`<br /><br /> Ниже приведены примеры других возможностей.<br /><br /> `-fileLoggerParameters:LogFile=MyLog.log;Append; Verbosity=diagnostic;Encoding=UTF-8`<br /><br /> `-flp:Summary;Verbosity=minimal;LogFile=msbuild.sum`<br /><br /> `-flp1:warningsonly;logfile=msbuild.wrn`<br /><br /> `-flp2:errorsonly;logfile=msbuild.err`|
+|-fileLoggerParameters:[number]<br /><br /> `parameters`|-flp[ `number`]: `parameters`|Указывает любые дополнительные параметры для средства ведения журнала файла и распределенного средства ведения журнала файла. Наличие этого параметра подразумевает, что присутствует и соответствующий параметр — **filelogger[** `number` **]** . Значение `Number` может быть цифрой от 1 до 9.<br /><br /> Можно использовать все параметры, которые указаны для **-consoleloggerparameters**. Также можно использовать один или несколько следующих параметров:<br /><br /> -   **LogFile**. Путь к файлу журнала, в который записывается журнал сборки. Распределенное средство ведение журнала файла добавляет этот путь к именам файлов журнала.<br />-   **Append**. Определяет, добавляется ли журнал сборки в файл журнала или перезаписывает его. Если задать переключатель, журнал сборки добавляется в файл журнала. Если переключатель отсутствует, содержимое существующего файла журнала перезаписывается.<br />     Если включить переключатель добавления независимо от того, установлено значение true или false, журнал будет добавлен. Если переключатель добавления не указан, журнал будет перезаписан.<br />     В этом случае файл перезаписывается: `msbuild myfile.proj -l:FileLogger,Microsoft.Build;logfile=MyLog.log`.<br />     В этом случае файл добавляется: `msbuild myfile.proj -l:FileLogger,Microsoft.Build;logfile=MyLog.log;append=true`.<br />     В этом случае файл добавляется: `msbuild myfile.proj -l:FileLogger,Microsoft.Build;logfile=MyLog.log;append=false`.<br />-   **Encoding**. Указывает кодировку для файла (например, UTF-8, Юникод или ASCII).<br /><br /> В следующем примере создаются отдельные файлы журнала для предупреждений и ошибок.<br /><br /> `-flp1:logfile=errors.txt;errorsonly -flp2:logfile=warnings.txt;warningsonly`<br /><br /> Ниже приведены примеры других возможностей.<br /><br /> `-fileLoggerParameters:LogFile=MyLog.log;Append; Verbosity=diagnostic;Encoding=UTF-8`<br /><br /> `-flp:Summary;Verbosity=minimal;LogFile=msbuild.sum`<br /><br /> `-flp1:warningsonly;logfile=msbuild.wrn`<br /><br /> `-flp2:errorsonly;logfile=msbuild.err`|
 |-logger:<br /><br /> `logger`|-l:`logger`|Задает средство ведения журнала для записи событий MSBuild. Чтобы указать несколько средств ведения журнала, укажите отдельно каждое из них.<br /><br /> Используйте следующий синтаксис для `logger`: `[``LoggerClass``,]``LoggerAssembly``[;``LoggerParameters``]`.<br /><br /> Используйте следующий синтаксис для `LoggerClass`: `[``PartialOrFullNamespace``.]``LoggerClassName`.<br /><br /> Если сборка содержит ровно одно средство ведения журнала, его класс указывать не нужно.<br /><br /> Используйте следующий синтаксис для `LoggerAssembly`: `{``AssemblyName``[,``StrongName``] &#124;` `AssemblyFile``}`.<br /><br /> Параметры средства ведения журнала являются необязательными и передаются в него точно по мере их ввода.<br /><br /> В следующих примерах используется переключатель **-logger**.<br /><br /> `-logger:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-logger:XMLLogger,C:\Loggers\MyLogger.dll;OutputAsHTML`|
 |-noConsoleLogger|-noconlog|Отключить средство ведения журнала консоли по умолчанию и не записывать события на консоль.|
 
 ## <a name="example"></a>Пример
+
  В следующем примере создается целевой объект `rebuild` проекта *MyProject.proj*.
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>Пример
+
  Файл *MSBuild.exe* можно использовать для выполнения более сложных сборок. Например, можно использовать его для создания конкретных целевых объектов определенных проектов в решении. В следующем примере повторно создается проект `NotInSolutionFolder` и удаляется проект `InSolutionFolder`, который находится в папке решения *Новая_папка*.
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
 - [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md)

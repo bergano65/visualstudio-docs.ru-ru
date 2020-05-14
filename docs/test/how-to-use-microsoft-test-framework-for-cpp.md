@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75755567"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Использование платформы модульного тестирования Майкрософт для C++ в Visual Studio
@@ -35,7 +35,7 @@ ms.locfileid: "75755567"
 
    1. Щелкните стрелку вниз в следующих строках и выберите **\<Изменить>** . Добавьте следующие пути:
 
-      | Каталог | Свойство. |
+      | Каталог | Свойство |
       |-| - |
       | **Каталоги включаемых файлов** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
       | **Каталоги библиотек** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
@@ -110,12 +110,12 @@ TEST_METHOD(Method1)
 
 В `CppUnitTest.h` имеются указанные ниже предварительно определенные признаки. Дополнительные сведения см. в разделе [Справочные материалы по API платформы модульного тестирования Майкрософт для C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Макрос|Описание|
+|Макрос|Description|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Используйте макрос TEST_METHOD_ATTRIBUTE, чтобы определить признак.|
 |`TEST_OWNER(ownerAlias)`|Стандартный признак "Владелец" позволяет указать владельца метода теста.|
 |`TEST_PRIORITY(priority)`|Стандартный признак "Приоритет" служит для назначения относительного приоритета методам теста.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Краткое руководство. Разработка на основе тестирования с помощью обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)

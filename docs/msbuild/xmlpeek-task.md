@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e10cf26ad23e6fe4c881f68ad87bc80d04f2cf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590973"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094671"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek - задача
+
 Возвращает из XML-файла значения, указанные в запросе XPath.
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `XmlPeek` .
 
 |Параметр|Описание|
@@ -38,8 +40,41 @@ ms.locfileid: "75590973"
 |`XmlInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает входные данные XML в виде пути к файлу.|
 
 ## <a name="remarks"></a>Примечания
+
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
+
+
+## <a name="example"></a>Пример
+
+Вот примера XML-файла `settings.config` для чтения:
+
+```xml
+<appSettings>
+  <add key="ProjectFolder" value="S1" />
+</appSettings>
+```
+
+В этом примере для чтения `value` следует использовать код наподобие следующего:
+
+```xml
+<Target Name="BeforeBuild">
+    <XmlPeek XmlInputPath="settings.config" Query="appSettings/add[@key='ProjectFolder']/@value">
+        <Output TaskParameter="Result" ItemName="value" />
+    </XmlPeek>
+    <Message Text="Using project folder @(value)." Importance="high" />
+    <PropertyGroup>
+        <ProjectFolder>@(value)</ProjectFolder>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Projects\$(ProjectFolder)\Controls\Control1.ascx.cs">
+            <SubType>ASPXCodeBehind</SubType>
+        </Compile>
+    </ItemGroup>
+</Target>
+```
+
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

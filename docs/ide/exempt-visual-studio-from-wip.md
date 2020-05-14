@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588568"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Настройка Visual Studio как приложения, свободного от WIP
@@ -34,6 +34,6 @@ ms.locfileid: "75588568"
 
 Чтобы указать, где Visual Studio может обращаться к корпоративным данным в сети, выполните следующие [действия для определения, где защищенные приложения могут находить и отправлять корпоративные данные](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Чтобы запретить Windows блокирование подключений к облачным ресурсам через IP-адрес, обязательно добавьте в параметр строку /\*AppCompat\*/.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поведение приложения с поддержкой WIP](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

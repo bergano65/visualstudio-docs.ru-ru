@@ -1,27 +1,27 @@
 ---
-title: IDebugExpressionEvaluator2 | Документация Майкрософт
+title: IDebugExpressionО-оценщик2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2 interface
 ms.assetid: cebe649f-1c77-4d33-854f-30d4f00eceb4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b00085cdeb743bda991805cd0fb6d44302560f2d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7041456bf0f3ae7930a73399d43dbf7cac6b3b32
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343868"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729138"
 ---
 # <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Представляет улучшенная версия вычислитель выражений (EE).
+ Представляет собой расширенную версию оценщика выражения (EE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,24 +29,24 @@ ms.locfileid: "66343868"
 IDebugExpressionEvaluator2 : IDebugExpressionEvaluator
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Этот интерфейс реализуется вычислитель выражений.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Этот интерфейс реализован оценщиком выражения.
 
 ## <a name="methods"></a>Методы
- В дополнение к методам на [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) интерфейс, этот интерфейс реализует следующие методы:
+ В дополнение к методам на интерфейсе [IDebugExpressionEvaluator,](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|Извлекает объект службы по заданному идентификатору.|
-|[PreloadModules](../../../extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules.md)|Предварительно загружает модули, заданное поставщиком указанного символа.|
-|[SetCallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcallback.md)|Включает средство оценки выражений (EE) для указания интерфейс обратного вызова, который ядро отладки (DE) будет использовать для чтения настроек метрик.|
-|[SetCorPath](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcorpath.md)|Задает путь к общеязыковой среды выполнения (CLR), загрузить в отладчик.|
-|[SetIDebugIDECallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setidebugidecallback.md)|Включает модуль отладки для передачи в обратный вызов средство оценки выражений во время инициализации.|
-|[Terminate](../../../extensibility/debugger/reference/idebugexpressionevaluator2-terminate.md)|Останавливает и удаляет средство оценки выражений.|
+|[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|Извлекает объект обслуживания с учетом его уникального идентификатора.|
+|[PreloadModules](../../../extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules.md)|Предзагружает модули, назначенные указанным поставщиком символов.|
+|[SetCallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcallback.md)|Позволяет оценщику выражения (EE) указать интерфейс обратного вызова, который будет использовать для чтения параметров метрики.|
+|[SetCorPath](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcorpath.md)|Устанавливает путь к общему времени выполнения языка (CLR), загруженным в отладчик.|
+|[SetIDebugIDECallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setidebugidecallback.md)|Позволяет отладке двигателя передать обратный вызов оценщику выражения во время инициализации.|
+|[Завершить](../../../extensibility/debugger/reference/idebugexpressionevaluator2-terminate.md)|Останавливает и очищает оценщика выражения.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: EE.h
+ Заголовок: Ee.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

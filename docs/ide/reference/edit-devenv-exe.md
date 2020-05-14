@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595700"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -33,13 +33,13 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  Необязательный элемент. Файл, открываемый в существующем экземпляре Visual Studio. Если экземпляр Visual Studio отсутствует, в упрощенном окне создается новый экземпляр, в котором открывается *File1*.
+  Необязательный параметр. Файл, открываемый в существующем экземпляре Visual Studio. Если экземпляр Visual Studio отсутствует, в упрощенном окне создается новый экземпляр, в котором открывается *File1*.
 
 - *FileN*
 
-  Необязательный элемент. Один или несколько дополнительных файлов для открытия в существующем экземпляре Visual Studio.
+  Необязательный параметр. Один или несколько дополнительных файлов для открытия в существующем экземпляре Visual Studio.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если файл не указан, используется существующий экземпляр Visual Studio. Если файл не указан и экземпляр Visual Studio отсутствует, создается новый экземпляр с упрощенным макетом окна.
 
@@ -57,6 +57,6 @@ devenv /edit MyFile.cs
 devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)

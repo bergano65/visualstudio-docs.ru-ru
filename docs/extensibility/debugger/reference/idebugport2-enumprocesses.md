@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::EnumProcesses | Документация Майкрософт
+title: IDebugPort2::EnumProcesses Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c1b5b43007e43a5cee368622d808d20ad5b83b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb3b3bc07cc784300fd80626acd7f0cd6179773c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343816"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725447"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
-Возвращает список всех процессов, работающий с портом.
+Возвращает список всех процессов, работающих в порту.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int EnumProcesses( 
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-[out] Возвращает [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) , содержащий список всех процессов, работающий с портом.
+(ваут) Возвращает объект [IEnumDebugProcesses2,](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) содержащий список всех процессов, работающих в порту.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

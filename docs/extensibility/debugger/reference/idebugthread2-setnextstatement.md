@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement | Документация Майкрософт
+title: IDebugThread2::SetNextStatement Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87a5ba19eed0c0ee4d78feeb755b50db428d77d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b390e5c021fa069ae3fb09eef1978caaf9cc8ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320090"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718648"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-Задает контекст данного кода текущего указателя инструкций.
+Устанавливает текущий указатель инструкции к заданному контексту кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,22 +43,22 @@ int SetNextStatement ( 
 
 ## <a name="parameters"></a>Параметры
 `pStackFrame`\
-Зарезервировано для будущего использования; присвоено значение null.
+Зарезервировано для использования в будущем; установлен на нулевую стоимость.
 
 `pCodeContext`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , описывающий расположение кода должна быть выполнена и его контекста.
+(в) Объект [IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) описывающий местоположение кода, которое должно быть выполнено, и его контекст.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены другие возможные значения.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. В следующей таблице показаны другие возможные значения.
 
 |Значение|Описание|
 |-----------|-----------------|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Следующий оператор не может быть в кадре стека, глубже на кадра стека.|
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Следующий оператор не связан с любой кадра в стеке.|
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Некоторые отладчики не удается задать следующий оператор после исключения.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Следующее утверждение не может быть в кадре стека глубже в стеке кадра.|
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Следующее утверждение не связано с какой-либо кадром в стеке.|
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Некоторые отладки двигателей не могут установить следующее заявление после исключения.|
 
 ## <a name="remarks"></a>Примечания
- Указатель инструкции указывает Далее инструкцию или инструкции для выполнения. Этот метод используется в том случае, чтобы повторить попытку строке исходного кода или для принудительного выполнения продолжать в другую функцию, например.
+ Указатель инструкции указывает следующую инструкцию или инструкцию для выполнения. Этот метод используется для повторной попытки строки исходного кода или для принудительного выполнения для продолжения в другой функции, например.
 
 ## <a name="see-also"></a>См. также
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

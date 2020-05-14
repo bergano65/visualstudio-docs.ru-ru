@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2 | Документация Майкрософт
+title: IEnumDebugОшибкаОшибок2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d204b29b46e257d4ca0b8c4102c3a64e9e78adf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317232"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716883"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
-Этот интерфейс перечисляет точек останова ошибок, связанных с ожидающая точка останова.
+Этот интерфейс перечисляет точки разрыва ошибок, связанные с ожидавшейся точкой разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,30 +28,30 @@ ms.locfileid: "66317232"
 IEnumDebugErrorBreakpoints2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс как часть поддержки точек останова.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс как часть своей поддержки точек разрыва.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Visual Studio вызывает [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) для получения этого интерфейса, представляющий список точек останова, которые не удается найти метод, или [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) для получения этого интерфейса, представляющий список точек останова не были привязаны.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Visual Studio вызывает [CanBind,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) чтобы получить этот интерфейс, представляющий список моментов разрыва, которые не могут быть связаны, или [EnumErrorBreakpoints,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) чтобы получить этот интерфейс, представляющий список точек разрыва, которые не были связаны.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IEnumDebugErrorBreakpoints2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Вперед](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Извлекает указанное число точек останова ошибок в последовательности перечисления.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Пропускает заданное число точек останова ошибок в последовательности перечисления.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Сбрасывает последовательность перечислений в начало.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Получает номер ошибки точки останова в перечислителе.|
+|[Далее](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Извлекает определенное количество моментов ошибки в последовательности перечисления.|
+|[Пропустить](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Пропускает определенное количество моментов ошибки в последовательности перечисления.|
+|[Сбросить](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Сбрасывает последовательность перечислений в начало.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md) (Клонировать)|Создает регистратор, содержащий то же состояние перечисления, что и текущий регистратор.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Получает количество моментов ошибки в регистраторе.|
 
 ## <a name="remarks"></a>Примечания
- Этот интерфейс содержит список [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) интерфейсов, каждый из которых описывает точку останова, не удалось выполнить привязку и почему он не удалось выполнить привязку. Visual Studio использует `IEnumDebugErrorBreakpoint2` интерфейса для обновления точки останова, показанный в интегрированной среде разработки.
+ Этот интерфейс содержит список интерфейсов [IDebugErrorBreakpoint2,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) каждый из которых описывает точку разрыва, которая не может быть связана и почему она не может быть связана. Visual Studio `IEnumDebugErrorBreakpoint2` использует интерфейс для обновления моментов, показанных в IDE.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

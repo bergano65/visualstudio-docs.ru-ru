@@ -12,23 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 921b5d2d4aad7cfe48b7f6cc9cb802fde9520e19
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585262"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633932"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Практическое руководство. Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Практическое руководство. Построение особых целей в решениях с помощью MSBuild.exe
+
 Можно использовать *MSBuild.exe* для создания конкретных целевых объектов определенных проектов в решении.
 
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении
+## <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении
 
 1. В командной строке введите `MSBuild.exe <SolutionName>.sln`, где `<SolutionName>` соответствует имени файла решения, содержащего целевой объект, который требуется выполнить.
 
 2. Укажите целевой объект после параметра `-target:` в формате \<имя_проекта>:\<имя_целевого_объекта>. Если в имени проекта содержатся символы `%`, `$`, `@`, `;`, `.`, `(`, `)` или `'`, замените их на `_` в указанном имени целевого объекта.
 
 ## <a name="example"></a>Пример
+
  В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка*.
 
 ```cmd
@@ -41,7 +43,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 Не выполняйте сборку с этой заданной переменной среды, пока вам не потребуется этом внутреннее представление. Этот параметр может вызвать проблемы сборки в решении.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
 - [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

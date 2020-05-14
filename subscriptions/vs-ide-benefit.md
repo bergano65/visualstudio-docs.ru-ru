@@ -1,17 +1,18 @@
 ---
 title: Преимущество Studio IDE в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/14/2019
+ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 84666b0fd4362002fe15b21a6f23cd96c9cdc6a1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491590"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649563"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
@@ -61,14 +62,14 @@ ms.locfileid: "74491590"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Yes          |
-| Visual Studio Enterprise с GitHub Enterprise   | VL | Доступно       |  Yes          |
-| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Yes          |
-| Visual Studio Professional с GitHub Enterprise | VL   | Доступно              |  Yes          |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Yes         |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
+| Visual Studio Enterprise с GitHub Enterprise   | VL | Доступно       |  Да          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Да          |
+| Visual Studio Professional с GitHub Enterprise | VL   | Доступно              |  Да          |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Да         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  Не включает следующие категории: ПО и службы MCT.*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  Не включает следующие категории: ПО и службы MCT.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -80,6 +81,12 @@ ms.locfileid: "74491590"
   - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Документация](/visualstudio/)
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Установив Visual Studio, не забудьте активировать следующие важные преимущества:

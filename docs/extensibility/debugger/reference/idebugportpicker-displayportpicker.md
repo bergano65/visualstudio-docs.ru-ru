@@ -1,28 +1,28 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker | Документация Майкрософт
+title: 'IDebugPortPicker: :DisplayPortPicker Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - DisplayPortPicker
 - IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 815b44735e36489991da84216e2fcc6db8e6fab4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e0a02169b37bba804034990ed5d972f973244769
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308756"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724888"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
-Отображает указанный диалоговое окно, которое позволяет пользователю выбрать порт.
+Отображает указанное поле диалога, которое позволяет пользователю выбрать порт.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,13 +42,13 @@ public int DisplayPortPicker(
 
 ## <a name="parameters"></a>Параметры
 `hwndParentDialog`\
-[in] Дескриптор родительского диалогового окна.
+(в) Ручка для родительского диалогового окна.
 
 `pbstrPortId`\
-[out] Строка идентификатора порта.
+(ваут) Строка идентификатора порта.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращаемое значение, равное `S_FALSE` (или возвращаемое значение, равное `S_OK` с `BSTR` присвоено `NULL`) указывает, что пользователь нажал **отменить**.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Значение возврата `S_FALSE` (или значения возврата `S_OK` с `BSTR` набором) `NULL`указывает на то, что пользователь нажал **На кнопку «Отмена».**
 
 ## <a name="see-also"></a>См. также
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

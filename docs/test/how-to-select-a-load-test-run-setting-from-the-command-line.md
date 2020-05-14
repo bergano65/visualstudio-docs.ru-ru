@@ -10,17 +10,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588997"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Практическое руководство. выбор параметров запуска нагрузочного теста из командной строки
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Практическое руководство. Выбор параметров запуска нагрузочного теста из командной строки
 
 Нагрузочный тест может содержать *параметры запуска*, которые представляют собой свойства, определяющие способ выполнения нагрузочного теста. Параметры запуска организованы по категориям в окне **Свойства**. При запуске нагрузочного теста используются те параметры запуска, которые указаны как активные.
 
-Если нагрузочный тест содержит только один набор параметров запуска, этот узел всегда является активным. Если нагрузочный тест содержит несколько узлов параметров, при запуске любой из них можно выбрать с помощью командной строки. См. практическое руководство по [ Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Если нагрузочный тест содержит только один набор параметров запуска, этот узел всегда является активным. Если нагрузочный тест содержит несколько узлов параметров, при запуске любой из них можно выбрать с помощью командной строки. См. статью [Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "75588997"
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [Практическое руководство. выбор активного параметра запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [Практическое руководство. Выбор активного параметра запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

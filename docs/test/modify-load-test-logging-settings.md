@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566310"
 ---
 # <a name="modify-load-test-logging-settings"></a>Изменение параметров ведения журнала для нагрузочного теста
@@ -28,6 +28,6 @@ ms.locfileid: "75566310"
 |**Сохранение журналов в случае неудачного завершения нагрузочного теста**. Можно указать, требуется ли сохранять журнал тестирования в случае сбоя нагрузочного теста.|-   [Практическое руководство. Включение и отключение записи сбоев тестов в журнал тестирования](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Задание максимального размера файла журнала**. Вы можете изменить XML-файл конфигурации, связанный со службой контроллера тестирования, указав максимальный размер, который может иметь файл журнала.|Измените `<add key="LogSizeLimitInMegs" value="20"/>` в XML-файле конфигурации *QTCcontroller.exe.config*.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)

@@ -2,36 +2,37 @@
 title: Создание проекта
 description: Создание проекта с помощью образца из коллекции Машинного обучения Azure
 keywords: ии, visual studio, машинное обучение azure
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915899"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638675"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Создание проекта ИИ с помощью коллекции машинного обучения Azure в Visual Studio
 
 Машинное обучение Azure интегрировано с инструментами Visual Studio для сценариев ИИ. Вы можете использовать его для отправки заданий машинного обучения на удаленные целевые вычислительные ресурсы, например виртуальные машины Azure, кластеры Spark и т. д. 
 
-После [установки инструментов Visual Studio для сценариев ИИ](installation.md) вы можете легко создать проект Python с помощью готовых рецептов из коллекции примеров машинного обучения Azure.
+После [установки инструментов Visual Studio для сценариев ИИ](installation.md) можно легко создать проект Python с помощью готовых рецептов из коллекции образцов машинного обучения Azure.
 
 > [!NOTE]
 > Необходимо установить Azure Machine Learning Workbench. Для этого ознакомьтесь с разделом [Краткое руководство по установке машинного обучения Azure](/azure/machine-learning/preview/quickstart-installation)
 
-1. Запустите Visual Studio. Откройте **обозреватель сервера**, открыв меню **Инструменты ИИ** и выбрав пункт **Выбрать кластер**
+1. Запустите Visual Studio. Откройте **обозреватель сервера**, открыв меню **Инструменты ИИ** и выбрав пункт **Выбрать кластер**.
 
     ![Выбор кластера](media/create-project-gallery/select-cluster.png)
 
 2. Войдите в свою подписку машинного обучения Azure. Для этого щелкните правой кнопкой мыши узел **Машинное обучение Azure** в обозревателе сервера, выберите **Войти** и следуйте указаниям.
 
-    ![Вход](media/create-project-gallery/azureml-login.png)
+    ![login](media/create-project-gallery/azureml-login.png)
 
 3. Последовательно выберите **"Инструменты ИИ" > "Коллекция примеров машинного обучения Azure"** .
 
@@ -40,14 +41,14 @@ ms.locfileid: "75915899"
 4. Для этого краткого руководства выберите образец **MNIST using TensorFlow** и нажмите кнопку **Установить**. Укажите следующие сведения:
 
    - **Группа ресурсов**: группа ресурсов Azure, в которой будут храниться ваши метаданные
-   - **Учетная запись**: учетная запись экспериментирования в машинном обучении Azure
-   - **Рабочая область**: рабочая область машинного обучения Azure
+   - **Учетная запись**: учетная запись экспериментирования в машинном обучении Azure
+   - **Рабочая область**: рабочая область машинного обучения Azure
    - **Тип проекта**: платформа машинного обучения. Для нашего случая выберите **TensorFlow**
    - **Добавить в решение**: определяет, следует ли добавлять образец в текущее решение Visual Studio или нужно создать и открыть новое решение
    - **Путь к проекту**: место, где будет сохранен код
    - **Имя проекта**: введите **TensorFlowMNIST**
 
-   ![Итоговый проект при использовании шаблона приложения Python](media/create-project-gallery/new-AzureSampleProject.png)
+   ![Итоговый проект при использовании шаблона приложения Python](media/create-project-gallery/new-AzureSampleProject.png)
 
 5. Visual Studio создает файл проекта (файл `.pyproj` на диске) вместе с другими файлами, заданными в образце. В случае с шаблоном MNIST проект содержит несколько файлов.
 

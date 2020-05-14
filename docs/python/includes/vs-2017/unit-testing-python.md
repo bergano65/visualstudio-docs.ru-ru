@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9843b47e38d5d33a25c455efe619dfcc033fb334
-ms.sourcegitcommit: 9f6f63a2d76c6e579b4b67a96ec86faba99ad1df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71933471"
 ---
 ## <a name="discover-and-view-tests"></a>Обнаружение и просмотр тестов
@@ -51,7 +51,7 @@ ms.locfileid: "71933471"
 
 Дополнительные сведения о модуле `unittest` и создании тестов можно получить в [документации по Python 2.7](https://docs.python.org/2/library/unittest.html) или в [документации по Python 3.7](https://docs.python.org/3/library/unittest.html) (python.org).
 
-## <a name="run-tests"></a>Выполнить тесты
+## <a name="run-tests"></a>Выполнение тестов
 
 В **обозревателе тестов** можно запустить тесты несколькими способами:
 

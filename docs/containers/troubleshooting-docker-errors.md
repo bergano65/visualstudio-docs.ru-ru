@@ -12,10 +12,10 @@ ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027273"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Устранение неполадок при разработке с Docker в Visual Studio
@@ -24,7 +24,7 @@ ms.locfileid: "77027273"
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Совместное использование тома не включено. Включите совместное использование тома в параметрах Docker CE для Windows (только для контейнеров Linux)
 
-Действия для устранения этой проблемы.
+Для разрешения этой проблемы:
 
 1. Щелкните правой кнопкой мыши **Docker for Windows** (Docker для Windows) в области уведомлений, а затем выберите **Параметры**.
 1. Выберите **Shared Drives** (Общие диски) и включите общий доступ для использования системного диска вместе с диском, на котором находится проект.

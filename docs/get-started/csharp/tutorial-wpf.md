@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579995"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Учебник. Создание простого приложения на C\#
@@ -66,7 +66,7 @@ ms.locfileid: "77579995"
 
      ![В строке меню выберите Файл, Создать, Проект](../media/exploreide-filenewproject.png "Снимок экрана: строка меню, в которой нужно выбрать Файл, Создать, Проект")
 
-1. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual C#** > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)**. Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
+1. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual C#**  > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)** . Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
 
      ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/exploreide-newprojectcsharp.png "Снимок экрана: шаблон приложения WPF в диалоговом окне Создать проект")
 
@@ -346,7 +346,7 @@ Visual Studio создает решение и проект HelloWPFApp, а в *
 
 1. Выполните сборку решения, выбрав **Сборка** > **Собрать решение**.
 
-Поздравляем с завершением этого учебника! Построенный файл *.exe* находится в каталоге решения и проекта (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Поздравляем с завершением этого учебника! Построенный файл *.exe* находится в каталоге решения и проекта ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="next-steps"></a>Следующие шаги
 

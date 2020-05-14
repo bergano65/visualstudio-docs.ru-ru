@@ -3,15 +3,16 @@ title: Инвентаризация подготовительных сред |
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
+ms.date: 03/06/2020
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов проводить предварительную инвентаризацию
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476731"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232758"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Инвентаризация подготовительной среды
 Подписки на Visual Studio упрощают управление активами благодаря инвентаризации пользователей, а не устройств.
@@ -29,16 +30,18 @@ ms.locfileid: "77476731"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об обязанностях администраторов:
 - [Обязанности администратора](admin-responsibilities.md)
 - [Управление большими рабочими группами и сторонними подрядчиками](manage-teams.md)
 - [Отслеживание назначений пользователей и обработка заказов](assignments-orders.md)
 - Используйте [Максимальное использование](maximum-usage.md) для учета обязательств по покупке
 
-## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 

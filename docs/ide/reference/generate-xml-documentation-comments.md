@@ -7,14 +7,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892144"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77706402"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Практическое руководство. вставку XML-комментариев для создания документации
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Практическое руководство. Вставка XML-комментариев для создания документации
 
 Visual Studio может помочь вам документировать элементы кода, такие как классы и методы, автоматически формируя стандартную структуру комментариев для XML-документации. Во время компиляции можно создать XML-файл, содержащий комментарии для документации.
 
@@ -50,16 +50,16 @@ Visual Studio может помочь вам документировать эл
 
 Стили можно использовать в комментариях XML, которые будут отображаться в виде кратких сведений при наведении указателя мыши на элемент. К этим стилям относятся курсив, полужирный шрифт, маркеры и ссылка, доступная для щелчка.
 
-   ![Ввод комментариев](media/doc-styles-cs.png) 
+   ![Ввод комментариев](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Существует [параметр](../../ide/reference/options-text-editor-csharp-advanced.md) для переключения комментариев XML-документации после ввода `///` в C# или `'''` Visual Basic. В строке меню выберите **Сервис** > **Параметры**, чтобы открыть диалоговое окно **Параметры**. Перейдите в раздел **Текстовый редактор** > **C#** или **Basic** > **Дополнительно**. В разделе **Справка редактора** найдите параметр **Создавать комментарии XML-документации**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Комментарии к XML-документации (руководство по программированию на C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Документирование кода с помощью XML-комментариев (руководство по C#)](/dotnet/csharp/codedoc)
-- [Практическое руководство. создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Практическое руководство. Создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Комментарии C++](/cpp/cpp/comments-cpp)
 - [XML-документация (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Создание кода](../code-generation-in-visual-studio.md)

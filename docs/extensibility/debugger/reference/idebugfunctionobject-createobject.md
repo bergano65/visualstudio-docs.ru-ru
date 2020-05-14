@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObject | Документация Майкрософт
+title: IDebugFunctionObject::CreateObject Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc0632f429a547d4b17fe57bec4582fea623ee24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320948"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728593"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
-Создает объект, с помощью конструктора.
+Создает объект с помощью конструктора.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,24 +47,24 @@ int CreateObject(
 
 ## <a name="parameters"></a>Параметры
 `pConstructor`\
-[in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) объект, представляющий конструктор объекта должен быть создан.
+(в) Объект [IDebugFunctionObject,](../../../extensibility/debugger/reference/idebugfunctionobject.md) представляющий конструктор амортизации, который должен быть создан.
 
 `dwArgs`\
-[in] Число параметров в `pArg` массива. Представляет число параметров, переданных конструктору.
+(в) Количество параметров в `pArg` массиве. Представляет количество параметров, переданных конструктору.
 
 `pArg`\
-[in] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объектов, представляющих параметры, переданные в конструктор.
+(в) Массив объектов [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющих параметры, передаваемые конструктору.
 
 `ppObject`\
-[out] Возвращает `IDebugObject` представляющий только что созданный объект.
+(ваут) Возвращает `IDebugObject` представляющий вновь созданный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Вызовите этот метод, чтобы создать объект, представляющий экземпляр класса (или других сложный тип, который требуется конструктор) то есть параметра функции, который представляется [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.
+ Вызовите этот метод для создания объекта, представляющего экземпляр класса (или другого сложного типа, требующего конструктора), который является параметром функции, представленной интерфейсом [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Если конструктор не требует параметра объекта, вызовите [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) метод.
+ Если параметр объекта не требует конструктора, позвоните в метод [CreateObjectNoConstructor.](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

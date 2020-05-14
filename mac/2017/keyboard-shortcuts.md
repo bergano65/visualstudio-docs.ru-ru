@@ -6,10 +6,10 @@ author: bytesguy
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: c0d51c0b458a1d4079eb935d40b09c260cf01186
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983638"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Стандартные сочетания клавиш в Visual Studio для Mac
@@ -124,7 +124,7 @@ ms.locfileid: "74983638"
 |Команды|Сочетания клавиш|
 |-|-|
 |Добавить файлы|**⌥⌘A**|
-|Построить|**⌘K**, **⇧F6**|
+|Построение|**⌘K**, **⇧F6**|
 |Собрать все|**⌘B**, **F6**|
 |Очистить|**⇧⌘K**|
 |Перестроить|**⌃⌘K**|

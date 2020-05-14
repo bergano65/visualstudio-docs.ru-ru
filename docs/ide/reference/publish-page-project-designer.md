@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926172"
 ---
 # <a name="publish-page-project-designer"></a>Страница публикации в конструкторе проектов
@@ -49,7 +49,7 @@ ms.locfileid: "68926172"
 
 Открывает диалоговое окно "Файлы приложения", в котором можно указать, как и куда устанавливаются отдельные файлы.
 
- **Необходимые компоненты**
+ **Предварительные требования**
 
 Открывает диалоговое окно "Предварительные условия", где можно указать необходимые компоненты, такие как платформа .NET Framework, которые требуется установить вместе с приложением.
 
@@ -79,7 +79,7 @@ ms.locfileid: "68926172"
 
 Приложение публикуется с использованием текущих параметров. Этот параметр эквивалентен кнопке **Готово** в **мастере публикаций**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Публикация приложений ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

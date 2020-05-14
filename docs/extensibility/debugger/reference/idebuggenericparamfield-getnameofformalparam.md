@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::GetNameOfFormalParam | Документация Майкрософт
+title: IDebugGenericParamField::GetNameOfFormalParam Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetNameOfFormalParam
 - GetNameOfFormalParam
 ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 180af2ef9f8c9e086091b80d3c0e80b0476d950c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03fb76b96804df900e21b0f91b9c5ba599449cf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330414"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727959"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
-Получает имя этого универсального параметра.
+Извлекает название этого общего параметра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int GetNameOfFormalParam (
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-[out] Имя универсального параметра.
+(ваут) Название этого общего параметра.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugGenericParamFieldType,** который предоставляет интерфейс [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)

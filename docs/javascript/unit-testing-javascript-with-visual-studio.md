@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071951"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Модульное тестирование JavaScript и TypeScript в Visual Studio
@@ -77,7 +77,7 @@ describe('Test Suite 1', function() {
 > [!NOTE]
 > Не используйте параметр `outdir` или `outfile` в *tsconfig.json*, так как обозреватель тестов не сможет найти модульные тесты в файлах TypeScript.
 
-## <a name="run-tests"></a>Выполнить тесты
+## <a name="run-tests"></a>Выполнение тестов
 
 Вы можете выполнять тесты в Visual Studio 2017 или из командной строки.
 
@@ -99,7 +99,7 @@ describe('Test Suite 1', function() {
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-Выходные данные этой команды выглядят примерно следующим образом:
+После выполнения команды должен появиться результат, аналогичный приведенному ниже.
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0

@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596467"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Практическое руководство. доступ к результатам нагрузочного теста для их анализа
+# <a name="how-to-access-load-test-results-for-analysis"></a>Практическое руководство. Обращение к результатам нагрузочного теста для их анализа
 
 Если нагрузочный тест запускается из редактора тестовой нагрузки, результаты теста открываются автоматически, а выполняющийся нагрузочный тест отображается в **анализаторе тестовой нагрузки**. При запуске нагрузочного теста из командной строки доступ к его результатам осуществляется вручную.
 
@@ -52,6 +52,6 @@ ms.locfileid: "75596467"
 
      В диалоговом окне **Открытие и управление результатами** можно управлять и другими функциями результатов нагрузочных тестов, включая импорт, экспорт и удаление этих результатов. Дополнительные сведения см. в статье [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ результатов нагрузочных тестов](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

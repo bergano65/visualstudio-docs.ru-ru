@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594283"
 ---
 # <a name="install-unit-test-frameworks"></a>Установка платформ модульного тестирования
@@ -48,6 +48,6 @@ ms.locfileid: "75594283"
 
    ![Обновление адаптера теста](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)

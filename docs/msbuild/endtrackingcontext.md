@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b71f214a745222956c7dc9d582cc7fb2f1cfc427
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579698"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634244"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
+
 Конц текущего контекста отслеживания.
 
 ## <a name="syntax"></a>Синтаксис
@@ -32,10 +33,13 @@ HRESULT WINAPI EndTrackingContext();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
+
 **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был закончен.
 
 ## <a name="requirements"></a>Требования
+
 **Заголовок.** *FileTracker.h*
 
 ## <a name="see-also"></a>См. также
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

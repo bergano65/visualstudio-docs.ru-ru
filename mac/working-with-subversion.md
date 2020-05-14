@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
 ms.openlocfilehash: d687215bc91dc01a284c49c141a6e52a16ce9e7a
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692137"
 ---
 # <a name="working-with-subversion"></a>Работа с Subversion
@@ -54,6 +54,6 @@ Subversion использует модель "копирование-измен�
 
 Это позволяет отправить изменения в репозиторий, где они создают новую редакцию всех изменений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка репозитория Subversion](set-up-subversion-repository.md)

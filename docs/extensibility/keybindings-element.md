@@ -1,5 +1,5 @@
 ---
-title: Элемент KeyBindings | Документация Майкрософт
+title: Элемент keyBindings (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d970497dd8f80d66bdbdac8809103582104a2636
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352583"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703129"
 ---
 # <a name="keybindings-element"></a>Элемент KeyBindings
-Элемент KeyBindings группирует элементы сочетание клавиш и другими признаками сочетания клавиш.
+Элемент KeyBindings группирует элементы KeyBinding и другие группировки KeyBindings.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,20 +39,20 @@ ms.locfileid: "66352583"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент KeyBinding](../extensibility/keybinding-element.md)|Задает сочетания клавиш для команд.|
-|[Сочетания клавиш](../extensibility/keybindings-element.md)|Группирует элементы сочетание клавиш и другими признаками сочетания клавиш.|
+|[Элемент KeyBinding](../extensibility/keybinding-element.md)|Определяет клавиши для команд.|
+|[Ключевые привязки](../extensibility/keybindings-element.md)|Группы элементов KeyBinding и другие группировки KeyBindings.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды.|
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды.|
 
 ## <a name="example"></a>Пример
 
@@ -67,4 +67,4 @@ ms.locfileid: "66352583"
 
 ## <a name="see-also"></a>См. также
 - [Элемент KeyBinding](../extensibility/keybinding-element.md)
-- [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

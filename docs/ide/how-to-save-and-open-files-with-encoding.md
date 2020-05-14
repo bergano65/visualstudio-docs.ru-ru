@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596181"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
@@ -56,7 +56,7 @@ ms.locfileid: "75596181"
 
 3. Выполните шаги 2 и 3 из предыдущей процедуры.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Кодировка и разрывы строк](encodings-and-line-breaks.md)
 - [Кодировка и глобализация Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

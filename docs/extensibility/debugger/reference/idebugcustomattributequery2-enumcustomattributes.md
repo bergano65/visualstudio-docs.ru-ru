@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Документация Майкрософт
+title: IDebugCustomАтрибутыКЕRY2::EnumCustomАтрибуты (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc9cc9158939ac0cbd7cac482961e2078b8249ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322233"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732584"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Возвращает перечислитель для все настраиваемые атрибуты, вложенные в это поле.
+Получает регистратор для всех пользовательских атрибутов, прикрепленных к этому полю.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-[out] Возвращает [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) объект, представляющий список настраиваемых атрибутов; в противном случае возвращает значение null, если настраиваемые атрибуты отсутствуют.
+(ваут) Возвращает объект [IEnumDebugCustomAttributes,](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) представляющий список пользовательских атрибутов; в противном случае возвращает нулевую стоимость, если нет пользовательских атрибутов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK или S_FALSE, если нет никаких настраиваемых атрибутов в этом поле. В противном случае возвращает код ошибки.
+ В случае успеха, возвращает S_OK или S_FALSE, если нет пользовательских атрибутов на этом поле. В противном случае возвращает код ошибки;
 
 ## <a name="remarks"></a>Примечания
- Это поле может иметь несколько особых атрибутов.
+ Поле может иметь несколько пользовательских атрибутов.
 
 ## <a name="see-also"></a>См. также
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

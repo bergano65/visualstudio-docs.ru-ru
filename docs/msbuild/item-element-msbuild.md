@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573668"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169356"
 ---
 # <a name="item-element-msbuild"></a>Элемент Item (MSBuild)
-Содержит определяемый пользователем элемент и его метаданные. Каждый элемент, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть указан как дочерний для элемента `ItemGroup`.
+
+Содержит определяемый пользователем элемент и его метаданные. Каждый элемент, используемый в проекте MSBuild, должен быть указан как дочерний для элемента `ItemGroup`.
 
 \<Project> \<ItemGroup> \<Item>
 
@@ -33,14 +34,14 @@ ms.locfileid: "75573668"
 ```xml
 <Item Include="*.cs"
         Exclude="MyFile.cs"
-        Remove="RemoveFile.cs"
-        Condition="'String A'=='String B'" >
+        Condition="'String A'=='String B'">
     <ItemMetadata1>...</ItemMetadata1>
     <ItemMetadata2>...</ItemMetadata2>
 </Item>
 ```
 
 ## <a name="specify-metadata-as-attributes"></a>Указание метаданных в качестве атрибутов
+
 В MSBuild 15.1 или более поздних версиях все метаданные с именем, которое не противоречит текущему списку атрибутов, при необходимости можно выразить в виде атрибута.
 
 Например, чтобы указать список пакетов NuGet, обычно используется примерно следующий синтаксис.
@@ -62,6 +63,7 @@ ms.locfileid: "75573668"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -90,13 +92,15 @@ ms.locfileid: "75573668"
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Группирующий элемент для элементов.|
 
 ## <a name="remarks"></a>Примечания
+
 Элементы `Item` определяют входные данные для системы построения и группируются в коллекции элементов на основании определенных пользователем имен коллекции. Эти коллекции элементов можно использовать в качестве параметров для [задач](../msbuild/msbuild-tasks.md), в которых с помощью отдельных элементов выполняются этапы процесса построения. Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md).
 
 Использование нотации @(\<myType>) позволяет расширить коллекцию элементов типа \<myType> до списка строк, разделяемых точкой с запятой, и передать в параметр. Если параметр имеет тип `string`, значением параметра является список элементов, разделенных точкой с запятой. Если параметр представляет собой массив строк (`string[]`), каждый элемент вставляется в массив на основании расположения точек с запятой. Если параметр задачи имеет тип <xref:Microsoft.Build.Framework.ITaskItem>`[]`, значением является содержимое коллекции элементов и все присоединенные метаданные. Чтобы разделять элементы с помощью символа, отличного от точки с запятой, используйте синтаксис @(\<myType>, '\<разделитель>').
 
-Подсистема [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может оценивать подстановочные знаки, такие как `*` и `?`, и рекурсивные подстановочные знаки, такие как */\*\*/\*.cs*. Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md).
+Подсистема MSBuild может оценивать подстановочные знаки, такие как `*` и `?`, и рекурсивные подстановочные знаки, такие как */\*\*/\*.cs*. Дополнительные сведения см. в разделе [Элементы](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Примеры
+
 В следующем примере кода показано объявление двух элементов типа `CSFile`. Второй объявленный элемент содержит метаданные, где `MyMetadata` имеет значение `HelloWorld`.
 
 ```xml
@@ -119,6 +123,7 @@ ms.locfileid: "75573668"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Элементы](../msbuild/msbuild-items.md)
 - [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Свойства MSBuild](../msbuild/msbuild-properties.md)

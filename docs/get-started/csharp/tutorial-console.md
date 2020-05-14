@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580009"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "78215433"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Учебник. Создание простого консольного приложения C# в Visual Studio
 
@@ -329,15 +329,15 @@ ms.locfileid: "77580009"
 
 Итак, начнем.
 
-1. Удалите весь код *после* этого блока кода:
+1. Удалите все в пространстве имен `Calculator` между открывающей и закрывающей фигурными скобками:
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. Теперь добавьте новый класс `Calculator` со следующим содержимым:

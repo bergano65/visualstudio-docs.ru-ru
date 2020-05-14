@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62429086"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Краткое руководство. Создание проекта Python на основе существующего кода
@@ -28,12 +28,12 @@ ms.locfileid: "62429086"
 
 При необходимости запустите программу, нажав клавиши **CTRL**+**F5** или последовательно выбрав **Отладка** > **Запуск без отладки**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Учебник. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Руководство. Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)

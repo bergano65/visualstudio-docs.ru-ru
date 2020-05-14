@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS | Документация Майкрософт
+title: DEBUGPROP_INFO_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae512bec8f88be81a0c45ddf541c94d78b483284
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa7e4a498188dc91f2a47b3ccf27f367f15ec77b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318374"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737403"
 ---
-# <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
-Указывает, какую информацию нужно извлечь сведения об объекте debug свойство.
+# <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
+Определяет, какую информацию получить об объекте свойства отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -72,55 +72,55 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 
 ## <a name="fields"></a>Поля
 `DEBUGPROP_INFO_FULLNAME`\
-Инициализация и использование `bstrFullName` поля.
+Инициализация/использование `bstrFullName` поля.
 
 `DEBUGPROP_INFO_NAME`\
-Инициализация и использование `bstrName` поля.
+Инициализация/использование `bstrName` поля.
 
 `DEBUGPROP_INFO_TYPE`\
-Инициализация и использование `bstrType` поля.
+Инициализация/использование `bstrType` поля.
 
 `DEBUGPROP_INFO_VALUE`\
-Инициализация и использование `bstrValue` поля.
+Инициализация/использование `bstrValue` поля.
 
 `DEBUGPROP_INFO_ATTRIB`\
-Инициализация и использование `dwAttrib` поля.
+Инициализация/использование `dwAttrib` поля.
 
 `DEBUGPROP_INFO_PROP`\
-Инициализация и использование `pProperty` поле, содержащее [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс.
+Инициализация/использование `pProperty` поля, содержащего интерфейс [IDebugProperty2.](../../../extensibility/debugger/reference/idebugproperty2.md)
 
 `DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
-Указывает, что поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
+Указывается, что поле значения должно содержать автоматическое расширенное значение, если это возможно, для этого типа объекта.
 
 `DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
 Не рекомендуется.
 
 `DEBUGPROP_INFO_VALUE_RAW`\
-Не возвращают значений гибко и членов (то есть не форматировать значения).
+Не возвращайте никаких украшаемых значений или членов (то есть не форматировать значения).
 
 `DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
-Не возвращают все особые Синтезированная значения (например, не следует вызывать `ToString()` объекта для получения значения).
+Не возвращайте никаких специальных синтезированных значений (например, не следует вызывать `ToString()` объект для создания значения).
 
 `DEBUGPROP_INFO_NONE`\
-Указывает, что флаги не установлены.
+Указывает, что флаги не заданы.
 
 `DEBUGPROP_INFO_STANDARD`\
-Инициализация и использование `dwAttrib`, `bstrName`, `bstrType`, и `bstrValue` поля.
+Инициализация `dwAttrib` `bstrName`/использовать , , `bstrType`, и `bstrValue` поля.
 
 `DEBUGPROP_INFO_All`\
 Указывает маску всех флагов.
 
 ## <a name="remarks"></a>Примечания
-Эти значения передаются [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), и [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы, чтобы указать, какие поля должны быть инициализированы [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.
+Эти значения передаются методам [GetPropertyInfo,](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)и [EnumProperties,](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) чтобы указать, какие поля должны быть инициализированы [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структурой.
 
-Эти значения также используются для `dwFields` членом `DEBUG_PROPERTY_INFO` структуры для указания поля структуры, используемые и допустимым при возвращении структуры.
+Эти значения также используются `dwFields` для `DEBUG_PROPERTY_INFO` члена структуры для указания того, какие поля структуры используются и действительны при возврате структуры.
 
-Эти значения могут объединяться с побитовым объектом `OR`.
+Эти значения могут быть объединены `OR`с bitwise .
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess | Документация Майкрософт
+title: IDebugPort2::GetProcess Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00579205a2e97d69f3a4305e09fac2146bb78d37
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4496187fd2e8f86a64e85afc8a4cb00eb589696a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326794"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725256"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
-Получает указанный процесс, работающий с портом.
+Получает указанный процесс, запущенный в порту.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,13 +43,13 @@ int GetProcess( 
 
 ## <a name="parameters"></a>Параметры
 `ProcessId`\
-[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структура, задающая идентификатор процесса.
+(в) [Структура AD_PROCESS_ID,](../../../extensibility/debugger/reference/ad-process-id.md) опознававивививательный процесс.
 
 `ppProcess`\
-[out] Возвращает [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий процесс.
+(ваут) Возвращает объект [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) представляющий процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

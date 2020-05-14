@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Документация Майкрософт
+title: IEEDataStorage::GetData Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319651"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718210"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
-Получает указанное число байтов из объекта.
+Извлекает указанное количество байтов с объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ int GetData(
 
 ## <a name="parameters"></a>Параметры
 `dataSize`\
-[in] Число байтов для получения ( `data` массива должен вмещать не менее это число байтов).
+(в) Количество байтов для извлечения `data` (массив должен содержать хотя бы это количество байтов).
 
 `sizeGotten`\
-[out] Возвращает число фактически извлеченных байтов.
+(ваут) Возвращает количество байтов, фактически извлеченных.
 
 `data`\
-[in, out] Массив, заполненный запрошенные данные.
+(в, вне) Массив, который должен быть заполнен запрошенными данными.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод рекомендуется используется для получения всех байтов данных в локальный массив, поскольку нет способа для пропуска байтов в процесс извлечения. В данном случае параметр `dataSize` должно быть значение, возвращаемое функцией [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) метод.
+ Рекомендуемое использование этого метода заключается в том, чтобы получить все байты данных в локальный массив, так как нет никакого способа, чтобы пропустить байты в процессе поиска. В этом случае `dataSize` параметр должен быть значением, возвращенным методом [GetSize.](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)
 
 ## <a name="see-also"></a>См. также
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

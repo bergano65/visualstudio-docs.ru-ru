@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS | Документация Майкрософт
+title: PROVIDER_FIELDS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329372"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713789"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
-Указывает свойства, связанные с поставщиком программы.
+# <a name="provider_fields"></a>PROVIDER_FIELDS
+Определяет свойства, связанные с поставщиком программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,20 +44,20 @@ public enum enum_PROVIDER_FIELDS {
 
 ## <a name="fields"></a>Поля
  `PFIELD_PROGRAM_NODES`\
- `ProgramNodes` Поле является допустимым.
+ Поле `ProgramNodes` действительно.
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
- `fIsDebuggerPresent` Поле является допустимым.
+ Поле `fIsDebuggerPresent` действительно.
 
 ## <a name="remarks"></a>Примечания
- Эти значения возвращаются в `Fields` членом [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, чтобы указать, какие поля структуры явно были заполнены.
+ Эти значения возвращаются `Fields` в состав [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, чтобы указать, какие поля структуры были явно заполнены.
 
- Эти значения могут объединяться с побитовым объектом `OR`.
+ Эти значения могут быть объединены `OR`с bitwise .
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest | Документация Майкрософт
+title: IDebugPendingBreakpoint2::GetBreakpointЗапрос Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::GetBreakpointRequest method
 - GetBreakpointRequest method
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37bc4fb6421aa0c04afcf91d690e354e368c4055
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725812"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Возвращает точки останова запрос, который был использован для создания этого ожидающая точка останова.
+Получает запрос точки разрыва, который был использован для создания этой ожидачего точки разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,10 +42,10 @@ int GetBreakpointRequest( 
 
 ## <a name="parameters"></a>Параметры
 `ppBPRequest`\
-[out] Возвращает [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) объект, представляющий запроса точки останова, которая использовалась для создания данного ожидающих точек останова.
+(ваут) Возвращает объект [IDebugBreakpointRequest2,](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) представляющий запрос точки разрыва, который использовался для создания этой ожидающей точки разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

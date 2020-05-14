@@ -1,28 +1,28 @@
 ---
-title: IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs
+title: IDebugWindowsComputerPort2::GetComputerInfo Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetComputerInfo
 - IDebugWindowsComputerPort2::GetComputerInfo
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52b68bc9014e2dea7a221a48ae0b0281d98f3d15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 420e963b70846b4d7251c3f1b6c7f5b224c9fdb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335753"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718262"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
-Извлекает сведения о компьютере, на котором выполняется отладчик.
+Получает информацию о компьютере, на котором работает отладчик.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,10 +40,10 @@ public int GetComputerInfo(
 
 ## <a name="parameters"></a>Параметры
 `pInfo`\
-[out] Ссылка на структуру, содержащую сведения о компьютере.
+(ваут) Ссылка на структуру, содержащую компьютерную информацию.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)

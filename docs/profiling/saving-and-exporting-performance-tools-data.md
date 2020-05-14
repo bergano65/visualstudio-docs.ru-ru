@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773903"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Сохранение и экспорт данных средств оценки производительности
@@ -64,7 +64,7 @@ ms.locfileid: "74773903"
 
 5. В разделе **Формат экспорта отчета** выберите "CSV (разделители — запятые) (\*.csv\)" или "XML-данные (\*.xml\)".
 
-6. Нажмите **Экспорт**.
+6. Щелкните **Экспорт**.
 
      Каждое представление отчета сохраняется в виде отдельного файла с именем \<префикс>_\<имя представления отчета>.\<csv&#124;xml>
 
@@ -84,11 +84,11 @@ ms.locfileid: "74773903"
 
 7. В разделе **Формат экспорта отчета** выберите "CSV (разделители — запятые) (\*.csv)" или "XML-данные (\*.xml)".
 
-8. Нажмите **Экспорт**.
+8. Щелкните **Экспорт**.
 
      Каждое представление отчета сохраняется в виде отдельного файла с именем \<префикс>_\<имя представления отчета>.\<csv&#124;xml>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Обозреватель производительности](../profiling/performance-explorer.md)
 - [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
 - [Сравнение файлов данных о производительности](../profiling/comparing-performance-data-files.md)

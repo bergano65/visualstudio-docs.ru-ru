@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: d8270c9948efe5f9c972f2e4f0eccb035c793953
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775461"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Практическое руководство. Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор профилировщиком подробных данных о времени с помощью командной строки
@@ -46,7 +46,7 @@ ms.locfileid: "74775461"
 
 2. Запуск профилировщика. Тип:
 
-     **VSPerfCmd** [/start](../profiling/start.md) **:trace** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
+     **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
    - Параметр **/start:trace** инициализирует профилировщик.
 
@@ -57,9 +57,9 @@ ms.locfileid: "74775461"
      > [!NOTE]
      > Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.
 
-     | Параметр | ОПИСАНИЕ |
+     | Параметр | Описание |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
+     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
      | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце **Идентификатор сеанса** на вкладке **Процессы** в диспетчере задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | Запускает профилировщик в состоянии приостановки сбора данных. Используйте параметр [/globalon](../profiling/globalon-and-globaloff.md) для возобновления профилирования. |
      | [/counter](../profiling/counter.md) **:** `Config` | Собирает данные от счетчика производительности процессора, указанного в `Config`. Сведения о счетчике добавляются в данные, собранные для каждого события профилирования. |
@@ -75,11 +75,11 @@ ms.locfileid: "74775461"
 
 - Следующие пары параметров запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.
 
-    |Параметр|ОПИСАНИЕ|
+    |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает ( **/threadon**) или останавливает ( **/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает (**/threadon**) или останавливает (**/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
 
 - Можно также использовать параметр **VSPerfCmd.exe**[/mark](../profiling/mark.md) для добавления метки профилирования в файл данных. Команда **/mark** добавляет идентификатор, отметку времени и необязательную определяемую пользователем текстовую строку. Метки можно использовать для фильтрации данных в представлениях отчетов и данных профилировщика.
 

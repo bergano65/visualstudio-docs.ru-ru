@@ -14,22 +14,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75575930"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093935"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Практическое руководство. Расширение процесса сборки Visual Studio
-Процесс сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] определяется рядом файлов *.targets* [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], которые импортируются в файл проекта. Один из этих импортированных файлов — *Microsoft.Common.targets* — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. В этой статье описаны два метода, которые можно использовать для расширения процесса сборки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
+
+Процесс сборки Visual Studio определяется рядом файлов *.targets* MSBuild, которые импортируются в файл проекта. Один из этих импортированных файлов — *Microsoft.Common.targets* — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. В этой статье описаны два метода, которые можно использовать для расширения процесса сборки Visual Studio:
 
 - Переопределение конкретных предварительно заданных целевых объектов, определенных в списке стандартных целевых объектов (в файле *Microsoft.Common.targets* или импортируемых им файлах).
 
 - Переопределение свойств DependsOn, определенных в списке стандартных целевых объектов.
 
 ## <a name="override-predefined-targets"></a>Переопределение предопределенных целевых объектов
-Список стандартных целевых объектов содержит набор предопределенных пустых целевых объектов, которые вызываются до и после некоторых основных целевых объектов в процессе сборки. Например, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывает целевой объект `BeforeBuild` перед основным целевым объектом `CoreBuild`, а целевой объект `AfterBuild` — после целевого объекта `CoreBuild`. По умолчанию пустые целевые объекты в списке стандартных целевых объектов не выполняют никаких действий, но их поведение по умолчанию можно переопределить, определив нужные целевые объекты в файле проекта, куда импортируются стандартные целевые объекты. Переопределяя предварительно заданные целевые объекты, вы можете использовать задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], чтобы получить больший контроль над процессом сборки.
+
+Список стандартных целевых объектов содержит набор предопределенных пустых целевых объектов, которые вызываются до и после некоторых основных целевых объектов в процессе сборки. Например, MSBuild вызывает целевой объект `BeforeBuild` перед основным целевым объектом `CoreBuild`, а целевой объект `AfterBuild` — после целевого объекта `CoreBuild`. По умолчанию пустые целевые объекты в списке стандартных целевых объектов не выполняют никаких действий, но их поведение по умолчанию можно переопределить, определив нужные целевые объекты в файле проекта, куда импортируются стандартные целевые объекты. Переопределяя предварительно заданные целевые объекты, вы можете использовать задачи MSBuild, чтобы получить больший контроль над процессом сборки.
+Список стандартных целевых объектов содержит набор предопределенных пустых целевых объектов, которые вызываются до и после некоторых основных целевых объектов в процессе сборки. Например, MSBuild вызывает целевой объект `BeforeBuild` перед основным целевым объектом `CoreBuild`, а целевой объект `AfterBuild` — после целевого объекта `CoreBuild`. По умолчанию пустые целевые объекты в списке стандартных целевых объектов не выполняют никаких действий, но их поведение по умолчанию можно переопределить, определив нужные целевые объекты в файле проекта, куда импортируются стандартные целевые объекты. Переопределяя предварительно заданные целевые объекты, вы можете использовать задачи MSBuild, чтобы получить больший контроль над процессом сборки.
 
 > [!NOTE]
 > В проектах в стиле SDK имеется неявная директива импорта целевых объектов *после последней строки в файле проекта*. Это означает, что переопределить целевые объекты по умолчанию можно только в том случае, если директивы импорта указаны вручную, как описано в статье [Информация об использовании пакетов SDK проекта MSBuild](how-to-use-project-sdk.md).
@@ -66,8 +69,48 @@ ms.locfileid: "75575930"
 |`BeforeResolveReferences`, `AfterResolveReferences`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после разрешения ссылок на сборки.|
 |`BeforeResGen`, `AfterResGen`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после создания ресурсов.|
 
+## <a name="example-aftertargets-and-beforetargets"></a>Пример. Атрибуты AfterTargets и BeforeTargets
+
+В приведенном ниже примере показано, как использовать атрибут `AfterTargets` для добавления пользовательского целевого объекта, который выполняет некоторые действия с выходными файлами. В данном случае он копирует выходные файлы в новую папку *CustomOutput*.  В примере также показано, как очистить файлы, созданные пользовательской операцией сборки с целевым объектом `CustomClean`, с помощью атрибута `BeforeTargets` и указать, что пользовательская операция очистки должна выполняться до целевого объекта `CoreClean`.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+   <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+</PropertyGroup>
+
+<Target Name="CustomAfterBuild" AfterTargets="Build">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean" BeforeTargets="CoreClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+> [!WARNING]
+> Используйте имена, отличные от имен предопределенных целевых объектов, перечисленных в таблице в предыдущем разделе (например, пользовательский целевой объект сборки назван здесь `CustomAfterBuild`, а не `AfterBuild`), так как эти объекты переопределяются операцией импорта пакета SDK, в которой они определены. Вы не видите операцию импорта целевого файла, который переопределяет эти целевые объекты, но она неявно добавляется в конец файла проекта при использовании метода атрибута `Sdk` для ссылки на пакет SDK.
+
 ## <a name="override-dependson-properties"></a>Переопределение свойств DependsOn
-Переопределение предопределенных целевых объектов позволяет легко расширить процесс сборки, но так как [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] оценивает определение целевых объектов последовательно, не существует способа запретит другому проекту, который импортирует ваш проект, переопределить целевые объекты, которые вы уже переопределили. Например, последний целевой объект `AfterBuild`, определенный в файле проекта, после импорта всех остальных проектов будет использоваться в процессе сборки.
+
+Переопределение предопределенных целевых объектов позволяет легко расширить процесс сборки, но так как MSBuild оценивает определение целевых объектов последовательно, не существует способа запретить другому проекту, который импортирует ваш проект, переопределить целевые объекты, которые вы уже переопределили. Например, последний целевой объект `AfterBuild`, определенный в файле проекта, после импорта всех остальных проектов будет использоваться в процессе сборки.
 
 Вы можете предусмотреть защиту от нежелательных переопределений целевых объектов, переопределив свойства DependsOn, которые используются в атрибутах `DependsOnTargets` по всему списку стандартных целевых объектов. Например, целевой объект `Build` содержит значение атрибута `DependsOnTargets`, равное `"$(BuildDependsOn)"`. Рассмотрим этот пример:
 
@@ -126,7 +169,62 @@ ms.locfileid: "75575930"
 |`CleanDependsOn`|Свойство, которое следует переопределить, если нужно убрать выходные данные из пользовательского процесса сборки.|
 |`CompileDependsOn`|Свойство, которое следует переопределить, если нужно вставить пользовательские процессы до или после этапа компиляции.|
 
+## <a name="example-builddependson-and-cleandependson"></a>Пример. Атрибуты BuildDependsOn и CleanDependsOn
+
+Приведенный ниже пример похож на пример с атрибутами `BeforeTargets` и `AfterTargets`, и в нем решается аналогичная задача. В нем сборка расширяется путем добавления с помощью атрибута `BuildDependsOn` собственной задачи `CustomAfterBuild`, которая копирует выходные файлы после сборки, а также добавления соответствующей задачи `CustomClean` с помощью `CleanDependsOn`.  
+
+В этом примере проект имеет стиль пакета SDK. Как упоминалось в примечании о проектах в стиле пакета SDK ранее в этой статье, вместо атрибута `Sdk`, применяемого средой Visual Studio при создании файлов проекта, необходимо использовать импорт вручную.
+
+```xml
+<Project>
+<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
+
+<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <BuildDependsOn>
+      $(BuildDependsOn);CustomAfterBuild
+    </BuildDependsOn>
+
+    <CleanDependsOn>
+      $(CleanDependsOn);CustomClean
+    </CleanDependsOn>
+
+    <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+  </PropertyGroup>
+
+<Target Name="CustomAfterBuild">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+Порядок элементов важен. Элементы `BuildDependsOn` и `CleanDependsOn` должны следовать после импорта стандартного файла целей построения пакета SDK.
+
 ## <a name="see-also"></a>См. также
+
 - [интеграция Visual Studio](../msbuild/visual-studio-integration-msbuild.md);
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
 - [TARGETS-файлы](../msbuild/msbuild-dot-targets-files.md)

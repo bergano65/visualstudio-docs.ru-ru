@@ -3,21 +3,22 @@ title: Инструменты Visual Studio для сценариев ИИ
 titleSuffix: ''
 description: Общие сведения об инструментах Visual Studio для сценариев ИИ
 keywords: искусственный интеллект, visual studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f696f5c2696ef15c133c9011b4235bf6714742e7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915961"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638569"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для сценариев ИИ
+# <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для ИИ
 
 Инструменты Visual Studio для сценариев ИИ — это расширение для создания, тестирования и развертывания решений глубинного обучения и искусственного интеллекта. Оно легко интегрируется со службой Машинного обучения Azure, обеспечивая широкие возможности экспериментирования, включая, помимо прочего, прозрачную отправку заданий подготовки данных и обучения моделей в различные целевые вычислительные узлы. Кроме того, оно поддерживает пользовательские метрики и отслеживание журнала выполнения, что позволяет добиться воспроизводимости при обработке и анализе данных и организовать аудит. Корпоративные средства совместной работы позволяют безопасно работать над проектами вместе с другими людьми.
 
@@ -42,7 +43,7 @@ ms.locfileid: "75915961"
 
 [Дополнительные сведения об обучении моделей в облаке](tensorflow-vm.md)
 
-## <a name="supported-operating-systems"></a>Supported Operating Systems
+## <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
 В настоящее время это расширение поддерживает 64-разрядные операционные системы Windows.
 
 ## <a name="support"></a>Поддержка

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::InterceptCurrentException | Документация Майкрософт
+title: IDebugStackFrame3::InterceptCurrentException Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffc50f9884d40083d9696869c0e1b34284e4a794
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352050"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719489"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-Вызывается отладчиком на текущий кадр стека, если ему необходимо перехватить текущее исключение.
+Вызывается отладчиком в текущем кадре стека, когда он хочет перехватить текущее исключение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,31 +43,31 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>Параметры
 `dwFlags`\
-[in] Указывает различные действия. В настоящее время только [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) значение `IEA_INTERCEPT` поддерживается и должен быть указан.
+(в) Определяет различные действия. В настоящее [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) время `IEA_INTERCEPT` поддерживается только INTERCEPT_EXCEPTION_ACTION значение и должно быть указано.
 
 `pqwCookie`\
-[out] Уникальное значение, идентифицирующее конкретного исключения.
+(ваут) Уникальное значение, определяющее конкретное исключение.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
- Ниже приведены наиболее распространенные возвращает ошибку.
+ Ниже приведены наиболее распространенные возвраты ошибок.
 
 |Error|Описание|
 |-----------|-----------------|
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Не может перехватить текущее исключение.|
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Текущий кадр выполнения еще не завершен поиск обработчика еще.|
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Текущее исключение не может быть перехвачено.|
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Текущий кадр выполнения еще не был исследован для обработчика.|
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Этот метод не поддерживается для этого кадра.|
 
 ## <a name="remarks"></a>Примечания
- При возникновении исключения отладчик получает управление от время выполнения в ключевых точках во время процесса обработки исключений. Во время этих ключевых моментов отладчик может запрашивать у текущего кадра стека хочет ли кадр перехватить исключение. Таким образом перехваченные исключения является по сути обработчик исключений в режиме реального времени для кадра стека, даже если этому кадру стека не содержит обработчик исключений (например, блок try/catch в программном коде).
+ При броске исключения отладчик получает элемент управления от времени выполнения в ключевых точках в процессе обработки исключений. В эти ключевые моменты отладчик может задать текущую рамку стека, если кадр хочет перехватить исключение. Таким образом, перехваченное исключение по существу является обработчиком исключений на лету для кадра стека, даже если в этом кадре стека нет обработчика исключений (например, блок попытки/поймать в коде программы).
 
- Когда отладчик хочет знать, если исключение должно быть перехвачены, он вызывает этот метод для текущего кадра стека. Этот метод отвечает за обработку всех сведений о исключении. Если [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) не реализован интерфейс или `InterceptStackException` метод возвращает все ошибки, а затем отладчик продолжает обработку исключения обычно.
+ Когда отладчик хочет знать, следует ли перехвачено исключение, он вызывает этот метод на объекте текущего кадра стека. Этот метод отвечает за обработку всех деталей исключения. Если интерфейс [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) не реализован `InterceptStackException` или метод вернет ошибку, то отладчик продолжает обработку исключения в обычном режиме.
 
 > [!NOTE]
-> Исключения могут быть перехвачены только в управляемом коде, то есть если отлаживаемая программа выполняется под .NET, время выполнения. Конечно, можно реализовать сторонние языков `InterceptStackException` в свои собственные модули отладки по усмотрению.
+> Исключения могут быть перехвачены только в управляемом коде, т.е. при отладке программы, работая под временем выполнения .NET. Конечно, сторонние исполнители языка `InterceptStackException` могут внедрить в свои собственные двигатели отладки, если они того пожелают.
 
- После завершения перехвата [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) переводится в сигнальное состояние.
+ После завершения перехвата сигнализируется [IDebugInterceptExceptionCompleteEvent2.](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

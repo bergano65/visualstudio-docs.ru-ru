@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Документация Майкрософт
+title: IDebugDocumentText2::GetText Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330650"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731573"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Получение текста из указанной позиции в документе.
+Извлекает текст из указанной позиции в документе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>Параметры
 `pos`\
-[in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает расположение текста, который требуется получить.
+(в) Структура [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) которая указывает местоположение текста, подкоторым которого следует получить.
 
 `cMaxChars`\
-[in] Максимальное количество символов текста, который требуется получить.
+(в) Максимальное количество символов текста, которые должны быть извлечены.
 
 `pText`\
-[in, out] Указатель на буфер, который должен быть заполнен с помощью требуемый текст. Этот буфер должен иметь возможность содержать по крайней мере `cMaxChars` число расширенных символов.
+(в, вне) Указатель на буфер, который должен быть заполнен нужным текстом. Этот буфер должен содержать по `cMaxChars` крайней мере количество широких символов.
 
 `pcNumChars`\
-[out] Возвращает число фактически полученных символов.
+(ваут) Возвращает количество фактически извлеченных символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В этом примере показано, как этот метод может вызываться с помощью C#.
+Этот пример показывает, как этот метод можно вызвать из C.
 
 ```csharp
 using System.Runtime.Interop.Services;

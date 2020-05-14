@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771696"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
@@ -28,7 +28,7 @@ ms.locfileid: "74771696"
  В некоторых сценариях, например при сборе данных о параллелизме или в случае приостановки и возобновления профилирования, более предпочтительным методом профилирования является использование **VSPerfCmd**.
 
 > [!NOTE]
-> Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
+> Сведения о пути к средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
 
 ## <a name="profile-an-aspnet-application"></a>Профилирование приложения ASP.NET
 
@@ -42,7 +42,7 @@ ms.locfileid: "74771696"
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- Примером *websiteUrl* с размещением на локальном сервере может быть *http://localhost/MySite/default.aspx* . Пример внешнего сайта: *http://www.contoso.com* . Дополнительные сведения и примеры URL-адресов см. в разделе [Профилирование веб-сайта без открытия проекта в Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Примером *websiteUrl* с размещением на локальном сервере может быть *http://localhost/MySite/default.aspx*. Пример внешнего сайта: *http://www.contoso.com*. Дополнительные сведения и примеры URL-адресов см. в разделе [Профилирование веб-сайта без открытия проекта в Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Сбор подробных данных о времени с помощью метода инструментирования
 
@@ -64,14 +64,14 @@ ms.locfileid: "74771696"
 
  Кроме того, можно воспользоваться параметром **/Trace** для включения подробных данных о времени вместе с данными о памяти .NET:
 
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Сбор данных взаимодействия уровней
 
 > [!WARNING]
 > Сведения о профилировании уровневого взаимодействия можно собирать с помощью любого выпуска Visual Studio. Но данные профилирования уровневого взаимодействия можно просматривать только в Visual Studio Enterprise.
 >
-> Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования ( **/trace**).
+> Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования (**/trace**).
 
 Чтобы собрать данные об уровневом взаимодействии вместе с данными выборки, воспользуйтесь командной строкой:
 
@@ -83,7 +83,7 @@ ms.locfileid: "74771696"
 
 Чтобы собрать данные об уровневом взаимодействии вместе с данными о памяти .NET, воспользуйтесь командной строкой:
 
-**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Использование параметра /NoWait
 
@@ -91,7 +91,7 @@ ms.locfileid: "74771696"
 
 Чтобы начать профилирование, воспользуйтесь следующей командной строкой:
 
-**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 Для завершения профилирования воспользуйтесь следующей командной строкой:
 
@@ -101,7 +101,7 @@ ms.locfileid: "74771696"
 
 Во все команды, перечисленные ранее в этом разделе, за исключением команды **vsperfaspnetcmd/shutdown**, можно добавить любой из следующих параметров.
 
-|Параметр|ОПИСАНИЕ|
+|Параметр|Описание|
 |------------|-----------------|
 |**/Output:** `VspFile`|По умолчанию файл данных профилирования (*VSP*) создается в текущем каталоге с именем файла **PerformanceReport.vsp**. Параметр /output позволяет задать другое расположение, имя файла или и то, и другое.|
 |**/PackSymbols:Off**|По умолчанию VsPerfASPNETCmd встраивает символы (имена функций и параметров и т. п.) в *VSP*-файл. Встраивание символов может привести к существенному увеличению файла данных профилирования. При обращении к *PDB*-файлам, содержащим такие символы, в процессе анализа данных следует воспользоваться параметром /packsymbols:off, чтобы отключить встраивание символов.|

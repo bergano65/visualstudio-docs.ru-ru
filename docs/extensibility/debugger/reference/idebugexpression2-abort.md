@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::Abort | Документация Майкрософт
+title: 'IDebugExpression2:: Аборт Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::Abort
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c85a746ab4c916a0aae81b40dd3539264c5572f6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5de2e34a8ae1e038c2109627099dacc5bd03a1ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326026"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729771"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-Этот метод отменяет асинхронное выражение вычисления, как к работе с помощью вызова [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) метод.
+Этот метод отменяет асинхронную оценку выражения, начатую вызовом к методу [EvaluateAsync.](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,10 +38,10 @@ int Abort();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- При отмене вычисления асинхронных выражений не отправляются [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) события обратного вызова события, передаваемый [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) или [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) методы.
+ При отмене асинхронной оценки выражения не отправляйте событие [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) на обратный вызов события, передаваемый методам [присоединения](../../../extensibility/debugger/reference/idebugprogram2-attach.md) или [присоединения.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

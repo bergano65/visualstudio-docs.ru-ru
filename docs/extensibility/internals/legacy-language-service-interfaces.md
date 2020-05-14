@@ -1,32 +1,32 @@
 ---
-title: Интерфейсы языковой службы прежних версий | Документация Майкрософт
+title: Устаревшие интерфейсы языковых служб (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 065ef972709ca78b516a9acc5f4a737d2963e4b7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726847"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707385"
 ---
 # <a name="legacy-language-service-interfaces"></a>Интерфейсы языковой службы прежних версий
-Для любого конкретного языка программирования в каждый момент времени может существовать только один экземпляр языковой службы. Однако одна языковая служба может обслуживать несколько редакторов.
+Для любого конкретного языка программирования может быть только один экземпляр языковой службы одновременно. Тем не менее, один языковой сервис может обслуживать более одного редактора.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не связывает языковую службу с каким-либо конкретным редактором. Поэтому при запросе операции языковой службы необходимо выбрать соответствующий редактор в качестве параметра.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]не связывает языковую службу с каким-либо конкретным редактором. Поэтому при запросе операции языковой службы необходимо определить соответствующий редактор в качестве параметра.
 
-## <a name="common-interfaces-associated-with-language-services"></a>Общие интерфейсы, связанные с языковой службой
- Редактор получает языковую службу, вызывая <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> для соответствующего пакета VSPackage. Идентификатор службы (SID), переданный в этом вызове, определяет запрашиваемую языковую службу.
+## <a name="common-interfaces-associated-with-language-services"></a>Общие интерфейсы, связанные с языковыми службами
+ Редактор получает вашу языковую <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> услугу, позвонив по соответствующему VSPackage. Идентификатор службы (SID), передаваемый в этом вызове, определяет запрашиваемую языковую службу.
 
- Интерфейсы основной языковой службы можно реализовать на любом числе отдельных классов. Однако распространенный подход заключается в реализации следующих интерфейсов в одном классе:
+ Интерфейсы основных языковых служб можно реализовать в любом количестве отдельных классов. Однако общий подход заключается в реализации следующих интерфейсов в одном классе:
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>
 
@@ -34,21 +34,21 @@ ms.locfileid: "72726847"
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>
 
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (необязательно)
+- Среда <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (необязательно)
 
-  Интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> должен быть реализован во всех языковых службах. Он предоставляет сведения о языковой службе, такие как локализованное название языка, расширения имен файлов, связанные со службой языка, и способ получения цветового выделения.
+  Интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> должен быть реализован на всех языковых службах. В нем содержится информация о вашей языковой службе, например, локализованное имя языка, расширение имен файлов, связанных с языковой службой, и способ получения цветоизолятора.
 
-## <a name="additional-language-service-interfaces"></a>Дополнительные интерфейсы языковой службы
- Другие интерфейсы могут предоставляться в вашей языковой службе. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запрашивает отдельный экземпляр этих интерфейсов для каждого экземпляра текстового буфера. Поэтому следует реализовать каждый из этих интерфейсов на своем собственном объекте. В следующей таблице показаны интерфейсы, для которых требуется один экземпляр для каждого экземпляра текстового буфера.
+## <a name="additional-language-service-interfaces"></a>Дополнительные интерфейсы языковых служб
+ Другие интерфейсы могут быть предоставлены с вашим языковым сервисом. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]запрашивает отдельный экземпляр этих интерфейсов для каждого экземпляра буфера текста. Поэтому необходимо реализовать каждый из этих интерфейсов на своем объекте. В следующей таблице показаны интерфейсы, требующие одного экземпляра на экземпляр буфера текста.
 
 |Интерфейс|Описание|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет оформлением окна кода, например раскрывающимся полосой. Этот интерфейс можно получить с помощью метода <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>. Для каждого окна кода имеется один <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Замечает ключевые слова языка и разделители. Этот интерфейс можно получить с помощью метода <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> вызывается во время рисования. Избегайте ресурсоемких вычислений в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или производительности может снизиться.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Предоставляет подсказки параметров IntelliSense. Когда языковая служба распознает символ, указывающий, что следует отображать данные метода, например открытую круглую скобку, он вызывает метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>, чтобы уведомить текстовое представление о том, что языковая служба готова отобразить подсказку сведений о параметрах. Затем текстовое представление обращается обратно к языковой службе с помощью методов интерфейса <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>, чтобы получить необходимую информацию для отображения подсказки.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Обеспечивает завершение операторов IntelliSense. Когда языковая служба готова к отображению списка завершения, она вызывает метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> в представлении текста. Затем текстовое представление обращается обратно к языковой службе с помощью методов объекта <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Позволяет изменять текстовое представление с помощью обработчика команд. Класс, в котором реализуется интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>, должен также реализовать интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. Текстовое представление получает объект <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>, запрашивая объект <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, который передается в метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>. Для каждого представления должен быть один объект <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>.|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Перехватывает команды, которые пользователь вводит в окно кода. Отслеживание выходных данных в реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> для предоставления настраиваемой информации о завершении и просмотра изменений<br /><br /> Чтобы передать объект <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> в текстовое представление, вызовите метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет украшениями окна кода, такими как выпадающий бар. Вы можете получить этот <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> интерфейс с помощью метода. Существует один <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> на код окна.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Раскрашивает ключевые слова языка и разграничивые. Вы можете получить этот <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> интерфейс с помощью метода. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>называется во время краски. Избегайте вычислительной интенсивной работы внутри <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или производительность может пострадать.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Предоставляет параметры инструментов IntelliSense. Когда языковая служба распознает символ, указывающий на то, что данные метода должны <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> отображаться, например, открытый скобки, он называет метод, чтобы уведомить текстовое представление о том, что языковая служба готова отображать Параметр Info ToolTip. Текстовое представление затем перезванивает в языковую службу, используя методы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейса для получения необходимой информации для отображения инструментария.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Обеспечивает завершение оператора IntelliSense. Когда языковая служба готова отображать список завершения, она вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод в текстовом представлении. Текстовое представление затем перезванивает в языковую <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> службу с помощью методов на объекте.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Позволяет изменить текстовое представление с помощью обработчика команд. Класс, в котором <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> вы реализуете <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс, также должен реализовать интерфейс. Текстовое представление извлекает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> объект, задав запрос <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объекту, который передается в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод. Для каждого <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> представления должен быть один объект.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Перехватов овешнок, который пользователь вводит в окне кода. Мониторинг вывода <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> из реализации для предоставления пользовательской информации о завершении и изменения представления<br /><br /> Чтобы передать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объект текстовому <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>представлению, позвоните .|
 
 ## <a name="see-also"></a>См. также
 - [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)

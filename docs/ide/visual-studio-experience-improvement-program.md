@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71693016"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
@@ -35,7 +35,7 @@ ms.locfileid: "71693016"
 
    ![Диалоговое окно "Программа улучшения Visual Studio"](media/experience-improvement-program.png)
 
-### <a name="registry-settings"></a>Параметры реестра
+### <a name="registry-settings"></a>Параметры регистрации
 
 Если вы устанавливаете [Build Tools для Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), обновите реестр, чтобы настроить VSCEIP. Корпоративные клиенты могут создать групповую политику на основе реестра, в которой будет включено или отключено участие в программе VSCEIP.
 
@@ -59,20 +59,20 @@ ms.locfileid: "71693016"
 
 Запись = **OptIn**
 
-Значение = (DWORD)
+Значение — (DWORD)
 
 - **0** — отказаться (отключить VSCEIP)
 - **1** — согласиться (включить VSCEIP)
 
 > [!CAUTION]
-> Неправильное редактирование реестра может нанести серьезный вред системе. Перед внесением изменений следует создать резервные копии всех важных данных, имеющихся на компьютере. В случае возникновения неполадок после внесения изменений вручную можно использовать параметр запуска **Загрузка последней удачной конфигурации**.
+> Неправильное изменение реестра может привести к серьезным неполадкам системы. Перед внесением изменений в реестр рекомендуется создать резервную копию всех важных данных. В случае возникновения неполадок после внесения изменений вручную можно использовать параметр запуска **Загрузка последней удачной конфигурации**.
 
 Для получения информации о собранных, обработанных или переданных VSCEIP сведениях см. [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Диагностическая информация, собираемая Visual Studio](diagnostic-data-collection.md)
 * [Параметры обратной связи Visual Studio](../ide/feedback-options.md)
 * [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Сообщество разработчиков Visual Studio](https://developercommunity.visualstudio.com/)
-* [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement)
+* [Заявление Майкрософт о конфиденциальности](https://privacy.microsoft.com/privacystatement)

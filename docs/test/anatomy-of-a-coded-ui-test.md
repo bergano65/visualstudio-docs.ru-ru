@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591207"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
@@ -26,12 +26,12 @@ ms.locfileid: "75591207"
 
 При создании закодированного теста пользовательского интерфейса **построитель закодированных тестов пользовательского интерфейса** создает карту тестируемого пользовательского интерфейса, а также методы тестов, параметры и утверждения для всех тестов. Он также создает файл класса для каждого теста.
 
-|Файл|Описание|Редактируемый?|
+|Файл|Содержимое|Редактируемый?|
 |-|-|-|
-|[UIMap.Designer.cs](#UIMapDesignerFile)|[Раздел объявлений](#UIMapDesignerFile)<br /><br /> [Класс UIMap](#UIMapClass) (разделяемый, автоматически создаваемый)<br /><br /> [Методы](#UIMapMethods)<br /><br /> [Свойства](#UIMapProperties)|Нет|
+|[UIMap.Designer.cs](#UIMapDesignerFile)|[Раздел объявлений](#UIMapDesignerFile)<br /><br /> [Класс UIMap](#UIMapClass) (разделяемый, автоматически создаваемый)<br /><br /> [Методы](#UIMapMethods)<br /><br /> [Свойства](#UIMapProperties)|нет|
 |[UIMap.cs](#UIMapCS)|[Класс UIMap](#UIMapCS) (разделяемый)|Да|
 |[CodedUITest1.cs](#CodedUITestCS)|[Класс CodedUITest1](#CodedUITestCS)<br /><br /> [Методы](#CodedUITestMethods)<br /><br /> [Свойства](#CodedUITestProperties)|Да|
-|[UIMap.uitest](#UIMapuitest)|XML-карта пользовательского интерфейса для теста.|Нет|
+|[UIMap.uitest](#UIMapuitest)|XML-карта пользовательского интерфейса для теста.|нет|
 
 ### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 Этот файл содержит код, который создается автоматически **построителем закодированных тестов пользовательского интерфейса** при создании теста. Этот файл создается заново при каждом изменении теста, поэтому вы не можете добавлять в него код или изменять его.
@@ -266,7 +266,7 @@ public void MyTestCleanup()
 
 Файл *UIMap.uitest* невозможно редактировать напрямую. Однако можно использовать построитель закодированных тестов пользовательского интерфейса, который автоматически изменяет файлы *UIMap.uitest* и [*UIMap.Designer.cs*](#UIMapDesignerFile).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Документация Майкрософт
+title: IDebugProperty2::SetValueAsString Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27b481165cf95a97d7674d52d8553426dfb6417c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 112ded163f38b93e9918387d8ca6beafb8282647
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314609"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721236"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Задает значение свойства из данной строки.
+Устанавливает значение свойства из заданной строки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,21 +45,21 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Параметры
 `pszValue`\
-[in] Строка, содержащая значение, устанавливаемое значение.
+(в) Строка, содержащая значение, подаваемый.
 
 `nRadix`\
-[in] Основание системы счисления для использования в интерпретации все числовые данные. Это может быть 0, чтобы попытаться автоматически определить основание системы счисления.
+(в) Радикс, который будет использоваться при интерпретации любой численной информации. Это может быть 0, чтобы попытаться определить радикс автоматически.
 
 `dwTimeout`\
-[in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+(в) Определяет максимальное время, в миллисекундах, чтобы ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Ниже приведены другие возможные значения.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. В следующей таблице показаны другие возможные значения.
 
 |Значение|Описание|
 |-----------|-----------------|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Не удалось преобразовать строку в значение свойства, или не удалось задать значение свойства.|
-|`E_SETVALUE_VALUE_IS_READONLY`|Свойство доступно только для чтения.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Строка не может быть преобразована в значение свойства, или значение свойства не может быть установлено.|
+|`E_SETVALUE_VALUE_IS_READONLY`|свойство доступно только для чтения.|
 
 ## <a name="see-also"></a>См. также
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

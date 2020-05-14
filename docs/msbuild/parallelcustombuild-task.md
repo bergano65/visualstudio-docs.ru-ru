@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279262"
 ---
 # <a name="parallelcustombuild-task"></a>Задача ParallelCustomBuild
@@ -32,13 +32,13 @@ ms.locfileid: "77279262"
 
 В следующей таблице описаны параметры задачи **ParallelCustomBuild**.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Необязательный параметр типа **bool**.|
 |**MaxItemsInBatch**|Необязательный параметр типа **int**.|
 |**MaxProcesses**|Необязательный параметр типа **int**.|
-|**Sources**|Обязательный параметр **ITaskItem[]** .|
+|**Источники**|Обязательный параметр **ITaskItem[]** .|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

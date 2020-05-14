@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72807144"
 ---
 # <a name="javascript-and-typescript-support"></a>Поддержка JavaScript и TypeScript
@@ -31,7 +31,7 @@ Visual Studio для Mac обеспечивает поддержку JavaScript 
 
 ![создание нового файла typescript из шаблона](media/javascript-image2.png)
 
-## <a name="intellisense"></a>IntelliSense
+## <a name="intellisense"></a>технология IntelliSense
 
 Visual Studio для Mac использует [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) для предоставления возможностей IntelliSense при написании кода, а именно: интеллектуальное завершение кода, сведения о параметрах и списки членов.
 
@@ -43,6 +43,6 @@ IntelliSense для JavaScript в Visual Studio для Mac может опира
 
     ![Добавление файла определения TypeScript](media/javascript-type-intellisense-2019.gif)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [JavaScript IntelliSense (Visual Studio в Windows)](/visualstudio/ide/javascript-intellisense)

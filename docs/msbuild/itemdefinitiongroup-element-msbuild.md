@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5bfe09fec169495afa5b58a41f7c9f1b9bacfad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573473"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633633"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Элемент ItemDefinitionGroup (MSBuild)
+
 Элемент `ItemDefinitionGroup` позволяет определить набор определений элементов, которые представляют собой значения метаданных, по умолчанию применяемых ко всем элементам проекта. ItemDefinitionGroup пришел на смену использованию задач [CreateItem](../msbuild/createitem-task.md) и [CreateProperty](../msbuild/createproperty-task.md). Дополнительные сведения см. в разделе [Определения элементов](../msbuild/item-definitions.md).
 
 \<Project> \<ItemDefinitionGroup>
@@ -40,6 +41,7 @@ ms.locfileid: "75573473"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
 В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -58,9 +60,10 @@ ms.locfileid: "75573473"
 
 | Элемент | Описание |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта MSBuild. |
 
 ## <a name="example"></a>Пример
+
 Следующий пример кода определяет два элемента метаданных (m и n) для ItemDefinitionGroup. В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.
 
 ```xml
@@ -82,5 +85,6 @@ ms.locfileid: "75573473"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [Элементы](../msbuild/msbuild-items.md)

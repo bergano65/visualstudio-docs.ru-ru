@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114697"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Практическое руководство. Создание и изменение конфигураций
@@ -118,7 +118,7 @@ ms.locfileid: "76114697"
 
 3. В области **Конфигурации проектов** для каждого проекта выберите нужную **конфигурацию** и **платформу**, а также выберите, требуется ли выполнять его **сборку** и **развертывание**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)
 - [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

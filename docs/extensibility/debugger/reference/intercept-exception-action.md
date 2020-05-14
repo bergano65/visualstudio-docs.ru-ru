@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION | Документация Майкрософт
+title: INTERCEPT_EXCEPTION_ACTION Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 265ed30272c959b6ee812a83f748888a5af15cab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350247"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715070"
 ---
-# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
-Указывает, какие действия при перехват исключения.
+# <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
+Определяет, какие действия предпринимать при перехвате исключений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,15 +45,15 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>Параметры
 
 `IEA_INTERCEPT`\
-Разрешает перехват текущее исключение. Это единственное значение, поддерживаемые в настоящее время и должен быть указан.
+Позволяет перехватывать текущее исключение. Это единственное значение, поддерживаемое в настоящее время и должно быть указано.
 
 ## <a name="remarks"></a>Примечания
-Эти значения передаются в [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) метод.
+Эти значения передаются в метод [InterceptCurrentException.](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

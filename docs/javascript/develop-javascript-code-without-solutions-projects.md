@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888642"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549932"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
@@ -27,7 +27,7 @@ ms.locfileid: "72888642"
 Чтобы приступить к работе, выберите **Файл** > **Открыть** > **Папку** на панели инструментов. Обозреватель решений отображает все файлы в папке, и можно открыть любой из файлов, чтобы начать редактирование. В фоновом режиме Visual Studio индексирует файлы, предоставляя функции npm, сборки и отладки.
 
 > [!IMPORTANT]
-> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8 или более поздней.
+> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8 или более поздней. Должна быть установлена рабочая нагрузка Visual Studio **Разработка Node.js**.
 
 ## <a name="npm-integration"></a>Интеграция npm
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593763"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Практическое руководство. Использование окружающих фрагментов кода
@@ -55,7 +55,7 @@ ms.locfileid: "75593763"
 
      Или можно ввести имя фрагмента кода и нажать клавишу **TAB** или **ВВОД**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Фрагменты кода C#](../ide/visual-csharp-code-snippets.md)
 - [Выбор фрагментов кода](../ide/reference/code-snippet-picker.md)

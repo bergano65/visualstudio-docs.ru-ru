@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Документация Майкрософт
+title: IDebugStackFrame2::GetLanguageInfo Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559696"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719704"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Возвращает язык, связанный с данным кадром стека.
+Получает язык, связанный с этой кадром стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Параметры
 
 `pbstrLanguage`\
-[out] Возвращает имя языка, который реализует метод, связанный с данным кадром стека.
+(ваут) Возвращает имя языка, реализуемого методом, связанным с этой кадром стека.
 
 `pguidLanguage`\
-[out] Возвращает `GUID` языка. Для [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] языков, например, следующие могут быть возвращены:
+(ваут) `GUID` Возвращает язык. Например, для языков можно вернуть следующее: [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]
 
 - `guidVBScriptLang`\
 
@@ -64,7 +64,7 @@ int GetLanguageInfo ( 
 
 ## <a name="return-value"></a>Возвращаемое значение
 
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 

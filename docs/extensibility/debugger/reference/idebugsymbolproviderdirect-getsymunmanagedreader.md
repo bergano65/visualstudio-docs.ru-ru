@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Документация Майкрософт
+title: IDebugSymbolProviderDirect::GetSymUnmanagedReader Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetSymUnmanagedReader
 - IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2fb5a2fd5d8ba34112e01da07fc1f41177e8e9f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320415"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718934"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
-Получает средство чтения символов для неуправляемого кода.
+Извлекает считыватель символов для неуправляемого кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,16 +44,16 @@ int GetSymUnmanagedReader (
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-[in] Идентификатор домена приложения.
+(в) Идентификатор домена приложения.
 
 `guidModule`\
-[in] Уникальный идентификатор модуля.
+(в) Уникальный идентификатор модуля.
 
 `ppSymUnmanagedReader`\
-[out] Возвращает объект, представляющий средства чтения символов для неуправляемого кода.
+(ваут) Возвращает объект, представляющий считыватель символов, для неуправляемого кода.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

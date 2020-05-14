@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Документация Майкрософт
+title: IDebugComPlusSymbolProvider::GetLocalVariablelayout Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c92bdab6c3bbe7196e5f1df68758bcce4a9f2063
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f805249a3736b1191ae3218f8fcd41ffae2c686a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336765"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733845"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-Извлекает структуру локальных переменных для набора методов.
+Извлекает расположение локальных переменных для набора методов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,25 +48,25 @@ int GetLocalVariablelayout(
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-[in] Идентификатор домена приложения.
+(в) Идентификатор домена приложения.
 
 `guidModule`\
-[in] Уникальный идентификатор модуля.
+(в) Уникальный идентификатор модуля.
 
 `cMethods`\
-[in] Число метод токены `rgMethodTokens` массива.
+(в) Количество токенов метода `rgMethodTokens` в массиве.
 
 `rgMethodTokens`\
-[in] Массив, метод маркеров.
+(в) Массив токенов метода.
 
 `pStreamLayout`\
-[out] Текстовый поток, содержащий структуру переменных.
+(ваут) Текстовый поток, содержащий переменный макет.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bb2b296d8728587c9aa3c22b7a670d89612eff1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596428"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -41,9 +41,9 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Необязательный элемент. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Резервные копии автоматически создаются и копируются в каталог с именем Backup, который создается в текущем каталоге.
 
@@ -59,6 +59,6 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)

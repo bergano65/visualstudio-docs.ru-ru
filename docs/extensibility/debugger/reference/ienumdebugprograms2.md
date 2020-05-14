@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2 | Документация Майкрософт
+title: IEnumDebugПрограммы2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd50186abbf94ae294c346a5981bee14f45820fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1717397d9ff073642c7b6bc25ad85babe76d684c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317103"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715570"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
-Этот интерфейс перечисляет программ, работающих в текущем сеансе отладки.
+Этот интерфейс перечисляет программы, работающие в текущей сессии отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,38 +28,38 @@ ms.locfileid: "66317103"
 IEnumDebugPrograms2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс, чтобы предоставить список отлаживаемых по DE программ.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс, чтобы предоставить список программ, отладимых DE.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Visual Studio вызывает [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) для получения этого интерфейса. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) не используется средой Visual Studio.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Visual Studio вызывает [EnumPrograms,](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) чтобы получить этот интерфейс. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) не используется Visual Studio.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IEnumDebugPrograms2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Вперед](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Извлекает указанное число программ в последовательности перечисления.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Пропускает заданное число программ в последовательности перечисления.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Сбрасывает последовательность перечислений в начало.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Получает количество программ в перечислителе.|
+|[Далее](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Извлекает определенное количество программ в последовательности перечисления.|
+|[Пропустить](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Пропускает определенное количество программ в последовательности перечисления.|
+|[Сбросить](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Сбрасывает последовательность перечислений в начало.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md) (Клонировать)|Создает регистратор, содержащий то же состояние перечисления, что и текущий регистратор.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Получает количество программ в регистраторе.|
 
 ## <a name="remarks"></a>Примечания
- Visual Studio использует этот интерфейс, чтобы:
+ Visual Studio использует этот интерфейс для:
 
-- Заполнение **модули** окна (путем вызова [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) и последующего вызова [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) на каждую программу).
+- Заполнить окно **модулей** (позвонив [EnumPrograms,](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) а затем вызывая [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) по каждой программе).
 
-- Заполнение **присоединение к процессу** список (путем вызова `IDebugProcess2::EnumPrograms` и последующего вызова [QueryInterface](/cpp/atl/queryinterface) на каждом [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс для получения [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) интерфейс).
+- Заполните список присоединения `IDebugProcess2::EnumPrograms` к **процессу** (позвонив и позвонив в [queryInterface](/cpp/atl/queryinterface) на каждом интерфейсе [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) для получения интерфейса [IDebugEngineProgram2).](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 
-- Создать список DEs, способное отлаживать каждой программы в процессе (с помощью [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
+- Создайте список DEs, которые могут отладить каждую программу в процессе (с помощью [GetEngineInfo).](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)
 
-- Применение обновлений, изменить и продолжить "(ENC) для каждой программы (путем вызова IDebugProcess2::EnumPrograms и последующего вызова [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).
+- Применить Edit and Continue (ENC) обновления для каждой программы (позвонив IDebugProcess2::EnumPrograms, а затем вызова [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

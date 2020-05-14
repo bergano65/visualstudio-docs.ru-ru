@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585461"
 ---
 # <a name="target-build-order"></a>Порядок сборки целевого объекта
@@ -45,7 +45,7 @@ ms.locfileid: "75585461"
 
 Импортированные проекты могут иметь собственные атрибуты `InitialTargets`. Все начальные целевые объекты собираются вместе и выполняются по порядку.
 
-Дополнительные сведения см. в разделе [Практическое руководство. Выбор цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).
+Дополнительные сведения см. в [практическом руководстве по выбору цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="default-targets"></a>Целевые объекты по умолчанию
 
@@ -65,7 +65,7 @@ ms.locfileid: "75585461"
 
 Импортированные проекты могут иметь собственные атрибуты `DefaultTargets`. Первый атрибут `DefaultTargets` определяет, какие целевые объекты по умолчанию будут выполняться.
 
-Дополнительные сведения см. в разделе [Практическое руководство. Выбор цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).
+Дополнительные сведения см. в [практическом руководстве по выбору цели для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="first-target"></a>Первый целевой объект
 
@@ -73,7 +73,7 @@ ms.locfileid: "75585461"
 
 ## <a name="target-dependencies"></a>Зависимости целевого объекта
 
-Целевые объекты могут описывать отношения зависимости друг от друга. Атрибут `DependsOnTargets` указывает, что целевой объект зависит от других целевых объектов. Например, примененная к объекту директива
+Целевые объекты могут описывать отношения зависимости друг от друга. Атрибут `DependsOnTargets` указывает, что целевой объект зависит от других целевых объектов. Например,
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -85,7 +85,7 @@ ms.locfileid: "75585461"
 
 В MSBuild 4.0 можно указать порядок целевых объектов с помощью атрибутов `BeforeTargets` и `AfterTargets`.
 
-Рассмотрим следующий сценарий.
+Рассмотрим следующий скрипт.
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -130,6 +130,6 @@ MSBuild определяет порядок сборки целевых объе
 
 7. После выполнения или пропуска целевого объекта выполняются все прочие целевые объекты, у которых он указан в атрибуте `AfterTargets`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Целевые объекты](../msbuild/msbuild-targets.md)
+- [Цели](../msbuild/msbuild-targets.md)

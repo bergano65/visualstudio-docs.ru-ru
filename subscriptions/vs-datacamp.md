@@ -1,17 +1,18 @@
 ---
 title: Повысьте свои навыки обработки и анализа данных, используя преимущество DataCamp в подписках Visual Studio. | Документы Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 85545df5a38f5f8c3e3c29e6ffe1581298999562
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649575"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 К подходящим подпискам Visual Studio относятся подписки на DataCamp.  С помощью DataCamp можно получить все необходимые навыки обработки и анализа данных, работая в браузере. Вы выбираете, когда и чему вы учитесь. Обучаться обработке и анализу данных стало намного проще, так как вам не нужно устанавливать программное обеспечение и выполнять особые требования к оборудованию.
@@ -67,7 +68,7 @@ ms.locfileid: "74706882"
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), FTE, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -82,10 +83,15 @@ ms.locfileid: "74706882"
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Следующие шаги
 Ознакомьтесь с другими возможностями профессиональной разработки в вашей подписке:
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-
 
 Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

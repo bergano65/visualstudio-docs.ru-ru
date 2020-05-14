@@ -1,6 +1,6 @@
 ---
 title: Пошаговое руководство. Создание фрагмента кода
-ms.date: 06/10/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597299"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472808"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 
@@ -54,7 +54,7 @@ ms.locfileid: "75597299"
 
 2. Введите заголовок фрагмента в элементе **Заголовок**. Используйте заголовок **Square Root** (Квадратный корень).
 
-3. Укажите язык фрагмента кода в атрибуте **Language** элемента **Code**. Для C# используйте **CSharp**, а для Visual Basic — **VB**.
+3. Укажите язык фрагмента кода в атрибуте **Language** элемента **Code**. Для C# используйте **C#** , для Visual Basic — **VB**, а для C++ — **CPP**.
 
    > [!TIP]
    > Чтобы просмотреть все доступные значения языка, просмотрите раздел об [атрибутах элементов кода](code-snippets-schema-reference.md#attributes) на странице [Справочник по схеме фрагментов кода](code-snippets-schema-reference.md).

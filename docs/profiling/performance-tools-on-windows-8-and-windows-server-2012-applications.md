@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778431"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
@@ -64,7 +64,7 @@ ms.locfileid: "74778431"
 
 Используйте две следующие программы командной строки для сбора данных профилирования на устройствах Windows 8 и Windows Server 2012, в том числе тех, на которых не установлен Visual Studio.
 
-|Имя программы|ОПИСАНИЕ|
+|Имя средства|Description|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений универсальной платформы Windows и сбор данных профилирования методом выборки из классических приложений Windows 8 и приложений Windows Server 2012.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Сбор данных профилирования инструментирования, параллелизма и уровневого взаимодействия из приложений, которые выполняются на рабочем столе Windows 8 или Windows Server 2012. Сбор всех типов данных профилирования из предыдущих версий Windows.|
@@ -96,7 +96,7 @@ ms.locfileid: "74778431"
 
 Сведения о профилировании уровневого взаимодействия можно собирать с помощью любого выпуска Visual Studio. Но данные профилирования уровневого взаимодействия можно просматривать только в Visual Studio Enterprise.
 
-**Windows 8 или Windows Server 2012**
+**Windows 8 и Windows Server 2012**
 
 1. Чтобы собрать данные об уровневом взаимодействии из приложений, выполняющихся на рабочем столе Windows 8 или Windows Server 2012, необходимо использовать метод инструментирования.
 
@@ -116,9 +116,9 @@ ms.locfileid: "74778431"
 
 **Отчеты TIP**
 
-Данные об уровневом взаимодействии можно просматривать только в Visual Studio Enterprise Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.
+Данные об уровневом взаимодействии можно просматривать только в Visual Studio Enterprise Получение отчетов об уровневом взаимодействии (TIP) на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступно.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Обозреватель производительности](../profiling/performance-explorer.md)
 [Настройка сеансов производительности](../profiling/configuring-performance-sessions.md)

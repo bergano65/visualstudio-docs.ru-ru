@@ -1,5 +1,5 @@
 ---
-title: BuildOnLoad атрибутов и элементов (шаблоны Visual Studio)
+title: Атрибут и элемент BuildOnLoad (шаблоны Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - BuildOnLoad attribute [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32056aae3c860aee250248c606bbda4dbf9506c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321272"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739951"
 ---
-# <a name="buildonload-attribute-and-element"></a>BuildOnLoad атрибутов и элементов
+# <a name="buildonload-attribute-and-element"></a>Атрибут и элемент BuildOnLoad
 
-Указывает, следует ли для сборки проекта, сразу же после его создания. **BuildOnLoad** является атрибутом и элементом.
+Уточняется, следует ли строить проект сразу после его создания. **BuildOnLoad** — это как атрибут, так и элемент.
 
 Иерархия элементов:
 
@@ -33,7 +33,7 @@ ms.locfileid: "66321272"
     <BuildOnLoad>
 ```
 
-## <a name="element-syntax"></a>Синтаксис элемента
+## <a name="element-syntax"></a>Элемент синтаксис
 
 ```xml
 <BuildOnLoad> true/false </BuildOnLoad>
@@ -47,7 +47,7 @@ ms.locfileid: "66321272"
 
 ## <a name="text-value"></a>Текстовое значение
 
-Текстовое значение является обязательным для **BuildOnLoad** элемент. Этот текст должен быть либо `true` или `false`, указывающее, что для сборки проекта, сразу же после его создания.
+Для элемента **BuildOnLoad** требуется значение текста. Текст должен быть `true` `false`либо, либо , с указанием того, следует ли строить проект сразу после его создания.
 
 ## <a name="remarks"></a>Примечания
 
@@ -55,7 +55,7 @@ ms.locfileid: "66321272"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано метаданные для C# шаблона при **BuildOnLoad** используется в качестве элемента:
+Следующий пример иллюстрирует метаданные для шаблона C-центра, когда **BuildOnLoad** используется в качестве элемента:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ ms.locfileid: "66321272"
 
 ## <a name="see-also"></a>См. также
 
-- [Buildprojectonload-элемент](buildprojectonload-element-visual-studio-templates.md)
+- [Элемент BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
 - [Элемент TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

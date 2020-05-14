@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление комментариев в диаграммы классов (конструктор классов)
+title: Практическое руководство. Добавление комментариев в схему классов (конструктор классов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592260"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Практическое руководство. Добавление комментариев в диаграммы классов
+# <a name="how-to-add-comments-to-class-diagrams"></a>Практическое руководство. Добавление комментариев в схему классов
 
 Для добавления примечаний к схемам классов можно использовать фигуры комментария. У фигуры комментария есть свойство **Текст**, в которое можно вводить текст. Фигуры комментария существуют только в области схемы, а не в коде.
 
@@ -35,7 +35,7 @@ ms.locfileid: "75592260"
 
 2. Щелкните новую фигуру комментария на схеме и введите нужный текст.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Работа с диаграммами классов](designing-and-viewing-classes-and-types.md)
-- [Практическое руководство. Настройка диаграмм классов (конструктор классов)](how-to-customize-class-diagrams.md)
+- [Практическое руководство. Настройка схем классов](how-to-customize-class-diagrams.md)

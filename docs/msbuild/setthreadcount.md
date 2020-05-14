@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1eb28d5a54af1708fa8d3ea7a12887174a15bb
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579586"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632333"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
+
 Задает глобальный счетчик потоков и назначает его текущему потоку.
 
 ## <a name="syntax"></a>Синтаксис
@@ -32,12 +33,15 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>Параметры
+
 [in] `threadCount`
 
  Количество потоков для использования.
 
 ## <a name="return-value"></a>Возвращаемое значение
+
  **HRESULT** с установленным битом **SUCCEEDED**, если счетчик потоков был обновлен.
 
 ## <a name="requirements"></a>Требования
+
  **Заголовок.** *FileTracker.h*

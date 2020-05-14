@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597390"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586688"
 ---
 # <a name="property-functions"></a>Функции свойств
 
-В версиях 4 и 4.5 платформы .NET Framework можно оценивать скрипты MSBuild с помощью функции свойства. Функции свойства можно использовать во всех случаях, где появляются свойства. В отличие от задач, функции свойства можно использовать за пределами целей и оценивать до запуска целей.
+Функции свойств — это вызовы методов .NET Framework, которые отображаются в определениях свойств MSBuild. В отличие от задач, функции свойства можно использовать за пределами целей и оценивать до запуска целей.
 
- Без использования задач MSBuild вы можете читать системное время, сравнивать строки, сопоставлять регулярные выражения и выполнять другие действия в скрипте построения. MSBuild попытается преобразовать строку в число и число в строку и при необходимости выполнит другие преобразования.
- 
+Без использования задач MSBuild вы можете читать системное время, сравнивать строки, сопоставлять регулярные выражения и выполнять другие действия в скрипте построения. MSBuild попытается преобразовать строку в число и число в строку и при необходимости выполнит другие преобразования.
+
 В строковых значениях, возвращаемых из функций свойства, [специальные символы](msbuild-special-characters.md) преобразованы в escape-символы. Если нужно, чтобы значение обрабатывалось как значение непосредственно в файле проекта, воспользуйтесь функцией `$([MSBuild]::Unescape())`, чтобы преобразовать специальные символы в обычный формат.
+
+Функции свойств доступны для .NET Framework 4 и более поздних версий.
 
 ## <a name="property-function-syntax"></a>Синтаксис функции свойства
 
@@ -37,7 +39,7 @@ ms.locfileid: "75597390"
 
 Все значения свойства построения являются значениями строки. Для управления значением свойства можно использовать методы строки (экземпляра). Например, можно извлечь имя диска (первые три символа) из свойства построения, которое представляет собой полный путь, с помощью следующего кода.
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 В скрипте построения можно получить доступ к статическим свойствам и методам многих системных классов. Чтобы получить значение статического свойства, используйте следующий синтаксис, где \<Class> — это имя системного класса, а \<Property> — это имя свойства.
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ $([Class]::Property)
 
 Чтобы вызвать статический метод, используйте следующий синтаксис, где \<Class> — это имя системного класса, \<Method> — имя метода, а (\<Parameters)> — список параметров метода.
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ $([Class]::Method(Parameters))
 
 При доступе к статическому свойству, которое возвращает экземпляр объектов, можно вызывать методы экземпляра этого объекта. Чтобы вызвать метод экземпляра, используйте следующий синтаксис, где \<Class> — это имя системного класса, \<Property> — имя свойства, \<Method> — это имя метода, а (\<Parameters>) — список параметров метода.
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ $([Class]::Property.Method(Parameters))
 
 Для обеспечения арифметической побитовой логической поддержки escape-символов можно использовать несколько статических методов из вашего построения. Получить доступ к этим методам можно с помощью следующего синтаксиса, где \<Method> — это имя метода, а (\<Parameters>) — список параметров метода.
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 Например, чтобы добавить два свойства с числовыми значениями, используйте следующий код.
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |Строка NormalizePath(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного пути и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе.|
 |Строка NormalizeDirectory(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного каталога и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе, а также наличие косой черты в конце.|
 |Строка EnsureTrailingSlash(строка путь)|Если в конце заданного пути нет косой черты, она добавляется. Если путь является пустой строкой, он не изменяется.|
-|Строка GetPathOfFileAbove(строка файл, строка startingDirectory)|Поиск файла в зависимости от расположения текущего файла сборки, или на основе `startingDirectory`, если он указан.|
-|GetDirectoryNameOfFileAbove(строка startingDirectory, строка fileName)|Поиск файла в указанном каталоге либо в структуре каталогов над ним.|
+|Строка GetPathOfFileAbove(строка файл, строка startingDirectory)|Ищет и возвращает полный путь к файлу в структуре каталогов над расположением текущего файла сборки или на основе `startingDirectory`, если указано.|
+|GetDirectoryNameOfFileAbove(строка startingDirectory, строка fileName)|Поиск и возврат каталога файла в указанном каталоге либо расположении в структуре каталогов над ним.|
 |Строка MakeRelative(строка basePath, строка путь)|Делает `path` относительным для `basePath`. `basePath` должен быть абсолютным каталогом. Если `path` невозможно сделать относительным, он возвращается дословно. Аналогично `Uri.MakeRelativeUri`.|
 |Строка ValueOrDefault(стока conditionValue, строка defaultValue)|Возвращение строки в параметре "defaultValue" только в том случае, если параметр "conditionValue" пуст; в противном случае возвращается значение conditionValue.|
 
@@ -181,7 +183,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 Функции свойства можно объединять для формирования более сложных функций, как показано в следующем примере.
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 
 Эта функция свойства использует следующий синтаксис.
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 
 Эта функция свойства использует следующий синтаксис.
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 
  Эта функция свойства использует следующий синтаксис.
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-Функция свойства `GetPathOfFileAbove` в MSBuild возвращает путь к файлу, непосредственно предшествующему данному. Она функционально эквивалентна вызову.
+В MSBuild функция свойства `GetPathOfFileAbove` возвращает путь к указанному файлу, если он находится в структуре каталогов над текущим каталогом. Она функционально эквивалентна вызову.
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 Эта функция свойства использует следующий синтаксис.
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ $([MSBuild]::GetPathOfFileAbove(dir.props))
 
 В следующих примерах показано, как используется эта функция.
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,7 +259,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 
 Синтаксис функции свойства.
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
@@ -275,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 
 Пример.
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Mic
 
 Эта функция свойства использует следующий синтаксис.
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 
@@ -337,6 +339,10 @@ Output:
   Value2 = b
 -->
 ```
+
+## <a name="msbuild-condition-functions"></a>Функции условий MSBuild
+
+Функции `Exists` и `HasTrailingSlash` не являются функциями элементов. Они доступны для использования с атрибутом `Condition`. См. [Условия MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>См. также
 

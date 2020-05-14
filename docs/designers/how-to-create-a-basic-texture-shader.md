@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac74155b8de4669d959d9b14e9be20ada2ec51d9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589478"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
@@ -50,9 +50,9 @@ ms.locfileid: "75589478"
 
 Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Image Editor](../designers/image-editor.md)
+- [Редактор изображений](../designers/image-editor.md)
 - [Конструктор шейдеров](../designers/shader-designer.md)
 - [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)

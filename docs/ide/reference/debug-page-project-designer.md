@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595726"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649435"
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
 
@@ -87,5 +87,5 @@ ms.locfileid: "75595726"
 - [Первое знакомство с отладчиком](../../debugger/debugger-feature-tour.md)
 - [Параметры проекта для конфигураций отладки C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Параметры проекта для конфигурации отладки Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Защита приложений ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Практическое руководство. Создание и изменение конфигураций](../../ide/how-to-create-and-edit-configurations.md)

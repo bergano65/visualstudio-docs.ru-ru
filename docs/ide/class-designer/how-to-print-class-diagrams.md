@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Печать диаграмм классов (конструктор классов)
+title: Практическое руководство. Печать схем классов (конструктор классов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596701"
 ---
-# <a name="how-to-print-class-diagrams"></a>Практическое руководство. Печать диаграмм классов
+# <a name="how-to-print-class-diagrams"></a>Практическое руководство. Печать схем классов
 
 Схему классов можно распечатать с помощью функции печати Visual Studio.
 
@@ -30,7 +30,7 @@ ms.locfileid: "75596701"
 
 Будет распечатана вся схема классов. При необходимости печати на бумаге соответствующего размера может потребоваться корректировка настроек в диалоговом окне **Параметры страницы**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Копирование элементов диаграммы классов в документ Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
-- [Практическое руководство. Экспорт диаграмм классов в виде изображений](how-to-export-class-diagrams-as-images.md)
+- [Практическое руководство. Экспорт схем классов как изображений](how-to-export-class-diagrams-as-images.md)

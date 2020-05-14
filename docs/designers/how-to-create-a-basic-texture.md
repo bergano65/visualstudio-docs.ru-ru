@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589463"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Практическое руководство. Создание простейшей текстуры
@@ -87,6 +87,6 @@ ms.locfileid: "75589463"
 
 В качестве следующего шага можно создать уровни MIP для этой текстуры. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение MIP-уровней](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Image Editor](../designers/image-editor.md)
+- [Редактор изображений](../designers/image-editor.md)

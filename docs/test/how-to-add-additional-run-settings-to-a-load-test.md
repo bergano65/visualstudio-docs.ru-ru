@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584508"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест
@@ -45,9 +45,9 @@ ms.locfileid: "75584508"
     > [!NOTE]
     > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
-     Теперь можно указать, что добавленный параметр должен использоваться при запуске (сделайте его активным). Дополнительные сведения см. в разделе [Практическое руководство. выбрать активный параметр запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Теперь можно указать, что добавленный параметр должен использоваться при запуске (сделайте его активным). Дополнительные сведения см. в статье [Практическое руководство. Выбор активного параметра запуска для нагрузочного теста](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

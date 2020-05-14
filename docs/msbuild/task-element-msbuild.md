@@ -1,5 +1,5 @@
 ---
-title: Элемент Task (MSBuild) | Документация Майкрософт
+title: Элемент Task элемента Target (MSBuild) | Документация Майкрософт
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566362"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263179"
 ---
-# <a name="task-element-msbuild"></a>Элемент Task (MSBuild)
-Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Имя элемента определяется именем создаваемой задачи.
+# <a name="task-element-of-target-msbuild"></a>Элемент Task элемента Target (MSBuild)
+
+Создает и выполняет экземпляр задачи MSBuild. Имя элемента определяется именем создаваемой задачи.
 
  \<Project> \<Target>
 
@@ -39,6 +40,7 @@ ms.locfileid: "75566362"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -59,14 +61,16 @@ ms.locfileid: "75566362"
 
 | Элемент | Описание |
 | - | - |
-| [Целевой объект](../msbuild/target-element-msbuild.md) | Элемент контейнера для задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Целевой объект](../msbuild/target-element-msbuild.md) | Элемент контейнера для задач MSBuild. |
 
 ## <a name="remarks"></a>Примечания
- Элемент `Task` в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает экземпляр задачи, устанавливает для него свойства и выполняет его. Элемент `Output` сохраняет выходные параметры в свойствах или элементах, которые будут использоваться в другом месте в файле проекта.
+
+ Элемент `Task` в файле проекта MSBuild создает экземпляр задачи, устанавливает для него свойства и выполняет его. Элемент `Output` сохраняет выходные параметры в свойствах или элементах, которые будут использоваться в другом месте в файле проекта.
 
  Если в родительском элементе `Target` задачи существуют элементы [OnError](../msbuild/onerror-element-msbuild.md), они будут обрабатываться даже в случае сбоя задачи, когда `ContinueOnError` имеет значение `false`. Дополнительные сведения о задачах см. в разделе [Задачи](../msbuild/msbuild-tasks.md).
 
 ## <a name="example"></a>Пример
+
  Следующий пример кода создает экземпляр класса [задачи Csc](../msbuild/csc-task.md), устанавливает шесть свойств и выполняет задачу. После выполнения значение свойства `OutputAssembly` этого объекта помещается в список элементов с именем `FinalAssemblyName`.
 
 ```xml
@@ -84,6 +88,7 @@ ms.locfileid: "75566362"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

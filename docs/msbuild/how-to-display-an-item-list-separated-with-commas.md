@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596337"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633906"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
-При работе со списками элементов в [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) иногда бывает полезно отобразить содержимое этих списков в удобном для чтения виде. Либо у вас может быть задача, принимающая список элементов, разделенных специальной строкой. В обоих случаях вы можете указать строку разделителя для списка элементов.
+
+При работе со списками элементов в Microsoft Build Engine (MSBuild) иногда бывает полезно отобразить содержимое этих списков в удобном для чтения виде. Либо у вас может быть задача, принимающая список элементов, разделенных специальной строкой. В обоих случаях вы можете указать строку разделителя для списка элементов.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Разделение элементов в списке запятыми
-По умолчанию [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] разделяет элементы в списке точками с запятой. Например, рассмотрим элемент `Message` со следующим значением:
+
+По умолчанию MSBuild разделяет элементы в списке точками с запятой. Например, рассмотрим элемент `Message` со следующим значением:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
@@ -43,6 +45,7 @@ ms.locfileid: "75596337"
     `@(TXTFile, ', ')`
 
 ## <a name="example"></a>Пример
+
 В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле *Phrases.txt*. В команде findstr искомые литеральные строки обозначены параметром **-c:** , поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `-c:`.
 
 Для этого примера эквивалентная команда в командной строке имеет вид:
@@ -67,5 +70,6 @@ ms.locfileid: "75596337"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
 - [Элементы](../msbuild/msbuild-items.md)

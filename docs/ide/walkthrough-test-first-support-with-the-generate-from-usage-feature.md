@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596896"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 
-В этом разделе демонстрируется использование функции [Создание в результате использования](../ide/visual-csharp-intellisense.md#generate-from-usage), которая поддерживает разработку на основе тестирования.
+В этом разделе демонстрируется использование функции [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage) , которая поддерживает разработку на основе тестирования.
 
  *Разработка на основе тестирования* является подходом к созданию программного обеспечения, в рамках которого на основе спецификаций продукта создаются модульные тесты, а затем создается исходный код, который приводит к успешному выполнению тестов. Visual Studio поддерживает разработку на основе тестирования путем создания новых типов и членов в исходном коде при их первом упоминании в тестовых случаях до их определения.
 
@@ -159,7 +159,7 @@ Visual Studio создает типы и члены, практически не
 
      ![Переданные результаты теста](../ide/media/testspassed.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание в результате использования](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

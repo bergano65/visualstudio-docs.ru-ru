@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricString | Документация Майкрософт
+title: IDebugSettingsCallback2:GetEEMetricString Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricString
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd4ac00a03204ac9104ea965145874ac950f7304
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec2d8d321045900ac208297f7b007ce5266953f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322091"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720016"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-Извлекает строковое значение метрики вычислителя выражений, заданную ее именем.
+Извлекает строку значения метрики оценки выражения с учетом его имени.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ private int GetEEMetricString(
 
 ## <a name="parameters"></a>Параметры
 `guidLang`\
-[in] Уникальный идентификатор языка программирования.
+(в) Уникальный идентификатор языка программирования.
 
 `guidVendor`\
-[in] Уникальный идентификатор поставщика.
+(в) Уникальный идентификатор поставщика.
 
 `pszMetric`\
-[in] Имя метрики.
+(в) Название метрики.
 
 `pbstrValue`\
-[out] Возвращает строковое значение метрики.
+(ваут) Возвращает строку значения метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

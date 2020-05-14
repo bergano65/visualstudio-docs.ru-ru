@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Документация Майкрософт
+title: BP_UNBOUND_REASON Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350559"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737775"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Предоставляет причину, по которой был отсоединен точку останова.
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
+Дает причину, по которой точка разрыва была несвязана.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,21 +51,21 @@ public enum enum_BP_UNBOUND_REASON {
 Причина неизвестна.
 
 `BPUR_CODE_UNLOADED`\
-Код, который содержит точку останова, был выгружен.
+Код, содержащий точку разрыва, был выгружен.
 
 `BPUR_BREAKPOINT_REBIND`\
-Точка останова были привязаны повторно в другом месте. Это может произойти после изменения и продолжить работу, если точка останова перемещается или привязана точка останова в файл с путем, который больше не является допустимым.
+Точка разрыва была отскок в другое место. Это может произойти после операций «Отработка» и «Продолжить» при движении точки разрыва или при привязке точки разрыва к файлу с недопустимыми путями.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Чтобы находиться в состоянии ошибки, после привязки определяется точка останова. Это происходит для управляемых точек останова, условия которых больше не действительны.
+Точка разрыва определяется как по ошибке после того, как она связана. Это происходит с управляемыми точками разрыва, условия которых больше не действуют.
 
 ## <a name="remarks"></a>Примечания
-Возвращенный [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) метод.
+Возвращается методом [GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

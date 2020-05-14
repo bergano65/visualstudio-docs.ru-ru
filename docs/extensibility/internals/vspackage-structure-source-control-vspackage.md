@@ -1,40 +1,40 @@
 ---
-title: Структура VSPackage (пакет VSPackage управления версиями) | Документация Майкрософт
+title: Структура VSPackage (Управление источником VSPackage) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d609efe52955dba53b8c8890a6fcb44bb7f3f352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332744"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703810"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Структура VSPackage (пакет VSPackage системы управления версиями)
 
-Пакет SDK для пакета управления для источника предоставляет рекомендации по созданию пакетов VSPackage, который позволяет разработчику элемента управления источника интегрировать свой функции системы управления версиями со средой Visual Studio. VSPackage — это компонент COM, который обычно загружается по запросу по среде разработки Visual Studio (IDE), на основе служб, которые объявляются с помощью пакета в записи в реестр. Каждый пакет VSPackage должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage обычно потребляет служб, предоставляемых Visual Studio IDE и предлагает некоторые службы.
+Пакет управления исходным управлением SDK содержит рекомендации по созданию VSPackage, которые позволяют исполнителю управления исходным источником интегрировать свою функциональность управления исходным источником с средой Visual Studio. VSPackage — это компонент COM, который обычно загружается по требованию интегрированной средой разработки Visual Studio (IDE) на основе услуг, рекламируемых пакетом в его регистрационных записях. Каждый VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>должен реализоваться. VSPackage обычно потребляет услуги, предлагаемые Visual Studio IDE и предлагает некоторые услуги самостоятельно.
 
-VSPackage объявляет элементами меню и устанавливает состояние элемента по умолчанию с помощью файла .vsct. Интегрированной среде разработки Visual Studio отображает элементы меню в этом состоянии до загрузки VSPackage. Как следствие, реализацию VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.
+VSPackage объявляет свои элементы меню и устанавливает состояние элемента по умолчанию через файл .vsct. Визуальная студия IDE отображает пункты меню в этом состоянии до загрузки VSPackage. Впоследствии реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метода VSPackage называется для включения или отключания элементов меню.
 
-## <a name="source-control-package-characteristics"></a>Характеристик пакета управления источника
+## <a name="source-control-package-characteristics"></a>Характеристики пакета управления исходом
 
-Пакет VSPackage системы управления версиями тесно интегрирована в Visual Studio. Семантика VSPackage включают:
+Управление источником VSPackage глубоко интегрировано в Visual Studio. Семантика VSPackage включает в себя:
 
-- Интерфейс, реализуемый размещению VSPackage ( `IVsPackage` интерфейс)
+- Интерфейс, который будет реализован в силу `IVsPackage` того, что VSPackage (интерфейс)
 
-- Реализация команды пользовательского интерфейса (vsct-файл и реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс)
+- Реализация команды uI (.vsct файл <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> и реализация интерфейса)
 
-- Регистрация VSPackage с помощью Visual Studio.
+- Регистрация VSPackage с Visual Studio.
 
-Система управления версиями VSPackage должны обмениваться данными с этих сущностей Visual Studio:
+Управление исходным элементом VSPackage должно общаться с другими объектами Visual Studio:
 
 - Проекты
 
@@ -44,9 +44,9 @@ VSPackage объявляет элементами меню и устанавли
 
 - Windows
 
-- В таблице выполняющихся документов
+- Работая таблица документов
 
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Службы среды Visual Studio, которые могут включать
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Визуальные студии окружающей среды услуг, которые могут быть использованы
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
 
@@ -54,7 +54,7 @@ VSPackage объявляет элементами меню и устанавли
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
 
-SVsRegisterScciProvider Service
+SVsRegisterScciProvider Службы
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
 
@@ -62,15 +62,15 @@ SVsRegisterScciProvider Service
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
 
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP интерфейсы реализованы и вызывается
+### <a name="vsip-interfaces-implemented-and-called"></a>Интерфейсы VSIP реализованы и вызваны
 
-Пакет системы управления версиями является VSPackage, и поэтому она может напрямую взаимодействовать с других пакетов VSPackage, должны быть зарегистрированы с помощью Visual Studio. Чтобы обеспечить доступ ко всем возможностям функции системы управления версиями, системы управления версиями VSPackage могут работать с интерфейсов, предоставляемых платформой проектов или оболочки.
+Пакет управления исходным источником является VSPackage, и поэтому он может взаимодействовать непосредственно с другими VSPackages, которые зарегистрированы в Visual Studio. Для того, чтобы обеспечить полную ширину функциональности управления исходным источником, управление исходным элементом VSPackage может иметь дело с интерфейсами, предоставляемыми проектами или оболочкой.
 
-Каждый проект в Visual Studio должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> распознается как проект интегрированной среды разработки Visual Studio. Тем не менее, этот интерфейс не является специальным достаточно для системы управления версиями. Проекты, которые должны быть под источником управления реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Этот интерфейс используется системой управления версиями VSPackage для запроса проекта за их содержимое и предоставлять его глифы и сведения о привязке (сведения, необходимые для установления соединения между расположением сервера и расположение проекта, который находится под на диске Система управления версиями).
+Каждый проект в <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> Visual Studio должен быть реализован в качестве проекта в рамках Visual Studio IDE. Однако этот интерфейс недостаточно специализирован для управления исходным источником. Проекты, которые, как ожидается, будут находиться под контролем источников реализации. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> Этот интерфейс используется диспетчером VSPackage для запроса проекта для его содержимого и предоставления ему глифов и связывающей информации (информация, необходимая для установления связи между местоположением сервера и расположением диска проекта, напавшем под контроль источника).
 
-Системы управления версиями, VSPackage реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, который в свою очередь позволяет проектам регистрироваться для системы управления версиями и получить их состояние глифов.
+Источник управления VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>реализует, что, в свою очередь, позволяет проектам зарегистрироваться для управления исходным источником и получить их статус глифов.
 
-Полный список интерфейсов, которые необходимо учитывать VSPackage системы управления версиями, см. в разделе [связанные службы и интерфейсы](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
+Для полного списка интерфейсов, которые должен учитывать элемент управления исходным элементом VSPackage, [см.](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
 
 ## <a name="see-also"></a>См. также
 

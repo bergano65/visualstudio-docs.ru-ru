@@ -52,9 +52,9 @@
 ## [Настройка репозитория Subversion](/visualstudio/mac/set-up-subversion-repository)
 ## [Работа с Subversion](/visualstudio/mac/working-with-subversion)
 
-# [Развертывание веб-приложения](/visualstudio/mac/web-app-deployment.md)
-## [Публикация в службу приложений Azure](/visualstudio/mac/publish-app-svc.md)
-## [Публикация в папку](/visualstudio/mac/publish-folder.md)
+# [Развертывание веб-приложения](/visualstudio/mac/web-app-deployment)
+## [Публикация в службу приложений Azure](/visualstudio/mac/publish-app-svc)
+## [Публикация в папку](/visualstudio/mac/publish-folder)
 
 # [Рабочие нагрузки](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
@@ -67,8 +67,8 @@
 ## [Разработка игр на Unity](/visualstudio/mac/unity-tools)
 ### [Установка](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [Использование инструментов Unity](/visualstudio/mac/using-vsmac-tools-unity)
-### [Использование .NET 4.x в Unity](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [Использование .NET 4.x в Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Использование мобильных приложений и Xamarin](/visualstudio/mac/xamarin)
 
 # [Специальные возможности](/visualstudio/mac/accessibility)

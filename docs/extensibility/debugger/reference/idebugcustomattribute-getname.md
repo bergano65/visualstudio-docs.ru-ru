@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Документация Майкрософт
+title: IDebugCustomAttribute::GetName Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ed7abc9682d0a9f56c50fe7510ed3f276a6bf5a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315208"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732776"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
-Получает имя настраиваемого атрибута.
+Получает название пользовательского атрибута.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetName(
 
 ## <a name="parameters"></a>Параметры
 `bstrName`\
-[out] Возвращает строку, содержащую имя настраиваемого атрибута.
+(ваут) Возвращает строку, содержащую имя пользовательского атрибута.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Именованный возвращаемого этим методом соответствует имени класса, используемого для объявления атрибута. Это может не совсем соответствовать имя самого класса настраиваемого атрибута как C# позволяет суффикс «Attribute» будет удален из имени настраиваемого атрибута, при использовании в объявлении.
+ Имя, возвращенное этим методом, соответствует названию класса, используемого для объявления атрибута. Это может не совсем соответствовать названию самого класса пользовательских атрибутов, так как суффикс «Атрибут» может быть удален из пользовательского имени атрибута, когда он используется в декларации.
 
 ## <a name="see-also"></a>См. также
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

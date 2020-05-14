@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113776"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
 
 Содержит средство анализа кода, которое вы можете запустить для своего кода. Это средство предоставляет сведения об управляемых сборках, например о нарушении правил программирования и разработки, изложенных в руководствах по разработке Microsoft .NET.
 
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса (UIElement)
 
 Включить анализ кода\
 Включает или отключает анализ кода для проекта.
@@ -62,8 +62,8 @@ ms.locfileid: "76113776"
 Правила использования\
 Включает или отключает правила использования. Вы также можете расширить эту запись, чтобы включить или отключить отдельные правила.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ для предупреждений управляемого кода](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Общие сведения об анализе управляемого кода](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Пошаговое руководство: Анализ управляемого кода на наличие дефектов](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Пошаговое руководство. Проверка управляемого кода на наличие дефектов](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

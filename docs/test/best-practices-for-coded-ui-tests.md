@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565166"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Рекомендации по выполнению закодированных тестов пользовательского интерфейса
@@ -85,7 +85,7 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>

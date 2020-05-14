@@ -1,5 +1,5 @@
 ---
-title: Элемент TaskBody (MSBuild) | Документация Майкрософт
+title: Элемент UsingTask (MSBuild) | Документация Майкрософт
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -8,33 +8,35 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- TaskBody element [MSBuild]
-- <TaskBody> element [MSBuild]
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594985"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263192"
 ---
-# <a name="taskbody-element-msbuild"></a>Элемент TaskBody (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Элемент Task элемента UsingTask (MSBuild)
+
 Содержит данные, передаваемые в `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<TaskBody>
+ \<Project> \<UsingTask> \<Task>
 
 ## <a name="syntax"></a>Синтаксис
 
 ```xml
-<TaskBody Evaluate="true/false" />
+<Task Evaluate="true/false" />
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -47,16 +49,17 @@ ms.locfileid: "75594985"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Data|Текст между тегами `TaskBody` отправляется в `TaskFactory` без изменений.|
+|Данные|Текст между тегами `Task` отправляется в `TaskFactory` без изменений.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 | Элемент | Описание |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Предоставляет способ регистрации задач в MSBuild. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
 
 ## <a name="example"></a>Пример
- В следующем примере показано использование элемента `TaskBody` с атрибутом `Evaluate`.
+
+ В следующем примере показано использование элемента `Task` с атрибутом `Evaluate`.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -65,13 +68,14 @@ ms.locfileid: "75594985"
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

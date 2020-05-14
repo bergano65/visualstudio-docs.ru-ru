@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Документация Майкрософт
+title: METADATA_ADDRESS_METHOD Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347361"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714459"
 ---
-# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
-Эта структура представляет собой адрес методу класса.
+# <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
+Эта структура представляет адрес метода класса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,21 +47,21 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  Идентификатор метода.
 
- [C++] `_mdToken` — `typedef` для 32-разрядных `int`.
+ (К) `_mdToken` является `typedef` для 32-битного `int`.
 
  `dwOffset`\
- Смещение от начала класса в этот метод (может представлять смещения в таблице vtable).
+ Смещение от начала класса к этому методу (может представлять смещение в vtable).
 
  `dwVersion`\
  Версия метода (это значение является уникальным для поставщика символов).
 
 ## <a name="remarks"></a>Примечания
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_METHOD` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).
+ Эта структура является частью соединения в `dwKind` [структуре DEBUG_ADDRESS_UNION,](../../../extensibility/debugger/reference/debug-address-union.md) когда `ADDRESS_KIND_METHOD` поле `DEBUG_ADDRESS_UNION` структуры устанавливается (значение от [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления).
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

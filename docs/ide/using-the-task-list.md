@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594231"
 ---
 # <a name="use-the-task-list"></a>Использование списка задач
@@ -73,7 +73,7 @@ ms.locfileid: "75594231"
 
 Создание пользовательского маркера:
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Средства** выберите **Параметры**.
 
 2. Откройте папку **Среда** и выберите **Список задач**.
 
@@ -108,7 +108,7 @@ ms.locfileid: "75594231"
 
 Для навигации по ярлыкам в коде можно выбрать ярлык в списке, а затем пункт **Следующая задача** или **Предыдущая задача** в контекстном меню.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Список задач", папка "Среда", диалоговое окно "Параметры"](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Комментарии к задачам (Visual Studio для Mac)](/visualstudio/mac/task-comments)

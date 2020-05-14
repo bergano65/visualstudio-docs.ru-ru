@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001080"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Пространство имен Concurrency (визуализатор параллелизма)
@@ -28,16 +28,16 @@ ms.locfileid: "63001080"
 namespace Concurrency;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="namespaces"></a>Пространства имен
 
-|name|Описание|
+|Имя|Description|
 |----------|-----------------|
 |[Пространство имен diagnostic](../profiling/diagnostic-namespace.md)|Пространство имен `diagnostics` предоставляет функциональные возможности для выпуска маркеров визуализатора параллелизма.|
 
 ## <a name="requirements"></a>Требования
  **Заголовок:** cvmarkersobj.h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по библиотеке C](../profiling/c-library-reference.md)

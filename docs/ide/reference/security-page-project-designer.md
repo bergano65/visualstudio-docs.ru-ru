@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593581"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649827"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
 
@@ -80,7 +80,7 @@ ms.locfileid: "75593581"
 - [Практическое руководство. Включение параметров безопасности ClickOnce-приложений](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Защита приложений ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Развертывание и безопасность технологии ClickOnce](../../deployment/clickonce-security-and-deployment.md)
 - [Справочник по свойствам проектов](../../ide/reference/project-properties-reference.md)
 - [Диалоговое окно "Дополнительные параметры безопасности"](../../ide/reference/advanced-security-settings-dialog-box.md)

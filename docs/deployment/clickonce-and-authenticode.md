@@ -1,5 +1,5 @@
 ---
-title: ClickOnce и Authenticode | Документация Майкрософт
+title: ClickOnce и Authenticode (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0920da406e911f388c2b9ae77db16ee325aaae65
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b9b0e22f56ab68be521eda7a765a2be7e23bbf92
+ms.sourcegitcommit: 6c3aa85ff17916936018d121e7a0d1b486f6c7eb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806979"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093960"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 *Authenticode* — это технология Майкрософт, которая использует шифрование по отраслевому стандарту для подписания кода приложения цифровыми сертификатами, которые удостоверяют подлинность издателя приложения. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.
@@ -41,35 +41,33 @@ ms.locfileid: "72806979"
 
 - получить от группы, которая отвечает за создание цифровых сертификатов в вашей организации.
 
-- Создайте собственный сертификат с помощью командлета PowerShell New-SelfSignedCertificate или с помощью программы *Makecert. exe*, которая входит в состав [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+- Создайте свой собственный сертификат с помощью New-SelfSignedCertificate PowerShell cmdlet, или с [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]помощью *MakeCert.exe*, который включен в .
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Польза центров сертификации для пользователей
  Сертификат, созданный с помощью New-SelfSignedCertificate или *MakeCert.exe* служебная программа, обычно называется *автосертификатом* или *тестовым сертификатом*. Сертификат этого типа работает так же, как и *SNK*-файл в платформе .NET Framework. Он состоит только из пары открытого и закрытого криптографических ключей и не содержит проверяемых сведений об издателе. Автосертификаты можно использовать для развертывания приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с высоким уровнем доверия в интрасети. Однако когда эти приложения выполняются на клиентском компьютере, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] идентифицирует их как поступающие от неизвестного издателя. По умолчанию приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , подписанные с помощью автосертификатов и развертываемые через Интернет, не могут использовать развертывание доверенных приложений.
 
  И наоборот, если вы получаете сертификат из такого центра сертификации, как поставщик сертификатов или отдел внутри вашей организации, этот сертификат обеспечивает повышенную безопасность для пользователей. Он не только идентифицирует издателя подписанного программного обеспечения, но и проверяет его удостоверение путем сверки с ЦС, подписавшим его. Если ЦС не является корневым, Authenticode также выстраивает обратную "цепочку" до корневого центра, чтобы убедиться, что ЦС авторизован для выдачи сертификатов. Для повышения безопасности следует по возможности использовать сертификат, выданный центром сертификации.
 
- Дополнительные сведения о создании самозаверяющих сертификатов см. в разделе [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) или [MakeCert](/windows/desktop/SecCrypto/makecert).
+ Для получения дополнительной информации о генерации самосертификации, [MakeCert](/windows/desktop/SecCrypto/makecert) [см.](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate)
 
 ### <a name="timestamps"></a>Метки времени
  Сертификаты, используемые для подписи приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , имеют определенный срок действия, который обычно составляет двенадцать месяцев. Чтобы устранить необходимость в постоянном повторном подписывании приложений с использованием новых сертификатов, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает метку времени. Когда приложение подписано с меткой времени, его сертификат будет приниматься даже после истечения срока действия, при условии, что действительна метка времени. Это позволяет скачивать и запускать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с просроченными сертификатами, но действительными метками времени. Кроме того, это позволяет установленным приложениям с просроченными сертификатами продолжать скачивать и устанавливать обновления.
 
  Чтобы включить метку времени на сервер приложений, должен быть доступен сервер меток времени. Сведения о выборе сервера меток времени см. в разделе [How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-### <a name="update-expired-certificates"></a>Обновление сертификатов с истекшим сроком действия
+### <a name="update-expired-certificates"></a>Обновление сертификатов с истекшим сроком годности
  В более ранних версиях платформы .NET Framework обновление приложения, у которого истек срок действия сертификата, могло привести к прекращению работы этого приложения. Чтобы устранить эту проблему, воспользуйтесь одним из следующих способов:
 
 - Обновите платформу .NET Framework до версии 2.0 с пакетом обновления 1 или более поздней в Windows XP или до версии 3.5 или более поздней в Windows Vista.
 
 - Удалите приложение и переустановите новую версию с действительным сертификатом.
 
-- Создайте сборку командной строки, которая обновляет сертификат. Пошаговые инструкции для этого процесса можно найти в [справочной статье 925521 Майкрософт](https://support.microsoft.com/help/925521).
+### <a name="store-certificates"></a>Сертификаты магазина
 
-### <a name="store-certificates"></a>Хранение сертификатов
+- Сертификаты можно хранить в файле *.pfx* в файловой системе или хранить их внутри контейнера для ключей. Пользователь в домене Windows может иметь несколько контейнеров ключей. По умолчанию *MakeCert.exe* сохраняет сертификаты в личном контейнере ключей, если не указано, что сертификат должен храниться в виде *PFX*-файла. *Mage.exe* и *MageUI.exe* — инструменты [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] для создания развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — позволяют использовать сертификаты, хранящиеся в любом режиме.
 
-- Сертификаты можно хранить в виде *PFX*-файла в файловой системе или внутри контейнера ключей. Пользователь в домене Windows может иметь несколько контейнеров ключей. По умолчанию *MakeCert.exe* сохраняет сертификаты в личном контейнере ключей, если не указано, что сертификат должен храниться в виде *PFX*-файла. *Mage.exe* и *MageUI.exe* — инструменты [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] для создания развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — позволяют использовать сертификаты, хранящиеся в любом режиме.
-
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
-- [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)
-- [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+- [Безопасные приложения ClickOnce](../deployment/securing-clickonce-applications.md)
+- [Обзор развертывания приложений trusted](../deployment/trusted-application-deployment-overview.md)
+- [Mage.exe (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

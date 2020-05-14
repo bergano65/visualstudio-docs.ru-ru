@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
+title: IDebugProcess3::SetHostingProcessLanguage Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 242f35dce9245406c3466784811d79ac1942c49f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313915"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723566"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-Этот метод задает язык, процесс будет размещаться в группе. Этот язык можно использоваться ядром отладки (DE), загрузить соответствующий вычислителя выражений.
+Этот метод устанавливает язык, под которым будет размещаться процесс. Этот язык может быть использован движком отладки (DE) для загрузки соответствующего оценщика выражения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int SetHostingProcessLanguage(
 
 ## <a name="parameters"></a>Параметры
 `guidLang`\
-[in] `GUID` языка, который следует использовать DE. Укажите `GUID_NULL` (C++) или `Guid.Empty` (C#), чтобы иметь DE использования языка по умолчанию.
+(в) `GUID` языка, который должен использовать DE. Укажите `GUID_NULL` (СЗ) `Guid.Empty` или (СЗ), чтобы DE использовал язык по умолчанию.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) может использоваться для получения текущих языковых параметров.
+- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) можно использовать для получения текущей настройки языка.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

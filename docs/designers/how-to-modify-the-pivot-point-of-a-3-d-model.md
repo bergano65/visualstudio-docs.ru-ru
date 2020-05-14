@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Изменение центра вращения трехмерной модели
+title: Практическое руководство. Изменение точки вращения трехмерной модели
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589946"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Практическое руководство. Изменение центра вращения трехмерной модели
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Практическое руководство. Изменение точки вращения трехмерной модели
 
 В этой статье демонстрируется использование редактора моделей для изменения *центра вращения* трехмерной модели. Центр вращения является точкой в пространство, которая определяет математический центр для вращения и масштабирования объекта.
 
@@ -42,7 +42,7 @@ ms.locfileid: "75589946"
 
 ![Модель дома с измененным центром вращения](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md)
 - [Редактор моделей](../designers/model-editor.md)

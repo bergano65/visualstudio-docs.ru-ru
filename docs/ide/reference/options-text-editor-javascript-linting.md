@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605964"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Диалоговое окно "Параметры": Текстовый редактор \> JavaScript/TypeScript \> Анализ кода
@@ -30,7 +30,7 @@ ms.locfileid: "68605964"
 
 ### <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
-|Параметр|ОПИСАНИЕ|
+|Параметр|Описание|
 |------------|-----------------|
 |**Включить ESLint**|Если выбран этот параметр, в редакторе кода можно выполнять статический анализ кода.|
 |**Lint all files included in project, even closed files** (Проанализировать все файлы, включенные в проект, даже закрытые)|Если этот параметр выбран, анализируются закрытые файлы, если не предусмотрена диагностика только открытых файлов.|

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание простейшего шейдера с моделью освещения Ламберта
+title: Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589504"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера с моделью освещения Ламберта
@@ -50,10 +50,10 @@ ms.locfileid: "75589504"
 
 Дополнительные сведения о способах применения шейдера к трехмерной модели см. в статье [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)
-- [Практическое руководство. Создание простейшего шейдера цвета с моделью освещения Фонга](../designers/how-to-create-a-basic-phong-shader.md)
+- [Практическое руководство. Создание простейшего шейдера освещения по методу Фонга](../designers/how-to-create-a-basic-phong-shader.md)
 - [Конструктор шейдеров](../designers/shader-designer.md)
 - [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)

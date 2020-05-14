@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565413"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Добавление источника данных в веб-тест производительности
@@ -156,7 +156,7 @@ ms.locfileid: "75565413"
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Вопрос: Какие базы данных можно использовать в качестве источника данных?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Вопрос. Какие базы данных можно использовать в качестве источника данных?
 
 **Ответ.** Можно использовать следующие компоненты:
 
@@ -172,9 +172,9 @@ ms.locfileid: "75565413"
 
 - Oracle 7.3, 8i, 9i или 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Вопрос: Можно ли использовать текстовый CSV-файл в качестве источника данных?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Вопрос. Можно ли использовать текстовый CSV-файл в качестве источника данных?
 
-**Ответ.** Это делается так.
+**Ответ.** Ниже описан порядок действий.
 
 1. Создайте папку, чтобы организовать артефакты базы данных проекта и добавить элемент.
 
@@ -196,7 +196,7 @@ ms.locfileid: "75565413"
 
      ![Ввод имени и выбор CSV-файла](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Вопрос: В моем CSV-файле нет заголовков столбцов. Как действовать в этом случае?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Вопрос. В моем CSV-файле нет заголовков столбцов. Как действовать в этом случае?
 
 **Ответ.** Если нет возможности добавить заголовки столбцов, можно использовать файл описания схемы, чтобы рассматривать CSV-файл как базу данных.
 
@@ -219,7 +219,7 @@ ms.locfileid: "75565413"
 
      ![Добавление базы данных в качестве источника данных](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
-5. Создайте новое подключение.
+5. Создайте подключение.
 
      ![Выбор нового подключения](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
@@ -247,7 +247,7 @@ ms.locfileid: "75565413"
 
      ![Источник данных добавлен в тест](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Вопрос: Как использовать XML-файл в качестве источника данных?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Вопрос. Как использовать XML-файл в качестве источника данных?
 
 **Ответ.** Да.
 
@@ -279,7 +279,7 @@ ms.locfileid: "75565413"
 
      ![Ввод имени и выбор XML-файла](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Вопрос: Можно ли добавить привязку данных в запрос веб-службы, которая использует SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Вопрос. Можно ли добавить привязку данных в запрос веб-службы, которая использует SOAP?
 
 **Ответ.** Да, нужно изменить протокол SOAP XML вручную.
 

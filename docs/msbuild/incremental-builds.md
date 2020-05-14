@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091825"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633724"
 ---
 # <a name="incremental-builds"></a>Добавочные сборки
 
@@ -52,7 +52,7 @@ MSBuild сравнивает атрибуты `Inputs` и `Outputs` целево
 
 - У целевого объекта нет устаревших выходных параметров, поэтому он пропускается. MSBuild вычисляет целевой объект и вносит изменения в элементы и свойства, как если бы целевой объект выполнялся.
 
-Для поддержки инкрементной компиляции задачи должны обеспечить, чтобы значение атрибута `TaskParameter` для любого элемента `Output` было равно входному параметру задачи. Далее приводятся некоторые примеры.
+Для поддержки инкрементной компиляции задачи должны обеспечить, чтобы значение атрибута `TaskParameter` для любого элемента `Output` было равно входному параметру задачи. Ниже приведены некоторые примеры:
 
 ```xml
 <CreateProperty Value="123">
@@ -78,5 +78,6 @@ MSBuild сравнивает атрибуты `Inputs` и `Outputs` целево
 
 Этот код создает свойство CompileRan и присваивает ему значение `true`, но только в случае выполнения целевого объекта. В случае пропуска целевого объекта свойство CompileRan не создается.
 
-## <a name="see-also"></a>См. также
-- [Целевые объекты](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>См. также раздел
+
+- [Цели](../msbuild/msbuild-targets.md)

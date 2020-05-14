@@ -1,5 +1,5 @@
 ---
-title: Элемент SortOrder (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент SortOrder (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SortOrder element [Visual Studio Templates]
 - <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2875bcb4583c1d2ec47a935d1a8bb4f0de109a92
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719914"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699958"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Элемент SortOrder (шаблоны Visual Studio)
-Задает значение, используемое для упорядочения шаблона (помимо других шаблонов в той же категории), которое отображается в диалоговом окне **Создание проекта** или **Добавление нового элемента** .
+Определяет значение, которое используется для аранжировки шаблона, среди других шаблонов в той же категории, как это появляется в **new Project** или **Добавить new Item** диалоговое окно.
 
- \<VSTemplate > \<TemplateData > \<SortOrder >
+ \<VSTemplate \<> TemplateData> \<> SortOrder
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +36,10 @@ ms.locfileid: "72719914"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -50,17 +50,17 @@ ms.locfileid: "72719914"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- @No__t_0, представляющий значение порядка сортировки.
+ Значение `integer` заказа сортировки представляет собой значение сортировки.
 
-## <a name="remarks"></a>Заметки
- `SortOrder` — это необязательный элемент. Значение по умолчанию — 100, а все значения должны быть кратными 10.
+## <a name="remarks"></a>Примечания
+ Параметр `SortOrder` является необязательным элементом. Значение по умолчанию 100, и все значения должны быть кратными 10.
 
- Элемент `SortOrder` игнорируется для шаблонов, созданных пользователем. Все созданные пользователем шаблоны сортируются в алфавитном порядке.
+ Элемент `SortOrder` игнорируется для созданных пользователем шаблонов. Все созданные пользователем шаблоны сортируются в алфавитном порядке.
 
- Шаблоны с низким порядком сортировки отображаются в диалоговом окне **Создание проекта** или **Добавление элемента** перед шаблонами, имеющими значения с высоким порядком сортировки.
+ Шаблоны с низкими значениями заказов сортировки отображаются либо в поле диалога **New Project** или New **Add Item** перед шаблонами с высокими значениями порядка сортировки.
 
 ## <a name="example"></a>Пример
- В следующем примере показаны метаданные для стандартного шаблона класса [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
+ Следующий пример иллюстрирует метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона стандартного класса.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +79,7 @@ ms.locfileid: "72719914"
 </VSTemplate>
 ```
 
- В этом примере элемент `SortOrder` относительно высокий. Вполне вероятно, что другие шаблоны [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] элементов будут иметь `SortOrder` значение ниже `290` и будут отображаться перед этим шаблоном в диалоговом окне **новый элемент** .
+ В этом примере `SortOrder` элемент относительно высок. Вполне вероятно, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] что другие `SortOrder` шаблоны `290` элементов будут иметь значение ниже, чем и появится до этого шаблона в поле диалога **New Item.**
 
 ## <a name="see-also"></a>См. также
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

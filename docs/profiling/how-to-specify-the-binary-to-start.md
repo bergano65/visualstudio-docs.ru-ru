@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Указание двоичного файла для запуска | Документация Майкрософт
+title: Практическое руководство. Указание двоичного файла для запуска | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778691"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Практическое руководство. Определение двоичного файла для запуска
@@ -39,6 +39,6 @@ ms.locfileid: "74778691"
 
 7. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72668947"
 ---
 # <a name="options-text-editor-f-advanced"></a>"Параметры", "Текстовый редактор", F#, "Дополнительно"
@@ -24,11 +24,11 @@ ms.locfileid: "72668947"
 
 Если выбрать этот параметр, в редакторе отображаются вертикальные линии в соответствии со структурированными блоками кода. Это позволяет легко определять отдельные блоки кода.
 
-## <a name="outlining"></a>Структуризация
+## <a name="outlining"></a>Структура
 
 Установите этот флажок для автоматического отображения структуры файла кода с виде свертываемых блоков кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
 - ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)

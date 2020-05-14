@@ -1,35 +1,35 @@
 ---
-title: Проекты веб-приложений | Документация Майкрософт
+title: Веб-проекты Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8215241f93b0b796f2b1ad954b09d96fe6f493ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 23194ba5ad59a113e5599b7fe1f5f39bed557351
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323284"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703534"
 ---
 # <a name="web-projects"></a>Веб-проекты
-Веб-проекта системы — это система, создающий веб-проектов. Веб-проектов, в свою очередь, создайте веб-приложений. Вы можете программировать с помощью традиционных языках программирования, таких как веб-страницы [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], для сбора и обработки информации от пользователя, сохранить его в базу данных и так далее. Веб-страницы с соответствующий код, называются смарт-веб-страниц.
+Система веб-проектов — это проектная система, которая создает веб-проекты. Веб-проекты, в свою очередь, создают веб-приложения. Вы можете запрограммировать веб-страницу [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] с [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]помощью традиционных языков программирования, таких как или, для сбора и обработки информации от пользователя, хранения ее в базе данных и так далее. Веб-страницы с соответствующим кодом называются интеллектуальными веб-страницами.
 
 ## <a name="in-this-section"></a>В этом разделе
-- [Основные компоненты](../../extensibility/internals/web-project-essentials.md)
+- [Основное](../../extensibility/internals/web-project-essentials.md)
 
- Предоставляет важные элементы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] веб-проектов.
+ Представляет важные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] элементы веб-проектов.
 
 - [Поддержка веб-сайтов](../../extensibility/internals/web-site-support.md)
 
- Представляет Обзор [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проектов веб-сайтов. Проект веб-сайта создает один исполняемый файл для каждого smart веб-страницы. Дополнительные исполняемые файлы создаются из файлов исходного кода в папке/App_Code.
+ Представляет обзор проектов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] веб-узлов. Проект веб-узла генерирует один исполняемый файл для каждой умной веб-страницы. Дополнительные исполняемые файлы генерируются из файлов исходного кода в папке /App_Code.
 
 ## <a name="related-sections"></a>Связанные разделы
 - [Проекты](../../extensibility/internals/projects.md)
 
- Описывает способы расширения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] системы проектов.
+ Описывает, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] расширить проектную систему.

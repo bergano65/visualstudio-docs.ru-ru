@@ -2,22 +2,22 @@
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/02/2019
+ms.date: 03/23/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a2a8a5bc03baf51f684777f39f0815699c6c77af
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: f8f4645c9b69ff0fa7aa332f0716cc07b7a46e8a
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159323"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80234164"
 ---
 ## <a name="get-support"></a>Техническая поддержка
 
 Иногда возникают проблемы. Если установить Visual Studio не удается, воспользуйтесь пошаговыми указаниями в статье [Устранение неполадок при установке и обновлении Visual Studio](../troubleshooting-installation-issues.md).
 
-Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
+Также доступен [**чат по вопросам установки**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
 Ниже приведены несколько дополнительных вариантов:
 

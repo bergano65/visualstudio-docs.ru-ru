@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595791"
 ---
 # <a name="assembly-information-dialog-box"></a>Диалоговое окно сведений о сборке
@@ -25,12 +25,12 @@ ms.locfileid: "75595791"
 
 Чтобы открыть это диалоговое окно, выберите узел проекта в **обозревателе решений**, а затем в меню **Проект** выберите пункт **Свойства**. На странице **Приложение** нажмите кнопку **Сведения о сборке**.
 
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса (UIElement)
 
 **Заголовок**\
 Указывает заголовок для манифеста сборки. Соответствует <xref:System.Reflection.AssemblyTitleAttribute>.
 
-**Описание**\
+**Description**\
 Указывает дополнительное описание для манифеста сборки. Соответствует <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
 **Компания**\
@@ -65,7 +65,7 @@ ms.locfileid: "75595791"
 > [!NOTE]
 > Дополнительные сведения об установке этих свойств при создании пакета NuGet в библиотеке классов .NET Framework см. в разделе [Настройка свойств проекта для пакета](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Атрибуты](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

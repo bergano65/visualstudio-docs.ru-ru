@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567558"
 ---
 # <a name="customize-project-and-item-templates"></a>Настройка шаблонов проектов и элементов
@@ -25,7 +25,7 @@ ms.locfileid: "75567558"
 
 - Вы можете изменить и экспортировать существующий шаблон в виде шаблона пользователя.
 
-   Дополнительные сведения см. в разделе [Практическое руководство. обновить существующие шаблоны](../ide/how-to-update-existing-templates.md).
+   Дополнительные сведения см. в статье [Практическое руководство. Обновление существующих шаблонов](../ide/how-to-update-existing-templates.md).
 
 - Вы можете передать пользовательские параметры в шаблон для замены существующих значений.
 
@@ -33,13 +33,13 @@ ms.locfileid: "75567558"
 
 - Вы можете настроить мастеры, создающие проекты из шаблонов.
 
-   Дополнительные сведения см. в разделе [Практическое руководство. использовать мастера с шаблонами проектов (расширяемость)](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Дополнительные сведения см. в статье [Практическое руководство. Использование мастеров для шаблонов проекта (расширяемость)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. устранение неполадок, связанных с шаблонами](../ide/how-to-troubleshoot-templates.md)
-- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство. Устранение неполадок, связанных с шаблонами](../ide/how-to-troubleshoot-templates.md)
+- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

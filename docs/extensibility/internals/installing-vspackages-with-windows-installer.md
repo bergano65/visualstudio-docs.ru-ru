@@ -1,69 +1,69 @@
 ---
-title: Установка пакетов VSPackage с помощью установщика Windows | Документация Майкрософт
+title: Установка VSPackages с установкой Windows (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94dcb85e3cfef9c44cb8e88720f53c296f8bf997
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349856"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707464"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Установка пакетов VSPackage с помощью установщика Windows
-Интеграция пакета VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] требует не только копирование файлов на компьютере пользователя. Установщик вашего VSPackage необходимо установить VSPackage и его зависимых файлов и зарегистрировать, так и их интеграция в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. VSPackage может воспользоваться преимуществами функций интеграции, такие как отображение значка на [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -заставка экрана и диалогового окна About.
+Интеграция VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] в требует большего, чем просто копирование файлов на компьютер пользователя. Установщик VSPackage должен установить VSPackage и его зависимые [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]файлы, а также зарегистрировать и интегрировать их в. Ваш VSPackage может воспользоваться функциями интеграции, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] такими как отображение значка на экране всплеска и о диалоговом поле.
 
- Файлы установщика Microsoft Windows являются рекомендуемым способом распространения пакетов VSPackage. Пакеты установщика Windows для использования можно запустить в любой операционной системе Windows, поддерживаемых [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [установщика Windows](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).
+ Файлы Microsoft Windows Installer являются рекомендуемым способом распространения VSPackages. Простые в использовании пакеты установки Windows могут работать [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]на любой операционной системе Windows, поддерживаемой. Для получения дополнительной [Windows Installer](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)информации см.
 
 ## <a name="in-this-section"></a>В этом разделе
 - [Основные сведения об установщике Windows](../../extensibility/internals/windows-installer-basics.md)
 
- Обзор установщика Windows.
+ Предоставляет обзор установки Windows.
 
 - [Сценарии установки VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
 
- Описаны различные возможности, которые может поддерживать side-by-side установки обоих пакетов VSPackage и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Обсуждается различные способы поддержки бок о бок установки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]как ваших VSPackages и .
 
 - [Создание пакета установщика Windows](../../extensibility/internals/authoring-a-windows-installer-package.md)
 
- Общие сведения о типичные действия, выполните установщики правильно установить и интегрировать пакетов VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Обеспечивает обзор типичных шагов установщики следовать правильно установить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]и интегрировать VSPackages в .
 
 - [Определение требований к системе](../../extensibility/internals/detecting-system-requirements.md)
 
- Описывает, как можно обнаружить установщик [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и его компоненты и Отмена установки, если не выполняются требования к VSPackage.
+ Описывает, как установщик может обнаружить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и его компоненты и отменить настройку, если требования VSPackage не выполнены.
 
 - [Управление компонентами](../../extensibility/internals/component-management.md)
 
- Описываются способы разработки установщик, который будет поддерживать целостность данных в предыдущих версиях продукта.
+ Обсуждает, как разработать установщик, который будет поддерживать целостность предыдущих версий продукта.
 
 - [Выбор каталога установки для VSPackage](../../extensibility/internals/choosing-the-installation-directory-for-a-vspackage.md)
 
- Перечислены варианты для поиска пакетов VSPackage.
+ Обобщает варианты размещения VSPackages.
 
 - [Регистрация VSPackage](../../extensibility/internals/vspackage-registration.md)
 
- Описывает, как пакеты VSPackage регистрируются во время установки и почему самостоятельной регистрации не рекомендуется.
+ Обсуждает, как VSPackages регистрируются во время установки и почему саморегистрация является плохой идеей.
 
 - [Развертывание типов проектов](../../extensibility/internals/deploying-project-types.md)
 
- В этой статье описывается использование средства инвентаризации программного обеспечения новый тип проекта для типов проектов управляемого кода.
+ Обсуждается, как использовать новый агрегатор проектного типа для типов управляемых кодов.
 
 - [Практическое руководство. Создание сведений реестра для установщика](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
 
- В этой статье описывается использование RegPkg.exe для создания манифеста регистрации для управляемого пакета VSPackage.
+ Объясняет, как использовать RegPkg.exe для создания регистрационного манифеста для управляемого VSPackage.
 
 - [Команды, которые необходимо выполнить после установки](../../extensibility/internals/commands-that-must-be-run-after-installation.md)
 
- Объясняет, как для выполнения команд после установки для интеграции пакетов VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Объясняет, как запустить пост-установку команд для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]интеграции VSPackages в .
 
 - [Удаление пакета VSPackage с помощью установщика Windows](../../extensibility/internals/uninstalling-a-vspackage-with-windows-installer.md)
 
- Описывает шаги, которые установщик необходимо выполнить, если пользователи удалили VSPackage.
+ Описывает шаги, которые должен выполнять установщик, когда пользователи удалят ваш VSPackage.

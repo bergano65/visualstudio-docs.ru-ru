@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593737"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
@@ -30,7 +30,7 @@ ms.locfileid: "75593737"
 
 ## <a name="use-the-export-template-wizard"></a>Использование мастера экспорта шаблонов
 
-Многофайловый шаблон элемента создается аналогично однофайловому шаблону элемента. См. практическое руководство по [ Создание шаблонов элементов](../ide/how-to-create-item-templates.md). На странице **Выбор элементов для экспорта** мастера выберите файл, который содержит зависимые файлы (например, файл формы Windows Forms). Мастер автоматически включит в шаблон все зависимые файлы, например файлы ресурсов и конструктора.
+Многофайловый шаблон элемента создается аналогично однофайловому шаблону элемента. См. раздел [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md). На странице **Выбор элементов для экспорта** мастера выберите файл, который содержит зависимые файлы (например, файл формы Windows Forms). Мастер автоматически включит в шаблон все зависимые файлы, например файлы ресурсов и конструктора.
 
 ## <a name="manually-create-a-multi-file-item-template"></a>Создание шаблона многофайлового элемента вручную
 
@@ -57,7 +57,7 @@ ms.locfileid: "75593737"
 
    Выбранные файлы будут сжаты в *ZIP*-файл.
 
-1. Скопируйте *ZIP*-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*. Дополнительные сведения см. в разделе [Практическое руководство. размещать и упорядочивать шаблоны](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Скопируйте *ZIP*-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates*. Дополнительные сведения см. в статье [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Закройте Visual Studio, а затем откройте среду повторно.
 
@@ -92,9 +92,9 @@ ms.locfileid: "75593737"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
 - [Параметры шаблона](../ide/template-parameters.md)
-- [Практическое руководство. замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md)

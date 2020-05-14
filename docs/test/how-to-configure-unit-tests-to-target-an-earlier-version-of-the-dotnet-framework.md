@@ -8,13 +8,13 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596025"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. настройку модульных тестов для предыдущей версии .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
 
 При создании тестового проекта в Microsoft Visual Studio последняя версия платформы .NET Framework устанавливается в качестве целевой по умолчанию. Кроме того, при обновлении тестовых проектов, созданных в предыдущих версиях Visual Studio, они обновляются до последней версии платформы .NET Framework. Путем изменения свойств проекта можно явно изменить целевую версию .NET Framework для проекта на более раннюю.
 
@@ -104,7 +104,7 @@ ms.locfileid: "75596025"
 
 6. В **обозревателе решений** выберите в контекстном меню нового тестового проекта C++ пункт **Перезагрузить проект**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

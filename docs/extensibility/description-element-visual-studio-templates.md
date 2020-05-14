@@ -1,27 +1,27 @@
 ---
-title: Элемент Description (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент описания (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348109"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712256"
 ---
-# <a name="description-element-visual-studio-templates"></a>Элемент Description (шаблоны Visual Studio)
-Указывает описание шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.
+# <a name="description-element-visual-studio-templates"></a>Элемент описания (шаблоны Visual Studio)
+Уотелит описание шаблона, как он появляется в **new Project** или **Добавить** new Item диалоговое окно.
 
- \<VSTemplate > \<TemplateData > \<Description >
+ \<VSTemplate \<> TemplateData> \<Описание>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,11 +42,11 @@ ms.locfileid: "66348109"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
-|`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
+|`Package`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
+|`ID`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -57,13 +57,13 @@ ms.locfileid: "66348109"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным, если не используются атрибуты `Package` и `ID`.
 
- Текст содержит описание шаблона.
+ В тексте приводится описание шаблона.
 
 ## <a name="remarks"></a>Примечания
- `Description` — обязательный дочерний элемент элемента `TemplateData`.
+ `Description`является необходимым элементом `TemplateData` ребенка элемента.
 
 ## <a name="example"></a>Пример
- В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
+ В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +90,5 @@ ms.locfileid: "66348109"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetCodeContext | Документация Майкрософт
+title: IDebugStackFrame2::GetCodeКонтекст Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetCodeContext
 ms.assetid: 93d66159-a41d-49ef-982f-91bb4d073b74
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a9013435f0793361ddcc1759a14f39ec87655e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e14826e9c01e6cb8e9eba6ce2adf8686ad8b2f91
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321912"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719877"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
-Возвращает контекст кода для этого кадра стека.
+Получает контекст кода для этого кадра стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetCodeContext ( 
 
 ## <a name="parameters"></a>Параметры
 `ppCodeCxt`\
-[out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий текущего указателя инструкций в этом кадре стека.
+(ваут) Возвращает объект [IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) представляющий текущий указатель инструкции в этом кадре стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

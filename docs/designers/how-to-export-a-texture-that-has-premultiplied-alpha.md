@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Экспорт текстуры с предварительным умножением альфа-канала
+title: Практическое руководство. Экспорт текстуры с предварительно умноженными значениями альфа
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72635486"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Практическое руководство. Экспорт текстуры с предварительным умножением альфа-канала

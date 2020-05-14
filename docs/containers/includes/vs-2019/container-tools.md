@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922995"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389913"
 ---
 В Visual Studio можно легко выполнять сборку, отлаживать и запускать контейнерные приложения .NET, ASP.NET и ASP.NET Core и публиковать их в реестре контейнеров Azure (ACR), Docker Hub, службе приложений Azure или собственном реестре контейнеров. В этой статье рассматривается публикация приложения ASP.NET Core в реестре контейнеров Azure (ACR).
 
@@ -21,7 +21,7 @@ ms.locfileid: "76922995"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) с рабочей нагрузкой **Веб-разработка**, **Средства Azure** и (или) **Кроссплатформенная разработка .NET Core**.
 * [Средства разработки .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) для разработки с использованием .NET Core
-* Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Для публикации в Реестр контейнеров Azure требуется подписка Azure. [Зарегистрируйтесь для получения бесплатной пробной версии](https://azure.microsoft.com/free/dotnet/).
 
 ## <a name="installation-and-setup"></a>Установка и настройка
 
@@ -67,13 +67,16 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер. Если вы используете .NET Framework, базовый образ будет отличаться.
 
-Если в диалоговом окне создания проекта установлен флажок **Configure for HTTP** (Настроить для трафика HTTPS), *Dockerfile* предоставляет два порта. Один порт используется для трафика HTTP, другой — для HTTPS. Если флажок не установлен, для трафика HTTP предоставляется один порт (80).
+Если в диалоговом окне создания проекта установлен флажок **Configure for HTTPS** (Настроить для трафика HTTPS), *Dockerfile* предоставляет два порта. Один порт используется для трафика HTTP, другой — для HTTPS. Если флажок не установлен, для трафика HTTP предоставляется один порт (80).
 
 ## <a name="debug"></a>Отладка
 
 Выберите пункт **Docker** в раскрывающемся списке отладки на панели инструментов, чтобы начать отладку приложения. Может появиться сообщение с запросом о доверии сертификату. Выберите доверие сертификату, чтобы продолжить.
 
 В параметре **Инструменты контейнера** в окне **Вывод** показано, какие действия выполняются. В первый раз может потребоваться некоторое время для скачивания базового образа, но при последующих запусках это происходит гораздо быстрее.
+
+>[!NOTE]
+> Если вам нужно изменить порты для отладки, это можно сделать в файле *launchSettings.json*. См. сведения о [параметрах запуска контейнеров](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Окно "Контейнеры"
 

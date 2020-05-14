@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b7b60ad871f40e06e2a8fbf6782773ce6596f31
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779679"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Сбор данных параллелизма для службы с помощью средств командной строки профилировщика
@@ -22,9 +22,9 @@ ms.locfileid: "74779679"
 > [!NOTE]
 > Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. Дополнительные сведения см. в статье [Средства оценки производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="common-tasks"></a>Типичные задачи
+## <a name="common-tasks"></a>Стандартные задачи
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Присоединение к выполняющейся службе .NET**|-   [Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных параллелизма](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 |**Добавление данных взаимодействия между уровнями**|-   [Сбор данных о взаимодействии уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
@@ -34,7 +34,7 @@ ms.locfileid: "74779679"
 
 ### <a name="profile-windows-services"></a>Профилирование служб Windows
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование с помощью метода выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
@@ -42,7 +42,7 @@ ms.locfileid: "74779679"
 
 ### <a name="profile-concurrency-data"></a>Профилирование данных параллелизма
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование автономных приложений**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Профилирование веб-приложений ASP.NET**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
@@ -52,5 +52,5 @@ ms.locfileid: "74779679"
 
 - [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

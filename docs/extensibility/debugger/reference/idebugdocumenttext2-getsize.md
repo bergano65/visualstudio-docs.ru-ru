@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Документация Майкрософт
+title: IDebugДокументТекст2::GetSize Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetSize
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f382b1d27a83e4493431ac8e6cca3d6aef9dd72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337377"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731589"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-Получает размер текста в этой позиции в документе.
+Извлекает размер текста в этой позиции в документе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,19 +43,19 @@ int GetSize( 
 
 ## <a name="parameters"></a>Параметры
 `pcNumLines`\
-[out] Возвращает количество строк текста.
+(ваут) Возвращает количество строк текста.
 
 `pcNumChars`\
-[out] Возвращает количество символов текста.
+(ваут) Возвращает количество символов текста.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
 
- [C++ только] Если определенное значение не требуется, передайте значение NULL для параметра.
+ (только си) Если определенное значение не желательно, передайте NULL для параметра.
 
- [C# только] Необходимо указать оба параметра.
+ (Только для C) Оба параметра должны быть указаны.
 
 ## <a name="see-also"></a>См. также
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

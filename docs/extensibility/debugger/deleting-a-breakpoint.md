@@ -1,31 +1,31 @@
 ---
-title: Удаление точки останова | Документация Майкрософт
+title: Удаляем точку разрыва (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, deleting
 - debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7551ee12993780544bbb9c9eb127a9bfb4364e8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345830"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738950"
 ---
-# <a name="deleting-a-breakpoint"></a>Удаление точки останова
-Ниже описан процесс, при удалении ожидающая точка останова:
+# <a name="deleting-a-breakpoint"></a>Удаляние точки разрыва
+Ниже описывается процесс при удалении отложенной точки разрыва:
 
 ## <a name="deletion-process"></a>Процесс удаления
- Диспетчер отладки сеансов (SDM) вызывает [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) привязан метод для удаления ожидающая точка останова и всех связанных точек останова из него.
+ Менеджер отладки сеанса (SDM) вызывает [метод IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) для удаления ожидающего разрыва и всех связанных с ней точек разрыва.
 
 > [!NOTE]
-> Связанная точка останова также можно удалить с помощью вызова [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Один связанный пункт разрыва также может быть удален путем вызова [на IDebugBoundBreakpoint2::Delete.](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)
 
 ## <a name="see-also"></a>См. также
-- [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)
+- [События отладки вызова](../../extensibility/debugger/calling-debugger-events.md)

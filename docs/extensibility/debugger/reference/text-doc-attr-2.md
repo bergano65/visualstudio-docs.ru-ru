@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 | Документация Майкрософт
+title: TEXT_DOC_ATTR_2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24c5bc4a25bae6da1831f242501fdf0d6b66ca26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322315"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713454"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Описывает атрибуты документа.
 
 ## <a name="syntax"></a>Синтаксис
@@ -38,19 +38,19 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 
 ## <a name="members"></a>Участники
  `TEXT_DOC_ATTR_READONLY_2`\
- Указывает, что документ доступен только для чтения.
+ Указано, что документ читается только для чтения.
 
 ## <a name="remarks"></a>Примечания
 
 > [!NOTE]
-> Это значение фактически не определен в сборке для C#. Вместо этого необходимо скопировать определение в файле исходного кода.
+> Это значение фактически не определено в сборке для C. Вместо этого необходимо скопировать определение в исходный файл.
 
- Передается в качестве аргумента для [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) метод.
+ Прошел в качестве аргумента методу [onUpdateDocumentAttributes.](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

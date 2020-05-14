@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2018
 ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985287"
 ---
 # <a name="connected-services-walkthrough"></a>Пошаговое руководство по подключенным службам
@@ -72,6 +72,6 @@ ms.locfileid: "74985287"
 
 Для получения дополнительных сведений посетите страницу [документации по мобильным приложениям](/azure/app-service-mobile/).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Подключенные службы (Visual Studio в Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

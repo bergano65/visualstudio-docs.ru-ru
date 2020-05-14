@@ -8,13 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+author: mikejo5000
+ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091838"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307007"
 ---
 # <a name="exploration-bounds"></a>Границы исследования
 
@@ -166,7 +166,7 @@ void ParameterizedTest(int n)
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-Указывает типы тестов, которые должен выдавать IntelliTest. Допустимые значения:
+Указывает типы тестов, которые должен выдавать IntelliTest. Вы можете выбрать
 
 * **All** — тесты выдаются для всего, включая нарушения предположений.
 * **FailuresAndIncreasedBranchHits** (по умолчанию) — тесты выдаются для всех уникальных сбоев, а также при увеличении объема протестированного кода тестовым случаем с учетом параметра [TestEmissionBranchHits](#testemissionbranchhits).
@@ -184,6 +184,6 @@ void ParameterizedTest(int n)
 
 Значением по умолчанию для этого параметра является **TestEmissionBranchHits=2**. При нем создается более выразительный набор тестов, который также лучше подходит для обнаружения ошибок регрессии в будущем.
 
-## <a name="got-feedback"></a>Хотите оставить отзыв?
+## <a name="got-feedback"></a>Хотите отправить отзыв?
 
 Делитесь своими идеями и пожеланиями относительно новых функций в [сообществе разработчиков](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279315"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
@@ -76,7 +76,7 @@ ms.locfileid: "77279315"
 
 Чтобы проверить, использует ли компилятор IntelliSense правильные параметры, например включаемые пути и макросы препроцессора, включите журнал ведения диагностики для командных строк IntelliSense в разделе **Средства > Параметры > Текстовый редактор > C/C++ > Дополнительно > Запись данных диагностики**. Установите следующие значения параметров: **Включить ведение журнала** — True, **Уровень ведения журналов** — 5 (самый подробный) и **Фильтр ведения журналов** — 8 (журнал IntelliSense).
 
-В окне вывода теперь будут показаны командные строки, которые передаются в компилятор IntelliSense. Вот пример выходных данных:
+В окне вывода теперь будут показаны командные строки, которые передаются в компилятор IntelliSense. Пример выходных данных:
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32
@@ -120,6 +120,6 @@ Visual Studio to investigate.
 
 Дополнительные сведения о переменной среды TRACEDESIGNTIME см. в статьях о [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) и [общей системе проектов](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Сведения в этих статьях относятся и к проектам C++.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [IntelliSense для Visual C++](visual-cpp-intellisense.md)

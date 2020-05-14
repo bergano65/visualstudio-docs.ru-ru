@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585656"
 ---
 # <a name="watch-command"></a>Команда Watch
@@ -32,9 +32,9 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Аргументы
 
 `index`\
-Обязательный. Номер экземпляра окна контрольных значений
+Обязательный элемент. Номер экземпляра окна контрольных значений
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Значение `index` должно быть целым числом. Допустимые значения: 1, 2, 3 и 4.
 
@@ -44,11 +44,11 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Окна "Видимые" и "Локальные"](../../debugger/autos-and-locals-windows.md)
 - [Установка контрольных значений для переменных с помощью окон "Контрольное значение" и "Быстрая проверка" в Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

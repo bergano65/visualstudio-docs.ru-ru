@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596298"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
@@ -115,7 +115,7 @@ ms.locfileid: "75596298"
 
 ![Имя проекта на кнопке запуска](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка задач сборки и отладки для режима разработки "Открытая папка"](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)

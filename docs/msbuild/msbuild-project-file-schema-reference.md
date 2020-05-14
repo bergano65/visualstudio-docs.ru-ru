@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557802"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263109"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Справочные сведения о схеме файлов проектов MSBuild
 
-Представлена таблица, содержащая все элементы XML-схемы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], доступные атрибуты элементов и дочерние элементы.
+Представлена таблица, содержащая все элементы XML-схемы MSBuild, доступные атрибуты элементов и дочерние элементы.
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует файлы проекта для указания механизму сборки, что собирать и как делать это. Файлы проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] представляют собой XML-файлы, которые подчиняются XML-схеме [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. В данном разделе описывается содержимое файла определений XML-схемы (*XSD*) для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ MSBuild указывает механизму сборки,как и что собирать, используя файлы проекта. Файлы проекта MSBuild представляют собой XML-файлы, которые подчиняются XML-схеме MSBuild. В данном разделе описывается содержимое файла определений XML-схемы (*XSD*) для MSBuild.
 
 Ссылка на схему в файле проекта MSBuild не требуется в Visual Studio 2017 и более поздних версиях. Если она есть, она должна иметь значение ` http://schemas.microsoft.com/developer/msbuild/2003` независимо от версии Visual Studio.
 
 ## <a name="msbuild-xml-schema-elements"></a>Элементы XML-схемы MSBuild
 
- В следующей таблице перечислены все элементы XML-схемы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], а также их дочерние элементы и атрибуты.
+ В следующей таблице перечислены все элементы XML-схемы MSBuild, а также их дочерние элементы и атрибуты.
 
 |Элемент|Дочерние элементы|Атрибуты|
 |-------------|--------------------|----------------|
@@ -54,9 +54,9 @@ ms.locfileid: "77557802"
 |[Элемент PropertyGroup (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Условие|
 |[Элемент SDK (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|name<br /><br /> Version|
 |[Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Задача*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Условие<br /><br /> DependsOnTargets<br /><br /> Inputs<br /><br /> KeepDuplicateOutputs<br /><br /> name<br /><br /> Вывод<br /><br /> Возвращает|
-|[Элемент Task (MSBuild)](../msbuild/task-element-msbuild.md)|Вывод|Условие<br /><br /> ContinueOnError<br /><br /> *Параметр*|
-|[Элемент TaskBody (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Данные*|Оценка|
-|[Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> Условие<br /><br /> TaskFactory<br /><br /> TaskName|
+|[Элемент Task элемента Target (MSBuild)](../msbuild/task-element-msbuild.md)|Вывод|Условие<br /><br /> ContinueOnError<br /><br /> *Параметр*|
+|[Элемент Task элемента UsingTask (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Данные*|Оценка|
+|[Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Задача|AssemblyFile<br /><br /> AssemblyName<br /><br /> Условие<br /><br /> TaskFactory<br /><br /> TaskName|
 |[Элемент When (MSBuild)](../msbuild/when-element-msbuild.md)|Нажмите кнопку<br /><br /> ItemGroup<br /><br /> PropertyGroup|Условие|
 
 ## <a name="see-also"></a>См. также

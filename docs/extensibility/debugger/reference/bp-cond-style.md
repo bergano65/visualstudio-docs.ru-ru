@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Документация Майкрософт
+title: BP_COND_STYLE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351816"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738112"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-Указывает стиль условие точки останова для ожидающих и привязан точки останова.
+# <a name="bp_cond_style"></a>BP_COND_STYLE
+Определяет стиль состояния точки разрыва для ожидающих и связанных моментов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,21 +46,21 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Поля
 `BP_COND_NONE`\
-Точка останова срабатывает в том случае, когда достигается положение точки останова. Не указано условие точки останова.
+Запускает точку разрыва при достигепозиции точки разрыва. Условие точки разрыва не указано.
 
 `BP_COND_WHEN_TRUE`\
-Срабатывает точка останова, только если условное выражение, связанные с точкой останова принимает значение `true`.
+Запускает точку разрыва только тогда, когда условное `true`выражение, связанное с точкой разрыва, оценивается до .
 
 `BP_COND_WHEN_CHANGED`\
-Срабатывает точка останова только в том случае, если значение условного выражения, связанное с точкой останова отличается от его предыдущей оценки.
+Запускает точку разрыва только тогда, когда значение условного выражения, связанного с точкой разрыва, изменилось по сравнению с предыдущей оценкой.
 
 ## <a name="remarks"></a>Примечания
-Используется для `styleCondition` членом [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуры.
+Используется для `styleCondition` члена [структуры BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

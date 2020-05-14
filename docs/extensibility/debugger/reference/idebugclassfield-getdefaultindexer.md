@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
+title: IDebugClassField::GetDefaultIndexer Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95387f65382c970ec2e9847e95ff49e139cf69b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350756"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734423"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
-Получает имя индексатора по умолчанию.
+Получает имя индекса по умолчанию.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>Параметры
-`pbstrIndexer` [out] Возвращает строку, содержащую имя индексатора по умолчанию.
+`pbstrIndexer`(ваут) Возвращает строку, содержащую имя индекса по умолчанию.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если нет индексатора по умолчанию. В противном случае возвращается код ошибки.
+ В случае успеха, возвращает S_OK или возвращает S_FALSE, если нет индекса по умолчанию. В противном случае возвращается код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Индексатор по умолчанию класса — свойство, которое помечается как `Default` свойство для обращений к массива. Это относится к [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Ниже приведен пример индексатор по умолчанию, объявленные в [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] и способах ее использования.
+ Индексируемым по умолчанию класса — это `Default` свойство, которое помечено как свойство для доступа к массиву. Это характерно [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]для . Вот пример индекса по умолчанию, декларируемого в [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] и как он используется.
 
 ```vb
 Imports System.Collections;

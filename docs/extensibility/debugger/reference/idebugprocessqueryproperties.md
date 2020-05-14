@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessQueryProperties | Документация Майкрософт
+title: IDebugПроцессКЕвириСвойства (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties
 ms.assetid: ce29a248-81a0-42c0-99a7-1606e8c548ec
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ddb98c2d7e63fc27ad1469dfbfc76eaaee38582
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08abf401b4e8f0e7a33d882e8178d77e6f248318
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353104"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723281"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Этот интерфейс является расширением интерфейса, реализуемого [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) разработчиков. Он позволяет получить сведения о среде отладки процесса.
+Этот интерфейс представляет собой интерфейс расширения, реализованный исполнителями [IDebugProcess2.](../../../extensibility/debugger/reference/idebugprocess2.md) Это позволяет исполнителю получать информацию о среде процесса отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,24 +29,24 @@ ms.locfileid: "66353104"
 IDebugProcessQueryProperties: IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Реализуйте этот интерфейс для получения сведений о среде выполнения процесса отладки.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Реализация этого интерфейса для получения информации о среде выполнения процесса отладки.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugProcessQueryProperties`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Запросы для значения свойства.|
-|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Запросы для получения значений свойств.|
+|[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Запросы на стоимость свойства.|
+|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Запросы на значения свойств.|
 
 ## <a name="remarks"></a>Примечания
- Этот интерфейс реализуется редко.
+ Этот интерфейс редко реализуется.
 
 ## <a name="requirements"></a>Требования
  Заголовок: Portpriv.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

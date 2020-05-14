@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выборка данных на уровне строк | Документация Майкрософт
+title: Практическое руководство. Выборка данных на уровне строк | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776362"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
@@ -52,10 +52,10 @@ ms.locfileid: "74776362"
 
 - Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.
 
-     Или...
+     — или —
 
 - При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 - [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)

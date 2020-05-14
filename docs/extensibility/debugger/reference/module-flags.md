@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS | Документация Майкрософт
+title: MODULE_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b8080710b3225f025c329e0c5cb42331e1a059f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346807"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714258"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 Используется для описания модуля.
 
 ## <a name="syntax"></a>Синтаксис
@@ -52,32 +52,32 @@ public enum enum_MODULE_FLAGS { 
 
 ## <a name="fields"></a>Поля
  `MODULE_FLAG_NONE`\
- Указывает модуль не.
+ Не указывается модуль.
 
  `MODULE_FLAG_SYSTEM`\
- Указывает системном модуле.
+ Определяет модуль системы.
 
  `MODULE_FLAG_SYMBOLS`\
- Задает модуль записи символов.
+ Определяет модуль символов.
 
  `MODULE_FLAG_64BIT`\
- Задает 64-разрядного модуля.
+ Определяет 64-разрядный модуль.
 
  `MODULE_FLAG_OPTIMIZED`\
- Указывает, что модуль был оптимизирован. Это состояние отражается в **модули** окна.
+ Специфика модуль была оптимизирована. Это состояние отражается в окне **модулей.**
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Указывает, что модуль не был оптимизирован. Это состояние отражается в **модули** окна. Это состояние по умолчанию.
+ Специфика модуля не была оптимизирована. Это состояние отражается в окне **модулей.** Это состояние по умолчанию.
 
 ## <a name="remarks"></a>Примечания
- Используется для `m_dwModuleFlags` членом [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.
+ Используется для `m_dwModuleFlags` члена [структуры MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
 
- Эти флаги могут быть объединены с побитовым объектом `OR`.
+ Эти флаги могут быть `OR`объединены с bitwise .
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

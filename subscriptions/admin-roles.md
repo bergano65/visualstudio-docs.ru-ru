@@ -3,15 +3,16 @@ title: Роли суперадминистратора и администрат
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Сведения о ролях суперадминистратора и администратора, а также о назначении администраторов.
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000944"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808373"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Суперадминистраторы и администраторы для соглашений о подписке Visual Studio
 
@@ -20,6 +21,8 @@ ms.locfileid: "70000944"
 **Суперадминистраторы:** при первой настройке организации основное контактное лицо или контактное лицо для уведомлений становится суперадминистратором по умолчанию. Это контактное лицо может назначить дополнительных суперадминистраторов или администраторов. Суперадминистратор может добавлять и удалять других администраторов, а также подписчиков. Если в системе имеется больше двух суперадминистраторов, по соображениям безопасности суперадминистратор может удалить всех их, кроме двух последних.
 
 **Администраторы:** администратора может назначить только суперадминистратор. Администратор может управлять только подписчиками в соглашениях, назначенных ему суперадминистратором.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>Назначение администраторов
 Чтобы назначить новых администраторов, сделайте следующее:
@@ -39,6 +42,13 @@ ms.locfileid: "70000944"
 
 ## <a name="resources"></a>Ресурсы
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Следующие шаги
 - Узнайте, как [назначать подписки](assign-license.md)

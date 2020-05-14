@@ -1,25 +1,25 @@
 ---
-title: Определите элемент | Документация Майкрософт
+title: Определить элемент Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d82bd5050955f69e23c71569a13ac1a5d428aef2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348136"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712273"
 ---
-# <a name="define-element"></a>Определение элемента
-Определяет пару имя-значение символа. Этот символ может быть рассчитано условные атрибуты. Дополнительные сведения см. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md). См. также [элемент Symbols](../extensibility/symbols-element.md).
+# <a name="define-element"></a>Определить элемент
+Определяет имя символа и пару значений. Этот символ можно оценить по условным атрибутам. Для получения дополнительной [информации см.](../extensibility/vsct-xml-schema-conditional-attributes.md) Смотрите также [элемент Символы](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,18 +34,18 @@ ms.locfileid: "66348136"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|имя|Обязательный. Имя символа:<br /><br /> Имя = «Режим»|
-|value|Обязательный. Значение символа:<br /><br /> value="Standard"|
-|Условие|Необязательный параметр. Дополнительные сведения см. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|name|Обязательный элемент. Название символа:<br /><br /> имя»Mode"|
+|value|Обязательный элемент. Значение символа:<br /><br /> значение»Стандарт"|
+|Условие|Необязательный параметр. Для получения дополнительной [информации см.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды, предоставляемых VSPackage интегрированной среды разработки (IDE). Например пункты меню, меню, панелей инструментов и поля со списком.|
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, которые VSPackage предоставляет интегрированной среде разработки (IDE). Например, пункты меню, меню, панели инструментов и комбо-коробки.|
 
 ## <a name="example"></a>Пример
 
@@ -55,4 +55,4 @@ ms.locfileid: "66348136"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

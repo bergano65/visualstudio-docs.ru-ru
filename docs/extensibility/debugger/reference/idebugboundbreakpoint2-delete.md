@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Delete | Документация Майкрософт
+title: 'IDebugBoundBreakpoint2: :Delete Документы Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Delete method
 - IDebugBoundBreakpoint2::Delete method
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a286d954e482e283e5df9e3268e0ed6c3743c8db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a480a97c14b568565fee9b1b82d672db11f4ebab
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330670"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735657"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 Удаляет точку останова.
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова присваивается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если состояние объекта точки разрыва `BPS_DELETED` установлено (часть [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.
+В следующем примере показано, как `CBoundBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::Delete(void)

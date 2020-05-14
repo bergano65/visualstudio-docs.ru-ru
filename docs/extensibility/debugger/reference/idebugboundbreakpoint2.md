@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2 | Документация Майкрософт
+title: IDebugBoundBreakpoint2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBoundBreakpoint2 interface
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20dbd4ca3f5c56d8519bc6dbfbe362f7904ae56d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4d22b10085baefeb3a0286c1b4edcb5876c0dac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735421"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
-Этот интерфейс представляет точку останова, которая привязана к расположение кода.
+Этот интерфейс представляет собой точку разрыва, которая привязана к местоположению кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,35 +28,35 @@ ms.locfileid: "66350120"
 IDebugBoundBreakpoint2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс как часть поддержки точек останова.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс как часть своей поддержки точек разрыва.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызов [привязать](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) создает этот интерфейс. Вызовы [GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md) и [Далее](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) можно также получить этот интерфейс.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Вызов [в Связывание](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) создает этот интерфейс. Звонки в [GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md) и [Next](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) также могут получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugBoundBreakpoint2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Получает ожидающая точка останова, из которого был создан указанного связанная точка останова.|
-|[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Получает состояние данная связанная точка останова.|
-|[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)|Возвращает текущий счетчик числа попаданий для данная связанная точка останова.|
-|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Получает разрешение точек останова, который описывает эту точку останова.|
-|[Enable](../../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Включает или отключает точку останова.|
-|[SetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-sethitcount.md)|Задает количество обращений к данная связанная точка останова.|
-|[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)|Задает или изменяет условие, связанное с данная связанная точка останова.|
-|[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|Наборы или изменения счетчик pass, связанного с данная связанная точка останова.|
+|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Получает отложенную точку разрыва, из которой была создана указанная точка разрыва.|
+|[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Получает состояние этой связанной точки разрыва.|
+|[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)|Получает текущий подсчет хитов для этой связанной точки разрыва.|
+|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Получает разрешение точки разрыва, описывающая эту точку разрыва.|
+|[Включение](../../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Позволяет или отсваивает точку разрыва.|
+|[SetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-sethitcount.md)|Устанавливает количество попадания для этой связанной точки разрыва.|
+|[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)|Устанавливает или изменяет условие, связанное с этой точкой разрыва.|
+|[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|Устанавливает или изменяет количество пропусков, связанное с этой связанной точкой разрыва.|
 |[Удалить](../../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Удаляет точку останова.|
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)
-- [Вперед](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)
+- [Далее](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)
 - [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

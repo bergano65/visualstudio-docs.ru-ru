@@ -1,18 +1,19 @@
 ---
 title: Обзор хранилища для отправки данных
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0f2522117f4c5a5b85e99e2779d10cffcb7f22
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: ece3ffa3a273e903f403fd7df7005bfb54172f62
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777414"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638446"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Обзор хранилища для отправки данных или загрузки моделей и журналов
 
@@ -24,7 +25,7 @@ ms.locfileid: "72777414"
 2. Разверните контекст удаленного компьютера или вычислений Batch AI.
 3. Щелкните правой кнопкой мыши **Хранилище**, а затем **Обзор**.
 
-    ![storage](media/manage-storage/browse-storage.png)
+    ![носителей.](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Доступ к данным конкретного задания на удаленном компьютере или в общей папке
 
@@ -32,4 +33,4 @@ ms.locfileid: "72777414"
 2. Выберите задание.
 3. Щелкните **Рабочая папка** или **StdOut/Stderr** для быстрого доступа к важным файлам журнала.
 
-    ![storage](media/manage-storage/job-workingfolder.png)
+    ![носителей.](media/manage-storage/job-workingfolder.png)

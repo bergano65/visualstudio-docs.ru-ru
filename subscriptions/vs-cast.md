@@ -1,22 +1,24 @@
 ---
 title: Преимущество CAST Highlight в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Сведения о преимуществе CAST Highlight, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: f3f21a29e8ad710471eddadfbd5c98677db3098e
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983742"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274028"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Преимущество CAST Highlight в подписках Visual Studio
-При миграции в облако разработчикам необходимы важные аналитические сведения о переносимом программном обеспечении. С помощью CAST Highlight подписчики Visual Studio Enterprise могут быстро проверить исходный код приложения, чтобы определить его готовность к облаку для миграции в Azure, и отслеживать ход выполнения во время и после миграции приложения.
+При миграции в облако разработчикам необходимы важные аналитические сведения о переносимом программном обеспечении. С помощью CAST Highlight подписчики Visual Studio могут быстро проверить исходный код приложения, чтобы определить его готовность к облаку для миграции в Azure, и отслеживать ход выполнения во время и после миграции приложения.
 
-Подписчики Visual Studio Enterprise могут получить бесплатную полную подписку CAST Highlight на один месяц (максимум для пяти приложений на одного подписчика).
+- Подписчики Visual Studio Enterprise могут получить бесплатную полную подписку CAST Highlight на три месяца, которая позволяет пользователям изучать до пяти приложений.
+- Подписчики Visual Studio Professional могут получить аналогичную подписку, которая позволяет выполнять оценку одного приложения на протяжении трех месяцев.
 
 ## <a name="activation-steps"></a>Процедура активации
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -26,7 +28,7 @@ ms.locfileid: "73983742"
    > [!div class="mx-imgBorder"]
    > ![Плитка преимущества CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Вы увидите сообщение об успешном получении кода.  Нажмите кнопку **Активировать**, после чего вы будете перенаправлены на страницу CAST Highlight, где сможете продолжить процесс активации.  (Нет необходимости выполнять активацию прямо сейчас, вы всегда сможете вернуться к плитке CAST Highlight на портале подписки.  Ссылка "Получить код" изменится на "Активировать", щелкнув ее, вы возобновите процесс активации.)
+0. Вы увидите сообщение об успешном получении кода.  Щелкните **Активировать**. (Нет необходимости выполнять активацию прямо сейчас, вы всегда сможете вернуться к плитке CAST Highlight на портале подписки.  Ссылка "Получить код" изменится на "Активировать", щелкнув ее, вы возобновите процесс активации.)
 
 0. Вы будете перенаправлены на страницу CAST Highlight, где сможете просмотреть возможности подписки.  Когда вы будете готовы к созданию учетной записи, просто укажите свои контактные данные в веб-форме и нажмите кнопку **Submit** (Отправить).
 
@@ -40,7 +42,7 @@ ms.locfileid: "73983742"
 
 0. Команда CAST проверит заявку и свяжется с вами, чтобы завершить создание вашей учетной записи.
 
-0. Также вы получите следующее письмо от CAST, подтверждающее получение вашей заявки.
+0. Также вы получите следующее письмо от CAST, подтверждающее получение вашей заявки.  (В этом примере показано сообщение электронной почты, полученное пользователями с подпиской Enterprise.)
 
    > *Благодарим за заявку на активацию доступа к CAST Highlight в течение 30 дней — эксклюзивное предложение для клиентов Microsoft Visual Studio Enterprise!*
    >
@@ -75,16 +77,16 @@ ms.locfileid: "73983742"
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | Оценка пяти приложений в течение 30 дней|  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Enterprise с GitHub Enterprise  | VL | Оценка пяти приложений в течение 30 дней|  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                             |  Н/Д          |
-| Visual Studio Professional с GitHub Enterprise | VL                                       | Недоступно                                                             |  Н/Д          |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | Оценка 5 приложений на три месяца|  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Enterprise с GitHub Enterprise  | VL | Оценка 5 приложений на три месяца|  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Оценка 1 приложения на три месяца                                                             |  Нет.  Доступно только для новых подписчиков                  |
+| Visual Studio Professional с GitHub Enterprise | VL                                       | Оценка 1 приложения на три месяца                                                            |  Нет.  Доступно только для новых подписчиков                  |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д           |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), FTE, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -98,6 +100,12 @@ ms.locfileid: "73983742"
 
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

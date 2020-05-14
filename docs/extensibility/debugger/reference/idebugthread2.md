@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2 | Документация Майкрософт
+title: IDebugThread2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2 interface
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df63bc6484905249adc1756ce701b3ee91f45015
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319970"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718592"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
-Этот интерфейс представляет поток, выполняемый в приложении.
+Этот интерфейс представляет собой поток, работающий в программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,48 +28,48 @@ ms.locfileid: "66319970"
 IDebugThread2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс для представления потока выполнения в одной программе.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс, чтобы представлять поток выполнения в одной программе.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовите [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) для получения этого интерфейса, представляющий текущего активного потока.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Позвоните [GetThread,](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) чтобы получить этот интерфейс, представляющий в настоящее время активный поток.
 
- Этот интерфейс также используется при создании запроса точки останова (см. в разделе [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)).
+ Этот интерфейс также используется при создании запроса на точку разрыва (см. [BP_REQUEST_INFO).](../../../extensibility/debugger/reference/bp-request-info.md)
 
- Этот интерфейс также возвращается при разрешении точки останова границу или ошибки (см. в разделе [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) и [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)).
+ Этот интерфейс также возвращается при разрешении точки разрыва сопряжения или ошибки (см. [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) и [BP_ERROR_RESOLUTION_INFO).](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugThread2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Извлекает список кадров стека для данного потока.|
+|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Извлекает список кадров стека для этого потока.|
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Возвращает имя потока.|
-|[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Задает имя потока.|
-|[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|Возвращает программу, в котором выполняется поток.|
-|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Определяет, можно ли установить следующий оператор к контексту заданного стека кадра и код.|
-|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Задает следующий оператор к контексту заданного стека кадра и кода.|
-|[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Получает идентификатор потока системы.|
-|[Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Приостанавливает поток.|
-|[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Возобновляет работу потока.|
+|[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Устанавливает название потока.|
+|[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|Получает программу, в которой выполняется поток.|
+|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Определяет, можно ли установить следующую выписку в данный кадр стека и контекст кода.|
+|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Устанавливает следующее утверждение в данный кадр стека и контекст кода.|
+|[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Получает идентификатор системного потока.|
+|[Приостановить](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Приостанавливает поток.|
+|[Продолжить](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Возобновляет поток.|
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Получает свойства, описывающие поток.|
-|[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Получает логический поток, связанный с этой физическом потоке.|
+|[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Получает логический поток, связанный с этим физическим потоком.|
 
 ## <a name="remarks"></a>Примечания
- Поскольку одного физического потока могут выполняться в нескольких программ, более чем на одном `IDebugThread2` из более чем одной программы может представлять том же физическом потоке.
+ Поскольку один физический поток может работать `IDebugThread2` в нескольких программах, более чем одна из нескольких программ может представлять один и тот же физический поток.
 
- При возникновении исключения или точка останова, событие передается с помощью [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Один из аргументов в этот метод имеет `IDebugThread2` интерфейс, представляющий текущий поток. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) используется для получения [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс для текущего кадра стека.
+ При возникновении точки разрыва или исключения событие отправляется по вызову [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Одним из аргументов для этого `IDebugThread2` метода является интерфейс, представляющий текущий поток. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) используется для получения интерфейса [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) для текущего кадра стека.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

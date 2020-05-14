@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Документация Майкрософт
+title: IDebugObject2::GetICorDebugValue Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: edbacbaeac9a5172d8c3bb5b54ee38fff201a2bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317366"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726117"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-Возвращает объект управляемого кода, который представляет значение, связанное с данным объектом.
+Получает управляемый объект кода, представляющий значение, связанное с этим объектом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Параметры
 `ppUnk`\
-[out] `IUnknown` интерфейс, который представляет этот псевдоним. Этот интерфейс может запрашиваться для `ICorDebugValue` интерфейс.
+(ваут) `IUnknown` интерфейс, представляющий этот псевдоним. Этот интерфейс можно запрашивать `ICorDebugValue` для интерфейса.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- `ICorDebugValue` Объект — это интерфейс среды CLR, который представляет значение.
+ Объект `ICorDebugValue` представляет собой интерфейс Common Language Runtime, представляющий ценность.
 
 ## <a name="see-also"></a>См. также
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

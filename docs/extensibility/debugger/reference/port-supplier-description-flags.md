@@ -1,28 +1,28 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Документация Майкрософт
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01cf70b473d2c430741df2021d27b3047e782b79
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309486"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713983"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-Определяет метаданные, которые могут быть получены о поставщика порта.
+Определяет метаданные, которые могут быть получены о поставщике порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,21 +44,21 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Поля
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-Если флажок установлен, в пользовательском Интерфейсе отображается значок предупреждения.
+При выборе значок предупреждения будет отображаться в ui.
 
 ## <a name="remarks"></a>Примечания
 
-Это перечисление возвращается [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) метод.
+Это перечисление возвращается методом [GetDescription.](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
 
 ## <a name="requirements"></a>Требования
 
 Заголовок: Msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+- [GetОписание](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

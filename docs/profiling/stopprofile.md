@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778236"
 ---
 # <a name="stopprofile"></a>StopProfile
@@ -34,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:
 
-|Перечислитель|ОПИСАНИЕ|
+|Перечислитель|Description|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:
 
-|Перечислитель|ОПИСАНИЕ|
+|Перечислитель|Description|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|Вызов функции профилирования, уровень профилирования или сочетание вызова и уровня пока не реализованы.|
 |PROFILE_OK|Вызов выполнен успешно.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Функции StartProfile и StopProfile управляют состоянием начала и остановки для уровня профилирования. Значение по умолчанию для состояния начала и остановки равно 1. Начальное значение можно изменить в реестре. Каждый вызов StartProfile устанавливает счетчик начала и остановки в значение 1; каждый вызов StopProfile устанавливает его в значение 0.
 
  Если значение счетчика начала и остановки больше 0, состояние начала и остановки для уровня включено. Если это значение меньше или равно 0, состояние начала и остановки отключено.
@@ -107,5 +107,5 @@ void ExerciseStopProfile()
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

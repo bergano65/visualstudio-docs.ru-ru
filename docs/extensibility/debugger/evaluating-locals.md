@@ -1,41 +1,41 @@
 ---
-title: Вычисление локальных переменных | Документация Майкрософт
+title: Оценка Местных жителей (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed43dae7aaf2fe7c130f6822a46ce429661634ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315418"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738817"
 ---
-# <a name="evaluate-locals"></a>Оценка "Локальные"
+# <a name="evaluate-locals"></a>Оценить местных жителей
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
 
-[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вызывается для получения значений локально, а также имя локальной переменной и тип. Поскольку значения локальной переменной зависит текущее состояние программы, значение локальной переменной необходимо получить из памяти. [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект используется для привязки [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объект, представляющий локальный в соответствующее место в памяти, содержащий значение. Это расположение в памяти, представленного [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.
+[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) называется для получения стоимости местного, а также имя и тип местного. Поскольку значение локального зависит от текущего состояния программы, значение локального должно быть получено из памяти. Объект [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) используется для привязки объекта [IDebugField,](../../extensibility/debugger/reference/idebugfield.md) представляющего локальное место, содержащее значение. Это место в памяти представлено объектом [IDebugObject.](../../extensibility/debugger/reference/idebugobject.md)
 
-Эта функция получения значения локальной переменной инкапсулируется в вспомогательная функция, которая выполняет следующие задачи:
+Эта функциональность получения значения локального инкапсулируется в функции помощника, выполняющей следующие задачи:
 
-1. Привязывает `IDebugField` объект памяти, чтобы получить `IDebugObject` объекта.
+1. Связывает `IDebugField` объект с памятью `IDebugObject` для получения объекта.
 
-2. Получает значение из памяти. Это значение будет представлено в виде последовательности байтов.
+2. Получает значение из памяти. Это значение представлено как серия байтов.
 
-3. Форматирует значение на основе типа локальной переменной.
+3. Форматы значения в зависимости от типа локального.
 
-4. Возвращает универсальный объект, содержащий значение локальной переменной. В C# это `object`, и в C++, это `VARIANT`.
+4. Возвращает общий объект, содержащий значение локального значения. В C, это `object`, и в СЗ, `VARIANT`это .
 
 ## <a name="managed-code"></a>Управляемый код
- Это реализация функции, которая извлекает значения локальной переменной в управляемом коде.
+ Это реализация функции, которая извлекает значение локального в управляемом коде.
 
 ```csharp
 namespace EEMC
@@ -77,7 +77,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Неуправляемый код
- Это реализация функции, которая извлекает значения локальной переменной в неуправляемом коде. `FieldGetType` отображается в [получение локальных значений](../../extensibility/debugger/getting-local-values.md).
+ Это реализация функции, которая извлекает значение локального в неуправляемом коде. `FieldGetType`показано в [получении местных значений.](../../extensibility/debugger/getting-local-values.md)
 
 ```cpp
 HRESULT FieldGetPrimitiveValue(
@@ -190,6 +190,6 @@ HRESULT FieldGetPrimitiveValue(
 ```
 
 ## <a name="see-also"></a>См. также
-- [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [Получение локальных значений](../../extensibility/debugger/getting-local-values.md)
+- [Пример реализации местных жителей](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Получить локальные значения](../../extensibility/debugger/getting-local-values.md)
 - [Контекст оценки](../../extensibility/debugger/evaluation-context.md)

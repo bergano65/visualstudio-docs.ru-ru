@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierDescription2 | Документация Майкрософт
+title: IDebugPortSupplierОписание2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6491628888f682d61c94ae618bfad72837c845
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339879"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724366"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Позволяет [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса для отображения текста внутри **сведения о транспорте** раздел **присоединение к процессу** диалоговое окно.
+Позволяет [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uI отображать текст в разделе **Транспортная информация** в поле диалога **«Атрим для обработки».**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,19 +26,19 @@ ms.locfileid: "66339879"
 IDebugPortSupplierDescription2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Этот интерфейс реализуется поставщикам портов.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Этот интерфейс реализован портовыми поставщиками.
 
 ## <a name="methods"></a>Методы
  В следующей таблице показаны методы `IDebugPortSupplierDescription2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Извлекает описания и описание метаданных поставщика порта.|
+|[GetОписание](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Извлекает метаданные описания и описания для поставщика порта.|
 
 ## <a name="requirements"></a>Требования
  Заголовок: Msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

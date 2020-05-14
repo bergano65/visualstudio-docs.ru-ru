@@ -1,5 +1,5 @@
 ---
-title: Элемент CommandPlacements | Документация Майкрософт
+title: Элемент командных мест Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb22359c936caacef81f4c9b81993a46d47ccc0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739696"
 ---
-# <a name="commandplacements-element"></a>Элемент CommandPlacements
-Элемент CommandPlacements группирует элементы CommandPlacement и другими признаками CommandPlacements.
+# <a name="commandplacements-element"></a>Элемент командных мест
+Элементы командных мест группируют элементы командного замыкания и другие группировки командных мест.
 
- Элемент CommandPlacements является необязательным. Если нет, группы или меню должны быть включены в дополнительном расположении, у вас нет для включения в этом разделе в вашей *.vsct* файла.
+ Элемент CommandPlacements не является обязательным. Если команды, группы или меню не должны быть включены во вторичное место, вам не нужно включать этот раздел в файл *.vsct.*
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,20 +41,20 @@ ms.locfileid: "66341888"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|CommandPlacements|Группирует элементы CommandPlacement и другими признаками CommandPlacements.|
-|[Элемент CommandPlacement](../extensibility/commandplacement-element.md)|Включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню.|
+|Командные места|Элементы командного пункта и другие командные группы.|
+|[Элемент командного размещения](../extensibility/commandplacement-element.md)|Позволяет включать кнопки, группы и меню в более чем одну группу или меню.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды.|
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды.|
 
 ## <a name="example"></a>Пример
 
@@ -68,5 +68,5 @@ ms.locfileid: "66341888"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Элемент CommandPlacement](../extensibility/commandplacement-element.md)
-- [Visual Studio командные файлы table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Элемент командного размещения](../extensibility/commandplacement-element.md)
+- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

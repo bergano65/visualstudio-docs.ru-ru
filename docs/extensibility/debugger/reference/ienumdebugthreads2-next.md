@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2::Next | Microsoft Docs
+title: IEnumDebugThreads2::Следующий Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Next
 ms.assetid: bcffd954-3c67-4867-96f3-041ddb3e34d4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d41639733ad4a496c10a245723e03800aa20b67a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bc6c493c211da3dc69e25b20c0a79b4dcabd1ed6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350830"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715168"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
-Возвращает следующий набор элементов из перечисления.
+Возвращает следующий набор из перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Параметры
 `celt`\
-[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+[in] Количество получаемых элементов. Также указывается максимальный размер `rgelt` массива.
 
 `rgelt`\
-[in, out] Массив [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) элементов для заполнения.
+(в, вне) Массив элементов [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) которые будут заполнены.
 
 `pceltFetched`\
-[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+(ваут) Возвращает количество элементов, `rgelt`фактически возвращенных в .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает, `S_FALSE` если меньше, чем просили количество элементов может быть возвращено; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

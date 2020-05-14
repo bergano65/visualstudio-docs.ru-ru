@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826462"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988518"
 ---
 # <a name="docker-compose-build-properties"></a>Свойства сборки Docker Compose
 
@@ -41,6 +41,7 @@ ms.locfileid: "76826462"
 |DockerComposeDownArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose down`. Например: `--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ или VBPROJ|Относительный путь к файлу проекта docker-compose (DCPROJ). Задайте это свойство при публикации проекта службы, чтобы можно было найти связанные параметры сборки образа, хранящиеся в файле docker-compose.yml.|-|
 |DockerComposeUpArguments|DCPROJ|Указывает дополнительные параметры, передаваемые в команду `docker-compose up`. Например: `--timeout 500`|-|
+|DockerDevelopmentMode|DCPROJ| Определяет, включена ли оптимизация "сборка в узле" (отладка в быстром режиме).  Допустимые значения: **Fast** и **Regular**. | Быстрый |
 |DockerLaunchAction| DCPROJ | Указывает действие запуска, выполняемое при нажатии клавиши F5 или клавиш CTRL+F5.  Допустимые значения: None, LaunchBrowser и LaunchWCFTestClient|Отсутствуют|
 |DockerLaunchBrowser| DCPROJ | Указывает, следует ли запускать браузер. Игнорируется, если задано свойство DockerLaunchAction. | False |
 |DockerServiceName| DCPROJ|Если указано свойство DockerLaunchAction или DockerLaunchBrowser, DockerServiceName — это имя службы, которую следует запустить.  Используйте это свойство, чтобы указать, какой из множества проектов, на которые может ссылаться файл docker-compose, будет запущен.|-|

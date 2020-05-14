@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272051"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Требования к системе для эмулятора Visual Studio для Android
@@ -126,9 +126,9 @@ BIOS компьютера должна поддерживать следующи
  Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы".
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается
- При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: Произошел сбой при развертывании приложения. Повторите попытку.
+ При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: "Ошибка при развертывании приложения". Повторите попытку.
 
- Такая конфигурация не поддерживается. Сведения о связанных проблемах см. в статье [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
+ Эта конфигурация не поддерживается. Сведения о связанных проблемах см. в статье [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
 ## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>Для Hyper-V требуются несжатые и и незашифрованные файлы
  На жестком диске, настроенном с файловой системой NTFS, файлы виртуальных жестких дисков, используемых Hyper-V, не должны быть сжаты или зашифрованы. Убедитесь, что следующие каталоги не сжаты и не зашифрованы.
@@ -147,6 +147,6 @@ BIOS компьютера должна поддерживать следующи
 
 Чтобы эмулятор мог эмулировать вызовы в GPU, например используемые OpenGL ES, компьютер должен иметь GPU, совместимый с DirectX и установленный с соответствующими драйверами DirectX.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Устранение неполадок с эмулятором Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

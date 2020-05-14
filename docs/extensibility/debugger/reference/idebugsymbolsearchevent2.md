@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2 | Документация Майкрософт
+title: IDebugСимволПоискВент2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7108c9e1349b01115bed8a6b2a77a3eaa71f45
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbe99422e506fb86b0a7e1d9d3242783f3258e6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320380"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718783"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
-Этот интерфейс отправляется ядром отладки (DE), чтобы указать, что были загружены символы отладки, для которого выполняется отладка модуля.
+Этот интерфейс отправляется движком отладки (DE) для указания на то, что символы отладки модуля были загружены.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,28 +28,28 @@ ms.locfileid: "66320380"
 IDebugSymbolSearchEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE реализует этот интерфейс, чтобы сообщить, что были загружены символы для модуля. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE реализует этот интерфейс, чтобы сообщить, что символы модуля были загружены. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует [QueryInterface](/cpp/atl/queryinterface) для `IDebugEvent2` доступа к интерфейсу.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- DE создает и отправляет этот объект события, чтобы сообщить, что были загружены символы для модуля. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ DE создает и отправляет объект события, чтобы сообщить, что символы модуля были загружены. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) которая поставляется SDM при подключении к отладке программы.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- `IDebugSymbolSearchEvent2` Интерфейс предоставляет следующий метод.
+ Интерфейс `IDebugSymbolSearchEvent2` предоставляет следующий метод.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Извлекает сведения о результатах поиска символов.|
+|[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Извлекает информацию о результатах поиска символов.|
 
 ## <a name="remarks"></a>Примечания
- Это событие отправляется, даже если не удалось загрузить символы. Вызов `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` позволяет обработчик этого события, чтобы определить, если модуль фактически содержит символы.
+ Это событие будет отправлено, даже если символы не загрузили. Вызов `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` позволяет обработчику этого события определить, действительно ли модуль имеет какие-либо символы.
 
- Visual Studio обычно использует это событие для обновления состояния загружены символы в **модули** окна.
+ Visual Studio обычно использует это событие для обновления состояния загруженных символов в окне **модулей.**
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

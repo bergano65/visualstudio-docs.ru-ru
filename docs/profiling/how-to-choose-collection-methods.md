@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор методов сбора данных | Документация Майкрософт
+title: Практическое руководство. Выбор методов сбора данных | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776349"
 ---
 # <a name="how-to-choose-collection-methods"></a>Практическое руководство. Выбор методов сбора данных
@@ -31,7 +31,7 @@ ms.locfileid: "74776349"
 
 - На первой странице мастера выберите один из следующих параметров:
 
-| Параметр | ОПИСАНИЕ |
+| Параметр | Description |
 |----------------------------| - |
 | **Выборка циклов ЦП** | Сбор статистики приложения, используемой для первоначального анализа и анализа проблем загрузки ЦП. |
 | **Инструментирование** | Сбор подробных сведений о времени, которые удобно использовать для целевого анализа и анализа проблем производительности ввода-вывода. |
@@ -90,7 +90,7 @@ ms.locfileid: "74776349"
 
 3. Щелкните **Параллелизм**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)

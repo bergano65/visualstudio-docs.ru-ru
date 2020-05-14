@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596142"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Практическое руководство. Задание значка приложения (Visual Basic, C#)
@@ -31,7 +31,7 @@ ms.locfileid: "75596142"
 
 1. В **обозревателе решений** выберите узел проекта (не узел **Решение**).
 
-1. В строке меню щелкните **Проект** > **Свойства**.
+1. В строке меню выберите **Проект** > **Свойства**.
 
 1. Когда откроется **Конструктор проектов**, выберите вкладку **Приложение**.
 
@@ -39,7 +39,7 @@ ms.locfileid: "75596142"
 
     **C#** &mdash;Рядом со списком **Значок** нажмите кнопку **\<Обзор... >** , а затем перейдите в расположение файла значка.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)

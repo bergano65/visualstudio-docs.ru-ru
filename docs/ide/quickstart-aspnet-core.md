@@ -15,17 +15,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579961"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
 В этом введении в использование Visual Studio (которое займет от 5 до 10 минут) с помощью шаблона проекта ASP.NET и языка программирования C# будет создано простое веб-приложение "Hello, World".
 
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом
 
 ### <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -106,7 +106,7 @@ ms.locfileid: "77579961"
    >
    > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
 
-1. В поле **Имя проекта** окна **Настроить новый проект** введите *HelloWorld*. Затем нажмите **Создать**.
+1. В поле **Имя проекта** окна *Настроить новый проект* введите **HelloWorld**. Затем нажмите **Создать**.
 
    ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
@@ -134,7 +134,7 @@ ms.locfileid: "77579961"
 
    ![Код HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Измените текст для чтения "дополнительная информация" на **Hello World!** .
+1. Измените текст для чтения "дополнительная информация" на **Hello World!**.
 
    ![Изменение значения по умолчанию кода HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -187,7 +187,7 @@ ms.locfileid: "77579961"
 
    ![HTML-код из файла Index.cshtml для домашней страницы в редакторе Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Измените текст "Welcome" на "**Hello World!** ".
+1. Измените текст "Welcome" на "**Hello World!**".
 
    ![В редакторе Visual Studio измените сообщение "Welcome" в HTML-коде по умолчанию на сообщение "Hello World"](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
@@ -206,13 +206,13 @@ ms.locfileid: "77579961"
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Для получения дополнительных сведений перейдите к следующему руководству:
 
 > [!div class="nextstepaction"]
 > [Начало работы с C# и ASP.NET в Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Публикация веб-приложения в службе приложений Azure с помощью Visual Studio](../deployment/quickstart-deploy-to-azure.md)

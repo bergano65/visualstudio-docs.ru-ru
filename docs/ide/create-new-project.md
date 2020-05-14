@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585474"
 ---
-# <a name="create-a-new-project-in-visual-studio"></a>Создание нового проекта в Visual Studio
+# <a name="create-a-new-project-in-visual-studio"></a>Создание проекта в Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -99,6 +99,6 @@ ms.locfileid: "75585474"
 
 Чтобы добавить дополнительный тестовый проект в решение, в **Обозревателе решений** щелкните узел решения правой кнопкой мыши и выберите пункты **Добавить** > **Новый проект**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание решений и проектов](creating-solutions-and-projects.md)

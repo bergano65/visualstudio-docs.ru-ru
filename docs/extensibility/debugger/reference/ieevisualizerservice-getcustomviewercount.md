@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount | Документация Майкрософт
+title: IEEVisualizerService::GetCustomViewerCount Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerCount method
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82c4699c987d94f5fffad87d26f845facff3180c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 90f040c4ca0736a0312829d196d0991788357edc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718039"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
-Этот метод возвращает число типа визуализаторы доступны из этой службы.
+Этот метод получает количество визуализаторов типа, доступных из этой службы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>Параметры
 `pcelt`\
-[out] Возвращает количество доступных визуализаторами типов.
+(ваут) Возвращает количество доступных визуализаторов типа.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) передает запрос в этот метод в поддержке для визуализаторов типов.
+- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) передает запрос на этот метод в поддержку визуализаторов типа.
 
 ## <a name="see-also"></a>См. также
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

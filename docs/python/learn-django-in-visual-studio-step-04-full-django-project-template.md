@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62961704"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Django
 
-**Предыдущий шаг. [Обработка статических файлов, добавление страниц и использование наследования шаблонов](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Предыдущий шаг: [Обработка статических файлов, добавление страниц и использование наследования шаблонов](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 Теперь, когда вы ознакомились с основами Django, создав в Visual Studio приложение на основе шаблона "Пустой веб-проект Django", вам будет легче создать более полное приложение с помощью шаблона "Веб-проект Django".
 
@@ -33,7 +33,7 @@ ms.locfileid: "62961704"
 
 В шаблоне также предусмотрена обычная аутентификация, которая рассматривается на шаге 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Шаг 4-1. Создание проекта на основе шаблона
+## <a name="step-4-1-create-a-project-from-the-template"></a>Шаг 4.1. Создание проекта на основе шаблона
 
 1. В Visual Studio перейдите к **обозревателю решений**, щелкните правой кнопкой мыши решение **LearningDjango**, созданное ранее в рамках этого руководства, и выберите **Добавить** > **Новый проект**. (Если же вы хотите использовать новое решение, вместо этого выберите **Файл** > **Создать** > **Проект**.)
 
@@ -85,7 +85,7 @@ ms.locfileid: "62961704"
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел **Окружения Python** и выберите **Добавить существующее виртуальное окружение**.
 1. Перейдите к папке виртуального окружения и выберите ее. Затем нажмите кнопку **ОК**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Шаг 4-2. Сведения о представлениях и шаблонах страниц, созданных с использованием шаблона проекта
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Шаг 4.2. Сведения о представлениях и шаблонах страниц, созданных с использованием шаблона проекта
 
 При запуске проекта вы увидите, что приложение содержит три представления: домашняя страница, а также страницы со сведениями и контактными данными. Код этих представлений хранится в папке *app/views*. Каждая функция представления просто вызывает `django.shortcuts.render` с путем к шаблону и простым объектом словаря. Например, страница сведений обрабатывается функцией `about`:
 
@@ -165,9 +165,9 @@ def about(request):
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Вопрос. Можно ли добавить отступ перед тегами {% block %} и {% endblock %} в шаблоне страницы Django?
 
-Ответ. Да, шаблоны страниц Django будут работать без ошибок, если добавить отступ перед тегами блоков, например, чтобы выровнять их в соответствующих родительских элементах. Они не отделяются отступом в шаблонах страниц, созданных на основе шаблона проекта Visual Studio, чтобы вы могли четко видеть, где они расположены.
+Ответ. Да, шаблоны страниц Django будут работать без шибок, если добавить отступ перед тегами блоков, например, чтобы выровнять их в соответствующих родительских элементах. Они не отделяются отступом в шаблонах страниц, созданных на основе шаблона проекта Visual Studio, чтобы вы могли четко видеть, где они расположены.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Шаг 4-3. Сведения о маршрутизации URL-адресов, создаваемой на основе шаблона
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Шаг 4.3. Сведения о маршрутизации URL-адресов, создаваемой на основе шаблона
 
 Файл *urls.py* проекта Django, созданный на основе шаблона "Веб-проект Django", содержит такой код:
 
@@ -208,9 +208,9 @@ urlpatterns = [
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Вопрос. Почему в созданном мной проекте в шаблоне URL-адреса about используется ^about, а не ^about$, как показано в этом разделе?
 
-Ответ. Отсутствие символа $ в конце регулярного выражения — это просто ошибка, которая встречается во многих версиях шаблона проекта. Шаблон URL-адреса для страницы сведений работает без ошибок. Но без символа $ в конце он также соответствует таким URL-адресам: about=django, about09876, aboutoflaughter и т. д. В этом примере символ $ в конце выражения используется для создания URL-адресов, соответствующих *только* about.
+Ответ. Отсутствие символа $ в конце регулярного выражения — это просто ошибка, которая встречается во многих версиях шаблона проекта. Шаблон URL-адреса для страницы сведений работает без ошибок. Но без символа $ в конце он также соответствует таким URL-адресам: about=django, about09876, aboutoflaughter и т. д. В этом примере символ $ в конце выражения используется для создания URL-адресов, соответствующих *только* about.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Аутентификация пользователей в Django](learn-django-in-visual-studio-step-05-django-authentication.md)
@@ -219,4 +219,4 @@ urlpatterns = [
 
 - [Развертывание веб-приложения в Службе приложений Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (Написание первого приложения Django. Часть 4 — формы и универсальные представления) (docs.djangoproject.com)
-- Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

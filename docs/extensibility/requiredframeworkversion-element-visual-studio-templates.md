@@ -1,5 +1,5 @@
 ---
-title: Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Документация Майкрософт
+title: ОбязательныйЭлементКарнойверсии (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744756"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701501"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 
-Указывает минимальную версию .NET Framework, требуемый шаблоном. Это вызывает **версию целевой платформы** раскрывающийся список для отображения в **новый проект** диалоговое окно. `RequiredFrameworkVersion` Элемент также определяет наименьшее значение в раскрывающемся списке.
+Уотек минимальной версии рамочного соглашения .NET, требуемого шаблоном. Это приводит к тому, что в диалоге **нового проекта** отображается версия **Целевой рамочной версии.** Элемент `RequiredFrameworkVersion` также определяет наименьшее значение, доступное в отсечке.
 
 > [!IMPORTANT]
-> Начиная с Visual Studio 2017 версии 15.6, **версию целевой платформы** раскрывающийся список больше не является фильтром для отображаемых шаблонов в **шаблоны** раздел **новый проект** диалоговое окно. Вместо этого раскрывающегося списка функционирует как окно выбора платформы, для выбранного шаблона.
+> Начиная с версии Visual Studio 2017 15.6, выпадение **целевой рамочной версии** больше не является фильтром для отображаемых шаблонов в разделе **шаблонов** диалога **New Project.** Вместо этого выпадение функций в качестве сборщика фреймворка для выбранного шаблона.
 
- \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
+ \<VSTemplate \<> TemplateData> \<необходимая>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,29 +38,29 @@ ms.locfileid: "66744756"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Категоризирует шаблон и определяет, как он отображается либо в **новом проекте,** либо в диалоговом окне **Добавить новый элемент.**|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Этот текст должен быть минимальный номер версии платформы .NET Framework, которая необходима для шаблона.
+ Текст должен быть минимальным номером версии рамочного индекса .NET, который необходим для шаблона.
 
 ## <a name="remarks"></a>Примечания
 
-`RequiredFrameworkVersion` — это необязательный элемент. Этот элемент используется только в том случае, если шаблон поддерживает определенную минимальную версию (и более поздних версий, если таковые имеются) платформы .NET Framework. Если указать `RequiredFrameworkVersion` элемента и шаблона не поддерживает минимальный определенную версию .NET Framework, **версию целевой платформы** отображает раскрывающийся список, когда он неприменим.
+Параметр `RequiredFrameworkVersion` является необязательным элементом. Используйте этот элемент только в том случае, если шаблон поддерживает определенную минимальную версию (а позже версии, если таковые имеется) рамочного соглашения .NET. Если вы `RequiredFrameworkVersion` указываете элемент и шаблон не поддерживает конкретную минимальную версию рамочного соглашения .NET, то **выпадение целевой рамочной версии** отображается, когда это неприменимо.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.
+Следующий пример иллюстрирует метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона стандартного класса.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,10 +80,10 @@ ms.locfileid: "66744756"
 </VSTemplate>
 ```
 
-В этом примере, минимальная версия .NET Framework, требуемый шаблоном, представленный `RequiredFrameworkVersion`, — 3.0. Проект, созданный с помощью этого шаблона можно целевой версии .NET Framework, начиная с версии 3.0.
+В этом примере минимальная версия рамочного индекса .NET, `RequiredFrameworkVersion`требуемая шаблоном, представленная , составляет 3,0. Проект, созданный с помощью этого шаблона, может таргетировать версии .NET Framework, начиная с 3.0.
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Framework, предназначенных для обзора](../ide/visual-studio-multi-targeting-overview.md)
+- [Общие сведения о настройке целевой платформы](../ide/visual-studio-multi-targeting-overview.md)

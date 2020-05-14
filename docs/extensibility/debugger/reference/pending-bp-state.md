@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Документация Майкрософт
+title: PENDING_BP_STATE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349871"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713999"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
-Указывает состояние ожидающая точка останова (точку останова, которая еще не привязаны).
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
+Определяет состояние ожидающего разрыва (точка разрыва, которая еще не связана).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,21 +51,21 @@ public enum enum_PENDING_BP_STATE { 
  Заполнитель для нуля. Это значение никогда не возвращается.
 
  `PBPS_DELETED`\
- Указывает, что ожидающая точка останова была удалена.
+ Означает, что отложенная точка разрыва была удалена.
 
  `PBPS_DISABLED`\
- Указывает, ожидающая точка останова была отключена.
+ Означает, что отложенная точка разрыва отключена.
 
  `PBPS_ENABLED`\
- Указывает, что ожидающая точка останова включена.
+ Означает, что точка ожидания включена.
 
 ## <a name="remarks"></a>Примечания
- Использовать в качестве `state` членом [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры.
+ Используйте `state` в качестве члена [структуры PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,27 +1,27 @@
 ---
-title: IDebugIDECallback::DisplayMessage | Документация Майкрософт
+title: IDebugIDECallback::DisplayMessage Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a80fbc6e621e4cf1619aa310e5f7cd8beba47d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7073cc3d142d0faabe145b775780c177fbf0d732
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727853"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-Отправляет заданной строкой сообщения в окне вывода отладчика.
+Отправляет указанную строку сообщения в выходное окно отладчика.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,10 +39,10 @@ int DisplayMessage (
 
 ## <a name="parameters"></a>Параметры
 `szMessage`\
-[in] Строка сообщения для отображения в окне вывода отладчика.
+(в) Строка сообщения для отображения в выходном окне отладчика.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

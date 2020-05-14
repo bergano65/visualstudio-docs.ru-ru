@@ -1,76 +1,76 @@
 ---
-title: Типы проектов | Документация Майкрософт
+title: Типы проектов Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d41eb5b21dc22ca0345c9cbf93ce680354d0db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318767"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706263"
 ---
 # <a name="project-types"></a>Типы проектов
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] содержит несколько типов проектов, для языков, таких как [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также позволяет создавать собственные типы проектов.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]включает в себя несколько [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]типов проектов для языков, таких как и . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]также позволяет создавать собственные типы проектов.
 
 ## <a name="in-this-section"></a>В этом разделе
-- [Основные компоненты](../../extensibility/internals/project-type-essentials.md)
+- [Основное](../../extensibility/internals/project-type-essentials.md)
 
- Представляет важные сведения, необходимые для начала работы с типами проектов.
+ Представляет важную информацию, которую необходимо начать работать с типами проектов.
 
 - [Создание типов проектов](../../extensibility/internals/creating-project-types.md)
 
- Вопросы создания типов проектов.
+ Обсуждается дизайн типов проектов.
 
 - [Добавление команды на панель инструментов обозревателя решений](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- Подробно описывает шаги, которые необходимо выполнить, чтобы добавить кнопку [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **обозревателе решений** панели инструментов.
+ Подробно о шагах, которые вы должны [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] следовать, чтобы добавить кнопку в панели инструментов **Solution Explorer.**
 
 - [Добавление проекта и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Описывает, как можно добавить шаблоны с типами проектов, таким образом, пользователи могут создавать новые проекты и элементы проекта в соответствии с шаблоном.
+ Обсуждается, как можно добавлять шаблоны в типы проектов, чтобы пользователи могли создавать новые проекты и элементы проекта в соответствии с шаблоном.
 
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)
 
- Сведения о том, как для управления элементами, которые поддерживает типа проекта.
+ Предоставляет информацию о том, как управлять элементами, которые поддерживает тип проекта.
 
 - [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md)
 
- Описывает, как типы проекта может поддерживать параметры конфигурации, например отладки и выпуска, контролировать, как проекты построены, отладки и т. д.
+ Обсуждается, как типы проектов могут поддерживать параметры конфигурации, такие как Debug и Release, которые контролируют, как проекты строятся, отлаживаются и так далее.
 
 - [Поддержка системы управления версиями](../../extensibility/internals/supporting-source-control.md)
 
- Сведения о том, как добавить поддержку системами управления версиями с типами проектов.
+ Предоставляет информацию о том, как добавить поддержку систем управления исходным управлением в типы проектов.
 
 - [Проекты вложения](../../extensibility/internals/nesting-projects.md)
 
- Объясняет, как типы проекта может поддерживать *вложенности*так, чтобы проекты могут быть объединены в **обозревателе решений**.
+ Объясняет, как типы проектов могут поддерживать *вложение,* чтобы проекты могли быть сгруппированы в **Solution Explorer.**
 
 - [Обновление проектов](../../extensibility/internals/upgrading-projects.md)
 
- Описывает, как тип проекта может участвовать в мастере обновления, чтобы обновить файлы проекта из более ранней версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Описывает, как ваш тип проекта может участвовать в «Мастере обновления» для обновления файлов проекта из более ранней версии. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
-- [Архитектура](../../extensibility/internals/project-types-architecture.md)
+- [Architecture](../../extensibility/internals/project-types-architecture.md)
 
- Предоставляет подробные технические сведения о типах проектов.
+ Предоставляет подробную техническую информацию о типах проектов.
 
 ## <a name="related-sections"></a>Связанные разделы
 - [Иерархии и выбор](../../extensibility/internals/hierarchies-and-selection.md)
 
- Общие сведения о том, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) отображает проекта в виде иерархии.
+ Предоставляет обзор того, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] как интегрированная среда разработки (IDE) отображает проект как иерархию.
 
 - [Подтипы проектов](../../extensibility/internals/project-subtypes.md)
 
- Ссылки на разделы подтип проекта. Подтипов проекта включить расширение типов, большинство типов проектов, включая ваши собственные.
+ Предоставляет ссылки на темы подтипа проекта. Подтипы проекта позволяют расширить большинство типов проектов, включая ваши собственные.
 
 - [Проекты](../../extensibility/internals/projects.md)
 
- Описывает способы расширения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] системы проектов.
+ Описывает, как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] расширить проектную систему.

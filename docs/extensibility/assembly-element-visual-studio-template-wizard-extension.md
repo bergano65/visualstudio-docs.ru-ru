@@ -1,5 +1,5 @@
 ---
-title: Элемент ASSEMBLY (расширение мастера шаблонов Visual Studio) | Документация Майкрософт
+title: Элемент сборки (Visual Studio Template Wizard Extension) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68fb795005f1f653893147f7013117112f803211
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352228"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740060"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Элемент ASSEMBLY (расширение мастера шаблонов Visual Studio)
-Указывает имя или строгое имя сборки, реализующей `IWizard` интерфейс.
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Элемент сборки (расширение мастер-шаблона Visual Studio)
+Упогоняет имя или сильное название `IWizard` сборки, которая реализует интерфейс.
 
- \<VSTemplate > \<WizardExtension > \<сборки >
+ \<>> \< \<ассамблеи VSTemplate> WizardExtension
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,27 +36,27 @@ ms.locfileid: "66352228"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Содержит элементы регистрации для настройки мастера шаблонов.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Содержит элементы регистрации для настройки мастера шаблона.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Данный текст задает сборку, которая реализует `IWizard` интерфейс. Имя сборки необходимо указать как полное имя сборки. Например, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+ В этом тексте оговаривается сборка, `IWizard` которая реализует интерфейс. Это имя сборки должно быть указано как полное название сборки. Например, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
 
 ## <a name="remarks"></a>Примечания
  `Assembly` — обязательный дочерний элемент элемента `WizardExtension`.
 
 ## <a name="example"></a>Пример
- В следующем примере показано метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
+ Следующий пример иллюстрирует метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона проекта для приложения Windows.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,6 +88,6 @@ ms.locfileid: "66352228"
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Как: Использование мастеров с шаблонами проектов](../extensibility/how-to-use-wizards-with-project-templates.md)

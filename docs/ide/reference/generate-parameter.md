@@ -1,26 +1,29 @@
 ---
 title: Создание параметра с использованием рефакторинга
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e95e76c35afdb8cdbe38c8b33329734ba68361b1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329068"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094343"
 ---
 # <a name="generate-parameter"></a>Создание параметра
 
 Область применения этого рефакторинга:
 
 - C#
+
+- Visual Basic
 
 **Что?** Автоматически создает параметр метода.
 

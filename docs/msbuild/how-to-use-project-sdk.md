@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Ссылка на пакет SDK проекта MSBuild | Документация Майкрософт
+title: Практическое руководство. Ссылка на пакет SDK проекта MSBuild | Документация Майкрософт
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826475"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Практическое руководство. Информация об использовании пакетов SDK проекта MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Информация об использовании пакетов SDK проекта MSBuild
 
 MSBuild 15.0 представляет новую концепцию "пакет SDK проекта", которая упрощает применение пакетов разработки программного обеспечения, требующих импортировать свойства и целевые объекты.
 
@@ -126,7 +126,7 @@ MSBuild 15.0 представляет новую концепцию "пакет 
 
 При сборке проекта может использоваться только одна версия каждого пакета SDK проекта. Если указать ссылки на две разные версии одного пакета SDK проекта, MSBuild выдает предупреждение. Рекомендуем **не** указывать в проектах версию, если она уже указана в файле *global.json*.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
 - [Настройка сборки](../msbuild/customize-your-build.md)

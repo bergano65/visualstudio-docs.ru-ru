@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75775895"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
@@ -85,7 +85,7 @@ ms.locfileid: "75775895"
   > ![Сообщение о проблеме — сводка собираемых журналов](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md)
 - [Конфиденциальность данных отчета о проблемах C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

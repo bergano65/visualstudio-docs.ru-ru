@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777861"
 ---
 # <a name="compare-performance-data-files"></a>Сравнение файлов данных о производительности
@@ -33,6 +33,6 @@ ms.locfileid: "74777861"
 
 Для снижения шума и фильтрации данных в строках таблицы сравнения, которые не изменились по сравнению с указанным значением, можно установить порог.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 [Практическое руководство. Сравнение файлов данных о производительности](../profiling/how-to-compare-performance-data-files.md)

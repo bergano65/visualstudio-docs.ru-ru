@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Выделение текста
           href: walkthrough-highlighting-text.md
-        - name: Структуризация
+        - name: Структура
           href: walkthrough-outlining.md
         - name: Отображение парных скобок
           href: walkthrough-displaying-matching-braces.md
@@ -706,7 +706,7 @@
               href: usedcommands-element.md
             - name: Элемент UsedCommand
               href: usedcommand-element.md
-        - name: Элемент Parent
+        - name: Родительский элемент
           href: parent-element.md
         - name: Элемент Icon
           href: icon-element.md
@@ -840,9 +840,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: Перечислители.
+        - name: Enumerators
           items:
-            - name: Перечислители.
+            - name: Enumerators
               href: enumerators.md
             - name: Код команды
               href: command-code-enumerator.md

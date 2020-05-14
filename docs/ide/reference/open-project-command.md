@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565816"
 ---
 # <a name="open-project-command"></a>Команда Open project
@@ -36,12 +36,12 @@ File.OpenProject filename
 
 `filename`
 
-Обязательный. Полный путь и имя файла открываемого проекта или решения.
+Обязательный элемент. Полный путь и имя файла открываемого проекта или решения.
 
 > [!NOTE]
 > В соответствии с требованиями синтаксиса для аргумента `filename` путь, содержащий пробелы, должен заключаться в кавычки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Функция автозавершения пытается определить правильный путь и правильное имя файла во время их ввода.
 
@@ -55,7 +55,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

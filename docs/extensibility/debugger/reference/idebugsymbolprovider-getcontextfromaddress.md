@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContextFromAddress | Документация Майкрософт
+title: IDebugСимвол-провайдер::GetContextFromАдрес Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetContextFromAddress method
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58896285fa0af5eeea972b0c8897472e20c8a128
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca6c3fa5d657100ecce55de31117ea2c2532374d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347651"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719246"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
-Этот метод сопоставляет адрес отладки в контексте документа.
+Этот метод отображает адрес отладки в контексте документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,13 +43,13 @@ int GetContextFromAddress(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-[in] Адрес отладки, представленные как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+(в) Адрес отладки, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `ppDocContext`\
-[out] Возвращает контекст документа, представленные как [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс.
+(ваут) Возвращает контекст документа, представленный интерфейсом [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

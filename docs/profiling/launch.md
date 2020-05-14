@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778613"
 ---
 # <a name="launch"></a>Launch
@@ -37,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **GlobalOn** и **GlobalOff** возобновляет (**GlobalOn**) или приостанавливает (**GlobalOff**) профилирование, но не завершает сеанс профилирования.
 
- **ProcessOn:** `PID` и **ProcessOff**:`PID` Возобновляет (**ProcessOn**) или приостанавливает (**ProcessOff**) профилирование для указанного процесса.
+ Подкоманды **ProcessOn:** `PID` и **ProcessOff**:`PID` Возобновляет (**ProcessOn**) или приостанавливает (**ProcessOff**) профилирование для указанного процесса.
 
  **TargetCLR** указывает версию профилируемой среды CLR, если в рамках сеанса профилирования загружено несколько версий. По умолчанию профилируется первая загруженная версия.
 
@@ -53,7 +53,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Параметры выборки
  В командной строке с параметром **Launch** можно задать один из указанных ниже параметров интервала выборки. Интервал выборки по умолчанию равен 10 000 000 циклам тактовой частоты процессора.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] задает числовое значение и тип интервала выборки.
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] задает числовое значение и тип интервала выборки.
 
 - **Timer** — осуществляет выборку через каждые `Cycles` циклов тактовой частоты процессора без остановок. Если параметр `Cycles` не задан, используется значение 10 000 000 циклов.
 

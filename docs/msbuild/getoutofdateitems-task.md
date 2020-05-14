@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272404"
 ---
 # <a name="getoutofdateitems-task"></a>Задача GetOutOfDateItems
@@ -32,7 +32,7 @@ ms.locfileid: "77272404"
 
 В представленной ниже таблице приводятся параметры задачи **GetOutOfDateItems**.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Необязательный параметр типа **bool**.|
 |**CommandMetadataName**|Необязательный параметр типа **string**.|
@@ -40,10 +40,10 @@ ms.locfileid: "77272404"
 |**HasInterdependencies**|Необязательный параметр вывода типа **bool**.|
 |**OutOfDateSources**|Необязательный параметр вывода **ITaskItem[]** .|
 |**OutputsMetadataName**|Обязательный параметр **string**.|
-|**Sources**|Необязательный параметр **ITaskItem[]** .|
+|**Источники**|Необязательный параметр **ITaskItem[]** .|
 |**TLogDirectory**|Обязательный параметр **string**.|
 |**TLogNamePrefix**|Обязательный параметр **string**.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

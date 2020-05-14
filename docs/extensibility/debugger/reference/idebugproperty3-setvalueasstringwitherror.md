@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Документация Майкрософт
+title: IDebugProperty3::SetvalueAsStringWithОшибка (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348819"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721075"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-Задает значение этого свойства и возвращает сообщение об ошибке, при необходимости.
+Устанавливает значение этого свойства и при необходимости возвращает сообщение об ошибке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Параметры
 `pszValue`\
-[in] Задаваемое значение.
+(в) Значение для установки.
 
 `dwRadix`\
-[in] Основание системы счисления задаваемое значение.
+(в) Радикс набора значения.
 
 `dwTimeout`\
-[in] Продолжительность времени ожидания задать значения (`INFINITE` означает бесконечное ожидание).
+(в) Продолжительность ожидания значения (означает`INFINITE` ждать вечно).
 
 `errorString`\
-[out] Если произошла ошибка при установке значения, содержит причину сбоя.
+(ваут) Если значение было установлено ошибкой, это удерживает причину сбоя.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
-Входящее значение может быть выражение для оценки.
+Входящие значения могут быть выражением для оценки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CProperty,** который предоставляет интерфейс [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

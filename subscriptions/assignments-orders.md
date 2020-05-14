@@ -3,15 +3,16 @@ title: Отслеживание назначений пользователей 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Узнайте об обязанности администратора отслеживать назначения пользователей и обрабатывать заказы.
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967338"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232699"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Отслеживание назначений пользователей и обработка заказов
 Администраторы подписок на Visual Studio должны отслеживать использование Visual Studio и оформлять заказы при превышении уровня использования в сроки, указанные в соглашении о корпоративном лицензировании Майкрософт или в соглашении о предоставлении продуктов и услуг Майкрософт. Новый портал администрирования подписок на Visual Studio упрощает эту задачу благодаря средству отслеживания, в котором можно просматривать доступные и используемые лицензии.
@@ -36,14 +37,16 @@ ms.locfileid: "76967338"
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Соглашения Enterprise, MPSA и Select
 Соглашения Enterprise, MPSA и Select Plus корпорации Майкрософт обеспечивают гибкость в использовании и лицензировании программного обеспечения Visual Studio. Администраторы Visual Studio должны ежегодно оформлять сверочный заказ для приведения числа лицензий на ПО в соответствие с верхним пределом использования за период действия соглашения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об обязанностях администраторов:
 - [Обязанности администратора](admin-responsibilities.md)
 - [Инвентаризация подготовительной среды](admin-inventory.md)
 - [Управление большими рабочими группами и сторонними подрядчиками](manage-teams.md)
 - Используйте [Максимальное использование](maximum-usage.md) для учета обязательств по покупке
 
-## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](/visualstudio/)
-- [Документация по Azure](/azure/)
-- [Azure DevOps](/azure/devops/)

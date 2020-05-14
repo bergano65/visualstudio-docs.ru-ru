@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Документация Майкрософт
+title: IDebugPendingBreakpoint2::EnumBoundBreakpoints Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - EnumBoundBreakpoints method
 - IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 017981e2762ec8246a1898f224700c3b689552b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6655b65ec2505794f29f5c6ad9142c8690ea474b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333770"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725867"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
-Перечисляет все точки останова, привязанный из этого ожидающая точка останова.
+Перечисляет все точки разрыва, связанные с этой ожидавшей разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,13 +42,13 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-[out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объект, который перечисляет связанных точек останова.
+(ваут) Возвращает объект [IEnumDebugBoundPointspoints2,](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) который перечисляет точки разрыва.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.
+ В следующем примере показано, как `CPendingBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)

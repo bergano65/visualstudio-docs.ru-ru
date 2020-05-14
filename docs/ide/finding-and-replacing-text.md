@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590349"
 ---
 # <a name="find-and-replace-text"></a>Поиск и замена текста
@@ -116,7 +116,7 @@ ms.locfileid: "75590349"
 
 Используйте следующие клавиши и действия для выбора нескольких точек вставки:
 
-|Сочетание клавиш|Действие|
+|Клавиша|Действие|
 |-|-|
 |**CTRL**+**ALT** + щелчок|Добавить дополнительную точку вставки|
 |**CTRL**+**ALT** + двойной щелчок|Добавить дополнительное выделенное слово|
@@ -132,7 +132,7 @@ ms.locfileid: "75590349"
 
 ![Всплывающее меню "Несколько точек вставки" в Visual Studio](media/edit-menu-multiple-carets.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование регулярных выражений в Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Рефакторинг кода в Visual Studio](../ide/refactoring-in-visual-studio.md)

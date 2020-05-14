@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange | Документация Майкрософт
+title: IDebugДокументКонтекст2:GetSourceRange Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetSourceRange
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 210ac493a2b717b901e989dcb248efe29ad3fe75
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311847"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731801"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
-Получает исходный диапазон кода данного контекста документа.
+Получает диапазон исходного кода этого контекста документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int GetSourceRange( 
 
 ## <a name="parameters"></a>Параметры
 `pBegPosition`\
-[in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры, который заполняется положением. Установите этот аргумент со значением null, если эта информация не требуется.
+(в, вне) [Структура TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) заполненная исходным положением. Установите этот аргумент в нулевую величину, если эта информация не нужна.
 
 `pEndPosition`\
-[in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуры, который заполняется конечную позицию. Установите этот аргумент со значением null, если эта информация не требуется.
+(в, вне) [Структура TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) заполненная окончанием положения. Установите этот аргумент в нулевую величину, если эта информация не нужна.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Исходный диапазон является весь диапазон исходного кода, сзади текущей инструкции сразу же после предыдущей инструкции, использованное кода. Исходный диапазон обычно используется для смешивания исходные инструкции, включая комментарии, с помощью кода в окне дизассемблирования.
+ Исходный диапазон — это весь диапазон исходного кода, от текущего оператора до сразу после предыдущего оператора, в котором был внесен код. Диапазон исходных источников обычно используется для смешивания исходных заявлений, включая комментарии, с кодом в окне разборки.
 
- Чтобы получить диапазон для только что код инструкций, содержащихся в данном контексте документ, вызовите [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) метод.
+ Чтобы получить диапазон только для кодов, содержащихся в этом контексте документа, позвоните в метод [GetStatementRange.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

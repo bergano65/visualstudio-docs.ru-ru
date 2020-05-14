@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyDestroyEvent2 | Документация Майкрософт
+title: IDebugPropertyDestroyEvent2 (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2 interface
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a52e9a1a3723566dd7a2dbdfc3cfe1a4d41261ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce15f389f22513e08b06c0d097cdac4aec3c35bf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322746"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720903"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
-Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) Если свойство, связанный с конкретным документом является уничтожить.
+Этот интерфейс отправляется движком отладки (DE) диспетчеру отладки сеанса (SDM), когда свойство, связанное с конкретным документом, вот-вот будет уничтожено.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "66322746"
 IDebugPropertyDestroyEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE реализует этот интерфейс, чтобы сообщить, что свойство было уничтожено. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс. Этот интерфейс реализуется в том случае, если DE ранее уже создано свойство, связанное с помощью сценария; уничтожение свойство удаляет связанный скрипт в интегрированной среде разработки.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE реализует этот интерфейс, чтобы сообщить, что свойство было уничтожено. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует [QueryInterface](/cpp/atl/queryinterface) для `IDebugEvent2` доступа к интерфейсу. Этот интерфейс реализован, если DE ранее создал свойство, связанное с скриптом; уничтожение свойства удаляет связанный с ней скрипт из IDE.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- DE создает и отправляет этот объект события передавали свойство было уничтожено. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ DE создает и отправляет объект этого события, чтобы сообщить об уничтожении имущества. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) поставляемой SDM при подключении к отладочной программе.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны метод `IDebugPropertyDestroyEvent2`.
+ В следующей таблице `IDebugPropertyDestroyEvent2`показан метод .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Возвращает свойство будут уничтожены.|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Получает имущество, чтобы быть уничтожены.|
 
 ## <a name="remarks"></a>Примечания
- См. в разделе "Примечания" для [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) Дополнительные сведения о том, почему эти события используются.
+ Подробнее о том, почему используются эти события, можно узнать о причинах использования [IDebugPropertyCreateEvent2.](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

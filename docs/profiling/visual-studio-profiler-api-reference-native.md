@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778028"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
@@ -27,7 +27,7 @@ API-интерфейсы профилировщика Visual Studio позвол
 > [!NOTE]
 > Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
 
 [CommentMarkProfile](../profiling/commentmarkprofile.md)
@@ -46,7 +46,7 @@ API-интерфейсы профилировщика Visual Studio позвол
 
 [PROFILE_CURRENTID](../profiling/profile-currentid.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)
-- [Пошаговое руководство: использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)
+- [Пошаговое руководство. Использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)

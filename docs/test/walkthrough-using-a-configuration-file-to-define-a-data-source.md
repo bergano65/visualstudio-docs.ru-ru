@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776158"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
@@ -32,7 +32,7 @@ ms.locfileid: "75776158"
 
 - доступ к источникам данных с помощью класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 Для выполнения данного пошагового руководства требуется:
 
@@ -85,7 +85,7 @@ ms.locfileid: "75776158"
 
 3. В первом элементе **add** создайте следующие атрибуты и значения для подключения к базе данных Microsoft Access:
 
-|Атрибут|Значения|
+|attribute|Значения|
 |-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
@@ -93,7 +93,7 @@ ms.locfileid: "75776158"
 
 Во втором элементе **add** создайте следующие атрибуты и значения для подключения к таблице Microsoft Excel:
 
-|Атрибут|Значения|
+|attribute|Значения|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -132,7 +132,7 @@ ms.locfileid: "75776158"
 
 4. В первом элементе **add** создайте следующие атрибуты и значения для источника данных Microsoft Access:
 
-|Атрибут|Значения|
+|attribute|Значения|
 |-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ ms.locfileid: "75776158"
 
 Во втором элементе **add** создайте следующие атрибуты и значения для источника данных Microsoft Excel:
 
-|Атрибут|Значения|
+|attribute|Значения|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -208,7 +208,7 @@ ms.locfileid: "75776158"
 
 2. Создайте лист с именем `Sheet1`, если он еще не существует в *data.xlsx*.
 
-3. Создайте на листе `Sheet1` два заголовка столбцов и назовите их `Val1` и `Val2`.
+3. Создайте на листе `Val1` два заголовка столбцов и назовите их `Val2` и `Sheet1`.
 
 4. Добавьте пять сущностей в таблицу `Sheet1` со следующими значениями для `Val1` и `Val2` соответственно: (1,1), (2,2), (3,3), (4,4) и (5,0).
 
@@ -267,7 +267,7 @@ ms.locfileid: "75776158"
 > [!IMPORTANT]
 > Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Практическое руководство. Создание модульного теста, управляемого данными](../test/how-to-create-a-data-driven-unit-test.md)

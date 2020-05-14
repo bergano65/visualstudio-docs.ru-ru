@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91ac811c1f55fdb9a662db679ebd2d038ecdd5dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588984"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Практическое руководство. Выбор активного параметра запуска для нагрузочного теста
@@ -26,7 +26,7 @@ ms.locfileid: "75588984"
 > [!NOTE]
 > Полный список свойств параметров запуска и их описание см. в статье [Свойства параметров запуска нагрузочного теста](../test/load-test-run-settings-properties.md).
 
-Если нагрузочный тест содержит только один узел параметров в папке **Параметры запуска**, этот узел всегда будет активным. Если тест содержит несколько узлов параметров, при запуске можно выбрать любой из них. См. практическое руководство по [ Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Если нагрузочный тест содержит только один узел параметров в папке **Параметры запуска**, этот узел всегда будет активным. Если тест содержит несколько узлов параметров, при запуске можно выбрать любой из них. См. статью [Практическое руководство. Добавление дополнительных параметров запуска в нагрузочный тест](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 В **редакторе тестовой нагрузки** активный параметр запуска определяется с помощью суффикса "[Active]".
 
@@ -55,7 +55,7 @@ ms.locfileid: "75588984"
 
 **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка параметров запуска нагрузочных тестов](../test/configure-load-test-run-settings.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

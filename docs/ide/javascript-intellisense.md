@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593724"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
@@ -141,7 +141,7 @@ function Foo(param1) {
 
 Если вы не хотите использовать автоматическое получение, отключите его, добавив указанный ниже файл конфигурации. Вы по-прежнему можете вручную поместить файлы определений для использования непосредственно в проекте.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование технологии IntelliSense](../ide/using-intellisense.md)
 - [Поддержка по JavaScript (Visual Studio для Mac)](/visualstudio/mac/javascript)

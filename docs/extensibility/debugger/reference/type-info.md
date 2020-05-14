@@ -1,5 +1,5 @@
 ---
-title: TYPE_INFO | Документация Майкрософт
+title: TYPE_INFO Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86212a5ef6f417dae2ae345b1367e041c3cf9095
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316127"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713319"
 ---
-# <a name="typeinfo"></a>TYPE_INFO
-Эта структура определяет различные виды информации о типа поля.
+# <a name="type_info"></a>TYPE_INFO
+Эта структура определяет различные виды информации о типе поля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,42 +48,42 @@ public struct TYPE_INFO {
 
 ## <a name="members"></a>Участники
  `dwKind`\
- Значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисления, которое определяет способ интерпретации объединение.
+ Значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисления, определяющее, как интерпретировать союз.
 
  `type.typeMeta`\
- [C++ только] Содержит [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) структуры, если `dwKind` является `TYPE_KIND_METADATA`.
+ (только си) Содержит [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) структуру, если `dwKind` есть `TYPE_KIND_METADATA`.
 
  `type.typePdb`\
- [C++ только] Содержит [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) структуры, если `dwKind` является `TYPE_KIND_PDB`.
+ (только си) Содержит [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) структуру, если `dwKind` есть `TYPE_KIND_PDB`.
 
  `type.typeBuilt`\
- [C++ только] Содержит [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) структуры, если `dwKind` является `TYPE_KIND_BUILT`.
+ (только си) Содержит [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) структуру, если `dwKind` есть `TYPE_KIND_BUILT`.
 
  `type.unused`\
- Неиспользуемые заполнение.
+ Неиспользованная обивка.
 
  `type`\
- Имя объединения.
+ Название союза.
 
  `unionmember`\
- [C# только] Маршалинг, это тип подходящей структурой на основе `dwKind`.
+ (Только для C) Маршал это к соотвествуя типу структуры основанному на `dwKind`.
 
 ## <a name="remarks"></a>Примечания
- Эта структура передается [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) метод, где он заполняется. Интерпретация содержимое структуры на основе `dwKind` поля.
+ Эта структура передается методу [GetTypeInfo,](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) где она заполняется. То, как интерпретируется содержимое `dwKind` структуры, основано на поле.
 
 > [!NOTE]
-> [C++ только] Если `dwKind` равно `TYPE_KIND_BUILT`, то это необходимо для высвобождения базовый [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект при удалении `TYPE_INFO` структуры. Это выполняется с помощью вызова метода `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.
+> (только си) Если `dwKind` `TYPE_KIND_BUILT`равен, то необходимо освободить основной объект [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) при разрушении `TYPE_INFO` структуры. Это выполняется с помощью вызова метода `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.
 
- [C# только] В следующей таблице показаны способ интерпретации `unionmember` член для каждого типа. В примере показано, как это можно сделать для одного типа.
+ (Только для C) В следующей таблице показано, как интерпретировать `unionmember` участника для каждого типа. Пример показывает, как это делается для одного типа.
 
-|`dwKind`|`unionmember` интерпретируется как|
+|`dwKind`|`unionmember`интерпретируется как|
 |--------------|----------------------------------|
 |`TYPE_KIND_METADATA`|[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)|
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
 ## <a name="example"></a>Пример
- В этом примере показано, как интерпретировать `unionmember` членом `TYPE_INFO` структуры в C#. В этом примере показано, Интерпретация только один тип (`TYPE_KIND_METADATA`), но остальные интерпретируются точно таким же образом.
+ В этом примере `unionmember` показано, `TYPE_INFO` как интерпретировать члена структуры в C. Этот пример показывает интерпретацию`TYPE_KIND_METADATA`только одного типа (), но другие интерпретируются точно так же.
 
 ```csharp
 using System;
@@ -109,7 +109,7 @@ namespace MyPackage
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

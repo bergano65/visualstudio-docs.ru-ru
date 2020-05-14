@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Next | Документация Майкрософт
+title: IEnumDebugПроцессы2::Следующий Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Next
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 734be605517adf4e127a7f1f936fb799449ce467
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbfab7f13160129249afe7139ef3c402ba9801ee
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326186"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715827"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
-Возвращает следующий набор элементов из перечисления.
+Возвращает следующий набор из перечисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Параметры
 `celt`\
-[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+[in] Количество получаемых элементов. Также указывается максимальный размер `rgelt` массива.
 
 `rgelt`\
-[in, out] Массив [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) элементов для заполнения.
+(в, вне) Массив элементов [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) которые будут заполнены.
 
 `pceltFetched`\
-[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+(ваут) Возвращает количество элементов, `rgelt`фактически возвращенных в .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает, `S_FALSE` если меньше, чем просили количество элементов может быть возвращено; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

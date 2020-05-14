@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589218"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880147"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Практическое руководство. Настройка эмуляции сети с использованием параметров тестирования в Visual Studio
 
@@ -24,12 +24,19 @@ ms.locfileid: "75589218"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 В следующей процедуре описывается настройка эмуляции сети в редакторе конфигурации. Эти инструкции относятся к редактору конфигурации в Microsoft Test Manager и Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+В следующей процедуре описывается настройка эмуляции сети в редакторе конфигурации. Эти шаги относятся к редактору конфигурации в Visual Studio.
+::: moniker-end
 
 > [!NOTE]
-> Адаптер диагностических данных эмуляции сети применим только для параметров тестирования Visual Studio. Он не применяется для параметров тестирования в Microsoft Test Manager.
+> Адаптер диагностических данных эмуляции сети применим только для параметров тестирования Visual Studio. Он не применяется для параметров тестирования в Microsoft Test Manager (не рекомендуется в Visual Studio 2017).
 
+::: moniker range="vs-2017"
 Для эмуляции сети следует использовать учетную запись с привилегиями администратора. При выборе эмуляции сети для локальной роли, выполняющей ручные тесты, следует запустить Microsoft Test Manager с привилегиями администратора. При выборе эмуляции сети для любой другой роли необходимо удостовериться в том, что агент тестирования на компьютере для этой роли использует учетную запись пользователя, входящего в группу администраторов. Дополнительные сведения о настройке учетной записи агента тестирования см. в статье [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md).
+::: moniker-end
 
 > [!NOTE]
 > Учетная запись сетевой службы, используемая агентом тестирования по умолчанию, не является членом группы администраторов.

@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592052"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Использование классов Assert для модульного тестирования
@@ -47,6 +47,6 @@ ms.locfileid: "75592052"
 
 Чтобы проверить, действительно ли вызывается исключение, которое должно вызываться методом в коде приложения, используйте метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)

@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585526"
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# и Visual Basic | Visual Studio 2017 и более поздних версий |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Быстрые действия](../ide/quick-actions.md)

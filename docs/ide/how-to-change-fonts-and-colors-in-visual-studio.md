@@ -1,5 +1,5 @@
 ---
-title: Изменение шрифтов и цветов
+title: Изменение шрифта и цветов
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588880"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
@@ -23,7 +23,7 @@ ms.locfileid: "75588880"
 Настройку цвета фреймов и окон инструментов интегрированной среды разработки в Visual Studio можно несколькими способами.
 
 > [!TIP]
-> Сведения об изменении цветов в редакторе кода см. в разделе [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Сведения об изменении цветов в редакторе кода см. в статье [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Изменение цветовой темы интегрированной среды разработки
 
@@ -65,7 +65,7 @@ ms.locfileid: "75588880"
 
 1. В списке **Размер** выберите размер текста и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Специальные возможности Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
 - [Практическое руководство. Изменение шрифтов и цветов в редакторе](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

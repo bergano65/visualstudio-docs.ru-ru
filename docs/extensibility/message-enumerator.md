@@ -1,27 +1,27 @@
 ---
-title: Перечислитель сообщений | Документация Майкрософт
+title: Иенмератор сообщения Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a702e7eae6bc6bcdace62d61f27f78c23aeaa95f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349029"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702506"
 ---
-# <a name="message-enumerator"></a>Перечислитель сообщений
-Далее перечислены флаги используются для `TEXTOUTPROC` функцию, которая является функцией обратного вызова, интегрированная среда разработки предоставляет при вызове [SccOpenProject](../extensibility/sccopenproject-function.md) (см. в разделе [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Дополнительные сведения о функции обратного вызова функция).
+# <a name="message-enumerator"></a>Перечисление сообщений
+Следующие флаги используются для `TEXTOUTPROC` функции, которая является функцией обратного вызова, которую предоставляет IDE, когда он вызывает [SccOpenProject](../extensibility/sccopenproject-function.md) (см. [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) для получения подробной информации о функции обратного вызова).
 
- Если интегрированной среды разработки предлагается отменить процесс, он может появиться одно из сообщений "Отмена". В этом случае система управления подключаемый модуль использует `SCC_MSG_STARTCANCEL` попросить интегрированной среды разработки для отображения **отменить** кнопки. После этого любой набор обычные сообщения могут быть отправлены. Если любой из этих возвращает `SCC_MSG_RTN_CANCEL`, то подключаемый модуль завершает выполнение операции и возвращает. Подключаемый модуль также опрашивает `SCC_MSG_DOCANCEL` периодически для проверки, если пользователь отменил операцию. Когда все операции будут выполняться, или если пользователь отменил, подключаемый модуль отправляет `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, и типы SCC_MSG_ERROR используются для сообщения, которые отображаются в списке прокрутки сообщений. `SCC_MSG_STATUS` — специальный тип, который указывает, что текст будет показан в строке состояния или временный отображаемую область. Не будет окончательно в списке.
+ Если IDE попроситот отменить процесс, он может получить одно из сообщений об отмене. В этом случае плагин управления `SCC_MSG_STARTCANCEL` исходным элементом использует, чтобы попросить IDE отобразить кнопку **Отмена.** После этого может быть отправлен любой набор обычных сообщений. Если какой-либо из этих возвращается, `SCC_MSG_RTN_CANCEL`то плагин завершает операцию и возвращается. Плагин также периодически `SCC_MSG_DOCANCEL` проводит опросы, чтобы определить, отменил ли пользователь операцию. Когда все операции выполнены, или если пользователь отменил, `SCC_MSG_STOPCANCEL`плагин отправляет. Для `SCC_MSG_INFO`сообщений, отображаемых в списке прокрутки сообщений, используются типы SCC_MSG_WARNING и SCC_MSG_ERROR. `SCC_MSG_STATUS`— это особый тип, указывающий на то, что текст должен отображаться в панели состояния или временной зоне отображения. Он не остается постоянно в списке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,24 +40,24 @@ enum { 
 ```
 
 ## <a name="members"></a>Участники
- SCC_MSG_RTN_CANCEL возврата из обратного вызова для указания "Отмена".
+ SCC_MSG_RTN_CANCEL Возврат из обратного вызова, чтобы указать отмену.
 
- SCC_MSG_RTN_OK возврата из обратного вызова, чтобы продолжить.
+ SCC_MSG_RTN_OK Возвращение из обратного вызова для продолжения.
 
- SCC_MSG_INFO сообщение является информационным.
+ SCC_MSG_INFO Сообщение является информационным.
 
  SCC_MSG_WARNING сообщение является предупреждением.
 
- Сообщение SCC_MSG_ERROR является ошибкой.
+ SCC_MSG_ERROR сообщение является ошибкой.
 
- Сообщение SCC_MSG_STATUS предназначен для строки состояния.
+ SCC_MSG_STATUS сообщение предназначено для панели статуса.
 
- Нет SCC_MSG_DOCANCEL текст; Возвращает IDE `SCC_MSG_RTN_OK` или `SCC_MSG_RTN_CANCEL`.
+ SCC_MSG_DOCANCEL Нет текста; IDE `SCC_MSG_RTN_OK` возвращается или `SCC_MSG_RTN_CANCEL`.
 
- Цикл начинается SCC_MSG_STARTCANCEL a "Отмена".
+ SCC_MSG_STARTCANCEL запускает цикл отмены.
 
- SCC_MSG_STOPCANCEL останавливающее цикл "Отмена".
+ SCC_MSG_STOPCANCEL останавливает цикл отмены.
 
 ## <a name="see-also"></a>См. также
-- [Подключаемых модулей системы управления версиями](../extensibility/source-control-plug-ins.md)
+- [Плагины управления исходным элементом](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

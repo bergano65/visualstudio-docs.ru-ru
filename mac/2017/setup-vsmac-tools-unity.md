@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988854"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306695"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Настройка инструментов Visual Studio для Mac для Unity
 
@@ -38,7 +38,7 @@ ms.locfileid: "62988854"
 
 * [Обновление Visual Studio для Mac](update.md)
 
-### <a name="manual-installation"></a>Установка вручную
+### <a name="manual-installation"></a>Ручная установка
 
 Если у вас уже есть Unity 5.6.1 или более поздней версии, но нет Visual Studio для Mac, можно установить Visual Studio для Mac вручную. Все выпуски Visual Studio для Mac включают инструменты Visual Studio для Mac для Unity, включая бесплатный выпуск Community:
 
@@ -77,7 +77,7 @@ ms.locfileid: "62988854"
 
    ![Выберите Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-4. Если вы нажали кнопку**Обзор...**, перейдите в каталог приложений, выберите Visual Studio и нажмите кнопку **Открыть**.
+4. Если вы нажали кнопку**Обзор...** , перейдите в каталог приложений, выберите Visual Studio и нажмите кнопку **Открыть**.
 
    ![Выберите "Открыть"](media/setup-vsmac-tools-unity-image6.png)
 

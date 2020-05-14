@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777794"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
@@ -22,11 +22,11 @@ ms.locfileid: "74777794"
 ## <a name="report-commands"></a>Команды отчета
  Используйте одну из приведенных ниже команд, чтобы создать отчет для заданного файла профилирования данных.
 
- **VSPerfReport** `VSPFile` **/Summary:All** создает все отчеты, доступные для файла с расширением *VSP* или *VSPS*.
+ **VSPerfReport** `VSPFile` **/Summary:All** Создает все отчеты, доступные для файла с расширением *VSP* или *VSPS*.
 
- **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] Создает заданные типы отчетов.
+ **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] Создает заданные типы отчетов.
 
- **VSPerfReport** `VSPFile` **/CallTrace** создает отчет, в котором перечисляются все события сбора данных. Только для метода инструментирования.
+ **VSPerfReport** `VSPFile` **/CallTrace** Создает отчет, в котором перечисляются все события сбора данных. Только для метода инструментирования.
 
 ## <a name="summary-report-type-parameters"></a>Параметры типа сводного отчета
  В представленной ниже таблице приводится описание отчетов, которые создаются для заданного параметра типа отчета. Столбцы отчета зависят от метода профилирования, который использовался для сбора данных.

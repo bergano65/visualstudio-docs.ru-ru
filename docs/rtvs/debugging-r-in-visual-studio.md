@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189258"
 ---
 # <a name="debug-r-in-visual-studio"></a>Отладка R в Visual Studio
@@ -53,7 +53,7 @@ add <- function(x, y) {
 
 Обозреватель среды поддерживает ряд специальных команд.
 
-| Команда | ОПИСАНИЕ |
+| Get-Help | Description |
 | --- | --- |
 | n | Далее: выполняется следующий оператор в файле кода (то же, что и шаг с обходом). |
 | s | Шаг с заходом: выполняются следующий оператор в файле кода и заход в область функции, если следующий оператор является вызовом функции. |

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773972"
 ---
 # <a name="marks-view"></a>Представление меток
@@ -40,7 +40,7 @@ ms.locfileid: "74773972"
 
  Данные счетчика производительности Windows. При сборе данных счетчика производительности Windows значения отображаются в столбце с именем счетчика.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Обзор отчета о производительности](../profiling/performance-report-overview.md)
 - [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
 - [[NIB] Окно управления сбором данных](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

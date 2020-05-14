@@ -1,5 +1,5 @@
 ---
-title: Функция Сккжетусероптион | Документация Майкрософт
+title: Функция SccGetUserOption (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721442"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700685"
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
-Эта функция получает разнообразные параметры, относящиеся к пользователю.
+Эта функция извлекает различные пользовательские параметры.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,33 +33,33 @@ SCCRTN SccGetUserOption(
 ```
 
 #### <a name="parameters"></a>Параметры
- пконтекст
+ pContext
 
-окне Указатель контекста для подключаемого модуля системы управления версиями.
+(в) Указатель контекста управления исходным элементом.
 
- ноптион
+ nOption
 
-окне Параметр для извлечения (см. раздел Примечания для возможных параметров).
+(в) Вариант получения (см. Замечания для возможных вариантов).
 
- лпвал
+ lpVal
 
-заполняет Значение, связанное с параметром.
+(ваут) Значение, связанное с опционом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Реализация подключаемого модуля системы управления версиями для этой функции должна возвращать одно из следующих значений:
+ Ожидается, что внедрение этой функции элемента управления исходным элементом вернет одно из следующих значений:
 
-|значения|Описание|
+|Значение|Описание|
 |-----------|-----------------|
-|SCC_OK|Параметр успешно получен.|
-|SCC_E_OPNOTSUPPORTED|Параметр не поддерживается.|
+|SCC_OK|Опция была успешно извлечена.|
+|SCC_E_OPNOTSUPPORTED|Вариант не поддерживается.|
 |SCC_E_NONSPECIFICERROR|Произошла неизвестная ошибка.|
 
-## <a name="remarks"></a>Заметки
- Эта команда поддерживает следующие параметры:
+## <a name="remarks"></a>Примечания
+ Эта команда поддерживает следующие варианты:
 
-|Параметр пользователя|Описание|
+|Пользовательский вариант|Описание|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователь хочет извлечь локальные файлы) или `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь проверить локальную версию файлов. `lpVal`назначается `SCC_USEROPT_COLV_YES` (пользователь хочет проверить локальные `SCC_USEROPT_COLV_NO`файлы) или .|
 
 ## <a name="see-also"></a>См. также
 - [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)

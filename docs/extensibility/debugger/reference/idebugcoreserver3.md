@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3 | Документация Майкрософт
+title: IDebugCoreServer3 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9a8e6e16aa9279bb7324f5d08f0da3035f2b85
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343998"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732810"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
-Этот интерфейс предоставляет доступ к информации о сервере, в которой выполняется процесс.
+Этот интерфейс предоставляет доступ к информации о сервере, в который работает процесс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,33 +28,33 @@ ms.locfileid: "66343998"
 IDebugCoreServer3 : IDebugCoreServer2
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
  Visual Studio реализует этот интерфейс.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) интерфейс. Вызов [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) также может возвращать этот интерфейс. Этот интерфейс используется чаще всего поставщика пользовательского порта для запуска программ на сервере (локальных или удаленных).
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Используйте [queryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из интерфейса [IDebugCoreServer2.](../../../extensibility/debugger/reference/idebugcoreserver2.md) Звонок [в GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) также может вернуть этот интерфейс. Этот интерфейс чаще всего используется поставщиком портов для запуска программ на сервере (локальном или удаленном).
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) интерфейс, этот интерфейс реализует следующие методы:
+ В дополнение к методам на интерфейсе [IDebugCoreServer2,](../../../extensibility/debugger/reference/idebugcoreserver2.md) этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Извлекает имя сервера.|
-|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Извлекает понятная версия имени сервера|
-|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Сообщает о конкретных отладчиков, чтобы автоматически подключиться к процессам, при запуске этих процессов.|
-|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Возвращает конкретный код ошибки, если автоматическое присоединение завершается с ошибкой.|
-|[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Создает экземпляр модуля отладки на сервере.|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Получает флаг, указывающий, является ли сервер на том же компьютере, что и вызывающий объект.|
-|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Получает значение, указывающее протокол, используемый для связи с сервером.|
-|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Отключает все автоприсоединение параметры для всех обработчиков отладки, этот сервер знает.|
+|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Получение дружественной версии имени сервера|
+|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Сообщает, что конкретные двигатели отладки автоматически прикрепляются к процессам при запуске этих процессов.|
+|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Извлекает определенный код ошибки при сбоях автоматического крепления.|
+|[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Создает экземпляр отладки двигателя на сервере.|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Извлекает флаг, указывающий, находится ли сервер на той же машине, что и абонент.|
+|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Извлекает значение, указывающее на протокол, используемый для связи с сервером.|
+|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Отклоняет все настройки автоматического присоединения для всех отладок двигателей, о чем знает этот сервер.|
 
 ## <a name="remarks"></a>Примечания
- Получает поставщика пользовательского порта [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) интерфейса во время вызова [событий](../../../extensibility/debugger/reference/idebugportevents2-event.md). `IDebugCoreServer3` Интерфейса можно получить из этого интерфейса.
+ Поставщик пользовательских портов получает интерфейс [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) по вызову [на event.](../../../extensibility/debugger/reference/idebugportevents2-event.md) Интерфейс `IDebugCoreServer3` можно получить из этого интерфейса.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Безопасность
+title: безопасность
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595453"
 ---
-# <a name="secure-applications"></a>Обеспечение безопасности приложений
+# <a name="secure-applications"></a>Защита приложений
 
 Вопросы безопасности должны рассматриваться на всех этапах разработки приложения — от проектирования до развертывания. Начните работу с запуска Visual Studio в наиболее безопасном режиме. См. раздел [Разрешения пользователей](../ide/user-permissions-and-visual-studio.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "75595453"
 - Бесплатное решение [Dotfuscator](dotfuscator/index.md) служит для защиты сборок .NET от реконструирования и несанкционированного использования, такого как несанкционированная отладка.
 - [Подписывание с использованием строгих имен](managing-assembly-and-manifest-signing.md) можно применять для уникальной идентификации программных компонентов и предотвращения спуфинга имен.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Безопасность в .NET](/dotnet/standard/security/index)
 - [Безопасность в Azure](/azure/security/)

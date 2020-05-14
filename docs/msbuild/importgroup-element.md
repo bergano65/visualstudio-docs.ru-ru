@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826592"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633737"
 ---
 # <a name="importgroup-element"></a>Элемент ImportGroup
+
   
 Содержит коллекцию элементов `Import`, сгруппированных по необязательному условию. Дополнительные сведения см. в разделе [Элемент Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
@@ -42,6 +43,7 @@ ms.locfileid: "76826592"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -60,9 +62,10 @@ ms.locfileid: "76826592"
 
 | Элемент | Описание |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта MSBuild. |
 
 ## <a name="example"></a>Пример
+
  Следующий пример кода демонстрирует элемент `ImportGroup`.
 
 ```xml

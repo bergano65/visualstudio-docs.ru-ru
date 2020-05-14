@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594166"
 ---
 # <a name="c-code-snippets"></a>Фрагменты кода C#
@@ -31,48 +31,48 @@ ms.locfileid: "75594166"
 
 По умолчанию в Visual Studio для C# включены указанные ниже фрагменты кода.
 
-|Имя (или сокращенное имя)|Описание|Допустимые места для вставки фрагмента|
+|Имя (или сокращенное имя)|Description|Допустимые места для вставки фрагмента|
 | - |-----------------| - |
 |#if|Создает директивы [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) и [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|В любом месте.|
 |#region|Создает директивы [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) и [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|В любом месте.|
 |~|Создает [метод завершения](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (деструктор) для включающего класса.|Внутри класса.|
-|Атрибут|Создает объявление класса, производного от <xref:System.Attribute>.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
-|checked|Создает блок [checked](/dotnet/csharp/language-reference/keywords/checked).|Внутри метода, индексатора, метода доступа к свойству или событию.|
+|атрибут|Создает объявление класса, производного от <xref:System.Attribute>.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
+|включен|Создает блок [checked](/dotnet/csharp/language-reference/keywords/checked).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |class|Создает объявление класса.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |ctor|Создает конструктор для включающего класса.|Внутри класса.|
 |cw|Создает вызов <xref:System.Console.WriteLine%2A>.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |do|Создает цикл [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |else|Создает [else](/dotnet/csharp/language-reference/keywords/if-else) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |enum|Создает объявление типа [enum](/dotnet/csharp/language-reference/keywords/enum).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
-|equals|Создает объявление метода, которое переопределяет метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|
+|equals (равно)|Создает объявление метода, которое переопределяет метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|
 |exception|Создает объявление класса, производного от исключения (по умолчанию <xref:System.Exception>).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |for|Создает цикл [for](/dotnet/csharp/language-reference/keywords/for).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |foreach|Создает цикл [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |forr|Создает цикл [for](/dotnet/csharp/language-reference/keywords/for), уменьшающий переменную цикла после каждой итерации.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |if|Создает блок [if](/dotnet/csharp/language-reference/keywords/if-else).|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|индексатор|Создает объявление индексатора.|Внутри класса или структуры.|
+|Индексатор|Создает объявление индексатора.|Внутри класса или структуры.|
 |интерфейс|Создает объявление [interface](/dotnet/csharp/language-reference/keywords/interface).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |invoke|Создает блок, который безопасно вызывает событие.|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |iterator|Создает итератор.|Внутри класса или структуры.|
 |iterindex|Создает именованную пару из итератора и индексатора с помощью вложенного класса.|Внутри класса или структуры.|
 |lock|Создает блок [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |mbox|Создает вызов <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Также может потребоваться добавить ссылку на библиотеку *System.Windows.Forms.dll*.|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|namespace|Создает объявление [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Внутри пространства имен (включая глобальное пространство имен).|
+|пространство имен|Создает объявление [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Внутри пространства имен (включая глобальное пространство имен).|
 |prop|Создает объявление [автоматически реализуемого свойства](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Внутри класса или структуры.|
 |propfull|Создает объявление свойства с методами доступа `get` и `set`.|Внутри класса или структуры.|
 |propg|Создает доступное только для чтения [автоматически реализуемое свойство](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) с закрытым методом доступа `set`.|Внутри класса или структуры.|
 |sim|Создает объявление метода [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) Main.|Внутри класса или структуры.|
-|структура|Создает объявление [struct](/dotnet/csharp/language-reference/keywords/struct).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
+|struct|Создает объявление [struct](/dotnet/csharp/language-reference/keywords/struct).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|
 |svm|Создает объявление метода [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/void) Main.|Внутри класса или структуры.|
-|switch|Создает блок [switch](/dotnet/csharp/language-reference/keywords/switch).|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|try|Создает блок [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|Внутри метода, индексатора, метода доступа к свойству или событию.|
+|Параметр|Создает блок [switch](/dotnet/csharp/language-reference/keywords/switch).|Внутри метода, индексатора, метода доступа к свойству или событию.|
+|попробуйте выполнить следующее|Создает блок [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |tryf|Создает блок [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|unchecked|Создает блок [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|Внутри метода, индексатора, метода доступа к свойству или событию.|
+|не включен|Создает блок [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 |unsafe|Создает блок [unsafe](/dotnet/csharp/language-reference/keywords/unsafe).|Внутри метода, индексатора, метода доступа к свойству или событию.|
-|использование|Создает директиву [using](/dotnet/csharp/language-reference/keywords/using-directive).|Внутри пространства имен (включая глобальное пространство имен).|
+|С помощью|Создает директиву [using](/dotnet/csharp/language-reference/keywords/using-directive).|Внутри пространства имен (включая глобальное пространство имен).|
 |while|Создает цикл [while](/dotnet/csharp/language-reference/keywords/while).|Внутри метода, индексатора, метода доступа к свойству или событию.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функции фрагмента кода](../ide/code-snippet-functions.md)
 - [Фрагменты кода](../ide/code-snippets.md)

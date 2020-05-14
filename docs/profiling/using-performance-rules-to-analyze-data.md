@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778067"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Использование правил производительности для анализа данных
@@ -22,7 +22,7 @@ ms.locfileid: "74778067"
 > [!NOTE]
 > Предупреждения о производительности профилировщика формируются с помощью динамического анализа выполнения программы и не зависят от предупреждений анализа кода. Анализ кода также может формировать предупреждения о производительности для управляемого кода на основе статического анализа исходного кода. Дополнительные сведения см. в разделах [Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md) и [Предупреждения о производительности](../code-quality/performance-warnings.md).
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Практическое руководство. Просмотр предупреждений о производительности](../profiling/how-to-view-performance-warnings.md)
 
  Представлена информация об открытии окна **Список ошибок** для просмотра предупреждений профилировщика о производительности.

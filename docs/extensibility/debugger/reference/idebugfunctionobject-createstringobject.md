@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Документация Майкрософт
+title: IDebugFunctionObject::CreateStringObject Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 620aef7474f7f669e22fcb44c7df2611dc50bafb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313614"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728514"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
-Создает объект string.
+Создает объект строки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>Параметры
 `pcstrString`\
-[in] Строковое значение для создаваемого строкового объекта.
+(в) Значение строки для объекта строки.
 
 `ppObject`\
-[out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.
+(ваут) Возвращает объект [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий вновь созданный объект строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Вызовите этот метод, чтобы создать объект, представляющий строку, которая является параметром функции, которая представлена [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.
+ Вызовите этот метод, чтобы создать объект, представляющий строку, которая является параметром для функции, представленной интерфейсом [IDebugFunction.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

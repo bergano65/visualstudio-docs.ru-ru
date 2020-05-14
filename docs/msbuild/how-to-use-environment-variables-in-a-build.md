@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633789"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Практическое руководство. Использование переменных среды в сборке
+
 При сборке проектов часто бывает необходимо задать параметры сборки, используя сведения не из файла проекта или файлов, входящих в проект. Эти сведения обычно хранятся в переменных среды.
 
 ## <a name="reference-environment-variables"></a>Ссылки на переменные среды
- Все переменные среды доступны файлу проекта [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) в виде свойств.
+
+ Все переменные среды доступны файлу проекта Microsoft Build Engine (MSBuild) в виде свойств.
 
 > [!NOTE]
 > Если файл проекта содержит явное определение свойства с тем же именем, что и у переменной среды, свойство в файле проекте переопределяет значение переменной среды.
@@ -46,6 +48,7 @@ ms.locfileid: "75574422"
     > Имена свойств не учитывают регистр, поэтому как `$(ToolsPath)`, так и `$(TOOLSPATH)` ссылаются на одно свойство или одну переменную среды.
 
 ## <a name="example"></a>Пример
+
  Следующий файл проекта использует переменные среды, чтобы указать расположение каталогов.
 
 ```xml
@@ -63,6 +66,7 @@ ms.locfileid: "75574422"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Свойства MSBuild](../msbuild/msbuild-properties.md)
 - [Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

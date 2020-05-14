@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Документация Майкрософт
+title: BP_STATE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350615"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737800"
 ---
-# <a name="bpstate"></a>BP_STATE
-Задает существование связанная точка останова, а также указывает, включена ли.
+# <a name="bp_state"></a>BP_STATE
+Определяет наличие свяжей точки разрыва, а также указывает, включена ли она.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,24 +48,24 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>Поля
 `BPS_NONE`\
-Указывает, что точка останова не существует.
+Уточняется, что точки разрыва не существует.
 
 `BPS_DELETED`\
-Указывает, что точка останова была удалена.
+Уточняется, что точка разрыва была удалена.
 
 `BPS_DISABLED`\
-Указывает, что точка останова отключен.
+Уточняется, что точка разрыва отключена.
 
 `BPS_ENABLED`\
-Указывает, что точка останова включена.
+Укажите, что точка разрыва включена.
 
 ## <a name="remarks"></a>Примечания
-Возвращаемые [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.
+Возвращается из метода [GetState.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
 
 ## <a name="requirements"></a>Требования
-Header: msdbg.h
+Заголовок: msdbg.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

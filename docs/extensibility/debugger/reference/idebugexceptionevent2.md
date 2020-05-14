@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2 | Документация Майкрософт
+title: IDebugExceptionEvent2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fd2a449c71b69c654cd19846990f7b722f706de
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbd53d56b21886e972b33c219367edd603cbf0d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325992"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729775"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
-Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM) при возникновении исключения в программу, выполняемую в данный момент.
+Движок отладки (DE) отправляет этот интерфейс менеджеру отладки сеанса (SDM) при вбрасывании исключения в выполняемую в настоящее время программу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,31 +28,31 @@ ms.locfileid: "66325992"
 IDebugExceptionEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE реализует этот интерфейс для отчетов, что произошло исключение в отлаживаемую программу. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE реализует этот интерфейс, чтобы сообщить, что в отладке программы произошло исключение. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует [QueryInterface](/cpp/atl/queryinterface) для `IDebugEvent2` доступа к интерфейсу.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- DE создает и отправляет этот объект события, чтобы сообщить об исключении. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ DE создает и отправляет объект этого события для сообщения об исключении. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) которая поставляется SDM при подключении к отладке программы.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugExceptionEvent2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Получает подробные сведения об исключении, которое возникает это событие.|
-|[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Возвращает понятное описание исключение инициировавший это событие.|
-|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Определяет, поддерживает ли модуль отладки (DE) можно передать это исключение для отлаживаемой при возобновлении выполнения программы.|
-|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Определяет исключение должно передаваться программу, отлаживаемую при возобновлении выполнения программы, или если исключение должно быть удалено.|
+|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Получает подробную информацию об исключении, которое произвело это событие.|
+|[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Получает читаемое человеком описание для брошенного исключения, которое произвело это событие.|
+|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Определяет, поддерживает ли отладка двигателя (DE) возможность передачи этого исключения в программу, которая отлажется при возобновлении выполнения.|
+|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Уточняется, следует ли передавать исключение программе, которая отлажается при возобновлении выполнения, или следует отказаться от этого исключения.|
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="remarks"></a>Примечания
- Перед отправкой события, DE проверяет, если это событие исключения обозначенный первичных или вторичных исключение предыдущим вызовом к [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Если он был определен как исключения первого шанса `IDebugExceptionEvent2` событие отправляется в SDM. В противном случае DE предоставляет приложению возможность обработки исключения. Обработчик исключений не предоставляется, если исключение обозначается как второй возможности захвата исключений, `IDebugExceptionEvent2` событие отправляется в SDM. В противном случае DE возобновляет выполнение программы, и операционная система или среда выполнения обрабатывает исключение.
+ Перед отправкой события DE проверяет, было ли это событие исключения назначено первым или вторым исключением по предыдущему вызову [SetException.](../../../extensibility/debugger/reference/idebugengine2-setexception.md) Если исключение было признано исключением первого `IDebugExceptionEvent2` шанса, событие отправляется в SDM. В противном случае DE дает приложению возможность справиться с исключением. Если обработчик исключений не предусмотрен, и если исключение было `IDebugExceptionEvent2` назначено в качестве исключения второго шанса, событие отправляется в SDM. В противном случае DE возобновляет выполнение программы, а операционная система или время выполнения обрабатывает исключение.
 
 ## <a name="see-also"></a>См. также
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)

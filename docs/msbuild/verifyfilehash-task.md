@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579524"
 ---
 # <a name="verifyfilehash-task"></a>Задача VerifyFileHash
@@ -30,14 +30,14 @@ ms.locfileid: "77579524"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
- В следующей таблице приводятся параметры задачи `VerifyFileHash` .
+ В следующей таблице приводятся параметры задачи `VerifyFileHash`.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
-|`File`|Обязательный параметр `String` .<br /><br />Файл, который требуется хэшировать и проверить.|
-|`Hash`|Обязательный параметр `String` .<br /><br />Ожидаемый хэш файла.|
+|`File`|Обязательный параметр `String`.<br /><br />Файл, который требуется хэшировать и проверить.|
+|`Hash`|Обязательный параметр `String`.<br /><br />Ожидаемый хэш файла.|
 |`Algorithm`|Необязательный параметр `String`.<br /><br />Алгоритм. Допустимые значения: `SHA256`, `SHA384`, `SHA512`. По умолчанию = `SHA256`.|
-|`HashEncoding`|Необязательный параметр `String`.<br /><br />Кодировка, используемая для созданных хэшей. По умолчанию — `hex`. Допустимые значения = `hex`, `base64`.|
+|`HashEncoding`|Необязательный параметр `String`.<br /><br />Кодировка, используемая для созданных хэшей. По умолчанию равен `hex`. Допустимые значения = `hex`, `base64`.|
 
 ## <a name="example"></a>Пример
 
@@ -85,7 +85,7 @@ ms.locfileid: "77579524"
   </Target>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

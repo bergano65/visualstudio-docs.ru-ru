@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888446"
 ---
 # <a name="work-with-sql-server-and-r"></a>Работа с SQL Server и R
@@ -45,7 +45,7 @@ RTVS поддерживает добавление SQL-запросов в пр�
 ![Окно с результатами выполнения SQL-запроса](media/sql-query-results.png)
 
 Редактор Transact-SQL поддерживает множество других функций, таких как просмотр плана выполнения запроса и отладчик запросов.
-Дополнительные сведения см. в разделе [Использование редактора Transact-SQL для редактирования и выполнения скриптов](https://msdn.microsoft.com/library/hh272706.aspx).
+Дополнительные сведения см. в статье [Использование редактора Transact-SQL для изменения и выполнения скриптов](https://msdn.microsoft.com/library/hh272706.aspx).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Работа с хранимыми процедурами SQL Server
 

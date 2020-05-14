@@ -9,10 +9,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585539"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения при модульном тестировании
@@ -31,7 +31,7 @@ ms.locfileid: "75585539"
 > [!NOTE]
 > Проекты .NET Standard не поддерживаются.
 
-## <a name="example-the-y2k-bug"></a>Пример. Ошибка 2000 года
+## <a name="example-the-y2k-bug"></a>Пример. Ошибка 2000 года
 
 Рассмотрим метод, который создает исключение 1 января 2000 г.
 
@@ -456,7 +456,7 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>параллелизм
+## <a name="concurrency"></a>Параллелизм
 
 Типы оболочек совместимости применяются ко всем потокам в домене приложения, и к ним не применяется сходство потоков. Это важный аспект, если вы планируете использовать средство выполнения тестов, поддерживающее параллельность. Тесты, включающие типы оболочек, невозможно запускать одновременно. Это свойство не применяется средой выполнения Fakes принудительно.
 
@@ -521,8 +521,8 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 Оболочки совместимости нельзя использовать для всех типов из библиотеки базовых классов .NET **mscorlib** и **System**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Видео (1 ч. 16 мин): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)
+- [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Видео (1 ч 16 мин): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

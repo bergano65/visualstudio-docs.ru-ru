@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Clone | Документация Майкрософт
+title: IEnumDebugCustomАтрибуты::Клон Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Clone
 ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9d23cffa6b0d6cd01005a5e8aac39515ab86d26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3c6cd55293bf34b0c2780dd76eaf8f4ee81bb69
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324391"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717256"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+Создает регистратор, содержащий то же состояние перечисления, что и текущий регистратор.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,10 +44,10 @@ int Clone(
 [out] Возвращает копию этого перечисления как отдельный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Копия перечисления имеет то же состояние, что исходный во время вызова этого метода. Тем не менее копии и исходного состояния отделены и могут изменяться по отдельности.
+ Копия перечисления имеет то же состояние, что и исходное состояние на момент вызова этого метода. Тем не менее, состояния копии и оригинала являются отдельными и могут быть изменены по отдельности.
 
 ## <a name="see-also"></a>См. также
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

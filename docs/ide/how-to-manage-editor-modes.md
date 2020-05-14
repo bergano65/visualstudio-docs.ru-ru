@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591038"
 ---
 # <a name="how-to-manage-editor-modes"></a>Практическое руководство. Управление режимами редактора
@@ -44,7 +44,7 @@ ms.locfileid: "75591038"
 
 - Нажмите клавиши **ALT**+**SHIFT**+**ВВОД**, чтобы перейти в режим **Во весь экран** или выйти из него.
 
-     — или —
+     -- или --
 
 - Введите команду `View.Fullscreen` в **командном окне**.
 
@@ -61,7 +61,7 @@ ms.locfileid: "75591038"
     > [!NOTE]
     > **Виртуальное пространство** включено в режиме **Выбор столбцов**. Когда режим **виртуального пространства** не включен, точка вставки курсора переходит с конца одной строки непосредственно на первый символ следующей строки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка макетов окон в Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

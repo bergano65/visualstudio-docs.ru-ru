@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren | Документация Майкрософт
+title: IDebugProperty2::EnumChildren Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::EnumChildren
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4aa7bbad1361053d86c59fabb58027c955856222
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343121"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721512"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-Получает список дочерних элементов свойства.
+Извлекает список дочерних детей отеля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,28 +53,28 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-[in] Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, указывающее, какие поля в перечисленных [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры должны быть заполнены.
+(в) Сочетание флагов [из DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, которое определяет, какие поля в перечисленных [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры должны быть заполнены.
 
 `dwRadix`\
-[in] Задает основание системы счисления для использования в любой числовой сведения о форматировании.
+(в) Определяет сятик, который будет использоваться при форматировании любой численной информации.
 
 `guidFilter`\
-[in] Идентификатор GUID фильтр, используемый с `dwAttribFilter` и `pszNameFilter` параметров для выбора, который `DEBUG_PROPERTY_INFO` дочерние элементы, которые необходимо перечислить. Например `guidFilterLocals` фильтры для локальных переменных.
+(в) GUID фильтра, используемого с `dwAttribFilter` `pszNameFilter` параметрами для выбора, какие `DEBUG_PROPERTY_INFO` дети должны быть перечислены. Например, `guidFilterLocals` фильтры для локальных переменных.
 
 `dwAttribFilter`\
-[in] Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, указывающее, какие типы объектов для перечисления, например `DBG_ATTRIB_METHOD` для всех методов, которые могут быть дочерние элементы этого свойства. Используется в сочетании с `guidFilter` и `pszNameFilter` параметров.
+(в) Комбинация флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, которая определяет, какой тип объектов `DBG_ATTRIB_METHOD` перечислить, например для всех методов, которые могут быть детьми этого свойства. Используется в `guidFilter` сочетании `pszNameFilter` с параметрами.
 
 `pszNameFilter`\
-[in] Имя фильтра, используемый с `guidFilter` и `dwAttribFilter` параметров для выбора, который `DEBUG_PROPERTY_INFO` дочерние элементы, которые необходимо перечислить. Например Установка этого параметра на «MyX» фильтры для всех дочерних элементов с именем «MyX.»
+(в) Название фильтра, используемого `guidFilter` `dwAttribFilter` с параметрами `DEBUG_PROPERTY_INFO` для выбора, какие дети должны быть перечислены. Например, установка этого параметра на фильтры "MyX" для всех детей с названием "MyX".
 
 `dwTimeout`\
-[in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+(в) Определяет максимальное время, в миллисекундах, чтобы ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
 
 `ppEnum`\
-[out] Возвращает [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, содержащий список дочерних свойств.
+(ваут) Возвращает объект [IEnumDebugPropertyInfo2,](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) содержащий список свойств ребенка.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

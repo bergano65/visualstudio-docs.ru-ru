@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InPlaceUpdateObject | Документация Майкрософт
+title: IPropertyProxyEeside:InPlaceUpdateObject Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ce2826aa0bd75638d6f5ee8086cbcce96517ce7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329425"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714892"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
-Обновляет данные объекта с данным объектом и возвращает новый объект данных, предоставляющий новые данные объекта.
+Обновляет данные объекта с данным объектом данных и возвращает новый объект данных, представляющий новые данные объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,20 +43,20 @@ int InPlaceUpdateObject(
 
 ## <a name="parameters"></a>Параметры
 `dataIn`\
-[in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий новые данные.
+(в) Объект [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) содержащий новые данные.
 
 `dataOut`\
-[out] Возвращает новый `IEEDataStorage` объект, содержащий замененными данными.
+(ваут) Возвращает новый `IEEDataStorage` объект, содержащий заменяемые данные.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Фактически, этот метод обновляет данные объекта. Данные в возвращаемом [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект не должен быть таким же, как данные во входящем `IEEDataStorage` объект, но возвращаемый объект должен отражать текущее значение свойства.
+ Этот метод фактически обновляет данные объекта. Данные в возвращенном объекте [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) не должны быть такими `IEEDataStorage` же, как данные в входящий объект, но возвращенный объект должен отражать текущее значение объекта.
 
- Входящий объект данных обычно не реализуют EE. Тем не менее, объект, возвращаемый этим методом всегда реализуется EE, которая позволяет реализовать EE `IEEDataStorage` интерфейс требуется любой класс.
+ Входящие объекты данных, как правило, не реализуются EE. Тем не менее, объект, возвращенный этим методом, всегда реализуется `IEEDataStorage` EE, что позволяет EE реализовать интерфейс на любом классе, который пожелает.
 
- [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) метод создает объект данных, на основе входящего объекта данных, но не влияет на свойства исходных данных.
+ Метод [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) создает объект данных на основе входящего объекта данных, но не влияет на исходные данные объекта.
 
 ## <a name="see-also"></a>См. также
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

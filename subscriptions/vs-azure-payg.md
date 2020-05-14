@@ -1,17 +1,18 @@
 ---
 title: Преимущество Azure PAYG
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Сведения о настройке учетной записи Azure с оплатой по мере использования.
-ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816403"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444858"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Использование подписок Azure для разработки и тестирования с оплатой по мере использования
 Работайте вместе с участниками команды в облаке.  Создайте несколько подписок для разработки и тестирования с оплатой по мере использования для совместной работы с другими подписчиками с одновременной поддержкой изоляции между командами и средами.  Вы получите специальные скидки на почасовые тарифы на использование средств разработки и тестирования в рамках ПО подписки Azure.
@@ -42,6 +43,12 @@ ms.locfileid: "72816403"
 2. В списке слева выберите **Управление затратами и выставление счетов**.
 3. В поле **Мои подписки** отобразится соответствующий список. Выберите нужную подписку.
 4. Теперь вы можете управлять подпиской, отменить или переименовать ее, а также изменить каталог или передать права собственности на выставление счетов.
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Многие подписки включают дополнительные преимущества, связанные с Azure, такие как Azure DevOps и индивидуальный кредит Azure DevTest.  См. о преимуществах в описании программы предоставляющей

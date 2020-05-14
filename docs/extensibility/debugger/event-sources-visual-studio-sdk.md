@@ -1,27 +1,27 @@
 ---
-title: Источники событий (пакет SDK для Visual Studio) | Документация Майкрософт
+title: Источники событий (Визуальная студия SDK) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315310"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738781"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Источники событий (Visual Studio SDK)
-Существует два источника событий: модуль отладки (DE) и сеанс отладки Manager (SDM). События, отправляемые с Развернутой имеют механизм отличное от NULL, а события, отправляемые с SDM ядра NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Источники событий (Визуальная студия SDK)
+Есть два источника событий: движок отладки (DE) и диспетчер сессии отладки (SDM). События, отправленные из DE, имеют двигатель, не являйватый NULL, в то время как события, отправленные из SDM, имеют null-движок.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как отправить **IDebugProgramCreateEvent2** из DE для SDM.
+В следующем примере показано, как отправить **IDebugProgramCreateEvent2** из DE в SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

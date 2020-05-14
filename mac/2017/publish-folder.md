@@ -9,17 +9,17 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.openlocfilehash: 02175180e5217a14a4464e46c75d519adab2a332
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714508"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Публикация веб-приложения в папку с помощью Visual Studio для Mac
 
 Вы можете использовать средство публикации для публикации приложений ASP.NET Core в папку.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 - [Visual Studio 2017 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017), установленный с поддержкой ASP.NET Core.
 - Проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](/visualstudio/mac/create-new-projects?view=vsmac-2017).

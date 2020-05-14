@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument | Документация Майкрософт
+title: IDebugDisassemblyStream2::GetDocument Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a043d5462ad206395cb7d70d28152c19a7df6460
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf5d1a73e15ad38bf14d954718ce97c088b2e525
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310436"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732183"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
-Возвращает исходный документ, связанный с этой входной поток.
+Получает исходный документ, связанный с этим потоком ввода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Параметры
 `bstrDocumentUrl`\
-[in] URL-адрес документа.
+(в) URL документа.
 
 `ppDocument`\
-[out] Возвращает [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) объект, представляющий документ.
+(ваут) Возвращает объект [IDebugDocument2,](../../../extensibility/debugger/reference/idebugdocument2.md) представляющий документ.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод реализуется отладчики, которые имеют текстовые документы, которые не хранятся в файле фактическое.
+ Этот метод реализован путем отладки двигателей, которые имеют текстовые документы, которые не хранятся в фактическом файле.
 
 ## <a name="see-also"></a>См. также
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

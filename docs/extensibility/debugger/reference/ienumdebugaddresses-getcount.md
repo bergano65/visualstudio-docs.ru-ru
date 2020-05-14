@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::GetCount | Документация Майкрософт
+title: IEnumDebugАдреса::GetCount Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::GetCount method
 ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a718679441f93131bc545aa3062f2b9a68893f9e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4610613b6fef5e80ae0fd36c3548b4dfdcbc8591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347303"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717677"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
-Этот метод возвращает число элементов в перечислении.
+Этот метод возвращает количество элементов в перечислении.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Параметры
 `pcelt`\
-[out] Возвращает число элементов в перечислении.
+(ваут) Возвращает количество элементов в перечислении.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только Далее, клонирование, Skip и сброса должны быть реализованы.
+ Этот метод не является частью обычного интерфейса перечисления COM, который определяет, что должны быть реализованы только Next, Clone, Skip и Reset.
 
 ## <a name="see-also"></a>См. также
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

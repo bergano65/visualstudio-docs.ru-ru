@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591519"
 ---
 # <a name="open-file-command"></a>Команда Open File
@@ -35,13 +35,13 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Обязательный. Полный или частичный путь и имя для открываемого файла. Пути, содержащие пробелы, следует заключить в кавычки.
+Обязательный элемент. Полный или частичный путь и имя для открываемого файла. Пути, содержащие пробелы, следует заключить в кавычки.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 
 /e:`editorname`
 
-Необязательный элемент. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
+Необязательный параметр. Имя редактора, в котором будет открыт файл. Если аргумент указан, но имя редактора не предоставляется, отображается диалоговое окно **Открыть с помощью**.
 
 В синтаксической структуре аргумента /e:`editorname` имена редакторов используются в том виде, в каком они отображаются в диалоговом окне "Открыть с помощью", с заключением в кавычки.
 
@@ -51,7 +51,7 @@ File.OpenFile filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Когда вы вводите путь, функция автозавершения пытается определить правильный путь и правильное имя файла.
 
@@ -63,7 +63,7 @@ File.OpenFile filename [/e:editorname]
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

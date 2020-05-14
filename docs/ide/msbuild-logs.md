@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278806"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Устранение неполадок и создание журналов по проблемам MSBuild
@@ -44,7 +44,7 @@ ms.locfileid: "77278806"
 - элементы PropertyGroup и Import;
 - элементы ItemDefinitionGroups;
 - элементы ItemGroup;
-- Целевые объекты
+- Цели
 
 Следовательно, этапы выполняются в таком порядке:
 
@@ -106,7 +106,7 @@ ms.locfileid: "77278806"
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
     ```
 
-    or
+    или диспетчер конфигурации служб
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
@@ -124,7 +124,7 @@ ms.locfileid: "77278806"
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
-    or
+    или диспетчер конфигурации служб
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585565"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Использование платформы MSTest в модульных тестах
@@ -133,6 +133,6 @@ ms.locfileid: "75585565"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - Справочная документация по <xref:Microsoft.VisualStudio.TestTools.UnitTesting>.

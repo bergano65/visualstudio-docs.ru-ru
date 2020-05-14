@@ -1,7 +1,7 @@
 ---
 title: Создание сетевой установки
 description: Узнайте, как создать сетевую точку установки для развертывания Visual Studio на предприятии.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115371"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759729"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
@@ -237,8 +237,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 При установке на основе макета содержимое, которое устанавливается, извлекается из макета. Однако если выбрать компонент, которого нет в макете, он будет получен из Интернета.  Чтобы запретить программе установки Visual Studio скачивать содержимое, которое отсутствует в макете, используйте параметр `--noWeb`. Если используется параметр `--noWeb`, а в макете отсутствует выбранное для установки содержимое, программа установки завершается ошибкой.
 
+> [!TIP]
+> Чтобы выполнить установку из автономного источника на компьютере, не подключенном к Интернету, укажите параметры `--noWeb` и `--noUpdateInstaller`. Первый блокирует скачивание обновленных рабочих нагрузок, компонентов и т. д. Второй блокирует самообновление установщика с помощью обновлений из Интернета.
+
 > [!IMPORTANT]
-> Параметр `--noWeb` не отключает проверку наличия обновлений при установке Visual Studio. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).
+> Параметр `--noWeb` не отключает проверку наличия обновлений при установке Visual Studio на компьютере, подключенном к Интернету. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Коды ошибок
 
@@ -280,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 Если что-то во время автономной установки возникнет проблема, мы очень хотим узнать об этом. Передайте нам информацию с помощью средства [сообщения о проблеме](../ide/how-to-report-a-problem-with-visual-studio.md). Это средство позволяет отправлять нам данные телеметрии и журналы, которые помогут диагностировать и устранить возникшую проблему.
 
-Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
+Также доступен [**чат по вопросам установки**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
 У нас есть и другие возможности технической поддержки. Список можно найти на нашей странице [отзывов](../ide/feedback-options.md).
 
@@ -294,3 +297,4 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md)
 - [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
+- [Установка сертификатов, необходимых для установки Visual Studio в автономном режиме](install-certificates-for-visual-studio-offline.md)

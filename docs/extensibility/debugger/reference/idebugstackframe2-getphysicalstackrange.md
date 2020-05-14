@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Документация Майкрософт
+title: IDebugStackFrame2::GetPhysicalStackRange (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347710"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719667"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Получает представление зависит от компьютера диапазона физических адресов, связанных с кадром стека.
+Получает машино-зависимое представление диапазона физических адресов, связанных с кадром стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>Параметры
 `paddrMin`\
-[out] Возвращает наименьший физический адрес, связанный с данным кадром стека.
+(ваут) Возвращает наименьший физический адрес, связанный с этой кадром стека.
 
 `paddrMax`\
-[out] Возвращает наибольший физический адрес, связанный с данным кадром стека.
+(ваут) Возвращает наивысший физический адрес, связанный с этой кадром стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Сведения, возвращаемые этим методом используется диспетчер отладки сеансов (SDM) для сортировки кадров стека.
+ Информация, возвращенная этим методом, используется диспетчером отладки сеанса (SDM) для сортировки кадров стека.
 
- Предполагается, что стек вызовов растет вниз, то есть, что с более низким адресами памяти добавляются новые кадры стека. Архитектура среды выполнения необходимо указать физический стек диапазоны, которые соответствуют это предположение.
+ Предполагается, что стек вызовов растет вниз, т.е. новые кадры стека добавляются во все более низких адресах памяти. Архитектура времени выполнения должна предоставлять физические диапазоны стеков, которые соответствуют этому предположению.
 
 ## <a name="see-also"></a>См. также
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

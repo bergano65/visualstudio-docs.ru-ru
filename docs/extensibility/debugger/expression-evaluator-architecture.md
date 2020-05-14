@@ -1,5 +1,5 @@
 ---
-title: Архитектура вычислителя выражений | Документация Майкрософт
+title: Архитектура оценки экспрессии Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,51 +7,51 @@ helpviewer_keywords:
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c52e3d6b71b58668a05434e9ca8f65eb3e7832
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353768"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738694"
 ---
-# <a name="expression-evaluator-architecture"></a>Архитектура вычислителя выражений
+# <a name="expression-evaluator-architecture"></a>Архитектура оценки экспрессии
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
 
- Интеграция языка в Visual Studio, пакет отладки означает, что вы необходимо настроить интерфейсы вычислителя (EE) требуется выражение и вызывать общие поставщика символов с времени выполнения языка (SP) и интерфейсов связывателя. Объекты SP и связыватель, вместе с текущего адреса выполнения, являются контекст, в котором вычисляются выражения. Сведения, которые эти интерфейсы создания и использования представляет основные понятия в архитектуре EE.
+ Интеграция несвободного языка в пакет отладки Visual Studio означает, что необходимо настроить интерфейсы требуемого оценщика выражения (EE) и вызвать интерфейсы символов общего времени выполнения языка (SP) и интерфейсы связующего. Объекты SP и связующего, а также текущий адрес выполнения являются контекстом, в котором оцениваются выражения. Информация, которую эти интерфейсы производят и потребляют, представляет ключевые понятия в архитектуре EE.
 
 ## <a name="overview"></a>Обзор
 
-### <a name="parse-the-expression"></a>Синтаксический анализ выражения
- При отладке программы, выражения вычисляются по ряду причин, но всегда при отладке программы была остановлена в точке останова (точки останова при помещении пользователем или один из-за исключения). Это в данный момент, когда Visual Studio получает кадр стека, представленные как [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс, из обработчика отладки (DE). Visual Studio, затем вызывает [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс. Этот интерфейс представляет контекст, в котором выражения; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) представляет собой точку входа для ознакомления. Вплоть до этого момента все интерфейсы реализуются путем DE.
+### <a name="parse-the-expression"></a>Парс выражение
+ При отладке программы выражения оцениваются по ряду причин, но всегда, когда отладка программы была остановлена в точке разрыва (либо точка разрыва, размещенная пользователем, либо точка разрыва, вызванная исключением). Именно в этот момент Visual Studio получает стек кадра, представленного интерфейсом [IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) от отладки двигателя (DE). Visual Studio затем вызывает [GetExpressionContext,](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) чтобы получить интерфейс [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md) Этот интерфейс представляет собой контекст, в котором выражения могут быть оценены; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) является точкой входа в процесс оценки. До этого момента все интерфейсы реализуются DE.
 
- Когда `IDebugExpressionContext2::ParseText` является именем, создает DE EE, связанные с языком исходного файла, где произошла точка останова (DE также создает экземпляр SH на этом этапе). Представленный EE [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md) интерфейс. Затем вызывает DE [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) Чтобы преобразовать выражение (в текстовой форме) проанализированное выражение, готова для оценки. Этот проанализированное выражение представлено [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) интерфейс. Выражение обычно анализируется и не оценивается на этом этапе.
+ Когда `IDebugExpressionContext2::ParseText` вызов называется, DE мгновенно eE, связанный с языком исходного файла, где произошла точка разрыва (DE также мгновенно вызывает SH в этой точке). EE представлен интерфейсом [IDebugExpressionEvaluator.](../../extensibility/debugger/reference/idebugexpressionevaluator.md) DE затем вызывает [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для преобразования выражения (в текстовой форме) в разображеное выражение, готовое к оценке. Это разогнанные выражения представлены интерфейсом [IDebugParsedExpression.](../../extensibility/debugger/reference/idebugparsedexpression.md) Выражение обычно разбирается и не оценивается в этой точке.
 
- DE создает объект, реализующий [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс помещает `IDebugParsedExpression` в коллекцию `IDebugExpression2` объекта и возвращает `IDebugExpression2` объекта из `IDebugExpressionContext2::ParseText`.
+ DE создает объект, который реализует интерфейс [IDebugExpression2,](../../extensibility/debugger/reference/idebugexpression2.md) `IDebugParsedExpression` помещает `IDebugExpression2` объект в `IDebugExpression2` объект `IDebugExpressionContext2::ParseText`и возвращает объект из.
 
-### <a name="evaluate-the-expression"></a>Вычислить выражение
- Visual Studio вызывает метод [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для оценки проанализированное выражение. Оба метода вызова [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` вызывает метод немедленно, хотя `IDebugExpression2::EvaluateAsync` вызывает метод через фоновом потоке) для оценки проанализированное выражение и возврата [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, который представляет значение и тип результата разбираемого выражения. `IDebugParsedExpression::EvaluateSync` Использование предоставленного SH, адрес и привязки для преобразования проанализированное выражение в фактическое значение, представленное `IDebugProperty2` интерфейс.
+### <a name="evaluate-the-expression"></a>Оценка выражения
+ Visual Studio вызывает либо [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для оценки разогнанных выражений. Оба этих метода вызывают`IDebugExpression2::EvaluateSync` [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (вызывает `IDebugExpression2::EvaluateAsync` метод немедленно, в то время как вызывает метод через фоновый поток) для оценки разобранного выражения и возвращения интерфейса [IDebugProperty2,](../../extensibility/debugger/reference/idebugproperty2.md) который представляет значение и тип разобранного выражения. `IDebugParsedExpression::EvaluateSync`использует поставляемый SH, адрес и связующее значение для преобразования разображенные выражения в реальное значение, представленное интерфейсом. `IDebugProperty2`
 
-### <a name="for-example"></a>Пример
- После точки останова в работающей программе, пользователь выбирает просмотр переменной в **"Быстрая проверка"** диалоговое окно. Это диалоговое окно показывает имя переменной, его значение и тип. Как правило, пользователь может изменить значение.
+### <a name="for-example"></a>Например.
+ После того, как точка разрыва попала в запущенную программу, пользователь выбирает для просмотра переменной в диалоговом поле **quickWatch.** В этом диалоговом поле отображается имя переменной, ее значение и ее тип. Пользователь обычно может изменить значение.
 
- Когда **"Быстрая проверка"** показано диалоговое окно, имя переменной, проверяемого отправляется как текст, [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Эта команда возвращает [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объект, представляющий проанализированное выражение таким образом, переменная. [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) затем вызывается для создания `IDebugProperty2` объект, представляющий значение переменной и тип, а также его имя. Это это данные, которые будут отображаться.
+ При отображечном диалоговом поле **«Быстрый смотреть»** имя исследуемой переменной отправляется в виде текста [в ParseText.](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Это возвращает объект [IDebugExpression2,](../../extensibility/debugger/reference/idebugexpression2.md) представляющий разогнанный выражение, в данном случае переменную. [Затем EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) вызывается `IDebugProperty2` для создания объекта, представляющего значение и тип переменной, а также ее имя. Именно эта информация отображается.
 
- Если пользователь изменяет значение переменной [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) вызывается с новое значение, которое изменяет значение переменной в памяти, поэтому он будет использоваться, когда программа возобновляет работу под управлением.
+ Если пользователь изменяет значение переменной, [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) вызывается с новым значением, которое изменяет значение переменной в памяти, поэтому оно будет использоваться при возобновлении работы программы.
 
- См. в разделе ["Локальные" Отображение](../../extensibility/debugger/displaying-locals.md) Дополнительные сведения об этом процессе отображения значений переменных. См. в разделе [изменение значения локальной переменной](../../extensibility/debugger/changing-the-value-of-a-local.md) узнать больше о том, как изменяется значение переменной.
+ Более подробную информацию об этом процессе отображения значений переменных можно [просмотреть.](../../extensibility/debugger/displaying-locals.md) Подробнее об изменении значения переменной можно на [см.](../../extensibility/debugger/changing-the-value-of-a-local.md)
 
-## <a name="in-this-section"></a>Содержание раздела
- [Контекст оценки](../../extensibility/debugger/evaluation-context.md) предоставляет аргументы, передаваемые во время DE вызывает EE.
+## <a name="in-this-section"></a>В этом разделе
+ [Контекст оценки](../../extensibility/debugger/evaluation-context.md) Предоставляет аргументы, которые передаются, когда DE вызывает EE.
 
- [Основные интерфейсы вычислителя выражений](../../extensibility/debugger/key-expression-evaluator-interfaces.md) описывает важные интерфейсы, необходимые при написании EE, наряду с контекстом оценки.
+ [Интерфейсы оценщика ключевых выражений](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Описывает важнейшие интерфейсы, необходимые при написании EE, наряду с контекстом оценки.
 
 ## <a name="see-also"></a>См. также
-- [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)
-- [Изменение значения локальной переменной](../../extensibility/debugger/changing-the-value-of-a-local.md)
+- [Написание оценщика экспрессии CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Отображение местных жителей](../../extensibility/debugger/displaying-locals.md)
+- [Изменение ценности локального](../../extensibility/debugger/changing-the-value-of-a-local.md)

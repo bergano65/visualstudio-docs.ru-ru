@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias | Microsoft Docs
+title: IDebugBinder3::FindAlias Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8387a3302395d6e25c2b00dd360286e533531168
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344424"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735861"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Этот метод осуществляет поиск псевдоним, заданному имени. Таким образом, найти все псевдонимы в программе.
+Этот метод находит псевдоним, данный имя. Это будет искать все псевдонимы в программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int FindAlias(
 
 ## <a name="parameters"></a>Параметры
 `pcstrName`\
-[in] Имя псевдонима для поиска.
+(в) Имя псевдонима, чтобы найти.
 
 `ppAlias`\
-[out] Представленный псевдоним, найденный (если таковые имеются) [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) интерфейс.
+(ваут) Псевдоним найден (если таков) представлен интерфейсом [IDebugAlias.](../../../extensibility/debugger/reference/idebugalias.md)
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` (Если псевдоним не найден) или код ошибки.
+ В случае `S_OK`успеха, возвращается ; в противном случае, возвращает `S_FALSE` (если псевдоним не найден) или код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод инициализирует в целевой объект, значение null перед вызовом метода; Затем проверяется значение null, впоследствии определить, был ли найден псевдоним.
+ Этот метод инициализирует объект назначения, чтобы сматить перед вызовом; после этого оно испытывает для null значения потом для того чтобы обусловить был ли или не псевдоним был найден.
 
 ## <a name="see-also"></a>См. также
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetNumberOfElements | Документация Майкрософт
+title: IDebugArrayfield:GetNumberOfElements Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e8576c7f7365f8f87f8b31a90e414b75000026d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30318e1f17f93d1c9fc68bf5a4a9a0d4ae4cf353
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321741"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736316"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Возвращает количество элементов в массиве.
@@ -41,13 +41,13 @@ int GetNumberOfElements(
 
 ## <a name="parameters"></a>Параметры
 `pdwNumElements`\
-[out] Возвращает количество элементов в массиве.
+(ваут) Возвращает количество элементов в массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Возвращаемое значение общее число элементов в массиве, независимо от количества измерений.
+ Возвратное значение — это общее количество элементов в массиве, независимо от количества измерений.
 
 ## <a name="see-also"></a>См. также
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

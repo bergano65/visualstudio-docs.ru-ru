@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553049"
 ---
 # <a name="cores-view-zoom-tool"></a>Средство масштабирования представления "Ядра"
@@ -28,5 +28,5 @@ ms.locfileid: "62553049"
 
 - Увеличение и уменьшение: наведите указатель мыши на временную шкалу и, нажав и удерживая клавишу **CTRL**, перемещайте колесико мыши.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Представление "Ядра"](../profiling/cores-view.md)

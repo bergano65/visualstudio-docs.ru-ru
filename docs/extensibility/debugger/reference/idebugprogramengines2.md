@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2 | Документация Майкрософт
+title: IDebugProgramEngines2 Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b45cbe8cd1b68e1681b07fcdf1fc715973a11295
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325263"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722401"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
-Этот интерфейс используется узлами программы для указания всех возможных отладчики (DE), которые можно отлаживать этой программы.
+Этот интерфейс используется узлами программы для определения всех возможных отладок двигателей (DE), которые могут отладить эту программу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,27 +28,27 @@ ms.locfileid: "66325263"
 IDebugProgramEngines2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- DE или пользовательский порт поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки установки определенных DE для конкретной программы.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ DE или поставщик пользовательских портов реализует этот интерфейс на том же объекте, который реализует [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки создания конкретного DE для использования для конкретной программы.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugProgramNode2` интерфейс для получения этого интерфейса.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Вызов [queryInterface](/cpp/atl/queryinterface) `IDebugProgramNode2` на интерфейс, чтобы получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugProgramEngines2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Указывает все возможные DEs, выполнять отладку этой программы.|
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Выбирает DE, используемые для отладки этой программы.|
+|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Указывает все возможные DEs, которые могут отладить эту программу.|
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Выбирает DE для использования для отладки этой программы.|
 
 ## <a name="remarks"></a>Примечания
- После DE выбирается пользователем, этот выбор регистрируется с узлом программы путем вызова [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Выбранного ядра становится ядра, возвращенный [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
+ Как только DE выбран пользователем, этот выбор регистрируется в узлах программы, позвонив [в SetEngine.](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md) Выбранный двигатель становится двигателем, возвращенным [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

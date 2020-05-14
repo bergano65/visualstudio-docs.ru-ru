@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetLocale | Документация Майкрософт
+title: IDebugEngine2:SetLocale Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62330b3002486969af563413cf6f7893c9d7881d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8616dd827f99dfcfbc337cb5cdf5ac5a7d392e88
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322386"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730912"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-Задает языковой стандарт модуля отладки (DE).
+Устанавливает локал двигателя отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int SetLocale( 
 
 ## <a name="parameters"></a>Параметры
 `wLangID`\
-[in] Задает языковой стандарт. Например 1033 для английского языка.
+(в) Определяет язык локализовать. Например, 1033 для английского языка.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод вызывается диспетчером сеанса отладки (SDM) для распространения параметрам национальной настройки интегрированной среды разработки, таким образом, чтобы строки, возвращаемые DE должным образом локализованы.
+ Этот метод вызывается менеджером отладки сеанса (SDM) для распространения параметров локального IDE, чтобы строки, возвращенные DE, были должным образом локализованы.
 
 ## <a name="see-also"></a>См. также
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

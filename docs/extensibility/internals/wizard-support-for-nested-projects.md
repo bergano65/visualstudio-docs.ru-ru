@@ -1,5 +1,5 @@
 ---
-title: Поддержка мастера для вложенных проектов | Документация Майкрософт
+title: Поддержка Волшебника для вложенных проектов (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - nested projects, wizard support
 - New Project wizard
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e498f21499f4b07bf77bb79829fc6d92227f1f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721424"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703193"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Поддержка мастера для вложенных проектов
-В интегрированной среде разработки выполняются два мастера, которые может реализовать родительский проект для вложенных проектов: мастер **создания проекта** и мастер **добавления элемента** .
+IDE запускает два мастера, которые может реализовать родительский проект для вложенных проектов: мастер **нового проекта** и мастер **добавить элемент.**
 
- Если пользователь запускает мастер **создания проекта** , выбрав пункт **Добавить проект** и выбрав пункт **создать проект** в меню файл или выбрав **Добавить** и щелкнув правой кнопкой мыши **Новый проект** в Обозреватель решений, в интегрированной среде разработки выполняется **аддпрожект.** команда и реализация родительского проекта команды **аддпрожект** либо возвращают файл проекта шаблона, либо файл мастера (VSZ) с набором параметров контекста.
+ Если пользователь запускает мастер створ **нового проекта,** выбрав **Add Project** и нажав **New Project** в меню файла или выбрав **добавить** и нажав **на кнопку New Project** в Solution Explorer, IDE запускает команду **AddProject** и реализацию родительского проекта команды **AddProject** либо возвращает файл шаблона проекта, либо файл мастера (.vsz), который имеет набор параметров контекста.
 
- Аналогичным образом реализация мастеров **AddItem** в родительском проекте возвращает VSZ-файл с другим набором параметров контекста.
+ Аналогичным образом, реализация родительским проектом мастеров **AddItem** возвращает файл .vsz с другим набором параметров контекста.
 
- Дополнительные сведения о мастерах см. в разделе [Мастер (. VSZ) файл](../../extensibility/internals/wizard-dot-vsz-file.md), [Параметры контекста](../../extensibility/internals/context-parameters.md) и [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md).
+ Для получения дополнительной информации о мастерах, [см. Vsz) Файл](../../extensibility/internals/wizard-dot-vsz-file.md), [Параметры контекста](../../extensibility/internals/context-parameters.md) и [регистрации проекта и шаблонов элементов](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

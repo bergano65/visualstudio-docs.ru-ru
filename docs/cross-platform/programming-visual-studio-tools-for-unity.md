@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62818219"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Программирование с инструментами Visual Studio для Unity

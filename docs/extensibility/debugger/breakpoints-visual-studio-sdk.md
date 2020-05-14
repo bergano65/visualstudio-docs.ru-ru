@@ -1,52 +1,52 @@
 ---
-title: Точки останова (пакет SDK для Visual Studio) | Документация Майкрософт
+title: Точки разрыва (Визуальная студия SDK) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be901dcb4692fa556008199aeea250c9427b3167
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c9d61c82886f237e8c9f544a59d8fe167548277
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332531"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739191"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Точки останова (пакет SDK для Visual Studio)
-Существует три типа точек останова: ожидание "," граница "и" error.
+Существует три типа моментов разрыва: ожидающий, связанный и ошибочным.
 
- **В ожидании точки останова:**
+ **Отложенная точка разрыва:**
 
-- — Это абстракция, который содержит все сведения, необходимые для доступа к точке останова один или несколько контекстов кода в одну или несколько программ. Каждый раз, программа отлаживаемый код причины для загрузки, модуль отладки проверяет всех ожидающих точек останова, чтобы увидеть, если они могут быть привязаны.
+- Является абстракцией, содержащей всю информацию, необходимую для привязки точки разрыва к одному или несколько контекстам кода в одной или нескольких программах. Каждый раз, когда отладка программы приводит к загрузке кода, отладка двигателя проверяет все ожидающие точки разрыва, чтобы увидеть, если они могут быть связаны.
 
-   Ожидающая точка останова, сам никогда не привязывается к коду, но вместо собирает и говорят, что для хранения всех связанных точек останова, которые он создает.
+   Сама точка разрыва никогда не связывается с кодом, а скорее собирает и, как говорят, содержит все связанные точки разрыва, которые она генерирует.
 
-- Представленный [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.
+- Представлен интерфейсом [IDebugPendingBreakpoint2.](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
-  **Связанная точка останова:**
+  **Связанная точка разрыва:**
 
-- Связанные с абстракцию для точки останова или привязаны к контексту единый код. Каждая связанная точка останова формируется в ответ на точку останова. Ожидающая точка останова, однако, можно создавать более одного связанная точка останова.
+- Является абстракцией для точки разрыва, связанной с или связанной с одним контекстом кода. Каждая точка смывого генерируется в ответ на отложенную точку разрыва. Однако отложенная точка разрыва может генерировать несколько сытых точка разрыва.
 
-   При выгрузке кода связанная точка останова можно несвязанных и удалены.
+   При разгрузке кода связанная точка разрыва может быть отбрасна и отброшена.
 
-- Представленный [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.
+- Представлен интерфейсом [IDebugBoundBreakpoint2.](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
-  **Ошибка точки останова:**
+  **Точка ошибки:**
 
-- — Это абстракция для описания ошибки при попытке привязать ожидающая точка останова контекста кода. Точки останова ошибка описывает либо ошибку в расположении или самого выражения точка останова. Дополнительные сведения см. в разделе [привязка точки останова](../../extensibility/debugger/binding-breakpoints.md).
+- Является абстракцией для описания ошибки при попытке связать отложенную точку разрыва с контекстом кода. Точка ошибки описывает либо ошибку в местоположении, либо в самом выражении точки разрыва. Для получения дополнительной информации [см.](../../extensibility/debugger/binding-breakpoints.md)
 
-   Ошибка точки останова может быть ошибка или предупреждение.
+   Ошибка точки разрыва может быть ошибкой или предупреждением.
 
-- Представленный [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) интерфейс.
+- Представлен интерфейсом [IDebugErrorBreakpoint2.](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 
 ## <a name="see-also"></a>См. также
 - [Программы](../../extensibility/debugger/programs.md)
-- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)
+- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
 - [Контекст кода](../../extensibility/debugger/code-context.md)
 - [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

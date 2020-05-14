@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetENCUpdate | Документация Майкрософт
+title: IDebugПрограмма2:GetENCUpdate Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb92e7076c308663ddf9ec760d1f2276affd0c87
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320841"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722835"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Этот метод получает обновления изменить и продолжить "(ENC) для этой программы. Всегда возвращает пользовательского модуля отладки `E_NOTIMPL`.
+Этот метод получает обновление Edit and Continue (ENC) для этой программы. Пользовательский обработчик отладки всегда возвращает `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetENCUpdate(
 
 ## <a name="parameters"></a>Параметры
 `ppUpdate`\
-[out] Возвращает внутренний интерфейс, который может использоваться для обновления этой программы.
+(ваут) Возвращает внутренний интерфейс, который может быть использован для обновления этой программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 > [!NOTE]
-> Всегда должны возвращать пользовательского модуля отладки `E_NOTIMPL`.
+> Пользовательский отладка двигателя `E_NOTIMPL`всегда должны вернуться .
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

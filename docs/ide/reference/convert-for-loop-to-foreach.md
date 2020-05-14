@@ -1,20 +1,21 @@
 ---
 title: Рефакторинг кода для преобразования цикла for в оператор foreach
-ms.date: 05/10/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570249"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094602"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Рефакторинг кода для преобразования цикла for в оператор foreach и наоборот
 
@@ -27,6 +28,8 @@ ms.locfileid: "75570249"
 Область применения этого рефакторинга:
 
 - C#
+
+- Visual Basic
 
 > [!NOTE]
 > Рефакторинг с помощью быстрого действия **Преобразовать в foreach** доступен только для циклов [for](/dotnet/csharp/language-reference/keywords/for), которые содержат все три части: инициализатор, условие и итератор.
@@ -61,7 +64,7 @@ ms.locfileid: "75570249"
 
 ### <a name="why-convert"></a>Для чего это нужно
 
-Причины, из-за которых может потребоваться преобразование оператора [foreach](/dotnet/csharp/language-reference/keywords/for) в цикл [for](/dotnet/csharp/language-reference/keywords/foreach-in), включают в себя:
+Причины, из-за которых может потребоваться преобразование оператора [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) в цикл [for](/dotnet/csharp/language-reference/keywords/for), включают в себя:
 
 - Вы хотите использовать локальную переменную внутри цикла не только для доступа к элементу.
 
@@ -82,7 +85,7 @@ ms.locfileid: "75570249"
 > [!NOTE]
 > Код C#, созданный в процессе выполнения рефакторинга, использует явный тип или ключевое слово [var](/dotnet/csharp/language-reference/keywords/var) для этого типа элементов в коллекции. Тип в созданном коде (явный или неявный) зависит от параметров стиля кода, которые находятся в области. Эти конкретные параметры стиля кода задаются на уровне компьютера в разделе **Сервис** > **Параметры** > **Текстовый редактор** > **C#**  > **Стиль кода** > **Общие** >  **\'предпочтения "var"** или на уровне решения в файле [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Если вы измените эти параметры в меню **Параметры**, снова откройте файл кода, чтобы изменения вступили в силу.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
 - [Просмотр изменений](../../ide/preview-changes.md)

@@ -3,15 +3,16 @@ title: Управление большими рабочими группами �
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов по управлению подписками для больших рабочих групп, а также сторонних подрядчиков.
-ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850054"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232324"
 ---
 # <a name="large-teams-and-external-contractors"></a>Большие рабочие группы и внешние подрядчики
 Администраторы подписок на Visual Studio отвечают за наличие соответствующей подписки на Visual Studio у всех пользователей, которые взаимодействуют с программным обеспечением с лицензией Visual Studio.
@@ -33,7 +34,13 @@ ms.locfileid: "75850054"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об обязанностях администраторов:
 - [Обязанности администратора](admin-responsibilities.md)
 - [Инвентаризация подготовительной среды](admin-inventory.md)

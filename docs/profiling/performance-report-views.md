@@ -14,16 +14,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772292"
 ---
 # <a name="performance-report-views"></a>Представления отчетов о производительности
 Этот раздел содержит справочные сведения по отчетам и представлениям средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Представления файлов данных профилирования отображаются в интегрированной среде разработки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Отчеты создаются средством командной строки [VSPerfReport](../profiling/vsperfreport.md).
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Представления общих данных](../profiling/common-data-views.md)
 
  Справочные сведения, связанные с представлениями и отчетами по файлам данных профилирования, которые являются общими для всех методов профилирования.
@@ -52,5 +52,5 @@ ms.locfileid: "74772292"
 
  Справочные сведения по представлению и отчету взаимодействия файлов данных профилирования, которые включают данные взаимодействия уровней.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)

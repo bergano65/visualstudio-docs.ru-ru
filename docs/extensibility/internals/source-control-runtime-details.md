@@ -1,27 +1,27 @@
 ---
-title: Сведения о среде выполнения системы управления версиями | Документация Майкрософт
+title: Источник управления Runtime Подробная информация (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], runtime details
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d2469bc25fabd9659e09d6ca841ebc44a743cca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 92ce5e822ec7360b3b1a4010d250a4349443c142
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723405"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705040"
 ---
 # <a name="source-control-runtime-details"></a>Сведения о среде выполнения системы управления версиями
-Проект добавляется в систему управления версиями, когда пользователь добавляет файл в проект в систему управления версиями или через контроллер автоматизации, например мастер. Проект не указывает на себя, что он находится в системе управления версиями; Она поддерживает систему управления версиями, но ее необходимо добавить в нее вручную.
+Проект добавляется в элемент управления исходным элементом, когда пользователь добавляет файл в проекте в элемент управления исходным элементом или через контроллер автоматизации, например мастер. Проект не указывает для себя, что он находится под контролем источника; он поддерживает элемент управления исходным источником, но должен быть добавлен к нему вручную.
 
-## <a name="registering-with-a-source-control-package"></a>Регистрация в пакете системы управления версиями
- Когда файл проекта добавляется в систему управления версиями, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>, чтобы предоставить четыре непрозрачные строки, используемые в качестве файлов cookie системой управления версиями. Храните эти строки в файле проекта. Эти строки должны передаваться в заглушку системы управления версиями (компонент Visual Studio, Управляющий пакетами управления версиями) при запуске типа проекта путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. Это, в свою очередь, загружает соответствующий пакет системы управления версиями и перенаправляет вызов его реализации `IVsSccManager2::RegisterSccProject`.
+## <a name="registering-with-a-source-control-package"></a>Регистрация с пакетом управления исходным ресурсом
+ При добавлении файла в проекте в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> элемент управления исходным ресурсом среда требует предоставить вам четыре непрозрачные строки, которые используются в качестве файлов cookie системой управления исходным источником. Храните эти строки в файле проекта. Эти строки должны быть переданы в заглушку управления исходным элементом (компонент Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>управляющий пакетами управления исходным управлением) при запуске типа проекта, вызывая вызов. Это, в свою очередь, загружает соответствующий пакет `IVsSccManager2::RegisterSccProject`управления исходным источником и направляет вызов на его реализацию.
 
 ## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>

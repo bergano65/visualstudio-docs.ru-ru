@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569196"
 ---
 # <a name="go-to-line-dialog-box"></a>Переход на строку - диалоговое окно
@@ -30,7 +30,7 @@ ms.locfileid: "75569196"
 
 Поле **Номер строки (1–\<n>)** позволяет ввести номер строки активного документа, на которую нужно перейти. Этот номер должен находиться в диапазоне от 1 до последнего номера строки в текущем документе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поиск в коде с использованием команд перехода](../../ide/go-to.md)
 - [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)

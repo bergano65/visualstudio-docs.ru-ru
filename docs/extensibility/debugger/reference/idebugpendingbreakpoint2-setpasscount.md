@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount | Документация Майкрософт
+title: IDebugPendingBreakpoint2::SetPassCount (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5af01702c20b4841c5d737bef2c3be7f885cc31e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 732eadc955b9a6c9bdded3d52f038ff58ed9c217
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340567"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725676"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
-Задает или изменяет число pass, связанные с ожидающая точка останова.
+Устанавливает или изменяет количество пропусков, связанное с ожидавной точкой разрыва.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,13 +42,13 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Параметры
 `bpPassCount`\
-[in] Объект [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуры, который содержит счетчик pass.
+(в) Структура [BP_PASSCOUNT,](../../../extensibility/debugger/reference/bp-passcount.md) содержащая количество пропусков.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
 
 ## <a name="remarks"></a>Примечания
- Любой счетчик pass, который был ранее связан с ожидающая точка останова будет потеряно. Все точки останова, привязанный из этого ожидающих точек останова, называются присвоить их число pass `bpPassCount` параметра.
+ Все пропуска, которые ранее были связаны с ожидавной точкой разрыва, теряется. Все точки разрыва, связанные с этой ожидавной `bpPassCount` точкой разрыва, вызываются для установки количества пропусков в параметр.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

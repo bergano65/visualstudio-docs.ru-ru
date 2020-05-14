@@ -1,56 +1,56 @@
 ---
-title: Парные фигурные скобки в языковой службе прежних версий | Документация Майкрософт
+title: Соответствие скобки в устаревшей языковой службе (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a535fc479fe5cc398d09d7aa9e47a3c91fa97f38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309186"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709808"
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>Парные фигурные скобки в языковой службы прежних версий
-Парные фигурные скобки позволяет разработчику отслеживать языковые элементы, которые должны применяться вместе, таких как круглые и фигурные скобки. Когда разработчик вводит закрывающую фигурную скобку, выделяется открывающей фигурной скобки.
+# <a name="brace-matching-in-a-legacy-language-service"></a>Соответствие скобки в устаревшей языковой службе
+Соответствие скобки помогает разработчику отслеживать языковые элементы, которые должны происходить вместе, такие как скобки и фигурные скобки. Когда разработчик вводит закрывающий скобку, открывающийся скобка выделяется.
 
- Можно сопоставить два или три встречающиеся элементы (пары ") и триад. Триад — это набор из трех элементов, встречающиеся. Например, в C# `foreach` инструкции forms тройку: `foreach()`, `{`, и `}`. Все три элемента выделяются при вводе закрывающей фигурной скобки.
+ Вы можете сопоставить два или три сопутствующих элемента, называемые парами и тройками. Тройки представляют собой наборы из трех сопутствующих элементов. Например, в C `foreach` q, заявление `foreach()`формирует `{`тройной: , и `}`. Все три элемента выделены при набранной скобке закрытия.
 
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать парные фигурные скобки, см. в разделе [Пошаговое руководство: Отображение парных скобок](../../extensibility/walkthrough-displaying-matching-braces.md).
+ Устаревшие языковые службы реализуются как часть VSPackage, но новый способ реализации функций языкового сервиса заключается в использовании расширений MEF. Чтобы узнать больше о новом способе реализации соответствия [скобки, см.](../../extensibility/walkthrough-displaying-matching-braces.md)
 
 > [!NOTE]
-> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем вам начать использовать новый API редактора как можно скорее. Это повысит производительность вашего языкового сервиса и позволит вам воспользоваться новыми функциями редактора.
 
- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Класс поддерживает оба пары и позволяющая утроить с <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> и <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> методы.
+ Класс <xref:Microsoft.VisualStudio.Package.AuthoringSink> поддерживает как пары, так <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> и <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> тройки с помощью методов.
 
 ## <a name="implementation"></a>Реализация
- Служба языка необходимо определить все соответствующие элементы на языке, а затем найдите все совпадающие пары. Обычно это выполняется путем реализации <xref:Microsoft.VisualStudio.Package.IScanner> обнаружить соответствующий язык, а затем использовав <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод для сопоставления элементов.
+ Языковой службе необходимо определить все соответствующие элементы в языке, а затем найти все соответствующие пары. Обычно это достигается путем реализации <xref:Microsoft.VisualStudio.Package.IScanner> для обнаружения <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> совмещенных языков, а затем с помощью метода для соответствия элементам.
 
- <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод вызывает сканер для маркировки строке и возвращает токен, прямо перед курсором. Средство проверки указывает, что языковой пары элемент найден, задав значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> на текущий маркер. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> метод, который в свою очередь вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> метод со значением причина синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> найти соответствующий элемент языка. Если найден соответствующий элемент языка, выделяются оба элемента.
+ Метод <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> вызывает сканер, чтобы тотекенизировать линию и вернуть токен непосредственно перед каретом. Сканер указывает, что пара элемента языка была найдена <xref:Microsoft.VisualStudio.Package.TokenTriggers> путем установки значения триггера маркера на токе. Метод <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> вызывает <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> метод, который, <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.ParseReason> метод с значением причины для определения, чтобы найти соответствующий элемент языка. При обнаружении соответствующего языкового элемента оба элемента выделены.
 
- Полное описание как вводить фигурную скобку активирует Выделение скобок, см. в разделе *операция синтаксического анализа примера* приведенной выше статьи [средства синтаксического анализа службы языка для прежних версий и сканер](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+ Для полного описания того, как ввод скобки вызывает скобки выделения, *см. Пример разбора операции* раздел в статье Наследие [языковой сервис parser и сканера](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
-## <a name="enable-support-for-brace-matching"></a>Включить поддержку парные фигурные скобки
- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Можно задать атрибут **MatchBraces**, **MatchBracesAtCaret**, и **ShowMatchingBrace** записи реестра, устанавливает соответствующие свойства из <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтения языка также могут задаваться пользователем.
+## <a name="enable-support-for-brace-matching"></a>Включить поддержку для соответствия скобки
+ Атрибут <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> может установить **MatchBraces,** **MatchBracesAtCaret**и записи реестра **ShowMatchingBrace,** которые устанавливают соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства языковых предпочтений также могут быть установлены пользователем.
 
-|Запись реестра|Свойство|Описание|
+|Параметр реестра|Свойство|Описание|
 |--------------------|--------------|-----------------|
-|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Включает парные фигурные скобки.|
-|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Перемещает включает парные фигурные скобки, где находится курсор.|
+|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Позволяет соответствие скобки.|
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Позволяет скобки соответствия, как карет движется.|
 |ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Выделяет соответствующую скобку.|
 
-## <a name="match-conditional-statements"></a>Соответствует условные операторы
- Можно сопоставить условные операторы, такие как `if`, `else if`, и `else`, или `#if`, `#elif`, `#else`, `#endif`, в так же, как парные разделители. Вы можете подкласс <xref:Microsoft.VisualStudio.Package.AuthoringSink> класса и предоставить распространяется на метод, который можно добавить текст, а также разделителей внутренний массив соответствующих элементов.
+## <a name="match-conditional-statements"></a>Условные заявления матча
+ Вы можете сопоставить условные операторы, `#if` `#elif`такие `#else` `#endif`как, `if` `else if`и , или `else`, , , , , так же, как соответствующие делимитеры. Можно подклассифицировать <xref:Microsoft.VisualStudio.Package.AuthoringSink> класс и предоставить метод, который может добавить текстовые пролеты, а также делимитеры для внутреннего массива соответствующих элементов.
 
-## <a name="set-the-trigger"></a>Установите триггер
- Приведенный ниже показано, как обнаружить соответствующий круглые скобки, фигурные скобки и квадратные скобки и задание триггера для него в сканер. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод <xref:Microsoft.VisualStudio.Package.Source> класс определяет триггер и вызывает средство синтаксического анализа для поиска соответствующей пары (см. в разделе *поиск совпадения* этой статьи). Данный пример является только для иллюстративных целей. Предполагается, что сканер содержит метод `GetNextToken` идентификации и возвращает токены из строки текста.
+## <a name="set-the-trigger"></a>Установите спусковой крючок
+ Ниже приводится следующий пример, как обнаружить соответствующие скобки, фигурные скобки и квадратные скобки, и установка триггера для него в сканере. Метод <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> на <xref:Microsoft.VisualStudio.Package.Source> классе обнаруживает спусковой крючок и вызывает парсер, чтобы найти соответствующую пару (см. раздел *«Поиск соответствия»* в этой статье). Этот пример предназначен только для иллюстративных целей. Предполагается, что ваш сканер `GetNextToken` содержит метод, который идентифицирует и возвращает токены из строки текста.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -84,8 +84,8 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="match-the-braces"></a>Соответствует фигурные скобки
- Ниже приведен упрощенный пример для соответствующих элементов языка `{ }`, `( )`, и `[ ]`и добавления их диапазоны для <xref:Microsoft.VisualStudio.Package.AuthoringSink> объекта. Этот подход не является рекомендуемым для анализа исходного кода; Это только для иллюстративных целей.
+## <a name="match-the-braces"></a>Матч скобки
+ Вот упрощенный пример для сопоставления языковых `{ }`элементов , `( )`и , и, `[ ]`и добавление их диапазонов к объекту. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Этот подход не является рекомендуемым подходом к разбору исходного кода; это только для иллюстративных целей.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -136,5 +136,5 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="see-also"></a>См. также
-- [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)
-- [Средство синтаксического анализа устаревший языковой службы и средства проверки](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+- [Функции устаревшего языкового сервиса](../../extensibility/internals/legacy-language-service-features1.md)
+- [Устаревший языковой сервис-парсер и сканер](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

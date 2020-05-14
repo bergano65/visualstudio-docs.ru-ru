@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773743"
 ---
 # <a name="attach"></a>Attach
@@ -49,7 +49,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Параметры интервала
  В командной строке с параметром "Attach" можно задать один из указанных ниже параметров интервала выборки. Интервал выборки по умолчанию равен 10 000 000 циклам тактовой частоты процессора.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] задает числовое значение и тип интервала выборки.
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] задает числовое значение и тип интервала выборки.
 
 - **Timer** — осуществляет выборку через каждые `Cycles` циклов тактовой частоты процессора. Если параметр `Cycles` не задан, используется значение 10 000 000 циклов.
 

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сравнение файлов данных о производительности | Документация Майкрософт
+title: Практическое руководство. Сравнение файлов данных о производительности | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779003"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Практическое руководство. Сравнение файлов данных о производительности

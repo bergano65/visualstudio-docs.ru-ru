@@ -1,5 +1,5 @@
 ---
-title: Команды, меню и группы, определенные интегрированной средой разработки | Документация Майкрософт
+title: IDE-Определенные команды, меню и группы Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,46 +7,46 @@ helpviewer_keywords:
 - .vsct files, environment-defined constants
 - command groups, environment-defined
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6d3e180e2b3d5eb2e0f6c85b7488761e160c69
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727296"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707719"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Команды, меню и группы, определенные в интегрированной среде разработки
-Многие меню, команды и группы команд уже определены для использования интегрированной средой разработки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Эти команды также доступны для использования при расширении [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Многие меню, команды и группы команд уже [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] определены для использования IDE. Эти команды также доступны для использования [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]при расширении.
 
-## <a name="finding-environment-defined-commands"></a>Поиск команд, определяемых средой
- Команды среды определены в наборе из четырех vsct-файлов:
+## <a name="finding-environment-defined-commands"></a>Поиск экологически хотековых команд
+ Команды среды определяются в наборе из четырех файлов .vsct:
 
-- Шаредкмддеф. vsct
+- SharedCmdDef.vsct
 
-- Шаредкмдплаце. vsct
+- SharedCmdPlace.vsct
 
-- Шеллкмддеф. vsct
+- ShellCmdDef.vsct
 
-- Шеллкмдплаце. vsct
+- ShellCmdPlace.vsct
 
-  Эти файлы находятся в *пути установки \<Visual Studio SDK >* \висуалстудиоинтегратион\коммон\инк \\. Эти файлы содержат определения и идентификаторы GUID меню и групп, которые можно использовать в файле конфигурации командной таблицы (. vsct) пакета VSPackage в качестве контейнеров для собственных меню, групп и команд.
+  Эти файлы расположены в\\ * \<Visual Studio SDK путь установки>*«VisualStudioIntegration»Common.Inc . Эти файлы предоставляют определения и GUID меню и группы, которые можно использовать в конфигурации командной таблицы (.vsct) файлв вашего VSPackage в качестве контейнеров для ваших собственных меню, групп и команд.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
 - [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
- Предоставляет значения GUID и идентификатора меню в строке меню Visual Studio и содержащихся в них группах.
+ Дает значения GUID и ID меню в панели меню Visual Studio и групп, которые они содержат.
 
 - [Идентификаторы GUID и идентификаторы панелей инструментов Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 
- Предоставляет идентификатор GUID и значения идентификатора панелей инструментов в интегрированной среде разработки Visual Studio и содержащихся в них групп.
+ Дает значения GUID и ID инструментов в Visual Studio IDE, а также групп, которые они содержат.
 
 - [Идентификаторы GUID и идентификаторы команд Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 
- Предоставляет идентификаторы GUID и ИДЕНТИФИКАТОРы команд, определенных интегрированной средой разработки Visual Studio.
+ Дает значения GUID и ID команд, определенные Visual Studio IDE.
 
 ## <a name="see-also"></a>См. также
 - [Файлы таблицы команд Visual Studio (VSCT-файлы)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

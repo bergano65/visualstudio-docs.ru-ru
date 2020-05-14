@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70108028"
 ---
 # <a name="working-with-git"></a>Работа с Git
@@ -101,6 +101,6 @@ Git — это распределенная система управления
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Предоставьте общий доступ к своему коду в Visual Studio 2017 и Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017).

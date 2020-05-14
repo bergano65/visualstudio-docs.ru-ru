@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "63000461"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Начало работы с Инструментами R для Visual Studio
@@ -161,7 +161,7 @@ ms.locfileid: "63000461"
 
 Дополнительные сведения см. в разделах [Отладка](debugging-r-in-visual-studio.md) и [Обозреватель переменных](variable-explorer.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом пошаговом руководстве вы ознакомились с основами работы с проектами R с помощью интерактивного окна, редактирования кода и отладки в Visual Studio. Чтобы продолжить изучение возможностей, ознакомьтесь со следующими статьями, а также со статьями, указанными в содержании:
 

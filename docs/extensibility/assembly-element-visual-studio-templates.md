@@ -1,5 +1,5 @@
 ---
-title: Элемент ASSEMBLY (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент сборки (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13c52b7f913e35ace3e0fd41227e27b6c00e90e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352198"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740043"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Элемент ASSEMBLY (шаблоны Visual Studio)
-Указывает сведения о сборке, в шаблоне используется для добавления в проекты ссылки сборки.
+# <a name="assembly-element-visual-studio-templates"></a>Элемент сборки (шаблоны Visual Studio)
+Определяет информацию о сборке, которую шаблон использует для добавления ссылки этой сборки на проекты.
 
- \<VSTemplate > \<TemplateContent > \<ссылки > \<ссылку > \<сборки >
+ \<VSTemplate \<> TemplateContent \<> \<ссылки> ссылки> \<ассамблеи>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,23 +36,23 @@ ms.locfileid: "66352198"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствует.
+ Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.|
+|[Справочник](../extensibility/reference-element-visual-studio-templates.md)|Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Данный текст задает сборку, чтобы добавить в проект при создании экземпляра шаблона элемента. Имя сборки необходимо указать в одном из следующих способов:
+ В этом тексте указывается сборка для добавления в проект при мгновенном воспроизведении шаблона элемента. Это название сборки должно быть указано одним из следующих способов:
 
-- Как полное имя сборки. Пример:
+- Как полное название сборки. Пример:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "66352198"
     </Assembly>
     ```
 
-- Простой текст справки. Пример:
+- Как простая текстовая ссылка. Пример:
 
     ```
     <Assembly> System </Assembly>
@@ -69,10 +69,10 @@ ms.locfileid: "66352198"
 ## <a name="remarks"></a>Примечания
  `Assembly` — обязательный дочерний элемент элемента `Reference`.
 
- `Reference`, `References,` И `Assembly` элементы могут использоваться только в *.vstemplate* файлы, имеющие `Type` значение атрибута `Item`.
+ `Reference`Элементы `References,` `Assembly` и элементы могут использоваться только в `Type` файлах `Item` *.vstemplate,* которые имеют значение атрибута.
 
 ## <a name="example"></a>Пример
- В следующем примере показано `TemplateContent` элемент шаблона элемента. Этот XML-код добавляет ссылки на *System.dll* и *System.Data.dll* сборок.
+ Следующий пример иллюстрирует `TemplateContent` элемент шаблона элемента. Это XML добавляет ссылки на *System.dll* и *System.Data.dll* сборки.
 
 ```
 <TemplateContent>
@@ -93,5 +93,5 @@ ms.locfileid: "66352198"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

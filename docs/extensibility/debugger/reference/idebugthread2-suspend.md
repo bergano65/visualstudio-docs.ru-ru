@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Документация Майкрософт
+title: IDebugThread2::Приостановка Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320013"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718639"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Приостанавливает поток.
@@ -41,16 +41,16 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Параметры
 `pdwSuspendCount`\
-[out] Возвращает счетчик приостановок после операцию приостановки.
+(ваут) Возвращает количество подтяжки после операции приостановки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Каждый вызов этого метода увеличивает счетчик приостановок выше 0. Этот счетчик приостановок отображается в **потоков** окно отладки.
+ Каждый вызов к этому методу приращает количество приостановки выше 0. Это количество притяжок отображается в окне отладки **потоков.**
 
- Для каждого вызова этого метода, должно существовать последующему вызову [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) метод.
+ Для каждого вызова этого метода должен быть более поздний вызов метода [резюме.](../../../extensibility/debugger/reference/idebugthread2-resume.md)
 
 ## <a name="see-also"></a>См. также
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Продолжить](../../../extensibility/debugger/reference/idebugthread2-resume.md)

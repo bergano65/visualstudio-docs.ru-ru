@@ -1,26 +1,29 @@
 ---
 title: Разбиение и объединение операторов If
-ms.date: 06/12/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 405ccd4bc0197ce06aa14982a16dc02f6d13a537
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160740"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093664"
 ---
 # <a name="split-or-merge-if-statements"></a>Разбиение и объединение операторов If
 
 Область применения этого рефакторинга:
 
 - C#
+
+- Visual Basic
 
 **Что?** **Что?** Разбиение и объединение инструкций [if](/dotnet/csharp/language-reference/keywords/if-else).
 

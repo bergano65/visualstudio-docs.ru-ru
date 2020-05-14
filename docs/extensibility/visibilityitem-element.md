@@ -1,31 +1,31 @@
 ---
-title: Элемент VisibilityItem | Документация Майкрософт
+title: ВидимостьПункт Элемент (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c817b9a004872800b02f6a7c6d0f64fd324304b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310731"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698153"
 ---
 # <a name="visibilityitem-element"></a>Элемент VisibilityItem
-`VisibilityItem` Элемент определяет статические видимость команды и панели инструментов. Каждая запись определяет команду или меню, а также контекст пользовательского интерфейса связанная команда. Visual Studio обнаруживает команд, меню и панелей инструментов и их видимости без загрузки пакетов VSPackage, который их определения. Интегрированная среда разработки использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод, чтобы определить, активен ли контекст пользовательского интерфейса команды.
+Элемент `VisibilityItem` определяет статическую видимость команд и панелей инструментов. Каждая запись определяет команду или меню, а также связанный контекст uI- управления. Visual Studio обнаруживает команды, меню и панели инструментов, а также их видимость, не загружая VSPackages, которые определяют их. IDE использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> метод для определения активности контекста командного uI.
 
- После загрузки VSPackage, Visual Studio ожидает, что видимость команды будет определяться VSPackage, а не `VisibilityItem`. Чтобы определить видимость вашей команды, можно реализовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> обработчик событий или <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод, в зависимости от реализации вашей команды.
+ После загрузки VSPackage Visual Studio ожидает, что видимость команды будет `VisibilityItem`определяться VSPackage, а не . Чтобы определить видимость вашей команды, можно <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> реализовать обработчик событий или <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод, в зависимости от того, как вы реализовали команду.
 
- Команда или меню, которое содержит `VisibilityItem` элемент появляется, только когда связанный контекст является активным. Одной команды, меню или панели инструментов можно связать с одной или нескольких контекстов пользовательского интерфейса команды, включив запись для каждого сочетания контекст команды. Если при наличии нескольких контекстов пользовательского интерфейса команды связана команду или меню, затем команду или меню отображается при активном любого из контекстов пользовательского интерфейса связанная команда.
+ Команда или меню с `VisibilityItem` элементом отосвазались только при активной активности связанного контекста. Можно связать одну команду, меню или панель инструментов с одним или несколько контекстами командного uI, включив запись для каждой комбинации командно-контекстного. Если команда или меню связаны с несколькими контекстами командного uI, то команда или меню видны при активном иомы, связанном с ними.
 
- `VisibilityItem` Элемент применяется только к команд, меню и панелей инструментов, а не группам. Элемент, который не имеет связанный с ним `VisibilityItem` элемент является видимым, каждый раз, когда его родительском меню активен.
+ Элемент `VisibilityItem` применяется только к командам, меню и панели инструментов, а не к группам. Элемент, не имеюв `VisibilityItem` связанного элемента, отображается всякий раз, когда его родительское меню активируется.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,22 +43,22 @@ ms.locfileid: "66310731"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный. Идентификатор GUID идентификатор GUID и идентификатора команды.|
-|id|Обязательный. Идентификатор GUID и идентификатора идентификатор команды.|
-|контекст|Обязательный. Контекст пользовательского интерфейса, в котором отображается команда.|
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Обязательный элемент. GUID идентификатора команды GUID/ID.|
+|идентификатор|Обязательный элемент. Идентификатор идентификатора идентификатора команды GUID/ID.|
+|контекст|Обязательный элемент. Контекст uI, в котором отображается команда.|
+|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет
+ Отсутствуют
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Элемент определяет видимость статических групп, команд и панелей инструментов.|
+|[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Элемент `VisibilityConstraints` определяет статическую видимость групп команд и панели инструментов.|
 
 ## <a name="remarks"></a>Примечания
- Определенные стандартные контексты пользовательского интерфейса Visual Studio в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc\vsshlids.h также файл в качестве <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> и <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> классы. Более полный набор контекстов пользовательского интерфейса определен в <xref:Microsoft.VisualStudio.VSConstants> класса.
+ Стандартные контексты визуальной студии uI определяются в *пути установки Visual Studio SDK*(VisualStudioIntegration)-Common-Inc'vsshlids.h файла, а также в классах <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> и <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> классах. В <xref:Microsoft.VisualStudio.VSConstants> классе определяется более полный набор контекстов uI.
 
 ## <a name="example"></a>Пример
 
@@ -76,4 +76,4 @@ ms.locfileid: "66310731"
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>
 - [Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)
-- [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Командный стол Visual Studio (. Vsct) Файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPort | Документация Майкрософт
+title: IDebugPortSupplier2::GetPort Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPort
 ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b27c810ec6cb71cacb54e39ad97a95b53480232
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: be3f53c12b5562377cd79267d6e216a1435859a5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340151"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724663"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
-Возвращает порт из поставщика порта.
+Получает порт от поставщика порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,13 +43,13 @@ int GetPort( 
 
 ## <a name="parameters"></a>Параметры
 `guidPort`\
-[in] Глобальный уникальный идентификатор (GUID) порт.
+(в) Глобально уникальный идентификатор (GUID) порта.
 
 `ppPort`\
-[out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, который представляет порт.
+(ваут) Возвращает объект [IDebugPort2,](../../../extensibility/debugger/reference/idebugport2.md) представляющий порт.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_PORTSUPPLIER_NO_PORT` Если порт не существует по данному идентификатору.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает, `E_PORTSUPPLIER_NO_PORT` если нет порта с данном идентификатором.
 
 ## <a name="see-also"></a>См. также
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

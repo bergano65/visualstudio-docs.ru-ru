@@ -1,6 +1,6 @@
 ---
 title: Приступая к работе с модульным тестированием
-ms.date: 02/13/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279332"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153039"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -22,7 +22,7 @@ ms.locfileid: "77279332"
 
 ## <a name="create-unit-tests"></a>Создание модульных тестов
 
-В этом разделе в общих чертах описывается создание проекта модульного теста.
+В этом разделе описывается создание проекта модульного теста.
 
 1. Откройте проект, который хотите протестировать в Visual Studio.
 
@@ -72,7 +72,7 @@ ms.locfileid: "77279332"
 
 1. Добавьте код в метод модульных тестов.
 
-   Например, для тестового проекта MSTest или NUnit вы можете использовать следующий код.
+   Например, для проекта MSTest вы можете использовать приведенный ниже код.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,41 @@ ms.locfileid: "77279332"
    }
    ```
 
+   Для проекта NUnit вы можете использовать приведенный ниже код.
+
+   ```csharp
+   using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> Более подробные инструкции по созданию модульных тестов см. в статье [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Более подробные сведения о создании модульных тестов см. в статье [Создание и запуск модульных тестов для управляемого кода](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Запуск модульных тестов
 

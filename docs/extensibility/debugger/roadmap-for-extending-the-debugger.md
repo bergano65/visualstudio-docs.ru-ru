@@ -1,49 +1,49 @@
 ---
-title: Схема для расширения отладчика | Документация Майкрософт
+title: Дорожная карта для расширения Debugger (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89788f97937d05a3ca4858ed35fd854593ce3357
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315893"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713135"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Схема для расширения отладчика
-Эта документация содержит руководства и справочную информацию для расширения [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] отладчика с [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+# <a name="roadmap-for-extending-the-debugger"></a>Дорожная карта для расширения отладчика
+Эта документация содержит руководство и [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] справочную информацию [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]для расширения отладчика с .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладка документации включает примеры, является полным Справочником и несколько репрезентативных сценариев, демонстрирующие типичные способы настройки отладчика.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]отладка документации включает в себя образцы, всеобъемлющую ссылку и несколько репрезентативных сценариев, которые демонстрируют типичные способы настройки отладчика.
 
- Компилятор и результаты ее выполнения определить, что необходимо для настройки отладки в ваш продукт. Если компилятор:
+ Компилятор и его выход определяют, что необходимо для настройки отладки в продукте. Если ваш компилятор:
 
-- Предназначен для собственную операционную систему Windows и записывает *. PDB-ФАЙЛ* файл, можно отлаживать программы, с помощью обработчика отладки машинного кода (DE), интегрированной в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Не нужно реализовать средства DE или выражение для оценки. Средство оценки выражений записывается синтаксис языка программирования C++.
+- Цели на нативной операционной системы Windows и пишет *. PDB* файл, вы можете отладить программы с родной код отладки двигателя (DE), который интегрирован в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Вам не нужно реализовывать DE или оценщик амортизации. Оценщик выражения написан для синтаксиса языка программирования СЗ.
 
-- Создает выходной промежуточного языка MSIL, можно отлаживать программы, с помощью обработчика отладки управляемого кода DE, который также интегрируется в Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Таким образом требуется реализовать только вычислитель выражений. Средство оценки выражений образец предоставляется автоматически. Дополнительные сведения см. в следующих разделах:
+- Производит Microsoft промежуточный язык (MSIL) выход, вы можете отладить программы с управляемым кодом отладка двигателя DE, который также интегрирован в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Таким образом, необходимо только реализовать оценщика выражения. Для вас предусмотрен оценщик выражения образца. Дополнительные сведения см. в следующих разделах:
 
-   [Вычисление выражений](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
+   [Оценка экспрессии](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
    [Вычисление выражений](../../extensibility/debugger/evaluating-expressions.md)
 
-   [Контекст вычисления выражений](../../extensibility/debugger/expression-evaluation-context.md)
+   [Контекст оценки выражения](../../extensibility/debugger/expression-evaluation-context.md)
 
-   [Вычисление выражений в режиме приостановки выполнения](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+   [Оценка выражения в режиме перерыва](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
-   [Запись общих вычислителя выражений среды CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+   [Написать общий оценщик выражения времени выполнения языка](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Целевые объекты защищенные авторским правом, операционная система или другой среды выполнения, необходимо написать собственный DE. Учебник, создающий простые DE, с помощью ATL COM предоставляется. Дополнительные сведения см. в следующих разделах:
+- Цели собственной операционной системы или другой среды времени выполнения, вам нужно написать свой собственный DE. Предоставляется учебник, который создает простой DE с помощью ATL COM. Дополнительные сведения см. в следующих разделах:
 
-   [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+   [Создание пользовательского движка отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Учебник. Создание модуля отладки с помощью ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Учебник: Создайте отладку двигателя с помощью ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
    [Реализация поставщика порта](../../extensibility/debugger/implementing-a-port-supplier.md)
 

@@ -12,18 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574633"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072532"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
-Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets` или `InitialTargets` либо целевой объект не указан в командной строке с помощью параметра **-target**.
 
+Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль Microsoft Build Engine (MSBuild) выполняет сборку первой найденной цели, а также всех зависимостей, если файл проекта не содержит атрибут `DefaultTargets` или `InitialTargets` либо если целевой объект не указан в командной строке с помощью параметра **-target**.
 ## <a name="use-the-initialtargets-attribute"></a>Использование атрибута InitialTargets
- Атрибут `InitialTargets` элемента `Project` указывает целевой объект, который будет выполняться первым, даже если целевые объекты указаны в командной строке или в атрибуте `DefaultTargets`.
+
+Атрибут `InitialTargets` элемента `Project` указывает целевой объект, который будет выполняться первым, даже если целевые объекты указаны в командной строке или в атрибуте `DefaultTargets`.
 
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта
 
@@ -40,7 +41,8 @@ ms.locfileid: "75574633"
      `<Project InitialTargets="Clean;Compile">`
 
 ## <a name="use-the-defaulttargets-attribute"></a>Использование атрибута DefaultTargets
- Атрибут `DefaultTargets` элемента `Project` указывает, какой целевой объект или целевые объекты создаются, если целевой объект не задан явным образом в командной строке. Если целевые объекты указаны в обоих атрибутах `InitialTargets` и `DefaultTargets` и не указаны в командной строке, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет целевые объекты, указанные в атрибуте `InitialTargets`, а затем целевые объекты, указанные в атрибуте `DefaultTargets`.
+
+ Атрибут `DefaultTargets` элемента `Project` указывает, какой целевой объект или целевые объекты создаются, если целевой объект не задан явным образом в командной строке. Если целевые объекты указаны в обоих атрибутах `InitialTargets` и `DefaultTargets` и не указаны в командной строке, MSBuild выполняет целевые объекты, указанные в атрибуте `InitialTargets`, а затем целевые объекты, указанные в атрибуте `DefaultTargets`.
 
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию
 
@@ -57,6 +59,7 @@ ms.locfileid: "75574633"
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Использование параметра -target
+
  Если целевой объект по умолчанию не определен в файле проекта или вы не хотите использовать его, можно использовать параметр командной строки **-target**, чтобы указать другой целевой объект. Целевые объекты, заданные с помощью параметра **-target**, выполняются вместо целевых объектов, заданных в атрибуте `DefaultTargets`. Целевые объекты, заданные в атрибуте `InitialTargets`, всегда выполняются первыми.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь
@@ -72,6 +75,7 @@ ms.locfileid: "75574633"
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>См. также
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Целевые объекты](../msbuild/msbuild-targets.md)
 - [Практическое руководство. Очистка сборки](../msbuild/how-to-clean-a-build.md)

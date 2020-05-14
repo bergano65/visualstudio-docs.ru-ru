@@ -1,5 +1,5 @@
 ---
-title: Скрыт элемент (шаблоны Visual Studio) | Документация Майкрософт
+title: Скрытый элемент (Visual Studio шаблоны) Документы Майкрософт
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341043"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711110"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Элемент Hidden (шаблоны Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Скрытый элемент (шаблоны Visual Studio)
 
-Указывает ли шаблон появится в один новый проект или **Добавление нового элемента** диалоговым окнам.
+Уточняется, отображается ли шаблон в новых коробках диалога проекта или **добавлении нового элемента.**
 
 ```xml
 <VSTemplate>
@@ -43,11 +43,11 @@ ms.locfileid: "66341043"
 
 ### <a name="attributes"></a>Атрибуты
 
-Отсутствует.
+Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Отсутствует.
+Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -59,17 +59,17 @@ ms.locfileid: "66341043"
 
 Текстовое значение является обязательным.
 
-Этот текст должен быть либо `true` или `false`, указывающее, ли шаблон будет отображаться в **новый проект** или **Добавление нового элемента** диалоговым окнам.
+Текст должен быть `true` `false`либо, либо , указывая, будет ли шаблон отображаться в **новом проекте** или **добавить новый элемент** диалоговые коробки.
 
 ## <a name="remarks"></a>Примечания
 
-`Hidden` — это необязательный элемент.
+Параметр `Hidden` является необязательным элементом.
 
-Если указан, никакие другие дочерние элементы `TemplateData` элемента являются обязательными.
+Если указано, никаких `TemplateData` других элементов элемента ребенка не требуется.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано метаданные для C# шаблона.
+Следующий пример иллюстрирует метаданные для шаблона C'.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ ms.locfileid: "66341043"
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

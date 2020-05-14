@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592039"
 ---
 # <a name="find-references-in-your-code"></a>Поиск ссылок в коде
@@ -52,6 +52,6 @@ ms.locfileid: "75592039"
 
 ![Столбец типа в окне "Найти ссылки" ](../ide/media/vside_findallreferencesKind.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перемещение по коду](../ide/navigating-code.md)

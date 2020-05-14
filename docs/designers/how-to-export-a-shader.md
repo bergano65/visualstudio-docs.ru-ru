@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589439"
 ---
 # <a name="how-to-export-a-shader"></a>Практическое руководство. Экспорт шейдера
@@ -41,7 +41,7 @@ ms.locfileid: "75589439"
 
 4. В поле со списком **Имя файла** укажите имя для экспортируемого шейдера и нажмите кнопку **Сохранить**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Создание простейшего шейдера цвета](../designers/how-to-create-a-basic-color-shader.md)
 - [Конструктор шейдеров](../designers/shader-designer.md)

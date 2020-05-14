@@ -1,5 +1,5 @@
 ---
-title: Изменение внешнего вида команды | Документация Майкрософт
+title: Изменение внешнего вида командования (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,48 +7,48 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 653f516dda89f4895b8d19d77f7f49bf9c6aa45b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321103"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739860"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Изменение внешнего вида команды
-Пользователю можно предоставить отзыв, изменение внешнего вида команды. Например вы можете команду, чтобы выглядеть иначе, когда она недоступна. Можно сделать команды доступными или недоступными, скрыть или отобразить их, или проверить или снять их флажки в меню.
+Вы можете предоставить обратную связь пользователю, изменив внешний вид команды. Например, можно пожелать, чтобы команда выглядела по-другому, когда она недоступна. Вы можете сделать команды доступными или недоступными, скрыть или показать их, проверить или отменить их в меню.
 
-Чтобы изменить внешний вид команды, выполните одно из следующих действий.
+Чтобы изменить внешний вид команды, выполните одно из следующих действий:
 
-- Укажите соответствующие флаги в определении команды в файл таблицы команд.
+- Укажите соответствующие флаги в определении команды в файле таблицы команд.
 
-- Используйте <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> службы.
+- Воспользуйтесь услугой. <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>
 
-- Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и изменять объекты raw-команда.
+- Реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса и изменение необработанных командных объектов.
 
-  Ниже показано, как найти и обновить внешний вид команды с помощью Managed Package Framework (MPF).
+  Следующие шаги показывают, как найти и обновить внешний вид команды с помощью Рамочной системы управляемого пакета (MPF).
 
-### <a name="to-change-the-appearance-of-a-menu-command"></a>Для изменения внешнего вида команды меню
+### <a name="to-change-the-appearance-of-a-menu-command"></a>Изменить внешний вид команды меню
 
-1. Следуйте инструкциям в [изменить текст команды меню](../extensibility/changing-the-text-of-a-menu-command.md) для создания элемента меню с именем `New Text`.
+1. Следуйте инструкциям в [Изменить текст команды меню](../extensibility/changing-the-text-of-a-menu-command.md) для `New Text`создания элемента меню под названием .
 
-2. В *ChangeMenuText.cs* файл, добавьте следующий оператор using:
+2. В *ChangeMenuText.cs* файле добавьте следующее заявление с помощью:
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. В *ChangeMenuTextPackageGuids.cs* добавьте следующую строку:
+3. В *файле ChangeMenuTextPackageGuids.cs* добавьте следующую строку:
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. В *ChangeMenuText.cs* файл, замените код метода ShowMessageBox следующим:
+4. В *ChangeMenuText.cs* файле замените код в методе ShowMessageBox следующим:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -59,7 +59,7 @@ ms.locfileid: "66321103"
     }
     ```
 
-5. Получить команду, которая требуется обновить из <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> и задайте соответствующие свойства объекта команды. Например следующий метод делает указанной команды VSPackage набор команд доступна или недоступна. Следующий код делает меню под названием `New Text` недоступным после он был выполнен щелчок.
+5. Получите команду, которую требуется обновить с <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> объекта, а затем установите соответствующие свойства на объекте команды. Например, следующий метод делает указанную команду из набора команд VSPackage доступной или недоступной. Следующий код делает элемент `New Text` меню названным недоступным после нажатия.
 
     ```csharp
     public bool ChangeMyCommand(int cmdID, bool enableCmd)
@@ -78,14 +78,14 @@ ms.locfileid: "66321103"
     }
     ```
 
-6. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.
+6. Выполните сборку решения и запустите отладку. Экспериментальный экземпляр Visual Studio должен появиться.
 
-7. На **средства** меню, щелкните **вызова ChangeMenuText** команды. На этом этапе является имя команды **вызова ChangeMenuText**, поэтому не вызывает обработчик команд **ChangeMyCommand()** .
+7. В меню **«Инструменты»** щелкните команду **ChangeMenuText.** На данный момент имя команды **— вызов ChangeMenuText,** поэтому обработчик команды не вызывает **ChangeMyCommand()**.
 
-8. На **средства** меню, теперь вы увидите **новый текст**. Нажмите кнопку **новый текст**. Теперь нужно запретить команду.
+8. В меню **Tools** теперь вы должны увидеть **новый текст**. Нажмите **новый текст**. Теперь команда должна быть поседенной.
 
 ## <a name="see-also"></a>См. также
-- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
-- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Как VSPackages добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
-- [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Командный стол Visual Studio (. Vsct) Файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

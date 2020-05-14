@@ -329,8 +329,12 @@
                   href: ide/reference/generate-constructor.md
                 - name: Создание деконструктора
                   href: ide/reference/generate-deconstructor.md
+                - name: Добавить явное приведение
+                  href: ide/reference/add-explicit-cast.md
                 - name: Добавление параметра в метод
                   href: ide/reference/add-parameter.md
+                - name: Создание параметра
+                  href: ide/reference/generate-parameter.md
                 - name: Создание скрытого поля в конструкторе
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: Создание переопределения
@@ -350,12 +354,16 @@
                 - name: Обзор
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: Добавление проверки на null для всех параметров
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: Изменение сигнатуры метода
                   href: ide/reference/change-method-signature.md
                 - name: Преобразование анонимного типа в класс
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: Преобразование анонимного типа в кортеж
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: Преобразование между автосвойством и полным свойством
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: Преобразование между циклом for и оператором foreach
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Преобразование между методом Get и свойством
@@ -378,8 +386,6 @@
                   href: ide/reference/extract-method.md
                 - name: Извлечение локальной функции
                   href: ide/reference/extract-local-function.md
-                - name: Создание параметра
-                  href: ide/reference/generate-parameter.md
                 - name: Встроенная временная переменная
                   href: ide/reference/inline-temporary-variable.md
                 - name: Завершение IntelliSense для неимпортируемых типов
@@ -1329,6 +1335,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: "Windows\_Information\_Protection (WIP)"
           href: ide/exempt-visual-studio-from-wip.md
+        - name: Федеральный стандарт обработки информации (FIPS)
+          href: ide/fips-support-visual-studio.md
     - name: Ввод данных на языках с двунаправленным письмом
       href: ide/use-bidirectional-languages.md
     - name: Окно справки (Майкрософт)

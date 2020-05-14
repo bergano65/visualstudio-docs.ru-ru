@@ -1,40 +1,40 @@
 ---
-title: Поддержка автоматизации для страниц параметров | Документация Майкрософт
+title: Поддержка автоматизации для страниц опций (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03360bfc01110e7b4ef73956f0199aaaed9cee2c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: fe45238948d5b4cdebbf9f002f6b242515e7622e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848969"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709935"
 ---
-# <a name="automation-support-for-options-pages"></a>Поддержка автоматизации для страниц параметров
-Пакеты VSPackage могут предоставить диалоговые окна настраиваемых **параметров** меню **Сервис** (**Сервис параметры** ) в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и сделать их доступными для модели автоматизации.
+# <a name="automation-support-for-options-pages"></a>Поддержка автоматизации страниц Опционов
+VSPackages может предоставить пользовательские **варианты** диалоговых коробок [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для меню **инструментов** (страницы**опций инструментов)** и сделать их доступными для модели автоматизации.
 
 ## <a name="tools-options-pages"></a>Сервис Параметры - страницы
- Для создания страницы **параметров средств** пакет VSPackage должен предоставить реализацию пользовательского элемента управления, возвращаемую в среду, с помощью реализации метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> в VSPackage. (Или для управляемого кода — метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>.)
+ Для создания **страницы «Параметры инструментов»** VSPackage должен обеспечить реализацию управления пользователем, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> возвращенную в среду через реализацию метода VSPackage. (Или, для управляемого <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> кода, метод.)
 
- Это необязательно, но настоятельно рекомендуется, чтобы разрешить доступ к этой новой странице через модель автоматизации. Это можно сделать, выполнив следующие действия.
+ Это необязательно, но настоятельно рекомендуется, чтобы обеспечить доступ к этой новой странице через модель автоматизации. Вы можете сделать это следующими шагами:
 
-1. Расширьте объект <xref:EnvDTE._DTE.Properties%2A> с помощью реализации объекта, производного от IDispatch.
+1. Расширяйте <xref:EnvDTE._DTE.Properties%2A> объект за счет реализации объекта, полученного из IDispatch.
 
-2. Возвращает реализацию метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> (или для управляемого кода метода <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>) в объект, производный от IDispatch.
+2. Верните реализацию метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> (или для <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> управляемого кода) объекту, полученному из IDispatch.
 
-3. Когда потребитель автоматизации вызывает метод <xref:EnvDTE._DTE.Properties%2A> на странице свойств настраиваемого **параметра** , среда использует метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> для получения реализации автоматизации настраиваемой страницы **параметров средств** .
+3. Когда <xref:EnvDTE._DTE.Properties%2A> потребитель автоматизации вызывает метод на странице свойств пользовательского **варианта,** среда использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод для получения реализации автоматизации страницы пользовательских **опций инструментов.**
 
-4. Затем объект автоматизации VSPackage используется для предоставления каждого <xref:EnvDTE.Property>, возвращаемого <xref:EnvDTE._DTE.Properties%2A>.
+4. Объект автоматизации VSPackage затем используется для <xref:EnvDTE.Property> обеспечения каждого возвращенного. <xref:EnvDTE._DTE.Properties%2A>
 
-   Пример реализации настраиваемой страницы **параметров средств** см. в разделе [VSSDK Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+   Для примера реализации пользовательской **страницы Параметры инструментов,** см [VSSDK Образцы](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>См. также:
-- [Предоставление доступа к объектам проекта](../../extensibility/internals/exposing-project-objects.md)
+## <a name="see-also"></a>См. также
+- [Экспозиция объектов проекта](../../extensibility/internals/exposing-project-objects.md)

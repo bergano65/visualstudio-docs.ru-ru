@@ -1,5 +1,5 @@
 ---
-title: Добавление и удаление страниц свойств | Документация Майкрософт
+title: Добавление и удаление страниц свойств (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03974bba0ca93242cf044a58bbb60ca772a369ce
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352319"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740201"
 ---
 # <a name="add-and-remove-property-pages"></a>Добавление и удаление страниц свойств
 
-В конструкторе проектов предоставляет централизованное расположение для управления свойства проекта, параметры и ресурсы в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Он отображается как одного окна в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) и содержит несколько областей в правой части, осуществляется с помощью вкладок слева. Области, которые в конструкторе проектов (часто обозначается как страницы свойств) зависят от типа проекта и языка. В конструкторе проектов может осуществляться с помощью **свойства** команды **проекта** меню.
+Проект «Конструктор» предоставляет централизованное место для управления свойствами, настройками и ресурсами проекта. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Он отображается как единое окно в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) и содержит ряд стекол справа, которые доступны через вкладки слева. Панели (часто называемые страницами свойств) в проекте Designer различаются в зависимости от типа проекта и языка. Дизайнер проекта может быть доступен с командой **Свойств** в меню **проекта.**
 
-Подтип проекта часто требуется отображать дополнительные страницы свойств в конструкторе проектов. Аналогичным образом некоторые подтипов проекта может потребоваться удалить встроенного свойства страницы. Чтобы сделать, необходимо реализовать вашей подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс и переопределить <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод. Путем переопределения этого метода и использования `propId` параметр, содержащий одно из значений из <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления, можно фильтровать, добавить или удалить свойства проекта. Например может потребоваться добавить страницу к страницам свойств, зависимых от конфигурации. Чтобы сделать это, необходимо фильтровать страницы свойств, зависимых от конфигурации, а затем добавьте новую страницу в существующий список.
+Подтип проекта часто должен отображать дополнительные страницы свойств в проекте Designer. Аналогичным образом, некоторые подтипы проектов могут потребовать удаления встроенных страниц свойств. Для выполнения любого <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> из них подтип проекта должен реализовать интерфейс и переопределить метод. Переопределяя этот `propId` метод и используя параметр, содержащий одно из значений <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления, можно отфильтровать, добавить или удалить свойства проекта. Например, может потребоваться добавить страницу на страницы свойств, зависящих от конфигурации. Для этого необходимо отфильтровать страницы свойств, зависящие от конфигурации, а затем добавить новую страницу в существующий список.
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>Добавление и удаление страниц свойств в конструкторе проектов
+## <a name="add-and-remove-property-pages-in-project-designer"></a>Добавление и удаление страниц свойств в Проекте Designer
 
-### <a name="remove-a-property-page"></a>Удаления страницы свойств
+### <a name="remove-a-property-page"></a>Удалить страницу свойств
 
-1. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств и получить `clsids` списка.
+1. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод фильтрации страниц свойств `clsids` и получить список.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "66352319"
     }
     ```
 
-2. Удалить **события построения** страница из полученная `clsids` списка.
+2. Удалите страницу событий `clsids` **сборки** из полученного списка.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "66352319"
 
 ### <a name="add-a-property-page"></a>Добавление страницы свойств
 
-1. Создание страницы свойств, которые вы хотите добавить.
+1. Создайте страницу свойств, добавленную.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "66352319"
     }
     ```
 
-2. Регистрация новой страницы свойств.
+2. Зарегистрируйте свою новую страницу недвижимости.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "66352319"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств, получить `clsids` списка и добавьте новую страницу свойств.
+3. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод фильтрации страниц свойств, получить `clsids` список и добавить новую страницу свойств.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer
@@ -208,4 +208,4 @@ ms.locfileid: "66352319"
 
 ## <a name="see-also"></a>См. также
 
-- [Подтипов проекта](../extensibility/internals/project-subtypes.md)
+- [Подтипы проекта](../extensibility/internals/project-subtypes.md)

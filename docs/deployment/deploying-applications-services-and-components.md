@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806925"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543958"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "72806925"
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** и **.NET Core**. Для развертывания в локальную папку используйте средство публикации. Выбор варианта зависит типа приложения. В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**. (Если профили публикации не были настроены ранее, необходимо щелкнуть **Создать профиль**.) Далее выберите **Папка**. Дополнительные сведения см. в статье [Развертывание в локальную папку](quickstart-deploy-to-local-folder.md).
 
-    ![Выбор команды "Опубликовать"](../deployment/media/quickstart-publish.png)
+    ![Выбор команды Опубликовать](../deployment/media/quickstart-publish.png)
 
 - **Классические приложения Windows**. Вы можете публиковать классические приложения Windows в папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C++/CLI см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
@@ -146,7 +146,7 @@ ms.locfileid: "72806925"
 
 | Тип приложения | Сценарий развертывания | Ссылка |
 | --- | --- | --- |
-| **Приложения Office** | Из среды Visual Studio можно опубликовать надстройку для Office. | [Развертывание и публикация надстройки Office](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Приложения Office** | Из среды Visual Studio можно опубликовать надстройку для Office. | [Развертывание и публикация надстройки Office](/office/dev/add-ins/publish/publish) |
 | **Службы WCF или OData** | Другие приложения могут использовать службы RIA WCF, развертываемые на веб-сервере. | [Разработка и развертывание служб WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | Начиная с Visual Studio 2017, среда LightSwitch более не поддерживается, но можно выполнить ее развертывание в Visual Studio 2015 и предыдущих версиях. | [Развертывание приложений LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

@@ -1,29 +1,29 @@
 ---
-title: Элемент Symbols | Документация Майкрософт
+title: Элемент символов Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce299f99699a7bc048b3dc7da39aea3f734addeb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719404"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699351"
 ---
 # <a name="symbols-element"></a>Элемент Symbols
-Определяет идентификаторы GUID и идентификаторы, используемые другими элементами VSCT. Для неуправляемого кода эти сведения обычно поступают из файлов заголовков, которые задаются с помощью [внешнего элемента](../extensibility/extern-element.md). Для определения этих сведений управляемый код использует дочерние элементы элемента Symbols.
+Определяет GUIDи и идентифицированные идентифицируются, которые используются другими элементами VSCT. Для неуправляемого кода эта информация обычно поступает из файлов заголовка, указанных [Extern Element.](../extensibility/extern-element.md) Управляемый код использует элемент «ребенок» элемента символов для определения этой информации.
 
- Если создать vsct-файл из существующего CTO-файла, символы будут созданы как дочерние элементы элемента Symbols. Дополнительные сведения см. в разделе [инструкции. Создание. Vsct файл из существующего. Файл CTO](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ При создании файла .vsct из существующего файла .cto символы будут создаваться как дети элемента символов. Для получения дополнительной информации [см. Vsct файл из существующего . Cto Файл](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- Элемент Symbols не следует путать с [элементом define](../extensibility/define-element.md), который определяет пары «имя-значение» для использования препроцессором.
+ Элемент символов не следует путать с [элементом определения,](../extensibility/define-element.md)который определяет пары значения имени для использования препроцессором.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,20 +41,20 @@ ms.locfileid: "72719404"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Отсутствуют||
+|None||
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|GuidSymbol|Определяет символ GUID. GuidSymbol имеет два обязательных атрибута: Name и value. Имя — это имя символа, а значение — значение GUID в виде строки.<br /><br /> Например: \<GuidSymbol Name = "guidVsPackage1Pkg" value = "{c5f54698-101A-4846-84d3-dc748f9cd848}"/>|
-|IDSymbol|Определяет символ. IDSymbol имеет два обязательных атрибута: Name и value. Имя — это имя символа, а значение — значение символа в виде строки.<br /><br /> Например: \<IDSymbol Name = "Мименуграуп" value = "0x1020"/>|
+|ГидСимвол|Определяет символ GUID. GuidSymbol имеет два необходимых атрибута: имя и значение. Название — это имя символа, а значение — значение GUID как строки.<br /><br /> Например:\<имя GuidSymbol'"guidVsPackage1Pkg" значение "c5f54698-101a-4846-84d3-dc748f9cd848" />|
+|IDСимвол|Определяет символ. IDSymbol имеет два необходимых атрибута: имя и значение. Название — это имя символа, а значение — значение символа как строки.<br /><br /> Например:\<название IDSymbol "MyMenuGroup" значение "0x1020" />|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Корневой элемент файла. vsct.|
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Корневой элемент файла .vsct.|
 
 ## <a name="example"></a>Пример
 

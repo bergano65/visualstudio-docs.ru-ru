@@ -1,7 +1,7 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Разработка в Azure с помощью Visual Studio
 metadata:
-  title: Разработка в Azure
+  title: разработка Azure.
   description: Руководства и концептуальные статьи о подключении приложений и служб к Azure и разработке служб Azure.
   author: ghogen
   manager: jillfra
@@ -10,106 +10,112 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
+  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "76022300"
 landingContent:
-  - title: Развертывание в службе приложений Azure
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Развертывание приложения ASP.NET Core в Azure
-            url: /azure/app-service/app-service-web-get-started-dotnet-framework
-          - text: Развертывание веб-приложения ASP.NET в Azure
-            url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
-          - text: Непрерывное развертывание в Azure с помощью Visual Studio и Git
-            url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-          - text: Непрерывное развертывание в Azure с помощью Azure Pipelines
-            url: /azure/devops/pipelines/get-started-yaml
-          - text: Развертывание веб-приложения ASP.NET в виртуальную машину Azure
-            url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
-  - title: 'Службы приложений Azure, Logic Apps и Функции Azure'
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Создание и размещение веб-приложения с помощью службы приложений Azure
-            url: /azure/app-service/app-service-web-get-started-dotnet
-          - text: Создание автоматических масштабируемых рабочих процессов с помощью Azure Logic Apps
-            url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
-          - text: Обработка событий с помощью функций Azure
-            url: /azure/azure-functions/functions-create-your-first-function-visual-studio
-      - linkListType: overview
-        links:
-          - text: Пакет Azure SDK для .NET и средства разработчика .NET Core
-            url: /dotnet/azure
-  - title: Разработка контейнеров
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Разработка контейнеров
-            url: /visualstudio/containers
-          - text: "Средства Visual\_Studio для контейнеров"
-            url: /visualstudio/containers/overview
-          - text: Средства Kubernetes
-            url: /visualstudio/containers/tutorial-kubernetes-tools
-  - title: Отладка служб Azure и анализ производительности
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Отладка ASP.NET Core в IIS в Azure
-            url: /visualstudio/debugger/remote-debugging-azure
-          - text: Отладка облачной службы в Azure
-            url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-          - text: 'Отладка приложения, запущенного на виртуальной машине'
-            url: vs-azure-tools-debug-cloud-services-virtual-machines.md
-          - text: Измерение производительности для облачных служб в Azure
-            url: vs-azure-tools-performance-profiling-cloud-services.md
-  - title: Подключенные службы
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Хранилище Azure
-            url: vs-azure-tools-connected-services-storage.md
-          - text: Хранилище ключей Azure;
-            url: /azure/key-vault/vs-key-vault-add-connected-service
-          - text: Azure Active Directory
-            url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-          - text: "Cognitive\_Services. Вызов Анализа текста"
-            url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-          - text: "Cognitive\_Services. Поиск новостей Bing"
-            url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-          - text: Cognitive Services. API распознавания лиц
-            url: /azure/cognitive-services/face/vs-face-connected-service
-          - text: Cognitive Services. Компьютерное зрение
-            url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
-  - title: Облачные службы Azure
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Создание и настройка проектов облачных служб Azure
-            url: vs-azure-tools-azure-project-create.md
-          - text: Отладка облачных служб локально и в Azure
-            url: vs-azure-tools-debugging-cloud-services-overview.md
-          - text: Анализ производительности с использованием профилировщика Visual Studio
-            url: vs-azure-tools-performance-profiling-cloud-services.md
-          - text: Развертывание облачной службы в Azure
-            url: vs-azure-tools-publishing-a-cloud-service.md
-          - text: 'Мониторинг и диагностика облачных служб и виртуальных машин, работающих в Azure'
-            url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-  - title: Cloud Explorer
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Доступ к учетным записям хранения Azure в Visual Studio
-            url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-          - text: Доступ к виртуальным машинам из Visual Studio
-            url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-  - title: Другие ресурсы
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Группа ресурсов Azure
-            url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
-          - text: Data Lake Analytics
-            url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
-          - text: Stream Analytics
-            url: /azure/stream-analytics/stream-analytics-quick-create-vs
-          - text: Service Fabric.
-            url: /azure/service-fabric/service-fabric-get-started
+- title: Развертывание в Службе приложений Azure
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Развертывание приложения ASP.NET Core в Azure
+      url: /azure/app-service/app-service-web-get-started-dotnet-framework
+    - text: Развертывание веб-приложения ASP.NET в Azure
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+    - text: Непрерывное развертывание в Azure с помощью Visual Studio и Git
+      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+    - text: Непрерывное развертывание в Azure с помощью Azure Pipelines
+      url: /azure/devops/pipelines/get-started-yaml
+    - text: Развертывание веб-приложения ASP.NET в виртуальную машину Azure
+      url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
+- title: Службы приложений Azure, Logic Apps и Функции Azure
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создание и размещение веб-приложения с помощью службы приложений Azure
+      url: /azure/app-service/app-service-web-get-started-dotnet
+    - text: Создание автоматических масштабируемых рабочих процессов с помощью Azure Logic Apps
+      url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+    - text: Обработка событий с помощью функций Azure
+      url: /azure/azure-functions/functions-create-your-first-function-visual-studio
+  - linkListType: overview
+    links:
+    - text: Пакет Azure SDK для .NET и средства разработчика .NET Core
+      url: /dotnet/azure
+- title: Разработка контейнеров
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Разработка контейнеров
+      url: /visualstudio/containers
+    - text: Средства Visual Studio для контейнеров
+      url: /visualstudio/containers/overview
+    - text: Средства Kubernetes
+      url: /visualstudio/containers/tutorial-kubernetes-tools
+- title: Отладка служб Azure и анализ производительности
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Отладка ASP.NET Core в IIS в Azure
+      url: /visualstudio/debugger/remote-debugging-azure
+    - text: Отладка облачной службы в Azure
+      url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+    - text: Отладка приложения, запущенного на виртуальной машине
+      url: vs-azure-tools-debug-cloud-services-virtual-machines.md
+    - text: Измерение производительности для облачных служб в Azure
+      url: vs-azure-tools-performance-profiling-cloud-services.md
+- title: Подключенные службы
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Хранилище Azure
+      url: vs-azure-tools-connected-services-storage.md
+    - text: Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure Active Directory
+      url: /azure/active-directory/develop/vs-active-directory-add-connected-service
+    - text: Cognitive Services. Вызов Анализа текста
+      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
+    - text: Cognitive Services. Поиск новостей Bing
+      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+    - text: Cognitive Services. API распознавания лиц
+      url: /azure/cognitive-services/face/vs-face-connected-service
+    - text: Cognitive Services. Компьютерное зрение
+      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+- title: Oблачныe службы Azure
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Создание и настройка проектов облачных служб Azure
+      url: vs-azure-tools-azure-project-create.md
+    - text: Отладка облачных служб локально и в Azure
+      url: vs-azure-tools-debugging-cloud-services-overview.md
+    - text: Анализ производительности с использованием профилировщика Visual Studio
+      url: vs-azure-tools-performance-profiling-cloud-services.md
+    - text: Развертывание облачной службы в Azure
+      url: vs-azure-tools-publishing-a-cloud-service.md
+    - text: Мониторинг и диагностика облачных служб и виртуальных машин, работающих в Azure
+      url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+- title: Cloud Explorer
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Доступ к учетным записям хранения Azure в Visual Studio
+      url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+    - text: Доступ к виртуальным машинам из Visual Studio
+      url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
+- title: Другие ресурсы
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: группа ресурсов Azure.
+      url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
+    - text: Data Lake Analytics
+      url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - text: Stream Analytics
+      url: /azure/stream-analytics/stream-analytics-quick-create-vs
+    - text: Service Fabric
+      url: /azure/service-fabric/service-fabric-get-started

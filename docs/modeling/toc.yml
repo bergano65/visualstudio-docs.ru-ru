@@ -34,9 +34,9 @@
   items:
     - name: Создание моделей для приложения
       href: create-models-for-your-app.md
-    - name: 'Схемы зависимостей: Справочники'
+    - name: 'Схемы зависимостей: справочные материалы'
       href: layer-diagrams-reference.md
-    - name: 'Схемы зависимостей: Рекомендации'
+    - name: 'Схемы зависимостей: рекомендации'
       href: layer-diagrams-guidelines.md
     - name: Предоставить общий доступ к моделям
       items:
@@ -277,7 +277,7 @@
       items:
         - name: Общие сведения и инструкции
           href: design-time-code-generation-by-using-t4-text-templates.md
-        - name: Пошаговое руководство. Создание кода с помощью текстовых шаблонов
+        - name: Пошаговое руководство. Формирование кода с помощью текстовых шаблонов
           href: walkthrough-generating-code-by-using-text-templates.md
         - name: Создание кода в процессе построения
           href: code-generation-in-a-build-process.md
@@ -317,7 +317,7 @@
           href: text-template-utility-methods.md
         - name: "Обращение к Visual\_Studio и другим основным приложениям из текстового шаблона"
           href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-        - name: Escape-последовательность
+        - name: Escape-последовательности
           items:
             - name: Использование escape-последовательностей в текстовых шаблонах
               href: using-escape-sequences-in-text-templates.md

@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.openlocfilehash: 9206ab892ef125706ab16f9a739fe88a52f5c242
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70108101"
 ---
 # <a name="version-control"></a>Управление версиями
@@ -34,6 +34,6 @@ Visual Studio для Mac поддерживает как Git, так и Subversi
 * [Настройка репозитория Subversion](set-up-subversion-repository.md)
 * [Работа с Subversion](working-with-subversion.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Управление версиями в Visual Studio (в Windows)](/visualstudio/version-control/)

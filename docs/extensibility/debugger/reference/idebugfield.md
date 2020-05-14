@@ -1,5 +1,5 @@
 ---
-title: IDebugField | Документация Майкрософт
+title: ИдебугФилд Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80def3f9c3d270ebd6f2217f6ce39f07ef27b119
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337523"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728752"
 ---
 # <a name="idebugfield"></a>IDebugField
-Этот интерфейс представляет поле, то есть описание символа или тип.
+Этот интерфейс представляет поле, то есть описание символа или типа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,31 +28,31 @@ ms.locfileid: "66337523"
 IDebugField : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Символ поставщик реализует этот интерфейс как базовый класс для всех полей.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Поставщик символов реализует этот интерфейс в качестве базового класса для всех полей.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Этот интерфейс является базовым классом для всех полей. На основе возвращаемого значения из [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), этот интерфейс может возвращать более специализированных интерфейсов с помощью [QueryInterface](/cpp/atl/queryinterface). Кроме того, многие интерфейсы возвращают `IDebugField` объекты из различных методов.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Этот интерфейс является базовым классом для всех полей. Основываясь на значении возврата [GetKind,](../../../extensibility/debugger/reference/idebugfield-getkind.md)этот интерфейс может вернуть более специализированные интерфейсы с помощью [queryInterface](/cpp/atl/queryinterface). Кроме того, многие `IDebugField` интерфейсы возвращают объекты из различных методов.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugField`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Получает отображаемую информацию о символ или типа.|
-|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Возвращает тип поля.|
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Возвращает тип поля.|
-|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Возвращает контейнер поля.|
-|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Возвращает адрес поля.|
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Получает размер поля в байтах.|
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Возвращает расширенные сведения о поле.|
-|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Сравнивает два поля.|
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Получает сведения зависят от типов символов или типа.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Получает отображаемую информацию о символе или типе.|
+|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Получает вид поля.|
+|[Gettype](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Получает тип поля.|
+|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Получает контейнер поля.|
+|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Получает адрес поля.|
+|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Получает размер поля, в байтах.|
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Получает расширенную информацию о поле.|
+|[Равно](../../../extensibility/debugger/reference/idebugfield-equal.md)|Сравнивает два поля.|
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Получает независимую информацию о символе или типе.|
 
 ## <a name="remarks"></a>Примечания
- Язык C эквивалентен типу `typedef`.
+ Тип эквивалентен языку `typedef`C.
 
- В следующем примере язык C++ `weather` является типом класса и `sunny` и `stormy` представляют собой символы:
+ В следующем примере языка `weather` СЗ, является `sunny` тип `stormy` класса, и являются символами:
 
 ```cpp
 class weather;
@@ -60,12 +60,12 @@ weather sunny;
 weather stormy;
 ```
 
- Поле представляет символ ли тип можно определить путем вызова [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) и изучив [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) результат. Если `FIELD_KIND_TYPE` установлен бит, поле имеет тип и если `FIELD_KIND_SYMBOL` бит устанавливается, он является символьным.
+ Представляет ли поле символ или тип, можно определить, позвонив [в GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) и изучив [результат FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md) Если `FIELD_KIND_TYPE` бит установлен, поле типа, и если `FIELD_KIND_SYMBOL` бит установлен, это символ.
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

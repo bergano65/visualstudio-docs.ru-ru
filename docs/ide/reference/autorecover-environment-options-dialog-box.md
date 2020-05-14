@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585669"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"
@@ -38,6 +38,6 @@ ms.locfileid: "75585669"
 
 Используйте этот параметр, чтобы указать период, в течение которого Visual Studio будет хранить файлы, созданные для автоматического восстановления.
 
-### <a name="see-also"></a>См. также
+### <a name="see-also"></a>См. также раздел
 
 - [Диалоговое окно "Параметры"](../../ide/reference/options-dialog-box-visual-studio.md)

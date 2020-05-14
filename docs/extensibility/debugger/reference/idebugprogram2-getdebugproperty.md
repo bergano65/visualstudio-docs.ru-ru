@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDebugProperty | Документация Майкрософт
+title: IDebugПрограмма2::GetDebugНедвижимость Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDebugProperty
 ms.assetid: d194224e-f0e6-46ab-85d4-9e2639e28946
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 109e3ac1267afb4097429aafc9264416f3c2dbf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319370"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722892"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
-Возвращает свойства программы.
+Получает свойства программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int GetDebugProperty( 
 
 ## <a name="parameters"></a>Параметры
 `ppProperty`\
-[out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий свойства программы.
+(ваут) Возвращает объект [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) представляющий свойства программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Свойства, возвращаемые этим методом относятся только к программе. Если программе необходимо вернуть более одного свойства, то [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объекта, возвращаемого этим методом является контейнером дополнительных свойств и вызова метода [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) возвращает метод список всех свойств.
+ Свойства, возвращенные этим методом, специфичны для программы. Если программе необходимо вернуть более одного свойства, то объект [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) возвращенный этим методом, представляет собой контейнер с дополнительными свойствами и вызов метода [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) возвращает список всех свойств.
 
- Программы могут предоставлять любое количество и тип дополнительных свойств, которые могут быть описаны до `IDebugProperty2` интерфейс. Интегрированная среда разработки может отображать свойства дополнительные программы через пользовательский интерфейс браузера универсальное свойство.
+ Программа может предоставить любое количество и тип дополнительных свойств, которые могут быть описаны `IDebugProperty2` через интерфейс. IDE может отображать дополнительные свойства программы через пользовательский интерфейс браузера общего свойства.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

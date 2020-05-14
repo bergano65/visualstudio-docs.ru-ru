@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114219"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Страница "Мои расширения" конструктор проектов (Visual Basic)
@@ -40,7 +40,7 @@ ms.locfileid: "76114219"
 
 В списке **Расширения пространства имен My** выберите одну или несколько ссылок, после чего нажмите эту кнопку, чтобы удалить соответствующие расширения пространства имен `My` из проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение пространства имен My в Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Упаковка и развертывание пользовательских расширений пространства имен My](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

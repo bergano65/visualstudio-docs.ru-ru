@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Документация Майкрософт
+title: OBJECT_TYPE Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349920"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714131"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
-Указывает тип объекта из средство оценки выражений.
+# <a name="object_type"></a>Object_Type
+Определяет тип объекта из оценщика выражения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -70,57 +70,57 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Поля
  `OBJECT_TYPE_BOOLEAN`\
- Указывает, что объект является логическое значение.
+ Означает, что объект является булеаном.
 
  `OBJECT_TYPE_CHAR`\
- Указывает, что объект является знаком.
+ Означает, что объект является символом.
 
  `OBJECT_TYPE_I1`\
- Указывает, что объект является однобайтовое целое число со знаком.
+ Означает, что объект представляет собой один байт, подписанный в один ряд.
 
  `OBJECT_TYPE_U1`\
- Указывает, что объект является однобайтовое целое число без знака.
+ Означает, что объект представляет собой один байт неподписанный ряд.
 
  `OBJECT_TYPE_I2`\
- Указывает, что объект находится двухбайтовое целое число со знаком.
+ Означает, что объект представляет собой двухбайт подписанный ряд.
 
  `OBJECT_TYPE_U2`\
- Указывает, что объект находится двухбайтовое целое число без знака.
+ Означает, что объект представляет собой двухбайный неподписанный ряд.
 
  `OBJECT_TYPE_I4`\
- Указывает, что объект является четырехбайтовое целое число со знаком.
+ Означает, что объект представляет собой четырехбайт подписанный ряд.
 
  `OBJECT_TYPE_U4`\
- Указывает, что объект является 4 байтовым беззнаковым целым числом.
+ Означает, что объект представляет собой четырехбайт ный неподписанный ряд.
 
  `OBJECT_TYPE_I8`\
- Указывает, что объект является 8 байтовое целое число со знаком.
+ Означает, что объект представляет собой восьмибайтподписанный ряд.
 
  `OBJECT_TYPE_U8`\
- Указывает, что объект является 8 байтовое целое число без знака.
+ Означает, что объект представляет собой восьмибайтный неподписанный ряд.
 
  `OBJECT_TYPE_R4`\
- Указывает, что объект является числом с плавающей запятой размером 4 байта.
+ Означает, что объект представляет собой четырехбайное плавающее точечное число.
 
  `OBJECT_TYPE_R8`\
- Указывает, что объект является 8 байтовое число с плавающей запятой.
+ Означает, что объект представляет собой восьмибайтное плавающее точечное число.
 
  `OBJECT_TYPE_OBJECT`\
- Указывает, что объект является объектом.
+ Означает, что объект является объектом.
 
  `OBJECT_TYPE_NULL`\
- Указывает, что объект имеет значение NULL.
+ Означает, что объект является NULL.
 
  `OBJECT_TYPE_CLASS`\
- Указывает, что объект является классом.
+ Означает, что объект является классом.
 
 ## <a name="remarks"></a>Примечания
- Передается в качестве аргумента для [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) и [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) методы.
+ Прошел в качестве аргумента методам [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) и [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
 
 ## <a name="requirements"></a>Требования
  Заголовок: ee.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

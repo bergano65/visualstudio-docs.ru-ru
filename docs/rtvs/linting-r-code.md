@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970746"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Анализ кода R в Visual Studio
@@ -59,7 +59,7 @@ ms.locfileid: "62970746"
 
 | Параметр | Значение по умолчанию | Результат анализа кода |
 | --- | --- | --- |
-| **Несколько** | **True** | Выявляет, когда на одной строке находится множество операторов. |
+| **несколько** | **True** | Выявляет, когда на одной строке находится множество операторов. |
 | **Точки с запятой** | **True** | Выявляет использование точек с запятой. |
 
 ## <a name="text-group"></a>Группа текста

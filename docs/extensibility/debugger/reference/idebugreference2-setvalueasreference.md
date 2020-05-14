@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Документация Майкрософт
+title: IDebugСправка2::SetvalueAsСправка (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 108061d4957b03d049897985da849ab86563ea47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339755"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720305"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Задает значение ссылки из другой ссылки. Зарезервировано для будущего использования.
+Устанавливает значение ссылки из другой ссылки. Зарезервировано для последующего использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,16 +47,16 @@ int SetValueAsReference ( 
 
 ## <a name="parameters"></a>Параметры
 `rgpArgs`\
-[in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов, используемых для определения способа установки значения ссылки.
+(в) Массив объектов [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) используемых для определения эталонного значения.
 
 `dwArgCount`\
-[in] Количество ссылок в массиве.
+(в) Количество ссылок в массиве.
 
 `pValue`\
-[in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, из которого требуется задать значение свойства.
+(в) Объект [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) с которого можно установить значение свойства.
 
 `dwTimeout`\
-[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

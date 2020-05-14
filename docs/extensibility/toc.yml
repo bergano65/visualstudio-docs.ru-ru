@@ -4,7 +4,7 @@
   href: installing-the-visual-studio-sdk.md
 - name: Приступая к разработке расширений Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: Создание первого расширения. Hello World
+- name: 'Создание первого расширения: Hello World'
   href: extensibility-hello-world.md
 - name: "Новые возможности пакета SDK для Visual Studio\_2019"
   items:
@@ -24,7 +24,7 @@
       href: set-install-root.md
     - name: Перенос регистрации отладчика COM
       href: migrate-debugger-com-registration.md
-    - name: Вопросы и ответы
+    - name: Часто задаваемые вопросы
       href: faq-2017.md
 - name: "Перенос проектов расширяемости в Visual Studio\_2017"
   href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
@@ -48,7 +48,7 @@
       href: workspace-indexing.md
     - name: Языковые службы
       href: workspace-language-services.md
-    - name: Построить
+    - name: Сборка
       href: workspace-build.md
 - name: Расширение меню и команд
   items:
@@ -148,13 +148,13 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Пошаговое руководство. Выделение текста
           href: walkthrough-highlighting-text.md
-        - name: Пошаговое руководство. Структуризация
+        - name: Пошаговое руководство. Структурирование
           href: walkthrough-outlining.md
-        - name: Пошаговое руководство. Отображение парных скобок
+        - name: Пошаговое руководство. Отображение парных фигурных скобок
           href: walkthrough-displaying-matching-braces.md
         - name: Пошаговое руководство. Отображение всплывающих подсказок для кратких сведений
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: Пошаговое руководство. Отображение справки по цифровым подписям
+        - name: Пошаговое руководство. Отображение справки сигнатуры
           href: walkthrough-displaying-signature-help.md
         - name: Пошаговое руководство. Отображение завершения операторов
           href: walkthrough-displaying-statement-completion.md
@@ -164,7 +164,7 @@
           href: walkthrough-displaying-light-bulb-suggestions.md
         - name: Пошаговое руководство. Использование командной оболочки в расширении редактора
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: Пошаговое руководство. Использование сочетаний клавиш в редакторе расширений
+        - name: Пошаговое руководство. Использование сочетания клавиш в расширении редактора
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
         - name: Пошаговое руководство. Доступ к объекту DTE из расширения редактора
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
@@ -634,7 +634,7 @@
               href: usedcommands-element.md
             - name: Элемент UsedCommand
               href: usedcommand-element.md
-        - name: Элемент Parent
+        - name: Родительский элемент
           href: parent-element.md
         - name: Элемент Icon
           href: icon-element.md
@@ -768,9 +768,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: Перечислители.
+        - name: Enumerators
           items:
-            - name: Перечислители.
+            - name: Enumerators
               href: enumerators.md
             - name: Перечислитель кода команды
               href: command-code-enumerator.md

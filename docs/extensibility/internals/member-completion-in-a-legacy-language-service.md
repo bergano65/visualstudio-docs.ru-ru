@@ -1,5 +1,5 @@
 ---
-title: Завершение участников в языковой службе прежних версий | Документация Майкрософт
+title: Завершение работы в службе обучения языку (ru) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,64 +7,64 @@ helpviewer_keywords:
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c969b0f857e45279488d9ba667b431064375da6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349314"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707200"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Завершение участников в языковой службе прежних версий
 
-Завершения члена IntelliSense можно всплывающей подсказки, которая отображает список возможных членов в конкретной области, например класс, структуру, перечисление или пространства имен. Например в C#, если пользователь вводит «this» через точку список всех членов класса или структуры в текущей области представлены в список, из которого пользователь может выбрать.
+Завершение членского состава IntelliSense — это наконечник инструмента, который отображает список возможных участников определенной области, таких как класс, структура, перечисление или пространство имен. Например, в C,, если пользователь вводит "это", за которым следует период, список всех членов класса или структуры в текущем объеме представлен в списке, из которого пользователь может выбрать.
 
-Managed package framework (MPF) предоставляет поддержку всплывающей подсказки и управления списком в подсказке; все, что нужно — сотрудничество из синтаксического анализатора для предоставления данных, отображаемых в списке.
+Платформа управляемого пакета (MPF) обеспечивает поддержку наконечника инструмента и управление списком в наконечнике инструмента; все, что необходимо, это сотрудничество с парсером для предоставления данных, которые фигурирует в списке.
 
-Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
+Устаревшие языковые службы реализуются как часть VSPackage, но новый способ реализации функций языкового сервиса заключается в использовании расширений MEF. Чтобы узнать больше, смотрите [Расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем вам начать использовать новый API редактора как можно скорее. Это повысит производительность вашего языкового сервиса и позволит вам воспользоваться новыми функциями редактора.
 
-## <a name="how-it-works"></a>Принцип работы
+## <a name="how-it-works"></a>Как это работает
 
-Ниже приведены два способа, в которых показан список членов, используя классы MPF:
+Ниже приведены два способа отображаются с помощью классов MPF:
 
-- Позиционирование курсора на идентификатор, или после символа завершения члена и выбрав **отображать список членов** из **IntelliSense** меню.
+- Позиционирование caret на идентификаторе или после завершения участника персонажа и выбор **участников списка** из меню **IntelliSense.**
 
-- <xref:Microsoft.VisualStudio.Package.IScanner> Сканера обнаруживает знака завершения элемента и задает триггер токена для [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) этого символа.
+- Сканер <xref:Microsoft.VisualStudio.Package.IScanner> обнаруживает символ завершения участника и устанавливает маркерный триггер [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) для этого символа.
 
-Символ завершения элемента показывает, что является членом класса, структуры или перечисления выполните. Например, в C# или Visual Basic символ завершения член является `.`, тогда как в C++ символ является `.` или `->`. Триггер имеет значение при сканировании выберите символ члена.
+Символ завершения участника указывает, что за ним должен следовать член класса, структура или перечисление. Например, в C- или Visual Basic `.`символ завершения участника является , в `.` то `->`время как в C» символ является либо или . Значение триггера устанавливается при сканировании символа, выбранного членом.
 
-### <a name="the-intellisense-member-list-command"></a>Команда List членов технологией IntelliSense
+### <a name="the-intellisense-member-list-command"></a>Командование списка членов IntelliSense
 
-<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Команда инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класс и <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод синтаксического анализа с причиной по синтаксического анализа [ParseReason.DisplayMemberList ](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
+Команда <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> к <xref:Microsoft.VisualStudio.Package.Source> методу <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> на классе и метод, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод парсер с разбором причине [ParseReason.DisplayMemberList](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-Средство синтаксического анализа определяет контекст текущей позиции, а также маркер в группе или непосредственно перед текущей позиции. Исходя из этого маркера, появится список объявлений. Например, в C#, при наведении курсора на член класса и выберите **отображать список членов**, получение списка всех членов класса. Если вы поместите курсор после точку после переменной объекта, отобразится список всех членов класса, которые представляет объект. Обратите внимание, что если курсор находится на члене, при отображении списка членов, выбора элемента из списка заменяет член, на которой находится курсор с одним из списка.
+Парсер определяет контекст текущего положения, а также токен под или непосредственно перед текущей позицией. На основе этого токена представлен список деклараций. Например, в C q, если вы размещаете внимательность на участника класса и выбираете **участников списка,** вы получаете список всех членов класса. Если вы расположили внимательность после периода, следующего за переменной объекта, вы получите список всех членов класса, который представляет объект. Обратите внимание, что если карет аурет расположен на участнике, когда отображается список участников, выбор участника из списка заменяет участника, на который находится каретна на тот, на который входит список.
 
-### <a name="the-token-trigger"></a>Токен триггера
+### <a name="the-token-trigger"></a>Триггер токенов
 
-[TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) триггер инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод <xref:Microsoft.VisualStudio.Package.Source> класс и <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод, в свою очередь, вызывает средство синтаксического анализа с причиной по синтаксического анализа [ ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Если включена маркера триггер [TokenTriggers.MatchBraces](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) синтаксического анализа причина в том, флаг, [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), который объединяет в себе Выбор членов и выделение скобок .
+[Триггер TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) инициирует <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> вызов к <xref:Microsoft.VisualStudio.Package.Source> методу <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> на классе, а метод, в свою очередь, вызывает парсер с причиной разбора [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Если маркер триггера также [включены TokenTriggers.MatchBraces](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) флаг, разбор причине [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), который сочетает в себе выбор членов и скобки выделения.
 
-Средство синтаксического анализа определяет контекст текущего размещения, а также что такое типизированные, прежде чем элемент будет выбрать символ. Владея этими сведениями он создает список всех членов запрошенной области. Этот список объявлений хранится в <xref:Microsoft.VisualStudio.Package.AuthoringScope> объект, возвращаемый из <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод. Если возвращаются все объявления, отображается всплывающая подсказка элемента завершения. Всплывающая подсказка управляется экземпляром <xref:Microsoft.VisualStudio.Package.CompletionSet> класса.
+Парсер определяет контекст текущего положения, а также то, что было набрано до выбора символа участника. Из этой информации парсер создает список всех членов запрашиваемого объема. Этот список деклараций хранится в объекте, <xref:Microsoft.VisualStudio.Package.AuthoringScope> который возвращается из метода. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> При возврате каких-либо деклараций отображается наконечник инструмента завершения участника. Наконечник инструмента управляется экземпляром <xref:Microsoft.VisualStudio.Package.CompletionSet> класса.
 
-## <a name="enable-support-for-member-completion"></a>Включить поддержку автозавершение элементов
+## <a name="enable-support-for-member-completion"></a>Включить поддержку завершения участника
 
-Необходимо иметь `CodeSense` запись реестра значение 1, поддерживает любые операции IntelliSense. Этот параметр реестра можно задать именованный параметр, передаваемый <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> атрибут пользователя, связанные с данным пакетом языка. Классы службы языка прочитать значение этой записи реестра из <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.
+Вы должны `CodeSense` иметь регистрационный набор до 1 для поддержки любой операции IntelliSense. Эта запись реестра может быть установлена с <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> именованным параметром, передаваемым атрибуту пользователя, связанному с пакетом языка. Классы языковых служб считываем значение этого входа в реестр из <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойства в <xref:Microsoft.VisualStudio.Package.LanguagePreferences> классе.
 
-Если сканер возвращает токен активации [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)и ваш анализатор возвращает список объявлений, а затем отображается список завершения члена.
+Если ваш сканер возвращает маркерный триггер [TokenTriggers.MemberSelect,](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)а ваш парсер возвращает список деклараций, то отображается список завершения участников.
 
-## <a name="support-member-completion-in-the-scanner"></a>Автозавершение элементов поддержки сканера
+## <a name="support-member-completion-in-the-scanner"></a>Завершение выполнения программы поддержки в сканере
 
-Сканер должен иметь возможность определить символ завершения члена и установить токена активации [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) при синтаксическом анализе этого символа.
+Сканер должен быть в состоянии обнаружить символ завершения участника и установить маркерный триггер [TokenTriggers.MemberSelect,](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) когда этот символ будет разобрана.
 
 ### <a name="scanner-example"></a>Пример сканера
 
-Ниже приведен упрощенный пример того, обнаружение символ завершения члена и задав соответствующую <xref:Microsoft.VisualStudio.Package.TokenTriggers> флаг. Данный пример является только для иллюстративных целей. Предполагается, что сканер содержит метод `GetNextToken` идентификации и возвращает токены из строки текста. В примере кода просто задает триггер при каждом обнаружении правильный тип символа.
+Вот упрощенный пример обнаружения символа завершения участника <xref:Microsoft.VisualStudio.Package.TokenTriggers> и установки соответствующего флага. Этот пример предназначен только для иллюстративных целей. Предполагается, что ваш сканер `GetNextToken` содержит метод, который идентифицирует и возвращает токены из строки текста. Пример кода просто устанавливает триггер всякий раз, когда он видит правильный вид символа.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -97,17 +97,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="support-member-completion-in-the-parser"></a>Поддерживает автозавершение элементов в средстве синтаксического анализа
+## <a name="support-member-completion-in-the-parser"></a>Завершение работы участника программы поддержки в Parser
 
-Для завершения члена <xref:Microsoft.VisualStudio.Package.Source> вызываемый классом <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> метод. Необходимо реализовать в классе, который является производным от списка <xref:Microsoft.VisualStudio.Package.Declarations> класса. См. в разделе <xref:Microsoft.VisualStudio.Package.Declarations> класс подробные сведения о методах, необходимо реализовать.
+Для завершения участника <xref:Microsoft.VisualStudio.Package.Source> класс <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> вызывает метод. Необходимо реализовать список в классе, который <xref:Microsoft.VisualStudio.Package.Declarations> происходит из класса. Просмотрите <xref:Microsoft.VisualStudio.Package.Declarations> класс для получения подробной информации о методах, которые необходимо реализовать.
 
-Средство синтаксического анализа вызывается с [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) или [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) когда вводится знака выбора элемента. Расположение, указанное <xref:Microsoft.VisualStudio.Package.ParseRequest> объект находится сразу после элемента выберите символ. Средство синтаксического анализа необходимо собрать имена всех элементов, которые могут присутствовать в списке членов в определенный момент в исходном коде. Затем средство синтаксического анализа должно проанализировать текущую строку, чтобы определить область, которую пользователь хочет связанный со знаком выберите член.
+Парсер называется [parseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) или [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) при найме персонажа. Место, данное <xref:Microsoft.VisualStudio.Package.ParseRequest> в объекте, сразу после выбора символа участника. Парсер должен собирать имена всех участников, которые могут отображаться в списке участников в этот конкретный момент в исходном коде. Затем парсер должен разогнать текущую строку, чтобы определить область, которая пользователь хочет, связанный с выбранным символом пользователя.
 
-Эта область основан на тип идентификатора, прежде чем элемент будет выбрать символ. Например, в C#, если переменная-член `languageService` , с типом `LanguageService`, введите **languageService.** Создает список всех членов `LanguageService` класса. Также в C# введя **это.** Создает список всех членов класса в текущей области.
+Эта область основана на типе идентификатора перед выбранным символом участника. Например, в C q, `languageService` учитывая переменную `LanguageService`члена, которая имеет тип, ввод **languageService.** создает список всех членов `LanguageService` класса. Кроме того, в C , набрав **это.** создает список всех членов класса в текущей области.
 
-### <a name="parser-example"></a>Пример средства синтаксического анализа
+### <a name="parser-example"></a>Парзер пример
 
-В примере показан один из способов заполнения <xref:Microsoft.VisualStudio.Package.Declarations> списка. Этот код предполагает, что синтаксический анализатор создает объявление и добавляет его в список путем вызова `AddDeclaration` метод `TestAuthoringScope` класса.
+Следующий пример показывает один способ <xref:Microsoft.VisualStudio.Package.Declarations> заполнить список. Этот код предполагает, что парсер строит декларацию и добавляет `AddDeclaration` ее в `TestAuthoringScope` список, вызывая метод в классе.
 
 ```csharp
 using System.Collections;

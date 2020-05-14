@@ -1,5 +1,5 @@
 ---
-title: Назовите элемент (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент имени (Visual Studio Templates) Документы Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b0365740f5ea8ab20ed79d077134afd32356bcc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344724"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702459"
 ---
-# <a name="name-element-visual-studio-templates"></a>Элемент Name (шаблоны Visual Studio)
-Указывает имя шаблона, как оно отображается в **новый проект** или **Добавление нового элемента** диалоговое окно.
+# <a name="name-element-visual-studio-templates"></a>Элемент имени (шаблоны Visual Studio)
+Упоньте название шаблона в том виде, в каком он появляется в поле диалога **New Project** или **добавить новый элемент.**
 
- \<VSTemplate > \<TemplateData > \<имя >
+ \<VSTemplate \<> TemplateData> \<название>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,11 +42,11 @@ ms.locfileid: "66344724"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
-|`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
+|`Package`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
+|`ID`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствует.
+ Нет.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -63,7 +63,7 @@ ms.locfileid: "66344724"
  `Name` — обязательный дочерний элемент элемента `TemplateData`.
 
 ## <a name="example"></a>Пример
- В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
+ В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +90,5 @@ ms.locfileid: "66344724"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

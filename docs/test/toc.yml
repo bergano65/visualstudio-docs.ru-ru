@@ -1,5 +1,9 @@
 - name: Средства тестирования Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Обзор
+  items:
+    - name: Первое знакомство со средствами тестирования
+      href: improve-code-quality.md
 - name: Модульное тестирование
   items:
     - name: Основные сведения о средствах модульного тестирования
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Обзор
+          href: intellitest-manual/index.md
         - name: Практическое руководство. Создание модульных тестов с помощью IntelliTest
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Обзор
-          href: intellitest-manual/introduction.md
-        - name: Начало работы
-          href: intellitest-manual/getting-started.md
-        - name: Указатель по разделам
-          href: intellitest-manual/index.md
         - name: Создание теста
           href: intellitest-manual/test-generation.md
         - name: Динамическое символическое выполнение

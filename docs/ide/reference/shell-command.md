@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565881"
 ---
 # <a name="shell-command"></a>Команда Shell
@@ -37,29 +37,29 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Аргументы
 `path`
 
-Обязательный. Путь и имя исполняемого файла или открываемого документа. Полный путь требуется, если указанный файл не находится в одном из каталогов, заданных в переменной среды PATH.
+Обязательный элемент. Путь и имя исполняемого файла или открываемого документа. Полный путь требуется, если указанный файл не находится в одном из каталогов, заданных в переменной среды PATH.
 
 `args`
 
-Необязательный элемент. Все аргументы, передаваемые в вызванную программу.
+Необязательный параметр. Все аргументы, передаваемые в вызванную программу.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
 /commandwindow [или] /command [или] /c [или] /cmd
 
-Необязательный элемент. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
+Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
 
 /dir:`folder` [или] /d: `folder`
 
-Необязательный элемент. Указывает рабочий каталог, задаваемый при запуске программы.
+Необязательный параметр. Указывает рабочий каталог, задаваемый при запуске программы.
 
 /outputwindow [или] /output [или] /out [или] /o
 
-Необязательный элемент. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
+Необязательный параметр. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Параметры /dir /o /c должны быть указаны сразу после `Tools.Shell`. Все, что указано после имени исполняемого файла, передается в виде аргументов командной строки.
 
-Вместо `Tools.Shell` можно использовать предопределенный псевдоним `Shell`.
+Вместо `Shell` можно использовать предопределенный псевдоним `Tools.Shell`.
 
 > [!CAUTION]
 > Если аргумент `path` указывает путь к каталогу, а также имя файла, следует заключить все имя пути в кавычки ("""), как показано ниже:
@@ -84,10 +84,10 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Командное окно](../../ide/reference/command-window.md)
-- [Окно выходных данных](../../ide/reference/output-window.md)
+- [Окно команд](../../ide/reference/command-window.md)
+- [Окно вывода](../../ide/reference/output-window.md)
 - [Поле "Поиск/команда"](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

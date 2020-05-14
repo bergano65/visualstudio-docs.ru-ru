@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue | Документация Майкрософт
+title: IDebugAlias::GetICorDebugValue Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetICorDebugValue method
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746844"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736478"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
-Извлекает интерфейс управляемого кода, который представляет значение, связанное с данным псевдонимом.
+Извлекает управляемый интерфейс кода, представляющий значение, связанное с этим псевдонимом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Параметры
 `ppUnk`\
-[out] `IUnknown` интерфейс, который представляет значение, связанное с данным псевдонимом. Этот интерфейс может запрашиваться для `ICorDebugValue` интерфейс.
+(ваут) `IUnknown` интерфейс, представляющий значение, связанное с этим псевдонимом. Этот интерфейс можно запрашивать `ICorDebugValue` для интерфейса.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
+ В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод применим только к значениям управляемых ( `ICorDebugValue` является интерфейсом, доступных в .NET Framework и определен в пакете SDK для .NET Framework в файле CorDebug.IDL).
+ Этот метод применяется только к `ICorDebugValue` управляемым значениям (интерфейс, доступный в рамочном интерфейсе .NET и определяемый в SDK .NET Framework в файле cordebug.idl).
 
 ## <a name="see-also"></a>См. также
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

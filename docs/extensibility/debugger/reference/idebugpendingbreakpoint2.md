@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2 | Документация Майкрософт
+title: IDebugPendingBreakpoint2 (англ.) Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1581620d2a26b8717a1c84399e43463b9312a96d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308793"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725650"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
-Этот интерфейс представляет точку останова, которая готова для привязки к расположение кода.
+Этот интерфейс представляет собой точку разрыва, которая готова привязаться к местоположению кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,38 +28,38 @@ ms.locfileid: "66308793"
 IDebugPendingBreakpoint2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Примечания для разработчиков
- Модуль отладки (DE) реализует этот интерфейс как часть поддержки точек останова.
+## <a name="notes-for-implementers"></a>Заметки для исполнителей
+ Движок отладки (DE) реализует этот интерфейс как часть своей поддержки точек разрыва.
 
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов
- Вызов [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) создает точку останова из [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейс. Вызов [привязать](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) создает `IDebugBreakpoint2` интерфейс, который представляет связанная точка останова в программе.
+## <a name="notes-for-callers"></a>Заметки для абонентов
+ Вызов [к CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) создает отложенную точку разрыва из интерфейса [IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Вызов [в Связующее положение](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) создает `IDebugBreakpoint2` интерфейс, представляющий собой точку разрыва в программе.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugPendingBreakpoint2`.
 
 |Метод|Описание|
 |------------|-----------------|
-|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Определяет ли этот ожидающая точка останова можно привязать к расположение кода.|
-|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Связывает этот ожидающая точка останова одно или несколько расположений кода.|
-|[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Получает состояние данного ожидающих точек останова.|
-|[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Возвращает точки останова запрос, который был использован для создания этого ожидающая точка останова.|
-|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Переключает виртуализированных состояние это ожидающих точек останова.|
-|[Enable](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает состояние объекта ожидающих точек останова.|
-|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Задает или изменяет условие, связанное с этим ожидающих точек останова.|
-|[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Задает или изменяет число pass, связанные с данным ожидающим точки останова.|
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Перечисляет все точки останова, привязанный из этого ожидающая точка останова.|
-|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Перечисляет все точки останова ошибки, вызванные этой ожидающая точка останова.|
-|[Удалить](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет этот ожидающая точка останова и все точки останова, привязанный из него.|
+|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Определяет, может ли эта незавершенная точка разрыва связываться с местоположением кода.|
+|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Связывает эту точку разрыва ожидания с одним или несколько местами кода.|
+|[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Получает состояние этой ожидавной точки разрыва.|
+|[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Получает запрос точки разрыва, который был использован для создания этой ожидачего точки разрыва.|
+|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Переключает виртуализированное состояние этой ожидающего разрыва.|
+|[Включение](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает включенное состояние этой ожидающего разрыва.|
+|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Устанавливает или изменяет условие, связанное с этой ожидавной точкой разрыва.|
+|[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Устанавливает или изменяет количество пропусков, связанное с этой ожидавной точкой разрыва.|
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Перечисляет все точки разрыва, связанные с этой ожидавшей разрыва.|
+|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Перечисляет все точки ошибки, которые были получены в результате этого ожидающего разрыва.|
+|[Удалить](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет эту ожидавную точку разрыва и все точки разрыва, связанные с ней.|
 
 ## <a name="remarks"></a>Примечания
- `IDebugPendingBreakpoint2` может рассматриваться как поставщик все необходимые сведения, необходимые для привязки точку останова для кода, которые могут применяться для одного или нескольких программ.
+ `IDebugPendingBreakpoint2`может рассматриваться как поставщик всей необходимой информации, необходимой для привязки точки разрыва к коду, который может быть применен к одной или многим программам.
 
- Ожидающая точка останова потенциально может привести к более чем одной связанная точка останова. Например точки останова в стиле C++ шаблона может привести к связанная точка останова для каждого уникального экземпляра этого шаблона.
+ Ожидаемая точка разрыва потенциально может привести к более чем одной точке разрыва. Например, точка разрыва в шаблоне в стиле Сз может создать точку разрыва для каждого уникального экземпляра этого шаблона.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

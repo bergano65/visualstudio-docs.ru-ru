@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590882"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892779"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 
@@ -92,3 +92,5 @@ Visual Studio предоставляет языковую поддержку в 
 - [Добавление расширения протокола языкового сервера](../extensibility/adding-an-lsp-extension.md)
 - [Пошаговое руководство: создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
 - [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Пример кода: грамматика TextMate](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [Пример кода: поддержка пользовательского языка](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

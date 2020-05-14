@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Microsoft Docs
+title: IDebugExpressionContext2::GetName Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::GetName
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53d7f497700d4e23587927adc0c2cee37824daa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325866"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729662"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Извлекает имя в контекст оценки.
+Извлекает название контекста оценки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetName( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-[out] Возвращает имя контекста вычисления.
+(ваут) Возвращает название контекста оценки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Имя — это описание этого контекста вычисления. Она обычно является то, что может быть проанализирован вычислитель выражений, который ссылается на этот контекст точные оценки. Например в C++ имя выглядит следующим образом:
+ Название — это описание контекста оценки. Это, как правило, то, что может быть разогнано выражение оценщика, что относится к этому точному контексту оценки. Например, в СЗ имя таково:
 
 ```
 "{ function-name, source-file-name, module-file-name }"

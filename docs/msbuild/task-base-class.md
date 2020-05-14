@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566401"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631956"
 ---
 # <a name="task-base-class"></a>Базовый класс Task
+
 В конечном счете многие задачи наследуются от класса <xref:Microsoft.Build.Utilities.Task>. Этот класс добавляет несколько параметров в задачи, производные от него. Эти параметры перечислены в настоящем документе.
 
 ## <a name="parameters"></a>Параметры
+
  Приведенная ниже таблица описывает параметры этого базового класса.
 
-|Параметр|Описание|
+|Параметр|Description|
 |---------------|-----------------|
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine>.<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.|
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine2>.<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.<br /><br /> Это свойство предусмотрено для удобства, чтобы разработчикам, наследующим из этого класса, не приходилось приводить значение из `IBuildEngine` в `IBuildEngine2`.|
@@ -34,6 +36,7 @@ ms.locfileid: "75566401"
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskHost>.<br /><br /> Указывает экземпляр объекта узла (может иметь значение null). Подсистема сборки задает это свойство, если интегрированная среда разработки узла связывает объект узла с этой конкретной задачей.|
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Необязательный параметр <xref:Microsoft.Build.Utilities.TaskLoggingHelper>, доступный только для чтения.<br /><br /> Вспомогательный объект ведения журнала.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

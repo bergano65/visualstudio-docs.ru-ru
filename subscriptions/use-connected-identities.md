@@ -1,18 +1,19 @@
 ---
 title: Использование подключенной учетной записи Майкрософт и удостоверений Azure Active Directory | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 09/27/2019
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
+ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Узнайте, как работать с подключенными учетными записями Майкрософт и удостоверениями Azure Active Directory
-ms.openlocfilehash: 1a862caa1f984f5d22f041a6f0cbff6534d8cc1c
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816576"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233173"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Использование подключенных удостоверений в подписках Visual Studio
 Если вы получаете подписку Visual Studio на работе или в учебном заведении и используете учетную запись Майкрософт для входа, администратор подписок может подключить учетную запись Майкрософт к удостоверению в Azure Active Directory (Azure AD) организации.  При этом изменится способ получения доступа к некоторым преимуществам, которые входят в состав вашей подписки. 
@@ -37,6 +38,12 @@ ms.locfileid: "72816576"
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>Вопрос: Как можно связаться с администратором?
 Ответ.  Сведения об обращении к администратору см. в [этой статье](contact-my-admin.md).  
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 После того, как администратор подключит учетные записи Azure AD и Майкрософт, советуем убедиться, что вы можете войти на [портал подписки](https://my.visualstudio.com?wt.mc_id=o~msft~docs) и получить доступ к преимуществам, таким как Azure DevOps, Visual Studio и индивидуальный кредит Azure DevTest. 

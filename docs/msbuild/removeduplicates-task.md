@@ -18,30 +18,34 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596012"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632788"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates - задача
+
 Удаляет повторяющиеся элементы из указанной коллекции элементов.
 
 ## <a name="parameters"></a>Параметры
- В следующей таблице приводятся параметры задачи `RemoveDuplicates` .
 
-|Параметр|Описание|
+ В следующей таблице приводятся параметры задачи `RemoveDuplicates`.
+
+|Параметр|Description|
 |---------------|-----------------|
 |`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы. При этом порядок входных элементов остается неизменным и сохраняется первый экземпляр каждого повторяющегося элемента.|
 |`Inputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Коллекция элементов, из которой нужно удалить повторяющиеся элементы.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
+
  Эта задача не учитывает регистр, а также не сравнивает метаданные элементов при определении повторяющихся элементов.
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
+
  В этом примере показано использование задачи `RemoveDuplicates` для удаления повторяющихся элементов из коллекции элементов `MyItems`. После завершения задачи коллекция элементов `FilteredItems` содержит один элемент.
 
 ```xml
@@ -89,7 +93,8 @@ ms.locfileid: "75596012"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
 - [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

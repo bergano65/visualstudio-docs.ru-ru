@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77611124"
 ---
 # <a name="known-issues-for-containers"></a>Известные проблемы для контейнеров
@@ -40,11 +40,11 @@ ms.locfileid: "77611124"
 * Передайте `--norestart` в командной строке. На момент публикации при попытке перезапустить контейнер Windows из контейнера на узел возвращается `ERROR_TOO_MANY_OPEN_FILES`.
 * Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Например, при выполнении сборки с помощью MSBuild может возникнуть ошибка, аналогичная следующей:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): ошибка MSB6003: не удается запустить указанный исполняемый файл задачи csc.exe. Не удалось загрузить файл или сборку "System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" или одну из их зависимостей. Не удается найти указанный файл.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): ошибка MSB6003: Не удалось запустить указанный исполняемый файл задачи "csc.exe". Не удалось загрузить файл или сборку "System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" или одну из их зависимостей. Системе не удается найти указанный файл.
 
 ::: moniker range="vs-2017"
 
-* Вы не можете установить Visual Studio 2017 версии 15.8 или более ранней версии (любого продукта) на образ mcr.microsoft.com/windows/servercore:1809 или более поздней версии. Дополнительные сведения см. в разделе https://aka.ms/setup/containers/servercore1809.
+* Вы не можете установить Visual Studio 2017 версии 15.8 или более ранней версии (любого продукта) на образ mcr.microsoft.com/windows/servercore:1809 или более поздней версии. Подробнее см. в разделе https://aka.ms/setup/containers/servercore1809.
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 ```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Установка средств сборки в контейнер](build-tools-container.md)
 * [Расширенный пример для контейнеров](advanced-build-tools-container.md)

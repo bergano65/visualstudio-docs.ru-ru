@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 9e8d9fde00a2390793ae8efe05b684e73caca321
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773063"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти для веб-приложений ASP.NET с помощью командной строки профилировщика
@@ -25,11 +25,11 @@ ms.locfileid: "74773063"
 > [!NOTE]
 > Программа **VSPerfCmd** предоставляет полный доступ к возможностям Средств профилирования, включая приостановку и возобновление профилирования, а также сбор дополнительных данных счетчиков производительности Windows и процессора. Если эти возможности не нужны, можно воспользоваться программой командной строки **VSPerfASPNETCmd**. В отличие от средства [VSPerfCmd](../profiling/vsperfcmd.md), нет необходимости устанавливать переменные среды и перезагружать компьютер. Дополнительные сведения см.в статье [Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
-## <a name="common-tasks"></a>Типичные задачи
+## <a name="common-tasks"></a>Стандартные задачи
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
-|**Подключение профилировщика к выполняющемуся приложению ASP.NET**|-   [Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
+|**Подключение профилировщика к выполняющемуся приложению ASP.NET**|-   [Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных об использовании памяти с помощью командной строки](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
 |**Инструментирование статически скомпилированных двоичных файлов**|-   [Практическое руководство. Инструментирование статически скомпилированного приложения ASP.NET и сбор данных об использовании памяти](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|
 |**Инструментирование динамически скомпилированных двоичных файлов**|-   [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор данных об использовании памяти](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|
 
@@ -37,7 +37,7 @@ ms.locfileid: "74773063"
 
 ### <a name="profile-aspnet-web-applications"></a>Профилирование веб-приложений ASP.NET
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование с помощью метода выборки**|-   [Сбор статистики приложения с помощью метода выборки](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
@@ -45,7 +45,7 @@ ms.locfileid: "74773063"
 
 ### <a name="profile-net-framework-memory-data"></a>Профилирование данных об использовании памяти .NET Framework
 
-|Задача|Связанное содержимое|
+|Задача|См. также|
 |----------|---------------------|
 |**Профилирование автономных (клиентских) приложений**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
 |**Профилирование служб**|-   [Сбор данных об использовании памяти .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
@@ -53,5 +53,5 @@ ms.locfileid: "74773063"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Анализ представлений и отчетов данных об использовании памяти .NET
 - [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Ссылка
+## <a name="reference"></a>Справочник
 - [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

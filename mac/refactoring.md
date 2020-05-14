@@ -7,13 +7,13 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691289"
 ---
-# <a name="refactoring"></a>Рефакторинг
+# <a name="refactoring"></a>Refactoring
 
 Рефакторинг кода позволяет переупорядочить, реструктуризовать и уточнить существующий код без изменения его поведения.
 
@@ -93,7 +93,7 @@ ms.locfileid: "67691289"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Быстрые действия (Visual Studio в Windows)](/visualstudio/ide/quick-actions)
 - [Рефакторинг кода (Visual Studio в Windows)](/visualstudio/ide/refactoring-in-visual-studio)

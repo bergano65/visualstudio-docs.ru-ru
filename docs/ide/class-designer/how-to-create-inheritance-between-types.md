@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590375"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Практическое руководство. Создание наследования между типами в конструкторе классов
@@ -28,7 +28,7 @@ ms.locfileid: "75590375"
 
 1. В **обозревателе решений** выберите проект и откройте файл диаграммы классов (CD-файл).
 
-     Если диаграмма классов не существует, создайте ее. См. практическое руководство по [ добавлению диаграмм классов в проекты](how-to-add-class-diagrams-to-projects.md).
+     Если диаграмма классов не существует, создайте ее. См. раздел [Практическое руководство. Добавление схем классов в проекты](how-to-add-class-diagrams-to-projects.md).
 
 2. На **панели инструментов** в разделе **Конструктор классов** щелкните элемент **Наследование**.
 
@@ -47,9 +47,9 @@ ms.locfileid: "75590375"
     >
     >  Хотя вы можете визуализировать существующие универсальные типы, создавать новые универсальные типы нельзя. Вы также не можете изменить параметры существующих универсальных типов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Наследование](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Основы наследования](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Практическое руководство. Просмотр наследования между типами в конструкторе классов](how-to-view-inheritance-between-types.md)
+- [Практическое руководство. Просмотр наследования между типами](how-to-view-inheritance-between-types.md)
 - [Классы Visual C++ в конструкторе классов](visual-cpp-classes.md)

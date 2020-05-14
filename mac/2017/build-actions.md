@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
 ms.openlocfilehash: d55ab6aea15dbad7f1cbd718136fba261dfa1c69
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983257"
 ---
 # <a name="build-actions"></a>Действия при сборке
@@ -29,6 +29,6 @@ ms.locfileid: "74983257"
 
 Кроме того, существуют действия при сборке для конкретных проектов. Проекты Xamarin.iOS имеют действие при сборке **BundleResource**, которое добавляет файл как часть пакета приложений. Сведения о действиях при сборке для Xamarin.Android см. в руководстве по [процессу сборки](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Действия сборки (Visual Studio в Windows)](/visualstudio/ide/build-actions)

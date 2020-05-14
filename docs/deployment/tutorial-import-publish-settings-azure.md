@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679190"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в Службу приложений Azure посредством импорта параметров публикации в Visual Studio
@@ -23,7 +23,7 @@ ms.locfileid: "65679190"
 
 Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Вы также можете импортировать параметры публикации для приложений [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-В этом руководстве рассмотрены следующие задачи:
+Изучив данный учебник, вы научитесь:
 
 > [!div class="checklist"]
 > * Создание файла параметров публикации из Службы приложений Azure.
@@ -35,7 +35,7 @@ ms.locfileid: "65679190"
 > [!NOTE]
 > Если вам нужно только скопировать профиль публикации Visual Studio (файл *\*.pubxml*) из одной установки Visual Studio в другую, можно найти профиль публикации *\<имя_профиля\>.pubxml* в папке *\\<имя_проекта\>\Properties\PublishProfiles* для управляемых типов проектов. Для веб-сайтов см. в папке *\App_Data*. Профили публикации являются XML-файлами MSBuild.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 ::: moniker range=">=vs-2019"
 
@@ -107,7 +107,7 @@ ms.locfileid: "65679190"
 
 [!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом руководстве вы создали файл параметров публикации, импортировали его в Visual Studio и развернули приложение ASP.NET в Службе приложений Azure. Рекомендуем вам ознакомиться с общими сведениями о параметрах публикации в Visual Studio.
 

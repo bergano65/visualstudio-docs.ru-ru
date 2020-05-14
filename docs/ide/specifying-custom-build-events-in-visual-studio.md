@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115340"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий сборки в Visual Studio
@@ -24,9 +24,9 @@ ms.locfileid: "76115340"
 
 Конкретные сведения об используемом языке программирования см. в следующих разделах.
 
-- Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# и F# — [Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ — [Указание событий сборки](/cpp/build/specifying-build-events).
 
@@ -55,9 +55,9 @@ ms.locfileid: "76115340"
   > [!NOTE]
   > Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)
 - [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Специальные знаки в MSBuild](../msbuild/msbuild-special-characters.md)
-- [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)

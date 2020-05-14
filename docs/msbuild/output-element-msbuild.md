@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594855"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633035"
 ---
 # <a name="output-element-msbuild"></a>Элемент Output (MSBuild)
+
 Сохраняет выходные данные задачи в элементах и свойствах.
 
  \<Project> \<Target> \<Task> \<Output>
@@ -39,6 +40,7 @@ ms.locfileid: "75594855"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
@@ -51,15 +53,17 @@ ms.locfileid: "75594855"
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
+
  Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 | Элемент | Описание |
 | - | - |
-| [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи MSBuild. |
 
 ## <a name="example"></a>Пример
+
  В следующем примере кода представлен элемент `Csc`, выполняемый внутри элемента `Target`. Элементы и свойства, передаваемые в качестве параметров задачи, объявляются за пределами этого сегмента кода. Значение выходного параметра `OutputAssembly` сохраняется в элементе `FinalAssemblyName`, а значение выходного параметра `BuildSucceeded` сохраняется в свойстве `BuildWorked`. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).
 
 ```xml
@@ -80,5 +84,6 @@ ms.locfileid: "75594855"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
 - [Задачи](../msbuild/msbuild-tasks.md)

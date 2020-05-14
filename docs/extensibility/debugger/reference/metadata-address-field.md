@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_FIELD | Документация Майкрософт
+title: METADATA_ADDRESS_FIELD Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd8e536c1916f22fba81ff77379c218b1f2516ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe9901ac9dab4a1ec4b5e8467f3063845dfb74f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334646"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714534"
 ---
-# <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
+# <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
 Эта структура представляет адрес поля класса или структуры.
 
@@ -43,19 +43,19 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Участники
 
 `tokField`\
-Идентификатор поля токена.
+Идентификатор маркера поля.
 
-[C++] `_mdToken` — `typedef` для 32-разрядных `int`.
+(К) `_mdToken` является `typedef` для 32-битного `int`.
 
 ## <a name="remarks"></a>Примечания
 
-Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_FIELD` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).
+Эта структура является частью соединения в `dwKind` [структуре DEBUG_ADDRESS_UNION,](../../../extensibility/debugger/reference/debug-address-union.md) когда `ADDRESS_KIND_FIELD` поле `DEBUG_ADDRESS_UNION` структуры устанавливается (значение от [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления).
 
 ## <a name="requirements"></a>Требования
 
 Заголовок: sh.h
 
-Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+Название: Microsoft.VisualStudio.Debugger.Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

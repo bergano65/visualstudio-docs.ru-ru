@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::GetConstraints | Документация Майкрософт
+title: IDebugGenericParamField::GetConstraints Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0821b98250b26d6eafa5f1e02a3c2ef8c07562f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330419"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728009"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-Получает ограничения, связанные с этим универсальным параметром.
+Извлекает ограничения, связанные с этим общим параметром.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>Параметры
 `cConstraints`\
-[in] Количество ограничений.
+(в) Количество ограничений.
 
 `ppConstraints`\
-[out] Возвращает массив, содержащий ограничения, связанные с этим полем.
+(ваут) Возвращает массив, содержащий ограничения, связанные с этим полем.
 
 `pcConstraints`\
-[in, out] Количество ограничений в `ppConstraints` массива.
+(в, вне) Количество ограничений `ppConstraints` в массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugGenericParamFieldType,** который предоставляет интерфейс [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

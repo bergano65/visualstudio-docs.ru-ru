@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Документация Майкрософт
+title: IDebugContainerfield::EnumFields Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6d3edeb677af728b1a0fd0e9cf8685e7919d79e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317935"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733223"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
-Создает перечислитель для полей контейнера.
+Создает регистратор для полей контейнера.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,25 +49,25 @@ int EnumFields(
 
 ## <a name="parameters"></a>Параметры
 `dwKindFilter`\
-[in] Сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) константы, выберите поля, которые необходимо перечислить. Типы полей можно описать типы хранилища, например класса или примитивных или определенные сведения, такие как local, параметра или указатель «this».
+(в) Сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) констант, которые выбирают поля для перечисления. Виды полей могут описывать типы хранилищ, такие как класс или примитивная, или конкретную информацию, например локальную, параметрную или "эту" указку.
 
 `dwModifiersFilter`\
-[in] Сочетание [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) константы, выберите поля, которые необходимо перечислить. Модификаторы поля могут быть разрешения на доступ, такие как public, private или хранения сведения, такие как виртуальные, статическими или окончательными.
+(в) Комбинация [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) констант, которые выбирают перечисленные поля. Полевыми модификаторами могут быть разрешения доступа, такие как общедоступные или частные, или сведения о хранении, такие как виртуальные, статические или окончательные.
 
 `pszNameFilter`\
-[in] Имя поля, которые необходимо перечислить. Это может быть значение null, если все поля должны быть возвращены.
+(в) Название поля, которое будет перечислено. Это может быть нулевая величина, если все поля должны быть возвращены.
 
 `nameMatch`\
-[in] Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисление, управляет ли поиск с учетом регистра, или нет.
+(в) Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления, которое контролирует, является ли поиск чувствительным или нет.
 
 `ppEnum`\
-[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список полей. Возвращает значение null, если нет полей.
+(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список полей. Возвращает нулевую стоимость, если нет полей.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK или S_FALSE, если нет полей. В противном случае возвращается код ошибки.
+ В случае успеха, возвращает S_OK или S_FALSE, если нет полей. В противном случае возвращается код ошибки.
 
 ## <a name="remarks"></a>Примечания
- `dwKindFilter`, `dwModifiersFilter`, И `pszNameFilter` параметры можно объединить, например, чтобы выбрать все публичные виртуальные методы, с именем «MyMethod».
+ В `dwKindFilter` `dwModifiersFilter`, `pszNameFilter` и параметры могут быть объединены, например, для выбора всех публичных виртуальных методов под названием "MyMethod".
 
 ## <a name="see-also"></a>См. также
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

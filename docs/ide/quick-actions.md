@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596961"
 ---
 # <a name="quick-actions"></a>Быстрые действия
@@ -68,7 +68,7 @@ ms.locfileid: "75596961"
 
 ![Расширенная лампочка](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание кода в Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Распространенные быстрые действия](../ide/common-quick-actions.md)

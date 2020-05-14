@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbe0dbda58a0c57cacd64c40b66cc640b779bca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593321"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633997"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath - задача
-Извлекает путь к [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
 
+Извлекает путь к пакету средств разработки программного обеспечения (SDK) Windows.
 ## <a name="task-parameters"></a>Параметры задачи
+
+В следующей таблице приводятся параметры задачи `GetFrameworkSdkPath` .
 В следующей таблице приводятся параметры задачи `GetFrameworkSdkPath` .
 
 |Параметр|Описание|
@@ -39,10 +41,12 @@ ms.locfileid: "75593321"
 |`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к последнему пакету SDK для .NET при любой из его версий. В противном случае возвращает значение `String.Empty`.|
 
 ## <a name="remarks"></a>Примечания
+
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
-Следующий пример использует задачу `GetFrameworkSdkPath` для сохранения пути к [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] в свойстве `SdkPath`.
+
+Следующий пример использует задачу `GetFrameworkSdkPath` для сохранения пути к пакету SDK Windows в свойстве `SdkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -58,5 +62,6 @@ ms.locfileid: "75593321"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

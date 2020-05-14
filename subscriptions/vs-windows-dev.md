@@ -1,17 +1,18 @@
 ---
 title: Преимущество учетной записи разработчика Windows в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Сведения об учетной записи разработчика Windows, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491281"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649712"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Учетная запись разработчика Windows в подписках Visual Studio
 Учетная запись разработчика Windows, включенная в выбранные подписки Visual Studio, позволяет отправлять в Магазин Windows платные и бесплатные приложения Windows.
@@ -42,16 +43,16 @@ ms.locfileid: "74491281"
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено       |  Yes|
-| Visual Studio Enterprise с GitHub Enterprise   | VL  | Включено       |  Yes|
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Yes|
-| Visual Studio Professional с GitHub Enterprise | VL                                        | Включено                                                            |Yes|
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено       |  Да|
+| Visual Studio Enterprise с GitHub Enterprise   | VL  | Включено       |  Да|
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да|
+| Visual Studio Professional с GitHub Enterprise | VL                                        | Включено                                                            |Да|
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                            |  Н/Д|
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              |  Недоступно                                            |  Н/Д|
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 ||
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT.*
+<sup>1</sup> *Включает:  не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -63,6 +64,12 @@ ms.locfileid: "74491281"
 - [Разработка для Windows](/windows/)
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>См. также
+- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Документация по Azure](https://docs.microsoft.com/azure/)
+- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:

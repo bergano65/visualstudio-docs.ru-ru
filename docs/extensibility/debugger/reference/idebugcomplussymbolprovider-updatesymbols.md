@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::UpdateSymbols | Документация Майкрософт
+title: IDebugComPlusSymbolProvider::UpdateSymbols Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: def89659f49b25b09e777abf3df1d71db5506537
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352769"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733501"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-Обновляет отладочные символы в память из указанного потока данных.
+Обновляет символы отладки в памяти с символами из указанного потока данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,16 +44,16 @@ int UpdateSymbols (
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-[in] Идентификатор домена приложения.
+(в) Идентификатор домена приложения.
 
 `guidModule`\
-[in] Уникальный идентификатор модуля.
+(в) Уникальный идентификатор модуля.
 
 `pUpdateStream`\
-[in] Поток данных, содержащий обновленные отладочные символы.
+(в) Поток данных, содержащий обновленные символы отладки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
+В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::UpdateSymbols(
@@ -92,7 +92,7 @@ Error:
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

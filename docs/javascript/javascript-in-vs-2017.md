@@ -10,24 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888660"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649634"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
 JavaScript — полноправный язык в Visual Studio. При написании кода JavaScript в интегрированной среде разработки Visual Studio можно использовать большинство или все стандартные средства редактирования (фрагменты кода, IntelliSense и т. д.). Код JavaScript можно написать для многих типов приложений и служб.
 
 > [!NOTE]
-> Мы подключили помощь сообщества, чтобы сделать [веб-документы MDN](https://developer.mozilla.org/en-US/) централизованным ресурсом разработки в Интернете, перенаправляя все (более 500 страниц) справочные материалы по API JavaScript корпорации Майкрософт с сайта docs.microsoft.com в их аналоги в MDN. Подробные сведения см. в этом [объявлении](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Мы подключили помощь сообщества, чтобы сделать [веб-документы MDN](https://developer.mozilla.org/en-US/) централизованным ресурсом разработки в Интернете, перенаправляя все (более 500 страниц) справочные материалы по API JavaScript корпорации Майкрософт с сайта docs.microsoft.com в их аналоги в MDN. Подробные сведения см. в этом [объявлении](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Поддержка ECMAScript 2015 (ES6) и более поздних версий
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Поддержка ECMAScript 2015 (ES6) и более поздних версий
 
 Visual Studio теперь поддерживает синтаксис обновлений языка ECMAScript, таких как ECMAScript 2015/2016.
 
@@ -59,7 +58,7 @@ TypeScript настраивается с помощью файла `tsconfig.jso
 В него следует добавить выходное расположение, а также не относящиеся к проекту папки, такие как `node_modules` или `temp`.
 - `enableAutoDiscovery`. этот параметр включает автоматическое обнаружение и скачивание файлов определений, как описано выше.
 - `compileOnSave`. этот параметр указывает компилятору, следует ли повторять компиляцию при каждом сохранении файла исходного кода в Visual Studio.
-- `typeAcquisition`. этот набор параметров управляет автоматическим получением типа (подробнее см. в [этом разделе](/visualstudio/ide/javascript-intellisense#Auto)).
+- `typeAcquisition`. этот набор параметров управляет автоматическим получением типа (подробнее см. в [этом разделе](../ide/javascript-intellisense.md#Auto)).
 
 Чтобы преобразовать файлы JavaScript в модули CommonJS и поместить их в папку `./out`, можно использовать следующий файл `tsconfig.json`.
 
@@ -119,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 IntelliSense для JavaScript в [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] теперь отображает гораздо больше информации в списках элементов и параметров. Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код. Дополнительные сведения об улучшении технологии IntelliSense см. [здесь](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Поддержка синтаксиса JSX
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> Поддержка синтаксиса JSX
 
 JavaScript в [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] обладает обширной поддержкой синтаксиса JSX. JSX — это набор синтаксиса, позволяющий использовать HTML-теги в файлах JavaScript.
 
@@ -261,7 +260,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 Поскольку новая языковая служба основана на статическом анализе, а не на механизме выполнения (сведения о различиях см. в [этой статье](https://github.com/Microsoft/TypeScript/issues/4789)), некоторые шаблоны JavaScript больше не могут быть обнаружены.
 Наиболее распространенным является шаблон "expando".
 Сейчас языковая служба не предоставляет данные IntelliSense по объектам, к которым приписываются свойства после объявления.
-Например:
+Пример:
 
 ```js
 var obj = {};

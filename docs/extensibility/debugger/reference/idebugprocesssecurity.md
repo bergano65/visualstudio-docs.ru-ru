@@ -1,24 +1,24 @@
 ---
-title: IDebugProcessSecurity | Документация Майкрософт
+title: IDebugПроцессБезопасность Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74202c4342ae5880f277299b6bb94dcdadff26f5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311418"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723190"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` реализуется, чтобы предупредить пользователя, что присоединение к процессу небезопасна поставщика порта.
+`IDebugProcessSecurity`осуществляется поставщиком порта, чтобы предупредить пользователя о небезопасности присоединение к процессу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,16 +31,16 @@ IDebugProcessSecurity : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Возвращает имя пользователя от поставщика порта.|
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Предупреждает пользователя о небезопасна, присоединение к процессу отладки.|
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Получает имя пользователя от поставщика порта.|
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Предупреждает пользователя о небезопасности привязки к процессу отладки.|
 
 ## <a name="remarks"></a>Примечания
- Реализация этого интерфейса позволяет показать предупреждение и разрешить пользователю отменить, если процесс, к которому вы присоединяете может рассматриваться как небезопасные.
+ Реализация этого интерфейса, чтобы показать предупреждение и позволить пользователю отменить, если процесс, к которому вы присоединены, может считаться небезопасным.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

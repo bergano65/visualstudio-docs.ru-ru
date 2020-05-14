@@ -16,20 +16,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c32681af56595f8b00feab4979a3ec45f1588
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: e84007c9a10618c6d757a36debe58c272302fa3e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578691"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634036"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo - задача
+
 Создает доверие к приложению из базового манифеста и из параметров `TargetZone` и `ExcludedPermissions`.
 
 ## <a name="parameters"></a>Параметры
- В следующей таблице приводятся параметры задачи `GenerateTrustInfo` .
 
-|Параметр|Описание|
+ В следующей таблице приводятся параметры задачи `GenerateTrustInfo`.
+
+|Параметр|Description|
 |---------------|-----------------|
 |`ApplicationDependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает зависимые сборки.|
 |`BaseManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает базовый манифест, на основе которого будет сформировано доверие к приложению.|
@@ -37,9 +39,11 @@ ms.locfileid: "77578691"
 |`TargetZone`|Необязательный параметр `String`.<br /><br /> Определяет набор разрешений зоны по умолчанию, получаемый из политики компьютера.|
 |`TrustInfoFile`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, содержащий сведения о безопасности доверия приложения.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
+
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

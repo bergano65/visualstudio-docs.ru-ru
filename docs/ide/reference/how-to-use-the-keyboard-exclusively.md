@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569027"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Как использовать только клавиатуру
@@ -37,7 +37,7 @@ ms.locfileid: "75569027"
 ::: moniker-end
 
 > [!NOTE]
-> Диалоговые окна и команды меню, отображаемые у вас, могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска Visual Studio. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Сброс параметров](../environment-settings.md#reset-settings).
+> Диалоговые окна и команды меню, отображаемые у вас, могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска Visual Studio. Чтобы изменить параметры, выберите **Импорт и экспорт параметров** в меню **Сервис** . Дополнительные сведения см. в разделе [Сброс параметров](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Элементы управления панели элементов
 
@@ -97,7 +97,7 @@ ms.locfileid: "75569027"
 
    Окно инструментов разместится в новом месте закрепления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)

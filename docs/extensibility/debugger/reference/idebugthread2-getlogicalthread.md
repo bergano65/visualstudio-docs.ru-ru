@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Документация Майкрософт
+title: IDebugThread2::GetLogicalThread Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetLogicalThread
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e8c1543383b3d0df0166b50359caf0f80a8b3ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320227"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718836"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Отладчики не реализуют этот метод.
+Двигатели Debug не реализуют этот метод.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,13 +43,13 @@ int GetLogicalThread( 
 
 ## <a name="parameters"></a>Параметры
 `pStackFrame`\
-[in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , представляющий кадр стека.
+(в) Объект [IDebugStackFrame2,](../../../extensibility/debugger/reference/idebugstackframe2.md) представляющий кадр стека.
 
 `ppLogicalThread`\
-[out] Возвращает `IDebugLogicalThread2` интерфейс, который представляет логический поток. Реализация ядра отладки следует выбрать значение null.
+(ваут) Возвращает `IDebugLogicalThread2` интерфейс, представляющий связанный логический поток. Реализация отладоть двигатель должна установить это в нулевую величину.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Отладка ядра реализации всегда возвращают `E_NOTIMPL`.
+ Внедрение движка debug всегда возвращается. `E_NOTIMPL`
 
 ## <a name="see-also"></a>См. также
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

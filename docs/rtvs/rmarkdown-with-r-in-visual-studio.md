@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888569"
 ---
 # <a name="create-r-markdown-documents"></a>Создание документов R Markdown
@@ -62,7 +62,7 @@ ms.locfileid: "72888569"
 
     ~~~
 
-## <a name="previews"></a>Предварительные версии
+## <a name="previews"></a>Предварительный просмотр
 
 Visual Studio 2017 версии 15.5 и более поздних версий по умолчанию поддерживает для R Markdown функцию динамического просмотра. Чтобы включить автоматическую синхронизацию между редактором и предварительным просмотром, последовательно выберите **Инструменты R** > **Markdown** > **Автоматическая синхронизация** (**CTRL**+**SHIFT**+**Y**). Если вы не используете автоматическую синхронизацию, то можете обновить содержимое предварительного просмотра, последовательно выбрав **Инструменты R** > **Markdown** > **Перезагрузить предпросмотр R Markdown**.
 

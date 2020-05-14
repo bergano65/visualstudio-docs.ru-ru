@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7ccb4f838c702cb1843d5c0f44dd7f54219f27a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589777"
 ---
 # <a name="work-with-shaders"></a>Работа с шейдерами
@@ -33,9 +33,9 @@ ms.locfileid: "75589777"
 
 Так как DGSL совместим с DGML, для анализа созданных шейдеров DGSL можно использовать любые средства, разработанные для анализа документов DGML. Дополнительные сведения о языке DGML см. в статье [Understanding Directed Graph Markup Language (DGML)](../modeling/customize-code-maps-by-editing-the-dgml-files.md) (Основные сведения о языке разметки направленных графов (DGML)).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Title|Description|
 |-----------|-----------------|
 |[Конструктор шейдеров](../designers/shader-designer.md)|Описывается работа с шейдерами с помощью редактора шейдеров Visual Studio.|
 |[Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)|Описывает типы узлов в конструкторе шейдеров, которые можно использовать для достижения графических эффектов.|

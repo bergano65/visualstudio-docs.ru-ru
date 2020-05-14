@@ -1,5 +1,5 @@
 ---
-title: DBG_ATTRIB_FLAGS | Документация Майкрософт
+title: DBG_ATTRIB_FLAGS Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fde7ac384a6b2de293fc9baf0075438c9c609236
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346299"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737560"
 ---
-# <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
-Описывает различные атрибуты для [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) или [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) интерфейс. Член [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.
+# <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
+Описывает различные атрибуты интерфейса [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) или [Интерфейса IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md) Член [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -170,55 +170,55 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Указывает, что атрибуты отсутствуют.
 
  `DBG_ATTRIB_ALL`\
- Указывает все атрибуты.
+ Отосеял все атрибуты.
 
  `DBG_ATTRIB_OBJ_IS_EXPANDABLE`\
  Указывает, что ссылка или свойство имеет дочерние элементы.
 
  `DBG_ATTRIB_OBJ_HAS_ID`\
- Указывает, что был создан идентификатор для данного объекта.
+ Означает, что идентификатор для этого объекта был создан.
 
  `DBG_ATTRIB_OBJ_CAN_HAVE_ID`\
- Указывает, что можно создать идентификатор для данного объекта.
+ Означает, что идентификатор для этого объекта может быть создан.
 
  `DBG_ATTRIB_VALUE_READONLY`\
  Указывает, что значение доступно только для чтения.
 
  `DBG_ATTRIB_VALUE_ERROR`\
- Указывает, что значение является ошибкой.
+ Означает, что значение является ошибкой.
 
  `DBG_ATTRIB_VALUE_SIDE_EFFECT`\
- Указывает, что вычисление имел побочный эффект.
+ Указывает на то, что оценка имела побочный эффект.
 
  `DBG_ATTRIB_OVERLOADED_CONTAINER`\
  Указывает, что это свойство действительно является контейнером перегрузок.
 
  `DBG_ATTRIB_VALUE_BOOLEAN`\
- Указывает, что значение в `DEBUG_PROPERTY_INFO::bstrValue` является логическое значение.
+ Указывает, что `DEBUG_PROPERTY_INFO::bstrValue` значение в Boolean.
 
  `DBG_ATTRIB_VALUE_BOOLEAN_TRUE`\
- Указывает, что значение в `DEBUG_PROPERTY_INFO::bstrValue` является логическим и `TRUE`.
+ Указывает, что `DEBUG_PROPERTY_INFO::bstrValue` значение в `TRUE`Является Boolean и .
 
  `DBG_ATTRIB_VALUE_INVALID`\
  Указывает, что значение в `DEBUG_PROPERTY_INFO::bstrValue` является недопустимым.
 
  `DBG_ATTRIB_VALUE_NAT`\
- Указывает, что значение в `DEBUG_PROPERTY_INFO::bstrValue` — "*не самое*" (NAT). NAT описывает флаг регистра в 64-разрядных процессоров Intel, указывающий отложенного наблюдающей исключения.
+ Указывает, что `DEBUG_PROPERTY_INFO::bstrValue` значение в *"не вещь"*(NAT). NAT описывает флаг регистра в 64-битных процессорах Intel, который указывает на отложенные спекулятивные исключения.
 
  `DBG_ATTRIB_VALUE_AUTOEXPANDED`\
- Указывает, что значение в `DEBUG_PROPERTY_INFO::bstrValue` возможно был развернут автоматически.
+ Означает, что `DEBUG_PROPERTY_INFO::bstrValue` значение в возможно было автоматически расширено.
 
  `DBG_ATTRIB_VALUE_TIMEOUT`\
- Указывает, что оценку истекло.
+ Означает, что оценка приурочена.
 
  `DBG_ATTRIB_VALUE_RAW_STRING`\
- Указывает, что значение в `DEBUG_PROPERTY_INFO::bstrValue` может быть представлена необработанной строки.
+ Означает, что `DEBUG_PROPERTY_INFO::bstrValue` значение в может быть представлено сырой строкой.
 
  `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`\
- Указывает, что это свойство имеет по крайней мере одно пользовательское средство просмотра, связанные с ней.
+ Означает, что это свойство имеет по крайней мере один пользовательский зритель, связанный с ним.
 
  `DBG_ATTRIB_ACCESS_NONE`\
- Указывает объект, ни `public`, `private`, ни `protected` тип доступа.
+ Указывает объект, который `public` `private`не `protected` имеет ни доступа, ни ввода.
 
  `DBG_ATTRIB_ACCESS_PUBLIC`\
  Указывает объект, имеющий общий доступ.
@@ -233,10 +233,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Указывает объект, имеющий финальный доступ.
 
  `DBG_ATTRIB_ACCESS_ALL`\
- Маска для извлечения атрибуты доступа из `DBG_ATTRIB_FLAGS`.
+ Маска для извлечения `DBG_ATTRIB_FLAGS`атрибутов доступа из .
 
  `DBG_ATTRIB_STORAGE_NONE`\
- Указывает, что имеется не указан тип хранилища.
+ Означает, что нет указанного типа хранилища.
 
  `DBG_ATTRIB_STORAGE_GLOBAL`\
  Указывает глобальное хранилище.
@@ -245,72 +245,72 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Указывает статическое хранилище.
 
  `DBG_ATTRIB_STORAGE_REGISTER`\
- Указывает хранилище в регистре.
+ Указывает на хранение в регистре.
 
  `DBG_ATTRIB_STORAGE_ALL`\
- Маска для извлечения атрибутов хранилища из `DBG_ATTRIB_FLAGS`.
+ Маска для извлечения `DBG_ATTRIB_FLAGS`атрибутов хранения из .
 
  `DBG_ATTRIB_TYPE_NONE`\
- Указывает, что нет никакой модификатор типа.
+ Означает, что нет модификатора типа.
 
  `DBG_ATTRIB_TYPE_VIRTUAL`\
- Указывает, что тип объекта является виртуальным.
+ Означает, что тип объекта является виртуальным.
 
  `DBG_ATTRIB_TYPE_CONSTANT`\
  Указывает, что тип объекта является константой.
 
  `DBG_ATTRIB_TYPE_SYNCHRONIZED`\
- Указывает, что тип объекта синхронизации.
+ Означает, что тип объекта синхронизирован.
 
  `DBG_ATTRIB_TYPE_VOLATILE`\
- Указывает, что тип объекта является временным.
+ Означает, что тип объекта является нестабильным.
 
  `DBG_ATTRIB_TYPE_ALL`\
- Маска для извлечения атрибутов типа `DBG_ATTRIB_FLAGS`.
+ Маска для извлечения `DBG_ATTRIB_FLAGS`атрибутов типа из .
 
  `DBG_ATTRIB_DATA`\
- Указывает, что этот объект поля данных.
+ Означает, что этот объект является полем данных.
 
  `DBG_ATTRIB_METHOD`\
- Указывает, что этот объект является методом.
+ Означает, что этот объект является методом.
 
  `DBG_ATTRIB_PROPERTY`\
- Указывает, что этот объект является свойством.
+ Означает, что этот объект является свойством.
 
  `DBG_ATTRIB_CLASS`\
- Указывает, что этот объект является классом.
+ Означает, что этот объект является классом.
 
  `DBG_ATTRIB_BASECLASS`\
- Указывает, что этот объект является базовым классом.
+ Означает, что этот объект является базовым классом.
 
  `DBG_ATTRIB_INTERFACE`\
- Указывает, что этот объект является интерфейсом.
+ Означает, что этот объект является интерфейсом.
 
  `DBG_ATTRIB_INNERCLASS`\
- Указывает, что этот объект внутреннего класса.
+ Означает, что этот объект является внутренним классом.
 
  `DBG_ATTRIB_MOSTDERIVED`\
- Указывает, что этот объект "*самого дальнего*". Термин "*самого дальнего*" означает фактический тип объекта, а не тип ссылки.
+ Означает, что этот объект является *«наиболее полученным».* Термин *«наиболее полученный»* означает фактический тип объекта, а не тип его ссылки.
 
  `DBG_ATTRIB_CHILD_ALL`\
- Указывает маску `DBG_ATTRIB_DATA` через `DBG_ATTRIB_MOSTDERIVED`.
+ Указывает маску `DBG_ATTRIB_DATA` `DBG_ATTRIB_MOSTDERIVED`через .
 
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
- Указывает, что объект имеет несколько пользовательских средств просмотра, связанные с ней.
+ Означает, что объект имеет несколько пользовательских зрителей, связанных с ним.
 
 ## <a name="remarks"></a>Примечания
 
 > [!NOTE]
-> Значения в этом перечислении фактически не определенные в сборке для C#. Вместо этого необходимо скопировать определения в файле исходного кода.
+> Значения в этом перечислении фактически не определены в сборке для C. Вместо этого необходимо скопировать определения в исходный файл.
 
- Эти флаги также используются для фильтрации дочерних элементов объекта, например, при передаче в качестве аргумента для [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Значения могут объединяться с побитовым объектом `OR`.
+ Эти флаги также используются для фильтрации детей объекта, например, при передавале в качестве аргумента [В.И.](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) Значения могут быть объединены с `OR`bitwise .
 
- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` Флаг, чтобы указать для [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] для получения [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс из [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс и вызов [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) список пользовательских средств просмотра.
+ Флаг `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` является указанием [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] получить интерфейс [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) из интерфейса [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) и вызвать [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) для списка пользовательских зрителей.
 
 ## <a name="requirements"></a>Требования
- Header: msdbg.h
+ Заголовок: msdbg.h
 
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop
+ Название: Microsoft.VisualStudio.Debugger.Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

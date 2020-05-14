@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Документация Майкрософт
+title: OPTNAMECHANGEPFN Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6107f48f4680cef9cbb825f4d760f3f0bac1ec1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336229"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702251"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Это функция обратного вызова, указанный в вызове к [SccSetOption](../extensibility/sccsetoption-function.md) (с помощью параметра `SCC_OPT_NAMECHANGEPFN`) и используется для связи имя изменения, внесенные системой управления версиями подключаемого модуля обратно в интегрированной среде разработки.
+Это функция обратного вызова, указанная в вызове в `SCC_OPT_NAMECHANGEPFN` [SccSetOption](../extensibility/sccsetoption-function.md) (с использованием опции) и используется для передачи изменений имен, внесенных плагином управления исходным управлением обратно в IDE.
 
-## <a name="signature"></a>Подпись
+## <a name="signature"></a>Сигнатура
 
 ```cpp
 typedef void (*OPTNAMECHANGEPFN)(
@@ -35,24 +35,24 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="parameters"></a>Параметры
  pvCallerData
 
-[in] Значение пользователя, указанное в предыдущем вызове [SccSetOption](../extensibility/sccsetoption-function.md) (с помощью параметра `SCC_OPT_USERDATA`).
+(в) Значение пользователя, указанное в предыдущем вызове на `SCC_OPT_USERDATA` [SccSetOption](../extensibility/sccsetoption-function.md) (с использованием опции).
 
  pszOldName
 
-[in] Имя исходного файла.
+(в) Исходное имя файла.
 
  pszNewName
 
-[in] Назовите файл был переименован в.
+(в) Имя файла было переименовано.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Отсутствует.
+ Нет.
 
 ## <a name="remarks"></a>Примечания
- При переименовании файла во время операции управления версиями, подключаемый модуль системы управления версиями может уведомить об изменении через этот обратный вызов интегрированной среды разработки.
+ Если файл переименован во время операции управления исходным источником, плагин управления исходным элементом может уведомить IDE об изменении имени с помощью этого обратного вызова.
 
- Если интегрированная среда разработки не поддерживает этот обратный вызов, он не вызывает [SccSetOption](../extensibility/sccsetoption-function.md) указать его. Если подключаемый модуль не поддерживает этот обратный вызов, он будет возвращать `SCC_E_OPNOTSUPPORTED` из `SccSetOption` функционировать при попытке задать обратный вызов интегрированной среды разработки.
+ Если IDE не поддерживает этот обратный вызов, он не будет называть [SccSetOption,](../extensibility/sccsetoption-function.md) чтобы указать его. Если плагин не поддерживает этот обратный вызов, он вернется `SCC_E_OPNOTSUPPORTED` из `SccSetOption` функции, когда IDE попытается установить обратный вызов.
 
 ## <a name="see-also"></a>См. также
-- [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [Функции обратного вызова, реализованные IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

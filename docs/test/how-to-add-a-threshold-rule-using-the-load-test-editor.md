@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1389df0c307ad6ec65575fc7934e622928a0ca1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591636"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Практическое руководство. Добавление правила порога с помощью редактора тестовой нагрузки
@@ -36,12 +36,12 @@ ms.locfileid: "75591636"
 
      Откроется диалоговое окно **Добавление правила порога**.
 
-5. Можно выбрать один из двух типов правил: **Сравнить с константой** и **Сравнить со счетчиком**. Выберите нужный тип и установите значения.
+5. Можно выбрать один из двух типов правил: **сравнивать с константой** или **сравнивать счетчики**. Выберите нужный тип и установите значения.
 
     > [!NOTE]
     > Чтобы нарушением считалось превышение порогового значения, установите для свойства **Оповещать при превышении** значение **True**, а чтобы нарушением считалось получение показания ниже порогового значения, установите значение **False**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анализ нарушений правил порогов](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Указание наборов счетчиков и правил порогов для компьютеров в нагрузочном тесте](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
