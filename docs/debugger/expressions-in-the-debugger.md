@@ -1,5 +1,5 @@
 ---
-title: Выражения в отладчике Документы Майкрософт
+title: Использование выражений в отладчике | Документация Майкрософт
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -21,15 +21,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
 ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "79301137"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>Выражения в визуальной студии отладчик
+# <a name="expressions-in-the-visual-studio-debugger"></a>Выражения в отладчике Visual Studio
 В состав отладчика Visual Studio входят вычислители выражений, которые работают при вводе выражения в диалоговое окно **Быстрая проверка** , окно **Контрольные значения** или окно **Интерпретация** . Вычислители выражений также работают в окне **точки останова** и многих других местах в отладчике.
 
-В следующих разделах описаны ограничения оценки выражения для языков, поддерживаемых Visual Studio.
+В следующих разделах описываются ограничения на вычисление выражений для языков, поддерживаемых Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>Выражения F# не поддерживаются.
 Выражения F# не распознаются. При отладке кода F# необходимо перевести выражения в синтаксис C# перед вводом этих выражений в окно отладчика или диалоговое окно. Выполняя перевод выражений F# в синтаксис C#, помните, что в C# в качестве оператора проверки равенства используется `==` , а в F# — одинарный знак `=`.
@@ -99,12 +99,12 @@ int main()
 
 |Область|Встроенные функции|
 |----------|-------------------------|
-|**Длина строки**|[strlen, wcslen,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l) [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**Сравнение строк**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp,](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp) [_stricmp, _strcmpi, _wcsicmp, _wcscmpi,](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l) [strncmp, wcsncmp,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l) [strnicmp, wcsnicmp,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp) [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**Поиск строки**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr,](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr) [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Длина строки**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Сравнение строк**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**Поиск строки**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
 |**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRaw](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Для этих функций требуется, чтобы отлаживаемый процесс выполнялся в Windows 8. Для отладки файлов дампа, сгенерированных устройством Windows 8, также необходимо, чтобы компьютер Visual Studio работал под управлением Windows 8. В то же время, если устройство Windows 8 отлаживается удаленно, допускается работа компьютера Visual Studio под управлением Windows 7.|
-|**Разное**|__log2 // Возвращает базу журнала 2 указанного ряда, округленную до ближайшего нижнего ряда.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Параллелс::array<>::оператор (индекс<>» и оператор (индекс<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Параллель::array<>::оператор (int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Параллелис::массив<>::оператор (tiled_index<>) и оператор (tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Параллелизм::array_view<>:Оператор (индекс<>) и оператор (индекс<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Параллел: array_view<>:оператор (int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Параллелс::array_view<>:операторtiled_index<> и оператор (tiled_index<>)<br /><br />TreeTraverse_Init // Инициализирует новое дерево обхода<br /><br />TreeTraverse_Next // Возвращает узлы на дереве<br /><br />TreeTraverse_Skip // Пропускает узлы в ожидании обхода дерева'|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Для этих функций требуется, чтобы отлаживаемый процесс выполнялся в Windows 8. Для отладки файлов дампа, сгенерированных устройством Windows 8, также необходимо, чтобы компьютер Visual Studio работал под управлением Windows 8. В то же время, если устройство Windows 8 отлаживается удаленно, допускается работа компьютера Visual Studio под управлением Windows 7.|
+|**Прочее**|__log2 // Возвращает значение логарифма по основанию 2 от указанного целого числа, округленное до ближайшего меньшего целого числа.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] и operator(index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] и operator(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] и operator(index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] и operator(tiled_index<>)<br /><br />TreeTraverse_Init // Инициализирует новое прохождение по дереву<br /><br />TreeTraverse_Next // Возвращает узлы в дереве<br /><br />TreeTraverse_Skip // Пропускает узлы при незавершенном прохождении по дереву|
 
 ## <a name="ccli---unsupported-expressions"></a>Неподдерживаемые выражения C++/CLI
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>Неподдерживаемые выражения C#
 
 ### <a name="dynamic-objects"></a>Динамические объекты
-В выражениях отладчика можно использовать статически типизированные переменные как динамические. При оценке <xref:System.Dynamic.IDynamicMetaObjectProvider> объектов, реализуемых в окне Watch, добавляется узла Dynamic View. Узел динамического представления отображает члены объектов, но не позволяет изменять значения этих членов.
+В выражениях отладчика можно использовать статически типизированные переменные как динамические. При вычислении в окне контрольных значений объектов, реализующих интерфейс <xref:System.Dynamic.IDynamicMetaObjectProvider>, добавляется узел динамического представления. Узел динамического представления отображает члены объектов, но не позволяет изменять значения этих членов.
 
 Следующие возможности динамических объектов не поддерживаются:
 
@@ -204,8 +204,8 @@ int main()
 
 - Ключевые слова пространства имен или уровня модуля, например `End Sub` или `Module`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Определители формата в C++](../debugger/format-specifiers-in-cpp.md)
-- [Context Operator (C++)](../debugger/context-operator-cpp.md)
-- [Спецификаторы формата в C #](../debugger/format-specifiers-in-csharp.md)
+- [Оператор Context (C++)](../debugger/context-operator-cpp.md)
+- [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)
 - [Псевдопеременные](../debugger/pseudovariables.md)

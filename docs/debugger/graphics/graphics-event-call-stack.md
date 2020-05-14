@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735515"
@@ -22,7 +22,7 @@ ms.locfileid: "72735515"
 
  Окно «Стек вызовов событий» выглядит так:
 
- ![Стек вызовов, предшествующий событию Дравиндексед.](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
+ ![Стек вызовов, предшествующий событию DrawIndexed.](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
 
 ## <a name="understanding-the-graphics-event-call-stack"></a>Основные сведения о стеке вызовов событий графики
  Стек вызовов событий можно использовать для анализа потока выполнения, который привел к определенному событию Direct3D. Это окно напоминает окно стека вызовов Visual Studio за тем исключением, что вместо вывода текущего стека вызовов активного потока в выполняющемся приложении отображается стек вызовов в том состоянии, которое существовало, когда произошло выбранное событие Direct3D. Из стека вызовов событий можно перейти к месту вызова выбранного события Direct3D, чтобы проверить окружающий код.
@@ -42,4 +42,4 @@ ms.locfileid: "72735515"
  Для анализа выбранного события графики могут понадобиться сведения об объектах Direct3D, с которыми оно связано. В окне **Стек вызовов событий графики** есть ссылки на эти сведения.
 
 ## <a name="see-also"></a>См. также
-- [Пошаговое руководство. Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Пошаговое руководство: Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)

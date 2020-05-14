@@ -1,5 +1,5 @@
 ---
-title: Команды меню | Документация Майкрософт
+title: Команды меню | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62931310"
 ---
 # <a name="menu-commands"></a>Команды меню
-Разделы справки в этом разделе перечислены команды, доступные в меню Spy ++.
+В разделах справки в этом разделе перечислены команды, доступные в меню Spy ++.
 
 ## <a name="in-this-section"></a>В этом разделе
- [Команды меню шпион](../debugger/spy-menu-commands.md) описание всех команд, доступных из **Spy** меню.
+ [Команды меню Spy](../debugger/spy-menu-commands.md) — описание каждой команды, доступной в меню **Spy**.
 
- [Дерево команд меню](../debugger/tree-menu-commands.md) описание всех команд, доступных из **дерева** меню.
+ [Команды меню Tree (Дерево)](../debugger/tree-menu-commands.md) — описание каждой команды, доступной в меню **Tree** (Дерево).
 
- [Поиск команды меню](../debugger/search-menu-commands.md) описание всех команд, доступных из **поиска** меню.
+ [Команды меню Search (Поиск)](../debugger/search-menu-commands.md) — описание каждой команды, доступной в меню **Search** (Поиск).
 
- [Просмотреть команды меню](../debugger/view-menu-commands.md) описание всех команд, доступных из **представление** меню.
+ [Команды меню View (Вид)](../debugger/view-menu-commands.md) — описание каждой команды, доступной в меню **View** (Вид).
 
- [Сообщения команды меню](../debugger/messages-menu-commands.md) описание всех команд, доступных из **сообщений** меню.
+ [Команды меню Messages (Сообщения)](../debugger/messages-menu-commands.md) — описание каждой команды, доступной в меню **Messages** (Сообщения).
 
- [Команды меню "окно"](../debugger/window-menu-commands.md) описание всех команд, доступных из **окно** меню.
+ [Команды меню View (Представление)](../debugger/window-menu-commands.md) — описание каждой команды, доступной в меню **View** (Представление).
 
- [Команды меню "Справка"](../debugger/help-menu-commands.md) описание всех команд, доступных из **помочь** меню.
+ [Команды меню Help (Справка)](../debugger/help-menu-commands.md) — описание каждой команды, доступной в меню **Help** (Справка).
 
 ## <a name="related-sections"></a>Связанные разделы
- [Использование Spy ++](../debugger/using-spy-increment.md) представлены средства Spy ++ и рассказывается, как он может использоваться.
+ [Использование Spy++.](../debugger/using-spy-increment.md) Содержит вводные сведения о средстве Spy++ и его использовании.
 
- [Представления Spy ++](../debugger/spy-increment-views.md) описываются представления дерева Spy ++ окон, сообщений, процессов и потоков.
+ [Представления Spy++.](../debugger/spy-increment-views.md) Содержит сведения о представлениях Spy++ в виде деревьев окон, сообщений, процессов и потоков.
 
- [Справочник по Spy ++](../debugger/spy-increment-reference.md) включает этот раздел и разделы с описанием каждого Spy ++ диалогового окна.
+ [Справочник по Spy++](../debugger/spy-increment-reference.md) содержит разделы с описанием каждого диалогового окна Spy++.

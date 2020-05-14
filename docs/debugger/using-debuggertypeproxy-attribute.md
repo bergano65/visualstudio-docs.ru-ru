@@ -19,14 +19,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728722"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Сообщить отладчику, какой тип отображать с помощью атрибута DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Информирование отладчика о том, что отображать, с помощью атрибута DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
-Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
+Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и изменяет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.
 
 Данный атрибут может применяться к:
 
@@ -35,7 +35,7 @@ ms.locfileid: "72728722"
 - Сборки
 
 > [!NOTE]
-> Для машинного кода этот атрибут поддерживается только в C++коде/CLI.
+> При использовании нативного кода этот атрибут поддерживается только в коде C++/CLI.
 
 Класс прокси-типа должен иметь конструктор, принимающий аргумент типа, который будет заменен прокси. Отладчик создает новый экземпляр класса прокси-типа всякий раз, когда требуется отобразить переменную конечного типа. Это может сказываться на производительности. Поэтому не следует выполнять в конструкторе больше действий, чем это действительно необходимо.
 
@@ -43,11 +43,11 @@ ms.locfileid: "72728722"
 
 Прокси-тип рекомендуется делать закрытым вложенным классом внутри класса, к которому применяется атрибут. В этом случае он может легко получить доступ к внутренним членам.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> могут быть унаследованы, поэтому если в базовом классе указан прокси-тип, он будет применяться к любым производным классам, если только эти производные классы не задают свой собственный тип прокси.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> может наследоваться, поэтому если в базовом классе указан прокси типа, он будет применяться к любым производным классам, если только эти производные классы не задают свой собственный прокси типа.
 
 Если атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> используется на уровне сборки, параметр `Target` указывает тип, который заменяется прокси.
 
-Пример использования этого атрибута вместе с <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerTypeProxyAttribute> см. в разделе[Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
+См. пример использования этого атрибута с <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerTypeProxyAttribute> в руководстве по [использованию атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
 ## <a name="using-generics-with-debuggertypeproxy"></a>Использование универсальных типов с атрибутом DebuggerTypeProxy
 
@@ -59,7 +59,7 @@ ms.locfileid: "72728722"
 
 Этот синтаксис необходимо использовать при использовании универсального типа в качестве целевого типа в атрибуте `DebuggerTypeProxy`. Атрибут `DebuggerTypeProxy` предположит параметры типа самостоятельно.
 
-Дополнительные сведения об открытых и закрытых типах см C# [ C# . в разделе](/dotnet/csharp/language-reference/language-specification)20.5.2 Open and Closed Types.
+См. сведения об открытых и закрытых типах в C# в разделе 20.5.2, посвященному открытым и закрытым типам, в [спецификации языка C#](/dotnet/csharp/language-reference/language-specification).
 
 В Visual Basic синтаксис для открытых типов не поддерживается, поэтому данный способ для Visual Basic не подходит. Вместо этого необходимо использовать строковое представление имени открытого типа.
 

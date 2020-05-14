@@ -1,5 +1,5 @@
 ---
-title: Использование автономного сборщика IntelliTrace | Документация Майкрософт
+title: Использование автономного сборщика данных IntelliTrace | Документация Майкрософт
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -14,31 +14,31 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a5349c08497bc52c32a4ffed30b74f2d3bd71e4e
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911315"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика IntelliTrace (C#, Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика данных IntelliTrace (C#, Visual Basic)
 
 **Автономный сборщик IntelliTrace** позволяет собирать диагностические данные IntelliTrace для приложений на производственных серверах или в других средах без установки Visual Studio на целевом компьютере и без изменения среды в целевой системе. Автономный сборщик IntelliTrace работает в веб-приложениях, а также приложениях SharePoint, WPF и Windows Forms. По окончании сбора данных просто удалите сборщик.
 
- Посмотрите IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в производстве для отладки (видео на канале 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
+ Посмотрите IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в производстве для отладки (видео на канале 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > Те же данные IntelliTrace для веб-приложений и приложений SharePoint, которые выполняются на удаленных компьютерах, также можно собирать с помощью **Microsoft Monitoring Agent** в режиме **трассировки** .
 >
-> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. раздел [использование Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
-> Изолированный сборщик IntelliTrace не поддерживает обработку моментальных снимков.
+> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. статью [Использование Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Автономный сборщик IntelliTrace не поддерживает обработку моментальных снимков.
 
- **Requirements**
+ **Требования**
 
-- .NET Framework 3,5 или более поздней версии
+- .NET Framework 3.5 или более поздней версии
 
 - Visual Studio Enterprise (не Professional и не Community) на компьютере разработчика или на другом компьютере для открытия ITRACE-файлов
 
   > [!NOTE]
-  > Убедитесь, что файлы символов (.pdb) сохранены. Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. раздел [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+  > Убедитесь, что файлы символов (.pdb) сохранены. Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. статью [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
   **FAQ**
 
@@ -50,15 +50,15 @@ ms.locfileid: "72911315"
 
 - [Где еще можно получить данные IntelliTrace?](#WhereElse)
 
-## <a name="WhatApps"></a> Какие приложения работают со сборщиком?
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a> Какие приложения работают со сборщиком?
 
-- ASP.NET веб-приложения, размещенные на службы IIS (IIS) версии 7,0, 7,5, 8,0, 12,0 и 16,0
+- Веб-приложения ASP.NET, размещенные в службах IIS, версия 7.0, 7.5, 8.0, 12.0 и 16.0
 
 - Приложения SharePoint 2010 и SharePoint 2013
 
 - Приложения Windows Presentation Foundation (WPF) и Windows Forms.
 
-## <a name="GetStarted"></a> Начало работы
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a> Начало работы
 
 1. [Установка сборщика](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -70,19 +70,19 @@ ms.locfileid: "72911315"
 
 5. [Сбор данных из веб-приложения или приложения SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     \- или -
+     -или-
 
      [Сбор данных из управляемого приложения](#BKMK_Collect_Data_from_Executables)
 
 6. [Откройте файл ITRACE в Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Установка сборщика
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Установка сборщика
 
 1. На сервере приложения создайте каталог сборщика, например: **C:\IntelliTraceCollector**
 
-2. Получите сборщик из [центра загрузки Майкрософт](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019), [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)или из папки установки Visual Studio 2013 обновление 3. [IntelliTrace Collector для Visual Studio 2013 с обновлением 4](https://www.microsoft.com/download/details.aspx?id=44909)::
+2. Скачайте сборщик из [Центра загрузки Майкрософт](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019), [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017) или из папки установки Visual Studio 2013 с обновлением 3. [IntelliTrace Collector для Visual Studio 2013 с обновлением 4](https://www.microsoft.com/download/details.aspx?id=44909)::
 
-   - **Центр загрузки Майкрософт** или **My.VisualStudio.com**:
+   - **Центр загрузки Майкрософт** или **my.visualstudio.com**:
 
      1. Рядом с **IntelliTraceCollector.exe**выберите **Загрузка**.
 
@@ -94,9 +94,9 @@ ms.locfileid: "72911315"
 
    - **Папка установки Visual Studio**:
 
-     1. Скопируйте IntelliTraceCollection. cab из папки, в которой установлен сборщик, например:
+     1. Скопируйте файл IntelliTraceCollection.cab из папки, в которой установлен сборщик, например:
 
-          **.. \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
+          **..\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
 
           или для предыдущих версий Visual Studio:
 
@@ -117,13 +117,13 @@ ms.locfileid: "72911315"
        > [!NOTE]
        > Точка ( **.** ) сохраняет вложенные папки, которые содержат локализованные планы сбора данных.
 
-## <a name="ConfigurePermissionsRunningCollector"></a> Настройка разрешений для каталога сборщика
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a> Настройка разрешений для каталога сборщика
 
 1. На сервере приложения откройте окно командной строки с правами администратора.
 
 2. С помощью Windows-команды **icacls** предоставьте администратору полные права на каталог сборщика на сервере. Пример:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<домаин\администраторид >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3. Для сбора данных для веб-приложения или приложения SharePoint:
 
@@ -145,11 +145,11 @@ ms.locfileid: "72911315"
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Установка командлетов PowerShell IntelliTrace для сбора данных для веб-приложений или приложений SharePoint
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Установка командлетов PowerShell IntelliTrace для сбора данных для веб-приложений или приложений SharePoint
 
 1. На сервере приложения убедитесь, что компонент PowerShell включен. Для большинства версий Windows Server эту функцию можно добавить в средство администрирования **Server Manager** .
 
-     ![Добавление PowerShell с помощью диспетчер сервера](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![Добавление PowerShell с помощью диспетчера серверов](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. Установите командлеты IntelliTrace PowerShell.
 
@@ -169,7 +169,7 @@ ms.locfileid: "72911315"
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Настройка разрешений для каталога с ITRACE-файлами
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Настройка разрешений для каталога с ITRACE-файлами
 
 1. На сервере приложения создайте каталог для ITRACE-файлов, например: **C:\IntelliTraceLogFiles**
 
@@ -195,7 +195,7 @@ ms.locfileid: "72911315"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       \- или -
+       -или-
 
    - Чтобы настроить разрешения с помощью проводника Windows:
 
@@ -213,7 +213,7 @@ ms.locfileid: "72911315"
 
      7. Убедитесь, что для пула приложений установлен **полный доступ**.
 
-## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Сбор данных из веб-приложения или приложения SharePoint
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Сбор данных из веб-приложения или приложения SharePoint
 
 1. Для запуска процесса сбора данных откройте окно командной строки PowerShell с правами администратора, а затем выполните следующую команду:
 
@@ -229,8 +229,8 @@ ms.locfileid: "72911315"
     |||
     |-|-|
     |*ApplicationPool*|Имя пула приложений, где выполняется конкретное приложение|
-    |*PathToCollectionPlan*|Путь к плану сбора данных (XML-файлу, который позволяет настроить параметры сборщика).<br /><br /> Можно указать план, поставляемый вместе со сборщиком. Для веб-приложений и приложений SharePoint работают следующие планы:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Собирает только события IntelliTrace и SharePoint, включая исключения, вызовы базы данных и запросы веб-сервера.<br />-   collection_plan.ASP.NET.trace.xml<br />     Собирает вызовы функций и все данные в файле collection_plan.ASP.NET.default.xml. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения в большей степени, чем collection_plan.ASP.NET.default.xml.<br /><br /> Во избежание снижения производительности приложения настройте эти планы или создайте собственный план. Для обеспечения безопасности размещайте все пользовательские планы в той же безопасной папке, что и файлы сборщика. См. раздел [Создание и настройка планов сбора данных IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) и [Как получить подробные данные, не замедляя работу приложения?](#Minimizing) **Примечание.**  По умолчанию максимальный размер iTrace-файла составляет 100 МБ. Если ITRACE-файл достигает этого предела, сборщик удаляет в нем самые старые записи, чтобы освободить место для новых записей. Чтобы изменить это ограничение, введите другое значение для атрибута `MaximumLogFileSize` плана сбора данных. <br /><br /> *Где можно найти локализованные версии этих планов сбора данных?*<br /><br /> Локализованные планы можно найти во вложенных папках сборщика.|
-    |*FullPathToITraceFileDirectory*|Полный путь к каталогу ITRACE-файлов. **Примечание по безопасности.**  Укажите полный путь, а не относительный путь.|
+    |*PathToCollectionPlan*|Путь к плану сбора данных (XML-файлу, который позволяет настроить параметры сборщика).<br /><br /> Можно указать план, поставляемый вместе со сборщиком. Для веб-приложений и приложений SharePoint работают следующие планы:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Собирает только события IntelliTrace и SharePoint, включая исключения, вызовы базы данных и запросы веб-сервера.<br />-   collection_plan.ASP.NET.trace.xml<br />     Собирает вызовы функций и все данные в файле collection_plan.ASP.NET.default.xml. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения в большей степени, чем collection_plan.ASP.NET.default.xml.<br /><br /> Во избежание снижения производительности приложения настройте эти планы или создайте собственный план. Для обеспечения безопасности размещайте все пользовательские планы в той же безопасной папке, что и файлы сборщика. См. раздел [Создание и настройка планов сбора данных IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) и [Как получить подробные данные, не замедляя работу приложения?](#Minimizing) **Примечание.**  По умолчанию максимальный размер ITRACE-файла составляет 100 МБ. Если ITRACE-файл достигает этого предела, сборщик удаляет в нем самые старые записи, чтобы освободить место для новых записей. Чтобы изменить это ограничение, введите другое значение для атрибута `MaximumLogFileSize` плана сбора данных. <br /><br /> *Где можно найти локализованные версии этих планов сбора данных?*<br /><br /> Локализованные планы можно найти во вложенных папках сборщика.|
+    |*FullPathToITraceFileDirectory*|Полный путь к каталогу ITRACE-файлов. **Примечание о безопасности.**  Указывайте полный, а не относительный путь.|
 
      Сборщик присоединяется к пулу приложений и начинает сбор данных.
 
@@ -238,9 +238,9 @@ ms.locfileid: "72911315"
 
 2. Воспроизведите проблему.
 
-3. Чтобы создать контрольную точку для iTrace-файла, используйте следующий синтаксис:
+3. Чтобы создать контрольную точку ITRACE-файла, используйте следующий синтаксис:
 
-     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
+     `Checkpoint-IntelliTraceCollection``"` *\<ApplicationPool>* `"`
 
 4. Для проверки состояния процесса сбора данных используйте следующий синтаксис:
 
@@ -248,14 +248,14 @@ ms.locfileid: "72911315"
 
 5. Для останова процесса сбора данных используйте следующий синтаксис:
 
-     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
+     `Stop-IntelliTraceCollection``"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     > После выполнения этой команды введите **Y** для подтверждения останова сбора данных. В противном случае сборщик может продолжить процесс сбора данных, ITRACE-файл останется заблокирован, или в файле будут отсутствовать полезные данные.
 
 6. [Откройте файл ITRACE в Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_Collect_Data_from_Executables"></a> Сбор данных из управляемого приложения
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a> Сбор данных из управляемого приложения
 
 1. Для запуска приложения и одновременного сбора данных используйте следующий синтаксис:
 
@@ -268,29 +268,29 @@ ms.locfileid: "72911315"
     |||
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Полный путь к исполняемому файлу сборщика (IntelliTraceSC.exe)|
-    |*PathToCollectionPlan*|Путь к плану сбора данных (XML-файлу, который позволяет настроить параметры сборщика).<br /><br /> Можно указать план, поставляемый вместе со сборщиком. Для управляемых приложений работают следующие планы:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Собирает только события IntelliTrace, включая исключения, вызовы базы данных и запросы веб-сервера.<br />-   collection_plan.ASP.NET.trace.xml<br />     Собирает вызовы функций и все данные в файле collection_plan.ASP.NET.default.xml. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения в большей степени, чем collection_plan.ASP.NET.default.xml.<br /><br /> Во избежание снижения производительности приложения настройте эти планы или создайте собственный план. Для обеспечения безопасности размещайте все пользовательские планы в той же безопасной папке, что и файлы сборщика. См. раздел [Создание и настройка планов сбора данных IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) и [Как получить подробные данные, не замедляя работу приложения?](#Minimizing) **Примечание.**  По умолчанию максимальный размер iTrace-файла составляет 100 МБ. Если ITRACE-файл достигает этого предела, сборщик удаляет в нем самые старые записи, чтобы освободить место для новых записей. Чтобы изменить это ограничение, введите другое значение для атрибута `MaximumLogFileSize` плана сбора данных. <br /><br /> *Где можно найти локализованные версии этих планов сбора данных?*<br /><br /> Локализованные планы можно найти во вложенных папках сборщика.|
-    |*полный_путь_к_каталогу_с_файлом_itrace_и_имя_файла*|Полный путь к каталогу ITRACE-файлов и имя ITRACE-файла с расширением **.itrace** . **Примечание по безопасности.**  Укажите полный путь, а не относительный путь.|
+    |*PathToCollectionPlan*|Путь к плану сбора данных (XML-файлу, который позволяет настроить параметры сборщика).<br /><br /> Можно указать план, поставляемый вместе со сборщиком. Для управляемых приложений работают следующие планы:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Собирает только события IntelliTrace, включая исключения, вызовы базы данных и запросы веб-сервера.<br />-   collection_plan.ASP.NET.trace.xml<br />     Собирает вызовы функций и все данные в файле collection_plan.ASP.NET.default.xml. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения в большей степени, чем collection_plan.ASP.NET.default.xml.<br /><br /> Во избежание снижения производительности приложения настройте эти планы или создайте собственный план. Для обеспечения безопасности размещайте все пользовательские планы в той же безопасной папке, что и файлы сборщика. См. раздел [Создание и настройка планов сбора данных IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) и [Как получить подробные данные, не замедляя работу приложения?](#Minimizing) **Примечание.**  По умолчанию максимальный размер ITRACE-файла составляет 100 МБ. Если ITRACE-файл достигает этого предела, сборщик удаляет в нем самые старые записи, чтобы освободить место для новых записей. Чтобы изменить это ограничение, введите другое значение для атрибута `MaximumLogFileSize` плана сбора данных. <br /><br /> *Где можно найти локализованные версии этих планов сбора данных?*<br /><br /> Локализованные планы можно найти во вложенных папках сборщика.|
+    |*полный_путь_к_каталогу_с_файлом_itrace_и_имя_файла*|Полный путь к каталогу ITRACE-файлов и имя ITRACE-файла с расширением **.itrace** . **Примечание о безопасности.**  Указывайте полный, а не относительный путь.|
     |*путь_к_исполняемому_файлу_приложения_и_его_имя*|Путь к управляемому приложению и имя файла для него|
 
 2. Для останова процесса сбора данных выйдите из приложения.
 
 3. [Откройте файл ITRACE в Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Откройте файл ITRACE в Visual Studio Enterprise.
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a> Откройте файл ITRACE в Visual Studio Enterprise.
 
 > [!NOTE]
-> Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. раздел [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+> Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. статью [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
 1. Переместите ITRACE-файл или скопируйте его на компьютер с Visual Studio Enterprise (не Professional и не Community).
 
 2. Двойным щелчком откройте ITRACE-файл вне Visual Studio или откройте его из Visual Studio.
 
-     В Visual Studio отображается страница **Сводка IntelliTrace** . В большинстве разделов можно просматривать события или другие элементы, выбрать элемент и начать процесс отладки с помощью IntelliTrace в той точке, где и когда произошло событие. См. раздел [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     В Visual Studio отображается страница **Сводка IntelliTrace** . В большинстве разделов можно просматривать события или другие элементы, выбрать элемент и начать процесс отладки с помощью IntelliTrace в той точке, где и когда произошло событие. См. статью [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    > Для отладки с помощью IntelliTrace и пошагового выполнения кода на компьютере разработки необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. раздел [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+    > Для отладки с помощью IntelliTrace и пошагового выполнения кода на компьютере разработки необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. статью [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
-## <a name="Minimizing"></a> Как получить подробные данные, не замедляя работу приложения?
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> Как получить подробные данные, не замедляя работу приложения?
  IntelliTrace может собирать большой объем данных, поэтому степень влияния на производительность приложения зависит от данных, собираемых с помощью IntelliTrace, а также типа кода, который данная программа анализирует. См. раздел [Оптимизация сбора данных IntelliTrace на рабочих серверах](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/).
 
  Ниже приведены несколько способов получения подробных данных, не замедляющих приложение.
@@ -303,7 +303,7 @@ ms.locfileid: "72911315"
 
    Этого можно избежать, если размещать каждое приложение в отдельном пуле.
 
-- Просмотрите события в плане сбора данных, для которых IntelliTrace собирает данные. Отключите нерелевантные и не представляющие интереса события.
+- Просмотрите события в плане сбора данных, для которых IntelliTrace собирает данные. Отключите не имеющие значения и не представляющие интереса события.
 
    Чтобы отключить событие, задайте атрибуту `enabled` элемента `<DiagnosticEventSpecification>` значение `false`.
 
@@ -315,7 +315,7 @@ ms.locfileid: "72911315"
 
   - Время запуска можно сократить путем отключения событий, которые не относятся к приложению. Например, отключите события рабочего процесса Windows для приложений, которые его не используют.
 
-  - Можно повысить производительность как при запуске, так и во время выполнения, отключив события реестра для приложений, обращающихся к реестру, но не отображая проблем с параметрами реестра.
+  - Для повышения производительности при запуске и во время выполнения можно отключить события в реестре для приложений, которые обращаются к реестру, но не показывают проблемы с параметрами реестра.
 
 - Просмотрите модули в плане сбора данных, для которых IntelliTrace собирает данные. Исключите из плана модули, которые вас не интересуют.
 
@@ -375,13 +375,13 @@ ms.locfileid: "72911315"
 
    Тип `Employee` имеет следующие атрибуты: `Id`, `Name`и `HomeAddress`. Между типом `Employee` и типом `Address` существует отношение ассоциации.
 
-   ![Отношение между сотрудником и адресом](../debugger/media/employeeaddressrelationship.png "емплойиаддрессрелатионшип")
+   ![Связь между Employee и Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    Сборщик записывает значения для `id`, `Employee.Id`, `Employee.Name` и объекта `Employee` , возвращаемого из метода `AlterEmployee` . Однако он не записывает какую-либо информацию об объекте `Address` , а просто указывает, имеет он значение NULL или нет. Также сборщик не записывает данные о локальных переменных в методе `AlterEmployee` , за исключением случаев, когда эти локальные переменные используются в качестве параметров других методов. Тогда они записываются как параметры метода.
 
-## <a name="WhereElse"></a> Где еще можно получить данные IntelliTrace?
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a> Где еще можно получить данные IntelliTrace?
 
-Данные IntelliTrace можно получить из сеанса отладки IntelliTrace в Visual Studio Enterprise. См. раздел [функции IntelliTrace](../debugger/intellitrace-features.md).
+Данные IntelliTrace можно получить из сеанса отладки IntelliTrace в Visual Studio Enterprise. См. статью [Возможности IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)
@@ -401,4 +401,4 @@ ms.locfileid: "72911315"
  [Отладчик Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ### <a name="videos"></a>Видеоролики
- [Видео Channel 9. Сбор и анализ данных IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
+ [Видео на Channel 9. Сбор и анализ данных IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
