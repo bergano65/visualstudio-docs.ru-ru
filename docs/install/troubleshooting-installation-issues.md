@@ -105,7 +105,7 @@ ms.locfileid: "80233111"
 В качестве последнего средства можно [удалить Visual Studio](remove-visual-studio.md), чтобы удалить все файлы установки и сведения о продукте.
 
 1. Следуйте инструкциям в разделе [Удаление Visual Studio](remove-visual-studio.md).
-2. Повторно запустите загрузчик, описанный в разделе [Шаг 3. Удалите каталог с установщиком Visual Studio, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Повторно запустите начальный загрузчик, описанный в разделе [Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Снова попробуйте установить или обновить Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Шаг 6. Связь с нами (необязательно)
@@ -149,3 +149,4 @@ ms.locfileid: "80233111"
 * [Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+   

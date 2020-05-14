@@ -1,4 +1,4 @@
-- name: Документация по интегрированной среде разработки Visual Studio
+﻿- name: Документация по интегрированной среде разработки Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Обзор
@@ -1203,7 +1203,7 @@
               href: ide/reference/project-properties-reference.md
             - name: Страница "Приложение" в конструкторе проектов (UWP)
               href: ide/reference/application-page-project-designer-uwp.md
-            - name: Приложение" в конструкторе проектов (Visual Basic)
+            - name: 'Страница "Приложение" в конструкторе проектов (Visual Basic)'
               items:
                 - name: Страница приложения
                   href: ide/reference/application-page-project-designer-visual-basic.md
