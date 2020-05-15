@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731487"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Сочетания клавиш (HTML и JavaScript)
 
-Сочетания клавиш в Visual Studio для отладки приложений UWP с помощью HTML и JavaScript.
+Сочетания клавиш в Visual Studio для отладки приложений UWP на базе HTML и JavaScript.
 
 ## <a name="general-shortcuts"></a>Общие сочетания клавиш
 
- Эти сочетания клавиш работают во всех инструментах для приложений UWP, использующих HTML и JavaScript.
+ Эти сочетания клавиш работают во всех инструментах приложений UWP на базе HTML и JavaScript.
 
 |Действие|Сочетание клавиш|
 |------------|--------------|
@@ -60,5 +60,5 @@ ms.locfileid: "72731487"
 
 ## <a name="see-also"></a>См. также
 - [Команды консоли JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
-- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

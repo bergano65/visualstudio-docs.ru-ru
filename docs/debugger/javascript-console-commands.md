@@ -1,5 +1,5 @@
 ---
-title: Команды консоли JavaScript | Документация Майкрософт
+title: Консольные команды JavaScript | Документация Майкрософт
 ms.custom: ''
 ms.date: 10/17/2019
 ms.topic: reference
@@ -16,21 +16,21 @@ ms.workload:
 - cordova
 ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731695"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Консольные команды JavaScript в Visual Studio
 
-Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры, демонстрирующие использование этого окна, см. в разделе [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Сведения в этом разделе относятся к приложению Node. js, приложениям UWP и приложениям, созданным с помощью Инструменты Visual Studio для Apache Cordova.
+Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в [кратком руководстве по отладке JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Информация в этом разделе относится к приложениям Node.js, приложения UWP и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova.
 
 Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.
 
 > [!NOTE]
 > Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .
 
-Сведения об использовании консоли в средствах разработчика Microsoft ребр см. в [этом разделе](/microsoft-edge/devtools-guide).
+Сведения об использовании консоли в средствах разработчика Microsoft Edge см. в [этой статье](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>команды объекта console
 
@@ -55,9 +55,9 @@ ms.locfileid: "72731695"
 |`groupEnd()`|Завершает текущую группу.<br /><br /> Требования:<br /><br /> Visual Studio 2013|См. пример для команды `group` .|
 |`info(message)`|Отправляет `message` в окно консоли. Перед сообщением стоит символ "Информация".|`console.info("info message");`<br /><br /> Дополнительные примеры см. в разделе [Formatting console.log output](#ConsoleLog) далее в этой статье.|
 |`log(message)`|Отправляет `message` в окно консоли.<br /><br /> При передаче объекта эта команда отправляет указанный объект в окно консоли и отображает его в визуализаторе объекта. Визуализатор можно использовать для изучения свойств в окне консоли.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с использованием JavaScript.|Не поддерживается.|
-|`profile(reportName)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с использованием JavaScript.|Не поддерживается.|
-|`profileEnd()`|Используется в веб-приложениях. Не поддерживается в приложениях UWP с использованием JavaScript.|Не поддерживается.|
+|`msIsIndependentlyComposed(element)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP, использующих JavaScript.|Не поддерживается.|
+|`profile(reportName)`|Используется в веб-приложениях. Не поддерживается в приложениях UWP, использующих JavaScript.|Не поддерживается.|
+|`profileEnd()`|Используется в веб-приложениях. Не поддерживается в приложениях UWP, использующих JavaScript.|Не поддерживается.|
 |`select(element)`|Выбирает заданный элемент HTML `element` в [проводнике DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|
 |`time (name)`|Запускает таймер, определяемый дополнительным параметром `name` . При применении с командой `console.timeEnd`вычисляет время, прошедшее между моментами действия команд `time` и `timeEnd`, и отправляет результат (в мс) на консоль, используя строку `name` в качестве префикса. Используется для включения инструментирования кода приложения для измерения производительности.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|Останавливает таймер, определяемый дополнительным параметром `name` . См. консольную команду `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -89,7 +89,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Просмотр объектов в окне консоли JavaScript
 При использовании окна консоли JavaScript можно взаимодействовать с любым объектом, находящимся в области. Чтобы проверить в окне консоли объект вне области, используйте `console.log` , `console.dir`и прочие команды в коде. Кроме того, для взаимодействия в окне консоли с объектом, находящимся в области, можно установить в коде точку останова (**Точка останова** > **Insert Точка останова**).
 
-## <a name="ConsoleLog"></a> Форматирование вывода команды console.log
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Форматирование вывода команды console.log
 При передаче множественных аргументов команде `console.log`, консолью обрабатывает их как массив и объединяет вывод.
 
 ```javascript
@@ -128,4 +128,4 @@ console.log("%s is %f years old!", user.first, user.age);
 
 ## <a name="see-also"></a>См. также
 - [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

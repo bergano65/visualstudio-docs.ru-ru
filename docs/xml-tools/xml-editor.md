@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 10741daffff2213e8ababde2395663e78241fdc4
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592403"
 ---
 # <a name="xml-editor"></a>Редактор XML
 
-Редактор XML в Visual Studio основан на текстовом редакторе и включает дополнительную поддержку для языков XML. При открытии XML-файла в Visual Studio он открывается в редакторе XML.
+Редактор XML в Visual Studio построен на основе текстового редактора и включает дополнительную поддержку языков на базе XML. Если открыть XML-файл в Visual Studio, он откроется в редакторе XML.
 
-Редактор XML включает следующие функции:
+Редактор XML включает следующие возможности.
 
 - Проверка синтаксиса XML 1.0.
 
@@ -38,26 +38,26 @@ ms.locfileid: "75592403"
 
 - Структурирование документов, позволяющее разворачивать и сворачивать элементы.
 
-- Интеграция с [обозревателем XML-схем](../xml-tools/xml-schema-explorer.md). Это обеспечивает иерархическое представление XML-схем.
+- Интеграция с [обозревателем XML-схем](../xml-tools/xml-schema-explorer.md). Обеспечивает иерархическое представление XML-схем.
 
-Редактор XML вызывается для хорошо известных расширений файлов, таких как *. XML*, *. xsd*, *. xsl*и *. config*. Он также вызывается для любого неизвестного расширения файла, если файл содержит XML.
+Редактор XML вызывается для распространенных расширений файлов, таких как *XML*, *XSD*, *XSL* и *CONFIG*. Также это приложение вызывается для неизвестных расширений имен файлов, если есть основания полагать, что файл содержит код XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[Технология XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) позволяет автозаполнению имен наборов атрибутов, режимов шаблонов и имен параметров для указанного режима или указанного именованного шаблона.
+Функция [XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) позволяет автоматически заполнять имена наборов атрибутов; режимы шаблонов и имена; а также имена параметров для указанного режима или именованного шаблона.
 
 ## <a name="xslt-profiler"></a>Профилировщик XSLT
 
-[Профилировщик XSLT](../xml-tools/xslt-profiler.md) создает подробные отчеты о производительности XSLT, которые помогают измерять, оценивать и нацелить проблемы, связанные с производительностью, в коде XSLT. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
+[Профилировщик XSLT](../xml-tools/xslt-profiler.md) создает подробные отчеты о производительности XSLT, помогающие измерять, оценивать и выявлять проблемы в XSLT-коде, связанные с производительностью. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
 
 ## <a name="xslt-hierarchy"></a>Иерархия XSLT
 
-С помощью [инструмента "XSLT-иерархия](../xml-tools/walkthrough-using-xslt-hierarchy.md) " можно добавлять точки останова в встроенные таблицы стилей или правила шаблонов.
+[Средство управления иерархией XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) позволяет добавлять точки останова во включенные таблицы стилей и/или встроенные правила шаблона.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Параметры редактора XML — форматирование](../ide/reference/options-text-editor-xml-formatting.md)
-- [Параметры редактора XML — Разное](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Параметры редактора XML — форматирование](../ide/reference/options-text-editor-xml-formatting.md)
+- [Параметры редактора HTML — прочее](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
+- [Справочник по XML-стандартам](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

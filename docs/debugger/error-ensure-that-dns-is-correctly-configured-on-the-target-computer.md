@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Убедитесь, что на целевом компьютере правильно настроена служба DNS | Документация Майкрософт'
+title: 'Ошибка: убедитесь в правильности настройки службы DNS на целевом компьютере | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c8a9a5346016964882bb524187d01ca83c203be1
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911563"
@@ -34,4 +34,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Для получения дополнительных сведений посетите [веб-сайт Microsoft Windows](https://www.microsoft.com/windows/) и выполните поиск по ключевым словам **изменение параметров TCP/IP**.
 
-  Если устранить неполадки DNS не удается, можно попробовать запустить удаленный отладчик с другой учетной записью. Эта ошибка возникает только при запуске удаленного отладчика с учетной записью локальной системы (Local System) или сетевой службы (Network Service) Если запустить удаленный отладчик с другой учетной записью, то для него может использоваться проверка подлинности NTLM, которая не требует использования DNS. . Процедуру см. в разделе [Ошибка: служба Удаленный отладчик Visual Studio на целевом компьютере не может подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Если устранить неполадки DNS не удается, можно попробовать запустить удаленный отладчик с другой учетной записью. Эта ошибка возникает только при запуске удаленного отладчика с учетной записью локальной системы (Local System) или сетевой службы (Network Service) Если запустить удаленный отладчик с другой учетной записью, то для него может использоваться проверка подлинности NTLM, которая не требует использования DNS. . Инструкции см. в статье [Ошибка: службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
