@@ -1,4 +1,4 @@
----
+﻿---
 title: Устранение ошибок установки или обновления
 description: Иногда возникают проблемы. Если происходит сбой установки или обновления Visual Studio, эта страница может помочь решить проблему.
 ms.date: 03/23/2020
@@ -17,7 +17,7 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
 ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
-ms.translationtype: HT
+ms.translationtype: HT 
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/25/2020
 ms.locfileid: "80233111"
