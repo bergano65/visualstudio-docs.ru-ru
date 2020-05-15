@@ -278,3 +278,4 @@ ms.locfileid: "77579972"
 - [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
 - [Разработка кода в Visual Studio без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)
+   
