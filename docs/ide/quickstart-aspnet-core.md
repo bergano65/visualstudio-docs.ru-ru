@@ -106,7 +106,7 @@ ms.locfileid: "77579961"
    >
    > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
 
-1. В поле **Имя проекта** окна *Настроить новый проект* введите **HelloWorld**. Затем нажмите **Создать**.
+1. В поле **Имя проекта** окна **Настроить новый проект** введите *HelloWorld*. Затем нажмите **Создать**.
 
    ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
@@ -134,7 +134,7 @@ ms.locfileid: "77579961"
 
    ![Код HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Измените текст для чтения "дополнительная информация" на **Hello World!**.
+1. Измените текст для чтения "дополнительная информация" на **Hello World!** .
 
    ![Изменение значения по умолчанию кода HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -187,7 +187,7 @@ ms.locfileid: "77579961"
 
    ![HTML-код из файла Index.cshtml для домашней страницы в редакторе Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Измените текст "Welcome" на "**Hello World!**".
+1. Измените текст "Welcome" на "**Hello World!** ".
 
    ![В редакторе Visual Studio измените сообщение "Welcome" в HTML-коде по умолчанию на сообщение "Hello World"](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
