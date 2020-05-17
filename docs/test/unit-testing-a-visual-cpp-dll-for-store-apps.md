@@ -22,7 +22,7 @@ ms.locfileid: "77274458"
 
 В этом разделе также создается одно решение Visual Studio и отдельные проекты для модульных тестов и для тестируемой библиотеки DLL. Модульные тесты можно включить непосредственно в проект библиотеки DLL или создать отдельные решения для модульных тестов и для библиотеки DLL. Рекомендации по выбору структуры см. в разделе [Добавление модульных тестов в существующие приложения C++](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
 
 ::: moniker range="vs-2019"
 
@@ -58,7 +58,7 @@ ms.locfileid: "77274458"
 
          Во время выполнения тестов создается экземпляр каждого тестового класса. Тестовые методы вызываются в неопределенном порядке. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
 
 1. Добавьте код теста:
 
@@ -77,7 +77,7 @@ ms.locfileid: "77274458"
 
      ![Обозреватель тестов](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> Добавление в решение проекта библиотеки DLL
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Добавление в решение проекта библиотеки DLL
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ ms.locfileid: "77274458"
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Сделайте функции DLL доступными для кода тестов
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a> Сделайте функции DLL доступными для кода тестов
 
 1. Добавьте RooterLib в проект RooterLibTests.
 
@@ -196,7 +196,7 @@ ms.locfileid: "77274458"
 
    Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
 
 1. Добавьте новый тест.
 
@@ -256,7 +256,7 @@ ms.locfileid: "77274458"
 > [!TIP]
 > Разрабатывайте код, добавляя тесты по одному. После каждой итерации проверяйте, все ли тесты завершаются успешно.
 
-## <a name="Debug_a_failing_test"></a> Отладка непройденного теста
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> Отладка непройденного теста
 
 1. Добавьте еще один тест в файл *unittest1.cpp*:
 
@@ -325,7 +325,7 @@ ms.locfileid: "77274458"
 
    ![Все тесты пройдены](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> Рефакторинг кода без изменения тестов
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> Рефакторинг кода без изменения тестов
 
 1. Упростите основной расчет функции `SquareRoot`:
 
