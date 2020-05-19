@@ -1,5 +1,5 @@
 ---
-title: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании Microsoft.NET Framework 4 или более поздней версии | Документация Майкрософт
+title: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft.NET Framework 4 или выше| Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731030"
@@ -29,11 +29,11 @@ ms.locfileid: "72731030"
 
 - Обновить проект так, чтобы в нем использовалась платформа Microsoft .NET Framework версии 4 или позднее.
 
-     \- или -
+     -или-
 
      Вести отладку управляемого и машинного кода в отдельных сеансах отладки.
 
-     \- или -
+     -или-
 
      Вести отладку смешанного кода в 32-разрядном процессе в соответствии со следующими процедурами:
 

@@ -1,5 +1,5 @@
 ---
-title: Отладка управляемого кода | Документация Майкрософт
+title: Отладка управляемого кода | Документация Майкрософт
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,16 +18,16 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188415"
 ---
-# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Отладка управляемогоC#кода (, F#Visual Basic C++,,/CLI)
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Отладка управляемого кода (C#, Visual Basic, F#, C++/CLI)
 
-В этом разделе рассматриваются распространенные проблемы и методы отладки управляемых приложений, а также приложения, написанные на языках, предназначенных для среды CLR, C#например Visual Basic C++, и/CLI. Описанные здесь методики — методики высшего уровня. [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md).
+В этом разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C# и C++/CLI. Описанные здесь методики — методики высшего уровня. [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md).
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
 
 [Диагностические сообщения в окне вывода](../debugger/diagnostic-messages-in-the-output-window.md)\
 Описывает классы <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.Trace>, с помощью которых можно записывать сообщения во время выполнения в окно **Выходные данные**. Эти классы содержат методы вывода, позволяющие выводить сведения без прерывания выполнения программы, и выводить сведения, которые также прерывают выполнение при невыполнении заданного условия.
@@ -38,7 +38,7 @@ ms.locfileid: "73188415"
 [Оператор Stop в Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Описывает оператор `Stop`, который представляет собой альтернативу указанию точки останова. Кроме того, раздел содержит пример кода и сравнение оператора `Stop` с оператором `End`, а также оператора `Stop` с оператором `Assert`.
 
-[Пошаговое руководство. Отладка в Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Пошаговое руководство: Отладка формы Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
 Пошаговые инструкции по созданию формы Windows Form и ее отладке. Форма Windows Forms - стандартный компонент приложения Windows, — один из наиболее распространенных вариантов управляемых приложений. В данном пошаговом руководстве используются языки Visual C# и Visual Basic, но методика создания форм Windows Forms с помощью C++ во многом аналогична.
 
 [Отладка метода OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ ms.locfileid: "73188415"
 [Отладка в смешанном режиме](../debugger/debugging-mixed-mode-applications.md)\
 Обсуждение отладки приложений в смешанном режиме. Это подразумевает любое приложение, объединяющее машинный код с управляемым кодом.
 
-[Ошибка. Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Ошибка: Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Описание сообщения об ошибке, которое появляется при попытке произвести отладку управляемого кода на компьютере, загруженном в режиме отладки под управлением операционной системы [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] или Windows NT.
 
 [JIT-оптимизация и отладка](../debugger/jit-optimization-and-debugging.md)\
@@ -56,7 +56,7 @@ ms.locfileid: "73188415"
 [Отладка LINQ и DLINQ](../debugger/debugging-linq.md)\
 Описывает методы отладки LINQ запросов.
 
-[Пошаговое руководство. Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[Пошаговое руководство: отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)\
 Описывает использование окон инструментов **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.
 
 ## <a name="related-sections"></a>Связанные разделы
@@ -74,14 +74,14 @@ ms.locfileid: "73188415"
 Рекомендации по отладке служебных приложений Windows, включая настройку, подключение к процессу, отладку кода в методе `OnStart` службы и кода в методе Main, задание точек останова и использование диспетчера управления службами для запуска, остановки, приостановки и продолжения выполнения службы пользователя.
 
 [Отладка и профилирование](/dotnet/framework/debug-trace-profile/index)\
-Обсуждаются Отладка приложений .NET и требования к конфигурации.
+Описание отладки приложений .NET и требований к конфигурации.
 
 [Отладка приложений скриптов и веб-приложений](how-to-enable-debugging-for-aspnet-applications.md)\
 Описание общих задач и методов отладки скриптов и веб-приложений.
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Отладка пользовательских элементов управления Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Пошаговое руководство: Отладка пользовательских элементов управления Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

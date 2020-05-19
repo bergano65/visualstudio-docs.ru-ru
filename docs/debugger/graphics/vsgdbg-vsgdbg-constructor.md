@@ -1,5 +1,5 @@
 ---
-title: 'VsgDbg:: VsgDbg (конструктор) | Документация Майкрософт'
+title: VsgDbg::VsgDbg (конструктор) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734750"
@@ -29,8 +29,8 @@ VsgDbg(
 #### <a name="parameters"></a>Параметры
  `bDefaultInit` Значение `true` для указания того, что компонент диагностики графики в приложении должен быть подготовлен к активному захвату и записи данных графики; значение `false` для указания того, что в данный момент приложение не должно быть подготовлено к активному захвату и записи данных графики.
 
-## <a name="remarks"></a>Заметки
- При вызове конструктора с `bDefaultInit`, для которого задано значение `true`, имя файла журнала графики определяется тем, как `DONT_SAVE_VSGLOG_TO_TEMP` и `VSG_DEFAULT_RUN_FILENAME` символы препроцессора определяются до включения `vsgcapture.h` в приложение.
+## <a name="remarks"></a>Примечания
+ При вызове конструктора с параметром `bDefaultInit`, установленным в значение `true`, имя файла журнала графики зависит от того, как определены символы препроцессора `DONT_SAVE_VSGLOG_TO_TEMP` и `VSG_DEFAULT_RUN_FILENAME` до включения `vsgcapture.h` в приложение.
 
  При вызове конструктора с параметром `bDefaultInit`, установленным в значение `false`, компонент диагностики графики в приложении может быть подготовлен для активного захвата и записи данных графики позднее с помощью функции `Init`.
 

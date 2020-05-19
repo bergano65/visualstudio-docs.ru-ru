@@ -1,5 +1,5 @@
 ---
-title: Определить, повреждают ли указатели адрес памяти | Документация Майкрософт
+title: Как определить, повреждают ли указатели адрес памяти? | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dc178675e6d2423336c38e69691f081bf4b447a4
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916174"
@@ -36,14 +36,14 @@ ms.locfileid: "75916174"
 
 #### <a name="check-for-heap-corruption"></a>Проверка целостности кучи
 
-- В большинстве случаев повреждение памяти происходит из-за повреждения кучи. Используйте программу глобальных флагов (gflags.exe) или pageheap.exe. См. [/Виндовс-Хардваре/дриверс/дебугжер/гфлагс-Анд-пажехеап](/windows-hardware/drivers/debugger/gflags-and-pageheap).
+- В большинстве случаев повреждение памяти происходит из-за повреждения кучи. Используйте программу глобальных флагов (gflags.exe) или pageheap.exe. См. [/windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap).
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>Поиск места изменения адреса памяти
 
 1. Задайте точку останова данных по адресу 0x00408000. Подробнее см. раздел [Установка точки останова, действующей при изменении данных (только для машинного кода C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 
-2. При попадании в точку останова используйте окно **Память** для просмотра содержимого памяти начиная с адреса 0x00408000. Дополнительные сведения см. в разделе [окна памяти](../debugger/memory-windows.md).
+2. При попадании в точку останова используйте окно **Память** для просмотра содержимого памяти начиная с адреса 0x00408000. Дополнительные сведения см. в разделе [Окно "Память"](../debugger/memory-windows.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
 - [Отладка машинного кода](../debugger/debugging-native-code.md)

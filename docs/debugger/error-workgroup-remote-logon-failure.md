@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: сбой удаленного входа в рабочую группу | Документация Майкрософт'
+title: 'Ошибка: Сбой удаленного входа в систему рабочей группы | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736263"
@@ -67,11 +67,11 @@ ms.locfileid: "72736263"
 
 3. Нажмите **Параметры безопасности**.
 
-4. В столбце **Политика** дважды щелкните **Сетевой доступ: модель совместного доступа и безопасности для локальных учетных записей**.
+4. В столбце **Политика** дважды щелкните **Сетевой доступ: модель общего доступа и безопасности для локальных учетных записей**.
 
-5. В диалоговом окне **Сетевой доступ: модель совместного доступа и безопасности для локальных учетных записей** измените значение на **Обычная — локальные пользователи удостоверяются как они сами** и нажмите кнопку **Применить**.
+5. В диалоговом окне **Сетевой доступ: модель общего доступа и безопасности для локальных учетных записей** измените значение на **Обычная — локальные пользователи удостоверяются как они сами** и нажмите кнопку **Применить**.
 
-     ![Параметры безопасности локальной политики безопасности](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Параметры локальной политики безопасности](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>См. также
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -1,5 +1,5 @@
 ---
-title: Создание пользовательских данных визуализаторов | Документация Майкрософт
+title: Создание пользовательских визуализаторов данных | Документация Майкрософт
 ms.date: 11/07/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,64 +21,64 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564734"
 ---
-# <a name="create-custom-data-visualizers"></a>Создание пользовательских данных визуализаторов
- Объект *визуализатор* является частью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] пользовательский интерфейс отладчика, который отображает переменной или объекта способом, подходящим для этого типа данных. Например HTML-визуализатор интерпретирует строку HTML и отображает результат, отображаемое в окне браузера. Визуализатор точечных рисунков распознает структуру точечного рисунка и отображает представляемой им. Некоторые визуализаторы позволяют изменить, а также просматривать данные.
+# <a name="create-custom-data-visualizers"></a>Создание пользовательских визуализаторов данных
+ *Визуализатор* — это компонент пользовательского интерфейса отладчика [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], который отображает переменную или объект способом, подходящим для этого типа данных. Например, HTML-визуализатор интерпретирует строку HTML и отображает результат в том виде, в каком она будет выглядеть в окне браузера. Визуализатор точечных рисунков распознает структуру точечного рисунка и отображает его. Некоторые визуализаторы позволяют не только просматривать, но и редактировать данные.
 
- Отладчик [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] включает шесть стандартных визуализаторов. Текст, HTML, XML и JSON визуализаторы работающие со строковыми объектами. Визуализатор дерева WPF отображает свойства визуального дерева объекта WPF. Средство визуализации наборов данных работает для объектов DataSet, DataView и DataTable.
+ Отладчик [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] включает шесть стандартных визуализаторов. Визуализаторы текста, HTML, XML и JSON работают со строковыми объектами. Визуализатор дерева WPF отображает свойства визуального дерева объекта WPF. Визуализатор набора данных работает с объектами DataSet, DataView и DataTable.
 
-Дополнительные визуализаторы могут быть доступны для загрузки из Майкрософт, сторонними производителями и сообществом. Можно также создавать собственные визуализаторы и устанавливать их в [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] отладчика.
+В будущем могут появиться дополнительные визуализаторы, которые будут доступны для загрузки из корпорации Майкрософт, сторонних компаний и сообщества. Кроме того, вы можете создавать собственные визуализаторы и устанавливать их в отладчик [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-В отладчике, визуализатор представлен значок увеличительного стекла ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "значок визуализатор"). Можно выбрать значок в **DataTip**, отладчик **Watch** окна, или **"Быстрая проверка"** диалоговое окно, а затем выберите соответствующий визуализатор для соответствующего объекта.
+В отладчике для обозначения визуализаторов используется значок лупы ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Значок визуализатора"). Можно выбрать значок в **DataTip**, окне **Контрольные значения** отладчика или диалоговом окне **Быстрая проверка**, а затем выбрать подходящий визуализатор для соответствующего объекта.
 
-## <a name="write-custom-visualizers"></a>Запись пользовательских визуализаторов
+## <a name="write-custom-visualizers"></a>Создание пользовательских визуализаторов
 
  > [!NOTE]
- > Чтобы создать пользовательский визуализатор для машинного кода, см. в разделе [SQLite собственного визуализатор отладчика](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) образца. Пользовательские визуализаторы не поддерживаются для приложений для универсальной платформы Windows и Windows 8.x.
+ > Сведения о создании пользовательского визуализатора для машинного кода см. в примере [собственного визуализатора отладчика SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer). Пользовательские визуализаторы не поддерживаются для приложений UWP и Windows 8.x.
 
 Пользовательский визуализатор можно создать для объекта любого управляемого класса, за исключением <xref:System.Object> и <xref:System.Array>.
 
 Архитектура визуализатора отладчика состоит из двух частей:
 
-- *Сторона отладчика* запускается в отладчике Visual Studio и создает и отображает пользовательский интерфейс визуализатора.
+- *Сторона отладчика* выполняется в отладчике Visual Studio и создает и отображает пользовательский интерфейс визуализатора.
 
-- *Сторона отлаживаемого кода* — код, который выполняется внутри процесса, отлаживаемого в Visual Studio (*отлаживаемая* программа). Объект данных для визуализации (например, строковый объект) существует в отлаживаемом процессе. Отлаживаемый объект передает объект на стороне отладчика, которая отображается в пользовательском интерфейсе, создаваемых.
+- *Сторона отлаживаемого кода* — код, который выполняется внутри процесса, отлаживаемого в Visual Studio (*отлаживаемая* программа). Объект данных для визуализации (например, строковый объект) существует в отлаживаемом процессе. Сторона отлаживаемой программы отправляет объект на сторону отладчика, где он отображается в созданном пользовательском интерфейсе.
 
-Сторона отладчика получает объект данных из *поставщик объектов* , реализующий <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> интерфейс. Отлаживаемый объект передает объекту, используя *источника объекта*, который является производным от <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+Сторона отладчика получает объект данных для визуализации от *поставщика объектов*. В поставщике объектов реализуется интерфейс <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>. Сторона отлаживаемой программы отправляет объект, используя *источник объекта*, который является производным от <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 
-Поставщик объектов может также отправлять данные обратно к источнику объекта, который позволяет написать визуализатор, можно изменять данные. Необходимо переопределить поставщик объектов, связавшись с вычислитель выражений и источника объектов.
+Поставщик объектов может также отправлять данные обратно к источнику объекта, что позволяет создавать визуализаторы, которые могут изменять данные. Поставщик объектов может быть переопределен, чтобы контактировать с вычислителем выражений и, следовательно, с источником объектов.
 
-Отлаживаемая и отладочная стороны взаимодействуют друг с другом через <xref:System.IO.Stream> методы, выполняющие сериализацию данных объекта в <xref:System.IO.Stream> и десериализации <xref:System.IO.Stream> обратно в объект данных.
+Сторона отлаживаемой программы и сторона отладчика взаимодействуют друг с другом с помощью методов <xref:System.IO.Stream>, выполняющих сериализацию объекта данных в <xref:System.IO.Stream> и десериализацию <xref:System.IO.Stream> обратно в объект данных.
 
-Можно написать визуализатор для универсального типа, только в том случае, если тип является открытым типом. Ограничения накладываются те же, что и при использовании атрибута `DebuggerTypeProxy`. Дополнительные сведения см. в разделе [использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).
+Можно написать визуализатор для универсального типа, только если тип является открытым. Ограничения накладываются те же, что и при использовании атрибута `DebuggerTypeProxy`. Дополнительные сведения см. в статье об [использовании атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).
 
-При работе с пользовательскими визуализаторами следует учитывать вопросы безопасности. См. в разделе [вопросы безопасности визуализатора](../debugger/visualizer-security-considerations.md).
+При работе с пользовательскими визуализаторами следует учитывать вопросы безопасности. См. статью [Вопросы безопасности визуализатора](../debugger/visualizer-security-considerations.md).
 
-Следующие действия предоставляют общий обзор создания визуализатора. Подробные инструкции см. в разделе [Пошаговое руководство: Написание визуализатора на C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) или [Пошаговое руководство: Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
+Следующие действия предоставляют общий обзор создания визуализатора. Подробные инструкции см. в статьях [Пошаговое руководство. Создание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) или [Пошаговое руководство. Создание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
 
 ### <a name="to-create-the-debugger-side"></a>Создание кода для отладочной стороны
 
-Чтобы создать пользовательский интерфейс визуализатора на стороне отладчика, создайте класс, наследуемый от <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>и Переопределите <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> метод для отображения интерфейса. Можно использовать <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> для отображения форм, диалоговых окон и элементов управления Windows в визуализатора.
+Чтобы создать пользовательский интерфейс визуализатора на стороне отладчика, необходимо создать класс, который наследует <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>, и переопределить метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> для отображения интерфейса. Для отображения в визуализаторе форм, диалоговых окон и элементов управления Windows можно использовать интерфейс <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>.
 
 1. Используйте методы <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> для получения визуализированного объекта на стороне отладчика.
 
 1. Создайте класс, который наследует от <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
 
-1. Переопределите метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> для отображения интерфейса. Используйте <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> методы для отображения форм Windows, диалоговых окон и элементов управления в интерфейсе.
+1. Переопределите метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> для отображения интерфейса. Используйте методы <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> для отображения в интерфейсе форм, диалоговых окон и элементов управления Windows.
 
-4. Применить <xref:System.Diagnostics.DebuggerVisualizerAttribute>, задавая ему визуализатор для отображения (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
+4. Примените <xref:System.Diagnostics.DebuggerVisualizerAttribute>, задавая ему визуализатор для отображения (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
 ### <a name="to-create-the-debuggee-side"></a>Создание кода для отлаживаемого объекта
 
-Укажите код отлаживаемого объекта с помощью <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
+Код на стороне отлаживаемой программы задается с помощью <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
 
-1. Используйте <xref:System.Diagnostics.DebuggerVisualizerAttribute>, предоставив ему визуализатор (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) и источник объекта (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Если опустить источника объекта визуализатора будет использовать источник объекта по умолчанию.
+1. Используйте <xref:System.Diagnostics.DebuggerVisualizerAttribute>, предоставив ему визуализатор (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) и источник объекта (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Если источник объекта не задан, визуализатор будет использовать источник объекта, заданный по умолчанию.
 
-1. Чтобы разрешить изменение, а также отображать объекты данных визуализатор, переопределить `TransferData` или `CreateReplacementObject` методы из <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+1. Чтобы разрешить визуализатору изменять и отображать объекты данных, переопределите методы `TransferData` или `CreateReplacementObject` из <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 
 ## <a name="see-also"></a>См. также
 

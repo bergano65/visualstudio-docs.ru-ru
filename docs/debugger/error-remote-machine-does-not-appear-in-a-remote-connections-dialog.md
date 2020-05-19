@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: удаленный компьютер не отображается в диалоговом окне удаленных подключений | Документация Майкрософт'
+title: 'Ошибка: Удаленный компьютер не отображается в диалоговом окне удаленных подключений | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -14,15 +14,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dd46d2164ccb3cd26831160235b992d699229e2c
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916182"
 ---
-# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Ошибка "Удаленный компьютер не отображается в диалоговом окне удаленных подключений"
+# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Ошибка: Удаленный компьютер не отображается в диалоговом окне удаленных подключений
 Если удаленный компьютер не отображается в диалоговом окне "Удаленные подключения", проверьте указанные ниже наиболее вероятные причины.
 
- Если вы используете режим совместимости управляемого кода, обратитесь к документации по Visual Studio 2010: [Устранение неполадок удаленной отладки в Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)).
+ Если вы используете режим совместимости управляемого кода, обратитесь к документации по Visual Studio 2010: [Устранение неполадок удаленной отладки в Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))
 
 ### <a name="common-causes-for-this-error"></a>Распространенные причины этой ошибки
 
@@ -34,5 +34,5 @@ ms.locfileid: "75916182"
 
 - Антивирусная программа блокирует обмен данными между Visual Studio и удаленным компьютером. Чтобы устранить эту проблему, настройте антивирусную программу, разрешив обмен данными между Visual Studio и удаленным отладчиком (msvsmon).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Remote Debugging](../debugger/remote-debugging.md)

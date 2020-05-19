@@ -1,5 +1,5 @@
 ---
-title: Отладка примера кода HTML и CSS | Документация Майкрософт
+title: Пример кода для отладки HTML и CSS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745545"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Пример кода для отладки HTML и CSS
 
-Код в этом разделе — Пример файла для быстрого запуска [: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.
+Приведенный в этом разделе код — это файл примера для статьи [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.
 
 ## <a name="sample-code"></a>Пример кода
 Следующий код HTML используется в кратком руководстве в теге \<body>.
@@ -102,4 +102,4 @@ ms.locfileid: "72745545"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

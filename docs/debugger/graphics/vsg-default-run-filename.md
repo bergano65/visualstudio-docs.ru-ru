@@ -1,5 +1,5 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME | Документация Майкрософт
+title: VSG_DEFAULT_RUN_FILENAME | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734832"
@@ -27,17 +27,17 @@ ms.locfileid: "72734832"
 #### <a name="parameters"></a>Параметры
  `filename` Имя файла журнала графики, присваиваемое по умолчанию файлу журнала графики при захвате данных графики программными средствами.
 
-## <a name="value"></a>значения
+## <a name="value"></a>Значение
  Строковый литерал, который представляет имя файла журнала графики. По умолчанию это "default.vsglog".
 
 ```C++
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
  Если определен символ препроцессора `DONT_SAVE_VSGLOG_TO_TEMP`, имя файла является относительным для текущего каталога захватываемого приложения или представляет собой абсолютный путь; в противном случае это имя относительно каталога временных файлов пользователя, которое не может быть абсолютным путем.
 
- Чтобы изменить имя файла, необходимо переопределить его перед включением `vsgcapture.h` в программу.
+ Чтобы изменить определенное имя файла, необходимо переопределить его до включения в программу заголовка `vsgcapture.h`.
 
 ## <a name="example"></a>Пример
  В следующем примере показано, как изменить имя файла захвата по умолчанию:

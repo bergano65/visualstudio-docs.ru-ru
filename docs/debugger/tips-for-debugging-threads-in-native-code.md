@@ -1,5 +1,5 @@
 ---
-title: Советы по отладке потоков в машинном коде | Документация Майкрософт
+title: Советы по отладке потоков в машинном коде | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 7dde94e28f378f0630a78f32ae5e58533729ce0f
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728994"

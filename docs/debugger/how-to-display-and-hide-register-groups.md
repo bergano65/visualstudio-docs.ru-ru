@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отображение и скрытие групп регистров | Документация Майкрософт
+title: Практическое руководство. Отображение и скрытие групп регистров | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62847791"
@@ -35,7 +35,7 @@ ms.locfileid: "62847791"
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).
 
-## <a name="display-or-hide-register-groups"></a>Отображение или скрытие групп регистров
+## <a name="display-or-hide-register-groups"></a>Отображение и скрытие групп регистров
 
 1. Щелкните правой кнопкой мыши окно **Регистры**.
 

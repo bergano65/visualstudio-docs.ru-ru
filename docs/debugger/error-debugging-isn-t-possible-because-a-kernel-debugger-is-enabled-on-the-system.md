@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Отладка&#39;невозможна, так как в системе включен отладчик ядра | Документация Майкрософт'
+title: 'Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737747"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Ошибка: Отладка&#39;невозможна, так как в системе включен отладчик ядра
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра
 При отладке управляемого кода может появиться следующее сообщение об ошибке:
 
 ```cmd

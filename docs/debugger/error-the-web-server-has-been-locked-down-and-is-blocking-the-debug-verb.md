@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: веб-сервер заблокирован и блокирует команду отладки | Документация Майкрософт'
+title: 'Ошибка: веб-сервер заблокирован и блокирует команду DEBUG | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9564f077a5379f44d2beb4d7851453dd6b35fa48
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736953"
@@ -50,4 +50,4 @@ ms.locfileid: "72736953"
 
 ## <a name="see-also"></a>См. также
 - [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Ошибка. Запрашиваемый ресурс не найден](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+- [Ошибка: запрашиваемый ресурс не найден](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

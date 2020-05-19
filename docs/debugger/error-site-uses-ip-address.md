@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: сайт использует IP-адрес | Документация Майкрософт'
+title: 'Ошибка: Сайт использует IP-адрес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 96786efad0349dec7c9e8e9a02cca40af3668341
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737502"

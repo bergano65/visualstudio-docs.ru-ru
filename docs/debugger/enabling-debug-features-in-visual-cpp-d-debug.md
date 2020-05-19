@@ -1,5 +1,5 @@
 ---
-title: Включение функций отладки в C++ проектах (-D_DEBUG) | Документация Майкрософт
+title: Включение функций отладки в проектах C++ (-D_DEBUG) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737955"
 ---
-# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Включение функций отладки в C++ проектах (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Включение функций отладки в проектах C++ (/D_DEBUG)
 В [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] такие возможности отладки, как утверждения, доступны при компиляции программы с заданным символом **_DEBUG**. **_DEBUG** можно задать одним из двух способов:
 
 - Указать **# define _DEBUG** в исходном коде.

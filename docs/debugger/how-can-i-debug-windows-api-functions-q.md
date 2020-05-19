@@ -1,5 +1,5 @@
 ---
-title: Отладка функций Windows API | Документация Майкрософт
+title: Отладка функций Windows API | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734351"
@@ -40,7 +40,7 @@ ms.locfileid: "72734351"
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Чтобы получить декорированное имя, см. раздел [Просмотр декорированных имен](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Чтобы получить внутреннее имя, обратитесь к разделу [Просмотр внутренних имен](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
 
 ## <a name="see-also"></a>См. также
 - [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)

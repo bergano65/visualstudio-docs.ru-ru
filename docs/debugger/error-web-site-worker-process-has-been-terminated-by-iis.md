@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: рабочий процесс веб-сайта был прерван службами IIS | Документация Майкрософт'
+title: 'Ошибка: Рабочий процесс веб-сайта был завершен службами IIS | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736352"

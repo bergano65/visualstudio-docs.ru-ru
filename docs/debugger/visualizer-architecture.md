@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187159"
@@ -67,7 +67,7 @@ ms.locfileid: "73187159"
 
  Обратите внимание, что поставщик объектов может использовать как <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A>, так и <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Любой API приводит к вызову <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> для источника объектов. Вызов <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> заполняет <xref:System.IO.Stream?displayProperty=fullName>, который представляет сериализованную форму визуализируемого объекта.
 
- Метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> десериализует данные обратно в форму объекта, которую затем можно отобразить в пользовательском интерфейсе, создаваемом с помощью класса <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. Метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> возвращает данные в качестве необработанного объекта `Stream`, который необходимо десериализовать отдельно. Для получения сериализованного объекта <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> и последующей десериализации данных из него метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> вызывает метод `Stream`. Используйте <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>, когда объект не является сериализуемым средствами .NET и требует пользовательской сериализации. В этом случае необходимо также переопределить метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName>.
+ Метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> десериализует данные обратно в форму объекта, которую затем можно отобразить в пользовательском интерфейсе, создаваемом с помощью класса <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. Метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> заполняет данные и возвращает их в качестве необработанного объекта `Stream`, который необходимо десериализовать отдельно. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> вызывает <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> для получения сериализованных данных `Stream`, а затем десериализует данные. Используйте <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>, когда объект не является сериализуемым средствами .NET и требует пользовательской сериализации. В этом случае необходимо также переопределить метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName>.
 
  Если нужен визуализатор только для чтения, достаточно односторонней связи с помощью <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> или <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Если вы создаете визуализатор с поддержкой редактирования объектов данных, необходимо сделать больше. Необходимо иметь также возможность для отправки объекта данных от поставщика объектов обратно источнику. В следующей таблице показаны API поставщика и источника объектов, используемые для этой цели:
 
@@ -77,7 +77,7 @@ ms.locfileid: "73187159"
 
  Обратите внимание, что поставщик объектов может использовать два API. Данные всегда посылаются от поставщика объектов источнику как `Stream`, но метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> требует отдельной сериализации объекта в `Stream`.
 
- Метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> принимает объект, сериализует его в `Stream`, затем вызывает метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> для отправки `Stream` в <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> принимает объект, сериализует его в `Stream`, затем вызывает метод <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> для отправки `Stream` в <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.
 
  С помощью одного из методов Replace создается новый объект данных в отлаживаемом коде, который заменяет объект визуализации. Если надо изменить содержимое исходного объекта без его замены, воспользуйтесь одним из методов Transfer, показанных в следующей таблице. Эти API передают данные в обоих направлениях одновременно, без замены визуализируемого объекта:
 
@@ -87,7 +87,7 @@ ms.locfileid: "73187159"
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Написание визуализатора](create-custom-visualizers-of-data.md)
-- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Пошаговое руководство. Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Пошаговое руководство. Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Пошаговое руководство: Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Пошаговое руководство: Написание визуализатора на Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Вопросы безопасности визуализатора](../debugger/visualizer-security-considerations.md)

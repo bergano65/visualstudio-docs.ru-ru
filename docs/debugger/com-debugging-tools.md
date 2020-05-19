@@ -1,5 +1,5 @@
 ---
-title: Средства отладки COM | Документация Майкрософт
+title: Средства отладки модели COM | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
 ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/24/2019
 ms.locfileid: "71211274"
@@ -46,5 +46,5 @@ OLEVIEW отображает объекты ActiveX и OLE, установлен
 - [Средства отладки модели COM](../debugger/com-debugging-tools.md)
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
-- [Пример OCLIENT: Демонстрирует приложение-контейнер визуального редактирования](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Пример для SUPERPAD: Демонстрируется сервер визуального редактирования, который редактирует текст с помощью CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Пример OCLIENT. Иллюстрирует контейнерное приложение визуального редактирования](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Пример SUPERPAD. Демонстрирует сервер визуального редактирования, который редактирует текст с помощью CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

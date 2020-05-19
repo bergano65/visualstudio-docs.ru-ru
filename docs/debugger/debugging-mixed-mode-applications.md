@@ -1,5 +1,5 @@
 ---
-title: Отладка приложений в смешанном режиме | Документация Майкрософт
+title: Отладка приложений со смешанным режимом | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916292"
@@ -33,7 +33,7 @@ ms.locfileid: "75916292"
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Включение режима "Изменить и продолжить" для C++ при отладке в смешанном режиме
 
-Чтобы включить функцию "изменить и C++продолжить" для, см. раздел [как включить и отключить функцию "изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Сведения о включении режима "Изменить и продолжить" для C++ см. в статье [Включение и выключение режима "Изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
 > Чтобы применить режим "Изменить и продолжить" для C++ в Visual Studio 2013 необходимо вернуться к прежнему ядру отладки. См. публикацию [Переключение в режим совместимости управляемого кода в Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) в блоге Microsoft Application Lifecycle Management.
@@ -54,6 +54,6 @@ ms.locfileid: "75916292"
 
    Поскольку машинный стек вызовов отличается от управляемого стека вызовов, отладчик не всегда может предоставить полный стек вызовов для смешанного кода. Когда машинный код вызывает управляемый код, могут возникнуть некоторые несоответствия. Дополнительные сведения см. в разделе [Смешанный код и отсутствующая информация в окне стека вызовов](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)

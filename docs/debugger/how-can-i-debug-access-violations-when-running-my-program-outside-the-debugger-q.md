@@ -1,5 +1,5 @@
 ---
-title: Нарушения доступа отладки при запуске приложения вне отладчика
+title: Отладка нарушений доступа при выполнении приложения вне отладчика
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f5009bae2d7679081e29ae8f46d72455beac7e11
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734572"

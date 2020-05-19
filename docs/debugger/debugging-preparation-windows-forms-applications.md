@@ -22,17 +22,17 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916394"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: приложения Windows Forms
-Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не вызывает никаких затруднений. Дополнительные сведения см. [в разделе Создание проекта приложения Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+# <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: Приложения Windows Forms
+Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не вызывает никаких затруднений. Для получения дополнительной информации см. раздел [Создание проекта приложения Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры могут быть изменены в диалоговом окне **Страницы свойств \<имя проекта>** (**Мой проект** в Visual Basic).
 
- Дополнительные сведения см. в разделе [Рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md).
+ Дополнительные сведения см. в статье [Рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md).
 
  В следующей таблице приведены дополнительные параметры, рекомендуемые к использованию.
 
@@ -42,7 +42,7 @@ ms.locfileid: "75916394"
 |-----------------------|-----------------|
 |**Действие при запуске**|— Установите **Запуск проекта** в большинстве случаев. Установите **Запуск внешней программы**, если требуется запускать другой исполняемый файл при запуске отладки (обычно для отладки DLL).|
 
- Можно выполнять отладку приложений Windows Forms из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или путем присоединения к уже запущенному приложению. Дополнительные сведения о присоединении см. [в разделе Присоединение к запущенным процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Можно выполнять отладку приложений Windows Forms из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или путем присоединения к уже запущенному приложению. См. сведения о [присоединении к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Выполнение отладки приложения Windows Forms на C#, F# или Visual Basic
 
@@ -62,9 +62,9 @@ ms.locfileid: "75916394"
 
 3. В меню **Отладка** выберите команду **Запуск**.
 
-4. Отладка с использованием методик, обсуждаемых в [первом взгляде на отладчик](../debugger/debugger-feature-tour.md).
+4. Отладка с использованием конкретных методик описывается в статье [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)
 - [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)

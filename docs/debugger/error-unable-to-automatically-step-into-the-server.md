@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: не удается автоматически выполнить шаг с заходом на сервер | Документация Майкрософт'
+title: 'Ошибка: не удается автоматически выполнить шаг на сервере | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 34b298b299bb4911bfe64b362d94c3e90ecfa585
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736877"

@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62901640"
@@ -48,7 +48,7 @@ ms.locfileid: "62901640"
 
 3. В области **Шаблоны** щелкните **Веб-сайт ASP.NET**.
 
-4. На **расположение** строка, нажмите кнопку **HTTP** из списка и в текстовом поле введите **http://localhost/WebSite**.
+4. В строке **Расположение** выберите **HTTP** в списке и введите в текстовом поле **http://localhost/WebSite** .
 
 5. В списке **Язык** выберите **Visual C#** или **Visual Basic**.
 
@@ -68,7 +68,7 @@ ms.locfileid: "62901640"
 
 11. Дважды щелкните сброшенный в конструктор элемент управления Button.
 
-     Это приведет к кодовой странице: Default.aspx.cs для C# или Default.aspx.vb для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Курсор должен находиться в тексте функции `Button1_Click`.
+     Появится страница кода: Default.aspx.cs для C# или Default.aspx.vb для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Курсор должен находиться в тексте функции `Button1_Click`.
 
 12. В функции `Button1_Click` добавьте следующий код:
 

@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564039"
@@ -56,5 +56,5 @@ ms.locfileid: "62564039"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-- [Отладка машинного кода](../debugger/debugging-native-code.md) -описание некоторых общих проблем отладки и методов для C и C++ приложений.
-- [Безопасность отладчика](../debugger/debugger-security.md) -рекомендации по безопасной отладке.
+- [Отладка машинного кода](../debugger/debugging-native-code.md). Описание некоторых наиболее часто возникающих проблем, связанных с отладкой, и методов отладки для приложений C и C++.
+- [Безопасность отладчика](../debugger/debugger-security.md). Рекомендации по безопасной отладке.

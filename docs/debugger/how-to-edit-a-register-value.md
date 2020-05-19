@@ -1,5 +1,5 @@
 ---
-title: Как изменить значение регистра | Документация Майкрософт
+title: Практическое руководство. Изменение значения регистра | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733417"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Как изменить значение регистра (C#, C++, Visual Basic,) F#
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Практическое руководство. Изменение значения регистра (C#, C++, Visual Basic, F#)
 
 Окно "Регистры" доступно, только если включена отладка на уровне адреса в диалоговом окне **Параметры** в разделе **Отладка**.
 

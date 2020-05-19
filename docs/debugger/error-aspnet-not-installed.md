@@ -21,7 +21,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737916"
@@ -37,7 +37,7 @@ ms.locfileid: "72737916"
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    где *Version* представляет номер версии .NET Framework, установленного на компьютере, например v 1.0.370. Версию платформы можно определить, выполнив поиск в каталоге `\WINDOWS\Microsoft.NET\Framework`.
+    *version* представляет номер версии платформы .NET Framework, установленной на данном компьютере, например v1.0.370. Можно определить версию платформы в каталоге `\WINDOWS\Microsoft.NET\Framework`.
 
    > [!NOTE]
    > В Windows Server 2003 можно установить [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], используя элемент **Установка и удаление программ** на "Панели управления".

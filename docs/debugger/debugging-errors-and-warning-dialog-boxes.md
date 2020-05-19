@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916449"
@@ -38,7 +38,7 @@ ms.locfileid: "75916449"
 
  [Отладчику не удается отобразить исходный код или дизассемблированный код](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Нехваткой памяти в службах отладчика](../debugger/error-debugger-services-no-memory.md)
+ [Службам отладки недостаточно памяти](../debugger/error-debugger-services-no-memory.md)
 
  [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -59,7 +59,7 @@ ms.locfileid: "75916449"
  [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Связанные разделы
- [Отладка скриптов и веб-отладка: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Отладка сценария и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

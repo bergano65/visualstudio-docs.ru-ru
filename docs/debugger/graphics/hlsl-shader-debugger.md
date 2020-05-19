@@ -1,5 +1,5 @@
 ---
-title: Отладчик шейдеров HLSL | Документация Майкрософт
+title: Отладчик HLSL шейдера | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735304"
@@ -22,7 +22,7 @@ ms.locfileid: "72735304"
 
  Это отладчик HLSL:
 
- ![Отладка HLSL с помощью окон отслеживания и вызова.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![Отладка HLSL с использованием окон контрольных значений и стека вызовов.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>Что такое отладчик HLSL
  Отладчик HLSL может помочь понять проблемы, возникающие в коде шейдера. Отладка кода HLSL в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] напоминает отладку кода, написанного на других языках, например на C++, C# или Visual Basic. Вы можете отслеживать содержимое переменных, устанавливать точки останова, пошагово выполнять код и перемещаться по стеку вызовов, как и при отладке кода на других языках.
@@ -70,9 +70,9 @@ ms.locfileid: "72735304"
    > [!NOTE]
    > Эта точка входа в отладчик HLSL отлаживает поток шейдера пикселей, соответствующего выбранному вызову рисования, примитиву или пикселю, или потоки шейдера вершин, результаты которых интерполируются выбранным вызовом рисования, примитивом или пикселем. В случае шейдеров вершин можно дополнительно уточнить точку входа (до конкретной вершины), развернув сведения шейдера вершин.
 
-   Примеры использования отладчика HLSL для отладки ошибок шейдера см. в статьях [примеры](graphics-diagnostics-examples.md) или пошаговые руководства, связанные с в разделе см. также.
+   Примеры использования отладчика HLSL для устранения ошибок шейдеров см. в разделе [Примеры](graphics-diagnostics-examples.md) и в пошаговых руководствах, указанных в разделе "См. также".
 
 ## <a name="see-also"></a>См. также
-- [Пошаговое руководство. Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Пошаговое руководство. Отладка ошибок отрисовки, возникающих из-за заливки](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+- [Пошаговое руководство: Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Пошаговое руководство: Отладка ошибок отрисовки, возникающих из-за заливки](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Пошаговое руководство: Использование диагностики графики для отладки вычислительного шейдера](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

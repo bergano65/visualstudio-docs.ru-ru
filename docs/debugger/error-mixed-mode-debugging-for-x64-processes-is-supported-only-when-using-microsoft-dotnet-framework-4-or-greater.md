@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или более поздней версии | Документация Майкрософт'
+title: 'Ошибка: отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или выше| Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,19 +16,19 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 67b9d1c737e4490195b209abca824b2d6d51176c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737603"
 ---
-# <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Ошибка: отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или выше
-Для отладки смешанного машинного и управляемого кода в 64-разрядном процессе необходимо иметь .NET Framework версии 4. Отладка в смешанном режиме для 64-разрядных процессов с .NET Framework версиями, предшествующими 4, не поддерживается.
+# <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Ошибка: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или выше
+Чтобы выполнить отладку смешанного собственного и управляемого кода в 64-разрядном процессе, необходимо использовать версию 4 платформы .NET Framework. Смешанный режим отладки для 64-разрядных процессов не поддерживается при использовании версий .NET Framework, предшествующих версии 4.
 
 ### <a name="to-correct-this-error"></a>Исправление ошибки
 
 - Выполните одно из следующих действий.
 
-  - Обновите .NET Framework до версии 4.
+  - Обновите .NET Framework до версии 4.
 
   - Постройте для отладки 32-разрядную версию приложения.
 
