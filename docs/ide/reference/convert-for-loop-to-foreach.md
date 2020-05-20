@@ -64,7 +64,7 @@ ms.locfileid: "79094602"
 
 ### <a name="why-convert"></a>Для чего это нужно
 
-Причины, из-за которых может потребоваться преобразование оператора [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) в цикл [for](/dotnet/csharp/language-reference/keywords/for), включают в себя:
+Причины, из-за которых может потребоваться преобразование оператора [foreach](/dotnet/csharp/language-reference/keywords/for) в цикл [for](/dotnet/csharp/language-reference/keywords/foreach-in), включают в себя:
 
 - Вы хотите использовать локальную переменную внутри цикла не только для доступа к элементу.
 
