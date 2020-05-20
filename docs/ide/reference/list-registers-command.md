@@ -56,10 +56,10 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 Удаляет одно или несколько значений `register` или `registerGroup` из списка.
 
 ## <a name="remarks"></a>Remarks
-Вместо `r` можно использовать псевдоним `Debug.ListRegisters`.
+Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.
 
 ## <a name="example"></a>Пример
-Этот пример использует псевдоним `Debug.ListRegisters` для `r`, чтобы отобразить значения группы регистров `Flags`.
+Этот пример использует псевдоним `r` для `Debug.ListRegisters`, чтобы отобразить значения группы регистров `Flags`.
 
 ```cmd
 r /Display Flags

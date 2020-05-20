@@ -47,7 +47,7 @@ ms.locfileid: "75595817"
 Если снять флажок **Корневое пространство имен**, можно определить структуру пространства имен проекта в коде.
 
 > [!NOTE]
-> Если в `Global`операторе Namespace[ используется ключевое слово ](/dotnet/visual-basic/language-reference/statements/namespace-statement), можно указать пространство имен из корневого пространства имен проекта. Если снять флажок **Корневое пространство имен**, `Global` будет пространством имен верхнего уровня, что избавляет от потребности в ключевом слове `Global` в операторе `Namespace`. Дополнительные сведения см. в подразделе "Ключевое слово Global в операторах пространства имен" раздела [Пространства имен в Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
+> Если в [операторе Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) используется ключевое слово `Global`, можно указать пространство имен из корневого пространства имен проекта. Если снять флажок **Корневое пространство имен**, `Global` будет пространством имен верхнего уровня, что избавляет от потребности в ключевом слове `Global` в операторе `Namespace`. Дополнительные сведения см. в подразделе "Ключевое слово Global в операторах пространства имен" раздела [Пространства имен в Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
 
 Инструкции по созданию пространств имен в собственном коде см. в разделе [Оператор Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement).
 
@@ -110,7 +110,7 @@ ms.locfileid: "75595817"
 
 ### <a name="view-windows-settings"></a>Просмотреть параметры Windows
 
-Нажмите эту кнопку, чтобы создать и открыть файл *app.manifest*. Visual Studio использует этот файл для создания данных манифеста приложения. Затем укажите запрошенный уровень выполнения для контроля учетных записей, изменив в `<requestedExecutionLevel>`app.manifest*тег* следующим образом.
+Нажмите эту кнопку, чтобы создать и открыть файл *app.manifest*. Visual Studio использует этот файл для создания данных манифеста приложения. Затем укажите запрошенный уровень выполнения для контроля учетных записей, изменив в *app.manifest* тег `<requestedExecutionLevel>` следующим образом.
 
 `<requestedExecutionLevel level="asInvoker" />`
 

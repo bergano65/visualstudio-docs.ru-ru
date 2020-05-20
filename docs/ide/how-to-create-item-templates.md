@@ -72,7 +72,7 @@ ms.locfileid: "75594725"
 
 Можно указать, что шаблон должен отображаться только для определенных подтипов проекта, например Windows, Office, базы данных или веб-сайта.
 
-1. Найдите в `ProjectType`VSTEMPLATE *-файле элемент*  для шаблона элемента.
+1. Найдите в *VSTEMPLATE*-файле элемент `ProjectType` для шаблона элемента.
 
 1. Добавьте элемент [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) сразу после элемента `ProjectType`.
 

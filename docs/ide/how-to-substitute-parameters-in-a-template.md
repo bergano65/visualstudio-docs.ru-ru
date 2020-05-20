@@ -34,7 +34,7 @@ ms.locfileid: "75591415"
 
 1. В *VSTEMPLATE*-файле шаблона найдите элемент `ProjectItem`, содержащий этот файл.
 
-1. Задайте для атрибута `ReplaceParameters` элемента `true` значение `ProjectItem`.
+1. Задайте для атрибута `ReplaceParameters` элемента `ProjectItem` значение `true`.
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
