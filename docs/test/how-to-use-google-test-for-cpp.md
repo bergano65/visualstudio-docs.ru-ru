@@ -65,7 +65,7 @@ ms.locfileid: "77279305"
 
 ## <a name="write-and-run-tests"></a>Написание и запуск тестов
 
-Все готово к написанию и выполнению тестов Google Test. Сведения о макросах тестов см. в [учебнике по началу работы с Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Сведения об обнаружении, выполнении и группировании тестов с помощью [обозревателя тестов](run-unit-tests-with-test-explorer.md) см. в статье **Выполнение модульных тестов с помощью обозревателя тестов**.
+Все готово к написанию и выполнению тестов Google Test. Сведения о макросах тестов см. в [учебнике по началу работы с Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Сведения об обнаружении, выполнении и группировании тестов с помощью **обозревателя тестов** см. в статье [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>См. также раздел
 
