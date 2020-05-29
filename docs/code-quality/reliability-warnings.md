@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586209"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182811"
 ---
 # <a name="reliability-warnings"></a>Предупреждения, связанные с надежностью
 
@@ -35,3 +35,5 @@ ms.locfileid: "82586209"
 |[CA2006. Используйте SafeHandle для инкапсуляции собственных ресурсов](../code-quality/ca2006.md)|Использование указателя IntPtr в управляемом коде может указывать на потенциальную проблему безопасности и надежности. Необходимо изучить все случаи использования указателя IntPtr, чтобы определить, не следует ли использовать вместо него класс SafeHandle или другую подобную технологию.|
 |[CA2007. Не следует напрямую ожидать Task](../code-quality/ca2007.md)|Асинхронный метод [ожидает](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> непосредственного.|
 |[CA2009: Не вызывайте ToImmutableCollection для значения ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`метод не обязательно был вызван для неизменяемой коллекции из <xref:System.Collections.Immutable> пространства имен.|
+|[CA2011: не присваивайте свойство в методе задания](../code-quality/ca2011.md) | Свойству было случайно присвоено значение в собственном [методе доступа set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
+|[CA2015: не определяйте методы завершения для типов, производных от Мемориманажер &lt; T&gt;](../code-quality/ca2015.md) | Добавление метода завершения к типу, производному от, <xref:System.Buffers.MemoryManager%601> может привести к освобождению памяти, пока она еще используется <xref:System.Span%601> . |
