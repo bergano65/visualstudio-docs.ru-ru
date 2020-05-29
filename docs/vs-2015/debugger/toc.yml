@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Подключение к выполняющимся процессам
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Указание файлов символов (.pdb) и файлов с исходным кодом
+    - name: Указание файлов символов (PDB) и файлов с исходным кодом
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Отладка 64-разрядных приложений
       href: debug-64-bit-applications.md
@@ -244,8 +244,6 @@
       items:
         - name: Ошибки удаленной отладки и их устранение
           href: remote-debugging-errors-and-troubleshooting.md
-        - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
         - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
@@ -258,8 +256,6 @@
           href: error-kerberos-authentication-failed.md
         - name: убедитесь в правильности настройки службы DNS на целевом компьютере
           href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
-        - name: 'Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.'
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
         - name: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
           href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
         - name: Не удалось инициировать подключение DCOM
@@ -278,7 +274,7 @@
           href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
         - name: Рабочий процесс веб-узла был завершен службами IIS
           href: error-web-site-worker-process-has-been-terminated-by-iis.md
-        - name: не удается подключиться к компьютеру \<имя>. Не удается найти компьютер в сети.
+        - name: Не удалось подключиться к компьютеру \<name>. Не удается найти компьютер в сети.
           href: error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md
         - name: "Смешанный режим отладки поддерживается только при использовании Microsoft.NET Framework\_2.0 или выше"
           href: error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md
@@ -352,7 +348,7 @@
           href: debugging-windows-store-and-windows-universal-apps.md
         - name: Запуск приложения из Visual Studio
           items:
-            - name: Запуск приложения из Visual Studio
+            - name: Запуск приложений из Visual Studio
               href: run-store-apps-from-visual-studio.md
             - name: Запуск приложений для Магазина Windows на локальном компьютере
               href: run-windows-store-apps-on-the-local-machine.md
@@ -370,7 +366,7 @@
               href: debug-store-apps-in-visual-studio.md
             - name: Запуск сеанса отладки (JavaScript)
               href: start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md
-            - name: Управление выполнение в сеансе отладки (JavaScript)
+            - name: Управление выполнением в сеансе отладки (JavaScript)
               items:
                 - name: Управление выполнение в сеансе отладки (JavaScript)
                   href: control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md
@@ -572,7 +568,7 @@
           href: gpu-usage.md
         - name: Окно журнала графики
           href: graphics-log-document.md
-        - name: Анализ кадра
+        - name: Анализ кадров
           items:
             - name: Анализ кадра
               href: graphics-frame-analysis.md
@@ -592,7 +588,7 @@
               href: bc-texture-compression-variant.md
         - name: Список событий
           href: graphics-event-list.md
-        - name: Штат
+        - name: Состояние
           href: graphics-state.md
         - name: Этапы конвейера
           href: graphics-pipeline-stages.md
@@ -764,7 +760,7 @@
       items:
         - name: 'Папка "Отладка", диалоговое окно "Параметры"'
           href: debugging-options-dialog-box.md
-        - name: 'General, Debugging, Options Dialog Box'
+        - name: 'Страница "Общие", папка "Отладка", диалоговое окно "Параметры"'
           href: general-debugging-options-dialog-box.md
         - name: 'Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"'
           href: just-in-time-debugging-options-dialog-box.md

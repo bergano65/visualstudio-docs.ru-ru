@@ -1,11 +1,13 @@
 - name: Visual Studio для Mac
   href: index.yml
-- name: Начало работы
+- name: Приступая к работе
   items:
     - name: Обзор интегрированной среды разработки
       href: ide-tour.md
     - name: "Visual\_Studio для\_Mac для пользователей\_Windows"
       href: vsmac-for-windows-users.md
+    - name: Встроенный терминал
+      href: integrated-terminal.md
 - name: Установка
   items:
     - name: "Установка Visual\_Studio 2019 для\_Mac"
@@ -14,11 +16,11 @@
       href: install-behind-a-firewall-or-proxy-server.md
     - name: Установка предварительной версии
       href: install-preview.md
-    - name: Обновление
+    - name: Update
       href: update.md
-    - name: Удалить
+    - name: Удаление
       href: uninstall.md
-- name: Учетные записи пользователя
+- name: Учетные записи пользователей
   items:
     - name: Обзор
       href: user-accounts.md
@@ -52,7 +54,7 @@
           href: nuget-walkthrough.md
     - name: Управление ресурсами приложений
       href: managing-app-resources.md
-    - name: Практическое руководство. Открытие нескольких решений или экземпляров
+    - name: Руководство. Открытие нескольких решений или экземпляров
       href: open-multiple-solutions.md
 - name: Редактор исходного кода
   items:
@@ -60,7 +62,7 @@
       href: source-editor.md
     - name: Рефакторинг
       href: refactoring.md
-    - name: IntelliSense
+    - name: технология IntelliSense
       href: intellisense.md
     - name: Отображение элементов импорта
       href: show-imports.md
@@ -98,7 +100,7 @@
       href: building-and-cleaning-projects-and-solutions.md
     - name: Действия при сборке
       href: build-actions.md
-    - name: Практическое руководство. Назначение нескольких запускаемых проектов
+    - name: Руководство. Назначение нескольких запускаемых проектов
       href: set-startup-projects.md
     - name: Настройка системы сборки
       href: customizing-build-system.md
@@ -124,7 +126,7 @@
   items:
     - name: Обзор
       href: web-app-deployment.md
-    - name: Публикация в службу приложений Azure
+    - name: Опубликовать в Службе приложений Azure
       href: publish-app-svc.md
     - name: Публикация в папку
       href: publish-folder.md
@@ -152,9 +154,9 @@
       items:
         - name: Обзор
           href: azure-workload.md
-        - name: Введение в функции Azure
+        - name: Общие сведения о Функциях Azure
           href: azure-functions.md
-        - name: Учебник. Проверка
+        - name: Руководство по Функции Azure
           href: azure-functions-lab.md
         - name: Подключенные службы
           href: connected-services.md
@@ -168,7 +170,7 @@
       items:
         - name: Разработка игр на Unity
           href: unity-tools.md
-        - name: Установка
+        - name: Настройка
           href: setup-vsmac-tools-unity.md
         - name: "Начало работы с\_Unity"
           href: unity-walkthrough.md
@@ -180,7 +182,7 @@
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: "Мобильные приложения с\_Xamarin"
       href: /visualstudio/mac/xamarin
-- name: Специальные возможности
+- name: Возможности доступа
   items:
     - name: Обзор
       href: accessibility.md
@@ -194,7 +196,7 @@
           href: accessibility-keyboard.md
         - name: Использование VoiceOver
           href: accessibility-voiceover.md
-- name: Видеоучебники
+- name: Учебные видеоматериалы
   items:
     - name: Начало работы с ASP.NET Core в Visual Studio для Mac
       href: tutorial-aspnet-core-vsmac-getting-started.md
