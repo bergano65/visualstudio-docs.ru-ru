@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386173"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200359"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Как назначать подписки Visual Studio?
 
@@ -22,7 +22,7 @@ ms.locfileid: "81386173"
 
 1. Откройте вкладку [Управление подписчиками](https://manage.visualstudio.com/subscribers) в верхней части страницы [manage.visualstudio.com](https://manage.visualstudio.com).
 2. Нажмите "Добавить" и введите имя и адрес электронной почты пользователя, которому нужно назначить подписку.
-    - Если ваша организация использует Azure Active Directory, найти пользователя в текущем каталоге можно с помощью поля "Имя". Вы можете выбрать пользователя в результатах поиска или добавить его вручную.
+    1. Если ваша организация использует Azure Active Directory, найти пользователя в текущем каталоге можно с помощью поля "Имя". Вы можете выбрать пользователя в результатах поиска или добавить его вручную.
 3. Чтобы предоставить подписчику доступ для скачивания программного обеспечения при входе на [портал управления подписками Visual Studio](https://my.visualstudio.com/), оставьте включенным переключатель "Скачивания" в разделе "Параметры скачивания".
 4. Укажите требуемые сведения в разделе "Настройки общения", чтобы выбрать язык, на котором подписчики получат сообщение о назначении.
 5. Добавить заметки, связанные с назначением, можно в разделе с примечаниями.
