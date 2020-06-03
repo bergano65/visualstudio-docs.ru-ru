@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071951"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183110"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Модульное тестирование JavaScript и TypeScript в Visual Studio
 
@@ -28,9 +28,6 @@ ms.locfileid: "77071951"
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (это специальная платформа для инструментов Node.js для Visual Studio)
-
-> [!WARNING]
-> В связи с проблемой на платформе Tape в настоящее время невозможно выполнять тестирование на этой платформе. После объединения с [запросом на вытягивание 361](https://github.com/substack/tape/pull/361) проблема будет решена.
 
 Если ваша любимая платформа не поддерживается, сведения о расширении поддержки см. в разделе [Расширение поддержки платформ для модульного тестирования](#addingFramework).
 
@@ -77,7 +74,7 @@ describe('Test Suite 1', function() {
 > [!NOTE]
 > Не используйте параметр `outdir` или `outfile` в *tsconfig.json*, так как обозреватель тестов не сможет найти модульные тесты в файлах TypeScript.
 
-## <a name="run-tests"></a>Выполнение тестов
+## <a name="run-tests"></a>Выполнить тесты
 
 Вы можете выполнять тесты в Visual Studio 2017 или из командной строки.
 
@@ -99,7 +96,7 @@ describe('Test Suite 1', function() {
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-После выполнения команды должен появиться результат, аналогичный приведенному ниже.
+Выходные данные этой команды выглядят примерно следующим образом:
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
@@ -130,7 +127,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Если отобразится сообщение об ошибке, указывающее, что невозможно найти *vstest.console.exe*, убедитесь, что открыли командную строку разработчика, а не обычную командную строку.
 
-## <a name="addingFramework"></a>Расширение поддержки платформ модульного тестирования
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Расширение поддержки платформ модульного тестирования
 
 Вы можете добавить поддержку дополнительных платформ тестирования, реализовав логику обнаружения и выполнения с помощью JavaScript. Для этого добавьте папку с именем платформы тестирования в раздел:
 

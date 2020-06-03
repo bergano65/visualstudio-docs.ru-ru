@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678907"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183965"
 ---
 # <a name="create-a-new-project"></a>Создание нового проекта
 
@@ -25,7 +25,7 @@ ms.locfileid: "75678907"
 
 Если среда Visual Studio для Mac уже открыта с загруженным решением, вы можете создать решение, перейдя в строку меню и выбрав **Файл > Создать решение**. При таком создании решения уже загруженное решение закрывается.
 
-## <a name="creating-a-new-project-from-a-template"></a>Создание проекта из шаблона
+## <a name="creating-a-new-project"></a>Создание нового проекта
 
 В диалоговом окне **Новый проект** по умолчанию отображаются недавно используемые шаблоны, отсортированные по *времени использования*.
 
@@ -51,6 +51,6 @@ ms.locfileid: "75678907"
 
 При добавлении существующего проекта вы сможете перейти к нужному проекту на своем компьютере и добавить его в решение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание решений и проектов (Visual Studio в Windows)](/visualstudio/ide/creating-solutions-and-projects)

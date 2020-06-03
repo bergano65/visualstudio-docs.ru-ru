@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591259"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183539"
 ---
 # <a name="manage-references-in-a-project"></a>Управление ссылками в проекте
 
@@ -109,7 +109,7 @@ ms.locfileid: "75591259"
 
 Дополнительные сведения см. в статье [Общие сведения о настройке для платформы](../ide/visual-studio-multi-targeting-overview.md).
 
-## <a name="project-to-project-references"></a>Перекрестные ссылки между проектами
+## <a name="project-to-project-references"></a>Ссылки проектов на проекты
 
 Ссылки проектов на проекты — это ссылки на проекты, которые содержат сборки. Вы добавляете их на вкладке **Проекты** диалогового окна "Диспетчер ссылок". Visual Studio может найти сборку, если задан путь к проекту.
 

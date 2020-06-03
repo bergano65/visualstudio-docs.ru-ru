@@ -6,33 +6,33 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3b1a3cc6d1e9a7bac24a9a64845bdb43e4a6739a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3708d9a599fdd2ec3102647827529a73379c1d23
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437454"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183133"
 ---
 ## <a name="test-controller"></a>Test Controller
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.TestController
+**Идентификатор:** Microsoft.VisualStudio.Workload.TestController
 
-**Описание.** Распределение автоматических тестов на несколько компьютеров.
+**Описание.** Распределение автоматических тестов на несколько компьютеров
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 16.0.28315.86 | Обязательно
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 16.0.28315.86 | Обязательное значение
 
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя | Версия
+Идентификатор компонента | name | Version
 --- | --- | ---
-Недоступно | Недоступно | Недоступно
+Н/Д | Н/Д | Н/Д
