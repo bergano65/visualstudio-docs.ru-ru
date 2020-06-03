@@ -3,14 +3,14 @@ title: Вход в Visual Studio для Mac
 description: Вход в Visual Studio для Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d5bfb81264c3503643c51c621cad29df44acef92
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75844262"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173201"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
@@ -51,7 +51,7 @@ Visual Studio для Mac поддерживает добавление неск�
 
 Чтобы добавить дополнительные учетные записи пользователей, выберите меню **Visual Studio > Учетная запись...**  в Visual Studio для Mac. Нажмите кнопку **Добавить...** , чтобы ввести дополнительные учетные данные.
 
-![Управление учетными записями](media/signing-in-image15.png)
+![Управление учетными записями](media/user-accounts-login.png)
 
 ## <a name="view-or-change-your-profile-information"></a>Просмотр или изменение данных профиля
 

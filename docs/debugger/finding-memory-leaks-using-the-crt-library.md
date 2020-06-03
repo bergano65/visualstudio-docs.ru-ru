@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 4ae879d8ed03653959ae926cc372300db9b71b9f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404983"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182655"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Нахождение утечек памяти с помощью библиотеки CRT
 
@@ -72,7 +72,7 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 `_CrtSetReportMode` можно использовать для перенаправления отчета в другое расположение или обратно в окно **вывода**, как показано ниже:
 
 ```cpp
-_CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
+_CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_DEBUG );
 ```
 
 ## <a name="interpret-the-memory-leak-report"></a>Интерпретация отчета об утечке памяти

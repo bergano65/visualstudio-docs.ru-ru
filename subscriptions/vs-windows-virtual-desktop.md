@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Узнайте, как можно воспользоваться преимуществом "Виртуальный рабочий стол Windows (Майкрософт)" с помощью подписки Visual Studio.
-ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649736"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183591"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Доступ к Виртуальному рабочему столу Windows в подписках 
 Теперь подписчики Visual Studio могут использовать индивидуальные средства на счете для разработки и тестирования в Azure для служб виртуальных рабочих столов Windows (Майкрософт).  
@@ -39,7 +39,7 @@ ms.locfileid: "81649736"
 
 ## <a name="get-started"></a>Начало работы 
 После выполнения всех необходимых условий нужно выполнить несколько действий для получения реализации.  Перед началом работы ознакомьтесь с этими учебниками:
-- [Создание клиента Виртуального рабочего стола Windows](https://docs.microsoft.com/azure/virtual-desktop/tenant-setup-azure-active-directory)
+- [Создание клиента Виртуального рабочего стола Windows](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - [Создание пула узлов](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) на портале Azure
 - [Управление группами приложений](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) для Виртуального рабочего стола Windows
 

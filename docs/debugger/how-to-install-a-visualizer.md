@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880264"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183630"
 ---
 # <a name="how-to-install-a-visualizer"></a>Практическое руководство. установку визуализатора
 После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.
@@ -43,7 +43,7 @@ ms.locfileid: "80880264"
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Скопируйте DLL [Стороны отлаживаемого объекта](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) в одно из следующих мест:
+3. Скопируйте DLL [Стороны отлаживаемого объекта](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) в одно из следующих мест:
 
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers\` *Framework*
 
