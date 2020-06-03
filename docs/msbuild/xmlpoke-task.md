@@ -29,16 +29,16 @@ ms.locfileid: "82072514"
 
 ## <a name="parameters"></a>Параметры
 
- В следующей таблице приводятся параметры задачи `XmlPoke`.
+ В следующей таблице приводятся параметры задачи `XmlPoke` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`Namespaces`|Необязательный параметр `String`.<br /><br /> Задает пространства имен для префиксов запроса XPath. `Namespaces` — это фрагмент кода XML, состоящий из элементов `Namespace` с атрибутами `Prefix` и `Uri`. Атрибут `Prefix` указывает префикс для привязки к пространству имен, указанному в атрибуте `Uri`. Не используйте пустой `Prefix`.|
 |`Query`|Необязательный параметр `String`.<br /><br /> Указывает запрос XPath.|
-|`Value`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает значение, вставляемое в указанный путь.|
+|`Value`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает значение, вставляемое в указанный путь.|
 |`XmlInputPath`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает входные данные XML в виде пути к файлу.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -79,7 +79,7 @@ ms.locfileid: "82072514"
 
 `dn` используется здесь в качестве искусственного префикса пространства имен для пространства имен по умолчанию.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

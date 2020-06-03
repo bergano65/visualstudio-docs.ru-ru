@@ -155,9 +155,9 @@ public enum DateInserterCommands
 * Требуемые версии .NET Framework
 * Целевая среда выполнения
 * Серверные компоненты VCS
-* Refactoring
+* Рефакторинг
 * Обработчики выражения
-* Выделение синтаксиса
+* Подсветка синтаксиса
 
 ## <a name="extending-the-new-editor"></a>Расширение нового редактора
 
@@ -193,6 +193,6 @@ Visual Studio для Mac [предоставляет новый собствен
 > [!NOTE]
 > Сейчас мы работаем над улучшением сценариев расширения для Visual Studio для Mac. Если вы создаете расширения и нуждаетесь в дополнительной помощи или информации или хотите оставить отзыв, заполните форму [создания расширений Visual Studio для Mac](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Разработка расширений Visual Studio (в Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

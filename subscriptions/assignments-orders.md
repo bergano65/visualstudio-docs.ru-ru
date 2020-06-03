@@ -37,13 +37,13 @@ ms.locfileid: "80232699"
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Соглашения Enterprise, MPSA и Select
 Соглашения Enterprise, MPSA и Select Plus корпорации Майкрософт обеспечивают гибкость в использовании и лицензировании программного обеспечения Visual Studio. Администраторы Visual Studio должны ежегодно оформлять сверочный заказ для приведения числа лицензий на ПО в соответствие с верхним пределом использования за период действия соглашения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 Узнайте больше об обязанностях администраторов:
 - [Обязанности администратора](admin-responsibilities.md)
 - [Инвентаризация подготовительной среды](admin-inventory.md)
