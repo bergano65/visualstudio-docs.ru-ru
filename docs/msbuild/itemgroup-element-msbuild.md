@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633646"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173516"
 ---
 # <a name="itemgroup-element-msbuild"></a>Элемент ItemGroup (MSBuild)
 
 Содержит набор определенных пользователем элементов [Item](../msbuild/item-element-msbuild.md). Каждый элемент, используемый в проекте MSBuild, должен быть указан как дочерний для элемента `ItemGroup`.
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -85,6 +86,10 @@ ms.locfileid: "77633646"
 ...
 </Project>
 ```
+
+В файле простого проекта обычно присутствует один элемент `ItemGroup`, однако при необходимости можно использовать несколько элементов `ItemGroup`. Если используется несколько элементов `ItemGroup`, они объединяются в один элемент `ItemGroup`. Например, некоторые элементы могут быть включены с использованием отдельного элемента `ItemGroup`, который определяется в импортируемом файле.
+
+Для элементов ItemGroup могут применяться условия с помощью атрибута `Condition`. В этом случае элементы добавляются в список элементов только при соблюдении условия. См. [Условия MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>См. также
 

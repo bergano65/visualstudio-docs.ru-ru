@@ -1,7 +1,7 @@
 ---
 title: Создание визуализатора на Visual Basic | Документация Майкрософт
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542611"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180549"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Пошаговое руководство. Написание визуализатора на Visual Basic
+
 В данном пошаговом руководстве демонстрируется создание простого визуализатора с помощью [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Визуализатор, который будет создан в данном пошаговом руководстве, отображает содержимое строки с помощью окна сообщения Windows Forms. Этот строковый визуализатор – простой пример, на основе которого можно создавать визуализаторы для других типов данных, более подходящих для ваших проектов.
 
 > [!NOTE]
@@ -62,7 +63,7 @@ ms.locfileid: "76542611"
 
 4. В диалоговом окне **Добавление ссылки** на вкладке **Обзор** выберите **Обзор** и найдите Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    Библиотеку DLL можно найти в подкаталоге *\<Visual Studio Install Directory>\Common7\IDE\PublicAssemblies* в каталоге установки Visual Studio.
+    Библиотеку DLL можно найти в подкаталоге *\<Visual Studio Install Directory>\Common7\IDE\PublicAssemblies* в каталоге установки Visual Studio.
 
 5. Нажмите кнопку **ОК**.
 
@@ -138,7 +139,9 @@ ms.locfileid: "76542611"
 ## <a name="add-the-necessary-attribute"></a>Добавление необходимого атрибута
  Код для отладчика написан. Тем не менее, необходимо выполнить еще одно действие: добавить атрибут, который сообщает отлаживаемому объекту, какой набор классов формирует визуализатор.
 
-### <a name="to-add-the-debugee-side-code"></a>Добавление кода для отлаживаемой стороны
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>Добавление типа для визуализации кода на стороне отлаживаемого объекта
+
+В коде на стороне отладчика тип для визуализации (источник объекта) для отлаживаемого кода указывается с помощью атрибута <xref:System.Diagnostics.DebuggerVisualizerAttribute>. Свойство `Target` задает тип для визуализации.
 
 1. Добавьте следующий код атрибута в файл DebuggerSide.vb, после операторов `Imports`, но перед `namespace MyFirstVisualizer`:
 

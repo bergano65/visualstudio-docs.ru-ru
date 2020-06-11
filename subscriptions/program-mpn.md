@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232338"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183058"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 
@@ -34,7 +34,7 @@ ms.locfileid: "80232338"
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Разработка приложений                     | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
 | Управление отношениями с клиентами в облаке      | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
-| Облачная платформа                              | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
+| Cloud Platform                              | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
 | DevOps                                      | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise                |
 
@@ -72,17 +72,17 @@ ms.locfileid: "80232338"
 
 ## <a name="resources"></a>Ресурсы
 
-- [Руководство администратора программы MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) — содержит инструкции о том, как назначать подписки Visual Studio сотрудникам MPN.
+- [Руководство по программам Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Назначение подписок Visual Studio сотрудникам MPN](manage-mpn-subscriptions.md)
 - [Условия использования](https://www.microsoft.com/useterms/) — на подписки Visual Studio, предоставляемые через MPN, распространяются условия лицензии для подписок Visual Studio, не предназначенных для перепродажи.
 
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Документация по Azure](https://docs.microsoft.com/azure/)
 - [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте, как [управлять подписками Visual Studio](manage-mpn-subscriptions.md), предоставленными через Microsoft Partner Network.

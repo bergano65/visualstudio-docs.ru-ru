@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127935"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173705"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Публикация веб-приложения на веб-сайте с помощью Visual Studio
 
@@ -24,7 +24,7 @@ ms.locfileid: "71127935"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Если вам нужно опубликовать классическое приложение Windows в общую сетевую папку, см. раздел [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C++/CLI см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Если вам нужно опубликовать классическое приложение Windows в общую сетевую папку, см. раздел [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Публикация на веб-сайте
 
@@ -34,23 +34,19 @@ ms.locfileid: "71127935"
 
 1. Если ранее вы настроили какие-либо профили публикации, появится панель **Опубликовать**. Выберите команду **Создать профиль**.
 
-1. В открывшемся диалоговом окне **Выберите целевой объект публикации** укажите **IIS, FTP и т. д**.
+1. В диалоговом окне **Публикация** выберите **Веб-сервер (IIS)** .
 
-    ![Выбор IIS, FTP и т. д.](../deployment/media/quickstart-publish-iis-ftp.png "Выберите IIS, FTP или другой вариант.")
+    ![Выбор целевого объекта публикации](../deployment/media/quickstart-publish-iis.png "Выберите IIS, FTP или другой вариант.")
 
-1. Нажмите **Публиковать**. Открывается диалоговое окно с параметрами публикации профиля.
+1. В качестве метода развертывания выберите **Веб-развертывание**. "Веб-развертывание" упрощает развертывание веб-приложений и веб-сайтов на серверах IIS, и его требуется устанавливать в качестве приложения на сервере. Для его установки используйте [установщик веб-платформы](https://www.microsoft.com/web/downloads/platform.aspx).
 
-    ![Выбор папки](../deployment/media/quickstart-publish-settings-web.png "Выбор папки")
+    ![Выбор метода развертывания](../deployment/media/quickstart-publish-iis-web-deploy.png "Выберите IIS, FTP или другой вариант.")
 
-1. В поле **Способ публикации** выберите способ, такой как **Веб-развертывание** или **FTP**. Отображаемые далее параметры зависят от способа публикации. "Веб-развертывание" упрощает развертывание веб-приложений и веб-сайтов на серверах IIS, и его требуется устанавливать в качестве приложения на сервере. Для его установки используйте [установщик веб-платформы](https://www.microsoft.com/web/downloads/platform.aspx).
+1. Настройте необходимые параметры для способа публикации и нажмите кнопку **Готово**. 
 
-1. Настройте необходимые параметры для способа публикации и выберите **Проверить подключение**. Если сервер или целевой объект доступен, а параметры верны, отображается сообщение о том, что соединение проверено, и вы можете произвести публикацию.
+    ![Сведения о подключении для веб-развертывания](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![Проверка подключения](../deployment/media/quickstart-publish-web-deploy.png "Проверка подключения")
-
-1. Выберите **Параметры**, чтобы настроить другие параметры развертывания, например следует ли развернуть конфигурацию отладки или выпуска, а затем выберите **Сохранить**. Если вы осуществляете удаленную отладку, требуется конфигурация отладки.
-
-1. Для публикации выберите **Публиковать**. В окне вывода отображаются ход развертывания и результаты.
+1. Для публикации выберите **Опубликовать** на странице сводки. В окне вывода отображаются ход развертывания и результаты.
 
 ## <a name="next-steps"></a>Следующие шаги
 

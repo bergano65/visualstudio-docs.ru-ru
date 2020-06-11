@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916148"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183565"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Отладка во время разработки в Visual Studio (C#, C++/CLI, Visual Basic, F#)
 
@@ -83,13 +83,13 @@ ms.locfileid: "75916148"
 
 1. Откройте страницу XAML, содержащую пользовательский элемент управления, который требуется отладить.
 
-   В проектах UWP, предназначенных для сборки Windows 16299 или более поздней версии, этот шаг запускает процесс *UwpSurface.exe*. В версиях WPF или UWP, предшествующих версии сборки Windows 16299, этот шаг запускает процесс *XDesProc.exe*.
+   В проектах UWP, предназначенных для сборки Windows 16299 или более поздней версии, этот шаг запускает процесс *UwpSurface.exe*. В проектах WPF, предназначенных для сборки Windows 16299 или более поздней версии, на этом шаге запускается процесс *WpfSurface.exe*. В версиях WPF или UWP, предшествующих версии сборки Windows 16299, этот шаг запускает процесс *XDesProc.exe*. 
 
 1. Откройте еще один экземпляр Visual Studio. Не открывайте решение или проект во втором экземпляре.
 
 1. Во втором экземпляре Visual Studio откройте меню **Отладка** и выберите **Присоединить к процессу...** .
 
-1. В зависимости от типа проекта (см. предыдущие шаги) выберите процесс *UwpSurface.exe* или *XDesProc.exe* в списке доступных процессов.
+1. В зависимости от типа проекта (см. предыдущие шаги) выберите процесс *UwpSurface.exe*, *WpfSurface.exe* или *XDesProc.exe* в списке доступных процессов.
 
 1. В диалоговом окне **Присоединение к процессу** в поле **Присоединить к** выберите нужный тип кода для пользовательского элемента управления, который требуется отладить.
 

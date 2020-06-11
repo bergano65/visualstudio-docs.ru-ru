@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564177"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183617"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -50,7 +50,10 @@ ms.locfileid: "82564177"
 
 Существует несколько способов продолжить использование ежемесячного кредита в Azure.  Чтобы сохранить ресурсы Azure, необходимо [перенести ресурсы](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure вне зависимости от выбранного действия ниже. 
 
-- **Если вы приобрели подписку Visual Studio напрямую**, приобретите новую или обновите текущую подписку через [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=).  
+- **Если вы приобрели подписку Visual Studio напрямую**, приобретите новую или обновите текущую подписку через Microsoft Store.  
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 - **Если в вашей организации есть ответственный за приобретение подписок**, [обратитесь к администратору подписки на Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
 - **При наличии другой активной подписки на Visual Studio** того же уровня, которая связана с другой учетной записью Майкрософт, вы можете перенести преимущество Azure в другую активную подписку на Visual Studio, [добавив альтернативную учетную запись](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) на [портале подписок](https://my.visualstudio.com/subscriptions) Visual Studio.  
 

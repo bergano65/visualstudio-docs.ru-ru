@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: d356b9817213aebe2d0c6923097a90aa037ba3fd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81648527"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183266"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -66,7 +66,7 @@ ms.locfileid: "81648527"
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- root
+- корневой
 
 Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md), в том числе соглашения о [языке](../ide/editorconfig-language-conventions.md), [форматировании](../ide/editorconfig-formatting-conventions.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
 
@@ -82,7 +82,7 @@ ms.locfileid: "81648527"
 
 1. В строке меню выберите **Проект** > **Добавить новый элемент** либо нажмите сочетание клавиш **CTRL**+**SHIFT**+**A**.
 
-   Откроется диалоговое окно **Добавление нового элемента** .
+   Откроется диалоговое окно **Добавление нового элемента**.
 
 1. В поле поиска введите строку **editorconfig**.
 
@@ -178,7 +178,7 @@ dir .editorconfig /s
 
 Управлять областью действия соглашений EditorConfig можно с помощью свойства ```root=true``` в файле *EDITORCONFIG*, который находится в корне репозитория или в каталоге, где размещается проект. В Visual Studio поиск файла *EDITORCONFIG* выполняется в каталоге, где находится открытый файл, и во всех его родительских каталогах. Поиск завершается по достижении корня пути к файлу или при нахождении файла *EDITORCONFIG* с ```root=true```.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77578953"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184215"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -93,9 +93,7 @@ ms.locfileid: "77578953"
 
 ## <a name="run-to-cursor"></a>Выполнить до текущей позиции
 
-Остановите отладчик, нажав **Остановить отладку**, красную кнопку ![Остановить отладку](../debugger/media/dbg-tour-stop-debugging.png "Остановить отладку") или **Shift** + **F5**.
-
-Щелкните правой кнопкой мыши строку кода в приложении и выберите команду **Выполнить до текущей позиции**. Эта команда запускает отладку и задает временную точку останова на текущей строке кода.
+Если вы находитесь в режиме редактирования кода (то есть работа отладчика не приостановлена), щелкните правой кнопкой мыши строку кода в приложении и выберите команду **Выполнить до текущей позиции**. Эта команда запускает отладку и задает временную точку останова на текущей строке кода.
 
 ![Выполнить до текущей позиции](../debugger/media/dbg-tour-run-to-cursor.png "Выполнить до текущей позиции")
 

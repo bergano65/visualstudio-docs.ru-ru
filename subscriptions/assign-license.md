@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут назначать лицензии для подписчиков.
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564164"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183474"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Назначение лицензий на портале администрирования подписок Visual Studio
 Администраторы подписок Visual Studio могут использовать портал администрирования для назначения подписок отдельным пользователям и группам пользователей.
@@ -20,7 +20,7 @@ ms.locfileid: "82564164"
 Вы можете выбрать способы назначения подписок для групп пользователей.  
 - Подписки можно назначать по одной за раз.
 - Вы также можете быстро и легко отправлять списки подписчиков и сведения о них, с помощью функции [Массовое добавление](assign-license-bulk.md).
-- Если в вашей организации используется Microsoft Azure Active Directory (Azure AD), группы Azure AD можно использовать для назначения подписок группам пользователей.  (Эта функция развертывается поэтапно и может быть недоступна для вашей организации сразу.)
+- Если в вашей организации используется Microsoft Azure Active Directory (Azure AD), [группы Azure AD можно использовать для назначения подписок](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) группам пользователей.  
 
 
 ## <a name="add-a-single-subscriber"></a>Добавление одного подписчика
@@ -39,7 +39,11 @@ ms.locfileid: "82564164"
    > [!div class="mx-imgBorder"]
    > ![Сведения о подписчике](_img/assign-license-add/subscriber-details.png)
 
-    Если требуется предоставить подписчику доступ к скачиванию программного обеспечения при входе на [портал управления подписками Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), включите переключатель загрузок в разделе **Параметры загрузки**. Если отключить параметр скачиваний, пользователь не будет иметь доступ к скачиваемым файлам, но сохранит доступ ко всем другим преимуществам подписки.
+    > [!NOTE]
+    > Чтобы вы могли видеть членов клиента Azure Active Directory при вводе имени подписчика, администратор должен быть членом клиента. 
+
+
+    Если требуется предоставить подписчику доступ к скачиванию программного обеспечения при входе на [портал управления подписками Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), включите переключатель загрузок в разделе **Параметры загрузки**. Если вы отключите доступ к скачиваемым файлам, пользователь не сможет скачивать программное обеспечение.  Также будет запрещен доступ к ключам продуктов.  При этом подписчик по-прежнему сможет пользоваться всеми остальными преимуществами, включенными в подписку.
    > [!div class="mx-imgBorder"]
    > ![Доступ к загрузкам](media/access-to-downloads.png)
 

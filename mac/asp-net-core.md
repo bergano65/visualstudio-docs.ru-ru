@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3ec4b28f9af769d4765750ab48048e3b155fb48e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543901"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180352"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -19,7 +19,7 @@ ms.locfileid: "80543901"
 
 ## <a name="installing-net-core"></a>Установка .NET Core
 
-.NET Core 2.1 автоматически устанавливается при установке Visual Studio для Mac.
+.NET Core 3.1 автоматически устанавливается при установке Visual Studio для Mac. Дополнительные сведения о версиях .NET Core, поддерживаемых в Visual Studio для Mac, см. в разделе [Поддержка .NET Core](/visualstudio/mac/net-core-support).
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Создание приложения ASP.NET Core в Visual Studio для Mac
 
@@ -35,6 +35,8 @@ ms.locfileid: "80543901"
 - **.NET Core > API**
 - **.NET Core > Веб-приложение**
 - **.NET Core > Веб-приложение (модель — представление — контроллер)**
+- **.NET Core > Серверное приложение Blazor**
+- **.NET Core > Приложение WebAssembly Blazor**
 
 ![Параметры проекта ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 

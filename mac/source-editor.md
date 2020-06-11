@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68493224"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173100"
 ---
 # <a name="source-editor"></a>Редактор исходного кода
 
@@ -52,7 +52,7 @@ Visual Studio для Mac предоставляет множество эффе�
 
 По умолчанию перенос по словам отключен, но его можно включить с помощью **предпочтений** в Visual Studio для Mac. 
 
-Чтобы включить перенос по словам, перейдите в раздел **Visual Studio > Предпочтения > Текстовый редактор > Новый редактор > Перенос по словам**:
+Чтобы включить перенос по словам, перейдите в раздел **Visual Studio > Предпочтения > Текстовый редактор > Перенос по словам**.
 
 ![Параметры переноса по словам](media/source-neweditor-wordwrap1.png)
 
@@ -78,7 +78,7 @@ Visual Studio для Mac предоставляет множество эффе�
 
 ![пример цветного выделения](media/source-editor-image7.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Возможности редактора кода (Visual Studio в Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Структурирование (Visual Studio в Windows)](/visualstudio/ide/outlining)

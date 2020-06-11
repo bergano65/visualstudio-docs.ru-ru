@@ -1,7 +1,7 @@
 ---
 title: Публикация в IIS посредством импорта параметров публикации
 description: Создание и импорт профиля публикации для развертывания приложения из Visual Studio в IIS
-ms.date: 01/31/2019
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65680141"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183305"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в IIS посредством импорта параметров публикации в Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "65680141"
 
 Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio.
 
-Изучив данный учебник, вы научитесь:
+В этом руководстве рассмотрены следующие задачи:
 
 > [!div class="checklist"]
 > * Настройка IIS таким образом, чтобы вы могли создать файл параметров публикации.
@@ -31,12 +31,12 @@ ms.locfileid: "65680141"
 > * Импорт файла параметров публикации в Visual Studio.
 > * Развертывание приложения в IIS.
 
-Файл параметров публикации (*\*.publishsettings*) отличается от профиля публикации (*\*.pubxml*), созданного в Visual Studio. Файл параметров публикации создается IIS или Службой приложений Azure либо может быть создан вручную, после чего его можно импортировать в Visual Studio.
+Файл параметров публикации ( *\*.publishsettings*) отличается от профиля публикации ( *\*.pubxml*), созданного в Visual Studio. Файл параметров публикации создается IIS или Службой приложений Azure либо может быть создан вручную, после чего его можно импортировать в Visual Studio.
 
 > [!NOTE]
-> Если вам нужно только скопировать профиль публикации Visual Studio (файл \*.pubxml) из одной установки Visual Studio в другую, можно найти профиль публикации *\<имя_профиля\>.pubxml* в папке *\\<имя_проекта\>\Properties\PublishProfiles* для управляемых типов проектов. Для веб-сайтов см. в папке *\App_Data*. Профили публикации являются XML-файлами MSBuild.
+> Если вам нужно только скопировать профиль публикации Visual Studio (файл \*.pubxml) из одной установки Visual Studio в другую, можно найти профиль публикации *\<profilename\>.pubxml* в папке *\\<имя_проекта\>\Properties\PublishProfiles* для управляемых типов проектов. Для веб-сайтов см. в папке *\App_Data*. Профили публикации являются XML-файлами MSBuild.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 ::: moniker range=">=vs-2019"
 
@@ -52,7 +52,7 @@ ms.locfileid: "65680141"
     Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
 ::: moniker-end
 
-* На сервере должна быть запущена ОС Windows Server 2012 или Windows Server 2016, а [роль веб-сервера IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) должна быть правильно установлена (это необходимо для создания файла параметров публикации (*\*.publishsettings*)). Также требуется установить на сервере ASP.NET 4.5 или ASP.NET Core. Для настройки ASP.NET 4.5 см. раздел [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Для настройки ASP.NET Core см. раздел [Размещение ASP.NET Core в Windows со службами IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+* На сервере должна быть запущена ОС Windows Server 2012, Windows Server 2016 или Windows Server 2019, а [роль веб-сервера IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) должна быть правильно установлена (это необходимо для создания файла параметров публикации [ *\*.publishsettings*]). Также требуется установить на сервере ASP.NET 4.5 или ASP.NET Core. Для настройки ASP.NET 4.5 см. раздел [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Для настройки ASP.NET Core см. раздел [Размещение ASP.NET Core в Windows со службами IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Для ASP.NET Core убедитесь, что в пуле приложений настроен параметр использования **Без управляемого кода**, как описывается в статье.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создание проекта ASP.NET в Visual Studio
 
@@ -86,7 +86,7 @@ ms.locfileid: "65680141"
 
 После успешного развертывания приложение должно запускаться автоматически. Если оно не запускается из Visual Studio, запустите его в IIS. Для ASP.NET Core необходимо убедиться, что в поле "Пул приложений" для **DefaultAppPool** задано значение **Без управляемого кода**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этом руководстве вы создали файл параметров публикации, импортировали его в Visual Studio и развернули приложение ASP.NET в IIS. Рекомендуем вам ознакомиться с общими сведениями о других параметрах публикации в Visual Studio.
 

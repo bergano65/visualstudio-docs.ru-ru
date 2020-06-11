@@ -1,8 +1,8 @@
-﻿---
+---
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 03/16/2020
+ms.date: 05/20/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437748"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183383"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
-**Обновлено для [выпуска 16.5](/visualstudio/releases/2019/release-notes/)**
+**Обновлено для [выпуска 16.6](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-С помощью Visual Studio 2019 вы получите лучшие в своем классе средства и службы для любого разработчика, любого приложения и любой платформы. Независимо от того, сколько времени вы уже используете Visual Studio, в этой новой версии вы найдете много интересного для себя.
+Visual Studio постоянно меняется в соответствии с потребностями разработчиков. В следующем видеоролике из библиотеки **[Microsoft Build](https://mybuild.microsoft.com/)** рассказывается о некоторых [новых возможностях](/visualstudio/releases/2019/release-notes/), а также приводится [краткий обзор](/visualstudio/releases/2019/release-notes-preview/) того, какие нововведения будут представлены в будущем. <br><br>*Длительность видео: 44:58 мин.*
 
-Обзор новых возможностей:
+> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
+
+С помощью Visual Studio 2019 вы получите лучшие в своем классе средства и службы для любого разработчика, любого приложения и любой платформы. Независимо от того, сколько времени вы уже используете Visual Studio, в последней версии вы найдете много интересного для себя.
+
+Обзор новых возможностей
 
 * **[Разработка.](#develop)** Сосредоточьтесь на главном и повышайте продуктивность благодаря оптимизированной производительности, возможности мгновенной очистки кода и более точным результатам поиска.
 * **[Совместная работа.](#collaborate)** Воспользуйтесь возможностями совместной работы в рамках рабочего процесса Git-first, функциями редактирования и отладки, а также рецензирования кода прямо в Visual Studio.
@@ -100,7 +104,7 @@ ms.locfileid: "79437748"
 
    ![Отрисовка, учитывающая параметры монитора (PMA) в Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
 
-Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
+Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
 
 ### <a name="test-explorer"></a>Обозреватель тестов
 
@@ -122,7 +126,7 @@ ms.locfileid: "79437748"
 
 ### <a name="git-first-workflow"></a>Рабочий процесс Git-first
 
-Первое, что вы заметите при открытии Visual Studio 2019, — новое окно запуска.
+Первое, что вы заметите при открытии Visual Studio 2019, — новое окно запуска.
 
    ![Снимок экрана: новое окно запуска в Visual Studio 2019](media/vs-2019/start-window-dark.png)
 
@@ -142,7 +146,7 @@ ms.locfileid: "79437748"
 
 ![Анимация: возможности совместной работы Live Share в Visual Studio 2019](media/vs-2019/live-share.gif)
 
-Дополнительные сведения см. в статьях [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения) и [Live Share now included with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) (Live Share теперь входит в состав Visual Studio 2019).
+Дополнительные сведения см. в разделе [Visual Studio Live Share для проверки кода в режиме реального времени и интерактивного обучения](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) записи блога и [Live Share, теперь включены с помощью Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) записи блога.
 
 ### <a name="integrated-code-reviews"></a>Интегрированная проверка кода
 
@@ -179,6 +183,7 @@ ms.locfileid: "79437748"
    ![Новое окно контрольных значений и функция форматирования значений в Visual Studio 2019](media/search-watch-window.png)
 
 Дополнительные сведения см. в статье [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Улучшения в Visual Studio 2019: поиск объектов и свойств в окнах "Контрольные значения", "Видимые" и "Локальные").
+
 ### <a name="snapshot-debugger"></a>Отладчик моментальных снимков
 
 Получайте моментальные снимки при выполнении приложения в облаке, чтобы в точности знать, что происходит. (Эта возможность доступна в только в Visual Studio Enterprise.)
@@ -187,7 +192,7 @@ ms.locfileid: "79437748"
 
 Мы добавили поддержку целевых приложений ASP.NET (приложения Core и классические приложения), которые выполняются на виртуальных машинах Azure. Также мы добавили поддержку приложений, которые выполняются в Службе Azure Kubernetes. Средство Snapshot Debugger позволяет значительно сократить затраты времени на устранение проблем, возникающих в рабочих средах.
 
-Дополнительные сведения см. в статье [Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) и записи блога [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Представление отладки перехода по времени для Visual Studio Enterprise 2019).
+Дополнительные сведения см. в статье [Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) и записи блога [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Представление отладки перехода по времени для Visual Studio Enterprise 2019).
 
 ### <a name="microsoft-edge-insider-support"></a>Поддержка Microsoft Edge Insider
 

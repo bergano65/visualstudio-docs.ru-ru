@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093963"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183669"
 ---
 # <a name="msbuild-items"></a>Элементы MSBuild
 
@@ -61,7 +61,7 @@ ms.locfileid: "79093963"
 
  Для обращения к типам элементов в файле проекта используется синтаксис @(\<ItemType>). Например, для обращения к типу элементов из предыдущего примера следует использовать конструкцию `@(Compile)`. Используя этот синтаксис, можно передавать элементы в задачи, указывая тип элементов в качестве параметра этой задачи. Дополнительные сведения см. в разделе [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md).
 
- По умолчанию при развертывании элементы типа разделяются знаком "точка с запятой" (;). Чтобы указать другой разделитель, используйте синтаксис @(\<ItemType>, "\<разделитель"). Дополнительные сведения см. в разделе [Практическое руководство. Отображение списка элементов, разделенных запятыми](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
+ По умолчанию при развертывании элементы типа разделяются знаком "точка с запятой" (;). Чтобы указать другой разделитель, используйте синтаксис @(\<ItemType>, '\<separator>'). Дополнительные сведения см. в разделе [Практическое руководство. Отображение списка элементов, разделенных запятыми](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
 ## <a name="use-wildcards-to-specify-items"></a>Использование подстановочных знаков для указания элементов
 
@@ -335,6 +335,261 @@ Output:
   Item2: hourglass;boomerang;hourglass
     hourglass  Count: 2
     boomerang  Count: 1
+-->
+```
+
+##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Обновление метаданных элементов в ItemGroup за пределами целевого объекта
+
+Для обновления метаданных элементов, находящихся за пределами целевых объектов, можно использовать атрибут `Update`. Этот атрибут **недоступен** для элементов, находящихся внутри целевых объектов.
+
+```xml
+<Project>
+    <PropertyGroup>
+        <MetadataToUpdate>pencil</MetadataToUpdate>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Color>red</Color>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>YELLOW</Color>
+        </Item2>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="$(MetadataToUpdate);stapler;er*r;@(Item2)" Price="10" Material="">
+            <Color>RED</Color>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: RED
+    Material:
+    Price: 10
+Item1: pencil
+    Size: small
+    Color: RED
+    Material:
+    Price: 10
+Item1: eraser
+    Size:
+    Color: RED
+    Material:
+    Price: 10
+Item1: notebook
+    Size: large
+    Color: RED
+    Material:
+    Price: 10
+-->
+```
+
+:::moniker range=">=vs-2019"
+В MSBuild 16.6 и более поздних версий атрибут `Update` поддерживает ссылки на полные метаданные, что позволяет упростить импорт метаданных из нескольких элементов.
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item3 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>BLUE</Color>
+            <Price>20</Price>
+        </Item3>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="@(Item2);er*r;@(Item3)" Size="%(Size)" Color="%(Item2.Color)" Price="%(Item3.Price)" Model="2020">
+            <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: black
+    Material: plastic
+    Price:
+    Model:
+Item1: pencil
+    Size: small
+    Color: RED
+    Material: Premium PLASTIC
+    Price:
+    Model: 2020
+Item1: eraser
+    Size: small
+    Color:
+    Material: gum
+    Price:
+    Model: 2020
+Item1: notebook
+    Size: large
+    Color:
+    Material: paper
+    Price: 20
+    Model: 2020
+-->
+```
+
+Примечания:
+- Неполные метаданные [%(M)] привязываются к обновляемому типу элемента (`Item1` в приведенном выше примере). Полные метаданные (`%(Item2.Color)`) привязываются внутри набора соответствующих типов элемента, полученных из выражения Update.
+- Если элемент совпадает с несколькими элементами, на которые заданы ссылки:
+  - Получается последнее вхождение для каждого типа элемента, на который задана ссылка (то есть для каждого типа элемента получается один элемент).
+  - Такой подход аналогичен пакетной обработке элемента задачи в целевых объектах.
+- Где можно разместить ссылки %()
+  - Метаданные
+  - Условия метаданных
+- Сопоставление имен метаданных осуществляется без учета регистра.
+:::moniker-end
+
+## <a name="updating-metadata-on-items-in-an-itemgroup-of-a-target"></a>Обновление метаданных элементов в ItemGroup целевого объекта
+
+Метаданные также можно изменять внутри целевых объектов, используя менее выразительный по сравнению с `Update` синтаксис.
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item2 Include="ruler">
+            <Color>GREEN</Color>
+        </Item2>
+
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <ItemGroup>
+            <!-- Metadata can be expressed either as attributes or as elements -->
+            <Item1 Size="GIGANTIC" Color="%(Item2.Color)">
+                <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+            </Item1>
+        </ItemGroup>
+
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: pencil
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: eraser
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: notebook
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
 -->
 ```
 

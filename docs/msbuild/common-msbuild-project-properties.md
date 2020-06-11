@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7502644c9820b47149acb4a9b8a749bec70551e4
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634426"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180432"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 
@@ -118,6 +118,7 @@ ms.locfileid: "77634426"
 | Satellite_Win32Resource | Вставляет во вспомогательную сборку ресурс Win32 (*RES*-файл). |
 | SGenToolPath | Необязательный путь, указывающий расположение, откуда можно получить *SGen.exe* при переопределении текущей версии *SGen.exe*. Это свойство используется только для .NET Framework.|
 | SGenUseProxyTypes | Логическое значение, указывающее, следует ли создавать прокси-типы с помощью *SGen.exe*. Это применяется, только если *GenerateSerializationAssemblies* включено, и только для платформы .NET Framework.<br /><br /> Цель SGen использует это свойство для установки флага UseProxyTypes. По умолчанию это свойство имеет значение true, и пользовательского интерфейса для изменения этого значения не существует. Чтобы создать сборку сериализации для типов, не относящихся к веб-службам, добавьте это свойство в файл проекта и присвойте ему значение false, прежде чем импортировать *Microsoft.Common.Targets* или *C#/VB.targets*. |
+| SkipInvalidConfigurations | Если задано значение `true`, выдается предупреждение о недопустимом сочетании платформы и конфигурации, однако создание сборки не завершается ошибкой. Если значение `false` или не определено (по умолчанию), генерируется ошибка. |
 | StartupObject | Задает класс или модуль, содержащий метод Main или процедуру Sub Main. Это свойство эквивалентно переключателю `/main` компилятора. |
 | SubsystemVersion | Задает минимальную версию подсистемы, которую может использовать созданный исполняемый файл. Это свойство эквивалентно переключателю `/subsystemversion` компилятора. Сведения о значении по умолчанию этого свойства см. в описании [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) или [/subsystemversion (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Версия платформы .NET Compact Framework, необходимая для запуска собираемого приложения. Задание этого свойства позволяет ссылаться на определенные сборки платформы, которые иначе могут быть недоступны. |

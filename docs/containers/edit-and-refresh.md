@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916524"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184813"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Отладка приложений в локальном контейнере Docker
 
@@ -24,7 +24,7 @@ Visual Studio обеспечивает согласованную разрабо
 
 Если у вас уже есть проект поддерживаемого типа, Visual Studio может создать Dockerfile и настроить проект для запуска в контейнере. Ознакомьтесь со статьей [Средства для контейнеров в Visual Studio](overview.md).
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 Для отладки приложений в локальном контейнере Docker необходимо установить следующие средства:
 
@@ -81,6 +81,16 @@ Visual Studio обеспечивает согласованную разрабо
     }
     ```
 
+    Измените метод `Startup` следующим образом.
+
+    ```csharp
+    public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
+    {
+        Configuration = configuration;
+        Env = webHostEnvironment;
+    }
+    ```
+
    Дополнительные сведения см. в статье [Компиляция файла Razor в ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
 
 1. В качестве **конфигурации решения** выберите **Отладка**. Затем нажмите клавиши **CTRL**+**F5**, чтобы создать образ Docker и запустить его локально.
@@ -104,7 +114,7 @@ Visual Studio обеспечивает согласованную разрабо
 
 Изменения применены!
 
-### <a name="debug-with-breakpoints"></a>Отладка с использованием точек останова
+### <a name="debug-with-breakpoints"></a>Отладка с точками останова
 
 Изменения часто требуют дальнейшей проверки. Для этого можно использовать функции отладки Visual Studio.
 
@@ -128,7 +138,7 @@ Visual Studio обеспечивает согласованную разрабо
 1. Создайте проект консольного приложения .NET Framework.
 1. В обозревателе решений щелкните правой кнопкой мыши узел проекта и выберите **Добавить** > **Container Orchestration Support** (Поддержка оркестрации контейнеров).  В появившемся диалоговом окне выберите **Docker Compose**. Файл Dockerfile будет добавлен в проект, а проект Docker Compose со вспомогательными файлами будет добавлен в решение.
 
-### <a name="debug-with-breakpoints"></a>Отладка с использованием точек останова
+### <a name="debug-with-breakpoints"></a>Отладка с точками останова
 
 1. В обозревателе решений откройте файл *Program.cs*.
 2. Замените содержимое метода `Main` следующим кодом:
@@ -149,11 +159,11 @@ Visual Studio обеспечивает согласованную разрабо
 
 Если вы вручную изменили контейнер и хотите выполнить перезапуск с чистым образом контейнера, выберите команду **Сборка** > **Очистить**, а затем выполните сборку как обычную.
 
-## <a name="troubleshoot"></a>Диагностика
+## <a name="troubleshoot"></a>Устранение неполадок
 
 Узнайте, как [устранять неполадки при разработке Docker в Visual Studio](troubleshooting-docker-errors.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения см. в статье [Как Visual Studio создает контейнерные приложения](container-build.md).
 

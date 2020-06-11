@@ -7,12 +7,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597143"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184033"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
@@ -85,7 +85,33 @@ ms.locfileid: "75597143"
 
 ### <a name="register-instance-before-calling-msbuild"></a>Регистрация экземпляра перед вызовом MSBuild
 
-Добавьте вызов API Locator перед вызовом любых методов, использующих MSBuild.
+> [!IMPORTANT]
+> В методе, который вызывает MSBuildLocator, нельзя использовать типы MSBuild (из пространства имен `Microsoft.Build`). Например, нельзя выполнить следующее.
+>
+> ```csharp
+> void ThisWillFail()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     Project p = new Project(SomePath); // Could be any MSBuild type
+>     // Code that uses the MSBuild type
+> }
+> ```
+>
+> Вместо этого необходимо поступить так.
+>
+> ```csharp
+> void MethodThatDoesNotDirectlyCallMSBuild()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     MethodThatCallsMSBuild();
+> }
+> 
+> void MethodThatCallsMSBuild()
+> {
+>     Project p = new Project(SomePath);
+>     // Code that uses the MSBuild type
+> }
+> ```
 
 Самый простой способ добавить вызов к API Locator — это добавить вызов
 

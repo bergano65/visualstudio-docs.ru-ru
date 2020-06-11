@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633386"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184293"
 ---
 # <a name="msbuild-conditional-constructs"></a>Условные конструкции MSBuild
 
@@ -77,6 +77,18 @@ MSBuild предоставляет механизм для обработки у
     </Choose>
     <!-- Rest of Project -->
 </Project>
+```
+
+В этом примере используется условие для константы компилятора `DEFINED_CONSTANT`. Настройки содержатся в свойстве `DefinedConstants`. Для сопоставления с конкретной константой в списке, элементы которого разделяются точкой с запятой, используется регулярное выражение.
+
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
 ```
 
 ## <a name="see-also"></a>См. также

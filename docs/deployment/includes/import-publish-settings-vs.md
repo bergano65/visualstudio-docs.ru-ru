@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143521"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173897"
 ---
 
 1. На компьютере, где открыт проект ASP.NET в Visual Studio, щелкните правой кнопкой мыши этот проект в обозревателе решений и выберите **Опубликовать**.
@@ -13,7 +13,7 @@ ms.locfileid: "68143521"
 
 1. В открывшемся диалоговом окне **Выбрать целевой объект для публикации** выберите **Импортировать профиль**.
 
-    ![Выбор команды Опубликовать](../../deployment/media/tutorial-publish-tool-import-profile.png)
+    ![Выбор команды "Опубликовать"](../../deployment/media/tutorial-publish-tool-import-profile.png)
 
 1. Перейдите в расположение файла параметров публикации, созданного в предыдущем разделе.
 

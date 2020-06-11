@@ -2,7 +2,7 @@
 title: Удаление Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапном удалении среды Visual Studio.
-ms.date: 12/19/2019
+ms.date: 05/06/2020
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b5377c9bdb83c5c67816b3567656c49cf707071
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115012"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184423"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
 
@@ -29,6 +29,13 @@ ms.locfileid: "76115012"
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Для Visual Studio для Mac см. раздел [Удаление Visual Studio для Mac](/visualstudio/mac/uninstall).
+
+> [!TIP]
+> Если у вас возникли проблемы с экземпляром Visual Studio, воспользуйтесь **средством восстановления**. Дополнительные сведения см. в статье [Восстановление Visual Studio](../install/repair-visual-studio.md). 
+>
+> Если вам требуется изменить расположение каких-либо файлов Visual Studio, это можно сделать, не удаляя текущий экземпляр. Дополнительные сведения см. в статье [Выбор расположения установки в Visual Studio](../install/change-installation-locations.md).
+>
+> Общие советы по устранению неполадок см. в статье [Устранение неполадок при установке и обновлении Visual Studio](../install/troubleshooting-installation-issues.md).
 
 ::: moniker range="vs-2017"
 
@@ -104,7 +111,7 @@ ms.locfileid: "76115012"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 * [Изменение Visual Studio](modify-visual-studio.md)
 * [Обновление Visual Studio](update-visual-studio.md)

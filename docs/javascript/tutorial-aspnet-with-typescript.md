@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e212aec6d2d3aa7e20cb0ca08c9ea604f32bb08c
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988547"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183097"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Учебник. Создание приложения ASP.NET Core с помощью TypeScript в Visual Studio
 
@@ -95,11 +95,9 @@ Visual Studio управляет файлами для отдельного пр
    > [!NOTE]
    > Для работы с этим учебником требуется пакет NuGet. Кроме того, в собственных приложениях может потребоваться использовать [пакет npm TypeScript](https://www.npmjs.com/package/typescript).
 
-1. В обозревателе решений щелкните правой кнопкой мыши узел проекта и выберите **Добавить > Новая папка**. Для новой папки используйте имя *scripts*.
+1. Щелкните правой кнопкой мыши узел проекта и выберите **Добавить > Новый элемент**. Выберите **Файл конфигурации TypeScript JSON**, а затем нажмите кнопку **Добавить**.
 
-1. Щелкните правой кнопкой мыши папку *scripts* и выберите **Добавить > Новый элемент**. Выберите **Файл конфигурации TypeScript JSON**, а затем нажмите кнопку **Добавить**.
-
-   Visual Studio добавит файл *tsconfig.json* в папку *scripts*. Этот файл можно использовать для [настройки параметров](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) компилятора TypeScript.
+   Visual Studio добавит файл *tsconfig.json* в корневую папку проекта. Этот файл можно использовать для [настройки параметров](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) компилятора TypeScript.
 
 1. Откройте *tsconfig.json* и замените код по умолчанию следующим кодом.
 
@@ -111,18 +109,19 @@ Visual Studio управляет файлами для отдельного пр
        "removeComments": false,
        "sourceMap": true,
        "target": "es5",
-       "outDir": "../wwwroot/js"
+       "outDir": "wwwroot/js"
      },
-     "exclude": [
-       "node_modules",
-       "wwwroot"
+     "include": [
+       "scripts/**/*"
      ]
    }
    ```
 
-   Параметр *outDir* указывает выходную папку для файлов планов JavaScript, которые преобразуются компилятором TypeScript.
+   Параметр *outDir* указывает выходную папку для обычных файлов JavaScript, которые преобразуются компилятором TypeScript.
 
-   Эта конфигурация содержит основные сведения об использовании TypeScript. В других сценариях, например при использовании [gulp или веб-пакета](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), вместо пути *../wwwroot/js* может потребоваться другое промежуточное расположение для преобразованных файлов JavaScript в зависимости от средств и настроек конфигурации.
+   Эта конфигурация содержит основные сведения об использовании TypeScript. В других сценариях, например при использовании [gulp или веб-пакета](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), вместо пути *wwwroot/js* может потребоваться другое промежуточное расположение для преобразованных файлов JavaScript в зависимости от средств и настроек конфигурации.
+
+1. В обозревателе решений щелкните правой кнопкой мыши узел проекта и выберите **Добавить > Новая папка**. Для новой папки используйте имя *scripts*.
 
 1. Щелкните правой кнопкой мыши папку *scripts* и выберите **Добавить > Новый элемент**. Выберите **Файл TypeScript**, введите *app.ts* в качестве имени файла, а затем нажмите кнопку **Добавить**.
 
@@ -176,7 +175,7 @@ Visual Studio управляет файлами для отдельного пр
     </div>
     ```
 
-1. Откройте папку*Views/Shared*, а затем файл *_Layout.cshtml*.
+1. Откройте папку *Views/Shared*, а затем файл *_Layout.cshtml*.
 
 1. Добавьте следующую ссылку на скрипт перед вызовом `@RenderSection("Scripts", required: false)`:
 

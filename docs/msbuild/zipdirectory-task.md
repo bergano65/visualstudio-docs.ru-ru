@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094574"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183071"
 ---
 # <a name="zipdirectory-task"></a>Задача ZipDirectory
 
@@ -43,7 +43,7 @@ ms.locfileid: "79094574"
 |Параметр|Описание|
 |---------------|-----------------|
 |`DestinationFile`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> Полный путь к создаваемому *ZIP-файлу*.|
-|`Overwrite`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, пропускает целевой файл, который будет перезаписан при его наличии. По умолчанию — `false`.|
+|`Overwrite`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, целевой файл будет перезаписан (при его наличии). По умолчанию — `false`.|
 |`SourceDirectory`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает каталог, из которого создается *ZIP-архив*.|
 
 ## <a name="remarks"></a>Примечания

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416429"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183851"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Пошаговое руководство. Отладка параллельного приложения в Visual Studio (C#, Visual Basic, C++)
 
@@ -232,7 +232,7 @@ ms.locfileid: "77416429"
 
 2. В меню **Отладка** выберите пункт **Окна** и затем щелкните **Потоки**. Закрепите окно **Потоки** в нижней части окна Visual Studio.
 
-3. В меню **Отладка** наведите указатель на пункт **Окна** и выберите команду **Стек вызовов**. Закрепите окно **Стек вызовов** в нижней части окна Visual Studio.
+3. В меню **Отладка** наведите указатель на пункт **Окна** и выберите команду **Стек вызовов**. Закрепите окно **Стек вызовов** в нижней части окна Visual Studio.
 
 4. Дважды щелкните поток в окне **Потоки**, чтобы сделать его текущим. Рядом с текущими потоками должна отображаться желтая стрелка. При изменении текущего потока сведения в других окнах обновляются. Далее изучим содержимое окна "Параллельные задачи".
 

@@ -1,7 +1,7 @@
 ---
 title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.date: 02/01/2020
+ms.date: 05/13/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223662"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180445"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -98,7 +98,7 @@ ms.locfileid: "81223662"
 | Интеграция <br>Интеграция | az861674.vo.msecnd.net | 443<br> | Используется для настройки новых проектов и отправки данных об использовании в зарегистрированную учетную запись Application Insights |
 | Code Lens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Используется для предоставления сведений в редакторе, например времени последнего обновления файла, временной шкалы изменений, связанных с изменениями рабочими элементами, данных о авторе и т. д. |
 | Экспериментальный <br>экспериментальной функции | visualstudio-devdiv-c2s.msedge.net | 80 | Используется для активации новых экспериментальных функций или измененных функций |
-| Значок идентификатора <br>(имя пользователя и аватар)<br>и <br>перемещение параметров | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
+| Значок идентификатора <br>(имя пользователя и аватар)<br>and <br>перемещения | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Используется для отображения имени пользователя и аватара в среде IDE <br><br> Используется для перемещения изменений параметров с одного компьютера на другой |
 | Настройки удаленной системы | az700632.vo.msecnd.net | 443 | Используется для отключения расширений, которые могут вызывать проблемы в работе Visual Studio |
 | Средства Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Применяется для сценариев использования магазина приложений Windows |
 | Поддержка <br>Обнаружение <br><br>Поддержка <br>Определение<br><br>Поддержка <br>схемы JSON для <br>ресурсов Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Используется для обнаружения и скачивания схем JSON, которые можно применять при изменении документов JSON <br><br>Используется для получения схемы проверки метаданных для JSON<br><br>Используется, чтобы получить текущую схему для шаблонов развертывания Azure Resource Manager |
@@ -132,11 +132,11 @@ ms.locfileid: "81223662"
 | Сообщество разработчиков | sendvsfeedback2.azurewebsites.net/api | https/443 | Используется для вызова API средства обратной связи сообщества разработчиков (мои вопросы, поиск, голосование, комментарий, отправка, загрузка, возобновление). |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Используется для вызова API Intellicode |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Используется для вызова API Live Share |
-| Visual Studio Online | \*.online.visualstudio.com | https/443 | Используется для вызова API Visual Studio Online |
+| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Используется для вызова Visual Studio Codespaces |
 | Автоматическое получение типа JavaScript | registry.npmjs.org | https/443 | Используется для установки определений типов TypeScript в целях предоставления IntelliSense для популярных библиотек JavaScript |
 | Служба лицензирования подписок Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | Лицензирование для активации через Интернет |
 | Отладчик | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Используется для скачивания битов отладчика для отладки .NET Core в Unix/macOS через SSH <br><br>2. <br>Используется для скачивания битов отладчика для удаленной отладки контейнера Windows Docker<br><br> 3. Используется для пошагового выполнения исходного кода .NET Framework <br><br> 4. <br>(Если пользователь соглашается) Используется для скачивания символов, опубликованных на сервере символов nuget.org<br><br> 5. (Если пользователь соглашается) Используется для скачивания символов и двоичных файлов Майкрософт, может также потребоваться для отладки управляемого кода в дампах |
-| Visual Studio Online| \*.online.visualstudio.com | https/443 | Используется для вызова API Visual Studio Online |
+| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Используется для вызова Visual Studio Codespaces |
 | Публикация приложения Xamarin Android | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Используется для взаимодействия со службой Google Play Маркет для публикации и отправки приложений Xamarin Android непосредственно из Visual Studio. |
 | Реестр контейнеров Azure | *.azurecr.io | https/443 | Доступ к реестрам контейнеров, размещенным в Azure, для настройки конвейеров CICD |
 | | | | |

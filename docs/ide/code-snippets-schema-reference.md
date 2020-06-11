@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472793"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183682"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -115,6 +115,7 @@ $selected$ is a great color. I love $selected$.
    |`VB`|Определяет фрагмента кода Visual Basic.|
    |`CSharp`|Определяет фрагмент кода C#.|
    |`CPP`|Определяет фрагмент кода C++.|
+   |`XAML`|Определяет фрагмент кода XAML.|
    |`XML`|Определяет фрагмент кода XML.|
    |`JavaScript`|Определяет фрагмент кода JavaScript.|
    |`TypeScript`|Определяет фрагмент кода TypeScript.|

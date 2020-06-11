@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543958"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183006"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
-Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке. В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания. (Приложения многих типов поддерживают другие средства развертывания, такие как развертывание из командной строки, которые не описываются в этой статье.)
+Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке. В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания. (Многие приложения различных типов поддерживают другие средства развертывания, такие как развертывание из командной строки или NuGet, которые не описываются в этой статье.)
 
 Пошаговые инструкции по развертыванию см. в кратких руководствах и учебниках. Обзор вариантов развертывания см. в статье [Выбор подходящих вариантов публикации](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ ms.locfileid: "80543958"
 
     ![Выбор команды Опубликовать](../deployment/media/quickstart-publish.png)
 
-- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows в папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C++/CLI см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows в папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Публикация в Azure
 
@@ -77,13 +77,13 @@ ms.locfileid: "80543958"
 
     В обозревателе решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**. (Если ранее вы настроили профили публикации, затем необходимо выбрать команду **Создать новый профиль**.) В средстве "Опубликовать" выберите нужный вариант и выполните инструкции по установке.
 
-    ![Выберите IIS, FTP или другой вариант.](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![Выбор служб IIS](../deployment/media/quickstart-publish-iis.png)
 
     Дополнительные сведения об импорте профиля публикации в Visual Studio см. в статье [Импорт параметров публикации и развертывание в IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Также вы можете развертывать приложения и службы ASP.NET некоторыми другими способами. Дополнительные сведения см. в статье [Развертывание веб-приложений и служб ASP.NET](/aspnet/mvc/overview/deployment/).
+    Также вы можете развертывать приложения и службы ASP.NET некоторыми другими способами. Дополнительные сведения см. в статье [Развертывание веб-приложений и служб ASP.NET](/aspnet/overview/deployment).
 
-- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows на веб-сервере или в общей сетевой папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C++/CLI см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Классические приложения Windows**. Вы можете публиковать классические приложения Windows на веб-сервере или в общей сетевой папке, используя развертывание ClickOnce. Затем пользователи смогут устанавливать приложение одним щелчком. Дополнительные сведения см. в статье [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# и Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Публикация в Microsoft Store
 
@@ -93,16 +93,9 @@ ms.locfileid: "80543958"
 
     ![Создание пакета приложения](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Классические приложения Windows**. Начиная с Visual Studio 2017 версии 15.4 можно выполнять развертывание в Microsoft Store. Для этого сначала необходимо создать проект упаковки приложений Windows. Дополнительные сведения см. в статье [Упаковка классического приложения для Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
+- **Классические приложения Windows**. Начиная с версии Visual Studio 2017 15.4, вы можете выполнять развертывание в Microsoft Store, используя мост для классических приложений. Для этого сначала необходимо создать проект упаковки приложений Windows. Дополнительные сведения см. в статье [Упаковка классического приложения для Microsoft Store (мост для классических приложений)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-    ![Упаковка классического приложения](../deployment/media/feature-tour-desktop-bridge.png)
-
-## <a name="deploy-net-packages-to-nugetorg"></a>Развертывание пакетов .NET в NuGet.org
-
-Чтобы развернуть упакованный код в "пакеты", содержащие скомпилированный код (в виде библиотек DLL) вместе с другим содержимым, необходимым в проектах, в которых используются эти пакеты, можно использовать Visual Studio для создания пакета NuGet и средство CLI для выполнения команды окончательного развертывания.
-
-- [Создание и публикация пакета .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-- [Создание и публикация пакета .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
+    ![Мост для классических приложений](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>Развертывание на устройство (универсальная платформа Windows)
 
@@ -112,13 +105,12 @@ ms.locfileid: "80543958"
 
 Если возможностей [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) недостаточно для установки вашего классического приложения, вы можете создать пакет установщика Windows (файл установки MSI или EXE) или собственный начальный загрузчик.
 
-- Пакет установщика на базе MSI можно создать с помощью [расширения с набором инструментов WiX](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Это программа командной строки.
+- Пакет установщика на базе MSI можно создать с помощью [расширения с набором инструментов WiX для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Это программа командной строки.
 
-   ::: moniker range=">=vs-2019"
-   Для Visual Studio 2019 см. сведения о [расширении набора инструментов WiX для Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
-   ::: moniker-end
+- Пакет установщика MSI или EXE можно создать, используя [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из Flexera Software. Вместе с Visual Studio 2017 и последующими версиями можно использовать компонент InstallShield (выпуск Community Edition не поддерживается). 
 
-- Пакет установщика MSI или EXE можно создать, используя [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из Flexera Software. Вместе с Visual Studio 2017 и последующими версиями можно использовать компонент InstallShield (выпуск Community Edition не поддерживается). Обратите внимание, что версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017 и последующих версиях. Информацию о ее дальнейшей доступности см. в документации по [программному обеспечению Flexera](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
+  > [!NOTE]
+  > Версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017 и последующих версиях. Информацию о ее дальнейшей доступности см. в документации по [программному обеспечению Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
 - Пакет установщика MSI или EXE можно создать с помощью проекта установки (VDPROJ). Чтобы использовать этот вариант, установите [расширение проектов Visual Studio Installer](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
@@ -146,7 +138,7 @@ ms.locfileid: "80543958"
 
 | Тип приложения | Сценарий развертывания | Ссылка |
 | --- | --- | --- |
-| **Приложения Office** | Из среды Visual Studio можно опубликовать надстройку для Office. | [Развертывание и публикация надстройки Office](/office/dev/add-ins/publish/publish) |
+| **Приложения Office** | Из среды Visual Studio можно опубликовать надстройку для Office. | [Развертывание и публикация надстройки Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Службы WCF или OData** | Другие приложения могут использовать службы RIA WCF, развертываемые на веб-сервере. | [Разработка и развертывание служб WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | Начиная с Visual Studio 2017, среда LightSwitch более не поддерживается, но можно выполнить ее развертывание в Visual Studio 2015 и предыдущих версиях. | [Развертывание приложений LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

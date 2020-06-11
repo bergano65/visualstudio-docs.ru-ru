@@ -3,15 +3,15 @@ title: Средства Visual Studio для контейнеров с ASP.NET C
 author: ghogen
 description: Сведения об использовании средств Visual Studio для контейнеров и Docker для Windows
 ms.author: ghogen
-ms.date: 10/16/2019
+ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255546"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182796"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio
 
@@ -72,16 +72,16 @@ ms.locfileid: "82255546"
 
 *Dockerfile* с инструкциями по созданию окончательного образа Docker создается в проекте. См. [справочник по Dockerfile](https://docs.docker.com/engine/reference/builder/) для получения сведений о других доступных в нем командах.
 
-Откройте *Dockerfile* в проекте и добавьте приведенные ниже строки для установки Node.js 10.x в контейнере. Чтобы добавить файлы установки диспетчера пакетов Node.js *npm.exe* в базовый образ, который используется в следующих шагах, обязательно добавьте следующие строки в первый раздел.
+Откройте *Dockerfile* в проекте и добавьте приведенные ниже строки для установки Node.js 10.x в контейнере. Чтобы добавить файлы установки диспетчера пакетов Node.js *npm.exe* в базовый образ, обязательно добавьте следующие строки в первый раздел, а также в раздел `build`.
 
-```
+```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 ```
 
 Теперь файл *Dockerfile* должен выглядеть следующим образом:
 
-```
+```Dockerfile
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80 
@@ -90,6 +90,8 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
 FROM microsoft/dotnet:2.2-sdk-stretch AS build
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
 RUN dotnet restore "WebApplication37/WebApplication37.csproj"
@@ -123,7 +125,7 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
    1. Добавьте ``# escape=` `` в первую строку файла "Dockerfile".
    1. Добавьте следующие строки перед `FROM … base`.
 
-      ```
+      ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
@@ -133,17 +135,19 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
    1. Добавьте следующую строку до и после `FROM … build`.
 
-      ```
+      ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
    1. Теперь весь файл "Dockerfile" должен выглядеть примерно так:
 
-      ```
+      ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      RUN mkdir -p C:\nodejsfolder
+      WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
