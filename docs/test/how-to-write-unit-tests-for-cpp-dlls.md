@@ -1,18 +1,18 @@
 ---
 title: Создание модульных тестов для библиотек DLL на C++
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279270"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287042"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Написание модульных тестов для библиотек DLL на C++ в Visual Studio
 
@@ -38,7 +38,7 @@ ms.locfileid: "77279270"
 
 ## <a name="create-the-tests"></a>Создание тестов
 
-### <a name="staticLink"></a> Преобразование библиотеки DLL в статическую библиотеку
+### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> Преобразование библиотеки DLL в статическую библиотеку
 
 - Если тесты должны использовать члены, которые не экспортируются проектом библиотеки DLL, а сборка тестируемого проекта выполнена в виде динамической библиотеки, то следует преобразовать его в статическую библиотеку.
 
@@ -50,7 +50,7 @@ ms.locfileid: "77279270"
 
   Продолжите выполнение процедуры [Связывание тестов с объектным файлом или файлом библиотеки](#objectRef).
 
-### <a name="projectRef"></a> Создание ссылки на экспортируемые функции библиотеки DLL из тестового проекта
+### <a name="to-reference-exported-dll-functions-from-the-test-project"></a><a name="projectRef"></a> Создание ссылки на экспортируемые функции библиотеки DLL из тестового проекта
 
 - Если проект библиотеки DLL экспортирует функции, которые необходимо протестировать, можно добавить ссылку на проект кода из тестового проекта.
 
@@ -82,7 +82,7 @@ ms.locfileid: "77279270"
 
   Перейдите к разделу [Написание модульных тестов](#addTests).
 
-### <a name="objectRef"></a> Связывание тестов с объектным файлом или файлом библиотеки
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> Связывание тестов с объектным файлом или файлом библиотеки
 
 - Если библиотека DLL не экспортирует функции, которые необходимо проверить, можно добавить файл выходных данных *OBJ* или *LIB* в зависимости тестового проекта.
 
@@ -116,7 +116,7 @@ ms.locfileid: "77279270"
 
   Перейдите к разделу [Написание модульных тестов](#addTests).
 
-### <a name="sameProject"></a> Добавление модульных тестов в тот же проект
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> Добавление модульных тестов в тот же проект
 
 1. Измените свойства проекта кода продукта для того, чтобы он включал заголовки и файлы библиотек, которые необходимы для модульного тестирования.
 
@@ -137,7 +137,7 @@ ms.locfileid: "77279270"
 
    Перейдите к разделу [Написание модульных тестов](#addTests).
 
-## <a name="addTests"></a> Написание модульных тестов
+## <a name="write-the-unit-tests"></a><a name="addTests"></a> Написание модульных тестов
 
 1. В каждом файле кода модульного теста добавьте оператор `#include` для заголовков тестируемого проекта.
 

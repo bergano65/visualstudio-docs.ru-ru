@@ -1,19 +1,19 @@
 ---
 title: Анализ действий виртуальных пользователей для нагрузочных тестов
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169408"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288407"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Практическое руководство. Анализ действий виртуальных пользователей при нагрузочном тестировании с помощью диаграммы активности виртуальных пользователей
 

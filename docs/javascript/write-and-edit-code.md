@@ -2,7 +2,7 @@
 title: Общие сведения о редактировании для разработчиков JavaScript
 description: В этом вводном руководстве по редактору кода Visual Studio мы продемонстрируем несколько методов, которые упрощают написание, понимание кода JavaScript и навигацию по нему в Visual Studio.
 ms.date: 12/13/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840833"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289096"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 

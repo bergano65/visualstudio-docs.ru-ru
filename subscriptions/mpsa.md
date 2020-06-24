@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Подписки Visual Studio в соглашении о продуктах и службах Майкрософт (MPSA)
-ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232199"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289356"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Подписки Visual Studio в соглашении о продуктах и службах Майкрософт (MPSA)
 Если вы приобрели подписки Visual Studio по программе MPSA, то существуют несколько моментов, которые следует учесть перед тем, как вы сможете стать администратором подписок Visual Studio и назначать подписки своим пользователям. Если вы уже назначены в качестве администратора, то можете перейти непосредственно на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com/).
@@ -45,7 +45,7 @@ ms.locfileid: "80232199"
 5. Нажмите кнопку **Связать домен**.
 
 Обычно при установлении связи процесс подготовки пользователей, соответствующих критериям, в качестве администраторов подписок Visual Studio занимает считаные минуты. Однако в некоторых случаях процесс может занимать до 24 часов. После завершения подготовки клиента вы получите доступ к порталу администрирования подписок Visual Studio. Если процесс продолжается более 24 часов, обратитесь в службу поддержки MPSA, следуя инструкциям:
-1. Подключитесь к https://www.microsoft.com/licensing/mpsa/default.
+1. Подключитесь к <https://www.microsoft.com/licensing/mpsa/default>.
 2. Нажмите на вкладку **Дополнительно** в верхней части страницы. 
 3. Выберите **Поддержка**.
 4. Выберите **Поддержка по лицензированию**.

@@ -3,15 +3,15 @@ title: Настройка инструментов Visual Studio для раб�
 description: Настройте средства, доступные в Visual Studio для работы с контейнерами Docker.
 author: ghogen
 ms.author: ghogen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d2b3e2821e7697ad53b10a7148c22140aa1a07af
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73188774"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283220"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Настройка инструментов Visual Studio для работы с контейнерами
 

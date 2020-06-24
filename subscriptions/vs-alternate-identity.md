@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Как добавить альтернативный идентификатор для подписки Visual Studio, который будет использоваться для Azure DevOps и Azure
-ms.openlocfilehash: ff5166da3cb782c0750b0ce61fdafec375811ff4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f8b634bd2f59bf3de038e7200900ee9930d79fff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232004"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289381"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Идентификаторы для подписчиков Visual Studio
 Когда вы активируете подписку Visual Studio, мы привязываем ваш идентификатор (или имя пользователя), использованный при активации, к подписке Visual Studio. Таким образом мы сможем узнать вас на [портале подписчиков Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), в Azure DevOps и в Azure.
@@ -27,7 +27,7 @@ ms.locfileid: "80232004"
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Добавление альтернативной учетной записи в подписку
 Добавление альтернативной учетной записи в подписку Visual Studio позволяет получить доступ к преимуществам подписки, таким как Azure DevOps и Azure, с идентификатором, отличным от того, которому назначена подписка. В прошлом эта возможность была доступна, только если подписка Visual Studio была назначена учетной записи Майкрософт. Мы распространили ее на рабочие и учебные учетные записи в Azure Active Directory (Azure AD).
 
-При этом копия подписки не предоставляет другой учетной записи. Вы лишь получаете возможность доступа к указанным преимуществам с помощью альтернативной учетной записи.
+При этом копия подписки не предоставляется другой учетной записи. Вы лишь получаете возможность доступа к указанным преимуществам с помощью альтернативной учетной записи.
 
 Для всех подписок можно добавить рабочую или учебную учетную запись, чтобы использовать ее с преимуществами, для которых требуется вход (IDE Visual Studio, Azure DevOps и Azure).
 
@@ -40,8 +40,6 @@ ms.locfileid: "80232004"
     > ![Добавление рабочей или учебной учетной записи](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Войдите в Azure DevOps, используя рабочую или учебную учетную запись (https://{ваша_учетная_запись}.visualstudio.com).
-    > [!div class="mx-imgBorder"]
-    > ![Использование рабочей или учебной учетной записи](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 Альтернативная учетная запись будет добавлена в подписку Visual Studio, что позволит использовать оба идентификатора для доступа к преимуществам подписки, для которых требуется вход с помощью альтернативной учетной записи (IDE, Azure DevOps и Azure).
 

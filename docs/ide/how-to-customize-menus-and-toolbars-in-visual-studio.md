@@ -1,7 +1,7 @@
 ---
 title: Настройка меню и панелей инструментов
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306827"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284403"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Практическое руководство. Настройка меню и панелей инструментов в Visual Studio
 
@@ -81,7 +81,7 @@ Visual Studio можно настраивать не только путем д�
         > [!NOTE]
         > Дополнительные сведения о повышении практичности и доступности панелей инструментов см. в статье [Практическое руководство. Настройка параметров специальных возможностей в интегрированной среде разработки](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="customizing_menu">Настройка меню или панели инструментов</a>
+## <a name=""></a><a name="customizing_menu">Настройка меню или панели инструментов</a>
 
 1. В строке меню выберите **Сервис** > **Настроить**.
 

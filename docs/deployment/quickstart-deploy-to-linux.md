@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 1a6500b8b38cc6beef21e7da301ec8e1ef7d4bd6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 5b0b45d586fb6eb89eb458329f611d980d9415e0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173282"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285481"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Публикация веб-приложения ASP.NET Core в службе приложений на Linux с помощью Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "84173282"
 
 1. Выберите **Azure** в диалоговом окне **Публикация**.
 
-    ![Выбор целевого объекта публикации](../deployment/media/quickstart-publish-azure.png)
+    ![Выбор целевого объекта публикации](../deployment/media/quickstart-publish-azure-new.png)
 
 1. Выберите **Служба приложений Azure (Linux)** и нажмите кнопку **Далее**.
 

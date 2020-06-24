@@ -1,7 +1,7 @@
 ---
 title: Добавление параметров имен в шаблоны проектов и элементов
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - template parameters
 - template parameters, substituting
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591415"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283948"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Практическое руководство. Замена параметров в шаблоне
 

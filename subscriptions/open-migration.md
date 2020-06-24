@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564216"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289031"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
 Для управления подписками на [портале администрирования подписок](https://manage.visualstudio.com) Visual Studio партнерам необходимо выполнить несколько действий. 
@@ -30,7 +30,7 @@ ms.locfileid: "82564216"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Действия партнеров по добавлению новой лицензии:
-- Выполните вход в https://manage.visualstudio.com.
+- Выполните вход в <https://manage.visualstudio.com>.
 - Откройте раскрывающееся меню соглашений и прокрутите его вниз до пункта **Создать Open License**.
 - Во всплывающем окне введите номер авторизации, номер лицензии и адрес электронной почты клиента, указанный в соглашении, установите флажок и нажмите кнопку **Отправить**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "82564216"
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Новые партнеры, которые заходят на портал администрирования подписок Visual Studio напрямую
 Этот сценарий относится к новым партнерам, которые уже размещали новые заказы на Open License, но еще не зарегистрировались на портале [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) и зашли на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com) напрямую.  Выполните следующие действия.
-- Откройте страницу https://manage.visualstudio.com.
+- Откройте страницу <https://manage.visualstudio.com>.
 - Отображается сообщение о том, что пользователь не распознан.
 - Выберите способ регистрации **Партнеры OLP** и введите номер авторизации, номер лицензии и указанный в заказе адрес электронной почты клиента, установите флажок и нажмите кнопку **Отправить**.
 

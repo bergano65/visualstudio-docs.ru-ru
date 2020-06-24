@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7ae4e0f865b35787663313277eb4df37169b72b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75406353"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286067"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Ссылка на сведения о миграции и обновлении проекта для Visual Studio
 
@@ -106,7 +106,8 @@ ms.locfileid: "75406353"
 
 ## <a name="see-also"></a>См. также
 
-[Ссылка на сведения о миграции и обновлении проекта Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Ссылка на сведения о миграции и обновлении проекта Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Жизненный цикл и обслуживание продуктов Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
 
@@ -114,7 +115,7 @@ ms.locfileid: "75406353"
 
 Каждая новая версия Visual Studio поддерживает большую часть типов проектов, файлов и других ресурсов. С ними можно работать [как обычно](../ide/solutions-and-projects-in-visual-studio.md), при условии, что вы не зависите от новых функций.
 
-Мы стараемся сохранить обратную совместимость с предыдущими версиями, такими как Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. Однако поддержка некоторых типов проектов также со временем меняется. Новейшая версия Visual Studio может не поддерживать некоторые проекты или же потребовать обновить проект так, что он больше не будет обратно совместимым. 
+Мы стараемся сохранить обратную совместимость с предыдущими версиями, такими как Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. Однако поддержка некоторых типов проектов также со временем меняется. Новейшая версия Visual Studio может не поддерживать некоторые проекты или же потребовать обновить проект так, что он больше не будет обратно совместимым.
 
 > [!NOTE]
 > Текущее состояние проблем с миграцией см. в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com). Просмотрите [заметки о выпуске](/visualstudio/releases/2019/release-notes/), чтобы узнать, какие функции к какой версии Visual Studio относятся.
@@ -182,7 +183,7 @@ ms.locfileid: "75406353"
 
 Группа разработчиков проекта оценивает эти критерии и создает запрос, если есть необходимость в поддержке, обеспечении совместимости и миграции. Мы пытаемся обеспечивать совместимость между версиями Visual Studio, чтобы проекты, создаваемые в одной версии Visual Studio, могли работать и в других версиях.
 
-Иногда такая совместимость невозможна. Тогда в Visual Studio открывается мастер обновления для внесения необходимых односторонних изменений. Одним из этих односторонних изменений может быть изменение свойства `ToolsVersion` в файле проекта. Оно указывает, какая именно версия MSBuild может преобразовывать исходный код проекта в требуемые выполняемые и развертываемые артефакты. 
+Иногда такая совместимость невозможна. Тогда в Visual Studio открывается мастер обновления для внесения необходимых односторонних изменений. Одним из этих односторонних изменений может быть изменение свойства `ToolsVersion` в файле проекта. Оно указывает, какая именно версия MSBuild может преобразовывать исходный код проекта в требуемые выполняемые и развертываемые артефакты.
 
 Несовместимость проекта с предыдущими версиями Visual Studio зависит не от версии *Visual Studio*, а от версии *MSBuild*, определяемой свойством `ToolsVersion`. Если ваша версия Visual Studio включает в себя цепочку инструментов MSBuild, соответствующую значению свойства `ToolsVersion` в проекте, то она может вызывать эту цепочку инструментов для сборки проекта.
 
@@ -199,6 +200,7 @@ ms.locfileid: "75406353"
 
 ## <a name="see-also"></a>См. также
 
-[Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Ссылка на сведения о миграции и обновлении проекта Visual Studio 2017](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Жизненный цикл и обслуживание продуктов Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

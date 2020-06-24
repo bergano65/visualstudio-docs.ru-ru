@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183747"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286327"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C\#
 
@@ -235,6 +235,8 @@ ms.locfileid: "84183747"
 
    Если вам удобнее вызывать визуализатор из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], а не из специально подготовленной тестовой программы, визуализатор необходимо установить. Дополнительные сведения см. в разделе [Практическое руководство. установить визуализатор](../debugger/how-to-install-a-visualizer.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Создание визуализатора с помощью шаблона элемента визуализатора
 
 На данном пошаговом руководстве было рассмотрено, как создать визуализатор вручную. Это было сделано в качестве упражнения для обучения. Теперь, когда вы знаете, как работает простой визуализатор, можно создать его проще — с помощью шаблона элемента визуализатора.
@@ -268,6 +270,7 @@ ms.locfileid: "84183747"
 5. Нажмите кнопку **Добавить**.
 
    Вот и все, что нужно! Просмотрите файл SecondVisualizer.cs для изучения кода, добавленного шаблоном. Можете поэкспериментировать с кодом. Теперь, когда вы изучили основы, вы сможете в будущем создавать свои собственные более сложные и полезные визуализаторы.
+::: moniker-end
 
 ## <a name="see-also"></a>См. также
 

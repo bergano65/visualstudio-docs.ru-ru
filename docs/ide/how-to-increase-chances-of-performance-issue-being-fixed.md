@@ -4,13 +4,13 @@ description: Дополнительные сведения и рекоменда
 author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
-ms.topic: reference
-ms.openlocfilehash: f5c83a145eb56dcb95c6e9a299c690ae960442c9
-ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
+ms.topic: conceptual
+ms.openlocfilehash: 2e5718740b9219ee988859e530591305394fb239
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81615048"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284312"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Практическое руководство. Повышение шансов решения проблемы с производительностью
 
@@ -74,17 +74,17 @@ Visual Studio — это обширная и сложная платформа,
 Если вы не можете определить причины сбоев или они возникают без какой-либо закономерности, вы можете записать локальные дампы для каждого случая сбоя Visual Studio и приложить их к отдельным элементам отзывов. Чтобы сохранять локальные дампы при сбоях Visual Studio, выполните следующие команды в окне командной строки администратора:
 
 ```
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
-Reporting\LocalDumps\devenv.exe"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
-Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\ServiceHub.RoslynCodeAnalysisService32.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\ServiceHub.RoslynCodeAnalysisService32.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\ServiceHub.RoslynCodeAnalysisService32.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
-Reporting\LocalDumps\devenv.exe" /v DumpCount /t REG_DWORD /d 2
-
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error
-Reporting\LocalDumps\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\ServiceHub.RoslynCodeAnalysisService.exe" /v DumpType /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\ServiceHub.RoslynCodeAnalysisService.exe" /v DumpCount /t REG_DWORD /d 2
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\ServiceHub.RoslynCodeAnalysisService.exe" /v DumpFolder /t REG_SZ /d "C:\CrashDumps"
 ```
 
 Задайте количество дампов и папку для их размещения. Дополнительные сведения об этих параметрах см. в [этом разделе](/windows/win32/wer/collecting-user-mode-dumps).

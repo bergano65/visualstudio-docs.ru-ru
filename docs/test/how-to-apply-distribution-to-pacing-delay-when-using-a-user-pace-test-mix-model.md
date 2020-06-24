@@ -1,19 +1,19 @@
 ---
 title: Применение распределения для задержки шага при нагрузочном тестировании
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa5d3239e3b096a2018d6ef9c9b3c6666dcd31c3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114487"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288277"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Практическое руководство. Применение распределения для задержки шага при использовании модели тестовых наборов скорости пользователей
 

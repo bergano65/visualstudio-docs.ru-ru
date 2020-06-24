@@ -2,19 +2,19 @@
 title: Практическое руководство. просмотр, сохранение и настройку файлов журнала сборки | Документация Майкрософт
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472781"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283909"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки
 
@@ -63,7 +63,7 @@ ms.locfileid: "80472781"
      Дополнительные сведения см. в разделах [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) и <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Вам нужно перестроить проект, чтобы изменения в окне **Вывод** (все проекты) и файле *\<имя_проекта>.txt* (только проекты C++) вступили в силу.
+    > Вам нужно перестроить проект, чтобы изменения в окне **Вывод** (все проекты) и файле *\<ProjectName>.txt* (только проекты C++) вступили в силу.
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Использование двоичных журналов для упрощения просмотра больших файлов журнала
 

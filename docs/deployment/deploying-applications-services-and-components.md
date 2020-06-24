@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183006"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286364"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
@@ -58,7 +58,7 @@ ms.locfileid: "84183006"
 
   Чтобы использовать средство **публикации**, щелкните правой кнопкой мыши проект в обозревателе решений и выберите **Опубликовать**. (Если ранее вы настроили профили публикации, затем необходимо выбрать команду **Создать новый профиль**.) В диалоговом окне публикации выберите **Служба приложений** или **Виртуальная машина Azure** и выполните инструкции по настройке.
 
-  ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-azure.png "Выбор службы приложений Azure")
+  ![Выбор службы приложений Azure](../deployment/media/quickstart-publish-azure-new.png "Выбор службы приложений Azure")
 
   Начиная с Visual Studio 2017 версии 15.7 приложения ASP.NET Core можно развертывать в **Службе приложений для Linux**.
 
@@ -91,7 +91,7 @@ ms.locfileid: "84183006"
 
 - **Универсальная платформа Windows**. Вы можете упаковать свое приложение и развернуть его, используя пункты меню. Дополнительные сведения см. в статье [Упаковка приложения UWP с помощью Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Создание пакета приложения](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Создание пакета приложения](../deployment/media/feature-tour-create-app-package.png)
 
 - **Классические приложения Windows**. Начиная с версии Visual Studio 2017 15.4, вы можете выполнять развертывание в Microsoft Store, используя мост для классических приложений. Для этого сначала необходимо создать проект упаковки приложений Windows. Дополнительные сведения см. в статье [Упаковка классического приложения для Microsoft Store (мост для классических приложений)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 

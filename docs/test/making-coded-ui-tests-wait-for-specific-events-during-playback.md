@@ -1,18 +1,18 @@
 ---
 title: Настройка ожидания определенных событий закодированным тестом пользовательского интерфейса
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e594a6aec3f9e3a9664c5eac829b27f96f12ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584456"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286782"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий
 

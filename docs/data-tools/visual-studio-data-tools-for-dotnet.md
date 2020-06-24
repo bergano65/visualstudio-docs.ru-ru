@@ -1,7 +1,7 @@
 ---
 title: Инструменты для данных для .NET
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586046"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281075"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools для .NET
 
@@ -26,7 +26,7 @@ Visual Studio и .NET вместе предоставляют обширную �
 
 ![Архитектура ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
-## <a name="typical-workflow"></a>Типичный рабочий процесс
+## <a name="typical-workflow"></a>Стандартный рабочий процесс
 
 Типичный рабочий процесс:
 
@@ -42,6 +42,6 @@ Visual Studio и .NET вместе предоставляют обширную �
 
 Можно пропустить шаг 3 и программировать приложение .NET для выполнения команд непосредственно в базе данных, а не использовать модель. В этом случае вы найдете здесь документацию: [ADO.NET](/dotnet/framework/data/adonet/index). Обратите внимание, что по-прежнему можно использовать **Мастер настройки источника данных** и конструкторы для создания кода привязки данных при заполнении собственных объектов в памяти, а затем привязывать к этим объектам элементы управления ИП привязки данных.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

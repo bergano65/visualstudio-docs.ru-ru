@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984909"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289421"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Установка Visual Studio 2017 для Mac
 
@@ -29,7 +29,7 @@ ms.locfileid: "74984909"
 
 Для работы с iOS в Visual Studio необходимы следующие компоненты:
 
-- Компьютер Mac с macOS Sierra 10.12 или более поздней версии
+- Компьютер Mac с macOS High Sierra 10.13 или более поздней версии.
 - Xcode 9.3 или более поздней версии. Обычно рекомендуется использовать последнюю стабильную версию.
 - Идентификатор Apple ID. Если у вас нет идентификатора Apple ID, его можно создать на сайте https://appleid.apple.com. Он необходим для установки приложения Xcode и входа в него.
 
@@ -89,7 +89,7 @@ ms.locfileid: "74984909"
 
 10. После успешной установки можно запустить приложения разработки в Visual Studio, нажав кнопку **Запустить**:
 
-    ![Запустите Visual Studio](media/installer-image11.png)
+    ![Открытие Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 > Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://visualstudio.microsoft.com/vs/).
@@ -102,7 +102,7 @@ ms.locfileid: "74984909"
 
 - [Конечные точки Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Установка Visual Studio для Mac позволяет перейти к написанию кода для приложений. Следующие руководства помогут вам в создании и развертывании проектов.
 
@@ -125,6 +125,6 @@ ms.locfileid: "74984909"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Установка Visual Studio 2017 (в Windows)](/visualstudio/install/install-visual-studio)
