@@ -1,11 +1,13 @@
 - name: Документация по профилированию
   href: index.yml
 - name: Обзор
-  href: profiling-overview.md
-- name: Краткие руководства
   items:
     - name: Первое знакомство с профилированием
       href: profiling-feature-tour.md
+    - name: Запуск средств профилирования с отладчиком или без него
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: Краткие руководства
+  items:
     - name: Анализ использования ЦП (управляемый код)
       href: quickstart-cpu-usage-managed.md
     - name: Анализ использования ЦП (машинный код)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: Основные понятия
   items:
-    - name: Запуск средств профилирования с отладчиком или без него
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: Общие сведения о методах сбора данных о производительности
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: Оптимизация параметров профилировщика
+      href: optimize-profiler-settings.md
+    - name: Одновременное использование нескольких средств профилирования
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: Практические руководства
   items:
-    - name: Использование PerfTips
+    - name: PerfTips
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: База данных
+      href: analyze-database.md
+    - name: Средство просмотра событий
+      href: events-viewer.md
     - name: Использование ЦП
       href: cpu-usage.md
     - name: Использование памяти

@@ -20,7 +20,7 @@
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Отключить анализ кода
           href: disable-code-analysis.md
-        - name: ВОПРОСЫ И ОТВЕТЫ
+        - name: часто задаваемые вопросы
           href: analyzers-faq.md
         - name: Анализаторы FXCop
           items:
@@ -30,7 +30,7 @@
               items:
                 - name: Миграция с анализа прежних версий на анализаторы FxCop
                   href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
-                - name: ВОПРОСЫ И ОТВЕТЫ
+                - name: часто задаваемые вопросы
                   href: fxcop-analyzers-faq.md
                 - name: Перенесенные правила
                   href: fxcop-rule-port-status.md
@@ -53,7 +53,7 @@
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Запуск анализа прежних версий вручную
           href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
-        - name: Конфигурация
+        - name: Параметр Configuration
           items:
             - name: Настройка анализа прежних версий
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -498,7 +498,7 @@
                   href: ca1724.md
                 - name: CA1726. Используйте предпочтительные термины
                   href: ca1726.md
-            - name: Предупреждения о производительности
+            - name: 'Предупреждения, связанные с производительностью'
               items:
                 - name: Обзор
                   displayName: performance warnings
@@ -551,6 +551,14 @@
                   href: ca1828.md
                 - name: "CA1829: Используйте свойство Length/Count вместо метода\_Enumerable.Count"
                   href: ca1829.md
+                - name: 'CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки'
+                  href: ca1831.md
+                - name: 'CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory'
+                  href: ca1832.md
+                - name: 'CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory'
+                  href: ca1833.md
+                - name: 'CA1835: предпочитайте перегрузку памяти для методов Stream ReadAsync/WriteAsync'
+                  href: ca1835.md
             - name: 'Предупреждения, связанные с переносимостью'
               items:
                 - name: Обзор
@@ -585,6 +593,12 @@
                   href: ca2009.md
                 - name: 'CA2011: не присваивайте свойство в методе задания'
                   href: ca2011.md
+                - name: 'CA2012: используйте ValueTasks правильно'
+                  href: ca2012.md
+                - name: 'CA2013: не используйте ReferenceEquals с типами значений'
+                  href: ca2013.md
+                - name: 'CA2014: не используйте stackalloc в циклах'
+                  href: ca2014.md
                 - name: 'CA2015: не определяйте методы завершения для типов, производных от MemoryManager<T>'
                   href: ca2015.md
             - name: 'Предупреждения, связанные с безопасностью'
@@ -750,6 +764,8 @@
                   href: ca5358.md
                 - name: 'CA5359: не отключайте проверку сертификатов'
                   href: ca5359.md
+                - name: 'CA5360: не вызывайте опасные методы десериализации'
+                  href: ca5360.md
                 - name: CA5361. Не отключайте стойкое шифрование в защищенном канале
                   href: ca5361.md
                 - name: 'CA5362: потенциальный цикл ссылок в графе десериализованных объектов'
@@ -778,6 +794,12 @@
                   href: ca5373.md
                 - name: 'CA5374: не используйте XslTransform'
                   href: ca5374.md
+                - name: 'CA5375: не используйте подписанный URL-адрес учетной записи'
+                  href: ca5375.md
+                - name: 'CA5376: используйте SharedAccessProtocol HttpsOnly'
+                  href: ca5376.md
+                - name: 'CA5377: используйте политику доступа на уровне контейнера'
+                  href: ca5377.md
                 - name: CA5378. Не отключайте ServicePointManagerSecurityProtocols
                   href: ca5378.md
                 - name: 'CA5379: не используйте слабый алгоритм функции формирования ключа'
@@ -804,8 +826,16 @@
                   href: ca5389.md
                 - name: 'CA5390: не используйте жестко заданный ключ шифрования'
                   href: ca5390.md
+                - name: 'CA5391: используйте маркеры защиты от подделки в контроллерах MVC ASP.NET Core'
+                  href: ca5391.md
+                - name: 'CA5392: используйте атрибут DefaultDllImportSearchPaths для методов P/Invoke'
+                  href: ca5392.md
+                - name: 'CA5393: не используйте небезопасное значение DllImportSearchPath'
+                  href: ca5393.md
                 - name: 'CA5394: не используйте небезопасные генераторы случайных чисел'
                   href: ca5394.md
+                - name: 'CA5395: отсутствует атрибут HttpVerb для методов действия'
+                  href: ca5395.md
                 - name: 'CA5396: установите для параметра HttpOnly объекта HttpCookie значение true'
                   href: ca5396.md
                 - name: CA5397. Не используйте нерекомендуемые значения SslProtocols
@@ -919,5 +949,7 @@
                   href: ca2245.md
                 - name: 'CA2246: не присваивайте значения символу и его элементу в одном операторе'
                   href: ca2246.md
+                - name: 'CA2248: укажите правильный аргумент enum для Enum.HasFlag'
+                  href: ca2248.md
             - name: Автоматическая приостановка функции
               href: automatic-feature-suspension.md

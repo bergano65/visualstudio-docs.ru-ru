@@ -11,6 +11,8 @@
         - name: Обзор
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: Как MSBuild выполняет сборку проектов
+          href: build-process-overview.md
         - name: Свойства
           items:
             - name: свойства MSBuild

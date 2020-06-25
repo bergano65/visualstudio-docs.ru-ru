@@ -8,55 +8,65 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
-  ms.date: 10/30/2019
-  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.date: 06/03/2020
+  ms.openlocfilehash: 4f522f6613424c3251344207381d2eaf31705c9c
+  ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "79549921"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289122"
 landingContent:
-- title: О профилировании
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Первое знакомство со средствами профилирования
-      url: profiling-feature-tour.md
-  - linkListType: concept
-    links:
-    - text: Способы запуска средств профилирования
-      url: running-profiling-tools-with-or-without-the-debugger.md
 - title: Начало работы
   linkLists:
-  - linkListType: quickstart
-    links:
-    - text: Анализ использования ЦП (C#, Visual Basic)
-      url: quickstart-cpu-usage-managed.md
-    - text: Анализ использования ЦП (C++)
-      url: quickstart-cpu-usage-native.md
-    - text: Анализ использования ЦП (ASP.NET)
-      url: quickstart-cpu-usage-aspnet.md
   - linkListType: tutorial
     links:
     - text: Начало работы с анализом использования ЦП
       url: beginners-guide-to-performance-profiling.md
     - text: Начало работы с измерением использования памяти
       url: memory-usage.md
-- title: Дополнительные средства производительности
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: PerfTips
       url: perftips.md
-    - text: Измерение использования ЦП из командной строки
-      url: profile-apps-from-command-line.md
-    - text: Измерение использования памяти для объектов .NET
+- title: Основы
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Первое знакомство со средствами профилирования
+      url: profiling-feature-tour.md
+    - text: Способы запуска средств профилирования
+      url: running-profiling-tools-with-or-without-the-debugger.md
+  - linkListType: concept
+    links:
+    - text: Общие сведения о методах сбора данных о производительности
+      url: understanding-performance-collection-methods-perf-profiler.md
+- title: Средства производительности
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Использование ЦП
+      url: cpu-usage.md
+    - text: База данных
+      url: analyze-database.md
+    - text: Средство просмотра событий
+      url: events-viewer.md
+    - text: Использование памяти
+      url: memory-usage-without-debugging2.md
+    - text: Отслеживание распределения объектов .NET
       url: dotnet-alloc-tool.md
+    - text: Использование GPU (Direct3D)
+      url: gpu-usage.md
+    - text: .NET Async
+      url: analyze-async.md
     - text: Анализ использования ресурсов (XAML)
       url: application-timeline.md
-    - text: Анализ использования GPU (Direct3D)
-      url: gpu-usage.md
-    - text: Анализ использования сети (UWP)
-      url: network-usage.md
-    - text: Анализ расхода энергии (UWP)
-      url: analyze-energy-use-in-store-apps.md
+- title: Направляющие
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Оптимизация параметров профилировщика
+      url: optimize-profiler-settings.md
+    - text: Измерение производительности из командной строки
+      url: profile-apps-from-command-line.md
+    - text: Одновременное использование нескольких средств профилирования
+      url: use-multiple-profiler-tools-simultaneously.md
