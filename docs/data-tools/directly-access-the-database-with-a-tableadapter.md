@@ -1,7 +1,7 @@
 ---
 title: Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -23,26 +23,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586696"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282570"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
 
-Кроме `InsertCommand`, `UpdateCommand`и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут выполняться непосредственно в базе данных. Эти методы (`TableAdapter.Insert`, `TableAdapter.Update`и `TableAdapter.Delete`) можно вызывать для управления данными непосредственно в базе данных.
+В дополнение к классам `InsertCommand` , `UpdateCommand` и `DeleteCommand` адаптеры таблиц создаются с помощью методов, которые могут выполняться непосредственно в базе данных. Эти методы ( `TableAdapter.Insert` , `TableAdapter.Update` и) можно вызывать `TableAdapter.Delete` для управления данными непосредственно в базе данных.
 
-Если вы не хотите создавать эти прямые методы, задайте для свойства `GenerateDbDirectMethods` TableAdapter значение `false` в окне **Свойства** . Если какие-либо запросы добавляются в TableAdapter в дополнение к основному запросу TableAdapter, они являются автономными запросами, которые не создают эти `DbDirect` методов.
+Если вы не хотите создавать эти прямые методы, задайте для свойства TableAdapter значение `GenerateDbDirectMethods` `false` в окне **Свойства** . Если какие-либо запросы добавляются в TableAdapter в дополнение к основному запросу TableAdapter, они являются автономными запросами, которые не создают эти `DbDirect` методы.
 
 ## <a name="send-commands-directly-to-a-database"></a>Отправка команд непосредственно в базу данных
 
-Вызовите метод `DbDirect` TableAdapter, который выполняет задачу, которую вы пытаетесь выполнить.
+Вызовите `DbDirect` метод TableAdapter, который выполняет задачу, которую вы пытаетесь выполнить.
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Вставка новых записей непосредственно в базу данных
 
-- Вызовите метод `Insert` TableAdapter, передав значения для каждого столбца в качестве параметров. В следующей процедуре в качестве примера используется таблица `Region` в базе данных Northwind.
+- Вызовите метод TableAdapter `Insert` , передав значения для каждого столбца в качестве параметров. В следующей процедуре в `Region` качестве примера используется таблица в базе данных Northwind.
 
     > [!NOTE]
     > Если у вас нет доступного экземпляра, создайте экземпляр TableAdapter, который нужно использовать.
@@ -52,7 +52,7 @@ ms.locfileid: "75586696"
 
 ### <a name="to-update-records-directly-in-a-database"></a>Обновление записей непосредственно в базе данных
 
-- Вызовите метод `Update` TableAdapter, передав новые и исходные значения для каждого столбца в качестве параметров.
+- Вызовите метод TableAdapter `Update` , передав новые и исходные значения для каждого столбца в качестве параметров.
 
     > [!NOTE]
     > Если у вас нет доступного экземпляра, создайте экземпляр TableAdapter, который нужно использовать.
@@ -62,7 +62,7 @@ ms.locfileid: "75586696"
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Удаление записей непосредственно из базы данных
 
-- Вызовите метод `Delete` TableAdapter, передав значения для каждого столбца в качестве параметров метода `Delete`. В следующей процедуре в качестве примера используется таблица `Region` в базе данных Northwind.
+- Вызовите метод TableAdapter `Delete` , передав значения для каждого столбца в качестве параметров `Delete` метода. В следующей процедуре в `Region` качестве примера используется таблица в базе данных Northwind.
 
     > [!NOTE]
     > Если у вас нет доступного экземпляра, создайте экземпляр TableAdapter, который нужно использовать.
@@ -70,6 +70,6 @@ ms.locfileid: "75586696"
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

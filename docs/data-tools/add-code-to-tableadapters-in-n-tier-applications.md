@@ -1,7 +1,7 @@
 ---
 title: Добавление кода для объектов TableAdapter в n-уровневых приложениях
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113318"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283103"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
 Вы можете расширить функциональные возможности TableAdapter, создав файл разделяемого класса для TableAdapter и добавив в него код (вместо добавления кода в файл *DataSetName. DataSet. Designer* ). Разделяемые классы позволяют разделить код для определенного класса между несколькими физическими файлами. Дополнительные сведения см. в разделе [partial](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -32,7 +32,7 @@ ms.locfileid: "76113318"
 > При разделении наборов данных и адаптеров таблиц (посредством установки свойства **Проект DataSet**) существующие разделяемые классы наборов данных в проекте не перемещаются автоматически. Существующие классы частичного набора данных необходимо вручную переместить в проект набора данных.
 
 > [!NOTE]
-> Набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчиков событий при необходимости проверки. Дополнительные сведения см. [в разделе Добавление проверки в n-уровневый набор данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Набор данных предоставляет функциональные возможности для <xref:System.Data.DataTable.ColumnChanging> создания <xref:System.Data.DataTable.RowChanging> обработчиков событий и, когда требуется проверка. Дополнительные сведения см. [в разделе Добавление проверки в n-уровневый набор данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "76113318"
 
 4. Добавьте код внутри объявления разделяемого класса.
 
-5. В следующем примере показано, куда добавить код в `CustomersTableAdapter` в `NorthwindDataSet`:
+5. В следующем примере показано, куда добавить код в в `CustomersTableAdapter` `NorthwindDataSet` :
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -65,9 +65,9 @@ ms.locfileid: "76113318"
     }
     ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
+- [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Создание и настройка адаптеров таблиц](create-and-configure-tableadapters.md)
 - [Общие сведения об иерархическом обновлении](hierarchical-update.md)

@@ -1,7 +1,7 @@
 ---
 title: Установка автономной справки
 ms.date: 11/01/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824917"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284949"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Установка окна справки (Майкрософт)
 
@@ -33,11 +33,11 @@ ms.locfileid: "67824917"
 
 Окно справки (Майкрософт) можно также легко установить с помощью поля поиска:
 
-1. Нажмите клавиши **CTRL**+**Q** и введите **средство просмотра справки** в поле поиска.
+1. Нажмите клавиши **CTRL** + **Q** , а затем введите или введите в поле поиска окно **справки** .
 
-   ![Поле поиска](media/installation/quick-launch.png)
+   ![поле поиска;](media/installation/quick-launch.png)
 
-1. Выберите результат **Окно справки (отдельный компонент)** .
+1. Выберите результат **Окно справки (отдельный компонент)**.
 
 1. В открывшемся диалоговом окне нажмите кнопку **Установить**.
 
@@ -46,4 +46,4 @@ ms.locfileid: "67824917"
 ## <a name="see-also"></a>См. также
 
 - [Окно справки (Майкрософт)](../help-viewer/overview.md)
-- [Окно справки и автономное содержимое для SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Окно справки и автономное содержимое для SQL Server](/sql/sql-server/sql-server-help-installation)

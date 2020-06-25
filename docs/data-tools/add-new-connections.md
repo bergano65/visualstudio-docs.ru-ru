@@ -1,24 +1,24 @@
 ---
 title: Добавление новых подключений
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587073"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283064"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
 Можно проверить подключение к базе данных или службе, а также изучить содержимое базы данных и схемы с помощью **Обозреватель сервера**, **Cloud Explorer**или **Обозреватель объектов SQL Server**. Функциональные возможности этих окон перекрываются в некоторой степени. Основные отличия:
 
-- обозреватель серверов
+- Обозреватель серверов
 
    Устанавливается по умолчанию в Visual Studio. Может использоваться для проверки соединений и просмотра SQL Server баз данных, любых других баз данных с установленным поставщиком ADO.NET и некоторых служб Azure. Также показывает низкоуровневые объекты, такие как счетчики производительности системы, журналы событий и очереди сообщений. Если источник данных не имеет поставщика ADO.NET, он не отображается здесь, но его по-прежнему можно использовать из Visual Studio, подключаясь программно.
 
@@ -54,6 +54,6 @@ ms.locfileid: "75587073"
 
 Если тест выполнен, можно приступать к созданию *источника данных*, который является термином Visual Studio, который на самом деле означает *модель данных* , основанную на базовой базе данных или службе.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,7 +1,7 @@
 ---
 title: Добавление кода для наборов данных в n-уровневых приложениях
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587125"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283090"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Добавление кода для наборов данных в n-уровневых приложениях
 
@@ -32,7 +32,7 @@ ms.locfileid: "75587125"
 > При разделении наборов данных и адаптеров таблиц (с помощью свойства **Project DataSet** ) существующие классы частичного набора данных в проекте не перемещаются автоматически. Существующие разделяемые классы наборов данных необходимо вручную переместить в проект набора данных.
 
 > [!NOTE]
-> При необходимости добавления кода проверки типизированный набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> обработчиков событий. Дополнительные сведения см. [в разделе Добавление проверки в n-уровневый набор данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> При необходимости добавления кода проверки типизированный набор данных предоставляет функциональные возможности для создания <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> обработчиков событий и. Дополнительные сведения см. [в разделе Добавление проверки в n-уровневый набор данных](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Добавление кода в наборы данных в n-уровневых приложениях
 
@@ -63,9 +63,9 @@ ms.locfileid: "75587125"
     }
     ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
+- [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Добавление кода для объектов TableAdapter в многоуровневых приложениях](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Создание и настройка адаптеров таблиц](create-and-configure-tableadapters.md)
 - [Общие сведения об иерархическом обновлении](hierarchical-update.md)

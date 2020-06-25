@@ -1,7 +1,7 @@
 ---
 title: Привязка элементов управления WPF к данным — часть 1
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -16,18 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586956"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282885"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
 
-Для пользователей приложения данные можно отображать путем привязки данных к элементам управления [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Чтобы создать эти элементы управления с привязкой к данным, можно перетащить элементы из окна **Источники данных** на [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] в Visual Studio. В этом разделе описываются некоторые из наиболее распространенных задач, инструментов и классов, которые можно использовать для создания связанных с данными приложений [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)].
+Для пользователей приложения данные можно отображать путем привязки данных к элементам управления [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Чтобы создать эти элементы управления с привязкой к данным, можно перетащить элементы из окна **Источники данных** [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] в в Visual Studio. В этом разделе описываются некоторые из наиболее распространенных задач, инструментов и классов, которые можно использовать для создания связанных с данными приложений [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)].
 
-Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] см. в разделе [Общие сведения о привязке данных](/dotnet/desktop-wpf/data/data-binding-overview).
+Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] привязке данных см. в разделе [Общие сведения о привязке данных](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Задачи, решаемые в процессе привязки элементов управления WPF к данным
 
@@ -46,20 +46,20 @@ ms.locfileid: "75586956"
 
 ## <a name="generated-xaml-and-code"></a>Созданный язык XAML и код
 
-При перетаскивании элемента из окна « **Источники данных** » в [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], который определяет новый элемент управления с привязкой к данным (или привязывает существующий элемент управления к источнику данных). Для некоторых источников данных Visual Studio также создает код в файле кода программной части, который заполняет источник данных данными.
+При перетаскивании элемента из окна **Источники данных** в в [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] объект, который определяет новый элемент управления с привязкой к данным (или привязывает существующий элемент управления к источнику данных). Для некоторых источников данных Visual Studio также создает код в файле кода программной части, который заполняет источник данных данными.
 
-В следующей таблице перечислены [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] и код, создаваемый Visual Studio для каждого типа источника данных в окне **Источники данных** .
+В следующей таблице перечислены [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] коды и, создаваемые Visual Studio для каждого типа источника данных в окне **Источники данных** .
 
 | Источник данных | Создание языка XAML, который привязывает элемент управления к источнику данных | Создание кода, который заполняет данными источник данных |
 | - | - | - |
-| Набор данных | Да | Да |
+| Dataset | Да | Да |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Да | Да |
-| Service | Да | Нет |
-| Объект служб | Да | Нет |
+| Служба | Да | Нет |
+| Объект | Да | Нет |
 
 ### <a name="datasets"></a>Наборы данных
 
-При перетаскивании таблицы или столбца из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], который выполняет следующие действия:
+При перетаскивании таблицы или столбца из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] следующее:
 
 - Добавление набора данных и нового <xref:System.Windows.Data.CollectionViewSource> в ресурсы контейнера, на который пользователь перетащил элемент. <xref:System.Windows.Data.CollectionViewSource> — это объект, который можно использовать для навигации и отображения данных в наборе данных.
 
@@ -67,45 +67,45 @@ ms.locfileid: "75586956"
 
 Кроме того, Visual Studio вносит следующие изменения в файл кода программной части:
 
-- Создает обработчик событий <xref:System.Windows.FrameworkElement.Loaded> для элемента [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)], который содержит элемент управления. Обработчик событий наполняет таблицу данными, извлекает <xref:System.Windows.Data.CollectionViewSource> из ресурсов контейнера, а затем делает первый элемент данных текущим элементом. Если обработчик событий <xref:System.Windows.FrameworkElement.Loaded> уже существует, Visual Studio добавляет этот код в существующий обработчик событий.
+- Создает обработчик событий <xref:System.Windows.FrameworkElement.Loaded> для элемента [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)], который содержит элемент управления. Обработчик событий наполняет таблицу данными, извлекает <xref:System.Windows.Data.CollectionViewSource> из ресурсов контейнера, а затем делает первый элемент данных текущим элементом. Если <xref:System.Windows.FrameworkElement.Loaded> обработчик событий уже существует, Visual Studio добавляет этот код в существующий обработчик событий.
 
 ### <a name="entity-data-models"></a>Модели EDM
 
-При перетаскивании сущности или свойства сущности из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], который выполняет следующие действия:
+При перетаскивании сущности или свойства сущности из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] следующее:
 
 - Добавление нового <xref:System.Windows.Data.CollectionViewSource> в ресурсы контейнера, на который пользователь перетащил элемент. <xref:System.Windows.Data.CollectionViewSource> — это объект, который можно использовать для навигации и отображения данных в сущности.
 
-- Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
+- Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер компонент [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
 
 Кроме того, Visual Studio вносит следующие изменения в файл кода программной части:
 
-- Добавляет новый метод, который возвращает запрос для сущности, которую пользователь перетащил в конструктор (или сущности, содержащей свойство, которое пользователь перетащил в конструктор). Новый метод имеет имя `Get<EntityName>Query`, где `\<EntityName>` — имя сущности.
+- Добавляет новый метод, который возвращает запрос для сущности, которую пользователь перетащил в конструктор (или сущности, содержащей свойство, которое пользователь перетащил в конструктор). Новый метод имеет имя `Get<EntityName>Query` , где `\<EntityName>` — имя сущности.
 
-- Создает обработчик событий <xref:System.Windows.FrameworkElement.Loaded> для элемента [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)], который содержит элемент управления. Обработчик событий вызывает метод `Get<EntityName>Query` для заполнения сущности данными, извлекает <xref:System.Windows.Data.CollectionViewSource> из ресурсов контейнера, а затем делает первый элемент данных текущим элементом. Если обработчик событий <xref:System.Windows.FrameworkElement.Loaded> уже существует, Visual Studio добавляет этот код в существующий обработчик событий.
+- Создает обработчик событий <xref:System.Windows.FrameworkElement.Loaded> для элемента [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)], который содержит элемент управления. Обработчик событий вызывает `Get<EntityName>Query` метод для заполнения сущности данными, извлекает <xref:System.Windows.Data.CollectionViewSource> из ресурсов контейнера, а затем делает первый элемент данных текущим элементом. Если <xref:System.Windows.FrameworkElement.Loaded> обработчик событий уже существует, Visual Studio добавляет этот код в существующий обработчик событий.
 
 ### <a name="services"></a>Службы
 
-При перетаскивании объекта или свойства службы из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], который создает элемент управления с привязкой к данным (или привязывает существующий элемент управления к объекту или свойству). Однако Visual Studio не создает код, который заполняет объект прокси-службы данными. Этот код придется написать самостоятельно. Пример, демонстрирующий это, см. в разделе [Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+При перетаскивании объекта или свойства службы из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] элемент управления с привязкой к данным (или привязывает существующий элемент управления к объекту или свойству). Однако Visual Studio не создает код, который заполняет объект прокси-службы данными. Этот код придется написать самостоятельно. Пример, демонстрирующий это, см. в разделе [Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
 Visual Studio создает язык XAML, который выполняет следующие действия:
 
 - Добавление нового <xref:System.Windows.Data.CollectionViewSource> в ресурсы контейнера, на который пользователь перетащил элемент. <xref:System.Windows.Data.CollectionViewSource> — это объект, который можно использовать для навигации и отображения данных в объекте, возвращаемом службой.
 
-- Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
+- Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер компонент [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>Объекты
 
-При перетаскивании объекта или свойства из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], который создает элемент управления с привязкой к данным (или привязывает существующий элемент управления к объекту или свойству). Однако Visual Studio не создает код для заполнения объекта данными. Этот код придется написать самостоятельно.
+При перетаскивании объекта или свойства из окна **Источники данных** в конструктор Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] элемент управления с привязкой к данным (или привязывает существующий элемент управления к объекту или свойству). Однако Visual Studio не создает код для заполнения объекта данными. Этот код придется написать самостоятельно.
 
 > [!NOTE]
 > Пользовательские классы должны быть открытыми и, по умолчанию, иметь конструктор без параметров. Они не могут быть вложенными классами, в синтаксисе которых есть точка. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
-Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], который выполняет следующие действия:
+Visual Studio создает [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] следующее:
 
 - Добавление нового <xref:System.Windows.Data.CollectionViewSource> в ресурсы контейнера, на который пользователь перетащил элемент. <xref:System.Windows.Data.CollectionViewSource> — это объект, который можно использовать для навигации и отображения данных в объекте.
 
 - Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, язык XAML привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер XAML создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

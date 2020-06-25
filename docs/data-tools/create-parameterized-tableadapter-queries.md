@@ -1,7 +1,7 @@
 ---
 title: Создание параметризованных запросов адаптера таблицы TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586748"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282609"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Создание параметризованных запросов адаптера таблицы TableAdapter
 
@@ -40,7 +40,7 @@ ms.locfileid: "75586748"
 
 - Создайте новый адаптер таблицы, добавив предложение WHERE с требуемыми параметрами в инструкцию SQL. Дополнительные сведения см. в разделе [Создание и настройка адаптеров таблиц](../data-tools/create-and-configure-tableadapters.md).
 
-     \- или -
+     -или-
 
 - Добавьте запрос в существующий адаптер таблицы, добавив предложение WHERE с требуемыми параметрами в инструкцию SQL.
 
@@ -65,7 +65,7 @@ ms.locfileid: "75586748"
 
 4. Введите имя в поле **Имя нового запроса**, если вы создаете запрос.
 
-     \- или -
+     -или-
 
      Выберите запрос в поле **Имя существующего запроса**.
 
@@ -77,7 +77,7 @@ ms.locfileid: "75586748"
 
 ### <a name="query-for-null-values"></a>Запрос значений NULL
 
-Параметрам TableAdapter могут быть присвоены значения NULL, если требуется запросить записи, не имеющие текущего значения. Например, рассмотрим следующий запрос с параметром `ShippedDate` в своем `WHERE` предложении:
+Параметрам TableAdapter могут быть присвоены значения NULL, если требуется запросить записи, не имеющие текущего значения. Например, рассмотрим следующий запрос, имеющий `ShippedDate` параметр в своем `WHERE` предложении:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -94,10 +94,10 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 1. В **Конструктор наборов данных**выберите запрос TableAdapter, который должен принимать значения параметров NULL.
 
-2. В окне **Свойства** выберите **Параметры**, а затем нажмите кнопку с многоточием ( **...** ), чтобы открыть **Редактор коллекции параметров**.
+2. В окне **Свойства** выберите **Параметры**, а затем нажмите кнопку с многоточием (**...**), чтобы открыть **Редактор коллекции параметров**.
 
-3. Выберите параметр, допускающий значения NULL, и задайте для свойства **AllowDbNull** значение `true`.
+3. Выберите параметр, допускающий значения NULL, и задайте для свойства **AllowDbNull** значение `true` .
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

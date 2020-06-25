@@ -1,7 +1,7 @@
 ---
 title: Установка локальной справочной документации
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824950"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284910"
 ---
 # <a name="install-and-manage-local-content"></a>Установка локального содержимого и управление им
 
@@ -51,7 +51,7 @@ ms.locfileid: "67824950"
 
     - Введите путь к *MSHA*-файлу или URL-адрес конечной точки службы.
 
-    - Нажмите кнопку "Обзор" ( **…** ), чтобы перейти к *MSHA*-файлу.
+    - Нажмите кнопку обзора (**...**), чтобы перейти к *MSHA* -файлу.
 
     - В списке выберите запись, которая использовалась последней.
 

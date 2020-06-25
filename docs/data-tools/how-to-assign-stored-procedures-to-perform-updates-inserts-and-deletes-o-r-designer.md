@@ -1,29 +1,29 @@
 ---
 title: Использование хранимых процедур в LINQ to SQL для обновления данных (реляционный конструктор R)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586553"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282323"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)
 
-Сохраненные процедуры можно добавлять в **реляционный конструктор объектов** и выполнять как обычные методы <xref:System.Data.Linq.DataContext>. Они также могут использоваться для переопределения поведения по умолчанию LINQ to SQL времени выполнения, которое выполняет операции вставки, обновления и удаления при сохранении изменений из классов сущностей в базу данных (например, при вызове метода <xref:System.Data.Linq.DataContext.SubmitChanges%2A>).
+Сохраненные процедуры можно добавлять в **реляционный конструктор объектов** и выполнять как обычные методы <xref:System.Data.Linq.DataContext>. Они также могут использоваться для переопределения поведения по умолчанию LINQ to SQL времени выполнения, которое выполняет операции вставки, обновления и удаления при сохранении изменений из классов сущностей в базу данных (например, при вызове <xref:System.Data.Linq.DataContext.SubmitChanges%2A> метода).
 
 > [!NOTE]
 > Если хранимые процедуры возвращают значения, которые должны отправляться обратно на клиент (например, значения, вычисляемые в хранимой процедуре), создайте в хранимых процедурах выходные параметры. Если использовать выходные параметры невозможно, то вместо применения переопределений, созданных реляционным конструктором объектов, реализуйте разделяемый метод. Элементы, сопоставляемые со значениями, созданными базой данных, должны получать соответствующие значения после успешного завершения операций INSERT или UPDATE. Дополнительные сведения см. [в разделе обязанности разработчика при переопределении поведения по умолчанию](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для идентификации (автоматическое приращение), ROWGUIDCOL (идентификатор GUID, сформированный базой данных) и столбцов отметок времени. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы получить значения, сформированные базой данных, необходимо вручную задать для <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> **значение true** и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> одну из следующих: [Sync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), Synchronization [. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)или [Sync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для идентификации (автоматическое приращение), ROWGUIDCOL (идентификатор GUID, сформированный базой данных) и столбцов отметок времени. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы получить значения, сформированные базой данных, необходимо вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> значение **true** и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> одну из следующих: [Sync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), Synchronization [. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)или Sync [. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Настройка поведения обновления класса сущностей
 
@@ -51,7 +51,7 @@ ms.locfileid: "75586553"
 
 8. Выберите нужную сохраненную процедуру в списке **Настроить**.
 
-9. Проверьте список **Аргументы метода** и **Свойства класса**, чтобы убедиться, что **Аргументы метода** сопоставляются соответствующим **Свойствам класса**. Сопоставьте исходные аргументы метода (`Original_<ArgumentName>`) с исходными свойствами (`<PropertyName> (Original)`) для команд `Update` и `Delete`.
+9. Проверьте список **Аргументы метода** и **Свойства класса**, чтобы убедиться, что **Аргументы метода** сопоставляются соответствующим **Свойствам класса**. Сопоставьте исходные аргументы метода ( `Original_<ArgumentName>` ) с исходными свойствами ( `<PropertyName> (Original)` ) для `Update` `Delete` команд и.
 
     > [!NOTE]
     > По умолчанию аргументы метода сопоставляются со свойствами класса, если их имена совпадают. Если имена свойств были изменены и больше не совпадают в таблице и в классе сущностей, то может потребоваться выбор эквивалентного свойства класса для сопоставления, если конструктор не сможет определить правильное сопоставление.
@@ -63,9 +63,9 @@ ms.locfileid: "75586553"
 
 Чтобы возвратиться к использованию заданной по умолчанию логики среды выполнения для обновлений, нажмите кнопку с многоточием рядом с командами **Вставить**, **Обновить** или **Удалить** в окне **Свойства** и потом выберите **Использовать среду выполнения** в диалоговом окне **Настройка поведения**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Методы DataContext](../data-tools/datacontext-methods-o-r-designer.md)
+- [DataContext - методы](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Операции вставки, обновления и удаления (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
