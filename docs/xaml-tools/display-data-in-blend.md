@@ -9,19 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "82921235"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329087"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Отображение данных в Blend для Visual Studio
 
 При настройке макета страниц вы можете просмотреть демонстрационные данные в конструкторе. Демонстрационные данные можно создать с нуля или с помощью существующего класса. Вы также можете подключиться к *динамическим данным*, которые появятся в вашем приложении при его запуске.
 
 > [!NOTE]
-> Панель **данных** в Blend поддерживается только для проектов, предназначенных для .NET Framework. Он не поддерживается для проектов UWP или проектов, предназначенных для .NET Core. 
+> Панель **данных** в Blend поддерживается только для проектов, предназначенных для .NET Framework. Он не поддерживается для проектов UWP или проектов, предназначенных для .NET Core.
 
 ## <a name="generate-sample-data"></a>Создание примера данных
 
@@ -45,6 +45,6 @@ ms.locfileid: "82921235"
 
 **Просмотрите короткое видео:** ![Значок воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Объединение привязок к данным с помощью Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

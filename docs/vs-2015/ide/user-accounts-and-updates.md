@@ -9,19 +9,19 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39fb09c24e0d8cca9d2dddbfe2259b50cd2972df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672666"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289395"
 ---
 # <a name="user-accounts-and-updates"></a>Учетные записи пользователей и обновления
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 не может получить доступ к ресурсам, настроенным для условного доступа. Для работы с этими ресурсами выполните обновление до Visual Studio 2017 или более поздней версии.
+> Visual Studio 2015 не может получить доступ к ресурсам, настроенным для условного доступа. Чтобы работать с этими ресурсами, выполните обновление до Visual Studio 2019 версии 16,6 или более поздней и следуйте указаниям по [использованию Visual Studio с учетными записями, требующими указания многофакторной проверки подлинности](../../ide/work-with-multi-factor-authentication.md) .
 
 Среда Visual Studio сама по себе является интегрированной средой, связанной с другими средами. С помощью входа в среду вы получаете доступ ко всем службам, связанным с вашей учетной записью пользователя, а также всем учетным записям, связанным с этой учетной записью. Параметры вашей учетной записи переносятся при каждом использовании Visual Studio. Вы можете настроить уровни разрешений в определенном экземпляре Visual Studio для отдельных пользователей. Также Visual Studio сообщает вам о доступности какого-либо обновления для компонента вашей установки, например пакета SDK.
 
@@ -32,7 +32,7 @@ ms.locfileid: "72672666"
 |[Вход в Visual Studio](../ide/signing-in-to-visual-studio.md)|Описывает способ и причины, по которым следует выполнять вход в Visual Studio.|
 |[Работа с несколькими учетными записями пользователя](../ide/work-with-multiple-user-accounts.md)|Описывает способ связи нескольких учетных записей Майкрософт и рабочих или учебных учетных записей для предоставления доступа к ресурсам и службам со всех ваших учетных записей.|
 |[Синхронизированные параметры](../ide/synchronized-settings-in-visual-studio.md)|Описывает способ переноса параметров.|
-|[Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)|Описывает способ разблокировки Visual Studio в разных сценариях.|
+|[Как разблокировать Visual Studio](../ide/how-to-unlock-visual-studio.md)|Описывает способ разблокировки Visual Studio в разных сценариях.|
 |[Уведомления](../ide/visual-studio-notifications.md)|Описывает, как среда Visual Studio информирует вас о доступности обновлений для компонентов, например пакетов SDK, или непосредственно Visual Studio.|
 
 ## <a name="see-also"></a>См. также
