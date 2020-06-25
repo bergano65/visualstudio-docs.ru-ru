@@ -1,7 +1,7 @@
 ---
 title: Синхронизация наборов правил проекта с политикой возврата
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587411"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371785"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Как синхронизировать наборы правил проекта кода с политикой возврата проекта Azure DevOps
 
@@ -31,7 +31,7 @@ ms.locfileid: "75587411"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Указание набора стандартных правил Майкрософт
 
-1. В **обозревателе решений**, щелкните правой кнопкой мыши проект кода и нажмите кнопку **свойства**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
 
 2. Щелкните **Анализ кода**.
 
@@ -51,19 +51,19 @@ ms.locfileid: "75587411"
 
 1. При необходимости выполните операцию Get с файлом набора правил, который указывает политику возврата.
 
-2. В **обозревателе решений**, щелкните правой кнопкой мыши проект кода и нажмите кнопку **свойства**.
+2. В **Обозреватель решений**щелкните правой кнопкой мыши проект кода и выберите пункт **свойства**.
 
 3. Щелкните **Анализ кода**.
 
 ::: moniker range="vs-2017"
 
-4. В списке **выполнить этот набор правил** нажмите кнопку **\<Обзор >** .
+4. В списке **выполнить этот набор правил** нажмите кнопку **\<Browse>** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. В списке **активные правила** щелкните **\<Обзор >** .
+4. В списке **активные правила** щелкните **\<Browse>** .
 
 ::: moniker-end
 

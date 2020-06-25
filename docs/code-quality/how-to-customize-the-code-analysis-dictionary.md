@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Настройка словаря анализа кода
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587528"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371876"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
 
@@ -27,7 +27,7 @@ ms.locfileid: "75587528"
 
 ## <a name="to-create-a-custom-dictionary"></a>Создание пользовательского словаря
 
-Создайте файл с именем **кустомдиктионари. XML**.
+Создайте файл с именем **CustomDictionary.xml**.
 
 Определите пользовательские слова, используя следующую XML-структуру:
 
@@ -66,15 +66,15 @@ ms.locfileid: "75587528"
 
 - [Словари, слова, нераспознанные или слова](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dictionary/Words/устарело/Term [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionary/Words/устарело/Term [ @PreferredAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Dictionary/слова/составной/термин [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Dictionary/слова/составные/термы [ @CompoundAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
 - [Dictionary/Words/Дискретиксцептионс/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
 - [Словарь, акронимы, Касинжексцептионси и акронимы](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Словари, слова/распознанное слово
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Словари, слова/распознанное слово
 
 Чтобы включить термин в список терминов, идентифицируемых при анализе кода, добавьте термин в качестве внутреннего текста словаря, слова/распознанного элемента или слова. Термины в словарях, словах, распознанных и словах не учитывают регистр.
 
@@ -95,21 +95,21 @@ ms.locfileid: "75587528"
 
 Термины в словаре, словах и распознаваемых узлах применяются к следующим правилам анализа кода:
 
-- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701.md)
+- [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701.md)
 
-- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
+- [CA1702. Для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
 
-- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703.md)
+- [CA1703. Строки ресурса должны иметь правильное правописание](../code-quality/ca1703.md)
 
-- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
+- [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
 
-- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709.md)
+- [CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв](../code-quality/ca1709.md)
 
-- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726.md)
+- [CA1726. Используйте предпочтительные термины](../code-quality/ca1726.md)
 
-- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204.md)
+- [CA2204. Литералы должны иметь правильное правописание](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Словари, слова, нераспознанные или слова
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Словари, слова, нераспознанные или слова
 
 Чтобы исключить термин из списка терминов, идентифицируемых при анализе кода, добавьте термин, который следует исключить, в качестве внутреннего текста словаря или слов/нераспознанного элемента или слова. Термины в словарях, словах, нераспознанных и словах не учитывают регистр.
 
@@ -130,21 +130,21 @@ ms.locfileid: "75587528"
 
 Термины в словаре/словах/нераспознанные узлы применяются к следующим правилам анализа кода:
 
-- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701.md)
+- [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701.md)
 
-- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
+- [CA1702. Для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
 
-- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703.md)
+- [CA1703. Строки ресурса должны иметь правильное правописание](../code-quality/ca1703.md)
 
-- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
+- [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
 
-- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709.md)
+- [CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв](../code-quality/ca1709.md)
 
-- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726.md)
+- [CA1726. Используйте предпочтительные термины](../code-quality/ca1726.md)
 
-- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204.md)
+- [CA2204. Литералы должны иметь правильное правописание](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionary/Words/устарело/Term [@PreferredAlternate]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionary/Words/устарело/Term [ @PreferredAlternate ]
 
 Чтобы включить термин в список терминов, которые анализ кода определяет как устаревший, добавьте термин в качестве внутреннего текста словаря/слов/устаревшего элемента/Term. Нерекомендуемый термин — это слово, которое написано правильно, но не должно использоваться.
 
@@ -171,17 +171,17 @@ ms.locfileid: "75587528"
 
 Термины в словаре/словах и устаревших узлах применяются к следующим правилам анализа кода:
 
-- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701.md)
+- [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701.md)
 
-- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
+- [CA1702. Для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
 
-- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703.md)
+- [CA1703. Строки ресурса должны иметь правильное правописание](../code-quality/ca1703.md)
 
-- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
+- [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
 
-- [CA1726: используйте предпочитаемые термины](../code-quality/ca1726.md)
+- [CA1726. Используйте предпочтительные термины](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionary/слова/составной/термин [@CompoundAlternate]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionary/слова/составные/термы [ @CompoundAlternate ]
 
 Встроенный словарь определяет некоторые термины как отдельные дискретные термины, а не составной термин. Чтобы включить термин в список терминов, которые анализ кода определяет как составное слово, и указать правильный регистр термина, добавьте этот термин в качестве внутреннего текста словаря/слов/составного элемента. В атрибуте Компаундалтернате элемента Term укажите отдельные слова, составляющие составной термин, с помощью буквы первой буквы отдельных слов (в стиле Pascal). Обратите внимание, что термин, указанный во внутреннем тексте, автоматически добавляется в список словарь/слова/Дискретиксцептионс.
 
@@ -206,15 +206,15 @@ ms.locfileid: "75587528"
 
 Термины в узле Dictionary/Words/составные узлы применяются к следующим правилам анализа кода:
 
-- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701.md)
+- [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701.md)
 
-- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
+- [CA1702. Для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
 
-- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703.md)
+- [CA1703. Строки ресурса должны иметь правильное правописание](../code-quality/ca1703.md)
 
-- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
+- [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/Дискретиксцептионс/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/Дискретиксцептионс/Term
 
 Чтобы исключить термин из списка терминов, которые анализ кода определяет как отдельное, отдельное слово, если термин проверяется правилами регистра для составных слов, добавьте этот термин в качестве внутреннего текста элемента Dictionary/Words/Дискретиксцептионс/Term. В элементе Dictionary/Words/Дискретиксцептионс/Term регистр не учитывается.
 
@@ -235,11 +235,11 @@ ms.locfileid: "75587528"
 
 Термины в узле Dictionary/Words/Дискретиксцептионс применяются к следующим правилам анализа кода:
 
-- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701.md)
+- [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701.md)
 
-- [CA1702: для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
+- [CA1702. Для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Словарь, акронимы, Касинжексцептионси и акронимы
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Словарь, акронимы, Касинжексцептионси и акронимы
 
 Чтобы включить акроним в список терминов, идентифицируемых при анализе кода, и указать, как акроним при проверке условий регистра для составных слов, добавьте этот термин в качестве внутреннего текста в элементе Dictionary/акронимы/Касинжексцептионс/акроним. Акроним в элементе Dictionary/акронимы/Касинжексцептионс/акроним учитывает регистр.
 
@@ -260,9 +260,9 @@ ms.locfileid: "75587528"
 
 Термины в узле Dictionary/акронимы/Касинжексцептионс применяются к следующим правилам анализа кода:
 
-- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709.md)
+- [CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв](../code-quality/ca1709.md)
 
-## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Применение пользовательского словаря к проекту
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Применение пользовательского словаря к проекту
 
 1. В **Обозреватель решений**используйте одну из следующих процедур.
 
@@ -270,7 +270,7 @@ ms.locfileid: "75587528"
 
 3. Чтобы добавить словарь, который является общим для двух или более проектов, найдите файл для совместного использования в диалоговом окне **Добавление существующего элемента** , нажмите кнопку со стрелкой вниз на кнопке **Добавить** , а затем выберите команду **Добавить как ссылку**.
 
-4. В **Обозреватель решений**щелкните правой кнопкой мыши имя файла **кустомдиктионари. XML** и выберите пункт **Свойства**.
+4. В **Обозреватель решений**щелкните правой кнопкой мыши имя файла **CustomDictionary.xml** и выберите пункт **Свойства**.
 
 5. В списке **действие сборки** выберите **CodeAnalysisDictionary**.
 

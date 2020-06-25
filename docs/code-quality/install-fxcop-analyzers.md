@@ -1,7 +1,7 @@
 ---
 title: Установка анализаторов FxCop
 ms.date: 08/03/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - fxcop analyzers
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06391a260909aba08d8c2d2aa9078f9c4383897e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 105583486a9f1420f1670a16abcb28e8268b293d
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182850"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371798"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "84182850"
 
    ![Установка пакета FxCop Analyzer со страницы свойств в Visual Studio](media/install-fxcop-properties-page.png)
 
-2. Нажмите кнопку **Установить**.
+2. Выберите пункт **Установить**.
 
    Visual Studio устанавливает последнюю версию пакета Microsoft. CodeAnalysis. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **References**  >  **анализаторы**ссылок.
 
@@ -153,7 +153,7 @@ ms.locfileid: "84182850"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Использование анализаторов кода в Visual Studio](../code-quality/use-roslyn-analyzers.md)

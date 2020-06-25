@@ -1,7 +1,7 @@
 ---
 title: Использование политики возврата с анализом кода
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de2322b42be2591fa0f6cdcfc49572322dcd140
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587489"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371863"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Пошаговое руководство. обеспечение поддержки кода с помощью политики возврата с анализом кода
 
@@ -57,7 +57,7 @@ ms.locfileid: "75587489"
 
 3. Нажмите кнопку **ОК**. Новая политика возврата теперь применяется к будущим возвратам.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
 - [Создание и использование политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
