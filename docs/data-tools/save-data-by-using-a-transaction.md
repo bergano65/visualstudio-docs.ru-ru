@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Сохранение данных с помощью транзакции
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,41 +16,41 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: beadb43d7eed78f04fc60ce1307045e9badac205
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586280"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281699"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Практическое руководство. Сохранение данных с помощью транзакции
 
-Данные сохраняются в транзакции с помощью пространства имен <xref:System.Transactions>. Используйте объект <xref:System.Transactions.TransactionScope> для участия в транзакции, которая автоматически управляется.
+Данные сохраняются в транзакции с помощью <xref:System.Transactions> пространства имен. Используйте <xref:System.Transactions.TransactionScope> объект для участия в транзакции, которая автоматически управляется.
 
 Проекты не создаются со ссылкой на сборку *System. Transactions* , поэтому необходимо вручную добавить ссылку на проекты, использующие транзакции.
 
-Самым простым способом реализации транзакции является создание экземпляра объекта <xref:System.Transactions.TransactionScope> в инструкции `using`. (Дополнительные сведения см. в разделе [оператор using](/dotnet/visual-basic/language-reference/statements/using-statement)и [оператор using](/dotnet/csharp/language-reference/keywords/using-statement).) Код, который выполняется в инструкции `using`, участвует в транзакции.
+Самый простой способ реализовать транзакцию — создать экземпляр <xref:System.Transactions.TransactionScope> объекта в `using` операторе. (Дополнительные сведения см. в разделе [оператор using](/dotnet/visual-basic/language-reference/statements/using-statement)и [оператор using](/dotnet/csharp/language-reference/keywords/using-statement).) Код, выполняемый внутри `using` инструкции, участвует в транзакции.
 
-Чтобы зафиксировать транзакцию, вызовите метод <xref:System.Transactions.TransactionScope.Complete%2A> в качестве последней инструкции в блоке using.
+Чтобы зафиксировать транзакцию, вызовите <xref:System.Transactions.TransactionScope.Complete%2A> метод в качестве последней инструкции в блоке using.
 
-Чтобы выполнить откат транзакции, вызовите исключение перед вызовом метода <xref:System.Transactions.TransactionScope.Complete%2A>.
+Чтобы выполнить откат транзакции, вызовите исключение перед вызовом <xref:System.Transactions.TransactionScope.Complete%2A> метода.
 
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Добавление ссылки на библиотеку System. Transactions. dll
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Добавление ссылки на System.Transactions.dll
 
 1. В меню **Проект** выберите пункт **Добавить ссылку**.
 
 2. На вкладке **.NET** (вкладка "**SQL Server** " для SQL Server проектов) выберите **System. Transactions**и нажмите кнопку **ОК**.
 
-     В проект добавляется ссылка на *библиотеку System. Transactions. dll* .
+     Ссылка на *System.Transactions.dll* добавляется в проект.
 
 ## <a name="to-save-data-in-a-transaction"></a>Сохранение данных в транзакции
 
-- Добавьте код для сохранения данных в инструкции using, содержащей транзакцию. В следующем коде показано, как создать объект <xref:System.Transactions.TransactionScope> и создать его экземпляр в операторе using:
+- Добавьте код для сохранения данных в инструкции using, содержащей транзакцию. В следующем коде показано, как создать объект и создать его экземпляр <xref:System.Transactions.TransactionScope> в операторе using:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 - [Пошаговое руководство. Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md)

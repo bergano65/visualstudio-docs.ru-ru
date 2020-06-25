@@ -1,7 +1,7 @@
 ---
 title: Отключение ограничений при заполнении набора данных
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -20,21 +20,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586137"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281270"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Отключение ограничений при заполнении набора данных
 
 Если набор данных содержит ограничения (например, ограничения внешнего ключа), они могут вызывать ошибки, связанные с порядком операций, выполняемых с набором данных. Например, загрузка дочерних записей перед загрузкой связанных родительских записей может привести к нарушению ограничения и вызвать ошибку. После загрузки дочерней записи ограничение проверяет связанную родительскую запись и вызывает ошибку.
 
-Если механизм, позволяющий временно приостановку ограничения, не существовал, при каждой попытке загрузить запись в дочернюю таблицу возникнет ошибка. Еще один способ приостановить все ограничения в наборе данных — с помощью <xref:System.Data.DataRow.BeginEdit%2A>и <xref:System.Data.DataRow.EndEdit%2A> свойств.
+Если механизм, позволяющий временно приостановку ограничения, не существовал, при каждой попытке загрузить запись в дочернюю таблицу возникнет ошибка. Другой способ приостановить все ограничения в наборе данных — с помощью <xref:System.Data.DataRow.BeginEdit%2A> свойств, и <xref:System.Data.DataRow.EndEdit%2A> .
 
 > [!NOTE]
-> События проверки (например, <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging>) не будут вызываться при отключенных ограничениях.
+> События проверки (например, <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> ) не будут вызываться при отключенных ограничениях.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>Чтобы приостановить ограничения обновления программным способом
 
@@ -49,7 +49,7 @@ ms.locfileid: "75586137"
 
 2. В окне **Свойства** присвойте свойству <xref:System.Data.DataSet.EnforceConstraints%2A> значение `false`.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Отношения в наборах данных](../data-tools/relationships-in-datasets.md)

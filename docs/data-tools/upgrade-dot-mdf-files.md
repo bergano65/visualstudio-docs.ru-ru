@@ -1,7 +1,7 @@
 ---
 title: Обновление MDF-файлов
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - SQL Server Express
 - SQL Server LocalDB
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586098"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281127"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 
@@ -61,13 +61,13 @@ Visual Studio можно использовать для открытия про
 
 2. В диалоговом окне **Добавление соединения** укажите следующие сведения.
 
-    - **Источник данных**: `Microsoft SQL Server (SqlClient)`
+    - **Источник данных**:`Microsoft SQL Server (SqlClient)`
 
     - **Имя сервера**:
 
-        - Чтобы использовать версию по умолчанию: `(localdb)\MSSQLLocalDB`.  В зависимости от того, какая версия Visual Studio установлена и когда был создан первый экземпляр LocalDB, будет указываться либо ProjectV12, либо ProjectV13. Узел **MSSQLLocalDB** в **Обозреватель объектов SQL Server** показывает, на какую версию указывает.
+        - Чтобы использовать версию по умолчанию: `(localdb)\MSSQLLocalDB` .  В зависимости от того, какая версия Visual Studio установлена и когда был создан первый экземпляр LocalDB, будет указываться либо ProjectV12, либо ProjectV13. Узел **MSSQLLocalDB** в **Обозреватель объектов SQL Server** показывает, на какую версию указывает.
 
-        - Для использования конкретной версии: `(localdb)\ProjectsV12` или `(localdb)\ProjectsV13`, где V12 — LocalDB 2014, а V13 — LocalDB 2016.
+        - Для использования конкретной версии: `(localdb)\ProjectsV12` или `(localdb)\ProjectsV13` , где V12 — LocalDB 2014, а V13 — LocalDB 2016.
 
     - **Присоединить файл базы данных**: физический путь к первичному *MDF* -файлу.
 
@@ -79,7 +79,7 @@ Visual Studio можно использовать для открытия про
 
     База данных обновлена, подключена к ядру СУБД LocalDB и больше не совместима с более старой версией LocalDB.
 
-Можно также изменить соединение SQL Server Express, чтобы использовать LocalDB, открыв контекстное меню подключения и выбрав пункт **изменить подключение**. В диалоговом окне **изменение соединения** измените имя сервера на `(LocalDB)\MSSQLLocalDB`. В диалоговом окне **Дополнительные свойства** убедитесь, что для параметра **Пользовательский экземпляр** задано значение **false**.
+Можно также изменить соединение SQL Server Express, чтобы использовать LocalDB, открыв контекстное меню подключения и выбрав пункт **изменить подключение**. В диалоговом окне **изменение соединения** измените имя сервера на `(LocalDB)\MSSQLLocalDB` . В диалоговом окне **Дополнительные свойства** убедитесь, что для параметра **Пользовательский экземпляр** задано значение **false**.
 
 ### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>Обновление файла базы данных для использования SQL Server Express версии
 
@@ -101,16 +101,16 @@ Visual Studio можно использовать для открытия про
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Создание SQL Server Express ядра СУБД по умолчанию
 
-1. В строке меню выберите пункт **Сервис** > **Параметры**.
+1. В строке меню выберите **Сервис**  >  **Параметры**.
 
 2. В диалоговом окне **Параметры** разверните узел Параметры **инструментов базы данных** и выберите подключения к **данным**.
 
-3. В текстовом поле **SQL Server имя экземпляра** укажите имя экземпляра SQL Server Express или LocalDB, который требуется использовать. Если экземпляр не имеет имя, укажите `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`.
+3. В текстовом поле **SQL Server имя экземпляра** укажите имя экземпляра SQL Server Express или LocalDB, который требуется использовать. Если экземпляр не имеет имя, укажите `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` .
 
 4. Нажмите кнопку **OK**.
 
     SQL Server Express будет ядром СУБД по умолчанию для приложений.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Доступ к данным в Visual Studio](accessing-data-in-visual-studio.md)

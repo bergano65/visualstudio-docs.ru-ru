@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Подключение к данным в службе
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting to web services
 - data sources, creating from web services
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01ad796faa8c722ba088143da814305844136aa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586527"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282232"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Практическое руководство. Подключение к данным в службе
 
@@ -40,7 +40,7 @@ ms.locfileid: "75586527"
 
 2. На странице **Выбор типа источника данных** выберите пункт **Служба** , а затем нажмите кнопку **Далее**.
 
-3. Введите адрес службы, которую вы хотите использовать, или нажмите кнопку " **обнаружить** ", чтобы найти службы в текущем решении, а затем нажмите кнопку **"перейти"** .
+3. Введите адрес службы, которую вы хотите использовать, или нажмите кнопку " **обнаружить** ", чтобы найти службы в текущем решении, а затем нажмите кнопку **"перейти"**.
 
 4. При необходимости можно ввести новое **пространство имен** вместо значения по умолчанию.
 
@@ -53,11 +53,11 @@ ms.locfileid: "75586527"
 
      Источник данных добавлен в окно **Источники данных**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы добавить функциональные возможности в приложение, выберите элемент в окне **Источники данных** и перетащите его на форму, чтобы создать привязанные элементы управления. Дополнительные сведения см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

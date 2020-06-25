@@ -1,7 +1,7 @@
 ---
 title: Считывание XML-данных в набор данных
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586332"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281790"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 
-ADO.NET предоставляет простые методы для работы с XML-данными. В этом пошаговом руководстве вы создадите приложение Windows, которое загружает XML-данные в набор данных. Затем набор данных отображается в элементе управления <xref:System.Windows.Forms.DataGridView>. Наконец, схема XML, основанная на содержимом XML-файла, отображается в текстовом поле.
+ADO.NET предоставляет простые методы для работы с XML-данными. В этом пошаговом руководстве вы создадите приложение Windows, которое загружает XML-данные в набор данных. Затем набор данных отображается в <xref:System.Windows.Forms.DataGridView> элементе управления. Наконец, схема XML, основанная на содержимом XML-файла, отображается в текстовом поле.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
@@ -39,9 +39,9 @@ ADO.NET предоставляет простые методы для работ
 
 Поскольку в этом пошаговом руководстве рассматривается чтение XML-данных в наборе данных, предоставляется содержимое XML-файла.
 
-1. В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите команду **Добавить новый элемент**.
 
-2. Выберите **XML-файл**, присвойте файлу имя **authors. XML**, а затем нажмите кнопку **добавить**.
+2. Выберите **XML-файл**, присвойте файлу имя **authors.xml**, а затем нажмите кнопку **добавить**.
 
    XML-файл загружается в конструктор и готов к редактированию.
 
@@ -107,21 +107,21 @@ ADO.NET предоставляет простые методы для работ
    </Authors_Table>
    ```
 
-4. В меню **файл** выберите **сохранить Authors. XML**.
+4. В меню **файл** выберите команду **сохранить authors.xml**.
 
 ## <a name="create-the-user-interface"></a>Создание пользовательского интерфейса
 
 Пользовательский интерфейс для этого приложения состоит из следующих компонентов:
 
-- Элемент управления <xref:System.Windows.Forms.DataGridView>, отображающий содержимое XML-файла в виде данных.
+- <xref:System.Windows.Forms.DataGridView>Элемент управления, отображающий содержимое XML-файла в виде данных.
 
-- Элемент управления <xref:System.Windows.Forms.TextBox>, отображающий схему XML для XML-файла.
+- <xref:System.Windows.Forms.TextBox>Элемент управления, отображающий XML-схему для XML-файла.
 
-- Два элемента управления <xref:System.Windows.Forms.Button>.
+- Два <xref:System.Windows.Forms.Button> элемента управления.
 
-  - Одна кнопка считывает XML-файл в набор данных и отображает его в элементе управления <xref:System.Windows.Forms.DataGridView>.
+  - Одна кнопка считывает XML-файл в набор данных и отображает его в <xref:System.Windows.Forms.DataGridView> элементе управления.
 
-  - Вторая кнопка извлекает схему из набора данных и с помощью <xref:System.IO.StringWriter> отображает ее в элементе управления <xref:System.Windows.Forms.TextBox>.
+  - Вторая кнопка извлекает схему из набора данных, а затем <xref:System.IO.StringWriter> отображает ее в <xref:System.Windows.Forms.TextBox> элементе управления.
 
 ### <a name="to-add-controls-to-the-form"></a>Для добавления элементов управления в форму
 
@@ -133,22 +133,22 @@ ADO.NET предоставляет простые методы для работ
 
     - Один <xref:System.Windows.Forms.TextBox> элемент управления
 
-    - Два элемента управления <xref:System.Windows.Forms.Button>
+    - Два <xref:System.Windows.Forms.Button> элемента управления
 
-3. Задайте следующие свойства:
+3. Задайте следующие свойства.
 
-    |Элемент управления|Идентификаторы|Параметр|
+    |Control|Свойство.|Параметр|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**ScrollBars**|**По вертикали**|
-    |`Button1`|**Имя**|`ReadXmlButton`|
-    ||**Text**|`Read XML`|
-    |`Button2`|**Имя**|`ShowSchemaButton`|
-    ||**Text**|`Show Schema`|
+    ||**ScrollBars**|**Vertical**|
+    |`Button1`|**имя**;|`ReadXmlButton`|
+    ||**Текстовые**|`Read XML`|
+    |`Button2`|**имя**;|`ShowSchemaButton`|
+    ||**Текстовые**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Создание набора данных, который получает XML-данные
 
-На этом шаге вы создадите новый набор данных с именем `authors`. Дополнительные сведения о наборах данных см. [в разделе Инструменты набора DataSet в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+На этом шаге вы создадите новый набор данных с именем `authors` . Дополнительные сведения о наборах данных см. [в разделе Инструменты набора DataSet в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 1. В **Обозреватель решений**выберите исходный файл для **формы Form1**, а затем нажмите кнопку **конструктор представлений** на панели инструментов **Обозреватель решений** .
 
@@ -158,34 +158,34 @@ ADO.NET предоставляет простые методы для работ
 
      **DataSet1** добавляется в область компонентов.
 
-4. В окне **Свойства** задайте свойства **Name** и <xref:System.Data.DataSet.DataSetName%2A> для`AuthorsDataSet`.
+4. В окне **Свойства** задайте **имя** и <xref:System.Data.DataSet.DataSetName%2A> свойства для `AuthorsDataSet` .
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Создание обработчика событий для чтения XML-файла в наборе данных
 
-Кнопка " **прочитать XML** " считывает XML-файл в наборе данных. Затем он устанавливает свойства элемента управления <xref:System.Windows.Forms.DataGridView>, который привязывает его к набору данных.
+Кнопка " **прочитать XML** " считывает XML-файл в наборе данных. Затем в нем устанавливаются свойства <xref:System.Windows.Forms.DataGridView> элемента управления, который привязывает его к набору данных.
 
 1. В **Обозреватель решений**выберите **Form1**, а затем нажмите кнопку **конструктор представлений** на панели инструментов **Обозреватель решений** .
 
 2. Нажмите кнопку **чтение XML** .
 
-     **Редактор кода** откроется в обработчике событий `ReadXmlButton_Click`.
+     **Редактор кода** откроется в `ReadXmlButton_Click` обработчике событий.
 
-3. Введите следующий код в обработчик событий `ReadXmlButton_Click`:
+3. Введите следующий код в `ReadXmlButton_Click` обработчик событий:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4. В коде обработчика событий `ReadXMLButton_Click` измените запись `filepath =` на правильный путь.
+4. В `ReadXMLButton_Click` коде обработчика событий измените `filepath =` запись на правильный путь.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Создание обработчика событий для вывода схемы в текстовое поле
 
-Кнопка **Показать схему** создает объект <xref:System.IO.StringWriter>, который заполняется схемой и отображается в элементе управления <xref:System.Windows.Forms.TextBox>.
+Кнопка **Показать схему** создает <xref:System.IO.StringWriter> объект, который заполняется схемой и отображается в <xref:System.Windows.Forms.TextBox> элементе управления.
 
 1. В **Обозреватель решений**выберите **Form1**, а затем нажмите кнопку **Конструктор представлений** .
 
 2. Нажмите кнопку **отобразить схему** .
 
-     **Редактор кода** откроется в обработчике событий `ShowSchemaButton_Click`.
+     **Редактор кода** откроется в `ShowSchemaButton_Click` обработчике событий.
 
 3. Вставьте в обработчик события `ShowSchemaButton_Click` следующий код.
 
@@ -206,7 +206,7 @@ ADO.NET предоставляет простые методы для работ
 
      В текстовом поле отображается схема XML для XML-файла.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом пошаговом руководстве рассматриваются основы чтения XML-файла в наборе данных, а также создание схемы на основе содержимого XML-файла. Ниже приведены некоторые задачи, которые можно выполнить далее.
 
@@ -214,7 +214,7 @@ ADO.NET предоставляет простые методы для работ
 
 - Измените данные в наборе данных и запишите их в базу данных.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

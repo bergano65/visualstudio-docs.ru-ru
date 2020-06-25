@@ -1,7 +1,7 @@
 ---
 title: Сохранение данных в базе данных (несколько таблиц)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586254"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281647"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
 
@@ -41,7 +41,7 @@ ms.locfileid: "75586254"
 
 - Изменение кода для отправки обновленных данных в наборе данных обратно в базу данных.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -71,7 +71,7 @@ ms.locfileid: "75586254"
 
    Открывается окно **Источники данных**.
 
-2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
 3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "75586254"
 
     - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
 
-         \- или -
+         -или-
 
     - Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "75586254"
 
 ## <a name="set-the-controls-to-be-created"></a>Задание создаваемых элементов управления
 
-В этом пошаговом руководстве данные в таблице `Customers` находятся в макете **сведений** , где данные отображаются в отдельных элементах управления. Данные из таблицы `Orders` находятся в макете **сетки** , который отображается в элементе управления <xref:System.Windows.Forms.DataGridView>.
+В этом пошаговом руководстве данные в `Customers` таблице находятся в макете **сведений** , где данные отображаются в отдельных элементах управления. Данные из `Orders` таблицы находятся в макете **сетки** , который отображается в <xref:System.Windows.Forms.DataGridView> элементе управления.
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Установка типа удаления для элементов в окне "Источники данных"
 
@@ -109,25 +109,25 @@ ms.locfileid: "75586254"
 
 1. Перетащите главный узел **Customers** из окна **Источники данных** на форму **Form1**.
 
-     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>и <xref:System.Windows.Forms.BindingNavigator>.
+     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
 
 2. Перетащите связанный узел **Заказы** из окна **Источники данных** на **Form1**.
 
     > [!NOTE]
     > Связанный узел **Заказы** расположен под столбцом **Факс** и является дочерним для узла **Клиенты**.
 
-     На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся `OrdersTableAdapter` и <xref:System.Windows.Forms.BindingSource>.
+     На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. `OrdersTableAdapter`И <xref:System.Windows.Forms.BindingSource> появятся в области компонентов.
 
 ## <a name="add-code-to-update-the-database"></a>Добавление кода для обновления базы данных
 
-Вы можете обновить базу данных, вызвав методы `Update` адаптеров таблицы **Клиенты** и **Заказы**. По умолчанию обработчик событий для кнопки **сохранить**<xref:System.Windows.Forms.BindingNavigator> добавляется в код формы для отправки обновлений в базу данных. Эта процедура изменяет код для отправки обновлений в правильном порядке. Это устраняет возможность возникновения ошибок ссылочной целостности. Этот код также реализует обработку ошибок, упаковывая вызов обновления в блок try-catch. Вы можете изменить этот код в соответствии с потребностями своего приложения.
+Вы можете обновить базу данных, вызвав методы `Update` адаптеров таблицы **Клиенты** и **Заказы**. По умолчанию обработчик событий для кнопки **сохранить** <xref:System.Windows.Forms.BindingNavigator> добавляется в код формы для отправки обновлений в базу данных. Эта процедура изменяет код для отправки обновлений в правильном порядке. Это устраняет возможность возникновения ошибок ссылочной целостности. Этот код также реализует обработку ошибок, упаковывая вызов обновления в блок try-catch. Вы можете изменить этот код в соответствии с потребностями своего приложения.
 
 > [!NOTE]
 > Для ясности в этом пошаговом руководстве не используется транзакция. Однако при обновлении двух или более связанных таблиц включите всю логику обновления в рамках транзакции. Транзакция — это процесс, который гарантирует, что все связанные изменения базы данных будут успешными до фиксации каких-либо изменений. Дополнительные сведения см. в разделе [Transactions and Concurrency](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
 ### <a name="to-add-update-logic-to-the-application"></a>Добавление логики обновления в приложение
 
-1. Нажмите кнопку **сохранить** на <xref:System.Windows.Forms.BindingNavigator>. Откроется редактор кода для `bindingNavigatorSaveItem_Click` обработчика событий.
+1. Нажмите кнопку **сохранить** в <xref:System.Windows.Forms.BindingNavigator> . Откроется редактор кода для `bindingNavigatorSaveItem_Click` обработчика событий.
 
 2. Замените код в обработчике событий на вызов методов `Update` связанных адаптеров таблицы. Следующий код сначала создает три временные таблицы данных для хранения обновленной информации для каждого <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> и <xref:System.Data.DataRowState.Modified>). Обновления выполняются в правильном порядке. Код должен выглядеть следующим образом:
 
@@ -144,6 +144,6 @@ ms.locfileid: "75586254"
 
 4. Проверьте значения в базе данных и убедитесь, что изменения были сохранены.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

@@ -1,19 +1,19 @@
 ---
 title: Практическое руководство. Расширение кода, созданного реляционным конструктором объектов
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 588eb0f61dbc16fb1625752417ac5257bf48320f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: b4c0ac8cff82250169171e1d842e64a34a4523ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113683"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282115"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Практическое руководство. Расширение кода, созданного реляционным конструктором объектов
 Код, созданный **реляционным конструктором** объектов, повторно создается при внесении изменений в классы сущностей и другие объекты в области конструктора. Из-за этой повторной генерации кода, любой код, который добавляется к сгенерированному коду, обычно перезаписывается, когда конструктор заново генерирует код. **Реляционный конструктор O/R** предоставляет возможность создавать файлы разделяемого класса, в которых можно добавить код, который не перезаписывается. Одним из примеров добавления собственного кода в код, созданный **реляционным конструктором** объектов, является добавление проверки данных в классы LINQ to SQL (сущность). Дополнительные сведения см. [в разделе инструкции. Добавление проверки в классы сущностей](../data-tools/how-to-add-validation-to-entity-classes.md).
@@ -44,7 +44,7 @@ ms.locfileid: "76113683"
 
 3. Добавьте код в объявление разделяемого класса для DataContext.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

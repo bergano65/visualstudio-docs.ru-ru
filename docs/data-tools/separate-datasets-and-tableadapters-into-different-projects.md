@@ -1,7 +1,7 @@
 ---
 title: Разделение наборов данных и TableAdapter на разные проекты
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8df444646512ecd4dba866fccf6da5fdf7a8bab3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586228"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281556"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Разделение наборов данных и TableAdapter на разные проекты
 Типизированные наборы данных были улучшены, чтобы классы [TableAdapter](create-and-configure-tableadapters.md) и наборы данных могли быть созданы в отдельных проектах. Это позволяет быстро разделять уровни приложений и создавать n-уровневые приложения для данных.
@@ -57,10 +57,10 @@ ms.locfileid: "75586228"
 > [!NOTE]
 > Чтобы просмотреть созданный файл класса, выберите набор данных или проект TableAdapter. Затем в **Обозреватель решений**выберите пункт **Показывать все файлы**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
-- [Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
+- [Пошаговое руководство. Создание N-уровневого приложения для данных](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

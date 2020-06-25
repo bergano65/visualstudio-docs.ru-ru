@@ -1,7 +1,7 @@
 ---
 title: Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,20 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586215"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281613"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
 
-В этом пошаговом руководстве содержатся подробные инструкции по выполнению инструкций SQL непосредственно в базе данных с помощью методов DBDirect адаптера таблицы. Методы DBDirect адаптера таблицы обеспечивают точный контроль над обновлениями базы данных. Их можно использовать для выполнения определенных инструкций SQL и хранимых процедур, вызывая отдельные методы `Insert`, `Update`и `Delete` в соответствии с требованиями приложения (в отличие от перегруженного метода `Update`, который выполняет инструкции UPDATE, INSERT и DELETE в одном вызове).
+В этом пошаговом руководстве содержатся подробные инструкции по выполнению инструкций SQL непосредственно в базе данных с помощью методов DBDirect адаптера таблицы. Методы DBDirect адаптера таблицы обеспечивают точный контроль над обновлениями базы данных. Их можно использовать для выполнения определенных инструкций SQL и хранимых процедур, вызывая отдельные `Insert` `Update` методы, и в `Delete` соответствии с требованиями приложения (в отличие от перегруженного `Update` метода, который ВЫПОЛНЯЕТ инструкции UPDATE, INSERT и DELETE в одном вызове).
 
 В этом пошаговом руководстве описаны следующие процедуры.
 
-- Создание **приложения Windows Forms**.
+- Создайте новое **приложение Windows Forms**.
 
 - Создание и настройка набора данных с помощью [мастера настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).
 
@@ -39,7 +39,7 @@ ms.locfileid: "75586215"
 
 - Добавьте методы для прямого доступа к базе данных и выполнения операций вставки, обновления и удаления.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -63,7 +63,7 @@ ms.locfileid: "75586215"
 
 1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
-2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
+2. В левой области разверните элемент **Visual C#** или **Visual Basic** , а затем выберите пункт **Windows Desktop**.
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
@@ -81,7 +81,7 @@ ms.locfileid: "75586215"
 
    Открывается окно **Источники данных**.
 
-2. В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.
+2. В окне **Источники данных** выберите **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
 3. На экране **Выбор типа источника данных** выберите **база данных**, а затем нажмите кнопку **Далее**.
 
@@ -89,7 +89,7 @@ ms.locfileid: "75586215"
 
     - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
 
-         \- или -
+         -или-
 
     - Выберите **Новое подключение** для открытия диалогового окна **Добавить/изменить подключение**.
 
@@ -99,7 +99,7 @@ ms.locfileid: "75586215"
 
 7. На экране **Выбор объектов базы данных** разверните узел **таблицы** .
 
-8. Выберите таблицу `Region` и нажмите кнопку **Готово**.
+8. Выберите `Region` таблицу и нажмите кнопку **Готово**.
 
      Объект **NorthwindDataSet** добавляется в проект, и таблица `Region` отображается в окне **Источники данных**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "75586215"
 
 Чтобы создать элементы управления с привязкой к данным в форме Windows Forms, перетащите узел основной **области** из окна **Источники данных** на форму.
 
-На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. В области компонентов появятся [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>и <xref:System.Windows.Forms.BindingNavigator>.
+На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> В области компонентов появятся NorthwindDataSet,, и.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Порядок добавления кнопок, вызывающих отдельные методы DbDirect адаптера таблицы
 
@@ -117,11 +117,11 @@ ms.locfileid: "75586215"
 
 2. Задайте следующие свойства **Имя** и **Текст** для каждой из кнопок.
 
-    |Name|Текст|
+    |Название|текст|
     |----------|----------|
     |`InsertButton`|**Вставить**|
-    |`UpdateButton`|**Обновление**|
-    |`DeleteButton`|**Удалить**|
+    |`UpdateButton`|**Update**|
+    |`DeleteButton`|**Удаление**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Добавление кода для вставки новых записей в базу данных
 
@@ -150,7 +150,7 @@ ms.locfileid: "75586215"
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
-## <a name="run-the-application"></a>Запуск приложения
+## <a name="run-the-application"></a>Выполнение приложения
 
 - Нажмите **клавишу F5** , чтобы запустить приложение.
 
@@ -160,7 +160,7 @@ ms.locfileid: "75586215"
 
 - Нажмите кнопку **Удалить** и убедитесь, что запись удалена из сетки.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В зависимости от требований приложения существует несколько шагов, которые, возможно, потребуется выполнить после создания формы с привязкой к данным. Ниже приводится перечень рекомендаций, позволяющих улучшить полученный результат.
 
@@ -168,6 +168,6 @@ ms.locfileid: "75586215"
 
 - Добавление дополнительных таблиц в набор данных посредством выбора элемента **Настроить набор данных с помощью мастера** в окне **Источники данных**. Вы можете добавить элементы управления, отображающие связанные данные, перетащив связанные узлы на форму. Дополнительные сведения см. [в разделе связи в наборах данных](relationships-in-datasets.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

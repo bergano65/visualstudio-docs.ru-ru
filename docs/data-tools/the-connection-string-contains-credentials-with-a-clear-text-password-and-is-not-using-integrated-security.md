@@ -1,23 +1,23 @@
 ---
 title: Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9c807266182b419dc0967288715a187042f83b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586176"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281478"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
 
-Вы хотите сохранить строку подключения к текущему файлу DBML и файлам конфигурации приложения с этой конфиденциальной информацией?  Нажмите кнопку **Нет**, чтобы сохранить строку подключения без конфиденциальной информации.
+Вы хотите сохранить строку подключения к текущему файлу DBML и файлам конфигурации приложения с этой конфиденциальной информацией?  Нажмите кнопку **нет** , чтобы сохранить строку подключения без конфиденциальной информации.
 
 При работе с подключениями к данным, которые содержат конфиденциальную информацию (пароли, которые включены в строку подключения), предоставляется опция сохранения строки подключения в файл DBML проекта и файл конфигурации приложения с или без конфиденциальной информации.
 
@@ -34,6 +34,6 @@ ms.locfileid: "75586176"
 
    Строка подключения сохраняется как параметр приложения, но не включает пароль.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

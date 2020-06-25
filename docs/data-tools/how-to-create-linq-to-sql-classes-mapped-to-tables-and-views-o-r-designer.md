@@ -1,32 +1,32 @@
 ---
 title: Сопоставьте LINQ to SQL классы с таблицами или представлениями (реляционный конструктор R)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0e3103c1b4faa62ff82dafe8ba4aa0ef9193f06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586501"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282128"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Практическое руководство. Создание классов LINQ to SQL, сопоставленных с таблицами и представлениями (реляционный конструктор объектов)
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы, сопоставленные с таблицами и представлениями базы данных, называются *классами сущностей*. Класс сущностей сопоставляется с записью, а отдельные свойства класса сущностей сопоставляются с отдельными столбцами, которые составляют запись. Создание классов сущностей, основанных на таблицах или представлениях базы данных, путем перетаскивания таблиц или представлений из **Обозреватель сервера** или **обозреватель базы данных** в [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **Конструктор O/R** создает классы и применяет определенные атрибуты [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] для обеспечения функциональности [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] (возможности взаимодействия с данными и редактирования <xref:System.Data.Linq.DataContext>). Подробные сведения о [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классах см. [в разделе Объектная модель LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]классы, сопоставленные с таблицами и представлениями базы данных, называются *классами сущностей*. Класс сущностей сопоставляется с записью, а отдельные свойства класса сущностей сопоставляются с отдельными столбцами, которые составляют запись. Создание классов сущностей, основанных на таблицах или представлениях базы данных, путем перетаскивания таблиц или представлений из **Обозреватель сервера** или **обозреватель базы данных** в [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **Конструктор O/R** создает классы и применяет определенные [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] атрибуты для включения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] функциональности (возможности обмена данными и редактирования <xref:System.Data.Linq.DataContext> ). Подробные сведения о [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классах см. [в разделе Объектная модель LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 
 > [!NOTE]
 > Реляционный **конструктор объектов (R** ) — это простой объектно-реляционный сопоставитель, так как он поддерживает только 1:1 связей сопоставления. Другими словами, класс объекта может иметь сопоставляющее отношение только 1:1 с таблицей базы данных или представлением. Сложные сопоставления, например, сопоставление класса объекта с несколькими таблицам, не поддерживается. Однако, можно сопоставить класс объекта с представлением, которое объединяет несколько связанных таблиц.
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Создание классов LINQ to SQL, которые сопоставляются с таблицами БД или представлениями
 
-Перетаскивание таблиц или представлений из **Обозреватель сервера** или **Обозреватель базы данных** в **конструктор O/R** создает классы сущностей в дополнение к методам <xref:System.Data.Linq.DataContext>, которые используются для выполнения обновлений.
+При перетаскивании таблиц или представлений из **Обозреватель сервера** или **Обозреватель базы данных** в **конструктор O/R** в дополнение к <xref:System.Data.Linq.DataContext> методам, используемым для выполнения обновлений, создаются классы сущностей.
 
-По умолчанию среда выполнения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] создает логический компонент для сохранения изменений из класса обновляемых сущностей обратно в базу данных. Этот логический компонент основан таблицы (определения столбцов и информация о первичных ключах). Если это поведение нежелательно, можно настроить класс сущности для использования хранимых процедур для выполнения операций вставки, обновления и удаления вместо использования по умолчанию [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] поведения во время выполнения. Дополнительные сведения см. [в разделе инструкции. назначение хранимых процедур для выполнения операций обновления, вставки и удаления (реляционный конструктор R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+По умолчанию среда выполнения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] создает логический компонент для сохранения изменений из класса обновляемых сущностей обратно в базу данных. Этот логический компонент основан таблицы (определения столбцов и информация о первичных ключах). Если это поведение нежелательно, можно настроить класс сущности для использования хранимых процедур для выполнения операций вставки, обновления и удаления вместо использования поведения по умолчанию [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] во время выполнения. Дополнительные сведения см. [в разделе инструкции. назначение хранимых процедур для выполнения операций обновления, вставки и удаления (реляционный конструктор R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -61,12 +61,12 @@ ms.locfileid: "75586501"
 
 7. Перетащите элементы из окна **Источники данных** на форму.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Практическое руководство. Создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (реляционный конструктор объектов)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [Модель объектов LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
+- [Объектная модель LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
 - [Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [Практическое руководство. Создание связи (отношения) между классами LINQ to SQL (реляционный конструктор объектов)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

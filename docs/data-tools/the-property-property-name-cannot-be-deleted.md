@@ -1,23 +1,23 @@
 ---
 title: Невозможно удалить свойство
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91fce94babf443c974a49885263b8e7eb77d9eaa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640491"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281349"
 ---
-# <a name="the-property-property-name-cannot-be-deleted"></a>Не удается удалить свойство \<имя свойства>
+# <a name="the-property-property-name-cannot-be-deleted"></a>Невозможно удалить свойство \<property name>
 
-Не удается удалить свойство \<имя свойства>, поскольку оно задано в качестве **свойства дискриминатора** для наследования между \<имя класса> и \<имя класса>
+Свойство \<property name> не может быть удалено, так как оно задано как **Свойство дискриминатора** для наследования между \<class name> и\<class name>
 
 Выбранное свойство назначено в качестве **свойства дискриминатора** для наследования между классами, указанными в сообщении об ошибке. Свойства не могут быть удалены, если они участвуют в конфигурации наследования между классами данных.
 
@@ -25,7 +25,7 @@ ms.locfileid: "72640491"
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
-1. В **реляционном конструкторе объектов** выберите линию наследования, которая соединяет классы данных, указанные в сообщении об ошибке.
+1. В **конструкторе O/R**выберите линию наследования, соединяющую классы данных, указанные в сообщении об ошибке.
 
 2. Задайте в качестве свойства **дискриминатора** другое свойство.
 

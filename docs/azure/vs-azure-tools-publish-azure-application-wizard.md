@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489653"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280535"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Использование мастера публикации приложений Azure в Visual Studio
 
@@ -108,7 +108,7 @@ ms.locfileid: "81489653"
 
 Когда все параметры развертывания проекта настроены, нажмите кнопку **Опубликовать** в нижней части диалогового окна. Состояние процесса можно отслеживать в окне **Вывод** в Visual Studio.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Инструкции. Миграция и публикация веб-приложения в облачную службу Azure из среды Visual Studio](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
 
@@ -118,6 +118,6 @@ ms.locfileid: "81489653"
 
 - [Тестирование производительности облачной службы](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Настройка диагностики для облачных служб Azure и виртуальных машин.](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Настройка диагностики для облачных служб и виртуальных машин Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Что такое анализ приложений?](/azure/application-insights/app-insights-overview)
+- [Что такое Azure Application Insights?](/azure/application-insights/app-insights-overview)
