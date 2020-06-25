@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Создание и применение ресурса
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921145"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330120"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Практическое руководство. Создание и применение ресурса
 
@@ -73,6 +73,6 @@ ms.locfileid: "82921145"
 
 3. Измените параметры ресурса.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание пользовательского интерфейса с помощью Конструктора XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

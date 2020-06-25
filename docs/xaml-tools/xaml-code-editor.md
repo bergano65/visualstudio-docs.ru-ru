@@ -1,17 +1,18 @@
 ---
 title: Редактор кода XAML
+description: Ознакомьтесь с редактором кода XAML в Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289936"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329178"
 ---
 # <a name="xaml-code-editor"></a>Редактор кода XAML
 
@@ -182,7 +183,7 @@ ms.locfileid: "85289936"
 
 Фрагменты кода — это небольшие блоки повторно используемого кода, которые можно вставить в файл кода, щелкнув правой кнопкой мыши команду контекстного меню **Вставить фрагмент** или сочетание клавиш (**CTRL** + **K**, **CTRL** + **X**). Мы улучшили [IntelliSense](../ide/using-intellisense.md) , чтобы она поддерживала отображение фрагментов кода XAML, которые работают как с встроенными фрагментами, так и с пользовательскими фрагментами кода, добавляемыми вручную. Вот некоторые готовые фрагменты кода XAML: `#region` ,, `Column definition` `Row definition` , `Setter` и `Tag` .
 
-![Редактор кода XAML с параметрами #region, отображаемыми в IntelliSense](media/xaml-code-snippets.png "Снимок экрана редактора кода XAML с параметрами #region, отображаемыми в IntelliSense")
+![Редактор кода XAML с параметрами фрагментов кода XAML, отображаемыми в IntelliSense](media/xaml-code-snippets.png "Снимок экрана редактора кода XAML с параметрами фрагмента кода XAML, отображаемыми в IntelliSense")
 
 Дополнительные сведения см. в разделе [фрагменты кода](../ide/code-snippets.md) и страницы [фрагментов кода C#](../ide/visual-csharp-code-snippets.md) .
 
@@ -276,9 +277,9 @@ ms.locfileid: "85289936"
 
 В диалоговом окне [Параметры](../ide/reference/options-text-editor-xaml-formatting.md) XAML следующие три первых элемента являются универсальными для всех языков программирования, поддерживаемых интегрированной средой разработки Visual Studio. Чтобы получить дополнительные сведения об этих параметрах и способах их использования, обратитесь к связанным сведениям в следующей таблице.
 
-|Название  |Дополнительные сведения  |
+|Имя  |Дополнительные сведения  |
 |---------|---------|
-|Общие сведения  | [Диалоговое окно "Параметры": текстовый редактор > все языки](../ide/reference/options-text-editor-all-languages.md) |
+|Общие  | [Диалоговое окно "Параметры": текстовый редактор > все языки](../ide/reference/options-text-editor-all-languages.md) |
 |Полосы прокрутки | [Диалоговое окно "Параметры", папка "Текстовый редактор", параметры "Все языки", "Полосы прокрутки"](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
 |Вкладки  |  ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
@@ -286,7 +287,7 @@ ms.locfileid: "85289936"
 
 В следующей таблице перечислены параметры в диалоговом окне [Параметры](../ide/reference/options-text-editor-xaml-formatting.md) , которые могут улучшить возможности редактирования при разработке приложений на основе XAML. Чтобы узнать больше об этих параметрах и способах их использования, посетите связанные сведения.
 
-|Название  |Дополнительные сведения  |
+|Имя  |Дополнительные сведения  |
 |---------|---------|
 |Форматирование | ["Параметры", "Текстовый редактор", XAML, "Форматирование"](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Прочее |  ["Параметры", "Текстовый редактор", XAML, "Прочее"](../ide/reference/options-text-editor-xaml-miscellaneous.md) |

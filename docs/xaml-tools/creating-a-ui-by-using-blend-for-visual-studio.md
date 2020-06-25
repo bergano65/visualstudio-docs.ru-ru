@@ -2,7 +2,7 @@
 title: Обзор функций Blend для Visual Studio
 titleSuffix: ''
 ms.date: 07/31/2019
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "82921307"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332095"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Обзор Blend для Visual Studio
 
@@ -40,7 +40,7 @@ Blend для Visual Studio — это компонент Visual Studio. Чтоб
 >
 > ![Варианты инструмента "Фигура" в Blend для Visual Studio](media/blend-rectangle-tool-variations.png)
 
-### <a name="selection-tools"></a>Инструменты выделения
+### <a name="selection-tools"></a>Инструменты выбора
 
 Выбор объектов и путей. Используйте инструмент **Прямой выбор** для выбора вложенных объектов и сегментов контура.
 
@@ -79,7 +79,7 @@ Blend для Visual Studio — это компонент Visual Studio. Чтоб
 
 Наведите указатель на каждую кнопку в окне, чтобы получить дополнительные сведения о доступных функциях.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Анимирование объектов](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Рисование фигур и контуров](../xaml-tools/draw-shapes-and-paths.md)
