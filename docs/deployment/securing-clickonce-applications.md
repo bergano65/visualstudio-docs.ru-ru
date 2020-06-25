@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184449"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286309"
 ---
 # <a name="secure-clickonce-applications"></a>Защита приложений ClickOnce
 К приложению[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут применяться ограничения управления доступом для кода на платформе .NET Framework, позволяющие ограничить доступ кода к защищенным ресурсам и операциям. Важно понимать влияние управления доступом для кода, чтобы писать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] соответствующим образом. Для ограничения доступа приложение может использовать зоны с полным или частичным доверием, такие как Интернет и интрасеть.
@@ -50,7 +50,7 @@ ms.locfileid: "84184449"
  Дополнительные сведения об использовании средств управления доступом для кода и ClickOnce см. в статье [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="code-signing-certificates"></a>Сертификаты подписи кода
- Чтобы опубликовать приложение с использованием развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , необходимо подписать манифесты приложения и развертывания для приложения парой открытого и закрытого ключа. Средства для подписи манифеста доступны на странице **Подпись** в **конструкторе проектов**. Дополнительные сведения см. в разделе [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md). Можно также подписывать манифесты при помощи файла ключей во время процесса публикации, используя мастер публикаций.
+ Чтобы опубликовать приложение с использованием развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , необходимо подписать манифесты приложения и развертывания для приложения парой открытого и закрытого ключа. Средства для подписи манифеста доступны на странице **Подпись** в **конструкторе проектов**. Дополнительные сведения см. в разделе [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md).
 
  После подписи манифестов сведения об издателе, основанные на подписи Authenticode, показываются пользователю в диалоговом окне разрешений во время установки, чтобы пользователь мог убедиться, что приложение получено из надежного источника.
 
@@ -76,6 +76,6 @@ ms.locfileid: "84184449"
 ## <a name="deploying-obfuscated-assemblies"></a>Развертывание замаскированных сборок
  Visual Studio включает в себя бесплатную программу [PreEmptive Protection — Dotfuscator Community](../ide/dotfuscator/index.md), которую можно использовать для защиты приложений ClickOnce с помощью обфускации кода и активных мер по защите.  Дополнительные сведения см. в [разделе по ClickOnce руководства пользователя Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 - [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
