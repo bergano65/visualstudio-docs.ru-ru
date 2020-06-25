@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921157"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350827"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 
@@ -86,7 +86,7 @@ ms.locfileid: "82921157"
 
 ## <a name="convert-a-shape-to-a-path"></a>Преобразование фигуры в контур
 
-Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур. Выберите фигуру, а затем щелкните **Формат** > **пути** > **Преобразование в путь**.
+Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур. Выберите фигуру, а затем щелкните **Формат**  >  **пути**  >  **Преобразование в путь**.
 
 **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами: преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
@@ -99,11 +99,14 @@ ms.locfileid: "82921157"
 
 ![Объединение контуров](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![Две фигуры до объединения](../designers/media/b1_1.png)|Две фигуры до объединения|![Intersect](../designers/media/b1_4.png)|Intersect|
-|![Объединение](../designers/media/b1_2.png)|Объединение|![Исключение наложения](../designers/media/b1_5.png)|Исключение перекрытия|
-|![Divide](../designers/media/b1_3.png)|Divide|![Subtract](../designers/media/b1_6.png)|Subtract|
+|Number|Действие|
+|-|-|
+|![Две фигуры до объединения](../designers/media/b1_1.png)|Две фигуры до объединения|
+|![Объединение](../designers/media/b1_2.png)|Объединение|
+|![Divide](../designers/media/b1_3.png)|Divide|
+|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Исключение наложения](../designers/media/b1_5.png)|Исключение перекрытия|
+|![Subtract](../designers/media/b1_6.png)|Subtract|
 
 **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами: объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
