@@ -1,7 +1,7 @@
 ---
-title: Устранение неполадок развертывания ClickOnce | Документация Майкрософт
+title: Устранение неполадок при развертывании ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -18,43 +18,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9e3c2ca89535578e8aefbde25223ade752a2aab
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898124"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381747"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Устранение неполадок развертываний ClickOnce
-Этот раздел поможет вам диагностировать и устранить наиболее распространенные проблемы с [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний.
+Этот раздел поможет в диагностике и устранении наиболее распространенных проблем с [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываниями.
 
- В большинстве случаев [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загрузить на компьютер пользователя и выполнения без проблем приложения. Существуют случаи, тем не менее, где веб-сервер или приложение направляет конфигурации может привести к непредвиденным проблемам.
+ В большинстве случаев [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение будет загружено на компьютер пользователя и выполняться без каких-либо проблем. Однако в некоторых случаях проблемы конфигурации веб-сервера или приложения могут привести к непредвиденным проблемам.
 
 ## <a name="deployment-considerations"></a>Рекомендации по развертыванию
 
- [Практическое руководство. Задание местоположения файла настраиваемого журнала для ошибок развертывания ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
+ [Как задать расположение настраиваемого файла журнала для ошибок развертывания ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
- Описывает, как для перенаправления всех [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] сбои активации на компьютере в один файл журнала.
+ Описывает, как перенаправлять все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] сбои активации на компьютере в один файл журнала.
 
- [Практическое руководство. Указание подробных файлов журнала для развертывания ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+ [Как указать подробные файлы журнала для развертываний ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
- Описывается, как более подробной информации, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] записывает файлы журнала.
+ Описывает, как увеличить детализацию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] записи в файлы журнала.
 
  [Вопросы настройки сервера и клиента в развертываниях ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)
 
- Описываются различные проблемы с конфигурацией веб-сервера, которое может вызвать трудности при загрузке [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений.
+ Описание различных проблем с конфигурацией веб-сервера, которые могут вызвать затруднения при скачивании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений.
 
  [Вопросы безопасности, контроля версий и манифестов в развертываниях ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)
 
- Описывает различные проблемы, связанные [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний.
+ Описание прочих проблем, связанных с [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертыванием.
 
  [Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 
- Описание конкретных сценариев, в котором [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания не удастся выполнить, а также шаги по их устранению.
+ Описывает конкретные сценарии, в которых [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывание не может быть завершено, и пошаговые инструкции по их устранению.
 
- [Отладка приложений ClickOnce, использующих System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
+ [Отладка приложений ClickOnce, использующих System. Deployment. Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
 
- Описывает способ отладка ClickOnce-приложений, использующих System.Deployment.Application.
+ Описывает метод отладки приложений ClickOnce, использующих System. Deployment. Application.
 
 ## <a name="see-also"></a>См. также
 

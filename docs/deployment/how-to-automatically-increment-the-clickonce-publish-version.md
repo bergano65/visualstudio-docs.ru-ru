@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Автоматически ClickOnce увеличение номера версии публикации | Документация Майкрософт
+title: Автоматическое увеличение версии публикации ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,32 +17,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 710f2d045af4da92116334e64efa5ce528563d1d
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928502"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382605"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Практическое руководство. автоматическое увеличение номера версии публикации ClickOnce
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce
 
-При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, изменив `Publish Version` свойство заставляет приложение публикуется как обновление. По умолчанию Visual Studio автоматически увеличивает `Revision` число `Publish Version` при каждой публикации приложения.
+При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения изменение `Publish Version` свойства приводит к публикации приложения в качестве обновления. По умолчанию Visual Studio автоматически увеличивает `Revision` число `Publish Version` раз при публикации приложения.
 
-Это поведение можно отключить на **публикации** странице **конструктор проектов**.
+Это поведение можно отключить на странице **Публикация** в **конструкторе проектов**.
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).
 
-## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Автоматическое отключение увеличения номера версии публикации
+## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Отключение автоматического увеличения версии публикации
 
 1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
 2. Перейдите на вкладку **Публикация**.
 
-3. В **версия публикации** снимите **автоматически увеличивать номер редакции при каждой редакции** "флажок".
+3. В разделе **Публикация версии** снимите флажок **автоматически увеличивать номер редакции при каждом выпуске** .
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Установка версии публикации приложения ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Как задать версию публикации ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

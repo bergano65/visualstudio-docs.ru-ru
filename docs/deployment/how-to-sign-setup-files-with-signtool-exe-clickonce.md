@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Подписывание файлов с SignTool.exe (ClickOnce) установки | Документация Майкрософт
+title: Как подписать файлы установки с помощью SignTool.exe (ClickOnce) | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928409"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382072"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Практическое руководство. подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
-Чтобы подписать программу установки (*setup.exe*), можно использовать *SignTool.exe*. Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Практическое руководство. Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
+Для подписи программы установки (*setup.exe*) можно использовать *SignTool.exe* . Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.
 
  По умолчанию ClickOnce включает подписанные манифесты и подписанную программу установки. Если вы собираетесь изменить параметры программы установки в дальнейшем, ее следует подписать позже. Если вы измените параметры после того, как программа установки будет подписана, подпись будет повреждена.
 
@@ -36,7 +36,7 @@ ms.locfileid: "62928409"
 
 1. На компьютере разработчика установите сертификат для подписи манифестов.
 
-2. Выберите проект в **обозревателе решений**.
+2. Выберите проект в **Обозреватель решений**.
 
 3. В меню **Проект** выберите пункт *Имя проекта* **Свойства**.
 
@@ -77,4 +77,4 @@ ms.locfileid: "62928409"
     ```
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [Пошаговое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

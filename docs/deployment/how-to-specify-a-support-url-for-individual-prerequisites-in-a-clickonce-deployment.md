@@ -1,7 +1,7 @@
 ---
-title: URL-адрес поддержки для необходимых компонентов в развертывании ClickOnce
+title: Поддержка URL-адресов для необходимых компонентов в развертывании ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,25 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745565"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381734"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. указание URL-адреса поддержки для определенных необходимых компонентов в развертывании ClickOnce
-Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания можно проверить ряд необходимых условий, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для запуска приложения. Эти зависимости включают Минимальная требуемая версия платформы .NET Framework, версия операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], тем не менее, не может выполнить любые из этих предварительных требований; Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее, почему произошел сбой установки.
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса службы поддержки для определенных компонентов, необходимых для развертывания ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Развертывание может проверить наличие ряда предварительных требований, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запуска приложения. Эти зависимости включают требуемую минимальную версию .NET Framework, версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], однако, не может установить ни один из этих компонентов. Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее причину сбоя установки.
 
- Существует два способа установки необходимых компонентов. Вы можете установить их, используя приложение начальной загрузки. Кроме того можно указать URL-адрес поддержки для определенных необходимых компонентов, который отображается для пользователей в диалоговом окне, если не найден необходимый компонент. Страница ссылается на этот URL-адрес может содержать ссылки на инструкции по установке этот необходимый компонент. Если приложение не указывает URL-адрес поддержки для отдельного предварительного условия, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает URL-адрес поддержки, указанной в манифесте развертывания для приложения в целом, если он определен.
+ Существует два способа установки необходимых компонентов. Их можно установить с помощью приложения начального загрузчика. Кроме того, можно указать URL-адрес поддержки для отдельных необходимых компонентов, которые отображаются для пользователей в диалоговом окне, если необходимый компонент не найден. Страница, на которую ссылается этот URL-адрес, может содержать ссылки на инструкции по установке необходимого компонента. Если приложение не указывает URL-адрес поддержки для отдельного необходимого компонента, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] отображает URL-адрес поддержки, указанный в манифесте развертывания для приложения в целом, если он определен.
 
- Хотя [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *Mage.exe*, и *MageUI.exe* все используется для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, ни один из этих средств непосредственно не поддерживает задание URL-адрес поддержки для отдельных Предварительные требования. В этом документе описывается изменение развертывания манифест приложения и манифест развертывания, чтобы включить эти поддерживает URL-адреса.
+ Хотя [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*и *MageUI.exe* можно использовать для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертываний, ни одно из этих средств не поддерживает непосредственное указание URL-адреса поддержки для отдельных необходимых компонентов. В этом документе описывается, как изменить манифест приложения и манифест развертывания развертывания, чтобы включить эти URL-адреса поддержки.
 
-### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Укажите URL-адрес поддержки для отдельного предварительного условия
+### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Укажите URL-адрес поддержки для отдельного необходимого компонента
 
-1. Откройте манифест приложения ( *.manifest* файл) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
+1. Откройте манифест приложения (файл *manifest* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
 
-2. В список обязательных компонентов операционной системы, добавьте `supportUrl` атрибут `dependentOS` элемента:
+2. Для необходимых компонентов операционной системы добавьте `supportUrl` атрибут к `dependentOS` элементу:
 
    ```xml
     <dependency>
@@ -45,7 +45,7 @@ ms.locfileid: "66745565"
      </dependency>
    ```
 
-3. Необходимым условием для определенной версии среды CLR, добавить `supportUrl` атрибут `dependentAssembly` запись, которая задает зависимость среды выполнения:
+3. Для предварительного требования к определенной версии среды CLR добавьте `supportUrl` атрибут в `dependentAssembly` запись, указывающую зависимость среды CLR:
 
    ```xml
      <dependency>
@@ -55,7 +55,7 @@ ms.locfileid: "66745565"
      </dependency>
    ```
 
-4. Необходимым условием для сборки, должны быть предварительно установлены в глобальном кэше сборок, задайте `supportUrl` для `dependentAssembly` элемент, задающий нужную сборку:
+4. Для предварительного требования к сборке, которая должна быть предустановлена в глобальном кэше сборок, задайте `supportUrl` для `dependentAssembly` элемента, указывающего требуемую сборку:
 
    ```xml
      <dependency>
@@ -65,9 +65,9 @@ ms.locfileid: "66745565"
      </dependency>
    ```
 
-5. Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания ( *.application* файл) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
+5. Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
 
-6. .NET Framework 4 перед началом добавления `supportUrl` атрибут `compatibleFrameworks` элемента:
+6. Для .NET Framework 4 необходимых компонентов добавьте `supportUrl` атрибут к `compatibleFrameworks` элементу:
 
    ```xml
    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">
@@ -76,14 +76,14 @@ ms.locfileid: "66745565"
    </compatibleFrameworks>
    ```
 
-7. Как только вы вручную изменить манифест приложения, необходимо повторно подписать манифест приложения с помощью сертификата, а затем обновить и повторно подписать манифест развертывания. Используйте *Mage.exe* или *MageUI.exe* средства пакета SDK для выполнения этой задачи, как при создании этих файлов с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] стирает внесенные вручную. Дополнительные сведения об использовании Mage.exe для повторной подписи манифестов см. в разделе [как: Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+7. После изменения манифеста приложения вручную необходимо повторно подписать манифест приложения с помощью цифрового сертификата, а затем обновить и повторно подписать манифест развертывания. Для выполнения этой задачи используйте средства пакета SDK *Mage.exe* или *MageUI.exe* , так как повторное создание этих файлов с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] удаления изменений вручную. Дополнительные сведения об использовании Mage.exe для повторного подписания манифестов см. [в разделе как повторно подписывать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="net-framework-security"></a>безопасность платформы .NET Framework
- URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для запуска в режиме частичного доверия.
+ URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для выполнения в режиме частичного доверия.
 
 ## <a name="see-also"></a>См. также
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks > элемент](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [\<compatibleFrameworks>дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)

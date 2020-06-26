@@ -1,7 +1,7 @@
 ---
-title: Отключение активации по URL-АДРЕСУ приложений ClickOnce, с помощью конструктора
+title: Отключение активации URL-адресов для приложений ClickOnce с помощью конструктора
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8296f08c29b3259c19393a860ee34f6c3f05a42
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263278"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382488"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое руководство. отключение активации приложений ClickOnce по URL-адресу при помощи конструктора
-Как правило [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения будет запускаться автоматически сразу после его установки на веб-сервере. По соображениям безопасности можно отключить это поведение и сообщить пользователям, чтобы запустить приложение из **запустить** меню вместо этого. Следующая процедура описывает процесс отключения активации через URL.
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Практическое руководство. Отключение активации приложений ClickOnce по URL-адресу с помощью конструктора
+Как правило, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение запустится автоматически сразу после установки с веб-сервера. По соображениям безопасности вы можете отключить это поведение и сообщить пользователям о необходимости запуска приложения из меню " **Пуск** ". Следующая процедура описывает процесс отключения активации через URL.
 
- Такой подход можно использовать только для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], установленных на компьютере пользователя с веб-сервера. Он не может использоваться для интерактивных приложений, которые могут быть запущены только с помощью URL-адрес. Дополнительные сведения о различиях между только в Интернете и установленными приложениями см. в разделе [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Такой подход можно использовать только для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], установленных на компьютере пользователя с веб-сервера. Его нельзя использовать для интерактивных приложений, которые могут запускаться только с помощью URL-адреса. Дополнительные сведения о разнице между приложениями, работающими только в сети, и установленных приложениях см. [в разделе Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
- В этой процедуре используется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, эту задачу можно решить с помощью [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. отключить активацию по URL-адресу приложений ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).
+ В этой процедуре используется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Эту задачу также можно выполнить с помощью [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Дополнительные сведения см. [в разделе инструкции. Отключение активации URL-адресов для приложений ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md).
 
 ## <a name="procedure"></a>Процедура
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Отключение активации приложения с помощью URL
 
-1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений**и нажмите кнопку **свойства**.
+1. Щелкните правой кнопкой мыши имя проекта в **Обозреватель решений**и выберите пункт **свойства**.
 
-2. На **свойства** щелкните **публикации** вкладки.
+2. На странице **Свойства** перейдите на вкладку **Публикация** .
 
 3. Щелкните **Параметры**.
 
-4. Нажмите кнопку **манифесты**.
+4. Щелкните **манифесты**.
 
-5. Выберите флажок **Блокировать активацию с помощью URL-адреса приложения с**.
+5. Установите флажок **Блокировать активацию приложения с помощью URL-адреса**.
 
-6. Развертывание приложения.
+6. Разверните приложение.
 
 ## <a name="see-also"></a>См. также
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

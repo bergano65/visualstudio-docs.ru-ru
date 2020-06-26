@@ -1,7 +1,7 @@
 ---
-title: Добавить доверенного издателя на клиентский компьютер для приложений ClickOnce
+title: Добавление доверенного издателя на клиентский компьютер для приложений ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1423952405a31063ee88ce6fa1dfe0b75d80fe5d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 594c012aaa49a5b62e9f254f924a71f4934d1ebe
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649218"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382618"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce
 С помощью технологии развертывания доверенных приложений можно настроить клиентские компьютеры так, чтобы ваши приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] выполнялись с более высоким уровнем доверия без вывода запроса пользователю. Следующие процедуры показывают, как использовать программу командной строки CertMgr.exe для добавления сертификата издателя в хранилище надежных издателей на клиентском компьютере.
@@ -48,7 +48,7 @@ ms.locfileid: "81649218"
 
 1. Получите цифровой сертификат в центре сертификации.
 
-2. Экспортируйте сертификат в формат Base64 X.509 (*CER*). Для получения дополнительной информации о форматах сертификатов [см.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))
+2. Экспортируйте сертификат в формат Base64 X.509 (*CER*). Дополнительные сведения о форматах сертификатов см. [в разделе Экспорт сертификата](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. В командной строке на клиентских компьютерах выполните следующую команду:
 
@@ -62,10 +62,10 @@ ms.locfileid: "81649218"
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)
-- [Как: Включить настройки безопасности ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
-- [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Как включить параметры безопасности ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Как задать зону безопасности для приложения ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Как задать пользовательские разрешения для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Практическое руководство. Отладка приложения ClickOnce с ограниченными разрешениями](securing-clickonce-applications.md)
 - [Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [Как: Повторное подписание приложений и развертывания манифестов](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [Пошаговое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [Практическое руководство. Настройка поведения запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

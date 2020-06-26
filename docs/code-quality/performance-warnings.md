@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30acc1f38ea0d27a3a8245f586b3c41765330c50
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283402"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382670"
 ---
 # <a name="performance-warnings"></a>предупреждения производительности
 Предупреждения производительности поддерживают высокопроизводительные библиотеки и приложения.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание |
+| Правило | Описание: |
 | - | - |
 | [CA1800. Не делайте лишних приведений](../code-quality/ca1800.md) | Повторяющиеся приведения снижают производительность, особенно если приведения выполняются в компактных операторах итераций. |
 | [CA1801. Проверьте неиспользуемые параметры](../code-quality/ca1801.md) | Сигнатура метода включает параметр, не использующийся в основной части метода. |
@@ -53,7 +53,8 @@ ms.locfileid: "85283402"
 | [CA1827: Не используйте Count/LongCount, если можно использовать Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>метод или был использован, когда <xref:System.Linq.Enumerable.Any%2A> метод был бы более эффективным. |
 | [CA1828: Не используйте CountAsync/LongCountAsync, если можно использовать AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>метод или был использован, когда <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> метод был бы более эффективным. |
 | [CA1829: Используйте свойство Length/Count вместо метода Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное `Length` или `Count` свойство. |
-| [CA1831: используйте Асспан вместо индексаторов на основе диапазона для строки, если это уместно](../code-quality/ca1831.md) | При использовании в строке индексатора Range и неявного присваивания значения Реадонлиспан &lt; &gt; типу Char метод <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части строки. |
-| [CA1832: используйте Асспан или Асмемори вместо индексаторов на основе диапазона для получения Реадонлиспан или Реадонлимемори части массива.](../code-quality/ca1832.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
-| [CA1833: используйте Асспан или Асмемори вместо индексаторов на основе диапазона для получения части массива или области памяти.](../code-quality/ca1833.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.Span%601> <xref:System.Memory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
+| [CA1830: предпочитать строго типизированные перегрузки методов Append и INSERT в StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>и <xref:System.Text.StringBuilder.Insert%2A> предоставляют перегрузки для нескольких типов, кроме System. String.  По возможности рекомендуется использовать строго типизированные перегрузки с использованием ToString () и перегрузки на основе строк. |
+| [CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки](../code-quality/ca1831.md) | При использовании в строке индексатора Range и неявного присваивания значения Реадонлиспан &lt; &gt; типу Char метод <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части строки. |
+| [CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory](../code-quality/ca1832.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
+| [CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory](../code-quality/ca1833.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.Span%601> <xref:System.Memory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
 | [CA1835: предпочитать перегрузки на основе Мемори' для "ReadAsync" и "WriteAsync"](../code-quality/ca1835.md) | "Stream" имеет перегрузку "ReadAsync", которая принимает " &lt; байт памяти &gt; " в качестве первого аргумента, и перегрузка "WriteAsync", принимающая в &lt; &gt; качестве первого аргумента значение "реадонлимемори Byte". Предпочитать вызов перегрузок на основе памяти, что более эффективно. |
