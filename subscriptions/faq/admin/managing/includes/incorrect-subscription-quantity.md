@@ -7,13 +7,13 @@ ms.assetid: d97a767b-148d-488d-a860-778f406d8207
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: e0c906e4b8eef7468fd2a229a16d687e7b4aff91
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: c2e14a779cc7caef2c2e204cf0d63f8c323c1d12
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386343"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85503470"
 ---
-## <a name="why-is-the-portal-not-showing-the-correct-number-of-subscriptions-for-my-agreement"></a>Почему на портале отображается некорректное количество подписок для моего соглашения?
+## <a name="why-is-the-portal-not-showing-the-correct-number-of-visual-studio-subscriptions-for-my-agreement"></a>Почему на портале отображается некорректное количество подписок Visual Studio для моего соглашения?
 
 Если отображаемое количество подписок не соответствует вашему соглашению, возможно, вы выбрали не то соглашение на портале. Чтобы просмотреть все доступные соглашения, воспользуйтесь раскрывающимся списком в верхнем левом углу экрана. Если по-прежнему отображается некорректное количество подписок, [обратитесь в нашу службу поддержки](https://visualstudio.microsoft.com/subscriptions/support/#talktous). Выберите пункт **Поддержка по вопросам, связанным с учетными записями, подписками и выставлением счетов**, и укажите свою страну. В зависимости от вашего местонахождения поддержка может оказываться по электронной почте, через чат или по телефону.
