@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: "CA1829: Используйте свойство Length/Count вместо метода\_Enumerable.Count"
                   href: ca1829.md
+                - name: 'CA1830: предпочитать строго типизированные перегрузки методов Append и Insert в StringBuilder'
+                  href: ca1830.md
                 - name: 'CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки'
                   href: ca1831.md
                 - name: 'CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory'
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: 'CA2246: не присваивайте значения символу и его элементу в одном операторе'
                   href: ca2246.md
+                - name: 'CA2247: аргумент, переданный в конструктор TaskCompletionSource, должен быть перечислением TaskCreationOptions, а не TaskContinuationOptions'
+                  href: ca2247.md
                 - name: 'CA2248: укажите правильный аргумент enum для Enum.HasFlag'
                   href: ca2248.md
             - name: Автоматическая приостановка функции
