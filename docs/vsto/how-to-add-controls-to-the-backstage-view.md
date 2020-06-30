@@ -1,7 +1,7 @@
 ---
 title: 'Как добавить элементы управления в представление Backstage '
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986014"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538350"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Как добавить элементы управления в представление Backstage
   Конструктор ленты можно использовать для добавления элементов управления в меню, которое открывается, если щелкнуть вкладку **файл** . При запуске приложения элементы управления, добавляемые на вкладку « **файл** », отображаются в группе « **надстройки**».
@@ -50,7 +50,7 @@ ms.locfileid: "72986014"
 
     - CheckBox
 
-    - Коллекция
+    - Коллекции
 
     - Меню
 
@@ -62,7 +62,7 @@ ms.locfileid: "72986014"
 
 4. Перетащите элементы управления, чтобы переместить их в новое положение в меню.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
 - [XML-ленты](../vsto/ribbon-xml.md)

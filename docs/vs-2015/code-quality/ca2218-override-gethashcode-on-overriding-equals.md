@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 06d961fee28fa67f1e4f712564f6b3d5ff4073ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651620"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538805"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: переопределяйте GetHashCode при переопределении Equals
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218. Переопределяйте GetHashCode при переопределении Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
@@ -33,10 +33,10 @@ ms.locfileid: "72651620"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Открытый тип переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName>, но не переопределяет <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+ Открытый тип переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> , но не переопределяет <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Object.GetHashCode%2A> возвращает значение, основанное на текущем экземпляре, которое подходит для алгоритмов хэширования и структур данных, таких как хэш-таблица. Два объекта, которые относятся к одному типу и равны, должны возвращать один и тот же хэш-код, чтобы убедиться, что экземпляры следующих типов работают правильно:
+ <xref:System.Object.GetHashCode%2A>Возвращает значение, основанное на текущем экземпляре, которое подходит для алгоритмов хэширования и структур данных, таких как хэш-таблица. Два объекта, которые относятся к одному типу и равны, должны возвращать один и тот же хэш-код, чтобы убедиться, что экземпляры следующих типов работают правильно:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,10 +54,10 @@ ms.locfileid: "72651620"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Типы, реализующие <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Типы, реализующие<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, предоставьте реализацию <xref:System.Object.GetHashCode%2A>. Для пары объектов одного типа необходимо убедиться, что реализация возвращает одно и то же значение, если ваша реализация <xref:System.Object.Equals%2A> возвращает `true` для пары.
+ Чтобы устранить нарушение этого правила, предоставьте реализацию <xref:System.Object.GetHashCode%2A> . Для пары объектов одного типа необходимо убедиться, что реализация возвращает одно и то же значение, если ваша реализация <xref:System.Object.Equals%2A> возвращает `true` для пары.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
@@ -71,7 +71,7 @@ ms.locfileid: "72651620"
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
 
 ### <a name="comments"></a>Комментарии
- В следующем примере нарушение устраняется путем переопределения <xref:System.Object.GetHashCode>.
+ В следующем примере нарушение устраняется путем переопределения <xref:System.Object.GetHashCode> .
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedClass/cs/FxCop.Usage.GetHashCodeFixedClass.cs#1)]
@@ -85,23 +85,23 @@ ms.locfileid: "72651620"
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]
 
 ### <a name="comments"></a>Комментарии
- В следующем примере нарушение устраняется путем переопределения <xref:System.Object.GetHashCode>.
+ В следующем примере нарушение устраняется путем переопределения <xref:System.Object.GetHashCode> .
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedStruct/cs/FxCop.Usage.GetHashCodeFixedStruct.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1046: не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046. Не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: для перезагрузок оператора существуют дополнения с именами](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225. Для перегрузок операторов существуют варианты с именами](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: перегрузки операторов должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226. Перегрузки операторов должны быть симметричными](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224. Переопределяйте Equals при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

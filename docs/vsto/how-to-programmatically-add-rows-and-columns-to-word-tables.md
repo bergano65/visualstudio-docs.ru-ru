@@ -1,7 +1,7 @@
 ---
 title: Как программно добавлять строки и столбцы в таблицы Word
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc8fbc80a58afcb6f2256c56b1071276c50f319b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 0097692c77d0b472c808876e9017b514b6416fc6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985843"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538077"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Как программно добавлять строки и столбцы в таблицы Word
   В таблице Microsoft Office Word ячейки организованы по строкам и столбцам. Вы можете использовать метод <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Rows> для добавления строк в таблицу и метод <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Columns> для добавления столбцов.
@@ -75,7 +75,7 @@ ms.locfileid: "72985843"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Программное создание таблиц Word](how-to-programmatically-create-word-tables.md)
 - [Руководство. Программное добавление текста и форматирования в ячейки в таблицах Word](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Руководство. Программное заполнение таблиц Word свойствами документа](how-to-programmatically-populate-word-tables-with-document-properties.md)

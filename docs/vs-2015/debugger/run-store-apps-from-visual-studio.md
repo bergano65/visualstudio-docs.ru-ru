@@ -1,5 +1,5 @@
 ---
-title: Store выполнения приложения
+title: Запуск приложений Магазина
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,23 +14,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d5dfe0d5e5e9af35334629bd2bcd27f414dac11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154187"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540313"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Выполнение приложений Магазина из Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Приложения Магазина выполняются на обширном диапазоне устройств, и Visual Studio предлагает вам несколько способов запуска таких приложений и взаимодействия с ними. Процедура, вызываемая по нажатию клавиши F5, улучшена в целях упрощения отладки, профилирования и тестирования приложений во время разработки.
 
- ![Начало отладки и Выбор целевого объекта](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
+ ![Начало отладки и выбор целевого объекта](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|||
+|Заголовок|Описание|
 |-|-|
 |[Запуск приложений для Магазина Windows на локальном компьютере](../debugger/run-windows-store-apps-on-the-local-machine.md)|Запуск приложения Магазина Windows на устройстве Visual Studio.|
 |[Запуск приложений для Магазина Windows в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md)|Запуск приложения Магазина Windows в окне настольной системы, имитирующем функциональность [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], такую как сенсорное управление и ориентация.|

@@ -1,7 +1,7 @@
 ---
 title: Справочник по неуправляемым API (разработка решений Office в Visual Studio)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00db78359154dbda600fb4b58103bc04e89d16b2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4c1616d24ae9b2c072df4e5708eb98e86611a83d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551322"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540989"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Справочник по неуправляемым API (разработка решений Office в Visual Studio)
 
-Начиная с версии 2007 Microsoft Office, приложения Office используют интерфейс [интерфейса IManagedAddin](../vsto/imanagedaddin-interface.md) для вызова компонента загрузчика надстроек VSTO, который входит в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]состав. Этот компонент используется для помощи в загрузке управляемых надстроек VSTO. Вы можете создать собственный компонент загрузчика надстроек VSTO, реализовав этот интерфейс.
+Начиная с версии 2007 Microsoft Office, приложения Office используют интерфейс [интерфейса IManagedAddin](../vsto/imanagedaddin-interface.md) для вызова компонента загрузчика надстроек VSTO, который входит в состав [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Этот компонент используется для помощи в загрузке управляемых надстроек VSTO. Вы можете создать собственный компонент загрузчика надстройки VSTO, реализовав этот интерфейс.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-[Интерфейс IManagedAddin](../vsto/imanagedaddin-interface.md)
+[IManagedAddin - интерфейс](../vsto/imanagedaddin-interface.md)
 
 COM-интерфейс, который можно реализовать для загрузки и выгрузки управляемых надстроек VSTO в приложениях Office.

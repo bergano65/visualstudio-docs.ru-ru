@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное создание документов Visio
+title: Как программно создавать новые документы Visio
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574841"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541535"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Практическое руководство. Программное создание документов Visio
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Как программно создавать новые документы Visio
   При создании нового документа Microsoft Office Visio вы добавляете его в коллекцию `Microsoft.Office.Interop.Visio.Documents` открытых документов Visio. Соответственно, метод `Microsoft.Office.Interop.Visio.Documents.Add` создает новый документ Visio. Дополнительные сведения см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .
 
 ## <a name="create-new-blank-documents"></a>Создание новых пустых документов
@@ -53,7 +53,7 @@ ms.locfileid: "62574841"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
 
 ## <a name="create-documents-based-on-existing-templates"></a>Создание документов на основе существующих шаблонов
- `Microsoft.Office.Interop.Visio.Documents.Add` Метод может создать новый документ ( *.vsd* файл), основанный на существующем шаблоне Visio ( *.vst* файла). Этот метод копирует наборы элементов, стили и параметры, которые являются частью рабочей области шаблона. Необходимо указать имя файла и полный путь к шаблону.
+ `Microsoft.Office.Interop.Visio.Documents.Add`Метод может создать новый документ ( *VSD* -файл), основанный на существующем шаблоне Visio (файл *VST* ). Этот метод копирует наборы элементов, стили и параметры, которые являются частью рабочей области шаблона. Необходимо указать имя файла и полный путь к шаблону.
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Создание нового документа на основе существующего шаблона
 
@@ -65,16 +65,16 @@ ms.locfileid: "62574841"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера кода требуется следующее.
 
-- Документ Visio с именем `myDrawing.vsd` должен быть расположен в каталоге с именем `Test` в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
+- Документ Visio с именем `myDrawing.vsd` должен находиться в каталоге с именем `Test` в папке " *Мои документы* " (для Windows XP и более ранних версий) или в папке " *документы* " (для Windows Vista).
 
-- Документ Visio с именем `myStencil.vss` должен быть расположен в каталоге с именем `Test` в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
+- Документ Visio с именем `myStencil.vss` должен находиться в каталоге с именем `Test` в папке " *Мои документы* " (для Windows XP и более ранних версий) или в папке " *документы* " (для Windows Vista).
 
-- Документ Visio с именем `myTemplate.vst` должен быть расположен в каталоге с именем `Test` в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
+- Документ Visio с именем `myTemplate.vst` должен находиться в каталоге с именем `Test` в папке " *Мои документы* " (для Windows XP и более ранних версий) или в папке " *документы* " (для Windows Vista).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Visio](../vsto/visio-solutions.md)
-- [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)
-- [Практическое руководство. Открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Практическое руководство. Программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Практическое руководство. Программное сохранение документов Visio](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Практическое руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
+- [Руководство. Программное открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Руководство. программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Как программно сохранять документы Visio](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)

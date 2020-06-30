@@ -1,7 +1,7 @@
 ---
-title: Добавление текста и форматирования в ячейки таблиц Word программными средствами
+title: Программное добавление текста & форматирования в ячейки таблицы Word
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdab1877cf2114f7828dbd65786cf8758d77d0f3
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: acd43c82c6dae32ef6595b2f63c06fe61f3c6168
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402017"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538051"
 ---
-# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Практическое руководство. Программное добавление текста и форматирования в ячейки таблиц Word
+# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Руководство. Программное добавление текста и форматирования в ячейки в таблицах Word
   Каждая таблица представляет собой набор ячеек. Каждый отдельный объект <xref:Microsoft.Office.Interop.Word.Cell> представляет одну ячейку в таблице. Обращайтесь к каждой ячейке по ее расположению в таблице. Этот пример ссылается на ячейку, расположенную в первой строке и первом столбце таблицы, добавляет в ячейку текст и применяет форматирование.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "66402017"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#97)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#97)]
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)
-- [Практическое руководство. Программное добавление строк и столбцов в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Практическое руководство. Программное заполнение таблиц Word свойствами документа](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. Программное создание таблиц Word](../vsto/how-to-programmatically-create-word-tables.md)
+- [Как программно добавлять строки и столбцы в таблицы Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Руководство. Программное заполнение таблиц Word свойствами документа](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)

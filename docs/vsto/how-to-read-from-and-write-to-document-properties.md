@@ -1,7 +1,7 @@
 ---
 title: Руководство. чтение и запись в свойства документа
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985801"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541327"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Руководство. чтение и запись в свойства документа
   Свойства документа можно сохранять вместе с документом. Приложения Office содержат различные встроенные свойства, например автора, название и тему. В этом разделе показано, как задать свойства документа в Microsoft Office Excel и Microsoft Office Word.
@@ -78,7 +78,7 @@ ms.locfileid: "72985801"
 
  Несмотря на то что вы работаете с Word и Excel и их объектами, Microsoft Office предоставляет список доступных встроенных свойств документа. В случае попытки доступа к неопределенному свойству возникает исключение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Как создавать и изменять пользовательские свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

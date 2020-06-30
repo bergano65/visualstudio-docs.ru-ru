@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Защита частей документов с помощью элементов управления содержимым
+title: Пошаговое руководство. Защита частей документов с помощью элементов управления содержимым
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254669"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541353"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Практическое руководство. Защита частей документов с помощью элементов управления содержимым
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Пошаговое руководство. Защита частей документов с помощью элементов управления содержимым
   При защите части документа вы запрещаете пользователям изменять или удалять содержимое в ней. Для защиты частей документа Microsoft Office с помощью элементов управления содержимым можно использовать несколько способов:
 
 - можно защитить элемент управления содержимым;
@@ -34,10 +34,10 @@ ms.locfileid: "71254669"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a>Защита элемента управления содержимым
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Защита элемента управления содержимым
  Вы можете запретить пользователям изменять или удалять элемент управления содержимым, задав свойства элемента управления в проекте уровня документа во время разработки или во время выполнения.
 
- Также можно защитить элементы управления содержимым, которые вы добавляете в документ во время выполнения с помощью проекта надстройки VSTO. Дополнительные сведения см. в разделе [Практическое руководство. Добавление элементов управления содержимым в](../vsto/how-to-add-content-controls-to-word-documents.md)документы Word.
+ Также можно защитить элементы управления содержимым, которые вы добавляете в документ во время выполнения с помощью проекта надстройки VSTO. Дополнительные сведения см. [в разделе руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>Защита элемента управления содержимым во время разработки
 
@@ -53,7 +53,7 @@ ms.locfileid: "71254669"
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>Защита элемента управления содержимым во время выполнения
 
-1. Задайте для `LockContentControl` свойства элемента управления содержимым значение true, чтобы запретить пользователям изменять элемент управления, и присвойте свойству **значение true** , чтобы запретить пользователям удалять элемент управления. `LockContents`
+1. Задайте `LockContents` для свойства элемента управления содержимым **значение true** , чтобы запретить пользователям изменять элемент управления, и присвойте `LockContentControl` свойству **значение true** , чтобы запретить пользователям удалять элемент управления.
 
      В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте на уровне документа. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisDocument_Startup` .
 
@@ -82,7 +82,7 @@ ms.locfileid: "71254669"
 2. На ленте перейдите на вкладку **Разработчик** .
 
     > [!NOTE]
-    > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки "Разработчик" на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [инструкции. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. В группе **элементы управления** щелкните раскрывающийся список **Группа** , а затем выберите пункт **Группа**.
 
@@ -102,10 +102,10 @@ ms.locfileid: "71254669"
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Элементы управления содержимым](../vsto/content-controls.md)
-- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Как добавить элементы управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)

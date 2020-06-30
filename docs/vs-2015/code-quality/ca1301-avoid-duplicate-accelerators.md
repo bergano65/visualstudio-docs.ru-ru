@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 647fef2968971cddb6a14cc19e53eed979b9c151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 772c9bee3f43c42701bfa460c622f4a225ec59cb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661521"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539182"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: не следует допускать повторяющихся сочетаний клавиш быстрого доступа
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301. Избегайте повторяющихся акселераторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
@@ -47,9 +47,9 @@ ms.locfileid: "72661521"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показана минимальная форма, содержащая два элемента управления с одинаковыми ключами доступа. Ключи хранятся в файле ресурсов, который не отображается. Однако их значения отображаются в `checkBox.Text` строках с комментариями. Поведение повторяющихся сочетаний клавиш можно проверить, переменив строки `checkBox.Text` на их аналоги с комментариями. Однако в этом случае предупреждение не будет создано в примере.
+ В следующем примере показана минимальная форма, содержащая два элемента управления с одинаковыми ключами доступа. Ключи хранятся в файле ресурсов, который не отображается. Однако их значения отображаются в строках с комментариями `checkBox.Text` . Поведение повторяющихся сочетаний клавиш можно проверить, заменив `checkBox.Text` строки своими аналогами с комментариями. Однако в этом случае предупреждение не будет создано в примере.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [ресурсов в классических приложениях](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+## <a name="see-also"></a>См. также
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Ресурсы в приложениях для настольных систем](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
