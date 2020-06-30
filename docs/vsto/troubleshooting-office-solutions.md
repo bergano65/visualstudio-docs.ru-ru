@@ -1,7 +1,7 @@
 ---
 title: Устранение неполадок решений Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978267"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537220"
 ---
 # <a name="troubleshoot-office-solutions"></a>Устранение неполадок решений Office
   В этом разделе содержатся советы по решению типичных проблем, с которыми можно столкнуться при создании решений с помощью средств разработки Office в Visual Studio.
@@ -29,20 +29,20 @@ ms.locfileid: "62978267"
 
  Описание распространенных проблем, с которыми можно столкнуться при проектировании, запуске и тестировании решений Office в Visual Studio.
 
-- [Практическое руководство. Повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Пошаговое руководство. Повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 
- В этой статье описывается повторное включение надстройки VSTO, которая была оборудования или программного обеспечения отключена.
+ Описание повторного включения надстройки VSTO, которая была отключена жестко или программно.
 
-- [Дополнительные сведения об ошибках в решениях Office](../vsto/additional-support-for-errors-in-office-solutions.md)
+- [Дополнительная поддержка ошибок в решениях Office](../vsto/additional-support-for-errors-in-office-solutions.md)
 
  Описываются другие ресурсы для устранения ошибок и предупреждений в решениях Office.
 
 ## <a name="related-sections"></a>Связанные разделы
-- [Устранение неполадок с безопасностью решений Office](../vsto/troubleshooting-office-solution-security.md)
+- [Устранение неполадок в системе безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)
 
  Описываются типичные проблемы, которые могут возникать при работе по защите решений Office.
 
-- [Устранение неполадок с развертыванием решения Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Устранение неполадок развертывания решений Office](../vsto/troubleshooting-office-solution-deployment.md)
 
  Описываются типичные проблемы, которые могут возникать при развертывании решений Office.
 
@@ -54,6 +54,6 @@ ms.locfileid: "62978267"
 
  Список разделов, в которых описывается, как решения Office могут использовать функции безопасности, доступные в .NET Framework.
 
-- [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)
+- [Распространенные задачи в программировании Office](../vsto/common-tasks-in-office-programming.md)
 
  Список часто задаваемых вопросов о программировании решений Office и ссылки на разделы, помогающие решить типичные проблемы.

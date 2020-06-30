@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77214948609bd73a2a630a62b4c1b7db114cf8e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665792"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534242"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,25 @@ ms.locfileid: "72665792"
 
  **Содержание раздела**
 
-||||||
-|-|-|-|-|-|
-|[Сборка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Правка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Инструменты](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Окно](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
-|[Отладка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Файл](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Рефакторинг](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Вид](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+- [Сборка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
-## <a name="bkmk_build"></a> Сборка
+- [Edit](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit) (Изменение)
+
+- [Проект](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
+
+- [Инструменты](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
+
+- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+
+- [Отладка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
+
+- [Файл](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
+
+- [Рефакторинг](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
+
+- [Режиме](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+
+## <a name="build"></a><a name="bkmk_build"></a>Строит
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -40,7 +53,7 @@ ms.locfileid: "72665792"
 |Build.Compile|Ctrl+F7 [глобальный]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [глобальный]|
 
-## <a name="bkmk_debug"></a> Отладка
+## <a name="debug"></a><a name="bkmk_debug"></a>См
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -60,7 +73,7 @@ ms.locfileid: "72665792"
 |Debug.StopDebugging|Shift+F5 [глобальный]|
 |Debug.ToggleBreakpoint|F9 [глобальный]|
 
-## <a name="bkmk_edit"></a> Правка
+## <a name="edit"></a><a name="bkmk_edit"></a> Правка
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -111,7 +124,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [текстовый редактор]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [текстовый редактор]|
 
-## <a name="bkmk_file"></a> Файл
+## <a name="file"></a><a name="bkmk_file"></a>File
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -127,26 +140,26 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |File.SaveSelectedItems|Ctrl+S [глобальный]|
 |File.ViewinBrowser|Ctrl+Shift+W [глобальный]|
 
-## <a name="bkmk_project"></a> Проект
+## <a name="project"></a><a name="bkmk_project"></a> Проект
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Shift+Alt+A [глобальный]|
 |Project.AddNewItem|Ctrl+Shift+A [глобальный]|
 
-## <a name="bkmk_refactor"></a> Рефакторинг
+## <a name="refactor"></a><a name="bkmk_refactor"></a>Структурирован
 
-|Команда|Сочетание клавиш [контекст]|
+|Get-Help|Сочетание клавиш [контекст]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [глобальный]|
 
-## <a name="bkmk_tools"></a> Инструменты
+## <a name="tools"></a><a name="bkmk_tools"></a> Инструменты
 
-|Команда|Сочетание клавиш [контекст]|
+|Get-Help|Сочетание клавиш [контекст]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [глобальный]|
 
-## <a name="bkmk_view"></a> Вид
+## <a name="view"></a><a name="bkmk_view"></a>Режиме
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -167,7 +180,7 @@ iew.TfsTeamExplorer|CTRL+\\, CTRL+M [глобальный]|
 |View.ViewCode|ВВОД [схема классов]<br /><br /> или F7 [конструктор параметров]|
 |View.ViewDesigner|Shift+F7 [HTML-редактор в представлении кода]|
 
-## <a name="bkmk_window"></a> Окно
+## <a name="window"></a><a name="bkmk_window"></a>Окно
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|

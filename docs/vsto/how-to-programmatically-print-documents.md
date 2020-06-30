@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программная печать документов
+title: Руководство. Программная печать документов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956048"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537830"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Практическое руководство. Программная печать документов
+# <a name="how-to-programmatically-print-documents"></a>Руководство. Программная печать документов
   Вы можете распечатать весь документ Microsoft Office Word или часть документа, на принтере по умолчанию.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>Печать документа, который является частью настройки уровня документа
+## <a name="print-a-document-that-is-part-of-a-document-level-customization"></a>Печать документа, который является частью настройки на уровне документа
 
 ### <a name="to-print-the-entire-document"></a>Печать всего документа
 
@@ -57,5 +57,5 @@ ms.locfileid: "62956048"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

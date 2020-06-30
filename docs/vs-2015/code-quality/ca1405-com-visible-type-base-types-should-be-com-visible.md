@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 13a6f80bb0500286dd44e9c5ca9378e95d4b891d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 779d3ec1ed520d5d48043f90e7cb6272553012a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661310"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535048"
 ---
-# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: базовые типы, относящиеся к типу видимых COM-клиенту, должны быть видимыми для COM
+# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405. Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
@@ -36,7 +36,7 @@ ms.locfileid: "72661310"
  Видимый тип модели COM является производным от типа, который не является видимым для COM.
 
 ## <a name="rule-description"></a>Описание правила
- Когда видимый тип COM добавляет элементы в новую версию, он должен соблюдать строгие правила, чтобы избежать нарушения работы COM-клиентов, привязанных к текущей версии. Тип, невидимый для COM, предполагает, что он не должен следовать этим правилам управления версиями COM при добавлении новых членов. Однако если видимый тип COM является производным от невидимого типа COM и предоставляет интерфейс класса <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ClassInterfaceType> (по умолчанию), все открытые члены базового типа (если они не помечены как невидимые для COM, которые будут избыточными) доступны для -. Если базовый тип добавляет новые члены в последующей версии, все COM-клиенты, которые привязаны к интерфейсу класса производного типа, могут прерываться. Видимые типы COM должны быть производными только от видимых типов COM, чтобы снизить вероятность нарушения работы клиентов COM.
+ Когда видимый тип COM добавляет элементы в новую версию, он должен соблюдать строгие правила, чтобы избежать нарушения работы COM-клиентов, привязанных к текущей версии. Тип, невидимый для COM, предполагает, что он не должен следовать этим правилам управления версиями COM при добавлении новых членов. Однако если видимый тип COM является производным от невидимого типа COM и предоставляет интерфейс класса <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ClassInterfaceType> (значение по умолчанию), все открытые члены базового типа (если они не помечены как невидимые как com, которые могут быть избыточными) доступны для com. Если базовый тип добавляет новые члены в последующей версии, все COM-клиенты, которые привязаны к интерфейсу класса производного типа, могут прерываться. Видимые типы COM должны быть производными только от видимых типов COM, чтобы снизить вероятность нарушения работы клиентов COM.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, сделайте базовые типы видимыми для COM или производным от него типом COM.
@@ -50,5 +50,5 @@ ms.locfileid: "72661310"
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/cs/FxCop.Interoperability.ComBaseTypes.cs#1)]
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [представляем интерфейс класса](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [для взаимодействия с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+## <a name="see-also"></a>См. также
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>[Знакомство с интерфейсом класса](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [для взаимодействия с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

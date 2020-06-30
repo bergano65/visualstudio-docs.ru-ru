@@ -1,7 +1,7 @@
 ---
-title: Защита документов и их частей программным способом
+title: Программная защита документов и частей документов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4654a2c218470e0d5e2a1ddd54a88de5c4546f7b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402187"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537843"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Практическое руководство. Программная Защита документов и их частей
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Руководство. Программная защита документов и частей документов
   Вы можете добавлять защиту в документы Microsoft Office Word, чтобы запретить пользователям вносить изменения в документ.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "66402187"
  Вы также можете помечать определенные части документа как исключения, чтобы указанные пользователи могли изменять только эти области документа. Например, можно защитить весь документ, кроме определенной закладки. При необходимости можно добавить пароль, чтобы пользователи, не знающие пароль, не могли удалить защиту документа.
 
 > [!NOTE]
-> В следующем примере защита паролем не используется; однако вы можете рассмотреть возможность использования пароля при добавлении защиты документов. Дополнительные сведения см. в примере системы защиты документов по адресу [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
+> В следующем примере защита паролем не используется; однако вы можете рассмотреть возможность использования пароля при добавлении защиты документов. Дополнительные сведения см. в образце средства защиты документов в примерах [разработки Office и пошаговых руководствах](../vsto/office-development-samples-and-walkthroughs.md).
 
- Для защиты частей документов можно также использовать элементы управления содержимым. Дополнительные сведения см. в разделе [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+ Для защиты частей документов можно также использовать элементы управления содержимым. Дополнительные сведения см. [в разделе руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Защитить документ, который является частью настройки уровня документа
+## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Защита документа, который является частью настройки уровня документа
 
 ### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Защита документа, который является частью настройки уровня документа
 
@@ -68,9 +68,9 @@ ms.locfileid: "66402187"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)
-- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)
-- [Практическое руководство. Разрешить выполнения кода программной части документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
-- [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Защита паролем в документах Office](../vsto/password-protection-on-office-documents.md)
+- [Как разрешите выполнение кода для документов с ограниченными разрешениями](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)

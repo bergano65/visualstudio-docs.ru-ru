@@ -11,17 +11,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e505075efc0c80f8dc4cbc43075b0bc2bc4caa1d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4439e7b520232b71c16d3f3c6b4afb3a4ba35f21
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643426"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534606"
 ---
-# <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: константы критической безопасности должны быть прозрачными
+# <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130. Важные константы безопасности должны быть прозрачными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|константсшаулдбетранспарент|
 |CheckId|CA2130|
@@ -29,7 +29,7 @@ ms.locfileid: "72643426"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Константное поле или член перечисления помечается <xref:System.Security.SecurityCriticalAttribute>.
+ Константное поле или член перечисления помечается атрибутом <xref:System.Security.SecurityCriticalAttribute> .
 
 ## <a name="rule-description"></a>Описание правила
  Принудительная прозрачность не применяется для постоянных значений, чтобы во время выполнения не требовалась подстановка значений. Константные поля должны быть прозрачными для системы безопасности, чтобы анализаторы кода не предполагали, что прозрачный для системы безопасности код не может получить доступ к константе.
@@ -41,6 +41,6 @@ ms.locfileid: "72643426"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующих примерах значение перечисления `EnumWithCriticalValues.CriticalEnumValue` и константа `CriticalConstant` вызвать это предупреждение. Чтобы устранить проблемы, удалите атрибут [`SecurityCritical`], чтобы сделать их прозрачными для безопасности.
+ В следующих примерах `EnumWithCriticalValues.CriticalEnumValue` `CriticalConstant` это предупреждение вызывается значением перечисления и константой. Чтобы устранить проблемы, удалите `SecurityCritical` атрибут [], чтобы сделать их прозрачными для безопасности.
 
  [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2130.constantsshouldbetransparent/cs/ca2130 - constantsshouldbetransparent.cs#1)]

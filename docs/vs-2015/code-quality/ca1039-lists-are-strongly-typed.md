@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8845fb8bcd08f076ddc3c509a37948cf008e0623
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e485375c12564b5416c79bd3a41dedb1da76dc0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661801"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533449"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: списки обладают строгой типизацией
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039. Списки имеют строгие типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|ListsAreStronglyTyped|
 |CheckId|CA1039|
@@ -33,7 +33,7 @@ ms.locfileid: "72661801"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип реализует <xref:System.Collections.IList?displayProperty=fullName> но не предоставляет строго типизированный метод для одного или нескольких следующих элементов:
+ Открытый или защищенный тип реализует, <xref:System.Collections.IList?displayProperty=fullName> но не предоставляет строго типизированный метод для одного или нескольких следующих элементов:
 
 - IList. Item
 
@@ -48,29 +48,29 @@ ms.locfileid: "72661801"
 - IList. Remove
 
 ## <a name="rule-description"></a>Описание правила
- Это правило требует, чтобы <xref:System.Collections.IList> реализации предоставляли строго типизированные члены, чтобы пользователям не приводить аргументы к типу <xref:System.Object?displayProperty=fullName> при использовании функций, предоставляемых интерфейсом. Интерфейс <xref:System.Collections.IList> реализуется коллекциями объектов, к которым можно получить доступ по индексу. Это правило предполагает, что тип, реализующий <xref:System.Collections.IList>, делает это для управления коллекцией экземпляров типа, которые надежнее, чем <xref:System.Object>.
+ Это правило требует <xref:System.Collections.IList> реализации строго типизированных членов, чтобы пользователи не применялись для приведения аргументов к <xref:System.Object?displayProperty=fullName> типу, если они используют функциональные возможности, предоставляемые интерфейсом. <xref:System.Collections.IList>Интерфейс реализуется коллекциями объектов, к которым можно получить доступ по индексу. Это правило предполагает, что тип, реализующий <xref:System.Collections.IList> это, позволяет управлять коллекцией экземпляров типа, которые являются надежными, чем <xref:System.Object> .
 
- <xref:System.Collections.IList> реализует интерфейсы <xref:System.Collections.ICollection?displayProperty=fullName> и <xref:System.Collections.IEnumerable?displayProperty=fullName>. При реализации <xref:System.Collections.IList> необходимо предоставить необходимые строго типизированные члены для <xref:System.Collections.ICollection>. Если объекты в коллекции расширяют <xref:System.ValueType?displayProperty=fullName>, необходимо предоставить строго типизированный элемент для <xref:System.Collections.IEnumerable.GetEnumerator%2A>, чтобы избежать снижения производительности, вызванной упаковкой-преобразованием; Это необязательно, если объекты коллекции являются ссылочным типом.
+ <xref:System.Collections.IList>реализует <xref:System.Collections.ICollection?displayProperty=fullName> интерфейсы и <xref:System.Collections.IEnumerable?displayProperty=fullName> . При реализации необходимо <xref:System.Collections.IList> предоставить обязательные строго типизированные члены для <xref:System.Collections.ICollection> . Если объекты в коллекции расширяются <xref:System.ValueType?displayProperty=fullName> , необходимо предоставить строго типизированный элемент, <xref:System.Collections.IEnumerable.GetEnumerator%2A> чтобы избежать снижения производительности, вызванной упаковкой-преобразованием; это не является обязательным, если объекты коллекции являются ссылочным типом.
 
- Чтобы обеспечить соответствие этому правилу, реализуйте члены интерфейса явным образом с помощью имен в формате InterfaceName. Интерфацемембернаме, например <xref:System.Collections.IList.Add%2A>. Явные члены интерфейса используют типы данных, объявленные интерфейсом. Реализуйте строго типизированные члены, используя имя члена интерфейса, например `Add`. Объявите строго типизированные члены как открытые и объявите параметры и возвращаемые значения строгим типом, который управляется коллекцией. Строгие типы заменяют более слабые типы, такие как <xref:System.Object> и <xref:System.Array>, объявленные интерфейсом.
+ Чтобы обеспечить соответствие этому правилу, реализуйте члены интерфейса явным образом с помощью имен в формате InterfaceName. Интерфацемембернаме, например <xref:System.Collections.IList.Add%2A> . Явные члены интерфейса используют типы данных, объявленные интерфейсом. Реализуйте строго типизированные члены с помощью имени члена интерфейса, например `Add` . Объявите строго типизированные члены как открытые и объявите параметры и возвращаемые значения строгим типом, который управляется коллекцией. Строгие типы заменяют более слабые типы, такие как <xref:System.Object> и <xref:System.Array> , объявленные интерфейсом.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, явно реализуйте <xref:System.Collections.IList> члены и предоставьте строго типизированные альтернативы для элементов, которые были отмечены ранее. Для кода, который правильно реализует интерфейс <xref:System.Collections.IList> и предоставляет необходимые строго типизированные члены, см. Следующий пример.
+ Чтобы устранить нарушение этого правила, явно реализуйте <xref:System.Collections.IList> члены и предоставьте строго типизированные альтернативы для элементов, которые были отмечены ранее. Для кода, который правильно реализует <xref:System.Collections.IList> интерфейс и предоставляет необходимые строго типизированные члены, см. Следующий пример.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Подавлять предупреждение из этого правила при реализации новой коллекции на основе объектов, такой как связанный список, где типы, расширяющие новую коллекцию, определяют строгий тип. Эти типы должны соответствовать этому правилу и предоставлять строго типизированные члены.
 
 ## <a name="example"></a>Пример
- В следующем примере тип `YourType` расширяет <xref:System.Collections.CollectionBase?displayProperty=fullName>, как и все строго типизированные коллекции. Обратите внимание, что <xref:System.Collections.CollectionBase> предоставляет явную реализацию интерфейса <xref:System.Collections.IList>. Поэтому необходимо предоставить строго типизированные члены для <xref:System.Collections.IList> и <xref:System.Collections.ICollection>.
+ В следующем примере тип `YourType` расширяет <xref:System.Collections.CollectionBase?displayProperty=fullName> , как и все строго типизированные коллекции. Обратите внимание, что <xref:System.Collections.CollectionBase> предоставляет явную реализацию <xref:System.Collections.IList> интерфейса. Поэтому необходимо предоставить только строго типизированные члены для <xref:System.Collections.IList> и <xref:System.Collections.ICollection> .
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1035: в составе реализаций ICollection есть строго типизированные элементы](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035. В составе реализаций ICollection есть члены со строгим типом](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: перечислители должны быть строго типизированы](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038. Перечислители должны иметь строгие типы](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>

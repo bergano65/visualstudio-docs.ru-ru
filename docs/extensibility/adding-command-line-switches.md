@@ -1,5 +1,5 @@
 ---
-title: Добавление коммутаторов командной строки (ru) Документы Майкрософт
+title: Добавление параметров командной строки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,49 +13,48 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f2df3a704c34d97c9d5acfa72249fe492b7f812
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740164"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536283"
 ---
-# <a name="add-command-line-switches"></a>Добавление коммутаторов командной строки
-Вы можете добавить коммутаторы командной строки, которые применяются к вашему VSPackage при выполнении *devenv.exe.* Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления названия коммутатора и его свойств. В этом примере коммутатор MySwitch добавляется для подкласса VSPackage под названием **AddCommandSwitchPackage** без каких-либо аргументов и с VSPackage загружается автоматически.
+# <a name="add-command-line-switches"></a>Добавление параметров командной строки
+При выполнении *devenv.exe* можно добавить параметры командной строки, которые применяются к пакету VSPackage. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени переключателя и его свойств. В этом примере параметр Мисвитч добавляется для подкласса VSPackage с именем **аддкоммандсвитчпаккаже** без аргументов и при этом автоматически загружается пакетом VSPackage.
 
 ```csharp
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]
 ```
 
- Названные параметры отображаются в следующих описаниях.
+ Именованные параметры показаны в следующих описаниях.
 
-||||
-|-|-|-|-|
-| Параметр | Описание|
-| Аргументы | Количество аргументов для коммутатора. Может быть «к», или список аргументов. |
-| Нагрузка на спрос | Загрузите VSPackage автоматически, если это установлено до 1, в противном случае установлено до 0. |
-| HelpString | Строка справки или идентификатор ресурса строки для отображения с **devenv /?**. |
-| name | Выключатель. |
+|Имя|Описание|
+|-|-|
+| Аргументы | Число аргументов для переключателя. Может быть "*" или списком аргументов. |
+| DemandLoad | Загружать VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |
+| HelpString | Строка справки или идентификатор ресурса строки, отображаемой с помощью **команды devenv/?**. |
+| Имя | Параметр. |
 | PackageGuid | Идентификатор GUID пакета. |
 
- Первое значение Аргументов обычно 0 или 1. Для обозначения того, что весь остаток командной строки является аргументом, может использоваться специальное значение «к» значением. Это может быть полезно для отладки сценариев, в которых пользователь должен пройти строку команды отладчика.
+ Первое значение аргумента обычно равно 0 или 1. Специальное значение "*" можно использовать для указания того, что весь остаток командной строки является аргументом. Это может быть полезно для сценариев отладки, в которых пользователь должен передать командную строку отладчика.
 
- Значение DemandLoad либо `true` (1) `false` или (0) указывает на то, что VSPackage должен быть загружен автоматически.
+ Значение DemandLoad либо `true` (1), либо `false` (0) указывает, что пакет VSPackage должен быть загружен автоматически.
 
- Значение HelpString — это идентификатор ресурса строки, которая отображается в **devenv /?** Справка дисплея. Это значение должно быть в форме "#nnn", где nnn является рядом. Значение строки в файле ресурса должно заканчиваться новым символом строки.
+ Значение HelpString — это идентификатор ресурса строки, которая отображается в **devenv/?** Отображение справки. Это значение должно быть в формате "#nnn", где NNN — целое число. Строковое значение в файле ресурсов должно заканчиваться символом новой строки.
 
- Значение имени — это название коммутатора.
+ Значение Name — это имя переключателя.
 
- Значение PackageGuid — это GUID пакета, который реализует этот коммутатор. IDE использует этот GUID для поиска VSPackage в реестре, к которому применяется коммутатор командной строки.
+ Значение PackageGuid — это идентификатор GUID пакета, который реализует этот параметр. Интегрированная среда разработки использует этот идентификатор GUID для поиска пакета VSPackage в реестре, к которому применяется параметр командной строки.
 
-## <a name="retrieve-command-line-switches"></a>Извлечение переключателей командной строки
- При загрузке пакета можно получить переключатели командной строки, выполнив следующие шаги.
+## <a name="retrieve-command-line-switches"></a>Получение параметров командной строки
+ После загрузки пакета можно получить параметры командной строки, выполнив следующие действия.
 
-1. В реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> VSPackage, `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> позвоните, <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> чтобы получить интерфейс.
+1. В <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации VSPackage вызовите on, `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> чтобы получить <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> интерфейс.
 
-2. Вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> для получения переключателей командной строки, вкоторыестовые пользователем.
+2. Вызовите метод, <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> чтобы получить параметры командной строки, которые пользователь указал.
 
-   Следующий код показывает, как узнать, был ли вводиться коммутатор командной строки MySwitch пользователем:
+   В следующем коде показано, как определить, была ли указана пользователем команда Мисвитч в командной строке:
 
 ```csharp
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));
@@ -66,11 +65,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ```
 
- Вы несете ответственность за проверку коммутаторов командной строки при загрузке пакета.
+ Вы обязаны проверять параметры командной строки каждый раз при загрузке пакета.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Параметры командной строки для Devenv](../ide/reference/devenv-command-line-switches.md)
-- [Создание утилиты PkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. Файлы Pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [Служебная программа CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
+- [. Файлы pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

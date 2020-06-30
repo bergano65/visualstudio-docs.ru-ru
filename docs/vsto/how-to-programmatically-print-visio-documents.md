@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программная печать документов Visio
+title: Руководство. Программная печать документов Visio
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e31a55e49d42311b5ec5fff82769584cc55ce09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955872"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537804"
 ---
-# <a name="how-to-programmatically-print-visio-documents"></a>Практическое руководство. Программная печать документов Visio
+# <a name="how-to-programmatically-print-visio-documents"></a>Руководство. Программная печать документов Visio
   Можно напечатать полный документ Microsoft Office Visio или только определенную страницу.
 
  Подробные сведения о методах печати см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) и метода [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) .
@@ -47,10 +47,10 @@ ms.locfileid: "62955872"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#9)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Visio](../vsto/visio-solutions.md)
-- [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)
-- [Практическое руководство. Программное создание документов Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Практическое руководство. Открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Практическое руководство. Программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Практическое руководство. Программное сохранение документов Visio](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
+- [Как программно создавать новые документы Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Руководство. Программное открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Руководство. программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Как программно сохранять документы Visio](../vsto/how-to-programmatically-save-visio-documents.md)

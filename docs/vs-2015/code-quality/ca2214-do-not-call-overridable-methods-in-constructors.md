@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662911"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534463"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: не вызывайте переопределяемые методы в конструкторах
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214. Не вызывайте переопределяемые методы в конструкторах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
@@ -45,7 +45,7 @@ ms.locfileid: "72662911"
  Для этого правила отключать вывод предупреждений не следует. Конструктор должен быть переработан, чтобы исключить вызов виртуального метода.
 
 ## <a name="example"></a>Пример
- В следующем примере показан результат нарушения этого правила. Тестовое приложение создает экземпляр `DerivedType`, что приводит к выполнению его базового класса (`BadlyConstructedType`). Конструктор `BadlyConstructedType` неправильно вызывает виртуальный метод `DoSomething`. Как видно из выходных данных, `DerivedType.DoSomething()` выполняется и делает это до выполнения конструктора `DerivedType`.
+ В следующем примере показан результат нарушения этого правила. Тестовое приложение создает экземпляр `DerivedType` , который приводит к выполнению его базового класса ( `BadlyConstructedType` ). `BadlyConstructedType`неправильно вызывает виртуальный метод `DoSomething` . Как видно из выходных данных, `DerivedType.DoSomething()` выполняет и делает это до `DerivedType` выполнения конструктора.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
@@ -53,5 +53,5 @@ ms.locfileid: "72662911"
  В этом примере формируются следующие данные:
 
  **Вызов базового ctor.** 
-**производный DoSomething называется-Initialized? Нет** 
-**вызова производного ctor.**
+ **Производный DoSomething называется-Initialized? Не** 
+ **вызывается производный ctor.**
