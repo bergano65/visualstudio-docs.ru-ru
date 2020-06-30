@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4c5ea74a1892834b6eaaeb98277918985471ac4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253928"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544447"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям
   В этом пошаговом руководстве показано, как привязать элементы управления содержимым в настройке на уровне документа для Word к XML-данным, хранящимся в документе.
@@ -48,7 +48,7 @@ ms.locfileid: "71253928"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,7 +59,7 @@ ms.locfileid: "71253928"
 
 ### <a name="to-create-a-new-word-document-project"></a>Создание проекта документа Word
 
-1. Создайте проект документа Word с именем **емплойиконтролс**. Создайте документ для решения. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект документа Word с именем **емплойиконтролс**. Создайте документ для решения. Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]открывает новый документ Word в конструкторе и добавляет проект **емплойиконтролс** в **Обозреватель решений**.
 
@@ -77,25 +77,25 @@ ms.locfileid: "71253928"
    ||
    |-|
    |**Имя сотрудника**|
-   |**Дата найма**|
-   |**Заголовок**|
+   |**Дата приема на работу**|
+   |**Title**|
 
 4. Во втором столбце таблицы выберите первую строку (рядом с **именем сотрудника**).
 
 5. На ленте выберите вкладку **разработчик** .
 
    > [!NOTE]
-   > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки "Разработчик" на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [инструкции. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. В группе **элементы управления** нажмите кнопку с **текстом** ![плаинтекстконтентконтрол](../vsto/media/plaintextcontrol.gif "плаинтекстконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.
+6. В группе **элементы управления** нажмите кнопку с **текстом** ![плаинтекстконтентконтрол](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") , чтобы добавить в <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> первую ячейку.
 
 7. Во втором столбце таблицы выберите вторую строку (рядом с полем **Дата найма**).
 
-8. В группе **элементы управления** нажмите кнопку **выбора даты** ![датепиккерконтентконтрол](../vsto/media/datepicker.gif "датепиккерконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> к второй ячейке.
+8. В группе **элементы управления** нажмите кнопку **выбора даты** ![датепиккерконтентконтрол](../vsto/media/datepicker.gif "DatePickerContentControl") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> к второй ячейке.
 
 9. Во втором столбце таблицы выберите третью строку (рядом с **заголовком**).
 
-10. В группе **элементы управления** нажмите кнопку раскрывающегося **списка** ![дропдовнлистконтентконтрол](../vsto/media/dropdownlist.gif "дропдовнлистконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> к последней ячейке.
+10. В группе **элементы управления** нажмите кнопку раскрывающегося **списка** ![дропдовнлистконтентконтрол](../vsto/media/dropdownlist.gif "DropDownListContentControl") , чтобы добавить в <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> последнюю ячейку.
 
     Вот и весь пользовательский интерфейс для этого проекта. При запуске проекта можно ввести текст в первой строке и выбрать дату во второй строке. Следующий шаг — присоединение данных, которые будут отображаться в документе, к XML-файлу.
 
@@ -110,11 +110,11 @@ ms.locfileid: "71253928"
 
 2. В области **шаблоны** выберите **XML-файл**.
 
-3. Назовите файл **Employees. XML**, а затем нажмите кнопку **Добавить** .
+3. Присвойте файлу имя **employees.xml**, а затем нажмите кнопку **Добавить** .
 
-     В редакторе кода откроется файл **Employees. XML** .
+     Файл **employees.xml** откроется в редакторе кода.
 
-4. Замените содержимое файла **Employees. XML** следующим текстом.
+4. Замените содержимое файла **employees.xml** следующим текстом.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -127,13 +127,13 @@ ms.locfileid: "71253928"
     </employees>
     ```
 
-5. В **Обозреватель решений**выберите файл **Employees. XML** .
+5. В **Обозреватель решений**выберите файл **employees.xml** .
 
 6. В окне **Свойства** выберите свойство **действие сборки** , а затем измените значение на **внедренный ресурс**.
 
      Этот шаг внедряет XML-файл в качестве ресурса в сборку при построении проекта. Так вы получите возможность доступа к содержимому XML-файла во время выполнения.
 
-## <a name="create-an-xml-schema"></a>Создание схемы XML
+## <a name="create-an-xml-schema"></a>Создание XML-схемы
  Если вам необходимо привязать элемент управления содержимым к одному элементу в пользовательской XML-части, необязательно использовать схему XML. Однако для привязки <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> к набору значений необходимо создать схему XML, которая проверяет созданный ранее файл XML-данных. Схема XML определяет возможные значения для элемента `title`. Вы привяжете <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> к этому элементу далее в этом пошаговом руководстве.
 
 #### <a name="to-create-an-xml-schema"></a>Порядок создания схемы XML
@@ -181,14 +181,14 @@ ms.locfileid: "71253928"
     </xs:schema>
     ```
 
-6. В меню **файл** выберите команду **сохранить все** , чтобы сохранить изменения в файлах **Employees. XML** и **Employees. xsd** .
+6. В меню **файл** выберите команду **сохранить все** , чтобы сохранить изменения в **employees.xml** и в файлах **Employees. xsd** .
 
 ## <a name="attach-the-xml-schema-to-the-document"></a>Присоединение схемы XML к документу
  XML-схему необходимо присоединить к документу, чтобы привязать <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> к допустимым значениям элемента `title`.
 
-### <a name="to-attach-the-xml-schema-to-the-document--includeword_15_shortvstoincludesword-15-short-mdmd"></a>Присоединение схемы XML к документу ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])
+### <a name="to-attach-the-xml-schema-to-the-document--word_15_short"></a>Присоединение схемы XML к документу ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] )
 
-1. Активируйте **емплойиконтролс. docx** в конструкторе.
+1. Активируйте **EmployeeControls.docx** в конструкторе.
 
 2. На ленте выберите вкладку **разработчик** и нажмите кнопку **надстройки** .
 
@@ -202,7 +202,7 @@ ms.locfileid: "71253928"
 
 ### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>Добавление схемы XML к документу (Word 2010)
 
-1. Активируйте **емплойиконтролс. docx** в конструкторе.
+1. Активируйте **EmployeeControls.docx** в конструкторе.
 
 2. На ленте выберите вкладку **разработчик** .
 
@@ -232,12 +232,12 @@ ms.locfileid: "71253928"
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3. Добавьте следующий метод в класс `ThisDocument` . Этот метод получает содержимое файла данных XML, внедренного в сборку в качестве ресурса, и возвращает содержимое в виде XML-строки.
+3. Добавьте следующий метод в класс `ThisDocument`. Этот метод получает содержимое файла данных XML, внедренного в сборку в качестве ресурса, и возвращает содержимое в виде XML-строки.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4. Добавьте следующий метод в класс `ThisDocument` . Метод `AddCustomXmlPart` создает пользовательскую XML-часть, которая содержит XML-строку, передаваемую в метод.
+4. Добавьте следующий метод в класс `ThisDocument`. Метод `AddCustomXmlPart` создает пользовательскую XML-часть, которая содержит XML-строку, передаваемую в метод.
 
      Чтобы пользовательская XML-часть создавалась всего один раз, метод создает ее, только если пользовательская XML-часть с соответствующим идентификатором GUID еще не существует в документе. При первом вызове этого метода он сохраняет значение свойства <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> в строке `employeeXMLPartID`. Значение `employeeXMLPartID` строки хранится в документе, поскольку он был объявлен с помощью атрибута <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>.
 
@@ -249,7 +249,7 @@ ms.locfileid: "71253928"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Порядок привязки элементов управления содержимым к элементам в пользовательской XML-части
 
-1. Добавьте следующий метод в класс `ThisDocument` . Он привязывает каждый элемент управления содержимым к элементу в пользовательской XML-части и задает формат отображения даты <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
+1. Добавьте следующий метод в класс `ThisDocument`. Он привязывает каждый элемент управления содержимым к элементу в пользовательской XML-части и задает формат отображения даты <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -259,25 +259,25 @@ ms.locfileid: "71253928"
 
 ### <a name="to-run-your-code-when-the-document-is-opened"></a>Порядок выполнения кода после открытия документа
 
-1. Добавьте в метод `ThisDocument_Startup` класса `ThisDocument` следующий код. Этот код получает XML-строку из файла **Employees. XML** , добавляет строку XML в новую ПОЛЬЗОВАТЕЛЬСКУЮ XML-часть документа и привязывает элементы управления содержимым к элементам в пользовательской XML-части.
+1. Добавьте в метод `ThisDocument_Startup` класса `ThisDocument` следующий код. Этот код получает XML-строку из файла **employees.xml** , добавляет XML-строку в новую пользовательскую часть XML в документе и привязывает элементы управления содержимым к элементам в пользовательской XML-части.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
 
 ## <a name="test-the-project"></a>Тестирование проекта
- При открытии документа элементы управления содержимым отображают данные из элементов в пользовательской XML-части. Можно щелкнуть, <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> чтобы выбрать одно из трех допустимых значений `title` для элемента, определенных в файле **Employees. xsd** . Если изменить данные в любом из элементов управления содержимым, новые значения сохраняются в пользовательской XML-части в документе.
+ При открытии документа элементы управления содержимым отображают данные из элементов в пользовательской XML-части. Можно щелкнуть, <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> чтобы выбрать одно из трех допустимых значений для `title` элемента, определенных в файле **Employees. xsd** . Если изменить данные в любом из элементов управления содержимым, новые значения сохраняются в пользовательской XML-части в документе.
 
 ### <a name="to-test-the-content-controls"></a>Проверка элементов управления содержимым
 
-1. Нажмите клавишу **F5**, чтобы запустить проект.
+1. Нажмите клавишу **F5** , чтобы запустить проект.
 
 2. Убедитесь, что таблица в документе похожа на следующую таблицу. Каждая строка во втором столбце извлекается из элемента в пользовательской XML-части в документе.
 
-    |||
+    |Столбец|Значение|
     |-|-|
-    |**Имя сотрудника**|**Карина Леал**|
-    |**Дата найма**|**1 апреля 1999 г.**|
-    |**Заголовок**|**Manager**|
+    |**Имя сотрудника**|**Karina Leal**|
+    |**Дата приема на работу**|**1 апреля 1999 г.**|
+    |**Title**|**Менеджер**|
 
 3. Щелкните ячейку справа от ячейки **имя сотрудника** и введите другое имя.
 
@@ -289,38 +289,38 @@ ms.locfileid: "71253928"
 
 7. В проводнике откройте папку *\bin\Debug* в расположении проекта.
 
-8. Откройте контекстное меню для **емплойиконтролс. docx** и выберите **Переименовать**.
+8. Откройте контекстное меню для **EmployeeControls.docx** и выберите **Переименовать**.
 
-9. Назовите файл **емплойиконтролс. docx. zip**.
+9. Присвойте файлу имя **EmployeeControls.docx.zip**.
 
-     Документ **емплойиконтролс. docx** сохраняется в формате Open XML. Переименование этого документа с помощью расширения имени *ZIP* -файла позволяет проверить содержимое документа. Дополнительные сведения об Open XML см. в технической статье [Знакомство с форматами файлов Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).
+     Документ **EmployeeControls.docx** сохраняется в формате Open XML. Переименование этого документа с помощью расширения имени *ZIP* -файла позволяет проверить содержимое документа. Дополнительные сведения об Open XML см. в технической статье [Знакомство с форматами файлов Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).
 
-10. Откройте ZIP-файл **емплойиконтролс. docx** .
+10. Откройте файл **EmployeeControls.docx.zip** .
 
 11. Откройте папку **customXml** .
 
-12. Откройте контекстное меню для **Item2. XML** и выберите **Открыть**.
+12. Откройте контекстное меню для **item2.xml** и выберите **Открыть**.
 
      Этот файл содержит пользовательскую XML-часть, которая была добавлена в документ.
 
 13. Убедитесь, что элементы `name`, `hireDate` и `title` содержат новые значения, введенные в элементы управления содержимым в документе.
 
-14. Закройте файл **Item2. XML** .
+14. Закройте файл **item2.xml** .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об использовании элементов управления содержимым см. в следующих разделах.
 
-- Использование всех доступных элементов управления содержимым для создания шаблона. Дополнительные сведения см. в разделе [Пошаговое руководство: Создайте шаблон с помощью элементов управления](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)содержимым.
+- Использование всех доступных элементов управления содержимым для создания шаблона. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
 
 - Изменение данных в пользовательских XML-частях при закрытии документа. При следующем открытии документа пользователем элементы управления содержимым, привязанные к XML-элементам, покажут новые данные.
 
-- Использование элементов управления содержимым для защиты частей документов. Дополнительные сведения см. в разделе [Практическое руководство. Защита частей документов с помощью элементов управления](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)содержимым.
+- Использование элементов управления содержимым для защиты частей документов. Дополнительные сведения см. [в разделе руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Элементы управления содержимым](../vsto/content-controls.md)
-- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
+- [Как добавить элементы управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Пошаговое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)

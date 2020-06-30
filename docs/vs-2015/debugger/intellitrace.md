@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace | Документация Майкрософт
+title: IntelliTrace | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586622"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543927"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,20 +44,20 @@ ms.locfileid: "82586622"
   
   IntelliTrace можно использовать в выпуске Visual Studio Enterprise (но не в выпусках Professional или Community).  
   
-## <a name="what-do-you-want-to-do"></a>Выбор действия  
+## <a name="what-do-you-want-to-do"></a>Выберите действие  
   
-|||  
+|Сценарий|Статьи|  
 |-|-|  
-|**Отладка приложения с помощью IntelliTrace**<br /><br /> — Показать предыдущие события.<br />— Показать сведения о вызовах с прошлыми событиями.<br />— Сохранить мой сеанс IntelliTrace.<br />— Управление данными, собираемыми IntelliTrace.|-   [Пошаговое руководство. использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Функции IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Отладка с предысторией](../debugger/historical-debugging.md)|  
+|**Отладка приложения с помощью IntelliTrace**<br /><br /> — Показать предыдущие события.<br />— Показать сведения о вызовах с прошлыми событиями.<br />— Сохранить мой сеанс IntelliTrace.<br />— Управление данными, собираемыми IntelliTrace.|-   [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Отладка с ведением журнала](../debugger/historical-debugging.md)|  
 |**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|-   [Сбор дополнительных диагностических данных в ручных тестах](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-|**Сбор данных IntelliTrace из развернутых приложений**|-   [Использование автономного сборщика IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
+|**Сбор данных IntelliTrace из развернутых приложений**|-   [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Запуск отладки из файла журнала IntelliTrace (файл .iTrace)**|-   [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Какие приложения можно отлаживать с помощью IntelliTrace?  
   
-|||  
+|Уровень поддержки|Типы приложений|  
 |-|-|  
-|**Поддерживается**|— Visual Basic и приложения Visual C#, использующие .NET Framework 2,0 или более поздних версий.<br />     Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br />     Сведения об отладке приложений SharePoint с помощью IntelliTrace см. в разделе [Пошаговое руководство. Отладка приложения SharePoint с использованием IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Сведения об отладке приложений Microsoft Azure с помощью IntelliTrace см. в разделе [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Поддерживается**|— Visual Basic и приложения Visual C#, использующие .NET Framework 2,0 или более поздних версий.<br />     Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br />     Сведения об отладке приложений SharePoint с помощью IntelliTrace см. в статье [Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Сведения об отладке приложений Microsoft Azure с помощью IntelliTrace см. в статье [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Ограниченная поддержка**|— Приложения F # на экспериментальной основе<br />— Приложения Магазина Windows, поддерживаемые только для событий|  
 |**Не поддерживается**|-C++, другие языки и скрипты<br />— Службы Windows, Silverlight, Xbox или [!INCLUDE[winmobile](../includes/winmobile-md.md)] приложения|  
   
@@ -67,7 +67,7 @@ ms.locfileid: "82586622"
 ## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> Зачем выполнять отладку с помощью IntelliTrace?  
  Традиционная отладка или отладка *в реальном времени* отображает только текущее состояние приложения с ограниченными данными о прошлых событиях. Необходимо либо сделать вывод об этих событиях на основании текущего состояния приложения, либо создать заново эти события, повторно запустив приложение.  
   
- IntelliTrace расширяет эти традиционные возможности отладки, записывая конкретные события и данные в определенные периоды времени. Это позволяет увидеть, что произошло в приложении, не перезапуская его, особенно если место возникновения ошибки было пропущено. IntelliTrace по умолчанию включается во время традиционной отладки и автоматически и незаметно собирает данные. Это позволяет легко переключаться между традиционной отладкой и отладкой с помощью IntelliTrace для просмотра записанной информации. См. раздел [функции IntelliTrace](../debugger/intellitrace-features.md) и [какие данные собираются IntelliTrace?](#WhatData)  
+ IntelliTrace расширяет эти традиционные возможности отладки, записывая конкретные события и данные в определенные периоды времени. Это позволяет увидеть, что произошло в приложении, не перезапуская его, особенно если место возникновения ошибки было пропущено. IntelliTrace по умолчанию включается во время традиционной отладки и автоматически и незаметно собирает данные. Это позволяет легко переключаться между традиционной отладкой и отладкой с помощью IntelliTrace для просмотра записанной информации. См. статьи [Функции IntelliTrace](../debugger/intellitrace-features.md) и [Какие данные собирает IntelliTrace?](#WhatData)  
   
  IntelliTrace также может помочь в отладке ошибок, которые трудно воспроизводимы или происходят в развертывании. Можно собирать данные IntelliTrace и сохранять их в файл журнала IntelliTrace (файл .iTrace). Файл .iTrace содержит сведения об исключениях, событиях производительности, запросах через Интернет, тестовых данных, потоках, модулях и другую системную информацию. Можно открыть этот файл в Visual Studio Enterprise, выбрать элемент и начать отладку с помощью IntelliTrace. Это позволяет перейти к любому событию в файле и просматривать конкретные сведения о приложении на этот момент времени.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "82586622"
   
    Для веб-приложений ASP.NET, размещенных в IIS 7.0, 7.5 и 8.0, и приложений SharePoint 2010 и SharePoint 2013 используйте Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 для сохранения данных IntelliTrace в ITRACE-файл.  
   
-   Этот метод полезен при диагностике проблем с приложениями в развертывании. См. раздел [Использование автономного сборщика IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+   Этот метод полезен при диагностике проблем с приложениями в развертывании. См. статью об [использовании автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a> Какие данные собирает IntelliTrace?  
  **Сбор сведений о событиях**  
@@ -124,7 +124,7 @@ ms.locfileid: "82586622"
   
   - обработанных исключений, если исключение создано и перехвачено;  
   
-  - Необработанные исключения  
+  - необработанных исключений.  
   
 - **События .NET Framework**  
   
@@ -140,13 +140,13 @@ ms.locfileid: "82586622"
   
    При открытии ITRACE-файла введите идентификатор корреляции SharePoint для поиска соответствующего веб-запроса, просмотра записанных событий и запуска отладки из указанного события. Если файл содержит необработанные исключения, можно выбрать идентификатор корреляции для запуска отладки исключения.  
   
-   См.  
+   Пример  
   
   - [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
   - [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Сбор сведений о вызовах функций**  
   
@@ -175,7 +175,7 @@ ms.locfileid: "82586622"
  Сбор сведений о вызовах может значительно замедлить выполнение приложения. Это также может увеличить размер любых файлов журнала IntelliTrace (ITRACE-файлов), которые сохраняются на диск. Чтобы свести к минимуму указанные эффекты, собирайте информацию о вызовах только в важных для вас модулях.  Чтобы изменить максимальный размер ITRACE-файлов, последовательно выберите **Сервис**, **Параметры**, **IntelliTrace**, **Дополнительно**. См. раздел [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>Содержание раздела  
- [Функции IntelliTrace](../debugger/intellitrace-features.md)  
+ [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   

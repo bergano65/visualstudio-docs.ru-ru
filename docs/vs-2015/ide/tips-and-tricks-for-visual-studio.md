@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299919"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542991"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по работе в Visual Studio
 
@@ -36,11 +36,11 @@ ms.locfileid: "74299919"
 
 - [Отладка](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
-- [Управление жизненным циклом приложения](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Управление жизненным циклом приложений](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a> Управление окнами
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a> Управление окнами
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Перетащить с плавающих наборов вкладок|CTRL+щелкнуть для выделения нескольких элементов|
 |Развернуть плавающее окно|Дважды щелкнуть заголовок окна|
@@ -49,9 +49,9 @@ ms.locfileid: "74299919"
 |Показать список открытых файлов|CTRL+ALT+СТРЕЛКА ВНИЗ|
 |Показать все плавающие окна|CTRL+SHIFT+M|
 
-## <a name="BKMK_WindowShortcuts"></a> Сочетания клавиш окна
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Сочетания клавиш для окон
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Переместить или закрепить плавающие окна|WIN+СТРЕЛКА ВЛЕВО или WIN+СТРЕЛКА ВПРАВО|
 |Развернуть или свернуть окна|WIN+СТРЕЛКА ВВЕРХ или WIN+СТРЕЛКА ВНИЗ|
@@ -59,9 +59,9 @@ ms.locfileid: "74299919"
 |Запустить новый экземпляр|WIN+SHIFT+N|
 |Переключиться между окнами|WIN+N|
 
-## <a name="BKMK_Search"></a> Поиск в Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Поиск в Visual Studio
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Искать в обозревателе решений|CTRL+;|
 |Поместить фокус в поле поиска в любом окне инструментов|ALT+`, когда окно инструментов имеет фокус|
@@ -69,12 +69,12 @@ ms.locfileid: "74299919"
 |Быстрый запуск — задание области результатов|— @opt Параметры<br />— @cmd Команды<br />— @mru Самые последние использовавшиеся<br />— @doc Открытие документов|
 |Искать в "Инструменты" > "Параметры"|Ctrl+E|
 
-## <a name="BKMK_EditorFind"></a> Поиск в редакторе
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Поиск в редакторе
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Быстрый поиск|CTRL+F|
-|Быстрый поиск — следующий результат|ВВОД|
+|Быстрый поиск — следующий результат|Введите:|
 |Быстрый поиск — предыдущий результат|SHIFT+ВВОД|
 |Быстрый поиск — развернуть раскрывающийся список|Alt+Вниз|
 |Закрыть поиск|ESC|
@@ -84,9 +84,9 @@ ms.locfileid: "74299919"
 |Поиск в файлах|Ctrl+Shift+F|
 |Заменить в файлах|Ctrl+Shift+H|
 
-## <a name="BKMK_CodeEditor"></a> Редактор кода
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Редактор кода
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Режим предложений IntelliSense|CTRL+ALT+ПРОБЕЛ (переключение)|
 |Принудительно показывать IntelliSense|CTRL+J|
@@ -94,7 +94,7 @@ ms.locfileid: "74299919"
 |Выбор фрагментов кода|CTRL+K,X или ?,TAB (VB)|
 |Окружить|CTRL+K,S|
 |Показать краткие сведения|CTRL+K,I|
-|Функция "Перейти к"|CTRL+,|
+|Перейти к|CTRL+,|
 |Перейти к определению|F12|
 |Показать определение|ALT+F12|
 |Перейти к стеку определений|CTRL+SHIFT+8 (назад), CTRL+SHIFT+7 (вперед)|
@@ -109,18 +109,18 @@ ms.locfileid: "74299919"
 |Перемещение между несколькими результатами "Показать"|F8 и SHIFT+F8|
 |Переключение между окном редактора кода и окном "Показать определение"|SHIFT+ESC|
 
-## <a name="BKMK_Toolbars"></a> Панели инструментов
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Toolbar
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Добавить кнопки|Нажать кнопку переполнения панели инструментов|
 |Поле со списком поиска на панели инструментов "Стандартная"|CTRL+D|
 |Режим команд поля поиска|Ввести ">"|
 |Создать новый псевдоним|Команда >alias новый_псевдоним|
 
-## <a name="BKMK_Debugging"></a> Отладка
+## <a name="debugging"></a><a name="BKMK_Debugging"></a> Отладка
 
-|||
+|Команда|Сочетание клавиш|
 |-|-|
 |Начало отладки|F5|
 |Остановить отладку|SHIFT+F5|
@@ -137,12 +137,12 @@ ms.locfileid: "74299919"
 |Очистить буфер окна интерпретации|>cls|
 |Значение печати окна интерпретации|?varname|
 
-## <a name="BKMK_ALM"></a>Управление жизненным циклом приложения
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Управление жизненным циклом приложений
 
 См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).
 
 ## <a name="see-also"></a>См. также
 
-- [Блог о Visual Studio](https://devblogs.microsoft.com/visualstudio/)
-- [Блог с советами и рекомендации по Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
-- [Видео о панели инструментов Visual Studio на канале Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Блог по Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Блог советов и рекомендаций по Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Видео о панели инструментов Visual Studio на канале Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

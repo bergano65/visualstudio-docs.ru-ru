@@ -15,26 +15,26 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919222"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544005"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: идентификаторы должны иметь правильный регистр
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [CA1709: идентификаторы должны иметь правильный регистр](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при возникновении сборок, пространств имен, типов, членов и параметров.<br /><br /> Не критическое — при срабатывании параметров универсального типа.|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Имя идентификатора имеет неправильный регистр.
 
  \- или -
@@ -65,4 +65,4 @@ ms.locfileid: "75919222"
  Можно также добавить определенные термины, аббревиатуры и акронимы в пользовательский словарь анализа кода. Термины, указанные в пользовательском словаре, не приведут к нарушениям этого правила. Дополнительные сведения см. в разделе [как настроить словарь анализа кода.](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708. Идентификаторы должны отличаться не только прописными и строчными буквами](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

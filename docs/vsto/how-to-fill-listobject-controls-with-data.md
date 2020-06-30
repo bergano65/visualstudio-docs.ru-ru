@@ -1,7 +1,7 @@
 ---
 title: Как заполнить элементы управления ListObject данными
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985923"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544824"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Как заполнить элементы управления ListObject данными
   Вы можете использовать привязку данных как способ быстрого добавления данных в документ. После привязки данных к объекту-списку можно отключить этот объект-список, чтобы он отображал данные, но не был привязан к источнику данных.
@@ -56,13 +56,13 @@ ms.locfileid: "72985923"
 ## <a name="compile-the-code"></a>Компиляция кода
  В этом примере кода предполагается, что в листе, в котором этот код появляется, имеется существующий элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с именем `list1` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Как сопоставлять столбцы ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
-- [Элемент управления ListObject](../vsto/listobject-control.md)
+- [ListObject - элемент управления](../vsto/listobject-control.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Как заполнить листы данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [Как заполнить документы данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)

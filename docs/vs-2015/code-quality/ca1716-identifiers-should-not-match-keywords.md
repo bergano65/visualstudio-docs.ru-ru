@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669104"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543706"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: идентификаторы не должны совпадать с ключевыми словами
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716. Идентификаторы не должны совпадать с ключевыми словами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
@@ -46,10 +46,10 @@ ms.locfileid: "72669104"
 
 - C++/CLI
 
-  Сравнение без учета регистра используется для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ключевых слов, и для других языков используется сравнение с учетом регистра.
+  Сравнение без учета регистра используется для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ключевых слов, а для других языков используется сравнение с учетом регистра.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Выберите имя, которое не отображается в списке ключевых слов.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Предупреждение из этого правила можно отключить, если вы убедились, что идентификатор не будет путать пользователей API и что библиотека может использоваться на всех доступных языках в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Предупреждение из этого правила можно отключить, если вы убедились, что идентификатор не будет путать пользователей API и что библиотека может использоваться на всех доступных языках в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .

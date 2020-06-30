@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Отправка электронной почты программными средствами
+title: Руководство. Программная отправка электронной почты
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551758"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543264"
 ---
-# <a name="how-to-programmatically-send-email"></a>Практическое руководство. Отправка электронной почты программными средствами
+# <a name="how-to-programmatically-send-email"></a>Руководство. Программная отправка электронной почты
   В этом примере в адреса электронной почты отправляются контакты с доменным именем **example.com** .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -40,8 +40,8 @@ ms.locfileid: "69551758"
 ## <a name="robust-programming"></a>Отказоустойчивость
  Не удаляйте код фильтра, который ищет доменное имя **example.com**. При удалении фильтра решение будет отправлять сообщения всем контактам по электронной почте.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с элементами почты](../vsto/working-with-mail-items.md)
-- [Практическое руководство. Создание элемента электронной почты программным способом](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Практическое руководство. Доступ к контактам Outlook программным способом](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Руководство. программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Руководство. программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

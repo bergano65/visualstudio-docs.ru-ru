@@ -1,9 +1,9 @@
 ---
-title: '&lt;entryPoint&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент entryPoint (разработка решений Office в Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799774"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543602"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint&gt; элемент (Разработка решений Office в Visual Studio)
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент entryPoint (разработка решений Office в Visual Studio)
   Каждый элемент `entryPoint` пространства имен `vstav3` идентифицирует сборку настройки, которая должна запускаться при установке этого приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
 ## <a name="syntax"></a>Синтаксис
@@ -41,21 +41,21 @@ ms.locfileid: "62799774"
 
  Элемент `entryPoint` имеет перечисленные ниже атрибуты.
 
-|Атрибут|Описание|
+|attribute|Описание|
 |---------------|-----------------|
-|`class`|Обязательный. Идентифицирует сборку настройки для выполнения. Синтаксис для этого атрибута: *ИмяПространстваИмен.ИмяКласса*.|
+|`class`|Обязательный элемент. Идентифицирует сборку настройки для выполнения. Синтаксис для этого атрибута: *ИмяПространстваИмен.ИмяКласса*.|
 
  Объект`entryPoint` имеет следующий элемент.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Обязательный. Элемент `assemblyIdentity` в пространстве имен `vstav3` ссылается на существующий элемент `assemblyIdentity` в манифесте приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
+ Обязательный элемент. Элемент `assemblyIdentity` в пространстве имен `vstav3` ссылается на существующий элемент `assemblyIdentity` в манифесте приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
- Роль `assemblyIdentity` и его атрибуты, определенные в [ &#60;assemblyIdentity&#62; элемент &#40;приложения ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+ Роль `assemblyIdentity` и ее атрибуты определены в [&#60;assemblyIdentity&#62; элементе &#40;ClickOnce Application&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
 ### <a name="description"></a>Описание
- В приведенном ниже примере кода показан элемент `entryPoint` в манифесте приложения для решения Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+ В приведенном ниже примере кода показан элемент `entryPoint` в манифесте приложения для решения Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 
@@ -97,7 +97,7 @@ ms.locfileid: "62799774"
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
 ### <a name="description"></a>Описание
- В приведенном ниже примере кода показан элемент `entryPoint` в манифесте приложения для решения Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+ В приведенном ниже примере кода показан элемент `entryPoint` в манифесте приложения для решения Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 
@@ -112,7 +112,7 @@ ms.locfileid: "62799774"
 </vstav3:entryPoint>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

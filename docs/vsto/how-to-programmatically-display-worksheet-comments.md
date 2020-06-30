@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное отображение примечаний на листе
+title: Как программно отображать комментарии на листе
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc030fed25409f5c034abfd07f1f9358bfea593b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543368"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Практическое руководство. Программное отображение примечаний на листе
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Как программно отображать комментарии на листе
   Вы можете отображать и скрывать комментарии в листах Microsoft Office Excel программными средствами.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "62812700"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#21)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программное добавление и удаление примечаний на листе](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
-- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Руководство. Программное добавление и удаление комментариев на листе](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
+- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

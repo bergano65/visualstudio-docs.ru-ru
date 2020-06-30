@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление элементов управления NamedRange в листы
+title: Как добавить элементы управления NamedRange в листы
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0bd5f9763150cf526acca2dfdc2762b3f202950a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255613"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543524"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления NamedRange в листы
-  Элементы управления <xref:Microsoft.Office.Tools.Excel.NamedRange> можно добавлять на лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Как добавить элементы управления NamedRange в листы
+  Элементы управления <xref:Microsoft.Office.Tools.Excel.NamedRange> можно добавлять в лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "71255613"
 
 - [Добавление элементов управления NamedRange во время выполнения в проекте надстройки VSTO](#runtimeaddin)
 
-  Дополнительные сведения об <xref:Microsoft.Office.Tools.Excel.NamedRange> элементах управления см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
+  Дополнительные сведения об элементах <xref:Microsoft.Office.Tools.Excel.NamedRange> управления см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
 
-## <a name="designtime"></a>Добавление элементов управления NamedRange во время разработки
+## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a>Добавление элементов управления NamedRange во время разработки
  Существует несколько способов добавления элементов управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -71,9 +71,9 @@ ms.locfileid: "71255613"
 
 2. Перетащите одно поле из окна **Источники данных** на лист.
 
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с привязкой к данным добавится на лист. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+     Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с привязкой к данным добавится в лист. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a>Добавление элементов управления NamedRange во время выполнения в проекте уровня документа
+## <a name="add-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Добавление элементов управления NamedRange во время выполнения в проекте уровня документа
  Элементы управления <xref:Microsoft.Office.Tools.Excel.NamedRange> можно добавлять на лист программными средствами во время выполнения. Это позволяет создавать элементы управления ведущего приложения при возникновении определенных событий. Динамически созданные именованные диапазоны не сохраняются как ведущие элементы управления на листе при его закрытии. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Добавление на лист элемента управления NamedRange программными средствами
@@ -83,7 +83,7 @@ ms.locfileid: "71255613"
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
 
-## <a name="runtimeaddin"></a>Добавление элементов управления NamedRange во время выполнения в проекте надстройки VSTO
+## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Добавление элементов управления NamedRange во время выполнения в проекте надстройки VSTO
  Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO. Динамически созданные именованные диапазоны не сохраняются как ведущие элементы управления на листе при его закрытии. Дополнительные сведения см. [в разделе Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Добавление на лист элемента управления NamedRange программными средствами
@@ -93,11 +93,11 @@ ms.locfileid: "71255613"
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
-- [Практическое руководство. Изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Как изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

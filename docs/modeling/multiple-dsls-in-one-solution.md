@@ -1,18 +1,18 @@
 ---
 title: Несколько доменных языков в одном решении
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d21d3954a402e7ce8eb26c34d6a6a5c237309a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658343"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542601"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 
@@ -36,25 +36,25 @@ ms.locfileid: "72658343"
 
       `string dslProjectName = "Dsl2";`
 
-   - В решении VSIX добавьте проекты DSL * и DslPackage \*. Можно добавить каждую пару в отдельную папку решения.
+   - В решении VSIX добавьте проекты DSL * и DslPackage \* . Можно добавить каждую пару в отдельную папку решения.
 
 2. Объедините манифесты VSIX доменных языков:
 
-   1. Откройте _йоурвсикспрожект_ **\саурце.екстенсион.манифест**.
+   1. Откройте _йоурвсикспрожект_**\саурце.екстенсион.манифест**.
 
    2. Для каждого DSL выберите **Добавить содержимое** и добавьте:
 
-       - `Dsl*` проект как **компонент MEF**
+       - `Dsl*`проект как **компонент MEF**
 
-       - `DslPackage*` проект как **компонент MEF**
+       - `DslPackage*`проект как **компонент MEF**
 
-       - `DslPackage*` проект как **пакет VS**
+       - `DslPackage*`проект как **пакет VS**
 
-3. Постройте решение.
+3. Создайте решение.
 
-   Получившийся проект VSIX установит оба доменных языка. Их можно проверить с помощью клавиши F5 или развернуть _йоурвсикспрожект_ **\bin\Debug \\ \*. VSIX**.
+   Получившийся проект VSIX установит оба доменных языка. Их можно проверить с помощью клавиши F5 или развернуть _йоурвсикспрожект_**\bin\Debug \\ \* . VSIX**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)

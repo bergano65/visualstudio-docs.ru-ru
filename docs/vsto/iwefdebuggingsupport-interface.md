@@ -1,7 +1,7 @@
 ---
 title: Интерфейс IWefDebuggingSupport
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: interface
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a71adf5371275fbbdc19cdf09be96ef900ec073d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583767"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544733"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Интерфейс IWefDebuggingSupport
-  Реализуется отладочной среде, такой как Visual Studio, чтобы упростить отладку приложений для Office. Приложение Office, например Word или Excel, получает этот интерфейс из Visual Studio и затем вызывает методы в интерфейсе в определенных точках во время сеанса отладки.
+  Реализуется средой отладки, например Visual Studio, для упрощения отладки приложений для Office. Приложение Office, например Word или Excel, получает этот интерфейс из Visual Studio, а затем вызывает методы интерфейса в определенных точках во время сеанса отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,9 +37,9 @@ interface IWefDebuggingSupport : IUnknown
 ```
 
 ## <a name="methods"></a>Методы
- В следующей таблице перечислены методы, которые определяет этот интерфейс IWefDebuggingSupport.
+ В следующей таблице перечислены методы, определяемые интерфейсом IWefDebuggingSupport.
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Получает сведения о приложениях для Office, который автоматически вставляются во время отладки.|
-|[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Предоставляет идентификатор процесса, в которой выполняются расширения Framework Web (WEF) содержимое.|
+|[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Возвращает сведения о приложениях для Office, которые будут автоматически вставляться во время отладки.|
+|[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Предоставляет идентификатор процесса, который будет запускать содержимое платформы веб-расширений (WEF).|

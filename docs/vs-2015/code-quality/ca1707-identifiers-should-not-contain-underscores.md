@@ -15,26 +15,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe6b90ef971bd00392381f47860d85f34e10dc26
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919179"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544031"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: идентификаторы не должны содержать знак подчеркивания
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707. Идентификаторы не должны содержать символы подчеркивания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [CA1707: идентификаторы не должны содержать символы подчеркивания](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при возникновении сборок<br /><br /> Не критическое — при возникновении параметров типа|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Имя идентификатора содержит символ подчеркивания (_).
 
 ## <a name="rule-description"></a>Описание правила
@@ -49,6 +49,6 @@ ms.locfileid: "75919179"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708. Идентификаторы должны отличаться не только прописными и строчными буквами](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

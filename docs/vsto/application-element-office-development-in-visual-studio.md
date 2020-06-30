@@ -1,8 +1,8 @@
 ---
-title: '&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент Application (разработка решений Office в Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62942916"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543745"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;приложение&gt; элемент (Разработка решений Office в Visual Studio)
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент Application (разработка решений Office в Visual Studio)
   Элемент `application` пространства имен `vstav3` служит оболочкой для описания решений Office. Дочерние элементы настроек уровня документа и надстроек VSTO отличаются друг от друга.
 
-## <a name="syntax-for-document-level-customizations"></a>Синтаксис для настроек уровня документа
+## <a name="syntax-for-document-level-customizations"></a>Синтаксис для настроек на уровне документа
 
 ```xml
 <application>
@@ -61,7 +61,7 @@ ms.locfileid: "62942916"
  Элемент `application` имеет следующий элемент.
 
 ### <a name="customization"></a>Настройка
- Роль `customization` элемент в `vstov3` пространство имен определяется в [ &#60;настройки&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Роль `customization` элемента в `vstov3` пространстве имен определяется в [&#60;настройки&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
@@ -119,7 +119,7 @@ ms.locfileid: "62942916"
 </vstav3:application>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

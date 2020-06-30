@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f95b33e1391ca755a6c0df261fa2bd05bd3c7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663079"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544317"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: статические конструкторы должны быть частными
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121. Статические конструкторы должны быть частными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
@@ -38,7 +38,7 @@ ms.locfileid: "72663079"
 ## <a name="rule-description"></a>Описание правила
  Статический конструктор, также известный как конструктор класса, используется для инициализации типа. Система вызывает статический конструктор перед созданием первого экземпляра типа или ссылкой на любые статические члены. Пользователь не может управлять при вызове статического конструктора. Если статический конструктор не является закрытым, он может быть вызван кодом, находящимся за пределами системы. В зависимости от операций, выполняемых в конструкторе, это может стать причиной непредвиденного поведения
 
- Это правило применяется C# и Visual Basic компиляторах .NET.
+ Это правило применяется в C# и Visual Basic компиляторах .NET.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Нарушения обычно вызываются одним из следующих способов:

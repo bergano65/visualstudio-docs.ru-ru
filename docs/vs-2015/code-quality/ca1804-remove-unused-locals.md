@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 824a65e765f21748b97292beea64ea6c9bd64a1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4bd57d76acd0c46e39bb2c01449146715abc0666
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671551"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543888"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: удалите неиспользуемые локальные переменные
+# <a name="ca1804-remove-unused-locals"></a>CA1804. Удалите неиспользуемые локальные переменные
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
@@ -39,7 +39,7 @@ ms.locfileid: "72671551"
  Неиспользуемые локальные переменные и ненужные присвоения увеличивают размер сборки и снижают производительность.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите или используйте локальную переменную. Обратите внимание C# , что компилятор, включенный в [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], удаляет неиспользуемые локальные переменные при включенном параметре `optimize`.
+ Чтобы устранить нарушение этого правила, удалите или используйте локальную переменную. Обратите внимание, что компилятор C#, включенный в состав, [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] удаляет неиспользуемые локальные переменные при `optimize` включенном параметре.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Подавлять предупреждение из этого правила, если переменная была вызвана компилятором. Также можно отключить вывод предупреждений из этого правила или отключать правило, если производительность и обслуживание кода не являются основными проблемами.
@@ -51,10 +51,10 @@ ms.locfileid: "72671551"
  [!code-vb[FxCop.Performance.UnusedLocals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/vb/FxCop.Performance.UnusedLocals.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1809: избегайте чрезмерного использования локальных переменных](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809. Избегайте лишних локальных переменных](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811. Избегайте невызываемого частного кода](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: не создавайте внутренние классы без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812. Избегайте неиспользуемых внутренних классов](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801. Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)

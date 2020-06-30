@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 53c99e34bf253b0962d054685ce637c3849a2857
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa0b73b6608f0dfd5daa4b770b7d780e64704c99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671597"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544434"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724. Имена типов не должны совпадать с именами пространства имен
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|

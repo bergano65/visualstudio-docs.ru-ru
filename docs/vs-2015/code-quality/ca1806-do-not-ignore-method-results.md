@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f68ab71d9ce4fab1b0612f15d866c58e302a317e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671506"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543875"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: не игнорируйте результаты метода
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806. Не игнорируйте результаты метода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
@@ -52,7 +52,7 @@ ms.locfileid: "72671506"
 
  Если метод A вызывает метод B, но не использует новый экземпляр строки, возвращаемый методом B. Передайте экземпляр в качестве аргумента другому методу, присвойте экземпляр переменной. Или удалите вызов, если он не нужен.
 
- \- или -
+ -или-
 
  Если метод A вызывает метод B, но не использует HRESULT или код ошибки, возвращаемый методом. Используйте результат в условном операторе, присвойте результат переменной или передайте его в качестве аргумента другому методу.
 

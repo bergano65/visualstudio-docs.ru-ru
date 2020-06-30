@@ -1,23 +1,23 @@
 ---
 title: Задание фонового изображения схемы
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591961"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542588"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
 В пакете SDK визуализации и моделирования Visual Studio можно задать фоновое изображение для созданного конструктора с помощью пользовательского кода.
 
-## <a name="setting-the-background-image"></a>Установка фонового изображения
+## <a name="setting-the-background-image"></a>Настройка фонового изображения
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Установка фонового изображения для сгенерированного конструктора
 
@@ -53,7 +53,7 @@ ms.locfileid: "75591961"
 
 16. В диалоговом окне **Добавление нового элемента** в списке **шаблоны** щелкните **файл кода**.
 
-17. В поле **имя** введите `BackgroundImage.cs`и нажмите кнопку **Добавить**.
+17. В поле **имя** введите `BackgroundImage.cs` и нажмите кнопку **добавить**.
 
 18. Скопируйте указанный ниже код в файл BackgroundImage.cs, изменив пространство имен, имя класса схемы и имя ресурса файла изображения.
 
@@ -100,7 +100,7 @@ ms.locfileid: "75591961"
 
      Дополнительные сведения о настройке модели с помощью программного кода см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md)
 - [Настройка полей с текстом и изображениями](../modeling/customizing-text-and-image-fields.md)

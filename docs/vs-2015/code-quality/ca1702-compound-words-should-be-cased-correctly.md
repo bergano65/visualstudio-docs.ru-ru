@@ -15,26 +15,26 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f9dc15cec4012d2b63eb5f21c25bd709961c95c8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919240"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544083"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: для сложных слов следует использовать правильный регистр
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702. Для сложных слов следует использовать правильный регистр
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [CA1702: составные слова должны иметь правильный регистр](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при срабатывании сборок.<br /><br /> Не критическое — при срабатывании параметров типа.|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Имя идентификатора содержит несколько слов, а по крайней мере одно из слов является составным словом, которое не имеет правильного регистра.
 
 ## <a name="rule-description"></a>Описание правила
@@ -49,11 +49,11 @@ ms.locfileid: "75919240"
  Предупреждение из этого правила можно отключить, если оба фрагмента составного слова распознаются словарем правописания, и цель состоит в использовании двух слов.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708. Идентификаторы должны отличаться не только прописными и строчными буквами](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Рекомендации по именованию](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) [соглашения о прописных буквах](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9574ff022e0d5407b2683e5ba7a6b2e0cde5201e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e720c1c491e88b6d89fb4b1f0175e8bc8a56e27
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669225"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544057"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: соблюдайте правильность написания строк ресурсов
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703. Строки ресурса должны иметь правильное правописание
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
@@ -47,8 +47,8 @@ ms.locfileid: "72669225"
  Для этого правила отключать вывод предупреждений не следует. Правильно написанные слова сокращают время, необходимое для изучения новых библиотек программного обеспечения.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1701: соблюдайте правильность регистра в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA2204: литералы должны иметь правильное написание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204. Литералы должны иметь правильное правописание](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
