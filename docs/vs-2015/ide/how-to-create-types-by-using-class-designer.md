@@ -18,39 +18,39 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d05b8a492768dfe9163d7ede55c2bf4aef084c26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668029"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533150"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Для создания новых типов проектов Visual C# .NET и Visual Basic .NET используйте диаграмму классов. Сведения о существующих типах см. в статье [Практическое руководство. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md).
 
-- [Создание нового типа](#CreateType)
+- [Создать новый тип](#CreateType)
 
-- [Применение пользовательского атрибута к типу](#CustAttributeType)
+- [Применение настраиваемого атрибута к типу](#CustAttributeType)
 
 - [Применение пользовательского атрибута к члену типа](#CustAttributeMember)
 
-## <a name="CreateType"></a> Создание нового типа
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Создать новый тип
 
 1. В панели инструментов, в конструкторе классов, перетащите в диаграмму классов один из следующих элементов:
 
     - **Класс** или **абстрактный класс**
 
-    - **Enum**
+    - **Перечисление**
 
-    - **Interface**
+    - **Интерфейс**
 
     - **Структура** (VB) или **Struct** (C#)
 
-    - **Delegate**
+    - **Делегат**
 
-    - **Модуль** (только в Visual Basic)
+    - **Module** (только VB)
 
 2. Задайте имя типа. Затем выберите для него уровень доступа.
 
@@ -64,18 +64,17 @@ ms.locfileid: "72668029"
 
 4. Затем добавьте другие элементы для указания типа:
 
-    |||
+    |**Предмет**|**Добавление**|
     |-|-|
-    |**Для типа**|**Добавить**|
     |Классы, абстрактные классы, структуры или struct|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие тип|
-    |перечислениям;|Значения поля, составляющие перечисление|
-    |интерфейсов,|Методы, свойства и события, составляющие интерфейс|
-    |делегат|Параметры, определяющие делегат|
+    |Перечисления|Значения поля, составляющие перечисление|
+    |Интерфейсы|Методы, свойства и события, составляющие интерфейс|
+    |Делегат|Параметры, определяющие делегат|
     |Модуль|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие модуль|
 
      См. раздел [Создание членов](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
-## <a name="CustAttributeType"></a> Применение пользовательского атрибута к типу
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Применение пользовательского атрибута к типу
 
 1. Щелкните фигуру типа на схеме классов.
 
@@ -85,7 +84,7 @@ ms.locfileid: "72668029"
 
      По завершении пользовательские атрибуты будут применены к типу.
 
-## <a name="CustAttributeMember"></a> Применение пользовательского атрибута к члену типа
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Применение настраиваемого атрибута к члену типа
 
 1. Щелкните на схеме классов имя члена на его фигуре типа или его строку в окне "Сведения о классе".
 
@@ -95,5 +94,5 @@ ms.locfileid: "72668029"
 
      По завершении пользовательские атрибуты будут применены к типу.
 
-## <a name="see-also"></a>См. также раздел
- [Как создать наследование между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md) [как создать ассоциации между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md) [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md) [Работа с диаграммами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [Проектирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)
+## <a name="see-also"></a>См. также
+ [Как создать наследование между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md) [как создать ассоциации между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md) [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md) [Работа с схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)

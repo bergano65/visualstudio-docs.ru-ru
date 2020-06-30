@@ -2,33 +2,33 @@
 title: Обращение к Visual Studio или другим основным приложениям из текстового шаблона
 titleSuffix: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd69ae5864df9cbddd204c45975736fc4aae49e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 068de3c14240bc7e13be0e2e564c2c4e6034f987
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597260"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531421"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Доступ к Visual Studio или другим узлам из текстового шаблона
 
-В текстовом шаблоне можно использовать методы и свойства, предоставляемые узлом, который выполняет шаблон. Visual Studio приведен пример узла.
+В текстовом шаблоне можно использовать методы и свойства, предоставляемые узлом, который выполняет шаблон. Visual Studio — это пример узла.
 
 > [!NOTE]
-> Можно использовать узел методы и свойства в шаблонах обычный текст, но не в *предварительно обработанные* текстовых шаблонов.
+> Методы и свойства ведущего приложения можно использовать в обычных текстовых шаблонах, но не в *предварительно обработанных* текстовых шаблонах.
 
-## <a name="obtain-access-to-the-host"></a>Получить доступ к узлу
+## <a name="obtain-access-to-the-host"></a>Получение доступа к узлу
 
-Для доступа к узлу, задайте `hostspecific="true"` в `template` директива. Теперь можно использовать `this.Host`, имеющий тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) содержит члены, которые можно использовать для разрешения имен файлов и регистрации ошибок, например.
+Чтобы получить доступ к узлу, задайте `hostspecific="true"` в `template` директиве. Теперь можно использовать `this.Host` , который имеет тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) содержит члены, которые можно использовать для разрешения имен файлов и регистрации ошибок, например.
 
-### <a name="resolve-file-names"></a>Разрешения имен файлов
+### <a name="resolve-file-names"></a>Разрешение имен файлов
 
-Чтобы найти полный путь к файлу относительно текстового шаблона, используйте `this.Host.ResolvePath()`.
+Чтобы найти полный путь к файлу относительно текстового шаблона, используйте `this.Host.ResolvePath()` .
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -42,9 +42,9 @@ Content of myFile is:
 <#= myFile #>
 ```
 
-### <a name="display-error-messages"></a>Отображение сообщения об ошибках
+### <a name="display-error-messages"></a>Отображение сообщений об ошибках
 
-Этот пример записывает сообщения, при преобразовании шаблона. Если узел находится Visual Studio, ошибки будут добавлены **список ошибок**.
+В этом примере сообщения записываются при преобразовании шаблона. Если узел является Visual Studio, ошибки добавляются в **Список ошибок**.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -60,13 +60,13 @@ Content of myFile is:
 #>
 ```
 
-## <a name="use-the-visual-studio-api"></a>Используйте API Visual Studio
+## <a name="use-the-visual-studio-api"></a>Использование API Visual Studio
 
-Если текстовый шаблон выполняется в Visual Studio, можно использовать `this.Host` для доступа к службам, предоставляемые Visual Studio и пакеты или расширения, которые загружаются.
+Если вы выполняете текстовый шаблон в Visual Studio, вы можете использовать `this.Host` для доступа к службам, предоставляемым Visual Studio, и любым загруженным пакетам или расширениям.
 
-Значение hostspecific = «true» и приведите `this.Host` для <xref:System.IServiceProvider>.
+Задайте hostspecific = "true" и приведите `this.Host` к типу <xref:System.IServiceProvider> .
 
-В этом примере извлекаются Visual Studio API, <xref:EnvDTE.DTE>, как служба:
+В этом примере в качестве службы получается API-интерфейс Visual Studio <xref:EnvDTE.DTE> :
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -80,6 +80,6 @@ Content of myFile is:
 Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
-## <a name="use-hostspecific-with-template-inheritance"></a>Использовать hostSpecific с наследованием шаблона
+## <a name="use-hostspecific-with-template-inheritance"></a>Использование hostSpecific с наследованием шаблонов
 
-Укажите `hostspecific="trueFromBase"` при использовании `inherits` атрибут, и при наследовании из шаблона, который указывает `hostspecific="true"`. Если этого не сделать, может появиться предупреждение, свойство `Host` объявляется дважды.
+Укажите `hostspecific="trueFromBase"` , используется ли также `inherits` атрибут, и, если вы наследуете от шаблона, который указывает `hostspecific="true"` . В противном случае может появиться предупреждение компилятора о том, что свойство `Host` объявлено дважды.

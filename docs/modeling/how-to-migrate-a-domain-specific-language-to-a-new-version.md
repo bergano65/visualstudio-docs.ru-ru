@@ -1,30 +1,30 @@
 ---
 title: Практическое руководство. Перенос доменного языка в новую версию
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747543"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532615"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
-Можно выполнить миграцию проектов, определяющих и использующих доменный язык, для [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] из версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], которая была распространена с [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+Проекты, которые определяют и используют доменный язык, можно перенести [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] из версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , которая была распространена с помощью [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- Средство миграции предоставляется в составе [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Средство преобразует проекты и решения Visual Studio, использующие или определяющие средства DSL.
+ Средство миграции предоставляется в составе [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . Средство преобразует проекты и решения Visual Studio, использующие или определяющие средства DSL.
 
  Средство миграции необходимо запускать явным образом: оно не запускается автоматически при открытии решения в Visual Studio. Этот инструмент и подробные рекомендации можно найти по следующим адресам:
 
- **% Program Files%\Microsoft Visual Studio 2010 Сдк\висуалстудиоинтегратион\тулс\дслтулс\дслпрожектсмигратионтул.ЕКСЕ**
+ **% Program Files%\Microsoft SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exeVisual Studio 2010**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Перед миграцией проектов DSL
- Средство миграции изменяет файлы проекта Visual Studio ( **. csproj**) и файлы решения (**SLN**).
+ Средство миграции изменяет файлы проекта Visual Studio (**. csproj**) и файлы решения (**SLN**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Подготовка проектов к миграции.
 
@@ -40,7 +40,7 @@ ms.locfileid: "72747543"
 
    - Можно дважды щелкнуть инструмент в проводнике (или проводнике) или запустить средство из командной строки. Средство находится в этом расположении:
 
-        **%ProgramFiles%\Microsoft Visual Studio 2010 Сдк\висуалстудиоинтегратион\тулс\дслтулс\дслпрожектсмигратионтул.ЕКСЕ**
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2. Выберите папку, содержащую решения и проекты, которые необходимо преобразовать.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72747543"
 
    1. Нажмите кнопку **преобразовать**.
 
-        Перед преобразованием каждого файла проекта копия _Project_ **. csproj** сохраняется как _Project_ **. VS2008. csproj.**
+        Перед преобразованием каждого файла проекта копия _Project_**. csproj** сохраняется как _Project_**. VS2008. csproj.**
 
-        Копия каждого _решения_ **. sln** сохраняется как _Solution_ **. VS2008. sln**
+        Копия каждого _решения_**. sln** сохраняется как _Solution_**. VS2008. sln**
 
    2. Исследовать все неудачные преобразования, о которых сообщается.
 
@@ -84,6 +84,6 @@ ms.locfileid: "72747543"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Связанные записи блога](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [Связанные записи в блогах](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
