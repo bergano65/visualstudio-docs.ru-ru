@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 519faf2d49cb74d60d342d6bcf449f211076b0b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661086"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546761"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: не перегружайте оператор равенства для ссылочных типов
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046. Не перегружайте оператор равенства для ссылочных типов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
@@ -56,11 +56,12 @@ ms.locfileid: "72661086"
 
  В этом примере формируются следующие данные:
 
- **a = New (2, 2) и b = New (2, 2) равны? **@No__t_1**c и a не равны? Да** 
-**б и a = =? Нет** 
-**c и a = =? Да**
+ **a = New (2, 2) и b = New (2, 2) равны? ** 
+ **C и a не равны? Да** 
+ **б и a = = =? Нет** 
+ **c и a = = =? Да**
 ## <a name="related-rules"></a>Связанные правила
- [CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013. Перегружайте оператор равенства при перегрузке операторов сложения и вычитания](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Операторы равенства](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+## <a name="see-also"></a>См. также
+ <xref:System.Object.Equals%2A?displayProperty=fullName>[Операторы равенства](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

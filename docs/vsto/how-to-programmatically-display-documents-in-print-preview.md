@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное отображение документов в режиме предварительного просмотра
+title: Руководство. программное отображение документов в режиме предварительного просмотра
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813040"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545916"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Практическое руководство. Программное отображение документов в режиме предварительного просмотра
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Руководство. программное отображение документов в режиме предварительного просмотра
   Если решение создает отчет, может потребоваться отображение отчета пользователю в режиме предварительного просмотра отчета.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="procedures-for-document-level-customizations"></a>Процедуры для настроек уровня документа
+## <a name="procedures-for-document-level-customizations"></a>Процедуры для настроек на уровне документа
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Отображение документа в режиме предварительного просмотра путем вызова метода PrintPreview
 
@@ -57,7 +57,7 @@ ms.locfileid: "62813040"
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Программная печать документов](../vsto/how-to-programmatically-print-documents.md)
-- [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Практическое руководство. Программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. Программная печать документов](../vsto/how-to-programmatically-print-documents.md)
+- [Руководство. Программное открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Руководство. Программное создание новых документов](../vsto/how-to-programmatically-create-new-documents.md)

@@ -1,7 +1,7 @@
 ---
 title: Манифесты развертывания для решений Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972399"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547554"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Манифесты развертывания для решений Office
-  Манифест развертывания — это XML-файл, который описывает параметры развертывания решения Office и определяет текущую версию приложения.
+  Манифест развертывания — это XML-файл, описывающий параметры развертывания решения Office и определяющий текущую версию приложения.
 
- Разработка решений Office в Visual Studio использует [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схемы манифеста развертывания, определенные в [манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) ссылки.
+ Разработка решений Office в Visual Studio использует [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифеста развертывания, определенную в справочнике по [манифесту развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Примечания
- Файл манифеста развертывания для решений Office, определяет текущую версию и другие настройки развертывания. Он ссылается на манифест приложения и описывает текущую версию решения и все файлы в рамках решения.
+## <a name="remarks"></a>Комментарии
+ Файл манифеста развертывания для решений Office определяет текущую версию и другие параметры развертывания. Он ссылается на манифест приложения и описывает текущую версию решения и все файлы в решении.
 
 ## <a name="file-name-syntax"></a>Синтаксис имени файла
- Имя файла манифеста развертывания должно заканчиваться *.vsto* расширения. Несмотря на то, что это стандартный [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] манифест развертывания, расширение, которое позволяет Visual Studio Tools для Office runtime для обработки файла.
+ Имя файла манифеста развертывания должно заканчиваться расширением *VSTO* . Несмотря на то, что это стандартный [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] манифест развертывания, расширение отличается, позволяя инструменты Visual Studio для среды выполнения Office работать с файлом.
 
 ## <a name="example"></a>Пример
- В следующем примере кода показан манифест развертывания для Visual Studio Tools для решения Office.
+ В следующем примере кода показан манифест развертывания для решения Инструменты Visual Studio для Office.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -183,6 +183,6 @@ ms.locfileid: "62972399"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: Экспорт схем в виде изображений
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -11,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547606"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 
-В Visual Studio можно сохранять схемы моделирования в форматах только для чтения, чтобы вы могли поделиться ими с заинтересованными лицами, пользователями или членами группы проекта, которые не используют одну и ту же версию Visual Studio.
+В Visual Studio можно сохранять схемы моделирования в форматах только для чтения, чтобы иметь возможность совместно использовать их с заинтересованными лицами, пользователями или членами проектной группы, использующими другие версии Visual Studio.
 
 Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. раздел [Поддержка архитектуры и средств моделирования в выпуске](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -38,9 +38,9 @@ ms.locfileid: "75596623"
 
 2. В списке **имя** выберите **средство записи документов XPS (Майкрософт**) и нажмите кнопку **ОК**.
 
-3. В диалоговом окне **Сохранение файла как** сохраните файл в формате **XPS-документа (\*. XPS)** .
+3. В диалоговом окне **Сохранение файла как** сохраните файл в формате XPS- ** \* документа** .
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Создание моделей для приложения](../modeling/create-models-for-your-app.md)
 - [Общий доступ к моделям и экспорт схем](../modeling/share-models-and-exporting-diagrams.md)

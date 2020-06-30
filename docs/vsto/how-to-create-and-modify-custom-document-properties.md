@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Создание и изменение настраиваемых свойств документа
+title: Как создавать и изменять пользовательские свойства документа
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dd4f4ada36be4ef7b70f4f32d659abb10c8a62a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825798"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547216"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Практическое руководство. Создание и изменение настраиваемых свойств документа
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Как создавать и изменять пользовательские свойства документа
   Перечисленные выше приложения Microsoft Office предоставляют встроенные свойства, которые хранятся в документах. Кроме того, можно создавать и изменять настраиваемые свойства документа при наличии дополнительных сведений, которые необходимо хранить вместе с документом.
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "62825798"
 ## <a name="robust-programming"></a>Отказоустойчивость
  При попытке доступа к свойству `Value` для неопределенного свойства возникает исключение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
-- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
-- [Практическое руководство. Чтение и запись в свойства документа](../vsto/how-to-read-from-and-write-to-document-properties.md)
+- [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
+- [Руководство. чтение и запись в свойства документа](../vsto/how-to-read-from-and-write-to-document-properties.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661964"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546670"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: используйте свойства, если это уместно
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024. По возможности используйте свойства
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
@@ -33,7 +33,7 @@ ms.locfileid: "72661964"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный метод имеет имя, которое начинается с `Get`, не принимает параметров и возвращает значение, которое не является массивом.
+ Открытый или защищенный метод имеет имя, начинающееся с `Get` , не принимает параметров и возвращает значение, которое не является массивом.
 
 ## <a name="rule-description"></a>Описание правила
  В большинстве случаев свойства представляют данные и методы выполняют действия. Доступ к свойствам аналогичен полям, что упрощает их использование. Метод является хорошим кандидатом для того, чтобы стать свойством при наличии одного из следующих условий:
@@ -67,7 +67,7 @@ ms.locfileid: "72661964"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>Управление развертыванием свойств в отладчике
  Одна из причин того, что программисты не используют свойство, заключается в том, что они не хотят, чтобы отладчик выводил его на автоматическое расширение. Например, свойство может включать выделение большого объекта или вызов P/Invoke, но на самом деле он может не иметь наблюдаемых побочных эффектов.
 
- Можно запретить отладчику автоматическое расширение свойств, применив <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. В следующем примере показан этот атрибут, применяемый к свойству экземпляра.
+ Можно запретить отладчику автоматическое развертывание свойств путем применения <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> . В следующем примере показан этот атрибут, применяемый к свойству экземпляра.
 
 ```vb
 Imports System

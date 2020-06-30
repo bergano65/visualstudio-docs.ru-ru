@@ -1,7 +1,7 @@
 ---
 title: Добавление пользовательских свойств в схемы зависимостей
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590596"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546922"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
 
@@ -22,11 +22,11 @@ ms.locfileid: "75590596"
 
 ## <a name="non-visible-properties"></a>Свойства, не являющиеся видимыми
 
-Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В [ILayerElement](/previous-versions/ff644511(v=vs.140)) есть словарь с именем `Properties`. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
+Если требуется, чтобы код прикрепляет значения к любому элементу на схеме зависимостей, не нужно определять компонент MEF. В Илайерелемент есть словарь с `Properties` именем [ILayerElement](/previous-versions/ff644511(v=vs.140)). Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть схемы зависимостей.
 
 ## <a name="editable-properties"></a>Редактируемые свойства
 
-**Начальная подготовка**
+**Предварительная подготовка**
 
 > [!IMPORTANT]
 > Чтобы отобразить свойства, внесите следующие изменения на каждом компьютере, где должны отображаться свойства слоя:
@@ -38,7 +38,7 @@ ms.locfileid: "75590596"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. В разделе **инструменты Visual Studio** меню Пуск приложения Visual Studio откройте **Командная строка разработчика**. Введите следующие команды:
+> 3. В разделе **инструменты Visual Studio** меню Пуск приложения Visual Studio откройте **Командная строка разработчика**. Введите:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -63,11 +63,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Можно определить свойства для [илайерелемент](/previous-versions/ff644511(v=vs.140)) или любого из его производных классов, которые включают:
 
-- `ILayerModel` — модель
+- `ILayerModel`— модель
 
-- `ILayer` — каждый слой
+- `ILayer`— Каждый слой
 
-- `ILayerDependencyLink`-ссылки между слоями
+- `ILayerDependencyLink`— связи между слоями;
 
 - `ILayerComment`
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение схем зависимостей](../modeling/extend-layer-diagrams.md)

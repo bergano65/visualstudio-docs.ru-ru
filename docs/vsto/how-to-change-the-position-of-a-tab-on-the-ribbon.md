@@ -1,7 +1,7 @@
 ---
 title: Как изменить позицию вкладки на ленте
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985991"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544863"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Как изменить позицию вкладки на ленте
   Порядок пользовательских вкладок на ленте можно изменить с помощью **редактора коллекции вкладок**. Вы можете располагать пользовательские вкладки до или после встроенной вкладки на ленте. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении. Например, вкладка « **данные** » является встроенной вкладкой Excel.
@@ -56,7 +56,7 @@ ms.locfileid: "72985991"
 
      Список идентификаторов элементов управления см. в разделе [файлы справки office 2010: идентификаторы элементов управления пользовательского интерфейса Fluent Office](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
 - [XML-ленты](../vsto/ribbon-xml.md)

@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6bffa680fa39014ffa96feec997b5eca63ee08ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5eb16130aef42abcf9fddf533d0253864a75114
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610212"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546410"
 ---
-# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: прозрачные методы не должны быть снабжены атрибутом SuppressUnmanagedCodeSecurityAttribute
+# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145. Прозрачные методы не должны быть отмечены атрибутом SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|транспарентмесодсшаулднотусесуппрессунманажедкодесекурити|
 |CheckId|CA2145|
@@ -29,13 +29,13 @@ ms.locfileid: "72610212"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный метод, метод, помеченный методом <xref:System.Security.SecuritySafeCriticalAttribute>, или тип, содержащий метод, помечены атрибутом <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>.
+ Прозрачный метод, метод, помеченный <xref:System.Security.SecuritySafeCriticalAttribute> методом, или тип, содержащий метод, помечены <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибутом.
 
 ## <a name="rule-description"></a>Описание правила
- Методы, снабженные атрибутом <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>, имеют неявную проверку LinkDemand, накладываемую на любой метод, который его вызывает. Для этой проверки LinkDemand требуется, чтобы вызывающий код был критическим с точки зрения безопасности. Пометка метода, использующего SuppressUnmanagedCodeSecurity с атрибутом <xref:System.Security.SecurityCriticalAttribute>, делает это требование более очевидным для вызывающих объектов метода.
+ Методы, отмеченные <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> атрибутом, имеют неявное требование LinkDemand, накладываемое любым методом, который его вызывает. Для этой проверки LinkDemand требуется, чтобы вызывающий код был критическим с точки зрения безопасности. Пометка метода, использующего SuppressUnmanagedCodeSecurity с <xref:System.Security.SecurityCriticalAttribute> атрибутом, делает это требование более очевидным для вызывающих объектов метода.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, пометьте метод или тип атрибутом <xref:System.Security.SecurityCriticalAttribute>.
+ Чтобы устранить нарушение этого правила, пометьте метод или тип <xref:System.Security.SecurityCriticalAttribute> атрибутом.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.

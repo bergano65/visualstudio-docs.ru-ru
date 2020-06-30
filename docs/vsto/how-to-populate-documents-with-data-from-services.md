@@ -1,7 +1,7 @@
 ---
 title: Как заполнить документы данными из служб
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985872"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547151"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Как заполнить документы данными из служб
 
@@ -45,11 +45,11 @@ ms.locfileid: "72985872"
 
      Используемые методы зависят от того, что предлагает веб-служба.
 
-6. Назначьте ответ данных от веб-службы свойству <xref:System.Windows.Forms.BindingSource.DataSource%2A> <xref:System.Windows.Forms.BindingSource>.
+6. Назначьте ответ данных от веб-службы <xref:System.Windows.Forms.BindingSource.DataSource%2A> свойству объекта <xref:System.Windows.Forms.BindingSource> .
 
 При запуске проекта элемент управления отображает первую запись в источнике данных. Вы можете включить прокрутку записей посредством обработки текущих событий, используя объекты в <xref:System.Windows.Forms.BindingSource>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)

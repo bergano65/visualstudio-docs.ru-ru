@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 212abc1fa5e2debfaf7ca81d82c8d94e9ddb0879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658879"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545227"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: для перезагрузок оператора существуют дополнения с именами
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225. Для перегрузок операторов существуют варианты с именами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
@@ -44,11 +44,11 @@ ms.locfileid: "72658879"
 |---------|------------------|-----------|--------------------|
 |+ (двоичный)|+|+ (двоичный)|Add|
 |+=|+=|+=|Add|
-|&|и|&|BitwiseAnd|
+|&|И|&|BitwiseAnd|
 |&=|И =|&=|BitwiseAnd|
-|&#124;|Или|&#124;|BitwiseOr|
-||=|Или =||=|BitwiseOr|
-|--|Н/Д|--|Decrement|
+|&#124;|либо|&#124;|BitwiseOr|
+|&#124;=|Или =|&#124;=|BitwiseOr|
+|--|Недоступно|--|Decrement|
 |/|/|/|Divide|
 |/=|/=|/=|Divide|
 |==|=|==|Равно|
@@ -56,34 +56,34 @@ ms.locfileid: "72658879"
 |^=|XOR =|^=|Xor|
 |>|>|>|Сравнение|
 |>=|>=|>=|Сравнение|
-|++|Н/Д|++|Increment|
+|++|Недоступно|++|Приращение|
 |<>|!=|Равно|
 |<<|<<|<<|лефтшифт|
 |<<=|<<=|<<=|лефтшифт|
 |<|<|<|Сравнение|
 |<=|<=|\<=|Сравнение|
-|&&|Н/Д|&&|LogicalAnd|
-|&#124;&#124;|Н/Д|&#124;&#124;|Логический|
-|!|Н/Д|!|логикалнот|
+|&&|Недоступно|&&|LogicalAnd|
+|&#124;&#124;|Недоступно|&#124;&#124;|Логический|
+|!|Недоступно|!|логикалнот|
 |%|Mod|%|Mod или остаток|
-|%=|Н/Д|%=|Mod|
+|%=|Недоступно|%=|Mod|
 |* (двоичный)|*|*|Multiply|
-|*=|Н/Д|*=|Multiply|
-|~|not|~|онескомплемент|
+|*=|Недоступно|*=|Multiply|
+|~|Not|~|онескомплемент|
 |>>|>>|>>|Правая клавиша SHIFT|
-=|Н/Д|>>=|Правая клавиша SHIFT|
+=|Недоступно|>>=|Правая клавиша SHIFT|
 |-(двоичный)|-(двоичный)|-(двоичный)|Subtract|
-|-=|Н/Д|-=|Subtract|
-|true|IsTrue|Н/Д|IsTrue (свойство)|
-|— (унарные)|Н/Д|-|Negate|
-|+ (унарный)|Н/Д|+|плюс|
-|Ложь|IsFalse|False|IsTrue (свойство)|
+|-=|Недоступно|-=|Subtract|
+|Да|IsTrue|Недоступно|IsTrue (свойство)|
+|— (унарные)|Недоступно|-|Negate|
+|+ (унарный)|Недоступно|+|Плюс|
+|false|IsFalse|False|IsTrue (свойство)|
 
  N/A = = не может быть перегружен на выбранном языке.
 
- Правило также проверяет явные и неявные операторы приведения в типе (`SomeType`), проверяя методы с именами `ToSomeType` и `FromSomeType`.
+ Правило также проверяет явные и неявные операторы приведения в типе ( `SomeType` ), проверяя методы с именами `ToSomeType` и `FromSomeType` .
 
- В C#при перегрузке бинарного оператора соответствующий оператор присваивания, если таковой имеется, также неявно перегружается.
+ В C# при перегрузке бинарного оператора соответствующий оператор присваивания, если таковой имеется, также неявно перегружается.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, реализуйте альтернативный метод для оператора. присвойте ему имя с рекомендуемым альтернативным именем.
@@ -92,17 +92,17 @@ ms.locfileid: "72658879"
  Не отключайте предупреждение из этого правила, если реализуется общая библиотека. Приложения могут игнорировать предупреждение от этого правила.
 
 ## <a name="example"></a>Пример
- В следующем примере определяется структура, нарушающая это правило. Чтобы исправить этот пример, добавьте в структуру открытый метод `Add(int x, int y)`.
+ В следующем примере определяется структура, нарушающая это правило. Чтобы исправить пример, добавьте в структуру открытый `Add(int x, int y)` метод.
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1046: не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046. Не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: перегрузки операторов должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226. Перегрузки операторов должны быть симметричными](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224. Переопределяйте Equals при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218. Переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

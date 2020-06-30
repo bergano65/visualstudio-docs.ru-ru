@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное сохранение документов Visio
+title: Как программно сохранять документы Visio
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419393"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547060"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Практическое руководство. Программное сохранение документов Visio
+# <a name="how-to-programmatically-save-visio-documents"></a>Как программно сохранять документы Visio
   Существует несколько способов сохранения документов Microsoft Office Visio.
 
 - Сохранение изменений в существующем документе.
@@ -57,7 +57,7 @@ ms.locfileid: "63419393"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]
 
-## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Сохранение документа с новым именем и заданными аргументами
+## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Сохранение документа с новым именем и указанными аргументами
  Используйте метод `Microsoft.Office.Interop.Visio.Document.SaveAsEx`, чтобы сохранить документ с новым именем, и задайте любые допустимые аргументы для применения к документу.
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Сохранение документа с новым именем и заданными аргументами
@@ -72,12 +72,12 @@ ms.locfileid: "63419393"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера кода требуется следующее.
 
-- Для сохранения документа с новым именем, каталог с именем `Test` должен быть расположен в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
+- Чтобы сохранить документ с новым именем, каталог с именем `Test` должен находиться в папке « *Мои документы* » (для Windows XP и более ранних версий) или в папке « *документы* » (для Windows Vista).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Visio](../vsto/visio-solutions.md)
-- [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)
-- [Практическое руководство. Программное создание документов Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Практическое руководство. Открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Практическое руководство. Программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Практическое руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
+- [Как программно создавать новые документы Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Руководство. Программное открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Руководство. программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)

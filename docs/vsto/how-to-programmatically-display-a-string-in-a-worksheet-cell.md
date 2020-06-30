@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное отображение строки в ячейке листа
+title: Руководство. программное отображение строки в ячейке листа
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,40 +13,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813027"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545929"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Практическое руководство. Программное отображение строки в ячейке листа
-  В этом примере показано, как для отображения текста в ячейке программными средствами. Для отображения текста в ячейке, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Руководство. программное отображение строки в ячейке листа
+  В этом примере показано, как программным способом отобразить текст в ячейке. Чтобы отобразить текст в ячейке, используйте либо <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления, либо собственный объект диапазона Excel.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange
- В этом примере используется <xref:Microsoft.Office.Tools.Excel.NamedRange> управления с именем `message`. Элемент управления необходимо добавить в настройку уровня документа во время разработки. Следующий код должен быть помещен в классе листа, не в `ThisWorkbook` класса.
+ В этом примере используется <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления с именем `message` . Элемент управления должен быть добавлен в настройку на уровне документа во время разработки. Следующий код должен быть помещен в класс листа, а не в `ThisWorkbook` класс.
 
-### <a name="to-display-text-in-a-namedrange-control"></a>Для отображения текста в элементе управления NamedRange
+### <a name="to-display-text-in-a-namedrange-control"></a>Отображение текста в элементе управления NamedRange
 
-1. Установите для параметра <xref:Microsoft.Office.Tools.Excel.NamedRange> управления **Hello World**.
+1. Присвойте <xref:Microsoft.Office.Tools.Excel.NamedRange> элементу управления значение **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
 
-## <a name="use-a-native-excel-range"></a>Используйте собственный диапазон Excel
- Следующий код создает новый диапазон программным образом и присваивает ему значение.
+## <a name="use-a-native-excel-range"></a>Использовать собственный диапазон Excel
+ Следующий код создает новый диапазон программным способом, а затем присваивает ему значение.
 
-### <a name="to-display-text-in-an-excel-range"></a>Для отображения текста в диапазон Excel
+### <a name="to-display-text-in-an-excel-range"></a>Отображение текста в диапазоне Excel
 
-1. Получить диапазон в ячейку **A1** на `Sheet1` и задайте значение **Hello World**.
+1. Получите диапазон в ячейке **a1** `Sheet1` и задайте для него значение **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>См. также
-- [Пошаговое руководство: Сбор данных с использованием формы Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+## <a name="see-also"></a>См. также раздел
+- [Пошаговое руководство. получение данных с помощью формы Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)

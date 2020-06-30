@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Заполнение документов данными из объектов
+title: Как заполнить документы данными из объектов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967726"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547177"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Практическое руководство. Заполнение документов данными из объектов
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Как заполнить документы данными из объектов
 
-Доступ к данным в объекте данных в проектах уровня документа Microsoft Office Word осуществляется точно так же, как в проектах Windows Forms. Для получения данных из объекта в решении можно использовать те же средства и компоненты кода. Также можно использовать элементы управления Windows Forms для отображения данных. Кроме того, данные можно показать с помощью элементов управления ведущего приложения. Элементы управления ведущего приложения представляют собой управляемые объекты Microsoft Office Word, дополненные событиями и функциями привязки данных. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
+Доступ к данным в объекте данных в проектах уровня документа Microsoft Office Word осуществляется точно так же, как в проектах Windows Forms. Для получения данных из объекта в решении можно использовать те же средства и компоненты кода. Также можно использовать элементы управления Windows Forms для отображения данных. Кроме того, данные можно показать с помощью элементов управления ведущего приложения. Элементы управления ведущего приложения представляют собой управляемые объекты Microsoft Office Word, дополненные событиями и функциями привязки данных. Дополнительные сведения см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "62967726"
 
 ## <a name="to-add-a-data-object"></a>Добавление объекта данных
 
-Чтобы добавить объект данных, откройте **источников данных** окно и создать источник данных из объекта. Дополнительные сведения см. в разделе [Добавление новых источников данных](../data-tools/add-new-data-sources.md).
+Чтобы добавить объект данных, откройте окно **Источники данных** и создайте источник данных из объекта. Дополнительные сведения см. в разделе [Добавление новых источников данных](../data-tools/add-new-data-sources.md).
 
 ## <a name="connect-the-data-object-to-the-bindingsource"></a>Подключение объекта данных к BindingSource
 
@@ -46,7 +46,7 @@ ms.locfileid: "62967726"
 
 ### <a name="document-level-projects"></a>Проекты уровня документа
 
-Для подключения объект данных к BindingSource:
+Чтобы подключить объект данных к BindingSource:
 
 1. Перетащите нужное поле данных из окна **Источники данных** в документ. При этом автоматически создается элемент управления.
 
@@ -56,7 +56,7 @@ ms.locfileid: "62967726"
 
 ### <a name="application-level-projects"></a>Проекты уровня приложения
 
-Для подключения объект данных к BindingSource:
+Чтобы подключить объект данных к BindingSource:
 
 1. Создайте в коде экземпляр типа объекта, связанного с источником данных.
 
@@ -66,10 +66,10 @@ ms.locfileid: "62967726"
 
 4. Добавьте источник данных как привязку данных к элементу управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Практическое руководство. Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Как заполнить документы данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

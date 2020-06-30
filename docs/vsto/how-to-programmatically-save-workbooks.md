@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное Сохранение книг Excel
+title: Как программно сохранять книги
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419486"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547086"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Практическое руководство. Программное Сохранение книг Excel
+# <a name="how-to-programmatically-save-workbooks"></a>Как программно сохранять книги
   Сохранить книгу можно несколькими способами. Можно сохранить книгу без изменения пути к файлу. Если книга не сохранялась ранее, следует сохранить книгу, указав путь. Без явного пути Microsoft Office Excel сохраняет файл в текущей папке с именем, заданным при его создании. Можно также сохранить копию книги, не изменяя открытую книгу в памяти.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63419486"
  Вы можете сохранить указанную книгу в новой папке или с новым именем, указав при необходимости формат файла, пароль, режим доступа и т. д.
 
 > [!NOTE]
-> Вы можете задать <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> свойства **False** перед сохранением книги с новым путем, так как для сохранения в некоторых форматах требуется взаимодействие. Этому свойству присвоить **False** Excel будет использовать все значения по умолчанию.
+> Может потребоваться установить <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> свойство в **значение false** перед сохранением книги с новым путем, так как сохранение в некоторых форматах требует взаимодействия. Установка этого свойства в **значение false** приводит к тому, что Excel будет использовать все значения по умолчанию.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Сохранение книги, связанной с настройкой на уровне документа
 
@@ -62,7 +62,7 @@ ms.locfileid: "63419486"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]
 
-## <a name="save-a-copy-of-the-workbook"></a>Сохранить копию книги
+## <a name="save-a-copy-of-the-workbook"></a>Сохранение копии книги
  Вы можете также сохранить копию книги в файл, не изменяя открытую книгу в памяти. Это полезно, если вам нужно создать резервную копию без изменения местоположения книги.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Сохранение книги, связанной с настройкой на уровне документа
@@ -80,12 +80,12 @@ ms.locfileid: "63419486"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]
 
 ## <a name="robust-programming"></a>Отказоустойчивость
- Интерактивная отмена любых методов, которые сохраняют или копируют книгу, вызывает ошибку времени выполнения в коде. Например, если процедура вызывает <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> метод, но не отключает запросы из Excel, и ваш пользователь нажимает кнопку **отменить** при появлении Excel, возникает ошибка времени выполнения.
+ Интерактивная отмена любых методов, которые сохраняют или копируют книгу, вызывает ошибку времени выполнения в коде. Например, если процедура вызывает <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> метод, но не отключает запросы из Excel, и пользователь нажимает кнопку **Отмена** при появлении запроса, Excel вызывает ошибку времени выполнения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с книгами](../vsto/working-with-workbooks.md)
 - [Ведущий элемент книги](../vsto/workbook-host-item.md)
-- [Практическое руководство. Программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)
+- [Руководство. программное закрытие книг](../vsto/how-to-programmatically-close-workbooks.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

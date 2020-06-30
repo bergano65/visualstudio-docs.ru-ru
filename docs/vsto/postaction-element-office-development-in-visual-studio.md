@@ -1,7 +1,7 @@
 ---
-title: '&lt;postAction&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент «действие» (разработка решений Office в Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976534"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546943"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; элемент (Разработка решений Office в Visual Studio)
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент «действие» (разработка решений Office в Visual Studio)
   Элемент `postAction` пространства имен `vstav3` содержит элементы `entrypoint` и все элементы `postActionData` , связанные с действиями после развертывания, которые выполняются после установки решений Office.
 
 ## <a name="syntax"></a>Синтаксис
@@ -42,16 +42,16 @@ ms.locfileid: "62976534"
 
  У элемента`postAction` имеются перечисленные ниже элементы.
 
-### <a name="entrypoint"></a>entrypoint
- Необязательный параметр. Роль `entryPoint` элемент в `vstav3` пространство имен определяется в [ &#60;entryPoints&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+### <a name="entrypoint"></a>entryPoint
+ Необязательный параметр. Роль `entryPoint` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Необязательный параметр. Роль `postActionData` элемент в `vstav3` пространство имен определяется в [ &#60;postActionData&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Необязательный параметр. Роль `postActionData` элемента в `vstav3` пространстве имен определяется в [&#60;постактиондата&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
-## <a name="post-deployment-action-example"></a>Пример действия после развертывания
+## <a name="post-deployment-action-example"></a>Пример действия, выполняемого после развертывания
 
 ### <a name="description"></a>Описание
- В приведенном ниже примере кода показан элемент `postAction` манифеста приложения для решения Office, развертываемого с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+ В приведенном ниже примере кода показан элемент `postAction` манифеста приложения для решения Office, развертываемого с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 
@@ -70,7 +70,7 @@ ms.locfileid: "62976534"
 </vstav3:postAction>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

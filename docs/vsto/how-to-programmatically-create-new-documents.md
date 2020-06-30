@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное создание новых документов
+title: Руководство. Программное создание новых документов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251954"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545994"
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>Практическое руководство. Программное создание новых документов
+# <a name="how-to-programmatically-create-new-documents"></a>Руководство. Программное создание новых документов
   При создании документа программным образом новый документ является собственным объектом <xref:Microsoft.Office.Interop.Word.Document>. Этот объект не имеет дополнительных событий и возможностей привязки данных, которые имеет ведущий элемент <xref:Microsoft.Office.Tools.Word.Document>. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "71251954"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>Использование настраиваемых шаблонов
- Метод имеет необязательный аргумент шаблона для создания нового документа на основе шаблона, отличного от обычного шаблона. <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Необходимо указать имя файла и полный путь к шаблону.
+ <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>Метод имеет необязательный аргумент *шаблона* для создания нового документа на основе шаблона, отличного от обычного шаблона. Необходимо указать имя файла и полный путь к шаблону.
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>Создание нового документа на основе пользовательского шаблона
 
@@ -45,8 +45,8 @@ ms.locfileid: "71251954"
      [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Открытие существующих документов программным способом](../vsto/how-to-programmatically-open-existing-documents.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. Программное открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

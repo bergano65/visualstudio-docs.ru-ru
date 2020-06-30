@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e115b4d327f1ac45673de491ceaffc90941e1111
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668180"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546787"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: не объявляйте защищенные элементы в запечатанных типах
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047. Не объявляйте защищенные члены в запечатанных типах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
@@ -33,12 +33,12 @@ ms.locfileid: "72668180"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Открытый тип — `sealed` (`NotInheritable` в Visual Basic) и объявляет защищенный член или защищенный вложенный тип. Это правило не сообщает о нарушениях для методов <xref:System.Object.Finalize%2A>, которые должны следовать этому шаблону.
+ Открытый тип — `sealed` ( `NotInheritable` в Visual Basic) и объявляет защищенный член или защищенный вложенный тип. Это правило не сообщает о нарушениях для <xref:System.Object.Finalize%2A> методов, которые должны следовать этому шаблону.
 
 ## <a name="rule-description"></a>Описание правила
  Типы объявляют защищенный члены таким образом, чтобы наследующие типы могли получить доступ к члену или переопределить его. По определению нельзя наследовать от запечатанного типа. Это означает, что нельзя вызывать защищенные методы в запечатанных типах.
 
- C# Компилятор выдает предупреждение для этой ошибки.
+ Компилятор C# выдает предупреждение об этой ошибке.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, измените уровень доступа элемента на частный или сделайте тип наследуемым.

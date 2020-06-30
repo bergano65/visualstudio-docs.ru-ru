@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление элементов управления Bookmark в документы Word
+title: Руководство. Добавление элементов управления Bookmark в документы Word
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Bookmark.Dialog
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce77736bfefdc2c2e70c489a91b147cb0d2ed74a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255986"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547255"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Практическое руководство. Добавление элементов управления Bookmark в документы Word
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Руководство. Добавление элементов управления Bookmark в документы Word
   В проектах на уровне документа элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавлять в документ во время разработки или во время выполнения. В проектах надстроек VSTO вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в любой открытый документ во время выполнения.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "71255986"
 
   Дополнительные сведения об <xref:Microsoft.Office.Tools.Word.Bookmark> элементах управления см. в разделе [элемент управления Bookmark](../vsto/bookmark-control.md).
 
-## <a name="designtime"></a>Добавление элементов управления Bookmark во время разработки
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>Добавление элементов управления Bookmark во время разработки
  Вы можете добавить элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ Word в проекте на уровне документа во время разработки несколькими способами.
 
 - Из **панели элементов**Visual Studio.
@@ -77,7 +77,7 @@ ms.locfileid: "71255986"
 
 3. В диалоговом окне **Закладка** введите имя новой закладки и нажмите кнопку **Добавить**.
 
-## <a name="runtimedoclevel"></a>Добавление элементов управления Bookmark во время выполнения в проекте уровня документа
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Добавление элементов управления Bookmark во время выполнения в проекте уровня документа
  Элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> можно добавить в документ программным образом во время выполнения с помощью методов свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> класса `ThisDocument` в проекте. Существуют две перегрузки метода, которые можно использовать для добавления элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> следующими способами:
 
 - добавление <xref:Microsoft.Office.Tools.Word.Bookmark> в указанный диапазон;
@@ -96,7 +96,7 @@ ms.locfileid: "71255986"
     > [!NOTE]
     > Если необходимо создать элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> на основе существующего <xref:Microsoft.Office.Interop.Word.Bookmark>, используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> и передайте его в существующий <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
-## <a name="runtimeaddin"></a>Добавление элементов управления Bookmark во время выполнения в проекте надстройки VSTO
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Добавление элементов управления Bookmark во время выполнения в проекте надстройки VSTO
  Вы можете добавить элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> программным способом в любой открытый документ во время выполнения с помощью надстройки VSTO. Для этого следует создать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , основанный на открытом документе, а затем использовать методы свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> этого ведущего элемента. Существуют две перегрузки метода, которые можно использовать для добавления элемента управления <xref:Microsoft.Office.Tools.Word.Bookmark> следующими способами:
 
 - добавление <xref:Microsoft.Office.Tools.Word.Bookmark> в указанный диапазон;
@@ -125,11 +125,11 @@ ms.locfileid: "71255986"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
-- [Практическое руководство. Изменить размер элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)
+- [Как изменить размер элементов управления Bookmark](../vsto/how-to-resize-bookmark-controls.md)

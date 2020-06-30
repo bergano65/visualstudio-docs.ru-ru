@@ -3,7 +3,7 @@ title: Руководство. Установка распространяемо
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 801486e7c0abfa2cb91f7fb7237cf3a48e8bc916
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ef71de75be5977ab80cbdd85448daa5de381c077
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985908"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547229"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio
-  Среда выполнения средств Visual Studio 2010 для Office должна быть установлена на каждом компьютере, на котором работают решения, созданные с помощью средств разработчика Microsoft Office в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Она устанавливается автоматически при установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и Microsoft Office. Дополнительные сведения см. в статье [инструменты Visual Studio для сценариев установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+  Среда выполнения средств Visual Studio 2010 для Office должна быть установлена на каждом компьютере, где работают решения, созданные с помощью средств разработчика Microsoft Office в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Она устанавливается автоматически при установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и Microsoft Office. Дополнительные сведения см. в статье [инструменты Visual Studio для сценариев установки среды выполнения Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -40,20 +40,20 @@ ms.locfileid: "72985908"
 
 1. Установите [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
 
-    - Чтобы скачать [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], см. раздел [Microsoft .NET Framework 4 (веб-установщик)](https://www.microsoft.com/download/details.aspx?id=17851).
+    - Сведения о загрузке см [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . в разделе [Microsoft .NET Framework 4 (веб-установщик)](https://www.microsoft.com/download/details.aspx?id=17851).
 
-    - Чтобы скачать [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], см. раздел [клиентский профиль Microsoft .NET Framework 4 (веб-установщик)](https://www.microsoft.com/download/details.aspx?id=17113).
+    - Чтобы скачать [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] , см. раздел [клиентский профиль Microsoft .NET Framework 4 (веб-установщик)](https://www.microsoft.com/download/details.aspx?id=17113).
 
-    - Чтобы скачать [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], см. [Microsoft .NET Framework 4,5](https://www.microsoft.com/download/details.aspx?id=30653).
+    - Чтобы скачать [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , см. статью [Microsoft .NET Framework 4,5](https://www.microsoft.com/download/details.aspx?id=30653).
 
-2. Запустите *vstor_redist. exe* , чтобы установить [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+2. Запустите *vstor_redist.exe* , чтобы установить [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
      Эти файлы установки можно загрузить из [среды выполнения Visual Studio 2010 Tools for Office](https://www.microsoft.com/download/details.aspx?id=56961). Предварительные требования [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] совпадают с предварительными требованиями платформы .NET Framework.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] включает языковые пакеты. Если при установке Windows был выбран не английский язык, сообщения среды выполнения будут отображаться на языке, выбранном для Windows. Точно так же, если конечные пользователи установят [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и запустят ваши решения в системах Windows, настроенных не на английский язык, сообщения среды выполнения будут отображаться на языке Windows. В некоторых случаях могут потребоваться дополнительные языковые пакеты. Например, могут потребоваться дополнительные языковые пакеты, если в вашей копии Windows используется более одного языкового параметра или если вы уже установили [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]на другом языке. Языковые пакеты можно найти в [Microsoft Visual Studio средств 2010 для языкового пакета Microsoft Office системы (среда выполнения версии 4,0)](https://www.microsoft.com/download/details.aspx?id=54246).
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] включает языковые пакеты. Если при установке Windows был выбран не английский язык, сообщения среды выполнения будут отображаться на языке, выбранном для Windows. Точно так же, если конечные пользователи установят [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и запустят ваши решения в системах Windows, настроенных не на английский язык, сообщения среды выполнения будут отображаться на языке Windows. В некоторых случаях могут потребоваться дополнительные языковые пакеты. Например, могут потребоваться дополнительные языковые пакеты, если в вашей копии Windows используется более одного языкового параметра, или если вы уже установили на другой язык [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Языковые пакеты можно найти в [Microsoft Visual Studio средств 2010 для языкового пакета Microsoft Office системы (среда выполнения версии 4,0)](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>См. также
-- [Начало работы &#40;с разработкой Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+## <a name="see-also"></a>См. также раздел
+- [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Как настроить компьютер для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

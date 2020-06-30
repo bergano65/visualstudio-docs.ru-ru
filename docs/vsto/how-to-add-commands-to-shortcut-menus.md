@@ -1,7 +1,7 @@
 ---
 title: Как добавить команды в контекстные меню
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986030"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546202"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Как добавить команды в контекстные меню
   В этом разделе показано, как добавлять команды в контекстное меню в приложении Office с помощью надстройки VSTO.
@@ -27,11 +27,11 @@ ms.locfileid: "72986030"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Добавление команд в контекстные меню в Office
 
-1. Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. [в разделе инструкции. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). Увеличение
+1. Добавьте элемент **Лента (XML)** в проект уровня документа или надстройки VSTO. Дополнительные сведения см. [в разделе инструкции. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md). В
 
 2. В**обозревателе решений**выберите файл **ThisAddIn.cs** или **ThisAddIn.vb**.
 
-3. В строке меню выберите **Вид** > **Код**.
+3. В строке меню выберите **Просмотреть**  >  **код**.
 
      Этот файл класса **ThisAddin** откроется в редакторе кода.
 
@@ -40,9 +40,9 @@ ms.locfileid: "72986030"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. В **обозревателе решений**выберите XML-файл ленты. По умолчанию XML-файл ленты называется *Ribbon1. XML*.
+5. В **обозревателе решений**выберите XML-файл ленты. По умолчанию XML-файл ленты имеет имя *Ribbon1.xml*.
 
-6. В строке меню выберите **Вид** > **Код**.
+6. В строке меню выберите **Просмотреть**  >  **код**.
 
      XML-файл ленты открывается в редакторе кода.
 
@@ -72,14 +72,14 @@ ms.locfileid: "72986030"
 
 8. В **обозревателе решений**, выберите файл **MyRibbon.cs** или **MyRibbon.vb**.
 
-9. Добавьте метод обратного вызова в класс `Ribbon1` для каждого элемента управления, который необходимо обменять.
+9. Добавьте метод обратного вызова в `Ribbon1` класс для каждого элемента управления, который требуется обменять.
 
      Следующий метод обратного вызова обрабатывает кнопку **My Button** . Этот код добавляет строку в активный документ в текущем положении курсора.
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Пошаговое руководство. создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

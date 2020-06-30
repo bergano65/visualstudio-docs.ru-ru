@@ -1,7 +1,7 @@
 ---
 title: Как настроить встроенную вкладку
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3550c3bd48a02d5daf4ef7156960e8a8fab3b93a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985943"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547190"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Как настроить встроенную вкладку
   На встроенную вкладку можно добавлять группы и элементы управления. Встроенная вкладка — это вкладка, которая уже находится на ленте Microsoft Office приложении. Например, вкладка « **данные** » является встроенной вкладкой Excel. При создании настраиваемой группы она отображается на вкладке последней, но вы можете свободно перемещать группу на вкладке.
@@ -66,7 +66,7 @@ ms.locfileid: "72985943"
 
      Список идентификаторов элементов управления см. в разделе [файлы справки office 2010: идентификаторы элементов управления пользовательского интерфейса Fluent Office](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
 - [XML-ленты](../vsto/ribbon-xml.md)

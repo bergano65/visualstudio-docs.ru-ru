@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 30f507f07de858dc222b4824ac6da633c76812ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 43767ce04b32440a5c6753f5bfcabb91487c1232
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652746"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546709"
 ---
-# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: методы регистрации для COM-клиента должны быть соответствующими
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410. Методы регистрации COM должны быть согласованными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
@@ -33,10 +33,10 @@ ms.locfileid: "72652746"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип объявляет метод, помеченный атрибутом <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>, но не объявляет метод, помеченный атрибутом <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>, или наоборот.
+ Тип объявляет метод, помеченный <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> атрибутом, но не объявляет метод, помеченный <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> атрибутом, или наоборот.
 
 ## <a name="rule-description"></a>Описание правила
- Чтобы клиенты модели COM создали тип [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], сначала необходимо зарегистрировать тип. Если он доступен, метод, помеченный атрибутом <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, вызывается в процессе регистрации для запуска пользовательского кода. В процессе отмены регистрации вызывается соответствующий метод, помеченный атрибутом <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>, чтобы отменить операции метода регистрации.
+ Чтобы клиенты модели COM создали [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] тип, сначала необходимо зарегистрировать тип. Если он доступен, метод, помеченный <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> атрибутом, вызывается во время процесса регистрации для запуска пользовательского кода. В процессе отмены регистрации вызывается соответствующий метод, помеченный <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> атрибутом, чтобы отменить операции метода регистрации.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, добавьте соответствующий метод регистрации или отмены регистрации.
@@ -51,7 +51,7 @@ ms.locfileid: "72652746"
  [!code-vb[FxCop.Interoperability.ComRegistration#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComRegistration/vb/FxCop.Interoperability.ComRegistration.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1411: методы регистрации для COM-клиента не должны быть видимыми](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+ [CA1411. Методы регистрации COM не должны быть видимыми](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [регистрации сборок с помощью COM](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm. exe (средство регистрации сборок)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+## <a name="see-also"></a>См. также
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[Регистрация сборок с помощьюRegasm.exe com](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [(средство регистрации сборок)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

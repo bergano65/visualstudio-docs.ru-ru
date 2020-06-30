@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657062"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547983"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72657062"
 
 - доступ к источникам данных с помощью класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>предварительные требования
  Для выполнения данного пошагового руководства требуется:
 
 - Visual Studio Enterprise
@@ -47,7 +47,7 @@ ms.locfileid: "72657062"
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>Добавьте к проекту следующий файл app.config.
 
-1. Если файл app.config уже существует в тестовом проекте, переходите к разделу [Определение настраиваемого раздела конфигурации](#DefineCustomConfigurationSection).
+1. Если в тестовом проекте уже имеется файл app.config, перейдите к [разделу Определение настраиваемого раздела конфигурации](#DefineCustomConfigurationSection).
 
 2. Щелкните проект правой кнопкой мыши в окне **обозревателя решений**, наведите указатель на пункт **Добавить** и выберите **Новый элемент**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72657062"
 
 3. Выберите шаблон **Файл конфигурации приложения** и нажмите кнопку **Добавить**.
 
-## <a name="DefineCustomConfigurationSection"></a> Определение настраиваемого раздела конфигурации
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Определение пользовательского раздела конфигурации
  Просмотрите файл app.config. Он содержит как минимум объявление XML и корневой элемент.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Добавление настраиваемого раздела конфигурации в файл app.config
@@ -86,7 +86,7 @@ ms.locfileid: "72657062"
 
 3. В первом элементе `add` создайте следующие атрибуты и значения для подключения к базе данных Microsoft Access.
 
-|Атрибут|Значения|
+|attribute|Значения|
 |---------------|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
@@ -94,7 +94,7 @@ ms.locfileid: "72657062"
 
  Во втором элементе `add` создайте следующие атрибуты и значения для подключения к таблице Microsoft Excel.
 
-|||
+|attribute|Значения|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +102,7 @@ ms.locfileid: "72657062"
 
  Элемент `connectionStrings` должен выглядеть примерно следующим образом.
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -132,7 +132,7 @@ ms.locfileid: "72657062"
 
 4. В первом элементе `add` создайте следующие атрибуты и значения для источника данных Microsoft Access.
 
-|Атрибут|Значения|
+|attribute|Значение|
 |---------------|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ ms.locfileid: "72657062"
 
  Во втором элементе `add` создайте следующие атрибуты и значения для источника данных Microsoft Excel.
 
-|||
+|attribute|Значение|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -150,7 +150,7 @@ ms.locfileid: "72657062"
 
  Элемент `microsoft.visualstudio.testtools` должен выглядеть примерно следующим образом.
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ ms.locfileid: "72657062"
 
  Окончательный файл app.config должен выглядеть примерно следующим образом.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -223,7 +223,7 @@ ms.locfileid: "72657062"
 
 2. Замените автоматически созданное содержимое модульного теста следующим кодом.
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -268,5 +268,5 @@ ms.locfileid: "72657062"
 > [!IMPORTANT]
 > Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Модульное тестирование кода](../test/unit-test-your-code.md) [Создание и выполнение модульных тестов для существующего кода](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [Тестирование приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [как создать модульный тест, управляемый данными](../test/how-to-create-a-data-driven-unit-test.md)

@@ -1,7 +1,7 @@
 ---
-title: Автозаполнение постепенным изменением диапазоны данных программными средствами
+title: Программное заполнение постепенно изменяющегося диапазона данных
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,46 +15,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547476"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Практическое руководство. Программным образом автоматически заполнить диапазонов с постепенным изменением данных
-  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет также автоматического заполнения диапазона на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения постепенно увеличения или уменьшения значения в диапазоне. Можно указать поведение, необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Руководство. программное автоматическое заполнение диапазонов путем постепенного изменения данных
+  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>Метод <xref:Microsoft.Office.Interop.Excel.Range> объекта позволяет автоматически заполнять диапазон на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения инкрементно увеличивающихся или уменьшающихся значений в диапазоне. Поведение можно указать, предоставив необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- При использовании необходимо указать два диапазона <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
+ При использовании необходимо указать два диапазона <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> :
 
-- Диапазон, который вызывает <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод, который указывает начальную точку заливки и содержит начальное значение.
+- Диапазон, вызывающий <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод, который задает начальную точку заливки и содержит начальное значение.
 
-- Диапазон, который требуется заполнить, переданный в качестве параметра <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод. Целевой диапазон должен включать диапазон, содержащий исходное значение.
+- Диапазон, который необходимо заполнить, передаваемый в качестве параметра в <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод. Этот конечный диапазон должен включать диапазон, содержащий начальное значение.
 
     > [!NOTE]
-    > Невозможно передать <xref:Microsoft.Office.Tools.Excel.NamedRange> управления вместо <xref:Microsoft.Office.Interop.Excel.Range>. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+    > Нельзя передать <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления вместо <xref:Microsoft.Office.Interop.Excel.Range> . Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="example"></a>Пример
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
  [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
 
 ## <a name="compile-the-code"></a>Компиляция кода
- Может содержать начальное значение первой ячейки диапазона, который требуется заполнить.
+ Первая ячейка диапазона, который необходимо заполнить, должна содержать начальное значение.
 
- В примере вам понадобится ввести три области:
+ В этом примере необходимо заполнить три региона:
 
-- Столбец B предназначен для хранения пяти дней недели. Начальное значение, введите **понедельник** в ячейке В1.
+- Столбец B содержит пять дней недели. В качестве начального значения введите **понедельник** в ячейке B1.
 
-- Столбец C является включение пять месяцев. Начальное значение, введите **января** в ячейке C1.
+- Столбец C включает пять месяцев. В качестве начального значения введите **Январь** в ячейке C1.
 
-- Столбец D является включение ряд чисел, увеличивая время на два для каждой строки. Начальные значения, введите **4** в ячейке D1 и **6** в ячейке D2.
+- Столбец D включает ряд чисел, увеличивающийся по двум для каждой строки. Для начальных значений введите **4** в ячейке D1 и **6** в ячейке D2.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с диапазонами](../vsto/working-with-ranges.md)
-- [Практическое руководство. Ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Практическое руководство. Программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
-- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Как программно ссылаться на диапазоны листов в коде](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Руководство. программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

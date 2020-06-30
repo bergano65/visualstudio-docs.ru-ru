@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программный поиск в указанной папке
+title: Руководство. Программный поиск в определенной папке
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,22 +12,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f5e0f098edcffce07eb2c3f243b994d1a53cdf9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961905"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547021"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Практическое руководство. Программный поиск в указанной папке
-  Данный пример кода использует `Find` и `FindNext` методы для поиска текста в поле темы сообщения электронной почты, которые в **папки "Входящие"**. Этот метод использует фильтр строк для поиска букву T букве из `Subject` текста.
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Руководство. Программный поиск в определенной папке
+  В этом примере кода используются `Find` `FindNext` методы и для поиска текста в поле subject сообщений электронной почты, которые находятся в **папке Входящие**. Этот метод использует фильтр строк для проверки буквы T в качестве начальной буквы `Subject` текста.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Пример
  [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с папками](../vsto/working-with-folders.md)
-- [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)
-- [Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Общие сведения об объектной модели Outlook](../vsto/outlook-object-model-overview.md)
+- [Как программно получить папку по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

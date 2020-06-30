@@ -1,18 +1,18 @@
 ---
 title: Расширение доменного языка с помощью MEF
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596610"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547645"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 
@@ -26,7 +26,7 @@ ms.locfileid: "75596610"
 
 1. Создайте новую папку с именем **мефекстенсион** в проекте **DslPackage** . Добавьте в него следующие файлы:
 
-     Имя файла: `CommandExtensionVSCT.tt`
+     Имя файла:`CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Задать GUID в этом файле так же, как GUID Коммандсетид, определенный в Дслпаккаже\женератедкоде\константс.ТТ
@@ -42,21 +42,21 @@ ms.locfileid: "75596610"
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Имя файла: `CommandExtensionRegistrar.tt`
+    Имя файла:`CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Имя файла: `ValidationExtensionEnablement.tt`
+    Имя файла:`ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Имя файла: `ValidationExtensionRegistrar.tt`
+    Имя файла:`ValidationExtensionRegistrar.tt`
 
     При добавлении этого файла необходимо включить проверку в DSL, используя хотя бы один из параметров в **едиторвалидатион** в обозревателе DSL.
 
@@ -65,7 +65,7 @@ ms.locfileid: "75596610"
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Имя файла: `PackageExtensionEnablement.tt`
+    Имя файла:`PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ ms.locfileid: "75596610"
 
 2. Создайте новую папку с именем **мефекстенсион** в проекте **DSL** . Добавьте в него следующие файлы:
 
-     Имя файла: `DesignerExtensionMetaDataAttribute.tt`
+     Имя файла:`DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Имя файла: `GestureExtensionEnablement.tt`
+    Имя файла:`GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Имя файла: `GestureExtensionController.tt`
+    Имя файла:`GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -101,13 +101,13 @@ ms.locfileid: "75596610"
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-    Вставьте строку после существующей директивы `<Include>`.
+    Вставьте строку после существующей `<Include>` директивы.
 
 4. Откройте *DslDefinition. DSL*.
 
 5. В обозревателе DSL выберите **едитор\валидатион**.
 
-6. В окно свойств убедитесь, что по крайней мере одно из свойств с именем **использует** `true`.
+6. В окно свойств убедитесь, что по крайней мере одно из свойств с именем **использует** `true` .
 
 7. На панели инструментов **Обозреватель решений** нажмите кнопку **преобразовать все шаблоны**.
 
@@ -127,9 +127,9 @@ ms.locfileid: "75596610"
 
 2. В новом проекте добавьте ссылку на сборку DSL.
 
-   - Эта сборка обычно имеет имя, заканчивающееся на ". DSL. dll».
+   - Эта сборка, как правило, имеет имя, заканчивающееся на ".Dsl.dll".
 
-   - Если у вас есть доступ к проекту DSL, файл сборки можно найти в каталоге **dsl\\bin\\\***
+   - Если у вас есть доступ к проекту DSL, файл сборки можно найти в каталоге **DSL \\ bin \\ \* ** .
 
    - Если у вас есть доступ к VSIX-файлу DSL, сборку можно найти, изменив расширение имени файла VSIX на ZIP. Распакуйте ZIP-файл.
 
@@ -157,7 +157,7 @@ ms.locfileid: "75596610"
 
    1. В **source. extension. vsixmanifest**нажмите кнопку **Добавить ссылку** .
 
-   2. В диалоговом окне щелкните **добавить полезные данные** , а затем найдите VSIX файл DSL. VSIX-файл строится в решении DSL в **DslPackage\\bin\\\*** .
+   2. В диалоговом окне щелкните **добавить полезные данные** , а затем найдите VSIX файл DSL. VSIX-файл строится в решении DSL в **DslPackage \\ bin \\ \* **.
 
        Это позволяет пользователям одновременно установить DSL и расширение. Если пользователь уже установил DSL, будет установлено только расширение.
 
@@ -175,9 +175,9 @@ ms.locfileid: "75596610"
 
 ### <a name="menu-commands"></a>Команды меню
 
-Чтобы создать команду меню, определите класс, реализующий <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>, и добавьте к классу атрибут, определенный в DSL, с именем *йоурдсл*`CommandExtension`. Можно создать более одного класса команд меню.
+Чтобы создать команду меню, определите класс, реализующий интерфейс, <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> и добавьте к нему префикс с атрибутом, определенным в DSL, с именем *йоурдсл* `CommandExtension` . Можно создать более одного класса команд меню.
 
-`QueryStatus()` вызывается всякий раз, когда пользователь щелкает правой кнопкой мыши схему. Он должен проверить текущее выделение и задать `command.Enabled`, чтобы указать, когда команда применима.
+`QueryStatus()`вызывается всякий раз, когда пользователь щелкает схему правой кнопкой мыши. Он должен проверить текущее выделение и задать параметр, `command.Enabled` чтобы указать, когда команда применима.
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -321,7 +321,7 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>Ограничения проверки
 
-Методы проверки помечены атрибутом `ValidationExtension`, созданным DSL, а также <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Метод может присутствовать в любом классе, который не помечен атрибутом.
+Методы проверки помечаются `ValidationExtension` атрибутом, созданным DSL, а также с помощью <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Метод может присутствовать в любом классе, который не помечен атрибутом.
 
 Дополнительные сведения см. [в разделе Проверка на предметно-](../modeling/validation-in-a-domain-specific-language.md)ориентированном языке.
 
@@ -372,7 +372,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

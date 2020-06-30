@@ -1,7 +1,7 @@
 ---
 title: Добавление пользовательской проверки архитектуры в схемы зависимостей
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597234"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546929"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Добавление пользовательской проверки архитектуры в схемы зависимостей
 
@@ -87,11 +87,11 @@ ms.locfileid: "75597234"
 
     2. В диалоговом окне **Добавить новый актив** установите следующие параметры:
 
-         **Тип** = **Microsoft.VisualStudio.MefComponent**
+         **Тип**  =  **Microsoft. VisualStudio. MefComponent**
 
-         **Источник** = **Проект в текущем решении**
+         **Исходный код**  =  **Проект в текущем решении**
 
-         **Проект** = *проект проверяющего элемента*
+         **Проект Project**  =  *проверяющий проект*
 
 5. Также необходимо добавить его в качестве проверки слоев:
 
@@ -99,15 +99,15 @@ ms.locfileid: "75597234"
 
     2. В диалоговом окне **Добавить новый актив** установите следующие параметры:
 
-         **Тип** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Это значение не указано в раскрывающемся списке. Его необходимо ввести с клавиатуры.
+         **Тип**  =  **Microsoft. VisualStudio. арчитектуретулс. Layer. проверяющий элемент управления**. Это значение не указано в раскрывающемся списке. Его необходимо ввести с клавиатуры.
 
-         **Источник** = **Проект в текущем решении**
+         **Исходный код**  =  **Проект в текущем решении**
 
-         **Проект** = *проект проверяющего элемента*
+         **Проект Project**  =  *проверяющий проект*
 
 6. Вернитесь в проект проверки слоев и добавьте указанные ниже ссылки на проект.
 
-    |**Ссылки**|**Возможности**|
+    |**Справочник**|**Возможности**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Чтение графа архитектуры|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Чтение кода DOM, связанного со слоями|
@@ -125,7 +125,7 @@ ms.locfileid: "75597234"
 
 9. Чтобы установить VSIX в основном экземпляре Visual Studio или на другом компьютере, найдите **VSIX** файл в каталоге **bin** проекта VSIX. Скопируйте его на компьютер, где требуется выполнить установку VSIX. Дважды щелкните файл VSIX в проводнике Windows
 
-## <a name="programming"></a> Программная проверка
+## <a name="programming-validation"></a><a name="programming"></a>Проверка программирования
 
 Чтобы определить расширение проверки слоя, необходимо определить класс указанным ниже образом.
 
@@ -194,7 +194,7 @@ ms.locfileid: "75597234"
 
 Связи от слоев к элементам в коде имеют категорию «Представляет».
 
-## <a name="debugging"></a> Отладка проверки
+## <a name="debugging-validation"></a><a name="debugging"></a>Проверка отладки
 
 Чтобы выполнить отладку расширения проверки слоев, нажмите клавиши CTRL+F5. Откроется экспериментальный экземпляр Visual Studio. Откройте или создайте модель слоев в этом экземпляре. Эта модель должна быть связана с кодом и иметь хотя бы одну зависимость.
 
@@ -226,7 +226,7 @@ ms.locfileid: "75597234"
 
 Чтобы установить расширение проверки на компьютер, на котором установлена подходящая версия Visual Studio, откройте VSIX-файл на конечном компьютере.
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a>Пример кода
 
 ```csharp
 using System;
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение схем зависимостей](../modeling/extend-layer-diagrams.md)

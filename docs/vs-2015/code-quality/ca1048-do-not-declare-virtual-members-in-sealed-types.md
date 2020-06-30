@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603317"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546800"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: не объявляйте виртуальные элементы в запечатанных типах
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048. Не объявляйте виртуальные члены в запечатанных типах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
@@ -33,12 +33,12 @@ ms.locfileid: "72603317"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый тип запечатан и объявляет метод, который одновременно `virtual` (`Overridable` в Visual Basic) и не является окончательным. Это правило не сообщает о нарушениях типов делегатов, которые должны следовать этому шаблону.
+ Открытый тип запечатан и объявляет метод, который одновременно `virtual` ( `Overridable` в Visual Basic) и не является окончательным. Это правило не сообщает о нарушениях типов делегатов, которые должны следовать этому шаблону.
 
 ## <a name="rule-description"></a>Описание правила
  Типы объявляют методы как виртуальные, чтобы наследующие типы могли переопределять реализацию виртуального метода. По определению нельзя наследовать от запечатанного типа, что делает виртуальный метод запечатанного типа бессмысленным.
 
- Visual Basic .NET и C# компиляторы не позволяют типам нарушать это правило.
+ Компиляторы Visual Basic .NET и C# не позволяют типам нарушать это правило.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, сделайте метод невиртуальным или сделайте тип наследуемым.

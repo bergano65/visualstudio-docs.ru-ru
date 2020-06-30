@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное закрытие документов
+title: Руководство. программное закрытие документов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422470"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547463"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Практическое руководство. Программное закрытие документов
+# <a name="how-to-programmatically-close-documents"></a>Руководство. программное закрытие документов
   Можно закрыть активный документ или указать документ для закрытия.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63422470"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
 
-## <a name="close-a-document-that-you-specify-by-name"></a>Процедура закрытия документа с заданным именем
+## <a name="close-a-document-that-you-specify-by-name"></a>Закрытие документа, указанного по имени
  Процедура закрытия документа с заданным именем идентична процедуре для надстройки VSTO и настроек на уровне документа.
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>Закрытие документа с заданным именем
@@ -61,9 +61,9 @@ ms.locfileid: "63422470"
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Практическое руководство. Программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)
-- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. Программное открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Руководство. Программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)
+- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

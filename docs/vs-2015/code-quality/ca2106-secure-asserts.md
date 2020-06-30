@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1f333478c952db74fa6a9482cdad91ce6a858301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb0e097c2f13fa9d9279a5f3e9761a53cb6e4b1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666000"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547749"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106: обеспечьте безопасность утверждений
+# <a name="ca2106-secure-asserts"></a>CA2106. Обеспечьте безопасность утверждений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
@@ -44,5 +44,5 @@ ms.locfileid: "72666000"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Подавлять предупреждение из этого правила только после тщательного анализа безопасности.
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [рекомендации по безопасному кодированию](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
+## <a name="see-also"></a>См. также
+ <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Правила написания безопасного кода](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

@@ -1,7 +1,7 @@
 ---
 title: Руководство. Программный поиск текста в диапазонах листа
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ffc06c2f50f7a304ef76ac1451ee47419143afb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547034"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Руководство. Программный поиск текста в диапазонах листа
-  Метод <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> объекта <xref:Microsoft.Office.Interop.Excel.Range> позволяет выполнять поиск текста в диапазоне. Этот текст также может быть любой строкой ошибок, которая может присутствовать в ячейке листа, например `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [значения ошибок ячеек](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>Метод <xref:Microsoft.Office.Interop.Excel.Range> объекта позволяет искать текст в диапазоне. Этот текст также может быть любой строкой ошибок, которая может присутствовать в ячейке листа, например `#NULL!` или `#VALUE!` . Дополнительные сведения о строках ошибок см. в разделе [значения ошибок ячеек](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- В следующем примере выполняется поиск в диапазоне с именем `Fruits` и изменяется шрифт для ячеек, содержащих слово «яблоки». Эта процедура также использует метод <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>, который использует ранее настроенные параметры поиска для повторения поиска. Необходимо указать ячейку, после которой будет производиться поиск, а метод <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> обрабатывает остальные.
+ В следующем примере выполняется поиск в диапазоне с именем `Fruits` и изменяется шрифт для ячеек, содержащих слово «яблоки». Эта процедура также использует <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> метод, который использует ранее заданные параметры поиска для повторения поиска. Вы указываете ячейку, после которой будет производиться поиск, и <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> метод обрабатывает остальные.
 
 > [!NOTE]
-> Поисковый метод <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> переносится обратно в начало диапазона поиска после достижения конца диапазона. Код должен гарантировать, что поиск не будет перетекать в бесконечный цикл. В примере процедуры показан один из способов обработки этого с помощью свойства <xref:Microsoft.Office.Interop.Excel.Range.Address%2A>.
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>Поиск метода выполняет обратную передачу к началу диапазона поиска после того, как он достиг конца диапазона. Код должен гарантировать, что поиск не будет перетекать в бесконечный цикл. В примере процедуры показан один из способов обработки этого с помощью <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Свойства.
 
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Поиск текста в диапазоне на листе
 
@@ -48,7 +48,7 @@ ms.locfileid: "72985820"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. Сравните первый найденный диапазон (`firstFind`) с **Nothing**. Если `firstFind` не содержит значения, код сохраняет содержимое вне найденного диапазона (`currentFind`).
+4. Сравните первый найденный диапазон ( `firstFind` ) с **Nothing**. Если `firstFind` параметр не содержит значения, код сохраняет содержимое вне найденного диапазона ( `currentFind` ).
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]
@@ -74,7 +74,7 @@ ms.locfileid: "72985820"
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с диапазонами](../vsto/working-with-ranges.md)
 - [Руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Как программно ссылаться на диапазоны листов в коде](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)

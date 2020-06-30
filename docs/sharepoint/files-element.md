@@ -1,5 +1,5 @@
 ---
-title: Файлы элемент | Документация Майкрософт
+title: Files, элемент | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c669b7cc314bc2d7a999e77d5cfb95251789dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967374"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546514"
 ---
 # <a name="files-element"></a>Files - элемент
-  Указывает файлы для развертывания с элементом проекта SharePoint, например элементов компонента файлов и выходных данных зависимого вне SharePoint проектов.
+  Указывает файлы для развертывания с помощью элемента проекта SharePoint, такие как файлы элементов компонента и выходные данные зависимых проектов, не связанных с SharePoint.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,7 +32,7 @@ ms.locfileid: "62967374"
 ```
 
 ## <a name="type"></a>Тип
- **FileCollectionType**
+ **филеколлектионтипе**
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
@@ -44,23 +44,23 @@ ms.locfileid: "62967374"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Необязательный **ProjectItemFileType** элемент.<br /><br /> Представляет файл SharePoint, такие как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.|
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Необязательный **ProjectOutputFileType** элемент.<br /><br /> Представляет выходные данные проекта для включения с элементом проекта при его развертывании в SharePoint.|
+|[прожектитемфиле](../sharepoint/projectitemfile-element.md)|Необязательный элемент **прожектитемфилетипе** .<br /><br /> Представляет файл SharePoint, например файл элемента компонента, для включения в элемент проекта при его развертывании в SharePoint.|
+|[прожектаутпутфиле](../sharepoint/projectoutputfile-element.md)|Необязательный элемент **прожектаутпутфилетипе** .<br /><br /> Представляет выходные данные проекта, включаемые в элемент проекта при его развертывании в SharePoint.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из `.spdata` файла.|
+|[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом `.spdata` файла.|
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|||
+|Свойство|Значение|
 |-|-|
-|**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|
-|**Файл проверки**|ProjectItemModelSchema.xsd|
+|**Файл проверки**|Прожектитеммоделсчема. xsd|
 |**Может быть пустым**|Нет|
 
-## <a name="see-also"></a>См. также
-- [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+## <a name="see-also"></a>См. также раздел
+- [Справочник по схеме элементов проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программный поиск определенного контакта
+title: Руководство. Программный поиск определенного контакта
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000320"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547073"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Практическое руководство. Программный поиск определенного контакта
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Руководство. Программный поиск определенного контакта
   В этом примере выполняется поиск определенного контакта в папке контактов Outlook по имени и фамилии. В этом примере предполагается, что в папке контактов есть контакт с именем **John Evans** .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -29,6 +29,6 @@ ms.locfileid: "63000320"
  [!code-csharp[Trin_Outlook_RL_SearchForContact#1](../vsto/codesnippet/CSharp/trin_outlook_rl_searchforcontact/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_SearchForContact#1](../vsto/codesnippet/VisualBasic/trin_outlook_rl_searchforcontact/thisaddin.vb#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с элементами контактов](../vsto/working-with-contact-items.md)
-- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

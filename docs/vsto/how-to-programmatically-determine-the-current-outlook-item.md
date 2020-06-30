@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное определение текущего элемента Outlook
+title: Руководство. Программное определение текущего элемента Outlook
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814823"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547164"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Практическое руководство. Программное определение текущего элемента Outlook
-  В этом примере используется `Explorer.SelectionChange` событий, чтобы отобразить имя текущей папки и некоторые сведения о выбранном элементе. Затем код отображает выбранный элемент.
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Руководство. Программное определение текущего элемента Outlook
+  В этом примере используется `Explorer.SelectionChange` событие для вывода имени текущей папки и некоторых сведений о выбранном элементе. Затем код отображает выбранный элемент.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "62814823"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
-- Встречи, контакты и сообщения электронной почты в Microsoft Office Outlook.
+- Встречи, контакты и элементы электронной почты в Microsoft Office Outlook.
 
-## <a name="see-also"></a>См. также
-- [Обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md)
-- [Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Практическое руководство. Программный поиск определенного контакта](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+## <a name="see-also"></a>См. также раздел
+- [Общие сведения об объектной модели Outlook](../vsto/outlook-object-model-overview.md)
+- [Как программно получить папку по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Руководство. Программный поиск определенного контакта](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

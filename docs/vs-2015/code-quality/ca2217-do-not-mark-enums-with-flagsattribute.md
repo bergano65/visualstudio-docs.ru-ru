@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73f94c45568a55cc098dd223deca9dab404f44ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b584e355f5b64984f57dd17606dfb0a2f781c62d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651636"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547671"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: не следует помечать перечисления атрибутом FlagsAttribute
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
@@ -33,10 +33,10 @@ ms.locfileid: "72651636"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Перечисление, видимое извне, помечается <xref:System.FlagsAttribute> и имеет одно или несколько значений, не являющихся степенями двух, или сочетанием других определенных значений в перечислении.
+ Перечисление, видимое извне, помечено атрибутом <xref:System.FlagsAttribute> и имеет одно или несколько значений, не являющихся степенями двух, или сочетанием других определенных значений в перечислении.
 
 ## <a name="rule-description"></a>Описание правила
- Перечисление должно иметь <xref:System.FlagsAttribute> есть, только если каждое значение, определенное в перечислении, является степенью числа 2 или сочетанием определенных значений.
+ Перечисление должно <xref:System.FlagsAttribute> присутствовать, только если каждое значение, определенное в перечислении, является степенью двух или сочетанием определенных значений.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, удалите <xref:System.FlagsAttribute> из перечисления.
@@ -45,7 +45,7 @@ ms.locfileid: "72651636"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показано перечисление Color, содержащее значение 3, которое не является ни степенью двух, ни сочетанием определенных значений. Перечисление цветов не следует помечать <xref:System.FlagsAttribute>.
+ В следующем примере показано перечисление Color, содержащее значение 3, которое не является ни степенью двух, ни сочетанием определенных значений. Перечисление цветов не должно быть помечено атрибутом <xref:System.FlagsAttribute> .
 
  [!code-cpp[FxCop.Usage.EnumNoFlags#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cpp/FxCop.Usage.EnumNoFlags.cpp#1)]
  [!code-csharp[FxCop.Usage.EnumNoFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cs/FxCop.Usage.EnumNoFlags.cs#1)]
@@ -59,7 +59,7 @@ ms.locfileid: "72651636"
  [!code-vb[FxCop.Usage.EnumNoFlags2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags2/vb/FxCop.Usage.EnumNoFlags2.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1027: следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027. Пометьте перечисляемые типы с помощью FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  <xref:System.FlagsAttribute?displayProperty=fullName>

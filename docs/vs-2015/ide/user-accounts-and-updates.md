@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289395"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547619"
 ---
 # <a name="user-accounts-and-updates"></a>Учетные записи пользователей и обновления
 
@@ -27,7 +27,7 @@ ms.locfileid: "85289395"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|||
+|Заголовок|Описание|
 |-|-|
 |[Вход в Visual Studio](../ide/signing-in-to-visual-studio.md)|Описывает способ и причины, по которым следует выполнять вход в Visual Studio.|
 |[Работа с несколькими учетными записями пользователя](../ide/work-with-multiple-user-accounts.md)|Описывает способ связи нескольких учетных записей Майкрософт и рабочих или учебных учетных записей для предоставления доступа к ресурсам и службам со всех ваших учетных записей.|
@@ -35,6 +35,6 @@ ms.locfileid: "85289395"
 |[Как разблокировать Visual Studio](../ide/how-to-unlock-visual-studio.md)|Описывает способ разблокировки Visual Studio в разных сценариях.|
 |[Уведомления](../ide/visual-studio-notifications.md)|Описывает, как среда Visual Studio информирует вас о доступности обновлений для компонентов, например пакетов SDK, или непосредственно Visual Studio.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

@@ -1,7 +1,7 @@
 ---
 title: Как заполнить документы данными из базы данных
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985889"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547203"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Как заполнить документы данными из базы данных
 
@@ -66,7 +66,7 @@ ms.locfileid: "72985889"
 
 Сведения о том, как отправить обновления в типизированный набор данных и базу данных, см. в разделе [как обновить источник данных данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)

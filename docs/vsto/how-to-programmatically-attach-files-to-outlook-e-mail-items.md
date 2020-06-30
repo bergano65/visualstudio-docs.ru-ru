@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное вложение файлов в элементы электронной почты Outlook
+title: Как программно вкладывать файлы в сообщения электронной почты Outlook
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575628"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546137"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Практическое руководство. Программное вложение файлов в элементы электронной почты Outlook
-  В этом примере присоединяет файл к элементу электронной почты и отправляет его Armando Pinto. В примере предполагается, что существует пользователя с именем Armando Pinto в качестве получателя.
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Как программно вкладывать файлы в сообщения электронной почты Outlook
+  В этом примере файл подключается к новому почтовому элементу и отправляется в Армандо Pinto. В примере предполагается, что в качестве получателя существует пользователь с именем Армандо Pinto.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,8 +31,8 @@ ms.locfileid: "62575628"
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с элементами почты](../vsto/working-with-mail-items.md)
-- [Практическое руководство. Отправка сообщения электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Практическое руководство. Программное сохранение вложений из элементов электронной почты Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
-- [Практическое руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Руководство. Программная отправка электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Как программно сохранять вложения из сообщений электронной почты Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [Руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)

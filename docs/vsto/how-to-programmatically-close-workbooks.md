@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное закрытие книг Excel
+title: Руководство. программное закрытие книг
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575407"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547502"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Практическое руководство. Программное закрытие книг Excel
+# <a name="how-to-programmatically-close-workbooks"></a>Руководство. программное закрытие книг
   Можно закрыть активную книгу или указать, какую книгу следует закрыть.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "62575407"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
 
-## <a name="close-a-workbook-that-you-specify-by-name"></a>Закрытие книги с заданным именем
+## <a name="close-a-workbook-that-you-specify-by-name"></a>Закрытие книги, указанной с помощью имени
  Процедура закрытия книги с заданным именем идентична процедуре для надстройки VSTO и настроек на уровне документа.
 
 ### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Закрытие книги, указанной по имени
@@ -52,10 +52,10 @@ ms.locfileid: "62575407"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с книгами](../vsto/working-with-workbooks.md)
-- [Практическое руководство. Программное Сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)
-- [Практическое руководство. Программное открытие книг Excel](../vsto/how-to-programmatically-open-workbooks.md)
+- [Как программно сохранять книги](../vsto/how-to-programmatically-save-workbooks.md)
+- [Руководство. Программное открытие книг](../vsto/how-to-programmatically-open-workbooks.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

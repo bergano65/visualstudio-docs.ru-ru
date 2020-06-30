@@ -1,7 +1,7 @@
 ---
-title: Store & извлечение значений дат в диапазонах Excel программным способом
+title: Хранение & получение значений дат в диапазонах Excel программными средствами
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,71 +19,71 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: e4cea02af59b6b6a8457d964bdce802e1e2b2b84
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328926"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546969"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Практическое руководство. Программным способом хранения и извлечения значений дат в диапазонах Excel
-  Можно сохранять и извлекать значения в <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Как программно сохранять и извлекать значения дат в диапазонах Excel
+  Можно сохранять и извлекать значения в <xref:Microsoft.Office.Tools.Excel.NamedRange> элементе управления или в собственном объекте Excel Range.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Если вы храните значение даты, которое находится в течение или после 1/1/1900 диапазон с помощью средств разработки Office в Visual Studio, он хранится в формате OLE-автоматизации (OA). Необходимо использовать <xref:System.DateTime.FromOADate%2A> метод для извлечения значение даты OLE-автоматизации (OA). Если дата является более ранней, чем 1/1/1900 г., он хранится в виде строки.
+ Если вы храните значение даты, которое попадает в диапазон или после 1/1/1900 в диапазоне с помощью средств разработки Office в Visual Studio, оно сохраняется в формате OLE Automation (OA). <xref:System.DateTime.FromOADate%2A>Для получения значений дат OLE-автоматизации (OA) необходимо использовать метод. Если дата более ранняя, чем 1/1/1900, она сохраняется в виде строки.
 
 > [!NOTE]
-> Даты Excel отличаются от даты OLE-автоматизации для первых двух месяцев 1900. Существуют также различия Если **система дат 1904** флажок. В примерах кода не используют эти различия.
+> Даты Excel отличаются от дат OLE Automation на первые два месяца 1900. Существуют также различия, если установлен параметр **системы даты 1904** . Приведенные ниже примеры кода не устраняют эти различия.
 
 ## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange
 
-- Этот пример предназначен для настроек уровня документа. Следующий код должен быть помещен в классе листа, не в `ThisWorkbook` класса.
+- Этот пример предназначен для настроек на уровне документа. Следующий код должен быть помещен в класс листа, а не в `ThisWorkbook` класс.
 
-### <a name="to-store-a-date-value-in-a-named-range"></a>Для хранения значения даты в именованный диапазон
+### <a name="to-store-a-date-value-in-a-named-range"></a>Сохранение значения даты в именованном диапазоне
 
-1. Создание <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в ячейке **A1**.
+1. Создание <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления в ячейке **a1**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
      [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]
 
-2. Задайте сегодняшнюю дату в качестве значения для `NamedRange1`.
+2. Установите сегодняшнюю дату в качестве значения параметра `NamedRange1` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]
 
-### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Для получения значения даты из именованного диапазона
+### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Получение значения даты из именованного диапазона
 
-1. Получите значение даты из `NamedRange1`.
+1. Получите значение даты из `NamedRange1` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]
 
-## <a name="use-native-excel-ranges"></a>Использование собственного диапазонах Excel
+## <a name="use-native-excel-ranges"></a>Использовать собственные диапазоны Excel
 
-### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Для хранения значения даты в собственный объект диапазона Excel
+### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Сохранение значения даты в собственном объекте Excel Range
 
-1. Создание <xref:Microsoft.Office.Interop.Excel.Range> , представляющий ячейку **A1**.
+1. Создайте объект <xref:Microsoft.Office.Interop.Excel.Range> , представляющий ячейку **a1**.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]
 
-2. Задайте сегодняшнюю дату в качестве значения для `rng`.
+2. Установите сегодняшнюю дату в качестве значения параметра `rng` .
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]
 
-### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Для получения значения даты из собственный объект диапазона Excel
+### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Получение значения даты из собственного объекта диапазона Excel
 
-1. Получите значение даты из `rng`.
+1. Получите значение даты из `rng` .
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с диапазонами](../vsto/working-with-ranges.md)
-- [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md)
+- [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
-- [Практическое руководство. Ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [Практическое руководство. Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Как программно ссылаться на диапазоны листов в коде](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Как добавить элементы управления NamedRange в листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

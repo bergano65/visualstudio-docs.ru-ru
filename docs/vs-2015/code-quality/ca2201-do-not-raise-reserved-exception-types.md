@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667379"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546345"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: не вызывайте зарезервированные типы исключений
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201. Не порождайте исключения зарезервированных типов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -56,9 +56,9 @@ ms.locfileid: "72667379"
 
   **Не вызывайте общие исключения**
 
-  Если вы выдаете общий тип исключения, например <xref:System.Exception> или <xref:System.SystemException> в библиотеке или платформе, он заставляет потребителей перехватывать все исключения, включая неизвестные исключения, которые они не узнают о том, как их обрабатывайте.
+  Если выдается общий тип исключения, например, <xref:System.Exception> или <xref:System.SystemException> в библиотеке или платформе, он заставляет потребителей перехватывать все исключения, включая неизвестные исключения, которые они не узнают о том, как обрабатывались.
 
-  Вместо этого либо вызовите более производный тип, уже существующий в платформе, либо создайте собственный тип, производный от <xref:System.Exception>.
+  Вместо этого либо вызовите более производный тип, уже существующий в платформе, либо создайте собственный тип, производный от <xref:System.Exception> .
 
   **Создавать определенные исключения**
 
@@ -66,21 +66,21 @@ ms.locfileid: "72667379"
 
 |Описание параметра|Исключение|
 |---------------------------|---------------|
-|Ссылка на `null`|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null`IsReference|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |За пределами допустимого диапазона значений (например, индекса для коллекции или списка);|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Недопустимое значение `enum`|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Содержит формат, который не соответствует спецификациям параметров метода (например, строке формата для `ToString(String)`).|<xref:System.FormatException?displayProperty=fullName>|
+|Недопустимое `enum` значение|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Содержит формат, который не соответствует спецификациям параметров метода (например, строке форматирования для `ToString(String)` ).|<xref:System.FormatException?displayProperty=fullName>|
 |В противном случае недопустимо|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Если операция недопустима для текущего состояния объекта, вызывается <xref:System.InvalidOperationException?displayProperty=fullName>
+ Если операция недопустима для текущего состояния выдачи объекта<xref:System.InvalidOperationException?displayProperty=fullName>
 
- При выполнении операции с объектом, который был ликвидирован, <xref:System.ObjectDisposedException?displayProperty=fullName>
+ При выполнении операции с объектом, для которого было ликвидировано исключение<xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Если операция не поддерживается (например, в переопределенном **потоке. Write** в потоке, открытом для чтения), вызывается исключение <xref:System.NotSupportedException?displayProperty=fullName>
+ Если операция не поддерживается (например, в переопределенном **потоке. Write** в потоке, открытом для чтения), выдается исключение<xref:System.NotSupportedException?displayProperty=fullName>
 
- Если преобразование приведет к переполнению (например, в явной перегрузке оператора приведения), возникает исключение <xref:System.OverflowException?displayProperty=fullName>.
+ Если преобразование приведет к переполнению (например, в явной перегрузке оператора приведения), выдается исключение<xref:System.OverflowException?displayProperty=fullName>
 
- Во всех остальных случаях рекомендуется создать собственный тип, производный от <xref:System.Exception>, и создать его.
+ Во всех остальных случаях рекомендуется создать собственный тип, производный от, <xref:System.Exception> и создать его.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, измените тип созданного исключения на конкретный тип, который не является одним из зарезервированных типов.
@@ -89,4 +89,4 @@ ms.locfileid: "72667379"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1031: не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031. Не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)

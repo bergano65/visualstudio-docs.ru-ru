@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Выбор листов с помощью программных средств
+title: Как программно выбрать листы
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255633"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547008"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Практическое руководство. Выбор листов с помощью программных средств
+# <a name="how-to-programmatically-select-worksheets"></a>Как программно выбрать листы
   Метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> выбирает указанный объект, который перемещает выделенный пользователем фрагмент в новый объект. Если необходимо сфокусироваться на объекте без изменения выбранного пользователем фрагмента, используйте метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A>.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Если нужно выбрать существующий лист в надстройке VSTO или если лист был создан во время выполнения в настройке на уровне документа, для доступа к нему следует использовать коллекцию <xref:Microsoft.Office.Interop.Excel.Sheets> книги Excel; в противном случае к ведущему элементу <xref:Microsoft.Office.Tools.Excel.Worksheet> можно получить доступ напрямую.
+ Если вы хотите выбрать существующий лист в надстройке VSTO или если лист был создан во время выполнения в настройке на уровне документа, необходимо получить доступ к нему с помощью <xref:Microsoft.Office.Interop.Excel.Sheets> коллекции Excel книги Excel. в противном случае можно напрямую получить доступ к <xref:Microsoft.Office.Tools.Excel.Worksheet> ведущему элементу.
 
 ## <a name="use-the-worksheet-host-item"></a>Использование ведущего элемента листа
  В настройке на уровне документа добавьте следующий код в *Лист1. vb* или *Sheet1.CS*.
@@ -47,12 +47,12 @@ ms.locfileid: "71255633"
      [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Печать листов программными средствами](../vsto/how-to-programmatically-print-worksheets.md)
-- [Практическое руководство. Программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [Практическое руководство. Программное Скрытие листов](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Практическое руководство. Программная защита листов](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Как программно печатать листы](../vsto/how-to-programmatically-print-worksheets.md)
+- [Руководство. Программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [Как программно скрыть листы](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Как программно защитить листы](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Ведущий элемент листа](../vsto/worksheet-host-item.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

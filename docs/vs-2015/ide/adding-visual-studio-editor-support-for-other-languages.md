@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548113"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,46 @@ ms.locfileid: "72620776"
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Раскраска синтаксиса, завершение операторов и поддержка функции "Перейти к"
  Доступные в редакторе Visual Studio функции, такие как раскраска синтаксиса, завершение операторов и "Перейти к", упрощают чтение, создание и редактирование кода. На следующем снимке экрана показан пример редактирования скрипта Perl в Visual Studio. Синтаксис автоматически выделяется цветом. Например, примечания в коде выделяются зеленым цветом, код — черным, пути — красным, операторы — синим. Редактор Visual Studio автоматически применяет цветовое выделение синтаксиса к любому поддерживаемому им языку. Кроме того, по мере ввода известного ключевого слова или объекта функция завершения операторов выводит список возможных операторов и объектов. Функция завершения операторов помогает более быстро и легко создавать код.
 
- ![Цветовая раскраска синтаксиса в скрипте Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Раскраска синтаксиса в скрипте Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  Сейчас Visual Studio поддерживает раскраску синтаксиса и завершение базовых операторов для следующих языков с помощью [грамматик TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык отсутствует в таблице, его можно добавить.
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|Visual C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL-код|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Производитель|Ruby|TypeScript|YAML|
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- Go
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL-код
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Производитель
+- Ruby
+- TypeScript
+- YAML
 
  Помимо раскраски синтаксиса и завершения основных операторов в Visual Studio также имеется функция [Перейти к](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Она позволяет быстро выполнять поиск в файлах кода, путях к файлам и символах кода. Visual Studio предоставляет поддержку функции "Перейти к" для указанных далее языков.
 
@@ -74,13 +102,13 @@ ms.locfileid: "72620776"
 
 |Имя папки|Описание|
 |-----------------|-----------------|
-|\\ *\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, **\Matlab**.|
+|\\*\<language name>*|Папка языка. Замените на *\<language name>* имя языка. Например, **\Matlab**.|
 |\Syntaxes|Папка грамматики. Содержит файлы JSON грамматики для языка, например **Matlab.json**.|
 |\Snippets|Папка фрагментов кода. Содержит фрагменты кода для языка.|
 
- В Windows % userprofile % разрешается в путь: c:\Users\\ *\<имя_пользователя>* . Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.
+ В Windows% UserProfile% разрешается в путь: c:\Users \\ *\<user name>* . Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.
 
  Дополнительные сведения о создании грамматик TextMate см. в статьях [TextMate. Общие сведения о грамматике языка: добавление выделения синтаксиса исходного кода, внедренного и HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Заметки о создании грамматики языка и пользовательской темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Visual Studio 2013 перейдите к](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) разделу "улучшения". Пошаговое руководство по [созданию фрагментов кода](../ide/walkthrough-creating-a-code-snippet.md) [: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)

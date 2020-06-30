@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f13669959a5874c74753d304371b8ab7db14d4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661361"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547294"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: методы P/Invoke не должны быть видимыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
@@ -33,10 +33,10 @@ ms.locfileid: "72661361"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный метод в открытом типе имеет атрибут <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> (также реализованный с помощью ключевого слова `Declare` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Открытый или защищенный метод в открытом типе имеет <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибут (также реализуется с помощью `Declare` ключевого слова в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="rule-description"></a>Описание правила
- Методы, помеченные атрибутом <xref:System.Runtime.InteropServices.DllImportAttribute> (или методами, определенными с помощью `Declare` ключевого слова в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), используют службы вызова платформы для доступа к неуправляемому коду. Такие методы не следует делать видимыми. Сохранив эти методы как частные или внутренние, вы убедитесь, что библиотека не может быть использована для нарушения безопасности, разрешая вызывающим объектам доступ к неуправляемым API, которые им не удалось вызвать в противном случае.
+ Методы, помеченные <xref:System.Runtime.InteropServices.DllImportAttribute> атрибутом (или методами, определенными с помощью `Declare` ключевого слова in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), используют службы вызова платформы для доступа к неуправляемому коду. Такие методы не следует делать видимыми. Сохранив эти методы как частные или внутренние, вы убедитесь, что библиотека не может быть использована для нарушения безопасности, разрешая вызывающим объектам доступ к неуправляемым API, которые им не удалось вызвать в противном случае.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, измените уровень доступа метода.

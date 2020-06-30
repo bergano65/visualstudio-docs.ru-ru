@@ -1,7 +1,7 @@
 ---
 title: Создание кода в процессе построения
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590557"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546722"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Вызов преобразования текста в процессе сборки
 
@@ -26,7 +26,7 @@ ms.locfileid: "75590557"
 
 Возможности задач построения несколько отличаются в зависимости от используемого обработчика сборки. При сборке решения в Visual Studio текстовый шаблон может получить доступ к API Visual Studio (EnvDTE), если задан атрибут [hostspecific = "true"](../modeling/t4-template-directive.md) . Но это не верно при построении решения из командной строки или при запуске серверной сборки с помощью Visual Studio. В таких случаях сборка выполняется в MSBuild и используется другой узел T4. Это означает, что при создании текстового шаблона с помощью MSBuild доступ к таким файлам, как имена файлов проекта, невозможен. Тем не менее [сведения о среде можно передать в текстовые шаблоны и обработчики директив с помощью параметров сборки](#parameters).
 
-## <a name="buildserver"></a>Настройка компьютеров
+## <a name="configure-your-machines"></a><a name="buildserver"></a>Настройка компьютеров
 
 Чтобы включить задачи сборки на компьютере разработчика, установите пакет SDK моделирования для Visual Studio.
 
@@ -36,22 +36,22 @@ ms.locfileid: "75590557"
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft. VisualStudio. TextTemplating. SDK. host. 15,0. dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.15.0.dll
   - Microsoft.TextTemplating.Build.Tasks.dll
   - Microsoft.TextTemplating.targets
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft. VisualStudio. TextTemplating. 15,0. dll
-  - Microsoft. VisualStudio. TextTemplating. interfaces. 15,0. dll
-  - Microsoft. VisualStudio. TextTemplating. VSHost. 15,0. dll
+  - Microsoft.VisualStudio.TextTemplating.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.15.0.dll
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft. VisualStudio. TextTemplating. моделирование. 15,0. dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> Если вы получаете `MissingMethodException` для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например, *MSBuild. exe*).
+> Если вы получаете `MissingMethodException` метод для метода Microsoft. CodeAnalysis при запуске целевых объектов сборки TextTemplating на сервере сборки, убедитесь, что сборки Roslyn находятся в каталоге с именем *Roslyn* , который находится в том же каталоге, что и исполняемый файл сборки (например, *msbuild.exe*).
 
 ## <a name="edit-the-project-file"></a>Изменение файла проекта
 
@@ -164,7 +164,7 @@ ms.locfileid: "75590557"
 
 В свойстве `AfterTransform` можно указывать списки файлов:
 
-- GeneratedFiles – список файлов, сгенерированных данным процессом. Для файлов, которые перезаписали существующие файлы только для чтения, `%(GeneratedFiles.ReadOnlyFileOverwritten)` будет иметь значение true. Эти файлы можно извлекать из системы управления версиями.
+- GeneratedFiles – список файлов, сгенерированных данным процессом. Для файлов, которые перезаписали существующие файлы только для чтения, `%(GeneratedFiles.ReadOnlyFileOverwritten)` будут иметь значение true. Эти файлы можно извлекать из системы управления версиями.
 
 - NonGeneratedFiles – список доступных только для чтения файлов, которые не были перезаписаны.
 
@@ -184,7 +184,7 @@ ms.locfileid: "75590557"
 </ItemGroup>
 ```
 
-Полезной папкой для перенаправления является `$(IntermediateOutputPath)`.
+Полезной папкой для перенаправления является `$(IntermediateOutputPath)` .
 
 Если указать имя выходного файла, оно имеет приоритет над расширением, заданным в директиве Output в шаблонах.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Передача данных контекста сборки в шаблоны
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать свойства [сборки](../msbuild/msbuild-properties.md) и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` получает данные из `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры имеют значения по умолчанию.
+> `ResolveParameterValue`Получает данные `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры имеют значения по умолчанию.
 
-## <a name="msbuild"></a>Использование свойств проекта в директивах сборки и включения
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Использование свойств проекта в директивах сборки и включения
 
 Макросы Visual Studio, такие как **$ (SolutionDir)** , не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -289,7 +289,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 При обновлении включаемого файла или другого файла, прочитанного шаблоном, Visual Studio не преобразует файл автоматически. Преобразование шаблонов в рамках сборки гарантирует актуальность всех компонентов.
 
-**Какие существуют другие варианты преобразования текстовых шаблонов?**
+**Имеют ли другие варианты преобразования текстовых шаблонов?**
 
 - [Служебную программу TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в скриптах команд. В большинстве случаев проще использовать MSBuild.
 
@@ -299,17 +299,17 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 - [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуются во время выполнения в приложении.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 ::: moniker range="vs-2017"
 
-- В шаблоне T4 MSbuild имеется хорошее руководство по `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- В шаблоне T4 MSbuild есть хорошие рекомендации по адресу`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- В шаблоне T4 MSbuild имеется хорошее руководство по `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- В шаблоне T4 MSbuild есть хорошие рекомендации по адресу`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

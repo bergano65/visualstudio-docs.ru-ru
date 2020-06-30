@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное создание пользовательского календаря
+title: Руководство. Программное создание пользовательского календаря
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 653340d3a682664670998c874344bfc931105892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575225"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546059"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Практическое руководство. Программное создание пользовательского календаря
-  В этом примере создается новая папка календаря **личный**и затем создает новый элемент встречи и добавляет его в папке календаря. Затем код отображает «календарь».
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Руководство. Программное создание пользовательского календаря
+  В этом примере создается новая папка календаря с именем **персоналкалендар**, а затем создается новый элемент встречи и добавляется в папку календаря. Затем в коде отображается папка календаря.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Пример
  [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с элементами календаря](../vsto/working-with-calendar-items.md)
-- [Практическое руководство. Программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)
-- [Практическое руководство. Программное создание приглашения на собрание](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [Руководство. Программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)
+- [Руководство. Программное создание запроса на собрание](../vsto/how-to-programmatically-create-a-meeting-request.md)

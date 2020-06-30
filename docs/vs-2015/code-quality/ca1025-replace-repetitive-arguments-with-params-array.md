@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84809341d7898aeb3defe0447f2a2f1142eb460a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661969"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546631"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: замените повторяющиеся аргументы массивом параметров
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025. Замените повторяющиеся аргументы массивом параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
@@ -36,7 +36,7 @@ ms.locfileid: "72661969"
  Открытый или защищенный метод в открытом типе имеет более трех параметров, и его последние три параметра имеют один и тот же тип.
 
 ## <a name="rule-description"></a>Описание правила
- Используйте массив параметров вместо повторяющихся аргументов, если точное число аргументов неизвестно, а аргументы-переменные имеют одинаковый тип или могут передаваться как один и тот же тип. Например, метод <xref:System.Console.WriteLine%2A> предоставляет перегрузку общего назначения, которая использует массив параметров для приема любого числа аргументов <xref:System.Object>.
+ Используйте массив параметров вместо повторяющихся аргументов, если точное число аргументов неизвестно, а аргументы-переменные имеют одинаковый тип или могут передаваться как один и тот же тип. Например, <xref:System.Console.WriteLine%2A> метод предоставляет перегрузку общего назначения, которая использует массив параметров для приема любого числа <xref:System.Object> аргументов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, замените повторяющиеся аргументы массивом параметров.
