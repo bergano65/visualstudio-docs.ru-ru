@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e34a8e7d4860a599155554410e13df5a6eb3bfe1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 53fa5f61cb7c503502956831452bc3eca1a9fece
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672494"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521203"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: удалите вызовы GC.KeepAlive
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004. Удалите вызовы GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
@@ -33,13 +33,13 @@ ms.locfileid: "72672494"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Классы используют `SafeHandle`, но по-прежнему содержат вызовы `GC.KeepAlive`.
+ Классы используют, `SafeHandle` но по-прежнему содержат вызовы `GC.KeepAlive` .
 
 ## <a name="rule-description"></a>Описание правила
- При преобразовании в `SafeHandle` использование удалите все вызовы `GC.KeepAlive` (Object). В этом случае классы не должны вызывать `GC.KeepAlive`, предполагая, что они не имеют метода завершения, но полагаются на `SafeHandle` для завершения работы с маркерами ОС.  Несмотря на то, что стоимость хранения в вызове `GC.KeepAlive` может быть незначительной, чем измеряется производительностью, восприятие того, что вызов `GC.KeepAlive` является необходимым или достаточным для решения проблемы времени существования, которая, возможно, больше не существует, усложняет поддержание кода.
+ При преобразовании в `SafeHandle` Использование удалите все вызовы `GC.KeepAlive` (Object). В этом случае классы не должны вызывать метод `GC.KeepAlive` , предполагая, что они не имеют метода завершения, но используют `SafeHandle` для завершения для них маркер ОС.  Несмотря на то, что стоимость хранения в вызове `GC.KeepAlive` может быть незначительной, чем измеряется производительностью, восприятие того, что вызов `GC.KeepAlive` является обязательным или достаточным для решения проблемы времени существования, которая может быть больше не существует, затрудняет поддержание кода.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Удалите вызовы к `GC.KeepAlive`.
+ Удалите вызовы к `GC.KeepAlive` .
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это предупреждение можно отключить, только если технически не подходит для преобразования в `SafeHandle` использования в классе.
+ Это предупреждение можно отключить, только если технически не подходит для преобразования в `SafeHandle` использование в вашем классе.

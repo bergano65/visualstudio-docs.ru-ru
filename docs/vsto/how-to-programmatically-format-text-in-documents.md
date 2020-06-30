@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное форматирование текста в документах
+title: Руководство. Программное форматирование текста в документах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9f0f64f47317b5712c34d8aca4ea6f64191438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971138"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519851"
 ---
-# <a name="how-to-programmatically-format-text-in-documents"></a>Практическое руководство. Программное форматирование текста в документах
+# <a name="how-to-programmatically-format-text-in-documents"></a>Руководство. Программное форматирование текста в документах
   Вы можете использовать объект <xref:Microsoft.Office.Interop.Word.Range> для форматирования текста в документе Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Следующий пример выделяет первый абзац в документе и изменяет размер шрифта, имя шрифта и тип выравнивания. Затем он выбирает диапазон и отображает окно сообщения о приостановке перед выполнением следующего раздела кода. Следующий раздел вызывает метод отмены <xref:Microsoft.Office.Tools.Word.Document> ведущего элемента (для настройки уровня документа) или <xref:Microsoft.Office.Interop.Word.Document> класса (для надстройки VSTO) три раза. Применяется стиль «Обычный отступ» и отображается окно сообщения о приостановке выполнения кода. Затем код вызывает метод <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> один раз и показывает окно сообщения.
+ Следующий пример выделяет первый абзац в документе и изменяет размер шрифта, имя шрифта и тип выравнивания. Затем он выбирает диапазон и отображает окно сообщения о приостановке перед выполнением следующего раздела кода. В следующем разделе вызывается метод Undo <xref:Microsoft.Office.Tools.Word.Document> ведущего элемента (для настройки на уровне документа) или <xref:Microsoft.Office.Interop.Word.Document> класса (для надстройки VSTO) три раза. Применяется стиль «Обычный отступ» и отображается окно сообщения о приостановке выполнения кода. Затем код вызывает метод <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> один раз и показывает окно сообщения.
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
@@ -46,7 +46,7 @@ ms.locfileid: "62971138"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#62)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Практическое руководство. Программная Вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Практическое руководство. Программным способом поиска и замены текста в документах](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. Программное определение и выбор диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Инструкции. Программная вставка текста в документы Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Руководство. Программный поиск и замена текста в документах](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)

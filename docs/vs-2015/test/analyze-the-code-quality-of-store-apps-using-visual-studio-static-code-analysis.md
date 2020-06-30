@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: f837822e47c911e3c27d9d41e31ae9cd448d4fc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520501"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода приложений Магазина с помощью функций анализа статического кода Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +26,14 @@ ms.locfileid: "82586700"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|||
+|Заголовок|Описание|
 |-|-|
 |[Анализ качества кода Visual Basic и C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Используйте анализ кода в проектах Visual Basic и C#.|
 |[Анализ качества кода C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Используйте анализ кода в проектах C++.|
 
 ## <a name="more-code-analysis-info"></a>Дополнительные сведения об анализе кода
 
-|||
+|Заголовок|Описание|
 |-|-|
 |[Анализ кода в библиотеке MSDN](https://msdn.microsoft.com/library/dd264897.aspx)|Дополнительные сведения об использовании анализа кода в Visual Studio Ultimate, Visual Studio Premium и Visual Studio Professional.|
 |[Блог команды разработчиков анализа кода MSDN](https://blogs.msdn.com/b/codeanalysis/)|Получите дополнительную информацию, включая технические документы и образцы, в блоге команды разработчиков анализа кода.|

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное Открытие существующих документов
+title: Руководство. Программное открытие существующих документов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812401"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519903"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Практическое руководство. Программное Открытие существующих документов
-  <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Метод открывает существующий документ Microsoft Office Word, заданный параметром полный путь и имя файла. Этот метод возвращает <xref:Microsoft.Office.Interop.Word.Document> , представляющий открытый документ.
+# <a name="how-to-programmatically-open-existing-documents"></a>Руководство. Программное открытие существующих документов
+  <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>Метод открывает существующий Microsoft Office документ Word, указанный в полном пути и имени файла. Этот метод возвращает объект <xref:Microsoft.Office.Interop.Word.Document> , представляющий открытый документ.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="to-open-a-document"></a>Чтобы открыть документ
+## <a name="to-open-a-document"></a>Открытие документа
 
-- Вызовите <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> метод <xref:Microsoft.Office.Interop.Word.Documents> коллекции и предоставьте путь к документу.
+- Вызовите <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> метод <xref:Microsoft.Office.Interop.Word.Documents> коллекции и укажите путь к документу.
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
-## <a name="to-open-a-document-as-read-only"></a>Чтобы открыть документ только для чтения
+## <a name="to-open-a-document-as-read-only"></a>Открытие документа только для чтения
 
-- Вызовите <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> метод, укажите путь к документу и задать *ReadOnly* аргумент **True** в вызове метода.
+- Вызовите <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> метод, укажите путь к документу и задайте для аргумента *ReadOnly* в вызове метода **значение true** .
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,9 +42,9 @@ ms.locfileid: "62812401"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера кода требуется следующее.
 
-- Документ с именем *NewDocument.doc* должен существовать в каталог с именем *теста* на диске C.
+- Документ с именем *NewDocument.doc* должен существовать в каталоге с именем *Test* на диске C.
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)
-- [Практическое руководство. Программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. Программное создание новых документов](../vsto/how-to-programmatically-create-new-documents.md)
+- [Руководство. программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное добавление и удаление примечаний на листе
+title: Руководство. Программное добавление и удаление комментариев на листе
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520085"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Практическое руководство. Программное добавление и удаление примечаний на листе
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Руководство. Программное добавление и удаление комментариев на листе
   Вы можете добавлять и удалять комментарии в листах Microsoft Office Excel программными средствами. Комментарии можно добавлять только в отдельные ячейки, а не в диапазоны из нескольких ячеек.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "62967700"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программное отображение примечаний на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [Как программно отображать комментарии на листе](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
