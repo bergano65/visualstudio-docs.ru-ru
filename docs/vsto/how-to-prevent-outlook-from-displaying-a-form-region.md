@@ -39,7 +39,7 @@ ms.locfileid: "85520138"
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
 - [Пошаговое руководство. Проектирование области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Как добавить область формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

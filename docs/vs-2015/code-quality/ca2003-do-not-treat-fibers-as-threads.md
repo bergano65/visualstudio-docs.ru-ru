@@ -25,7 +25,7 @@ ms.locfileid: "85521178"
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003. Не рассматривайте волокна в качестве потоков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|

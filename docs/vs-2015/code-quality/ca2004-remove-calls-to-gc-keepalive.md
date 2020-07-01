@@ -25,7 +25,7 @@ ms.locfileid: "85521203"
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004. Удалите вызовы GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|

@@ -28,7 +28,7 @@ ms.locfileid: "85520110"
  [!code-vb[Trin_OL_AddContact#1](../vsto/codesnippet/VisualBasic/Trin_OL_AddContact/thisaddin.vb#1)]
  [!code-csharp[Trin_OL_AddContact#1](../vsto/codesnippet/CSharp/Trin_OL_AddContact/thisaddin.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Работа с элементами контактов](../vsto/working-with-contact-items.md)
 - [Руководство. Программное создание встреч](../vsto/how-to-programmatically-create-appointments.md)
 - [Руководство. программный доступ к контактам Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)

@@ -1,9 +1,9 @@
 ---
-title: '&lt;Описание&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент Description (разработка решений Office в Visual Studio)'
 titleSuffix: ''
 ms.custom: secdec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ede5ac920c1d40402504544a13f8a00905b82e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c8b54f8ccf2181a053ae5d2fe221b49840cd72c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972386"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520271"
 ---
-# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Описание&gt; элемент (Разработка решений Office в Visual Studio)
+# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент Description (разработка решений Office в Visual Studio)
   Элемент `description` пространства имен `vstov4` хранит описание решения Office, которое отображается в диалоговом окне надстроек COM приложений Microsoft Office.
 
 ## <a name="syntax"></a>Синтаксис
@@ -34,14 +34,14 @@ ms.locfileid: "62972386"
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- Необязательный параметр. Элемент `description` находится в пространстве имен `vstov4` . Он содержит описание надстройки, которая отображается в диалоговом окне надстроек COM в приложении Microsoft Office.
+ Необязательный элемент. Элемент `description` находится в пространстве имен `vstov4` . Он содержит описание надстройки, которая отображается в диалоговом окне надстроек COM в приложении Microsoft Office.
 
  У элемента `description` нет атрибутов и дочерних элементов.
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
 ### <a name="description"></a>Описание
- В приведенном ниже примере кода показан элемент `description` для решения уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+ В приведенном ниже примере кода показан элемент `description` для решения уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 

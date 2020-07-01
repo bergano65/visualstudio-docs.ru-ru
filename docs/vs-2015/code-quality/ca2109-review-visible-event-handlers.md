@@ -25,7 +25,7 @@ ms.locfileid: "85520982"
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109. Проверьте видимые обработчики событий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|

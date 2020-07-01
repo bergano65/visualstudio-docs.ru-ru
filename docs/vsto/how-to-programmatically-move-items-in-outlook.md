@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное перемещение элементов в Outlook
+title: Руководство. Программное перемещение элементов в Outlook
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812572"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519916"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Практическое руководство. Программное перемещение элементов в Outlook
-  В этом примере перемещает непрочитанные сообщения электронной почты из **папки "Входящие"** в папку с именем **теста**. В примере перемещается только сообщения, которые содержат слово **теста** в `Subject` поля.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Руководство. Программное перемещение элементов в Outlook
+  В этом примере из папки **"Входящие"** перемещаются непрочитанные сообщения электронной почты в папку с именем **Test**. В этом примере в поле перемещаются только те сообщения, которые содержат слово **Test** `Subject` .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,12 +30,12 @@ ms.locfileid: "62812572"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуются:
 
-- Папка почты Outlook с именем **теста**.
+- Папка почты Outlook с именем **Test**.
 
-- Сообщение электронной почты с слово **теста** в `Subject` поля.
+- Сообщение электронной почты, поступающие по слову **Test** в `Subject` поле.
 
 ## <a name="see-also"></a>См. также
 - [Работа с папками](../vsto/working-with-folders.md)
-- [Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Практическое руководство. Программный поиск в указанной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Как программно получить папку по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Руководство. Программный поиск в определенной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Руководство. программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

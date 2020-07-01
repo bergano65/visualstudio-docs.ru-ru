@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652195"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521216"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: проанализируйте SQL-запросы с целью выявления уязвимостей безопасности
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
@@ -34,28 +34,28 @@ ms.locfileid: "72652195"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод задает свойство <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>, используя строку, созданную из строкового аргумента в метод.
+ Метод задает <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> свойство, используя строку, созданную из строкового аргумента в метод.
 
 ## <a name="rule-description"></a>Описание правила
  Это правило предполагает, что строковый аргумент содержит введенные пользователем данные. Созданная из введенных пользователем данных командная строка SQL уязвима перед атаками путем внедрения кода SQL. При атаке путем внедрения кода SQL злонамеренный пользователь предоставляет входные данные, которые изменяют структуру запроса при попытке повредить или получить несанкционированный доступ к основной базе данных. Типичные методы включают в себя введение одинарной кавычки или апострофа, который является разделителем строкового литерала SQL; два тире, обозначающие комментарий SQL; и точка с запятой, которая указывает, что следует Новая команда. Если входные данные пользователя должны быть частью запроса, используйте один из следующих элементов, перечисленных в порядке эффективности, чтобы снизить риск атаки.
 
-- Используйте хранимую процедуру.
+- Использование хранимой процедуры.
 
 - Используйте параметризованную командную строку.
 
 - Перед построением строки команды проверьте введенные пользователем данные как для типа, так и для содержимого.
 
-  Следующие типы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] реализуют свойство <xref:System.Data.IDbCommand.CommandText%2A> или предоставляют конструкторы, которые устанавливают свойство с помощью строкового аргумента.
+  Следующие [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] типы реализуют <xref:System.Data.IDbCommand.CommandText%2A> свойство или предоставляют конструкторы, которые устанавливают свойство с помощью строкового аргумента.
 
-- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> и <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> и <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
-- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> и <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> и <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
-- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> и <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> и <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
 - [System. Data. SqlServerCe. Склцекомманд] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) и [System. Data. SqlServerCe. Склцедатаадаптер] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
-- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> и <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>.
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> и <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
   Обратите внимание, что это правило нарушается, если метод ToString типа используется явно или неявно для создания строки запроса. Пример.
 
@@ -80,11 +80,11 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  Можно отключить вывод предупреждения из этого правила, если текст команды не содержит вводимых пользователем данных.
 
 ## <a name="example"></a>Пример
- В следующем примере показан метод `UnsafeQuery`, нарушающий правило, и метод `SaferQuery`, который удовлетворяет правилу с помощью параметризованной командной строки.
+ В следующем примере показан метод, `UnsafeQuery` , который нарушает правило и метод, `SaferQuery` который удовлетворяет правилу с помощью параметризованной командной строки.
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
- [Общие сведения о безопасности](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
+## <a name="see-also"></a>См. также
+ [Обзор безопасности](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

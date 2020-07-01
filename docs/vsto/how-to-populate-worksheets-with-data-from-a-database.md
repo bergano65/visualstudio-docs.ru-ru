@@ -1,7 +1,7 @@
 ---
 title: Как заполнить листы данными из базы данных
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985861"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520124"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Как заполнить листы данными из базы данных
 
@@ -41,9 +41,9 @@ ms.locfileid: "72985861"
 
 На листе создается один из следующих элементов управления:
 
-- При перетаскивании поля на листе создается элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>. Дополнительные сведения см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
+- При перетаскивании поля <xref:Microsoft.Office.Tools.Excel.NamedRange> на листе создается элемент управления. Дополнительные сведения см. в разделе [элемент управления NamedRange](../vsto/namedrange-control.md).
 
-- При перетаскивании таблицы на листе создается элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject>. Дополнительные сведения см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
+- При перетаскивании таблицы <xref:Microsoft.Office.Tools.Excel.ListObject> на листе создается элемент управления. Дополнительные сведения см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
 Можно добавить другой элемент управления, выбрав таблицу или поле в окне **Источники данных** , а затем выбрав другой элемент управления из раскрывающегося списка.
 

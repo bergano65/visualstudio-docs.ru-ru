@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Служба удаленного отладчика Visual Studio на целевом компьютере не удается подключиться к этому компьютеру | Документация Майкрософт'
+title: 'Ошибка: служба Удаленный отладчик Visual Studio на целевом компьютере не может подключиться к этому компьютеру | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697348"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520514"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Ошибка: Службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,8 @@ ms.locfileid: "65697348"
   
  В следующей таблице показано, какие учетные записи имеют доступ к компьютеру:  
   
-|||||  
-|-|-|-|-|  
-||Учетная запись LocalSystem|Доменная учетная запись|Локальные учетные записи, имеющие одинаковые имена пользователей и пароли на обоих компьютерах|  
+|Сценарий|Учетная запись LocalSystem|Доменная учетная запись|Локальные учетные записи, имеющие одинаковые имена пользователей и пароли на обоих компьютерах|  
+|-|-|-|-|-|  
 |Оба компьютера находятся в том же домене|Да|Да|Да|  
 |Оба компьютера находятся в доменах, имеющих двустороннее отношение доверия|Нет|Нет|Да|  
 |Один или оба компьютера находятся в рабочей группе|Нет|Нет|Да|  
@@ -48,7 +47,7 @@ ms.locfileid: "65697348"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1. Убедитесь, что служба удаленного отладчика Visual Studio правильно настроена на удаленном компьютере. Дополнительные сведения см. в разделе [задать удаленных инструментов на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Убедитесь, что служба удаленного отладчика Visual Studio правильно настроена на удаленном компьютере. Дополнительные сведения см. в разделе [настройка удаленные средства на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 2. Запустите службу удаленного отладчика под учетной записью, которая имеет доступ к ведомому компьютеру отладчика, как показано в предыдущей таблице.  
   
@@ -77,5 +76,5 @@ ms.locfileid: "65697348"
 - Запустите монитор удаленной отладки как приложение, а не как службу.  
   
 ## <a name="see-also"></a>См. также  
- [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Ошибки удаленной отладки и устранение неполадок](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

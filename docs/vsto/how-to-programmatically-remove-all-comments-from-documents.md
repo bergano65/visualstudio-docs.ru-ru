@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное удаление всех комментариев из документа
+title: Руководство. Программное удаление всех комментариев из документов
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955836"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519890"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Практическое руководство. Программное удаление всех комментариев из документа
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Руководство. Программное удаление всех комментариев из документов
   Используйте метод `DeleteAllComments` для удаления всех комментариев из документа Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -42,5 +42,5 @@ ms.locfileid: "62955836"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное добавление примечаний в текст документа](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
+- [Руководство. Программное добавление комментариев к тексту в документах](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [Ведущий элемент документа](../vsto/document-host-item.md)

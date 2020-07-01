@@ -1,7 +1,7 @@
 ---
 title: Управляемый справочник (разработка решений Office в Visual Studio)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985770"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519864"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Управляемый справочник (разработка решений Office в Visual Studio)
-  В этом разделе содержится справочная документация по API для пространств имен и типов, используемых в проектах Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](includes/net-v45-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем справочном разделе документации по Visual Studio: [управляемый справочник (разработка решений Office в Visual Studio). )](managed-reference-office-development-in-visual-studio.md).
+  В этом разделе содержится справочная документация по API для пространств имен и типов, используемых в проектах Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](includes/net-v45-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем справочном разделе документации по Visual Studio: [управляемый справочник (разработка решений Office в Visual Studio)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>Содержание раздела
  <xref:Microsoft.Office.Tools>
 
  Содержит классы, общие для программирования решений Office. К ним относятся базовый класс для надстроек VSTO, классы для создания настраиваемых областей задач в настройках VSTO, классы для создания смарт-тегов в решениях Word и Excel и классы для создания панелей действий в настройках уровня документа.
@@ -72,6 +72,6 @@ ms.locfileid: "72985770"
 
 ## <a name="see-also"></a>См. также
 - [Обзор средств Visual Studio для среды выполнения Office](visual-studio-tools-for-office-runtime-overview.md)
-- [Начало работы &#40;с разработкой Office в Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Примеры и пошаговые руководства по разработке решений Office](office-development-samples-and-walkthroughs.md)
 - [Разработка и создание решений Office](designing-and-creating-office-solutions.md)

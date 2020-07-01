@@ -34,7 +34,7 @@ ms.locfileid: "85520099"
 
 - Контакты, последние имена которых содержат строку «**НД»** (например, Тзипи Бутнару) в папке « **Контакты** ».
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Работа с элементами контактов](../vsto/working-with-contact-items.md)
 - [Руководство. Программное добавление записи в контакты Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Руководство. Программный поиск определенного контакта](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

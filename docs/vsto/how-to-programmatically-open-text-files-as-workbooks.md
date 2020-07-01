@@ -37,7 +37,7 @@ ms.locfileid: "85519837"
 
 - Текстовый файл `Test.txt` , который будет сохранен на диске C.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Работа с книгами](../vsto/working-with-workbooks.md)
 - [Руководство. Программное открытие книг](../vsto/how-to-programmatically-open-workbooks.md)
 - [Как создать новые книги программным способом](../vsto/how-to-programmatically-create-new-workbooks.md)

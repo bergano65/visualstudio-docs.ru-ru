@@ -39,7 +39,7 @@ ms.locfileid: "85519832"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)
 - [Как программно скрыть листы](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Руководство. Программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

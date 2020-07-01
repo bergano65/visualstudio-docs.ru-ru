@@ -1,7 +1,7 @@
 ---
 title: Функция GetVstoSolutionMetadata
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7714e78e897e6c8b391a6c30e9a548671ce80c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebbedaab7e7ac342f6d6ace191d820f6a0c8090
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796045"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520189"
 ---
 # <a name="getvstosolutionmetadata-function"></a>Функция GetVstoSolutionMetadata
-  Этот API поддерживает инфраструктуру Office и не предназначен для использования непосредственно из программного кода.
+  Этот API поддерживает инфраструктуру Office и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,8 +33,8 @@ HRESULT WINAPI GetVstoSolutionMetadata(
 
 |Параметр|Описание|
 |---------------|-----------------|
-|*lpwszSolutionMetadataKey*|Не следует использовать.|
-|*ppSolutionInfo*|Не следует использовать.|
+|*лпвсзсолутионметадатакэй*|Не используйте.|
+|*ппсолутионинфо*|Не используйте.|
 
 ## <a name="return-value"></a>Возвращаемое значение
- Если функция завершается успешно, возвращается **S_OK**. Если функция завершается с ошибкой, возвращается код ошибки.
+ Если функция завершается с ошибкой, она возвращает **S_OK**. Если функция завершается ошибкой, возвращается код ошибки.

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Открытие документов Visio
+title: Руководство. Программное открытие документов Visio
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812255"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519994"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Практическое руководство. Открытие документов Visio
-  Существует два метода для открытия существующих документов Microsoft Office Visio: Откройте и OpenEx. Метод OpenEx идентична метод Open, за исключением того, что предоставляет аргументы, в которых вызывающий может указать параметры открытия документа.
+# <a name="how-to-programmatically-open-visio-documents"></a>Руководство. Программное открытие документов Visio
+  Существует два метода открытия существующих Microsoft Office документов Visio: Open и Опенекс. Метод Опенекс идентичен методу Open, за исключением того, что он предоставляет аргументы, в которых вызывающий объект может указать способ открытия документа.
 
  Подробные сведения об объектной модели см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) и метода [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) .
 
@@ -34,7 +34,7 @@ ms.locfileid: "62812255"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
 
-## <a name="open-a-visio-document-with-specified-arguments"></a>Открытие документа Visio с заданными аргументами
+## <a name="open-a-visio-document-with-specified-arguments"></a>Открытие документа Visio с указанными аргументами
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>Открытие документа Visio как закрепленного и доступного только для чтения
 
@@ -46,12 +46,12 @@ ms.locfileid: "62812255"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера кода требуется следующее.
 
-- Документ Visio с именем `myDrawing.vsd` должен быть расположен в каталоге с именем `Test` в *Мои документы* папки (для Windows XP и более ранних версий) или *документов* папки (для Windows Vista).
+- Документ Visio с именем `myDrawing.vsd` должен находиться в каталоге с именем `Test` в папке " *Мои документы* " (для Windows XP и более ранних версий) или в папке " *документы* " (для Windows Vista).
 
 ## <a name="see-also"></a>См. также
 - [Решения Visio](../vsto/visio-solutions.md)
-- [Обзор объектной модели Visio](../vsto/visio-object-model-overview.md)
-- [Практическое руководство. Программное создание документов Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Практическое руководство. Программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Практическое руководство. Программное сохранение документов Visio](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Практическое руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
+- [Как программно создавать новые документы Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Руководство. программное закрытие документов Visio](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Как программно сохранять документы Visio](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)

@@ -44,7 +44,7 @@ ms.locfileid: "85519903"
 
 - Документ с именем *NewDocument.doc* должен существовать в каталоге с именем *Test* на диске C.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Руководство. Программное создание новых документов](../vsto/how-to-programmatically-create-new-documents.md)
 - [Руководство. программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)
