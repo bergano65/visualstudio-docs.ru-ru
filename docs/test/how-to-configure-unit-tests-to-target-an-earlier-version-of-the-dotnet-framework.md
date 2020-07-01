@@ -1,20 +1,20 @@
 ---
 title: Модульные тесты, предназначенные для более ранней версии .NET Framework
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596025"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288173"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. настройку модульных тестов для предыдущей версии .NET Framework
 
 При создании тестового проекта в Microsoft Visual Studio последняя версия платформы .NET Framework устанавливается в качестве целевой по умолчанию. Кроме того, при обновлении тестовых проектов, созданных в предыдущих версиях Visual Studio, они обновляются до последней версии платформы .NET Framework. Путем изменения свойств проекта можно явно изменить целевую версию .NET Framework для проекта на более раннюю.
 
@@ -83,7 +83,7 @@ ms.locfileid: "75596025"
 
 2. В **обозревателе решений** выберите команду **Выгрузить проект** для нового тестового проекта C++.
 
-3. В **обозревателе решений** выберите выгруженный тестовый проект C++, а затем **Изменить \<имя проекта>.vcxproj**.
+3. В **обозревателе решений** выберите выгруженный тестовый проект C++, а затем **Изменить \<project name>.vcxproj**.
 
    *VCXPROJ*-файл откроется в редакторе.
 
@@ -104,7 +104,7 @@ ms.locfileid: "75596025"
 
 6. В **обозревателе решений** выберите в контекстном меню нового тестового проекта C++ пункт **Перезагрузить проект**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Сборка и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

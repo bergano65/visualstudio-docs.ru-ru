@@ -1,7 +1,7 @@
 ---
 title: Создание надстройки для средства просмотра результатов веб-тестов производительности
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589088"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287835"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Практическое руководство. Создание надстройки для средства просмотра результатов веб-тестов производительности
 
@@ -24,7 +24,7 @@ ms.locfileid: "75589088"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Кроме того, нужно добавить ссылку на библиотеку DLL LoadTestPackage, расположенную в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<версия>\Enterprise\Common7\IDE\PrivateAssemblies*.
+Кроме того, необходимо добавить ссылку на DLL-файл LoadTestPackage, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
 Чтобы расширить интерфейс **средства просмотра результатов веб-тестов производительности**, необходимо создать надстройку Visual Studio и добавить пользовательский элемент управления. Ниже описано, как создать надстройку и пользовательский элемент управления, а также как реализовать классы, необходимые для расширения пользовательского интерфейса **средства просмотра результатов веб-тестов производительности**.
 

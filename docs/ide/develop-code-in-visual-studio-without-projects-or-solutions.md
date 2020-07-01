@@ -1,6 +1,6 @@
 ---
 title: Разработка кода без использования проектов и решений
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596298"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284897"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
 
@@ -26,7 +26,7 @@ ms.locfileid: "75596298"
 
 ## <a name="open-any-code"></a>Открытие любого кода
 
-Вы можете открыть в Visual Studio любой код одним из следующих способов:
+Ниже представлены способы открытия кода в Visual Studio:
 
 - В строке меню Visual Studio выберите **Файл** > **Открыть** > **Папка** и перейдите в расположение кода.
 
@@ -34,10 +34,18 @@ ms.locfileid: "75596298"
 
 ::: moniker range="vs-2017"
 - На **начальной странице** Visual Studio щелкните ссылку **Открыть папку**.
+
+    > [!IMPORTANT]
+    > Не все разновидности кода можно открыть с помощью ссылки **Открыть папку** на **начальной странице** Visual Studio. Например, если файл с кодом был сохранен как часть решения &mdash; то есть в файле SLN &mdash; необходимо использовать один из других указанных здесь способов, чтобы открыть код.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - Выберите ссылку **Открыть папку** в начальном окне.
+
+    > [!IMPORTANT]
+    > Не все разновидности кода можно открыть с помощью ссылки **Открыть папку** в начальном окне Visual Studio. Например, если файл с кодом был сохранен как часть решения &mdash; то есть в файле SLN &mdash; необходимо использовать один из других указанных здесь способов, чтобы открыть код.
+
 ::: moniker-end
 
 - Если вы предпочитаете работать с клавиатурой, нажмите клавиши **Ctrl**+**Shift**+**Alt**+**O** в Visual Studio.
@@ -115,7 +123,7 @@ ms.locfileid: "75596298"
 
 ![Имя проекта на кнопке запуска](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка задач сборки и отладки для режима разработки "Открытая папка"](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)

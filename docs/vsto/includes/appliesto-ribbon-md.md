@@ -6,4 +6,4 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68154724"
 ---
-  **Область применения:** Сведения этого раздела применяются к документа\-уровень проектов и добавить VSTO\-в проектах для следующих приложений: Excel; InfoPath 2013 и InfoPath 2010; Outlook; PowerPoint; Проект; Visio; Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Применимо к:** Сведения в этом разделе относятся к \- проектам уровня документа и к добавлению VSTO \- в проекты для следующих приложений: Excel; InfoPath 2013 и InfoPath 2010; Невозможно Приложения Проектом Исправления Словам. Дополнительные сведения см. в разделе [доступность функций по типам приложений Office и проектов](../../vsto/features-available-by-office-application-and-project-type.md).

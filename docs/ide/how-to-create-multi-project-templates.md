@@ -1,7 +1,7 @@
 ---
 title: Создание многопроектных шаблонов
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591090"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284416"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
 
@@ -117,7 +117,7 @@ ms.locfileid: "75591090"
 
    Файлы и папки сжимаются в *ZIP*-файл.
 
-10. Скопируйте *ZIP*-файл в пользовательский каталог шаблона проекта. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates*.
+10. Скопируйте *ZIP*-файл в пользовательский каталог шаблона проекта. По умолчанию это каталог *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
 
 11. В Visual Studio выберите **Файл** > **Создать** > **Проект** и убедитесь, что шаблон отображается.
 
@@ -186,10 +186,10 @@ ms.locfileid: "75591090"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

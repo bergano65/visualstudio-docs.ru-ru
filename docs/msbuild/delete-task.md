@@ -1,6 +1,6 @@
 ---
 title: Задача Delete | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Delete
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634283"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288914"
 ---
 # <a name="delete-task"></a>Delete - задача
 
@@ -31,15 +31,15 @@ ms.locfileid: "77634283"
 
 ## <a name="parameters"></a>Параметры
 
-В следующей таблице приводятся параметры задачи `Delete`.
+В следующей таблице приводятся параметры задачи `Delete` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
 |`DeletedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, которые были успешно удалены.|
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы для удаления.|
 |`TreatErrorsAsWarnings`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, ошибки регистрируются как предупреждения. Значение по умолчанию — `false`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -48,22 +48,59 @@ ms.locfileid: "77634283"
 
 ## <a name="example"></a>Пример
 
-В следующем примере рассматривается удаление файла *MyApp.pdb*.
+В следующем примере рассматривается удаление файла *MyApp.pdb* при выполнении сборки целевого объекта `DeleteDebugSymbolFile`.
 
 ```xml
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
 
     <PropertyGroup>
-        <AppName>MyApp</AppName>
+        <AppName>ConsoleApp1</AppName>
     </PropertyGroup>
 
-    <Target Name="DeleteFiles">
-        <Delete Files="$(AppName).pdb" />
+    <Target Name="DeleteDebugSymbolFile">
+        <Message Text="Deleting $(OutDir)$(AppName).pdb"/>
+        <Delete Files="$(OutDir)$(AppName).pdb" />
     </Target>
+  
 </Project>
+
 ```
 
-## <a name="see-also"></a>См. также раздел
+Если необходимо отслеживать удаленные файлы, задайте для `TaskParameter` значение `DeletedFiles` с именем элемента, как показано ниже:
 
+```xml
+      <Target Name="DeleteDebugSymbolFile">
+        <Delete Files="$(OutDir)$(AppName).pdb" >
+              <Output TaskParameter="DeletedFiles" ItemName="DeletedList"/>
+        </Delete>
+        <Message Text="Deleted files: '@(DeletedList)'"/>
+    </Target>
+```
+
+Вместо того чтобы напрямую использовать подстановочные знаки в задаче `Delete`, создайте `ItemGroup` файлов для удаления и выполнения задачи `Delete`. Но обязательно аккуратно разместите `ItemGroup`. Если поместить `ItemGroup` на верхнем уровне в файле проекта, он будет вычисляться на раннем этапе до начала сборки и поэтому не будет содержать файлы, созданные в ходе процесса сборки. Поэтому поместите `ItemGroup`, который создает список элементов для удаления в целевом объекте, близко к задаче `Delete`. Чтобы не создавать список элементов с путем, который начинается в корня диска, укажите условие. Это позволит убедиться, что свойство не является пустым.
+
+Задача `Delete` предназначена для удаления файлов. Если вы хотите удалить каталог, используйте задачу [RemoveDir](removedir-task.md).
+
+Задача `Delete` не предоставляет возможность удалять файлы, доступные только для чтения. Чтобы удалить файлы, доступные только для чтения, можно использовать задачу `Exec` для выполнения команды `del` или ее эквивалента с соответствующим параметром. Обратите внимание на длину списка входных элементов, так как в командной строке существуют ограничения. Кроме того нужно выполнять обработку имен файлов с пробелами, как показано в следующем примере:
+
+```xml
+<Target Name="DeleteReadOnly">
+  <ItemGroup>
+    <FileToDelete Include="read only file.txt"/>
+  </ItemGroup>
+  <Exec Command="del /F /Q &quot;@(FileToDelete)&quot;"/>
+</Target>
+```
+
+Как правило, при написании скриптов сборки следует определить, является ли удаление логической частью операции `Clean`. Если необходимо очистить некоторые файлы в рамках обычной операции `Clean`, их можно добавить в список `@(FileWrites)` и они будут удалены при следующем выполнении `Clean`. Если необходимо выполнить дополнительную пользовательскую обработку, определите целевой объект и запустите его, задав атрибут `BeforeTargets="Clean"` или `AfterTargets="Clean"`. Вы также можете определить пользовательскую версию целевых объектов `BeforeClean` или `AfterClean`. Дополнительные сведения см. в статье [Настройка сборки](customize-your-build.md).
+
+## <a name="see-also"></a>См. также
+
+- [Задача RemoveDir](removedir-task.md)
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

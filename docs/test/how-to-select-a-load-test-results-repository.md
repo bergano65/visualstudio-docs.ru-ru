@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Выбор хранилища результатов нагрузочного теста.
+title: Практическое руководство. выбор репозитория результатов нагрузочного теста
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.connectstringmissing
 - vs.test.load.dialog.databaseconnectstring
@@ -15,14 +15,14 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589010"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287575"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Практическое руководство. Выбор репозитория результатов нагрузочного теста
+# <a name="how-to-select-a-load-test-results-repository"></a>Практическое руководство. выбор репозитория результатов нагрузочного теста
 
 Не обязательно использовать локальное хранилище результатов. Нагрузочные тесты зачастую выполняются на наборе удаленных компьютеров агентов. Агенты совместно с контролером могут создавать большую имитационную нагрузку, чем любой одиночный компьютер. Дополнительные сведения см. в статье [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -43,7 +43,7 @@ ms.locfileid: "75589010"
 4. В поле **Имя сервера** введите имя сервера, на котором нужно выполнять скрипты `LoadTest`.
 
     > [!TIP]
-    > Если в качестве хранилища результатов нагрузочных тестов на локальном компьютере используется SQL Express, введите \<имя_компьютера>\sqlexpress (например, **MyComputer\sqlexpress**).
+    > Если в качестве хранилища результатов нагрузочных тестов на локальном компьютере используется SQL Express, введите \<computername>\sqlexpress (например, **MyComputer\sqlexpress**).
 
 5. В разделе **Вход на сервер** можно выбрать **Использовать проверку подлинности Windows**. Можно указать имя пользователя и пароль, но в этом случае необходимо установить флажок **Сохранить пароль**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589010"
 
 8. В диалоговом окне **Управление контроллером тестирования** нажмите кнопку **Закрыть**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление результатами нагрузочного теста в репозитории результатов нагрузочного теста](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Контроллеры и агенты тестирования](configure-test-agents-and-controllers-for-load-tests.md)

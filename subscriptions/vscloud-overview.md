@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273950"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292936"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
@@ -52,7 +52,7 @@ ms.locfileid: "80273950"
 > [!div class="mx-imgBorder"]
 > ![Войдите на портал подписчиков Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png).
 
-Если вы купили несколько подписок, перейдите на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com), чтобы назначить подписки другим пользователям.
+Если вы купили несколько подписок, перейдите на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com), чтобы назначить подписки другим пользователям.  Вам может потребоваться [добавить новые подписки](add-monthly-subs.md) на портал администрирования, если они были приобретены в первый раз.
 
 > [!div class="mx-imgBorder"]
 > ![Назначение подписок другим пользователям](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)

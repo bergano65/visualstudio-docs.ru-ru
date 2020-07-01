@@ -1,7 +1,7 @@
 ---
 title: Изоляция тестируемого кода с помощью Microsoft Fakes
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 06/03/2020
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566908"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286964"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
 
@@ -33,6 +33,7 @@ Fakes предлагает два варианта на выбор:
 
 - Visual Studio Enterprise
 - Проект .NET Framework
+- Поддержка проектов .NET Core и в стиле SDK в настоящее время доступна в предварительной версии. [Подробнее](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - Проекты .NET Standard не поддерживаются.
@@ -85,7 +86,7 @@ Fakes предлагает два варианта на выбор:
 
     2. Выберите ссылку на сборку, в которой определен интерфейс (например, IStockFeed). В контекстном меню данной ссылки щелкните **Добавить сборку имитаций**.
 
-    3. Повторно создайте решение.
+    3. Выполните повторную сборку решения.
 
 3. В тестах создайте экземпляры заглушки и предоставьте код для ее методов.
 
@@ -244,7 +245,7 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
 Можно также создать оболочки для отдельных экземпляров, конструкторов и свойств. Дополнительные сведения см. в статье [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

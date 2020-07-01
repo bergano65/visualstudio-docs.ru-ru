@@ -1,6 +1,6 @@
 ---
 title: Практическое руководство. Установка визуализатора | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183630"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286392"
 ---
 # <a name="how-to-install-a-visualizer"></a>Практическое руководство. установку визуализатора
 После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Установка визуализатора — это простой процесс.
@@ -43,7 +43,7 @@ ms.locfileid: "84183630"
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Скопируйте DLL [Стороны отлаживаемого объекта](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) в одно из следующих мест:
+3. Скопируйте DLL [стороны отлаживаемого объекта](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) в одно из следующих расположений:
 
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers\` *Framework*
 
@@ -53,6 +53,10 @@ ms.locfileid: "84183630"
     - `net2.0` для отлаживаемого объекта, выполняющего среду выполнения `.NET Framework`.
     - `netstandard2.0` для отлаживаемого объекта с использованием среды выполнения, поддерживающей `netstandard 2.0` (`.NET Framework v4.6.1+` или `.NET Core 2.0+`).
     - `netcoreapp` для отлаживаемого объекта, выполняющего среду выполнения `.NET Core`. (поддерживает `.NET Core 2.0+`)
+
+   Библиотека DLL на стороне отлаживаемого объекта необходима, если требуется создать автономный визуализатор. Эта библиотека DLL содержит код для объекта данных, который может реализовывать методы <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+
+   Если вы отлаживаете различные типы кода на стороне отлаживаемого объекта, его библиотека DLL должна быть помещена в папку для минимально поддерживаемых TFM.
 
 4. Перезапустите сеанс отладки.
 

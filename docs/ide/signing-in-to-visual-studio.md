@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132714"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285300"
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
 
@@ -23,6 +23,13 @@ ms.locfileid: "79132714"
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Вход в Visual Studio для Mac](/visualstudio/mac/signing-in).
+
+::: moniker range="vs-2017"
+
+> [! ПРЕДУПРЕЖДЕНИЕ] Использование Visual Studio 2017 для доступа к ресурсам, настроенным для условного доступа, может вызвать проблему с проверкой подлинности, когда в течение одного сеанса Visual Studio будут появляться повторные запросы на аутентификацию. 
+> Для работы с ресурсами, настроенными для условного доступа, выполните обновление до Visual Studio 2019 версии 16.6 или последующей. Дополнительные сведения см. в статье [Использование Visual Studio с учетными записями, которые требуют многофакторную идентификацию](work-with-multi-factor-authentication.md).
+
+::: moniker-end
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Почему нужно выполнять вход в Visual Studio?
 

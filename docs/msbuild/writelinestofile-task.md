@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630669"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286106"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile - задача
 
@@ -31,17 +31,17 @@ ms.locfileid: "77630669"
 
 ## <a name="task-parameters"></a>Параметры задачи
 
- В следующей таблице приводятся параметры задачи `WriteLinestoFile`.
+ В следующей таблице приводятся параметры задачи `WriteLinestoFile` .
 
-|Параметр|Description|
+|Параметр|Описание|
 |---------------|-----------------|
-|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, в который нужно записать элементы.|
-|`Lines`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает элементы, которые нужно записать в файл.|
-|`Overwrite`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, задача перезаписывает существующее содержимое файла.|
-|`Encoding`|Необязательный параметр `String`.<br /><br /> Выбирает кодировку символов, например Юникод.  Ознакомьтесь с командой <xref:System.Text.Encoding>.|
-|`WriteOnlyWhenDifferent`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, то указанный целевой файл (если он существует) будет считываться первым для сравнения с данными, которые записала бы задача. Если они совпадают, то файл не записывается на диск, а метка времени сохраняется.|
+|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает файл, в который нужно записать элементы.|
+|`Lines`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает элементы, которые нужно записать в файл. По умолчанию используется пустой список.|
+|`Overwrite`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, задача перезаписывает существующее содержимое файла. Значение по умолчанию — `false`.|
+|`Encoding`|Необязательный параметр `String`.<br /><br /> Выбирает кодировку символов, например Юникод. По умолчанию — UTF-8.  См. также раздел <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, то указанный целевой файл (если он существует) будет считываться первым для сравнения с данными, которые записала бы задача. Если они совпадают, то файл не записывается на диск, а метка времени сохраняется. Значение по умолчанию — `false`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
  Если `Overwrite` имеет значение `true`, создается файл, в него записывается содержимое, а затем файл закрывается. Если целевой файл уже существует, он будет переопределен. Если `Overwrite` имеет значение `false`, содержимое добавляется к файлу. Если конечный файл не существует, он создается.
 
@@ -95,7 +95,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

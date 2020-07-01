@@ -1,7 +1,7 @@
 ---
 title: Локальные шаблоны
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591051"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284247"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
 
@@ -36,9 +36,9 @@ ms.locfileid: "75591051"
 
 ::: moniker range="vs-2017"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<выпуск>\\Common7\IDE\ProjectTemplates\\<язык\>\\<код языка\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<язык\>\\<код языка\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<выпуск>\Common7\IDE\ItemTemplates\\<язык\>\\<код языка\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<язык\>\\<код языка\>*
 
 Например, следующий каталог содержит шаблоны элементов Visual Basic для английского языка (LCID 1033):
 
@@ -48,9 +48,9 @@ ms.locfileid: "75591051"
 
 ::: moniker range=">=vs-2019"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<выпуск>\\Common7\IDE\ProjectTemplates\\<язык\>\\<код языка\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<язык\>\\<код языка\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<выпуск>\Common7\IDE\ItemTemplates\\<язык\>\\<код языка\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<язык\>\\<код языка\>*
 
 Например, следующий каталог содержит шаблоны элементов Visual Basic для английского языка (LCID 1033):
 
@@ -102,7 +102,7 @@ ms.locfileid: "75591051"
 
 1. Создайте папку в папке языка программирования, находящейся в каталоге пользовательских шаблонов проектов. Например, чтобы создать категорию **HelloWorld** для шаблонов проектов C#, необходимо создать следующий каталог:
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. Поместите все шаблоны для этой категории в новую папку.
 
@@ -114,7 +114,7 @@ ms.locfileid: "75591051"
 
 1. Создайте папку в папке языка программирования, находящейся в каталоге пользовательских шаблонов элементов. Например, чтобы создать категорию **HelloWorld** для шаблонов элементов C#, необходимо создать следующий каталог:
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. Поместите все шаблоны для этой категории в новую папку.
 
@@ -156,10 +156,10 @@ ms.locfileid: "75591051"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Справочник по схемам шаблонов Visual Studio (расширяемость)](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)

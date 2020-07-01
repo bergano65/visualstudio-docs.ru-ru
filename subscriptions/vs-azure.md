@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 55092145d5760e235dc0c38c5a191760af2a2bc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183617"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279774"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -106,7 +106,7 @@ ms.locfileid: "84183617"
 
 Дополнительные сведения см. в документации по [технической поддержке](vs-tech-support.md).
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Вопрос: Как владеет интеллектуальной собственностью, созданной с помощью индивидуального кредита Azure DevTest?
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Вопрос: Кто владеет интеллектуальной собственностью, созданной с помощью индивидуального кредита Azure DevTest?
 Ответ.  Интеллектуальная собственность, создаваемая сотрудником с использованием ресурсов, предоставляемых компанией, является интеллектуальной собственностью такой компании. Таким образом, если вы получили подписку Visual Studio от своего работодателя, будут применяться корпоративные политики, связанные с интеллектуальной собственностью. 
 
 ## <a name="support-resources"></a>Ресурсы поддержки

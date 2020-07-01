@@ -2,7 +2,7 @@
 title: Отладка приложения JavaScript или TypeScript
 description: Visual Studio поддерживает отладку приложений JavaScript и TypeScript
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75678978"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285196"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Отладка приложения JavaScript или TypeScript в Visual Studio
 
@@ -58,7 +58,7 @@ Visual Studio поддерживает отладку на стороне кли
 
 Сведения о создании сопоставителей с исходным кодом см. в разделе [Создание сопоставлений источника для отладки](#generate_source_maps).
 
-### <a name="prepare_the_browser_for_debugging"></a> Подготовка браузера к отладке
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Подготовка браузера к отладке
 
 ::: moniker range=">=vs-2019"
 Для этого сценария используйте Microsoft Edge (Chromium), в настоящее время называемый **Microsoft Edge Beta** в IDE, или Chrome.
@@ -162,7 +162,7 @@ Visual Studio поддерживает отладку на стороне кли
 
    * Если вам нужно декомпозировать код в файле с компиляцией в код на языке программирования JavaScript (например, *app-bundle.js*), но сделать это не удается, удалите файл сопоставления источника *filename.js.map*.
 
-### <a name="troubleshooting_source_maps"></a> Устранение неполадок точек останова и сопоставителей с исходным кодом
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Устранение неполадок точек останова и сопоставителей с исходным кодом
 
 Если вам нужно декомпозировать код в исходном файле TypeScript или JSX, но сделать это не удается, используйте **Присоединить к процессу**, чтобы подключить отладчик, как описано в предыдущих этапах. Убедитесь, что ваша среда настроена правильно:
 
@@ -174,7 +174,7 @@ Visual Studio поддерживает отладку на стороне кли
 
 Либо, если вам нужно декомпозировать код в исходном файле (например *app.tsx*), но сделать это не удается, попробуйте использовать оператор `debugger;` в исходном файле или установите точки останова в инструментах для разработчиков в Chrome (или средства F12 для Microsoft Edge).
 
-## <a name="generate_source_maps"></a> Создание сопоставлений источника для отладки
+## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a> Создание сопоставлений источника для отладки
 
 В Visual Studio можно использовать и создавать сопоставления источника для исходных файлов JavaScript. Такая возможность часто нужна, когда исходный код минифицирован или создан в транспайлере, например в TypeScript или Babel. Доступные варианты зависят от типа проекта.
 
@@ -210,7 +210,7 @@ Visual Studio поддерживает отладку на стороне кли
 
 В сложных сценариях средства браузера (**F12**) иногда лучше подходят для отладки, так как для них не нужно выполнять изменения в пользовательских префиксах.
 
-### <a name="configure_source_maps"></a> Настройка сопоставлений источника с помощью файла tsconfig.json
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Настройка сопоставлений источника с помощью файла tsconfig.json
 
 Если вы добавите в проект файл *tsconfig.json*, Visual Studio будет считать корневой каталог проектом TypeScript. Чтобы добавить файл, щелкните проект правой кнопкой мыши в обозревателе решений и последовательно выберите **Добавить > Новый элемент > JSON-файл конфигурации TypeScript**. Это действие добавит в проект файл *tsconfig.json*, аналогичный представленному ниже.
 

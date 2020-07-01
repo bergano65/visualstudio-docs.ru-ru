@@ -1,18 +1,18 @@
 ---
 title: Настройка модульных тестов с помощью RUNSETTINGS-файла
 ms.date: 10/03/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880355"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288771"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -214,6 +214,27 @@ ms.locfileid: "80880355"
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
+  
+  <!-- Configuration for loggers -->
+  <LoggerRunSettings>
+    <Loggers>      
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
 
   <!-- Adapter Specific sections -->
 
@@ -310,6 +331,32 @@ public void HomePageTest()
 ```
 
 Чтобы использовать параметры тестового запуска, добавьте в тестовый класс закрытое поле <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> и общедоступное свойство <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>.
+
+### <a name="logger-run-settings"></a>Параметры запуска средств ведения журнала
+
+```xml
+<LoggerRunSettings>
+    <Loggers>        
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
+```
+
+Раздел `LoggerRunSettings` определяет одно или несколько средств ведения журнала, которые будут использоваться при тестовом запуске. Самые распространенные — это console, trx и html. 
 
 ### <a name="mstest-run-settings"></a>Параметры запуска MSTest
 

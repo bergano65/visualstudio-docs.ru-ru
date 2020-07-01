@@ -1,7 +1,7 @@
 ---
 title: Создание подключаемого модуля уровня запроса для веб-тестов производительности
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589161"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287978"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Практическое руководство. Создание подключаемого модуля уровня запроса
 
@@ -74,7 +74,7 @@ ms.locfileid: "75589161"
     > [!WARNING]
     > При запуске веб-теста производительности или нагрузочного теста, в которых используется этот подключаемый модуль, может возникнуть ошибка примерно следующего вида:
     >
-    > **Сбой запроса. Исключение в событии \<подключаемый модуль>: не удалось загрузить файл или сборку "Файл \<"Имя подключаемого модуля".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" или одну из зависимостей. Не удается найти указанный файл.**
+    > **Сбой запроса. Исключение в событии \<plug-in>: не удалось загрузить файл или сборку "\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" или одну из зависимостей. Не удается найти указанный файл.**
     >
     > Это происходит, если в один из подключаемых модулей внесены изменения кода и создана новая версия библиотеки DLL **(Version=0.0.0.0)** , однако подключаемый модуль по-прежнему ссылается на исходную версию подключаемого модуля. Чтобы устранить эту проблему, выполните следующие действия.
     >

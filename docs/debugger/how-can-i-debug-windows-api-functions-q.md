@@ -1,7 +1,7 @@
 ---
 title: Отладка функций Windows API | Документация Майкрософт
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 06/03/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.api
@@ -22,25 +22,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c4141cc1c1bee201435c63317c662181113dff70
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734351"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286408"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Как отладить функции Windows API?
 Если нужно отладить функцию Windows API с загруженными символами NT, необходимо выполнить следующие действия.
 
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Установка точки останова в функции Windows API с загруженными символами NT
 
-- Введите имя функции вместе с именем DLL-файла, в котором эта функция находится. В 32-разрядном коде используйте декорированную форму имени функции. Например, чтобы задать точку останова на **MessageBeep**, необходимо ввести следующее.
+- В диалоговом окне [Точка останова в функции](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file) введите имя функции вместе с именем DLL-файла, в котором эта функция находится (см. статью [Оператор контекста в отладчике Visual Studio (C++)](../debugger/context-operator-cpp.md)). В 32-разрядном коде используйте декорированную форму имени функции. Например, чтобы задать точку останова на **MessageBeep**, необходимо ввести следующее.
 
     ```cpp
     {,,USER32.DLL}_MessageBeep@4
     ```
 
      Чтобы получить внутреннее имя, обратитесь к разделу [Просмотр внутренних имен](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+
+     Можно проверить внутреннее имя и просмотреть его в дизассемблированном коде. При паузе в выполнении функции в отладчике Visual Studio щелкните функцию правой кнопкой мыши в окне редактора кода или окне стека вызовов выберите **К дизассемблированному коду**.
+
+- В 64-разрядном коде можно использовать недекорированное имя.
+
+    ```cpp
+    {,,USER32.DLL}MessageBeep
+    ```
 
 ## <a name="see-also"></a>См. также
 - [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)

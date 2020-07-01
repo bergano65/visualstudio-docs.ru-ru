@@ -6,4 +6,4 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68151378"
 ---
-  **Область применения:** Сведения этого раздела применяются к документа\-уровень проектов и добавить VSTO\-в проектах для Excel и Word. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Применимо к:** Сведения в этом разделе относятся к \- проектам уровня документа и добавлению VSTO \- в проектах для Excel и Word. Дополнительные сведения см. в разделе [доступность функций по типам приложений Office и проектов](../../vsto/features-available-by-office-application-and-project-type.md).

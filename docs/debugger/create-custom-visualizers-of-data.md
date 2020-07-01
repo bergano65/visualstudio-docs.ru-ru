@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184553"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280880"
 ---
 # <a name="create-custom-data-visualizers"></a>Создание пользовательских визуализаторов данных
+
  *Визуализатор* — это компонент пользовательского интерфейса отладчика [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], который отображает переменную или объект способом, подходящим для этого типа данных. Например, HTML-визуализатор интерпретирует строку HTML и отображает результат в том виде, в каком она будет выглядеть в окне браузера. Визуализатор точечных рисунков распознает структуру точечного рисунка и отображает его. Некоторые визуализаторы позволяют не только просматривать, но и редактировать данные.
 
  Отладчик [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] включает шесть стандартных визуализаторов. Визуализаторы текста, HTML, XML и JSON работают со строковыми объектами. Визуализатор дерева WPF отображает свойства визуального дерева объекта WPF. Визуализатор набора данных работает с объектами DataSet, DataView и DataTable.
@@ -74,11 +75,23 @@ ms.locfileid: "84184553"
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>Создание источника объекта визуализатора для отлаживаемого кода
 
-В коде на стороне отладчика тип для визуализации (источник объекта для отлаживаемого кода) указывается с помощью атрибута <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
+В коде на стороне отлаживаемого объекта измените <xref:System.Diagnostics.DebuggerVisualizerAttribute>, предоставив тип для визуализации (источник объекта на стороне отлаживаемого объекта) (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Свойство `Target` задает источник объекта. Если источник объекта не задан, визуализатор будет использовать источник объекта, заданный по умолчанию.
 
-1. В коде на стороне отладчика измените <xref:System.Diagnostics.DebuggerVisualizerAttribute>, предоставив источник объекта (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Свойство `Target` задает источник объекта. Если источник объекта не задан, визуализатор будет использовать источник объекта, заданный по умолчанию.
+::: moniker range=">=vs-2019"
+Код отлаживаемого объекта содержит источник объекта для визуализации. Объект данных может переопределять методы <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Библиотека DLL на стороне отлаживаемого объекта требуется для создания автономного визуализатора.
+::: moniker-end
 
-1. Чтобы разрешить визуализатору изменять и отображать объекты данных, переопределите методы `TransferData` или `CreateReplacementObject` из <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+В коде на стороне отлаживаемого объекта:
+
+- Чтобы разрешить визуализатору изменять объекты данных, источник объекта должен наследоваться от <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> и переопределять методы `TransferData` и `CreateReplacementObject`.
+
+- Если нужно включить поддержку многоплатформенного нацеливания в визуализаторе, можно использовать следующие моникеры целевой платформы (TFM) в файле проекта на стороне отлаживаемого объекта.
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   Это единственные поддерживаемые TFM.
 
 ## <a name="see-also"></a>См. также
 

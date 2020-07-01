@@ -2,7 +2,7 @@
 title: Восстановление Visual Studio
 titleSuffix: ''
 description: Сведения о восстановлении установки Visual Studio 2017
-ms.date: 07/31/2019
+ms.date: 06/15/2020
 ms.custom: seodec18
 ms.topic: conceptual
 author: ornellaalt
@@ -12,18 +12,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5883889e4ccbeab22d8a11578bcd342ca95e9be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114745"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285248"
 ---
 # <a name="repair-visual-studio"></a>Восстановление Visual Studio
 
-::: moniker range="vs-2017"
+Иногда установка Visual Studio может повреждаться. Восстановление позволяет устранить проблемы, возникшие во время установки, во всех операциях установки, включая обновления.
 
-Иногда установка Visual Studio может повреждаться. В этом случае ее следует восстановить.
+## <a name="when-to-use-repair"></a>Когда целесообразно использовать восстановление
+* При возникновении проблем с полезными данными установки. Это может произойти, если не удалось записать файл на диск, а удаление поврежденного файла не помогает исправить ситуацию. В ходе восстановления можно заново получить необходимые файлы. 
+* При наличии проблем со скачиванием на стороне клиента. Если проблему не удается устранить после проверки ее возможных причин, связанных с подключением и прокси-сервером, можно попробовать выполнить восстановление. 
+* Если возникли проблемы с обновлением Visual Studio. Процедура восстановления способна устранить многие распространенные проблемы с обновлением. 
+
+> [!TIP] 
+> Если проблема установки вызвана неполадкой в базовой службе Windows, например в установщике Windows, то при восстановлении может возникнуть та же проблема. Системная проблема может быть связана с нерабочим установщиком Windows или нестабильным подключением к Интернету. Чтобы проверить, является ли проблема системной, просмотрите отчет об ошибках, создаваемый при выполнении операции установки.
+
+> [!NOTE] 
+> При восстановлении Visual Studio происходит сброс параметров пользователя, а имеющиеся сборки устанавливаются повторно. Если проблему с продуктом не удается устранить, отправьте [запрос в службу поддержки Visual Studio](https://developercommunity.visualstudio.com/content/problem/post.html?space=8), так как восстановления может быть недостаточно для решения проблемы.
+
+## <a name="how-to-repair"></a>Как выполнить восстановление
+::: moniker range="vs-2017"
 
 1. Найдите **Visual Studio Installer** на своем компьютере.
 
@@ -49,7 +61,7 @@ ms.locfileid: "76114745"
 
 ::: moniker range="vs-2019"
 
-1. Найдите установщик Visual Studio на своем компьютере.
+1. Найдите **Visual Studio Installer** на своем компьютере.
 
      Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
@@ -77,7 +89,7 @@ ms.locfileid: "76114745"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 * [Установка Visual Studio](install-visual-studio.md)
 * [Обновление Visual Studio](update-visual-studio.md)

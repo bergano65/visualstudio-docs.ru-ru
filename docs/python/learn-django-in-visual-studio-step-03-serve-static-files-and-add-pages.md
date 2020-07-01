@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62958259"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279813"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 
-**Предыдущий шаг. [Руководство (шаг 2). Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Предыдущий шаг. [Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 В предыдущих шагах этого руководства рассматривалось создание минимального приложения Django с одной страницей автономного HTML. Современные веб-приложения обычно состоят из многих страниц и используют общие ресурсы, такие как файлы CSS и JavaScript, для обеспечения согласованного стиля и реакции на события.
 
@@ -32,7 +32,7 @@ ms.locfileid: "62958259"
 > - добавлять дополнительные страницы в приложение (шаг 3–3);
 > - использовать наследование шаблона для создания заголовка и панели навигации, которая используется на разных страницах (шаг 3–4).
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Шаг 3–1. Знакомство с шаблонами элементов
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Шаг 3-1. Знакомство с шаблонами элементов
 
 По мере разработки приложения Django обычно добавляется множество дополнительных файлов Python, HTML, CSS и JavaScript. Для каждого типа файла (а также других файлов, таких как *web.config*, которые могут понадобиться для развертывания) Visual Studio предоставляет удобные [шаблоны элементов](python-item-templates.md) для начала работы.
 
@@ -46,7 +46,7 @@ ms.locfileid: "62958259"
 
 Ответ. Файл проекта Visual Studio (*PYPROJ*) содержит идентификатор типа проекта, который помечает его как проект Python. Visual Studio использует этот тип идентификатора для отображения шаблонов элементов, подходящих для типа проекта. Таким образом Visual Studio может предоставлять богатый набор шаблонов элементов для многих типов проектов, который не требуется отсортировывать каждый раз.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Шаг 3–2. Обработка статических файлов из приложения
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Шаг 3-2. Обработка статических файлов из приложения
 
 В веб-приложении, созданном с помощью Python (с помощью любой платформы), файлы Python всегда выполняются на сервере веб-узла и никогда не передаются на компьютер пользователя. Однако другие файлы, такие как каскадные таблицы стилей и JavaScript, используются исключительно браузером, поэтому сервер узла просто доставляет их без изменений всякий раз, когда они запрашиваются. Такие файлы называются статическими файлами, Django может доставлять их автоматических без необходимости написания кода.
 
@@ -103,7 +103,23 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Ответ. Вы можете добавить другие файлы CSS, JavaScript и HTML в свою папку *static* любым способом. Типичный способ организации статических файлов — это создание вложенных папок *fonts*, *scripts* и *content* (для таблиц стилей и других файлов). В каждом случае не забудьте включить эти папки в относительный путь к файлу в ссылках `{% static %}`.
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Шаг 3–3. Добавление страницы в приложение
+### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>Вопрос. Можно ли выполнить эту задачу без использования тега {% load staticfiles %}?
+
+Ответ. Да, можете.
+
+```html
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="../../static/site.css" />
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html>
+```
+
+## <a name="step-3-3-add-a-page-to-the-app"></a>Шаг 3-3. Добавление страницы в приложение
 
 Добавление еще одной страницы в приложение означает:
 
@@ -170,7 +186,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Как показано в следующем разделе, лучше использовать тег `{% url '<pattern_name>' %}` в шаблоне страницы, чтобы ссылаться на *имя* шаблона. В этом случае Django создаст соответствующий URL-адрес. Например, замените `<div><a href="home">Home</a></div>` в *about.html* на `<div><a href="{% url 'index' %}">Home</a></div>`. Использование index работает, потому что первый шаблон URL-адреса в *urls.py* называется index (из-за аргумента `name='index'`). Вы также можете использовать home для обозначения второго шаблона.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Шаг 3–4. Использование наследования шаблона для создания заголовка и навигационной панели
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Шаг 3-4. Использование наследования шаблона для создания заголовка и навигационной панели
 
 Вместо создания явных навигационных ссылок на каждой странице современные веб-приложения обычно используют заголовок фирменной символики и панель навигации, которая предоставляет самые важные ссылки на страницы, всплывающие меню и т. д. Убедитесь, что заголовок и навигационная панель одинаковы на всех страницах, но не повторяйте один и тот же код в каждом шаблоне страницы. Вместо этого необходимо определить общие компоненты всех страниц в одном месте.
 
@@ -272,7 +288,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. Так как в приложение были внесены значительные изменения, самое время [зафиксировать изменения в системе управления версиями](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
 > [Tutorial step 4: Use the full Django Web Project template](learn-django-in-visual-studio-step-04-full-django-project-template.md) (Руководство (шаг 4). Использование полного шаблона веб-проекта Django)
@@ -283,4 +299,4 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 - [Writing your first Django app, part 3](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Написание первого приложения Django (часть 3)) (docs.djangoproject.com)
 - Дополнительные сведения о возможностях шаблонов Django, таких как поток управления, см. в статье [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Язык шаблона Django) (docs.djangoproject.com).
 - Подробные сведения об использовании тега `{% url %}` см. в разделе [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) в статье [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Встроенные теги и фильтры шаблонов для ссылки на шаблоны Django) (docs.djangoproject.com).
-- Руководство по исходному коду на сайте GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Исходный код учебника на GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

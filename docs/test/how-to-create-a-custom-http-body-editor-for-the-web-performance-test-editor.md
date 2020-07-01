@@ -1,19 +1,19 @@
 ---
 title: Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589205"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288153"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -47,7 +47,7 @@ ms.locfileid: "75589205"
 
 1. Откроется диалоговое окно **Изменение целевой рабочей среды**.
 
-1. выберите **Yes** (Да).
+1. Выберите **Да**.
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел **Ссылки** и выберите команду **Добавить ссылку**.
 
@@ -125,7 +125,7 @@ private MessageEditorControl messageEditorControl
 
 1. В **обозревателе решений** щелкните правой кнопкой мыши проект библиотеки элементов управления Windows Forms и выберите команду **Добавить новый элемент**.
 
-   Откроется диалоговое окно **Добавление нового элемента** .
+   Откроется диалоговое окно **Добавление нового элемента**.
 
 2. Выберите **Класс**.
 
@@ -192,7 +192,7 @@ private MessageEditorControl messageEditorControl
 
 ## <a name="add-a-ibinaryhttpbodyeditorplugin-to-the-class"></a>Добавление интерфейса IBinaryHttpBodyEditorPlugin в класс
 
-Реализуйте интерфейс <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
+Реализовать интерфейс <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
 **Обзор кода данной процедуры**
 
@@ -264,14 +264,14 @@ private MessageEditorControl messageEditorControl
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Сборка и развертывание подключаемых модулей
 
-1. В меню **Сборка** выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>** .
+1. В меню **Сборка** выберите **Сборка\<Windows Form Control Library project name>** .
 
 2. Закройте все экземпляры Visual Studio.
 
    > [!NOTE]
    > Закрытие Visual Studio гарантирует, что файл *DLL* не будет заблокирован, когда вы попытаетесь его скопировать.
 
-3. Скопируйте итоговый файл *DLL* (например, *MessageEditors.dll*) из папки *bin\debug* соответствующего проекта в папку *%ProgramFiles%\Microsoft Visual Studio\2017\\\<выпуск>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Скопируйте итоговый файл *DLL* (например, *MessageEditors.dll*) из папки *bin\debug* соответствующего проекта в папку *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Запустите Visual Studio.
 
@@ -297,7 +297,7 @@ private MessageEditorControl messageEditorControl
 
 Дополнительные сведения см. в статье [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>
@@ -310,4 +310,4 @@ private MessageEditorControl messageEditorControl
 - [Кодирование пользовательского правила проверки для веб-теста производительности](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Практическое руководство. Создание подключаемого модуля нагрузочных тестов](../test/how-to-create-a-load-test-plug-in.md)
 - [Создание и запуск закодированного веб-теста производительности](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Практическое руководство. Создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Практическое руководство. создание надстройки Visual Studio для средства просмотра результатов веб-тестов производительности](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

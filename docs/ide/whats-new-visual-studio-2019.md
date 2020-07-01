@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183383"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283597"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -227,5 +227,9 @@ Visual Studio постоянно меняется в соответствии �
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Заметки о выпуске Visual Studio 2019 для Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Новые возможности C++ в Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
+* [Новые возможности C# 8.0](/dotnet/csharp/whats-new/csharp-8.md)
+* [Новые возможности .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1.md)
+* [Новые возможности .NET Framework](/dotnet/framework/whats-new.md)
 * [Конференция Microsoft Build](https://www.microsoft.com/build)
 * [Конференция Microsoft Ignite](https://www.microsoft.com/ignite)

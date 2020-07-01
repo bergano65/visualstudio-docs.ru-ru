@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Задание значка приложения (Visual Basic, C#)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596142"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284065"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Практическое руководство. Задание значка приложения (Visual Basic, C#)
 
@@ -31,15 +31,15 @@ ms.locfileid: "75596142"
 
 1. В **обозревателе решений** выберите узел проекта (не узел **Решение**).
 
-1. В строке меню выберите **Проект** > **Свойства**.
+1. В строке меню щелкните **Проект** > **Свойства**.
 
 1. Когда откроется **Конструктор проектов**, выберите вкладку **Приложение**.
 
 1. **(Visual Basic)** &mdash;В списке **Значок** выберите файл значка (*ICO*).
 
-    **C#** &mdash;Рядом со списком **Значок** нажмите кнопку **\<Обзор... >** , а затем перейдите в расположение файла значка.
+    **C#** &mdash;Рядом со списком **Значок** нажмите кнопку **\<Browse...>** , а затем перейдите в расположение файла значка.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)

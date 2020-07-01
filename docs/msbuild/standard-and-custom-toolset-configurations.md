@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef5a84285afdaa429606937f3e537863b060ec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632165"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289187"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 
@@ -29,10 +29,10 @@ ms.locfileid: "77632165"
 
 |ToolsVersion|Путь к набору инструментов (указанный в свойстве сборки MSBuildToolsPath или MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Путь установки Windows>\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Путь установки Windows>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Путь установки Windows>\Microsoft.NET\Framework\v4.0.30319\\*|
-|Текущие|*\<Путь установки Visual Studio>\MSBuild\Current\bin*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|Текущие|*\<Visual Studio installation path>\MSBuild\Current\bin*|
 
  Значение `ToolsVersion` определяет набор инструментов, который используется проектом, создаваемым в среде Visual Studio. В Visual Studio 2019 значение по умолчанию — Current (вне зависимости от версии, указанной в файле проекта), но этот атрибут можно переопределить с помощью параметра командной строки **/toolsversion**. Сведения об этом атрибуте и других способах указания `ToolsVersion` см. в статье [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
@@ -43,10 +43,10 @@ ms.locfileid: "77632165"
 
 |ToolsVersion|Путь к набору инструментов (указанный в свойстве сборки MSBuildToolsPath или MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Путь установки Windows>\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Путь установки Windows>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Путь установки Windows>\Microsoft.NET\Framework\v4.0.30319\\*|
-|15.0|*\<Путь установки Visual Studio>\MSBuild\15.0\bin*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|15.0|*\<Visual Studio installation path>\MSBuild\15.0\bin*|
 
  Значение `ToolsVersion` определяет набор инструментов, который используется проектом, создаваемым в среде Visual Studio. В Visual Studio 2017 значение по умолчанию — "15.0" (вне зависимости от версии, указанной в файле проекта), но этот атрибут можно переопределить с помощью параметра командной строки **/toolsversion**. Сведения об этом атрибуте и других способах указания `ToolsVersion` см. в статье [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
  ::: moniker-end
@@ -102,10 +102,7 @@ ms.locfileid: "77632165"
 > [!NOTE]
 > Для правильного считывания `<configSections>` должен быть первым подразделом в разделе `<configuration>`.
 
- `ToolsetConfigurationSection` — это пользовательский раздел конфигурации, который может использовать любой узел MSBuild в качестве пользовательской конфигурации. Если используется пользовательский набор инструментов, то серверу ничего не нужно делать для инициализации ядра сборки, кроме предоставления записей для файла конфигурации. Определив записи в реестре, можно задать действующий в пределах компьютера набор инструментов, применимый к *MSBuild.exe*, Visual Studio и всем узлам MSBuild.
-
-> [!NOTE]
-> Если в файле конфигурации заданы параметры для `ToolsVersion`, которые уже были определены в реестре, то эти два определения не объединяются. Определение в файле конфигурации имеет приоритет, поэтому параметры в реестре для этого значения `ToolsVersion` не учитываются.
+ `ToolsetConfigurationSection` — это пользовательский раздел конфигурации, который может использовать любой узел MSBuild в качестве пользовательской конфигурации. Если используется пользовательский набор инструментов, то серверу ничего не нужно делать для инициализации ядра сборки, кроме предоставления записей для файла конфигурации.
 
  Следующие свойства зависят от того значения `ToolsVersion`, которое используется в проектах:
 

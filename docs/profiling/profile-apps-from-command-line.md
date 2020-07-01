@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638691"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285848"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Измерение производительности приложения из командной строки
 
@@ -33,7 +33,7 @@ ms.locfileid: "80638691"
 
 * Знание программы командной строки
 
-* Чтобы собрать сведения о производительности на удаленном компьютере без установки Visual Studio, установите на нем [Средства производительности для Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019). Версия средств должна соответствовать версии Visual Studio.
+* Чтобы собрать сведения о производительности на удаленном компьютере без установки Visual Studio, установите на нем [Средства производительности для Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019). Версия средств должна соответствовать версии Visual Studio.
 
 ## <a name="collect-performance-data"></a>Сбор данных производительности
 
@@ -53,9 +53,9 @@ ms.locfileid: "80638691"
 
    Необходимо включить следующие аргументы:
 
-   * \<*id*> Указывает сеанс сбора. Идентификатор должен быть числом от 1 до 255.
-   * \<*pid*> Идентификатор процесса, для которого вы будете выполнять профилирование. В этом случае — идентификатор процесса, найденный на шаге 1
-   * \<*configFile*> Файл конфигурации для агента сборки, который вы хотите запустить. Дополнительные сведения см. в разделе [Файлы конфигурации для агентов](#config_file).
+   * \<*id*> — определяет сеанс сбора. Идентификатор должен быть числом от 1 до 255.
+   * \<*pid*> — идентификатор процесса, для которого вы будете выполнять профилирование. В нашем случае это идентификатор процесса, найденный на шаге 1.
+   * \<*configFile*> — файл конфигурации для агента сборки, который вы хотите запустить. Дополнительные сведения см. в разделе [Файлы конфигурации для агентов](#config_file).
 
 1. Измените размер Блокнот или введите в него текст, чтобы собрать интересные данные профилирования.
 
@@ -73,10 +73,20 @@ ms.locfileid: "80638691"
 
 Для удобства можно хранить эту информацию в файле конфигурации агента. Файл конфигурации — это файл *.json*, содержащий как минимум имя *.dll* и его CLSID COM. Вот пример файлов конфигурации, которые находятся в следующей папке:
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* Конфигурации CpuUsage (базовая/низкая/высокая), которые соответствуют данным, собранным для средства профилирования [загрузки ЦП](../profiling/cpu-usage.md).
-* Конфигурации DotNetObjectAlloc (базовая/низкая), которые соответствуют данным, собранным для [средства распределения объектов .NET](../profiling/dotnet-alloc-tool.md).
+Скачать и просмотреть файлы конфигурации агента можно по следующим ссылкам:
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Конфигурации CpuUsage (базовая/низкая/высокая), которые соответствуют данным, собранным для инструмента профилирования [Загрузка ЦП](../profiling/cpu-usage.md).
+Конфигурации DotNetObjectAlloc (базовая/низкая), которые соответствуют данным, собранным для [инструмента выделения объектов .NET](../profiling/dotnet-alloc-tool.md).
 
 Базовая/низкая/высокая конфигурации означают частоту выборки. Например, "Низкая" означает 100 выборок в секунду, а "Высокая" — 4000 выборок в секунду.
 

@@ -1,7 +1,7 @@
 ---
 title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180445"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283480"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -129,6 +129,8 @@ ms.locfileid: "84180445"
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | Используется для компиляции, отправки, просмотра, диагностики и отладки заданий. Также используется для просмотра файлов ADLS, а также отправки и скачивания файлов |
 | Служба упаковки | [account].visualstudio.com <br/> [учетная_запись].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | Файлы \*.npmjs.org, \*.nuget.org и \*.nodejs.org требуются только в некоторых сценариях задач построения (например, для установщиков инструментов NuGet или Node), а также если вы планируете использовать в своих веб-каналах общедоступный восходящий источник. Три других домена являются обязательными для работы с основными функциями службы упаковки. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Используется для подключения с помощью Azure DevOps Services |
+| Служебная шина Azure | \*.servicebus.windows.net. | ampq/5671 и 5672, </br> sbmp/9350-9354, </br> http/80, </br> https/443 | Используется для создания очередей, очередей-распределителей и подписок. </br> Также используется для отправки сообщений в очереди и очереди-распределители служебной шины и получения сообщений оттуда. |
+| Azure Cosmos DB | \*.documents.azure.com | https/443 | Используется для вызова основных API-интерфейсов базы данных документов. |
 | Сообщество разработчиков | sendvsfeedback2.azurewebsites.net/api | https/443 | Используется для вызова API средства обратной связи сообщества разработчиков (мои вопросы, поиск, голосование, комментарий, отправка, загрузка, возобновление). |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Используется для вызова API Intellicode |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Используется для вызова API Live Share |

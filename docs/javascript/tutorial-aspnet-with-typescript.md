@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183097"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283571"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Учебник. Создание приложения ASP.NET Core с помощью TypeScript в Visual Studio
 
@@ -162,7 +162,7 @@ Visual Studio управляет файлами для отдельного пр
 
     Выберите `lastName`, чтобы добавить последнее имя обратно в код.
 
-1. Откройте папку *Views/Home*, а затем файл *index.html*.
+1. Откройте папку *Views/Home*, а затем файл *Index.cshtml*.
 
 1. Добавьте следующий HTML-код в конец файла.
 
