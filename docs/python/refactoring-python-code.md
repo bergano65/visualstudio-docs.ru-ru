@@ -2,7 +2,7 @@
 title: Рефакторинг кода Python
 description: Узнайте, как легко выполнить рефакторинг кода Python в Visual Studio путем переименования идентификаторов, извлечения методов, добавления импортов и удаления неиспользуемых импортов.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62429902"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520566"
 ---
 # <a name="refactor-python-code"></a>Рефакторинг кода Python
 

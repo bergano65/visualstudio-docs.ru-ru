@@ -1,7 +1,7 @@
 ---
 title: Написание функций отладочных ловушек | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82145d39adc519bfd1324cc36805cea7b97b1664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563377"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350723"
 ---
 # <a name="debug-hook-function-writing"></a>Написание функций отладочных ловушек
 В этом подразделе дается краткое описание нескольких функций отладочных ловушек, которые можно написать самостоятельно. Эти функции позволяют разместить пользовательский код в заранее определенных местах в контексте стандартной процедуры отладки.

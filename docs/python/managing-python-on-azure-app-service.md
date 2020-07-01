@@ -2,7 +2,7 @@
 title: Настройка Python в службе приложений Azure (Windows)
 description: Установка интерпретатора и библиотек Python в Службе приложений Azure и настройка веб-приложений, чтобы в них содержалась правильная ссылка на интерпретатор.
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535991"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543758"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Работа с Python в "Службе приложений Azure" (Windows)
 

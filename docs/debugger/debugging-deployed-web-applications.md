@@ -1,7 +1,7 @@
 ---
 title: Отладка развернутых приложений ASP.NET | Документация Майкрософт
 ms.date: 06/30/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c2b1838375ee878640d77a9c93808efafc9f519c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738289"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350554"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Отладка развернутых приложений ASP.NET
 Чтобы использовать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для отладки развернутого приложения, необходимо выполнить присоединение к рабочему процессу [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и убедиться в том, что отладчик имеет доступ к символам для приложения. Кроме того, необходимо найти и открыть исходные файлы для данного приложения. См. сведения об [определении файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [ поиске имени процесса ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md) и [требованиях к системе](../debugger/aspnet-debugging-system-requirements.md).

@@ -2,19 +2,19 @@
 title: Анализ использования ЦП | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638838"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543394"
 ---
 # <a name="analyze-cpu-usage"></a>Анализ использования ЦП
 
@@ -61,7 +61,7 @@ ms.locfileid: "80638838"
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Столбцы данных о загрузке ЦП
 
-|||
+|name|Описание|
 |-|-|
 |**Общая активность ЦП [единица измерения, %]**|![Уравнение для общего процента](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Миллисекунды и процент ресурсов ЦП, потраченные на вызовы функции и функций, которые вызывала данная функция, в выбранный период времени. Это отличается от графика временной шкалы **Использование ЦП**, который сравнивает общую активность ЦП за период времени с общими доступными ресурсами ЦП.|
 |**Собственная активность ЦП [единица измерения, %]**|![Уравнение для процента собственной активности](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Миллисекунды и процент ресурсов ЦП, потраченные на вызовы функции в выбранный период времени, за исключением функций, которые вызывала данная функция.|
@@ -80,7 +80,7 @@ ms.locfileid: "80638838"
 ![Структура дерева вызовов](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Структура дерева вызовов")
 ::: moniker-end
 
-|||
+|Изображение|Описание|
 |-|-|
 |![Шаг 1](../profiling/media/procguid_1.png "ProcGuid_1")|Узел верхнего уровня в деревьях вызовов для использования ЦП представляет собой псевдоузел.|
 |![Шаг 2](../profiling/media/procguid_2.png "ProcGuid_2")|В большинстве приложений при отключенном параметре **Показать внешний код** узлом второго уровня является узел **[Внешний код]** . Он содержит код системы и инфраструктуры, запускающий и останавливающий приложение, отрисовывающий пользовательский интерфейс, управляющий планированием потоков и предоставляющий приложению другие низкоуровневые службы.|

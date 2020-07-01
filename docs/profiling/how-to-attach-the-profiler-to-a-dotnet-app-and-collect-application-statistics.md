@@ -2,7 +2,7 @@
 title: Присоединение Profiler к автономному приложению .NET Framework, получение статистики приложения
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9084f2d1dd784172735c66d38da785dffb74d82c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779185"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531811"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к автономному приложению .NET Framework и сбор статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, присоединить профилировщик к запущенному автономному (клиентскому) приложению .NET Framework и собрать статистические данные о производительности с использованием метода выборки.
@@ -73,9 +73,8 @@ ms.locfileid: "74779185"
 
    - По умолчанию выборка данных производительности выполняется каждые 10 000 000 неостановленных циклов процессора. Это примерно один раз каждые 10 секунд для процессора с частотой 1 ГГц. Можно указать один из следующих параметров, чтобы изменить длительность цикла или задать другое событие выборки. Параметр [/targetclr](../profiling/targetclr.md)**:**`Version` задает версию среды CLR для профилирования, если в приложении загружено несколько версий среды выполнения. Необязательный элемент.
 
-   |||
-   |-|-|
    |Событие выборки|Описание|
+   |-|-|
    |[/timer](../profiling/timer.md) **:** `Interval`|Изменяет интервал выборки на число неостановленных циклов, которые указываются с помощью свойства `Interval`.|
    |[/pf](../profiling/pf.md) [**:**`Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
    |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Изменяет событие выборки на "системные вызовы" из процесса к ядру операционной системы (syscall). Если указано свойство `Interval`, задает количество вызовов между выборками. Значение по умолчанию — 10.|

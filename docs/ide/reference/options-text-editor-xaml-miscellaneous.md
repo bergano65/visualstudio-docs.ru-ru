@@ -28,12 +28,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568208"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544096"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>"Параметры", "Текстовый редактор", XAML, "Прочее"
 
@@ -43,7 +43,7 @@ ms.locfileid: "75568208"
 
 С помощью этого параметра можно управлять автоматическим созданием тегов и кавычек.
 
-|||
+|name|Описание|
 |-|-|
 |**Закрывающие теги**|Определяет автоматическое создание закрывающего тега элемента при закрытии открывающего тега символом "больше, чем" (>).|
 |**Кавычки атрибутов**|Указывает, создаются ли закрывающие кавычек при выборе значения атрибута из раскрывающегося списка завершения операторов.|
@@ -54,6 +54,6 @@ ms.locfileid: "75568208"
 
 С помощью этого параметра можно управлять автоматическим созданием ошибок и предупреждений. Дополнительные сведения см. в разделе [Ошибки и предупреждения XAML](../../xaml-tools/xaml-errors-warnings.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [XAML в WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188369"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535165"
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.
 
 ## <a name="debugging-for-different-types-of-applications"></a>Отладка приложений разных типов
 
-|||
+|Заголовок|Описание|
 |-|-|
 |[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Содержит описание способов отладки приложений UWP.|
 |[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Описывает способы отладки управляемого кода (Visual C#, Visual Basic, F# и C++/CLI).|

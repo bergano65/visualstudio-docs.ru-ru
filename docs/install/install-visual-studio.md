@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
 ms.date: 12/13/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 132aaa8da49814c10afe3089e21d391aa2964673
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307229"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419163"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -68,7 +68,7 @@ ms.locfileid: "79307229"
 
 1. Примените актуальные обновления Windows. Эти обновления гарантируют, что на компьютере установлены последние обновления для системы безопасности и необходимые системные компоненты для Visual Studio.
 
-	> [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads)
+1. Перезагрузите систему. Перезагрузка гарантирует, что ожидающие установки или обновления компоненты не будут препятствовать установке Visual Studio.
 
 1. Освободите место. Удалите ненужные файлы и приложения с системного диска. Например, запустите приложение очистки диска.
 
@@ -98,9 +98,7 @@ ms.locfileid: "79307229"
 
 ::: moniker-end
 
-
-## <a name="step-2---download-visual-studio"></a>Шаг 2. Скачивание Visual Studio
-
+## <a name="step-2---download-visual-studio"></a>Шаг 2. Скачивание Visual Studio
 
 Теперь скачайте файл начального загрузчика Visual Studio.
 
@@ -115,7 +113,7 @@ ms.locfileid: "79307229"
 Для этого нажмите кнопку ниже, выберите нужный выпуск Visual Studio, щелкните **Сохранить**, а затем **Открыть папку**.
 
  > [!div class="button"]
- > [Скачать Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+ > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 

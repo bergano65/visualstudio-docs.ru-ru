@@ -2,7 +2,7 @@
 title: Интерактивное окно IPython REPL
 description: Использование интерактивного окна Visual Studio в режиме IPython для интерактивной среды разработки с широкими возможностями, в том числе функцией интерактивных параллельных вычислений.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957754"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542432"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Использование IPython в интерактивном окне
 

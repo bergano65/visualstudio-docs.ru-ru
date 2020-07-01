@@ -2,7 +2,7 @@
 title: Использование шаблонов CookieCutter с Python
 description: Благодаря поддержке графического расширения Cookiecutter в Visual Studio можно искать шаблоны кода Python и на их основе создавать проекты.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62832197"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535152"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Использование расширения Cookiecutter
 

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144699"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541717"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети в приложениях UWP
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](/uwp/api/windows.web.http). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.
@@ -53,7 +53,7 @@ ms.locfileid: "73144699"
 
  ![Область сведений об инструментах сети](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|||
+|name|Описание|
 |-|-|
 |**Заголовки**|Сведения о заголовках запроса события.|
 |**Текст**|Полезные данные запросов и ответов.|

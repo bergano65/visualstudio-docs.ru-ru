@@ -17,18 +17,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590180"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533696"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
 
 Для создания новых типов проектов C# .NET и Visual Basic .NET используйте диаграмму классов. Сведения о существующих типах см. в статье [Практическое руководство. Просмотр существующих типов](how-to-view-existing-types.md).
 
-## <a name="CreateType"></a> Создание нового типа
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Создание нового типа
 
 1. В **панели инструментов** в **конструкторе классов** перетащите в диаграмму классов один из следующих элементов.
 
@@ -56,9 +56,8 @@ ms.locfileid: "75590180"
 
 4. Затем добавьте другие элементы для указания типа:
 
-    |||
-    |-|-|
     |**Для типа**|**Добавление**|
+    |-|-|
     |Классы, абстрактные классы, структуры или struct|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие тип|
     |Перечисления|Значения поля, составляющие перечисление|
     |Интерфейсы|Методы, свойства и события, составляющие интерфейс|
@@ -67,7 +66,7 @@ ms.locfileid: "75590180"
 
      См. раздел [Создание членов](creating-and-configuring-type-members.md#create-members).
 
-## <a name="CustAttributeType"></a> Применение пользовательского атрибута к типу
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Применение пользовательского атрибута к типу
 
 1. Щелкните фигуру типа на схеме классов.
 
@@ -77,7 +76,7 @@ ms.locfileid: "75590180"
 
    Пользовательские атрибуты будут применены к типу.
 
-## <a name="CustAttributeMember"></a> Применение пользовательского атрибута к члену типа
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Применение пользовательского атрибута к члену типа
 
 1. Щелкните на схеме классов имя члена на его фигуре типа или его строку в окне "Сведения о классе".
 

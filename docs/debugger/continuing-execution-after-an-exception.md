@@ -1,7 +1,7 @@
 ---
 title: Возобновление выполнения после исключения | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745650"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350684"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Возобновление выполнения после исключения
 Когда отладчик приостанавливает выполнение из-за возникновения исключения, по умолчанию открывается диалоговое окно **Помощник по исправлению ошибок**. Если **Помощник по исправлению ошибок** отключен в диалоговом окне **Параметры**, в этом случае появляется диалоговое окно **Помощник по исключениям** (в C# или Visual Basic) или **Исключение** (в C++).

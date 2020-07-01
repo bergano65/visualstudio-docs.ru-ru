@@ -2,7 +2,7 @@
 title: Модульное тестирование кода Python
 description: Настройте модульное тестирование кода Python в Visual Studio и воспользуйтесь всеми преимуществами функций обнаружения, выполнения и отладки тестов в обозревателе тестов.
 ms.date: 09/18/2019
-ms.topic: include
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 09c67ace9db36cb8ee3d94296d339b62849e3c94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a621cd56f980c8a1404ba8855cdf3544e58d39d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71254200"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535341"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Настройка модульного тестирования для кода Python
 
