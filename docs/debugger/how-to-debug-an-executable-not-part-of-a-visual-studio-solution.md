@@ -3,7 +3,7 @@ title: Отладка приложения, не входящего в сост�
 titleSuffix: ''
 ms.custom: ''
 ms.date: 02/21/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740af718a2928991d46bedbd6709337b9b20a254
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557913"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350151"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Отладка приложения, которое не входит в решение Visual Studio (C++, C#, Visual Basic, F#)
 

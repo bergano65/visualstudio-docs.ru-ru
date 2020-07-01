@@ -1,7 +1,7 @@
 ---
 title: Исключение и включение малых функций при инструментировании
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools, instrument events
 - profiling tools, include short functions
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: de6d6325b1e518146768798c773754c091861aa8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4aaae07987f1d3364b064465aa6edff9a4748301
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775918"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329787"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Практическое руководство. Исключение и включение малых функций при инструментировании
 По умолчанию средства профилирования исключают *малозначимые функции* из инструментирования. Малозначимыми функциями называют малые функции, которые не выполняют вызовы других функций. Исключение таких малозначимых функций позволяет сократить временные затраты инструментирования и повысить скорость профилирования. При исключении малозначимых функций также уменьшается размер файла данных профилирования производительности (*VSP*) и время, необходимое для анализа. Если малозначимые функции исключаются, время, затрачиваемое на такие функции, учитывается в эксклюзивном и инклюзивном времени их родительских функций. Малые функции можно исключить или включить при инструментировании, как описано в следующей процедуре.

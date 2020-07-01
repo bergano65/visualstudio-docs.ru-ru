@@ -2,7 +2,7 @@
 title: Сохранение фокусировки при пошаговом выполнении приложения | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.stepping
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c4bd882dd1704099b24f07f744a1615cf7d412
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734184"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350385"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Как сохранить фокусировку при пошаговом выполнении приложения?
 ## <a name="description"></a>Описание

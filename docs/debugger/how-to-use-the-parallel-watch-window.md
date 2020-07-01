@@ -1,7 +1,7 @@
 ---
 title: Установка контрольных значений для переменных в параллельных потоках | Документация Майкрософт
 ms.date: 04/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732015"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348630"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Установка контрольных значений для переменных в параллельных потоках в Visual Studio (C#, Visual Basic, C++)
 В окне "Контроль параллельных данных" могут одновременно отображаться все значения одного выражения, которые оно содержит в разных потоках. Каждая строка представляет поток, который выполняется в приложении, при этом один поток может быть представлен несколькими строками. Если точнее, то каждая строка представляет вызов функции, сигнатура которой соответствует функции в текущем кадре стека. Элементы, содержащиеся в столбцах, можно сортировать, переупорядочивать, удалять и группировать. Можно помечать потоки и снимать с них пометки, можно замораживать (приостанавливать) и размораживать (возобновлять) потоки. Окно **Контроль параллельных данных** содержит следующие столбцы:

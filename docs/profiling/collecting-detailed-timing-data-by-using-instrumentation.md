@@ -1,7 +1,7 @@
 ---
 title: Сбор подробных сведений о времени с помощью инструментирования | Документы Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd22edc9bd672a8d82c94a705b523ce7d836169
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 682ae4bf31f44f3dff5f6dfadf7b8c316d9d9721
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779627"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331856"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Сбор подробных сведений о времени с помощью инструментирования
 Метод инструментирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] позволяет внедрить код профилирования в копию модуля. Во время профилирования код записывает все входы, выходы и вызовы функций в модуле. Метод инструментирования целесообразно использовать для сбора подробных сведений о разделе кода и для понимания влияния операций ввода-вывода на производительность приложения.
