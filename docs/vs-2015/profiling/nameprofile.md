@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441901"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548444"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Чтобы указать один из трех уровней, к которому можно применить сбор данных производительности, следует использовать представленные ниже значения **PROFILE_CONTROL_LEVEL**.  
   
-|Перечислитель|Описание|  
+|Перечислитель|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -62,10 +62,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Идентификатор уровня профилирования. Используйте идентификатор процесса или потока, созданный системой.  
   
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание|  
+|Перечислитель|Description|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|Заданный элемент профилирования не существует.|  
 |NAME_ERROR_INVALID_NAME|Недопустимое имя.|  
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Длина имени превысила 32 символа, включая символ null, и поэтому оно было усечено.|  
 |NAME_OK|Имя зарегистрировано успешно.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  Каждому процессу или потоку можно назначить только одно имя. После присвоения имени элементу профилирования последующие вызовы метода NameProfile для этого элемента пропускаются.  
   
  Если одно и то же имя задано для разных потоков или процессов, в отчет будут включены данные из всех элементов с таким именем на данном уровне.  
@@ -91,9 +91,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 ## <a name="function-information"></a>Сведения о функции  
   
-|||  
+|Item|Описание|  
 |-|-|  
-|**Заголовок**|Включение VSPerf.h|  
+|**Верхняя часть**|Включение VSPerf.h|  
 |**Библиотека**|Использование VSPerf.lib|  
 |**Юникод**|Функция реализована как `NameProfileW` (Юникод) и `NameProfileA` (ANSI).|  
   
@@ -135,5 +135,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>См. также  
+ [Справочник по API профилировщика Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)

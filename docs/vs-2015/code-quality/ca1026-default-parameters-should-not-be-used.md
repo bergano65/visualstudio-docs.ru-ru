@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8fffbdc2cf9f4e09fe98c8e14b6692802ab3f275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a63d6e788dd1722d0c593469b225a4f1aeb4738d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661946"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548450"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: не следует использовать параметры по умолчанию
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026. Не следует использовать параметры по умолчанию
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
@@ -38,7 +38,7 @@ ms.locfileid: "72661946"
 ## <a name="rule-description"></a>Описание правила
  Методы, использующие параметры по умолчанию, разрешены в спецификации CLS; Однако CLS позволяет компиляторам игнорировать значения, назначенные этим параметрам. Код, написанный для компиляторов, игнорирующих значения параметров по умолчанию, должен явно предоставлять аргументы для каждого параметра по умолчанию. Для поддержания поведения в разных языках программирования методы, использующие параметры по умолчанию, должны заменяться перегрузками методов, предоставляющими параметры по умолчанию.
 
- Компилятор игнорирует значения параметров по умолчанию для управляемого расширения, C++ когда оно обращается к управляемому коду. Компилятор Visual Basic поддерживает методы, имеющие параметры по умолчанию, которые используют ключевое слово [Optional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
+ Компилятор игнорирует значения параметров по умолчанию для управляемого расширения C++ при обращении к управляемому коду. Компилятор Visual Basic поддерживает методы, имеющие параметры по умолчанию, которые используют ключевое слово [Optional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, замените метод, использующий параметры по умолчанию, на перегрузки методов, которые предоставляют параметры по умолчанию.
@@ -52,7 +52,7 @@ ms.locfileid: "72661946"
  [!code-vb[FxCop.Design.DefaultParameters#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.DefaultParameters/vb/FxCop.Design.DefaultParameters.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1025: замените повторяющиеся аргументы массивом параметров](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+ [CA1025. Замените повторяющиеся аргументы массивом параметров](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Независимость от языка и независимые от языка компоненты](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

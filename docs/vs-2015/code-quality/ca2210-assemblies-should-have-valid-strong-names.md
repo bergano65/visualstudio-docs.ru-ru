@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6109e0dc18f98d0b22dfb5c548bd12447b53e61d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662987"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548204"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: сборки должны иметь допустимые строгие имена
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210. Сборки должны иметь допустимые строгие имена
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Item|Значение|
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
@@ -46,7 +46,7 @@ ms.locfileid: "72662987"
 
 - Сборка была неправильно подписана, или произошел сбой при подписании.
 
-- Сборка требует, чтобы параметры реестра прошли проверку. Например, средство строгих имен (Sn. exe) использовалось для пропуска проверки сборки.
+- Сборка требует, чтобы параметры реестра прошли проверку. Например, средство строгих имен (Sn.exe) использовалось для пропуска проверки сборки.
 
   Строгое имя защищает клиентов от случайной загрузки сборки, которая была подменена. Сборки без строгих имен следует развертывать лишь в крайне небольшом числе случаев. При обмене или распространении сборок без правильной подписи сборки могут быть подменены, среда CLR может не загрузить сборку или пользователь может быть вынужден отключить проверку на своем компьютере. Сборка без строгого имени имеет следующие недостатки:
 
@@ -63,11 +63,11 @@ ms.locfileid: "72662987"
 
  Используйте одну из следующих процедур.
 
-- Используйте средство компоновщика сборок (Al. exe), предоставляемое пакетом SDK для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+- Используйте средство компоновщика сборок (Al.exe), предоставляемое [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] пакетом SDK.
 
-- Для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v 1.0 или v 1.1 Используйте атрибут <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> или <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>.
+- Для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] версии 1.0 или 1.1 используйте либо атрибут, либо <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> .
 
-- Для [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] используйте параметр компилятора `/keyfile` или `/keycontainer` [/keyfile (укажите ключ или пару ключей для подписи сборки)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) или [/keycontainer (укажите контейнер ключей для подписания сборки)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) в C++).
+- Для [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] используйте либо `/keyfile` `/keycontainer` параметр компилятора [/keyfile (укажите ключ или пару ключей для подписи сборки)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) , либо параметр [/keycontainer (укажите контейнер ключей для подписания сборки)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) в C++.
 
   **Подпись сборки строгим именем в Visual Studio**
 
@@ -89,11 +89,11 @@ ms.locfileid: "72662987"
 
    **Подпись сборки строгим именем за пределами Visual Studio**
 
-- Используйте средство строгих имен (Sn. exe), предоставленное пакетом SDK для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) (Sn.exe: средство строгих имен).
+- Используйте средство строгих имен (Sn.exe), предоставляемое [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] пакетом SDK. Дополнительные сведения см. в разделе [Sn.exe (средство строгих имен)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключать предупреждение из этого правила следует только в том случае, если сборка используется в среде, в которой искажение содержимого не является важным.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Как подписать сборку строгим именем](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn. exe (средство строгих имен)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Как подписать сборку строгим именем](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (средство строгих имен)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
