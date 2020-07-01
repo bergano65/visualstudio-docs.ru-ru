@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be69003d14d2c246f95249b5db0b1fa7d470598
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911440"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536517"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace в Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -39,7 +39,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
 ## <a name="what-do-you-want-to-do"></a>Выберите действие
 
-|||
+|Сценарий|Заголовок|
 |-|-|
 |**Отладка приложения с помощью IntelliTrace**<br /><br /> – Отображение прошлых событий.<br />– Отображение связанных с прошлыми событиями данных о вызовах.<br />– Сохранение сеанса IntelliTrace.<br />– Определение того, какие данные будет собирать IntelliTrace.|- [Проверка предыдущих состояний приложения с помощью IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />- [Отладка с ведением журнала](../debugger/historical-debugging.md)|
 |**Сбор данных IntelliTrace из развернутых приложений**|- [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -47,7 +47,7 @@ IntelliTrace можно использовать в выпуске Visual Studio
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Какие приложения можно отлаживать с помощью IntelliTrace?
 
-| | |
+| Уровень поддержки| Типы приложений |
 |---------------------| - |
 | **Полная поддержка** | – Приложения Visual Basic и Visual C# на платформе .NET Framework 2.0 и более поздних версий.<br/>Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br/>Сведения об отладке приложений SharePoint с помощью IntelliTrace см. в статье [Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Сведения об отладке приложений Microsoft Azure с помощью IntelliTrace см. в статье [Отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Ограниченная поддержка** | — Приложения C++, предназначенные для Windows, поддерживают просмотр моментальных снимков с использованием возврата на шаг назад в IntelliTrace. Поддерживаются только события отладчика и исключения.<br />— Приложения .NET Core и ASP.NET Core поддерживают только некоторые события (контроллер MVC, ADO.NET и события HTTPClient) при локальной отладке. Standalone Collector не поддерживается для приложений .NET Core и ASP.NET Core.<br />– Приложения F# на экспериментальной основе.<br />— Для приложений UWP поддерживаются только события. |

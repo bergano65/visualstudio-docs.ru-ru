@@ -1,19 +1,19 @@
 ---
 title: Отладка пользовательского кода с помощью функции "Только мой код" | Документация Майкрософт
 ms.date: 02/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535993"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536569"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Отладка пользовательского кода с помощью функции "Только мой код"
 
@@ -196,7 +196,7 @@ ms.locfileid: "72535993"
 
 <a name="BKMK_JS_User_and_non_user_code"></a> Режим "Только мой код" в JavaScript управляет пошаговым выполнением и отображением стека вызовов путем распределения кода по одной из следующих классификаций:
 
-|||
+|Классификация|Описание|
 |-|-|
 |**MyCode**|Код пользователя, которым вы распоряжаетесь и управляете.|
 |**LibraryCode**|Непользовательский код из библиотек, который вы используете регулярно, и от которого зависит правильная работа приложения (например, WinJS или jQuery).|
@@ -279,7 +279,7 @@ ms.locfileid: "72535993"
 
 Пары "ключ-значение" **Eval**, **Function** и**ScriptBlock** определяют, как классифицируется динамически создаваемый код:
 
-|||
+|name|Описание|
 |-|-|
 |**Eval**|Скрипт, который выполняется путем передачи строки предоставленной хостом функции `eval`. По умолчанию скрипт Eval классифицируется как **MyCode**.|
 |**Function**|Скрипт, который выполняется путем передачи строки конструктору `Function`. По умолчанию скрипт Function классифицируется как **LibraryCode**.|
@@ -295,7 +295,7 @@ ms.locfileid: "72535993"
 
 Пары "ключ-значение" **MyCode**, **Libraries** и **Unrelated** определяют URL-адреса или файлы, которые нужно включить в классификацию:
 
-|||
+|name|Описание|
 |-|-|
 |**MyCode**|Массив URL-адресов или файлы, которые классифицируются как **MyCode**.|
 |**Libraries**|Массив URL-адресов или файлы, которые классифицируются как **LibraryCode**.|

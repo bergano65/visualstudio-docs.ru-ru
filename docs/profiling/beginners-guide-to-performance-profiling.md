@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638788"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537375"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Измерение производительности приложения посредством анализа использования ЦП
 
@@ -134,7 +134,7 @@ ms.locfileid: "80638788"
     ![Средства диагностики, дерево вызовов](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |||
+    |Изображение|Описание|
     |-|-|
     |![Шаг 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Узел верхнего уровня в деревьях вызовов для использования ЦП представляет собой псевдоузел|
     |![Шаг 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|В большинстве приложений при отключенном параметре [Показать внешний код](#view-external-code) узлом второго уровня является узел **[Внешний код]** , который содержит код системы и инфраструктуры, запускающий и останавливающий приложение, отрисовывающий пользовательский интерфейс, управляющий планированием потоков и предоставляющий приложению другие низкоуровневые службы.|

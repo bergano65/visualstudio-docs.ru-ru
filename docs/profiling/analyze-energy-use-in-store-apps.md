@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144732"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537245"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 
@@ -96,7 +96,7 @@ if (performance && performance.mark) {
 2. Выберите **Расход энергии** и нажмите кнопку **Запуск**.
 
     > [!NOTE]
-    > При запуске профилировщика **Расход энергии** может появиться окно **Контроль учетных записей** с запросом на разрешение запуска файла *VsEtwCollector.exe*. выберите **Yes** (Да).
+    > При запуске профилировщика **Расход энергии** может появиться окно **Контроль учетных записей** с запросом на разрешение запуска файла *VsEtwCollector.exe*. Выберите **Да**.
 
 3. Запустите приложение для сбора данных.
 
@@ -124,7 +124,7 @@ if (performance && performance.mark) {
 
  ![Страница отчета профилировщика расхода энергии](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|||
+|Изображение|Описание|
 |-|-|
 |![Шаг 1](../profiling/media/procguid_1.png "ProcGuid_1")|Имя файла отчета — Report*ГГГГММДД-ЧЧММ*.diagsession. При сохранении отчета имя можно изменить.|
 |![Шаг 2](../profiling/media/procguid_2.png "ProcGuid_2")|На временной шкале отображаются продолжительность сеанса профилирования, события активации жизненного цикла приложения и пользовательские отметки.|
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
 
  Для дисплея имеется меньше возможностей управления затратами энергии. Большинству дисплеев требуется больше энергии для отображения светлых цветов, чем темных. Поэтому один из способов снижения затрат — использование темного фона.
 
-## <a name="other-resources"></a>Другие ресурсы
+## <a name="other-resources"></a>Другие источники
 
 - В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.
 
@@ -156,7 +156,7 @@ if (performance && performance.mark) {
 
 - Инструменты **Загрузка ЦП** позволяют снизить нагрузку на ЦП, связанную с неэффективными функциями. Дополнительные сведения см. в статье об [анализе использования ЦП](../profiling/beginners-guide-to-performance-profiling.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

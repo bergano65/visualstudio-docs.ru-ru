@@ -2,7 +2,7 @@
 title: Модульное тестирование кода Python
 description: Настройте модульное тестирование кода Python в Visual Studio и воспользуйтесь всеми преимуществами функций обнаружения, выполнения и отладки тестов в обозревателе тестов.
 ms.date: 09/18/2019
-ms.topic: include
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9843b47e38d5d33a25c455efe619dfcc033fb334
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933471"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535343"
 ---
 ## <a name="discover-and-view-tests"></a>Обнаружение и просмотр тестов
 
@@ -51,7 +51,7 @@ ms.locfileid: "71933471"
 
 Дополнительные сведения о модуле `unittest` и создании тестов можно получить в [документации по Python 2.7](https://docs.python.org/2/library/unittest.html) или в [документации по Python 3.7](https://docs.python.org/3/library/unittest.html) (python.org).
 
-## <a name="run-tests"></a>Выполнение тестов
+## <a name="run-tests"></a>Выполнить тесты
 
 В **обозревателе тестов** можно запустить тесты несколькими способами:
 

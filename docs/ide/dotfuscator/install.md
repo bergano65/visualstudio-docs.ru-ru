@@ -2,7 +2,7 @@
 title: Установка Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
-ms.topic: conceptual
+ms.topic: how-to
 keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2017, Visual Studio 2019, Visual Studio, install
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
@@ -22,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bb659976126713a11594ad1b4aeb536510744c38
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: befa47e5718d3d2f5d492c49e173b22fc63310e0
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596818"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769677"
 ---
 # <a name="install-dotfuscator-community"></a>Установка Dotfuscator Community
 
@@ -95,7 +95,7 @@ Dotfuscator Community можно установить из интегриров�
 
 Затем можно установить Dotfuscator Community в качестве отдельного компонента Visual Studio.
 
-1. Выберите вкладку **Отдельные компоненты**.
+1. Откройте вкладку **Отдельные компоненты**.
 2. В разделе *Работа с кодом* выберите элемент *PreEmptive Protection — Dotfuscator*.<br/> <br/> ![Отдельные компоненты](media/install_individually_12.png) <br/> <br/>
 3. На панели *Сводка* появится *PreEmptive Protection — Dotfuscator* в разделе *Отдельные компоненты*. <br/> <br/> ![Панель итогов](media/install_individually_3.png) <br/> <br/>
 4. Настройте другие параметры установки, соответствующие вашей среде.
@@ -103,7 +103,7 @@ Dotfuscator Community можно установить из интегриров�
 
 После завершения установки можно начать использование Dotfuscator Community. Дополнительные сведения см. на [странице с инструкциями по началу работы в полном руководстве пользователя Dotfuscator Community][get-started].
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Этот раздел в полном руководстве пользователя Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 
