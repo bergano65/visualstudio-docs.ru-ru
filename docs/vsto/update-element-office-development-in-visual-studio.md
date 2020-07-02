@@ -1,7 +1,7 @@
 ---
-title: '&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент Update (разработка решений Office в Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967537"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537388"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)
-  `update` Элемент указывает интервал, с которым решение будет проверять наличие обновлений.
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент Update (разработка решений Office в Visual Studio)
+  `update`Элемент указывает интервал, в течение которого решение будет проверять наличие обновлений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,24 +43,24 @@ ms.locfileid: "62967537"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`enabled`|Обязательный. Установите, включен один из следующих значений:<br /><br /> -   **значение true,** для проверки наличия обновлений.<br />-   **false** во избежание проверки наличия обновлений.|
+|`enabled`|Обязательный. Задайте для параметра включено одно из следующих значений:<br /><br /> -   **значение true** для проверки наличия обновлений.<br />-   **значение false** , чтобы запретить проверку наличия обновлений.|
 
  Элемент `update` имеет указанные ниже дочерние элементы.
 
 ### <a name="expiration"></a>expiration
- Элемент `expiration` является обязательным и находится в пространстве имен `vstav3` . Этот элемент задает интервал, с которой решение проверяет наличие обновлений.
+ Элемент `expiration` является обязательным и находится в пространстве имен `vstav3` . Этот элемент задает интервал, с которым решение проверяет наличие обновлений.
 
  Элемент `expiration` имеет перечисленные ниже атрибуты.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`maximumAge`| Обязательный. Значение этого атрибута в целое число.|
-|`unit`|Обязательный. Задайте `unit` к одному из следующих значений:<br /><br /> -   **часы**<br />-   **дней**<br />-   **Недель**|
+|`maximumAge`| Обязательный. Задайте значение, равное целому числу.|
+|`unit`|Обязательный. Задайте `unit` одно из следующих значений:<br /><br /> -   **суток**<br />-   **недели**<br />-   **неделю**|
 
-## <a name="example-of-always-checking-for-updates"></a>Пример всегда проверки на наличие обновлений
+## <a name="example-of-always-checking-for-updates"></a>Пример всегда проверять наличие обновлений
 
 ### <a name="description"></a>Описание
- В следующем примере кода показано `update` элемент, который имеет значение всегда проверять наличие обновлений в решениях Office.
+ В следующем примере кода показан `update` элемент, для которого установлено значение всегда проверять наличие обновлений в решениях Office.
 
 ### <a name="code"></a>Код
 
@@ -68,10 +68,10 @@ ms.locfileid: "62967537"
 <vstav3:update enabled="true" />
 ```
 
-## <a name="example-of-setting-a-default-update-interval"></a>Пример настройки по умолчанию интервал обновления
+## <a name="example-of-setting-a-default-update-interval"></a>Пример задания интервала обновления по умолчанию
 
 ### <a name="description"></a>Описание
- В следующем примере кода показано `update` элемента в манифесте приложения для решений Office. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+ В следующем примере кода показан `update` элемент в манифесте приложения для решений Office. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 

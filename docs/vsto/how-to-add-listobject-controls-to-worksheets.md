@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление элементов управления ListObject на листы
+title: Как добавить элементы управления ListObject на листы
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4f6ca2544f64433746f6aa57c9456fee11459db
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254691"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538324"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления ListObject на листы
-  Элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять на лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Как добавить элементы управления ListObject на листы
+  Элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять в лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "71254691"
 
 - [Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)
 
-  Дополнительные сведения об <xref:Microsoft.Office.Tools.Excel.ListObject> элементах управления см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
+  Дополнительные сведения об элементах <xref:Microsoft.Office.Tools.Excel.ListObject> управления см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
-## <a name="designtime"></a>Добавление элементов управления ListObject во время разработки
- Существует несколько способов добавления <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист в проекте уровня документа во время разработки. В Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .
+## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a>Добавление элементов управления ListObject во время разработки
+ Существует несколько способов добавления <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -64,9 +64,9 @@ ms.locfileid: "71254691"
 
 2. Перетащите таблицу из окна **Источники данных** в лист.
 
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится на лист. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+     Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится в лист. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a>Добавление элементов управления ListObject во время выполнения в проекте уровня документа
+## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Добавление элементов управления ListObject во время выполнения в проекте уровня документа
  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять динамически во время выполнения. Это позволяет создавать элементы управления ведущего приложения при возникновении определенных событий. При закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Добавление элемента управления ListObject в лист программными средствами
@@ -76,7 +76,7 @@ ms.locfileid: "71254691"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="runtimeaddin"></a>Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO
+## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO
  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO. При сохранении и закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. [в разделе Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Добавление элемента управления ListObject в лист программными средствами
@@ -89,9 +89,9 @@ ms.locfileid: "71254691"
 ## <a name="see-also"></a>См. также
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
-- [Элемент управления ListObject](../vsto/listobject-control.md)
+- [ListObject - элемент управления](../vsto/listobject-control.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
-- [Практическое руководство. Изменить размер элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Как изменить размер элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

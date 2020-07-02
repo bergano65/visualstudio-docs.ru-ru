@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное добавление примечаний в текст документа
+title: Руководство. Программное добавление комментариев к тексту в документах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538117"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Практическое руководство. Программное добавление примечаний в текст документа
-  Свойство "комментарии" класса документа добавляет комментарий к диапазону текста в документ Microsoft Office Word.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Руководство. Программное добавление комментариев к тексту в документах
+  Свойство Comments класса Document добавляет комментарий к диапазону текста в Microsoft Office документе Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "62967674"
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
 
-## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Добавление нового комментария в текст в надстройке VSTO
+## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Добавление нового комментария к тексту в надстройке VSTO
 
 1. Вызовите метод <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> свойства <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> и укажите диапазон и текст комментария.
 
@@ -47,5 +47,5 @@ ms.locfileid: "62967674"
  Для изменения инициалов пользователя, добавляемых Word в комментарии, используйте свойство <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное удаление всех комментариев из документа](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+- [Руководство. Программное удаление всех комментариев из документов](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Ведущий элемент документа](../vsto/document-host-item.md)

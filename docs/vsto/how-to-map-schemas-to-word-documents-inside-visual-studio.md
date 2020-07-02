@@ -63,6 +63,6 @@ ms.locfileid: "85538155"
 
 10. Перетащите элементы из окна **Структура XML** в места документа, где нужно создать соответствующие элементы управления.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как сопоставлять схемы с листами в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

@@ -25,7 +25,7 @@ ms.locfileid: "85539195"
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300. Укажите MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|

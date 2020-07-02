@@ -16,17 +16,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ce85a3a933d9453c63ef118d5dfd9e0b17cbf130
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3ad1f56215d002c03d346b38ce6155e8df7412b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661448"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539117"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: не следует передавать литералы в виде локализованных параметров
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303. Не передавайте литералы в качестве локализованных параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
@@ -34,11 +34,11 @@ ms.locfileid: "72661448"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод передает строковый литерал в качестве параметра конструктору или методу в библиотеке классов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], и эта строка должна быть локализуемой.
+ Метод передает строковый литерал как параметр в конструктор или метод в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] библиотеке классов, и эта строка должна быть локализуемой.
 
  Это предупреждение возникает, когда литеральная строка передается в качестве значения параметру или свойству, и один или несколько из следующих случаев имеют значение true:
 
-- Атрибут <xref:System.ComponentModel.LocalizableAttribute> параметра или свойства имеет значение true.
+- <xref:System.ComponentModel.LocalizableAttribute>Атрибут параметра или свойства имеет значение true.
 
 - Имя параметра или свойства содержит "Text", "Message" или "Caption".
 
@@ -48,7 +48,7 @@ ms.locfileid: "72661448"
  Строковые литералы, внедренные в исходный код, трудно локализовать.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, замените строковый литерал строкой, полученной с помощью экземпляра класса <xref:System.Resources.ResourceManager>.
+ Чтобы устранить нарушение этого правила, замените строковый литерал строкой, полученной с помощью экземпляра <xref:System.Resources.ResourceManager> класса.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Предупреждение из этого правила можно отключить, если библиотека кода не будет локализована или если строка недоступна конечному пользователю или разработчику, использующему библиотеку кода.
@@ -56,11 +56,11 @@ ms.locfileid: "72661448"
  Пользователи могут исключить шум для методов, которые не должны передавать локализованные строки путем переименования параметра или свойства либо помечая эти элементы как условные.
 
 ## <a name="example"></a>Пример
- В следующем примере показан метод, который создает исключение, если один из его двух аргументов выходит за пределы диапазона. Для первого аргумента конструктору исключений передается литеральная строка, которая нарушает это правило. Для второго аргумента конструктор правильно передает строку, полученную с помощью <xref:System.Resources.ResourceManager>.
+ В следующем примере показан метод, который создает исключение, если один из его двух аргументов выходит за пределы диапазона. Для первого аргумента конструктору исключений передается литеральная строка, которая нарушает это правило. Для второго аргумента конструктор правильно передает строку, полученную через <xref:System.Resources.ResourceManager> .
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cpp/FxCop.Globalization.DoNotPassLiterals.cpp#1)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Ресурсы в приложениях для настольных систем](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

@@ -1,7 +1,7 @@
 ---
 title: Устранение ошибок в решениях Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2aa971a79c0b0f5592c0da5c52a457c585bb0f15
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985568"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537323"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:
@@ -36,11 +36,11 @@ ms.locfileid: "72985568"
 
 - [Написание кода](#code)
 
-- [Построение проектов](#building)
+- [Сборка проектов](#building)
 
 - [Отладка проектов](#debugging)
 
-## <a name="creating"></a>Создание, обновление и открытие проектов
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Создание, обновление и открытие проектов
  При создании или открытии проектов Office могут возникнуть следующие ошибки.
 
 ### <a name="the-project-cannot-be-created"></a>Не удается создать проект
@@ -84,7 +84,7 @@ ms.locfileid: "72985568"
 
  После завершения обновления проекта можно удалить среду выполнения набора средств Visual Studio 2005 для Office (второй выпуск) с компьютера разработчика, если она не используется другими решениями Office.
 
-## <a name="designers"></a>Использование конструкторов
+## <a name="use-the-designers"></a><a name="designers"></a>Использование конструкторов
  При работе с конструктором документов, книг или листов в проектах уровня документа могут возникнуть следующие ошибки.
 
 ### <a name="designer-failed-to-load-correctly"></a>Не удалось правильно загрузить конструктор
@@ -105,7 +105,7 @@ ms.locfileid: "72985568"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Команда "вставить картинку" ничего не делает в конструкторе Visual Studio
  Когда Excel или Word открыт в конструкторе Visual Studio, при нажатии кнопки **Коллекция картинок** на вкладке **иллюстрации** на ленте не открывается область задач **Коллекция картинок** . Чтобы добавить картинку, необходимо открыть копию книги или документа, находящегося в главной папке проекта (а не в папке *\bin* ) вне Visual Studio, добавить картинку, а затем сохранить книгу или документ.
 
-## <a name="code"></a>Написание кода
+## <a name="write-code"></a><a name="code"></a>Написание кода
  При написании кода в проектах Office могут возникнуть следующие ошибки.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Некоторые события объектов Office недоступны при использовании C\#
@@ -115,7 +115,7 @@ ms.locfileid: "72985568"
 
  Эта ошибка означает, что вы пытаетесь получить доступ к событию, имя которого совпадает с именем другого свойства или метода объекта. Чтобы получить доступ к событию, необходимо привести объект к его *интерфейсу событий*.
 
- Типы основных сборок взаимодействия Office с событиями реализуют два интерфейса: основной интерфейс со свойствами и методами и интерфейс событий, содержащий события, предоставляемые объектом. Эти интерфейсы событий используют соглашение об именовании *objectname*Events*n*_Event, например <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> и <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Если вам не удается получить доступ к событию, которое должно быть в объекте, приведите объект к типу соответствующего интерфейса событий.
+ Типы основных сборок взаимодействия Office с событиями реализуют два интерфейса: основной интерфейс со свойствами и методами и интерфейс событий, содержащий события, предоставляемые объектом. Эти интерфейсы событий используют соглашение об именовании *objectname*Events*n*_Event, например <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> и <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Если вам не удается получить доступ к событию, которое должно быть в объекте, приведите объект к типу соответствующего интерфейса событий.
 
  Например, у объектов <xref:Microsoft.Office.Interop.Excel.Application> есть событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> и свойство <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Для обработки события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> приведите <xref:Microsoft.Office.Interop.Excel.Application> к интерфейсу <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel.
 
@@ -123,8 +123,8 @@ ms.locfileid: "72985568"
 
  Дополнительные сведения о интерфейсах событий в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основной сборке взаимодействий Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenet_v40_shortsharepointincludesnet-v40-short-mdmd-or-the-includenet_v45vstoincludesnet-v45-mdmd"></a>Не может ссылаться на классы PIA Office в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы в основных сборках взаимодействия используют класс *objectname*с соглашением об именовании, например <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Не может ссылаться на классы PIA Office в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+ В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы в основных сборках взаимодействия используют соглашение об именовании *objectname*Class, например <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -138,7 +138,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 
 - Visual Basic: "ссылка на класс" Документкласс "недопустима, если его сборка связана с использованием режима No-PIA."
 
-- Визуальный C#элемент: "тип взаимодействия" Microsoft. Office. Interop. Word. документкласс "не может быть внедрен. Используйте подходящий интерфейс".
+- Visual C#: "тип взаимодействия" Microsoft.Office.Interop.Word.DocУменткласс "не может быть внедрен. Используйте подходящий интерфейс".
 
   Чтобы устранить эту ошибку, измените код так, чтобы он ссылался на соответствующий интерфейс. Например, вместо того чтобы ссылаться на объект <xref:Microsoft.Office.Interop.Word.DocumentClass>, обращайтесь к экземпляру интерфейса <xref:Microsoft.Office.Interop.Word.Document>.
 
@@ -153,12 +153,12 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  В проекты, предназначенные для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию внедряются все типы из основных сборок взаимодействия Office. Эта ошибка компиляции возникает потому, что типы внедренных сборок взаимодействия работают только с интерфейсами, а не классами. Дополнительные сведения о интерфейсах и классах в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основной сборке взаимодействий Office](/previous-versions/office/office-12/ms247299(v=office.12)). Дополнительные сведения о функции внедренных типов взаимодействия в проектах Office см. в разделе [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>Ссылки на классы Office не распознаны
- Некоторые имена классов, например Application, находятся в нескольких пространствах имен, таких как <xref:Microsoft.Office.Interop.Word> и <xref:System.Windows.Forms>. По этой причине инструкция **imports**/**using** в верхней части шаблонов проектов содержит сокращенную подходящее константу, например:
+ Некоторые имена классов, например Application, находятся в нескольких пространствах имен, таких как <xref:Microsoft.Office.Interop.Word> и <xref:System.Windows.Forms> . По этой причине инструкция **Imports** / **using** в верхней части шаблонов проектов содержит сокращенную подходящее константу, например:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- Использование инструкции **imports**/**using** требует различения ссылок на классы Office с квалификатором Word или Excel, например:
+ Использование оператора **Imports** / **using** требует различения ссылок на классы Office с квалификатором Word или Excel, например:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Несмотря на то, что вы импортировали пространство имен Word или Excel и имеете доступ ко всем классам внутри него, необходимо полностью определить все типы с помощью Word или Excel, чтобы удалить неоднозначность пространства имен.
 
-## <a name="building"></a> Построение проектов
+## <a name="build-projects"></a><a name="building"></a> Построение проектов
  При сборке проектов Office могут возникнуть следующие ошибки.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Невозможно построить проект уровня документа, основанный на документе с ограниченными разрешениями
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Ошибки компилятора, возникающие после удаления элемента управления NamedRange
  При удалении элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с неактивного листа в конструкторе невозможно удалить автоматически создаваемый код из проекта, и могут возникать ошибки компилятора. Чтобы удалить код, перед удалением элемента управления необходимо выбрать лист, содержащий элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>, чтобы сделать его активным. Если автоматически создаваемый код не удаляется при удалении элемента управления, можно удалить код с помощью конструктора, сделав лист активным и изменив его, чтобы пометить его как измененный. При повторной сборке проекта код удаляется.
 
-## <a name="debugging"></a>Отладка проектов
+## <a name="debug-projects"></a><a name="debugging"></a>Отладка проектов
  При отладке проектов Office могут возникнуть следующие ошибки.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Запрос на удаление появляется при публикации и установке решения на компьютере разработчика.
@@ -197,7 +197,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  При создании проекта уровня документа для Excel или Word в сетевом расположении UNC необходимо добавить расположение документа в список надежных расположений в Excel или Word. В противном случае настройки не будут загружаться при запуске или отладке проекта в Visual Studio. Дополнительные сведения о надежных расположениях см. [в статье предоставление доверия документам](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Потоки после отладки неправильно останавливаются
- Проекты Office в Visual Studio следуют соглашению об именовании потоков, которое позволяет отладчику правильно закрывать программу. При создании потоков в решении необходимо присвоить каждому потоку имя с префиксом "VSTA_" для правильной обработки этих потоков при остановке отладки. Например, можно задать свойство `Name` потока, который ожидает, пока сетевое событие не **VSTA_NetworkListener**.
+ Проекты Office в Visual Studio следуют соглашению об именовании потоков, которое позволяет отладчику правильно закрывать программу. При создании потоков в решении необходимо присвоить каждому потоку имя с префиксом "VSTA_" для правильной обработки этих потоков при остановке отладки. Например, можно задать `Name` свойство потока, ожидающего **VSTA_NetworkListener**сетевого события.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Не удается запустить или отладить любое решение Office на компьютере разработчика
  Если вам не удается запустить или разработать проект Office на компьютере разработки, может появиться следующее сообщение об ошибке:

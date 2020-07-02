@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление области формы в проект надстройки Outlook
+title: Как добавить область формы в проект надстройки Outlook
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
 - VSTO.NewFormRegionWizard.Page3
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1a9c9201050bf4ccb3bd6beb2ada837c2b808b4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255962"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538402"
 ---
-# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Практическое руководство. Добавление области формы в проект надстройки Outlook
+# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Как добавить область формы в проект надстройки Outlook
   Создайте область формы для расширения стандартной или настраиваемой формы Microsoft Office Outlook с помощью мастера **создания области формы Outlook** . Вы можете создать новую область формы и разработать пользовательский интерфейс в Visual Studio или импортировать область формы, сконструированную в Outlook, и добавить код Visual Basic или C#.
 
  Если у вас есть область формы Outlook, которую вы использовали в другом проекте Outlook, ее можно повторно использовать в текущем проекте надстройки Outlook VSTO с помощью диалогового окна **Добавление существующего элемента** . Дополнительные сведения см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
@@ -33,11 +33,11 @@ ms.locfileid: "71255962"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Добавление области формы в проект Outlook
 
-1. Откройте или создайте проект надстройки VSTO Outlook в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Откройте или создайте проект надстройки VSTO Outlook в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. В **обозревателе решений**выберите узел проекта надстройки VSTO Outlook.
 
-3. В меню **Проект** выберите пункт **Добавить новый элемент**.
+3. В меню **Проект** выберите **Добавить новый элемент**.
 
 4. В диалоговом окне **Добавление нового элемента** выберите элемент **Область формы Outlook**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "71255962"
 6. На странице **выбора способа создания области формы** выберите, хотите ли вы конструировать область формы путем перетаскивания управляемых элементов управления в визуальный конструктор или импортировать область формы, разработанной в Outlook.
 
     > [!NOTE]
-    > Если вы решили импортировать область формы, которая была разработана в Outlook, необходимо указать расположение файла хранилища форм Outlook ( *. OFS*). В область формы, разработанной в Outlook, нельзя добавлять управляемые элементы управления; можно добавить только код программной части существующего пользовательского интерфейса. Дополнительные сведения см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
+    > Если вы решили импортировать область формы, которая была разработана в Outlook, необходимо указать расположение файла хранилища форм Outlook (*. OFS*). В область формы, разработанной в Outlook, нельзя добавлять управляемые элементы управления; можно добавить только код программной части существующего пользовательского интерфейса. Дополнительные сведения см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
 
 7. На странице **Выберите тип области формы, которую следует создать** просмотрите типы областей формы, выберите один из них и нажмите кнопку **Далее**. Дополнительные сведения о типах областей формы см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -60,7 +60,7 @@ ms.locfileid: "71255962"
 
      Все типы областей формы могут отображаться в инспекторах, в режиме создания (для создания элементов) и в режиме чтения (для просмотра элементов). Типы областей формы "Смежные", "Заменить" и "Заменить все" также могут отображаться в области чтения.
 
-10. Нажмите кнопку **Далее**.
+10. Щелкните **Далее**.
 
 11. На странице **Укажите классы сообщений, в которых будет отображаться эта область формы** выберите стандартный класс сообщений Outlook или введите имена одного или нескольких пользовательских классов сообщений и нажмите кнопку **Готово**. Дополнительные сведения см. в разделе [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
@@ -69,6 +69,6 @@ ms.locfileid: "71255962"
 - [Решения Outlook](../vsto/outlook-solutions.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
 - [Рекомендации по созданию областей форм Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Пошаговое руководство: Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Пошаговое руководство: Импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Пошаговое руководство. Проектирование области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Пошаговое руководство. импорт области формы, разработанной в Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
 - [Пользовательские действия в областях формы Outlook](../vsto/custom-actions-in-outlook-form-regions.md)

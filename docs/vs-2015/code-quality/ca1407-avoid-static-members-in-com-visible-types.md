@@ -25,7 +25,7 @@ ms.locfileid: "85538857"
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407. Не используйте статические члены в типах, видимых для COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|

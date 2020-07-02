@@ -25,7 +25,7 @@ ms.locfileid: "85539065"
 # <a name="ca1304-specify-cultureinfo"></a>CA1304. Указывайте CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|

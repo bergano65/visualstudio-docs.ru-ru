@@ -15,24 +15,24 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847474"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539260"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: не вызывайте исключения в непредвиденных местах
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065. Не вызывайте исключения в непредвиденных местах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Метод вызывает исключение, хотя не должен этого делать.
 
 ## <a name="rule-description"></a>Описание правила
@@ -65,24 +65,24 @@ ms.locfileid: "75847474"
 
  Следующие исключения могут быть вызваны из метода Get свойства:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
+- <xref:System.NotSupportedException?displayProperty=fullName>и все производные
 
-- <xref:System.ArgumentException?displayProperty=fullName> (только из индексированного получения)
+- <xref:System.ArgumentException?displayProperty=fullName>(только из индексированного получения)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (только из индексированного получения)
+- <xref:System.Collections.Generic.KeyNotFoundException>(только из индексированного получения)
 
 ### <a name="event-accessor-methods"></a>Методы доступа к событиям
  Методы доступа к событиям должны быть простыми операциями, которые не создают исключения. При попытке добавления или удаления обработчика событий событие не должно вызывать исключение.
 
  Следующие исключения могут вызываться из акцесор событий:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
+- <xref:System.NotSupportedException?displayProperty=fullName>и все производные
 
-- <xref:System.ArgumentException> и производные
+- <xref:System.ArgumentException>и производные
 
 ### <a name="equals-methods"></a>Методы Equals
  Следующие методы **Equals** не должны вызывать исключения.
@@ -91,7 +91,7 @@ ms.locfileid: "75847474"
 
 - [м:иекуатабле.екуалс](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
-  Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто возвращать `false` вместо создания <xref:System.ArgumentException>.
+  Метод **Equals** должен возвращать `true` или `false` вместо генерации исключения. Например, если Equals передается два несовпадающих типа, он должен просто возвращать, `false` а не создавать исключение <xref:System.ArgumentException> .
 
 ### <a name="gethashcode-methods"></a>Методы GetHashCode
  Следующие методы **GetHashCode** обычно должны не создавать исключения:
@@ -102,10 +102,10 @@ ms.locfileid: "75847474"
 
   **GetHashCode** всегда должен возвращать значение. В противном случае можно потерять элементы в хэш-таблице.
 
-  Версии **GetHashCode** , которые принимают аргумент, могут вызывать <xref:System.ArgumentException>. Однако **Object. GetHashCode** никогда не должен вызывать исключение.
+  Версии **GetHashCode** , которые принимают аргумент, могут вызывать исключение <xref:System.ArgumentException> . Однако **Object. GetHashCode** никогда не должен вызывать исключение.
 
 ### <a name="tostring-methods"></a>Методы ToString
- Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> для просмотра сведений об объектах в строковом формате. Таким образом, **метод ToString** не должен изменять состояние объекта и не должен вызывать исключения.
+ Отладчик использует <xref:System.Object.ToString%2A?displayProperty=fullName> для вывода сведений об объектах в строковом формате. Таким образом, **метод ToString** не должен изменять состояние объекта и не должен вызывать исключения.
 
 ### <a name="static-constructors"></a>Статические конструкторы
  Создание исключений из статического конструктора приводит к тому, что тип будет непригоден для использования в текущем домене приложения. У вас должна быть очень хорошая причина (например, проблемы с безопасностью) для генерации исключения из статического конструктора.
@@ -114,12 +114,12 @@ ms.locfileid: "75847474"
  Создание исключения из метода завершения приводит к тому, что среда CLR быстро завершает работу, что слезамиет процесс. Поэтому всегда следует избегать генерации исключений в методе завершения.
 
 ### <a name="dispose-methods"></a>Методы Dispose
- Метод <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> не должен вызывать исключение. Метод Dispose часто вызывается как часть логики очистки в предложении `finally`. Таким образом, явное создание исключения из Dispose приводит к тому, что пользователь добавляет обработку исключений в предложение `finally`.
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>Метод не должен вызывать исключение. Метод Dispose часто вызывается как часть логики очистки в `finally` предложении. Таким образом, явное создание исключения из Dispose приводит к тому, что пользователь добавляет обработку исключений внутри `finally` предложения.
 
  Путь кода **Dispose (false)** никогда не должен вызывать исключения, так как этот метод почти всегда вызывается методом завершения.
 
 ### <a name="equality-operators--"></a>Операторы равенства (= =,! =)
- Как и методы Equals, операторы равенства должны возвращать либо `true`, либо `false` и не должны вызывать исключения.
+ Как и методы Equals, операторы равенства должны возвращать либо `true` `false` , и, и не должны вызывать исключения.
 
 ### <a name="implicit-cast-operators"></a>Операторы неявного приведения
  Поскольку пользователь часто не знает, что был вызван неявный оператор приведения, исключение, созданное неявным оператором приведения, является полностью непредвиденным. Поэтому исключения не должны вызываться из неявных операторов приведения.
@@ -133,7 +133,7 @@ ms.locfileid: "75847474"
  Предупреждение из этого правила можно отключить, если нарушение было вызвано объявлением исключения вместо выданного исключения.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2219: не создавайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219. В предложениях с исключениями не должны порождаться исключения](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения конструктора](../code-quality/design-warnings.md)

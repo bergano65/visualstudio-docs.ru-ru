@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663634"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539364"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: следует правильно реализовывать IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063. Правильно реализуйте IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
@@ -33,7 +33,7 @@ ms.locfileid: "72663634"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- `IDisposable` не реализована правильно. Ниже перечислены некоторые причины этой проблемы.
+ `IDisposable`реализован неправильно. Ниже перечислены некоторые причины этой проблемы.
 
 - Интерфейс IDisposable повторно реализован в классе.
 
@@ -59,19 +59,19 @@ ms.locfileid: "72663634"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Проверьте код и определите, какое из следующих разрешений исправит это нарушение.
 
-- Удалите IDisposable из списка интерфейсов, реализованных {0}, и вместо этого Переопределите реализацию Dispose базового класса.
+- Удалите IDisposable из списка интерфейсов, реализованных с помощью, {0} а вместо этого Переопределите реализацию Dispose базового класса.
 
-- Удалите метод завершения из типа {0}, переопределите Dispose (bool disposing) и поставьте логику финализации в путь кода, где "disposing" имеет значение false.
+- Удалите метод завершения из типа {0} , переопределите Dispose (bool disposing) и поставьте логику финализации в путь кода, где "disposing" имеет значение false.
 
-- Удалите {0}, переопределите Dispose (bool disposing) и поставьте логику Dispose в путь кода, где "disposing" имеет значение true.
+- Удалите {0} , переопределите Dispose (bool disposing) и поставьте логику Dispose в путь кода, где "disposing" имеет значение true.
 
 - Убедитесь, что {0} объявлен как открытый и запечатанный.
 
-- Переименуйте {0} в "Dispose" и убедитесь, что он объявлен как открытый и запечатанный.
+- Переименуйте {0} в \ "Dispose \" и убедитесь, что он объявлен как открытый и запечатанный.
 
-- Убедитесь, что {0} объявлен как защищенный, виртуальный и незапечатанный.
+- Убедитесь, что {0} объявлено как защищенное, виртуальное и незапечатанное.
 
-- Измените {0} так, чтобы он вызывал метод Dispose (true), а затем вызывал GC. SuppressFinalize в текущем экземпляре объекта ("this" или "Me" в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), а затем возвращает.
+- Измените {0} таким образом, чтобы он вызывал метод Dispose (true), а затем ВЫЗЫВАЛ GC. SuppressFinalize в текущем экземпляре объекта ("this" или "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), а затем возвращает.
 
 - Измените {0} таким образом, чтобы он вызывал Dispose (false), а затем возвращал.
 

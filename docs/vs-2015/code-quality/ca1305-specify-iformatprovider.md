@@ -25,7 +25,7 @@ ms.locfileid: "85539090"
 # <a name="ca1305-specify-iformatprovider"></a>CA1305. Указывайте IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|

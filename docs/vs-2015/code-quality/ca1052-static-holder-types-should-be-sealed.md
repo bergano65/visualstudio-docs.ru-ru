@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 75498be48e5ed4e723a95c5193001720db878458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14231cc4dcde5aed5cabc2d8a6172a002c0ba6bf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668892"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539754"
 ---
-# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: типы со статическими заполнителями должны быть запечатаны
+# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052. Типы со статическими заполнителями должны быть запечатаны
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|
 |CheckId|CA1052|
@@ -36,13 +36,13 @@ ms.locfileid: "72668892"
  Открытый или защищенный тип содержит только статические члены и не объявлен с [запечатанным](https://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) модификатором ([NotInheritable](https://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)).
 
 ## <a name="rule-description"></a>Описание правила
- Это правило предполагает, что тип, содержащий только статические члены, не предназначен для наследования, поскольку тип не предоставляет никаких функциональных возможностей, которые могут быть переопределены в производном типе. Тип, который не предназначен для наследования, должен быть помечен модификатором `sealed`, чтобы запретить его использование в качестве базового типа.
+ Это правило предполагает, что тип, содержащий только статические члены, не предназначен для наследования, поскольку тип не предоставляет никаких функциональных возможностей, которые могут быть переопределены в производном типе. Тип, который не предназначен для наследования, должен быть помечен `sealed` модификатором, чтобы запретить его использование в качестве базового типа.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, пометьте тип как `sealed`. Если вы нацелены на [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2,0 или более ранней версии, лучше пометить тип как `static`. Таким образом, не нужно объявлять закрытый конструктор, чтобы предотвратить создание класса.
+ Чтобы устранить нарушение этого правила, пометьте тип как `sealed` . Если вы нацеливание на [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2,0 или более раннюю версию, лучшим подходом является пометка типа как `static` . Таким образом, не нужно объявлять закрытый конструктор, чтобы предотвратить создание класса.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Подавлять предупреждение из этого правила, только если тип предназначен для наследования. Отсутствие модификатора `sealed` предполагает, что тип полезен в качестве базового типа.
+ Подавлять предупреждение из этого правила, только если тип предназначен для наследования. Отсутствие `sealed` модификатора предполагает, что тип является полезным в качестве базового типа.
 
 ## <a name="example-of-a-violation"></a>Пример нарушения
 
@@ -57,10 +57,10 @@ ms.locfileid: "72668892"
 ## <a name="fix-with-the-static-modifier"></a>Исправить с помощью модификатора static
 
 ### <a name="description"></a>Описание
- В следующем примере показано, как устранить нарушение этого правила, пометив тип модификатором `static`.
+ В следующем примере показано, как устранить нарушение этого правила, пометив тип `static` модификатором.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Design.StaticMembersFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticMembersFixed/cs/FxCop.Design.StaticMembersFixed.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1053: типы статических владельцев не должны иметь конструкторы](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+ [CA1053. Типы со статическими заполнителями не должны иметь конструкторы](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

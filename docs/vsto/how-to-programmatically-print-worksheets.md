@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Печать листов программными средствами
+title: Как программно печатать листы
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490587"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537895"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Практическое руководство. Печать листов программными средствами
+# <a name="how-to-programmatically-print-worksheets"></a>Как программно печатать листы
 
 Любой лист в книге можно напечатать.
 
@@ -31,12 +31,12 @@ ms.locfileid: "69490587"
 
 ### <a name="to-print-a-worksheet"></a>Печать листа
 
-1. Вызовите метод `PrintOut` `Sheet1`, запросите две копии и просмотрите документ перед печатью.
+1. Вызовите метод `PrintOut``Sheet1`, запросите две копии и просмотрите документ перед печатью.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   Метод позволяет отображать указанный объект в окне **предварительного просмотра.** <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> В следующем коде предполагается, что существует ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet> с именем `Sheet1`.
+   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>Метод позволяет отображать указанный объект в окне **предварительного просмотра** . В следующем коде предполагается, что существует ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet> с именем `Sheet1`.
 
 ### <a name="to-preview-a-page-before-printing"></a>Предварительный просмотр страницы перед печатью
 
@@ -54,7 +54,7 @@ ms.locfileid: "69490587"
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   Метод позволяет отображать указанный объект в окне **предварительного просмотра.** <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
+   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>Метод позволяет отображать указанный объект в окне **предварительного просмотра** .
 
 ### <a name="to-preview-a-page-before-printing"></a>Предварительный просмотр страницы перед печатью
 
@@ -66,7 +66,7 @@ ms.locfileid: "69490587"
 ## <a name="see-also"></a>См. также
 
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Ведущий элемент листа](../vsto/worksheet-host-item.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

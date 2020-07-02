@@ -25,7 +25,7 @@ ms.locfileid: "85538584"
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001. Избегайте вызова проблемных методов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|

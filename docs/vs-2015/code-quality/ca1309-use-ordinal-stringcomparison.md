@@ -25,7 +25,7 @@ ms.locfileid: "85538883"
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309. Используйте порядковый параметр StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|

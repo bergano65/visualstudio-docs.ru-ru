@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72d0ce7435a067ef9aa16ccc5b2daa7602926bf
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184826"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537544"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Использование изображений в Visual Studio
@@ -60,44 +60,38 @@ ms.locfileid: "84184826"
 #### <a name="concept-development"></a>Разработка концепции
  В пользовательском интерфейсе Visual Studio имеется широкий спектр типов значков. При разработке следует тщательно обдумать тип значка. Не используйте непонятные или нестандартные объекты пользовательского интерфейса для элементов значков. В таких случаях следует выбрать символ, например, со значком смарт-тега. Обратите внимание, что значение абстрактного тега слева является более очевидным, чем непонятная версия на основе пользовательского интерфейса справа:
 
-|||
-|-|-|
 |**Правильное использование символьных изображений**|**Неправильное использование символьных изображений**|
+|-|-|
 |![Правильный значок смарт-тега](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404 — 01_SmartTagCorrect")|![Неправильный значок смарт-тега](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404 — 02_SmartTagIncorrect")|
 
  Существуют экземпляры, в которых стандартные, легко узнаваемые элементы пользовательского интерфейса хорошо подходят для значков. Добавление окна — один из таких примеров:
 
-|||
-|-|-|
 |**Правильный элемент пользовательского интерфейса в значке**|**Неверный элемент пользовательского интерфейса в значке**|
+|-|-|
 |![Правильный значок добавления окна](../../extensibility/ux-guidelines/media/0404-03_addwindowcorrect.png "0404 — 03_AddWindowCorrect")|![Неправильный значок добавления окна](../../extensibility/ux-guidelines/media/0404-04_addwindowincorrect.png "0404 — 04_AddWindowIncorrect")|
 
  Не используйте документ в качестве базового элемента, если он не является обязательным для значения значка. Без элемента документа в поле "добавить документ" (ниже) значение теряется, в то время как при обновлении элемента документа не требуется передавать значение.
 
-|||
-|-|-|
 |**Правильное использование значка документа**|**Неправильное использование значка документа**|
+|-|-|
 |![Правильный значок документа](../../extensibility/ux-guidelines/media/0404-05_documenticoncorrect.png "0404 — 05_DocumentIconCorrect")|![Неправильный значок документа](../../extensibility/ux-guidelines/media/0404-06_documenticonincorrect.png "0404 — 06_DocumentIconIncorrect")|
 
  Понятие "Показать" должно быть представлено значком, который лучше всего показывает, что отображается, например, с помощью примера показать все файлы. Метафору линзы можно использовать для указания концепции "View", если это необходимо, например с помощью представление ресурсов примере.
 
-|||
-|-|-|
 |**Казывающи**|**Режиме**|
+|-|-|
 |![Значок показа](../../extensibility/ux-guidelines/media/0404-07_show.png "0404 — 07_Show")|![Значок просмотра](../../extensibility/ux-guidelines/media/0404-08_view.png "0404 — 08_View")|
 
  Значок увеличительного стекла справа должен представлять только поиск, Поиск и обзор. Левый вариант со знаком плюс или минус должен представлять только масштаб при увеличении или уменьшении масштаба.
 
-|||
-|-|-|
 |**Осуществлять**|**Масштаб**|
+|-|-|
 |![Значок поиска](../../extensibility/ux-guidelines/media/0404-09_search.png "0404 — 09_Search")|![Значок масштаба](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404 — 10_Zoom")|
 
  В древовидных представлениях не используйте как значок папки, так и модификатор. Если он доступен, используйте только модификатор.
 
-|||
-|-|-|
 |**Правильные значки в представлении дерева**|**Неверные значки представления в виде дерева**|
+|-|-|
 |![Правильный значок представления в виде дерева &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404 — 11_TreeViewCorrect1") ![правильный значок представления в виде дерева &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404 — 12_TreeViewCorrect2")|![Неправильный значок представления в виде дерева &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404 — 13_TreeViewIncorrect1") ![неверный значок представления в виде дерева &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404 — 14_TreeViewIncorrect2")|
 
 ### <a name="style-details"></a>Сведения о стиле
@@ -127,23 +121,20 @@ ms.locfileid: "84184826"
 
  Чтобы добиться идеального выравнивания и баланса, старайтесь не помешать базовому элементу значка с глифами действий. Поместите глиф в верхнюю левую часть базового элемента. При добавлении дополнительного элемента учитывайте выравнивание и баланс значка.
 
-|||
-|-|-|
 |**Правильное выравнивание и баланс**|**Неправильное выравнивание и баланс**|
+|-|-|
 |![Правильные баланс значка и выравнивание](../../extensibility/ux-guidelines/media/0404-22_alignbalancecorrect.png "0404 — 22_AlignBalanceCorrect")|![Неправильные баланс значка и выравнивание](../../extensibility/ux-guidelines/media/0404-23_alignbalanceincorrect.png "0404 — 23_AlignBalanceIncorrect")|
 
  Обеспечьте четность размера для значков, которые совместно используют элементы и используются в наборах. Обратите внимание, что при неправильном связывании окружность и стрелка имеют слишком размеры и не совпадают.
 
-|||
-|-|-|
 |**Правильный контроль размера**|**Недопустимый контроль соответствия размера**|
+|-|-|
 |![Правильные размер значка и четность](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404 — 24_SizeParityCorrect")|![Неправильные размер значка и четность](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404 — 25_SizeParityIncorrect")|
 
  Используйте единообразный график и визуальные веса. Оцените, как выполняется сравнение создаваемого значка с другими значками, с помощью параллельного сравнения. Никогда не используйте весь кадр 16x16, используйте 15x15 или меньше. Отношение отрицательного к положительному (от темного к светлому) должно быть 50/50.
 
-|||
-|-|-|
 |**Правильное соотношение отрицательных и положительных результатов**|**Неверное отношение отрицательных положительных результатов**|
+|-|-|
 |![Правильный визуальный вес для значков &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404 — 26_VisualWeightCorrect1")<br /><br /> ![Правильный визуальный вес для значков &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404 — 27_VisualWeightCorrect2")<br /><br /> ![Правильный визуальный вес для значков &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404 — 28_VisualWeightCorrect3")|![Неправильный визуальный вес для значков](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 — 29_VisualWeightIncorrect")|
 
  Используйте простые, сравнимые и дополняющие углы для создания элементов без ущерба для целостности элементов. По возможности используйте 45 ° или 90 °.
@@ -163,16 +154,14 @@ ms.locfileid: "84184826"
 
  Используйте источники освещения только при добавлении необходимой ясности в объект.
 
-|||
-|-|-|
 |**Правильный источник освещения**|**Неверный источник освещения**|
+|-|-|
 |![Правильные источники света для значков](../../extensibility/ux-guidelines/media/0404-34_lightsourcescorrect.png "0404 — 34_LightSourcesCorrect")|![Неправильные источники света для значков](../../extensibility/ux-guidelines/media/0404-35_lightsourcesincorrect.png "0404 — 35_LightSourcesIncorrect")|
 
  Используйте контуры только для улучшения читаемости или для улучшения взаимодействия с метафорой. Отрицательный положительный (темно-светлый) баланс должен быть 50/50.
 
-|||
-|-|-|
 |**Правильное использование контуров**|**Неправильное использование контуров**|
+|-|-|
 |![Правильные контуры](../../extensibility/ux-guidelines/media/0404-36_outlinescorrect.png "0404 — 36_OutlinesCorrect")|![Неправильные контуры](../../extensibility/ux-guidelines/media/0404-37_outlinesincorrect.png "0404 — 37_OutlinesIncorrect")|
 
 #### <a name="icon-types"></a>Типы значков
@@ -269,7 +258,7 @@ ms.locfileid: "84184826"
 ### <a name="base-palette"></a>Базовая палитра
  Все стандартные значки содержат три основных цвета. Значки не содержат градиенты или тени с одним или двумя исключениями для значков трехмерных инструментов.
 
-|Использование|Имя|Значение (светло-тема)|Градиент|Пример|
+|Использование|name|Значение (светло-тема)|Градиент|Пример|
 |-----------|----------|---------------------------|------------|-------------|
 |Фон/темный|VS BG|424242/66, 66, 66|![Палитра 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Пример базовой палитры](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 — 02_BasePaletteExample")|
 |Передний или пониженный|VS FG|F0EFF1/240 239 241|![Палитра F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,7 +271,7 @@ ms.locfileid: "84184826"
 #### <a name="action-modifiers"></a>Модификаторы действий
  Следующие четыре цвета указывают типы действий, необходимых для модификаторов действий.
 
-|Использование|Имя|Значение (все темы)|Градиент|
+|Использование|name|Значение (все темы)|Градиент|
 |-----------|----------|--------------------------|------------|
 |Positive|Зеленое действие VS|388A34/56138, 52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negative|VS действие Red|A1260D/161, 38, 13|![Палитра A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -292,47 +281,47 @@ ms.locfileid: "84184826"
 ##### <a name="examples"></a>Примеры
  Зеленый используется для положительных модификаторов действия, таких как "Добавить", "выполнить", "Воспроизвести" и "проверить".
 
-|||||
+|Выполните команду|Выполнение запроса|Воспроизвести все шаги|Добавить элемент управления|
 |-|-|-|-|
-|![Значок запуска](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")<br />Выполните команду|![Значок выполнения запроса](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 — 04_ExecuteQuery")<br />Выполнение запроса|![Значок воспроизведения всех этапов](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 — 05_PlayAllSteps")<br />Воспроизвести все шаги|![Значок добавления элемента управления](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 — 06_AddControl")<br />Добавить элемент управления|
+|![Значок запуска](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Значок выполнения запроса](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 — 04_ExecuteQuery")|![Значок воспроизведения всех этапов](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 — 05_PlayAllSteps")|![Значок добавления элемента управления](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 — 06_AddControl")|
 
  Красный используется для отрицательных модификаторов действий, таких как "Удалить", "остановить", "Отмена" и "Закрыть".
 
-|||||
+|Удаление связи|Удалить столбец|Завершение запроса|Подключение в автономном режиме|
 |-|-|-|-|
-|![Значок удаления связи](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 — 07_DeleteRelationship")<br />Удаление связи|![Значок удаления колонки](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405 — 08_DeleteColumn")<br />Удалить столбец|![Значок остановки запроса](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 — 09_StopQuery")<br />Завершение запроса|![Значок переключения в режим автономной работы](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 — 10_ConnectionOffline")<br />Подключение в автономном режиме|
+|![Значок удаления связи](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 — 07_DeleteRelationship")|![Значок удаления колонки](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405 — 08_DeleteColumn")|![Значок остановки запроса](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 — 09_StopQuery")|![Значок переключения в режим автономной работы](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 — 10_ConnectionOffline")|
 
  Синий цвет применяется к модификаторам нейтрального действия, наиболее часто представленным в виде стрелок, таких как "Открыть", "Далее", "Предыдущий", "Импорт" и "экспорт".
 
-|||||
+|Поле "переход"|Пакетная запись после записи|Редактор адреса|Редактор взаимосвязей|
 |-|-|-|-|
-|![Значок перехода к полю](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 — 11_GoToField")<br />Поле "переход"|![&#45;пакетной проверки в значке](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 — 12_BatchedCheckIn")<br />Пакетная запись после записи|![Значок редактора адреса](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 — 13_AddressEditor")<br />Редактор адреса|![Значок редактора связей](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 — 14_AssociationEditor")<br />Редактор взаимосвязей|
+|![Значок перехода к полю](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 — 11_GoToField")|![&#45;пакетной проверки в значке](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 — 12_BatchedCheckIn")|![Значок редактора адреса](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 — 13_AddressEditor")|![Значок редактора связей](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 — 14_AssociationEditor")|
 
  Темно-золотистый в основном используется для модификатора new.
 
-|||||
+|Создание проекта|Создать диаграмму|Новый модульный тест|Новый элемент списка|
 |-|-|-|-|
-|![Значок нового проекта](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 — 15_NewProject")<br />Создать проект|![Значок создания новой диаграммы](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 — 16_CreateNewGraph")<br />Создать диаграмму|![Значок нового модульного теста](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 — 17_NewUnitTest")<br />Новый модульный тест|![Значок нового элемента списка](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 — 18_NewListItem")<br />Новый элемент списка|
+|![Значок нового проекта](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 — 15_NewProject")|![Значок создания новой диаграммы](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 — 16_CreateNewGraph")|![Значок нового модульного теста](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 — 17_NewUnitTest")|![Значок нового элемента списка](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 — 18_NewListItem")|
 
 #### <a name="special-cases"></a>Особые случаи
  В особых случаях цветовой модификатор действия может использоваться независимо в качестве отдельного значка. Цвет, используемый для значка, отражает действия, с которыми связан значок. Это ограничение используется только для небольшого подмножества значков, включая:
 
-||||||
+|Выполните команду|Остановить|Удалить|Сохранить|Назад|
 |-|-|-|-|-|
-|![Значок запуска](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")<br />Выполните команду|![Значок остановки](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 — 19_Stop")<br />Остановить|![Значок удаления](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 — 20_Delete")<br />Удалить|![Значок "Сохранить"](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 — 21_Save")<br />Сохранить|![Значок перехода назад](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 — 22_NavigateBack")<br />Назад|
+|![Значок запуска](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Значок остановки](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 — 19_Stop")|![Значок удаления](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 — 20_Delete")|![Значок "Сохранить"](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 — 21_Save")|![Значок перехода назад](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 — 22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>Палитра иерархии кода
 
 #### <a name="folder"></a>Папка
 
-|Использование|Имя|Значение (все темы)|Градиент|Пример|
+|Использование|name|Значение (все темы)|Градиент|Пример|
 |-----------|----------|--------------------------|------------|-------------|
 |Папки|Папка|DCB67A/220 182 122|![Палитра DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Значок цвета папки](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 — 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Языки Visual Studio
  Каждый из общих языков или платформ, доступных в Visual Studio, имеет связанный цвет. Эти цвета используются на базовом значке или в модификаторах языка, которые отображаются в правом верхнем углу составных значков.
 
-|Использование|Имя|Значение (все темы)|Градиент|
+|Использование|name|Значение (все темы)|Градиент|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blue|0095D7/0149 215|![Палитра 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP сиреневый|9B4F96/155, 79150|![Палитра 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,15 +335,18 @@ ms.locfileid: "84184826"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Примеры значков с модификаторами языка
 
-|||||||
+|VB|C#|F#|JavaScript|Python|
 |-|-|-|-|-|-|
-|![Значок Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 — 25_VB")<br />VB|![Значок C&#35;](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 — 26_CSharp")<br />C#|![Значок C&#43;&#43; ](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 — 27_CPlusPlus")<br />C++|![Значок F&#35;](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 — 28_FSharp")<br />F#|![Значок JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 — 29_JavaScript")<br />JavaScript|![Значок Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 — 30_Python")<br />Python|
+|![Значок Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 — 25_VB")|![Значок C&#35;](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 — 26_CSharp")|![Значок C&#43;&#43; ](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 — 27_CPlusPlus")|![Значок F&#35;](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 — 28_FSharp")|![Значок JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 — 29_JavaScript")|![Значок Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 — 30_Python")|
+
+|HTML|WPF|ASP|CSS|TypeScript|
+|-|-|-|-|-|-|
 |![Значок HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 — 31_HTML")<br />HTML|![Значок WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 — 32_WPF")<br />WPF|![Значок ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 — 33_ASP")<br />ASP|![Значок CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 — 34_CSS")<br />CSS|![Значок TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 — 35_TypeScript")<br />TypeScript||
 
-#### <a name="intellisense"></a>технология IntelliSense
+#### <a name="intellisense"></a>IntelliSense
  Значки IntelliSense используют эксклюзивную цветовую палитру. Эти цвета помогают пользователям быстро различать различные элементы в списке всплывающих функций IntelliSense.
 
-|Использование|Имя|Значение (все темы)|Градиент|
+|Использование|name|Значение (все темы)|Градиент|
 |-----------|----------|--------------------------|------------|
 |Класс, событие|VS действие, оранжевый|C27D1A/194125, 26|![Палитра C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Метод расширения, метод, модуль, делегат|Фиолетовое действие VS|652D90/101, 45144|![Палитра 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -364,15 +356,18 @@ ms.locfileid: "84184826"
 
 ##### <a name="examples-of-intellisense-icons"></a>Примеры значков IntelliSense
 
-||||||
+|Класс|Частное событие|Делегат|Метод Friend|Поле|
 |-|-|-|-|-|
-|![Значок класса IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 — 36_IntelliSenseClass")<br />Класс|![Значок частного события IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 — 37_IntelliSensePrivateEvent")<br />Частное событие|![Значок делегата IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 — 38_IntelliSenseDelegate")<br />Делегат|![Значок друга метода IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 — 39_IntelliSenseMethodFriend")<br />Метод Friend|![Значок поля](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 — 40_Field")<br />Поле|
-|![Значок элемента перечисления, защищенного IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 — 41_IntelliSenseProtectedEnumItem")<br />Защищенный элемент Enum|![Значок объекта IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 — 42_IntelliSenseObject")<br />Объект|![Значок шаблона IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 — 43_IntelliSenseTemplate")<br />Шаблон|![Значок ярлыка исключения IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 — 44_IntelliSenseExceptionShortcut")<br />Ярлык исключения||
+|![Значок класса IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 — 36_IntelliSenseClass")|![Значок частного события IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 — 37_IntelliSensePrivateEvent")|![Значок делегата IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 — 38_IntelliSenseDelegate")|![Значок друга метода IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 — 39_IntelliSenseMethodFriend")|![Значок поля](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 — 40_Field")|
+
+|Защищенный элемент Enum|Объект|Шаблон|Ярлык исключения|
+|-|-|-|-|
+|![Значок элемента перечисления, защищенного IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 — 41_IntelliSenseProtectedEnumItem")|![Значок объекта IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 — 42_IntelliSenseObject")|![Значок шаблона IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 — 43_IntelliSenseTemplate")|![Значок ярлыка исключения IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 — 44_IntelliSenseExceptionShortcut")|
 
 ### <a name="notifications"></a>Уведомления
  Уведомления в Visual Studio используются для указания состояния. Для определения уведомлений со следующими уровнями состояния в палитре уведомлений используются следующие четыре цвета, а также черные или белые параметры заливки переднего плана.
 
-|Использование|Имя|Значение (все темы)|Градиент|
+|Использование|name|Значение (все темы)|Градиент|
 |-----------|----------|--------------------------|------------|
 |Состояние: нейтральный|Уведомление синий (VS Blue)|1BA1E2/27 161 226|![Палитра 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Состояние: положительное|Зеленое уведомление (VS Green)|339933/51153, 51|![Палитра 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -383,6 +378,6 @@ ms.locfileid: "84184826"
 
 #### <a name="examples-of-notification-icons"></a>Примеры значков уведомлений
 
-|||||
+|Предупреждение|Предупреждение|Завершить|Остановить|
 |-|-|-|-|
-|![Значок оповещения](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 — 45_Alert")<br />Предупреждение|![Значок предупреждения](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 — 48_Warning")<br />Предупреждение|![Значок завершения задачи](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 — 46_Complete")<br />Завершить|![Значок остановки](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 — 47_Stop")<br />Остановить|
+|![Значок оповещения](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 — 45_Alert")|![Значок предупреждения](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 — 48_Warning")|![Значок завершения задачи](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 — 46_Complete")|![Значок остановки](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 — 47_Stop")|

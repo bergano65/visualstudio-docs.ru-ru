@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c56de70daeabd05215f68024339d5855686d529b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653832"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539598"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: объявляйте типы в пространствах имен
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050. Объявите типы в пространствах имен
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
@@ -51,7 +51,7 @@ ms.locfileid: "72653832"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TypesLiveInNamespaces/vb/FxCop.Design.TypesLiveInNamespaces.vb#1)]
 
 ## <a name="example"></a>Пример
- В следующем приложении используется библиотека, определенная ранее. Обратите внимание, что тип, объявленный вне пространства имен, создается, когда имя `Test` не уточняется пространством имен. Обратите внимание, что для доступа к типу `Test` в `Goodspace` необходимо указать имя пространства имен.
+ В следующем приложении используется библиотека, определенная ранее. Обратите внимание, что тип, объявленный вне пространства имен, создается, когда имя `Test` не уточняется пространством имен. Обратите внимание, что для доступа к `Test` типу в необходимо `Goodspace` указать имя пространства имен.
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]

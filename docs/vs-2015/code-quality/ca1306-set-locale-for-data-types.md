@@ -25,7 +25,7 @@ ms.locfileid: "85539026"
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306. Задавайте языковой стандарт для типов данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|

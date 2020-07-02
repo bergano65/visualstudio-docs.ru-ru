@@ -25,7 +25,7 @@ ms.locfileid: "85538662"
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118. Проверьте использование атрибута SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
 |CheckId|CA2118|
