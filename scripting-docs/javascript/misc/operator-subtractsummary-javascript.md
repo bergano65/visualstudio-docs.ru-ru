@@ -1,9 +1,9 @@
 ---
-title: Сводный список операторов (JavaScript) | Документация Майкрософт
+title: Сводка операторов (JavaScript) | Документация Майкрософт
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 dev_langs:
 - JavaScript
 - TypeScript
@@ -12,27 +12,27 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006485"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816791"
 ---
 # <a name="operator-summary-javascript"></a>Сводный список операторов (JavaScript)
-В следующей таблице приводятся [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] операторы в соответствующих категорий.  
+В следующих таблицах перечислены [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] операторы в соответствующих категориях.  
   
 ## <a name="computational-operators"></a>Операторы вычислений  
   
 |Оператор|Символ|  
 |--------------|------------|  
-|[Сложение](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
-|[Декремент](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[Деление](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Инкремент](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Остаток](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[Умножение](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
-|[Вычитание](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[Полняют](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[Decrement](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
+|[Отдел](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Производим](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Дальнейшем](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Умножения](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
+|[Вычитания](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Унарное отрицание](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
 ## <a name="logical-operators"></a>Логические операторы  
@@ -40,20 +40,20 @@ ms.locfileid: "63006485"
 |Оператор|Символ|  
 |--------------|------------|  
 |[Запятая](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[Условный (троичный)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
+|[Conditional (Ternary)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Равенство](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Больше](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[Больше или равно](../../javascript/reference/comparison-operators-javascript.md)|>=|  
 |[Удостоверение](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Неравенство](../../javascript/reference/comparison-operators-javascript.md)|!=|  
-|[Меньше](../../javascript/reference/comparison-operators-javascript.md)|<|  
+|[Меньше чем](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Меньше или равно](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[Логическое И](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[Логическое и](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[Логическое НЕ](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Логическое или](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[Нетождества](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
-## <a name="bitwise-operators"></a>Побитовые операторы  
+## <a name="bitwise-operators"></a>Битовые операторы  
   
 |Оператор|Символ|  
 |--------------|------------|  
@@ -62,7 +62,7 @@ ms.locfileid: "63006485"
 |[Побитовое НЕ](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
 |[Побитовое или](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
 |[Побитовый сдвиг вправо](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
-|[Побитовое исключающее ИЛИ](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
+|[Побитовое ИСКЛЮЧАЮЩее](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[Сдвиг вправо без учета знака](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
   
 ## <a name="assignment-operators"></a>Операторы присваивания  

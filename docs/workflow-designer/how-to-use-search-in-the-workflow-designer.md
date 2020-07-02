@@ -1,19 +1,19 @@
 ---
 title: Как использовать поиск в конструкторе рабочих процессов
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 12bda4af085b8ab41d3e11841f24cd5dfd389738
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650300"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817480"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Как использовать поиск в конструкторе рабочих процессов
 
@@ -33,7 +33,7 @@ ms.locfileid: "72650300"
 
 ### <a name="use-quick-find"></a>Использование быстрого поиска
 
-1. Откройте конструктор рабочих процессов, нажмите **сочетание клавиш CTRL + F**или выберите **изменить**  > **найти и заменить**  > **Быстрый поиск**.
+1. Откройте конструктор рабочих процессов, нажмите клавиши **CTRL + F**или выберите **Правка**  >  **найти и заменить**  >  **Быстрый поиск**.
 
 2. Введите условие поиска в текстовое поле **найти** и нажмите кнопку **Найти далее**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72650300"
 
 ### <a name="use-find-in-files"></a>Использовать поиск в файлах
 
-1. В Visual Studio нажмите клавиши **Ctrl** +**SHIFT** +**F**или выберите **изменить**  > **найти и заменить**  > **найти в файлах**.
+1. В Visual Studio нажмите клавиши **CTRL** + **SHIFT** + **F**или выберите **Правка**  >  **найти и заменить**  >  **найти в файлах**.
 
 2. Введите искомый элемент в текстовое поле **найти** и нажмите кнопку **найти все**.
 

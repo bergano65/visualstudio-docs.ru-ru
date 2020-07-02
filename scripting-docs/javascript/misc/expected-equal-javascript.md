@@ -3,7 +3,7 @@ title: Требуется "=" (JavaScript) | Документация Майкр
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1011
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 518140ebbddcee917a03bad6ec776e4c84b248d1
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: acc91513cc7f230a150ca87eea5cddc4681e43d3
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573392"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816596"
 ---
 # <a name="expected--javascript"></a>Ожидался символ "=" (JavaScript)
 Предпринята попытка создать переменную, которая будет использоваться с операторами условной компиляции, но не поместит знак равенства между переменной и значением, которое вы хотите присвоить ей.  
@@ -33,5 +33,5 @@ ms.locfileid: "72573392"
     ```  
   
 ## <a name="see-also"></a>См. также  
- @No__t_1 [условной компиляции](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)

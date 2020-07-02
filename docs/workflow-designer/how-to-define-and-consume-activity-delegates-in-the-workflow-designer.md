@@ -1,23 +1,23 @@
 ---
 title: 'Конструктор рабочих процессов: определение и использование делегатов действий'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593906"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817506"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Как определить и использовать делегатов действий в конструкторе рабочих процессов
 
-.NET Framework 4,5 включает готовый конструктор для действия <xref:System.Activities.Statements.InvokeDelegate>. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.
+.NET Framework 4,5 включает готовый конструктор для <xref:System.Activities.Statements.InvokeDelegate> действия. Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Укажите делегат действия
 
@@ -26,7 +26,7 @@ ms.locfileid: "75593906"
    > [!NOTE]
    > Если вы не видите шаблоны проекта **рабочего процесса** , сначала установите компонент **Windows Workflow Foundation** Visual Studio. Подробные инструкции см. в разделе [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Щелкните правой кнопкой мыши проект в **Обозреватель решений** и выберите **Добавить** > **новый элемент**. Выберите категорию **Рабочий процесс** , а затем выберите шаблон элемента **действия** . Назовите новое действие **MyForEach. XAML** и нажмите кнопку **ОК**.
+3. Щелкните правой кнопкой мыши проект в **Обозреватель решений** и выберите команду **Добавить**  >  **новый элемент**. Выберите категорию **Рабочий процесс** , а затем выберите шаблон элемента **действия** . Назовите новое действие **MyForEach. XAML** и нажмите кнопку **ОК**.
 
    Действие откроется в конструкторе рабочих процессов.
 
@@ -34,7 +34,7 @@ ms.locfileid: "75593906"
 
 5. Нажмите кнопку **Создать аргумент**. Назовите новые **элементы**аргументов.
 
-6. В столбце **тип аргумента** выберите **массив [T]** .
+6. В столбце **тип аргумента** выберите **массив [T]**.
 
 7. В браузере типов выберите **объект** и нажмите кнопку **ОК**.
 
@@ -42,47 +42,47 @@ ms.locfileid: "75593906"
 
 9. В столбце Тип аргумента выберите **Обзор типов** .
 
-10. В браузере типов введите **действия ActivityAction** в поле **имя типа** . Выберите **действия activityaction\<t >** в представлении в виде дерева. В раскрывающемся списке выберите **объект** , чтобы назначить тип **действия activityaction\<объекта >** аргументу.
+10. В браузере типов введите **действия ActivityAction** в поле **имя типа** . В представлении в виде дерева выберите **действия ActivityAction \<T> ** . Выберите **объект** в раскрывающемся списке, чтобы присвоить аргументу тип **действия ActivityAction \<Object> ** .
 
-11. Перетащите действие <xref:System.Activities.Statements.While> из раздела **поток управления** области элементов в область конструктора.
+11. Перетащите <xref:System.Activities.Statements.While> действие из раздела **поток управления** области элементов в область конструктора.
 
-12. Выберите действие <xref:System.Activities.Statements.While> и перейдите на вкладку **переменные** .
+12. Выберите <xref:System.Activities.Statements.While> действие и перейдите на вкладку **переменные** .
 
 13. Выберите **создать переменную**. Назовите новый **индекс**переменной.
 
 14. В столбце **тип переменной** выберите **Int32**. Оставьте **область** как **while**, а столбец **по умолчанию** — пустым.
 
-15. Задайте для свойства **Condition** действия <xref:System.Activities.Statements.While> значение **индексировать < элементы. length;** .
+15. Задайте для свойства **Condition** действия значение <xref:System.Activities.Statements.While> **индексировать < элементы. length;**.
 
-16. Перетащите <xref:System.Activities.Statements.InvokeDelegate> действие из раздела **примитивы** области элементов в **тело** действия <xref:System.Activities.Statements.While>.
+16. Перетащите <xref:System.Activities.Statements.InvokeDelegate> действие из раздела **примитивы** области элементов в **тело** <xref:System.Activities.Statements.While> действия.
 
 17. Выберите **текст** в раскрывающемся списке делегат.
 
-18. В сетке **свойств** для действия <xref:System.Activities.Statements.InvokeDelegate> нажмите кнопку **...** в свойстве **аргументы делегата** .
+18. В сетке **Свойства** для <xref:System.Activities.Statements.InvokeDelegate> действия нажмите кнопку **...** в свойстве **аргументы делегата** .
 
-19. В столбце **значение** аргумента именованный **аргумент**введите **элементы [index]** . Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **DelegateArguments** .
+19. В столбце **значение** аргумента именованный **аргумент**введите **элементы [index]**. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **DelegateArguments** .
 
-20. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. Создается действие <xref:System.Activities.Statements.Assign>, а <xref:System.Activities.Statements.Sequence> действие создается автоматически, чтобы содержать два действия в разделе **Body** действия **MyForEach** . Последовательность необходима, поскольку раздел **Body** может содержать только одно действие. Автоматическое создание нового <xref:System.Activities.Statements.Sequence> действия — это новая функция .NET Framework 4,5.
+20. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign>Действие создается, и <xref:System.Activities.Statements.Sequence> действие создается автоматически, чтобы содержать два действия в разделе **Body** действия **MyForEach** . Последовательность необходима, поскольку раздел **Body** может содержать только одно действие. Автоматическое создание нового <xref:System.Activities.Statements.Sequence> действия — это новая функция .NET Framework 4,5.
 
-21. Присвойте свойству **для** действия <xref:System.Activities.Statements.Assign> значение **index**. Установите свойство **value** действия **Assign** в значение **index + 1**.
+21. Присвойте свойству **to** <xref:System.Activities.Statements.Assign> действия значение **index**. Установите свойство **value** действия **Assign** в значение **index + 1**.
 
     Пользовательское действие **MyForEach** вызывает произвольное действие один раз для каждого значения, переданного в него через коллекцию **Items** , со значениями в коллекции в качестве входных данных для действия.
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Использование настраиваемого действия в рабочем процессе
 
-1. Постройте проект, нажав клавиши **Ctrl**+**SHIFT**+**B**.
+1. Постройте проект, нажав клавиши **CTRL** + **SHIFT** + **B**.
 
 2. В **Обозреватель решений**откройте в конструкторе **Workflow1. XAML** .
 
 3. Перетащите действие **MyForEach** из области элементов в область конструктора. Действие находится в разделе области элементов с тем же именем, что и у проекта.
 
-4. Задайте для свойства **Items** действия **MyForEach** значение **новый объект [] {1, "ABC"}** .
+4. Задайте для свойства **Items** действия **MyForEach** значение **новый объект [] {1, "ABC"}**.
 
 5. Перетащите <xref:System.Activities.Statements.WriteLine> действие из раздела **примитивы** области элементов в раздел **делегат: Body** действия **MyForEach** .
 
-6. Задайте для свойства **Text** действия <xref:System.Activities.Statements.WriteLine> значение **Argument. ToString ()** .
+6. Присвойте свойству **Text** <xref:System.Activities.Statements.WriteLine> действия значение **Argument. ToString ()**.
 
 При выполнении рабочего процесса консоль отображает следующие выходные данные:
 
-**1**
-**ABC**
+**1** 
+ **ABC**

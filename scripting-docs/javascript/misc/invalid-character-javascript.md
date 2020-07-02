@@ -3,7 +3,7 @@ title: Недопустимый знак (JavaScript) | Документация
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576575"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816947"
 ---
 # <a name="invalid-character-javascript"></a>Недопустимый символ (JavaScript)
-Вы состояли идентификатор, используя символ (или символы), который не распознается компилятором [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] как допустимый. Допустимые символы используют следующие правила.  
+Вы состояли идентификатор, используя символ (или символы), не распознаваемый компилятором как допустимый [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] . Допустимые символы используют следующие правила.  
   
 - Первый символ должен быть буквой ASCII (как в верхнем, так и в нижнем регистре) или символом подчеркивания (_).  
   
@@ -32,9 +32,9 @@ ms.locfileid: "72576575"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Старайтесь не использовать символы, которые не являются частью определения языка [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+- Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определения языка.  
   
-## <a name="see-also"></a>См. также:  
- [Переменные](../../javascript/variables-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Среды](../../javascript/variables-javascript.md)   
  [Специальные символы](../../javascript/advanced/special-characters-javascript.md)   
  [Типы данных](../../javascript/data-types-javascript.md)

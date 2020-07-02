@@ -3,7 +3,7 @@ title: Циклическая ссылка в аргументе значени�
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5034
 dev_langs:
@@ -15,22 +15,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 542fca58778a7b85b3044ce984b6ea049db12509
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572333"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817623"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Циклическая ссылка в аргументе значения не поддерживается
-Предпринята попытка вызвать `JSON.stringify` с недопустимым значением. Аргумент `value`, массив или объект, содержит циклическую ссылку.  
+Предпринята попытка вызова `JSON.stringify` со значением, которое является недопустимым. `value`Аргумент, массив или объект, содержит циклическую ссылку.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
 - Удалите циклическую ссылку из аргумента.  
   
 ## <a name="example"></a>Пример  
- Код в этом примере вызывает ошибку времени выполнения, так как `john` имеет ссылку на `mary` и `mary` имеет ссылку на `john`. чтобы удалить циклическую ссылку, удалите или отмените `brother` свойства объекта `mary` или свойства `sister` из объекта `john`.  
+ Код в этом примере вызывает ошибку времени выполнения, так как `john` имеет ссылку на `mary` и `mary` имеет ссылку на `john` . чтобы удалить циклическую ссылку, удалите или отмените свойство `brother` `mary` объекта или `sister` свойства `john` объекта.  
   
 ```JavaScript  
 var john = new Object();  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>См. также  
- @No__t_1 [объекта JSON](../../javascript/reference/json-object-javascript.md)  
- @No__t_1 [функции JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)  
+ [Объект JSON](../../javascript/reference/json-object-javascript.md)   
+ [Функция JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Ошибки времени выполнения JavaScript](../../javascript/reference/javascript-run-time-errors.md)

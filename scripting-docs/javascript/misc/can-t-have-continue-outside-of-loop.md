@@ -3,7 +3,7 @@ title: "\"Continue\" не может находиться вне цикла | Д
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1020
 dev_langs:
@@ -14,19 +14,19 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e19c85baf8576d1c1db411146c80a53c6a819cdb
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: e1223b3cee7f0246d8d685260fb6ea9ad0045347
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572379"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817649"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>continue не может располагаться вне цикла
 Предпринята попытка использовать инструкцию **Continue** за пределами цикла. Оператор **Continue** можно использовать только в теле:  
   
-- цикл `do-while`,  
+- `do-while`повторить  
   
-- цикл `while`,  
+- `while`повторить  
   
 - цикл **for** ,  
   
@@ -36,15 +36,15 @@ ms.locfileid: "72572379"
   
 - Убедитесь, что оператор **Continue** присутствует в теле:  
   
-  - цикл `do-while`,  
+  - `do-while`повторить  
 
-  - цикл `while`,  
+  - `while`повторить  
 
   - цикл **for** ,  
 
   - цикл **for/in** .  
   
-## <a name="see-also"></a>См. также:  
- [оператор continue](../../javascript/reference/continue-statement-javascript.md)   
- [Управление  последовательности программ](../../javascript/controlling-program-flow-javascript.md)  
+## <a name="see-also"></a>См. также  
+ [Оператор Continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Управление ходом выполнения программы](../../javascript/controlling-program-flow-javascript.md)   
  [Устранение неполадок в скриптах](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

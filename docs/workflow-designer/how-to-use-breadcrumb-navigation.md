@@ -1,19 +1,19 @@
 ---
 title: Конструктор рабочих процессов. использование навигации по навигатору
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584573"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817467"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Как использовать навигатор
 
@@ -47,7 +47,7 @@ ms.locfileid: "75584573"
 2. После применения состояния развернуть все или свернуть все можно нажать кнопку **восстановить** , которая вернется к просмотру состояния, ранее примененного к каждому действию.
 
     > [!WARNING]
-    > Если действие, например <xref:System.Activities.Statements.Flowchart>, отказалось от расширения на месте, функциональные возможности, связанные с кнопками **Развернуть все** и **Свернуть все** , отключаются в конструкторе **блок-схемы** . Дополнительные сведения о конструкторе **блок-схемы** см. в разделе [блок-схема](../workflow-designer/flowchart-activity-designer.md) .
+    > Если действие, например <xref:System.Activities.Statements.Flowchart> , отказалось от расширения на месте, функциональные возможности, связанные с кнопками **Развернуть все** и **Свернуть все** , отключаются в конструкторе **блок-схемы** . Дополнительные сведения о конструкторе **блок-схемы** см. в разделе [блок-схема](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Раскрыть все также имеет особый результат в конструкторах действий **switch** и **TryCatch** . При нажатии кнопки **Развернуть все**все варианты переключения и все блоки try/catch/finally отображаются. Нажатие кнопки **восстановить** или **Свернуть все** возвращает эти конструкторы в состояние по умолчанию, из которого можно щелкнуть отдельный вариант или блок, чтобы просмотреть его содержимое.

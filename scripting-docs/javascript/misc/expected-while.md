@@ -3,7 +3,7 @@ title: Ожидалось "while" | Документация Майкрософ�
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1024
 dev_langs:
@@ -14,20 +14,20 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89f744413b7ffa60b0a85d7ce0208ba2d529c96d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: a9381f990c8a43e848370e1251e163dad81a10e9
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575916"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817350"
 ---
 # <a name="expected-while"></a>Ожидалось ключевое слово "while"
-Условие `while` не было включено в цикл `do...while`. Оператор **Do** должен иметь соответствующий `while`ный тест в конце блока кода.  
+Условие не было включено `while` в `do...while` цикл. Оператор **Do** должен иметь соответствующий `while` тест в конце блока кода.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Включите `while`ную инструкцию теста после закрывающей фигурной скобки.  
+- Включить `while` инструкцию теста после закрывающей фигурной скобки.  
   
-## <a name="see-also"></a>См. также:  
- [оператор while](../../javascript/reference/while-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор while](../../javascript/reference/while-statement-javascript.md)   
  [Управление выполнением программы](../../javascript/controlling-program-flow-javascript.md)
