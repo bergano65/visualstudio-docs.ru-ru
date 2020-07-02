@@ -1,21 +1,21 @@
 ---
 title: Изменение стандартной команды меню в DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605253"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532500"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
 
@@ -28,9 +28,9 @@ ms.locfileid: "72605253"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Поиск команд, доступных для изменения
 
-1. В проекте `DslPackage` откройте `GeneratedCode\CommandSet.cs`. Этот C# файл можно найти в Обозреватель решений в качестве дочерней компании `CommandSet.tt`.
+1. В проекте `DslPackage` откройте `GeneratedCode\CommandSet.cs`. Этот файл C# можно найти в обозреватель решений в качестве дочернего элемента `CommandSet.tt` .
 
-2. Найдите в этом файле классы, имена которых заканчиваются на "`CommandSet`", например `Language1CommandSet` и `Language1ClipboardCommandSet`.
+2. Найдите в этом файле классы, имена которых заканчиваются на " `CommandSet` ", например `Language1CommandSet` и `Language1ClipboardCommandSet` .
 
 3. В каждом классе наборов команд введите "`override`" и пробел. IntelliSense отобразит список методов, которые можно переопределить. Каждая команда имеет пару методов, имена которых начинаются с "`ProcessOnStatus`" и "`ProcessOnMenu`".
 
@@ -53,7 +53,7 @@ ms.locfileid: "72605253"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
+2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs` .
 
 3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
 
@@ -70,7 +70,7 @@ ms.locfileid: "72605253"
 
 ## <a name="override-the-command-methods"></a>Переопределение методов команд
 
-У большинства команд есть два связанных метода: метод с именем, например `ProcessOnStatus`... Определяет, должна ли команда быть видимой и включена. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`... вызывается, когда пользователь щелкает команду и выполняет функцию команды. Возможно, потребуется переопределение одного или двух этих методов.
+У большинства команд есть два связанных метода: метод с именем, например `ProcessOnStatus` ... Определяет, должна ли команда быть видимой и включена. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`... вызывается, когда пользователь щелкает команду и выполняет функцию команды. Возможно, потребуется переопределение одного или двух этих методов.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Изменение условий отображения команды в меню
 
@@ -129,17 +129,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 В этих методах часто используются следующие фрагменты:
 
-- `this.CurrentSelection` Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
+- `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
-- `this.IsDiagramSelected()`  -  `true`, если пользователь щелкнул пустую часть диаграммы.
+- `this.IsDiagramSelected()` - `true`значение, если пользователь щелкнул пустую часть диаграммы.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` — пользователь не выберет несколько фигур
+- `this.IsSingleSelection()`— пользователь не выберет несколько фигур.
 
-- `this.SingleSelection` — фигура или схема, которую щелкнул пользователь правой кнопкой мыши
+- `this.SingleSelection`— Фигура или схема, которую пользователь щелкнул правой кнопкой мыши
 
-- `shape.ModelElement as MyLanguageElement` — элемент модели, представленный фигурой.
+- `shape.ModelElement as MyLanguageElement`— элемент модели, представленный фигурой.
 
 Дополнительные сведения о переходе от элемента к элементу и о создании объектов и ссылок см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 

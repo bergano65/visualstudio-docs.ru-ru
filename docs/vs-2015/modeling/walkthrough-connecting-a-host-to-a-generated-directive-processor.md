@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 17ec8199e99e76d5995e49570c82ad8523505ebe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915995"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532968"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "75915995"
 
 - Тестирование пользовательского узла с помощью созданного обработчика директив.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
  Для определения доменного языка необходимо установить следующие компоненты.
 
-|||
+|Продукт|Ссылка на скачивание|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK для Visual Studio](../extensibility/visual-studio-sdk.md)|
 |Пакет SDK для визуализации и моделирования в Visual Studio|[Загрузка пакета SDK для моделирования](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Кроме того, необходимо создать преобразование пользовательского текстового шаблона, созданное в [разделе Пошаговое руководство. Создание узла пользовательского текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md).
@@ -72,13 +72,13 @@ ms.locfileid: "75915995"
 
 3. В меню **Отладка** щелкните **Начать отладку**.
 
-    Откроется второй экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    Откроется второй экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 4. В экспериментальной сборке в **Обозреватель решений**дважды щелкните файл **Sample. min**.
 
     Файл откроется в конструкторе. Обратите внимание, что модель содержит два элемента, ExampleElement1 и ExampleElement2, и связь между ними.
 
-5. Закройте второй экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Закройте второй экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 6. Сохраните решение и закройте Конструктор предметно-ориентированных языков.
 
@@ -95,17 +95,17 @@ ms.locfileid: "75915995"
 
 3. Добавьте следующие ссылки.
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft. VisualStudio. моделирование. SDK. 11.0
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft. VisualStudio. моделирование. SDK. схемы. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.11.0
+    - Microsoft. VisualStudio. TextTemplating. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    - Microsoft. VisualStudio. TextTemplating. interfaces. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. моделирование. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
 
 4. В верхней части Program.cs или Module1. vb добавьте следующую строку кода:
 
@@ -117,7 +117,7 @@ ms.locfileid: "75915995"
     Imports Microsoft.Win32
     ```
 
-5. Выберите код для свойства `StandardAssemblyReferences`и замените его следующим кодом:
+5. Укажите код для свойства `StandardAssemblyReferences` и замените его следующим кодом:
 
     > [!NOTE]
     > На этом шаге вы добавите ссылки на сборки, необходимые для созданного обработчика директив, который будет поддерживаться вашим узлом.
@@ -153,7 +153,7 @@ ms.locfileid: "75915995"
     }
     ```
 
-6. Выберите код для функции `ResolveDirectiveProcessor`и замените его следующим кодом:
+6. Укажите код функции `ResolveDirectiveProcessor` и замените его следующим кодом:
 
     > [!IMPORTANT]
     > Этот код содержит жестко запрограммированные ссылки на имя созданного обработчика директив, к которому необходимо подключиться. Вы можете легко сделать это более общим, в этом случае он ищет все процессоры директив, перечисленные в реестре, и пытается найти совпадение. В этом случае узел будет работать с любым созданным обработчиком директив.
@@ -236,7 +236,7 @@ ms.locfileid: "75915995"
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Создание текстового шаблона для тестирования пользовательского ведущего приложения
 
-1. Создайте текстовый файл и назовите его `TestTemplateWithDP.tt`. Для создания файла можно использовать любой текстовый редактор, например Блокнот.
+1. Создайте текстовый файл и назовите его `TestTemplateWithDP.tt` . Для создания файла можно использовать любой текстовый редактор, например Блокнот.
 
 2. Добавьте в текстовый файл следующий текст:
 
@@ -310,39 +310,39 @@ ms.locfileid: "75915995"
     #>
     ```
 
-3. В коде замените \<путь > с путем к примеру файла Sample. min из языка, созданного в первой процедуре.
+3. В коде замените на \<YOUR PATH> путь к примеру файла Sample. min из языка, созданного в первой процедуре.
 
-4. Сохраните и закройте файл.
+4. Сохраните файл и закройте его.
 
 #### <a name="to-test-the-custom-host"></a>Тестирование пользовательского основного приложения
 
-1. Откройте окно командной строки.
+1. Откройте окно командной строки и
 
 2. Введите путь к исполняемому файлу пользовательского ведущего приложения, но пока не нажимайте клавишу ВВОД.
 
-     Например, введите: .
+     Например, введите:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Вместо того чтобы вводить адрес, можно перейти к файлу Кустомхост. exe в **проводнике Windows**, а затем перетащить файл в окно командной строки.
+    > Вместо того чтобы вводить адрес, можно перейти к файлу CustomHost.exe в **проводнике Windows**, а затем перетащить файл в окно командной строки.
 
 3. Введите пробел.
 
 4. Введите путь к файлу текстового шаблона и нажмите клавишу ВВОД.
 
-     Например, введите: .
+     Например, введите:
 
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > Вместо того чтобы вводить адрес, можно перейти к файлу Тесттемплатевисдп. txt в **проводнике Windows**, а затем перетащить файл в окно командной строки.
+    > Вместо того чтобы вводить адрес, можно перейти к файлу TestTemplateWithDP.txt в **проводнике Windows**, а затем перетащить файл в окно командной строки.
 
      Пользовательское ведущее приложение запускается и запускает процесс преобразования текстовых шаблонов.
 
-5. В **проводнике**перейдите к папке, содержащей файл тесттемплатевисдп. txt.
+5. В **проводнике**перейдите к папке, содержащей файл TestTemplateWithDP.txt.
 
-     Папка также содержит файл TestTemplateWithDP1. txt.
+     Папка также содержит файл TestTemplateWithDP1.txt.
 
 6. Откройте этот файл, чтобы увидеть результаты преобразования текстового шаблона.
 
@@ -358,5 +358,5 @@ ms.locfileid: "75915995"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов](../modeling/walkthrough-creating-a-custom-text-template-host.md)

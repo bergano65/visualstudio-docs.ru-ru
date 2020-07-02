@@ -1,18 +1,18 @@
 ---
 title: Практическое руководство. Расширение конструктора доменного языка
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605592"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532590"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
 
@@ -68,7 +68,7 @@ ms.locfileid: "72605592"
 
 Чтобы развернуть расширения в основном Visual Studio и на других компьютерах, выполните следующие действия.
 
-1. Найдите файл установки VSIX в проекте VSIX в папке bin \\ * \\ \*. VSIX.
+1. Найдите файл установки VSIX в проекте VSIX в bin \\ * \\ \* . VSIX
 
 2. Скопируйте этот файл на конечный компьютер, а затем в проводнике Windows (или в проводнике) дважды щелкните его.
 
@@ -84,7 +84,7 @@ ms.locfileid: "72605592"
 
 Чтобы отобразить команду контекстного меню на Конструктор DSL поверхности или в окне обозревателя DSL, напишите класс, подобный приведенному ниже.
 
-Класс должен реализовывать `ICommandExtension` и должен иметь атрибут `DslDefinitionModelCommandExtension`.
+Класс должен реализовывать `ICommandExtension` и должен иметь атрибут `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

@@ -1,18 +1,18 @@
 ---
 title: Практическое руководство. Открытие модели из файла в коде программы
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532487"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
 
@@ -39,9 +39,9 @@ ms.locfileid: "75594621"
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Если вы не видите это на вкладке **.NET** в диалоговом окне **Добавление ссылок** , перейдите на вкладку **Обзор** и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Если вы не видите это на вкладке **.NET** в диалоговом окне **Добавление ссылок** , перейдите на вкладку **Обзор** и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- Сборка DSL, которая будет находиться в папке bin вашего проекта DSL. Его имя обычно имеет вид: *йоуркомпани*.`.Dsl.dll`*йоурпрожект* .
+- Сборка DSL, которая будет находиться в папке bin вашего проекта DSL. Его имя обычно имеет вид: *йоуркомпани*. *Йоурпрожект* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Важные классы в DSL
 
@@ -49,11 +49,11 @@ ms.locfileid: "75594621"
 
 Ниже приведены классы, которые необходимо найти.
 
-- *Йоурдслруткласс* — это имя корневого класса в `DslDefinition.dsl`.
+- *Йоурдслруткласс* — это имя корневого класса в `DslDefinition.dsl` .
 
-- *Йоурдслнаме* `SerializationHelper` — этот класс определен в `SerializationHelper.cs` в проекте DSL.
+- *Йоурдслнаме* `SerializationHelper` — Этот класс определен в `SerializationHelper.cs` проекте DSL.
 
-- *Йоурдслнаме* `DomainModel` — этот класс определен в `DomainModel.cs` в проекте DSL.
+- *Йоурдслнаме* `DomainModel` — Этот класс определен в `DomainModel.cs` проекте DSL.
 
 ## <a name="read-from-a-file"></a>Считывает данные из файла
 

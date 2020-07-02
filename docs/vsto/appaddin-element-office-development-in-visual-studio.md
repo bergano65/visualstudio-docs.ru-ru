@@ -1,8 +1,8 @@
 ---
-title: '&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)'
+title: '&lt;&gt;элемент аппаддин (разработка решений Office в Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953248"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531642"
 ---
-# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)
-  **AppAddin** элемент `vstov4` пространство имен хранит сведения о настройках для надстроек VSTO.
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент аппаддин (разработка решений Office в Visual Studio)
+  Элемент **аппаддин** `vstov4` пространства имен хранит сведения о настройках для надстроек VSTO.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,31 +37,31 @@ ms.locfileid: "62953248"
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- **AppAddin** элемент является обязательным и находится в `vstov4` пространства имен. Имеется только один **appAddin** элементу, определенному в манифесте приложения.
+ Элемент **аппаддин** является обязательным и находится в `vstov4` пространстве имен. В манифесте приложения определен только один элемент **аппаддин** .
 
- **AppAddin** элемент имеет следующие атрибуты.
+ Элемент **аппаддин** имеет следующие атрибуты.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|**Приложения**|Обязательный. Идентифицирует приложение Microsoft Office. Он может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|
-|**loadBehavior**|Необязательный параметр. По умолчанию **loadBehavior** можно включить, задав этого значения. Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в таблице, в [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**приложение**|Обязательный. Идентифицирует приложение Microsoft Office. Может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|
+|**loadBehavior**|Необязательный элемент. По умолчанию **LoadBehavior** включается путем присвоения этому значению значения. Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в таблице значения LoadBehavior в [записях реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 |**keyName**|Обязательный. Это значение является именем раздела реестра, который будет использоваться приложением для загрузки надстройки VSTO. Дополнительные сведения см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
- **AppAddin** элемент имеет следующие дочерние элементы.
+ Элемент **аппаддин** имеет следующие дочерние элементы.
 
 ### <a name="friendlyname"></a>friendlyName
- Необязательный параметр. **FriendlyName** элементы объяснены на [ &#60;friendlyName&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
+ Необязательный элемент. Элемент **FriendlyName** объясняется в [&#60;friendlyName&#62; элемент &#40;разработке решений Office в Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
-### <a name="description"></a>Описание
- Необязательный параметр. **Описание** элементы объяснены на [ &#60;описание&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).
+### <a name="description"></a>description
+ Необязательный элемент. Элемент **Description** объясняется в [&#60;description&#62; элемент &#40;разработке решений Office в Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).
 
 ### <a name="formregions"></a>formRegions
- Является обязательным только для надстроек VSTO для Outlook, включающих области форм. **FormRegions** элементы объяснены на [ &#60;formRegions&#62; элемент &#40;разработка решений Office в Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).
+ Является обязательным только для надстроек VSTO для Outlook, включающих области форм. Элемент **формрегионс** объясняется в [&#60;формрегионс&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
 ### <a name="description"></a>Описание
- В следующем примере кода показано **appAddin** элементов в решении Outlook, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+ В следующем примере кода показаны элементы **аппаддин** в решении Outlook, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 
