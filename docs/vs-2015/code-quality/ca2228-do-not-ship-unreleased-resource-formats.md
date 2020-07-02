@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9297ea0bb24eed54d0134a5f3c0fce87e6757adb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4adcae1c1cc616cdbcf5a7aa15342d221c2f4300
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662888"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540586"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: не следует поставлять невыпущенные форматы ресурсов
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228. Не поставляйте предварительные форматы ресурсов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
@@ -33,13 +33,13 @@ ms.locfileid: "72662888"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Файл ресурсов был создан с использованием версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], которая в настоящее время не поддерживается.
+ Файл ресурсов был создан с использованием версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , которая сейчас не поддерживается.
 
 ## <a name="rule-description"></a>Описание правила
- Файлы ресурсов, созданные с помощью предварительных версий [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], могут не использоваться поддерживаемыми версиями .NET Framework.
+ Файлы ресурсов, созданные с помощью предварительных версий, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] могут не использоваться поддерживаемыми версиями .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, создайте ресурс с помощью поддерживаемой версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
+ Чтобы устранить нарушение этого правила, создайте ресурс, используя поддерживаемую версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] k.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.

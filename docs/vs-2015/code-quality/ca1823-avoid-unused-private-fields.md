@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d7ccfbe863e010b4dcf8a9d1b442c9bcdba6822e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01f2ef59ceb6d10cc33276fdd3e5388f39175f8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661127"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545305"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: избегайте наличия неиспользованных закрытых полей
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823. Избегайте неиспользуемых частных полей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
@@ -45,10 +45,10 @@ ms.locfileid: "72661127"
  В этом правиле можно отключить вывод предупреждений.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1812: не создавайте внутренние классы без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812. Избегайте неиспользуемых внутренних классов](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801. Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804. Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811. Избегайте невызываемого частного кода](../code-quality/ca1811-avoid-uncalled-private-code.md)

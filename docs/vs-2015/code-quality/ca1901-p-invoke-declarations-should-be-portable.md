@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661064"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545266"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: объявления P/Invoke должны быть переносимыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
@@ -38,12 +38,12 @@ ms.locfileid: "72661064"
 ## <a name="rule-description"></a>Описание правила
  В одном из следующих сценариев происходит нарушение этого правила:
 
-- Возвращаемое значение или параметр вводится как целое число фиксированного размера, если его необходимо ввести как `IntPtr`.
+- Возвращаемое значение или параметр вводится как целое число фиксированного размера, если его необходимо ввести как `IntPtr` .
 
-- Возвращаемое значение или параметр вводится как `IntPtr`, если необходимо ввести целое число с фиксированным размером.
+- Возвращаемое значение или параметр типизировано как, `IntPtr` если его необходимо ввести как целое число с фиксированным размером.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Это нарушение можно устранить с помощью `IntPtr` или `UIntPtr` для представления дескрипторов вместо `Int32` или `UInt32`.
+ Это нарушение можно устранить с помощью `IntPtr` или `UIntPtr` для представления дескрипторов вместо `Int32` или `UInt32` .
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Не следует отключать это предупреждение.
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- В этом примере параметр `nIconIndex` объявляется как `IntPtr`, ширина которого составляет 4 байта на 32-разрядной платформе и 8 байт в ширину на 64-разрядной платформе. В объявлении неуправляемого кода, приведенном ниже, можно увидеть, что `nIconIndex` является 4-байтовым целым числом без знака на всех платформах.
+ В этом примере `nIconIndex` параметр объявляется как `IntPtr` , который имеет ширину 4 байта на 32-разрядной платформе и 8 байт в ширину на 64-разрядной платформе. В объявлении неуправляемого кода ниже видно, что `nIconIndex` — это 4-байтовое целое число без знака на всех платформах.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -78,5 +78,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения переносимости](../code-quality/portability-warnings.md)

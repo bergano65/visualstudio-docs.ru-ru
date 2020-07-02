@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программная проверка орфографии на листах
+title: Руководство. Программная проверка орфографии на листах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575571"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541548"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Практическое руководство. Программная проверка орфографии на листах
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Руководство. Программная проверка орфографии на листах
   Вы можете программными средствами проверять орфографию слов в листе. Диалоговое окно **Орфография** автоматически появляется при появлении в листе слов с ошибками.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -43,6 +43,6 @@ ms.locfileid: "62575571"
 
 ## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Руководство. программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

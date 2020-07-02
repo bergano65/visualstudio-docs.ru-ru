@@ -8,17 +8,17 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c2c996c383c8834e44e16f382c14b695c83f26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: afadf41fc753051047e858758bfe0677987d726d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669001"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545071"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: не используйте ненадежные алгоритмы шифрования
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350. Не используйте ненадежные алгоритмы шифрования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
@@ -43,7 +43,7 @@ ms.locfileid: "72669001"
 
 - Для шифрования TripleDES используйте шифрование <xref:System.Security.Cryptography.Aes> .
 
-- Для функций хэширования SHA1 или RIPEMD160 используйте функции в семействе [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Для функций хэширования SHA1 или RIPEMD160 используйте их в семействе [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (например,, <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> ).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте предупреждение из этого правила, когда для необходимого уровня защиты данных не требуется гарантия безопасности.

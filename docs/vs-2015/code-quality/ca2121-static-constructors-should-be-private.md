@@ -25,7 +25,7 @@ ms.locfileid: "85544317"
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121. Статические конструкторы должны быть частными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|

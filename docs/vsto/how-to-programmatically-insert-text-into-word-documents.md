@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программная вставка текста в документы Word
+title: Инструкции. Программная вставка текста в документы Word
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: aef597099964333771fd488e0541b4ea4daf4553
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551814"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541509"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое руководство. Программная вставка текста в документы Word
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Инструкции. Программная вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:
 
 - вставка текста в диапазон;
@@ -93,7 +93,7 @@ ms.locfileid: "69551814"
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>Вставка текста с помощью метода TypeText
 
-1. Объявите переменную объекта <xref:Microsoft.Office.Interop.Word.Selection> .
+1. Объявите переменную объекта <xref:Microsoft.Office.Interop.Word.Selection>.
 
     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]
@@ -128,6 +128,6 @@ ms.locfileid: "69551814"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [Практическое руководство. Определение и выбор диапазонов в документах программными средствами](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Практическое руководство. Расширение диапазонов документов программными средствами](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Руководство. Программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [Руководство. Программное определение и выбор диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Руководство. программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

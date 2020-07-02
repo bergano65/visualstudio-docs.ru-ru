@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658894"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540846"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: члены должны различаться не только типом возвращаемого значения
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223. Члены должны различаться не только возвращаемым типом
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
@@ -45,7 +45,7 @@ ms.locfileid: "72658894"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере на промежуточном языке MSIL показан тип, нарушающий это правило. Обратите внимание, что это правило не может быть C# нарушено с помощью или Visual Basic .NET.
+ В следующем примере на промежуточном языке MSIL показан тип, нарушающий это правило. Обратите внимание, что это правило не может быть нарушено с помощью C# или Visual Basic .NET.
 
 ```
 

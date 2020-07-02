@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545539"
 ---
 # <a name="channels-threads-view"></a>Каналы (представление "Потоки")
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "68193621"
 ## <a name="thread-channels"></a>Каналы потоков  
  В канале потока с помощью цвета указывается состояние только одного потока. При наведении указателя мыши на имя канала отображается функция запуска для данного потока. Визуализатор параллелизма выявляет несколько видов потоков. Наиболее распространенные из них показаны в следующей таблице.  
   
-|||  
+|Thread|Описание|  
 |-|-|  
 |Главный поток|Поток, запустивший приложение.|  
 |Рабочий поток|Поток, созданный главным потоком приложения.|  
@@ -51,4 +51,4 @@ ms.locfileid: "68193621"
  Каналы GPU отображает сведения о действиях DirectX 11 в системе.  Каждый обработчик DirectX, который связан с видеокартой, имеет отдельный канал.  Отдельные сегменты представляют время, затраченное на обработку пакета прямого доступа к памяти.  
   
 ## <a name="see-also"></a>См. также  
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+ [Представление "потоки"](../profiling/threads-view-parallel-performance.md)

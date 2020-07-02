@@ -15,26 +15,26 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545253"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: использовать API-интерфейс только из целевой исполняющей среды
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [CA1903: использование API только из целевой платформы](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |Категория|Microsoft. переносимость|
 |Критическое изменение|Критическое — при срабатывании сигнатуры видимого извне члена или типа.<br /><br /> Не критическое — при срабатывании в теле метода.|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Элемент или тип использует член или тип, который появился в пакете обновления, который не был включен в целевую платформу проекта.
 
 ## <a name="rule-description"></a>Описание правила
@@ -42,12 +42,12 @@ ms.locfileid: "75917824"
 
  **Зависимости целевой платформы и пакета обновления**
 
-|||
+|Элемент|Значение|
 |-|-|
 |Когда Целевая платформа|Срабатывает при использовании членов, появившихся в|
 |.NET Framework 2.0|.NET Framework 2,0 с пакетом обновления 1 (SP1), .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3.5|Платформа .NET Framework 3.5 с пакетом обновления 1 (SP1)|
+|.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Н/Д|
 
  Чтобы изменить целевую платформу проекта, см. раздел [нацеленность на определенную версию .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
@@ -68,5 +68,5 @@ ms.locfileid: "75917824"
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения переносимости](../code-quality/portability-warnings.md) [, нацеленные на определенную версию .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

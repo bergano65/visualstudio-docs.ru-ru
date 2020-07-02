@@ -67,7 +67,7 @@ ms.locfileid: "85543498"
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Создается элемент управления, который добавляется в проект.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [XMLNodes - элемент управления](../vsto/xmlnodes-control.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

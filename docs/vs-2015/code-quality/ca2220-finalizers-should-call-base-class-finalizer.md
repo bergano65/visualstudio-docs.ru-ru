@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1a4538c66d351956da8168d4f84c1895190ab453
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d9139314d52c4c50de84a45f227e6df5715bf02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663579"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540664"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: методы завершения должны вызывать метод завершения базового класса
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220. Методы завершения должны вызывать метод завершения базового класса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
@@ -33,21 +33,21 @@ ms.locfileid: "72663579"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип, переопределяющий <xref:System.Object.Finalize%2A?displayProperty=fullName>, не вызывает метод <xref:System.Object.Finalize%2A> в его базовом классе.
+ Тип, переопределяющий, <xref:System.Object.Finalize%2A?displayProperty=fullName> не вызывает <xref:System.Object.Finalize%2A> метод в его базовом классе.
 
 ## <a name="rule-description"></a>Описание правила
- Финализация должна распространятся посредством иерархии наследования. Чтобы убедиться в этом, типы должны вызывать свой базовый класс <xref:System.Object.Finalize%2A> метод из своего собственного метода <xref:System.Object.Finalize%2A>. C# Компилятор автоматически добавляет вызов метода завершения базового класса.
+ Финализация должна распространятся посредством иерархии наследования. Чтобы убедиться в этом, типы должны вызывать свой метод базового класса <xref:System.Object.Finalize%2A> из своего собственного <xref:System.Object.Finalize%2A> метода. Компилятор C# автоматически добавляет вызов метода завершения базового класса.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, вызовите метод <xref:System.Object.Finalize%2A> базового типа из метода <xref:System.Object.Finalize%2A>.
+ Чтобы устранить нарушение этого правила, вызовите метод базового типа <xref:System.Object.Finalize%2A> из <xref:System.Object.Finalize%2A> метода.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует. Некоторые компиляторы, нацеленные на среду CLR, вставляют вызов метода завершения базового типа в промежуточный язык Майкрософт (MSIL). Если выводится предупреждение из этого правила, компилятор не вставляет вызов, и его необходимо добавить в код.
 
 ## <a name="example"></a>Пример
- В следующем примере Visual Basic показан `TypeB` типа, который правильно вызывает метод <xref:System.Object.Finalize%2A> в своем базовом классе.
+ В следующем примере Visual Basic показан тип `TypeB` , который правильно вызывает <xref:System.Object.Finalize%2A> метод в базовом классе.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

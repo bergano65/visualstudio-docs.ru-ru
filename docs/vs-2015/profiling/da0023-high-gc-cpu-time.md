@@ -23,7 +23,7 @@ ms.locfileid: "85542926"
 # <a name="da0023-high-gc-cpu-time"></a>DA0023. Высокое время ЦП ГК
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|  
+|Элемент|Значение|  
 |-|-|  
 |Идентификатор правила|DA0023|  
 |Категория|Использование .NET Framework|  

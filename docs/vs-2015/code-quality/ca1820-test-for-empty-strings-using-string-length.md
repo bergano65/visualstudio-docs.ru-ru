@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6711dac907de2777cf892b20269fec7e99d3bd6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 296eb6407e3ce63b0eb28ff86c215c12ec724ce9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657504"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545318"
 ---
-# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: проверьте наличие пустых строк путем проверки длины строки
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820. Проверяйте наличие пустых строк, используя длину строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|TestForEmptyStringsUsingStringLength|
 |CheckId|CA1820|
@@ -33,15 +33,15 @@ ms.locfileid: "72657504"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Строка сравнивается с пустой строкой с помощью <xref:System.Object.Equals%2A?displayProperty=fullName>.
+ Строка сравнивается с пустой строкой с помощью <xref:System.Object.Equals%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Описание правила
- Сравнение строк с помощью свойства <xref:System.String.Length%2A?displayProperty=fullName> или метода <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> выполняется значительно быстрее, чем при использовании <xref:System.Object.Equals%2A>. Это связано с тем, что <xref:System.Object.Equals%2A> выполняет значительно больше инструкций MSIL, чем <xref:System.String.IsNullOrEmpty%2A> или количество выполняемых инструкций для получения значения свойства <xref:System.String.Length%2A> и его сравнения с нулем.
+ Сравнение строк с помощью <xref:System.String.Length%2A?displayProperty=fullName> свойства или <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> метода выполняется значительно быстрее, чем при использовании <xref:System.Object.Equals%2A> . Это обусловлено тем, что <xref:System.Object.Equals%2A> выполняет значительно больше инструкций MSIL, чем <xref:System.String.IsNullOrEmpty%2A> или количество выполняемых инструкций для получения <xref:System.String.Length%2A> значения свойства и сравнивает его с нулем.
 
- Следует иметь в виду, что <xref:System.Object.Equals%2A> и <xref:System.String.Length%2A> = = 0 ведут себя по-разному для строк со значением NULL. Если попытаться получить значение свойства <xref:System.String.Length%2A> в строке null, среда CLR выдаст исключение <xref:System.NullReferenceException?displayProperty=fullName>. При выполнении сравнения между пустой строкой и пустой строкой среда CLR не создает исключение. сравнение возвращает `false`. Тестирование на значение NULL не оказывает существенного влияния на относительную производительность этих двух подходов. При нацеливании [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] используйте метод <xref:System.String.IsNullOrEmpty%2A>. В противном случае по возможности используйте сравнение <xref:System.String.Length%2A> = =.
+ Следует иметь в виду, что функции <xref:System.Object.Equals%2A> и <xref:System.String.Length%2A> = = 0 ведут себя иначе для строк со значением NULL. Если попытаться получить значение <xref:System.String.Length%2A> свойства в строке null, среда CLR выдаст исключение <xref:System.NullReferenceException?displayProperty=fullName> . При выполнении сравнения между пустой строкой и пустой строкой среда CLR не создает исключение. сравнение возвращает `false` . Тестирование на значение NULL не оказывает существенного влияния на относительную производительность этих двух подходов. При нацеливании [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] Используйте <xref:System.String.IsNullOrEmpty%2A> метод. В противном случае используйте <xref:System.String.Length%2A> Сравнение = = везде, где это возможно.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените сравнение, чтобы использовать свойство <xref:System.String.Length%2A> и проверить пустую строку. Если нацеливание на [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], используйте метод <xref:System.String.IsNullOrEmpty%2A>.
+ Чтобы устранить нарушение этого правила, измените сравнение, чтобы использовать <xref:System.String.Length%2A> свойство и проверить пустую строку. При нацеливании [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] Используйте <xref:System.String.IsNullOrEmpty%2A> метод.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  В этом правиле можно отключить вывод предупреждений, если производительность не является проблемой.

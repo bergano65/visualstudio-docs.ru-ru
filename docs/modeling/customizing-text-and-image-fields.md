@@ -261,7 +261,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md)
 - [Задание фонового изображения схемы](../modeling/setting-a-background-image-on-a-diagram.md)

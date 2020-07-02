@@ -8,17 +8,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300971"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545175"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: обработка небезопасных DTD
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075. Обработка небезопасных DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
@@ -35,13 +35,13 @@ ms.locfileid: "74300971"
 
 - задано свойство <xref:System.Xml.XmlNode.InnerXml%2A> в XML;
 
-- для свойства <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> задано значение Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>для свойства задано значение Parse.
 
 - недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> вызывается с небезопасным экземпляром <xref:System.Xml.XmlReaderSettings> или вообще без экземпляра.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляром или вообще без экземпляра.
 
-- <xref:System.Xml.XmlReader> создается с небезопасными параметрами или значениями по умолчанию.
+- <xref:System.Xml.XmlReader>создается с небезопасными параметрами или значениями по умолчанию.
 
   В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".
 
@@ -49,15 +49,15 @@ ms.locfileid: "74300971"
 
 - Чтобы избежать раскрытия информации о пути, перехватите и обработайте все исключения XmlTextReader.
 
-- Используйте <xref:System.Xml.XmlSecureResolver>, чтобы ограничить ресурсы, к которым может обращаться XmlTextReader.
+- Используйте  <xref:System.Xml.XmlSecureResolver> для ограничения ресурсов, к которым может обращаться XmlTextReader.
 
-- Не разрешайте <xref:System.Xml.XmlReader> открывать внешние ресурсы, присвоив свойству <xref:System.Xml.XmlResolver> **значение NULL**.
+- Не разрешайте  <xref:System.Xml.XmlReader> компоненту открывать внешние ресурсы, присвоив <xref:System.Xml.XmlResolver> свойству **значение NULL**.
 
-- Убедитесь, что свойство <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> <xref:System.Data.DataViewManager> назначено из доверенного источника.
+- Убедитесь, что свойство <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A><xref:System.Data.DataViewManager> назначено из доверенного источника.
 
   .NET 3.5 и более ранней версии
 
-- Отключите обработку DTD при работе с ненадежными источниками, задав для свойства <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> **значение true** .
+- Отключите обработку DTD при работе с ненадежными источниками, задав  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> для свойства **значение true** .
 
 - Класс XmlTextReader содержит полное требование наследования доверия. Дополнительные сведения см. в разделе [требования к наследованию](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 

@@ -2,7 +2,7 @@
 title: Отладка кода Python на удаленных компьютерах Linux
 description: Используйте Visual Studio, чтобы отладить код Python, выполняющийся на удаленных компьютерах Linux, в том числе здесь приведены необходимые этапы настройки, обеспечения безопасности и устранения неполадок.
 ms.date: 05/12/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ccc0f23663eb4f892c4eb5e4ab66d7cb526f100f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285695"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541087"
 ---
 Visual Studio позволяет локально и удаленно запускать приложения Python на компьютере Windows и выполнять их отладку (см. статью [Удаленная отладка](../../../debugger/remote-debugging.md)). С помощью [библиотеки debugpy](https://pypi.org/project/debugpy/) можно также выполнять удаленную отладку, используя другую операционную систему, другое устройство или реализацию Python, отличную от CPython.
 

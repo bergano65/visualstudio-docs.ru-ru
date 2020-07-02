@@ -25,7 +25,7 @@ ms.locfileid: "85540781"
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222. Не уменьшайте видимость наследуемого члена
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|

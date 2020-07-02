@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603064"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545396"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: типы не должны расширять определенные базовые типы
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058. Типы не должны расширять определенные базовые типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
@@ -52,9 +52,9 @@ ms.locfileid: "72603064"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Описание правила
- Для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] версии 1 рекомендуется создавать новые исключения из <xref:System.ApplicationException>. Рекомендация изменилась, и новые исключения должны быть производными от <xref:System.Exception?displayProperty=fullName> или одного из его подклассов в пространстве имен <xref:System>.
+ Для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] версии 1 рекомендуется создавать новые исключения из <xref:System.ApplicationException> . Рекомендация изменилась, и новые исключения должны быть производными от <xref:System.Exception?displayProperty=fullName> или одного из его подклассов в <xref:System> пространстве имен.
 
- Не создавайте подкласс <xref:System.Xml.XmlDocument>, если требуется создать XML-представление базовой объектной модели или источника данных.
+ Не создавайте подкласс класса, <xref:System.Xml.XmlDocument> Если необходимо создать XML-представление базовой объектной модели или источника данных.
 
 ### <a name="non-generic-collections"></a>Неуниверсальные коллекции
  По возможности используйте и (или) расширьте универсальные коллекции. Не расширяйте неуниверсальные коллекции в коде, пока вы не отгрузили ее ранее.
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Чтобы устранить нарушение этого правила, необходимо создать производный тип от другого базового типа или универсальной коллекции.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение о нарушении этого правила о нарушениях <xref:System.ApplicationException>. В этом правиле можно отключить предупреждения о нарушениях <xref:System.Xml.XmlDocument>. Можно спокойно отключить предупреждение о неуниверсальной коллекции, если код был выпущен ранее.
+ Не отключайте предупреждение о нарушении этого правила о нарушениях <xref:System.ApplicationException> . В этом правиле можно отключить вывод предупреждений о нарушениях <xref:System.Xml.XmlDocument> . Можно спокойно отключить предупреждение о неуниверсальной коллекции, если код был выпущен ранее.

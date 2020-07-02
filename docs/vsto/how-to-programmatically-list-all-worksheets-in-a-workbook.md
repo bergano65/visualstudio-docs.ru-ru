@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное перечисление всех листов в книге
+title: Руководство. Программное перечисление всех листов в книге
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 700aca059c6ef18f0c8e43aa127c99eaeee4fa2a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812428"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541457"
 ---
-# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Практическое руководство. Программное перечисление всех листов в книге
+# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Руководство. Программное перечисление всех листов в книге
   Класс <xref:Microsoft.Office.Interop.Excel.Workbook> предоставляет объект <xref:Microsoft.Office.Interop.Excel.Worksheets>. Этот объект содержит коллекцию всех объектов <xref:Microsoft.Office.Interop.Excel.Worksheet> в книге.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -41,6 +41,6 @@ ms.locfileid: "62812428"
 
 ## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программное добавление новых листов в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [Практическое руководство. Программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
+- [Как программно добавлять новые листы в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [Руководство. Программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
+title: Руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255661"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541249"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
   Вы можете привязать элемент управления ведущего приложения к источнику данных и обновлять источник данных с помощью изменений, внесенных в данные в элементе управления. Этот процесс включает два основных этапа.
 
 1. Обновление источника данных в памяти с использованием измененных данных в элементе управления. Как правило, источник данных в памяти — это <xref:System.Data.DataSet>, <xref:System.Data.DataTable>или какой-либо другой объект данных.
@@ -54,7 +54,7 @@ ms.locfileid: "71255661"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Установка автоматического обновления источника данных в памяти элементом управления с помощью кода
 
-1. Используйте режим <xref:System.Windows.Forms.Binding> System. Windows. Forms. датасаурцеупдатемоде. OnPropertyChanged объекта, который привязывает элемент управления к источнику данных. Обновлять источник данных можно двумя способами.
+1. Используйте режим System. Windows. Forms. Датасаурцеупдатемоде. OnPropertyChanged <xref:System.Windows.Forms.Binding> объекта, который привязывает элемент управления к источнику данных. Обновлять источник данных можно двумя способами.
 
    - Чтобы обновить источник данных при проверке элемента управления, присвойте этому свойству значение System. Windows. Forms. Датасаурцеупдатемоде. onvalid.
 
@@ -76,7 +76,7 @@ ms.locfileid: "71255661"
 
 3. В окне **Свойства** разверните свойство **(DataBindings)** .
 
-4. Рядом со свойством **(дополнительно)** нажмите кнопку с многоточием (снимок![экрана висуалстудиоеллипсесбуттон](../vsto/media/vbellipsesbutton.png "висуалстудиоеллипсесбуттон")).
+4. Рядом со свойством **(дополнительно)** нажмите кнопку с многоточием (![висуалстудиоеллипсесбуттон снимок экрана](../vsto/media/vbellipsesbutton.png "Снимок экрана VisualStudioEllipsesButton")).
 
 5. В диалоговом окне **Форматирование и дополнительная привязка** щелкните раскрывающийся список **Режим обновления источника данных** и выберите одно из следующих значений.
 
@@ -107,7 +107,7 @@ ms.locfileid: "71255661"
 
      Адаптер таблицы TableAdapter создается автоматически при добавлении элемента управления с привязкой к данным в документ или книгу во время разработки. Адаптер таблицы TableAdapter подключает типизированный набор данных в проекте к базе данных. Дополнительные сведения см. в разделе [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-     В следующем примере кода предполагается, что у вас есть соединение с таблицей Customers в базе данных Northwind, а проект содержит TableAdapter с `customersTableAdapter` именем и типизированный набор `northwindDataSet`данных с именем.
+     В следующем примере кода предполагается, что у вас есть соединение с таблицей Customers в базе данных Northwind, а проект содержит TableAdapter с именем `customersTableAdapter` и типизированный набор данных с именем `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -116,8 +116,8 @@ ms.locfileid: "71255661"
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 - [Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Практическое руководство. Прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Практическое руководство. Заполнение листов данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Пошаговое руководство. Прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Как заполнить листы данными из базы данных](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Как заполнить документы данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Как заполнить документы данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Как заполнить документы данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)

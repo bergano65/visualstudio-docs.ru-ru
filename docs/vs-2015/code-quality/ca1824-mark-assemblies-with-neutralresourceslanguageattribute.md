@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661117"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545292"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: следует помечать сборки атрибутом NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
@@ -33,7 +33,7 @@ ms.locfileid: "72661117"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Сборка содержит ресурс на основе **RESX**, но к нему не применен <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>.
+ Сборка содержит ресурс на основе **RESX**, но не имеет <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> примененного к нему ресурса.
 
 ## <a name="rule-description"></a>Описание правила
  Атрибут **NeutralResourcesLanguage** информирует **ResourceManager** о языке, который использовался для вывода ресурсов нейтральной культуры для сборки. При поиске ресурсов в той же культуре, что и нейтральный язык ресурсов, **ResourceManager** автоматически использует ресурсы, расположенные в основной сборке. Это делается вместо поиска вспомогательной сборки, имеющей текущий язык и региональные параметры пользовательского интерфейса для текущего потока. При этом повышается эффективность поиска первого загружаемого ресурса и может сократиться рабочее множество.

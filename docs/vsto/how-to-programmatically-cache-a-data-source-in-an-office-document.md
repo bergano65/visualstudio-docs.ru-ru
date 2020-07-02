@@ -1,7 +1,7 @@
 ---
 title: Кэширование источника данных в документе Office программным способом
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,43 +16,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 241ce42c2d411fdaf611f3a7f2b52eb40c8c32a2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189580"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544772"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Руководство. программный кэш источника данных в документе Office
-  Можно программно добавить объект данных в кэш данных в документе, вызвав метод `StartCaching` ведущего элемента, например <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Удалите объект данных из кэша данных, вызвав метод `StopCaching` ведущего элемента.
+  Можно программно добавить объект данных в кэш данных в документе, вызвав `StartCaching` метод ведущего элемента, например <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> или <xref:Microsoft.Office.Tools.Excel.Worksheet> . Удалите объект данных из кэша данных, вызвав `StopCaching` метод ведущего элемента.
 
- Метод `StartCaching` и метод `StopCaching` являются частными, но они отображаются в IntelliSense.
+ `StartCaching`Метод и `StopCaching` метод являются частными, но они отображаются в IntelliSense.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- При использовании метода `StartCaching` для добавления объекта данных в кэш данных не требуется объявлять объект данных с атрибутом <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Однако объект данных должен соответствовать определенным требованиям для добавления в кэш данных. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).
+ При использовании `StartCaching` метода для добавления объекта данных в кэш данных объект данных не должен объявляться с <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> атрибутом. Однако объект данных должен соответствовать определенным требованиям для добавления в кэш данных. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Кэширование объекта данных программными средствами
 
-1. Объявите объект данных на уровне класса, а не внутри метода. В этом примере предполагается, что вы объявили <xref:System.Data.DataSet> с именем `dataSet1`, которые требуется кэшировать программно.
+1. Объявите объект данных на уровне класса, а не внутри метода. В этом примере предполагается, что вы объявили <xref:System.Data.DataSet> именованный объект `dataSet1` , который требуется кэшировать программно.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2. Создайте экземпляр объекта данных, а затем вызовите метод `StartCaching` экземпляра документа или листа и передайте имя объекта данных.
+2. Создайте экземпляр объекта данных, а затем вызовите `StartCaching` метод документа или экземпляра листа и передайте имя объекта данных.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>Отмена кэширования объекта данных
 
-1. Вызовите метод `StopCaching` экземпляра документа или листа и передайте имя объекта данных. В этом примере предполагается, что у вас есть <xref:System.Data.DataSet> с именем `dataSet1`, для которого необходимо прерывать кэширование.
+1. Вызовите `StopCaching` метод документа или экземпляра листа и передайте имя объекта данных. В этом примере предполагается, что у вас есть <xref:System.Data.DataSet> имя `dataSet1` , для которого необходимо прерывать кэширование.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    > Не вызывайте `StopCaching` из обработчика событий для события `Shutdown` документа или листа. К моменту возникновения события `Shutdown` это слишком поздно для изменения кэша данных. Дополнительные сведения о событии `Shutdown` см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
+    > Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` возникновения события слишком поздно изменять кэш данных. Дополнительные сведения о `Shutdown` событии см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>См. также
 

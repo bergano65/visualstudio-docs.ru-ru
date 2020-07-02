@@ -27,7 +27,7 @@ ms.locfileid: "85544005"
 
 Последнюю документацию по Visual Studio см. в разделе [CA1709: идентификаторы должны иметь правильный регистр](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|

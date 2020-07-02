@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программный перебор найденных элементов в документах
+title: Пошаговое руководство. Программный перебор найденных элементов в документах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22f8035cc7c1b09e7fd54f3c10842237ee6273b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e200f910e002bb9380bd5a1b556dc6f1cab08810
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812418"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544746"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Практическое руководство. Программный перебор найденных элементов в документах
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Пошаговое руководство. Программный перебор найденных элементов в документах
   Класс <xref:Microsoft.Office.Interop.Word.Find> имеет свойство <xref:Microsoft.Office.Interop.Word.Find.Found%2A> , которое возвращает **true** когда найден искомый элемент. Вы циклически просматривать все экземпляры, найденные в <xref:Microsoft.Office.Interop.Word.Range> , с помощью метода <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "62812418"
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
-### <a name="to-loop-through-items-in-a-vsto-add-in"></a>Циклический перебор элементов в надстройке VSTO
+### <a name="to-loop-through-items-in-a-vsto-add-in"></a>Перебор элементов в надстройке VSTO
 
 1. В следующем примере показан полный код для надстройки VSTO. Чтобы использовать этот пример кода, запустите его из класса `ThisAddIn` в своем проекте.
 
@@ -71,8 +71,8 @@ ms.locfileid: "62812418"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Программным способом поиска и замены rext в документах](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [Практическое руководство. Программное задание параметров поиска в Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [Практическое руководство. Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Практическое руководство. Программное восстановление выделения после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Руководство. Программный поиск и замена РексТ в документах](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Как программно задать параметры поиска в Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Руководство. Программное определение и выбор диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Как программным способом восстановить выделенные элементы после поиска](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

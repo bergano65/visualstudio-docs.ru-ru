@@ -1,5 +1,5 @@
 ---
-title: Отладка приложений Windows Store и Windows Universal | Документация Майкрософт
+title: Отладка приложения для Магазина Windows и универсальных приложений для Windows | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205667"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545565"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Отладка приложений для Магазина Windows и универсальных приложений для Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Отладчик Visual Studio обеспечивает полную поддержку отладки приложений Windows Store.  
+Отладчик Visual Studio обеспечивает полную поддержку отладки приложений для Магазина Windows.  
   
- Сведения об отладке Windows универсальных приложений см. в разделе [развертывание и отладка приложений универсальной платформы Windows](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  
+ Сведения об отладке универсальных приложений для Windows см. в разделе [развертывание и отладка приложений универсальной платформы Windows](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  
   
- Чтобы выполнить отладку приложений Windows Phone, см. в разделе [отладки приложений для Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx).  
+ Сведения об отладке приложений Windows Phone см. в разделе [Отладка приложений для Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx).  
   
 ## <a name="in-this-section"></a>Содержание раздела  
   
-|||  
+|Заголовок|Описание|  
 |-|-|  
 |[Запуск приложения из Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Запускайте приложения Магазина на локальном компьютере, в эмуляторе или имитаторе приложений либо на удаленном устройстве.|  
 |[Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Находите и исправляйте ошибки в своих приложениях Магазина с помощью отладчика Visual Studio.|  
-|[Предварительная загрузка содержимого для приложений Магазина Windows](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения Магазина Windows.|  
+|[Предварительная загрузка контента для приложений Магазина Windows](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения Магазина Windows.|  
   
 ## <a name="see-also"></a>См. также  
  [Анализ качества кода помощью метода анализа статического кода](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

@@ -8,17 +8,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b4a15530a43937b4f73fba1779216391c862c11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669020"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545058"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: не используйте ослабленные алгоритмы шифрования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
@@ -47,7 +47,7 @@ ms.locfileid: "72669020"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Используйте более надежные варианты шифрования.
 
-- Для MD5 используйте хэши в семействе [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (например <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Для MD5 используйте хэши в семействе [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (например <xref:System.Security.Cryptography.SHA512> ,, <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> ).
 
 - Для DES и RC2 используйте шифрование <xref:System.Security.Cryptography.Aes> .
 
@@ -95,7 +95,7 @@ using (AesManaged encAlg = new AesManaged())
 }
 ```
 
-### <a name="des-br-br-encryption-violation"></a>3DES <br /><br />Нарушение шифрования
+### <a name="des-br-br-encryption-violation"></a>DES <br /><br />Нарушение шифрования
 
 ```
 using System.Security.Cryptography;

@@ -1,7 +1,7 @@
 ---
 title: IManagedAddin - интерфейс
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: interface
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420983"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541132"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin - интерфейс
-  Реализация IManagedAddin-интерфейс для создания компонента, который загружает управляемых надстроек VSTO. Этот интерфейс был добавлен в выпуске 2007 системы Microsoft Office.
+  Реализуйте интерфейс IManagedAddin для создания компонента, который загружает управляемые надстройки VSTO. Этот интерфейс был добавлен в систему Microsoft Office 2007.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,48 +41,48 @@ interface IManagedAddin : IUnknown
 ```
 
 ## <a name="methods"></a>Методы
- Ниже перечислены методы, которые определяются IManagedAddin-интерфейс.
+ В следующей таблице перечислены методы, определяемые интерфейсом IManagedAddin.
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Вызывается, когда приложение Microsoft Office загружает управляемую надстройку VSTO.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Вызывается непосредственно перед тем, как приложение Microsoft Office выгружает управляемую надстройку VSTO.|
 
 ## <a name="remarks"></a>Примечания
- Приложения Microsoft Office, начиная с выпуска 2007 системы Microsoft Office, используйте интерфейс IManagedAddin, помогая загружать надстройки Office VSTO. Можно реализовать интерфейс IManagedAddin для создания собственного загрузчика надстройки VSTO и среды выполнения для управляемых надстроек VSTO, а не с помощью загрузчика надстройки VSTO (*VSTOLoader.dll*) и [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Для получения дополнительной информации см. [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
+ Microsoft Office приложений, начиная с системы Microsoft Office 2007, используйте интерфейс IManagedAddin, чтобы помочь в загрузке надстроек Office VSTO. Вы можете реализовать интерфейс IManagedAddin, чтобы создать собственный загрузчик надстройки VSTO и среду выполнения для управляемых надстроек VSTO вместо использования загрузчика надстроек VSTO (*VSTOLoader.dll*) и [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Для получения дополнительной информации см. [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
-## <a name="how-managed-add-ins-are-loaded"></a>Способ загрузки управляемых надстроек
+## <a name="how-managed-add-ins-are-loaded"></a>Загрузка управляемых надстроек
  При запуске приложения происходит следующее.
 
 1. Приложение обнаруживает надстройки VSTO путем поиска записей в следующем разделе реестра:
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<имя_приложения >* \Addins\\**
+    **HKEY_CURRENT_USER \Софтваре\микрософт\оффице \\ *\<application name>* \аддинс\\**
 
     Каждая запись в этом разделе реестра представляет собой уникальный идентификатор надстройки VSTO. Как правило, это имя сборки надстройки VSTO.
 
 2. Приложение ищет запись `Manifest` под записью для каждой надстройки VSTO.
 
-    Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` запись в разделе **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<имя_приложения >_ \Addins\\  _\<ИД надстройки >_** . Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.
+    Управляемые надстройки VSTO могут хранить полный путь манифеста в `Manifest` записи в разделе **HKEY_CURRENT_USER \софтваре\микрософт\оффице \\ _\<application name>_ \\ _\<add-in ID>_ \аддинс**. Манифест представляет собой файл (как правило, XML-файл), предоставляющий сведения, используемые для загрузки надстройки VSTO.
 
 3. Если приложение находит запись `Manifest` , приложение пытается загрузить компонент загрузчика управляемой надстройки VSTO. Приложение делает это, пытаясь создать COM-объект, реализующий интерфейс IManagedAddin.
 
-    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Включает компонент загрузчика надстройки VSTO (*VSTOLoader.dll*), или можно создать свой собственный интерфейс IManagedAddin реализации.
+    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Содержит компонент загрузчика надстройки VSTO (*VSTOLoader.dll*) или можно создать собственный, реализовав интерфейс IManagedAddin.
 
 4. Приложение вызывает метод [IManagedAddin::Load](../vsto/imanagedaddin-load.md) и передает в него значение записи `Manifest` .
 
 5. Метод [IManagedAddin::Load](../vsto/imanagedaddin-load.md) выполняет задачи, необходимые для загрузки надстройки VSTO, такие как настройка политики безопасности и домена приложения для загружаемой надстройки VSTO.
 
-   Дополнительные сведения о реестре ключи, которые используются приложениями Microsoft Office для обнаружения и загрузки управляемых надстроек VSTO, см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+   Дополнительные сведения о разделах реестра, которые Microsoft Office приложения используют для обнаружения и загрузки управляемых надстроек VSTO, см. в разделе [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
-## <a name="guidance-to-implement-imanagedaddin"></a>Рекомендации по реализации IManagedAddin
- При реализации IManagedAddin, необходимо зарегистрировать библиотеку DLL, содержащей реализацию с помощью следующего идентификатора CLSID:
+## <a name="guidance-to-implement-imanagedaddin"></a>Руководство по внедрению IManagedAddin
+ При реализации IManagedAddin необходимо зарегистрировать библиотеку DLL, содержащую реализацию, с помощью следующего идентификатора CLSID:
 
  99D651D7-5F7C-470E-8A3B-774D5D9536AC
 
- Этот идентификатор CLSID используется приложениями Microsoft Office для создания COM-объект, который реализует IManagedAddin.
+ Microsoft Office приложения используют этот идентификатор CLSID для создания COM-объекта, реализующего IManagedAddin.
 
 > [!CAUTION]
-> Этот идентификатор CLSID также используется процедурой *VSTOLoader.dll* в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Таким образом, если вы используете IManagedAddin для создания собственного загрузчика надстроек VSTO и компонента среды выполнения, невозможно развернуть компонент на компьютерах, работающих под управлением VSTO Add-ins, которые зависят от [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> Этот идентификатор CLSID также используется *VSTOLoader.dll* в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Поэтому, если вы используете IManagedAddin для создания собственного загрузчика надстройки VSTO и компонента среды выполнения, вы не сможете развернуть компонент на компьютерах, где выполняются надстройки VSTO, зависящие от [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
 ## <a name="see-also"></a>См. также
-- [Справочник по неуправляемым API &#40;разработка решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Справочник по неуправляемым API &#40;разработке решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

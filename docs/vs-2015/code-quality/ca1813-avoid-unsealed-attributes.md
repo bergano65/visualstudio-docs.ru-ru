@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fe5967ef099794b6c71029e9d03d959dd83b01dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d86f4a9ecbdfff451fed21f93c0fe6a7679d471
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647057"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543953"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: не допускайте использования распечатанных атрибутов
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813. Избегайте незапечатанных атрибутов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
@@ -33,10 +33,10 @@ ms.locfileid: "72647057"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый тип наследуется от <xref:System.Attribute?displayProperty=fullName>, не является абстрактным и не является запечатанным (`NotInheritable` в Visual Basic).
+ Открытый тип наследует от <xref:System.Attribute?displayProperty=fullName> , не является абстрактным и не запечатан ( `NotInheritable` в Visual Basic).
 
 ## <a name="rule-description"></a>Описание правила
- В библиотеке классов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] предоставляются методы для извлечения пользовательских атрибутов. По умолчанию эти методы выполняют поиск в иерархии наследования атрибута. например <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> ищет указанный тип атрибута или любой тип атрибута, расширяющий указанный тип атрибута. Запечатывание атрибута позволяет исключить Поиск через иерархию наследования и повысить производительность.
+ В библиотеке классов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] предоставляются методы для извлечения пользовательских атрибутов. По умолчанию эти методы выполняют поиск в иерархии наследования атрибута. Например, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> ищет указанный тип атрибута или любой тип атрибута, расширяющий указанный тип атрибута. Запечатывание атрибута позволяет исключить Поиск через иерархию наследования и повысить производительность.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, запечатайте тип атрибута или сделайте его абстрактным.
@@ -51,9 +51,9 @@ ms.locfileid: "72647057"
  [!code-vb[FxCop.Performance.AttributesSealed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.AttributesSealed/vb/FxCop.Performance.AttributesSealed.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1019: необходимо определять методы доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019. Определите методы доступа для аргументов атрибута](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1018: помечайте атрибуты как AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+ [CA1018. Пометьте атрибуты с помощью AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Атрибуты](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

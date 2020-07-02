@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663242"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545487"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: попробуйте передать базовые типы в качестве параметров
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011. Попробуйте передать базовые типы в качестве параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
@@ -53,11 +53,11 @@ ms.locfileid: "72663242"
   В таких случаях код будет более надежным из-за проверки строгого типа, предоставляемой компилятором и средой выполнения.
 
 ## <a name="example"></a>Пример
- В следующем примере показан метод `ManipulateFileStream`, который можно использовать только с объектом <xref:System.IO.FileStream>, который нарушает это правило. Второй метод, `ManipulateAnyStream`, удовлетворяет правилу, заменяя параметр <xref:System.IO.FileStream> с помощью <xref:System.IO.Stream>.
+ В следующем примере показан метод, `ManipulateFileStream` , который можно использовать только с <xref:System.IO.FileStream> объектом, который нарушает это правило. Второй метод, `ManipulateAnyStream` , удовлетворяет правилу, заменяя <xref:System.IO.FileStream> параметр с помощью <xref:System.IO.Stream> .
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]
  [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/vb/FxCop.Design.ConsiderPassingBaseTypes.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1059: члены не должны предоставлять определенные устойчивые типы](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+ [CA1059. Члены не должны предоставлять определенные конкретные типы](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

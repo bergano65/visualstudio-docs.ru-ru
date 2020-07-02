@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4c105a1224c405d0be9d74ac6500c875df28604d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792426615dd78241ade1d38a24ec1f4d5702cede
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604032"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545383"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: члены не должны предоставлять определенные устойчивые типы
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059. Члены не должны предоставлять определенные конкретные типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
@@ -44,7 +44,7 @@ ms.locfileid: "72604032"
 
 |Конкретный тип|Замена|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName><br /><br /> Использование интерфейса отделяет элемент от конкретной реализации источника XML-данных.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Использование интерфейса отделяет элемент от конкретной реализации источника XML-данных.|
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, измените конкретный тип на предлагаемый интерфейс.
@@ -53,4 +53,4 @@ ms.locfileid: "72604032"
  Можно спокойно отключить сообщение от этого правила, если требуется конкретная функциональность, предоставляемая конкретным типом.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1011: попробуйте передать базовые типы в качестве параметров](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011. Попробуйте передать базовые типы в качестве параметров](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

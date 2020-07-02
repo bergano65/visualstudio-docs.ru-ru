@@ -14,27 +14,27 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918388"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542978"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: затратное CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [DA0011: дорогостоящий CompareTo](/visualstudio/profiling/da0011-expensive-compareto).  
   
-|||  
+|Элемент|Значение|  
 |-|-|  
-|ИД правила|DA0011|  
+|Идентификатор правила|DA0011|  
 |Категория|Использование .NET Framework|  
-|Методы профилирования|Дискретизация<br /><br /> Память .NET|  
-|Message|Функции CompareTo должны быть малозатратными и не выделять память. Если возможно, уменьшите сложность функции CompareTo.|  
+|Методы профилирования|Выборка<br /><br /> Память .NET|  
+|Сообщение|Функции CompareTo должны быть малозатратными и не выделять память. Если возможно, уменьшите сложность функции CompareTo.|  
 |Тип правила|Предупреждение|  
   
-## <a name="cause"></a>Причина:  
+## <a name="cause"></a>Причина  
  Метод CompareTo типа является затратным или выделяет память.  
   
 ## <a name="rule-description"></a>Описание правила  
