@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5b5e1525d1ee706f9cd46a58c022763d2ed234bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a63ebb7f3946926864c4dd882c281b5dcd7c6c5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662686"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535841"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: правильно создавайте экземпляры аргументов исключений
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208. Правильно создавайте экземпляры исключений аргументов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
@@ -42,26 +42,26 @@ ms.locfileid: "72662686"
 ## <a name="rule-description"></a>Описание правила
  Вместо вызова конструктора по умолчанию вызовите одну из перегрузок конструктора, которая позволяет предоставить более осмысленное сообщение об исключении. Сообщение об исключении должно ориентироваться на разработчика и ясно объяснить состояние ошибки, а также как исправить или избежать исключения.
 
- Сигнатуры одного и двух конструкторов строк <xref:System.ArgumentException> и их производных типов не согласуются с параметрами `message` и `paramName`. Убедитесь, что эти конструкторы вызываются с правильными строковыми аргументами. Ниже приведены сигнатуры.
+ Сигнатуры одного и двух строковых конструкторов <xref:System.ArgumentException> и его производных типов не соответствуют `message` `paramName` параметрам и. Убедитесь, что эти конструкторы вызываются с правильными строковыми аргументами. Ниже приведены сигнатуры.
 
- <xref:System.ArgumentException> (строка `message`)
+ <xref:System.ArgumentException>(строка `message` )
 
- <xref:System.ArgumentException> (строка `message`, строка `paramName`)
+ <xref:System.ArgumentException>(строка `message` , строка `paramName` )
 
- <xref:System.ArgumentNullException> (строка `paramName`)
+ <xref:System.ArgumentNullException>(строка `paramName` )
 
- <xref:System.ArgumentNullException> (строка `paramName`, строка `message`)
+ <xref:System.ArgumentNullException>(строка `paramName` , строка `message` )
 
- <xref:System.ArgumentOutOfRangeException> (строка `paramName`)
+ <xref:System.ArgumentOutOfRangeException>(строка `paramName` )
 
- <xref:System.ArgumentOutOfRangeException> (строка `paramName`, строка `message`)
+ <xref:System.ArgumentOutOfRangeException>(строка `paramName` , строка `message` )
 
- <xref:System.DuplicateWaitObjectException> (строка `parameterName`)
+ <xref:System.DuplicateWaitObjectException>(строка `parameterName` )
 
- <xref:System.DuplicateWaitObjectException> (строка `parameterName`, строка `message`)
+ <xref:System.DuplicateWaitObjectException>(строка `parameterName` , строка `message` )
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, вызовите конструктор, принимающий сообщение, имя параметра или оба значения, и убедитесь, что аргументы являются верными для вызова типа <xref:System.ArgumentException>.
+ Чтобы устранить нарушение этого правила, вызовите конструктор, принимающий сообщение, имя параметра или оба значения, и убедитесь, что аргументы являются правильными для <xref:System.ArgumentException> вызываемого типа.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Предупреждение из этого правила можно отключить, только если параметризованный конструктор вызывается с правильными строковыми аргументами.

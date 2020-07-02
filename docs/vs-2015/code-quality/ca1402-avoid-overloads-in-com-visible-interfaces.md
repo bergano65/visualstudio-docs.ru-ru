@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 258b7ba1444cd990c3ec68ebfd5faccc945439e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c1e3af0e35bf92d72e853948c455893b417998
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661352"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534944"
 ---
-# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: не используйте перегрузки в интерфейсах, видимых в COM
+# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402. Избегайте перегрузок в видимых COM-интерфейсах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
@@ -55,7 +55,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
  Visual Basic 6 COM-клиенты не могут реализовывать методы интерфейса с помощью символа подчеркивания в имени.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, переименуйте перегруженные методы, чтобы имена были уникальными. Кроме того, можно сделать интерфейс невидимым для COM, изменив уровень доступа на `internal` (`Friend` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) или применив атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>, установленный в `false`.
+ Чтобы устранить нарушение этого правила, переименуйте перегруженные методы, чтобы имена были уникальными. Кроме того, можно сделать интерфейс невидимым для COM, изменив уровень доступа на `internal` ( `Friend` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) или применив <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> атрибут со значением `false` .
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
@@ -67,11 +67,11 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.OverloadsInterface/vb/FxCop.Interoperability.OverloadsInterface.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1413: избегайте использования не открытых полей в видимых типах значений COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: не используйте статические члены в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+ [CA1407. Не используйте статические члены в типах, видимых для COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: помечайте сборки атрибутом ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017. Пометьте сборки с помощью ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  Взаимодействие с [типом данных Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516) [неуправляемого кода](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

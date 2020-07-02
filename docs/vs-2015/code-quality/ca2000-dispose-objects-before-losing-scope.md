@@ -16,17 +16,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 89e0797afdcf299bb466018049a6d1217c5ad2dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e3de3246980ead0b20d471321a9696451aed81ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666156"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534775"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: удалите объекты до того, как будет потеряна область действия
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000. Ликвидируйте объекты перед потерей области
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DisposeObjectsBeforeLosingScope|
 |CheckId|CA2000|
@@ -34,15 +34,15 @@ ms.locfileid: "72666156"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Локальный объект типа <xref:System.IDisposable> создается, но объект не удаляется перед тем, как все ссылки на объект выходят за пределы области.
+ Локальный объект <xref:System.IDisposable> типа создается, но объект не удаляется до тех пор, пока все ссылки на объект не выходят за пределы области.
 
 ## <a name="rule-description"></a>Описание правила
  Если удаляемый объект не был явно удален до того, как все ссылки на него выходят за пределы области видимости, объект будет удален в неопределенное время, когда сборщик мусора выполняет метод завершения объекта. Так как может возникнуть исключительная ситуация, которая предотвратит выполнение метода завершения объекта, объект должен быть явно удален.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, вызовите <xref:System.IDisposable.Dispose%2A> объекта, прежде чем все ссылки на него выходят из области действия.
+ Чтобы устранить нарушение этого правила, вызовите <xref:System.IDisposable.Dispose%2A> объект перед тем, как все ссылки на него выходят за пределы области.
 
- Обратите внимание, что можно использовать оператор `using` (`Using` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) для обертывания объектов, реализующих `IDisposable`. Объекты, обтекаемые таким способом, автоматически удаляются при закрытии блока `using`.
+ Обратите внимание, что можно использовать `using` оператор ( `Using` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) для заключения в оболочку объектов, реализующих `IDisposable` . Объекты, обтекаемые таким способом, автоматически удаляются в конце `using` блока.
 
  Ниже приведены ситуации, в которых инструкция using недостаточна для защиты объектов IDisposable и может привести к возникновению CA2000.
 
@@ -65,9 +65,9 @@ ms.locfileid: "72666156"
  Нельзя отключить предупреждения из этого правила, если не будет вызван метод на объекте, который вызывает `Dispose`, например <xref:System.IO.Stream.Close%2A>, или если метод, который вызвал предупреждение, возвращает объект IDisposable, который оборачивает ваш объект.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2213: следует высвобождать высвобождаемые поля](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213. Следует высвобождать высвобождаемые поля](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: не удаляйте объекты несколько раз](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202. Не ликвидируйте объекты несколько раз](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Пример
  При реализации метода, возвращающего удаляемый объект, используйте блок try/finally без блока catch, чтобы убедиться, что объект удален. С помощью блока try/finally можно разрешать возникновение исключений в точке сбоя и убедиться, что объект удален.
@@ -80,16 +80,16 @@ ms.locfileid: "72666156"
 
 - `port`, который используется для возвращаемого значения метода.
 
-  @No__t_0 создается и открывается в блоке `try`, а любая другая необходимая работа выполняется в том же блоке `try`. В конце блока `try` открытый порт назначается объекту `port`, который будет возвращен, а объект `tempPort` имеет значение `null`.
+  Объект `tempPort` создается и открывается в `try` блоке, и любая другая требуемая работа выполняется в том же `try` блоке. В конце `try` блока открытый порт назначается `port` объекту, который будет возвращен, и `tempPort` для объекта задается значение `null` .
 
-  Блок `finally` проверяет значение `tempPort`. Если значение не равно null, операция в методе завершилась неудачно, а `tempPort` закрывается, чтобы обеспечить освобождение всех ресурсов. Возвращенный объект порта будет содержать открытый объект SerialPort, если операции метода завершились успешно, или значение null, если операция завершилась ошибкой.
+  `finally`Блок проверяет значение `tempPort` . Если это значение не равно null, операция в методе завершилась неудачно и `tempPort` закрыта, чтобы убедиться, что все ресурсы освобождены. Возвращенный объект порта будет содержать открытый объект SerialPort, если операции метода завершились успешно, или значение null, если операция завершилась ошибкой.
 
   [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]
 
 ## <a name="example"></a>Пример
- По умолчанию компилятор [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] имеет все арифметические операторы, которые проверяют переполнение. Таким образом, любая Visual Basic арифметическая операция может вызвать <xref:System.OverflowException>. Это может привести к непредвиденным нарушениям правил, таких как CA2000. Например, следующая функция CreateReader1 выдаст нарушение CA2000, так как компилятор Visual Basic выдает инструкцию проверки переполнения для добавления, которая может вызвать исключение, которое привело бы к удалению StreamReader.
+ По умолчанию в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] компиляторе все арифметические операторы проверяют переполнение. Таким образом, любая Visual Basic арифметическая операция может вызвать исключение <xref:System.OverflowException> . Это может привести к непредвиденным нарушениям правил, таких как CA2000. Например, следующая функция CreateReader1 выдаст нарушение CA2000, так как компилятор Visual Basic выдает инструкцию проверки переполнения для добавления, которая может вызвать исключение, которое привело бы к удалению StreamReader.
 
  Чтобы устранить эту проблему, можно отключить эмиссию проверок переполнения компилятором Visual Basic в проекте или изменить код, как в следующей функции CreateReader2.
 
@@ -97,5 +97,5 @@ ms.locfileid: "72666156"
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1](FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1)]  -->
 
-## <a name="see-also"></a>См. также раздел
- [шаблон удаления](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb) <xref:System.IDisposable>
+## <a name="see-also"></a>См. также
+ <xref:System.IDisposable> [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

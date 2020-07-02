@@ -9,17 +9,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 695378404e27b64f269fe4e9820b6b9e520c9d0f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660154"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535711"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживают наследование одной таблицы, так как обычно реализуются в реляционных системах. Это пошаговое руководство раскрывает общие шаги, приведенные в разделе [Практическое руководство. Настройка наследования с помощью конструктора O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) , и предоставляет некоторые реальные данные для демонстрации использования наследования в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживают наследование одной таблицы, так как обычно реализуются в реляционных системах. Это пошаговое руководство раскрывает общие шаги, приведенные в разделе [Практическое руководство. Настройка наследования с помощью конструктора O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) , и предоставляет некоторые реальные данные для демонстрации использования наследования в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] .
 
  В этом пошаговом руководстве вы будете выполнять следующие задачи:
 
@@ -42,20 +42,20 @@ ms.locfileid: "72660154"
 
 #### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Для создания базовой таблицы, чтобы продемонстрировать наследование
 
-1. В **обозреватель сервера** /**Обозреватель базы данных**щелкните правой кнопкой мыши узел **таблицы** и выберите команду **Добавить новую таблицу**.
+1. В **Обозреватель сервера** / **Обозреватель базы данных**щелкните правой кнопкой мыши узел **таблицы** и выберите команду **Добавить новую таблицу**.
 
     > [!NOTE]
     > Может быть использована база данных Northwind или любая другая, к которой можно добавить таблицу.
 
 2. В Конструкторе таблиц добавьте в таблицу следующие столбцы:
 
-    |Имя столбца|Тип данных|Разрешить значения null|
+    |Имя столбца|Тип данных|Разрешить значения NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
-    |**LastName**|**nvarchar(200)**|**False**|
-    |**Manager**|**int**|**True**|
+    |**ID**|**int**|**IsFalse**|
+    |**Тип**|**int**|**True**|
+    |**FirstName**|**nvarchar(200)**|**IsFalse**|
+    |**LastName**|**nvarchar(200)**|**IsFalse**|
+    |**Менеджер**|**int**|**True**|
 
 3. Задайте столбец ID в качестве первичного ключа
 
@@ -66,13 +66,12 @@ ms.locfileid: "72660154"
 
 #### <a name="to-add-data-to-the-table"></a>Для добавления данных в таблицу
 
-1. Откройте таблицу в окне просмотра данных. (Щелкните правой кнопкой мыши таблицу **Person** в **Обозреватель сервера** /**Обозреватель базы данных** и выберите команду **отобразить данные таблицы**.)
+1. Откройте таблицу в окне просмотра данных. (Щелкните правой кнопкой мыши таблицу **Person** в **Обозреватель сервера** / **Обозреватель базы данных** и нажмите кнопку " **отобразить данные таблицы**".)
 
 2. Скопируйте в таблицу следующие данные. (Его можно скопировать, а затем вставить в таблицу, выбрав всю строку на панели результатов.)
 
-    ||||||
+    |**ID**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -106,7 +105,7 @@ ms.locfileid: "72660154"
 
 #### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Для добавления файла LINQ to SQL в проект
 
-1. В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите **Добавить новый элемент**.
 
 2. Выберите шаблон **Классы LINQ to SQL** и нажмите кнопку **Добавить**.
 
@@ -117,17 +116,17 @@ ms.locfileid: "72660154"
 
 #### <a name="to-create-the-inheritance"></a>Чтобы создать наследование, выполните следующие действия
 
-1. В **обозреватель сервера** /**Обозреватель базы данных**перейдите к таблице **Person** , созданной ранее.
+1. В **Обозреватель сервера** / **Обозреватель базы данных**перейдите к таблице **Person** , созданной ранее.
 
-2. Перетащите таблицу **Person** на область конструктора [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Перетащите таблицу **Person** в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] область конструктора.
 
-3. Перетащите вторую таблицу **Person** на [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] и измените ее имя на **Employee**.
+3. Перетащите вторую таблицу **Person** на поверхность [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] и измените ее имя на **Employee**.
 
 4. Удалите свойство **Manager** из объекта **Person**.
 
 5. Удалите свойства **Type**, **ID**, **FirstName** и **LastName** из объекта **Employee**. (Другими словами, удалите все свойства, кроме свойства **Manager**.)
 
-6. Из вкладки **Реляционный конструктор объектов** **Панели элементов** создайте **Наследование** между объектами **Person** и **Employee**. Чтобы выполнить это, щелкните по пункту **Наследование** в **Панели элементов** и отпустите кнопку мыши. Затем щелкните объект **Employee** , а затем — объект **Person** в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Стрелка на линии наследования будет указывать на объект **Person** .
+6. Из вкладки **Реляционный конструктор объектов****Панели элементов** создайте **Наследование** между объектами **Person** и **Employee**. Чтобы выполнить это, щелкните по пункту **Наследование** в **Панели элементов** и отпустите кнопку мыши. Затем щелкните объект **Employee** , а затем объект **Person** в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . Стрелка на линии наследования будет указывать на объект **Person** .
 
 7. Щелкните по линии **Наследование** на области конструктора.
 
@@ -175,7 +174,7 @@ ms.locfileid: "72660154"
     }
     ```
 
-## <a name="test-the-application"></a>Выполните тестирование приложения
+## <a name="test-the-application"></a>Тестирование приложения
  Запустите приложение и убедитесь, что записи, отображенные в списке представляют всех работников (записи, которые имеют значение 2 в столбце Type).
 
 #### <a name="to-test-the-application"></a>Тестирование приложения
@@ -184,7 +183,7 @@ ms.locfileid: "72660154"
 
 2. Убедитесь, что отображаются только записи со значением 2 в их столбце Type.
 
-3. Закройте форму. (В меню **Отладка** щелкните пункт **Остановить отладку**.)
+3. Закройте форму. (В меню **Отладка** выберите команду **прерывать отладку**.)
 
-## <a name="see-also"></a>См. также раздел
- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Практическое руководство. Добавление LINQ to SQL классов в проект (реляционный конструктор o)](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6) [Пошаговое руководство. Создание классов LINQ to SQL (o-r Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [Практическое руководство. назначение хранимых процедур для выполнения операций обновления, вставки и удаления (o/R Конструктор)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [как создать объектную модель в Visual Basic или C# ](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
+## <a name="see-also"></a>См. также
+ [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Практическое руководство. Добавление LINQ to SQL классов в проект (o-r Designer](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6) [) Пошаговое руководство. Создание классов LINQ to SQL (o-r Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [Практическое руководство. назначение хранимых процедур для выполнения операций обновления, вставки и удаления (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Практическое руководство. Создание объектной модели в Visual Basic или C#](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

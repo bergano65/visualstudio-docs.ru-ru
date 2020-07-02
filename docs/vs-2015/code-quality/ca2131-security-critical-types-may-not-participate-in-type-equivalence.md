@@ -11,17 +11,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0d32ebc08866a14755ddb8b2c70e2dd0c4ce61f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ccd556a5929e56597de678ad4ad8ea6c101b7c7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655498"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535893"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: типы критической безопасности могут не участвовать в эквивалентности типа
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131. Критические для безопасности типы не могут участвовать в эквивалентности типов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|критикалтипесмустнотпартиЦипатеинтипикуиваленце|
 |CheckId|CA2131|
@@ -29,7 +29,7 @@ ms.locfileid: "72655498"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип участвует в эквивалентности типов и либо сам тип, либо элемент или поле типа, помечается атрибутом <xref:System.Security.SecurityCriticalAttribute>.
+ Тип участвует в эквивалентности типов и либо сам тип, либо элемент или поле типа помечаются <xref:System.Security.SecurityCriticalAttribute> атрибутом.
 
 ## <a name="rule-description"></a>Описание правила
  Это правило применяется ко всем критическим типам или к типам, содержащим критические методы или поля, участвующие в эквивалентности типов. Когда среда CLR обнаруживает такой тип, она не может загрузить его с помощью <xref:System.TypeLoadException> во время выполнения. Обычно это правило срабатывает, только если пользователи реализуют эквивалентность типов вручную вместо того, чтобы позволить tlbimp и компиляторам обработать эквивалентность типов.
@@ -45,5 +45,5 @@ ms.locfileid: "72655498"
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2131.criticaltypesmustnotparticipateintypeequivalence/cs/ca2131 - criticaltypesmustnotparticipateintypeequivalence.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
- [Прозрачный для системы безопасности код, уровень 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+## <a name="see-also"></a>См. также
+ [Прозрачный с точки зрения безопасности код, уровень 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

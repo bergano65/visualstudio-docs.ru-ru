@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298210"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534008"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Выполнение средств профилирования с отладчиком и без него
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "74298210"
   
      В отладочных построениях отсутствуют определенные оптимизации, доступные в окончательных сборках, например встраивание вызовов функций и констант, способы хранения переменных, которые не могут использоваться отладчиком. Отладчик сам изменяет время производительности, так как он выполняет некоторые операции, необходимые для отладки (например, перехват исключений и события загрузки модулей). Поэтому показатели производительности в средствах, встроенных в отладчик, точны только до десятков миллисекунд. Показатели производительности для конфигураций выпуска при использовании средств без отладчика являются гораздо более точными.  
   
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Сбор данных профилирования во время отладки  
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Сбор данных профилирования во время отладки  
  В следующем разделе представлены сведения о локальной отладке. Информацию об отладке на устройстве и удаленной отладке см. в разделах ниже.  
   
 1. Откройте проект, который вы хотите отладить, щелкните **Отладка | Начать отладку** (или **Запуск** на панели инструментов либо нажмите клавишу **F5**).  
@@ -49,9 +49,9 @@ ms.locfileid: "74298210"
   
     При выполнении этого сеанса вы можете просмотреть сведения о событиях, памяти процесса и загрузке ЦП.  
   
-    На рисунке ниже показано окно **Средства диагностики** в Visual Studio 2015 с обновлением 1.  
+    На следующем рисунке показано окно **средства диагностики** в Visual Studio 2015 с обновлением 1:  
   
-    ![Диагностиктулс&#45;update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4. Вы можете выбрать, что следует просмотреть — **использование памяти** или **загрузку ЦП** (либо и то, и другое) — с помощью параметра **Выбор средств** на панели инструментов. Если вы используете Visual Studio Enterprise, можно включить или отключить IntelliTrace, последовательно выбрав **Сервис | Параметры | IntelliTrace**.  
   
@@ -61,11 +61,11 @@ ms.locfileid: "74298210"
   
    Окно теперь содержит поле поиска, с помощью которого можно найти определенную строку в любом месте списка событий. Например, на рисунке ниже показаны результаты поиска строки install, которой соответствуют четыре события.  
   
-   ![диагностиксевентсеарч](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
    Вы также можете фильтровать события, отображаемые в окне. В раскрывающемся списке **Фильтр** можно выбрать определенные категории событий или отменить их выбор. Имена категорий совпадают с префиксами.  
   
-   ![диагностицевентфилтер](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
    Дополнительные сведения см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
@@ -86,7 +86,7 @@ ms.locfileid: "74298210"
   
     Во время выполнения сеанса некоторые средства отображают графики по данным в режиме реального времени на странице запуска средств диагностики.  
   
-    ![Сбор данных в Pag производительности и диагностики](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Соберите данные на странице "Производительность и диагностика"](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Для завершения диагностического сеанса выберите команду **Остановить сбор**.  
   
@@ -94,12 +94,12 @@ ms.locfileid: "74298210"
   
    Также на странице запуска средств диагностики в перечне недавних файлов можно открывать сохраненные файлы сеанса диагностики.  
   
-   ![Открытие сохраненного файла сеанса диагностики](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Открытие сохраненного файла диагностического сеанса](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Отчет о профилировании  
  ![Отчет средств диагностики](../profiling/media/diag-report.png "DIAG_Report")  
   
-|||  
+|Изображение|Описание|  
 |-|-|  
 |![Шаг 1](../profiling/media/procguid-1.png "ProcGuid_1")|На временной шкале отображаются продолжительность сеанса профилирования, события активации жизненного цикла приложения и пользовательские отметки.|  
 |![Шаг 2](../profiling/media/procguid-2.png "ProcGuid_2")|Отчет можно ограничить частью временной шкалы, перетащив синие панели, чтобы выбрать нужную область временной шкалы.|  
@@ -111,32 +111,32 @@ ms.locfileid: "74298210"
 ## <a name="setting-the-analysis-target-to-another-device"></a>Настройка другого устройства в качестве целевого объекта анализа  
  Кроме запуска приложения из проекта Visual Studio, диагностические сеансы также можно запускать на альтернативных целевых объектах. Например, может потребоваться диагностика проблем производительности для определенной версии вашего приложения, установленного из Магазина приложений Windows.  
   
- ![Выбор целевого объекта анализа средств диагностики](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Выбор целевого объекта анализа для средств диагностики](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Можно запускать приложения, которые уже установлены на устройстве, или можно подключать средства диагностики к приложениям, которые уже работают. При выборе режима **выполняемого приложения** или **установленного приложения** вы выбираете приложение в списке приложений, обнаруженных в указанном целевом объекте развертывания.  
   
- ![Выберите выполняющееся или установленное приложение для диагностики](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Выбор выполняемого или установленного приложения для диагностики](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  При выборе **Internet Explorer** вы указываете URL-адрес и можете изменить телефон, который является целевым объектом развертывания.  
   
- ![Укажите URL-адрес для просмотра в Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Укажите URL-адрес для отображения в Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Удаленная отладка  
  Чтобы запустить сеанс диагностики на удаленном ПК или планшете, на устройстве должны быть установлены и запущены инструменты удаленной отладки Visual Studio. Для классических приложений см. раздел [Удаленная отладка](../debugger/remote-debugging.md).  Для универсальных приложений Windows см. раздел [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Записи в блогах и статьи MSDN от команды разработчиков средств диагностики  
- [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [Журнал MSDN Magazine. Анализ производительности во время отладки в Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [Журнал MSDN Magazine. Использование IntelliTrace для более быстрой диагностики проблем](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [Журнал MSDN Magazine. Использование IntelliTrace для ускоренной диагностики проблем](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
+ [Запись блога. Диагностика утечек памяти обработчика событий с помощью средства "Использование памяти" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
- [Видео. Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Видео. Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Видео. Отладка проблем производительности с помощью Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: информация о производительности прямо при отладке с помощью Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
+ [PerfTips. Информация о производительности прямо при отладке с помощью Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
+ [Окно отладчика "Средства диагностики" в Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
  [IntelliTrace в Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
