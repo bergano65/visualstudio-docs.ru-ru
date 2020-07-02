@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1852e7a5cbaa2d25f93618b22d01d23e8a953dcb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5c1e254ae7912efbb6773155ed834e54a1db1832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667436"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546332"
 ---
-# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: прозрачные методы не следует вызывать в машинном коде
+# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149. Прозрачные методы не должны вызывать машинный код
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|транспарентмесодсмустноткаллнативекоде|
 |CheckId|CA2149|
@@ -32,10 +32,10 @@ ms.locfileid: "72667436"
  Метод вызывает собственную функцию через заглушку метода, например P/Invoke.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило срабатывает для любого прозрачного метода, который вызывается непосредственно в машинном коде, например, с помощью вызова P/Invoke. Нарушение этого правила приводит к <xref:System.MethodAccessException>у в модели прозрачности уровня 2 и полному запросу для <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> в модели прозрачности уровня 1.
+ Это правило срабатывает для любого прозрачного метода, который вызывается непосредственно в машинном коде, например, с помощью вызова P/Invoke. Нарушение этого правила приводит к тому, что <xref:System.MethodAccessException> в модели прозрачности уровня 2 и полное требование для <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> модели прозрачности уровня 1.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, пометьте метод, который вызывает машинный код с помощью атрибута <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute>.
+ Чтобы устранить нарушение этого правила, пометьте метод, который вызывает машинный код с помощью <xref:System.Security.SecurityCriticalAttribute> атрибута или <xref:System.Security.SecuritySafeCriticalAttribute> .
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.

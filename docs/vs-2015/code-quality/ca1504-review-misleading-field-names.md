@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c3f1cca5dd33047a4d19c78013dd535e0e9dd6f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d375b64bbc877cb377157f13b3e4cfa7c7cf1592
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547879"
 ---
-# <a name="ca1504-review-misleading-field-names"></a>CA1504: проверьте имена полей, которые могут ввести в заблуждение
+# <a name="ca1504-review-misleading-field-names"></a>CA1504. Проверьте имена полей, которые могут ввести в заблуждение
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
@@ -33,13 +33,13 @@ ms.locfileid: "72607753"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Имя поля экземпляра начинается с "s_" или имени поля `static` (`Shared` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) начинается с "m_".
+ Имя поля экземпляра начинается с "s_", а имя `static` `Shared` поля (в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) начинается с "m_".
 
 ## <a name="rule-description"></a>Описание правила
  Имена полей, начинающиеся с "s_", связываются с статическими данными несколькими пользователями. Аналогичным образом имена полей, начинающиеся с "m_", связываются с данными экземпляра (члена). Для упрощения поддержки кода имена должны следовать соглашениям об общем использовании.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, переименуйте поле с помощью соответствующего префикса. Кроме того, можно сделать поле согласен с текущим суффиксом, добавив или удалив модификатор `static`.
+ Чтобы устранить нарушение этого правила, переименуйте поле с помощью соответствующего префикса. Кроме того, можно сделать поле согласен с текущим суффиксом, добавив или удалив `static` модификатор.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.

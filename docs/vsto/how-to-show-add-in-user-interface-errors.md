@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса
+title: Пошаговое руководство. Отображение ошибок пользовательского интерфейса надстройки
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441792"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545786"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Практическое руководство. Показывать ошибки надстройки пользовательского интерфейса
-  По умолчанию если надстройка VSTO при попытке управления пользовательским интерфейсом (UI) Microsoft Office и происходит сбой, сообщение об ошибке не отображается. Однако можно настроить приложения Microsoft Office для отображения сообщений об ошибках, связанных с пользовательским интерфейсом. Эти сообщения можно использовать для определения, почему настраиваемая лента не отображается, или почему лента появилась, но не отображаются элементы управления.
+# <a name="how-to-show-add-in-user-interface-errors"></a>Пошаговое руководство. Отображение ошибок пользовательского интерфейса надстройки
+  По умолчанию, если надстройка VSTO пытается управлять пользовательским интерфейсом Microsoft Office и завершается ошибкой, сообщение об ошибке не отображается. Однако можно настроить приложения Microsoft Office для отображения сообщений об ошибках, связанных с пользовательским интерфейсом. Эти сообщения можно использовать для определения причины, по которой пользовательская лента не отображается, или для отображения ленты, но не для отображения элементов управления.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -44,6 +44,6 @@ ms.locfileid: "63441792"
 
 ## <a name="see-also"></a>См. также
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
-- [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)
-- [Обзор ленты](../vsto/ribbon-overview.md)
-- [Общие сведения о панели действий](../vsto/actions-pane-overview.md)
+- [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
+- [Общие сведения о ленте](../vsto/ribbon-overview.md)
+- [Обзор панели действий](../vsto/actions-pane-overview.md)

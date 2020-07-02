@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e5dee78ef3c487541363e9e290e54a8f3d68cf3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48c3f55b60add1691fe31c764f31673bbf1ab47b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667429"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546358"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName||
 |CheckId|CA2151|
@@ -27,7 +27,7 @@ ms.locfileid: "72667429"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Объявлено прозрачное для безопасности поле или поле, надежное с точки зрения безопасности. Его тип определяется как критический с точки зрения безопасности. Пример:
+ Объявлено прозрачное для безопасности поле или поле, надежное с точки зрения безопасности. Его тип определяется как критический с точки зрения безопасности. Пример.
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]

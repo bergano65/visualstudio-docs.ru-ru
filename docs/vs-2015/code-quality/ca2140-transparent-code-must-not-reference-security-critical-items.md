@@ -17,17 +17,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602866"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546462"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: прозрачный код не должен ссылаться на элементы, критичные в плане безопасности
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140. Прозрачный код не должен ссылаться на критические для безопасности элементы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|транспарентмесодсмустнотреференцекритикалкоде|
 |CheckId|CA2140|
@@ -54,16 +54,16 @@ ms.locfileid: "72602866"
 - Возвращает тип, помеченный как критический с точки зрения безопасности
 
 ## <a name="rule-description"></a>Описание правила
- Элемент кода, помеченный атрибутом <xref:System.Security.SecurityCriticalAttribute>, является критически важным для безопасности. Прозрачный метод не может использовать элемент, критический с точки зрения безопасности. Если прозрачный тип пытается использовать критически важный для безопасности тип, возникает <xref:System.TypeAccessException>, <xref:System.MethodAccessException> или <xref:System.FieldAccessException>.
+ Элемент кода, помеченный <xref:System.Security.SecurityCriticalAttribute> атрибутом, является критически важным для безопасности. Прозрачный метод не может использовать элемент, критический с точки зрения безопасности. Если прозрачный тип пытается использовать критически важный для безопасности тип <xref:System.TypeAccessException> , <xref:System.MethodAccessException> <xref:System.FieldAccessException> вызывается исключение, или.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, выполните одно из следующих действий.
 
-- Пометьте элемент кода, использующий критически важный для безопасности код с помощью атрибута <xref:System.Security.SecurityCriticalAttribute>
+- Пометьте элемент кода, использующий критически важный для безопасности код с помощью <xref:System.Security.SecurityCriticalAttribute> атрибута
 
      \- или -
 
-- Удалите атрибут <xref:System.Security.SecurityCriticalAttribute> из элементов кода, помеченных как критически важный для безопасности, а затем пометьте их атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> или <xref:System.Security.SecurityTransparentAttribute>.
+- Удалите <xref:System.Security.SecurityCriticalAttribute> атрибут из элементов кода, помеченных как критически важный для безопасности, а затем пометьте их <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> атрибутом или.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
@@ -73,7 +73,7 @@ ms.locfileid: "72602866"
 
  [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2140.transparentmethodsmustnotreferencecriticalcode/cs/ca2140 - transparentmethodsmustnotreferencecriticalcode.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute>
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>

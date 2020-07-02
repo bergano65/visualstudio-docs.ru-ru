@@ -2,7 +2,7 @@
 title: Параметры обратной связи
 description: Нас интересуют ваши идеи по улучшению наших продуктов и документации. Вот как можно их отправить.
 ms.date: 11/20/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: seoapril2019
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847463"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769995"
 ---
 # <a name="visual-studio-feedback-options"></a>Параметры обратной связи Visual Studio
 

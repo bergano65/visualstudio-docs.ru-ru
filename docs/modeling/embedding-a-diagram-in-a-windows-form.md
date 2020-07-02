@@ -1,18 +1,18 @@
 ---
 title: Встраивание схемы в форму Windows
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94425c9f3bc586847f43589f7abdcef2295cf1b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547632"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Внедрение схемы в Windows-форму
 
@@ -67,7 +67,7 @@ ms.locfileid: "76114623"
 
 ## <a name="update-the-form-using-store-events"></a>Обновление формы с помощью событий хранилища
 
-1. В конструкторе форм добавьте **ListBox** с именем `listBox1`. Отобразится список элементов модели. Он синхронизируется с моделью с помощью *событий хранилища*. Дополнительные сведения см. в разделе " [обработчики событий" распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. В конструкторе форм добавьте **ListBox** с именем `listBox1` . Отобразится список элементов модели. Он синхронизируется с моделью с помощью *событий хранилища*. Дополнительные сведения см. в разделе " [обработчики событий" распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. В файле пользовательского кода Переопределите дополнительные методы для класса DocView:
 
@@ -141,7 +141,7 @@ ms.locfileid: "76114623"
 
      Обратите внимание, что в списке отображается список элементов в модели и они верны после добавления или удаления, а также после операций отмены и повтора.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

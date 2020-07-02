@@ -1,7 +1,7 @@
 ---
 title: Как кэшировать данные для использования в автономном режиме или на сервере
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,28 +17,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 551d27cf8d40f2e6e9c996b031fa6c4e0a233355
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189575"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546189"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Как кэшировать данные для использования в автономном режиме или на сервере
   Можно пометить элемент данных для кэширования в документе, чтобы он был доступен в автономном режиме. Это также делает возможным обработку данных в документе другим кодом, когда документ хранится на сервере.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Можно пометить элемент данных, который будет кэшироваться при объявлении элемента данных в коде, или, если вы используете <xref:System.Data.DataSet>, задав свойство в окне " **Свойства** ". При кэшировании элемента данных, который не является <xref:System.Data.DataSet> или <xref:System.Data.DataTable>, убедитесь, что он соответствует критериям кэширования в документе. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).
+ Можно пометить элемент данных для кэширования при объявлении элемента данных в коде или, если используется <xref:System.Data.DataSet> , установив свойство в окне **свойства** . При кэшировании элемента данных, который не является <xref:System.Data.DataSet> или <xref:System.Data.DataTable> , убедитесь, что он соответствует критериям кэширования в документе. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).
 
 > [!NOTE]
-> Наборы данных, созданные с помощью Visual Basic, помеченные как **кэшированные** и заданные как **WithEvents** (включая наборы **данных** , перетаскиваемые из окна или **панели элементов** , для которых свойство **CacheInDocument** установлено в **значение true).** ) имеют префикс подчеркивания в именах в кэше. Например, при создании набора данных и наименовании его **Customers**имя <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> будет **_Customers** в кэше. При использовании <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> для доступа к этому кэшированному элементу необходимо указать **_Customers** вместо **Customers**.
+> Наборы данных, созданные с помощью Visual Basic, которые помечены как **кэшированные** и **WithEvents** (включая наборы **данных** , которые перетаскиваются из окна или **панели элементов** , для которых свойство **CacheInDocument** имеет значение **true**), имеют префикс подчеркивания для их имен в кэше. Например, при создании набора данных и наименовании его **Customers** <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> имя будет **_Customers** в кэше. При использовании <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> для доступа к этому кэшированному элементу необходимо указать **_Customers** , а не **клиентов**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Кэширование данных в документе с помощью кода
 
-1. Объявите открытое поле или свойство для элемента данных как член класса ведущего элемента в проекте, например класс `ThisDocumen`t в проекте Word или класс `ThisWorkbook` в проекте Excel.
+1. Объявите открытое поле или свойство для элемента данных в качестве члена класса ведущего элемента в проекте, например `ThisDocumen` класс t в проекте Word или в `ThisWorkbook` классе в проекте Excel.
 
-2. Примените к элементу атрибут <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>, чтобы отметить элемент данных, который будет храниться в кэше данных документа. В следующем примере этот атрибут применяется к объявлению поля для <xref:System.Data.DataSet>.
+2. Примените <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> к элементу атрибут, чтобы пометить элемент данных, который будет храниться в кэше данных документа. В следующем примере этот атрибут применяется к объявлению поля для <xref:System.Data.DataSet> .
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]

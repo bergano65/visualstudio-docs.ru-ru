@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e85ac61e404ac9bc1afb9459716c2395233c5080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607408"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545708"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: избегайте чрезмерного соединения классов
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506. Избегайте чрезмерной взаимозависимости классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
@@ -46,5 +46,5 @@ ms.locfileid: "72607408"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Исключите это предупреждение, если тип или метод по-прежнему считается обслуживаемым, несмотря на большое количество зависимостей от других типов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения о поддержке](../code-quality/maintainability-warnings.md) [, измеряющие сложность и удобство сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

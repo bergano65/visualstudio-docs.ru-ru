@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное создание элемента электронной почты
+title: Руководство. Программное создание элемента электронной почты
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd7a90853b22579557078dc0a407873e5401c36d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d22808b8d68c0fdb3b6a2374985ae25a539f0e8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575173"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546046"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Практическое руководство. Программное создание элемента электронной почты
-  В этом примере создает сообщение электронной почты в Microsoft Office Outlook.
+# <a name="how-to-programmatically-create-an-email-item"></a>Руководство. Программное создание элемента электронной почты
+  В этом примере создается сообщение электронной почты в Microsoft Office Outlook.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,4 +31,4 @@ ms.locfileid: "62575173"
 
 ## <a name="see-also"></a>См. также
 - [Работа с элементами почты](../vsto/working-with-mail-items.md)
-- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

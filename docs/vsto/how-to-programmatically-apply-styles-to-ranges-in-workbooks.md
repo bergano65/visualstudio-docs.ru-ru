@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное применение стилей к диапазонам в книгах
+title: Руководство. Программное применение стилей к диапазонам в книгах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817457"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546163"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Практическое руководство. Программное применение стилей к диапазонам в книгах
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Руководство. Программное применение стилей к диапазонам в книгах
   К областям в книгах можно применять именованные стили. В Excel реализовано несколько предварительно определенных стилей.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "62817457"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
 
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Удаление стиля из именованного диапазона в надстройке VSTO
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>Очистка стиля из именованного диапазона в надстройке VSTO
 
 1. Примените к диапазону стиль «Обычный».
 

@@ -1,8 +1,8 @@
 ---
-title: Элемент LocationField (Шаблоны проекта визуальной студии) Документы Майкрософт
+title: Элемент Локатионфиелд (шаблоны проектов Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702886"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770023"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>Элемент LocationField (шаблоны проекта Visual Studio)
-Определяет, включено ли, отключено или скрыто для шаблона проекта текстовое поле **«Местоположение»** в диалоговом поле **Нового проекта.**
+# <a name="locationfield-element-visual-studio-project-templates"></a>Элемент Локатионфиелд (шаблоны проектов Visual Studio)
+Указывает, будет ли текстовое поле **Расположение** в диалоговом окне **Новый проект** включено, отключено или скрыто для шаблона проекта.
 
- \<VSTemplate \<> TemplateData> \<LocationField>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,31 +39,31 @@ ms.locfileid: "80702886"
  Нет.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Категоризирует шаблон и определяет, как он отображается в **новом проекте.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в **новом проекте**.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Действительные значения текста:
+ Допустимые текстовые значения:
 
-- `Enabled`, который указывает, что окно **местоположения** нового окна диалога **проекта** включено.
+- `Enabled`, который указывает, что в поле **Расположение** диалогового окна **Новый проект** включен.
 
-- `Disabled`, который указывает, что поле **расположение** нового окна диалога **проекта** отключено.
+- `Disabled`, который указывает, что поле **Расположение** диалогового окна **Новый проект** отключено.
 
-- `Hidden`, который указывает, что поле **расположение** нового диалога **проекта** скрыто.
+- `Hidden`, который указывает, что поле **Расположение** диалогового окна **Новый проект** скрыто.
 
 ## <a name="remarks"></a>Примечания
- Значение по умолчанию — `Enabled`.
+ Значение по умолчанию — `Enabled`.
 
- Текстовое окно **местоположения** в диалоговом поле **Нового проекта** позволяет пользователям изменять каталог по умолчанию, в котором сохраняются новые проекты.
+ Текстовое поле **Расположение** в диалоговом окне **Новый проект** позволяет пользователям изменять каталог по умолчанию, в котором сохраняются новые проекты.
 
- Значение, указанное `Location` в элементе, удостоилось диалогового окна только в том случае, если базовая проектная система поддерживает его.
+ Значение, указанное в `Location` элементе, учитывается в диалоговом окне только в том случае, если базовая система проектов поддерживает его.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -93,5 +94,5 @@ ms.locfileid: "80702886"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

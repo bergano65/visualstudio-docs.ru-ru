@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное связывание веб-страницы с папкой Outlook
+title: Руководство. программное связывание веб-страницы с папкой Outlook
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e83f8b7f6bcdb790b5e545aa76426bc05f0735f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817313"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546150"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Практическое руководство. Программное связывание веб-страницы с папкой Outlook
-  В этом примере проверяется для папки с именем `HtmlView` в Microsoft Office Outlook. Если папка не существует, код создает папку и присваивает ему веб-страницы. Если папка существует, код отображает содержимое папки.
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Руководство. программное связывание веб-страницы с папкой Outlook
+  В этом примере проверяется наличие папки с именем `HtmlView` в Microsoft Office Outlook. Если папка не существует, код создает папку и назначает ей веб-страницу. Если папка существует, в коде отображается содержимое папки.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,5 +31,5 @@ ms.locfileid: "62817313"
 
 ## <a name="see-also"></a>См. также
 - [Работа с папками](../vsto/working-with-folders.md)
-- [Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [Как программно получить папку по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Руководство. Программное создание пользовательских элементов папки](../vsto/how-to-programmatically-create-custom-folder-items.md)

@@ -1,7 +1,7 @@
 ---
-title: Копирование данных и форматирование между листами программным способом
+title: Программное копирование данных и форматирования на листах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b90704d6d9fe555920fb042939079bd53884cfbe
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402209"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546111"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Практическое руководство. Программное копирование данных и форматирование между листами
-  Данные можно скопировать из диапазона на одном листе для всех других листов в книге с помощью <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> метод. Укажите диапазон, и нужно ли выполнять копирование данных, форматирования или оба.
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Руководство. программное копирование данных и форматирование на листах
+  Данные из диапазона на одном листе можно скопировать на все другие листы книги с помощью <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> метода. Укажите диапазон, а также сведения о том, требуется ли копировать данные, форматирование или и то, и другое.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -32,10 +32,10 @@ ms.locfileid: "66402209"
  [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]
 
 ## <a name="compile-the-code"></a>Компиляция кода
- Этот пример требует диапазона с именем `rangeData` на листе.
+ Для этого примера требуется диапазон с именем `rangeData` в листе.
 
 ## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программное добавление новых листов в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [Практическое руководство. Программное изменение форматирования в строках листа, содержащих выбранные ячейки](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
+- [Как программно добавлять новые листы в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [Руководство. Программное изменение форматирования в строках листа, содержащих выбранные ячейки](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программное определение и выделение диапазонов в документах
+title: Руководство. Программное определение и выбор диапазонов в документах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574865"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545955"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Практическое руководство. Программное определение и выделение диапазонов в документах
-  Вы можете определить диапазон в документе Microsoft Office Word с помощью объекта <xref:Microsoft.Office.Interop.Word.Range>. Можно выбрать весь документ несколькими способами, например, с помощью <xref:Microsoft.Office.Interop.Word.Range.Select%2A> метод <xref:Microsoft.Office.Interop.Word.Range> объекта, или с помощью свойства Content <xref:Microsoft.Office.Tools.Word.Document> класса (в настройке уровня документа) или <xref:Microsoft.Office.Interop.Word.Document> класса (в VSTO Add-in).
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Руководство. Программное определение и выбор диапазонов в документах
+  Вы можете определить диапазон в документе Microsoft Office Word с помощью объекта <xref:Microsoft.Office.Interop.Word.Range>. Можно выбрать весь документ несколькими способами, например с помощью <xref:Microsoft.Office.Interop.Word.Range.Select%2A> метода <xref:Microsoft.Office.Interop.Word.Range> объекта или с помощью свойства Content <xref:Microsoft.Office.Tools.Word.Document> класса (в настройке на уровне документа) или <xref:Microsoft.Office.Interop.Word.Document> класса (в надстройке VSTO)...
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "62574865"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
 
-## <a name="select-a-range-in-a-document-level-customization"></a>Выбор диапазона в настройке уровня документа
+## <a name="select-a-range-in-a-document-level-customization"></a>Выбор диапазона в настройке на уровне документа
  В следующих примерах показано, как выделить весь документ с помощью метода <xref:Microsoft.Office.Interop.Word.Range.Select%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> или с помощью свойства <xref:Microsoft.Office.Tools.Word.Document.Content%2A> класса <xref:Microsoft.Office.Tools.Word.Document>.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Выбор всего документа как диапазона с помощью метода Select
@@ -80,12 +80,12 @@ ms.locfileid: "62574865"
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2. Проверьте, есть ли по крайней мере два предложения в документе, задайте *запустить* и *окончания* аргументы из диапазона, а затем выберите диапазон.
+2. Проверьте, есть ли в документе по крайней мере два предложения, задайте *начальные* и *конечные* аргументы диапазона, а затем выберите диапазон.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
 
-## <a name="select-a-range-by-using-a-vsto-add-in"></a>Выберите диапазон с помощью надстройки VSTO
+## <a name="select-a-range-by-using-a-vsto-add-in"></a>Выбор диапазона с помощью надстройки VSTO
  В следующих примерах показано, как выделить весь документ с помощью метода <xref:Microsoft.Office.Interop.Word.Range.Select%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> или с помощью свойства <xref:Microsoft.Office.Interop.Word._Document.Content%2A> класса <xref:Microsoft.Office.Interop.Word.Document>.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Выбор всего документа как диапазона с помощью метода Select
@@ -120,16 +120,16 @@ ms.locfileid: "62574865"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2. Проверьте, есть ли по крайней мере два предложения в документе, задайте *запустить* и *окончания* аргументы из диапазона, а затем выберите диапазон.
+2. Проверьте, есть ли в документе по крайней мере два предложения, задайте *начальные* и *конечные* аргументы диапазона, а затем выберите диапазон.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
 ## <a name="see-also"></a>См. также
-- [Обзор объектной модели Word](../vsto/word-object-model-overview.md)
-- [Практическое руководство. Программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Практическое руководство. Извлечение знаков начала и завершения в диапазонах программным способом](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Практическое руководство. Программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Практическое руководство. Программно сброс диапазонов в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Практическое руководство. Программное свертывание диапазонов и выделений в документах](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [Практическое руководство. Программно exclude абзаца при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
+- [Руководство. программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Как программно получить начальные и конечные символы в диапазонах](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Руководство. программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Как программно сбрасывать диапазоны в документах Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Руководство. программное сворачивание диапазонов или выделений в документах](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [Руководство. программное исключение знаков абзаца при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

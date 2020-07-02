@@ -1,18 +1,18 @@
 ---
 title: Использование команды "Показать определение"
 ms.date: 01/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591350"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770518"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)
 

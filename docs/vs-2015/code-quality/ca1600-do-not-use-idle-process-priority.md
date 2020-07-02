@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f6233136dcf7f1db5d622a02419d33e0eedacf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669296"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545682"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: не используйте приоритет процессов в состоянии ожидания
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600. Не используйте приоритет процесса простоя
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
@@ -33,13 +33,13 @@ ms.locfileid: "72669296"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Это правило возникает, когда для процессов задано значение `ProcessPriorityClass.Idle`.
+ Это правило происходит, когда для процессов задано значение `ProcessPriorityClass.Idle` .
 
 ## <a name="rule-description"></a>Описание правила
- Не задавайте для приоритета процесса значение Idle. Процессы, имеющие `System.Diagnostics.ProcessPriorityClass.Idle`, будут занимать ЦП, когда в противном случае он будет бездействовать, и поэтому будет блокировать ждущий режим.
+ Не задавайте для приоритета процесса значение Idle. Процессы, которые `System.Diagnostics.ProcessPriorityClass.Idle` будут занимать ЦП, когда в противном случае они будут бездействовать, и, следовательно, блокируют ожидание.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Задайте для процессов `ProcessPriorityClass.BelowNormal`.
+ Задайте для параметра процессы значение `ProcessPriorityClass.BelowNormal` .
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Это правило следует подавлять только в том случае, если требуется приоритет процесса простоя, а вопросы мобильности можно игнорировать без каких-либо последствий.

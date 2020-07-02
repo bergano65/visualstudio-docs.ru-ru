@@ -25,7 +25,7 @@ ms.locfileid: "85548477"
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045. Не передавайте типы по ссылке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotPassTypesByReference|
 |CheckId|CA1045|

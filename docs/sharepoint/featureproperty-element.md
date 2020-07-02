@@ -1,5 +1,5 @@
 ---
-title: Элемент FeatureProperty | Документация Майкрософт
+title: Элемент Феатурепроперти | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967309"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546527"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty - элемент
-  Представляет настраиваемое свойство, которое входит в состав компонентом при его развертывании в SharePoint. После развертывания функции можно использовать свойство в коде.
+  Представляет пользовательское свойство, которое входит в состав компонента при его развертывании в SharePoint. После развертывания компонента можно получить доступ к свойству в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,10 +34,10 @@ ms.locfileid: "62967309"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|Атрибут|Описание:|
 |---------------|-----------------|
-|**Key**|Требуется **xs: String** атрибута.<br /><br /> Ключ, используемый для хранения и извлечения значения свойства. Каждое свойство должно иметь ключ, который является уникальным в пределах компонента.|
-|**Значение**|Требуется **xs: String** атрибута.<br /><br /> Значение свойства.|
+|**Key**|Обязательный атрибут **xs: String** .<br /><br /> Ключ, используемый для хранения и извлечения значения свойства. У каждого свойства должен быть ключ, уникальный в пределах функции.|
+|**Значение**|Обязательный атрибут **xs: String** .<br /><br /> Значение свойства.|
 
 ### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.
@@ -46,20 +46,20 @@ ms.locfileid: "62967309"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|Представляет коллекцию значений свойств, которые входят в состав компонентом при его развертывании в SharePoint.|
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|Представляет коллекцию значений свойств, включенных в компонент при развертывании в SharePoint.|
 
 ## <a name="remarks"></a>Примечания
- Дополнительные сведения о свойствах компонентов см. в разделе [сведениями развертывание пакетов и в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+ Дополнительные сведения о свойствах компонентов см. [в разделе Предоставление сведений о пакете и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|||
+|Свойство.|Значение|
 |-|-|
-|**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|
-|**Файл проверки**|ProjectItemModelSchema.xsd|
+|**Файл проверки**|Прожектитеммоделсчема. xsd|
 |**Может быть пустым**|Нет|
 
 ## <a name="see-also"></a>См. также
-- [Справочник по схеме для элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Предоставляют сведения о упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Справочник по схеме элементов проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

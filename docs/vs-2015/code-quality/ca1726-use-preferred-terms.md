@@ -14,26 +14,26 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918226"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547814"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: используйте предпочтительные термины
+# <a name="ca1726-use-preferred-terms"></a>CA1726. Используйте предпочтительные термины
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [CA1726: использование предпочтительных терминов](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при срабатывании в сборках<br /><br /> Не критическое — при срабатывании параметров типа|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Имя видимого снаружи идентификатора включает термин, для которого существует другой предпочтительный термин. Кроме того, имя включает в себя флаг или флаги.
 
 ## <a name="rule-description"></a>Описание правила
@@ -49,7 +49,7 @@ ms.locfileid: "75918226"
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` или `Flags`|Условия замены отсутствуют. Не используется.|
+|`Flag` или `Flags`|Условия замены отсутствуют. Не используйте.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|
@@ -73,4 +73,4 @@ ms.locfileid: "75918226"
  Подавлять предупреждение из этого правила, только если имя идентификатора является преднамеренным и относится непосредственно к исходному термину вместо предпочтительного.
 
 ## <a name="related-rules"></a>Связанные правила
- [Предупреждения именования](../code-quality/naming-warnings.md)
+ [Предупреждения об именовании](../code-quality/naming-warnings.md)

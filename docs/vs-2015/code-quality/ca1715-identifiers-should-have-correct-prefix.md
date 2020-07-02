@@ -15,29 +15,29 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919189"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545604"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: идентификаторы должны иметь правильные префиксы
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715. Идентификаторы должны иметь правильные префиксы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Последнюю документацию по Visual Studio см. в разделе [CA1715: идентификаторы должны иметь правильный префикс](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое — при срабатывании интерфейсов.<br /><br /> Не критическое — при возникновении параметров универсального типа.|
 
-## <a name="cause"></a>Причина:
+## <a name="cause"></a>Причина
  Имя интерфейса, видимого извне, не начинается с прописной буквы I.
 
- \- или -
+ -или-
 
  Имя параметра универсального типа для видимого извне типа или метода не начинается с прописной буквы 'T '.
 
@@ -85,4 +85,4 @@ ms.locfileid: "75919189"
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1722: идентификаторы не должны иметь неверные префиксы](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [CA1722. Идентификаторы не должны иметь неправильные префиксы](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

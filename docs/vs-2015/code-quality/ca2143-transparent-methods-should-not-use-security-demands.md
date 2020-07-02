@@ -11,17 +11,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bcfce9a80d02e525212d3f59173df4a7e8fbe968
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca8f049da83b99da7d36ebf74e756dd95f738d64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662706"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546475"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: прозрачные методы не должны использовать требования безопасности
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143. Прозрачные методы не должны использовать требования безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|транспарентмесодсшаулднотдеманд|
 |CheckId|CA2143|
@@ -29,13 +29,13 @@ ms.locfileid: "72662706"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип транпарент или метод декларативно помечается <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` спроса или метод вызывает метод <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>.
+ Тип или метод транпарент декларативно помечается <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` требованием, или метод вызывает <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> метод.
 
 ## <a name="rule-description"></a>Описание правила
  Прозрачный для системы безопасности код не должен отвечать за проверку безопасности операции и поэтому не должен требовать разрешений. Прозрачный для системы безопасности код должен использовать полные требования для принятия решений по безопасности, и критичный в плане безопасности код не должен полагаться на прозрачный код, чтобы создать полное требование. Любой код, выполняющий проверки безопасности, такие как требования безопасности, должен быть критически важным для защиты.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Как правило, чтобы устранить нарушение этого правила, пометьте метод атрибутом <xref:System.Security.SecuritySafeCriticalAttribute>. Это требование также можно удалить.
+ Как правило, чтобы устранить нарушение этого правила, пометьте метод <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом. Это требование также можно удалить.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует.
@@ -45,5 +45,5 @@ ms.locfileid: "72662706"
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2143.transparentmethodsshouldnotdemand/cs/ca2143 - transparentmethodsshouldnotdemand.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
- [CA2142: прозрачный код не должен быть защищен с помощью требований LinkDemand](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+## <a name="see-also"></a>См. также
+ [CA2142. Прозрачный код не должен быть защищен проверками LinkDemands](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

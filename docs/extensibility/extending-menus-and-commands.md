@@ -1,5 +1,5 @@
 ---
-title: Расширение меню и команд (ru) Документы Майкрософт
+title: Расширение меню и команд | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,39 +12,39 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfcedd3f1b4cb48631541f1726556dab766402ab
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711799"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768579"
 ---
-# <a name="extend-menus-and-commands"></a>Расширить меню и команды
-Команды - это способ добавления действий и процессов в Visual Studio. В большинстве случаев команды отображаются в меню или панели инструментов. Шаблон проекта VSPackage показывает, как реализовать очень основную команду. Для немного более длительной, но все еще базовой реализации [см. Создать расширение с командой меню.](../extensibility/creating-an-extension-with-a-menu-command.md)
+# <a name="extend-menus-and-commands"></a>Расширение меню и команд
+Команды — это способ добавления действий и процессов в Visual Studio. В большинстве случаев команды отображаются в меню или на панелях инструментов. Шаблон проекта VSPackage показывает, как реализовать очень простую команду. Несколько более длинную, но все еще базовую реализацию см. в разделе [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
- Для получения дополнительной информации о командах, меню и панели инструментов Visual Studio [см.](../extensibility/internals/commands-menus-and-toolbars.md)
+ Дополнительные сведения о командах, меню и панелях инструментов Visual Studio см. в разделе [команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
- Команды, меню и панели инструментов определяются в файле *.vsct,* который является частью проектов VSPackage. Вы можете найти информацию о Visual Studio IDE и *файле .vsct* в [Как VSPackages добавить элементы пользовательского интерфейса.](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ Команды, меню и панели инструментов определяются в *vsct* -файле, который является частью проектов VSPackage. Сведения о интегрированной среде разработки Visual Studio и файле *. vsct* см. в статье [Добавление элементов пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
- Ниже приведены темы, объясняющие, как добавлять различные виды команд, меню и панели инструментов.
+ В следующих разделах описывается добавление различных типов команд, меню и панелей инструментов.
 
-## <a name="in-this-section"></a>В этом разделе
-- [Добавьте меню в панель меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Объясняет, как добавить меню в верхний бар меню Visual Studio.
+## <a name="in-this-section"></a>Содержание раздела
+- [Добавление меню в строку меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Объясняет, как добавить меню в верхнюю строку меню Visual Studio.
 
-- [Привязать ярлыки клавиатуры к элементам меню](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) Объясняет, как добавить ярлык клавиатуры (например, CTRL No 3) в пункт меню.
+- [Привязка сочетаний клавиш к](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) пунктам меню Объясняет, как добавить сочетание клавиш (например, CTRL + 3) к пункту меню.
 
-- [Добавить подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md) Объясняет, как добавить подменю в верхнее меню.
+- [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md) Объясняет, как добавить подменю в верхнее меню.
 
-- [Добавьте самый последний использованный список в подменю](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md) Объясняет, как добавить список самых последних случаев.
+- [Добавление списка недавно использовавшихся в подменю](../extensibility/adding-a-most-recently-used-list-to-a-submenu.md) Объясняет, как добавить список недавно использованных.
 
-- [Создание многоразовых групп кнопок](../extensibility/creating-reusable-groups-of-buttons.md) Описывает, как группировать элементы команд, чтобы они могли быть включены в несколько меню.
+- [Создание многократно используемых групп кнопок](../extensibility/creating-reusable-groups-of-buttons.md) Описывает, как группировать элементы команд, чтобы их можно было включить в несколько меню.
 
-- [Добавление значков в команды меню](../extensibility/adding-icons-to-menu-commands.md) Описывает, как добавить значок в команду как на панели инструментов, так и в меню.
+- [Добавление значков к командам меню](../extensibility/adding-icons-to-menu-commands.md) Описывает, как добавить значок в команду на панели инструментов и в меню.
 
-- [Изменить текст команды меню](../extensibility/changing-the-text-of-a-menu-command.md) Описывает использование `TextChanges` флага для динамического изменения элемента меню.
+- [Изменение текста команды меню](../extensibility/changing-the-text-of-a-menu-command.md) Описывает использование `TextChanges` флага для динамического изменения элемента меню.
 
-- [Изменение внешнего вида команды](../extensibility/changing-the-appearance-of-a-command.md) Описывает, как динамически включить или отключить команду.
+- [Изменение внешнего вида команды](../extensibility/changing-the-appearance-of-a-command.md) Описание динамического включения или отключения команды.
 
-- [Обновление пользовательского интерфейса](../extensibility/updating-the-user-interface.md) Описывает, как заставить обновление пользовательского интерфейса отражать последние изменения.
+- [Обновление пользовательского интерфейса](../extensibility/updating-the-user-interface.md) Описывает принудительное обновление пользовательского интерфейса для отражения последних изменений.
 
-- [Локализация команд меню](../extensibility/localizing-menu-commands.md) Объясняет, как локализовать команды меню.
+- [Команды меню "локализовать](../extensibility/localizing-menu-commands.md) " Объясняет, как локализовать команды меню.

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программная защита листов
+title: Как программно защитить листы
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254586"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545903"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Практическое руководство. Программная защита листов
+# <a name="how-to-programmatically-protect-worksheets"></a>Как программно защитить листы
   Возможность защиты в Microsoft Office Excel помогает предотвратить изменение объектов на листе пользователями и кодом. По умолчанию все ячейки заблокированы после включения защиты.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -67,9 +67,9 @@ ms.locfileid: "71254586"
 
 ## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)
-- [Практическое руководство. Программное снятие защиты с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [Практическое руководство. Программная защита книг](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Практическое руководство. Программное Скрытие листов](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Как программно снять защиту с листов](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Руководство. Программная защита книг](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Как программно скрыть листы](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Ведущий элемент листа](../vsto/worksheet-host-item.md)
 - [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)

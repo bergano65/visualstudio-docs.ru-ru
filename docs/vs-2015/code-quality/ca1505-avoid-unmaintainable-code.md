@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f2f731b1ac0d87b59c7690d0cf57ade3570ed5f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607589"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547827"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505. Избегайте кода, неудобного для поддержки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|авоидунмантаинаблекоде|
 |CheckId|CA1505|
@@ -46,5 +46,5 @@ ms.locfileid: "72607589"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Исключите это предупреждение, если тип или метод по-прежнему считается обслуживаемым, несмотря на большой размер или если тип или метод не могут быть разделены.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Предупреждения о поддержке](../code-quality/maintainability-warnings.md) [, измеряющие сложность и удобство сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

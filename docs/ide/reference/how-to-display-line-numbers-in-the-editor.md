@@ -1,7 +1,7 @@
 ---
 title: Отображение номеров строк в коде
 ms.date: 03/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
 - Code Editor, line numbers
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5392ad3efaee8a3c29e58bd2b75272e4206215a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff6e0c50ab41f3d18458c736e48b0a4360b8b286
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569144"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770365"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Практическое руководство. Отображение номеров строк в редакторе
 

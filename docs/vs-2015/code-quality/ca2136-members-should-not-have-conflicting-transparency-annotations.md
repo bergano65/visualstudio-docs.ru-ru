@@ -16,17 +16,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f2fbb856ff53552ab99dabd4f650e9fd7f62a088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3a17a0db7dd4ad1c57d23104a313a78cd1289ed
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602967"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547697"
 ---
-# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: элементы не должны иметь конфликтующие пометки прозрачности
+# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136. Члены не должны иметь противоречащие заметки прозрачности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|транспаренцианнотатионсшаулднотконфликт|
 |CheckId|CA2136|
@@ -34,10 +34,10 @@ ms.locfileid: "72602967"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Это правило срабатывает, если член типа помечен атрибутом безопасности <xref:System.Security> с разной прозрачностью, чем атрибут безопасности контейнера элемента.
+ Это правило срабатывает, если член типа помечен <xref:System.Security> атрибутом безопасности с разной прозрачностью, чем атрибут безопасности контейнера элемента.
 
 ## <a name="rule-description"></a>Описание правила
- Атрибуты прозрачности применяются из элементов кода большей области к элементам меньшей области. Атрибуты прозрачности элементов кода с большей областью имеют приоритет по сравнению с атрибутами прозрачности элементов кода, которые содержатся в первом элементе. Например, класс, помеченный атрибутом <xref:System.Security.SecurityCriticalAttribute>, не может содержать метод, помеченный атрибутом <xref:System.Security.SecuritySafeCriticalAttribute>.
+ Атрибуты прозрачности применяются из элементов кода большей области к элементам меньшей области. Атрибуты прозрачности элементов кода с большей областью имеют приоритет по сравнению с атрибутами прозрачности элементов кода, которые содержатся в первом элементе. Например, класс, помеченный <xref:System.Security.SecurityCriticalAttribute> атрибутом, не может содержать метод, помеченный <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить это нарушение, удалите атрибут безопасности из элемента Code с более ранней областью или измените его атрибут так, чтобы он совпадал с содержащим элементом кода.
@@ -46,6 +46,6 @@ ms.locfileid: "72602967"
  Не отключайте вывод предупреждений из этого правила.
 
 ## <a name="example"></a>Пример
- В следующем примере метод помечен атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> и является членом класса, помеченного атрибутом <xref:System.Security.SecurityCriticalAttribute>. Безопасный атрибут безопасности следует удалить.
+ В следующем примере метод помечен <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом и является членом класса, помеченного <xref:System.Security.SecurityCriticalAttribute> атрибутом. Безопасный атрибут безопасности следует удалить.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2136.transparencyannotationsshouldnotconflict/cs/ca2136 - transparencyannotationsshouldnotconflict.cs#1)]

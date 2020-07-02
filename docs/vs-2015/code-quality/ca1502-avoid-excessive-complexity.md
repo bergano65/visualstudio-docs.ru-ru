@@ -15,17 +15,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607873"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547840"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: избегайте чрезмерной сложности
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502. Избегайте чрезмерной сложности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -50,14 +50,14 @@ ms.locfileid: "72607873"
  Чтобы устранить нарушение этого правила, выполните рефакторинг метода, чтобы уменьшить его сложностью организации циклов сложность.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Вы можете отключить предупреждение из этого правила, если сложность не может быть легко сокращена и метод прост в понимании, тестировании и обслуживании. В частности, метод, содержащий большой `switch` (`Select` в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), является кандидатом для исключения. Риск дестабилизации базы кода в конце цикла разработки или внесения непредвиденных изменений в поведение среды выполнения в ранее поставленном коде может привести к перегрузке преимуществ поддержки при рефакторинге кода.
+ Вы можете отключить предупреждение из этого правила, если сложность не может быть легко сокращена и метод прост в понимании, тестировании и обслуживании. В частности, метод, содержащий крупный `switch` `Select` оператор (in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), является кандидатом для исключения. Риск дестабилизации базы кода в конце цикла разработки или внесения непредвиденных изменений в поведение среды выполнения в ранее поставленном коде может привести к перегрузке преимуществ поддержки при рефакторинге кода.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Как вычисляется сложность сложностью организации циклов
  Сложность сложностью организации циклов вычисляется путем добавления 1 к следующему:
 
-- Число ветвей (например, `if`, `while` и `do`)
+- Количество ветвей (например,, `if` `while` и `do` )
 
-- Число инструкций `case` в `switch`
+- Количество `case` инструкций в`switch`
 
   В следующих примерах показаны методы с различной сложностью организации циклов сложностью.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72607873"
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#4)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1501: избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
+ [CA1501. Избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

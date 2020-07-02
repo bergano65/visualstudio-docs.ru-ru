@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Отображение вкладки "Разработчик" на ленте
+title: Как отобразить вкладку "Разработчик" на ленте
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,18 +13,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b6641cca4ef2288452b2f6959482b311a5b07a4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545851"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Практическое руководство. Отображение вкладки "Разработчик" на ленте
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Как отобразить вкладку "Разработчик" на ленте
   Для доступа к вкладке **разработчик** на ленте приложения Office необходимо настроить для него отображение вкладки, так как она не отображается по умолчанию. Например, необходимо отобразить эту вкладку, если требуется добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> в настройку уровня документа для Word.
 
 > [!NOTE]
-> Это руководство применимо только к приложениям Office 2010 или более поздней версии. Если вы хотите отобразить эту вкладку в системе 2007 Microsoft Office, см. следующую версию этого раздела [: Отображение вкладки "Разработчик" на ленте](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Это руководство применимо только к приложениям Office 2010 или более поздней версии. Если вы хотите отобразить эту вкладку в системе 2007 Microsoft Office, см. следующую версию этого раздела [как Показать вкладку "Разработчик" на ленте](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
@@ -42,27 +42,27 @@ ms.locfileid: "69551787"
 
      На следующем рисунке показана кнопка на вкладке **файла** и **параметры** в Office 2010.
 
-     ![Выбор файла, параметров в Outlook 2010](../vsto/media/vsto-office-file-tab.png "Выбор файла, параметров в Outlook 2010")
+     ![Выбор меню "Файл", "Параметры" в Outlook 2010](../vsto/media/vsto-office-file-tab.png "Выбор меню "Файл", "Параметры" в Outlook 2010")
 
      На следующем рисунке показана вкладка **файл** в Office 2013.
 
-     ![Вкладка "файл" в Outlook 2013](../vsto/media/vsto-office2013-filetab.png "Вкладка \"файл\" в Outlook 2013")
+     ![Вкладка "Файл" в Outlook 2013](../vsto/media/vsto-office2013-filetab.png "Вкладка "Файл" в Outlook 2013")
 
      На следующем рисунке показана кнопка **Параметры** в Office 2013.
 
-     ![Кнопка "Параметры" в предварительной версии Outlook 2013](../vsto/media/vsto-office2013-optionsbutton.png "Кнопка \"Параметры\" в предварительной версии Outlook 2013")
+     ![Кнопка "Параметры" в Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "Кнопка "Параметры" в Outlook 2013 Preview")
 
 3. В диалоговом окне**Параметры** _applicationName_нажмите кнопку **Настройка ленты** .
 
      На следующем рисунке показано диалоговое окно **Параметры** и кнопка **Настройка ленты** в Excel 2010. Расположение этой кнопки аналогично и во всех остальных приложениях, перечисленных в приведенном выше подразделе "Применимо к".
 
-     ![Кнопка настройки ленты](../vsto/media/vsto-office2010-customizeribbonbutton.png "Кнопка настройки ленты")
+     ![Кнопка "Настройка ленты"](../vsto/media/vsto-office2010-customizeribbonbutton.png "Кнопка "Настройка ленты"")
 
 4. В списке основных вкладок установите флажок **разработчик** .
 
-     На следующем рисунке показан флажок **разработчик** в Word 2010 и [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Расположение этого флажка аналогично и во всех остальных приложениях, перечисленных в приведенном выше подразделе "Применимо к".
+     На следующем рисунке показан флажок **разработчик** в Word 2010 и [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] . Расположение этого флажка аналогично и во всех остальных приложениях, перечисленных в приведенном выше подразделе "Применимо к".
 
-     ![Флажок "Разработчик" в диалоговом окне "Параметры Word"](../vsto/media/vsto-office2010-developercheckbox.png "Флажок \"Разработчик\" в диалоговом окне \"Параметры Word\"")
+     ![Флажок "Разработчик" в диалоговом окне "Параметры Word"](../vsto/media/vsto-office2010-developercheckbox.png "Флажок "Разработчик" в диалоговом окне "Параметры Word"")
 
 5. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **Параметры** .
 

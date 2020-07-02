@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Программным способом подсчета символов в документах
+title: Руководство. Программный подсчет символов в документах
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81ee7c3d798ae2c38ed80b261a6d87190daa59a2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575248"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546072"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Практическое руководство. Программным способом подсчета символов в документах
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Руководство. Программный подсчет символов в документах
   Первый знак в документ находится в позиции 0, которая представляет точку вставки. Позиция последнего знака равна общему количеству знаков в документе. Число знаков в документе можно определить с помощью свойства <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> коллекции <xref:Microsoft.Office.Interop.Word.Characters> .
 
  Учитываются все знаки в документе, включая пробелы, знаки абзацев и другие знаки, которые обычно скрыты. Даже новый пустой документ возвращает значение 1, так как он содержит знак абзаца.
@@ -40,7 +40,7 @@ ms.locfileid: "62575248"
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]
 
-## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Чтобы отобразить число знаков в надстройке VSTO
+## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Отображение числа символов в надстройке VSTO
 
 1. Выделите весь документ. В следующем примере кода выбирается активный документ.
 
@@ -53,5 +53,5 @@ ms.locfileid: "62575248"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Извлечение знаков начала и завершения в диапазонах программным способом](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Практическое руководство. Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Как программно получить начальные и конечные символы в диапазонах](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Руководство. Программное определение и выбор диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659540"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546280"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: литералы должны иметь правильное написание
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204. Литералы должны иметь правильное правописание
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Элемент|Значение|
 |-|-|
 |TypeName|литералсшаулдбеспелледкорректли|
 |CheckId|CA2204|
@@ -38,7 +38,7 @@ ms.locfileid: "72659540"
 ## <a name="rule-description"></a>Описание правила
  Это правило проверяет литеральную строку, которая передается как значение в параметр или свойство, если выполняется одно или несколько из следующих условий.
 
-- Атрибут <xref:System.ComponentModel.LocalizableAttribute> параметра или свойства имеет значение true.
+- <xref:System.ComponentModel.LocalizableAttribute>Атрибут параметра или свойства имеет значение true.
 
 - Имя параметра или свойства содержит "Text", "Message" или "Caption".
 
@@ -55,6 +55,6 @@ ms.locfileid: "72659540"
  Для этого правила отключать вывод предупреждений не следует. Правильное написание слов сокращает кривую обучения, необходимую для новых библиотек программного обеспечения.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1704: идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703: соблюдайте правильность написания строк ресурсов](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703. Строки ресурса должны иметь правильное правописание](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

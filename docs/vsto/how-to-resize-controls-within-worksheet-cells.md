@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Изменение размера элементов управления в ячейках листа
+title: Руководство. изменение размеров элементов управления в ячейках листа
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c65be450c45d7797984105723d5ae1b01a2d63
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252075"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545877"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Практическое руководство. Изменение размера элементов управления в ячейках листа
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Руководство. изменение размеров элементов управления в ячейках листа
   При изменении размера столбцов или строк на листе все элементы управления ведущего приложения в ячейках автоматически изменяются по высоте или ширине ячейки, размер которой был изменен. По умолчанию размеры элементов управления Windows Forms не изменяются автоматически.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -68,14 +68,14 @@ ms.locfileid: "71252075"
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Изменение поведения элемента управления таким образом, чтобы он не изменял размер или перемещаться вместе с ячейкой
 
-1. Вызовите свойство размещения элемента управления и задайте для <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>него значение.
+1. Вызовите свойство размещения элемента управления и задайте для него значение <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating> .
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
 
 ## <a name="see-also"></a>См. также
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
-- [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Практическое руководство. Скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Добавление Windows Forms элементов управления в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Как скрыть элементы управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Ограничения элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
