@@ -1,8 +1,8 @@
 ---
-title: ProjectItem Элемент (Visual Studio Элемент шаблоны) Документы Майкрософт
+title: Элемент ProjectItem (шаблоны элементов Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -14,20 +14,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6826440ed12e90f1ffced63dfef45bb3d86177ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701865"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770730"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Элемент ProjectItem (шаблоны элементов Visual Studio)
-Упогоняет файл, включенный в шаблон элемента.
+Указывает файл, включенный в шаблон элемента.
 
 > [!NOTE]
-> Элемент `ProjectItem` принимает различные атрибуты в зависимости от того, является ли шаблон для проекта или элемента. Эта тема `ProjectItem` объясняет элемент для элемента. Для объяснения `ProjectItem` элемента для шаблонов проекта см. [ProjectItem element (Visual Studio project templates)](../extensibility/projectitem-element-visual-studio-project-templates.md)
+> `ProjectItem`Элемент принимает различные атрибуты в зависимости от того, предназначен ли шаблон для проекта или элемента. В этом разделе описывается `ProjectItem` элемент для элемента. Описание `ProjectItem` элемента для шаблонов проектов см. в разделе [элемент ProjectItem (шаблоны проектов Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
 
- \<VSTemplate \<> TemplateContent> \<projectItem>
+ \<VSTemplate> \<TemplateContent>
+ \<ProjectItem>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,39 +50,39 @@ ms.locfileid: "80701865"
 
 | Атрибут | Описание |
 |---------------------| - |
-| `SubType` | Необязательный атрибут.<br /><br /> Обрасьте подтип элемента в шаблоне нескольких файлового элемента. Это значение используется для определения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] редактора, который будет использоваться для открытия элемента. |
-| `CustomTool` | Необязательный атрибут.<br /><br /> Устанавливает CustomTool для элемента в файле проекта. |
-| `ItemType` | Необязательный атрибут.<br /><br /> Устанавливает ItemType для элемента в файле проекта. |
-| `ReplaceParameters` | Необязательный атрибут.<br /><br /> Значение Boolean, которое определяет, имеет ли элемент значения параметров, которые должны быть заменены при создании проекта из шаблона. Значение по умолчанию: `false`. |
-| `TargetFileName` | Необязательный атрибут.<br /><br /> Упоняет имя элемента, созданного из шаблона. Этот атрибут полезен для использования замены параметров для создания имени элемента. |
+| `SubType` | Необязательный атрибут.<br /><br /> Указывает подтип элемента в многофайлового шаблона элемента. Это значение используется для определения редактора, который [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет использовать для открытия элемента. |
+| `CustomTool` | Необязательный атрибут.<br /><br /> Задает CustomTool для элемента в файле проекта. |
+| `ItemType` | Необязательный атрибут.<br /><br /> Задает значение ItemType для элемента в файле проекта. |
+| `ReplaceParameters` | Необязательный атрибут.<br /><br /> Логическое значение, указывающее, содержит ли элемент значения параметров, которые должны быть заменены при создании проекта из шаблона. Значение по умолчанию: `false`. |
+| `TargetFileName` | Необязательный атрибут.<br /><br /> Указывает имя элемента, созданного на основе шаблона. Этот атрибут полезен при использовании замены параметров для создания имени элемента. |
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Определяет содержимое шаблона.|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- A, `string` представляющий имя файла в файле *шаблона .zip.*
+ Значение типа `string` , представляющее имя файла в *ZIP* -файле шаблона.
 
 ## <a name="remarks"></a>Примечания
- `ProjectItem`является необязательным `TemplateContent`ребенком .
+ `ProjectItem`является необязательным дочерним элементом `TemplateContent` .
 
- Атрибут `TargetFileName` может быть использован для переименования файлов с параметрами. Например, если файл *MyFile.vb* существует в корневом каталоге файла *шаблона .zip,* но вы хотите, чтобы файл был назван на основе имени файла, предоставленного пользователем в диалоговом окне **Добавления нового элемента,** вы будете использовать следующий XML:
+ `TargetFileName`Атрибут может использоваться для переименования файлов с параметрами. Например, если файл *MyFile. vb* существует в корневом каталоге *ZIP* -файла шаблона, но вы хотите, чтобы имя файла основывалось на имени файла, предоставленного пользователем в диалоговом окне **Добавление нового элемента** , используйте следующий код XML:
 
 ```xml
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>
 ```
 
- Когда элемент создается из этого шаблона, имя файла будет основываться на имени пользователя, вписавшем в диалоговое окно **Добавить новый элемент.** Это полезно при создании многофайловых шаблонов элементов. Для получения дополнительной информации [см. Как: Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md) и [параметров шаблона.](../ide/template-parameters.md)
+ При создании элемента на основе этого шаблона имя файла будет основываться на имени пользователя, введенном в диалоговом окне **Добавление нового элемента** . Это полезно при создании шаблонов элементов с несколькими файлами. Дополнительные сведения см. [в разделе инструкции. создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md) и [параметров шаблона](../ide/template-parameters.md).
 
 ## <a name="example"></a>Пример
- Следующий пример иллюстрирует метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона элементов для класса.
+ В следующем примере показаны метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] класса.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -100,7 +101,7 @@ ms.locfileid: "80701865"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md)
 - [Параметры шаблона](../ide/template-parameters.md)

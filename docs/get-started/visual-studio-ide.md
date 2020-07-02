@@ -3,7 +3,7 @@ title: Общие сведения о Visual Studio
 titleSuffix: ''
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: vs-get-started
 author: TerryGLee
 f1_keywords:
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589361"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770875"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Добро пожаловать в интегрированную среду разработки Visual Studio
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте больше о Visual Studio, прочитав одну из следующих вводных статей:
 
@@ -44,7 +44,7 @@ ms.locfileid: "75589361"
 
 - [Создание первого консольного приложения на C++ в Visual Studio](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - Откройте для себя [другие возможности Visual Studio](../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

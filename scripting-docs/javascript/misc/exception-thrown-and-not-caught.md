@@ -3,7 +3,7 @@ title: Исключение вызвано и не перехвачено | До
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05a9e4f51d5daf7a9e1b1153acbbe8b76b539b72
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 44f207d2e32a7ca79ee0d5851a80261c5da9743d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572854"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814594"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Исключение возникло, но не перехвачено
-Вы включили в код оператор `throw`, но он не был заключен в блок **try** или отсутствует связанный блок **catch** для перехвата ошибки. Исключения создаются в блоке **try** с помощью инструкции **throw** и перехватываются вне блока **try** с помощью оператора **catch** .  
+Вы включили `throw` в код оператор, но он не был заключен в блок **try** , или нет связанного блока **catch** для перехвата ошибки. Исключения создаются в блоке **try** с помощью инструкции **throw** и перехватываются вне блока **try** с помощью оператора **catch** .  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
@@ -32,7 +32,7 @@ ms.locfileid: "72572854"
   
 - Если исключение создается повторно, убедитесь, что имеется другой соответствующий оператор catch.  
   
-## <a name="see-also"></a>См. также:  
+## <a name="see-also"></a>См. также  
  [Объект Error](../../javascript/reference/error-object-javascript.md)   
- [оператор throw](../../javascript/reference/throw-statement-javascript.md)   
- [Оператор try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+ [Оператор Throw](../../javascript/reference/throw-statement-javascript.md)   
+ [Попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

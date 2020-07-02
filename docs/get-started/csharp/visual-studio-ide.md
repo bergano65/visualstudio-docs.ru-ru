@@ -3,7 +3,7 @@ title: Общие сведения для разработчиков на C#
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306845"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771130"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Введение в интегрированную среду разработки Visual Studio | C\#
 
@@ -38,7 +38,7 @@ ms.locfileid: "79306845"
 
 Дополнительные сведения о других способах персонализации интегрированной среды разработки см. в разделе [Персонализация Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Узнайте больше о Visual Studio, прочитав одну из следующих вводных статей:
 
@@ -48,7 +48,7 @@ ms.locfileid: "79306845"
 > [!div class="nextstepaction"]
 > [Сведения о проектах и решениях](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - Откройте для себя [другие возможности Visual Studio](../../ide/advanced-feature-overview.md)
 - Посетите [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

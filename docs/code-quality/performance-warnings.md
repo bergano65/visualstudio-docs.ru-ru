@@ -15,24 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382670"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814932"
 ---
 # <a name="performance-warnings"></a>предупреждения производительности
 Предупреждения производительности поддерживают высокопроизводительные библиотеки и приложения.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание: |
+| Правило | Описание |
 | - | - |
 | [CA1800. Не делайте лишних приведений](../code-quality/ca1800.md) | Повторяющиеся приведения снижают производительность, особенно если приведения выполняются в компактных операторах итераций. |
 | [CA1801. Проверьте неиспользуемые параметры](../code-quality/ca1801.md) | Сигнатура метода включает параметр, не использующийся в основной части метода. |
 | [CA1802. По возможности используйте литералы](../code-quality/ca1802.md) | Поле объявлено как статическое и доступное только для чтения (Shared и ReadOnly в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) и инициализируется со значением, вычисляемым во время компиляции. Так как значение, назначенное целевому полю, вычисляемым во время компиляции, измените объявление на const (const в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) поле, чтобы значение было вычислено во время компиляции, а не во время выполнения. |
 | [CA1804. Удалите неиспользуемые локальные переменные](../code-quality/ca1804.md) | Неиспользуемые локальные переменные и ненужные присвоения увеличивают размер сборки и снижают производительность. |
+| [CA1805: не выполнять инициализацию без необходимости](../code-quality/ca1805.md) | Среда выполнения .NET инициализирует все поля ссылочных типов значениями по умолчанию перед выполнением конструктора. В большинстве случаев явное инициализация поля значением по умолчанию является избыточным, что добавляет к затратам на обслуживание и может привести к снижению производительности (например, при увеличении размера сборки). |
 | [CA1806. Не игнорируйте результаты метода](../code-quality/ca1806.md) | Новый объект создается, но не используется, или метод, создающий и возвращающий новую строку, вызывается, а новая строка никогда не используется, или метод P/Invoke модели компонента возвращает значение HRESULT или код ошибки, который никогда не используется. |
 | [CA1809. Избегайте лишних локальных переменных](../code-quality/ca1809.md) | Обычно для оптимизации производительности рекомендуется хранить значение не в памяти, а в регистре процессора. Это называется регистрацией значения.  Чтобы повысить вероятность регистрации всех локальных переменных, следует ограничить их количество 64. |
 | [CA1810. Инициализируйте статические поля ссылочных типов при объявлении](../code-quality/ca1810.md) | Если в типе объявляется явный статический конструктор, компилятор JIT добавляет проверку в каждый статический метод и конструктор экземпляров этого типа, чтобы убедиться, что статический конструктор уже вызывался ранее. Проверки статических конструкторов могут привести к снижению производительности. |
@@ -53,7 +54,7 @@ ms.locfileid: "85382670"
 | [CA1827: Не используйте Count/LongCount, если можно использовать Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>метод или был использован, когда <xref:System.Linq.Enumerable.Any%2A> метод был бы более эффективным. |
 | [CA1828: Не используйте CountAsync/LongCountAsync, если можно использовать AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>метод или был использован, когда <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> метод был бы более эффективным. |
 | [CA1829: Используйте свойство Length/Count вместо метода Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное `Length` или `Count` свойство. |
-| [CA1830: предпочитать строго типизированные перегрузки методов Append и INSERT в StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>и <xref:System.Text.StringBuilder.Insert%2A> предоставляют перегрузки для нескольких типов, кроме System. String.  По возможности рекомендуется использовать строго типизированные перегрузки с использованием ToString () и перегрузки на основе строк. |
+| [CA1830: предпочитать строго типизированные перегрузки методов Append и Insert в StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>и <xref:System.Text.StringBuilder.Insert%2A> предоставляют перегрузки для нескольких типов, кроме System. String.  По возможности рекомендуется использовать строго типизированные перегрузки с использованием ToString () и перегрузки на основе строк. |
 | [CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки](../code-quality/ca1831.md) | При использовании в строке индексатора Range и неявного присваивания значения Реадонлиспан &lt; &gt; типу Char метод <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части строки. |
 | [CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory](../code-quality/ca1832.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
 | [CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory](../code-quality/ca1833.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.Span%601> <xref:System.Memory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |

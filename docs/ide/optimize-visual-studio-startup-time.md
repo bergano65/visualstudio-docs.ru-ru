@@ -1,7 +1,7 @@
 ---
 title: Оптимизация времени запуска
 ms.date: 11/15/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306839"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770969"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Оптимизация времени запуска Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "79306839"
 
 В этом диалоговом окне перечислены расширения и окна инструментов, которые влияют на производительность при запуске. Вы можете изменить параметры расширения и окна инструментов, чтобы повысить производительность при запуске.
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Изменение параметров расширения для ускорения запуска, загрузки решений и ввода данных
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Изменение параметров расширения для ускорения запуска, загрузки решений и ввода данных
 
 1. Откройте диалоговое окно **Управление производительностью Visual Studio**, выбрав элементы **Справка** > **Управление производительностью Visual Studio** в строке меню.
 
@@ -47,7 +47,7 @@ ms.locfileid: "79306839"
 
 Чтобы в любой момент повторно включить расширение для будущих сеансов, воспользуйтесь **диспетчером расширений** или диалоговым окном **Управление производительностью Visual Studio**.
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Изменение параметров окна инструментов для ускорения запуска
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Изменение параметров окна инструментов для ускорения запуска
 
 1. Откройте диалоговое окно **Управление производительностью Visual Studio**, выбрав элементы **Справка** > **Управление производительностью Visual Studio** в строке меню.
 
