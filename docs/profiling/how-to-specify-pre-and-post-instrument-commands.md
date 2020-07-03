@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования | Документы Майкрософт
+title: Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778717"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328993"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования
 
@@ -30,7 +30,7 @@ ms.locfileid: "74778717"
 
 Рабочий каталог, в котором выполняются команды, зависит от операционной системы, в которой выполняется [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], и целевой платформы профилируемого приложения.
 
-Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+Сведения о пути к средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Указание команд, предшествующих инструментированию
 
@@ -70,6 +70,6 @@ ms.locfileid: "74778717"
 
      Чтобы запретить выполнение команды, не удаляя ее, установите флажок **Исключить из инструментирования**. Для изменения параметров компилятора или компоновщика используйте страницы свойств проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

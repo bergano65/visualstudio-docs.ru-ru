@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документы Майкрософт
+title: Практическое руководство. Приостановка и возобновление сбора данных о производительности | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778795"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331465"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Практическое руководство. Приостановка и возобновление сбора данных о производительности
 Окно страницы сеанса профилирования позволяет интерактивно управлять процессом сбора данных профилирования.
@@ -38,6 +38,6 @@ ms.locfileid: "74778795"
 
   - Выберите **Остановить профилирование** для завершения сеанса профилирования и создания отчетов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Управление сбором данных](../profiling/controlling-data-collection.md)
-- [Практическое руководство. Начало и окончания сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Практическое руководство. Начало и окончание сбора данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)

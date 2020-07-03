@@ -1,7 +1,7 @@
 ---
-title: 'Ошибка: Рабочий процесс веб-сайта был завершен службами IIS | Документация Майкрософт'
+title: 'Ошибка: рабочий процесс веб-сайта был завершен службами IIS | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736352"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460004"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Ошибка: Рабочий процесс веб-узла был завершен службами IIS
 Отладчик остановил выполнение кода на веб–узле. Службы ISS при этом полагают, что рабочий процесс перестал отвечать. Поэтому службы IIS прекратили выполнение рабочего процесса.
@@ -38,9 +38,9 @@ ms.locfileid: "72736352"
 
     Открывается диспетчер IIS.
 
-3. При необходимости разверните узел \<имя компьютера> в области **Подключения**.
+3. При необходимости разверните узел \<computer name> области **Подключения**.
 
-4. В узле \<имя компьютера> щелкните **Пулы приложений**.
+4. В узле \<computer name> щелкните **Пулы приложений**.
 
 5. В списке **Пулы приложений** щелкните правой кнопкой мыши имя пула, в котором работает приложение, и нажмите кнопку **Дополнительные параметры**.
 

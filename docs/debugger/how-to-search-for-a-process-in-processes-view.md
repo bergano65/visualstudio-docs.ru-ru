@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Поиск процесса в представлении процессов | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6b57226b14963759bb4d78afff3beb5559a63e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798975"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349293"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. поиск процесса в представлении процессов
 Вы можете найти конкретный процесс в представлении процессов, используя идентификатор процесса или строку модуля в качестве условия поиска. Вы также можете указать начальное направление поиска. Поля в диалоговом окне будут содержать атрибуты процесса, выбранного в дереве процессов.

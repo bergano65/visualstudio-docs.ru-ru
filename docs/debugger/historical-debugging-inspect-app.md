@@ -1,19 +1,19 @@
 ---
 title: Проверка приложения с помощью исторической отладки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848213"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350450"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Проверка приложения с помощью исторической отладки IntelliTrace в Visual Studio (C#, Visual Basic, C++)
 
@@ -69,7 +69,7 @@ private static int AddInt(int add)
 
     Теперь окно кода выглядит следующим образом.
 
-    ![Окно кода в режиме исторической отладки](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
+    ![окно кода в режиме отладки с ведением журнала](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
 6. Теперь можно выполнить шаг с заходом в метод `AddAll()` (**F11** или нажмите кнопку **Шаг с заходом** в области навигации). Выполните шаг вперед (**F10** или нажмите кнопку **Перейти к следующему вызову** в области навигации). Теперь розовая строка находится на строке `j = AddInt(j);`. Нажатие клавиши **F10** в этом случае выполняет переход к следующей строке кода. Вместо этого осуществляется вызов следующей функции. Отладка с ведением журнала переходит от вызова к вызову и пропускает строки кода, которые не включают вызов функции.
 

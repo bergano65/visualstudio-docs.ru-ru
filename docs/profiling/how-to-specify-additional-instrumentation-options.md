@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Указание дополнительных параметров инструментирования | Документы Майкрософт
+title: Практическое руководство. Указание дополнительных параметров инструментирования | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.advanced
 helpviewer_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8390c4aab0624aa59f62397e0b41bcbcc1c80cdd
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778704"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331980"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Практическое руководство. Определение дополнительных параметров инструментирования
+# <a name="how-to-specify-additional-instrumentation-options"></a>Практическое руководство. Указание дополнительных параметров инструментирования
 
 Инструментирование двоичных файлов можно выполнять в интегрированной среде разработки Visual Studio или с помощью средств командной строки. Если инструментирование двоичных файлов выполняется в интегрированной среде разработки, вы можете управлять объемом данных, собираемых во время инструментирование, указав дополнительные параметры инструментирования для программы [VSInstr](../profiling/vsinstr.md). Эти параметры доступны в сеансе или целевом уровне. Например, для включения или исключения конкретных функций во время процесса инструментирования используется дополнительный параметр инструментирования на целевом уровне.
 
@@ -40,7 +40,7 @@ ms.locfileid: "74778704"
 
 4. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

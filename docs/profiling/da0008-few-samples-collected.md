@@ -1,7 +1,7 @@
 ---
-title: DA0008. Собрано мало выборок | Документы Майкрософт
+title: 'DA0008: собрано мало выборок | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
@@ -14,24 +14,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5dd1114f4be0ed943c9a582c04d9917b03ca75c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779445"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520787"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008. Собрано несколько образцов
+# <a name="da0008-few-samples-collected"></a>DA0008. Собрано мало выборок
 
-|||
+|Элемент|Значение|
 |-|-|
 |Идентификатор правила|DA0008|
 |Категория|Использование средств профилирования|
-|Способ профилирования|Выборка|
+|Способ профилирования|Дискретизация|
 |Сообщение|Собрано небольшое число выборок. Для получения значительных результатов рекомендуется использовать более высокую частоту выборки или более долгий запуск.|
 |Тип правила|Сведения|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  В сеансе профилирования было собрано небольшое число выборок.
 
 ## <a name="rule-description"></a>Описание правила

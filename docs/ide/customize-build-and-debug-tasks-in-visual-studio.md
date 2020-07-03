@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542689"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533723"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Настройка задач сборки и отладки для режима разработки "Открытая папка"
 
@@ -201,7 +201,7 @@ bin:
 
 Вы можете создать задачи для любого файла или папки, указав их имена в поле `appliesTo`, например так: `"appliesTo": "hello.js"`. В качестве значения можно использовать следующие маски файлов:
 
-|||
+|Маска файла|Описание|
 |-|-|
 |`"*"`| Задача доступна для всех файлов и папок в рабочей области.|
 |`"*/"`| Задача доступна для всех папок в рабочей области.|
@@ -213,7 +213,7 @@ bin:
 
 #### <a name="macros-for-tasksvsjson"></a>Макросы для tasks.vs.json
 
-|||
+|Макрос|Описание|
 |-|-|
 |`${env.<VARIABLE>}`| Обозначает любую переменную среды (например, ${env.PATH}, ${env.COMSPEC} и т. д), которая определена для командной строки разработчика. Дополнительные сведения см. в статье [Командная строка разработчика для Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
 |`${workspaceRoot}`| Полный путь к папке рабочей области (например, *C:\sources\hello*).|
@@ -309,7 +309,7 @@ Visual Studio считывает часть параметров из файла
 
 Параметры из файла *.gitignore* применяются к родительскому каталогу файла и всем его подкаталогам.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Разработка кода без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)

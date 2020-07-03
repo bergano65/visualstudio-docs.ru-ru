@@ -1,7 +1,7 @@
 ---
-title: Командная строка Profiler. Инструментирование статического приложения ASP.NET и получение данных об использовании памяти
+title: Командная строка профилировщика — инструментирование статического приложения ASP.NET и получение данных об использовании памяти
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98fac9f01219cd398f1d5ec462e3f5165f4638d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775435"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327924"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование статически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика
 В этом разделе описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью инструментирования предварительно скомпилированного веб-компонента или веб-сайта [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и сбора данных по выделению памяти .NET, времени существования объектов и подробных сведений об использовании времени.
@@ -56,9 +56,9 @@ ms.locfileid: "74775435"
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - Параметр [/start](../profiling/start.md)**:trace** инициализирует профилировщик.
+   - Параметр [/start](../profiling/start.md) **:trace** инициализирует профилировщик.
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start:trace** можно использовать любой из следующих параметров.
 
@@ -67,7 +67,7 @@ ms.locfileid: "74775435"
 
    | Параметр | Описание |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Задает необязательный домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, который выполнил вход в систему. Имя указывается в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Задает необязательный домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, который выполнил вход в систему. Имя указывается в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
    | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах. Этот параметр является обязательным, если приложение выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке **Процессы** диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс. |
@@ -85,9 +85,9 @@ ms.locfileid: "74775435"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает (**/threadon**) или останавливает (**/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает ( **/threadon**) или останавливает ( **/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
  Для завершения сеанса профилирования закройте веб-приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], а затем воспользуйтесь командой **IISReset** служб IIS, чтобы закрыть рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Чтобы завершить работу профилировщика и закрыть файл данных профилирования, вызовите команду **VSPerfCmd** [/shutdown](../profiling/shutdown.md). Команда **VSPerfClrEnv /globaloff** удаляет переменные среды, используемые для профилирования. Для вступления в силу новых параметров среды необходимо перезагрузить компьютер.

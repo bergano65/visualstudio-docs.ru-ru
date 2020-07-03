@@ -1,7 +1,7 @@
 ---
-title: 'DA0030: сбор измерений взаимодействия уровней для проектов баз данных | Документы Майкрософт'
+title: 'DA0030: сбор измерений взаимодействия уровней для проектов баз данных | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0030
 - vs.performance.rules.DA0030
@@ -13,24 +13,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 47ac30d4a1df36e72b8b12fa9aefb1b36aed6204
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777480"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544603"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: сбор измерений взаимодействия уровней для проектов баз данных
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030. Сбор измерений взаимодействия уровней для проектов баз данных
 
-|||
+|Элемент|Значение|
 |-|-|
 |Идентификатор правила|DA0030|
 |Категория|Использование средств профилирования|
-|Способ профилирования|Выборка|
+|Способ профилирования|Дискретизация|
 |Сообщение|Собрав показания измерений взаимодействия многоуровневых приложений, можно выявить шаблоны использования баз данных и задержки в доступе к ключевым данным. Попробуйте еще раз выполнить профилирование приложения, включив параметр профилирования взаимодействия уровней.|
 |Тип правила|Сведения|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Вызовы методов <xref:System.Data> составляют значительную часть данных профилирования, и данные по взаимодействию уровней в сеансе профилирования не были собраны. Рекомендуется повторить профилирование и добавить данные об уровневом взаимодействии.
 
 ## <a name="rule-description"></a>Описание правила

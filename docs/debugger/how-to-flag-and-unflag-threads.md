@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Установка и снятие отметки для потоков | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733238"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349631"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Практическое руководство. Установка и снятие отметки для потока (C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "72733238"
 ### <a name="to-flag-or-unflag-a-thread"></a>Пометка и снятие пометки потока
 
 - В окне **Потоки** или **Контроль параллельных данных** перейдите к нужному потоку и щелкните значок флага, чтобы выделить или снять этот флаг.
-- В окне **Параллельные стеки** щелкните правой кнопкой мыши на поток или группу потоков и выберите пункт **Установка отметки / \<поток>** или **Снятие отметки / \<поток>** .
+- В окне **Параллельные стеки** щелкните правой кнопкой мыши на поток или группу потоков и выберите пункт **Установка отметки / \<thread>** или **Снятие отметки / \<thread>** .
 
 ### <a name="to-unflag-all-threads"></a>Сброс флагов у всех потоков
 

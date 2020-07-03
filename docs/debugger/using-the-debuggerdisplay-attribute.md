@@ -1,7 +1,7 @@
 ---
 title: Отображение настраиваемых сведений с помощью DebuggerDisplay | Документация Майкрософт
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728677"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418786"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Информирование отладчика о том, что отображать, с помощью атрибута DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
@@ -27,10 +27,10 @@ ms.locfileid: "72728677"
 
 Если класс содержит переопределенный метод `ToString()` , отладчик использует этот метод вместо значения по умолчанию `{<typeName>}`. Таким образом, если имеется переопределенный метод `ToString()` , отладчик использует его вместо значения по умолчанию`{<typeName>}`и нет необходимости использовать `DebuggerDisplay`. Если используется и то и другое, то атрибут `DebuggerDisplay` будет иметь более высокий приоритет по отношению к переопределенному методу `ToString()`. Кроме того, атрибут `DebuggerDisplay` будет иметь более высокий приоритет по отношению к переопределенному методу `ToString()` в подклассе.
 
-Будет ли отладчик выполнять неявный вызов метода `ToString()` , зависит от заданных пользователем параметров в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** . В Visual Basic неявный вызов метода `ToString()` не производится.
+Будет ли отладчик выполнять неявный вызов метода `ToString()`, зависит от заданных пользователем параметров в диалоговом окне **"Сервис" > "Параметры" > "Отладка"** .
 
 > [!IMPORTANT]
-> Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.
+> Если в диалоговом окне **"Сервис" > "Параметры" > "Отладка"** установлен флажок **Показывать базовую структуру объектов в окнах переменных**, то атрибут `DebuggerDisplay` игнорируется.
 
 > [!NOTE]
 > При использовании нативного кода этот атрибут поддерживается только в коде C++/CLI.

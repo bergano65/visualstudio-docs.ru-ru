@@ -1,7 +1,7 @@
-﻿---
+---
 title: Устранение ошибок установки или обновления
 description: Иногда возникают проблемы. Если происходит сбой установки или обновления Visual Studio, эта страница может помочь решить проблему.
-ms.date: 03/23/2020
+ms.date: 06/24/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
-ms.translationtype: HT 
+ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233111"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350814"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio
 
@@ -47,11 +47,15 @@ ms.locfileid: "80233111"
 
 ::: moniker-end
 
-### <a name="step-2---check-with-the-developer-community"></a>Шаг 2. Обратитесь к сообществу разработчиков
+### <a name="step-2---try-repairing-visual-studio"></a>Шаг 2. Попробуйте восстановить Visual Studio
+
+Процедура восстановления способна устранить многие распространенные проблемы с обновлением. Дополнительные сведения о том, когда и как использовать функцию восстановления в Visual Studio, см. в разделе [Восстановление Visual Studio](repair-visual-studio.md).
+
+### <a name="step-3---check-with-the-developer-community"></a>Шаг 3. Обратитесь к сообществу разработчиков
 
 Попробуйте найти полученное сообщение об ошибке в [сообществе разработчиков Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). Возможно, другие члены сообщества уже описали решение для вашей проблемы.
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением
+### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Шаг 4. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением
 
 Начальный загрузчик Visual Studio Installer представляет собой минимально необходимый исполняемый файл небольшого размера, который устанавливает остальные компоненты Visual Studio Installer. Если вы удалите файлы Visual Studio Installer и повторно запустите начальный загрузчик, это может решить некоторые проблемы, связанные с обновлением.
 
@@ -76,7 +80,7 @@ ms.locfileid: "80233111"
 
 ::: moniker-end
 
-### <a name="step-4---report-a-problem"></a>Шаг 4. Сообщите о проблеме
+### <a name="step-5---report-a-problem"></a>Шаг 5. Сообщите о проблеме
 
 В некоторых случаях, например при повреждении файлов, требуется частный подход. Чтобы нам было проще помочь вам, выполните следующее:
 
@@ -100,15 +104,15 @@ ms.locfileid: "80233111"
 
 ::: moniker-end
 
-### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Шаг 5. Выполнение программы InstallCleanup.exe для удаления файлов установки
+### <a name="step-6---run-installcleanupexe-to-remove-installation-files"></a>Шаг 6. Запустите программу InstallCleanup.exe для удаления файлов установки
 
 В качестве последнего средства можно [удалить Visual Studio](remove-visual-studio.md), чтобы удалить все файлы установки и сведения о продукте.
 
 1. Следуйте инструкциям в разделе [Удаление Visual Studio](remove-visual-studio.md).
-2. Повторно запустите начальный загрузчик, описанный в разделе [Шаг 3. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Повторно запустите загрузчик, описанный в разделе [Шаг 4. Удалите каталог Visual Studio Installer, чтобы устранить проблемы, связанные с обновлением](#step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Снова попробуйте установить или обновить Visual Studio.
 
-### <a name="step-6---contact-us-optional"></a>Шаг 6. Связь с нами (необязательно)
+### <a name="step-7---contact-us-optional"></a>Шаг 7. Свяжитесь с нами (необязательно)
 
 Если вы выполнили все вышеуказанные шаги, но вам так и не удалось установить или обновить Visual Studio, свяжитесь с нами через [**чат в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous) (только на английском языке) для получения дополнительной помощи.
 
@@ -145,8 +149,8 @@ ms.locfileid: "80233111"
 
 ## <a name="see-also"></a>См. также
 
+* [Восстановление Visual Studio](repair-visual-studio.md)
 * [Удаление Visual Studio](remove-visual-studio.md)
 * [Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
-   

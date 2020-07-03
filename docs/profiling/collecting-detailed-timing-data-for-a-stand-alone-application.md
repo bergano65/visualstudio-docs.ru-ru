@@ -1,7 +1,7 @@
 ---
-title: Командная строка Profiler. Сведения о времени для автономного приложения
+title: Командная строка профилировщика — сведения о времени для автономного приложения
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools,instrumentation method
 - instrumentation profiling method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779614"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331835"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры для сбора подробных данных о производительности клиентского (автономного) компонента с использованием метода инструментирования в командной строке.

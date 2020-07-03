@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: сбой отладки из-за отключенной встроенной проверки подлинности Windows | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911549"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460842"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Ошибка: сбой отладки из-за того, что отключена встроенная проверка подлинности Windows
 Проверка подлинности пользователя, запросившего отладку, была прервана ошибкой проверки подлинности. Это может произойти при попытке выполнить пошаговую отладку веб-приложения или веб-службы XML. Одна из причин этой ошибки в том, что встроенная проверка подлинности Windows не включена. Чтобы включить ее, следуйте шагам в разделе "Включение встроенной проверки подлинности Windows".

@@ -2,7 +2,7 @@
 title: Практическое руководство. Включение и выключение режима "Изменить и продолжить" | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 2c8486bdcd7bc737d3851eabd88734df4efd80b7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1907a67412a787148da7a6679e173383e2bb7423
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430534"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349670"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Практическое руководство. Включение и выключение режима "Изменить и продолжить" (C#, VB, C++)
 

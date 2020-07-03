@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Поиск потока в представлении потоков | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4014ca9eb99dce383b9de34e26794555b9fbef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e97d381fd0b1f6340035eec129e7304a8e73b03d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798517"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349267"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. поиск потока в представлении потоков
 Вы можете найти конкретный поток в представлении потоков, используя идентификатор потока или строку модуля в качестве условия поиска. Вы также можете указать начальное направление поиска. Поля в диалоговом окне будут содержать атрибуты потока, выбранного в дереве потока.

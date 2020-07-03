@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Просмотр документов скриптов | Документация Майкрософт
+title: Практическое руководство. Просмотр документов скриптов | Документация Майкрософт
 ms.date: 11/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714443"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348448"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Практическое руководство. Просмотр документов скриптов (JavaScript)
 
@@ -33,7 +33,7 @@ ms.locfileid: "73714443"
 
 ### <a name="to-view-a-server-side-script-document"></a>Просмотр документа серверного скрипта
 
-1. В окне **Обозреватель решений** откройте узел **\<Путь к веб-сайту>** .
+1. В **обозревателе решений** откройте узел **\<Website Pathname>** .
 
 2. Дважды щелкните имя файла скрипта, который нужно просмотреть.
 

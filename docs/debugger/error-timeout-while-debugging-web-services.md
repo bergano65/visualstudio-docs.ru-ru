@@ -1,7 +1,7 @@
 ---
 title: 'Ошибка: истекло время ожидания при отладке веб-служб | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aba4fef3e1c787651eb961f80b3507090f250a2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: efb77689c33d263723f146f9b2484748505406b6
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736887"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460277"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Ошибка: время ожидания при отладке веб-служб
 При выполнении шага с заходом в веб-службу XML из вызывающего кода в некоторых случаях может быть превышено время ожидания вызова, что не позволит продолжить отладку. Может отобразиться сообщение наподобие того, что приведено ниже.

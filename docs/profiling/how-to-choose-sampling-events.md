@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Выбор событий выборки | Документы Майкрософт
+title: Практическое руководство. Выбор событий выборки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779055"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329287"
 ---
 # <a name="how-to-choose-sampling-events"></a>Практическое руководство. Выбор событий выборки
 По умолчанию средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] собирают данные о производительности с интервалом, заданным как число циклов процессора, используемых профилируемым процессом. По умолчанию число циклов в одном интервале — 10 000 000, что приблизительно соответствует 0,01 секунды для процессора 1 ГГц. Вы можете изменить число циклов в интервале и событие выборки. Доступны следующие события выборки:
@@ -59,7 +59,7 @@ ms.locfileid: "74779055"
 
 5. При выборе события выборки значение интервала выборки по умолчанию отображается в текстовом поле **Интервал выборки**. При необходимости можно ввести нужное значение в этом текстовом поле.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 - [Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)
 - [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)

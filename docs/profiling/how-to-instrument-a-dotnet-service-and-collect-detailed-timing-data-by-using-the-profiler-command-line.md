@@ -1,19 +1,19 @@
 ---
-title: Командная строка Profiler. Инструментирование службы .NET, получение данных о времени
+title: Командная строка профилировщика — инструментирование службы .NET, получение данных о времени
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: af801d2b30c48deb1a88800f67ff4d3efef412b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778899"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331477"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование службы .NET и сбор подробных данных об использовании времени с помощью командной строки профилировщика
 
@@ -52,9 +52,9 @@ ms.locfileid: "74778899"
 
      **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - Параметр [/start](../profiling/start.md)**:trace** инициализирует профилировщик.
+   - Параметр [/start](../profiling/start.md) **:trace** инициализирует профилировщик.
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (*VSP*-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (*VSP*-файла).
 
      С параметром **/start:trace** можно использовать любой из следующих параметров.
 
@@ -63,9 +63,9 @@ ms.locfileid: "74778899"
 
      | Параметр | Описание |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
+     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
      | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах. Этот параметр является обязательным, если приложение выполняется в другом сеансе. Идентификатор сеанса указан в столбце **Идентификатор сеанса** на вкладке **Процессы** диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
-     | [/waitstart](../profiling/waitstart.md)[**:**`Interval`] | Задает интервал ожидания инициализации профилировщика до возвращения ошибки (в секундах). Если значение `Interval` не указано, профилировщик ожидает в течение неограниченного срока. По умолчанию параметр **/start** возвращает ошибку немедленно. |
+     | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | Задает интервал ожидания инициализации профилировщика до возвращения ошибки (в секундах). Если значение `Interval` не указано, профилировщик ожидает в течение неограниченного срока. По умолчанию параметр **/start** возвращает ошибку немедленно. |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | Для запуска профилировщика с приостановкой сбора данных добавьте параметр **/globaloff** в командную строку **/start**. Используйте параметр **/globalon** для возобновления профилирования. |
      | [/counter](../profiling/counter.md) **:** `Config` | Собирает данные из счетчика производительности процессора, указанного в файле конфигурации. Сведения счетчика добавляются в данные, собранные для каждого события профилирования. |
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
@@ -82,9 +82,9 @@ ms.locfileid: "74778899"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает (**/threadon**) или останавливает (**/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает ( **/threadon**) или останавливает ( **/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
 

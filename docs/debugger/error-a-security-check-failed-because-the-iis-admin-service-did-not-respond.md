@@ -1,7 +1,7 @@
 ---
-title: 'Ошибка: проверка безопасности не прошла, так как не был получен ответ от службы администрирования IIS | Документация Майкрософт'
+title: 'Ошибка: проверка безопасности не пройдена, так как не был получен ответ от службы администрирования IIS | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f668de3d7c7e9a8bd075beb972199cf849feea65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b9620edf10d2d3cab8da8231e561fc77d7e6af5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737876"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460882"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Ошибка: проверка безопасности не прошла, так как не был получен ответ от службы администрирования IIS
 Эта ошибка возникает, если не отвечает служба IIS Admin. Обычно это означает, что при установке IIS произошла ошибка. Сначала проверьте, что служба выполняется с помощью инструмента **Службы** в окне **Администрирование**.

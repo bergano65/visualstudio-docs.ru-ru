@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Проверка параметров свойства IIS | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846432"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348474"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Практическое руководство. проверку параметров свойства IIS
 

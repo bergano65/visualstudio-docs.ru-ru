@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Выборка данных на уровне строк | Документы Майкрософт
+title: Практическое руководство. Выборка данных на уровне строк | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776362"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330900"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
 Выборка на уровне строк — это возможность профилировщика определить, где в коде функции, потребляющей большой объем ресурсов процессора (например, функции с высокой частотой исключающих выборок), тратится самый большой объем времени процессора.
@@ -52,10 +52,10 @@ ms.locfileid: "74776362"
 
 - Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.
 
-     — или —
+     Или...
 
-- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>** .
+- При запуске приложения введите команду **VSPerfCmd /lineoff \<other arguments>** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 - [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)

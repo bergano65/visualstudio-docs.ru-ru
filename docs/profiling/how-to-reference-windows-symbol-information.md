@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Справочная информация о символах Windows | Документы Майкрософт
+title: Практическое руководство. Справочная информация о символах Windows | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774917"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328832"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Практическое руководство. Справочная информация о символах Windows
 Файлы символов (*PDB*) средств профилирования Visual Studio используются для разрешения символьных имен, например имен функций в двоичных файлах программ. Вы можете выполнить следующие действия, чтобы автоматически скачать и изменить правильные *PDB*-файлы для версии Windows на локальном компьютере.
@@ -33,7 +33,7 @@ ms.locfileid: "74774917"
 
 1. Создайте папку для хранения файла сведений о символах, например C:\SymbolCache.
 
-2. В меню **Сервис** выберите команду **Параметры**.
+2. В меню **Сервис** выберите пункт **Параметры**.
 
      Откроется диалоговое окно **Параметры** .
 
@@ -47,6 +47,6 @@ ms.locfileid: "74774917"
 
      Можно также нажать кнопку с многоточием ( **...** ) и выбрать каталог в диалоговом окне **Выбрать папку**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 - [Практическое руководство. Сериализация сведений о символах](../profiling/how-to-serialize-symbol-information.md)

@@ -1,7 +1,7 @@
 ---
 title: Отладка приложений UWP на удаленных компьютерах | Документация Майкрософт
 ms.date: 10/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902896"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348123"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Отладка приложений UWP на удаленных компьютерах из Visual Studio
 
@@ -71,7 +71,7 @@ Visual Studio можно использовать для запуска, отл
 
 В диалоговом окне **Удаленные подключения** можно выполнить поиск по имени или IP-адресу удаленного компьютера или воспользоваться функцией автоматического обнаружения подключений, щелкнув значок обновления с закругленной стрелкой. В этом диалоговом окне выполняется поиск только тех устройств в локальной подсети, на которых в этот момент запущен удаленный отладчик. Не все устройства можно обнаружить в диалоговом окне **Удаленные подключения**.
 
- ![Диалоговое окно "Удаленные подключения"](../debugger/media/vsrun_selectremotedebuggerdlg.png "Диалоговое окно \"Удаленные подключения\"")
+ ![Диалоговое окно "Удаленное подключение"](../debugger/media/vsrun_selectremotedebuggerdlg.png "Диалоговое окно "Удаленные подключения"")
 
 >[!TIP]
 >Если не удается подключиться к удаленному устройству по имени, попробуйте использовать его IP-адрес. Чтобы определить IP-адрес, на удаленном устройстве введите в окне командной строки **ipconfig**. IP-адрес выглядит как **IPv4-адрес** .

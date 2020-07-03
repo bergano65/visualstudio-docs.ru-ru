@@ -1,9 +1,9 @@
 ---
-title: 'Ошибка: Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.'
+title: 'Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.server_machine_no_default
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916265"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460615"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Ошибка: Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.
 Это сообщение об ошибке означает, что Visual Studio не удалось найти подходящий экземпляр монитора удаленной отладки Visual Studio на удаленном компьютере. Без монитора удаленной отладки Visual Studio удаленная отладка невозможна. Сведения о скачивании и настройке удаленного отладчика см. в статье [Удаленная отладка](../debugger/remote-debugging.md).
@@ -51,7 +51,7 @@ ms.locfileid: "75916265"
 
 - Вы можете остановить работу удаленного отладчика и перезапустить его с учетной записью, используемой на локальном компьютере.
 
-- Удаленный отладчик можно запустить из командной строки с параметром **/allow \<имя_пользователя>** параметр: `msvsmon /allow <username@computer>`
+- Удаленный отладчик можно запустить из командной строки с параметром **/allow \<username>** параметр: `msvsmon /allow <username@computer>`.
 
 - Добавить пользователя в список разрешений удаленного отладчика можно, выбрав пункт **Сервис > Разрешения**.
 
@@ -70,9 +70,9 @@ ms.locfileid: "75916265"
  Попробуйте выполнить удаленную отладку в другое время или перепланировать работу в сети на другое время.
 
 ## <a name="more-help"></a>Дополнительная справка
- Чтобы получить дополнительную справку по удаленному отладчику, включая сведения о параметрах командной строки, выберите элементы **Справка > Использование** в окне удаленного отладчика. Если окно удаленного отладчика закрыто, можно просмотреть веб-страницу, скопировав следующую строку и вставив ее в **окне проводника**. (Обязательно замените \<каталог_установки_Visual_Studio> расположением каталога установки Visual Studio.)
+ Чтобы получить дополнительную справку по удаленному отладчику, включая сведения о параметрах командной строки, выберите элементы **Справка > Использование** в окне удаленного отладчика. Если окно удаленного отладчика закрыто, можно просмотреть веб-страницу, скопировав следующую строку и вставив ее в **окне проводника**. (Обязательно замените \<Visual Studio installation directory> расположением каталога установки Visual Studio.)
 
- res:// *\<каталог_установки_Visual_Studio>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 
 ## <a name="see-also"></a>См. также
 - [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

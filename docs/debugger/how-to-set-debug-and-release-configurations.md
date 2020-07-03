@@ -1,7 +1,7 @@
 ---
 title: Настройка конфигураций отладки и выпуска | Документация Майкрософт
 ms.date: 10/05/2018
-ms.topic: reference
+ms.topic: how-to
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925481"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349163"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Настройка конфигураций отладки и выпуска в Visual Studio
 
@@ -60,7 +60,7 @@ or
 
 * На панели инструментов выберите либо **Отладка**, либо **Выпуск** из списка **Конфигурации решения**.
 
-  ![конфигурация сборки панели инструментов](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![конфигурация сборки панелей инструментов](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
 ## <a name="generate-symbol-pdb-files-for-a-build-c-c-visual-basic-f"></a><a name="BKMK_symbols_release"></a>Создание файлов символов (PDB) для сборки (C#, C++, Visual Basic, F#)
 
@@ -89,7 +89,7 @@ or
 
    Переносимый формат разработан относительно недавно для кроссплатформенных приложений .NET Core. Дополнительные сведения о параметрах см. в статье [Диалоговое окно "Дополнительные параметры сборки" (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-   ![Создание PDB для сборок на C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![Создание файлов PDB для сборок в C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. Построить проект.
 
@@ -111,7 +111,7 @@ or
 
    В большинстве проектов C++ значением по умолчанию является `$(OutDir)$(TargetName).pdb`, которое создает PDB-файлы в выходной папке.
 
-   ![Создание PDB для сборок на C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
+   ![Создание файлов PDB для сборок в C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
 6. Построить проект.
 

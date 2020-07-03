@@ -1,7 +1,7 @@
 ---
-title: VSPerfCmd. Присоединение профилировщика к собственной службе для получения данных о параллелизме
+title: VSPerfCmd — присоединение профилировщика к собственной службе для получения данных о параллелизме
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 705e55363f4f8657da20fe66cd4369188f133cdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 202b7e3f51ff16af15e755ad070813c7c2777744
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776612"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329470"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственной службе для сбора данных о параллелизме при помощи командной строки
 В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к собственной службе (C/C++) и сбора данных о параллелизме потоков и процессов с помощью метода выборки.
@@ -38,7 +38,7 @@ ms.locfileid: "74776612"
 
     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency   /output:** `OutputFile` [`Options`]
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start** можно использовать любой из параметров, приведенных в следующей таблице.
 
@@ -47,7 +47,7 @@ ms.locfileid: "74776612"
 
    | Параметр | Описание |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику. |
    | [/crosssession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500. |
@@ -68,9 +68,9 @@ ms.locfileid: "74776612"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
  Для завершения сеанса профилирования профилировщик не должен выполнять сбор данных. Вы можете остановить сбор данных из собственной службы, профилируемой с помощью метода параллелизма, остановив службу или вызвав параметр **VSPerfCmd /detach**. Затем можно вызвать параметр **VSPerfCmd/shutdown**, чтобы завершить работу профилировщика и закрыть файл данных профилирования.

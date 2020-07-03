@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7216f723e6aa955666e3e46a8329bb12e0d2f8e8
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778951"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329709"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале
 Данные, отображаемые в отчетах о производительности, можно фильтровать, задавая промежуток времени на временной шкале в представлении сводки. При фильтрации отчетов выполняется повторный анализ файла данных профилирования для включения только указанного отрезка времени.

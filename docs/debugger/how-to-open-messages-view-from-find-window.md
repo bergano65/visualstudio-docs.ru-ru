@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Открытие представления сообщений из окна поиска | Документация Майкрософт
+title: Практическое руководство. Открытие представления сообщений из окна поиска | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fef9288a662b6726c185b50a79c8007b586b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906584"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349488"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. открытие представления сообщений из окна поиска
 Иногда бывает удобно использовать диалоговое окно **Поиск окна** для выбора целевого окна, а затем открывать представление сообщений для этого окна.
@@ -25,7 +25,7 @@ ms.locfileid: "62906584"
 
 1. Расположите окна так, чтобы были видны и окно Spy++, и целевое окно.
 
-2. В меню **Spy** выберите команду **Найти окно**.
+2. В меню **Spy** выберите пункт **Поиск окна**.
 
     Откроется [диалоговое окно "Поиск окна"](../debugger/find-window-dialog-box.md).
 

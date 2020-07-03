@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306821"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533644"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -32,34 +32,50 @@ ms.locfileid: "79306821"
 
 Подробные сведения о специальных возможностях в Visual Studio см. в статьях [Советы и рекомендации по специальным возможностям для Visual Studio](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Работа только с клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-|||||
-|-|-|-|-|
-|[Анализ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Правка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Тест](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Архитектура](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Контекстные меню редактора](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Контекстные меню проекта и решения](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Обозреватель тестов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Сборка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Файл](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Рефакторинг](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Инструменты](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Контекстные меню представления классов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Справка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Обозреватель решений](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Вид](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Отладка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Нагрузочный тест](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Команда](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Окно](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Контекстные меню отладчика](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Другие контекстные меню](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Контекстные меню Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[Центр диагностики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+- [Анализ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [Правка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
+- [Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
+- [Тестирование](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Архитектура](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
+- [Контекстные меню редактора](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [Контекстные меню проекта и решения](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [Обозреватель тестов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [Сборка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [Файл](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [Рефакторинг](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
+- [Инструменты](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
+- [Контекстные меню представления классов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [Справка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [Обозреватель решений](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
+- [Вид](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Отладка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [Нагрузочный тест](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [Команда](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [Окно](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
+- [Контекстные меню отладчика](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
+- [Другие контекстные меню](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
+- [Контекстные меню Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
+- [Центр диагностики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
 ## <a name="global-shortcuts"></a>Глобальные сочетания клавиш
 
 Следующие сочетания клавиш являются *глобальными*. Это означает, что их можно использовать в любом окне Visual Studio, которое находится в фокусе.
 
-### <a name="bkmk_analyze"></a> Анализ
+### <a name="analyze"></a><a name="bkmk_analyze"></a> Анализ
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Analyze.NavigateBackward|**SHIFT+ALT+3**|
 |Analyze.NavigateForward|**SHIFT+ALT+4**|
 
-### <a name="bkmk_architecture"></a> Архитектура
+### <a name="architecture"></a><a name="bkmk_architecture"></a> Архитектура
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Architecture.NewDiagram|**CTRL+\\, CTRL+N**|
 
-### <a name="bkmk_build"></a> Сборка
+### <a name="build"></a><a name="bkmk_build"></a> Сборка
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -69,13 +85,13 @@ ms.locfileid: "79306821"
 |Build.Compile|**CTRL+F7**|
 |Build.RunCodeAnalysisonSolution|**ALT+F11**|
 
-### <a name="bkmk_classview"></a> Контекстные меню представления классов
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Контекстные меню представления классов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+ВВОД**|
 
-### <a name="bkmk_debug"></a> Отладка
+### <a name="debug"></a><a name="bkmk_debug"></a> Отладка
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -144,7 +160,7 @@ ms.locfileid: "79306821"
 |Debug.Watch3|**CTRL+ALT+W, 3**|
 |Debug.Watch4|**CTRL+ALT+W, 4**|
 
-### <a name="bkmk_debugger"></a> Контекстные меню отладчика
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Контекстные меню отладчика
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -152,13 +168,13 @@ ms.locfileid: "79306821"
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
 
-### <a name="bkmk_diagnostics"></a> Концентратор диагностики
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Концентратор диагностики
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**CTRL+ALT+F2**|
 
-### <a name="bkmk_edit"></a> Правка
+### <a name="edit"></a><a name="bkmk_edit"></a> Правка
 
 |Команды|Сочетания клавиш|
 |--------------|-|
@@ -218,7 +234,7 @@ ms.locfileid: "79306821"
 |Edit.SurroundWith|**CTRL+K, CTRL+S**|
 |Edit.Undo|**CTRL+Z**<br /><br /> or<br /><br /> **ALT+BACKSPACE**|
 
-### <a name="bkmk_editorContext"></a> Контекстные меню редактора
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Контекстные меню редактора
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -229,7 +245,7 @@ ms.locfileid: "79306821"
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (латинская буква O)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> or<br /><br /> **CTRL+K, T**|
 
-### <a name="bkmk_file"></a> Файл
+### <a name="file"></a><a name="bkmk_file"></a> Файл
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -245,7 +261,7 @@ ms.locfileid: "79306821"
 |File.SaveSelectedItems|**CTRL+S**|
 |File.ViewinBrowser|**CTRL+SHIFT+W**|
 
-### <a name="bkmk_help"></a> Справка
+### <a name="help"></a><a name="bkmk_help"></a> Справка
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -254,19 +270,19 @@ ms.locfileid: "79306821"
 |Help.ViewHelp|**CTRL+F1**|
 |Help.WindowHelp|**SHIFT+F1**|
 
-### <a name="bkmk_loadtest"></a> Нагрузочное тестирование
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> Нагрузочное тестирование
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**CTRL+R, Q**|
 
-### <a name="bkmk_otherContext"></a> Другие контекстные меню
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Другие контекстные меню
 
 |Команда|Сочетание клавиш|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Вставить**|
 
-### <a name="bkmk_project"></a> Проект
+### <a name="project"></a><a name="bkmk_project"></a> Проект
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -278,14 +294,14 @@ ms.locfileid: "79306821"
 |Project.Publishselectedfiles|**ALT+;** затем **ALT+P**|
 |Project.Replaceselectedfilesfromserver|**ALT+;** затем **ALT+R**|
 
-### <a name="bkmk_projectContext"></a> Контекстные меню проекта и решения
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Контекстные меню проекта и решения
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+СТРЕЛКА ВНИЗ**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+СТРЕЛКА ВВЕРХ**|
 
-### <a name="bkmk_refactor"></a> Рефакторинг
+### <a name="refactor"></a><a name="bkmk_refactor"></a> Рефакторинг
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -296,7 +312,7 @@ ms.locfileid: "79306821"
 |Refactor.Rename|**CTRL+R, CTRL+R**|
 |Refactor.ReorderParameters|**CTRL+R, CTRL+O** (латинская буква O)|
 
-### <a name="bkmk_solutionexplorerGLOBAL"></a> Обозреватель решений
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Обозреватель решений
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -304,7 +320,7 @@ ms.locfileid: "79306821"
 |SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> or<br /><br /> **CTRL+[** , **CTRL+P**|
 |SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> or<br /><br /> **CTRL+[** , **CTRL+S**|
 
-### <a name="bkmk_team"></a> Команда
+### <a name="team"></a><a name="bkmk_team"></a> Команда
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -313,7 +329,7 @@ ms.locfileid: "79306821"
 |Team.Git.GoToGitCommits|**CTRL+0** (ноль), **CTRL+O** (латинская буква O)<br /><br /> or<br /><br /> **CTRL+0, O**|
 |Team.TeamExplorerSearch|**CTRL+'**|
 
-### <a name="bkmk_TFcontext"></a> Контекстные меню Team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Контекстные меню Team Foundation
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -328,14 +344,14 @@ ms.locfileid: "79306821"
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (ноль), **CTRL+A**<br /><br /> or<br /><br /> **CTRL+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (ноль), **CTRL+W**<br /><br /> or<br /><br /> **CTRL+0, W**|
 
-### <a name="bkmk_test"></a> Тест
+### <a name="test"></a><a name="bkmk_test"></a> Тест
 
 |Команды|Сочетания клавиш|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**CTRL+\\, CTRL+C**|
 |Test.UseExistingActionRecording|**CTRL+\\, CTRL+A**|
 
-### <a name="bkmk_testexplorerGLOBAL"></a> Обозреватель тестов
+### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> Обозреватель тестов
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -349,7 +365,7 @@ ms.locfileid: "79306821"
 |LiveUnitTesting.OpenTab|**CTRL+E, L**|
 |Test.CodeCoverageResults|**CTRL+E, C**|
 
-### <a name="bkmk_tools"></a> Инструменты
+### <a name="tools"></a><a name="bkmk_tools"></a> Инструменты
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -357,7 +373,7 @@ ms.locfileid: "79306821"
 |Tools.CodeSnippetsManager|**CTRL+K, CTRL+B**|
 |Tools.ForceGC|**CTRL+SHIFT+ALT+F12, CTRL+SHIFT+ALT+F12**|
 
-### <a name="bkmk_view"></a> Вид
+### <a name="view"></a><a name="bkmk_view"></a> Вид
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -407,7 +423,7 @@ ms.locfileid: "79306821"
 |View.ZoomOut|**CTRL+SHIFT+,**|
 |TestExplorer.ShowTestExplorer|**CTRL+E, T**|
 
-### <a name="bkmk_window"></a> Окно
+### <a name="window"></a><a name="bkmk_window"></a> Окно
 
 |Команды|Сочетания клавиш|
 |--------------| - |
@@ -438,7 +454,7 @@ ms.locfileid: "79306821"
 |Window.SolutionExplorerSearch|**CTRL+;**|
 |Window.WindowSearch|**ALT+`**|
 
-### <a name="bkmk_windowsazure"></a> Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |Команды|Сочетания клавиш|
 |--------------| - |

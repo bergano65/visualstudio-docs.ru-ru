@@ -2,7 +2,7 @@
 title: Установка средств поддержки Python
 description: Инструкции по установке средств Python для Visual Studio (PTVS) в Visual Studio 2017, 2015, 2013, 2012 и 2010, включая параметры и расположения установки.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15869119ea867e41d3b91a1f046d1ffb995cd4e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75398423"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540651"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Как установить поддержку Python в Visual Studio под управлением Windows
 
@@ -135,10 +135,10 @@ ms.locfileid: "75398423"
 В Visual Studio 2015 и более ранних версиях используются такие пути установки:
 
 - 32-разрядная версия.
-  - Путь: *%Program Files(x86)%\Microsoft Visual Studio \<версия_Visual_Studio>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*
+  - Путь: *%Program Files(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*
   - Расположение пути в реестре: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<версия_Visual_Studio>\InstallDir**
 - 64-разрядная версия.
-  - Путь: *%Program Files%\Microsoft Visual Studio \<версия_Visual_Studio>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*
+  - Путь: *%Program Files%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<версия_PTVS>*
   - Расположение пути в реестре: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<версия_Visual_Studio>\InstallDir**
 
 Здесь:

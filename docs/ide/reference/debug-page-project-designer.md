@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649435"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418747"
 ---
 # <a name="debug-page-project-designer"></a>Страница "Отладка" в конструкторе проектов
 
 На странице **Отладка** **конструктора проектов** можно настроить свойства отладки для проекта Visual Basic или C#.
 
-Чтобы открыть страницу **Отладка**, выберите узел проекта в **обозревателе решений**. В меню **Проект** выберите **Свойства \<имя_проекта>** . Когда откроется **конструктор проектов**, перейдите на вкладку **Отладка**.
+Чтобы открыть страницу **Отладка**, выберите узел проекта в **обозревателе решений**. В меню **Проект** выберите **\<ProjectName>Свойства**. Когда откроется **конструктор проектов**, перейдите на вкладку **Отладка**.
 
 > [!NOTE]
 > Этот раздел не распространяется на приложения универсальной платформы Windows. Для приложений UWP см. раздел [Запуск сеанса отладки (VB, C#, C++ и XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).

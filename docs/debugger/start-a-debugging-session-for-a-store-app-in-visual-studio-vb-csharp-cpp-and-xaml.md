@@ -2,7 +2,7 @@
 title: Запуск сеанса отладки для приложения UWP | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4504dda362c8a50f33168a12839e894a14316d7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72436015"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536556"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Запуск сеанса отладки для приложения UWP
 
@@ -76,7 +76,7 @@ ms.locfileid: "72436015"
 
 Целевой объект отладки можно задать на панели инструментов Visual Studio или на странице свойств отладки проекта. Выберите один из следующих вариантов.
 
-|||
+|name|Описание|
 |-|-|
 |**Локальный компьютер**|Отладка приложения в текущем сеансе на локальном компьютере.|
 |**Имитатор**|Отладка приложения в симуляторе Visual Studio для приложений UWP. Симулятор представляет собой окно на рабочем столе, в котором имитируются недоступные на локальном компьютере функциональные возможности устройства, такие как сенсорный ввод и поворот устройства. Этот параметр доступен только в том случае, если значение **Минимальная версия целевой платформы** не превышает номер версии операционной системы на локальном компьютере. Дополнительные сведения см. в разделе [Запуск приложений UWP в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ ms.locfileid: "72436015"
 
 - Для приложений C++ выберите один из следующих отладчиков из раскрывающихся списков **Тип отладчика** на странице свойств **Отладка**.
 
-|||
+|name|Описание|
 |-|-|
 |**Только управляемый код**|Отладка управляемого кода в приложении. Код JavaScript и машинный код C/C++ игнорируются.|
 |**Только машинный код**|Отладка машинного кода C/C++ в приложении. Управляемый код и код JavaScript игнорируются.|
@@ -189,7 +189,7 @@ ms.locfileid: "72436015"
 
    1. Чтобы просмотреть список всех приложений с идентификатором PackageFullName, введите `Get-AppxPackage` в командной строке PowerShell.
 
-   1. В командной строке PowerShell введите`Enable-AppxDebug <PackageFullName>`, где \<PackageFullName> — это идентификатор PackageFullName данного приложения.
+   1. В командной строке PowerShell введите `Enable-AppxDebug <PackageFullName>`, где \<PackageFullName> — идентификатор PackageFullName приложения.
 
 1. Выберите **Отладка** > **Присоединение к процессу**.
 

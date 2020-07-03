@@ -1,7 +1,7 @@
 ---
 title: Отладка с помощью JIT-отладчика | Документация Майкрософт
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188668"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350580"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Отладка с помощью JIT-отладчика в Visual Studio
 
@@ -79,7 +79,7 @@ JIT-отладка может оставаться включенной даже
 
 Чтобы включить JIT-отладку вместо стандартной обработки ошибок Windows Forms, добавьте следующие параметры.
 
-- В разделе `system.windows.forms` файла *machine.config* или *\<имя_приложения>.exe.config* установите для параметра `jitDebugging` значение `true`:
+- В разделе `system.windows.forms` файла *machine.config* или *\<app name>.exe.config* установите для параметра `jitDebugging` значение `true`:
 
     ```xml
     <configuration>
@@ -134,7 +134,7 @@ JIT-отладка может оставаться включенной даже
 
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
-   В разделе **Доступные отладчики** выберите **Создать экземпляр \<ваша предпочтительная версия/выпуск Visual Studio>** , если она еще не выбрана.
+   В разделе **Доступные отладчики**выберите параметр **Новый экземпляр \<your preferred Visual Studio version/edition>** , если он еще не выбран.
 
 1. Нажмите кнопку **ОК**.
 

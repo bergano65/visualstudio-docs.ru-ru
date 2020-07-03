@@ -1,19 +1,19 @@
 ---
-title: 'Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров | Документация Майкрософт'
+title: Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68870333"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331393"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров
 В этом разделе содержатся сведения об использовании SDK визуализатора параллелизма для создания интервалов и записи флагов, сообщений и оповещений.

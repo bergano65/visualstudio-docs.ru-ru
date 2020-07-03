@@ -2,7 +2,7 @@
 title: Интерактивное окно Python (REPL)
 description: Быстрая разработка кода Python в Visual Studio с помощью интерактивного окна (REPL).
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307115"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533553"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Работа с интерактивным окном Python
 
@@ -48,7 +48,7 @@ Visual Studio предоставляет ряд режимов REPL Python.
 
 ![Пункты меню интерактивного окна после выбора "Просмотр" > "Другие окна"](media/interactive-window-menu.png)
 
-Третий способ — **интерактивное** окно можно открыть в файле запуска проекта или с помощью отдельного файла, выбрав команду меню **Отладка** > **Выполнить \<файл | проект> в интерактивном** окне Python (**SHIFT**+**ALT**+**F5**):
+Третий способ — **интерактивное** окно можно открыть в файле запуска проекта или с помощью отдельного файла, выбрав команду меню **Отладка** > **Выполнить \<Project | File> в интерактивном** окне Python (**SHIFT**+**ALT**+**F5**):
 
 ![Пункт меню Execute Project in Python Interactive (Выполнить проект в интерактивном окне Python)](media/interactive-execute-project.png)
 

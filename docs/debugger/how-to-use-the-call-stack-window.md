@@ -2,7 +2,7 @@
 title: Просмотр стека вызовов в отладчике | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535990"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348747"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Просмотр стека вызовов и использование окна "Стек вызовов" в отладчике
 
@@ -108,7 +108,7 @@ ms.locfileid: "72535990"
 
 ## <a name="change-the-optional-information-displayed"></a>Включение или отключение отображения дополнительных сведений
 
-- Щелкните правой кнопкой мыши в окне **Стек вызовов** и установите или снимите флажок **Показывать \<** _нужные сведения_ **>** .
+- Щелкните правой кнопкой мыши в окне **Стек вызовов** и установите или снимите флажок **Показать\<**_the information that you want_**>** .
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Загрузка символов для модуля (C#, C++, Visual Basic, F#)
 

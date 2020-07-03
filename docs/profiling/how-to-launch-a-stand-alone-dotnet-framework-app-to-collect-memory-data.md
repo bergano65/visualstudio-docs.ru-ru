@@ -1,7 +1,7 @@
 ---
-title: Командная строка Profiler. Запуск клиентского приложения .NET Framework и получение данных об использовании памяти
+title: Командная строка профилировщика — запуск клиентского приложения .NET Framework и получение данных об использовании памяти
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775363"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327691"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Практическое руководство. Запуск автономного приложения .NET Framework с профилировщиком для сбора данных об использовании памяти с помощью командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения .NET Framework и сбора данных о памяти.
@@ -43,9 +43,9 @@ ms.locfileid: "74775363"
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Параметр [/start](../profiling/start.md)**:sample** инициализирует профилировщик.
+   - Параметр [/start](../profiling/start.md) **:sample** инициализирует профилировщик.
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start:sample** можно использовать любой из следующих параметров.
 
@@ -56,9 +56,9 @@ ms.locfileid: "74775363"
 
 3. Запустите целевое приложение. Тип:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - Параметр [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword` требуется для сбора данных памяти .NET Framework. Параметр ключевого слова указывает, требуется ли собирать данные о выделении памяти или данные о времени существования объекта и выделении памяти.
+   - Параметр [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` требуется для сбора данных памяти .NET Framework. Параметр ключевого слова указывает, требуется ли собирать данные о выделении памяти или данные о времени существования объекта и выделении памяти.
 
      |Ключевое слово|Описание|
      |-------------|-----------------|
@@ -83,8 +83,8 @@ ms.locfileid: "74775363"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`). **/detach** останавливает сбор данных для всех процессов.|
 
 - Можно также использовать параметр **VSPerfCmd.exe**[/mark](../profiling/mark.md) для добавления метки профилирования в файл данных. Команда **/mark** добавляет идентификатор, отметку времени и необязательную определяемую пользователем текстовую строку. Метки можно использовать для фильтрации данных.

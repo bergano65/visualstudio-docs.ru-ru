@@ -1,7 +1,7 @@
 ---
-title: Командная строка Profiler. Запуск автономного приложения, получение статистики приложения
+title: Командная строка профилировщика — запуск автономного приложения, получение статистики приложения
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fb6228592115091dc538dbe59c227a180e75aa10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 96838b622171aa3e313dd8c241a5e316f72ff7b2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775422"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327764"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Запуск автономного приложения с профилировщиком и сбор статистики приложения с помощью командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения и сбора статистических данных о производительности с помощью метода выборки.
@@ -44,9 +44,9 @@ ms.locfileid: "74775422"
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Параметр [/start](../profiling/start.md)**:sample** инициализирует профилировщик.
+   - Параметр [/start](../profiling/start.md) **:sample** инициализирует профилировщик.
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start:sample** можно использовать любой из следующих параметров.
 
@@ -56,7 +56,7 @@ ms.locfileid: "74775422"
    | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Задает события трассировки событий для Windows (ETW), собираемые во время профилирования. События трассировки событий Windows собираются в отдельный *ETL*-файл. |
 
-3. Запустите целевое приложение. Введите: **VSPerfCmd /launch:**`appName` [`Options`] [`Sample Event`]
+3. Запустите целевое приложение. Введите: **VSPerfCmd /launch:** `appName` [`Options`] [`Sample Event`]
 
     С параметром **/launch** можно использовать один или несколько из следующих параметров.
 
@@ -70,8 +70,8 @@ ms.locfileid: "74775422"
    |Событие выборки|Описание|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Изменяет интервал выборки на число неостановленных циклов, которые указываются с помощью свойства `Interval`.|
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md)[**:**`Interval`]|Изменяет событие выборки на "системные вызовы" из процесса к ядру операционной системы (syscall). Если указано свойство `Interval`, задает количество вызовов между выборками. Значение по умолчанию — 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md)[ **:** `Interval`]|Изменяет событие выборки на "системные вызовы" из процесса к ядру операционной системы (syscall). Если указано свойство `Interval`, задает количество вызовов между выборками. Значение по умолчанию — 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Изменяет событие выборки и интервал на "счетчик производительности процессора" и интервал, указанный в `Config`.|
 
 ## <a name="control-data-collection"></a>Управление сбором данных
@@ -83,9 +83,9 @@ ms.locfileid: "74775422"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором `PID` или именем процесса (ProcName). **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором `PID` или именем процесса (ProcName). **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
  Для завершения сеанса профилирования профилировщик не должен быть подключен к любому профилируемому процессу, кроме того, необходимо явным образом завершить его работу. Вы можете отключить профилировщик от приложения, профилируемого с помощью метода выборки, закрыв приложение или вызвав параметр **VSPerfCmd /detach**. Затем можно вызвать параметр **VSPerfCmd /shutdown**, чтобы завершить работу профилировщика и закрыть файл данных профилирования. Команда **VSPerfClrEnv /off** сбрасывает переменные среды профилирования.

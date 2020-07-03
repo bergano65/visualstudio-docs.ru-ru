@@ -1,7 +1,7 @@
 ---
-title: 'DA0029: неподдерживаемая версия среды CLR | Документы Майкрософт'
+title: 'DA0029: неподдерживаемая версия среды CLR | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14e0bb4290ad155b7094c0f60810df4f86cb8d65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777519"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544642"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: неподдерживаемая версия среды CLR
+# <a name="da0029-unsupported-clr-version"></a>DA0029. Неподдерживаемая версия среды CLR
 
-|||
+|Элемент|Значение|
 |-|-|
 |Идентификатор правила|DA0029|
 |Категория|Использование средств профилирования|
@@ -33,11 +33,11 @@ ms.locfileid: "74777519"
 |Сообщение|В процессе сбора данных обнаружена неподдерживаемая версия среды CLR. Невозможно надлежащим образом устранить конфликт управляемых символов.|
 |Тип правила|Сведения.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Предпринята попытка профилирования приложения, в котором используется платформа [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], не поддерживаемая Средствами профилирования.
 
 ## <a name="rule-description"></a>Описание правила
  Это предупреждение выдается по той причине, что Средствам профилирования не удается разрешить символы в управляемом коде, выполняющемся в приложении. Средства профилирования не могут разрешать символы управляемого кода в приложениях для платформы [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Нет.
+ Отсутствует.

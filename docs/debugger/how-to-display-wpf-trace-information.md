@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Отображение данных трассировки WPF | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733467"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349787"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Практическое руководство. отображение данных трассировки WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] может получать сведения о трассировке отладки от приложений WPF и отображать эти сведения в окне **Вывод**. Чтобы отобразить сведения о трассировке отладки, необходимо включить трассировку WPF.

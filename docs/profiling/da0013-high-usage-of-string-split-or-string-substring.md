@@ -1,7 +1,7 @@
 ---
-title: DA0013. Интенсивное использование String.Split или String.Substring | Документы Майкрософт
+title: 'DA0013: интенсивное использование String.Split или String.Substring | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -17,24 +17,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a475ef1f4d60d7dfb0d2ea7189295bad47426c0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779413"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520618"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: интенсивное использование String.Split или String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013. Интенсивное использование String.Split или String.Substring
 
-|||
+|Элемент|Значение|
 |-|-|
 |Идентификатор правила|DA0013|
 |Категория|Руководство по использованию .NET Framework|
-|Методы профилирования|Выборка|
+|Методы профилирования|Дискретизация|
 |Сообщение|Рекомендуется снизить использование функций String.Split и String.Substring.|
 |Тип правила|Предупреждение|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Вызовы методов System.String.Split и System.String.Substring составляют значительную часть данных профилирования. Рекомендуется использовать метод System.String.IndexOf или System.String.IndexOfAny при проверке существования подстроки в строке.
 
 ## <a name="rule-description"></a>Описание правила

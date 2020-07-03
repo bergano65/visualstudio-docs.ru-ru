@@ -1,6 +1,6 @@
 ---
 title: Вопросы и ответы по обозревателю тестов
-ms.date: 08/14/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,24 +14,14 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf22c54da4af43c4953a8b92620031a14e25ec05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846802"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468747"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
-::: moniker range=">=vs-2019"
-
-## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Где находится группировка по признакам в Visual Studio 2019?
-Группировка по признакам была перемещена в отдельный столбец. С многоуровневой и настраиваемой иерархией в Visual Studio 2019 версии 16.2 признаки в виде групп создавали бы лишнюю сложность при просмотре. Мы прислушались к отзывам об этом дизайне! [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
-
-Теперь можно щелкнуть правой кнопкой мыши столбец в обозревателе тестов и выбрать пункт "Столбцы". Отметьте столбец признаков, и он отобразится в обозревателе тестов. Теперь этот столбец можно отфильтровать по интересующим вас характеристикам.
-
-![Отобразить столбец признаков](media/vs-2019/trait-column.png)
-![Фильтровать столбец признаков](media/vs-2019/trait-column-filter.png)
-::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Обнаружение динамических тестов
 
@@ -91,9 +81,7 @@ ms.locfileid: "75846802"
 
 **Как работает сортировка результатов тестирования в иерархическом представлении?**
 
-Иерархическое представление сортирует тесты по алфавиту, а не по результату. Другие параметры группирования обычно сортируют результаты тестов по результату, а затем по алфавиту. Для сравнения ознакомьтесь с вариантами группирования на приведенном ниже изображении. Вы можете отправить отзыв о данной структуре [в этом вопросе GitHub](https://github.com/Microsoft/vstest/issues/1425).
-
-![SortingExamples](media/testex-sortingex.png)
+Иерархическое представление сортирует тесты по алфавиту, а не по результату. Предыдущие параметры группирования сортировали результаты тестов по результату, а затем по алфавиту. Вы по-прежнему можете включить сортировку по результату, щелкнув правой кнопкой мыши заголовок столбца в обозревателе тестов, включив столбец "Состояние", а затем щелкнув заголовок столбца "Состояние", чтобы применить сортировку по этому столбцу. Вы можете оставить отзыв о такой схеме сортировки в [этом вопросе в GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
 ## <a name="test-explorer-hierarchy-view"></a>Иерархическое представление в обозревателе тестов
 
@@ -153,7 +141,12 @@ ms.locfileid: "75846802"
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
 ```
+::: moniker range=">=vs-2019"
+## <a name="using-preview-features"></a>Использование предварительных версий функций
 
+В Visual Studio 2019 включить предварительные версии функции в разделе **"Инструменты" > "Параметры" > "Среда" > "Предварительные версии функций"** .
+::: moniker-end
+::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>Использование флагов функций
 
 **Как включить флаги функций, чтобы испытать новые возможности тестирования?**
@@ -170,7 +163,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Этой же командой можно отключить флаг, изменив значение после dword c 1 на 0.
-
+::: moniker-end
 ## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184254"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536790"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Удаленная отладка ASP.NET Core в IIS в Azure в Visual Studio
 
@@ -175,8 +175,8 @@ ms.locfileid: "84184254"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> При перезапуске виртуальной машины Azure IP-адрес может измениться.
 
 После успешного развертывания приложение должно запускаться автоматически. Если приложение не запускается из Visual Studio, запустите его в IIS, чтобы проверить корректность его выполнения. Для ASP.NET Core также необходимо убедиться, что в поле "Пул приложений" для **DefaultAppPool** задано значение **Без управляемого кода**.
 

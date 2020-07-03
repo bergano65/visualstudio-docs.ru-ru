@@ -1,9 +1,9 @@
 ---
-title: 'Ошибка: Службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру'
+title: 'Ошибка: службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,21 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737405"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536673"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Ошибка: Службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру
 Эта ошибка означает, что служба удаленного отладчика запущена под управлением учетной записи пользователя, которая не может пройти проверку подлинности при попытке подключиться к компьютеру, с которого происходит отладка. Эта ошибка может возникать при удаленной отладке с помощью модуля отладки прежних версий, когда удаленный отладчик выполняется как служба.
 
  В следующей таблице показано, какие учетные записи имеют доступ к компьютеру:
 
-|||||
+|Сценарий|Учетная запись LocalSystem|Доменная учетная запись|Локальные учетные записи, имеющие одинаковые имена пользователей и пароли на обоих компьютерах|
 |-|-|-|-|
-||Учетная запись LocalSystem|Доменная учетная запись|Локальные учетные записи, имеющие одинаковые имена пользователей и пароли на обоих компьютерах|
 |Оба компьютера находятся в том же домене|Да|Да|Да|
 |Оба компьютера находятся в доменах, имеющих двустороннее отношение доверия|Нет|Нет|Да|
 |Один или оба компьютера находятся в рабочей группе|Нет|Нет|Да|

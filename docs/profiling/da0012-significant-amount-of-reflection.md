@@ -1,7 +1,7 @@
 ---
-title: DA0012. Слишком много вызовов метода Reflection | Документы Майкрософт
+title: 'DA0012: слишком много вызовов метода Reflection | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
@@ -14,24 +14,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777677"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520645"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012. Слишком много вызовов метода Reflection
 
-|||
+|Элемент|Значение|
 |-|-|
 |Идентификатор правила|DA0012|
 |Категория|Использование .NET Framework|
-|Методы профилирования|Выборка|
+|Методы профилирования|Дискретизация|
 |Сообщение|Возможно, метод Reflection используется слишком интенсивно. Это ресурсоемкая операция.|
 |Тип правила|Предупреждение|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Вызовы методов System.Reflection, таких как InvokeMember и GetMember, или методов Type, таких как MemberInvoke, составляют значительную часть данных профилирования. По возможности рекомендуется заменить эти методы ранней привязкой к методам зависимых сборок.
 
 ## <a name="rule-description"></a>Описание правила

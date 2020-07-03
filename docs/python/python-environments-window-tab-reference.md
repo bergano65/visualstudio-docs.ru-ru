@@ -2,7 +2,7 @@
 title: Справочная информация по окну "Окружения Python"
 description: Сведения о вкладках, которые отображаются в окне "Окружения Python" в Visual Studio.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307121"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545500"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Справочная информация по вкладкам окна "Окружения Python"
 
@@ -60,7 +60,7 @@ ms.locfileid: "79307121"
 
 Скрипты запуска содержат код, автоматически загружаемый и запускаемый **интерактивным** окном, включая операции импорта, определения функций и пр. Ссылки на такие скрипты выполняются двумя способами:
 
-1. При установке окружения Visual Studio создает папку*Documents\Visual Studio \<version>\Python Scripts\\\<environment>* , где &lt;version&gt; — это версия Visual Studio (например, 2017 или 2019), а &lt;environment&gt; соответствует имени окружения. Вы легко можете перейти в папку окружения с помощью команды **Просмотреть интерактивные сценарии**. При запуске **интерактивного** окна для этого окружения оно загружает и выполняет все найденные файлы *.py* в алфавитном порядке.
+1. При установке окружения Visual Studio создает папку *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* , где &lt;version&gt; — это версия Visual Studio (например, 2017 или 2019), а &lt;environment&gt; соответствует имени окружения. Вы легко можете перейти в папку окружения с помощью команды **Просмотреть интерактивные сценарии**. При запуске **интерактивного** окна для этого окружения оно загружает и выполняет все найденные файлы *.py* в алфавитном порядке.
 
 1. Элемент управления **Скрипты** на вкладке **Инструменты** > **Параметры** > **Python** > **Интерактивные окна** (см. раздел [Параметры интерактивных окон](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) позволяет указать дополнительную папку для скриптов запуска, которые загружаются и выполняются во всех окружениях. Однако сейчас эта функция не работает.
 
@@ -105,7 +105,7 @@ ms.locfileid: "79307121"
 ![Вкладка "Пакеты" окна "Окружения Python" с поиском по "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Как видно на рисунке выше, результаты поиска показывают число пакетов, которые соответствуют поисковому запросу. Но первая запись в списке содержит команду для запуска **pip install \<имя>** напрямую. На вкладке **Пакеты (Conda)** вместо этого отображается **conda install \<имя>** :
+Как видно на рисунке выше, результаты поиска показывают число пакетов, которые соответствуют поисковому запросу. Но первая запись в списке содержит команду для запуска **pip install \<name>** напрямую. На вкладке **Пакеты (Conda)** вместо этого отображается **conda install \<name>** :
 
 ::: moniker range="vs-2017"
 ![Вкладка пакетов Conda с командой conda install](media/environments/environments-conda-tab-install.png)

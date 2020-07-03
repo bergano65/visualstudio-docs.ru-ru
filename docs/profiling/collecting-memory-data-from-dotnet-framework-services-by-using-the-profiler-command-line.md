@@ -1,7 +1,7 @@
 ---
-title: Командная строка Profiler. Получение данных об использовании памяти из служб .NET
+title: Командная строка профилировщика — получение данных об использовании памяти из служб .NET Framework
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25f61b68249dfab7faf04c5e0460800947275db4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 67ad8341dc47b5e9275a02950c5335264e619541
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779471"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331691"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
 В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы .NET Framework с использованием метода выборки в командной строке.

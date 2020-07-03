@@ -1,7 +1,7 @@
 ---
-title: Командная строка Profiler. Запуск собственного клиентского приложения и получение данных о параллелизме
+title: Командная строка профилировщика — запуск собственного клиентского приложения и получение данных о параллелизме
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb8baed0d9154c02f23738944de2d3e84b7402b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0aeebe82e3c7b574b65ab463a7bfd986d43d46ef
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76726039"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327663"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Запуск собственного автономного приложения с профилировщиком для сбора данных о параллелизме с помощью командной строки
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для запуска автономного (клиентского) приложения в машинном коде и сбора данных о параллелизме потоков и процессов.

@@ -1,7 +1,7 @@
 ---
-title: 'Ошибка: Не удается получить доступ к интерфейсу отладки SQL Server | Документация Майкрософт'
+title: 'Ошибка: не удается получить доступ к интерфейсу отладки SQL Server | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_debugging_not_enabled
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5659325abd5b1f7a926d7e16d775b94aec62cfa9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d0c0c61fce7f20ea49547bc63a6e70eed284b016
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916194"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460212"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Ошибка: Невозможно осуществить доступ к интерфейсу отладки SQL Server
 Данное сообщение появляется при попытке проведения отладки SQL на компьютере, на котором не включена отладка SQL.

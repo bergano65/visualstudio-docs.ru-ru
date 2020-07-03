@@ -1,7 +1,7 @@
 ---
-title: 'Ошибка: не удается запустить отладку на веб-сервере | Документация Майкрософт'
+title: 'Ошибка: не удается запустить отладку на веб-сервере | Документация Майкрософт'
 ms.date: 05/23/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 00d27dafd5e44b058cff05b3c478322e45242b3c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404359"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460043"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка: не удается запустить отладку на веб-сервере
 
@@ -134,7 +134,7 @@ ms.locfileid: "75404359"
 
 * Убедитесь, что в IIS установлена правильная версия ASP.NET.
 
-    Описанная проблема может быть вызвана несовпадением версий ASP.NET в IIS и в проекте Visual Studio. Если нужно, укажите версию платформы в файле web.config. Чтобы установить ASP.NET в IIS, используйте [установщик веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). См. также разделы [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) или [Размещение в Windows с помощью IIS](https://docs.asp.net/en/latest/publishing/iis.html) (для ASP.NET Core).
+    Описанная проблема может быть вызвана несовпадением версий ASP.NET в IIS и в проекте Visual Studio. Возможно, потребуется задать версию платформы в файле web.config. Чтобы установить ASP.NET в IIS, используйте [установщик веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). См. также разделы [IIS 8.0 — использование ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) или [Размещение в Windows с помощью IIS](https://docs.asp.net/en/latest/publishing/iis.html) (для ASP.NET Core).
 
 * Устраните ошибки проверки подлинности, если используется только IP-адрес
 

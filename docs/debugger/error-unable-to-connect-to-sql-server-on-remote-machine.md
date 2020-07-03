@@ -1,7 +1,7 @@
 ---
-title: 'Ошибка: не удалось подключиться к SQL Server на удаленном компьютере | Документация Майкрософт'
+title: 'Ошибка: не удалось подключиться к SQL Server на удаленном компьютере | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlle_dcom_accessdenied
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecee2a2dbf7c849549ed6f5e844714cbb88bfda
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f1d5b162a483a7552c89b0b1c49f0967caf73170
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736824"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460238"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Ошибка: Не удалось подключиться к SQL Server на удаленном компьютере
 Не удалось подключиться к SQL Server на удаленном компьютере *имя*. Доступ запрещен. Проверьте, что на удаленном компьютере установлен удаленный отладчик. Если удаленный компьютер не входит в домен, или если Visual Studio выполняется с локальной учетной записью, удаленный компьютер должен иметь учетную запись с тем же именем и паролем, что и локальная учетная запись.

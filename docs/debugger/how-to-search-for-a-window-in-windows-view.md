@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Поиск окна в представлении окон | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64831031"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349241"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Практическое руководство. Поиск окна в представлении окон
 Вы можете выполнить поиск определенного окна в представлении "Окна" по маркеру, заголовку, классу окна или по сочетанию заголовка и класса. Вы также можете указать начальное направление поиска. Поля в диалоговом окне будут содержать атрибуты окна, выбранного в дереве окон.

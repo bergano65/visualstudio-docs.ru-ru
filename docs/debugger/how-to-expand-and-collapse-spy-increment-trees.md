@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Сворачивание и разворачивание деревьев Spy++ | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733313"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349592"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Практическое руководство. сворачивание и разворачивание деревьев Spy++
 Сворачивать и разворачивать представления окон, процессов и потоков можно двумя способами: с помощью значков в окне или через меню **Дерево**. Значки + и – в дереве работают точно так же, как в окне проекта C++.

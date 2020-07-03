@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Сравнение файлов данных о производительности | Документы Майкрософт
+title: Практическое руководство. Сравнение файлов данных о производительности | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb8057823732503a215fb4f2c12ebee33b34c4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779003"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330814"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Практическое руководство. Сравнение файлов данных о производительности
 Можно сравнить результаты двух разных файлов данных профилировщика (*VSP* или *VSPS*), создав отчет или представление сравнения (Diff). Сравнение показывает различия, регрессии производительности и усовершенствования, которые происходят в разных сеансах профилирования.

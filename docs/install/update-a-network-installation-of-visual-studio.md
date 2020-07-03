@@ -1,7 +1,7 @@
 ---
 title: Обновление сетевой установки
 description: Сведения об обновлении сетевой установки Visual Studio с помощью команды --layout
-ms.date: 01/08/2020
+ms.date: 06/29/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114979"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545435"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Обновление сетевой установки Visual Studio
 
@@ -74,7 +74,7 @@ ms.locfileid: "76114979"
   ```
 
     > [!IMPORTANT]
-    > Операция обновления не устанавливает новые дополнительные компоненты, даже если эти компоненты включены раздел добавления [файла ответов](automated-installation-with-response-file.md). Это происходит потому, что операции добавления не используются во время обновления.
+    > Операция обновления не устанавливает вновь добавленные дополнительные компоненты. Если требуются только что добавленные дополнительные компоненты, удалите старые необязательные компоненты в [файле ответов](automated-installation-with-response-file.md) `Layout.JSON` и включите необходимые компоненты в разделе "Добавление" `Layout.JSON`. 
     >
     > **Инструкции по решению**: запустите отдельную операцию изменения после обновления, чтобы установить отсутствующие компоненты.
 

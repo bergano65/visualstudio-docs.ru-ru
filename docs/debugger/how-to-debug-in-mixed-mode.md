@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Отладка в смешанном режиме | Документация Майкрософт
 ms.date: 11/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894382"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350112"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Практическое руководство. Отладка в смешанном режиме (C#, C++, Visual Basic)
 
@@ -43,13 +43,13 @@ ms.locfileid: "62894382"
 
 1. Щелкните правой кнопкой мыши проект C++ в **обозревателе решений** и щелкните значок **Свойства**. Нажмите сочетание клавиш **ALT**+**ВВОД** или щелкните проект правой кнопкой мыши и выберите элемент **Свойства**.
 
-1. В диалоговом окне **\<Проект > Страницы свойств** разверните узел **Свойства конфигурации** и выберите элемент **Отладка**.
+1. В диалоговом окне **\<Project>Страницы свойств** разверните узел **Свойства конфигурации** и выберите элемент **Отладка**.
 
 1. Установите **Тип отладчика** в **Смешанный** или **Авто**.
 
 1. Нажмите кнопку **ОК**.
 
-   ![Включение отладки в смешанном режиме](../debugger/media/dbg-mixed-mode-from-native.png "Enable mixed mode debugging")
+   ![Включение смешанного режима отладки](../debugger/media/dbg-mixed-mode-from-native.png "Включение смешанного режима отладки")
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Включение отладки в смешанном режиме для вызывающего приложения с управляемым кодом
 
@@ -59,7 +59,7 @@ ms.locfileid: "62894382"
 
 1. Закройте страницу свойств, чтобы сохранить изменения.
 
-   ![Включение отладки машинного кода](../debugger/media/dbg-mixed-mode-from-csharp.png "Enable native code debugging")
+   ![Включить отладку машинного кода](../debugger/media/dbg-mixed-mode-from-csharp.png "Включение отладки машинного кода")
 
 > [!NOTE]
 > В большинстве версий Visual Studio, начиная с Visual Studio 2017, для включения смешанного режима отладки машинного кода в приложении .NET Core необходимо использовать файл *launchSettings.json* вместо свойств проекта. Дополнительные сведения см. в статье [об отладке управляемого и машинного кода](../debugger/how-to-debug-managed-and-native-code.md).

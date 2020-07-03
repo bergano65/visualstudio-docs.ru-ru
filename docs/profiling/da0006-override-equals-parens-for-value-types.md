@@ -1,7 +1,7 @@
 ---
-title: DA0006. Переопределение Equals() для типов значений | Документы Майкрософт
+title: 'DA0006: переопределение Equals() для типов значений | Документация Майкрософт'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -14,24 +14,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779536"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520826"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006. Переопределение Equals() для типов значений
 
-|||
+|Элемент|Значение|
 |-|-|
 |Идентификатор правила|DA0006|
 |Категория|Использование .NET Framework|
-|Методы профилирования|Выборка|
+|Методы профилирования|Дискретизация|
 |Сообщение|Переопределите Equals и оператор равенства для типов значений.|
 |Тип сообщения|Предупреждение|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
  Вызовы метода Equals или операторов равенства открытого типа составляют значительную часть данных профилирования. Рекомендуется использовать более эффективный метод.
 
 ## <a name="rule-description"></a>Описание правила
@@ -40,4 +40,4 @@ ms.locfileid: "74779536"
  Дополнительные сведения о переопределении Equals и операторов равенства см. в разделе [Правила реализации метода Equals и оператора равенства (==)](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения
- Пример реализации Equals и операторов равенства см. в описании правила анализа кода [CA1815: следует переопределять равенства и равенства операторов в типах значений](../code-quality/ca1815.md).
+ Пример реализации Equals и операторов равенства см. в описании правила анализа кода [CA1815: Переопределяйте операторы Equals и равенства для типов значений](../code-quality/ca1815.md)

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892779"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533761"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 
@@ -35,14 +35,43 @@ ms.locfileid: "80892779"
 
 Сейчас Visual Studio поддерживает раскраску синтаксиса и завершение базовых операторов для следующих языков с помощью [грамматик TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык отсутствует в таблице, &mdash;его можно добавить.
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL-код|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Производитель|Ruby|TypeScript|YAML|
+
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- Go
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL-код
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Производитель
+- Ruby
+- TypeScript
+- YAML
 
 Помимо раскраски синтаксиса и завершения основных операторов в Visual Studio также имеется функция [Перейти к](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Она позволяет быстро выполнять поиск в файлах кода, путях к файлам и символах кода. Visual Studio предоставляет поддержку функции "Перейти к" для указанных далее языков.
 
@@ -76,11 +105,11 @@ Visual Studio предоставляет языковую поддержку в 
 
 |Имя папки|Описание|
 |-----------------|-----------------|
-|\\ *\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, *\Matlab*.|
+|\\*\<language name>*|Папка языка. Замените *\<language name>* именем языка. Например, *\Matlab*.|
 |*\Syntaxes*|Папка грамматики. Содержит файлы *JSON* грамматики для языка, например *Matlab.json*.|
 |*\Snippets*|Папка фрагментов кода. Содержит фрагменты кода для языка.|
 
-В Windows *%userprofile%* разрешается в путь *c:\Users\\\<имя пользователя>* . Если в системе папки *Расширение* не существует, ее необходимо создать. Если папка уже существует, она будет скрыта.
+В Windows *%userprofile%* разрешается в путь:  *C:\Users\\\<user name>* . Если в системе папки *Расширение* не существует, ее необходимо создать. Если папка уже существует, она будет скрыта.
 
 > [!TIP]
 > Если у вас есть файлы, открытые в редакторе, вам нужно закрыть и снова открыть их, чтобы увидеть выделение синтаксических конструкций после добавления грамматик TextMate.
