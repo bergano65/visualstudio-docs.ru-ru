@@ -1,7 +1,7 @@
 ---
-title: Предоставление поддержки в языковой службе (ru) Документы Майкрософт
+title: Предоставление поддержки структурирования в языковой службе | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
@@ -12,45 +12,45 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37deafa92477289a2124ecee101dd254e68ef01d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707967"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905286"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Как: Обеспечить расширенную поддержку с изложением в устаревшей языковой службе
-Существует два варианта расширения поддержки вашего языка, помимо поддержки команды **«Обюгирование» команде «Определения».** Можно добавить регионы контура, контролируемые редактором, и добавить регионы контура, контролируемые клиентами.
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Руководство. Предоставление расширенной поддержки структурирования в языковой службе прежних версий
+Существует два варианта расширения поддержки структурирования для вашего языка, помимо поддержки команды **Свернуть в определения** . Можно добавить области структуры, управляемые редактором, и добавить области структуры, управляемые клиентом.
 
-## <a name="adding-editor-controlled-outline-regions"></a>Добавление регионов, контролируемых редактором, набросков
- Используйте этот подход, чтобы создать область контуров, а затем позвольте редактору справиться с тем, расширяется ли область, разрушается и так далее. Из двух вариантов предоставления поддержки этот вариант является наименее надежным. Для этой опции создается новая область контура <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>на указанном диапазоне текста с использованием. После создания этого региона его поведение контролируется редактором. Используйте следующую процедуру для реализации регионов, контролируемых редактором, набросков.
+## <a name="adding-editor-controlled-outline-regions"></a>Добавление областей структуры, управляемых редактором
+ Используйте этот подход для создания области структуры, а затем разрешите редактору, что область разворачивается, сворачивается и т. д. Из двух вариантов предоставления поддержки структурирования этот параметр является наименее надежным. Для этого параметра вы создаете новую область структуры на основе указанного фрагмента текста с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> . После создания этого региона его поведение управляется редактором. Следующая процедура используется для реализации областей структуры, управляемых редактором.
 
-### <a name="to-implement-an-editor-controlled-outline-region"></a>Реализация региона контура, контролируемого редактором
+### <a name="to-implement-an-editor-controlled-outline-region"></a>Реализация области структуры, управляемой редактором
 
-1. Звоните `QueryService` для<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Вызов `QueryService` для<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
-     Это возвращает указатель <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>на .
+     Он возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Вызов, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>проходя в указатель для данного буфера текста. Это возвращает указатель <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> объекту для буфера.
+2. Вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> , передавая указатель на заданный текстовый буфер. Он возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> объект для буфера.
 
-3. <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> Позвоните <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> для указателя <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>на .
+3. Вызовите <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> On <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> для указателя на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> .
 
-4. Призыв <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> добавлять один или несколько новых регионов контура одновременно.
+4. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> , чтобы добавить один или несколько новых областей структуры за раз.
 
-     Этот метод позволяет определить диапазон текста для набросков, удалены или сохранены существующие области контура, а также расширение или сворачивание области контура по умолчанию.
+     Этот метод позволяет указать диапазон текста для структурирования, необходимость удаления или сохранения существующих областей структуры, а также по умолчанию разворачивать или сворачивать область структуры.
 
-## <a name="add-client-controlled-outline-regions"></a>Добавление регионов контура, контролируемого клиентами
- Используйте этот подход для реализации контролируемых клиентом (или умных) с изложением, как тот, который используется [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] языковых служб. Языковая служба, управляющая собственным изложением, отслеживает содержимое буфера текста, чтобы уничтожить старые области контуров, когда они становятся недействительными, и создавать новые области контуров по мере необходимости.
+## <a name="add-client-controlled-outline-regions"></a>Добавление областей структуры, управляемых клиентом
+ Используйте этот подход, чтобы реализовать управляемую клиентом (или интеллектуальную) структуру, подобную используемой [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] службами языка и. Языковая служба, управляющая собственной структурой, отслеживает содержимое текстового буфера для уничтожения старых областей структуры, когда они становятся недействительными, и для создания новых областей структуры по мере необходимости.
 
-### <a name="to-implement-a-client-controlled-outline-region"></a>Реализация региона, контролируемого клиентом,
+### <a name="to-implement-a-client-controlled-outline-region"></a>Реализация области структуры, управляемой клиентом
 
-1. `QueryService` Звоните <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>для . Это возвращает указатель <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>на .
+1. Вызовите метод `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> . Он возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Вызов, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>проходя в указатель для данного буфера текста. Это определяет, существует ли уже скрытый сеанс текста для буфера.
+2. Вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> , передавая указатель на заданный текстовый буфер. Определяет, существует ли уже скрытый текстовый сеанс для буфера.
 
-3. Если сеанс текста уже существует, то не нужно его создавать, и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> возвращается указатель на существующий объект. Используйте этот указатель для перечисления и создания областей контура. В противном случае вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> для создания скрытого сеанса текста для буфера. Возвращается указатель <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> на объект.
+3. Если текстовый сеанс уже существует, то создавать его не нужно, и возвращается указатель на существующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> объект. Используйте этот указатель для перечисления и создания областей структуры. В противном случае вызовите, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> чтобы создать скрытый текстовый сеанс для буфера. Возвращается указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> объект.
 
     > [!NOTE]
-    > При вызове <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>можно указать скрытый текстовый <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> клиент (т.е. объект). Этот клиент уведомляет вас, когда скрытый текст или область контура расширяется или разрушается пользователем.
+    > При вызове <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> можно указать скрытый текстовый клиент (т <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> . е. объект). Этот клиент уведомляет вас о том, что скрытый текст или область структуры развернуты или свернуты пользователем.
 
-4. Структура <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> вызова) параметр: <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> Укажите `iType` значение <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> в элементе структуры, чтобы указать, что вы создаете область контура, а не скрытый регион. Укажите, контролируется ли регион клиентом `dwBehavior` или контролируется редактором в составе <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Ваша интеллектуальная реализация может содержать сочетание регионов, контролируемых редакторами и клиентами. Укажите текст баннера, отображаемый при обрушении области `pszBanner` контура, <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> например "...", в члене структуры. Текст баннера редактора по умолчанию для скрытого региона — «...».
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>Структура вызова) параметр: Укажите значение в элементе <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> `iType` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры, чтобы указать, что создается область структуры, а не скрытая область. Укажите, является ли регион управляемым клиентом или управляемым редактором в элементе `dwBehavior` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Реализация интеллектуального структурирования может содержать различные регионы структуры, управляемые редактором и клиентами. Укажите текст баннера, который будет отображаться при свертывании области структуры, например "...", в элементе `pszBanner` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> структуры. Текст баннера редактора по умолчанию для скрытой области — "...".

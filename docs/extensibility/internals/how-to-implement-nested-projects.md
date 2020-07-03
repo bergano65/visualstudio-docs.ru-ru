@@ -1,7 +1,7 @@
 ---
-title: 'Как: Реализация вложенных проектов Документы Майкрософт'
+title: Как реализовать вложенные проекты | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
@@ -11,83 +11,83 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d9dfe567db0b8788b93b13aeb760d45f4c05b57
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707976"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905343"
 ---
-# <a name="how-to-implement-nested-projects"></a>Как: Реализация вложенных проектов
+# <a name="how-to-implement-nested-projects"></a>Руководство. Реализация вложенных проектов
 
-При создании вложенного типа проекта необходимо реализовать несколько дополнительных шагов. Родительский проект берет на себя те же обязанности, что и решение для вложенных (детских) проектов. Родительский проект представляет собой контейнер проектов, аналогичных решению. В частности, есть несколько событий, которые должны быть подняты решением и родительскими проектами для построения иерархии вложенных проектов. Эти события описаны в следующем процессе для создания вложенных проектов.
+При создании вложенного типа проекта необходимо реализовать несколько дополнительных действий. Родительский проект принимает некоторые из тех же обязанностей, которые имеет решение для вложенных (дочерних) проектов. Родительский проект — это контейнер проектов, аналогичный решению. В частности, существует несколько событий, которые должны быть вызваны решением и родительскими проектами для построения иерархии вложенных проектов. Эти события описаны в следующем процессе создания вложенных проектов.
 
 ## <a name="create-nested-projects"></a>Создание вложенных проектов
 
-1. Интегрированная среда разработки (IDE) загружает файл проекта и <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> информацию о запуске родительского проекта, вызывая интерфейс. Родительский проект создается и добавляется в решение.
+1. Интегрированная среда разработки (IDE) загружает файл проекта родительского проекта и сведения о запуске путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> интерфейса. Родительский проект создается и добавляется в решение.
 
     > [!NOTE]
-    > На данном этапе родительский проект еще слишком рано, чтобы создать вложенный проект, поскольку родительский проект должен быть создан до создания проекта «ребенок». После этой последовательности родительский проект может применять настройки к проектам ребенка, а проекты «ребенок» могут при необходимости получить информацию от родительских проектов. Эта последовательность, если она необходима для клиентов, таких как контроль исходного кода (SCC) и **Solution Explorer**.
+    > На этом этапе в процессе создания вложенного проекта в родительском проекте слишком рано или поздно, так как родительский проект должен быть создан до того, как дочерние проекты могут быть созданы. После выполнения этой последовательности родительский проект может применять параметры к дочерним проектам, и дочерние проекты могут при необходимости получать сведения из родительских проектов. Эта последовательность необходима для клиентов, таких как система управления исходным кодом (SCC) и **Обозреватель решений**.
 
-     Родительский проект должен <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> дождаться вызова IDE метода, прежде чем он сможет создать свой вложенный (детский) проект или проекты.
+     Родительский проект должен ожидать <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> вызова метода интегрированной средой разработки, прежде чем он сможет создать вложенный (дочерний) проект или проекты.
 
-2. IDE призывает `QueryInterface` к родительскому <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>проекту для . Если этот вызов удается, IDE вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> метод родителя, чтобы открыть все вложенные проекты для родительского проекта.
+2. Среда IDE вызывает `QueryInterface` родительский проект для <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject> . Если этот вызов будет выполнен, интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> метод родительского элемента, чтобы открыть все вложенные проекты для родительского проекта.
 
-3. Родительский проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> вызывает метод уведомления слушателей о том, что вложенные проекты вот-вот будут созданы. SCC, например, прислушивается к этим событиям, чтобы узнать, происходят ли шаги в процессе создания решения и проекта в порядке. Если шаги происходят не по порядку, решение может быть неправильно зарегистрировано с помощью управления исходным кодом.
+3. Родительский проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> метод для уведомления прослушивателей о создании вложенных проектов. Например, SCC прослушивает эти события, чтобы убедиться в том, что шаги в процессе создания решения и проекта выполняются по порядку. Если действия выполняются не по порядку, решение может быть неправильно зарегистрировано в системе управления исходным кодом.
 
-4. Родительский проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> метод или метод на каждом из своих детских проектов.
+4. Родительский проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> метод или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> метод для каждого из его дочерних проектов.
 
-     Вы <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> перейдете `AddVirtualProject` к методу, чтобы указать, что виртуальный (вложенный) проект должен быть добавлен в окно проекта, исключен из сборки, добавлен в элемент управления исходным кодом и так далее. `VSADDVPFLAGS`позволяет контролировать видимость вложенного проекта и указывать, какая функциональность связана с ним.
+     Передайте <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> метод, `AddVirtualProject` чтобы указать, что виртуальный (вложенный) проект должен быть добавлен в окно проекта, исключен из сборки, добавлен в систему управления исходным кодом и т. д. `VSADDVPFLAGS`позволяет управлять видимостью вложенного проекта и указывать, какие функции связаны с ним.
 
-     Если вы перезагрузите ранее существующий проект ребенка, в рамках которого в `AddVirtualProjectEx`файле проекта родительского проекта хранится проект GUID, родительский проект вызывает вызовы. Единственное различие `AddVirtualProject` `AddVirtualProjectEX` между `AddVirtualProjectEX` тем, что имеет параметр, позволяющий `guidProjectID` родительскому проекту <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> указать каждый экземпляр для проекта ребенка, чтобы включить и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> функционировать правильно.
+     При перезагрузке ранее существующего дочернего проекта с идентификатором GUID проекта, хранящимся в файле проекта родительского проекта, родительский проект вызывает `AddVirtualProjectEx` . Единственное различие между `AddVirtualProject` и `AddVirtualProjectEX` состоит в том, что имеет параметр, позволяющий `AddVirtualProjectEX` родительскому проекту указывать для каждого экземпляра `guidProjectID` дочернего проекта, который должен быть включен <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> правильно функционировать.
 
-     Если GUID недоступен, например, при добавлении нового вложенного проекта, решение создает его для проекта в момент его добавления к родительскому проекту. Родительский проект несет ответственность за сохранение этого проекта GUID в файле проекта. При удалении вложенного проекта GUID для этого проекта также может быть удален.
+     Если идентификатор GUID недоступен, например, при добавлении нового вложенного проекта, решение создает его для проекта во время добавления в родительский проект. Родительский проект несет ответственность за сохранение идентификатора GUID проекта в файле проекта. При удалении вложенного проекта идентификатор GUID для этого проекта также можно удалить.
 
-5. IDE называет <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> метод каждого детского проекта родительского проекта.
+5. Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> метод для каждого дочернего проекта родительского проекта.
 
-     Родительский проект `IVsParentProject` должен быть реализован, если вы хотите гнездить проекты. Но родительский проект `QueryInterface` `IVsParentProject` никогда не требует, даже если он имеет родительские проекты под ним. Решение обрабатывает вызов `IVsParentProject` и, если оно реализовано, требует `OpenChildren` создания вложенных проектов. `AddVirtualProjectEX`всегда вызывается `OpenChildren`от . Он никогда не должен вызываться родительским проектом, чтобы поддерживать события создания иерархии в порядке.
+     Родительский проект должен быть реализован, `IVsParentProject` Если нужно вложить проекты. Но родительский проект никогда не `QueryInterface` вызывает `IVsParentProject` , даже если у него есть родительские проекты под ним. Решение обрабатывает вызов функции `IVsParentProject` и, если он реализован, вызывается `OpenChildren` для создания вложенных проектов. `AddVirtualProjectEX`метод всегда вызывается из `OpenChildren` . Он никогда не должен вызываться родительским проектом для сохранения порядка событий создания иерархии.
 
-6. IDE называет <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> метод на проекте ребенка.
+6. Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> метод для дочернего проекта.
 
-7. Родительский проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> вызывает метод уведомления слушателей о том, что проекты ребенка для родительского объекта были созданы.
+7. Родительский проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> метод для уведомления прослушивателей о том, что дочерние проекты для родителя были созданы.
 
-8. IDE вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> метод на родительский проект после того, как все детские проекты были открыты.
+8. Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> метод родительского проекта после открытия всех дочерних проектов.
 
-     Если он еще не существует, родительский проект создает GUID `CoCreateGuid`для каждого вложенного проекта, вызывая .
-
-    > [!NOTE]
-    > `CoCreateGuid`— это aPI COM, называемый при создании GUID. Для получения дополнительной `CoCreateGuid` информации, см.
-
-     Родительский проект хранит этот GUID в своем файле проекта, чтобы получить следующий раз, когда он будет открыт в IDE. Дополнительную информацию о призвании `AddVirtualProjectEX` получить `guidProjectID` для проекта "Ребенок" можно найти на шаг 4.
-
-9. Затем <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод вызывается для родительского ItemID, который по конвенции делегируется в вложенный проект. Извлекает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> свойства узла, который гнездится в проекте, который вы хотите делегировать, когда он вызывается на родительский.
-
-     Поскольку родительские и детские проекты мгновенно программируются, на этом этапе можно настроить свойства для вложенных проектов.
+     Если он еще не существует, родительский проект создает идентификатор GUID для каждого вложенного проекта путем вызова `CoCreateGuid` .
 
     > [!NOTE]
-    > Вы не только получаете контекстную информацию от вложенного проекта, но и можете спросить, есть ли у родительского проекта контекст для этого элемента, проверяя [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Таким образом, можно добавить дополнительные динамические атрибуты справки и параметры меню, характерные для отдельных вложенных проектов.
+    > `CoCreateGuid`— Это COM-API, вызываемый при создании идентификатора GUID. Дополнительные сведения см `CoCreateGuid` . в разделе и идентификаторы GUID в библиотеке MSDN.
 
-10. Иерархия построена для отображения в <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> Solution **Explorer** с вызовом к методу.
+     Родительский проект сохраняет этот GUID в файле проекта для извлечения при следующем открытии в интегрированной среде разработки. Дополнительные сведения о вызове метода для `AddVirtualProjectEX` получения `guidProjectID` для дочернего проекта см. в разделе Шаг 4.
 
-     Вы передаем иерархию в `GetNestedHierarchy` среду, чтобы построить иерархию для отображения в Solution Explorer. Таким образом, решение знает, что проект существует и может управляться для построения менеджером сборки, или может позволить файлы в проекте, чтобы быть поставлены под управление исходного кода.
+9. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>Затем метод вызывается для родительского элемента ItemId, который в соответствии с соглашением делегируется вложенному проекту. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>Возвращает свойства узла, который вкладывает проект, в который необходимо делегировать, при вызове в родительском объекте.
 
-11. Когда все вложенные проекты для Project1 были созданы, контроль передается обратно к решению и процесс повторяется для Project2.
+     Так как экземпляры родительских и дочерних проектов создаются программно, на этом этапе можно установить свойства для вложенных проектов.
 
-     Этот же процесс для создания вложенных проектов происходит для детского проекта, в который есть ребенок. В этом случае, если бы у BuildProject1, который является ребенком Проекта1, были детские проекты, они были бы созданы после BuildProject1 и до Project2. Процесс является рекурсивным и иерархия построена сверху вниз.
+    > [!NOTE]
+    > Вы можете не только получить сведения о контексте из вложенного проекта, но и узнать, есть ли в родительском проекте контекст для этого элемента, проверив [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Таким образом можно добавить дополнительные атрибуты динамической справки и параметры меню, относящиеся к отдельным вложенным проектам.
 
-     Когда вложенный проект закрывается, потому что пользователь закрыл решение или `IVsParentProject` <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>сам конкретный проект, называется другой метод на , . Родительский проект обертывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> к <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> методу с методами, чтобы уведомить слушателей о событиях решения, которые в настоящее время закрыты вложенные проекты.
+10. Иерархия строится для вывода в **Обозреватель решений** с вызовом <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> метода.
 
-Следующие темы касаются нескольких других концепций, которые следует учитывать при реализации вложенных проектов:
+     Иерархия передается в среду с помощью `GetNestedHierarchy` для построения иерархии для вывода в Обозреватель решений. Таким образом, решение знает, что проект существует и может управляться построением с помощью диспетчера сборок, или может разрешить размещение файлов в проекте в системе управления исходным кодом.
 
-- [Рассмотрение вопросов разгрузки и перегрузки вложенных проектов](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+11. После создания всех вложенных проектов для проект1 управление передается обратно в решение, а процесс повторяется для Project2.
+
+     Этот же процесс создания вложенных проектов происходит для дочернего проекта, у которого есть дочерний проект. В этом случае, если BuildProject1, который является дочерним по отношению к проект1, имел дочерние проекты, они будут созданы после BuildProject1 и до Project2. Процесс является рекурсивным, и иерархия строится сверху вниз.
+
+     При закрытии вложенного проекта, поскольку пользователь закрыл решение или сам проект, вызывается другой метод метода `IVsParentProject` , <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A> . Родительский проект инкапсулирует вызовы к <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> методу с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> методов и для уведомления прослушивателей о событиях решения о закрытии вложенных проектов.
+
+В следующих разделах рассматриваются некоторые другие концепции, которые следует учитывать при реализации вложенных проектов.
+
+- [Рекомендации по выгрузке и перезагрузке вложенных проектов](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Поддержка мастера для вложенных проектов](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Реализация обработки команд для вложенных проектов](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-- [Фильтр овоедело диалога AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Фильтрация диалогового окна AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Добавление элементов в диалоговую окно Добавить новый элемент](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Добавление элементов в диалоговое окно "Добавление нового элемента"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Контрольный список: Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Контекстные параметры](../../extensibility/internals/context-parameters.md)
-- [Файл Мастера (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Контрольный список: создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Параметры контекста](../../extensibility/internals/context-parameters.md)
+- [Файл мастера (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Как: Используйте журнал активности Документы Майкрософт'
+title: Как использовать журнал действий | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
@@ -11,22 +11,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710585"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905584"
 ---
-# <a name="how-to-use-the-activity-log"></a>Как: Использование журнала активности
-VSPackages может записывать сообщения в журнал активности. Эта функция особенно полезна для отладки VSPackages в розничных средах.
+# <a name="how-to-use-the-activity-log"></a>Как использовать журнал действий
+Пакеты VSPackage могут записывать сообщения в журнал действий. Эта функция особенно полезна для отладки пакетов VSPackage в розничных средах.
 
 > [!TIP]
-> Регистрация активности всегда включена. Visual Studio сохраняет скользящийся буфер последних 100 записей, а также первые 10 записей, которые имеют общую информацию о конфигурации.
+> Журнал действий всегда включен. Visual Studio сохраняет последовательный буфер последних 100 записей, а также первые 10 записей, имеющих общие сведения о конфигурации.
 
-## <a name="to-write-an-entry-to-the-activity-log"></a>Запись записи в журнал активности
+## <a name="to-write-an-entry-to-the-activity-log"></a>Запись записи в журнал действий
 
-1. Вставьте этот <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> код в метод или в любой другой метод, кроме конструктора VSPackage:
+1. Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод или в любой другой метод, кроме конструктора VSPackage:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ VSPackages может записывать сообщения в журнал а
         "Called for: {0}", this.ToString()));
     ```
 
-     Этот код <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> получает службу и <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> отбрасывает ее в интерфейс. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>записывает информационную запись в журнал активности с использованием текущего культурного контекста.
+     Этот код получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службу и приводит ее к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейсу. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>Записывает информационную запись в журнал действий, используя текущий контекст культуры.
 
-2. При загрузке VSPackage (обычно при вызове команды или открытии окна) текст записываются в журнал активности.
+2. При загрузке VSPackage (обычно при вызове команды или открытии окна) текст записывается в журнал действий.
 
-## <a name="to-examine-the-activity-log"></a>Изучить журнал активности
+## <a name="to-examine-the-activity-log"></a>Проверка журнала действий
 
-1. Запустите Visual Studio с переключателем командной строки [/Log](../ide/reference/log-devenv-exe.md) для записи ActivityLog.xml на диск во время сеанса.
+1. Запустите Visual Studio с параметром командной строки [/log](../ide/reference/log-devenv-exe.md) , чтобы записать ActivityLog.xml на диск во время сеанса.
 
-2. После закрытия Visual Studio найдите журнал активности в подфолдере для данных Visual Studio:
+2. После закрытия Visual Studio найдите журнал действий во вложенной папке для данных Visual Studio:
 
-   <em> *%AppData%</em>(версия Microsoft-VisualStudio\\\<>»ActivityLog.xml*.
+   <em> *% AppData%</em>\микрософт\висуалстудио \\ \<version>\ActivityLog.xml*.
 
-3. Откройте журнал активности с помощью любого текстового редактора. Вот типичная запись:
+3. Откройте журнал действий в любом текстовом редакторе. Вот типичная запись:
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,13 +58,13 @@ VSPackages может записывать сообщения в журнал а
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 
-Поскольку журнал активности является службой, журнал активности недоступен в конструкторе VSPackage.
+Так как журнал действий является службой, журнал действий недоступен в конструкторе VSPackage.
 
-Вы должны получить журнал активности непосредственно перед тем, как написать на него. Не кэшировать или сохранять журнал активности для использования в будущем.
+Журнал действий следует получить непосредственно перед записью в него. Не кэшировать или не сохраняйте журнал действий для будущего использования.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [/Лог (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [Устранение неполадок, связанных с пакетами VSPackage](../extensibility/troubleshooting-vspackages.md)

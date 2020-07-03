@@ -1,40 +1,40 @@
 ---
-title: Установка Визуальной студии SDK (ru) Документы Майкрософт
+title: Установка пакета SDK для Visual Studio | Документация Майкрософт
 ms.date: 07/12/2018
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f391708abbd8a9b66f2dfd5aaa6559cb075910d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 31df92b011336320d759461ed16ce2a3c8f61017
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710345"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905543"
 ---
 # <a name="install-the-visual-studio-sdk"></a>Установка пакета SDK для Visual Studio
 
-Visual Studio SDK (Комплект разработки программного обеспечения) является дополнительной функцией в установке Visual Studio. Вы также можете установить VS SDK позже.
+Пакет SDK для Visual Studio (пакет средств разработки программного обеспечения) является дополнительным компонентом программы установки Visual Studio. Кроме того, пакет SDK для VS можно установить позже.
 
-## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Установка Визуальной студии SDK в рамках установки Visual Studio
+## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Установка пакета SDK для Visual Studio в составе установки Visual Studio
 
-Чтобы включить VS SDK в установку Visual Studio, установите рабочую нагрузку на **разработку расширения Visual Studio** под **другими наборами инструментов.** Эта рабочая нагрузка установит Visual Studio SDK и необходимые предпосылки. Вы можете дополнительно настроить установку, выбрав или не выбрав компоненты из представления **Резюме.**
+Чтобы включить пакет VS SDK в установку Visual Studio, установите рабочую нагрузку **Разработка расширений Visual Studio** в разделе **другие наборы инструментов**. Эта Рабочая нагрузка установит пакет SDK для Visual Studio и необходимые компоненты. Можно дополнительно настроить установку, выбрав или отменив выбор компонентов в представлении " **Сводка** ".
 
-## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Установка визуальной студии SDK после установки Visual Studio
+## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Установка пакета SDK для Visual Studio после установки Visual Studio
 
-Чтобы установить Visual Studio SDK после завершения установки Visual Studio, перезапустите установку Visual Studio и выберите рабочую нагрузку разработки **расширения Visual Studio.**
+Чтобы установить пакет SDK для Visual Studio после завершения установки Visual Studio, повторно запустите установщик Visual Studio и выберите рабочую нагрузку " **Разработка расширений Visual Studio** ".
 
-## <a name="install-the-visual-studio-sdk-from-a-solution"></a>Установка Визуальной студии SDK из решения
+## <a name="install-the-visual-studio-sdk-from-a-solution"></a>Установка пакета SDK для Visual Studio из решения
 
-Если вы откроете решение с проектом расширения без предварительной установки VS SDK, вам будет предложено диалог **установки missing Feature** для установки рабочей нагрузки **разработки расширения Visual Studio:**
+Если вы откроете решение с проектом расширения среды без предварительной установки пакета VS SDK, появится диалоговое окно **Установка отсутствующего компонента** для установки рабочей нагрузки **разработки расширения Visual Studio** :
 
-![Установка разработки расширения](../extensibility/media/install-extension-development.png "Установка разработки расширения")
+![Установить разработку расширений](../extensibility/media/install-extension-development.png "Установить разработку расширений")
 
-## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>Установка Визуальной студии SDK из командной строки
+## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>Установка пакета SDK для Visual Studio из командной строки
 
-Как и в случае с любой рабочей нагрузкой или компонентом Visual Studio, вы также можете установить рабочую нагрузку на **разработку расширения Visual Studio** (ID: Microsoft.VisualStudio.Workload.VisualStudioExtension) из командной строки. Просмотрите [параметры командной строки для установки Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) для получения подробной информации о соответствующих коммутаторах командной строки и общих инструкциях по определению рабочей нагрузки или идентификаторов компонентов.
+Как и в случае с любой рабочей нагрузкой или компонентом Visual Studio, можно также установить рабочую нагрузку **разработки расширения Visual Studio** (идентификатор: Microsoft. VisualStudio. Рабочая нагрузка. висуалстудиоекстенсион) из командной строки. Дополнительные сведения о параметрах командной строки и общие инструкции по определению идентификаторов рабочей нагрузки или компонентов см. в статье [Использование параметров командной строки для установки Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) .
 
-Обратите внимание, что вы должны использовать установку Visual Studio, которая соответствует установленной версии Visual Studio. Например, если на компьютере установлено Visual Studio Enterprise, необходимо запустить установку Visual Studio Enterprise *(vs_enterprise.exe).*
+Обратите внимание, что необходимо использовать установщик Visual Studio, соответствующий установленной версии Visual Studio. Например, если на компьютере установлен Visual Studio Enterprise, необходимо запустить установщик Visual Studio Enterprise (*vs_enterprise.exe*).
