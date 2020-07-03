@@ -1,7 +1,7 @@
 ---
 title: Добавление параметров командной строки | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536283"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903483"
 ---
 # <a name="add-command-line-switches"></a>Добавление параметров командной строки
 При выполнении *devenv.exe* можно добавить параметры командной строки, которые применяются к пакету VSPackage. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени переключателя и его свойств. В этом примере параметр Мисвитч добавляется для подкласса VSPackage с именем **аддкоммандсвитчпаккаже** без аргументов и при этом автоматически загружается пакетом VSPackage.
@@ -67,7 +67,7 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  Вы обязаны проверять параметры командной строки каждый раз при загрузке пакета.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Параметры командной строки для Devenv](../ide/reference/devenv-command-line-switches.md)

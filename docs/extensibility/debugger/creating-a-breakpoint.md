@@ -1,7 +1,7 @@
 ---
-title: Создание точки разрыва (ru) Документы Майкрософт
+title: Создание точки останова | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
@@ -11,18 +11,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d252f1310c3e251c44525cd94c4d9a2943d8171d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739054"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903625"
 ---
-# <a name="create-a-breakpoint"></a>Создание точки разрыва
-Ниже описывается процесс создания точки разрыва.
+# <a name="create-a-breakpoint"></a>Создание точки останова
+Ниже описывается процесс создания точки останова.
 
-## <a name="methods-in-breakpoint-creation"></a>Методы создания точки разрыва
- Когда модуль, необходимый для привязки точки разрыва, загружается, диспетчер отладки сеанса (SDM) вызывает следующие методы:
+## <a name="methods-in-breakpoint-creation"></a>Методы в создании точки останова
+ Когда загружается модуль, необходимый для привязки точки останова, диспетчер отладки сеансов (SDM) вызывает следующие методы:
 
 1. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)
 
@@ -31,11 +31,11 @@ ms.locfileid: "80739054"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    > **CanBind** вызывается только тогда, когда пользователь делает точку разрыва из окна **Breakpoints.**
+    > **Канбинд** вызывается только в том случае, если пользователь создает точку останова из окна **точек останова** .
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
-## <a name="see-also"></a>См. также
-- [События отладки вызова](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Дополнительно
+- [События отладчика Call](../../extensibility/debugger/calling-debugger-events.md)

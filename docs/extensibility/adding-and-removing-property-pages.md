@@ -1,7 +1,7 @@
 ---
-title: Добавление и удаление страниц свойств (ru) Документы Майкрософт
+title: Добавление и удаление страниц свойств | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -15,24 +15,24 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fdc12f0938d3296cf1bfca37d0b9b01e0f2a704a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740201"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903574"
 ---
 # <a name="add-and-remove-property-pages"></a>Добавление и удаление страниц свойств
 
-Проект «Конструктор» предоставляет централизованное место для управления свойствами, настройками и ресурсами проекта. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Он отображается как единое окно в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) и содержит ряд стекол справа, которые доступны через вкладки слева. Панели (часто называемые страницами свойств) в проекте Designer различаются в зависимости от типа проекта и языка. Дизайнер проекта может быть доступен с командой **Свойств** в меню **проекта.**
+Конструктор проектов предоставляет централизованное расположение для управления свойствами, параметрами и ресурсами проекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Он отображается в виде одного окна в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среде разработки (IDE) и содержит несколько панелей справа, доступ к которым осуществляется через вкладки слева. Панели (часто называемые страницами свойств) в конструкторе проектов зависят от типа и языка проекта. Доступ к конструктору проектов можно получить с помощью команды **Свойства** в меню **проект** .
 
-Подтип проекта часто должен отображать дополнительные страницы свойств в проекте Designer. Аналогичным образом, некоторые подтипы проектов могут потребовать удаления встроенных страниц свойств. Для выполнения любого <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> из них подтип проекта должен реализовать интерфейс и переопределить метод. Переопределяя этот `propId` метод и используя параметр, содержащий одно из значений <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления, можно отфильтровать, добавить или удалить свойства проекта. Например, может потребоваться добавить страницу на страницы свойств, зависящих от конфигурации. Для этого необходимо отфильтровать страницы свойств, зависящие от конфигурации, а затем добавить новую страницу в существующий список.
+Подтипу проекта часто требуется отображать дополнительные страницы свойств в конструкторе проектов. Аналогичным образом, некоторые подтипы проектов могут потребовать удаления встроенных страниц свойств. Для этого в подтипе проекта должен быть реализован <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс и переопределен <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод. Переопределяя этот метод и используя `propId` параметр, содержащий одно из значений <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления, можно фильтровать, добавлять или удалять свойства проекта. Например, может потребоваться добавить страницу на страницы свойств, зависящие от конфигурации. Для этого необходимо отфильтровать страницы свойств, зависящие от конфигурации, а затем добавить новую страницу в существующий список.
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>Добавление и удаление страниц свойств в Проекте Designer
+## <a name="add-and-remove-property-pages-in-project-designer"></a>Добавление и удаление страниц свойств в конструкторе проектов
 
-### <a name="remove-a-property-page"></a>Удалить страницу свойств
+### <a name="remove-a-property-page"></a>Удаление страницы свойств
 
-1. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод фильтрации страниц свойств `clsids` и получить список.
+1. Переопределите `GetProperty(uint itemId, int propId, out object property)` метод, чтобы отфильтровать страницы свойств и получить `clsids` список.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "80740201"
     }
     ```
 
-2. Удалите страницу событий `clsids` **сборки** из полученного списка.
+2. Удаляет страницу « **события сборки** » из `clsids` списка полученных.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "80740201"
 
 ### <a name="add-a-property-page"></a>Добавление страницы свойств
 
-1. Создайте страницу свойств, добавленную.
+1. Создайте страницу свойств, которую нужно добавить.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "80740201"
     }
     ```
 
-2. Зарегистрируйте свою новую страницу недвижимости.
+2. Зарегистрируйте новую страницу свойств.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "80740201"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод фильтрации страниц свойств, получить `clsids` список и добавить новую страницу свойств.
+3. Переопределите `GetProperty(uint itemId, int propId, out object property)` метод, чтобы отфильтровать страницы свойств, получить `clsids` список и добавить новую страницу свойств.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer
@@ -206,6 +206,6 @@ ms.locfileid: "80740201"
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Подтипы проекта](../extensibility/internals/project-subtypes.md)
+- [Подтипы проектов](../extensibility/internals/project-subtypes.md)

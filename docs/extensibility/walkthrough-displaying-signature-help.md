@@ -1,7 +1,7 @@
 ---
-title: 'Пошаговая прогулка: Отображение Справки по подписи (ru) Документы Майкрософт'
+title: Пошаговое руководство. Отображение справки по сигнатурам | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
@@ -10,49 +10,49 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f85d7eb3959064468e7583ec0c8a927f3e139daf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697421"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904821"
 ---
-# <a name="walkthrough-display-signature-help"></a>Пошаговая прогулка: Помощь в отображении подписи
-Справка о подписи (также известная как *Параметр Информация)* отображает подпись метода в наборе инструментов, когда пользователь набирает стартовый символ списка параметров (обычно открываюшую скобку). По мере набранного параметра и параметра (обычно запятой) набор инструментов обновляется, чтобы показать следующий параметр жирным шрифтом. Вы можете определить справку о подписи следующим образом: в контексте языковой службы определить свое собственное расширение и тип содержимого и отобразить справку о подписи только для этого типа, или отобразить справку о подписи для существующего типа содержимого (например, "текст"). В этом пошаговом показании, как отобразить справку о подписи для типа содержимого "текст".
+# <a name="walkthrough-display-signature-help"></a>Пошаговое руководство. Отображение справки по сигнатурам
+Справка по сигнатурам (также называемая *сведениями о параметрах*) отображает сигнатуру метода в подсказке, когда пользователь вводит начальный символ списка параметров (обычно это открывающая круглая скобка). При вводе разделителя параметров и параметров (обычно запятая) подсказка обновляется для отображения следующего параметра полужирным шрифтом. Справку по сигнатурам можно определить следующими способами: в контексте языковой службы определите собственное расширение имени файла и тип содержимого, а также справку по сигнатурам для этого типа или отобразите справку по сигнатуре для существующего типа содержимого (например, "Text"). В этом пошаговом руководстве показано, как отобразить справку по сигнатуре для типа содержимого text.
 
- Справка о подписи обычно вызывается путем ввода определенного символа, например, "(" (открытие скобки) и отклонена путем ввода другого символа, например,") "(закрытие скобки). Функции IntelliSense, срабатывающие при вводе персонажа, могут быть реализованы с помощью обработчика команд для нажатий клавиш <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> (интерфейс) и поставщика обработчиков, который реализует <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> интерфейс. Для создания источника справки подписи, который представляет собой список <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> подписей, участвующих <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> в справке подписи, реализуйте интерфейс и поставщик исходных данных, который запускает интерфейс. Поставщики являются компонентами управляемой расширительности (MEF) и отвечают за экспорт классов исходного кода и контроллера и импорт услуг и брокеров, например, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, который позволяет перемещаться в буфере текста, и <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, который запускает сеанс справки подписи.
+ Справка по сигнатуре обычно запускается путем ввода определенного символа, например "(" (открывающая скобка), и закрытия путем ввода другого символа, например ")" (закрывающей скобки). Функции IntelliSense, активируемые при вводе символа, могут быть реализованы с помощью обработчика команд для нажатий клавиш ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс) и поставщика обработчика, реализующего <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> интерфейс. Для создания источника справки сигнатур, который является списком подписей, участвующих в справке по сигнатурам, реализуют <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> интерфейс и поставщик источника, который выполняет <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> интерфейс. Поставщики — это компоненты компонентов Managed Extensibility Framework (MEF), которые отвечают за экспорт классов источников и контроллеров, а также импорт служб и брокеров, например <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> ,, который позволяет перемещаться по текстовому буферу и <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> , который активирует сеанс справки сигнатуры.
 
- В этом пошаговом показании, как настроить справку о подписях для жестко закодированного набора идентификаторов. В полной реализации, язык несет ответственность за предоставление этого содержания.
+ В этом пошаговом руководстве показано, как настроить справку по сигнатуре для жестко запрограммированного набора идентификаторов. В полной реализации язык отвечает за предоставление этого содержимого.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, вы не устанавливаете Visual Studio SDK из центра загрузки. Он включен в качестве дополнительной функции в Visual Studio установки. Вы также можете установить VS SDK позже. Для получения дополнительной информации, [см.](../extensibility/installing-the-visual-studio-sdk.md)
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="creating-a-mef-project"></a>Создание проекта MEF
 
 #### <a name="to-create-a-mef-project"></a>Создание проекта MEF
 
-1. Создайте проект СЗ VSIX. (В **диалоге нового проекта** выберите **Visual C / Расширяемость,** затем **VSIX Project**.) Назовите решение. `SignatureHelpTest`
+1. Создание проекта VSIX C#. (В диалоговом окне **Новый проект** выберите **Visual C#/Extensibility**, а затем **проект VSIX**.) Присвойте решению имя `SignatureHelpTest` .
 
-2. Добавьте шаблон элемента классификатора редактора в проект. Для получения дополнительной информации [см. Создать расширение с шаблоном элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Добавьте шаблон элемента классификатора редактора в проект. Дополнительные сведения см. в разделе [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 3. Удалите файлы существующих классов.
 
-4. Добавьте следующие ссылки на проект и убедитесь, что **CopyLocal** настроен на: `false`
+4. Добавьте в проект следующие ссылки и убедитесь, что для свойства **CopyLocal** задано значение `false` :
 
-     Microsoft.VisualStudio.Редактор
+     Microsoft. VisualStudio. Editor
 
      Microsoft.VisualStudio.Language.Intellisense
 
-     Microsoft.VisualStudio.OLE.Interop
+     Microsoft. VisualStudio. OLE. Interop
 
-     Microsoft.VisualStudio.Shell.14.0
+     Microsoft. VisualStudio. Shell.,
 
-     Microsoft.VisualStudio.TextManager.Interop
+     Microsoft. VisualStudio. TextManager. Interop
 
-## <a name="implement-signature-help-signatures-and-parameters"></a>Реализация подписи и параметры справки подписи
- Источник справки подписи основан <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>на сигнатурах, <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>которые реализуем, каждый из которых содержит параметры, которые реализуем. При полной реализации эта информация будет получена из языковой документации, но в этом примере подписи жестко закодированы.
+## <a name="implement-signature-help-signatures-and-parameters"></a>Реализация подписей и параметров в справке по сигнатурам
+ Источник справки по сигнатуре основан на сигнатурах, реализующих <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature> , каждый из которых содержит параметры, реализующие <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter> . В полной реализации эта информация будет получена из документации по языку, но в этом примере сигнатуры жестко запрограммированы.
 
-#### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Реализация подписей и параметров справки подписи
+#### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Реализация сигнатур и параметров в справке по сигнатурам
 
 1. Добавьте файл класса с именем `SignatureHelpSource`.
 
@@ -61,77 +61,77 @@ ms.locfileid: "80697421"
      [!code-vb[VSSDKSignatureHelpTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_1.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_1.cs)]
 
-3. Добавьте класс, названный, `TestParameter` который <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>реализуется.
+3. Добавьте класс с именем `TestParameter` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter> .
 
      [!code-vb[VSSDKSignatureHelpTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_2.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_2.cs)]
 
-4. Добавьте конструктор, который устанавливает все свойства.
+4. Добавьте конструктор, который задает все свойства.
 
      [!code-vb[VSSDKSignatureHelpTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_3.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_3.cs)]
 
-5. Добавить свойства <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.
+5. Добавьте свойства <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter> .
 
      [!code-vb[VSSDKSignatureHelpTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_4.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_4.cs)]
 
-6. Добавьте класс, названный, `TestSignature` который <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>реализуется.
+6. Добавьте класс с именем `TestSignature` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature> .
 
      [!code-vb[VSSDKSignatureHelpTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_5.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_5.cs)]
 
-7. Добавьте несколько частных полей.
+7. Добавьте некоторые закрытые поля.
 
      [!code-vb[VSSDKSignatureHelpTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_6.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_6.cs)]
 
-8. Добавьте конструктор, который устанавливает поля и <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> подписывается на событие.
+8. Добавьте конструктор, который задает поля и подписывается на <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> событие.
 
      [!code-vb[VSSDKSignatureHelpTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_7.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_7.cs)]
 
-9. Объявить `CurrentParameterChanged` событие. Это событие возникает, когда пользователь заполняет один из параметров в подписи.
+9. Объявите `CurrentParameterChanged` событие. Это событие возникает при заполнении пользователем одного из параметров в сигнатуре.
 
      [!code-vb[VSSDKSignatureHelpTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_8.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_8.cs)]
 
-10. Реализация <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.CurrentParameter%2A> свойства, чтобы оно `CurrentParameterChanged` выражалось при изменении значения свойства.
+10. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.CurrentParameter%2A> свойство таким образом, чтобы оно вызывало `CurrentParameterChanged` событие при изменении значения свойства.
 
      [!code-vb[VSSDKSignatureHelpTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_9.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_9.cs)]
 
-11. Добавьте метод, `CurrentParameterChanged` который поднимает событие.
+11. Добавьте метод, который вызывает `CurrentParameterChanged` событие.
 
      [!code-vb[VSSDKSignatureHelpTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_10.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_10.cs)]
 
-12. Добавьте метод, который вычисляет текущий параметр, сравнивая количество запятых в <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> количестве запятых в подписи.
+12. Добавьте метод, который выполняет вычисление текущего параметра, сравнивая количество запятый в <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> с числом запятых в сигнатуре.
 
      [!code-vb[VSSDKSignatureHelpTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_11.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_11.cs)]
 
-13. Добавьте обработчик <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> события для `ComputeCurrentParameter()` события, который вызывает метод.
+13. Добавьте обработчик событий для <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> события, вызывающего `ComputeCurrentParameter()` метод.
 
      [!code-vb[VSSDKSignatureHelpTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_12.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_12.cs)]
 
-14. Реализуйте свойство <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A>. Это свойство <xref:Microsoft.VisualStudio.Text.ITrackingSpan> содержит, что соответствует пролету текста в буфере, к которому применяется подпись.
+14. Реализуйте свойство <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A>. Это свойство содержит объект <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , соответствующий диапазону текста в буфере, к которому применяется подпись.
 
      [!code-vb[VSSDKSignatureHelpTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_13.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_13.cs)]
 
-15. Реализация других параметров.
+15. Реализуйте другие параметры.
 
      [!code-vb[VSSDKSignatureHelpTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_14.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_14.cs)]
 
-## <a name="implement-the-signature-help-source"></a>Реализация источника справки подписи
- Источник справки подписи — это набор подписей, для которых вы предоставляете информацию.
+## <a name="implement-the-signature-help-source"></a>Реализация источника справки по сигнатурам
+ Источник справки по подписи — это набор сигнатур, для которых предоставляются сведения.
 
-#### <a name="to-implement-the-signature-help-source"></a>Реализация источника справки подписи
+#### <a name="to-implement-the-signature-help-source"></a>Реализация источника справки по сигнатурам
 
-1. Добавьте класс, названный, `TestSignatureHelpSource` который <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>реализуется.
+1. Добавьте класс с именем `TestSignatureHelpSource` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> .
 
      [!code-vb[VSSDKSignatureHelpTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_15.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_15.cs)]
@@ -141,108 +141,108 @@ ms.locfileid: "80697421"
      [!code-vb[VSSDKSignatureHelpTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_16.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_16.cs)]
 
-3. Добавьте конструктор, который устанавливает буфер текста, и поставщик источников справки подписи.
+3. Добавьте конструктор, который задает текстовый буфер и поставщик источника справки по сигнатурам.
 
      [!code-vb[VSSDKSignatureHelpTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_17.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_17.cs)]
 
-4. Выполните метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A>. В этом примере подписи жестко закодированы, но при полной реализации эту информацию можно получить из языковой документации.
+4. Выполните метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A>. В этом примере сигнатуры жестко запрограммированы, но в полной реализации эти сведения можно получить из документации по языку.
 
      [!code-vb[VSSDKSignatureHelpTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_18.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_18.cs)]
 
-5. Метод помощника `CreateSignature()` предоставляется только для иллюстрации.
+5. Вспомогательный метод `CreateSignature()` предоставляется только для иллюстрации.
 
      [!code-vb[VSSDKSignatureHelpTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_19.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_19.cs)]
 
-6. Выполните метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>. В этом примере есть только две подписи, каждая из которых имеет два параметра. Поэтому этот метод не требуется. В более полной реализации, в которой доступно более одного источника справки подписи, этот метод используется для определения того, может ли наивысший приоритет источника справки подписи предоставить соответствующую подпись. Если это невозможно, метод возвращается недействительным, и следующему приоритету source предлагается предоставить совпадение.
+6. Выполните метод <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>. В этом примере есть только две сигнатуры, каждая из которых имеет два параметра. Поэтому этот метод не является обязательным. В более новой реализации, в которой доступно несколько источников справки сигнатур, этот метод используется для определения того, может ли источник справки сигнатуры с наивысшим приоритетом предоставлять соответствующую сигнатуру. Если это не так, метод возвращает значение null, а источнику следующего самого высокого приоритета будет предложено предоставить совпадение.
 
      [!code-vb[VSSDKSignatureHelpTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_20.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_20.cs)]
 
-7. Реализация `Dispose()` метода:
+7. Реализуйте `Dispose()` метод:
 
      [!code-vb[VSSDKSignatureHelpTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_21.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_21.cs)]
 
-## <a name="implement-the-signature-help-source-provider"></a>Реализация поставщика источников справки подписи
- Поставщик источника справки подписи отвечает за экспорт компонента Управляемой расширительности (MEF) и за мгновенное воспроизведение источника Справки подписи.
+## <a name="implement-the-signature-help-source-provider"></a>Реализация поставщика источника справки по сигнатурам
+ Поставщик источника справки по подписи отвечает за экспорт части компонента Managed Extensibility Framework (MEF) и создание экземпляра справки по сигнатурам.
 
-#### <a name="to-implement-the-signature-help-source-provider"></a>Реализация поставщика источников справки подписи
+#### <a name="to-implement-the-signature-help-source-provider"></a>Реализация поставщика источника справки по сигнатурам
 
-1. `TestSignatureHelpSourceProvider` Добавьте класс, названный, который <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>реализует, и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "текст", и <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> до "по умолчанию".
+1. Добавьте класс с именем, `TestSignatureHelpSourceProvider` реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> , и экспортируйте его с помощью <xref:Microsoft.VisualStudio.Utilities.NameAttribute> , типа <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text" и объекта <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Before = "default".
 
      [!code-vb[VSSDKSignatureHelpTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_22.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#22](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_22.cs)]
 
-2. Реализация <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> путем мгновенного `TestSignatureHelpSource`.
+2. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> , создав экземпляр `TestSignatureHelpSource` .
 
      [!code-vb[VSSDKSignatureHelpTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_23.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#23](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_23.cs)]
 
 ## <a name="implement-the-command-handler"></a>Реализация обработчика команд
- Справка подписи обычно вызвана открывающейся скобкой "(" символ омичем и отклонена закрытием скобки") символом. Вы можете обрабатывать эти нажатия <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> клавиш, запуская так, чтобы он запускал сеанс справки подписи, когда он получает символ скобки открытия, предшествующий известному имени метода, и отклоняет сеанс, когда он получает заключительный символ скобки.
+ Справка по сигнатуре обычно активируется открывающей круглой скобкой "(" и закрывается закрывающей круглой скобкой ")". Эти нажатия могут быть обработаны путем запуска, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> чтобы при получении открывающей скобки с префиксом известного имени метода он запустил сеанс справки сигнатуры и закрывает сеанс при получении закрывающей скобки.
 
 #### <a name="to-implement-the-command-handler"></a>Реализация обработчика команд
 
-1. Добавьте класс, названный, `TestSignatureHelpCommand` который <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>реализуется.
+1. Добавьте класс с именем `TestSignatureHelpCommand` , реализующий <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
      [!code-vb[VSSDKSignatureHelpTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_24.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#24](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_24.cs)]
 
-2. Добавьте частные <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> поля для адаптера (который позволяет добавлять обработчик команды в цепочку обработчиков команд), текстовое представление, брокер Справка подписи и сеанс, a <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, и следующий. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
+2. Добавьте частные поля для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> адаптера (который позволяет добавить обработчик команд в цепочку обработчиков команд), представление текста, брокер справки и сеанс, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> а также следующий объект <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
      [!code-vb[VSSDKSignatureHelpTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_25.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#25](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_25.cs)]
 
-3. Добавьте конструктор, чтобы инициализировать эти поля и добавить командный фильтр в цепочку командных фильтров.
+3. Добавьте конструктор для инициализации этих полей и добавьте фильтр команд в цепочку фильтров команд.
 
      [!code-vb[VSSDKSignatureHelpTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_26.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#26](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_26.cs)]
 
-4. Реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метода для запуска сеанса справки подписи, когда командный фильтр получает начальный скобки "(" символ после одного из известных имен метода, и отклонить сеанс, когда он получает закрывающую скобку ")" символ, пока сеанс все еще активен. В каждом случае команда перенаправляется.
+4. Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод для активации сеанса справки сигнатуры, когда фильтр команд получает открывающую скобку "(" после одного из известных имен методов, а также для закрытия сеанса при получении закрывающей скобки ")", пока сеанс остается активным. Во всех случаях команда пересылается.
 
      [!code-vb[VSSDKSignatureHelpTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_27.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#27](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_27.cs)]
 
-5. Реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метода так, чтобы он всегда препровождил команду.
+5. Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод таким образом, чтобы он всегда направлял команду.
 
      [!code-vb[VSSDKSignatureHelpTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_28.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#28](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_28.cs)]
 
-## <a name="implement-the-signature-help-command-provider"></a>Реализация поставщика команд-подпрограмм «Справка подписи»
- Вы можете предоставить команду справки <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> подписи, реализовав моменттизировать обработчик команды при создании представления текста.
+## <a name="implement-the-signature-help-command-provider"></a>Реализация поставщика команд справки по сигнатурам
+ Можно предоставить команду справки сигнатуры, реализовав <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> для создания экземпляра обработчика команд при создании текстового представления.
 
-### <a name="to-implement-the-signature-help-command-provider"></a>Реализация поставщика командных решений Signature Help
+### <a name="to-implement-the-signature-help-command-provider"></a>Реализация поставщика команды справки по сигнатуре
 
-1. Добавить класс `TestSignatureHelpController` с <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> именем, который <xref:Microsoft.VisualStudio.Utilities.NameAttribute> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>реализует <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>и экспортирует его с , и .
+1. Добавьте класс с именем `TestSignatureHelpController` , реализующий <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> и экспортирующий его с помощью <xref:Microsoft.VisualStudio.Utilities.NameAttribute> , <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> .
 
      [!code-vb[VSSDKSignatureHelpTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_29.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#29](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_29.cs)]
 
-2. Импортируйте <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (используется для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>получения, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> данного <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> объекта), (используется для поиска <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> текущего слова) и (для запуска сеанса справки подписи).
+2. Импортируйте объект <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (используемый для получения <xref:Microsoft.VisualStudio.Text.Editor.ITextView> объекта, задавая <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект), <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (используемый для поиска текущего слова) и <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (для активации сеанса справки сигнатуры).
 
      [!code-vb[VSSDKSignatureHelpTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_30.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#30](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_30.cs)]
 
-3. Реализация <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> метода путем мгновенного `TestSignatureCommandHandler`.
+3. Реализуйте <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> метод, создав экземпляр `TestSignatureCommandHandler` .
 
      [!code-vb[VSSDKSignatureHelpTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_31.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#31](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_31.cs)]
 
-## <a name="build-and-test-the-code"></a>Создайте и протестуйте код
- Чтобы протестировать этот код, создайте решение SignatureHelpTest и запустите его в экспериментальном экземпляре.
+## <a name="build-and-test-the-code"></a>Сборка и тестирование кода
+ Чтобы протестировать этот код, создайте решение Сигнатурехелптест и запустите его в экспериментальном экземпляре.
 
-#### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Создание и тестирование решения SignatureHelpTest
+#### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Создание и тестирование решения Сигнатурехелптест
 
-1. Создайте решение.
+1. Постройте решение.
 
 2. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
-3. Создайте текстовый файл и введите текст, который включает в себя слово "добавить" плюс открытие скобки.
+3. Создайте текстовый файл и введите текст, содержащий слово "Добавить", и открывающую круглую скобку.
 
-4. После ввода скобки открытия следует увидеть набор инструментов, который отображает список `add()` из двух подписей для метода.
+4. После ввода открывающей скобки вы увидите подсказку, которая отображает список двух сигнатур для `add()` метода.
 
-## <a name="see-also"></a>См. также
-- [Прохождение: Свяжите тип содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Дополнительно
+- [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

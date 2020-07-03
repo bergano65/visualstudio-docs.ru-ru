@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Windows script engines
 ms.assetid: e576853d-7252-4eb9-81eb-9d5bb7626ab4
@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94fca3befc13e32e6e2859c7b1ef6330af7b812f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 27a500f9df91738e2db563f7e37ee646925b674e
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568940"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835697"
 ---
 # <a name="windows-script-engines"></a>Обработчики скриптов Windows
 Для реализации обработчика скриптов Microsoft Windows создайте OLE COM-объект, который поддерживает следующие интерфейсы.  
@@ -43,7 +43,7 @@ ms.locfileid: "72568940"
 |||  
 |-|-|  
 |Категория|Описание|  
-|CATID_ActiveScript|Указывает, что идентификаторы классов (CLSID) являются обработчиками скриптов Windows, которые поддерживают как минимум интерфейс [IActiveScript](../winscript/reference/iactivescript.md) и механизм сохраняемости (интерфейсы `IPersistStorage`, `IPersistStreamInit` или IPersistPropertyBag).|  
+|CATID_ActiveScript|Указывает, что идентификаторы классов (CLSID) — это обработчики сценариев Windows, которые поддерживают, как минимум, интерфейс [IActiveScript](../winscript/reference/iactivescript.md) и механизм сохраняемости ( `IPersistStorage` `IPersistStreamInit` интерфейс, или IPersistPropertyBag).|  
 |CATID_ActiveScriptParse|Указывает, что идентификаторы классов (CLSID) являются обработчиками скриптов Windows, которые поддерживают как минимум интерфейсы [IActiveScript](../winscript/reference/iactivescript.md) и [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|  
   
  Несмотря на то, что [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) не является действительным механизмом сохраняемости, он поддерживает метод [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md), который функционально эквивалентен `IPersist*::InitNew`.  
@@ -53,13 +53,13 @@ ms.locfileid: "72568940"
   
 |||  
 |-|-|  
-|Область|Описание|  
+|Состояние|Описание|  
 |не инициализирован|Скрипт не был инициализирован или загружен с помощью интерфейса IPersist*, или для него не задан интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md). Обработчик скриптов обычно не работает в этом состоянии, пока не будет загружен скрипт.|  
 |инициализирован|Скрипт был инициализирован с помощью интерфейса `IPersist*`, и для него задан интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md), но он не подключен к объектам узла и событиям приема. Обратите внимание, что это состояние просто означает, что `IPersist*::Load`, `IPersist*::InitNew` или метод [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) были завершены и что был вызван метод [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md). Обработчик не может выполнять код в этом режиме. Обработчик помещает в очередь код, который ему передает узел с помощью метода [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md), и после перехода в состояние "Запущен" выполняет код.<br /><br /> Поскольку семантика языков может существенно различаться, обработчики скриптов не должны поддерживать переход в это состояние. Однако переход в это состояние должны поддерживать обработчики, поддерживающие метод [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md). Узлы должны подготовиться к этому переходу и выполнить соответствующее действие: освободить текущий обработчик скриптов, создать новый обработчик скриптов и вызвать `IPersist*::Load`, `IPersist*::InitNew` или [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) (возможно, также вызывать [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)). Использование этого перехода следует рассматривать как оптимизацию приведенных выше шагов. Обратите внимание, что все сведения, которые обработчик скриптов получил об именах именованных элементов, и сведения о типе, описывающие именованные элементы, остаются допустимыми.<br /><br /> Поскольку языки сильно различаются, определить точную семантику этого перехода сложно. Как минимум, обработчик скриптов должен отключиться от всех событий и освободить все указатели SCRIPTINFO_IUNKNOWN, полученные путем вызова метода [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md). Обработчик должен повторно получить эти указатели после повторного запуска скрипта. Обработчику скриптов также следует сбросить сценарий в исходное состояние, которое подходит для языка. VBScript, например, сбрасывает все переменные и сохраняет любой динамически добавленный код путем вызова метода [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) с установленным флагом SCRIPTTEXT_ISPERSISTENT. Для других языков может потребоваться сохранить текущие значения (например, Lisp, так здесь нет разделения между данными и кодом) или выполнить сброс до хорошо известного состояния (сюда входят языки со статически инициализируемыми переменными).<br /><br /> Обратите внимание, что переход в состояние "Запущен" должен иметь ту же семантику (то есть обработчик скриптов должен оставаться в том же состоянии), что и вызов `IPersist*::Save` для сохранения обработчика скриптов и последующий вызов `IPersist*::Load` для загрузки нового обработчика скриптов. Семантика этих действий должна совпадать с [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md). Обработчики скриптов, которые еще не поддерживают `IActiveScript::Clone` или `IPersist*`, должны обязательно учитывать поведение перехода в состояние "Запущен", чтобы такой переход не нарушал описанные выше условия, если позже была добавлена поддержка `IActiveScript::Clone` или `IPersist*`.<br /><br /> Во время перехода в состояние "Запущен" обработчик скриптов отключится от приемников событий после выполнения соответствующих деструкторов и т. д. в скрипте. Чтобы избежать выполнения этих деструкторов, узел может сначала перевести скрипт в отключенное состояние до перехода в состояние запуска.<br /><br /> Используйте [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md), чтобы отменить выполняющийся поток скрипта без ожидания завершения текущих событий и т. д., чтобы закончить выполнение.|  
 |запущен|Переход из состояния "Инициализирован" в состояние "Запущен" приводит к тому, что обработчик выполняет любой код, который был помещен в очередь в состоянии "Инициализирован". Обработчик может выполнять код в состоянии "Запущен", но он не подключен ни к каким событиям, добавленным с помощью метода [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md). Обработчик может выполнять код путем вызова интерфейса IDispatch, полученного из метода [IActiveScript::GetScriptDispatch](../winscript/reference/iactivescript-getscriptdispatch.md), или путем вызова метода [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Возможно, что дальнейший процесс фоновой инициализации (прогрессивная загрузка) по-прежнему будет выполняться и вызов метода [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) с установленным флагом SCRIPTSTATE_CONNECTED может привести к блокировке скрипта до завершения инициализации.|  
-|подключено|Скрипт загружен и подключен для получения событий от объектов узла. Если это переход из состояния "Инициализирован", до входа в состояние "Подключен" и до подключения к событиям обработчик скриптов должен перейти через состояние "Запущен", выполнив необходимые действия.|  
+|connected|Скрипт загружен и подключен для получения событий от объектов узла. Если это переход из состояния "Инициализирован", до входа в состояние "Подключен" и до подключения к событиям обработчик скриптов должен перейти через состояние "Запущен", выполнив необходимые действия.|  
 |отключен|Скрипт загружается и находится в состоянии выполнения, но временно отключен от приема событий от объектов узла. Это можно сделать либо логически (без учета полученных событий), либо физически (путем вызова метода IConnectionPoint::Unadvise на соответствующих точках подключения). Если это переход из состояния "инициализирован", до входа в состояние "отключен" обработчик скриптов должен перейти через состояние "запущен", выполнив необходимые действия. Выполняющиеся приемники событий завершают работу до изменения состояния (для отмены выполняющегося потока скрипта используйте [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)). Это состояние отличается от состояния "инициализирован" тем, что переход в это состояние не приводит к сбросу скрипта, состояние времени выполнения скрипта не сбрасывается и процедура инициализации скрипта не выполняется.|  
-|закрыт|Скрипт был закрыт. Обработчик скриптов больше не работает и возвращает ошибки для большинства методов.|  
+|closed|Скрипт был закрыт. Обработчик скриптов больше не работает и возвращает ошибки для большинства методов.|  
   
  На следующем рисунке показаны отношения между различными состояниями обработчика скриптов, а также показаны методы, которые вызывают переходы из одного состояния в другое.  
   
@@ -76,5 +76,5 @@ ms.locfileid: "72568940"
   
  Сайт скрипта никогда не вызывается из контекста простого метода управления состояния потока (например, метод [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)) или из метода [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>Дополнительно  
  [Интерфейсы скриптов Windows](../winscript/windows-script-interfaces.md)

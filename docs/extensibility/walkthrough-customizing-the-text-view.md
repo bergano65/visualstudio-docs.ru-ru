@@ -1,7 +1,7 @@
 ---
-title: 'Пошаговое: Настройка текстового представления Документы Майкрософт'
+title: Пошаговое руководство. Настройка представления текста | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
@@ -10,36 +10,36 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d99f9201761bbe079c34ccf61339158863509dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697458"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904931"
 ---
-# <a name="walkthrough-customize-the-text-view"></a>Пошаговое: Настроить текстовое представление
-Можно настроить текстовый вид, изменив любой из следующих свойств на карте формата редактора:
+# <a name="walkthrough-customize-the-text-view"></a>Пошаговое руководство. Настройка представления текста
+Можно настроить представление текста, изменив любое из следующих свойств в его сопоставлении в формате редактора:
 
 - Поле индикаторов
 
-- Вставка уход
+- Курсор вставки
 
-- Перезапись карет
+- Перезаписать курсор
 
-- Выбранный текст
+- Выделенный текст
 
-- Неактивный выбранный текст (т.е. выбранный текст, который потерял фокус)
+- Неактивный выделенный текст (т. е. выбранный текст, который потерял фокус)
 
-- Видимое белое пространство
+- Видимый пробел
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, вы не устанавливаете Visual Studio SDK из центра загрузки. Он включен в качестве дополнительной функции в Visual Studio установки. Вы также можете установить VS SDK позже. Для получения дополнительной информации, [см.](../extensibility/installing-the-visual-studio-sdk.md)
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 
-1. Создайте проект СЗ VSIX. (В **диалоге нового проекта** выберите **Visual C / Расширяемость,** затем **VSIX Project**.) Назовите решение. `ViewPropertyTest`
+1. Создание проекта VSIX C#. (В диалоговом окне **Новый проект** выберите **Visual C#/Extensibility**, а затем **проект VSIX**.) Присвойте решению имя `ViewPropertyTest` .
 
-2. Добавьте шаблон элемента классификатора редактора в проект. Для получения дополнительной информации [см. Создать расширение с шаблоном элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Добавьте шаблон элемента классификатора редактора в проект. Дополнительные сведения см. в разделе [Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 3. Удалите файлы существующих классов.
 
@@ -52,44 +52,44 @@ ms.locfileid: "80697458"
     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]
 
-3. Объявить класс, названный, `TestViewCreationListener` который наследует от <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Экспортировать этот класс со следующими атрибутами:
+3. Объявите класс с именем `TestViewCreationListener` , наследуемый от <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Экспортируйте этот класс со следующими атрибутами:
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>указать тип содержимого, к которому относится этот слушатель.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>для указания типа содержимого, к которому применяется этот прослушиватель.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>определить роль этого слушателя.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>для указания роли этого прослушивателя.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
 
-4. В этом классе <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>импортируйте .
+4. В этом классе импортируйте <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> .
 
     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]
 
 ## <a name="change-the-view-properties"></a>Изменение свойств представления
 
-1. Настроили <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метод таким образом, чтобы свойства представления изменялись при открытии представления. Чтобы внести изменения, <xref:System.Windows.ResourceDictionary> сначала найдите то, что соответствует аспекту представления, которое вы хотите найти. Затем измените соответствующее свойство в словаре ресурса и установите свойства. Вынаните <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> вызовы метода, вызовив <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> метод <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> перед установкой свойств, а затем после установки свойств.
+1. Настройте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> метод таким образом, чтобы свойства представления изменялись при открытии представления. Чтобы внести изменения, сначала найдите объект <xref:System.Windows.ResourceDictionary> , соответствующий аспекту представления, которое необходимо найти. Затем измените соответствующее свойство в словаре ресурсов и задайте свойства. Выполните пакетную обработку вызовов <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> метода, вызвав <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> метод до задания свойств, а затем <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> после установки свойств.
 
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
 
-## <a name="build-and-test-the-code"></a>Создание и тестирование кода
+## <a name="build-and-test-the-code"></a>Сборка и тестирование кода
 
-1. Создайте решение.
+1. Постройте решение.
 
      При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
 2. Создайте текстовый файл и введите любой текст.
 
-    - Вставка уход должен быть пурпурным и перезаписать caret должны быть бирюзовыми.
+    - Курсор вставки должен быть пурпурным, а курсор перезаписи должен быть бирюзовым.
 
-    - Маржа индикатора (слева от текстового представления) должна быть светло-зеленой.
+    - Поле индикатора (слева от текстового представления) должно быть светло-зеленым.
 
-3. Выберите набранный текст. Цвет выбранного текста должен быть светло-розовым.
+3. Выберите набранный текст. Цвет выделенного текста должен быть светло-розовый.
 
-4. В то время как текст выбран, нажмите в любом месте за пределами текстового окна. Цвет выбранного текста должен быть темно-розовым.
+4. Пока текст выбран, щелкните в любом месте за пределами текстового окна. Цвет выделенного текста должен быть темно-розовым.
 
-5. Включите видимое белое пространство. (В меню **edit,** укажите на **Расширенный,** а затем нажмите **Просмотр Белого пространства**). Введите некоторые вкладки в тексте. Красные стрелки, представляющие вкладки, должны отображаться.
+5. Включите видимый пробел. (В меню **Правка** наведите указатель на пункт **Дополнительно** и выберите пункт **Показать пустое пространство**). Введите в текст некоторые вкладки. Должны отобразиться красные стрелки, представляющие вкладки.
 
-## <a name="see-also"></a>См. также
-- [Языковой сервис и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>Дополнительно
+- [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

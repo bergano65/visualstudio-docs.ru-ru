@@ -5,18 +5,18 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 141f3f0e60e797a4104c3e276775631f6e9196c5
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840035"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835411"
 ---
 # <a name="windows-script-interfaces"></a>Интерфейсы скриптов Windows
 
@@ -36,7 +36,7 @@ ms.locfileid: "62840035"
 
 ## <a name="windows-script-background"></a>Общие сведения о сценариях Windows
 
-Интерфейсы Windows Script разделяются на две категории: узлы Windows Script и модули Windows Script. Сервер создает обработчик сценариев и вызывает его для выполнения сценариев. Примеры серверов сценариев Windows:
+Интерфейсы сценариев Windows делятся на две категории: серверы сценариев Windows и обработчики сценариев Windows. Сервер создает обработчик сценариев и вызывает его для выполнения сценариев. Примеры серверов сценариев Windows:
 
 - Microsoft Internet Explorer
 
@@ -48,7 +48,7 @@ ms.locfileid: "62840035"
 
 - Язык скриптов Microsoft VBScript (Microsoft Visual Basic Scripting Edition)
 
-- Perl
+- Perl;
 
 - Lisp
 
@@ -64,13 +64,13 @@ ms.locfileid: "62840035"
 
 1. Создайте проект. Сервер загружает проект или документ. (Этот шаг не относится напрямую к сценариям Windows, но добавлен здесь для полноты.)
 
-2. Создается обработчик сценариев Windows. Сервер вызывает функцию `CoCreateInstance` для создания обработчика сценариев Windows, указывая идентификатор класса (CLSID) обработчика сценариев, который необходимо использовать. Например, HTML-браузер Internet Explorer получает идентификатор класса обработчика сценариев посредством атрибута CLSID= в HTML-теге \<OBJECT>.
+2. Создается обработчик сценариев Windows. Сервер вызывает функцию `CoCreateInstance` для создания обработчика сценариев Windows, указывая идентификатор класса (CLSID) обработчика сценариев, который необходимо использовать. Например, HTML-браузер Internet Explorer получает идентификатор класса обработчика скриптов с помощью атрибута CLSID = \<OBJECT> ТЕГА HTML.
 
 3. Загружается сценарий. Если содержимое сценария сохранено, сервер вызывает метод `IPersist*::Load` обработчика сценариев и передает в него хранилище сценариев, поток или контейнер свойств. В противном случае сервер использует метод `IPersist*::InitNew` или [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) для создания пустого сценария. Если сервер обрабатывает сценарий в текстовой форме, он может использовать метод [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) для передачи текста сценария в обработчик сценариев после вызова `IActiveScriptParse::InitNew`.
 
 4. Добавляются именованные элементы. Для каждого именованного элемента верхнего уровня (например, страницы или формы), импортируемого в пространство имен обработчика сценариев, сервер вызывает метод [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md), чтобы создать запись в пространстве имен обработчика. Этот шаг необязателен, если именованные элементы верхнего уровня уже являются частью сохраняемого состояния сценария, загруженного в шаге 3. Сервер не использует метод `IActiveScript::AddNamedItem` для добавления именованных элементов нижележащих уровней (например, элементов управления на HTML-странице). Вместо этого обработчик косвенно получает элементы нижележащих уровней из элементов верхнего уровня с помощью интерфейсов `ITypeInfo` и `IDispatch` сервера.
 
-5. Выполняется сценарий. Сервер инициирует запуск сценария обработчиком, устанавливая флаг SCRIPTSTATE_CONNECTED в методе [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Этот вызов, скорее всего, приводит к выполнению всей основной работы обработчика сценариев, включая статическое связывание, привязку к событиям (см. ниже) и выполнение кода, аналогично тому, как это делает функция `main()` на основе сценария.
+5. Выполните скрипт. Сервер инициирует запуск сценария обработчиком, устанавливая флаг SCRIPTSTATE_CONNECTED в методе [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Этот вызов, скорее всего, приводит к выполнению всей основной работы обработчика сценариев, включая статическое связывание, привязку к событиям (см. ниже) и выполнение кода, аналогично тому, как это делает функция `main()` на основе сценария.
 
 6. Получение сведений об элементе. Каждый раз, когда обработчику сценариев необходимо связать символ с элементом верхнего уровня, он вызывает метод [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), который возвращает сведения об указанном элементе.
 

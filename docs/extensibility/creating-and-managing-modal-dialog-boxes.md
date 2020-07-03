@@ -1,7 +1,7 @@
 ---
-title: Создание и управление Модал Диалог Коробки (ru) Документы Майкрософт
+title: Создание модальных диалоговых окон и управление ими | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
@@ -10,25 +10,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 786a2fbe2b75c51420668eb1ab6f596213d3da9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739491"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903773"
 ---
-# <a name="create-and-manage-modal-dialog-boxes"></a>Создание и управление модальными диалоговые ящики
-При создании модального диалогового окна внутри Visual Studio необходимо убедиться, что родительское окно диалогового окна отключено во время отображения диалогового окна, а затем повторно включить родительское окно после закрытия диалогового окна. Если вы этого не сделаете, вы можете получить ошибку: *Microsoft Visual Studio не может отключить, потому что модальный диалог активен. Закройте активный диалог и повторите попытку.*
+# <a name="create-and-manage-modal-dialog-boxes"></a>Создание модальных диалоговых окон и управление ими
+При создании модального диалогового окна в Visual Studio необходимо убедиться, что родительское окно диалогового окна отключено во время отображения диалогового окна, а затем снова включить родительское окно после закрытия диалогового окна. Если этого не сделать, может появиться сообщение об ошибке: *Microsoft Visual Studio не может завершить работу, так как открыто модальное диалоговое окно. Закройте активное диалоговое окно и повторите* попытку.
 
-Есть два способа сделать это. Рекомендуемый способ, если у вас есть wPF диалоговые окна, заключается в том, чтобы получить его из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, а затем позвонить <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> для отображения диалогового окна. Если вы делаете это, вам не нужно управлять модальным состоянием родительского окна.
+Это делается двумя способами. Рекомендуемый способ, если имеется диалоговое окно WPF, является производным от <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> , а затем вызывается <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> для вывода диалогового окна. В этом случае нет необходимости управлять модальным состоянием родительского окна.
 
-Если ваш диалоговый ящик не WPF, или по какой-либо <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>другой причине вы не можете получить ваш <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> класс диалогового окна из, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> то вы должны получить родителей диалогового окна, позвонив и управлять модальным состоянием самостоятельно, позвонив метод с параметром 0 (ложный) перед отображением диалогового окна и вызывая метод снова с параметром 1 (правда) после закрытия диалогового окна.
+Если диалоговое окно не является WPF или по какой-либо другой причине не удается создать класс диалогового окна из <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> , необходимо получить родительский элемент диалогового окна, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> метод и самостоятельно управлять модальным состоянием. для этого <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> перед отображением диалогового окна вызовите его с параметром 0 (false) и снова вызовите метод с параметром 1 (true) после закрытия диалогового окна.
 
-## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Создание диалогового окна, полученного из DialogWindow
+## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Создание диалогового окна, производного от Диалогвиндов
 
-1. Создайте проект VSIX под названием **OpenDialogTest** и добавьте команду меню под названием **OpenDialog.** Для получения дополнительной информации о том, как это сделать, [см.](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Создайте проект VSIX с именем **опендиалогтест** и добавьте команду меню с именем **опендиалог**. Дополнительные сведения о том, как это сделать, см. в разделе [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Чтобы использовать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> класс, необходимо добавить ссылки на следующие сборки (в вкладке Framework в диалоговом окне **Добавления):**
+2. Чтобы использовать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> класс, необходимо добавить ссылки на следующие сборки (на вкладке "платформа" диалогового окна " **Добавление ссылки** "):
 
     - *PresentationCore*
 
@@ -38,20 +38,20 @@ ms.locfileid: "80739491"
 
     - *System.Xaml*
 
-3. В *OpenDialog.cs*добавьте `using` следующее заявление:
+3. В *OpenDialog.CS*добавьте следующую `using` инструкцию:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
     ```
 
-4. Объявить класс, названный, `TestDialogWindow` который происходит от: <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>
+4. Объявите класс с именем `TestDialogWindow` , производным от <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> :
 
     ```csharp
     class TestDialogWindow : DialogWindow
     {. . .}
     ```
 
-5. Чтобы иметь возможность свести к минимуму <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> и максимизировать диалоговую коробку, набор и правда:
+5. Чтобы можно было максимально увеличить и развернуть диалоговое окно, задайте <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> для параметра и значение <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> true:
 
     ```csharp
     internal TestDialogWindow()
@@ -68,33 +68,33 @@ ms.locfileid: "80739491"
     testDialog.ShowModal();
     ```
 
-7. Выполните сборку и запустите приложение. Экспериментальный экземпляр Visual Studio должен появиться. В меню **Инструментов** экспериментального экземпляра вы должны увидеть команду под названием **Invoke OpenDialog.** При нажатии на эту команду следует увидеть окно диалога. Вы должны быть в состоянии свести к минимуму и максимизировать окно.
+7. Выполните сборку и запустите приложение. Должен отобразиться экспериментальный экземпляр Visual Studio. В меню **Сервис** экспериментального экземпляра должна отобразиться команда с именем **Invoke опендиалог**. При нажатии этой команды должно отобразиться диалоговое окно. Вы сможете максимально увеличить и развернуть окно.
 
-## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Создание и управление диалоговое окно, не полученное из DialogWindow
+## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Создание и управление диалоговым окном, не производным от Диалогвиндов
 
-1. Для этой процедуры можно использовать созданное в предыдущей процедуре решение **OpenDialogTest** с теми же ссылками на сборку.
+1. Для этой процедуры можно использовать решение **опендиалогтест** , созданное в предыдущей процедуре, с теми же ссылками на сборки.
 
-2. Добавьте `using` следующие декларации:
+2. Добавьте следующие `using` объявления:
 
     ```csharp
     using System.Windows;
     using Microsoft.Internal.VisualStudio.PlatformUI;
     ```
 
-3. Создайте класс, названный, `TestDialogWindow2` который происходит от: <xref:System.Windows.Window>
+3. Создайте класс с именем `TestDialogWindow2` , производным от <xref:System.Windows.Window> :
 
     ```csharp
     class TestDialogWindow2 : Window
     {. . .}
     ```
 
-4. Добавить частную <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>ссылку на:
+4. Добавьте закрытую ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> :
 
     ```
     private IVsUIShell shell;
     ```
 
-5. Добавьте конструктор, который устанавливает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>ссылку на:
+5. Добавьте конструктор, который задает ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> :
 
     ```csharp
     public TestDialogWindow2(IVsUIShell uiShell)
@@ -125,4 +125,4 @@ ms.locfileid: "80739491"
     }
     ```
 
-7. Выполните сборку и запустите приложение. В меню **«Инструменты»** вы должны увидеть команду под названием **Invoke OpenDialog.** При нажатии на эту команду следует увидеть окно диалога.
+7. Выполните сборку и запустите приложение. В меню **Сервис** должна отобразиться команда с именем **Invoke опендиалог**. При нажатии этой команды должно отобразиться диалоговое окно.

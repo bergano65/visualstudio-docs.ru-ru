@@ -1,7 +1,7 @@
 ---
 title: Добавление списка недавно использовавшихся в подменю | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183279"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904202"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление списка недавно использовавшихся в подменю
 Это пошаговое руководство посвящено созданию демонстраций в [меню Добавление подменю](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить динамический список в подменю. Динамический список образует базу для создания списка недавно использованных (MRU) списков.
@@ -30,7 +30,7 @@ ms.locfileid: "84183279"
 
 Дополнительные сведения о меню и файлах *vsct* см. в разделе [команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-an-extension"></a>Создание расширений
@@ -199,5 +199,5 @@ ms.locfileid: "84183279"
 
 4. Снова откройте подменю. Обратите внимание, что **элемент 3** теперь находится в верхней части списка, а остальные элементы были помещены на одну позицию вниз. Щелкните **элемент 3** еще раз и обратите внимание, что в окне сообщения по-прежнему отображается **выбранный элемент 3**, что означает, что текст правильно переместился в новую позицию вместе с меткой команды.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>Дополнительно
 - [Динамическое добавление пунктов меню](../extensibility/dynamically-adding-menu-items.md)
