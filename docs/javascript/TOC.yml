@@ -24,7 +24,7 @@
       href: tutorial-aspnet-with-typescript.md
     - name: Публикация приложения Node.js в службе приложений Linux
       href: publish-nodejs-app-azure.md
-- name: Руководства
+- name: Практические руководства
   items:
     - name: Создание и редактирование кода
       href: write-and-edit-code.md
@@ -38,9 +38,9 @@
       href: nodejs-interactive-repl.md
     - name: IntelliSense для JavaScript
       href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-    - name: Отладка приложения JavaScript
+    - name: Отладка
       href: debug-nodejs.md
-    - name: Модульное тестирование JavaScript
+    - name: Модульное тестирование
       href: unit-testing-javascript-with-visual-studio.md
 - name: Ресурсы
   items:
