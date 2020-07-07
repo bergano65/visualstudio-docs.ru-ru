@@ -1,7 +1,7 @@
 ---
 title: Как определить экземпляр метода | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981800"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016837"
 ---
 # <a name="how-to-define-a-method-instance"></a>Как определить экземпляр метода
   Необходимо определить по крайней мере один экземпляр метода для каждого метода в модели.
 
- Добавьте экземпляр метода с помощью окна **сведения о методе BDC** . При добавлении экземпляра метода Visual Studio добавляет элемент `<MethodInstance>` в XML-код файла модели в проекте. Дополнительные сведения об атрибутах элемента `<MethodInstance>` см. в разделе [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+ Добавьте экземпляр метода с помощью окна **сведения о методе BDC** . При добавлении экземпляра метода Visual Studio добавляет `<MethodInstance>` элемент в XML-код файла модели в проекте. Дополнительные сведения об атрибутах `<MethodInstance>` элемента см. в разделе [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ### <a name="to-define-a-method-instance"></a>Определение экземпляра метода
 
@@ -35,11 +34,11 @@ ms.locfileid: "72981800"
 
      Новый экземпляр метода отображается под узлом **экземпляры** .
 
-3. В строке меню выберите **вид** > **Свойства окно**.
+3. В строке меню выберите **вид**  >  **окно свойств**.
 
 4. В окне **Свойства** задайте свойства экземпляра метода. Дополнительные сведения о каждом свойстве см. в разделе [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Обзор средств проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Как добавить сущность в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Как добавить параметр в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)

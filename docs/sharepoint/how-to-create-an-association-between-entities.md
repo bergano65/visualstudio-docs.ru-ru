@@ -1,7 +1,7 @@
 ---
 title: Как создать ассоциацию между сущностями | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981834"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016934"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Как создать ассоциацию между сущностями
   Отношения между сущностями в модели подключения к бизнес-данным (BDC) можно определить путем создания ассоциаций. Visual Studio создает методы, предоставляющие потребителям модели сведения о каждой ассоциации. Эти методы могут использоваться веб-частями SharePoint, списками или пользовательскими приложениями для отображения отношений данных в интерфейсе пользователя (ИП).
@@ -45,7 +44,7 @@ ms.locfileid: "72981834"
 
     1. В столбце **идентификатор источника** таблицы **сопоставление идентификаторов** выберите идентификатор рядом с каждым соответствующим дескриптором типа, который отображается в столбце **поле** .
 
-         Например, в столбце **идентификатор источника** выберите `ContactID` рядом с `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID`ным дескриптором типа и дескриптором типа `ReadItem.salesOrder.SalesOrder.ContactID`.
+         Например, в столбце **идентификатор источника** выберите `ContactID` рядом с `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` дескриптором типа и `ReadItem.salesOrder.SalesOrder.ContactID` дескриптором типа.
 
 4. Если вы хотите создать ассоциацию без внешнего ключа, снимите флажок **связь с внешним ключом** .
 
@@ -61,7 +60,7 @@ ms.locfileid: "72981834"
 
      Примеры методов навигатора ассоциаций см. в разделе [Создание связи между сущностями](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание связи между сущностями](../sharepoint/creating-an-association-between-entities.md)
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)

@@ -1,7 +1,7 @@
 ---
 title: Как добавить параметр в метод | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986239"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016715"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Как добавить параметр в метод
   Используйте параметр для передачи сведений в метод или для возврата сведений из метода. Все методы должны иметь по крайней мере один параметр. Дополнительные сведения о проектировании параметра для поддержки типа создаваемого метода см. в разделе [Разработка модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986239"
 
 1. Добавьте метод в сущность.
 
-2. В строке меню выберите **просмотреть** > другие > **сведения о методе BDC**в **Windows** .
+2. В строке меню выберите **Просмотреть**  >  **другие**  >  **сведения о методе BDC**Windows.
 
      Откроется окно **сведения о методе BDC** . Дополнительные сведения см. в статье [Обзор средств проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986239"
 
      Новый параметр отображается под узлом **Параметры** .
 
-5. В строке меню выберите **вид** > **Свойства окно**.
+5. В строке меню выберите **вид**  >  **окно свойств**.
 
 6. В окне **Свойства** задайте для свойства **имя** любое имя, которое имеет смысл. Например, если метод вернет клиентов, можно присвоить методу имя **Customers**.
 
@@ -53,7 +52,7 @@ ms.locfileid: "72986239"
 
 8. Измените дескриптор типа параметра. Дополнительные сведения см. [в разделе инструкции. определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Обзор средств проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Как добавить сущность в модель](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Как определить дескриптор типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)

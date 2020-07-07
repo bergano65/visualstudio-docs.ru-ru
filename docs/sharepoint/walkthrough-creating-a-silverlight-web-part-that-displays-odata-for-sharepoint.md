@@ -1,7 +1,7 @@
 ---
 title: Создание веб-части Silverlight с отображением OData для SharePoint
 ms.date: 02/22/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -12,24 +12,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984827"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017164"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство. Создание веб-части Silverlight, которая отображает OData для SharePoint
   SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе интерфейс и [Open Data Protocol](https://www.odata.org/) [SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+## <a name="prerequisites"></a>Предварительные требования
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Создание приложения Silverlight и веб-части Silverlight
  Сначала необходимо создать приложение Silverlight в Visual Studio. Приложение Silverlight извлекает данные из списка извещений SharePoint с помощью службы ListData.svc.
@@ -39,9 +38,9 @@ ms.locfileid: "72984827"
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Создание приложения Silverlight и веб-части Silverlight
 
-1. В строке меню выберите **файл**  > **Новый**  > **проект** , чтобы открыть диалоговое окно **Новый проект** .
+1. В строке меню выберите **файл**  >  **создать**  >  **проект** , чтобы открыть диалоговое окно **Новый проект** .
 
-2. Разверните узел **SharePoint** в любом **визуальном C#**  элементе или **Visual Basic**, а затем выберите узел **2010** .
+2. Разверните узел **SharePoint** под управлением **Visual C#** или **Visual Basic**, а затем выберите узел **2010** .
 
 3. В области Шаблоны выберите шаблон **веб-части Silverlight SharePoint 2010** .
 
@@ -57,9 +56,9 @@ ms.locfileid: "72984827"
 
 7. В разделе **как связать с веб-частью Silverlight** на странице **Указание сведений о конфигурации Silverlight** выберите **создать новый проект Silverlight и свяжите его с параметром веб-части** .
 
-8. Измените **имя** на **слаппликатион**, задайте для параметра **Language** значение **Visual Basic** или **Visual C#** , а затем задайте для параметра **версия Silverlight** значение **Silverlight 4,0**.
+8. Измените **имя** на **слаппликатион**, задайте для параметра **Language** значение **Visual Basic** или **Visual C#**, а затем задайте для параметра **версия Silverlight** значение **Silverlight 4,0**.
 
-9. Нажмите кнопку **Готово** . Проекты отображаются в **Обозреватель решений**.
+9. Нажмите кнопку **Готово**. Проекты отображаются в **Обозреватель решений**.
 
      Решение содержит 2 проекта: приложение Silverlight и веб-часть Silverlight. Приложение Silverlight извлекает и отображает данные списка из SharePoint, а веб-часть Silverlight размещает приложение Silverlight, позволяя просматривать его в SharePoint.
 
@@ -75,15 +74,15 @@ ms.locfileid: "72984827"
     > [!NOTE]
     > Если вы используете Visual Basic, необходимо выбрать значок **Показать все файлы** в верхней части **Обозреватель решений** , чтобы отобразить узел **ссылки** .
 
-3. В поле адрес диалогового окна **Добавление ссылки на службу** введите URL-адрес сайта SharePoint, например **http://MySPSite** , а затем нажмите кнопку **Go (перейти** ).
+3. В поле адрес диалогового окна **Добавление ссылки на службу** введите URL-адрес сайта SharePoint, например **http://MySPSite** , и нажмите кнопку **Go (перейти** ).
 
-     Когда Silverlight находит службу OData SharePoint ListData.svc, он заменяет адрес полным URL-адресом службы. В этом примере http://myserver преобразуется в http://myserver/_vti_bin/ListData.svc.
+     Когда Silverlight находит службу OData SharePoint ListData.svc, он заменяет адрес полным URL-адресом службы. В этом примере http://myserver принимается http://myserver/_vti_bin/ListData.svc .
 
 4. Нажмите кнопку **ОК** , чтобы добавить ссылку на службу в проект, и используйте имя службы по умолчанию ServiceReference1.
 
-5. В строке меню последовательно выберите **Сборка**  >  **Собрать решение**.
+5. В строке меню последовательно выберите **Сборка** > **Собрать решение**.
 
-6. Добавьте в проект новый источник данных на основе службы SharePoint. Для этого в строке меню выберите **вид**  >  другие  > **Источники данных** **Windows** .
+6. Добавьте в проект новый источник данных на основе службы SharePoint. Для этого в строке меню выберите **Просмотреть**  >  **другие**  >  **Источники данных**Windows.
 
      В окне **Источники данных** отображаются все доступные данные списка SharePoint, такие как задачи, объявления и календарь.
 
@@ -223,13 +222,13 @@ ms.locfileid: "72984827"
 
 7. В списке **веб-части** выберите веб-часть Silverlight, а затем нажмите кнопку **Добавить** , чтобы добавить веб-часть в конструктор.
 
-8. После внесения всех дополнений в нужную веб-страницу перейдите на вкладку **страница** и нажмите кнопку **Сохранить & Закрыть** на панели инструментов.
+8. После внесения всех дополнений в нужную веб-страницу перейдите на вкладку **страница** и нажмите кнопку **сохранить & закрыть** на панели инструментов.
 
      Веб-часть Silverlight теперь должна отображать данные извещений с сайта SharePoint. По умолчанию страница хранится в страницах сайта в SharePoint.
 
     > [!NOTE]
     > При доступе к данным в Silverlight между доменами, Silverlight защищается от уязвимостей безопасности, которые могут быть использованы для эксплуатации веб-приложений в своих целях. Если при доступе к удаленным данным в Silverlight возникают проблемы, см. раздел [обеспечение доступности службы через границы домена](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Развертывание, публикация и обновление пакетов решений SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

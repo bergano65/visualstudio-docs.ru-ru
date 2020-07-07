@@ -1,7 +1,7 @@
 ---
-title: Развертывание и публикация решения SharePoint в локальном сайте SharePoint
+title: Развертывание & публикация решения SharePoint на локальном сайте SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,36 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401453"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016816"
 ---
-# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint
-  Можно развернуть или публикации решений SharePoint на локальном сервере SharePoint на компьютере разработчика. Копии процесса развертывания *.wsp* файл на сервер SharePoint, устанавливает решение и активация компонентов. Публикация обрабатывать только копии *.wsp* файл на сервер SharePoint и устанавливает его. Необходимо вручную активировать его, чтобы включить эту функцию в SharePoint.
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Развертывание и публикация решения SharePoint на локальном сайте SharePoint
+  Решения SharePoint можно развертывать или публиковать на локальном сервере SharePoint на компьютере разработчика. Процесс развертывания копирует *wspный* файл на сервер SharePoint, устанавливает решение, а затем активирует компоненты. Процесс публикации копирует только файл *WSP* на сервер SharePoint и устанавливает его. Его необходимо активировать вручную, чтобы включить его в SharePoint.
 
-## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Для развертывания решения SharePoint на локальном сервере SharePoint
+## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Развертывание решения SharePoint на локальном сервере SharePoint
 
-1. В **обозревателе решений**, выберите проект, который вы хотите развернуть.
+1. В **Обозреватель решений**выберите проект, который требуется развернуть.
 
-2. В строке меню выберите **построения**, **развернуть решение**.
+2. В строке меню последовательно выберите **Сборка**и **Развернуть решение**.
 
-     *.Wsp* файл создается и устанавливается на локальном сервере SharePoint. Кроме того активируются функции.
+     *WSP* -файл создается и устанавливается на локальном сервере SharePoint. Кроме того, функции активируются.
 
-## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Для публикации решения SharePoint на локальном сервере SharePoint
+## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Публикация решения SharePoint на локальном сервере SharePoint
 
-1. В **обозревателе решений**, откройте контекстное меню для проекта SharePoint, который требуется опубликовать, а затем выберите **публикации**.
+1. В **Обозреватель решений**откройте контекстное меню проекта SharePoint, который необходимо опубликовать, и выберите **опубликовать**.
 
-2. В **публикации** диалоговом окне выберите **опубликовать в файловой системе** переключатель.
+2. В диалоговом окне **Публикация** выберите переключатель **опубликовать в файловой системе** .
 
-3. В **целевое расположение** текстовом поле введите локальный путь, а затем нажмите **публикации** кнопки.
+3. В текстовом поле **целевое расположение** введите локальный путь, а затем нажмите кнопку **опубликовать** .
 
-     Ход выполнения публикации отображается в Visual Studio **вывода** окна. После завершения процесса решения ( *.wsp*) файл устанавливается на локальном сервере SharePoint. Тем не менее он еще необходимо активировать для использования в SharePoint. Если файл решения уже существует, происходит ошибка и запрашивает, следует ли перезаписать существующий файл. Сведения об обновлении пакета см. в разделе об обновлении удаленные пакеты в [как: Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
+     Ход публикации отображается в окне **вывод** Visual Studio. По завершении процесса на локальном сервере SharePoint устанавливается файл решения (*WSP*). Однако он по-прежнему должен быть активирован для использования в SharePoint. Если файл решения уже существует, возникает ошибка и спрашивается, нужно ли перезаписать существующий файл. Сведения об обновлении пакета см. в разделе Обновление удаленных пакетов статьи [развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
+## <a name="see-also"></a>См. также раздел
+- [Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
-- [Практическое руководство. Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+- [Как настроить пакет решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [Пошаговое руководство. Добавление и удаление компонентов и элементов в пакет с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)

@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление метода Deleter | Документация Майкрософт
+title: Как добавить метод удаления | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +19,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418356"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017043"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Практическое руководство. Добавление метода Deleter
-  Вы можете включить конечный пользователь мог удалить запись данных из внешнего списка на сайте SharePoint, добавив метод удаления для модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-deleter-method"></a>Как добавить метод удаления
+  Вы можете разрешить конечному пользователю удалить запись данных из внешнего списка на сайте SharePoint, добавив метод удаления в модель. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-### <a name="to-create-a-deleter-method"></a>Чтобы создать метод удаления
+### <a name="to-create-a-deleter-method"></a>Создание метода удаления
 
-1. На **конструкторе BDC**, выберите сущность.
+1. В **конструкторе BDC**выберите сущность.
 
-2. В строке меню выберите **представление** > **Other Windows** > **Подробности метода BDC**.
+2. В строке меню выберите **Просмотреть**  >  **другие**  >  **сведения о методе BDC**Windows.
 
-    **Подробности метода BDC** откроется окно. Дополнительные сведения об этом окне см. в разделе [Обзор средства конструирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).
+    Откроется окно **сведения о методе BDC** . Дополнительные сведения об этом окне см. в разделе Общие сведения о [средствах проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. В **добавьте метод** выберите **создать метод удаления**.
+3. В списке **Добавить метод** выберите **создать метод удаления**.
 
-    Visual Studio добавляет следующие элементы модели. Эти элементы появляются в **Подробности метода BDC** окна.
+    Visual Studio добавляет в модель следующие элементы. Эти элементы отображаются в окне **сведения о методе BDC** .
 
-   - Метод с именем **удалить**.
+   - Метод с именем **Delete**.
 
    - Входной параметр для метода.
 
@@ -49,29 +48,29 @@ ms.locfileid: "63418356"
 
    - Экземпляр метода для метода.
 
-     Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. В **обозревателе решений**, откройте контекстное меню файла кода службы, созданный для сущности и затем выберите **Просмотр кода**.
+4. В **Обозреватель решений**откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**.
 
-    В редакторе кода открывается файл кода службы сущности. Дополнительные сведения о файле код службы сущности, см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
+    Файл кода службы сущности откроется в редакторе кода. Дополнительные сведения о файле кода службы сущности см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-5. Добавьте код в метод удаления для удаления записи. В следующем примере удаляется элемент строки из заказа на продажу с помощью образца базы данных AdventureWorks для SQL Server.
-
-   > [!NOTE]
-   > Данный метод в этом примере использует два входных параметра.
+5. Добавьте код в метод удаления, чтобы удалить запись. В следующем примере элемент строки удаляется из заказа на продажу с помощью образца базы данных AdventureWorks для SQL Server.
 
    > [!NOTE]
-   > Замените значение `ServerName` поле с именем сервера.
+   > Метод в этом примере использует два входных параметра.
+
+   > [!NOTE]
+   > Замените значение `ServerName` поля именем сервера.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)
+- [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Как добавить конкретный метод поиска](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Как добавить метод Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Как добавить метод обновления](../sharepoint/how-to-add-an-updater-method.md)
+- [Обзор средств проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Как добавить параметр в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Как определить экземпляр метода](../sharepoint/how-to-define-a-method-instance.md)

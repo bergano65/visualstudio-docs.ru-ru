@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление метода Creator | Документация Майкрософт
+title: Как добавить метод Creator | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,58 +17,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443580"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017064"
 ---
-# <a name="how-to-add-a-creator-method"></a>Практическое руководство. Добавление метода Creator
-  Метод создания добавляет новые данные в источник данных сущности. Служба бизнес-данным (BDC) вызывает этот метод, при выборе пользователем **новый элемент** кнопку **ленты** списка, который основан на модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-creator-method"></a>Как добавить метод Creator
+  Метод Creator добавляет новые данные в источник данных сущности. Служба подключения к бизнес-данным (BDC) вызывает этот метод, когда пользователь наберет кнопку **создать элемент** на **ленте** списка, основанного на модели. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-creator-method"></a>Добавление метода Creator
 
-1. На **конструкторе BDC**, выберите сущность.
+1. В **конструкторе BDC**выберите сущность.
 
-2. В строке меню выберите **представление** > **Other Windows** >**Подробности метода BDC**.
+2. В строке меню выберите **Просмотреть**  >  **другие**  > **сведения о методе BDC**Windows.
 
-    **Подробности метода BDC** откроется окно. Дополнительные сведения об этом окне см. в разделе [Обзор средства конструирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).
+    Откроется окно **сведения о методе BDC** . Дополнительные сведения об этом окне см. в разделе Общие сведения о [средствах проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. В **добавьте метод** выберите **создать метод**.
+3. В списке **Добавить метод** выберите **создать метод создания**.
 
-    Visual Studio добавляет следующие элементы модели, и эти элементы появляются в **Подробности метода BDC** окна.
+    Visual Studio добавляет в модель следующие элементы, и эти элементы отображаются в окне **сведения о методе BDC** .
 
-   - Метод с именем **создать**.
+   - Метод с именем **CREATE**.
 
    - Входной параметр для метода.
 
    - Возвращаемый параметр для метода.
 
-   - Дескрипторы для параметров типа.
+   - Дескрипторы типов для параметров.
 
    - Экземпляр метода для метода.
 
-     Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. В **обозревателе решений**, откройте контекстное меню файла кода службы, созданный для сущности и затем выберите **Просмотр кода**.
+4. В **Обозреватель решений**откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**.
 
-    В редакторе кода открывается файл кода службы сущности. Дополнительные сведения о файле код службы сущности, см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
+    Файл кода службы сущности откроется в редакторе кода. Дополнительные сведения о файле кода службы сущности см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-5. Добавьте код в метод Creator, который добавляет данные к источнику данных. В следующем примере добавляется контакт с образцом базы данных AdventureWorks для SQL Server.
+5. Добавьте код в метод Creator, который добавляет данные в источник данных. В следующем примере к образцу базы данных AdventureWorks добавляется контакт для SQL Server.
 
    > [!NOTE]
-   > Замените значение `ServerName` поле с именем сервера.
+   > Замените значение `ServerName` поля именем сервера.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)
+- [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Как добавить конкретный метод поиска](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Как добавить метод удаления](../sharepoint/how-to-add-a-deleter-method.md)
+- [Как добавить метод обновления](../sharepoint/how-to-add-an-updater-method.md)
+- [Обзор средств проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Как добавить параметр в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Как определить экземпляр метода](../sharepoint/how-to-define-a-method-instance.md)

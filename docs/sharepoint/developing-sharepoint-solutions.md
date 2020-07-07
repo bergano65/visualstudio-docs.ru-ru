@@ -1,7 +1,7 @@
 ---
 title: Разработка решений SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586895"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016789"
 ---
 # <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
   В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов см. в разделе [шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.
@@ -95,13 +94,13 @@ ms.locfileid: "82586895"
 |Имя свойства|Описание|
 |-------------------|-----------------|
 |Действие построения|Определяет, как файл связан с процессами сборки и развертывания. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
-|Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может иметь одно из следующих значений:<br /><br /> -   *Не копировать*<br />-   *Всегда копировать*<br />-   *Копировать, если новее*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
+|Копировать в выходной каталог|Указывает, будет ли файл (файлы) исходного кода скопирован в выходной каталог. Может использоваться одно из следующих значений:<br /><br /> -   *Не копировать*<br />-   *Всегда копировать*<br />-   *Копировать, если новее*<br /><br /> Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Пользовательский инструмент|Задает имя инструмента, если таковой имеется, преобразующего файл во время разработки и помещающего результат преобразования в другой файл. Например, файл набора данных (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) имеет пользовательский инструмент по умолчанию. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Пространство имен пользовательского инструмента|Пространство имен, в которое копируются выходные данные пользовательского инструмента. Дополнительные сведения см. в разделе [Свойства файлов](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Расположение развертывания|Полный путь к файлу на сервере SharePoint. Этот путь состоит из корневого каталога развертывания и вложенных свойств пути развертывания.|
-|Путь развертывания|Относительный путь к файлу на сервере SharePoint, например Workflow1\\. Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> Выбор значения *RootFile* для свойства *тип развертывания* приводит к изменению свойства *Root для развертывания* на \<SharePointRoot>\\, что приводит к полному пути \<SharePointRoot> \Workflow1.\\ Дополнительные сведения см. в разделе [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например, \<SharePointRoot> \TEMPLATE\FEATURES\\\<FeatureName>\\.<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|
-|Тип развертывания|Тип развертывания файла, определяющий его значение *Deployment Root* . Может иметь одно из следующих значений:<br /><br /> Развертывание: * \<нет значения>*<br /><br /> ElementManifest: * \<SharePointRoot> \TEMPLATE\FEATURES\\\<FeatureName>*\\<br /><br /> ElementFile: * \<SharePointRoot> \TEMPLATE\FEATURES\\\<FeatureName>\\*<br /><br /> TemplateFile: * \<SharePointRoot> \TEMPLATE\\*<br /><br /> RootFile: * \<SharePointRoot>\\*<br /><br /> Глобалресаурце: * \<SharePointRoot> \ресаурцес\\*<br /><br /> ClassResource: * \<классресаурцепас>\\*<br /><br /> Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Путь развертывания|Относительный путь к файлу на сервере SharePoint, например Workflow1 \\ . Полный путь к файлу создается путем объединения значения *Deployment Path* со значением *Deployment Root* до конца.<br /><br /> При выборе значения *RootFile* для свойства *тип развертывания* изменяется свойство *корневая папка развертывания* на \<SharePointRoot> \\ , что приводит к полному пути \<SharePointRoot> \Workflow1 \\ . Дополнительные сведения см. в разделе [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Deployment Root|Строка. Корневая папка, в которой файл развертывается на сервере SharePoint. Например, \<SharePointRoot> \TEMPLATE\FEATURES \\ \<FeatureName> \\ .<br /><br /> Значение свойства *Deployment Root* определяется параметром *Deployment Type* .|
+|Тип развертывания|Тип развертывания файла, определяющий его значение *Deployment Root* . Может использоваться одно из следующих значений:<br /><br /> NoDeployment*\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \TEMPLATE\FEATURES \\ \<FeatureName> *\\<br /><br /> ElementFile: * \<SharePointRoot> \\ \<FeatureName> \TEMPLATE\FEATURES \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> Глобалресаурце: * \<SharePointRoot> \ресаурцес \\ *<br /><br /> ClassResource*\<ClassResourcePath>\\*<br /><br /> Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Имя файла|Имя файла или папки для файла элемента.|
 |Полный путь|Расположение файла для элемента. (только для чтения).|
 

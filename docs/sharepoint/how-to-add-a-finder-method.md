@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление метода Finder | Документация Майкрософт
+title: Как добавить метод Finder | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,57 +17,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428729"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016733"
 ---
-# <a name="how-to-add-a-finder-method"></a>Практическое руководство. Добавление метода Finder
-  Чтобы включить службу бизнес-данным (BDC) для отображения списка сущностей в веб-части или списке, необходимо создать *Finder* метод. Метод поиска — это специальный метод, который возвращает коллекцию экземпляров сущности. Дополнительные сведения см. в разделе [проектирование Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-finder-method"></a>Как добавить метод Finder
+  Чтобы служба подключения к бизнес-данным (BDC) отображала список сущностей в веб-части или списке, необходимо создать метод *поиска* . Метод поиска — это специальный метод, который возвращает коллекцию экземпляров сущности. Дополнительные сведения см. [в разделе Разработка модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-### <a name="to-create-a-finder-method"></a>Чтобы создать метод поиска
+### <a name="to-create-a-finder-method"></a>Создание метода Finder
 
-1. На **конструкторе BDC**, выберите сущность.
+1. В **конструкторе BDC**выберите сущность.
 
-    Дополнительные сведения см. в разделе [Как Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).
+    Дополнительные сведения см. [в разделе инструкции. Добавление сущности в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. В строке меню выберите **представление** > **Other Windows** > **Подробности метода BDC**.
+2. В строке меню выберите **Просмотреть**  >  **другие**  >  **сведения о методе BDC**Windows.
 
-    **Подробности метода BDC** откроется окно. Дополнительные сведения о **Подробности метода BDC** окно, см. в разделе [Обзор средства конструирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md).
+    Откроется окно **сведения о методе BDC** . Дополнительные сведения о окне **сведения о методе BDC** см. в разделе Общие сведения о [средствах проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. В **добавьте метод** выберите **создать метод поиска**.
+3. В списке **Добавить метод** выберите **создать метод поиска**.
 
     Visual Studio добавляет метод, возвращаемый параметр и дескриптор типа.
 
-4. Настройте дескриптор типа как дескриптор типа коллекции сущностей. Дополнительные сведения о создании дескриптора типа коллекции сущностей см. в разделе [как: Определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+4. Настройте дескриптор типа в качестве дескриптора типа коллекции сущностей. Дополнительные сведения о создании дескриптора типа коллекции сущностей см. в разделе [инструкции. определение дескриптора типа параметра](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   > Необходимо выполнить этот шаг, если вы добавили конкретного метода поиска для сущности. Visual Studio использует дескриптор типа, определенного в конкретный метод поиска.
+   > Вам не нужно выполнять этот шаг, если вы добавили в сущность конкретный метод поиска. Visual Studio использует дескриптор типа, определенный в конкретном методе поиска.
 
-5. В **обозревателе решений**, откройте контекстное меню файла кода службы, созданный для сущности и затем выберите **Просмотр кода**. Дополнительные сведения о файле кода службы, см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
+5. В **Обозреватель решений**откройте контекстное меню файла кода службы, созданного для сущности, и выберите пункт **Просмотреть код**. Дополнительные сведения о файле кода службы см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 6. Добавьте код в метод Finder. Этот код выполняет следующие задачи:
 
    - Извлекает данные из источника данных.
 
-   - Возвращает список сущностей в службу BDC.
+   - Возвращает список сущностей для службы BDC.
 
-     В следующем примере возвращается коллекция `Contact` сущностями с помощью данных из образца базы данных AdventureWorks для SQL Server.
+     В следующем примере возвращается коллекция `Contact` сущностей с использованием данных из образца базы данных AdventureWorks для SQL Server.
 
    > [!NOTE]
-   > Замените значение `ServerName` поле с именем сервера.
+   > Замените значение `ServerName` поля именем сервера.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="see-also"></a>См. также
-- [Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)
+## <a name="see-also"></a>См. также раздел
+- [Обзор средств проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Практическое руководство. Добавление параметра в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Практическое руководство. Определение экземпляра метода](../sharepoint/how-to-define-a-method-instance.md)
+- [Как добавить конкретный метод поиска](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Как добавить метод Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Как добавить метод удаления](../sharepoint/how-to-add-a-deleter-method.md)
+- [Как добавить метод обновления](../sharepoint/how-to-add-an-updater-method.md)
+- [Как добавить параметр в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Как определить экземпляр метода](../sharepoint/how-to-define-a-method-instance.md)

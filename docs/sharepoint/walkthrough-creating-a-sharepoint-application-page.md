@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Создание страницы приложения SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985031"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016487"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Пошаговое руководство. Создание страницы приложения SharePoint
 
@@ -45,7 +44,7 @@ ms.locfileid: "72985031"
 
 Сначала создайте **пустой проект SharePoint**. Позже в этот проект будет добавлен элемент **страницы приложения** .
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2. Откройте диалоговое окно **Новый проект** , разверните узел **Office/SharePoint** в соответствии с языком, который необходимо использовать, а затем выберите узел **решения SharePoint** .
 
@@ -61,19 +60,19 @@ ms.locfileid: "72985031"
 
 1. В **Обозреватель решений**выберите проект **мишарепоинтпрожект** .
 
-2. В строке меню выберите **Проект** > **Добавить новый элемент**.
+2. В строке меню выберите **проект**  >  **Добавить новый элемент**.
 
 3. В диалоговом окне **Добавление нового элемента** выберите **страницу приложения (шаблон только для решения фермы** ).
 
 4. Присвойте странице имя **сеарчитемс**, а затем нажмите кнопку **Добавить** .
 
-     Конструктор Visual Web Developer отображает страницу приложения в представлении **исходного кода** , где можно видеть HTML-элементы страницы. Конструктор отображает разметку для нескольких элементов управления <xref:System.Web.UI.WebControls.Content>. Каждый элемент управления сопоставляется с элементом управления <xref:System.Web.UI.WebControls.ContentPlaceHolder>, который определен на главной странице приложения по умолчанию.
+     Конструктор Visual Web Developer отображает страницу приложения в представлении **исходного кода** , где можно видеть HTML-элементы страницы. Конструктор отображает разметку для нескольких <xref:System.Web.UI.WebControls.Content> элементов управления. Каждый элемент управления сопоставляется с <xref:System.Web.UI.WebControls.ContentPlaceHolder> элементом управления, который определен на главной странице приложения по умолчанию.
 
 ## <a name="design-the-layout-of-the-application-page"></a>Разработка макета страницы приложения
 
 Элемент страницы приложения позволяет использовать конструктор для добавления элементов управления ASP.NET на страницу приложения. Этот конструктор является тем же конструктором, который используется в Visual Web Developer. Добавьте метку, список переключателей и таблицу в представление **источника** конструктора, а затем задайте свойства так же, как при проектировании любой стандартной страницы ASP.NET.
 
-1. В строке меню выберите **Вид** > **Панель элементов**.
+1. В строке меню выберите **вид**  >  **панель элементов**.
 
 2. В стандартном узле **панели элементов**выполните одно из следующих действий.
 
@@ -83,9 +82,9 @@ ms.locfileid: "72985031"
 
 3. Повторите предыдущий шаг, чтобы добавить элемент **DropDownList** и элемент **таблицы** в элемент управления содержимым **плацехолдермаин** .
 
-4. В конструкторе измените значение атрибута `Text` элемента управления метка, чтобы **отобразить все элементы**.
+4. В конструкторе измените значение `Text` атрибута элемента управления метка, чтобы **отобразить все элементы**.
 
-5. В конструкторе замените элемент `<asp:DropDownList>` следующим XML-кодом.
+5. В конструкторе замените `<asp:DropDownList>` элемент следующим XML-кодом.
 
     ```xml
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"
@@ -97,13 +96,13 @@ ms.locfileid: "72985031"
 
 ## <a name="handle-the-events-of-controls-on-the-page"></a>Обработку событий элементов управления на странице
 
-Обрабатывайте элементы управления на странице приложения точно так же, как любая страница ASP.NET. В этой процедуре будет обработано событие `SelectedIndexChanged` раскрывающегося списка.
+Обрабатывайте элементы управления на странице приложения точно так же, как любая страница ASP.NET. В этой процедуре будет обработано `SelectedIndexChanged` событие раскрывающегося списка.
 
 1. В меню **вид** выберите **код**.
 
      Файл кода страницы приложения откроется в редакторе кода.
 
-2. Добавьте следующий метод в класс `SearchItems` . Этот код обрабатывает событие <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> <xref:System.Web.UI.WebControls.DropDownList>, вызывая метод, который будет создан далее в этом пошаговом руководстве.
+2. Добавьте следующий метод в класс `SearchItems`. Этот код обрабатывает <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> событие объекта, <xref:System.Web.UI.WebControls.DropDownList> вызывая метод, который будет создан далее в этом пошаговом руководстве.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +112,12 @@ ms.locfileid: "72985031"
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Добавьте следующий метод в класс `SearchItems` . Этот метод выполняет итерацию всех сайтов на ферме серверов и выполняет поиск элементов, созданных или измененных текущим пользователем.
+4. Добавьте следующий метод в класс `SearchItems`. Этот метод выполняет итерацию всех сайтов на ферме серверов и выполняет поиск элементов, созданных или измененных текущим пользователем.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Добавьте следующий метод в класс `SearchItems` . Этот метод отображает элементы, созданные или измененные текущим пользователем в таблице.
+5. Добавьте следующий метод в класс `SearchItems`. Этот метод отображает элементы, созданные или измененные текущим пользователем в таблице.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -141,7 +140,7 @@ ms.locfileid: "72985031"
 
      Страница приложения обновляется и отображает все элементы, созданные на всех сайтах фермы серверов.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о страницах приложений SharePoint см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
@@ -151,7 +150,7 @@ ms.locfileid: "72985031"
 
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Как создать страницу приложения](../sharepoint/how-to-create-an-application-page.md)
-[тип страницы _layouts приложения](/previous-versions/office/aa979604(v=office.14))
+[Как создать страницу приложения](../sharepoint/how-to-create-an-application-page.md) 
+ [Тип страницы _layouts приложения](/previous-versions/office/aa979604(v=office.14))

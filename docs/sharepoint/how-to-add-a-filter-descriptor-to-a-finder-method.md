@@ -1,7 +1,7 @@
 ---
 title: Как добавить дескриптор фильтра в метод Finder | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986251"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016745"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Как добавить дескриптор фильтра в метод Finder
   Дескрипторы фильтров позволяют потребителям модели передавать значения методам перед их выполнением. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986251"
 
 2. В окне **сведения о методе** выберите дескриптор типа параметра.
 
-3. В строке меню выберите **вид** > **Свойства окно**.
+3. В строке меню выберите **вид**  >  **окно свойств**.
 
 4. В окне **Свойства** задайте для свойства **имя типа** тип данных, подходящий для фильтра.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986251"
 
      Под узлом **дескрипторы фильтра** появится новый дескриптор фильтра.
 
-7. В строке меню выберите **вид** > **Свойства окно**.
+7. В строке меню выберите **вид**  >  **окно свойств**.
 
 8. В окне **Свойства** выберите свойство **тип** .
 
@@ -62,12 +61,12 @@ ms.locfileid: "72986251"
      В следующем примере возвращаются заказы на продажу, которые имеют указанную дату заказа.
 
     > [!NOTE]
-    > Замените значение поля `ServerName` именем сервера.
+    > Замените значение `ServerName` поля именем сервера.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Как добавить конкретный метод поиска](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Как добавить параметр в метод](../sharepoint/how-to-add-a-parameter-to-a-method.md)
