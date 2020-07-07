@@ -1,7 +1,7 @@
 ---
 title: Отладка приложения SharePoint с помощью IntelliTrace
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984143"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015752"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace
 
@@ -45,9 +44,9 @@ ms.locfileid: "72984143"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
-Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - Поддерживаемые выпуски Windows и SharePoint.
 
@@ -73,7 +72,7 @@ ms.locfileid: "72984143"
 
 ## <a name="add-code-to-the-feature-receiver"></a>Добавление кода в приемник компонента
 
-Затем добавьте код в два метода в приемнике компонента: `FeatureActivated` и `FeatureDeactivating`. Эти методы запускаются каждый раз, когда компонент активируется или деактивируется в SharePoint соответственно.
+Затем добавьте код в два метода в приемнике компонента: `FeatureActivated` и `FeatureDeactivating` . Эти методы запускаются каждый раз, когда компонент активируется или деактивируется в SharePoint соответственно.
 
 1. В верхней части класса `Feature1EventReceiver` добавьте следующий код для объявления переменных, которые задают сайт и дочерний сайт SharePoint.
 
@@ -258,7 +257,7 @@ ms.locfileid: "72984143"
 
 2. Отображение содержимого списков извещений и задач.
 
-     В списке извещений должно быть новое объявление с именем **активированная функция: IntelliTraceTest_Feature1**, а список задач должен иметь новую задачу с именем **деактивация компонента: IntelliTraceTest_Feature1**. Если один из этих элементов отсутствует, проверьте, активирован ли компонент. Если он не активирован, активируйте его.
+     В списке извещений должно быть новое извещение с именем **активированная функция: IntelliTraceTest_Feature1**, а список задач должен иметь новую задачу с именем **деактивация компонента: IntelliTraceTest_Feature1**. Если один из этих элементов отсутствует, проверьте, активирован ли компонент. Если он не активирован, активируйте его.
 
 3. Отключите компонент, выполнив следующие действия.
 
@@ -295,7 +294,7 @@ ms.locfileid: "72984143"
 
 3. В окне PowerShell выполните команду "WebApplicationMonitoring", чтобы создать iTrace [-](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) файл, прерывать мониторинг и перезапустить решение SharePoint.
 
-     **-WebApplicationMonitoring**  *"\<шарепоинтсите >\\< шарепоинтаппнаме\>"*
+     **WebApplicationMonitoring***" \<SharePointSite> \\<шарепоинтаппнаме \> * "  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Отладка и исправление решения SharePoint
 
@@ -329,7 +328,7 @@ ms.locfileid: "72984143"
 
      Теперь код будет выполнен правильно.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Проверка и отладка кода SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

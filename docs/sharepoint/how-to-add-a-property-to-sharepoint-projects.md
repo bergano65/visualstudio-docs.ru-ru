@@ -1,7 +1,7 @@
 ---
-title: Практическое руководство. Добавление свойства в проекты SharePoint | Документация Майкрософт
+title: Как добавить свойство в проекты SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,74 +14,73 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967218"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015922"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Практическое руководство. Добавление свойства в проекты SharePoint
-  Расширение проекта можно использовать для добавления свойства в любой проект SharePoint. Свойство отображается в **свойства** окно при выборе проекта в **обозревателе решений**.
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Как добавить свойство в проекты SharePoint
+  Расширение проекта можно использовать для добавления свойства в любой проект SharePoint. Свойство отображается в окне **Свойства** при выборе проекта в **Обозреватель решений**.
 
- Следующие шаги предполагают, что вы уже создали расширение проекта. Дополнительные сведения см. в разделе [Как Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+ В следующих шагах предполагается, что вы уже создали расширение проекта. Дополнительные сведения см. [в разделе инструкции. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Добавление свойства в проект SharePoint
 
-1. Определение класса с открытое свойство, которое представляет свойство, которое вы добавляете в проекты SharePoint. Если вы хотите добавить несколько свойств, можно определить все свойства, в том же классе или в разных классах.
+1. Определите класс с открытым свойством, которое представляет свойство, добавляемое в проекты SharePoint. Если необходимо добавить несколько свойств, можно определить все свойства в одном и том же классе или в разных классах.
 
-2. В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> метод вашей <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации, дескриптор <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> событие *projectService* параметра.
+2. В <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> методе <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> реализации обработайте <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> событие параметра *прожектсервице* .
 
-3. В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> событий, добавьте экземпляр класса свойства <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.
+3. В обработчике событий для <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> события добавьте экземпляр класса Properties в <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> коллекцию параметра аргументов события.
 
 ## <a name="example"></a>Пример
- В следующем примере кода показано, как добавить два свойства для проектов SharePoint. Одно свойство данные сохраняются в файл пользовательских параметров проекта ( *. csproj.user* файл или *. vbproj.user* файла). Другие свойства данные сохраняются в файле проекта (*.csproj* файл или *.vbproj* файла).
+ В следующем примере кода показано, как добавить два свойства в проекты SharePoint. Одно свойство сохраняет свои данные в файле пользовательских параметров проекта (файл *. csproj. User* или *. vbproj. User* ). Другое свойство сохраняет свои данные в файле проекта (файл *. csproj* или *. vbproj* ).
 
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
 
-### <a name="understand-the-code"></a>Понимание кода
- Чтобы убедиться, что тот же экземпляр `CustomProjectProperties` класса используется каждый раз <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> событием, в примере кода добавляется объект свойств в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство проекта первый, когда происходит это событие. Каждый раз, когда это событие повторяется, код получает этот объект. Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство для связывания данных с проектами, см. в разделе [расширений средств сопоставления пользовательских данных с SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
+### <a name="understand-the-code"></a>Изучение кода
+ Чтобы гарантировать, что один и тот же экземпляр `CustomProjectProperties` класса используется каждый раз при <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> возникновении события, в примере кода в свойство проекта добавляется объект Properties <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> при первом возникновении этого события. Код извлекает этот объект при повторном возникновении этого события. Дополнительные сведения об использовании <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства для связывания данных с проектами см. в разделе [Связывание пользовательских данных с помощью расширений инструментов SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
- Чтобы сохранить изменения значений свойств, **задать** методы доступа свойств используют следующие API:
+ Чтобы сохранить изменения в значениях свойств, методы доступа **Set** для свойств используют следующие API:
 
-- `CustomUserFileProperty` использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство для сохранения его значения в файл пользовательских параметров проекта.
+- `CustomUserFileProperty`использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство, чтобы сохранить свое значение в файле параметров пользователя проекта.
 
-- `CustomProjectFileProperty` использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить его значение в файл проекта.
+- `CustomProjectFileProperty`использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить свое значение в файле проекта.
 
-  Дополнительные сведения о сохранении данных в этих файлах см. в разделе [сохранения данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+  Дополнительные сведения о сохранении данных в этих файлах см. в разделе [Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
-### <a name="specify-the-behavior-of-custom-properties"></a>Указать поведение пользовательских свойств
- Можно определить, как выглядит и ведет себя как пользовательское свойство **свойства** окна, применяя различные атрибуты из <xref:System.ComponentModel> пространство имен для определения свойства. Следующие атрибуты полезны во многих сценариях:
+### <a name="specify-the-behavior-of-custom-properties"></a>Определение поведения пользовательских свойств
+ Можно определить, как пользовательское свойство отображается и ведет себя в окне " **Свойства** ", применяя атрибуты из <xref:System.ComponentModel> пространства имен к определению свойства. Во многих сценариях полезны следующие атрибуты:
 
-- <xref:System.ComponentModel.DisplayNameAttribute>: Указывает имя свойства, которое отображается в **свойства** окна.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Задает имя свойства, которое отображается в окне **Свойства** .
 
-- <xref:System.ComponentModel.DescriptionAttribute>: Задает строку описания, который отображается в нижней части **свойства** окно при выборе свойства.
+- <xref:System.ComponentModel.DescriptionAttribute>: Указывает строку описания, которая отображается в нижней части окна **свойств** при выборе свойства.
 
-- <xref:System.ComponentModel.DefaultValueAttribute>: Задает значение по умолчанию свойства.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Задает значение свойства по умолчанию.
 
-- <xref:System.ComponentModel.TypeConverterAttribute>: Задает настраиваемое преобразование между строкой, отображаемой в **свойства** окно и значение свойства, не являющегося строкой.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Определяет пользовательское преобразование между строкой, отображаемой в окне " **Свойства** ", и значением свойства, не являющегося строкой.
 
-- <xref:System.ComponentModel.EditorAttribute>: Указывает пользовательский редактор для изменения свойства.
+- <xref:System.ComponentModel.EditorAttribute>: Определяет настраиваемый редактор, используемый для изменения свойства.
 
 ## <a name="compile-the-code"></a>Компиляция кода
- В этом примере требуются ссылки на следующие сборки:
+ Для этого примера требуются ссылки на следующие сборки:
 
-- Microsoft.VisualStudio.SharePoint
+- Microsoft. VisualStudio. SharePoint
 
-- Microsoft.VisualStudio.Shell
+- Microsoft. VisualStudio. Shell
 
-- Microsoft.VisualStudio.Shell.Interop
+- Microsoft. VisualStudio. Shell. Interop
 
-- Microsoft.VisualStudio.Shell.Interop.8.0
+- Microsoft. VisualStudio. Shell. Interop. 8.0
 
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Развертывание расширения
- Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и другие файлы, которые требуется распространить с расширением. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Чтобы развернуть расширение, создайте [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакет расширения (VSIX) для сборки и всех остальных файлов, которые требуется распространить с расширением. Дополнительные сведения см. [в статье Развертывание расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)
-- [Практическое руководство. Создание расширения проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
-- [Практическое руководство. Добавление пункта контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [Как создать расширение проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [Как добавить пункт контекстного меню в проекты SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

@@ -1,7 +1,7 @@
 ---
-title: Примеры разработки решений SharePoint и пошаговые руководства | Документация Майкрософт
+title: Примеры и пошаговые руководства по разработке для SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -13,23 +13,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976262"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015801"
 ---
-# <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры разработки решений SharePoint и пошаговые руководства
-  Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений SharePoint.
+# <a name="sharepoint-development-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по разработке для SharePoint
+  В этом разделе содержатся примеры приложений, примеры кода и пошаговые пошаговые руководства, иллюстрирующие синтаксис, структуру и приемы, используемые для построения решений SharePoint.
 
- Пример кода предназначен для учебных целей и не следует использовать в развернутых решениях без изменения. В частности безопасности следует уделить больше внимания.
+ Пример кода предназначен для указания целей и не должен использоваться в развернутых решениях без изменений. В частности, необходимо учитывать безопасность.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Примеры разработки решений SharePoint](../sharepoint/sharepoint-development-samples.md)|Описывает образцы приложений, которые демонстрируют, как использовать средства разработки SharePoint в Visual Studio.|
+|[Примеры разработки для SharePoint](../sharepoint/sharepoint-development-samples.md)|Описание примеров приложений, демонстрирующих использование средств разработки SharePoint в Visual Studio.|
 |[Пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Пошаговое руководство, представляющее собой введение в средства разработки SharePoint в Visual Studio.|
 
 ## <a name="see-also"></a>См. также

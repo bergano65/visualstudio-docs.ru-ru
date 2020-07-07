@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Создание веб-части для SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbc4b9a2eecd6eb9853c515eb5358009c32843a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655913"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014587"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Пошаговое руководство. Создание веб-части для SharePoint
 
@@ -42,7 +41,7 @@ ms.locfileid: "72655913"
     > [!NOTE]
     > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
@@ -52,9 +51,9 @@ ms.locfileid: "72655913"
 
 Сначала создайте пустой проект SharePoint. Позже вы добавите веб-часть в проект с помощью шаблона элемента **веб-части** .
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] с помощью команды **Запуск от имени администратора** .
+1. Начните с [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использования команды **Запуск от имени администратора** .
 
-2. На панели «мужчин» выберите **файл**  > **создать**  > **проект**.
+2. На панели «мужчин» выберите **файл**  >  **создать**  >  **проект**.
 
 3. В диалоговом окне **Новый проект** разверните узел **SharePoint** под языком, который необходимо использовать, а затем выберите узел **2010** .
 
@@ -68,7 +67,7 @@ ms.locfileid: "72655913"
 
 Добавьте элемент **веб-части** в проект. Элемент **веб-части** добавляет файл кода веб-части. Позже в файл кода веб-части будет добавлен код для отображения содержимого веб-части.
 
-1. В строке меню выберите **Проект** > **Добавить новый элемент**.
+1. В строке меню выберите **проект**  >  **Добавить новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** в области **Установленные шаблоны** разверните узел **SharePoint** и выберите узел **2010** .
 
@@ -89,7 +88,7 @@ ms.locfileid: "72655913"
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Добавьте следующий код в класс `WebPart1` . Этот код объявляет следующие поля:
+3. Добавьте в класс `WebPart1` приведенный далее код. Этот код объявляет следующие поля:
 
    - Сетка данных для просмотра сотрудников в веб-части.
 
@@ -102,12 +101,12 @@ ms.locfileid: "72655913"
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Добавьте следующий код в класс `WebPart1` . Этот код добавляет пользовательское свойство с именем `DataFilePath` в веб-часть. Пользовательское свойство — это свойство, которое может быть задано пользователем в SharePoint. Это свойство получает и задает расположение XML-файла данных, который используется для заполнения сетки данных.
+4. Добавьте в класс `WebPart1` приведенный далее код. Этот код добавляет пользовательское свойство с именем `DataFilePath` в веб-часть. Пользовательское свойство — это свойство, которое может быть задано пользователем в SharePoint. Это свойство получает и задает расположение XML-файла данных, который используется для заполнения сетки данных.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
-5. Замените метод `CreateChildControls` следующим кодом. Этот код выполняет следующие задачи:
+5. Замените метод `CreateChildControls` приведенным ниже кодом. Этот код выполняет следующие задачи:
 
    - Добавляет сетку данных и метку, объявленные на предыдущем шаге.
 
@@ -116,7 +115,7 @@ ms.locfileid: "72655913"
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Добавьте следующий метод в класс `WebPart1` . Этот код выполняет следующие задачи:
+6. Добавьте следующий метод в класс `WebPart1`. Этот код выполняет следующие задачи:
 
    - Создает команду, которая отображается в меню команд веб-части отображаемой веб-части.
 
@@ -162,11 +161,11 @@ ms.locfileid: "72655913"
         </employees>
     ```
 
-2. В блокноте в строке меню выберите **файл**  > **Сохранить как**.
+2. В блокноте в строке меню выберите **файл**  >  **Сохранить как**.
 
 3. В диалоговом окне **Сохранить как** в списке **Тип файла** выберите **все файлы**.
 
-4. В поле **имя файла** введите **Data. XML**.
+4. В поле **имя файла** введите **data.xml**.
 
 5. Выберите любую папку с помощью кнопки **Обзор папок** , а затем нажмите кнопку **сохранить** .
 
@@ -214,9 +213,9 @@ ms.locfileid: "72655913"
 
      Все сотрудники отображаются в веб-части.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Создание веб-частей для sharepoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
-[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
-[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
-[Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
+ [Как создать веб-часть SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+ [Инструкции. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
+ [Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

@@ -1,7 +1,7 @@
 ---
 title: Создание решений SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97f5243b775f19d77bc8d5a5c1d29fddadd9f1c7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.openlocfilehash: 2a7aaa8a5e5c8e6079c04b05d887138d294116dd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541782"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016243"
 ---
 # <a name="create-sharepoint-solutions"></a>Создание решений SharePoint
   Приложения SharePoint можно создавать не только в SharePoint Designer, но и в Visual Studio. Visual Studio обеспечивает быструю разработку решений SharePoint с помощью таких компонентов, как средства расширенной отладки, IntelliSense, завершение операторов и шаблоны проектов. В Visual Studio также используются преимущества дополнительных средств и языков платформы .NET Framework. Проекты SharePoint можно разрабатывать с помощью Visual Basic или Visual C#, а приложения для проектов SharePoint можно разрабатывать с помощью JavaScript.

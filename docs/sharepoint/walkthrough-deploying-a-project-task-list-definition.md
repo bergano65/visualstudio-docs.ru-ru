@@ -1,7 +1,7 @@
 ---
 title: Пошаговое руководство. Развертывание определения проекта список задач | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661875"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015762"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Пошаговое руководство. Развертывание определения списка задач проекта
 
@@ -25,7 +24,7 @@ ms.locfileid: "73661875"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
@@ -43,7 +42,7 @@ ms.locfileid: "73661875"
 
 3. Укажите локальный сайт SharePoint, используемый для отладки, выберите параметр **Развернуть как решение фермы** , а затем нажмите кнопку **Готово** .
 
-4. Откройте контекстное меню проекта и выберите **добавить** > **новый элемент**.
+4. Откройте контекстное меню проекта и выберите команду **Добавить**  >  **новый элемент**.
 
 5. В области **шаблоны** выберите шаблон **списка** , а затем нажмите кнопку **добавить** .
 
@@ -73,7 +72,7 @@ ms.locfileid: "73661875"
 
      Новый узел приемника событий добавляется в проект с файлом кода с именем **прожекттасклистевентрецеивер**.
 
-6. Добавьте код в метод `ItemAdded` в файле кода **прожекттасклистевентрецеивер** . При каждом добавлении новой задачи к задаче добавляется срок выполнения по умолчанию и описание. Сроком по умолчанию является 1 июля 2009.
+6. Добавьте код в `ItemAdded` метод в файле кода **прожекттасклистевентрецеивер** . При каждом добавлении новой задачи к задаче добавляется срок выполнения по умолчанию и описание. Сроком по умолчанию является 1 июля 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,35 +135,35 @@ ms.locfileid: "73661875"
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Развертывание списка задач проекта в локальной системе
 
-В строке меню Visual Studio выберите **сборка** > **Развернуть решение**.
+В строке меню Visual Studio выберите **Сборка**  >  **Развернуть решение**.
 
 Visual Studio перезапускает пул приложений IIS, отзывает все существующие версии решения, копирует файл пакета решения (*WSP*) в SharePoint, а затем активирует его компоненты. Теперь можно использовать решение в SharePoint. Дополнительные сведения о шагах по настройке развертывания см. [в разделе инструкции. изменение конфигурации развертывания SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Развертывание списка задач проекта в удаленной системе
 
-1. В строке меню Visual Studio выберите **сборка** > **опубликовать**.
+1. В строке меню Visual Studio выберите **Сборка**  >  **опубликовать**.
 
 2. В диалоговом окне **Публикация** выберите переключатель **опубликовать в файловой системе** .
 
      Вы можете изменить целевое расположение в диалоговом окне **Публикация** , нажав кнопку ![с многоточием и](../sharepoint/media/ellipsisicon.gif "Значок эллипса") перейдя к другому расположению.
 
-3. Нажмите кнопку **опубликовать** .
+3. Нажмите кнопку **Опубликовать**.
 
      Для решения создается *WSP* -файл.
 
 4. Скопируйте *WSP* файл в удаленную систему SharePoint.
 
-5. Используйте команду PowerShell `Add-SPUserSolution`, чтобы установить пакет на удаленную установку SharePoint. (Для решений фермы используйте команду `Add-SPSolution`.)
+5. Используйте команду PowerShell `Add-SPUserSolution` для установки пакета на удаленную установку SharePoint. (Для решений фермы используйте `Add-SPSolution` команду.)
 
      Например, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Для развертывания решения используйте команду PowerShell `Install-SPUserSolution`. (Для решений фермы используйте команду `Install-SPSolution`.)
+6. Используйте команду PowerShell `Install-SPUserSolution` для развертывания решения. (Для решений фермы используйте `Install-SPSolution` команду.)
 
      Например, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Дополнительные сведения об удаленном развертывании см. в статьях [Использование решений](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) и [Добавление и развертывание решений с помощью PowerShell в SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о настройке и развертывании решений SharePoint см. в следующих разделах:
 
@@ -174,5 +173,5 @@ Visual Studio перезапускает пул приложений IIS, отз
 
 - [Windows PowerShell для SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: Интеграция бизнес-данных в SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -19,15 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06d9e8059db8daa1c27b8c1d5fecc50940b7facb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986394"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016308"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
-  Бизнес-данные можно интегрировать в SharePoint. Бизнес-данные могут поступать из серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel, SAP или веб-служба. Пользователи могут просматривать, добавлять, обновлять или удалять бизнес-данные с помощью внешних списков или бизнес-данных веб-части в SharePoint.  Пользователи также могут получать доступ к этим данным в автономном режиме в Microsoft Office приложении, таком как Microsoft Outlook. Дополнительные сведения см. в разделе [где можно показать внешние данные](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
+  Бизнес-данные можно интегрировать в SharePoint. Бизнес-данные могут поступать из внутренних серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] , Siebel и SAP, или веб-службы. Пользователи могут просматривать, добавлять, обновлять или удалять бизнес-данные с помощью внешних списков или бизнес-данных веб-части в SharePoint.  Пользователи также могут получать доступ к этим данным в автономном режиме в Microsoft Office приложении, таком как Microsoft Outlook. Дополнительные сведения см. в разделе [где можно показать внешние данные](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
 
  Чтобы интегрировать данные в SharePoint, создайте модель для службы подключения к бизнес-данным (BDC). Служба BDC — это приложение в SharePoint, которое хранит сведения о данных в бизнес-приложениях. Дополнительные сведения см. в разделе [Служба подключения к бизнес-данным (BDC)](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14)).
 

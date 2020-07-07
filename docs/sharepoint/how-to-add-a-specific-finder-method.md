@@ -1,7 +1,7 @@
 ---
 title: Как добавить конкретный метод поиска | Документация Майкрософт
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985265"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014815"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Как добавить конкретный метод поиска
   Можно вернуть один экземпляр сущности, создав *конкретный метод поиска* . Служба подключения к бизнес-данным (BDC) выполняет конкретный метод поиска, когда пользователь выбирает сущность в веб-части данных или во внешнем списке. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72985265"
 
     Сведения о добавлении сущности в **конструктор BDC** в Visual Studio см. в разделе [как добавить сущность в модель](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. В строке меню выберите **просмотр** > **другие окна** **сведения о методе BDC**.
+2. В строке меню выберите **Просмотр**  >  **других окон**, **сведения о методе BDC**.
 
     Откроется окно **сведения о методе BDC** . Дополнительные сведения об этом окне см. в разделе Общие сведения о [средствах проектирования моделей BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -80,12 +79,12 @@ ms.locfileid: "72985265"
      В следующем примере возвращается контакт из образца базы данных AdventureWorks для SQL Server.
 
      > [!NOTE]
-     > Замените значение поля `ServerName` именем сервера.
+     > Замените значение `ServerName` поля именем сервера.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Как добавить метод Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Как добавить метод Creator](../sharepoint/how-to-add-a-creator-method.md)
