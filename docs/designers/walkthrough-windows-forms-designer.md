@@ -1,20 +1,20 @@
 ---
 title: Руководство по использованию конструктора Windows Forms
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589842"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816466"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Пошаговое руководство. Начало работы с конструктором Windows Forms
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>Учебник. Начало работы с конструктором Windows Forms
 
 Конструктор Windows Forms предоставляет множество средств для создания приложений Windows Forms. В этой статье показано, как создать приложение с помощью различных средств, предоставляемых конструктором, и выполнять такие задачи:
 

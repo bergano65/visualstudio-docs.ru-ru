@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 8bf139a6eab3c25bf28e787f9af12135813436e3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 6640a03523994b845d90f45ff6323126f462068a
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984924"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950644"
 ---
 # <a name="install-a-preview-release"></a>Установка предварительной версии
 
@@ -22,7 +23,7 @@ ms.locfileid: "74984924"
 
 До официального выпуска новой версии Visual Studio для Mac она доступна в виде предварительной версии. Предварительная версия дает возможность испытать новые возможности и получить последние исправления, прежде чем они будут полноценно включены в продукт.
 
-Предварительные версии Visual Studio для Mac распространяются в виде обновлений, а не отдельных загрузок. У Visual Studio для Mac существует три канала обновления, как описано в статье об [обновлениях](update.md): стабильная версия, бета-версия и альфа-версия.
+Предварительные версии Visual Studio для Mac распространяются в виде обновлений, а не отдельных загрузок. В Visual Studio для Mac есть три канала [обновления](update.md): стабильная версия, бета-версия и альфа-версия.
 
 Как правило, предварительные выпуски доступны в **бета-версии** и **альфа-версии**. Более точную информацию вы найдете в [Заметках о предварительном выпуске](/visualstudio/releasenotes/vs2017-mac-preview-relnotes).
 

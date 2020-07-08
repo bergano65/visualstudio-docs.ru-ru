@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280261"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816700"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Краткое руководство. Первое знакомство со средствами профилирования
+# <a name="first-look-at-profiling-tools"></a>Первое знакомство со средствами профилирования
 
 Visual Studio предоставляет широкий набор средств профилирования для выявления различных типов проблем с производительностью в зависимости от типа приложения. В этой статье мы кратко рассмотрим наиболее распространенные средства профилирования.
 
@@ -204,9 +204,9 @@ PerfTips отображает те же события, которые такж�
 |[Распределение объектов .NET](../profiling/dotnet-alloc-tool.md)|да (только для .NET.)|да|да|
 |[Использование GPU](/visualstudio/debugger/graphics/gpu-usage)|да|да|нет|
 |[Временная шкала приложения](../profiling/application-timeline.md)|да|да|Нет|
-|[Средство просмотра событий](../profiling/perftips.md)|да|да|да|
-|[.NET Async](../profiling/perftips.md)|да (только для .NET.)|да|да|
-|[База данных](../profiling/perftips.md)|да (только .NET Core)|Нет|да (только ASP.NET Core)|
+|[Средство просмотра событий](../profiling/events-viewer.md)|да|да|да|
+|[.NET Async](../profiling/analyze-async.md)|да (только для .NET.)|да|да|
+|[База данных](../profiling/analyze-database.md)|да (только .NET Core)|Нет|да (только ASP.NET Core)|
 |[Обозреватель производительности](../profiling/performance-explorer.md)|Нет|Нет|Нет|
 |[IntelliTrace](../debugger/intellitrace.md)|Только .NET с Visual Studio Enterprise|Только .NET с Visual Studio Enterprise|Только .NET с Visual Studio Enterprise|
 ::: moniker-end

@@ -7,19 +7,20 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 45f9756607cbb638d1f69f77bdf8cd2ee30953c5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75851941"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938967"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
 Чтобы приступить к разработке собственных кроссплатформенных приложений .NET в macOS, установите Visual Studio 2019 для Mac. Для этого выполните следующие действия.
 
  > [!div class="button"]
- > [Скачать Visual Studio для Mac](https://visualstudio.microsoft.com/vs/mac/)
+ > [Скачайте Visual Studio для Mac](https://visualstudio.microsoft.com/vs/mac/)
 
 ## <a name="requirements"></a>Требования
 
@@ -53,7 +54,7 @@ ms.locfileid: "75851941"
    Если вы не хотите устанавливать все платформы, выберите нужные с помощью приведенных ниже рекомендаций.
 
 
-|Тип приложения  |Назначение  |Выбор  |Примечания  |
+|Тип приложения  |целевого объекта  |Выбранное  |Примечания  |
 |---------|---------|---------|---------|
 |**Приложения, использующие Xamarin**| Xamarin.Forms|Выберите платформы **Android** и **iOS**. |Потребуется установить [**Xcode**](https://developer.apple.com/xcode/). |
 ||Только iOS|Выберите платформу **iOS**.|Потребуется установить [**Xcode**](https://developer.apple.com/xcode/).|
@@ -91,7 +92,7 @@ ms.locfileid: "75851941"
 
 - [Конечные точки Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Установка Visual Studio для Mac позволяет перейти к написанию кода для приложений. Следующие руководства помогут вам в создании и развертывании проектов.
 
@@ -114,6 +115,6 @@ ms.locfileid: "75851941"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Установка Visual Studio (в Windows)](/visualstudio/install/install-visual-studio)

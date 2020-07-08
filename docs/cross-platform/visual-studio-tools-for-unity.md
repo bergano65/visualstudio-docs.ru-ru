@@ -3,19 +3,19 @@ title: Инструменты Visual Studio для Unity | Документац
 ms.custom: ''
 ms.date: 10/25/2019
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 967e0bfbaec19d3afa558957008ea14a5c37f359
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74797135"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814958"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
 

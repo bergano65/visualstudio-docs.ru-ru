@@ -1,18 +1,19 @@
 ---
-title: Возможности доступа
+title: Специальные возможности
 description: В этой статье описаны специальные возможности в Visual Studio для Mac и способы их включения.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306659"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938916"
 ---
-# <a name="accessibility"></a>Возможности доступа
+# <a name="accessibility"></a>Специальные возможности
 
 Кроме функций и служебных программ для macOS, Visual Studio для Mac предоставляет дополнительные возможности для людей с ограниченными возможностями:
 
@@ -44,7 +45,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Включив специальные возможности, перезапустите Visual Studio.
 
-## <a name="how-to-use-keyboard-navigation"></a>Навигация с помощью клавиатуры
+## <a name="how-to-use-keyboard-navigation"></a>Практическое руководство. Навигация с помощью клавиатуры
 
 Навигацию с помощью клавиатуры можно включить, выбрав **System Preferences > Keyboard > Shortcuts** (Системные настройки > Клавиатура > Ярлыки) и установив для параметра Full Keyboard Access (Полный доступ с клавиатуры) значение **All Controls** (Все элементы управления):
 
@@ -58,17 +59,17 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Нажатие клавиши ПРОБЕЛ активирует элемент управления с наведенным фокусом.
 
-## <a name="how-to-enable-and-use-voice-over"></a>Включение и использование функции VoiceOver
+## <a name="how-to-enable-and-use-voice-over"></a>Практическое руководство. Включение и использование функции VoiceOver
 
 Чтобы включить или отключить функцию VoiceOver, нажмите клавиши **CMD+F5**.
 
 Для навигации между командами пользовательского интерфейса VoiceOver используйте следующие команды:
 
-- Перемещение курсора VoiceOver между элементами управления: **CTRL+ALT+СТРЕЛКА ВЛЕВО или СТРЕЛКА ВПРАВО**.
+- Перемещение курсора VoiceOver между элементами управления: **CTRL + ALT + клавиша со стрелкой влево / клавиша со стрелкой вправо**
 
    VoiceOver считывает имя элементов управления и некоторые сведения о них, а также определяет возможные действия с ними.
 
-- Ввод групп и элементов управления (например, панели решения, панели инструментов и других панелей): **CTRL+ALT+SHIFT+СТРЕЛКА ВНИЗ**.
+- Ввод групп и элементов управления (например, панели решения, панели инструментов и других панелей): **CTRL+ALT+SHIFT+СТРЕЛКА ВНИЗ**
 
    Перемещаться в пределах элемента управления можно с помощью клавиш **CTRL+ALT+СТРЕЛКИ**.
 
@@ -77,6 +78,6 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 - [VoiceOver Getting Started Guide](https://help.apple.com/voiceover/info/guide/10.12/) (Руководство по началу работы с VoiceOver)
 - [OS X VoiceOver Commands](https://lab.dotjay.com/notes/voiceover-commands/) (Команды VoiceOver в OS X)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Специальные возможности Visual Studio (в Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

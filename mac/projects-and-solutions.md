@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b63e1206624c5aab6af67d9e4fbd30473d4f7f5d
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107834"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938602"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Проекты и решения в Visual Studio для Mac
 
@@ -42,6 +42,6 @@ ms.locfileid: "70107834"
 
 Дополнительные сведения об этих параметрах см. в статье [Управление свойствами проекта и решения](managing-solutions-and-project-properties.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Решения и проекты в Visual Studio (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

@@ -1,18 +1,18 @@
 ---
 title: Практическое руководство. Создание модульных тестов для библиотек DLL на C++
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275423"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816011"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Практическое руководство. Создание модульных тестов для библиотек DLL на C++
 
@@ -34,7 +34,7 @@ ms.locfileid: "77275423"
 
 8. [Изолируйте модули от внешних ресурсов](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Обычно библиотека DLL зависит от других компонентов разрабатываемой системы, таких как другие библиотеки DLL, базы данных или удаленные подсистемы. Полезно тестировать каждый модуль отдельно от его зависимостей. Внешние компоненты могут сделать выполнение тестов медленным. Во время разработки другие компоненты могут быть еще не готовы.
 
-## <a name="create_test_project"></a> Создание проекта машинного модульного теста
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> Создание проекта машинного модульного теста
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**.
 
@@ -82,7 +82,7 @@ ms.locfileid: "77275423"
 
          ![Обозреватель модульных тестов с одним пройденным тестом](../test/media/utecpp04.png)
 
-## <a name="create_dll_project"></a> Создание проекта библиотеки DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Создание проекта библиотеки DLL
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ ms.locfileid: "77275423"
 
 ::: moniker-end
 
-## <a name="make_functions_visible"></a> Привязка тестового проекта к проекту библиотеки DLL
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> Привязка тестового проекта к проекту библиотеки DLL
 
 1. Добавьте проект DLL в ссылки тестового проекта.
 
@@ -194,7 +194,7 @@ ms.locfileid: "77275423"
 
    Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.
 
-## <a name="iterate"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
 
 1. Добавьте новый тест.
 
@@ -252,7 +252,7 @@ ms.locfileid: "77275423"
     > [!TIP]
     > Разрабатывайте код, добавляя тесты по одному. После каждой итерации проверяйте, все ли тесты завершаются успешно.
 
-## <a name="debug"></a> Отладка непройденного теста
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Отладка непройденного теста
 
 1. Добавьте еще один тест.
 
@@ -337,7 +337,7 @@ ms.locfileid: "77275423"
 
 ::: moniker-end
 
-## <a name="refactor"></a> Рефакторинг кода без изменения тестов
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Рефакторинг кода без изменения тестов
 
 1. Упростите основное вычисление в функции SquareRoot.
 

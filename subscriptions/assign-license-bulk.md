@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Узнайте, как администраторы могут назначать лицензии нескольким подписчикам, используя функцию массового добавления, либо группы Microsoft Azure Active Directory.
-ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289135"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903278"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Назначение подписок нескольким пользователям
 Портал администрирования подписок позволяет добавлять пользователей по одному или большими группами.  Чтобы добавлять пользователей по одному, см. раздел [Добавление отдельных пользователей](assign-license.md).

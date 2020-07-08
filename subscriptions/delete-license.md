@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Сведения о том, как администраторы могут удалять назначения подписок
-ms.openlocfilehash: f630eef2d06e008966165e898cd40d123cb5c590
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e6ce84aa84e25bcdeb44b93954289a65a3454010
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289083"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902903"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Удаление назначений в подписках Visual Studio
 Если подписчику больше не требуется подписка Visual Studio, например, если он покидает организацию, завершил проект или переходит на другую должность, его подписку можно удалить и назначить другому пользователю. Имейте в виду, что при переназначении подписки не все преимущества подписчика сбрасываются.  Новый пользователь сможет запросить неиспользованные ключи и просмотреть ранее запрошенные ключи, но лимит запрашиваемых ключей **не** сбрасывается.  Для организаций, заключивших соглашения Enterprise Agreements (EA), все преимущества, которыми пользовался исходный пользователь, такие как обучение от Pluralsight, будут сброшены. 

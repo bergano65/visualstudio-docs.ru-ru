@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
-ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289434"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906086"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация и использование преимущества технической поддержки в подписках Visual Studio
 Преимущество технической поддержки в подписках Visual Studio предназначено для решения проблем, связанных с заменой и ремонтом, в **нерабочей среде** для продуктов, которые все еще находятся на этапе основной поддержки [жизненного цикла поддержки ](https://support.microsoft.com/lifecycle/search). Стандартная и годовая облачная подписки на Visual Studio Enterprise получают право на четыре обращения в службу поддержки, а стандартная и годовая облачная подписки на Visual Studio Professional — на два в течение 1 года с активации преимущества. Необходимо активировать преимущество в срок действия подписки.

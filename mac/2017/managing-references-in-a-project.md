@@ -5,20 +5,21 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984865"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950559"
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
 
 Visual Studio для Mac предоставляет два средства для добавления дополнительных ссылок в проект:
 
-![Ссылки на проект](media/projects-and-solutions-image10.png)
+![Ссылки проекта](media/projects-and-solutions-image10.png)
 
-а именно:
+Эти особые значения приведены ниже.
 
 * Ссылки
 * Пакеты NuGet (добавляются через папку "Пакеты")
@@ -43,7 +44,7 @@ NuGet — это наиболее популярный диспетчер па�
 
 Сведения об использовании пакета NuGet см. в пошаговом руководстве [Включение пакета NuGet в проект](nuget-walkthrough.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление ссылками (Visual Studio в Windows)](/visualstudio/ide/managing-references-in-a-project)
 - [Добавление ссылок с использованием NuGet или расширения SDK (Visual Studio в Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

@@ -5,19 +5,20 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: fa298e97c2db05ee3be526e5e1b3cc7a7affed99
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985114"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950373"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Рабочие нагрузки Visual Studio для Mac
 
 В Visual Studio для Mac уже установлены рабочие нагрузки для разработки следующих типов приложений.
 
 * Кроссплатформенные мобильные приложения в .NET с использованием Xamarin для Android, iOS, tvOS и watchOS
-* классических приложений Mac;
+* Классические приложения Mac
 * Приложения .NET Core
 * Веб-приложения ASP.NET Core
 * Кроссплатформенные игры Unity

@@ -5,14 +5,14 @@ ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 06/23/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Узнайте, как приобрести ежемесячные подписки Visual Studio с помощью портала администрирования подписок
-ms.openlocfilehash: abe0b7a84f0979de4bc1f59b6f82144c804c8c7e
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85307107"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904694"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Добавление новых ежемесячных подписок Visual Studio на портале администрирования подписок
 При покупке новых ежемесячных подписок Visual Studio с использованием подписки Azure может потребоваться добавить их на портал администрирования подписок, чтобы назначить их пользователям.  
