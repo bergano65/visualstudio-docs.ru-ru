@@ -1,7 +1,7 @@
 ---
 title: Модульное тестирование JavaScript и TypeScript
 description: Visual Studio поддерживает код JavaScript и TypeScript для модульного тестирования с помощью инструментов Node.js для Visual Studio
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289005"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033355"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Модульное тестирование JavaScript и TypeScript в Visual Studio
 
@@ -72,25 +72,32 @@ describe('Test Suite 1', function() {
 ![Обозреватель тестов](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Не используйте параметр `outdir` или `outfile` в *tsconfig.json*, так как обозреватель тестов не сможет найти модульные тесты в файлах TypeScript.
+> В файле *tsconfig.json* TypeScript не используйте параметр `outdir` или `outfile`, так как обозреватель тестов не сможет найти модульные тесты.
 
 ## <a name="run-tests"></a>Выполнить тесты
 
-Вы можете выполнять тесты в Visual Studio 2017 или из командной строки.
+Вы можете выполнять тесты в Visual Studio или из командной строки.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Выполнение тестов в Visual Studio 2017
+### <a name="run-tests-in-visual-studio"></a>Выполнение тестов в Visual Studio
 
+::: moniker range=">=vs-2019"
+Чтобы выполнить тест, нажмите на ссылку **Выполнить все** в обозревателе тестов. Или выберите один или несколько тестов или групп, щелкните правой кнопкой мыши и в контекстном меню выберите команду **Выполнить**. Тесты выполняются в фоновом режиме, и обозреватель тестов автоматически обновится, отображая результаты. Кроме того, вы можете отладить выбранные тесты, щелкнув их правой кнопкой мыши и выбрав **Отладить**.
+::: moniker-end
+::: moniker range="vs-2017"
 Чтобы выполнить тест, нажмите на ссылку **Выполнить все** в обозревателе тестов. Или выберите один или несколько тестов или групп, щелкните правой кнопкой мыши и в контекстном меню выберите команду **Выполнить выбранные тесты**. Тесты выполняются в фоновом режиме, и обозреватель тестов автоматически обновится, отображая результаты. Кроме того, вы можете отладить выбранные тесты, нажав **Отладить выбранные тесты**.
+::: moniker-end
 
-> [!Warning]
-> Отладка модульных тестов с помощью Node 8+ в настоящее время подходит только для тестовых файлов JavaScript. Тестовые файлы TypeScript не смогут достичь точки останова. В качестве обходного решения используйте ключевое слово `debugger`.
+Для TypeScript модульные тесты выполняются в созданном коде JavaScript.
+
+> [!NOTE]
+> В большинстве сценариев TypeScript можно выполнить отладку модульного теста, установив точку останова в коде TypeScript, щелкнув правой кнопкой мыши тест в обозревателе тестов и выбрав **Отладка**. В более сложных сценариях, например там, где используются сопоставители с исходным кодом, тестовые файлы могут не достичь точек останова в коде TypeScript. В качестве обходного решения рекомендуется использовать ключевое слово `debugger`.
 
 > [!NOTE]
 > В настоящее время мы не поддерживаем тесты профилирования или объем протестированного кода.
 
 ### <a name="run-tests-from-the-command-line"></a>Запуск тестов из командной строки
 
-Вы можете выполнять тесты из [командной строки разработчика](/dotnet/framework/tools/developer-command-prompt-for-vs) для Visual Studio 2017, используя следующую команду:
+Вы можете выполнять тесты из [Командной строки разработчика](/dotnet/framework/tools/developer-command-prompt-for-vs) в Visual Studio, используя следующую команду:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter

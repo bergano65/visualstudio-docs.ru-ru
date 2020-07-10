@@ -1,19 +1,19 @@
 ---
 title: Live Unit Testing
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223711"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906226"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Настройка и использование Live Unit Testing
 
@@ -198,9 +198,9 @@ ms.locfileid: "81223711"
 
 Включать и исключать отдельные методы теста можно в окне редактора кода. В окне редактора кода щелкните сигнатуру метода теста правой кнопкой мыши и выберите один из следующих вариантов:
 
-- **Динамические тесты** > **Включить \<выбранный метод>** .
-- **Динамические тесты** > **Исключить \<выбранный метод>** .
-- **Динамические тесты** > **Исключить все, кроме \<выбранный метод>** .
+- **Динамические тесты** > **Включить \<selected method>**
+- **Динамические тесты** > **Исключить \<selected method>**
+- **Динамические тесты** > **Исключить все, кроме \<selected method>**
 
 ### <a name="exclude-tests-programmatically"></a>Исключение тестов с помощью программных средств
 
