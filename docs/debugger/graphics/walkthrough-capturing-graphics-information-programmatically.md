@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734768"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835658"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Пошаговое руководство. Запись графических сведений программными средствами
 С помощью диагностики графики [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно программно захватывать графические данные из приложения Direct3D.
@@ -37,7 +37,7 @@ ms.locfileid: "72734768"
 - Захват графической информации
 
 > [!NOTE]
-> В предыдущих реализациях программного захвата использовались Инструменты удаленной отладки для Visual Studio для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], чтобы предоставить функции захвата.
+> В предыдущих реализациях программного захвата использовались Инструменты удаленной отладки для Visual Studio, чтобы предоставить функции захвата.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>подготовка приложения к использованию программного захвата;
 Для использования программного захвата в приложении оно должно содержать необходимые заголовки. Эти заголовки являются частью пакета SDK для Windows 10.
