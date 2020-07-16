@@ -42,6 +42,8 @@
       items:
         - name: Выполнение модульных тестов с помощью обозревателя тестов
           href: run-unit-tests-with-test-explorer.md
+        - name: Отладка модульных тестов с помощью Обозревателя тестов
+          href: debug-unit-tests-with-test-explorer.md
         - name: Вопросы и ответы по обозревателю тестов
           href: test-explorer-faq.md
     - name: Запуск тестов из командной строки
