@@ -8,26 +8,26 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 296ef23bc512a86917920b3c3d5fbb5ec203a21e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433037"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387022"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Управление несколькими потоками в управляемом коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Если у вас есть управляемое расширение VSPackage, который вызывает асинхронные методы или имеет операции, которые выполняются в потоках, отличных от потока пользовательского интерфейса Visual Studio, необходимо следовать приведенным ниже рекомендациям. Поскольку она не требует ожидания для работы в другом потоке, чтобы завершить, можно хранить в потоке пользовательского интерфейса быстро реагирующих. Вы можете сделать свой код более эффективным, так как у вас нет дополнительных потоков, которые занимают пространство стека, и его можно сделать более надежным и простым для отладки, так как избежать взаимоблокировок и зависаний.  
+Если у вас есть управляемое расширение VSPackage, вызывающее асинхронные методы или имеющее операции, которые выполняются в потоках, отличных от потока пользовательского интерфейса Visual Studio, следуйте инструкциям, приведенным ниже. Можно защитить поток пользовательского интерфейса, поскольку ему не нужно ждать завершения работы в другом потоке. Вы можете сделать код более эффективным, так как у вас нет дополнительных потоков, которые занимают пространство стека, и вы можете сделать его более надежным и простым в отладке, так как избежать взаимоблокировок и нереагирования.  
   
- Как правило, вы можете из потока пользовательского интерфейса на другой поток, или наоборот. При возвращении метода текущий поток является поток, из которого он изначально был вызван.  
+ В общем случае можно переключиться из потока пользовательского интерфейса в другой поток или наоборот. Когда метод возвращает значение, текущий поток является потоком, из которого он был первоначально вызван.  
   
 > [!IMPORTANT]
-> Следующие рекомендации использовать интерфейсы API в <xref:Microsoft.VisualStudio.Threading> пространства имен, в частности, <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> класса. API-интерфейсы в этом пространстве имен являются новыми в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Можно получить экземпляр <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> из <xref:Microsoft.VisualStudio.Shell.ThreadHelper> свойство `ThreadHelper.JoinableTaskFactory`.  
+> Следующие рекомендации используют интерфейсы API в <xref:Microsoft.VisualStudio.Threading> пространстве имен, в частности <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> класс. Интерфейсы API в этом пространстве имен являются новыми в [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] . Экземпляр класса можно получить <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> из <xref:Microsoft.VisualStudio.Shell.ThreadHelper> свойства `ThreadHelper.JoinableTaskFactory` .  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Переключение из потока пользовательского интерфейса в фоновый поток  
   
-1. Если вы хотите сделать асинхронной работы в фоновом потоке в потоке пользовательского интерфейса, используйте Task.Run():  
+1. Если вы работаете в потоке пользовательского интерфейса и хотите выполнять асинхронную работу в фоновом потоке, используйте Task. Run ():  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ ms.locfileid: "63433037"
   
     ```  
   
-2. Если вы являетесь в потоке пользовательского интерфейса, и вы хотите заблокировать синхронно, во время работы в фоновом потоке, используйте <xref:System.Threading.Tasks.TaskScheduler> свойство `TaskScheduler.Default` внутри <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. Если вы работаете в потоке пользовательского интерфейса и хотите синхронно блокироваться при выполнении работы в фоновом потоке, используйте <xref:System.Threading.Tasks.TaskScheduler> свойство `TaskScheduler.Default` внутри <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> :  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,16 +51,16 @@ ms.locfileid: "63433037"
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Переключение из фонового потока в поток пользовательского интерфейса  
   
-1. Если вы в фоновом потоке, и вы хотите сделать что-нибудь в потоке пользовательского интерфейса, используйте <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. Если вы находитесь в фоновом потоке и хотите сделать что-то в потоке пользовательского интерфейса, используйте <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> :  
   
     ```csharp  
     // Switch to main thread  
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
     ```  
   
-     Можно использовать <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> метод, чтобы переключиться на поток пользовательского интерфейса. Этот метод отправляет сообщение в поток пользовательского интерфейса с продолжением текущего асинхронного метода и также обменивается данными с остальной частью платформы потоков для задания правильного приоритет и избежать взаимоблокировок.  
+     Для <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> переключения на поток пользовательского интерфейса можно использовать метод. Этот метод отправляет сообщение в поток пользовательского интерфейса с продолжением текущего асинхронного метода, а также взаимодействует с остальной частью платформы потоков, чтобы установить правильный приоритет и избежать взаимоблокировок.  
   
-     Если ваш метод фонового потока не асинхронной и вы не можете принять асинхронный, по-прежнему можно использовать `await` синтаксис, чтобы переключиться на поток пользовательского интерфейса путем заключения работу с <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, как показано в этом примере:  
+     Если фоновый метод потока не является асинхронным и его нельзя сделать асинхронным, вы по-прежнему можете использовать `await` синтаксис для переключения в поток пользовательского интерфейса путем создания оболочки работы с <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> , как показано в следующем примере:  
   
     ```csharp  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  

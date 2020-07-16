@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56e5b76b000fd269d76d535e635ba86e72912bad
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916005"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387204"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "75916005"
   
 1. Создайте решение Visual Studio, например консольное приложение C#.  
   
-2. С помощью Configuration Manager задайте для конфигурации 64-разрядный режим. Для получения дополнительной информации см. [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
+2. С помощью Configuration Manager задайте для конфигурации 64-разрядный режим. Дополнительные сведения см. в разделе [Практическое руководство. настроить целевые платформы в проектах](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3. На этом этапе запускается 64-разрядная версия удаленного отладчика (msvsmon.exe). Он работает до тех пор, пока открыто решение с 64-разрядной конфигурацией.  
   
@@ -55,11 +55,11 @@ ms.locfileid: "75916005"
   
 - На компьютере установлено программное обеспечение для защиты сети, из-за чего сетевой стек стал ненадежным и стал терять пакеты, идущие через localhost. Попробуйте отключить все программное обеспечение для защиты сети. Если проблема устранена, сообщите поставщику программного обеспечения для защиты сети о том, что его программа мешает трафику localhost.  
   
-- Программа не отвечает на запросы, или возникла проблема с производительностью Visual Studio. Если проблема возникает регулярно, можно собрать дампы Visual Studio (devenv.exe) и рабочего процесса (msvsmon.exe) и отправить их в корпорацию Майкрософт. 
+- Вы используете проблему, когда Visual Studio перестает отвечать на запросы или другие проблемы с производительностью. Если проблема возникает регулярно, можно собрать дампы Visual Studio (devenv.exe) и рабочего процесса (msvsmon.exe) и отправить их в корпорацию Майкрософт. 
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Настройка программ для 64-разрядных систем](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
- [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
+ [Настройка программ для 64-bit](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Интегрированная среда разработки Visual Studio 64-разрядная поддержка](../ide/visual-studio-ide-64-bit-support.md)   
  [Использование файлов дампа](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

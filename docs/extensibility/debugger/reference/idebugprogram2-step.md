@@ -1,5 +1,5 @@
 ---
-title: IDebugПрограмма2::Шаг Документы Майкрософт
+title: 'IDebugProgram2:: шаг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722758"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387243"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Выполняет шаг.
 
 > [!NOTE]
-> Этот метод является устаревшим. Вместо этого используйте метод [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+> Этот метод является устаревшим. Вместо этого используйте метод [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,24 +48,24 @@ int Step( 
 
 ## <a name="parameters"></a>Параметры
 `pThread`\
-(в) Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий шаг вперед потока.
+окне Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, для которого выполняется пошаговое выполнение.
 
 `sk`\
-(в) Значение из перечисления [STEPKIND,](../../../extensibility/debugger/reference/stepkind.md) которое определяет вид шага.
+окне Значение из перечисления [степкинд](../../../extensibility/debugger/reference/stepkind.md) , указывающее тип шага.
 
 `step`\
-(в) Значение из перечисления [STEPUNIT,](../../../extensibility/debugger/reference/stepunit.md) которое определяет единицу шага (например, по заявлению или инструкции).
+окне Значение из перечисления [степунит](../../../extensibility/debugger/reference/stepunit.md) , которое указывает единицу шага (например, инструкцию или инструкцию).
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- В случае синхронизации потоков или связи между потоками другие потоки в программе должны работать при наступлении определенного потока.
+## <a name="remarks"></a>Remarks
+ Если существует любая синхронизация потоков или обмен данными между потоками, другие потоки в программе должны выполняться, когда конкретный поток пошаговым выполнением.
 
 > [!WARNING]
-> Не отправляйте событие остановки или немедленное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) во время обработки этого вызова; в противном случае отладчик может повесить.
+> Не отправляйте событие остановки или мгновенное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может перестать отвечать на запросы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс3::Шаг Документы Майкрософт
+title: 'IDebugProcess3:: шаг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5c4927f3f997b7fdbdca2b32977f2aa31a51219
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723551"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386697"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Вызывает процесс, чтобы шаг ировать одну инструкцию или инструкцию.
+Заставляет процесс выполнить шаг 1 инструкции или инструкции.
 
 > [!NOTE]
-> Этот метод следует использовать вместо [Шага](../../../extensibility/debugger/reference/idebugprogram2-step.md).
+> Этот метод следует использовать вместо [шага](../../../extensibility/debugger/reference/idebugprogram2-step.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,23 +48,23 @@ int Step(
 
 ## <a name="parameters"></a>Параметры
 `pThread`\
-(в) Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий шаг вперед потока.
+окне Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, для которого выполняется пошаговое выполнение.
 
 `sk`\
-(в) Одно из значений [STEPKIND.](../../../extensibility/debugger/reference/stepkind.md)
+окне Одно из значений [степкинд](../../../extensibility/debugger/reference/stepkind.md) .
 
 `step`\
-(в) Одно из значений [STEPUNIT.](../../../extensibility/debugger/reference/stepunit.md)
+окне Одно из значений [степунит](../../../extensibility/debugger/reference/stepunit.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- В случае синхронизации потоков или связи между потоками другие потоки в процессе должны работать при наступлении конкретного потока.
+## <a name="remarks"></a>Remarks
+ Если существует какая-либо синхронизация потоков или обмен данными между потоками, другие потоки в процессе будут выполняться, когда конкретный поток пошаговым выполнением.
 
- **Предупреждение** Не отправляйте событие остановки или немедленное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) во время обработки этого вызова; в противном случае отладчик может повесить.
+ **Предупреждение об ошибке** Не отправляйте событие остановки или мгновенное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может перестать отвечать на запросы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)

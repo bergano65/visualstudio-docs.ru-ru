@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905777"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387282"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Как сделать расширения совместимыми с Visual Studio 2019/2017 и Visual Studio 2015
 
@@ -74,7 +74,7 @@ ms.locfileid: "85905777"
 Visual Studio 2015 | Microsoft. VisualStudio. SDK. Буилдтаскс.,
 Visual Studio 2019 или 2017 | Microsoft. VSSDK. Буилдтул
 
-Для этого сделайте следующее:
+Для этого:
 
 * Добавьте в проект пакет NuGet Microsoft. VisualStudio. SDK. Буилдтаскс. ".
 * Если проект не содержит Microsoft. VSSDK. BuildTools, добавьте его.
@@ -109,7 +109,7 @@ Visual Studio 2019 или 2017 | Microsoft. VSSDK. Буилдтул
 </Prerequisites>
 ```
 
-* Сохраните файл и закройте его.
+* Сохраните и закройте файл.
 
 > [!NOTE]
 > Вам может потребоваться изменить предварительную версию вручную, чтобы убедиться, что она совместима со всеми версиями Visual Studio 2019 или 2017. Это связано с тем, что конструктор вставит минимальную версию в качестве текущей версии Visual Studio (например, 15.0.26208.0). Однако, так как другие пользователи могут иметь более раннюю версию, вам потребуется вручную изменить это значение на 15,0.
@@ -213,5 +213,4 @@ Visual Studio 2019 или 2017 | Microsoft. VSSDK. Буилдтул
 ![Найти VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> Если проект зависает с сообщением, **открывающим файл**, принудительно завершит работу Visual Studio, перейдите в каталог проекта, отобразите скрытые папки и удалите папку *. VS* .
- 
+> Если проект перестает отвечать с сообщением, **открывающим файл**, принудительно завершает работу Visual Studio, переходит в каталог проекта, отображает скрытые папки и удаляет папку *. VS* .

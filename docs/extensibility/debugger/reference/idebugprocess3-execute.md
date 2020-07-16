@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Выполнение Документы Майкрософт
+title: 'IDebugProcess3:: Execute | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 444eadcce38adbd8ecd8655e8e0dc3f36f446848
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: baa607e62732cdf0e04413e07966658bb6a0b8f4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723679"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386515"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-Продолжает сябьи запустить этот процесс из остановленного состояния. Любое предыдущее состояние выполнения (например, шаг) очищается, и процесс снова запускается.
+Возобновляет выполнение этого процесса из остановленного состояния. Все предыдущие состояния выполнения (например, шаг) очищаются, и процесс начинает выполняться снова.
 
 > [!NOTE]
-> Этот метод следует использовать вместо [выполнения](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
+> Этот метод следует использовать вместо [EXECUTE](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int Execute(
 
 ## <a name="parameters"></a>Параметры
 `pThread`\
-(в) Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий поток для выполнения.
+окне Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий выполняемый поток.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Когда пользователь запускает выполнение из остановленного состояния в потоке другого процесса, этот метод вызывается на этот процесс. Этот метод также вызывается, когда пользователь выбирает команду **Start** из меню **Debug** в IDE. Реализация этого метода может быть так же проста, как вызов метода [Резюме](../../../extensibility/debugger/reference/idebugthread2-resume.md) на текущем потоке в процессе.
+## <a name="remarks"></a>Remarks
+ Когда пользователь запускает выполнение из остановленного состояния в потоке другого процесса, этот метод вызывается в этом процессе. Этот метод также вызывается, когда пользователь выбирает команду **запуска** из меню **Отладка** в интегрированной среде разработки. Реализация этого метода может быть такой же простой, как вызов метода [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) в текущем потоке процесса.
 
 > [!WARNING]
-> Не отправляйте событие остановки или немедленное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) во время обработки этого вызова; в противном случае отладчик может повесить.
+> Не отправляйте событие остановки или мгновенное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может перестать отвечать на запросы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Продолжить](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Возобновить](../../../extensibility/debugger/reference/idebugthread2-resume.md);
 - [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

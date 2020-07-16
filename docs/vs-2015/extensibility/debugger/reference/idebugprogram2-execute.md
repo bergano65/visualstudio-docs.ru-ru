@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Execute | Документация Майкрософт
+title: 'IDebugProgram2:: Execute | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6134c10f30d66011dca5e40c28b6cbe6a7c94ed
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 676a3a7d184c1f34cafcfc2b2a4dd7a1c3f81a95
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430557"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387334"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Продолжает выполнение программы в остановленном состоянии. Очистить все предыдущие состояния выполнения (например, шаг), и начнется снова выполнение программы.  
+Продолжение выполнения этой программы из остановленного состояния. Все предыдущие состояния выполнения (например, шаг) очищаются, и программа начинает выполнение повторно.  
   
 > [!NOTE]
-> Этот метод является нерекомендуемым. Используйте [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) метод вместо этого.  
+> Этот метод является устаревшим. Вместо этого используйте метод [EXECUTE](../../../extensibility/debugger/reference/idebugprocess3-execute.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,15 +40,15 @@ int Execute();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Когда пользователь начинает выполнение в остановленном состоянии в поток некоторые другие программы, этот метод вызывается для данной программы. Этот метод также вызывается, когда пользователь выбирает **запустить** команду **Отладка** меню в интегрированной среде разработки. Реализация этого метода может быть простым вызовом [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) метода в текущем потоке в программе.  
+## <a name="remarks"></a>Remarks  
+ Когда пользователь запускает выполнение из остановленного состояния в другой потоке программы, этот метод вызывается в этой программе. Этот метод также вызывается, когда пользователь выбирает команду **запуска** из меню **Отладка** в интегрированной среде разработки. Реализация этого метода может быть такой же простой, как вызов метода [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) в текущем потоке в программе.  
   
 > [!WARNING]
-> В случае остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.  
+> Не отправляйте событие остановки или мгновенное (синхронное) событие в [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может перестать отвечать на запросы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Журнале](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Возобновить](../../../extensibility/debugger/reference/idebugthread2-resume.md);
