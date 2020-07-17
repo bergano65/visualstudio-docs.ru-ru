@@ -1,4 +1,4 @@
-- name: 'Учебники по C#'
+- name: Учебники по C#
   href: index.yml
 - name: Обзор
   items:
@@ -13,13 +13,13 @@
 - name: Создание приложения
   expanded: true
   items:
-    - name: 'Создание первого приложения на C#'
+    - name: Создание первого приложения C#
       href: tutorial-console.md
     - name: Создание веб-приложения
       href: tutorial-aspnet-core.md
     - name: "Создание приложения\_UWP"
       href: tutorial-uwp.md
-    - name: создание приложения WPF;
+    - name: Создание приложения WPF
       href: tutorial-wpf.md
     - name: Создание приложения Windows Forms
       href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289044"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211565"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -52,7 +52,7 @@ ms.locfileid: "85289044"
 |**/ListExecutors**|Перечисление установленных исполнителей тестов.|
 |**/ListLoggers**|Перечисление установленных средств ведения журнала тестирования.|
 |**/ListSettingsProviders**|Перечисление установленных поставщиков параметров тестирования.|
-|**/Blame**|Отслеживает тесты во время их выполнения, и в случае сбоя тестового хост-процесса выдает имена тестов в последовательности выполнения до теста, работавшего во время сбоя, включительно. Эти выходные данные облегчают изоляцию теста, ставшего причиной неполадки, и дальнейшую диагностику. [Дополнительные сведения](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|Выполнение тестов в режиме обвинения. Этот параметр полезен при изоляции проблемных тестов, которые приводят к аварийному завершению хоста для тестов. При обнаружении сбоя он создает файл последовательности в `TestResults/<Guid>/<Guid>_Sequence.xml`, который фиксирует порядок тестов, выполненных до сбоя. Дополнительные сведения: [Запуск cборщика данных в режиме обвинения](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*имя файла*]**|Записывает диагностические журналы трассировки в указанный файл.|
 |**/ResultsDirectory:[*path*]**|По указанному пути будет создан каталог с результатами теста, если этот путь не существует.<br />Пример: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|Идентификатор родительского процесса, отвечающего за запуск текущего процесса.|
@@ -64,24 +64,44 @@ ms.locfileid: "85289044"
 
 ## <a name="examples"></a>Примеры
 
-Синтаксис для запуска *VSTest.Console.exe* имеет следующий вид:
+Синтаксис для запуска *vstest.console.exe* имеет следующий вид:
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-Следующая команда запускает *VSTest.Console.exe* для библиотеки тестов **myTestProject.dll**:
+Следующая команда запускает *vstest.console.exe* для библиотеки тестов *myTestProject.dll*:
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-Следующая команда запускает *VSTest.Console.exe* с несколькими тестовыми файлами. Для разделения имен тестовых файлов используйте пробелы.
+Следующая команда запускает *vstest.console.exe* с множеством тестовых файлов. Для разделения имен тестовых файлов используйте пробелы.
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-Следующая команда запускает *VSTest.Console.exe* с несколькими параметрами. Она запускает тесты в файле *myTestFile.dll* в изолированном процессе и использует параметры, заданные в файле *Local.RunSettings*. Кроме того, она запускает только тесты с меткой "Priority=1" и записывает результаты в *TRX*-файл.
+Следующая команда запускает *vstest.console.exe* с несколькими параметрами. Она запускает тесты в файле *myTestFile.dll* в изолированном процессе и использует параметры, заданные в файле *Local.RunSettings*. Кроме того, она запускает только тесты с меткой "Priority=1" и записывает результаты в *TRX*-файл.
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+Следующая команда запускает *vstest.console.exe* с параметром `/blame` для библиотеки тестов *myTestProject.dll*:
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+В случае сбоя узла тестов создается файл *sequence.xml*. Этот файл содержит полные имена тестов в порядке их выполнения вплоть до конкретного теста, который выполнялся во время сбоя.
+
+При отсутствии сбоя узла тестов файл *sequence.xml* не создается.
+
+Пример созданного файла *sequence.xml*: 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

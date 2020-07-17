@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906022"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211640"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
@@ -40,7 +40,7 @@ ms.locfileid: "85906022"
 
 4. Выберите число приобретаемых подписок.
     > [!div class="mx-imgBorder"]
-    > ![Укажите число подписок](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Укажите число подписок](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Выбор числа приобретаемых подписок")
 
     Если вы не хотите назначать подписки себе, снимите флажок **Назначить эту подписку на меня**.
 
@@ -62,12 +62,18 @@ ms.locfileid: "85906022"
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Отмена продления приобретенных облачных подписок
 
-* Чтобы изменить число приобретенных подписок, сделайте следующее:
+Чтобы отменить подписки, нужно просто изменить их число для вашего соглашения на нуль (0).  Чтобы сократить число подписок, выполните следующие действия:
+1. Выполните вход в <https://manage.visualstudio.com>
+1. Если у вас несколько соглашений, выберите нужное соглашение в раскрывающемся списке.
+1. Щелкните значок **Обзор** в верхнем левом углу, чтобы отобразить сведения о подписках.  
+> [!div class="mx-imgBorder"]
+> ![Отображение сведений о подписках](_img/buy-vs-subscriptions/overview-button.png "Нажатие кнопки "Обзор" для отображения сведений о подписке")
+
+4. Выберите запись для подписок, которые вы хотите отменить, и щелкните **Изменить количество**.
+1. Измените количество на нуль (0). Ваши подписки будут действовать до запланированной даты выставления счетов, но не будут продлены в начале следующего расчетного периода.   
 
 > [!div class="mx-imgBorder"]
-> ![Управление подписками](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Чтобы отменить подписки, измените их число на ноль (0). Они не будут продлены в начале следующего расчетного периода (первое число следующего месяца для ежемесячных облачных подписок и через 12 месяцев для годовых облачных подписок).
+> ![Управление подписками](_img/buy-vs-subscriptions/manage-subscriptions.png "Нажатие кнопки "Изменить количество" для отмены подписок")
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 

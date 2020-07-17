@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540872"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386989"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Определение пользовательских команд для проектов Python
 
@@ -384,7 +384,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 
 Значения атрибутов могут быть пустыми, если вы ссылаетесь на свойство, которое не было определено. Например, если вы используете токен `$(StartupFile)`, но в проекте не задан файл запуска, этот токен разрешается в пустую строку. В таких случаях может потребоваться определить значение по умолчанию. Например, команды **Запуск сервера** и **Запустить сервер отладки**, определенные в шаблонах проектов Bottle, Flask и Django, по умолчанию используют *manage.py*, если вы иным образом не указали файл запуска сервера в свойствах проекта.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Visual Studio зависает и аварийно завершает работу при выполнении команды
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio перестает отвечать и аварийно завершает работу при выполнении команды
 
 Скорее всего, вы пытаетесь запустить команду консоли с `ExecuteIn="output"`. В этом случае Visual Studio может аварийно завершить работу при попытке проанализировать выходные данные. Взамен рекомендуется использовать `ExecuteIn="console"`. (См. описание [запроса 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 

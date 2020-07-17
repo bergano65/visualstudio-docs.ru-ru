@@ -192,7 +192,7 @@
           items:
             - name: Проверка и отладка кода SharePoint
               href: verifying-and-debugging-sharepoint-code.md
-            - name: Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace
+            - name: Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace
               href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
         - name: Профилирование производительности приложений SharePoint
           items:
@@ -292,11 +292,11 @@
                   href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
                 - name: "Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть\_1"
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
-                - name: 'Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2'
+                - name: "Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть\_2"
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
-                - name: 'Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 1'
+                - name: "Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть\_1"
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
-                - name: 'Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть 2'
+                - name: "Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона элемента, часть\_2"
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
             - name: Расширение элементов проектов SharePoint
               items:
@@ -308,7 +308,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
                 - name: Добавление свойства в расширение элемента проекта SharePoint
                   href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
-                - name: Пошаговое руководство. Расширение типа проектного элемента SharePoint
+                - name: Пошаговое руководство. Расширение типа элемента проекта SharePoint
                   href: walkthrough-extending-a-sharepoint-project-item-type.md
             - name: Расширение проектов SharePoint
               items:
@@ -350,7 +350,7 @@
               href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
             - name: Получение данных для встроенного узла SharePoint в обозревателе сервера
               href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
-            - name: 'Пошаговое руководство. Расширение обозревателя сервера, чтобы в нем отображались веб-части'
+            - name: Пошаговое руководство. Расширение обозревателя сервера для отображения веб-части
               href: walkthrough-extending-server-explorer-to-display-web-parts.md
         - name: Понятия программирования и возможности расширений SharePoint
           items:
@@ -408,5 +408,5 @@
                   href: safecontrol-element.md
                 - name: Элемент SafeControls
                   href: safecontrols-element.md
-            - name: Справочник по API
+            - name: Справочник по интерфейсам API
               href: api-reference-sharepoint-tools-extensibility.md

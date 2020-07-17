@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288771"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211607"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -67,7 +67,7 @@ ms.locfileid: "85288771"
     </Project>
     ```
 
-- Поместите файл параметров запуска с именем ".runsettings" в корневой каталог решения.
+- Поместите файл параметров запуска с именем *.runsettings* в корневой каталог решения.
 
   Если включено автоматическое определение файлов параметров запуска, параметры в этом файле применяются ко всем тестовым запускам. Вы можете включить автоматическое обнаружение RUNSETTINGS-файлов из двух расположений:
   
@@ -205,6 +205,11 @@ ms.locfileid: "85288771"
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ ms.locfileid: "85288771"
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ ms.locfileid: "85288771"
 
 Для настройки любого другого типа адаптеров диагностических данных используйте [файл параметров тестирования](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Запуск cборщика данных в режиме обвинения
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Этот параметр помогает изолировать проблемный тест, из-за которого в узле тестов возникает сбой. При запуске сборщика создается выходной файл (*Sequence.xml*) в *TestResults*, в который записывается порядок выполнения теста перед сбоем. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ public void HomePageTest()
   </LoggerRunSettings>
 ```
 
-Раздел `LoggerRunSettings` определяет одно или несколько средств ведения журнала, которые будут использоваться при тестовом запуске. Самые распространенные — это console, trx и html. 
+Раздел `LoggerRunSettings` определяет средства ведения журнала, которые будут использоваться при тестовом запуске. Самые распространенные — это console, trx и html. 
 
 ### <a name="mstest-run-settings"></a>Параметры запуска MSTest
 
@@ -386,6 +402,33 @@ public void HomePageTest()
 |**MapInconclusiveToFailed**|false|Если тест завершается с неопределенным состоянием, оно обычно сопоставляется с состоянием "Пропущено" в **обозревателе тестов**. Если требуется, чтобы тесты с неопределенным результатом отображались как завершившиеся неудачно, установите для этого параметра значение **true**.|
 |**InProcMode**|false|Если требуется, чтобы тесты выполнялись в одном процессе с адаптером MSTest, установите этот параметр в значение **true**. Этот параметр обеспечивает небольшое повышение производительности. Но если тест прекращается с выдачей исключения, остальные тесты выполняться не будут.|
 |**AssemblyResolution**|false|При поиске и выполнении модульных тестов можно указать пути для дополнительных сборок. Например, эти пути можно использовать для сборок зависимостей, которые не находятся в том же каталоге, что и тестовая сборка. Чтобы указать путь, используйте элемент **путь к каталогу**. Пути могут содержать переменные среды.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Указание переменных среды в файле *.runsettings*
+
+Вы можете задавать переменные среды в файле *.runsettings*, способный напрямую взаимодействовать с узлом тестов. Указание переменных среды в файле *.runsettings* необходимо для поддержки особых проектов, требующих установки таких переменных среды, как *DOTNET_ROOT*. Эти переменные задаются при порождении процесса узла тестов и доступны на этом узле.
+
+### <a name="example"></a>Пример
+
+Следующий код является примером файла *.runsettings*, который передает переменные среды:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+Узел **RunConfiguration** должен содержать узел **EnvironmentVariables**. Переменная среды может быть указана как имя и значение элемента.
+
+> [!NOTE]
+> Поскольку эти переменные среды должны всегда быть заданы при запуске узла тестов, тесты всегда должны выполняться в отдельном процессе. Для этого при наличии переменных среды будет устанавливаться флаг */InIsolation*, позволяющий всегда вызывать узел тестов.
 
 ## <a name="see-also"></a>См. также
 

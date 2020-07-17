@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183058"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387152"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 
@@ -44,7 +44,7 @@ ms.locfileid: "84183058"
 
 | Максимальное преимущество для партнеров с компетенциями только уровня Silver                   | Максимальное преимущество для партнеров хотя бы с одной компетенцией уровня Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 подписок на Visual Studio Enterprise в стране; 75 во всем мире          | 50 подписок на Visual Studio Enterprise в стране; 150 во всем мире         |
+| 25 подписок Visual Studio Enterprise на страну или регион; 75 для всего мира          | 50 подписок Visual Studio Enterprise на страну или регион; 150 для всего мира         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Подписки для партнеров, купивших Action Pack
 

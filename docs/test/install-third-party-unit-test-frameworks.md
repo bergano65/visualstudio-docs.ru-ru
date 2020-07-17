@@ -1,18 +1,18 @@
 ---
 title: Установка платформ модульного тестирования сторонних поставщиков
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286977"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387191"
 ---
 # <a name="install-unit-test-frameworks"></a>Установка платформ модульного тестирования
 
@@ -20,7 +20,12 @@ ms.locfileid: "85286977"
 
 Решение Visual Studio может содержать проекты модульного тестирования, которые используют разные платформы, предназначенные для разных языков.
 
+::: moniker range=">=vs-2019"
+Для .NET в Visual Studio предоставляются тестовые платформы [MSTest, NUnit и xUnit](getting-started-with-unit-testing.md), которые устанавливаются по умолчанию.
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) — это платформа тестирования, предоставляемая Visual Studio и устанавливаемая по умолчанию.
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>Получение платформ
 
@@ -38,7 +43,7 @@ ms.locfileid: "85286977"
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Обновление адаптера теста до последней стабильной версии
 
-1. Откройте диспетчер пакетов NuGet для своего решения, последовательно выбрав **Инструменты** > **Диспетчер пакетов NuGet** > **Управление пакетами NuGet для решения**.
+1. Откройте диспетчер пакетов NuGet для своего решения, последовательно выбрав **Сервис** > **Диспетчер пакетов NuGet** > **Управление пакетами NuGet для решения**.
 
 2. Щелкните вкладку **Обновления** и с помощью поиска найдите установленные адаптеры тестов MSTest, NUnit и xUnit.
 
@@ -48,6 +53,6 @@ ms.locfileid: "85286977"
 
    ![Обновление адаптера теста](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модульное тестирование кода](../test/unit-test-your-code.md)

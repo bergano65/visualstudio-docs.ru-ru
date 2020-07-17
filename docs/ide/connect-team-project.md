@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092327"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181057"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Подключение к проектам в Team Explorer
 
@@ -38,7 +38,7 @@ ms.locfileid: "86092327"
    ![Подключение к проекту в Team Explorer](media/team-explorer/connect-project.png)
 
 > [!TIP]
-> Если вам необходимо создать новый проект или добавить пользователей в существующий, ознакомьтесь со статьями [Создание проекта (Azure DevOps)](/azure/devops/organizations/projects/create-project) и [Добавление пользователей в проект или команду (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
+> Если вы хотите открыть проект из репозитория, см. статью [Открытие проекта из репозитория](../get-started/tutorial-open-project-from-repo.md). Если вы хотите создать новый проект или добавить пользователей в существующий, ознакомьтесь со статьями [Создание проекта (Azure DevOps)](/azure/devops/organizations/projects/create-project) и [Добавление пользователей в проект или команду (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
 ## <a name="see-also"></a>См. также
 

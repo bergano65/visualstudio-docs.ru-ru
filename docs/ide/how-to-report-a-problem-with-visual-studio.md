@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769926"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387321"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Как сообщить о проблеме с Visual Studio или Visual Studio Installer
 
@@ -69,7 +69,7 @@ ms.locfileid: "85769926"
 
 1. Откройте вкладку **Запись**.
 
-1. В разделе **Запись действий** выберите текущий экземпляр Visual Studio, если вы можете воспроизвести проблему. Если не можете, например Visual Studio не отвечает, нажмите кнопку **\<Create a new instance>** , чтобы записать действия в новом экземпляре Visual Studio.
+1. В разделе **Запись действий** выберите текущий экземпляр Visual Studio, если вы можете воспроизвести проблему. Если не можете, например если Visual Studio перестает отвечать, выберите **\<Create a new instance>** , чтобы записать действия в новом экземпляре Visual Studio.
 
 1. Нажмите кнопку **Начать запись**. Предоставьте разрешение для запуска средства.
 

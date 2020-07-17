@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904411"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387139"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "85904411"
 
 5. Введите личные данные, выберите имя пользователя и пароль, а затем нажмите кнопку **Присоединиться**.
 
-6. Укажите страну и почтовый индекс, а затем нажмите кнопку **Далее**.
+6. Укажите страну или регион и почтовый индекс, а затем щелкните **Далее**.
 
 7. Далее необходимо предоставить некоторые сведения о себе, чтобы заполнить профиль.  Укажите, являетесь ли вы учащимся, и сообщите последнюю должность, организацию и отрасль.
 
