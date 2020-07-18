@@ -1,17 +1,17 @@
 ---
 title: Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921109"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459298"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 
@@ -99,11 +99,9 @@ ms.locfileid: "82921109"
 
 Масштабирование объектов способом, аналогичным масштабированию с помощью элемента управления масштабом. Для панели **Viewbox** можно добавить только один объект. Чтобы применить этот эффект к нескольким объектам, добавьте панель макета для **ViewBox**, а затем добавьте элементы управления для этой панели макета.
 
-(доступно только для проектов WPF)
-
 ![Элемент управления макета ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - [Работа с элементами в конструкторе XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Создание пользовательского интерфейса с помощью конструктора XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
