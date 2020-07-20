@@ -76,6 +76,15 @@
             - name: Руководство по работе пользователей
               tocHref: /visualstudio/extensibility/ux-guidelines/
               topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+        - name: Начало работы (C#)
+          tocHref: /visualstudio/get-started/csharp/
+          topicHref: /visualstudio/get-started/csharp/index
+        - name: "Начало работы (Visual\_Basic)"
+          tocHref: /visualstudio/get-started/visual-basic/
+          topicHref: /visualstudio/get-started/visual-basic/index
+        - name: Инструменты для контейнера
+          tocHref: /visualstudio/containers/
+          topicHref: /visualstudio/containers/index
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild

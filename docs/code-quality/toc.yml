@@ -563,6 +563,8 @@
                   href: ca1833.md
                 - name: 'CA1835: предпочитайте перегрузку памяти для методов Stream ReadAsync/WriteAsync'
                   href: ca1835.md
+                - name: 'CA1836: предпочитайте IsEmpty вместо Count (при наличии)'
+                  href: ca1836.md
             - name: 'Предупреждения, связанные с переносимостью'
               items:
                 - name: Обзор

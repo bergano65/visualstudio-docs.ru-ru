@@ -11,22 +11,20 @@
           href: container-tools.md
         - name: Одностраничное приложение React.js в контейнере
           href: container-tools-react.md
-        - name: Разработка в Kubernetes с помощью Azure Dev Spaces >>
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Разработка Kubernetes
+          href: local-process-kubernetes.md
     - name: Учебники
       expanded: true
       items:
         - name: Использование многоконтейнернего приложения с Docker Compose
           href: tutorial-multicontainer.md
-        - name: Kubernetes в Visual Studio
-          href: tutorial-kubernetes-tools.md
     - name: Практическое руководство
       items:
         - name: "Отладка приложения в локальном контейнере\_Docker"
           href: edit-and-refresh.md
         - name: Развертывание в реестр контейнеров
           href: hosting-web-apps-in-docker.md
-        - name: Развертывание в Службе приложений Azure
+        - name: Развертывание в службе приложений Azure
           href: deploy-app-service.md
         - name: Развертывание в Docker Hub
           href: deploy-docker-hub.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: Параметры запуска
           href: container-launch-settings.md
+- name: "Разработка с помощью\_Kubernetes"
+  items:
+    - name: Kubernetes в Visual Studio
+      href: tutorial-kubernetes-tools.md
+    - name: Local Process with Kubernetes (предварительная версия)
+      href: local-process-kubernetes.md
+    - name: "Принципы работы Local\_Process with Kubernetes (предварительная версия)"
+      href: overview-local-process-kubernetes.md
