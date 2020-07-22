@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880316"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475995"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -34,13 +34,13 @@ ms.locfileid: "80880316"
 
 ::: moniker range="vs-2017"
 
-3. Чтобы выбрать файл параметров запуска, в меню **Тест** выберите **Параметры тестирования** > **Выбрать файл параметров теста**. Чтобы указать файл параметров запуска для запуска тестов из командной строки, см. раздел [Настройка модульных тестов](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Чтобы выбрать файл параметров запуска, в меню **Тест** выберите **Параметры тестирования** > **Выбрать файл параметров теста**. Чтобы указать файл параметров запуска для запуска тестов из командной строки, см. раздел [Настройка модульных тестов](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Чтобы выбрать файл параметров запуска, в меню **Тестирование** щелкните **Выбрать файл параметров**. Чтобы указать файл параметров запуска для запуска тестов из командной строки, см. раздел [Настройка модульных тестов](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Чтобы выбрать файл параметров запуска, в меню **Тестирование** щелкните **Выбрать файл параметров**. Чтобы указать файл параметров запуска для запуска тестов из командной строки, см. раздел [Настройка модульных тестов](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line).
 
 ::: moniker-end
 
