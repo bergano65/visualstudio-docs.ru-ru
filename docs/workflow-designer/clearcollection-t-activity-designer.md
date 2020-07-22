@@ -1,47 +1,47 @@
 ---
-title: Конструктор действий конструктор рабочих процессов-ClearCollection <T>
+title: <T>Конструктор действий конструктор рабочих процессов ClearCollection
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4808c046c4da23bc5c95d3978965afd938962f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96f0b56172684c5c82910b34f40aa44fd6aec81
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650689"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876181"
 ---
-# <a name="clearcollectiont-activity-designer"></a>Конструктор действий > ClearCollection \<T
+# <a name="clearcollectiont-activity-designer"></a>Конструктор действия ClearCollection\<T>
 
-Конструктор действий **> ClearCollection \<T** используется для создания и настройки действия <xref:System.Activities.Statements.ClearCollection%601>.
+Конструктор **действий \<T> ClearCollection** используется для создания и настройки <xref:System.Activities.Statements.ClearCollection%601> действия.
 
-## <a name="the-clearcollectiont-activity"></a>Действие ClearCollection \<T >
+## <a name="the-clearcollectiont-activity"></a>Действие ClearCollection \<T>
 
 Действие <xref:System.Activities.Statements.ClearCollection%601> очищает указанную коллекцию, удаляя из нее все элементы.
 
-### <a name="using-the-clearcollectiont-activity-designer"></a>Использование конструктора действий > ClearCollection \<T
+### <a name="using-the-clearcollectiont-activity-designer"></a>Использование \<T> конструктора действий ClearCollection
 
-Конструктор действий **ClearCollection \<T >** можно найти в категории **коллекция** **панели элементов**, щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** +**ALT** +**X**.
+Конструктор **действий \<T> ClearCollection** можно найти в категории **коллекция** **панели элементов**, щелкнув вкладку **область элементов** конструктор рабочих процессов. Кроме того, можно выбрать **область элементов** в меню **вид** или нажать клавиши **CTRL** + **ALT** + **X**.
 
-Конструктор действий **ClearCollection \<T >** можно перетащить из **панели элементов** в конструктор рабочих процессовную поверхность, где бы они ни находились в <xref:System.Activities.Statements.Sequence>. При удалении конструктора действий создается <xref:System.Activities.Statements.ClearCollection%601> действие с <xref:System.Activities.Activity.DisplayName%2A>ом по умолчанию ClearCollection < Int32 \>. (По умолчанию *TypeArgument* имеет значение **Int32**. TypeArgument можно изменить в сетке свойств.) Значение <xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора действий **ClearCollection < t \>** или в поле **DisplayName** сетки свойств. Другие свойства следует изменять в таблице свойств.
+Конструктор **действий \<T> ClearCollection** можно перетащить из **панели элементов** в область Конструктор рабочих процессов, где бы они ни находились, где бы ни находились действия, например внутри <xref:System.Activities.Statements.Sequence> . При удалении конструктора действий создается <xref:System.Activities.Statements.ClearCollection%601> действие со значением по умолчанию <xref:System.Activities.Activity.DisplayName%2A> ClearCollection<Int32 \> . (По умолчанию *TypeArgument* имеет значение **Int32**. TypeArgument можно изменить в сетке свойств.) <xref:System.Activities.Activity.DisplayName%2A>Значение можно изменить в заголовке конструктора действий **ClearCollection<T \> ** или в поле **DisplayName** сетки свойств. Другие свойства следует изменять в таблице свойств.
 
-### <a name="the-clearcollectiont-properties"></a>Свойства \<T ClearCollection >
+### <a name="the-clearcollectiont-properties"></a>Свойства ClearCollection \<T>
 
 В следующей таблице показаны свойства <xref:System.Activities.Statements.ClearCollection%601> и описано их использование в конструкторе.
 
-|Имя свойства|Обязательное значение|Использование|
+|Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.ClearCollection%601>. Значение по умолчанию — ClearCollection < Int32 \>. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Задает коллекцию для очистки от элементов. Эта коллекция имеет тип **ICollection \<TypeArgument >.** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|
-|*TypeArgument*|True|Задает тип T для элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.ClearCollection%601>. Значение по умолчанию — ClearCollection<Int32 \> . Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
+|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Да|Задает коллекцию для очистки от элементов. Эта коллекция имеет тип **ICollection \<TypeArgument> .** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|
+|*TypeArgument*|Да|Задает тип T для элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Коллекция](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
