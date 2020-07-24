@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: Обновление Visual Studio во время обслуживания
               href: install/update-servicing-baseline.md
+            - name: Обновление Visual Studio с использованием минимального автономного макета
+              href: install/update-minimal-layout.md
             - name: Управление обновлением развертываний Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: Управление изменениями полезных данных пакетов
@@ -810,7 +812,7 @@
         - name: Разработка приложений с поддержкой множества языков
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Построение
+- name: Сборка
   items:
     - name: Обзор
       displayName: Compile build
@@ -1072,7 +1074,7 @@
                   href: ide/reference/autorecover-environment-options-dialog-box.md
                 - name: Документы
                   href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Расширения
+                - name: Модули
                   href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
                 - name: Поиск и замена
                   href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1204,7 +1206,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Конструктор Windows Forms
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Настройка пользовательского интерфейса данных
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
