@@ -5,19 +5,19 @@ description: Список выпущенных версий и номеров с
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 07/14/2020
+ms.date: 07/21/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 2b63d8e269d88b15d4ca057282ebad061f6ea04d
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386190"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876025"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,6 +29,8 @@ ms.locfileid: "86386190"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Предварительная версия 5 | 21 июля 2020 г. | 16.7.30317.65 |
+| 16.6.5 | Выпуск | 21 июля 2020 г. | 16.6.30320.27 |
 | 16.7.0 | Предварительная версия 4 | 14 июля 2020 г. | 16.7.30310.162 |
 | 16.6.4 | Выпуск | 14 июля 2020 г. | 16.6.30309.148 |
 | 16.4.11 | Выпуск | 14 июля 2020 г. | 16.4.30308.118 |
@@ -339,7 +341,8 @@ ms.locfileid: "86386190"
 
 ## <a name="see-also"></a>См. также
 
-* [График выпуска Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Стратегия развития Visual Studio](/visualstudio/productinfo/vs-roadmap)
+* [График выпуска Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)

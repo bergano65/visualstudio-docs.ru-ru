@@ -1,6 +1,6 @@
 ---
 title: Параметры командной строки для VSTest.Console.exe
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211565"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869598"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -35,7 +35,7 @@ ms.locfileid: "86211565"
 | Параметр | Описание |
 |---|---|
 |**[*тестовых*]**|Запускает тесты из указанных файлов. Для разделения имен тестовых файлов используйте пробелы.<br />Примеры: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*имя файла*]**|Запуск тестов с дополнительными параметрами, например со сборщиками данных.<br />Пример: `/Settings:Local.RunSettings`|
+|**/Settings:[*имя файла*]**|Запуск тестов с дополнительными параметрами, например со сборщиками данных. Дополнительные сведения см. в разделе [Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).<br />Пример: `/Settings:local.runsettings`|
 |**/Tests:[*имя теста*]**|Выполняйте тесты с именами, которые соответствуют заданным значениям. Для предоставления нескольких значений разделите их запятыми.<br />Пример: `/Tests:TestMethod1,testMethod2`<br />Параметр командной строки **/Tests** нельзя использовать с параметром командной строки **/TestCaseFilter**.|
 |**/Parallel**|Указывает, что тесты должны выполняться параллельно. По умолчанию могут использоваться все доступные на компьютере ядра. Число ядер для использования можно настроить с помощью файла параметров.|
 |**/Enablecodecoverage**|Включение адаптера диагностических данных CodeCoverage в тестовом запуске.<br />Параметры по умолчанию используются, если другие параметры не заданы с использованием файла параметров.|

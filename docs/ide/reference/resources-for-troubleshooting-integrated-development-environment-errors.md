@@ -1,6 +1,6 @@
 ---
 title: Ресурсы для устранения неполадок
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593620"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459285"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 
@@ -109,7 +109,7 @@ ms.locfileid: "75593620"
 
 ## <a name="knowledge-base-articles"></a>Статьи базы знаний
 
-Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Статьи базы знаний можно найти на веб-сайте [службы поддержки Майкрософт](https://support.microsoft.com).
+Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Статьи базы знаний можно найти на веб-сайте [службы поддержки Майкрософт](https://support.microsoft.com). Коллекцию статей базы знаний по Visual Studio можно также просмотреть на странице [сведений об устранении неполадок Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
 
 ## <a name="developer-forums"></a>Форумы разработчиков
 
@@ -121,7 +121,7 @@ ms.locfileid: "75593620"
 
 Если у вас остались вопросы после ознакомления с другими ресурсами, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](https://support.microsoft.com/en-us). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Параметры обратной связи Visual Studio](../../ide/feedback-options.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 * [Устранение неполадок сети или ошибок прокси-сервера](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Устранение неполадок (Visual Studio для Mac)](/visualstudio/mac/troubleshooting)

@@ -1,7 +1,7 @@
 ---
 title: Изменение сигнатуры метода
 description: Позволяет добавить, удалить или изменить порядок параметров метода. Щелкните метод правой кнопкой мыши, выберите "Быстрые действия и рефакторинг" и щелкните "Изменить подпись".
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283890"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869572"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Рефакторинг для изменения сигнатуры метода
 
@@ -78,15 +78,6 @@ ms.locfileid: "85283890"
 5. По завершении добавления параметра нажмите кнопку **ОК**, чтобы просмотреть изменения.
 
     ![Диалоговое окно "Изменить сигнатуру"](media/change-signature.png)
-
-6. Нажмите кнопку **ОК**, чтобы просмотреть изменения.
-   - C#:
-
-      ![Результат изменения сигнатуры — C#](media/changesignature-result-cs.png)
-
-   - Visual Basic:
-
-      ![Результат изменения сигнатуры — Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>См. также
 
