@@ -402,8 +402,8 @@
                   href: ide/reference/extract-local-function.md
                 - name: Встроенная временная переменная
                   href: ide/reference/inline-temporary-variable.md
-                - name: Завершение IntelliSense для неимпортируемых типов
-                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: Завершение IntelliSense неимпортируемых типов и методов расширения
+                  href: ide/reference/intellisense-completion-unimported-types-extension-methods.md
                 - name: Инверсия условных выражений и логических операций
                   href: ide/reference/invert-conditional-logical.md
                 - name: Инверсия инструкции if
@@ -812,7 +812,7 @@
         - name: Разработка приложений с поддержкой множества языков
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Сборка
+- name: Построение
   items:
     - name: Обзор
       displayName: Compile build
@@ -1096,7 +1096,7 @@
                   href: ide/reference/startup-environment-options-dialog-box.md
                 - name: Вкладки и окна
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: список задач
+                - name: Список задач
                   href: ide/reference/task-list-environment-options-dialog-box.md
                 - name: Параметры доверия
                   href: ide/reference/trust-settings.md
