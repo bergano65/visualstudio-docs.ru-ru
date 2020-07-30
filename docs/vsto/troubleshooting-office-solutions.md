@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537220"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234722"
 ---
 # <a name="troubleshoot-office-solutions"></a>Устранение неполадок решений Office
   В этом разделе содержатся советы по решению типичных проблем, с которыми можно столкнуться при создании решений с помощью средств разработки Office в Visual Studio.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Описание распространенных проблем, с которыми можно столкнуться при проектировании, запуске и тестировании решений Office в Visual Studio.
@@ -57,3 +57,7 @@ ms.locfileid: "85537220"
 - [Распространенные задачи в программировании Office](../vsto/common-tasks-in-office-programming.md)
 
  Список часто задаваемых вопросов о программировании решений Office и ссылки на разделы, помогающие решить типичные проблемы.
+
+## <a name="see-also"></a>См. также раздел
+
+- [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

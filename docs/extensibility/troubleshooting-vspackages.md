@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2141d2fd7d046f61ba6febecc427066d7a09ba18
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904475"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235034"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 Ниже приведены распространенные проблемы, которые могут возникнуть при работе с VSPackage, и советы по устранению проблем.
@@ -123,5 +123,6 @@ ms.locfileid: "85904475"
 
    Убедитесь, что запись InprocServer32 имеет правильный путь к библиотеке DLL VSPackage.
 
-## <a name="see-also"></a>Дополнительно
-- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>См. также раздел
+- [VSPackages](../extensibility/internals/vspackages.md)
+- [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

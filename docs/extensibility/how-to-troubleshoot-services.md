@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 588396f3f152222c4e79b03a1d733524a8ff3ca9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905727"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234956"
 ---
 # <a name="how-to-troubleshoot-services"></a>Руководство. Устранение неполадок служб
 Существует несколько распространенных проблем, которые могут возникнуть при попытке получить службу:
@@ -66,7 +66,8 @@ if (log == null) return;
 
     Если в окне инструментов размещается пользовательский элемент управления или любой другой контейнер элементов управления, контейнер будет размещен в модели компонентов Windows и не будет иметь доступа к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] службам. Можно вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения поставщика службы VSPackage из контейнера элементов управления.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Список доступных служб](../extensibility/internals/list-of-available-services.md)
 - [Использование и предоставление служб](../extensibility/using-and-providing-services.md)
 - [Основные компоненты службы](../extensibility/internals/service-essentials.md)
+- [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537323"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234696"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
   Во время разработки решений Office в Visual Studio могут возникнуть проблемы при выполнении следующих задач:
@@ -213,7 +213,8 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  При нажатии кнопки **Да** или **нет** в диалоговом окне Visual Studio завершает процесс Excel или Word и останавливает работу отладчика. Чтобы остановить отладку проекта без отображения этого диалогового окна, выйдите из Excel или Word напрямую, а не останавливайте отладчик в Visual Studio.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)
 - [Устранение неполадок в системе безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)
 - [Устранение неполадок развертывания решений Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

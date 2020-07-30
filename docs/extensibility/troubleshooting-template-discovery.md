@@ -7,12 +7,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904486"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235047"
 ---
 # <a name="troubleshooting-template-installation"></a>Устранение неполадок при установке шаблона
 
@@ -70,6 +70,7 @@ ms.locfileid: "85904486"
 > [!NOTE]
 > Чтобы отключить ведение журнала, удалите файл pkgdef либо измените значение `EnableTemplateDiscoveryLog` на `dword:00000000` , а затем `devenv /updateConfiguration` снова запустите.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Создание пользовательских шаблонов проектов и элементов](creating-custom-project-and-item-templates.md)
+- [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679a6e753e61ecb1af9097692a741c35e531c7cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545747"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234982"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Устранение неполадок развертывания решений Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.
@@ -125,7 +125,8 @@ ms.locfileid: "85545747"
 
  Установите **.vsto** в качестве расширения и **application/x-ms-vsto**в качестве типа MIME.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)
+- [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
