@@ -66,7 +66,7 @@ if (log == null) return;
 
     Если в окне инструментов размещается пользовательский элемент управления или любой другой контейнер элементов управления, контейнер будет размещен в модели компонентов Windows и не будет иметь доступа к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] службам. Можно вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения поставщика службы VSPackage из контейнера элементов управления.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Список доступных служб](../extensibility/internals/list-of-available-services.md)
 - [Использование и предоставление служб](../extensibility/using-and-providing-services.md)
 - [Основные компоненты службы](../extensibility/internals/service-essentials.md)

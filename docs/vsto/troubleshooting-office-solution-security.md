@@ -48,6 +48,6 @@ ms.locfileid: "87234813"
 
  Чтобы управлять действиями ИИСК и Internet Explorer 7 и более поздних версий, вычислить веб-сайты и пути в формате UNC, которые вы доверяете, и добавить их в одну из доверенных зон безопасности (локальная интрасеть или надежные сайты). Сведения об управлении зонами см. в разделе [Configure ClickOnce Trusted Publishers](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)
 - [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

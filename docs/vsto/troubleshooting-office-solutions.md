@@ -24,7 +24,7 @@ ms.locfileid: "87234722"
 # <a name="troubleshoot-office-solutions"></a>Устранение неполадок решений Office
   В этом разделе содержатся советы по решению типичных проблем, с которыми можно столкнуться при создании решений с помощью средств разработки Office в Visual Studio.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Описание распространенных проблем, с которыми можно столкнуться при проектировании, запуске и тестировании решений Office в Visual Studio.
@@ -58,6 +58,6 @@ ms.locfileid: "87234722"
 
  Список часто задаваемых вопросов о программировании решений Office и ссылки на разделы, помогающие решить типичные проблемы.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

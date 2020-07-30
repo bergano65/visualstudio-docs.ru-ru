@@ -36,6 +36,6 @@ ms.locfileid: "87234865"
 
    Более ранняя версия RegPkg может регистрировать пакеты, созданные с помощью сборки Microsoft.VisualStudio.Shell.dll. Однако он не может зарегистрировать пакеты, созданные с помощью более поздних версий этой сборки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
