@@ -42,6 +42,8 @@
       items:
         - name: Обзор
           href: install/visual-studio-administrator-guide.md
+        - name: Руководство по Visual Studio Enterprise
+          href: install/visual-studio-enterprise-guide.md
         - name: Использование командной строки
           items:
             - name: Использование параметров командной строки для установки Visual Studio
@@ -1407,7 +1409,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual\_Studio\_2017"
+        - name: "Visual Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/
@@ -1421,7 +1423,7 @@
               href: /visualstudio/productinfo/vs2017-compatibility-vs/
             - name: Требования к системе
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: Visual Studio 2019
+        - name: "Visual Studio\_2019"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releases/2019/release-notes/
