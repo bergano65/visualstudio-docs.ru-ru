@@ -1,6 +1,6 @@
 ---
 title: Страница справки F1 по умолчанию
-ms.date: 02/28/2018
+ms.date: 07/20/2020
 ms.topic: troubleshooting
 robots: noindex,nofollow
 f1_keywords:
@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: TerryGLee
 ms.author: tglee
-ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fabd640b503c480662239dac4920aa9875d62c9
+ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597013"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86944572"
 ---
 # <a name="f1-help"></a>Справка F1
 
@@ -22,11 +22,12 @@ ms.locfileid: "75597013"
 
 ## <a name="cursor-position"></a>Позиция курсора
 
-Если вам нужна справка по клавише F1 по ключевому слову или имени в API, до нажатия **F1** убедитесь, что курсор располагается внутри слова или справа от него. Если это не работает, выберите нужный вариант в списке [полезных ссылок](#useful-links) или выполните поиск на сайте https://docs.microsoft.com.
+Если вам нужна справка по клавише F1 по ключевому слову или имени API, до нажатия **F1** убедитесь, что курсор располагается внутри слова или справа от него. Если это не работает, выберите нужный вариант в следующем списке [полезных ссылок](#useful-links) или выполните поиск на сайте https://docs.microsoft.com.
 
 ## <a name="useful-links"></a>Полезные ссылки
 
 - Поиск документации в [обозревателе API .NET](/dotnet/api/).
+- Просмотрите список статей базы знаний на странице [Устранения неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
 - Справочные сведения о C# см. в [руководстве по C#](/dotnet/csharp/index).
 - Справочные сведения о Visual Basic см. в [руководстве по Visual Basic](/dotnet/visual-basic/).
 - Справочные сведения о F# см. в [руководстве по F#](/dotnet/fsharp/).

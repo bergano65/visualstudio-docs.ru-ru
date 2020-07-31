@@ -1,6 +1,6 @@
 ---
 title: Ресурсы для устранения неполадок
-ms.date: 07/17/2020
+ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459285"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234735"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 
@@ -109,7 +109,7 @@ ms.locfileid: "86459285"
 
 ## <a name="knowledge-base-articles"></a>Статьи базы знаний
 
-Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Статьи базы знаний можно найти на веб-сайте [службы поддержки Майкрософт](https://support.microsoft.com). Коллекцию статей базы знаний по Visual Studio можно также просмотреть на странице [сведений об устранении неполадок Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
+Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Статьи базы знаний по Visual Studio можно также просмотреть на странице [сведений об устранении неполадок Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
 
 ## <a name="developer-forums"></a>Форумы разработчиков
 
@@ -124,4 +124,5 @@ ms.locfileid: "86459285"
 ## <a name="see-also"></a>См. также
 
 * [Устранение неполадок сети или ошибок прокси-сервера](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Устранение неполадок (Visual Studio для Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)
 * [Устранение неполадок (Visual Studio для Mac)](/visualstudio/mac/troubleshooting)

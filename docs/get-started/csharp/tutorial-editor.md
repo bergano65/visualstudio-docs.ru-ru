@@ -12,16 +12,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75590440"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234969"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
+# <a name="learn-to-use-the-code-editor-with-c"></a>Узнайте, как использовать редактор кода с C#
 
-В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
+В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода C# и навигацию по нему в Visual Studio.
 
 ::: moniker range="vs-2017"
 

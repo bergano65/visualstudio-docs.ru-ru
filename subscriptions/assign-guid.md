@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Узнайте о том, как администраторы могут назначать уникальные идентификаторы (GUID) подписок подписчикам.
-ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072597"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235190"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Посетите портал администрирования подписок Visual Studio, чтобы управлять подписками
 
@@ -32,7 +32,7 @@ ms.locfileid: "82072597"
 1. Войдите на [портал администрирования](https://manage.visualstudio.com).
 2. Выберите вкладку **Экспорт**, и файл загрузится на локальный компьютер. Имя файла будет содержать имя соглашения с подпиской вашего пользователя и датой экспорта.
 > [!div class="mx-imgBorder"]
-> ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png "Щелкните "Экспорт", чтобы сохранить список назначенных подписок с данными о подписчике.")
 
 ### <a name="identify-the-guids-you-want-to-assign"></a>Укажите идентификаторы GUID, которые вы хотите назначить
 

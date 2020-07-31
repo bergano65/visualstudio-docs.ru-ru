@@ -1,6 +1,6 @@
 ---
 title: Параллельная установка версий Visual Studio
-ms.date: 03/05/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114649"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234995"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Параллельная установка версий Visual Studio
 
@@ -45,6 +45,22 @@ Visual Studio можно установить на компьютер, на ко
 * В случае удаления версии Visual Studio с компьютера, на котором установлено более одной версии, сопоставления файлов Visual Studio будут удалены для всех версий.
 
 * Visual Studio не обновляет расширения автоматически, так как не все расширения совместимы. Необходимо переустановить расширения из [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или с помощью средств издателя программного обеспечения.
+
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>Параллельная установка дополнительных номеров версий Visual Studio
+
+При обновлении с одного дополнительного номера версии Visual Studio до следующего установщик Visual Studio по умолчанию обновит текущую установку до следующей версии в этом канале. Например, при установке предварительной версии 16.6.4 установщик попытается заменить текущую установку предварительной версии 16.6.3, так как обе версии находятся в канале предварительной версии 16.6. Это помогает гарантировать, что старые версии Visual Studio не занимают место на компьютере. В некоторых случаях может быть полезно устанавливать дополнительные номера версий параллельно. В нашем примере это означает, что на компьютере будут установлены обе версии — 16.6.3 и 16.6.4.
+
+1. Скачайте [файл начального загрузчика Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) для дополнительного номера версии, который вы хотите установить параллельно с существующими версиями Visual Studio.
+2. Откройте командную строку с правами администратора. Для этого откройте меню "Пуск" Windows, введите "cmd", щелкните результат поиска "Командная строка" правой кнопкой мыши и выберите **Запуск от имени администратора**. В командной строке измените каталог на папку, в которой находится файл начального загрузчика Visual Studio.
+3. Выполните приведенную ниже команду, указав новый путь к папке для расположения установки и заменив имя EXE-файла соответствующим именем начального загрузчика для устанавливаемой версии Visual Studio. Имя EXE-файла должно совпадать с одним из указанных ниже или быть похожим на него:
+   * vs_community.exe для Visual Studio Community
+   * vs_professional.exe для Visual Studio Professional
+   * vs_enterprise.exe для Visual Studio Enterprise
+
+```
+vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+```
+4. Следуйте указаниям в диалоговых окнах установщика, чтобы выбрать компоненты для установки. Дополнительные сведения см. в разделе [Установка Visual Studio](install-visual-studio.md#step-4---choose-workloads).
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Версии платформы .NET Framework и установка нескольких версий на один компьютер
 

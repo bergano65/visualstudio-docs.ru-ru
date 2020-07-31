@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902809"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375902"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -82,13 +82,7 @@ ms.locfileid: "85902809"
 Ответ. Не все подписки Visual Studio Enterprise включают преимущество Pluralsight.  Просмотрите [таблицу прав на участие](#eligibility), чтобы проверить доступность для вашей подписки.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Вопрос: У меня есть доступ к настраиваемым спискам воспроизведения или каналам обучения?
-Ответ. Да, как подписчик Visual Studio вы имеете доступ к экспертным каналам в рамках преимущества Pluralsight. Эти каналы курируются специалистами Майкрософт и подходят для обучения в сферах .Net, Azure, DevOps и мобильности. Активируйте преимущество Pluralsight через портал подписки Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), чтобы получить доступ к этим каналам на стартовой странице Pluralsight:
-
-• Скотт Ханселманн (Scott Hanselmann) (.Net, Azure) — [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-• Донован Браун (Donovan Brown) (DevOps) — [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-• Джеймс Монтеманьо (James Montemagno) (Мобильность) — [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+Ответ. Да. Как подписчик Visual Studio вы имеете доступ к избранным ролям, схемам обучения и настраиваемым каналам (списки воспроизведения) в рамках преимущества Pluralsight. Материалы были специально подобраны корпорацией Майкрософт и Pluralsight для обучения в ключевых областях, представляющих интерес. Активируйте преимущество Pluralsight через портал подписки Visual Studio <https://my.visualstudio.com/benefits>, чтобы получить доступ к этим и другим материалам на главной странице Pluralsight.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Вопрос: Что произойдет, когда закончится срок действия подписки Pluralsight?
 Ответ.  В конце срока действия бесплатной подписки Pluralsight вы можете приобрести платную подписку напрямую у Pluralsight.  Обратитесь в компанию [Pluralsight](https://www.pluralsight.com), чтобы получить подробные сведения.

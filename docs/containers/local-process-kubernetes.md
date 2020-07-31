@@ -6,14 +6,14 @@ ms.topic: conceptual
 description: Узнайте, как использовать функцию "Локальный процесс с Kubernetes" в Visual Studio для подключения компьютера разработчика к кластеру Kubernetes.
 keywords: Локальный процесс с Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, контейнеры
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b057670f60554a066356ad34525f0276d8dc826c
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454381"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87134000"
 ---
-# <a name="use-local-process-with-kubernetes-preview"></a>Использование функции "Локальный процесс с Kubernetes" (предварительная версия)
+# <a name="use-local-process-with-kubernetes-preview"></a>Использование Локального процесса с Kubernetes (предварительная версия)
 
 Локальный процесс с Kubernetes позволяет выполнять и отлаживать код на компьютере разработки, подключенном к кластеру Kubernetes, в котором находятся остальные приложения или службы. Например, при наличии масштабной архитектуры микрослужб со множеством взаимозависимых служб и баз данных репликация этих зависимостей на компьютере разработки может представлять сложность. Кроме того, сборка и развертывание кода в кластере Kubernetes при каждом изменении кода в процессе внутреннего цикла разработки могут занимать много времени и затруднять использование отладчика.
 

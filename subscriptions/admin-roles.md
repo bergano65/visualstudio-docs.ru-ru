@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: Сведения о ролях суперадминистратора и администратора, а также о назначении администраторов.
-ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808373"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234631"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Суперадминистраторы и администраторы для соглашений о подписке Visual Studio
 
@@ -30,10 +30,10 @@ ms.locfileid: "80808373"
 2. Щелкните вкладку **Управление администраторами**.
 3. Нажмите кнопку **Добавить**.
    > [!div class="mx-imgBorder"]
-   > ![Добавление администраторов](_img/admin-roles/add-admins.png)
+   > ![Добавление администраторов](_img/admin-roles/add-admins.png "Щелкните колонку "Управление администраторами", а затем нажмите кнопку "Добавить", чтобы назначить новых администраторов.")
 4. Заполните форму, указав сведения о новом администраторе.  
    > [!div class="mx-imgBorder"]
-   > ![Форма добавления администратора](_img/admin-roles/add-form.png)
+   > ![Форма добавления администратора](_img/admin-roles/add-form.png "Введите данные для входа для нового администратора и укажите, следует ли сделать его суперадминистратором.  Затем нажмите кнопку "Добавить".")
 
    > [!NOTE]
    > Если вы хотите, чтобы этот администратор мог назначать дополнительных администраторов, не забудьте поставить флажок **Суперадминистратор**.

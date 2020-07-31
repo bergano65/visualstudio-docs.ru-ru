@@ -12,16 +12,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75584612"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235151"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Узнайте, как использовать редактор кода с Visual Basic
 
-В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
+В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание и понимание кода Visual Basic и навигацию по нему в Visual Studio.
 
 ::: moniker range="vs-2017"
 
