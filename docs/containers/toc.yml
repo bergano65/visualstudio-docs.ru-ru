@@ -11,8 +11,6 @@
           href: container-tools.md
         - name: Одностраничное приложение React.js в контейнере
           href: container-tools-react.md
-        - name: Разработка Kubernetes
-          href: local-process-kubernetes.md
     - name: Учебники
       expanded: true
       items:
@@ -54,3 +52,5 @@
       href: local-process-kubernetes.md
     - name: "Принципы работы Local\_Process with Kubernetes (предварительная версия)"
       href: overview-local-process-kubernetes.md
+    - name: Настройка функции "Локальный процесс с Kubernetes"
+      href: configure-local-process-with-kubernetes.md

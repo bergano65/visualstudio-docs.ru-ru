@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: bb5bb2bc31527acc497e429030516cdfdb8ccd2e
+  ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405384"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87453709"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -49,6 +49,10 @@ landingContent:
     links:
     - text: Создание и редактирование кода
       url: write-and-edit-code.md
+    - text: Компиляция кода TypeScript с использованием tsc
+      url: compile-typescript-code-npm.md
+    - text: Компиляция кода TypeScript с использованием NuGet
+      url: compile-typescript-code-nuget.md
     - text: Управление npm-пакетами
       url: npm-package-management.md
     - text: Интерактивный цикл REPL в Node.js
