@@ -26,18 +26,26 @@
       href: publish-nodejs-app-azure.md
 - name: Практические руководства
   items:
-    - name: Создание и редактирование кода
-      href: write-and-edit-code.md
-    - name: "Создание приложения\_Vue.js"
-      href: create-application-with-vuejs.md
+    - name: Редактор
+      items:
+        - name: Создание и редактирование кода
+          href: write-and-edit-code.md
+        - name: IntelliSense для JavaScript
+          href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+    - name: Построение
+      items:
+        - name: Компиляция кода TypeScript с использованием tsc
+          href: compile-typescript-code-npm.md
+        - name: Компиляция кода TypeScript с использованием NuGet
+          href: compile-typescript-code-nuget.md
     - name: Управление npm-пакетами
       href: npm-package-management.md
     - name: Разработка без проектов и решений ("открытая папка")
       href: develop-javascript-code-without-solutions-projects.md
+    - name: "Создание приложения\_Vue.js"
+      href: create-application-with-vuejs.md
     - name: Интерактивный цикл REPL в Node.js
       href: nodejs-interactive-repl.md
-    - name: IntelliSense для JavaScript
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
     - name: Отладка
       href: debug-nodejs.md
     - name: Модульное тестирование
