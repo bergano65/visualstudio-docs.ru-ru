@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289096"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453767"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом кратком руководстве по редактору кода Visual Studio мы рассмотрим несколько методов, которые упрощают написание, понимание кода и навигацию по нему в Visual Studio.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**. Дополнительные сведения о получении языковой службы для TypeScript см. в разделе [Поддержка TypeScript](../javascript/javascript-in-vs-2019.md#typescript-support).
 
 В этой статье предполагается, что вы уже знакомы с основами разработки на JavaScript. Если это не так, мы рекомендуем сначала изучить руководство по [созданию приложения Node.js и Express](../javascript/tutorial-nodejs.md).
 
@@ -65,6 +65,8 @@ IntelliSense также может отображать сведения о ти
 ![Просмотр списка ошибок](../javascript/media/write-code-error-list.png)
 
 Чтобы исправить этот код, добавьте запятую (`,`) перед элементом `"data"`.
+
+См. дополнительные сведения об [анализе кода](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md).
 
 ## <a name="comment-out-code"></a>Закомментирование кода
 

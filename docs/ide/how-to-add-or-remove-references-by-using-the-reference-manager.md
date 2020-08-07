@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284730"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390266"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 
@@ -47,6 +47,9 @@ ms.locfileid: "85284730"
 - **Windows** с подгруппами **Ядро** и **Расширения**. Для просмотра ссылок в Windows SDK и пакетах SDK расширений можно использовать **Обозреватель объектов**.
 
 - **Обзор** с подгруппой **последних ссылок**.
+ 
+    > [!NOTE]
+    > При разработке проектов С++ элемент **Обзор** может не отображаться в диалоговом окне "Диспетчер ссылок".
 
 ## <a name="add-a-reference"></a>Добавление ссылки
 

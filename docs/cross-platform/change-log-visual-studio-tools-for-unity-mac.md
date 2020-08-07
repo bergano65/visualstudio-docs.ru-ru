@@ -10,16 +10,74 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184566"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471536"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Журнал изменений (инструменты Visual Studio для Unity, Mac)
 
 Журнал изменений в наборе средств Visual Studio для Unity
+
+## <a name="2710"></a>2.7.1.0
+Выпущено 5 августа 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - API сообщений Unity обновлен до версии 2019.4.
+
+  - Добавлен подавитель [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md) для `CA1823`. Частные поля с атрибутами `SerializeField` или `SerializeReference` не должны помечаться как неиспользуемые (FxCop).
+  
+  - Добавлен подавитель [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md) для `CA1822`. Сообщения Unity не должны помечаться как кандидаты для модификатора `static` (FxCop).
+
+  - Добавлен подавитель [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md) для `CA1801`. Неиспользуемые параметры не должны удаляться из сообщений Unity (FxCop).
+  
+  - Включена поддержка `MenuItem` для подавителя [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md).  
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Интеграция:**
+
+  - исправлена ошибка, из-за которой подавители [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) и [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) не работали с дополнительными круглыми скобками или аргументами метода.
+  
+  - Исправлена проблема с обязательным обновлением базы данных ресурсов, даже если автоматическое обновление было отключено в параметрах Unity.
+
+## <a name="2700"></a>2.7.0.0
+Выпущено 23 июня 2020 г.
+
+### <a name="new-features"></a>Новые функции
+
+- **Интеграция:**
+
+  - включена поддержка сохранения папок решений при повторном создании решения и проектов Unity.
+
+  - Добавлена диагностика [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md). Включено обнаружение неправильной сигнатуры метода с атрибутом `InitializeOnLoadMethod` или `RuntimeInitializeOnLoadMethod`.
+
+  - Добавлена диагностика [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md). Использование `Invoke`, `InvokeRepeating`, `StartCoroutine` или `StopCoroutine` с первым аргументом строкового литерала не является типобезопасным.
+
+  - Добавлена диагностика [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md). Вызов `SetPixels` выполняется очень долго.
+
+### <a name="bug-fixes"></a>Исправления ошибок
+
+- **Отладчик:**
+
+  - исправлена проблема с созданием точек останова во время игры в старой среде выполнения Mono (попытка привязки точки останова сразу после ее создания). 
+  
+- **Интеграция:**
+
+  - не сбрасывайте выбранные элементы при фильтрации сообщений в мастере сообщений Unity.
+  
+  - Исправлена ошибка с подавителями [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) и [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) с использованием следующих правил: включено подавление `IDE0044` (только для чтения), `IDE0051` (не используется), `CS0649` (никогда не назначается) для всех полей, декорированных атрибутом SerializeField. Включено подавление `CS0649` (никогда не назначается) для открытых полей всех типов, расширяющих `Unity.Object`.
+
+  - Исправлена проблема с проверкой параметров универсального типа для [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md).
+
+- **Вычисления:**
+
+  - исправлена проблема со сравнением на равенство с использованием перечислений.
 
 ## <a name="2610"></a>2.6.1.0
 Выпущено 19 мая 2020 г.
@@ -43,19 +101,19 @@ ms.locfileid: "84184566"
 
 - **Интеграция:**
 
-  - Добавлена диагностика [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md). Обнаруживаются и упаковываются в оболочку сопрограммы в `StartCoroutine()`.
+  - Добавлена диагностика [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md). Обнаруживаются и упаковываются в оболочку сопрограммы в `StartCoroutine()`.
 
-  - Добавлена диагностика [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md). Обнаруживаются и удаляются недопустимые или избыточные атрибуты `SerializeField`.
+  - Добавлена диагностика [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md). Обнаруживаются и удаляются недопустимые или избыточные атрибуты `SerializeField`.
 
-  - Добавлена диагностика [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md). Обнаруживается объект `GetComponent()`, который вызывается с использованием типа, не являющегося типом компонента или интерфейса.
+  - Добавлена диагностика [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md). Обнаруживается объект `GetComponent()`, который вызывается с использованием типа, не являющегося типом компонента или интерфейса.
 
-  - Добавлен подавитель [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) для `IDE0051`. Методы с атрибутом `ContextMenu` и методы, на которые ссылается поле с атрибутом `ContextMenuItem`, не помечаются как неиспользуемые.
+  - Добавлен подавитель [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) для `IDE0051`. Методы с атрибутом `ContextMenu` и методы, на которые ссылается поле с атрибутом `ContextMenuItem`, не помечаются как неиспользуемые.
 
-  - Добавлен подавитель [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) для `IDE0051`. Поля с атрибутом `ContextMenuItem` не помечаются как неиспользуемые.
+  - Добавлен подавитель [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) для `IDE0051`. Поля с атрибутом `ContextMenuItem` не помечаются как неиспользуемые.
 
-  - Добавлен подавитель [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) для `IDE0044`. Поля с атрибутом `ContextMenuItem` не задаются как доступные только для чтения.
+  - Добавлен подавитель [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) для `IDE0044`. Поля с атрибутом `ContextMenuItem` не задаются как доступные только для чтения.
 
-  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) и [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) теперь работают для атрибутов `SerializeReference` и `SerializeField`.
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) и [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) теперь работают для атрибутов `SerializeReference` и `SerializeField`.
 
 ### <a name="bug-fixes"></a>Исправления ошибок
 
@@ -67,7 +125,7 @@ ms.locfileid: "84184566"
 
   - Исправлена область действия для сообщения `CreateInspectorGUI`.
 
-  - Не регистрируется [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) для методов с полиморфными модификаторами.
+  - Не регистрируется [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md) для методов с полиморфными модификаторами.
 
 - **Вычисления:**
 
@@ -93,7 +151,7 @@ ms.locfileid: "84184566"
 
 - **Интеграция:**
 
-  - Добавлен подавитель [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) для `IDE0051`. Частные методы, используемые с методами Invoke, InvokeRepeating, StartCoroutine или StartCoroutine, не должны помечаться как неиспользуемые.
+  - Добавлен подавитель [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) для `IDE0051`. Частные методы, используемые с методами Invoke, InvokeRepeating, StartCoroutine или StartCoroutine, не должны помечаться как неиспользуемые.
 
 ### <a name="bug-fixes"></a>Исправления ошибок
 
@@ -113,7 +171,7 @@ ms.locfileid: "84184566"
 
 - **Интеграция:**
 
-  - Исправлена диагностическая проверка [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) на правильность подписи сообщения. При проверке типов с несколькими уровнями наследования эта диагностика может завершиться ошибкой с выводом следующего сообщения: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+  - Исправлена диагностическая проверка [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) на правильность подписи сообщения. При проверке типов с несколькими уровнями наследования эта диагностика может завершиться ошибкой с выводом следующего сообщения: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
 
 ## <a name="2500"></a>2.5.0.0
 
@@ -129,9 +187,9 @@ ms.locfileid: "84184566"
   
   - Используется новая сетка доступных свойств.
 
-  - Добавлен подавитель [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) для `IDE0051`. Частные поля с атрибутом `SerializeField` не должны помечаться как неиспользуемые.
+  - Добавлен подавитель [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) для `IDE0051`. Частные поля с атрибутом `SerializeField` не должны помечаться как неиспользуемые.
 
-  - Добавлен подавитель [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) для `CS0649`. Поля с атрибутом `SerializeField` не должны помечаться как неназначенные.  
+  - Добавлен подавитель [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) для `CS0649`. Поля с атрибутом `SerializeField` не должны помечаться как неназначенные.  
 
 ### <a name="bug-fixes"></a>Исправления ошибок
 
@@ -187,7 +245,7 @@ ms.locfileid: "84184566"
 
 - **Интеграция:**
 
-  - Добавлен подавитель [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) для `IDE0060` (неиспользуемый параметр) для всех сообщений Unity.
+  - Добавлен подавитель [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) для `IDE0060` (неиспользуемый параметр) для всех сообщений Unity.
 
   - Добавлена быстрая подсказка для полей с тегами `TooltipAttribute`. (Это также будет работать для простого метода доступа GET с использованием этого поля).
 

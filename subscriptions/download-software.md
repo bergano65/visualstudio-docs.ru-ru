@@ -2,17 +2,17 @@
 title: Загрузка программного обеспечения в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 03/07/2020
+ms.date: 07/29/2020
 ms.topic: conceptual
 description: Сведения о том, как найти и загрузить программное обеспечение Майкрософт в подписках Visual Studio
-ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bf2afafc99993b2b3717f0264fee89b747eab58a
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180237"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434292"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Загрузка программного обеспечения в подписках Visual Studio
 В зависимости от вашей подписки Visual Studio вам доступно различное программное обеспечение Майкрософт.  В этой статье описывается, как найти и загрузить нужное программное обеспечение для максимально эффективного использования подписки. 
@@ -27,11 +27,11 @@ ms.locfileid: "84180237"
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Как найти скачиваемые файлы на портале подписчика?
 На странице [Загрузки](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) вы увидите популярные скачиваемые файлы, упорядоченные в группы по типу продукта.  Вы можете выбрать один из отображаемых популярных файлов или найти любой продукт с помощью панели поиска в верхней части страницы.
 > [!div class="mx-imgBorder"]
-> ![Страница загрузок подписчика](_img/subscriber-downloads/subscriber-downloads-resized.png)
+> ![Страница загрузок подписчика](_img/subscriber-downloads/subscriber-downloads-resized.png "Самые популярные скачиваемые компоненты отображаются при щелчке колонки "Загрузки".")
 
 Например, если выбрать **Visual Studio 2019** в списке средств для разработчиков, вы увидите список доступных скачиваемых файлов Visual Studio 2019.
 > [!div class="mx-imgBorder"]
-> ![Загрузки для Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png)
+> ![Загрузки для Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png "При выборе продукта отображается список доступных версий.")
 
 Вы можете выбрать архитектуру, язык и тип файла в раскрывающихся меню. Выберите предпочитаемые параметры и щелкните **Скачать**, чтобы начать скачивание продукта.
 
@@ -41,16 +41,16 @@ ms.locfileid: "84180237"
 ### <a name="displaying-download-details"></a>Отображение сведений о скачиваемом файле
 Щелкните имя продукта или ссылку **Сведения**, чтобы просмотреть информацию о скачиваемом файле и заметки о выпуске соответствующего продукта.
 > [!div class="mx-imgBorder"]
-> ![Сведения о скачиваемом файле Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png)
+> ![Сведения о скачиваемом файле Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "На вкладке "Сведения" отображаются сведения о скачивании и предоставляется доступ к заметкам о выпуске.")
 
 В области сведений можно также открыть вкладку **Ключи** и просмотреть статус ключей продукта.
 > [!div class="mx-imgBorder"]
-> ![Ключи продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png)
+> ![Ключи продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png "На вкладке "Ключи" показано количество оставшихся ключей и предоставляется возможность запрашивать доступные ключи.")
 
 ### <a name="obtaining-product-keys"></a>Получение ключей продукта
 Чтобы получить ключ продукта для скачиваемого файла, щелкните синий ключ с надписью **Получить ключ** или, если вы просматриваете область сведений, щелкните **Запросить ключ** на вкладке **Ключи**.
 > [!div class="mx-imgBorder"]
-> ![Запрос ключей продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
+> ![Запрос ключей продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Для этого щелкните "Запросить ключи".")
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
@@ -67,7 +67,3 @@ ms.locfileid: "84180237"
 - [Индивидуальный кредит Azure DevTest](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
-
-
-
-

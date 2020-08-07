@@ -3,14 +3,14 @@ title: Руководство. Создание многоконтейнерно
 description: Узнайте, как управлять несколькими контейнерами и организовать между ними обмен данными в Visual Studio для Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: 03adc2385c202710425fbc8e6b12c832526b5f90
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: b15ba0200520d8a04abc30b606b5b10215e3c22e
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938945"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425434"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -24,8 +24,8 @@ ms.locfileid: "85938945"
 ## <a name="create-an-aspnet-core-web-application-and-add-docker-support"></a>Создание веб-приложения ASP.NET Core и добавление поддержки Docker
 
 1. Создайте новое решение, выбрав **Файл > Создать решение**.
-1. В разделе **.NET Core > Приложение** выберите шаблон **Веб-приложение**: ![Создание приложения ASP.NET](media/docker-quickstart-1.png)
-1. Выберите целевую платформу. В нашем примере используется .NET Core 2.2: ![Указание целевой платформы](media/docker-quickstart-2.png)
+1. В разделе **Интернет и консоль > Приложение** выберите шаблон **Веб-приложение**: ![Создание приложения ASP.NET](media/docker-quickstart-1.png)
+1. Выберите целевую платформу. В нашем примере используется .NET Core 3.1: ![Указание целевой платформы](media/docker-quickstart-2.png)
 1. Введите сведения о проекте, например имя проекта (_DockerDemoFrontEnd_ в нашем примере) и имя решения (_DockerDemo_). Созданный проект содержит все основные сведения, которые потребуются для сборки и запуска веб-сайта ASP.NET Core.
 1. На панели решений щелкните проект DockerDemoFrontEnd правой кнопкой мыши и выберите **Добавить > Поддержка Docker**. ![Добавление поддержки Docker](media/docker-quickstart-3.png)
 
@@ -36,14 +36,14 @@ Visual Studio для Mac автоматически добавит в решен
 Теперь мы создадим второй проект, который будет выполнять роль API серверной части. Шаблон **.NET Core API** содержит контроллер, который позволяет обрабатывать запросы RESTful.
 
 1. Добавьте новый проект в существующее решение, щелкнув решение правой кнопкой мыши и выбрав **Добавить > Новый проект**.
-1. В разделе **.NET Core > Приложение** выберите шаблон **API**.
-1. Выберите целевую платформу. В нашем примере используется .NET Core 2.2.
-1. Введите сведения о проекте, например имя проекта (_DockerDemoFrontEnd_ в нашем примере).
-1. Завершив создание, откройте Панель решения и щелкните проект DockerDemoAPI правой кнопкой мыши, затем выберите **Добавить > Поддержка Docker**.
+1. В разделе **Интернет и консоль > Приложение** выберите шаблон **API**:
+1. Выберите целевую платформу. В нашем примере используется .NET Core 3.1:
+1. Введите сведения о проекте, например имя проекта (_MyWebAPI_ в нашем примере).
+1. Завершив создание, откройте Панель решения и щелкните правой кнопкой мыши проект MyWebAPI и выберите **Добавить > Поддержка Docker**.
 
 Файл **docker-compose.yml** в проекте **docker-compose** будет автоматически обновлен для размещения проекта API рядом с уже существующим проектом веб-приложения. После сборки и запуска проекта **docker-compose** оба этих проекта будут развернуты в отдельных контейнерах Docker.
 
-```
+```yaml
 version: '3.4'
 
 services:
@@ -53,18 +53,18 @@ services:
       context: .
       dockerfile: DockerDemoFrontEnd/Dockerfile
 
-  dockerdemoapi:
-    image: ${DOCKER_REGISTRY-}dockerdemoapi
+  mywebapi:
+    image: ${DOCKER_REGISTRY-}mywebapi
     build:
       context: .
-      dockerfile: DockerDemoAPI/Dockerfile
+      dockerfile: MyWebAPI/Dockerfile
 ```
 
 ## <a name="integrate-the-two-containers"></a>Интеграция двух контейнеров
 
 Теперь в нашем решении есть два проекта ASP.NET, для каждого из которых настроена поддержка Docker. Теперь нам нужно добавить в них код.
 
-1. В проекте `DockerDemoFrontEnd` откройте файл *Index.cshtml.cs* и замените текст метода `OnGet` следующим кодом:
+1. В проекте `DockerDemoFrontEnd` откройте файл *Pages/Index.cshtml.cs* и замените текст метода `OnGet` следующим кодом.
 
    ```csharp
     public async Task OnGet()
@@ -75,12 +75,15 @@ services:
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://dockerdemoapi/api/values/1");
+          request.RequestUri = new Uri("http://mywebapi/WeatherForecast");
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
+   
+    > [!NOTE]
+    > В рабочем коде не следует удалять `HttpClient` после каждого запроса. Рекомендации см. в разделе [Использование HttpClientFactory для реализации устойчивых HTTP-запросов](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
 1. В файл *Index.cshtml* добавьте строку для отображения `ViewData["Message"]`, чтобы файл выглядел примерно так:
 
@@ -97,16 +100,11 @@ services:
           <p>@ViewData["Message"]</p>
       </div>
       ```
-
-1. Теперь перейдите в проект веб-API и добавьте в контроллер Values код с пользовательским сообщением API для вызова, который вы добавили из *webfrontend*:
+  
+1. В проектах интерфейсной части и веб-API закомментируйте вызов [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) в методе `Configure` в *Startup.cs*, так как в этом примере кода для вызова веб-API используется HTTP, а не HTTPS.
 
       ```csharp
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "webapi (with value " + id + ")";
-        }
+                  //app.UseHttpsRedirection();
       ```
 
 1. Настройте проект `docker-compose` в качестве запускаемого проекта и запустите команду **Пуск > Начать отладку**. Если все настроено правильно, вы увидите следующее сообщение: Hello from webfrontend and webapi (with value 1) (Привет от webfrontend и веб-API (со значением 1)), как показано ниже:

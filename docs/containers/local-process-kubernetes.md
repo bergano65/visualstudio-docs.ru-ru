@@ -2,16 +2,19 @@
 title: Использование Локального процесса с Kubernetes в Visual Studio (предварительная версия)
 ms.technology: vs-azure
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Узнайте, как использовать функцию "Локальный процесс с Kubernetes" в Visual Studio для подключения компьютера разработчика к кластеру Kubernetes.
 keywords: Локальный процесс с Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, контейнеры
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+ms.author: ghogen
+author: ghogen
+manager: jillfra
+ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87134000"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507902"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Использование Локального процесса с Kubernetes (предварительная версия)
 
@@ -137,6 +140,10 @@ az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 >
 > Если Visual Studio внезапно завершает подключение к кластеру или завершает работу, то перенаправляемая служба может не перейти в исходное состояние, в котором она находилась до подключения с помощью функции "Локальный процесс с Kubernetes". Чтобы исправить эту проблему, обратитесь к [руководству по устранению неполадок][troubleshooting].
 
+## <a name="additional-configuration"></a>Дополнительная настройка
+
+Локальный процесс с Kubernetes может обрабатывать трафик маршрутизации и выполнять репликацию переменных среды без дополнительной настройки. Если необходимо скачать файлы, подключенные к контейнеру в кластере Kubernetes, например файл ConfigMap, можно создать `KubernetesLocalProcessConfig.yaml` для скачивания этих файлов на компьютер разработки. Дополнительные сведения см. в статье об [использовании KubernetesLocalProcessConfig.yaml для дополнительной настройки Локального процесса с Kubernetes][kubernetesLocalProcessConfig-yaml].
+
 ## <a name="using-logging-and-diagnostics"></a>Использование ведения журналов и диагностики
 
 Журналы диагностики находятся в подкаталоге `Azure Dev Spaces` в [каталоге *TEMP* на компьютере разработки][azds-tmp-dir].
@@ -170,3 +177,4 @@ az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[kubernetesLocalProcessConfig-yaml]: configure-local-process-with-kubernetes.md

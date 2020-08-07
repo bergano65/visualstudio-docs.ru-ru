@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444883"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453682"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -26,14 +26,14 @@ ms.locfileid: "81444883"
 
 На странице "Преимущества" используемая подписка отображается на видном месте в синем баннере. Она также указывается в правом верхнем углу страницы.
 > [!div class="mx-imgBorder"]
-> ![Активная подписка](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![Активная подписка](_img/manage-vs-subscriptions/current-subscription-cropped.png "Текущая подписка отображается в верхней части страницы и в раскрывающемся списке подписок.")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Для переключения между подписками выполните одно из двух действий.
 
 - Откройте раскрывающийся список в правом верхнем углу и выберите в нем подписку.
 - Перейдите на вкладку "Подписки" и щелкните нужную подписку.
   > [!div class="mx-imgBorder"]
-  > ![Смена подписок](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![Смена подписок](_img/manage-vs-subscriptions/change-subscription-resized.png "Щелкните вкладку "Подписки", чтобы просмотреть подробные сведения обо всех подписках и переключаться между ними.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Если подписка не отображается...
 
@@ -78,7 +78,7 @@ ms.locfileid: "81444883"
 Если вы хотите получать регулярные новости о вашей подписке и преимуществах, включая ежемесячные информационные бюллетени, касающиеся подписок Visual Studio, [измените настройки](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), установив флажки для подписок Visual Studio в своем профиле Visual Studio. Вы можете изменить эти настройки и отменить подписку в любое время. 
 
    > [!div class="mx-imgBorder"]
-   > ![Настройка параметров](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![Настройка параметров](_img/manage-vs-subscriptions/change-prefs.png "Установите флажок Visual Studio subscriptions program emails (Сообщения по электронной почте для программы подписок Visual Studio), чтобы получать обновления.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Связывание подписки с существующими подписками Azure DevOps Services или Azure
 Если вы входите в подписку с помощью личной учетной записи Майкрософт и у вас есть подписка, включающая службы Azure DevOps Services или Microsoft Azure, с которой используется рабочая или учебная учетная запись под управлением Azure, вы можете связать эти две подписки. Это называется альтернативной учетной записью и позволяет продолжать входить в подписку с помощью учетной записи Майкрософт, а также иметь доступ к существующим ресурсам Azure, Azure DevOps Services или IDE, которые связаны с рабочей или учебной учетной записью.

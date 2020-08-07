@@ -2,17 +2,17 @@
 title: Экспорт сведений о подписке | Документация Майкрософт
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Сведения о том, как экспортировать список подписчиков, и подробные сведения о назначениях подписки.
-ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232498"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453565"
 ---
 # <a name="export-subscription-information"></a>Экспорт сведений о подписке
 На [портале администрирования](https://manage.visualstudio.com) подписок Visual Studio можно экспортировать список подписчиков и сведения об их назначениях. Эти сведения включают имя, адрес электронной почты, запасной адрес электронной почты, уровень подписки, дату назначения, состояние активации, дату окончания срока действия, эталонное поле, разрешенные загрузки, страну, язык, состояние подписки и GUID подписки.  Список экспортируется в виде CSV-файла, который можно открыть в Microsoft Excel для создания диаграмм, сводных данных и других артефактов.
@@ -30,7 +30,7 @@ ms.locfileid: "80232498"
 1. Войдите на [портал администрирования](https://manage.visualstudio.com).
 2. Выберите вкладку **Экспорт**, и файл загрузится на локальный компьютер. Имя файла будет содержать имя соглашения с подпиской вашего пользователя и датой экспорта.
 > [!div class="mx-imgBorder"]
-> ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png "Щелкните "Экспорт", чтобы скачать полный список назначенных подписок.")
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
