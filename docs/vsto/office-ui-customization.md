@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15c7061030bec6aebca9cdc63d0cd0e0c79cc9aa
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985706"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041068"
 ---
 # <a name="office-ui-customization"></a>Настройка пользовательского интерфейса Office
   Для настройки пользовательского интерфейса приложений Microsoft Office можно использовать Office Developer Tools в Visual Studio. В этой статье описываются возможности пользовательского интерфейса, которые можно настраивать:
@@ -30,7 +30,7 @@ ms.locfileid: "72985706"
 
 - [Панели действий и настраиваемые области задач](#Actions)
 
-- [Пользовательский интерфейс пользовательской ленты](#Ribbon)
+- [Настраиваемый пользовательский интерфейс ленты](#Ribbon)
 
 - [Представление Backstage](#Backstage)
 
@@ -40,20 +40,20 @@ ms.locfileid: "72985706"
 
 - [Контекстные меню](#Shortcut)
 
-## <a name="Comparison"></a>Сравнение функций пользовательского интерфейса
+## <a name="comparison-of-ui-features"></a><a name="Comparison"></a>Сравнение функций пользовательского интерфейса
  В следующей таблице приводится сравнение основных функций пользовательского интерфейса, которые можно настраивать в проектах Microsoft Office.
 
-|Возможность|Поддерживаемые типы проектов|Поддерживаемые приложения Microsoft Office|
+|Компонент|Поддерживаемые типы проектов|Поддерживаемые приложения Microsoft Office|
 |-------------|-----------------------------|---------------------------------------------|
-|Панель действий|Настройки уровня документа.|Excel<br /><br /> Слово|
-|Настраиваемые области задач|Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Слово<br /><br /> Excel|
-|Настраиваемый пользовательский интерфейс ленты|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Слово<br /><br /> Visio|
-|Представление Backstage|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Слово<br /><br /> Visio|
-|Области формы Outlook|Надстройки VSTO|Outlook - приложение|
-|Элементы управления в документах|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> Слово|
-|Контекстные меню|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook - приложение<br /><br /> PowerPoint<br /><br /> Проект<br /><br /> Слово<br /><br /> Visio<br /><br /> Excel|
+|Панель "Действия"|Настройки уровня документа.|Excel<br /><br /> Word|
+|Настраиваемые области задач|Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
+|Настраиваемый пользовательский интерфейс ленты|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|
+|Представление Backstage|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|
+|Области формы Outlook|Надстройки VSTO|Outlook|
+|Элементы управления в документах|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> Word|
+|Контекстные меню|Настройки уровня документа.<br /><br /> Надстройки VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|
 
-## <a name="Actions"></a>Панели действий и настраиваемые области задач
+## <a name="actions-panes-and-custom-task-panes"></a><a name="Actions"></a>Панели действий и настраиваемые области задач
  Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Практически все приложения Microsoft Office содержат встроенные области задач. Примером области задач является область задач "Справка" в Word.
 
  Средства разработки решений на базе Office в Visual Studio предоставляют два способа настройки областей задач:
@@ -66,33 +66,33 @@ ms.locfileid: "72985706"
 
   Дополнительные сведения о панелях действий см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md). Дополнительные сведения о настраиваемых панелях задач см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).
 
-## <a name="Ribbon"></a>Пользовательский интерфейс пользовательской ленты
+## <a name="custom-ribbon-ui"></a><a name="Ribbon"></a>Пользовательский интерфейс пользовательской ленты
  Пользовательский интерфейс ленты можно настроить для предоставления функциональных возможностей, которые вы добавляете в приложения в Office. Лента позволяет так организовать связанные команды (в форме элементов управления), чтобы их можно было легко найти. Для предоставления пользователям доступа к функциональным возможностям, имеющимся в решении, можно создать собственные вкладки и группы ленты. Большинство возможностей, доступ к которым раньше выполнялся с помощью меню и панелей инструментов в более ранних версиях системы Microsoft Office, теперь доступны с помощью ленты.
 
  Дополнительные сведения см. в статье [Общие сведения о ленте](../vsto/ribbon-overview.md).
 
-## <a name="Backstage"></a>Представление Backstage
+## <a name="backstage-view"></a><a name="Backstage"></a>Представление Backstage
  В приложениях Office при выборе вкладки **файл** открывается представление Backstage. Представление Backstage содержит пользовательский интерфейс, который объединяет задачи и действия на уровне файлов, и заменяет похожую функцию, доступную с помощью кнопки Microsoft Office в выпуске 2007 системы Microsoft Office. Представление Backstage является полностью расширяемым с помощью XML.
 
  Visual Studio не содержит конструктор или API-интерфейсы для настройки представления Backstage. Однако при добавлении элемента **ленты (XML)** в проект Office можно добавить XML-код в XML-файл ленты, чтобы настроить представление Backstage. Дополнительные сведения об элементах **ленты (XML)** см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).
 
  Дополнительные сведения о настройке представления Backstage см. в статье [Введение в представление Backstage office 2010 для разработчиков](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) и [Настройка представления Backstage для разработчиков Office 2010](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
-## <a name="FormRegion"></a>Области формы Outlook
+## <a name="outlook-form-regions"></a><a name="FormRegion"></a>Области формы Outlook
  Для добавления пользовательских функций в стандартные формы Microsoft Office Outlook используйте области форм. Можно создать области форм, которые расширяют существующие формы за счет дополнительных полей или элементов управления. При создании новой области формы с помощью средств разработки решений на базе Office в Visual Studio можно использовать только элементы управления Windows Forms в области формы. При импорте области формы, созданной в Outlook, можно использовать только собственные элементы управления Outlook.
 
  Можно создавать области форм, которые занимают разные зоны пользовательского интерфейса Outlook. Например, прилегающие области формы отображаются в нижней части первой страницы формы, и каждая прилегающая область формы является сворачиваемой. Также можно добавить отдельную область формы, которая будет отображаться в виде полной дополнительной страницы формы и может появляться на любой существующей стандартной или настраиваемой форме.
 
  Дополнительные сведения см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
 
-## <a name="Controls"></a>Элементы управления в документах
+## <a name="controls-on-documents"></a><a name="Controls"></a>Элементы управления в документах
  В документы Word или листы Excel можно добавлять различные элементы управления. Например, в документ можно добавить управляющий элемент выбора даты, чтобы пользователь мог вводить даты в стандартном формате, или добавить кнопку на листе для отправки данных в базу данных.
 
  При разработке проектов на уровне документа для Excel или Word можно использовать конструктор Visual Studio для добавления элементов управления в документ или книгу в проекте во время разработки, либо можно добавлять элементы управления программным образом во время выполнения. При разработке проектов надстроек VSTO для Excel или Word можно программным образом добавлять элементы управления в любой открытый документ или книгу во время выполнения.
 
  Дополнительные сведения см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md) и [элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-## <a name="Shortcut"></a>Контекстные меню
+## <a name="shortcut-menus"></a><a name="Shortcut"></a>Контекстные меню
  Контекстное меню появляется при щелчке правой кнопкой мыши в документе или окне приложения. Можно сделать так, чтобы контекстное меню появлялось после некоторого события, например, когда пользователь щелкает правой кнопкой мыши документ, книгу или элемент управления ведущего приложения. В контекстное меню можно добавить различные команды меню или элементы управления. Создание контекстных меню с помощью XML. При добавлении элемента **ленты (XML)** в проект Office можно добавить XML-код в XML-файл ленты для создания контекстных меню. Дополнительные сведения об использовании XML для создания контекстных меню см. [в разделе инструкции. Добавление команд в контекстные меню](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
 ## <a name="see-also"></a>См. также
