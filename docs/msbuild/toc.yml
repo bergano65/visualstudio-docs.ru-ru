@@ -441,6 +441,8 @@
           href: common-msbuild-project-properties.md
         - name: Общие элементы проектов MSBuild
           href: common-msbuild-project-items.md
+        - name: Общие метаданные элементов MSBuild
+          href: common-msbuild-item-metadata.md
         - name: Справочник по командной строке MSBuild
           href: msbuild-command-line-reference.md
         - name: Файлы TARGETS в MSBuild
