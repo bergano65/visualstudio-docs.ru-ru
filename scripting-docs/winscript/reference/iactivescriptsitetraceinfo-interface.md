@@ -1,5 +1,5 @@
 ---
-title: Интерфейс IActiveScriptSiteTraceInfo | Документация Майкрософт
+title: Интерфейс метод iactivescriptsitetraceinfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,19 +11,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3825ad72c903b9e1f0d19d699e391666d39f876
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32d68b97f3d125793790ddebff0baa276fec6e06
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992309"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144653"
 ---
 # <a name="iactivescriptsitetraceinfo-interface"></a>Интерфейс IActiveScriptSiteTraceInfo
-Предоставляет метод для отправки сведений трассировки скрипта.  
+Предоставляет метод для отправки сведений о трассировке скрипта.  
   
 ## <a name="methods"></a>Методы  
   
-|||  
-|-|-|  
-|Метод|Описание|  
-|[Метод IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)|Отправляет сведения о трассировке, включающий тип события, контекст и оператора скрипта.|
+|Метод|Описание|
+|-|-|
+|[Метод IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)|Отправляет сведения трассировки, включающие тип события, контекст и инструкцию скрипта.|

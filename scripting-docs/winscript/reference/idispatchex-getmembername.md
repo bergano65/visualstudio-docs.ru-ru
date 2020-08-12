@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574110"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144614"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Возвращает имя элемента.  
@@ -38,17 +38,17 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>Параметры  
  `id`  
- Идентифицирует член. Для получения идентификатора диспетчеризации использует `GetDispID` или `GetNextDispID`.  
+ Идентифицирует член. Использует `GetDispID` или `GetNextDispID` для получения идентификатора диспетчеризации.  
   
  `pbstrName`  
- Адрес `BSTR`, который получает имя члена. Вызывающее приложение отвечает за освобождение этого значения.  
+ Адрес объекта `BSTR` , который получает имя члена. Вызывающее приложение отвечает за освобождение этого значения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|||  
+|Значение|Значение|
 |-|-|  
-|`S_OK`|Выполнено.|  
+|`S_OK`|Успех.|  
 |`DISP_E_UNKNOWNNAME`|Неизвестное имя.|  
   
 ## <a name="example"></a>Пример  
@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>См. также:  
-   [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx:: Жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

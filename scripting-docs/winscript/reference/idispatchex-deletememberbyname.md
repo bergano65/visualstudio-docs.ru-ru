@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: cf62972b192d73bd130d15066d79ea70fe24beb8
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576612"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144601"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Удаляет элемент по имени.  
@@ -41,9 +41,9 @@ HRESULT DeleteMemberByName(
  Имя удаляемого элемента.  
   
  `grfdex`  
- Определяет, учитывается ли в имени члена регистр. Это может быть одно из следующих значений:  
+ Определяет, учитывается ли в имени члена регистр. Может иметь одно из следующих значений:  
   
-|значения|Смысл|  
+|Значение|Значение|  
 |-----------|-------------|  
 |фдекснамекасесенситиве|Запрашивает, что поиск имени выполняется с учетом регистра. Может игнорироваться объектом, который не поддерживает поиск с учетом регистра.|  
 |фдекснамекасеинсенситиве|Запрашивает, что поиск имени выполняется без учета регистра. Может игнорироваться объектом, который не поддерживает поиск без учета регистра.|  
@@ -51,13 +51,13 @@ HRESULT DeleteMemberByName(
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|||  
+|Значение|Значение|
 |-|-|  
-|`S_OK`|Выполнено.|  
+|`S_OK`|Успех.|  
 |`S_FALSE`|Элемент существует, но не может быть удален.|  
   
-## <a name="remarks"></a>Заметки  
- Если элемент удален, идентификатор DISPID должен оставаться допустимым для `GetNextDispID`.  
+## <a name="remarks"></a>Remarks  
+ Если элемент удален, идентификатор DISPID должен оставаться допустимым для `GetNextDispID` .  
   
  Если элемент с заданным именем удаляется, а позднее элемент с таким же именем создается повторно, идентификатор DISPID должен быть таким же. (Независимо от того, являются ли члены, отличающиеся только регистром,, зависит от объекта.)  
   
@@ -71,5 +71,5 @@ IDispatchEx *pdex;
 pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)

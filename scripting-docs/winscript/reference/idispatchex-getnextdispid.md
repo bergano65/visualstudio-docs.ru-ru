@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Документация Майкрософт
+title: 'IDispatchEx:: Жетнекстдиспид | Документация Майкрософт'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997356"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144433"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
@@ -41,29 +41,29 @@ HRESULT GetNextDispID(
 ## <a name="parameters"></a>Параметры
 
 `grfdex`\
-Определяет, какой набор элементов для перечисления. Это может быть сочетанием следующих значений:
+Определяет набор элементов для перечисления. Это может быть сочетание следующих значений:
 
 |Значение|Значение|
 |-----------|-------------|
-|fdexEnumDefault|Запросы, что объект перечисляет элементы по умолчанию. Объект может перечислить любой набор элементов.|
-|fdexEnumAll|Запросы, что объект перечисляет все элементы. Объект может перечислить любой набор элементов.|
+|фдексенумдефаулт|Запрашивает, что объект перечисляет элементы по умолчанию. Объекту разрешено перечислить любой набор элементов.|
+|фдексенумалл|Запрашивает, что объект перечисляет все элементы. Объекту разрешено перечислить любой набор элементов.|
 
 `id`\
-Определяет текущий элемент. Getnextdispid — извлекает элемент после этого перечисления. Использует getdispid — или предыдущего вызова getnextdispid — для получения идентификатора. Использует значение DISPID_STARTENUM, чтобы получить первый идентификатор первого элемента.
+Определяет текущий элемент. Жетнекстдиспид извлекает элемент в перечислении после этого. Для получения этого идентификатора использует Жетдиспид или предыдущий вызов Жетнекстдиспид. Использует значение DISPID_STARTENUM для получения первого идентификатора первого элемента.
 
 `pid`\
-Адрес переменной DISPID, получающий идентификатор следующего элемента в перечислении.
+Адрес переменной DISPID, которая получает идентификатор следующего элемента в перечислении.
 
-Если удаляется элемент `DeleteMemberByName` или `DeleteMemberByDispID`, `DISPID` должен быть допустимым для `GetNextDispID`.
+Если элемент удален с помощью `DeleteMemberByName` или `DeleteMemberByDispID` , компонент `DISPID` должен оставаться действительным для `GetNextDispID` .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Возвращает одно из следующих значений:
 
-|||
+|Значение|Значение|
 |-|-|
-|`S_OK`|Выполнено.|
-|`S_FALSE`|Выполнено перечисление.|
+|`S_OK`|Успех.|
+|`S_FALSE`|Перечисление выполнено.|
 
 ## <a name="example"></a>Пример
 
@@ -88,7 +88,7 @@ HRESULT GetNextDispID(
    }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)
 - [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)

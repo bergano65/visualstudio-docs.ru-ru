@@ -13,22 +13,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c20947a125766547565d99c5762c20e23652da1a
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3567a22eac2ad270739e62e0f0fb9914bdf4a9ec
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72561667"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144575"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-Если обработчик сценариев Windows допускает добавление текста исходного кода для процедур, добавляемых в скрипт, он реализует интерфейс `IActiveScriptParseProcedure`. Для интерпретируемых языков сценариев, не имеющих независимых сред разработки, таких как VBScript, это предоставляет альтернативный механизм (отличный от `IActiveScriptParse` или `IPersist` *) для добавления процедур скрипта в пространство имен.  
+Если обработчик сценариев Windows позволяет добавлять текст исходного кода в скрипт, он реализует `IActiveScriptParseProcedure` интерфейс. Для интерпретируемых языков сценариев, не имеющих независимых сред разработки, таких как VBScript, это предоставляет альтернативный механизм (отличный от `IActiveScriptParse` или `IPersist` *) для добавления процедур сценария в пространство имен.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|||  
-|-|-|  
-|Метод|Описание|  
+|Метод|Описание|
+|-|-|
 |[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Анализирует данную процедуру кода и добавляет процедуру в пространство имен.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Интерфейсы активных скриптов](../../winscript/reference/active-script-interfaces.md)

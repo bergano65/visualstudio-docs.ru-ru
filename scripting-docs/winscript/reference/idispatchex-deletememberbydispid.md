@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0c3dbb040e39fd15b77e42b2eaa9fb2cdda0b1b2
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576640"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144640"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Удаляет элемент по DISPID.  
@@ -37,18 +37,18 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Параметры  
  `id`  
- Идентификатор элемента. Для получения идентификатора диспетчеризации использует `GetDispID` или `GetNextDispID`.  
+ Идентификатор элемента. Использует `GetDispID` или `GetNextDispID` для получения идентификатора диспетчеризации.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Возвращает одно из следующих значений:  
   
-|||  
+|Значение|Значение|
 |-|-|  
-|`S_OK`|Выполнено.|  
+|`S_OK`|Успех.|  
 |`S_FALSE`|Элемент существует, но не может быть удален.|  
   
-## <a name="remarks"></a>Примечания  
- Если элемент удален, идентификатор DISPID должен оставаться допустимым для `GetNextDispID`.  
+## <a name="remarks"></a>Remarks  
+ Если элемент удален, идентификатор DISPID должен оставаться допустимым для `GetNextDispID` .  
   
  Если элемент с заданным именем удаляется, а позднее элемент с таким же именем создается повторно, идентификатор DISPID должен быть таким же. (Имена элементов, отличающиеся только регистром, являются "одинаковыми", зависит от объекта.)  
   
@@ -64,7 +64,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## <a name="see-also"></a>См. также:  
-   [интерфейса IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>См. также раздел  
+ [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx:: Жетдиспид](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)
