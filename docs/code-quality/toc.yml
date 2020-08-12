@@ -20,7 +20,7 @@
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Отключить анализ кода
           href: disable-code-analysis.md
-        - name: часто задаваемые вопросы
+        - name: ВОПРОСЫ И ОТВЕТЫ
           href: analyzers-faq.md
         - name: Анализаторы FXCop
           items:
@@ -53,7 +53,7 @@
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Запуск анализа прежних версий вручную
           href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
-        - name: Конфигурация
+        - name: Параметр Configuration
           items:
             - name: Настройка анализа прежних версий
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -748,6 +748,10 @@
                   href: ca2355.md
                 - name: CA2356. Ненадежные данные DataSet или DataTable в графе десериализованных веб-объектов
                   href: ca2356.md
+                - name: 'CA2361. Проверка того, что автоматически сформированный класс, который содержит DataSet.ReadXml(), не используется с ненадежными данными'
+                  href: ca2361.md
+                - name: CA2362. Ненадежные данные DataSet или DataTable в автоматически созданном сериализуемом типе могут быть уязвимыми для атак удаленного выполнения кода
+                  href: ca2362.md
                 - name: 'CA2330. Убедитесь, что в JsonSerializer есть безопасная конфигурация при десериализации'
                   href: ca2330.md
                 - name: "CA3001. Проверьте код на наличие уязвимостей к внедрению кода\_SQL"
