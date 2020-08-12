@@ -8,17 +8,17 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477077"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114187"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Элемент License (схема языкового пакета VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Необязательный параметр. Путь к локализованной версии файла лицензии для расширения.  
+Необязательный элемент. Путь к локализованной версии файла лицензии для расширения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,19 +31,19 @@ ms.locfileid: "77477077"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Description|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|None||  
+|Отсутствуют||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Description|  
+|Элемент|Описание|  
 |-------------|-----------------|  
-|None||  
+|Отсутствуют||  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Description|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Обязательный элемент. Предоставляет корневой элемент для языкового пакета VSIX.|  
   
@@ -51,16 +51,42 @@ ms.locfileid: "77477077"
  Относительный путь к локализованному файлу лицензии, который должен быть отображен.  
   
 ## <a name="remarks"></a>Remarks  
- Если элемент `License` определен, то текст назначенного файла лицензии отображается во время установки и пользователь должен принять условия лицензии, чтобы продолжить.  
+ Если `License` элемент определен, то текст назначенного файла лицензии отображается во время установки, и пользователь должен принять условия лицензии, чтобы продолжить.  
   
 ## <a name="element-information"></a>Сведения об элементе  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    Пространство имен    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   Имя схемы   |                 Схема языкового пакета VSIX                 |
-| Файл проверки |                Всикслангуажепакксчема. xsd                 |
-|  Может быть пустым   |                      Неприменимо                       |
+
+:::row:::
+    :::column:::
+        Пространство имен  
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Имя схемы
+    :::column-end:::
+    :::column:::
+        Схема языкового пакета VSIX
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Файл проверки
+    :::column-end:::
+    :::column:::
+        Всикслангуажепакксчема. xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Может быть пустым
+    :::column-end:::
+    :::column:::
+        Неприменимо
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>См. также:  
  [Справочник по схеме языкового пакета VSX](../extensibility/vsx-language-pack-schema-reference.md)   
