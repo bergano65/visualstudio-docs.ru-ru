@@ -62,7 +62,7 @@
       href: source-editor.md
     - name: Рефакторинг
       href: refactoring.md
-    - name: технология IntelliSense
+    - name: IntelliSense
       href: intellisense.md
     - name: Отображение элементов импорта
       href: show-imports.md
@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: "Отладка пакетов NuGet с помощью Source\_Link"
       href: source-link.md
+- name: Тестирование
+  items:
+    - name: Обзор
+      href: testing.md
 - name: Компилирование и сборка
   items:
     - name: Обзор
@@ -126,7 +130,7 @@
   items:
     - name: Обзор
       href: web-app-deployment.md
-    - name: Опубликовать в Службе приложений Azure
+    - name: Публикация в службу приложений Azure
       href: publish-app-svc.md
     - name: Публикация в папку
       href: publish-folder.md
@@ -182,7 +186,7 @@
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: "Мобильные приложения с\_Xamarin"
       href: /visualstudio/mac/xamarin
-- name: Возможности доступа
+- name: Специальные возможности
   items:
     - name: Обзор
       href: accessibility.md
