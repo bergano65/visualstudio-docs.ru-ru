@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabcd99e4807d60db53487527d9b3a554169c8c4
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 98aa80618f5dd9f7d74d79a5d0dcce0c478cc606
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454154"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214574"
 ---
 # <a name="performance-warnings"></a>предупреждения производительности
 Предупреждения производительности поддерживают высокопроизводительные библиотеки и приложения.
@@ -50,13 +50,14 @@ ms.locfileid: "86454154"
 | [CA1823. Избегайте неиспользуемых частных полей](../code-quality/ca1823.md) | Обнаружены закрытые поля, доступ к которым, судя по всему, не предоставляется в сборке. |
 | [CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | Атрибут NeutralResourcesLanguage сообщает ResourceManager о языке, используемом для отображения независящих от языка и региональных параметров ресурсов для сборки. При этом повышается эффективность поиска первого загружаемого ресурса и может сократиться рабочее множество. |
 | [CA1825: Избегайте выделения массивов нулевой длины](../code-quality/ca1825.md) | Инициализация массива нулевой длины приводит к ненужному выделению памяти. Вместо этого используйте статический выделенный экземпляр пустого массива, вызвав метод <xref:System.Array.Empty%2A?displayProperty=nameWithType> . Выделение памяти является общим для всех вызовов этого метода. |
-| [CA1826: Используйте свойство вместо метода Enumerable в LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное свойство. |
+| [CA1826: Используйте свойство вместо метода Enumerable в LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable> Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное свойство. |
 | [CA1827: Не используйте Count/LongCount, если можно использовать Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>метод или был использован, когда <xref:System.Linq.Enumerable.Any%2A> метод был бы более эффективным. |
 | [CA1828: Не используйте CountAsync/LongCountAsync, если можно использовать AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>метод или был использован, когда <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> метод был бы более эффективным. |
-| [CA1829: Используйте свойство Length/Count вместо метода Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное `Length` или `Count` свойство. |
-| [CA1830: предпочитать строго типизированные перегрузки методов Append и Insert в StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>и <xref:System.Text.StringBuilder.Insert%2A> предоставляют перегрузки для нескольких типов, кроме System. String.  По возможности рекомендуется использовать строго типизированные перегрузки с использованием ToString () и перегрузки на основе строк. |
+| [CA1829: Используйте свойство Length/Count вместо метода Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A> Метод LINQ использовался для типа, который поддерживает эквивалентное, более эффективное `Length` или `Count` свойство. |
+| [CA1830: предпочитать строго типизированные перегрузки методов Append и Insert в StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A> и <xref:System.Text.StringBuilder.Insert%2A> предоставляют перегрузки для нескольких типов, кроме System. String.  По возможности рекомендуется использовать строго типизированные перегрузки с использованием ToString () и перегрузки на основе строк. |
 | [CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки](../code-quality/ca1831.md) | При использовании в строке индексатора Range и неявного присваивания значения Реадонлиспан &lt; &gt; типу Char метод <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части строки. |
 | [CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory](../code-quality/ca1832.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
 | [CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory](../code-quality/ca1833.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.Span%601> <xref:System.Memory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
 | [CA1835: предпочитать перегрузки на основе Мемори' для "ReadAsync" и "WriteAsync"](../code-quality/ca1835.md) | "Stream" имеет перегрузку "ReadAsync", которая принимает " &lt; байт памяти &gt; " в качестве первого аргумента, и перегрузка "WriteAsync", принимающая в &lt; &gt; качестве первого аргумента значение "реадонлимемори Byte". Предпочитать вызов перегрузок на основе памяти, что более эффективно. |
 | [CA1836: предпочитать `IsEmpty` `Count` при доступности](../code-quality/ca1836.md) | Предпочитать `IsEmpty` свойство, которое более эффективно, чем `Count` , `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> или, <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> чтобы определить, содержит ли объект какие-либо элементы или нет. |
+| [CA1838: Избегайте `StringBuilder` параметров для вызовов P/Invoke](../code-quality/ca1838.md) | При упаковке "StringBuilder" всегда создается собственная копия буфера, что приводит к многократному выделению для одной операции упаковки. |
