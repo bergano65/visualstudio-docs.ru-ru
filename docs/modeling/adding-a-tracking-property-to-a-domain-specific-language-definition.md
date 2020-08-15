@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544252"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238248"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение предметно-ориентированного языка
 
@@ -42,11 +42,11 @@ ms.locfileid: "85544252"
 
 - В окне **Свойства** , когда свойство отслеживания находится в состоянии Обновлено пользователем, его значение отображается полужирным шрифтом.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы с этим пошаговым руководством необходимо сначала установить следующие компоненты:
 
-| | |
+| Компонент | Ссылка |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
@@ -718,7 +718,7 @@ ms.locfileid: "85544252"
 
 1. В меню **Построить** выберите пункт **Перестроить решение**.
 
-2. В меню **Отладка** щелкните **Начать отладку**.
+2. В меню **Отладка** выберите команду **Начать отладку**.
 
     Экспериментальная сборка [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] открывает решение для **отладки** , которое содержит пустой тестовый файл.
 
@@ -750,7 +750,7 @@ ms.locfileid: "85544252"
 
 10. Сохраните решение, а затем закройте экспериментальную сборку.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Если планируется использовать несколько свойств отслеживания или реализовать свойства отслеживания более чем в одном DSL, можно создать текстовый шаблон для создания общего кода для поддержки каждого свойства отслеживания. Дополнительные сведения о текстовых шаблонах см. в разделе [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md).
 

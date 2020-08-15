@@ -1,5 +1,5 @@
 ---
-title: Информация о параметрах в Справочнике Наследия2 (ru) Документы Майкрософт
+title: Сведения о параметре в устаревшем языке S2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2c40c9ca5c038a70714545f4133db0c0dd686d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80706750"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237962"
 ---
-# <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
-Информация о параметре IntelliSense — это инструмент, который отображает подпись метода при найме пользователя начального символа списка параметров (обычно открытая скобка) для списка параметров метода. По мере ввода каждого параметра и набраны параметры сепаратора (обычно запятой), набор инструментов обновляется, чтобы показать следующий параметр жирным шрифтом.
+# <a name="parameter-info-in-a-legacy-language-service-2"></a>Сведения о параметрах в устаревшей языковой службе 2
+Сведения о параметрах IntelliSense — это подсказка, которая отображает сигнатуру метода, когда пользователь вводит в список параметров метода начальный символ списка параметров (обычно это открывающая скобка). После ввода каждого параметра и ввода разделителя параметров (обычно это запятая) подсказка обновляется для отображения следующего параметра полужирным шрифтом.
 
- Классы управляемых пакетов (MPF) обеспечивают поддержку для управления набором инструментов Parameter Info. Парсер должен определить запуск параметра, следующий параметр и конечные символы параметра, а также предоставить список подписей метода и связанные с ними параметры.
+ Классы Managed Package Framework (MPF) обеспечивают поддержку управления подсказкой сведений о параметрах. Средство синтаксического анализа должно обнаруживать символы начала, параметры и окончания параметров, а также должен предоставлять список сигнатур методов и связанные с ними параметры.
 
- Устаревшие языковые службы реализуются как часть VSPackage, но новый способ реализации функций языкового сервиса заключается в использовании расширений MEF. Чтобы узнать больше, смотрите [Расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
+ Устаревшие языковые службы реализуются как часть VSPackage, но более новым способом реализации функций языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Мы рекомендуем вам начать использовать новый API редактора как можно скорее. Это повысит производительность вашего языкового сервиса и позволит вам воспользоваться новыми функциями редактора.
+> Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.
 
 ## <a name="implementation"></a>Реализация
- Парсер должен установить <xref:Microsoft.VisualStudio.Package.TokenTriggers> значение триггера устанавливается, когда он находит параметр список начального символа (часто открытый скобки). Он должен <xref:Microsoft.VisualStudio.Package.TokenTriggers> установить спусковой крючок, когда он находит параметр сепаратора (часто запятая). Это приводит к обновлению инструмента Параметр Инфо и отобрадению следующего параметра жирным шрифтом. Парсер должен установить <xref:Microsoft.VisualStudio.Package.TokenTriggers> триггерное значение, когда, если находит конечный символ списка параметров (часто близкий скобки).
+ Средство синтаксического анализа должно установить значение триггера, <xref:Microsoft.VisualStudio.Package.TokenTriggers> если оно находит начальный символ списка параметров (часто это открывающая скобка). Он должен задать <xref:Microsoft.VisualStudio.Package.TokenTriggers> триггер при обнаружении разделителя параметров (часто это запятая). Это приводит к обновлению всплывающей подсказки с сведениями о параметрах и отображению следующего параметра полужирным шрифтом. Синтаксический анализатор должен задать значение триггера, если <xref:Microsoft.VisualStudio.Package.TokenTriggers> если находит символ конца списка параметров (часто это закрывающая круглая скобка).
 
- Значение <xref:Microsoft.VisualStudio.Package.TokenTriggers> триггера инициирует <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> вызов к методу, который, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> парсер метода с причиной <xref:Microsoft.VisualStudio.Package.ParseReason>разбора. Если парсер определяет, что идентификатор перед символом запуска списка параметров является признанным <xref:Microsoft.VisualStudio.Package.AuthoringScope> именем метода, он возвращает список подписей метода сопоставления в объекте. Если какие-либо подписи метода были найдены, инструмент параметр Info отображается с первой подписью в списке. Этот набор инструментов затем обновляется по мере набранной дополнительной подписи. При найме конечного символа списка параметров из представления удаляется набор инструментов «Парамфофоф».
+ <xref:Microsoft.VisualStudio.Package.TokenTriggers>Значение триггера инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> метода, который, в свою очередь, вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средство синтаксического анализа метода с причиной синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> . Если средство синтаксического анализа определяет, что идентификатор перед начальным символом списка параметров является распознаваемым именем метода, он возвращает список совпадающих сигнатур методов в <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекте. При обнаружении подписей методов подсказка сведений о параметрах отображается с первой подписью в списке. Затем эта подсказка обновляется по мере ввода подписи. Если введен конечный символ списка параметров, подсказка сведений о параметрах удаляется из представления.
 
 > [!NOTE]
-> Чтобы убедиться, что набор инструментов Parameter Info правильно отформатирован, необходимо переопределить свойства <xref:Microsoft.VisualStudio.Package.Methods> в классе, чтобы предоставить соответствующие символы. Базовый <xref:Microsoft.VisualStudio.Package.Methods> класс предполагает подпись метода c'-style. Ознакомьтесь с классом, <xref:Microsoft.VisualStudio.Package.Methods> чтобы узнать о том, как это можно сделать.
+> Чтобы убедиться, что подсказка сведений о параметрах правильно отформатирована, необходимо переопределить свойства <xref:Microsoft.VisualStudio.Package.Methods> класса для предоставления соответствующих символов. Базовый <xref:Microsoft.VisualStudio.Package.Methods> класс принимает сигнатуру метода в стиле C#. Сведения о <xref:Microsoft.VisualStudio.Package.Methods> том, как это можно сделать, см. в классе.
 
-## <a name="enabling-support-for-the-parameter-info"></a>Включение поддержки информации о параметрах
- Для поддержки параметра Info tooltips необходимо установить указанный `ShowCompletion` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> параметр. `true` Языковая служба считывает значение этой <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> записи реестра из собственности.
+## <a name="enabling-support-for-the-parameter-info"></a>Включение поддержки сведений о параметрах
+ Для поддержки подсказок сведений о параметрах необходимо задать `ShowCompletion` именованный параметр <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> для `true` . Языковая служба считывает значение этой записи реестра из <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Свойства.
 
- Кроме того, <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> свойство должно `true` быть установлено для отображаемого инструмента Параметр Инфо.
+ Кроме того, для <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> `true` отображения всплывающей подсказки о параметрах для свойства необходимо задать значение.
 
 ### <a name="example"></a>Пример
- Вот упрощенный пример обнаружения символов списка параметров и настройки соответствующих триггеров. Этот пример предназначен только для иллюстративных целей. Предполагается, что ваш сканер `GetNextToken` содержит метод, который идентифицирует и возвращает токены из строки текста. Пример кода просто устанавливает триггеры всякий раз, когда он видит правильный вид символа.
+ Ниже приведен упрощенный пример обнаружения символов в списке параметров и настройки соответствующих триггеров. Этот пример предназначен только для демонстрационных целей. Предполагается, что сканер содержит метод `GetNextToken` , идентифицирующий и возвращающий маркеры из строки текста. Пример кода просто устанавливает триггеры каждый раз, когда он видит правильный тип символа.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -91,17 +91,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Поддержка Параметр Информация ToolTip в Parser
- Класс <xref:Microsoft.VisualStudio.Package.Source> делает некоторые предположения о <xref:Microsoft.VisualStudio.Package.AuthoringScope> содержании <xref:Microsoft.VisualStudio.Package.AuthoringSink> и классах при отображении и обновлении инструмента Parameter Info.
+## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Поддержка всплывающей подсказки о параметрах в средстве синтаксического анализа
+ <xref:Microsoft.VisualStudio.Package.Source>Класс делает некоторые предположения о содержимом <xref:Microsoft.VisualStudio.Package.AuthoringScope> <xref:Microsoft.VisualStudio.Package.AuthoringSink> классов и при отображении и обновлении всплывающей подсказки о параметрах.
 
-- Парсер дается <xref:Microsoft.VisualStudio.Package.ParseReason> при наведанном персонаже стартового списка параметров.
+- Средство синтаксического анализа задается <xref:Microsoft.VisualStudio.Package.ParseReason> при вводе начального символа списка параметров.
 
-- Место, данное <xref:Microsoft.VisualStudio.Package.ParseRequest> в объекте, происходит сразу после начала параметра. Парсер должен собрать подписи всех методологий деклараций, доступных в этой позиции, и хранить их в списке в вашей версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта. Этот список включает имя метода, тип метода (или тип возврата) и список возможных параметров. Позже этот список ищется для подписи или подписи метода для отображения в наборе инструментов Parameter Info.
+- Расположение, заданное в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекте, находится сразу после начального символа списка параметров. Синтаксический анализатор должен собрать сигнатуры всех объявлений методов, доступных в этой позиции, и сохранить их в списке в вашей версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта. Этот список включает имя метода, тип метода (тип возвращаемого значения) и список возможных параметров. В этом списке в дальнейшем выполняется поиск сигнатуры метода или сигнатур для их вывода в подсказке сведений о параметрах.
 
-  Затем парсер должен разобрать линию, <xref:Microsoft.VisualStudio.Package.ParseRequest> указанную объектом, чтобы собрать имя вводимого метода, а также то, как далеко пользователь находится в параметрах ввода. Это достигается путем передачи имени <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> метода <xref:Microsoft.VisualStudio.Package.AuthoringSink> методу на <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> объекте, а затем вызова метода при <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> разборе символа запуска списка параметров, вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> метода при разборе списка параметров следующего символа и, наконец, вызова метода при разборе конечного символа списка параметров. Результаты этих вызовов метода <xref:Microsoft.VisualStudio.Package.Source> используются классом для правильного обновления инструментария Параметр Инфо.
+  Синтаксический анализатор должен проанализировать строку, указанную <xref:Microsoft.VisualStudio.Package.ParseRequest> объектом, чтобы получить имя введенного метода, а также расстояние от пользователя до ввода параметров. Это достигается путем передачи имени метода в <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> метод <xref:Microsoft.VisualStudio.Package.AuthoringSink> объекта и последующего вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> метода при синтаксическом анализе начального символа списка параметров, вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> метода при синтаксическом анализе следующего символа списка параметров и, наконец, вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> метода при синтаксическом анализе конечного символа списка параметров. Результаты этих вызовов методов используются <xref:Microsoft.VisualStudio.Package.Source> классом для обновления подсказки сведений о параметрах соответствующим образом.
 
 ### <a name="example"></a>Пример
- Вот строка текста, в который может ввести пользователь. Цифры ниже линии указывают, какой шаг делается парсером в этом положении в строке (при условии разбора движений слева направо). Предположение здесь состоит в том, что все перед строкой уже было разогнано для сигнатуры метода, включая подпись метода «testfunc».
+ Вот строка текста, которую может ввести пользователь. Числа под строкой указывают, какой шаг выполняется синтаксическим анализатором в этой позиции в строке (при условии, что синтаксический анализ перемещается слева направо). Предполагается, что все, что перед строкой уже проанализировано для сигнатур методов, включая сигнатуру метода "тестфунк".
 
 ```
 testfunc("a string",3);
@@ -109,12 +109,12 @@ testfunc("a string",3);
      12          3 4
 ```
 
- Шаги, которые принимает парсер, изложены ниже:
+ Ниже описаны действия, которые выполняет синтаксический анализатор.
 
-1. Парсер звонит <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> с текстом "testfunc".
+1. Средство синтаксического анализа вызывается <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> с текстом «тестфунк».
 
-2. Парсер вызывает <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
+2. Средство синтаксического анализа вызывает <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> .
 
-3. Парсер вызывает <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
+3. Средство синтаксического анализа вызывает <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> .
 
-4. Парсер вызывает <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Средство синтаксического анализа вызывает <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> .
