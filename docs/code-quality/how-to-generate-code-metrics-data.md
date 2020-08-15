@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078bce0778122b296dcd918d4a9074eed5397f54
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371850"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250540"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -62,7 +62,7 @@ ms.locfileid: "85371850"
 
    В этом примере правило [CA1502](ca1502.md) настраивается на срабатывание, когда сложность сложностью организации циклов метода больше 10.
 
-3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Пример:
+3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Пример.
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ ms.locfileid: "85371850"
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Пакет NuGet Microsoft. CodeAnalysis. Metrics
 
-Самый простой способ создать данные метрик кода из командной строки — установить пакет NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . После установки пакета запустите `msbuild /t:Metrics` из каталога, содержащего файл проекта. Пример:
+Самый простой способ создать данные метрик кода из командной строки — установить пакет NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . После установки пакета запустите `msbuild /t:Metrics` из каталога, содержащего файл проекта. Пример.
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Можно переопределить имя выходного файла, указав `/p:MetricsOutputFile=<filename>` . Вы также можете получить данные метрик кода в [стиле прежних версий](#previous-versions) , указав `/p:LEGACY_CODE_METRICS_MODE=true` . Пример:
+Можно переопределить имя выходного файла, указав `/p:MetricsOutputFile=<filename>` . Вы также можете получить данные метрик кода в [стиле прежних версий](#previous-versions) , указав `/p:LEGACY_CODE_METRICS_MODE=true` . Пример.
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -163,6 +163,7 @@ Build succeeded.
 Созданный выход XML имеет следующий формат:
 
 ::: moniker range=">=vs-2019"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -217,8 +218,10 @@ Build succeeded.
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 ::: moniker range="vs-2017"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -269,6 +272,7 @@ Build succeeded.
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 
 ### <a name="metricsexe"></a>Metrics.exe
@@ -277,7 +281,7 @@ Build succeeded.
 
 1. Клонировать репозиторий [DotNet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Откройте Командная строка разработчика для Visual Studio с правами администратора.
-3. В корне репозитория **Roslyn-Analyzers** выполните следующую команду:`Restore.cmd`
+3. В корне репозитория **Roslyn-Analyzers** выполните следующую команду: `Restore.cmd`
 4. Перейдите в каталог *срк\тулс*.
 5. Выполните следующую команду, чтобы выполнить сборку проекта **метрик. csproj** :
 
@@ -289,7 +293,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Использование Metrics.exe
 
-Чтобы запустить *Metrics.exe*, укажите проект или решение и выходной XML-файл в качестве аргументов. Пример:
+Чтобы запустить *Metrics.exe*, укажите проект или решение и выходной XML-файл в качестве аргументов. Пример.
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -309,7 +313,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Дополнительные сведения см. [в разделе Включение создания метрик кода в устаревшем режиме](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
-### <a name="previous-versions"></a>предыдущих версий
+### <a name="previous-versions"></a>Предыдущие версии
 
 ::: moniker range=">=vs-2019"
 В Visual Studio 2015 имеется средство метрик кода командной строки, которое также называлось *Metrics.exe*. Предыдущая версия средства выполняла двоичный анализ, то есть анализ на основе сборок. Более новая версия средства *Metrics.exe* анализирует исходный код. Поскольку более новая *Metrics.exe* средство является исходным кодом, результаты метрик кода командной строки могут отличаться от результатов, создаваемых интегрированной средой разработки Visual Studio и предыдущими версиями *Metrics.exe*. Начиная с Visual Studio 2019, интегрированная среда разработки Visual Studio анализирует исходный код, подобный средству командной строки, и результаты должны быть одинаковыми.
