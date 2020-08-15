@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44190f8e828f9a971f15b57266978603dcac8139
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 8a6b52a09729cbc76f91eee76f23e652f07c934f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462066"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250521"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Как выполнить анализ кода прежних версий вручную для управляемого кода
+
 Средство анализа кода предоставляет сведения о возможных дефектах в исходном коде. Вы можете выполнять анализ кода автоматически при каждой сборке проекта кода, а также выполнять анализ кода вручную. Правила, проверяемые при выполнении анализа кода, указываются на странице "анализ кода" страниц свойств проекта. Дополнительные сведения см. [в разделе инструкции. Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
 
 ## <a name="to-run-code-analysis-manually"></a>Запуск анализа кода вручную
@@ -31,4 +32,3 @@ set EnableLegacyCodeAnalysis = true
 2. В **Обозреватель решений**щелкните проект.
 
 3. В меню **анализ** выберите пункт **выполнить анализ кода для** *имени проекта*.
-

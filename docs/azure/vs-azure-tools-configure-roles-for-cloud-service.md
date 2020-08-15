@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280867"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250856"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Настройка ролей для облачной службы Azure в Visual Studio
 Облачной службе Azure можно назначить одну или несколько рабочих ролей или веб-ролей. Для каждой роли нужно определить способ настройки, а также настроить способ выполнения. Дополнительные сведения о ролях в облачных службах см. в видео [Введение в облачные службы Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -90,7 +90,7 @@ ms.locfileid: "85280867"
 
     ![Контекстное меню роли в обозревателе решений Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Перейдите на вкладку **Параметры** .
+1. Перейдите на вкладку **Параметры**.
 
     ![Вкладка "Параметры"](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -112,8 +112,8 @@ ms.locfileid: "85280867"
 
 1. В диалоговом окне **Создание строки подключения к хранилищу** выберите один из вариантов для параметра **Подключиться с помощью**. Затем следуйте инструкциям для выбранного варианта.
 
-    - **Эмулятор хранилища Microsoft Azure**. Если вы выбрали этот вариант, остальные параметры в диалоговом окне будут отключены, так как они применяются только к Azure. Нажмите кнопку **ОК**.
-    - **Ваша подписка**. Если выбран этот вариант, воспользуйтесь раскрывающимся списком, чтобы выбрать учетную запись Майкрософт и войти в нее или добавить учетную запись Майкрософт. Выберите подписку и учетную запись хранения Azure. Нажмите кнопку **ОК**.
+    - **Эмулятор хранения Microsoft Azure** — Если выбран этот параметр, остальные параметры в диалоговом окне будут отключены, так как они применяются только к Azure. Щелкните **ОК**.
+    - **Ваша подписка**. Если выбран этот вариант, воспользуйтесь раскрывающимся списком, чтобы выбрать учетную запись Майкрософт и войти в нее или добавить учетную запись Майкрософт. Выберите подписку и учетную запись хранения Azure. Щелкните **ОК**.
     - **Введенные вручную учетные данные**. Введите имя учетной записи хранения, а также первичный или вторичный ключ. Выберите параметр для **подключения** (для большинства сценариев рекомендуется использовать протокол HTTPS). Нажмите кнопку **ОК**.
 
 1. Чтобы удалить строку подключения, выберите ее, а затем нажмите кнопку **Удалить параметр**.
@@ -152,7 +152,7 @@ ms.locfileid: "85280867"
 
     ![Контекстное меню роли в обозревателе решений Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Перейдите на вкладку **Параметры** .
+1. Перейдите на вкладку **Параметры**.
 
     ![Вкладка "Параметры"](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -268,5 +268,5 @@ using (FileStream writeStream = File.Create(filePath))
 
 1. Когда откроется окно проводника Windows, введите в текстовое поле **поиска** запрос "MyLocalStorageTest.txt'' и нажмите клавишу **ВВОД**, чтобы начать поиск.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 Дополнительные сведения о проектах Azure в Visual Studio см. в статье [Настройка проекта облачной службы в Visual Studio](vs-azure-tools-configuring-an-azure-project.md). Дополнительные сведения о схеме облачной службы см. в статье [Справка по схемам Windows Azure](https://msdn.microsoft.com/library/azure/dd179398).
