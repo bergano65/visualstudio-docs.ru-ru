@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283194"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913308"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Начало работы со Средствами Visual Studio для Kubernetes
 
@@ -123,7 +123,7 @@ ms.locfileid: "85283194"
 
 - *azds.yaml*. Содержит параметры для службы Azure Dev Spaces, обеспечивающей быструю итеративную отладку в Службе Azure Kubernetes. Дополнительные сведения см. в [документации по Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Публикация в Службе Azure Kubernetes (AKS)
 
@@ -166,6 +166,16 @@ ms.locfileid: "85283194"
 ::: moniker-end
 
 Поздравляем! Теперь вы можете использовать все возможности Visual Studio для разработки приложений Kubernetes.
+
+## <a name="remove-kubernetes-support"></a>Удаление поддержки Kubernetes
+
+1. В **обозревателе решений** в разделе **Свойства** откройте файл *launchSettings.json*.
+
+1. Удалите раздел **Container in Kubernetes** (Контейнер в Kubernetes).
+
+1. Если потребуется вернуться в Docker Compose, выберите этот проект в **обозревателе решений**, щелкните правой кнопкой мыши и выберите **Назначить запускаемым проектом**.
+
+1. (Необязательно) Можно также удалить другие артефакты, приведенные выше в этой статье, например папку **charts** и файл *azds.yaml*.
 
 ## <a name="next-steps"></a>Следующие шаги
 

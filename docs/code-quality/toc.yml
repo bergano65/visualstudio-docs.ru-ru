@@ -567,6 +567,8 @@
                   href: ca1835.md
                 - name: 'CA1836: предпочитайте IsEmpty вместо Count (при наличии)'
                   href: ca1836.md
+                - name: 'CA1838: не используйте параметры StringBuilder для вызовов P/Invoke'
+                  href: ca1838.md
             - name: 'Предупреждения, связанные с переносимостью'
               items:
                 - name: Обзор

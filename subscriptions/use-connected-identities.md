@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Узнайте, как работать с подключенными учетными записями Майкрософт и удостоверениями Azure Active Directory
-ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233173"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805620"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Использование подключенных удостоверений в подписках Visual Studio
 Если вы получаете подписку Visual Studio на работе или в учебном заведении и используете учетную запись Майкрософт для входа, администратор подписок может подключить учетную запись Майкрософт к удостоверению в Azure Active Directory (Azure AD) организации.  При этом изменится способ получения доступа к некоторым преимуществам, которые входят в состав вашей подписки. 
@@ -38,6 +38,9 @@ ms.locfileid: "80233173"
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>Вопрос: Как можно связаться с администратором?
 Ответ.  Сведения об обращении к администратору см. в [этой статье](contact-my-admin.md).  
+
+### <a name="q-im-an-admin--how-do-i-use-this"></a>Вопрос: Я являюсь администратором.  Как использовать такие удостоверения?
+Ответ.  Реализация подключенных удостоверений — простая задача.  Дополнительные сведения см. в [этой статье](personal-email-sign-ins.md). 
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)

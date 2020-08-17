@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507902"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913272"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Использование Локального процесса с Kubernetes (предварительная версия)
 
@@ -146,7 +146,7 @@ az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 
 ## <a name="using-logging-and-diagnostics"></a>Использование ведения журналов и диагностики
 
-Журналы диагностики находятся в подкаталоге `Azure Dev Spaces` в [каталоге *TEMP* на компьютере разработки][azds-tmp-dir].
+Журналы диагностики находятся в подкаталоге `Local Process with Kubernetes` в каталоге *TEMP* на компьютере разработки. 
 
 ## <a name="remove-the-sample-application-from-your-cluster"></a>Удаление примера приложения из кластера
 
@@ -164,7 +164,6 @@ az aks get-credentials --resource-group MyResourceGroup --name MyAKS
 > [Принцип работы функции "Локальный процесс с Kubernetes"](overview-local-process-kubernetes.md)
 
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
-[azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates
 [azure-cloud-shell]: /azure/cloud-shell/w.md
