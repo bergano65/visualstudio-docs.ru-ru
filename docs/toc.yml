@@ -276,7 +276,7 @@
               href: ide/find-command-box.md
             - name: Поиск в файлах
               href: ide/find-in-files.md
-            - name: Заменить в файлах
+            - name: Замена в файлах
               href: ide/replace-in-files.md
         - name: Кодирование
           items:
@@ -390,6 +390,8 @@
                   href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: Преобразование запроса LINQ в оператор foreach
                   href: ide/reference/convert-linq-to-foreach.md
+                - name: Преобразование typeof в nameof
+                  href: ide/reference/convert-typeof-to-nameof.md
                 - name: Преобразование инструкции switch в выражение switch
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
                 - name: Завершение DateTime и TimeSpan
@@ -430,6 +432,8 @@
                   href: ide/reference/rename.md
                 - name: Упрощение условного выражения
                   href: ide/reference/simplify-conditional-expression.md
+                - name: Упрощение выражения LINQ
+                  href: ide/reference/simplify-linq-expression.md
                 - name: Упрощение интерполяции строки
                   href: ide/reference/simplify-string-interpolation.md
                 - name: Сортировать директивы using
@@ -450,7 +454,7 @@
                   href: ide/reference/wrap-indent-align-refactorings.md
             - name: Пошаговое руководство. Создание кода в результате использования
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-        - name: IntelliSense
+        - name: технология IntelliSense
           items:
             - name: Использование IntelliSense
               href: ide/using-intellisense.md
@@ -814,7 +818,7 @@
         - name: Разработка приложений с поддержкой множества языков
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-- name: Построение
+- name: Сборка
   items:
     - name: Обзор
       displayName: Compile build
@@ -1068,7 +1072,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Среда
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -1078,7 +1082,7 @@
                   href: ide/reference/documents-environment-options-dialog-box.md
                 - name: Модули
                   href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
-                - name: Поиск и замена
+                - name: Найти и заменить
                   href: ide/reference/find-and-replace-environment-options-dialog-box.md
                 - name: Шрифты и цвета
                   href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
@@ -1106,7 +1110,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Проекты и решения
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -1120,13 +1124,13 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Текстовый редактор
               items:
-                - name: Общее
+                - name: Общие сведения
                   href: ide/reference/options-text-editor-general.md
                 - name: Расширение файла
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Все языки
                   items:
-                    - name: Общее
+                    - name: Общие сведения
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Полосы прокрутки
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
@@ -1138,7 +1142,7 @@
                       href: ide/reference/options-text-editor-basic-visual-basic.md
                     - name: Стиль кода
                       href: ide/code-styles-and-code-cleanup.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/visual-basic-specific-intellisense.md
                 - name: C#
                   items:
@@ -1146,7 +1150,7 @@
                       href: ide/reference/options-text-editor-csharp-advanced.md
                     - name: Стиль кода > Форматирование
                       href: ide/reference/options-text-editor-csharp-formatting.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-csharp-intellisense.md
                 - name: C/C++
                   items:
@@ -1166,7 +1170,7 @@
                       href: ide/reference/options-text-editor-fsharp-code-fixes.md
                     - name: CodeLens
                       href: ide/reference/options-text-editor-fsharp-codelens.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-fsharp-intellisense.md
                 - name: HTML (веб-формы)
                   items:
@@ -1182,7 +1186,7 @@
                       href: ide/reference/options-text-editor-javascript-code-validation.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-javascript-formatting.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Выделение
                       href: ide/reference/options-text-editor-javascript-linting.md
@@ -1192,7 +1196,7 @@
                   items:
                     - name: Форматирование
                       href: ide/reference/options-text-editor-usql-formatting.md
-                    - name: IntelliSense
+                    - name: технология IntelliSense
                       href: ide/reference/options-text-editor-usql-intellisense.md
                 - name: XAML
                   items:
@@ -1409,7 +1413,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual Studio\_2017"
+        - name: "Visual\_Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/
