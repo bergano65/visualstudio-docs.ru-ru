@@ -6,18 +6,19 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283337"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247975"
 ---
 # <a name="container-tools-launch-settings"></a>Параметры запуска инструментов для работы с контейнерами
 
 В папке *Properties* проекта ASP.NET Core есть файл launchSettings.json, который содержит параметры, управляющие запуском веб-приложения на компьютере разработки. Подробные сведения об использовании этого файла при разработке проектов ASP.NET см. в статье [Использование нескольких сред в ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). В файле *launchSettings.json* параметры в разделе **Docker** определяют то, как Visual Studio работает с контейнерными приложениями.
 
 ::: moniker range="vs-2017"
+
 ```json
     "Docker": {
       "commandName": "Docker",

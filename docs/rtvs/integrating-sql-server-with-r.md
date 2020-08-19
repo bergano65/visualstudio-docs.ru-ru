@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888446"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144718"
 ---
 # <a name="work-with-sql-server-and-r"></a>Работа с SQL Server и R
 
@@ -24,9 +24,14 @@ ms.locfileid: "72888446"
 > - Visual Studio 2017: запустите установщик Visual Studio и выберите рабочую нагрузку "Хранение и обработка данных", которая включает SQL Server Data Tools.
 > - Visual Studio 2015: следуйте инструкциям в разделе [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-|   |   |
-|---|---|
-| ![Значок кинокамеры для видео](../install/media/video-icon.png "Просмотр видео") | [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) с обзором SQL Server и R (3 мин 3 с). |
+:::row:::
+    :::column:::
+        ![Значок кинокамеры для видео](../install/media/video-icon.png "Просмотр видео")
+    :::column-end:::
+    :::column:::
+        [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) с обзором SQL Server и R (3 мин 3 с).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="create-and-run-sql-queries"></a>Создание и выполнение запросов SQL
 
@@ -57,9 +62,14 @@ RTVS упрощает громоздкий и подверженный ошиб�
 - [Написание и тестирование хранимой процедуры SQL](#write-and-test-a-sql-stored-procedure)
 - [Публикация хранимой процедуры SQL](#publish-a-sql-stored-procedure)
 
-|   |   |
-|---|---|
-| ![Значок кинокамеры для видео](../install/media/video-icon.png "Просмотр видео") | [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) с обзором хранимых процедур SQL Server и R (6 мин 9 с). |
+:::row:::
+    :::column:::
+        ![Значок кинокамеры для видео](../install/media/video-icon.png "Просмотр видео")
+    :::column-end:::
+    :::column:::
+        [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) с обзором хранимых процедур SQL Server и R (6 мин 9 с).
+    :::column-end:::
+:::row-end:::
 
 ### <a name="add-a-database-connection"></a>Добавление подключения к базе данных
 

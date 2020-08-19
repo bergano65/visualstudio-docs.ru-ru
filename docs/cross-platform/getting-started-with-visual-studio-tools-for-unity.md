@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 32766fdf69136f3882186bbcad08aaf83d2e573e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815751"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250092"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Начало работы с инструментами Visual Studio для Unity
 
@@ -66,13 +66,11 @@ ms.locfileid: "85815751"
 
 1. Щелкните **Изменить** (если установлено) или **Установка** (для новой установки) в правом нижнем углу окна установки.
 
-
 #### <a name="check-for-updates-to-visual-studio"></a>Проверка обновления Visual Studio
 
 Рекомендуется проверить наличие обновлений из Visual Studio, чтобы использовать новейшие функции и инструменты. Это не приведет к повреждению вашего проекта Unity.
 
 - [Обновление Visual Studio](../install/update-visual-studio.md)
-
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Настройка Unity для работы с Visual Studio
 
@@ -98,7 +96,6 @@ ms.locfileid: "85815751"
    ![Выберите Visual Studio](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-
 4. Если было выбрано **Обзор...** , необходимо перейти в каталог **Common7/IDE**, находящийся в каталоге установки Visual Studio, и выбрать файл **devenv.exe**. Затем щелкните **Открыть**.
 
    :::moniker range="vs-2017"
@@ -123,7 +120,6 @@ ms.locfileid: "85815751"
 > [!NOTE]
 > Для инструментов Visual Studio для Unity требуется Unity версии не ниже чем 5.2, а также версия Visual Studio, поддерживающая расширения, например Visual Studio Community, Professional, Premium или Enterprise. Чтобы убедиться, что Инструменты Visual Studio для Unity включены в вашу версию Unity, выберите **About Unity** (О программе Unity) в меню **Справка** и найдите текст "Microsoft Visual Studio Tools for Unity enabled" (Инструменты Microsoft Visual Studio для Unity включены) в левом нижнем углу диалогового окна.
 > ![О программе Unity](media/vs-2019/vstu-about-unity.png)
-
 
 ## <a name="next-steps"></a>Следующие шаги
 

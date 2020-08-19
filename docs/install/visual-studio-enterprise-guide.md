@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d223d6e1e6ed3bf4b75b1c66bcc0f9dc897cfed
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434321"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247635"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Руководство по Visual Studio Enterprise
 Начните с этой статьи, если вы хотите сэкономить время, настраивая Visual Studio в корпоративной среде. Это корпоративное руководство содержит советы, которые помогут вам установить и обновить Visual Studio в общих корпоративных сценариях, а также устранить возникающие проблемы. Кроме того, вы узнаете, как сообщить о проблеме, если вам нужна помощь. 
@@ -70,6 +70,3 @@ ms.locfileid: "87434321"
 ## <a name="see-also"></a>См. также 
 
 - [Руководство по повышению производительности при работе в Visual Studio](../ide/productivity-features.md)
-
-
-

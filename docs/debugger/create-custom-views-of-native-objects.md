@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350710"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248061"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Создание пользовательских представлений для объектов C++ в отладчике с помощью платформы Natvis
 
@@ -99,6 +99,7 @@ Natvis использует *NATVIS*-файлы для указания прав
 С помощью пакета VSIX можно устанавливать и регистрировать *NATVIS*-файлы. Независимо от места установки все зарегистрированные *NATVIS*-файлы автоматически выбираются во время отладки.
 
 1. Включите *NATVIS*-файл в пакет VSIX. Например, для следующего файла проекта:
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
@@ -109,6 +110,7 @@ Natvis использует *NATVIS*-файлы для указания прав
    ```
 
 2. Зарегистрируйте *NATVIS*-файл в файле *source.extension.vsixmanifest*.
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
@@ -702,7 +704,7 @@ Natvis использует *NATVIS*-файлы для указания прав
 
  Для элементов `CustomVisualizer` можно использовать атрибуты `Condition`, `IncludeView` и `ExcludeView`.
 
- ## <a name="limitations"></a>Ограничения
+## <a name="limitations"></a>Ограничения
 
 Настройки Natvis работают с классами и структурами, но не с определениями типов.
 

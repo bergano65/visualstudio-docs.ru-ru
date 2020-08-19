@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: d35bfed901dca960ae21b4e2cf2fa75067c1b3ee
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: df702b5d49e5204e65675c1c57d222e490a33824
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715933"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247921"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 
@@ -30,8 +30,8 @@ ms.locfileid: "73715933"
 
 В первую очередь необходимо настроить две вещи:
 
- - Переменные среды
- - URL-адрес приложения для проекта.
+- Переменные среды
+- URL-адрес приложения для проекта.
 
 ## <a name="configure-environment-variables"></a>Настройка переменных среды
 

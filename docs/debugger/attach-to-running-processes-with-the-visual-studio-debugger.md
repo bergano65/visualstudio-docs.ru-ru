@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281010"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249209"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 
@@ -199,15 +199,13 @@ ms.locfileid: "85281010"
         ![Подключение к удаленной системе](../debugger/media/connect-remote-system.png "Подключение к удаленной системе")
         1. Выберите запущенный контейнер для подключения после успешного подключения к SSH или управляющей программе и нажмите кнопку **ОК**.
 
-    
     1. ***Назначение целевого объекта удаленному контейнеру, выполняющему процесс, с помощью управляющей программы [Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
         1. Укажите адрес управляющей программы (т. е. с помощью TCP, IP и т. д.) в разделе **Узел Docker (необязательно)** и щелкните ссылку "Обновить".
         1. Выберите запущенный контейнер для присоединения после успешного подключения к управляющей программе и нажмите кнопку **ОК**.
 
 4. Выберите соответствующий процесс контейнера из списка **Доступные процессы**, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C# в Visual Studio.
 
-    ![Меню присоединения Docker](../debugger/media/docker-attach-complete.png "Меню присоединения Docker в Linux")
-    
+    ![Меню присоединения Docker](../debugger/media/docker-attach-complete.png "Меню присоединения Docker в Linux")    
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Присоединение к процессу, выполняющемуся в контейнере Docker в Windows
 
@@ -238,10 +236,8 @@ ms.locfileid: "85281010"
 4. Выберите соответствующий процесс контейнера из списка **Доступные процессы**, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C#.
 
     ![Меню присоединения Docker](../debugger/media/docker-attach-complete-windows.png "Меню присоединения Docker в Windows")
-    
 
 5.  Выберите соответствующий процесс контейнера из списка доступных процессов, а затем выберите **Присоединить**, чтобы начать отладку процесса контейнера C#.
-
 
 ::: moniker-end
 

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543929"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249258"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Учебник. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
@@ -160,7 +160,6 @@ ms.locfileid: "80543929"
 Этот код использует некоторые функции API Windows для создания объекта синтеза речи и передает ему некоторый текст для озвучивания. (Дополнительные сведения об использовании `SpeechSynthesis` см. в статье <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Запуск приложения
-
 
 ::: moniker range="vs-2017"
 Пришло время для построения, развертывания и запуска UWP-приложения "Hello World", чтобы посмотреть, как оно выглядит и как оно звучит. Ниже описывается порядок действий.

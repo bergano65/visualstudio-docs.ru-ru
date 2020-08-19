@@ -8,14 +8,14 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969462"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238729"
 ---
-# <a name="code-snippets"></a>Фрагменты кода
+# <a name="code-snippets-for-r"></a>Фрагменты кода для R
 
 Фрагменты кода в Visual Studio позволяют быстро вставлять блоки кода произвольной длины, помогая избежать повторного ввода одинакового кода снова и снова. В инструментах R для Visual Studio (RTVS) имеется множество полезных фрагментов кода R, которые дополняют коллекцию фрагментов кода Visual Studio.
 

@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330447"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247794"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Анализ использования памяти с помощью средства выделения объектов .NET
 
@@ -118,11 +118,11 @@ ms.locfileid: "85330447"
 - В столбце **Имя** отображаются процессы в качестве узлов верхнего уровня. Под процессами располагаются модули, а под ними — функции.
 - В этих столбцах приводятся те же сведения, что и в представлениях **Выделение** и **Дерево вызовов**:
 
-   - **Total (Allocations)** (Всего (выделения));
-   - **Self (Allocations)** (Собственные (выделения));
-   - **Общий размер (байт)** ;
-   - **Self-Size (Bytes)** (Собственный размер (байт));
-   - **Average Size (Bytes)** (Средний размер (байт)).
+  - **Total (Allocations)** (Всего (выделения));
+  - **Self (Allocations)** (Собственные (выделения));
+  - **Общий размер (байт)** ;
+  - **Self-Size (Bytes)** (Собственный размер (байт));
+  - **Average Size (Bytes)** (Средний размер (байт)).
 
 ### <a name="collection"></a>Collection
 

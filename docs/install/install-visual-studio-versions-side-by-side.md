@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234995"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250252"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Параллельная установка версий Visual Studio
 
@@ -57,9 +57,10 @@ Visual Studio можно установить на компьютер, на ко
    * vs_professional.exe для Visual Studio Professional
    * vs_enterprise.exe для Visual Studio Enterprise
 
-```
-vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
-```
+   ```
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+   ```
+
 4. Следуйте указаниям в диалоговых окнах установщика, чтобы выбрать компоненты для установки. Дополнительные сведения см. в разделе [Установка Visual Studio](install-visual-studio.md#step-4---choose-workloads).
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Версии платформы .NET Framework и установка нескольких версий на один компьютер

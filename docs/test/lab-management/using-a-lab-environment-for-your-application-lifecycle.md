@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286834"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144692"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Использование лабораторной среды для DevOps
 
@@ -34,9 +34,14 @@ ms.locfileid: "85286834"
 |![Облачная лабораторная среда](../media/topology_cloud.png)| Эта лабораторная среда предоставляет возможности и функции, аналогичные _топологии серверов_, но устраняет потребность в запуске физических компьютеров или виртуальных машин в локальной среде, что сокращает время настройки, упрощает обслуживание и минимизирует стоимость. Настройка нескольких веб-сайтов и виртуальных машин вместе с пользовательскими сетевыми компонентами осуществляется быстро и просто в облачной среде, такой как Microsoft Azure.|
 |![Лабораторная среда "клиент-сервер"](../media/topology_clientserver.png)| Эта лабораторная среда основана на *топологии "клиент-сервер"* , которая часто используется для тестирования приложений, имеющих серверные и клиентские компоненты. В топологии "клиент-сервер" все клиентские и серверные компьютеры, используемые для тестирования приложения, находятся в лабораторной среде. При использовании этой топологии можно собирать данные тестирования с каждого компьютера, влияющего на тесты.|
 
-| | |
-|---|---|
-| ![Значок кинокамеры для видео](../../install/media/video-icon.png) | [Просмотреть видео](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) по управлению лабораторными средами для тестирования. |
+:::row:::
+    :::column:::
+        ![Значок кинокамеры для видео](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [Просмотреть видео](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) по управлению лабораторными средами для тестирования.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Использование облака с функциями сборок и выпусков в Azure Pipelines или Team Foundation Server
 
