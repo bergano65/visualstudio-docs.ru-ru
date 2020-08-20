@@ -1,45 +1,53 @@
 ---
 title: Добавление службы хранилища Azure с помощью подключенных служб | Документация Майкрософт
-description: Добавление хранилища Azure в приложение с помощью диалогового окна "Добавление подключенных служб" в Visual Studio
+description: Добавление в приложение зависимости службы хранилища Azure с помощью Visual Studio Подключенные службы
 author: ghogen
 manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
-ms.date: 03/26/2017
+ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280688"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639458"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Добавление хранилища Azure с использованием подключенных служб Visual Studio
 
-В Visual Studio с помощью диалогового окна **Add Connected Services** (Добавление подключенных служб) можно подключить любое из следующих хранилищ Azure:
+С помощью Visual Studio вы можете подключить к службе хранилища Azure любой из следующих компонентов, используя функцию **подключенные службы** :
 
-- облачную службу C#;
-- серверную мобильную службу .NET;
-- веб-сайт или службу ASP.NET;
-- службу ASP.NET Core;
-- службу веб-заданий Azure.
+- .NET Framework консольное приложение
+- ASP.NET MVC (.NET Framework) 
+- ASP.NET Core
+- .NET Core (включая консольное приложение, WPF, Windows Forms, библиотеку классов)
+- Рабочая роль .NET Core
+- Функции Azure
+- Приложение универсальная платформа Windows
+- Xamarin
+- Cordova
 
 Подключенные службы добавляют необходимые ссылки и код подключения в проект и вносят соответствующие изменения в файлы конфигурации.
 
-По завершении в диалоговом окне **Add Connected Services** (Добавление подключенных служб) автоматически отображается документация с подробным описанием действий, необходимых для начала работы с хранилищем BLOB-объектов, очередями и таблицами.
-
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Подключенные службы в Visual Studio для Mac](/visualstudio/mac/connected-services).
+## <a name="prerequisites"></a>Предварительные требования
 
-## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>Подключение к хранилищу Azure с помощью диалогового окна подключенных служб
+- Visual Studio с установленной рабочей нагрузкой Azure.
+- Проект одного из поддерживаемых типов
+
+## <a name="connect-to-azure-storage-using-connected-services"></a>Подключение к службе хранилища Azure с помощью Подключенные службы
+
+::: moniker range="vs-2017"
 
 1. Откройте проект в Visual Studio.
 
-1. В **обозревателе решений** щелкните правой кнопкой мыши узел **Подключенные службы** и выберите в контекстном меню пункт **Добавить подключенную службу**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
 
-    ![Добавление подключенной службы Azure](./media/vs-azure-tools-connected-services-storage/IC796702.png)
+    ![Добавление подключенной службы Azure](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
 1. На странице **Подключенные службы** выберите элемент **Облачное хранилище в службе хранения Azure**.
 
@@ -62,19 +70,55 @@ ms.locfileid: "85280688"
    1. Когда отобразится диалоговое окно **Служба хранилища Azure**, новая учетная запись хранения появится в списке. Выберите в списке новую учетную запись хранения и нажмите кнопку **Добавить**.
 
 1. Подключенная служба хранилища появится в узле **Веб-ссылки** проекта.
+:::moniker-end
 
-## <a name="how-your-project-is-modified"></a>Какие изменения произойдут в проекте
+:::moniker range=">=vs-2019"
 
-Когда вы закроете диалоговое окно, Visual Studio добавит ссылки и внесет изменения в определенные файлы конфигурации. Конкретные изменения зависят от типа проекта.
+1. Откройте проект в Visual Studio.
 
-- Проекты ASP.NET: ознакомьтесь со статьей [Приступая к работе с хранилищем BLOB-объектов Azure и подключенными службами Visual Studio (ASP.NET)](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs).
-- Проекты ASP.NET Core: ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (ASP.NET 5)](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs).
-- Проекты облачной службы (веб-роли и рабочие роли): ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (проектами облачных служб)](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs).
-- Проекты веб-заданий: ознакомьтесь со статьей [Что произошло с моим проектом веб-заданий (подключенными к службе хранилища Azure службами Visual Studio)?](/azure/visual-studio/vs-storage-webjobs-what-happened)
+1. В **Обозреватель решений**щелкните правой кнопкой мыши узел **подключенные службы** и в контекстном меню выберите команду **Добавить подключенную службу**.
+
+    ![Добавление подключенной службы Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
+
+1. На вкладке **подключенные службы** выберите значок + для **зависимости службы**.
+
+    ![Добавить зависимость службы](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+
+1. На странице **Добавление зависимости** выберите **хранилище Azure**.
+
+    ![Добавление учетной записи хранения Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
+
+    Если вы еще не вошли в систему, войдите в свою учетную запись Azure. Если у вас нет учетной записи Azure, вы можете зарегистрироваться для получения [бесплатной пробной версии](https://azure.microsoft.com/account/free).
+
+1. На экране **Настройка службы хранилища Azure** выберите существующую учетную запись хранения и нажмите кнопку **Далее**.
+
+    Если вам нужно создать учетную запись хранения, перейдите к следующему шагу. В противном случае переходите к шагу 6.
+
+    ![Добавление существующей учетной записи хранения в проект](./media/vs-azure-tools-connected-services-storage/vs-2019/select-azure-storage-account.png)
+
+1. Чтобы создать учетную запись хранения, сделайте следующее:
+
+   1. Выберите **создать учетную запись хранения** в нижней части диалогового окна.
+
+   1. Заполните службу **хранилища Azure: Создайте** диалоговое окно и нажмите кнопку **создать**.
+
+       ![Новая учетная запись хранения Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
+
+   1. Когда отобразится диалоговое окно **Служба хранилища Azure**, новая учетная запись хранения появится в списке. Выберите новую учетную запись хранения в списке и нажмите кнопку **Далее**.
+
+1. Введите имя строки подключения и укажите, должна ли строка подключения храниться в локальном файле секретов или в [Azure Key Vault](/azure/key-vault).
+
+   ![Укажите строку подключения](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
+
+1. На экране **Сводка изменений** отображаются все изменения, которые будут внесены в проект, если вы завершите процесс. Если изменения выглядят нормально, нажмите кнопку **Готово**.
+
+   ![Сводка изменений](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
+
+1. Подключенная служба хранилища появится в узле **Веб-ссылки** проекта.
+:::moniker-end
 
 ## <a name="see-also"></a>См. также
 
-- [Форум MSDN: хранилище Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Блог команды разработчиков службы хранилища Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Форум службы хранилища Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Документация по службе хранилища Azure](/azure/storage/)
 - [Подключенные службы ( Visual Studio для Mac)](/visualstudio/mac/connected-services)
