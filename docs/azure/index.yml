@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 title: Разработка в Azure с помощью Visual Studio
 metadata:
-  title: разработка Azure.
+  title: Разработка в Azure
   description: Руководства и концептуальные статьи о подключении приложений и служб к Azure и разработке служб Azure.
   author: ghogen
   manager: jillfra
@@ -10,14 +10,14 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
+  ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "76022300"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "88639332"
 landingContent:
-- title: Развертывание в Службе приложений Azure
+- title: Развертывание в службе приложений Azure
   linkLists:
   - linkListType: tutorial
     links:
@@ -71,20 +71,20 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Хранилище Azure
-      url: vs-azure-tools-connected-services-storage.md
-    - text: Azure Key Vault
-      url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure Active Directory
       url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - text: Cognitive Services. Вызов Анализа текста
-      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-    - text: Cognitive Services. Поиск новостей Bing
-      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-    - text: Cognitive Services. API распознавания лиц
-      url: /azure/cognitive-services/face/vs-face-connected-service
-    - text: Cognitive Services. Компьютерное зрение
-      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+    - text: Кэш Redis для Azure
+      url: azure-cache-for-redis-add-connected-service.md
+    - text: Azure CosmosDB
+      url: azure-cosmosdb-add-connected-service.md
+    - text: Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure SignalR
+      url: azure-signalr-add-connected-service.md
+    - text: База данных SQL Azure
+      url: azure-sql-database-add-connected-service.md
+    - text: Хранилище Azure
+      url: vs-azure-tools-connected-services-storage.md
 - title: Oблачныe службы Azure
   linkLists:
   - linkListType: how-to-guide
