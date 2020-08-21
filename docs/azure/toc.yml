@@ -17,12 +17,22 @@
 - name: Подключение к службам Azure
   expanded: false
   items:
-    - name: Добавление Службы хранилища Azure
-      href: vs-azure-tools-connected-services-storage.md
-    - name: Добавление Azure Key Vault
-      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Добавление Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Добавление Azure App Insights
+      href: azure-app-insights-add-connected-service.md
+    - name: Добавление Кэша Azure для Redis
+      href: azure-cache-for-redis-add-connected-service.md
+    - name: Добавление Azure CosmosDB
+      href: azure-cosmosdb-add-connected-service.md
+    - name: Добавление Azure Key Vault
+      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Добавление Azure SignalR
+      href: azure-signalr-add-connected-service.md
+    - name: Добавление Базы данных SQL Azure
+      href: azure-sql-database-add-connected-service.md
+    - name: Добавление учетной записи хранения Azure
+      href: vs-azure-tools-connected-services-storage.md
 - name: Разработка облачных служб Azure
   expanded: false
   items:

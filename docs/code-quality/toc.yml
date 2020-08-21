@@ -53,7 +53,7 @@
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Запуск анализа прежних версий вручную
           href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
-        - name: Конфигурация
+        - name: Параметр Configuration
           items:
             - name: Настройка анализа прежних версий
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -991,3 +991,5 @@
                   displayName: publish warnings
                 - name: 'IL3000: не используйте путь к файлу сборки при публикации в виде одного файла'
                   href: il3000.md
+                - name: 'IL3001: не используйте путь к файлу сборки при публикации в виде одного файла'
+                  href: il3001.md
