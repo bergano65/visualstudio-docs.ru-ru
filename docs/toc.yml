@@ -902,7 +902,7 @@
     - name: Настройка интегрированной среды разработки
       displayName: Personalize
       href: ide/personalizing-the-visual-studio-ide.md
-    - name: 'Краткое руководство: Выберите цвета темы и текста для персонализации'
+    - name: Персонализация цветовой темы и текста
       href: ide/quickstart-personalize-the-ide.md
     - name: Параметры среды
       displayName: profiles
@@ -1218,7 +1218,7 @@
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: Конструктор XAML
               href: ide/reference/xaml-designer.md
-        - name: окно выходных данных
+        - name: Окно вывода
           href: ide/reference/output-window.md
         - name: Свойства проекта
           items:
@@ -1409,6 +1409,8 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Новые возможности Visual Studio 2019
       href: ide/whats-new-visual-studio-2019.md
+    - name: Новые возможности в документации по Visual Studio
+      href: ide/whats-new-visual-studio-docs.md
     - name: Заметки о выпуске и требования к системе
       items:
         - name: График выпуска
