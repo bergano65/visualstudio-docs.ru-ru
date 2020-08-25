@@ -1,5 +1,5 @@
 ---
-title: Разработка решений Office и SharePoint в Visual Studio
+title: Разработка приложений для Office и SharePoint в Visual Studio
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,17 +21,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970462"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800948"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка решений Office и SharePoint в Visual Studio
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка приложений для Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.
 
- В этом разделе.
+ В этом разделе:
 
 - [Создание надстроек для Office и SharePoint](#Apps)
 
@@ -39,64 +39,64 @@ ms.locfileid: "62970462"
 
 - [Создание решения SharePoint](#Solutions)
 
-## <a name="Apps"></a> Создание надстроек для Office и SharePoint
+## <a name="create-add-ins-for-office-and-sharepoint"></a><a name="Apps"></a> Создание надстроек для Office и SharePoint
  В Office 2013 и SharePoint 2013 появилась новая модель надстроек, которая помогает создавать, распространять и продавать надстройки, расширяющие возможности Office и SharePoint.  Эти надстройки могут выполняться в Office или SharePoint Online, и пользователи могут работать с ними на разных устройствах.
 
- Узнайте, как использовать новый [модель надстроек Office](/office/dev/add-ins/overview/office-add-ins) для расширения возможностей Office для пользователей.
+ Узнайте, как использовать новую [модель надстроек Office](/office/dev/add-ins/overview/office-add-ins) для расширения возможностей Office для пользователей.
 
- Эти надстройки требуют небольших ресурсов по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  Для начала используйте инструменты разработчика Office для Visual Studio или облегченный набор веб-средств разработки для Office 365 (кодовое имя Napa), который позволяет создавать проекты, писать код и запускать надстройки в браузере.
+ Эти надстройки имеют небольшие объемы по сравнению с надстройками и решениями VSTO, и их можно создавать с помощью практически любой технологии веб-программирования, такой как HTML5, JavaScript, CSS3 и XML.  Чтобы приступить к работе, используйте Office Developer Tools в Visual Studio, который позволяет создавать проекты, писать код и запускать надстройки в браузере.
 
- ![Приложения для Office и SharePoint концептуальной модели](../vsto/media/officeandsharepointapps2015.png "приложений для Office и SharePoint концептуальной модели")
+ ![Приложения для Office и концептуальной модели SharePoint](../vsto/media/officeandsharepointapps2015.png "Приложения для Office и концептуальной модели SharePoint")
 
 ### <a name="build-an-office-add-in"></a>Создание надстройки Office
- Чтобы расширить функциональные возможности Office, создайте надстройку Office. По сути, это веб-страницы, размещенной в приложении Office, например Excel, Word, Outlook и PowerPoint. Ваше приложение может расширять функциональные возможности документов, таблиц, сообщений электронной почты, встреч, презентаций или проектов.
+ Чтобы расширить функциональные возможности Office, создайте надстройку Office. По сути, это веб-страница, размещенная в приложении Office, например Excel, Word, Outlook и PowerPoint. Ваше приложение может расширять функциональные возможности документов, таблиц, сообщений электронной почты, встреч, презентаций или проектов.
 
  Вы можете продавать приложение в Магазине Office.  [Магазин Office](https://store.office.com/) упрощает получение прибыли от надстроек, управление обновлениями и отслеживание телеметрических данных. Приложение также можно опубликовать для пользователей посредством каталога приложений в SharePoint или на сервере Exchange Server.
 
  Следующее приложение для Office показывает данные листа на карте Bing.
 
- ![Приложения содержимого для Office](../vsto/media/appforoffice.png "содержимого приложения для Office")
+ ![Приложения содержимого для Office](../vsto/media/appforoffice.png "Приложения содержимого для Office")
 
  **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
 |Узнайте больше о надстройках Office, а затем создайте собственную надстройку.|[Надстройки Office](/office/dev/add-ins/publish/publish)|
-|Сравните различные способы расширения возможностей Office и решите, следует ли использовать приложение или надстройку Office.|[Схема действий для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Сравните различные способы расширения возможностей Office и решите, следует ли использовать приложение или надстройку Office.|[План для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Создание надстройки SharePoint
- Чтобы расширить возможности SharePoint для пользователей, создайте надстройку SharePoint. Это по сути небольших, простых в использовании автономные приложения, решающие определенные задачи для конкретных бизнес-пользователей.
+ Чтобы расширить возможности SharePoint для пользователей, создайте надстройку SharePoint. Это, по сути, небольшое, простое в использовании автономное приложение, которое решает необходимость пользователей или бизнеса.
 
  Вы можете продавать приложение для SharePoint через [Магазин Office](https://store.office.com/). Надстройку также можно опубликовать для пользователей через каталог надстроек в SharePoint.  Владельцы сайтов могут устанавливать, обновлять и удалять вашу надстройку на своих сайтах SharePoint, не прибегая к помощи администратора фермы серверов или семейства веб-сайтов.
 
- Ниже приведен пример приложения для SharePoint, которое помогает пользователям управлять деловыми контактами.
+ Ниже приведен пример приложения для SharePoint, помогающего пользователям управлять бизнес-контактами.
 
- ![Бизнес-приложение диспетчера контактов для SharePoint](../vsto/media/appforsharepoint.png "бизнес-приложение диспетчера контактов для SharePoint")
+ ![Приложение Диспетчера контактов для SharePoint](../vsto/media/appforsharepoint.png "Приложение Диспетчера контактов для SharePoint")
 
  **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
 |Узнайте больше о надстройках SharePoint, а затем создайте собственную надстройку.|[Надстройки SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|
-|Сравните надстройки SharePoint с традиционными решениями SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
-|Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбор между надстроек SharePoint и решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
+|Сравните надстройки SharePoint с традиционными решениями SharePoint.|[Надстройки SharePoint по сравнению с решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
+|Решите, следует ли создать надстройку SharePoint или решение SharePoint.|[Выбор между надстройками SharePoint и решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-## <a name="Add-ins"></a> Создание надстройки VSTO
- Создание надстройки VSTO для Office 2007 или Office 2010, или для расширения Office 2013 и Office 2016, недоступные в надстройках Office. Надстройки VSTO выполняются только на настольных компьютерах. Пользователям нужно устанавливать надстройки VSTO, поэтому они обычно сложнее в развертывании и поддержке.  Однако надстройку VSTO можно теснее интегрировать с Office. Например, она может добавлять вкладки и элементы управления на ленту Office и выполнять расширенные задачи автоматизации, такие как слияние документов или изменение диаграмм. Вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами Office.
+## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Создание надстройки VSTO
+ Создайте надстройку VSTO для Office 2007 или Office 2010 или расширьте Office 2013 и Office 2016, помимо возможностей надстроек Office. надстройки VSTO запускаются только на рабочем столе. Пользователям необходимо устанавливать надстройки VSTO, поэтому они, как правило, сложнее в развертывании и поддержке.  Однако надстройку VSTO можно теснее интегрировать с Office. Например, она может добавлять вкладки и элементы управления на ленту Office и выполнять расширенные задачи автоматизации, такие как слияние документов или изменение диаграмм. Вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами Office.
 
- Ниже приведен пример, какие надстройки VSTO можно сделать. Эта надстройка VSTO добавляет элементы управления ленты, настраиваемую область задач и диалоговое окно в PowerPoint.
+ Ниже приведен пример того, что может сделать Надстройка VSTO. Эта надстройка VSTO добавляет элементы управления ленты, настраиваемую область задач и диалоговое окно в PowerPoint.
 
- ![Решения PowerPoint надстройки](../vsto/media/powerpointaddin.png "решения-надстройки PowerPoint")
+ ![Решение надстройки PowerPoint](../vsto/media/powerpointaddin.png "Надстройка PowerPoint")
 
  **Дополнительные сведения**
 
 |Кому|Чтение|
 |--------|----------|
-|Сравните различные способы расширения возможностей Office и решите, следует ли использовать надстройку VSTO или надстройку Office.|[Схема действий для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Сравните различные способы расширения возможностей Office и решите, следует ли использовать надстройку VSTO или надстройку Office.|[План для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Создание надстройки VSTO.|[Создание настройки VSTO с помощью Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-## <a name="Solutions"></a> Создание решения SharePoint
- Создайте решение SharePoint для работы с SharePoint Foundation 2010 и SharePoint Server 2010 или реализующее SharePoint 2013 и SharePoint 2016 в за рамки возможностей с помощью надстройки SharePoint.
+## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Создание решения SharePoint
+ Создание решения SharePoint для SharePoint Foundation 2010 и SharePoint Server 2010 или расширение SharePoint 2013 и SharePoint 2016 способами, помимо возможностей надстройки SharePoint.
 
  Для решений SharePoint требуется локальная ферма серверов SharePoint. Администраторы должны устанавливать их, а так как решения выполняются в SharePoint, они могут повлиять на производительность сервера. Однако решения обеспечивают более широкий доступ к объектам SharePoint. Кроме того, при создании решения SharePoint вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами SharePoint.
 
@@ -104,5 +104,5 @@ ms.locfileid: "62970462"
 
 |Кому|См.|
 |--------|---------|
-|Сравните решения SharePoint с надстройками SharePoint.|[Сравнение надстроек SharePoint с решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
+|Сравните решения SharePoint с надстройками SharePoint.|[Надстройки SharePoint по сравнению с решениями SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Создайте решение SharePoint.|[Создание решений SharePoint](../sharepoint/create-sharepoint-solutions.md)|

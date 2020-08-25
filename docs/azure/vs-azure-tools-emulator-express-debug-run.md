@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280587"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800376"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Использование Emulator Express для запуска и отладки облачной службы Azure на локальном компьютере
 Emulator Express позволяет протестировать и отладить облачную службу, не запуская Visual Studio от имени администратора. В зависимости от требований облачной службы параметры проекта можно задать таким образом, чтобы использовался либо Emulator Express, либо полный эмулятор. Дополнительные сведения о полном эмуляторе см. в статье [Запуск приложения Azure в эмуляторе вычислений](/azure/storage/common/storage-use-emulator).
@@ -23,7 +23,7 @@ Emulator Express позволяет протестировать и отлади
 
 1. Создайте или откройте проект облачной службы Azure в среде Visual Studio.
 
-1. В **обозревателе решений** щелкните проект правой кнопкой мыши и в контекстном меню выберите пункт **Свойства**.
+1. В обозреватель решений щелкните правой кнопкой мыши проект и в контекстном меню выберите пункт **Свойства**.
 
 1. На странице свойств проекта выберите вкладку **Веб**.
 

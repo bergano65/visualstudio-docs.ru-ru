@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282739"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800636"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Подключение к данным в базе данных Access
 
@@ -29,7 +29,7 @@ ms.locfileid: "85282739"
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Создание набора данных для ACCDB-файла
 
-Подключитесь к базам данных, созданным с помощью Office 365, Access 2013, Access 2010 или Access 2007, с помощью следующей процедуры.
+Подключитесь к базам данных, созданным с помощью Microsoft 365, доступа 2013, Access 2010 или Access 2007, с помощью следующей процедуры.
 
 1. Откройте проект приложения Windows Forms или WPF в Visual Studio.
 
@@ -115,7 +115,7 @@ ms.locfileid: "85282739"
 
 - Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> событие или таблиц данных в наборе данных (см. раздел [Проверка данных в наборах](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление подключений](../data-tools/add-new-connections.md)
 - [Общие сведения о привязке данных в WPF](/dotnet/framework/wpf/data/data-binding-overview)

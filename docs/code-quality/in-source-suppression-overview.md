@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706494"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800857"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Подавлять предупреждения анализа кода
 
@@ -35,7 +35,7 @@ ms.locfileid: "88706494"
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Если вы переносите проект в Visual Studio 2017, вы можете внезапно столкнуться с большим количеством предупреждений анализа кода. Если вы не готовы устранить предупреждения, их можно отключить, выбрав **анализировать**  >  **выполнение анализа кода и подавлять активные проблемы**.
+> Если вы переносите проект в Visual Studio 2017, вы можете внезапно столкнуться с большим количеством предупреждений анализа кода. Если вы не готовы устранить предупреждения, их можно отключить, выбрав пункт **анализ**  >  **выполнения анализа кода и подавлять активные проблемы**.
 >
 > ![Выполнение анализа кода и отключение проблем в Visual Studio](media/suppress-active-issues.png)
 
@@ -44,13 +44,13 @@ ms.locfileid: "88706494"
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Если вы переносите проект в Visual Studio 2019, вы можете внезапно столкнуться с большим количеством предупреждений анализа кода. Если вы не готовы устранить предупреждения, их можно отключить, выбрав **анализировать**  >  **сборку и подавлять активные проблемы**.
+> Если вы переносите проект в Visual Studio 2019, вы можете внезапно столкнуться с большим количеством предупреждений анализа кода. Если вы не готовы устранить предупреждения, их можно отключить, выбрав пункт **анализировать**  >  **сборку и подавлять активные проблемы**.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage - атрибут
 
-При нажатии кнопки **подавлять** в контекстном меню или щелчке правой кнопкой мыши предупреждения анализа кода в **Список ошибок** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут добавляется либо в код, либо в глобальный файл подавления проекта.
+При выборе параметра **подавлять** в контексте или щелчке правой кнопкой мыши в меню предупреждения анализа кода в **список ошибоке** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут добавляется либо в код, либо в глобальный файл подавления проекта.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>Атрибут имеет следующий формат:
 
@@ -195,7 +195,7 @@ dotnet_diagnostic.CS1591.severity = none
 > [!NOTE]
 > Анализ кода игнорируется `GeneratedCodeAttribute` при применении к целой сборке или одному параметру.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

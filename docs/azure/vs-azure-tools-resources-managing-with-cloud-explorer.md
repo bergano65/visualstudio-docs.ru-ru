@@ -9,32 +9,32 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 5a69fb83f28f4446a91e4125e75706400401ea1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911731"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800389"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Управление ресурсами, связанными с учетными записями Azure, в Visual Studio Cloud Explorer
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Управление ресурсами, связанными с учетными записями Azure, с помощью Visual Studio Cloud Explorer
 
 Cloud Explorer позволяет просматривать ресурсы и группы ресурсов Azure, проверять их свойства и выполнять основные диагностические действия разработчика в среде Visual Studio.
 
 Приложение Cloud Explorer, как и [портал Azure](https://portal.azure.com), основано на стеке Azure Resource Manager. Благодаря этому Cloud Explorer распознает ресурсы (например, группы ресурсов Azure) и службы Azure (например, Logic Apps и API-приложения), а также поддерживает [управление доступом на основе ролей](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
 * Visual Studio 2017 или последующей версии (см. страницу [скачивания Visual Studio](https://visualstudio.microsoft.com/downloads)) с выбранной **рабочей нагрузкой Azure**. Вы также можете использовать предыдущие версии Visual Studio с [Пакетом Microsoft Azure SDK для .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Учетная запись Azure. Если у вас ее нет, [зарегистрируйтесь для работы с бесплатной пробной версией](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) или [активируйте преимущества для подписчиков Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
 
 > [!NOTE]
-> Чтобы открыть Cloud Explorer, нажмите клавиши **CTRL**+**Q**, чтобы активировать поле поиска, и введите **Cloud Explorer**.
+> Чтобы просмотреть Cloud Explorer, нажмите клавиши **CTRL** + **Q** , чтобы активировать поле поиска, а затем введите **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Добавление учетной записи Azure в Cloud Explorer
 
-Чтобы просмотреть ресурсы, связанные с учетной записью Azure, сначала необходимо добавить учетную запись в **Cloud Explorer**.
+Чтобы просмотреть ресурсы, связанные с учетной записью Azure, необходимо сначала добавить учетную запись в **Cloud Explorer**.
 
-1. В **Cloud Explorer** нажмите кнопку **Управление учетными записями**.
+1. В **Cloud Explorer**нажмите кнопку **Управление учетной записью** .
 
    ![Значок параметров учетной записи Azure в Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -48,7 +48,7 @@ Cloud Explorer позволяет просматривать ресурсы и �
 
    ![Cloud Explorer: выбор подписок Azure для отображения](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. Когда вы завершите выбор нужных подписок, в Cloud Explorer отобразятся все ресурсы этих подписок.
+1. После выбора подписок, ресурсы которых необходимо просмотреть, эти подписки и ресурсы отображаются в **Cloud Explorer**.
 
    ![Список ресурсов для учетной записи Azure в Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
@@ -101,7 +101,7 @@ Cloud Explorer позволяет просматривать ресурсы и �
 
 ## <a name="find-resources-in-cloud-explorer"></a>Поиск ресурсов в Cloud Explorer
 
-Чтобы найти в подписках учетной записи Azure ресурс с известным именем, введите это имя в поле **Поиск** в Cloud Explorer.
+Чтобы найти ресурсы с указанным именем в подписках на учетную запись Azure, введите имя в поле **поиска** в **Cloud Explorer**.
 
   ![Поиск ресурсов в обозревателе облака](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 

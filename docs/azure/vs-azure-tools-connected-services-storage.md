@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639458"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800519"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Добавление хранилища Azure с использованием подключенных служб Visual Studio
 
 С помощью Visual Studio вы можете подключить к службе хранилища Azure любой из следующих компонентов, используя функцию **подключенные службы** :
 
 - .NET Framework консольное приложение
-- ASP.NET MVC (.NET Framework) 
+- ASP.NET MVC (.NET Framework)
 - ASP.NET Core
 - .NET Core (включая консольное приложение, WPF, Windows Forms, библиотеку классов)
 - Рабочая роль .NET Core
@@ -117,7 +117,7 @@ ms.locfileid: "88639458"
 1. Подключенная служба хранилища появится в узле **Веб-ссылки** проекта.
 :::moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Форум службы хранилища Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Документация по службе хранилища Azure](/azure/storage/)

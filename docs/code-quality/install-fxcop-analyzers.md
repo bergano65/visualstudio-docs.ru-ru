@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286657"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800974"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
@@ -28,11 +28,11 @@ ms.locfileid: "88286657"
 
 В Visual Studio 16,3 2019 и более поздних версиях пакет NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) можно установить непосредственно на странице свойств анализа кода проекта:
 
-1. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений**, выберите пункт **свойства**, а затем перейдите на вкладку **анализ кода** .
+1. Щелкните правой кнопкой мыши (или выберите и удерживайте) в узле проекта в **Обозреватель решений**выберите **свойства**, а затем перейдите на вкладку **анализ кода** .
 
    ![Установка пакета FxCop Analyzer со страницы свойств в Visual Studio](media/install-fxcop-properties-page.png)
 
-2. Выберите пункт **Установить**.
+2. Нажмите кнопку **Установить**.
 
    Visual Studio устанавливает последнюю версию пакета Microsoft. CodeAnalysis. Фкскопанализерс. Сборки отображаются в **Обозреватель решений** в разделе **References**  >  **анализаторы**ссылок.
 
@@ -59,7 +59,7 @@ ms.locfileid: "88286657"
 
 ### <a name="custom-installation"></a>Выборочная установка
 
-Для выборочной установки, например для указания другой версии пакета, нажмите кнопку с многоточием (...) на странице свойств анализ кода проекта. Эта кнопка открывает диспетчер пакетов NuGet с именем Microsoft. CodeAnalysis. Фкскопанализерс в качестве строки поиска.
+Для выборочной установки, например, чтобы указать другую версию пакета, нажмите кнопку с многоточием (...) на странице свойств анализ кода проекта. Эта кнопка открывает диспетчер пакетов NuGet с именем Microsoft. CodeAnalysis. Фкскопанализерс в качестве строки поиска.
 
 ![Установить пользовательский пакет анализаторов FxCop со страницы "Свойства" в Visual Studio](media/install-fxcop-properties-page-ellipsis.png)
 

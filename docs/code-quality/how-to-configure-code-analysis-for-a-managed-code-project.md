@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507863"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801052"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Как настроить анализ прежних версий для управляемого кода
 
@@ -91,12 +91,12 @@ ms.locfileid: "87507863"
 
     - Чтобы указать набор правил для отдельного проекта, выберите имя проекта.
 
-    - Чтобы указать набор правил для нескольких проектов, удерживайте нажатой **клавишу CTRL** и выберите имена проектов.
+    - Чтобы указать набор правил для нескольких проектов, выберите **сочетание клавиш CTRL** и имя проекта.
 
-    - Чтобы указать все проекты в решении, удерживайте нажатой клавишу **SHIFT** и щелкните список проектов.
+    - Чтобы указать все проекты в решении, выберите **SHIFT** и список проектов.
 
 5. Выберите поле **набора правил** проекта, а затем выберите имя набора правил, который необходимо применить.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по набору правил анализа кода](../code-quality/rule-set-reference.md)

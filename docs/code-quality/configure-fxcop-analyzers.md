@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbd30859c5ee3dbbea80c6d88d68c0211da62c88
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706585"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800740"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>Настройка анализаторов качества кода .NET
 
@@ -75,7 +75,7 @@ ms.locfileid: "88706585"
 
 Чтобы включить конфигурацию, добавьте файл с *расширением editorconfig* с параметрами в соответствующем каталоге. Этот файл также может содержать записи конфигурации серьезности диагностики на основе EditorConfig. Подробнее см. [здесь](use-roslyn-analyzers.md#rule-severity).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры области правил для анализаторов качества кода .NET](fxcop-analyzer-options.md)
 - [Конфигурация анализатора](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

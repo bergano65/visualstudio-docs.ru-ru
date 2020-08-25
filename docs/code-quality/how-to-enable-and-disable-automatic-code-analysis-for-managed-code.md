@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371889"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801026"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Как включить и отключить анализ двоичного кода для управляемого кода
 
@@ -21,9 +21,9 @@ ms.locfileid: "85371889"
 
 Чтобы включить или отключить анализ кода прежних версий, выполните следующие действия.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
+1. В **Обозреватель решений**выберите и удерживайте (или щелкните правой кнопкой мыши) проект, а затем выберите пункт **свойства**.
 
-2. В диалоговом окне Свойства проекта перейдите на вкладку **анализ кода** .
+2. В диалоговом окне "Свойства" для проекта перейдите на вкладку " **анализ кода** ".
 
 3. Укажите тип сборки в поле **Конфигурация** и Целевая платформа на **платформе**. (Только проекты Non-.NET Core/. NET Standard.)
 
