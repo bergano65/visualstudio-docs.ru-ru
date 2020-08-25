@@ -1,6 +1,6 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", Basic (VB), \"Дополнительно\""
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431479"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214637"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>"Параметры", "Текстовый редактор", Basic (Visual Basic), "Дополнительно"
 Страница свойств **Только для VB** в папке **Basic** внутри папки **Текстовый редактор** диалогового окна **Параметры** (меню **Сервис**) содержит следующие свойства:
@@ -78,6 +78,13 @@ ms.locfileid: "79431479"
 Если выбрать этот параметр, в редакторе отображаются вертикальные линии в соответствии со структурированными блоками кода. Это позволяет легко определять отдельные блоки кода. Например, вы увидите линию между `Sub` и `EndSub` в инструкции `Sub`.
 
 ## <a name="editor-help"></a>Справка по редактору
+
+::: moniker range=">=vs-2019"
+**Подсказки для имен встроенных параметров**    
+Если этот флажок установлен, то вставляются подсказки имен параметров для литералов, приведенных литералов и создаваемых экземпляров объектов перед каждым аргументом в вызовах функций.  
+
+![Подсказки для имен встроенных параметров для Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **Автоматическое форматирование (переформатирование) кода** Текстовый редактор переформатирует код соответствующим образом. Когда этот параметр выбран, редактор кода делает следующее:
 

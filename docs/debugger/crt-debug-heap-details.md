@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d09319e412d693fc9df95d9ae9b9773f0869afc3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745628"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247942"
 ---
 # <a name="crt-debug-heap-details"></a>Сведения о куче отладки CRT
 В этом разделе представлен подробный обзор отладочной кучи CRT.
@@ -223,7 +223,7 @@ _CrtSetDbgFlag( tmpFlag );
 
 ![В начало](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="new-delete-and-_client_blocks-in-the-c-debug-heap"></a><a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete и _CLIENT_BLOCK в отладочной куче C++
+## <a name="new-delete-and-_client_blocks-in-the-c-debug-heap"></a><a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Операторы new, delete и \_CLIENT\_BLOCK в отладочной куче C++
 Отладочные версии библиотеки времени выполнения C содержат отладочные версии операторов C++ `new` и `delete`. При использовании типа выделения `_CLIENT_BLOCK` необходимо либо непосредственно вызвать отладочную версию оператора `new`, либо создать макросы, заменяющие оператор `new` в режиме отладки, как показано в следующем примере.
 
 ```cpp

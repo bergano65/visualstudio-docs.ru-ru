@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Сведения о новом предложении Visual Studio с GitHub
-ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232782"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248190"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Общие сведения о подписках Visual Studio с GitHub Enterprise  
 
@@ -66,7 +66,7 @@ ms.locfileid: "80232782"
 Ответ.  Настройка подписки GitHub занимает некоторое время.  Если вы ждете достаточное время и не получали никаких уведомлений, обратитесь к своему администратору GitHub.  Возможно, администратор по-прежнему выполняет подготовку вашей подписки или принял решение не назначать вам подписку GitHub. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Вопрос:  Как связаться со своим администратором GitHub?
-Ответ.  Если вы используете GitHub Enterprise Server, для связи с администратором щелкните ссылку **Поддержка**, расположенную в нижней части клиента.
+Ответ.  Если вы используете GitHub Enterprise Server, для связи с администратором нажмите ссылку **Поддержка**, расположенную в нижней части клиента.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Вопрос: Получу ли я полную подписку Visual Studio (Professional или Enterprise) или только интегрированную среду разработки с этим предложением?
 Ответ.  Вместе с подпиской GitHub Enterprise вы получаете полную подписку Visual Studio.  При этом вы получите те же преимущества этих подписок, что и в случае их отдельного приобретения, в том числе скачиваемые файлы программного обеспечения, облачные службы, техническую поддержку и преимущества для партнеров.

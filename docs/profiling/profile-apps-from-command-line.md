@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285848"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508003"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Измерение производительности приложения из командной строки
 
@@ -41,9 +41,9 @@ ms.locfileid: "85285848"
 
 1. Запустите Блокнот и откройте диспетчер задач, чтобы получить его идентификатор процесса (PID). В диспетчере задач найдите PID на вкладке **Сведения**.
 
-1. Откройте командную строку и перейдите в каталог с исполняемыми агентами сборки.
+1. Откройте командную строку и перейдите в каталог с исполняемым файлом агента сбора, обычно здесь (для Visual Studio Enterprise).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Запустите *VSDiagnostics.exe*, введя следующую команду.
 
@@ -54,8 +54,14 @@ ms.locfileid: "85285848"
    Необходимо включить следующие аргументы:
 
    * \<*id*> — определяет сеанс сбора. Идентификатор должен быть числом от 1 до 255.
-   * \<*pid*> — идентификатор процесса, для которого вы будете выполнять профилирование. В нашем случае это идентификатор процесса, найденный на шаге 1.
+   * \<*pid*> — идентификатор процесса, для которого вы хотите выполнить профилирование. В данном случае это идентификатор процесса, найденный на шаге 1.
    * \<*configFile*> — файл конфигурации для агента сборки, который вы хотите запустить. Дополнительные сведения см. в разделе [Файлы конфигурации для агентов](#config_file).
+
+   Например, можно использовать следующую команду для агента CPUUsageBase, заменив *pid*, как описано выше.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Измените размер Блокнот или введите в него текст, чтобы собрать интересные данные профилирования.
 
@@ -65,7 +71,9 @@ ms.locfileid: "85285848"
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Перейдите в выходной файл из предыдущей команды и откройте его в Visual Studio, чтобы изучить собранные сведения.
+1. Найдите выходной файл *.diagsession*, полученный в результате предыдущей команды, и откройте его в Visual Studio (**Файл** > **Открыть**), чтобы изучить собранные сведения.
+
+   Для анализа результатов ознакомьтесь с документацией по соответствующему средству контроля производительности. Например, это может быть средство [Загрузка ЦП](../profiling/cpu-usage.md), [средство выделения объектов .NET](../profiling/dotnet-alloc-tool.md) или инструмент [База данных](../profiling/analyze-database.md).
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> Файлы конфигурации агента
 

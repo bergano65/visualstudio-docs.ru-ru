@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902868"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250724"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -29,7 +29,7 @@ ms.locfileid: "85902868"
 6. Выберите **Привилегии**.
 7. Выберите **подписки Visual Studio**. (Примечание. Ожидается обновление подписок Visual Studio).
 8. Выберите нужное **лицо**.
-9. Щелкните **Отправить**.
+9. Нажмите **Отправить**
 10. Выбранное лицо получит сообщение по электронной почте.
 11. Назначенное лицо получит доступ к [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) для входа
 12. Для него открывается страница профиля Visual Studio, где указана информация о профиле:
@@ -43,7 +43,7 @@ ms.locfileid: "85902868"
 2. Выберите **Привилегии**.
 3. Выберите **Подписки MSDN** (Примечание. Вскоре этот элемент будет переименован в "Подписки Visual Studio")
 4. Найдите нужное **лицо**.
-5. Щелкните **Отправить**.
+5. Нажмите **Отправить**
 6. Выбранное лицо получит сообщение по электронной почте.
 7. Назначенное лицо получит доступ к [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) для входа
 8. Для него открывается страница профиля Visual Studio:

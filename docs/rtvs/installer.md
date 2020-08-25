@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a30ec1a60b7bc19710e3184c7cd32e252acc9921
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62581176"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248487"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Инструменты R для Visual Studio. Приветствие
 
@@ -25,7 +25,7 @@ ms.locfileid: "62581176"
 
 - [Документация](index.md)
 - [Порядок установки инструментов R для Visual Studio](installing-r-tools-for-visual-studio.md)
-- [Отправка и просмотр ошибок и запросов функций на GitHib](https://github.com/Microsoft/RTVS/issues)
+- [Отправка и просмотр ошибок и запросов функций на GitHub](https://github.com/Microsoft/RTVS/issues)
 - [Изучение исходного кода и участие в его разработке](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
 - Чтобы отправить отзыв, не используя GitHub (что предпочтительно), воспользуйтесь меню **Инструменты R > Отзыв** в Visual Studio.
 

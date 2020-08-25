@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d7bd89f8e7840db8615c74170bb5cb9998aeb678
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454628"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250171"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Компиляция кода TypeScript (Node.js)
 
@@ -109,7 +109,7 @@ ms.locfileid: "87454628"
 
    Хотя сборка приложения выполняется автоматически при его запуске, рассмотрим, что происходит в процессе сборки.
 
-   Если вы создали сопоставители с исходным кодом, откройте папку, указанную в параметре *outDir*, где вы найдете созданные файлы *.js с файлами *js.map.
+   Если вы создали сопоставители с исходным кодом, откройте папку, указанную в параметре *outDir*, где вы найдете созданные файлы \*.js, а также созданные файлы \*js.map.
 
    Файлы сопоставителей с исходным кодом требуются для [отладки](../javascript/debug-nodejs.md).
 

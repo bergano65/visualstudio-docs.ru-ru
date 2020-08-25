@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536894"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168663"
 ---
 # <a name="deploy-to-docker-hub"></a>Развертывание в Docker Hub
 
@@ -29,9 +30,13 @@ Docker Hub предоставляет удобную службу размеще
 
 1. Щелкните узел проекта правой кнопкой мыши и выберите команду **Опубликовать...** . Появится экран с вариантами развертывания.
 
-   ![Снимок экрана параметров развертывания](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Снимок экрана параметров развертывания](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. В разделе **Выберите целевой объект публикации** выберите **Реестр контейнеров**, а затем выберите **Docker Hub**. Появится диалоговое окно **Docker Hub**.
+1. Выберите **Реестр контейнеров Docker**, а затем выберите **Docker Hub**.
+
+   ![Снимок экрана диалогового окна публикации — выбор Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. Введите учетные данные Docker.
 
    ![Снимок экрана диалогового окна Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 

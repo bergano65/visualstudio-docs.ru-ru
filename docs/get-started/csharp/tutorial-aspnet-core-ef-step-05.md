@@ -2,7 +2,7 @@
 title: Шаг 5. Развертывание приложения ASP.NET Core в Azure
 description: Разверните веб-приложение ASP.NET в Azure с помощью этого видео-учебника и пошаговых инструкций.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580033"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248623"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Шаг 5. Развертывание приложения ASP.NET в Azure
 
@@ -37,17 +37,43 @@ _Выполните инструкции из этого видео, чтобы 
 
 ## <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
 
-В обозревателе решений щелкните правой кнопкой мыши проект и выберите **Опубликовать**. Оставьте настройки по умолчанию для параметров **Служба приложений** и **Создать** и нажмите кнопку **Опубликовать**. Если у вас нет учетной записи Azure, щелкните **Создать бесплатную учетную запись Azure** и пройдите быстрый процесс регистрации.
+1. В обозревателе решений щелкните правой кнопкой мыши проект и выберите **Опубликовать**. В мастере **публикации** выберите **Azure** в качестве целевого объекта.
 
-Добавьте SQL Server. Укажите имя пользователя и пароль администратора.
+   ![Снимок экрана Службы приложений Azure 1](media/vs-2019/app-service-screen-1.png)
 
-![Создание Azure SQL Server в Visual Studio 2019](media/vs-2019/vs2019-azure-sql-server.png)
+1. В качестве конкретного целевого объекта выберите **Службу приложений Azure (Windows)** .
 
-Добавьте Application Insights.
+   ![Снимок экрана Службы приложений Azure 2](media/vs-2019/app-service-screen-2.png)
 
-Нажмите кнопку **Создать**, чтобы продолжить.
+1. Выберите **Создать новую Службу приложений Azure**. Если у вас нет учетной записи Azure, щелкните **Создать бесплатную учетную запись Azure** и пройдите быстрый процесс регистрации.
 
-![Создание новой Службы приложений Azure в Visual Studio 2019](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Снимок экрана Службы приложений Azure 3](media/vs-2019/app-service-screen-3.png)
+
+1. Укажите имя и группу ресурсов или примите значения по умолчанию и нажмите **Создать**. Группа ресурсов — это просто способ упорядочивания связанных ресурсов в Azure, таких как службы, работающие вместе с учетными записями хранения, хранилищами ключей и базами данных.
+
+   ![Снимок экрана Службы приложений Azure 4](media/vs-2019/app-service-screen-4.png)
+
+1. Нажмите кнопку **Готово**. В результате в Azure создаются ресурсы, приложение развертывается, а на вкладке **Публикация** появляются сведения о том, что вы только что создали. На вкладке **Публикация** имеется кнопка, позволяющая опубликовать такую конфигурацию одним нажатием, отображаются сведения о конфигурации, а также можно добавлять службы, например базу данных.
+
+Теперь добавьте базу данных SQL Server Azure.
+
+1. На вкладке **Публикация** в разделе **Зависимости служб** рядом с пунктом **База данных SQL Server** выберите **Настроить**.
+
+1. На следующем экране выберите пункт **База данных SQL Azure**.
+
+   ![Снимок экрана: выбор базы данных SQL Azure](media/vs-2019/app-service-azure-sql-db.png)
+
+1. На экране **Настройка базы данных SQL Azure** нажмите **Создать базу данных SQL**.
+
+   ![Снимок экрана "Настройка базы данных SQL"](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. На экране **База данных SQL Azure: создание** создайте новый сервер базы данных.
+
+   ![Снимок экрана "База данных SQL Azure: Создать](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. На экране **SQL Server: создание** выберите имя, расположение, а также укажите имя пользователя и пароль администратора.
+
+   ![Создание Azure SQL Server в Visual Studio 2019](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Обзор портала Azure и размещенного приложения
 
@@ -77,12 +103,12 @@ Azure по умолчанию ожидает подключения нового
 
 Поздравляем! Вы завершили просмотр этой серии видеоучебников!
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше о том, как разработать приложения ASP.NET Core с помощью следующих бесплатных ресурсов.
 
-[Архитектура приложений ASP.NET Core](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
+[ASP.NET Core Application Architecture (Архитектура приложений ASP.NET Core)](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Публикация приложения ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)

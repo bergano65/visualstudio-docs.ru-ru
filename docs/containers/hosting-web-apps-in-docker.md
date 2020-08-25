@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 9778590d804a72ff896b190a743fc08293f5b9ca
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283142"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168708"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Развертывание контейнера ASP.NET в реестр контейнеров из Visual Studio
 
@@ -38,6 +38,7 @@ Docker — это облегченная платформа контейнеро
 * Установить [Docker для Windows](https://docs.docker.com/docker-for-windows/install/).
 
 ## <a name="create-an-aspnet-core-web-app"></a>Создание веб-приложения ASP.NET Core
+
 Давайте создадим простое приложение ASP.NET Core, которое мы будем использоваться в этом руководстве. Если у вас уже есть проект, этот раздел можно пропустить.
 
 ::: moniker range="vs-2017"
@@ -47,9 +48,12 @@ Docker — это облегченная платформа контейнеро
 [!INCLUDE [create-aspnet5-app](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
+::: moniker range="vs-2017"
+
 ## <a name="publish-your-container-to-azure-container-registry"></a>Опубликуйте контейнер в реестре контейнеров Azure
+
 1. В **обозревателе решений** щелкните правой кнопкой проект и выберите **Опубликовать**.
-2. В диалоговом окне целевой публикации выберите вкладку **Реестр контейнеров**.
+2. В диалоговом окне **Целевой объект публикации** выберите **Реестр контейнеров**.
 3. Выберите **Создать реестр контейнеров Azure** и щелкните **Опубликовать**.
 4. Заполните нужные значения в окне **Создать новый реестр контейнеров Azure**.
 
@@ -64,9 +68,38 @@ Docker — это облегченная платформа контейнеро
     ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
 5. Нажмите кнопку **Создать**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="publish-your-container-to-azure-container-registry"></a>Опубликуйте контейнер в реестре контейнеров Azure
+1. В **обозревателе решений** щелкните правой кнопкой проект и выберите **Опубликовать**.
+2. В диалоговом окне **Публикации** выберите **Реестр контейнеров Docker**.
+
+   ![Снимок экрана диалогового окна публикации — выбор реестра контейнеров DOCKER](media/container-tools/vs-2019/docker-container-registry.png)
+
+3. Выберите **Создать Реестр контейнеров Azure**.
+ 
+   ![Снимок экрана диалогового окна публикации — создание реестра контейнеров DOCKER](media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+
+4. Заполните нужные значения в окне **Реестр контейнеров Azure**.
+
+    | Параметр      | Рекомендуемое значение  | Описание                                |
+    | ------------ |  ------- | -------------------------------------------------- |
+    | **DNS-префикс** | Глобально уникальное имя | Имя, которое однозначно идентифицирует реестр контейнеров. |
+    | **Подписка** | Выберите свою подписку | Подписка Azure, которую нужно использовать. |
+    | **[Группа ресурсов](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Имя группы ресурсов, в которой создается реестр контейнеров. Чтобы создать группу ресурсов, выберите **Создать**.|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Стандартный | Уровень обслуживания в реестре контейнеров  |
+    | **Расположение реестра** | Расположение рядом с вами | Выберите расположение в ближайшем [регионе](https://azure.microsoft.com/regions/) или в регионе, расположенном рядом с другими службами, которые будут использовать реестр контейнеров. |
+
+    ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)
+
+5. Нажмите кнопку **Создать**.
+
+6. Нажмите кнопку **Готово**, чтобы завершить процесс.
+::: moniker-end
 
 Теперь можно извлечь контейнер из реестра в любой узел, поддерживающий работу образов Docker, например [Экземпляры контейнеров Azure](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Краткое руководство. Развертывание экземпляра контейнера в Azure с помощью Azure CLI](/azure/container-instances/container-instances-quickstart)

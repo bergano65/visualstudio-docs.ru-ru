@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211640"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248345"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
@@ -65,11 +65,11 @@ ms.locfileid: "86211640"
 Чтобы отменить подписки, нужно просто изменить их число для вашего соглашения на нуль (0).  Чтобы сократить число подписок, выполните следующие действия:
 1. Выполните вход в <https://manage.visualstudio.com>
 1. Если у вас несколько соглашений, выберите нужное соглашение в раскрывающемся списке.
-1. Щелкните значок **Обзор** в верхнем левом углу, чтобы отобразить сведения о подписках.  
+1. Нажмите значок **Обзор** в верхнем левом углу, чтобы отобразить сведения о подписках.  
 > [!div class="mx-imgBorder"]
 > ![Отображение сведений о подписках](_img/buy-vs-subscriptions/overview-button.png "Нажатие кнопки "Обзор" для отображения сведений о подписке")
 
-4. Выберите запись для подписок, которые вы хотите отменить, и щелкните **Изменить количество**.
+4. Выберите запись для подписок, которые вы хотите отменить, и нажмите **Изменить количество**.
 1. Измените количество на нуль (0). Ваши подписки будут действовать до запланированной даты выставления счетов, но не будут продлены в начале следующего расчетного периода.   
 
 > [!div class="mx-imgBorder"]

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569196"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249882"
 ---
 # <a name="go-to-line-dialog-box"></a>Переход на строку - диалоговое окно
 
@@ -28,7 +28,7 @@ ms.locfileid: "75569196"
 
 ## <a name="line-number-1---n"></a>Номер строки (1–\<n>)
 
-Поле **Номер строки (1–\<n>)** позволяет ввести номер строки активного документа, на которую нужно перейти. Этот номер должен находиться в диапазоне от 1 до последнего номера строки в текущем документе.
+В поле **Номер строки (1–\<n>n>)** можно ввести номер строки активного документа, на которую нужно перейти. Этот номер должен находиться в диапазоне от 1 до последнего номера строки в текущем документе.
 
 ## <a name="see-also"></a>См. также раздел
 
@@ -36,3 +36,4 @@ ms.locfileid: "75569196"
 - [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)
 - [Поиск и замена текста](../../ide/finding-and-replacing-text.md)
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Команда Go To](go-to-command.md)

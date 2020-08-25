@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541088"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246089"
 ---
 Visual Studio позволяет локально и удаленно запускать приложения Python на компьютере Windows и выполнять их отладку (см. статью [Удаленная отладка](../../../debugger/remote-debugging.md)). Также с помощью [библиотеки ptvsd](https://pypi.python.org/pypi/ptvsd) они могут выполнять удаленную отладку, используя другую операционную систему, другое устройство или реализацию Python, отличную от CPython.
 
 При работе c ptvsd для отлаживаемого кода Python создается сервер отладки, к которому может подключаться Visual Studio. Для такого размещения нужно внести лишь небольшое изменение в код для импорта и запуска сервера и в некоторых случаях скорректировать на удаленном компьютере настройки сети и брандмауэра, чтобы разрешить подключения TCP.
 
-|   |   |
-|---|---|
-| ![значок камеры для видеоролика](../../../install/media/video-icon.png "Посмотрите видео") | Введение в удаленную отладку см. в видео [Подробное рассмотрение: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017. |
+![значок кинокамеры для видео](../../../install/media/video-icon.png "Посмотрите видео") Введение в удаленную отладку см. в видео [Подробный обзор: удаленная кроссплатформенная отладка](https://youtu.be/y1Qq7BrV6Cc) (размещено на youtube.com, длительность 6 мин 22 с), которое относится как к Visual Studio 2015, так и к Visual Studio 2017.
 
 ## <a name="set-up-a-linux-computer"></a>Настройка компьютера Linux
 

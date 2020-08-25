@@ -1,21 +1,21 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", C#, \"Дополнительно\""
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181070"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214675"
 ---
 # <a name="options-text-editor-c-advanced"></a>"Параметры", "Текстовый редактор", C#, "Дополнительно"
 
@@ -128,7 +128,13 @@ ms.locfileid: "86181070"
 Установите этот флажок для отображения пунктирных вертикальных линий между фигурными скобками ( **{}** ) в коде. Это позволит легко определять отдельные блоки кода для уровня объявления и конструкций уровня кода.
 
 ## <a name="editor-help"></a>Справка по редактору
-
+::: moniker range=">=vs-2019"
+- Подсказки для имен встроенных параметров 
+    
+    Если этот флажок установлен, то вставляются подсказки имен параметров для литералов, приведенных литералов и создаваемых экземпляров объектов перед каждым аргументом в вызовах функций.  
+    
+    ![Подсказки для имен встроенных параметров для CSharp](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - Создавать комментарии XML-документации для ///
 
    Когда параметр выбран, после ввода начала комментария `///` в XML-документации вставляются XML-элементы для комментариев. Дополнительные сведения о XML-документации см. в разделе [Комментарии к XML-документации (руководство по программированию на C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902924"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247326"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -20,7 +20,7 @@ ms.locfileid: "85902924"
 ## <a name="activation-steps"></a>Процедура активации
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Найдите плитку "Azure" в разделе "Средства" на странице "Преимущества" и щелкните ссылку **Активировать** в нижней части плитки преимущества.
+2. Найдите элемент "Azure" в разделе "Инструменты" на странице "Преимущества" и нажмите ссылку **Активировать** в нижней части элемента "Преимущества".
    > [!div class="mx-imgBorder"]
    > ![Плитка Azure](_img/vs-azure/vs-azure-tile.png)
 
@@ -28,11 +28,11 @@ ms.locfileid: "85902924"
    > [!div class="mx-imgBorder"]
    > ![Регистрация в Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Затем необходимо проверить вашу личность с помощью простого кода проверки. Укажите свой номер телефона и выберите способ получения кода (текстовое сообщение или звонок).  Введите полученный код и нажмите кнопку **Проверить код**.   
+4. Затем необходимо проверить вашу личность с помощью простого кода проверки. Укажите свой номер телефона и выберите способ получения кода (текстовое сообщение или звонок).  Введите полученный код и нажмите **Проверить код**.   
    > [!div class="mx-imgBorder"]
    > ![Подготовка Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Теперь необходимо установить флажок, чтобы принять условия, а затем щелкнуть **Зарегистрироваться**.  Вот и все!
+5. На последнем шаге установите флажок, чтобы принять условия, а затем нажмите **Зарегистрироваться**.  Вот и все!
    > [!div class="mx-imgBorder"]
    > ![Подготовка Azure](_img/vs-azure/vs-azure-agreement.png)
 

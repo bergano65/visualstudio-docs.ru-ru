@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279813"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238534"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов с помощью приложения Django
 
 **Предыдущий шаг. [Создание приложения Django с представлениями и шаблонами страниц](learn-django-in-visual-studio-step-02-create-an-app.md)**
 

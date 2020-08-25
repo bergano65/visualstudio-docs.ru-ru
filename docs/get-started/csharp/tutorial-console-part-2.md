@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375955"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507960"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Учебник. Расширение простого консольного приложения C#
 
-В этом руководстве вы узнаете, как использовать Visual Studio для расширения консольного приложения, созданного в первой части. Вы узнаете о некоторых функциях Visual Studio, помогающих повысить продуктивность разработки, например использование расширенных функций редактора и отладка.
+В этом руководстве вы узнаете, как использовать Visual Studio для расширения консольного приложения, созданного в первой части. Вы узнаете о некоторых функциях Visual Studio, необходимых для повседневной разработки, таких как управление несколькими проектами и создание ссылок на сторонние пакеты.
 
 Если вы только что завершили [первую часть](tutorial-console.md) этой серии, у вас уже есть консольное приложение калькулятора.  Чтобы пропустить первую часть, можно открыть проект из репозитория GitHub. Приложение калькулятора на C# находится в репозитории [vs-tutorial-samples repo](https://github.com/MicrosoftDocs/vs-tutorial-samples), поэтому просто следуйте инструкциям в разделе [Учебник. Открытие проекта из репозитория](../tutorial-open-project-from-repo.md), чтобы начать работу.
 

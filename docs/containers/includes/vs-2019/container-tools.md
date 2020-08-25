@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389913"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186377"
 ---
 В Visual Studio можно легко выполнять сборку, отлаживать и запускать контейнерные приложения .NET, ASP.NET и ASP.NET Core и публиковать их в реестре контейнеров Azure (ACR), Docker Hub, службе приложений Azure или собственном реестре контейнеров. В этой статье рассматривается публикация приложения ASP.NET Core в реестре контейнеров Azure (ACR).
 
@@ -42,27 +42,27 @@ ms.locfileid: "81389913"
 
 *Dockerfile* с инструкциями по созданию окончательного образа Docker создается в проекте. См. [справочник по Dockerfile](https://docs.docker.com/engine/reference/builder/) для получения сведений о других доступных в нем командах.
 
-```
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+```dockerfile
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
 WORKDIR /src
-COPY ["HelloDockerTools/HelloDockerTools.csproj", "HelloDockerTools/"]
-RUN dotnet restore "HelloDockerTools/HelloDockerTools.csproj"
+COPY ["WebApplication1/WebApplication1.csproj", "WebApplication1/"]
+RUN dotnet restore "WebApplication1/WebApplication1.csproj"
 COPY . .
-WORKDIR "/src/HelloDockerTools"
-RUN dotnet build "HelloDockerTools.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication1"
+RUN dotnet build "WebApplication1.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "HelloDockerTools.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication1.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
 Предыдущий *Dockerfile* основан на образе [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) и включает в себя инструкции по изменению базового образа путем сборки проекта и добавления его в контейнер. Если вы используете .NET Framework, базовый образ будет отличаться.
@@ -98,8 +98,14 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 1. Выберите в раскрывающемся списке конфигурации значение **Выпуск** и выполните сборку приложения.
 1. В **обозревателе решений** щелкните правой кнопкой проект и выберите **Опубликовать**.
-1. В диалоговом окне целевой публикации выберите вкладку **Реестр контейнеров**.
-1. Выберите **Создать реестр контейнеров Azure** и щелкните **Опубликовать**.
+1. В диалоговом окне **Публикации** перейдите на вкладку **Реестр контейнеров Docker**.
+
+   ![Снимок экрана диалогового окна публикации — выбор реестра контейнеров DOCKER](../../media/container-tools/vs-2019/docker-container-registry.png)
+
+1. Выберите **Создать Реестр контейнеров Azure**.
+
+   ![Снимок экрана диалогового окна публикации — создание реестра контейнеров DOCKER](../../media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+
 1. Заполните нужные значения в окне **Создать новый реестр контейнеров Azure**.
 
     | Параметр      | Рекомендуемое значение  | Описание                                |
@@ -112,9 +118,13 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
     ![Диалоговое окно "Создание реестра контейнеров Azure" Visual Studio][0]
 
-1. Нажмите кнопку **Создать**.
+1. Нажмите кнопку **Создать**. Теперь в диалоговом окне **Публикации** отображается созданный реестр.
 
-   ![Снимок экрана с сообщением об успешной публикации](../../media/container-tools/publish-succeeded.png)
+   ![Снимок экрана диалогового окна публикации с созданным реестром контейнеров Azure](../../media/container-tools/vs-2019/created-azure-container-registry.png)
+
+1. Нажмите кнопку **Готово**, чтобы завершить процесс публикации образа контейнера во вновь созданном реестре в Azure.
+
+   ![Снимок экрана с сообщением об успешной публикации](../../media/container-tools/vs-2019/publish-succeeded.png)
 
 ## <a name="next-steps"></a>Следующие шаги
 
