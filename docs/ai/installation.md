@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638577"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800207"
 ---
 # <a name="installation"></a>Установка
 
@@ -34,10 +34,9 @@ ms.locfileid: "80638577"
 2. В диалоговом окне **Расширения и обновления** выберите **Online** (Онлайн) с левой стороны.
 3. В поле поиска в правом верхнем углу введите "tools for ai" (средства ИИ).
 4. В результатах выберите **Visual Studio Tools for AI** (Средства Visual Studio для ИИ).
-5. Нажмите **Загрузить**.
+5. Выберите **Загрузить**.
 
 ## <a name="prepare-your-local-machine"></a>Подготовка локального компьютера
-
 Перед обучением моделей глубокого обучения на локальном компьютере убедитесь в том, что установлены требуемые компоненты. В их число входят последние версии драйверов и библиотек для GPU NVIDIA (если применимо). Убедитесь также в том, что установлены среда и библиотеки Python, такие как NumPy и SciPy, и соответствующие платформы глубокого обучения, такие как Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch и Chainer, которые планируется использовать в проекте.
 
 > [!NOTE]

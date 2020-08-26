@@ -10,12 +10,12 @@ metadata:
   ms.author: lank
   manager: lank
   ms.date: 12/04/2019
-  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 98e3a19b2e06ee08b8e88dfb6ba15c8c8a5e027c
+  ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74883836"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88801741"
 highlightedContent:
   items:
   - title: Новые возможности Подписок Visual Studio
@@ -35,7 +35,7 @@ conceptualContent:
     - text: Деньги на счете в Azure
       url: ~/vs-azure.md
       itemType: get-started
-    - text: Файлы программного обеспечения для скачивания
+    - text: Загрузка программного обеспечения
       url: ~/software-download-list.md
       itemType: get-started
     footerLink:
@@ -67,7 +67,7 @@ tools:
   - title: Интегрированная среда разработки Visual Studio
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
     url: /visualstudio/windows/
-  - title: Azure DevOps Services
+  - title: Azure DevOps Services
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
     url: /azure/devops/
   - title: Visual Studio Code
@@ -97,7 +97,7 @@ additionalContent:
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server и клиентская лицензия (CAL)
         url: ~/vs-vsts.md
-      - text: Подписка на Office 365 для разработчиков
+      - text: Подписка для разработчиков Microsoft 365
         url: ~/vs-office-dev.md
       - text: Учетная запись разработчика Windows
         url: ~/vs-windows-dev.md

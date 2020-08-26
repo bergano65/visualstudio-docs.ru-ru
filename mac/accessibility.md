@@ -1,17 +1,17 @@
 ---
 title: Специальные возможности
 description: Описание специальных возможностей в Visual Studio для Mac и способов их включения.
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d50f92e6de777205f1289f710b27f4a719b61eef
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939066"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800194"
 ---
 # <a name="accessibility"></a>Специальные возможности
 
