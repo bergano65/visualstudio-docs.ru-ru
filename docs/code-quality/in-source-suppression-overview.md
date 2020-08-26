@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800857"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893376"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Подавлять предупреждения анализа кода
 
@@ -50,7 +50,7 @@ ms.locfileid: "88800857"
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage - атрибут
 
-При выборе параметра **подавлять** в контексте или щелчке правой кнопкой мыши в меню предупреждения анализа кода в **список ошибоке** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут добавляется либо в код, либо в глобальный файл подавления проекта.
+При выборе параметра **подавлять** в контекстном меню или щелчке правой кнопкой мыши предупреждения анализа кода в **Список ошибок** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут добавляется либо в код, либо в глобальный файл подавления проекта.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>Атрибут имеет следующий формат:
 
@@ -98,11 +98,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Предупреждения анализа кода подавляются на уровне, к которому <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> применяется атрибут. Например, атрибут можно применить на уровне сборки, модуля, типа, члена или параметра. Целью этого является тесное связывание информации о подавлении с кодом, в котором происходит нарушение.
 
-Общая форма подавления включает категорию правила и идентификатор правила, который содержит необязательное удобное для восприятия представление имени правила. Пример:
+Общая форма подавления включает категорию правила и идентификатор правила, который содержит необязательное удобное для восприятия представление имени правила. Например:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-При наличии достаточной производительности для минимизации метаданных подавления в исходном виде имя правила можно опустить. Категория правила и идентификатор его правила вместе составляют достаточно уникальный идентификатор правила. Пример:
+При наличии достаточной производительности для минимизации метаданных подавления в исходном виде имя правила можно опустить. Категория правила и идентификатор его правила вместе составляют достаточно уникальный идентификатор правила. Например:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -195,7 +195,7 @@ dotnet_diagnostic.CS1591.severity = none
 > [!NOTE]
 > Анализ кода игнорируется `GeneratedCodeAttribute` при применении к целой сборке или одному параметру.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

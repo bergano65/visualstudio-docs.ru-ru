@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800974"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893350"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "88800974"
 
 В Visual Studio 16,3 2019 и более поздних версиях пакет NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) можно установить непосредственно на странице свойств анализа кода проекта:
 
-1. Щелкните правой кнопкой мыши (или выберите и удерживайте) в узле проекта в **Обозреватель решений**выберите **свойства**, а затем перейдите на вкладку **анализ кода** .
+1. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений**, выберите пункт **свойства**, а затем перейдите на вкладку **анализ кода** .
 
    ![Установка пакета FxCop Analyzer со страницы свойств в Visual Studio](media/install-fxcop-properties-page.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "88800974"
 
 | Версия Visual Studio | Версия пакета анализатора FxCop |
 | - | - |
-| Visual Studio 2019 (все версии) | [Актуальная](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
+| Visual Studio 2019 (все версии) | [Актуальная](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 версии 15.9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 версии 15,5 до 15,8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 версии 15,3 до 15,4 | [2.3.0 — Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
@@ -121,7 +121,7 @@ ms.locfileid: "88800974"
 
 ::: moniker-end
 
-4. Выберите **Загрузить**.
+4. Щелкните **Загрузить**.
 
    Расширение скачивается.
 
@@ -153,7 +153,7 @@ ms.locfileid: "88800974"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Использование анализаторов кода в Visual Studio](../code-quality/use-roslyn-analyzers.md)

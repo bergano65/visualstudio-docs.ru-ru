@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800961"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893415"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Как создавать данные метрик кода
 
@@ -62,7 +62,7 @@ ms.locfileid: "88800961"
 
    В этом примере правило [CA1502](ca1502.md) настраивается на срабатывание, когда сложность сложностью организации циклов метода больше 10.
 
-3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Пример:
+3. В окне **Свойства** Visual Studio или в файле проекта пометьте действие сборки файла конфигурации как [**аддитионалфилес**](../ide/build-actions.md#build-action-values). Например:
 
    ```xml
    <ItemGroup>
@@ -72,7 +72,7 @@ ms.locfileid: "88800961"
 
 ## <a name="calculate-code-metrics-menu-command"></a>Команда меню «вычислить метрики кода»
 
-Создайте метрики кода для одного или всех открытых проектов в интегрированной среде разработки, перейдя к меню **анализ**  >  **метрики кода** .
+Создайте метрики кода для одного или всех открытых проектов в интегрированной среде разработки с помощью меню **анализ**  >  **метрик кода** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Создание результатов метрик кода для всего решения
 
@@ -80,7 +80,7 @@ ms.locfileid: "88800961"
 
 - В строке меню выберите **анализ**  >  **рассчитать метрики кода**  >  **для решения**.
 
-- В **Обозреватель решений**выберите и удерживайте (или щелкните правой кнопкой мыши) решение, а затем выберите пункт **вычислить метрики кода**.
+- В **Обозреватель решений**щелкните правой кнопкой мыши решение и выберите пункт **рассчитать метрики кода**.
 
 - В окне **Результаты метрик кода** выберите кнопку **вычислить метрики кода для решения** .
 
@@ -111,7 +111,7 @@ ms.locfileid: "88800961"
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Пакет NuGet Microsoft. CodeAnalysis. Metrics
 
-Самый простой способ создать данные метрик кода из командной строки — установить пакет NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . После установки пакета запустите `msbuild /t:Metrics` из каталога, содержащего файл проекта. Пример:
+Самый простой способ создать данные метрик кода из командной строки — установить пакет NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . После установки пакета запустите `msbuild /t:Metrics` из каталога, содержащего файл проекта. Например:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Можно переопределить имя выходного файла, указав `/p:MetricsOutputFile=<filename>` . Вы также можете получить данные метрик кода в [стиле прежних версий](#previous-versions) , указав `/p:LEGACY_CODE_METRICS_MODE=true` . Пример:
+Можно переопределить имя выходного файла, указав `/p:MetricsOutputFile=<filename>` . Вы также можете получить данные метрик кода в [стиле прежних версий](#previous-versions) , указав `/p:LEGACY_CODE_METRICS_MODE=true` . Например:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +293,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Использование Metrics.exe
 
-Чтобы запустить *Metrics.exe*, укажите проект или решение и выходной XML-файл в качестве аргументов. Пример:
+Чтобы запустить *Metrics.exe*, укажите проект или решение и выходной XML-файл в качестве аргументов. Например:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -336,7 +336,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Другие метрики, такие как `CyclomaticComplexity` и, `MaintainabilityIndex` используют те же формулы, что и предыдущие версии *Metrics.exe*, но новое средство подсчитывает количество `IOperations` (инструкции логического источника) вместо инструкций промежуточного языка (IL). Номера будут немного отличаться от тех, которые создаются в интегрированной среде разработки Visual Studio и предыдущих версиях *Metrics.exe*.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование окна "Результаты метрик кода"](../code-quality/working-with-code-metrics-data.md)
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
