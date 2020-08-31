@@ -1,7 +1,9 @@
 ---
-title: Изменение шрифтов и цветов
-ms.date: 06/01/2020
+title: Изменение тем, шрифтов, текста и контраста в специальных возможностях
+description: Сведения о том, как изменить цветные темы, цвета шрифтов, размер текста и включить контрастные цвета в Visual Studio для удобства использования, с помощью специальных возможностей.
+ms.date: 08/20/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284696"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801442"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Практическое руководство. Изменение шрифтов, цветов и тем в Visual Studio
 
-Шрифты и цвета в Visual Studio можно изменять различными способами. Например, тему синего цвета по умолчанию можно изменить на темную тему (также называемую "темным режимом"). Шрифт и размер текста можно менять по умолчанию.
+Шрифты и цвета в Visual Studio можно изменять различными способами. Например, вы можете изменить синюю тему по умолчанию на темную тему (так называемый "темный режим"). При необходимости вы также можете включить контрастную тему и изменить шрифт по умолчанию и размер текста в IDE в и редакторе кода.
 
 ## <a name="change-the-color-theme"></a>Изменение цветовой темы
 
@@ -124,3 +126,4 @@ ms.locfileid: "85284696"
 
 - [Практическое руководство. Изменение шрифтов и цветов в редакторе в Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Персонализация интегрированной среды разработки и редактора Visual Studio](../ide/quickstart-personalize-the-ide.md)

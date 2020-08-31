@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431158"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801676"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Краткое руководство. Открытие и выполнение кода Python в папке
 
@@ -77,7 +77,7 @@ ms.locfileid: "62431158"
     ![Команда "Параметры отладки и запуска" для файла Python](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > Если вы не видите здесь вариант **По умолчанию**, убедитесь, что при выборе команды **Параметры отладки и запуска** вы щелкнули правой кнопкой мыши именно файл Python с расширением *.py*. Visual Studio использует тип файла для выбора отображаемых вариантов действий в отладчике.
+    > Если вы не видите здесь вариант **По умолчанию**, убедитесь, что вы выбрали команду **Параметры отладки и запуска** именно для файла Python с расширением *.py*. В Visual Studio тип файла определяет отображаемые варианты действий в отладчике.
 
 1. Visual Studio откроет файл с именем *launch.vs.json*, расположенный в скрытой папке *.vs*. Этот файл описывает контекст отладки для проекта. Чтобы указать рабочую папку, добавьте значение для параметра `"workingDirectory"`, как в `"workingDirectory": "python3"` для примера python-koans:
 

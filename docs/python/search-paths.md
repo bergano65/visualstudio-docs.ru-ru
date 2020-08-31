@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520384"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801169"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Как пути поиска Python используются в Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "85520384"
 
 Таким образом, в Visual Studio можно напрямую указать пути поиска как в окружениях, так и в проектах. Код, который выполняется или отлаживается в Visual Studio, получает пути поиска из переменной `PYTHONPATH` (и других ее аналогов). Если вы добавляете пути поиска, Visual Studio проверяет библиотеки в этих расположениях и при необходимости создает для них базы данных IntelliSense (Visual Studio 2017 версии 15.5 и более ранних версий; это может занять некоторое время в зависимости от числа библиотек).
 
-Чтобы добавить путь поиска, в **обозревателе решений** разверните узел проекта, щелкните правой кнопкой мыши элемент **Пути поиска** и выберите **Добавить папку для пути поиска**.
+Чтобы добавить путь поиска, в **Обозревателе решений** разверните узел проекта, щелкните правой кнопкой мыши элемент **Пути поиска** и выберите **Добавить папку в путь поиска…**
 
 ::: moniker range="vs-2017"
 ![Команда "Добавить папку в путь поиска" для параметра "Пути поиска" в обозревателе решений](media/search-paths-command.png)

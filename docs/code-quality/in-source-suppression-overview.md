@@ -1,12 +1,12 @@
 ---
-title: Подавлять предупреждения анализа кода
-ms.date: 12/01/2018
+title: Подавлять нарушения анализа кода
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893376"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091442"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Подавлять предупреждения анализа кода
+# <a name="suppress-code-analysis-violations"></a>Подавлять нарушения анализа кода
 
 Часто бывает полезно указать, что предупреждение неприменимо. Это указывает членам команды, что код был проверен, и что предупреждение можно подавлять. Подавление в исходном код (ISS) использует <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут для подавления предупреждения. Атрибут можно поместить ближе к сегменту кода, вызвавшему предупреждение. Можно добавить <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> атрибут в исходный файл, введя его в, или можно использовать контекстное меню предупреждения в **Список ошибок** , чтобы добавить его автоматически.
 
@@ -98,11 +98,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Предупреждения анализа кода подавляются на уровне, к которому <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> применяется атрибут. Например, атрибут можно применить на уровне сборки, модуля, типа, члена или параметра. Целью этого является тесное связывание информации о подавлении с кодом, в котором происходит нарушение.
 
-Общая форма подавления включает категорию правила и идентификатор правила, который содержит необязательное удобное для восприятия представление имени правила. Например:
+Общая форма подавления включает категорию правила и идентификатор правила, который содержит необязательное удобное для восприятия представление имени правила. Пример:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-При наличии достаточной производительности для минимизации метаданных подавления в исходном виде имя правила можно опустить. Категория правила и идентификатор его правила вместе составляют достаточно уникальный идентификатор правила. Например:
+При наличии достаточной производительности для минимизации метаданных подавления в исходном виде имя правила можно опустить. Категория правила и идентификатор его правила вместе составляют достаточно уникальный идентификатор правила. Пример:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -195,7 +195,7 @@ dotnet_diagnostic.CS1591.severity = none
 > [!NOTE]
 > Анализ кода игнорируется `GeneratedCodeAttribute` при применении к целой сборке или одному параметру.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

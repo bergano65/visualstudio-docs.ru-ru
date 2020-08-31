@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374173"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801325"
 ---
 # <a name="add-file-header"></a>Добавление заголовка файла
 
@@ -34,12 +34,12 @@ ms.locfileid: "86374173"
 
 2. Добавьте правило *file_header_template* в файл EditorConfig.
 
-3. Задайте правилу значение, соответствующее тексту заголовка, который требуется добавить.
+3. Задайте правилу значение, соответствующее тексту заголовка, который требуется добавить. В качестве заполнителя для имени файла можно использовать `{fileName}`.
 
     ![Правило заголовка файла EditorConfig](media/add-file-header-rule.png)
 
-> [!NOTE]
-> В EditorConfig нельзя явным образом указать несколько строк. Для добавления отдельных строк необходимо использовать символ новой строки, применяемый в системах Unix.
+    > [!NOTE]
+    > В EditorConfig нельзя явным образом указать несколько строк. Для добавления отдельных строк необходимо использовать символ новой строки, применяемый в системах Unix.
 
 4. Поместите курсор на первую строку файла C# или Visual Basic.
 

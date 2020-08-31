@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: истекло время ожидания при вычислении функции "функция", поэтому его требуется завершить небезопасным образом | Документация Майкрософт'
+title: 'Ошибка: истекло время ожидания при вычислении функции &apos;функция&apos;, поэтому его требуется завершить небезопасным образом | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3d1b5860729b55f1c4ede253cd0f881e0ab56fcc
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386723"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706559"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Ошибка: Истекло время ожидания при вычислении функции &#39;функция&#39;, поэтому его требуется завершить небезопасным образом
 

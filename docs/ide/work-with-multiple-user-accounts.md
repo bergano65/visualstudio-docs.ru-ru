@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027597"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800233"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
-Если у вас несколько учетных записей Майкрософт и рабочих учетных записей, их все можно добавить в Visual Studio, чтобы ресурсы всех учетных записей были доступны из любой учетной записи, с помощью которой выполнен вход. Службы Azure, Application Insights, Azure DevOps и Office 365 поддерживают упрощенную процедуру входа в систему.
+Если у вас несколько учетных записей Майкрософт и рабочих учетных записей, их все можно добавить в Visual Studio, чтобы ресурсы всех учетных записей были доступны из любой учетной записи, с помощью которой выполнен вход. Службы Azure, Application Insights, Azure DevOps и Microsoft 365 поддерживают упрощенную процедуру входа в систему.
 
 Учетные записи, добавленные на одном компьютере, перемещаются вместе с вами, когда вход в Visual Studio выполняется с другого компьютера.
 
@@ -53,7 +53,7 @@ ms.locfileid: "77027597"
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>Доступ к Azure Active Directory в веб-проекте
 
-Azure Active Directory (AAD) поддерживает единый вход в веб-приложения ASP.NET MVC или аутентификацию AD в службах веб-API. Аутентификация домена отличается от аутентификации отдельной учетной записи пользователя. Пользователи, имеющие доступ к домену Active Directory, могут подключаться к веб-приложениям с помощью существующих учетных записей AAD. Приложения Office 365 также могут использовать проверку подлинности домена.
+Azure Active Directory (AAD) поддерживает единый вход в веб-приложения ASP.NET MVC или аутентификацию AD в службах веб-API. Аутентификация домена отличается от аутентификации отдельной учетной записи пользователя. Пользователи, имеющие доступ к домену Active Directory, могут подключаться к веб-приложениям с помощью существующих учетных записей AAD. Приложения Microsoft 365 также могут использовать проверку подлинности домена.
 
 ::: moniker range="vs-2017"
 

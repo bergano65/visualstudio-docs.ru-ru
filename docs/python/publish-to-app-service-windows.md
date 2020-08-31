@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85531850"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801312"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Публикация в службу приложений Azure на платформе Windows
 
@@ -185,7 +185,7 @@ Visual Studio предоставляет возможность опублико
 > [!Note]
 > На сайте youtube.com можно просмотреть краткое видео об этом процессе: [Руководство по Python для Visual Studio. Создание веб-сайта](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (длительность — 3 мин 10 с).
 
-1. В **Обозревателе решений** щелкните проект правой кнопкой мыши и выберите действие **Публикация**.
+1. Щелкните правой кнопкой мыши проект в **обозревателе решений** и выберите пункт **Опубликовать**.
 
 1. В диалоговом окне **Публикация** выберите вариант **Служба приложений Microsoft Azure**.
 

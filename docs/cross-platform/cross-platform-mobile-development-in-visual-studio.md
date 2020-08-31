@@ -10,16 +10,16 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0e0f589ae3c6daa48a9bea6d8a0b561d7b8de337
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234986"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801598"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
-Используя Visual Studio, можно создавать приложения для устройств Android, iOS и Windows.  При разработке приложения вы можете использовать инструменты Visual Studio для добавления подключенных служб, таких как Office 365, служба приложений Azure и Application Insights.
+Используя Visual Studio, можно создавать приложения для устройств Android, iOS и Windows.  При разработке приложения вы можете использовать инструменты Visual Studio для добавления подключенных служб, таких как Microsoft 365, Служба приложений Azure и Application Insights.
 
 Поддерживается создание приложений с помощью C# и .NET Framework, HTML и JavaScript или C++. Существует возможность совместного использования кода, строк, изображений, а в некоторых случаях даже пользовательского интерфейса.
 
@@ -40,7 +40,7 @@ ms.locfileid: "78234986"
 |[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-### <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
+### <a name="target-android-ios-and-windows-from-a-single-code-base"></a><a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
 
  Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Для начала работы установите Visual Studio, выберите в установщике параметр **Разработка мобильных приложений на .NET**.
 
@@ -56,7 +56,7 @@ ms.locfileid: "78234986"
 
  В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) и в [документации по Xamarin.Forms](/xamarin/xamarin-forms/).
 
-#### <a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
+#### <a name="share-code-between-android-ios-and-windows-apps"></a><a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
 
  Если вы не используете Xamarin.Forms и предпочитаете разрабатывать приложения для каждой платформы отдельно, вы можете совместно использовать большую часть кода, не относящегося к пользовательскому интерфейсу, в проектах для разных платформ (Android, iOS и Windows). К нему относятся любая бизнес-логика, интеграция в облаке, доступ к базе данных или любой другой код, предназначенный для платформы .NET Framework. Единственным кодом, который нельзя совместно использовать, является код, предназначенный для конкретной платформы.
 
@@ -69,7 +69,7 @@ ms.locfileid: "78234986"
 |[Варианты совместного использования кода](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Варианты общего доступа к коду в .NET](/dotnet/standard/cross-platform/) |
 
-### <a name="WindowsHTML"></a> Целевые устройства Windows 10
+### <a name="target-windows-10-devices"></a><a name="WindowsHTML"></a> Целевые устройства Windows 10
 
  ![Устройства Windows](../cross-platform/media/windowsdevices.png "Устройства Windows")
 
@@ -86,7 +86,7 @@ ms.locfileid: "78234986"
 
 ::: moniker range="vs-2017"
 
-## <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
+## <a name="build-an-app-for-android-ios-and-windows-htmljavascript"></a><a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
 
  ![Устройства Windows, iOS и Android](../cross-platform/media/homedevices.png "Устройства Windows, iOS и Android")
 
@@ -168,6 +168,6 @@ ms.locfileid: "78234986"
 
 ## <a name="see-also"></a>См. также
 
-- [Добавление API Office 365 в проект Visual Studio](/office/developer-program/office-365-developer-program)
+- [Добро пожаловать в программу разработчиков Microsoft 365](/office/developer-program/office-365-developer-program)
 - [Службы приложений Azure — мобильные приложения](https://azure.microsoft.com/services/app-service/mobile/)
 - [Центр приложений Visual Studio](/appcenter)

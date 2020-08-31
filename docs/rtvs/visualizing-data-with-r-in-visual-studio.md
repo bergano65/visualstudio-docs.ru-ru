@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144705"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801624"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Создание визуальных графиков данных с помощью R
 
@@ -23,7 +23,7 @@ ms.locfileid: "88144705"
 
 :::row:::
     :::column:::
-        ![Значок кинокамеры для видео](../install/media/video-icon.png "Просмотр видео")
+        ![Значок кинокамеры для видео](../install/media/video-icon.png "Посмотрите видео")
     :::column-end:::
     :::column:::
         [Посмотрите видео (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) о создании графиков с помощью R (2 мин 2 с).

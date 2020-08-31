@@ -1,22 +1,24 @@
 ---
-title: Настройка цветовой темы и шрифтов
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: Задание темной темы и изменение цвета текста в Visual Studio
+description: Сведения о том, как изменить цветовую тему Visual Studio по умолчанию на темный режим, а также как изменить цвета шрифтов в редакторе кода.
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233149"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801403"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Практическое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
 
-В этом кратком (на 5 –10 минут) учебнике мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
+Из этой статьи вы узнаете, как переключить цветовую тему Visual Studio по умолчанию на темный режим. Мы также настроим цвета для двух различных типов текста в редакторе кода.
 
 ::: moniker range="vs-2017"
 
@@ -30,7 +32,7 @@ ms.locfileid: "80233149"
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>Настройка цветовой темы
+## <a name="set-the-color-theme-for-the-ide"></a>Настройка цветовой темы для интегрированной среды разработки
 
 По умолчанию в пользовательском интерфейсе Visual Studio установлена тема **Синяя**. Давайте изменим ее на тему **Темная**.
 
@@ -66,7 +68,7 @@ ms.locfileid: "80233149"
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>Изменение цвета текста
+## <a name="change-text-colors-in-the-editor"></a>Изменение цветов текста в редакторе
 
 Теперь настроим несколько цветов текста для редактора. Сначала создадим XML-файл, чтобы просмотреть цвета по умолчанию.
 
@@ -124,9 +126,10 @@ ms.locfileid: "80233149"
 
    ![XML-файл с новыми цветами шрифта](media/quickstart-personalize-xml-file-new-colors.png)
 
-Мы изучили только некоторые способы настраивать цвета в Visual Studio. Ознакомьтесь с другими возможностями в диалоговом окне **Параметры**, чтобы настроить Visual Studio в соответствии со своими предпочтениями.
+Мы изучили только некоторые способы настраивать цвета в Visual Studio. Ознакомьтесь с другими возможностями в диалоговом окне [**Параметры**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), чтобы настроить Visual Studio в соответствии со своими предпочтениями.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Настройка редактора](../ide/how-to-change-text-case-in-the-editor.md)
-- [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [Практическое руководство. Изменение шрифтов, цветов и тем в Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Практическое руководство. Изменение регистра текста в редакторе](../ide/how-to-change-text-case-in-the-editor.md)
+- [Обзор интегрированной среды разработки Visual Studio](../get-started/visual-studio-ide.md)

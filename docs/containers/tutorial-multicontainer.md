@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027330"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711668"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Учебник. Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -55,7 +55,7 @@ ms.locfileid: "77027330"
 
 ## <a name="create-a-web-api-project"></a>Создание проекта веб-API
 
-Добавьте еще один проект в то же решение и назовите его *MyWebAPI*. Выберите тип проекта **API** и снимите флажок **Настроить для HTTPS**. В данном случае протокол SSL используется только для обмена данными с клиентом, но не для обмена данными между контейнерами в пределах веб-приложения. Только для `WebFrontEnd` необходим протокол HTTPS, а в коде в примерах предполагается, что флажок снят.
+Добавьте еще один проект в то же решение и назовите его *MyWebAPI*. Выберите тип проекта **API** и снимите флажок **Настроить для HTTPS**. В данном случае протокол SSL используется только для обмена данными с клиентом, но не для обмена данными между контейнерами в пределах веб-приложения. Только для `WebFrontEnd` необходим протокол HTTPS, а в коде в примерах предполагается, что флажок снят. Используемые Visual Studio сертификаты разработчика .NET обычно позволяют выполнять запросы к контейнеру извне, а не запросы между контейнерами.
 
 ::: moniker range="vs-2017"
    ![Снимок экрана: создание проекта веб-API](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -188,11 +188,11 @@ ms.locfileid: "77027330"
 
    В веб-приложении для .NET 3.1 отображаются данные о погоде в формате JSON.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Ознакомьтесь с вариантами развертывания [контейнеров в Azure](/azure/containers).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Инструменты для работы с контейнерами](/visualstudio/containers/)

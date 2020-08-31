@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
-ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
+ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87818590"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801065"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -152,7 +152,7 @@ Visual Studio постоянно меняется в соответствии �
 
 Мы представляем новое расширение, которое можно скачать для использования в Visual Studio 2019. С помощью этого нового расширения можно просматривать, запускать и даже выполнять отладку запросов на вытягивание, не выходя из Visual Studio. Мы включили поддержку кода в репозиториях GitHub и DevOps в Azure.
 
-   ![Снимок экрана: новое окно запуска в Visual Studio 2019](media/vs-2019/pr-experience.png)
+   ![Снимок экрана: новое расширение для запросов на вытягивание в Visual Studio 2019](media/vs-2019/pr-experience.png)
 
 Дополнительные сведения см. в записи блога [Проверка кода с помощью расширения для запросов на вытягивание в Visual Studio](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
@@ -241,9 +241,9 @@ Visual Studio постоянно меняется в соответствии �
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Заметки о выпуске Visual Studio 2019 для Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Новые возможности C++ в Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
-* [Новые возможности C# 8.0](/dotnet/csharp/whats-new/csharp-8.md)
-* [Новые возможности .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1.md)
-* [Новые возможности .NET Framework](/dotnet/framework/whats-new.md)
+* [Новые возможности C++ в Visual Studio](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
+* [Новые возможности C# 8.0](/dotnet/csharp/whats-new/csharp-8/)
+* [Новые возможности .NET Core 3.1](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [Новые возможности .NET Framework](/dotnet/framework/whats-new/)
 * [Конференция Microsoft Build](https://www.microsoft.com/build)
 * [Конференция Microsoft Ignite](https://www.microsoft.com/ignite)

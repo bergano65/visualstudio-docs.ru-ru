@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115324"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801078"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 Как действующий подписчик Visual Studio вы можете использовать целый ряд возможностей в Azure DevOps, которые включены в вашу подписку в виде преимуществ. Вы сможете использовать эти возможности в каждой организации Azure DevOps, членом которой вы являетесь, независимо от того, создали вы эту организацию или были добавлены в нее.
@@ -23,7 +23,7 @@ ms.locfileid: "87115324"
    > ![Фрагмент Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Для входа в Azure DevOps вы можете использовать тот же идентификатор, который применялся для активации подписки Visual Studio, или [альтернативный идентификатор](vs-alternate-identity.md) — система распознает вас автоматически.  Таким образом, вы можете добавить рабочую или учебную учетную запись (которую вы используете при входе в Visual Studio, Office 365, сеть организации или школы), чтобы использовать Azure DevOps через личную учетную запись, а также рабочую или учебную учетную запись.
+Для входа в Azure DevOps вы можете использовать тот же идентификатор, который применялся для активации подписки Visual Studio, или [альтернативный идентификатор](vs-alternate-identity.md) — система распознает вас автоматически.  Таким образом вы можете добавить рабочую или учебную учетную запись (которую вы используете при входе в Visual Studio, Microsoft 365, сеть организации или школы), чтобы использовать Azure DevOps через личную учетную запись, а также рабочую или учебную учетную запись.
 
 [Регистрация для бесплатного получения организации Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
