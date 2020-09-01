@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 095631abc5678a27a4e79611433ff446337b956c
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835619"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219612"
 ---
 # <a name="reliability-warnings"></a>Предупреждения, связанные с надежностью
 
@@ -34,10 +34,11 @@ ms.locfileid: "85835619"
 |[CA2004. Удалите вызовы GC.KeepAlive](../code-quality/ca2004.md)|При преобразовании в использование SafeHandle удалите все вызовы GC. KeepAlive (объект). В этом случае классы не должны вызывать GC. KeepAlive, предполагая, что они не имеют метода завершения, но используют SafeHandle для окончательного завершения дескриптора ОС.|
 |[CA2006. Используйте SafeHandle для инкапсуляции собственных ресурсов](../code-quality/ca2006.md)|Использование указателя IntPtr в управляемом коде может указывать на потенциальную проблему безопасности и надежности. Необходимо изучить все случаи использования указателя IntPtr, чтобы определить, не следует ли использовать вместо него класс SafeHandle или другую подобную технологию.|
 |[CA2007. Не следует напрямую ожидать Task](../code-quality/ca2007.md)|Асинхронный метод [ожидает](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> непосредственного.|
-|[CA2009: Не вызывайте ToImmutableCollection для значения ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`метод не обязательно был вызван для неизменяемой коллекции из <xref:System.Collections.Immutable> пространства имен.|
+|[CA2008: не создавать задачи без передачи TaskScheduler](../code-quality/ca2008.md)|Операция создания или продолжения задачи использует перегрузку метода, в которой не указан <xref:System.Threading.Tasks.TaskScheduler> параметр.|
+|[CA2009: Не вызывайте ToImmutableCollection для значения ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable` метод не обязательно был вызван для неизменяемой коллекции из <xref:System.Collections.Immutable> пространства имен.|
 |[CA2011: не присваивайте свойство в методе задания](../code-quality/ca2011.md) | Свойству было случайно присвоено значение в собственном [методе доступа set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
 |[CA2012: используйте ValueTasks правильно](../code-quality/ca2012.md) | Валуетаскс, возвращенные из вызовов членов, должны быть непосредственно ожидаются.  Попытки использовать ValueTask несколько раз или для прямого доступа к одному результату до его завершения могут привести к возникновению исключения или повреждения.  Пропуск такого ValueTask, скорее всего, указывает на функциональную ошибку и может привести к снижению производительности. |
 |[CA2013: не используйте ReferenceEquals с типами значений](../code-quality/ca2013.md) | При сравнении значений с помощью <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , если обжа и обжб являются типами значений, они упаковываются перед передачей в <xref:System.Object.ReferenceEquals%2A> метод. Это означает, что даже если оба обжа и Обжб представляют один и тот же экземпляр типа значения, <xref:System.Object.ReferenceEquals%2A> метод, тем не менее, возвращает значение false. |
 |[CA2014: не используйте stackalloc в циклах.](../code-quality/ca2014.md) | Пространство стека, выделенное stackalloc, освобождается только в конце вызова текущего метода.  Использование в цикле может привести к неограниченному росту стека и появлению условий переполнения стека. |
 |[CA2015: не определяйте методы завершения для типов, производных от Мемориманажер &lt; T&gt;](../code-quality/ca2015.md) | Добавление метода завершения к типу, производному от, <xref:System.Buffers.MemoryManager%601> может привести к освобождению памяти, пока она еще используется <xref:System.Span%601> . |
-|[CA2016: пересылка параметра CancellationToken методам, принимающим один](ca2016.md) | Перешлите `CancellationToken` параметр методам, принимающим один из них, чтобы убедиться, что уведомления об отмене операций правильно распространены, или явно передать, `CancellationToken.None` чтобы указать намеренно не распространять маркер. |
+|[CA2016: Переадресовывать параметр CancellationToken методам, которые его принимают](ca2016.md) | Перешлите `CancellationToken` параметр методам, принимающим один из них, чтобы убедиться, что уведомления об отмене операций правильно распространены, или явно передать, `CancellationToken.None` чтобы указать намеренно не распространять маркер. |

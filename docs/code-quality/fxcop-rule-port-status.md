@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189480"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219729"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -68,14 +68,14 @@ ms.locfileid: "82189480"
 [CA1063](ca1063.md) | Правильно реализуйте IDisposable
 [CA1064](ca1064.md) | Исключения должны быть общими
 [CA1065](ca1065.md) | Не вызывайте исключения в непредвиденных местах
-[CA1066](ca1066.md) | Тип {0} должен реализовывать IEquatable\<T> так как он переопределяет Equals
-[CA1067](ca1067.md) | Переопределить Object. Equals (Object) при реализации\<IEquatable T>
+[CA1066](ca1066.md) | Тип {0} должен реализовывать IEquatable, \<T> так как он переопределяет Equals
+[CA1067](ca1067.md) | Переопределить Object. Equals (Object) при реализации IEquatable\<T>
 [CA1068](ca1068.md) | Параметры CancellationToken должны быть последними
 CA1200 | Избегайте использования тегов cref с префиксом
 [CA1303](ca1303.md) | Не передавайте литералы в качестве локализованных параметров
 [CA1304](ca1304.md) | Указывайте CultureInfo
 [CA1305](ca1305.md) | Указывайте IFormatProvider
-[CA1307](ca1307.md) | Указывайте StringComparison
+[CA1307](ca1307.md) | Укажите StringComparison для ясности
 [CA1308](ca1308.md) | Нормализуйте строки в верхний регистр
 [CA1309](ca1309.md) | Использовать порядковое сравнение строк
 [CA1401](ca1401.md) | Методы P/Invoke не должны быть видимыми
@@ -119,7 +119,7 @@ CA1826 | Не используйте перечислимые методы в и
 [CA2000](ca2000.md) | Ликвидируйте объекты перед потерей области
 [CA2002](ca2002.md) | Не блокируйте объекты с ненадежными удостоверениями
 [CA2007](ca2007.md) | Попробуйте вызвать ConfigureAwait для ожидаемой задачи
-CA2008 | Не создавать задачи без передачи TaskScheduler
+[CA2008](ca2008.md) | Не создавать задачи без передачи TaskScheduler
 CA2009 | Не вызывайте Тоиммутаблеколлектион для значения Иммутаблеколлектион
 CA2010 | Всегда потреблять значение, возвращаемое методами, помеченными Пресервесигаттрибуте
 [CA2100](ca2100.md) | Проверьте запросы SQL на наличие уязвимостей системы безопасности
