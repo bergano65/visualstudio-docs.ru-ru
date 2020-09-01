@@ -8,17 +8,17 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b4eb077ba8c957466568967804487929254117e
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 49bf12f3056eb7ddb0e0afb8333a1f1893c7b954
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114227"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284365"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>Элемент LocalizedDescription (схема языкового пакета VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Обязательный элемент. Содержит локализованное описание расширения.  
+Обязательный. Содержит локализованное описание расширения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,57 +33,31 @@ ms.locfileid: "88114227"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Отсутствуют||  
+|None||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|Отсутствуют||  
+|None||  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Обязательный элемент. Предоставляет корневой элемент для языкового пакета VSIX.|  
+|[Элемент LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Обязательный. Предоставляет корневой элемент для языкового пакета VSIX.|  
   
 ## <a name="text-value"></a>Текстовое значение  
- Обязательный элемент. Текстовое описание расширения на целевом языке.  
+ Обязательный. Текстовое описание расширения на целевом языке.  
   
 ## <a name="element-information"></a>Сведения об элементе  
-
-:::row:::
-    :::column:::
-        Пространство имен
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Имя схемы
-    :::column-end:::
-    :::column:::
-        Схема языкового пакета VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Файл проверки
-    :::column-end:::
-    :::column:::
-        Всикслангуажепакксчема. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Может быть пустым
-    :::column-end:::
-    :::column:::
-        Неприменимо
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Пространство имен    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Имя схемы   |                 Схема языкового пакета VSIX                 |
+| Файл проверки |                Всикслангуажепакксчема. xsd                 |
+|  Может быть пустым   |                      Неприменимо                       |
   
 ## <a name="see-also"></a>См. также:  
  [Справочник по схеме языкового пакета VSX](../extensibility/vsx-language-pack-schema-reference.md)   
