@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547281"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
@@ -36,7 +36,7 @@ ms.locfileid: "85547281"
 > [!NOTE]
 > Для создания карт кода необходимо иметь Visual Studio Enterprise Edition. Когда карта кода редактируется в Visual Studio, эта программа удаляет все неиспользуемые DGML-элементы и атрибуты при сохранении DGML-файла. Она также создает кодовые точки автоматически при добавлении новых связей вручную. При сохранении DGML-файла все атрибуты, добавляемые к элементу, могут самостоятельно упорядочиться в алфавитном порядке.
 
-## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>Элементы кода группы
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a> Элементы кода группы
  Можно добавить новые группы или преобразовать существующие узлы в группу.
 
 1. Откройте DGML-файл в текстовом редакторе или редакторе XML.
@@ -47,7 +47,7 @@ ms.locfileid: "85547281"
 
     Чтобы добавить новую группу, найдите раздел `<Nodes>`. Добавьте новый элемент `<Node/>`.
 
-3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Пример:
+3. В элементе `<Node/>` добавьте атрибут `Group`, чтобы указать разворачивать группу при отображении или нет. Например:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ ms.locfileid: "85547281"
 
    - Атрибут `Category`, который определяет отношение `Contains` между кодовой точкой группы и ее дочерней кодовой точкой
 
-     Пример:
+     Например:
 
    ```xml
    <Links>
@@ -77,7 +77,7 @@ ms.locfileid: "85547281"
 
     Дополнительные сведения об `Category` атрибуте см. в разделе [Назначение категорий элементам кода и ссылкам](#AssignCategories).
 
-## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>Изменение стиля схемы
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a> Изменение стиля схемы
  Цвет фона и цвет границы карты можно изменить в DGML-файле. Сведения об изменении стиля элементов кода и ссылок см. в разделе [Изменение стиля элементов кода и ссылок](#Highlight).
 
 1. Откройте DGML-файл в текстовом редакторе или редакторе XML.
@@ -96,7 +96,7 @@ ms.locfileid: "85547281"
     Stroke="StrokeValue"
     ```
 
-     Пример:
+     Например:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -105,7 +105,7 @@ ms.locfileid: "85547281"
     </DirectedGraph>
     ```
 
-## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>Изменение стиля элементов кода и ссылок
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a> Изменение стиля элементов кода и ссылок
 
 ### <a name="CreateCustomStyles"></a>
  Пользовательские стили можно применять к следующим кодовым точкам:
@@ -193,7 +193,7 @@ ms.locfileid: "85547281"
     Style="Plain"
     ```
 
-     Фигура
+     Фигурная
 
      Чтобы заменить фигуру на значок, задайте для свойства `Shape` значение `None`, а для свойства `Icon` — путь к файлу значка.
 
@@ -201,7 +201,7 @@ ms.locfileid: "85547281"
     Shape="ShapeFilePathLocation"
     ```
 
-     Пример:
+     Например:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "85547281"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Пример:
+     Например:
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ ms.locfileid: "85547281"
 
 2. В элементе `<Style/>` добавьте элемент `<Condition/>`, который содержит атрибут `Expression`, чтобы указать выражение, возвращающее логическое значение.
 
-    Пример:
+    Например:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ ms.locfileid: "85547281"
 
     Это выражение использует следующий синтаксис "Формы Бэкуса-Наура" (BNF):
 
-    \<Expression>:: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124;\<Number>
+    \<Expression> :: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
     \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
 
-    \<UnaryExpression>::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-"\<Expression>
+    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    \<Operator>:: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "или" &#124; "и" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> :: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "или" &#124; "и" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings>:: = \<MemberBindings> &#124; \<MemberBinding> "."\<MemberBinding>
+    \<MemberBindings> :: = \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
 
-    \<MemberBinding>:: = \<MethodCall> &#124;\<PropertyGet>
+    \<MemberBinding> :: = \<MethodCall> &#124; \<PropertyGet>
 
-    \<MethodCall>::= \<Identifier> "(" \<MethodArgs> ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet>:: = Идентификатор
+    \<PropertyGet> :: = Идентификатор
 
-    \<MethodArgs>:: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124;\<empty>
+    \<MethodArgs> :: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    \<Identifier>::= [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    \<Literal>:: = строковый литерал с одинарным или двойным кавычками
+    \<Literal> :: = строковый литерал с одинарным или двойным кавычками
 
-    \<Number>:: = строка цифр с необязательной десятичной запятой
+    \<Number> :: = строка цифр с необязательной десятичной запятой
 
     Можно указать несколько `<Condition/>` элементов, которые должны иметь значение true, чтобы применить стиль.
 
 3. В следующей строке после элемента `<Condition/>` добавьте один или несколько элементов `<Setter/>`, чтобы указать атрибут `Property` и фиксированный атрибут `Value` или вычисляемый атрибут `Expression`, чтобы применить к карте, кодовым точкам или связям, удовлетворяющим условию.
 
-    Пример:
+    Например:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -371,7 +371,7 @@ ms.locfileid: "85547281"
 
  Задайте цвет фона кодовой точки на основании свойства `Coverage`. Стили выполняются в порядке их появления, аналогично операторам `if-else`.
 
- В данном примере:
+ В этом примере:
 
 1. Если `Coverage` имеет значение > 80, задайте `Background` для свойства значение Green.
 
@@ -435,14 +435,14 @@ ms.locfileid: "85547281"
 </DirectedGraph>
 ```
 
-## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>Назначение свойств элементам кода и ссылкам
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a> Назначение свойств элементам кода и ссылкам
  Организовать кодовые точки и связи можно, назначив им свойства. Например, можно выбрать кодовые точки с определенными свойствами, чтобы можно было сгруппировать их, скрыть или изменить их стиль.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>Присвоение свойства кодовой точке
 
 1. Откройте DGML-файл в текстовом редакторе или редакторе XML.
 
-2. Найдите элемент `<Node/>` для этой кодовой точки. Укажите имя свойства и его значение. Пример:
+2. Найдите элемент `<Node/>` для этой кодовой точки. Укажите имя свойства и его значение. Например:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "85547281"
 
 2. Найдите элемент `<Link/>`, содержащий имена исходной и целевой кодовых точек.
 
-3. В элементе `<Node/>` укажите имя свойства и его значение. Пример:
+3. В элементе `<Node/>` укажите имя свойства и его значение. Например:
 
     ```xml
     <Links>
@@ -480,7 +480,7 @@ ms.locfileid: "85547281"
     </Properties>
     ```
 
-## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>Назначение категорий элементам кода и ссылкам
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a> Назначение категорий элементам кода и ссылкам
  В следующих разделах описано, как можно организовать кодовые точки, присвоив им категории, и как можно создать иерархические категории, которые помогут упорядочить кодовые точки и добавить атрибуты в дочерние категории с помощью наследования.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>Присвоение категории кодовой точке
@@ -489,7 +489,7 @@ ms.locfileid: "85547281"
 
 - Найдите элемент `<Node/>` для нужной кодовой точки.
 
-- В элементе `<Node/>` добавьте атрибут `Category`, чтобы указать имя категории. Пример:
+- В элементе `<Node/>` добавьте атрибут `Category`, чтобы указать имя категории. Например:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "85547281"
 
 2. Найдите элемент `<Link/>`, содержащий имена исходной и целевой кодовых точек.
 
-3. В элементе `<Link/>` добавьте атрибут `Category`, чтобы указать имя категории. Пример:
+3. В элементе `<Link/>` добавьте атрибут `Category`, чтобы указать имя категории. Например:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "85547281"
 
 2. Добавьте элемент `<Category/>` для родительской категории, затем добавьте атрибут `BasedOn` к элементу дочерней категории `<Category/>`.
 
-     Пример:
+     Например:
 
     ```xml
     <Nodes>
@@ -551,7 +551,7 @@ ms.locfileid: "85547281"
 
      В этом примере фон `MyFirstNode` зеленый, так как его атрибут `Category` наследует атрибут `Background``MyParentCategory`.
 
-## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>Связывание документов или URL-адресов с элементами кода и ссылками
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> Связывание документов или URL-адресов с элементами кода и ссылками
  Чтобы связать документы или URL-адреса с кодовыми точками или связями, можно изменить DGML-файл карты и добавить атрибут `Reference` в элемент `<Node/>` для кодовой точки или элемент `<Link/>` для связи. Затем из этой кодовой точки или связи можно открывать и просматривать содержимое. Атрибут `Reference` задает путь к данному содержимому. Этот путь может относится к расположению DGML-файла или к абсолютному пути.
 
 > [!CAUTION]
@@ -582,7 +582,7 @@ ms.locfileid: "85547281"
      > [!NOTE]
      > У элемента может быть только один атрибут `Reference`.
 
-     Пример:
+     Например:
 
    ```xml
    <Nodes>
@@ -607,7 +607,7 @@ ms.locfileid: "85547281"
 
       4. Используйте `Label` атрибут, чтобы указать отображаемый текст в контекстном меню **Перейти к ссылке** на элемент кода.
 
-      Пример:
+      Например:
 
    ```xml
    <Nodes>

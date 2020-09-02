@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846142"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Использование конструктора действия для прежних версий
@@ -46,15 +46,15 @@ ms.locfileid: "75846142"
 ## <a name="configuring-an-activity"></a>Настройка действия
  Пока конструктор действия активен, для настройки свойств, перечисленных в следующей таблицы, можно использовать браузер свойств.
 
-|Идентификаторы|Comments|
+|Свойство|Комментарии|
 |--------------|--------------|
 |**Имя**|Имя действия.|
 |**Базовый класс**|Базовый класс от которого наследуется действие. Базовым классом по умолчанию является [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). В окне **Свойства** щелкните **базовый класс** многоточие **[...]** , чтобы выбрать другой базовый класс в [диалоговом окне Обзор и выбор типа .NET (прежние версии)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Описание**|Пользовательское описание действия.|
-|**Включено**|Установите значение **true** по умолчанию, чтобы включить выполнение и проверку действия. Задайте значение **false** , чтобы отключить выполнение и проверку действия. Сведения о выполнении и проверке действий см. в разделе [Разработка действий рабочего процесса](https://msdn2.microsoft.com/library/ms734413.aspx).|
+|**Включен**|Установите значение **true** по умолчанию, чтобы включить выполнение и проверку действия. Задайте значение **false** , чтобы отключить выполнение и проверку действия. Сведения о выполнении и проверке действий см. в разделе [Разработка действий рабочего процесса](https://msdn2.microsoft.com/library/ms734413.aspx).|
 
 ## <a name="adding-child-activities"></a>Добавление дочерних действий
  Можно перетащить дочерние действия с панели элементов на разрабатываемое действие. Далее, используя браузер свойств, можно настроить каждое дочернее действие.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Разработка действий рабочего процесса](https://msdn2.microsoft.com/library/ms734413.aspx) [Создание настраиваемых действий](https://msdn2.microsoft.com/library/bb675228.aspx) [устаревшие действия рабочих процессов](../workflow-designer/legacy-workflow-activities.md) [примеры](https://msdn2.microsoft.com/library/bb472471.aspx) действий [: создание библиотеки действий рабочего процесса (устаревшая)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [с помощью устаревшей конструктор рабочих процессов](../workflow-designer/using-the-legacy-workflow-designer.md)

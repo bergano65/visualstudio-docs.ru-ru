@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164557"
 ---
 # <a name="caller--callee-view----contention-data"></a>Представление "Вызывающий/вызываемый" — данные о конфликтах
@@ -29,7 +29,7 @@ ms.locfileid: "68164557"
   
  **Функции, которые были вызваны текущей функцией**, отображаются в нижней таблице, в которой указываются данные о конфликтах, связанных с вызываемыми (дочерними) функциями, которые вызывались текущей функцией.  
   
-|Столбец|ОПИСАНИЕ|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Type**|Контекст функции:<br /><br /> -   **0** — текущая функция;<br />-   **1** — функция, вызывающая текущую функцию;<br />-   **2** — функция, вызываемая текущей функцией.<br /><br /> Только в отчетах командной строки [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Эксклюзивное время блокировки**|Для текущей функции — время блокировки выполнения кода, содержащегося в теле функции. Сюда не включается время блокировки в функциях, которые были вызваны данной функцией.<br />Для вызывающей функции — период эксклюзивной блокировки для текущей функции, которая происходила при вызовах текущей функции из этой функции.<br />Для вызываемой функции — время блокировки выполнения кода в этой функции, которая происходила при вызове этой функции из текущей функции. Сюда не включается время блокировки в дочерних функциях, которые были вызваны вызываемой функцией.|  
@@ -50,10 +50,10 @@ ms.locfileid: "68164557"
 |**Имя корневой функции**|Имя текущей функции. Только в отчетах командной строки [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Вызывающий/вызываемый"](../profiling/caller-callee-view.md)   
- [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки)  
- [Caller/Callee View - NET Memory Instrumentation Data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  (Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET)  
- [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  (Представление "Вызывающий/вызываемый" — данные выборки памяти .NET)  
- [Представление "Вызывающий/вызываемый" — данные инструментирования](../profiling/caller-callee-view-instrumentation-data.md)
+ [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные инструментирования памяти NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные выборки памяти .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Представление "Вызывающий/вызываемый" — данные инструментирования](../profiling/caller-callee-view-instrumentation-data.md)
