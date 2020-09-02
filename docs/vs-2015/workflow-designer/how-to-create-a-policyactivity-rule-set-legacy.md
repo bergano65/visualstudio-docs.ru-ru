@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849317"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Как создать набор правил PolicyActivity (для прежних версий)
@@ -38,13 +38,13 @@ ms.locfileid: "75849317"
 
 3. Выполните одно из следующих действий.
 
-    - Щелкните **рулесетреференце** многоточие **[...]** , а затем выберите существующий набор правил в [диалоговом окне Выбор набора правил (прежние версии)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Далее перейдите к шагу 10.
+    - Щелкните **рулесетреференце** многоточие **[...]**, а затем выберите существующий набор правил в [диалоговом окне Выбор набора правил (прежние версии)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Далее перейдите к шагу 10.
 
-         \- или -
+         -или-
 
-    - Введите имя набора правил. Щелкните **рулесетреференце** многоточие **[...]** , а затем выберите **изменить** в [диалоговом окне Выбор набора правил (прежние версии)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
+    - Введите имя набора правил. Щелкните **рулесетреференце** многоточие **[...]**, а затем выберите **изменить** в [диалоговом окне Выбор набора правил (прежние версии)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         \- или -
+         -или-
 
     - Введите имя набора правил. Разверните свойство **рулесетреференце** и выберите многоточие **[...]** в свойстве **Определение набора правил** .
 
@@ -60,7 +60,7 @@ ms.locfileid: "75849317"
 
 8. Нажмите кнопку **Добавить правило** еще раз, чтобы добавить другое правило.
 
-9. Завершив настройку, нажмите кнопку **ОК**.
+9. По завершении нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Диалоговое окно "](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [" диалогового окна "Выбор набора правил"](../workflow-designer/select-rule-set-dialog-box-legacy.md) (устаревшее) с использованием [устаревших действий рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [для действия политики](https://msdn2.microsoft.com/library/bb675229.aspx)

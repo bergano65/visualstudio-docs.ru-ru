@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849334"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Как создать условие декларативного правила (для прежних версий)
@@ -37,7 +37,7 @@ ms.locfileid: "75849334"
 
 - [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [статемачиневоркфловактивити](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Для создания условия декларативного правила используется Редактор условий для правил
 
@@ -63,5 +63,5 @@ ms.locfileid: "75849334"
 
      Дополнительные сведения об использовании диалогового окна **Выбор** условия см. в разделе [диалоговое окно «Выбор условия» (устаревшая)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
-## <a name="see-also"></a>См. также раздел
- [Устаревшие действия рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [с использованием ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [с помощью действия IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) с [помощью действия репликатора](https://msdn2.microsoft.com/library/bb628544.aspx) в [Using the While Activity](https://msdn2.microsoft.com/library/bb628552.aspx) [диалоговом окне "Редактор условий правил действий" (устаревшая) ](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Диалоговое окно "Выбор условия" (устаревшее)](../workflow-designer/select-condition-dialog-box-legacy.md) [с использованием условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx)
+## <a name="see-also"></a>См. также:
+ [Устаревшие действия рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [с использованием ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [с помощью действия IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) [с помощью действия репликатора](https://msdn2.microsoft.com/library/bb628544.aspx) в [диалоговом окне диалогового окна](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) « [время выполнения правила действия](https://msdn2.microsoft.com/library/bb628552.aspx) » (устаревшая) диалоговое окно [выбора условия (](../workflow-designer/select-condition-dialog-box-legacy.md) устаревшая) [Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx)

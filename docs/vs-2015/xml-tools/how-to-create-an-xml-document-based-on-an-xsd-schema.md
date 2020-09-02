@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e48c48d6711a1eb21157122d13790e22688855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670948"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как создать XML-документ на основе XSD-схемы
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Функция **создания примера XML** создает пример XML-файла на основе файла схемы XML (XSD).
+Функция **Создание образца XML** создает образец XML-файла на основании файла XML-схемы (XSD).
 
  Этот пункт можно использовать в следующих случаях.
 
@@ -27,7 +27,7 @@ ms.locfileid: "72670948"
 
 - Чтобы убедиться в том, что схема функционирует должным образом.
 
-  Функция **создания образца XML** доступна только для глобальных элементов и требует наличия допустимого набора XML-схем.
+  Функция **Создание образца XML** доступна только для глобальных элементов и требует, чтобы набор схем XML был допустимым.
 
   С помощью этой функции обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72670948"
 
 1. Выполните действия, описанные в разделе [Создание и изменение файла XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. В [обозревателе XML-схем](../xml-tools/xml-schema-explorer.md)щелкните правой кнопкой мыши `PurchaseOrder` глобальный элемент. Выберите **создать образец XML**.
+2. В [обозревателе XML-схем](../xml-tools/xml-schema-explorer.md) щелкните правой кнопкой мыши глобальный элемент `PurchaseOrder`. Выберите **Создание образца XML**.
 
      Если выбран данный параметр, файл PurchaseOrder.xml со следующим образцом XML-содержимого будет создан и открыт в редакторе XML:
 
@@ -76,5 +76,5 @@ ms.locfileid: "72670948"
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Работа с XML-данными](../xml-tools/working-with-xml-data.md)

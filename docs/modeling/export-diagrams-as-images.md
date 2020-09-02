@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547606"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 
 В Visual Studio можно сохранять схемы моделирования в форматах только для чтения, чтобы иметь возможность совместно использовать их с заинтересованными лицами, пользователями или членами проектной группы, использующими другие версии Visual Studio.
 
-Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. раздел [Поддержка архитектуры и средств моделирования в выпуске](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. раздел [Поддержка инструментов моделирования и архитектуры в различных выпусках](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование диаграммы или части диаграммы в другое приложение
 

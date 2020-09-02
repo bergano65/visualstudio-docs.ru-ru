@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionО-оценщик::GetMethodProperty Документы Майкрософт
+title: 'Идебужекспрессионевалуатор:: Жетмесодпроперти | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729508"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-Этот метод получает объект свойства, содержащий местных жителей, аргументы и другие свойства метода.
+Этот метод возвращает объект Property, содержащий локальные переменные, аргументы и другие свойства метода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,27 +49,27 @@ int GetMethodProperty(
 
 ## <a name="parameters"></a>Параметры
 `pSymbolProvider`\
-(в) Поставщик символов, который будет использоваться, выражается как объект [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+окне Используемый поставщик символов, выраженный как объект [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .
 
 `pAddress`\
-(в) Адрес в коде, выраженный как объект [IDebugAddress,](../../../extensibility/debugger/reference/idebugaddress.md) который должен быть решен до ближайшей функции, содержащей.
+окне Адрес в коде, выраженный как объект [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) , который должен быть разрешаться в ближайшую содержащую функцию.
 
 `pBinder`\
-(в) Связующего, который будет использоваться, выраженный как объект [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
+окне Используемый связыватель, выраженный как объект [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) .
 
 `fIncludeHiddenLocals`\
-(в) Nonzero`TRUE`() означает включение скрытых местных жителей; ноль`FALSE`() означает оставить скрытые местные жители
+окне Ненулевое ( `TRUE` ) означает включение скрытых локальных переменных; нуль ( `FALSE` ) означает выход из скрытых локальных переменных
 
 `ppProperty`\
-(ваут) Возвращает объект [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) представляющий метод.
+заполняет Возвращает объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий метод.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Скрытые местные жители, как правило, переменные, которые генерируются компилятором.
+## <a name="remarks"></a>Remarks
+ Скрытые локальные переменные обычно являются переменными, создаваемыми компилятором.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

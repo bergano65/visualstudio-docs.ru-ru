@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547645"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
@@ -26,7 +26,7 @@ ms.locfileid: "85547645"
 
 1. Создайте новую папку с именем **мефекстенсион** в проекте **DslPackage** . Добавьте в него следующие файлы:
 
-     Имя файла:`CommandExtensionVSCT.tt`
+     Имя файла: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Задать GUID в этом файле так же, как GUID Коммандсетид, определенный в Дслпаккаже\женератедкоде\константс.ТТ
@@ -42,21 +42,21 @@ ms.locfileid: "85547645"
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Имя файла:`CommandExtensionRegistrar.tt`
+    Имя файла: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Имя файла:`ValidationExtensionEnablement.tt`
+    Имя файла: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Имя файла:`ValidationExtensionRegistrar.tt`
+    Имя файла: `ValidationExtensionRegistrar.tt`
 
     При добавлении этого файла необходимо включить проверку в DSL, используя хотя бы один из параметров в **едиторвалидатион** в обозревателе DSL.
 
@@ -65,7 +65,7 @@ ms.locfileid: "85547645"
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Имя файла:`PackageExtensionEnablement.tt`
+    Имя файла: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ ms.locfileid: "85547645"
 
 2. Создайте новую папку с именем **мефекстенсион** в проекте **DSL** . Добавьте в него следующие файлы:
 
-     Имя файла:`DesignerExtensionMetaDataAttribute.tt`
+     Имя файла: `DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Имя файла:`GestureExtensionEnablement.tt`
+    Имя файла: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Имя файла:`GestureExtensionController.tt`
+    Имя файла: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -177,7 +177,7 @@ ms.locfileid: "85547645"
 
 Чтобы создать команду меню, определите класс, реализующий интерфейс, <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> и добавьте к нему префикс с атрибутом, определенным в DSL, с именем *йоурдсл* `CommandExtension` . Можно создать более одного класса команд меню.
 
-`QueryStatus()`вызывается всякий раз, когда пользователь щелкает схему правой кнопкой мыши. Он должен проверить текущее выделение и задать параметр, `command.Enabled` чтобы указать, когда команда применима.
+`QueryStatus()` вызывается всякий раз, когда пользователь щелкает схему правой кнопкой мыши. Он должен проверить текущее выделение и задать параметр, `command.Enabled` чтобы указать, когда команда применима.
 
 ```csharp
 using System.ComponentModel.Composition;

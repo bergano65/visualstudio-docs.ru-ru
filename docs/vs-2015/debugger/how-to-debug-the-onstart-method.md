@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 391b906889dcbe422f7ec227b1d375be82e7ac91
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700176"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Практическое руководство. отладку метода OnStart
@@ -47,7 +47,7 @@ ms.locfileid: "65700176"
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3. Выберите **Да, отладить \<имя_службы>.**  
+3. Выберите **Да, запустить отладку \<service name>.**  
   
 4. В окне отладчика JIT выберите версию Visual Studio, которую необходимо использовать для отладки.  
   
@@ -55,6 +55,6 @@ ms.locfileid: "65700176"
   
 5. Запустится новый экземпляр Visual Studio, а выполнение будет остановлено на методе `Debugger.Launch()` .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)

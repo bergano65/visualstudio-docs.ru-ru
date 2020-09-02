@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionОзаряд2::PперенагрузкаМодули (ru) Документы Майкрософт
+title: IDebugExpressionEvaluator2::P Релоадмодулес | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729329"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Предзагружает модули, назначенные указанным поставщиком символов.
+Предварительно загружает модули, назначенные указанным поставщиком символов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>Параметры
 `pSym`\
-(в) Поставщик символа, для которого модули будут предварительно загружены.
+окне Поставщик символов, для которого будут предварительно загружены модули.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Этот дополнительный метод используется при подключении хостинг-процесса. Это дает EE возможность "разогреться" как часть прикрепления.
+## <a name="remarks"></a>Remarks
+Этот необязательный метод используется при выполнении присоединения ведущего процесса. Он дает EE возможность "прогрев" в составе подключения.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **ExpressionEvaluatorPackage,** который предоставляет интерфейс [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+В следующем примере показано, как реализовать этот метод для объекта **експрессионевалуаторпаккаже** , предоставляющего интерфейс [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules
@@ -77,5 +77,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

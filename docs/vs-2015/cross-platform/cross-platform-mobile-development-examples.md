@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151006"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Примеры разработки кроссплатформенных мобильных приложений
@@ -53,4 +53,4 @@ ms.locfileid: "68151006"
   
   Чтобы открыть один из примеров в Visual Studio, скачайте ZIP-файл и откройте страницу **Свойства** этого файла в проводнике. Нажмите кнопку **Разблокировать** , а затем кнопку **ОК**. Извлеките содержимое ZIP-файла в удобное место, откройте папку C++ в извлеченном образце, а затем откройте файл решения.  
   
-  Чтобы выполнить сборку образца, нажмите клавишу F7 или выберите в строке меню **Сборка**&gt; **Собрать решение**.
+  Чтобы построить пример, нажмите клавишу F7 или в строке меню выберите **Сборка**, **построить решение**.

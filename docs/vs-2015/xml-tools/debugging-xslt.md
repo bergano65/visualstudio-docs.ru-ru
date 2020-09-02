@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25f90577cecbd3bd681d0c7f3e18355fede9faa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670999"
 ---
 # <a name="debug-xslt"></a>Отладка XSLT
@@ -21,7 +21,7 @@ ms.locfileid: "72670999"
 
 Для отладки XSLT можно использовать отладчик среды Visual Studio. Отладчик поддерживает задание точек останова, просмотр состояний выполнения XSLT и т. д. Отладка XSLT доступна в Visual Studio Professional Edition.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
 
  [Как начать отладку XSLT](../xml-tools/how-to-start-debugging-xslt.md) Описание запуска отладчика XSLT.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72670999"
 
  [Профилировщик XSLT](../xml-tools/xslt-profiler.md) Описывает, как получить доступ к профилировщику XSLT.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Редактирование таблиц стилей XSLT](../xml-tools/editing-xslt-style-sheets.md) Описывает использование редактора XML для редактирования таблиц стилей.
 
  [Вопросы безопасности при работе с XML-данными](../xml-tools/security-considerations-when-working-with-xml-data.md) Обсуждаются вопросы безопасности, о которых необходимо знать при работе с редактором XML или отладчиком XSLT.

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da32f0bfce9edf652e19df6b68bc51ed92624d80
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699018"
 ---
 # <a name="getwinfxpath-task"></a>Задача GetWinFXPath
@@ -59,9 +59,9 @@ ms.locfileid: "65699018"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+## <a name="see-also"></a>См. также:  
+ [Справочник по MSBuild для WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Справочник по задачам](../msbuild/wpf-msbuild-task-reference.md)   
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
+ [Создание приложения WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
