@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7918844915d32893491f69b4e7f58a5867c3613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144324"
 ---
 # <a name="taskbody-element-msbuild"></a>Элемент TaskBody (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Содержит данные, передаваемые в `UsingTask``TaskFactory`. Дополнительные сведения см. в статье [UsingTask Element (MSBuild)](../msbuild/usingtask-element-msbuild.md) (элемент UsingTask (MSBuild)).  
+Содержит данные, передаваемые в `UsingTask``TaskFactory`. Дополнительные сведения см. в разделе [элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  \<Project>  
  \<UsingTask>  
@@ -44,19 +44,19 @@ ms.locfileid: "68144324"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|ОПИСАНИЕ|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Evaluate`|Дополнительный логический атрибут.<br /><br /> Если он имеет значение `true`, MSBuild при создании экземпляра задачи оценивает все внутренние элементы и развертывает все элементы и свойства, прежде чем передать данные в `TaskFactory`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Данные|Текст между тегами `TaskBody` отправляется в `TaskFactory` без изменений.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль.|  
   
@@ -76,7 +76,7 @@ ms.locfileid: "68144324"
 </UsingTask>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Операции](../msbuild/msbuild-tasks.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

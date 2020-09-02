@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663423"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Как настроить свойства проекта рабочего процесса (для прежних версий)
@@ -29,11 +29,11 @@ ms.locfileid: "72663423"
 
 1. Если **Обозреватель решений** окно не отображается, выберите **Обозреватель решений** в меню **вид** .
 
-2. Выберите проект в **обозревателе решений**.
+2. В **Обозреватель решений**выберите проект.
 
 3. Если окно **Свойства** не отображается, в меню **вид** выберите пункт **окно свойств** .
 
 4. В окне **Свойства** проекта просмотрите и измените свойства, которые необходимо изменить.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)

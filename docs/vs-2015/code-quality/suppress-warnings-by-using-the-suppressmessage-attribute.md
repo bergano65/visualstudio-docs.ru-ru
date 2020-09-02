@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a5d64a27759cf844550297beb19b026bbeaa0e40
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546826"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Подавление предупреждений при помощи атрибута SuppressMessage
@@ -38,5 +38,5 @@ ms.locfileid: "85546826"
 |[Общие сведения о подавлении в исходном коде](../code-quality/in-source-suppression-overview.md)|Узнайте о ISS и о том, как использовать его в коде.|
 |[Практическое руководство. Отключение предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Сведения о подавлении предупреждений в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среде разработки с помощью контекстного меню.|
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

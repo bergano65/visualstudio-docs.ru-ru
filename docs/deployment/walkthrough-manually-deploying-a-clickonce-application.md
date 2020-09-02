@@ -21,16 +21,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249975"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Пошаговое руководство. Развертывание приложения ClickOnce вручную
 Если вы не можете использовать Visual Studio для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения или вам необходимо использовать расширенные функции развертывания, такие как развертывание доверенных приложений, следует использовать средство командной строки *Mage.exe* для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифестов. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью версии командной строки (*Mage.exe*) или графической версии (*MageUI.exe*) инструмент создания и изменения манифестов.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Обязательные условия
  В этом пошаговом руководстве есть некоторые предварительные требования и параметры, которые необходимо выбрать перед созданием развертывания.
 
 - Установите *Mage.exe* и *MageUI.exe*.
@@ -189,10 +189,10 @@ ms.locfileid: "88249975"
 
 29. Предоставьте пользователям URL-адрес, UNC или физический носитель, необходимые для установки приложения. Если вы предоставляете URL-адрес или UNC, необходимо предоставить пользователям полный путь к манифесту развертывания. Например, если Апптодеплой развернут в http://webserver01/ каталоге апптодеплой, то полный путь URL-адреса будет иметь значение http://webserver01/AppToDeploy/AppToDeploy.application .
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Если необходимо развернуть новую версию приложения, создайте новый каталог с именем после новой версии, например 1.0.0.1, и скопируйте новые файлы приложения в новый каталог. Далее необходимо выполнить описанные выше действия, чтобы создать и подписать новый манифест приложения, а также обновить и подписать манифест развертывания. Не забудьте указать ту же самую более позднюю версию как в *Mage.exe* , так `-New` и в `-Update` вызовах, так как [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] только обновляет более высокие версии, с наиболее значимым самым левым целым числом. Если вы использовали *MageUI.exe*, можно обновить манифест развертывания, открыв его, выбрав вкладку **ссылка на приложение** , нажав кнопку **Выбрать манифест** , а затем выбрав обновленный манифест приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

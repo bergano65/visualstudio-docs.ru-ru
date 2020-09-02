@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159233"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Разрешение сборок во время разработки
@@ -39,5 +39,5 @@ ms.locfileid: "68159233"
   
  Пакет нацеливания, который теперь поставляется в составе пакета SDK для .NET Framework, перечисляет все сборки среды выполнения для соответствующей версии платформы. Этот список называется списком распространения. Благодаря этому система сборки не будет разрешать типы по неправильным версиям сборок.  
   
-## <a name="see-also"></a>См. также  
- [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>См. также:  
+ [Дополнительные понятия](../msbuild/msbuild-advanced-concepts.md)

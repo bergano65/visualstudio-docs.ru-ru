@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2 Документы Майкрософт
+title: IEnumDebugFrameInfo2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716606"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
-Этот интерфейс перечисляет структуры [FRAMEINFO.](../../../extensibility/debugger/reference/frameinfo.md)
+Этот интерфейс перечисляет структуры [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,34 +28,34 @@ ms.locfileid: "80716606"
 IEnumDebugFrameInfo2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Движок отладки (DE) реализует этот интерфейс, чтобы предоставить список структур, описывающий текущий стек вызовов.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс, чтобы предоставить список структур, описывающих текущий стек вызовов.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Visual Studio вызывает [EnumFrameInfo,](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) чтобы получить этот интерфейс всякий раз, когда происходит точка разрыва, исключение или остановка в отладке программы.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Visual Studio вызывает [енумфрамеинфо](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) для получения этого интерфейса всякий раз, когда в отлаживаемой программе происходит точка останова, исключение или остановка.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IEnumDebugFrameInfo2`.
+ В следующей таблице показаны методы `IEnumDebugFrameInfo2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[Далее](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Извлекает определенное количество структур [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) в последовательности перечисления.|
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Пропускает определенное количество структур [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) в последовательности перечисления.|
-|[Сбросить](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Сбрасывает последовательность перечислений в начало.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md) (Клонировать)|Создает регистратор, содержащий то же состояние перечисления, что и текущий регистратор.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Получает количество структур [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) в регистраторе.|
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Извлекает указанное число структур [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) в последовательности перечисления.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Пропускает указанное число структур [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) в последовательности перечисления.|
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Сбрасывает последовательность перечислений в начало.|
+|[Клонировать](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Возвращает число структур [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) в перечислителе.|
 
-## <a name="remarks"></a>Примечания
- Visual Studio получает этот интерфейс в качестве первого шага к обработке точки разрыва, исключения или пользовательской паузы на отладке программы. Список структур [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) представляет текущий стек вызовов с текущим вызовом функции в начале списка и самым старым вызовом функции в конце списка. Каждый из них `FRAMEINFO` представляет кадр стека, контекст, в котором можно оценивать выражения и рассматривать локальные переменные.
+## <a name="remarks"></a>Remarks
+ Visual Studio получает этот интерфейс в качестве первого шага для обработки точки останова, исключения или созданной пользователем паузы в отлаживаемой программе. Список структур [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) представляет текущий стек вызовов с текущим вызовом функции в начале списка и самым старым вызовом функции в конце списка. Каждый `FRAMEINFO` представляет кадр стека, контекст, в котором выражения могут оцениваться, и локальные переменные, которые были просмотрены.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

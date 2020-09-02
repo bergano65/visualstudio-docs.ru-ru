@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о свойствах пользовательского документа
+title: Общие сведения о настраиваемых свойствах документа
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,42 +18,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951179"
 ---
-# <a name="custom-document-properties-overview"></a>Общие сведения о свойствах пользовательского документа
+# <a name="custom-document-properties-overview"></a>Общие сведения о настраиваемых свойствах документа
 
-При сборке проекта уровня документа Visual Studio добавляет в документ в проекте двум настраиваемым свойствам: \_AssemblyLocation и \_AssemblyName. Когда пользователь открывает документ, приложение Microsoft Office проверяет наличие настраиваемых свойств документа. Если они существуют в документе, приложение загружает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], которая запускает настройку. Дополнительные сведения см. в разделе [решений архитектура Microsoft Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+При построении проекта на уровне документа Visual Studio добавляет два пользовательских свойства в документ в проекте: \_ AssemblyLocation и \_ AssemblyName. Когда пользователь открывает документ, Microsoft Office приложение проверяет наличие этих настраиваемых свойств документа. Если они существуют в документе, приложение загружает объект [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , который запускает настройку. Дополнительные сведения см. [в статье архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_Имя_сборки
+## <a name="_assemblyname"></a>\_AssemblyName
 
-Это свойство содержит CLSID интерфейса в компоненте загрузчик решений Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Значение идентификатора CLSID — 4 4E3C66D5 - 58D-491E-A7D4-64AF99AF6E8B. Никогда не изменяйте это значение.
+Это свойство содержит идентификатор CLSID интерфейса в компоненте загрузчика решений Office компонента [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Значение CLSID — 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B. Это значение никогда не должно изменяться.
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="_assemblylocation"></a>\_AssemblyLocation
 
-Это свойство содержит строку, которая предоставляет сведения о манифесте развертывания для настройки. Дополнительные сведения о манифестах см. в разделе [манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Это свойство содержит строку, которая предоставляет сведения о манифесте развертывания для настройки. Дополнительные сведения о манифестах см. [в разделе Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- \_AssemblyLocation значение свойства могут иметь различные форматы, в зависимости от способа развертывания решения:
+ \_Значение свойства AssemblyLocation может иметь разные форматы в зависимости от способа развертывания решения:
 
-- Если решение публикуется устанавливаться с веб-сайта, UNC-путь или компакт-диска или USB-накопитель, свойства _AssemblyLocation имеет формат *DeploymentManifestPath*|*SolutionID*. Следующая строка представляет пример:
+- Если решение Опубликовано для установки с веб-сайта, пути в формате UNC или компакт-диска или устройства USB, то свойство _AssemblyLocation имеет формат *деплойментманифестпас* | *SolutionId*. Ниже приведен пример следующей строки.
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- При выполнении или отладке решения из Visual Studio, свойства _AssemblyLocation имеет формат *DeploymentManifestName*|*SolutionID*| vstolocal. Следующая строка представляет пример:
+- Если вы используете или выполняете отладку решения из Visual Studio, свойство _AssemblyLocation имеет формат *деплойментманифестнаме* | *SolutionId*| vstolocal. Ниже приведен пример следующей строки.
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     ExcelWorkbook1. VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  *SolutionID* представляет собой идентификатор GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] используется для идентификации решения. *SolutionID* создается автоматически при сборке проекта. **Vstolocal** условие указывает на [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] что сборка должна быть загружена из той же папке, что документ.
+  *SolutionId* — это идентификатор GUID, используемый [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] для обнаружения решения. *SolutionId* создается автоматически при построении проекта. Термин **vstolocal** указывает [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , что сборка должна быть загружена из той же папки, что и документ.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md)
-- [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Практическое руководство. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Практическое руководство. Создание и изменение настраиваемых свойств документа](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Архитектура настроек уровня документа](../vsto/architecture-of-document-level-customizations.md)
+- [Манифесты приложений и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Инструкции. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Как создавать и изменять пользовательские свойства документа](../vsto/how-to-create-and-modify-custom-document-properties.md)

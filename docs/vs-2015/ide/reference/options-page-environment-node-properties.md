@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595037"
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
@@ -24,7 +24,7 @@ ms.locfileid: "75595037"
 
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категорией **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.
 
-## <a name="general"></a>Общее
+## <a name="general"></a>Общие сведения
  `DTE.Properties("Environment", "General")`
 
 |Имя элемента свойства|Значение|Описание|
@@ -74,7 +74,7 @@ ms.locfileid: "75595037"
 |EnableOnline|Get/Set (Boolean)|Включает доступ к расширениям в коллекции Visual Studio.|
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|Автоматически проверяет наличие обновлений для установленных расширений.|
 
-## <a name="find-and-replace"></a>Поиск и замена
+## <a name="find-and-replace"></a>Найти и заменить
  `DTE.Properties("Environment", "FindAndReplace")`
 
 |Имя элемента свойства|Значение|Описание|
@@ -135,7 +135,7 @@ ms.locfileid: "75595037"
 
 |Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> — 0: открыть домашнюю страницу<br />— 1: загрузить последнее загружавшееся решение<br />— 2: показать диалоговое окно **Открытие проекта**<br />— 3: показать диалоговое окно **Создание проекта**<br />— 4: показать пустую среду<br />— 5: показать начальную страницу|
+|OnStartUp|Get/Set (Enum)|Действие, выполняемое при запуске из <xref:EnvDTE.vsStartUp> со значениями от 0 до 5:<br /><br /> 0: открыть домашнюю страницу<br />1: загрузить последнее загружавшееся решение<br />2: показать диалоговое окно **Открытие проекта**<br />3: показать диалоговое окно **Создание проекта**<br />4: показать пустую среду<br />5: показать начальную страницу|
 |StartPageRSSUrl|Get/Set (String)|URL-адрес RSS-канала, используемый при запуске.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Обновляет начальную страницу каждый раз по истечении интервала, заданного свойством StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Интервал обновления начальной страницы в минутах.|
@@ -160,10 +160,10 @@ ms.locfileid: "75595037"
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (источник, разработка, внешний).|
 |ViewSourceExternalProgram|Get/Set (String)|Путь к внешнему средству просмотра исходного кода.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-- [Страница "Параметры", свойства узла "Текстовый редактор"](../../ide/reference/options-page-text-editor-node-properties.md)
-- [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)
+- [Страница "Параметры"", свойства узла "Текстовый редактор"](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Диалоговое окно "параметры среды"](../../ide/reference/environment-options-dialog-box.md)

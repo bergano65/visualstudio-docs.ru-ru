@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893350"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка средств FxCop Analyzer в Visual Studio
@@ -121,7 +121,7 @@ ms.locfileid: "88893350"
 
 ::: moniker-end
 
-4. Щелкните **Загрузить**.
+4. Нажмите кнопку **Скачать**.
 
    Расширение скачивается.
 
@@ -153,7 +153,7 @@ ms.locfileid: "88893350"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Использование анализаторов кода в Visual Studio](../code-quality/use-roslyn-analyzers.md)

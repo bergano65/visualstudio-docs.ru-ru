@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ca0fb61c0973553ee6d410bc8b2718d19aeb28c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546865"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044. Свойства не должны быть доступными только для записи
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
@@ -45,7 +45,7 @@ ms.locfileid: "85546865"
  Настоятельно рекомендуется не отключать предупреждение из этого правила.
 
 ## <a name="example"></a>Пример
- В следующем примере `BadClassWithWriteOnlyProperty` — это тип с свойством, предназначенным только для записи. `GoodClassWithReadWriteProperty`содержит исправленный код.
+ В следующем примере `BadClassWithWriteOnlyProperty` — это тип с свойством, предназначенным только для записи. `GoodClassWithReadWriteProperty` содержит исправленный код.
 
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/cs/FxCop.Design.PropertiesNotWriteOnly.cs#1)]
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/vb/PropertiesNotWriteOnly.vb#1)]

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663440"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Как изменить вариант пошаговой отладки (для прежних версий)
@@ -37,9 +37,9 @@ ms.locfileid: "72663440"
 
 2. Откройте существующий проект рабочего процесса прежних версий или создайте новый проект, в котором применяются параллельные действия и который предназначен для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
-3. В меню **Рабочий процесс** в [!INCLUDE[wfd2](../includes/wfd2-md.md)]е прежних версий наведите указатель на пункт **Отладка**и выберите пункт **Параметры пошагового**выполнения.
+3. В меню **Рабочий процесс** в списке устаревшие [!INCLUDE[wfd2](../includes/wfd2-md.md)] наведите указатель на пункт **Отладка**и выберите пункт **параметры шага**.
 
 4. Выберите **экземпляр** или **ветвь**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Отладка устаревших рабочих процессов](../workflow-designer/debugging-legacy-workflows.md) [Отладка параметров пошагового выполнения (прежние версии)](../workflow-designer/debug-stepping-options-legacy.md)

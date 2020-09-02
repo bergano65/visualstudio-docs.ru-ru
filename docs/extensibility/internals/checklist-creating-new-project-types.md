@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9372762f713b6a5ec78a92eeb96e8a616101b5bf
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183396"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: создание новых типов проектов
@@ -57,7 +57,7 @@ ms.locfileid: "84183396"
 
 8. Создайте файл установщика Microsoft (*MSI*) для установки пакетов VSPackage. Дополнительные сведения см. в статьях [Установка пакетов VSPackage с установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)и [пакетов VSPackage](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Когда следует создавать типы проектов](../../extensibility/internals/when-to-create-project-types.md)
 - [Создание типов проектов](../../extensibility/internals/creating-project-types.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType | Документация Майкрософт
+title: 'Идебугаррайфиелд:: Жетелементтипе | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 00ae24c2449d9bd26895647fc8f7b026291c4288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68142976"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает тип элемента в массиве.  
+Возвращает тип элемента в массиве.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int GetElementType(
   
 #### <a name="parameters"></a>Параметры  
  `ppType`  
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий тип элемента.  
+ заполняет Возвращает объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , описывающий тип элемента.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) объект предполагает, что все элементы массива относятся к одному типу.  
+## <a name="remarks"></a>Remarks  
+ Объект [идебугаррайфиелд](../../../extensibility/debugger/reference/idebugarrayfield.md) предполагает, что все элементы массива имеют одинаковый тип.  
   
-## <a name="see-also"></a>См. также  
- [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугаррайфиелд](../../../extensibility/debugger/reference/idebugarrayfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -13,10 +13,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 263b947fff45eafd2d2e5afc029572b69ea24b82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158782"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
@@ -33,28 +33,28 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  Диспетчер отладки сеансов (SDM) обычно реализует этот интерфейс.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Модуль отладки (DE) получает этот интерфейс, посредством вызова [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) для создания ожидающая точка останова. Вызов [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) из DE можно получить этот интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Модуль отладки (DE) получает этот интерфейс через вызов [креатепендингбреакпоинт](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) для создания ожидающей точки останова. Вызов [жетбреакпоинтрекуест](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) может получить этот интерфейс из de.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugBreakpointRequest2`.  
+ В следующей таблице показаны методы `IDebugBreakpointRequest2` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Возвращает тип местоположения точки останова этого запроса точки останова.|  
-|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Получает сведения о запросе точки останова, описывающее этот запрос точки останова.|  
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Возвращает тип расположения точки останова для этого запроса точки останова.|  
+|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Получает сведения о запросе точки останова, описывающие этот запрос на точку останова.|  
   
-## <a name="remarks"></a>Примечания  
- После программа отлаживаемой загрузки, вызов [привязать](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) привязывает ожидающая точка останова в указанное место в программе.  
+## <a name="remarks"></a>Remarks  
+ После загрузки отлаживаемой программы вызов [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) привязывает отложенную точку останова к запрошенному расположению в программе.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
- [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)   
- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+## <a name="see-also"></a>См. также:  
+ [креатепендингбреакпоинт](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
+ [жетбреакпоинтрекуест](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)   
+ [Выполняется](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

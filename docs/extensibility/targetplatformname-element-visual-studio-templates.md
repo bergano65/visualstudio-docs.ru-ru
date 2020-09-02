@@ -1,5 +1,5 @@
 ---
-title: Элемент TargetPlatformName (Шаблоны визуальной студии) Документы Майкрософт
+title: Элемент Таржетплатформнаме (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699267"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName - элемент (шаблоны Visual Studio)
@@ -31,7 +31,7 @@ ms.locfileid: "80699267"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -48,7 +48,7 @@ ms.locfileid: "80699267"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Этот текст должен быть **Windows**.
 
 ## <a name="example"></a>Пример
@@ -64,6 +64,6 @@ ms.locfileid: "80699267"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

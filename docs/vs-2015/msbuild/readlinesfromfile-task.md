@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6783b3e20c004e4270876dd8ee6b8b574a810d66
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158243"
 ---
 # <a name="readlinesfromfile-task"></a>Задача ReadLinesFromFile
@@ -32,15 +32,15 @@ ms.locfileid: "68158243"
 Считывает список элементов из текстового файла.  
   
 ## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `ReadLinesFromFile` .  
+ В следующей таблице приводятся параметры задачи `ReadLinesFromFile`.  
   
-|Параметр|ОПИСАНИЕ|  
+|Параметр|Description|  
 |---------------|-----------------|  
-|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает файл, который нужно прочитать. Этот файл должен иметь по одному элементу на каждой строке.|  
+|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, который нужно прочитать. Этот файл должен иметь по одному элементу на каждой строке.|  
 |`Lines`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит строки, считываемые из файла.|  
   
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Remarks  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описание см. в разделе [базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример использует задачу `ReadLinesFromFile` для создания элементов из списка в текстовом файле. Считанные из файла элементы хранятся в коллекции элементов `ItemsFromFile`.  
@@ -64,7 +64,7 @@ ms.locfileid: "68158243"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

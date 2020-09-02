@@ -1,5 +1,5 @@
 ---
-title: ПоддерживаетЭлемент разделения кода (Visual Studio Templates) Документы Майкрософт
+title: Элемент Суппортскодесепаратион (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699499"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
-Уточняется, включен код **Place в отдельном** файлообменном поле в диалоговом поле **Add New Item.**
+Указывает, включен ли флажок « **размещать код в отдельном файле** » в диалоговом окне « **Добавление нового элемента** ».
 
- \<VSTemplate \<> TemplateData> \<поддерживает>разделения кода
+ \<VSTemplate> \<TemplateData>
+ \<SupportsCodeSeparation>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,31 +37,31 @@ ms.locfileid: "80699499"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Категоризирует шаблон и определяет, как он отображается в **new Project** или в диалоговом окне **New Item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в диалоговом окне **Новый проект** или **новый элемент** .|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Текст должен быть `true` `false`либо, либо , указывая, включен код **Place в отдельном файле** флажок в диалоговом поле **Добавить новый элемент.**
+ Текст должен иметь значение `true` или `false` , что указывает, включен ли флажок " **размещать код в отдельном файле** " в диалоговом окне " **Добавление нового элемента** ".
 
-## <a name="remarks"></a>Примечания
- Параметр `SupportsCodeSeparation` является необязательным элементом. Значение по умолчанию — `false`.
+## <a name="remarks"></a>Remarks
+ Параметр `SupportsCodeSeparation` является необязательным элементом. Значение по умолчанию — `false`.
 
- Элемент `SupportsCodeSeparation` доступен только для шаблонов web-элементов.
+ `SupportsCodeSeparation`Элемент доступен только для шаблонов веб-элементов.
 
- Разделение кода, или модель страницы с кодом, позволяет сохранить разметку в одном файле и код программирования в другом файле. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]и другие языки .NET используют эту модель.
+ Разделение кода или модель страницы кода программной части позволяет размещать разметку в одном файле и программном коде в другом файле. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и другие языки .NET используют эту модель.
 
 ## <a name="example"></a>Пример
- Ниже приводится следующий пример для отображения **кода Place в отдельном варианте файла.**
+ В следующем примере указывается, чтобы отобразить **код места в отдельном файле** .
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +85,6 @@ ms.locfileid: "80699499"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

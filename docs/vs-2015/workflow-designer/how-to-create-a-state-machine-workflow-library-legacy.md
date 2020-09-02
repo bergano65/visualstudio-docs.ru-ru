@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3cff5d6aaa28915524b7699affdf41d3bebef4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663377"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Как создать библиотеку рабочих процессов конечного автомата (для прежних версий)
@@ -27,7 +27,7 @@ ms.locfileid: "72663377"
 
 1. Запустите Visual Studio.
 
-2. В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
+2. В меню **Файл** последовательно выберите команды **Создать**и **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "72663377"
     > [!NOTE]
     > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] имеет значение **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.
 
-4. На панели **типы проектов** выберите визуальный C# элемент или Visual Basic (в разделе **другие языки**), а затем выберите **Рабочий процесс**.
+4. На панели **типы проектов** выберите Visual C# или Visual Basic (в разделе **другие языки**), а затем выберите **Рабочий процесс**.
 
 5. В области **шаблоны** выберите **Библиотека рабочих процессов конечного автомата**.
 
@@ -48,5 +48,5 @@ ms.locfileid: "72663377"
 
 8. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  Создание [рабочих процессов конечного автомата](https://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d) для [проектов рабочих процессов прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)

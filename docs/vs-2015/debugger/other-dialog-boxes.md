@@ -13,30 +13,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0178b9f79daa8ddec51d468cb22f3104c26b7f41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198156"
 ---
 # <a name="other-dialog-boxes"></a>Прочие диалоговые окна
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Этим диалоговым окнам отображения сведений о программе Spy ++.  
+В этих диалоговых окнах представлены сведения о программе Spy++.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [О Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
- Сведения о принадлежности программы Spy ++.  
+ Сведения о владении программой Spy + +.  
   
  [Уведомление об авторских правах для справки по Spy++](../debugger/copyright-notice-for-spy-increment-help.md)  
- Юридическое уведомление об авторских правах.  
+ Юридическая информация об авторских правах.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Справочник по Spy++](../debugger/spy-increment-reference.md)  
- Содержит разделы, описывающие каждый Spy ++ меню и диалоговое окно.  
+ Включает разделы, описывающие каждое меню и диалоговое окно Spy + +.  
   
  [Использование Spy++](../debugger/using-spy-increment.md)  
- Представлены средства Spy ++ и рассказывается, как он может использоваться.  
+ Содержит описание средства Spy + + и объясняет, как его можно использовать.  
   
  [Представления Spy++](../debugger/spy-increment-views.md)  
- Описание представления дерева Spy ++ окон, сообщений, процессов и потоков.
+ Описание древовидных представлений окон, сообщений, процессов и потоков в Spy + +.

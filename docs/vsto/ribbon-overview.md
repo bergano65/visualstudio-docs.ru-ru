@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985616"
 ---
 # <a name="ribbon-overview"></a>Общие сведения о ленте
@@ -103,7 +103,7 @@ ms.locfileid: "72985616"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Выбор лент для показа во время выполнения
  Поскольку проект может содержать более одной ленты, можно выбрать, какую ленту следует отображать во время выполнения.
 
- Чтобы выбрать ленту для отображения во время выполнения, переопределите метод `CreateRibbonExtensibilityObject` в классе `ThisAddin`, `ThisWorkbook`или `ThisDocument` проекта и верните ленту, которую требуется отобразить. В следующем примере проверяется значение поля с именем `myCondition` и возвращается соответствующая лента.
+ Чтобы выбрать ленту для отображения во время выполнения, переопределите `CreateRibbonExtensibilityObject` метод в `ThisAddin` классе, `ThisWorkbook` или `ThisDocument` проекта и возвратите ленту, которую требуется отобразить. В следующем примере проверяется значение поля с именем `myCondition` и возвращается соответствующая лента.
 
 > [!NOTE]
 > Синтаксис, используемый в этом примере, возвращает ленту, созданную с помощью элемента **Лента (визуальный конструктор)** . Синтаксис возврата ленты, созданной с помощью элемента **ленты (XML)** , немного отличается. Дополнительные сведения о возврате элемента **ленты (XML)** см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).

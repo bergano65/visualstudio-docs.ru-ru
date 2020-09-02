@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 13202f8eb266c82cdd57c227ed4c480a0c871cf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68142006"
 ---
 # <a name="debugging-wcf-services"></a>Отладка служб WCF
@@ -37,6 +37,6 @@ ms.locfileid: "68142006"
  [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  Описывается, как выполнить отладку службы WCF, которая выполняется вне IIS или сервера разработки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

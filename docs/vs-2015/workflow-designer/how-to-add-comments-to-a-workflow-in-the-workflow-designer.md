@@ -13,10 +13,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d775c79cc7abdf6a66b1174ae625ca468f0764fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663452"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Как добавлять комментарии в рабочий процесс в конструкторе рабочих процессов
@@ -45,7 +45,7 @@ ms.locfileid: "72663452"
 
 3. На элементе появится значок заметки. Если навести курсор мыши на значок заметки, отобразится текст заметки.
 
-     ![Действие Sequence, показывающее заметку](../workflow-designer/media/annotation.png "Комментарий")
+     ![Действие Sequence с примечанием](../workflow-designer/media/annotation.png "Заметка")
 
 ### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Отображение заметки в конструкторе действия
 
@@ -53,11 +53,11 @@ ms.locfileid: "72663452"
 
 2. Заметка будет отображаться в конструкторе действия. На снимке экрана ниже заметка «Запуск действия в рабочем процессе» отображается в конструкторе действия.
 
-     ![Аннотация, показанная в конструкторе действий](../workflow-designer/media/annotationindesigner.png "аннотатиониндесигнер")
+     ![Примечание, отображаемое в конструкторе действий](../workflow-designer/media/annotationindesigner.png "аннотатиониндесигнер")
 
 3. Чтобы отобразить заметку за пределами конструктора действия, наведите указатель мыши на область заметки в конструкторе действия и щелкните значок **открепить** .
 
-     ![Аннотация, отображаемая вне конструкции действия](../workflow-designer/media/annotationoutsidedesigner.png "аннотатионаутсидедесигнер")
+     ![Примечание, отображаемое за пределами конструктора действий](../workflow-designer/media/annotationoutsidedesigner.png "аннотатионаутсидедесигнер")
 
 ### <a name="showing-or-hiding-all-annotations"></a>Отображение или скрытие всех заметок
 
