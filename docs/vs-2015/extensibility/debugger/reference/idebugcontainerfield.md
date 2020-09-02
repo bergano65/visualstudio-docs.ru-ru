@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField | Документация Майкрософт
+title: Идебугконтаинерфиелд | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2656d3f5a3313a4538e3e0e6454dd671da635904
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686975"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
@@ -31,28 +31,28 @@ IDebugContainerField : IDebugField
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс. Этот интерфейс также является базовым классом для всех интерфейсов, представляющих контейнеры.  
+ Поставщик символов реализует этот интерфейс для того же объекта, который реализует интерфейс [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) . Этот интерфейс также является базовым классом для всех интерфейсов, представляющих контейнеры.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Многие методы на многих интерфейсов возвращают этот интерфейс. Так как это базовый класс для всех контейнеров, из этого интерфейса можно получить более специализированных интерфейсов, с помощью [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Такие интерфейсы включают [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Многие методы на многих интерфейсах возвращают этот интерфейс. Поскольку это базовый класс для всех контейнеров, более специализированные интерфейсы могут быть получены из этого интерфейса с помощью [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). К таким интерфейсам относятся [идебугаррайфиелд](../../../extensibility/debugger/reference/idebugarrayfield.md), [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md), [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md)и [идебугпропертифиелд](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, этот интерфейс реализует следующий метод:  
+ В дополнение к методам в интерфейсе [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
 |------------|-----------------|  
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Создает перечислитель для полей контейнера.|  
   
-## <a name="remarks"></a>Примечания  
- Массивы (контейнеры для переменных), классы (содержащих методы и переменные) и методы (содержащих параметры и локальные переменные) являются примерами контейнеров.  
+## <a name="remarks"></a>Remarks  
+ Массивы (контейнеры для переменных), классы (контейнеры для методов и переменных) и методы (контейнеры для параметров и локальных переменных) являются примерами контейнеров.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

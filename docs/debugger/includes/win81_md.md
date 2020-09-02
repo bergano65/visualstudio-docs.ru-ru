@@ -1,4 +1,4 @@
-﻿---
+---
 translation.priority.ht:
 - cs-cz
 - de-de
@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: df65286d9860851f588db79f1d35a9267d39e1f9
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143338"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89324198"
 ---
-Windows 8.1
+Windows 8.1

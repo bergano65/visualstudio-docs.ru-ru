@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Не удалось подключиться к машине &lt;имя&gt;. Не удается найти компьютер в сети. | Документы Майкрософт'
+title: 'Ошибка: не удается подключиться к компьютеру &lt;имя&gt;. Не удается найти компьютер в сети. | Документы Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd1402a476ce2dceaaaf78580b36db20c3eed24f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682557"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Ошибка: Не удалось подключиться к машине &lt;имя&gt;. Не удается найти компьютер в сети.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Ошибка: не удается подключиться к компьютеру &lt;имя&gt;. Не удается найти компьютер в сети.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Такая ошибка возникает, если выполняется одно из следующих условий:  
@@ -48,6 +48,6 @@ ms.locfileid: "65682557"
   
 - Убедитесь в том, что пароль для подключения к удаленному компьютеру правильный, и срок его действия не истек.  
   
-## <a name="see-also"></a>См. также  
- [Настройка инструментов удаленной отладки на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
+## <a name="see-also"></a>См. также:  
+ [Настройка удаленные средства на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

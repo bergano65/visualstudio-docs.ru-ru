@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705836"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Добавление данных взаимодействия уровней из командной строки
@@ -24,7 +24,7 @@ ms.locfileid: "65705836"
 
 Профилирование уровневого взаимодействия позволяет получить дополнительные сведения о времени выполнения синхронных вызовов [!INCLUDE[vstecado](../includes/vstecado-md.md)] в функциях многоуровневых приложений, взаимодействующих с одной или несколькими базами данных.  
   
- **Windows 8 или Windows Server 2012**  
+ **Windows 8 и Windows Server 2012**  
   
  Чтобы собрать данные об уровневом взаимодействии на классических приложениях Windows 8 и приложениях Windows Server 2012, необходимо использовать метод инструментирования. Сбор данных об уровневом взаимодействии в приложениях для Магазина Windows не поддерживается.  
   
@@ -34,7 +34,7 @@ ms.locfileid: "65705836"
   
  **Сбор данных об уровневом взаимодействии на удаленном компьютере**  
   
- Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+ Чтобы получить данные об уровневом взаимодействии на удаленном компьютере, необходимо скопировать **файл \_ профилировщика \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio **. exe** из папки _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** на удаленный компьютер и установить его. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Отчеты TIP**  
   
@@ -52,7 +52,7 @@ ms.locfileid: "65705836"
   
 1. Откройте окно командной строки как администратор. В меню **Пуск** наведите указатель мыши на пункт **Все программы**, выберите пункт **Стандартные**. Щелкните правой кнопкой мыши пункт **Командная строка** и выберите команду **Запуск от имени администратора**.  
   
-2. Инициализируйте профилирование .NET и переменные среды TIP. Введите следующие команды:  
+2. Инициализируйте профилирование .NET и переменные среды TIP. Введите такие команды:  
   
    ```  
    vsperfclrenv /traceon  
@@ -138,7 +138,7 @@ ms.locfileid: "65705836"
   
 13. Перезагрузите компьютер, чтобы зарегистрировать сброшенные переменные среды.  
   
-    Дополнительные сведения см. в одном из следующих разделов.  
+    Дополнительные сведения см. в одном из следующих разделов:  
   
     [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
@@ -153,4 +153,4 @@ ms.locfileid: "65705836"
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- Дополнительные сведения о программе VSPerfASPNETCmd см. в статье [Rapid Web Site Profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) (Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd).
+ Дополнительные сведения о VSPerfASPNETCmd см. [в статье Быстрое профилирование веб-сайтов с помощью VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

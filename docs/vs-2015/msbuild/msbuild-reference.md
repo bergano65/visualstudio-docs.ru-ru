@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683016"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
@@ -28,11 +28,11 @@ ms.locfileid: "65683016"
 
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] — это система сборки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)  
  В нем описаны элементы XML, которые составляют формат файла [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)  
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)  
  В нем описаны некоторые типичные задачи, входящие в состав [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Условия](../msbuild/msbuild-conditions.md)  
@@ -41,25 +41,25 @@ ms.locfileid: "65683016"
  [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)  
  Описаны способы использования элементов `Choose`, `When` и `Otherwise`.  
   
- [Зарезервированные и стандартные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ [Зарезервированные и хорошо известные свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  Описаны зарезервированные свойства [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md)  
+ [Общие свойства проекта MSBuild](../msbuild/common-msbuild-project-properties.md)  
  Описаны свойства проектов, общие для всех типов проектов, а также свойства, которые часто используются отдельными типами проектов.  
   
- [Общие элементы проектов MSBuild](../msbuild/common-msbuild-project-items.md)  
+ [Общие элементы проекта MSBuild](../msbuild/common-msbuild-project-items.md)  
  Описаны элементы проектов, общие для всех типов проектов, а также элементы, которые часто используются отдельными типами проектов.  
   
  [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)  
  Описаны аргументы и параметры, которые могут использоваться с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].exe.  
   
- [TARGETS-файлы](../msbuild/msbuild-dot-targets-files.md)  
+ [. Целевые файлы](../msbuild/msbuild-dot-targets-files.md)  
  Описан файл целевых объектов, который включен в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)  
  Перечислены метаданные, которые создаются вместе с каждым элементом.  
   
- [Файлы ответа](../msbuild/msbuild-response-files.md)  
+ [Файлы ответов](../msbuild/msbuild-response-files.md)  
  Описаны RSP-файлы, содержащие параметры командной строки.  
   
  [Дополнительные ресурсы](../msbuild/additional-resources-for-msbuild.md)  
@@ -68,11 +68,11 @@ ms.locfileid: "65683016"
  [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
  Содержит справочник целевых объектов и задач [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] для Windows Presentation Foundation (WPF).  
   
- [Знаки, требующие отключения их специального значения](../msbuild/special-characters-to-escape.md)  
+ [Специальные символы для экранирования](../msbuild/special-characters-to-escape.md)  
  Список символов, которые должны использоваться в составе "escape-последовательностей" для обеспечения их правильной интерпретации. Escape-последовательность — это ряд символов, который означает, что следующие за ним символы должны интерпретироваться по-другому.  
   
-## <a name="related-sections"></a>Связанные разделы  
- [Общие сведения о MSBuild. ](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Представляет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
+## <a name="related-sections"></a>См. также  
+ [Общие сведения о MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Содержит [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ссылки на разделы, в которых объясняется, как использовать его для построения проектов.  
   
  <xref:Microsoft.Build.Conversion>  
  Содержит ссылку на пространство имен Conversion.  

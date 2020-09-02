@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875934"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Конструктор действия TransactedReceiveScope
@@ -38,7 +38,7 @@ ms.locfileid: "86875934"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Необязательное понятное имя действия <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Значение по умолчанию - TransactedReceiveScope.<br /><br /> Для имени <xref:System.Activities.Activity.DisplayName%2A> нет жестких требований, однако лучше всего использовать отображаемое имя.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Да|Удаляет <xref:System.ServiceModel.Activities.Receive> действие в блоке **запроса** на поверхности конструктора операций.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Верно|Удаляет <xref:System.ServiceModel.Activities.Receive> действие в блоке **запроса** на поверхности конструктора операций.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Неверно|Удаляет объект <xref:System.Activities.Activity> в блоке **тела** в области конструктора действий.|
 
 ## <a name="see-also"></a>См. также раздел

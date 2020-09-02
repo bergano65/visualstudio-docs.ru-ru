@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683936"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
@@ -41,7 +41,7 @@ ms.locfileid: "65683936"
   
  В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.  
   
-|Атрибут|Строка, выводимая в столбце **Значение**|  
+|Атрибут|Выходные данные, появляющиеся в столбце **значение** )|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Применение для типа с полями `x` и `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Синтаксис параметра может различаться в зависимости от языка. Будьте внимательны при его использовании.|`String value is [5, 6, 6]`|  
@@ -179,5 +179,5 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [повышение эффективности отладки с помощью атрибутов просмотра отладчика](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+## <a name="see-also"></a>См. также:  
+ [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) с [улучшенной отладкой с помощью атрибутов просмотра отладчика](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

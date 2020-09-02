@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a940cf371373d23d98ce8f89005197ee3ea7c309
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687065"
 ---
 # <a name="wpf-msbuild-reference"></a>Справочные сведения о WPF для MSBuild
@@ -29,11 +29,11 @@ ms.locfileid: "65687065"
 
 Windows Presentation Foundation (WPF) расширяет подсистему Microsoft Build Engine (MSBuild) за счет дополнительной поддержки сборок, которая описана в этом разделе.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [TARGETS-файлы](../msbuild/wpf-dot-targets-files.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [. Целевые файлы](../msbuild/wpf-dot-targets-files.md)  
  Описывает TARGETS-файлы WPF.  
   
- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)  
+ [Справочник по задачам](../msbuild/wpf-msbuild-task-reference.md)  
  Перечисляет доступные задачи сборки WPF.  
   
  <xref:Microsoft.Build.Tasks>  
@@ -51,5 +51,5 @@ Windows Presentation Foundation (WPF) расширяет подсистему Mi
  <xref:Microsoft.Build.Tasks.Windows>  
  Сборка окон для задачи сборки.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

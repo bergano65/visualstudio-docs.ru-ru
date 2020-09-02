@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332235"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Сочетания клавиш в Blend для Visual Studio
@@ -35,7 +35,7 @@ ms.locfileid: "85332235"
 
 |Требуемое действие|выполните следующее:|
 |----------------|-------------|
-|Переключение между открытыми документами|**CTRL** + **Вкладка**|
+|Переключение между открытыми документами|**CTRL**+**TAB**|
 |Сохранение активного документа|**CTRL** + **С**|
 |Сохранение всех документов|**CTRL** + **SHIFT** + **С**|
 |Закрыть активный документ|**CTRL** + **Н**|

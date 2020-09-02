@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7e485bc6289634e1bb6d4b4106d54c8dc82096b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683702"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Профилирование и безопасность Windows Vista
@@ -45,7 +45,7 @@ ms.locfileid: "65683702"
   
      Если этот параметр не выбран, в списке отображаются процессы в текущем сеансе. Если этот параметр выбран, в списке отображаются процессы во всех сеансах.  
   
-## <a name="see-also"></a>См. также  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
+ [Средства](../profiling/vsperfcmd.md)   
  [Практическое руководство. Присоединение к выполняемому процессу](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

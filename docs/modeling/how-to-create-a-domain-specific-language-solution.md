@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541795"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
@@ -65,7 +65,7 @@ ms.locfileid: "85541795"
    > [!NOTE]
    > Если появится сообщение о том, что не нужно запускать текстовые шаблоны из ненадежных источников, нажмите кнопку **ОК**. Вы можете задать, чтобы это сообщение не отображалось снова.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Страницы мастера Конструктор DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Страницы мастера Конструктор DSL
  Можно оставить несколько полей неизменными по значениям по умолчанию. Однако убедитесь, что задано поле расширения файла.
 
 ### <a name="solution-settings-page"></a>Страница "параметры решения"
@@ -116,7 +116,7 @@ ms.locfileid: "85541795"
 
  Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

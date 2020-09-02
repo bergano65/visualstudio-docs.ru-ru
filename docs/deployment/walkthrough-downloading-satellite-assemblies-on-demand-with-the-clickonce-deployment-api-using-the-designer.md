@@ -1,5 +1,5 @@
 ---
-title: Загрузить вспомогательную сборку по запросу с помощью конструктора ClickOnce
+title: Загрузка вспомогательной сборки по запросу с помощью ClickOnce Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,16 +21,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263405"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce в конструкторе
 Приложения Windows Forms можно настроить для нескольких языков и региональных параметров, воспользовавшись вспомогательными сборками. *Вспомогательная сборка* — это сборка, содержащая ресурсы приложения для языка, отличного от языка и региональных параметров приложения по умолчанию.
 
- Как уже говорилось в [локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md), может включать несколько вспомогательных сборок для нескольких языков и региональных параметров в пределах одного [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.
+ Как обсуждалось в разделе [локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md), можно включить несколько вспомогательных сборок для нескольких языков и региональных параметров в одном [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывании. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.
 
  Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров.
 
@@ -47,9 +47,9 @@ ms.locfileid: "66263405"
 
 4. Установите флажок **Показать все файлы**, чтобы отобразить вспомогательные сборки. По умолчанию все вспомогательные сборки будут включены в развертывание и будут видны в этом диалоговом окне.
 
-     (Вспомогательная сборка будет иметь имя в формате *\<isoCode>\ApplicationName.resources.dll*, где \<isoCode> — это идентификатор языка в формате RFC 1766.)
+     Вспомогательная сборка будет иметь имя в форме * \<isoCode>\ApplicationName.resources.dll*, где \<isoCode> — идентификатор языка в формате RFC 1766.
 
-5. Щелкните **Создать** в списке **Группа загрузки** для каждого идентификатора языка. При появлении запроса имени группы загрузки введите идентификатор языка. Например, для японской вспомогательной сборки, можно указать имя группы загрузки `ja-JP`.
+5. Щелкните **Создать** в списке **Группа загрузки** для каждого идентификатора языка. При появлении запроса имени группы загрузки введите идентификатор языка. Например, для японской вспомогательной сборки необходимо указать имя группы загрузки `ja-JP` .
 
 6. Закройте диалоговое окно **Файлы приложения**.
 
@@ -67,17 +67,17 @@ ms.locfileid: "66263405"
 
 2. В нижней части вкладки нажмите кнопку **Просмотреть события приложения**.
 
-3. Добавьте следующие импорты в начало файла *ApplicationEvents.VB*.
+3. Добавьте следующие операции импорта в начало файла *ApplicationEvents. vb* .
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4. Добавьте следующий код в класс `MyApplication` .
+4. Добавьте в класс `MyApplication` приведенный далее код.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  В продуктивной среде, скорее всего, потребуется удалить строку в примерах кода, задающую определенное значение для свойства <xref:System.Threading.Thread.CurrentUICulture%2A>, потому что на клиентских компьютерах правильное значение будет задаваться по умолчанию. Если приложение выполняется на клиентском компьютере с японским языком, например, свойство <xref:System.Threading.Thread.CurrentUICulture%2A> будет по умолчанию равно `ja-JP` . Программная установка этого значения — хороший способ проверить вспомогательные сборки перед развертыванием приложения.
 
-## <a name="see-also"></a>См. также
-- [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+## <a name="see-also"></a>См. также раздел
+- [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md)

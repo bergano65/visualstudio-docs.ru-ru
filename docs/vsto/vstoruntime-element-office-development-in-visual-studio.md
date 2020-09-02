@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541886"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент всторунтиме (разработка решений Office в Visual Studio)
@@ -38,11 +38,11 @@ ms.locfileid: "85541886"
 
  Элемент `vstoRuntime` имеет перечисленные ниже атрибуты.
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
-|`release`|Обязательный элемент. Выпускаемая версия среды выполнения Набора инструментов Visual Studio для Office.|
-|`version`|Обязательный элемент. Номер версии среды выполнения Набора инструментов Visual Studio для Office.|
-|`supportUrl`|Необязательный параметр. Ссылка на расположение установки среды выполнения Набора инструментов Visual Studio для Office.|
+|`release`|Обязательный. Выпускаемая версия среды выполнения Набора инструментов Visual Studio для Office.|
+|`version`|Обязательный. Номер версии среды выполнения Набора инструментов Visual Studio для Office.|
+|`supportUrl`|Необязательный элемент. Ссылка на расположение установки среды выполнения Набора инструментов Visual Studio для Office.|
 
  Элемент`vstoRuntime` не содержит элементов.
 
@@ -56,7 +56,7 @@ ms.locfileid: "85541886"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

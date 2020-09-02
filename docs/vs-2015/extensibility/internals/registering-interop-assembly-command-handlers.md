@@ -12,31 +12,31 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705816"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] таким образом, чтобы интегрированной среде разработки (IDE) правильно направляет его команды.  
+Пакет VSPackage должен быть зарегистрирован в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , чтобы интегрированная среда разработки (IDE) правильно маршрутизирует свои команды.  
   
- Можно обновить реестр путем редактирования вручную или с помощью файла регистратора (RGS). Для получения дополнительной информации см. [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Реестр можно обновить либо вручную, либо с помощью файла регистратора (RGS). Для получения дополнительной информации см. [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
- Managed Package Framework (MPF) предоставляет следующие функциональные возможности через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> класса.  
+ Платформа управляемого пакета (MPF) предоставляет эту функцию через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> класс.  
   
- [Команда справочнике по формату таблицы](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых вспомогательные библиотеки DLL пользовательского интерфейса.  
+ [Справочные ресурсы по формату командной таблицы](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) находятся в неуправляемых библиотеках DLL ВСПОМОГАТЕЛЬных интерфейсов.  
   
-## <a name="command-handler-registration-of-a-vspackage"></a>Регистрация обработчика команды пакета VSPackage  
- Пакет VSPackage, выступающий в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Этот параметр реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурса меню в этом файле. Саму запись реестра находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<версии >* \Menus, где  *\<версии >* — Это версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], например 9.0.  
+## <a name="command-handler-registration-of-a-vspackage"></a>Регистрация пакета VSPackage в обработчике команд  
+ Пакет VSPackage, выступающий в качестве обработчика для команд на основе ПОЛЬЗОВАТЕЛЬСКОГО интерфейса, требует наличия записи реестра с именем после пакета VSPackage `GUID` . Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса VSPackage и ресурс меню в этом файле. Сама запись реестра находится в папке HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<Version>* \менус, где *\<Version>* — это версия, например [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 9,0.  
   
 > [!NOTE]
-> Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<версии >* может быть переопределено с помощью альтернативного root при [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] инициализации оболочки. Дополнительные сведения о корневой путь, см. в разделе [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> Корневой путь HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<Version>* можно переопределить с помощью альтернативного корня при [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] инициализации оболочки. Дополнительные сведения о корневом пути см. в разделе [Установка пакетов VSPackage с помощью установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
-### <a name="the-ctmenu-resource-registry-entry"></a>Запись реестра CTMENU ресурсов  
- Структура записи реестра выглядит так:  
+### <a name="the-ctmenu-resource-registry-entry"></a>Запись реестра ресурсов CTMENU  
+ Структура записи реестра:  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\  
@@ -44,22 +44,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>  
 ```  
   
- \<*Идентификатор GUID*> является `GUID` пакета VSPackage в форме {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
+ \<*GUID*> — Это пакет `GUID` VSPackage в форме {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
   
- *\<Сведения о ресурсах >* состоит из трех элементов, разделенных запятыми. Относятся следующие элементы в порядке.  
+ *\<Resource Information>* состоит из трех элементов, разделенных запятыми. Эти элементы по порядку:  
   
- \<*Путь к DLL ресурсов*>, \< *идентификатор ресурса меню*>, \< *версии меню*>  
+ \<*Path to Resource DLL*>, \<*Menu Resource ID*>, \<*Menu Version*>  
   
- В следующей таблице описаны поля \< *сведения о ресурсах*>.  
+ В следующей таблице описаны поля \<*Resource Information*> .  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|\<*Путь к DLL ресурсов*>|Это полный путь к DLL, которая содержит ресурс меню ресурса или указан, означающее, что в пакете VSPackage ресурс библиотеки DLL для использования (как указано в подразделе пакетов, где сам пакет VSPackage зарегистрирован).<br /><br /> Обычно это поле оставить пустым.|  
-|\<*Идентификатор ресурса меню*>|Это идентификатор ресурса `CTMENU` ресурс, содержащий все элементы пользовательского интерфейса для VSPackage, скомпилированной на основе [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) файла.|  
-|\<*Версия меню*>|Это число, используемое в качестве версии для `CTMENU` ресурсов. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Это значение используется для определения, ему следует произвести повторное слияние содержимого `CTMENU` ресурсов с помощью своего кэша всех `CTMENU` ресурсы. Произвести повторное слияние инициируется, выполнив команду setup devenv.<br /><br /> Это значение следует изначально задано значение 1 и увеличивается после каждого изменения в `CTMENU` ресурсов и прежде, чем произвести повторное слияние происходит.|  
+|\<*Path to Resource DLL*>|Это полный путь к библиотеке DLL ресурсов, содержащей ресурс меню, или оставить это поле пустым, указывая на необходимость использования библиотеки DLL ресурсов VSPackage (как указано в подразделе Packages, где зарегистрирован пакет VSPackage).<br /><br /> Это поле остается незаполненным.|  
+|\<*Menu Resource ID*>|Это идентификатор ресурса `CTMENU` , который содержит все элементы пользовательского интерфейса для VSPackage, скомпилированные из [vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) -файла.|  
+|\<*Menu Version*>|Это число, используемое в качестве версии `CTMENU` ресурса. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использует это значение для определения необходимости повторного слияния содержимого `CTMENU` ресурса со своим кэшем всех `CTMENU` ресурсов. Повторная слияние запускается при помощи команды установки devenv.<br /><br /> Изначально это значение должно быть равно 1 и увеличиваться после каждого изменения в `CTMENU` ресурсе и перед повторным слиянием.|  
   
 ### <a name="example"></a>Пример  
- Ниже приведен пример несколько записей ресурсов:  
+ Ниже приведен пример нескольких записей ресурсов:  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  
@@ -68,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>См. также:  
+ [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Команды и меню, которые используют сборки взаимодействия](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

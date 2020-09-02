@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684071"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Использование атрибута DebuggerTypeProxy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True) Указывает учетную запись-посредник или заместителя, типа и меняет способ тип отображается в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.  
+Дебугжертипепроксяттрибуте] (assetId:///Т: System. Diagnostics. Дебугжертипепроксяттрибуте? qualifyHint = false&автообновление = true) указывает учетную запись-посредник или независимый тип для типа и изменяет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси, прокси заменяет исходный тип при **отображении**. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.  
   
  Данный атрибут может применяться к:  
   
@@ -46,7 +46,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
   Если атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> используется на уровне сборки, параметр `Target` указывает тип, который заменяется прокси.  
   
-  Пример использования этого атрибута вместе с <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, см. в разделе[использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+  См. пример использования этого атрибута с <xref:System.Diagnostics.DebuggerDisplayAttribute> и <xref:System.Diagnostics.DebuggerTypeProxyAttribute> в руководстве по [использованию атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
 ## <a name="using-generics-with-debuggertypeproxy"></a>Использование универсальных типов с атрибутом DebuggerTypeProxy  
  Поддержка универсальных типов ограничена. Для C# атрибут `DebuggerTypeProxy` поддерживает только открытые типы. Открытый тип (также называемый "не сконструированным" типом) — это универсальный тип, экземпляр которого создается без аргументов для параметров типа. Закрытые типы (также называемые сконструированными типами) не поддерживаются.  
@@ -57,12 +57,12 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  Этот синтаксис необходимо использовать при использовании универсального типа в качестве целевого типа в атрибуте `DebuggerTypeProxy`. Атрибут `DebuggerTypeProxy` предположит параметры типа самостоятельно.  
   
- Дополнительные сведения об открытых и закрытых типах в C# см. в разделе [спецификации языка C#](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), откройте раздел 20.5.2 и закрытые типы.  
+ См. сведения об открытых и закрытых типах в C# в разделе 20.5.2, посвященному открытым и закрытым типам, в [спецификации языка C#](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22).  
   
  В Visual Basic синтаксис для открытых типов не поддерживается, поэтому данный способ для Visual Basic не подходит. Вместо этого необходимо использовать строковое представление имени открытого типа.  
   
  `"Namespace.TypeName'2"`  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
   [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
