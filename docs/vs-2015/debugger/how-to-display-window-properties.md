@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отображение свойств окна | Документация Майкрософт
+title: Практическое руководство. Отображение свойств окна | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,19 +12,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acef433d8f82151a7870fda047f27ac46090b480
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538191"
 ---
 # <a name="how-to-display-window-properties"></a>Практическое руководство. отображение свойств окна
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Чтобы получить дополнительные сведения об окнах, перечисленных в [представление Windows](../debugger/windows-view.md), использовать [диалоговое окно "Свойства окна"](../debugger/window-properties-dialog-box.md).  
+Чтобы узнать больше об окне, указанном в [представлении окон](../debugger/windows-view.md), используйте диалоговое окно [Свойства окна](../debugger/window-properties-dialog-box.md).  
   
-### <a name="to-open-the-window-properties-dialog-box"></a>Чтобы открыть диалоговое окно "Свойства окна"  
+### <a name="to-open-the-window-properties-dialog-box"></a>Открытие диалогового окна "Свойства окна"  
   
-1. Выберите элемент, а затем выберите **свойства** из **представление** меню.  
+1. Выберите элемент, а затем в меню **Вид** щелкните **Свойства**.  
   
-   Диалоговые окна свойств не являются модальными. При выборе между элементами в окне представления диалоговое окно со сведениями о каждого выбранного элемента автоматически обновляются.
+   Диалоговые окна свойств не являются модальными. Если в окне представления переходить от элемента к элементу, диалоговое окно автоматически обновится сведениями о каждом выбранном элементе.

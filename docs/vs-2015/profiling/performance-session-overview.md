@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422114"
 ---
 # <a name="performance-session-overview"></a>Общие сведения о сеансе анализа производительности
@@ -76,6 +76,6 @@ ms.locfileid: "62422114"
 ## <a name="generate-a-report-of-the-results"></a>Создание отчета о результатах  
  Строки любого отчета о производительности можно вставлять в сообщения электронной почты и электронные таблицы; кроме того, можно создавать отчеты, в которых содержатся данные из одного или нескольких представлений.  
   
-## <a name="see-also"></a>См. также раздел  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
  [Пошаговое руководство. Выявление проблем с производительностью](../profiling/walkthrough-identifying-performance-problems.md)

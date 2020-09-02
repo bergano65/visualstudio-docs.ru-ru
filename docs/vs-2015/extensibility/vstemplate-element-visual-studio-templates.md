@@ -13,16 +13,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8219f12eed091858a43c2bd5092b8b06f8320bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422918"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Элемент VSTemplate (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Содержит все метаданные шаблона проекта, шаблон элемента или комплект для начала работы.  
+Содержит все метаданные о шаблоне проекта, шаблоне элемента или начальном наборе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,26 +41,26 @@ ms.locfileid: "62422918"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Type`|Обозначает шаблон как шаблон проекта или шаблона элемента. Этот атрибут может иметь значение `Project` или `Item`.|  
-|`Version`|Указывает номер версии для шаблона. Шаблоны в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] имеют `Version` значение атрибута `3.0.0`.|  
+|`Type`|Идентифицирует шаблон как шаблон проекта или шаблон элемента. Этот атрибут может иметь значение `Project` или `Item` .|  
+|`Version`|Указывает номер версии для шаблона. Шаблоны в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] имеют `Version` значение атрибута `3.0.0` .|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает данные, категорию шаблона и определяет, отображается ли он в **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает данные, которые классифицируют шаблон, и определяет, как он отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Необязательный элемент.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Необязательный элемент.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
- Отсутствует.  
+ Нет.  
   
-## <a name="remarks"></a>Примечания  
- `VSTemplate` Элемент является корневым элементом VSTEMPLATE-файлов.  
+## <a name="remarks"></a>Remarks  
+ `VSTemplate`Элемент является корневым элементом VSTEMPLATE-файлов.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения.  
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +86,6 @@ ms.locfileid: "62422918"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

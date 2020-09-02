@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 132a3cb5f7d4257aa0728960cb5bfd50c5ee3066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420001"
 ---
 # <a name="comparing-performance-data-files"></a>Сравнение файлов данных о производительности
@@ -34,5 +34,5 @@ ms.locfileid: "62420001"
   
  Для снижения шума и фильтрации данных в строках таблицы сравнения, которые не изменились по сравнению с указанным значением, можно установить порог.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Сравнение файлов данных о производительности](../profiling/how-to-compare-performance-data-files.md)
+## <a name="in-this-section"></a>в этом разделе  
+ [Как сравнить файлы данных о производительности](../profiling/how-to-compare-performance-data-files.md)

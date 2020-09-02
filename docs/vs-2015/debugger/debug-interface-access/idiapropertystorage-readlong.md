@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadLONG | Документация Майкрософт
+title: 'Идиапропертистораже:: Реадлонг | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08661272bea779ff0789619d58bf6f2837a21917
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538321"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
@@ -36,16 +36,16 @@ HRESULT ReadDLONG ( 
   
 #### <a name="parameters"></a>Параметры  
  `id`  
- [in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).  
+ окне Идентификатор считываемого свойства ( `PROPID` определяется в втипес. h как `ULONG` ).  
   
  `pValue`  
- [out] Возвращает значение свойства.  
+ заполняет Возвращает значение свойства.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `LONG`.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки. Возвращает значение, `E_INVALIDARG` Если свойство не относится к типу `LONG` .  
   
-## <a name="remarks"></a>Примечания  
- Объект `LONG` определяется Windows как 32-разрядное целое число со знаком.  
+## <a name="remarks"></a>Remarks  
+ `LONG`Определено Windows как 32-разрядное целое число со знаком.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

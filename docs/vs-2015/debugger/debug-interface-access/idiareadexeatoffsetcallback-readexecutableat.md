@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Документация Майкрософт
+title: 'Идиареадексеатоффсеткаллбакк:: Реадексекутаблеат | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ac5452437ab6fdec3eb68baf46aeeab8434df4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538867"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Считывает указанное число байтов, начиная с заданного смещения из исполняемого файла.  
+Считывает указанное число байтов, начиная с указанного смещения, из исполняемого файла.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,21 +37,21 @@ HRESULT ReadExecutableAt ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- fileOffset  
- [in] Смещение в исполняемом файле, должно начаться чтение.  
+ филеоффсет  
+ окне Смещение в исполняемом файле, с которого начинается чтение.  
   
  cbData  
- [in] Число байтов для чтения.  
+ окне Число байтов для чтения.  
   
- pcbData  
- [out] Возвращает число считанных байтов.  
+ пкбдата  
+ заполняет Возвращает число считанных байтов.  
   
  data[]  
- [in, out] Массив, который заполняется байтов, считанных из файла.  
+ [вход, выход] Массив, который заполняется байтами, считанными из файла.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается для загрузки данных в байтах из исполняемого файла с помощью смещения абсолютный код поддержки доступа к интерфейсу отладки. Этот метод вызывается на [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Этот метод вызывается кодом поддержки DIA для загрузки байтов данных из исполняемого файла с использованием абсолютного смещения. Этот метод вызывается для поддержки метода [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
-## <a name="see-also"></a>См. также  
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
+## <a name="see-also"></a>См. также:  
+ [идиареадексеатоффсеткаллбакк](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

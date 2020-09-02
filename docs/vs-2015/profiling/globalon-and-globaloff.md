@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434232"
 ---
 # <a name="globalon-and-globaloff"></a>Параметры GlobalOn и GlobalOff
@@ -46,24 +46,24 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Нет  
+ Отсутствуют  
   
 ## <a name="valid-options"></a>Допустимые параметры  
  **GlobalOn** и **GlobalOff** можно использовать в командной строке, которая содержит следующие параметры.  
   
- **Start:** `Method`  
+ **Начало работы:**`Method`  
  Инициализирует сеанс командной строки для профилировщика и задает метод профилирования.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает заданное приложение и начинает профилирование с помощью метода выборки.  
   
- **Attach:** `PID`  
+ **Присоединиться:**`PID`  
  Начинает профилирование указанного процесса.  
   
- {**ProcessOff** | **ProcessOn**} **:** `PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:**`PID`  
  Останавливает или запускает профилирование указанного процесса.  
   
- {**ThreadOff** | **ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:**`TID`  
  Останавливает или запускает профилирование заданного процесса (только для метода инструментирования).  
   
 ## <a name="example"></a>Пример  
@@ -84,8 +84,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

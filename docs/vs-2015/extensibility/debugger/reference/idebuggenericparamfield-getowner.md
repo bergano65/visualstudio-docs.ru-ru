@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetOwner | Документация Майкрософт
+title: 'Идебугженерикпарамфиелд:: [владелец | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e78ee30b1fb351e2c2c5682d372a9aa9704caf3
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421141"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает имя типа или метода владельца этого универсального параметра.  
+Возвращает владельца типа или метода этого универсального параметра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,13 +38,13 @@ int GetOwner(
   
 #### <a name="parameters"></a>Параметры  
  `ppOwner`  
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта, которому принадлежит этот универсальный параметр.  
+ заполняет Возвращает объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , которому принадлежит этот универсальный параметр.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кдебугженерикпарамфиелдтипе** , предоставляющего интерфейс [идебугженерикпарамфиелд](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
   
 ```cpp#  
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)  
@@ -94,5 +94,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

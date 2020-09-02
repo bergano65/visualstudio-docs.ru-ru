@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf0c2d13668dbf380f326ee3a49e0389815a8fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535740"
 ---
 # <a name="error-rpc-requires-authentication"></a>Ошибка: RPC требуется проверка подлинности
@@ -30,10 +30,10 @@ ms.locfileid: "62535740"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1. Запустите `\` *windir*`\system32\regedt32.exe`  
+1. Запустите `\`*windir*`\system32\regedt32.exe`.  
   
 2. Найдите и удалите `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
 3. Перезагрузите компьютер, чтобы изменения в реестре вступили в силу.  
   
-4. Если проблема сохранится, обратитесь к администратору домена о **Конфигурация компьютера -> Административные шаблоны - > Система -> удаленный вызов процедуры "->" ограничения для не прошедших проверку подлинности RPC-клиентов** группы параметр политики.
+4. Если проблема не исчезнет, обратитесь к администратору домена, посвященному параметру **Computer Configuration->административные шаблоны->System->удаленный вызов процедур — >ограничения для параметра групповой политики RPC-клиентов без проверки подлинности** .

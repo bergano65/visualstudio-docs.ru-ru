@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 26a8d7b28528a79a925207e1ee3794fcbb4ca1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423521"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM), чтобы задать состояние панели сообщения во время загрузки символов.  
+Модуль отладки (DE) отправляет этот интерфейс в Диспетчер отладки сеансов (SDM) для установки сообщения в строке состояния во время загрузки символов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,21 +29,21 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс, если его значение должно равно строке сообщение о состоянии во время загрузки символов. Этот интерфейс реализуется только отладчики, которые работают с или являются частью сценария интерпретаторов. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM **QueryInterface** для доступа к **IDebugEvent2** интерфейс).  
+ Метод DE реализует этот интерфейс, когда он должен задать сообщение в строке состояния во время загрузки символов. Этот интерфейс реализуется только модулями отладки, которые работают с или являются частью интерпретаторов сценариев. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс (модель SDM использует **QueryInterface** для доступа к интерфейсу **IDebugEvent2** ).  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- DE создает и отправляет этот объект события в том случае, если его значение должно равно строке сообщение о состоянии во время загрузки символов. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемой SDM, если он присоединен к отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Параметр DE создает и отправляет этот объект события, когда он должен задать сообщение в строке состояния во время загрузки символов. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , предоставляемой SDM при присоединении к отлаживаемой программе.  
   
 ## <a name="methods"></a>Методы  
- В следующей таблице показаны методы `IDebugBeforeSymbolSearchEvent2`.  
+ В следующей таблице показаны методы `IDebugBeforeSymbolSearchEvent2` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Извлекает имя модуля отлаживаемых в текущий момент.|  
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Возвращает имя модуля, в котором выполняется отладка.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
+ Заголовок: Мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

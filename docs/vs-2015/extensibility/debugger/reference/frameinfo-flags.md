@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e5a930e81ff1105ba93ce3c3cff10ee8bff2f7e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538438"
 ---
-# <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
+# <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает сведения для получения о кадр стека.  
+Задает сведения, которые необходимо получить об объекте кадра стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -101,112 +101,112 @@ public enum enum_FRAMEINFO_FLAGS {
   
 ## <a name="members"></a>Участники  
  FIF_FUNCNAME  
- Инициализация и использование `m_bstrFuncName` поля.  
+ Инициализируйте или используйте `m_bstrFuncName` поле.  
   
  FIF_RETURNTYPE  
- Инициализация и использование `m_bstrReturnType` поля.  
+ Инициализируйте или используйте `m_bstrReturnType` поле.  
   
  FIF_ARGS  
- Инициализация и использование `m_bstrArgs` поля.  
+ Инициализируйте или используйте `m_bstrArgs` поле.  
   
  FIF_LANGUAGE  
- Инициализация и использование `m_bstrLanguage` поля.  
+ Инициализируйте или используйте `m_bstrLanguage` поле.  
   
  FIF_MODULE  
- Инициализация и использование `m_bstrModule` поля.  
+ Инициализируйте или используйте `m_bstrModule` поле.  
   
  FIF_STACKRANGE  
- Инициализация и использование `m_addrMin` и `m_addrMax` поля (stack диапазона).  
+ Инициализируйте/используйте `m_addrMin` `m_addrMax` поля и (диапазон стека).  
   
  FIF_FRAME  
- Инициализация и использование `m_pFrame` поля.  
+ Инициализируйте или используйте `m_pFrame` поле.  
   
  FIF_DEBUGINFO  
- Инициализация и использование `m_fHasDebugInfo` поля.  
+ Инициализируйте или используйте `m_fHasDebugInfo` поле.  
   
  FIF_STALECODE  
- Инициализация и использование `m_fStaleCode` поля.  
+ Инициализируйте или используйте `m_fStaleCode` поле.  
   
  FIF_ANNOTATEDFRAME  
- Инициализация и использование `m_fAnnotatedFrame` поля.  
+ Инициализируйте или используйте `m_fAnnotatedFrame` поле.  
   
  FIF_DEBUG_MODULEP  
- Инициализация и использование `m_pModule` поля.  
+ Инициализируйте или используйте `m_pModule` поле.  
   
  FIF_FUNCNAME_FORMAT  
- Форматирует имя функции. Результат возвращается в `m_bstrFunName` поля и другие поля не заполнены.  
+ Форматирует имя функции. Результат возвращается в `m_bstrFunName` поле, а другие поля не заполняются.  
   
  FIF_FUNCNAME_RETURNTYPE  
- Добавляет тип возвращаемого значения на `m_bstrFuncName` поля.  
+ Добавляет тип возвращаемого значения в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_ARGS  
- Добавляет аргументы `m_bstrFuncName` поля.  
+ Добавляет аргументы в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_LANGUAGE  
- Язык, который добавляет `m_bstrFuncName` поля.  
+ Добавляет язык в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_MODULE  
- Добавляет имя модуля для `m_bstrFuncName` поля.  
+ Добавляет имя модуля в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_LINES  
- Добавляет число строк, которые должны `m_bstrFuncName` поля.  
+ Добавляет число строк в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_OFFSET  
- Добавляет `m_bstrFuncName` поле Смещение в байтах от начала строки, если `FIF_FUNCNAME_LINES` указан. Если `FIF_FUNCNAME_LINES` не указан, или если номера строк недоступны, добавляет смещение в байтах от начала функции.  
+ Добавляет к `m_bstrFuncName` полю смещение в байтах от начала строки, если `FIF_FUNCNAME_LINES` указано значение. Если `FIF_FUNCNAME_LINES` параметр не указан или номера строк недоступны, добавляет смещение в байтах от начала функции.  
   
  FIF_FUNCNAME_ARGS_TYPES  
- Добавляет тип каждого аргумента для `m_bstrFuncName` поля.  
+ Добавляет в поле Тип каждого аргумента функции `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS_NAMES  
- Добавляет имя для каждого аргумента `m_bstrFuncName` поля.  
+ Добавляет в поле имя каждого аргумента функции `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS_VALUES  
- Добавляет значение каждого аргумента для `m_bstrFuncName` поля.  
+ Добавляет в поле значение каждого аргумента функции `m_bstrFuncName` .  
   
  FIF_FUNCNAME_ARGS_ALL  
- Добавляет тип, имя и значение всех аргументов `m_bstrFuncName` поля.  
+ Добавляет в поле Тип, имя и значение всех аргументов `m_bstrFuncName` .  
   
  FIF_ARGS_TYPES  
- Типы аргументов извлекаются и отформатирован.  
+ Типы аргументов извлекаются и форматируются.  
   
  FIF_ARGS_NAMES  
- Имена аргументов извлекаются и отформатирован.  
+ Имена аргументов извлекаются и форматируются.  
   
  FIF_ARGS_VALUES  
- Значения аргументов извлекаются и отформатирован.  
+ Значения аргументов извлекаются и форматируются.  
   
  FIF_ARGS_ALL  
- Извлечения и форматирования типа, имя и значение всех аргументов.  
+ Получение и форматирование типа, имени и значения всех аргументов.  
   
  FIF_ARGS_NOFORMAT  
- Указывает, что аргументы не быть отформатированы (например, не Добавьте открывающую и закрывающую скобки вокруг списка аргументов и не добавлять разделитель между аргументами).  
+ Указывает, что аргументы не форматируются (например, не добавляйте открывающую и закрывающую круглые скобки вокруг списка аргументов и не добавляйте разделитель между аргументами).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- Указывает, что вычисление функций (свойство) не следует использовать при извлечении значения аргументов.  
+ Указывает, что при извлечении значений аргументов не следует использовать вычисление функции (свойства).  
   
  FIF_FILTER_NON_USER_CODE  
- Модуль отладки — отфильтровать кадры не написанный пользователем код, чтобы они не включаются.  
+ Модуль отладки предназначен для фильтрации кадров кода, не входящих в пользователь, так, чтобы они не включались.  
   
  FIF_ARGS_NO_TOSTRING  
- Не разрешать `ToString()` функции оценки или форматирования при возврате аргументы функции.  
+ Не разрешать `ToString()` вычисление или форматирование функции при возврате аргументов функции.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- Сведения о кадре должен быть получить из размещенного домена приложения, а не процесс размещения.  
+ Сведения о кадре должны быть предоставлены из размещенного домена приложения, а не ведущего процесса.  
   
-## <a name="remarks"></a>Примечания  
- Эти флаги передаются [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) и [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) методы, чтобы указать, какие поля должны быть инициализированы в [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структурой или структурами.  
+## <a name="remarks"></a>Remarks  
+ Эти флаги передаются [методам](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) [енумфрамеинфо](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) и Pass для указания полей, которые должны быть инициализированы в структуре или структурах [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) .  
   
- Эти флаги также используются для указания поля [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры не используются и допустимым при возвращении структуры. Эти значения могут объединяться с побитовым объектом `OR`.  
+ Эти флаги также используются для указания того, какие поля структуры [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) используются и допустимы при возврате структуры. Эти значения можно объединить с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
+ [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md)   
+ [енумфрамеинфо](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

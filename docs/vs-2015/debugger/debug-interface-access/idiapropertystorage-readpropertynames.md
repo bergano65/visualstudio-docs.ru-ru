@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f6d3ac520a396b5207767a3fec0913c801c287
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537424"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает строковые имена соответствующих прав идентификаторов свойств.  
+Извлекает соответствующие имена строк для заданных идентификаторов свойств.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,19 +37,19 @@ HRESULT ReadPropertyNames (
   
 #### <a name="parameters"></a>Параметры  
  `cpropid`  
- [in] Количество идентификаторов свойств в `rgpropid`.  
+ окне Количество идентификаторов свойств в `rgpropid` .  
   
  `rgpropid`  
- [in] Массив идентификаторов свойств, для которого необходимо получить имена (`PROPID` определяется в файле WTypes.h как `ULONG`).  
+ окне Массив идентификаторов свойств, для которых необходимо получить имена ( `PROPID` определяется в втипес. h как `ULONG` ).  
   
  `rglpwstrName`  
- [in, out] Массив имен свойств для указанного свойства идентификаторов. Массив должен быть предварительно выделяются для хранения запрошенное число имен свойств и должен иметь возможность по крайней мере `cpropid``BSTR` строк.  
+ [вход, выход] Массив имен свойств для заданных идентификаторов свойств. Массив должен быть предварительно выделен для хранения запрошенного числа имен свойств и должен иметь возможность хранить по меньшей мере `cpropid``BSTR` строки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Имя возвращаемого свойства должны быть высвобождены (путем вызова `SysFreeString` функции) когда они больше не нужны.  
+## <a name="remarks"></a>Remarks  
+ Возвращаемые имена свойств должны быть освобождены (путем вызова `SysFreeString` функции), когда они больше не нужны.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

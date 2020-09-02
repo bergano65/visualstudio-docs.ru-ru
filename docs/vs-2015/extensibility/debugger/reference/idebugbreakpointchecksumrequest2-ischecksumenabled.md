@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2:: Исчекксуменаблед | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ec878a08e6f22a461eee95f31db7fa2a1bc97886
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431567"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет, включен ли контрольная сумма для этого документа.  
+Определяет, включена ли контрольная сумма для этого документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ public int IsChecksumEnabled(
   
 #### <a name="parameters"></a>Параметры  
  `pfChecksumEnabled`  
- [out] Возвращает значение TRUE, если включена контрольная сумма; в противном случае возвращает значение FALSE.  
+ заполняет Возвращает значение TRUE, если контрольная сумма включена. в противном случае возвращает значение FALSE.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

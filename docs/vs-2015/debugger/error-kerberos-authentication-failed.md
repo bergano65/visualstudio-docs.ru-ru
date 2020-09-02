@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Сбой проверки подлинности Kerberos | Документация Майкрософт'
+title: 'Ошибка: сбой проверки подлинности Kerberos | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535646"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Ошибка: сбой проверки подлинности Kerberos
@@ -42,7 +42,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Служба Kerberos на контроллере домена была отключена.  
   
-  Если аутентификация на основе Kerberos недоступна, следует сменить учетную запись, от имени которой выполняется монитор удаленной отладки Visual Studio. Для процедуры, см. в разделе [ошибка: Служба удаленного отладчика Visual Studio на целевом компьютере не удается подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Если аутентификация на основе Kerberos недоступна, следует сменить учетную запись, от имени которой выполняется монитор удаленной отладки Visual Studio. Инструкции см. в статье [Ошибка: службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
   Если оба компьютера входят в один и тот же домен, но это сообщение возникает снова, проверьте, что служба DNS на целевом компьютере правильно определяет имя главного компьютера. Выполните описанные ниже действия.  
   
@@ -62,6 +62,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 5. Сравните значения IP-адресов.  
   
-## <a name="see-also"></a>См. также  
- [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>См. также:  
+ [Ошибки удаленной отладки и устранение неполадок](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

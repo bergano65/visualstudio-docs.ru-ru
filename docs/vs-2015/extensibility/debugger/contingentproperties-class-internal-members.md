@@ -1,5 +1,5 @@
 ---
-title: 'Внутренние элементы: класс ContingentProperties | Документация Майкрософт'
+title: Класс Континжентпропертиес — внутренние элементы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414650"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Внутренние элементы: класс ContingentProperties
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Содержит дополнительные свойства для <xref:System.Threading.Tasks.Task> объекта.  
+Содержит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как при отсутствии доступа к этим внутренним членам платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
+ Так как вы не можете получить доступ к этим внутренним членам из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,12 +40,12 @@ ms.locfileid: "62414650"
   
 ### <a name="fields"></a>Поля  
   
-|name|Описание|  
+|Имя|Описание|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|Список дочерних задач, которые зарегистрированы с помощью этой задачи.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|Список дочерних задач, зарегистрированных в этой задаче.|  
   
-## <a name="remarks"></a>Примечания  
- .NET Framework инициализирует поля этого класса, только в том случае, когда они нужны.  
+## <a name="remarks"></a>Remarks  
+ .NET Framework инициализирует поля этого класса только в том случае, если они необходимы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,5 +1,5 @@
 ---
-title: Ссылается на элемент (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент References (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19fd3e260e6c7079ccfb98f520858a31191cc112
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538217"
 ---
 # <a name="references-element-visual-studio-templates"></a>Элемент References (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Группы, которые добавляются в проекты ссылки на сборки.  
+Группирует ссылки на сборки, которые шаблон добавляет в проекты.  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<Ссылки >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<References>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,7 +49,7 @@ ms.locfileid: "62538217"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект. Должен быть один или несколько `Reference` элементов в `References` элемент.|  
+|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект. Элемент должен содержать один или несколько `Reference` элементов `References` .|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -57,13 +57,13 @@ ms.locfileid: "62538217"
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  `References` — необязательный дочерний элемент элемента `TemplateContent`.  
   
- `Reference` И `References` элементы могут использоваться только в VSTEMPLATE-файлов, которые имеют `Type` значение атрибута `Item`.  
+ `Reference`Элементы и `References` можно использовать только в VSTEMPLATE-файлах, имеющих `Type` значение атрибута `Item` .  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано `TemplateContent` элемент шаблона элемента. Этот XML-код добавляет ссылки на сборки System.dll и System.Data.dll.  
+ В следующем примере показан `TemplateContent` элемент шаблона элемента. Этот XML-файл добавляет ссылки на сборки System.dll и System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -83,6 +83,6 @@ ms.locfileid: "62538217"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

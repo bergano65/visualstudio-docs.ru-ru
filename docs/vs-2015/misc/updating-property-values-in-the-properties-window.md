@@ -1,5 +1,5 @@
 ---
-title: Обновление значений свойств в окне «Свойства» | Документация Майкрософт
+title: Обновление значений свойств в окне "Свойства" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,10 +11,10 @@ ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 18ecf0a21c5b2d73bdf8e439d25765b6b275cbd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434193"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>Обновление значений свойств в окне "Свойства"
@@ -26,9 +26,9 @@ ms.locfileid: "62434193"
   
 1. Вызывайте <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (через службу <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>) каждый раз, когда пакетам VSPackage, проектам или редакторам необходимо создать или перечислить окна инструментов или документов.  
   
-2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> следует **свойства** синхронизацию с изменениями свойств для проекта окна (или любого другого выбранного объекта, который просматривается в **свойства** окно) без реализации <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> и инициирования <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> события.  
+2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> , чтобы обеспечить синхронизацию окна **свойств** с изменениями свойств для проекта (или любого другого выбранного объекта, просматриваемого окном **свойств** ) без реализации <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> и срабатывания <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> событий.  
   
-3. Реализуйте методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> соответственно для установки и отключения уведомлений клиента о событиях иерархии, не требуя от иерархии реализации <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
+3. Реализуйте методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy><xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> соответственно для установки и отключения уведомлений клиента о событиях иерархии, не требуя от иерархии реализации <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
   
 ## <a name="updating-property-values-using-iconnection"></a>Обновление значений свойств с помощью IConnection  
  Второй способ поддерживать синхронизацию окна **Свойства** с изменениями значений свойств — реализовать `IConnection` в доступном для подключения объекте, чтобы указать наличие исходящих интерфейсов. Если требуется локализовать имя свойства, создайте производный объект из <xref:System.ComponentModel.ICustomTypeDescriptor>. Реализация <xref:System.ComponentModel.ICustomTypeDescriptor> может изменять возвращаемые дескрипторы свойств и имя свойства. Чтобы локализовать описание, создайте атрибут, который является производным от <xref:System.ComponentModel.DescriptionAttribute>, и переопределите свойство Description.  
@@ -43,8 +43,8 @@ ms.locfileid: "62434193"
   
 4. Клиент может вызвать интерфейс `IConnection` для получения доступа к подобъекту перечислителя с интерфейсом <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>. Интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> затем можно вызвать для перечисления точек подключения для каждого исходящего идентификатора интерфейса (IID).  
   
-5. `IConnection` также можно вызывать для получения доступа к подобъектам точки подключения с интерфейсом <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> для каждого исходящего IID. Через интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> клиент запускает или завершает работу цикла рекомендаций с доступным для подключения объектом и собственной синхронизацией клиента. Клиент может также вызывать интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> для получения объекта перечислителя с интерфейсом <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> для перечисления подключений, о которых ему известно.  
+5. `IConnection` также можно вызывать для получения доступа к подобъектам точки подключения с интерфейсом <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> для каждого исходящего IID. Через <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс клиент запускает или завершает цикл рекомендаций с подключаемым объектом и собственной синхронизацией клиента. Клиент также может вызвать <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс для получения объекта перечислителя с <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> интерфейсом для перечисления известных им соединений.  
   
-## <a name="see-also"></a>См. также  
- [Отслеживание выделения в окне свойств](../misc/announcing-property-window-selection-tracking.md)   
+## <a name="see-also"></a>См. также:  
+ [Объявление об отслеживании выбора окна свойств](../misc/announcing-property-window-selection-tracking.md)   
  [Расширение свойств](../extensibility/internals/extending-properties.md)

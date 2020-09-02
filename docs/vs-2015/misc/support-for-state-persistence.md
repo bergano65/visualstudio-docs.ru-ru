@@ -1,5 +1,5 @@
 ---
-title: Поддержка сохранение состояния | Документация Майкрософт
+title: Поддержка сохраняемости состояния | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,35 +12,35 @@ ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
 manager: jillfra
 ms.openlocfilehash: 6dc542d2e410b79a21e436a1881c06bd3cc4eef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434323"
 ---
 # <a name="support-for-state-persistence"></a>Поддержка сохранения состояния
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] могут поддерживать состояние таких объектов. Например решения и проекта свойства сохранены и восстановить из файлов решений и проектов. Параметры пользователя можно экспортировать и импортировать из файлов параметров.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может поддерживать состояние общих объектов. Например, свойства решения и проекта сохраняются в файлах решения и проекта и восстанавливаются из них. Параметры пользователя можно экспортировать в файлы параметров и импортировать из них.  
   
- Пакеты VSPackage, обычно полагаются на локальное хранилище, в системном реестре или в папке данных приложения для текущего пользователя или компьютера. Значения, которые требуют небольшой объем пространства для хранения, такие как Integer и String, обычно хранятся в системном реестре. Значения, которые требуют много места для хранения, такие как точечные рисунки, сохраняются в файле. Путь к файлу сам, сохраняемых в системном реестре. Механизм сохранения необходимо иметь разрешение на доступ к локальному хранилищу.  
+ Пакеты VSPackage обычно зависят от локального хранилища: в системном реестре или в папке данных приложения для текущего пользователя или компьютера. Значения, для которых требуется небольшой объем пространства для хранения, такие как целые числа и строки, обычно хранятся в системном реестре. Значения, требующие большого объема пространства для хранения, например точечные рисунки, сохраняются в файле. Путь к файлу может быть сохранен в системном реестре. Механизм сохраняемости должен иметь разрешение на доступ к локальному хранилищу.  
   
-## <a name="support-for-locating-local-storage"></a>Поддержка поиска локального хранилища  
- <xref:Microsoft.VisualStudio.Shell.Package> Класс обеспечивает поддержку для поиска сведений о состоянии в папке system реестра или приложения данных для текущего пользователя или компьютера.  
+## <a name="support-for-locating-local-storage"></a>Поддержка обнаружения локального хранилища  
+ <xref:Microsoft.VisualStudio.Shell.Package>Класс обеспечивает поддержку обнаружения сведений о состоянии в системном реестре или в папке данных приложения для текущего пользователя или компьютера.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>  
- Возвращает путь к корневой раздел реестра локального компьютера для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], например HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0Exp.  
+ Возвращает путь к корню реестра локального компьютера для, например [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp.  
   
- Корневой элемент локального реестра получается из <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> службы. Если этот параметр недоступен, он извлекается из <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> атрибута пакета VSPackage.  
+ Локальный корень реестра получен из <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> службы. Если он недоступен, он получается из <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute> атрибута VSPackage.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>  
- Возвращает путь текущего пользователя (на каждом компьютере) корневой раздел реестра для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], например HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp.  
+ Возвращает путь к корневому каталогу реестра текущего пользователя для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , например HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp.  
   
- Корневой элемент локального реестра получается из <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> службы. Если этот параметр недоступен, он извлекается из атрибута DefaultLocalRegistryRoot VSPackage.  
+ Локальный корень реестра получен из <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> службы. Если он недоступен, он получается из атрибута Дефаултлокалрегистрирут пакета VSPackage.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserDataPath%2A>  
- Возвращает путь к каталогу, который служит в качестве общего хранилища для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] данные для текущего перемещающегося пользователя, например, C:\Documents and Settings\\*YourAccountName*\Application Data\Microsoft\ VisualStudio\8.0Exp.  
+ Возвращает путь к каталогу, который служит общим репозиторием для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] данных текущего перемещающегося пользователя, например C:\Documents and Settings \\ *йоураккаунтнаме*\Application Data\Microsoft\VisualStudio\8.0Exp.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserLocalDataPath%2A>  
- Возвращает путь к каталогу, который служит в качестве общего хранилища для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] данные для текущим неперемещающимся пользователем, например, C:\Documents and Settings\\*YourAccountName*\Local Settings\Application Data\Microsoft\VisualStudio\8.0Exp.  
+ Возвращает путь к каталогу, который служит общим репозиторием для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] данных текущего пользователя, не перемещающегося в роуминге, например C:\Documents and Settings \\ *йоураккаунтнаме*\Local Settings\Application Data\Microsoft\VisualStudio\8.0Exp.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Состояние VSPackage](../misc/vspackage-state.md)

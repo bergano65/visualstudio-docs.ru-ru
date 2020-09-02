@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Документация Майкрософт
+title: СТЕПКИНД | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a24513e5d047501417e4c61285662f7167241e3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414663"
 ---
 # <a name="stepkind"></a>STEPKIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает тип шага для пошагового выполнения.  
+Указывает тип шага для пошагового выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,27 +47,27 @@ public enum enum_STEPKIND { 
   
 ## <a name="members"></a>Участники  
  STEP_INTO  
- Шаг с заходом в функцию.  
+ Шаги в функцию.  
   
  STEP_OVER  
- Шаги с обходом функции.  
+ Шаги над функцией.  
   
  STEP_OUT  
- Выходит из функции.  
+ Выполнит шаги функции.  
   
  STEP_BACKWARDS  
- Переход обратно в функцию.  
+ Выполните шаги назад в функцию.  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве аргумента в метод [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

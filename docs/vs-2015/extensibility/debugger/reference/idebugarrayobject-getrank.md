@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Документация Майкрософт
+title: 'Идебугаррайобжект:: Rank | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf9700e2c3b29561229999506ed789a2e3d6e52e
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423677"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает ранг массива, то есть число измерений.  
+Возвращает ранг массива, то есть количество измерений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int GetRank(
   
 #### <a name="parameters"></a>Параметры  
  `pdwRank`  
- [out] Возвращает ранг.  
+ заполняет Возвращает ранг.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Используйте [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) метод для извлечения размер каждого измерения массива объекта.  
+## <a name="remarks"></a>Remarks  
+ Используйте метод [Dimension](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) , чтобы получить размер каждого измерения объекта массива.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

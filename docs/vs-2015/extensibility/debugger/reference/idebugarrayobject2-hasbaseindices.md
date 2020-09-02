@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices | Документация Майкрософт
+title: 'IDebugArrayObject2:: Хасбасеиндицес | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9d0c06ad921ad43bcb7a79446062bc6feda8009
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423651"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет, имеет ли массив базовые индексы (нижних границ) определен.  
+Определяет, определен ли в массиве базовые индексы (нижние границы).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,7 +39,7 @@ int HasBaseIndices (
   
 #### <a name="parameters"></a>Параметры  
  `pfHasBaseIndices`  
- [out] Значение TRUE, чтобы указать, что массив имеет базовый индексов (нижней границы); в противном случае — значение FALSE.  
+ заполняет Значение TRUE, чтобы указать, что массив имеет базовые индексы (нижние границы); в противном случае — значение FALSE.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.

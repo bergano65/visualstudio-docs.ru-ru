@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Документация Майкрософт
+title: 'Идебугбиндер:: BIND | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 547f94cb4534bcb281cce0fdc2ff7db5fefe3593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423547"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод получает контекст в памяти или объект, содержащий текущее значение символа.  
+Этот метод получает контекст памяти или объект, который содержит текущее значение символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,18 +44,18 @@ int Bind(
   
 #### <a name="parameters"></a>Параметры  
  `pContainer`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , содержащая дочерние ссылается `pField`.  
+ окне [Идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , содержащий дочерний элемент, на который ссылается `pField` .  
   
  `pField`  
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющий символ.  
+ окне [Идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющий символ.  
   
  `ppObject`  
- [out] Возвращает `IDebugObject` , представляющий экземпляр символа.  
+ заполняет Возвращает объект `IDebugObject` , представляющий экземпляр символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md)   
+ [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

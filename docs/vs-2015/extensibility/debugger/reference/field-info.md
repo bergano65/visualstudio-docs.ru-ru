@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e18e906cbc65ea811e765553a8d2711b3e4eb0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423742"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
+# <a name="field_info"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Локальная переменная, параметр или другому полю, описанном структурой.  
+Эта структура описывает локальную переменную, параметр или другое поле.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,32 +47,32 @@ public struct FIELD_INFO {
 ```  
   
 ## <a name="members"></a>Участники  
- dwFields  
- Сочетание флагов из [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) перечисление, указывающее, какие члены будут заполнены.  
+ двфиелдс  
+ Сочетание флагов из перечисления [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) , которое указывает, какие элементы заполняются.  
   
- bstrFullName  
+ бстрфуллнаме  
  Полное имя поля.  
   
  bstrName  
- Короткое имя поля.  
+ Краткое имя поля.  
   
- bstrType  
+ бстртипе  
  Тип поля.  
   
- dwModifiers  
- Сочетание флагов из [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) перечисление, описывающее поле.  
+ двмодифиерс  
+ Сочетание флагов из перечисления [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) , которое описывает поле.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод, где он заполняется.  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается в метод " [info](../../../extensibility/debugger/reference/idebugfield-getinfo.md) ", где он заполняется.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   

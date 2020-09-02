@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Время ожидания при отладке веб-служб | Документация Майкрософт'
+title: 'Ошибка: истекло время ожидания при отладке веб-служб | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5745a23e70f9245d6f1cb34a6d4ccc042f64bdd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538337"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Ошибка: время ожидания при отладке веб-служб
@@ -43,5 +43,5 @@ Service1 obj = new Service1();
 obj.TimeOut = -1; // infinite time out.  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

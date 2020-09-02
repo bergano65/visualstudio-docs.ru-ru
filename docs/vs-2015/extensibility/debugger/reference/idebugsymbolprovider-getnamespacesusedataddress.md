@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Документация Майкрософт
+title: 'Идебугсимболпровидер:: Жетнамеспацесуседатаддресс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25ea68130f546ea90216c831d321e6498af12a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421295"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
@@ -42,17 +42,17 @@ int GetNamespacesUsedAtAddress(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Адрес отладки.  
+ окне Адрес отладки.  
   
  `ppEnum`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечислитель для пространств имен.  
+ заполняет Возвращает перечислитель [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) для пространств имен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Может существовать несколько пространств имен, связанных с заданной отладочной адрес, например, вложенные пространства имен или нескольких `using` инструкций.  
+## <a name="remarks"></a>Remarks  
+ С указанным адресом отладки может быть связано несколько пространств имен, например вложенные пространства имен или несколько `using` инструкций.  
   
-## <a name="see-also"></a>См. также  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

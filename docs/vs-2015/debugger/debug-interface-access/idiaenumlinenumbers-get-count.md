@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers::get_Count | Документация Майкрософт
+title: 'Идиаенумлиненумберс:: get_Count | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aaa39e806e8482ac989c643470261403647212d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431671"
 ---
-# <a name="idiaenumlinenumbersgetcount"></a>IDiaEnumLineNumbers::get_Count
+# <a name="idiaenumlinenumbersget_count"></a>IDiaEnumLineNumbers::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Возвращает число номеров строк.  
@@ -34,12 +34,12 @@ HRESULT get_Count ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- pRetVal  
- [out] Возвращает количество номеров строк.  
+ претвал  
+ заполняет Возвращает число номеров строк.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумлиненумберс](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)

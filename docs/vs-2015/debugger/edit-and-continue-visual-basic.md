@@ -1,5 +1,5 @@
 ---
-title: Изменить и продолжить (Visual Basic) | Документация Майкрософт
+title: Режим "Изменить и продолжить" (Visual Basic) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428563"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
@@ -44,7 +44,7 @@ ms.locfileid: "62428563"
  Подразделы данного раздела предоставляют дополнительные сведения об использовании этого режима и о том, какие виды изменений запрещены.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. "Изменить и продолжить" в режиме приостановки выполнения](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Как применить изменения в режиме приостановки с помощью режима "изменить и продолжить"](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Объясняется, как применять изменения кода в режиме приостановки.  
   
  [Изменения, не поддерживаемые в режиме "Изменить и продолжить" Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  

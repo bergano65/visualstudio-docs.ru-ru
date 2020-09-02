@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419914"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Представление "Функции" — данные инструментирования памяти .NET
@@ -23,7 +23,7 @@ ms.locfileid: "62419914"
 
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных методом инструментирования, содержатся функции, которые выделяли память в ходе сеанса профилирования. Строка функции содержит размер и число выделений, а также данные о времени, характерные для функции.  
   
-## <a name="general"></a>Общие  
+## <a name="general"></a>Общее  
   
 |Столбец|Описание|  
 |------------|-----------------|  
@@ -99,8 +99,8 @@ ms.locfileid: "62419914"
 |**Максимальное эксклюзивное время приложения**|Максимальное эксклюзивное время приложения для вызова данной функции.|  
 |**Минимальное эксклюзивное время приложения**|Минимальное эксклюзивное время приложения для вызова данной функции.|  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Представление "функции"](../profiling/functions-view-instrumentation-data.md)   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Microsoft Docs
+title: 'Идебугбиндер:: Жетмемориконтекст | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db8d8d820c43d17194feda0bf228227a279dccc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423417"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод преобразует адрес объекта или адрес памяти контекста памяти.  
+Этот метод преобразует расположение объекта или адрес памяти в контекст памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,18 +44,18 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Параметры  
  `pField`  
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо этого.  
+ окне Объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект для размещения. Если значение равно `NULL` , используйте `dwConstant` вместо него.  
   
  `dwConstant`  
- [in] Адрес памяти константы, например 0x5000.  
+ окне Постоянный адрес памяти, например 0x5000.  
   
  `ppMemCxt`  
- [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который представляет адрес объекта, или адрес в памяти.  
+ заполняет Возвращает интерфейс [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , представляющий адрес объекта или адрес в памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

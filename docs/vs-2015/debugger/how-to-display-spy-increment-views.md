@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отображение представлений Spy ++ | Документация Майкрософт
+title: Практическое руководство. Отображение представлений Spy++ | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,17 +12,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6e034bdf1ecefc996aa238cbcd97616d083363b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538791"
 ---
 # <a name="how-to-display-spy-views"></a>Практическое руководство. отображение представлений Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При запуске программы Spy ++, он открывается в [представление Windows](../debugger/windows-view.md), дерево всех окон и элементов управления, доступных на вашем компьютере. Это корневое окно называется «Windows 1». Также доступны три представления Spy ++: [Представлением "сообщения"](../debugger/messages-view.md), [представление процессов](../debugger/processes-view.md), и [потоков представление](../debugger/threads-view.md). Можно отобразить нужное представление из **Spy** меню. Дополнительные сведения см. в разделе [представлений Spy ++](../debugger/spy-increment-views.md).  
+При запуске программы Spy++ открывается [представление окон](../debugger/windows-view.md) — представление всех окон и элементов управления, доступных на вашем компьютере, в виде дерева. Это основное окно с названием "Окна 1". Также доступны три других представления Spy++: [представление сообщений](../debugger/messages-view.md), [представление процессов](../debugger/processes-view.md) и [представление потоков](../debugger/threads-view.md). Нужное представление можно открыть из меню **Spy**. Дополнительные сведения см. в статье [Представления Spy++](../debugger/spy-increment-views.md).  
   
-## <a name="see-also"></a>См. также  
- [Использование Spy++](../debugger/using-spy-increment.md)   
+## <a name="see-also"></a>См. также:  
+ [Использование Spy + +](../debugger/using-spy-increment.md)   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)

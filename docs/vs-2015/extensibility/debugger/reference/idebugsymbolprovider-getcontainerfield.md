@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField | Документация Майкрософт
+title: 'Идебугсимболпровидер:: Жетконтаинерфиелд | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85c25d0d601ef3264a1fbd22f9cdbc2e40f31402
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546880"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
@@ -42,15 +42,15 @@ int GetContainerField(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
+ окне Адрес, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `ppContainerField`  
- [out] Возвращает контейнер поля, представленного [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс.  
+ заполняет Возвращает поле контейнера, представленное интерфейсом [идебугконтаинерфиелд](../../../extensibility/debugger/reference/idebugcontainerfield.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

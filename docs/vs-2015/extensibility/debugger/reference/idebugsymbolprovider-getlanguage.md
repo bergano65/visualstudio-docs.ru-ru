@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Документация Майкрософт
+title: 'Идебугсимболпровидер:: отличный язык | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421776"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
@@ -44,20 +44,20 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] Адрес объекта, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
+ окне Объект Address, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pguidLanguage`  
- [out] Возвращает `GUID` , указывающее язык.  
+ заполняет Возвращает значение типа `GUID` , указывающее язык.  
   
  `pguidLanguageVendor`  
- [out] Возвращает `GUID` , указывающий поставщика языка.  
+ заполняет Возвращает значение типа `GUID` , указывающее поставщика языка.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Отладчик вызывает этот метод, чтобы получить сведения, необходимые для выбора средство оценки выражений правильно.  
+## <a name="remarks"></a>Remarks  
+ Обработчик отладки вызывает этот метод для получения сведений, необходимых для выбора правильного средства оценки выражений.  
   
-## <a name="see-also"></a>См. также  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

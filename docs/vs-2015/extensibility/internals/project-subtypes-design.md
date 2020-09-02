@@ -1,5 +1,5 @@
 ---
-title: Проект подтипы разработки | Документация Майкрософт
+title: Проектирование подтипов проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,84 +11,84 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62430553"
 ---
 # <a name="project-subtypes-design"></a>Разработка подтипов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Подтипов проекта позволяют пакеты VSPackage расширяют проектов на основании Microsoft Build Engine (MSBuild). Использование статистической обработки позволяет повторно использовать основную часть реализации в системе проектов core управляемых [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , но по-прежнему настройки поведения для конкретного сценария.  
+Подтипы проектов позволяют VSPackage расширять проекты на основе Microsoft Build Engine (MSBuild). Использование статистической обработки позволяет повторно использовать основную часть реализуемой управляемой системы проектов, тем [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] не менее настроив поведение для конкретного сценария.  
   
- Следующие разделы подробно описаны основные проектирование и реализацию подтипов проекта.  
+ В следующих разделах подробно описаны основные проектирование и реализация подтипов проектов.  
   
-- Структура подтип проекта.  
+- Проект подтипа проекта.  
   
-- Многоуровневые статистической обработки.  
+- Многоуровневая агрегация.  
   
-- Поддержка интерфейсов.  
+- Вспомогательные интерфейсы.  
   
-## <a name="project-subtype-design"></a>Проектирование подтип проекта  
- Инициализация подтипом проекта достигается за счет объединения основной <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> объектов. Объединение позволяет подтипа проекта для переопределения или изменения большинство возможностей базового проекта. Подтипов проекта получить первый шанс обработки свойств с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, команд с использованием <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>и проект элемента управления с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Также можно расширить подтипов проекта:  
+## <a name="project-subtype-design"></a>Проект подтипа проекта  
+ Инициализация подтипа проекта достигается за счет статистической обработки основных <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объектов и <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> . Этот агрегат позволяет подтипу проекта переопределять или улучшать большинство возможностей базового проекта. Подтипы проектов получают первый шанс для обработки свойств с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , команд, с помощью, и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> управления элементами проекта с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> . Подтипы проектов также могут расширять:  
   
 - Объекты конфигурации проекта.  
   
-- Объекты, зависящие от конфигурации.  
+- Зависимые от конфигурации объекты.  
   
-- Обзор конфигурациями объектов.  
+- Независимые от конфигурации объекты просмотра.  
   
-- Объекты автоматизации проекта.  
+- Объекты автоматизации проектов.  
   
-- Автоматизация свойства коллекций проектов.  
+- Коллекции свойств автоматизации проекта.  
   
-  Дополнительные сведения о расширяемости для подтипов проекта, см. в разделе [свойства и методы, расширенные подтипами проектов](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Дополнительные сведения о расширяемости для подтипов проектов см. в разделе [Свойства и методы, расширенные по подтипам проектов](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Файлы политики  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Среда предоставляет пример расширения базовой системы проектов с подтипом проекта, в своей реализации файлы политики. Файл политики позволяет формирование [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] среды, управляя функциональные возможности, включая обозреватель решений **добавить проект** диалоговом окне **Добавление нового элемента** диалоговое окно и  **Свойства** диалоговое окно. Подтип политики переопределяет и расширяет эти функции через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> реализаций.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Среда предоставляет пример расширения базовой системы проектов с подтипом проекта в его реализации файлов политики. Файл политики позволяет выполнять формирование [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] среды, управляя компонентами, включающими диалоговое окно Обозреватель решений, **Добавление проекта** , **Добавление нового элемента** и диалоговое окно **Свойства** . Подтип политики переопределяет и расширяет эти функции с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> `IOleCommandTarget` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> реализаций и.  
   
-##### <a name="aggregation-mechanism"></a>Механизм статистической обработки  
- Механизм статистической обработки подтип проекта среды поддерживает несколько уровней статистической обработки, что позволяет дополнительно подтип, для реализации дополнительных flavoring предпочтительный проект. Кроме того, подтипа проекта вспомогательные объекты, такие как <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>, позволяют использовать несколько уровней архитектуры. В соответствии с ограничениями COM и COM правила агрегирования, подтипов проекта и проекта базовых проектов должны быть запрограммированы совместно, чтобы внутренний подтип или базового проекта могли надлежащим образом участвовали в делегировании вызовов методов и управление счетчиков ссылок . То есть проекте, которые должны быть статистически вычислена должен быть запрограммированы для поддержки статистической обработки.  
+##### <a name="aggregation-mechanism"></a>Механизм агрегирования  
+ Механизм агрегирования подтипа проекта среды поддерживает несколько уровней статистической обработки, позволяя реализовать Расширенный подтип, изменяя проект. Кроме того, вспомогательные объекты подтипа проекта, такие как <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> , предназначены для разрешения нескольких уровней слоев. В соответствии с ограничениями правил агрегирования COM и COM, подтипы проектов и базовые проекты должны быть совместно обработаны, чтобы обеспечить правильное участие внутреннего подтипа или базового проекта при делегировании вызовов методов и управлении счетчиками ссылок. То есть проект, для которого необходимо выполнить статистическую обработку, должен быть запрограммирован на поддержку статистической обработки.  
   
- Ниже показан схематически статистического вычисления подтип многоуровневого проекта.  
+ На следующем рисунке показано схематическое представление агрегированного подтипа проекта с несколькими уровнями.  
   
- ![График многоуровневой projectflavor Visual Studio](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
-Подтип многоуровневого проекта  
+ ![График Visual Studio multilevel projectflavor](../../extensibility/internals/media/vs-multilevelprojectflavor.gif "VS_MultilevelProjectFlavor")  
+Многоуровневый подтип проекта  
   
- Является агрегатом подтип многоуровневого проекта состоит из трех уровней, в базовый проект, который является статистическая обработка проводится путем подтипом проекта, а затем Дополнительно статистическая обработка проводится путем подтипа проекта расширенной. Рис посвящена некоторым вспомогательных интерфейсов, которые предоставляются как часть [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] архитектура подтип проекта.  
+ Многоуровневая агрегация подтипа проекта состоит из трех уровней: базового проекта, который агрегирован по подтипу проекта, а затем статистической обработки расширенного подтипа проекта. Эта фигура посвящена некоторым вспомогательным интерфейсам, предоставляемым как часть [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] архитектуры подтипа проекта.  
   
 ##### <a name="deployment-mechanisms"></a>Механизмы развертывания  
- Среди многих базовой системы проектов функциональные возможности, дополнены подтипом проекта — это механизмы развертывания. Подтип проекта влияет механизмы развертывания путем реализации интерфейсов конфигурации (таких как <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>), извлекаются путем вызова QueryInterface для <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. В сценарии, где подтипа проекта и подтипа проекта расширенной добавьте реализации другой конфигурации, вызывает базового проекта `QueryInterface` на подтипа проекта расширенной `IUnknown`. Если внутренний подтип проекта содержит реализацию конфигурации, которая запрашивает базового проекта, подтипа проекта расширенной делегирует реализацию, предоставляемую внутреннего подтипа проекта. Как механизм сохранения состояния уровень статистической обработки одной реализации всех уровней подтипов проекта <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> для сохранения не сборки связанные XML-данных в файлы проекта. Дополнительные сведения см. в разделе [сохранение данных в файле проекта MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> реализуется как механизм для извлечения расширителей автоматизации из подтипов проекта.  
+ Между множеством базовых функций системы проектов, улучшенных подтипом проекта, применяются механизмы развертывания. Подтип проекта влияет на механизмы развертывания путем реализации интерфейсов конфигурации (таких как <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ), которые извлекаются путем вызова QueryInterface в <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> . В сценарии, где и подтип проекта, и Расширенный подтип проекта добавляют различные реализации конфигурации, базовый проект вызывает `QueryInterface` в качестве дополнительного подтипа проекта `IUnknown` . Если внутренний подтип проекта содержит реализацию конфигурации, для которой запрашиваются базовые проекты, то Расширенный подтип проекта делегирует реализации, предоставляемой внутренним подтипом проекта. В качестве механизма сохранения состояния из одного уровня статистической обработки в другой все уровни подтипов проектов реализуются <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> для сохранения данных XML, не связанных с построением, в файлы проекта. Дополнительные сведения см. [в разделе Сохранение данных в файле проекта MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> реализуется как механизм для получения расширителей автоматизации из подтипов проекта.  
   
- Ниже рассматривается реализация расширителей автоматизации, объект обзора конфигурации проекта в частности, подтипов проекта, используемый для расширения системы базового проекта.  
+ На следующем рисунке основное внимание уделяется реализации расширения автоматизации, объекта просмотра конфигурации проекта в частности, используемого подтипами проекта для расширения базовой системы проектов.  
   
  ![График авто расширения проекта Flavor VS](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
-Расширения автоматизации подтип проекта.  
+Расширитель "Автоматизация подтипа проекта".  
   
- Подтипов проекта можно расширить базовой системы проектов, расширив объектной модели автоматизации. Они определяются как часть объект автоматизации DTE и используются для расширения объекта проекта, `ProjectItem` объекта и `Configuration` объекта. Дополнительные сведения см. [расширение модели объекта базового проекта](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
+ Подтипы проектов могут дополнительно расширить базовую систему проектов путем расширения объектной модели автоматизации. Они определяются как часть объекта автоматизации DTE и используются для расширения объекта проекта, `ProjectItem` объекта и `Configuration` объекта. Дополнительные сведения см. [в разделе Расширение объектной модели базового проекта](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
   
-## <a name="multi-level-aggregation"></a>Многоуровневые статистической обработки  
- Реализация подтип проекта, который заключает в оболочку подтипом нижнего уровня проекта должен быть создается совместно, чтобы позволить внутреннего подтипа проекта для правильной. Включает список программирования обязанности:  
+## <a name="multi-level-aggregation"></a>Многоуровневая агрегация  
+ Реализация подтипа проекта, которая служит оболочкой для подтипа проекта более низкого уровня, должна совместно программироваться, чтобы обеспечить правильную работу внутреннего подтипа проекта. Список функциональных обязанностей программирования включает:  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Должны делегировать реализацию подтипа проекта, который является оболочкой внутренний подтип <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> реализацию внутреннего подтипа проекта для обоих <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> методы.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>Реализация подтипа проекта, который является оберткой внутреннего подтипа, должна делегировать <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> реализацию внутреннего подтипа проекта для <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> методов и.  
   
-- <xref:EnvDTE80.IInternalExtenderProvider> Реализации оболочки подтипа проекта следует делегировать, его внутренний подтип проекта. В частности, реализации <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> необходимо получить строку имен из внутреннего подтипа проекта, а затем выполнит объединение строк, необходимо добавить в качестве расширения.  
+- <xref:EnvDTE80.IInternalExtenderProvider>Реализация подтипа проекта-оболочки должна быть делегирована его внутреннему подтипу проекта. В частности, реализация <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> должна получить строку имен из внутреннего подтипа проекта, а затем сцепить строки, которые необходимо добавить в качестве расширителей.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Реализации оболочки подтипа проекта необходимо создать экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> объекта его внутренний подтип проекта и удерживайте его как закрытый делегат, так как только объект конфигурации проекта базового проекта непосредственно знает, что оболочка существует объект конфигурации подтипа проекта. Внешним подтипом проекта можно сначала выберите интерфейсов конфигурации, оно может обработать напрямую, а затем делегирует rest для реализации внутреннего подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>Реализация подтипа проекта-оболочки должна создать экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> объекта внутреннего подтипа проекта и сохранить его как закрытый делегат, так как только объект конфигурации проекта базового проекта непосредственно знает, что объект конфигурации подтипа проекта оболочки существует. Внешний подтип проекта может изначально выбрать интерфейсы конфигурации, которые требуется напрямую обменять, а затем делегировать оставшуюся реализацию внутреннего подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A> .  
   
-## <a name="supporting-interfaces"></a>Поддержка интерфейсов  
- Базовый проект делегирует вызовы поддержка интерфейсов, добавленные подтипом проекта, чтобы расширить различные аспекты его реализации. Это включает в себя расширение объектов конфигурации проекта и различных свойств обозревателя объектов. Эти интерфейсы извлекаются путем вызова `QueryInterface` на `punkOuter` (указатель на `IUnknown`) агрегатора подтип внешний проект.  
+## <a name="supporting-interfaces"></a>Вспомогательные интерфейсы  
+ Базовый проект делегирует вызовы вспомогательных интерфейсов, добавленных подтипом проекта, для расширения различных аспектов его реализации. Сюда входит расширение объектов конфигурации проекта и различные объекты обозревателя свойств. Эти интерфейсы извлекаются путем вызова `QueryInterface` в `punkOuter` (указатель на `IUnknown` ) внешнего агрегатора подтипа проекта.  
   
 |Интерфейс|Подтип проекта|  
 |---------------|---------------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Разрешает подтипу проекта:<br /><br /> -Предоставлять реализацию метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>.<br />-Контролировать запуск отладчика, позволяя подтипом проекта, чтобы предоставить собственную реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>.<br />-Отключить вычисление выражений во время разработки с соответствующей обработкой `DBGLAUNCH_DesignTimeExprEval` вариантов в своей реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A>.|  
-|<xref:EnvDTE80.IInternalExtenderProvider>|Разрешает подтипу проекта:<br /><br /> -Расширить <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> проекта для добавления или удаления независимых свойства конфигурации проекта.<br />-Расширения автоматизации объекта проекта (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) проекта.<br /><br /> Значения свойств выше берутся из <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>|Разрешает подтипу проекта для отображения обратно в <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> объект передан объект обзора конфигурации проекта.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBrowseObject>|Разрешает подтипу проекта для отображения обратно в <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> или `VSITEMID` объект, которому передан объект обзора конфигурации проекта.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Разрешает подтипу проекта для хранения произвольных XML-структуру данных в файл проекта (VBPROJ или csproj). Эти данные не отображается в MSBuild.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Разрешает подтипу проекта:<br /><br /> — Добавление новых свойств MSBuild, должна быть сохранена.<br />-Удалите ненужные свойства из MSBuild.<br />-Запрос для текущего значения свойства MSBuild.<br />— Изменение текущего значения свойства MSBuild.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>|Позволяет подтипу проекта:<br /><br /> — Предоставьте реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> .<br />— Управление запуском отладчика, позволяя подтипу проекта предоставлять собственную реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> .<br />— Отключение вычисления выражений во время разработки путем соответствующей обработки `DBGLAUNCH_DesignTimeExprEval` варианта в его реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.QueryDebugLaunch%2A> .|  
+|<xref:EnvDTE80.IInternalExtenderProvider>|Позволяет подтипу проекта:<br /><br /> — Расширение <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> проекта для добавления или удаления независимых от конфигурации свойств проекта.<br />— Расширение объекта автоматизации проекта ( <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> ).<br /><br /> Приведенные выше значения свойств берутся из <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>|Позволяет подтипу проекта сопоставляться с <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> объектом, заданным объектом просмотра конфигурации проекта.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBrowseObject>|Позволяет подтипу проекта сопоставляться с <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объектом или с `VSITEMID` заданным объектом просмотра конфигурации проекта.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Позволяет подтипу проекта сохранять произвольные структурированные данные XML в файл проекта (VBPROJ или CSPROJ). Эти данные не видны в MSBuild.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Позволяет подтипу проекта:<br /><br /> — Добавьте новые свойства MSBuild, которые должны быть сохранены.<br />— Удаление ненужных свойств из MSBuild.<br />— Запросить текущее значение свойства MSBuild.<br />— Изменение текущего значения свойства MSBuild.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

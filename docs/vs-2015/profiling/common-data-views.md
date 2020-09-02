@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 708bb96beab51fa69910deef40dc468a1fd21058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421412"
 ---
 # <a name="common-data-views"></a>Представления общих данных
@@ -24,8 +24,8 @@ ms.locfileid: "62421412"
 
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, которые являются общими для всех методов профилирования.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Представление "Сводка"](../profiling/summary-view.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [Сводное представление](../profiling/summary-view.md)  
  Содержит описание представления и отчета "Сводка". Столбцы данных зависят от используемого метода профилирования.  
   
  [Представление "Вызывающий/вызываемый"](../profiling/caller-callee-view.md)  
@@ -52,11 +52,11 @@ ms.locfileid: "62421412"
  [Представление "Метки"](../profiling/marks-view.md)  
  Содержит список трассировки событий Windows и событий выборки, вставленных в файл данных профилирования.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода выборки.  
   
- [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
+ [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода инструментирования.  
   
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)  
