@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591896"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 
-В текстовом шаблоне времени разработки Visual Studio директива `assembly` загружает сборку, чтобы код шаблона мог использовать его типы. Этот результат аналогичен добавлению ссылки на сборку в проекте Visual Studio.
+В текстовом шаблоне времени разработки Visual Studio `assembly` директива загружает сборку, чтобы код шаблона мог использовать его типы. Этот результат аналогичен добавлению ссылки на сборку в проекте Visual Studio.
 
  Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
@@ -36,7 +36,7 @@ ms.locfileid: "75591896"
 
 - абсолютный путь к сборке;
 
-  Синтаксис `$(variableName)` можно использовать для ссылки на переменные среды Visual Studio, такие как `$(SolutionDir)`, а также для `%VariableName%` ссылок на них. Например:
+  Синтаксис можно использовать `$(variableName)` для ссылки на переменные среды Visual Studio, такие как `$(SolutionDir)` и `%VariableName%` . Пример:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -63,7 +63,7 @@ ms.locfileid: "75591896"
 
 - Сборка, содержащая DSL.
 
-## <a name="msbuild"></a>Использование свойств проекта в MSBuild и Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio
  Макросы Visual Studio, такие как $ (SolutionDir), не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.
 
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.
@@ -88,6 +88,6 @@ ms.locfileid: "75591896"
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Директива Include T4](../modeling/t4-include-directive.md)

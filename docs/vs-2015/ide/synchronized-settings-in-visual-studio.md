@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646816"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Синхронизированные параметры в Visual Studio
@@ -40,11 +40,11 @@ ms.locfileid: "72646816"
 
   - Все параметры на странице параметров **Среда**, **Запуск**
 
-  - Все параметры на страницах параметров **Текстовый редактор**
+  - Все параметры на страницах параметров **текстового редактора**
 
 - Все параметры на страницах параметров конструктора XAML
 
-- Определяемые пользователем псевдонимы команд. Дополнительные сведения об определении псевдонимов команд см. в разделе [Псевдонимы команд Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Определяемые пользователем псевдонимы команд. Дополнительные сведения об определении псевдонимов команд см. в разделе [псевдонимы команд Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
 - Макеты окон, определяемые пользователем, на странице **Окно &#124; Управление макетами окон**
 
@@ -57,5 +57,5 @@ ms.locfileid: "72646816"
 > [!WARNING]
 > Параметры не синхронизируются между Visual Studio 2013 и Visual Studio 2015. При первом открытии Visual Studio 2015 параметры переносятся из Visual Studio 2013, но после этого их нельзя будет перенести обратно в Visual Studio 2013.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)

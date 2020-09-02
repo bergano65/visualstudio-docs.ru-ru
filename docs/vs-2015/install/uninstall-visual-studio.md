@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546906"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
@@ -31,7 +31,7 @@ ms.locfileid: "62546906"
 
 ## <a name="uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Удаление Visual Studio с помощью стандартного метода удаления
 
-1. На странице **Программы и компоненты** **панели управления** выберите выпуск продукта, который требуется удалить, и нажмите кнопку **Изменить**.
+1. На странице **Программы и компоненты****панели управления** выберите выпуск продукта, который требуется удалить, и нажмите кнопку **Изменить**.
 
 2. В мастере установки выберите **Удалить**, нажмите кнопку **Да**, а затем следуйте инструкциям мастера.
 
@@ -55,9 +55,9 @@ ms.locfileid: "62546906"
 
 1. На компьютере, на котором установлена среда Visual Studio, откройте командную строку Windows.
 
-2. Введите следующие параметры:
+2. Задайте следующие параметры:
 
-     *DVDRoot* \\<Installation File\> \</quiet&#124;/passive> [/norestart]/uninstall
+     *Двдрут* \\ Файл установки<\> \</quiet&#124;/passive> [/norestart]/Uninstall
 
 ## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Откат к предыдущей версии или предыдущему выпуску Visual Studio
 

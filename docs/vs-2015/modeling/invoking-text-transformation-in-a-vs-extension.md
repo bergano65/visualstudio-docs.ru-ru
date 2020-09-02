@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646151"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
@@ -139,9 +139,9 @@ Sample text.
 ## <a name="reference-parameters"></a>Параметры ссылок
  Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.
 
-## <a name="related-topics"></a>См. также
- Чтобы создать текст из предварительно обработанного текстового шаблона, вызовите метод `TransformText()` созданного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="related-topics"></a>Связанные разделы
+ Чтобы создать текст из предварительно обработанного текстового шаблона, вызовите `TransformText()` метод созданного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Для создания текста вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ного расширения: определите пользовательский узел. Дополнительные сведения см. [в разделе Обработка текстовых шаблонов с помощью пользовательского узла](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Для создания текста вне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширения: определите пользовательский узел. Дополнительные сведения см. [в разделе Обработка текстовых шаблонов с помощью пользовательского узла](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
  Для создания исходного кода, который впоследствии может быть скомпилирован и выполнен: вызовите метод [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) объекта [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

@@ -12,26 +12,26 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db5be965119d1564f2a4bf8a15892af7142663e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186362"
 ---
 # <a name="updating-the-user-interface"></a>Обновление пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-После выполнения команды, можно добавить код для обновления пользовательского интерфейса с состоянием новых команд.  
+После реализации команды можно добавить код для обновления пользовательского интерфейса с состоянием новых команд.  
   
- В типичном приложении Win32 при этом набор команд можно постоянно опрашивать и состояние отдельных команд может быть скорректирован пользователь просматривает их. Тем не менее поскольку [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] оболочки можно размещать неограниченное число пакетов VSPackage, обширные опроса может уменьшить время отклика, особенно опроса через сборки взаимодействия между управляемым кодом и COM.  
+ В типичном приложении Win32 набор команд можно постоянно опрашивать, а состояние отдельных команд можно настроить по мере их просмотра пользователем. Однако, поскольку [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] оболочка может размещать неограниченное количество пакетов VSPackage, обширный опрос может снизить скорость реагирования, особенно опрос между сборками взаимодействия между управляемым кодом и com.  
   
 ### <a name="to-update-the-ui"></a>Обновление пользовательского интерфейса  
   
 1. Выполните одно из следующих действий.  
   
-    - Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>.  
+    - Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> .  
   
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Интерфейса можно получить из <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> службы, следующим образом.  
+         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>Интерфейс можно получить из <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> службы следующим образом.  
   
         ```csharp  
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
@@ -46,12 +46,12 @@ ms.locfileid: "68186362"
   
         ```  
   
-         Если параметр <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> имеет ненулевое значение (`TRUE`), то обновление выполняется синхронно и немедленно. Мы рекомендуем передавать ноль (`FALSE`) для этого параметра, чтобы помочь поддерживать высокую производительность. Если вы хотите избежать кэширования, примените `DontCache` флаг при создании команды в vsct-файле. Тем не менее, используйте флаг осторожно, или может привести к снижению производительности. Дополнительные сведения о флаги команды, см. в разделе [элемент Commandflag](../extensibility/command-flag-element.md) документации.  
+         Если значение параметра не равно <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> нулю ( `TRUE` ), обновление выполняется синхронно и немедленно. Рекомендуется передать ноль ( `FALSE` ) для этого параметра, чтобы обеспечить хорошую производительность. Если вы хотите избежать кэширования, примените этот `DontCache` флаг при создании команды в файле. vsct. Тем не менее используйте флаг с осторожностью или производительность может снизиться. Дополнительные сведения о флагах команд см. в документации по [элементу флага команды](../extensibility/command-flag-element.md) .  
   
-    - В пакеты VSPackage, в котором размещен элемент управления ActiveX с помощью модели встроенной активации в окне, возможно, удобнее использовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> метод. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> Метод в <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> метод в <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> интерфейс функционально эквивалентны. Оба метода приводят среды, чтобы повторно запросить состояние всех команд. Как правило обновление не выполняется немедленно. Вместо этого обновление откладывается до времени простоя. Оболочка кэширует состояния команд, чтобы помочь поддерживать высокую производительность. Если вы хотите избежать кэширования, примените `DontCache` флаг при создании команды в vsct-файле. Тем не менее осторожно используйте флаг может привести к снижению производительности.  
+    - В пакетах VSPackage, в которых размещается элемент управления ActiveX с помощью модели активации на месте в окне, может оказаться удобнее использовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> метод. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>Метод в <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейсе и <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> метод в <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> интерфейсе функционально эквивалентны. Обе из них приводят к повторному запросу состояния всех команд в среде. Как правило, обновление выполняется не сразу. Вместо этого обновление откладывается до времени простоя. Оболочка кэширует состояние команды, чтобы обеспечить хорошую производительность. Если вы хотите избежать кэширования, примените этот `DontCache` флаг при создании команды в файле. vsct. Тем не менее, используйте флаг с осторожностью, так как производительность может снизиться.  
   
-         Обратите внимание, что вы можете получить <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> интерфейс путем вызова `QueryInterface` метод <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> объекта или по получение интерфейса из <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> службы.  
+         Обратите внимание, что интерфейс можно получить <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> , вызвав `QueryInterface` метод для <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> объекта или получив интерфейс от <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> службы.  
   
-## <a name="see-also"></a>См. также  
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>См. также:  
+ [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Реализация](../extensibility/internals/command-implementation.md)

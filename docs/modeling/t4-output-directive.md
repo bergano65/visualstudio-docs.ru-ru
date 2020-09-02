@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591818"
 ---
 # <a name="t4-output-directive"></a>Директива Output T4
 
-В текстовых шаблонах Visual Studio директива `output` используется для определения расширения имени файла и кодировки преобразованного файла.
+В текстовых шаблонах Visual Studio `output` директива используется для определения расширения имени файла и кодировки преобразованного файла.
 
  Например, если проект Visual Studio содержит файл шаблона с именем **MyTemplate.TT** , содержащий следующую директиву:
 
@@ -50,7 +50,7 @@ ms.locfileid: "75591818"
  Допустимые значения: любое допустимое расширение имени файла.
 
 ## <a name="encoding-attribute"></a>атрибут Encoding
- Задает кодировку для использования при создании выходного файла. Например:
+ Задает кодировку для использования при создании выходного файла. Пример:
 
  `<#@ output encoding="utf-8"#>`
 
@@ -68,6 +68,6 @@ ms.locfileid: "75591818"
 
  `utf-32`
 
- `0` (система по умолчанию)
+ `0` (Система по умолчанию)
 
  Как правило, можно использовать строку WebName или число CodePage любых кодировок, возвращаемых <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

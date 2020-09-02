@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::execute | Документация Майкрософт
+title: 'IDiaFrameData:: Execute | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4042cf58ee34b5f49df601b94e1110f03e0b6f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197550"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Выполняет развертывание стека и возвращает результаты в интерфейсе стека кадра стека.  
+Выполняет очистку стека и возвращает результаты в интерфейсе кадра обхода стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,21 +35,21 @@ HRESULT execute ( 
   
 #### <a name="parameters"></a>Параметры  
  `frame`  
- [in] [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект, содержащий состояние регистров кадра.  
+ окне Объект [идиастакквалкфраме](../../debugger/debug-interface-access/idiastackwalkframe.md) , содержащий состояние регистров кадров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|E_DIA_INPROLOG|Не удается выполнить кадр стека в код пролога.|  
-|E_DIA_SYNTAX|Выполните синтаксический анализ ошибка в программе кадра.|  
-|E_DIA_FRAME_ACCESS|Не удалось регистры доступа или памяти.|  
+|E_DIA_INPROLOG|Невозможно выполнить кадр стека в коде пролога.|  
+|E_DIA_SYNTAX|Ошибка синтаксического анализа, обнаруженная в рамке программы.|  
+|E_DIA_FRAME_ACCESS|Не удается получить доступ к регистрам или памяти.|  
 |E_DIA_VALUE|Ошибка при вычислении значения (например, деление на ноль).|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается во время отладки для раскручивания стека. [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект реализуется клиентским приложением для получения обновлений в регистры и сообщать о способах, используемых `execute` метод.  
+## <a name="remarks"></a>Remarks  
+ Этот метод вызывается во время отладки для очистки стека. Объект [идиастакквалкфраме](../../debugger/debug-interface-access/idiastackwalkframe.md) реализуется клиентским приложением для получения обновлений регистров и для предоставления методов, используемых `execute` методом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

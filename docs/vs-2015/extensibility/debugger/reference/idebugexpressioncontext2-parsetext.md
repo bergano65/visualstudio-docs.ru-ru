@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText | Документация Майкрософт
+title: IDebugExpressionContext2::P Арсетекст | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fbd9252663f766035f628946e6aa93b1c00322a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158384"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Выполняет синтаксический анализ выражения в виде текста для дальнейшего определения.  
+Анализирует выражение в текстовой форме для последующей оценки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,33 +50,33 @@ int ParseText( 
   
 #### <a name="parameters"></a>Параметры  
  `pszCode`  
- [in] Выражение для синтаксического анализа.  
+ окне Выражение для синтаксического анализа.  
   
  `dwFlags`  
- [in] Сочетание флагов из [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) перечисления, который управляет синтаксического анализа.  
+ окне Сочетание флагов из перечисления [парсефлагс](../../../extensibility/debugger/reference/parseflags.md) , которое управляет синтаксическим анализом.  
   
  `nRadix`  
- [in] Основание системы счисления для использования при анализе все числовые данные в `pszCode`.  
+ окне Основание системы счисления, используемое при анализе любой числовой информации в `pszCode` .  
   
  `ppExpr`  
- [out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение. оно будет готов для привязки и оценки.  
+ заполняет Возвращает объект [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение, которое готово для привязки и оценки.  
   
  `pbstrError`  
- [out] Возвращает сообщение об ошибке, если выражение содержит ошибку.  
+ заполняет Возвращает сообщение об ошибке, если выражение содержит ошибку.  
   
  `pichError`  
- [out] Возвращает индекс символа ошибки в `pszCode` Если выражение содержит ошибку.  
+ заполняет Возвращает индекс символа ошибки в `pszCode` случае, если выражение содержит ошибку.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- При вызове этого метода, модуля отладки (DE) следует синтаксический анализ выражения и проверьте его правильность. `pbstrError` И `pichError` параметров может быть заполнен, если выражение является недопустимым.  
+## <a name="remarks"></a>Remarks  
+ При вызове этого метода модуль отладки (DE) должен проанализировать выражение и проверить его на правильность. `pbstrError`Параметры и `pichError` могут быть заполнены, если выражение является недопустимым.  
   
- Обратите внимание на то, что выражение не вычисляется, только синтаксический анализ. Последующий вызов [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) методы вычисляет проанализированное выражение.  
+ Обратите внимание, что выражение не вычисляется, только анализируется. Последующий вызов методов [евалуатесинк](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [евалуатеасинк](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) оценивает проанализированное выражение.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CEnvBlock` объекта, который предоставляет [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс. В этом примере считает, что выражение для синтаксического анализа, как имя переменной среды и извлекает значение из переменной.  
+ В следующем примере показано, как реализовать этот метод для простого `CEnvBlock` объекта, предоставляющего интерфейс [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Этот пример считает, что выражение анализируется как имя переменной среды и получает значение из этой переменной.  
   
 ```cpp#  
 HRESULT CEnvBlock::ParseText(  
@@ -124,9 +124,9 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
- [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
+ [парсефлагс](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
+ [евалуатеасинк](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

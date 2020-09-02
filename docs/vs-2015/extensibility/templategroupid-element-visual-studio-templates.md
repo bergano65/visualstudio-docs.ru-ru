@@ -14,20 +14,20 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186439"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Элемент TemplateGroupID (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент действителен, когда [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) присваивается `false`. При [ShowByDefault (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) присваивается `true`, а затем шаблон элементов доступен во всех типах проектов.  
+Указывает, в каком типе проекта будут отображаться шаблоны элементов. Этот элемент важен, если [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) имеет значение `false` . Если для [шовбидефаулт (шаблоны Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) задано значение `true` , то шаблон элемента доступен во всех типах проектов.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<TemplateGroupID >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateGroupID>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,10 +55,10 @@ ms.locfileid: "68186439"
   
  Этот текст задает идентификатор для категории шаблонов элементов.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  `TemplateGroupID` является элементом.  
   
- Значение `TemplateGroupID` используется вместе с регистрацией системы проектов (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<номер версии >* \Projects\\) для фильтрации шаблонов, которые отображаются в **Добавление нового элемента** диалоговое окно.  
+ Значение `TemplateGroupID` элемента используется вместе с регистрацией системы проекта (HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<version number>* \Projects \\ ) для фильтрации шаблонов, которые отображаются в диалоговом окне **Добавление нового элемента** .  
   
 |Значение Visual C++|Значение|  
 |------------------------|-------------|  
@@ -72,6 +72,6 @@ ms.locfileid: "68186439"
 |WinRT-Native|Используется для проектов Магазина Windows 8.0.|  
 |VC-Android|Используется для проектов Android.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

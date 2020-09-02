@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: У вас нет разрешения на изучение процесса&#39;удостоверений s | Документация Майкрософт'
+title: 'Ошибка: у вас нет разрешения на идентификацию процесса | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157523"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Ошибка: У вас нет разрешения на изучение процесса&#39;s удостоверений
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Ошибка: у вас нет разрешения на идентификацию процесса.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 У вас нет разрешения на идентификацию процесса. Это может быть следствием системной конфигурации.  
@@ -44,7 +44,7 @@ ms.locfileid: "68157523"
   
 6. В списке **Службы** щелкните правой кнопкой мыши **Службы терминалов** и выберите **Свойства**.  
   
-7. В **свойства служб терминалов** окно, перейдите к **Общие** вкладку и задайте **тип запуска** для **вручную**.  
+7. В окне **Свойства служб терминалов** найдите вкладку **Общие** и установите **Тип запуска** в значение **Вручную**.  
   
 8. Нажмите кнопку **ОК**.  
   
@@ -66,5 +66,5 @@ ms.locfileid: "68157523"
   
 5. Нажмите кнопку **ОК**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

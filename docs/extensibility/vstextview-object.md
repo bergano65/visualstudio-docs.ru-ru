@@ -1,5 +1,5 @@
 ---
-title: Объект VSTextView (англ.) Документы Майкрософт
+title: Объект Встекствиев | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,31 +14,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81d5e02d6ec18f8561a83b414532a4b78def5c09
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697715"
 ---
-# <a name="vstextview-object"></a>Объект VSTextView
+# <a name="vstextview-object"></a>Объект Встекствиев
 
-Текстовое представление — это окно, которое позволяет пользователям просматривать и отсеивать текст буфера текста Unicode. По сути, представление является то, что большинство пользователей называют редактором. Поскольку представление отделено от буфера различными слоями текста (обертывание слов, описание текста и т.д.), представление не гарантируется точное представление текста в буфере. Для получения дополнительной информации о текстовом представлении [см. Доступ к представлению theText с помощью устаревшего API](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
+Текстовое представление — это окно, которое позволяет пользователям просматривать и изменять текст в Юникоде для текстового буфера. По сути, представление — это то, что большинство пользователей ссылается на редактор. Так как представление отделяется от буфера различными текстовыми слоями (перенос по словам, структурирование текста и т. д.), представление не обязательно должно быть точным представлением текста в буфере. Дополнительные сведения о представлении текста см. в разделе [доступ к представлению сетекст с помощью API прежних версий](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
 
-В следующей таблице показаны <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> интерфейсы объекта.
+В следующей таблице показаны интерфейсы в <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> объекте.
 
 |Интерфейс|Описание|
 |---------------|-----------------|
-|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|Стандартный OLE-интерфейс.|
+|[идропсаурце](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|Стандартный OLE-интерфейс.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Стандартный OLE-интерфейс.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Стандартный OLE-интерфейс.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Стандартный OLE-интерфейс.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Позволяет создавать сложные действия (т.е. действия, сгруппированные в единую единицу отменить/переделать).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Предоставляет основные методы управления и доступа к представлению. `IVsTextView`не резьбовые безопасно.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Создает и управляет оконным стеклом.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Взаимодействует со слоями текста.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Выполняет операции на представлении из другого потока.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Позволяет создавать составные действия (то есть действия, сгруппированные в одну единицу отмены или возврата).|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Предоставляет базовые методы для управления представлением и доступа к ним. `IVsTextView` не является потокобезопасным.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Создает и управляет областью окна.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Взаимодействует с текстовыми слоями.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Выполняет операции с представлением из другого потока.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Цифры отодвите](https://www.microsoft.com/download/details.aspx?id=55984)
-- [Объект VSTextBuffer](../extensibility/vstextbuffer-object.md)
+- [Изменение фигур](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Объект Встекстбуффер](../extensibility/vstextbuffer-object.md)

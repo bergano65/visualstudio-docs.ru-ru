@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667817"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Создание элементов и отношений в моделях UML
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>Вызов метода создания для владельца
- Имя метода имеет вид: `Create`*овнедтипе* `()`. Пример:
+ Имя метода имеет вид: `Create` *овнедтипе* `()` . Пример:
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -129,5 +129,5 @@ anElement.Delete();
 
 - Удаляется каждая фигура, которая представляет его на схеме.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md)

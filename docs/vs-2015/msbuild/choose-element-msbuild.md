@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187002"
 ---
 # <a name="choose-element-msbuild"></a>Элемент Choose (MSBuild)
@@ -57,21 +57,21 @@ ms.locfileid: "68187002"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Необязательный элемент.<br /><br /> Указывает блок кода `PropertyGroup` и элементы `ItemGroup` для оценки, если условия всех элементов `When` оценены как `false`. Элемент `Choose` может содержать ноль элементов `Otherwise` или один такой элемент, который должен быть последним.|  
+|[Ином](../msbuild/otherwise-element-msbuild.md)|Необязательный элемент.<br /><br /> Указывает блок кода `PropertyGroup` и элементы `ItemGroup` для оценки, если условия всех элементов `When` оценены как `false`. Элемент `Choose` может содержать ноль элементов `Otherwise` или один такой элемент, который должен быть последним.|  
 |[When](../msbuild/when-element-msbuild.md)|Обязательный элемент.<br /><br /> Указывает один из возможных блоков кода, который может выбрать элемент `Choose`. Элемент `When` может содержать один или несколько элементов `Choose`.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Указывает блок кода, который должен быть выполнен, если условия всех элементов `When` оценены как `false`.|  
-|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
+|[Ином](../msbuild/otherwise-element-msbuild.md)|Указывает блок кода, который должен быть выполнен, если условия всех элементов `When` оценены как `false`.|  
+|[Проект](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
 |[When](../msbuild/when-element-msbuild.md)|Указывает один из возможных блоков кода, который может выбрать элемент `Choose`.|  
   
-## <a name="remarks"></a>Примечания  
- Элементы `Choose`, `When` и `Otherwise` используются совместно, чтобы обеспечить выбор одного блока кода для выполнения из множества доступных вариантов. См. дополнительные сведения об [условных конструкциях](../msbuild/msbuild-conditional-constructs.md).  
+## <a name="remarks"></a>Remarks  
+ Элементы `Choose`, `When` и `Otherwise` используются совместно, чтобы обеспечить выбор одного блока кода для выполнения из множества доступных вариантов. Дополнительные сведения см. в разделе [Условные конструкции](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Пример  
  Следующий проект использует элемент `Choose`, чтобы выбрать набор значений свойств, который будет задан в элементах `When`. Если атрибуты `Condition` обоих элементов `When` оцениваются как `false`, в элементе `Otherwise` задаются значения свойств.  
@@ -121,6 +121,6 @@ ms.locfileid: "68187002"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

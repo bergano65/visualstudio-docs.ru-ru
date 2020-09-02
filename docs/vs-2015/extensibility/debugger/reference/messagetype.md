@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c17564c992f4c8855d8a96165975a5d0e132755c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547212"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает тип сообщения и причины.  
+Указывает тип и причину сообщения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,36 +51,36 @@ public enum enum_MESSAGETYPE { 
   
 ## <a name="members"></a>Участники  
  MT_OUTPUTSTRING  
- Указывает, что сообщения должны отправляться в окне вывода. Это взаимно исключают друг друга из `MT_MESSAGEBOX`.  
+ Указывает, что сообщение должно быть отправлено в окно вывода. Это взаимоисключающее из `MT_MESSAGEBOX` .  
   
  MT_MESSAGEBOX  
- Указывает, что сообщения должны быть видны в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.  
+ Указывает, что сообщение должно отображаться в окне сообщения. Это взаимоисключающее из `MT_OUTPUTSTRING` .  
   
  MT_TYPE_MASK  
- Значение маски для изоляции назначения для сообщения.  
+ Значение маски для изоляции назначения сообщения.  
   
  MT_REASON_EXCEPTION  
- Указывает, что окно сообщения отображается в результате исключения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.  
+ Указывает, что в результате исключения отображается окно сообщения. Это взаимоисключающее из `MT_REASON_TRACEPOINT` .  
   
  MT_REASON_TRACEPOINT  
- Указывает, что в результате обращения к точке трассировки отображается окно сообщения. Это взаимно исключают друг друга для `MT_REASON_EXCEPTION`.  
+ Указывает, что в результате попадания в точку трассировки отображается окно сообщения. Это взаимоисключающее с `MT_REASON_EXCEPTION` .  
   
  MT_REASON_MASK  
- Значение маски для изоляции причина для отображаемого сообщения.  
+ Значение маски, которое позволяет изолировать причину отображения сообщения.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения возвращаются из [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) и [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) методы.  
+## <a name="remarks"></a>Remarks  
+ Эти значения возвращаются методами [жетеррормессаже](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) [и.](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)  
   
- Одно из значений причина могут сочетаться с одним из значений назначения выходных данных при помощи побитовой `OR`.  
+ Одно из значений причины можно объединить с одним из значений назначения выходных данных с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)   
  [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

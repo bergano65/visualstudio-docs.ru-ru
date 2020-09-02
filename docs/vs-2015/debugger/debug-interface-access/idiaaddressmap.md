@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 012d6b1ca06b06f56239048fee712d898a79efa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547511"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Позволяет контролировать как пакет SDK для доступа к интерфейсу отладки рассчитывает виртуального и относительного виртуального адреса для отладки объектов.  
+Предоставляет контроль над тем, как пакет SDK DIA рассчитывает виртуальные и относительные виртуальные адреса для объектов отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,33 +32,33 @@ IDiaAddressMap : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaAddressMap`.  
+ В следующей таблице показаны методы `IDiaAddressMap` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Указывает, установлен ли уже адрес карту для конкретного сеанса.|  
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Указывает, следует ли использовать карту для преобразования символа адреса.|  
-|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Указывает, включен ли на вычисления и с помощью относительных виртуальных адресов.|  
-|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Позволяет клиенту включить или отключить расчет относительными виртуальными адресами.|  
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Указывает, была ли установлена схема адресов для конкретного сеанса.|  
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Указывает, следует ли использовать карту адресов для преобразования адресов символов.|  
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Указывает, включен ли расчет и использование относительных виртуальных адресов.|  
+|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Позволяет клиенту включать или отключать Вычисление относительных виртуальных адресов.|  
 |[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Извлекает текущее выравнивание изображения.|  
 |[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Задает выравнивание изображения.|  
-|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Наборы изображений заголовки, чтобы включить трансляцию относительными виртуальными адресами.|  
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Предоставляет адрес сопоставляются поддерживают переводы макет изображения.|  
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Задает заголовки изображений, чтобы включить перевод относительных виртуальных адресов.|  
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Предоставляет карту адресов для поддержки перевода макета изображения.|  
   
-## <a name="remarks"></a>Примечания  
- Элемент управления, предоставляемый данным интерфейсом инкапсулируется в двух наборов данных, вы предоставляете: изображения заголовков и устраните maps. Большинство клиентов использовать [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод для нахождения правильного отладочную информацию для изображения и метод можно обычно обнаруживает все необходимые заголовки и карт самих данных. Тем не менее некоторым клиентам реализовать специализированные обработки и для поиска данных. Такие клиенты используют методы класса `IDiaAddressMap` интерфейс для предоставления доступа к интерфейсу отладки пакета SDK с результатами поиска.  
+## <a name="remarks"></a>Remarks  
+ Элемент управления, предоставляемый этим интерфейсом, инкапсулируется в два набора данных: заголовки изображений и карты адресов. Большинство клиентов используют метод [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) для поиска правильных отладочных данных для изображения, и метод обычно обнаруживает все необходимые заголовки и сопоставляет данные. Однако некоторые клиенты реализуют специализированную обработку и поиск данных. Такие клиенты используют методы `IDiaAddressMap` интерфейса для предоставления пакета SDK Dia с результатами поиска.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Этот интерфейс доступен из объекта сеанса доступа к интерфейсу отладки. Клиент вызывает `QueryInterface` метод для доступа к интерфейсу отладки сеанса интерфейс объекта, обычно [IDiaSession](../../debugger/debug-interface-access/idiasession.md)для получения `IDiaAddressMap` интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот интерфейс доступен из объекта сеанса DIA. Клиент вызывает `QueryInterface` метод в интерфейсе объекта сеанса DIA, обычно [IDiaSession](../../debugger/debug-interface-access/idiasession.md), для получения `IDiaAddressMap` интерфейса.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Идиадатасаурце:: Лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

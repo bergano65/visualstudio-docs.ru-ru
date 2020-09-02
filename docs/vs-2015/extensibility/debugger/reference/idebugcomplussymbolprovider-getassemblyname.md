@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAssemblyName | Документация Майкрософт
+title: 'Идебугкомплуссимболпровидер:: _ AssemblyName | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: beec0b66d1aeb6a533540f38eb5aaf2f1ed21b33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197359"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает имя сборки, учитывая его модуль и домена приложения.  
+Извлекает имя сборки по заданному модулю и домену приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,19 +45,19 @@ int GetAssemblyName(
   
 #### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- [in] Идентификатор домена приложения.  
+ окне Идентификатор домена приложения.  
   
  `guidModule`  
- [in] Уникальный идентификатор для модуля.  
+ окне Уникальный идентификатор модуля.  
   
  `pbstrName`  
- [out] Возвращает имя сборки.  
+ заполняет Возвращает имя сборки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAssemblyName(  
@@ -85,5 +85,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

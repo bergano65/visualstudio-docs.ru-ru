@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка столбцов представлений отчета | Документация Майкрософт
+title: Практическое руководство. Настройка столбцов представлений отчета | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1f6cf340d7c0ef87f34fc908e075f36eed2962c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146126"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Практическое руководство. Настройка столбцов представлений отчета

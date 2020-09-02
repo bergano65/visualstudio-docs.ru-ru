@@ -1,0 +1,150 @@
+- name: Visual Studio для Mac
+  href: /visualstudio/mac/
+- name: Обзор интегрированной среды разработки
+  href: ide-tour.md
+- name: Установка
+  href: installation.md
+  items:
+    - name: 'Установка и использование в среде, защищенной брандмауэром или прокси-сервером'
+      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+    - name: Установка предварительной версии
+      href: /visualstudio/mac/install-preview
+    - name: Update
+      href: /visualstudio/mac/update
+    - name: "Обновление до Visual Studio\_2019 для Mac"
+      href: /visualstudio/mac/update-vsmac-8.0
+    - name: Удаление
+      href: /visualstudio/mac/uninstall
+- name: Учетные записи пользователей
+  href: /visualstudio/mac/user-accounts
+  items:
+    - name: Выполнение входа
+      href: /visualstudio/mac/signing-in
+    - name: Активация подписки
+      href: /visualstudio/mac/enable-subscription
+- name: Настройка интегрированной среды разработки
+  href: /visualstudio/mac/customizing-the-ide
+  items:
+    - name: "Расширение Visual\_Studio для\_Mac"
+      href: /visualstudio/mac/extending-visual-studio-mac
+- name: Проекты и решения
+  href: /visualstudio/mac/projects-and-solutions
+  items:
+    - name: Создание новых проектов
+      href: /visualstudio/mac/create-new-projects
+    - name: Добавление и удаление элементов проекта
+      href: /visualstudio/mac/add-and-remove-project-items
+    - name: Управление свойствами решений и проектов
+      href: /visualstudio/mac/managing-solutions-and-project-properties
+    - name: Управление ссылками в проекте
+      href: /visualstudio/mac/managing-references-in-a-project
+      items:
+        - name: "Пошаговое руководство. Включение пакета\_NuGet в проект"
+          href: /visualstudio/mac/nuget-walkthrough
+    - name: Управление ресурсами приложений
+      href: /visualstudio/mac/managing-app-resources
+    - name: Руководство. Открытие нескольких решений или экземпляров
+      href: /visualstudio/mac/open-multiple-solutions
+- name: Редактор исходного кода
+  href: /visualstudio/mac/source-editor
+  items:
+    - name: Рефакторинг
+      href: /visualstudio/mac/refactoring
+    - name: Комментарии
+      href: /visualstudio/mac/comments
+    - name: Поведение редактора
+      href: /visualstudio/mac/editor-behavior
+    - name: Комментарии к задачам
+      href: /visualstudio/mac/task-comments
+    - name: Фрагменты кода
+      href: /visualstudio/mac/snippets
+    - name: Выбор блока
+      href: /visualstudio/mac/block-selection
+    - name: Темы редактора
+      href: /visualstudio/mac/editor-themes
+    - name: EditorConfig
+      href: /visualstudio/mac/editorconfig
+    - name: Распространенные сочетания клавиш
+      href: /visualstudio/mac/keyboard-shortcuts
+- name: Отладка
+  href: /visualstudio/mac/debugging
+  items:
+    - name: Визуализации данных
+      href: /visualstudio/mac/data-visualizations
+- name: Компилирование и сборка
+  href: /visualstudio/mac/compiling-and-building
+  items:
+    - name: Сборка и очистка проектов и решений
+      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+    - name: Действия при сборке
+      href: /visualstudio/mac/build-actions
+    - name: Настройка системы сборки
+      href: /visualstudio/mac/customizing-build-system
+    - name: Конфигурации
+      href: /visualstudio/mac/configurations
+      items:
+        - name: Создание и изменение конфигураций
+          href: /visualstudio/mac/create-and-edit-configurations
+- name: Управление версиями
+  href: /visualstudio/mac/version-control
+  items:
+    - name: Система управления версиями TF
+      href: /visualstudio/mac/tf-version-control
+    - name: "Настройка репозитория\_Git"
+      href: /visualstudio/mac/set-up-git-repository
+    - name: "Работа с\_Git"
+      href: /visualstudio/mac/working-with-git
+    - name: "Настройка репозитория\_Subversion"
+      href: /visualstudio/mac/set-up-subversion-repository
+    - name: "Работа с\_Subversion"
+      href: /visualstudio/mac/working-with-subversion
+- name: Развертывание веб-приложения
+  href: /visualstudio/mac/web-app-deployment
+  items:
+    - name: Публикация в службу приложений Azure
+      href: /visualstudio/mac/publish-app-svc
+    - name: Публикация в папку
+      href: /visualstudio/mac/publish-folder
+- name: Рабочие нагрузки
+  href: /visualstudio/mac/workloads
+  items:
+    - name: "ASP.NET\_Core"
+      href: /visualstudio/mac/asp-net-core
+      items:
+        - name: Razor
+          href: /visualstudio/mac/razor
+        - name: JavaScript
+          href: /visualstudio/mac/javascript
+    - name: Azure
+      href: /visualstudio/mac/azure-workload
+      items:
+        - name: Введение в функции Azure
+          href: /visualstudio/mac/azure-functions
+        - name: Руководство по Функции Azure
+          href: /visualstudio/mac/azure-functions-lab
+        - name: Подключенные службы
+          href: /visualstudio/mac/connected-services
+    - name: Разработка игр на Unity
+      href: /visualstudio/mac/unity-tools
+      items:
+        - name: Настройка
+          href: /visualstudio/mac/setup-vsmac-tools-unity
+        - name: "Использование инструментов\_Unity"
+          href: /visualstudio/mac/using-vsmac-tools-unity
+        - name: "Использование .NET\_4.x в Unity"
+          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+        - name: Журнал изменений
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+    - name: "Мобильные приложения с\_Xamarin"
+      href: /visualstudio/mac/xamarin
+- name: Специальные возможности
+  href: /visualstudio/mac/accessibility
+- name: Устранение неполадок
+  href: /visualstudio/mac/troubleshooting
+  items:
+    - name: Программа улучшения качества программного обеспечения Visual Studio
+      href: /visualstudio/mac/visual-studio-experience-improvement-program
+    - name: Сообщение о проблеме
+      href: /visualstudio/mac/report-a-problem
+    - name: 'Устранение неполадок: Сбой средства обновления при получении сведений'
+      href: updater-troubleshooting.md

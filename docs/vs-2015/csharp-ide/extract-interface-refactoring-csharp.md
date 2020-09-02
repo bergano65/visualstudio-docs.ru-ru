@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667553"
 ---
 # <a name="extract-interface-refactoring-c"></a>Рефакторинг для извлечения интерфейса (C#)
@@ -34,7 +34,7 @@ ms.locfileid: "72667553"
 
 ### <a name="to-use-extract-interface"></a>Использование извлечения интерфейса
 
-1. Создайте консольное приложение с именем `ExtractInterface`, а затем замените `Program` следующим кодом.
+1. Создайте консольное приложение с именем `ExtractInterface` и замените `Program` его следующим кодом.
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -45,7 +45,7 @@ ms.locfileid: "72667553"
     }
     ```
 
-2. С курсором, расположенным в `MethodB`, и выберите в меню **Рефакторинг** пункт **извлечь интерфейс** .
+2. С курсором, расположенным в `MethodB` , и выберите пункт **извлечь интерфейс** в меню **Рефакторинг** .
 
      Откроется диалоговое окно **Извлечение интерфейса** .
 
@@ -70,10 +70,10 @@ ms.locfileid: "72667553"
     }
     ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
  Эта функция доступна только при размещении курсора в классе, структуре или интерфейсе, содержащем элементы, которые требуется извлечь. Если курсор находится в этой позиции, вызовите операцию рефакторинга извлечения интерфейса.
 
  При вызове метода Extract для класса или структуры список базовых классов и интерфейсов изменяется для включения нового имени интерфейса. При вызове метода Extract в интерфейсе список базовых классов и интерфейсов не изменяется.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Рефакторинг (C#)](../csharp-ide/refactoring-csharp.md)

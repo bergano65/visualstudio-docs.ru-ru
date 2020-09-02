@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158266"
 ---
 # <a name="property-element-msbuild"></a>Элемент Property (MSBuild)
@@ -45,7 +45,7 @@ ms.locfileid: "68158266"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|ОПИСАНИЕ|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
   
@@ -54,7 +54,7 @@ ms.locfileid: "68158266"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Группирующий элемент для свойств.|  
   
@@ -63,8 +63,8 @@ ms.locfileid: "68158266"
   
  Этот текст указывает значение свойства и может содержать XML.  
   
-## <a name="remarks"></a>Примечания  
- Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в "build\classes", если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в статье [MSBuild Properties](msbuild-properties1.md) (Свойства MSBuild).  
+## <a name="remarks"></a>Remarks  
+ Имена свойств ограничены только символами ASCII. Значения свойств указываются в проекте путем размещения имени свойства между "`$(`" и "`)`". Например, `$(builddir)\classes` разрешится в "build\classes", если свойство `builddir` будет иметь значение `build`. Дополнительные сведения о свойствах см. в разделе [свойства MSBuild](msbuild-properties1.md).  
   
 ## <a name="example"></a>Пример  
  В следующем коде свойству `Optimization` задается значение `false`, а свойству `DefaultVersion` — значение `1.0`, если свойство `Version` является пустым.  
@@ -76,6 +76,6 @@ ms.locfileid: "68158266"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Свойства MSBuild](msbuild-properties1.md)  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

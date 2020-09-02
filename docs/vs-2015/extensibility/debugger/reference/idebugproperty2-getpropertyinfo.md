@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo | Документация Майкрософт
+title: 'IDebugProperty2:: GetPropertyInfo | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a6d4c2fd943ddef0b4459460be1f67550e53d84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146273"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структура, описывающая свойства.  
+Возвращает структуру [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) , описывающую свойство.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,27 +50,27 @@ int GetPropertyInfo ( 
   
 #### <a name="parameters"></a>Параметры  
  `dwFields`  
- [in] Сочетание значений из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, указывающее, какие поля будут заполняться `pPropertyInfo` структуры.  
+ окне Сочетание значений из перечисления [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , которое указывает, какие поля должны быть заполнены в `pPropertyInfo` структуре.  
   
  `nRadix`  
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.  
+ окне Основание системы счисления, используемое для форматирования любых числовых данных.  
   
  `dwTimeout`  
- [in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
+ окне Указывает максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.  
   
  `rgpArgs`  
- [in, out] Зарезервировано для будущего использования; присвоено значение null.  
+ [вход, выход] Зарезервировано для будущего использования; Задайте для значение null.  
   
  `dwArgCount`  
- [in] Зарезервировано для будущего использования; имеет нулевое значение.  
+ окне Зарезервировано для будущего использования; присвойте ему значение 0.  
   
  `pPropertyInfo`  
- [out] Объект [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры, который заполняется описание свойства.  
+ заполняет Структура [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) , которая заполняется описанием свойства.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   

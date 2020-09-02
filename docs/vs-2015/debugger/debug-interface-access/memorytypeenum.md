@@ -1,5 +1,5 @@
 ---
-title: MemoryTypeEnum | Документация Майкрософт
+title: Меморитипинум | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ded136da4d601fd7c11a10c21aac0c90864bc0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158132"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Указывает тип доступа к памяти.  
+Указывает тип памяти для доступа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,23 +38,23 @@ enum MemoryTypeEnum {
   
 #### <a name="parameters"></a>Параметры  
  `MemTypeCode`  
- Доступ только кода памяти.  
+ Обращается только к памяти кода.  
   
  `MemTypeData`  
- Доступ к данных или стек памяти.  
+ Обращается к данным или стековой памяти.  
   
  `MemTypeStack`  
- Доступ только стека памяти.  
+ Обращается только к памяти стека.  
   
  `MemTypeAny`  
- Обращается к памяти любого типа.  
+ Обращается к любому типу памяти.  
   
-## <a name="remarks"></a>Примечания  
- Значения в этом перечислении передаются [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) способ ограничить доступ к различным типам памяти.  
+## <a name="remarks"></a>Remarks  
+ Значения в этом перечислении передаются методу [идиастакквалкхелпер:: readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) , чтобы ограничить доступ к различным типам памяти.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 19b7079f2a24e6a904a2d1266e7605f0e56e5dae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667691"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Создание настраиваемых наборов правил анализа кода
@@ -23,10 +23,10 @@ ms.locfileid: "72667691"
 
  Можно также создать настраиваемый набор правил, объединяющий два или более стандартных набора правил или определяющий правила в одном или нескольких стандартных наборах правил. Пользовательские наборы правил сохраняются в RuleSet-файл, и их можно указать в нескольких проектах кода.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Как создать настраиваемый набор правил](../code-quality/how-to-create-a-custom-rule-set.md) Описывает, как создать настраиваемый набор правил, изменив один или несколько стандартных наборов правил.
 
  [Работа с редактором набора правил](../code-quality/working-in-the-code-analysis-rule-set-editor.md) Описывает использование редактора наборов правил для группирования, сортировки, фильтрации и изменения правил анализа кода в настраиваемом наборе правил.
 
-## <a name="see-also"></a>См. также раздел
- [Справочник по набору правил анализа кода](../code-quality/code-analysis-rule-set-reference.md) [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [при анализе качества C/C++ Code с помощью анализа кода](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)
+## <a name="see-also"></a>См. также:
+ [Справочник по набору правил анализа кода](../code-quality/code-analysis-rule-set-reference.md) [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [Анализ качества кода C/C++ с помощью анализа кода](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)

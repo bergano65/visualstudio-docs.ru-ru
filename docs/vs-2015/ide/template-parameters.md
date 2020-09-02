@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646806"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
@@ -27,7 +27,7 @@ ms.locfileid: "72646806"
 С помощью параметров в шаблонах вы можете заменить значения в ключевых частях шаблона, например имена классов и пространства имен, при создании экземпляра шаблона. Эти параметры заменяются с помощью мастера шаблонов, запускающегося в фоновом режиме, когда пользователь нажимает кнопку **ОК** в диалоговом окне **Новый проект** или **Добавление нового элемента**.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона
- Параметры шаблона объявляются в формате $*параметр*$. Например:
+ Параметры шаблона объявляются в формате $*параметр*$. Пример:
 
 - $safeprojectname$
 
@@ -53,7 +53,7 @@ ms.locfileid: "72646806"
 > [!NOTE]
 > Параметры шаблонов зависят от регистра символов.
 
-|Параметр|ОПИСАНИЕ|
+|Параметр|Описание|
 |---------------|-----------------|
 |`clrversion`|Текущая версия среды CLR.|
 |`GUID [1-10]`|GUID, используемый для замены GUID проекта в файле проекта. Можно указать до 10 уникальных GUID (например, `guid1)`).|
@@ -123,5 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)

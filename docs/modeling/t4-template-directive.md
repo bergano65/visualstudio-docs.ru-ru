@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591844"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 
-Текстовый шаблон Visual Studio T4 обычно начинается с директивы `template`, которая определяет способ обработки шаблона. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.
+Текстовый шаблон Visual Studio T4 обычно начинается с `template` директивы, которая указывает, как шаблон должен обрабатываться. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.
 
 Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
@@ -30,7 +30,7 @@ ms.locfileid: "75591844"
 
 ## <a name="compileroptions-attribute"></a>атрибут compilerOptions
 
-Пример:
+Пример.
 
 `compilerOptions="optimize+"`
 
@@ -44,7 +44,7 @@ ms.locfileid: "75591844"
 
 ## <a name="culture-attribute"></a>атрибут culture
 
-Пример:
+Пример.
 
 `culture="de-CH"`
 
@@ -58,7 +58,7 @@ ms.locfileid: "75591844"
 
 ## <a name="debug-attribute"></a>атрибут debug
 
-Пример:
+Пример.
 
 ```
 debug="true"
@@ -78,7 +78,7 @@ debug="true"
 
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific
 
-Пример:
+Пример.
 
 ```
 hostspecific="true"
@@ -96,7 +96,7 @@ hostspecific="true"
 
 Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблонам времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не к [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Если `hostspecific` `true` и вы используете Visual Studio, вы можете привести `this.Host` к типу IServiceProvider для доступа к функциям Visual Studio. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Например:
+Если `hostspecific` используется `true` Visual Studio, для `this.Host` доступа к функциям Visual Studio можно привести к использованию функции IServiceProvider. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -122,7 +122,7 @@ Content of myFile is:
 
 ## <a name="language-attribute"></a>атрибут language
 
-Пример:
+Пример.
 
 `language="VB"`
 
@@ -132,9 +132,9 @@ Content of myFile is:
 
 `VB`
 
-Атрибут `language` задает язык ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]), используемый для исходного кода в блоках операторов и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
+`language`Атрибут задает язык ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или), [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] используемый для исходного кода в блоках операторов и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.
 
-Например:
+Пример:
 
 ```vb
 <#@ template language="VB" #>
@@ -239,7 +239,7 @@ This is the common footer.
 
 ## <a name="linepragmas-attribute"></a>атрибут Линепрагмас
 
-Пример:
+Пример.
 
 `linePragmas="false"`
 
@@ -255,7 +255,7 @@ This is the common footer.
 
 ## <a name="visibility-attribute"></a>атрибут видимости
 
-Пример:
+Пример.
 
 `visibility="internal"`
 

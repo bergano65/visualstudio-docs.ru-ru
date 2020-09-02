@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2::GetEngineInterface | Документация Майкрософт
+title: 'IDebugQueryEngine2:: Жетенгинеинтерфаце | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12bdcf9de9731095a224f394cab13f3833f126de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158110"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает интерфейс отладки ядра (DE).  
+Возвращает интерфейс пользовательского модуля отладки (DE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,15 +40,15 @@ int GetEngineInterface( 
   
 #### <a name="parameters"></a>Параметры  
  `ppUnk`  
- [out] Возвращает `IUnknown` объект представляет модуль отладки (DE), и который можно запросить для любого другого допустимым интерфейса, связанные с Развернутой (например [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) или [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
+ заполняет Возвращает `IUnknown` объект, представляющий модуль отладки (de), который может быть запрошен для любого другого допустимого интерфейса, связанного с методом de (например, [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) или [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Итоговый интерфейс следует использовать с осторожностью, так как вызов через интерфейсы, полученные из этого метода позволяет обойти диспетчер отладки сеансов обработки и может привести к SDM в некорректном состоянии или вызвали ошибку во время отладки.  
+## <a name="remarks"></a>Remarks  
+ Полученный интерфейс следует использовать с осторожностью, поскольку вызов через интерфейсы, полученные из этого метода, обходит обработку диспетчера отладки сеанса и может привести к неправильному состоянию SDM или формированию ошибок во время отладки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

@@ -1,5 +1,5 @@
 ---
-title: Исполняемый файл для сеанса диалоговое окно "Отладка" | Документация Майкрософт
+title: Диалоговое окно "Исполняемый файл для сеанса отладки" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2ee71c5e23b0c5784cd2fe9b57b46fe28d41d30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157471"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Исполняемый файл для сеанса отладки - диалоговое окно
@@ -41,5 +41,5 @@ ms.locfileid: "68157471"
   
  После того как эти параметры заданы, они хранятся в страницах свойств проекта, поэтому в последующих сеансах отладки повторно задавать эти параметры не потребуется. Если возникнет необходимость в их изменении, можно открыть окно "Страницы свойств" и задать требуемые значения. Дополнительные сведения об указании исполняемого файла для сеанса отладки см. в разделе [Отладка библиотек DLL](../debugger/how-to-debug-native-dlls.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

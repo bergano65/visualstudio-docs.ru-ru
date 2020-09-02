@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder&lt;TResult&gt;поле .m_task | Документация Майкрософт
+title: '&lt;Поле AsyncTaskMethodBuilder TResult &gt; . m_task | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 949392699b72063b3997e36d68a24a1cc86ef893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555788"
 ---
-# <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;поле .m_task
+# <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>&lt;Поле AsyncTaskMethodBuilder TResult &gt; . m_task
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Представляет отложенной инициализацией встроенных задач.  
+Представляет сборку с отложенной инициализацией.  
   
  **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
+ Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,6 +34,6 @@ ms.locfileid: "62555788"
 .field private class System.Threading.Tasks.Task`1<!TResult> m_task  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
  [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,5 +1,5 @@
 ---
-title: Элемент UsedCommand | Документация Майкрософт
+title: Элемент Уседкомманд | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186364"
 ---
 # <a name="usedcommand-element"></a>Элемент UsedCommand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Позволяет VSPackage для доступа к команде, которая определена в другом vsct-файл. Например, если VSPackage использует стандарт **копирования** команду, которая определяется [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] оболочки, можно добавить команду в меню или панели инструментов без повторной реализации.  
+Включает пакет VSPackage для доступа к команде, определенной в другом vsct-файле. Например, если пакет VSPackage использует стандартную команду **Copy** , определяемую [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] оболочкой, можно добавить команду в меню или на панель инструментов без повторной реализации.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,9 +36,9 @@ ms.locfileid: "68186364"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательный. Идентификатор GUID пары идентификатор GUID, который определяет команду.|  
-|id|Обязательный. Идентификатор пары идентификатор GUID, который определяет команду.|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательный. Идентификатор GUID пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|  
+|идентификатор|Обязательный. Идентификатор пары ИДЕНТИФИКАТОРов GUID, определяющей команду.|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -50,10 +50,10 @@ ms.locfileid: "68186364"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группирует элементы UsedCommand и другими признаками UsedCommands.|  
+|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группирует элементы Уседкомманд и другие группирования Уседкоммандс.|  
   
-## <a name="remarks"></a>Примечания  
- Добавив команду, чтобы `<UsedCommands>` элемента, сообщает VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] среды, что VSPackage требует команды. Следует добавить `<UsedCommand>` элемент для любой команды, пакет необходимо, не могут быть включены во все версии и конфигурации из Visual Studio. Например, если пакет вызывает команду, которая используется только в Visual C++, команда не будет доступна пользователям Visual Web Developer Если не включить `<UsedCommand>` элемента для команды.  
+## <a name="remarks"></a>Remarks  
+ Добавив команду в `<UsedCommands>` элемент, VSPackage информирует [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] среду о том, что пакету VSPackage требуется команда. Необходимо добавить `<UsedCommand>` элемент для любой команды, которая требуется для пакета, которая может не включаться во все версии и конфигурации Visual Studio. Например, если пакет вызывает команду, относящуюся к Visual C++, команда будет недоступна пользователям Visual Web Developer, если не включить `<UsedCommand>` элемент для команды.  
   
 ## <a name="example"></a>Пример  
   
@@ -65,6 +65,6 @@ ms.locfileid: "68186364"
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Элемент UsedCommands](../extensibility/usedcommands-element.md)   
+## <a name="see-also"></a>См. также:  
+ [Уседкоммандс, элемент](../extensibility/usedcommands-element.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
