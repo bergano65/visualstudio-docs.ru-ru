@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82caf285d73ab1b9b49b9546012bbb45f25c3320
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153436"
 ---
-# <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
+# <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Используется для задания точки останова по данным, которые основаны на строку, пользователь может ввести в интегрированной среде разработки (IDE).  
+Используется для установки точек останова по данным, основанных на строке, которую пользователь может вводить из интегрированной среды разработки (IDE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,28 +37,28 @@ typedef struct _BP_LOCATION_DATA_STRING { 
   
 ## <a name="members"></a>Участники  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в который происходит точки останова.  
+ Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точка останова.  
   
  `bstrContext`  
- Контекст точки останова в коде, обычно имя метода или функции материал в стеке вызовов.  
+ Контекст точки останова в коде, обычно это имя метода или функции, как показано в стеке вызовов.  
   
  `bstrDataExpr`  
- Строка данных пользователь вводит задается точка останова.  
+ Строка данных, которую пользователь вводит для задания точки останова.  
   
  `dwNumElements`  
- Число элементов в строке данных, в котором происходит точки останова.  
+ Количество элементов в строке данных, в которой происходит точка останова.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.  
+## <a name="remarks"></a>Remarks  
+ Эта структура является членом структуры [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) в составе объединения.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1d60090ca16907e16bb58970d793124c5bb2dec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665949"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Практическое руководство. Расширение кода, созданного реляционным конструктором объектов
@@ -27,9 +27,9 @@ ms.locfileid: "72665949"
 
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Для создания разделяемого класса и добавления кода в класс сущностей
 
-1. Откройте или создайте новый файл LINQ to SQL Classes (**DBML** -файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **DBML** -файл в **Обозреватель решений** /**Обозреватель базы данных**.)
+1. Откройте или создайте новый файл LINQ to SQL Classes (**DBML** -файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Дважды щелкните **DBML** -файл в **Обозреватель решений** / **Обозреватель базы данных**.)
 
-2. В [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] щелкните правой кнопкой мыши класс, для которого требуется добавить проверку, и выберите пункт **Просмотреть код**.
+2. В щелкните [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] правой кнопкой мыши класс, для которого требуется добавить проверку, и выберите пункт **Просмотреть код**.
 
      Открывается Редактор кода с разделяемым классом для выбранного класса сущностей.
 
@@ -39,13 +39,13 @@ ms.locfileid: "72665949"
 
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Для создания разделяемого класса и добавления кода в DataContext
 
-1. Откройте или создайте новый файл LINQ to SQL Classes (**DBML** -файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Дважды щелкните **DBML** -файл в **Обозреватель решений** /**Обозреватель базы данных**.)
+1. Откройте или создайте новый файл LINQ to SQL Classes (**DBML** -файл) в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Дважды щелкните **DBML** -файл в **Обозреватель решений** / **Обозреватель базы данных**.)
 
-2. В [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] щелкните правой кнопкой мыши пустую область в конструкторе и выберите пункт **Просмотреть код**.
+2. В щелкните [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] правой кнопкой мыши пустую область в конструкторе и выберите пункт **Просмотреть код**.
 
      Открывается Редактор кода с разделяемым классом для DataContext.
 
 3. Добавьте код в объявление разделяемого класса для DataContext.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  Пошаговое руководство [по LINQ to SQL инструментов в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [. Создание классов LINQ to SQL (реляционный конструктор объектов)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Пошаговое руководство. Добавление проверки в классы сущностей](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)

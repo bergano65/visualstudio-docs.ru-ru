@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2317fafe410cacfca1c77b669a54669ea6e2224a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153533"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Указывает тип ошибки точки останова.  
@@ -61,47 +61,47 @@ public enum enum_BP_ERROR_TYPE { 
   
 ## <a name="members"></a>Участники  
  BPET_NONE  
- Указывает ошибки не точки останова.  
+ Указывает отсутствие ошибки точки останова.  
   
  BPET_TYPE_WARNING  
- Идентифицирует ошибку стиле предупреждение точки останова.  
+ Указывает ошибку точки останова в стиле предупреждения.  
   
  BPET_TYPE_ERROR  
- Указывает ошибку стиля ошибки точки останова.  
+ Указывает ошибку точки останова в стиле ошибки.  
   
  BPET_SEV_HIGH  
- Идентифицирует ошибку точки останова с высокой важностью.  
+ Указывает ошибку точки останова с высокой степенью серьезности.  
   
  BPET_SEV_GENERAL  
- Идентифицирует ошибку серьезности средняя точка останова.  
+ Указывает ошибку точки останова со средним уровнем серьезности.  
   
  BPET_SEV_LOW  
- Идентифицирует ошибку низкая серьезность точки останова.  
+ Указывает ошибку точки останова с низким уровнем серьезности.  
   
  BPET_TYPE_MASK  
- Идентифицирует ошибку стиле маска точки останова.  
+ Указывает ошибку точки останова в стиле маски.  
   
  BPET_SEV_MASK  
- Идентифицирует ошибку серьезности маска style точки останова.  
+ Задает ошибку точки останова с уровнем серьезности-маска.  
   
  BPET_GENERAL_WARNING  
- Идентифицирует ошибку общие предупреждение style точки останова.  
+ Указывает ошибку точки останова общего стиля предупреждения.  
   
  BPET_GENERAL_ERROR  
- Идентифицирует ошибку общие стиля ошибки точки останова.  
+ Указывает общую ошибку точки останова в стиле ошибки.  
   
  BPET_ALL  
- Указывает типы ошибок все точки останова.  
+ Указывает все типы ошибок точек останова.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения могут объединяться с помощью побитовой `OR` и используются для `dwType` членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры. Переданный в качестве параметра для [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Эти значения можно комбинировать с помощью побитового `OR` и используемого для `dwType` элемента структуры [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Передается в качестве параметра в метод [енумеррорбреакпоинтс](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .  
   
- Тип ошибки точки останова представляет собой тип и уровень серьезности. Это означает, что тип ошибки точки останова никогда не является только типа (например, `BPET_TYPE_ERROR`,) или уровнем серьезности (например, `BPET_SEV_GENERAL`) сама по себе. `BPET_GENERAL_WARNING` и `BPET_GENERAL_ERROR` предоставляют предварительно определенные значения для общих точек останова предупреждений и ошибок.  
+ Тип ошибки точки останова состоит из типа и степени серьезности. Это означает, что тип ошибки точки останова никогда не является просто типом (например, `BPET_TYPE_ERROR` ) или уровнем серьезности (например, `BPET_SEV_GENERAL` ). `BPET_GENERAL_WARNING` и `BPET_GENERAL_ERROR` предоставляют стандартные значения для общих точек останова и предупреждений об ошибках.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   

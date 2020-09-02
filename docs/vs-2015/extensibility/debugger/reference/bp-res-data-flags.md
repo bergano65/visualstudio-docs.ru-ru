@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68d1c0705ae7d27bf281f5d65e9385228cd36bc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153343"
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
+# <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает эмулируется ли точки останова в данных или реализованного в оборудования.  
+Указывает, выполняется ли эмуляция или реализация точки останова данных в оборудовании.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,18 +41,18 @@ public enum enum_BP_RES_DATA_FLAGS { 
   
 ## <a name="members"></a>Участники  
  BP_RES_DATA_EMULATED  
- Указывает, что ее эмулирует точки останова в данных.  
+ Указывает, что выполняется Эмуляция точки останова в данных.  
   
-## <a name="remarks"></a>Примечания  
- Используется для `dwFlags` членом [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `dwFlags` элемента структуры [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

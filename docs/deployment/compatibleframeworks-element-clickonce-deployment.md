@@ -1,5 +1,5 @@
 ---
-title: '&lt;compatibleFrameworks&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
+title: '&lt;&gt;элемент compatibleFrameworks (развертывание ClickOnce) | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66746031"
 ---
-# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; элемент (развертывание ClickOnce)
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;элемент compatibleFrameworks (развертывание ClickOnce)
 Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение.
 
 > [!NOTE]
-> [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) не поддерживает `compatibleFrameworks` элемент при сохранении манифеста приложения, уже подписанного с помощью сертификата с помощью [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Вместо этого средства используйте [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) не поддерживает `compatibleFrameworks` элемент при сохранении манифеста приложения, который уже подписан с помощью сертификата, использующего [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Вместо этого необходимо использовать [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,27 +41,27 @@ ms.locfileid: "66746031"
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- `compatibleFrameworks` Элемент является обязательным для манифестов развертывания, предназначенные [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] среды выполнения .NET Framework 4 или более поздней версии. `compatibleFrameworks` Содержит один или несколько `framework` элементы, которые задают версий платформы .NET Framework, для которых можно запустить это приложение. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Среда выполнения будет запускаться приложение на первом доступных `framework` в этом списке.
+ `compatibleFrameworks`Элемент необходим для манифестов развертывания, предназначенных для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] среды выполнения, предоставляемой .NET Framework 4 или более поздней версии. `compatibleFrameworks`Элемент содержит один или несколько `framework` элементов, указывающих версии .NET Framework, в которых может выполняться это приложение. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Среда выполнения запустит приложение в первом доступном `framework` списке.
 
- В следующей таблице перечислены атрибут, `compatibleFrameworks` поддерживает элемент.
+ В следующей таблице перечислены атрибуты, `compatibleFrameworks` поддерживаемые элементом.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`S` `upportUrl`|Необязательный параметр. Указывает URL-адрес, где можно скачать предпочтительные совместимой версии .NET Framework.|
+|`S` `upportUrl`|Необязательный элемент. Указывает URL-адрес, по которому может быть скачана предпочтительная совместимая версия .NET Framework.|
 
 ## <a name="framework"></a>платформа
- Обязательный. В следующей таблице перечислены атрибуты, `framework` поддерживает элемент.
+ Обязательный. В следующей таблице перечислены атрибуты, которые `framework` поддерживает элемент.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`targetVersion`|Обязательный. Указывает номер версии целевой платформы .NET Framework.|
-|`profile`|Обязательный. Задает профиль целевой платформы .NET Framework.|
-|`supportedRuntime`|Обязательный. Указывает номер версии среды выполнения, связанной с платформы .NET Framework.|
+|`targetVersion`|Обязательный. Указывает номер версии целевого .NET Framework.|
+|`profile`|Обязательный. Указывает профиль целевого .NET Framework.|
+|`supportedRuntime`|Обязательный. Указывает номер версии среды выполнения, связанной с целевым .NET Framework.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 ## <a name="example"></a>Пример
- В следующем коде показано в примере `compatibleFrameworks` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Это развертывание может выполняться [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Оно также может выполняться на платформе .NET Framework 4, так как он является надмножеством [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
+ В следующем примере кода показан `compatibleFrameworks` элемент в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесте развертывания. Это развертывание может выполняться на [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . Он также может выполняться на .NET Framework 4, так как он является надмножеством [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
@@ -72,5 +72,5 @@ ms.locfileid: "66746031"
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

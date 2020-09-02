@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62b84bd77038c7a17b65f764bd303d6a6372a52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154162"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Расширяет [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) интерфейс, чтобы обеспечить получение модулей и процессов.  
+Расширяет интерфейс [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , чтобы обеспечить получение интерфейсов модуля и процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,22 +29,22 @@ IDebugCodeContext3 : IDebugCodeContext2
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Реализуется отладчиков и потребляемых [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладочный пакет.  
+ Реализован механизмами отладки и используется [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] пакетом отладки.  
   
 ## <a name="methods"></a>Методы  
- В дополнение к методам на `IDebugCodeContext2` интерфейс, этот интерфейс реализует следующие методы:  
+ Помимо методов `IDebugCodeContext2` интерфейса, этот интерфейс реализует следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Извлекает ссылку на интерфейс модуля отладки.|  
-|[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Извлекает ссылку на интерфейс процесс отладки.|  
+|[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Извлекает ссылку на интерфейс процесса отладки.|  
   
-## <a name="remarks"></a>Примечания  
- Это дополнительный интерфейс, который обычно не должны быть реализованы.  
+## <a name="remarks"></a>Remarks  
+ Это необязательный интерфейс, который обычно не требуется реализовывать.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
+ Заголовок: Мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

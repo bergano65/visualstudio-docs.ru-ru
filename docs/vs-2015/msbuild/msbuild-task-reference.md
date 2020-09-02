@@ -17,26 +17,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154104"
 ---
 # <a name="msbuild-task-reference"></a>Справочные сведения о задачах MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. После установки [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] станут доступны дополнительные задачи, используемые для создания проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Дополнительные сведения см. в статье [Задачи MSBuild, относящиеся к Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
+Задачи содержат код, который выполняется в процессе сборки. Задачи в следующем списке входят в состав [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. После установки [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] станут доступны дополнительные задачи, используемые для создания проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Дополнительные сведения см. в разделе [Visual C++ Tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Помимо параметров, перечисленных в подразделах этого раздела, у каждой задачи существуют следующие параметры:  
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`Condition`|Необязательный параметр `String` .<br /><br /> Выражение `Boolean`, на основании которого механизм [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] определяет, будет ли выполняться эта задача. Сведения о поддерживаемых в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] условиях см. в статье [об условиях MSBuild](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Необязательный параметр. Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**. При сбое задачи последующие задачи в элементе [Target](../msbuild/target-element-msbuild.md) и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.<br />-   **ErrorAndStop** или **false** (значение по умолчанию). При сбое задачи остальные задачи в элементе `Target` и сборке не выполняются, и считается, что возник сбой всего элемента `Target` и всей сборки.<br /><br /> Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. в разделе [Практическое руководство. Игнорирование ошибок в задачах](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`Condition`|Необязательный параметр `String`.<br /><br /> Выражение `Boolean`, на основании которого механизм [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] определяет, будет ли выполняться эта задача. Сведения о поддерживаемых в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] условиях см. в статье [об условиях MSBuild](../msbuild/msbuild-conditions.md).|  
+|`ContinueOnError`|Необязательный параметр. Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**. При сбое задачи последующие задачи в элементе [Target](../msbuild/target-element-msbuild.md) и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.<br />-   **ErrorAndStop** или **false** (значение по умолчанию). При сбое задачи остальные задачи в элементе `Target` и сборке не выполняются, и считается, что возник сбой всего элемента `Target` и всей сборки.<br /><br /> Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. [в разделе инструкции. игнорирование ошибок в задачах](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Базовый класс Task](../msbuild/task-base-class.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [Базовый класс задачи](../msbuild/task-base-class.md)  
  Добавляет несколько параметров в задачи, производные от класса <xref:Microsoft.Build.Utilities.Task>.  
   
  [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md)  
@@ -54,10 +54,10 @@ ms.locfileid: "68154104"
  [Задача AssignCulture](../msbuild/assignculture-task.md)  
  Назначает элементам идентификаторы языка.  
   
- [Задача AssignProjectConfiguration](../msbuild/assignprojectconfiguration-task.md)  
+ [Задача задача assignprojectconfiguration](../msbuild/assignprojectconfiguration-task.md)  
  Принимает строки конфигурации списка и назначает их конкретным проектам.  
   
- [Задача AssignTargetPath](../msbuild/assigntargetpath-task.md)  
+ [Задача Ассигнтаржетпас](../msbuild/assigntargetpath-task.md)  
  Принимает список файлов и добавляет атрибуты `<TargetPath>`, если они еще не указаны.  
   
  [Задача CallTarget](../msbuild/calltarget-task.md)  
@@ -69,10 +69,10 @@ ms.locfileid: "68154104"
  [Задача ConvertToAbsolutePath](../msbuild/converttoabsolutepath-task.md)  
  Преобразует относительный путь или ссылку в абсолютный путь.  
   
- [Задача Copy](../msbuild/copy-task.md)  
+ [Задача копирования](../msbuild/copy-task.md)  
  Копирует файлы в новое расположение.  
   
- [Задача CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)  
+ [Задача задача createcsharpmanifestresourcename](../msbuild/createcsharpmanifestresourcename-task.md)  
  Создает имя манифеста в стиле [!INCLUDE[csprcs](../includes/csprcs-md.md)] на основе заданного имени RESX-файла или другого ресурса.  
   
  [Задача CreateItem](../msbuild/createitem-task.md)  
@@ -84,19 +84,19 @@ ms.locfileid: "68154104"
  [Задача CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)  
  Создает имя манифеста в стиле [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] на основе заданного имени RESX-файла или другого ресурса.  
   
- [Задача Csc](../msbuild/csc-task.md)  
+ [Задача CSC](../msbuild/csc-task.md)  
  Вызывает компилятор Visual C# для создания исполняемых файлов, библиотек динамической компоновки или модулей кода.  
   
- [Задача Delete](../msbuild/delete-task.md)  
+ [Удалить задачу](../msbuild/delete-task.md)  
  Удаляет указанные файлы.  
   
- [Задача Error](../msbuild/error-task.md)  
+ [Задача "ошибка"](../msbuild/error-task.md)  
  Останавливает сборку и регистрирует ошибку в журнале событий на основании вычисленного условного оператора.  
   
  [Задача Exec](../msbuild/exec-task.md)  
  Запускает заданную программу или команду с помощью заданных аргументов.  
   
- [Задача FindAppConfigFile](../msbuild/findappconfigfile-task.md)  
+ [Задача задача findappconfigfile](../msbuild/findappconfigfile-task.md)  
  Выполняет поиск файла app.config (если он имеется) в предоставленных списках.  
   
  [Задача FindInList](../msbuild/findinlist-task.md)  
@@ -105,7 +105,7 @@ ms.locfileid: "68154104"
  [Задача FindUnderPath](../msbuild/findunderpath-task.md)  
  Определяет, какие элементы в указанной коллекции находятся в указанной папке и ее подпапках.  
   
- [Задача FormatUrl](../msbuild/formaturl-task.md)  
+ [Задача Форматурл](../msbuild/formaturl-task.md)  
  Преобразовывает URL-адрес в правильный формат URL-адреса.  
   
  [Задача FormatVersion](../msbuild/formatversion-task.md)  
@@ -117,16 +117,16 @@ ms.locfileid: "68154104"
  [Задача GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)  
  Задача обеспечивает автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов.  
   
- [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
+ [Задача задача generatedeploymentmanifest](../msbuild/generatedeploymentmanifest-task.md)  
  Создает манифест развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
  [Задача GenerateResource](../msbuild/generateresource-task.md)  
  Преобразовывает TXT- и RESX-файлы в двоичные RESOURCES-файлы среды CLR.  
   
- [Задача GenerateTrustInfo](../msbuild/generatetrustinfo-task.md)  
+ [Задача Женератетрустинфо](../msbuild/generatetrustinfo-task.md)  
  Создает доверие к приложению из базового манифеста и из параметров `TargetZone` и `ExcludedPermissions`.  
   
- [Задача GetAssemblyIdentity](../msbuild/getassemblyidentity-task.md)  
+ [Задача задача GetAssemblyIdentity](../msbuild/getassemblyidentity-task.md)  
  Извлекает идентификаторы сборок из указанных файлов и выводит сведения об удостоверении.  
   
  [Задача GetFrameworkPath](../msbuild/getframeworkpath-task.md)  
@@ -144,16 +144,16 @@ ms.locfileid: "68154104"
  [Задача MakeDir](../msbuild/makedir-task.md)  
  Создает каталоги и при необходимости любые родительские каталоги.  
   
- [Задача Message](../msbuild/message-task.md)  
+ [Задача сообщения](../msbuild/message-task.md)  
  Записывает сообщения в журнал в процессе сборки.  
   
- [Задача Move](../msbuild/move-task.md)  
+ [Переместить задачу](../msbuild/move-task.md)  
  Перемещает файлы в новое расположение.  
   
  [Задача MSBuild](../msbuild/msbuild-task.md)  
  Выполняет сборку проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] на основе другого проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Задача ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)  
+ [Задача задача ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)  
  Считывает список элементов из текстового файла.  
   
  [Задача RegisterAssembly](../msbuild/registerassembly-task.md)  
@@ -165,7 +165,7 @@ ms.locfileid: "68154104"
  [Задача RemoveDuplicates](../msbuild/removeduplicates-task.md)  
  Удаляет повторяющиеся элементы из указанной коллекции элементов.  
   
- [Задача RequiresFramework35SP1Assembly](../msbuild/requiresframework35sp1assembly-task.md)  
+ [Задача задача requiresframework35sp1assembly](../msbuild/requiresframework35sp1assembly-task.md)  
  Определяет, требуется ли для приложения платформа .NET Framework 3.5 SP1.  
   
  Задача ResGen  
@@ -186,28 +186,28 @@ ms.locfileid: "68154104"
  [Задача ResolveNativeReference](../msbuild/resolvenativereference-task.md)  
  Разрешает машинные ссылки.  
   
- [Задача ResolveNonMSBuildProjectOutput](../msbuild/resolvenonmsbuildprojectoutput-task.md)  
+ [Задача Ресолвенонмсбуилдпрожектаутпут](../msbuild/resolvenonmsbuildprojectoutput-task.md)  
  Определяет выходные файлы для ссылок на проекты, не относящихся к MSBuild.  
   
  [Задача SGen](../msbuild/sgen-task.md)  
  Создает сборку сериализации XML для типов в указанной сборке.  
   
- [Задача SignFile](../msbuild/signfile-task.md)  
+ [Задача задача SignFile](../msbuild/signfile-task.md)  
  Подписывает указанный файл с помощью заданного сертификата.  
   
- [Задача Touch](../msbuild/touch-task.md)  
+ [Задача касания](../msbuild/touch-task.md)  
  Задает время доступа и изменения файлов.  
   
  [Задача UnregisterAssembly](../msbuild/unregisterassembly-task.md)  
  Отменяет регистрацию указанных сборок для целей COM-взаимодействия.  
   
- [Задача UpdateManifest](../msbuild/updatemanifest-task.md)  
+ [Задача задача UpdateManifest](../msbuild/updatemanifest-task.md)  
  Обновляет выбранные свойства в манифесте и выполняет повторное подписание.  
   
  [Задача Vbc](../msbuild/vbc-task.md)  
  Вызывает компилятор Visual Basic для создания исполняемых файлов, библиотек динамической компоновки или модулей кода.  
   
- [Задача Warning](../msbuild/warning-task.md)  
+ [Задача предупреждения](../msbuild/warning-task.md)  
  Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  
   
  [Задача WriteCodeFragment](../msbuild/writecodefragment-task.md)  
@@ -216,16 +216,16 @@ ms.locfileid: "68154104"
  [Задача WriteLinesToFile](../msbuild/writelinestofile-task.md)  
  Записывает указанные элементы в указанный текстовый файл.  
   
- [Задача XmlPeek](../msbuild/xmlpeek-task.md)  
+ [Задача задача XmlPeek](../msbuild/xmlpeek-task.md)  
  Возвращает из XML-файла значения, указанные в запросе XPath.  
   
- [Задача XmlPoke](../msbuild/xmlpoke-task.md)  
+ [Задача задача XmlPoke](../msbuild/xmlpoke-task.md)  
  Задает в XML-файле значения, указанные в запросе XPath.  
   
- [Задача XslTransformation](../msbuild/xsltransformation-task.md)  
+ [Задача задача xsltransformation](../msbuild/xsltransformation-task.md)  
  Преобразует входные данные XML с помощью *XSLT* или скомпилированного XSLT и выводит результат на устройство вывода или в выходной файл.  
   
-## <a name="see-also"></a>См. также  
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)   
  [Написание задач](../msbuild/task-writing.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

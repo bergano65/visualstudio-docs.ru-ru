@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState Документы Майкрософт
+title: 'IDebugEngine3:: Сетжустмикодестате | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730684"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Этот метод сообщает движку отладки о информации о состоянии JustMyCode.
+Этот метод сообщает модулю отладки о сведениях о состоянии Жустмикоде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,20 +45,20 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Параметры
 `fUpdate`\
-(в) Nonzero`TRUE`( ) для обновления`FALSE`текущей информации, ноль ( ) для сбросить всю информацию (игнорируя все ранее установленные).
+окне Ненулевое значение ( `TRUE` ) для обновления текущей информации, ноль ( `FALSE` ) для сброса всех данных (без учета ранее заданных).
 
 `dwModules`\
-(в) Количество информационных структур в`rgJMCSpec.`
+окне Количество информационных структур в `rgJMCSpec.`
 
 `rgJMCSpec`\
-(в) Массив [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) структур для использования.
+окне Массив структур [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) для использования.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- JustMyCode — это концепция отладки только кода, принадлежащего пользователю, и игнорирования всего промежуточного кода, такого как системный код, даже если исходный код доступен для этого системного кода.
+## <a name="remarks"></a>Remarks
+ Жустмикоде — это концепция отладки только кода, относящегося к пользователю, и игнорирования всех промежуточных кодов, таких как системный код, даже если исходный код доступен для этого системного кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

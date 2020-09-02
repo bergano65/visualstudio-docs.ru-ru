@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815829"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Практическое руководство. Добавление действий на панель инструментов
@@ -58,6 +58,6 @@ ms.locfileid: "85815829"
 
 6. Настраиваемое действие отображается в **области элементов** в категории, в которой фокус находится перед добавлением элемента. Например, если категория « **Общие** » была выбрана на **панели элементов** перед добавлением элемента «панель инструментов», то действие появится в категории « **Общие** ».
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)

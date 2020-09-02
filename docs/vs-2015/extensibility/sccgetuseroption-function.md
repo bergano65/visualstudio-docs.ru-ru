@@ -1,5 +1,5 @@
 ---
-title: Функция SccGetUserOption | Документация Майкрософт
+title: Функция Сккжетусероптион | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200070"
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Эта функция получает различные параметры конкретного пользователя.  
+Эта функция получает разнообразные параметры, относящиеся к пользователю.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,30 +36,30 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>Параметры  
  pContext  
- [in] Подключаемый модуль Контекстный указатель исходного элемента управления.  
+ окне Указатель контекста для подключаемого модуля системы управления версиями.  
   
- nOption  
- [in] Параметр, чтобы получить (см. в разделе "Примечания" для возможные варианты).  
+ ноптион  
+ окне Параметр для извлечения (см. раздел Примечания для возможных параметров).  
   
- lpVal  
- [out] Значение, связанное с параметром.  
+ лпвал  
+ заполняет Значение, связанное с параметром.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
+ Реализация подключаемого модуля системы управления версиями для этой функции должна возвращать одно из следующих значений:  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|SCC_OK|Параметр был успешно извлечен.|  
+|SCC_OK|Параметр успешно получен.|  
 |SCC_E_OPNOTSUPPORTED|Параметр не поддерживается.|  
 |SCC_E_NONSPECIFICERROR|Произошла неизвестная ошибка.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  Эта команда поддерживает следующие параметры:  
   
-|Параметр User|Описание|  
+|Параметр пользователя|Описание|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователю нужно извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователь хочет извлечь локальные файлы) или `SCC_USEROPT_COLV_NO` .|  
   
-## <a name="see-also"></a>См. также  
- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
- [Коды ошибок](../extensibility/error-codes.md)
+## <a name="see-also"></a>См. также:  
+ [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)   
+ [Код ошибки](../extensibility/error-codes.md)

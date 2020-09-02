@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154596"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
@@ -32,15 +32,15 @@ ms.locfileid: "68154596"
 - **Используйте цвета элементов управления, соответствующие их расположению.** В определенных состояниях некоторые элементы управления Visual Studio не имеют отдельных цветов границ и фона. Эти цвета наследуются от областей, в которых они расположены. Всегда используйте имена токенов, которые подходят для того места, в котором вы размещаете элементы управления.
 
 > [!IMPORTANT]
-> Не используйте токены из категорий «Начальная страница» и «Cider».
+> Не используйте токены, найденные в категориях "Начальная страница" или "Cider".
 
 ## <a name="command-structures"></a>Структура команд
 
-### <a name="BKMK_CommandMenus"></a> Меню
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Ярлык
 
-Меню могут происходить в нескольких местах в Visual Studio: в строке главного меню, внедренные в документ или инструмент windows или правой кнопкой мыши таблицу, в разных местах внутри интегрированной среды разработки. Реализация меню, связанных с другими элементами пользовательского интерфейса, рассматривается в разделах, посвященных соответствующим элементам. Всегда используйте стандартную реализацию меню, предоставляемую средой Visual Studio. Однако в некоторых редких случаях доступ к стандартным меню Visual Studio может отсутствовать. В таких ситуациях используйте указанные ниже имена токенов для обеспечения согласованности пользовательского интерфейса с другими меню в Visual Studio.
+Меню могут находиться в нескольких местах в Visual Studio: в главной строке меню, внедренной в документ или в окнах инструментов, или при щелчке правой кнопкой мыши в различных местах в интегрированной среде разработки. Реализация меню, связанных с другими элементами пользовательского интерфейса, рассматривается в разделах, посвященных соответствующим элементам. Всегда используйте стандартную реализацию меню, предоставляемую средой Visual Studio. Однако в некоторых редких случаях доступ к стандартным меню Visual Studio может отсутствовать. В таких ситуациях используйте указанные ниже имена токенов для обеспечения согласованности пользовательского интерфейса с другими меню в Visual Studio.
 
-![Красная линия меню](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+![Красная линия меню](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 — 000_MenuRedline")
 
 Используйте:
 - если нужно создать пользовательское меню;
@@ -54,7 +54,7 @@ ms.locfileid: "68154596"
 
 Заголовок меню состоит из фона, границы и текста заголовка, а также необязательного глифа (обычно если меню находится на панели команд).
 
-![Красная линия заголовка меню](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+![Красная линия заголовка меню](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 — 001_MenuTitleRedline")
 
 Используйте:
 при создании пользовательского заголовка меню.
@@ -70,9 +70,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Заголовок меню по умолчанию](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")
+  ![Заголовок меню по умолчанию](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 — 002_MenuTitleDefault")
 
   **Заголовок меню**
 
@@ -84,7 +84,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextActive`
 
-  ![Заголовок меню с глифом по умолчанию](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")
+  ![Заголовок меню с глифом по умолчанию](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 — 003_MenuTitleWithGlyphDefault")
 
   **Заголовок меню с глифом**
 
@@ -92,19 +92,19 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuGlyph`
 
-  Border
+  Рамка
 
   None
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Заголовок меню при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")
+  ![Заголовок меню при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 — 004_MenuTitleHover")
 
   **Заголовок меню**
 
@@ -118,7 +118,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextHover`
 
-  ![Заголовок меню с глифом при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")
+  ![Заголовок меню с глифом при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 — 005_MenuTitleWithGlyphHover")
 
   **Заголовок меню с глифом**
 
@@ -126,19 +126,19 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuMouseOverGlyph`
 
-  Border
+  Рамка
 
   `Environment.CommandBarBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Активная кнопка заголовка меню](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")
+  ![Активная кнопка заголовка меню](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 — 006_MenuTitlePressed")
 
   **Заголовок меню**
 
@@ -152,7 +152,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextActive`
 
-  ![Заголовок меню с глифом при нажатии](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")
+  ![Активная кнопка заголовка меню с глифом](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 — 007_MenuTitleWithGlyphPressed")
 
   **Заголовок меню с глифом**
 
@@ -160,21 +160,21 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuMouseDownGlyph`
 
-  Border
+  Рамка
 
   `Environment.CommandBarMenuBorder`
 
   Только с левой, верхней и правой сторон.
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Заголовок меню с глифом отключена](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")
+  ![Неактивная кнопка заголовка меню с глифом](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")
 
   **Заголовок меню с глифом**
 
@@ -190,7 +190,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextInactive`
 
-  Border
+  Рамка
 
   None
 
@@ -198,7 +198,7 @@ ms.locfileid: "68154596"
 
 Отдельный пункт меню состоит из текста и необязательных значка, флажка или глифа подменю. Его цвета фона и текста меняются при наведении указателя. Этот токен цвета представляет собой пару, состоящую из цвета фона и цвета переднего плана.
 
-![Красная линия пунктов меню](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+![Красная линия пунктов меню](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 — 009_MenuItemRedline")
 
 Используйте:
 для любого раскрывающегося списка, открывающегося из строки меню или панели команд.
@@ -214,11 +214,11 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Меню по умолчанию](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")
+  ![Меню по умолчанию](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")
 
-  **Menu**
+  **Меню**
 
   Фон
 
@@ -234,7 +234,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuSubmenuGlyph`
 
-  Border
+  Рамка
 
   `Environment.CommandBarMenuBorder`
 
@@ -246,13 +246,13 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuSeparator`
 
-  Тень
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  ![Меню с установленным флажком](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")
+  ![Меню с установленным флажком](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 — 011_MenuChecked")
 
-  **Помечено**
+  **Отмечен**
 
   Флажок
 
@@ -262,9 +262,9 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarSelectedIcon`
 
-  ![Выбранное меню](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")
+  ![Выбранное меню](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 — 012_MenuSelected")
 
-  **Выбранные**
+  **Selected**
 
   Фон значка
 
@@ -274,15 +274,15 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarSelectedBorder`
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Меню при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")
+  ![Меню при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 — 013_MenuHover")
 
   **Пункт меню**
 
@@ -298,9 +298,9 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuMouseOverSubmenuGlyph`
 
-  ![Меню при наведении указателя мыши проверяется](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")
+  ![Меню при наведении курсора мыши с установленным флажком ](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 — 014_MenuHoverChecked")
 
-  **Помечено**
+  **Отмечен**
 
   Флажок
 
@@ -310,9 +310,9 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarHoverOverSelectedIcon`
 
-  ![Меню при наведении указателя мыши выбранных](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")
+  ![Выбранное меню при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 — 015_MenuHoverSelected")
 
-  **Выбранные**
+  **Selected**
 
   Фон значка
 
@@ -322,15 +322,15 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Неактивное меню](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")
+  ![Неактивное меню](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 — 016_MenuDisabled")
 
   Элемент меню
 
@@ -342,9 +342,9 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarMenuSubmenuGlyph`
 
-  ![Неактивное меню проверяется](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")
+  ![Неактивное меню с установленным флажком](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 — 017_MenuDisabledChecked")
 
-  Помечено
+  Флажок установлен
 
   Флажок
 
@@ -360,9 +360,9 @@ ms.locfileid: "68154596"
 
 Как правило, следует всегда использовать стандартную реализацию панели команд, предоставляемую средой Visual Studio. Использование стандартного механизма обеспечивает правильное отображение визуальных элементов и согласованное поведение интерактивных элементов и других элементов управления панели команд Visual Studio. Однако если вам необходимо создать собственную панель команд, следует правильно оформить ее с помощью указанных ниже имен токенов.
 
-![Красная линия панели команд](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+![Красная линия командной строки](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 — 018_CommandBarRedline")
 
-![Красная линия кнопки переполнения](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![Красная линия кнопки переполнения](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 — 019_OverflowButtonRedline")
 
 Используйте:
 в местах, где требуется внедренная панель команд, но нельзя использовать стандартную реализацию панели команд Visual Studio.
@@ -376,7 +376,7 @@ ms.locfileid: "68154596"
 
 Группа панели команд состоит из связанного набора элементов управления панели команд и может содержать любое количество кнопок, разворачивающихся кнопок, раскрывающихся меню, полей со списками или меню. Цвета этих элементов управления определяются отдельными именами токенов, которые рассматриваются в других частях этого руководства. Разделительная линия служит для разделения группы на панели команд в связанные подгруппы.
 
-![Красная линия группа панели команд](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+![Групповая красная линия командной строки](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 — 020_CommandBarGroupRedline")
 
 Используйте:
 в местах, где требуется внедренная панель команд, но нельзя использовать стандартную реализацию панели команд Visual Studio.
@@ -390,7 +390,7 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
   Фон
 
@@ -398,7 +398,7 @@ ms.locfileid: "68154596"
 
   Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.
 
-  Border
+  Рамка
 
   `Environment.CommandBarToolBarBorder`
 
@@ -414,9 +414,9 @@ ms.locfileid: "68154596"
 
 #### <a name="command-icons"></a>Значки команд
 
-![Красная линия значка команды](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
+![Красная линия значка команды](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 — 021_CommandIconRedline1")
 
-![Красная линия значка команды](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Красная линия значка команды](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 — 022_CommandIconRedline2")
 
 Используйте:
 для кнопок, которые будут размещаться на панели команд.
@@ -432,9 +432,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Команда значок по умолчанию](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")
+  ![Значок команды по умолчанию](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 — 023_CommandIconDefault")
 
   **Default**
 
@@ -446,13 +446,13 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextActive`
 
-  Border
+  Рамка
 
   Н/Д
 
-  ![Команда значок по умолчанию выбран](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")
+  ![Выбранный значок команды по умолчанию](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 — 024_CommandIconDefaultSelected")
 
-  **Выбранные**
+  **Selected**
 
   Фон
 
@@ -462,21 +462,21 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextSelected`
 
-  Border
+  Рамка
 
   `Environment.CommandBarSelectedBorder`
 
-  **При наведении указателя мыши и клавиатуры с фокусом ввода**
+  **Наведение указателя мыши и получение фокуса с клавиатуры**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Значок команды при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")
+  ![Значок команды при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 — 025_CommandIconHover")
 
-  **Стандартный при наведении курсора мыши**
+  **Стандартный при наведении указателя мыши**
 
   Фон
 
@@ -488,13 +488,13 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextHover`
 
-  Border
+  Рамка
 
   `Environment.CommandBarBorder`
 
-  ![Команды при наведении значок выбранного](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")
+  ![Выбранный значок команды при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 — 026_CommandIconHoverSelected")
 
-  **Выбран при наведении курсора мыши**
+  **Выбор при наведении указателя мыши**
 
   Фон
 
@@ -504,19 +504,19 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextHoverOverSelected`
 
-  Border
+  Рамка
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Активный значок команды](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")
+  ![Активный значок команды](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 — 027_CommandIconPressed")
 
   **Активный значок команды**
 
@@ -530,19 +530,19 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextMouseDown`
 
-  Border
+  Рамка
 
   `Environment.CommandBarBorder`
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Неактивный значок команды](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")
+  ![Неактивный значок команды](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 — 028_CommandIconDisabled")
 
   **Неактивный значок команды**
 
@@ -554,16 +554,16 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextInactive`
 
-  Border
+  Рамка
 
   Н/Д
 
-#### <a name="BKMK_CommandComboBox"></a> Поле со списком
+#### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Поле со списком
 
 > [!IMPORTANT]
 > Поле со списком похоже на раскрывающийся список, но включает область для ввода и редактирования текста. Если раскрывающийся список не включает область для ввода и редактирования текста, используйте токены цветов, указанные в разделе [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
-![Красная линия со списком](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
+![Красная линия поля со списком](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 — 029_ComboBoxRedline")
 
 Используйте:
 - при создании пользовательских полей со списками;
@@ -581,9 +581,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Поле ввода поля со списком](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")
+  ![Поле ввода поля со списком](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 — 030_ComboBoxInputField")
 
   **Поле ввода**
 
@@ -595,7 +595,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxText`
 
-  Border
+  Рамка
 
   `Environment.ComboBoxBorder`
 
@@ -603,7 +603,7 @@ ms.locfileid: "68154596"
 
   Без разделителя
 
-  ![Раскрывающееся поле со списком&#45;нажатой кнопку](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")
+  ![Кнопка раскрывающегося списка&#45;вниз](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 — 031_ComboBoxDropdownButton")
 
   **Кнопка раскрывающегося списка**
 
@@ -615,9 +615,9 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxGlyph`
 
-  ![Поле со списком&#47;drop&#45;списку](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")
+  ![Поле со списком&#47;&#45;раскрывающегося списка](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 — 032_ComboBoxDropdownList")
 
-  **Выберите в раскрывающемся списке**
+  **Раскрывающийся список**
 
   Фон
 
@@ -629,19 +629,19 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxItemText`
 
-  Border
+  Рамка
 
   `Environment.ComboBoxPopupBorder`
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Поле ввода поля со списком при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")
+  ![Поле ввода поля со списком при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 — 033_ComboBoxInputFieldHover")
 
   **Поле ввода**
 
@@ -655,7 +655,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxMouseOverText`
 
-  Border
+  Рамка
 
   `Environment.ComboBoxMouseOverBorder`
 
@@ -663,7 +663,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxMouseOverSeparator`
 
-  ![Поле со списком&#47;drop&#45;кнопка при наведении указателя мыши вниз](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")
+  ![Поле со списком&#47;удалить&#45;кнопку "вниз" при наведении указателя](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 — 034_ComboBoxDropdownButtonHover")
 
   **Кнопка раскрывающегося списка**
 
@@ -675,9 +675,9 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxMouseOverGlyph`
 
-  ![Поле со списком&#47;drop&#45;вниз списка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")
+  ![Поле со списком&#47;&#45;раскрывающегося списка при наведении указателя](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 — 035_ComboBoxDropdownListHover")
 
-  **Выберите в раскрывающемся списке**
+  **Раскрывающийся список**
 
   Фон (пункт меню)
 
@@ -691,15 +691,15 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **С фокусом ввода**
+  **Focused**
 
   Компонент
 
   Элемент
 
-  Имя токена: Цвет.Категория
+  Имя токена: Цвет.категория
 
-  ![Поле ввода поля со списком с фокусом ввода](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")
+  ![Поле ввода поля со списком с фокусом ввода](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 — 036_ComboBoxInputFieldFocused")
 
   **Поле ввода**
 
@@ -711,7 +711,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxFocusedText`
 
-  Border
+  Рамка
 
   `Environment.ComboBoxFocusedBorder`
 
@@ -719,7 +719,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxFocusedButtonSeparator`
 
-  ![Поле со списком&#47;drop&#45;кнопка с фокусом ввода вниз](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")
+  ![Поле со списком&#47;кнопка "удалить&#45;"](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 — 037_ComboBoxDropdownButtonFocused")
 
   **Кнопка раскрывающегося списка**
 
@@ -731,15 +731,15 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxFocusedGlyph`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Цвет.Категория
+  Имя токена: Цвет.категория
 
-  ![Поле со списком активное поле ввода поля](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")
+  ![Активное поле ввода поля со списком](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 — 038_ComboBoxInputFieldPressed")
 
   **Поле ввода**
 
@@ -751,7 +751,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxMouseDownText`
 
-  Border
+  Рамка
 
   `Environment.ComboBoxMouseDownBorder`
 
@@ -759,7 +759,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxMouseDownSeparator`
 
-  ![Поле со списком&#47;drop&#45;вниз была нажата кнопка](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")
+  ![Поле со списком&#47;нажатой кнопки "удалить&#45;"](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 — 039_ComboBoxDropdownButtonPressed")
 
   **Кнопка раскрывающегося списка**
 
@@ -771,9 +771,9 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxMouseDownGlyph`
 
-  **Отключено**
+  **Отключен**
 
-  ![Поле со списком неактивное поле ввода](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")
+  ![Неактивное поле ввода поля со списком](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 — 041_ComboBoxInputFieldDisabled")
 
   **Поле ввода**
 
@@ -785,7 +785,7 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxDisabledText`
 
-  Border
+  Рамка
 
   `Environment.ComboBoxDisabledBorder`
 
@@ -793,7 +793,7 @@ ms.locfileid: "68154596"
 
   Без разделителя
 
-  ![Поле со списком&#47;drop&#45;вниз неактивная кнопка](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")
+  ![Поле со списком&#47;кнопка "удалить&#45;" отключена](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 — 040_ComboBoxDropdownButtonDisabled")
 
   **Кнопка раскрывающегося списка**
 
@@ -805,12 +805,12 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxDisabledGlyph`
 
-#### <a name="BKMK_CommandDropDown"></a> Раскрывающегося списка
+#### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Раскрывающийся список
 
 > [!IMPORTANT]
 > Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для ввода и редактирования текста, используйте токены цветов, указанные в разделе [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
-![DROP&#45;вниз красная линия](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![Удалить&#45;вниз красная линия](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 — 042_DropdownRedline")
 
 Используйте:
 при создании пользовательских элементов управления типа "раскрывающийся список".
@@ -826,9 +826,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз поле выбора](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")
+  ![Удалить&#45;поле выбора](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 — 043_DropdownSelectionField")
 
   **Поле выбора**
 
@@ -840,7 +840,7 @@ ms.locfileid: "68154596"
 
   `DropDownText`
 
-  Border
+  Рамка
 
   `DropDownBorder`
 
@@ -848,7 +848,7 @@ ms.locfileid: "68154596"
 
   Без разделителя
 
-  ![DROP&#45;нажатой кнопку](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")
+  ![Кнопка "удалить&#45;вниз"](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 — 044_DropdownButton")
 
   **Кнопка раскрывающегося списка**
 
@@ -860,9 +860,9 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownGlyph`
 
-  ![DROP&#45;списку](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")
+  ![Удалить&#45;список](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 — 045_DropdownList")
 
-  **Выберите в раскрывающемся списке**
+  **Раскрывающийся список**
 
   Фон
 
@@ -874,23 +874,23 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxItemText`
 
-  Border
+  Рамка
 
   `Environment.DropDownPopupBorder`
 
-  Тень
+  Shadow
 
   `Environment.DropShadowBackground`
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз поле выбора при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")
+  ![Удалить&#45;поле выбора при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 — 046_DropdownSelectionFieldHover")
 
   **Поле выбора**
 
@@ -904,7 +904,7 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownMouseOverText`
 
-  Border
+  Рамка
 
   `Environment.DropDownMouseOverBorder`
 
@@ -912,7 +912,7 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownButtonMouseOverSeparator`
 
-  ![DROP&#45;кнопка при наведении указателя мыши вниз](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")
+  ![Удалить&#45;кнопку "вниз" при наведении указателя](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 — 047_DropdownButtonHover")
 
   **Кнопка раскрывающегося списка**
 
@@ -924,9 +924,9 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownMouseOverGlyph`
 
-  ![DROP&#45;вниз списка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")
+  ![Удалить&#45;список при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 — 048_DropdownListHover")
 
-  **Выберите в раскрывающемся списке**
+  **Раскрывающийся список**
 
   Фон (пункт меню)
 
@@ -940,15 +940,15 @@ ms.locfileid: "68154596"
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз поле выбора нажата](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")
+  ![Перетащите выделенное поле&#45;вниз](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 — 049_DropdownSelectionFieldPressed")
 
   **Поле выбора**
 
@@ -960,7 +960,7 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownMouseDownText`
 
-  Border
+  Рамка
 
   `Environment.DropDownMouseDownBorder`
 
@@ -968,7 +968,7 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownButtonMouseDownSeparator`
 
-  ![DROP&#45;вниз была нажата кнопка](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")
+  ![Нажата кнопка "удалить&#45;" вниз](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 — 050_DropdownButtonPressed")
 
   **Кнопка раскрывающегося списка**
 
@@ -980,15 +980,15 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownMouseDownGlyph`
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз неактивное поле выбора](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")
+  ![Удалить&#45;поле выбора отключено](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 — 051_DropdownSelectionFieldDisabled")
 
   Фон
 
@@ -998,7 +998,7 @@ ms.locfileid: "68154596"
 
   `Environment.DropDownDisabledText`
 
-  Border
+  Рамка
 
   `Environment.DropDownDisabledBorder`
 
@@ -1006,7 +1006,7 @@ ms.locfileid: "68154596"
 
   Без разделителя
 
-  ![DROP&#45;вниз неактивная кнопка](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")
+  ![Кнопка удаления&#45;вниз отключена](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 — 052_DropdownButtonDisabled")
 
   Фон
 
@@ -1020,7 +1020,7 @@ ms.locfileid: "68154596"
 
 Для разворачивающихся кнопок используются многие имена токенов, определенные для других элементов управления панели команд, таких как кнопки, меню и текст панели команд. Все необходимые имена токенов для действий и кнопок раскрывающихся списков приводятся здесь еще раз для удобства. Раскрывающиеся списки разворачивающихся кнопок являются реализацией [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)панели команд.
 
-![Красная линия разворачивающейся кнопки](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+![Красная линия разворачивающейся кнопки](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 — 053_SplitButtonRedline")
 
 Используйте:
 при создании пользовательской разворачивающейся кнопки.
@@ -1036,9 +1036,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Разворачивающаяся кнопка](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")
+  ![Разворачивающаяся кнопка](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")
 
   **Разворачивающаяся кнопка (по умолчанию)**
 
@@ -1054,7 +1054,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarSplitButtonGlyph`
 
-  Border
+  Рамка
 
   Н/Д
 
@@ -1062,17 +1062,17 @@ ms.locfileid: "68154596"
 
   Н/Д
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Разворачивающаяся кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")
+  ![Разворачивающаяся кнопка при наведении указателя](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")
 
-  **Разворачивающаяся кнопка (при наведении курсора мыши)**
+  **Разворачивающаяся кнопка (при наведении указателя мыши)**
 
   Фон
 
@@ -1088,7 +1088,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarSplitButtonMouseOverGlyph`
 
-  Border
+  Рамка
 
   `Environment.CommandBarBorder`
 
@@ -1096,15 +1096,15 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarSplitButtonSeparator`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Активная Разворачивающаяся кнопка](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")
+  ![Нажата кнопка разворачивающегося](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")
 
   **Разворачивающаяся кнопка (активная)**
 
@@ -1122,7 +1122,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarSplitButtonMouseDownGlyph`
 
-  Border
+  Рамка
 
   `Environment.CommandBarBorder`
 
@@ -1130,15 +1130,15 @@ ms.locfileid: "68154596"
 
   Н/Д
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Неактивная Разворачивающаяся кнопка](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")
+  ![Кнопка разделения отключена](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")
 
   **Разворачивающаяся кнопка (неактивная)**
 
@@ -1154,7 +1154,7 @@ ms.locfileid: "68154596"
 
   `Environment.CommandBarTextInactive`
 
-  Border
+  Рамка
 
   Н/Д
 
@@ -1165,7 +1165,7 @@ ms.locfileid: "68154596"
 #### <a name="more-options-and-overflow-buttons"></a>Кнопки "Дополнительно" и "Переполнение"
  Кнопка "Дополнительно" используется, если группа панели команд может настраиваться путем добавления или удаления связанных кнопок. Кнопка "Переполнение" появляется, если панель команд усекается из-за отсутствия места по горизонтали. При ее нажатии открывается меню, содержащее кнопки, которые не поместились на панели команд. Цвета этих двух кнопок определяются одним и тем же набором имен токенов.
 
- ![Красная линия дополнительных параметров](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303 058_MoreOptionsRedline")
+ ![Красная линия дополнительных параметров](../../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303 — 058_MoreOptionsRedline")
 
  Используйте:
 для пользовательских кнопок "Дополнительно" и "Переполнение".
@@ -1179,15 +1179,15 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Дополнительные параметры](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")
+ ![Дополнительные параметры](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 — 059_MoreOptions")
 
  **Дополнительные параметры**
 
- ![Кнопка переполнения](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 060_Overflow")
+ ![Кнопка переполнения](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 — 060_Overflow")
 
- **переполнение**
+ **Переполнение**
 
  Фон
 
@@ -1197,21 +1197,21 @@ ms.locfileid: "68154596"
 
  `Environment.CommandBarOptionsGlyph`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Дополнительные параметры при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")
+ ![Дополнительные параметры при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 — 061_MoreOptionsHover")
 
  **Дополнительные параметры**
 
- ![Переполнение при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303 062_OverflowOptions")
+ ![Переполнение при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303 — 062_OverflowOptions")
 
- **переполнение**
+ **Переполнение**
 
  Фон
 
@@ -1223,21 +1223,21 @@ ms.locfileid: "68154596"
 
  `Environment.CommandBarOptionsMouseDownGlyph`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Дополнительные параметры нажата](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")
+ ![Активные дополнительные параметры](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 — 063_MoreOptionsPressed")
 
  **Дополнительные параметры**
 
- ![Переполнение при нажатии](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303 064_OverflowPressed")
+ ![Активное переполнение](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303 — 064_OverflowPressed")
 
- **переполнение**
+ **Переполнение**
 
  Фон
 
@@ -1257,13 +1257,13 @@ ms.locfileid: "68154596"
 ### <a name="document-window-frame"></a>Рамка окна документа
  Окна документов могут быть закрепленными в интегрированной среде разработки или перемещаемыми как отдельные окна. Если окно документа является перемещаемым за пределами интегрированной среды разработки, оно по прежнему размещается в контейнере документа и имеет цвета фона, границы, текста и вкладок, которые совпадают с аналогичными цветами в интегрированной среде разработки. Однако документ размещается внутри рамки, которая имеет собственные цвета фона, границы и текста. Если в контейнере документа закреплены окна инструментов, они наследуют поведение и цвет вкладок от имен токенов окна документа.
 
- ![Красная линия окна закрепленного документа](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303 065_DockedDocumentWindowRedline")
+ ![Красная линия окна закрепленного документа](../../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303 — 065_DockedDocumentWindowRedline")
 
  **Закрепленное окно документа**
 
- ![Красная линия окна плавающего документа](../../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303 066_FloatingDocumentWindowRedline")
+ ![Красная линия окна плавающего документа](../../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303 — 066_FloatingDocumentWindowRedline")
 
- **Плавающее окно**
+ **Перемещаемое окно документа**
 
  Используйте:
 при создании пользовательского интерфейса, соответствующего окну документа.
@@ -1277,7 +1277,7 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
  Документ: закрепленный или перемещаемый
 
@@ -1289,11 +1289,11 @@ ms.locfileid: "68154596"
 
  Зависит от типа документа
 
- Border
+ Рамка
 
  `Environment.ToolWindowBorder`
 
- ![Кадр с фокусом ввода](../../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")
+ ![Кадр с фокусом ввода](../../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")
 
  **Рамка: перемещаемая, с фокусом ввода**
 
@@ -1309,7 +1309,7 @@ ms.locfileid: "68154596"
 
  `Environment.RaftedWindowButtonActiveGlyph`
 
- Border
+ Рамка
 
  `Environment.MainWindowActiveDefaultBorder`
 
@@ -1319,7 +1319,7 @@ ms.locfileid: "68154596"
 
  Задается как прозрачная
 
- ![Кадр без фокуса ввода](../../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")
+ ![Кадр без фокуса ввода](../../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")
 
  **Рамка: перемещаемая, без фокуса ввода**
 
@@ -1335,7 +1335,7 @@ ms.locfileid: "68154596"
 
  `Environment.RaftedWindowButtonInactiveGlyph`
 
- Border
+ Рамка
 
  `Environment.MainWindowInactiveBorder`
 
@@ -1345,15 +1345,15 @@ ms.locfileid: "68154596"
 
  Задается как прозрачная
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Кадр с фокусом ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")
+ ![Кадр с фокусом ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 — 069_FrameFocusedHover")
 
  **Рамка: перемещаемая, с фокусом ввода**
 
@@ -1369,7 +1369,7 @@ ms.locfileid: "68154596"
 
  `Environment.RaftedWindowButtonHoverActiveBorder`
 
- ![Кадр без фокуса ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303 070_FrameUnfocusedHover")
+ ![Кадр без фокуса ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303 — 070_FrameUnfocusedHover")
 
  **Рамка: перемещаемая, без фокуса ввода**
 
@@ -1385,15 +1385,15 @@ ms.locfileid: "68154596"
 
  `Environment.RaftedWindowButtonHoverInactiveBorder`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Кадр с фокусом ввода нажатом](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")
+ ![Активный кадр с фокусом ввода](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 — 071_FrameFocusedPressed")
 
  **Рамка: перемещаемая, с фокусом ввода**
 
@@ -1412,7 +1412,7 @@ ms.locfileid: "68154596"
 ### <a name="document-tabs"></a>Вкладки документов
  Вкладки документов размещаются в канале вкладок и указывают, какие документы в настоящее время открыты, а также какой документ в настоящий момент выбран или активен. Окна инструментов также могут закрепляться в канале вкладок документов, если пользователь размещает их там. В этом случае для них используются те же цвета, что и для окон документов. Если вы создаете пользовательский интерфейс, цвета которого должны всегда соответствовать цветам окна документа (в том числе при обновлении темы или установке новых тем), то используйте ссылки на указанные ниже токены цветов.
 
- ![Красная линия вкладки документов](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303 072_DocumentTabRedline")
+ ![Красная линия вкладки документов](../../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303 — 072_DocumentTabRedline")
 
  Используйте:
 при создании пользовательского интерфейса, который должен соответствовать вкладкам документов и автоматически изменяться при обновлении тем или добавлении новых цветов темы.
@@ -1425,9 +1425,9 @@ ms.locfileid: "68154596"
 
 - Выбранная вкладка представляет документ, который в настоящее время отображается в контейнере документа. Выбранная вкладка имеет границу документа, которая располагается по верхнему краю контейнера документа.
 
-- Фоновые вкладки — это все вкладки документов, кроме выбранной в настоящий момент вкладки. При щелчке по такой вкладке она становится выбранной и получает цвета фона, границы и текста с соответствующими именами токенов.
+- Вкладки «фон» — это любые вкладки документов, не выбранные в данный момент. После нажатия они становятся выбранной вкладкой и получают все цвета фона, границы и текста из этих имен токенов.
 
-  ![Красная линия открытой вкладки документов](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")
+  ![Красная линия открытой вкладки документов](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 — 073_OpenDocumentTabRedline")
 
   Используйте:
   при создании пользовательских вкладок документов.
@@ -1438,15 +1438,15 @@ ms.locfileid: "68154596"
 - для пользовательского интерфейса, который не должен обновляться автоматически при изменении темы оболочки.
 
 #### <a name="selected-tab"></a>Выбранная вкладка
- **С фокусом ввода**
+ **Focused**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Выбранная вкладка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")
+ ![Выбранная вкладка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 — 074_SelectedTabFocused")
 
  **Выбранная вкладка документа, с фокусом ввода**
 
@@ -1460,7 +1460,7 @@ ms.locfileid: "68154596"
 
  `Environment.FileTabSelectedText`
 
- Border
+ Рамка
 
  `Environment.FileTabSelectedBorder`
 
@@ -1476,9 +1476,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Выбранная вкладка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")
+ ![Выбранная вкладка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 — 075_SelectedTabUnfocused")
 
  **Выбранная вкладка документа, без фокуса ввода**
 
@@ -1492,7 +1492,7 @@ ms.locfileid: "68154596"
 
  `Environment.FileTabInactiveText`
 
- Border
+ Рамка
 
  `Environment.FileTabInactiveBorder`
 
@@ -1505,7 +1505,7 @@ ms.locfileid: "68154596"
 #### <a name="background-tab"></a>Вкладка фона
  **Default**
 
- ![Вкладка фона](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")
+ ![Вкладка фона](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 — 076_BackgroundTab")
 
  **Вкладка фона по умолчанию**
 
@@ -1517,15 +1517,15 @@ ms.locfileid: "68154596"
 
  `Environment.FileTabText`
 
- Border
+ Рамка
 
  `Environment.FileTabBorder`
 
  Цвет совпадает с цветом фона.
 
- **При наведении курсора мыши**
+ **Наведение**
 
- ![Вкладка фона при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")
+ ![Вкладка фона при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 — 077_BackgroundTabHover")
 
  **Вкладка фона при наведении курсора мыши**
 
@@ -1539,7 +1539,7 @@ ms.locfileid: "68154596"
 
  `Environment.FileTabHotText`
 
- Border
+ Рамка
 
  `Environment.FileTabHotBorder`
 
@@ -1549,7 +1549,7 @@ ms.locfileid: "68154596"
 
 Вкладка предварительного просмотра отображается в правой части канала вкладок документов, когда пользователь щелкает элемент в окне инструментов обозревателя решений. Она служит для предварительного просмотра документа и дает пользователю возможность сохранять документ открытым в левой части канала вкладок документов. Одновременно может быть открыта только одна вкладка предварительного просмотра. Так же как открытые вкладки, вкладки предварительного просмотра имеют как фоновое, так и выбранное состояния и в активном состоянии могут получать фокус ввода и терять его.
 
-![Красная линия вкладки предварительного просмотра](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+![Красная линия вкладки предварительного просмотра](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 — 078_PreviewTabRedline")
 
 Используйте:
 при создании временной области предварительного просмотра, если какой-либо элемент должен иметь цвет текущей вкладки предварительного просмотра.
@@ -1559,17 +1559,17 @@ ms.locfileid: "68154596"
 
 - для пользовательского интерфейса, который не должен обновляться автоматически при изменении темы оболочки.
 
-  **Выбранная вкладка предварительного просмотра: С фокусом ввода**
+  **Выбранная вкладка предварительного просмотра с фокусом ввода**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Вкладка предварительного просмотра с фокусом ввода](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")
+  ![Вкладка предварительного просмотра с фокусом ввода](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 — 079_PreviewTabFocused")
 
-  **Вкладка предварительного просмотра фокусом ввода**
+  **Вкладка предварительного просмотра с фокусом ввода**
 
   Фон
 
@@ -1579,7 +1579,7 @@ ms.locfileid: "68154596"
 
   `Environment.FileTabProvisionalSelectedActiveForeground`
 
-  Border
+  Рамка
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
@@ -1589,15 +1589,15 @@ ms.locfileid: "68154596"
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
-  **Выбранная вкладка предварительного просмотра: Без фокуса ввода**
+  **Выбранная вкладка предварительного просмотра без фокуса ввода**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Вкладка предварительного просмотра без фокуса ввода](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")
+  ![Вкладка предварительного просмотра без фокуса ввода](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 — 080_PreviewTabUnfocused")
 
   **Вкладка предварительного просмотра без фокуса ввода**
 
@@ -1609,7 +1609,7 @@ ms.locfileid: "68154596"
 
   `Environment.FileTabProvisionalSelectedInactiveForeground`
 
-  Border
+  Рамка
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
@@ -1617,15 +1617,15 @@ ms.locfileid: "68154596"
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
-  **Фоновая вкладка предварительного просмотра: По умолчанию**
+  **Фоновая вкладка предварительного просмотра: по умолчанию**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Вкладка фона предварительного просмотра](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")
+  ![Вкладка фона предварительного просмотра](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 — 081_PreviewBackgroundTab")
 
   **Фоновая вкладка предварительного просмотра**
 
@@ -1637,23 +1637,23 @@ ms.locfileid: "68154596"
 
   `Environment.FileTabProvisionalInactiveForeground`
 
-  Border
+  Рамка
 
   `Environment.FileTabProvisionalInactiveBorder`
 
   Цвет совпадает с цветом фона.
 
-  **Фоновая вкладка предварительного просмотра: При наведении курсора мыши**
+  **Фоновая вкладка предварительного просмотра: при наведении указателя**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Вкладка фона предварительного просмотра при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")
+  ![Вкладка фона предварительного просмотра при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 — 082_PreviewBackgroundTabHover")
 
-  **Фоновая вкладка предварительного просмотра при наведении курсора мыши**
+  **Фоновая вкладка предварительного просмотра при наведении указателя**
 
   Фон
 
@@ -1663,7 +1663,7 @@ ms.locfileid: "68154596"
 
   `Environment.FileTabProvisionalHoverForeground`
 
-  Border
+  Рамка
 
   `Environment.FileTabProvisionalHoverBorder`
 
@@ -1673,7 +1673,7 @@ ms.locfileid: "68154596"
 
 Кнопка переполнения документа присутствует, если открыт один или несколько документов, вне зависимости от того, имеется ли в текущей конфигурации пространство по вертикали для размещения всех вкладок документов. В раскрывающемся меню переполнения документа, к которому применяются цвета **CommandBarMenu** (см. раздел [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), приводится список всех открытых документов, как видимых, так и скрытых. Глиф переполнения меняется в зависимости от того, отображаются ли все открытые документы в канале вкладок.
 
-![Красная линия переполнения](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+![Красная линия переполнения](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 — 083_OverflowRedline")
 
 Используйте:
 при создании пользовательской кнопки переполнения документа.
@@ -1689,9 +1689,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")
+  ![Переполнение](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 — 084_Overflow")
 
   **Кнопка переполнения документа**
 
@@ -1703,21 +1703,21 @@ ms.locfileid: "68154596"
 
   `Environment.DocWellOverflowButtonGlyph`
 
-  Border
+  Рамка
 
   Н/Д
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Переполнение при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")
+  ![Переполнение при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 — 085_OverflowHover")
 
-  **Кнопка переполнения документа при наведении курсора мыши**
+  **Кнопка переполнения документа при наведении указателя**
 
   Фон
 
@@ -1727,19 +1727,19 @@ ms.locfileid: "68154596"
 
   `Environment.DocWellOverflowButtonMouseOverGlyph`
 
-  Border
+  Рамка
 
   `Environment.DocWellOverflowButtonMouseOverBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Переполнение при нажатии](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")
+  ![Активное переполнение](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 — 086_OverflowPressed")
 
   **Активная кнопка переполнения документа**
 
@@ -1751,14 +1751,14 @@ ms.locfileid: "68154596"
 
   `Environment.DocWellOverflowButtonMouseDownGlyph`
 
-  Border
+  Рамка
 
   `Environment.DocWellOverflowButtonMouseDownBorder`
 
 ## <a name="tool-windows"></a>Окна инструментов
  Воссоздавать окна инструментов не нужно, так как они предоставляются средой Visual Studio. Однако может потребоваться использовать цвета, применяемые в окнах инструментов, чтобы ваш пользовательский интерфейс был согласован с этой частью среды Visual Studio.
 
- ![Красная линия окна инструментов](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303 087_ToolWindowRedline")
+ ![Красная линия окна инструментов](../../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303 — 087_ToolWindowRedline")
 
  Используйте:
 при создании пользовательского интерфейса, соответствующего окнам инструментов.
@@ -1769,7 +1769,7 @@ ms.locfileid: "68154596"
 ### <a name="tool-window-frame"></a>Рамка окна инструментов
  Окна инструментов в Visual Studio используются для множества различных задач и могут иметь одно из нескольких состояний. Если окно инструментов открыто, оно может быть назначено одной из четырех сторон области документа. Окна инструментов также могут перемещаться за пределы интегрированной среды документов, что позволяет размещать их в любом месте экрана. Перемещаемые окна всегда находятся поверх интегрированной среды разработки. Наконец, окна инструментов могут закрепляться как окна документов и отображаться в виде вкладок в контейнере документа. К окнам инструментов, закрепленным как окна документов, частично применяются имена токенов окна документа.
 
- ![Красная линия фрейм окна инструментов](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303 088_ToolWindowFrameRedline")
+ ![Красная линия кадра окна инструментов](../../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303 — 088_ToolWindowFrameRedline")
 
  Используйте:
 при создании пользовательского интерфейса, соответствующего окнам инструментов.
@@ -1777,64 +1777,64 @@ ms.locfileid: "68154596"
  Не используйте:
 для пользовательского интерфейса, который не должен обновляться автоматически при изменении темы оболочки.
 
- **Закреплено**
+ **Закрепить**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Окно инструментов закреплено](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")
+ ![Закрепленное окно инструментов](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 — 089_ToolWindowDocked")
 
  Фон
 
  `Environment.ToolWindowBackground`
 
- Border
+ Рамка
 
  `Environment.ToolWindowBorder`
 
- **С плавающей запятой: с фокусом ввода**
+ **Перемещаемое: с фокусом ввода**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Окно инструментов в фокусе](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")
+ ![Окно инструментов в фокусе](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 — 090_ToolWindowFocused")
 
  Фон
 
  `Environment.ToolWindowBackground`
 
- Border
+ Рамка
 
  `Environment.MainWindowActiveDefaultBorder`
 
- **С плавающей запятой: без фокуса ввода**
+ **Перемещаемое: без фокуса ввода**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Окно инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")
+ ![Окно инструментов не в фокусе](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 — 091_ToolWindowUnfocused")
 
  Фон
 
  `Environment.ToolWindowBackground`
 
- Border
+ Рамка
 
  `Environment.MainWindowInactiveBorder`
 
 ### <a name="tool-window-title-bar"></a>Заголовок окна инструментов
  Граница заголовка окна является, по сути, не границей, а толстой линией по верхнему краю заголовка. Она не имеет имени токена для состояния без фокуса ввода.
 
- ![Красная линия заголовок окна инструментов](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303 092_ToolWindowTitleBarRedline")
+ ![Красная линия панели заголовка окна инструментов](../../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303 — 092_ToolWindowTitleBarRedline")
 
  Используйте:
 при создании пользовательского интерфейса, соответствующего окнам инструментов.
@@ -1842,17 +1842,17 @@ ms.locfileid: "68154596"
  Не используйте:
 для пользовательского интерфейса, который не должен обновляться автоматически при изменении темы оболочки.
 
- **С фокусом ввода**
+ **Focused**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Строки заголовка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")
+ ![Панель заголовка в фокусе](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 — 093_TitleBarFocused")
 
- **Строки заголовка с фокусом ввода**
+ **Заголовок окна с фокусом ввода**
 
  Фон
 
@@ -1864,7 +1864,7 @@ ms.locfileid: "68154596"
 
  `Environment.TitleBarActiveText`
 
- Border
+ Рамка
 
  `Environment.TitleBarActiveBorder`
 
@@ -1880,11 +1880,11 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Строки заголовка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")
+ ![Панель заголовка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 — 094_TitleBarUnfocused")
 
- **Строки заголовка без фокуса ввода**
+ **Заголовок окна без фокуса ввода**
 
  Фон
 
@@ -1896,7 +1896,7 @@ ms.locfileid: "68154596"
 
  `Environment.TitleBarInactiveText`
 
- Border
+ Рамка
 
  Н/Д
 
@@ -1906,7 +1906,7 @@ ms.locfileid: "68154596"
 
 #### <a name="title-bar-buttons"></a>Кнопки в заголовке окна
 
-![Кнопка панели заголовка красная линия](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+![Красная линия кнопки панели заголовка](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 — 095_TitleBarButtonRedline")
 
 Используйте:
 для кнопок в пользовательском интерфейсе, для которых используются токены цветов, связанные с заголовками окон инструментов.
@@ -1922,11 +1922,11 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Строка кнопка с фокусом ввода заголовка](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")
+  ![Кнопка панели заголовка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 — 096_TitleBarButtonFocused")
 
-  **С фокусом ввода**
+  **Focused**
 
   Фон
 
@@ -1936,11 +1936,11 @@ ms.locfileid: "68154596"
 
   `Environment.ToolWindowButtonActiveGlyph`
 
-  Border
+  Рамка
 
   Н/Д
 
-  ![Строка не в фокусе кнопки заголовка](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")
+  ![Кнопка панели заголовка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 — 097_TitleBarButtonUnfocused")
 
   **Без фокуса ввода**
 
@@ -1952,21 +1952,21 @@ ms.locfileid: "68154596"
 
   `Environment.ToolWindowButtonInactiveGlyph`
 
-  Border
+  Рамка
 
   Н/Д
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Кнопка панели заголовка с фокусом ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")
+  ![Кнопка панели заголовка с фокусом ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 — 098_TitleBarButtonFocusedHover")
 
-  **С фокусом ввода**
+  **Focused**
 
   Фон
 
@@ -1976,11 +1976,11 @@ ms.locfileid: "68154596"
 
   `Environment.ToolWindowButtonHoverActiveGlyph`
 
-  Border
+  Рамка
 
   `Environment.ToolWindowButtonHoverActiveBorder`
 
-  ![Строка без фокуса ввода при наведении курсора на кнопку заголовка](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")
+  ![Кнопка панели заголовка без фокуса ввода при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 — 099_TitleBarButtonUnfocusedHover")
 
   **Без фокуса ввода**
 
@@ -1992,21 +1992,21 @@ ms.locfileid: "68154596"
 
   `Environment.ToolWindowButtonHoverInactiveGlyph`
 
-  Border
+  Рамка
 
   `Environment.ToolWindowButtonHoverInactiveBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Заголовок панели кнопка с фокусом ввода и нажата](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")
+  ![Активная кнопка панели заголовка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 — 100_TitleBarButtonFocusedPressed")
 
-  **С фокусом ввода**
+  **Focused**
 
   Фон
 
@@ -2016,11 +2016,11 @@ ms.locfileid: "68154596"
 
   `Environment.ToolWindowButtonDownActiveGlyph`
 
-  Border
+  Рамка
 
   `Environment.ToolWindowButtonDownBorder`
 
-  ![Кнопка панели заголовка без фокуса ввода и нажат](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")
+  ![Активная кнопка панели заголовка без фокуса ввода](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 — 101_TitleBarButtonUnfocusedPressed")
 
   **Без фокуса ввода**
 
@@ -2032,12 +2032,12 @@ ms.locfileid: "68154596"
 
   `Environment.ToolWindowButtonDownInactiveGlyph`
 
-  Border
+  Рамка
 
   `Environment.ToolWindowButtonDownBorder`
 
 ### <a name="tool-window-tabs"></a>Вкладки окна инструментов
- ![Красная линия вкладки окна инструментов](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 102_ToolWindowTabRedline")
+ ![Красная линия вкладки окна инструментов](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 — 102_ToolWindowTabRedline")
 
  Используйте:
 при создании пользовательского интерфейса, соответствующего окнам инструментов.
@@ -2051,11 +2051,11 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Вкладка окна инструментов с фокусом ввода](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")
+ ![Вкладка окна инструментов с фокусом ввода](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 — 103_ToolWindowTabFocused")
 
- **Вкладка окна выбранных инструментов с фокусом ввода**
+ **Выбранная вкладка окна инструментов с фокусом ввода**
 
  Фон
 
@@ -2065,7 +2065,7 @@ ms.locfileid: "68154596"
 
  `Environment.ToolWindowTabSelectedActiveText`
 
- Border
+ Рамка
 
  `Environment.ToolWindowTabSelectedBorder`
 
@@ -2075,11 +2075,11 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Вкладка окна инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")
+ ![Вкладка окна инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 — 104_ToolWindowTabUnfocused")
 
- **Вкладка окна выбранных инструментов без фокуса ввода**
+ **Выбранная вкладка окна инструментов без фокуса ввода**
 
  Фон
 
@@ -2089,7 +2089,7 @@ ms.locfileid: "68154596"
 
  `Environment.ToolWindowTabSelectedText`
 
- Border
+ Рамка
 
  `Environment.ToolWindowTabSelectedBorder`
 
@@ -2101,9 +2101,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Вкладка фона окна инструментов](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")
+ ![Вкладка фона окна инструментов](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 — 105_ToolWindowBackgroundTab")
 
  **Фоновая вкладка окна инструментов**
 
@@ -2121,7 +2121,7 @@ ms.locfileid: "68154596"
 
  `Environment.ToolWindowTabText`
 
- Border
+ Рамка
 
  `Environment.ToolWindowTabBorder`
 
@@ -2129,11 +2129,11 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Вкладка фона окна инструментов при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")
+ ![Вкладка фона окна инструментов при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 — 106_ToolWindowBackgroundTabHover")
 
- **Фоновая вкладка окна инструментов при наведении курсора мыши**
+ **Фоновая вкладка окна инструментов при наведении указателя**
 
  Фон
 
@@ -2149,14 +2149,14 @@ ms.locfileid: "68154596"
 
  `Environment.ToolWindowTabMouseOverText`
 
- Border
+ Рамка
 
  `Environment.ToolWindowTabMouseOverBorder`
 
  Цвет совпадает с цветом фона.
 
 ### <a name="auto-hide-tabs"></a>Автоматически скрываемые вкладки
- ![Автоматическое&#45;красная линия скрыть](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303 107_AutoHideRedline")
+ ![Автоматически&#45;скрыть красная линия](../../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303 — 107_AutoHideRedline")
 
  Используйте:
 при создании пользовательского интерфейса, соответствующего автоматически скрываемым вкладкам окна инструментов.
@@ -2170,9 +2170,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Автоматическое&#45;скрыть вкладку](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")
+ ![Автоматически&#45;вкладка "скрыть"](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 — 108_AutoHideTab")
 
  **Автоматически скрываемая вкладка по умолчанию**
 
@@ -2186,19 +2186,19 @@ ms.locfileid: "68154596"
 
  `Environment.AutoHideTabText`
 
- Border
+ Рамка
 
  `Environment.AutoHideTabBorder`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Автоматическое&#45;скрыть вкладку при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")
+ ![Автоматически&#45;скрывать табуляцию при наведении указателя](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 — 109_AutoHideTabHover")
 
  **Вкладка автоматического скрытия при наведении курсора мыши**
 
@@ -2212,7 +2212,7 @@ ms.locfileid: "68154596"
 
  `Environment.AutoHideTabMouseOverText`
 
- Border
+ Рамка
 
  `Environment.AutoHideTabMouseOverBorder`
 
@@ -2232,7 +2232,7 @@ ms.locfileid: "68154596"
 
 - "Отключено" означает, что функция поиска в текущем контексте отключена.
 
-  ![Красная линия окна поиска](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")
+  ![Красная линия окна поиска](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 — 110_SearchBoxRedline")
 
   Используйте:
   при разработке пользовательского поля поиска.
@@ -2242,15 +2242,15 @@ ms.locfileid: "68154596"
 
 - для любого элемента, который не должен всегда соответствовать пользовательскому интерфейсу поля поиска.
 
-  **С фокусом ввода**
+  **Focused**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Поле ввода окна поиска с фокусом ввода](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")
+  ![Поле ввода окна поиска с фокусом ввода](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 — 111_SearchInputFieldFocused")
 
   **Поле ввода**
 
@@ -2262,7 +2262,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.FocusedBackground`
 
-  Border
+  Рамка
 
   `SearchControl.FocusedBorder`
 
@@ -2270,9 +2270,9 @@ ms.locfileid: "68154596"
 
   `SearchControl.FocusedDropDownSeparator`
 
-  ![Кнопка поиска с фокусом ввода](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")
+  ![Кнопка поиска с фокусом ввода](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")
 
-  **Управляющая кнопка**
+  **Кнопка действия**
 
   Фон
 
@@ -2290,11 +2290,11 @@ ms.locfileid: "68154596"
 
   `SearchControl.ClearGlyph`
 
-  Border
+  Рамка
 
   Н/Д
 
-  ![Search drop&#45;кнопка с фокусом ввода вниз](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")
+  ![Кнопка "&#45;", направленная вниз](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 — 113_SearchDropdownButtonFocused")
 
   **Кнопка раскрывающегося списка**
 
@@ -2306,7 +2306,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.FocusedDropDownButtonGlyph`
 
-  Border
+  Рамка
 
   `SearchControl.FocusedDropDownButtonBorder`
 
@@ -2316,9 +2316,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Поле ввода окна поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")
+  ![Поле ввода окна поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 — 114_SearchInputFieldUnfocused")
 
   **Активное поле ввода**
 
@@ -2330,7 +2330,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.SearchActiveBackground`
 
-  Border
+  Рамка
 
   `SearchControl.UnfocusedBorder`
 
@@ -2338,7 +2338,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.DropDownSeparator`
 
-  ![Поле ввода окна поиска без фокуса ввода и неактивные](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")
+  ![Неактивное поле ввода окна поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")
 
   **Неактивное поле ввода**
 
@@ -2350,7 +2350,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.Unfocused`
 
-  Border
+  Рамка
 
   `SearchControl.UnfocusedBorder`
 
@@ -2358,9 +2358,9 @@ ms.locfileid: "68154596"
 
   `SearchControl.DropDownSeparator`
 
-  ![Кнопка поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")
+  ![Кнопка поиска без фокуса ввода](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")
 
-  **Управляющая кнопка**
+  **Кнопка действия**
 
   Фон
 
@@ -2378,11 +2378,11 @@ ms.locfileid: "68154596"
 
   `SearchControl.ClearGlyph`
 
-  Border
+  Рамка
 
   Н/Д
 
-  ![Search drop&#45;нажатой кнопку без фокуса ввода](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")
+  ![Кнопка "Удалить"&#45;"вниз" нефокусна](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 — 116_SearchDropdownButtonUnfocused")
 
   **Кнопка раскрывающегося списка**
 
@@ -2394,21 +2394,21 @@ ms.locfileid: "68154596"
 
   `SearchControl.UnfocusedDropDownButtonGlyph`
 
-  Border
+  Рамка
 
   `SearchControl.UnfocusedDropDownButtonBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Нажата кнопка поиска](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
+  ![Активная кнопка поиска](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
 
-  **Управляющая кнопка**
+  **Кнопка действия**
 
   Фон
 
@@ -2418,11 +2418,11 @@ ms.locfileid: "68154596"
 
   `SearchControl.ActionButtonMouseDownGlyph`
 
-  Border
+  Рамка
 
   `SearchControl.ActionButtonMouseDownBorder`
 
-  ![Search drop&#45;вниз была нажата кнопка](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
+  ![Кнопка "Удалить"&#45;нажатии кнопки вниз](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")
 
   **Кнопка раскрывающегося списка**
 
@@ -2434,7 +2434,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.MouseDownDropDownButtonGlyph`
 
-  Border
+  Рамка
 
   `SearchControl.MouseDownDropDownButtonBorder`
 
@@ -2444,9 +2444,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Выделение поля ввода окна поиска](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")
+  ![Выделение поля ввода окна поиска](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 — 120_SearchInputFieldHighlight")
 
   **Поле ввода с выделенным текстом**
 
@@ -2458,7 +2458,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.FocusedBackground`
 
-  Border
+  Рамка
 
   None
 
@@ -2466,15 +2466,15 @@ ms.locfileid: "68154596"
 
   `SearchControl.FocusedDropDownSeparator`
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Поле ввода окна поиска отключена](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")
+  ![Неактивное поле ввода окна поиска](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 — 121_SearchInputFieldDisabled")
 
   **Поле ввода**
 
@@ -2486,7 +2486,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.Disabled`
 
-  Border
+  Рамка
 
   `SearchControl.DisabledBorder`
 
@@ -2494,9 +2494,9 @@ ms.locfileid: "68154596"
 
   `SearchControl.DropDownSeparator`
 
-  ![Неактивная кнопка поиска](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")
+  ![Неактивная кнопка поиска](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 — 122_SearchActionButtonDisabled")
 
-  **Управляющая кнопка**
+  **Кнопка действия**
 
   Фон
 
@@ -2506,11 +2506,11 @@ ms.locfileid: "68154596"
 
   `SearchControl.ActionButtonDisabledGlyph`
 
-  Border
+  Рамка
 
   None
 
-  ![Search drop&#45;вниз неактивная кнопка](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")
+  ![Кнопка "Удалить"&#45;"вниз" отключена](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 — 123_SearchDropdownButtonDisabled")
 
   **Кнопка раскрывающегося списка**
 
@@ -2522,7 +2522,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.DisabledDownButtonGlyph`
 
-  Border
+  Рамка
 
   None
 
@@ -2530,7 +2530,7 @@ ms.locfileid: "68154596"
 
 Раскрывающиеся меню в поле поиска могут быть немного более сложными, чем другие раскрывающиеся меню в Visual Studio. Разделы "предлагаемые запросы поиска" и "параметры поиска" могут присутствовать в меню вместе или по отдельности. Каждый из них имеет особые цвета. Если имеются оба этих раздела, они разделяются линией, а все раскрывающееся меню окружено границей.
 
-![Search drop&#45;вниз красная линия](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+![Поиск&#45;вниз красная линия](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 — 124_SearchDropdownRedline")
 
 Используйте:
 - при создании пользовательского раскрывающегося списка поиска;
@@ -2546,9 +2546,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  Border
+  Рамка
 
   `SearchControl.PopupBorder`
 
@@ -2556,7 +2556,7 @@ ms.locfileid: "68154596"
 
   `SearchControl.PopupSectionHeaderSeparator`
 
-  Тень
+  Shadow
 
   `Environment.DropShadowBackground`
 
@@ -2566,9 +2566,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Предлагаемый поиск](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")
+  ![Предлагаемый поиск](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 — 125_SearchSuggested")
 
   **Предлагаемые запросы поиска**
 
@@ -2582,11 +2582,11 @@ ms.locfileid: "68154596"
 
   `SearchControl.PopupItemText`
 
-  ![Флажок поиска](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")
+  ![Флажок поиска](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 — 126_SearchCheckbox")
 
   **Параметры поиска (флажок)**
 
-  ![Параметры поиска](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")
+  ![Параметры поиска](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 — 127_SearchOptions")
 
   **Параметры поиска (ссылка)**
 
@@ -2614,15 +2614,15 @@ ms.locfileid: "68154596"
 
   `SearchControl.PopupSectionHeaderText`
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Предлагаемый при наведении курсора мыши поиск](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")
+  ![Предлагаемый поиск при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 — 128_SearchSuggestedHover")
 
   **Предлагаемые запросы поиска**
 
@@ -2636,15 +2636,15 @@ ms.locfileid: "68154596"
 
   `SearchControl.PopupMouseOverItemText`
 
-  Border
+  Рамка
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  ![Флажок поиска при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")
+  ![Флажок поиска при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 — 129_SearchCheckboxHover")
 
   **Предлагаемые запросы поиска (флажок)**
 
-  ![Параметры при наведении курсора мыши поиска](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")
+  ![Параметры поиска при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 — 130_SearchOptionsHover")
 
   **Параметры поиска**
 
@@ -2662,23 +2662,23 @@ ms.locfileid: "68154596"
 
   `SearchControl.PopupButtonMouseDownText`
 
-  Border
+  Рамка
 
   `SearchControl.PopupControlMouseOverBorder`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Активный предлагаемый поиск](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")
+  ![Активный предлагаемый поиск](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 — 131_SearchSuggestedPressed")
 
   **Предлагаемые запросы поиска (флажок)**
 
-  ![Активные параметры поиска](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")
+  ![Активные параметры поиска](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 — 132_SearchOptionsPressed")
 
   **Параметры поиска**
 
@@ -2706,10 +2706,10 @@ ms.locfileid: "68154596"
 
   `SearchControl.PopupButtonMouseDownText`
 
-### <a name="hyperlink"></a>Hyperlink
+### <a name="hyperlink"></a>Гиперссылка
  Гиперссылка — это один из элементов управления, для которого нет пары цветов переднего плана и фона. Во всех случаях используйте основной цвет гиперссылки, который будет правильно отображаться на темном, сером и белом фоне. Если вы не используете токен цвета для элемента управления "гиперссылка", то будет применяться системный цвет по умолчанию для состояния "активно", то есть гиперссылка будет мигать красным. Это означает, что для элемента управления используется неправильный токен цвета среды.
 
- ![Красная линия гиперссылки](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303 133_HyperlinkRedline")
+ ![Красная линия гиперссылки](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303 — 133_HyperlinkRedline")
 
  Используйте:
 если нужно создать пользовательскую гиперссылку.
@@ -2723,51 +2723,51 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Гиперссылка по умолчанию](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")
+ ![Гиперссылка по умолчанию](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 — 134_Hyperlink")
 
  Передний план (текст)
 
  `Environment.PanelHyperlink`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Гиперссылка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")
+ ![Гиперссылка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 — 135_HyperlinkHover")
 
  Передний план (текст)
 
  `Environment.PanelHyperlinkHover`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Активная гиперссылка](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")
+ ![Активная гиперссылка](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 — 136_HyperlinkPressed")
 
  Передний план (текст)
 
  `Environment.PanelHyperlinkPressed`
 
- **Отключено**
+ **Отключен**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Неактивная гиперссылка](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")
+ ![Неактивная гиперссылка](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 — 137_HyperlinkDisabled")
 
  Передний план (текст)
 
@@ -2776,7 +2776,7 @@ ms.locfileid: "68154596"
 ### <a name="infobar"></a>Информационная панель
  Информационные панели служат для предоставления дополнительной информации о данном контексте и всегда отображаются в верхней части окна документа или окна инструментов.
 
- ![Красная линия информационной панели](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303 138_InfobarRedline")
+ ![Красная линия информационной панели](../../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303 — 138_InfobarRedline")
 
  Используйте:
 при создании пользовательских информационных панелей.
@@ -2788,9 +2788,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Информационная панель](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")
+ ![Информационная панель](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 — 139_Infobar")
 
  **Информационная панель**
 
@@ -2802,19 +2802,19 @@ ms.locfileid: "68154596"
 
  `Environment.InfoText`
 
- Border
+ Рамка
 
  `Environment.ToolWindowBorder`
 
-### <a name="scroll-bar"></a>Полоса прокрутки
- Полосы прокрутки оформляются средой Visual Studio, и применять к ним темы не нужно. Тем не менее вы решите, что вы хотите использовать цвета, применяемые в полосах прокрутки, чтобы пользовательский Интерфейс был согласован с этой частью среды Visual Studio.
+### <a name="scroll-bar"></a>полоса прокрутки;
+ Полосы прокрутки оформляются средой Visual Studio, и применять к ним темы не нужно. Однако вы можете решить, что вы хотите использовать цвета, используемые в полосах прокрутки, чтобы пользовательский интерфейс всегда соответствовал этой части среды Visual Studio.
 
- ![Красная линия полосы прокрутки](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")
+ ![Красная линия полосы прокрутки](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 — 140_ScrollbarRedline")
 
  Используйте:
 при создании пользовательского интерфейса, который должен соответствовать полосам прокрутки Visual Studio.
 
- Не используйте: сведения обо всех проблемах не должны всегда соответствовать пользовательскому Интерфейсу полос прокрутки.
+ Не используйте... для чего вы не хотите всегда сопоставлять пользовательский интерфейс ScrollBar.
 
  **Default**
 
@@ -2822,11 +2822,11 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Полоса прокрутки](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")
+ ![полоса прокрутки;](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 — 141_Scrollbar")
 
- **Полосы прокрутки**
+ **Элемента**
 
  Полоса прокрутки
 
@@ -2836,7 +2836,7 @@ ms.locfileid: "68154596"
 
  `Environment.ScrollBarThumbBackground`
 
- ![Полоса стрелку прокрутки](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 142_ScrollbarArrow")
+ ![Стрелки полосы прокрутки](../../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 — 142_ScrollbarArrow")
 
  **Стрелка прокрутки**
 
@@ -2850,17 +2850,17 @@ ms.locfileid: "68154596"
 
  `Environment.ScrollBarArrowGlyph`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Полосы прокрутки при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")
+ ![Полоса прокрутки при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 — 143_ScrollbarHover")
 
- **Полосы прокрутки**
+ **Элемента**
 
  Полоса прокрутки
 
@@ -2870,7 +2870,7 @@ ms.locfileid: "68154596"
 
  `Environment.ScrollBarThumbMouseOverBackground`
 
- ![Прокрутите панель со стрелками при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303 144_ScrollbarArrowHover")
+ ![Стрелки полосы прокрутки при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303 — 144_ScrollbarArrowHover")
 
  **Стрелка прокрутки**
 
@@ -2884,17 +2884,17 @@ ms.locfileid: "68154596"
 
  `Environment.ScrollBarArrowGlyphMouseOver`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Полоса прокрутки нажата](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")
+ ![Активная полоса прокрутки](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 — 145_ScrollbarPressed")
 
- **Полосы прокрутки**
+ **Элемента**
 
  Полоса прокрутки
 
@@ -2904,7 +2904,7 @@ ms.locfileid: "68154596"
 
  `Environment.ScrollBarThumbPressedBackground`
 
- ![Полоса нажатой стрелки прокрутки](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")
+ ![Активные стрелки полосы прокрутки](../../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 — 146_ScrollbarArrowPressed")
 
  **Стрелка прокрутки**
 
@@ -2918,11 +2918,11 @@ ms.locfileid: "68154596"
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-### <a name="BKMK_TreeView"></a> Представление в виде дерева
+### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Представление в виде дерева
 
 В некоторых окнах инструментов, включая обозреватель решений, обозреватель сервера и представление классов, реализована иерархическая организационная схема, цвета которой определяются названиями цветов в категории TreeView. Все элементы в иерархическом представлении имеют цвета фона и текста. Элементы с вложенными дочерними элементами также имеют глифы, которые указывают на то, является ли элемент свернутым или развернутым.
 
-![Красная линия дерева](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+![Красная линия представления в виде дерева](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 — 147_TreeViewRedline")
 
 Используйте:
 если необходимо реализовать иерархическое представление.
@@ -2938,9 +2938,9 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Представление в виде дерева](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")
+  ![Представление в виде дерева](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 — 148_TreeView")
 
   Фон
 
@@ -2954,19 +2954,19 @@ ms.locfileid: "68154596"
 
   `TreeView.Glyph`
 
-  Border
+  Рамка
 
   None
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Представление при наведении курсора мыши в виде дерева](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")
+  ![Представление в виде дерева при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 — 149_TreeViewHover")
 
   Фон
 
@@ -2980,19 +2980,19 @@ ms.locfileid: "68154596"
 
   `TreeView.GlyphMouseOver`
 
-  Border
+  Рамка
 
   None
 
-  **Перетащите**
+  **Перетаскивание**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Перетаскивание представления в виде дерева](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")
+  ![Перетаскивание иерархического представления](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 — 150_TreeViewDragOver")
 
   Фон
 
@@ -3006,21 +3006,21 @@ ms.locfileid: "68154596"
 
   `TreeView.DragOverItemGlyph`
 
-  Border
+  Рамка
 
   None
 
-  **Выбранные**
+  **Selected**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Представление с фокусом ввода в виде дерева](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")
+  ![Иерархическое представление в фокусе](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 — 151_TreeViewFocused")
 
-  **С фокусом ввода**
+  **Focused**
 
   Фон
 
@@ -3034,11 +3034,11 @@ ms.locfileid: "68154596"
 
   `TreeView.SelectedItemActiveGlyph`
 
-  Border
+  Рамка
 
   `TreeView.FocusVisualBorder`
 
-  ![Представление без фокуса ввода в виде дерева](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")
+  ![Представление в виде дерева в фокусе](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 — 152_TreeViewUnfocused")
 
   **Без фокуса ввода**
 
@@ -3054,21 +3054,21 @@ ms.locfileid: "68154596"
 
   `TreeView.SelectedItemInactiveGlyph`
 
-  Border
+  Рамка
 
   None
 
-  **Наведите указатель мыши выбранные**
+  **Наведение указателя на выделенный элемент**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![Представление, с фокусом ввода при наведении курсора мыши в виде дерева](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")
+  ![Представление в виде дерева в фокусе при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 — 153_TreeViewFocusedHover")
 
-  **С фокусом ввода**
+  **Focused**
 
   Фон
 
@@ -3082,11 +3082,11 @@ ms.locfileid: "68154596"
 
   `TreeView.SelectedItemActiveGlyphMouseOver`
 
-  Border
+  Рамка
 
   Нет`TreeView.FocusVisualBorder`
 
-  ![Представление без фокуса ввода при наведении курсора мыши в виде дерева](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")
+  ![Иерархическое представление не в фокусе при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 — 154_TreeViewUnfocusedHover")
 
   **Без фокуса ввода**
 
@@ -3102,12 +3102,12 @@ ms.locfileid: "68154596"
 
   `TreeView.SelectedItemActiveGlyphMouseOver`
 
-  Border
+  Рамка
 
   None
 
 ### <a name="button-controls"></a>Элементы управления "Кнопка"
- ![Красная линия управления "Кнопка"](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")
+ ![Красная линия элемента управления "Кнопка"](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 — 155_ButtonControlRedline")
 
  Используйте:
 для кнопок в контейнере документа, которые должны интегрироваться с темами Visual Studio (светлая, темная, синяя или системная высококонтрастная тема).
@@ -3121,9 +3121,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Кнопка](../../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")
+ ![Кнопка](../../extensibility/ux-guidelines/media/0303-156-button.png "0303 — 156_Button")
 
  Кнопка
 
@@ -3133,15 +3133,15 @@ ms.locfileid: "68154596"
 
  `CommonControls.ButtonBorder`
 
- **Отключено**
+ **Отключен**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Кнопка отключена](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")
+ ![Неактивна кнопка](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 — 157_ButtonDisabled")
 
  Кнопка
 
@@ -3151,15 +3151,15 @@ ms.locfileid: "68154596"
 
  `CommonControls.ButtonBorderDisabled`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")
+ ![Кнопка при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 — 158_ButtonHover")
 
  Кнопка
 
@@ -3169,15 +3169,15 @@ ms.locfileid: "68154596"
 
  `CommonControls.ButtonBorderHover`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Была нажата кнопка](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")
+ ![Активная кнопка](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 — 159_ButtonPressed")
 
  Кнопка
 
@@ -3187,15 +3187,15 @@ ms.locfileid: "68154596"
 
  `CommonControls.ButtonBorderPressed`
 
- **С фокусом ввода**
+ **Focused**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Кнопка с фокусом ввода](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")
+ ![Кнопка в фокусе](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 — 160_ButtonFocused")
 
  Кнопка
 
@@ -3206,7 +3206,7 @@ ms.locfileid: "68154596"
  `CommonControls.ButtonBorderFocused`
 
 ### <a name="check-box-controls"></a>Элементы управления "Флажок"
- ![Красная линия флажка](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303 161_CheckboxRedline")
+ ![Красная линия флажка](../../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303 — 161_CheckboxRedline")
 
  Используйте:
 для элементов управления типа "Флажок", содержащихся в контейнере документа.
@@ -3220,15 +3220,15 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Флажок](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")
+ ![Флажок](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")
 
  Фон
 
  `CommonControls.CheckBoxBackground`
 
- Border
+ Рамка
 
  `CommonControls.CheckBoxBorder`
 
@@ -3240,21 +3240,21 @@ ms.locfileid: "68154596"
 
  `CommonControls.CheckBoxGlyph`
 
- **Отключено**
+ **Отключен**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Неактивный флажок](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")
+ ![Неактивный флажок](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")
 
  Фон
 
  `CommonControls.CheckBoxBackgroundDisabled`
 
- Border
+ Рамка
 
  `CommonControls.CheckBoxBorderDisabled`
 
@@ -3266,21 +3266,21 @@ ms.locfileid: "68154596"
 
  `CommonControls.CheckBoxGlyphDisabled`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Флажок при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")
+ ![Флажок при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")
 
  Фон
 
  `CommonControls.CheckBoxBackgroundHover`
 
- Border
+ Рамка
 
  `CommonControls.CheckBoxBorderHover`
 
@@ -3292,21 +3292,21 @@ ms.locfileid: "68154596"
 
  `CommonControls.CheckBoxGlyphHover`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Активный флажок](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")
+ ![Активный флажок](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")
 
  Фон
 
  `CommonControls.CheckBoxBackgroundPressed`
 
- Border
+ Рамка
 
  `CommonControls.CheckBoxBorderPressed`
 
@@ -3318,21 +3318,21 @@ ms.locfileid: "68154596"
 
  `CommonControls.CheckBoxGlyphPressed`
 
- **С фокусом ввода**
+ **Focused**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Флажок с фокусом ввода](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")
+ ![Флажок с фокусом ввода](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")
 
  Фон
 
  `CommonControls.CheckBoxBackgroundFocused`
 
- Border
+ Рамка
 
  `CommonControls.CheckBoxBorderFocused`
 
@@ -3346,7 +3346,7 @@ ms.locfileid: "68154596"
 
 ### <a name="drop-boxcombo-box-controls"></a>Элементы управления "Раскрывающийся список" и "Поле со списком"
 
-![DROP&#45;вниз&#47;красная линия со списком](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
+![Drop&#45;&#47;поле со списком красная линия](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 — 167_DropDownComboBoxRedline")
 
 Используйте:
 для раскрывающихся списков и полей со списком, которые являются частью контейнера документа.
@@ -3362,15 +3362,15 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз&#47;поле со списком](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")
+  ![Удалить&#45;вниз&#47;поле со списком](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")
 
   Фон
 
   `CommonControls.ComboBoxBackground`
 
-  Border
+  Рамка
 
   `CommonControls.ComboBoxBorder`
 
@@ -3390,21 +3390,21 @@ ms.locfileid: "68154596"
 
   `CommonControls.ComboBoxGlyphBackground`
 
-  **Отключено**
+  **Отключен**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз&#47;отключенного поля со списком](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")
+  ![Drop&#45;&#47;поле со списком отключено](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")
 
   Фон
 
   `CommonControls.ComboBoxBackgroundDisabled`
 
-  Border
+  Рамка
 
   `CommonControls.ComboBoxBorderDisabled`
 
@@ -3424,21 +3424,21 @@ ms.locfileid: "68154596"
 
   `CommonControls.ComboBoxGlyphBackgroundDisabled`
 
-  **При наведении курсора мыши**
+  **Наведение**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз&#47;поле со списком при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")
+  ![Drop&#45;&#47;поле со списком при наведении указателя](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")
 
   Фон
 
   `CommonControls.ComboBoxBackgroundHover`
 
-  Border
+  Рамка
 
   `CommonControls.ComboBoxBorderHover`
 
@@ -3458,21 +3458,21 @@ ms.locfileid: "68154596"
 
   `CommonControls.ComboBoxGlyphBackgroundHover`
 
-  **Нажата**
+  **Pressed**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз&#47;поле со списком при нажатии](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")
+  ![Удалить&#45;вниз&#47;нажатии поля со списком](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")
 
   Фон
 
   `CommonControls.ComboBoxBackgroundPressed`
 
-  Border
+  Рамка
 
   `CommonControls.ComboBoxBorderPressed`
 
@@ -3492,21 +3492,21 @@ ms.locfileid: "68154596"
 
   `CommonControls.ComboBoxGlyphBackgroundPressed`
 
-  **С фокусом ввода**
+  **Focused**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз&#47;поле со списком с фокусом ввода](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")
+  ![Перетащите&#45;вниз&#47;поле со списком](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")
 
   Фон
 
   `CommonControls.ComboBoxBackgroundFocused`
 
-  Border
+  Рамка
 
   `CommonControls.ComboBoxBorderFocused`
 
@@ -3526,23 +3526,23 @@ ms.locfileid: "68154596"
 
   `CommonControls.ComboBoxGlyphBackgroundFocused`
 
-  **Входной выделенного текста**
+  **Выделение текста в поле ввода**
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
-  ![DROP&#45;вниз&#47;текстового поля со списком ввода](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")
+  ![Перетащите&#45;вниз&#47;поле со списком ввод текста](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 — 173_DropDownComboBoxTextInput")
 
-  Выделение
+  Выделить
 
   `CommonControls.ComboBoxTextInputSelection`
 
   **Активный — представление элемента списка**
 
-  ![DROP&#45;вниз&#47;представление списка в поле со списком](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")
+  ![Перетащите&#45;вниз&#47;поле со списком в виде списка](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")
 
   Фон
 
@@ -3554,7 +3554,7 @@ ms.locfileid: "68154596"
 
   `CommonControls.ComboBoxListItemBackgroundFocused`
 
-  Border
+  Рамка
 
   `CommonControls.ComboBoxListBorder`
 
@@ -3581,7 +3581,7 @@ ms.locfileid: "68154596"
 ### <a name="tabular-data-grid-controls"></a>Табличные элементы управления данными (сетка)
  Табличные элементы управления данными, также называемые элементами управления "Сетка", — это стандартные элементы управления Visual Studio, которые можно использовать для представления больших объемов данных в нескольких столбцах. Стандартные табличные элементы управления данными встречаются в Visual Studio в нескольких местах: в окне инструментов "Список ошибок", в отчетах IntelliTrace, в представлении кучи памяти и т. д. Всегда используйте стандартные табличные элементы управления данными. Однако в некоторых редких случаях доступ к стандартным табличным элементам управления данными может отсутствовать. В таких ситуациях используйте указанные ниже имена токенов для обеспечения согласованности пользовательского интерфейса с другими табличными элементами управления данными в Visual Studio.
 
- ![Табличные данные &#40;сетку&#41; красная линия](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303 197_TabularDataGridControlRedline")
+ ![Табличные данные &#40;элементе управления Grid&#41; красная линия](../../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303 — 197_TabularDataGridControlRedline")
 
  Используйте:
 для табличных элементов управления или элементов управления "Сетка".
@@ -3592,13 +3592,13 @@ ms.locfileid: "68154596"
 #### <a name="column-headers"></a>Заголовки столбцов
  Заголовки столбцов состоят из фона, границы, текста заголовка и необязательного глифа, который обычно используется при сортировке сетки по данному столбцу.
 
- Регион
+ Состояние
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- Значение по умолчанию
+ По умолчанию
 
  Фон
 
@@ -3612,7 +3612,7 @@ ms.locfileid: "68154596"
 
  `Header.Glyph`
 
- Border
+ Рамка
 
  `Header.SeparatorLine`
 
@@ -3630,7 +3630,7 @@ ms.locfileid: "68154596"
 
  `Header.MouseOverGlyph`
 
- Border
+ Рамка
 
  `Header.SeparatorLine`
 
@@ -3648,20 +3648,20 @@ ms.locfileid: "68154596"
 
  `CommonControls.CheckBoxTextPressed`
 
- Border
+ Рамка
 
  `CommonControls.CheckBoxGlyphPressed`
 
 #### <a name="list-view-items"></a>Элементы представления списка
  Элементы представления списка состоят из фона и содержимого. Содержимым может быть текст, значок или и то и другое.
 
- Регион
+ Состояние
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- Значение по умолчанию
+ По умолчанию
 
  Фон
 
@@ -3671,7 +3671,7 @@ ms.locfileid: "68154596"
 
  `Environment.CommandBarTextActive`
 
- Border
+ Рамка
 
  None
 
@@ -3685,7 +3685,7 @@ ms.locfileid: "68154596"
 
  `TreeView.SelectedItemActiveText`
 
- Border
+ Рамка
 
  None
 
@@ -3699,7 +3699,7 @@ ms.locfileid: "68154596"
 
  `TreeView.SelectedItemInactiveText`
 
- Border
+ Рамка
 
  None
 
@@ -3707,7 +3707,7 @@ ms.locfileid: "68154596"
 
 Конструктор манифеста призван упростить редактирование файла манифеста в проектах Windows 8 и Windows Phone 8. Хотя общего готового шаблона нет, рекомендуется обеспечивать соответствие макету и цветам вкладок ориентации и навигации, а также общей структуре. Дополнительные сведения о макете см. в разделе [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-![Красная линия конструктора манифеста](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+![Красная линия конструктора манифеста](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 — 175_ManifestDesignerRedline")
 
 Используйте:
 - для конструкторов, которые похожи на конструктор манифеста;
@@ -3719,13 +3719,13 @@ ms.locfileid: "68154596"
 
 - для пользовательского интерфейса, который отличается структурой от конструктора манифеста.
 
-  Регион
+  Состояние
 
   Компонент
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
   По умолчанию (выбрано)
 
@@ -3735,7 +3735,7 @@ ms.locfileid: "68154596"
 
   `ManifestDesigner.TabActive`
 
-  Border
+  Рамка
 
   None
 
@@ -3776,7 +3776,7 @@ ms.locfileid: "68154596"
 ## <a name="tagging"></a>Добавление тегов
  Visual Studio поддерживает добавление тегов, что позволяет пользователю объявлять доступные для поиска ключевые слова в целях отслеживания. Например, руководители проектов и разработчики могут использовать Team Foundation Server (TFS) для добавления тегов к рабочим элементам. В приведенных ниже таблицах представлены имена цветов как для самого тега, так и для глифа (значка закрытия), который появляется при наведении указателя и в некоторых состояниях.
 
- ![Красная линия пометки тегами](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")
+ ![Красная линия пометки тегами](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 — 176_TaggingRedline")
 
  Используйте:
 для пользовательского интерфейса, который поддерживает добавление тегов.
@@ -3789,9 +3789,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Тег](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")
+ ![Тег](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303 — 177_Tag")
 
  **Default**
 
@@ -3803,9 +3803,9 @@ ms.locfileid: "68154596"
 
  `Tag.Background`
 
- ![Тег при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")
+ ![Тег при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 — 178_TagHover")
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Фон
 
@@ -3815,9 +3815,9 @@ ms.locfileid: "68154596"
 
  `Tag.HoverBackgroundText`
 
- ![Активный тег](../../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")
+ ![Активный тег](../../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 — 179_TagPressed")
 
- **Нажата**
+ **Pressed**
 
  Фон
 
@@ -3827,9 +3827,9 @@ ms.locfileid: "68154596"
 
  `Tag.PressedBackgroundText`
 
- ![Выбранный тег](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 180_TagSelected")
+ ![Выбранный тег](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 — 180_TagSelected")
 
- **Выбранные**
+ **Selected**
 
  Фон
 
@@ -3846,9 +3846,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Тег &#40;глиф&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")
+ ![&#41;&#40;тега ](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 — 181_TagGlyph")
 
  **По умолчанию (тег по умолчанию)**
 
@@ -3860,17 +3860,17 @@ ms.locfileid: "68154596"
 
  `Tag.TagHoverGlyph`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Тег &#40;глиф&#41; при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")
+ ![Тег &#40;&#41; глифа при наведении указателя](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 — 182_TagGlyphHover")
 
- **При наведении указателя мыши (тег по умолчанию)**
+ **При наведении указателя (тег по умолчанию)**
 
  Фон
 
@@ -3880,21 +3880,21 @@ ms.locfileid: "68154596"
 
  `Tag.TagHoverGlyphHover`
 
- Border
+ Рамка
 
  `Tag.TagHoverGlyphHoverBorder`
 
- **Нажата**
+ **Pressed**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Тег &#40;глиф&#41; нажата](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")
+ ![Тег &#40;глифа&#41; нажата](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 — 183_TagGlyphPressed")
 
- **Нажата (тег по умолчанию)**
+ **Активен (тег по умолчанию)**
 
  Фон
 
@@ -3904,7 +3904,7 @@ ms.locfileid: "68154596"
 
  `Tag.TagHoverGlyphPressed`
 
- Border
+ Рамка
 
  `Tag.TagHoverGlyphPressedBorder`
 
@@ -3914,11 +3914,11 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Выбранный тег](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")
+ ![Выбранный тег](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 — 184_TagSelected")
 
- **По умолчанию (тег выбран)**
+ **По умолчанию (активный тег)**
 
  Фон
 
@@ -3928,17 +3928,17 @@ ms.locfileid: "68154596"
 
  `Tag.TagSelectedGlyph`
 
- **Тег выбран/глиф при наведении курсора мыши**
+ **Тег выбран/глиф при наведении указателя**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Выбранный тег при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")
+ ![Выбранный тег при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 — 185_TagSelectedHover")
 
- **При наведении указателя мыши (тег выбран)**
+ **При наведении указателя (тег выбран)**
 
  Фон
 
@@ -3948,7 +3948,7 @@ ms.locfileid: "68154596"
 
  `Tag.TagSelectedGlyphHover`
 
- Border
+ Рамка
 
  `Tag.TagSelectedGlyphHoverBorder`
 
@@ -3958,9 +3958,9 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Выбранный тег нажата](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")
+ ![Выбранный активный тег](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 — 186_TagSelectedPressed")
 
  **Активен (тег выбран)**
 
@@ -3972,7 +3972,7 @@ ms.locfileid: "68154596"
 
  `Tag.TagSelectedGlyphPressed`
 
- Border
+ Рамка
 
  `Tag.TagSelectedGlyphPressedBorder`
 
@@ -3982,7 +3982,7 @@ ms.locfileid: "68154596"
 
 Фон среды состоит из двух слоев. Нижний слой представляет собой сплошной цвет, который охватывает всю интегрированную среду разработки. Верхний слой используется под командной полкой и между каналами автоматического скрытия окон инструментов по левому и правому краям интегрированной среды разработки. Начиная с версии Visual Studio 2013 верхний и нижний слои фона имеют одинаковый цвет при использовании светлой и темной тем.
 
-![Красная линия фоновой оболочки](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+![Красная линия фоновой оболочки](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 — 187_ShellBackgroundRedline")
 
 Используйте:
 для областей, которые должны соответствовать фону среды Visual Studio.
@@ -3996,7 +3996,7 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
   Нижний слой
 
@@ -4008,13 +4008,13 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
   Верхний слой
 
   Фон
 
-  *Ограничения градиента устанавливаются в одно и то же значение цвета в Visual Studio 2013 светлой и темной тем.*
+  *Ограничения градиента устанавливаются в светлой и темной темах Visual Studio 2013 в одно значение цвета.*
 
   `Environment.EnvironmentBackgroundGradientBegin`
 
@@ -4028,12 +4028,12 @@ ms.locfileid: "68154596"
 
 Для фона командной полки используются два набора имен токенов: один для области размещения строки меню, а другой — для области размещения панелей команд. Отдельные группы на панели команд имеют собственные значения цветов фона, которые более подробно рассматриваются в разделе, посвященном панели команд. Цвета текста строки меню и панели команд рассматриваются в разделах, посвященных меню и панели команд.
 
-![Красная линия командной полки](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+![Красная линия командной полки](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 — 188_CommandShelfRedline")
 
 Используйте:
 - для областей, где размещаются меню или панели инструментов;
 
-- с правильным сочетанием имен токенов /? переднего.
+- с правильным сочетанием имени фонового маркера/?.
 
 Не используйте:
 для областей, которые не похожи на командную полку.
@@ -4042,13 +4042,13 @@ ms.locfileid: "68154596"
 
   Элемент
 
-  Имя токена: Category.Color
+  Имя токена: Category.color
 
   Строка меню
 
   Фон
 
-  *Ограничения градиента устанавливаются в одно и то же значение цвета в Visual Studio 2013 светлой и темной тем.*
+  *Ограничения градиента устанавливаются в светлой и темной темах Visual Studio 2013 в одно значение цвета.*
 
   `Environment.CommandShelfHighlightGradientBegin`
 
@@ -4060,7 +4060,7 @@ ms.locfileid: "68154596"
 
   Фон
 
-  *Ограничения градиента устанавливаются в одно и то же значение цвета в Visual Studio 2013 светлой и темной тем.*
+  *Ограничения градиента устанавливаются в светлой и темной темах Visual Studio 2013 в одно значение цвета.*
 
   `Environment.CommandShelfBackgroundGradientBegin`
 
@@ -4071,7 +4071,7 @@ ms.locfileid: "68154596"
 ## <a name="toolbox"></a>Панель элементов
  Панель элементов — одно из стандартных окон инструментов, которое чаще всего используется в Visual Studio. По сути, это элемент управления типа "Дерево" с примененной к нему специальной темой и стилем.
 
- ![Красная линия панели инструментов](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303 189_ToolboxRedline")
+ ![Красная линия панели инструментов](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303 — 189_ToolboxRedline")
 
  Используйте:
 при разработке окна инструментов, которое всегда должно быть согласовано с панелью элементов оболочки.
@@ -4085,13 +4085,13 @@ ms.locfileid: "68154596"
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Родительский узел панели инструментов](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")
+ ![Родительский узел панели инструментов](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 — 190_ToolboxParentNode")
 
  **Родительский узел**
 
- ![Дочерний узел панели инструментов](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")
+ ![Дочерний узел панели инструментов](../../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 — 191_ToolboxChildNode")
 
  **Дочерний узел**
 
@@ -4105,7 +4105,7 @@ ms.locfileid: "68154596"
 
  Отдельные элементы или все окно, если нет доступных элементов управления
 
- Border
+ Рамка
 
  None
 
@@ -4117,17 +4117,17 @@ ms.locfileid: "68154596"
 
  `Environment.ToolboxContent`
 
- **При наведении курсора мыши**
+ **Наведение**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Дочерний узел панели инструментов при наведении курсора мыши](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")
+ ![Дочерний узел панели инструментов при наведении указателя мыши](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 — 192_ToolboxChildNodeHover")
 
- **Панели инструментов при наведении на дочерний узел**
+ **Наведение указателя на дочерний узел панели элементов**
 
  Фон
 
@@ -4135,7 +4135,7 @@ ms.locfileid: "68154596"
 
  Только отдельные элементы
 
- Border
+ Рамка
 
  None
 
@@ -4145,21 +4145,21 @@ ms.locfileid: "68154596"
 
  Только отдельные элементы
 
- **Выбранные**
+ **Selected**
 
  Компонент
 
  Элемент
 
- Имя токена: Category.Color
+ Имя токена: Category.color
 
- ![Родительский узел панели инструментов с фокусом ввода](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")
+ ![Родительский узел панели инструментов в фокусе](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 — 193_ToolboxParentNodeFocused")
 
- **Фокус родительский узел**
+ **Родительский узел с фокусом ввода**
 
- ![Дочерний узел панели инструментов с фокусом ввода](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")
+ ![Дочерний узел панели инструментов в фокусе](../../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 — 194_ToolboxChildNodeFocused")
 
- **Фокус дочерний узел**
+ **Дочерний узел с фокусом ввода**
 
  Фон
 
@@ -4167,7 +4167,7 @@ ms.locfileid: "68154596"
 
  Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 
- Border
+ Рамка
 
  `TreeView.FocusVisualBorder`
 
@@ -4185,13 +4185,13 @@ ms.locfileid: "68154596"
 
  Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 
- ![Родительский узел панели инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")
+ ![Родительский узел панели инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 — 195_ToolboxParentNodeUnfocused")
 
- **Без фокуса ввода родительский узел**
+ **Родительский узел без фокуса ввода**
 
- ![Дочерний узел панели инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")
+ ![Дочерний узел панели инструментов без фокуса ввода](../../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 — 196_ToolboxChildNodeUnfocused")
 
- **Без фокуса ввода дочерний узел**
+ **Дочерний узел без фокуса ввода**
 
  Фон
 
@@ -4199,7 +4199,7 @@ ms.locfileid: "68154596"
 
  Из категории [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 
- Border
+ Рамка
 
  None
 

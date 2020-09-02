@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651286"
 ---
-# <a name="immediate-window"></a>окно интерпретации
+# <a name="immediate-window"></a>Окно интерпретации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.
@@ -30,7 +30,7 @@ ms.locfileid: "72651286"
  Это окно можно использовать для выполнения отдельных команд [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. В число доступных команд входит команда `EvaluateStatement`, которую можно использовать для присвоения значений переменным. Окно **Интерпретация** также поддерживает технологию Intellisense.
 
 ## <a name="displaying-the-values-of-variables"></a>Отображение значений переменных
- Это окно может оказаться особенно полезным при отладке приложения. Например, для проверки значения переменной `varA` можно использовать [команду Print](../../ide/reference/print-command.md):
+ Это окно может оказаться особенно полезным при отладке приложения. Например, чтобы проверить значение переменной `varA` , можно использовать [команду Print](../../ide/reference/print-command.md):
 
 ```
 >Debug.Print varA
@@ -45,7 +45,7 @@ ms.locfileid: "72651286"
  Обе версии этой команды возвращают значение переменной `varA`.
 
 > [!NOTE]
-> Чтобы выполнить команду [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в окне **Интерпретация**, необходимо перед командой ввести знак больше (>). Чтобы ввести несколько команд, переключитесь в окно **Команда**.
+> Чтобы выполнить команду [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в окне **Интерпретация**, необходимо перед командой ввести знак больше (>). Чтобы ввести несколько команд, переключитесь в **командное** окно.
 
 ## <a name="design-time-expression-evaluation"></a>Вычисление выражений в процессе разработки
  Окно **Интерпретация** можно использовать для выполнения функции или подпрограммы во время разработки.
@@ -70,7 +70,7 @@ ms.locfileid: "72651286"
 
 2. В меню **Отладка** выберите пункт **Окна** и щелкните **Интерпретация**.
 
-3. Введите в окне **Интерпретация** `?MyFunction(2)` и нажмите клавишу ВВОД.
+3. Введите `?MyFunction(2)` в окне **интерпретации** и нажмите клавишу ВВОД.
 
     Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.
 
@@ -122,5 +122,5 @@ ms.locfileid: "72651286"
 
 2. Щелкните правой кнопкой мыши в текстовой области окна **Вывод** и выберите пункт **Сообщения об исключениях** или отмените его выбор.
 
-## <a name="see-also"></a>См. также раздел
- [Навигация по коду с](../../debugger/navigating-through-code-with-the-debugger.md) помощью [окна команд](../../ide/reference/command-window.md) отладчика [Отладка в](../../debugger/debugging-in-visual-studio.md) разделе [основы отладчика](../../debugger/debugger-basics.md) Visual Studio [: Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [с использованием обычных Выражения в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+## <a name="see-also"></a>См. также:
+ [Навигация по коду с помощью](../../debugger/navigating-through-code-with-the-debugger.md) [окна команд](../../ide/reference/command-window.md) отладчика [Отладка в](../../debugger/debugging-in-visual-studio.md) разделе [основы отладчика](../../debugger/debugger-basics.md) Visual Studio [: Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816739"
 ---
 # <a name="return-statement-outside-of-function"></a>Оператор return за пределами функции
 Вы использовали `return` инструкцию в глобальной области кода. `return`Оператор должен находиться только в теле функции.  
   
- Вызов функции с помощью `()` оператора является выражением. Все выражения имеют значения; `return`оператор используется для указания значения, возвращаемого функцией. Общая форма:  
+ Вызов функции с помощью `()` оператора является выражением. Все выражения имеют значения; `return` оператор используется для указания значения, возвращаемого функцией. Общая форма:  
   
 ```js
   
@@ -41,7 +41,7 @@ return [ expression ];
   
 - Удалите `return` оператор из основного текста кода (глобальной области).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Оператор Return](../../javascript/reference/return-statement-javascript.md)   
  [Объект функции](../../javascript/reference/function-object-javascript.md)   
  [Свойство caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

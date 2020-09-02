@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Документация Майкрософт
+title: 'IDebugDocumentText2:: DataSize | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f6d438db999e2e0b2aa85c45c0b38333238755e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200201"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает размер текста в этой позиции в документе.  
+Получает размер текста в данной позиции в документе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,18 +42,18 @@ int GetSize( 
   
 #### <a name="parameters"></a>Параметры  
  `pcNumLines`  
- [out] Возвращает количество строк текста.  
+ заполняет Возвращает количество строк текста.  
   
  `pcNumChars`  
- [out] Возвращает количество символов текста.  
+ заполняет Возвращает количество символов текста.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- [C++ только] Если определенное значение не требуется, передайте значение NULL для параметра.  
+## <a name="remarks"></a>Remarks  
+ [Только C++] Если определенное значение не требуется, передайте значение NULL для параметра.  
   
- [C# только] Необходимо указать оба параметра.  
+ [Только C#] Необходимо указать оба параметра.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

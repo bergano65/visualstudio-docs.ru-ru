@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199947"
 ---
 # <a name="overriding-toolsversion-settings"></a>Переопределение параметров ToolsVersion
@@ -31,7 +31,7 @@ ms.locfileid: "68199947"
 3. Задав свойство `$(ProjectToolsVersion)` для проекта в решении. Это позволяет собирать проект в решении с версией набора инструментов, отличающейся от используемой в других проектах.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Переопределение параметров ToolsVersion проектов и решений в сборках из командной строки  
- Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `/ToolsVersion` (или `/tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Например:  
+ Хотя в проектах Visual Studio параметр ToolsVersion при сборке обычно задается в файле проекта, можно с помощью параметра командной строки `/ToolsVersion` (или `/tv`) переопределить это значение и построить все проекты и зависимости между ними с использованием другого набора инструментов. Пример:  
   
 ```  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
@@ -97,7 +97,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
       MSBuildToolsPath:    C:\Windows\Microsoft.NET\Framework\v2.0.50727  
     ```  
   
-## <a name="order-of-precedence"></a>Очередность применения  
+## <a name="order-of-precedence"></a>Очередность выполнения  
  В следующем списке показан порядок приоритетов от самого высокого до самого низкого: `ToolsVersion`  
   
 1. Атрибут `ToolsVersion` в задаче MSBuild, используемой для сборки проекта (если имеется).  
@@ -126,8 +126,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. В противном случае используйте текущий параметр `ToolsVersion`.  
   
-## <a name="see-also"></a>См. также  
- [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)   
+## <a name="see-also"></a>См. также:  
+ [Производится](../msbuild/msbuild-multitargeting-overview.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
- [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md)
+ [Стандартные и настраиваемые конфигурации набора инструментов](../msbuild/standard-and-custom-toolset-configurations.md)

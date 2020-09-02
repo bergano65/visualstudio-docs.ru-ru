@@ -1,5 +1,5 @@
 ---
-title: Предварительные условия для 64-разрядных приложений развертывания | Документация Майкрософт
+title: Развертывание необходимых компонентов для 64-разрядных приложений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675556"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Предварительные условия для развертывания 64-разрядных приложений
@@ -44,7 +44,7 @@ ms.locfileid: "65675556"
 |Microsoft .NET Framework 4 (x86 и x64)|Да||  
 |Клиентский профиль Microsoft .NET Framework 4 (x86 и x64)|Да||  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md)   
- [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

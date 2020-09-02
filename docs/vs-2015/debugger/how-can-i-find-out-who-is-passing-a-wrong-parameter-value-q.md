@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b0787a0d700859e7728762fd7846911fcd41e369
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704554"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Как определить, откуда передается неправильное значение параметра?
@@ -44,7 +44,7 @@ ms.locfileid: "65704554"
   
 2. Щелкните правой кнопкой мыши точку останова и выберите пункт **Условие**.  
   
-3. В диалоговом окне **Условие для точек останова** установите флажок **Условие**. См. в разделе [дополнительные точки останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3. В диалоговом окне **Условие для точек останова** установите флажок **Условие**. См. раздел [Расширенные точки останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4. Введите в текстовое поле выражение, например `Var==3`, где `Var` представляет собой имя параметра, который содержит неправильное значение, а `3` — это неправильное значение, переданное параметру.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "65704554"
   
 7. Затем в окне "Стек вызовов" можно найти вызывающую функцию, чтобы перейти к ее исходному коду. Дополнительные сведения см. в разделе [Практическое руководство. использовать окно "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
  [Точки останова](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

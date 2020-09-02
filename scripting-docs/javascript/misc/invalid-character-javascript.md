@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816947"
 ---
 # <a name="invalid-character-javascript"></a>Недопустимый символ (JavaScript)
@@ -34,7 +34,7 @@ ms.locfileid: "85816947"
   
 - Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определения языка.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Среды](../../javascript/variables-javascript.md)   
  [Специальные символы](../../javascript/advanced/special-characters-javascript.md)   
  [Типы данных](../../javascript/data-types-javascript.md)

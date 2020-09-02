@@ -1,5 +1,5 @@
 ---
-title: LocationType | Документация Майкрософт
+title: Локатионтипе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28bcaa626797313f6ea68a17da33ef9ea192a856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154202"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Указывает тип данных о географическом положении, содержащихся в символе.  
+Указывает тип сведений о расположении, содержащихся в символе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,42 +55,42 @@ enum LocationType { 
  Расположение находится в локальном хранилище потока.  
   
  `LocIsRegRel`  
- Расположение относительно регистра.  
+ Расположение является относительным для регистра.  
   
  `LocIsThisRel`  
- Расположение — `this`— относительный.  
+ Расположение является `this` относительным.  
   
  `LocIsEnregistered`  
- Расположение — в регистре.  
+ Расположение находится в регистре.  
   
  `LocIsBitField`  
- Расположением является битовым полем.  
+ Расположение находится в битовом поле.  
   
  `LocIsSlot`  
- Располагается в слот промежуточного языка MSIL (Microsoft).  
+ Location — это слот MSIL.  
   
  `LocIsIlRel`  
- Расположение — относительно MSIL.  
+ Расположение относительно MSIL.  
   
  `LocInMetaData`  
  Расположение находится в метаданных.  
   
  `LocIsConstant`  
- Расположение имеет постоянное значение.  
+ Расположение находится в постоянном значении.  
   
  `LocTypeMax`  
- Количество типов расположение в этом перечислении.  
+ Число типов расположения в этом перечислении.  
   
-## <a name="remarks"></a>Примечания  
- Свойства, доступные для [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) интерфейс зависят от расположения символа в файле образа. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).  
+## <a name="remarks"></a>Remarks  
+ Свойства, доступные для интерфейса [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , зависят от расположения символа в файле изображения. Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md).  
   
- Значения в этом перечислении возвращаются путем вызова [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) метод.  
+ Значения в этом перечислении возвращаются путем вызова метода [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)

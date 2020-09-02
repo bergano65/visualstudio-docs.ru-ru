@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6629212fcc981ba3decb3b02d63975bc9826dc1f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541665"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент friendlyName (разработка решений Office в Visual Studio)
@@ -38,7 +38,7 @@ ms.locfileid: "85541665"
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  В приведенном ниже примере кода показан элемент `friendlyName` в решении на уровне приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
@@ -49,7 +49,7 @@ ms.locfileid: "85541665"
 </vstov4:friendlyName>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

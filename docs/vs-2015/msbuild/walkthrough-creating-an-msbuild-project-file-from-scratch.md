@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документы Майкрософт
+title: Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682362"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
@@ -56,7 +56,7 @@ ms.locfileid: "65682362"
   
 1. В командной строке перейдите к папке, в которой необходимо создать приложение, например \Мои документы\ или \Рабочий стол\\.  
   
-2. Введите **md HelloWorld**, чтобы создать подпапку \Helloworld\\.  
+2. Введите **md HelloWorld**, чтобы создать подпапку \HelloWorld\\ .  
   
 3. Введите **cd HelloWorld**, чтобы изменить новую папку.  
   
@@ -173,7 +173,7 @@ ms.locfileid: "65682362"
   
 #### <a name="to-build-the-application"></a>Построение приложения  
   
-1. В командной строке введите **msbuild helloworld.csproj /t:Build**.  
+1. В командной строке введите **MSBuild HelloWorld. csproj/t: Build**.  
   
      После этого для создания приложения "Helloworld" будет вызван компилятор Visual C# и построен целевой объект построения файла проекта Helloworld.  
   
@@ -184,7 +184,7 @@ ms.locfileid: "65682362"
 > [!NOTE]
 > Чтобы получить более подробную информацию о построении, увеличьте уровень детализации. Чтобы изменить уровень детализации на "подробный", введите в командную строку одну из следующих команд:  
 >   
-> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **MSBuild HelloWorld. csproj/t: Build/verbosity: Detailed**  
   
 ## <a name="adding-build-properties"></a>Добавление свойств сборки  
  Для дальнейшего управления построением можно добавлять свойства построения к файлу проекта. Добавьте следующие свойства.  
@@ -260,11 +260,11 @@ ms.locfileid: "65682362"
   
 #### <a name="to-test-the-build-properties"></a>Тестирование свойств построения  
   
-1. В командной строке введите **msbuild helloworld.csproj /t:Build**.  
+1. В командной строке введите **MSBuild HelloWorld. csproj/t: Build**.  
   
      После этого программа создаст папку \Bin\, вызовет компилятор Visual C# для создания приложения MSBuildSample и разместит его в папку \Bin\.  
   
-2. Чтобы убедиться, что папка \Bin\ создана и содержит приложение MSBuildSample, введите **dir Bin**.  
+2. Чтобы убедиться, что папка \Bin\ создана и содержит приложение MSBuildSample, введите **dir bin**.  
   
 3. Протестируйте приложение, указав в командной строке **Bin\MSBuildSample**.  
   
@@ -335,31 +335,31 @@ ms.locfileid: "65682362"
   
 #### <a name="to-test-the-build-targets"></a>Тестирование целей построения  
   
-1. В командной строке введите **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
+1. В командной строке введите **MSBuild HelloWorld. csproj/p: AssemblyName = поздравления**.  
   
-     Так как параметр **/t** для задания цели напрямую не использовался, MSBuild запускает цель "Сборка" по умолчанию. Параметр **/p** переопределяет свойство `AssemblyName` и присваивает ему новое значение `Greetings`. В результате в папке \Bin\ создается новое приложение Greetings.exe.  
+     Так как вы не использовали параметр **/t** для явного задания целевого объекта, MSBuild запускает целевой объект сборки по умолчанию. Параметр **/p** переопределяет `AssemblyName` свойство и присваивает ему новое значение, `Greetings` . В результате в папке \Bin\ создается новое приложение Greetings.exe.  
   
-2. Чтобы убедиться, что в папке \Bin\ находится приложение MSBuildSample и новое приложение Greetings, введите **dir Bin**.  
+2. Чтобы убедиться, что в папке \Bin\ содержится приложение MSBuildSample и новое приложение приветствия, введите **dir bin**.  
   
 3. Протестируйте приложение Greetings, указав в командной строке **Bin\Greetings**.  
   
      Должно появиться сообщение **Hello, world!** .  
   
-4. Удалите приложение MSBuildSample, указав **msbuild helloworld.csproj /t:clean**.  
+4. Удалите приложение MSBuildSample, выполнив команду **MSBuild HelloWorld. csproj/t: Clean**.  
   
      Это запустит задачу "Очистить" и позволит удалить приложение со значением свойства `AssemblyName` по умолчанию — `MSBuildSample`.  
   
-5. Удалите приложение Greetings, указав **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**.  
+5. Удалите приложение приветствия, выполнив команду **MSBuild HelloWorld. csproj/t: Clean/p: AssemblyName = поздравления**.  
   
      Это запустит задачу "Очистить" и позволит удалить приложение с заданным значением свойства **AssemblyName** по умолчанию — `Greetings`.  
   
-6. Чтобы убедиться, что папка \Bin\ пуста, введите **dir Bin**.  
+6. Чтобы убедиться, что папка \Bin\ пуста, введите **dir bin**.  
   
 7. Введите команду **msbuild**.  
   
      Несмотря на то что файл проекта не указан, MSBuild строит файл helloworld.csproj, поскольку в текущей папке присутствует только один файл проекта. В результате в папке \Bin\ создается новое приложение MSBuildSample.  
   
-     Чтобы убедиться, что в папке \Bin\ появилось приложение MSBuildSample, введите **dir Bin**.  
+     Чтобы убедиться, что в папке \Bin\ содержится приложение MSBuildSample, введите **dir bin**.  
   
 ## <a name="building-incrementally"></a>Последовательное построение  
  MSBuild можно настроить таким образом, чтобы цель строилась только в случае изменения исходного файла или целевых файлов, от которых зависит цель. MSBuild определяет факт изменения файла по отметке времени.  
@@ -383,11 +383,11 @@ ms.locfileid: "65682362"
     </Target>  
     ```  
   
-2. Протестируйте цель "Сборка", указав в командной строке **msbuild /v:d**.  
+2. Проверьте целевой объект сборки, введя в командной строке **MSBuild/v: d** .  
   
      Помните, что helloworld.csproj является файлом проекта по умолчанию, а построение — целью по умолчанию.  
   
-     Параметр **/v:d** указывает подробное описание для процесса сборки.  
+     Параметр **/v: d** указывает подробное описание процесса сборки.  
   
      На экране должны появиться следующие строки:  
   
@@ -480,6 +480,6 @@ ms.locfileid: "65682362"
 ## <a name="whats-next"></a>Что дальше?  
  Visual Studio может выполнять большую часть работы, описанной в этом пошаговом руководстве, автоматически. Сведения об использовании Visual Studio для создания, изменения, сборки и тестирования файлов проекта MSBuild см. в разделе [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)  
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)

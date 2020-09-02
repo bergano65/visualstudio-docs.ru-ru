@@ -1,5 +1,5 @@
 ---
-title: Предупреждение системы безопасности. Отладчик должен выполнить ненадежную команду | Документация Майкрософт
+title: Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683300"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия
@@ -45,7 +45,7 @@ ms.locfileid: "65683300"
  Не выполнять  
  Прекратить выполнение команды и загрузку файла с сервера системы управления версиями.  
   
-## <a name="see-also"></a>См. также  
- [Указание файлов символов (PDB) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>См. также:  
+ [Указание символов (. pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Исходный сервер](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

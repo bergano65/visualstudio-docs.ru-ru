@@ -11,73 +11,73 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184516"
 ---
 # <a name="capability-flags"></a>Флаги возможностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SCC_CAP_*xxx* флаги имеют битовых флагов, используемый для указания возможности подключаемого модуля системы управления версиями. SCC_EXCAP_*xxx* флаги имеют добавочные флаги, которые указывают расширенные возможности и устранить до целых чисел.  
+Флаги SCC_CAP_*xxx* — это битовые флаги, используемые для указания возможностей подключаемого модуля системы управления версиями. Флаги SCC_EXCAP_*xxx* — это добавочные флаги, которые указывают расширенные возможности и разрешаются в целочисленные значения.  
   
-|Возможность кода|Значение|Описание|  
+|Код возможности|Значение|Описание|  
 |---------------------|-----------|-----------------|  
-|`SCC_CAP_REMOVE`|0x00000001L|Поддерживает [SccRemove](../extensibility/sccremove-function.md) и команду.|  
-|`SCC_CAP_RENAME`|0x00000002L|Поддерживает [SccRename](../extensibility/sccrename-function.md) и команду.|  
-|`SCC_CAP_DIFF`|0x00000004L|Поддерживает [SccDiff](../extensibility/sccdiff-function.md) и команду.|  
-|`SCC_CAP_HISTORY`|0x00000008L|Поддерживает [SccHistory](../extensibility/scchistory-function.md) и команду.|  
-|`SCC_CAP_PROPERTIES`|0x00000010L|Поддерживает [SccProperties](../extensibility/sccproperties-function.md) и команду.|  
-|`SCC_CAP_RUNSCC`|0x00000020L|Поддерживает [SccRunScc](../extensibility/sccrunscc-function.md) и команду.|  
-|`SCC_CAP_GETCOMMANDOPTIONS`|0x00000040L|Поддерживает [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и команду.|  
-|`SCC_CAP_QUERYINFO`|0x00000080L|Поддерживает [SccQueryInfo](../extensibility/sccqueryinfo-function.md) и команду.|  
-|`SCC_CAP_GETEVENTS`|0x00000100L|Поддерживает [SccGetEvents](../extensibility/sccgetevents-function.md) и команду.|  
-|`SCC_CAP_GETPROJPATH`|0x00000200L|Поддерживает [SccGetProjPath](../extensibility/sccgetprojpath-function.md) и команду.|  
-|`SCC_CAP_ADDFROMSCC`|0x00000400L|Поддерживает [SccAddFromScc](../extensibility/sccaddfromscc-function.md) и команду.|  
+|`SCC_CAP_REMOVE`|0x00000001L|Поддерживает [сккремове](../extensibility/sccremove-function.md) и Command.|  
+|`SCC_CAP_RENAME`|0x00000002L|Поддерживает [сккренаме](../extensibility/sccrename-function.md) и Command.|  
+|`SCC_CAP_DIFF`|0x00000004L|Поддерживает [сккдифф](../extensibility/sccdiff-function.md) и Command.|  
+|`SCC_CAP_HISTORY`|0x00000008L|Поддерживает [скчистори](../extensibility/scchistory-function.md) и Command.|  
+|`SCC_CAP_PROPERTIES`|0x00000010L|Поддерживает [сккпропертиес](../extensibility/sccproperties-function.md) и Command.|  
+|`SCC_CAP_RUNSCC`|0x00000020L|Поддерживает [сккрунскк](../extensibility/sccrunscc-function.md) и Command.|  
+|`SCC_CAP_GETCOMMANDOPTIONS`|0x00000040L|Поддерживает [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и Command.|  
+|`SCC_CAP_QUERYINFO`|0x00000080L|Поддерживает [скккуеринфо](../extensibility/sccqueryinfo-function.md) и Command.|  
+|`SCC_CAP_GETEVENTS`|0x00000100L|Поддерживает [сккжетевентс](../extensibility/sccgetevents-function.md) и Command.|  
+|`SCC_CAP_GETPROJPATH`|0x00000200L|Поддерживает [сккжетпрожпас](../extensibility/sccgetprojpath-function.md) и Command.|  
+|`SCC_CAP_ADDFROMSCC`|0x00000400L|Поддерживает [сккаддфромскк](../extensibility/sccaddfromscc-function.md) и Command.|  
 |`SCC_CAP_COMMENTCHECKOUT`|0x00000800L|Поддерживает комментарий при извлечении.|  
-|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|Поддерживает комментарий для возврата.|  
-|`SCC_CAP_COMMENTADD`|0x00002000L|Поддерживает добавить комментарий.|  
-|`SCC_CAP_COMMENTREMOVE`|0x00004000L|Поддерживает комментарий на удаление.|  
-|`SCC_CAP_TEXTOUT`|0x00008000L|Записывает текст функцию вывода, предоставляемый для интегрированной среды разработки.|  
-|`SCC_CAP_ADD_STORELATEST`|0x00200000L|Поддерживает хранение файлов без «дельты».|  
-|`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|Поддерживает несколько истории файлов.|  
+|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|Поддерживает комментарий к возврату.|  
+|`SCC_CAP_COMMENTADD`|0x00002000L|Поддерживает комментарий к добавлению.|  
+|`SCC_CAP_COMMENTREMOVE`|0x00004000L|Поддерживает комментарий к удалению.|  
+|`SCC_CAP_TEXTOUT`|0x00008000L|Записывает текст в выходную функцию, предоставляемую интегрированной средой разработки.|  
+|`SCC_CAP_ADD_STORELATEST`|0x00200000L|Поддерживает хранение файлов без разностей.|  
+|`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|Поддерживает несколько журналов файлов.|  
 |`SCC_CAP_IGNORECASE`|0x00800000L|Поддерживает сравнение файлов без учета регистра.|  
-|`SCC_CAP_IGNORESPACE`|0x01000000L|Поддерживает файлов сравнение, которое не обрабатывает пробел.|  
-|`SCC_CAP_POPULATELIST`|0x02000000L|Поддержка поиска лишние файлы.|  
-|`SCC_CAP_COMMENTPROJECT`|0x04000000L|Поддерживает комментарии для создания проекта.|  
-|`SCC_CAP_DIFFALWAYS`|0x10000000L|Поддерживает diff во всех состояниях, если в системе управления.|  
-|`SCC_CAP_GET_NOUI`|0x20000000L|Подключаемый модуль не поддерживает пользовательский Интерфейс для Get, но интегрированной среды разработки может по-прежнему вызывать [SccGet](../extensibility/sccget-function.md).|  
-|`SCC_CAP_REENTRANT`|0x40000000L|Подключаемый модуль повторными входящими вызовами и потокобезопасным. В версии 1.0 подключаемые модули не предположительно должны были быть реентерабельным и потокобезопасным. Если 1.1 подключаемый модуль устанавливает этот бит, узел может открыть несколько проектов в параллельном режиме.|  
+|`SCC_CAP_IGNORESPACE`|0x01000000L|Поддерживает сравнение файлов, которое игнорирует пробелы.|  
+|`SCC_CAP_POPULATELIST`|0x02000000L|Поддерживает поиск дополнительных файлов.|  
+|`SCC_CAP_COMMENTPROJECT`|0x04000000L|Поддерживает комментарии по созданию проекта.|  
+|`SCC_CAP_DIFFALWAYS`|0x10000000L|Поддерживает diff во всех состояниях, если элемент управления находится под контролем.|  
+|`SCC_CAP_GET_NOUI`|0x20000000L|Подключаемый модуль не поддерживает пользовательский интерфейс для Get, но интегрированная среда разработки по-прежнему может вызывать [сккжет](../extensibility/sccget-function.md).|  
+|`SCC_CAP_REENTRANT`|0x40000000L|Подключаемый модуль является повторным входом и потокобезопасным. В версии 1,0 не предполагается, что подключаемые модули были перезапущены и являются потокобезопасными. Если этот бит устанавливает подключаемый модуль 1,1, узел может параллельно открывать несколько проектов.|  
   
-## <a name="capability-bits-added-in-version-12"></a>Биты возможностей, добавленные в версии 1.2  
+## <a name="capability-bits-added-in-version-12"></a>Биты возможностей, добавленные в версии 1,2  
   
-|Возможность кода|Значение|Описание|  
+|Код возможности|Значение|Описание|  
 |---------------------|-----------|-----------------|  
-|`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Поддерживает [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
-|`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Поддерживает [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
-|`SCC_CAP_BATCH`|0x00040000L|Поддерживает [SccBeginBatch](../extensibility/sccbeginbatch-function.md) и [SccEndBatch](../extensibility/sccendbatch-function.md).|  
-|`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|Поддерживает [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md).|  
-|`SCC_CAP_DIRECTORYDIFF`|0x00100000L|Поддерживает [SccDirDiff](../extensibility/sccdirdiff-function.md).|  
-|`SCC_CAP_MULTICHECKOUT`|0x08000000L|Поддерживает несколько одновременных извлечений с файлом и [SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md).|  
-|`SCC_CAP_SCCFILE`|0x80000000L|Поддерживает MSSCCPRJ. Файл SCC (при условии переопределение пользователя или администратора) и [SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md).|  
+|`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Поддерживает [скккреатесубпрожект](../extensibility/scccreatesubproject-function.md).|  
+|`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Поддерживает [сккжетпарентпрожектпас](../extensibility/sccgetparentprojectpath-function.md).|  
+|`SCC_CAP_BATCH`|0x00040000L|Поддерживает [сккбегинбатч](../extensibility/sccbeginbatch-function.md) и [скцендбатч](../extensibility/sccendbatch-function.md).|  
+|`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|Поддерживает [сккдиркуеринфо](../extensibility/sccdirqueryinfo-function.md).|  
+|`SCC_CAP_DIRECTORYDIFF`|0x00100000L|Поддерживает [сккдирдифф](../extensibility/sccdirdiff-function.md).|  
+|`SCC_CAP_MULTICHECKOUT`|0x08000000L|Поддерживает несколько извлечений для файла и [скЦисмултичеккаутенаблед](../extensibility/sccismulticheckoutenabled-function.md).|  
+|`SCC_CAP_SCCFILE`|0x80000000L|Поддерживает МССККПРЖ. Файл SCC (в зависимости от переопределения пользователя или администратора) и [скквиллкреатесккфиле](../extensibility/sccwillcreatesccfile-function.md).|  
   
-## <a name="capability-bits-added-in-version-13"></a>Биты возможностей, добавленных в версии 1.3  
- Эти флаги передаются поочередно для [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) функцию, чтобы определить, поддерживается ли функция.  
+## <a name="capability-bits-added-in-version-13"></a>Биты возможностей, добавленные в версии 1,3  
+ Эти флаги передаются в функцию [сккжетекстендедкапабилитиес](../extensibility/sccgetextendedcapabilities-function.md) по одному за раз, чтобы определить, поддерживается ли эта возможность.  
   
-|Расширенные возможности кода|Значение|Описание|  
+|Расширенный код возможности|Значение|Описание|  
 |------------------------------|-----------|-----------------|  
-|`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Поддерживает `SCC_CHECKOUT_LOCALVER` вариант для извлечения.|  
-|`SCC_EXCAP_BACKGROUND_GET`|2|Поддерживает [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  
-|`SCC_EXCAP_ENUM_CHANGED_FILES`|3|Поддерживает [SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md).|  
-|`SCC_EXCAP_POPULATELIST_DIR`|4|Поддержка поиска Дополнительные каталоги.|  
-|`SCC_EXCAP_QUERYCHANGES`|5|Поддерживает перечисление изменений файла.|  
-|`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|Поддерживает [SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md).|  
-|`SCC_EXCAP_GET_USER_OPTIONS`|7|Поддерживает [SccGetUserOption](../extensibility/sccgetuseroption-function.md).|  
-|`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|Поддерживает вызов SccQueryInfo в нескольких потоках.|  
-|`SCC_EXCAP_REMOVE_DIR`|9|Поддерживает функцию SccRemoveDir.|  
-|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Можно удалить извлеченные файлы.|  
-|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Можно переименовать извлеченных файлов.|  
+|`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Поддерживает `SCC_CHECKOUT_LOCALVER` параметр для извлечений.|  
+|`SCC_EXCAP_BACKGROUND_GET`|2|Поддерживает [сккбаккграунджет](../extensibility/sccbackgroundget-function.md).|  
+|`SCC_EXCAP_ENUM_CHANGED_FILES`|3|Поддерживает [скценумчанжедфилес](../extensibility/sccenumchangedfiles-function.md).|  
+|`SCC_EXCAP_POPULATELIST_DIR`|4|Поддерживает поиск дополнительных каталогов.|  
+|`SCC_EXCAP_QUERYCHANGES`|5|Поддерживает перечисление изменений в файлах.|  
+|`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|Поддерживает [сккаддфилесфромскк](../extensibility/sccaddfilesfromscc-function.md).|  
+|`SCC_EXCAP_GET_USER_OPTIONS`|7|Поддерживает [сккжетусероптион](../extensibility/sccgetuseroption-function.md).|  
+|`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|Поддерживает вызов Скккуеринфо для нескольких потоков.|  
+|`SCC_EXCAP_REMOVE_DIR`|9|Поддерживает функцию Сккремоведир.|  
+|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Может удалять извлеченные файлы.|  
+|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Может переименовывать извлеченные файлы.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)

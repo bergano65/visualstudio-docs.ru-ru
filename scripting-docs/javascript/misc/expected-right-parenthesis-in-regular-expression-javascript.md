@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: af32127476c83100c0340021428e3abc572ef2f7
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815647"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>В регулярном выражении ожидался символ ")" (JavaScript)
@@ -31,6 +31,6 @@ ms.locfileid: "85815647"
     > [!NOTE]
     > Если нужно сопоставить одну круглую скобку, заключите ее в обратную косую черту \\ (— так, чтобы она не считалась специальным символом [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

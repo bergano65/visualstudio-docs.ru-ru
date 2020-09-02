@@ -1,5 +1,5 @@
 ---
-title: Изменить и продолжить-диалоговое окно (C++) | Документация Майкрософт
+title: Диалоговое окно "Изменить и продолжить" (C++) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704164"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Диалоговое окно "Изменить и продолжить" (C++)
@@ -34,5 +34,5 @@ ms.locfileid: "65704164"
   
  Вы можете исправить ошибку кода во время отладки, остановить отладку и исправить код или проигнорировать ошибку и продолжить отладку. Если продолжить отладку без исправления ошибки, изменения кода будут применены не сразу.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
