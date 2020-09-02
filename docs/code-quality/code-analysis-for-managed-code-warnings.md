@@ -1,6 +1,6 @@
 ---
 title: Анализ для предупреждений управляемого кода
-ms.date: 11/04/2016
+ms.date: 08/31/2020
 ms.topic: reference
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 383f488fcc9ebe614257b035732162100b9c7fd2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85521060"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285714"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Анализ для предупреждений управляемого кода
+# <a name="net-code-analysis-rules"></a>Правила анализа кода .NET
 Средство анализа управляемого кода выдает предупреждения, указывающие на нарушение правил в библиотеках управляемого кода. Предупреждения организованы по областям правил, например проектирование, локализация, производительность и безопасность. Каждое предупреждение указывает на нарушение правила анализа управляемого кода. В этом разделе представлены подробные описания и примеры для каждого предупреждения анализа управляемого кода.
 
  Следующая таблица показывает тип сведений, предоставляемых для каждого предупреждения.
@@ -40,7 +40,7 @@ ms.locfileid: "85521060"
 |Пример кода|Примеры, которые нарушают правила, и исправленные примеры, соблюдающие правило.|
 |Связанные предупреждения|Связанные предупреждения.|
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 |Категория|Описание|
 |-|-|
