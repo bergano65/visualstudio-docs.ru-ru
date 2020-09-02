@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::searchForReturnAddressStart | Документация Майкрософт
+title: 'Идиастакквалкфраме:: Сеарчфорретурнаддрессстарт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2d34c4f10679d6f0702dead5352ddf088704b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150184"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Выполняет поиск указанного кадра стека для возврата адреса близка к указанному адресу.  
+Выполняет поиск адреса возврата в указанном кадре стека по указанному адресу или рядом с ним.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT searchForReturnAddressStart ( 
   
 #### <a name="parameters"></a>Параметры  
  `frame`  
- [in] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий текущий кадр стека.  
+ окне Объект [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий текущий кадр стека.  
   
  `startAddress`  
- [in] Адрес виртуальной памяти, с которого начинается поиск.  
+ окне Адрес виртуальной памяти, с которого начинается поиск.  
   
  `returnAddress`  
- [out] Возвращает функцию ближайшего обратный адрес `startAddress`.  
+ заполняет Возвращает ближайший обратный адрес функции `startAddress` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
+## <a name="see-also"></a>См. также:  
+ [идиастакквалкфраме](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

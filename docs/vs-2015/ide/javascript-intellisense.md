@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848386"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
@@ -48,13 +48,13 @@ IntelliSense помогает быстрее писать код, допуска
 
 - Поддержка пользовательского IntelliSense с комментариями XML-документации и расширяемостью IntelliSense для JavaScript.
 
-  В этом разделе содержатся следующие подразделы.
+  Этот раздел состоит из следующих подразделов.
 
 - [Определение контекста IntelliSense](#DeterminingIntelliSenseContext)
 
 - [Обработка сведений IntelliSense](#ProcessingIntelliSenseInformation)
 
-- [Обзор возможностей IntelliSense для JavaScript](#Features)
+- [Функции IntelliSense для JavaScript](#Features)
 
 - [Расширяемость IntelliSense для JavaScript](#Extensibility)
 
@@ -62,7 +62,7 @@ IntelliSense помогает быстрее писать код, допуска
 
   Дополнительные сведения о функциональных возможностях IntelliSense в [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] см. в статье [Using IntelliSense](../ide/using-intellisense.md) (Использование технологии IntelliSense).
 
-## <a name="DeterminingIntelliSenseContext"></a> Определение контекста IntelliSense
+## <a name="determining-intellisense-context"></a><a name="DeterminingIntelliSenseContext"></a> Определение контекста IntelliSense
  IntelliSense для JavaScript предоставляет варианты кода на основе всего скрипта, которые имеют отношение к текущему контексту скрипта. Сюда входят элементы скрипта в текущем файле. IntelliSense также включает любой код, на который имеется прямая или косвенная ссылка из скрипта, например ссылки на файл скрипта, ссылки на скрипт сборки, ссылки на службы и ссылки, связанные со страницами.
 
  Текущий контекст скрипта создается на основе следующих элементов:
@@ -84,7 +84,7 @@ IntelliSense помогает быстрее писать код, допуска
     > [!NOTE]
     > IntelliSense не поддерживается для скрипта, расположенного в атрибутах обработчика событий для элементов HTML, или определенного в атрибутах `href`.
 
-## <a name="ProcessingIntelliSenseInformation"></a> Обработка сведений IntelliSense
+## <a name="processing-intellisense-information"></a><a name="ProcessingIntelliSenseInformation"></a> Обработка информации IntelliSense
  Для обеспечения работы IntelliSense для JavaScript языковая служба выполняет следующие операции:
 
 - Создается список независимых файлов JavaScript на основе ссылок в активном документе и исходя из рекурсивной проверки ссылок на скрипты в файлах со ссылками.
@@ -95,12 +95,12 @@ IntelliSense помогает быстрее писать код, допуска
 
 - Файлы проверяются на предмет изменений, которые могут затронуть список IntelliSense и список обновляется в случае необходимости. Скрипты в удаленных хранилищах (например, связанные с помощью HTTP) не подлежат мониторингу.
 
-## <a name="Features"></a> Обзор возможностей IntelliSense для JavaScript
+## <a name="javascript-intellisense-features"></a><a name="Features"></a> Обзор возможностей IntelliSense для JavaScript
  IntelliSense для JavaScript поддерживает следующие объекты:
 
 - [Элементы Document Object Model (DOM)](#HTMLDom).
 
-- [Встроенные объекты](#IntrinsicObjects).
+- [Встроенные объекты](#IntrinsicObjects)
 
 - [Пользовательские переменные, функции и объекты](#UserDefined).
 
@@ -118,21 +118,21 @@ IntelliSense помогает быстрее писать код, допуска
 
   Если технология IntelliSense не сможет определить тип объекта, она предоставляет варианты завершения операторов на основе идентификаторов в активном документе. См. подробнее о [завершении операторов для идентификаторов](../ide/statement-completion-for-identifiers.md).
 
-### <a name="HTMLDom"></a> Элементы HTML DOM
+### <a name="html-dom-elements"></a><a name="HTMLDom"></a> Элементы HTML DOM
  IntelliSense для JavaScript предоставляет справочники по программированию для элементов Dynamic HTML (DHTML) DOM, таких как `body`, `form` и `div`. IntelliSense выводит только элементы, включенные в текущий документ и главную страницу. IntelliSense для JavaScript также поддерживает объекты `window` и `document` с их членами.
 
-### <a name="IntrinsicObjects"></a> Встроенные объекты
+### <a name="intrinsic-objects"></a><a name="IntrinsicObjects"></a> Встроенные объекты
  IntelliSense для JavaScript предоставляет справочники по программированию для встроенных объектов, например `Array`, `String`, `Math`, `Date` и `Number`. См. подробнее о [встроенных объектах](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
-### <a name="UserDefined"></a> Пользовательские переменные, функции и объекты
+### <a name="user-defined-variables-functions-and-objects"></a><a name="UserDefined"></a> Пользовательские переменные, функции и объекты
  При изменении файла JavaScript [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] сканирует открытые и связанные документы для определения всех доступных ресурсов кода. В их число входят созданные пользователем переменные, функции и объекты. Потом эти ресурсы становятся доступны IntelliSense для JavaScript.
 
  Дополнительные сведения о пользовательских переменных, функциях и объектах см. в статье [о создании собственных объектов](https://msdn.microsoft.com/library/202863ha.aspx) на веб-сайте MSDN.
 
-### <a name="External"></a> Ссылки на внешние файлы
+### <a name="external-file-references"></a><a name="External"></a> Ссылки на внешние файлы
  Можно включить различные типы внешних ссылок на файлы, чтобы обеспечить поддержку IntelliSense в коде. Ссылки на внешние файлы могут представлять собой ссылки на скрипты, директивы ссылок, а также могут быть заданы при помощи эталонных групп.
 
-#### <a name="Script"></a> Ссылки на скрипты
+#### <a name="script-references"></a><a name="Script"></a> Ссылки на скрипты
  Чтобы не писать весь скрипт клиента на странице можно создать ссылки на внешние файлы с кодом скрипта. Это упрощает повторное использование кода на нескольких страницах и позволяет помещать скрипт клиента в кэш браузера.
 
  Если страница ASP.NET с поддержкой AJAX не используется, можно создать ссылку на внешний файл скрипта при помощи атрибута `src` в открывающем теге элемента `script`. Атрибут `src` указывает URL-адрес внешнего файла с исходным кодом или данными.
@@ -157,9 +157,9 @@ IntelliSense помогает быстрее писать код, допуска
 </asp:ScriptManager>
 ```
 
- IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. Дополнительные сведения о ресурсах внедренных скриптов см. в статье [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) (Пошаговое руководство. Внедрение в сборку файла JavaScript в качестве ресурса).
+ IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. См. подробнее о [внедрении в сборку файла JavaScript в качестве ресурса](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
-#### <a name="ReferenceDirectives"></a> Директивы ссылок
+#### <a name="reference-directives"></a><a name="ReferenceDirectives"></a> Директивы ссылок
  Директивы `reference` позволяют [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] устанавливать отношение между редактируемым скриптом и другими скриптами. Директива `reference` позволяет включить файл скрипта в контекст программирования текущего файла скрипта. Эта дает возможность для IntelliSense ссылаться извне на определенные функции, типы и поля в процессе программирования.
 
  Директива `reference` создается в форме комментария XML. Объявление директивы должно предшествовать любому скрипту в файле. Директива `reference` может содержать ссылку на скрипт на диске, ссылку на скрипт в сборке, ссылку на скрипт в службе или ссылку на скрипт на странице.
@@ -219,7 +219,7 @@ IntelliSense помогает быстрее писать код, допуска
 
 - Директивы ссылок в страницах со ссылками не будут обрабатываться, то есть директивы ссылок не разрешаются рекурсивно для страниц. Включается только скрипт, на который на странице имеется прямая ссылка.
 
-#### <a name="ReferenceGroups"></a> Группы ссылок
+#### <a name="reference-groups"></a><a name="ReferenceGroups"></a> Группы ссылок
  С помощью предопределенных групп ссылок можно задавать конкретные типы JS-файлов IntelliSense, которые находятся в области действия для различных проектов JavaScript. Доступны следующие типы эталонных групп:
 
 - Неявные (Windows) для приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для проекта указанного типа.
@@ -246,7 +246,7 @@ IntelliSense помогает быстрее писать код, допуска
 > [!WARNING]
 > Если при включении данной возможности производительность редактора кода снижается, рекомендуется отключить ее.
 
-### <a name="XMLDocComments"></a> Комментарии XML-документации
+### <a name="xml-documentation-comments"></a><a name="XMLDocComments"></a> Комментарии XML-документации
  Комментарии XML-документации представляют собой текстовые описания элементов кода, добавляемые в скрипт. Эти текстовые описания отображаются в IntelliSense при создании ссылки на скрипт с комментарием. Например, можно задать сведения о параметрах и возвращаемом значении функции. Комментарии XML-документации доступны только из файлов, сборок и служб со ссылками. См. подробнее о [комментариях XML для документирования](../ide/xml-documentation-comments-javascript.md) и [создании комментариев XML для документирования](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
  Технология IntelliSense может отображать комментарии XML-документации в следующих сценариях:
@@ -259,30 +259,30 @@ IntelliSense помогает быстрее писать код, допуска
 
   IntelliSense недоступен, если файл .aspx ссылается на другой файл .aspx.
 
-### <a name="ASPNet"></a> Объекты ASP.NET AJAX
+### <a name="aspnet-ajax-objects"></a><a name="ASPNet"></a> Объекты ASP.NET AJAX
  ASP.NET AJAX также поддерживает IntelliSense для JavaScript. ASP.NET AJAX включает клиентскую платформу, расширяющую стандартные типы, доступные в ECMAScript (JavaScript и JavaScript). Для предоставления IntelliSense для JavaScript подробных сведений об объектах ASP.NET AJAX, комментарии XML-документации были добавлены в [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Эти комментарии XML-документации отображаются при использовании типов и членов из библиотеки ASP.NET AJAX.
 
 > [!NOTE]
 > Закрытые члены IntelliSense для JavaScript не отображаются. Закрытые члены в ASP.NET AJAX можно определить по знаку подчеркивания (_) в начале.
 
-## <a name="Extensibility"></a> Расширяемость IntelliSense для JavaScript
+## <a name="javascript-intellisense-extensibility"></a><a name="Extensibility"></a> Расширяемость IntelliSense для JavaScript
  Языковая служба JavaScript предоставляет объекты и функции, которые позволяют изменить возможности IntelliSense для разработчиков, применяющих сторонние библиотеки. Эти функции особенно эффективны, если служба языка по умолчанию не может предоставить все данные, которые необходимо обеспечить заказчикам. Дополнительные сведения см. в статье [Extending JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) (Расширение IntelliSense для JavaScript).
 
-## <a name="Validation"></a> Проверка JavaScript
+## <a name="javascript-validation"></a><a name="Validation"></a> Проверка JavaScript
  Проверка скриптов JavaScript выполняется непрерывно в фоновом режиме. Если [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] обнаруживает синтаксические ошибки в коде JavaScript, отзывы предоставляется следующими способами:
 
 - Подчеркивание элементов в редакторе. Подчеркивание красной волнистой линией указывает на ошибки. Если навести указатель мыши на ошибку, отобразится подсказка с описанием ошибки.
 
-- Окно **Список ошибок** В окне **Список ошибок** выводится описание ошибки, указывается файл, где произошла ошибка, номер строки и столбца, а также проект. Если окно **Список ошибок** не отображается, в меню **Вид** щелкните **Список ошибок**.
+- **Список ошибок** окно. В окне **Список ошибок** выводится описание ошибки, указывается файл, где произошла ошибка, номер строки и столбца, а также проект. Если окно **Список ошибок** не отображается, в меню **Вид** щелкните **Список ошибок**.
 
 - В окне вывода отображаются незагруженные ссылки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Использование технологии IntelliSense](../ide/using-intellisense.md)
-- [Создание комментариев XML-документации](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
+- [Создание комментариев к XML-документации](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [Расширение IntelliSense для JavaScript](../ide/extending-javascript-intellisense.md)
 - [Завершение операторов с использованием идентификаторов](../ide/statement-completion-for-identifiers.md)
 - [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)
 - [Сведения об объектной модели DHTML](https://msdn2.microsoft.com/library/ms533022.aspx)
-- [Отображение списка членов](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Список членов](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Атрибут SRC &#124; Свойство src](https://msdn2.microsoft.com/library/ms534642.aspx)

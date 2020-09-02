@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findChildren | Документация Майкрософт
+title: 'IDiaSession:: Финдчилдрен | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf274bb0f572da11a9aa43248da7eaa72a2e73c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150421"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает все дочерние элементы идентификатора указанного родительского элемента, которые соответствуют типу имя и символов.  
+Извлекает все дочерние элементы указанного родительского идентификатора, соответствующие имени и типу символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,35 +39,35 @@ HRESULT findChildren ( 
   
 #### <a name="parameters"></a>Параметры  
  `parent`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий родительский объект. Если этот символ родительской функции, модуля или блока, то дочерние лексические возвращаются в `ppResult`. Если родительский символ относится к типу, его дочерних элементов класса возвращаются. Если этот параметр имеет `NULL`, затем `symtag` должно быть присвоено `SymTagExe` или `SymTagNull`, который возвращает глобальной области (файл .exe).  
+ окне Объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий родительский элемент. Если этот родительский символ является функцией, модулем или блоком, то его лексические потомки возвращаются в `ppResult` . Если родительский символ является типом, возвращаются его дочерние элементы класса. Если этот параметр имеет `NULL` значение, то `symtag` для него должен быть задан `SymTagExe` или `SymTagNull` , который возвращает глобальную область (exe-файл).  
   
  `symtag`  
- [in] Указывает тег символа дочерних элементов, которые требуется получить. Значения берутся из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления. Значение `SymTagNull` для получения всех дочерних элементов.  
+ окне Указывает тег символа для извлекаемых дочерних элементов. Значения берутся из перечисления [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) . Задайте для значение, `SymTagNull` чтобы получить все дочерние элементы.  
   
  `name`  
- [in] Задает имя используемого дочерние элементы должны быть получены. Значение `NULL` для всех дочерних элементов, требуется получить.  
+ окне Указывает имя извлекаемых дочерних элементов. Задайте значение, чтобы `NULL` получить все дочерние элементы.  
   
  `compareFlags`  
- [in] Задает параметры сравнения, который применяется к соответствующим именем. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.  
+ окне Задает параметры сравнения, применяемые к соответствию имен. Значения из перечисления [перечисления намесеарчоптионс](../../debugger/debug-interface-access/namesearchoptions.md) можно использовать отдельно или в сочетании.  
   
  `ppResult`  
- [out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) извлечь объект, содержащий список дочерних символов.  
+ заполняет Возвращает объект [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md) , содержащий список полученных дочерних символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как для поиска локальных переменных функции `pFunc` , имя для поиска `szVarName`.  
+ В следующем примере показано, как найти локальные переменные функции `pFunc` , соответствующие имени `szVarName` .  
   
 ```cpp#  
 IDiaEnumSymbols* pEnum;  
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+## <a name="see-also"></a>См. также:  
+ [Средств](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
+ [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)   
+ [Перечисление Намесеарчоптионс](../../debugger/debug-interface-access/namesearchoptions.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

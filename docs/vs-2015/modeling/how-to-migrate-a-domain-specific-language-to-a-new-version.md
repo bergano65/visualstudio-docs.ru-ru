@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45f7b38f7dbb6ea470b2d9e186dc8e6bf4b33b1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657328"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос доменного языка в новую версию
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно выполнить миграцию проектов, определяющих и использующих доменный язык, для [!INCLUDE[vs2010](../includes/vs2010-md.md)] из версии [!INCLUDE[dsl](../includes/dsl-md.md)], которая была распространена с [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].
+Проекты, которые определяют и используют доменный язык, можно перенести [!INCLUDE[vs2010](../includes/vs2010-md.md)] из версии [!INCLUDE[dsl](../includes/dsl-md.md)] , которая была распространена с помощью [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] .
 
- Средство миграции предоставляется в составе [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]. Средство преобразует [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проекты и решения, использующие или определяющие средства DSL.
+ Средство миграции предоставляется в составе [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)] . Средство преобразует [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проекты и решения, использующие или определяющие средства DSL.
 
- Средство миграции необходимо запускать явным образом: оно не запускается автоматически при открытии решения в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Этот инструмент и подробные рекомендации можно найти по следующим адресам:
+ Средство миграции необходимо запускать явным образом: оно не запускается автоматически при открытии решения в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Этот инструмент и подробные рекомендации можно найти по следующим адресам:
 
- **% Program Files%\Microsoft Visual Studio 2010 Сдк\висуалстудиоинтегратион\тулс\дслтулс\дслпрожектсмигратионтул.ЕКСЕ**
+ **% Program Files%\Microsoft SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exeVisual Studio 2010 **
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Перед миграцией проектов DSL
- Средство миграции изменяет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] файлы проекта ( **. csproj**) и файлы решения (**SLN**).
+ Средство миграции изменяет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] файлы проекта (**. csproj**) и файлы решения (**SLN**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Подготовка проектов к миграции.
 
@@ -44,7 +44,7 @@ ms.locfileid: "72657328"
 
    - Можно дважды щелкнуть инструмент в проводнике (или проводнике) или запустить средство из командной строки. Средство находится в этом расположении:
 
-        **%ProgramFiles%\Microsoft Visual Studio 2010 Сдк\висуалстудиоинтегратион\тулс\дслтулс\дслпрожектсмигратионтул.ЕКСЕ**
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2. Выберите папку, содержащую решения и проекты, которые необходимо преобразовать.
 
@@ -63,9 +63,9 @@ ms.locfileid: "72657328"
 
    1. Нажмите кнопку **преобразовать**.
 
-        Перед преобразованием каждого файла проекта копия _Project_ **. csproj** сохраняется как _Project_ **. VS2008. csproj.**
+        Перед преобразованием каждого файла проекта копия _Project_**. csproj** сохраняется как _Project_**. VS2008. csproj.**
 
-        Копия каждого _решения_ **. sln** сохраняется как _Solution_ **. VS2008. sln**
+        Копия каждого _решения_**. sln** сохраняется как _Solution_**. VS2008. sln**
 
    2. Исследовать все неудачные преобразования, о которых сообщается.
 
@@ -86,5 +86,5 @@ ms.locfileid: "72657328"
 
    - Протестируйте конструктор.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Новые возможности пакета SDK визуализации и моделирования](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

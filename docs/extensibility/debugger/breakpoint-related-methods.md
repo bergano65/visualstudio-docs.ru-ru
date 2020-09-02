@@ -1,5 +1,5 @@
 ---
-title: Методы, связанные с брейк-пойнтами Документы Майкрософт
+title: Методы, связанные с точкой останова | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,75 +12,75 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739206"
 ---
-# <a name="breakpoint-related-methods"></a>Методы, связанные с брейк-пойнтами
-Двигатель отладки (DE) должен поддерживать настройку точек разрыва. Отладка Visual Studio поддерживает следующие типы точек разрыва:
+# <a name="breakpoint-related-methods"></a>Методы, связанные с точкой останова
+Модуль отладки (DE) должен поддерживать настройку точек останова. Отладка Visual Studio поддерживает следующие типы точек останова:
 
 - Bound
 
-     Запрос через uI и успешно привязан к определенному местоположению кода
+     Запрашивается через пользовательский интерфейс и успешно привязан к указанному расположению кода
 
-- Ожидает
+- Ожидание
 
-     Запрос через uI, но еще не привязан к фактическим инструкциям
+     Запрашивается через пользовательский интерфейс, но еще не привязан к фактическим инструкциям
 
-## <a name="discussion"></a>Обсуждение
- Например, точка разрыва находится в ожидании, когда инструкции еще не загружены. При загрузке кода ожидающие поломки пытаются привязаться к коду в установленном месте, то есть вставить инструкции по взлому в код. События отправляются менеджеру отладки сеанса (SDM) для указания успешной привязки или уведомления о наличии обязательных ошибок.
+## <a name="discussion"></a>Разговор
+ Например, ожидающая точка останова возникает, когда инструкции еще не загружены. При загрузке кода ожидающие точки останова пытаются выполнить привязку к коду в указанном расположении, то есть вставить инструкции break в код. События отправляются в Диспетчер отладки сеансов (SDM) для обозначения успешной привязки или уведомления о возникновении ошибок привязки.
 
- Ожидающий момент разрыва также управляет собственным внутренним списком соответствующих связанных моментов разрыва. Одна нерешенная точка разрыва может привести к вставке многих моментов разрыва в коде. Отладка uI Visual Studio показывает представление дерева ожидающих точек разрыва и соответствующих связанных точек разрыва.
+ Ожидающая точка останова также управляет собственным внутренним списком соответствующих связанных точек останова. Одна из ожидающих точек останова может привести к вставке множества точек останова в коде. В пользовательском интерфейсе отладки Visual Studio отображается древовидное представление ожидающих точек останова и соответствующих им связанных точек останова.
 
- Создание и использование ожидающих моментов разрыва требуют реализации метода [IDebugEngine2::CreatePendingBreakpoint,](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) а также следующих методов интерфейсов [IDebugPendingBreakpoint2.](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
-
-|Метод|Описание|
-|------------|-----------------|
-|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Определяет, может ли указанная точка доступа к моменту ожидания связываться с местоположением кода.|
-|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Связывает указанную точку разрыва с одним или несколько местами кода.|
-|[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Получает состояние ожидающего разрыва.|
-|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Получает запрос точки разрыва, используемый для создания ожидающего разрыва.|
-|[Включение](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает включенное состояние ожидающего разрыва.|
-|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Перечисляет все точки разрыва, связанные с ожидавшей разрыва.|
-|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Перечисляет все точки ошибки, которые являются результатом отложенной точки разрыва.|
-|[Удалить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет отложенную точку разрыва и все точки разрыва, связанные с ней.|
-
- Чтобы перечислить связанные точки разрыва и точки ошибки, необходимо реализовать все методы [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) и [IEnumDebugErrorBreakpoints2.](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
-
- В ожидании моментов разрыва, которые связываются с местоположением кода, требуется реализация следующих методов [IDebugBoundBreakpoint2.](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+ Создание и использование ожидающих точек останова требует реализации метода [IDebugEngine2:: креатепендингбреакпоинт](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) , а также следующих методов интерфейсов [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Получает ожидаемную точку разрыва, содержащую точку разрыва.|
-|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Получает состояние свяжей точки разрыва.|
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Получает разрешение точки разрыва, описывающая точку разрыва.|
-|[Включение](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Позволяет или отсваивает точку разрыва.|
-|[Удалить](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Удаляет точку разрыва.|
+|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Определяет, может ли заданная ожидающая точка останова быть привязана к расположению кода.|
+|[Выполняется](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Привязывает указанную отложенную точку останова к одному или нескольким расположениям кода.|
+|[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Возвращает состояние ожидающей точки останова.|
+|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Получает запрос точки останова, используемый для создания ожидающей точки останова.|
+|[Разрешить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Переключает включенное состояние ожидающей точки останова.|
+|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Перечисляет все точки останова, привязанные к ожидающей точке останова.|
+|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Перечисляет все точки останова, являющиеся результатом ожидающей точки останова.|
+|[Удаление](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Удаляет отложенную точку останова и все точки останова, привязанные к ней.|
 
- Информация о разрешении и запросе требует реализации следующих методов [IDebugBreakpointResolution2.](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+ Чтобы перечислить привязанные точки останова и точки останова с ошибками, необходимо реализовать все методы [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) и [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).
 
-|Метод|Описание|
-|------------|-----------------|
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Получает тип точки разрыва, представленную разрешением.|
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Получает информацию о разрешении точки разрыва, описывающая точку разрыва.|
-
- Разрешение ошибок, которые могут возникнуть во время связывания, требует реализации следующих методов [IDebugErrorBreakpoint2.](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+ Ожидающие точки останова, привязанные к расположению кода, должны реализовать следующие методы [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Получает ожидачную точку разрыва, содержащую точку разрыва ошибки.|
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Получает разрешение ошибки точки разрыва, описывающая точку разрыва ошибки.|
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Возвращает ожидающую точку останова, содержащую точку останова.|
+|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Возвращает состояние привязанной точки останова.|
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Возвращает разрешение точки останова, описывающее точку останова.|
+|[Разрешить](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Включает или отключает точку останова.|
+|[Удаление](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Удаляет связанную точку останова.|
 
- Разрешение ошибок, которые могут возникнуть во время связывания, также требует следующих методов [IDebugErrorBreakpointResolution2.](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+ Для разрешения и сведений о запросе требуется реализация следующих методов [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Получает тип точки разрыва.|
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Получает информацию о разрешении точки разрыва.|
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Возвращает тип точки останова, представленной разрешением.|
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Возвращает сведения о разрешении точки останова, описывающие точку останова.|
 
- Просмотр исходного кода в точке разрыва требует реализации методов [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) и/или методов [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).
+ Разрешение ошибок, которые могут возникнуть во время привязки, требует реализации следующих методов [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .
 
-## <a name="see-also"></a>См. также
-- [Контроль исполнения и государственная оценка](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+|Метод|Описание|
+|------------|-----------------|
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Возвращает ожидающую точку останова, содержащую точку останова.|
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Возвращает разрешение ошибки точки останова, описывающее точку останова.|
+
+ Разрешение ошибок, которые могут возникнуть во время привязки, также требует использования следующих методов [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).
+
+|Метод|Описание|
+|------------|-----------------|
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Возвращает тип точки останова.|
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Возвращает сведения о разрешении точки останова.|
+
+ Для просмотра исходного кода в точке останова необходимо реализовать методы [IDebugStackFrame2:: жетдокументконтекст](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) и/или методов [IDebugStackFrame2:: жеткодеконтекст](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).
+
+## <a name="see-also"></a>См. также раздел
+- [Контроль выполнения и оценка состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)

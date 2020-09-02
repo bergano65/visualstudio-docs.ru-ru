@@ -1,5 +1,5 @@
 ---
-title: IDiaSegment::get_execute | Документация Майкрософт
+title: 'IDiaSegment:: get_execute | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bf7c3a67ceca3249a4922223ec4db710bb9c183
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150497"
 ---
-# <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
+# <a name="idiasegmentget_execute"></a>IDiaSegment::get_execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, является ли сегмент исполняемого файла.  
+Получает флаг, указывающий, является ли сегмент исполняемым.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_execute ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если сегмент помечен как исполняемый файл; в противном случае — значение, возвращает `FALSE`.  
+ заполняет Возвращает значение `TRUE` , если сегмент помечен как исполняемый; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

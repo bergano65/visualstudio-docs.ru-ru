@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537336"
 ---
 # <a name="setwefprocessid-method"></a>Метод SetWefProcessId
@@ -37,7 +37,7 @@ HRESULT SetWefProcessId(
 ## <a name="return-value"></a>Возвращаемое значение
  Значение HRESULT, указывающее, успешно ли завершен метод.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Этот метод должен вызываться после создания процесса содержимого WEF, но перед запуском содержимого WEF.
 
  Если требуется, чтобы среда разработки присоединит отладчик к процессу содержимого WEF, среда должна выполнить эту операцию в реализации этого метода.

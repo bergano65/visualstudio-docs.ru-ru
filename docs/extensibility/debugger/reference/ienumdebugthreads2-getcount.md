@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2:GetCount Документы Майкрософт
+title: 'IEnumDebugThreads2:: NOCOUNT | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 81c697c3b2121cb5cc59ebcd51f92f9a15cdc4b3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715206"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Параметры
 `pcelt`\
-(ваут) Возвращает количество элементов в перечислении.
+заполняет Возвращает количество элементов в перечислении.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод не является частью обычного интерфейса перечисления COM, `Next`который `Clone` `Skip`определяет, `Reset` что только , и, и методы должны быть реализованы.
+## <a name="remarks"></a>Remarks
+ Этот метод не является частью пользовательского интерфейса перечисления com, который указывает, что `Next` `Clone` необходимо реализовать только методы,, `Skip` и `Reset` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

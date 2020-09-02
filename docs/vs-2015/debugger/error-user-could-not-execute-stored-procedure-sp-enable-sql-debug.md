@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Не удалось выполнить хранимую процедуру sp_enable_sql_debug пользователя | Документация Майкрософт'
+title: 'Ошибка: Пользователю не удалось выполнить хранимую процедуру sp_enable_sql_debug | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 759386728283d3d39219133e53668afe3259714a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697677"
 ---
-# <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>Ошибка: Пользователю не удалось выполнить хранимую процедуру sp_enable_sql_debug
+# <a name="error-user-could-not-execute-stored-procedure-sp_enable_sql_debug"></a>Ошибка: Пользователю не удалось выполнить хранимую процедуру sp_enable_sql_debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Хранимую процедуру sp_enable_sql_debug не удалось выполнить на сервере. Для этого могут быть следующие причины:  
@@ -32,8 +32,8 @@ ms.locfileid: "65697677"
   
 - Отсутствие необходимых разрешений на сервере. Для отладки на SQL Server 2005 учетная запись, запущенная Visual Studio, и учетная запись, используемая для подключения к SQL Server, должны быть членами роли системного администратора. Учетная запись, используемая для подключения к SQL Server, является либо учетной записью Windows (при использовании проверки подлинности Windows) либо учетной записью с идентификатором пользователя и паролем (при использовании проверки подлинности SQL).  
   
-  Дополнительные сведения см. в разделе [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+  Дополнительные сведения см. в разделе [Практическое руководство. Предоставление разрешений на отладку SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+## <a name="see-also"></a>См. также:  
+ [Как задать разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Настройка отладки SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::symsAreEquiv | Документация Майкрософт
+title: 'IDiaSession:: Симсарикуив | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba8c77d7d97da75ce82fcbe732db64acf633b8af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150216"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Проверяет, являются ли эквивалентными двух символов.  
+Проверяет, эквивалентны ли два символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,14 +36,14 @@ HRESULT symsAreEquiv ( 
   
 #### <a name="parameters"></a>Параметры  
  `symbolA`  
- [in] Первый [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, используемый для сравнения.  
+ окне Первый объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , используемый в сравнении.  
   
  `symbolB`  
- [in] Второй `IDiaSymbol` объект, используемый для сравнения.  
+ окне Второй `IDiaSymbol` объект, используемый для сравнения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает значение, если символы эквивалентны, `S_OK`; в противном случае возвращает `S_FALSE`, символы не эквивалентны. В противном случае возвращает код ошибки.  
+ Если символы эквивалентны, возвращает `S_OK` ; в противном случае возвращает `S_FALSE` , символы не эквивалентны. В противном случае возвратите код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2 Документы Майкрософт
+title: IEnumDebugPropertyInfo2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bfa0f8feff6a53b84a6337e5bea8bdc622e19a20
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715354"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
-Этот интерфейс перечисляет [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.
+Этот интерфейс перечисляет структуры [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,34 +28,34 @@ ms.locfileid: "80715354"
 IEnumDebugPropertyInfo2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Движок отладки (DE) реализует этот интерфейс для представления информации для конкретного свойства.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс для представления сведений о конкретном свойстве.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Позвоните [ВИNumChildren,](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) чтобы получить интерфейс, представляющий детей определенного свойства. Позвоните [EnumProperties,](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) чтобы получить этот интерфейс, представляющий свойства определенного кадра стека.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызовите [енумчилдрен](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) , чтобы получить этот интерфейс, представляющий дочерние элементы определенного свойства. Вызовите [енумпропертиес](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) , чтобы получить этот интерфейс, представляющий свойства определенного кадра стека.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IEnumDebugPropertyInfo2`.
+ В следующей таблице показаны методы `IEnumDebugPropertyInfo2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[Далее](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Извлекает определенное количество [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структур в последовательности перечисления.|
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Пропускает определенное количество [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структур в последовательности перечисления.|
-|[Сбросить](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Сбрасывает последовательность перечислений в начало.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md) (Клонировать)|Создает регистратор, содержащий то же состояние перечисления, что и текущий регистратор.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Получает количество [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структур в регистраторе.|
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Извлекает указанное число структур [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) в последовательности перечисления.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Пропускает указанное число структур [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) в последовательности перечисления.|
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Сбрасывает последовательность перечислений в начало.|
+|[Клонировать](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Возвращает число структур [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) в перечислителе.|
 
-## <a name="remarks"></a>Примечания
- В целом свойство — это иерархия информации, которая может включать имя, значение, адрес и тип, а также любую другую информацию, соответствующую соответствующему объекту свойств или кадровому штабу. Более подробную информацию можно узнать в [IDebugProperty2.](../../../extensibility/debugger/reference/idebugproperty2.md)
+## <a name="remarks"></a>Remarks
+ Как правило, свойство представляет собой иерархию данных, которая может включать имя, значение, адрес и тип, а также любые другие сведения, соответствующие связанному объекту свойства или кадру стека. Дополнительные сведения см. в разделе [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

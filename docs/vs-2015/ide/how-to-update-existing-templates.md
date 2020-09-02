@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b56cf11057957b0eb99fc065ed26af10d8adfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670577"
 ---
 # <a name="how-to-update-existing-templates"></a>Практическое руководство. Обновление существующих шаблонов
@@ -51,7 +51,7 @@ ms.locfileid: "72670577"
 
 3. Измените или удалите текущие файлы шаблона или добавьте в него новые файлы.
 
-4. Откройте, измените и сохраните VSTEMPLATE-файл с кодом XML для обработки обновленного поведения или новых файлов. Дополнительные сведения о схеме VSTEMPLATE см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md). Дополнительные сведения о том, что именно можно параметризовать в исходных файлах, см. в разделе [Параметры шаблона](../ide/template-parameters.md)
+4. Откройте, измените и сохраните VSTEMPLATE-файл с кодом XML для обработки обновленного поведения или новых файлов. Дополнительные сведения о схеме VSTEMPLATE см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md). Дополнительные сведения о том, что можно параметризовать в исходных файлах, см. в разделе [Параметры шаблона](../ide/template-parameters.md) .
 
 5. Выберите файлы в шаблоне, щелкните правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72670577"
 
 7. Удалите извлеченные файлы шаблона и ZIP-файл старого шаблона.
 
-8. Запустите (с правами администратора) экземпляр командной строки разработчика (в меню "Пуск" в разделе **Visual Studio 2010/Инструменты Visual Studio/Командная строка разработчика** ).
+8. Запустите (с правами администратора) экземпляр командной строки разработчика (в меню "Пуск" в разделе **Visual Studio 2010/Инструменты Visual Studio/Командная строка разработчика **).
 
 9. Выполните следующую команду: `devenv /installvstemplates`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md) для [создания шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) . [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [Параметры шаблона](../ide/template-parameters.md) [: создание начальных наборов](../ide/how-to-create-starter-kits.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537622"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Руководство. программное использование встроенных диалоговых окон в Word
@@ -45,7 +45,7 @@ ms.locfileid: "85537622"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. программное использование диалоговых окон Word в скрытом режиме](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)
