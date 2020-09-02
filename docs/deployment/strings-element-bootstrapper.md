@@ -1,5 +1,5 @@
 ---
-title: '&lt;Строки&gt; элемент (загрузчик) | Документация Майкрософт'
+title: '&lt;&gt;Элемент Strings (начальный загрузчик) | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747415"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (установщик)
-Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;&gt;Элемент Strings (начальный загрузчик)
+Определяет локализованные строки для названий продуктов, имен пакетов и сообщений об ошибках установки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,19 +40,19 @@ ms.locfileid: "66747415"
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- `Strings` Элемент является дочерним элементом `Package` элемент. Он не имеет атрибутов.
+ `Strings`Элемент является дочерним по отношению к `Package` элементу. У него нет атрибутов.
 
-## <a name="string"></a>String
- `String` Элемент является дочерним элементом `Strings` элемент. Объект `Strings` элемент может иметь один или несколько `String` элементов.
+## <a name="string"></a>Строка
+ `String`Элемент является дочерним по отношению к `Strings` элементу. `Strings`Элемент может иметь один или несколько `String` элементов.
 
- `String` содержит следующий атрибут.
+ `String` имеет следующий атрибут.
 
 |Атрибут|Описание|
 |---------------|-----------------|
 |`Name`|Обязательный. Имя строки.|
 
 ## <a name="example"></a>Пример
- В следующем примере кода задает все строки на английском языке для установщика .NET Framework.
+ В следующем примере кода задаются все строки на английском языке для установщика .NET Framework.
 
 ```xml
 <Strings>
@@ -73,5 +73,5 @@ ms.locfileid: "66747415"
 </Strings>
 ```
 
-## <a name="see-also"></a>См. также
-- [\<Пакет > элемент](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>См. также раздел
+- [\<Package> дерев](../deployment/package-element-bootstrapper.md)

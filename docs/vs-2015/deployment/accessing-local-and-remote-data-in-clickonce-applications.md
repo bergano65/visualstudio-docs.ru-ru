@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688119"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Доступ к локальным и удаленным данным в приложениях ClickOnce
@@ -31,7 +31,7 @@ ms.locfileid: "65688119"
 ## <a name="local-data"></a>Локальные данные  
  В [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]можно загружать и хранить данные локально, используя любой из следующих методов.  
   
-- Каталог данных[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]   
+- Каталог данных[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]  
   
 - Изолированное хранилище  
   
@@ -49,7 +49,7 @@ ms.locfileid: "65688119"
  Чтобы поместить существующий файл внутрь каталога данных, необходимо пометить существующий файл как файл данных в файле манифеста приложения вашего приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Дополнительные сведения см. в разделе [Практическое руководство. включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Чтение и запись в каталоге данных  
- Для чтения из каталога данных нужно, чтобы приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] запросило разрешение на чтение; аналогично для записи в каталог требуется разрешение на запись. Ваше приложение получит это разрешение автоматически, если оно настроено для работы с полным доверием. Дополнительные сведения о повышении уровня разрешений приложения с использованием повышение уровня разрешений или развертывания надежных приложений, см. в разделе [защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Для чтения из каталога данных нужно, чтобы приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] запросило разрешение на чтение; аналогично для записи в каталог требуется разрешение на запись. Ваше приложение получит это разрешение автоматически, если оно настроено для работы с полным доверием. Дополнительные сведения о повышении разрешений для приложения с помощью повышения разрешений или развертывания доверенных приложений см. в разделе [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
 > Если в организации не используется развертывание надежных приложений и отключено повышение уровня разрешений, подтверждение разрешений завершится ошибкой.  
@@ -59,7 +59,7 @@ ms.locfileid: "65688119"
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- Дополнительные сведения о маркировке файлов в развертывании как файлов данных см. в разделе [как: включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Дополнительные сведения о маркировке файлов в развертывании как файлов данных см. в разделе [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Можно также получить путь к каталогу данных, используя соответствующие переменные в классе <xref:System.Windows.Forms.Application> , например <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "65688119"
 |Установка общей папки|Отсутствует доступ к веб-серверам|  
 |Установка с компакт-диска|Доступны любые веб-серверы|  
   
- Если приложению [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] не удается получить доступ к веб-серверу из-за ограничений безопасности, приложение должно подтвердить <xref:System.Net.WebPermission> для этого веб-сайта. Дополнительные сведения о повышении уровня разрешений безопасности для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, см. в разделе [защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Если приложению [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] не удается получить доступ к веб-серверу из-за ограничений безопасности, приложение должно подтвердить <xref:System.Net.WebPermission> для этого веб-сайта. Дополнительные сведения о повышении разрешений безопасности для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения см. в разделе [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>Доступ к данным через веб-службу XML  
  Если предоставить данные в качестве веб-службы XML, можно осуществлять доступ к этим данным с помощью прокси-сервера веб-службы XML. Прокси-сервер является классом [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , созданным с помощью любого приложения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Операции веб-службы XML, такие как извлечение клиентов, размещение заказов и т. д., предоставляются как методы прокси-сервера. Благодаря этому пользоваться веб-службами гораздо проще, чем обычным текстом или файлами XML.  
@@ -110,5 +110,5 @@ ms.locfileid: "65688119"
   
  В большинстве случаев осуществлять прямой доступ к базе данных не потребуется, поскольку доступ осуществляется через приложение веб-сервера, созданное в [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] или веб-службе XML. Такой доступ к базе данных часто является оптимальным подходом, если приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывается с веб-сервера. Доступ к серверу с частичным доверием можно осуществлять без повышения уровня разрешений вашего приложения.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+## <a name="see-also"></a>См. также:  
+ [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

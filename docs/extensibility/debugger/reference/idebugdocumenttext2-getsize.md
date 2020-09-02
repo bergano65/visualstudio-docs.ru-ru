@@ -1,5 +1,5 @@
 ---
-title: IDebugДокументТекст2::GetSize Документы Майкрософт
+title: 'IDebugDocumentText2:: DataSize | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731589"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-Извлекает размер текста в этой позиции в документе.
+Получает размер текста в данной позиции в документе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,19 +43,19 @@ int GetSize( 
 
 ## <a name="parameters"></a>Параметры
 `pcNumLines`\
-(ваут) Возвращает количество строк текста.
+заполняет Возвращает количество строк текста.
 
 `pcNumChars`\
-(ваут) Возвращает количество символов текста.
+заполняет Возвращает количество символов текста.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
- (только си) Если определенное значение не желательно, передайте NULL для параметра.
+ [Только C++] Если определенное значение не требуется, передайте значение NULL для параметра.
 
- (Только для C) Оба параметра должны быть указаны.
+ [Только C#] Необходимо указать оба параметра.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

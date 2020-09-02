@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Документация Майкрософт
+title: 'IDiaSymbol:: get_isAcceleratorPointerTagLiveRange | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149447"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, соответствует ли символ к *символ диапазона определения* для тега компонента переменной указателя в коде, скомпилированном для ускорителя C++ AMP. Символ определения диапазона — расположение переменной для диапазона адресов.  
+Получает флаг, указывающий, соответствует ли символ *символу диапазона определения* для компонента-тега в переменной-указателе в коде, скомпилированном для C++ amp ускорителя. Символ диапазона определения — это расположение переменной для диапазона адресов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,10 +32,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Указатель на `BOOL` , указывающее, соответствует ли символ к символу definition диапазона.  
+ заполняет Указатель на объект `BOOL` , указывающий, соответствует ли символ символу диапазона определения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

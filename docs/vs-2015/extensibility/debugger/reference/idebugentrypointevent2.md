@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 22d7c663dbd1c9c397e7145c9dea74c8424e4383
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689182"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM) в том случае, когда программа близок к выполнению первой инструкции кода пользователя.  
+Модуль отладки (DE) отправляет этот интерфейс в Диспетчер отладки сеансов (SDM), когда программа собирается выполнить первую инструкцию пользовательского кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,23 +31,23 @@ IDebugEntryPointEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс в процессе обычной работы. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для доступа к `IDebugEvent2` интерфейс.  
+ Метод DE реализует этот интерфейс в рамках обычных операций. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. Модель SDM использует [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для доступа к `IDebugEvent2` интерфейсу.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- DE создает и отправляет этот объект события, когда отлаживаемой программы было загружено и готов к выполнению первой инструкции кода пользователя. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, если он присоединен к отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Параметр DE создает и отправляет этот объект события при загрузке отлаживаемой программы и готовности выполнить первую инструкцию пользовательского кода. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , предоставляемой SDM при присоединении к отлаживаемой программе.  
   
-## <a name="remarks"></a>Примечания  
- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) отправляется, когда программа является близок к выполнению очень первой инструкции. Например `IDebugEntryPoint2` отправляется, когда программа является близок к выполнению пользователя `main` функции.  
+## <a name="remarks"></a>Remarks  
+ [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) отправляется, когда программа собирается выполнить самую первую инструкцию. Например, `IDebugEntryPoint2` отправляется, когда программа собирается выполнить `main` функцию пользователя.  
   
- При отправке DE `IDebugEntryPointEvent2`, текущая позиция кода должно представлять в первой инструкции кода пользователя, например `main`.  
+ Когда отсылается `IDebugEntryPointEvent2` , текущее расположение кода должно находиться в первой инструкции пользовательского кода, например `main` .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)

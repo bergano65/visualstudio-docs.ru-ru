@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904080"
 ---
 # <a name="add-a-toolbar"></a>Добавление панели инструментов
@@ -89,5 +89,5 @@ ms.locfileid: "85904080"
 
 7. Теперь панель инструментов должна отображаться в виде значка справа от значка найти в файлах. Щелкнув значок, вы увидите окно сообщения с текстом **тулбартесткоммандпаккаже. Внутри Идетулбар. Тулбартесткомманд. Менуитемкаллбакк ()**.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

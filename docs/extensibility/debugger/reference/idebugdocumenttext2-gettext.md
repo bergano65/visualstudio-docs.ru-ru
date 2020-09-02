@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText Документы Майкрософт
+title: 'IDebugDocumentText2:: GetText | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731573"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Извлекает текст из указанной позиции в документе.
+Извлекает текст из указанной позицией в документе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>Параметры
 `pos`\
-(в) Структура [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) которая указывает местоположение текста, подкоторым которого следует получить.
+окне Структура [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , указывающая расположение извлекаемого текста.
 
 `cMaxChars`\
-(в) Максимальное количество символов текста, которые должны быть извлечены.
+окне Максимальное число символов в тексте, которое необходимо получить.
 
 `pText`\
-(в, вне) Указатель на буфер, который должен быть заполнен нужным текстом. Этот буфер должен содержать по `cMaxChars` крайней мере количество широких символов.
+[вход, выход] Указатель на буфер, который должен быть заполнен требуемым текстом. Этот буфер должен содержать не менее `cMaxChars` нескольких расширенных символов.
 
 `pcNumChars`\
-(ваут) Возвращает количество фактически извлеченных символов.
+заполняет Возвращает число фактически извлеченных символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-Этот пример показывает, как этот метод можно вызвать из C.
+В этом примере показано, как этот метод можно вызывать из C#.
 
 ```csharp
 using System.Runtime.Interop.Services;
@@ -100,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

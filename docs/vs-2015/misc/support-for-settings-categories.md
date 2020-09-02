@@ -11,14 +11,14 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689099"
 ---
 # <a name="support-for-settings-categories"></a>Поддержка категорий параметров
-Категория параметров состоит из группы параметров, предназначенных для настройки интегрированной среды разработки (IDE). Например, параметры позволяют управлять макетом окон [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и содержимым меню. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Категория параметров состоит из группы параметров, предназначенных для настройки интегрированной среды разработки (IDE). Например, параметры позволяют управлять макетом окон [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и содержимым меню. Дополнительные сведения см. [в разделе Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  В меню **Сервис** щелкните элемент **Импорт и экспорт параметров** , чтобы запустить **Мастер импорта и экспорта параметров**. Мастер предлагает три варианта: экспорт, импорт или сброс параметров. Например, при выборе экспорта открывается мастер **Выбор параметров для экспорта** .  
   
@@ -51,7 +51,7 @@ ms.locfileid: "65689099"
 > Каноническое имя не отображается в пользовательском интерфейсе. Оно используется для сопоставления считываемого имени с категорией параметров, что во многом аналогично программному идентификатору (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Атрибут категории параметров  
- <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Определяет сопоставление категорий с точками настраиваемых параметров в **мастер импорта и экспорта параметров** путем связывания категории с пакетом VSPackage, который его предоставляет. Рассмотрим следующий фрагмент кода:  
+ <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>Определяет сопоставление категорий с пользовательскими параметрами в **мастере импорта и экспорта параметров** путем связывания категории с пакетом VSPackage, предоставляющим эту категорию. Рассмотрим следующий фрагмент кода:  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -60,7 +60,7 @@ ms.locfileid: "65689099"
   
  Точка параметров в **мастере импорта и экспорта параметров**имеет имя "My Settings". При выборе точки параметров отображается описание **Various Options**. Имя и описание точки параметров берутся из локализованных строковых ресурсов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Создание страницы параметров](../extensibility/creating-an-options-page.md)   
  [Примеры VSSDK](../misc/vssdk-samples.md)   
  [Состояние VSPackage](../misc/vspackage-state.md)   

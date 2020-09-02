@@ -1,5 +1,5 @@
 ---
-title: IDebugДокументОпозиция2:GetFileName Документы Майкрософт
+title: 'IDebugDocumentPosition2:: имя_файла | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7cc194c43b0a95ad92e9421334be7af2cd6073b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731677"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-Получает имя файла исходного файла, содержащего позицию документа.
+Возвращает имя исходного файла, содержащего расположение документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetFileName( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrFileName`\
-(ваут) Возвращает имя файла исходного файла.
+заполняет Возвращает имя файла исходного кода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Исходный файл не всегда может иметь имя файла (исходный файл может не существовать на диске, например).
+## <a name="remarks"></a>Remarks
+ Файл исходного кода может не всегда иметь имя (например, исходный файл может не существовать на диске).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

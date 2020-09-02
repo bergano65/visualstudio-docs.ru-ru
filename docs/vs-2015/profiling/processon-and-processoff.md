@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180207"
 ---
 # <a name="processon-and-processoff"></a>Подкоманды ProcessOn и ProcessOff
@@ -45,24 +45,24 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Целочисленный идентификатор запускаемого или останавливаемого процесса. Идентификаторы процессов приводятся на вкладке "Процесс" диспетчера задач Windows.  
   
 ## <a name="required-subcommands"></a>Необходимые подкоманды  
- Нет  
+ Отсутствуют  
   
 ## <a name="valid-subcommands"></a>Допустимые подкоманды  
  Подкоманды **ProcessOn** и **ProcessOff** можно задать в командной строке, содержащей указанные ниже подкоманды.  
   
- **Start:** `Method`  
+ **Начало работы:**`Method`  
  Инициализирует сеанс профилирования из командной строки и задает указанный метод профилирования.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает заданное приложение и начинает профилирование с помощью метода выборки.  
   
- **Attach:** `PID`  
+ **Присоединиться:**`PID`  
  Начинает профилирование указанного процесса.  
   
  **GlobalOff**&#124;**GlobalOn**  
  Начинает или останавливает профилирование для всех процессов сеанса профилирования из командной строки.  
   
- {**ThreadOff** | **ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:**`TID`  
  Останавливает или запускает профилирование заданного потока (только метод инструментирования).  
   
 ## <a name="example"></a>Пример  
@@ -80,8 +80,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903810"
 ---
 # <a name="create-an-options-page"></a>Создание страницы параметров
@@ -25,7 +25,7 @@ ms.locfileid: "85903810"
 
  MPF предоставляет два класса, помогающие создавать страницы параметров инструментов, <xref:Microsoft.VisualStudio.Shell.Package> класс и <xref:Microsoft.VisualStudio.Shell.DialogPage> класс. Создайте пакет VSPackage, чтобы предоставить контейнер для этих страниц, подклассом `Package` класса. Все страницы параметров инструментов создаются путем наследования от `DialogPage` класса.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -245,7 +245,7 @@ ms.locfileid: "85903810"
 
     ```
 
-     Этот код вызывает метод <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> для создания или получения `OptionPageGrid` экземпляра. `OptionPageGrid`вызывает метод <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> для загрузки параметров, которые являются открытыми свойствами.
+     Этот код вызывает метод <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> для создания или получения `OptionPageGrid` экземпляра. `OptionPageGrid` вызывает метод <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> для загрузки параметров, которые являются открытыми свойствами.
 
 2. Теперь добавьте пользовательский шаблон элемента команды с именем **митулсоптионскомманд** для вывода значения. В диалоговом окне **Добавление нового элемента** перейдите в раздел расширяемость **Visual C#**  >  **Extensibility** и выберите пункт **пользовательская команда**. В поле **имя** в нижней части окна измените имя файла команд на *MyToolsOptionsCommand.CS*.
 
@@ -266,6 +266,6 @@ ms.locfileid: "85903810"
 
      В окне сообщения отображается текущее значение `OptionInteger` .
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Страницы параметров и параметров](../extensibility/internals/options-and-options-pages.md)

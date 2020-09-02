@@ -1,5 +1,5 @@
 ---
-title: Обновление областей формы Outlook в проектах миграции на .NET Framework 4, 4.5
+title: Обновление областей формы Outlook в проектах, перенесенных в .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836047"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление областей формы в проектах Outlook, переносимых на .NET Framework 4 или .NET Framework 4,5
   Если требуемая версия .NET Framework для проекта надстройки VSTO для Outlook с областью формы изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо внести некоторые изменения в создаваемый код области формы и в любой код, который создает экземпляры определенных классов области формы во время выполнения.
 
-## <a name="update-the-generated-form-region-code"></a>Обновить созданный код области формы
- Если требуемая версия .NET Framework проекта изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо изменить созданный код области формы. Вносимые изменения отличаются для областей форм, которые были разработаны в Visual Studio, и для областей форм, импортированных из Outlook. Дополнительные сведения об отличиях этих типов областей форм см. в разделе [областей форм Outlook создайте](../vsto/creating-outlook-form-regions.md).
+## <a name="update-the-generated-form-region-code"></a>Обновление созданного кода области формы
+ Если требуемая версия .NET Framework проекта изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо изменить созданный код области формы. Вносимые изменения отличаются для областей форм, которые были разработаны в Visual Studio, и для областей форм, импортированных из Outlook. Дополнительные сведения о различиях между этими типами областей формы см. в разделе [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md).
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Обновление созданного кода для области формы, разработанной в Visual Studio
 
@@ -103,13 +103,13 @@ ms.locfileid: "66836047"
     }
     ```
 
-5. Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, найдите классы *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` , а затем скопируйте их в буфер обмена.
+5. Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, перейдите в файл *классы yournewformregion* `Factory` и `WindowFormRegionCollection` классы и скопируйте эти классы в буфер обмена.
 
 6. Удалите новую область формы, добавленную в проект.
 
-7. В файле кода программной части области формы, которая обновляется для работы в новом проекте, найдите классы *YourOriginalFormRegion*`Factory` и `WindowFormRegionCollection` и замените код, который был скопирован из новой области формы.
+7. В файле кода программной части области формы, которую вы обновляете для работы в проекте с перенацеленной назначением, укажите *йоуроригиналформрегион* `Factory` и `WindowFormRegionCollection` классы и замените их кодом, скопированным из новой области формы.
 
-8. В классах *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` найдите все ссылки на класс *YourNewFormRegion* и измените их так, чтобы они указывали на класс *YourOriginalFormRegion* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
+8. В *классы yournewformregion* `Factory` и классах `WindowFormRegionCollection` найдите все ссылки на класс *классы yournewformregion* и измените вместо этого каждую ссылку на класс *йоуроригиналформрегион* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Обновление созданного кода для области формы, импортированной из Outlook
 
@@ -175,18 +175,18 @@ ms.locfileid: "66836047"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, найдите классы *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` , а затем скопируйте их в буфер обмена.
+5. Добавьте новый элемент области формы Outlook в проект. Откройте файл кода программной части для новой области формы, перейдите в файл *классы yournewformregion* `Factory` и `WindowFormRegionCollection` классы и скопируйте эти классы в буфер обмена.
 
 6. Удалите новую область формы, добавленную в проект.
 
-7. В файле кода программной части области формы, которая обновляется для работы в новом проекте, найдите классы *YourOriginalFormRegion*`Factory` и `WindowFormRegionCollection` и замените код, который был скопирован из новой области формы.
+7. В файле кода программной части области формы, которую вы обновляете для работы в проекте с перенацеленной назначением, укажите *йоуроригиналформрегион* `Factory` и `WindowFormRegionCollection` классы и замените их кодом, скопированным из новой области формы.
 
-8. В классах *YourNewFormRegion*`Factory` и `WindowFormRegionCollection` найдите все ссылки на класс *YourNewFormRegion* и измените их так, чтобы они указывали на класс *YourOriginalFormRegion* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
+8. В *классы yournewformregion* `Factory` и классах `WindowFormRegionCollection` найдите все ссылки на класс *классы yournewformregion* и измените вместо этого каждую ссылку на класс *йоуроригиналформрегион* . Например, если имя обновляемой области формы — `SalesDataFormRegion` , а имя новой области формы, созданной на шаге 5, — `FormRegion1`, измените все ссылки для `FormRegion1` на `SalesDataFormRegion`.
 
-## <a name="instantiate-form-region-classes"></a>Создавать экземпляры классов области формы
+## <a name="instantiate-form-region-classes"></a>Создание экземпляров классов области формы
  Вам необходимо изменить любой код, который динамически создает экземпляры классов области формы. В проектах, предназначенных для .NET Framework 3.5, можно создавать экземпляры классов области формы, такие как `Microsoft.Office.Tools.Outlook.FormRegionManifest`, напрямую. В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, эти классы представляют интерфейсы, которые не могут создаваться напрямую.
 
- Если требуемая версия .NET Framework для проекта изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо создать экземпляр интерфейсов с помощью методов, предоставляемых свойством `Globals.Factory`. Дополнительные сведения о `Globals.Factory` свойство, см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Если требуемая версия .NET Framework для проекта изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо создать экземпляр интерфейсов с помощью методов, предоставляемых свойством `Globals.Factory`. Дополнительные сведения о `Globals.Factory` свойстве см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).
 
  В следующей таблице перечислены типы областей формы и методы, используемые для создания экземпляров типов в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.
 
@@ -196,6 +196,6 @@ ms.locfileid: "66836047"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Перенос решений Office на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
-- [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)
+- [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)

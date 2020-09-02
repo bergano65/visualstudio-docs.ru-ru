@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e710e586f3ece4fdf0cdbf9bee2bcc70f4ab87b5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687203"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Перечисление различных внедренного источников, содержащихся в источнике данных.  
+Перечисление различных внедренных источников, содержащихся в источнике данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,25 +32,25 @@ IDiaEnumInjectedSources : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaEnumInjectedSources`.  
+ В следующей таблице показаны методы `IDiaEnumInjectedSources` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
-|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Извлекает число внедренного источников.|  
-|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Получает введенный код с помощью индекса.|  
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Извлекает указанное число источников, внедренного в последовательности перечисления.|  
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Пропускает заданное число источников, внедренного в последовательности перечисления.|  
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Извлекает версию [интерфейса IEnumVARIANT](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) этого перечислителя.|  
+|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Возвращает число внедренных источников.|  
+|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Получает внедренный источник с помощью индекса.|  
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Извлекает указанное число внедренных источников в последовательности перечисления.|  
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Пропускает указанное число внедренных источников в последовательности перечисления.|  
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Этот интерфейс получается путем вызова [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) метод с именем конкретного исходного файла или путем вызова [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод с GUID `IDiaEnumInjectedSources` интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот интерфейс получается путем вызова метода [IDiaSession:: финдинжектедсаурце](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) с именем определенного исходного файла или путем вызова метода [IDiaSession:: жетенумтаблес](../../debugger/debug-interface-access/idiasession-getenumtables.md) с идентификатором GUID `IDiaEnumInjectedSources` интерфейса.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить ( `GetEnumInjectedSources` функции) и использовать ( `DumpAllInjectedSources` функции) `IDiaEnumInjectedSources` интерфейс. См. в разделе [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) интерфейс для реализации `PrintPropertyStorage` функции. Альтернативный выход, см. в разделе [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) интерфейс.  
+ В этом примере показано, как получить ( `GetEnumInjectedSources` функцию) и использовать ( `DumpAllInjectedSources` функцию) `IDiaEnumInjectedSources` интерфейс. Сведения о реализации функции см. в интерфейсе [идиапропертистораже](../../debugger/debug-interface-access/idiapropertystorage.md) `PrintPropertyStorage` . Альтернативные выходные данные см. в разделе интерфейс [идиаинжектедсаурце](../../debugger/debug-interface-access/idiainjectedsource.md) .  
   
 ```cpp#  
   
@@ -109,15 +109,15 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession:: Финдинжектедсаурце](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
+ [IDiaSession:: Жетенумтаблес](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [идиапропертистораже](../../debugger/debug-interface-access/idiapropertystorage.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

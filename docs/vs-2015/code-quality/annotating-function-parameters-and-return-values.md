@@ -127,10 +127,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 71854388f3fb1c5eaea7d40ed2757af9cecacf1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543810"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
@@ -187,7 +187,7 @@ ms.locfileid: "85543810"
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     В этом примере вызывающий объект предоставляет буфер `size` элементов для `p1` .  `MyStringCopy`делает некоторые из этих элементов допустимыми. Что более важно, `_Null_terminated_` заметка на `PWSTR` означает, что `p1` завершается нулем в состоянии после.  Таким образом, количество допустимых элементов по-прежнему четко определено, но определенный счетчик элементов не требуется.  
+     В этом примере вызывающий объект предоставляет буфер `size` элементов для `p1` .  `MyStringCopy` делает некоторые из этих элементов допустимыми. Что более важно, `_Null_terminated_` заметка на `PWSTR` означает, что `p1` завершается нулем в состоянии после.  Таким образом, количество допустимых элементов по-прежнему четко определено, но определенный счетчик элементов не требуется.  
   
      `_bytes_`Вариант задает размер в байтах вместо элементов. Используйте этот параметр только в том случае, если размер не может быть выражен как элемент.  Например, `char` строки будут использовать `_bytes_` вариант только в том случае, если аналогичная функция использует `wchar_t` .  
   
@@ -491,7 +491,7 @@ ms.locfileid: "85543810"
 ## <a name="related-resources"></a>Связанные ресурсы  
  [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Использование аннотаций SAL для сокращения числа дефектов кода C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Основные сведения о SAL](../code-quality/understanding-sal.md)   
  [Аннотирование поведения функции](../code-quality/annotating-function-behavior.md)   

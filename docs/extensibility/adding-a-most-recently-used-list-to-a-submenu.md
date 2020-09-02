@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904202"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление списка недавно использовавшихся в подменю
@@ -30,7 +30,7 @@ ms.locfileid: "85904202"
 
 Дополнительные сведения о меню и файлах *vsct* см. в разделе [команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-an-extension"></a>Создание расширений
@@ -199,5 +199,5 @@ ms.locfileid: "85904202"
 
 4. Снова откройте подменю. Обратите внимание, что **элемент 3** теперь находится в верхней части списка, а остальные элементы были помещены на одну позицию вниз. Щелкните **элемент 3** еще раз и обратите внимание, что в окне сообщения по-прежнему отображается **выбранный элемент 3**, что означает, что текст правильно переместился в новую позицию вместе с меткой команды.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Динамическое добавление пунктов меню](../extensibility/dynamically-adding-menu-items.md)
