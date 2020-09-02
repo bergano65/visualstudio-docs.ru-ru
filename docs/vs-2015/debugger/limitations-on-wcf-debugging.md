@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176798"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ограничения на отладку WCF
@@ -77,11 +77,11 @@ ms.locfileid: "68176798"
     ```  
   
 ## <a name="self-hosting"></a>Резидентное размещение  
- *Резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или сервера разработки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Сведения об отладке резидентной службы см. в разделе [как: Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ *Резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или сервера разработки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Дополнительные сведения об отладке локальной службы см. в статье [Практическое руководство. Отладка локальной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>Резидентное размещение  
- Чтобы включить отладку приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] версии 3.0 или 3.5, следует установить [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] версии 3.0 или 3.5 до установки [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]. Если [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] установлен до установки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] версии 3.0 или 3.5, при попытке отладки приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 или 3.5 возникает ошибка. Сообщение об ошибке: "Не удалось автоматически выполнить шаг на сервере". Чтобы устранить эту проблему, используйте Windows **панели управления**, **программы и компоненты** для восстановления вашей [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] установки.  
+ Чтобы включить отладку приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] версии 3.0 или 3.5, следует установить [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] версии 3.0 или 3.5 до установки [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]. Если [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] установлен до установки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] версии 3.0 или 3.5, при попытке отладки приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 или 3.5 возникает ошибка. Сообщение об ошибке: "Не удалось автоматически выполнить шаг на сервере". Чтобы устранить эту проблему, воспользуйтесь **панелью управления**Windows **программы и компоненты** для восстановления [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] установки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка служб WCF](../debugger/debugging-wcf-services.md)   
  [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

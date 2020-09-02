@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aaed99b669946f4d2885009ff328ce4e2e62fcae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204749"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Эта структура называется адрес, который задается по отношению к `this` указатель (`Me` в Visual Basic).  
+Эта структура представляет адрес относительно `this` указателя ( `Me` в Visual Basic).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,25 +43,25 @@ public struct UNMANAGED_THIS_RELATIVE {
 ```  
   
 ## <a name="terms"></a>Термины  
- dwOffset  
- Смещение в байтах относительно базового положения (например, в начале класса vtable).  
+ двоффсет  
+ Смещение в байтах от базовой позиции (например, начало класса vtable).  
   
- dwBitOffset  
- Смещение (в битах) из базового положения (всегда равно 0, если ссылка на битовое поле).  
+ двбитоффсет  
+ Смещение в битах от базовой позиции (всегда 0, если не ссылается на битовое поле).  
   
- dwBitLength  
- Количество битов, представляющее адрес (всегда равно 0, если ссылка на битовое поле).  
+ двбитленгс  
+ Число битов, представляющих адрес (всегда 0, если не ссылается на битовое поле).  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+## <a name="remarks"></a>Remarks  
+ Эта структура является частью объединения в структуре [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , если `dwKind` поле `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` значение (Value из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

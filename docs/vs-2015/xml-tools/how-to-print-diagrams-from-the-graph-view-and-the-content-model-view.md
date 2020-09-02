@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: de59aac6bc40e58b6da9b71fd0cc81d432fe41bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670843"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Как печатать схемы из представления графика и представления модели содержимого
@@ -31,5 +31,5 @@ ms.locfileid: "72670843"
 
 3. Распечатайте сохраненный в XPS-файле образ с использованием средства просмотра XPS.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  Представление [модели содержимого](../xml-tools/content-model-view.md) представления в виде [диаграммы](../xml-tools/graph-view.md) — [Рабочая область конструктора схем XML](../xml-tools/xml-schema-designer-workspace.md)

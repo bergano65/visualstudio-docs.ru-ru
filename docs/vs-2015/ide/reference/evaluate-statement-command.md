@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e2db8596c1c16f5c9fb54a8c7c867b06e997b7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657711"
 ---
 # <a name="evaluate-statement-command"></a>Команда Evaluate Statement
@@ -35,7 +35,7 @@ Debug.EvaluateStatement text
 ## <a name="arguments"></a>Аргументы
  `text` Обязательный. Вычисляемый оператор.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Окно, используемое для ввода команды **EvaluateStatement**, определяет, интерпретируется ли знак равенства (=) как оператор сравнения или оператор присваивания.
 
  В **командном окне** знак равенства (=) интерпретируется как оператор сравнения. Например, если значения переменных `a` и `b` различаются, то команда
@@ -60,5 +60,5 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Команда Print](../../ide/reference/print-command.md) Командная кнопка [Visual Studio Командная](../../ide/reference/visual-studio-commands.md) [команда](../../ide/reference/command-window.md) [Поиск/команда](../../ide/find-command-box.md) Командная кнопка [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)

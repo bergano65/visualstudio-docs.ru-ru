@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9565bc1ae3166c0475e8af7f0fde381497309b01
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547918"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500. Имена переменных не должны совпадать с именами полей
@@ -27,7 +27,7 @@ ms.locfileid: "85547918"
 
 Последнюю документацию по Visual Studio см. в разделе [CA1500: имена переменных не должны совпадать с именами полей](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|

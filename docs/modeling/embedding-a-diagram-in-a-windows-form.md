@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547632"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Внедрение схемы в Windows-форму
@@ -141,7 +141,7 @@ ms.locfileid: "85547632"
 
      Обратите внимание, что в списке отображается список элементов в модели и они верны после добавления или удаления, а также после операций отмены и повтора.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

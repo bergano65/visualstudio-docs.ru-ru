@@ -1,5 +1,5 @@
 ---
-title: Источники событий (пакет SDK для Visual Studio) | Документация Майкрософт
+title: Источники событий (Visual Studio SDK) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a01216f8580e5c366cc6072448a0cf7ef4e6d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152804"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Источники событий (пакет SDK для Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Существует два источника событий: модуль отладки (DE) и сеанс отладки manager (SDM). События, отправляемые с Развернутой имеют механизм отличное от NULL, а события, отправляемые с SDM ядра NULL.  
+Существует два источника событий: модуль отладки (DE) и диспетчер отладки сеансов (SDM). События, отправленные из DE, имеют подсистему, не имеющую значения NULL, а события, отправленные из SDM, имеют обработчик со значением NULL.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как отправить **IDebugProgramCreateEvent2** из DE для SDM.  
+ В следующем примере показано, как отправить **IDebugProgramCreateEvent2** из de в SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
@@ -74,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отправка событий](../../extensibility/debugger/sending-events.md)

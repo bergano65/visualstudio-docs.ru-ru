@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538805"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218. Переопределяйте GetHashCode при переопределении Equals
@@ -36,7 +36,7 @@ ms.locfileid: "85538805"
  Открытый тип переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> , но не переопределяет <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Object.GetHashCode%2A>Возвращает значение, основанное на текущем экземпляре, которое подходит для алгоритмов хэширования и структур данных, таких как хэш-таблица. Два объекта, которые относятся к одному типу и равны, должны возвращать один и тот же хэш-код, чтобы убедиться, что экземпляры следующих типов работают правильно:
+ <xref:System.Object.GetHashCode%2A> Возвращает значение, основанное на текущем экземпляре, которое подходит для алгоритмов хэширования и структур данных, таких как хэш-таблица. Два объекта, которые относятся к одному типу и равны, должны возвращать один и тот же хэш-код, чтобы убедиться, что экземпляры следующих типов работают правильно:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538805"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Типы, реализующие<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Типы, реализующие <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, предоставьте реализацию <xref:System.Object.GetHashCode%2A> . Для пары объектов одного типа необходимо убедиться, что реализация возвращает одно и то же значение, если ваша реализация <xref:System.Object.Equals%2A> возвращает `true` для пары.
@@ -101,7 +101,7 @@ ms.locfileid: "85538805"
 
  [CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

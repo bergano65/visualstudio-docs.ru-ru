@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47883395ec12cac60d3a21651432f5ac21cc64a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151752"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает перечисление символы для встроенных кадров, соответствующий имени функции задан встроенным.  
+Возвращает перечисление символов для встроенных кадров, соответствующих указанному имени встроенной функции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,21 +35,21 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>Параметры  
  `name`  
- [in] Имя функции встраиваемого метода для поиска.  
+ окне Имя встроенной функции для поиска.  
   
  `option`  
- [in] Параметры поиска имени, используемый при поиске для встроенных кадров, соответствуют свойствам `name`. Дополнительные сведения см. в разделе [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).  
+ окне Параметры поиска имен, используемые при поиске встраиваемых кадров, соответствующих `name` . Дополнительные сведения см. в разделе [перечисление намесеарчоптионс](../../debugger/debug-interface-access/namesearchoptions.md).  
   
  `ppResult`  
- [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
+ заполняет Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с помощью результата.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Эта функция осуществляет поиск inlinees только внутри функции-заглушки сочетаний клавиш. Он игнорирует собственного C++ процедуру записи.  
+## <a name="remarks"></a>Remarks  
+ Эта функция выполняет поиск встроенных функций только в функциях-заглушках ускорителя. Он игнорирует записи собственных процедур C++.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

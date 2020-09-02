@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка параметров отладчика | Документация Майкрософт
+title: Практическое руководство. Задание параметров отладчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0d5818186fed4570d2b1fc7065d413e0a5a07d1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703618"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Практическое руководство. установку параметров отладчика
@@ -47,8 +47,8 @@ ms.locfileid: "65703618"
   
 4. Установите или снимите флажки нужных и ненужных параметров, соответственно. Для получения справки о параметрах нажмите клавишу F1  
   
-## <a name="see-also"></a>См. также  
- [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../debugger/general-debugging-options-dialog-box.md)   
- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+## <a name="see-also"></a>См. также:  
+ [Общие, отладка, диалоговое окно "Параметры"](../debugger/general-debugging-options-dialog-box.md)   
+ ["Изменить и продолжить", "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Стандартные макросы для команд и свойств сборки](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

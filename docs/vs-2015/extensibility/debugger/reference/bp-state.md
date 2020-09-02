@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153254"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает существование связанная точка останова, а также указывает, включена ли.  
+Задает существование привязанной точки останова, а также указывает, включен ли он.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,21 +53,21 @@ public enum enum_BP_STATE { 
  Указывает, что точка останова была удалена.  
   
  BPS_DISABLED  
- Указывает, что точка останова отключен.  
+ Указывает, что точка останова отключена.  
   
  BPS_ENABLED  
  Указывает, что точка останова включена.  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемые [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Возвращается методом метода « [State](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) ».  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

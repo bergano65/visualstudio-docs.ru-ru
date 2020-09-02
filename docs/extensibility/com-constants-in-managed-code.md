@@ -1,5 +1,5 @@
 ---
-title: COM Константы в управляемом коде (ru) Документы Майкрософт
+title: Константы COM в управляемом коде | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739825"
 ---
 # <a name="com-constants-in-managed-code"></a>Константы COM в управляемом коде
-Рамочная программа управляемого пакета (MPF) делает некоторые стандартные константы COM доступными для управляемого кода. Эти константы перечислены ниже для вашей ссылки.
+Платформа управляемого пакета (MPF) делает некоторые стандартные константы COM доступными для управляемого кода. Эти константы перечислены ниже для справки.
 
-## <a name="boolean-hresult-values"></a>Значения Boolean HRESULT
+## <a name="boolean-hresult-values"></a>Логические значения HRESULT
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
@@ -89,7 +89,7 @@ ms.locfileid: "80739825"
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>Ошибки диспетчерской отправки OLE
+## <a name="ole-dispatch-errors"></a>Ошибки диспетчеризации OLE
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
@@ -126,5 +126,5 @@ ms.locfileid: "80739825"
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>См. также
-- [Значения обработки и возврата ошибок](../extensibility/error-handling-and-return-values.md)
+## <a name="see-also"></a>См. также раздел
+- [Обработка ошибок и возвращаемые значения](../extensibility/error-handling-and-return-values.md)

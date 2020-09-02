@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Запись графических сведений | Документация Майкрософт
+title: Пошаговое руководство. Захват графической информации | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151462"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Пошаговое руководство. Захват графической информации
@@ -54,12 +54,12 @@ ms.locfileid: "68151462"
   
    Поместив фокус на приложение, нажмите клавишу **PRINT SCREEN**.  
   
-  Каждый раз при захвате данных о кадре диагностика графики записывает события Direct3D и связанное состояние и добавляет эти данные в журнал графики. Новый журнал графики создается для каждого сеанса диагностики графики. Сведения о журналах графики см. в разделе [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+  Каждый раз при захвате данных о кадре диагностика графики записывает события Direct3D и связанное состояние и добавляет эти данные в журнал графики. Новый журнал графики создается для каждого сеанса диагностики графики. Сведения о журналах графики см. в статье [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="next-steps"></a>Следующие шаги  
  В этом пошаговом руководстве было продемонстрировано, как захватывать графические данные вручную. Далее можно перейти к рассмотрению следующего этапа.  
   
-- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. в разделе [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Узнайте, как анализировать захваченные графические данные с помощью средств диагностики графики. См. [Обзор](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

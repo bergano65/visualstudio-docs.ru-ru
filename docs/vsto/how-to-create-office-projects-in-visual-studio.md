@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547567"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Как создавать проекты Office в Visual Studio
@@ -41,7 +41,7 @@ ms.locfileid: "85547567"
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**. Если в интегрированной среде разработки (IDE) настроено использование [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] параметров разработки, в меню **файл** выберите пункт **создать**  >  **проект**.
 
-    Откроется диалоговое окно **Создание проекта** .
+    Откроется диалоговое окно **Новый проект** .
 
    > [!NOTE]
    > По умолчанию проекты Office ориентированы на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Дополнительные сведения см. в статье [.NET Framework клиентский профиль](/dotnet/framework/deployment/client-profile).
@@ -96,7 +96,7 @@ ms.locfileid: "85547567"
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**. Если в интегрированной среде разработки настроено использование параметров Visual Basic разработки, в меню **файл** выберите пункт **создать**  >  **проект**.
 
-    Откроется диалоговое окно **Создание проекта** .
+    Откроется диалоговое окно **Новый проект** .
 
 2. В области Шаблоны в узле для нужного языка разверните узел **Office/SharePoint**.
 

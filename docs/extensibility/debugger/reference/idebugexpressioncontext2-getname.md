@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName Документы Майкрософт
+title: 'IDebugExpressionContext2:: Name | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729662"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Извлекает название контекста оценки.
+Возвращает имя контекста вычисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,17 +41,17 @@ int GetName( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-(ваут) Возвращает название контекста оценки.
+заполняет Возвращает имя контекста вычисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Название — это описание контекста оценки. Это, как правило, то, что может быть разогнано выражение оценщика, что относится к этому точному контексту оценки. Например, в СЗ имя таково:
+## <a name="remarks"></a>Remarks
+ Имя является описанием этого контекста оценки. Обычно это то, что может быть проанализировано средством оценки выражений, ссылающимся на этот точный контекст оценки. Например, в C++ имя имеет следующий вид:
 
 ```
 "{ function-name, source-file-name, module-file-name }"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277971"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Практическое руководство. Добавление дополнительных сведений о коде с помощью __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете предоставить подсказки средству анализа кода для C/C++ Code, которые помогут анализировать процесс анализа и сокращать предупреждения. Чтобы предоставить дополнительные сведения, используйте следующую функцию:  
+Вы можете предоставить подсказки средству анализа кода для кода C/C++, который поможет анализировать процесс анализа и сократить число предупреждений. Чтобы предоставить дополнительные сведения, используйте следующую функцию:  
   
  `__analysis_assume(`  `expr`  `)`  
   
@@ -35,7 +35,7 @@ ms.locfileid: "77277971"
 > `__analysis_assume` не влияет на оптимизацию кода. Вне средства анализа кода `__analysis_assume` определяется как отсутствие операций.  
   
 ## <a name="example"></a>Пример  
- Следующий код использует `__analysis_assume` для исправления предупреждения анализа кода [C6388](../code-quality/c6388.md):  
+ Следующий код используется `__analysis_assume` для исправления предупреждения анализа кода [C6388](../code-quality/c6388.md):  
   
 ```  
 #include<windows.h>  

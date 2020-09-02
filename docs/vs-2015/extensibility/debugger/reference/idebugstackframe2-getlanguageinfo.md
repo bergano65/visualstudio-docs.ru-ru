@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Документация Майкрософт
+title: 'IDebugStackFrame2:: Жетлангуажеинфо | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153129"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает язык, связанный с данным кадром стека.  
+Возвращает язык, связанный с этим кадром стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,10 +42,10 @@ int GetLanguageInfo ( 
   
 #### <a name="parameters"></a>Параметры  
  `pbstrLanguage`  
- [out] Возвращает имя языка, который реализует метод, связанный с данным кадром стека.  
+ заполняет Возвращает имя языка, реализующего метод, связанный с этим кадром стека.  
   
  `pguidLanguage`  
- [out] Возвращает `GUID` языка. Для [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] языков, например, следующие могут быть возвращены:  
+ заполняет Возвращает `GUID` язык. Например, для [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] языков можно вернуть следующее:  
   
 - `guidVBScriptLang`  
   
@@ -60,7 +60,7 @@ int GetLanguageInfo ( 
 - `guidScriptLang`  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

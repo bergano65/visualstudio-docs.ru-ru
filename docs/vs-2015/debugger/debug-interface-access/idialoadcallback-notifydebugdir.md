@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyDebugDir | Документация Майкрософт
+title: 'Идиалоадкаллбакк:: Нотифидебугдир | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e8fe8ffe9d7d495e40c8c84b08aeaefb03e8d17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151998"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Вызывается, когда был найден каталог отладки в файл .exe.  
+Вызывается при обнаружении каталога отладки в exe-файле.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,24 +37,24 @@ HRESULT NotifyDebugDir ( 
   
 #### <a name="parameters"></a>Параметры  
  `fExecutable`  
- [in] `TRUE` Если каталога отладки считывается из исполняемого файла (а не файл .dbg).  
+ [входные] `TRUE` значение, если каталог отладки считывается из исполняемого файла (а не DBG-файлов).  
   
  `cbData`  
- [in] Число байтов данных в каталоге отладки.  
+ окне Число байтов данных в каталоге отладки.  
   
  `data[]`  
- [in] Массив, который заполняется каталога отладки.  
+ окне Массив, который заполняется каталогом отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Код возврата, обычно учитывается.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Код возврата обычно игнорируется.  
   
-## <a name="remarks"></a>Примечания  
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод вызывает этот обратный вызов при обнаружении каталога отладки при обработке исполняемый файл.  
+## <a name="remarks"></a>Remarks  
+ Метод [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) вызывает этот обратный вызов при обнаружении каталога отладки во время обработки исполняемого файла.  
   
- Этот метод избавляет от необходимости для поддержки отладки не найден в PDB-файл для клиента, чтобы реконструировать файле исполняемый файл и/или отладки. С этими данными клиент может распознать тип отладочных данных, доступных и он находится в исполняемый файл или файл .dbg.  
+ Этот метод устраняет потребность клиента в реконструировании исполняемого файла и/или файл отладки для поддержки отладочной информации, отличной от найденной в PDB-файле. С этими данными клиент может распознать тип доступных отладочных сведений и определить, находится ли он в исполняемом или DBG файле.  
   
- Большинство клиентов не потребуется этот обратный вызов, так как `IDiaDataSource::loadDataForExe` метод прозрачно открывает файлы PDB-файл и .dbg, при необходимости обрабатывать символы.  
+ Большинству клиентов этот обратный вызов не нужен, поскольку `IDiaDataSource::loadDataForExe` метод прозрачно открывает файлы PDB и dbg при необходимости для обслуживания символов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

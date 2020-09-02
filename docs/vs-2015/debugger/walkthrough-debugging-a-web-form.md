@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704921"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
@@ -38,7 +38,7 @@ ms.locfileid: "65704921"
 > [!NOTE]
 > Для выполнения данного руководства необходимо обладать правами администратора на сервере. По умолчанию процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe или w3wp.exe, выполняется как процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо обладать правами администратора на компьютере, на котором выполняется [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
- Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от действующих параметров или выпуска среды. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от действующих параметров или выпуска среды. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. [в разделе Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-the-web-form"></a>Создание веб-формы  
   
@@ -50,7 +50,7 @@ ms.locfileid: "65704921"
   
 3. В области **Шаблоны** щелкните **Веб-сайт ASP.NET**.  
   
-4. На **расположение** строка, нажмите кнопку **HTTP** из списка и в текстовом поле введите **http://localhost/WebSite**.  
+4. В строке **Расположение** выберите **HTTP** в списке и введите в текстовом поле **http://localhost/WebSite** .  
   
 5. В списке **Язык** выберите **Visual C#** или **Visual Basic**.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "65704921"
   
 11. Дважды щелкните сброшенный в конструктор элемент управления Button.  
   
-     Это приведет к кодовой странице: Default.aspx.cs для C# или Default.aspx.vb для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Курсор должен находиться в тексте функции `Button1_Click`.  
+     Появится страница кода: Default.aspx.cs для C# или Default.aspx.vb для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Курсор должен находиться в тексте функции `Button1_Click`.  
   
 12. В функции `Button1_Click` добавьте следующий код:  
   
@@ -168,5 +168,5 @@ ms.locfileid: "65704921"
   
 6. После завершения отладки в меню **Отладка** выберите команду **Остановить отладку**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)
