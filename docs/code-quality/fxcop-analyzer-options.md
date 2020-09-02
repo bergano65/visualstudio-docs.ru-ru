@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706572"
 ---
 # <a name="rule-scope-options-for-net-code-quality-analyzers"></a>Параметры области правил для анализаторов качества кода .NET
@@ -24,13 +24,13 @@ ms.locfileid: "88706572"
 > Имя параметра: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Значения параметров: целочисленные значения \
 > Значение по умолчанию: для каждого настраиваемого правила (по умолчанию — "100000" для большинства правил) \
-> Например, `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`.
+> Пример: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Какая часть области API для анализа | `public`<br/>`internal` либо `friend`<br/>`private`<br/>`all`<br/><br/>Несколько значений следует разделять запятой (,) | `public` | [CA1000](ca1000.md) [CA1003](ca1003.md) [CA1008](ca1008.md) [CA1010](ca1010.md)<br/>[CA1012](ca1012.md) [CA1024](ca1024.md) [CA1027](ca1027.md) [CA1028](ca1028.md)<br/>[CA1030](ca1030.md) [CA1036](ca1036.md) [CA1040](ca1040.md) [CA1041](ca1041.md)<br/>[CA1043](ca1043.md) [CA1044](ca1044.md) [CA1051](ca1051.md) [CA1052](ca1052.md)<br/>[CA1054](ca1054.md) [CA1055](ca1055.md) [CA1056](ca1056.md) [CA1058](ca1058.md)<br/>[CA1063](ca1063.md) [CA1708](ca1708.md) [CA1710](ca1710.md) [CA1711](ca1711.md)<br/>[CA1714](ca1714.md) [CA1715](ca1715.md) [CA1716](ca1716.md) [CA1717](ca1717.md)<br/>[CA1720](ca1720.md) [CA1721](ca1721.md) [CA1725](ca1725.md) [CA1801](ca1801.md)<br/>[CA1802](ca1802.md) [CA1815](ca1815.md) [CA1819](ca1819.md) [CA2217](ca2217.md)<br/>[CA2225](ca2225.md) [CA2226](ca2226.md) [CA2231](ca2231.md) [CA2234](ca2234.md)<br/>|
+| Какая часть области API для анализа | `public`<br/>`internal` или `friend`<br/>`private`<br/>`all`<br/><br/>Несколько значений следует разделять запятой (,) | `public` | [CA1000](ca1000.md) [CA1003](ca1003.md) [CA1008](ca1008.md) [CA1010](ca1010.md)<br/>[CA1012](ca1012.md) [CA1024](ca1024.md) [CA1027](ca1027.md) [CA1028](ca1028.md)<br/>[CA1030](ca1030.md) [CA1036](ca1036.md) [CA1040](ca1040.md) [CA1041](ca1041.md)<br/>[CA1043](ca1043.md) [CA1044](ca1044.md) [CA1051](ca1051.md) [CA1052](ca1052.md)<br/>[CA1054](ca1054.md) [CA1055](ca1055.md) [CA1056](ca1056.md) [CA1058](ca1058.md)<br/>[CA1063](ca1063.md) [CA1708](ca1708.md) [CA1710](ca1710.md) [CA1711](ca1711.md)<br/>[CA1714](ca1714.md) [CA1715](ca1715.md) [CA1716](ca1716.md) [CA1717](ca1717.md)<br/>[CA1720](ca1720.md) [CA1721](ca1721.md) [CA1725](ca1725.md) [CA1801](ca1801.md)<br/>[CA1802](ca1802.md) [CA1815](ca1815.md) [CA1819](ca1819.md) [CA2217](ca2217.md)<br/>[CA2225](ca2225.md) [CA2226](ca2226.md) [CA2231](ca2231.md) [CA2234](ca2234.md)<br/>|
 
 ## <a name="exclude_async_void_methods"></a>exclude_async_void_methods
 
@@ -62,10 +62,10 @@ ms.locfileid: "88706572"
 | - | - | - | - |
 | Указывает обязательные модификаторы для API, которые необходимо проанализировать | Одно или несколько значений из приведенной ниже таблицы допустимых модификаторов<br/><br/>Несколько значений следует разделять запятой (,) | Зависит от каждого правила | [CA1802](ca1802.md) |
 
-| Разрешенный модификатор | Сводка |
+| Разрешенный модификатор | Итоги |
 | --- | --- |
 | `none` | Нет требования к модификатору |
-| `static` либо `Shared` | Должен быть объявлен как "static" ("Shared" в Visual Basic) |
+| `static` или `Shared` | Должен быть объявлен как "static" ("Shared" в Visual Basic) |
 | `const` | Должен быть объявлен как "const" |
 | `readonly` | Должен быть объявлен как "ReadOnly" |
 | `abstract` | Должен быть объявлен как "abstract" |

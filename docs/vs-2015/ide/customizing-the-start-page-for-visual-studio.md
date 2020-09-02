@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665840"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Настройка начальной страницы в Visual Studio
@@ -61,5 +61,5 @@ ms.locfileid: "72665840"
 > [!NOTE]
 > Если ошибка в настраиваемой начальной странице вызывает сбой Visual Studio, можно запустить Visual Studio в безопасном режиме, а затем настроить использование начальной страницы по умолчанию. См. раздел [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Создание собственной начальной страницы](../misc/creating-your-own-start-page.md)

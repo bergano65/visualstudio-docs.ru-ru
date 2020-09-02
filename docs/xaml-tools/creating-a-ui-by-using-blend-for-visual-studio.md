@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332095"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Обзор Blend для Visual Studio
@@ -79,7 +79,7 @@ Blend для Visual Studio — это компонент Visual Studio. Чтоб
 
 Наведите указатель на каждую кнопку в окне, чтобы получить дополнительные сведения о доступных функциях.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Анимирование объектов](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Рисование фигур и контуров](../xaml-tools/draw-shapes-and-paths.md)

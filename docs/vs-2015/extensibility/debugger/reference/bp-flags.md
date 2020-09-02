@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7238f41e1971437caaaf3f5aa0c6939c47e27e55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153525"
 ---
-# <a name="bpflags"></a>BP_FLAGS
+# <a name="bp_flags"></a>BP_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Предоставляет необязательные флаги, которые могут использоваться для указания дополнительных сведений при задании точки останова.  
+Предоставляет необязательные флаги, которые можно использовать для указания дополнительных сведений при задании точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,27 +45,27 @@ public enum enum_BP_FLAGS { 
   
 ## <a name="members"></a>Участники  
  BP_FLAG_NONE  
- Задает флаг без точки останова.  
+ Указывает отсутствие флага точки останова.  
   
  BP_FLAG_MAP_DOCPOSITION  
- Указывает, что модуль отладки (DE) должны сопоставляться с помощью документа положение точки останова. Это значение применимо только к точки останова в скрипт ориентированного исходных файлов таких как Active Server Pages (ASP).  
+ Указывает, что модуль отладки (DE) должен сопоставлять точку останова с позицией документа. Это применимо только к точкам останова, заданным в исходных файлах, ориентированных на скрипт, например Active Server Pages (ASP).  
   
  BP_FLAG_DONT_STOP  
- Указывает, что точка останова должны обрабатываться с помощью обработчика отладки, но что модуль отладки в конечном счете следует останавливает существует (то есть [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не следует отправлять объект события). Этот флаг предназначен для использования главным образом с использованием точек трассировки.  
+ Указывает, что точка останова должна обрабатываться модулем отладки, но в конечном итоге отладчик не должен останавливаться (то есть объект события [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не должен отправляться). Этот флаг предназначен для использования в основном с точками трассировки.  
   
-## <a name="remarks"></a>Примечания  
- Используется для `dwFlags` членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `dwFlags` элемента структур [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
   
- Эти значения могут объединяться с побитовым объектом `OR`.  
+ Эти значения можно объединить с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   

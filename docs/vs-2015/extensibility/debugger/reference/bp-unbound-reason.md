@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddff6130e2243d10c00cefec160d057516d60932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153282"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Предоставляет причину, по которой был отсоединен точку останова.  
+Дает причину, по которой точка останова была непривязанной.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,24 +50,24 @@ public enum enum_BP_UNBOUND_REASON { 
  Причина неизвестна.  
   
  BPUR_CODE_UNLOADED  
- Код, который содержит точку останова, был выгружен.  
+ Код, содержащий точку останова, выгружен.  
   
  BPUR_BREAKPOINT_REBIND  
- Точка останова были привязаны повторно в другом месте. Это может произойти после изменения и продолжить работу, если точка останова перемещается или привязана точка останова в файл с путем, который больше не является допустимым.  
+ Точка останова была повторно привязана к другому расположению. Это может произойти после операций Edit и Continue при перемещении точки останова или при привязке точки останова к файлу с путем, который больше не является допустимым.  
   
  BPUR_ BREAKPOINT_ERROR  
- Чтобы находиться в состоянии ошибки, после привязки определяется точка останова. Это происходит для управляемых точек останова, условия которых больше не действительны.  
+ Точка останова определяется как ошибка после привязки. Это происходит с управляемыми точками останова, условия которых больше не действительны.  
   
-## <a name="remarks"></a>Примечания  
- Возвращенный [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Возвращается методом [Reason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f23c2ad4aeaf911e45b28686584d741e5c4d22f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704135"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Этот интерфейс обеспечивает доступ к типам, псевдонимы и пользовательский визуализатор служб.  
+ Этот интерфейс предоставляет доступ к типам, псевдонимам и пользовательским службам визуализатора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,32 +34,32 @@ IDebugBinder3 : IDebugBinder
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки реализует этот интерфейс для поддержки псевдонимы пользовательский визуализатор и службы доступа к информации типа объекта.  
+ Модуль отладки реализует этот интерфейс для поддержки псевдонимов, пользовательских служб визуализатора и доступа к сведениям о типе объекта.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) интерфейс получает этот интерфейс с помощью [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Интерфейс [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) получает этот интерфейс с помощью [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
   
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- Помимо методов, предоставляемых [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) интерфейс, этот интерфейс реализует следующее:  
+## <a name="methods-in-vtable-order"></a>Методы в порядке vtable  
+ В дополнение к методам, предоставляемым интерфейсом [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) , этот интерфейс реализует следующее:  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Извлекает объект памяти, представляющий памяти, с которым связан этот объект.|  
-|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Получает исключение, связанное с объектом (если таковые имеются),|  
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Получает псевдонимы по имени|  
-|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Извлекает массив все псевдонимы для этого объекта|  
-|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Возвращает количество типов аргументов, связанный с данным объектом|  
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Извлекает список типов аргументов, связанный с данным объектом|  
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Возвращает интерфейс к службе визуализатора|  
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Преобразует адрес объекта или адрес памяти 64-разрядной памяти контекста.|  
+|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Извлекает объект памяти, представляющий память, к которой привязан этот объект.|  
+|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Извлекает исключение, связанное с этим объектом (если имеется),|  
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Получает псевдоним с заданным именем.|  
+|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Извлекает массив всех псевдонимов для данного объекта,|  
+|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Возвращает число типов аргументов, связанных с этим объектом.|  
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Извлекает список типов аргументов, связанных с этим объектом,|  
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Получает интерфейс для службы визуализатора,|  
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Преобразует расположение объекта или адрес 64-разрядной памяти в контекст памяти.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: ee.h  
+ Заголовок: ee. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы оценки выражения](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы оценки выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

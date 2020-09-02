@@ -1,5 +1,5 @@
 ---
-title: Элемент CreateNewFolder (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Креатеневфолдер (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7401ed7ed097c6e20bf4cd0bbf30820bcb33b514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184258"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Элемент CreateNewFolder (шаблоны Visual Studio)
@@ -24,9 +24,9 @@ ms.locfileid: "68184258"
 
 Определяет, следует проверять, существует ли целевой каталог, в котором создается проект. Если каталог существует, для проекта можно создать новый каталог. Этот параметр обычно переопределяется флагом реестра `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), который используют все распространенные типы проектов, чтобы определить, нужно ли создать проект в новом каталоге.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateNewFolder >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateNewFolder>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -59,8 +59,8 @@ ms.locfileid: "68184258"
   
  В качестве текста следует использовать `true` или `false`, указав, будет ли создана новая папка при создании проекта на основе шаблона.  
   
-## <a name="remarks"></a>Примечания  
- `CreateNewFolder` — это необязательный элемент. Значение по умолчанию — `true`.  
+## <a name="remarks"></a>Remarks  
+ Параметр `CreateNewFolder` является необязательным элементом. Значение по умолчанию — `true`.  
   
  Значение, указанное в элементе `CreateNewFolder`, учитывается [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], только если базовая система поддерживает его.  
   
@@ -92,6 +92,6 @@ ms.locfileid: "68184258"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

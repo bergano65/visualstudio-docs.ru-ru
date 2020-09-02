@@ -1,5 +1,5 @@
 ---
-title: Команды элемент | Документация Майкрософт
+title: Элемент Commands | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 194768a3b540511996e1d99e6450a7a9b24ebc74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184292"
 ---
 # <a name="commands-element"></a>Элемент Commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Представляет коллекцию команд на панели инструментов для VSPackage. Коллекция может иметь до пяти подразделах, следующим образом: меню, группы, кнопки, комбинировать и точечные рисунки.  
+Представляет коллекцию команд на панели инструментов VSPackage. Коллекция может содержать до пяти подразделов следующим образом: меню, группы, кнопки, КомБОС и точечные рисунки.  
   
- Каждый подраздел дочерний элемент, к примеру, \<меню >, определяется уникальный идентификатор команды, — это идентификатор GUID и пары числовой идентификатор. Идентификатор GUID определяет набор команд «» и используется для группировки логически связанных команд. VSPackage следует определить свой собственный набор команд для предотвращения конфликтов с идентификаторы команд, которые определяются других пакетов VSPackage.  
+ Каждый дочерний элемент подраздела, например, определяется \<Menu> уникальным идентификатором команды, который является парой GUID и числовым идентификатором. GUID определяет "набор команд" и используется для группирования логически связанных команд. Пакет VSPackage должен определить собственный набор команд, чтобы избежать конфликтов с идентификаторами команд, определенными другими пакетами VSPackage.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,23 +46,23 @@ ms.locfileid: "68184292"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|пакет|GUID, определяющий VSPackage, предоставляющий команды.<br /><br /> Например, пакет = «guidVsPackage1Pkg».|  
+|пакет|GUID, определяющий пакет VSPackage, предоставляющий команды.<br /><br /> Например, Package = "guidVsPackage1Pkg".|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  
-|[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд в VSPackage.|  
+|[Groups, элемент](../extensibility/groups-element.md)|Содержит записи, определяющие группы команд в VSPackage.|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Группирует элементы кнопки.|  
-|[Элемент Bitmaps](../extensibility/bitmaps-element.md)|Группирует элементы растрового изображения.|  
-|[Элемент Combos](../extensibility/combos-element.md)|Группирует элементы поля со списком.|  
+|[Элемент Bitmaps](../extensibility/bitmaps-element.md)|Группирует элементы битовой карты.|  
+|[Элемент Combos](../extensibility/combos-element.md)|Элементы комбинированных элементов групп.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды, которые VSPackage предоставляет интегрированную среду разработки. Возможные элементы являются пункты меню, меню, панелей инструментов и поля со списком.|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, которые пакет VSPackage предоставляет интегрированной среде разработки. Возможные элементы: пункты меню, меню, панели инструментов и поля со списком.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как использовать [элемент Commands](../extensibility/commands-element.md).  
@@ -90,6 +90,6 @@ ms.locfileid: "68184292"
 <Commands>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>См. также:  
+ [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

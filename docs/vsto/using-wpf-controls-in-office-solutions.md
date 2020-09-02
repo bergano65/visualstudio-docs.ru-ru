@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189751"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Использование элементов управления WPF в решениях Office
@@ -63,7 +63,7 @@ ms.locfileid: "73189751"
 
      Visual Studio автоматически создает объект <xref:System.Windows.Forms.Integration.ElementHost>, в котором размещается пользовательский элемент управления WPF, в элементе пользовательского интерфейса.
 
-7. Перестройте проект.
+7. Выполните повторную сборку проекта.
 
 #### <a name="to-add-wpf-controls-to-a-document-or-worksheet-in-a-document-level-project"></a>Добавление элементов управления WPF в документ или на лист в проекте уровня документа
 
@@ -88,7 +88,7 @@ ms.locfileid: "73189751"
     > [!NOTE]
     > В конструкторе невозможно перетащить пользовательский элемент управления Windows Forms в документ или на лист.
 
-9. Перестройте проект.
+9. Выполните повторную сборку проекта.
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>Размещение элементов управления WPF с помощью класса ElementHost
 
@@ -106,7 +106,7 @@ Visual Studio предоставляет средства, помогающие 
 
 - [Взаимодействие WPF и Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Элементы управления Windows Forms и эквивалентные элементы управления WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Windows Forms элементы управления и эквивалентные элементы управления WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Дополнительные сведения о добавлении элементов управления WPF к элементам управления и формам Windows Forms в Visual Studio во время разработки см. в следующих разделах:
 
@@ -116,7 +116,7 @@ Visual Studio предоставляет средства, помогающие 
 
 - [Пошаговое руководство. стиль содержимого WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Общие сведения об элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

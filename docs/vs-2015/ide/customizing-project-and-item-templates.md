@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665876"
 ---
 # <a name="customizing-project-and-item-templates"></a>Настройка шаблонов проектов и элементов
@@ -32,20 +32,20 @@ ms.locfileid: "72665876"
 
 - Вы можете передать пользовательские параметры в шаблон для замены существующих значений.
 
-     Дополнительные сведения см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
+     Дополнительные сведения см. в разделе [инструкции. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Вы можете настроить мастеры, создающие проекты из шаблонов.
 
      Дополнительные сведения см. в статье [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md).
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 
  [Практическое руководство. Устранение неполадок, связанных с шаблонами](../ide/how-to-troubleshoot-templates.md)
 
- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
+ [Как создавать шаблоны проектов](../ide/how-to-create-project-templates.md)
 
- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+ [Как создавать шаблоны элементов](../ide/how-to-create-item-templates.md)
 
  [Практическое руководство. Создание начальных наборов](../ide/how-to-create-starter-kits.md)
 

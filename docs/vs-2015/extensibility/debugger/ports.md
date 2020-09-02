@@ -12,31 +12,31 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73003e00fef5c37db4a702e7a4a1121600673844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153687"
 ---
 # <a name="ports"></a>Порты
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-С точки зрения архитектуры отладчика **порт**:  
+В плане архитектуры отладчика **порт**:  
   
-- Контейнер для набора процессов выполняется на сервере. Например порт может представлять связь на основе Windows CE устройство с помощью последовательного кабеля или на компьютер сети без DCOM. Один особый порт, локальный порт, содержит все процессы, запущенные на локальном компьютере.  
+- — Это контейнер для набора процессов, выполняющихся на сервере. Например, порт может представлять подключение к Windows CE устройству по последовательному кабелю или сетевому компьютеру, не являющемуся DCOM. Один специальный порт, называемый локальным портом, содержит все процессы, запущенные на локальном компьютере.  
   
-- Можно идентифицировать себя по имени или идентификатора.  
+- Может идентифицировать себя по имени или идентификатору.  
   
-- Можно перечислить все процессы, запущенные на порт и запуска и завершения этих процессов.  
+- Может перечислить все процессы, запущенные в порте, и запустить и завершить эти процессы.  
   
-- Представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, который создается путем передачи [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) аргумент [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+- Представляется интерфейсом [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , который создается путем передачи аргумента [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) в [аддпорт](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
-  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет порт по умолчанию, который обрабатывает все на базе Windows процессы, машинного и управляемого кода. Другой номер порта должен быть реализован для соединения с внешними устройствами, которые не основаны на Windows. Чтобы предоставить такие настраиваемые порты, поставщика пользовательского порта также должна быть реализована.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет порт по умолчанию, который обрабатывает все процессы на основе Windows, а именно — в машинном и управляемом. Пользовательский порт должен быть реализован для соединений с внешними устройствами, не основанными на Windows. Для предоставления таких пользовательских портов необходимо также реализовать пользовательский поставщик порта.  
   
-## <a name="see-also"></a>См. также  
- [Серверы](../../extensibility/debugger/servers-visual-studio-sdk.md)   
- [Процессы](../../extensibility/debugger/processes.md)   
- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)   
+## <a name="see-also"></a>См. также:  
+ [Серверах](../../extensibility/debugger/servers-visual-studio-sdk.md)   
+ [Операций](../../extensibility/debugger/processes.md)   
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)   
  [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

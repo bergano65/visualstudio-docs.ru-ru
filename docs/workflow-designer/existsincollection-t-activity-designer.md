@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b48bb11e2aac9d542a07551df62d710c41596d28
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875661"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Конструктор действия ExistsInCollection\<T>
@@ -38,9 +38,9 @@ ms.locfileid: "86875661"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.ExistsInCollection%601>. Значение по умолчанию — ExistsInCollection<Int32 \> . Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Да|Искомый элемент в коллекции \<T> . Этот элемент имеет тип *T*, имеющий тип *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Да|Коллекция, в которой проверяется, существует ли элемент. Эта коллекция имеет тип **ICollection<TypeArgument \> .** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|
-|*TypeArgument*|Да|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Верно|Искомый элемент в коллекции \<T> . Этот элемент имеет тип *T*, имеющий тип *TypeArgument*. Чтобы указать элемент, введите в выражение Visual Basic в таблице свойств.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Верно|Коллекция, в которой проверяется, существует ли элемент. Эта коллекция имеет тип **ICollection<TypeArgument \> .** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|
+|*TypeArgument*|Верно|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
 |<xref:System.Activities.Activity%601.Result%2A>|Неверно|Значение, которое указывает, содержится ли в коллекции указанный объект. Чтобы указать переменную, к которой необходимо привязать результат, введите переменную Visual Basic в таблице свойств.|
 
 ## <a name="see-also"></a>См. также раздел

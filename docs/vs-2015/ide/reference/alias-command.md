@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6da744b0db9e41cd1e5039a1bd0d5c93bc4c734a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651692"
 ---
 # <a name="alias-command"></a>Команда Alias
@@ -43,12 +43,12 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  `aliasstring` Необязательный. Полное имя команды или существующий псевдоним и любые параметры, которые вы хотите создать в виде псевдонима. Если значение для `aliasstring` не указано, отображается имя и строка для заданного псевдонима.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /delete, /del или /d Необязательный. Удаляет указанный псевдоним, убирая его из функции автозавершения.
 
  /reset Необязательный. Сбрасывает список предопределенных псевдонимов в исходные значения. То есть восстанавливает все предварительно определенные псевдонимы и удаляет все псевдонимы, определенные пользователем.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Так как псевдонимы представляют команды, они должны располагаться в начале командной строки.
 
  При вводе данной команды нужно указать параметры сразу после нее, а не после псевдонимов. В противном случае параметр включается в состав строки псевдонима.
@@ -74,5 +74,5 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Команды [Visual Studio командное](../../ide/reference/visual-studio-commands.md) [окно](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) командные [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

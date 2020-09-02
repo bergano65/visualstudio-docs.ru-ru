@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184239"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает, следует ли создать проект и выполнить замену в указанном расположении, или выполнить замену во временном расположении и сохраните проект в указанное расположение.  
+Указывает, следует ли создать проект и выполнить замену параметров в указанном расположении или выполнить замену параметров во временном расположении, а затем сохранить проект в указанном расположении.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateInPlace >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,10 +53,10 @@ ms.locfileid: "68184239"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true`, либо `false`. Если `true`, создается проект и выполняется замена параметров в расположении, указанном в **новый проект** диалоговое окно. Если `false`, выполняется замена параметров в во временную папку и проект копируется в указанное расположение.  
+ Этот текст должен быть либо `true`, либо `false`. Если задано `true` значение, создается проект и выполняется замена параметров в расположении, указанном в диалоговом окне **Новый проект** . Если значение `false` равно, то замена параметров выполняется во временном расположении, а затем проект копируется в указанное расположение.  
   
-## <a name="remarks"></a>Примечания  
- `CreateInPlace` — это необязательный элемент. Значение по умолчанию — `true`.  
+## <a name="remarks"></a>Remarks  
+ Параметр `CreateInPlace` является необязательным элементом. Значение по умолчанию — `true`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
@@ -86,6 +86,6 @@ ms.locfileid: "68184239"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

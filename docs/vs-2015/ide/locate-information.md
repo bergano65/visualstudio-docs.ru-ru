@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b381d7fd342a2e56bcf0c90cb52bd4912444113
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651454"
 ---
 # <a name="locate-information"></a>Поиск сведений
@@ -21,14 +21,14 @@ ms.locfileid: "72651454"
 
 Окно справки предоставляет несколько различных способов поиска информации в справке. В зависимости от вида искомой информации, определенные стратегии могут оказаться более эффективны, чем другие.
 
-|Сведения|См.|
+|Сведения|Попытка|
 |----------------------------|---------|
 |Элемент пользовательского интерфейса|Клавиша F1|
 |Другие разделы в той же области оглавления, что и текущий раздел|Кнопка **Показать раздел в содержании** на панели инструментов|
 |Функция или технология|Индекс|
 |Элементы языка, такие как методы и события|Поиск|
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
  [Советы по полнотекстовому поиску](../ide/full-text-search-tips.md)
 
  [Практическое руководство. Поиск разделов в содержании](../ide/how-to-find-topics-in-the-table-of-contents.md)
