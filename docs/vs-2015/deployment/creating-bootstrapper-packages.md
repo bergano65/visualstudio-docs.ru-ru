@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845520"
 ---
 # <a name="creating-bootstrapper-packages"></a>Создание пакетов загрузчика
@@ -70,7 +70,7 @@ ms.locfileid: "75845520"
   
   `package.xml`  
   
-  Скопируйте распространяемые файлы в папку начального загрузчика. Для получения дополнительной информации см. [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Скопируйте распространяемые файлы в папку начального загрузчика. Дополнительные сведения см. [в разделе инструкции. Создание локализованного пакета начального загрузчика](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  В следующей таблице перечислены свойства, которые заполняются начальным загрузчиком автоматически.  
   
-|Идентификаторы|Описание|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |ApplicationName|Имя приложения.|  
 |ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> — Intel<br />— IA64<br />— AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Список распространяемых компонентов — это XML-файл, которому необходимо присвоить имя в следующем формате: *Название компании*.*Название компонента*.RedistList.xml. Например, если компонент называется Datawidgets и разработан компанией Acme, файл необходимо назвать Acme.DataWidgets.RedistList.xml. Пример содержания списка распространяемых компонентов:  
+ Список распространяемых файлов — это XML-файл, который следует использовать в следующем формате: *название компании*. *Имя компонента*.RedistList.xml. Например, если компонент называется Datawidgets и разработан компанией Acme, файл необходимо назвать Acme.DataWidgets.RedistList.xml. Пример содержания списка распространяемых компонентов:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md)   
+## <a name="see-also"></a>См. также:  
+ [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Диалоговое окно "необходимые компоненты"](../ide/reference/prerequisites-dialog-box.md)   
  [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)   
- [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](https://msdn.microsoft.com/magazine/cc163899.aspx)
+ [Использование начального загрузчика Visual Studio 2005 для запуска установки](https://msdn.microsoft.com/magazine/cc163899.aspx)

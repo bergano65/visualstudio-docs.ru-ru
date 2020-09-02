@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS Документы Майкрософт
+title: MACHINE_INFO_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714495"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
-Определяет, какую информацию получить для конкретной машины.
+Указывает, какой тип сведений следует получить для конкретного компьютера.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,25 +46,25 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Поля
  `MCIF_NAME`\
- Инициализация/использование `bstrName` поля в структуре.
+ Инициализируйте или используйте `bstrName` поле в структуре.
 
  `MCIF_FLAGS`\
- Инициализация/использование `Flags` поля в структуре.
+ Инициализируйте или используйте `Flags` поле в структуре.
 
  `MIF_ALL`\
- Инициализация/использование всех полей в структуре.
+ Инициализация или использование всех полей в структуре.
 
-## <a name="remarks"></a>Примечания
- Эти значения передаются методу [GetMachineInfo,](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) чтобы указать, какие члены [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+ Эти значения передаются в метод [жетмачинеинфо](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) , чтобы указать, какие члены структуры [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) должны быть инициализированы.
 
- Также используется `Fields` в составе `MACHINE_INFO` структуры для обозначения того, какие поля используются и действительны.
+ Также используется в `Fields` члене `MACHINE_INFO` структуры для указания того, какие поля используются и являются допустимыми.
 
- Эти флаги могут быть `OR`объединены с bitwise .
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

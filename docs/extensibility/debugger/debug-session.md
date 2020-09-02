@@ -1,5 +1,5 @@
 ---
-title: Сессия дебуга (ru) Документы Майкрософт
+title: Сеанс отладки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 664bcc4790d642ec5ea006cc42b3cf29885e9018
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739004"
 ---
-# <a name="debug-session"></a>Сеанс отжуражая
-С точки зрения архитектуры отладчика, *сеанс:*
+# <a name="debug-session"></a>Сеанс отладки
+В плане архитектуры отладчика, *сеанс*:
 
-- Является ли набор всех процессов, связанных или не связанных, которые были запущены или прикреплены к из одного экземпляра IDE.
+- Набор всех процессов, связанных или не связанных, которые были запущены или присоединены к одному экземпляру интегрированной среды разработки.
 
-- Реализован менеджером отладки сеанса (SDM). Для получения дополнительной [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md)информации см.
+- Реализуется диспетчером отладки сеанса (SDM). Дополнительные сведения см. в разделе [Диспетчер отладки сеансов](../../extensibility/debugger/session-debug-manager.md).
 
-## <a name="see-also"></a>См. также
-- [Менеджер отладки сеанса](../../extensibility/debugger/session-debug-manager.md)
-- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
+## <a name="see-also"></a>См. также раздел
+- [Диспетчер отладки сеансов](../../extensibility/debugger/session-debug-manager.md)
+- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)

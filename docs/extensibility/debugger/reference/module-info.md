@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO Документы Майкрософт
+title: MODULE_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714315"
 ---
 # <a name="module_info"></a>MODULE_INFO
-Описывает определенный модуль (DLL, EXE или сборка).
+Описывает конкретный модуль (DLL, EXE или сборку).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Участники
  `dwValidFields`\
- Комбинация флагов [из MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисления, которая определяет, какие поля заполнены.
+ Сочетание флагов из перечисления [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) , которое указывает, какие поля заполняются.
 
  `m_bstrName`\
  Имя модуля.
@@ -72,45 +72,45 @@ public struct MODULE_INFO { 
  URL-адрес модуля.
 
  `m_bstrVersion`\
- Модульная версия.
+ Версия модуля.
 
  `m_bstrDebugMessage`\
- Например, дополнительное сообщение о модуле "Символы не могут быть загружены".
+ Необязательное сообщение о модуле, например "не удается загрузить символы".
 
  `m_addrLoadAddress`\
  Адрес загрузки модуля.
 
  `m_addrPreferredLoadAddress`\
- Предпочтительный адрес нагрузки модуля.
+ Предпочтительный адрес загрузки модуля.
 
  `m_dwSize`\
  Размер модуля.
 
  `m_dwLoadOrder`\
- Заказ загрузки модуля.
+ Порядок загрузки модуля.
 
  `m_TimeStamp`\
- Время последнего изменения файла символа.
+ Время последнего изменения файла символов.
 
  `m_bstrUrlSymbolLocation`\
- Расположение файла символа (например,\\".") указано в модуле. Используется в качестве стартового места для поиска символов для модуля.
+ Расположение файла символов (например, ". \\ "), указанного в модуле. Используется в качестве начального расположения для поиска символов для модуля.
 
  `m_dwModuleFlags`\
- Комбинация флагов из [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисления, описывающая модуль.
+ Сочетание флагов из перечисления [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) , которое описывает модуль.
 
-## <a name="remarks"></a>Примечания
- Эта структура передается методу [GetInfo,](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) где она заполняется.
+## <a name="remarks"></a>Remarks
+ Эта структура передается в метод " [info](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) ", где он заполняется.
 
- Эта структура соответствует каждому модулю, указанному в окне **модулей.**
+ Эта структура соответствует каждому модулю, указанному в окне **модули** .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

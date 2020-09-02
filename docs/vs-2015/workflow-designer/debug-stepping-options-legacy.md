@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656881"
 ---
 # <a name="debug-stepping-options-legacy"></a>Варианты пошаговой отладки (для прежних версий)
@@ -35,5 +35,5 @@ ms.locfileid: "72656881"
 
   При отладке рабочих процессов конечного автомата более ранней версии необходимо выбрать режим проверки пошагового выполнения экземпляра.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Отладка устаревших рабочих процессов](../workflow-designer/debugging-legacy-workflows.md) [руководство. изменение параметра пошаговой отладки (прежние версии)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

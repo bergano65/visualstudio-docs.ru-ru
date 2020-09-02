@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016766"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Пошаговое руководство. Создание базового проекта определения сайта
@@ -39,7 +40,7 @@ ms.locfileid: "86016766"
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint. Дополнительные сведения см. в разделе Требования для разработки решений SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Создание решения для определения сайта
  Сначала создайте проект определения сайта в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -48,7 +49,7 @@ ms.locfileid: "86016766"
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**. Если в интегрированной среде разработки настроено использование параметров Visual Basic разработки, в строке меню выберите **файл**  >  **создать проект**.
 
-    Откроется диалоговое окно **Создание проекта** .
+    Откроется диалоговое окно **Новый проект** .
 
 2. Разверните узел **Visual C#** или узел **Visual Basic** , разверните узел **SharePoint** , а затем выберите узел **2010** .
 

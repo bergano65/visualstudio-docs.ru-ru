@@ -1,5 +1,5 @@
 ---
-title: ТИП СООБЩЕНИЯ Документы Майкрософт
+title: MESSAGETYPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714488"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Упоняет тип и причину сообщения.
+Указывает тип и причину сообщения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,32 +52,32 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>Поля
  `MT_OUTPUTSTRING`\
- Означает, что сообщение должно быть отправлено в окно вывода. Это взаимоисключающие от `MT_MESSAGEBOX`.
+ Указывает, что сообщение должно быть отправлено в окно вывода. Это взаимоисключающее из `MT_MESSAGEBOX` .
 
  `MT_MESSAGEBOX`\
- Означает, что сообщение должно отображаться в поле сообщения. Это взаимоисключающие от `MT_OUTPUTSTRING`.
+ Указывает, что сообщение должно отображаться в окне сообщения. Это взаимоисключающее из `MT_OUTPUTSTRING` .
 
  `MT_TYPE_MASK`\
- Значение маски для изоляции пункта назначения для сообщения.
+ Значение маски для изоляции назначения сообщения.
 
  `MT_REASON_EXCEPTION`\
- Означает, что окно сообщения отображается в результате исключения. Это взаимоисключающие от `MT_REASON_TRACEPOINT`.
+ Указывает, что в результате исключения отображается окно сообщения. Это взаимоисключающее из `MT_REASON_TRACEPOINT` .
 
  `MT_REASON_TRACEPOINT`\
- Означает, что окно сообщения отображается в результате попадания в точку трассировки. Это взаимоисключающие . `MT_REASON_EXCEPTION`
+ Указывает, что в результате попадания в точку трассировки отображается окно сообщения. Это взаимоисключающее с `MT_REASON_EXCEPTION` .
 
  `MT_REASON_MASK`\
- Значение маски для изоляции причины отображаемого сообщения.
+ Значение маски, которое позволяет изолировать причину отображения сообщения.
 
-## <a name="remarks"></a>Примечания
- Эти значения возвращаются из методов [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) и [GetErrorMessage.](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)
+## <a name="remarks"></a>Remarks
+ Эти значения возвращаются методами [жетеррормессаже](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) [и.](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)
 
- Одна из причин, по которой значения могут быть объединены с `OR`одним из значений назначения вывода с помощью bitwise.
+ Одно из значений причины можно объединить с одним из значений назначения выходных данных с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

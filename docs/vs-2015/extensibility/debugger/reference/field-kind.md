@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692879"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
+# <a name="field_kind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает тип поля, содержащегося в [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
+Указывает тип поля, содержащегося в объекте [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -125,13 +125,13 @@ public enum enum_FIELD_KIND {
   
 ## <a name="members"></a>Участники  
  FIELD_KIND_TYPE  
- Указывает, что поле только для типа.  
+ Указывает, что поле является только типом.  
   
  FIELD_KIND_SYMBOL  
- Указывает, что поле — это символ, с типом, имя и другие сведения.  
+ Указывает, что поле является символом, с типом, именем и другой информацией.  
   
  FIELD_TYPE_PRIMITIVE  
- Указывает, что поле имеет тип-примитив.  
+ Указывает, что поле является примитивным типом данных.  
   
  FIELD_TYPE_STRUCT  
  Указывает, что поле является структурой.  
@@ -143,7 +143,7 @@ public enum enum_FIELD_KIND {
  Указывает, что поле является интерфейсом.  
   
  FIELD_TYPE_UNION  
- Указывает, что поле объединения.  
+ Указывает, что поле является объединением.  
   
  FIELD_TYPE_ARRAY  
  Указывает, что поле является массивом.  
@@ -152,22 +152,22 @@ public enum enum_FIELD_KIND {
  Указывает, что поле является методом.  
   
  FIELD_TYPE_BLOCK  
- Указывает, что поле представляет собой блок.  
+ Указывает, что поле является блоком.  
   
  FIELD_TYPE_POINTER  
  Указывает, что поле является указателем.  
   
  FIELD_TYPE_ENUM  
- Указывает, что поле перечисляемого типа данных.  
+ Указывает, что поле является перечислимым типом данных.  
   
  FIELD_TYPE_LABEL  
- Указывает, что поле метки.  
+ Указывает, что поле является меткой.  
   
  FIELD_TYPE_TYPEDEF  
- Указывает, что поле является определением типа.  
+ Указывает, что поле является typedef.  
   
  FIELD_TYPE_BITFIELD  
- Указывает, что поле битовое поле.  
+ Указывает, что поле является битовым.  
   
  FIELD_TYPE_NAMESPACE  
  Указывает, что поле является пространством имен.  
@@ -191,7 +191,7 @@ public enum enum_FIELD_KIND {
  Зарезервировано для будущего использования.  
   
  FIELD_SYM_MEMBER  
- Указывает, что поле является членом.  
+ Указывает, что поле является элементом.  
   
  FIELD_SYM_LOCAL  
  Указывает, что поле является локальным.  
@@ -200,13 +200,13 @@ public enum enum_FIELD_KIND {
  Указывает, что поле является параметром.  
   
  FIELD_SYM_THIS  
- Указывает, что поле имеет указатель «this».  
+ Указывает, что поле является указателем this.  
   
  FIELD_SYM_GLOBAL  
  Указывает, что поле является глобальным.  
   
  FIELD_SYM_PROP_GETTER  
- Указывает, что поле извлекает свойства.  
+ Указывает, что поле получает свойства.  
   
  FIELD_SYM_PROP_SETTER  
  Указывает, что поле задает свойства.  
@@ -223,20 +223,20 @@ public enum enum_FIELD_KIND {
  FIELD_SYM_MASK  
  Указывает маску для символьной информации.  
   
-## <a name="remarks"></a>Примечания  
- Возвращается из вызова [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Возвращается из вызова метода [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .  
   
- В зависимости от типа поля [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) могут быть вызваны для [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс более определенной формы интерфейса. Например если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_METHOD`, затем можно вызвать `QueryInterface` на я`DebugField` для получения [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) интерфейс.  
+ В зависимости от типа поля [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) может вызываться в интерфейсе [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) для более специфической формы интерфейса. Например, если функция [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_METHOD` , то можно вызвать метод `QueryInterface` в I, `DebugField` чтобы получить интерфейс [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
+ [Тип Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

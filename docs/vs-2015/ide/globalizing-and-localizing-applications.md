@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1121058d38d129b417cbd79b685e5bd549353a7c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845253"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Глобализация и локализация приложений
@@ -30,22 +30,22 @@ ms.locfileid: "75845253"
 
  Система Visual Studio изначально ориентирована на упрощение разработки международных версий за счет применения служб, встроенных в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. На следующих страницах описаны доступные в Visual Studio возможности по интернационализации.
 
-## <a name="in-this-section"></a>В этом разделе
- [Введение в международные приложения на основе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Основные понятия, связанные с разработкой программного обеспечения для международного рынка с помощью Visual Studio и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+## <a name="in-this-section"></a>в этом разделе
+ [Введение в международные приложения на основе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Основные понятия, связанные с разработкой программного обеспечения для международного рынка с помощью Visual Studio и [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
  [Локализация приложений](../ide/localizing-applications.md) Содержит ссылки на страницы о настройке приложений для заданной культуры.
 
  [Глобализация приложений](../ide/globalizing-applications.md) Содержит ссылки на страницы, посвященные созданию приложений, поддерживающих несколько языков и региональных параметров.
 
-## <a name="related-sections"></a>Связанные разделы
- [Глобализация приложения (приложения для Магазина Windows, использующие JavaScript и HTML)](https://msdn.microsoft.com/library/windows/apps/hh465006.aspx) Содержит практические руководства и рекомендации по глобализации и локализации приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], созданного с помощью JavaScript и HTML.
+## <a name="related-sections"></a>См. также
+ [Глобализация приложения (приложения для Магазина Windows, использующие JavaScript и HTML)](https://msdn.microsoft.com/library/windows/apps/hh465006.aspx) Содержит практические руководства и рекомендации по глобализации и локализации [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения, созданного с помощью JavaScript и HTML.
 
- [Глобализация приложения (приложения для Магазина Windows с C#использованиемC++ /ВБ/и XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/Hh965328(v=win.10).aspx) содержит практические руководства и рекомендации по глобализации и локализации приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], созданного с помощью XAML и Visual C#, Visual Basic или Visual C++.
+ [Глобализация приложения (приложения для Магазина Windows на C#/VB/C + + и XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/Hh965328(v=win.10).aspx) Содержит практические руководства и рекомендации по глобализации и локализации [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения, созданного с помощью XAML и Visual C#, Visual Basic или Visual C++.
 
  Рекомендации [по разработке приложений, готовых к международному использованию](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Общие сведения о программировании для международной аудитории.
 
  [Общие сведения о библиотеке классов](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) Представляет классы, интерфейсы и типы значений, которые ускоряют и оптимизируют процесс разработки и предоставляют доступ к функциональным возможностям системы.
 
- <xref:System.Globalization> указывает классы в этом пространстве имен, которые определяют сведения, связанные с культурой, включая язык, страну или регион, используемые календари, шаблоны форматирования дат, валюты и чисел, а также порядок сортировки строк.
+ <xref:System.Globalization> Указывает классы в этом пространстве имен, которые определяют сведения, связанные с культурой, включая язык, страну или регион, используемые календари, шаблоны форматирования дат, валюты и чисел, а также порядок сортировки строк.
 
- <xref:System.Resources> указывает классы и интерфейсы в этом пространстве имен, что позволяет разработчикам создавать, хранить и управлять различными ресурсами, зависящими от языка и региональных параметров, которые используются в приложении.
+ <xref:System.Resources> Указывает классы и интерфейсы в этом пространстве имен, которые позволяют разработчикам создавать, хранить и управлять различными ресурсами, зависящими от языка и региональных параметров, которые используются в приложении.
