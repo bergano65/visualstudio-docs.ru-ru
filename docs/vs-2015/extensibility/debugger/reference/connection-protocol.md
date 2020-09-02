@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72ed9b8a747814d9537739c8dc27e5f113547756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561864"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает протокол, используемый для обмена данными между сервером отладки и отладки пакета (DE).  
+Указывает протокол, используемый для обмена данными между сервером отладки и пакетом отладки (DE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,36 +52,36 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Параметры  
  CONNECTION_NONE  
- Нет подключение к серверу.  
+ Не установлено соединение с сервером.  
   
  CONNECTION_UNKNOWN  
- Подключение установлено, но это неизвестного типа.  
+ Соединение установлено, но имеет неизвестный тип.  
   
  CONNECTION_LOCAL  
- Соединение предназначено для локального сервера.  
+ Подключение к локальному серверу.  
   
  CONNECTION_PIPE  
- Подключение осуществляется через именованный канал.  
+ Соединение осуществляется через именованный канал.  
   
  CONNECTION_TCPIP  
- Соединение использует протокол TCP/IP.  
+ Подключение использует TCP/IP.  
   
  CONNECTION_HTTP  
- Соединение использует протокол HTTP (с помощью веб-сервера).  
+ Соединение использует HTTP (через веб-сервер).  
   
  CONNECTION_OTHER  
- Было установлено какое-либо иное подключения (это значение не используется в настоящее время).  
+ Установлен другой тип соединения (это значение в настоящее время не используется).  
   
-## <a name="remarks"></a>Примечания  
- Эти значения возвращаются из [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Эти значения возвращаются методом [жетконнектионпротокол](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

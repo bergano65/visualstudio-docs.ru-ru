@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5928f6092adc62dc8f0eb075f20367c056fc50c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547173"
 ---
-# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
+# <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Эта структура представляет собой адрес локальной переменной в области (обычно функцию или метод).  
+Эта структура представляет адрес локальной переменной в области (обычно это функция или метод).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,21 +43,21 @@ public struct METADATA_ADDRESS_LOCAL {
 ```  
   
 ## <a name="terms"></a>Термины  
- tokMethod  
- Идентификатор метода или функции локальной переменной является частью.  
+ токмесод  
+ Идентификатор метода или функции, частью которой является локальная переменная.  
   
- [C++] `_mdToken` — `typedef` для 32-разрядных `int`.  
+ [C++] `_mdToken` — `typedef` для 32-разрядного `int` .  
   
- pLocal  
- Токен, адрес которого эта структура представляет.  
+ плокал  
+ Токен, адрес которого представляет эта структура.  
   
- dwIndex  
- Может быть индекс данной локальной переменной в методе или функции или любое другое значение (зависящие от языка).  
+ двиндекс  
+ Может быть индексом этой локальной переменной в методе или функции или другим значением (зависящим от языка).  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_LOCAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+## <a name="remarks"></a>Remarks  
+ Эта структура является частью объединения в структуре [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , если `dwKind` поле `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND_LOCAL` значение (Value из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
- `Warning:` [C++ только]  Если `pLocal` не равно null, то нужно вызвать `Release` маркеров указателя (`addr` — это поле в [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры):  
+ `Warning:` [Только C++]  Если значение не равно `pLocal` null, необходимо вызвать `Release` для указателя токена ( `addr` является полем в структуре [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) ):  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -67,13 +67,13 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   

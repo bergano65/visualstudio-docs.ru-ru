@@ -1,5 +1,5 @@
 ---
-title: Рабочая область построения в Visual Studio | Документация Майкрософт
+title: Сборка рабочей области в Visual Studio | Документация Майкрософт
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,57 +8,57 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553332"
 ---
-# <a name="workspace-build"></a>Рабочая область построения
+# <a name="workspace-build"></a>Сборка рабочей области
 
-Поддержка сборки [открыть папку](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) сценарии требуется расширитель для предоставления [индексированных](workspace-indexing.md) и [контекста файла](workspace-file-contexts.md) данные для [рабочей области](workspaces.md), как а также действие построения для запуска.
+Для поддержки сборки в сценариях с [открытой папкой](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) требуется расширитель для передачи данных о [проиндексированном](workspace-indexing.md) и [файловом контексте](workspace-file-contexts.md) [рабочей области](workspaces.md), а также выполняемое действие сборки.
 
-Ниже приводится объяснение того что потребуется ваше расширение.
+Ниже приведена структура того, что потребуется вашему расширению.
 
 ## <a name="build-file-context"></a>Контекст файла сборки
 
 - Фабрика поставщиков
-  - `ExportFileContextProviderAttribute` атрибут с `supportedContextTypeGuids` как и все применимые `string` констант `BuildContextTypes`
+  - `ExportFileContextProviderAttribute` атрибут `supportedContextTypeGuids` , содержащий все применимые `string` константы из `BuildContextTypes`
   - Реализует `IWorkspaceProviderFactory<IFileContextProvider>`
-  - Контекст поставщика файлов
-    - Вернуть `FileContext` для каждого построения операции и поддерживаемые конфигурации
-      - `contextType` От <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
-      - `context` реализует <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> с `Configuration` свойство в качестве конфигурации сборки (например `"Debug|x86"`, `"ret"`, или `null` Если не применимо). Кроме того, используйте экземпляр <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext>. Значение конфигурации **необходимо** соответствуют конфигурации из значения файлов данных.
+  - Поставщик контекста файла
+    - Возврат `FileContext` для каждой поддерживаемой операции сборки и конфигурации
+      - `contextType` из <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
+      - `context` реализует <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> свойство со `Configuration` свойством в качестве конфигурации сборки (например `"Debug|x86"` , `"ret"` или, `null` Если неприменимо). Кроме того, можно использовать экземпляр <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext> . Значение конфигурации **должно** соответствовать конфигурации из значения данных индексированного файла.
 
-## <a name="indexed-build-file-data-value"></a>Значение данных индексированных построения файла
+## <a name="indexed-build-file-data-value"></a>Значение данных индексированного файла сборки
 
 - Фабрика поставщиков
-  - `ExportFileScannerAttribute` атрибут с `IReadOnlyCollection<FileDataValue>` поддерживаемый тип
+  - `ExportFileScannerAttribute` атрибут с `IReadOnlyCollection<FileDataValue>` поддерживаемым типом
   - Реализует `IWorkspaceProviderFactory<IFileScanner>`
-- Файл сканера, установленного на `ScanContentAsync<T>`
-  - Возвращает данные при `FileScannerTypeConstants.FileDataValuesType` аргумент типа
-  - Возвращает значение данных файла для каждой конфигурации, созданный с помощью:
-    - `type` как `BuildConfigurationContext.ContextTypeGuid`
-    - `context` в качестве конфигурации сборки (например `"Debug|x86"`, `"ret"`, или `null` Если не применимо). Это значение **необходимо** соответствуют конфигурации из файла контекста.
+- Средство проверки файлов включено `ScanContentAsync<T>`
+  - Возвращает данные, если `FileScannerTypeConstants.FileDataValuesType` является аргументом типа
+  - Возвращает значение данных файла для каждой конфигурации, созданной с помощью:
+    - `type` тех `BuildConfigurationContext.ContextTypeGuid`
+    - `context` в качестве конфигурации сборки (например, `"Debug|x86"` `"ret"` или, `null` если она неприменима). Это значение **должно** соответствовать конфигурации из контекста файла.
 
-## <a name="build-file-context-action"></a>Действия файл контекст сборки
+## <a name="build-file-context-action"></a>Действие контекста файла сборки
 
 - Фабрика поставщиков
-  - `ExportFileContextActionProvider` атрибут с `supportedContextTypeGuids` как и все применимые `string` констант `BuildContextTypes`
+  - `ExportFileContextActionProvider` атрибут `supportedContextTypeGuids` , содержащий все применимые `string` константы из `BuildContextTypes`
   - Реализует `IWorkspaceProviderFactory<IFileContextActionProvider>`
-- Поставщик действий на `IFileContextActionProvider.GetActionsAsync`
-  - Вернуть `IFileContextAction` , соответствующий заданной `FileContext.ContextType` значение
-- Действие в контексте файла
+- Поставщик действий в `IFileContextActionProvider.GetActionsAsync`
+  - Возврат объекта `IFileContextAction` , соответствующего заданному `FileContext.ContextType` значению
+- Действие контекста файла
   - Реализует `IFileContextAction` и <xref:Microsoft.VisualStudio.Workspace.Extensions.VS.IVsCommandItem>
-  - `CommandGroup` Возвращает свойство `16537f6e-cb14-44da-b087-d1387ce3bf57`
-  - `CommandId` — `0x1000` для сборки, `0x1010` для перестроения или `0x1020` для очистки
+  - `CommandGroup` свойство возвращает `16537f6e-cb14-44da-b087-d1387ce3bf57`
+  - `CommandId` предназначен `0x1000` для сборки, `0x1010` для перестроения или `0x1020` для очистки
 
 >[!NOTE]
->Так как `FileDataValue` нужно индексировать, будет существовать минимальное количество времени между открытием рабочей области и точки, по которому проверяется на функциональные возможности полной сборки. Задержка будет виден на сначала открыв папку, так как нет ранее кэшированных индекса.
+>Поскольку необходимо `FileDataValue` проиндексировать, между открытием рабочей области и моментом сканирования файла на наличие полной функциональности сборки будет некоторое количество времени. Задержка будет показана в первом открытии папки, так как отсутствует ранее кэшированный индекс.
 
-## <a name="reporting-messages-from-a-build"></a>Reporting сообщения из сборки
+## <a name="reporting-messages-from-a-build"></a>Сообщения отчетов из сборки
 
-Сборки могут возникать сообщения об ошибках, предупреждения и сведения для пользователей одним из двух способов. Простым способом является использование <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> и предоставить <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>, следующим образом:
+Сборка может предоставлять пользователям сведения, предупреждения и сообщения об ошибках одним из двух способов. Простой способ — использовать <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> и предоставить <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage> , например:
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -88,22 +88,22 @@ private static void OutputBuildMessage(IWorkspace workspace)
 }
 ```
 
-`BuildMessage.Type` и `BuildMessage.LogMessage` управления поведением где сведения отображаются для пользователя. Любой `BuildMessage.TaskType` отличное от `None` создаст **список ошибок** запись с указанным сведениям. `LogMessage` всегда будут выводиться в **построения** области **вывода** окно инструментов.
+`BuildMessage.Type` и `BuildMessage.LogMessage` управляют поведением, где данные представляются пользователю. Любое `BuildMessage.TaskType` значение, отличное от `None` , создает запись **Список ошибок** с указанными сведениями. `LogMessage` всегда будет выводиться в области **Построение** окна инструментов **вывода** .
 
-Кроме того, расширения могут напрямую взаимодействовать с **список ошибок** или **построения** области. Ошибка в версиях до Visual Studio 2017 версии 15.7 где `pszProjectUniqueName` аргумент <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> учитывается.
+Кроме того, расширения могут напрямую взаимодействовать с **Список ошибок** или областью **построения** . Ошибка существует в версиях до Visual Studio 2017 версии 15,7, где `pszProjectUniqueName` аргумент <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> игнорируется.
 
 >[!WARNING]
->Вызывающие объекты `IFileContextAction.ExecuteAsync` можно предоставить произвольные базовой реализации `IProgress<IFileContextActionProgressUpdate>` аргумент. Никогда не вызывать `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` напрямую. В настоящее время существует общих принципов с помощью этого аргумента, но эти рекомендации могут быть изменены.
+>Вызывающие объекты `IFileContextAction.ExecuteAsync` могут предоставлять произвольные базовые реализации для `IProgress<IFileContextActionProgressUpdate>` аргумента. Никогда не вызывать `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` напрямую. В настоящее время нет общих рекомендаций по использованию этого аргумента, но эти рекомендации могут быть изменены.
 
-## <a name="build-related-apis"></a>API, связанные с построения
+## <a name="build-related-apis"></a>Связанные API-интерфейсы сборки
 
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> Предоставляет сведения о конфигурации сборки.
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> Показывает <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>s для пользователей.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> предоставляет сведения о конфигурации сборки.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> показывает <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage> пользователей.
 
-## <a name="tasksvsjson-and-launchvsjson"></a>Tasks.VS.JSON и launch.vs.json
+## <a name="tasksvsjson-and-launchvsjson"></a>tasks.vs.jsи launch.vs.jsна
 
-Сведения о создании файла tasks.vs.json и launch.vs.json, см. в разделе [Настройка сборки и отладки задачи](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Сведения о создании tasks.vs.jsдля или launch.vs.jsв файле см. в разделе [Настройка задач сборки и отладки](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-* [Протокол языкового сервера](language-server-protocol.md) -как интегрировать серверы языка в Visual Studio.
+* [Протокол языкового сервера](language-server-protocol.md) . Узнайте, как интегрировать языковые серверы в Visual Studio.

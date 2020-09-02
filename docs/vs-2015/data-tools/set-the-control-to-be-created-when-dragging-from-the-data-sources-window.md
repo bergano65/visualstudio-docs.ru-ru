@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 222ecfa56b179379c2d007e8635e7b40d6b1b660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655386"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"
@@ -71,5 +71,5 @@ ms.locfileid: "72655386"
 
      Если вы не хотите создавать элемент управления для столбца или свойства, выберите **нет** в раскрывающемся меню. Это полезно, если необходимо перетащить родительскую таблицу или объект в конструктор, но не нужно включать конкретный столбец или свойство.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

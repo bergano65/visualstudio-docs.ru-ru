@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae51d604f455b12fd6933a54954b75a97aea4eb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547472"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Используется для описания модуля.  
@@ -51,35 +51,35 @@ public enum enum_MODULE_FLAGS { 
   
 ## <a name="members"></a>Участники  
  MODULE_FLAG_NONE  
- Указывает модуль не.  
+ Указывает, что модуль отсутствует.  
   
  MODULE_FLAG_SYSTEM  
- Указывает системном модуле.  
+ Указывает системный модуль.  
   
  MODULE_FLAG_SYMBOLS  
- Задает модуль записи символов.  
+ Задает модуль символов.  
   
  MODULE_FLAG_64BIT  
- Задает 64-разрядного модуля.  
+ Задает 64-разрядный модуль.  
   
  MODULE_FLAG_OPTIMIZED  
- Указывает, что модуль был оптимизирован. Это состояние отражается в **модули** окна.  
+ Указывает, что модуль был оптимизирован. Это состояние отражается в окне **модули** .  
   
  MODULE_FLAG_UNOPTIMIZED  
- Указывает, что модуль не был оптимизирован. Это состояние отражается в **модули** окна. Это состояние по умолчанию.  
+ Указывает, что модуль не был оптимизирован. Это состояние отражается в окне **модули** . Это состояние по умолчанию.  
   
-## <a name="remarks"></a>Примечания  
- Используется для `m_dwModuleFlags` членом [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `m_dwModuleFlags` элемента структуры [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .  
   
- Эти флаги могут быть объединены с побитовым объектом `OR`.  
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

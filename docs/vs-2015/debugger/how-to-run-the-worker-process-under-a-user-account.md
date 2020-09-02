@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя | Документация Майкрософт
+title: Как запустить рабочий процесс под учетной записью пользователя | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157870"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
@@ -34,7 +34,7 @@ ms.locfileid: "68157870"
   
 ## <a name="procedure"></a>Процедура  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Выполнение aspnet_wp.exe с учетной записью пользователя  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Выполнение aspnet_wp.exe с учетной записью пользователя  
   
 1. Откройте файл machine.config в папке CONFIG данного компьютера, согласно пути, указанному при установке среды выполнения.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "68157870"
   
     Появится диалоговое окно **Выбор: пользователи, компьютеры или группы** .  
   
-10. Введите имя пользователя в поле **Введите имена выбираемых объектов** , затем нажмите кнопку **OK**. Имя пользователя должно иметь следующий формат: Имя_домена\имя_пользователя.  
+10. Введите имя пользователя в поле **Введите имена выбираемых объектов** , затем нажмите кнопку **OK**. Имя пользователя должно быть в следующем формате: DomainName\UserName.  
   
 11. В диалоговом окне **Элемент разрешения для Temporary ASP.NET Files** предоставьте пользователю полный доступ с помощью пункта **Полный доступ**, затем нажмите кнопку **OK** , чтобы закрыть диалоговое окно **Запись для Temporary ASP.NET Files** .  
   
@@ -85,5 +85,5 @@ ms.locfileid: "68157870"
   
 13. Нажмите кнопку **OK** , чтобы закрыть диалоговое окно **Свойства Temporary ASP.NET Files** .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
 [Отладка ASP.NET: системные требования](../debugger/aspnet-debugging-system-requirements.md)  

@@ -1,5 +1,5 @@
 ---
-title: Основы отладки | Документация Майкрософт
+title: Основы отладчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145704"
 ---
 # <a name="debugger-basics"></a>Основы отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Отладчик Visual Studio позволяет наблюдать за поведением программы во время выполнения и искать таким образом логические ошибки. Отладчик работает со всеми языками программирования Visual Studio и библиотеками. С помощью отладчика можно прерывать выполнение для пошагового выполнения кода и оценки переменных в приложении.
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Начало работы с отладчиком](../debugger/getting-started-with-the-debugger.md)  
  Описание использования отладчика для управления выполнением приложения.  
   
@@ -60,5 +60,5 @@ ms.locfileid: "68145704"
  [Безопасность отладчика](../debugger/debugger-security.md)  
  Описывает рекомендации по обеспечению безопасности для отладчика.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

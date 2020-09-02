@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157362"
 ---
 # <a name="modules-view---contention-data"></a>Представление "Модули" — данные по состязаниям
@@ -27,7 +27,7 @@ ms.locfileid: "68157362"
   
  В приведенной ниже таблице описаны значения столбцов в представлении "Модули" данных по состязаниям.  
   
-|Столбец|ОПИСАНИЕ|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|— Для функции — время блокировки выполнения кода в теле функции. Время блокирования в функциях, которые были вызваны данной функцией, не включается.<br />— Для модуля — сумма исключающего времени блокировки функций в модуле.<br />— Для строки или инструкции — время блокировки выполнения этой строки или инструкции.|  
 |**Эксклюзивное время блокировки %**|— Для функции или модуля — процент общего времени блокировки в ходе сеанса профилирования, которое являлось исключающим временем блокировки этой функции или модуля.<br />— Для строки или инструкции — процент общего времени блокировки во время сеанса профилирования, в течение которого выполнение этой строки или инструкции было заблокировано.|  
@@ -45,10 +45,10 @@ ms.locfileid: "68157362"
 |**Имя процесса**|Имя процесса.|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Модули"](../profiling/modules-view.md)   
- [Представление "Модули" — инструментирование](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Представление "Модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Представление "Модули"](../profiling/modules-view-instrumentation-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "модули"](../profiling/modules-view.md)   
+ [Представление "модули" — инструментирование](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Представление "модули"](../profiling/modules-view-instrumentation-data.md)   
  [Представление "Модули"](../profiling/modules-view-sampling-data.md)

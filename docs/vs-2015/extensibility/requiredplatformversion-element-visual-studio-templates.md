@@ -1,5 +1,5 @@
 ---
-title: Элемент RequiredPlatformVersion (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Рекуиредплатформверсион (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,24 +9,24 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e5ba8cfef6674b5603cf03c73619f686338af3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159287"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion - элемент (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает минимальную версию операционной системы, шаблон проекта необходима для правильной работы. Этот элемент используется для шаблонов проектов, которые создают [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложений.  
+Указывает минимальную версию операционной системы, которую должен правильно работать шаблон проекта. Этот элемент используется для шаблонов проектов, которые создают [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения.  
   
- `RequiredPlatformVersion` Значение сравнивается непосредственно с версией операционной системы. Если `RequiredPlatformVersion` выше, чем версия операционной системы, шаблон не отображается в **новый проект** диалоговое окно. Для указания шаблона для [!INCLUDE[win8](../includes/win8-md.md)] или более поздней версии, задайте `RequiredPlatformVersion` для 6.2.0. Для указания шаблона для [!INCLUDE[win81](../includes/win81-md.md)] или более поздней версии, задайте RequiredPlatformVersion для 6.3.0.  
+ `RequiredPlatformVersion`Значение сравнивается непосредственно с версией операционной системы. Если значение `RequiredPlatformVersion` выше версии операционной системы, шаблон не отображается в диалоговом окне **Новый проект** . Чтобы указать шаблон для [!INCLUDE[win8](../includes/win8-md.md)] или более поздней версии, задайте для параметра значение `RequiredPlatformVersion` 6.2.0. Чтобы указать шаблон для [!INCLUDE[win81](../includes/win81-md.md)] или более поздней версии, установите для параметра рекуиредплатформверсион значение 6.3.0.  
   
- Шаблоны, которые указывают `RequiredPlatformVersion`= 8, совместимы с предыдущей клиента [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] шаблонов.  
+ Шаблоны, которые указывают `RequiredPlatformVersion` = 8, совместимы с предыдущими [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] шаблонами клиента.  
   
  VSTemplate  
 TemplateData  
-... TargetPlatformName  
+..... таржетплатформнаме  
 RequiredPlatformVersion  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,7 +36,7 @@ RequiredPlatformVersion
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
- Отсутствует.  
+ Нет.  
   
 ### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
@@ -48,13 +48,13 @@ RequiredPlatformVersion
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Задает платформу, для которой предназначен шаблон проекта.|  
+|[темплатеплатформнаме](../extensibility/templatedata-element-visual-studio-templates.md)|Задает платформу, для которой предназначен шаблон проекта.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
-## <a name="remarks"></a>Примечания  
- Данный текст задает минимальную версию операционной системы для шаблона.  
+## <a name="remarks"></a>Remarks  
+ Этот текст указывает минимальную версию операционной системы, требуемую для шаблона.  
   
 ## <a name="example"></a>Пример  
  В этом примере указывается, что шаблон проекта предназначен для [!INCLUDE[win8](../includes/win8-md.md)] или более поздней версии.  
@@ -72,7 +72,7 @@ RequiredPlatformVersion
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Элемент TargetPlatformName (шаблоны Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
+## <a name="see-also"></a>См. также:  
+ [Элемент Таржетплатформнаме (шаблоны Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

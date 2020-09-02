@@ -13,30 +13,30 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5bed77a6ec6f8f819137b6859ea0934260f1f03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158406"
 ---
 # <a name="hierarchies-and-selection"></a>Иерархии и выбор
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-При настройке [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], необходимо понимать как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] обрабатывает иерархии как проекты и как он использует контекст выбора, чтобы определить, будет отображаться для пользователя. В этом разделе рассматриваются основные понятия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] иерархии и выбор.  
+При настройке необходимо [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] понимать, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] обрабатывает иерархии, такие как проекты, и как она использует контекст выбора для определения того, что отображается пользователю. В этом разделе обсуждаются концепции [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] иерархий и выбора.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- Описывает проект иерархии и общий принцип иерархий.  
+ Описывает иерархии проектов и общую концепцию иерархий.  
   
  [Выбор и актуальность в интегрированной среде разработки](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- Описывает способ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) хранит сведения об объектах текущего активного пользователя и позволяет отслеживать валюты пакетов VSPackage.  
+ Описывает, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Интегрированная среда разработки (IDE) поддерживает информацию о текущих активных объектах пользователя и позволяет VSPackage фиксировать валюту.  
   
  [Объекты контекста выбора](../../extensibility/internals/selection-context-objects.md)  
- Обсуждается модель для как можно определить пользователя Выбор контекста фокус на окно.  
+ Обсуждается модель того, как можно определить фокус контекста выбора пользователя в окне.  
   
  [Обратная связь с пользователем](../../extensibility/internals/feedback-to-the-user.md)  
- Рассматриваются как функциональных возможностях доступным [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] зависит от контекста текущего выделения и общем контексте интегрированной среды разработки пользователя.  
+ Описывает, как доступные функциональные возможности в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] основаны на текущем контексте выбора пользователя и общем контексте интегрированной среды разработки.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Архитектура](../../extensibility/internals/project-types-architecture.md)  
- Предоставляет подробные технические сведения о типах проектов.
+ Содержит подробные технические сведения о типах проектов.

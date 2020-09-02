@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal | Документация Майкрософт
+title: 'Идебугфиелд:: Equals | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa630a6f2084f7ff79a9c89b685658cf694fcab9
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547316"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод сравнивает это поле с указанным полем на предмет равенства.  
+Этот метод сравнивает это поле с указанным полем для проверки на равенство.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ int Equal(
   
 #### <a name="parameters"></a>Параметры  
  `pField`  
- [in] Поле для сравнения с этим параметром.  
+ окне Поле для сравнения с данным полем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если поля не изменилось, возвращает `S_OK`. Если поля не совпадают, возвращает `S_FALSE.` в противном случае возвращает код ошибки.  
+ Если поля совпадают, возвращает `S_OK` . Если поля отличаются, `S_FALSE.` в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_code | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_code | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6a11e8ee423f096e4b069a085652d9211ee17693
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187258"
 ---
-# <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
+# <a name="idiasectioncontribget_code"></a>IDiaSectionContrib::get_code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Получает флаг, указывающий, содержит ли раздел исполняемый код.  
@@ -35,10 +35,10 @@ HRESULT get_code ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если раздел содержит исполняемого кода; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает `TRUE` , если раздел содержит исполняемый код; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

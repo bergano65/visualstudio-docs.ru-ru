@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::get_lastError | Документация Майкрософт
+title: 'Идиадатасаурце:: get_lastError | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ad0570436dda6ac9ae52325c891b32a563cf6f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547368"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает имя файла для последней ошибки загрузки.  
+Возвращает имя файла для последней ошибки загрузки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,11 +34,11 @@ HRESULT get_lastError (
 ```  
   
 #### <a name="parameters"></a>Параметры  
- pRetVal  
- [out] Возвращает строку, содержащую имя файла PDB-файл, связанный с последней ошибки загрузки.  
+ претвал  
+ заполняет Возвращает строку, содержащую имя PDB-файла, связанного с последней ошибкой загрузки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает код последней ошибки, из-за операции загрузки. Возвращает `E_INVALIDARG` Если `pRetVal` параметр `NULL`.  
+ Возвращает последний код ошибки, вызванный операцией загрузки. Возвращает, `E_INVALIDARG` Если `pRetVal` параметр имеет значение `NULL` .  
   
 ## <a name="example"></a>Пример  
   
@@ -47,5 +47,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

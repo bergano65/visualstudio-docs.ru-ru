@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157859"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Практическое руководство. перемещение вверх или вниз по содержимому памяти
@@ -51,7 +51,7 @@ ms.locfileid: "68157859"
   
 - Щелкните стрелку, расположенную над или под вертикальной полосой прокрутки.  
   
-## <a name="see-also"></a>См. также  
- [Окно памяти](../debugger/memory-windows.md)   
- [Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)   
+## <a name="see-also"></a>См. также:  
+ [Окна памяти](../debugger/memory-windows.md)   
+ [Как использовать окно дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)   
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)

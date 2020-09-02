@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule | Документация Майкрософт
+title: Идебугсаурцесервермодуле | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0dec9408d0cd1907a533a8cabe740832fe652398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555700"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Представляет сведения об исходном сервере, содержащийся в PDB-файл.  
+Представляет сведения о исходном сервере, содержащиеся в PDB-файле.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,18 +29,18 @@ IDebugSourceServerModule : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс реализуется подсистемы отладчика и используемые пользовательским Интерфейсом отладчика.  
+ Этот интерфейс реализуется механизмами отладчика и используется в пользовательском интерфейсе отладчика.  
   
 ## <a name="methods"></a>Методы  
- В следующей таблице показаны методы `IDebugSourceServerModule`.  
+ В следующей таблице показаны методы `IDebugSourceServerModule` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведения об исходном сервере.|  
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведений о исходном сервере.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
+ Заголовок: Мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

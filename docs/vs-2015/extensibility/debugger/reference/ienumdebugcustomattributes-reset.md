@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Reset | Документация Майкрософт
+title: 'Иенумдебугкустоматтрибутес:: Reset | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ff86808bfd33cf7112091b028140f538932dee28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551355"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
@@ -35,11 +35,11 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- После вызова этого метода, следующий вызов [Далее](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) метод возвращает первый элемент перечисления.  
+## <a name="remarks"></a>Remarks  
+ После вызова этого метода следующий вызов метода [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) возвращает первый элемент перечисления.  
   
-## <a name="see-also"></a>См. также  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
+## <a name="see-also"></a>См. также:  
+ [иенумдебугкустоматтрибутес](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
  [Вперед](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145426"
 ---
 # <a name="understanding-sampling-data-values"></a>Общие сведения о значениях выборочных данных
@@ -52,6 +52,6 @@ ms.locfileid: "68145426"
 ## <a name="exclusive-percent"></a>Исключающие (проценты)  
  Процентная доля общего количества исключающих выборок в ходе сеанса профилирования, которые являлись исключающими выборками функции или диапазона данных.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Выбор методов сбора](../profiling/how-to-choose-collection-methods.md)   
- [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>См. также:  
+ [Как выбрать методы сбора](../profiling/how-to-choose-collection-methods.md)   
+ [Анализ данных средств профилирования](../profiling/analyzing-performance-tools-data.md)

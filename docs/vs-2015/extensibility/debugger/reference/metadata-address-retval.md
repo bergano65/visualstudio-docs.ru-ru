@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f685bcfad5cf576215aa50aa26540ba207de2e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546867"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Эта структура представляет значение, возвращаемое из метода или функции.  
+Эта структура представляет возвращаемое значение из метода или функции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,29 +45,29 @@ public struct METADATA_ADDRESS_RETVAL {
 ```  
   
 ## <a name="terms"></a>Термины  
- tokMethod  
- Идентификатор метода это возвращаемое значение соответствует.  
+ токмесод  
+ Идентификатор метода, для которого это возвращаемое значение.  
   
- dwCorType  
- Базовый тип возвращаемого значения. Это значение из `CorElementType` перечисление, определенное в [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] файле corhdr.h пакета SDK.  
+ двкортипе  
+ Базовый тип возвращаемого значения. Это значение из `CorElementType` перечисления, определенного в [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] файле SDK корхдр. h.  
   
- dwSigSize  
- Размер подписи возвращаемое значение (в `rgSig`).  
+ двсигсизе  
+ Размер подписи возвращаемого значения (хранимой в `rgSig` ).  
   
- rgSig  
- Массив байтов, формирующие подпись возвращаемого значения.  
+ ргсиг  
+ Массив байтов, формирующих сигнатуру возвращаемого значения.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_RETVAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+## <a name="remarks"></a>Remarks  
+ Эта структура является частью объединения в структуре [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , если `dwKind` поле `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND_RETVAL` значение (Value из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

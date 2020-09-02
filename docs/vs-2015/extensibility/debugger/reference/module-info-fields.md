@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b80235f4ae769acbe3c61ad4b597898ee774d6a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547329"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает флаги для отладки модуля.  
+Задает флаги для отладочной информации модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -68,56 +68,56 @@ public enum enum_MODULE_INFO_FIELDS { 
  Инициализировать или использовать ни одно из полей в структуре.  
   
  MIF_NAME  
- Инициализация и использование `m_bstrName` в [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.  
+ Инициализируйте или используйте `m_bstrName` поле в структуре [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .  
   
  MIF_URL  
- Инициализация и использование `m_bstrUrl` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_bstrUrl` поле в `MODULE_INFO` структуре.  
   
  MIF_VERSION  
- Инициализация и использование `m_bstrVersion` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_bstrVersion` поле в `MODULE_INFO` структуре.  
   
  MIF_DEBUGMESSAGE  
- Инициализация и использование `m_bstrDebugMessage` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_bstrDebugMessage` поле в `MODULE_INFO` структуре.  
   
  MIF_LOADADDRESS  
- Инициализация и использование `m_addrLoadAddress` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_addrLoadAddress` поле в `MODULE_INFO` структуре.  
   
  MIF_PREFFEREDADDRESS  
- Инициализация и использование `m_addrPreferredLoadAddress` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_addrPreferredLoadAddress` поле в `MODULE_INFO` структуре.  
   
  MIF_SIZE  
- Инициализация и использование `m_dwSize` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_dwSize` поле в `MODULE_INFO` структуре.  
   
  MIF_LOADORDER  
- Инициализация и использование `m_dwLoadOrder` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_dwLoadOrder` поле в `MODULE_INFO` структуре.  
   
  MIF_TIMESTAMP  
- Инициализация и использование `m_TimeStamp` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_TimeStamp` поле в `MODULE_INFO` структуре.  
   
  MIF_URLSYMBOLLOCATION  
- Инициализация и использование `m_bstrUrlSymbolLocation` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_bstrUrlSymbolLocation` поле в `MODULE_INFO` структуре.  
   
  MIF_FLAGS  
- Инициализация и использование `m_dwModuleFlags` в `MODULE_INFO` структуры.  
+ Инициализируйте или используйте `m_dwModuleFlags` поле в `MODULE_INFO` структуре.  
   
  MIF_ALLFIELDS  
- Инициализация и использование всех полей в `MODULE_INFO` структуры.  
+ Инициализация или использование всех полей в `MODULE_INFO` структуре.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения передаются в качестве аргумента [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, чтобы указать, какие поля [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры должны быть инициализированы.  
+## <a name="remarks"></a>Remarks  
+ Эти значения передаются в качестве аргумента в метод " [info](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) ", чтобы указать, какие поля структуры [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) должны быть инициализированы.  
   
- Эти значения также используются в `MODULE_INFO` структура указывает, какие поля используются и допустимым.  
+ Эти значения также используются в `MODULE_INFO` структуре для указания, какие поля используются и являются допустимыми.  
   
- Эти флаги могут быть объединены с побитовым объектом `OR`.  
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

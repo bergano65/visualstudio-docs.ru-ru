@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::GetCount | Документация Майкрософт
+title: 'Иенумдебугкустоматтрибутес:: NOCOUNT | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9c175297bf0f80c74e0c3409843164e0b08589ef
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551495"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает число настраиваемых атрибутов в перечислителе.  
+Возвращает число настраиваемых атрибутов в перечислителе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Параметры  
  `pcelt`  
- [out] Возвращает число элементов в перечислении.  
+ заполняет Возвращает количество элементов в перечислении.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` должны быть реализованы.  
+## <a name="remarks"></a>Remarks  
+ Этот метод не является частью пользовательского интерфейса перечисления com, который указывает, что `Next` необходимо реализовать только,, `Clone` `Skip` и `Reset` .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

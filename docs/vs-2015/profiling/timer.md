@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145498"
 ---
 # <a name="timer"></a>Таймер
@@ -40,26 +40,26 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Обязательные параметры  
  Параметр **Timer** можно указать только в командной строке, которая содержит один из перечисленных ниже параметров.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает профилировщик и приложение, заданное параметром `AppName`.  
   
- **Attach:** `PID`  
+ **Присоединиться:**`PID`  
  Присоединяет профилировщик к процессу, заданному кодом процесса (`PID`).  
   
 ## <a name="invalid-options"></a>Недопустимые параметры  
  Перечисленные ниже параметры не могут быть указаны в одной командной строке с параметром **Timer**.  
   
- **PF**[ **:** `Events`]  
+ **PF**[**:** `Events` ]  
  Задает в качестве события выборки ошибку выгрузки и при необходимости устанавливает интервал выборки, равный `Events`. Интервал PF по умолчанию — 10.  
   
- **Sys**[ **:** `Events`]  
+ **Sys**[**:** `Events` ]  
  Задает в качестве события выборки вызовы операционной системы и при необходимости устанавливает интервал выборки, равный `Events`. Интервал Sys по умолчанию — 10.  
   
- **Counter**[ **:** `Name,Reload,FriendlyName`]  
+ **Счетчик**[**:** `Name,Reload,FriendlyName` ]  
  Задает в качестве события выборки счетчик производительности ЦП, указанный параметром `Name`, и устанавливает интервал выборки, равный `Reload`.  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- Собирает данные .NET. По умолчанию (**Allocation**) данные собираются для каждого события выделения памяти. Если указан параметр **Lifetime**, данные также собираются для каждого события сборки мусора.  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ Собирает данные .NET. По умолчанию (**выделение**) данные собираются при каждом событии выделения памяти. Если задан параметр **Lifetime** , данные также собираются для каждого события сборки мусора.  
   
 ## <a name="example"></a>Пример  
  В этом примере показано, как задать в качестве интервала выборки профилировщика 1 000 000 циклов процессора.  
@@ -69,8 +69,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

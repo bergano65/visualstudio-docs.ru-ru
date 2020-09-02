@@ -1,5 +1,5 @@
 ---
-title: Присоединение и отсоединение программы | Документация Майкрософт
+title: Присоединение и отсоединение к программе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,44 +12,44 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146449"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Присоединение к программе и отсоединение от нее
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Подключение отладчика требуется отправить правильную последовательность методов и событий с верными атрибутами.  
+Для подключения отладчика необходимо отправить правильную последовательность методов и событий с соответствующими атрибутами.  
   
 ## <a name="sequence-of-methods-and-events"></a>Последовательность методов и событий  
   
-1. Диспетчер отладки сеансов (SDM) вызывает [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод.  
+1. Диспетчер отладки сеансов (SDM) вызывает метод [onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
   
-    На основе модели процесса отладки ядра (DE), `IDebugProgramNodeAttach2::OnAttach` метод возвращает одно из следующих методов, которые определяет, что будет дальше.  
+    В зависимости от модели процесса модуля отладки (DE) `IDebugProgramNodeAttach2::OnAttach` метод возвращает один из следующих методов, который определяет, что происходит дальше.  
   
-    Если `S_FALSE` возвращается, модуль отладки успешного присоединения к программе. В противном случае [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) метод вызывается для завершения процесса присоединения.  
+    Если `S_FALSE` возвращается, подсистема отладки успешно прикрепляется к программе. В противном случае вызывается метод [attach](../../extensibility/debugger/reference/idebugengine2-attach.md) для завершения процесса присоединения.  
   
-    Если `S_OK` возвращается, DE является должен быть загружен в тот же процесс, что SDM. SDM выполняет следующие задачи:  
+    Если `S_OK` возвращается, de загружается в том же процессе, что и модель SDM. Модель SDM выполняет следующие задачи:  
   
-   1. Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) получить сведения из DE.  
+   1. Вызывает [жетенгинеинфо](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) для получения сведений о подсистеме de.  
   
-   2. Совместно создает DE.  
+   2. Совместно создает значение DE.  
   
-   3. Вызовы [присоединить](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3. Вызывает [attach](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-2. Отправляет DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) для SDM с `EVENT_SYNC` атрибута.  
+2. Параметр DE отправляет [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.  
   
-3. Отправляет DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) для SDM с `EVENT_SYNC` атрибута.  
+3. Параметр DE отправляет [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.  
   
-4. Отправляет DE [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) для SDM с `EVENT_SYNC_STOP` атрибута.  
+4. Параметр DE отправляет [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) в SDM с `EVENT_SYNC_STOP` атрибутом.  
   
-   Отсоединение от программы является простое, двухэтапный процесс, следующим образом:  
+   Отсоединение от программы — это простой двухэтапный процесс, описанный ниже.  
   
-5. Вызовы SDM [отсоединения](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+5. Модель SDM вызывает [отсоединение](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
   
-6. Отправляет DE [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+6. Параметр DE отправляет [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

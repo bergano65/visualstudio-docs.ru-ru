@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca7d6bfb799f0a9460702c4b581ef3f5261672b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147483"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Эта структура используется для задания данных JustMyCode для модуля.  
+Эта структура используется для задания сведений Жустмикоде для модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,22 +41,22 @@ public struct JMC_CODE_SPEC {
 ```  
   
 ## <a name="members"></a>Участники  
- fIsUserCode  
- Ненулевое значение (`TRUE`) Если модуль будет считаться пользовательского кода; в противном случае — нуль (`FALSE`) Если модуль должен обрабатываться как внешний код и не для отладки.  
+ фисусеркоде  
+ Ненулевое значение ( `TRUE` ), если модуль должен считаться пользовательским кодом; в противном случае — нуль ( `FALSE` ), если модуль должен обрабатываться как внешний код, а не для отладки.  
   
- bstrModuleName  
- Имя модуля в вопросе.  
+ бстрмодуленаме  
+ Имя рассматриваемого модуля.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается как список таких структур для [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается в качестве списка таких структур в метод [сетжустмикодестате](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

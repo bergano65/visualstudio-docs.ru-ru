@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f967420e37d6337ce6d86cc56524f2751218f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651667"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Перечисления Visual C++ в конструкторе классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Конструктор классов поддерживает типы C++ `enum` и ограниченные типы `enum class`. Ниже представлен пример.
+Конструктор классов поддерживает типы C++ `enum` и ограниченные типы `enum class`. Ниже приведен пример:
 
 ```
 enum CardSuit {
@@ -45,5 +45,5 @@ enum class CardSuit {
 
  Дополнительные сведения об использовании типа `enum` см. в статье [Enumerations](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) (Перечисления).
 
-## <a name="see-also"></a>См. также
- Работа с [перечислениями](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) [визуального C++ кода (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md)
+## <a name="see-also"></a>См. также:
+ Работа с [перечислениями](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) [Visual C++ Code (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md)
