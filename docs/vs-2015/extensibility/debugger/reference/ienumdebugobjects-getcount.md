@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::GetCount | Документация Майкрософт
+title: 'Иенумдебугобжектс:: NOCOUNT | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cec5f45465d8fa9dcd96e557736ad52179ce296a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160937"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод возвращает число элементов в перечислении.  
+Этот метод возвращает количество элементов в перечислении.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Параметры  
  `pcelt`  
- [out] Возвращает число элементов в перечислении.  
+ заполняет Возвращает количество элементов в перечислении.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только Далее, клонирование, Skip и сброса должны быть реализованы.  
+## <a name="remarks"></a>Remarks  
+ Этот метод не является частью пользовательского интерфейса перечисления COM, который указывает, что необходимо реализовать только следующие методы: "только следующий", "клонировать", "пропустить" и "Сброс".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

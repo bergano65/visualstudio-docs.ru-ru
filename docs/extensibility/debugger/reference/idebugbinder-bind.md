@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind Документы Майкрософт
+title: 'Идебугбиндер:: BIND | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736020"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Этот метод получает контекст памяти или объект, содержащий текущее значение символа.
+Этот метод получает контекст памяти или объект, который содержит текущее значение символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,18 +45,18 @@ int Bind(
 
 ## <a name="parameters"></a>Параметры
 `pContainer`\
-(в) [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) содержащий ребенка, `pField`на которого ссылается .
+окне [Идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , содержащий дочерний элемент, на который ссылается `pField` .
 
 `pField`\
-(в) [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий символ.
+окне [Идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющий символ.
 
 `ppObject`\
-(ваут) Возвращает `IDebugObject` экземпляр символа.
+заполняет Возвращает объект `IDebugObject` , представляющий экземпляр символа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

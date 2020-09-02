@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453650"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Практическое руководство. Настройка словаря анализа кода
@@ -74,7 +74,7 @@ ms.locfileid: "87453650"
 
 - [Словарь, акронимы, Касинжексцептионси и акронимы](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Словари, слова/распознанное слово
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a> Словари, слова/распознанное слово
 
 Чтобы включить термин в список терминов, идентифицируемых при анализе кода, добавьте термин в качестве внутреннего текста словаря, слова/распознанного элемента или слова. Термины в словарях, словах, распознанных и словах не учитывают регистр.
 
@@ -109,7 +109,7 @@ ms.locfileid: "87453650"
 
 - [CA2204. Литералы должны иметь правильное правописание](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Словари, слова, нераспознанные или слова
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Словари, слова, нераспознанные или слова
 
 Чтобы исключить термин из списка терминов, идентифицируемых при анализе кода, добавьте термин, который следует исключить, в качестве внутреннего текста словаря или слов/нераспознанного элемента или слова. Термины в словарях, словах, нераспознанных и словах не учитывают регистр.
 
@@ -144,7 +144,7 @@ ms.locfileid: "87453650"
 
 - [CA2204. Литералы должны иметь правильное правописание](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionary/Words/устарело/Term [ @PreferredAlternate ]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/устарело/Term [ @PreferredAlternate ]
 
 Чтобы включить термин в список терминов, которые анализ кода определяет как устаревший, добавьте термин в качестве внутреннего текста словаря/слов/устаревшего элемента/Term. Нерекомендуемый термин — это слово, которое написано правильно, но не должно использоваться.
 
@@ -181,7 +181,7 @@ ms.locfileid: "87453650"
 
 - [CA1726. Используйте предпочтительные термины](../code-quality/ca1726.md)
 
-### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionary/слова/составные/термы [ @CompoundAlternate ]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionary/слова/составные/термы [ @CompoundAlternate ]
 
 Встроенный словарь определяет некоторые термины как отдельные дискретные термины, а не составной термин. Чтобы включить термин в список терминов, которые анализ кода определяет как составное слово, и указать правильный регистр термина, добавьте этот термин в качестве внутреннего текста словаря/слов/составного элемента. В атрибуте Компаундалтернате элемента Term укажите отдельные слова, составляющие составной термин, с помощью буквы первой буквы отдельных слов (в стиле Pascal). Обратите внимание, что термин, указанный во внутреннем тексте, автоматически добавляется в список словарь/слова/Дискретиксцептионс.
 
@@ -214,7 +214,7 @@ ms.locfileid: "87453650"
 
 - [CA1704. Идентификаторы должны иметь правильное правописание](../code-quality/ca1704.md)
 
-### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/Дискретиксцептионс/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/Дискретиксцептионс/Term
 
 Чтобы исключить термин из списка терминов, которые анализ кода определяет как отдельное, отдельное слово, если термин проверяется правилами регистра для составных слов, добавьте этот термин в качестве внутреннего текста элемента Dictionary/Words/Дискретиксцептионс/Term. В элементе Dictionary/Words/Дискретиксцептионс/Term регистр не учитывается.
 
@@ -239,7 +239,7 @@ ms.locfileid: "87453650"
 
 - [CA1702. Для сложных слов следует использовать правильный регистр](../code-quality/ca1702.md)
 
-### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Словарь, акронимы, Касинжексцептионси и акронимы
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Словарь, акронимы, Касинжексцептионси и акронимы
 
 Чтобы включить акроним в список терминов, идентифицируемых при анализе кода, и указать, как акроним при проверке условий регистра для составных слов, добавьте этот термин в качестве внутреннего текста в элементе Dictionary/акронимы/Касинжексцептионс/акроним. Акроним в элементе Dictionary/акронимы/Касинжексцептионс/акроним учитывает регистр.
 
@@ -262,7 +262,7 @@ ms.locfileid: "87453650"
 
 - [CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв](../code-quality/ca1709.md)
 
-## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Применение пользовательского словаря к проекту
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Применение пользовательского словаря к проекту
 
 1. В **Обозреватель решений**используйте одну из следующих процедур.
 

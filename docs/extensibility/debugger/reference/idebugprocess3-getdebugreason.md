@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс3::GetDebugReason Документы Майкрософт
+title: 'IDebugProcess3:: Жетдебугреасон | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2fa12b74b44761761a08e232a9f3efa845fa73a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723664"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
-Этот метод возвращает причину запуска процесса для отладки.
+Этот метод возвращает причину, по которой процесс был запущен для отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetDebugReason(
 
 ## <a name="parameters"></a>Параметры
 `pReason`\
-(ваут) Возвращает значение из [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) перечисления.
+заполняет Возвращает значение из перечисления [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

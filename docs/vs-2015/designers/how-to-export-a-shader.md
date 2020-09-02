@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664471"
 ---
 # <a name="how-to-export-a-shader"></a>Практическое руководство. Экспорт шейдера
@@ -30,9 +30,9 @@ ms.locfileid: "72664471"
 
 #### <a name="to-export-a-shader"></a>Экспорт шейдера
 
-1. В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте файл **Визуальный граф шейдера (DGSL)** .
+1. В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте файл **Визуальный граф шейдера (DGSL)**.
 
-     Если у вас нет файла **Визуальный граф шейдера (DGSL)** , создайте его, как описано в разделе [Практическое руководство. Создание простейшего шейдера цвета](../designers/how-to-create-a-basic-color-shader.md).
+     Если у вас нет файла **графа визуального шейдера (. DGSL)** для открытия, создайте его, как описано в разделе [как создать базовый шейдер цвета](../designers/how-to-create-a-basic-color-shader.md).
 
 2. На панели инструментов **Конструктор шейдеров** выберите **Дополнительно**, **Экспорт**, **Экспортировать как**. Открывается диалоговое окно **Экспортировать шейдер**.
 
@@ -48,5 +48,5 @@ ms.locfileid: "72664471"
 
 4. В поле со списком **Имя файла** укажите имя для экспортируемого шейдера и нажмите кнопку **Сохранить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как создать базовый](../designers/how-to-create-a-basic-color-shader.md) [конструктор шейдера](../designers/shader-designer.md) цветового шейдера

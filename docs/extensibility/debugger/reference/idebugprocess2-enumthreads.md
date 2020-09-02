@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads Документы Майкрософт
+title: 'IDebugProcess2:: EnumThreads | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724070"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
-Извлекает список всех потоков, работающих в процессе.
+Извлекает список всех потоков, выполняющихся в процессе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,17 +41,17 @@ int EnumThreads(
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugThreads2,](../../../extensibility/debugger/reference/ienumdebugthreads2.md) содержащий список всех потоков во всех программах процесса.
+заполняет Возвращает объект [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) , содержащий список всех потоков во всех программах в процессе.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод перечисляет потоки, работающие в каждой программе, а затем объединяет их в представление процесса потоков. Один поток может работать в нескольких программах; этот метод перечисляет этот поток только один раз.
+## <a name="remarks"></a>Remarks
+ Этот метод перечисляет потоки, выполняемые в каждой программе, а затем объединяет их в представление процесса потоков. Один поток может выполняться в нескольких программах; Этот метод перечисляет этот поток только один раз.
 
- Этот метод представляет список потоков процесса без дубликатов. В противном случае, чтобы перечислить потоки, работающие в конкретной программе, используйте метод [EnumThreads.](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
+ Этот метод представляет список потоков процесса без дубликатов. В противном случае для перечисления потоков, выполняющихся в определенной программе, используйте метод [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

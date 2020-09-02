@@ -1,5 +1,5 @@
 ---
-title: Элемент SupportsCodeSeparation (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Суппортскодесепаратион (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd454873fb6a81e66efa99ed68007408f87ff824
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160503"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Элемент SupportsCodeSeparation (шаблоны проектов Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает ли **поместить код в отдельном файле** "флажок" включена в **Добавление нового элемента** диалоговое окно.  
+Указывает, включен ли флажок « **размещать код в отдельном файле** » в диалоговом окне « **Добавление нового элемента** ».  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<SupportsCodeSeparation >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsCodeSeparation>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,22 +48,22 @@ ms.locfileid: "68160503"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как отображается ли он в категорию шаблона и **новый проект** или **новый элемент** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в диалоговом окне **Новый проект** или **новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, указывающее, ли **поместить код в отдельном файле** "флажок" включена в **Добавление нового элемента** диалоговое окно.  
+ Текст должен иметь значение `true` или `false` , что указывает, включен ли флажок " **размещать код в отдельном файле** " в диалоговом окне " **Добавление нового элемента** ".  
   
-## <a name="remarks"></a>Примечания  
- `SupportsCodeSeparation` — это необязательный элемент. Значение по умолчанию — `false`.  
+## <a name="remarks"></a>Remarks  
+ Параметр `SupportsCodeSeparation` является необязательным элементом. Значение по умолчанию — `false`.  
   
- `SupportsCodeSeparation` Элемент доступен только для веб-шаблонов элементов.  
+ `SupportsCodeSeparation`Элемент доступен только для шаблонов веб-элементов.  
   
- Разделение кода, или модель страницы с выделенным кодом позволяет поместить разметку в один файл и программный код в другом файле. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и другими языками .NET использовать эту модель.  
+ Разделение кода или модель страницы кода программной части позволяет размещать разметку в одном файле и программном коде в другом файле. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] и другие языки .NET используют эту модель.  
   
 ## <a name="example"></a>Пример  
- В следующем примере задается для отображения **поместить код в отдельном файле** параметр.  
+ В следующем примере указывается, чтобы отобразить **код места в отдельном файле** .  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -87,6 +87,6 @@ ms.locfileid: "68160503"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

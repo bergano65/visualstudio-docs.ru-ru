@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382475"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Практическое руководство. Настройка используемой по умолчанию веб-страницы для приложения ClickOnce
@@ -45,10 +45,10 @@ ms.locfileid: "85382475"
 
 3. Настройте страницу по желанию и сохраните ее.
 
-4. Необязательный параметр. Чтобы запретить Visual Studio перезапись настроенной веб-страницы публикации, снимите флажок **автоматически создавать веб-страницу развертывания после каждой публикации** в диалоговом окне **Параметры публикации** .
+4. Необязательный элемент. Чтобы запретить Visual Studio перезапись настроенной веб-страницы публикации, снимите флажок **автоматически создавать веб-страницу развертывания после каждой публикации** в диалоговом окне **Параметры публикации** .
 
 ## <a name="see-also"></a>См. также
-- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Практическое руководство. Указание страницы публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160428"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала построения
@@ -44,14 +44,14 @@ ms.locfileid: "68160428"
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>Реагирование на значения детализации для средства ведения журнала  
- В некоторых случаях информацию о событии нужно записывать, только если параметр **/verbosity** для MSBuild.exe содержит определенное значение. В этом примере обработчик событий <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> записывает сообщение, только если свойство <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, которое задается параметром **/verbosity** переключения, равно <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
+ В некоторых случаях информацию о событии нужно записывать, только если параметр **/verbosity** для MSBuild.exe содержит определенное значение. В этом примере <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> обработчик событий регистрирует сообщение только в том случае, если <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> свойство, заданное параметром **/verbosity** , равно <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>Выбор средства ведения журнала  
- Когда средство ведения журнала скомпилировано в сборку, нужно передать в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметр **/logger** для MSBuild.exe. Дополнительные сведения о доступных параметрах MSBuild.exe см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
+ Когда средство ведения журнала скомпилировано в сборку, нужно передать в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] информацию о том, что это средство ведения журнала следует использовать во время сборки. Это делается с помощью параметра **/Logger** с MSBuild.exe. Дополнительные сведения о параметрах, доступных для MSBuild.exe, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
   
- Следующая команда выполняет сборку проекта `MyProject.csproj` с использованием класса ведения журнала, который реализован в `SimpleLogger.dll`. Параметр **/nologo** позволяет скрыть баннер и сообщение об авторских правах, а параметр **/noconsolelogger** отключает используемое по умолчанию консольное средство ведения журнала [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ Следующая команда выполняет сборку проекта `MyProject.csproj` с использованием класса ведения журнала, который реализован в `SimpleLogger.dll`. Параметр **/nologo** скрывает баннер и сообщение об авторских правах, а параметр **/noconsolelogger** отключает [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] средство ведения журнала консоли по умолчанию.  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
@@ -65,7 +65,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>ОПИСАНИЕ  
+### <a name="description"></a>Описание  
  В следующем примере приведен полный код средства ведения журнала.  
   
 ### <a name="code"></a>Код  
@@ -75,7 +75,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>ОПИСАНИЕ  
+### <a name="description"></a>Описание  
  В следующем примере показано, как реализовать средство ведения журнала, которое записывает журнал в файл, а не окно консоли.  
   
 ### <a name="code"></a>Код  
@@ -83,6 +83,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>Комментарии  
   
-## <a name="see-also"></a>См. также  
- [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
+## <a name="see-also"></a>См. также:  
+ [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

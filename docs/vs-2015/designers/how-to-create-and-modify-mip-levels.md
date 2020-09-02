@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99d2b07a64781929962ff37823ddcbf219598331
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664485"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Практическое руководство. Создание и изменение MIP-уровней
@@ -44,5 +44,5 @@ ms.locfileid: "72664485"
 > [!NOTE]
 > Если вам не нужно изменять содержимое отдельных уровней MIP для достижения каких-либо эффектов, мы рекомендуем автоматически создавать MIP-карты из исходной текстуры во время сборки. Это обеспечит соответствие всех уровней MIP исходной текстуре, так как изменения любых уровней MIP не будут автоматически распространяться на другие уровни. Дополнительные сведения о создании MIP-карт во время сборки см. в статье [How to: Export a Texture that Contains Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)(Практическое руководство. Экспорт текстуры, содержащей MIP-карты).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Практическое руководство. Создание простейшей текстуры](../designers/how-to-create-a-basic-texture.md)

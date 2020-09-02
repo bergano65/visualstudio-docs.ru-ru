@@ -28,6 +28,7 @@ ms.locfileid: "78263088"
 Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup>
+ \<ParameterGroup>
 
 ## <a name="syntax"></a>Синтаксис
 

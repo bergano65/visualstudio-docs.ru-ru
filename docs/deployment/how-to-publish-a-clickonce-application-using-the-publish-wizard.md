@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382306"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации
@@ -99,6 +99,6 @@ ms.locfileid: "85382306"
 
 ## <a name="see-also"></a>См. также
 
-- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

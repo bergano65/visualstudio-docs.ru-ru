@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382189"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce
@@ -78,5 +78,5 @@ ms.locfileid: "85382189"
 ## <a name="net-framework-security"></a>безопасность платформы .NET Framework
  Разрешайте передачу параметров URL-адреса в свое приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] только в том случае, если вы планируете очищать входные данные от любых вредоносных символов перед использованием. При отсутствии фильтрации SQL-запросов к базе данных строка с внедренными кавычками, символами косой черты или точками с запятой может, например, выполнять произвольные операции с данными. Дополнительные сведения о безопасности строки запроса см. в разделе [Общие сведения об эксплойтах сценариев](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias Документы Майкрософт
+title: 'IDebugBinder3:: Финдалиас | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735861"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Этот метод находит псевдоним, данный имя. Это будет искать все псевдонимы в программе.
+Этот метод находит псевдоним по заданному имени. При этом будут искаться все псевдонимы в программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,17 +43,17 @@ int FindAlias(
 
 ## <a name="parameters"></a>Параметры
 `pcstrName`\
-(в) Имя псевдонима, чтобы найти.
+окне Имя искомого псевдонима.
 
 `ppAlias`\
-(ваут) Псевдоним найден (если таков) представлен интерфейсом [IDebugAlias.](../../../extensibility/debugger/reference/idebugalias.md)
+заполняет Найден псевдоним (если имеется), представленный интерфейсом [идебугалиас](../../../extensibility/debugger/reference/idebugalias.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае, возвращает `S_FALSE` (если псевдоним не найден) или код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает значение `S_FALSE` (если псевдоним не найден) или код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод инициализирует объект назначения, чтобы сматить перед вызовом; после этого оно испытывает для null значения потом для того чтобы обусловить был ли или не псевдоним был найден.
+## <a name="remarks"></a>Remarks
+ Этот метод инициализирует целевой объект до значения null перед вызовом метода; После этого проверяется наличие значения NULL, чтобы определить, был ли найден псевдоним.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

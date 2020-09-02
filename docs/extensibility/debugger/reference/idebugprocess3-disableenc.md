@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC Документы Майкрософт
+title: IDebugProcess3::D Исаблинк | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723730"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Этот метод явно отстраняет от Edit и Продолжить этот процесс (и все программы, которые он содержит). Поставщик пользовательских портов `E_NOTIMPL`должен всегда возвращаться.
+Этот метод явно отключает функцию "изменить и продолжить" для этого процесса (и всех содержащихся в нем программ). Пользовательский поставщик порта всегда должен возвращать значение `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,17 +40,17 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>Параметры
 `reason`\
-(в) Значение из [encUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.
+окне Значение из перечисления [енкунаваилаблереасон](../../../extensibility/debugger/reference/encunavailablereason.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
 > [!NOTE]
-> Поставщик пользовательских портов `E_NOTIMPL`должен всегда возвращаться.
+> Пользовательский поставщик порта всегда должен возвращать значение `E_NOTIMPL` .
 
-## <a name="remarks"></a>Примечания
- После того, как edit and Continue отключен для процесса, он может быть восстановлен только путем перезапуска процесса.
+## <a name="remarks"></a>Remarks
+ Если для процесса отключена возможность "изменить и продолжить", ее можно включить заново, только перезапустив процесс.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

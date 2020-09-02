@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор методов сбора данных | Документация Майкрософт
+title: Практическое руководство. Выбор методов сбора данных | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199808"
 ---
 # <a name="how-to-choose-collection-methods"></a>Практическое руководство. Выбор методов сбора данных
@@ -42,7 +42,7 @@ ms.locfileid: "68199808"
 |**Выборка циклов ЦП**|Сбор статистики приложения, используемой для первоначального анализа и анализа проблем загрузки ЦП.|  
 |**Инструментирование**|Сбор подробных сведений о времени, которые удобно использовать для целевого анализа и анализа проблем производительности ввода-вывода.|  
 |**Выделение памяти .NET**|Сбор данных о выделении памяти [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] с помощью метода профилирования с выборкой.|  
-|**Параллельность**|Сбор числовых данных о конфликтах ресурсов.|  
+|**Параллелизм**|Сбор числовых данных о конфликтах ресурсов.|  
   
 ## <a name="performance-explorer"></a>Обозреватель производительности  
   
@@ -96,7 +96,7 @@ ms.locfileid: "68199808"
   
 3. Щелкните **Параллелизм**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)   
+ [Основные сведения о значениях данных выборки](../profiling/understanding-sampling-data-values.md)   
  [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)

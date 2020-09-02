@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382501"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Практическое руководство. Создание ассоциаций файлов для приложения ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения могут быть связаны с одним или несколькими расширениями имен файлов, чтобы приложение автоматически запускалось, когда пользователь открывает файл этих типов. Добавление в приложение поддержки расширений имен файлов [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] осуществляется просто.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут быть связаны с одним или несколькими расширениями имен файлов, чтобы приложение автоматически запускалось, когда пользователь открывает файл этих типов. Добавление в приложение поддержки расширений имен файлов [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] осуществляется просто.
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Создание сопоставлений файлов для приложения ClickOnce
 
@@ -31,7 +31,7 @@ ms.locfileid: "85382501"
 
 2. Откройте манифест приложения в текстовом или XML-редакторе, например в блокноте.
 
-3. Найдите элемент `assembly` . Дополнительные сведения см. в разделе [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).
+3. Найдите элемент `assembly` . Дополнительные сведения см. в разделе [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).
 
 4. Добавьте элемент в качестве дочернего элемента `assembly` `fileAssociation` . `fileAssociation`Элемент имеет четыре атрибута:
 
@@ -41,7 +41,7 @@ ms.locfileid: "85382501"
 
    - `progid`: Строка, уникально идентифицирующая тип файла для пометки в реестре.
 
-   - `defaultIcon`: Значок, используемый для этого типа файлов. Значок должен быть добавлен в манифест приложения как файловый ресурс. Дополнительные сведения см. в разделе [инструкции. Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+   - `defaultIcon`: Значок, используемый для этого типа файлов. Значок должен быть добавлен в манифест приложения как файловый ресурс. Дополнительные сведения см. в разделе [Практическое руководство. включить файл данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
      Пример `file` `fileAssociation` элементов и см. в разделе [ \<fileAssociation> element](../deployment/fileassociation-element-clickonce-application.md).
 
@@ -51,9 +51,9 @@ ms.locfileid: "85382501"
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
-    Дополнительные сведения см. в разделе [Mage.exe (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+    Дополнительные сведения см. в разделе [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="see-also"></a>См. также
-- [\<fileAssociation>дерев](../deployment/fileassociation-element-clickonce-application.md)
+- [\<fileAssociation> дерев](../deployment/fileassociation-element-clickonce-application.md)
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

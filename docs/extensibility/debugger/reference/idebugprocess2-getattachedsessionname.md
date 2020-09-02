@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс2::GetAttachedSessionName (англ.) Документы Майкрософт
+title: 'IDebugProcess2:: Жетаттачедсессионнаме | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b70fd48adacdbbf936c6997fc373ad4a8d7e696b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724064"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-Получает название сеанса, который отладит этот процесс. IDE может отображать эту информацию пользователю, который отлажя определенный процесс на определенной машине.
+Возвращает имя сеанса, в котором выполняется отладка этого процесса. Интегрированная среда разработки может отображать эту информацию для пользователя, выполняющего отладку определенного процесса на определенном компьютере.
 
 > [!NOTE]
-> Этот метод унижается, и его `E_NOTIMPL`реализация всегда должна возвращаться.
+> Этот метод является устаревшим, и его реализация всегда должна возвращать `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,7 +40,7 @@ HRESULT GetAttachedSessionName(
 `pbstrSessionName`\
 
 ## <a name="return-value"></a>Возвращаемое значение
- Этот метод должен `E_NOTIMPL`всегда возвращаться.
+ Этот метод всегда должен возвращать `E_NOTIMPL` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

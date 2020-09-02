@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d672d90254626cfef9bd87bfef9dcf2426aa346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160300"
 ---
 # <a name="resource-contention-data-views"></a>Представления данных о конфликтах ресурсов
@@ -24,7 +24,7 @@ ms.locfileid: "68160300"
 
 В этом разделе содержатся справочные сведения о представлениях и отчетах по файлам данных профилировщика, содержащих данные профилирования состязаний потоков.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Сводное представление —-данные профилировщика по состязаниям](../profiling/resource-contention-data-views.md)  
  Отображает графическую временную шкалу данных профилирования, а также список функций и ресурсов, задействованных в большинстве событий блокировки.  
   
@@ -49,15 +49,15 @@ ms.locfileid: "68160300"
  [Представление состязаний за ресурсы](../profiling/resource-contentions-view-contention-data.md)  
  Содержит список данных по состязаниям за ресурсы по заблокированным ресурсам.  
   
- [Представление "Строки"](../profiling/lines-view-contention-data.md)  
+ [Представление строк](../profiling/lines-view-contention-data.md)  
  Содержит список данных по состязаниям за ресурсы по строкам исходного кода.  
   
- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Представление указателей инструкций](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Содержит список состязаний за ресурсы по инструкциям.  
   
  [Представление "Процесс"](../profiling/process-view-contention-data.md)  
  Содержит список состязаний за ресурсы по процессам и потокам.  
   
-## <a name="reference"></a>Ссылка  
+## <a name="reference"></a>Справочник  
  [Представление "Сведения о функции"](../profiling/function-details-view.md)  
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.

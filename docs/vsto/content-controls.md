@@ -39,10 +39,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986177"
 ---
 # <a name="content-controls"></a>Элементы управления содержимым
@@ -88,7 +88,7 @@ ms.locfileid: "72986177"
 ### <a name="combo-box"></a>Поле со списком
  Поле со списком отображает список элементов, которые можно выбрать. В отличие от раскрывающегося списка, поле со списком позволяет пользователям добавлять собственные элементы. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.
 
-### <a name="date-picker"></a>Выбор даты
+### <a name="date-picker"></a>Управляющий элемент выбора даты
  Управляющий элемент выбора даты предоставляет пользовательский интерфейс календаря для выбора даты. Календарь появляется, когда пользователь щелкает стрелку раскрывающегося списка в элементе управления. Можно использовать региональные календари и различные форматы даты. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
 
 ### <a name="drop-down-list"></a>Раскрывающийся список
@@ -103,7 +103,7 @@ ms.locfileid: "72986177"
 ### <a name="rich-text"></a>Форматированный текст
  Элемент управления "форматированный текст" содержит текст или другие элементы, например таблицы, рисунки или другие элементы управления содержимым. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.RichTextContentControl>.
 
-### <a name="plain-text"></a>Обычный текст
+### <a name="plain-text"></a>с обычным текстом;
  Элемент управления "обычный текст" содержит текст. Элемент управления "обычный текст" не может содержать другие элементы, например таблицы, рисунки или другие элементы управления содержимым. Кроме того, весь текст в элементе управления "обычный текст" имеет одинаковое форматирование. Например, если выделить курсивом одно слово в предложении, которое находится в элементе управления "обычный текст", то курсивом будет выделен весь текст в этом элементе управления. Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>.
 
 ### <a name="generic-content-control"></a>Универсальный элемент управления содержимым
@@ -114,10 +114,10 @@ ms.locfileid: "72986177"
 ## <a name="common-features-of-content-controls"></a>Общие функции элементов управления содержимым
  Большинство элементов управления содержимым имеют общий набор членов, которые можно использовать для выполнения распространенных задач. В следующей таблице указаны некоторые задачи, которые можно выполнять с помощью таких членов.
 
-|Для выполнения этой задачи|Выполните следующее.|
+|Для выполнения этой задачи|Процедура|
 |--------------------|--------------|
-|Получение или задание текста, отображаемого в элементе управления.|Используйте свойство **Text** . **Примечание.**  Типы <xref:Microsoft.Office.Tools.Word.PictureContentControl> и <xref:Microsoft.Office.Tools.Word.ContentControl> не имеют этого свойства.|
-|Получение или задание временного текста, отображаемого в элементе управления, пока пользователь не изменит элемент управления, элемент управления не заполнится данными из источника данных или не будет удалено содержимое элемента управления.|Используйте свойство **плацехолдертекст** . **Примечание.**  Тип <xref:Microsoft.Office.Tools.Word.PictureContentControl> не имеет этого свойства.|
+|Получение или задание текста, отображаемого в элементе управления.|Используйте свойство **Text** . **Примечание.**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> Типы и <xref:Microsoft.Office.Tools.Word.ContentControl> не имеют этого свойства.|
+|Получение или задание временного текста, отображаемого в элементе управления, пока пользователь не изменит элемент управления, элемент управления не заполнится данными из источника данных или не будет удалено содержимое элемента управления.|Используйте свойство **плацехолдертекст** . **Примечание.**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> Тип не имеет этого свойства.|
 |Получение или задание заголовка, который отображается на границе элемента управления содержимым, когда пользователь его щелкает.|Используйте свойство **Title** .|
 |Автоматическое удаление элемента управления из документа после того, как пользователь изменяет элемент управления. (Текст в элементе управления остается в документе.)|Используйте свойство **Temporary** .|
 |Выполнение кода, когда пользователь щелкает элемент управления содержимым или когда курсор программным образом перемещается в элемент управления содержимым.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> элемента управления.|
@@ -125,7 +125,7 @@ ms.locfileid: "72986177"
 |Выполнение кода после добавления элемента управления содержимым в документ в результате выполнения операции повтора или отмены.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> элемента управления.|
 |Выполнение кода непосредственно перед удалением из документа элемента управления содержимым.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> элемента управления.|
 
-## <a name="Protection"></a>Защита частей документов с помощью элементов управления содержимым
+## <a name="protect-parts-of-documents-by-using-content-controls"></a><a name="Protection"></a> Защита частей документов с помощью элементов управления содержимым
  При защите части документа вы запрещаете пользователям изменять или удалять содержимое в этой части документа. Для защиты частей документа с помощью элементов управления содержимым можно использовать несколько способов.
 
  Если область, которую необходимо защитить, находится внутри элемента управления содержимым, то чтобы запретить изменение или удаление элемента управления, можно использовать свойства элемента управления содержимым.
@@ -141,7 +141,7 @@ ms.locfileid: "72986177"
 
  Дополнительные сведения об использовании элементов управления содержимым для защиты частей документов см. в разделе [как защитить части документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="DataBinding"></a>Привязка данных к элементам управления содержимым
+## <a name="bind-data-to-content-controls"></a><a name="DataBinding"></a> Привязка данных к элементам управления содержимым
  Для отображения данных в документах элемент управления содержимым можно привязать к источнику данных. При обновлении источника данных элемент управления содержимым будет показывать внесенные изменения. Изменения также можно сохранить обратно в источник данных.
 
  Элементы управления содержимым предоставляют следующие возможности по привязке данных.
@@ -155,7 +155,7 @@ ms.locfileid: "72986177"
 ### <a name="use-the-windows-forms-data-binding-model"></a>Использование Windows Forms модели привязки данных
  Большинство элементов управления содержимым поддерживают простую модель привязки данных, используемую Windows Forms. Простая привязка данных означает, что элемент управления привязывается к одному элементу данных, например к значению в столбце таблицы данных. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- В проектах уровня документа можно привязывать данные к элементам управления содержимым с помощью окна **Источники данных** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения о добавлении в документы элементов управления содержимым с привязкой к данным см. [в разделе как заполнить документы данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md) и [как заполнить документы данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ В проектах уровня документа можно привязывать данные к элементам управления содержимым с помощью окна **Источники данных** в среде [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Дополнительные сведения о добавлении в документы элементов управления содержимым с привязкой к данным см. [в разделе как заполнить документы данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md) и [как заполнить документы данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
  В следующей таблице перечислены элементы управления содержимым, которые можно привязать к каждому типу данных в окне « **Источники данных** ».
 
@@ -163,9 +163,9 @@ ms.locfileid: "72986177"
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> Массив <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Отсутствуют|
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> массив|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Нет|
 
- В проектах на уровне документа и проектах надстроек VSTO для привязки элемента управления содержимым к источнику данных программным образом можно использовать метод <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> элемента управления. В этом случае передайте **текст** строки в параметр *PropertyName* метода <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>. Свойство **Text** является свойством привязки данных по умолчанию для элементов управления содержимым.
+ В проектах на уровне документа и проектах надстроек VSTO для привязки элемента управления содержимым к источнику данных программным образом можно использовать метод <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> элемента управления. В этом случае передайте **текст** строки в параметр *PropertyName* <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> метода. Свойство **Text** является свойством привязки данных по умолчанию для элементов управления содержимым.
 
  Элементы управления содержимым также поддерживают двухстороннюю привязку данных, при которой изменения в элементе управления переносятся в источник данных. Дополнительные сведения см. в разделе [инструкции. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
@@ -204,7 +204,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>События привязки данных для элементов управления содержимым
  Все элементы управления содержимым предоставляют набор событий, которые можно обрабатывать для выполнения задач, связанных с данными, например для проверки соответствия текста в элементе управления заданным критериям перед обновлением источника данных. В следующей таблице перечислены события элементов управления, которые относятся к привязке данных.
 
-|Задача|событие|
+|Задача|Событие|
 |----------|-----------|
 |Выполнение кода непосредственно перед тем, как Word автоматически обновит текст в элементе управления содержимым, привязанном к пользовательской XML-части.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |Выполнение кода непосредственно перед тем, как Word автоматически обновит данные в пользовательской XML-части, которая привязана к элементу управления содержимым (то есть после изменения текста в элементе управления содержимым).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|
@@ -221,15 +221,15 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  Например, Word не запретит вам добавить таблицу в <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> во время разработки. Однако так как объекты <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> не могут содержать таблицы во время выполнения, то при открытии этого документа Word выдаст сообщение об ошибке.
 
- Также следует отметить, что многие свойства, определяющие поведение элементов управления содержимым, не оказывают никакого влияния во время разработки. Например, если для свойства **локкконтентс** элемента управления содержимым задано **значение true** во время разработки, то можно изменить текст в элементе управления в конструкторе [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Это свойство не позволяет изменять элемент управления только во время выполнения.
+ Также следует отметить, что многие свойства, определяющие поведение элементов управления содержимым, не оказывают никакого влияния во время разработки. Например, если для свойства **локкконтентс** элемента управления содержимым задано **значение true** во время разработки, то вы по-прежнему можете редактировать текст в элементе управления в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] конструкторе. Это свойство не позволяет изменять элемент управления только во время выполнения.
 
 ### <a name="event-limitations"></a>Ограничения на события
  Элементы управления содержимым не предоставляют событие, которое возникает при изменении пользователем текста или других элементов в элементе управления. Например, не существует событие, возникающее, когда пользователь выбирает другой элемент в <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> или <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.
 
  Чтобы определить, когда пользователь изменяет содержимое элемента управления содержимым, элемент управления можно привязать к пользовательской XML-части, а затем обрабатывать событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Это событие возникает, когда пользователь изменяет содержимое элемента управления, привязанного к пользовательской XML-части. Пошаговое руководство по привязке элемента управления содержимым к пользовательской XML-части см. в разделе [Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-### <a name="checkbox"></a>Элементы управления содержимым "флажок" в проектах Word
- В Word 2010 появился новый тип элемента управления содержимым, который представляет флажок. Однако [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] не предоставляет соответствующий тип Чеккбоксконтентконтрол для использования в проектах Office. Чтобы создать содержимое элемента управления "флажок" в [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или Word 2010, используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> для создания объекта <xref:Microsoft.Office.Tools.Word.ContentControl> и передайте значение <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> в этот метод для указания элемента управления содержимым "флажок". В следующем примере кода показано, как это сделать.
+### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Элементы управления содержимым "флажок" в проектах Word
+ В Word 2010 появился новый тип элемента управления содержимым, который представляет флажок. Тем не менее, не [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] предоставляет соответствующий тип чеккбоксконтентконтрол для использования в проектах Office. Чтобы создать содержимое элемента управления "флажок" в [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или Word 2010, используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> для создания объекта <xref:Microsoft.Office.Tools.Word.ContentControl> и передайте значение <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> в этот метод для указания элемента управления содержимым "флажок". В следующем примере кода показано, как это сделать.
 
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]

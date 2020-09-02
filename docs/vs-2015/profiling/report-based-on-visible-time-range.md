@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160323"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
@@ -27,15 +27,15 @@ ms.locfileid: "68160323"
   
  Здесь можно найти дополнительные сведения о данных в таблицах.  
   
-## <a name="see-also"></a>См. также  
- [Нет активности потоков для отображения](../profiling/no-thread-activity-to-show-threads-view.md)   
+## <a name="see-also"></a>См. также:  
+ [Нет активности потока для отображения](../profiling/no-thread-activity-to-show-threads-view.md)   
  [Отчет о профиле выполнения](../profiling/execution-profile-report.md)   
  [Время синхронизации](../profiling/synchronization-time.md)   
- [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)   
- [Время ожидания](../profiling/sleep-time.md)   
+ [Время ввода-вывода (представление "потоки")](../profiling/i-o-time-threads-view.md)   
+ [Время сна](../profiling/sleep-time.md)   
  [Время управления памятью](../profiling/memory-management-time.md)   
  [Время вытеснения](../profiling/preemption-time.md)   
  [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)   
- [Отчет операций диска](../profiling/disk-operations-report-threads-view.md)   
+ [Отчет об операциях диска](../profiling/disk-operations-report-threads-view.md)   
  [Сводный отчет по каждому потоку](../profiling/per-thread-summary-report.md)   
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
