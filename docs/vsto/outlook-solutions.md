@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985671"
 ---
 # <a name="outlook-solutions"></a>решения Outlook
@@ -40,7 +40,7 @@ ms.locfileid: "72985671"
 ## <a name="outlook-vsto-add-in-programming-model"></a>Модель программирования надстроек VSTO для Outlook
  При создании проекта надстройки VSTO для Outlook Visual Studio создает класс с именем `ThisAddIn`, который служит базой для вашего решения. Этот класс служит отправной точкой для написания собственного кода, а также предоставляет объектную модель Outlook для надстройки.
 
- Дополнительные сведения о классе `ThisAddIn` и других функциях, которые можно использовать в надстройке VSTO, см. в разделе [программное добавление надстроек VSTO](../vsto/programming-vsto-add-ins.md).
+ Дополнительные сведения о `ThisAddIn` классе и других функциях, которые можно использовать в надстройке VSTO, см. в разделе [программирование VSTO-надстроек](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Автоматизация Outlook с помощью объектной модели Outlook
  Объектная модель Outlook предоставляет различные типы, которые можно использовать для автоматизации Outlook. С их помощью можно написать код для выполнения распространенных задач:

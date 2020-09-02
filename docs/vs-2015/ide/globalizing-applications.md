@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645600"
 ---
 # <a name="globalizing-applications"></a>Глобализация приложений
@@ -25,14 +25,14 @@ ms.locfileid: "72645600"
 
 Глобализация — это процесс проектирования и разработки программных продуктов, которые работают в средах с различными языками и региональными параметрами. Этот раздел относится к страницам Windows Forms и Web Forms.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Классы, зависящие от языка и региональных параметров, для глобальных Windows Forms и веб-форм](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md) Обсуждаются классы, которые отформатируют даты, время, числа, валюту и другие сведения в соответствии с настройками языка и региональных параметров.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Глобализация Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Содержит ссылки на страницы справки о глобализации Windows Forms.
 
  [Глобализация и локализация](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Содержит ссылки на страницы справки о глобализации страниц веб-форм.
 
- [Введение в международные приложения на основе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Описание основных принципов разработки программного обеспечения для международного рынка с помощью Visual Basic или визуального C#элемента.
+ [Введение в международные приложения на основе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Описание основных принципов разработки программного обеспечения для международного рынка с помощью Visual Basic или Visual C#.
 
- [Рекомендации по разработке международных приложений](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Сведения о программировании для международной аудитории, в частности вопросы конструирования и терминологии.
+ Рекомендации [по разработке приложений, готовых к международному использованию](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Предоставляет сведения о программировании для международной аудитории, например проблемы проектирования и терминологию.

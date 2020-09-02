@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544421"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент «действия» (разработка решений Office в Visual Studio)
@@ -45,7 +45,7 @@ ms.locfileid: "85544421"
  Объект`postActions` имеет следующий элемент.
 
 ### <a name="postaction"></a>postAction
- Необязательный элемент. Роль `postAction` элемента в `vstav3` пространстве имен определена в [элементе&#60;&#62; действия &#40;разработки Office в Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
+ Необязательный элемент. Роль `postAction` элемента в `vstav3` пространстве имен определена в [ элементе&#60;&#62; действия &#40;разработки Office в Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Пример действия, выполняемого после развертывания
 

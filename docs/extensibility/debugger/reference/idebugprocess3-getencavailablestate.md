@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс3:GetENCAvailableState Документы Майкрософт
+title: 'IDebugProcess3:: Жетенкаваилаблестате | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723646"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Этот метод получает текущее состояние edit и continue процесса. Поставщик пользовательских портов `E_NOTIMPL`должен всегда возвращаться.
+Этот метод возвращает текущее состояние изменения и продолжения процесса. Пользовательский поставщик порта всегда должен возвращать значение `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetENCAvailableState(
 
 ## <a name="parameters"></a>Параметры
 `pReason`\
-(ваут) Значение из [encUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.
+заполняет Значение из перечисления [енкунаваилаблереасон](../../../extensibility/debugger/reference/encunavailablereason.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
 > [!NOTE]
-> Поставщик пользовательских портов `E_NOTIMPL`должен всегда возвращаться.
+> Пользовательский поставщик порта всегда должен возвращать значение `E_NOTIMPL` .
 
-## <a name="remarks"></a>Примечания
- Это состояние может быть затронуто [DisableENC.](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
+## <a name="remarks"></a>Remarks
+ На это состояние может повлиять [дисаблинк](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

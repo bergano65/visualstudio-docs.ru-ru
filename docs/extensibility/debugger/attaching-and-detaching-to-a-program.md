@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 42a751e6aa70c1aacd5df598e0c0e62da3b9d14b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903149"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Присоединение и отсоединение программы
@@ -49,5 +49,5 @@ ms.locfileid: "85903149"
 
 6. Параметр DE отправляет [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

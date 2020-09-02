@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 241bc016d8a64905951bffef07ba425f1351a727
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903585"
 ---
 # <a name="create-a-custom-debug-engine"></a>Создание пользовательского модуля отладки
@@ -39,7 +39,7 @@ ms.locfileid: "85903585"
 
 5. Настройка завершения и отсоединения
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
  [Регистрация пользовательского модуля отладки](../../extensibility/debugger/registering-a-custom-debug-engine.md) Описание действий, необходимых для регистрации модуля отладки в Visual Studio, чтобы его можно было использовать.
 
  [Включение отладки программы](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) В этой статье объясняется, что перед началом отладки программы необходимо сначала запустить DE или присоединить ее к существующей программе.
@@ -54,5 +54,5 @@ ms.locfileid: "85903585"
 
  [Как выполнить отладку пользовательского модуля отладки](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) Объясняется, как выполнить отладку пользовательского DE.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

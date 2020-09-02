@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс3::GetEngineFilter Документы Майкрософт
+title: 'IDebugProcess3:: Жетенгинефилтер | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a3f22a55b9a02f567b2f5ab353d4b15ac9532fdb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723634"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
-Извлекает массив уникальных идентификаторов для доступных двигателей отладки.
+Извлекает массив уникальных идентификаторов для доступных модулей отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,7 +40,7 @@ public int GetEngineFilter(
 
 ## <a name="parameters"></a>Параметры
 `pEngineArray`\
-(ваут) Ссылка на структуру, содержащую уникальные идентификаторы для отладоть двигатели.
+заполняет Ссылка на структуру, которая содержит уникальные идентификаторы для отладочных модулей.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.

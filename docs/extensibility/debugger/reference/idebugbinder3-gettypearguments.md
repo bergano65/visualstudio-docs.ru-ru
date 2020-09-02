@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeАргументы Документы Майкрософт
+title: 'IDebugBinder3:: GetTypeArguments | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735701"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
@@ -47,23 +47,23 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Параметры
 `skip`\
-(в) Количество полей, которые можно пропустить перед получением типов аргументов.
+окне Число полей, которые необходимо пропустить перед получением типов аргументов.
 
 `count`\
-(в) Количество полей аргументов для возврата (также указывает `ppFields` размер массива).
+окне Число возвращаемых полей аргументов (также определяет размер `ppFields` массива).
 
 `ppFields`\
-(в, вне) Массив полей, которые будут заполнены по возвращении этого метода.
+[вход, выход] Массив полей, которые будут заполнены при возврате этого метода.
 
 `pFetched`\
-(ваут) \(факультативно) количество полей типа аргумента фактически возвращено.
+[out] \( необязательно.) число фактически возвращаемых полей типа аргумента.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Количество типов аргументов можно получить заранее с [помощью GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+## <a name="remarks"></a>Remarks
+ Число типов аргументов можно получить заранее с помощью [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

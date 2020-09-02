@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008694"
 ---
 # <a name="work-with-documents"></a>Работа с документами
@@ -28,20 +28,20 @@ ms.locfileid: "63008694"
 
 |Задача|Процедура|
 |----------|---------------|
-|Создание документа на основе шаблона «Обычный» или другого шаблона.|[Практическое руководство. Программное создание документов](../vsto/how-to-programmatically-create-new-documents.md)|
-|Открытие указанного документа для чтения и записи или только для чтения.|[Практическое руководство. Программное Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)|
-|Закрытие активного документа или указанного документа.|[Практическое руководство. Программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)|
-|Сохранение документа с тем же именем или новым именем.|[Практическое руководство. Программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)|
-|Печать всего документа или только текущей страницы.|[Практическое руководство. Программная печать документов](../vsto/how-to-programmatically-print-documents.md)|
-|Отображение документа в режиме предварительного просмотра.|[Практическое руководство. Программное отображение документов в режиме предварительного просмотра](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|
-|Отображение встроенного диалогового окна и сбор введенных пользователем данных.|[Практическое руководство. Программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|
-|Использование функциональных возможностей во встроенном диалоговом окне без его отображения.|[Практическое руководство. Программное использование диалоговых окон Word в скрытом режиме](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|
-|Добавление рисунка или объекта Word Art в документ.|[Практическое руководство. Программное добавление рисунков и объекта Word art в документы](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|
-|Запрет изменения документа или части документа.|[Практическое руководство. Программная Защита документов и их частей](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|
-|Проверка орфографии.|[Практическое руководство. Программная проверка правописания в документах](../vsto/how-to-programmatically-check-spelling-in-documents.md)|
-|Добавление верхнего или нижнего колонтитула в документ.|[Практическое руководство. Программное добавление верхних и нижних колонтитулов к документам](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
-|Удаление всех комментариев из документа.|[Практическое руководство. Программное удаление всех комментариев из документа](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
+|Создание документа на основе шаблона «Обычный» или другого шаблона.|[Руководство. Программное создание новых документов](../vsto/how-to-programmatically-create-new-documents.md)|
+|Открытие указанного документа для чтения и записи или только для чтения.|[Руководство. Программное открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)|
+|Закрытие активного документа или указанного документа.|[Руководство. программное закрытие документов](../vsto/how-to-programmatically-close-documents.md)|
+|Сохранение документа с тем же именем или новым именем.|[Руководство. Программное сохранение документов](../vsto/how-to-programmatically-save-documents.md)|
+|Печать всего документа или только текущей страницы.|[Руководство. Программная печать документов](../vsto/how-to-programmatically-print-documents.md)|
+|Отображение документа в режиме предварительного просмотра.|[Руководство. программное отображение документов в режиме предварительного просмотра](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|
+|Отображение встроенного диалогового окна и сбор введенных пользователем данных.|[Руководство. программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|
+|Использование функциональных возможностей во встроенном диалоговом окне без его отображения.|[Руководство. программное использование диалоговых окон Word в скрытом режиме](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|
+|Добавление рисунка или объекта Word Art в документ.|[Руководство. Программное добавление изображений и документов Word Art в документы](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|
+|Запрет изменения документа или части документа.|[Руководство. Программная защита документов и частей документов](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|
+|Проверка орфографии.|[Руководство. Программная проверка орфографии в документах](../vsto/how-to-programmatically-check-spelling-in-documents.md)|
+|Добавление верхнего или нижнего колонтитула в документ.|[Руководство. Программное добавление верхних и нижних колонтитулов в документы](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
+|Удаление всех комментариев из документа.|[Руководство. Программное удаление всех комментариев из документов](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>См. также
-- [Обзор объектной модели Word](../vsto/word-object-model-overview.md)
+## <a name="see-also"></a>См. также раздел
+- [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
 - [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

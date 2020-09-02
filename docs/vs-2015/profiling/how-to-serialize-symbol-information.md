@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сериализация сведений о символах | Документация Майкрософт
+title: Практическое руководство. Сериализация сведений о символах | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687016"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Практическое руководство. Сериализация сведений о символах
@@ -36,7 +36,7 @@ ms.locfileid: "65687016"
   
 3. В разделе **Общие параметры** выберите **Автоматическая сериализация символьной информации**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
- [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Практическое руководство. Сохранение проанализированных файлов отчета](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Инструкции: справочные сведения о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Как сохранять проанализированные файлы отчетов](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

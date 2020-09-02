@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Построение проекта, содержащего ресурсы | Документы Майкрософт
+title: Практическое руководство. Сборка проекта, содержащего ресурсы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686516"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Практическое руководство. Построение проекта, содержащего ресурсы
@@ -27,7 +27,7 @@ ms.locfileid: "65686516"
 При создании локализованных версий проекта все элементы пользовательского интерфейса должны разделяться по файлам ресурсов для разных языков. Если в проекте используются только строки, в качестве файлов ресурсов могут выступать текстовые файлы. Кроме того, в этих целях можно использовать RESX-файлы.  
   
 ## <a name="compiling-resources-with-msbuild"></a>Компиляция ресурсов с помощью MSBuild  
- Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], включает в себя задачу `GenerateResource`, позволяющую компилировать ресурсы в RESX-файлах или текстовых файлах. Эта задача включает параметр `Sources` для указания компилируемых файлов ресурсов и параметр `OutputResources` для указания имен выходных файлов ресурсов. Дополнительные сведения о задаче `GenerateResource` см. в разделе [Задача GenerateResource](../msbuild/generateresource-task.md).  
+ Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], включает в себя задачу `GenerateResource`, позволяющую компилировать ресурсы в RESX-файлах или текстовых файлах. Эта задача включает параметр `Sources` для указания компилируемых файлов ресурсов и параметр `OutputResources` для указания имен выходных файлов ресурсов. Дополнительные сведения о `GenerateResource` задаче см. в разделе [задача GenerateResource](../msbuild/generateresource-task.md).  
   
 #### <a name="to-compile-resources-with-msbuild"></a>Компиляция ресурсов с помощью MSBuild  
   
@@ -79,8 +79,8 @@ ms.locfileid: "65686516"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
 [MSBuild](msbuild.md)  
  [Задача GenerateResource](../msbuild/generateresource-task.md)   
- [Задача Csc](../msbuild/csc-task.md)   
+ [Задача CSC](../msbuild/csc-task.md)   
  [Resgen.exe (генератор файлов ресурсов)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
