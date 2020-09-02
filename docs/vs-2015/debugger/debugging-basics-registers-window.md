@@ -1,5 +1,5 @@
 ---
-title: 'Общие сведения об отладке: Регистрирует окно | Документация Майкрософт'
+title: 'Основные сведения об отладке: окно регистров | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686717"
 ---
-# <a name="debugging-basics-registers-window"></a>Общие сведения об отладке: Окно "Регистры"
+# <a name="debugging-basics-registers-window"></a>Общие сведения об отладке: окно регистров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Окно **Регистры** доступно, только если включена отладка на уровне адреса в диалоговом окне **Параметры** в разделе **Отладка**.  
@@ -45,7 +45,7 @@ ms.locfileid: "65686717"
   
  Дополнительные сведения об окне **Регистры** см. в [этой статье](../debugger/how-to-use-the-registers-window.md).  
   
- Если взглянуть на **регистрирует** окно, вы увидите записи следующего вида:  
+ При просмотре окна **регистры** вы увидите такие записи, как следующий пример:  
   
 ```  
 EAX = 003110D8  
@@ -58,6 +58,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>Группы регистров  
  Чтобы избежать загромождения, в окне **Регистры**  регистры упорядочены по группам. Если щелкнуть правой кнопкой в окне **Регистры**, отображается контекстное меню, содержащее список групп, который можно отобразить или скрыть.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)   
+## <a name="see-also"></a>См. также:  
+ [Как использовать окно "регистры"](../debugger/how-to-use-the-registers-window.md)   
  [Основы отладки](../debugger/debugger-basics.md)
