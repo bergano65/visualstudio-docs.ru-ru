@@ -1,5 +1,5 @@
 ---
-title: Обновление пользовательских проектов (ru) Документы Майкрософт
+title: Обновление пользовательских проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,18 +12,18 @@ ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
 ms.openlocfilehash: c91013e7d5650e82fd9e5f6e39e28c4609e4fbfe
-ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82037211"
 ---
 # <a name="upgrading-custom-projects"></a>Обновление пользовательских проектов
-Если вы изменяете данные, сохраненные в файле проекта, при переводе продукта с одной версии Visual Studio на другую, то вам необходимо обеспечить обновление файла проекта со старой версии до новой. Для поддержки обновления, что позволяет участвовать в <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Visual Studio Преобразования **мастера**, реализовать интерфейс. Этот интерфейс содержит единственный доступный метод для обновления копии. Обновление проекта происходит в процессе открытия решения. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> реализуется фабрикой проектов или по крайней мере должен получаться из нее.  
+Если вы изменяете данные, сохраненные в файле проекта, при переводе продукта с одной версии Visual Studio на другую, то вам необходимо обеспечить обновление файла проекта со старой версии до новой. Для поддержки обновления, позволяющего принять участие в **мастере преобразования Visual Studio**, реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> интерфейс. Этот интерфейс содержит единственный доступный метод для обновления копии. Обновление проекта происходит в процессе открытия решения. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> реализуется фабрикой проектов или по крайней мере должен получаться из нее.  
   
  Старый механизм, предполагающий использование интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, по-прежнему поддерживается, но по сути обновляет систему проекта в процессе открытия проекта. Поэтому интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> вызывается средой [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], даже если вызывается или реализуется интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Такой подход позволяет использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> для реализации обновления с копированием только для частей проекта, а остальную работу выполнять на месте (возможно, в новом расположении) с помощью интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.  
   
- Для реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>выборки [см.](../misc/vssdk-samples.md)  
+ Пример реализации см. в <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> разделе [VSSDK Samples](../misc/vssdk-samples.md).  
   
  При обновлении проектов возникают описанные ниже ситуации.  
   
@@ -56,11 +56,11 @@ ms.locfileid: "82037211"
 6. Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> используется для реализации любого типа обновления файлов, которое должно происходить в рамках обновления проекта. Этот интерфейс не вызывается из <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, а предоставляется как механизм для обновления файлов, которые входят в систему проекта, но сведения о которых могут отсутствовать в основной системе проекта. Например, такая ситуация может возникнуть, если связанными с компилятором файлами и свойствами с одной стороны и остальной системой проекта с другой стороны занимаются разные команды разработчиков.  
   
 ## <a name="ivsprojectupgrade-implementation"></a>Реализация интерфейса IVsProjectUpgrade  
- Если ваша проектная <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> система реализуеттолько только, она не может участвовать в **Visual Studio Conversion Wizard.** Однако даже если вы реализуете интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, вы все же можете задействовать реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> для обновления файлов.  
+ Если система проектов реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> только, она не может участвовать в **мастере преобразования Visual Studio**. Однако даже если вы реализуете интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, вы все же можете задействовать реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> для обновления файлов.  
   
 #### <a name="to-implement-ivsprojectupgrade"></a>Реализация интерфейса IVsProjectUpgrade  
   
-1. Когда пользователь пытается открыть проект, метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> вызывается средой сразу после открытия проекта. Любые действия пользователя с проектом могут совершаться только после выполнения этого метода. Если пользователь уже получил запрос на обновление решения, флаг <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> передается в параметре `grfUpgradeFlags`. Если пользователь открывает проект напрямую, например, используя команду <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> Add Existing **Project,** флаг не передается, и проект должен побудить пользователя обновиться.  
+1. Когда пользователь пытается открыть проект, метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> вызывается средой сразу после открытия проекта. Любые действия пользователя с проектом могут совершаться только после выполнения этого метода. Если пользователь уже получил запрос на обновление решения, флаг <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> передается в параметре `grfUpgradeFlags`. Если пользователь открывает проект напрямую, например с помощью команды **Добавить существующий проект** , то <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> флаг не передается и проект должен запросить у пользователя обновление.  
   
 2. В ответ на вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> проект должен определить, должен ли обновляться файл проекта. Если тип проекта не нужно обновлять до новой версии, то проект может просто вернуть флаг <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "82037211"
   
 - Если вы самостоятельно обеспечиваете перезагрузку проекта, то среда вызывает вашу реализацию метода <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT). Получив этот вызов, перезагрузите первый экземпляр проекта (Project1) и продолжайте обновление файла проекта. Среда определяет, что вы самостоятельно обеспечиваете перезагрузку проекта, если для <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) возвращается значение `true`.  
   
-- Если вы не обеспечиваете перезагрузку проекта самостоятельно, то для <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) должно возвращаться значение `false`. В этом случае, прежде чем <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>[(QEF_ForceEdit_NoPrompting,](/dotnet/api/microsoft.visualstudio.shell.interop.tagvsqueryeditflags) [QEF_DisallowInMemoryEdits,)](/dotnet/api/microsoft.visualstudio.shell.interop.tagvsqueryeditflags)возвращается, среда создает еще один новый, экземпляр вашего проекта, например, Project2, следующим образом:  
+- Если вы не обеспечиваете перезагрузку проекта самостоятельно, то для <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>) должно возвращаться значение `false`. В этом случае, Before <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ([QEF_ForceEdit_NoPrompting](/dotnet/api/microsoft.visualstudio.shell.interop.tagvsqueryeditflags), [QEF_DisallowInMemoryEdits](/dotnet/api/microsoft.visualstudio.shell.interop.tagvsqueryeditflags),) возвращает, среда создает еще один экземпляр проекта, например Project2, как показано ниже:  
   
   1. Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> для первого объекта проекта (Project1), переводя его таким образом в неактивное состояние.  
   
@@ -118,6 +118,6 @@ ms.locfileid: "82037211"
   В случае сбоя обновления метод `IVsProjectUpgrade::UpgradeProject` должен возвращать значение <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>. Если обновление не требуется или вы решили не производить его, вызов `IVsProjectUpgrade::UpgradeProject` следует рассматривать как холостой. Если возвращается код ошибки <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, в решение проекта добавляется узел-заполнитель.  
   
 ## <a name="see-also"></a>См. также:  
- [Визуальный студии Преобразования Мастера](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Мастер преобразования Visual Studio](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Обновление элементов проекта](../misc/upgrading-project-items.md)   
  [Проекты](../extensibility/internals/projects.md)

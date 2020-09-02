@@ -1,5 +1,5 @@
 ---
-title: Отладка управляемого кода | Документация Майкрософт
+title: Отладка управляемого кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691453"
 ---
 # <a name="debugging-managed-code"></a>Отладка управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. Дополнительные сведения см. в разделе [использование отладчика](../debugger/debugger-basics.md).  
+В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. Дополнительные сведения см. [в разделе Использование отладчика](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Диагностические сообщения в окне вывода](../debugger/diagnostic-messages-in-the-output-window.md)  
@@ -49,19 +49,19 @@ ms.locfileid: "65691453"
  [Отладка метода OnStart](../debugger/how-to-debug-the-onstart-method.md)  
  Предоставляются примеры кода, позволяющие выполнять отладку метода `OnStart` управляемой службы Windows. Для отладки метода `OnStart` службы Windows необходимо добавить несколько строк кода для имитации работы службы.  
   
- [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
+ [Отладка в смешанном режиме](../debugger/debugging-mixed-mode-applications.md)  
  Обсуждение отладки приложений в смешанном режиме. Это подразумевает любое приложение, объединяющее машинный код с управляемым кодом.  
   
  [Ошибка: Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Описание сообщения об ошибке, которое появляется при попытке произвести отладку управляемого кода на компьютере, загруженном в режиме отладки под управлением операционной системы [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)] или Windows NT.  
   
- [JIT-отладка и оптимизация](../debugger/jit-optimization-and-debugging.md)  
+ [JIT-оптимизация и отладка](../debugger/jit-optimization-and-debugging.md)  
  Описывает эффекты по оптимизации по отладке JIT.  
   
  [Отладка LINQ и DLINQ](../debugger/debugging-linq.md)  
  Описывает методы отладки LINQ запросов.  
   
- [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Пошаговое руководство: Отладка параллельного приложения в Visual Studio](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Описывает использование окон инструментов **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
@@ -87,7 +87,7 @@ ms.locfileid: "65691453"
  [Домашняя страница отладки](../debugger/debugging-in-visual-studio.md)  
  Ссылки на крупные разделы документации об отладке. В них содержатся следующие сведения: новые возможности отладчика, сведения о параметрах и подготовке, точках останова, обработке исключений, изменении и продолжении выполнения, отладке управляемого кода, проектов Visual C++, объектов COM и ActiveX, библиотек DLL, SQL, а также ссылки на пользовательский интерфейс.  
   
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Отладка пользовательских Windows Forms элементы управления во время разработки](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+## <a name="see-also"></a>См. также:  
+ [Пошаговое руководство. Отладка пользовательских элементов управления Windows Forms во время разработки](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

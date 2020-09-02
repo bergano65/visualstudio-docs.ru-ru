@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195609"
 ---
 # <a name="modules-view"></a>Представление "Модули"
@@ -29,13 +29,13 @@ ms.locfileid: "68195609"
   
  Чтобы отобразить или свернуть данные о производительности модуля, следует отобразить или закрыть имя модуля.  
   
- Чтобы добавить или удалить столбцы, щелкните правой кнопкой мыши в окне отчета и выберите команду **Добавить или удалить столбцы**. Щелкнув имя столбца, можно сортировать данные. Дополнительные сведения см. в разделе [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md).  
+ Чтобы добавить или удалить столбцы, щелкните правой кнопкой мыши в окне отчета и выберите команду **Добавить или удалить столбцы**. Щелкнув имя столбца, можно сортировать данные. Дополнительные сведения см. в статье [How to: Customize Report View Columns](../profiling/how-to-customize-report-view-columns.md) (Практическое руководство. Настройка столбцов представлений отчета).  
   
  Столбцы, доступные в представлении "Модули", зависят от метода профилирования (выборка или инструментирование), использовавшегося для сбора данных, а также от того, были ли собраны данные памяти .NET в ходе сеанса профилирования.  
   
-## <a name="see-also"></a>См. также  
- [Представление "Модули"](../profiling/modules-view-sampling-data.md)   
- [Представление "Модули"](../profiling/modules-view-instrumentation-data.md)   
- [Представление "Модули" — инструментирование](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Представление "Модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Представление "модули"](../profiling/modules-view-sampling-data.md)   
+ [Представление "модули"](../profiling/modules-view-instrumentation-data.md)   
+ [Представление "модули" — инструментирование](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Представление "Модули"](../profiling/modules-view-contention-data.md)

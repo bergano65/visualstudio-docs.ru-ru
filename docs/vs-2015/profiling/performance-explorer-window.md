@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195526"
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
@@ -54,7 +54,7 @@ ms.locfileid: "68195526"
   
 - **Отчеты.** Отображаются имена файлов данных профилировщика, которые были созданы в ходе сеанса. Чтобы добавить существующий отчет или сравнить два файла данных профилировщика, щелкните **Отчеты** правой кнопкой мыши. Чтобы открыть, удалить или экспортировать файл данных профилировщика, щелкните имя отчета правой кнопкой мыши.  
   
-## <a name="see-also"></a>См. также  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Управление сбором данных](../profiling/controlling-data-collection.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904137"
 ---
 # <a name="add-a-tool-window"></a>Добавление окна инструментов
@@ -32,7 +32,7 @@ ms.locfileid: "85904137"
 
 - Задайте расположение по умолчанию для окна инструментов.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 Пакет SDK для Visual Studio входит в состав программы установки Visual Studio в качестве дополнительного компонента. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -280,5 +280,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
     Вы должны слышать звук подвеска.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

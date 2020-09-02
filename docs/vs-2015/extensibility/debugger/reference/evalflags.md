@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Документация Майкрософт
+title: ЕВАЛФЛАГС | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149384"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает флаги, определяющие вычисления выражения.  
+Задает флаги, управляющие вычислением выражений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,39 +53,39 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>Участники  
  EVAL_RETURNVALUE  
- Указывает, что возвращаемое значение, если таковое имеется, вычисляется.  
+ Указывает, что должно быть вычислено возвращаемое значение, если оно имеется.  
   
  EVAL_NOSIDEEFFECTS  
- Указывает, что побочные эффекты не разрешается.  
+ Указывает, что побочные эффекты не допускаются.  
   
  EVAL_ALLOWBPS  
- Указывает остановки точек останова.  
+ Задает остановку в точках останова.  
   
  EVAL_ALLOWERRORREPORT  
- Указывает отчетов к узлу разрешен об ошибках. В основном используется для вычисления выражений в скрипте в Internet Explorer.  
+ Указывает, что сообщение об ошибках должно быть разрешено узлу. В основном используется для вычисления выражений в скрипте в Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Функции силы для оценки в качестве адреса, вместо вызова функции.  
+ Заставляет функции оцениваться как адреса, а не вызывать функцию.  
   
  EVAL_NOFUNCEVAL  
- Запрещает вычисляется функция. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться правильно, как адрес, а не как значение.  
+ Предотвращает вычисление функции. Например, рассмотрим `int` маркер в выражении `myExpression(int) + 10` . Эта функция может быть правильно оценена как адрес, но не как значение.  
   
  EVAL_NOEVENTS  
- Флаг, указывающий, что события, происходящие во время вычисления выражения не следует отправлять в диспетчер отладки сеансов (SDM) или в интегрированную среду разработки.  
+ Флаг, указывающий, что события, происходящие во время оценки выражения, не должны отправляться в Диспетчер отладки сеанса (SDM) или в интегрированную среду разработки.  
   
-## <a name="remarks"></a>Примечания  
- Эти флаги передаются в качестве аргумента [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) методы.  
+## <a name="remarks"></a>Remarks  
+ Эти флаги передаются в качестве аргумента методам [евалуатеасинк](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [евалуатесинк](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .  
   
- Эти флаги могут быть объединены с помощью побитового логического Сложения.  
+ Эти флаги можно сочетать с помощью побитового или.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
+ [евалуатеасинк](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

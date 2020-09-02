@@ -1,5 +1,5 @@
 ---
-title: 'Как: Указать альтернативное местоположение для обновления развертывания (ru) Документы Майкрософт'
+title: Как указать альтернативное расположение для обновлений развертывания | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,54 +17,54 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8b6388833e6574fc1d631d391fa7b67d5f0a3372
-ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82037224"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] установить приложение изначально с компакт-диска или файла, но приложение должно проверить периодические обновления в Интернете. Можно указать альтернативное место для обновления в манифесте развертывания, чтобы приложение смогли обновиться из Интернета после его первоначальной установки.  
+Приложение можно установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] изначально с компакт-диска или из общей папки, но приложение должно проверять наличие периодических обновлений в Интернете. Можно указать альтернативное расположение для обновлений в манифесте развертывания, чтобы приложение можно было обновлять из Интернета после первоначальной установки.  
   
 > [!NOTE]
-> Приложение должно быть настроено для локальной установки для использования этой функции. Для получения дополнительной информации смотрите [Пошаговое руководство: Ручное развертывание приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Кроме того, если [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] вы установите приложение из сети, установка альтернативного местоположения вызывает [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] использование этого местоположения как для первоначальной установки, так и для всех последующих обновлений. Если вы установите приложение локально (например, с компакт-диска), начальная установка выполняется с помощью исходного носителя, и все последующие обновления будут использовать альтернативное местоположение.  
+> Приложение должно быть настроено для локальной установки с целью использования этой функции. Дополнительные сведения см. [в разделе Пошаговое руководство. Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Кроме того, если установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение из сети, то при настройке альтернативного расположения будет [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] использоваться это расположение как для первоначальной установки, так и для всех последующих обновлений. Если приложение устанавливается локально (например, с компакт-диска), начальная установка выполняется с использованием исходного носителя, а все последующие обновления будут использовать альтернативное расположение.  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Определение альтернативного местоположения для обновлений с помощью MageUI.exe (утилита на основе Windows Forms)  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Указание альтернативного расположения для обновлений с помощью MageUI.exe (служебная программа на основе Windows Forms)  
   
-1. Откройте запрос и тип команды .NET Framework:  
+1. Откройте командную строку .NET Framework и введите:  
   
      **mageui.exe**  
   
-2. В меню **файла** выберите **Open,** чтобы открыть манифест развертывания приложения.  
+2. В меню **файл** выберите **Открыть** , чтобы открыть манифест развертывания приложения.  
   
 3. Перейдите на вкладку **Параметры развертывания**.  
   
-4. В текстовом поле под названием **«Место запуска»** введите URL-адрес в каталог, который будет содержать манифест развертывания для обновлений приложений.  
+4. В текстовом поле имя **запуска**введите URL-адрес каталога, который будет содержать манифест развертывания для обновлений приложения.  
   
-5. Сохранить манифест развертывания.  
+5. Сохраните манифест развертывания.  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Определение альтернативного местоположения для обновлений с помощью Mage.exe  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Указание альтернативного расположения для обновлений с помощью Mage.exe  
   
 1. Откройте командную строку .NET Framework.  
   
-2. Установите место обновления с помощью следующей команды. В этом примере **HelloWorld.exe.application** — [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] это путь к манифесту приложения, `http://adatum.com/Update/Path` который всегда [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] имеет расширение .application, и URL- данный URL, который будет проверять обновления приложения.  
+2. Задайте расположение обновления с помощью следующей команды. В этом примере **HelloWorld.exe. Application** — это путь к [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесту приложения, который всегда имеет расширение приложения, а `http://adatum.com/Update/Path` — это URL-адрес, который [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] будет проверять наличие обновлений приложения.  
   
-     **Маг -Обновление HelloWorld.exe.application-ProviderUrl\/http: /adatum.com/Update/Path**  
+     **Mage: обновление HelloWorld.exe. Application-ProviderUrl http: \/ /adatum.com/Update/Path**  
   
 3. Сохраните файл.  
   
     > [!NOTE]
-    > Теперь вам нужно повторно подписать файл с Mage.exe. Для получения дополнительной информации смотрите [Пошаговое руководство: Ручное развертывание приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+    > Теперь необходимо повторно подписать файл с помощью Mage.exe. Дополнительные сведения см. [в разделе Пошаговое руководство. Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Безопасность .NET Framework  
- Если вы устанавливаете приложение из автономной среды, такой как [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] компакт-диск, и `<deploymentProvider>` компьютер находится в сети, сначала проверьте URL, указанный тегом в манифесте развертывания, чтобы определить, содержит ли местоположение обновления более позднюю версию приложения. Если это [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] так, устанавливает приложение непосредственно оттуда, а не из первоначального каталога установки, и общее время выполнения `<deploymentProvider>`языка (CLR) определяет уровень доверия вашего приложения с помощью. Если компьютер находится в `<deploymentProvider>` автономном режиме [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] или недосягаем, устанавливается с компакт-диска, и CLR предоставляет доверие в зависимости от точки установки; для установки компакт-диска это означает, что ваше приложение получает полное доверие. Все последующие обновления унаследуют этот уровень доверия.  
+ Если приложение устанавливается с автономного носителя, такого как компакт-диск, и компьютер находится в сети, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] сначала проверяет URL-адрес, указанный `<deploymentProvider>` тегом в манифесте развертывания, чтобы определить, содержит ли расположение обновления более новую версию приложения. Если это так, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] устанавливает приложение непосредственно из каталога начальной установки, а среда CLR определяет уровень доверия приложения с помощью `<deploymentProvider>` . Если компьютер находится в автономном режиме или `<deploymentProvider>` недоступен, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] устанавливается с компакт-диска, а среда CLR предоставляет доверие на основе точки установки; для установки с компакт-диска это означает, что приложение получает полное доверие. Все последующие обновления наследуют этот уровень доверия.  
   
- Все [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, `<deploymentProvider>` которые используют должны прямо объявить разрешения, необходимые им в их манифесте приложения, так что приложение не получает различных уровней доверия на разных компьютерах.  
+ Все [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения, использующие, `<deploymentProvider>` должны явно объявлять разрешения, необходимые им в манифесте приложения, чтобы приложение не получало разные уровни доверия на разных компьютерах.  
   
-## <a name="see-also"></a>См. также:  
- [Пошаговая инструкция: Вручную развертывание приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [ClickOnce Развертывание Манифест](../deployment/clickonce-deployment-manifest.md)   
- [Обеспечение ClickOnce приложений](../deployment/securing-clickonce-applications.md)   
+## <a name="see-also"></a>См. также  
+ [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

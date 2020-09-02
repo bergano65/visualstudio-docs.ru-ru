@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543719"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Вас приветствует Visual Studio 2015
@@ -81,7 +81,7 @@ ms.locfileid: "85543719"
 ### <a name="check-in-your-code"></a>Возврат кода
  При работе в команде необходимо обеспечить обмен актуальными версиями кода, чтобы все участники рабочей группы работали с одной и той же базой кода. Visual Studio легко интегрируется с Visual Studio Team Services или Team Foundation Server, обеспечивая возможность управления версиями с использованием Git или системы управления версиями Team Foundation (TFVC). Используйте Visual Studio Team Services для хранения кода в облаке без необходимости обслуживания локального сервера. Воспользуйтесь Team Foundation Server, если вам нужен локальный сервер. Имеется возможность добавления всех создаваемых проектов кода в систему управления версиями. Дополнительные сведения о том, какая система управления версиями лучше подходит для ваших нужд, см. в разделе [Выбор правильного контроля версий для проекта](https://docs.microsoft.com/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops).
 
-### <a name="build-your-app"></a>Создание приложения
+### <a name="build-your-app"></a>Сборка приложения
  Можно [разработать приложение локально](./ide/compiling-and-building-in-visual-studio.md) и убедиться, что оно правильно работает. Затем воспользуйтесь [средствами отладки](./debugger/debugging-in-visual-studio.md) , чтобы исправить ошибки в приложении. Кроме того, можно создавать проекты на общих серверах сборки или в облаке. Автоматизируйте процедуру сборки, чтобы обеспечить создание кода, который разработчики вашей рабочей группы смогут вернуть в систему управления версиями. Например, можно создавать один или более проектов каждую ночь или всякий раз при возврате кода.
 
 ### <a name="test-your-app"></a>Тестирование приложения
@@ -110,7 +110,7 @@ ms.locfileid: "85543719"
 
 - [Python](./python/getting-started-with-python.md)
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 - [Новые возможности Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
@@ -136,6 +136,6 @@ ms.locfileid: "85543719"
 
 - [Python](./python/getting-started-with-python.md)
 
-- [Visual F#;](https://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](https://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
 - [Обращайтесь к нам](./ide/talk-to-us.md)

@@ -1,5 +1,5 @@
 ---
-title: Когда точка останова — попаданий диалоговое окно | Документация Майкрософт
+title: Диалоговое окно "Попадание в точку останова" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7cd140a22c435df0875c089a69476d3e1e61cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149409"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Диалоговое окно "Попадание в точку останова"
@@ -35,13 +35,13 @@ ms.locfileid: "68149409"
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Напечатать сообщение**  
- Печатает сообщение, используя синтаксис DebuggerDisplay. Дополнительные сведения см. в разделе [использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+ Печатает сообщение, используя синтаксис DebuggerDisplay. Дополнительные сведения см. в разделе [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
  Это текстовое поле также поддерживает специальные ключевые слова (например, $ADDRESS), которые можно использовать без дополнительных параметров или заключать в фигурные скобки выражений DebuggerDisplay. Доступные ключевые слова перечислены в диалоговом окне.  
   
  **Продолжить выполнение**  
  Данный элемент управления доступен только в том случае, если выбран параметр **Напечатать сообщение**. При выборе указанного элемента управления точку останова можно использовать в качестве точки трассировки для отслеживания выполнения программы вместо останова при достижении точки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Использование точек останова](../debugger/using-breakpoints.md)   
  [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

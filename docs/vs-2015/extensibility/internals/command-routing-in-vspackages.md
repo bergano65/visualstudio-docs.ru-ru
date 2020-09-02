@@ -1,5 +1,5 @@
 ---
-title: Команда маршрутизации в пакетах VSPackage | Документация Майкрософт
+title: Маршрутизация команд в пакетах VSPackage | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 954d3f25a425652d8adcb31bd36fab06de0d04d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195091"
 ---
 # <a name="command-routing-in-vspackages"></a>Маршрутизация команд в пакетах VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Команда направляется в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] на основе контекста, в котором он выполняется. Он направляется из исходного контекста наружу в глобальном контексте.  
+Команда направляется в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] зависимости от контекста, в котором она выполняется. Он направляется от первоначального контекста к глобальному контексту.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Алгоритм маршрутизации](../../extensibility/internals/command-routing-algorithm.md)  
- Описывает порядок маршрутизации выполнения команды.  
+ Описывает порядок разрешения маршрутизации команд.  
   
  [Доступность](../../extensibility/internals/command-availability.md)  
- Описание маршрутизации команд.  
+ Обсуждается маршрутизация команд.  
   
  [Команды и меню, которые используют сборки взаимодействия](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- Рассматриваются особенности маршрутизированию команд между управляемым кодом и COM.  
+ Обсуждаются вопросы в командах маршрутизации между управляемым кодом и COM.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Объекты контекста выбора](../../extensibility/internals/selection-context-objects.md)  
- Обсуждается модель для как можно определить пользователя Выбор контекста фокус на окно.  
+ Обсуждается модель того, как можно определить фокус контекста выбора пользователя в окне.  
   
  [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)  
  Объясняется, как создать пользовательский интерфейс, включающий меню, панели инструментов и поля со списком команд.

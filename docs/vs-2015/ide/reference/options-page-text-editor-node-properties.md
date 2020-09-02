@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662417"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Страница "Параметры"", свойства узла "Текстовый редактор"
@@ -26,10 +26,10 @@ ms.locfileid: "72662417"
 
  Макросы Visual Basic в разделе [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) демонстрируют, как отображать текущие параметры и их значения для каждой страницы диалогового окна **Параметры**.
 
-## <a name="general"></a>Общее
+## <a name="general"></a>Общие сведения
  `DTE.Properties("TextEditor", "General")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Если задано значение `True`, то при нажатии кнопки "escape" во время выделения точка вставки переместится туда, откуда началось выделение. При значении `False` точка вставки переместится в другой конец выделения.|
 |DragNDropTextEditing|Get/Set (Boolean)|Определяет, можно ли перетащить выбранный блок текста из одного места документа в другое для выполнения операций копирования, вставки или вырезания.|
@@ -43,12 +43,12 @@ ms.locfileid: "72662417"
 |DetectUTF8WithoutSignature|Get/Set (Boolean)|Определяет, используется ли в файле кодировка UTF-8, когда у файла отсутствует сигнатура кодировки.|
 |TrackChanges|Get/Set (Boolean)||
 
-## <a name="plain-text"></a>Обычный текст
+## <a name="plain-text"></a>файл с обычным текстом;
  `DTE.Properties("TextEditor", "PlainText")`
 
  Параметры редактора `PlainText` влияют на настройки редактора при редактировании текстовых файлов. Для каждого языка программирования и пакета [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] доступны определенные параметры **Текстового редактора**. Например, для просмотра или изменения параметров редактора [!INCLUDE[csprcs](../../includes/csprcs-md.md)] используйте `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Для параметров редактора **Скрипт SQL** используйте `DTE.Properties("TextEditor", "SQL ")`.
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Определяет, должен ли автоматически открываться доступный список членов, когда пользователь вводит точку после ссылки на переменную.|
 |AutoListParams|Get/Set (Boolean)|Определяет, должно ли автоматически отображаться описание списка аргументов, когда пользователь вводит "(" после имени функции.|
@@ -58,12 +58,12 @@ ms.locfileid: "72662417"
 |WordWrapGlyphs|Get/Set (Boolean)|Отображает глиф в конце строки; это указывает, что строка переносится на следующую строку.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|Определяет, должен ли редактор подчеркивать URL-адреса и позволять переходить по данному URL-адресу посредством щелчка левой кнопкой мыши, сделанного в зарегистрированном системном веб-браузере.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Определяет стиль отступов.: Default, Smart или None.|
-|TabSize|Get/Set (Long)|Представляет величину шага табуляции в знаках. Не допускается использовать целое число вне диапазона от 1 до 60 (включительно).|
+|TabSize|Get/Set (Long)|Представляет количество пробелов, которые равны знакам табуляции. Установка целого числа вне диапазона от 1 до 60 (включительно) завершается ошибкой.|
 |InsertTabs|Get/Set (Boolean)|`True` означает использование знаков табуляции в отступах.|
 |IndentSize|Get/Set (Long)|Представляет величину одного уровня отступа в знаках. Не допускается использовать целочисленное значение вне диапазона от 1 до 60 (включительно).|
 |ShowLineNumbers|Get/Set (Boolean)|Определяет, должны ли отображаться номера строк вдоль левого поля.|
 |ShowNavigationBar|Get/Set (Boolean)|Определяет, появляются ли раскрывающиеся списки и кнопки вверху окон редактора.|
 |CutCopyBlankLines|Get/Set (Boolean)|Вырезает или копирует пустые строки при их выборе.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) параметры [Определение имен элементов свойств на](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) странице параметров страницы параметров страницы параметры [Свойства узла среды](../../ide/reference/options-page-environment-node-properties.md) [, шрифты и цвета узел Свойства](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

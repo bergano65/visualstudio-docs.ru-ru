@@ -1,5 +1,5 @@
 ---
-title: '&lt;Продукт&gt; элемент (загрузчик) | Документация Майкрософт'
+title: '&lt;&gt;Элемент Product (начальный загрузчик) | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747450"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Продукт&gt; элемент (установщик)
-`Product` Элемент является элементом верхнего уровня XML в файле продукта.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Элемент Product (начальный загрузчик)
+`Product`Элемент является ЭЛЕМЕНТОМ XML верхнего уровня в файле продукта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- `Product` Элемент является обязательным в файле продукта. Он имеет следующий атрибут.
+ `Product`Элемент является обязательным в файле продукта. Он имеет следующий атрибут.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`ProductCode`|Уникальный идентификатор для продукта.|
+|`ProductCode`|Уникальный идентификатор продукта.|
 
 ## <a name="example"></a>Пример
- В следующем примере кода показано создание файла продукта для установки .NET Framework.
+ В следующем примере кода показан полный файл продукта для установки .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -249,5 +249,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>См. также
-- [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>См. также раздел
+- [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)

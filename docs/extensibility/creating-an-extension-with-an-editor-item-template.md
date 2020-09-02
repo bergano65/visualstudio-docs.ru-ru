@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903843"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Создание расширения с помощью шаблона элемента редактора
 Вы можете использовать шаблоны элементов, которые включены в пакет SDK для Visual Studio, для создания базовых расширений редактора, добавляющих в редактор классификаторы, декоративные элементы и поля. Шаблоны элементов редактора доступны для проектов Visual C# или Visual Basic VSIX.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-classifier-extension"></a>Создание расширения классификатора
@@ -36,7 +36,7 @@ ms.locfileid: "85903843"
 
     - *EditorClassifier1ClassificationDefinition.CS* содержит `EditorClassifier1ClassificationDefinition` класс.
 
-    - *EditorClassifier1Format.CS* содержит `EditorClassifier1Format` класс.
+    - *EditorClassifier1Format.CS* содержит `EditorClassifier1Format`  класс.
 
     - *EditorClassifier1Provider.CS* содержит `EditorClassifier1Provider` класс.
 
@@ -96,5 +96,5 @@ ms.locfileid: "85903843"
 
 4. Постройте этот проект и начните отладку. Откроется экспериментальный экземпляр. При открытии текстового файла под горизонтальной полосой прокрутки отображается зеленая поле с словами **Hello EditorMargin1** .
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 - [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

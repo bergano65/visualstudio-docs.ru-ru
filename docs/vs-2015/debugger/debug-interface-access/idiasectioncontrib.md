@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc263d7238166f4f381bac35f0482ca2433f7b33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150482"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает данные, описывающие вклад раздела, то есть непрерывный блок памяти порожденного к образу единице компиляции.  
+Извлекает данные, описывающие вклад раздела, то есть непрерывный блок памяти, внесенный в изображение с помощью компилируемого объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,42 +32,42 @@ IDiaSectionContrib : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaSectionContrib`.  
+ В следующей таблице показаны методы `IDiaSectionContrib` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Извлекает ссылку на символ компилируемого объекта, который участвует в этом разделе.|  
-|[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Извлекает раздел часть адреса вклада.|  
-|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Извлекает часть смещения вклад адреса.|  
-|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Извлекает изображение относительный виртуальный адрес (RVA) вклад.|  
-|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Получает виртуальный адрес (VA) вклада.|  
+|[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Извлекает часть адреса вклада в раздел.|  
+|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Извлекает смещение адреса вклада.|  
+|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Возвращает относительный виртуальный адрес (RVA) образа публикации.|  
+|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Извлекает виртуальный адрес (ва) публикации.|  
 |[IDiaSectionContrib::get_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|Возвращает число байтов в разделе.|  
-|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Получает флаг, указывающий, может ли быть оповещен разделе не хватает памяти.|  
-|[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Получает флаг, указывающее, является ли раздел не будут заполнены до следующей границы памяти.|  
+|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Получает флаг, указывающий, что раздел не может быть выводится из памяти.|  
+|[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Получает флаг, указывающий, должен ли раздел быть заполнен до следующей границы памяти.|  
 |[IDiaSectionContrib::get_code](../../debugger/debug-interface-access/idiasectioncontrib-get-code.md)|Получает флаг, указывающий, содержит ли раздел исполняемый код.|  
-|[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Получает флаг, указывающий, содержит ли раздел 16-разрядного кода.|  
+|[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Получает флаг, указывающий, содержит ли раздел 16-разрядный код.|  
 |[IDiaSectionContrib::get_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|Получает флаг, указывающий, содержит ли раздел инициализированные данные.|  
-|[IDiaSectionContrib::get_uninitializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata.md)|Получает флаг, указывающий, содержит ли раздел неинициализированных данных.|  
-|[IDiaSectionContrib::get_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|Получает флаг, указывающий, содержит ли раздел комментарии или аналогичные сведения.|  
-|[IDiaSectionContrib::get_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|Получает флаг, указывающий, удален ли раздел, прежде чем оно станет изображением в памяти.|  
-|[IDiaSectionContrib::get_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|Получает флаг, указывающий, является ли раздел записи COMDAT.|  
-|[IDiaSectionContrib::get_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|Получает флаг, указывающий, могут быть удалены разделе.|  
-|[IDiaSectionContrib::get_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|Получает флаг, указывающий ли раздел не может быть кэширован.|  
-|[IDiaSectionContrib::get_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|Получает флаг, указывающий, могут ли разделе совместно в памяти.|  
-|[IDiaSectionContrib::get_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|Получает флаг, указывающий, является ли раздел исполняемого файла, как код.|  
-|[IDiaSectionContrib::get_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|Получает флаг, указывающий, может ли быть прочитан разделе.|  
-|[IDiaSectionContrib::get_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|Получает флаг, указывающий, можно ли выполнять запись раздела.|  
+|[IDiaSectionContrib::get_uninitializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata.md)|Получает флаг, указывающий, содержит ли раздел неинициализированные данные.|  
+|[IDiaSectionContrib::get_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|Получает флаг, указывающий, содержит ли раздел комментарии или похожие сведения.|  
+|[IDiaSectionContrib::get_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|Получает флаг, указывающий, удаляется ли раздел до того, как он станет частью изображения в памяти.|  
+|[IDiaSectionContrib::get_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|Получает флаг, указывающий, является ли раздел записью типа COMDAT.|  
+|[IDiaSectionContrib::get_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|Получает флаг, указывающий, можно ли отменять раздел.|  
+|[IDiaSectionContrib::get_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|Получает флаг, указывающий, не удается ли кэшировать раздел.|  
+|[IDiaSectionContrib::get_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|Получает флаг, указывающий, может ли раздел быть общим в памяти.|  
+|[IDiaSectionContrib::get_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|Получает флаг, указывающий, является ли раздел исполняемым кодом.|  
+|[IDiaSectionContrib::get_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|Получает флаг, указывающий, можно ли прочитать раздел.|  
+|[IDiaSectionContrib::get_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|Получает флаг, указывающий, можно ли записать раздел.|  
 |[IDiaSectionContrib::get_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|Извлекает циклическую проверку избыточности (CRC) данных в разделе.|  
-|[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Возвращает контрольную СУММУ для области данных перемещение.|  
-|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Извлекает идентификатор для раздела единице компиляции.|  
+|[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Извлекает контрольную сумму для сведений о перерасположении раздела.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Возвращает идентификатор компилируемого объекта для раздела.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Этот интерфейс получается путем вызова [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) и [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) методы. См. в разделе [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) интерфейс пример получения `IDiaSectionContrib` интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот интерфейс получается путем вызова методов [идиаенумсектионконтрибс:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) и [Идиаенумсектионконтрибс:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Пример получения интерфейса см. в интерфейсе [идиаенумсектионконтрибс](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib` .  
   
 ## <a name="example"></a>Пример  
- Эта функция показывает адрес каждого раздела, а также все связанные символы. См. в разделе [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) для просмотра как `IDiaSectionContrib` интерфейс получается.  
+ Эта функция отображает адрес каждого раздела вместе со всеми связанными символами. Сведения о получении интерфейса см. в интерфейсе [идиаенумсектионконтрибс](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib` .  
   
 ```cpp#  
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)  
@@ -130,14 +130,14 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
- [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [идиаенумсектионконтрибс](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
+ [Идиаенумсектионконтрибс:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
  [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)

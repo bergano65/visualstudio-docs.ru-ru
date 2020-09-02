@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195518"
 ---
 # <a name="per-thread-summary-report"></a>Сводный отчет по каждому потоку
@@ -25,12 +25,12 @@ ms.locfileid: "68195518"
 
 На этой гистограмме показана доля времени, которую тратит каждый нескрытый поток в каждой категории в течение видимого в данный момент диапазона времени. "Выполнение" означает, что поток выполняется; все остальные категории означают, что поток находится в состоянии ожидания какого-либо события.  
   
-## <a name="see-also"></a>См. также  
- [Время выполнения (представление "Потоки")](../profiling/execution-time-threads-view.md)   
- [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)   
+## <a name="see-also"></a>См. также:  
+ [Время выполнения (представление "потоки")](../profiling/execution-time-threads-view.md)   
+ [Время ввода-вывода (представление "потоки")](../profiling/i-o-time-threads-view.md)   
  [Время управления памятью](../profiling/memory-management-time.md)   
  [Время вытеснения](../profiling/preemption-time.md)   
- [Время ожидания](../profiling/sleep-time.md)   
+ [Время сна](../profiling/sleep-time.md)   
  [Время синхронизации](../profiling/synchronization-time.md)   
  [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)   
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
