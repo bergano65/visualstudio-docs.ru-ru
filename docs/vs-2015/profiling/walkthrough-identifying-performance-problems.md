@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Выявление проблем с производительностью | Документация Майкрософт
+title: Пошаговое руководство. Выявление проблем с производительностью | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695004"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Пошаговое руководство. Выявление проблем с производительностью
@@ -128,7 +128,7 @@ ms.locfileid: "65695004"
   
      В **Блокноте** откроется новый файл, содержащий список людей из приложения PeopleTrax. Ожидание упрощает определение процедуры экспорта данных для фильтрации.  
   
-6. Закройте **Блокнот** и приложение **PeopleTrax**.  
+6. Закройте **Блокнот**, а затем закройте приложение **PeopleTrax** .  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] создает отчет сеанса производительности (*.vsp).  
   
@@ -158,7 +158,7 @@ ms.locfileid: "65695004"
   
    Если запустить приложение еще раз, можно заметить, что производительность заметно повысилась. Рекомендуется запустить сеанс профилирования еще раз даже в том случае, если наблюдается очевидное повышение производительности. После устранения проблемы важно еще раз просмотреть данные, так как первая проблема могла скрывать некоторые другие проблемы.  
   
-## <a name="see-also"></a>См. также  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
- [Начало работы](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
+ [начало работы](../profiling/getting-started-with-performance-tools.md)   
+ [/Z7,/Zi,/ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

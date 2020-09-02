@@ -1,5 +1,5 @@
 ---
-title: Элемент SolutionFolder Элемент (Visual Studio Templates) Документы Майкрософт
+title: Элемент SolutionFolder (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700003"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Элемент SolutionFolder (шаблоны Visual Studio)
 Группирует проекты в многопроектных шаблонах.
 
- \<VSTemplate \<> TemplateContent \<> \<> projectCollection>
+ \<VSTemplate> \<TemplateContent>
+ \<ProjectCollection>
+ \<SolutionFolder>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -57,8 +59,8 @@ ms.locfileid: "80700003"
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Указывает организацию и содержимое многопроектных шаблонов.|
 |`SolutionFolder`|Группирует проекты в многопроектных шаблонах.|
 
-## <a name="remarks"></a>Примечания
- Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Элемент `SolutionFolder` используется для распределения проектов в шаблоне по группам. Папки, указанные элементами `SolutionFolder`, создаются в виде папок решения в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Для получения дополнительной информации о многопроектных шаблонах [см.](../ide/how-to-create-multi-project-templates.md)
+## <a name="remarks"></a>Remarks
+ Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. Элемент `SolutionFolder` используется для распределения проектов в шаблоне по группам. Папки, указанные элементами `SolutionFolder`, создаются в виде папок решения в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения о многопроектных шаблонах см. [в разделе как создавать Многопроектные шаблоны](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Пример
  В этом примере используется элемент `SolutionFolder`, чтобы разделить многопроектный шаблон на две группы — `Math Classes` и `Graphics Classes`. Шаблон содержит четыре проекта, два из которых размещаются в отдельных папках решения.
@@ -95,7 +97,7 @@ ms.locfileid: "80700003"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Практическое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)
+- [Пошаговое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)

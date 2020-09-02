@@ -1,5 +1,5 @@
 ---
-title: Использование и предоставление услуг Документы Майкрософт
+title: Использование и предоставление служб | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,35 +13,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698736"
 ---
 # <a name="using-and-providing-services"></a>Использование и предоставление служб
-Услуга — это контракт между двумя VSPackages. Один VSPackage предлагает определенный набор интерфейсов для другого VSPackage потреблять. Например, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предлагает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> услугу любому VSPackage, который она загружает. Эта услуга <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> предоставляет интерфейс, который может быть использован для записи в журнал активности. Для получения дополнительной информации [см.](../extensibility/how-to-use-the-activity-log.md)
+Служба — это контракт между двумя пакетами VSPackage. Один пакет VSPackage предлагает конкретный набор интерфейсов для использования другим пакетом VSPackage. Например, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляет <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службу для любого пакета VSPackage, который она загружает. Эта служба предоставляет <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [инструкции. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
 
- VSPackages могут предложить свои услуги с помощью интерфейса. <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>
+ Пакеты VSPackage могут предоставлять собственные службы с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> интерфейса.
 
- Visual Studio предлагает важные услуги, такие как:
+ Visual Studio предлагает следующие важные службы:
 
-|Сервис IDE|Описание|
+|Служба IDE|Описание|
 |-----------------|-----------------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Предоставляет доступ к службам IDE, касающимся основных функциональных возможностей, VSPackages и реестра.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Обеспечивает основные функции, связанные с окнами и uI, в IDE, такие как возможность создания инструментов и окон документов.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Предоставляет основные функциональные возможности, связанные с решением, такие как возможность перечислять проекты, создавать новые проекты и контролировать изменения в проектах.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Предоставляет доступ к службам IDE, которые работают с базовой функциональностью, пакеты VSPackage и реестр.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Предоставляет основные функциональные возможности для работы с окнами и интерфейсом пользователя в интегрированной среде разработки, например возможность создания средств и окон документов.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Предоставляет базовые функции, связанные с решениями, такие как возможность перечисления проектов, создания новых проектов и наблюдения за изменениями проекта.|
 
-## <a name="in-this-section"></a>В этом разделе
-- [Основы обслуживания](../extensibility/internals/service-essentials.md) Представляет важные элементы сервиса Visual Studio.
+## <a name="in-this-section"></a>в этом разделе
+- [Основные компоненты службы](../extensibility/internals/service-essentials.md) Представляет важные элементы службы Visual Studio.
 
-- [Как: Получить услугу](../extensibility/how-to-get-a-service.md) Обсуждает, как запросить (потреблять) услугу.
+- [Руководство. Получение службы](../extensibility/how-to-get-a-service.md) Описывает, как запросить (использовать) службу.
 
-- [Как: Предоставить услугу](../extensibility/how-to-provide-a-service.md) Обсуждает, как предоставить услугу.
+- [Руководство. предоставление службы](../extensibility/how-to-provide-a-service.md) Описывает, как предоставить службу.
 
-- [Как: Обеспечить асинхронную услугу визуальной студии](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) Обсуждает, как предоставить асинхронную услугу.
+- [Как предоставить асинхронную службу Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) Описывает, как предоставить асинхронную службу.
 
-- [Как посмотреть на услуги по устранению неполадок](../extensibility/how-to-troubleshoot-services.md) Обсуждает общие проблемы и представляет их решения.
+- [Руководство. Устранение неполадок служб](../extensibility/how-to-troubleshoot-services.md) Обсуждаются распространенные проблемы и предоставляются их решения.
 
-## <a name="related-sections"></a>Связанные разделы
-- [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md)
+## <a name="related-sections"></a>См. также
+- [SDK для Visual Studio](../extensibility/visual-studio-sdk.md)

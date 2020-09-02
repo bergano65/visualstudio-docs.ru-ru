@@ -13,44 +13,44 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696090"
 ---
 # <a name="resources-in-vspackages"></a>Ресурсы в пакетах VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Локализованные ресурсы можно внедрять в собственном спутниковой связи DLL пользовательского интерфейса и управляемых вспомогательных библиотек DLL, или в управляемом VSPackage сам.  
+Локализованные ресурсы можно внедрять в встроенные библиотеки DLL пользовательского интерфейса, управляемые вспомогательные библиотеки DLL или в самом управляемом пакете VSPackage.  
   
- Некоторые ресурсы не может быть внедрен в пакетах VSPackage. Можно включить следующие управляемые типы:  
+ Некоторые ресурсы не могут быть внедрены в пакеты VSPackage. Можно внедрить следующие управляемые типы:  
   
 - Строки  
   
-- Ключи загрузки пакетов (которые также являются строками)  
+- Ключи загрузки пакета (которые также являются строками)  
   
-- Значки окна средств  
+- Значки окна инструментов  
   
-- Скомпилированные файлы таблицы выходных данных команды (CTO)  
+- Скомпилированные файлы вывода командной таблицы (CTO)  
   
-- Руководитель технологического ОТДЕЛА компании точечных рисунков  
+- Точечные рисунки CTO  
   
 - Справка по командной строке  
   
 - О данных диалоговых окон  
   
-  Ресурсы в управляемом пакете выбираются по идентификатору ресурса. Исключением является файл руководитель технологического ОТДЕЛА компании, которая должна быть названа CTMENU. Файл руководитель технологического ОТДЕЛА компании должен указываться в нее ресурсов, как `byte[]`. Все прочие элементы ресурсов идентифицируются по типу.  
+  Ресурсы в управляемом пакете выбираются по ИДЕНТИФИКАТОРу ресурса. Исключением является файл CTO, который должен иметь имя CTMENU. Файл CTO должен отображаться в таблице ресурсов как `byte[]` . Все остальные элементы ресурсов идентифицируются по типу.  
   
-  Можно использовать <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> атрибут для указания [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] что управляемые ресурсы доступны.  
+  Чтобы <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> указать [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , что управляемые ресурсы доступны, можно использовать атрибут.  
   
   [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
   [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
-  Установка <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> указывает, что таким образом [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] должен игнорировать неуправляемых вспомогательные библиотеки DLL, при поиске ресурсов, например, с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Если [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] обнаруживает два или более ресурсов, которые имеют тот же идентификатор ресурса, используется первый ресурс, он находит.  
+  <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>Таким образом, этот параметр указывает, что [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] при поиске ресурсов следует пропускать неуправляемые вспомогательные библиотеки DLL, например с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Если [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] встречает два или больше ресурсов с одинаковым идентификатором ресурса, используется первый найденный ресурс.  
   
 ## <a name="example"></a>Пример  
- Следующий пример — это управляемое представление значка окна инструментов.  
+ В следующем примере представлено управляемое представление значка окна инструментов.  
   
 ```  
 <data name="1001"  
@@ -66,7 +66,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
- Ниже приведен пример, как внедрять руководитель технологического ОТДЕЛА компании байтового массива, которая должна быть названа CTMENU.  
+ В следующем примере показано, как внедрить массив байтов CTO, который должен иметь имя CTMENU.  
   
 ```  
 <data name="CTMENU"  
@@ -83,12 +83,12 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Примечания по реализации  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] задержки загрузки пакетов VSPackage, когда это возможно. Следствием внедрения файл руководитель технологического ОТДЕЛА компании в VSPackage является то, что [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] необходимо загрузить всех таких пакетов VSPackage в памяти во время установки, при построении команды объединенные таблицы. Ресурсы могут быть извлечены из VSPackage с помощью проверки метаданных без выполнения кода в VSPackage. В настоящее время VSPackage не инициализирован, поэтому снижение производительности сводится к минимуму.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] При возможности задерживает загрузку пакетов VSPackage. Следствием внедрения файла CTO в VSPackage является то, что [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] должен загружать все такие пакеты VSPackage в памяти во время установки, то есть при построении Объединенной командной таблицы. Ресурсы можно извлечь из пакета VSPackage, проверив метаданные без выполнения кода в VSPackage. В настоящее время пакет VSPackage не инициализирован, поэтому снижение производительности является минимальным.  
   
- Когда [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запросы ресурс из VSPackage после завершения установки, он скорее всего, уже быть загружается и инициализируется, поэтому снижение производительности сводится к минимуму.  
+ При [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запросе ресурса из пакета VSPackage после установки этот пакет, скорее всего, уже загружен и инициализирован, поэтому снижение производительности будет минимальным.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Управляемые пакеты VSPackage](../../misc/managed-vspackages.md)   
  [Управление пакетами VSPackage](../../extensibility/managing-vspackages.md)   
- [Локализованные ресурсы в приложениях MFC: Вспомогательные библиотеки DLL](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Локализованные ресурсы в приложениях MFC: вспомогательные библиотеки DLL](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [Управляемые пакеты VSPackage](../../misc/managed-vspackages.md)

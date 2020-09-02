@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::symbolForVA | Документация Майкрософт
+title: 'Идиастакквалкхелпер:: Симболфорва | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ed714501f18b0c1ab771556a56a6ca3bbc061d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150050"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает символ, который содержит указанный виртуальный адрес.  
+Извлекает символ, который содержит указанный виртуальный адрес.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,14 +36,14 @@ HRESULT symbolForVA( 
   
 #### <a name="parameters"></a>Параметры  
  `va`  
- [in] Виртуальный адрес, содержащийся в запрошенный символа. Символ должен быть `SymTagFunctionType` (значение из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления).  
+ окне Виртуальный адрес, содержащийся в запрошенном символе. Символ должен быть `SymTagFunctionType` (значение из перечисления [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) ).  
   
  `ppSymbol`  
- [out] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий символ по указанному адресу.  
+ заполняет Объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий символ по указанному адресу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
+## <a name="see-also"></a>См. также:  
+ [идиастакквалкхелпер](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

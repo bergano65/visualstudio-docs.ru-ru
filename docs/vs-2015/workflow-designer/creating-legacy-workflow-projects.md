@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656890"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Создание проектов рабочих процессов для прежних версий
@@ -32,7 +32,7 @@ ms.locfileid: "72656890"
 |Библиотека рабочих процессов конечного автомата|Проект для создания библиотеки рабочего процесса конечного автомата.|
 |Пустой проект рабочего процесса|Пустой проект для создания приложения рабочего процесса.|
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Как создавать проекты рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
 
  [Как создавать консольные приложения последовательных рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
@@ -51,5 +51,5 @@ ms.locfileid: "72656890"
 
  [Как добавить новый элемент в проект рабочего процесса (для прежних версий)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Последовательное представление рабочего процесса (прежние версии)](../workflow-designer/sequential-workflow-views-legacy.md) [окна рабочих процессов Visual Studio (прежние версии)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

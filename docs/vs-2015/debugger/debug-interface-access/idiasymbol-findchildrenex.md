@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenEx | Документация Майкрософт
+title: 'IDiaSymbol:: Финдчилдренекс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ee0ee9938ba2529afd7ea437c56761e1768e8cd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150014"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает дочерние узлы, символа. Локальные символы, которые возвращаются включают сведения о динамической диапазона, если программа скомпилирована с оптимизацией на.  
+Возвращает дочерние элементы символа. Возвращаемые локальные символы включают сведения о диапазоне в реальном времени, если программа компилируется с оптимизацией.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,33 +38,33 @@ HRESULT findChildrenEx ( 
   
 #### <a name="parameters"></a>Параметры  
  `symtag`  
- [in] Задает теги символов требуется получить дочерние элементы, как определено в [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Значение `SymTagNull` для всех дочерних элементов, требуется получить.  
+ окне Задает Теги символов для извлекаемых дочерних элементов, как определено в [перечислении симтаженум](../../debugger/debug-interface-access/symtagenum.md). Задайте значение, чтобы `SymTagNull` получить все дочерние элементы.  
   
  `name`  
- [in] Задает имя используемого дочерние элементы должны быть получены. Значение `NULL` для всех дочерних элементов, требуется получить.  
+ окне Указывает имя извлекаемых дочерних элементов. Задайте значение, чтобы `NULL` получить все дочерние элементы.  
   
  `compareFlags`  
- [in] Задает параметры сравнения для применения к совпадению имен. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.  
+ окне Задает параметры сравнения, применяемые к соответствию имен. Значения из перечисления [перечисления намесеарчоптионс](../../debugger/debug-interface-access/namesearchoptions.md) можно использовать отдельно или в сочетании.  
   
  `ppResult`  
- [out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) извлечь объект, содержащий список дочерних символов.  
+ заполняет Возвращает объект [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md) , содержащий список извлеченных дочерних символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` Если по крайней мере одного дочернего элемента этот символ найден, или возвращает `S_FALSE` дочерние элементы не найдены; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK` , если найден хотя бы один дочерний элемент символа, или значение `S_FALSE` , если не найдено потомков. в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод является расширенной версией [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).  
+## <a name="remarks"></a>Remarks  
+ Этот метод является расширенной версией [IDiaSymbol:: финдчилдрен](../../debugger/debug-interface-access/idiasymbol-findchildren.md).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [Перечисление Симтаженум](../../debugger/debug-interface-access/symtagenum.md)   
+ [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [IDiaSession:: Финдчилдрен](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)

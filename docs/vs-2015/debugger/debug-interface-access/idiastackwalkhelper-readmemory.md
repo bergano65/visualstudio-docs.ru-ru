@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Документация Майкрософт
+title: 'Идиастакквалкхелпер:: readMemory | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150056"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Считывает блок данных из исполняемого файла изображения в памяти.  
+Считывает блок данных из образа исполняемого файла в памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,23 +39,23 @@ HRESULT readMemory( 
   
 #### <a name="parameters"></a>Параметры  
  `type`  
- [in] Значение из [перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) перечисление, определяющее тип памяти для чтения.  
+ окне Значение из перечисления [перечисления меморитипинум](../../debugger/debug-interface-access/memorytypeenum.md) , указывающее тип памяти для чтения.  
   
  va  
- [in] Виртуальный адрес в образе, с которого начинается чтение.  
+ окне Виртуальный адрес в образе, с которого начинается чтение.  
   
  `cbData`  
- [in] Размер буфера данных в байтах.  
+ окне Размер буфера данных в байтах.  
   
  `pcbData`  
- [out] Возвращает число фактически считанных байтов. Если `pbData` — `NULL`, то это общее число байтов доступных данных.  
+ заполняет Возвращает число фактически считанных байтов. Если `pbData` параметр имеет значение `NULL` , то это общее число доступных байтов данных.  
   
  `pbData`  
- [in, out] Буфер, который заполняется память чтения.  
+ [вход, выход] Буфер, который заполняется считанной памятью.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
+## <a name="see-also"></a>См. также:  
+ [идиастакквалкхелпер](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [Перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateObject Документы Майкрософт
+title: 'IDebugFunctionObject2:: CreateObject | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728477"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Создает объект, который использует конструктор, учитывая настройки флага оценки и значение тайм-аута.
+Создает объект, использующий конструктор заданных параметров флагов оценки и значение времени ожидания.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,28 +50,28 @@ int CreateObject (
 
 ## <a name="parameters"></a>Параметры
 `pConstructor`\
-(в) Объект [IDebugFunctionObject,](../../../extensibility/debugger/reference/idebugfunctionobject.md) представляющий конструктор создаваемого объекта.
+окне Объект [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) , представляющий конструктор создаваемого объекта.
 
 `dwArgs`\
-(в) Количество параметров в `pArg` массиве. Представляет количество параметров, переданных конструктору.
+окне Число параметров в `pArg` массиве. Представляет число параметров, передаваемых конструктору.
 
 `pArgs`\
-(в) Массив объектов [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий параметры, передаваемые конструктору.
+окне Массив объектов [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющих параметры, переданные конструктору.
 
 `dwEvalFlags`\
-(в) Комбинация флагов из перечисления [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые определяют, как должна выполняться оценка.
+окне Сочетание флагов из перечисления [евалфлагс](../../../extensibility/debugger/reference/evalflags.md) , определяющее способ выполнения вычисления.
 
 `dwTimeout`\
-(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте **INFINITE,** чтобы ждать бесконечно.
+окне Максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте **бесконечность** для бесконечного ожидания.
 
 `ppObject`\
-(ваут) Возвращает **IDebugObject,** представляющий вновь созданный объект.
+заполняет Возвращает объект **идебугобжект** , представляющий только что созданный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Вызовите этот метод для создания объекта, представляющего экземпляр класса, или другой сложный тип, требующий конструктора, то есть параметра.
+## <a name="remarks"></a>Remarks
+ Вызовите этот метод, чтобы создать объект, представляющий экземпляр класса, или другой сложный тип, для которого требуется конструктор, который является параметром.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

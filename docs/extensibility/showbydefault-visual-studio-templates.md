@@ -1,5 +1,5 @@
 ---
-title: Элемент ShowByDefault (Шаблоны визуальной студии)
+title: Элемент Шовбидефаулт (шаблоны Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700100"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Элемент ShowByDefault (Шаблоны визуальной студии)
-Если `false`указано, что шаблон будет отображаться только в указанном [TemplateGroupID.](../extensibility/templategroupid-element-visual-studio-templates.md)
+# <a name="showbydefault-element-visual-studio-templates"></a>Элемент Шовбидефаулт (шаблоны Visual Studio)
+Если задано `false` значение, шаблон будет отображаться только под указанным [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
 
- \<VSTemplate \<> TemplateData> \<ShowbyDefault>
+ \<VSTemplate> \<TemplateData>
+ \<ShowByDefault>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,10 +37,10 @@ ms.locfileid: "80700100"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -52,8 +53,8 @@ ms.locfileid: "80700100"
 
  Этот текст должен быть либо `true`, либо `false`. Значение true указывает, что шаблон будет отображаться для всех типов проектов. Значение false указывает, что шаблон будет отображаться только под указанным элементом `TemplateGroupID`.
 
-## <a name="remarks"></a>Примечания
- Параметр `ShowByDefault` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Remarks
+ Параметр `ShowByDefault` является необязательным элементом. Значение по умолчанию — `true`.
 
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -83,7 +84,7 @@ ms.locfileid: "80700100"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

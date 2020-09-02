@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b042c9d389a1639b4a898f8d091fbd1832e56e25
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670279"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Специальные функции для людей с ограниченными возможностями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. Следующие разделы содержат сведения о компонентах, продуктах и службах, облегчающих работу с Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] людям с ограниченными возможностями.
+Корпорация Майкрософт стремится стремится сделать использование своих продуктов и услуг простым для всех пользователей. В следующих разделах приводятся сведения о компонентах, продуктах и службах, облегчающих работу с Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] людям с ограниченными возможностями.
 
 - [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329087"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Отображение данных в Blend для Visual Studio
@@ -45,6 +45,6 @@ ms.locfileid: "85329087"
 
 **Просмотрите короткое видео:** ![Значок воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Объединение привязок к данным с помощью Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

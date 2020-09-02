@@ -1,5 +1,5 @@
 ---
-title: Элемент SDKReference (Visual Studio Templates) Документы Майкрософт
+title: Элемент SDKReference (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700167"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference - элемент (шаблоны Visual Studio)
@@ -33,21 +33,21 @@ ms.locfileid: "80700167"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Справочник](../extensibility/reference-element-visual-studio-templates.md)|Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.|
+|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Этот текст определяет ссылку на пакет SDK, которую нужно добавить в проект при создании экземпляра шаблона элемента.
 
 ```xml
@@ -60,7 +60,7 @@ ms.locfileid: "80700167"
 ...
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Элемент References (шаблоны Visual Studio)](../extensibility/references-element-visual-studio-templates.md)
 - [Элемент Reference (шаблоны Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

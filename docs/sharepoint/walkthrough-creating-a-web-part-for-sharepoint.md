@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247655"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Пошаговое руководство. Создание веб-части для SharePoint
@@ -42,7 +42,7 @@ ms.locfileid: "88247655"
     > [!NOTE]
     > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Обязательные условия
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
@@ -214,7 +214,7 @@ ms.locfileid: "88247655"
 
      Все сотрудники отображаются в веб-части.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Как создать веб-часть SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

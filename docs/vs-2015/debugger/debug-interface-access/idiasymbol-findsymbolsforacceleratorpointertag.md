@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Документация Майкрософт
+title: 'IDiaSymbol:: Финдсимболсфоракцелераторпоинтертаг | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54f945dcb9f043c48014921680c95669eee33673
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149855"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.  
+Возвращает число тегов указателя ускорителя в функции-заглушке C++ AMP.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,14 +33,14 @@ HRESULT findSymbolsForAccleratorPointerTag (
   
 #### <a name="parameters"></a>Параметры  
  `tagValue`  
- [in] Значение тега указатель, для которого находятся pointee символьные записи.  
+ окне Значение тега указателя, для которого обнаружены записи символов с точками.  
   
  `ppResult`  
- [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
+ заполняет Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с помощью результата.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

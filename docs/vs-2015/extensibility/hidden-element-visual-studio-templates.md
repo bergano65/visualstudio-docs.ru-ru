@@ -1,5 +1,5 @@
 ---
-title: Скрыт элемент (шаблоны Visual Studio) | Документация Майкрософт
+title: Hidden-элемент (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204252"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Элемент Hidden (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает, отображается ли в одном шаблоне **новый проект** или **Добавление нового элемента** диалоговое окно.  
+Указывает, отображается ли шаблон в диалоговом окне " **Новый проект** " или " **Добавление нового элемента** ".  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Скрытые >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Hidden>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,12 +52,12 @@ ms.locfileid: "68204252"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, указывающее, ли шаблон будет отображаться в **новый проект** или **Добавление нового элемента** диалоговым окнам.  
+ Текст должен иметь значение `true` или `false` , что указывает, будет ли шаблон отображаться в диалоговых окнах **Новый проект** или **Добавить новый элемент** .  
   
-## <a name="remarks"></a>Примечания  
- `Hidden` — это необязательный элемент.  
+## <a name="remarks"></a>Remarks  
+ Параметр `Hidden` является необязательным элементом.  
   
- Если указан, никакие другие дочерние элементы `TemplateData` элемента являются обязательными.  
+ Если этот параметр указан, другие дочерние элементы `TemplateData` элемента не требуются.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
@@ -87,6 +87,6 @@ ms.locfileid: "68204252"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

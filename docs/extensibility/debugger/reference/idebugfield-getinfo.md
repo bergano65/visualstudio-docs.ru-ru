@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetInfo Документы Майкрософт
+title: Идебугфиелд::/info | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b3251db3426f87901ca0768800feaa36fef5373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728842"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
-Этот метод получает отображаемую информацию о поле.
+Этот метод получает сведения о поле.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,14 +43,14 @@ int GetInfo(
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Комбинация [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) констант, которая выбирает отображаемую информацию. Если поле представляет собой символ, это обычно имя символа и тип.
+окне Сочетание [FIELD_INFO_FIELDSных](../../../extensibility/debugger/reference/field-info-fields.md) констант, которые выбирают отображаемые сведения. Если поле представляет символ, обычно это имя и тип символа.
 
 `pFieldInfo`\
-(ваут) Возвращает информацию в представленную [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуру.
+заполняет Возвращает сведения в указанной структуре [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
