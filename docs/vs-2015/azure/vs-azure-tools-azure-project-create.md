@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c4daf3d92aa08e6dbbb81eac79112772900d08d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964051"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Создание проекта облачной службы Azure в Visual Studio
@@ -26,7 +26,7 @@ ms.locfileid: "62964051"
 
 1. Запустите Visual Studio от имени администратора.
 
-1. В главном меню выберите **Файл** > **Создать** > **Проект**.
+1. В главном меню выберите **файл**  >  **создать**  >  **проект**.
 
 1. В узлах шаблонов проектов Visual C# или Visual Basic выберите **Облако**, а затем в списке шаблонов выберите **Облачная служба Azure**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "62964051"
 
 1. Введите имя проекта, его расположение и имя решения.
 
-1. Нажмите кнопку **ОК**.
+1. Щелкните **ОК**.
 
 1. В диалоговом окне **Новая облачная служба Microsoft Azure** выберите роли, которые хотите добавить, и нажмите стрелку вправо, чтобы добавить их в решение.
 
@@ -53,5 +53,5 @@ ms.locfileid: "62964051"
 
 Дополнительные сведения об этих файлах см. в статье [Настройка ролей для облачной службы Azure в среде Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Управление ролями в проектах облачных служб Azure с помощью Visual Studio](./vs-azure-tools-cloud-service-project-managing-roles.md)

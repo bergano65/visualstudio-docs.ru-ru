@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162333"
 ---
 # <a name="logging-in-msbuild"></a>Ведение журнала в MSBuild
@@ -23,7 +23,7 @@ ms.locfileid: "68162333"
 
 Ведение журнала позволяет следить за ходом выполнения сборки. При ведении журнала в файл записываются события сборки, сообщения, предупреждения и ошибки.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Описываются различные аспекты ведения журнала в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
@@ -33,12 +33,12 @@ ms.locfileid: "68162333"
  [Ведение журнала в многопроцессорной среде](../msbuild/logging-in-a-multi-processor-environment.md)  
  Описываются способы ведения журнала в многопроцессорной среде и демонстрируются две модели ведения журналов.  
   
- [Написание средств ведения журнала с поддержкой многопроцессорности](../msbuild/writing-multi-processor-aware-loggers.md)  
+ [Написание средств ведения журнала с поддержкой нескольких процессоров](../msbuild/writing-multi-processor-aware-loggers.md)  
  Описываются способы создания средств ведения журнала с поддержкой нескольких процессоров и способы использования ConfigurableForwardingLogger.  
   
- [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)  
+ [Создание средств ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)  
  Описываются способы создания пользовательских средств ведения журнала переадресации.  
   
-## <a name="related-sections"></a>Связанные разделы  
- [Параллельная сборка нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+## <a name="related-sections"></a>См. также  
+ [Параллельное создание нескольких проектов](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Описывается быстрый способ сборки нескольких проектов с использованием параллельного запуска.

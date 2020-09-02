@@ -73,7 +73,7 @@ ms.locfileid: "80705125"
 
 - Пакет VSPackage не ограничен определенной моделью системы управления версиями.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Система управления версиями](../../extensibility/internals/source-control.md)
 - [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)

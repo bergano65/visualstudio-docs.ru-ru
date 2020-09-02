@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e28ad8353858b35fc1c4e83f0511a58b4162dc9d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381942"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. Указание расположения, из которого будет производиться установка пользователями
@@ -42,7 +42,7 @@ ms.locfileid: "85381942"
 
 3. В поле URL-адрес установки введите путь установки с помощью полного URL-адреса в формате `https://www.contoso.com/ApplicationName` или UNC, используя формат `\Server\ApplicationName` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Практическое руководство. Указание расположения, в которое среда Visual Studio копирует файлы](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

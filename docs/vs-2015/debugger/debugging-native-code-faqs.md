@@ -1,5 +1,5 @@
 ---
-title: Отладка машинного кода часто задаваемые вопросы | Документация Майкрософт
+title: Вопросы и ответы по отладке машинного кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63055cf443f20e353ac87ca3226e9f8208587fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190492"
 ---
 # <a name="debugging-native-code-faqs"></a>Вопросы и ответы по отладке машинного кода
@@ -52,6 +52,6 @@ ms.locfileid: "68190492"
   
 - [Как вернуться к функции, вызвавшей MFC, при прерывании работы в MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

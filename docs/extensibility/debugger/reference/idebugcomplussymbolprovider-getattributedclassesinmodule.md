@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule Документы Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Жетаттрибутедклассесинмодуле | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 408aa2f373ab296394a0181014c16b1697fdf9ae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733928"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-Извлекает классы с указанным атрибутом в данном модуле.
+Извлекает классы с указанным атрибутом в заданном модуле.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,22 +46,22 @@ int GetAttributedClassesinModule (
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-(в) Идентификатор домена приложения.
+окне Идентификатор домена приложения.
 
 `guidModule`\
-(в) Уникальный идентификатор модуля.
+окне Уникальный идентификатор модуля.
 
 `pstrAttribute`\
-(в) Строка атрибута.
+окне Строка атрибута.
 
 `ppEnum`\
-(ваут) Возвращает перечисление приписываемых классов.
+заполняет Возвращает перечисление классов с атрибутами.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(
@@ -151,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

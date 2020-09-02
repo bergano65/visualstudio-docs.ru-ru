@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7994f1c0c7281fc9902e15a3fd60293905abc4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670455"
 ---
 # <a name="index-search-tips"></a>Советы по поиску в указателе
@@ -60,5 +60,5 @@ ms.locfileid: "72670455"
 
      Например, если вы указали деепричастие "здание", то вместо этого попытайтесь создать.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Советы по полнотекстовому поиску](../ide/full-text-search-tips.md) . [Поиск информации](../ide/locate-information.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1e76d45847d0887b47746c60b836c7acf19d03b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670533"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Практическое руководство. Просмотр отношения наследования между типами (конструктор классов)
@@ -47,5 +47,5 @@ ms.locfileid: "72670533"
 
    Вы также можете щелкнуть правой кнопкой тип, производные типы которого необходимо показать, и выбрать команду **Показать производные классы** или **Показать производные интерфейсы**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как создавать связи между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md) [просмотром типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)

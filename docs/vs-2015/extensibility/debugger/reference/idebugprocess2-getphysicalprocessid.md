@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPhysicalProcessId | Документация Майкрософт
+title: 'IDebugProcess2:: Жетфисикалпроцессид | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 413373dc79ea8e7ed2e5cf1386695896deb96e1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202885"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает системный идентификатор процесса.  
+Возвращает идентификатор системного процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,11 +40,11 @@ int GetPhysicalProcessId(
   
 #### <a name="parameters"></a>Параметры  
  `pdwProcessId`  
- [out] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры, который заполняется идентификатор процесса сведения о системе.  
+ заполняет Структура [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) , которая заполняется сведениями об идентификаторе системного процесса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

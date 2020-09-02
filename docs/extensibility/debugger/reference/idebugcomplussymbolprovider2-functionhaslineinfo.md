@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::FunctionHasLineinfo Документы Майкрософт
+title: 'IDebugComPlusSymbolProvider2:: Функтионхаслинеинфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3a574766b884bf1aeed253754534fee66967e9ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733456"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
-Определяет, имеет ли указанный метод информацию о строке.
+Определяет, содержит ли указанный метод сведения о строке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int FunctionHasLineInfo(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Адрес отладки, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Этот адрес должен быть METHOD_ADDRESS.
+окне Адрес отладки, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) . Этот адрес должен быть METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае `S_OK`успеха, возвращается ; в противном случае, возвращается `S_FALSE`.
+В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` .
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(
@@ -85,5 +85,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

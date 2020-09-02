@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985216"
 ---
 # <a name="source-editor"></a>Редактор исходного кода
@@ -80,7 +80,7 @@ Visual Studio для Mac предоставляет множество эффе�
 
 ![пример цветного выделения](media/source-editor-image7.png)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Возможности редактора кода (Visual Studio в Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Структурирование (Visual Studio в Windows)](/visualstudio/ide/outlining)

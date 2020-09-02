@@ -1,5 +1,5 @@
 ---
-title: С помощью элементов управления Windows Forms в листах Excel
+title: Использование элементов управления Windows Forms на листах Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,22 +15,22 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982319"
 ---
-# <a name="use-windows-forms-controls-on-excel-worksheets"></a>С помощью элементов управления Windows Forms в листах Excel
-  Можно добавить элементы управления Windows Forms в Microsoft Office Excel Workbooks таким же образом, как добавить элементы управления Windows Forms. Общие сведения о работе с элементами управления в документах, см. в разделе [элементы управления Windows Forms на общие сведения о документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+# <a name="use-windows-forms-controls-on-excel-worksheets"></a>Использование элементов управления Windows Forms на листах Excel
+  Вы можете добавлять Windows Forms элементы управления в книги Microsoft Office Excel так же, как и элементы управления, добавляемые в Windows Forms. Общие сведения о работе с элементами управления в документах см. [в разделе Windows Forms элементы управления в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="control-considerations-for-excel"></a>Вопросы управления для Excel
- Существуют некоторые рекомендации, относящиеся к Excel.
+## <a name="control-considerations-for-excel"></a>Рекомендации по управлению для Excel
+ Существует несколько аспектов, характерных для Excel.
 
 ### <a name="match-control-size-to-cell-size"></a>Соответствие размера элемента управления размеру ячейки
- Вы можете задать автоматическое изменение размера элемента управления при изменении размера его родительской ячейки. Дополнительные сведения см. в разделе [Как Изменение размера элементов управления в ячейках листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md).
+ Вы можете задать автоматическое изменение размера элемента управления при изменении размера его родительской ячейки. Дополнительные сведения см. [в разделе Практические руководства. изменение размеров элементов управления в ячейках листа](../vsto/how-to-resize-controls-within-worksheet-cells.md).
 
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Добавление компонентов, совместно используемых всеми листами
  Вы можете добавлять компоненты, которые будут совместно использоваться всеми листами, такие как <xref:System.Data.DataSet>, не в сами листы, а в конструктор книги. Такой компонент будет отображаться в области компонентов.
@@ -38,9 +38,9 @@ ms.locfileid: "62982319"
 ### <a name="formula-for-embedding-controls"></a>Формула для внедрения элементов управления
  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Изменение размера элементов управления внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [Практическое руководство. Скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Пошаговое руководство: Изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [Пошаговое руководство: Отображаемый текст в текстовом поле на листе с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [Пошаговое руководство: Обновление диаграммы на листе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+## <a name="see-also"></a>См. также раздел
+- [Руководство. изменение размеров элементов управления в ячейках листа](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Как скрыть элементы управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Пошаговое руководство. изменение форматирования листа с помощью элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [Пошаговое руководство. Отображение текста в текстовом поле листа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

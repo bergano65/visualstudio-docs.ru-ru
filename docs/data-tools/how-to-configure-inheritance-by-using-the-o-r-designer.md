@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282245"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Практическое руководство. Настройка наследования с помощью реляционного конструктора объектов
@@ -50,7 +50,7 @@ ms.locfileid: "85282245"
 
 10. Дополнительно можно установить свойство **Наследование по умолчанию**, чтобы обозначить тип в иерархии наследования, который используется при загрузке строк, которые не соответствуют какому-либо определенному коду наследования. Иными словами, если у записи есть значение в столбце дискриминатора, которое не соответствует значению в свойствах **дискриминатора производного класса** или **значения дискриминатора базового класса** , запись загружается в тип, обозначенный как **наследование по умолчанию**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

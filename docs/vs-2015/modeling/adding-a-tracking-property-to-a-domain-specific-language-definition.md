@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545578"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
@@ -724,7 +724,7 @@ ms.locfileid: "85545578"
 
 1. В меню **Построить** выберите пункт **Перестроить решение**.
 
-2. В меню **Отладка** щелкните **Начать отладку**.
+2. В меню **Отладка** выберите команду **Начать отладку**.
 
      Экспериментальная сборка [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] открывает решение для **отладки** , которое содержит пустой тестовый файл.
 
@@ -759,6 +759,6 @@ ms.locfileid: "85545578"
 ## <a name="next-steps"></a>Next Steps
  Если планируется использовать несколько свойств отслеживания или реализовать свойства отслеживания более чем в одном DSL, можно создать текстовый шаблон для создания общего кода для поддержки каждого свойства отслеживания. Дополнительные сведения о текстовых шаблонах см. в разделе [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  Инструкции по [определению доменного языка](../modeling/how-to-define-a-domain-specific-language.md) [Практическое руководство. Создание решения для](../modeling/how-to-create-a-domain-specific-language-solution.md) доменного языка — [Настройка определения предметно-](../misc/walkthrough-customizing-the-domain-specific-language-definition.md) ориентированного языка

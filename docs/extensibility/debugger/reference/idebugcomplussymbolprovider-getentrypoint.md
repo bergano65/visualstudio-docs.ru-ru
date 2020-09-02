@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetEntryPoint Документы Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Жетентрипоинт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c686659d2a3d5e81e8e466bf1707337842cf8317
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733900"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
-Извлекает точку входа приложения.
+Получает точку входа приложения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int GetEntryPoint(
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-(в) Идентификатор для домена приложения.
+окне Идентификатор домена приложения.
 
 `guidModule`\
-(в) Уникальный идентификатор для модуля.
+окне Уникальный идентификатор модуля.
 
 `ppAddress`\
-(ваут) Возвращает точку входа, представленную интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+заполняет Возвращает точку входа, представленную интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetEntryPoint(
@@ -90,5 +90,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

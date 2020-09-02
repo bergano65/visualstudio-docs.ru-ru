@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortName | Документация Майкрософт
+title: 'IDebugPort2:: Жетпортнаме | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25952355f77acb30587b7aab9820dfc1bed36507
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202899"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает имя порта.  
+Возвращает имя порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ int GetPortName( 
   
 #### <a name="parameters"></a>Параметры  
  `pbstrName`  
- [out] Возвращает имя порта.  
+ заполняет Возвращает имя порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

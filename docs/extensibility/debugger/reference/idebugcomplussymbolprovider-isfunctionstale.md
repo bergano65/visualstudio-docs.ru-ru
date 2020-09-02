@@ -1,5 +1,5 @@
 ---
-title: IdebugComPlusSymbolprovider::IsFunctionStale Документы Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Исфунктионстале | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4e5b42e8bb89a84b5274669173c93db3e287755a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733696"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-Определяет, считается ли функция в указанном адресе отладки устаревшей.
+Определяет, считается ли функция по указанному адресу отладки устаревшей.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,13 +39,13 @@ int IsFunctionStale(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Адрес отладки, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Этот адрес должен быть METHOD_ADDRESS.
+окне Адрес отладки, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) . Этот адрес должен быть METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Возвращаемое значение
-Если функция считается устаревшей, возвращается `S_OK`. Если функция не устарела, `S_FALSE`возвращается .
+Если функция считается устаревшей, возвращает `S_OK` . Если функция не устарела, возвращает `S_FALSE` .
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionStale(
@@ -91,5 +91,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

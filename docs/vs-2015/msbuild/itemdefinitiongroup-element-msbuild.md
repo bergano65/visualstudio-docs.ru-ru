@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5aea9c7c7868dfdd9726b86bb344456ebe707d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162444"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Элемент ItemDefinitionGroup (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Элемент `ItemDefinitionGroup` позволяет определить набор определений элементов, которые представляют собой значения метаданных, по умолчанию применяемых ко всем элементам проекта. ItemDefinitionGroup пришел на смену использованию [задач CreateItem](../msbuild/createitem-task.md) и [задач CreateProperty](../msbuild/createproperty-task.md). Дополнительные сведения см. в разделе [Определения элементов](../msbuild/item-definitions.md).  
+Элемент `ItemDefinitionGroup` позволяет определить набор определений элементов, которые представляют собой значения метаданных, по умолчанию применяемых ко всем элементам проекта. ItemDefinitionGroup заменяет необходимость использования [задачи CreateItem](../msbuild/createitem-task.md) и [задачи CreateProperty](../msbuild/createproperty-task.md). Дополнительные сведения см. в разделе [Определения элементов](../msbuild/item-definitions.md).  
   
  \<Project>  
  \<ItemDefinitionGroup>  
@@ -48,13 +48,13 @@ ms.locfileid: "68162444"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|ОПИСАНИЕ|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Condition`|Необязательный атрибут. Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент](../msbuild/item-element-msbuild.md)|Входные данные для процесса сборки. Любое количество элементов `Item` (может быть ни одного) может содержаться в `ItemDefinitionGroup`.|  
   
@@ -62,7 +62,7 @@ ms.locfileid: "68162444"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
+|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
 ## <a name="example"></a>Пример  
  Следующий пример кода определяет два элемента метаданных (m и n) для ItemDefinitionGroup. В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.  
@@ -85,6 +85,6 @@ ms.locfileid: "68162444"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
  [Элементы](../msbuild/msbuild-items.md)

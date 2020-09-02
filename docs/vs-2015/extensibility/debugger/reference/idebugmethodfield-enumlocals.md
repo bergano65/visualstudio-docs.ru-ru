@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals | Документация Майкрософт
+title: 'Идебугмесодфиелд:: Енумлокалс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2306bbf0c44a883c584346c3dbb3dd70e9b39175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162602"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Создает перечислитель для выбранного локальные переменные метода.  
+Создает перечислитель для выбранных локальных переменных метода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,18 +42,18 @@ int EnumLocals(
   
 #### <a name="parameters"></a>Параметры  
  `pAddress`  
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, представляющий адрес отладки, который выбирает контекст или область, из которого необходимо получить "Локальные".  
+ окне Объект [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) , представляющий адрес отладки, который выбирает контекст или область, из которой должны быть получены локальные переменные.  
   
  `ppLocals`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список "Локальные"; в противном случае возвращает значение null, если нет локальных переменных.  
+ заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список локальных переменных. в противном случае возвращает значение null, если нет локальных переменных.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет локальных переменных. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает S_OK или возвращает S_FALSE, если нет локальных переменных. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Перечисляются только те переменные, определенные внутри блока, который содержит адрес заданной отладочной. Если необходимы все локальные переменные, включая любые локальные переменные, создаваемые компилятором, вызвать [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Перечисляются только те переменные, которые определены в блоке, содержащем заданный адрес отладки. Если требуются все локальные переменные, включая все созданные компилятором локальные переменные, вызовите метод [енумалллокалс](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) .  
   
- Метод может содержать несколько контекстов или блоки области. Например следующий метод надуманный содержит три области действия, внутреннее двух блоков и самом теле метода.  
+ Метод может содержать несколько контекстов области или блоков. Например, следующий метод надуманный содержит три области, два внутренних блока и сам текст метода.  
   
 ```csharp  
 public void func(int index)  
@@ -73,10 +73,10 @@ public void func(int index)
 }  
 ```  
   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) представляет объект `func` сам метод. Вызов `EnumLocals` метод с [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) присвоено `Inner Scope 1` адрес возвращает перечисление, содержащее `temp1` переменной, например.  
+ Объект [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md) представляет `func` сам метод. При вызове `EnumLocals` метода с [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) , для которого задан `Inner Scope 1` адрес, возвращается перечисление `temp1` , содержащее переменную, например.  
   
-## <a name="see-also"></a>См. также  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+ [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md)   
+ [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)

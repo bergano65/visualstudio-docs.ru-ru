@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2b5dcbc69853007eebec65142f522f8a942abd1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656837"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Отладка рабочих процессов с помощью конструктора рабочих процессов
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] предусматривает возможность отладки рабочих процессов и пользовательских действий. Процесс и поведение те же, что и для отладчика [!INCLUDE[vs2010](../includes/vs2010-md.md)] по умолчанию. Пункты в этом разделе описывают, как выполнять традиционные процедуры отладки и производить отладку XAML и выражений.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Как вызвать отладчик рабочего процесса](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 
  [Практическое руководство. Задание точек останова в рабочих процессах](../workflow-designer/how-to-set-breakpoints-in-workflows.md)

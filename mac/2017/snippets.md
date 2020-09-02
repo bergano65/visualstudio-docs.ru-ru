@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984805"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
@@ -88,6 +88,6 @@ ms.locfileid: "74984805"
 
 Дополнительные сведения см. в [справочнике фрагментам кода Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Фрагменты кода (Visual Studio в Windows)](/visualstudio/ide/code-snippets)

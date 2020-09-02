@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 479827cc83486d6bb9c68d0749b8870cd6c41861
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65694763"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
@@ -24,13 +24,13 @@ ms.locfileid: "65694763"
 
 Этот интерфейс обеспечивает поддержку:  
   
-- Извлечение произвольной длины строки, связанный со свойством.  
+- Извлечение произвольно длинной строки, связанной со свойством.  
   
-- Уникальный идентификатор сопоставление со свойством.  
+- Связывание уникального идентификатора со свойством.  
   
 - Получение списка пользовательских средств просмотра для свойства.  
   
-- Значение свойства с возможностью отчетов все возникающие ошибки  
+- Установка значения свойства с возможностью сообщать о любых возникших ошибках  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,35 +39,35 @@ IDebugProperty3 : IDebugProperty2
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Модуль отладки (DE) реализует этот интерфейс на тот же объект, реализующий [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) для обеспечения поддержки длинных строк, идентификаторы свойств и пользовательских средств просмотра.  
+ Модуль отладки (DE) реализует этот интерфейс для того же объекта, который реализует [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , чтобы обеспечить поддержку длинных строк, идентификаторов свойств и пользовательских средств просмотра.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызовите [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) на `IDebugProperty2` интерфейс для получения этого интерфейса.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для `IDebugProperty2` интерфейса, чтобы получить этот интерфейс.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- Помимо методов, наследуемых от `IDebugProperty2`, `IDebugProperty3` интерфейс предоставляет следующие методы.  
+ В дополнение к методам, унаследованным от `IDebugProperty2` , `IDebugProperty3` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
 |[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Возвращает длину строки, связанной со свойством.|  
-|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Возвращает строку в буфер, предоставленный пользователем.|  
+|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Возвращает строку в предоставляемом пользователем буфере.|  
 |[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Создает уникальный идентификатор для этого свойства.|  
 |[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Уничтожает уникальный идентификатор для этого свойства.|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Возвращает количество пользовательских средств просмотра, это свойство можно просмотреть при помощи.|  
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Возвращает список пользовательских средств просмотра, это свойство можно просмотреть при помощи.|  
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Задает значение этого свойства, возвращает сообщение об ошибке, если что-то пошло не так.|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Возвращает число пользовательских средств просмотра, с которыми можно просмотреть это свойство.|  
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Возвращает список пользовательских средств просмотра, с которыми можно просмотреть это свойство.|  
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Задает значение этого свойства, возвращая сообщение об ошибке, если что-то пошло не так.|  
   
-## <a name="remarks"></a>Примечания  
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) является более предпочтительным для диспетчера отладки сеанса (SDM), чтобы задать значение свойства.  
+## <a name="remarks"></a>Remarks  
+ [Сетвалуеасстрингвисеррор](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) является предпочтительным способом, который диспетчер отладки сеанса (SDM) задает значение свойства.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>См. также:  
+ [Основные интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

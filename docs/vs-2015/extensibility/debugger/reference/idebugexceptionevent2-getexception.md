@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Документация Майкрософт
+title: 'IDebugExceptionEvent2:: except | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a0e19dc924101fcceb93948272fc1e83353e2815
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163798"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает подробное описание исключение, которое возникает это событие.  
+Возвращает подробное описание исключения, которое вызвало это событие.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,15 +40,15 @@ int GetException( 
   
 #### <a name="parameters"></a>Параметры  
  `pExceptionInfo`  
- [in, out] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, который заполняется описание исключения.  
+ [вход, выход] Структура [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , которая заполняется описанием исключения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- [C++ только] Вызывающий объект отвечает за освобождение все строки в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, а также освобождение [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекта в структуре.  
+## <a name="remarks"></a>Remarks  
+ [Только C++] Вызывающий объект отвечает за освобождение всех строк в структуре [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , а также освобождение объекта [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) в структуре.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

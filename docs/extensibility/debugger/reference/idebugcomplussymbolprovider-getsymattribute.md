@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute Документы Майкрософт
+title: 'Идебугкомплуссимболпровидер:: GetSymAttribute | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733769"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-Извлекает символы отладки с указанным родительским атрибутом для указанного модуля.
+Извлекает отладочные символы с заданным родительским атрибутом для указанного модуля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,31 +52,31 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-(в) Идентификатор домена приложения.
+окне Идентификатор домена приложения.
 
 `guidModule`\
-(в) Уникальный идентификатор модуля.
+окне Уникальный идентификатор модуля.
 
 `tokParent`\
-(в) Токен для родительского атрибута.
+окне Токен для родительского атрибута.
 
 `pstrName`\
-(в) Название модуля.
+окне Имя модуля.
 
 `cBuffer`\
-(в) Количество байтов, необходимых для вывода. `buffer`
+окне Число байтов, необходимых для выходных данных `buffer` .
 
 `pcBuffer`\
-(ваут) Длина вывода `buffer`.
+заполняет Длина выходных данных `buffer` .
 
 `buffer`\
-(ваут) Массив, содержащий символы.
+заполняет Массив, содержащий символы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(
@@ -106,5 +106,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

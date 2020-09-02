@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee | Документация Майкрософт
+title: 'IDebugExceptionEvent2:: Канпасстодебугжее | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 383287a027a75adfb4c58020675e08a46198eacf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163813"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет, поддерживает ли модуль отладки (DE) можно передать это исключение для отлаживаемой при возобновлении выполнения программы.  
+Определяет, поддерживает ли модуль отладки (DE) возможность передачи этого исключения в отлаживаемую программу при возобновлении выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,11 +37,11 @@ int CanPassToDebuggee();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает один `S_OK` (исключение может передаваться в программу) или `S_FALSE` (исключение не может быть передано в).  
+ Возвращает либо `S_OK` (исключение может быть передано в программу), либо `S_FALSE` (исключение не может быть передано).  
   
-## <a name="remarks"></a>Примечания  
- DE должен иметь действие по умолчанию для передачи для отлаживаемой программы. Интегрированная среда разработки может появиться [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) событий и вызовов [Продолжить](../../../extensibility/debugger/reference/idebugprocess3-continue.md) метод без вызова `CanPassToDebuggee` метод. Таким образом DE должны иметь варианта по умолчанию для передачи в исключение, или нет.  
+## <a name="remarks"></a>Remarks  
+ Параметру DE должно быть назначено действие по умолчанию для передачи в отлаживаемый отладчик. Интегрированная среда разработки может получить событие [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) и вызвать метод [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) , не вызывая `CanPassToDebuggee` метод. Таким образом, DE должен иметь вариант по умолчанию для передачи исключения в или нет.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+ [Продолжить](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

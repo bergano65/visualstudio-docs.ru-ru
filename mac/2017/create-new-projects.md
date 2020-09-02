@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983648"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Создание проектов и решений
@@ -38,6 +38,6 @@ ms.locfileid: "74983648"
 
 Вы можете отфильтровать этот список или удалить из него отдельные элементы.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание решений и проектов (Visual Studio в Windows)](/visualstudio/ide/creating-solutions-and-projects)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282375"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
@@ -156,6 +156,6 @@ EDM в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] некот�
     > [!NOTE]
     > Любой код, ссылающийся на ссылку на службу, необходимо удалить вручную.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

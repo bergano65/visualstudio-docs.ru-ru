@@ -1,5 +1,5 @@
 ---
-title: Использование функциональных возможностей Office в Visual Studio
+title: Использование функций Office в Visual Studio
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,28 +15,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982327"
 ---
-# <a name="use-office-functionality-inside-of-visual-studio"></a>Использование функциональных возможностей Office в Visual Studio
-  При создании проекта уровня документа, документа и сопоставленного приложения размещаются в Visual Studio, чтобы можно создать и работать непосредственно с документом. Если у вас есть Microsoft Office, откройте приложение в Visual Studio, обычно работает ожидаемым образом. Тем не менее некоторые функциональные возможности приложения, могут оказаться недоступными или.
+# <a name="use-office-functionality-inside-of-visual-studio"></a>Использование функций Office в Visual Studio
+  При создании проекта на уровне документа документ и связанное с ним приложение размещаются в Visual Studio, что позволяет проектировать и работать непосредственно с документом. Если в Visual Studio открыто приложение Microsoft Office, оно обычно работает правильно. Однако некоторые функциональные возможности приложения отличаются или недоступны.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="document-protection"></a>Защита документов
- Microsoft Office Word и Microsoft Office Excel предлагают функции защиты, которые можно использовать в проектах документов. Тем не менее если защита включена, когда документ открыт в среде Visual Studio, он может препятствовать вы внесение некоторых изменений в проект. Дополнительные сведения см. в разделе [защита в решениях уровня документа документов](../vsto/document-protection-in-document-level-solutions.md).
+ Microsoft Office Word и Microsoft Office Excel предлагают функции защиты документов, которые можно использовать в проектах. Однако если защита документов включена, а документ открыт в Visual Studio, это может препятствовать внесению каких-либо изменений в структуру. Дополнительные сведения см. [в статье Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md).
 
-## <a name="information-rights-management"></a>Управление правами
- Управление правами на доступ к данным (IRM) доступен в Microsoft Office Word и Microsoft Office Excel. IRM может помочь предотвратить несанкционированного просмотра и изменения конфиденциальной информации. Тем не менее IRM можно также предотвратить ваш код выполняется. Дополнительные сведения см. в разделе [Information rights management и общие сведения о расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md).
+## <a name="information-rights-management"></a>Управление правами на информацию
+ Информация Rights Management (IRM) доступна в Microsoft Office Word и Microsoft Office Excel. IRM может помочь предотвратить несанкционированный просмотр или изменение конфиденциальной информации. Однако IRM также может препятствовать запуску кода. Дополнительные сведения см. в статье Общие сведения об [управлении правами на информацию и расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md).
 
-## <a name="password-protection"></a>Защита паролем
- Документы Microsoft Office Word и книг Microsoft Office Excel можно задать, чтобы они не удается открыть тому, кто не знает пароль. Защита паролем обрабатывается по-разному в Word и Excel и может повлиять на процесс разработки. Дополнительные сведения см. в разделе [защита паролей в документах Office](../vsto/password-protection-on-office-documents.md).
+## <a name="password-protection"></a>Защита пароля
+ Microsoft Office документы Word и Microsoft Office книги Excel можно настроить таким образом, чтобы они не были открыты пользователем, который не знает пароль. Защита паролем обрабатывается по-разному в Word и Excel и может повлиять на процесс разработки. Дополнительные сведения см. [в статье Защита паролем в документах Office](../vsto/password-protection-on-office-documents.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)
-- [Управление правами и общие сведения о расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)
-- [Практическое руководство. Открытие решений Office без выполнения кода](../vsto/how-to-open-office-solutions-without-running-code.md)
+- [Обзор управления правами на информацию и расширений управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Защита паролем в документах Office](../vsto/password-protection-on-office-documents.md)
+- [Руководство. Открытие решений Office без выполнения кода](../vsto/how-to-open-office-solutions-without-running-code.md)

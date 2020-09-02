@@ -1,5 +1,5 @@
 ---
-title: Связь пользовательских данных с SharePoint расширений средств | Документация Майкрософт
+title: Связывание пользовательских данных с расширениями инструментов SharePoint | Документация Майкрософт
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62987979"
 ---
-# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Связывать пользовательские данные с расширениями средств SharePoint
-  Можно добавить пользовательские данные для определенных объектов в расширениях инструментов SharePoint. Это полезно при наличии данных в одной части вашего расширения, вам требуется доступ к более поздней версии из другого кода в модуле. Вместо реализации пользовательских способ хранения и доступа к данным, вы можете связать данные с объектом расширения и затем впоследствии извлекать данные из того же объекта.
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Связывание пользовательских данных с помощью расширений инструментов SharePoint
+  Можно добавить пользовательские данные в определенные объекты в расширениях инструментов SharePoint. Это полезно при наличии данных в одной части расширения, доступ к которой будет осуществляться позже из другого кода расширения. Вместо реализации пользовательского способа хранения данных и доступа к ним можно связать данные с объектом в расширении, а затем извлечь данные из этого объекта позже.
 
- Добавление пользовательских данных в объекты удобно, если вы хотите сохранить данные, относящиеся к конкретному элементу в Visual Studio. Расширения инструментов SharePoint загружаются только в том случае, когда в Visual Studio, поэтому расширение может работать с несколькими различными элементами (таких как проекты, элементы, проекта или **обозревателя серверов** узлов) в любое время. При наличии пользовательских данных, которые относятся только к конкретному элементу, можно добавить данные в объект, представляющий элемент.
+ Добавление пользовательских данных в объекты также полезно, если требуется сохранить данные, относящиеся к конкретному элементу в Visual Studio. Расширения инструментов SharePoint загружаются в Visual Studio только один раз, поэтому расширение может работать с несколькими различными элементами (например, проектами, элементами проектов или **Обозреватель сервера** узлами) в любое время. Если имеются пользовательские данные, относящиеся только к определенному элементу, можно добавить данные в объект, представляющий этот элемент.
 
- При добавлении пользовательских данных к объектам в расширениях инструментов SharePoint, данные не сохраняются. Данные будут доступны только в течение времени существования объекта. После объект удаляется сборщиком мусора, данные будут потеряны.
+ При добавлении пользовательских данных в объекты в расширениях инструментов SharePoint данные не сохраняются. Данные доступны только в течение срока существования объекта. После освобождения объекта при сборке мусора данные теряются.
 
- В расширениях системы проектов SharePoint можно также сохранить строковые данные, которые будет повторяться после выгрузки расширения. Дополнительные сведения см. в разделе [сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+ В расширениях системы проектов SharePoint можно также сохранять строковые данные, которые сохраняются после выгрузки расширения. Дополнительные сведения см. [в разделе Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="objects-that-can-contain-custom-data"></a>Объекты, которые могут содержать пользовательские данные
- Можно добавить пользовательские данные к любому объекту в объектной модели инструментов SharePoint, реализующий <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> интерфейс. Этот интерфейс определяет только одно свойство <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, который является коллекцией пользовательских объектов данных. Следующие типы реализуют <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:
+ Можно добавить пользовательские данные в любой объект в объектной модели инструментов SharePoint, реализующей <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> интерфейс. Этот интерфейс определяет только одно свойство, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> которое является коллекцией пользовательских объектов данных. Следующие типы реализуют <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> :
 
 - <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>
 
@@ -66,22 +66,22 @@ ms.locfileid: "62987979"
 - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>
 
 ## <a name="add-and-retrieve-custom-data"></a>Добавление и извлечение пользовательских данных
- Чтобы добавить пользовательские данные в объект из расширения инструментов SharePoint, получить <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства объекта, который требуется добавить данные, а затем используйте <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> метод для добавления данных к объекту.
+ Чтобы добавить пользовательские данные в объект в расширении инструментов SharePoint, получите <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство объекта, в который необходимо добавить данные, а затем используйте <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> метод, чтобы добавить данные в объект.
 
- Чтобы получить пользовательские данные из объекта в расширения инструментов SharePoint, получить <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства от объекта, а затем выполните одну из следующих методов:
+ Чтобы получить пользовательские данные из объекта в расширении инструментов SharePoint, получите <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство объекта и используйте один из следующих методов:
 
-- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Этот метод возвращает **true** Если объект данных существует, или **false** если он не существует. Этот метод можно использовать для извлечения экземпляров типов значений и ссылочных типов.
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Этот метод возвращает **значение true** , если объект данных существует, или **значение false** , если он не существует. Этот метод можно использовать для получения экземпляров типов значений или ссылочных типов.
 
-- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Этот метод возвращает данные объекта, если он существует, или **null** если он не существует. Этот метод можно использовать только для извлечения экземпляров ссылочных типов.
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Этот метод возвращает объект данных, если он завершает работу, или **значение NULL** , если он не существует. Этот метод можно использовать только для получения экземпляров ссылочных типов.
 
-  В следующем примере кода определяет, является ли определенный объект данных уже связан с элементом проекта. Если объект данных еще не связан с элементом проекта, а затем код добавляет объект в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойства элемента проекта. Этот пример в контексте полного примера см. в разделе [как: Добавление свойства в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).
+  В следующем примере кода определяется, связан ли определенный объект данных с элементом проекта. Если объект данных еще не связан с элементом проекта, код добавляет объект в <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> свойство элемента проекта. Чтобы увидеть этот пример в контексте более крупного примера, см. раздел [как добавить свойство в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).
 
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>См. также
-- [Основные понятия программирования и функции для расширения инструментов SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
-- [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
-- [Пошаговое руководство: Расширение обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
-- [Практическое руководство. Добавление свойства в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
-- [Практическое руководство. Добавление свойства в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+## <a name="see-also"></a>См. также раздел
+- [Основные понятия и функции программирования для расширений инструментов SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Как добавить свойство в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [Как добавить свойство в пользовательский тип элемента проекта SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
