@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538640"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224. Переопределяйте Equals при перегрузке оператора равенства
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
@@ -50,7 +50,7 @@ ms.locfileid: "85538640"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Примеры непротиворечивых определений равенства
 
 ### <a name="description"></a>Описание
- В следующем примере показан тип с непротиворечивыми определениями равенства. `BadPoint`изменяет значение равенства, предоставляя пользовательскую реализацию оператора равенства, но не переопределяет <xref:System.Object.Equals%2A> его таким образом, что он ведет себя одинаково.
+ В следующем примере показан тип с непротиворечивыми определениями равенства. `BadPoint` изменяет значение равенства, предоставляя пользовательскую реализацию оператора равенства, но не переопределяет <xref:System.Object.Equals%2A> его таким образом, что он ведет себя одинаково.
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]

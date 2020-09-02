@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165449"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Установка нескольких языковых версий Visual Studio
@@ -26,7 +26,7 @@ ms.locfileid: "68165449"
 
 Установив один или несколько языковых пакетов, можно запускать Visual Studio 2015 на других языках на одном компьютере. Необходимо получить отдельный языковой пакет для каждого языка, который требуется установить.
 
-## <a name="important-considerations"></a>Важные аспекты
+## <a name="important-considerations"></a>Важные соображения
 
 - При установке языкового пакета файлы ресурсов для установленных возможностей автоматически устанавливаются для каждой языковой версии.
 
@@ -34,7 +34,7 @@ ms.locfileid: "68165449"
 
 - Можно удалять языковые пакеты с помощью режима обслуживания установки Visual Studio. Откройте **Панель управления**, затем откройте **Программы и компоненты**, выберите ваш выпуск Visual Studio, а затем выберите **Удалить/Изменить**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Пакеты интерфейса пользователя (Microsoft LIP) и Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
 - [Установка Visual Studio](../install/install-visual-studio-2015.md)

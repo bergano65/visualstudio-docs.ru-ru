@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionОценка2::SetCorPath Документы Майкрософт
+title: 'IDebugExpressionEvaluator2:: Сеткорпас | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bea93c3f10a946353c52231d0ac3802f0b2ec8e9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729273"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-Устанавливает путь к общему времени выполнения языка (CLR), загруженным в отладчик.
+Задает путь к общеязыковой среде выполнения (CLR), загруженной в отладчике.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int SetCorPath(
 
 ## <a name="parameters"></a>Параметры
 `pcstrCorPath`\
-(в) Путь к CLR, загруженный в отладчик.
+окне Путь к среде CLR, загруженной в отладчике.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как реализовать этот метод для объекта **ExpressionEvaluatorPackage,** который предоставляет интерфейс [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+ В следующем примере показано, как реализовать этот метод для объекта **експрессионевалуаторпаккаже** , предоставляющего интерфейс [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)
@@ -126,5 +126,5 @@ STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

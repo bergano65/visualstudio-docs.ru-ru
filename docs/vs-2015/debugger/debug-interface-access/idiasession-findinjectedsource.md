@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInjectedSource | Документация Майкрософт
+title: 'IDiaSession:: Финдинжектедсаурце | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 11a4134ce02ca540cdffff9cc51a1280bd4173bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165667"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает список источников, размещенных в хранилище символов поставщиками атрибут или другие компоненты в процессе компиляции.  
+Извлекает список источников, которые были помещены в хранилище символов поставщиками атрибутов или другими компонентами процесса компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,14 +36,14 @@ HRESULT findInjectedSource ( 
   
 #### <a name="parameters"></a>Параметры  
  srcFile  
- [in] Имя исходного файла, который требуется найти.  
+ окне Имя исходного файла, который требуется найти.  
   
- ppResult  
- [out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий список всех внедренного источников.  
+ ппресулт  
+ заполняет Возвращает объект [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий список всех внедренных источников.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

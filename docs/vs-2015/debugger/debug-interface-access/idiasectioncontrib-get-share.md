@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_share | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_share | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce9e75e16aaed3b2d7386f977894bde3c17029f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150534"
 ---
-# <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
+# <a name="idiasectioncontribget_share"></a>IDiaSectionContrib::get_share
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, могут ли разделе совместно в памяти.  
+Получает флаг, указывающий, может ли раздел быть общим в памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_share ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если раздел совместного использования в памяти; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает значение `TRUE` , если раздел является общим в памяти; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

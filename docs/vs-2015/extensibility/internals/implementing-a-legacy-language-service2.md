@@ -1,5 +1,5 @@
 ---
-title: Реализация языковой службы прежних версий2 | Документация Майкрософт
+title: Реализация устаревшего языка S2 | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192711"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Для реализации языковой службы, с помощью managed package framework (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
+Чтобы реализовать языковую службу с помощью управляемой платформы пакетов (MPF), необходимо создать класс из <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:  
   
 - метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;  
   
@@ -30,17 +30,17 @@ ms.locfileid: "68192711"
   
 - Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.  
   
-  См. соответствующие разделы ниже дополнительные сведения о реализации этих методов и свойств.  
+  Дополнительные сведения о реализации этих методов и свойств см. в соответствующих разделах ниже.  
   
-  Для поддержки дополнительных функций, языковой службы может потребоваться создать класс, производный от одного из классов службы языка MPF; Например, для поддержки дополнительных меню команд, необходимо создать производный класс от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса и переопределить некоторые методы обработки команды (см. в разделе <xref:Microsoft.VisualStudio.Package.ViewFilter> подробные сведения). <xref:Microsoft.VisualStudio.Package.LanguageService> Класс предоставляет ряд методов, которые вызываются для создания новых экземпляров различных классов и переопределить метод соответствующие создания экземпляров класса. Например, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класс для возврата экземпляра собственного <xref:Microsoft.VisualStudio.Package.ViewFilter> класса. См. Дополнительные сведения можно найти в разделе «Создание экземпляров специальные классы».  
+  Для поддержки дополнительных функций языковой службе может потребоваться создать производный класс от одного из классов языковой службы MPF. Например, для поддержки дополнительных команд меню необходимо создать класс, производный от <xref:Microsoft.VisualStudio.Package.ViewFilter> класса, и переопределить несколько методов обработки команд (см <xref:Microsoft.VisualStudio.Package.ViewFilter> . Дополнительные сведения). <xref:Microsoft.VisualStudio.Package.LanguageService>Класс предоставляет ряд методов, которые вызываются для создания новых экземпляров различных классов, и вы переопределяете соответствующий метод создания, чтобы предоставить экземпляр класса. Например, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> классе, чтобы он возвращал экземпляр вашего собственного <xref:Microsoft.VisualStudio.Package.ViewFilter> класса. Дополнительные сведения см. в разделе "создание экземпляров пользовательских классов".  
   
-  Языковой службы также может предоставлять свои собственные значки, которые используются во многих местах. К примеру при отображении списка завершения IntelliSense, каждый элемент в списке может иметь значок, связанный с ним, элемент будет помечен как метода, класса, пространства имен, свойств, или все, что необходимы для вашего языка. Эти значки используются во всех списках IntelliSense, **панели навигации**, а затем в **список ошибок** окно задач. См. в разделе «Язык обслуживания образов» ниже сведения.  
+  Языковая служба также может предоставлять собственные значки, которые используются во многих местах. Например, при отображении списка завершения IntelliSense каждый элемент в списке может иметь связанный с ним значок, помечая элемент как метод, класс, пространство имен, свойство или любое необходимое для вашего языка. Эти значки используются во всех списках IntelliSense, в **панели навигации**и в окне **Список ошибок** задач. Дополнительные сведения см. в разделе "образы языковой службы" ниже.  
   
-## <a name="getlanguagepreferences-method"></a>Метод GetLanguagePreferences  
- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Метод всегда возвращает тот же экземпляр <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Можно использовать базовый <xref:Microsoft.VisualStudio.Package.LanguagePreferences> , если нет необходимости любые дополнительные настройки для языковой службы. Классы MPF языковой службы предполагают наличие по крайней мере базы <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.  
+## <a name="getlanguagepreferences-method"></a>Метод Жетлангуажепреференцес  
+ <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>Метод всегда возвращает один и тот же экземпляр <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Базовый класс можно использовать, <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Если для языковой службы не требуются дополнительные параметры. Классы языковой службы MPF предполагают наличие по крайней мере базового <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.  
   
 ### <a name="example"></a>Пример  
- В этом примере показано типичное использование <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> метод. В этом примере используется базовый <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.  
+ В этом примере показана типичная реализация <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> метода. В этом примере используется базовый <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класс.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -67,11 +67,11 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="getscanner-method"></a>Метод GetScanner  
- Этот метод возвращает экземпляр <xref:Microsoft.VisualStudio.Package.IScanner> объект, реализующий интерфейс, ориентированный на строки синтаксического анализатора или сканера, используемый для получения маркеров и их типы и триггеры. После этого средство проверки используется в <xref:Microsoft.VisualStudio.Package.Colorizer> класса окраски, несмотря на то, что сканер также может использоваться для получения маркера типы и триггеры, чтобы потом для более сложные операции анализа. Необходимо указать класс, реализующий <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс, поэтому должен реализовывать все методы на <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс.  
+## <a name="getscanner-method"></a>Метод Scanner  
+ Этот метод возвращает экземпляр <xref:Microsoft.VisualStudio.Package.IScanner> объекта, который реализует синтаксический анализатор или сканер, используемый для получения маркеров и их типов и триггеров. Этот сканер используется в <xref:Microsoft.VisualStudio.Package.Colorizer> классе для выделения цветом, хотя сканер также можно использовать для получения типов токенов и триггеров в качестве версионного к более сложной операции синтаксического анализа. Необходимо предоставить класс, реализующий интерфейс, <xref:Microsoft.VisualStudio.Package.IScanner> и необходимо реализовать все методы <xref:Microsoft.VisualStudio.Package.IScanner> интерфейса.  
   
 ### <a name="example"></a>Пример  
- В этом примере показано типичное использование <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> метод. `TestScanner` Класс реализует <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс (не показано).  
+ В этом примере показана типичная реализация <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> метода. `TestScanner`Класс реализует <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс (не показан).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -118,11 +118,11 @@ namespace TestLanguagePackage
   
 ```  
   
-## <a name="parsesource-method"></a>Метод ParseSource  
- Выполняет синтаксический анализ исходного файла на основе ряда по разным причинам. Этот метод предоставляется <xref:Microsoft.VisualStudio.Package.ParseRequest> , описывающий поведения, ожидаемого от конкретной операции синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод вызывает более сложные средства синтаксического анализа, определяющий функцию создания маркеров и область. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод используется в поддержке для операции IntelliSense, а также парные фигурные скобки. Даже если вы не поддерживают такие дополнительные операции, вы по-прежнему должен возвращать допустимое <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта и что необходимо создать класс, реализующий <xref:Microsoft.VisualStudio.Package.AuthoringScope> интерфейс и реализовать все методы в этом интерфейсе. Может возвращать значения null из всех методов, но <xref:Microsoft.VisualStudio.Package.AuthoringScope> сам объект не должен иметь значение null.  
+## <a name="parsesource-method"></a>Метод Парсесаурце  
+ Анализирует исходный файл по ряду различных причин. Этому методу предоставляется <xref:Microsoft.VisualStudio.Package.ParseRequest> объект, который описывает, что ожидается из определенной операции синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>Метод вызывает более сложное средство синтаксического анализа, определяющее функциональность и область действия токена. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>Метод используется для поддержки операций IntelliSense, а также для сопоставления фигурных скобок. Даже если вы не поддерживаете такие расширенные операции, по-прежнему необходимо возвращать допустимый <xref:Microsoft.VisualStudio.Package.AuthoringScope> объект, который требует создания класса, реализующего <xref:Microsoft.VisualStudio.Package.AuthoringScope> интерфейс, и реализации всех методов в этом интерфейсе. Можно вернуть значения NULL из всех методов, но <xref:Microsoft.VisualStudio.Package.AuthoringScope> сам объект не должен иметь значение null.  
   
 ### <a name="example"></a>Пример  
- В этом примере показано минимальную реализацию <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод и <xref:Microsoft.VisualStudio.Package.AuthoringScope> класс, достаточны для того, языковой службы для компиляции и работать без фактически поддержки более сложных функций.  
+ В этом примере показана минимальная реализация <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метода и <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса, достаточная для того, чтобы языковая служба была скомпилирована и функционировать без поддержки каких-либо дополнительных функций.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -169,10 +169,10 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="name-property"></a>Свойство Name  
- Это свойство возвращает имя языковой службы. Это должен быть тем же именем, учитывая при регистрации языковой службы. Это имя будет использоваться в нескольких местах, самым важным из которых является <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса, где имя используется для доступа к реестру. Имя, возвращаемый этим свойством не должно быть локализовано, так как он используется в реестре для реестра и имена ключей.  
+ Это свойство возвращает имя языковой службы. Это имя должно совпадать с именем, заданным при регистрации языковой службы. Это имя используется в нескольких местах, самым заметным является класс, в котором <xref:Microsoft.VisualStudio.Package.LanguagePreferences> имя используется для доступа к реестру. Имя, возвращаемое этим свойством, не должно быть локализовано, так как оно используется в реестре для записи реестра и имен ключей.  
   
 ### <a name="example"></a>Пример  
- В этом примере показана одна возможная реализация из <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> свойство. Обратите внимание, что имя, жестко: фактическое имя должны быть получены из файла ресурсов, поэтому он может использоваться в регистрация языковой службы (см. в разделе [регистрация языковой службы прежних](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
+ В этом примере показана одна возможная реализация <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Свойства. Обратите внимание, что имя здесь жестко запрограммировано: фактическое имя должно быть получено из файла ресурсов, чтобы его можно было использовать при регистрации языковой службы (см. раздел [Регистрация устаревшей языковой службы](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -190,54 +190,54 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="instantiating-custom-classes"></a>Создание экземпляра пользовательские классы  
- Следующие методы в указанные классы могут переопределяться для предоставления экземпляров собственные версии каждого класса.  
+## <a name="instantiating-custom-classes"></a>Создание экземпляров пользовательских классов  
+ Следующие методы в указанных классах могут быть переопределены для предоставления экземпляров собственных версий каждого класса.  
   
-### <a name="in-the-languageservice-class"></a>В классе LanguageService  
+### <a name="in-the-languageservice-class"></a>В классе Лангуажесервице  
   
-|Метод|Возвращается|Описание|  
+|Метод|Возвращаемый класс|Описание|  
 |------------|--------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения к текстовому представлению.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|Для поддержки **панель навигации**.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|Для поддержки функций в шаблоны фрагментов кода.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|Поддержка фрагментов кода (этот метод обычно не переопределяется).|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|Для поддержки настройки из <xref:Microsoft.VisualStudio.Package.ParseRequest> структуры (этот метод обычно не переопределяется).|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateSource%2A>|<xref:Microsoft.VisualStudio.Package.Source>|Для поддержки форматирования исходный код, указав символы комментария и настройка сигнатур методов.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>|<xref:Microsoft.VisualStudio.Package.ViewFilter>|Для поддержки дополнительных меню команд.|  
-|<xref:Microsoft.VisualStudio.Package.Source.GetColorizer%2A>|<xref:Microsoft.VisualStudio.Package.Colorizer>|Для поддержки выделения синтаксиса (этот метод обычно не переопределяется).|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>|<xref:Microsoft.VisualStudio.Package.LanguagePreferences>|Для поддержки доступа к языковые параметры. Этот метод должен быть реализован, но можно возвратить экземпляр базового класса.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>|<xref:Microsoft.VisualStudio.Package.IScanner>|Для предоставления средство синтаксического анализа, используемый для идентификации типов токенов в строке. Этот метод должен быть реализован и <xref:Microsoft.VisualStudio.Package.IScanner> должен быть производным от.|  
-|<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringScope>|Для предоставления средство синтаксического анализа, используемый для идентификации функциональные возможности и область действия всему исходному файлу. Этот метод должен быть реализован и должен возвращать экземпляр версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса. Если все, что требуется для поддержки является выделение синтаксиса (что требует <xref:Microsoft.VisualStudio.Package.IScanner> синтаксического анализа вернуло из <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> метод), можно сделать ничего в этот метод, отличный от возвращаемого версию <xref:Microsoft.VisualStudio.Package.AuthoringScope> класс, методы которого все возвращаемые значения null.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнений к текстовому представлению.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки пользовательских свойств документа.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|Для поддержки **панели навигации**.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|Для поддержки функций в шаблонах фрагментов кода.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|Для поддержки фрагментов кода (этот метод обычно не переопределен).|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|Для поддержки настройки <xref:Microsoft.VisualStudio.Package.ParseRequest> структуры (этот метод обычно не переопределен).|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateSource%2A>|<xref:Microsoft.VisualStudio.Package.Source>|Для поддержки форматирования исходного кода, указания символов комментария и настройки сигнатур методов.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>|<xref:Microsoft.VisualStudio.Package.ViewFilter>|Для поддержки дополнительных команд меню.|  
+|<xref:Microsoft.VisualStudio.Package.Source.GetColorizer%2A>|<xref:Microsoft.VisualStudio.Package.Colorizer>|Для поддержки выделения синтаксиса (этот метод обычно не переопределен).|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>|<xref:Microsoft.VisualStudio.Package.LanguagePreferences>|Для поддержки доступа к параметрам языка. Этот метод должен быть реализован, но может возвращать экземпляр базового класса.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>|<xref:Microsoft.VisualStudio.Package.IScanner>|Для предоставления синтаксического анализатора, используемого для идентификации типов токенов в строке. Этот метод должен быть реализован и <xref:Microsoft.VisualStudio.Package.IScanner> должен быть производным от.|  
+|<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringScope>|Для предоставления средства синтаксического анализа, используемого для определения функциональности и области действия во всем исходном файле. Этот метод должен быть реализован и должен возвращать экземпляр версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса. Если все, что требуется поддерживать, — выделение синтаксиса (для которого требуется <xref:Microsoft.VisualStudio.Package.IScanner> средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> , возвращаемое методом), вы можете не выполнять никаких действий в этом методе, кроме возврата версии <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса, методы которого возвращают значения NULL.|  
   
-### <a name="in-the-source-class"></a>В классе источника  
+### <a name="in-the-source-class"></a>В классе исходного кода  
   
-|Метод|Возвращается|Описание|  
+|Метод|Возвращаемый класс|Описание|  
 |------------|--------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности поддержка возможности, недоступные при открытии файла и переход к строке, которая вызвала ошибку.|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|Для настройки внешнего вида отображение кратких сведений IntelliSense параметра.|  
-|<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|Для поддержки комментирование кода.|  
-|<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|Для сбора информации во время операции синтаксического анализа.|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки вывода списков завершения IntelliSense (этот метод обычно не переопределен).|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности, поддержка функций перед открытием файла и переходом к строке, вызвавшей ошибку.|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|Для настройки вывода всплывающих подсказок параметров IntelliSense.|  
+|<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|Для поддержки комментирования кода.|  
+|<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|Для сбора сведений во время операции синтаксического анализа.|  
   
-### <a name="in-the-authoringscope-class"></a>В классе AuthoringScope  
+### <a name="in-the-authoringscope-class"></a>В классе Аусорингскопе  
   
-|Метод|Возвращается|Описание|  
+|Метод|Возвращаемый класс|Описание|  
 |------------|--------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Список объявлений, такие как члены или типы. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|  
-|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур метода в данном контексте. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|  
+|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Предоставляет список объявлений, таких как члены или типы. Этот метод должен быть реализован, но может возвращать значение null. Если этот метод возвращает допустимый объект, то объект должен быть экземпляром вашей версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|  
+|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур методов для данного контекста. Этот метод должен быть реализован, но может возвращать значение null. Если этот метод возвращает допустимый объект, то объект должен быть экземпляром вашей версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|  
   
-## <a name="language-service-images"></a>Язык обслуживания образов  
- Чтобы предоставить список значков, используемая в службе языка, переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> и возвращать <xref:System.Windows.Forms.ImageList> содержащий значки. Базовый <xref:Microsoft.VisualStudio.Package.LanguageService> класс загружает набора значков по умолчанию. Так как индекс изображения точно указать в места, которые нужно создать значки, размещения собственного списка изображений — полностью на ваше усмотрение.  
+## <a name="language-service-images"></a>Образы языковой службы  
+ Чтобы предоставить список значков, используемых в языковой службе, переопределите <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> классе и возвратите значение, <xref:System.Windows.Forms.ImageList> содержащее значки. Базовый <xref:Microsoft.VisualStudio.Package.LanguageService> класс загружает набор значков по умолчанию. Так как вы указываете точный индекс изображения в тех местах, которым требуются значки, способ организации собственного списка изображений полностью зависит от вас.  
   
-### <a name="images-used-in-intellisense-completion-lists"></a>Образы, используемые в списки завершения IntelliSense  
- Для списки завершения IntelliSense, индекс изображения должно быть указано для каждого элемента в <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> метод <xref:Microsoft.VisualStudio.Package.Declarations> класс, который необходимо переопределить, если вы хотите указать индекс изображения. Значение, возвращаемое из <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> метод — это индекс в списке изображений, передаваемое <xref:Microsoft.VisualStudio.Package.CompletionSet> конструктора класса и т. е один список изображений возвращается из <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> (можно изменить какой список изображений для класса Используйте для <xref:Microsoft.VisualStudio.Package.CompletionSet> при переопределении <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> классе, чтобы предоставить другой образ из списка).  
+### <a name="images-used-in-intellisense-completion-lists"></a>Изображения, используемые в списках завершения IntelliSense  
+ Для списков завершения IntelliSense для каждого элемента в <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> методе класса указывается индекс изображения <xref:Microsoft.VisualStudio.Package.Declarations> , который необходимо переопределить, если необходимо указать индекс изображения. Значение, возвращаемое <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> методом, является индексом в списке изображений, предоставленным <xref:Microsoft.VisualStudio.Package.CompletionSet> конструктору класса, который является тем же списком изображений, возвращенным <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> методом в <xref:Microsoft.VisualStudio.Package.LanguageService> классе (вы можете изменить, какой список изображений следует использовать для, <xref:Microsoft.VisualStudio.Package.CompletionSet> Если Переопределите <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> метод в классе, <xref:Microsoft.VisualStudio.Package.Source> чтобы предоставить другой список изображений).  
   
-### <a name="images-used-in-the-navigation-bar"></a>Образы, используемые на панели навигации  
- **Панель навигации** отображает список типов и членов и используется для быстрой навигации могут отображать значки. Эти значки будут получены с <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса и не может быть переопределен специально для **панель навигации**. При заполнении списки, представляющий поля со списком указанных индексов, используемых для каждого элемента в полях со списками <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод в <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса (см. в разделе [поддержка панели навигации в языковой службе прежних версий](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). Эти индексы образа каким-либо образом получаются из синтаксического анализатора, обычно с помощью вашей версии <xref:Microsoft.VisualStudio.Package.Declarations> класса. Каким образом получаются индексы — полностью на ваше усмотрение.  
+### <a name="images-used-in-the-navigation-bar"></a>Изображения, используемые на панели навигации  
+ На **панели навигации** отображаются списки типов и членов, которые используются для быстрой навигации, а также для отображения значков. Эти значки получаются из <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метода в <xref:Microsoft.VisualStudio.Package.LanguageService> классе и не могут быть переопределены специально для **панели навигации**. Индексы, используемые для каждого элемента в полях со списком, задаются, когда списки, представляющие поля со списком, заполняются в <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> методе <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> класса (см. раздел [Поддержка панели навигации в устаревшей языковой службе](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). Эти индексы изображений получаются каким-либо образом из средства синтаксического анализа, как правило, через вашу версию <xref:Microsoft.VisualStudio.Package.Declarations> класса. Способ получения индексов полностью зависит от вас.  
   
-### <a name="images-used-in-the-error-list-task-window"></a>Образы, используемые в окне ошибок список задач  
- Каждый раз, когда <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средство синтаксического анализа метод (см. в разделе [средства синтаксического анализа службы языка для прежних версий и сканер](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) обнаруживает ошибку и передает эту ошибку для <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> метод в <xref:Microsoft.VisualStudio.Package.AuthoringSink> класс, возникла ошибка в  **Список ошибок** окно задач. Значок может быть связан с каждым элементом, который отображается в окне задач, и этот значок поступает из один список изображений, возвращенные <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса. По умолчанию классы MPF — не Показать изображение с сообщением об ошибке. Тем не менее, это поведение можно переопределить путем наследования от класса <xref:Microsoft.VisualStudio.Package.Source> и переопределение <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> метод. В этом методе создается новый <xref:Microsoft.VisualStudio.Package.DocumentTask> объекта. Перед возвратом этот объект, можно использовать <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> свойство <xref:Microsoft.VisualStudio.Package.DocumentTask> объекта, чтобы задать индекс изображения. Это будет выглядеть примерно как в следующем примере. Обратите внимание, что `TestIconImageIndex` представляет собой перечисление, в которой перечислены все значки относятся к этому примеру. Существует другой способ идентификации значки в службе языка.  
+### <a name="images-used-in-the-error-list-task-window"></a>Изображения, используемые в окне задачи Список ошибок  
+ Всякий раз, когда <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средство синтаксического анализа методов (см. сведения об [анализаторе и сканере языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) обнаруживает ошибку и передает эту ошибку <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> методу в <xref:Microsoft.VisualStudio.Package.AuthoringSink> классе, в окне **Список ошибок** задачи отображается сообщение об ошибке. Значок может быть связан с каждым элементом, отображаемым в окне задачи, и этот значок поступает из того же списка изображений, который возвращается из <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> метода в <xref:Microsoft.VisualStudio.Package.LanguageService> классе. Поведение по умолчанию для классов MPF — не показывать изображение с сообщением об ошибке. Однако это поведение можно переопределить, производя класс от <xref:Microsoft.VisualStudio.Package.Source> класса и переопределив <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> метод. В этом методе создается новый <xref:Microsoft.VisualStudio.Package.DocumentTask> объект. Перед возвратом этого объекта можно использовать <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> свойство <xref:Microsoft.VisualStudio.Package.DocumentTask> объекта для задания индекса изображения. Это будет выглядеть примерно так, как показано в следующем примере. Обратите внимание, что `TestIconImageIndex` является перечислением, в котором перечислены все значки, и оно относится только к этому примеру. У вас может быть другой способ идентификации значков в языковой службе.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -276,9 +276,9 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="the-default-image-list-for-a-language-service"></a>Список изображений по умолчанию для языковой службы  
- Список изображений по умолчанию, в состав базовые классы MPF языковой службы содержит ряд значки, связанные с более общими элементами языка. Основная часть этих значков, расположены в наборы шесть вариантов, соответствующий концепции доступа public, внутренний, friend, protected, private и сочетание клавиш. Например может иметь разные значки для метода, в зависимости от того, является ли это открытый, защищенный или закрытый.  
+ Список изображений по умолчанию, поставляемый с базовыми классами языковой службы MPF, содержит несколько значков, связанных с более распространенными элементами языка. Основная часть этих значков упорядочена в наборах из шести вариантов, соответствующих концепциям доступа Public, internal, Friend, protected, private и shortcut. Например, можно иметь разные значки для метода в зависимости от того, является ли он открытым, защищенным или закрытым.  
   
- Следующее перечисление задает обычно имена для каждого набора значков и указывает связанный индекс. Например, исходя из перечисления, можно указать индекс изображения для защищенного метода как `(int)IconImageIndex.Method + (int)IconImageIndex.AccessProtected`. Имена, в этом перечислении, при необходимости можно изменить.  
+ Следующее перечисление указывает типичные имена для каждого набора значков и указывает связанный индекс. Например, на основе перечисления можно указать индекс изображения для защищенного метода в виде `(int)IconImageIndex.Method + (int)IconImageIndex.AccessProtected` . При необходимости можно изменить имена в этом перечислении.  
   
 ```csharp  
 public enum IconImageIndex  
@@ -360,8 +360,8 @@ public enum IconImageIndex
         }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Общие сведения о службе устаревшего языка](../../extensibility/internals/legacy-language-service-overview.md)   
- [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)   
+## <a name="see-also"></a>См. также:  
+ [Реализация устаревшей языковой службы](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+ [Обзор языковой службы прежних версий](../../extensibility/internals/legacy-language-service-overview.md)   
+ [Регистрация устаревшей языковой службы](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Средство синтаксического анализа и сканер языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

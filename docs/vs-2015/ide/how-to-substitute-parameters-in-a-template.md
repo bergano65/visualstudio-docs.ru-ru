@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670664"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Практическое руководство. Замена параметров в шаблоне
@@ -46,5 +46,5 @@ ms.locfileid: "72670664"
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) . [Параметры шаблона](../ide/template-parameters.md) [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION Документы Майкрософт
+title: INTERCEPT_EXCEPTION_ACTION | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715070"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
-Определяет, какие действия предпринимать при перехвате исключений.
+Указывает, какие действия следует предпринять при перехвате исключений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,15 +45,15 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>Параметры
 
 `IEA_INTERCEPT`\
-Позволяет перехватывать текущее исключение. Это единственное значение, поддерживаемое в настоящее время и должно быть указано.
+Включает перехват текущего исключения. В настоящее время поддерживается только это значение, и его необходимо указать.
 
-## <a name="remarks"></a>Примечания
-Эти значения передаются в метод [InterceptCurrentException.](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
+## <a name="remarks"></a>Remarks
+Эти значения передаются в метод [интерцепткуррентексцептион](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

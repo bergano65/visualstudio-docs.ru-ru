@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения | Документация Майкрософт
+title: Как задать пользовательские разрешения для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6739f38e91ce998441c4cfa62453d485a5d370e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697546"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно развернуть приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , которое использует разрешения по умолчанию для зон Интернета или локальной интрасети. Кроме того, можно создать настраиваемую зону с определенными разрешениями, которые нужны приложению. Это можно сделать, настроив разрешения безопасности на странице **Безопасность** **конструктора проектов**.  
+Можно развернуть приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , которое использует разрешения по умолчанию для зон Интернета или локальной интрасети. Кроме того, можно создать настраиваемую зону с определенными разрешениями, которые нужны приложению. Это можно сделать, настроив разрешения безопасности на странице **Безопасность****конструктора проектов**.  
   
 ### <a name="to-customize-a-permission"></a>Настройка разрешения  
   
@@ -49,9 +49,9 @@ ms.locfileid: "65697546"
 7. Добавьте XML-код для разрешений, которые требуются приложению, перед элементом `</applicationRequestMinimum>` .  
   
     > [!NOTE]
-    > Можно использовать метод `ToXml` набора разрешений, чтобы создать XML-код для манифеста приложения. Например, чтобы создать XML-код для набора разрешений <xref:System.Security.Permissions.EnvironmentPermission> , вызовите метод <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> . Дополнительные сведения о структуре разрешения набора XML, см. в разделе [NIB: Практическое руководство. Импорт набора разрешений с помощью XML-файла](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
+    > Можно использовать метод `ToXml` набора разрешений, чтобы создать XML-код для манифеста приложения. Например, чтобы создать XML-код для набора разрешений <xref:System.Security.Permissions.EnvironmentPermission> , вызовите метод <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> . Дополнительные сведения о структуре XML-кода набора разрешений см. в разделе [NIB. Практическое руководство. Импорт набора разрешений с помощью XML-файла](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Управление доступом для кода для приложения ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

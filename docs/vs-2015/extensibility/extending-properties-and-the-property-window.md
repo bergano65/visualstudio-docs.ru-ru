@@ -15,22 +15,22 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c9ec498aca375cb5c63a574ebc72ab04219eb047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204482"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Расширение свойств и окна свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.  
+Окно **Свойства** используется для просмотра и изменения свойств и событий времени разработки для выбранных объектов.  
   
- При выборе объекта в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).  
+ При выборе объекта в в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] окне « **свойства** » отображаются открытые свойства этого объекта. Дополнительные сведения см. в разделе [Общие сведения о окне свойств](../extensibility/internals/properties-window-overview.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Расширение свойств в окно свойств](../extensibility/exposing-properties-to-the-properties-window.md)  
- Объясняет, как может иметь пользовательских свойств в окне свойств.  
+ Описание того, как можно настроить отображение пользовательских свойств в окно свойств.  
   
  [Получение свойств проекта](../extensibility/getting-project-properties.md)  
- В этой статье описывается получение свойств проекта.
+ Объясняет, как получить свойства проекта.

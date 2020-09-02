@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204277"
 ---
 # <a name="group-element"></a>Элемент Group
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Определяет группу команды VSPackage.  
+Определяет группу команд VSPackage.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,23 +38,23 @@ ms.locfileid: "68204277"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательный. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
-|id|Обязательный. Идентификатор GUID и идентификатора идентификатор команды.|  
-|priority|Необязательный параметр. Числовое значение, указывающее приоритет.|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательный. Идентификатор GUID идентификатора команды GUID/ID.|  
+|идентификатор|Обязательный. Идентификатор идентификатора команды GUID/ID.|  
+|priority|Необязательный элемент. Числовое значение, указывающее приоритет.|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|Родительский|Необязательный параметр. Родительский элемент кнопки.|  
-|Комментарий|Дополнительный комментарий.|  
+|Parent|Необязательный элемент. Родительский элемент кнопки.|  
+|Заметка|Необязательный комментарий.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд пакета VSPackage.|  
+|[Groups, элемент](../extensibility/groups-element.md)|Содержит записи, определяющие группы команд VSPackage.|  
   
 ## <a name="example"></a>Пример  
   
@@ -64,5 +64,5 @@ ms.locfileid: "68204277"
 </Group>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192816"
 ---
-# <a name="start"></a>Запуск
+# <a name="start"></a>Начало
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Start** — это параметр программы VSPerfCmd.exe, который инициализирует профилировщик для использования указанного метода профилирования.  
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Обязательные параметры  
  Если в командной строке задан параметр **Start**, необходимо указать параметр **Output**.  
   
- **Output:** `filename`  
+ **Выходные данные:**`filename`  
  Задает имя выходного файла.  
   
 ## <a name="exclusive-options"></a>Монопольные параметры  
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Включает профилирование в нескольких процессах. Поддерживаются оба имени параметра: **CrossSession** и **CS**.  
   
- **User:** [`domain\`]`username`  
+ **Пользователь:**[ `domain\` ]`username`  
  Позволяет клиентам получать доступ к монитору с помощью указанной учетной записи.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -60,7 +60,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>Недопустимые параметры  
  Указанные ниже параметры не могут использоваться с параметром **Start** в командной строке.  
   
- **Status**  
+ **Состояние**  
  Параметр **Status** применяется к процессам, для которых выполняется профилирование. Этот параметр перечисляет процессы и потоки и их текущее состояние профилирования (On/Off). Например, если процесс остановлен, параметр **Status** не отразит это в отчете. **Status** показывает, выполняется ли профилирование для процесса или нет.  
   
  **Shutdown**[ **:** `Timeout`]  
@@ -74,8 +74,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

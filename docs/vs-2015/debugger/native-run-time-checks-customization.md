@@ -1,5 +1,5 @@
 ---
-title: Настройка проверок собственного выполнения | Документация Майкрософт
+title: Настройка проверок во время выполнения машинного кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,16 +27,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 434f2425b1eeefd82b954e47a8ced55491a7ec11
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697821"
 ---
 # <a name="native-run-time-checks-customization"></a>Настройка проверок во время выполнения машинного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При выполнении компиляции с **/RTC** (проверки времени выполнения) или использовать `runtime_checks` директивы pragma библиотеки времени выполнения C предоставляет проверки времени выполнения в машинном коде. В некоторых случаях необходимо настроить проверки времени выполнения:  
+При компиляции с параметром **/RTC** (проверки времени выполнения) или использовании прагмы `runtime_checks` библиотека времени выполнения языка C предоставляет проверки во время выполнения машинного кода. В некоторых случаях необходимо настроить проверки времени выполнения:  
   
 - для направления сообщений о проверке, осуществляемой во время выполнения, в файл или в другое место назначения, отличающиеся от используемого по умолчанию;  
   
@@ -58,9 +58,9 @@ ms.locfileid: "65697821"
  Когда применяется пользовательская функция, сообщающая об ошибках, для связывания ошибки и типа сообщения следует использовать функцию `_RTC_SetErrorType`.  
   
 ## <a name="query-for-information-about-run-time-checks"></a>Запрос сведений о проверках времени выполнения  
- `_RTC_NumErrors` возвращает количество типов ошибок, обнаруженных в процессе проверки во время выполнения. Для получения краткого описания каждой ошибки можно использовать цикл от 0 до возвращенного `_RTC_NumErrors` значения, передавая номер итерации на каждом шаге в функцию `_RTC_GetErrDesc`. Дополнительные сведения см. в разделе [_RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) и [_RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927).  
+ `_RTC_NumErrors` возвращает количество типов ошибок, обнаруженных в процессе проверки во время выполнения. Для получения краткого описания каждой ошибки можно использовать цикл от 0 до возвращенного `_RTC_NumErrors` значения, передавая номер итерации на каждом шаге в функцию `_RTC_GetErrDesc`. Дополнительные сведения см. в статьях [_RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) и [_RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927).  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)   
+## <a name="see-also"></a>См. также:  
+ [Как использовать проверки машинного кода во время выполнения](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [_CrtDbgReport, _CrtDbgReportW](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)

@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder Структура - Внутренние члены (ru) Документы Майкрософт
+title: Структура AsyncVoidMethodBuilder — внутренние элементы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 866a53fae7bb2cc5325112b84d992da6f95af246
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739301"
 ---
-# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Структура AsyncVoidMethodBuilder - внутренние участники
-Эта тема описывает внутренних <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> членов класса. Для получения общей информации <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> об этом классе, см.
+# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Структура AsyncVoidMethodBuilder — внутренние элементы
+В этом разделе описываются внутренние члены <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> класса. Общие сведения об этом классе см <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> . в разделе справки.
 
- **Пространство имен:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Сборка:** mscorlib (в mscorlib.dll)
 
- Поскольку вы не можете получить доступ к этим внутренним членам из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
+ Так как вы не можете получить доступ к этим внутренним членам из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,11 +37,11 @@ ms.locfileid: "80739301"
 
 ## <a name="internal-members"></a>Внутренние члены
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[Свойство ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Получает объект, который может быть использован для однозначной идентификации этого строителя для отладчика.|
-|[m_objectIdForDebugger поле](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Представляет лениво инициализированный объект, используемый отладчиком для однозначной идентификации этого строителя.|
+|[ObjectIdForDebugger, свойство](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Возвращает объект, который может использоваться для уникальной идентификации этого построителя в отладчике.|
+|[m_objectIdForDebugger поле](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Представляет объект с отложенной инициализацией, используемый отладчиком для уникальной идентификации этого построителя.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Параллельные внутренние расширения для рамочной программы .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

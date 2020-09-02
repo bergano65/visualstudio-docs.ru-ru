@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e7dfc2b1137b30a03425f663d70e12c528dad39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657413"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Наследование классов данных (реляционный конструктор объектов)
@@ -28,7 +28,7 @@ ms.locfileid: "72657413"
 ## <a name="inheritance-properties"></a>Свойства наследования
  В следующей таблице содержится список свойств наследования и их описания.
 
-|свойство;|Описание|
+|Свойство|Описание|
 |--------------|-----------------|
 |Свойство дискриминатора|Свойство (сопоставляемое столбцу), которое определяет какому классу принадлежит текущая запись.|
 |Значение дискриминатора базового класса|Значение (в столбце, назначенном в качестве свойства дискриминатора), которое определяет, что запись относится к базовому классу.|
@@ -40,7 +40,7 @@ ms.locfileid: "72657413"
 |Раздел|Описание|
 |-----------|-----------------|
 |[Практическое руководство. Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Описывает способы конфигурирования классов сущностей, использующих наследование одной таблицы при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
-|[Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Предоставляет пошаговые инструкции по конфигурированию классов сущностей, использующих наследование одной таблицы, при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
+|[Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Предоставляет пошаговые инструкции по конфигурированию классов сущностей, использующих наследование одной таблицы, при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  Пошаговое руководство [по LINQ to SQL инструментов в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [. Создание классов LINQ to SQL (o-R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [Пошаговое руководство. Создание классов LINQ to SQL с помощью наследования одной таблицы (реляционный конструктор r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md) [Начало работы](https://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)

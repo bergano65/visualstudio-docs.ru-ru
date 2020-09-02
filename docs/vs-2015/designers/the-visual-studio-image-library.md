@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4880f2907584504ba659c9a887173e6cd365c241
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846448"
 ---
 # <a name="the-visual-studio-image-library"></a>Библиотека изображений Visual Studio
@@ -29,9 +29,9 @@ ms.locfileid: "75846448"
 
 Библиотека изображений Visual Studio содержит изображения приложений, отображаемые в Microsoft Visual Studio, Microsoft Windows, системе Office и другом программном обеспечении Microsoft. Набор из более 1000 изображений можно использовать для создания приложений, внешний вид которых сочетается с программным обеспечением Microsoft.
 
- [Скачать библиотеку изображений Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
+ [Загрузка библиотеки изображений Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
 
  Библиотека изображений состоит из пяти категорий: общие элементы, действия, заметки, значки и объекты. Для типов общих элементов и значков в библиотеку также включены файлы сведений в формате PDF. Они содержат информацию о правильном использовании этих изображений в приложениях.
 
-## <a name="see-also"></a>См. также раздел
- [Изображения, точечные рисунки и метафайлы](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)
+## <a name="see-also"></a>См. также:
+ [Работа с растровыми и векторными изображениями с использованием классов Image, Bitmap и Metafile](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

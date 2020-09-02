@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_statement | Документация Майкрософт
+title: 'IDiaLineNumber:: get_statement | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5ad480a3b5d3ed892fc56fec2c882638f986810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165683"
 ---
-# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
+# <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, что здесь строки содержатся сведения о начале инструкцию, а не выражение, в исходном коде программы.  
+Получает флаг, указывающий, что эта информация строки описывает начало оператора, а не выражение, в источнике программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT get_statement ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если этой строки описаны в начало оператора в исходном коде программы.  
+ заполняет Возвращает `TRUE` , если сведения в этой строке описывают начало оператора в источнике программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Операторы могут занимать несколько строк. Этот метод указывает, если номер строки связанной отмечает начало таких многострочного оператора.  
+## <a name="remarks"></a>Remarks  
+ Операторы могут охватывать несколько строк. Этот метод указывает, отмечает ли номер связанной строки начало такой многострочной инструкции.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

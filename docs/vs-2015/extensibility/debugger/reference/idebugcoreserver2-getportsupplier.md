@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPortSupplier | Документация Майкрософт
+title: 'IDebugCoreServer2:: Жетпортсупплиер | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5659453de43967f96cc2d7d238a4261aa7d5443a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192949"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает поставщика конкретного порта.  
+Извлекает конкретного поставщика порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,14 +42,14 @@ int GetPortSupplier( 
   
 #### <a name="parameters"></a>Параметры  
  `guidPortSupplier`  
- [in] Идентификатор GUID поставщика порта, который требуется получить.  
+ окне Идентификатор GUID получаемого поставщика порта.  
   
  `ppPortSupplier`  
- [out] Возвращает [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) объект, представляющий поставщик нужный порт.  
+ заполняет Возвращает объект [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) , представляющий требуемого поставщика порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

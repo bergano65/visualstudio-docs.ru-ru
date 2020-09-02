@@ -1,5 +1,5 @@
 ---
-title: Элемент customParameter (Visual Studio Templates) Документы Майкрософт
+title: Элемент Кустомпараметер (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739427"
 ---
-# <a name="customparameter-element-visual-studio-templates"></a>Элемент CustomParameter (шаблоны Visual Studio)
-Содержит специальное имя параметра и значение для использования при создании проекта или элемента из шаблона.
+# <a name="customparameter-element-visual-studio-templates"></a>Элемент Кустомпараметер (шаблоны Visual Studio)
+Содержит имя и значение настраиваемого параметра, используемого при создании проекта или элемента из шаблона.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,23 +36,23 @@ ms.locfileid: "80739427"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Name`|Обязательный элемент. Имя параметра. Формат для параметров составляет $*имя*$ .|
-|`Value`|Обязательный элемент. Значение замены параметра.|
+|`Name`|Обязательный элемент. Имя параметра. Формат параметров — $*Name*$.|
+|`Value`|Обязательный. Заменяющее значение для параметра.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Группирует пользовательские параметры, которые должны быть переданы мастеру шаблона, когда мастер делает замену параметров.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Группирует пользовательские параметры, которые должны быть переданы мастеру шаблонов, когда мастер выполняет замену параметров.|
 
-## <a name="remarks"></a>Примечания
- Когда шаблон `CustomParameter` содержит элементы, `Name` каждый экземпляр `Value` атрибута заменяется атрибутом в созданных файлах проекта или элемента.
+## <a name="remarks"></a>Remarks
+ Если шаблон содержит `CustomParameter` элементы, каждый экземпляр `Name` заменяется `Value` атрибутом в создаваемом файле проекта или элемента.
 
 ## <a name="example"></a>Пример
- Ниже приводится следующий пример, как использовать несколько пользовательских параметров в шаблоне. Когда проект или элемент создается из шаблона со следующими `$color1$` пользовательскими параметрами, все экземпляры и `$color2$` в файлах шаблона будут заменены `Red` и, `Blue`соответственно.
+ В следующем примере показано, как использовать несколько пользовательских параметров в шаблоне. При создании проекта или элемента на основе шаблона со следующими пользовательскими параметрами все экземпляры `$color1$` и `$color2$` в файлах шаблонов будут заменены на `Red` и `Blue` соответственно.
 
 ```
 <CustomParameters>
@@ -61,7 +61,7 @@ ms.locfileid: "80739427"
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>См. также
-- [Элемент пользовательских параметров (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
+## <a name="see-also"></a>См. также раздел
+- [Элемент CustomParameters (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Параметры шаблона](../ide/template-parameters.md)
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547554"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Манифесты развертывания для решений Office
@@ -27,7 +27,7 @@ ms.locfileid: "85547554"
 
  Разработка решений Office в Visual Studio использует [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] схему манифеста развертывания, определенную в справочнике по [манифесту развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Файл манифеста развертывания для решений Office определяет текущую версию и другие параметры развертывания. Он ссылается на манифест приложения и описывает текущую версию решения и все файлы в решении.
 
 ## <a name="file-name-syntax"></a>Синтаксис имени файла
@@ -183,6 +183,6 @@ ms.locfileid: "85547554"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670667"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий построения (Visual Basic)
@@ -128,7 +128,7 @@ ms.locfileid: "72670667"
 
 1. Создайте приложение Windows для проекта, который должен быть опубликован. В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.
 
-2. В диалоговом окне **Новый проект** в узле **Visual Basic** выберите  **Windows**, а затем шаблон **Приложение Windows**. Задайте для проекта имя `VBWinApp`.
+2. В диалоговом окне **Новый проект** в узле **Visual Basic** выберите ** Windows**, а затем шаблон **Приложение Windows**. Задайте для проекта имя `VBWinApp`.
 
 3. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните пункт **Свойства**.
 
@@ -144,7 +144,7 @@ ms.locfileid: "72670667"
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. В конструкторе проектов перейдите на вкладку **Компиляции** и нажмите кнопку **События сборки**, чтобы открыть диалоговое окно **События сборки**.
+6. В конструкторе проектов перейдите на вкладку **Компиляция** и нажмите кнопку **события построения** , чтобы открыть диалоговое окно **события сборки** .
 
 7. В **командной строке события после сборки** введите следующую команду:
 
@@ -164,5 +164,5 @@ ms.locfileid: "72670667"
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>См. также раздел
- [Управление свойствами компиляции](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [Страница "компиляция", конструктор проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Страница "публикация" в конструкторе проектов,](../ide/reference/publish-page-project-designer.md) [диалоговое окно "Командная строка события перед построением проекта"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [.C#как указать события сборки () ](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>См. также:
+ [Управление свойствами компиляции](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [Страница "компиляция", конструктор проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [Страница "публикация" в конструкторе проектов,](../ide/reference/publish-page-project-designer.md) [диалоговое окно "Командная строка события перед построением проекта"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [. как указать события сборки (C#)](../ide/how-to-specify-build-events-csharp.md)

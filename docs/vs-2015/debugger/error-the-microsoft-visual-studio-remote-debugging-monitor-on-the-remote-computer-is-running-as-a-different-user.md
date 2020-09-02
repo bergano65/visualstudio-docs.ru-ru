@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере выполняется от имени другого пользователя | Документация Майкрософт'
+title: 'Ошибка: Microsoft Visual Studio Монитор удаленной отладки на удаленном компьютере работает от имени другого пользователя | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dffaafbca80828a7501f5f7d24e525225284f5a8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697313"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Ошибка: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
@@ -38,7 +38,7 @@ ms.locfileid: "65697313"
   
  На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
  Это сообщение появляется, если отладка выполняется в режиме "без аутентификации" и пользователь, запустивший msvsmon, не является пользователем, запустившим Visual Studio.  
   
 ## <a name="solution"></a>Решение  
@@ -47,8 +47,8 @@ ms.locfileid: "65697313"
 > [!CAUTION]
 > Предоставление другим пользователям разрешения на подключение допускает вероятность случайного подключения к неправильному сеансу удаленной отладки. Отладка в режиме **Без аутентификации** никогда не является безопасной, и ее следует использовать с осторожностью.  
   
- Дополнительные сведения см. в разделе [Запуск монитора удаленной отладки](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
+ Дополнительные сведения см. [в разделе запуск монитор удаленной отладки](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
   
-## <a name="see-also"></a>См. также  
- [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>См. также:  
+ [Ошибки удаленной отладки и устранение неполадок](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

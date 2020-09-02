@@ -15,17 +15,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538559"
 ---
 # <a name="code-analysis-application-errors"></a>Ошибки, возникающие при анализе кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 В этом разделе приведены ссылки на сообщения об ошибках, создаваемые средством анализа управляемого кода. Чтобы получить справку по конкретному сообщению об ошибке, введите номер ошибки в поле **Искать** в индексе.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 |Элемент|Значение|
 |-|-|
@@ -57,7 +57,7 @@ ms.locfileid: "85538559"
 |[CA0505](ca0505.md)|Свойство является устаревшим. Использование свойства суперцединг|
 |[Ошибки FxCopCmd](fxcopcmd-errors.md)|Ошибки анализа управляемого кода.|
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
 
 - [Рекомендации по написанию безопасного кода](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

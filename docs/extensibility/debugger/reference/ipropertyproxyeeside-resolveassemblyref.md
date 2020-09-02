@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEEside::ResolveAssemblyRef Документы Майкрософт
+title: 'Ипропертипроксеесиде:: Ресолвеассемблиреф | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714878"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Определяет местоположение указанной управляемой ссылки сборки.
+Определяет расположение указанной ссылки на управляемую сборку.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,27 +49,27 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>Параметры
 `assemName`\
-(в) Название сборки для решения.
+окне Имя сборки для разрешения.
 
 `assemBytes`\
-(ваут) Возвращает объект [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) содержащий байты сборки, связанные с ссылкой.
+заполняет Возвращает объект [иидатастораже](../../../extensibility/debugger/reference/ieedatastorage.md) , содержащий байты сборки, связанные со ссылкой.
 
 `assemPdb`\
-(ваут) Возвращает `IEEDataStorage` объект, содержащий данные хранения символов, связанные с этой ссылкой.
+заполняет Возвращает `IEEDataStorage` объект, содержащий данные хранилища символов, связанные с этой ссылкой.
 
 `assemLocation`\
-(ваут) Возвращает местоположение пути этой ссылки.
+заполняет Возвращает расположение пути для этой ссылки.
 
 `alr`\
-(ваут) Возвращает значение из [перечисления ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) с указанием местоположения сборки этой ссылки.
+заполняет Возвращает значение из перечисления [ассемблилокресолутион](../../../extensibility/debugger/reference/assemblylocresolution.md) , указывающее расположение сборки этой ссылки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод обычно не реализуется пользовательским оценщиком выражения.
+## <a name="remarks"></a>Remarks
+ Этот метод обычно не реализуется с помощью пользовательского средства оценки выражений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

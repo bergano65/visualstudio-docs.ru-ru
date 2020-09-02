@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 436a8614c18c296c072d91116143306d898f0436
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538857"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407. Не используйте статические члены в типах, видимых для COM
@@ -95,5 +95,5 @@ namespace Samples
 
  [CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Взаимодействие с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

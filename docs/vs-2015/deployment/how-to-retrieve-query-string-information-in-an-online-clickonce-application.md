@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Извлечение сведений строки запроса в Интернет-приложении ClickOnce | Документация Майкрософт
+title: Как получить сведения о строке запроса в интерактивном приложении ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 588ff95f90c6d85526dfe931e8f0b8ab439d9b94
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697577"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Практическое руководство. Извлечение сведений строки запроса в интернет-приложении ClickOnce
@@ -42,7 +42,7 @@ ms.locfileid: "65697577"
 > [!NOTE]
 > Прежде чем принять решение о включении этой функции, ознакомьтесь с подразделом "Безопасность" ниже.  
   
- Сведения о создании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания с помощью Mage.exe или MageUI.exe см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Сведения о создании [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания с помощью Mage.exe или MageUI.exe см. [в разделе Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 > Начиная с .NET Framework 3.5 с пакетом обновления 1 (SP1), аргументы командной строки можно передать автономному приложению [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Если требуется передать аргументы в приложение, можно передать параметры в файл ярлыка с помощью расширения .APPREF-MS.  
@@ -78,8 +78,8 @@ ms.locfileid: "65697577"
   
  Если приложение работает только в сети, оно всегда будет активироваться через URL-адрес. Но даже в этом случае приложение должно обеспечивать правильную работу в ситуациях, когда параметры строки запроса отсутствуют или повреждены.  
   
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
+## <a name="net-framework-security"></a>Безопасность .NET Framework  
  Разрешайте передачу параметров URL-адреса в свое приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] только в том случае, если вы планируете очищать входные данные от любых вредоносных символов перед использованием. При отсутствии фильтрации SQL-запросов к базе данных строка с внедренными кавычками, символами косой черты или точками с запятой может, например, выполнять произвольные операции с данными. Дополнительные сведения о безопасности строки запроса см. в разделе [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
