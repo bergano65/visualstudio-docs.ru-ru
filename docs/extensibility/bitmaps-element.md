@@ -1,5 +1,5 @@
 ---
-title: Элемент биткарт Документы Майкрософт
+title: Элемент Bitmap | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739986"
 ---
-# <a name="bitmaps-element"></a>Элемент Bitmaps
-Элементы [элементов Биткарта](../extensibility/bitmap-element.md) групп.
+# <a name="bitmaps-element"></a>Bitmap, элемент
+Группирует элементы [растрового элемента](../extensibility/bitmap-element.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,22 +35,22 @@ ms.locfileid: "80739986"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|Атрибут|Описание:|
 |---------------|-----------------|
-|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент Bitmaps](../extensibility/bitmaps-element.md)|Элементы Битмап групп.|
-|[Элемент Bitmap](../extensibility/bitmap-element.md)|Определяет бит-карту.|
+|[Bitmap, элемент](../extensibility/bitmaps-element.md)|Группирует элементы битовой карты.|
+|[Bitmap, элемент](../extensibility/bitmap-element.md)|Определяет точечный рисунок.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент команд](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
+|[Commands, элемент](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
 
 ## <a name="example"></a>Пример
 
@@ -63,5 +63,5 @@ ms.locfileid: "80739986"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Как VSPackages добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

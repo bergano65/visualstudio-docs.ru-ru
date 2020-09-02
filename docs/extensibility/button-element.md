@@ -1,5 +1,5 @@
 ---
-title: Элемент кнопки Документы Майкрософт
+title: Элемент Button | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739938"
 ---
-# <a name="button-element"></a>Элемент кнопки
-Определяет элемент, с которым пользователь может взаимодействовать. Кнопки могут быть разных видов: кнопки, MenuButton и SplitDropDown.
+# <a name="button-element"></a>Button, элемент
+Определяет элемент, с которым пользователь может взаимодействовать. Кнопки могут принадлежать разным типам: Button, Менубуттон и Сплитдропдовн.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,30 +39,30 @@ ms.locfileid: "80739938"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный элемент. GUID идентификатора команды GUID/ID.|
-|идентификатор|Обязательный элемент. Идентификатор идентификатора идентификатора команды GUID/ID.|
-|priority|Необязательный параметр. Числовое значение, которое определяет приоритет.|
-|type|Необязательный параметр. Перечисленное значение, которое определяет вид кнопки.<br /><br /> Если не дано, использует кнопку.<br /><br /> Кнопка<br /> Стандартная команда, которая отображается на панели инструментов (обычно в виде знаковой кнопки), меню и контекстных меню.<br /><br /> МенюБаттл<br /> Элемент меню, который не выполняет команду, но производит другое меню.<br /><br /> SplitDropDown<br /> Элементы управления, такие как кнопки «Отменить» и «Редо» на стандартной панели инструментов в Microsoft Word.|
-|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|guid|Обязательный. Идентификатор GUID идентификатора команды GUID/ID.|
+|идентификатор|Обязательный. Идентификатор идентификатора команды GUID/ID.|
+|priority|Необязательный элемент. Числовое значение, указывающее приоритет.|
+|type|Необязательный элемент. Перечислимое значение, указывающее тип кнопки.<br /><br /> Если значение не задано, функция использует кнопку.<br /><br /> Кнопка<br /> Стандартная команда, которая отображается на панелях инструментов (обычно в виде значков), меню и контекстных меню.<br /><br /> менубуттон<br /> Пункт меню, который не выполняет команду, но создает другое меню.<br /><br /> сплитдропдовн<br /> Элементы управления, такие как кнопки Отменить и повторить на стандартной панели инструментов в Microsoft Word.|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Родительский элемент](../extensibility/parent-element.md)|Необязательный параметр. Родительский элемент кнопки.|
-|[Элемент значка](../extensibility/icon-element.md)|Необязательный параметр. Значок, связанный с кнопкой.|
-|[Элемент флага командования](../extensibility/command-flag-element.md)|Обязательный элемент. Действительные значения CommandFlag для кнопки следующие.<br /><br /> - РазрешитьПарамс<br /><br /> - CommandWellOnly<br /><br /> - Инвалиды по умолчанию<br /><br /> - По умолчаниюневидимый<br /><br /> - DontCache<br /><br /> - Динамичное начало<br /><br /> - Динамическаявидимость<br /><br /> - FixMenuКонтроллер<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> - Нет Настройка<br /><br /> - NoKeyCustomize<br /><br /> - НошовонМенуменуареер<br /><br /> - Пикт<br /><br /> - PostExec<br /><br /> - ПредложениеCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> - TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseМеню<br /><br /> - TextMenuUseButton<br /><br /> - TextOnly|
-|[Элемент струн](../extensibility/strings-element.md)|Обязательный элемент. Элемент «ребенок [ButtonText»](../extensibility/buttontext-element.md) должен быть определен.|
-|Заметка|Дополнительный комментарий.|
+|[Родительский элемент](../extensibility/parent-element.md)|Необязательный элемент. Родительский элемент кнопки.|
+|[Icon, элемент](../extensibility/icon-element.md)|Необязательный элемент. Значок, связанный с кнопкой.|
+|[Элемент флага команды](../extensibility/command-flag-element.md)|Обязательный. Допустимые значения CommandFlag для кнопки:<br /><br /> -Алловпарамс<br /><br /> -Коммандвеллонли<br /><br /> -Дефаултдисаблед<br /><br /> -Дефаултинвисибле<br /><br /> -Донткаче<br /><br /> -ДинамиЦитемстарт<br /><br /> -Динамиквисибилити<br /><br /> -Фиксменуконтроллер<br /><br /> -Иконандтекст<br /><br /> -Нобуттонкустомизе<br /><br /> -Не настроено<br /><br /> -Нокэйкустомизе<br /><br /> -Ношовонменуконтроллер<br /><br /> -PICT<br /><br /> -I Exec<br /><br /> -Проффередкмд<br /><br /> -Раутетодокс<br /><br /> -Тексткаскадеусебтн<br /><br /> -Текстменуусебуттон<br /><br /> -Текстчанжес<br /><br /> -Текстчанжесбуттон<br /><br /> -Текстконтекстусебуттон<br /><br /> -Текстменуктрлусемену<br /><br /> -Текстменуусебуттон<br /><br /> -TextOnly|
+|[Элемент strings](../extensibility/strings-element.md)|Обязательный. Необходимо определить дочерний [элемент ButtonText](../extensibility/buttontext-element.md) .|
+|Заметка|Необязательный комментарий.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент кнопки](../extensibility/buttons-element.md)|Элементы кнопки групп.|
+|[Button, элемент](../extensibility/buttons-element.md)|Группирует элементы кнопки.|
 
 ## <a name="example"></a>Пример
- Следующий пример определяет кнопку в файле *.vsct.*
+ В следующем примере определяется кнопка в *vsct* -файле.
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -76,5 +76,5 @@ ms.locfileid: "80739938"
 </Button>
  ```
 
-## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

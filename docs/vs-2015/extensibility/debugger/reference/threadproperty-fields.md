@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc0e0f7cae4aed887809c22bda0cd6a9ed50307f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204809"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает, какие сведения о потоке требуется получить.  
+Указывает, какие сведения о потоке необходимо получить.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,41 +53,41 @@ public enum enum_THREADPROPERTY_FIELDS { 
   
 ## <a name="members"></a>Участники  
  TPF_ID  
- Инициализация и использование `dwThreadId` поле [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры.  
+ Инициализируйте или используйте `dwThreadId` поле структуры [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md) .  
   
  TPF_SUSPENDCOUNT  
- Инициализация и использование `dwSuspendCount` поле `THREADPROPERTIE`структура.  
+ Инициализируйте или используйте `dwSuspendCount` поле `THREADPROPERTIE` структуры S.  
   
  TPF_STATE  
- Инициализация и использование `dwThreadState` поле `THREADPROPERTIE`структура.  
+ Инициализируйте или используйте `dwThreadState` поле `THREADPROPERTIE` структуры S.  
   
  TPF_PRIORITY  
- Инициализация и использование `bstrPriority` поле `THREADPROPERTIE`структура.  
+ Инициализируйте или используйте `bstrPriority` поле `THREADPROPERTIE` структуры S.  
   
  TPF_NAME  
- Инициализация и использование `bstrName` поле `THREADPROPERTIE`структура.  
+ Инициализируйте или используйте `bstrName` поле `THREADPROPERTIE` структуры S.  
   
  TPF_LOCATION  
- Инициализация и использование `bstrLocation` поле `THREADPROPERTIE`структура.  
+ Инициализируйте или используйте `bstrLocation` поле `THREADPROPERTIE` структуры S.  
   
  TPF_ALLFIELDS  
- Указывает все поля.  
+ Задает все поля.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения передаются в качестве аргумента [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод, чтобы указать, какие поля [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры должны быть инициализированы.  
+## <a name="remarks"></a>Remarks  
+ Эти значения передаются в качестве аргумента в метод [жетсреадпропертиес](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) , чтобы указать, какие поля структуры [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md) должны быть инициализированы.  
   
- Эти значения также используются в `dwFields` членом `THREADPROPERTIES` структура указывает, какие поля используются и допустимым.  
+ Эти значения также используются в `dwFields` члене `THREADPROPERTIES` структуры для указания того, какие поля используются и являются допустимыми.  
   
- Эти флаги могут быть объединены с побитовым объектом `OR`.  
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)   
+ [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

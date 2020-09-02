@@ -1,5 +1,5 @@
 ---
-title: Выбор между общими и версиями VSPackages (ru) Документы Майкрософт
+title: Выбор между общими и версиями пакетов VSPackage | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,54 +13,54 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739887"
 ---
-# <a name="choose-between-shared-and-versioned-vspackages"></a>Выбирайте между общими и версиями VSPackages
-Различные версии Visual Studio могут сосуществовать на одном компьютере. VSPackages может поддерживать [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] любое сочетание версий.
+# <a name="choose-between-shared-and-versioned-vspackages"></a>Выбор между общими и версиями пакетов VSPackage
+Разные версии Visual Studio могут сосуществовать на одном компьютере. Пакеты VSPackage могут поддерживать любой набор [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версий.
 
- Вы можете включить бок о бок установки VSPackages через любой из двух стратегий, общей стратегии или версии стратегии. Оба учитывают наличие нескольких [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версий и связанных с ними версий рамочной программы .NET.
+ Параллельные установки пакетов VSPackage можно включить с помощью одной из двух стратегий: общей стратегии или стратегии управления версиями. Оба варианта удовлетворяют наличие нескольких версий [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и связанных версий .NET Framework.
 
- В общей стратегии один VSPackage зарегистрирован для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]использования в нескольких версиях . В стратегии версии установлено несколько DLL VSPackage, по одному для каждой версии, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] которую вы поддерживаете.
+ В общей стратегии один пакет VSPackage регистрируется для использования в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . В стратегии управления версиями устанавливаются несколько библиотек DLL VSPackage, по одной для каждой [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживаемой версии.
 
-## <a name="shared-vspackages"></a>Общие VSPackages
- Использование общего VSPackage является целесообразным, когда вы используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]тот же VSPackage в нескольких версиях. Для реализации общего VSPackage необходимо предпринять следующие шаги:
+## <a name="shared-vspackages"></a>Общие пакеты VSPackage
+ Использование общего пакета VSPackage подходит при использовании одного пакета VSPackage в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Для реализации общего пакета VSPackage необходимо выполнить следующие действия.
 
-- Сделайте ваш VSPackage совместимым [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]с несколькими версиями. Доступны два способа сделать это:
+- Сделайте пакет VSPackage совместимым с несколькими версиями [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Доступны два способа:
 
-  - Ограничьте свой VSPackage с использованием только [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] особенностей самой ранней версии, которую вы поддерживаете.
+  - Ограничьте пакет VSPackage, используя только возможности самой ранней [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживаемой версии.
 
-  - Программа VSPackage, чтобы адаптироваться [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] к версии, в которой он работает. Затем, если запросы для новых служб не удается, ваш VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]может предложить другие услуги, которые поддерживаются в старых версиях .
+  - Заполните пакет VSPackage для адаптации к версии, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в которой он выполняется. Затем, если происходит сбой запросов к более новым службам, пакет VSPackage может предлагать другие службы, которые поддерживаются в более ранних версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Зарегистрируйте свой VSPackage надлежащим образом. Для получения дополнительной информации, см [VSPackage регистрации](../extensibility/internals/vspackage-registration.md) и [управляемой регистрации VSPackage](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Зарегистрируйте пакет VSPackage соответствующим образом. Дополнительные сведения см. в статье [Регистрация VSPackage](../extensibility/internals/vspackage-registration.md) и [управляемая регистрация VSPackage](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
 
-- Зарегистрируйте расширения файлов надлежащим образом. Для получения дополнительной [Registering file name extensions for side-by-side deployments](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)информации см.
+- Зарегистрируйте расширения файлов соответствующим образом. Дополнительные сведения см. в разделе [Регистрация расширений имен файлов для параллельных развертываний](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- Создайте установщик, который развертывает ваш [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage для соответствующих версий. Для получения дополнительной информации [см. Установка VSPackages с установкой Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) и [управлением компонентами.](../extensibility/internals/component-management.md)
+- Создайте установщик, который развертывает пакет VSPackage для соответствующих версий [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Дополнительные сведения см. [в разделе Установка пакетов VSPackage с помощью установщик Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) и [управления компонентами](../extensibility/internals/component-management.md).
 
-- Решение вопроса о регистрационных коллизиях. Для получения дополнительной информации, см [VSPackage регистрации](../extensibility/internals/vspackage-registration.md).
+- Устраните проблемы с конфликтами регистрации. Дополнительные сведения см. в разделе [Регистрация VSPackage](../extensibility/internals/vspackage-registration.md).
 
-- Убедитесь, что как общие, так и версионные файлы соблюдали подсчет ссылок, чтобы обеспечить безопасную установку и удаление нескольких версий. Для получения дополнительной информации [см.](../extensibility/internals/component-management.md)
+- Убедитесь, что общие и версии файлов учитывают подсчет ссылок, чтобы обеспечить надежную установку и удаление нескольких версий. Дополнительные сведения см. в разделе [Управление компонентами](../extensibility/internals/component-management.md).
 
-## <a name="versioned-vspackages"></a>Версия VSPackages
- В соответствии со стратегией VSPackage, вы создаете один VSPackage для каждой версии, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] которую вы поддерживаете. Это уместно, когда вы ожидаете воспользоваться [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]услугами, предоставляемыми более поздними версиями, потому что каждый VSPackage может развиваться, не затрагивая других. Тем не менее, версия стратегии создания нескольких бинарных файлов, как из одной базы кода, так и из нескольких независимых баз кода, может повлечь за собой более первоначальную разработку, чем общая стратегия. Кроме того, может потребоваться дополнительная работа по настройке, поскольку необходимо создать либо отдельную [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] настройку для каждой версии, либо одну настройку, которая определяет версии, которые установлены, и что ваш VSPackage поддерживает.
+## <a name="versioned-vspackages"></a>Версии пакетов VSPackage
+ В рамках стратегии VSPackage с контролем версий вы создаете один пакет VSPackage для каждой [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживаемой версии. Это подходит, если вы планируете использовать службы, предоставляемые более поздними версиями [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , так как каждый пакет VSPackage может развиваться, не затрагивая другие. Тем не менее, стратегия создания нескольких двоичных файлов из одной базы кода или из нескольких независимых баз кода может привести к более начальной разработке, чем общая стратегия. Кроме того, может потребоваться дополнительная работа по установке, поскольку необходимо создать отдельную программу установки для каждой версии или единую программу установки, которая определяет версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , установленные и поддерживаемые пакетом VSPackage.
 
 ## <a name="binary-compatibility"></a>Совместимость на уровне двоичного кода
- Как правило, двоичная совместимость позволяет родной код VSPackages разработан с более ранними версиями Visual Studio для запуска в более поздних версиях Visual Studio. Однако есть три важных исключения:
+ Как правило, двоичная совместимость позволяет использовать пакеты VSPackage машинного кода, разработанные в более ранних версиях Visual Studio, в более поздних версиях Visual Studio. Однако есть три важных исключения.
 
-- Если ваш VSPackage опирается на определенную версию общего времени выполнения языка, то он должен определить, в какой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] он работает.
+- Если пакет VSPackage использует определенную версию среды CLR, он должен определить, в какой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] она выполняется.
 
-- VSPackage может иметь зависимость от конкретной функции другого VSPackage или другого продукта. Следовательно, VSPackage может работать только там, где зависимость удовлетворена.
+- Пакет VSPackage может иметь зависимость от определенной функции другого пакета VSPackage или другого продукта. Следовательно, пакет VSPackage может выполняться только в том случае, если зависимость удовлетворена.
 
-- VSPackage может быть затронут исправлением безопасности в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]пакете услуг или более поздней версией. В этих случаях VSPackage, разработанный с [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] более ранней [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версией, может не работать в версиях после применения исправления безопасности. Тем не менее, вы можете восстановить свой пакет с более поздней версией и запустить его в более ранних версиях.
+- На пакеты VSPackage может повлиять исправление безопасности в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пакете обновления или более поздней версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . В таких случаях пакет VSPackage, разработанный с более ранней версией, [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] может не работать в версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] после применения исправления безопасности. Однако можно перестроить пакет с помощью более поздней версии, а также запустить его в более ранних версиях.
 
-  Управляемые VSPackages должны быть [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] построены [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] с использованием [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]версии и, которые соответствуют целевой версии.
+  Управляемые пакеты VSPackage должны быть созданы с использованием версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] , соответствующей целевой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-  В дополнение к планированию бинарной совместимости для двоичных файлов VSPackage, вы также должны рассмотреть форматы файлов решения и файла проекта. Если ваш VSPackage создает новый тип проекта, вы должны решить, может [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ли он работать только в одной версии или в нескольких версиях. Для получения дополнительной информации [см.](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)
+  Помимо планирования двоичной совместимости для двоичных файлов VSPackage, следует также рассмотреть форматы файлов решения и проекта. Если пакет VSPackage создает новый тип проекта, необходимо решить, может ли он работать только в одной версии или в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Дополнительные сведения см. в разделе [Обновление пользовательских проектов](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>См. также
-- [Установка VSPackages с установкой Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>См. также раздел
+- [Установка пакетов VSPackage с помощью установщик Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Управление компонентами](../extensibility/internals/component-management.md)
