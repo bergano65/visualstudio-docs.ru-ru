@@ -1,6 +1,6 @@
 ---
 title: Отображение номеров строк в коде
-ms.date: 03/28/2019
+ms.date: 08/28/2020
 ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6e0c50ab41f3d18458c736e48b0a4360b8b286
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 02d26a452315f144e52a78d7fcea737d39052f59
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770365"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89091477"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Практическое руководство. Отображение номеров строк в редакторе
 
@@ -32,8 +32,8 @@ ms.locfileid: "85770365"
 
    ![Функция отображения номеров строк в редакторе VS](../../ide/reference/media/line-numbers-option.png)
 
-> [!TIP]
-> Номера строк не добавляются в код; они используются только для справки. Чтобы номера строк печатались, установите флажок **Включить номера строк** в диалоговом окне **Печать**.
+> [!NOTE]
+> Номера строк не добавляются в код; они используются только для справки.
 
 ## <a name="see-also"></a>См. также
 

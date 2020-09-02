@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187840"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Представление "Указатели инструкций" — данные конфликтов
@@ -25,7 +25,7 @@ ms.locfileid: "68187840"
   
  В следующей таблице описаны значения столбцов в представлении "Указатели инструкций".  
   
-|Столбец|ОПИСАНИЕ|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время блокировки в данной функции.|  
 |**% эксклюзивного времени блокировки**|Процент времени блокировки, когда выполнялась инструкция.|  
@@ -45,8 +45,8 @@ ms.locfileid: "68187840"
 |**Начало исходной строки**|Номер строки в исходном файле, с которой начинается данная инструкция.|  
 |**Конец исходной строки**|Номер строки в исходном файле, на которой заканчивается данная инструкция.|  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view.md)   
- [Представление "Указатели инструкций" — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление указателей инструкций](../profiling/instruction-pointers-ips-view.md)   
+ [Представление указателей инструкций — выборка](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)
