@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657932"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Отладка или отключение кода проекта в конструкторе XAML
@@ -49,7 +49,7 @@ ms.locfileid: "72657932"
 
 2. В диспетчере задач Windows нажмите кнопку **Завершить задачу** , чтобы закрыть все экземпляры конструктора XAML Visual Studio, работающие в данный момент.
 
-     ![Экземпляры конструктора XAML в TaskManager](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
+     ![Экземпляры конструктора XAML в диспетчере задач](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
 
 3. В Visual Studio откройте страницу XAML, содержащую код или элемент управления, который требуется отладить.
 
@@ -75,7 +75,7 @@ ms.locfileid: "72657932"
 
 - Или же можно нажать кнопку **Отключить код проекта** в панели инструментов в конструкторе XAML.
 
-     ![Кнопка "отключить код проекта"](../designers/media/xaml-disablecode.png "XAML_DisableCode")
+     ![Кнопка отключения кода проекта](../designers/media/xaml-disablecode.png "XAML_DisableCode")
 
      Вы можете нажать эту кнопку еще раз, чтобы включить код проекта.
 
@@ -87,5 +87,5 @@ ms.locfileid: "72657932"
     > [!NOTE]
     > Отключение кода проекта может привести к потере данных времени разработки. Другой путь заключается в отладке кода, выполняемого в конструкторе.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md)

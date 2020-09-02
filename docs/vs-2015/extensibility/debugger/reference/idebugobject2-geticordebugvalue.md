@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Документация Майкрософт
+title: 'IDebugObject2:: Жетикордебугвалуе | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6fdf426058390aef2a0c8abf2590123572bbc3b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194592"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает объект управляемого кода, который представляет значение, связанное с данным объектом.  
+Возвращает объект управляемого кода, представляющий значение, связанное с этим объектом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int GetICorDebugValue(
   
 #### <a name="parameters"></a>Параметры  
  `ppUnk`  
- [out] `IUnknown` интерфейс, который представляет этот псевдоним. Этот интерфейс может запрашиваться для `ICorDebugValue` интерфейс.  
+ [out] `IUnknown` интерфейс, представляющий этот псевдоним. Этот интерфейс можно запрашивать для `ICorDebugValue` интерфейса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- `ICorDebugValue` Объект — это интерфейс среды CLR, который представляет значение.  
+## <a name="remarks"></a>Remarks  
+ `ICorDebugValue`Объект представляет собой интерфейс общеязыковой среды выполнения, представляющий значение.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

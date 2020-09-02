@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676659"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Задача GenerateTemporaryTargetAssembly
@@ -39,10 +39,10 @@ ms.locfileid: "65676659"
 |`CompileTargetName`|Обязательный параметр **string**.<br /><br /> Указывает имя целевого объекта [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)], который используется для создания сборок из файлов исходного кода. Для параметра **CompileTargetName** обычно используется значение **CoreCompile**.|  
 |`CompileTypeName`|Обязательный параметр **string**.<br /><br /> Задает тип компиляции, которую выполняет целевой объект, указанный в параметре **CompileTargetName**. Для целевого объекта **CoreCompile** этот параметр имеет значение **Compile**.|  
 |`CurrentProject`|Обязательный параметр **string**.<br /><br /> Указывает полный путь к файлу проекта [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] для проекта, которому требуется временная конечная сборка.|  
-|`GeneratedCodeFiles`|Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список файлов управляемого кода для определенного языка, созданных задачей [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
+|`GeneratedCodeFiles`|Необязательный параметр **ITaskItem[]** .<br /><br /> Указывает список файлов управляемого кода для определенного языка, созданных задачей [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
 |`IntermediateOutputPath`|Обязательный параметр **string**.<br /><br /> Указывает каталог, в котором создана временная конечная сборка.|  
 |`MSBuildBinPath`|Обязательный параметр **string**.<br /><br /> Указывает расположение файла **MSBuild.exe**, который необходим для компиляции временной конечной сборки.|  
-|`ReferencePath`|Необязательный параметр **ITaskItem[]**.<br /><br /> Указывает список сборок (имя файла и путь), на которые ссылаются все типы, скомпилированные во временной конечной сборке.|  
+|`ReferencePath`|Необязательный параметр **ITaskItem[]** .<br /><br /> Указывает список сборок (имя файла и путь), на которые ссылаются все типы, скомпилированные во временной конечной сборке.|  
 |`ReferencePathTypeName`|Обязательный параметр **string**.<br /><br /> Задает параметр, используемый параметром целевого объекта компиляции (**CompileTargetName**), который задает список ссылок на сборку (**ReferencePath**). Мы рекомендуем использовать значение **ReferencePath**.|  
   
 ## <a name="remarks"></a>Примечания  
@@ -73,10 +73,10 @@ ms.locfileid: "65676659"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по MSBuild для WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Справочник по задачам](../msbuild/wpf-msbuild-task-reference.md)   
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
+ [Создание приложения WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Общие сведения о приложениях браузера WPF XAML](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

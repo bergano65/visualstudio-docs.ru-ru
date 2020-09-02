@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 16933eb409f55be209d54c26d0c077ed96f53cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204999"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Перечисляет допустимые значения в программе уничтожить флаги.  
+Перечисляет допустимые значения флагов удаления программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,18 +41,18 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>Термины  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Уничтожить программы, но продолжить отладку.  
+ Уничтожить программу, но продолжить отладку.  
   
-## <a name="remarks"></a>Примечания  
- Возвращает перечисление [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Перечисление возвращается методом- [flags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
+ Заголовок: Мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

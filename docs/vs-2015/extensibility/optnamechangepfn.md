@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Документация Майкрософт
+title: ОПТНАМЕЧАНЖЕПФН | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4969dff811b6517c0274a35884703a9dc0c693cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194102"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Это функция обратного вызова, указанный в вызове к [SccSetOption](../extensibility/sccsetoption-function.md) (с помощью параметра `SCC_OPT_NAMECHANGEPFN`) и используется для связи имя изменения, внесенные системой управления версиями подключаемого модуля обратно в интегрированной среде разработки.  
+Это функция обратного вызова, указанная в вызове [скксетоптион](../extensibility/sccsetoption-function.md) (с использованием параметра `SCC_OPT_NAMECHANGEPFN` ) и используемая для передачи изменений имени, сделанных подключаемым модулем системы управления версиями, обратно в интегрированную среду разработки.  
   
 ## <a name="signature"></a>Подпись  
   
@@ -35,23 +35,23 @@ typedef void (*OPTNAMECHANGEPFN)(
 ```  
   
 ## <a name="parameters"></a>Параметры  
- pvCallerData  
- [in] Значение пользователя, указанное в предыдущем вызове [SccSetOption](../extensibility/sccsetoption-function.md) (с помощью параметра `SCC_OPT_USERDATA`).  
+ пвкаллердата  
+ окне Значение пользователя, указанное в предыдущем вызове [скксетоптион](../extensibility/sccsetoption-function.md) (параметр using `SCC_OPT_USERDATA` ).  
   
- pszOldName  
- [in] Имя исходного файла.  
+ псзолднаме  
+ окне Исходное имя файла.  
   
- pszNewName  
- [in] Назовите файл был переименован в.  
+ псзневнаме  
+ окне Имя, в которое был переименован файл.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Отсутствует.  
+ Нет.  
   
-## <a name="remarks"></a>Примечания  
- При переименовании файла во время операции управления версиями, подключаемый модуль системы управления версиями может уведомить об изменении через этот обратный вызов интегрированной среды разработки.  
+## <a name="remarks"></a>Remarks  
+ Если файл переименовывается во время операции системы управления версиями, подключаемый модуль системы управления версиями может уведомлять интегрированную среду разработки об изменении имени через этот обратный вызов.  
   
- Если интегрированная среда разработки не поддерживает этот обратный вызов, он не вызывает [SccSetOption](../extensibility/sccsetoption-function.md) указать его. Если подключаемый модуль не поддерживает этот обратный вызов, он будет возвращать `SCC_E_OPNOTSUPPORTED` из `SccSetOption` функционировать при попытке задать обратный вызов интегрированной среды разработки.  
+ Если интегрированная среда разработки не поддерживает этот обратный вызов, она не будет вызывать [скксетоптион](../extensibility/sccsetoption-function.md) , чтобы указать его. Если подключаемый модуль не поддерживает этот обратный вызов, он будет возвращен `SCC_E_OPNOTSUPPORTED` из функции, `SccSetOption` когда интегрированная среда разработки попытается установить обратный вызов.  
   
-## <a name="see-also"></a>См. также  
- [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>См. также:  
+ [Функции обратного вызова, реализованные интегрированной средой разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

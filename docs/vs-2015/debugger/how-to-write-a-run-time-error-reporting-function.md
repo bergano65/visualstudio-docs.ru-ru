@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Написание функции, сообщающей об ошибке времени выполнения | Документация Майкрософт
+title: Как написать функцию отчетов об ошибках во время выполнения | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65678906"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения
@@ -127,5 +127,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка проверок во время выполнения машинного кода](../debugger/native-run-time-checks-customization.md)

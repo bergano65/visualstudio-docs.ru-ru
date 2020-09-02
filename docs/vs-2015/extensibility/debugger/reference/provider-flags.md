@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c39aa316308f313bf23ef2c5680671585636f0a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204941"
 ---
-# <a name="providerflags"></a>PROVIDER_FLAGS
+# <a name="provider_flags"></a>PROVIDER_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает требуемые свойства должны быть получены от поставщика программы.  
+Указывает требуемые свойства, которые будут получены от поставщика программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,28 +53,28 @@ public enum enum_PROVIDER_FLAGS {
   
 ## <a name="members"></a>Участники  
  PFLAG_NONE  
- Флаги не указан.  
+ Не указаны флаги.  
   
  PFLAG_REMOTE_PORT  
- Вызывающий объект хочет список программ на разных компьютерах [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+ Вызывающему объекту нужен список программ на компьютере, отличном от [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] .  
   
  PFLAG_DEBUGGEE  
- Процесс находится в состоянии отладки данным экземпляром класса [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+ Процесс в данный момент отлаживается этим экземпляром [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] .  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] присоединяется к отлаживаемой программы, но не запускать его.  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] прикрепляется к отлаживаемой программе, но не запускает ее.  
   
  PFLAG_REASON_WATCH  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] наблюдает за событиями.  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отслеживает события.  
   
  PFLAG_GET_PROGRAM_NODES  
- Вызывающий `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.  
+ Вызывающему объекту требуется `ProgramNodes` поле структуры [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) .  
   
  PFLAG_GET_IS_DEBUGGER_PRESENT  
- Вызывающий `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.  
+ Вызывающему объекту требуется `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.  
   
-## <a name="remarks"></a>Примечания  
- Эти флаги передаются следующие методы:  
+## <a name="remarks"></a>Remarks  
+ Эти флаги передаются следующим методам:  
   
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
@@ -82,18 +82,18 @@ public enum enum_PROVIDER_FLAGS {
   
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
-  Эти значения могут объединяться с побитовым объектом `OR`.  
+  Эти значения можно сочетать с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
+ [ватчфорпровидеревентс](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
+ [жетпровидерпрограмноде](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

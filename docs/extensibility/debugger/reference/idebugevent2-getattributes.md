@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEvent2:: GetAttributes Документы Майкрософт'
+title: 'IDebugEvent2:: OutAttribute | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729955"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
-Получает атрибуты для этого события отладки.
+Возвращает атрибуты для данного события отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetAttribute( 
 
 ## <a name="parameters"></a>Параметры
 `pdwAttrib`\
-(ваут) Комбинация флагов из перечисления [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
+заполняет Сочетание флагов из перечисления [евентаттрибутес](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) является общим для всех событий. Этот метод описывает тип события; например, это событие синхронное или асинхронное и является ли оно останавливая событием.
+## <a name="remarks"></a>Remarks
+ Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) является общим для всех событий. Этот метод описывает тип события; Например, событие является синхронным или асинхронным и является событием остановки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

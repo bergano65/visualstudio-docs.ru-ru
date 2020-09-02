@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205098"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает флаги состояния ожидающая точка останова.  
+Задает флаги состояния ожидания точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,21 +43,21 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
   
 ## <a name="members"></a>Участники  
  PBPSF_NONE  
- Заполнитель.  
+ Заполнителе.  
   
  PBPSF_VIRTUALIZED  
- Указывает виртуализированных ожидающие точки останова, который необходимо привязать каждый раз при загрузке нового кода.  
+ Задает виртуализированную незавершенную точку останова, которая должна быть привязана при каждом загрузке нового кода.  
   
-## <a name="remarks"></a>Примечания  
- Используется для `flags` членом [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `flags` элемента структуры [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

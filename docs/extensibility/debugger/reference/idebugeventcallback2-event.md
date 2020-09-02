@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Событие Документы Майкрософт
+title: 'IDebugEventCallback2:: Event | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729894"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
-Отправляет уведомления о событиях отладки.
+Отправляет уведомление о событиях отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,35 +53,35 @@ int Event( 
 
 ## <a name="parameters"></a>Параметры
 `pEngine`\
-(в) Объект [IDebugEngine2,](../../../extensibility/debugger/reference/idebugengine2.md) представляющий движок отладки (DE), отправляющий это событие. Для заполнения этого параметра требуется DE.
+окне Объект [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , представляющий модуль отладки (de), который отправляет это событие. Для заполнения этого параметра требуется DE.
 
 `pProcess`\
-(в) Объект [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) представляющий процесс, в котором происходит событие. Этот параметр заполняется менеджером отладки сеанса (SDM). DE всегда проходит нулевое значение для этого параметра.
+окне Объект [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , представляющий процесс, в котором происходит событие. Этот параметр заполняется диспетчером отладки сеансов (SDM). Параметр DE всегда передает значение NULL для этого параметра.
 
 `pProgram`\
-(в) Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий программу, в которой происходит это событие. Для большинства событий этот параметр не является нулевая величина.
+окне Объект [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий программу, в которой происходит это событие. Для большинства событий этот параметр не имеет значение null.
 
 `pThread`\
-(в) Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий поток, в котором происходит это событие. Для остановки событий этот параметр не может быть нулевой величиной, так как кадр стека получен из этого параметра.
+окне Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит это событие. Для событий остановки этот параметр не может иметь значение null, так как кадр стека получается из этого параметра.
 
 `pEvent`\
-(в) Объект [IDebugEvent2,](../../../extensibility/debugger/reference/idebugevent2.md) представляющий событие отладки.
+окне Объект [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , представляющий событие отладки.
 
 `riidEvent`\
-(в) GUID определяет, какой интерфейс событий `pEvent` получить от параметра.
+окне Идентификатор GUID, определяющий интерфейс события, который необходимо получить из `pEvent` параметра.
 
 `dwAttrib`\
-(в) Комбинация флагов из перечисления [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
+окне Сочетание флагов из перечисления [евентаттрибутес](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- При вызове этого `dwAttrib` метода параметр должен соответствовать значению, возвращенному из `pEvent` [метода GetAttributes,](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) как это вызвано на объекте события, переданном в параметре.
+## <a name="remarks"></a>Remarks
+ При вызове этого метода `dwAttrib` параметр должен соответствовать значению, возвращенному методом [OutAttribute](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) , как вызвано для объекта события, переданного в `pEvent` параметре.
 
- Все события отладки размещаются асинхронно, независимо от того, является ли само событие асинхронным или нет. При вызове DE этого метода значение возврата не указывает на то, было ли обработано событие, только то, было ли получено событие. На самом деле, в большинстве случаев событие не было обработано, когда этот метод возвращается.
+ Все события отладки публикуются асинхронно, независимо от того, является ли событие асинхронным или нет. Когда DE вызывает этот метод, возвращаемое значение не указывает, было ли событие обработано, только было ли получено событие. Фактически, в большинстве случаев событие не было обработано при возврате из этого метода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

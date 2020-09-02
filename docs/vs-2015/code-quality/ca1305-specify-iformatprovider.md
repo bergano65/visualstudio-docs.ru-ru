@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 025d76f8e946dd3021141d6736c6b4bd40d57170
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539090"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305. Указывайте IFormatProvider
@@ -61,7 +61,7 @@ ms.locfileid: "85539090"
  Предупреждение от этого правила можно отключить, если известно, что поставщик языка и региональных параметров по умолчанию является правильным выбором, а поддержка кода не является важным приоритетом разработки.
 
 ## <a name="example"></a>Пример
- В следующем примере `BadMethod` приводит к двум нарушениям этого правила. `GoodMethod`устраняет первое нарушение, передавая инвариантный язык и региональные параметры в <xref:System.String.Compare%2A> и исправляет второе нарушение, передавая текущий язык и региональные параметры в, <xref:System.String.ToLower%2A> так как `string3` отображается для пользователя.
+ В следующем примере `BadMethod` приводит к двум нарушениям этого правила. `GoodMethod` устраняет первое нарушение, передавая инвариантный язык и региональные параметры в <xref:System.String.Compare%2A> и исправляет второе нарушение, передавая текущий язык и региональные параметры в, <xref:System.String.ToLower%2A> так как `string3` отображается для пользователя.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -77,5 +77,5 @@ ms.locfileid: "85539090"
 ## <a name="related-rules"></a>Связанные правила
  [CA1304. Указывайте CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [NIB: использование класса CultureInfo](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

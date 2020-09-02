@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205143"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>Object_Type
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает тип объекта из средство оценки выражений.  
+Задает тип объекта из средства оценки выражений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -69,40 +69,40 @@ public enum enum_OBJECT_TYPE { 
   
 ## <a name="members"></a>Участники  
  OBJECT_TYPE_BOOLEAN  
- Указывает, что объект является логическое значение.  
+ Указывает, что объект является логическим значением.  
   
  OBJECT_TYPE_CHAR  
- Указывает, что объект является знаком.  
+ Указывает, что объект является символом.  
   
  OBJECT_TYPE_I1  
- Указывает, что объект является однобайтовое целое число со знаком.  
+ Указывает, что объект является однобайтовым целым числом со знаком.  
   
  OBJECT_TYPE_U1  
- Указывает, что объект является однобайтовое целое число без знака.  
+ Указывает, что объект является однобайтовым беззнаковым целым числом.  
   
  OBJECT_TYPE_I2  
- Указывает, что объект находится двухбайтовое целое число со знаком.  
+ Указывает, что объект является двухбайтовым целым числом со знаком.  
   
  OBJECT_TYPE_U2  
- Указывает, что объект находится двухбайтовое целое число без знака.  
+ Указывает, что объект представляет собой Двухбайтовое беззнаковое целое число.  
   
  OBJECT_TYPE_I4  
- Указывает, что объект является четырехбайтовое целое число со знаком.  
+ Указывает, что объект является четырехзначным целым числом со знаком.  
   
  OBJECT_TYPE_U4  
- Указывает, что объект является 4 байтовым беззнаковым целым числом.  
+ Указывает, что объект представляет собой целое число без знака длиной 4 байта.  
   
  OBJECT_TYPE_I8  
- Указывает, что объект является 8 байтовое целое число со знаком.  
+ Указывает, что объект является 8-байтовым целым числом со знаком.  
   
  OBJECT_TYPE_U8  
- Указывает, что объект является 8 байтовое целое число без знака.  
+ Указывает, что объект является 8-байтовым целым числом без знака.  
   
  OBJECT_TYPE_R4  
- Указывает, что объект является числом с плавающей запятой размером 4 байта.  
+ Указывает, что объект является четырьмя-байтовым числом с плавающей запятой.  
   
  OBJECT_TYPE_R8  
- Указывает, что объект является 8 байтовое число с плавающей запятой.  
+ Указывает, что объект является 8-байтовым числом с плавающей запятой.  
   
  OBJECT_TYPE_OBJECT  
  Указывает, что объект является объектом.  
@@ -113,17 +113,17 @@ public enum enum_OBJECT_TYPE { 
  OBJECT_TYPE_CLASS  
  Указывает, что объект является классом.  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) и [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) методы.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве аргумента методам [креатепримитивеобжект](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) и [креатеаррайобжект](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: ee.h  
+ Заголовок: ee. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
+ [креатепримитивеобжект](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

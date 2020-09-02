@@ -1,5 +1,5 @@
 ---
-title: С помощью шрифты и цвета | Документация Майкрософт
+title: Использование шрифтов и цветов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,63 +15,63 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177225"
 ---
 # <a name="using-fonts-and-colors"></a>Использование шрифтов и цветов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Обеспечивает поддержку использования шрифты и цвета для отображения текста.  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]Поддерживает использование шрифтов и цветов для вывода текста.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Общие сведения о шрифтах и цветах](../extensibility/font-and-color-overview.md)  
- Обсуждаются параметры шрифта и цвета текста в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE). Также понятия, категории и отображаемые элементы и описывается, как использовать атрибуты текста в пакеты VSPackage и базовым редактором.  
+ Обсуждаются параметры шрифта и цвета текста в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среде разработки (IDE). Также содержит основные понятия категорий и отображаемых элементов и описывает, как пакеты VSPackage и основной редактор используют текстовые атрибуты.  
   
  [Получение сведений о шрифте и цвете для цветового выделения текста](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- Содержит рекомендации по реализации цветовое выделение текста в пакеты VSPackage, управление **категории** отличное от **текстовый редактор**.  
+ Содержит рекомендации по реализации цветовой цветопередачи в пакетах VSPackage, которые управляют **категориями** , отличными от **текстового редактора**.  
   
  [Доступ к хранимым параметрам шрифтов и цветов](../extensibility/accessing-stored-font-and-color-settings.md)  
- Объясняет, как текущего шрифта и цвета параметры можно хранить, извлекать и применены.  
+ Объясняет, как можно сохранять, извлекать и применять текущие параметры шрифта и цвета.  
   
  [Реализация пользовательских категорий и отображаемых элементов](../extensibility/implementing-custom-categories-and-display-items.md)  
- Описывает основные шаги, которые можно создать и использовать свой собственный из окна **отображать элементы** и **категории** для поддержки отображения текста.  
+ Описывает основные шаги, по которым окно может создавать и использовать собственные **Отображаемые элементы** и **категории** для поддержки отображаемого текста.  
   
- Этот подход требует VSPackage для реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> интерфейс и соответствующие интерфейсы.  
+ Этот подход требует, чтобы пакет VSPackage реализовал <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> интерфейс и связанные интерфейсы.  
   
  [Практическое руководство. Доступ к встроенным шрифтам и цветовой схеме](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- Описывает, как определить категорию с помощью встроенных шрифты и цвета, и начала работы для системных шрифтов и цветов.  
+ Описывает, как определить и зарегистрировать категорию с помощью встроенных шрифтов и цветов, а также инициировать использование предоставленных системой шрифтов и цветов.  
   
 ## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- Предоставляет экземпляр `IVsFontAndColorDefaults` или <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> интерфейс, соответствующий элемент, указанный в **Показать параметры для** в списке **шрифты и цвета** странице **Параметры** диалоговое окно.  
+ Предоставляет экземпляр `IVsFontAndColorDefaults` или <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> интерфейс, соответствующий определенному элементу, указанному в списке **Показывать параметры для** в диалоговом окне **Параметры** на странице **шрифты и цвета** .  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- Разрешает VSPackage осуществлять поддержку интегрированной среды разработки **шрифты и цвета** страницы путем определения по умолчанию шрифты и цвета для окна или компонент пользовательского интерфейса.  
+ Позволяет пакету VSPackage поддерживать страницу « **шрифты и цвета** » IDE, определяя шрифты и цвета по умолчанию для окна или компонента пользовательского интерфейса.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- Предоставляет механизм, по которому пакет VSPackage, который обеспечивает поддержку шрифтов и цветов можно указать группу элементов отображения — суперкатегорию, которая представляет объединение двух или более категорий.  
+ Предоставляет механизм, с помощью которого пакет VSPackage, обеспечивающий поддержку шрифта и цвета, может указать группу отображаемых элементов — супер-категорию, представляющую объединение двух или более категорий.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- Позволяет VSPackage извлекать данные шрифта и цвета или сохраните его в реестр.  
+ Позволяет пакету VSPackage получать данные о шрифтах и цветах или сохранять их в реестре.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- Уведомляет VSPackages, в которых используется данные шрифта и цвета об изменениях в параметры шрифта и цвета.  
+ Уведомляет пакеты VSPackage, которые используют сведения о шрифтах и цвете для изменений в настройках шрифта и цвета.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- Предоставляет средства для работы с входных и выходных данных, который используется с помощью методов класса [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **шрифта и цвета** механизм.  
+ Предоставляет средства для работы с входными и выходными данными, которые используются методами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] механизма **шрифтов и цветов** .  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
  Контролирует кэширование параметров шрифта и цвета.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)  
- Описывает, как пакеты VSPackages могут использовать службы языка для настройки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактора.  
+ Описывает, как пакеты VSPackage могут использовать языковые службы для настройки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактора.  
   
  [Цветовая маркировка синтаксиса в специализированных редакторах](../extensibility/syntax-coloring-in-custom-editors.md)  
- Descries как [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] редактор использует языковые службы для реализации Цветовая подсветка синтаксиса.  
+ Дескриес, как [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Редактор использует языковые службы для реализации цветового выделения синтаксических конструкций.  
   
  [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Объясняется использование служб [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания элементов пользовательского интерфейса, соответствующих остальным частям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].

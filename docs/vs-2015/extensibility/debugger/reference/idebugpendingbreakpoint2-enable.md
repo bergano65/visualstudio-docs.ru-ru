@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Документация Майкрософт
+title: 'IDebugPendingBreakpoint2:: enable | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f5dc3c1e37a817c1c962d05745db33422008c550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194492"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Переключает состояние выполнения ожидающая точка останова.  
+Переключает включенное состояние ожидающей точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,18 +41,18 @@ int Enable( 
   
 #### <a name="parameters"></a>Параметры  
  `fEnable`  
- [in] Задайте ненулевое значение (`TRUE`) чтобы включить точку останова или до нуля (`FALSE`) для отключения.  
+ окне Задайте для параметра значение ненулевой ( `TRUE` ), чтобы включить ожидание точки останова, или нуль ( `FALSE` ) для отключения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает значение `E_BP_DELETED` , если точка останова была удалена.  
   
-## <a name="remarks"></a>Примечания  
- Если ожидающая точка останова включена или отключена, все точки останова, привязанный из его присваивается то же состояние.  
+## <a name="remarks"></a>Remarks  
+ Если отложенная точка останова включена или отключена, все точки останова, привязанные к ней, устанавливаются в одно и то же состояние.  
   
- Этот метод может вызываться столько раз, при необходимости, даже в том случае, если точка останова уже включен или отключен.  
+ Этот метод может вызываться столько раз, сколько необходимо, даже если точка останова уже включена или отключена.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, предоставляющего интерфейс [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
@@ -84,5 +84,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

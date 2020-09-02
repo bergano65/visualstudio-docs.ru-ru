@@ -1,5 +1,5 @@
 ---
-title: IDebugOutputStringEvent2::GetString | Документация Майкрософт
+title: 'IDebugOutputStringEvent2:: GetString | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab26e1b7094d387562fface2c2d0945b0dfe89b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194556"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает отображаемое сообщение.  
+Возвращает отображаемое сообщение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ int GetString( 
   
 #### <a name="parameters"></a>Параметры  
  `pbstrString`  
- [out] Возвращает отображаемое сообщение.  
+ заполняет Возвращает отображаемое сообщение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)

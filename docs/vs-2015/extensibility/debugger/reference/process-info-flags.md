@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88ff2a1da1f937fd4011932979bd95057eb40dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205056"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Описывающие или определяющие свойств процесса.  
+Описывает или задает свойства процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,29 +47,29 @@ enum enum_PROCESS_INFO_FLAGS { 
   
 ## <a name="members"></a>Участники  
  PIFLAG_SYSTEM_PROCESS  
- Указывает, что процесс — это системный процесс.  
+ Указывает, что процесс является системным процессом.  
   
  PIFLAG_DEBUGGER_ATTACHED  
- Указывает, что отладка процесса с помощью отладчика. Возможно, она [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладчика, или он может быть некоторые другие отладчика, например, WinDbg.  
+ Указывает, что процесс отлаживается отладчиком. Это может быть [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладчик или некоторый другой отладчик, например WinDbg.  
   
  PIFLAG_PROCESS_STOPPED  
- Указывает, что процесс будет остановлен. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] и более поздних версий.  
+ Указывает, что процесс остановлен. Допустимо, только если `PIFLAG_DEBUGGER_ATTACHED` также указано значение. Доступно в [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] и более поздних версиях.  
   
  PIFLAG_PROCESS_RUNNING  
- Указывает, что процесс выполняется. Действительно, только если `PIFLAG_DEBUGGER_ATTACHED` также указан. В [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] и более поздних версий.  
+ Указывает, что процесс выполняется. Допустимо, только если `PIFLAG_DEBUGGER_ATTACHED` также указано значение. Доступно в [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] и более поздних версиях.  
   
-## <a name="remarks"></a>Примечания  
- Используется для `Flags` членом [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `Flags` элемента структуры [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .  
   
- Эти флаги могут быть объединены с побитовым объектом `OR`.  
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

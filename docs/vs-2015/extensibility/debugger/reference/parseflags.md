@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Документация Майкрософт
+title: ПАРСЕФЛАГС | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a9ebe244f3e1c1f3f95508d6df979edee2d4aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205120"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает, как выполнить синтаксический анализ выражения.  
+Указывает способ синтаксического анализа выражения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,22 +48,22 @@ public enum enum_PARSEFLAGS { 
  Указывает, что выражение не является оператором.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- Указывает выражение для синтаксического анализа (и более поздней версии вычисляется) как адрес.  
+ Указывает, что выражение должно быть проанализировано (и понижено оценено) как адрес.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- Указывает, что выражение анализируется во время разработки (то есть, когда конструктор открыт).  
+ Указывает, что выражение анализируется во время разработки (то есть когда конструктор открыт).  
   
-## <a name="remarks"></a>Примечания  
- Переданный в качестве параметра для [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) и [проанализировать](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) методы.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве параметра методам [парсетекст](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) и [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
+ [парсетекст](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [Анализ](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

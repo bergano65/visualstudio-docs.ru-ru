@@ -1,5 +1,5 @@
 ---
-title: Элемент Menus | Документация Майкрософт
+title: Элемент menus | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10e4a865774798792a386a4736058b0a5068db85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194243"
 ---
 # <a name="menus-element"></a>Элемент Menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Определяет, меню и панелей инструментов, реализующий VSPackage.  
+Определяет все меню и панели инструментов, реализуемые пакетом VSPackage.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,20 +39,20 @@ ms.locfileid: "68194243"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент Menus](../extensibility/menus-element.md)|Определяет, меню и панелей инструментов, реализующий VSPackage.|  
-|[Элемент Menu](../extensibility/menu-element.md)|Представляет один меню или панели инструментов.|  
+|[Элемент Menus](../extensibility/menus-element.md)|Определяет все меню и панели инструментов, реализуемые пакетом VSPackage.|  
+|[Элемент Menu](../extensibility/menu-element.md)|Представляет одно меню или панель инструментов.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд в VSPackage.|  
+|[Commands, элемент](../extensibility/commands-element.md)|Представляет коллекцию команд в VSPackage.|  
   
 ## <a name="example"></a>Пример  
   
@@ -79,6 +79,6 @@ ms.locfileid: "68194243"
 <Commands>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>См. также:  
+ [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

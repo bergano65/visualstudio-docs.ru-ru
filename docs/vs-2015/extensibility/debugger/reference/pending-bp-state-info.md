@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af22ef2d8a77b8c44b9e494736630480a0614162
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205074"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Содержит сведения о состоянии точки останова, которая готова для привязки к расположение кода.  
+Содержит сведения о состоянии точки останова, готовой к привязке к расположению кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,23 +41,23 @@ public struct PENDING_BP_STATE_INFO { 
 ```  
   
 ## <a name="members"></a>Участники  
- state  
- Значение из [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) перечисление, указывающее состояние ожидающая точка останова.  
+ Состояние  
+ Значение из перечисления [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) , указывающее состояние ожидающей точки останова.  
   
- флаги  
- Сочетание флагов из [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) перечисление, указывающее, виртуализируется ли точка останова.  
+ flags  
+ Сочетание флагов из перечисления [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) , которое указывает, является ли точка останова виртуализированной.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) метод, где он заполняется.  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается в [метод WebMethod](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) , где он заполнен.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)   
  [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   

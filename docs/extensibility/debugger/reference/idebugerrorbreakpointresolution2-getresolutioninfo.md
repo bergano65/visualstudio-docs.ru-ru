@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorОшибкаРазрешение2:GetResolutionInfo Документы Майкрософт
+title: 'IDebugErrorBreakpointResolution2:: Жетресолутионинфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730033"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-Получает информацию об разрешении ошибок точки разрыва.
+Возвращает сведения о разрешении ошибки точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Сочетание флагов [из BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисления, определяющих, какие поля должны быть `pErrorResolutionInfo` заполнены.
+окне Сочетание флагов из перечисления [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) , определяющих поля, которые должны `pErrorResolutionInfo` быть заполнены.
 
 `pErrorResolutionInfo`\
-(в, вне) Структура [BP_ERROR_RESOLUTION_INFO,](../../../extensibility/debugger/reference/bp-error-resolution-info.md) заполненная описанием разрешения точки разрыва.
+[вход, выход] Структура [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) , которая заполняется описанием разрешения точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-Следующий пример реализует этот метод `CDebugErrorBreakpointResolution` для простого объекта, который предоставляет интерфейс [IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+В следующем примере этот метод реализуется для простого `CDebugErrorBreakpointResolution` объекта, предоставляющего интерфейс [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) .
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
@@ -152,7 +152,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)

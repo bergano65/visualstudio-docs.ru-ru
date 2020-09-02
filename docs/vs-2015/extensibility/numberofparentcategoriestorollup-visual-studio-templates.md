@@ -1,5 +1,5 @@
 ---
-title: Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент numberofparentcategoriestorollup (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 278d8537ee253d8c79024d5e866befa1d65ded0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194202"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.  
+Указывает число родительских категорий, которые будут отображать шаблон в диалоговом окне **Новый проект** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Элемент NumberOfParentCategoriesToRollUp >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<NumberOfParentCategoriesToRollUp>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,15 +53,15 @@ ms.locfileid: "68194202"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
 ## <a name="text-value"></a>Текстовое значение  
- `integer` Значение является обязательным.  
+ `integer`Требуется значение.  
   
- Это значение указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.  
+ Это значение указывает количество родительских категорий, которые будут отображать шаблон в диалоговом окне **Новый проект** .  
   
-## <a name="remarks"></a>Примечания  
- `NumberOfParentCategoriesToRollUp` — это необязательный элемент.  
+## <a name="remarks"></a>Remarks  
+ Параметр `NumberOfParentCategoriesToRollUp` является необязательным элементом.  
   
 ## <a name="example"></a>Пример  
- В этом примере показаны метаданные для [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения Windows. Если шаблон с этими метаданными помещается двухуровневые папки ниже верхнего уровня [!INCLUDE[csprcs](../includes/csprcs-md.md)] узел, шаблон будет отображаться в узле верхнего уровня в **новый проект** диалоговое окно. Если `NumberOfParentCategoriesToRollUp` не задано, шаблон появляется только в узле в котором он расположен физически.  
+ В этом примере показаны метаданные для [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения Windows. Если шаблон с этими метаданными размещается на двух уровнях папок под узлом верхнего уровня [!INCLUDE[csprcs](../includes/csprcs-md.md)] , шаблон будет отображаться в узле верхнего уровня диалогового окна **Новый проект** . Если параметр `NumberOfParentCategoriesToRollUp` не задан, шаблон отображается только на узле, где он физически расположен.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ ms.locfileid: "68194202"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

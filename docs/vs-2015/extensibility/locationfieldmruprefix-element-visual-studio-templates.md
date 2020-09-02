@@ -1,5 +1,5 @@
 ---
-title: Элемент LocationFieldMRUPrefix (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Локатионфиелдмрупрефикс (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0579a6783debf261290538e3f3346640d58e415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194442"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Элемент LocationFieldMRUPrefix (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает пути недавно использованных (MRU) в **новый проект** и **Добавление нового элемента** диалоговое окно.  
+Указывает недавно использованные пути (MRU) в диалоговом окне **Новый проект** и **Добавление нового элемента** .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,9 +46,9 @@ ms.locfileid: "68194442"
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## <a name="remarks"></a>Примечания  
- Этот элемент можно использовать только для шаблонов, полученных через [!INCLUDE[vsipprvsip](../includes/vsipprvsip-md.md)].  
+## <a name="remarks"></a>Remarks  
+ Этот элемент следует использовать только для шаблонов, созданных с помощью [!INCLUDE[vsipprvsip](../includes/vsipprvsip-md.md)] .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

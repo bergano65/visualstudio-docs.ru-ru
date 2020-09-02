@@ -12,20 +12,20 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90521b5ea05aae2f54e56f21b65933a93580da85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194065"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage - элемент (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Задает изображение для предварительного просмотра, в качестве имени файла, для предварительного просмотра изображения, которое будет отображаться в любом **новый проект** или **Добавление нового элемента** диалоговое окно.  
+Указывает изображение предварительного просмотра в виде имени файла для изображения предварительного просмотра, которое будет отображаться в диалоговом окне **Создание проекта** или **Добавление нового элемента** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PreviewImage >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,16 +46,16 @@ ms.locfileid: "68194065"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в диалоговом окне " **Новый проект** " или " **Добавление нового элемента** ".|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть строка, представляющая имя файла.  
+ Текст должен быть строкой, представляющей имя файла.  
   
-## <a name="remarks"></a>Примечания  
- `PreviewImage` — это необязательный элемент.  
+## <a name="remarks"></a>Remarks  
+ Параметр `PreviewImage` является необязательным элементом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
