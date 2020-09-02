@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846182"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Диалоговое окно «Выбор условия» (для прежних версий)
-В этом разделе описывается использование диалогового окна **Выбор условия** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Выбор условия** в устаревшей версии [!INCLUDE[wfd1](../includes/wfd1-md.md)] . [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Диалоговое окно **Выбор условия** используется для выбора условия декларативного правила, назначаемого свойству условия действия. Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:
 
@@ -37,12 +37,12 @@ ms.locfileid: "75846182"
 
   В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна « **Выбор условия** ».
 
-|Элемент интерфейса|Описание|
+|Элемент пользовательского интерфейса|Описание|
 |----------------|-----------------|
 |**Новые функции...**|Нажмите, чтобы открыть [диалоговое окно Редактор условий правил (устаревшее)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) , чтобы создать новое условие правила.|
 |**Изменить...**|Нажмите, чтобы открыть [диалоговое окно Редактор условий правил (устаревшее)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) , чтобы изменить выбранное условие правила.|
 |**Переименовать...**|Щелкните, чтобы открыть диалоговое окно, используемое для переименования выбранного условия правила.|
-|**Удалить**|Щелкните, чтобы удалить выбранное условие правила.|
+|**Удаление**|Щелкните, чтобы удалить выбранное условие правила.|
 |**Предварительный просмотр условия**|Отображает выражение условия для выбранного условия правила.|
 |**OK**|Щелкните, чтобы назначить выбранное условие правила условию действия.|
 
@@ -50,5 +50,5 @@ ms.locfileid: "75846182"
 
  Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Диалоговое окно редактора условий правил (устаревшая)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [как создать условие декларативного правила (устаревшее)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [с помощью условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx) , использующих действие [ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) с помощью действия [IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) , используя действие [ReplicatorActivity](https://msdn2.microsoft.com/library/bb628544.aspx) с помощью конструктора [действий WhileActivity](https://msdn2.microsoft.com/library/bb628552.aspx) [для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md) .

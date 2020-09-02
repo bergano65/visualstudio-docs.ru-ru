@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Документация Майкрософт
+title: 'IDebugBinder3:: GetTypeArguments | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,15 +13,15 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f7b6038013370ad85a665d9899d367e621aa991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192280"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
-Этот метод извлекает список типов аргументов, связанный с данным объектом.
+Этот метод получает список типов аргументов, связанных с этим объектом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,27 +47,27 @@ int GetTypeArguments(
 
  `skip`
 
- [in] Число полей, чтобы пропустить перед началом работы с типами аргументов.
+ окне Число полей, которые необходимо пропустить перед получением типов аргументов.
 
  `count`
 
- [in] Число возвращаемых полей аргумент (также указывает размер `ppFields` массива).
+ окне Число возвращаемых полей аргументов (также определяет размер `ppFields` массива).
 
  `ppFields`
 
- [in, out] Массив полей, которые будут заполнены при возвращении этого метода.
+ [вход, выход] Массив полей, которые будут заполнены при возврате этого метода.
 
  `pFetched`
 
- [out] Количество полей типа аргумента фактически возвращенных (необязательно).
+ заполняет Число фактически возвращаемых полей типа аргумента (необязательно).
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Количество типов аргументов можно получить с помощью заранее [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+## <a name="remarks"></a>Remarks
+ Число типов аргументов можно получить заранее с помощью [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

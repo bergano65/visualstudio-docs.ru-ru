@@ -9,10 +9,10 @@ caps.latest.revision: 8
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657186"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
@@ -41,7 +41,7 @@ ms.locfileid: "72657186"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Атрибуты, используемые для установки порядка вызовов
- Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Составляющие модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Анатомия модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Для сборок
  Методы AssemblyInitialize и AssemblyCleanup вызываются сразу после загрузки сборки и непосредственно перед ее выгрузкой.
@@ -64,7 +64,7 @@ ms.locfileid: "72657186"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Атрибуты, используемые для идентификации тестовых классов и методов
- Каждый тестовый класс должен иметь атрибут TestClass, а каждый тестовый метод — атрибут TestMethod. Дополнительные сведения см. в разделе [Составляющие модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Каждый тестовый класс должен иметь атрибут TestClass, а каждый тестовый метод — атрибут TestMethod. Дополнительные сведения см. в разделе [Анатомия модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -124,6 +124,6 @@ ms.locfileid: "72657186"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547177"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Как заполнить документы данными из объектов
@@ -60,7 +60,7 @@ ms.locfileid: "85547177"
 
 1. Создайте в коде экземпляр типа объекта, связанного с источником данных.
 
-2. Создайте экземпляр класса <xref:System.Windows.Forms.BindingSource>.
+2. Создайте экземпляр <xref:System.Windows.Forms.BindingSource>.
 
 3. Присвойте экземпляр источника данных свойству <xref:System.Windows.Forms.BindingSource.DataSource%2A> объекта <xref:System.Windows.Forms.BindingSource>.
 

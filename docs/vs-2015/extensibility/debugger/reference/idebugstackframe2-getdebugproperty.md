@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty | Документация Майкрософт
+title: 'IDebugStackFrame2:: Жетдебугпроперти | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 457b8ba5876387ff621dc2ac96adf32524fcbb7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164752"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает описание свойства кадр стека.  
+Возвращает описание свойств кадра стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int GetDebugProperty ( 
   
 #### <a name="parameters"></a>Параметры  
  `ppDebugProp`  
- [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , описывающий свойства этого кадра стека.  
+ заполняет Возвращает объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , описывающий свойства этого кадра стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Вызов [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) метод с соответствующими фильтрами можно получить локальные переменные, параметры метода, регистры и указатель «this», связанный с этим кадром стека.  
+## <a name="remarks"></a>Remarks  
+ Вызов метода [енумчилдрен](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) с соответствующими фильтрами может получить локальные переменные, параметры метода, регистры и указатель "this", связанный с кадром стека.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

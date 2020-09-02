@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC Документы Майкрософт
+title: JMC_CODE_SPEC | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714744"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
-Эта структура используется для настройки информации JustMyCode для модуля.
+Эта структура используется для задания сведений Жустмикоде для модуля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,21 +43,21 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>Участники
 `fIsUserCode`\
-Ненулевой`TRUE`( ) если модуль должен считаться кодом пользователя; в противном`FALSE`случае, ноль ( ), если модуль должен рассматриваться как внешний код и не быть отдипываться.
+Ненулевое значение ( `TRUE` ), если модуль должен считаться пользовательским кодом; в противном случае — нуль ( `FALSE` ), если модуль должен обрабатываться как внешний код, а не для отладки.
 
 `bstrModuleName`\
-Название модуля, о котором идет речь.
+Имя рассматриваемого модуля.
 
-## <a name="remarks"></a>Примечания
-Эта структура передается как список таких структур методу [SetJustMyCodeState.](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)
+## <a name="remarks"></a>Remarks
+Эта структура передается в качестве списка таких структур в метод [сетжустмикодестате](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

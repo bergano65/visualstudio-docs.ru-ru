@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject Документы Майкрософт
+title: 'Идебугфунктионобжект:: Креатестрингобжект | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728514"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
-Создает объект строки.
+Создает строковый объект.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>Параметры
 `pcstrString`\
-(в) Значение строки для объекта строки.
+окне Строковое значение для объекта String.
 
 `ppObject`\
-(ваут) Возвращает объект [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий вновь созданный объект строки.
+заполняет Возвращает объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Вызовите этот метод, чтобы создать объект, представляющий строку, которая является параметром для функции, представленной интерфейсом [IDebugFunction.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+## <a name="remarks"></a>Remarks
+ Вызовите этот метод, чтобы создать объект, представляющий строку, которая является параметром функции, представленной интерфейсом [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

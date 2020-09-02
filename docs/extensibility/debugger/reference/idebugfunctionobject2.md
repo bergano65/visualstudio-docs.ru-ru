@@ -1,5 +1,5 @@
 ---
-title: IDebugФункцияОбъект2 Документы Майкрософт
+title: IDebugFunctionObject2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728425"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Представляет функцию и улучшает интерфейс [IDebugFunction.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Представляет функцию и расширяет интерфейс [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,30 +29,30 @@ ms.locfileid: "80728425"
 IDebugFunctionObject2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Оценщик выражения (EE) реализует этот интерфейс для представления функции.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Средство оценки выражений (EE) реализует этот интерфейс для представления функции.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Методы этого интерфейса откладывают методы **IDebugFunction** следующим образом:
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Методы этого интерфейса откладываются от **идебугфунктионобжект** следующими способами:
 
-- Метод **IDebugEvaluate** принимает флаги.
+- Метод **идебужевалуате** принимает флаги.
 
-- Метод **CreateObject** принимает флаги и тайм-аут.
+- Метод **CreateObject** принимает флаги и время ожидания.
 
-- Метод **CreateStringObjectWithLength** занимает длину.
+- Метод **креатестрингобжектвисленгс** имеет длину.
 
 ## <a name="methods"></a>Методы
- Этот интерфейс реализует следующие методы:
+ Этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Создает объект, который использует конструктор, учитывая настройки флага оценки и значение тайм-аута.|
-|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Создает объект строки, который имеет заданную длину.|
-|[Оценка](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Вызывает функцию и возвращает полученное значение в качестве объекта.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Создает объект, использующий конструктор заданных параметров флагов оценки и значение времени ожидания.|
+|[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Создает строковый объект, имеющий указанную длину.|
+|[Вычислить](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Вызывает функцию и возвращает результирующее значение в виде объекта.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Ee.h
+ Заголовок: ee. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

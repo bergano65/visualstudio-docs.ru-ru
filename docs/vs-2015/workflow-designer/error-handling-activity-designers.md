@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b829f98597afb6ab1430d61022306ec840decb12
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656746"
 ---
 # <a name="error-handling-activity-designers"></a>Конструкторы действий обработки ошибок
 Конструкторы операций обработки ошибок используются для управления обработкой ошибок в [!INCLUDE[wfd1](../includes/wfd1-md.md)]. В подразделах этого раздела описывается использование действия [!INCLUDE[wfd2](../includes/wfd2-md.md)] и конструкторов шаблонов.
 
-## <a name="in-this-section"></a>Содержание
- [Выдать исключение](../workflow-designer/rethrow-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.Rethrow>.
+## <a name="in-this-section"></a>в этом разделе
+ [Выдать исключение](../workflow-designer/rethrow-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.Rethrow> действия.
 
- [Создать исключение](../workflow-designer/throw-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.Throw>.
+ [Создать исключение](../workflow-designer/throw-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.Throw> действия.
 
- [TryCatch](../workflow-designer/trycatch-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.TryCatch>.
+ [TryCatch](../workflow-designer/trycatch-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.TryCatch> действия.
 
 ## <a name="reference"></a>Справочник
 

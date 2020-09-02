@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845577"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
@@ -87,11 +87,11 @@ ms.locfileid: "75845577"
 
 6. Протестируйте фрагмент, открыв проект Visual Basic и открыв файл кода. В файле щелкните **Вставить фрагмент** в контекстном меню, а затем — **Мои фрагменты кода**. Вы должны увидеть фрагмент с именем **Мой фрагмента кода Visual Basic**. Дважды щелкните его.
 
-7. Вы должны увидеть `Console.WriteLine("Hello, World!")`, вставленные в код.
+7. Вы должны увидеть `Console.WriteLine("Hello, World!")` вставленный код.
 
 ### <a name="adding-description-and-shortcut-fields"></a>Добавление полей Description и Shortcut
 
-1. Поля Description предоставляют дополнительные сведения о вашем фрагменте кода при просмотре в диспетчере фрагментов кода. Ярлык — это тег, который пользователи могут вводить для вставки фрагмента. Измените добавленный фрагмент, открыв файл `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Поля Description предоставляют дополнительные сведения о вашем фрагменте кода при просмотре в диспетчере фрагментов кода. Ярлык — это тег, который пользователи могут вводить для вставки фрагмента. Измените добавленный фрагмент, открыв файл `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` .
 
 2. Добавьте элементы Author и Description в элемент Header и заполните их.
 
@@ -126,7 +126,7 @@ ms.locfileid: "75845577"
 
 ### <a name="to-add-references-and-imports"></a>Добавление ссылок и объявлений импорта
 
-1. С помощью Visual Basic фрагментов можно добавить ссылку на проект, используя элемент References, и добавить объявление Imports с помощью элемента Imports. (Фрагменты кода на других языках не имеют этой функции.) Например, при изменении `Console.WriteLine` в примере кода для `MessageBox.Show`может потребоваться добавить сборку System. Windows. Forms. dll в проект.
+1. С помощью Visual Basic фрагментов можно добавить ссылку на проект, используя элемент References, и добавить объявление Imports с помощью элемента Imports. (Фрагменты кода на других языках не имеют этой функции.) Например, если изменить `Console.WriteLine` в примере кода на `MessageBox.Show` , может потребоваться добавить сборку System.Windows.Forms.dll в проект.
 
 2. Откройте фрагмент.
 
@@ -261,5 +261,5 @@ ms.locfileid: "75845577"
 
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

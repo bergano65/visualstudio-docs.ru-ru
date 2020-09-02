@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657138"
 ---
 # <a name="using-the-assert-classes"></a>Использование классов Assert
@@ -59,5 +59,5 @@ ms.locfileid: "72657138"
 
  Если необходимо, чтобы метод теста проверял, является ли исключение, возникающее в этом методе, на самом деле требуемым исключением, включите в метод теста атрибут ExpectedExceptionAttribute.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [Создание и запуск модульных тестов для существующего кода](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

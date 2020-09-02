@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo | Документация Майкрософт
+title: IDebugStackFrame2::/info | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6ebfda26b58bb1e7048b969133fa1672edad8a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164781"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
@@ -44,18 +44,18 @@ int GetInfo ( 
   
 #### <a name="parameters"></a>Параметры  
  `dwFieldSpec`  
- [in] Сочетание флагов из [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, указывающее, какие поля `pFrameInfo` параметра должны быть заполнены.  
+ окне Сочетание флагов из перечисления [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , которое указывает, какие поля параметра должны `pFrameInfo` быть заполнены.  
   
  `nRadix`  
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.  
+ окне Основание системы счисления, используемое при форматировании любой числовой информации.  
   
  `pFrameInfo`  
- [out] Объект [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры, который заполняется описание кадра стека.  
+ заполняет Структура [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) , которая заполняется описанием кадра стека.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

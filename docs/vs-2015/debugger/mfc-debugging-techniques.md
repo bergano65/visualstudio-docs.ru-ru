@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c795e978de3911b3c5e815583c32e878fd7b173
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696903"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
@@ -39,7 +39,7 @@ ms.locfileid: "65696903"
 
 Эти методы могут пригодиться при отладке программы MFC.  
   
-## <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Функция AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [Макрос TRACE](#BKMK_The_TRACE_macro)  
@@ -64,7 +64,7 @@ ms.locfileid: "65696903"
   
   - [Сборка приложения MFC с отладочной информацией для избранных модулей](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-## <a name="BKMK_AfxDebugBreak"></a> Функция AfxDebugBreak  
+## <a name="afxdebugbreak"></a><a name="BKMK_AfxDebugBreak"></a> Функция AfxDebugBreak  
  MFC предоставляет особую функцию [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) для жесткого задания точек останова в исходном коде:  
   
 ```  
@@ -84,7 +84,7 @@ _asm int 3
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_The_TRACE_macro"></a> Макрос TRACE  
+## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> Макрос TRACE  
  Чтобы сообщения программы отображались в [окне "Вывод"](../ide/reference/output-window.md)отладчика, можно применить макрос [ATLTRACE](https://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) или MFC-макрос [TRACE](https://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) . Подобно [утверждениям](../debugger/c-cpp-assertions.md), макросы трассировки активны только в отладочной версии программы, а в окончательной версии они исчезают после компиляции.  
   
  Следующие примеры показывают несколько способов применения макроса **TRACE** . Подобно `printf`макрос **TRACE** может обрабатывать несколько аргументов.  
@@ -117,10 +117,10 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Memory_leak_detection_in_MFC"></a> Обнаружение утечек памяти в MFC  
+## <a name="detecting-memory-leaks-in-mfc"></a><a name="BKMK_Memory_leak_detection_in_MFC"></a> Обнаружение утечек памяти в MFC  
  MFC предоставляет классы и функции, позволяющие обнаруживать выделенную, но не освобожденную память.  
   
-### <a name="BKMK_Tracking_memory_allocations"></a> Отслеживание операций выделения памяти  
+### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Отслеживание операций выделения памяти  
  В MFC вместо оператора [new](https://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) для обнаружения утечек памяти можно применять макрос **DEBUG_NEW** . В отладочной версии программы `DEBUG_NEW` отслеживает имя файла и номер строки для каждого объекта, которому выделяется память. При компиляции окончательной версии программы `DEBUG_NEW` становится простой операцией **new** без данных об имени файла и номере строки. Таким образом, окончательная версия программы выполняется с необходимой скоростью.  
   
  Чтобы не переписывать программу, используя `DEBUG_NEW` вместо **new**, можно в исходных файлах определить данный макрос:  
@@ -135,7 +135,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Enabling_memory_diagnostics"></a> Включение диагностики памяти  
+### <a name="enabling-memory-diagnostics"></a><a name="BKMK_Enabling_memory_diagnostics"></a> Включение диагностики памяти  
  Прежде чем воспользоваться возможностями диагностики памяти, нужно включить диагностическую трассировку.  
   
  **Включение или выключение диагностики памяти**  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   [Содержание раздела](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_memory_snapshots"></a> Получение снимков памяти  
+### <a name="taking-memory-snapshots"></a><a name="BKMK_Taking_memory_snapshots"></a> Получение снимков памяти  
   
 1. Создайте объект [CMemoryState](https://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) и вызовите функцию-член [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . В результате будет создан первый снимок памяти.  
   
@@ -191,13 +191,13 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Обратите внимание, что операторы проверки памяти заключаются в блоки `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** , поэтому они компилируются только в отладочных версиях программы.  
+    Обратите внимание, что операторы проверки памяти заключаются в квадратные `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) /  **#endif** блоки, чтобы они были скомпилированы только в отладочных версиях программы.  
   
     Теперь, когда известно о наличии утечки, можно применить другую функцию-член — [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , по которой можно найти конкретное место утечки.  
   
    [Содержание раздела](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Viewing_memory_statistics"></a> Просмотр статистики памяти  
+### <a name="viewing-memory-statistics"></a><a name="BKMK_Viewing_memory_statistics"></a> Просмотр статистики памяти  
  Функция [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) просматривает два объекта-состояния памяти и определяет, какие объекты не были освобождены из кучи между начальным и конечным состоянием. После того как сделаны снимки памяти и выполнено их сравнение с помощью функции `CMemoryState::Difference`, можно вызвать функцию [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) и получить сведения о неосвобожденных объектах.  
   
  Рассмотрим следующий пример.  
@@ -232,8 +232,8 @@ Total allocations: 67 bytes
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_object_dumps"></a> Получение дампов объектов  
- В программе MFC можно использовать [CMemoryState::DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) для помещения в дамп описания всех объектов в куче, которые не были освобождены. `DumpAllObjectsSince` помещает в дамп все объекты, размещенные с момента последней проверки состояния памяти [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Если вызова `Checkpoint` не было, `DumpAllObjectsSince` отображает все объекты и не-объекты, находящиеся в памяти на данный момент.  
+### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> Получение дампов объектов  
+ В программе MFC можно использовать функцию [CMemoryState::DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) для помещения в дамп описания всех объектов кучи, которые не были освобождены. `DumpAllObjectsSince` помещает в дамп все объекты, размещенные с момента последней проверки состояния памяти [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Если вызова `Checkpoint` не было, `DumpAllObjectsSince` отображает все объекты и не-объекты, находящиеся в памяти на данный момент.  
   
 > [!NOTE]
 > Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
@@ -278,7 +278,7 @@ Phone #: 581-0215
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Interpreting_memory_dumps"></a> Интерпретация дампов памяти  
+#### <a name="interpreting-memory-dumps"></a><a name="BKMK_Interpreting_memory_dumps"></a> Интерпретация дампов памяти  
  Рассмотрим этот дамп объекта более подробно:  
   
 ```  
@@ -361,7 +361,7 @@ Phone #: 581-0215
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Customizing_object_dumps"></a> Настройка дампов объектов  
+#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> Настройка дампов объектов  
  Если класс наследуется от [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), можно переопределить функцию-член `Dump` , чтобы получить больше сведений при использовании [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) для вывода объектов в [Окне вывода](../ide/reference/output-window.md).  
   
  Функция `Dump` записывает текстовое представление переменных-членов объекта в контекст дампа ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Контекст дампа подобен потоку ввода-вывода. Для отправки данных в **<<** &lt;&lt; `CDumpContext`.  
@@ -416,18 +416,18 @@ pMyPerson->Dump( afxDump );
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Сокращение размера отладочной сборки MFC  
+## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Сокращение размера отладочной сборки MFC  
  Отладочная информация для большого MFC-приложения может занимать значительное дисковое пространство. Для уменьшения размера можно использовать одну из описанных ниже процедур.  
   
-1. Перестройте библиотеки MFC с помощью [/Z7, / Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) параметр, а не **/Z7**. С помощью этих параметров строится один файл программной базы данных (PDB), содержащий отладочную информацию для всей библиотеки, тем самым сохраняется место на диске.  
+1. Перестройте библиотеки MFC, используя параметр [/Z7, /Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) вместо **/Z7**. С помощью этих параметров строится один файл программной базы данных (PDB), содержащий отладочную информацию для всей библиотеки, тем самым сохраняется место на диске.  
   
-2. Перестройте библиотеки MFC без отладочной информации (не [/Z7, / Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) параметр). В этом случае из-за отсутствия отладочной информации использовать большинство возможностей отладчика внутри кода библиотеки MFC не удастся, но, так как библиотеки MFC уже отлажены, это не будет проблемой.  
+2. Перестройте библиотеки MFC, не указывая отладочную информацию (не используя параметр [/Z7, /Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)). В этом случае из-за отсутствия отладочной информации использовать большинство возможностей отладчика внутри кода библиотеки MFC не удастся, но, так как библиотеки MFC уже отлажены, это не будет проблемой.  
   
 3. Соберите собственное приложение с отладочной информацией только для избранных модулей, используя описанную ниже процедуру.  
   
    [Содержание раздела](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Сборка приложения MFC с отладочной информацией для избранных модулей  
+### <a name="building-an-mfc-app-with-debug-information-for-selected-modules"></a><a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Сборка приложения MFC с отладочной информацией для избранных модулей  
  Построение избранных модулей с отладочными библиотеками MFC позволяет использовать пошаговое выполнение и другие отладочные функции в этих модулях. Эта процедура использует и отладочный, и окончательный режимы сборочного файла проекта Visual C++, таким образом создавая необходимость изменений, описанных ниже (и также вынуждая "перестроить все", когда потребуется построение окончательной версии).  
   
 1. Выберите проект в Обозревателе решений.  
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
 3. Сначала создайте новую конфигурацию проекта.  
   
-   1. В диалоговом окне **Страницы свойств \<Project>** нажмите кнопку **Диспетчер конфигураций**.  
+   1. В диалоговом окне ** \<Project> страницы свойств** нажмите кнопку **Configuration Manager** .  
   
-   2. В диалоговом окне [Диспетчер конфигураций](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)найдите нужный проект в таблице. В столбце **Конфигурация** выберите **\<Создать...>** .  
+   2. В диалоговом окне [Диспетчер конфигураций](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)найдите нужный проект в таблице. В столбце **Конфигурация** выберите **\<New...>** .  
   
    3. В диалоговом окне [Создание конфигурации проекта](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)введите имя новой конфигурации, например, "Неполная отладка" в поле **Имя конфигурации проекта** .  
   
@@ -478,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6. Щелкните **Формат отладочной информации** и выберите нужный параметр (обычно **/ZI**.  
   
-   7. Если приложение создано с использованием мастера создания приложений или имеет предкомпилированные заголовки, следует эти заголовки выключить или перекомпилировать их перед компиляцией остальных модулей. Иначе будет получено предупреждение C4650 и сообщение об ошибке C2855. Предкомпилированные заголовки можно отключить, изменив параметр **Создать/Использовать предкомпилированные заголовки** в диалоговом окне **Свойства \<Проект>** (папка **Свойства конфигурации**, вложенная папка **C/C++** , категория **Предкомпилированные заголовки**).  
+   7. Если приложение создано с использованием мастера создания приложений или имеет предкомпилированные заголовки, следует эти заголовки выключить или перекомпилировать их перед компиляцией остальных модулей. Иначе будет получено предупреждение C4650 и сообщение об ошибке C2855. Вы можете отключить предкомпилированные заголовки, изменив параметр **создать или использовать предкомпилированные заголовки** в диалоговом окне ** \<Project> Свойства** (папка**Свойства конфигурации** , вложенная папка **C/C++** , категория **предкомпилированных заголовков** ).  
   
 7. В меню **Построение** выберите **Построить** для перестройки устаревших файлов проекта.  
   
@@ -486,5 +486,5 @@ pMyPerson->Dump( afxDump );
   
    [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка Visual C++](../debugger/debugging-native-code.md)

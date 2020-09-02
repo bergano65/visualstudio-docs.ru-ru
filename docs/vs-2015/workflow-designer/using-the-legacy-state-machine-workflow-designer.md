@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846008"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Использование конструктора рабочих процессов конечного автомата для прежних версий
-При создании нового проекта рабочего процесса конечного автомата в [!INCLUDE[vs2010](../includes/vs2010-md.md)], предназначенном для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], можно выбрать шаблон проекта " **приложение-консоль рабочего процесса конечного** автомата" или "устаревший проект **библиотеки рабочих процессов конечного автомата** ". Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Дополнительные сведения о шаблонах проектов устаревших автоматов см. в разделе [как создать консольные приложения для рабочих процессов конечного автомата (прежние версии)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как создать библиотеку рабочих процессов конечного автомата (устаревшая)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+При создании нового проекта рабочего процесса конечного автомата в [!INCLUDE[vs2010](../includes/vs2010-md.md)] , который предназначен для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , можно выбрать использование **консольного приложения рабочего процесса конечного** автомата или шаблона проекта устаревшей версии **библиотеки рабочих процессов конечного автомата** . Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии. Дополнительные сведения о шаблонах проектов устаревших автоматов см. в разделе [как создать консольные приложения для рабочих процессов конечного автомата (прежние версии)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) и [как создать библиотеку рабочих процессов конечного автомата (устаревшая)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
  Рабочий процесс конечного автомата состоит из набора состояний. Одно состояние обозначается как начальное состояние. Каждое состояние может получить определенный набор событий. В зависимости от события, может быть сделан переход в другое состояние. Рабочий процесс конечного автомата может иметь конечное состояние. При переходе в конечное состояние рабочий процесс завершается.
 
@@ -57,5 +57,5 @@ ms.locfileid: "75846008"
 >
 > Чтобы открыть окно " **Структура документа** ", в меню **вид** наведите указатель на пункт **другие окна**, а затем выберите **Структура документа**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как создать консольные приложения для рабочих процессов конечного автомата (прежние версии)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) как создать рабочие процессы конечного автомата [(устаревшие) для](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [рабочих процессов](https://msdn2.microsoft.com/library/bb628601.aspx) конечных автоматов с помощью действия [StateActivity](https://msdn2.microsoft.com/library/bb628612.aspx) с помощью действия [StateInitializationActivity](https://msdn2.microsoft.com/library/bb675253.aspx) , используя действие [StateFinalizationActivity](https://msdn2.microsoft.com/library/bb675278.aspx) с действием [SetStateActivity](https://msdn2.microsoft.com/library/bb628469.aspx) с действием [EventDrivenActivity](https://msdn2.microsoft.com/library/bb628466.aspx)

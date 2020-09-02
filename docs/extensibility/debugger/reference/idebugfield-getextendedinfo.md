@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo Документы Майкрософт
+title: 'Идебугфиелд:: Жетекстендединфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728874"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Этот метод получает расширенную информацию о поле.
+Этот метод получает расширенные сведения о поле.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>Параметры
 `guidExtendedInfo`\
-(в) Выбирает информацию, подаваемую. Допустимые значения:
+окне Выбирает возвращаемые данные. Допустимые значения:
 
 |Значение|Описание|
 |-----------|-----------------|
-|`guidConstantValue`|Значение как последовательность байтов.|
-|`guidConstantType`|Тип как подпись типа.|
+|`guidConstantValue`|Значение в виде последовательности байтов.|
+|`guidConstantType`|Тип в виде сигнатуры типа.|
 
 `prgBuffer`\
-(ваут) Возвращает расширенную информацию.
+заполняет Возвращает расширенные сведения.
 
 `pdwLen`\
-(в, вне) Возвращает размер расширенной информации, в байтах.
+[вход, выход] Возвращает размер расширенной информации в байтах.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- В настоящее время этот метод возвращает только тип или значение константы. Вызывающий абонент должен освободить `prgBuffer` буфер, возвращенный, позвонив `CoTaskMemFree` <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> в функцию COM (СЗ) или (СЗ).
+## <a name="remarks"></a>Remarks
+ В настоящее время этот метод возвращает только тип или значение константы. Вызывающий объект должен освободить буфер, возвращенный в `prgBuffer` , вызвав `CoTaskMemFree` функцию com (C++) или <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

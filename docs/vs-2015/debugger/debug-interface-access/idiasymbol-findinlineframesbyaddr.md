@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4bac80ca02fb64a502bd42fdab1f1e70e453942
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149901"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров по указанному адресу.  
+Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров по заданному адресу.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,19 +35,19 @@ HRESULT findInlineFramesByAddr ( 
   
 #### <a name="parameters"></a>Параметры  
  `isect`  
- [in] Задает компонент прокрутки на разделе адреса.  
+ окне Указывает компонент раздела адреса.  
   
  `offset`  
- [in] Задает компонент прокрутки на смещения адреса.  
+ окне Указывает компонент смещения адреса.  
   
  `ppResult`  
- [out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.  
+ заполняет Содержит `IDiaEnumSymbols` объект, содержащий список извлекаемых кадров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
+ [Перечисление Симтаженум](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

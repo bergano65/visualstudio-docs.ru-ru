@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238703"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Реализация языковой службы версии 2
@@ -193,7 +193,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>В классе Лангуажесервице
 
-|Метод|Возвращаемый класс|Описание:|
+|Метод|Возвращаемый класс|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнений к текстовому представлению.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки пользовательских свойств документа.|
@@ -210,7 +210,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>В классе исходного кода
 
-|Метод|Возвращаемый класс|Описание:|
+|Метод|Возвращаемый класс|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки вывода списков завершения IntelliSense (этот метод обычно не переопределен).|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности, поддержка функций перед открытием файла и переходом к строке, вызвавшей ошибку.|
@@ -220,7 +220,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>В классе Аусорингскопе
 
-|Метод|Возвращаемый класс|Описание:|
+|Метод|Возвращаемый класс|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Предоставляет список объявлений, таких как члены или типы. Этот метод должен быть реализован, но может возвращать значение null. Если этот метод возвращает допустимый объект, то объект должен быть экземпляром вашей версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур методов для данного контекста. Этот метод должен быть реализован, но может возвращать значение null. Если этот метод возвращает допустимый объект, то объект должен быть экземпляром вашей версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|
@@ -358,7 +358,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Реализация языковой службы прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Обзор языковой службы прежних версий](../../extensibility/internals/legacy-language-service-overview.md)
 - [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)

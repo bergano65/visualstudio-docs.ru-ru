@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::Оценка Документы Майкрософт
+title: 'Идебугфунктионобжект:: Evaluate | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728507"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Вызывает функцию и возвращает полученное значение в качестве объекта.
+Вызывает функцию и возвращает результирующее значение в виде объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,22 +47,22 @@ int Evaluate(
 
 ## <a name="parameters"></a>Параметры
 `ppParams`\
-(в) Массив объектов [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющих параметры ввода. Каждый из этих параметров был `Create` создан с помощью одного из методов в интерфейсе [IDebugFunction.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+окне Массив объектов [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющих входные параметры. Каждый из этих параметров был создан с помощью одного из `Create` методов в интерфейсе [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 `dwParams`\
-(в) Количество параметров в `ppParams` массиве.
+окне Число параметров в `ppParams` массиве.
 
 `dwTimeout`\
-(в) Определяет максимальное время, в миллисекундах, чтобы ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
+окне Указывает максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.
 
 `ppResult`\
-(ваут) Возвращает [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий значение функции как объекта.
+заполняет Возвращает [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий значение функции в виде объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод настраивает и выполняет вызов функции, представленной объектом [IDebugFunction.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+## <a name="remarks"></a>Remarks
+ Этот метод настраивает и выполняет вызов функции, представленной объектом [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
