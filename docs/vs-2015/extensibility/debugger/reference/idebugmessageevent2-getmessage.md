@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Документация Майкрософт
+title: IDebugMessageEvent2::/сообщение | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685894"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает сообщение для отображения.  
+Возвращает отображаемое сообщение.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,24 +49,24 @@ int GetMessage( 
   
 #### <a name="parameters"></a>Параметры  
  `pMessageType`  
- [out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.  
+ заполняет Возвращает значение из перечисления [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) , которое описывает тип сообщения.  
   
  `pbstrMessage`  
- [out] Возвращает сообщение.  
+ заполняет Возвращает сообщение.  
   
  `pdwType`  
- [out] Возвращает тип сообщения, используя правила Win32 `MessageBox` функции. См. в разделе [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) функция сведения.  
+ заполняет Возвращает тип сообщения с использованием соглашений `MessageBox` функции Win32. Дополнительные сведения см. в описании функции [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) .  
   
  `pbstrHelpFileName`  
- [in, out] Возвращает имя файла справки. Может быть значение null (C++) или пустое значение (C#), если нет файла справки.  
+ [вход, выход] Возвращает имя файла справки. Может иметь значение null (C++) или пустое (C#), если файл справки отсутствует.  
   
  `pdwHelpId`  
- [in, out] Возвращает идентификатор справки. Может быть 0, если нет справки, на которое имеется связанное с этим сообщением.  
+ [вход, выход] Возвращает идентификатор справки. Может иметь значение 0, если нет справки, связанной с этим сообщением.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
  [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 03918353b66c36698b5d17b332da052b6d95c87a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544395"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108. Проверьте объявляемые параметры безопасности типов значений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
@@ -59,5 +59,5 @@ ms.locfileid: "85544395"
  **Пользовательский конструктор структуры: запрос не выполнен.** 
  **Новые значения секуредтипеструктуре 100 100** 
  **Новые значения секуредтипеструктуре 200 200**
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Данные и моделирование](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [запросов на связывание](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

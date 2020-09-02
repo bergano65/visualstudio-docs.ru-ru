@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903308"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Как выполнить отладку пользовательского модуля отладки
@@ -73,5 +73,5 @@ ms.locfileid: "85903308"
 
 9. Если вы решили отладить процесс запуска DE, можно выполнить действия, описанные в процедуре "Отладка настраиваемого модуля отладки", чтобы присоединиться к папке DE после запуска. При этом будут выполняться три экземпляра [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] : один для источника типа проекта, второй для созданного типа проекта, а третий присоединяется к вашему de.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)

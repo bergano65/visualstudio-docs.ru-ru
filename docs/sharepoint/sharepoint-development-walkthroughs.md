@@ -13,85 +13,85 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979475"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Пошаговые руководства по разработке для SharePoint
-  В следующем примере демонстрируются способы разработки и развертывания решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+  В следующих пошаговых руководствах показано, как разрабатывать и развертывать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ## <a name="general"></a>Общие
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Добавление приемников событий компонентов](../sharepoint/walkthrough-add-feature-event-receivers.md)|Описывает способы добавления приемников событий компонентов, которые представляют собой методы, которые выполняются при функцию установлен, активирован, деактивирован или удален.|
-|[Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Демонстрируется создание настраиваемого поля, типа содержимого, определения списка из типа содержимого и экземпляр списка.|
-|[Пошаговое руководство: Создание базового проекта определения сайта](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|В этой статье демонстрируется создание простейшего определения сайта, содержащий визуальной веб-части, с помощью элементов управления.|
-|[Пошаговое руководство: Импорт пользовательской главной страницы и страницы сайта с изображением](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)|Показано, как импортировать настраиваемую эталонную страницу и страницу сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint|
+|[Пошаговое руководство. Добавление приемников событий компонентов](../sharepoint/walkthrough-add-feature-event-receivers.md)|Описывает добавление приемников событий компонентов, которые являются методами, выполняемыми при установке, активации, деактивации или удалении компонента.|
+|[Пошаговое руководство. Создание столбца сайта, типа содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Демонстрирует создание настраиваемого поля, типа содержимого, определения списка из типа содержимого и экземпляра списка.|
+|[Пошаговое руководство. Создание базового проекта определения сайта](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Демонстрирует создание базового определения сайта, содержащего визуальную веб-часть с элементами управления.|
+|[Пошаговое руководство. Импорт настраиваемой главной страницы и страницы сайта с помощью изображения](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)|Демонстрирует импорт настраиваемой главной страницы SharePoint и страницы сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint|
 
 ## <a name="import-wizard"></a>Мастер импорта
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Демонстрирует импорт рабочего процесса повторного использования, созданные в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.|
-|[Пошаговое руководство: Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Демонстрирует импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.|
+|[Пошаговое руководство. Импорт рабочего процесса SharePoint Designer с возможностью повторного использования в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Демонстрирует импорт рабочего процесса с возможностью повторного использования, созданного в SharePoint Designer 2010, в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект рабочего процесса SharePoint.|
+|[Пошаговое руководство. Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Демонстрирует импорт элементов существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проект SharePoint.|
 
-## <a name="web-parts"></a>Веб-частей
+## <a name="web-parts"></a>Веб-части
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Показано, как создать веб-части с помощью **веб-часть** шаблона элемента в Visual Studio.|
-|[Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Показано, как создать веб-часть визуально с помощью SharePoint **визуальной веб-части** шаблона проекта в Visual Studio.|
+|[Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Показывает, как создать веб-часть с помощью шаблона элемента **веб-части** в Visual Studio.|
+|[Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Показывает, как создать веб-часть визуально с помощью шаблона проекта **визуальной веб-части** SharePoint в Visual Studio.|
 
 ## <a name="workflows"></a>Рабочие процессы
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|В этой статье демонстрируется создание шаблона базовый последовательный рабочий процесс.|
-|[Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Показано, как создать базовый последовательный рабочий процесс, использующего формы связывания и запуска.|
-|[Пошаговое руководство: Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса.|
-|[Пошаговое руководство: Создание пользовательского рабочего процесса действия сайта](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|В этой статье демонстрируется создание настраиваемого действия для рабочего процесса на уровне сайта.|
-|[Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Показано, как перенести повторно используемого рабочего процесса из SharePoint Designer в Visual Studio.|
+|[Пошаговое руководство. Создание и отладка решения для рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Демонстрирует создание базового шаблона последовательного рабочего процесса.|
+|[Пошаговое руководство. Создание рабочего процесса с формами ассоциаций и инициации](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Показывает, как создать базовый последовательный рабочий процесс, использующий формы ассоциаций и инициации.|
+|[Пошаговое руководство. Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Демонстрирует, как добавить страницу приложения, которая отображает данные, полученные из рабочего процесса, в проект рабочего процесса.|
+|[Пошаговое руководство. Создание настраиваемого действия рабочего процесса сайта](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Демонстрирует создание настраиваемого действия для рабочего процесса уровня сайта.|
+|[Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Показано, как перенести рабочий процесс с возможностью повторного использования из SharePoint Designer в Visual Studio.|
 
 ## <a name="application-pages"></a>Страницы приложения
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса.|
-|[Пошаговое руководство: Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Показано, как создать страницу приложения и отладку этой страницы с помощью локального сайта SharePoint.|
+|[Пошаговое руководство. Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Демонстрирует, как добавить страницу приложения, которая отображает данные, полученные из рабочего процесса, в проект рабочего процесса.|
+|[Пошаговое руководство. Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Показывает, как создать страницу приложения, а затем отладить ее с помощью локального сайта SharePoint.|
 
-## <a name="business-data-connectivity"></a>Подключение к данным для бизнеса
+## <a name="business-data-connectivity"></a>Подключение к бизнес-данным
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Показано, как создать модель для службы BDC, которая возвращает сведения о контактах в образце базы данных.|
+|[Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Показывает, как создать модель для службы BDC, которая возвращает сведения о контактах в образце базы данных.|
 
 ## <a name="packaging-and-deployment"></a>Упаковка и развертывание
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Развертывание определения списка задач проекта](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)|Показано, как использовать Visual Studio для создания, настройки, отладки и развертывания определения списка SharePoint с целью отслеживания задач проекта.|
+|[Пошаговое руководство. Развертывание определения списка задач проекта](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)|Демонстрируется использование Visual Studio для создания, настройки, отладки и развертывания определения списка SharePoint для наблюдения за задачами проекта.|
 
 ## <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)|Показано, как расширить встроенный **Business Data Connectivity Model** типа элемента проекта.|
-|[Пошаговое руководство: Создание расширения проекта SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)|Показано, как добавить пользовательское свойство во все проекты SharePoint. Разработчики могут использовать свойство для добавления или удаления связанных папок.|
-|[Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)|Показано, как определить тип элемента проекта SharePoint для создания настраиваемого действия в SharePoint и ассоциировать шаблон элемента с новым типом элемента проекта.|
-|[Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)|Показано, как создать мастер для настраиваемого типа элемента проекта SharePoint, который связан с шаблоном элемента.|
-|[Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|Демонстрирует, как определить тип элемента проекта SharePoint, чтобы создать столбец сайта в SharePoint и ассоциировать шаблон проекта с новым типом элемента проекта.|
-|[Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|Показано, как создать мастер для настраиваемого типа элемента проекта SharePoint, который связан с шаблоном проекта.|
-|[Пошаговое руководство: Создание пользовательского шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)|Показано, как определить пользовательский шаг развертывания, можно использовать для обновления решений SharePoint.|
+|[Пошаговое руководство. расширение типа элемента проекта SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)|Демонстрирует, как расширить встроенный тип элемента проекта **модели подключения к бизнес-данным** .|
+|[Пошаговое руководство. Создание расширения проекта SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)|Демонстрирует добавление пользовательского свойства во все проекты SharePoint. Разработчики могут использовать свойство для добавления или удаления сопоставленной папки.|
+|[Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)|Демонстрирует определение типа элемента проекта SharePoint для создания настраиваемого действия в SharePoint и связывание шаблона элемента с новым типом элемента проекта.|
+|[Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)|Демонстрирует создание мастера для пользовательского типа элемента проекта SharePoint, связанного с шаблоном элемента.|
+|[Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|Демонстрирует определение типа элемента проекта SharePoint для создания столбца сайта в SharePoint и связывание шаблона проекта с новым типом элемента проекта.|
+|[Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|Демонстрирует создание мастера для пользовательского типа элемента проекта SharePoint, связанного с шаблоном проекта.|
+|[Пошаговое руководство. Создание настраиваемого шага развертывания для проектов SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)|Демонстрирует, как определить настраиваемый шаг развертывания, который можно использовать для обновления решений SharePoint.|
 
-## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
+## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозреватель сервера
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова объектной модели SharePoint server.|
-|[Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как использовать клиентскую объектную модель SharePoint.|
+|[Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Демонстрирует добавление новых узлов для отображения веб-части на сайтах SharePoint, отображаемых в обозреватель сервера. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова серверной объектной модели SharePoint.|
+|[Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Демонстрирует добавление новых узлов для отображения веб-части на сайтах SharePoint, отображаемых в обозреватель сервера. В этом пошаговом руководстве также показано, как использовать клиентскую объектную модель SharePoint.|
 
-## <a name="see-also"></a>См. также
-- [Примеры разработки решений SharePoint и пошаговые руководства](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)
+## <a name="see-also"></a>См. также раздел
+- [Примеры и пошаговые руководства по разработке для SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

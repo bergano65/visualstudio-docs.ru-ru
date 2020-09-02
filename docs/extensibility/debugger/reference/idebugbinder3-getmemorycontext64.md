@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryКонтекст64 Документы Майкрософт
+title: 'IDebugBinder3:: GetMemoryContext64 | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735737"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Преобразует месторасположение объекта или 64-битный адрес памяти в контекст памяти.
+Преобразует расположение объекта или адрес 64-разрядной памяти в контекст памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>Параметры
 `pField`\
-(в) [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий объект для поиска. Если, `NULL`а `dwConstant` затем использовать вместо.
+окне Объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект для размещения. Если значение равно `NULL` , используйте `dwConstant` вместо него.
 
 `uConstant`\
-(в) 64-битный адрес памяти, например 0x500000000.
+окне 64-разрядный адрес памяти, например 0x50000000.
 
 `ppMemCxt`\
-(ваут) Возвращает интерфейс [IDebugMemoryContext2,](../../../extensibility/debugger/reference/idebugmemorycontext2.md) представляющий адрес объекта, или адрес в памяти.
+заполняет Возвращает интерфейс [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , представляющий адрес объекта или адрес в памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-Следующие примеры создают объект, который реализует интерфейс [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) и использует этот метод для получения контекста памяти.
+В следующих примерах создается объект, реализующий интерфейс [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) , который использует этот метод для получения контекста памяти.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )
@@ -129,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

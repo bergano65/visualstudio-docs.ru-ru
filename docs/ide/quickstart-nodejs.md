@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство. Создание первого веб-приложения Node.js с помощью Visual Studio
+title: Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio
 description: В этом кратком руководстве вы создадите приложение Node.js в Visual Studio.
 ms.date: 06/27/2018
 ms.technology: vs-javascript
@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: f716421da3b9f888dbb7656c55db6814de88332b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78235058"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Краткое руководство. Создание первого веб-приложения Node.js с помощью Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio
 
 В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите простое веб-приложение Node.js.
 
@@ -71,7 +71,7 @@ ms.locfileid: "78235058"
 
 1. Посмотрите на **обозреватель решений** в правой области.
 
-   ![обозреватель решений](../ide/media/quickstart-nodejs-solution-explorer.png)
+   ![Обозреватель решений](../ide/media/quickstart-nodejs-solution-explorer.png)
 
    - Полужирным шрифтом выделен ваш проект, имя которого вы указали в окне **Новый проект**. На диске этот проект представлен файлом *NJSPROJ* в папке проекта.
 

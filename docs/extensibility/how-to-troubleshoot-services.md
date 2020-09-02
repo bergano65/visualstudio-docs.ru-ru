@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234956"
 ---
 # <a name="how-to-troubleshoot-services"></a>Руководство. Устранение неполадок служб
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. Для интерфейса явно не назначен GUID. Поэтому при необходимости система создает идентификатор GUID по умолчанию для объекта.
 
-3. Убедитесь, что пакет VSPackage, запрашивающий службу, был помещен в сайт. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]сайты VSPackage после создания и перед вызовом <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
+3. Убедитесь, что пакет VSPackage, запрашивающий службу, был помещен в сайт. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сайты VSPackage после создания и перед вызовом <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
     Если у вас есть код в конструкторе VSPackage, которому требуется служба, переместите ее в `Initialize` метод.
 
@@ -66,7 +66,7 @@ if (log == null) return;
 
     Если в окне инструментов размещается пользовательский элемент управления или любой другой контейнер элементов управления, контейнер будет размещен в модели компонентов Windows и не будет иметь доступа к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] службам. Можно вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения поставщика службы VSPackage из контейнера элементов управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Список доступных служб](../extensibility/internals/list-of-available-services.md)
 - [Использование и предоставление служб](../extensibility/using-and-providing-services.md)
 - [Основные компоненты службы](../extensibility/internals/service-essentials.md)

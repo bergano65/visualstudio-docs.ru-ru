@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ae65e922d1b4946300155bbf148abac574a2ec2a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544382"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: укажите тип маршалинга для строковых аргументов P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|

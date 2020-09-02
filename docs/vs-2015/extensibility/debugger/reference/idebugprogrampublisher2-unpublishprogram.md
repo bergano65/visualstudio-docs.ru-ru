@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Документация Майкрософт
+title: 'IDebugProgramPublisher2:: Унпублишпрограм | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05efc566cec0e7e885b16a4bb7c7e7d6256ac7b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146284"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Делает недоступной для отладки программы.  
+Делает программу недоступной для отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int UnpublishProgram(
   
 #### <a name="parameters"></a>Параметры  
  `pDebuggeeInterface`  
- [in] `IUnknown` Интерфейс для программы. Это то же значение, передаваемое [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и однозначно идентифицирует программу удаления (то есть он используется как файл cookie).  
+ окне `IUnknown` Интерфейс программы. Это то же значение, которое передается в метод [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и уникально идентифицирует удаляемую программу (то есть используется как файл cookie).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Чтобы сделать программы доступными для обработчикам отладки и диспетчер отладки сеансов, используйте [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Чтобы сделать программу доступной для модулей отладки и диспетчера отладки сеансов, используйте метод [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

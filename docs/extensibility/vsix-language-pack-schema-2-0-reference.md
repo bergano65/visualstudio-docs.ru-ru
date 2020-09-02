@@ -12,10 +12,10 @@ ms.author: zorio
 author: zoeyr
 manager: jillfra
 ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169343"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме языкового пакета VSIX 2,0
@@ -24,11 +24,11 @@ ms.locfileid: "78169343"
 
 ## <a name="language-pack-schema"></a>Схема языкового пакета
 
-Корневой элемент файла языкового пакета — `<PackageLanguagePackManifest>`с атрибутом `Version`, который является версией формата языкового пакета. В этой статье описан формат языкового пакета 2,0, который указывается в манифесте путем присвоения атрибуту `Version` значения `Version="2.0.0"`. Корневой элемент содержит ровно один дочерний элемент `<Metadata>`.
+Корневой элемент файла языкового пакета имеет `<PackageLanguagePackManifest>` атрибут `Version` , являющийся версией формата языкового пакета. В этой статье описывается версия 2,0 языка языкового пакета, который указывается в манифесте путем присвоения `Version` атрибуту значения `Version="2.0.0"` . Корневой элемент содержит ровно один дочерний `<Metadata>` элемент.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Паккажелангуажепаккманифест, элемент
 
-В элементе `<PackageLanguagePackManifest>` должен существовать следующий элемент:
+В `<PackageLanguagePackManifest>` элементе должен существовать следующий элемент:
 
 |Заголовок|Описание|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ ms.locfileid: "78169343"
 
 ### <a name="metadata-element"></a>Элемент Metadata
 
-В элементе `<Metadata>` можно иметь следующие элементы:
+В `<Metadata>` элементе можно использовать следующие элементы:
 
 |Заголовок|Описание|
 |-----------|-----------------|
@@ -63,10 +63,10 @@ ms.locfileid: "78169343"
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 |Заголовок|Описание|
 |-----------|-----------------|
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показывает, как обеспечить поддержку локализованной установки для пакета VSIX.|
 |[Справочник по схеме расширения VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Манифест VSIX описывает содержимое файла развертывания *VSIX* . Файл развертывания позволяет установить расширение Visual Studio с помощью диалогового окна **расширения и обновления** .|
-|[Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Показывает, как использовать диалоговое окно **расширения и обновления** для установки, удаления, активации и деактивации расширений.|
+|[Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Показывает, как использовать диалоговое окно **расширения и обновления** для установки, удаления, активации и деактивации расширений.|

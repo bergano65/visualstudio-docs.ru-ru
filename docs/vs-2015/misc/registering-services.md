@@ -10,16 +10,16 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971294"
 ---
 # <a name="registering-services"></a>Регистрация служб
 Для поддержки загрузки по запросу поставщик служб должен зарегистрировать глобальные службы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Во время разработки поставщики управляемых служб регистрируют службы и переопределения служб путем добавления атрибутов в исходный код для пакетов, а затем выполняют сборку пакетов в IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Это запускает служебную программу RegPkg.exe в результирующей сборке, регистрируя пакет и подготавливая его к развертыванию. Дополнительные сведения см. в разделе [Как Регистрация службы](../misc/how-to-register-a-service.md).  
+ Во время разработки поставщики управляемых служб регистрируют службы и переопределения служб путем добавления атрибутов в исходный код для пакетов, а затем выполняют сборку пакетов в IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Это запускает служебную программу RegPkg.exe в результирующей сборке, регистрируя пакет и подготавливая его к развертыванию. Дополнительные сведения см. [в разделе руководство. Регистрация службы](../misc/how-to-register-a-service.md).  
   
  Поставщики неуправляемых служб должны регистрировать предоставляемые службы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , в разделе "Службы" или "Переопределения служб" системного реестра. В следующем фрагменте REG-файла показано, как служба SVsTextManager может быть зарегистрирована:  
   
@@ -47,6 +47,6 @@ ms.locfileid: "62971294"
 regasm /tlb MyAssembly.dll  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)

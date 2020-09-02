@@ -1,5 +1,5 @@
 ---
-title: 'IDebugBoundBreakpoint2: :Delete Документы Майкрософт'
+title: IDebugBoundBreakpoint2::D удалить | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a480a97c14b568565fee9b1b82d672db11f4ebab
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735657"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
-Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если состояние объекта точки разрыва `BPS_DELETED` установлено (часть [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` значение, если состояние привязанного объекта точки останова равно `BPS_DELETED` (часть перечисления [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CBoundBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объекта, предоставляющего интерфейс [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::Delete(void)
@@ -68,6 +68,6 @@ HRESULT CBoundBreakpoint::Delete(void)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

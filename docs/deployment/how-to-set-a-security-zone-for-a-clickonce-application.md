@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382137"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Практическое руководство. Установка зоны безопасности для ClickOnce-приложения
@@ -32,7 +32,7 @@ ms.locfileid: "85382137"
 
 1. Выбрав проект в **Обозреватель решений**, в меню **проект** выберите пункт **Свойства**.
 
-2. Откройте вкладку **Безопасность**.
+2. Перейдите на вкладку **Безопасность** .
 
 3. Установите флажок **Включить параметры безопасности ClickOnce-приложений** .
 
@@ -42,7 +42,7 @@ ms.locfileid: "85382137"
 
 5. В раскрывающемся списке **Зона, из которой приложение будет установлено** выберите зону безопасности.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как задать пользовательские разрешения для приложения ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

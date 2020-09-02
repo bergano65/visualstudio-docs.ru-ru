@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6d9c3f8b45affd192d4109db08454345dcd0814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188222"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот интерфейс предоставляет порты, чтобы диспетчер отладки сеансов (SDM).  
+Этот интерфейс предоставляет порты диспетчеру отладки сеансов (SDM).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,10 +31,10 @@ IDebugPortSupplier2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Пользовательский порт поставщик реализует этот интерфейс для представления поставщика порта.  
+ Пользовательский поставщик портов реализует этот интерфейс для представления поставщика порта.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызов `CoCreateInstance` с поставщика порта `GUID` возвращает этот интерфейс (это типичный способ получения этого интерфейса). Например:  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызов `CoCreateInstance` с помощью поставщика порта `GUID` возвращает этот интерфейс (это типичный способ получения этого интерфейса). Пример:  
   
 ```cpp#  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
@@ -51,39 +51,39 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }  
 ```  
   
- Вызов [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) возвращает этот интерфейс, представляющий текущий поставщик порта, используемый [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+ Вызов [жетпортсупплиер](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) возвращает этот интерфейс, представляющий текущего поставщика портов, используемого [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] .  
   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) возвращает этот интерфейс, представляющий поставщика порта, который создан порт.  
+ [Жетпортсупплиер](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) возвращает этот интерфейс, представляющий поставщика порта, который создал порт.  
   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) представляет список `IDebugPortSupplier` интерфейсы ( `IEnumDebugPortSuppliers` интерфейс получается из [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), представляющий всех поставщиков порт зарегистрировано [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]).  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) представляет список `IDebugPortSupplier` интерфейсов ( `IEnumDebugPortSuppliers` интерфейс получен от [енумпортсупплиерс](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), представляющий всех поставщиков портов, зарегистрированных в [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ).  
   
- Модуль отладки обычно не взаимодействует с поставщика порта.  
+ Модуль отладки обычно не взаимодействует с поставщиком порта.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugPortSupplier2`.  
+ В следующей таблице показаны методы `IDebugPortSupplier2` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Получает имя поставщика порта.|  
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Возвращает имя поставщика порта.|  
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Возвращает идентификатор поставщика порта.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Возвращает порт из поставщика порта.|  
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Перечисляет порты, которые уже существуют.|  
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Проверяет, что поставщик порта поддерживает добавление новых портов.|  
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Возвращает порт от поставщика порта.|  
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Перечисляет уже существующие порты.|  
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Проверяет, поддерживает ли поставщик портов Добавление новых портов.|  
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Добавляет порт.|  
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Удаляет порт.|  
   
-## <a name="remarks"></a>Примечания  
- Поставщика порта можно идентифицировать себя имя и идентификатор, добавить и удалить порты и перечислить все порты, которые предоставляет поставщик порта.  
+## <a name="remarks"></a>Remarks  
+ Поставщик порта может идентифицировать себя по имени и ИДЕНТИФИКАТОРу, добавлять и удалять порты, а также перечислять все порты, предоставляемые поставщиком портов.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   
+## <a name="see-also"></a>См. также:  
+ [Основные интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [жетпортсупплиер](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
+ [жетпортсупплиер](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

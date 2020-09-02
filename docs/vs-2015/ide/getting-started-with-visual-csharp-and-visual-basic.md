@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 460349231b050a84b7f6bf5bace8c0aa48ac5fbb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645592"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Начало работы с Visual C# и Visual Basic
@@ -30,7 +30,7 @@ ms.locfileid: "72645592"
 
  Дополнительные сведения по Visual C++ см. в разделе [Ресурсы, посвященные Visual C++](https://msdn.microsoft.com/vstudio/hh386302.aspx).
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) Определение основных окон в интегрированной среде разработки Visual Studio, оптимизация процесса разработки путем настройки параметра, а затем создание простой программы.
 
  [Учебник 1. Создание средства просмотра изображений](../ide/tutorial-1-create-a-picture-viewer.md) Создание программы, которая загружает изображение из файла и отображает его в окне. Изучите процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Ознакомьтесь с настройкой свойств элементов управления, как использовать контейнеры для согласованного изменения размеров формы. Начните создавать код.

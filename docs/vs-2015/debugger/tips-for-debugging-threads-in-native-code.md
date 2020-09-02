@@ -1,5 +1,5 @@
 ---
-title: Советы по отладке потоков в машинном коде | Документация Майкрософт
+title: Советы по отладке потоков в машинном коде | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c299d3585d9089f8525c2ec7f470601797cc3a2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684870"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Советы по отладке потоков в машинном коде
@@ -35,6 +35,6 @@ ms.locfileid: "65684870"
   
 - Для отладки многопоточного приложения можно использовать функции библиотеки времени выполнения C (CRT). Дополнительные сведения см. в разделе [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)

@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986121"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
@@ -103,39 +103,39 @@ ms.locfileid: "72986121"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Порядок событий в проектах Excel на уровне документа
  Обработчики **Startup** событий в проектах Excel вызываются в следующем порядке:
 
-1. `ThisWorkbook_Startup`
+1. `ThisWorkbook_Startup`.
 
-2. `Sheet1_Startup`
+2. `Sheet1_Startup`.
 
-3. `Sheet2_Startup`
+3. `Sheet2_Startup`.
 
-4. `Sheet3_Startup`
+4. `Sheet3_Startup`.
 
 5. Другие листы по порядку.
 
    Обработчики событий **Shutdown** в решении книги вызываются в следующем порядке:
 
-6. `ThisWorkbook_Shutdown`
+6. `ThisWorkbook_Shutdown`.
 
-7. `Sheet1_Shutdown`
+7. `Sheet1_Shutdown`.
 
-8. `Sheet2_Shutdown`
+8. `Sheet2_Shutdown`.
 
-9. `Sheet3_Shutdown`
+9. `Sheet3_Shutdown`.
 
 10. Другие листы по порядку.
 
     Порядок определяется при компиляции проекта. Если пользователь изменяет порядок листов во время выполнения, это не приводит к изменению порядка, в котором появляются события при очередном открытии или закрытии книги.
 
 ## <a name="vsto-add-in-projects"></a>Проекты надстроек VSTO
- Visual Studio предоставляет код, созданный в надстройках VSTO. Этот код вызывает два разных события: <xref:Microsoft.Office.Tools.AddInBase.Startup> и <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
+ Visual Studio предоставляет код, созданный в надстройках VSTO. Этот код вызывает два разных события: <xref:Microsoft.Office.Tools.AddInBase.Startup> и <xref:Microsoft.Office.Tools.AddInBase.Shutdown> .
 
 ### <a name="startup-event"></a>Startup - событие
  Событие <xref:Microsoft.Office.Tools.AddIn.Startup> возникает после загрузки надстройки VSTO и запуска всего кода инициализации в сборке. Это событие обрабатывается методом `ThisAddIn_Startup` в файле сформированного кода.
 
  Код в обработчике событий `ThisAddIn_Startup` — это первый код пользователя, подлежащий выполнению, если надстройка VSTO не переопределяет метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . В этом случае обработчик событий `ThisAddIn_Startup` вызывается после <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
 
- Не добавляйте код в обработчик событий `ThisAdd-In_Startup`, если для кода требуется открыть документ. Добавьте код в событие, которое создает приложение Office, когда пользователь создает или открывает документ. Дополнительные сведения см. в разделе [доступ к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Не добавляйте код в `ThisAdd-In_Startup` обработчик событий, если для кода требуется открыть документ. Добавьте код в событие, которое создает приложение Office, когда пользователь создает или открывает документ. Дополнительные сведения см. в разделе [доступ к документу при запуске приложения Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  Дополнительные сведения о последовательности запуска надстроек VSTO см. в разделе [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md).
 

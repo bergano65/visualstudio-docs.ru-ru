@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора | Документация Майкрософт
+title: Пошаговое руководство. Загрузка сборок по запросу с помощью API развертывания ClickOnce в конструкторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,13 +19,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a7ff4fe24720f707c8f3faa330f71a8abda3c698
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686337"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 По умолчанию все сборки, включенные в приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , загружаются при первом его запуске. Однако некоторые части приложения могут быть нужны лишь небольшому числу пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application> , когда среда CLR нуждается в них.  
@@ -34,13 +34,13 @@ ms.locfileid: "65686337"
 > Для выполнения данной процедуры приложение должно выполняться с полным доверием.  
   
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. [в разделе Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="creating-the-projects"></a>Создание проектов  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Создание проекта, использующего сборку по запросу с помощью Visual Studio  
   
-1. Создайте проект Windows Forms в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В меню **Файл** выберите команду **Добавить**, а затем **Создать проект**. Выберите проект **Библиотека классов** в диалоговом окне и назовите его `ClickOnceLibrary`.  
+1. Создайте проект Windows Forms в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В меню **Файл** выберите пункт **Добавить**, затем щелкните **Создание проекта**. Выберите проект **Библиотека классов** в диалоговом окне и назовите его `ClickOnceLibrary`.  
   
     > [!NOTE]
     > В Visual Basic мы рекомендуем изменить свойства проекта, чтобы сменить корневое пространство имен для этого проекта на `Microsoft.Samples.ClickOnceOnDemand` или то, которое подходит вам. Для простоты два проекта в этом пошаговом руководстве находятся в одном пространстве имен.  
@@ -65,7 +65,7 @@ ms.locfileid: "65686337"
      [!code-csharp[ClickOnceOnDemand#2](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#2)]
      [!code-vb[ClickOnceOnDemand#2](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#2)]  
   
-6. В меню **Вид** выберите пункт **Панель элементов**. Перетащите <xref:System.Windows.Forms.Button> с **панели элементов** в форму. Дважды нажмите кнопку и добавьте приведенный ниже код в обработчик событий <xref:System.Windows.Forms.Control.Click> .  
+6. В меню **Вид** выберите пункт **Область элементов**. Перетащите <xref:System.Windows.Forms.Button> с **панели элементов** в форму. Дважды нажмите кнопку и добавьте приведенный ниже код в обработчик событий <xref:System.Windows.Forms.Control.Click> .  
   
      [!code-csharp[ClickOnceOnDemand#3](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#3)]
      [!code-vb[ClickOnceOnDemand#3](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#3)]  
@@ -82,11 +82,11 @@ ms.locfileid: "65686337"
   
 4. Разверните раскрывающийся список **Группа** и выберите **Создать**. Введите имя `ClickOnceLibrary` в качестве имени новой группы.  
   
-5. Продолжите публиковать приложение, как описано в разделе [как: опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5. Продолжайте публикацию приложения, как описано в статье [как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью Инструмента создания и изменения манифестов с графическим клиентом (MageUI.exe)  
   
-1. Создание вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесты, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Создайте [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] манифесты, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 2. Перед закрытием MageUI.exe выберите вкладку, содержащую манифест приложения развертывания и откройте на ней вкладку **Файлы** .  
   
@@ -100,5 +100,5 @@ ms.locfileid: "65686337"
   
 2. Когда появится основная форма, нажмите <xref:System.Windows.Forms.Button>. В окне сообщения вы должны видеть строку "Hello, World!"  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:System.Deployment.Application.ApplicationDeployment>

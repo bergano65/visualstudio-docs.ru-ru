@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45a22d7ea9c6d672d7198d7ea253a83993efdc2a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645685"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Фильтрованные списки завершения в Visual Basic
@@ -25,5 +25,5 @@ ms.locfileid: "72645685"
 
 В Visual Basic списки завершения IntelliSense имеют два элемента управления "Вкладка", находящиеся в нижней части списков. Вкладка **Общие**, которая выбрана по умолчанию, содержит элементы, которые чаще всего используются для завершения вводимого оператора. Вкладка **Все** содержит все элементы, доступные для автоматического завершения, включая и те, которые указаны на вкладке **Общие**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Использование](../ide/using-intellisense.md) IntelliSense [Visual Basic](../ide/visual-basic-specific-intellisense.md) IntelliSense

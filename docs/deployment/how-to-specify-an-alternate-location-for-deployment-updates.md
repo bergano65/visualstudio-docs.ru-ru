@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381916"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
@@ -60,7 +60,7 @@ ms.locfileid: "85381916"
 
  Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, использующие, `<deploymentProvider>` должны явно объявлять разрешения, необходимые им в манифесте приложения, чтобы приложение не получало разные уровни доверия на разных компьютерах.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

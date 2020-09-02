@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df5e1d91de14e3da4f188c276ef7dd74943d8978
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382124"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Практическое руководство. Установка версии публикации приложения ClickOnce
@@ -42,7 +42,7 @@ ms.locfileid: "85382124"
     > [!NOTE]
     > Не следует уменьшать номер версии. Это может привести к непредсказуемому поведению обновления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

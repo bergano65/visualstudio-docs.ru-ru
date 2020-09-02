@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986062"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Начало работы (разработка решений Office в Visual Studio)
@@ -26,8 +26,8 @@ ms.locfileid: "72986062"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>В данном разделе
-- [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+## <a name="in-this-section"></a>В этом разделе
+- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Общие сведения о разработке решений Office в Visual Studio.
 
