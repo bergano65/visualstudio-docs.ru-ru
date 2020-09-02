@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface Документы Майкрософт
+title: 'IDebugProviderProgramNode2:: Унмаршалдебугжееинтерфаце | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3c0f6e66b6585eafde656cd7be88d0c76bbb3f37
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720704"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Получает определенный интерфейс через границы процесса.
+Получает указанный интерфейс между границами процесса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int UnmarshalDebuggeeInterface(
 
 ## <a name="parameters"></a>Параметры
 `riid`\
-(в) GUID интерфейса для получения.
+окне Идентификатор GUID получаемого интерфейса.
 
 `ppvObject`\
-(ваут) Возвращает объект, реализующий нужный интерфейс. Это может быть отлито непосредственно к желаемому типу интерфейса. «C» использовать <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> метод, чтобы получить желаемый интерфейс.
+заполняет Возвращает объект, реализующий нужный интерфейс. [C++] это можно привести непосредственно к нужному типу интерфейса. [C#] используйте <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> метод, чтобы получить нужный интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод используется, когда отладка [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] двигателя работает в пространстве процесса и отладка программы работает в своем собственном пространстве процесса.
+## <a name="remarks"></a>Remarks
+ Этот метод используется, когда модуль отладки выполняется в [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пространстве процесса, а отлаживаемая программа выполняется в собственном пространстве процесса.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

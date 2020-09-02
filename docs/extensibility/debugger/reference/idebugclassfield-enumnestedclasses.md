@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses Документы Майкрософт
+title: 'Идебугклассфиелд:: Енумнестедклассес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3e6ef918b55d8b311380264d688085b0d2803601
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734432"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-Создает регистратор для классов, вложенных в этот класс.
+Создает перечислитель для классов, вложенных в этот класс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int EnumNestedClasses(
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список вложенных классов. Возвращает нулевую стоимость, если нет вложенных классов.
+заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список вложенных классов. Возвращает значение null, если нет вложенных классов.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успеха, возвращает S_OK или возвращает S_FALSE, если Нет вложенных классов. В противном случае возвращается код ошибки.
+В случае успеха возвращает S_OK или возвращает S_FALSE, если нет вложенных классов. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
-Каждый элемент перечисления — объект [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) описывающий вложенный класс.
+## <a name="remarks"></a>Remarks
+Каждый элемент перечисления — это объект [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md) , описывающий вложенный класс.
 
-Вложенный класс — это класс, определяемый внутри другого класса. Пример:
+Вложенный класс — это класс, определенный внутри другого класса. Пример:
 
 ```
 class RootClass {
@@ -57,8 +57,8 @@ class RootClass {
 };
 ```
 
-В перечислении [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) будет содержаться `NestedClass` один объект, представляющий класс.
+Перечисление [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) будет содержать один объект, представляющий `NestedClass` класс.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

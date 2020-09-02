@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508003"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89053433"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Измерение производительности приложения из командной строки
 
@@ -92,6 +92,7 @@ ms.locfileid: "88508003"
 - https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
 - https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+- https://aka.ms/vs/diaghub/agentconfig/dotnetcountersbase
 
 Конфигурации CpuUsage (базовая/низкая/высокая), которые соответствуют данным, собранным для инструмента профилирования [Загрузка ЦП](../profiling/cpu-usage.md).
 Конфигурации DotNetObjectAlloc (базовая/низкая), которые соответствуют данным, собранным для [инструмента выделения объектов .NET](../profiling/dotnet-alloc-tool.md).

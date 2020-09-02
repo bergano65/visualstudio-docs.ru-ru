@@ -13,10 +13,10 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186442"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Элемент TemplateData (шаблоны Visual Studio)
@@ -24,8 +24,8 @@ ms.locfileid: "68186442"
 
 Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,42 +49,42 @@ ms.locfileid: "68186442"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает имя шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.|  
-|[Описание](../extensibility/description-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает описание шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.|  
-|[Значок](../extensibility/icon-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает путь и имя файла, файла образа, который служит в качестве значок, который отображается в либо **новый проект** или **Добавление нового элемента** диалоговом окне для шаблона.|  
-|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта, чтобы он отображался в указанной группе в **новый проект** диалоговое окно.|  
-|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Классифицирует шаблон проекта, таким образом, чтобы оно помещалось под указанной подкатегории в **новый проект** диалоговое окно.|  
-|[Идентификатор шаблона](../extensibility/templateid-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает идентификатор шаблона.|  
-|[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает идентификатор группы шаблона.|  
-|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает значение, которое используется для размещения шаблона, других шаблонов в той же категории, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.|  
-|[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, создан ли содержащей папки при создании экземпляра проекта.|  
-|[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Задает имя, система проектов Visual Studio создаст для проекта или элемента при его создании.|  
-|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, будет ли в системе проектов Visual Studio создавать имя по умолчанию для проекта или элемента при его создании.|  
-|[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, могут ли быть созданы как временный проект.|  
-|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговом окне, чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен проект.|  
-|[Скрытые](../extensibility/hidden-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, отображается ли в одном шаблоне **новый проект** или **Добавление нового элемента** диалоговое окно.|  
-|[Элемент NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.|  
+|[Имя](../extensibility/name-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .|  
+|[Описание](../extensibility/description-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает описание шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .|  
+|[Значок](../extensibility/icon-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает путь и имя файла изображения, который выступает в качестве значка, который отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** для шаблона.|  
+|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона проекта, чтобы он появился в указанной группе в диалоговом окне **Новый проект** .|  
+|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Классифицирует шаблон проекта, чтобы он появился в указанной подкатегории в диалоговом окне **Новый проект** .|  
+|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает идентификатор шаблона.|  
+|[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает идентификатор группы шаблонов.|  
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Задает значение, используемое для упорядочения шаблона (помимо других шаблонов в той же категории), которое отображается в диалоговом окне **Создание проекта** или **Добавление нового элемента** .|  
+|[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, создается ли содержащая папка при создании экземпляра проекта.|  
+|[дефаултнаме](../extensibility/defaultname-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает имя, которое будет создавать система проектов Visual Studio для проекта или элемента при его создании.|  
+|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, будет ли система проектов Visual Studio создавать имя по умолчанию для проекта или элемента при его создании.|  
+|[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, можно ли создать проект как временный проект.|  
+|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, доступна ли кнопка " **Обзор** " в диалоговом окне " **Новый проект** ", чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен новый проект.|  
+|[Скрыта](../extensibility/hidden-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, отображается ли шаблон в диалоговом окне " **Новый проект** " или " **Добавление нового элемента** ".|  
+|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает число родительских категорий, которые будут отображать шаблон в диалоговом окне **Новый проект** .|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|Необязательный элемент.|  
-|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает ли **расположение** текстовое поле в **новый проект** диалоговое окно включено, отключено или скрытым для шаблона проекта.|  
-|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Этот элемент используется в том случае, если шаблон поддерживает только определенную минимальную версию и более поздних версий, если таковое имеется, платформы .NET Framework.|  
-|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, поддерживает ли шаблон главной страницы для веб-проектов.|  
-|[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, поддерживает ли шаблон разделение кода, или модель страницы с выделенным кодом для веб-проектов.|  
-|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает ли шаблон является одинаковым для нескольких языков и ли **языка** параметр доступен из **новый проект** диалоговое окно.|  
-|[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Задает платформу, для которой предназначен шаблон проекта. Этот элемент указывает, что шаблон проекта используется для создания [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложения.|  
+|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает, будет ли текстовое поле **Расположение** в диалоговом окне **Новый проект** быть включено, отключено или скрыто для шаблона проекта.|  
+|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Используйте этот элемент, если шаблон поддерживает только определенную минимальную версию, а более поздние версии .NET Framework.|  
+|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, поддерживает ли шаблон главную страницу для веб-проектов.|  
+|[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, поддерживает ли шаблон разделение кода или модель страницы кода программной части для веб-проектов.|  
+|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает, идентичен ли шаблон для нескольких языков и доступен ли параметр **язык** в диалоговом окне **Новый проект** .|  
+|[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Задает платформу, для которой предназначен шаблон проекта. Этот элемент указывает, что шаблон проекта используется для создания [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] приложений.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблон элемента или комплект для начала работы.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  `TemplateData` является обязательным элементом.  
   
- Если необязательный элемент не указан, используется значение по умолчанию для этого элемента.  
+ Если не включить необязательный элемент, используется значение по умолчанию для этого элемента.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения.  
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -110,6 +110,6 @@ ms.locfileid: "68186442"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

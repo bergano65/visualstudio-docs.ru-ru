@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode | Документация Майкрософт
+title: 'IDebugModule3:: Исусеркоде | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 338c292868cd22a93113cc22e51a5aca995a517d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157293"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает сведения о представляет ли модуль пользовательским кодом или нет.  
+Получает сведения о том, представляет ли модуль пользовательский код.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ int IsUserCode(
   
 #### <a name="parameters"></a>Параметры  
  `pfUser`  
- [out] Ненулевое значение (`TRUE`), если модуль представляет пользовательский код, ноль (`FALSE`) Если это не так.  
+ заполняет Ненулевое ( `TRUE` ) Если модуль представляет пользовательский код, ноль ( `FALSE` ), если нет.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b09c07c8b36baeed096c0049c778e431fe232458
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538168"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Как сопоставлять столбцы ListObject с данными
@@ -25,7 +25,7 @@ ms.locfileid: "85538168"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="map-columns"></a>Столбцы карт
+## <a name="map-columns"></a>Сопоставление столбцов
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>Сопоставление таблицы данных со столбцами в списке
 

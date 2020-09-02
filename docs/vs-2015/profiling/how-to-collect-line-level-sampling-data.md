@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выборка данных на уровне строк | Документация Майкрософт
+title: Практическое руководство. Выборка данных на уровне строк | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185954"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
@@ -56,8 +56,8 @@ ms.locfileid: "68185954"
   
      Или...  
   
-- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>** .  
+- При запуске приложения введите команду **VSPerfCmd /lineoff \<other arguments>** .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
- [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
+ [Анализ данных средств профилирования](../profiling/analyzing-performance-tools-data.md)

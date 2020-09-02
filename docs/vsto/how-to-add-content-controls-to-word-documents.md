@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538389"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Как добавить элементы управления содержимым в документы Word
@@ -48,7 +48,7 @@ ms.locfileid: "85538389"
 
   Дополнительные сведения об элементах управления содержимым см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
 
-## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>Добавление элементов управления содержимым во время разработки
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Добавление элементов управления содержимым во время разработки
  Вы можете добавить элементы управления содержимым в документ Word в проекте на уровне документа во время разработки несколькими способами.
 
 - Добавьте элемент управления содержимым из вкладки **Элементы управления Word****панели элементов**.
@@ -94,7 +94,7 @@ ms.locfileid: "85538389"
 
 3. В группе **Элементы управления** щелкните значок элемента управления содержимым, который требуется добавить.
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Добавление элементов управления содержимым во время выполнения в проекте уровня документа
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Добавление элементов управления содержимым во время выполнения в проекте уровня документа
  Элементы управления содержимым можно добавить в документ программным образом во время выполнения с помощью методов свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> класса `ThisDocument` в проекте. У каждого метода есть три перегрузки, которые можно использовать для добавления элемента управления содержимым следующими способами:
 
 - добавление элемента управления в текущее выделение;
@@ -135,7 +135,7 @@ ms.locfileid: "85538389"
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Добавление элементов управления содержимым во время выполнения в проекте надстройки VSTO
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Добавление элементов управления содержимым во время выполнения в проекте надстройки VSTO
  Вы можете добавить элементы управления содержимым программным способом в любой открытый документ во время выполнения с помощью надстройки VSTO. Для этого следует создать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , основанный на открытом документе, а затем использовать методы свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> этого ведущего элемента. У каждого метода есть три перегрузки, которые можно использовать для добавления элемента управления содержимым следующими способами:
 
 - добавление элемента управления в текущее выделение;

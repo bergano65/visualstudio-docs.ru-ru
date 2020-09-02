@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538117"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Руководство. Программное добавление комментариев к тексту в документах
@@ -46,6 +46,6 @@ ms.locfileid: "85538117"
 ## <a name="robust-programming"></a>Отказоустойчивость
  Для изменения инициалов пользователя, добавляемых Word в комментарии, используйте свойство <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Программное удаление всех комментариев из документов](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Ведущий элемент документа](../vsto/document-host-item.md)

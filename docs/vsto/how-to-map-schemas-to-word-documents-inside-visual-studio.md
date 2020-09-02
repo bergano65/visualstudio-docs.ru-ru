@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538155"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Как сопоставлять схемы с документами Word в Visual Studio
@@ -63,6 +63,6 @@ ms.locfileid: "85538155"
 
 10. Перетащите элементы из окна **Структура XML** в места документа, где нужно создать соответствующие элементы управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как сопоставлять схемы с листами в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

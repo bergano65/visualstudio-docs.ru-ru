@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143016"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает, почему был запущен процесс для отладки.  
+Указывает, почему процесс был запущен для отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,30 +49,30 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Параметры  
  DEBUG_REASON_ERROR  
- Произошла общая ошибка (используется как условие по умолчанию при ни с одним другим причинам, по размеру).  
+ Произошла неспецифическая ошибка (используется в качестве условия по умолчанию, если по каким-либо причинам не подходит).  
   
  DEBUG_REASON_USER_LAUNCHED  
  Процесс был запущен по запросу пользователя.  
   
  DEBUG_REASON_USER_ATTACHED  
- Уже выполняемым процессам был подключен к этим пользователем.  
+ Этот уже запущенный процесс был подключен пользователем.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- Процесс автоматически присоединяется к, если оно было запущено.  
+ Процесс был автоматически присоединен к моменту запуска.  
   
  DEBUG_REASON_CAUSALITY  
- Процесс был запущен из-за *Just-In-Time* событие отладки (JIT).  
+ Процесс был запущен из-за JIT *-события* отладки.  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемые [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Возвращается методом [жетдебугреасон](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

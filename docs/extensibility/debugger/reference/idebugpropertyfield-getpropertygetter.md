@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertyGetter Документы Майкрософт
+title: 'Идебугпропертифиелд:: Жетпропертижеттер | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4120f4b9854eaf43d5c7119bd0a19dd21fbd584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720893"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
-Получает метод, который получает свойство.
+Возвращает метод, который получает свойство.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int GetPropertyGetter(
 
 ## <a name="parameters"></a>Параметры
 `ppField`\
-(ваут) Возвращает объект [IDebugMethodField,](../../../extensibility/debugger/reference/idebugmethodfield.md) представляющий метод, который получает свойство.
+заполняет Возвращает объект [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md) , представляющий метод, который получает свойство.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Чтобы получить метод, который устанавливает свойство, [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) вызова метода.
+## <a name="remarks"></a>Remarks
+ Чтобы получить метод, который задает свойство, [жетпропертисеттер](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) вызовите метод.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

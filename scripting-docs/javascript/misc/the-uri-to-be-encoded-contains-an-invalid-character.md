@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e6091968dcbdd98240b1705e0fa7dc855dad3bda
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816076"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Кодируемый URI содержит недопустимый символ
@@ -32,6 +32,6 @@ ms.locfileid: "85816076"
     <Scheme>:<first>/<second>;<third>?<fourth>  
     ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Функция encodeURI](../../javascript/reference/encodeuri-function-javascript.md)   
  [Функция encodeURIComponent](../../javascript/reference/encodeuricomponent-function-javascript.md)

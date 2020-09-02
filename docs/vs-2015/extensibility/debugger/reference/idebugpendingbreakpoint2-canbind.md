@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Документация Майкрософт
+title: 'IDebugPendingBreakpoint2:: Канбинд | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4e22da57eb5cc286bee18601079ea39da1b7b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143801"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет ли этот ожидающая точка останова можно привязать к расположение кода.  
+Определяет, может ли отложенная точка останова быть привязана к расположению кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,16 +41,16 @@ int CanBind ( 
   
 #### <a name="parameters"></a>Параметры  
  `ppErrorEnum`  
- [out] Возвращает [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , содержащий список [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) объектов, если могут возникнуть ошибки.  
+ заполняет Возвращает объект [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , содержащий список объектов [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , если могут возникнет ошибки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK.` возвращает `S_FALSE` Если не удается привязать точку останова, в этом случае ошибки возвращаются по `ppErrorEnum` параметр. В противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
+ В случае успеха возвращает значение, `S_OK.` `S_FALSE` Если точка останова не может выполнить привязку, в этом случае ошибки возвращаются `ppErrorEnum` параметром. В противном случае возвращается код ошибки. Возвращает значение `E_BP_DELETED` , если точка останова была удалена.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается для определения того, что произошло бы, если это ожидающее точка останова был привязан. Вызовите [привязать](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) метод для реальной привязки ожидающая точка останова.  
+## <a name="remarks"></a>Remarks  
+ Этот метод вызывается для определения того, что произойдет, если была выполнена привязка ожидающей точки останова. Вызовите метод [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) для фактической привязки ожидающей точки останова.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, предоставляющего интерфейс [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
@@ -137,8 +137,8 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Выполняется](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

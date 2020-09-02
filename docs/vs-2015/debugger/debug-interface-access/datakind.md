@@ -1,5 +1,5 @@
 ---
-title: DataKind | Документация Майкрософт
+title: Kind | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197637"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Указывает область конкретного значения данных.  
+Указывает конкретную область значения данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,42 +43,42 @@ enum DataKind { 
 ```  
   
 ## <a name="elements"></a>Элементы  
- DataIsUnknown  
+ датаисункновн  
  Не удается определить символ данных.  
   
- DataIsLocal  
- Элемент данных — это локальная переменная.  
+ датаислокал  
+ Элемент данных является локальной переменной.  
   
- DataIsStaticLocal  
+ датаисстатиклокал  
  Элемент данных является статической локальной переменной.  
   
- DataIsParam  
+ датаиспарам  
  Элемент данных является формальным параметром.  
   
  DataIsObjectPtr  
- Элемент данных является указателем объекта (`this`).  
+ Элемент данных является указателем объекта ( `this` ).  
   
  DataIsFileStatic  
- Элемент данных — это переменная уровня файла.  
+ Элемент данных является переменной с областью действия файла.  
   
- DataIsGlobal  
+ датаисглобал  
  Элемент данных является глобальной переменной.  
   
- DataIsMember  
- Элемент данных является переменной члена объекта.  
+ датаисмембер  
+ Элемент данных является переменной-членом объекта.  
   
- DataIsStaticMember  
- Элемент данных является статической переменной класса.  
+ датаисстатикмембер  
+ Элемент данных — это статическая переменная класса.  
   
- DataIsConstant  
- Элемент данных — это постоянное значение.  
+ датаисконстант  
+ Элемент данных является постоянным значением.  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемые значения в этом перечислении [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Значения в этом перечислении возвращаются методом [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

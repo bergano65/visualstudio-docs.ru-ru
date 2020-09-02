@@ -1,5 +1,5 @@
 ---
-title: Фабрики редакторов | Документация Майкрософт
+title: Фабрики редактора | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,48 +11,48 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197764"
 ---
 # <a name="editor-factories"></a>Фабрики редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Фабрику редактора создает объекты редактор и помещает их в рамку окна, известный как физическое представление. Он создает данные документа и объекты представления документа, которые необходимы для создания в редакторах и конструкторах. Фабрику редактора необходима для создания базового редактора Visual Studio и любой стандартный редактор. Специализированный редактор также при необходимости могут создаваться с помощью фабрики редактора.  
+Фабрика редактора создает объекты редактора и помещает их в рамку окна, называемую физическим представлением. Он создает данные документа и объекты представления документов, необходимые для создания редакторов и конструкторов. Фабрика редактора необходима для создания основного редактора Visual Studio и любого стандартного редактора. Настраиваемый редактор можно также создать с помощью фабрики редактора.  
   
- Создать фабрику редактора, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс. Следующий пример иллюстрирует способ реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> создать фабрику редактора:  
+ Фабрика редактора создается путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейса. В следующем примере показано, как реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> для создания фабрики редактора:  
   
  [!code-csharp[VSSDKEditorFactories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkeditorfactories/cs/vssdkeditorfactoriespackage.cs#1)]
  [!code-vb[VSSDKEditorFactories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkeditorfactories/vb/vssdkeditorfactoriespackage.vb#1)]  
   
- При первом открытии типом файла, обрабатываемых редактором, загруженных в редакторе. Вы можете открыть конкретного редактора или редактора по умолчанию. Если выбрать редактор по умолчанию, определяет правильный редактор, чтобы открыть интегрированную среду разработки (IDE), который затем открывается. Дополнительные сведения см. в разделе [определить, какой редактор открывает файл в проекте](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Редактор загружается при первом открытии типа файла, обрабатываемого этим редактором. Можно открыть либо конкретный редактор, либо редактор по умолчанию. При выборе редактора по умолчанию интегрированная среда разработки (IDE) определяет нужный редактор для открытия, а затем открывает его. Дополнительные сведения см. [в разделе Определение редактора, открывающего файл в проекте](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
 ## <a name="registering-editor-factories"></a>Регистрация фабрик редактора  
- Прежде чем использовать редактор, который вы создали, сначала необходимо зарегистрировать сведения о нем, включая расширения файлов, которые он может обрабатывать.  
+ Прежде чем можно будет использовать созданный редактор, сначала необходимо зарегистрировать сведения о нем, включая расширения файлов, которые он может обменяться.  
   
- Если VSPackage записывается в управляемом коде, можно использовать метод Managed Package Framework (MPF) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для регистрации фабрики редактора, после загрузки VSPackage. Если VSPackage записывается в неуправляемом коде, то необходимо зарегистрировать фабрику редактора с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> службы.  
+ Если пакет VSPackage написан на управляемом коде, можно использовать метод Managed Package Framework (MPF) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для регистрации фабрики редактора после загрузки VSPackage. Если пакет VSPackage написан в неуправляемом коде, необходимо зарегистрировать фабрику редактора с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> службы.  
   
-### <a name="registering-an-editor-factory-by-using-managed-code"></a>Регистрация фабрику редактора с помощью управляемого кода  
- Необходимо зарегистрировать фабрику редактора в вашего VSPackage `Initialize` метод. Сначала вызвать `base.Initialize`, а затем вызвать <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для каждой фабрики редактора  
+### <a name="registering-an-editor-factory-by-using-managed-code"></a>Регистрация фабрики редактора с помощью управляемого кода  
+ Фабрику редактора необходимо зарегистрировать в `Initialize` методе VSPackage. Первый вызов `base.Initialize` , а затем вызов <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для каждой фабрики редактора  
   
- В управляемом коде нет необходимости отменить регистрацию фабрику редактора, поскольку VSPackage это будет сделано автоматически. Кроме того Если фабрикой редактора реализует <xref:System.IDisposable>, объект автоматически удаляется при отмене регистрации.  
+ В управляемом коде нет необходимости отменять регистрацию фабрики редактора, так как пакет VSPackage будет выполнять эту обработку. Кроме того, если фабрика редактора реализует <xref:System.IDisposable> , она автоматически удаляется при отмене регистрации.  
   
-### <a name="registering-an-editor-factory-by-using-unmanaged-code"></a>Регистрация фабрику редактора с помощью неуправляемого кода  
- В <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации для пакета редактора, используйте `QueryService` метод для вызова `SVsRegisterEditors`. Это возвращает указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> метод путем передачи реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс. Необходимо реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> в отдельном классе.  
+### <a name="registering-an-editor-factory-by-using-unmanaged-code"></a>Регистрация фабрики редактора с помощью неуправляемого кода  
+ В <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации для пакета редактора используйте `QueryService` метод для вызова `SVsRegisterEditors` . При этом возвращается указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors> . Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> метод, передав реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейса. Необходимо еализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> в отдельный класс.  
   
-## <a name="the-editor-factory-registration-process"></a>Процесс регистрации фабрики редактора  
- Следующая процедура выполняется, когда Visual Studio загружает редактора, с помощью фабрики редактора:  
+## <a name="the-editor-factory-registration-process"></a>Процесс регистрации фабрики редакторов  
+ Следующая процедура выполняется, когда Visual Studio загружает редактор с помощью фабрики редактора:  
   
-1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Проекта системные вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Система проектов вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> .  
   
-2. Этот метод возвращает фабрику редактора. Visual Studio задержки загрузки пакета редактора, тем не менее, пока система проектов необходимы редактора.  
+2. Этот метод возвращает фабрику редактора. Тем не менее Visual Studio задерживает загрузку пакета редактора, пока системе проектов действительно не понадобится редактор.  
   
-3. Редактор требованиями к системе проекта, Visual Studio вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, специализированный метод, который возвращает представление документа и документа объектов данных.  
+3. Когда системе проектов требуется редактор, Visual Studio вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> Специальный метод, который возвращает как представление документа, так и объекты данных документа.  
   
-4. Если вызовы в Visual Studio с помощью редактора фабрики <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> возвращают объект данных документа и объект представления документа, Visual Studio создает окно документа, помещает его в объекте представления документа затем делает запись в работающей документ Таблица (RDT) для объекта данных документа.  
+4. Если вызовы Visual Studio к фабрике редактора с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> возвращают как объект данных документа, так и объект представления документа, Visual Studio создает окно документа, помещает в него объект представления документа и выполняет запись в таблицу выполняемого документа (РДТ) для объекта данных документа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [Запуск таблицы документов](../extensibility/internals/running-document-table.md)

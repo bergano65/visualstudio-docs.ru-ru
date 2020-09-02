@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4c4200cb5a44e185d50158829fe44152707ee459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143044"
 ---
-# <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
+# <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Содержит сведения о свойстве отладки.  
+Содержит сведения о свойстве Debug.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,45 +51,45 @@ public struct DEBUG_PROPERTY_INFO { 
 ```  
   
 ## <a name="members"></a>Участники  
- dwValidFields  
- Сочетание флагов из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисление, указывающее, какие поля заполнены.  
+ дввалидфиелдс  
+ Сочетание флагов из перечисления [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , которое указывает, какие поля заполняются.  
   
- bstrFullName  
+ бстрфуллнаме  
  Полное имя свойства.  
   
  bstrName  
  Имя свойства в контексте.  
   
- bstrType  
- Тип свойства как отформатированную строку.  
+ бстртипе  
+ Тип свойства в виде форматированной строки.  
   
- bstrValue  
- Значение свойства как отформатированную строку.  
+ бстрвалуе  
+ Значение свойства в виде форматированной строки.  
   
- pProperty  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объекта, описанного этой структурой.  
+ ппроперти  
+ Объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , описываемый этой структурой.  
   
- dwAttrib  
- Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, описывающее атрибуты данного свойства.  
+ дваттриб  
+ Сочетание флагов из перечисления [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) , описывающее атрибуты этого свойства.  
   
-## <a name="remarks"></a>Примечания  
- Свойство является объектом иерархическую сущность, которая имеет имя, тип и значение. Например свойство можно описать, локальные переменные, параметры, переменные контрольных значений и выражений и регистров.  
+## <a name="remarks"></a>Remarks  
+ Свойство — это объект иерархической природы, имеющий имя, тип и значение. Например, свойство может описывать локальные переменные, параметры, контрольные переменные и выражения, а также регистры.  
   
- Эта структура передается [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод, где он заполняется. Эта структура также возвращается как часть списка этой структуры из [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) интерфейс, который, в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы.  
+ Эта структура передается в метод [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) , где она заполнена. Эта структура также возвращается как часть списка этой структуры из интерфейса [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , который, в свою очередь, возвращается из вызова методов [енумчилдрен](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [енумпропертиес](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
+ [енумчилдрен](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
  [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

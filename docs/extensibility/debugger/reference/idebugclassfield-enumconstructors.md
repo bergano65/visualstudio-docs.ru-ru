@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumConstructors Документы Майкрософт
+title: 'Идебугклассфиелд:: Енумконструкторс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 607f4f4af3021389628fcc1be446ebbe95628b7c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734466"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
-Создает регистратор для конструкторов для этого класса.
+Создает перечислитель для конструкторов этого класса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,20 +43,20 @@ int EnumConstructors(
 
 ## <a name="parameters"></a>Параметры
 `cMatch`\
-(в) Значение из [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) перечисления, которое определяет тип конструкторов для перечисления.
+окне Значение из перечисления [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) , указывающее тип конструкторов для перечисления.
 
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список конструкторов. Возвращает нулевую стоимость, если нет конструкторов.
+заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список конструкторов. Возвращает значение null, если нет конструкторов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращает S_OK или возвращает S_FALSE, если Нет конструкторов. В противном случае возвращается код ошибки.
+ В случае успеха возвращает S_OK или возвращает S_FALSE, если нет конструкторов. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Каждый элемент перечисления представляет собой объект [IDebugMethodField,](../../../extensibility/debugger/reference/idebugmethodfield.md) описывающий метод конструктора.
+## <a name="remarks"></a>Remarks
+ Каждый элемент перечисления — это объект [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md) , описывающий метод-конструктор.
 
- Список конструкторов обычно не включает конструкторы по умолчанию, поставляемые компилятором.
+ Список конструкторов обычно не включает конструкторы по умолчанию, предоставляемые компилятором.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

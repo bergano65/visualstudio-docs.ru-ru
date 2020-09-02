@@ -1,5 +1,5 @@
 ---
-title: Вариант формата отображения глубиной цвета 16 бит | Документация Майкрософт
+title: Вариант формата однобуферной прорисовки 16 бит/пкс | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157574"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Вариант формата однобуферной прорисовки 16 бит/пкс
@@ -47,7 +47,7 @@ ms.locfileid: "68157574"
  Так как формат B5G6R5 не имеет альфа-канала, альфа-содержимое не сохраняется при использовании этого варианта. Если приложение требует наличия альфа-канала в целевом объекте отрисовки, можно переключиться на формат B5G6R5.  
   
 ## <a name="example"></a>Пример  
- **Формат целевого объекта отрисовки глубиной цвета 16 бит** можно воспроизвести для целевых объектов отрисовки, созданных с помощью `CreateTexture2D` с помощью следующего кода:  
+ Вариант **формата целевого объекта отрисовки однобуферной** можно воспроизвести для целевых объектов прорисовки, созданных с помощью `CreateTexture2D` , используя следующий код:  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

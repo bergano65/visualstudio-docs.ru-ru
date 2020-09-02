@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fd209f65464126650106eb4509cd3de39ad8c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198066"
 ---
 # <a name="preemption-time"></a>Время вытеснения
@@ -33,5 +33,5 @@ ms.locfileid: "68198066"
   
   Подсказка к вытесненному сегменту содержит имя процесса или потока, который вызвал это вытеснение. Но это не подразумевает, что вытесненный процесс или поток в действительности выполняются во время периода вытеснения.  
   
-## <a name="see-also"></a>См. также  
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также:  
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

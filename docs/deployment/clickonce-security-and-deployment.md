@@ -18,31 +18,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d33e99d11007ca4684f3d875620e2baeb7ddc1e7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285513"
 ---
 # <a name="clickonce-security-and-deployment"></a>Развертывание и безопасность технологии ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— это технология развертывания, позволяющая создавать самостоятельно обновляемые приложения для Windows, которые можно устанавливать и запускать с минимальным участием пользователя. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]обеспечивает полную поддержку публикации и обновления приложений, развернутых с помощью технологии ClickOnce, если вы разработали проекты с помощью Visual Basic и Visual C#. Дополнительные сведения о развертывании Visual C++ приложений см. в разделе [Развертывание ClickOnce для Visual C++ приложений](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это технология развертывания, позволяющая создавать самостоятельно обновляемые приложения для Windows, которые можно устанавливать и запускать с минимальным участием пользователя. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с помощью технологии ClickOnce, если вы разработали проекты с помощью Visual Basic и Visual C#. Дополнительные сведения о развертывании Visual C++ приложений см. в разделе [Развертывание ClickOnce для Visual C++ приложений](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Развертывание переводит три основные проблемы в развертывании:
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Развертывание переводит три основные проблемы в развертывании:
 
 - **Трудности обновления приложений.** При развертывании Microsoft установщик Windows при каждом обновлении приложения пользователь может установить обновление, MSP-файл и применить его к установленному продукту. При [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывании обновления можно предоставлять автоматически. Загружаются только те части приложения, которые были изменены, а затем полное обновленное приложение переустанавливается из новой параллельной папки.
 
 - **Влияние на компьютер пользователя.** При развертывании установщик Windows приложения часто полагаются на общие компоненты, что может привести к конфликтам версий. При [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывании каждое приложение является автономным и не может мешать работе других приложений.
 
-- **Разрешения безопасности.** Для развертывания установщик Windows требуются административные разрешения. Это позволяет устанавливать только ограниченные пользователи. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]развертывание позволяет пользователям без прав администратора устанавливать и предоставлять только необходимые для приложения разрешения управления доступом для кода.
+- **Разрешения безопасности.** Для развертывания установщик Windows требуются административные разрешения. Это позволяет устанавливать только ограниченные пользователи. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывание позволяет пользователям без прав администратора устанавливать и предоставлять только необходимые для приложения разрешения управления доступом для кода.
 
   В прошлом эти проблемы иногда привели к тому, что разработчики решили создать веб-приложения, а не приложения на базе Windows, что позволит легко установить более мощный пользовательский интерфейс. С помощью приложений, развернутых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , можно использовать преимущества обеих технологий.
 
 ## <a name="what-is-a-clickonce-application"></a>Что такое приложение ClickOnce?
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Приложение — это любое Windows Presentation Foundation (*XBAP*), Windows Forms (*. exe*), консольное приложение (.*exe*) или решение Office (*DLL*), опубликованное с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] технологии. Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение тремя разными способами: с веб-страницы, из общей сетевой папки или с носителя, например с компакт-диска. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Приложение может быть установлено на компьютере конечного пользователя и выполняться локально даже в том случае, если компьютер находится в автономном режиме, или его можно запускать только в оперативном режиме без окончательной установки на компьютере конечного пользователя. Дополнительные сведения см. [в статье Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения могут обновляться самостоятельно; они могут проверять наличие новых версий по мере их появления и автоматически заменять все обновленные файлы. Разработчик может указать поведение обновления; сетевой администратор также может управлять стратегиями обновления, например, устанавливая обязательность обновления. Также можно выполнить откат обновлений до более ранней версии конечным пользователем или администратором. Дополнительные сведения см. [в статье Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут обновляться самостоятельно; они могут проверять наличие новых версий по мере их появления и автоматически заменять все обновленные файлы. Разработчик может указать поведение обновления; сетевой администратор также может управлять стратегиями обновления, например, устанавливая обязательность обновления. Также можно выполнить откат обновлений до более ранней версии конечным пользователем или администратором. Дополнительные сведения см. [в статье Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
- Поскольку [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения изолированы, установка или запуск [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения не могут нарушить работу существующих приложений. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения автономны; Каждое [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение устанавливается и запускается из безопасного кэша на уровне пользователя и приложения. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения выполняются в зонах безопасности Интернета или интрасети. При необходимости приложение может запросить повышение прав. Дополнительные сведения см. в разделе [безопасные приложения ClickOnce](../deployment/securing-clickonce-applications.md).
+ Поскольку [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения изолированы, установка или запуск [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения не могут нарушить работу существующих приложений. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения автономны; Каждое [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение устанавливается и запускается из безопасного кэша на уровне пользователя и приложения. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения выполняются в зонах безопасности Интернета или интрасети. При необходимости приложение может запросить повышение прав. Дополнительные сведения см. в разделе [безопасные приложения ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ## <a name="how-clickonce-security-works"></a>Принцип работы системы безопасности ClickOnce
  Основная [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] безопасность основана на сертификатах, политиках управления доступом для кода и запросе о доверии ClickOnce.
@@ -94,12 +94,12 @@ ms.locfileid: "85285513"
 |Инструмент|Описание|
 |----------|-----------------|
 |[Страница "Безопасность" в конструкторе проектов](../ide/reference/security-page-project-designer.md)|Подписывает манифесты приложения и развертывания.|
-|[Страница "публикация" в конструкторе проектов](../ide/reference/publish-page-project-designer.md)|Создает и редактирует манифесты приложения и развертывания для Visual Basic и приложений Visual C#.|
+|[Страница публикации в конструкторе проектов](../ide/reference/publish-page-project-designer.md)|Создает и редактирует манифесты приложения и развертывания для Visual Basic и приложений Visual C#.|
 |[*Mage.exe* (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Создает манифесты приложения и развертывания для Visual Basic, Visual C# и Visual C++ приложений.<br /><br /> Подписывает и повторно подписывает манифесты приложения и развертывания.<br /><br /> Может выполняться из пакетных скриптов и из командной строки.|
 |[*MageUI.exe* (инструмент создания и изменения манифестов, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Создает и редактирует манифесты приложения и развертывания.<br /><br /> Подписывает и повторно подписывает манифесты приложения и развертывания.|
-|[Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)|Создает манифест приложения.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справка по MSBuild](../msbuild/msbuild-reference.md).|
-|[Задача задача generatedeploymentmanifest](../msbuild/generatedeploymentmanifest-task.md)|Создает манифест развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справка по MSBuild](../msbuild/msbuild-reference.md).|
-|[Задача задача SignFile](../msbuild/signfile-task.md)|Подписывает манифесты приложения и развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в разделе [Справка по MSBuild](../msbuild/msbuild-reference.md).|
+|[GenerateApplicationManifest - задача](../msbuild/generateapplicationmanifest-task.md)|Создает манифест приложения.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в [справочнике по MSBuild](../msbuild/msbuild-reference.md).|
+|[GenerateDeploymentManifest - задача](../msbuild/generatedeploymentmanifest-task.md)|Создает манифест развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в [справочнике по MSBuild](../msbuild/msbuild-reference.md).|
+|[SignFile - задача](../msbuild/signfile-task.md)|Подписывает манифесты приложения и развертывания.<br /><br /> Можно запустить из MSBuild. Дополнительные сведения см. в [справочнике по MSBuild](../msbuild/msbuild-reference.md).|
 |[Microsoft.Build.Tasks.Deployment.ManifestUtilities](/dotnet/api/microsoft.build.tasks.deployment.manifestutilities)|Разрабатывайте собственное приложение для создания манифестов приложения и развертывания.|
 
  В следующей таблице показана версия .NET Framework, необходимая для поддержки приложений ClickOnce в этих браузерах.
@@ -108,10 +108,10 @@ ms.locfileid: "85285513"
 |-------------|----------------------------|
 |Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|
 |Firefox|2.0 SP1, 3.5 SP1, 4|
-|Chrome|3.5|
-|Microsoft Edge|3.5|
+|Chrome|3,5|
+|Microsoft Edge|3,5|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Развертывание ClickOnce в Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)

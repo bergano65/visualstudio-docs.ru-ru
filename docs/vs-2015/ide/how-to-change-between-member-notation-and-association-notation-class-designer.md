@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a9a15b7284c647cb115c34b5655bdcaa7402ce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663568"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации (конструктор классов)
@@ -46,5 +46,5 @@ ms.locfileid: "72663568"
 
      Линия связи исчезнет, и свойство отобразится в соответствующей секции в фигуре типа на схеме.
 
-## <a name="see-also"></a>См. также раздел
- [Как создать наследование между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md) [как просмотреть наследование между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md) [просмотр типов и связей (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md) [как визуализировать ассоциацию коллекции (конструктор классов) ](../ide/how-to-visualize-a-collection-association-class-designer.md)
+## <a name="see-also"></a>См. также:
+ [Как создать наследование между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md) [как просмотреть наследование между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md) [просмотр типов и связей (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md) [как визуализировать ассоциацию коллекции (конструктор классов)](../ide/how-to-visualize-a-collection-association-class-designer.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538324"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Как добавить элементы управления ListObject на листы
@@ -37,7 +37,7 @@ ms.locfileid: "85538324"
 
   Дополнительные сведения об элементах <xref:Microsoft.Office.Tools.Excel.ListObject> управления см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
-## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a>Добавление элементов управления ListObject во время разработки
+## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Добавление элементов управления ListObject во время разработки
  Существует несколько способов добавления <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов**Visual Studio и из окна **Источники данных** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "85538324"
 
      Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится в лист. Дополнительные сведения см. в разделе [Привязка данных и Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Добавление элементов управления ListObject во время выполнения в проекте уровня документа
+## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Добавление элементов управления ListObject во время выполнения в проекте уровня документа
  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять динамически во время выполнения. Это позволяет создавать элементы управления ведущего приложения при возникновении определенных событий. При закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Добавление элемента управления ListObject в лист программными средствами
@@ -76,7 +76,7 @@ ms.locfileid: "85538324"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO
+## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO
  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO. При сохранении и закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. [в разделе Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Добавление элемента управления ListObject в лист программными средствами
@@ -86,7 +86,7 @@ ms.locfileid: "85538324"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [ListObject - элемент управления](../vsto/listobject-control.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetFunctionObject | Документация Майкрософт
+title: 'Идебугбиндер:: Жетфунктионобжект | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a2a55285684c5aa93cc5876fb06c69c809d8b01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157308"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод возвращает [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) объект, используемый для создания параметров функции.  
+Этот метод получает объект [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) , используемый для создания параметров функции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,11 +40,11 @@ int GetFunctionObject(
   
 #### <a name="parameters"></a>Параметры  
  `ppFunction`  
- [out] Возвращает [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс, который используется для создания параметров функции.  
+ заполняет Возвращает интерфейс [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) , используемый для создания параметров функции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

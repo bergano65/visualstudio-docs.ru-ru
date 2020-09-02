@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538311"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Как создавать обработчики событий в проектах Office
@@ -42,7 +42,7 @@ ms.locfileid: "85538311"
 
 ### <a name="to-create-an-event-handler-in-c"></a>Создание обработчика событий на языке C\#
 
-1. Создайте делегат события в событии **Startup** класса, введя полное имя события, за которым следует пробел, а затем введите без **+=** пробела. Пример.
+1. Создайте делегат события в событии **Startup** класса, введя полное имя события, за которым следует пробел, а затем введите без **+=** пробела. Пример:
 
      `this.<object name>.<event name> +=`
 
@@ -50,7 +50,7 @@ ms.locfileid: "85538311"
 
      Visual Studio автоматически завершает строку кода, создает обработчик событий и перемещает точку вставки в созданный обработчик событий.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
 - [Пошаговое руководство. Программирование событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Создание решений Office](../vsto/building-office-solutions.md)

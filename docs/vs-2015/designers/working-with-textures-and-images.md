@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93813aa734c615e7f045c98c776e600be4ee3fab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663935"
 ---
 # <a name="working-with-textures-and-images"></a>Работа с текстурами и изображениями
@@ -45,5 +45,5 @@ ms.locfileid: "72663935"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|Сведения об использовании редактора изображений для работы с текстурами и изображениями.|
+|[Редактор изображений](../designers/image-editor.md)|Сведения об использовании редактора изображений для работы с текстурами и изображениями.|
 |[Примеры редактора изображений](../designers/image-editor-examples.md)|Раздел содержит ссылки на статьи, в которых демонстрируется использование редактора изображений для выполнения распространенных задач обработки изображений.|

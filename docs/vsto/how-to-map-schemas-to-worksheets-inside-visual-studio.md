@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538142"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Как сопоставлять схемы с листами в Visual Studio
@@ -65,6 +65,6 @@ ms.locfileid: "85538142"
 
      При перетаскивании повторяющегося элемента схемы проект Office создает <xref:Microsoft.Office.Tools.Excel.ListObject> элемент управления, который не привязывается автоматически к источнику данных. Дополнительные сведения см. [в разделе XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Как сопоставлять схемы с документами Word в Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [XML-схемы и данные в настройках уровня документа](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538298"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Инструкции. Добавление пользовательских XML-частей в документы с помощью надстроек VSTO
@@ -81,6 +81,6 @@ ms.locfileid: "85538298"
 ## <a name="robust-programming"></a>Отказоустойчивость
  Для простоты в этом примере используется XML-строка, которая определена как локальная переменная в методе. Обычно следует получать XML из внешнего источника, например файла или базы данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о пользовательских XML-частях](../vsto/custom-xml-parts-overview.md)
 - [Как добавить пользовательские XML-части в настройки уровня документа](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

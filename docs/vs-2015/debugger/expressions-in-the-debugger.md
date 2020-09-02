@@ -1,5 +1,5 @@
 ---
-title: Выражения в Debugger (англ.) Документы Майкрософт
+title: Выражения в отладчике | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301419"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315035"
 ---
 # <a name="expressions-in-the-debugger"></a>Выражения в отладчике
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ int main()
 |**Поиск строки**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Для этих функций требуется, чтобы отлаживаемый процесс выполнялся в Windows 8. Для отладки файлов дампа, сгенерированных устройством Windows 8, также необходимо, чтобы компьютер Visual Studio работал под управлением Windows 8. В то же время, если устройство Windows 8 отлаживается удаленно, допускается работа компьютера Visual Studio под управлением Windows 7.|  
-|**Разное**|__log2<br /><br /> Возвращает значение логарифма по основанию 2 от указанного целого числа, округленное до ближайшего меньшего целого числа.|  
+|**Прочее**|__log2<br /><br /> Возвращает значение логарифма по основанию 2 от указанного целого числа, округленное до ближайшего меньшего целого числа.|  
   
 ## <a name="ccli---unsupported-expressions"></a>Неподдерживаемые выражения C++/CLI  
   
@@ -215,7 +215,7 @@ int main()
 - Ключевые слова пространства имен или уровня модуля, например `End Sub` или `Module`.  
   
 ## <a name="see-also"></a>См. также:  
- [Спекулянты формата в СЗ](../debugger/format-specifiers-in-cpp.md)   
- [Оператор контекста (КЗ)](../debugger/context-operator-cpp.md)   
- [Спецификаторы формата в C #](../debugger/format-specifiers-in-csharp.md)   
+ [Описатели формата в C++](../debugger/format-specifiers-in-cpp.md)   
+ [Оператор контекста (C++)](../debugger/context-operator-cpp.md)   
+ [Описатели формата в C #](../debugger/format-specifiers-in-csharp.md)   
  [Псевдопеременные](../debugger/pseudovariables.md)

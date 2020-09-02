@@ -1,5 +1,5 @@
 ---
-title: Элемент UsedCommands | Документация Майкрософт
+title: Элемент Уседкоммандс | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186295"
 ---
 # <a name="usedcommands-element"></a>Элемент UsedCommands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Элемент UsedCommands группирует элементы UsedCommand и другими признаками UsedCommands.  
+Элемент Уседкоммандс группирует элементы Уседкомманд и другие группирования Уседкоммандс.  
   
- Элемент UsedCommands является необязательным. Если вы не вызываете команды, определенные за пределами пакета, у вас нет для включения в этом разделе в вашей vsct-файл.  
+ Элемент Уседкоммандс является необязательным. Если не вызывать команды, определенные за пределами пакета, не нужно включать этот раздел в файл. vsct.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,19 +42,19 @@ ms.locfileid: "68186295"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент UsedCommand](../extensibility/usedcommand-element.md)|Команда, которая реализуется другим кодом.|  
+|[Элемент UsedCommand](../extensibility/usedcommand-element.md)|Команда, реализованная другим кодом.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды (например, элементы меню, меню, панелей инструментов и поля со списком), предоставляемых VSPackage интегрированной среды разработки (IDE).|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, пункты меню, меню, панели инструментов и поля со списком), предоставляемые пакетом VSPackage в интегрированной среде разработки (IDE).|  
   
 ## <a name="example"></a>Пример  
   
@@ -66,6 +66,6 @@ ms.locfileid: "68186295"
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Элемент UsedCommand](../extensibility/usedcommand-element.md)   
+## <a name="see-also"></a>См. также:  
+ [Уседкомманд, элемент](../extensibility/usedcommand-element.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

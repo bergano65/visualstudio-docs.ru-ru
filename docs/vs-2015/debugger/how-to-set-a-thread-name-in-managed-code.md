@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка имени потока в управляемом коде | Документация Майкрософт
+title: Практическое руководство. Задание имени потока в управляемом коде | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157670"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Практическое руководство. установку имени потока в управляемом коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков позволяет отслеживать их в окне **Потоки**. Так как **потоков** окно будет недоступно в выпусках Visual Studio Express, именование потоков не имеет практического смысла в выпусках Express.  
+Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков позволяет отслеживать их в окне **Потоки**. Поскольку окно " **потоки** " недоступно в выпусках Visual Studio Express, Именование потоков не имеет малой служебной программы в выпусках Express.  
   
  Чтобы задать имя потока в управляемом коде, используйте свойство <xref:System.Threading.Thread.Name%2A>.  
   
@@ -55,6 +55,6 @@ Sub Main()
 End Sub  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Практическое руководство. Установка имен потока в машинном коде](../debugger/how-to-set-a-thread-name-in-native-code.md)

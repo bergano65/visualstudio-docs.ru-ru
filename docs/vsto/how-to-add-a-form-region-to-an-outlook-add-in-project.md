@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538402"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Как добавить область формы в проект надстройки Outlook
@@ -60,11 +60,11 @@ ms.locfileid: "85538402"
 
      Все типы областей формы могут отображаться в инспекторах, в режиме создания (для создания элементов) и в режиме чтения (для просмотра элементов). Типы областей формы "Смежные", "Заменить" и "Заменить все" также могут отображаться в области чтения.
 
-10. Щелкните **Далее**.
+10. Нажмите кнопку **Далее**.
 
 11. На странице **Укажите классы сообщений, в которых будет отображаться эта область формы** выберите стандартный класс сообщений Outlook или введите имена одного или нескольких пользовательских классов сообщений и нажмите кнопку **Готово**. Дополнительные сведения см. в разделе [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)
 - [Решения Outlook](../vsto/outlook-solutions.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)

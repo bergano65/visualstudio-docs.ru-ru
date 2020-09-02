@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer Документы Майкрософт
+title: 'Идебугклассфиелд:: Жетдефаултиндексер | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734423"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
-Получает имя индекса по умолчанию.
+Возвращает имя индексатора по умолчанию.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>Параметры
-`pbstrIndexer`(ваут) Возвращает строку, содержащую имя индекса по умолчанию.
+`pbstrIndexer` заполняет Возвращает строку, содержащую имя индексатора по умолчанию.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращает S_OK или возвращает S_FALSE, если нет индекса по умолчанию. В противном случае возвращается код ошибки.
+ В случае успеха возвращает S_OK или возвращает значение S_FALSE, если индексатор по умолчанию отсутствует. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Индексируемым по умолчанию класса — это `Default` свойство, которое помечено как свойство для доступа к массиву. Это характерно [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]для . Вот пример индекса по умолчанию, декларируемого в [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] и как он используется.
+## <a name="remarks"></a>Remarks
+ Индексатором по умолчанию для класса является свойство, которое помечено как `Default` свойство для доступа к массиву. Это относится только к [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] . Ниже приведен пример индексатора по умолчанию, объявленного в [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] и его использования.
 
 ```vb
 Imports System.Collections;
@@ -78,5 +78,5 @@ Function GetItem(Index as Integer) as Integer
 End Function
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

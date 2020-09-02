@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143776"
 ---
 # <a name="msbuild-conditional-constructs"></a>Условные конструкции MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] предоставляет механизм для обработки условий "либо-либо" с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) и [Otherwise](../msbuild/otherwise-element-msbuild.md).  
+[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] предоставляет механизм для обработки или (или) с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [when](../msbuild/when-element-msbuild.md)и [Otherwise](../msbuild/otherwise-element-msbuild.md) .  
   
 ## <a name="using-the-choose-element"></a>Использование элемента Choose  
  Элемент `Choose` содержит ряд элементов `When` с атрибутами `Condition`, которые проверяются в порядке сверху вниз, пока один из них не даст значение `true`. Если значение `true` дают несколько элементов `When`, используется только первый из них. Если ни одно из условий элемента `When` не дает значение `true`, вычисляется элемент `Otherwise` (при его наличии).  
@@ -79,8 +79,8 @@ ms.locfileid: "68143776"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [Элемент When (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Элемент Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)
