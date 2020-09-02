@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646976"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
@@ -53,6 +53,6 @@ ms.locfileid: "72646976"
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий шаг руководства см. в разделе [Step 8: Customize the Quiz](../ide/step-8-customize-the-quiz.md) (Шаг 8. Настройка головоломки).
+- Следующий шаг руководства см. в разделе [Шаг 8. Настройка головоломки](../ide/step-8-customize-the-quiz.md).
 
-- Предыдущий шаг руководства см. в разделе [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md) (Шаг 6. Добавление задачи на вычитание).
+- Чтобы вернуться к предыдущему шагу руководства, см. [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).

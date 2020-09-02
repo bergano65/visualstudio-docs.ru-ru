@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2 Документы Майкрософт
+title: IDebugProgramProvider2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721692"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-Этот зарегистрированный интерфейс позволяет диспетчеру отладки сеанса (SDM) получать информацию о программах, которые были "опубликованы" через интерфейс [IDebugProgramPublisher2.](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
+Этот зарегистрированный интерфейс позволяет диспетчеру отладки сеансов (SDM) получать сведения о программах, опубликованных через интерфейс [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,28 +28,28 @@ ms.locfileid: "80721692"
 IDebugProgramProvider2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
-Движок отладки (DE) реализует этот интерфейс, чтобы предоставить информацию о отладке программ. Этот интерфейс зарегистрирован в разделе DE реестра `metricProgramProvider`с использованием метрики, как описано в [SDK Helpers для отладки.](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+Модуль отладки (DE) реализует этот интерфейс для предоставления сведений о отлаживаемой программе. Этот интерфейс регистрируется в разделе DE реестра с использованием метрики `metricProgramProvider` , как описано в [вспомогательных средствах SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
-Позвоните `CoCreateInstance` `CLSID` функции COM с поставщиком программы, который получен из реестра. Смотрите пример.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Вызовите `CoCreateInstance` функцию COM с помощью `CLSID` поставщика программы, полученного из реестра. См. пример.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
+## <a name="methods-in-vtable-order"></a>Методы в порядке vtable
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Получает информацию о запущенных программах, отфильтрованных различными способами.|
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Получает узл программы, учитывая определенный идентификатор процесса.|
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Устанавливает обратный вызов для просмотра событий поставщика, связанных с определенными видами процессов.|
-|[Setlocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Устанавливает язык для любых языковых ресурсов, необходимых DE.|
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Получение сведений о выполняющихся и фильтруемых программах различными способами.|
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Возвращает узел программы по указанному ИДЕНТИФИКАТОРу процесса.|
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Устанавливает обратный вызов для отслеживания событий поставщика, связанных с определенными видами процессов.|
+|[Pragma](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Устанавливает языковой стандарт для всех зависящих от языка ресурсов, необходимых для DE.|
 
-## <a name="remarks"></a>Примечания
-Как правило, процесс использует этот интерфейс, чтобы узнать о программах, работающих в этом процессе.
+## <a name="remarks"></a>Remarks
+Как правило, процесс использует этот интерфейс, чтобы узнать о программах, выполняющихся в этом процессе.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
@@ -82,7 +82,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

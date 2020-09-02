@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1717c17a3a881d138b566f37e07456ded16f22c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197724"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Кнопка экспорта (визуализатор параллелизма)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Кнопка **Экспорт** позволяет экспортировать стек вызовов в виде CSV-файла для собственных записей пользователя или для использования в другом средстве, например Microsoft Excel.  
+Кнопка **Экспорт** позволяет экспортировать стек вызовов в виде CSV-файла для собственных записей или для использования с другим средством, например Microsoft Excel.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)   
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

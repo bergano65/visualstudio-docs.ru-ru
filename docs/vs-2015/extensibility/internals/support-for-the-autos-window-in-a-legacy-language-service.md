@@ -1,5 +1,5 @@
 ---
-title: Поддержка окно видимых переменных в языковой службе прежних версий | Документация Майкрософт
+title: Поддержка окна "видимые" в устаревшей языковой службе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,28 +12,28 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 01d2046d7693b23865555abb06962dead4a435ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157595"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Поддержка окна видимых переменных в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**"Видимые"** окне отображаются выражения, такие как переменные и параметры, которые находятся в области, при приостановке отлаживаемой программы (из-за точки останова или исключение). Выражения могут включать переменные, локальные или глобальные и параметры, которые были изменены в локальной области. **"Видимые"** окна можно также включить экземпляров класса, структуры или другого типа. Все, что позволяет оценить вычислитель выражений потенциально могут быть отображены в **"Видимые"** окна.  
+В окне **видимые** отображаются такие выражения, как переменные и параметры, которые находятся в области действия при приостановке отлаживаемой программы (из-за точки останова или исключения). Выражения могут включать в себя переменные, локальные или глобальные, а также параметры, измененные в локальной области. Окно **видимые** может также содержать экземпляры класса, структуры или другого типа. Все, что может вычислить средство оценки выражений, потенциально может быть показано в окне **видимые** .  
   
- Managed package framework (MPF) не поддерживает прямую поддержку **"Видимые"** окна. Тем не менее если переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метод, может возвращать список выражений должен обязательно присутствовать в **"Видимые"** окна.  
+ Платформа управляемого пакета (MPF) не обеспечивает прямую поддержку для окна " **видимые** ". Однако при переопределении <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метода можно возвратить список выражений, которые должны быть представлены в окне **видимые** .  
   
-## <a name="implementing-support-for-the-autos-window"></a>Реализация поддержки для окна "Видимые"  
- Все что нужно сделать для поддержки **"Видимые"** окно заключается в реализации <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса. Реализация необходимо решить, заданную расположением в исходном файле, которые должны отображаться выражения в **"Видимые"** окна. Метод возвращает список строк, в которых каждая строка представляет одно выражение. Возвращаемое значение, равное <xref:Microsoft.VisualStudio.VSConstants.S_OK> указывает, что список содержит выражения, хотя <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> указывает, что отсутствуют выражения для отображения.  
+## <a name="implementing-support-for-the-autos-window"></a>Реализация поддержки для окна "видимые"  
+ Все, что необходимо сделать для поддержки окна **видимые** , — это реализовать <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> классе. Ваша реализация должна принять решение, учитывая расположение в исходном файле, какие выражения должны отображаться в окне **видимые** . Метод возвращает список строк, в которых каждая строка представляет одно выражение. Возвращаемое значение <xref:Microsoft.VisualStudio.VSConstants.S_OK> указывает, что список содержит выражения, а <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> указывает, что нет выражений для отображения.  
   
- Фактический выражений, возвращенных являются имена переменных или параметров, которые отображаются в этом расположении, в коде. Эти имена передаются средству оценки выражений для получения значения и типы, которые затем отображаются в **"Видимые"** окна.  
+ Фактически возвращаемые выражения — это имена переменных или параметров, которые отображаются в этом месте кода. Эти имена передаются средству оценки выражений для получения значений и типов, которые затем отображаются в окне **видимые** .  
   
 ### <a name="example"></a>Пример  
- В следующем примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метод, который возвращает список выражений из <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод, используя причину синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. Каждое из выражений упаковывается как `TestVsEnumBSTR` , реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> интерфейс.  
+ В следующем примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метода, который получает список выражений из <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метода, используя причину синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> . Каждое из выражений упаковывается как объект `TestVsEnumBSTR` , реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> интерфейс.  
   
- Обратите внимание, что `GetAutoExpressionsCount` и `GetAutoExpression` методы являются пользовательские методы на `TestAuthoringSink` объекта и были добавлены для поддержки в этом примере. Они представляют один из способов, в какие выражения, добавляемые `TestAuthoringSink` объекта средством синтаксического анализа (путем вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> метода) можно использовать за пределами средство синтаксического анализа.  
+ Обратите внимание, что `GetAutoExpressionsCount` `GetAutoExpression` методы и являются пользовательскими методами `TestAuthoringSink` объекта и были добавлены для поддержки этого примера. Они представляют один из способов, с помощью которых выражения, добавляемые в `TestAuthoringSink` объект средством синтаксического анализа (путем вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> метода), доступны вне средства синтаксического анализа.  
   
 ```csharp  
 using Microsoft.VisualStudio;  

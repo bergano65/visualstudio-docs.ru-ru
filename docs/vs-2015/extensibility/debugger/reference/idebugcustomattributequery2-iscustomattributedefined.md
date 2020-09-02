@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Документация Майкрософт
+title: 'IDebugCustomAttributeQuery2:: Искустоматтрибутедефинед | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6ef6a04d263e322d408bb7d7c95da1929d89010c
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569323"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>Параметры  
  `pszCustomAttributeName`  
- [in] Строка, содержащая имя настраиваемого атрибута для поиска.  
+ окне Строка, содержащая имя настраиваемого атрибута для поиска.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает значение S_OK, если настраиваемого атрибута определен на это поле, в противном случае возвращает значение S_FALSE.  
+ Возвращает S_OK, если для этого поля определен настраиваемый атрибут, в противном случае возвращает значение S_FALSE.  
   
-## <a name="remarks"></a>Примечания  
- Чтобы получить атрибут байт, связанных с помощью настраиваемого атрибута, вызовите [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Чтобы получить байты атрибутов, связанные с пользовательским атрибутом, вызовите метод [жеткустоматтрибутебинаме](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

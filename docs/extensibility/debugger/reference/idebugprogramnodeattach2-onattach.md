@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNodeAttach2::OnAttach Документы Майкрософт
+title: 'IDebugProgramNodeAttach2:: onattach | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dfb8a39af3c030dadddcb148a79a96b57f20e183
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721873"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
-Прикрепляется к сопутствуеной программе или откладывает процесс присоединения к методу [присоединения.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+Присоединяется к связанной программе или откладывает процесс присоединения к методу [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int OnAttach(
 
 ## <a name="parameters"></a>Параметры
 `guidProgramId`\
-(в) `GUID` присваивать сяваемую программу.
+[входные] `GUID` для назначения связанной программе.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха возвращает `S_OK`. Возвращает, `S_FALSE` если метод [присоединения](../../../extensibility/debugger/reference/idebugengine2-attach.md) не должен вызываться. В противном случае возвращается код ошибки.
+ В случае успеха возвращает `S_OK`. Возвращает значение `S_FALSE` , если метод [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) не должен вызываться. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод вызывается во время процесса присоединения, прежде чем метод [присоединения](../../../extensibility/debugger/reference/idebugengine2-attach.md) называется. Метод `OnAttach` может выполнять процесс присоединения себя (в этом `S_FALSE`случае, этот метод возвращается) `OnAttach` или `S_OK`отложить процесс присоединения к методу `IDebugEngine2::Attach` (метод возвращается). В любом случае `OnAttach` метод может `GUID` настроить отладку программы в `GUID`данную.
+## <a name="remarks"></a>Remarks
+ Этот метод вызывается во время процесса присоединения до вызова метода [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) . `OnAttach`Метод может выполнить сам процесс присоединения (в этом случае этот метод возвращает `S_FALSE` ) или отложить процесс присоединения к `IDebugEngine2::Attach` методу ( `OnAttach` метод возвращает `S_OK` ). В любом из этих событий `OnAttach` метод может задать для `GUID` отлаживаемой программы заданный объект `GUID` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

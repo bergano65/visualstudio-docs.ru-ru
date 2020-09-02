@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4d363b554babfbac994d9ec71eddbefd68f38d50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562820"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>Деструктор marker_series::~marker_series
+# <a name="marker_seriesmarker_series-destructor"></a>Деструктор marker_series::~marker_series
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Удаляет объект marker_series и освобождает все выделенные ресурсы.  
@@ -36,5 +36,5 @@ ms.locfileid: "62562820"
   
  **Пространство имен:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Класс marker_series](../profiling/marker-series-class.md)

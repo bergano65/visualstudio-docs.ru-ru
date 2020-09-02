@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145546"
 ---
 # <a name="threadon-and-threadoff"></a>Параметры ThreadOn и ThreadOff
@@ -47,13 +47,13 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Допустимые параметры  
  Подкоманды **ThreadOnn** и **ThreadOff** можно задать в командной строке, содержащей указанные ниже подкоманды.  
   
- **Start:** `Method`  
+ **Начало работы:**`Method`  
  Инициализирует сеанс профилирования из командной строки и задает указанный метод профилирования.  
   
  **GlobalOff**&#124;**GlobalOn**  
  Начинает или останавливает профилирование для всех процессов сеанса профилирования из командной строки.  
   
- {**ProcessOff** | **ProcessOn**} **:** `TID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:**`TID`  
  Останавливает или запускает профилирование указанного процесса.  
   
 ## <a name="example"></a>Пример  
@@ -71,8 +71,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

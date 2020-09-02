@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Next | Microsoft Docs
+title: 'IEnumDebugCodeContexts2:: Next | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 011c3c53276445924deb9be5f7a540929f3f8a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551818"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает следующий набор элементов из перечисления.  
+Возвращает следующий набор из перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,17 +44,17 @@ int Next(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.  
+ [in] Количество получаемых элементов. Также указывает максимальный размер `rgelt` массива.  
   
  `rgelt`  
- [in, out] Массив [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) элементов для заполнения.  
+ [вход, выход] Массив элементов [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , которые должны быть заполнены.  
   
  `pceltFetched`  
- [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.  
+ заполняет Возвращает количество элементов, фактически возвращаемых в `rgelt` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если может быть возвращено меньше запрошенного числа элементов; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

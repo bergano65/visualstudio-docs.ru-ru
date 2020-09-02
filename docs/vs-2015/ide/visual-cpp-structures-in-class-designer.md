@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc9c09c5f92c4193d3d3f58c819f4bc0fc9aaebf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646767"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Структуры Visual C++ в конструкторе классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Конструктор классов поддерживает те структуры C++, которые объявлены с использованием ключевого слова `struct`. Ниже представлен пример.
+Конструктор классов поддерживает те структуры C++, которые объявлены с использованием ключевого слова `struct`. Ниже приведен пример:
 
 ```
 struct MyStructure
@@ -36,9 +36,9 @@ struct MyStructure
 
  Фигура структуры C++ на схеме классов выглядит так же, как фигура класса, но при этом она содержит надпись **Структура** и имеет квадратные, а не скругленные углы.
 
-|Элемент кода|Представление конструктора классов|
+|Code, элемент|Представление конструктора классов|
 |------------------|-------------------------|
 |`struct StructureName {};`|**StructureName**<br /><br /> Структура|
 
-## <a name="see-also"></a>См. также
- [C++ Работа с](../ide/working-with-visual-cpp-code-class-designer.md) [структурами](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6) [классов и структур](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) Visual Code (конструктор классов)
+## <a name="see-also"></a>См. также:
+ Работа с [структурами](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6) [классов и](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) структур [Visual C++ Code (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostPid Документы Майкрософт
+title: 'IDebugProgramNode2:: Жесостпид | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722032"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-Получает идентификатор системного процесса для процесса размещения программы.
+Возвращает идентификатор системного процесса для процесса, в котором размещена программа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetHostPid ( 
 
 ## <a name="parameters"></a>Параметры
 `pdwHostPid`\
-(ваут) Возвращает идентификатор системного процесса для процесса хостинга.
+заполняет Возвращает идентификатор системного процесса для ведущего процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как `CProgram` реализовать этот метод для простого объекта, который реализует интерфейс [IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+ В следующем примере показано, как реализовать этот метод для простого `CProgram` объекта, реализующего интерфейс [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
@@ -62,5 +62,5 @@ HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

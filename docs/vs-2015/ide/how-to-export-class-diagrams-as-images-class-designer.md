@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f23ca72f8251cca26e2b636978fdb25ab302962d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667937"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Практическое руководство. Экспорт схем классов как изображений (конструктор классов)
@@ -37,5 +37,5 @@ ms.locfileid: "72667937"
 
      Чтобы автоматически обновить экспортированные изображения, на которые есть ссылки в других документах, еще раз экспортируйте схему в Visual Studio.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как печатать схемы классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md) [Работа с диаграммами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)

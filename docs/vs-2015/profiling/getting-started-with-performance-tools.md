@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158218"
 ---
 # <a name="getting-started-with-performance-tools"></a>Приступая к работе со средствами производительности
@@ -32,14 +32,14 @@ ms.locfileid: "68158218"
   
 ## <a name="common-tasks"></a>Общие задачи  
   
-|Задача|См. также|  
+|Задача|Связанное содержимое|  
 |----------|---------------------|  
-|**Быстрое профилирование приложения или веб-сайта:** Используйте мастер производительности, чтобы настроить и запустить сеанс профилирования для решения Visual Studio или веб-сайта.|-   [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Практическое руководство. Сбор данных о производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Профилирование приложения без мастера:** Узнайте, как использовать страницы свойств сеанса анализа производительности для создания сеанса анализа производительности.|-   [Практическое руководство. Создание сеансов анализа производительности вручную](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Практическое задание.** Получите практический опыт профилирования примера приложения.|-   [Пошаговое руководство: Выявление проблем с производительностью](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Пример PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**Быстрое профилирование приложения или веб-сайта:** с помощью мастера производительности можно настроить и запустить сеанс профилирования для решения Visual Studio или веб-сайта.|-   [Обзор профилирования производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Руководство. получение данных о производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**Профилирование приложения без мастера:** узнайте, как использовать страницы свойств сеанса анализа производительности для создания сеанса производительности.|-   [Как создать сеансы производительности вручную](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**Попробуйте:** получите практический опыт профилирования, используя пример приложения.|-   [Пошаговое руководство. Определение проблем с производительностью](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Пример PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>См. также  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
  [Анализ данных средств производительности](../profiling/analyzing-performance-tools-data.md)   
  [Использование правил производительности для анализа данных](../profiling/using-performance-rules-to-analyze-data.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

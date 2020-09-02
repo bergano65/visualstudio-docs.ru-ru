@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f283c2c1825c4b8b02fb5b044ce113231a919317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646848"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -32,12 +32,12 @@ ms.locfileid: "72646848"
 ```
 
 #### <a name="parameters"></a>Параметры
- `locid` Необязательный. Идентификатор для сведений о локализации для функции или метода. Идентификатор является идентификатором члена или соответствует значению атрибута `name` в наборе сообщений, определенном метаданными OpenAjax. Тип идентификатора зависит от формата, указанного в элементе [\<loc>](../ide/loc-javascript.md).
+ `locid` Необязательный. Идентификатор для сведений о локализации для функции или метода. Идентификатор является идентификатором члена или соответствует значению атрибута `name` в наборе сообщений, определенном метаданными OpenAjax. Тип идентификатора зависит от формата, указанного в [\<loc>](../ide/loc-javascript.md) элементе.
 
  `description` Необязательный. Описание функции или метода.
 
-## <a name="remarks"></a>Примечания
- Элементы, используемые для добавления примечаний к функциям, которые включают [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) и [\<returns>](../ide/returns-javascript.md), должны быть помещены в тело функции до всех операторов.
+## <a name="remarks"></a>Remarks
+ Элементы, используемые для комментирования функций, в том числе [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) и [\<returns>](../ide/returns-javascript.md) , должны быть помещены в тело функции перед любыми инструкциями.
 
 ## <a name="example"></a>Пример
  В следующем примере кода демонстрируется использование элемента `<summary>`.
@@ -55,5 +55,5 @@ function areaFunction(radiusParam)
 
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)

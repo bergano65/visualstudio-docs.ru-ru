@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2 Документы Майкрософт
+title: IDebugProgramHost2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64db456e0c438f8665f122c3cd1b079c2ad1cea1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722213"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
-Этот интерфейс предоставляет хост (процесс) информацию о программе.
+Этот интерфейс предоставляет сведения о приложении (процессе).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,28 +28,28 @@ ms.locfileid: "80722213"
 IDebugProgramHost2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Отладка движок реализует этот интерфейс на том же объекте, что и интерфейс [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) для предоставления информации о процессе хостинга. Это дополнительный интерфейс.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Обработчик отладки реализует этот интерфейс для того же объекта, что и интерфейс [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , чтобы предоставить сведения о ведущем процессе. Это необязательный интерфейс.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Вызов [queryInterface](/cpp/atl/queryinterface) `IDebugProgram2` на интерфейс, чтобы получить этот интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызовите [QueryInterface](/cpp/atl/queryinterface) для `IDebugProgram2` интерфейса, чтобы получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugProgramHost2`.
+ В следующей таблице показаны методы `IDebugProgramHost2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Получает название, дружеское имя или название файла процесса хостинга этой программы.|
-|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Получает идентификатор процесса хостинга этой программы.|
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Получает название машины, на которой работает процесс хостинга этой программы.|
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Возвращает заголовок, понятное имя или имя файла ведущего процесса этой программы.|
+|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Возвращает идентификатор процесса размещения программы.|
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Возвращает имя компьютера, на котором выполняется хост-процесс этой программы.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

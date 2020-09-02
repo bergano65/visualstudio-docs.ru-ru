@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646752"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Операторы typedef языка Visual C++ в конструкторе классов
@@ -200,5 +200,5 @@ class A {
 
  -> MyIntVect
 
-## <a name="see-also"></a>См. также
- Работа с [описателем typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1) [ C++ визуального кода (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md) (сборке)
+## <a name="see-also"></a>См. также:
+ [Работа с описателем typedef для Visual C++ Code (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md) [(сборке)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
