@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject | Документация Майкрософт
+title: Идебугпоинтеробжект | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4cd84c3580d94491e09ce9e8cde8175f9e437be0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693398"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Этот интерфейс представляет собой указатель на объект.  
+ Этот интерфейс представляет объект указателя.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,30 +34,30 @@ IDebugPointerObject : IDebugObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Средство оценки выражений реализует этот интерфейс для представления объект указателя.  
+ Средство оценки выражений реализует этот интерфейс для представления объекта указателя.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) интерфейса можно получить этот интерфейс, используя [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) Если `IDebugObject` представляет указатель.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Интерфейс [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) может получить этот интерфейс с помощью [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) , если объект `IDebugObject` представляет указатель.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- Помимо методов, наследуемых от [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` интерфейс предоставляет следующие методы.  
+ В дополнение к методам, унаследованным от [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Получает объект, на который указывает интерфейс.|  
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Получает значение, на который указывает интерфейс, как ряд последовательных байтах.|  
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Задает значение, на который указывает интерфейс из серию последовательных байтах.|  
+|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Возвращает объект, на который указывает интерфейс.|  
+|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Возвращает значение, на которое интерфейс указывает последовательность последовательных байтов.|  
+|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Задает значение, на которое интерфейс указывает последовательность последовательных байтов.|  
   
-## <a name="remarks"></a>Примечания  
- Вычислитель выражений использует этот интерфейс для представления указателя в дерево синтаксического анализа.  
+## <a name="remarks"></a>Remarks  
+ Средство оценки выражений использует этот интерфейс для представления указателя в дереве синтаксического анализа.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: ee.h  
+ Заголовок: ee. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы оценки выражения](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы оценки выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

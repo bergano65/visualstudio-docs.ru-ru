@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor (ru) Документы Майкрософт
+title: 'Идебугфунктионобжект:: Креатеобжектноконструктор | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728577"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
@@ -43,20 +43,20 @@ int CreateObjectNoConstructor(
 
 ## <a name="parameters"></a>Параметры
 `pClassObject`\
-(в) Объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий тип создаваемого объекта.
+окне Объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющий тип создаваемого объекта.
 
 `ppObject`\
-(ваут) Возвращает [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий вновь созданный объект.
+заполняет Возвращает объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Вызовите этот метод для создания объекта, представляющего экземпляр структуры или сложного типа (не требующего конструктора), который является параметром для функции, представленной интерфейсом [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+## <a name="remarks"></a>Remarks
+ Вызовите этот метод, чтобы создать объект, представляющий экземпляр структуры или сложного типа (который не требует конструктора), который является параметром функции, представленной интерфейсом [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
- Если параметр объекта требует конструктора, вызовите метод [CreateObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)
+ Если для параметра объекта требуется конструктор, вызовите метод [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

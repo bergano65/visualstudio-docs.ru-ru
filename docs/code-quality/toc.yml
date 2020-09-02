@@ -372,12 +372,14 @@
                   href: ca1305.md
                 - name: CA1306. Задавайте языковой стандарт для типов данных
                   href: ca1306.md
-                - name: CA1307. Указывайте StringComparison
+                - name: 'CA1307. Используйте StringComparison, чтобы ясно указать намерение.'
                   href: ca1307.md
                 - name: CA1308. Нормализуйте строки в верхний регистр
                   href: ca1308.md
                 - name: CA1309. Используйте порядковый параметр StringComparison
                   href: ca1309.md
+                - name: 'CA1310. Используйте StringComparison, чтобы правильно указать намерение.'
+                  href: ca1310.md
                 - name: CA2101. Укажите тип маршалинга для строковых аргументов P/Invoke
                   href: ca2101.md
             - name: 'Предупреждения, связанные с взаимодействием'
@@ -569,6 +571,8 @@
                   href: ca1835.md
                 - name: 'CA1836: предпочитайте IsEmpty вместо Count (при наличии)'
                   href: ca1836.md
+                - name: CA1837. Используйте Environment.ProcessId вместо Process.GetCurrentProcess().Id.
+                  href: ca1837.md
                 - name: 'CA1838: не используйте параметры StringBuilder для вызовов P/Invoke'
                   href: ca1838.md
             - name: 'Предупреждения, связанные с переносимостью'
@@ -601,6 +605,8 @@
                   href: ca2006.md
                 - name: CA2007. Не следует напрямую ожидать Task
                   href: ca2007.md
+                - name: CA2008. Не создавайте задачи без передачи TaskScheduler
+                  href: ca2008.md
                 - name: 'CA2009: Не вызывайте ToImmutableCollection для значения ImmutableCollection'
                   href: ca2009.md
                 - name: 'CA2011: не присваивайте свойство в методе задания'
@@ -985,6 +991,8 @@
                   href: ca2247.md
                 - name: 'CA2248: укажите правильный аргумент enum для Enum.HasFlag'
                   href: ca2248.md
+                - name: CA2249. Попробуйте использовать String.Contains вместо String.IndexOf.
+                  href: ca2249.md
             - name: Автоматическая приостановка функции
               href: automatic-feature-suspension.md
             - name: Публикация предупреждений

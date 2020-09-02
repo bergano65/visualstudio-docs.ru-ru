@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238547"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Начало работы с предметно-ориентированными языками
@@ -37,7 +37,7 @@ ms.locfileid: "88238547"
 
 Остальная часть этого обзора представляет собой пошаговое руководство, в котором представлены основные операции по созданию и использованию доменного языка в Visual Studio.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Обязательные условия
 
 Для определения доменного языка необходимо установить следующие компоненты.
 
@@ -407,7 +407,7 @@ DSL создает API, который позволяет считывать и 
 
 2. Перестройте все экспериментальные или другие экспериментальные расширения Visual Studio, которые вы по-прежнему хотите использовать.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)
 - [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetContainer Документы Майкрософт
+title: 'Идебугфиелд:: Contain | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728905"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
-Этот метод получает контейнер поля.
+Этот метод возвращает контейнер поля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetContainer(
 
 ## <a name="parameters"></a>Параметры
 `ppContainerField`\
-(ваут) Возвращает контейнер в представленном интерфейсом [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md)
+заполняет Возвращает контейнер, представленный интерфейсом [идебугконтаинерфиелд](../../../extensibility/debugger/reference/idebugcontainerfield.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если в этом поле нет контейнера, возвращенное `ppContainerField` значение будет нулево.
+## <a name="remarks"></a>Remarks
+ Если в этом поле нет контейнера, возвращается `ppContainerField` значение null.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

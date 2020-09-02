@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329578"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Клавиши-модификаторы монтажной панели в Blend
@@ -39,8 +39,8 @@ ms.locfileid: "85329578"
 |Переключение между открытыми документами|Нажмите клавиши **CTRL** + **Tab**|
 |Открытие панели **Активы**|Нажмите **Ctrl** + **Period** клавишу CTRL|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Сочетания клавиш](../xaml-tools/keyboard-shortcuts-in-blend.md)
+- [сочетанием клавиш](../xaml-tools/keyboard-shortcuts-in-blend.md);
 - [Клавиши-модификаторы инструмента "Перо"](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
 - [Клавиши-модификаторы инструмента "Прямой выбор"](../xaml-tools/direct-selection-tool-modifier-keys-in-blend.md)

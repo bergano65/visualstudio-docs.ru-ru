@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionОмер3::Parse2 Документы Майкрософт
+title: IDebugExpressionEvaluator3::P arse2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729129"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Преобразует строку выражения в разогнанное выражение с учетом поставщика символов и адреса кадра оценки.
+Преобразует строку выражения в проанализированное выражение, учитывая поставщик символов и адрес кадра вычисления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>Параметры
 `upstrExpression`\
-(в) Строка выражения, которая должна быть разогнана.
+окне Строка выражения для синтаксического анализа.
 
 `dwFlags`\
-(в) Коллекция констант [PARSEFLAGS,](../../../extensibility/debugger/reference/parseflags.md) определяющих, как должно быть разогнано выражение.
+окне Коллекция констант [парсефлагс](../../../extensibility/debugger/reference/parseflags.md) , определяющих способ синтаксического анализа выражения.
 
 `nRadix`\
-(в) Radix используется для интерпретации любой численной информации.
+окне Основание системы счисления, используемое для интерпретации любых числовых данных.
 
 `pSymbolProvider`\
-(в) Интерфейс поставщика символов.
+окне Интерфейс поставщика символов.
 
 `pAddress`\
-(в) Адрес оценочной рамки.
+окне Адрес вычисления кадра.
 
 `pbstrError`\
-(ваут) Возвращает ошибку как читаемый человеком текст.
+заполняет Возвращает ошибку в виде текста, читаемого человеком.
 
 `pichError`\
-(ваут) Возвращает положение персонажа начала ошибки в строке выражения.
+заполняет Возвращает позиции символа начала ошибки в строке выражения.
 
 `ppParsedExpression`\
-(ваут) Возвращает разогнанные выражения в объект [IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+заполняет Возвращает проанализированное выражение в объекте [идебугпарседекспрессион](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Этот метод производит разогнанный выражение, а не фактическое значение. Разобраное выражение готово к оценке, т.е. преобразовано в значение.
+## <a name="remarks"></a>Remarks
+Этот метод создает проанализированное выражение, а не фактическое значение. Проанализированное выражение готово к вычислению, то есть преобразованному в значение.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **ЦВЕ,** который предоставляет интерфейс [IDebugExpressionEvaluator3.](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+В следующем примере показано, как реализовать этот метод для объекта **CEE** , предоставляющего интерфейс [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) .
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
@@ -137,5 +137,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

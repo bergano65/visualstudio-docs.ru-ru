@@ -1,5 +1,5 @@
 ---
-title: Элемент подержанных команд Документы Майкрософт
+title: Элемент Уседкоммандс | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698754"
 ---
 # <a name="usedcommands-element"></a>Элемент UsedCommands
-Элементы групп UsedCommands использовали элементы «ИспользовалиКоманд» и другие группировки UsedCommands.
+Элемент Уседкоммандс группирует элементы Уседкомманд и другие группирования Уседкоммандс.
 
- Элемент UsedCommands не является обязательным. Если вы не называете команды, определенные за пределами пакета, вам не нужно включать этот раздел в файл .vsct.
+ Элемент Уседкоммандс является необязательным. Если не вызывать команды, определенные за пределами пакета, не нужно включать этот раздел в файл. vsct.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,7 +40,7 @@ ms.locfileid: "80698754"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный параметр. Смотрите [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -52,7 +52,7 @@ ms.locfileid: "80698754"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, пункты меню, меню, панели инструментов и комбо-коробки), которые VSPackage предоставляет интегрированной среде разработки (IDE).|
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, пункты меню, меню, панели инструментов и поля со списком), предоставляемые пакетом VSPackage в интегрированной среде разработки (IDE).|
 
 ## <a name="example"></a>Пример
 
@@ -64,6 +64,6 @@ ms.locfileid: "80698754"
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Элемент UsedCommand](../extensibility/usedcommand-element.md)
 - [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

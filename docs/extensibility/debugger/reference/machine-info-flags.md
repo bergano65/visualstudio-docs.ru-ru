@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS Документы Майкрософт
+title: MACHINE_INFO_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714515"
 ---
 # <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
-Используется для описания машины.
+Используется для описания компьютера.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,15 +42,15 @@ public enum enum_MACHINE_INFO_FLAGS { 
 
 ## <a name="fields"></a>Поля
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- Указывается, что терминалуслуги доступны.
+ Указывает, что службы терминалов доступны.
 
-## <a name="remarks"></a>Примечания
- Используется в `Flags` качестве члена [структуры MACHINE_INFO.](../../../extensibility/debugger/reference/machine-info.md)
+## <a name="remarks"></a>Remarks
+ Используется в качестве `Flags` члена структуры [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192261"
 ---
 # <a name="importgroup-element"></a>Элемент ImportGroup
@@ -46,13 +46,13 @@ ms.locfileid: "68192261"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|ОПИСАНИЕ|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|ОПИСАНИЕ|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Import](../msbuild/import-element-msbuild.md)|Импортирует содержимое одного файла проекта в другой файл проекта.|  
   
@@ -60,9 +60,9 @@ ms.locfileid: "68192261"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
+|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="example"></a>Пример  
  Следующий пример кода демонстрирует элемент `ImportGroup`.  
@@ -77,6 +77,6 @@ ms.locfileid: "68192261"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
  [Элементы](../msbuild/msbuild-items.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo Документы Майкрософт
+title: 'Идебугфиелд:: GetTypeInfo | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728777"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-Этот метод получает независимую от типа информацию о символе или типе.
+Этот метод получает независимые от типа сведения о символе или типе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int GetTypeInfo(
 
 ## <a name="parameters"></a>Параметры
 `pTypeInfo`\
-(ваут) Возвращает информацию типа в поставляемой [структуре TYPE_INFO.](../../../extensibility/debugger/reference/type-info.md)
+заполняет Возвращает сведения о типе в указанной структуре [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Независимая от типа информация будет включать, например, AppDomain, модуль и класс, содержащий символ.
+## <a name="remarks"></a>Remarks
+ Независимые от типа сведения включают, например, AppDomain, модуль и класс, содержащий символ.
 
-## <a name="see-also"></a>См. также
-- [Gettype](../../../extensibility/debugger/reference/idebugfield-gettype.md)
+## <a name="see-also"></a>См. также раздел
+- [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

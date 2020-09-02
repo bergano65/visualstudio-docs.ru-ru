@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6dd4f4ada36be4ef7b70f4f32d659abb10c8a62a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547216"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Как создавать и изменять пользовательские свойства документа
@@ -37,7 +37,7 @@ ms.locfileid: "85547216"
 ## <a name="robust-programming"></a>Отказоустойчивость
  При попытке доступа к свойству `Value` для неопределенного свойства возникает исключение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Руководство. чтение и запись в свойства документа](../vsto/how-to-read-from-and-write-to-document-properties.md)

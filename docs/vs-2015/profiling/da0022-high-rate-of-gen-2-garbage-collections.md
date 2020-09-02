@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0dcfa4d3522d88b58e971c0a4ff3f27649c2d21b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844628"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Высокая доля сборок мусора в генерации 2
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022. Высокая доля сборок мусора в генерации 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Идентификатор правила | DA0022 |  

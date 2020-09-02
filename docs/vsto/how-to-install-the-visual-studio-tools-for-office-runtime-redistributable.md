@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef71de75be5977ab80cbdd85448daa5de381c077
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547229"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Руководство. Установка распространяемого пакета среды выполнения Office Инструменты Visual Studio
@@ -52,7 +52,7 @@ ms.locfileid: "85547229"
 
      [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] включает языковые пакеты. Если при установке Windows был выбран не английский язык, сообщения среды выполнения будут отображаться на языке, выбранном для Windows. Точно так же, если конечные пользователи установят [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] и запустят ваши решения в системах Windows, настроенных не на английский язык, сообщения среды выполнения будут отображаться на языке Windows. В некоторых случаях могут потребоваться дополнительные языковые пакеты. Например, могут потребоваться дополнительные языковые пакеты, если в вашей копии Windows используется более одного языкового параметра, или если вы уже установили на другой язык [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Языковые пакеты можно найти в [Microsoft Visual Studio средств 2010 для языкового пакета Microsoft Office системы (среда выполнения версии 4,0)](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Как настроить компьютер для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

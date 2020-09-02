@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219729"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
@@ -27,7 +27,7 @@ ms.locfileid: "89219729"
 
 В соответствии с датой на этой странице в списке правил FxCop, которые были перенесены в средства [FxCop Analyzer](install-fxcop-analyzers.md) , входят:
 
-Идентификатор правила | Название
+Идентификатор правила | Заголовок
 --------|---------
 [CA1000](ca1000.md) | Не объявляйте статические члены в универсальных типах
 [CA1001](ca1001.md) | Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми
@@ -345,6 +345,6 @@ CA9999 | Несоответствие версии анализатора
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Правила Microsoft. CodeAnalysis. Фкскопанализерс](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

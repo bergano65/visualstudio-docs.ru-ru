@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 371357249bb9674a636859c995ad076eb41c2a08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192588"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
@@ -43,10 +43,10 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  Имя корневой папки для имени файла журнала.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с помощью ([успешно]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) задан бит, если контекст отслеживания был создан.  
+ A [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) с [УСПЕХом] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) Установка бита при создании контекста отслеживания.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок.** FileTracker.h  
+ **Заголовок:** FileTracker.h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

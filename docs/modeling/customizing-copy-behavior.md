@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547346"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
@@ -211,7 +211,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Позволяют пользователю перетаскивать элементы.**
 См. раздел [как добавить обработчик перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a>Настройка поведения копирования ссылок
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> Настройка поведения копирования ссылок
  Когда пользователь копирует элемент, стандартное поведение заключается в том, что также копируются все внедренные элементы. Стандартное поведение копирования можно изменить. В определении DSL выберите роль с одной стороны связи и в окно свойств установите значение свойства **распространяет копирование** .
 
  ![Распространяет свойство копирования роли домена](../modeling/media/dslpropagatescopy.png)
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Определите два метода в классе ElementOperations:
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`Определяет, можно ли перетащить элемент источника на целевую фигуру, соединитель или схему.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` Определяет, можно ли перетащить элемент источника на целевую фигуру, соединитель или схему.
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`который объединяет исходный элемент в целевой объект.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()`метод вызывается для определения отзывов, которые должны быть предоставлены пользователю при перемещении мыши по схеме. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.
+ `CanMerge()` метод вызывается для определения отзывов, которые должны быть предоставлены пользователю при перемещении мыши по схеме. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.
 
  Прототип группы элементов может содержать любое количество элементов и связей. Типы элементов можно идентифицировать по их GUID. GUID принадлежит перетащенной фигуре, а не базовому элементу модели. В следующем примере `CanMerge()` возвращает значение true, если фигура класса из диаграммы UML перетаскивается в эту схему.
 
@@ -552,7 +552,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
 - [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)

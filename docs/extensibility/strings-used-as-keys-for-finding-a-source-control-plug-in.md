@@ -1,5 +1,5 @@
 ---
-title: Строки, используемые в качестве ключей для поиска подключаемого подключения к управлению источником (ru) Документы Майкрософт
+title: Строки, используемые в качестве ключей для поиска подключаемого модуля системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699713"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями
-Следующие строки являются ключами для доступа к реестру, чтобы найти информацию о плагине управления исходным кодом.
+Следующие строки являются ключами для доступа к реестру для поиска сведений о подключаемом модуле системы управления версиями.
 
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY` `STR_SCCPROVIDERPATH`, `STR_SCCPROVIDERNAME` и являются ключами реестра или значения, используемые для регистрации DLL в качестве подключаемого источника управления для Visual Studio.
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY` , `STR_SCCPROVIDERPATH` и `STR_SCCPROVIDERNAME` — это разделы реестра или значения, используемые для регистрации библиотеки DLL в качестве подключаемого модуля системы управления версиями для Visual Studio.
 
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY` `SCC_KEY, SCC_FILE_SIGNATURE`, `SCC_STATUS_FILE` , и используются для описания формата MSSCCPRJ. Файл SCC.
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY` , `SCC_KEY, SCC_FILE_SIGNATURE` и `SCC_STATUS_FILE` используются для описания формата мссккпрж. Файл SCC.
 
-## <a name="string-keys-and-values"></a>Строки ключи и ценности
+## <a name="string-keys-and-values"></a>Строковые ключи и значения
 
 |Клавиши|Значение|
 |---------|-----------|
-|`STR_SCC_PROVIDER_REG_LOCATION`|Программное обеспечение-ИсточникКодКонтрольПровайдер|
-|`STR_PROVIDERREGKEY`|ПоставщикRegKey|
-|`STR_SCCPROVIDERPATH`|SCCServerPath|
-|`STR_SCCPROVIDERNAME`|SCCServerName|
+|`STR_SCC_PROVIDER_REG_LOCATION`|софтваре\саурцекодеконтролпровидер|
+|`STR_PROVIDERREGKEY`|провидеррегкэй|
+|`STR_SCCPROVIDERPATH`|скксерверпас|
+|`STR_SCCPROVIDERNAME`|скксервернаме|
 |`STR_SCC_INI_SECTION`|Управление исходным кодом|
-|`STR_SCC_INI_KEY`|SourceCodeControlProvider|
+|`STR_SCC_INI_KEY`|саурцекодеконтролпровидер|
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|
-|`SCC_STATUS_FILE`|MSSCCPRJ. Scc|
+|`SCC_STATUS_FILE`|МССККПРЖ. СРЕДСТВО|
 |`SCC_KEY`|SCC|
 |`SCC_FILE_SIGNATURE`|Файл управления исходным кодом|
 |`SCC_NSE`|Расширение пространства имен|
-|`SCC_NSE_PREFIX`|Протокальная префикс|
-|`SCC_NSE_DisableOpenSCC`|ОтключитьOpenFromSourceControl|
-|`STR_SCCHELPCOLLECTION`|СправкаСбор|
+|`SCC_NSE_PREFIX`|Префикс протокола|
+|`SCC_NSE_DisableOpenSCC`|дисаблеопенфромсаурцеконтрол|
+|`STR_SCCHELPCOLLECTION`|хелпколлектион|
 |`STR_UI_LANGUAGE`|UILanguage|
-|`STR_SRCSAFE_ROOT_KEY`|Программное обеспечение(Microsoft-SourceSafe|
+|`STR_SRCSAFE_ROOT_KEY`|софтваре\микрософт\саурцесафе|
 
 ## <a name="see-also"></a>См. также
 - [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)

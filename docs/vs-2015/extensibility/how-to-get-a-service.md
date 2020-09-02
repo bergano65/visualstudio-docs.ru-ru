@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Доступ к службе | Документация Майкрософт
+title: Руководство. Получение службы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,28 +11,28 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204177"
 ---
 # <a name="how-to-get-a-service"></a>Практическое руководство. Получение службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Часто требуется получить службы Visual Studio для доступа к другой функции. Как правило службы Visual Studio предоставляет один или несколько интерфейсов, которые можно использовать. Большинство служб можно получить из VSPackage.  
+Для доступа к различным функциям часто требуется получить доступ к службам Visual Studio. Как правило, служба Visual Studio предоставляет один или несколько интерфейсов, которые можно использовать. Большинство служб можно получить из VSPackage.  
   
- Любой пакет VSPackage, который является производным от <xref:Microsoft.VisualStudio.Shell.Package> и, правильно размещения может запросить любой глобальной службы. Поскольку класс пакета реализует <xref:System.IServiceProvider>, любой пакет VSPackage, который является производным от пакета также является поставщиком службы.  
+ Любой пакет VSPackage, производный от <xref:Microsoft.VisualStudio.Shell.Package> и, который был правильно помещен в сайт, может запросить любую глобальную службу. Поскольку класс Package реализует <xref:System.IServiceProvider> , любой пакет VSPackage, производный от Package, также является поставщиком услуг.  
   
- Когда Visual Studio загружает <xref:Microsoft.VisualStudio.Shell.Package>, он передает <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> метод во время инициализации. Это называется *расположения* VSPackage. Класс пакета создает оболочку этого поставщика службы и предоставляет <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> метод для получения служб.  
+ При загрузке Visual Studio <xref:Microsoft.VisualStudio.Shell.Package> объект передается в <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> метод во время инициализации. Это называется *заблокировано* VSPackage. Класс Package служит оболочкой для этого поставщика услуг и предоставляет <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> метод для получения служб.  
   
-## <a name="getting-a-service-from-an-initialized-vspackage"></a>Получение службы из инициализированного VSPackage  
+## <a name="getting-a-service-from-an-initialized-vspackage"></a>Получение службы из инициализированного пакета VSPackage  
   
-1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект VSIX с именем `GetServiceExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
+1. Каждое расширение Visual Studio начинается с проекта развертывания VSIX, который будет содержать ресурсы расширения. Создайте [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект VSIX с именем `GetServiceExtension` . Шаблон проекта VSIX можно найти в диалоговом окне **Новый проект** в разделе **Visual C#/Extensibility (расширяемость**).  
   
-2. Теперь Добавление пользовательской команды шаблона элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C# / Extensibility** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для **GetServiceCommand.cs**. Дополнительные сведения о том, как создать пользовательскую команду [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Теперь добавьте пользовательский шаблон элемента команды с именем **жетсервицекомманд**. В диалоговом окне **Добавление нового элемента** перейдите в раздел **Visual C#/Extensibility** и выберите пункт **пользовательская команда**. В поле **имя** в нижней части окна измените имя файла команд на **GetServiceCommand.CS**. Дополнительные сведения о создании пользовательской команды и [создании расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3. В GetServiceCommand.cs удалить тело метода MenuItemCommand и добавьте следующий код:  
+3. В GetServiceCommand.cs удалите тело метода Менуитемкомманд и добавьте следующий код:  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -41,20 +41,20 @@ ms.locfileid: "68204177"
   
     ```  
   
-     Этот код получает службу SVsActivityLog и приводит его к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейс, который может использоваться для записи в журнал действий. Пример см. в статье [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).  
+     Этот код получает службу Свсактивитилог и приводит ее к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейсу, который можно использовать для записи в журнал действий. Пример см. в разделе [как использовать журнал действий](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-5. В меню "Сервис" экспериментального экземпляра, найти **вызова GetServiceCommand** кнопки. Если щелкнуть эту кнопку, вы должны увидеть окно сообщения с текстом **найти службу журнала действий.**  
+5. В меню Сервис экспериментального экземпляра найдите кнопку **вызвать жетсервицекомманд** . При нажатии этой кнопки должно отобразиться окно с сообщением о том, что **Служба журнала действий найдена.**  
   
-## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Получение службы из контейнера средство окна или элемента управления  
- Иногда может потребоваться доступ к службе из окна инструментов или контейнер, который не был помещен в узел, в противном случае размещения с поставщиком услуг, не знает о службу, которую вы хотите управлять. Например может потребоваться запись в журнале действий в элементе управления.  
+## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Получение службы из окна инструментов или контейнера элемента управления  
+ Иногда может потребоваться получить службу из окна инструментов или контейнера элемента управления, который не был добавлен в узел, или в другом месте с поставщиком услуг, который не знает о нужной службе. Например, может потребоваться запись в журнал действий из элемента управления.  
   
- Статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод полагается на поставщик кэшированных служб, который инициализируется первый раз, любой пакет VSPackage на основе <xref:Microsoft.VisualStudio.Shell.Package> помещен в узел.  
+ Статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод основан на кэшированном поставщике служб, который инициализируется в первый раз, когда любой из VSPackage, производный от <xref:Microsoft.VisualStudio.Shell.Package> , находится на сайте.  
   
- Поскольку VSPackage конструктор вызывается в том случае, прежде чем поместить VSPackage, глобальных служб обычно недоступен из конструктора VSPackage. См. практическое руководство по [ Устранение неполадок в службах](../extensibility/how-to-troubleshoot-services.md) решение этой проблемы.  
+ Так как конструктор VSPackage вызывается до того, как VSPackage размещается в узле, глобальные службы обычно недоступны из конструктора VSPackage. Дополнительные сведения см. в статье [Устранение неполадок служб](../extensibility/how-to-troubleshoot-services.md) .  
   
- Ниже приведен пример способа для получения службы в окно инструментов или другого элемента не VSPackage.  
+ Ниже приведен пример способа получения службы в окне инструментов или в другом элементе, не являющемся VSPackage.  
   
 ```csharp  
 IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -62,11 +62,11 @@ if (log == null) return;
 ```  
   
 ## <a name="getting-a-service-from-the-dte-object"></a>Получение службы из объекта DTE  
- Также можно получить службы из <xref:EnvDTE.DTEClass> объекта. Тем не менее, необходимо получить объект DTE как услуга из VSPackage или путем вызова статического <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод.  
+ Также можно получить службы из <xref:EnvDTE.DTEClass> объекта. Однако необходимо получить объект DTE как службу из VSPackage или путем вызова статического <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метода.  
   
- Реализует объект DTE <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>, который можно использовать для запроса службы с помощью <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>.  
+ Объект DTE реализует <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> , который можно использовать для запроса службы с помощью <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> .  
   
- Вот как можно получить службы из объекта DTE.  
+ Вот как можно получить службу из объекта DTE.  
   
 ```csharp  
 // Start with the DTE object, for example:   
@@ -84,7 +84,7 @@ if (sp != null)
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Предоставляет службу](../extensibility/how-to-provide-a-service.md)   
+## <a name="see-also"></a>См. также:  
+ [Руководство. предоставление службы](../extensibility/how-to-provide-a-service.md)   
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Основные компоненты службы](../extensibility/internals/service-essentials.md)

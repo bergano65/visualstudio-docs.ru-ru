@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536881"
 ---
 # <a name="projectitem-element"></a>ProjectItem - элемент
@@ -44,13 +44,13 @@ ms.locfileid: "85536881"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |**DefaultFile**|Необязательный атрибут **xs: String** .<br /><br /> Относительный путь, включая имя файла, который открывается в редакторе Visual Studio при открытии элемента проекта SharePoint в **Обозреватель решений**. Путь определяется относительно папки, содержащей файл *данных с расширением.*|
 |**феатуререцеиверкласс**|Необязательный атрибут **xs: String** .<br /><br /> Полное имя класса приемника компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонентов см. [в разделе Предоставление сведений о упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |**феатуререцеиверассембли**|Необязательный атрибут **xs: String** .<br /><br /> Указывает полное имя сборки, определяющей приемник компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонентов см. [в разделе Предоставление сведений о упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Дополнительные сведения о полных именах сборок см. в разделе [имена сборок](/dotnet/framework/app-domains/assembly-names).|
 |**суппортедтрустлевелс**|Необязательный атрибут **xs: String** .<br /><br /> Указывает уровни доверия, которые поддерживает этот элемент проекта SharePoint. Это значение может быть одной из следующих строк: "песочница", "FullTrust" или "все". Значение ALL указывает как "песочницу", так и "FullTrust".<br /><br /> В пользовательском типе элемента проекта SharePoint значение этого атрибута соответствует значению, присвоенному <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> свойству в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метода. Если указать другое значение для этого атрибута, Visual Studio перезапишет это значение, чтобы указать тот же уровень доверия, который вы указали в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> свойстве.|
-|**суппортеддеплойментскопес**|Необязательный атрибут **xs: String** .<br /><br /> Указывает области развертывания, поддерживаемые этим элементом проекта SharePoint. Это значение представляет собой строку с разделителями-запятыми, которая состоит из одной или нескольких следующих строк: ферма, сайт, веб-приложение или пакет. Например: `Web, Site`<br /><br /> В пользовательском типе элемента проекта SharePoint значение этого атрибута соответствует значению, присвоенному <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойству в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метода. Если указать другое значение для этого атрибута, Visual Studio перезапишет это значение, чтобы указать тот же уровень доверия, который вы указали в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойстве.|
+|**суппортеддеплойментскопес**|Необязательный атрибут **xs: String** .<br /><br /> Указывает области развертывания, поддерживаемые этим элементом проекта SharePoint. Это значение представляет собой строку с разделителями-запятыми, которая состоит из одной или нескольких следующих строк: ферма, сайт, веб-приложение или пакет. Пример: `Web, Site`<br /><br /> В пользовательском типе элемента проекта SharePoint значение этого атрибута соответствует значению, присвоенному <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойству в реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> метода. Если указать другое значение для этого атрибута, Visual Studio перезапишет это значение, чтобы указать тот же уровень доверия, который вы указали в <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> свойстве.|
 |**Тип**|Обязательный атрибут **xs: String** .<br /><br /> Идентификатор элемента проекта SharePoint. В пользовательском типе элемента проекта SharePoint идентификатором является строка, передаваемая в <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . Дополнительные сведения см. [в разделе инструкции. определение типа элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Список идентификаторов встроенных элементов проектов SharePoint, входящих в состав Visual Studio, см. в разделе [расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
@@ -68,12 +68,12 @@ ms.locfileid: "85536881"
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство.|Значение|
+|Свойство|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/<br>2010/Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|
 |**Файл проверки**|Прожектитеммоделсчема. xsd|
 |**Может быть пустым**|Нет|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 [Рсеференце схемы элемента проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
