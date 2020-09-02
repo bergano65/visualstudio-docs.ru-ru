@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
+title: '&lt;&gt;элемент публишеридентити (развертывание ClickOnce) | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62927543"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; элемент (развертывание ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;элемент публишеридентити (развертывание ClickOnce)
 Содержит сведения об издателе, подписавшем этот манифест развертывания.
 
 ## <a name="syntax"></a>Синтаксис
@@ -36,11 +36,11 @@ ms.locfileid: "62927543"
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- `publisherIdentity` Элемент является обязательным для манифестов с подписью. В следующей таблице показаны атрибуты, `publisherIdentity` поддерживает элемент.
+ `publisherIdentity`Элемент необходим для подписанных манифестов. В следующей таблице показаны атрибуты, `publisherIdentity` поддерживаемые элементом.
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`name`|Обязательный. Описывает удостоверение стороны, публикации этого приложения.|
+|`name`|Обязательный. Описание удостоверения стороны, опубликовавшего приложение.|
 |`issuerKeyHash`|Обязательный. Содержит хэш SHA-1 открытого ключа издателя сертификата.|
 
 #### <a name="parameters"></a>Параметры
@@ -49,7 +49,7 @@ ms.locfileid: "62927543"
 
 ## <a name="exceptions"></a>Исключения
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 ## <a name="requirements"></a>Требования
 

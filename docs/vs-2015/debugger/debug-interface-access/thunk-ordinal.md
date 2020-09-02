@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576412"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Определяет преобразователь типов.  
+Обозначает типы преобразователей.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,29 +46,29 @@ typedef enum THUNK_ORDINAL { 
  Стандартный преобразователь.  
   
  THUNK_ORDINAL_ADJUSTOR  
- Объект `this` корректором преобразователь.  
+ `this`Преобразователь регулировки.  
   
  THUNK_ORDINAL_VCALL  
- Преобразователь виртуального вызова.  
+ Преобразователь виртуальных вызовов.  
   
  THUNK_ORDINAL_PCODE  
- Преобразователь P-кода.  
+ Преобразователь P-code.  
   
  THUNK_ORDINAL_LOAD  
- Преобразователь задержки загрузки.  
+ Преобразователь задержек загрузки.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Добавочные trampoline преобразователь (trampoline преобразователь используется для переброса вызовы из пространства памяти в другой).  
+ Добавочный преобразователь трамполине (преобразователь трамполине используется для возврата вызовов из одного пространства памяти в другое).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Преобразователь trampoline точки ветви.  
+ Преобразователь трамполине точки ветвления.  
   
-## <a name="remarks"></a>Примечания  
- Значения в этом перечислении возвращаются из вызова [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Значения в этом перечислении возвращаются из вызова метода [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

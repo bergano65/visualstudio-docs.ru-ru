@@ -1,5 +1,5 @@
 ---
-title: Предварительные условия для 64-разрядных приложений развертывания | Документация Майкрософт
+title: Развертывание необходимых компонентов для 64-разрядных приложений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928892"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Предварительные условия для развертывания 64-разрядных приложений
@@ -43,5 +43,5 @@ ms.locfileid: "62928892"
 
 ## <a name="see-also"></a>См. также
 - [Развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md)
-- [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [64-разрядные приложения](/dotnet/framework/64-bit-apps)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbe8a715c5bb179c5293dd666f1879c07068d8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583175"
 ---
 # <a name="lineoff"></a>LineOff
@@ -30,12 +30,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Нет  
+ Отсутствуют  
   
 ## <a name="required-options"></a>Обязательные параметры  
  Параметр **LineOff** можно использовать только в команде, в которой также содержится параметр **Launch**.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает заданное приложение и начинает профилирование с помощью метода выборки.  
   
 ## <a name="example"></a>Пример  
@@ -46,8 +46,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /LineOff  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

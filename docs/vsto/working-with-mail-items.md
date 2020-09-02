@@ -16,27 +16,27 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62815437"
 ---
 # <a name="work-with-mail-items"></a>Работа с элементами почты
-  <xref:Microsoft.Office.Interop.Outlook.MailItem> Класс содержит методы и свойства, применяемые для выполнения задач с сообщениями электронной почты.
+  <xref:Microsoft.Office.Interop.Outlook.MailItem>Класс содержит методы и свойства, используемые для выполнения задач с сообщениями электронной почты.
 
 |Задача|Процедура|
 |----------|---------------|
-|Создайте сообщение электронной почты.|[Практическое руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
-|Осуществляется отправка сообщения электронной почты.|[Практическое руководство. Отправка сообщения электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|
-|Отвечать на новые сообщения электронной почты с помощью настраиваемого действия.|[Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|
-|Сохраните вложения.|[Практическое руководство. Программное сохранение вложений из элементов электронной почты Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|
-|Добавление вложения|[Практическое руководство. Программное вложение файлов в элементы электронной почты Outlook](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
-|Выполнить итерацию всех непрочитанные сообщения.|[Практическое руководство. Программное извлечение непрочитанных сообщений из папки "Входящие"](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
+|Создание сообщения электронной почты.|[Руководство. Программное создание элемента электронной почты](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
+|Осуществляется отправка сообщения электронной почты.|[Руководство. Программная отправка электронной почты](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|
+|Ответ на новые сообщения электронной почты с помощью настраиваемого действия.|[Руководство. программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|
+|Сохранение вложений.|[Как программно сохранять вложения из сообщений электронной почты Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|
+|Добавление вложений|[Как программно вкладывать файлы в сообщения электронной почты Outlook](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
+|Перебирает все непрочитанные сообщения.|[Руководство. Программное получение непрочитанных сообщений из папки "Входящие"](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
 
- Дополнительные сведения о задачах и объектной модели Outlook см. в разделе [обзор объектной модели Outlook](../vsto/outlook-object-model-overview.md).
+ Дополнительные сведения о задачах Outlook и объектной модели Outlook см. в разделе [Общие сведения об объектной модели](../vsto/outlook-object-model-overview.md)Outlook.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с элементами контактов](../vsto/working-with-contact-items.md)
 - [Работа с папками](../vsto/working-with-folders.md)
 - [Работа с элементами календаря](../vsto/working-with-calendar-items.md)

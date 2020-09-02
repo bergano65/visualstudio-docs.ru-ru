@@ -1,5 +1,5 @@
 ---
-title: С помощью мастера публикации приложений Azure | Документация Майкрософт
+title: Использование мастера публикации приложений Azure | Документация Майкрософт
 description: Узнайте, как настроить различные параметры с помощью мастера публикации приложений Azure в Visual Studio.
 author: ghogen
 manager: jillfra
@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: a75e83e3fb2ac43b4fa1d658c7e2a08ec1ae3c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62831347"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Использование мастера публикации приложений Azure в Visual Studio
@@ -101,7 +101,7 @@ ms.locfileid: "62831347"
 
 ![Сводка](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Целевой профиль**: здесь вы можете создать профиль публикации на основе ранее выбранных параметров. Например, можно создать один профиль для тестовой среды, а другой — для рабочей. Чтобы сохранить профиль, щелкните значок **Сохранить** . Мастер создаст профиль и сохранит его в проекте Visual Studio. Чтобы изменить имя профиля, откройте список **Целевой профиль**, а затем выберите **&lt;Управление&gt;**.
+**Целевой профиль**: здесь вы можете создать профиль публикации на основе ранее выбранных параметров. Например, можно создать один профиль для тестовой среды, а другой — для рабочей. Чтобы сохранить профиль, выберите значок **Сохранить**. Мастер создаст профиль и сохранит его в проекте Visual Studio. Чтобы изменить имя профиля, откройте список **Целевой профиль**, а затем выберите **&lt;Управление&gt;**.
 
    > [!Note]
    > Профиль публикации отображается в обозревателе решений в Visual Studio, а параметры профиля записываются в файл с расширением AZUREPUBXML. Параметры сохраняются как атрибуты XML-тегов.
@@ -110,7 +110,7 @@ ms.locfileid: "62831347"
 
 Когда все параметры развертывания проекта настроены, нажмите кнопку **Опубликовать** в нижней части диалогового окна. Состояние процесса можно отслеживать в окне **Вывод** в Visual Studio.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Инструкции. Миграция и публикация веб-приложения в облачную службу Azure из среды Visual Studio](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
 
@@ -120,6 +120,6 @@ ms.locfileid: "62831347"
 
 - [Тестирование производительности облачной службы](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Настройка системы диагностики для облачных служб и виртуальных машин Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Настройка диагностики для облачных служб и виртуальных машин Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 - [Что такое Azure Application Insights?](/azure/application-insights/app-insights-overview)

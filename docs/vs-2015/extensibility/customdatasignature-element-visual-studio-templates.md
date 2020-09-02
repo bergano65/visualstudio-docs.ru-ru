@@ -1,5 +1,5 @@
 ---
-title: Элемент CustomDataSignature (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Кустомдатасигнатуре (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,20 +12,20 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 784704bea43a87f1aebdc42941906179dca815ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580421"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature - элемент (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Задает текст подписи для поиска пользовательских данных.  
+Задает текстовую подпись для нахождение пользовательских данных.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CustomDataSignature >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CustomDataSignature>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,16 +46,16 @@ ms.locfileid: "62580421"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в диалоговом окне " **Новый проект** " или " **Добавление нового элемента** ".|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст — это строки, которая содержит текстовую подпись, которая необходим для поиска пользовательских данных.  
+ Текст — это строка, которая содержит текстовую подпись, необходимую для нахождение пользовательских данных.  
   
-## <a name="remarks"></a>Примечания  
- `CustomDataSignature` — это необязательный элемент.  
+## <a name="remarks"></a>Remarks  
+ Параметр `CustomDataSignature` является необязательным элементом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558493"
 ---
 # <a name="warning-task"></a>Задача Warning
@@ -36,17 +36,17 @@ ms.locfileid: "62558493"
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`Code`|Необязательный параметр `String` .<br /><br /> Код предупреждения для связи с предупреждением.|  
-|`File`|Необязательный параметр `String` .<br /><br /> Указывает соответствующий файл (при его наличии). Если файл не указан, используется файл, содержащий задачу Warning.|  
-|`HelpKeyword`|Необязательный параметр `String` .<br /><br /> Ключевое слово справки для связи с предупреждением.|  
-|`Text`|Необязательный параметр `String` .<br /><br /> Текст предупреждения, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], если результат вычисления параметра `Condition` оказывается равным `true`.|  
+|`Code`|Необязательный параметр `String`.<br /><br /> Код предупреждения для связи с предупреждением.|  
+|`File`|Необязательный параметр `String`.<br /><br /> Указывает соответствующий файл (при его наличии). Если файл не указан, используется файл, содержащий задачу Warning.|  
+|`HelpKeyword`|Необязательный параметр `String`.<br /><br /> Ключевое слово справки для связи с предупреждением.|  
+|`Text`|Необязательный параметр `String`.<br /><br /> Текст предупреждения, регистрируемый в журнале [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], если результат вычисления параметра `Condition` оказывается равным `true`.|  
   
 ## <a name="remarks"></a>Примечания  
  Задача `Warning` позволяет проектам [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] проверять наличие необходимой конфигурации или необходимого свойства перед переходом к следующему шагу сборки.  
   
- Если параметр `Condition` задачи `Warning` равен `true`, значение параметра `Text` записывается в журнал, а процесс сборки продолжается. Если параметр `Condition` не существует, текст предупреждения записывается в журнал. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Если параметр `Condition` задачи `Warning` равен `true`, значение параметра `Text` записывается в журнал, а процесс сборки продолжается. Если параметр `Condition` не существует, текст предупреждения записывается в журнал. Дополнительные сведения о ведении журналов см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описание см. в разделе [базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  Следующий пример кода проверяет свойства, заданные в командной строке. Если заданные свойства отсутствуют, проект инициирует событие предупреждения и регистрирует в журнале значение параметра `Text` задачи `Warning`.  
@@ -65,6 +65,6 @@ ms.locfileid: "62558493"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
+## <a name="see-also"></a>См. также:  
+ [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

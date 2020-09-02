@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900483"
 ---
 # <a name="clickonce-deployment-manifest"></a>Манифест развертывания ClickOnce
@@ -29,22 +29,22 @@ ms.locfileid: "62900483"
 
 | Элемент | Описание | Атрибуты |
 | - | - | - |
-| [Элемент \<assembly>](../deployment/assembly-element-clickonce-deployment.md) | Обязательный. Это элемент верхнего уровня. | `manifestVersion` |
-| [Элемент \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-deployment.md) | Обязательный. Идентифицирует манифест приложения для приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [Элемент \<description>](../deployment/description-element-clickonce-deployment.md) | Обязательный. Идентифицирует сведения о приложении, используемые для обеспечения присутствия оболочки, и элемент **Установка и удаление программ** на панели управления. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [Элемент \<deployment>](../deployment/deployment-element-clickonce-deployment.md) | Необязательный параметр. Идентифицирует атрибуты, используемые для развертывания обновлений и доступа к системе. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [Элемент \<compatibleFrameworks>](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Обязательный. Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение. | `SupportUrl` |
-| [Элемент \<dependency>](../deployment/dependency-element-clickonce-deployment.md) | Обязательный. Идентифицирует устанавливаемую версию приложения для развертывания и местоположение манифеста приложения. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
-| [Элемент \<publisherIdentity>](../deployment/publisheridentity-element-clickonce-deployment.md) | Является обязательным для манифестов с подписью. Содержит сведения об издателе, подписавшем этот манифест развертывания. | `Name`<br /><br /> `issuerKeyHash` |
-| [Элемент \<Signature>](../deployment/signature-element-clickonce-deployment.md) | Необязательный параметр. Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи. | Нет |
-| [Элемент \<customErrorReporting>](../deployment/customerrorreporting-element-clickonce-deployment.md) | Необязательный параметр. Задает отображаемый в случае ошибки URI. | URI |
+| [\<assembly> Элемент](../deployment/assembly-element-clickonce-deployment.md) | Обязательный. Это элемент верхнего уровня. | `manifestVersion` |
+| [\<assemblyIdentity> Элемент](../deployment/assemblyidentity-element-clickonce-deployment.md) | Обязательный. Идентифицирует манифест приложения для приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<description> Элемент](../deployment/description-element-clickonce-deployment.md) | Обязательный. Идентифицирует сведения о приложении, используемые для обеспечения присутствия оболочки, и элемент **Установка и удаление программ** на панели управления. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<deployment> Элемент](../deployment/deployment-element-clickonce-deployment.md) | Необязательный элемент. Идентифицирует атрибуты, используемые для развертывания обновлений и доступа к системе. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<compatibleFrameworks> Элемент](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Обязательный. Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение. | `SupportUrl` |
+| [\<dependency> Элемент](../deployment/dependency-element-clickonce-deployment.md) | Обязательный. Идентифицирует устанавливаемую версию приложения для развертывания и местоположение манифеста приложения. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<publisherIdentity> Элемент](../deployment/publisheridentity-element-clickonce-deployment.md) | Является обязательным для манифестов с подписью. Содержит сведения об издателе, подписавшем этот манифест развертывания. | `Name`<br /><br /> `issuerKeyHash` |
+| [\<Signature> Элемент](../deployment/signature-element-clickonce-deployment.md) | Необязательный элемент. Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи. | Нет |
+| [\<customErrorReporting> Элемент](../deployment/customerrorreporting-element-clickonce-deployment.md) | Необязательный элемент. Задает отображаемый в случае ошибки URI. | URI |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Файл манифеста развертывания определяет развертывание приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], включая текущую версию и другие настройки развертывания. Он ссылается на манифест приложения, описывающий текущую версию приложения и все файлы, задействованные в развертывании.
 
  Для получения дополнительной информации см. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
-## <a name="file-location"></a>Расположение файла
+## <a name="file-location"></a>Размещение файла
  Файл манифеста развертывания ссылается на правильный манифест приложения для текущей версии приложения. Когда новая версия развертывания приложения становится доступной, необходимо обновить манифест развертывания, чтобы он ссылался на новый манифест приложения.
 
  Файл манифеста развертывания должен иметь строгое имя и может также содержать сертификаты для проверки издателя.
@@ -117,5 +117,5 @@ ms.locfileid: "62900483"
 </Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

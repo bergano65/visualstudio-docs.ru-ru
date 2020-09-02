@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580229"
 ---
 # <a name="functions-view---instrumentation-data"></a>Представление "Функции" — данные инструментирования
@@ -23,7 +23,7 @@ ms.locfileid: "62580229"
 
 В представлении отчета "Функции" данные профилирования перечисляются по имени функции.  
   
-## <a name="general"></a>Общие  
+## <a name="general"></a>Общее  
  Столбцы общего назначения позволяют определить функцию в строке представления.  
   
 |Столбец|Описание|  
@@ -84,8 +84,8 @@ ms.locfileid: "62580229"
 |**Максимальное эксклюзивное время приложения**|Максимальное эксклюзивное время приложения для вызова данной функции.|  
 |**Минимальное эксклюзивное время приложения**|Минимальное эксклюзивное время приложения для вызова данной функции.|  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Функции"](../profiling/functions-view-sampling-data.md)   
- [Представление "Функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "функции"](../profiling/functions-view-sampling-data.md)   
+ [Представление "функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Представление "функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

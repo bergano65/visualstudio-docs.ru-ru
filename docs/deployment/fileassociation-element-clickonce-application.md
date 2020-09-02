@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation&gt; элемент (приложение ClickOnce) | Документация Майкрософт'
+title: '&lt;&gt;элемент филеассоЦиатион (приложение ClickOnce) | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928524"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; элемент (приложение ClickOnce)
-Определяет расширение файла, нужно связать с приложением.
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt;элемент филеассоЦиатион (приложение ClickOnce)
+Определяет расширение файла, связываемое с приложением.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,18 +42,18 @@ ms.locfileid: "62928524"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`extension`|Обязательный. Расширение файла, которое требуется связать с приложением.|
-|`description`|Обязательный. Описание типа файла для использования в оболочке.|
-|`progid`|Обязательный. Имя, однозначно определяющее тип файла.|
-|`defaultIcon`|Обязательный. Указывает значок, используемый для файлов с этим расширением. Файл значка должен быть указан с помощью [ \<файл > элемент](../deployment/file-element-clickonce-application.md) в [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md) , содержащий этот элемент.|
+|`extension`|Обязательный. Расширение файла, связываемое с приложением.|
+|`description`|Обязательный. Описание типа файла для использования оболочкой.|
+|`progid`|Обязательный. Имя, уникально идентифицирующее тип файла.|
+|`defaultIcon`|Обязательный. Указывает значок, используемый для файлов с этим расширением. Файл значка необходимо указать с помощью [ \<file> элемента](../deployment/file-element-clickonce-application.md) в [ \<assembly> элементе](../deployment/assembly-element-clickonce-application.md) , который содержит этот элемент.|
 
-## <a name="remarks"></a>Примечания
- Этот элемент необходимо включить ссылку на пространство имен XML для «urn: schemas-microsoft-com:clickonce.v1». Если `<fileAssociation>` элемент используется, он должен следовать после `<application>` элемент в его родительском объекте [ \<сборки > элемент](../deployment/assembly-element-clickonce-application.md).
+## <a name="remarks"></a>Remarks
+ Этот элемент должен включать ссылку на пространство имен XML в "urn: schemas-microsoft-com: ClickOnce. v1". Если `<fileAssociation>` элемент используется, он должен находиться после `<application>` элемента в его родительском [ \<assembly> элементе](../deployment/assembly-element-clickonce-application.md).
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не перезаписывает существующие сопоставления файлов. Тем не менее приложения ClickOnce можно переопределить расширение файла для только для текущего пользователя. После удаления этого приложения ClickOnce, ClickOnce удаляет сопоставления файлов для пользователя и ассоциации на уровне компьютера является активным.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не будет перезаписывать существующие сопоставления файлов. Однако приложение ClickOnce может переопределить расширение файла только для текущего пользователя. После удаления этого приложения ClickOnce служба ClickOnce удаляет сопоставление файлов для пользователя, а связь для каждого компьютера снова становится активной.
 
 ## <a name="example"></a>Пример
- В следующем примере кода показано `fileAssociation` элементы в приложении манифеста для приложения редактор текста, развернутых с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Этот пример кода также включает [ \<файл > элемент](../deployment/file-element-clickonce-application.md) с требованиями `defaultIcon` атрибута.
+ В следующем примере кода показаны `fileAssociation` элементы манифеста приложения для приложения текстового редактора, развернутого с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Этот пример кода также включает [ \<file> элемент](../deployment/file-element-clickonce-application.md) , необходимый для `defaultIcon` атрибута.
 
 ```xml
 <file name="text.ico" size="4286">
@@ -78,5 +78,5 @@ ms.locfileid: "62928524"
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

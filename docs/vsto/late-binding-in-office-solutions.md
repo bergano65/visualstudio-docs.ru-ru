@@ -16,56 +16,56 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583950"
 ---
 # <a name="late-binding-in-office-solutions"></a>Позднее связывание в решениях Office
-  Некоторые типы в объектных моделях приложений Office предоставляют функциональные возможности, доступные через компоненты позднего связывания. Например некоторые методы и свойства могут возвращать различные типы объектов в зависимости от контекста приложения Office, и некоторые типы могут предоставлять различные методы или свойства в различных контекстах.
+  Некоторые типы в объектных моделях приложений Office предоставляют функциональные возможности, доступные с помощью функций позднего связывания. Например, некоторые методы и свойства могут возвращать различные типы объектов в зависимости от контекста приложения Office, а некоторые типы могут предоставлять различные методы или свойства в разных контекстах.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Проекты Visual Basic, где **Option Strict** Выкл и Visual C# проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] может работать непосредственно с типами, которые реализуют эти компоненты позднего связывания.
+ Visual Basic проекты, в которых **параметр optioned** имеет значение OFF, а проекты Visual C#, предназначенные для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или, [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] могут работать непосредственно с типами, которые используют эти функции позднего связывания.
 
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Явное и неявное приведение объекта возвращаемые значения
- Множество методов и свойств в Microsoft Office, основные сборки взаимодействия (PIA) возвращают <xref:System.Object> значения, поскольку они могут возвращать несколько различных типов объектов. Например <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> возвращает <xref:System.Object> так, как его возвращаемое значение может быть <xref:Microsoft.Office.Interop.Excel.Worksheet> или <xref:Microsoft.Office.Interop.Excel.Chart> объекта, в зависимости от того, что такое активный лист.
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Неявное и явное приведение возвращаемых значений объекта
+ Многие методы и свойства в Microsoft Office основных сборках взаимодействия (PIA) возвращают <xref:System.Object> значения, так как они могут возвращать несколько различных типов объектов. Например, <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> свойство возвращает, <xref:System.Object> так как его возвращаемое значение может быть <xref:Microsoft.Office.Interop.Excel.Worksheet> объектом или <xref:Microsoft.Office.Interop.Excel.Chart> , в зависимости от того, что является активным листом.
 
- При возвращении метода или свойства <xref:System.Object>, необходимо явным образом преобразовать (в Visual Basic) объект к правильному типу в проектах Visual Basic где **Option Strict** включен. Необходимо явно привести тип <xref:System.Object> возвращаемые значения в проектах Visual Basic где **Option Strict** отключен.
+ Если метод или свойство возвращает <xref:System.Object> , необходимо явно преобразовать (в Visual Basic) объект в правильный тип в Visual Basic проектах, где **параметр Option-on** имеет значение ON. Нет необходимости явно приводить <xref:System.Object> возвращаемые значения в проектах Visual Basic, где **параметр optioned** имеет значение OFF.
 
- В большинстве случаев в справочной документации перечислены возможные типы возвращаемого значения для члена, который возвращает <xref:System.Object>. Преобразование или приведение объекта позволяет использовать IntelliSense для объекта в редакторе кода.
+ В большинстве случаев справочная документация содержит список возможных типов возвращаемого значения для элемента, который возвращает <xref:System.Object> . Преобразование или приведение объекта позволяет IntelliSense для объекта в редакторе кода.
 
- Сведения о преобразовании в Visual Basic см. в разделе [явные и неявные преобразования &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) и [функция CType &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).
+ Сведения о преобразовании в Visual Basic см. в разделе явные и неявные [преобразования &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) и [CType Function &#40;](/dotnet/visual-basic/language-reference/functions/ctype-function)Visual Basic.
 
 ### <a name="examples"></a>Примеры
- В следующем примере кода показано, как приведение объекта к определенному типу в проекте Visual Basic где **Option Strict** включен. В такой тип проекта, необходимо явно привести <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> свойства <xref:Microsoft.Office.Interop.Excel.Range>. В этом примере требуется проект Excel уровня документа с классом листа `Sheet1`.
+ В следующем примере кода показано, как привести объект к конкретному типу в проекте Visual Basic, где **параметр Option-on** имеет значение ON. В проекте этого типа необходимо явным образом привести <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> свойство к типу <xref:Microsoft.Office.Interop.Excel.Range> . Для этого примера требуется проект Excel уровня документа с классом листа с именем `Sheet1` .
 
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
 
- В следующем примере кода демонстрируется неявное приведение объекта к определенному типу в проекте Visual Basic где **Option Strict** выключен или находится в визуальном элементе C# проектом, нацеленным [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. В этих типов проектов <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> свойство неявно приведен к <xref:Microsoft.Office.Interop.Excel.Range>. В этом примере требуется проект Excel уровня документа с классом листа `Sheet1`.
+ В следующем примере кода показано, как неявно привести объект к конкретному типу в Visual Basic проекте, где **параметр Option строго** имеет значение OFF, или в проекте Visual C#, предназначенном для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . В проектах этих типов <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> свойство неявно приводится к типу <xref:Microsoft.Office.Interop.Excel.Range> . Для этого примера требуется проект Excel уровня документа с классом листа с именем `Sheet1` .
 
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]
 
-## <a name="access-members-that-are-available-only-through-late-binding"></a>Доступ к членам, которые доступны только через позднее связывание
- Некоторые свойства и методы в основных сборках взаимодействия Office доступны только через позднее связывание. В проектах Visual Basic where **Option Strict** выключен или находится в визуальном элементе C# проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], компоненты позднего связывания в этих языках можно использовать для доступа к членам с поздним связыванием. В проектах Visual Basic where **Option Strict** имеет значение on, следует использовать отражение для доступа к этим членам.
+## <a name="access-members-that-are-available-only-through-late-binding"></a>Доступ к членам, доступным только через позднее связывание
+ Некоторые свойства и методы в основных сборках взаимодействия Office доступны только через позднее связывание. В Visual Basic проектах, где **параметр optioned** имеет значение OFF или в проектах Visual C#, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , можно использовать функции позднего связывания на этих языках для доступа к элементам с поздним связыванием. Для доступа к этим членам в Visual Basic проектах, где **параметр Option-on** имеет значение ON, необходимо использовать отражение.
 
 ### <a name="examples"></a>Примеры
- В следующем примере кода показано, как получить доступ к членам с поздним связыванием в проекте Visual Basic где **Option Strict** выключен или находится в визуальном элементе C# проектом, нацеленным [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. В этом примере обращается к с поздним связыванием **имя** свойство **Открытие файла** диалоговое окно в Word. Чтобы использовать этот пример, запустите его из `ThisDocument` или `ThisAddIn` класс в проекте Word.
+ В следующем примере кода показано, как получить доступ к элементам с поздним связыванием в проекте Visual Basic, где **параметр optioned** имеет значение OFF, или в проекте Visual C#, предназначенном для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . В этом примере осуществляется доступ к свойству **имени** с поздним связыванием диалогового окна **открытия файла** в Word. Чтобы использовать этот пример, запустите его из `ThisDocument` класса или `ThisAddIn` в проекте Word.
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
 
- В следующем примере кода показано, как использовать отражение для выполнения той же задачи в проекте Visual Basic где **Option Strict** включен.
+ В следующем примере кода показано, как использовать отражение для выполнения той же задачи в проекте Visual Basic, где **параметр Option-on** имеет значение ON.
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)
 - [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Использование типа dynamic &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)
-- [Оператор Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
-- [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection) (Отражение (C#))
+- [Использование инструкции по программированию типа Dynamic &#40;C&#35;&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)
+- [Оператор Option Case](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+- [Отражение (C#)](/dotnet/csharp/programming-guide/concepts/reflection)
 - [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection) (Отражение (Visual Basic))
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)

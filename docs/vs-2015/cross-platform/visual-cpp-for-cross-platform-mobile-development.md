@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573070"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ для разработки кроссплатформенных мобильных приложений
@@ -33,8 +33,8 @@ ms.locfileid: "62573070"
   
 3. **Унифицированный процесс отладки.** Используйте первоклассные средства отладки в Visual Studio для отслеживания и пошагового прохождения кода C++ на всех платформах, включая устройства и эмуляторы Android, iOS, Windows и Windows Phone.  
   
-## <a name="get-the-tools"></a>Получение инструментов  
- Visual C++ для разработки кроссплатформенных мобильных приложений — это устанавливаемый компонент, входящий в состав Visual Studio 2015. Сведения о необходимых компонентах и инструкции по установке см. в разделе [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Для создания кода для iOS также требуются компьютер Mac и учетная запись разработчика Apple iOS. Для получения дополнительной информации см. [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+## <a name="get-the-tools"></a>Получить инструменты  
+ Visual C++ для разработки кроссплатформенных мобильных приложений — это устанавливаемый компонент, входящий в состав Visual Studio 2015. Необходимые условия и инструкции по установке см. в разделе [Install Visual C++ для разработки кросс-платформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Для создания кода для iOS также требуются компьютер Mac и учетная запись разработчика Apple iOS. Дополнительные сведения см. [в разделе Установка и настройка средств для сборки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
 ## <a name="come-up-to-speed"></a>Быстрое начало работы  
  Если у вас есть опыт разработки для Android или iOS, мы можем предложить вам отличные материалы, которые помогут вам приступить к работе. Visual Studio — это выразительная среда разработки с широкими возможностями. Чтобы научиться использовать ее, попробуйте обратиться [руководством по началу работы для разработчиков решений Android](https://msdn.microsoft.com/library/windows/apps/dn275875.aspx) или [руководством по началу работы для разработчиков решений iOS](https://msdn.microsoft.com/library/windows/apps/xaml/jj657966.aspx). В этих разделах вы получите общие сведения о Visual Studio и ознакомитесь с понятиями, которые нужно знать для разработки кроссплатформенных приложений для Windows и Windows Phone. Чтобы приступить к созданию первого кроссплатформенного приложения для iOS и Android, обратитесь к разделу [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
@@ -94,16 +94,16 @@ ms.locfileid: "62573070"
      Создает оболочку проекта для ваших собственных проектов Android, использующих файл makefile.  
   
 ## <a name="try-out-sample-code"></a>Испытайте образец кода  
- Скачайте образцы, демонстрирующие создание общих библиотек кода, которые можно использовать в приложениях Windows, Android и iOS, а также создание полностью готовых приложений Native Activity для Android. Чтобы приступить к работе, см. раздел [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md).  
+ Скачайте образцы, демонстрирующие создание общих библиотек кода, которые можно использовать в приложениях Windows, Android и iOS, а также создание полностью готовых приложений Native Activity для Android. Чтобы приступить к работе, ознакомьтесь с [примерами кросс-платформенной разработки мобильных приложений](../cross-platform/cross-platform-mobile-development-examples.md).  
   
-## <a name="in-this-section"></a>Содержание раздела  
+## <a name="in-this-section"></a>В этом разделе  
   
-1. [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [Установка Visual C++ для разработки кросс-платформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2. [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [Установка и настройка средств для сборки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
 3. [Создание приложения Android Native Activity](../cross-platform/create-an-android-native-activity-app.md)  
   
-4. [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4. [Создание приложения OpenGL ES в Android и iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5. [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [Примеры кросс-платформенной разработки мобильных приложений](../cross-platform/cross-platform-mobile-development-examples.md)

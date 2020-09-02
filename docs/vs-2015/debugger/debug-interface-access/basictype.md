@@ -1,5 +1,5 @@
 ---
-title: BasicType | Документация Майкрософт
+title: Басиктипе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 38de89b9774ac20f67b91e4ba864534122f4cdb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580841"
 ---
 # <a name="basictype"></a>BasicType
@@ -51,67 +51,67 @@ enum BasicType { 
 ```  
   
 ## <a name="elements"></a>Элементы  
- btNoType  
+ бтнотипе  
  Базовый тип не указан.  
   
- btVoid  
- Базовый тип является `void`.  
+ бтвоид  
+ Базовый тип — `void` .  
   
- btChar  
- Базовый тип является `char` (C/C++ тип).  
+ бтчар  
+ Базовый тип — это `char` тип (C/C++).  
   
- btWChar  
- Базовый тип представляет собой расширенный символ (Юникод) (`WCHAR`).  
+ бтвчар  
+ Базовый тип — это широкий символ (в Юникоде) ( `WCHAR` ).  
   
- btInt  
- Базовый тип является `signed int` (C/C++ тип).  
+ бтинт  
+ Базовый тип — `signed int` (тип C/C++).  
   
- btUInt  
- Базовый тип является `unsigned int` (C/C++ тип).  
+ бтуинт  
+ Базовый тип — `unsigned int` (тип C/C++).  
   
- btFloat  
- Базовый тип является числом с плавающей запятой (`FLOAT`).  
+ бтфлоат  
+ Базовый тип — число с плавающей запятой ( `FLOAT` ).  
   
- btBCD  
- Базовый тип — это десятичное число закодированных двоичный файл (`BCD`).  
+ бтбкд  
+ Базовый тип — это двоично-кодированное десятичное число ( `BCD` ).  
   
- btBool  
- Базовый тип является логическое значение (`BOOL`).  
+ бтбул  
+ Базовый тип — логическое значение ( `BOOL` ).  
   
- btLong  
- Базовый тип является `long int` (C/C++ тип).  
+ бтлонг  
+ Базовый тип — это `long int` тип (C/C++).  
   
- btULong  
- Базовый тип является `unsigned long int` (C/C++ тип).  
+ бтулонг  
+ Базовый тип — это `unsigned long int` тип (C/C++).  
   
- btCurrency  
- Базовый тип является валюты.  
+ бткурренци  
+ Базовый тип — Currency.  
   
- btDate  
- Базовый тип является даты и времени (`DATE`).  
+ бтдате  
+ Базовый тип — Дата и время ( `DATE` ).  
   
- btVariant  
- Базовый тип является структурой типа переменной (`VARIANT`).  
+ бтвариант  
+ Базовый тип — это структура типа переменной ( `VARIANT` ).  
   
- btComplex  
- Базовый тип — комплексного числа.  
+ бткомплекс  
+ Базовый тип — комплексное число.  
   
- btBit  
- Базовый тип — несколько.  
+ бтбит  
+ Тип "базовый" является битом.  
   
- btBSTR  
- Базовый тип — строка базовый или binary (`BSTR`).  
+ бтбстр  
+ Базовый тип — это базовая или двоичная строка ( `BSTR` ).  
   
- btHresult  
- Базовый тип является `HRESULT`.  
+ бсресулт  
+ Базовый тип — `HRESULT` .  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемые значения в этом перечислении [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Значения в этом перечислении возвращаются методом [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

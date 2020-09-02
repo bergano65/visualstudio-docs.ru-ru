@@ -14,46 +14,46 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62557028"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
-  С помощью набора шаблонов проектов и шаблонов элементов в Visual Studio можно создавать решения SharePoint. Эти шаблоны, требованиям многих сценариев разработки, однако вы можете столкнуться некоторых случаях, где они не предоставляют функциональные возможности, которые нужны. В этих случаях можно расширить системы проектов SharePoint.
+  Решения SharePoint можно создавать с помощью набора шаблонов проектов и шаблонов элементов в Visual Studio. Эти шаблоны соответствуют требованиям многих сценариев разработки, но в некоторых случаях они не предоставляют нужных функциональных возможностей. В таких случаях можно расширить систему проектов SharePoint.
 
-## <a name="overview-of-the-sharepoint-project-system"></a>Обзор системы проектов SharePoint
- Системы проектов SharePoint основан на фундаментальной составной частью *элементы проекта SharePoint*. Элемент проекта SharePoint представляет одну настройку SharePoint, например определение списка, веб-части или тип содержимого.
+## <a name="overview-of-the-sharepoint-project-system"></a>Общие сведения о системе проектов SharePoint
+ Система проектов SharePoint основана на фундаментальном компоненте *элементов проектов SharePoint*. Элемент проекта SharePoint представляет одну настройку SharePoint, например определение списка, веб-часть или тип содержимого.
 
- Проект SharePoint — это проект Visual Studio, которая включает один или несколько элементов проекта SharePoint. Проекты SharePoint также содержат дополнительные компоненты, которые определяют способ группировки элементов проекта в компоненты и пакеты для развертывания.
+ Проект SharePoint — это проект Visual Studio, который содержит один или несколько элементов проекта SharePoint. Проекты SharePoint также содержат дополнительные компоненты, определяющие группирование элементов проекта в компоненты и пакеты для развертывания.
 
- Дополнительные сведения о содержимом элементов проекта SharePoint и проектов SharePoint, см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
+ Дополнительные сведения о содержимом элементов проектов SharePoint и проектов SharePoint см. в разделе [Создание шаблонов элементов и шаблонов проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
- Системы проектов SharePoint можно расширить одним из следующих способов:
+ Расширить систему проектов SharePoint можно следующими способами.
 
-- Определение собственных типов элементов проектов SharePoint и связать их с шаблонами новых элементов или шаблонов проектов в Visual Studio. Например можно определить тип элемента проекта SharePoint для создания настраиваемого действия или поля. Дополнительные сведения см. в разделе [определения пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
+- Определите собственные типы элементов проектов SharePoint и свяжите их с новыми шаблонами элементов или шаблонами проектов в Visual Studio. Например, можно определить тип элемента проекта SharePoint для создания настраиваемого действия или поля. Дополнительные сведения см. в разделе [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
-- Расширение типов элементов проектов SharePoint, которые уже установлены в Visual Studio. Например, можно добавить пункта контекстного меню в элемент проекта в **обозревателе решений** и настройки элемента проекта, когда разработчик выбирает элемент меню. Дополнительные сведения см. в разделе [элементы проекта SharePoint, расширить](../sharepoint/extending-sharepoint-project-items.md).
+- Расширение типов элементов проектов SharePoint, уже установленных в Visual Studio. Например, можно добавить пункт контекстного меню в элемент проекта в **Обозреватель решений** и настроить элемент проекта, когда разработчик выберет пункт меню. Дополнительные сведения см. в разделе [расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md).
 
-- Расширение проектов SharePoint. Например можно добавить обработчики событий могут выполнять определенные задачи, когда элементы добавляются или удаляются из проектов SharePoint. Дополнительные сведения см. в разделе [проектов расширения SharePoint](../sharepoint/extending-sharepoint-projects.md).
+- Расширение проектов SharePoint. Например, можно добавить обработчики событий для выполнения конкретных задач при добавлении или удалении элементов из проектов SharePoint. Дополнительные сведения см. в разделе [расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md).
 
-- Расширьте поведение упаковки и развертывания проектов SharePoint и элементы проектов SharePoint. Например можно создать собственные шаги развертывания для выполнения при развертывании или отзыве проекта, или можно выполнять дополнительные пользовательские задачи, когда Visual Studio выполняет определенные шаги по развертыванию. Дополнительные сведения см. в разделе [SharePoint расширение упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+- Расширяйте поведение упаковки и развертывания элементов проектов SharePoint и проектов SharePoint. Например, можно создать собственные шаги развертывания для выполнения при развертывании или отзыве проекта, а также выполнять дополнительные пользовательские задачи, когда Visual Studio выполняет определенные шаги развертывания. Дополнительные сведения см. в разделе [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
-## <a name="common-development-tasks"></a>Часто встречающихся задач разработки
- Нужно выполнить следующие общие задачи в расширениях системы проектов SharePoint.
+## <a name="common-development-tasks"></a>Общие задачи разработки
+ В расширениях системы проектов SharePoint можно выполнять следующие стандартные задачи:
 
-- Сохраните пользовательскую строку данных с элементами проекта и в различных типах файлов проекта. Дополнительные сведения см. в разделе [сохранения данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+- Сохранение пользовательских строковых данных с помощью элементов проекта и нескольких разных типов файлов проекта. Дополнительные сведения см. [в разделе Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
-- Преобразование объекта в системе проектов SharePoint в соответствующий объект в объектной модели автоматизации Visual Studio или объектной модели интеграции и наоборот. Дополнительные сведения см. в разделе [преобразовать между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+- Преобразование объекта в системе проектов SharePoint в соответствующий объект в объектной модели автоматизации Visual Studio или объектной модели интеграции или наоборот. Дополнительные сведения см. в разделе [преобразовать между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Расширение элементов проектов SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)
-- [Расширение SharePoint упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [Расширения инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Концепции и функции программирования для расширений SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Расширение средств SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Понятия программирования и возможности расширений SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

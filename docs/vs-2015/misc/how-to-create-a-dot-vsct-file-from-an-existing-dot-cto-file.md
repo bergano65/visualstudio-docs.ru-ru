@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создать. Vsct-файл из существующего. Руководитель технологического отдела компании файл | Документация Майкрософт
+title: Как создать. Vsct файл из существующего. Файл CTO | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,13 +10,13 @@ ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
 ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62822442"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Практическое руководство. Создать. Vsct-файл из существующего. Файл Технический директор
+# <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Практическое руководство. Создание файла VSCT на основе существующего файла CTO
 Вы можете создать файл VSTC на основе XML из существующего двоичного CTO-файла. Это позволяет воспользоваться преимуществами нового формата компилятора таблицы команд. Этот процесс работает, даже если файл CTO был скомпилирован из файла CTC. Файл VSCT можно изменить и скомпилировать в другой файл CTO.  
   
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Создание файла VSCT на основе файла CTO  
@@ -33,6 +33,6 @@ ms.locfileid: "62822442"
   
      В результате этого процесса будет создан файл компилятора таблицы команд XML. Этот файл можно изменить и скомпилировать с помощью vsct.exe, компилятора VSCT, как и любой другой файл VSCT.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Создать. Файл Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+## <a name="see-also"></a>См. также:  
+ [Как создать. Файл vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

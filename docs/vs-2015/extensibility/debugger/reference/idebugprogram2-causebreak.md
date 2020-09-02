@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Документация Майкрософт
+title: 'IDebugProgram2:: Каусебреак | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5520d624b2789488c7ab6a5cab353d78d2cd69ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555713"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Запрашивает, чтобы программа остановил выполнение следующего время один из потоков попыток запуска.  
+Запрашивает, что программа останавливает выполнение, в следующий раз, когда один из его потоков пытается выполнить.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,13 +37,13 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) событий отправляется в том случае, когда программа попытается Далее для выполнения кода после вызова этого метода.  
+## <a name="remarks"></a>Remarks  
+ Событие [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) отправляется, когда программа далее пытается выполнить код после вызова этого метода.  
   
- Этот метод является асинхронным, в том, что метод немедленно возвращается, не обязательно ожидании остановку программы.  
+ Этот метод является асинхронным в том случае, если метод возвращает значение немедленно, без обязательного ожидания завершения программы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)
