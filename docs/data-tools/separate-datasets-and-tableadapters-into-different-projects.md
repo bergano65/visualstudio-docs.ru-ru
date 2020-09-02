@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281556"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Разделение наборов данных и TableAdapter на разные проекты
@@ -57,7 +57,7 @@ ms.locfileid: "85281556"
 > [!NOTE]
 > Чтобы просмотреть созданный файл класса, выберите набор данных или проект TableAdapter. Затем в **Обозреватель решений**выберите пункт **Показывать все файлы**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание N-уровневого приложения для данных](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

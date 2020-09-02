@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание наследования между типами (конструктор классов) | Документация Майкрософт
+title: Практическое руководство. Создание наследования между типами (конструктор классов) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668106"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Практическое руководство. Создание наследования между типами (конструктор классов)
@@ -30,7 +30,7 @@ ms.locfileid: "72668106"
 
 1. В Обозревателе решений выберите проект и откройте файл схемы классов (CD-файл).
 
-     Если диаграмма классов не существует, создайте ее. См. практическое руководство по [ Добавьте диаграммы классов в проекты (конструктор классов) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).
+     Если диаграмма классов не существует, создайте ее. См. раздел [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).
 
 2. На **панели инструментов** в разделе **Конструктор классов** щелкните элемент **Наследование**.
 
@@ -49,5 +49,5 @@ ms.locfileid: "72668106"
     >
     >  Хотя вы можете визуализировать существующие универсальные типы, создавать новые универсальные типы нельзя. Вы также не можете изменить параметры существующих универсальных типов.
 
-## <a name="see-also"></a>См. также
- [наследования](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [Основы наследования](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [How: Просмотр наследования между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md) [C++ визуальных классов в конструктор классов](../ide/visual-cpp-classes-in-class-designer.md)
+## <a name="see-also"></a>См. также:
+ [Inheritance](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [Основы](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) наследования наследования [: Просмотр наследования между типами (конструктор классов)](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++ классами в конструктор классов](../ide/visual-cpp-classes-in-class-designer.md)

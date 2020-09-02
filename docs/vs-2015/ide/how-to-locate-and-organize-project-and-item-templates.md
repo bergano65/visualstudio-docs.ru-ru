@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651874"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов
@@ -40,7 +40,7 @@ ms.locfileid: "72651874"
 
   Например, следующий каталог содержит шаблоны проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для английского языка:
 
-  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>Пользовательские шаблоны
  По умолчанию пользовательские шаблоны расположены в папке:
@@ -80,9 +80,9 @@ ms.locfileid: "72651874"
 
 5. В командной строке перейдите в каталог, содержащий файл devenv.exe, и введите **devenv /installvstemplates**.
 
-6. Выполнить команду [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Выполните [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-7. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.
+7. В меню **Файл** выберите **Создать**, а затем пункт **Проект**.
 
 8. Убедитесь, что категория Office появилась в разделе [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] области **Типы проектов** диалогового окна **Новый проект**.
 
@@ -102,11 +102,11 @@ ms.locfileid: "72651874"
 
 5. В командной строке перейдите в каталог, содержащий файл devenv.exe, и введите **devenv /setup**.
 
-6. Выполнить команду [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Выполните [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 7. Создайте новый проект или откройте уже имеющийся.
 
-8. В меню **Проект** выберите пункт **Добавить новый элемент**.
+8. В меню **Проект** выберите **Добавить новый элемент**.
 
 9. Убедитесь, что категория веб-сайтов появилась в области **Типы проектов** диалогового окна **Добавление нового элемента**.
 
@@ -121,7 +121,7 @@ ms.locfileid: "72651874"
 
 2. Поместите все шаблоны для этой категории в новую папку.
 
-3. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.
+3. В меню **Файл** выберите **Создать**, а затем пункт **Проект**.
 
 4. Убедитесь, что категория HelloWorld появилась в разделе [!INCLUDE[csprcs](../includes/csprcs-md.md)] области **Типы проектов** диалогового окна **Новый проект**.
 
@@ -137,7 +137,7 @@ ms.locfileid: "72651874"
 
 3. Создайте новый проект или откройте уже имеющийся.
 
-4. В меню **Проект** выберите пункт **Добавить новый элемент**.
+4. В меню **Проект** выберите **Добавить новый элемент**.
 
 5. Убедитесь, что категория HelloWorld появилась в области **Типы проектов** диалогового окна **Добавление нового элемента**.
 
@@ -172,5 +172,5 @@ ms.locfileid: "72651874"
 
 8. Поместите новый ZIP-файл в каталог, где находился удаленный ZIP-файл.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md) [шаблон Visual Studio Template Справочник](../extensibility/visual-studio-template-schema-reference.md) по [элемент numberofparentcategoriestorollup (шаблоны Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) [как создать шаблоны проектов](../ide/how-to-create-project-templates.md) [руководство: создание шаблонов элементов](../ide/how-to-create-item-templates.md)

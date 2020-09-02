@@ -1,5 +1,5 @@
 ---
-title: Изменения в синхронизации между XCode и Visual Studio 2015 | Документация Майкрософт
+title: Синхронизация изменений между XCode и Visual Studio 2015 | Документация Майкрософт
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.topic: conceptual
@@ -9,10 +9,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 42352ba4c5260c4b13a4cb3c6875d3469efcf404
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573395"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Изменения в синхронизации между XCode и Visual Studio
@@ -32,7 +32,7 @@ ms.locfileid: "62573395"
 ### <a name="open-in-xcode"></a>Открыть в XCode
  Чтобы открыть проект из Visual Studio в XCode, в подменю **Удаленный компьютер** выберите **Открыть в XCode** для открытия выбранного проекта на связанном удаленном компьютере. Сервер vcremote используется для открытия XCode на компьютере Mac и перехода во временную папку с копией проекта. Visual Studio выводит диалоговое окно с временным каталогом для проекта. Действия, выполняемые на удаленном компьютере, также отображаются в окне **Вывод** Visual Studio. Чтобы увидеть их, может потребоваться выбрать элемент **Удаленный компьютер Visual C++** в раскрывающемся списке **Показать выходные данные из** в верхней части окна **Вывод**.
 
- ![В окне вывода отображаются действия на удаленном компьютере.](../cross-platform/media/cppmdd-u2-remotemachine-output.png "CPPMDD_U2_RemoteMachine_Output")
+ ![В окне "Вывод" отображаются действия на удаленном компьютере.](../cross-platform/media/cppmdd-u2-remotemachine-output.png "CPPMDD_U2_RemoteMachine_Output")
 
  На Mac можно использовать любые средства XCode для изменения кода, а также ресурсов, раскадровки и действий. В Visual Studio проект приложения iOS помечается как "Открыто в XCode", чтобы указать, что на удаленном компьютере могут вноситься изменения. После внесения изменений вы можете воспользоваться командой "Принудительное извлечение с удаленного компьютера" или "Инкрементное принудительное извлечение с удаленного компьютера", чтобы скопировать их обратно в проект Visual Studio.
 

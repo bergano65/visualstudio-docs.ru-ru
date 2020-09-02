@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Документация Майкрософт
+title: 'Идебужекспрессионевалуатор:: Жетмесодлокатионпроперти | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d82b002d9253b2d48f78e74fdf964cf42d241d9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144394"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод преобразует метод расположение и смещение в адрес памяти.  
+Этот метод преобразует расположение метода и смещение в адрес памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,30 +48,30 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>Параметры  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] Метод расположение и смещение, выраженное в виде строки.  
+ окне Положение и смещение метода, выраженное в виде строки.  
   
  `pSymbolProvider`  
- [in] Поставщик символов выражается [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) объекта.  
+ окне Поставщик символов, выраженный в виде объекта [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .  
   
  `pAddress`  
- [in] Адрес в методе, выраженное как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.  
+ окне Адрес в методе, выраженный как объект [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pBinder`  
- [in] Связыватель выражается [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.  
+ окне Связыватель, выраженный как объект [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) .  
   
  `ppProperty`  
- [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс, который представляет собой адрес памяти.  
+ заполняет Возвращает интерфейс [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий адрес памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемый адрес можно использовать для задания точки останова, например.  
+## <a name="remarks"></a>Remarks  
+ Для задания точки останова можно использовать возвращенный адрес, например.  
   
- Несмотря на название `upstrFullyQualifiedMethodPlusOffset`, этот параметр можно передать имя метода частичных. В этом случае выбранного метода является тот, который заключает `pAddress`. Способ интерпретации этот параметр зависит от реализации средство оценки выражений и язык, который поддерживается.  
+ Несмотря на имя `upstrFullyQualifiedMethodPlusOffset` , этому параметру может быть передано имя метода с частичным указанием. В этом случае выбранным методом является тот, который в нем заключен `pAddress` . Способ интерпретации этого параметра является реализацией средства оценки выражений и поддерживаемого им языка.  
   
-## <a name="see-also"></a>См. также  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

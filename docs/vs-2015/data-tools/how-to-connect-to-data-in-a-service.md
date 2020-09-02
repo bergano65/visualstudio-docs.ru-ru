@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9bfa6c776e3a2137f751d4253feb0239811d95a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654688"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Практическое руководство. Подключение к данным в службе
@@ -47,7 +47,7 @@ ms.locfileid: "72654688"
 
 2. На странице **Выбор типа источника данных** выберите пункт **Служба** , а затем нажмите кнопку **Далее**.
 
-3. Введите адрес службы, которую вы хотите использовать, или нажмите кнопку " **обнаружить** ", чтобы найти службы в текущем решении, а затем нажмите кнопку **"перейти"** .
+3. Введите адрес службы, которую вы хотите использовать, или нажмите кнопку " **обнаружить** ", чтобы найти службы в текущем решении, а затем нажмите кнопку **"перейти"**.
 
 4. При необходимости можно ввести новое **пространство имен** вместо значения по умолчанию.
 
@@ -60,11 +60,11 @@ ms.locfileid: "72654688"
 
      Источник данных добавлен в окно **Источники данных**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
 #### <a name="to-add-functionality-to-your-application"></a>Добавление функциональности в приложение
 
 - Выберите элемент в окне **Источники данных** и перетащите его на форму, чтобы создать привязанные элементы управления. Дополнительные сведения см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [Windows Communication Foundation службам и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

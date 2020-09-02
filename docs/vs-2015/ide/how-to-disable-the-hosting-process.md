@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667976"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
@@ -28,13 +28,13 @@ ms.locfileid: "72667976"
 
 1. Откройте проект исполняемого файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Для проектов, не создающих исполняемые файлы (например, проектов библиотеки классов или службы), этот параметр отсутствует.
 
-2. В меню **Проект** выберите пункт **Свойства**.
+2. В меню **Проект** выберите **Свойства**.
 
 3. Откройте вкладку **Отладка**.
 
 4. Снимите флажок **Включить ведущий процесс Visual Studio**.
 
-   Когда ведущий процесс отключен, некоторые функции отладки недоступны или работают хуже. Дополнительные сведения см. в статье [Отладка и ведущий процесс](../debugger/debugging-and-the-hosting-process.md).
+   Когда ведущий процесс отключен, некоторые функции отладки недоступны или работают хуже. Дополнительные сведения см. [в разделе Отладка и ведущий процесс](../debugger/debugging-and-the-hosting-process.md).
 
    Как правило, отключение ведущего процесса приводит к следующему:
 
@@ -44,5 +44,5 @@ ms.locfileid: "72667976"
 
 - Недоступна отладка с частичным доверием.
 
-## <a name="see-also"></a>См. также
- [Отладка и ведущий процесс размещения процесса](../debugger/debugging-and-the-hosting-process.md) [(vshost. exe)](../ide/hosting-process-vshost-exe.md) [построены во время разработки приложения](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>См. также:
+ [Отладка и](../debugger/debugging-and-the-hosting-process.md) ведущий процесс размещения процесса [(vshost.exe)](../ide/hosting-process-vshost-exe.md) [строятся во время разработки приложения](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

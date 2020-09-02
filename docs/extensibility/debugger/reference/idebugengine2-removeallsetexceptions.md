@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveAllSetExceptions Документы Майкрософт
+title: 'IDebugEngine2:: Ремовеаллсетексцептионс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ae5ac703f1d0bd374131a4f5de397f39cf0ba209
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731026"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Удаляет список исключений, установленных IDE для определенной архитектуры или языка времени выполнения.
+Удаляет список исключений, установленных интегрированной средой разработки для определенной архитектуры или языка среды выполнения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,17 +41,17 @@ int RemoveAllSetExceptions( 
 
 ## <a name="parameters"></a>Параметры
 `guidType`\
-(в) Либо GUID для языка, либо GUID для движка отладки, характерного для архитектуры времени выполнения.
+окне Идентификатор GUID для языка или GUID для модуля отладки, характерный для архитектуры времени выполнения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Исключения, удаленные этим методом, были установлены более ранними вызовами метода [SetException.](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
+## <a name="remarks"></a>Remarks
+ Исключения, удаленные этим методом, были заданы предыдущими вызовами метода [сетексцептион](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
- Чтобы удалить определенное исключение, позвоните в метод [RemoveSetException.](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)
+ Чтобы удалить конкретное исключение, вызовите метод [ремовесетексцептион](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)

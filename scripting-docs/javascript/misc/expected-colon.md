@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bcb5d395ac322b6fd1daed2bfd9da1fe76f57e3a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816674"
 ---
 # <a name="expected-"></a>Ожидался символ ":"
@@ -28,6 +28,6 @@ ms.locfileid: "85816674"
   
 - Вставьте двоеточие между вторым и третьим операндами.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Оператор Conditional (Ternary) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Операторы](../../javascript/operators-javascript.md)

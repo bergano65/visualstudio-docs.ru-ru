@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Документация Майкрософт
+title: 'Идебугкустоматтрибуте:: Жетпарентфиелд | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b6d6ceadc8ee0dc6099d6463a75f1c792837e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569580"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает поле, к которому подключается настраиваемый атрибут.  
+Возвращает поле, к которому присоединен настраиваемый атрибут.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int GetParentField(
   
 #### <a name="parameters"></a>Параметры  
  `ppField`  
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , представляющий поле, к которому подключается настраиваемый атрибут.  
+ заполняет Возвращает объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющий поле, к которому присоединен настраиваемый атрибут.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод возвращенного [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) является объектом, чтобы определить тип поля, которые родительского.  
+## <a name="remarks"></a>Remarks  
+ Вызовите метод [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) для возвращенного объекта [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , чтобы определить, какой тип поля является родительским.  
   
-## <a name="see-also"></a>См. также  
- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугкустоматтрибуте](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPortSupplierId | Документация Майкрософт
+title: 'IDebugPortSupplier2:: Жетпортсупплиерид | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9b8e1db99727427e18a12b5d159c61212f706be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188270"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
@@ -40,10 +40,10 @@ HRESULT GetPortSupplierId( 
   
 #### <a name="parameters"></a>Параметры  
  `pguidPortSupplier`  
- [out] Возвращает идентификатор GUID поставщика порта.  
+ заполняет Возвращает идентификатор GUID поставщика порта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271587"
 ---
 # <a name="annotating-locking-behavior"></a>Аннотация поведения блокировки
@@ -76,7 +76,7 @@ ms.locfileid: "77271587"
 |`_Create_lock_level_(name)`|Оператор, который объявляет символ `name` символом уровня блокировки, благодаря чему он может быть использован в аннотациях `_Has_Lock_level_` и `_Lock_level_order_`.|  
 |`_Has_lock_kind_(kind)`|Закомментировать любой объект, чтобы уточнить сведения о типе объекта ресурса. Иногда для различных типов ресурсов используется общий тип, а перегруженный тип недостаточно для различения семантических требований между различными ресурсами. Ниже представлен список предварительно определенных параметров `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> Идентификатор типа блокировки для мьютексов.<br /><br /> `_Lock_kind_event_`<br /> Идентификатор типа блокировки для событий.<br /><br /> `_Lock_kind_semaphore_`<br /> Идентификатор типа блокировки для семафоров.<br /><br /> `_Lock_kind_spin_lock_`<br /> Идентификатор типа блокировки для спин блокировок.<br /><br /> `_Lock_kind_critical_section_`<br /> Идентификатор типа блокировки для критических секций.|  
 |`_Has_lock_level_(name)`|Аннотирует объект блокировки и присваивает ему уровень блокировки `name`.|  
-|`_Lock_level_order_(name1, name2)`|Инструкция, которая обеспечивает порядок блокировки между `name1` и `name2`.|  
+|`_Lock_level_order_(name1, name2)`|Инструкция, которая обеспечивает порядок блокировки между `name1` и `name2` .|  
 |`_Post_same_lock_(expr1, expr2)`|Аннотирует функцию и указывает, что в состоянии выполнения две блокировки, `expr1` и `expr2`, рассматриваются таким образом, как если бы они были одним и тем же объектом блокировки.|  
 |`_Releases_exclusive_lock_(expr)`|Добавляет заметки к функции и указывает, что функция после вызова уменьшает на единицу число монопольных блокировок объекта блокировок с именем `expr`.|  
 |`_Releases_lock_(expr)`|Аннотирует функцию и указывает, что функция после вызова уменьшает на единицу число блокировок объекта блокировок с именем `expr`.|  
@@ -104,17 +104,17 @@ ms.locfileid: "77271587"
 |Заметка|Описание|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при доступе к данной переменной количество блокировок объекта с именем `expr` не менее единицы.|  
-|`_Interlocked_`|Добавляет заметки к переменной и эквивалентен `_Guarded_by_(_Global_interlock_)`.|  
+|`_Interlocked_`|Добавляет заметки к переменной и эквивалентно `_Guarded_by_(_Global_interlock_)` .|  
 |`_Interlocked_operand_`|Параметр функции с заметками является целевым операндом одной из различных взаимоблокированных функций.  Эти операнды должны иметь определенные дополнительные свойства.|  
 |`_Write_guarded_by_(expr)`|Добавляет заметки к переменной и указывает на то, что при изменении данной переменной количество блокировок объекта с именем `expr` не менее единицы.|  
   
 ## <a name="see-also"></a>См. также:  
- [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Использование аннотаций SAL для сокращения числа дефектов кода C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Основные сведения о SAL](../code-quality/understanding-sal.md)   
  [Добавление заметок к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md)   
- [Добавление заметок к структурам и классам](../code-quality/annotating-structs-and-classes.md)   
+ [Аннотирование поведения функции](../code-quality/annotating-function-behavior.md)   
+ [Аннотирование структур и классов](../code-quality/annotating-structs-and-classes.md)   
  [Указание времени и места применения заметки](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Встроенные функции](../code-quality/intrinsic-functions.md)   
- Рекомендации [и примеры](../code-quality/best-practices-and-examples-sal.md)   
+ [Рекомендации и примеры](../code-quality/best-practices-and-examples-sal.md)   
  [Блог команды разработчиков анализа кода](https://blogs.msdn.com/b/codeanalysis/)

@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35cce37afc389501386ffec7b75b934e7933bc98
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197795"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
@@ -45,10 +45,10 @@ int GetCount(
  заполняет Возвращает число.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод видит все элементы объекта массива в виде одномерного массива, даже если объект массива является многомерным. Например, `myarray[3][2][6]` `pdwElements` при наличии массива этот метод возвратит 36 в параметре. Используйте метод [WebMethod](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) для получения отдельных элементов по одному за раз.  
+## <a name="remarks"></a>Remarks  
+ Этот метод видит все элементы объекта массива в виде одномерного массива, даже если объект массива является многомерным. Например, при наличии массива `myarray[3][2][6]` этот метод возвратит 36 в `pdwElements` параметре. Используйте метод [WebMethod](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) для получения отдельных элементов по одному за раз.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

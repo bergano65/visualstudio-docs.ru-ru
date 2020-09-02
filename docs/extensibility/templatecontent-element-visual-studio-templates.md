@@ -1,5 +1,5 @@
 ---
-title: Элемент TemplateContent (Visual Studio Templates) Документы Майкрософт
+title: Элемент TemplateContent (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699234"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Элемент TemplateContent (шаблоны проектов Visual Studio)
 
-Определяет содержимое шаблона.
+Задает содержимое шаблона.
 
 Иерархия элементов:
 
@@ -46,29 +46,29 @@ ms.locfileid: "80699234"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Определяется, следует ли создавать решение при создании проекта из шаблона.|
+|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Указывает, следует ли выполнять сборку решения при создании проекта из шаблона.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает организацию и содержимое многопроектных шаблонов.|
-|[Project](../extensibility/project-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Определяет файлы или каталоги для добавления в проект.|
-|[Ссылки](../extensibility/references-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Определяет ссылки сборки, необходимые для шаблона элемента.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Необязательный элемент.<br /><br /> Упоняет файл, содержащийся в шаблоне.|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Определяет любые пользовательские параметры, которые должны использоваться при создании проекта или элемента из шаблона.|
+|[Проект](../extensibility/project-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает файлы или каталоги для добавления в проект.|
+|[Справочные материалы](../extensibility/references-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает ссылки на сборки, необходимые для шаблона элемента.|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Необязательный элемент.<br /><br /> Указывает файл, содержащийся в шаблоне.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Задает любые пользовательские параметры, которые будут использоваться при создании проекта или элемента из шаблона.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элементов или стартового комплекта.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Примечания
- `TemplateContent`является необходимым элементом.
+## <a name="remarks"></a>Remarks
+ `TemplateContent` является обязательным элементом.
 
 ## <a name="example"></a>Пример
- В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -94,7 +94,7 @@ ms.locfileid: "80699234"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

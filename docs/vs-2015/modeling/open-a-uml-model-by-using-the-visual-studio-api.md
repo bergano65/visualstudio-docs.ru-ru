@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668506"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Открытие модели UML с помощью API Visual Studio
@@ -29,12 +29,12 @@ ms.locfileid: "72668506"
 
 - Модель можно открыть в режиме только для чтения. Дополнительные сведения см. [в разделе Чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Showing"></a>Открытие моделей и схем в Visual Studio
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Открытие моделей и схем в Visual Studio
  Чтобы открыть модель в пользовательском интерфейсе, воспользуйтесь стандартным API-интерфейсами Visual Studio `EnvDTE.DTE`. Существует два полезных приведения, которые можно применять к элементам проекта моделирования.
 
-- `EnvDTE.Project` можно привести к `IModelingProject` и наоборот, если проект является проектом моделирования, а также если проект загружен в текущем домене приложения.
+- `EnvDTE.Project` можно привести к и из `IModelingProject` , если проект является проектом моделирования и если проект загружен в текущий домен приложения.
 
-- `EnvDTE.ProjectItem` можно привести к `IDiagramContext` и наоборот, если элемент является схемой UML.
+- `EnvDTE.ProjectItem` можно привести к и из `IDiagramContext` , если элемент является схемой UML.
 
   Для приведенного ниже примера в проект необходимо импортировать следующие ссылки:
 
@@ -115,5 +115,5 @@ foreach (ProjectItem item in project.ProjectItems)
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Программирование с помощью API UML](../modeling/programming-with-the-uml-api.md) [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)

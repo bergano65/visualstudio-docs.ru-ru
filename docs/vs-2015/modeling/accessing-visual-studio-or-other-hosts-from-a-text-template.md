@@ -11,22 +11,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0e8cedc66d6b52f80239364a3e51b73e93a69aa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655326"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Обращение к Visual Studio или другим основным приложениям из текстового шаблона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В текстовом шаблоне можно использовать методы и свойства, предоставляемые узлом, который выполняет шаблон, например [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+В текстовом шаблоне можно использовать методы и свойства, предоставляемые узлом, который выполняет шаблон, например [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  Это относится к обычным текстовым шаблонам, а не к предварительно обработанным текстовым шаблонам.
 
 ## <a name="obtaining-access-to-the-host"></a>Получение доступа к узлу
 
-Задайте `hostspecific="true"` в директиве `template`. Это позволяет использовать `this.Host` с типом [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Этот тип содержит члены, которые можно использовать, например, для разрешения имен файлов и записи ошибок в журнал.
+Задается `hostspecific="true"` в `template` директиве. Это позволяет использовать  `this.Host` , имеющий тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Этот тип содержит члены, которые можно использовать, например, для разрешения имен файлов и записи ошибок в журнал.
 
 ### <a name="resolving-file-names"></a>Разрешение имен файлов
  Чтобы найти полный путь к файлу относительно текстового шаблона, используйте следующий текст. Host. Ресолвепас ().
@@ -45,7 +45,7 @@ Content of myFile is:
 ```
 
 ### <a name="displaying-error-messages"></a>Отображение сообщений об ошибках
- В этом примере сообщения записываются при преобразовании шаблона. Если узел [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], они будут добавлены в окно ошибок.
+ В этом примере сообщения записываются при преобразовании шаблона. Если узел имеет значение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , они добавляются в окно ошибки.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -63,11 +63,11 @@ Content of myFile is:
 ```
 
 ## <a name="using-the-visual-studio-api"></a>Использование API Visual Studio
- При запуске текстового шаблона в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно использовать `this.Host` для доступа к службам, предоставляемым [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а также любым загруженным пакетам или расширениям.
+ Если вы используете текстовый шаблон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , можно использовать `this.Host` для доступа к службам, предоставляемым, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и любым загруженным пакетам или расширениям.
 
- Задайте hostspecific = "true" и приведите `this.Host` к <xref:System.IServiceProvider>.
+ Задайте hostspecific = "true" и приведите `this.Host` к типу <xref:System.IServiceProvider> .
 
- В этом примере в качестве службы возвращается [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API <xref:EnvDTE.DTE>.
+ В этом примере в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] качестве службы получается API <xref:EnvDTE.DTE> :
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -83,4 +83,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
 ## <a name="using-hostspecific-with-template-inheritance"></a>Использование hostSpecific с наследованием шаблонов
- Укажите `hostspecific="trueFromBase"`, если также используется атрибут `inherits` и наследование из шаблона, в котором указано `hostspecific="true"`. Это позволяет избежать возникновения предупреждения о том, что свойство `Host` было объявлено дважды.
+ Укажите `hostspecific="trueFromBase"` , используется ли также `inherits` атрибут, и, если вы наследуете от шаблона, который указывает `hostspecific="true"` . Это позволяет избежать предупреждения о том, что свойство было `Host` объявлено дважды.

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5f5d8bb92b80942a95528a0b2e4c7e64bbfafc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668142"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Практическое руководство. Создание и изменение конфигураций
@@ -121,7 +121,7 @@ ms.locfileid: "72668142"
 
 2. В раскрывающемся списке **Активная конфигурация решения** выберите нужную конфигурацию.
 
-3. В области **Конфигурации проектов** для каждого проекта выберите нужную **конфигурацию** и **платформу**, а также выберите, требуется ли выполнять его **сборку** и **развертывание**.
+3. В области " **контексты проектов** " для каждого проекта выберите нужную **конфигурацию** и **платформу** и укажите, следует ли выполнять **сборку** и **развертывание** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md) [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [NIB. как изменить свойства проекта и параметры конфигурации](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

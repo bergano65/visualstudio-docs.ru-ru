@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Документация Майкрософт
+title: 'IDebugPortSupplier3:: Енумперсистедпортс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 944159ead89166c8452775bd6522a7c441094ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188199"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод извлекает объект, позволяющий перечисления из списка сохраненных портов.  
+Этот метод извлекает объект, позволяющий перечислить список сохраненных портов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,18 +42,18 @@ int EnumPersistedPorts(
   
 #### <a name="parameters"></a>Параметры  
  `PortNames`  
- [in] Объект [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) структура, содержащая список имен портов для поиска и возврата материализованных портов. Будут возвращены только порты, сохраненные с этими именами.  
+ окне Структура [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) , содержащая список имен портов для поиска и возврата между постоянными портами. Будут возвращены только сохраненные порты с этими именами.  
   
  `ppEnum`  
- [out] Объект, реализующий [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) интерфейс.  
+ заполняет Объект, реализующий интерфейс [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Сохраненные порты загружаются при создании экземпляра поставщика порта и сохранить при уничтожении поставщика порта.  
+## <a name="remarks"></a>Remarks  
+ Сохраненные порты загружаются при создании экземпляра поставщика порта и сохраняются при уничтожении поставщика порта.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)   
  [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

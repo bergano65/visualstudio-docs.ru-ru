@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281613"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранение данных с помощью методов DBDirect адаптера таблицы TableAdapter
@@ -117,9 +117,9 @@ ms.locfileid: "85281613"
 
 2. Задайте следующие свойства **Имя** и **Текст** для каждой из кнопок.
 
-    |Название|текст|
+    |Имя|Текст|
     |----------|----------|
-    |`InsertButton`|**Вставить**|
+    |`InsertButton`|**Insert**|
     |`UpdateButton`|**Update**|
     |`DeleteButton`|**Удаление**|
 
@@ -168,6 +168,6 @@ ms.locfileid: "85281613"
 
 - Добавление дополнительных таблиц в набор данных посредством выбора элемента **Настроить набор данных с помощью мастера** в окне **Источники данных**. Вы можете добавить элементы управления, отображающие связанные данные, перетащив связанные узлы на форму. Дополнительные сведения см. [в разделе связи в наборах данных](relationships-in-datasets.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

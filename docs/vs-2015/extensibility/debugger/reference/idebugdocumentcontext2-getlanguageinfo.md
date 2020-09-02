@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetLanguageInfo | Документация Майкрософт
+title: 'IDebugDocumentContext2:: Жетлангуажеинфо | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1c9d62fd368b248bd6267c9d85e86b9b6e4de36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145031"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает язык, связанный с данным контекстом документа.  
+Возвращает язык, связанный с этим контекстом документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,16 +42,16 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>Параметры  
  `pbstrLanguage`  
- [out] Возвращает имя языка, который реализует код в контексте этого документа.  
+ заполняет Возвращает имя языка, реализующего код в данном контексте документа.  
   
  `pguidLanguage`  
- [out] Возвращает GUID языка, который реализует код в контексте этого документа. Например, `guidVBScriptLang` или `guidCPPLang`. Этот идентификатор GUID не ограничивается языками, предоставляемые [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+ заполняет Возвращает идентификатор GUID языка, реализующего код в данном контексте документа. Например, `guidVBScriptLang` или `guidCPPLang`. Этот идентификатор GUID не ограничивается языками, предоставляемыми [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CDebugContext` объекта, который предоставляет [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для простого `CDebugContext` объекта, предоставляющего интерфейс [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .  
   
 ```cpp#  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    
@@ -82,5 +82,5 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -1,5 +1,5 @@
 ---
-title: Диалоговое окно сведений о нагрузки символов | Документация Майкрософт
+title: Диалоговое окно "Сведения о загрузке символов" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 321de64442b983dd6da1d23c25d535b389f15bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144594"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Диалоговое окно "Сведения о загрузке символов"
@@ -35,5 +35,5 @@ ms.locfileid: "68144594"
  **Параметры символов**  
  Нажмите эту кнопку, чтобы изменить параметры символов в диалоговом окне **Параметры** (категория **Отладка**, страница **Символы**). На этой странице можно добавлять или удалять места расположения символов, определять место расположения локального кэша при использовании сервера символов и управлять поиском местоположений символов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

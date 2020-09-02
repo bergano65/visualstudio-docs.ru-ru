@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5f8568edc636955558ec93b55c0aedebf0065d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651828"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Практическое руководство. Управление конфигурациями построений с применением параметров разработчика Visual Basic
@@ -34,7 +34,7 @@ ms.locfileid: "72651828"
 
 #### <a name="to-enable-advanced-build-configurations"></a>Включение дополнительных конфигураций сборок
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите команду **Параметры**.
 
 2. Разверните узел **Проекты и решения** и выберите **Общие**.
 
@@ -47,5 +47,5 @@ ms.locfileid: "72651828"
 
      Теперь в меню **Сборка** можно выбрать **Диспетчер конфигурации**, а списки **конфигураций** и **платформ** отображаются в конструкторе проектов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md) [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

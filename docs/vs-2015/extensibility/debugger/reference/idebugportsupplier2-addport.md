@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::AddPort | Документация Майкрософт
+title: 'IDebugPortSupplier2:: Аддпорт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf5bf281e794bde04ae0c2e86c6d27edb7edc5a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188296"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
@@ -42,18 +42,18 @@ int AddPort( 
   
 #### <a name="parameters"></a>Параметры  
  `pRequest`  
- [in] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт, который будет добавляться.  
+ окне Объект [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий добавляемый порт.  
   
  `ppPort`  
- [out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, который представляет порт.  
+ заполняет Возвращает объект [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , представляющий порт.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод фактически создает запрошенный порт, а также добавления поставщика порта внутренний список активных портов. [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) метод может вызываться сначала во избежание возможных простоев много времени.  
+## <a name="remarks"></a>Remarks  
+ Этот метод фактически создает запрошенный порт, а также добавляет его в внутренний список активных портов поставщика порта. Сначала можно вызвать метод [канаддпорт](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) , чтобы избежать возможных длительных задержек.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

@@ -1,5 +1,5 @@
 ---
-title: Модель автоматизации для объектов конфигурации и SelectedItem | Документация Майкрософт
+title: Автоматизация для объектов Configuration и SelectedItem | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42faf8127c1ab70d3470aa497a0cdab6058060f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157260"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Автоматизация для объектов конфигурации и SelectedItem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Можно автоматизировать сборки и процессы выбранного элемента в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+Можно автоматизировать сборку и выбранные процессы элементов в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-## <a name="automation-for-builds"></a>Автоматизация сборки  
- Сборки или конфигурации имеет модель автоматизации, которая предоставляется при реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Дополнительные сведения см. в разделе [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md).  
+## <a name="automation-for-builds"></a>Автоматизация для сборок  
+ Сборка или конфигурация имеет модель автоматизации, предоставляемую при реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider> . Дополнительные сведения см. в разделе [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md).  
   
- Если вы создаете VSPackage и хотите контролировать параметры конфигурации, необходимо использовать модель автоматизации.  
+ Если вы создаете VSPackage и хотите управлять параметрами конфигурации, необходимо использовать модель автоматизации.  
   
-## <a name="automation-for-selecteditem"></a>Модель автоматизации для SelectedItem  
- Необходимо обеспечить реализацию для `SelectedItem` объекта, так как Visual Studio содержит стандартную реализацию. Тем не менее, можно реализовать `SelectedItem` объекта, если вы предпочитаете. Необходимо реализовать объект, содержащий `SelectedItem` интерфейс и возврат ответа на вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> метод с VSITEMID <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>.  
+## <a name="automation-for-selecteditem"></a>Автоматизация для SelectedItem  
+ Нет необходимости предоставлять реализацию для `SelectedItem` объекта, так как Visual Studio содержит стандартную реализацию. Однако при желании можно реализовать `SelectedItem` объект. Необходимо реализовать объект, содержащий `SelectedItem` интерфейс, и вернуть ответ на вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> метода с ПАРАМЕТРом вситемид, имеющим значение <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
- [Дополнение к модели автоматизации](../../extensibility/internals/contributing-to-the-automation-model.md)   
- [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md)
+ [Вклад в модель автоматизации](../../extensibility/internals/contributing-to-the-automation-model.md)   
+ [Основные сведения о конфигурациях сборки](../../ide/understanding-build-configurations.md)

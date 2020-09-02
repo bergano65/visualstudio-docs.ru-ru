@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID Документы Майкрософт
+title: 'IDebugEngine2:: Жетенгинеид | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731076"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-Получает GUID двигателя отладки (DE).
+Возвращает идентификатор GUID модуля отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetEngineID(
 
 ## <a name="parameters"></a>Параметры
 `pguidEngine`\
-(ваут) Возвращает GUID DE.
+заполняет Возвращает идентификатор GUID для DE.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Некоторые примеры типичных `guidScriptEng`GUIDs, `guidNativeEng`или `guidSQLEng`. Новые двигатели отладки создадут свой собственный GUID для идентификации.
+## <a name="remarks"></a>Remarks
+Примеры типичных идентификаторов GUID: `guidScriptEng` , `guidNativeEng` или `guidSQLEng` . Новые модули отладки будут создавать собственные идентификаторы GUID для идентификации.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CEngine` реализовать этот метод для простого объекта, который реализует интерфейс [IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)
+В следующем примере показано, как реализовать этот метод для простого `CEngine` объекта, реализующего интерфейс [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) .
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
@@ -66,5 +66,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

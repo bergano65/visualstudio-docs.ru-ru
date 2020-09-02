@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281647"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Сохранение данных в базе данных (несколько таблиц)
@@ -144,6 +144,6 @@ ms.locfileid: "85281647"
 
 4. Проверьте значения в базе данных и убедитесь, что изменения были сохранены.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

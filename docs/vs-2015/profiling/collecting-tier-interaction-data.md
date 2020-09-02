@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568051"
 ---
 # <a name="collecting-tier-interaction-data"></a>Сбор данных взаимодействия уровней
@@ -34,7 +34,7 @@ ms.locfileid: "62568051"
   
  **Windows 8 и Windows Server 2012**  
   
- Чтобы собрать данные об уровневом взаимодействии на классических приложениях Windows 8 и приложениях Windows Server 2012, необходимо использовать метод инструментирования. Вы не можете собрать данные об уровневом взаимодействии для приложений для Магазина Windows. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Данные об уровневом взаимодействии можно включить во все методы профилирования на других поддерживаемых версиях Windows.  
+ Чтобы собрать данные об уровневом взаимодействии на классических приложениях Windows 8 и приложениях Windows Server 2012, необходимо использовать метод инструментирования. Вы не можете собрать данные об уровневом взаимодействии для приложений для Магазина Windows. См. статью [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Данные об уровневом взаимодействии можно включить во все методы профилирования на других поддерживаемых версиях Windows.  
   
  **Мастер производительности**  
   
@@ -48,5 +48,5 @@ ms.locfileid: "62568051"
   
 3. В обозревателе производительности выделите узел **Целевые объекты**, а затем укажите проект, исполняемый файл или веб-сайт, который необходимо профилировать.  
   
-## <a name="see-also"></a>См. также раздел  
- [Представление "Взаимодействия уровня"](../profiling/tier-interactions-view.md)
+## <a name="see-also"></a>См. также:  
+ ["Взаимодействие между уровнями" - представление](../profiling/tier-interactions-view.md)
