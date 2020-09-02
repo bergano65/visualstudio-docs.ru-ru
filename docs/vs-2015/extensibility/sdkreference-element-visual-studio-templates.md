@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 606c6595f83003c463d218cf7253407ae2e925d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160750"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference - элемент (шаблоны Visual Studio)
@@ -48,7 +48,7 @@ ms.locfileid: "68160750"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  Этот текст определяет ссылку на пакет SDK, которую нужно добавить в проект при создании экземпляра шаблона элемента.  
   
 ```xml  
@@ -61,7 +61,7 @@ ms.locfileid: "68160750"
 ...  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Элемент References (шаблоны Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
  [Элемент Reference (шаблоны Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   

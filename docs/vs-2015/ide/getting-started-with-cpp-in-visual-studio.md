@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 001b394d86e56b172bb1a50c335bd8ba5bcacb15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645629"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
@@ -21,7 +21,7 @@ ms.locfileid: "72645629"
 
 Выполнив это пошаговое руководство, вы ознакомитесь со многими инструментами и диалоговыми окнами, которые можно использовать для разработки приложений с помощью Visual Studio. Вы создадите простое приложение в стиле Hello, World, чтобы глубже изучить работу в интегрированной среде разработки (IDE).
 
- В этом разделе содержатся следующие подразделы.
+ Этот раздел состоит из следующих подразделов.
 
  [Вход в Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_Configure)
 
@@ -33,39 +33,39 @@ ms.locfileid: "72645629"
 
  [Сборка окончательной версии приложения](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-## <a name="BKMK_Configure"></a> Вход в Visual Studio
+## <a name="sign-in-to-visual-studio"></a><a name="BKMK_Configure"></a> Вход в Visual Studio
  При первом запуске Visual Studio предоставляется возможность выполнить вход с использованием учетной записи Майкрософт, например Live или Outlook. Вход позволяет обеспечить синхронизацию пользовательских параметров на всех устройствах. Дополнительные сведения см. в разделе [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md).
 
  Рисунок 1. Интегрированная среда разработки Visual Studio
 
- ![Интегрированная среда разработки, в которой установлены параметры Visual C++](../ide/media/c-ide-defaultenvironmentlayout.png "|::ref1::|")
+ ![Интегрированная среда разработки, в которой установлены параметры Visual C++](../ide/media/c-ide-defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout c++")
 
  После открытия Visual Studio можно увидеть три основные части интегрированной среды разработки: окна инструментов, меню с панелями инструментов и область главного окна. Окна инструментов закреплены в левой и правой частях окна приложения, а панель **Быстрый запуск**, строка меню и стандартная панель инструментов закреплены в его верхней части. В центре окна приложения находится **Начальная страница**. При открытии решения или проекта редакторы и конструкторы отображаются в этом пространстве. При разработке приложения чаще всего используется именно эта область.
 
-## <a name="BKMK_CreateApp"></a> Создание простого приложения
+## <a name="create-a-simple-application"></a><a name="BKMK_CreateApp"></a> Создание простого приложения
  При создании приложения в Visual Studio необходимо сначала создать проект и решение. В этом примере создается консольное приложение Windows.
 
 #### <a name="to-create-a-console-app"></a>Создание консольного приложения
 
 1. В строке меню выберите **Файл**, **Создать**, **Проект**.
 
-    ![В строке меню выберите "Файл", "Создать", "Проект"](../ide/media/exploreide-filenewproject.png "|::ref2::|")
+    ![В строке меню выберите файл, создать, проект.](../ide/media/exploreide-filenewproject.png "ExploreIDE — Филеневпрожект")
 
 2. В категории **Visual C++** выберите шаблон **Консольное приложение Win32** и назовите проект `GreetingsConsoleApp`.
 
-    ![Шаблон консольного приложения Win32](../ide/media/c-ide-newprojectdlg.png "|::ref3::|")
+    ![Шаблон консольного приложения Win32](../ide/media/c-ide-newprojectdlg.png "IDE_NewProjectDlg c++")
 
 3. Когда появится мастер приложений Win32, нажмите кнопку **Готово** .
 
-    ![Мастер консольного приложения Win32](../ide/media/c-ide-win32consoleappwizard.png "|::ref4::|")
+    ![Мастер консольного приложения Win32](../ide/media/c-ide-win32consoleappwizard.png "IDE_Win32ConsoleAppWizard c++")
 
    Проект GreetingsConsoleApp и решение с основными файлами для консольного приложения Win32 создадутся и автоматически загрузятся в **Обозреватель решений**. Файл GreettingsConsoleApp.cpp откроется в редакторе кода. В **Обозревателе решений**отображаются следующие элементы.
 
    Рисунок 4. Элементы проекта
 
-   ![Файлы для решения в обозревателе решений](../ide/media/c-ide-solutioncontents.png "|::ref5::|")
+   ![Файлы для решения в обозревателе решений](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents c++")
 
-## <a name="BKMK_AddCode"></a> Добавление кода в приложение
+## <a name="add-code-to-the-application"></a><a name="BKMK_AddCode"></a> Добавление кода в приложение
  Далее необходимо добавить код для отображения слова "Hello" в окне консоли.
 
 #### <a name="to-display-hello-in-the-console-window"></a>Отображение "Hello" в окне консоли
@@ -78,11 +78,11 @@ ms.locfileid: "72645629"
 
      Красная волнистая линия появится под `cout`. При наведении на нее отобразится сообщение об ошибке.
 
-     ![Текст сообщения об ошибке для cout](../ide/media/c-ide-couterror.png "|::ref6::|")
+     ![Текст сообщения об ошибке для cout](../ide/media/c-ide-couterror.png "IDE_CoutError c++")
 
      Сообщение об ошибке также отобразится в окне **Список ошибок** . Можно отобразить это окно, выбрав в строке меню **Вид**, **Список ошибок**.
 
-     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) включается в файл заголовка \<iostream\>.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) включается в \<iostream\> заголовочный файл.
 
 2. Для включения заголовка iostream введите следующий код после `#include "stdafx.h"`:
 
@@ -97,16 +97,16 @@ ms.locfileid: "72645629"
 
 3. Сохраните изменения в файле.
 
-     ![Код, исправляющий ошибку cout](../ide/media/c-ide-coutfix.png "|::ref7::|")
+     ![Код, исправляющий ошибку cout](../ide/media/c-ide-coutfix.png "IDE_CoutFix c++")
 
-## <a name="BKMK_DebugTest"></a> Отладка и тестирование приложения
+## <a name="debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a> Отладка и тестирование приложения
  С помощью отладки GreetingsConsoleApp можно посмотреть, отображается ли слово Hello в окне консоли.
 
 #### <a name="to-debug-the-application"></a>Отладка приложения
 
 - Запустите отладчик.
 
-     ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "|::ref8::|")
+     ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "ExploreIDE — Стартдебуггинг")
 
      Отладчик запустится и выполнит код. Окно консоли (отдельное окно, подобное командной строке) отображается в течение нескольких секунд, но при остановке отладчика быстро закрывается. Чтобы просмотреть текст, необходимо установить точку останова выполнения программы.
 
@@ -114,7 +114,7 @@ ms.locfileid: "72645629"
 
 1. Добавьте точку останова из меню в строке `return 0;`. Для установки точки останова можно также просто щелкнуть область слева.
 
-    ![Команда "Точка останова" в меню "Отладка"](../ide/media/exploreide-togglebreakpoint.png "|::ref9::|")
+    ![Команда "Точка останова" в меню "Отладка"](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE — Тогглебреакпоинт")
 
     Рядом со строкой кода в крайнем левом поле окна редактора появится красный кружок.
 
@@ -122,30 +122,30 @@ ms.locfileid: "72645629"
 
     Запускается отладчик, и появляется окно консоли, в котором выводится слово **Hello**.
 
-    ![Текст Hello в окне командной строки Windows](../ide/media/c-ide-hellocommandwindow.png "|::ref10::|")
+    ![Текст Hello в окне командной строки Windows](../ide/media/c-ide-hellocommandwindow.png "IDE_HelloCommandWindow c++")
 
 3. Для останова процесса отладки нажмите SHIFT + F5.
 
    Дополнительные сведения см. в статье [Консольные проекты](../debugger/debugging-preparation-console-projects.md).
 
-## <a name="BKMK_BuildRelease"></a> Сборка окончательной версии приложения
+## <a name="build-a-release-version-of-the-app"></a><a name="BKMK_BuildRelease"></a> Создание окончательной версии приложения
  Теперь, когда вы проверили, что все работает, можно подготовить окончательную сборку приложения.
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Очистка файлов решения и сборка окончательной версии
 
 1. Из строки меню удалите промежуточные файлы и выходные файлы, созданные во время предыдущих сборок.
 
-    ![Команда "Очистить решение" в меню "Сборка"](../ide/media/exploreide-cleansolution.png "|::ref11::|")
+    ![Команда "Очистить решение" в меню "Сборка"](../ide/media/exploreide-cleansolution.png "ExploreIDE — Клеансолутион")
 
 2. Измените конфигурацию сборки для GreetingsConsoleApp с **Отладка** на **Выпуск**.
 
-    ![Сборка окончательной версии приложения](../ide/media/c-ide-changingbuildtorelease.png "|::ref12::|")
+    ![Сборка окончательной версии приложения](../ide/media/c-ide-changingbuildtorelease.png "IDE_ChangingBuildtoRelease c++")
 
-3. Постройте решение.
+3. Создайте решение.
 
-    ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "|::ref13::|")
+    ![Команда "Построить решение" в меню "Построение"](../ide/media/exploreide-buildsolution.png "ExploreIDE — BuildSolution")
 
    Поздравляем с завершением этого пошагового руководства! Чтобы изучить больше примеров, см. раздел [Visual Studio Samples](../ide/visual-studio-samples.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md) [Примеры Visual Studio](../ide/visual-studio-samples.md) [Начало разработки в Visual Studio](../ide/get-started-developing-with-visual-studio.md)

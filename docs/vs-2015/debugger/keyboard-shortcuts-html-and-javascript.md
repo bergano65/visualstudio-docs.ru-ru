@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199684"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Сочетания клавиш (HTML и JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
+Применяется к Windows и Windows Phone] (.. /Video windows_and_phone_content.png "windows_and_phone_content")  
   
  Сочетания клавиш в Visual Studio для отладки приложений Магазина с использованием HTML и JavaScript.  
   
@@ -59,6 +59,6 @@ ms.locfileid: "68199684"
 |Увеличение выбранного значения CSS на 1|Стрелка вверх|  
 |Уменьшение выбранного значения CSS на 1|Стрелка вниз|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

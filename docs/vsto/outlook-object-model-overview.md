@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985682"
 ---
 # <a name="outlook-object-model-overview"></a>Общие сведения об объектной модели Outlook
@@ -51,7 +51,7 @@ ms.locfileid: "72985682"
 
 - <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
-### <a name="application-object"></a>Объект Application
+### <a name="application-object"></a>Объект приложения
  Объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет приложение Outlook. Это объект самого верхнего уровня в объектной модели Outlook. Ниже перечислены некоторые наиболее важные члены этого объекта.
 
 - Метод [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) , который можно использовать для создания элемента, например электронного сообщения, задачи или встречи.
@@ -60,10 +60,10 @@ ms.locfileid: "72985682"
 
 - Свойство <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> , которое можно использовать для доступа к окнам с содержимым одного элемента, например электронного сообщения или приглашения на собрание.
 
-  Чтобы получить экземпляр объекта <xref:Microsoft.Office.Interop.Outlook.Application>, используйте в проекте поле Application класса `ThisAddIn`. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+  Чтобы получить экземпляр <xref:Microsoft.Office.Interop.Outlook.Application> объекта, используйте поле приложения `ThisAddIn` класса в проекте. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
-> Чтобы избежать предупреждений системы безопасности при использовании свойств и методов, блокируемых защитой объектной модели Outlook, можно получить объекты Outlook из поля Application класса `ThisAddIn`. Дополнительные сведения см. в статье [вопросы безопасности для решений Office](../vsto/specific-security-considerations-for-office-solutions.md).
+> Чтобы избежать предупреждений системы безопасности при использовании свойств и методов, блокируемых системой безопасности объектной модели Outlook, можно получить объекты Outlook из поля приложения `ThisAddIn` класса. Дополнительные сведения см. в статье [вопросы безопасности для решений Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Объект Explorer
  Объект <xref:Microsoft.Office.Interop.Outlook.Explorer> представляет окно, отображающее содержимое папки с такими элементами, как электронные сообщения, задачи и встречи. Объект <xref:Microsoft.Office.Interop.Outlook.Explorer> содержит методы и свойства, с помощью которых можно изменять окно, а также события, возникающие при изменении окна.
@@ -94,7 +94,7 @@ ms.locfileid: "72985682"
 
  Microsoft. Office. Interop. Outlook. Олдефаултфолдерс. Олфолдеринбокс соответствует папке **"Входящие"** в Outlook.
 
- Пример, демонстрирующий доступ к <xref:Microsoft.Office.Interop.Outlook.Folder> по умолчанию и созданию нового <xref:Microsoft.Office.Interop.Outlook.Folder>, см. [в разделе как программно создавать пользовательские элементы папки](../vsto/how-to-programmatically-create-custom-folder-items.md).
+ Пример, демонстрирующий доступ к по умолчанию <xref:Microsoft.Office.Interop.Outlook.Folder> и создание нового <xref:Microsoft.Office.Interop.Outlook.Folder> , см. [в разделе как программно создавать пользовательские элементы папки](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Объект MailItem
  Объект <xref:Microsoft.Office.Interop.Outlook.MailItem> представляет электронное сообщение. Объекты<xref:Microsoft.Office.Interop.Outlook.MailItem> обычно находятся в папках, таких как **Входящие**, **Отправленные**и **Исходящие**. <xref:Microsoft.Office.Interop.Outlook.MailItem> предоставляет свойства и методы, которые можно использовать для создания и отправки электронных сообщений.
@@ -116,7 +116,7 @@ ms.locfileid: "72985682"
 
  Пример создания нового контакта см. в разделе [как добавить запись в контакты Outlook программным способом](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Пример поиска существующего контакта см. [в разделе как выполнять поиск определенного контакта программным способом](../vsto/how-to-programmatically-search-for-a-specific-contact.md).
 
-## <a name="refdoc"></a>Использование документации по объектной модели Outlook
+## <a name="use-the-outlook-object-model-documentation"></a><a name="refdoc"></a> Использование документации по объектной модели Outlook
  Полные сведения об объектной модели Outlook см. в справочнике по основной сборке взаимодействия (PIA) Outlook и в справочнике по объектной модели VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Ссылка на основную сборку взаимодействия
@@ -127,7 +127,7 @@ ms.locfileid: "72985682"
 ### <a name="vba-object-model-reference"></a>Справочник по объектной модели VBA
  В справочных документах по объектной модели VBA объектная модель Outlook описана в том виде, в котором она предоставляется коду Visual Basic для приложений. Дополнительные сведения см. в разделе [Справочник по объектной модели Outlook 2010](/office/vba/api/overview/Outlook/object-model).
 
- Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Outlook. Например, объект инспектора в справочнике по объектной модели VBA соответствует объекту <xref:Microsoft.Office.Interop.Outlook.Inspector> в основной сборке взаимодействия Outlook. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте надстройки VSTO для Outlook, создаваемом с помощью Visual Studio.
+ Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Outlook. Например, объект инспектора в справочнике по объектной модели VBA соответствует <xref:Microsoft.Office.Interop.Outlook.Inspector> объекту в основной сборке взаимодействия Outlook. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте надстройки VSTO для Outlook, создаваемом с помощью Visual Studio.
 
 ### <a name="related-topics"></a>См. также
 

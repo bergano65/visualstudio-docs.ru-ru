@@ -13,16 +13,16 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 580d4d2432a957bae8c590b3590a11b1a0b5e84e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148529"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Позволяет узлу программы для получения уведомлений об попытка присоединить соответствующую программу.  
+Позволяет узлу программы получать уведомления о попытке присоединения к связанной программе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,34 +31,34 @@ IDebugProgramNodeAttach2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс реализуется для одного класса, реализующего [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс, чтобы получать уведомления об операции присоединения и предоставляют возможность отменить операцию присоединения.  
+ Этот интерфейс реализуется в том же классе, который реализует интерфейс [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , чтобы получить уведомление об операции присоединения и предоставить возможность отменить операцию присоединения.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Получить этот интерфейс, вызвав `QueryInterface` метод в [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объекта. [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод должен вызываться перед [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) метод, чтобы предоставить возможность остановить этот процесс на узле программы.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получите этот интерфейс, вызвав `QueryInterface` метод в объекте [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . Метод [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) должен вызываться перед методом [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) , чтобы дать узлу программы возможность прерывать процесс присоединения.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Присоединяется к соответствующую программу или откладывает процесс присоединения к [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) метод.|  
+|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Присоединяется к связанной программе или откладывает процесс присоединения к методу [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .|  
   
-## <a name="remarks"></a>Примечания  
- Этот интерфейс является предпочтительным вариантом для устаревших [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) метод. Все модули отладки, всегда загружаются с `CoCreateInstance` функции, то есть они создаются вне адресного пространства отлаживаемой программы.  
+## <a name="remarks"></a>Remarks  
+ Этот интерфейс является предпочтительным альтернативой нерекомендуемому методу [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) . Все модули отладки всегда загружаются с помощью `CoCreateInstance` функции, то есть они создаются за пределами адресного пространства отлаживаемой программы.  
   
- Если предыдущей реализации `IDebugProgramNode2::Attach_V7` метод просто устанавливает `GUID` из отлаживаемой программы, затем только [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод должен быть реализован.  
+ Если предыдущая реализация `IDebugProgramNode2::Attach_V7` метода была просто настраивается `GUID` для отлаживаемой программы, необходимо реализовать только метод [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
   
- Если предыдущей реализации `IDebugProgramNode2::Attach_V7` метод, используемый интерфейс обратного вызова, который был предоставлен, то эта функциональность должна переместиться на реализацию [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) метод и `IDebugProgramNodeAttach2` не поддерживает интерфейс должен быть реализован.  
+ Если предыдущая реализация `IDebugProgramNode2::Attach_V7` метода использовала предоставленный интерфейс обратного вызова, то эта функциональность должна быть перемещена в реализацию метода [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) , а интерфейс не должен `IDebugProgramNodeAttach2` быть реализован.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
+ Заголовок: Мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>См. также:  
+ [Основные интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
- [Присоединение](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Вновь](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

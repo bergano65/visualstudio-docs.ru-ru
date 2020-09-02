@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37ff35e5b073c820f77e5cd861c517bfccbf6ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199547"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Интерфейсы (отладка Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Методы в алфавитном порядке отображаются в категории каждого интерфейса в таблице, содержимого и на странице интерфейс в порядке таблицы Vtable.  
+Методы перечислены в алфавитном порядке под каждым интерфейсом в содержании и на странице интерфейса в порядке vtable.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)  
- Описываются интерфейсы, используемые в модуль отладки.  
+ Описывает интерфейсы, используемые в модуле отладки.  
   
- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
- Описываются интерфейсы, вычисление выражений в стеке вызовов в режиме приостановки выполнения.  
+ [Интерфейсы вычисления выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
+ Описывает интерфейсы, которые оценивают выражения в стеке вызовов в режиме приостановки выполнения.  
   
  [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
- Описывает интерфейсы, реализуемые поставщика символов для сопоставления типов для идентификаторов.  
+ Описывает интерфейсы, реализуемые поставщиком символов для связывания типов с идентификаторами.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
- Содержит документацию по интерфейсам, перечислители и структур [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладки пакета SDK.  
+ Содержит документацию по интерфейсам, перечислителям и структурам [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] пакета SDK для отладки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

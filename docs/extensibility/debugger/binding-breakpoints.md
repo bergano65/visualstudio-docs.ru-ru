@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903228"
 ---
 # <a name="bind-breakpoints"></a>Привязка точек останова
@@ -53,5 +53,5 @@ ms.locfileid: "85903228"
 
  Если a Отменяет обработку точки останова, не может привязывать ее, но может привязывать ее к другому, она возвращает предупреждение. Интегрированная среда разработки реагирует, вставляя глиф вопроса в глиф точки останова слева от строки исходного кода.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

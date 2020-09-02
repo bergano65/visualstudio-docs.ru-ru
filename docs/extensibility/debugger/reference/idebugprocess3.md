@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс3 Документы Майкрософт
+title: IDebugProcess3 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723543"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-Этот интерфейс представляет собой запущенный процесс и его программы. Этот интерфейс существует в качестве замены нескольким методам в интерфейсе [IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Он обеспечивает контроль над всеми программами в этом процессе.
+Этот интерфейс представляет выполняющийся процесс и его программы. Этот интерфейс существует в качестве замены для нескольких методов в интерфейсе [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . Он обеспечивает управление всеми программами в процессе.
 
 > [!NOTE]
-> [Продолжить,](../../../extensibility/debugger/reference/idebugprogram2-continue.md) [выполнить,](../../../extensibility/debugger/reference/idebugprogram2-execute.md)и [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md) методы унижаются и больше не должны использоваться. Вместо этого используйте `IDebugProcess3` соответствующие методы на интерфейсе.
+> Методы [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [EXECUTE](../../../extensibility/debugger/reference/idebugprogram2-execute.md)и [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) являются устаревшими и больше не должны использоваться. Вместо этого используйте соответствующие методы в `IDebugProcess3` интерфейсе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,37 +31,37 @@ ms.locfileid: "80723543"
 IDebugProcess3 : IDebugProcess2
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован поставщиком пользовательских портов для управления программами как группы. Когда программы управляются как группа, вы можете контролировать их выполнение и установить язык для оценщика выражения. Этот интерфейс должен быть реализован поставщиком порта.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется поставщиком пользовательского порта для управления программами как группой. Когда программы управляются как группа, можно управлять их выполнением и устанавливать язык для средства оценки выражений. Этот интерфейс должен быть реализован поставщиком порта.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Этот интерфейс вызывается в первую очередь менеджером отладки сеанса (SDM) для взаимодействия с группой программ, определенных в этом процессе.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот интерфейс вызывается главным образом диспетчером отладки сеансов (SDM) для взаимодействия с группой программ, идентифицированных в этом процессе.
 
- Для получения этого интерфейса позвоните [в queryInterface](/cpp/atl/queryinterface) на [интерфейсе IDebugProcess2.](../../../extensibility/debugger/reference/idebugprocess2.md)
+ Чтобы получить этот интерфейс, вызовите [QueryInterface](/cpp/atl/queryinterface) в интерфейсе [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) .
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам, унаследованных `IDebugProcess3` от [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md)реализует следующие методы.
+ В дополнение к методам, унаследованным от [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md), `IDebugProcess3` реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Продолжить](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Продолжает выполнение или прохождение процесса.|
-|[Выполнить](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Начинается выполнение процесса.|
-|[Шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Шаги вперед одну инструкцию или заявление в процессе.|
-|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Получает причину, по которой процесс был запущен для отладки.|
-|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Устанавливает язык хостинга таким образом, чтобы отладка двигателя может загрузить соответствующий оценщик выражения.|
-|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Извлекает язык, установленный в настоящее время для этого процесса.|
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Отстраняет от сотворечки для этого процесса.<br /><br /> Поставщик пользовательских портов не реализует этот метод `E_NOTIMPL`(он всегда должен вернуться).|
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Получите состояние ENC для этого процесса.<br /><br /> Поставщик пользовательских портов не реализует этот метод `E_NOTIMPL`(он всегда должен вернуться).|
-|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Извлекает массив уникальных идентификаторов для доступных двигателей отладки.|
+|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Продолжение выполнения или пошаговое выполнение процесса.|
+|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Начинает выполнение процесса.|
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Шаги передают одну инструкцию или инструкцию в процессе.|
+|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Возвращает причину, по которой процесс был запущен для отладки.|
+|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Задает язык размещения, чтобы модуль отладки мог загрузить соответствующий вычислитель выражений.|
+|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Извлекает язык, заданный в настоящее время для этого процесса.|
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Отключает функцию "изменить и продолжить" (ENC) для этого процесса.<br /><br /> Пользовательский поставщик портов не реализует этот метод (он должен всегда возвращать `E_NOTIMPL` ).|
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Получите состояние ENC для этого процесса.<br /><br /> Пользовательский поставщик портов не реализует этот метод (он должен всегда возвращать `E_NOTIMPL` ).|
+|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Извлекает массив уникальных идентификаторов для доступных модулей отладки.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Msdbg.h
+ Заголовок: Мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

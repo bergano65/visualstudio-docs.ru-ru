@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode | Документация Майкрософт
+title: 'IDebugPortNotify2:: Аддпрограмноде | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f96a76b7e9cf10c571ab1b9fac92e514ccfbeeb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188425"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Регистрирует порт, на котором он выполняется на программы, которые можно отлаживать.  
+Регистрирует программу, которую можно отладить с помощью порта, на котором она запущена.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,15 +40,15 @@ int AddProgramNode( 
   
 #### <a name="parameters"></a>Параметры  
  `pProgramNode`  
- [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, представляющий программу для регистрации.  
+ окне Объект [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий программу для регистрации.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Узел программы можно отменить регистрацию из порта путем вызова [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Можно отменить регистрацию узла программы в порте, вызвав метод [ремовепрограмноде](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)

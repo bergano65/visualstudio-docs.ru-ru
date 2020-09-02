@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess | Документация Майкрософт
+title: 'IDebugPortEx2:: Кантерминатепроцесс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae67aaee2eca8ff94f1c1620c5fb6797eb37dda9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188516"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
@@ -40,11 +40,11 @@ HRESULT CanTerminateProcess( 
   
 #### <a name="parameters"></a>Параметры  
  `pPortProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий к завершению процесса.  
+ окне Объект [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , представляющий процесс, который должен быть завершен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` Если может быть завершен процесс; в противном случае возвращает `S_FALSE`.  
+ Возвращает значение `S_OK` , если процесс может быть завершен; в противном случае возвращает `S_FALSE` .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

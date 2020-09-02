@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cd398468bd1640e50f6a58004905cfdf6c2ff0
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382150"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Практическое руководство. Установка пользовательских разрешений для приложения ClickOnce
@@ -29,7 +29,7 @@ ms.locfileid: "85382150"
 
 1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
-2. Откройте вкладку **Безопасность**.
+2. Перейдите на вкладку **Безопасность** .
 
 3. Установите флажок **Включить параметры безопасности ClickOnce-приложений** .
 
@@ -48,6 +48,6 @@ ms.locfileid: "85382150"
     > [!NOTE]
     > Можно использовать метод `ToXml` набора разрешений, чтобы создать XML-код для манифеста приложения. Например, чтобы создать XML-код для набора разрешений <xref:System.Security.Permissions.EnvironmentPermission> , вызовите метод <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Безопасные приложения ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

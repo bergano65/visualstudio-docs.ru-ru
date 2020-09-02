@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject Документы Майкрософт
+title: 'IDebugBinder3:: Жетмеморйобжект | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735719"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Этот метод извлекает объект памяти, представляющий память, к которой обязан этот объект.
+Этот метод извлекает объект памяти, представляющий память, к которой привязан этот объект.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,18 +45,18 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>Параметры
 `pField`\
-(в) Определяет, для какого поля для получения объекта памяти.
+окне Указывает поле, для которого необходимо получить объект памяти.
 
 `uConstant`\
-(в) Представляет адрес памяти или значение для постоянного значения.
+окне Представляет адрес или значение памяти для постоянного значения.
 
 `ppObject`\
-(ваут) [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий память, к которым обязан этот объект.
+заполняет Объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий память, к которой привязан этот объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903434"
 ---
 # <a name="add-icons-to-menu-commands"></a>Добавление значков к командам меню
@@ -81,6 +81,6 @@ ms.locfileid: "85903434"
 
 8. Проверьте значок. Выполните сборку решения и запустите отладку. В экспериментальном экземпляре найдите команду. Он должен содержать добавленный значок.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
 - [Справочник по XML-схеме VSCT](../extensibility/vsct-xml-schema-reference.md)

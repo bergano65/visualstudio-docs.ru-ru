@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName | Документация Майкрософт
+title: 'IDebugProgramNode2:: Жетпрограмнаме | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c46cb55140159bff12d297adbc5c0346ffe0409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148551"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -40,16 +40,16 @@ int GetProgramName ( 
   
 #### <a name="parameters"></a>Параметры  
  `pbstrProgramName`  
- [out] Возвращает имя программы.  
+ заполняет Возвращает имя программы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Имя программы не то же самое, что путь к программе, несмотря на то, что имя программы может быть частью такой путь.  
+## <a name="remarks"></a>Remarks  
+ Имя программы не совпадает с путем к программе, хотя имя программы может быть частью такого пути:.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс. `MakeBstr` Функция выделяет копию указанной строки как BSTR.  
+ В следующем примере показано, как реализовать этот метод для простого `CProgram` объекта, реализующего интерфейс [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . `MakeBstr`Функция выделяет копию указанной строки в виде BSTR.  
   
 ```cpp#  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    
@@ -62,5 +62,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

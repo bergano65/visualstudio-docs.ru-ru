@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382176"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Практическое руководство. Задание местоположения файла пользовательского журнала для ошибок развертывания ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]обслуживает файлы журналов активации для всех развертываний. В этих журналах задокументированы все ошибки, относящиеся к установке и инициализации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создает один файл журнала для каждой активации развертывания. Эти файлы журналов хранятся в папке Temporary Internet Files. Файл журнала для развертывания отображается для пользователя, когда происходит сбой активации, и пользователь нажимает кнопку **сведения** в диалоговом окне «полученная ошибка».
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] обслуживает файлы журналов активации для всех развертываний. В этих журналах задокументированы все ошибки, относящиеся к установке и инициализации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создает один файл журнала для каждой активации развертывания. Эти файлы журналов хранятся в папке Temporary Internet Files. Файл журнала для развертывания отображается для пользователя, когда происходит сбой активации, и пользователь нажимает кнопку **сведения** в диалоговом окне «полученная ошибка».
 
  Это поведение можно изменить для конкретного клиента с помощью редактора реестра (**regedit.exe**), чтобы задать путь к пользовательскому файлу журнала. В этом случае [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ведет журнал успешных и неудачных активаций для всех развертываний в одном файле.
 

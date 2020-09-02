@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 648f84b106dab7aa6e38cc3e45e59162a216a875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160138"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
+# <a name="getname_type"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает имя тип файлов для извлечения.  
+Указывает тип имени извлекаемых файлов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,34 +56,34 @@ public enum enum_GETNAME_TYPE { 
  Указывает понятное имя документа или контекста.  
   
  GN_FILENAME  
- Указывает полный путь документа или контекста.  
+ Указывает полный путь к документу или контексту.  
   
  GN_BASENAME  
- Указывает имя базового файла, а не полный путь документа или контекста.  
+ Указывает базовое имя файла вместо полного пути к документу или контексту.  
   
  GN_MONIKERNAME  
- Указывает уникальное имя документа или контекста в виде моникер.  
+ Задает уникальное имя документа или контекста в виде моникера.  
   
  GN_URL  
- Задает имя URL-адрес документа или контекста.  
+ Указывает URL-имя документа или контекста.  
   
  GN_TITLE  
  Указывает заголовок документа, если он существует.  
   
  GN_STARTPAGEURL  
- Получает URL-адрес начальной страницы для процессов.  
+ Возвращает начальный URL-адрес страницы для процессов.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения передаются как параметры для [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), и [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) методы, чтобы указать, какие имени для возврата.  
+## <a name="remarks"></a>Remarks  
+ Эти значения передаются в качестве параметров [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)в методы Name [, noreturn](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)и [Name](../../../extensibility/debugger/reference/idebugprocess2-getname.md) , чтобы указать тип возвращаемого имени.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   

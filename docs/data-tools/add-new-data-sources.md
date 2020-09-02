@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283051"
 ---
 # <a name="add-new-data-sources"></a>Добавление новых источников данных
@@ -118,6 +118,6 @@ ms.locfileid: "85283051"
 
 Источник данных можно создать из списка SharePoint, запустив **Мастер настройки источника данных** и выбрав тип источника данных **SharePoint** . SharePoint предоставляет данные через WCF Data Services, поэтому создание источника данных SharePoint аналогично созданию источника данных из службы. При выборе элемента **SharePoint** в **мастере настройки источника данных** открывается диалоговое окно **Добавление ссылки на службу** , в котором можно подключиться к службе данных SharePoint, указав сервер SharePoint. Для этого требуется пакет SDK для SharePoint.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

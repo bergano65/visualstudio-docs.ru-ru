@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Документация Майкрософт
+title: 'IDebugPortEx2:: Лаунчсуспендед | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c5e57c003257650f5ca60d4a7c3d9becea3e776
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188456"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
@@ -54,39 +54,39 @@ int LaunchSuspended( 
   
 #### <a name="parameters"></a>Параметры  
  `pszExe`  
- [in] Имя исполняемого файла для запуска. Это может быть полный путь или относительно рабочего каталога, указанного в `pszDir` параметра.  
+ окне Имя исполняемого файла, который необходимо запустить. Это может быть полный путь или относительно рабочего каталога, указанного в `pszDir` параметре.  
   
  `pszArgs`  
- [in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.  
+ окне Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы отсутствуют.  
   
  `pszDir`  
- [in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.  
+ окне Имя рабочего каталога, используемого исполняемым файлом. Может иметь значение null, если рабочий каталог не требуется.  
   
  `bstrEnv`  
- [in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.  
+ окне Блок среды строк, заканчивающихся нулем, за которыми следует дополнительный символ NULL.  
   
  `hStdInput`  
- [in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.  
+ окне Обработчик для альтернативного входного потока. Может иметь значение 0, если перенаправление не требуется.  
   
  `hStdOutput`  
- [in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.  
+ окне Обработчик для альтернативного выходного потока. Может иметь значение 0, если перенаправление не требуется.  
   
  `hStdError`  
- [in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.  
+ окне Обработчик альтернативного выходного потока ошибок. Может иметь значение 0, если перенаправление не требуется.  
   
  `ppPortProcess`  
- [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) объект, представляющий запущенный процесс.  
+ заполняет Возвращает объект [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий запущенный процесс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод должен быть запущен процесс, поэтому он приостанавливается и не выполняет никакой код. [ResumeProcess для](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) вызывается метод, чтобы возобновить процесс.  
+## <a name="remarks"></a>Remarks  
+ Этот метод должен запустить процесс, чтобы он был приостановлен и не выполнял никакого кода. Метод [ресумепроцесс](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) вызывается для возобновления процесса.  
   
- Также можно запустить программу из модуля отладки. Дополнительные сведения см. в разделе [запуск программы](../../../extensibility/debugger/launching-a-program.md).  
+ Программу также можно запустить из модуля отладки. Дополнительные сведения см. [в разделе Запуск программы](../../../extensibility/debugger/launching-a-program.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
- [ResumeProcess для](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)   
+ [ресумепроцесс](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)   
  [Запуск программы](../../../extensibility/debugger/launching-a-program.md)

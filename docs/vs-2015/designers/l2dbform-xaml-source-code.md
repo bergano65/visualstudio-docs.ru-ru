@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc0ec53c35f87751efe78359f582e5f4297143c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664276"
 ---
 # <a name="l2dbformxaml-source-code"></a>Исходный код L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Этот раздел содержит исходный код и описание XAML-файла L2DBForm.xaml для [привязки данных WPF с использованием примера LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md).
+Этот раздел содержит и описывает исходный XAML-файл для [Привязка данных WPF с использованием примера LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
 
 ## <a name="overall-ui-structure"></a>Общая структура интерфейса
  Что является типичным для проекта WPF, данный файл содержит один родительский элемент, XML-элемент <xref:System.Windows.Window> , связанный с производным классом `L2XDBFrom` в пространстве имен `LinqToXmlDataBinding` .
@@ -239,7 +239,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
 ### <a name="comments"></a>Комментарии
- Сведения об исходном коде для обработчиков событий, связанных с элементами интерфейса WPF, см. в разделе [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+ Исходный код C# для обработчиков событий, связанных с элементами пользовательского интерфейса WPF, см. в разделе [L2DBForm.XAML.CS Source Code](../designers/l2dbform-xaml-cs-source-code.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. пример](../designers/walkthrough-linqtoxmldatabinding-example.md) [исходного кода L2DBForm.XAML.CS](../designers/l2dbform-xaml-cs-source-code.md) LinqToXmlDataBinding

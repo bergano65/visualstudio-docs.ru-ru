@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 774279dd05bd14c34df7f1d450f00599812d6a5b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544512"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027. Пометьте перечисляемые типы с помощью FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
@@ -54,5 +54,5 @@ ms.locfileid: "85544512"
 ## <a name="related-rules"></a>Связанные правила
  [CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.FlagsAttribute?displayProperty=fullName>

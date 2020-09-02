@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382215"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
@@ -119,7 +119,7 @@ ms.locfileid: "85382215"
    > - Решение находится в следующем каталоге: `%UserProfile%\Documents\Visual Studio 2010\Projects\` .
    >
    > - Решение публикуется в следующем каталоге: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` .
-   > - Последняя версия опубликованных файлов приложения находится в следующем каталоге:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - Последняя версия опубликованных файлов приложения находится в следующем каталоге: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
    > Не нужно использовать имя или расположения каталогов, описанные выше. Описанные выше имена и расположения используются только для демонстрации действий, необходимых для публикации решения.
 

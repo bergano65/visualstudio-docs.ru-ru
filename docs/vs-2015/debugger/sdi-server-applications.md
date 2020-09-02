@@ -1,5 +1,5 @@
 ---
-title: Приложения сервера SDI | Документация Майкрософт
+title: Серверные приложения SDI | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148150"
 ---
 # <a name="sdi-server-applications"></a>Приложения сервера SDI
@@ -34,6 +34,6 @@ ms.locfileid: "68148150"
 ## <a name="finding-the-command-line-arguments-property"></a>Поиск свойства "Аргументы командной строки"  
  Чтобы открыть диалоговое окно "Страницы свойств *Проект*", щелкните правой кнопкой мыши проект в обозревателе решений, а затем выберите пункт "Свойства" в контекстном меню. Чтобы найти свойство "Аргументы командной строки", разверните категорию "Свойства конфигурации" и щелкните страницу "Отладка".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)   
  [Практическое руководство. Отладка серверов COM](../debugger/how-to-debug-com-servers.md)

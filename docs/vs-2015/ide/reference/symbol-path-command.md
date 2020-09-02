@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651006"
 ---
 # <a name="symbol-path-command"></a>Команда Symbol Path
@@ -36,7 +36,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Аргументы
  `pathname` Необязательный. Список путей, разделенных точкой с запятой, для поиска символов отладчиком.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Если `pathname` не указан, эта команда выводит список текущих путей к символам.
 
 ## <a name="example"></a>Пример
@@ -53,5 +53,5 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>См. также
- [Командное окно ](../../ide/reference/command-window.md) команды [Visual Studio](../../ide/reference/visual-studio-commands.md)
+## <a name="see-also"></a>См. также:
+ [Command Window](../../ide/reference/command-window.md) [Команды Visual Studio](../../ide/reference/visual-studio-commands.md) командное окно

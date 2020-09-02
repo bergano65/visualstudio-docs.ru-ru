@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664286"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
@@ -137,5 +137,5 @@ namespace LinqToXmlDataBinding {
 ### <a name="comments"></a>Комментарии
  Сведения о связанном источнике данных XAML для этих обработчиков см. в статье [L2DBForm.xaml Source Code](../designers/l2dbform-xaml-source-code.md) (Исходный код L2DBForm.xaml)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. пример](../designers/walkthrough-linqtoxmldatabinding-example.md) [исходного кода LinqToXmlDataBinding L2DBForm. XAML](../designers/l2dbform-xaml-source-code.md)
