@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef861d13387c013659e5e4c1714680b71896858c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657867"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
@@ -33,7 +33,7 @@ ms.locfileid: "72657867"
 
 ### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите команду **Параметры**.
 
 2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++** .
 
@@ -69,5 +69,5 @@ ms.locfileid: "72657867"
 
  **Отобразить все файлы** Настраивает **Обозреватель решений** для отображения файлов проекта и файлов на диске в папке проекта.
 
-## <a name="see-also"></a>См. также
- [Создание справочникаC++ по c/Programs](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [c/C++ здание](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+## <a name="see-also"></a>См. также:
+ [Разработка программ на c/c++](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [Сборка справочника по c/c++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

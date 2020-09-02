@@ -17,13 +17,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6111900fb4c7b12a6238046fd27c3f6dad9d15ae
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848331"
 ---
-# <a name="maintaining-security"></a>Обеспечение уровня безопасности
+# <a name="maintaining-security"></a>Обеспечение безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Часто считается, что ценой безопасности является постоянная бдительность. Даже если на этапе разработки приложения все проблемы безопасности были решены, следует предполагать наличие слабых мест в системе безопасности после развертывания. Аудит приложения и анализ журналов событий позволяет обнаружить некоторые недостатки, которые ранее не были видны.

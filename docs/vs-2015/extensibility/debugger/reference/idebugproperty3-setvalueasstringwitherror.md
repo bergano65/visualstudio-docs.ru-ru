@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Документация Майкрософт
+title: 'IDebugProperty3:: Сетвалуеасстрингвисеррор | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58b2c487e0259ec2381638c77608f8773af3e159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193379"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает значение этого свойства и возвращает сообщение об ошибке, при необходимости.  
+Задает значение этого свойства и при необходимости возвращает сообщение об ошибке.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,25 +46,25 @@ int SetValueAsStringWithError(
   
 #### <a name="parameters"></a>Параметры  
  `pszValue`  
- [in] Задаваемое значение.  
+ окне Заданное значение.  
   
  `dwRadix`  
- [in] Основание системы счисления задаваемое значение.  
+ окне Основание для установки значения.  
   
  `dwTimeout`  
- [in] Продолжительность времени ожидания задать значения (`INFINITE` означает бесконечное ожидание).  
+ окне Интервал времени ожидания установки значения ( `INFINITE` означает, что ожидание бесконечно).  
   
  `errorString`  
- [out] Если произошла ошибка при установке значения, содержит причину сбоя.  
+ заполняет Если при установке этого значения произошла ошибка, это содержит причину сбоя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Входящее значение может быть выражение для оценки.  
+## <a name="remarks"></a>Remarks  
+ Входящее значение может быть вычисляемым выражением.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кпроперти** , предоставляющего интерфейс [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .  
   
 ```cpp#  
 HRESULT CProperty::SetValueAsStringWithError(   
@@ -168,5 +168,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

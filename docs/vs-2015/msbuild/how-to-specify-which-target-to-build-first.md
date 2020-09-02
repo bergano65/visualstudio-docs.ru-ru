@@ -14,23 +14,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178336"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
+# <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первого построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets`, атрибут `InitialTargets` или целевой объект не указан в командной строке с помощью параметра **/target**.  
+Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)]Ядро ( [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ) выполняет сборку первого найденного проекта, а все зависимости, если файл проекта не содержит `DefaultTargets` атрибут, `InitialTargets` атрибут или целевой объект, указаны в командной строке с параметром **/Target** .  
   
 ## <a name="using-the-initialtargets-attribute"></a>Использование атрибута InitialTargets  
  Атрибут `InitialTargets` элемента `Project` указывает целевой объект, который будет выполняться первым, даже если целевые объекты указаны в командной строке или в атрибуте `DefaultTargets`.  
   
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта  
   
-- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Например:  
+- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Пример:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -47,7 +47,7 @@ ms.locfileid: "68178336"
   
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию  
   
-- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Например:  
+- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Пример:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -60,21 +60,21 @@ ms.locfileid: "68178336"
      `<Project DefaultTargets="Clean;Compile">`  
   
 ## <a name="using-the-target-switch"></a>Использование параметра /target  
- Если целевой объект по умолчанию не определен в файле проекта или вы не хотите использовать его, можно использовать параметр командной строки **/target**, чтобы указать другой целевой объект. Целевые объекты, заданные с помощью параметра **/target**, выполняются вместо целевых объектов, заданных в атрибуте `DefaultTargets`. Целевые объекты, заданные в атрибуте `InitialTargets`, всегда выполняются первыми.  
+ Если целевой объект по умолчанию не определен в файле проекта или если вы не хотите использовать этот целевой объект по умолчанию, можно использовать параметр командной строки **/Target** , чтобы указать другой целевой объект. Целевой объект или целевые объекты, указанные с параметром **/Target** , выполняются вместо целевых объектов, заданных `DefaultTargets` атрибутом. Целевые объекты, заданные в атрибуте `InitialTargets`, всегда выполняются первыми.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь  
   
-- Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Например:  
+- Укажите целевой объект в качестве первого целевого объекта с помощью параметра командной строки **/Target** . Пример:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Использование нескольких целевых объектов, отличных от заданных по умолчанию, в первую очередь  
   
-- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Например:  
+- Перечислите целевые объекты, разделяя их точкой с запятой или запятыми, с помощью параметра командной строки **/Target** . Пример:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
   [MSBuild](msbuild.md)  
- [Целевые объекты](../msbuild/msbuild-targets.md)   
- [Практическое руководство. Очистка сборки](../msbuild/how-to-clean-a-build.md)
+ [Цели](../msbuild/msbuild-targets.md)   
+ [Как очистить сборку](../msbuild/how-to-clean-a-build.md)

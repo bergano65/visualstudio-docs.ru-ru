@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45e664b153c4d643d8fbe8f1cefb207e0a76e18e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204885"
 ---
-# <a name="seekstart"></a>SEEK_START
+# <a name="seek_start"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает положение, с которого следует начать поиск в потоке Дизассемблированный код.  
+Указывает начальную точку поиска в потоке дизассемблированного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,7 +49,7 @@ public enum enum_SEEK_START { 
   
 ## <a name="members"></a>Участники  
  SEEK_START_BEGIN  
- Начинает поиск с начала текущего документа.  
+ Начинает поиск в начале текущего документа.  
   
  SEEK_START_END  
  Начинает поиск в конце текущего документа.  
@@ -58,22 +58,22 @@ public enum enum_SEEK_START { 
  Начинает поиск в текущей позиции текущего документа.  
   
  SEEK_START_CODECONTEXT  
- Начинает поиск в контексте данного кода текущего документа.  
+ Начинает поиск в заданном контексте кода текущего документа.  
   
  SEEK_START_CODELOCID  
- Начинает поиск в расположение идентификатора данного кода. Идентификаторы расположение кода можно получить путем вызова [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
+ Начинает поиск по указанному идентификатору расположения кода. Идентификаторы расположения кода получаются путем вызова [жеткуррентлокатион](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве аргумента в метод [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Поиск](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [Поиска](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

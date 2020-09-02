@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547814"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726. Используйте предпочтительные термины
@@ -49,7 +49,7 @@ ms.locfileid: "85547814"
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` или `Flags`|Условия замены отсутствуют. Не используйте.|
+|`Flag` или `Flags`|Условия замены отсутствуют. Не используется.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

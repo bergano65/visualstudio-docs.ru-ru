@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionКонтекст2 Документы Майкрософт
+title: IDebugExpressionContext2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729640"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
-Этот интерфейс представляет собой контекст для оценки выражения
+Этот интерфейс представляет контекст для вычисления выражения
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,33 +28,33 @@ ms.locfileid: "80729640"
 IDebugExpressionContext2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Движок отладки (DE) реализует этот интерфейс, чтобы представлять контекст, в котором можно оценить выражение.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс для представления контекста, в котором можно вычислить выражение.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Звонок [в GetExpressionExpression](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) возвращает этот интерфейс. Этот интерфейс доступен только тогда, когда отладка программы была приостановлена и доступна рамка стека.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызов [жетекспрессионконтекст](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) возвращает этот интерфейс. Этот интерфейс доступен только в том случае, если отлаживаемая программа приостановлена и доступен кадр стека.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugExpressionContext2`.
+ В следующей таблице показаны методы `IDebugExpressionContext2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Извлекает название контекста оценки.|
-|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Сравнивает текстовое выражение для оценки.|
+|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Возвращает имя контекста вычисления.|
+|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Анализирует текстовое выражение на предмет оценки.|
 
-## <a name="remarks"></a>Примечания
- Контекст оценки можно рассматривать как область для выполнения оценки выражения.
+## <a name="remarks"></a>Remarks
+ Контекст оценки можно рассматривать как область для выполнения вычисления выражений.
 
- Когда программа остановлена, диспетчер отладки сеанса (SDM) получает кадр стека из DE с вызовом на [EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) Затем SDM вызывает [GetExpressionContext,](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) чтобы получить `IDebugExpressionContext2` интерфейс. За этим следует звонок [в ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания интерфейса [IDebugExpression2,](../../../extensibility/debugger/reference/idebugexpression2.md) который представляет собой готовое к оценке выражение, готовое к оценке.
+ При остановке программы Диспетчер отладки сеансов (SDM) получает кадр стека от DE к вызову [енумфрамеинфо](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Затем SDM вызывает [жетекспрессионконтекст](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) для получения `IDebugExpressionContext2` интерфейса. За этим следует вызов [парсетекст](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания интерфейса [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , который представляет проанализированное выражение, готовое к оценке.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

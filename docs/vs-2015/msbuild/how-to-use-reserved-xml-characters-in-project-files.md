@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba17e94486ca04e12055c7bf9959f927440c53d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178310"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Как использовать резервные символы XML в файлах проектов
@@ -73,5 +73,5 @@ ms.locfileid: "68178310"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по MSBuild](../msbuild/msbuild-reference.md) [MSBuild](msbuild.md)

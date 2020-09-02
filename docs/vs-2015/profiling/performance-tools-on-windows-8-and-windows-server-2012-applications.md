@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847997"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
@@ -24,7 +24,7 @@ ms.locfileid: "75847997"
 > [!NOTE]
 > Средства производительности в других поддерживаемых версиях Windows (Windows 7, Windows Server 2008 R2) не изменились.  
   
-## <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ ms.locfileid: "75847997"
   
   [Сбора данных уровневого взаимодействия (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio  
+## <a name="collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio  
  При профилировании приложения для Магазина Windows, написанного на языке JavaScript и HTML 5, собираются данные инструментирования для кода javascript. При профилировании приложения для Магазина Windows или компонента, написанного на Visual C++, Visual C# или Visual Basic, собираются данные выборки для машинного и управляемого кода. Вы можете профилировать приложение локально или на удаленном компьютере.  
   
  Эти функции и параметры профилирования не поддерживаются при профилировании приложений для Магазина Windows:  
@@ -76,22 +76,22 @@ ms.locfileid: "75847997"
   
   [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio  
+## <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Сбор данных о приложениях, работающих на рабочем столе Windows 8 или Windows Server 2012, из интегрированной среды разработки Visual Studio  
  Профилирование с помощью метода инструментирования не изменено для Windows 8.  
   
  Профилирование уровневого взаимодействия (TIP) с помощью метода выборки не поддерживается.  
   
-### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, с помощью выборки из интегрированной среды разработки Visual Studio  
+### <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Сбор данных о приложениях, работающих на рабочем столе Windows 8 или Windows Server 2012, с использованием выборки из интегрированной среды разработки Visual Studio  
  Эти функции и параметры профилирования не поддерживаются при профилировании приложения Windows 8 для настольных систем или приложения Windows Server 2012 с помощью метода выборки:  
   
 - Профилирование уровневого взаимодействия (TIP). Поддерживается сбор данных TIP с помощью метода инструментирования.  
   
 - Параметры выборки, например установка интервала времени и события выборки, а также сбор дополнительных данных счетчика производительности.  
   
-## <a name="BKMK_Profiling_from_the_command_line"></a> Профилирование из командной строки  
+## <a name="profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> Профилирование из командной строки  
  Используйте две следующие программы командной строки для сбора данных профилирования на устройствах Windows 8 и Windows Server 2012, в том числе тех, на которых не установлен Visual Studio.  
   
-|Имя программы|Описание|  
+|Имя средства|Описание|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Сбор данных профилирования из приложений Магазина Windows и сбор примерных данных профилирования из приложений Windows 8 для настольных систем и приложений Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Сбор данных профилирования инструментирования, параллелизма и уровневого взаимодействия из приложений, которые выполняются на рабочем столе Windows 8 или Windows Server 2012. Сбор всех типов данных профилирования из предыдущих версий Windows.|  
@@ -102,7 +102,7 @@ ms.locfileid: "75847997"
   
 - Загрузите программы командной строки как часть инструментов удаленной отладки для Visual Studio с [веб-сайта MSDN](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
-- Скопируйте и запустите программу установки инструментов автономного профилировщика с компьютера Visual Studio. Программы установки находятся в папке *% VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Выберите программу установки для операционной системы удаленного компьютера (x86 или x64).  
+- Скопируйте и запустите программу установки инструментов автономного профилировщика с компьютера Visual Studio. Программы установки находятся в папке *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Выберите программу установки для операционной системы удаленного компьютера (x86 или x64).  
   
 > [!NOTE]
 > Для сбора данных профилирования TIP необходимо установить автономный профилировщик с компьютера с Visual Studio на удаленный компьютер.  
@@ -115,7 +115,7 @@ ms.locfileid: "75847997"
   
 - Параметры выборки, например установка интервала времени и события выборки, а также сбор дополнительных данных счетчика производительности.  
   
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Сбора данных уровневого взаимодействия (TIP)  
+## <a name="collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Сбор данных об уровневом взаимодействии (TIP)  
  Профилирование уровневого взаимодействия позволяет получить дополнительные сведения о времени выполнения функций многоуровневых приложений, взаимодействующих с базой данных посредством служб ADO.NET. Данные собираются только для синхронных вызовов функций.  
   
  **Выпуски Visual Studio**  
@@ -136,7 +136,7 @@ ms.locfileid: "75847997"
   
    **Сбор данных об уровневом взаимодействии на удаленном компьютере**  
   
-   Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_** _\<платформа>_ **\_** _\<язык>_ **.exe** из папки _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Чтобы получить данные об уровневом взаимодействии на удаленном компьютере, необходимо скопировать **файл \_ профилировщика \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio **. exe** из папки _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** на удаленный компьютер и установить его. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Для сбора данных профилирования можно использовать [VSPerfCmd](../profiling/vsperfcmd.md) или [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) .  
   
@@ -144,7 +144,7 @@ ms.locfileid: "75847997"
   
    Данные об уровневом взаимодействии можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Отчеты об уровневом взаимодействии на основе файлов с помощью [VSPerfReport](../profiling/vsperfreport.md) недоступны.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Обозреватель производительности](../profiling/performance-explorer.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

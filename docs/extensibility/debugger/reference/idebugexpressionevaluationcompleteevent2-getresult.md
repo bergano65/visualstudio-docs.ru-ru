@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionОценкаОценкаCompleteEvent2::GetResult Документы Майкрософт
+title: IDebugExpressionEvaluationCompleteEvent2::/результат | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4d3af0affa1c6d98a8209a6a72913f9c2bccf1fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729578"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
-Получает результат оценки выражения.
+Возвращает результат вычисления выражения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,14 +40,14 @@ int GetResult( 
 ```
 
 ## <a name="parameters"></a>Параметры
-`ppResult`(ваут) Возвращает объект [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) представляющий результат оценки выражения.
+`ppResult` заполняет Возвращает объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий результат вычисления выражения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Возвращаемый объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) содержит значение оцененного выражения. Обратите внимание, что это значение может быть сложным значением, например массивом, но конечным результатом должно быть числовое или строковое значение, отображаемые пользователю.
+## <a name="remarks"></a>Remarks
+ Возвращаемый объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) содержит значение вычисленного выражения. Обратите внимание, что это значение может быть сложным значением, таким как массив, но окончательный результат должен быть числовым или строковым значением, отображаемым пользователю.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

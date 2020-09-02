@@ -13,19 +13,19 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675360"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны проектов Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает, запрашивается ли пользователь в место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения; Если `false`, то они не запрашиваются. (То есть будет создаваться временный проект.)  
+Указывает, будет ли пользователю предложено указать расположение для сохранения проекта с помощью диалогового окна " **Создание проекта** " при создании проекта. Если этот элемент имеет значение `true` , то пользователю будет предложено указать расположение для сохранения. Если указано `false` , то они не получат запрос. (То есть создается временный проект.)  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -52,15 +52,15 @@ ms.locfileid: "65675360"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, `true` , указывающее, что пользователь будет запрашиваться для сохранения расположение при создании нового проекта.  
+ Текст должен иметь значение `true` или `false` , `true` что означает, что пользователю будет предложено указать место сохранения при создании нового проекта.  
   
-## <a name="remarks"></a>Примечания  
- `PromptForSaveOnCreation` — это необязательный элемент. Значение по умолчанию — `false`.  
+## <a name="remarks"></a>Remarks  
+ Параметр `PromptForSaveOnCreation` является необязательным элементом. Значение по умолчанию — `false`.  
   
- Временный проект — это проекты, которые можно создавать и изменять без сохранения содержимого проекта на диске. Дополнительные сведения см. в разделе [NIB временные проекты](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Временные проекты — это проекты, которые можно создавать и изменять без сохранения содержимого этого проекта на диске. Дополнительные сведения см. в разделе [NIB Temporary Projects](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Пример  
- В следующем примере значение `PromptForSaveOnCreation` равным `false`, которое указывает, что проект может создаваться как временный проект.  
+ В следующем примере задается значение `PromptForSaveOnCreation` , равное `false` , что позволяет создать проект как временный проект.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ ms.locfileid: "65675360"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

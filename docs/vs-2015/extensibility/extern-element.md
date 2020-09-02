@@ -1,5 +1,5 @@
 ---
-title: Элемент extern | Документация Майкрософт
+title: Внешний элемент | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204398"
 ---
 # <a name="extern-element"></a>Элемент Extern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Элемент Extern ссылается на файлы внешних заголовков (h) можно объединить с vsct-файл во время компиляции. Файлы для объединения должны находиться в качестве пути включения для компилятора VSCT или с помощью [включают элемент](../extensibility/include-element.md). Файлы могут быть другие vsct-файлы или файлы заголовков C++.  
+Элемент extern ссылается на любые файлы внешних заголовков (h) для слияния с vsct-файлом во время компиляции. Объединяемые файлы должны находиться на пути включения, заданном компилятору VSCT или на который ссылается [элемент include](../extensibility/include-element.md). Файлы могут быть другими vsct или файлами заголовков C++.  
   
- Определения в файлах заголовков, должны быть в формате «#define [символ] [значение]» значение может быть другой символ, если оно определено ранее. Определения можно использовать в условных инструкциях, команда элементов. Любой символ, фактически не используется, будут отменены.  
+ Определения в заголовочных файлах должны иметь формат "#define [символ] [значение]" значение может быть другим символом, если он был определен ранее. Определения могут использоваться в условных операторах командных элементов. Любой символ, который фактически не используется, будет отклонен.  
   
  Элемент CommandTable  
 Элемент Extern  
@@ -43,21 +43,21 @@ ms.locfileid: "68204398"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|href|Обязательный. Путь к файлу заголовка:<br /><br /> href="stdidcmd.h»|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|язык|Необязательный параметр. Язык по умолчанию для всех [ \<строки >](../extensibility/strings-element.md) элементы в таблице команд:<br /><br /> Language = "en-us»|  
+|href|Обязательный. Путь к файлу заголовка:<br /><br /> href = "стдидкмд. h"|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|язык|Необязательный элемент. Язык по умолчанию для всех [\<Strings>](../extensibility/strings-element.md) элементов в таблице команд:<br /><br /> Language = "en-US"|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|Отсутствует.|Отсутствует.|  
+|Нет.|Отсутствует.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды — то есть пунктов меню, меню, панелей инструментов и поля со списком, что VSPackage предоставляет интегрированную среду разработки.|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, т. е. пункты меню, меню, панели инструментов и поля со списком, которые пакет VSPackage предоставляет интегрированной среде разработки.|  
   
 ## <a name="example"></a>Пример  
   
@@ -71,7 +71,7 @@ ms.locfileid: "68204398"
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Visual Studio Command Table (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>См. также:  
+ [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
