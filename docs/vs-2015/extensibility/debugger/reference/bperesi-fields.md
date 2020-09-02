@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1b5cba13e439c69b3502b00c6ae159b6af28178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153238"
 ---
-# <a name="bperesifields"></a>BPERESI_FIELDS
+# <a name="bperesi_fields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает сведения, которые требуется получить сведения о неудачных разрешении точки останова.  
+Указывает сведения, которые необходимо получить о неудачном разрешении точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,38 +51,38 @@ public enum enum_BPERESI_FIELDS { 
   
 ## <a name="members"></a>Участники  
  PERESI_BPRESLOCATION  
- Initialize и использование `bpResLocation` (точки останова разрешения) поле [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры.  
+ Инициализируйте или используйте `bpResLocation` поле (расположение разрешения точки останова) структуры [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .  
   
  BPERESI_PROGRAM  
- Инициализация и использование `pProgram` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализируйте или используйте `pProgram` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_THREAD  
- Инициализация и использование `pThread` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализируйте или используйте `pThread` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_MESSAGE  
- Инициализация и использование `bstrMessage` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализируйте или используйте `bstrMessage` поле `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_TYPE  
- Инициализация и использование `dwType` (тип точки останова) поле `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализируйте или используйте `dwType` поле (тип точки останова) `BP_ERROR_RESOLUTION_INFO` структуры.  
   
  BPERESI_ALLFIELDS  
- Инициализировать или использовать все поля `BP_ERROR_RESOLUTION_INFO` структуры.  
+ Инициализация или использование всех полей `BP_ERROR_RESOLUTION_INFO` структуры.  
   
-## <a name="remarks"></a>Примечания  
- Переданный в качестве параметра для [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) метод, чтобы указать, какие поля [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры должны быть инициализированы.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве параметра в метод [жетресолутионинфо](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) , чтобы указать, какие поля структуры [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) должны быть инициализированы.  
   
- Эти значения также используются для указания, какие поля в `BP_ERROR_RESOLUTION_INFO` структуры не используются и допустимым при возвращении этой структуре.  
+ Эти значения также используются для указания того, какие поля в `BP_ERROR_RESOLUTION_INFO` структуре используются и допустимы при возврате этой структуры.  
   
- Эти значения могут объединяться с побитовым объектом `OR`.  
+ Эти значения можно объединить с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

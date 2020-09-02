@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301101"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312734"
 ---
 # <a name="graphics-event-list"></a>Список событий графики
 Список событий графики в анализаторе графики Visual Studio служит для изучения событий Direct3D, возникших при отрисовке определенного кадра игры или приложения.
