@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases Документы Майкрософт
+title: 'IDebugBinder3:: Жеталлалиасес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2d512fa6eb7529e11c766d7c173b318aa6f8f2f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735818"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
-Этот метод извлекает список псевдонимов из программы.
+Этот метод получает список псевдонимов из программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int GetAllAliases(
 
 ## <a name="parameters"></a>Параметры
 `uRequest`\
-(в) Максимальное количество псевдонимов для возврата (указывает длину массива, `ppAliases`передаваемого в).
+окне Максимальное число возвращаемых псевдонимов (задает длину массива, переданного в `ppAliases` ).
 
 `ppAliases`\
-(в, вне) Массив для заполнения псевдонимами (если это нулевое значение и `uRequest` 0, количество псевдонимов, которые `puFetched`могут быть возвращены, будет возвращено).
+[вход, выход] Массив для заполнения псевдонимами (если это значение NULL и `uRequest` равно 0, число возвращаемых псевдонимов будет возвращено `puFetched` ).
 
 `puFetched`\
-(ваут) Возвращает количество полученных псевдонимов.
+заполняет Возвращает число полученных псевдонимов.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

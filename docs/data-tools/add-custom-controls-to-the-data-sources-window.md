@@ -16,10 +16,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283077"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Добавление пользовательских элементов управления в окно "Источники данных"
@@ -76,7 +76,7 @@ ms.locfileid: "85283077"
 
      Элемент управления должен иметь один из следующих атрибутов:
 
-    |attribute|Описание|
+    |Атрибут|Описание|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Реализуйте этот атрибут на простых элементах управления, отображающих один столбец (или свойство) данных, например <xref:System.Windows.Forms.TextBox> .|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Реализуйте этот атрибут в элементах управления, отображающих списки (или таблицы) данных, например <xref:System.Windows.Forms.DataGridView> .|
@@ -89,7 +89,7 @@ ms.locfileid: "85283077"
     > [!NOTE]
     > В список связанных элементов управления можно добавить только те элементы управления, которые находятся в текущем решении или в сборке, на которую указывает ссылка. (Элементы управления должны также реализовать один из атрибутов привязки данных в предыдущей таблице.) Чтобы привязать данные к пользовательскому элементу управления, недоступному в окне Источники данных, перетащите элемент управления из **панели элементов** в область конструктора, а затем перетащите элемент для привязки из окна **Источники данных** на элемент управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Диалоговое окно «Параметры настройки пользовательского интерфейса данных»](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

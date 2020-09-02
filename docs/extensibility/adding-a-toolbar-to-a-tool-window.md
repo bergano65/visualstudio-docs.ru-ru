@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904124"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Добавление панели инструментов в окно инструментов
@@ -113,5 +113,5 @@ ms.locfileid: "85904124"
 
 3. На панели инструментов щелкните значок, чтобы отобразить сообщение **Твтесткоммандпаккаже внутри твтулбар. твтесткомманд. менуитемкаллбакк ()**.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Добавление панели инструментов](../extensibility/adding-a-toolbar.md)

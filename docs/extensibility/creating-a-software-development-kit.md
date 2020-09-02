@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904111"
 ---
 # <a name="create-a-software-development-kit"></a>Создание пакета средств разработки программного обеспечения
@@ -135,7 +135,7 @@ ms.locfileid: "85904111"
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-В файле *SDKManifest.xml* описывается, как Visual Studio должен использовать пакет SDK. Ниже приведен пример:
+В файле *SDKManifest.xml* описывается, как Visual Studio должен использовать пакет SDK. Ниже представлен пример такого кода:
 
 ```
 <FileList>
@@ -195,7 +195,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Ссылка на файл: задается только для тех ссылок, которые содержат элементы управления или являются собственными WinMD-файлами. Сведения о том, как указать, содержит ли ссылка элементы управления, см. [в разделе Указание расположения элементов панели элементов](#ToolboxItems) ниже.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Укажите расположение элементов панели элементов
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Укажите расположение элементов панели элементов
 
 Элемент **тулбокситемс** схемы *SDKManifest.xml* указывает категорию и расположение элементов панели элементов в пакетах SDK для платформы и расширений. В следующих примерах показано, как указать различные расположения. Это относится либо к WinMD, либо к ссылкам DLL.
 
@@ -267,7 +267,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. Создание пакета SDK с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Пошаговое руководство. Создание пакета SDK на C# или Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

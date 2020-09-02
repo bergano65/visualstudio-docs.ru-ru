@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias2 Документы Майкрософт
+title: IDebugAlias2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00e13da257c5477b3834ebb85bf6d481fe699362
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736365"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Представляет собой числовый псевдоним для переменной и позволяет оценщику выражения (EE) получить домен приложения для псевдонима.
+ Представляет числовой псевдоним для переменной и позволяет средству оценки выражений (EE) получить домен приложения для псевдонима.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,22 +29,22 @@ ms.locfileid: "80736365"
 IDebugAlias2 : IDebugAlias
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован управляемым движком отладки (DE).
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется управляемым модулем отладки (DE).
 
 ## <a name="methods"></a>Методы
- В дополнение к методам на интерфейсе [IDebugAlias,](../../../extensibility/debugger/reference/idebugalias.md) этот интерфейс реализует следующий метод:
+ В дополнение к методам в интерфейсе [идебугалиас](../../../extensibility/debugger/reference/idebugalias.md) этот интерфейс реализует следующий метод:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|Извлекает идентификатор для домена приложения.|
+|[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|Возвращает идентификатор для домена приложения.|
 
-## <a name="remarks"></a>Примечания
- Псевдоним — это десятичное число в строковой форме, за которым следует, например, символ «символ 1001».
+## <a name="remarks"></a>Remarks
+ Псевдоним представляет собой десятичное число в виде строки, за которым следует символ #, например, 1001 #.
 
 ## <a name="requirements"></a>Требования
- Заголовок: Ee.h
+ Заголовок: ee. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

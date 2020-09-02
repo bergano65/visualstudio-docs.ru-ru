@@ -1,5 +1,5 @@
 ---
-title: Инструменты для цветов (ru) Документы Майкрософт
+title: Инструменты цвета | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 50d45a7757771474cf2fd7c46a016e5ea685998e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709732"
 ---
-# <a name="color-theme-tools"></a>Инструменты темы цвета
-Visual Studio SDK предоставляет несколько инструментов, которые помогут вам создавать и управлять цветовыми темами.
+# <a name="color-theme-tools"></a>Инструменты цветовой темы
+Пакет SDK для Visual Studio предоставляет несколько средств, помогающих создавать цветовые темы и управлять ими.
 
-- Инструмент [редактора цветов VSIX](../../extensibility/internals/vsix-color-editor.md) может создавать и редотировать пользовательские цвета для Visual Studio.
+- [Редактор цветов VSIX](../../extensibility/internals/vsix-color-editor.md) позволяет создавать и редактировать пользовательские цвета для Visual Studio.
 
-- Инструмент [VSIX Color Compiler](../../extensibility/internals/vsix-color-compiler.md) преобразует существующие файлы Visual Studio *.xml* в файлы *.pkgdef* для вашего расширения.
+- Средство [компиляции цветов VSIX](../../extensibility/internals/vsix-color-compiler.md) преобразует существующие *XML-* файлы темы Visual Studio Theme в файлы *. pkgdef* для вашего расширения.

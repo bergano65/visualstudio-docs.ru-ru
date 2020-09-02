@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType Документы Майкрософт
+title: 'Идебугбиндер:: Ресолверунтиметипе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735953"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
@@ -43,18 +43,18 @@ int ResolveRuntimeType(
 
 ## <a name="parameters"></a>Параметры
 `pObject`\
-(в) [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) будет решен.
+окне [Идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , который необходимо разрешить.
 
 `ppResolved`\
-(ваут) Возвращает тип объекта в качестве [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+заполняет Возвращает тип объекта в виде [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Тип времени выполнения объекта не всегда известен во время компиляции. Например, используя полиморфизм, аргумент может быть передан функции в качестве базового класса, например, классу кнопок. Фактическим аргументом может быть производный класс, например класс радиокнопок.
+## <a name="remarks"></a>Remarks
+ Тип времени выполнения объекта не всегда известен во время компиляции. Например, с помощью полиморфизма аргумент может быть передан в функцию в качестве базового класса, например класса Button. Фактический аргумент может быть производным классом, например классом переключателя.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryКонтекст Документы Майкрософт
+title: 'Идебугбиндер:: Жетмемориконтекст | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735996"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-Этот метод преобразует месторасположение объекта или адрес памяти в контекст памяти.
+Этот метод преобразует расположение объекта или адрес памяти в контекст памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,18 +45,18 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Параметры
 `pField`\
-(в) [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий объект для поиска. Если, `NULL`а `dwConstant` затем использовать вместо.
+окне Объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект для размещения. Если значение равно `NULL` , используйте `dwConstant` вместо него.
 
 `dwConstant`\
-(в) Постоянный адрес памяти, например 0x5000.
+окне Постоянный адрес памяти, например 0x5000.
 
 `ppMemCxt`\
-(ваут) Возвращает интерфейс [IDebugMemoryContext2,](../../../extensibility/debugger/reference/idebugmemorycontext2.md) представляющий адрес объекта, или адрес в памяти.
+заполняет Возвращает интерфейс [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , представляющий адрес объекта или адрес в памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

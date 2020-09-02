@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2839cce2a49eb4be8e72f370fe60be3d81529da1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687147"
 ---
 # <a name="wpf-targets-files"></a>TARGETS-файлы WPF
@@ -30,7 +30,7 @@ ms.locfileid: "65687147"
 
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] расширяет [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)], добавляя набор специальных задач [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)], которые будут объединены в специальных TARGETS-файлы, **Microsoft.WinFX.targets**. Этот файл объединяет набор задач [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)], необходимых для построения проекта [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] в [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)].  
   
-## <a name="see-also"></a>См. также раздел  
- [MSBuild .Targets Files](../msbuild/msbuild-dot-targets-files.md)  (TARGETS-файлы MSBuild)  
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [Построение приложения WPF](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+## <a name="see-also"></a>См. также:  
+ [. Целевые файлы](../msbuild/msbuild-dot-targets-files.md)   
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)   
+ [Создание приложения WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

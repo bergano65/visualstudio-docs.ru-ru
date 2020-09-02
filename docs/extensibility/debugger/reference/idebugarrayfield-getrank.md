@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank Документы Майкрософт
+title: 'Идебугаррайфиелд:: Rank | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736309"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-Получает ранг или количество размеров массива.
+Возвращает ранг или количество измерений массива.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Параметры
 `pdwRank`\
-(ваут) Возвращает ранг.
+заполняет Возвращает ранг.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Ранг массива соответствует количеству размеров. В СЗ и СЗ многомерные массивы действительно представляют собой массивы массивов и поэтому их `GetRank` можно считать только одномерным массивом (и метод всегда возвращает 1). В [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], с другой стороны, многомерные массивы обрабатываются по-разному и ранг такого `GetRank` массива отражает количество измерений (и метод всегда возвращает количество измерений).
+## <a name="remarks"></a>Remarks
+ Ранг массива соответствует числу измерений. В C++ и C# многомерные массивы являются массивами массивов и поэтому могут рассматриваться только как одномерные массивы (и `GetRank` метод всегда возвращает 1). В с [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] другой стороны многомерные массивы обрабатываются по-разному, а ранг такого массива отражает количество измерений (и `GetRank` метод всегда возвращает количество измерений).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

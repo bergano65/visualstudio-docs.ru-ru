@@ -1,5 +1,5 @@
 ---
-title: IDebugАдрес2::GetProcessID Документы Майкрософт
+title: 'IDebugAddress2:: GetProcessID | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 94873e9a9c05a0c5e9253ce53240ab6b4ca39064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736579"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
-Извлекает идентификатор процесса, которому принадлежит объект, представленный интерфейсом [IDebugAddress2.](../../../extensibility/debugger/reference/idebugaddress2.md)
+Извлекает идентификатор процесса, владеющего объектом, представленным данным интерфейсом [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetProcessID (
 
 ## <a name="parameters"></a>Параметры
 `pProcID`\
-(ваут) Идентификатор процесса.
+заполняет Идентификатор процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

@@ -25,10 +25,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271584"
 ---
 # <a name="annotating-structs-and-classes"></a>Аннотация структур и классов
@@ -40,13 +40,13 @@ ms.locfileid: "77271584"
   
 - `_Field_range_(low, high)`  
   
-     Поле находится в диапазоне (включающем) от `low` до `high`.  Эквивалент для `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` применяется к аннотированному объекту с помощью соответствующих предусловий или постусловий.  
+     Поле находится в диапазоне (включительно) от `low` до `high` .  Эквивалент для `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` применяется к аннотированному объекту с помощью соответствующих предусловий или постусловий.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
      Поле с записываемым размером в элементах (или байтах), как определено в `size`.  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
      Поле с записываемым размером в элементах (или байтах), как определено в `size` и `count` этих элементов (байт), которые доступны для чтения.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "77271584"
   
      Поле с размером в элементах (или байт), доступных для записи и чтения, как определено в `size`.  
   
-     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа с количеством байт, указанным в `size`.  Например:  
+     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа с количеством байт, указанным в `size`.  Пример:  
   
     ```cpp  
   
@@ -70,17 +70,17 @@ ms.locfileid: "77271584"
   
     ```  
   
-     Размер буфера в байтах параметра, `pM` типа `MyStruct *`, принимается следующим образом:  
+     Затем размер буфера в байтах параметра `pM` типа принимает `MyStruct *` значение:  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
 ## <a name="see-also"></a>См. также:  
- [Использование аннотаций SAL для сокращения дефектов C/C++ Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Использование аннотаций SAL для сокращения числа дефектов кода C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Основные сведения о SAL](../code-quality/understanding-sal.md)   
  [Добавление заметок к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Аннотирование поведения функций](../code-quality/annotating-function-behavior.md)   
+ [Аннотирование поведения функции](../code-quality/annotating-function-behavior.md)   
  [Аннотирование режима блокировки](../code-quality/annotating-locking-behavior.md)   
  [Указание времени и места применения заметки](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Встроенные функции](../code-quality/intrinsic-functions.md)   

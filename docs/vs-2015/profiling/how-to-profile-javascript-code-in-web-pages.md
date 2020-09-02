@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Профилирование кода JavaScript в веб-страницах | Документация Майкрософт
+title: Практическое руководство. Профилирование кода JavaScript в веб-страницах | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688147"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript на веб-страницах
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript в веб-страницах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Средства профилирования[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] могут собирать данные о производительности для кода JavaScript, который выполняется в веб-приложении [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , на произвольной веб-странице или в приложении JavaScript путем использования метода профилирования инструментирования.  
@@ -34,21 +34,21 @@ ms.locfileid: "65688147"
 > [!WARNING]
 > Для профилирования JavaScript в приложениях для Магазина Windows см. один из следующих разделов:  
 > 
-> - [Время выполнения функций JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [время выполнения функций JavaScript на удаленном устройстве](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - Время выполнения [функции JavaScript на удаленном устройстве по времени выполнения](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8) [функции](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) JavaScript  
 >   - [Анализ данных о времени выполнения функций JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
  Вы можете использовать мастер профилирования для создания сеанса производительности. Укажите способ инструментирования, а затем выберите вариант профилирования JavaScript на странице "Инструментирование" диалогового окна свойств для сеанса производительности.  
   
- При указании профилирования JavaScript профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], который выполняется на сервере.  
+ При указании профилирования JavaScript профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , который выполняется на сервере.  
   
-- Для веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], который выполняется на сервере.  
+- Для веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] профилируется как код JavaScript, который выполняется в браузере, так и код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , который выполняется на сервере.  
   
 - На произвольной веб-странице профилируется код JavaScript, который выполняется в браузере.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Профилирование JavaScript в проекте веб-приложения ASP.NET  
   
-1. В [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] откройте веб-проект [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+1. В [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]откройте веб-проект [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 2. В меню **Анализ** выберите команду **Запустить мастер производительности**.  
   
@@ -80,7 +80,7 @@ ms.locfileid: "65688147"
   
     2. установите флажок **Профилировать JavaScript** и нажмите кнопку **Далее**.  
   
-6. На четвертой странице мастера нажмите кнопку **Готово** , чтобы открыть веб-страницу в браузере.  
+6. На четвертой странице мастера нажмите кнопку **Готово** , чтобы запустить веб-страницу в браузере.  
   
 7. Воспользуйтесь функциями, которые вы хотите профилировать.  
   
