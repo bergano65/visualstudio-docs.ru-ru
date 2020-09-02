@@ -1,5 +1,5 @@
 ---
-title: Средство визуализации наборов данных-диалоговое окно | Документация Майкрософт
+title: Диалоговое окно визуализатора набора данных | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829363dcbf5e8cc4a9151f369d6b0191fc282d44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697844"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Средство визуализации наборов данных - диалоговое окно
@@ -43,7 +43,7 @@ ms.locfileid: "65697844"
  Таблица  
  Используйте этот раскрывающийся список для выбора таблицы в наборе данных, которую необходимо визуализировать.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
  [Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e531d2d2a41cc9ceaa3b6ba39c6d77a166cfae83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193666"
 ---
 # <a name="flag-markers"></a>Маркеры флагов
@@ -26,19 +26,19 @@ ms.locfileid: "68193666"
 ## <a name="flag-importance"></a>Важность флага  
  Размер флага зависит от его важности. Как и для любого маркера, важность может быть обычной, высокой и критической.  На этом рисунке показан внешний вид маркеров по уровню важности.  
   
- ![Маркеры важности: низкая, обычная, высокая и критическая](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![Маркеры важности: низкая, обычная, высокая и критическая](../profiling/media/cvmarkerimportance.png "квмаркеримпортанце")  
 Маркеры, показывающие важность флага  
   
 ## <a name="flag-category"></a>Категория флага  
  Флаг отображается в одном из пяти различных цветов в зависимости от его категории. Цвета используются повторно, если требуется больше пяти категорий. Пользователь не может выбрать цвет. Как и любой маркер, категория может быть любым целым числом. На следующем рисунке показаны цвета первых пяти категорий.  
   
- ![Пять цветов маркеров категорий](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![Пять цветов маркеров категорий](../profiling/media/cvmarkercategory.png "квмаркеркатегори")  
 Маркеры, показывающие категории  
   
 ## <a name="alerts"></a>Предупреждения  
  Оповещение — это флаг красного цвета, представляющий критическое событие приложения, такое как исключение.  Вот пример оповещения:  
   
- ![Маркер оповещения визуализатора параллелизма](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![Маркер оповещения визуализатора параллелизма](../profiling/media/cvmarkeralert.png "квмаркералерт")  
 Маркер оповещения  
   
 ## <a name="aggregation-flags"></a>Объединяющие флаги  
@@ -46,9 +46,9 @@ ms.locfileid: "68193666"
   
  Объединяющие флаги отображаются в различных размерах. Размер зависит от уровня важности наиболее важных флагов в объединении. На следующем рисунке объединяющие флаги показаны в порядке возрастания их важности.  
   
- ![Объединяющие флаги, показывающие четыре уровня важности](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Объединяющие флаги, показывающие четыре уровня важности](../profiling/media/cvmarkeraggregate.png "квмаркераггрегате")  
 Объединяющие флаги по степени важности  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)   
  [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

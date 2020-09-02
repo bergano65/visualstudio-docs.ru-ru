@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 84c7a173bf0b7f5b3dc2187c0c8574819b2317a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176910"
 ---
 # <a name="message-markers"></a>Маркеры сообщений
@@ -26,6 +26,6 @@ ms.locfileid: "68176910"
 ## <a name="message-aggregation-markers"></a>Маркеры объединенных сообщений  
  Иногда несколько сообщений находятся так близко друг к другу в визуализаторе параллелизма, что их невозможно отобразить по отдельности. В этом случае появляется *маркер объединенных сообщений*, который представляет базовые сообщения. При наведении указателя мыши на один из этих значков появляется подсказка с количеством представленных базовых сообщений. Чтобы просмотреть сообщения, увеличьте масштаб.  Если при полном увеличении все равно отображается маркер объединения, вы можете просматривать базовые сообщения в [отчете по маркерам](../profiling/markers-report.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)   
  [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

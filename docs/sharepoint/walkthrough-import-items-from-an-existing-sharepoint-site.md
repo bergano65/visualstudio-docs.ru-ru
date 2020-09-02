@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017123"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство. Импорт элементов с существующего сайта SharePoint
@@ -37,7 +38,7 @@ ms.locfileid: "86017123"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Настройка сайта SharePoint
  В этом примере создается и настраивается дочерний сайт SharePoint путем добавления нового столбца сайта и создания другого дочернего сайта для последующего использования. Позже будет экспортирован первый дочерний сайт в WSP-файл, а затем импортирован пользовательский столбец сайта во второй дочерний сайт с помощью проекта импорта WSP-файла.

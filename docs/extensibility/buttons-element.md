@@ -1,5 +1,5 @@
 ---
-title: Элемент кнопки Документы Майкрософт
+title: Элемент Buttons | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739918"
 ---
-# <a name="buttons-element"></a>Элемент кнопки
-Группы элементов [кнопки,](../extensibility/button-element.md) которые представляют отдельные команды.
+# <a name="buttons-element"></a>Button, элемент
+Группирует элементы [кнопки](../extensibility/button-element.md) , представляющие отдельные команды.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,20 +37,20 @@ ms.locfileid: "80739918"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент кнопки](../extensibility/buttons-element.md)|Элементы кнопки групп.|
-|[Элемент кнопки](../extensibility/button-element.md)|Определяет команду, с которым пользователь может взаимодействовать.|
+|[Button, элемент](../extensibility/buttons-element.md)|Группирует элементы кнопки.|
+|[Button, элемент](../extensibility/button-element.md)|Определяет команду, с которой пользователь может взаимодействовать.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент команд](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
+|[Commands, элемент](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
 
 ## <a name="example"></a>Пример
 
@@ -66,6 +66,6 @@ ms.locfileid: "80739918"
 </Buttons>
 ```
 
-## <a name="see-also"></a>См. также
-- [Как VSPackages добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>См. также раздел
+- [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

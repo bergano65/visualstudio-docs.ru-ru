@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2bdb28f74dd305dc497521e95d38e00192c21c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193602"
 ---
 # <a name="gc-vsperfcmd"></a>Параметр GC (VSPerfCmd)
@@ -35,13 +35,13 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
  **Allocation**  
  По умолчанию. Собирает данные о выделении памяти .NET Framework.  
   
- **Время существования**  
+ **время существования**.  
  Собирает данные о выделении памяти и времени существования объектов .NET Framework.  
   
 ## <a name="required-options"></a>Обязательные параметры  
  Параметр **GC** может использоваться только с параметром **Launch**.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает заданное приложение и начинает профилирование с помощью метода выборки.  
   
 ## <a name="example"></a>Пример  
@@ -51,8 +51,8 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
 ```  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

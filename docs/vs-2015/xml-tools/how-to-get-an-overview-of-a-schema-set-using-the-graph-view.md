@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7009e5772b4f4c6977d58d2c52d733999a0d9369
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670898"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Как получить общие сведения о наборе схем с использованием представления графика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В этом разделе описывается использование [представления графа](../xml-tools/graph-view.md) для просмотра высокоуровневого представления узлов в наборе схем и связей между узлами.
+В этом разделе описано, как использовать [представление графика](../xml-tools/graph-view.md) для просмотра общего представления узлов в наборе схем и связей между узлами.
 
 ### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Создание нового XSD-файла и отображение корневого элемента в представлении модели содержимого
 

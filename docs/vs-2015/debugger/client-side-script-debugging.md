@@ -1,5 +1,5 @@
 ---
-title: Отладка клиентского скрипта | Документация Майкрософт
+title: Отладка скриптов на стороне клиента | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702378"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
@@ -38,7 +38,7 @@ ms.locfileid: "65702378"
 ## <a name="manually-or-automatically-attaching-to-script"></a>Автоматическое присоединение к скрипту или присоединение к скрипту в ручном режиме  
  Чтобы начать отладку скрипта в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], отладчику необходимо выполнить присоединение к скрипту, для которого необходимо выполнить отладку. Присоединение может быть выполнено в ручном режиме или автоматически.  
   
- Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Дополнительные сведения см. в разделе [Практическое руководство. выполнить присоединение к скрипту](../debugger/how-to-attach-to-script.md).  
+ Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Для получения дополнительной информации см. [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
   
  Отладчик автоматически выполняет присоединение к скрипту при возникновении одного из следующих условий:  
   
@@ -62,9 +62,9 @@ ms.locfileid: "65702378"
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)можно открыть любой документ скрипта.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Ограничения на отладку скриптов](../debugger/limitations-on-script-debugging.md)   
  [Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Окно интерпретации](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Общие сведения об отладке и трассировке приложений AJAX](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

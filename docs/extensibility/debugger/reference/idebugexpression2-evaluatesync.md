@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2:ОценкаСинхронизация (ru) Документы Майкрософт
+title: 'IDebugExpression2:: Евалуатесинк | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729673"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-Этот метод оценивает выражение синхронно.
+Этот метод выполняет асинхронное вычисление выражения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Параметры
 `dwFlags`\
-(в) Комбинация флагов из перечисления [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые контролируют оценку выражения.
+окне Сочетание флагов из перечисления [евалфлагс](../../../extensibility/debugger/reference/evalflags.md) , которое управляет вычислением выражений.
 
 `dwTimeout`\
-(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
+окне Максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.
 
 `pExprCallback`\
-(в) Этот параметр всегда является нулевым значением.
+окне Этот параметр всегда имеет значение null.
 
 `ppResult`\
-(ваут) Возвращает объект [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) содержащий результат оценки выражения.
+заполняет Возвращает объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , содержащий результат вычисления выражения.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. Некоторые типичные коды ошибок:
+В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки. Ниже приведены некоторые типичные коды ошибок.
 
-|Error|Описание|
+|Ошибка|Описание|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|В настоящее время проводится оценка другого выражения, и одновременная оценка выражения не поддерживается.|
-|E_EVALUATE_TIMEOUT|Оценка приурочена.|
+|E_EVALUATE_BUSY_WITH_EVALUATION|В настоящее время выполняется вычисление другого выражения, и одновременная Оценка выражений не поддерживается.|
+|E_EVALUATE_TIMEOUT|Время ожидания оценки истекло.|
 
-## <a name="remarks"></a>Примечания
-Для синхронной оценки нет необходимости отправлять событие обратно в Visual Studio по завершении оценки.
+## <a name="remarks"></a>Remarks
+Для синхронной оценки нет необходимости отсылать событие обратно в Visual Studio после завершения оценки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CExpression` реализовать этот метод для простого объекта, который реализует интерфейс [IDebugExpression2.](../../../extensibility/debugger/reference/idebugexpression2.md)
+В следующем примере показано, как реализовать этот метод для простого `CExpression` объекта, реализующего интерфейс [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,
@@ -117,7 +117,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

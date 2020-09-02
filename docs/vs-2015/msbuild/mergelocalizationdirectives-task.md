@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d6c2aa6cea687119e69b565da5468e8fa723641
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703424"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Задача MergeLocalizationDirectives
@@ -35,11 +35,11 @@ ms.locfileid: "65703424"
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`GeneratedLocalizationFiles`|Обязательный параметр **ITaskItem[]**.<br /><br /> Определяет список файлов директив локализации для отдельных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)].|  
+|`GeneratedLocalizationFiles`|Обязательный параметр **ITaskItem[]** .<br /><br /> Определяет список файлов директив локализации для отдельных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)].|  
 |`OutputFile`|Обязательный параметр вывода **String**.<br /><br /> Определяет выходной путь скомпилированной сборки директив локализации.|  
   
 ## <a name="remarks"></a>Примечания  
- Вы можете добавлять комментарии и атрибуты локализации к содержимому [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]. Благодаря поддержке локализации [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] можно удалить комментарии и атрибуты локализации, поместив их в LOC-файл отдельно от созданной сборки. Это можно сделать с помощью атрибута **LocalizationPropertyStorage**. См. дополнительные сведения об атрибуте **LocalizationPropertyStorage** в разделе, посвященном [комментариям и атрибутам локализации](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
+ Вы можете добавлять комментарии и атрибуты локализации к содержимому [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]. Благодаря поддержке локализации [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] можно удалить комментарии и атрибуты локализации, поместив их в LOC-файл отдельно от созданной сборки. Это можно сделать с помощью атрибута **LocalizationPropertyStorage**. Дополнительные сведения о атрибутах и комментариях локализации и **локализатионпропертистораже**см. в разделе [атрибуты и комментарии локализации](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
   
 ## <a name="example"></a>Пример  
  В следующем примере выполняется слияние комментариев локализации нескольких файлов [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] в двоичном формате в один LOC-файл.  
@@ -57,9 +57,9 @@ ms.locfileid: "65703424"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+## <a name="see-also"></a>См. также:  
+ [Справочник по MSBuild для WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Справочник по задачам](../msbuild/wpf-msbuild-task-reference.md)   
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
+ [Создание приложения WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

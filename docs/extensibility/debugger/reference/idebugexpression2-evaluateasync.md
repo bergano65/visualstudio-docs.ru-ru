@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2:ОценкаАсинк (ru) Документы Майкрософт
+title: 'IDebugExpression2:: Евалуатеасинк | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2cd1eba56f8e3c5a1a779acc3330790e9ba2bc96
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729750"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
-Этот метод оценивает выражение асинхронно.
+Этот метод асинхронно вычисляет выражение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,23 +43,23 @@ int EvaluateAsync(
 
 ## <a name="parameters"></a>Параметры
 `dwFlags`\
-(в) Комбинация флагов из перечисления [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые контролируют оценку выражения.
+окне Сочетание флагов из перечисления [евалфлагс](../../../extensibility/debugger/reference/evalflags.md) , которое управляет вычислением выражений.
 
 `pExprCallback`\
-(в) Этот параметр всегда является нулевым значением.
+окне Этот параметр всегда имеет значение null.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. Типичный код ошибки:
+В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки. Типичный код ошибки:
 
-|Error|Описание|
+|Ошибка|Описание|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|В настоящее время проводится оценка другого выражения, и одновременная оценка выражения не поддерживается.|
+|E_EVALUATE_BUSY_WITH_EVALUATION|В настоящее время выполняется вычисление другого выражения, и одновременная Оценка выражений не поддерживается.|
 
-## <a name="remarks"></a>Примечания
-Этот метод должен вернуться сразу же после начала оценки выражения. При успешной оценке выражения [IDebugExpressionEvaluationCompleteEventEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) должен быть отправлен на обратный вызов события [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) по мере отправки через [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) или [Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+## <a name="remarks"></a>Remarks
+Этот метод должен возвращать значение сразу после начала вычисления выражения. Если выражение успешно вычислено, [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) должен быть отправлен в обратный вызов события [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , как это указано с помощью функции [attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) или [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CExpression` реализовать этот метод для простого объекта, который реализует интерфейс [IDebugExpression2.](../../../extensibility/debugger/reference/idebugexpression2.md)
+В следующем примере показано, как реализовать этот метод для простого `CExpression` объекта, реализующего интерфейс [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .
 
 ```cpp
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
@@ -75,7 +75,7 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)

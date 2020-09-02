@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_relocationsCrc | Документация Майкрософт
+title: 'IDiaSectionContrib:: get_relocationsCrc | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2c9082365aa0b4874251382cf0167b662201f29d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150551"
 ---
-# <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
+# <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает циклическую проверку избыточности (CRC) перемещения сведения для раздела.  
+Получает циклическую проверку избыточности (CRC) сведений о расположении для раздела.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_relocationsCrc ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает контрольную СУММУ для области данных перемещение.  
+ заполняет Возвращает контрольную сумму для сведений о перерасположении раздела.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce0a416ef39165d38530c11aad0689811805b353
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702446"
 ---
 # <a name="assertions-in-managed-code"></a>Утверждения в управляемом коде
@@ -38,7 +38,7 @@ ms.locfileid: "65702446"
 
 Оператор проверочного утверждения `Assert` проверяет выполнение условия, указанного в качестве аргумента для оператора `Assert`. Если условие выполняется, никаких действий не производится. Если же условие не выполняется, то утверждение выдает ошибку. При работе с отладочной сборкой выполнение программы приостанавливается.  
   
-## <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Проверочные утверждения в пространстве имен System.Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Метод Debug.Assert](#BKMK_The_Debug_Assert_method)  
@@ -53,14 +53,14 @@ ms.locfileid: "65702446"
   
  [Использование проверочных утверждений в файлах конфигурации](#BKMK_Setting_assertions_in_configuration_files)  
   
-## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Проверочные утверждения в пространстве имен System.Diagnostics  
+## <a name="asserts-in-the-systemdiagnostics-namespace"></a><a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Проверочные утверждения в пространстве имен System.Diagnostics  
  В Visual Basic и Visual C# можно использовать метод `Assert` из класса <xref:System.Diagnostics.Debug> или из класса <xref:System.Diagnostics.Trace>, которые принадлежат пространству имен <xref:System.Diagnostics>. Методы класса <xref:System.Diagnostics.Debug> не включаются в версию выпуска программы, поэтому они не увеличивают ее размер и не снижают скорость ее выполнения.  
   
  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. В случае C++ такого же результата можно добиться с помощью класса <xref:System.Diagnostics.Trace> в сочетании с условной компиляцией, например: `#ifdef DEBUG`... `#endif`.  
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_The_Debug_Assert_method"></a> Метод Debug.Assert  
+## <a name="the-debugassert-method"></a><a name="BKMK_The_Debug_Assert_method"></a> Метод Debug.Assert  
  Метод <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> можно свободно использовать для проверки условий, которые должны выполняться, если код программы написан правильно. Предположим, что имеется функция целочисленного деления. По правилам математики делитель не может быть равен нулю. Проверить выполнение этого условия в имеющейся функции можно при помощи утверждения:  
   
 ```vb  
@@ -114,7 +114,7 @@ savingsAccount.Withdraw ( amount );
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Side_effects_of_Debug_Assert"></a> Побочные эффекты метода Debug.Assert  
+## <a name="side-effects-of-debugassert"></a><a name="BKMK_Side_effects_of_Debug_Assert"></a> Побочные эффекты метода Debug.Assert  
  При использовании метода <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> необходимо убедиться, что код внутри `Assert` не изменит результатов работы программы, если удалить `Assert`. В противном случае может быть создана ошибка, которая проявится только в версии программы для выпуска. Особая осторожность необходима в случае, если проверочное утверждение содержит вызовы функций или процедур, пример которых показан ниже:  
   
 ```vb  
@@ -143,7 +143,7 @@ Debug.Assert ( temp != 0 );
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Trace_and_Debug_Requirements"></a> Требования к трассировке и отладке  
+## <a name="trace-and-debug-requirements"></a><a name="BKMK_Trace_and_Debug_Requirements"></a> Требования к трассировке и отладке  
  Если проект создается с помощью мастеров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], символ TRACE определяется по умолчанию и в конфигурации выпуска, и в конфигурации отладки. Символ DEBUG определяется по умолчанию только в отладочной сборке.  
   
  Иначе для работы методов <xref:System.Diagnostics.Trace> требуется наличие одной из следующих строк в самом начале исходного файла:  
@@ -160,9 +160,9 @@ Debug.Assert ( temp != 0 );
   
   Если методы Debug требуется использовать в выпускной сборке программы на языках C# или Visual Basic, необходимо определить символ DEBUG в конфигурации выпуска.  
   
-  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. В случае C++ такого же результата можно добиться с помощью класса <xref:System.Diagnostics.Trace> в сочетании с условной компиляцией, например: `#ifdef DEBUG`... `#endif`. Эти символы можно задать в диалоговом окне **\<Проект> Страницы свойств**. Дополнительные сведения см. в разделе [Изменение параметров проекта для конфигурации отладки в Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) или [Изменение параметров проекта для конфигурации отладки в C или C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. В случае C++ такого же результата можно добиться с помощью класса <xref:System.Diagnostics.Trace> в сочетании с условной компиляцией, например: `#ifdef DEBUG`... `#endif`. Эти символы можно определить в диалоговом окне ** \<Project> страницы свойств** . Дополнительные сведения см. в разделе [Изменение параметров проекта для конфигурации отладки в Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) или [Изменение параметров проекта для конфигурации отладки в C или C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-## <a name="BKMK_Assert_arguments"></a> Аргументы методов Assert  
+## <a name="assert-arguments"></a><a name="BKMK_Assert_arguments"></a> Аргументы методов Assert  
  Методы <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> и <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> принимают до трех аргументов. Первый аргумент является обязательным и задает условие, которое требуется проверить. Если вызвать метод <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> или <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> только с одним аргументом, то метод `Assert` проверит условие и, если оно ложно, выведет содержимое стека вызовов в окно **Вывод**. В следующем примере показаны методы <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> и <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>:  
   
 ```vb  
@@ -202,7 +202,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Customizing_Assert_behavior"></a> Настройка поведения проверочных утверждений  
+## <a name="customizing-assert-behavior"></a><a name="BKMK_Customizing_Assert_behavior"></a> Настройка поведения проверочных утверждений  
  Если приложение работает в режиме пользовательского интерфейса, метод `Assert` отображает диалоговое окно **Ошибка в утверждении**, если условие не выполняется. Действия, выполняемые при ошибке утверждения, определяются свойствами <xref:System.Diagnostics.Debug.Listeners%2A> и <xref:System.Diagnostics.Trace.Listeners%2A>, соответственно.  
   
  Можно настроить поведение при выводе отладочного сообщения путем добавления объекта <xref:System.Diagnostics.TraceListener> к коллекции `Listeners`, удаления <xref:System.Diagnostics.TraceListener> из коллекции `Listeners` или переопределения метода <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> существующего объекта `TraceListener` для изменения его поведения.  
@@ -215,14 +215,14 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Setting_assertions_in_configuration_files"></a> Использование проверочных утверждений в файлах конфигурации  
+## <a name="setting-assertions-in-configuration-files"></a><a name="BKMK_Setting_assertions_in_configuration_files"></a> Использование проверочных утверждений в файлах конфигурации  
  Проверочные утверждения можно использовать в файле конфигурации программы, так же как и в коде. Дополнительные сведения см. в разделе <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> или <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Трассировка и инструментирование приложений](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](https://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
- [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Практические руководства. Условная компиляция с помощью Trace и Debug](https://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
+ [Типы проектов C#, F # и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)

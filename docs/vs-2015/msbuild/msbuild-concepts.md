@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703251"
 ---
 # <a name="msbuild-concepts"></a>Основные возможности MSBuild
@@ -32,8 +32,8 @@ ms.locfileid: "65703251"
 |[Целевые объекты](../msbuild/msbuild-targets.md)|Содержит объяснение группировки задач в определенном порядке и вызова разделов процесса построения из командной строки.|  
 |[Задачи](../msbuild/msbuild-tasks.md)|Описывает процесс создания блока исполняемого кода, с помощью которого [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] выполняет атомарные операции построения.|  
 |[Сравнение свойств и элементов](../msbuild/comparing-properties-and-items.md)|Сравнивает свойства и элементы MSBuild. И то, и другое используется для передачи данных задачам, проверки условий и хранения значений, которые будут использоваться в файле проекта.|  
-|[Специальные символы в MSBuild](../msbuild/msbuild-special-characters.md)|Объясняет, как записывать некоторые символы, зарезервированные [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] для специального применения в определенных контекстах, в виде escape-последовательностей.|  
-|[Пошаговое руководство: создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора.|  
+|[Специальные символы MSBuild](../msbuild/msbuild-special-characters.md)|Объясняет, как записывать некоторые символы, зарезервированные [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] для специального применения в определенных контекстах, в виде escape-последовательностей.|  
+|[Пошаговое руководство. Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора.|  
 |[Пошаговое руководство: Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)|Содержит вводную информацию о стандартных блоках MSBuild и описание способов записи, управления и отладки проектов MSBuild без выхода из интегрированной среды разработки Visual Studio.|  
-|[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)|Содержит ссылки на документы, содержащие справочную информацию.|  
+|[Справочник по MSBuild](../msbuild/msbuild-reference.md)|Содержит ссылки на документы, содержащие справочную информацию.|  
 |[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Предоставляет общие сведения о схеме XML для файла проекта и показывает способ управления процессами, осуществляющими сборку программного обеспечения.|

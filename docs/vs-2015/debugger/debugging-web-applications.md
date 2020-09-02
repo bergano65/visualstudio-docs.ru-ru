@@ -1,5 +1,5 @@
 ---
-title: Отладка веб-приложений | Документация Майкрософт
+title: Отладка веб-приложений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d11969ecfbe9a7e3fd02ad289b0de95512b0b8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177496"
 ---
 # <a name="debugging-web-applications"></a>Отладка веб-приложений
@@ -31,9 +31,9 @@ ms.locfileid: "68177496"
 
 В этом подразделе описана отладка нескольких типов веб-приложений.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Практическое руководство. Отладка веб-приложений](../debugger/how-to-debug-web-applications.md)  
- Описание способов отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] проекта находится в разработке.  
+ Описывает отладку проекта, который [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] все еще находится в разработке.  
   
  [Отладка развернутых веб-приложений](../debugger/debugging-deployed-web-applications.md)  
  Объясняется, как выполнить отладку веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], развертывание которого уже выполнено.  
@@ -41,21 +41,21 @@ ms.locfileid: "68177496"
  [Отладка клиентского скрипта](../debugger/client-side-script-debugging.md)  
  Описаны скрипты тестирования и клиентские скрипты на страницах [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Пошаговое руководство: Отладка веб-формы](../debugger/walkthrough-debugging-a-web-form.md)  
+ [Пошаговое руководство. Отладка веб-формы](../debugger/walkthrough-debugging-a-web-form.md)  
  Показано, как выполнить отладку веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Практическое руководство. Отладка исключений ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
+ [Практическое руководство. отладку исключений ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
  Показано, как обрабатывать исключения, которые возникают при отладке приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Подготовка к отладке ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
  Описаны шаги, которые необходимы для включения отладки приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
  [Отладка развернутых веб-приложений](../debugger/debugging-deployed-web-applications.md)  
  Объясняется, как выполнить отладку веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], развертывание которого уже выполнено.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка веб-приложений и скриптов](../debugger/debugging-web-applications-and-script.md)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
- [Основы отладки](../debugger/debugger-basics.md)   
+ [Основы отладчика](../debugger/debugger-basics.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
