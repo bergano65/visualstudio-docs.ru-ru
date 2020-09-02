@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670350"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Выполнение быстрых действий с лампочками
@@ -36,9 +36,9 @@ ms.locfileid: "72670350"
 ## <a name="to-see-potential-fixes"></a>Просмотр возможных исправлений
  Щелкните стрелку вниз или ссылку "Показать возможные исправления", чтобы увидеть список быстрых действий, которые может предпринять лампочка.
 
- ![Развернута лампочка](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
+ ![Расширенная лампочка](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
 
 ## <a name="to-do-a-refactoring"></a>Рефакторинг
  Вы все еще можете выполнить рефакторинг, вызвав контекстное меню щелчком правой кнопки мыши или нажав клавиши CTRL + . для отображения параметров рефакторинга. На следующем изображении предлагается выполнить рефакторинг метода извлечения после нажатия клавиш CTRL + . в любом месте строки, содержащей вызов `Math.Abs`:
 
- ![Лампочка, отображающая параметры рефакторинга](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
+ ![Лампочка с отображением параметров рефакторинга](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

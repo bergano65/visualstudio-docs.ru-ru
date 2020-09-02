@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c32d703d7acde00494ff5378d77a61ddbe4e2c76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176605"
 ---
 # <a name="command-line-profiling-tools-reference"></a>Справочник по средствам профилирования из командной строки
@@ -21,7 +21,7 @@ ms.locfileid: "68176605"
 
 Средства оценки производительности командной строки позволяют программистам профилировать приложения в командной строке. Следующие средства профилирования командной строки позволяют создавать код профиля в командной строке.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [VSInstr](../profiling/vsinstr.md)  
  Отображает параметры инструментирования VSInstr.exe.  
   

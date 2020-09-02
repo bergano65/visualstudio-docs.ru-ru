@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort | Документация Майкрософт
+title: 'IDebugCoreServer2:: Port | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e00f055d8e6a0fe1bea82061431410eb1e3b236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192929"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает определенный порт.  
+Извлекает указанный порт.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,14 +42,14 @@ int GetPort( 
   
 #### <a name="parameters"></a>Параметры  
  `guidPort`  
- [in] GUID порта для извлечения.  
+ окне Идентификатор GUID порта, который требуется получить.  
   
  `ppPort`  
- [out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, представляющий нужный порт.  
+ заполняет Возвращает объект [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , представляющий нужный порт.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_PORTSUPPLIER_NO_PORT` Если нет порта с заданным идентификатором.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает, `E_PORTSUPPLIER_NO_PORT` Если порт с указанным идентификатором отсутствует.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

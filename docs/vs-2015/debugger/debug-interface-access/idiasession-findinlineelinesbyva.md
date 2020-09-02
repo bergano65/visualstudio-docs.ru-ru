@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6b400c3483d200c6073eb4e75cf393a643e39e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165556"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта и содержащихся в указанный виртуальный адрес (VA).  
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, которые прямо или косвенно связаны с указанным родительским символом и содержатся в указанном виртуальном адресе (ва).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByVA ( 
   
 #### <a name="parameters"></a>Параметры  
  `parent`  
- [in] `IDiaSymbol` Объект, представляющий родительский объект.  
+ окне `IDiaSymbol` Объект, представляющий родительский элемент.  
   
  `va`  
- [in] Указывает адрес как ва.  
+ окне Указывает адрес в виде ва.  
   
  `length`  
- [in] Указывает диапазон адресов, в байтах, чтобы охватить с этим запросом.  
+ окне Указывает диапазон адресов (в байтах), который охватывает этот запрос.  
   
  `ppResult`  
- [out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.  
+ заполняет Содержит `IDiaEnumLineNumbers` объект, содержащий список извлекаемых номеров строк.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
+ [Перечисление Симтаженум](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

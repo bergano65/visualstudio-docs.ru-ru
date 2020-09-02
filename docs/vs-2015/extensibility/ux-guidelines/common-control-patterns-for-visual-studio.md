@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547450"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Шаблоны распространенных элементов управления для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>Стандартные элементы управления
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Стандартные элементы управления
 
 ### <a name="overview"></a>Обзор
  Общие элементы управления составляют большую часть пользовательского интерфейса в Visual Studio. Большинство стандартных элементов управления, используемых в интерфейсе Visual Studio, должны следовать [правилам взаимодействия с рабочим столом Windows](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Этот документ относится только к Visual Studio и содержит специальные ситуации или подробные сведения, дополняющие эти рекомендации для Windows.
@@ -50,10 +50,10 @@ ms.locfileid: "85547450"
 
 - Окна **инструментов, редакторы документов, области конструктора и диалоги с темами:** Используйте специальный внешний вид с темами с помощью службы цветов.
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>Полосы прокрутки
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> Полосы прокрутки
  Полосы прокрутки должны соответствовать [общим шаблонам взаимодействия для оконных полос прокрутки](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) , если они не дополнены сведениями о содержимом, например в редакторе кода.
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>Поля ввода
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Поля ввода
  Для типичного поведения взаимодействия следуйте рекомендациям по работе с [рабочим столом Windows для текстовых полей](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -76,7 +76,7 @@ ms.locfileid: "85547450"
 
      ![Правильная ширина элемента управления поля ввода](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 — 02_CorrectInputFieldControl") **правильная длина поля ввода: поле ввода имеет разумную ширину для ожидаемого содержимого.**
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>Поля со списком и раскрывающиеся списки
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Поля со списком и раскрывающиеся списки
  Для типичного поведения взаимодействия следуйте [рекомендациям рабочего стола Windows для раскрывающихся списков и полей со списками](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -96,7 +96,7 @@ ms.locfileid: "85547450"
 
  **Правильная длина поля для элемента управления "раскрывающийся список"**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>Флажки
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Флажки
  Для типичного поведения взаимодействия следуйте [рекомендациям по использованию Windows Desktop для установки флажков](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -115,7 +115,7 @@ ms.locfileid: "85547450"
 
      ![Правильное выравнивание](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 — 06_CorrectCheckBoxAlign") флажка флажок Выравнивание флажка **: флажок выравнивается по базовым линиям первой строки текста.**
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>Переключатели
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Переключатели
  Для типичного поведения взаимодействия следуйте [рекомендациям Windows Desktop для переключателей](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -124,7 +124,7 @@ ms.locfileid: "85547450"
 #### <a name="specialized-interactions"></a>Специализированные взаимодействия
  Нет необходимости использовать рамку группы для заключения выбора переключателя.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>Группировать кадры
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Группировать кадры
  Для типичного поведения взаимодействия следуйте рекомендациям по работе с [рабочим столом Windows для кадров групп](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -138,7 +138,7 @@ ms.locfileid: "85547450"
 
 - Иногда допустимо использовать горизонтальное правило вместо контейнера фрейма группы.
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>Текстовые элементы управления
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> Текстовые элементы управления
 
 ### <a name="labels"></a>Метки
 
@@ -227,7 +227,7 @@ ms.locfileid: "85547450"
 
   **Примеры текста водяного знака в Visual Studio**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>Кнопки и гиперссылки
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> Кнопки и гиперссылки
 
 ### <a name="overview"></a>Обзор
  Кнопки и элементы управления "ссылка" (гиперссылки) должны следовать [базовым рекомендациям Windows Desktop по гиперссылкам](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) для использования, слов, размеров и расстояний.
@@ -272,7 +272,7 @@ ms.locfileid: "85547450"
 
 ### <a name="common-buttons"></a>Общие кнопки
 
-#### <a name="text"></a>текст
+#### <a name="text"></a>Текст
  Следуйте рекомендациям по написанию [текста и терминологии пользовательского интерфейса](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -329,13 +329,13 @@ ms.locfileid: "85547450"
 
 |Имя|Образ —|
 |-|-|
-|Add|![Графическая кнопка "Добавить"](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703 — 08_ButtonAdd")|
+|Добавить|![Графическая кнопка "Добавить"](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703 — 08_ButtonAdd")|
 |Удалить|![Графическая кнопка "Переместить"](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703 — 09_ButtonRemove")|
 |Добавить все|![Графическая кнопка "Добавить все"](../../extensibility/ux-guidelines/media/070703-10-buttonaddall.png "070703 — 10_ButtonAddAll")|
 |Удалить все|![Графическая кнопка "Переместить все"](../../extensibility/ux-guidelines/media/070703-11-buttonremoveall.png "070703 — 11_ButtonRemoveAll")|
 |вверх|![Графическая кнопка "Вверх"](../../extensibility/ux-guidelines/media/070703-12-buttonmoveup.png "070703 — 12_ButtonMoveUp")|
 |Вниз|![Графическая кнопка "Вниз"](../../extensibility/ux-guidelines/media/070703-13-buttonmovedown.png "070703 — 13_ButtonMoveDown")|
-|Удалить|![Графическая кнопка "Удалить"](../../extensibility/ux-guidelines/media/070703-14-buttondelete.png "070703 — 14_ButtonDelete")|
+|DELETE|![Графическая кнопка "Удалить"](../../extensibility/ux-guidelines/media/070703-14-buttondelete.png "070703 — 14_ButtonDelete")|
 
 ##### <a name="sizing-and-spacing"></a>Размер и пространство
  Изменение размера для графических кнопок аналогично сокращенной версии кнопки **[обзор...]** (26x23 пикселей):
@@ -358,7 +358,7 @@ ms.locfileid: "85547450"
 
 - Подчеркивание не должно появляться при наведении указателя мыши. Вместо этого пользователь, который является ссылкой, является незначительным изменением цвета и соответствующим курсором ссылки.
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>Представления в виде дерева
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> Представления в виде дерева
 
 ### <a name="overview"></a>Обзор
  Представления в виде дерева предоставляют способ организации сложных списков в родительские и дочерние группы. Пользователь может развернуть или свернуть родительские группы, чтобы отобразить или скрыть нижележащие дочерние элементы. Каждый элемент в представлении в виде дерева можно выбрать, чтобы обеспечить дальнейшие действия.
@@ -371,7 +371,7 @@ ms.locfileid: "85547450"
 
 - [Взаимодействия](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>Визуальный стиль
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> Визуальный стиль
 
 #### <a name="expanders"></a>Расширители
  Элементы управления "представление в виде дерева" должны соответствовать структуре развертывания, используемой в Windows и Visual Studio. Каждый узел использует элемент управления Expander для отображения или скрытия базовых элементов. Использование элемента управления Expander обеспечивает согласованность для пользователей, которые могут столкнуться с различными представлениями дерева в Windows и Visual Studio.
@@ -405,7 +405,7 @@ ms.locfileid: "85547450"
 
  **Отображаются как вертикальные, так и горизонтальные полосы прокрутки, так как содержимое превысило пределы элемента управления иерархического представления.**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>Журнал
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> Журнал
 
 #### <a name="context-menus"></a>Контекстные меню
  Узел древовидного представления может отображать параметры подменю в контекстном меню. Как правило, это происходит, когда пользователь щелкнул элемент правой кнопкой мыши или нажал клавишу меню на клавиатуре Windows с выбранным элементом. Важно, чтобы узел получит фокус и был выбран. Это помогает пользователю узнать, к какому элементу относится подменю.

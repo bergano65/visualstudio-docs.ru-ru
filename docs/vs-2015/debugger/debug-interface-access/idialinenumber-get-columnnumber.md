@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_columnNumber | Документация Майкрософт
+title: 'IDiaLineNumber:: get_columnNumber | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51763dea01039ce084804bfa007fd8f0577cb9e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192378"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает номер столбца, где начинается выражения или оператора.  
+Возвращает номер столбца, в котором начинается выражение или оператор.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,13 +36,13 @@ HRESULT get_columnNumber ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает номер столбца, где начинается выражения или оператора. Если значение равно нулю, сведения о столбце отсутствует.  
+ заполняет Возвращает номер столбца, в котором начинается выражение или оператор. Если значение равно нулю, сведения о столбце отсутствуют.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Значение столбца, возвращаемого этим методом, — это смещение в байтах в строке до первого символа в строке инструкции.  
+## <a name="remarks"></a>Remarks  
+ Значение столбца, возвращаемое этим методом, представляет собой байтовое смещение строки до первого символа инструкции в строке.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

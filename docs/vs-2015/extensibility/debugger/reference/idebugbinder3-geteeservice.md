@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Документация Майкрософт
+title: 'IDebugBinder3:: Жетисервице | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 982802d1e89434322aba4f5078ceb6dd5a850034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193044"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
@@ -46,25 +46,25 @@ Int GetEEService(
   
 #### <a name="parameters"></a>Параметры  
  `vendor`  
- [in] `GUID` поставщика (допустимо значение null).  
+ [входные] `GUID` поставщика (значение NULL приемлемо).  
   
  `language`  
- [in] `GUID` языка (допустимо значение null).  
+ [входные] `GUID` языка (значение NULL допустимо).  
   
  `iid`  
- [in] `IID` службы для получения.  
+ [входные] `IID` получаемой службы.  
   
  `ppService`  
- [out] Интерфейс запрошенную службу.  
+ заполняет Интерфейс для запрошенной службы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Передайте `IID` для [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) интерфейс (`IID_IEEVisualizerServiceProvider`) для получения сведений о службе типа визуализатора. Если таким образом, можно получить средство оценки выражений [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) интерфейс для поддержки визуализаторами типов. См. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) подробные сведения.  
+## <a name="remarks"></a>Remarks  
+ Передайте значение `IID` для интерфейса [иивисуализерсервицепровидер](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) ( `IID_IEEVisualizerServiceProvider` ), чтобы узнать, доступна ли служба визуализатора типов. Если это так, средство оценки выражений может получить интерфейс [иивисуализерсервице](../../../extensibility/debugger/reference/ieevisualizerservice.md) для поддержки визуализаторов типов. Дополнительные сведения см. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
- [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
+ [иивисуализерсервицепровидер](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
+ [иивисуализерсервице](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [Визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md)

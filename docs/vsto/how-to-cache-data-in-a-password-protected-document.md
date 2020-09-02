@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547242"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Пошаговое руководство. кэширование данных в документе, защищенном паролем
@@ -73,7 +73,7 @@ ms.locfileid: "85547242"
 ### <a name="compile-the-code"></a>Компиляция кода
  Добавьте этот код в `ThisWorkbook` класс проекта. В этом коде предполагается, что пароль хранится в поле с именем `securelyStoredPassword` .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Кэширование данных](../vsto/caching-data.md)
 - [Как кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Руководство. программный кэш источника данных в документе Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

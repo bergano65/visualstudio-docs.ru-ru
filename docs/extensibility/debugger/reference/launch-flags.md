@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS Документы Майкрософт
+title: LAUNCH_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714717"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
-Определяет флаги запуска отладки.
+Задает флаги запуска отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,26 +48,26 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>Поля
 `LAUNCH_DEBUG`\
-Запускает процесс отладки.
+Запускает процесс для отладки.
 
 `LAUNCH_NODEBUG`\
 Запускает процесс без его отладки.
 
 `LAUNCH_ENABLE_ENC`\
-УТОМЛЕННЫЙ, НЕ ИСПОЛЬЗУЙТЕ.
+НЕ РЕКОМЕНДУЕТСЯ, НЕ ИСПОЛЬЗУЙТЕ.
 
 `LAUNCH_MERGE_ENV`\
-Запускает процесс и объединяет среду с запуском хоста.
+Запускает процесс и выполняет слияние среды с запускающим узлом.
 
-## <a name="remarks"></a>Примечания
-Эти значения передаются в качестве аргумента методу [LaunchSuspended.](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+## <a name="remarks"></a>Remarks
+Эти значения передаются в качестве аргумента в метод [лаунчсуспендед](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .
 
-Эти флаги могут быть `OR`объединены с bitwise .
+Эти флаги можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

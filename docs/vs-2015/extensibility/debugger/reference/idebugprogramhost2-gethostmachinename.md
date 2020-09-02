@@ -1,48 +1,49 @@
 ---
-title: IDebugProgramHost2::GetHostMachineName | Документация Майкрософт
-ms.date: 11/04/2016
+title: 'IDebugProgramHost2:: Жесостмачиненаме | Документация Майкрософт'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugProgramHost2::GetHostMachineName
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostMachineName
 ms.assetid: 4677ffe4-aa9b-4450-a63b-74cd3984d956
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 5cfbc5c7f083e3bf1e951d27b7c0b41a14831266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165137"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
-Получает имя компьютера, на котором выполняется процесс, размещение этой программы.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```cpp
-HRESULT GetHostMachineName( 
-   BSTR* pbstrHostMachineName
-);
-```
-
-```csharp
-int GetHostMachineName( 
-   out string pbstrHostMachineName
-);
-```
-
-#### <a name="parameters"></a>Параметры
- `pbstrHostMachineName`
-
- [out] Возвращает имя компьютера.
-
-## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
-
-## <a name="see-also"></a>См. также
-- [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
+Возвращает имя компьютера, на котором выполняется процесс, на котором размещается эта программа.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT GetHostMachineName(   
+   BSTR* pbstrHostMachineName  
+);  
+```  
+  
+```csharp  
+int GetHostMachineName(   
+   out string pbstrHostMachineName  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `pbstrHostMachineName`  
+ заполняет Возвращает имя компьютера.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
+  
+## <a name="see-also"></a>См. также:  
+ [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
