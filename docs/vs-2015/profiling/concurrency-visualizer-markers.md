@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704356"
 ---
 # <a name="concurrency-visualizer-markers"></a>Маркеры визуализатора параллелизма
@@ -63,8 +63,8 @@ ms.locfileid: "65704356"
 ## <a name="markers-from-eventsource"></a>Маркеры из EventSource  
  Визуализатор параллелизма может также отображать события EventSource.  Дополнительные сведения см. в статье [Visualizing EventSource Events as Markers](../profiling/visualizing-eventsource-events-as-markers.md) (Визуализация событий EventSource как маркеров).  
   
-## <a name="see-also"></a>См. также раздел  
- [Flag Markers](../profiling/flag-markers.md)  (Маркеры флагов)  
- [Message Markers](../profiling/message-markers.md)  (Маркеры сообщений)  
- [Span Markers](../profiling/span-markers.md)  (Маркеры диапазонов)  
+## <a name="see-also"></a>См. также:  
+ [Маркеры флагов](../profiling/flag-markers.md)   
+ [Маркеры сообщений](../profiling/message-markers.md)   
+ [Маркеры span](../profiling/span-markers.md)   
  [Визуализация событий EventSource как маркеров](../profiling/visualizing-eventsource-events-as-markers.md)

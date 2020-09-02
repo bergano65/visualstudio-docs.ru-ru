@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Укажите, где файлы копии Visual Studio 2015 г. | Документация Майкрософт
+title: Как указать, куда Visual Studio 2015 копирует файлы | Документация Майкрософт
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,18 +18,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8759145dd4a7647cad6e9964ae1f1c97d333b626
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65226159"
 ---
-# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Практическое руководство. Указание расположения, в которое средой Visual Studio копируются файлы
+# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Практическое руководство. Указание расположения, в которое копируются файлы средой Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При публикации приложения с помощью ClickOnce свойство `Publish Location` указывает расположение, в которое помещены файлы и манифест приложения. Это может быть путь к файлу или путь к FTP-серверу.
 
- Свойство `Publish Location` можно указать на странице **Публикация** **Конструктора проектов** или с помощью Мастера публикации. Дополнительные сведения см. в разделе [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Свойство `Publish Location` можно указать на странице **Публикация****Конструктора проектов** или с помощью Мастера публикации. Дополнительные сведения см. в разделе [инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!NOTE]
 > Если вы устанавливаете больше одной версии приложения с использованием технологии ClickOnce, то более ранние версии приложения перемещаются в папку "Archive", созданную в указанном вами расположении публикации. Архивация более ранних версий предотвращает появление папок с ранними версиями в каталоге установки.
@@ -42,11 +42,11 @@ ms.locfileid: "65226159"
 
 3. В поле **Расположение публикации** введите расположение публикации, используя один из следующих форматов:
 
-   - Чтобы опубликовать в общую папку или диск путь к файлу, введите путь, используя UNC-путь (\\\Server\ApplicationName) или путь к файлу (C:\Deploy\ApplicationName).
+   - Чтобы опубликовать файловый ресурс или путь к диску, введите путь в формате UNC ( \\ \сервер\аппликатионнаме) или пути к файлу (к:\деплой\аппликатионнаме).
 
-   - Чтобы опубликовать на FTP-сервер, введите путь, используя формат ftp:\//ftp.microsoft.com/ApplicationName.
+   - Для публикации на FTP-сервере введите путь в формате FTP: \/ /FTP.Microsoft.com/ApplicationName.
 
-     Обратите внимание, что для работы кнопки обзора (**...**) в поле **Расположение публикации** должен присутствовать текст.
+     Обратите внимание, что в поле **Расположение публикации** должен присутствовать текст, чтобы кнопка обзора (**...**) работала.
 
-## <a name="see-also"></a>См. также
- [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md) [как: Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+## <a name="see-also"></a>См. также:
+ [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md) [: как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

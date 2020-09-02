@@ -11,37 +11,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82718a7ceb7a18f9978840f35ca0c5fce5628e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153670"
 ---
 # <a name="processes"></a>Процессы
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-С точки зрения архитектуры отладчика **процесс**:  
+В плане архитектуры отладчика **процесс**:  
   
-- — Это контейнер для набора программ. Он аналогичен тесно процесс Windows, который является контейнером для набор потоков.  
+- — Это контейнер для набора программ. Он тесно аналогичен процессу Windows, который является контейнером для набора потоков.  
   
-- Можно идентифицировать себя, имя, идентификатор или идентификатор физического.  
+- Может идентифицировать себя по имени, идентификатору или физическому идентификатору.  
   
-- Можно перечислить все выполняющиеся программы (и их потоки).  
+- Может перечислить все выполняющиеся программы (и их потоки).  
   
-- Можно описать сам, порт, на котором он выполняется в и компьютера, на котором он содержится.  
+- Может описывать себя, порт, в котором он выполняется, и компьютер, на котором он находится.  
   
-- Можно создать один или несколько программ, завершения любой из программ, которые оно создает или вызвать остановку программы.  
+- Может создать одну или несколько программ, завершить любую из создаваемых программ или вызвать прекращение работы программы.  
   
-- Представленный [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) интерфейс, который создается при запуске процесса. Процесс запускается диспетчером либо сеанса отладки (SDM) или [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+- Представляется интерфейсом [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) , который создается при запуске процесса. Процесс запускается либо диспетчером отладки сеансов (SDM), либо [лаунчсуспендед](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
-  Размер пакета отладки можно подключить отладчик (DE) к процессу путем вызова [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Это означает, что DE присоединяет все возможные программы, выполняющейся в процессе, он может обрабатывать. Например если среда CLR DE подключается к процессу, он присоединяет только для программ, работающих под управлением управляемого кода.  
+  Пакет отладки может подключить к процессу модуль отладки (DE), вызвав [attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Это означает, что компонент DE подключается ко всем возможным программам, выполняемым в процессе, который он может обработать. Например, если среда CLR отключится к процессу, она будет присоединена только к программам, выполняющим управляемый код.  
   
-## <a name="see-also"></a>См. также  
- [Программы](../../extensibility/debugger/programs.md)   
- [Потоки](../../extensibility/debugger/threads.md)   
- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)   
- [Отладка пакета](../../extensibility/debugger/debug-package.md)   
- [Отладка ядра](../../extensibility/debugger/debug-engine.md)   
+## <a name="see-also"></a>См. также:  
+ [Приложениями](../../extensibility/debugger/programs.md)   
+ [Многопоточно](../../extensibility/debugger/threads.md)   
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)   
+ [Пакет отладки](../../extensibility/debugger/debug-package.md)   
+ [Модуль отладки](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
- [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
+ [лаунчсуспендед](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)

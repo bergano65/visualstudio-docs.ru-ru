@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189617"
 ---
 # <a name="accessibility-in-office-projects"></a>Специальные возможности в проектах Office
@@ -84,7 +84,7 @@ Visual Studio имеет следующие ограничения, связан
 
 Для преодоления этих ограничений можно использовать экранную лупу. Экранная лупа — это программа отображения в Windows, которая создает отдельное окно, в котором отображается увеличенная часть экрана.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Разработка решений Office](../vsto/developing-office-solutions.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)

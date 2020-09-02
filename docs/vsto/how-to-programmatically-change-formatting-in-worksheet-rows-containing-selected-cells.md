@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541561"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Руководство. Программное изменение форматирования в строках листа, содержащих выбранные ячейки
@@ -69,7 +69,7 @@ ms.locfileid: "85541561"
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
 - [Руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Руководство. программное копирование данных и форматирование на листах](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbb2674381992bd86f0144af103615f0a3922fcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153574"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
+# <a name="bp_cond_style"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает стиль условие точки останова для ожидающих и привязан точки останова.  
+Задает стиль условия точки останова для ожидающих и связанных точек останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,24 +45,24 @@ public enum enum_BP_COND_STYLE { 
   
 ## <a name="members"></a>Участники  
  BP_COND_NONE  
- Точка останова срабатывает в том случае, когда достигается положение точки останова. Не указано условие точки останова.  
+ Вызывает точку останова, когда достигнута точка точки останова. Условие для точки останова не указано.  
   
  BP_COND_WHEN_TRUE  
- Срабатывает точка останова, только если условное выражение, связанные с точкой останова принимает значение `true`.  
+ Вызывает точку останова только в том случае, если условное выражение, связанное с точкой останова, имеет значение `true` .  
   
  BP_COND_WHEN_CHANGED  
- Срабатывает точка останова только в том случае, если значение условного выражения, связанное с точкой останова отличается от его предыдущей оценки.  
+ Вызывает точку останова только в том случае, если значение условного выражения, связанное с точкой останова, изменилось по сравнению с предыдущим вычислением.  
   
-## <a name="remarks"></a>Примечания  
- Используется для `styleCondition` членом [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `styleCondition` элемента структуры [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

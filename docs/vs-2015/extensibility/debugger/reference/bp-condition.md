@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d49c912ae14154fc552c76fc011596f4f22166f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153558"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
+# <a name="bp_condition"></a>BP_CONDITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Описывает условия, при которых срабатывает точка останова.  
@@ -48,37 +48,37 @@ public struct BP_CONDITION { 
   
 ## <a name="members"></a>Участники  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий активный поток приложения, содержащего точку останова.  
+ Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий активный поток для приложения, содержащего точку останова.  
   
  `styleCondition`  
- Значение из [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) перечисление, описывающее стиль этого условия точки останова.  
+ Значение из перечисления [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) , описывающее стиль условия этой точки останова.  
   
  `bstrContext`  
  Расположение точки останова.  
   
  `bstrCondition`  
- Условия срабатывания точки останова.  
+ Условие срабатывания точки останова.  
   
  `nRadix`  
- Основание системы счисления для использования в оценке все числовые данные.  
+ Основание системы счисления, используемое при вычислении любых числовых данных.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Эта структура является членом структур [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
   
- Эта структура также передается в качестве параметра [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) и [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) методы.  
+ Эта структура также передается в качестве параметра методам [сеткондитион](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) и [сеткондитион](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
+ [сеткондитион](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
+ [сеткондитион](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

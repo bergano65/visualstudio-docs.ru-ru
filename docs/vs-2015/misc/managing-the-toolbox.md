@@ -11,16 +11,16 @@ ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681545"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] позволяет пакету VSPackage, например редактору или конструктору, управлять членством и внешним видом **панели элементов**.  
   
- Кроме того, с помощью средств автоматизации можно управлять самой **панелью элементов** . Дополнительные сведения об управлении панелью элементов посредством автоматизации см. в разделе [как: Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Кроме того, с помощью средств автоматизации можно управлять самой **панелью элементов** . Дополнительные сведения об управлении панелью элементов посредством автоматизации см. в разделе [How to: Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Автоматический выбор вкладок панели элементов  
  Определенная вкладка или категория **панели элементов** может активироваться автоматически в соответствии с активным в настоящий момент редактором или конструктором. Например, при активации конструктора форм может быть необходимо, чтобы была выбрана вкладка **Все формы Windows Forms** .  
@@ -36,7 +36,7 @@ ms.locfileid: "65681545"
   
 |Интерфейс|Описание|  
 |---------------|-----------------|  
-|<xref:System.Drawing.Design.IToolboxService>|Позволяет приложениям управлять ими, добавлять и удалять <xref:System.Drawing.Design.ToolboxItem> объектов из **элементов**. Также позволяет настраивать внешний вид и категории **панели элементов** .|  
+|<xref:System.Drawing.Design.IToolboxService>|Позволяет приложениям управлять, добавлять и удалять <xref:System.Drawing.Design.ToolboxItem> объекты из **панели элементов**. Также позволяет настраивать внешний вид и категории **панели элементов** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>|Позволяет приложениям добавлять и удалять активные элементы управления **панели элементов** , управлять ими, а также настраивать внешний вид и категории **панели элементов** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>|Расширяет функциональные возможности <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, предоставляя полную поддержку сохраняемости и локализации.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox4>||  
@@ -47,11 +47,11 @@ ms.locfileid: "65681545"
   
 - <xref:System.Drawing.Design.IToolboxService> доступен только пакетам VSPackage на основе Managed Package Framework.  
   
-- Добавлять элементы управления не может напрямую **элементов** с помощью <xref:System.Drawing.Design.IToolboxService>.  
+- Элементы управления нельзя напрямую добавлять на **панель элементов** с помощью <xref:System.Drawing.Design.IToolboxService> .  
   
 - Пакет VSPackage должен использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> для добавления элементов управления или размещать элемент управления в элементе управления-оболочке, производной от <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio предоставляет средство `Aximp.exe` для автоматизации инкапсуляции элемента ActiveX в элементе управления, производном от <xref:System.Windows.Forms.AxHost>. Дополнительные сведения см. в разделе [Aximp.exe (Windows Forms ActiveX программа импорта элементов)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio предоставляет средство `Aximp.exe` для автоматизации инкапсуляции элемента ActiveX в элементе управления, производном от <xref:System.Windows.Forms.AxHost>. Дополнительные сведения см. в разделе [Aximp.exe (Windows Forms средства импорта элементов ActiveX)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> — это интерфейсы на базе COM, доступные через сборки взаимодействия.  
   
@@ -69,5 +69,5 @@ ms.locfileid: "65681545"
   
   Чтобы разрешить пользователям сохранять параметры **панели элементов** , доступ к которым они получают с помощью команды **Импорт и экспорт параметров** в меню **Сервис** интегрированной среды разработки, используйте механизм параметров. Дополнительные сведения об использовании параметров см. в разделе [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Расширение панели элементов](../misc/extending-the-toolbox.md)

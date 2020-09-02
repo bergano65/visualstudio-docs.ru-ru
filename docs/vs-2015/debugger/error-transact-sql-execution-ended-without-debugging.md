@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Выполнение Transact-SQL завершено без отладки | Документация Майкрософт'
+title: 'Ошибка: Выполнение Transact-SQL завершается без отладки | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681075"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Ошибка: Выполнение Transact-SQL завершается без отладки
@@ -43,14 +43,14 @@ ms.locfileid: "65681075"
   
   Чтобы устранить эту ошибку, необходимо:  
   
-- Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Практическое руководство. Предоставление разрешений на отладку SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - Удостовериться в том, что отладка SQL настроена верно.  
   
 - Обратиться за консультацией к администратору сети или администратору базы данных.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка отладки SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Как задать разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: Метод NotifyDebuggerOfWaitCompletion | Документация Майкрософт
+title: Метод Нотифидебугжерофваиткомплетион | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0548e1e791c41d806ccc222176ee571b037389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153731"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Метод NotifyDebuggerOfWaitCompletion
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Метод заполнитель, используемый как целевой объект точки останова в отладчике. Этот метод не должен быть встроенным или оптимизированного.  
+Метод-заполнитель, используемый отладчиком в качестве цели точки останова. Этот метод не должен быть встроенным или оптимизированным.  
   
  **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
@@ -32,10 +32,10 @@ ms.locfileid: "68153731"
 private void NotifyDebuggerOfWaitCompletion()  
 ```  
   
-## <a name="remarks"></a>Примечания  
- Этот метод следует вызывать все операции соединения с задачей, если их отладчик уведомлений бита.  
+## <a name="remarks"></a>Remarks  
+ Все операции JOIN с задачей должны вызывать этот метод, если задан бит уведомления отладчика.  
   
 ## <a name="requirements"></a>Требования  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2 Документы Майкрософт
+title: IDebugEngine2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730860"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
-Этот интерфейс представляет собой отладку двигателя (DE). Он используется для управления различными аспектами сеанса отладки, от создания точек разрыва до настройки и очистки исключений.
+Этот интерфейс представляет модуль отладки (DE). Он используется для управления различными аспектами сеанса отладки, от создания точек останова до установки и удаления исключений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,38 +28,38 @@ ms.locfileid: "80730860"
 IDebugEngine2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован на заказ DE для управления отладкой программ. Этот интерфейс должен быть реализован DE.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется с помощью пользовательского интерфейса DE для управления отладкой программ. Этот интерфейс должен быть реализован методом DE.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Этот интерфейс вызывается менеджером отладки сеанса (SDM) для управления сеансом отладки, включая управление исключениями, создание моментов разрыва и реагирование на синхронные события, отправляемые DE.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот интерфейс вызывается диспетчером отладки сеансов (SDM) для управления сеансом отладки, включая Управление исключениями, создание точек останова и реагирование на синхронные события, отправляемые методом DE.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugEngine2`.
+ В следующей таблице показаны методы `IDebugEngine2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Создает регистратор для всех программ, отладимых DE.|
-|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Прикрепляет DE к программе.|
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Создает отложенную точку разрыва в DE.|
-|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Определяет, как DE должен обрабатывать данное исключение.|
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Удаляет указанное исключение, чтобы оно больше не обрабатывалось движком отладки.|
-|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Удаляет список исключений, установленных IDE для определенной архитектуры или языка времени выполнения.|
-|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Получает GUID DE.|
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Информирует DE, что указанная программа была нетипично прекращена и что DE должен очистить все ссылки на программу и отправить событие уничтожения программы.|
-|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Вызванный SDM, чтобы указать, что синхронное событие отладки, ранее отправленное DE в SDM, было получено и обработано.|
-|[Setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Устанавливает локал DE.|
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Устанавливает корень реестра, который в настоящее время используется DE.|
-|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Устанавливает метрику.|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Запросы, чтобы все программы, отладимые этим DE, прекратили выполнение при следующей попытке выполнения одной из потоков.|
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Создает перечислитель для всех отлаживаемых программ с помощью DE.|
+|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Присоединяет DE к программе.|
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Создает ожидающую точку останова в DE.|
+|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Указывает, как метод DE должен выполнять данное исключение.|
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Удаляет указанное исключение, поэтому оно больше не обрабатывается модулем отладки.|
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Удаляет список исключений, установленных интегрированной средой разработки для определенной архитектуры или языка среды выполнения.|
+|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Возвращает идентификатор GUID для DE.|
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Информирует о том, что указанная программа была необычным прекращена и что DE должен очистить все ссылки на программу и отправить событие уничтожения программы.|
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Вызывается SDM для указания на то, что было получено и обработано Синхронное событие отладки, которое ранее было отправлено DE в SDM.|
+|[Pragma](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Задает языковой стандарт для DE.|
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Задает корень реестра, используемый в данный момент в параметре DE.|
+|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Задает метрику.|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Запрашивает, что все программы, отладка которых выполняется, прекращают выполнение при следующем попытке запуска одного из их потоков.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Msdbg.h
+ Заголовок: Мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189694"
 ---
 # <a name="data-in-office-solutions"></a>Данные в решениях Office
   Многие решения Office позволяют пользователям извлекать или изменять данные. При создании решений Office с помощью среды Visual Studio существует несколько различных способов работы с данными.
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>В этом разделе
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  Описывается привязка данных к элементам управления в решениях Office.

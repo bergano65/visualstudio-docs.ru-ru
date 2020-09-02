@@ -11,18 +11,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184432"
 ---
 # <a name="com-constants-in-managed-code"></a>Константы COM в управляемом коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Managed Package Framework (MPF) доступны некоторые стандартные константы COM в управляемый код. Ниже перечислены эти константы для справки.  
+Платформа управляемого пакета (MPF) делает некоторые стандартные константы COM доступными для управляемого кода. Эти константы перечислены ниже для справки.  
   
-## <a name="boolean-hresult-values"></a>Логическое значение HRESULT значения  
+## <a name="boolean-hresult-values"></a>Логические значения HRESULT  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
@@ -91,7 +91,7 @@ Managed Package Framework (MPF) доступны некоторые станда
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## <a name="ole-dispatch-errors"></a>Ошибки диспетчера OLE  
+## <a name="ole-dispatch-errors"></a>Ошибки диспетчеризации OLE  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  
@@ -128,5 +128,5 @@ Managed Package Framework (MPF) доступны некоторые станда
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Обработка ошибок и возвращаемые значения](../extensibility/error-handling-and-return-values.md)

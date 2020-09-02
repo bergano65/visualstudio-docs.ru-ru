@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Не удалось инициировать подключение DCOM | Документация Майкрософт'
+title: 'Ошибка: невозможно инициировать связь DCOM | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fff1c56915fe4a06d66bdb08ce60219642933b1b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682530"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Ошибка: Не удалось инициировать подключение DCOM
@@ -30,9 +30,9 @@ ms.locfileid: "65682530"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Если удаленный компьютер включен брандмауэр Windows, см. в разделе [задать удаленных инструментов на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) инструкции о том, как настроить брандмауэр для локальной отладки.  
+- Если на удаленном компьютере включен брандмауэр Windows, см. инструкции по настройке брандмауэра для локальной отладки в разделе [настройка удаленные средства на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
 - Чтобы восстановить работоспособность проверки подлинности Windows, попробуйте перезагрузить оба компьютера. Изучите журналы событий на локальном и удаленном компьютерах на наличие ошибок Kerberos и узнайте у администратора домена о возможных нерешенных проблемах.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Remote Debugging](../debugger/remote-debugging.md)

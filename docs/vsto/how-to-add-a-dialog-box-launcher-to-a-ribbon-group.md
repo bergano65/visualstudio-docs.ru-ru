@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541624"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Как добавить средство запуска диалогового окна в группу ленты
@@ -35,7 +35,7 @@ ms.locfileid: "85541624"
 
      Добавьте код в <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> событие группы, чтобы открыть настраиваемое или встроенное диалоговое окно.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Примеры и пошаговые руководства по разработке решений Office](../vsto/office-development-samples-and-walkthroughs.md)

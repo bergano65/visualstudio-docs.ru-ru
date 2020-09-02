@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea06d8e007e2df88cb46c2f0e6dd4a79ebe711b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153632"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
+# <a name="ad_process_id"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает идентификатор процесса, который может быть системный идентификатор или GUID.  
+Указывает идентификатор процесса, который может быть либо системным ИДЕНТИФИКАТОРом, либо идентификатором GUID.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,19 +48,19 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>Участники  
  `ProcessIdType`  
- Значение из [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) перечисление, определяющее, как интерпретировать `ProcessId` объединения (или для управляемого кода, какой член структуры, для доступа к).  
+ Значение из перечисления [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) , указывающее способ интерпретации `ProcessId` объединения (или для управляемого кода, к которому необходимо получить доступ).  
   
- dwProcessId  
- Идентификатор процесса, в качестве значения из системы.  
+ двпроцессид  
+ Идентификатор процесса в виде значения из системы.  
   
- guidProcessId  
+ гуидпроцессид  
  Идентификатор процесса в виде идентификатора GUID.  
   
- dwUnused  
- Размер внутренних полей.  
+ двунусед  
+ Заполнение.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается следующих методов:  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается следующим методам:  
   
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
@@ -77,19 +77,19 @@ public struct AD_PROCESS_ID {
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)   
- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)   
- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
+ [жетфисикалпроцессид](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
+ [жесостид](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)   
+ [жетпровидерпрограмноде](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
+ [ватчфорпровидеревентс](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

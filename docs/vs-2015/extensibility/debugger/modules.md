@@ -12,23 +12,23 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a2b2f04e1088b9b06cb05015a6b0b4da5d60927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153750"
 ---
 # <a name="modules"></a>Модули
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-С точки зрения архитектуры отладчика **модуль**:  
+В плане архитектуры отладчика это **модуль**:  
   
-- — Это физический контейнер кода, например исполняемый файл или библиотеку DLL.  
+- — Это физический контейнер кода, например исполняемый файл или библиотека DLL.  
   
-- Можно перезагрузить его символы и описать сам себя. Описание модуля, отображаются в интегрированной среды разработки окна "Модули".  
+- Может перезагружать свои символы и описывать саму себя. Описания модулей отображаются в окне Модули интегрированной среды разработки.  
   
-- Представленный [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) интерфейса, созданные модуля отладки для описания модуля.  
+- Представляется интерфейсом [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , созданным модулем отладки для описания модуля.  
   
-## <a name="see-also"></a>См. также  
- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)   
+## <a name="see-also"></a>См. также:  
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

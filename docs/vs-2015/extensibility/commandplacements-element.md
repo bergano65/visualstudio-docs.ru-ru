@@ -14,18 +14,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dbe65cc38bd14d859507d795ce32657f53ca8b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184313"
 ---
 # <a name="commandplacements-element"></a>Элемент CommandPlacements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Элемент CommandPlacements группирует элементы CommandPlacement и другими признаками CommandPlacements.  
+Элемент CommandPlacements группирует элементы CommandPlacement и другие группирования CommandPlacements.  
   
- Элемент CommandPlacements является необязательным. Если нет, группы или меню должны быть включены в дополнительном расположении, у вас нет для включения в этом разделе в вашей vsct-файл.  
+ Элемент CommandPlacements является необязательным. Если команды, группы или меню не должны включаться в дополнительное расположение, не нужно включать этот раздел в vsct-файл.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,20 +43,20 @@ ms.locfileid: "68184313"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|CommandPlacements|Группирует элементы CommandPlacement и другими признаками CommandPlacements.|  
-|[Элемент CommandPlacement](../extensibility/commandplacement-element.md)|Включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню.|  
+|CommandPlacements|Группирует элементы CommandPlacement и другие группирования CommandPlacements.|  
+|[Элемент CommandPlacement](../extensibility/commandplacement-element.md)|Позволяет включать кнопки, группы и меню в несколько групп или меню.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды.|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды.|  
   
 ## <a name="example"></a>Пример  
   
@@ -69,6 +69,6 @@ ms.locfileid: "68184313"
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Элемент CommandPlacement](../extensibility/commandplacement-element.md)   
+## <a name="see-also"></a>См. также:  
+ [CommandPlacement, элемент](../extensibility/commandplacement-element.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

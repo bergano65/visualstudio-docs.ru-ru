@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction | Документация Майкрософт
+title: 'IDiaSymbol:: get_isAcceleratorStubFunction | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 69f82f836be6ab91fe73af5a0febf7a39723b191
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199897"
 ---
-# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+# <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Указывает, соответствует ли символ в символ верхнего уровня функции для шейдера, скомпилированные для ускоритель, который соответствует `parallel_for_each` вызова.  
+Указывает, соответствует ли символ символу функции верхнего уровня для шейдера, скомпилированного для ускорителя, соответствующего `parallel_for_each` вызову.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,10 +32,10 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Указатель на `BOOL` , указывающее, соответствует ли символ в символ функции верхнего уровня для шейдера, скомпилированные для ускоритель, который соответствует `parallel_for_each` вызова.  
+ заполняет Указатель на объект `BOOL` , указывающий, соответствует ли символ символу функции верхнего уровня для шейдера, скомпилированного для ускорителя, соответствующего `parallel_for_each` вызову.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

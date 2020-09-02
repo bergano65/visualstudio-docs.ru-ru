@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Документация Майкрософт
+title: АССЕМБЛИЛОКРЕСОЛУТИОН | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153597"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет расположение сборки.  
+Указывает, где находится сборка.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,30 +47,30 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>Участники  
  ALR_NAME  
- Сборка расположена в текущем пространстве имен.  
+ Сборка находится в текущем пространстве имен.  
   
  ALR_USERDIR  
- Сборка расположена в каталоге пользователя.  
+ Сборка находится в каталоге пользователя.  
   
  ALR_SHAREDDIR  
- Сборка расположена в общий каталог.  
+ Сборка находится в общем каталоге.  
   
  ALR_REMOTEDIR  
- Сборка расположена в удаленном каталоге.  
+ Сборка находится в удаленном каталоге.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения возвращаются [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) методы.  
+## <a name="remarks"></a>Remarks  
+ Эти значения возвращаются методами [ресолвеассемблиреф](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [жетманажедвиеверкреатиондата](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .  
   
- Эти значения могут объединяться с помощью `OR` операции.  
+ Эти значения можно сочетать с `OR` операцией.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
+ [ресолвеассемблиреф](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

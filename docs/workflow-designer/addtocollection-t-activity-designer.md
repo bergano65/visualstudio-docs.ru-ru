@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ffa24dce2691f061c5947e15d7fc7923d632b38
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706546"
 ---
 # <a name="addtocollectiont-activity-designer"></a>Конструктор действия AddToCollection\<T>
@@ -42,7 +42,7 @@ ms.locfileid: "88706546"
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Верно|Коллекция, в которую следует добавить элемент. Эта коллекция имеет тип **ICollection<TypeArgument \> **. Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|
 |*TypeArgument*|Верно|Тип T элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Коллекция](../workflow-designer/collection-activity-designers.md)
 - [Конструктор действия AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
