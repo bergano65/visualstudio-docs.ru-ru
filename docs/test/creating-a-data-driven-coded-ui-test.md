@@ -201,7 +201,7 @@ ms.locfileid: "75595362"
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Что такое атрибуты источника данных для других типов источников данных, таких как SQL Express или XML?
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Что такое атрибуты источника данных для других типов источников данных, таких как SQL Express или XML?
 
 **Ответ.** Можно использовать строки примеров источников данных из таблицы ниже, скопировав их в код, и внести необходимые настройки.
 

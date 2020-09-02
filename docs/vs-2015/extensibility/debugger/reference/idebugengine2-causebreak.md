@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CauseBreak | Документация Майкрософт
+title: 'IDebugEngine2:: Каусебреак | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2b6e52e4885a61c3fe04fff5bdcca08fd00cf460
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198489"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Запросы, что все программы, отлаживаемой, этот модуль отладки (DE), чтобы остановить выполнение следующего, один из своих потоков пытается выполнить.  
+Запрашивает, что все программы, отлаживаемых с помощью этого модуля отладки (DE), останавливают выполнение при следующем попытке запуска одного из их потоков.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,11 +37,11 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод является асинхронным: [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) событие отправляется, когда программа затем пытается выполнить после вызова этого метода.  
+## <a name="remarks"></a>Remarks  
+ Этот метод является асинхронным: событие [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) отправляется при следующей попытке выполнения программы после вызова этого метода.  
   
-## <a name="see-also"></a>См. также  
- [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   
+## <a name="see-also"></a>См. также:  
+ [каусебреак](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

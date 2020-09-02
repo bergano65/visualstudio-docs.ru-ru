@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_addressSection | Документация Майкрософт
+title: 'IDiaLineNumber:: get_addressSection | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1d3b981002ebefb1644baa580b7f9ecc181cc16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198529"
 ---
-# <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
+# <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает раздел часть адреса памяти, где начинается блок.  
+Извлекает часть адреса памяти, с которой начинается блок.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,11 +34,11 @@ HRESULT get_addressSection ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- pRetVal  
- [out] Возвращает раздел часть адреса памяти, где начинается блок.  
+ претвал  
+ заполняет Возвращает часть адреса памяти, с которой начинается блок.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="example"></a>Пример  
   
@@ -48,6 +48,6 @@ DWORD seg;
 pLine->get_addressSection( &seg );  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

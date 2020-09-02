@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546943"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент «действие» (разработка решений Office в Visual Studio)
@@ -43,10 +43,10 @@ ms.locfileid: "85546943"
  У элемента`postAction` имеются перечисленные ниже элементы.
 
 ### <a name="entrypoint"></a>entryPoint
- Необязательный параметр. Роль `entryPoint` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Необязательный элемент. Роль `entryPoint` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Необязательный параметр. Роль `postActionData` элемента в `vstav3` пространстве имен определяется в [&#60;постактиондата&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Необязательный элемент. Роль `postActionData` элемента в `vstav3` пространстве имен определяется в [&#60;постактиондата&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Пример действия, выполняемого после развертывания
 
@@ -70,7 +70,7 @@ ms.locfileid: "85546943"
 </vstav3:postAction>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198384"
 ---
-# <a name="markerimportance-enumeration"></a>Перечисление marker_importance
+# <a name="marker_importance-enumeration"></a>Перечисление marker_importance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Представляет уровень важности маркера визуализатора параллелизма.  
@@ -35,7 +35,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Значения  
   
-|name|ОПИСАНИЕ|  
+|name|Описание|  
 |----------|-----------------|  
 |`critical_importance`|Указывает, что маркер имеет критическую важность.|  
 |`high_importance`|Указывает, что маркер имеет высокую важность.|  
@@ -47,5 +47,5 @@ enum marker_importance;
   
  **Пространство имен:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>См. также  
- [Пространство имен diagnostic](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>См. также:  
+ [Пространство имен диагностики](../profiling/diagnostic-namespace.md)

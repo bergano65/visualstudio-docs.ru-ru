@@ -1,5 +1,5 @@
 ---
-title: VSPackage Essentials | Документация Майкрософт
+title: Основы VSPackage | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,10 +10,10 @@ ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 7b9f8dc80f7985e7b9b7545dd0c8e78d748cd4d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62953768"
 ---
 # <a name="vspackage-essentials"></a>Основные сведения о пакетах VSPackage
@@ -23,5 +23,5 @@ ms.locfileid: "62953768"
   
  Для использования пакетов VSPackage необходимо установить пакет SDK для Visual Studio. Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-## <a name="see-also"></a>См. также  
- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>См. также:  
+ [VSPackages](../extensibility/internals/vspackages.md)
