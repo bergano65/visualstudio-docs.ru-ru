@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015298"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Как импортировать главную страницу или тему
-  Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]не предоставляет шаблоны для этих элементов, но их можно создать в SharePoint Designer, а затем импортировать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Дополнительные сведения см. в разделе [стандартный блок: страницы и пользовательский интерфейс](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) на веб-сайте Майкрософт.
+  Создание и использование эталонных страниц дает возможность обеспечения согласованного внешнего вида страниц сайта SharePoint. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не предоставляет шаблоны для этих элементов, но их можно создать в SharePoint Designer, а затем импортировать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Дополнительные сведения см. в разделе [стандартный блок: страницы и пользовательский интерфейс](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) на веб-сайте Майкрософт.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Импорт главной страницы или темы
 

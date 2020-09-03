@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015072"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
@@ -82,7 +83,7 @@ ms.locfileid: "86015072"
 
 4. В поле **имя** введите **ProjectExtension**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **ProjectExtension** в решение и открывает файл кода Class1 по умолчанию.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **ProjectExtension** в решение и открывает файл кода Class1 по умолчанию.
 
 5. Удалите файл кода Class1 из проекта.
 
@@ -127,7 +128,7 @@ ms.locfileid: "86015072"
 
 1. В **Обозреватель решений**откройте контекстное меню для файла Source. extension. vsixmanifest, а затем нажмите кнопку **Открыть** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]открывает файл в конструкторе манифестов. Сведения, отображаемые на вкладке **метаданные** , также отображаются в списке **расширения и обновления**. Для всех пакетов VSIX требуется файл Extension. vsixmanifest. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл в конструкторе манифестов. Сведения, отображаемые на вкладке **метаданные** , также отображаются в списке **расширения и обновления**. Для всех пакетов VSIX требуется файл Extension. vsixmanifest. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
 2. В поле **Название продукта** введите **настраиваемое свойство проекта**.
 
@@ -171,7 +172,7 @@ ms.locfileid: "86015072"
 
 2. Запустите отладочную сборку проекта, нажав клавишу **F5** , или в строке меню выберите **Отладка**  >  **начать отладку**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]устанавливает расширение в%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 и запускает экспериментальный экземпляр [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] устанавливает расширение в%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 и запускает экспериментальный экземпляр [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 3. В экспериментальном экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создайте проект SharePoint для решения фермы и используйте значения по умолчанию для других значений в мастере.
 

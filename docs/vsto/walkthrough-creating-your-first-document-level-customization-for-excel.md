@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566979"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Пошаговое руководство. Создание первой настройки уровня документа для Excel
@@ -27,7 +27,7 @@ ms.locfileid: "74566979"
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - создание проекта книги Excel;
 
@@ -41,9 +41,9 @@ ms.locfileid: "74566979"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,9 +53,9 @@ ms.locfileid: "74566979"
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Создание проекта книги Excel в Visual Studio
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+2. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
 ::: moniker range="vs-2017"
 3. В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем узел **Office/SharePoint**.
 
@@ -84,13 +84,13 @@ ms.locfileid: "74566979"
 
    - *Фирстворкбуккустомизатион*. xlsx — представляет книгу Excel в проекте. Содержит все листы и диаграммы.
 
-   - Лист1 (файл *. vb* для Visual Basic или *CS* -файл для Visual C#) — лист, предоставляющий область конструктора и код для первого листа в книге. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).
+   - Файл Sheet1 (*. vb* для Visual Basic или *CS* -файл для Visual C#) — лист, предоставляющий область конструктора и код для первого листа в книге. Дополнительные сведения см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).
 
    - Лист2 (*VB* -файл для Visual Basic или *CS* -файл для Visual C#) — лист, предоставляющий область конструктора и код для второго листа в книге.
 
-   - Sheet3 (*VB* -файл для Visual Basic или *CS* для Visual C#) — лист, предоставляющий область конструктора и код для третьего листа в книге.
+   - Sheet3 (*VB* -файл для файла Visual Basic или *CS* для Visual C#) — лист, предоставляющий область конструктора и код для третьего листа в книге.
 
-   - Файл ThisWorkbook ( *. vb* для Visual Basic или *CS* -файл для Visual C#) — содержит область конструктора и код для настроек уровня книги. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).
+   - ThisWorkbook (*VB* -файл для Visual Basic или *CS* -файл для Visual C#) — содержит область конструктора и код для настроек уровня книги. Дополнительные сведения см. в разделе [ведущий элемент книги](../vsto/workbook-host-item.md).
 
      Файл кода Sheet1 автоматически открывается в конструкторе.
 
@@ -164,7 +164,7 @@ ms.locfileid: "74566979"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Теперь после создания базовой настройки на уровне документа для Excel в следующих разделах можно ознакомиться с процессом разработки настроек:
 
@@ -182,10 +182,10 @@ ms.locfileid: "74566979"
 
 - Развертывание настроек уровня документа для Excel: [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Решения Excel](../vsto/excel-solutions.md)
+- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [решения Excel](../vsto/excel-solutions.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)

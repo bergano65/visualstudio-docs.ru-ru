@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015940"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
@@ -45,7 +46,7 @@ ms.locfileid: "86015940"
 > [!NOTE]
 > Вы можете скачать пример из [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , в котором показано, как создавать пользовательские действия для рабочего процесса.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Microsoft Windows, SharePoint и Visual Studio.
@@ -86,7 +87,7 @@ ms.locfileid: "86015940"
 
 6. В поле **имя** введите **кустомактионпрожектитем**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **кустомактионпрожектитем** в **Обозреватель решений**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **кустомактионпрожектитем** в **Обозреватель решений**.
 
 #### <a name="to-create-the-item-template-project"></a>Создание проекта шаблона элемента
 
@@ -100,7 +101,7 @@ ms.locfileid: "86015940"
 
 5. В поле **имя** введите **ItemTemplate**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **ItemTemplate** в решение.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **ItemTemplate** в решение.
 
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения
 
@@ -112,7 +113,7 @@ ms.locfileid: "86015940"
 
 4. В поле **имя** введите **прожектитемдефинитион**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **прожектитемдефинитион** в решение и открывает файл кода Class1 по умолчанию.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **прожектитемдефинитион** в решение и открывает файл кода Class1 по умолчанию.
 
 5. Удалите файл кода Class1 из проекта.
 
@@ -448,7 +449,7 @@ ms.locfileid: "86015940"
 ## <a name="next-steps"></a>Дальнейшие действия
  После выполнения этого пошагового руководства можно добавить мастер в шаблон элемента. Когда пользователь добавляет элемент проекта настраиваемого действия в проект SharePoint, мастер собирает сведения о действии (например, его расположение и URL-адрес для перехода к, когда действие выбрано) и добавляет эти сведения в файл *Elements.xml* в новом элементе проекта. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

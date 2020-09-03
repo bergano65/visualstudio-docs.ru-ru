@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905898"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Как присоединить представления к данным документа
@@ -42,6 +42,6 @@ ms.locfileid: "85905898"
 ## <a name="robust-programming"></a>Отказоустойчивость
  Когда Visual Studio вызывает реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метода, он передает указатель на существующий объект данных документа в `punkDocDataExisting` параметре, если он существует. Изучите объект данных документа, возвращенный в `punkDocDataExisting` , чтобы определить, подходит ли объект данных документа для редактора, как описано в шаге 4 процедуры, описанной в этом разделе. Если это уместно, Фабрика редактора должна предоставить второе представление для данных, как описано в статье [Поддержка нескольких представлений документов](../extensibility/supporting-multiple-document-views.md). В противном случае он должен отобразить соответствующее сообщение об ошибке.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 - [Поддержка нескольких представлений документов](../extensibility/supporting-multiple-document-views.md)
 - [Данные документа и представление документа в пользовательских редакторах](../extensibility/document-data-and-document-view-in-custom-editors.md)

@@ -13,19 +13,19 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944249"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Инструкции. Создание данных реестра для установщика
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Практическое руководство. Создание сведений реестра для установщика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Служебную программу RegPkg. exe можно использовать для создания манифеста регистрации для управляемого пакета VSPackage. Манифест можно встроить в пакет установки установщик Windows. RegPkg также может создать файл, который можно включить в исходный файл установки на основе [набора инструментов УСТАНОВЩИК Windows XML](https://documentation.help/WiX-Toolset/index.html).
+Служебную программу RegPkg.exe можно использовать для создания манифеста регистрации для управляемого пакета VSPackage. Манифест можно встроить в пакет установки установщик Windows. RegPkg также может создать файл, который можно включить в исходный файл установки на основе [набора инструментов УСТАНОВЩИК Windows XML](https://documentation.help/WiX-Toolset/index.html).
   
 > [!IMPORTANT]
-> RegPkg создает имена путей, характерные для конкретной системы разработки, поэтому при каждом использовании RegPkg необходимо изменить выходные данные, чтобы они использовали соответствующие свойства установщик Windows форматирования. Например, значение InprocServer32 должно быть равно **[системфолдер] Mscoree. dll** , а пути — использовать **[#filekey]** и **[$componentkey]** . Настройка вывода таким образом поддерживает компьютеры с Windows, установленные на другом диске или в другом каталоге, локализованных именах каталогов и путях, которые пользователи могут выбрать. Дополнительные сведения см. в разделе [отформатировано](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) в пакете SDK для установщик Windows. При соблюдении соглашений RegPkg для путей к системе разработки, например идентификаторов файлов формы File_*filename*, необходимо внести меньше изменений.  
+> RegPkg создает имена путей, характерные для конкретной системы разработки, поэтому при каждом использовании RegPkg необходимо изменить выходные данные, чтобы они использовали соответствующие свойства установщик Windows форматирования. Например, значение InprocServer32 должно быть равно **[системфолдер] mscoree.dll** и пути должны использовать **[#filekey]** и **[$componentkey]**. Настройка вывода таким образом поддерживает компьютеры с Windows, установленные на другом диске или в другом каталоге, локализованных именах каталогов и путях, которые пользователи могут выбрать. Дополнительные сведения см. в разделе [отформатировано](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) в пакете SDK для установщик Windows. При соблюдении соглашений RegPkg для путей к системе разработки, например идентификаторов файлов формы File_*filename*, необходимо внести меньше изменений.  
   
 ### <a name="to-create-a-registration-manifest"></a>Создание манифеста регистрации  
   
@@ -182,6 +182,6 @@ ms.locfileid: "75944249"
     </Include>  
     ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Регистрация пакетов vspackage](registering-vspackages.md)   
- [Пакеты VSPackage](../../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>См. также:  
+ [Регистрация пакетов VSPackage](registering-vspackages.md)   
+ [VSPackages](../../extensibility/internals/vspackages.md)

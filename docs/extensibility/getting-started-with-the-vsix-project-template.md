@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905887"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Начало работы с шаблоном проекта VSIX
@@ -39,7 +39,7 @@ ms.locfileid: "85905887"
 
 2. Создайте пустой проект VSIX.
 
-     Выберите **File** > **New** > **Project** ( Файл > Создать > Проект). В поле поиска введите "VSIX" и выберите версию **проекта VSIX**на **C#** или **Visual Basic** .
+     Выберите **Файл** > **Создать** > **Проект**. В поле поиска введите "VSIX" и выберите версию **проекта VSIX**на **C#** или **Visual Basic** .
 
 3. Добавьте *ZIP* -файл в проект. Задайте для свойства **Копировать в выходной каталог** значение `Copy Always` .
 

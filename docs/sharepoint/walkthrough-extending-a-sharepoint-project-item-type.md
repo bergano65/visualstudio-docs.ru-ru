@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015679"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство. расширение типа элемента проекта SharePoint
@@ -76,7 +77,7 @@ ms.locfileid: "86015679"
 
 6. В поле **имя** введите **женератикстерналдаталистс**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **женератикстерналдаталистс** в **Обозреватель решений**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **женератикстерналдаталистс** в **Обозреватель решений**.
 
 7. Если файл Source. extension. vsixmanifest не открывается автоматически, откройте его контекстное меню в проекте Женератикстерналдаталистс и выберите **Открыть** .
 
@@ -94,7 +95,7 @@ ms.locfileid: "86015679"
 
 5. В поле **имя** введите **бдкпрожектитемекстенсион**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **бдкпрожектитемекстенсион** в решение и открывает файл кода Class1 по умолчанию.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **бдкпрожектитемекстенсион** в решение и открывает файл кода Class1 по умолчанию.
 
 6. Удалите файл кода Class1 из проекта.
 

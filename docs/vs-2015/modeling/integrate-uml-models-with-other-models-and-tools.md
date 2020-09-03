@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918354"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Интеграция моделей UML с другими моделями и средствами
@@ -46,7 +46,7 @@ ms.locfileid: "75918354"
 
 - **GUID и имя файла** целевой модели, а также модель, которая содержит этот элемент, или конкретную диаграмму, которая отображает ее.
 
-- **Ссылки на ModelBus.** ModelBus — это платформа для создания и разрешения ссылок между моделями. Она включает в себя средство выбора ModelBus, позволяющее пользователю выбрать элемент в модели. Она также помогает пользователю разрешать ссылки, которые теряются из-за изменений в целевой модели.
+- **Ссылки ModelBus.** ModelBus — это платформа для создания и разрешения ссылок между моделями. Она включает в себя средство выбора ModelBus, позволяющее пользователю выбрать элемент в модели. Она также помогает пользователю разрешать ссылки, которые теряются из-за изменений в целевой модели.
 
    Дополнительные сведения см. в разделе [Интеграция моделей с помощью Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
@@ -63,5 +63,5 @@ ms.locfileid: "75918354"
 
    Дополнительные сведения см. в разделе [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) и [инструкции: Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md) [. как реагировать на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)

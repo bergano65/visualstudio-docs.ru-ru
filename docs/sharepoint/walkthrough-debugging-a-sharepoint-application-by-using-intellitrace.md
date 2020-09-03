@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015752"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace
@@ -30,7 +31,7 @@ ms.locfileid: "86015752"
 
  **Применимо к:** Сведения в этом разделе относятся к решениям SharePoint 2010 и SharePoint 2013, которые были созданы в Visual Studio.
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - [Создание приемника компонента](#create-a-feature-receiver)
 

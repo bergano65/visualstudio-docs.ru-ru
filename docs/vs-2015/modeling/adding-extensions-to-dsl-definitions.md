@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919062"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Добавление расширений в определения доменных языков
@@ -37,5 +37,5 @@ ms.locfileid: "75919062"
 
   Пример кода и дополнительные сведения об этой функции см. на веб-сайте [SDK визуализации и моделирования Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48148) .
 
-## <a name="see-also"></a>См. также раздел
- [Пакет SDK визуализации и моделирования Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48148)
+## <a name="see-also"></a>См. также:
+ [Пакет SDK для визуализации и моделирования в Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

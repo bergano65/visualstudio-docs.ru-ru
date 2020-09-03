@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015683"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство. Импорт настраиваемой главной страницы и страницы сайта с помощью изображения
@@ -32,12 +33,12 @@ ms.locfileid: "86015683"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Для выполнения инструкций этого пошагового руководства необходимы следующие компоненты:
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 - SharePoint Designer 2010.
 
@@ -175,7 +176,7 @@ ms.locfileid: "86015683"
 
    Альтернативный способ импорта [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и развертывания файлов в SharePoint — Добавление файлов в модули в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Как импортировать главную страницу или тему](../sharepoint/how-to-import-a-master-page-or-theme.md) и [использовать модули для включения файлов в решение](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Импорт элементов с существующего сайта SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

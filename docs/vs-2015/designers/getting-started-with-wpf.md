@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b005b55e0079b7db6486a8cde08f81f62ac7399
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542042"
 ---
 # <a name="getting-started-with-wpf"></a>Начало работы с WPF
@@ -31,5 +31,5 @@ Windows Presentation Foundation (WPF) — это платформа пользо
 |Дополнительные сведения о WPF...|[Введение в WPF](../designers/introduction-to-wpf.md)<br /><br /> [Обзор XAML (WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [Элементы управления](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [Общие сведения о привязке данных](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|
 |Вы разработчик Windows Forms?|[Элементы управления Windows Forms и эквивалентные элементы управления WPF](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [Поддерживаемые сценарии в WPF и взаимодействие с Windows Forms](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Общие сведения о разработке приложений](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx) [библиотеки классов (WPF)](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx) [.NET Framework центре разработчиков](https://dotnet.microsoft.com/) [создание современных классических приложений с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

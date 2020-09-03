@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: be9d3d44bfceaae1f2912086c3d20c90ce1e094b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916549"
 ---
 # <a name="vsix-deployment-of-a-dsl"></a>Развертывание VSIX для DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете установить доменный язык на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] уже должны быть установлены на целевом компьютере.
+Вы можете установить доменный язык на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] уже должен быть установлен на конечном компьютере.
 
-## <a name="Installing"></a>Установка и удаление DSL с помощью VSX
- При установке DSL этим методом пользователь может открыть файл DSL в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], но файл нельзя открыть из проводника Windows.
+## <a name="installing-and-uninstalling-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> Установка и удаление DSL с помощью VSX
+ При установке DSL этим методом пользователь может открыть файл DSL из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , но файл нельзя открыть из проводника Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsix"></a>Установка DSL с помощью VSIX
 
@@ -30,13 +30,13 @@ ms.locfileid: "75916549"
 
     1. В **Обозреватель решений**щелкните правой кнопкой мыши проект **DslPackage** и выберите пункт **Открыть папку в проводнике Windows**.
 
-    2. Откройте файл **bin\\\*\\** _йоурпрожект_ **. DslPackage. VSIX**
+    2. Откройте файл ** \\ \* \\ bin**_йоурпрожект_**. DslPackage. VSIX**
 
 2. Скопируйте **VSIX** файл на конечный компьютер, на который необходимо установить DSL. Это может быть как ваш собственный компьютер, так и любой другой.
 
-    - На целевом компьютере должен быть установлен один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], поддерживающих DSL во время выполнения. Дополнительные сведения см. в разделе [Поддерживаемые выпуски Visual Studio для визуализации & моделирования SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
+    - На целевом компьютере должен быть установлен один из выпусков [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , поддерживающий DSL во время выполнения. Дополнительные сведения см. в разделе [Поддерживаемые выпуски Visual Studio для визуализации & моделирования SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    - На целевом компьютере должен быть установлен один из выпусков [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], указанных в **дслпаккаже\саурце.екстенсионс.манифест**.
+    - На целевом компьютере должен быть один из выпусков, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] указанных в **дслпаккаже\саурце.екстенсионс.манифест**.
 
 3. На целевом компьютере дважды щелкните **VSIX** -файл.
 
@@ -44,7 +44,7 @@ ms.locfileid: "75916549"
 
 4. Запустите или перезапустите [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-5. Чтобы протестировать DSL, используйте [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], чтобы создать новый файл с расширением, определенным для вашего DSL.
+5. Чтобы протестировать DSL, используйте [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания нового файла с расширением, определенным для вашего DSL.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Удаление DSL, установленного с помощью VSX
 

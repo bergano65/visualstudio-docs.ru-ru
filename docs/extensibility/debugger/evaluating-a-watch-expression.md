@@ -1,5 +1,5 @@
 ---
-title: Оценка выражения часов (ru) Документы Майкрософт
+title: Вычисление выражения контрольных значений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9a239e430338e88a0be4bc35ad1c357925f7d8f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738853"
 ---
-# <a name="evaluate-a-watch-expression"></a>Оценить выражение часов
+# <a name="evaluate-a-watch-expression"></a>Вычисление выражения контрольных значений
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Когда Visual Studio готова отображать значение выражения часов, она называет [EvaluateSync,](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)который, в свою очередь, вызывает [EvaluateSync.](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) Этот процесс создает объект [IDebugProperty2,](../../extensibility/debugger/reference/idebugproperty2.md) содержащий значение и тип выражения.
+Когда Visual Studio будет готова отобразить значение выражения Watch, оно вызывает [евалуатесинк](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), который, в свою очередь, вызывает [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Этот процесс создает объект [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , содержащий значение и тип выражения.
 
-В этой `IDebugParsedExpression::EvaluateSync`реализации, выражение разбирается и оценивается в то же время. Эта реализация выполняет следующие задачи:
+В этой реализации `IDebugParsedExpression::EvaluateSync` выражение анализируется и вычисляется в то же время. Эта реализация выполняет следующие задачи:
 
-1. Сравнивает и оценивает выражение для создания общего объекта, который содержит значение и его тип. В C, это представлено `object` как некоторое время в СЗ, `VARIANT`это представлено как .
+1. Анализирует и оценивает выражение для создания универсального объекта, содержащего значение и его тип. В C# это представляется как `object` время в C++, оно представлено как `VARIANT` .
 
-2. Мгновения класса `CValueProperty` (называется в этом `IDebugProperty2` примере), который реализует интерфейс и хранит в классе значение, которое будет возвращено.
+2. Создает экземпляр класса (вызываемого `CValueProperty` в этом примере), который реализует `IDebugProperty2` интерфейс и сохраняет в классе возвращаемое значение.
 
-3. Возвращает `IDebugProperty2` интерфейс с `CValueProperty` объекта.
+3. Возвращает `IDebugProperty2` интерфейс из `CValueProperty` объекта.
 
 ## <a name="managed-code"></a>Управляемый код
-Это реализация управляемого `IDebugParsedExpression::EvaluateSync` кода. Метод `Tokenize` помощника разбирает выражение в дереве разбора. Функция `EvalToken` помощника преобразует маркер в значение. Функция `FindTerm` помощника повторяется через дерево разбора, требуя `EvalToken` для каждого узла, представляющего значение и применяя любые операции (дополнение или вычитание) в выражении.
+Это реализация `IDebugParsedExpression::EvaluateSync` в управляемом коде. Вспомогательный метод `Tokenize` анализирует выражение в дереве синтаксического анализа. Вспомогательная функция `EvalToken` преобразует токен в значение. Вспомогательная функция `FindTerm` рекурсивно проходит по дереву синтаксического анализа, вызывая `EvalToken` для каждого узла, представляющего значение, и применяя любые операции (сложение или вычитание) в выражении.
 
 ```csharp
 namespace EEMC
@@ -80,7 +80,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Неуправляемый код
-Это реализация неуправляемого `IDebugParsedExpression::EvaluateSync` кода. Функция `Evaluate` помощника разбирает и оценивает выражение, `VARIANT` возвращая удерживая полученное значение. Функция `VariantValueToProperty` помощника объединяет `VARIANT` `CValueProperty` объект в объект.
+Это реализация `IDebugParsedExpression::EvaluateSync` в неуправляемом коде. Вспомогательная функция `Evaluate` выполняет синтаксический анализ и вычисление выражения, возвращая объект, `VARIANT` содержащий результирующее значение. Вспомогательная функция `VariantValueToProperty` объединяет в `VARIANT` `CValueProperty` объект.
 
 ```cpp
 STDMETHODIMP CParsedExpression::EvaluateSync(
@@ -172,5 +172,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>См. также
-- [Оценить выражение окна часов](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [Пример реализации оценки выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+- [Вычисление выражения окна контрольных значений](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

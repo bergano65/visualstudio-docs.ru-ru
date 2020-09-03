@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8426e9fcaa29bef36b6701c78d622f6f42fd1171
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651133"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Access (Windows Forms)
@@ -42,9 +42,9 @@ ms.locfileid: "72651133"
 
 1. Откройте приложение Windows Forms, к которому требуется подключить данные.
 
-2. В меню **вид** выберите другие  > **Источники данных** **Windows** .
+2. В меню **вид** выберите **другие**  >  **Источники данных**Windows.
 
-     ![Просмотр других источников данных Windows](../data-tools/media/viewdatasources.png "виевдатасаурцес")
+     ![Просмотр других окон "Источники данных"](../data-tools/media/viewdatasources.png "виевдатасаурцес")
 
 3. В окне **Источники данных** выберите **Добавить новый источник данных**.
 
@@ -58,14 +58,14 @@ ms.locfileid: "72651133"
 
 7. Измените **источник данных** на **.NET Framework поставщик данных для OLE DB**.
 
-     ![Изменение поставщика данных на OLE DB](../data-tools/media/datachangedatasourceoledb.png "датачанжедатасаурцеоледб")
+     ![Изменить поставщика данных на OLE DB](../data-tools/media/datachangedatasourceoledb.png "датачанжедатасаурцеоледб")
 
     > [!IMPORTANT]
     > Несмотря на то, что источник данных **файла базы данных Microsoft Access (OLE DB)** может показаться верным, этот тип источника данных используется только для файлов базы данных. mdb.
 
 8. В **OLE DB поставщик**выберите **Microsoft Office 12,0 доступ ядро СУБД OLE DB поставщик**.
 
-     ![Доступ к поставщику OLE DB Microsoft Office 12,0](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![Поставщик OLE DB Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
 
 9. В поле **имя сервера или файла**укажите путь и имя ACCDB, к которому необходимо подключиться, а затем нажмите кнопку **ОК**.
 
@@ -89,9 +89,9 @@ ms.locfileid: "72651133"
 
 1. Откройте приложение Windows Forms, к которому требуется подключить данные.
 
-2. В меню **вид** выберите другие  > **Источники данных** **Windows** .
+2. В меню **вид** выберите **другие**  >  **Источники данных**Windows.
 
-     ![Просмотр других источников данных Windows](../data-tools/media/viewdatasources.png "виевдатасаурцес")
+     ![Просмотр других окон "Источники данных"](../data-tools/media/viewdatasources.png "виевдатасаурцес")
 
 3. В окне **Источники данных** выберите **Добавить новый источник данных**.
 
@@ -101,11 +101,11 @@ ms.locfileid: "72651133"
 
 6. На странице **Выбор подключения базы данных** выберите **Новое подключение** для настройки нового подключения к данным.
 
-7. Если источник данных не является **файлом базы данных Microsoft Access (OLE DB)** , выберите **изменить** , чтобы открыть диалоговое окно **изменение источника данных** и выберите **файл базы данных Microsoft Access**, а затем нажмите кнопку **ОК**.
+7. Если источник данных не является **файлом базы данных Microsoft Access (OLE DB)**, выберите **изменить** , чтобы открыть диалоговое окно **изменение источника данных** и выберите **файл базы данных Microsoft Access**, а затем нажмите кнопку **ОК**.
 
 8. В поле **имя файла базы данных**укажите путь и имя файла MDB, к которому необходимо подключиться, а затем нажмите кнопку **ОК**.
 
-     ![Добавление файла базы данных для подключения к подключению](../data-tools/media/dataaddconnectionaccessmdb.png "датааддконнектионакцессмдб")
+     ![Добавление файла базы данных Access для подключения](../data-tools/media/dataaddconnectionaccessmdb.png "датааддконнектионакцессмдб")
 
 9. На странице **Выбор подключения к данным** нажмите кнопку **Далее** .
 
@@ -120,15 +120,15 @@ ms.locfileid: "72651133"
 ## <a name="security"></a>Безопасность
  Хранение конфиденциальных сведений (например, пароля) может повлиять на безопасность приложений. Использование проверки подлинности Windows (также называемой встроенными средствами безопасности) — более безопасный способ управления доступом к базе данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
  Только что созданный набор данных теперь доступен в окне **Источники данных** . Теперь можно выполнить любую из следующих задач:
 
 - Выберите элементы в окне **Источники данных** и перетащите их на форму (см. раздел [Привязка Windows Forms элементов управления к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
 
 - Откройте источник данных в Конструкторе набора данных для добавления или изменения объектов, составляющих набор данных.
 
-- Добавьте логику проверки к событию <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> таблиц данных в наборе данных (см. раздел [Проверка данных в наборах](../data-tools/validate-data-in-datasets.md)).
+- Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> событие или таблиц данных в наборе данных (см. раздел [Проверка данных в наборах](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
- [Подготовка приложения для получения](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) [элементов управления привязки данных к данным в [пошаговых руководствах](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4) по [проверке данных](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e) в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+ [Подготовка приложения для получения](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) [элементов управления привязки данных к данным в](../data-tools/bind-controls-to-data-in-visual-studio.md) [Validating Data](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e) [пошаговых руководствах](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4) по проверке данных в Visual Studio

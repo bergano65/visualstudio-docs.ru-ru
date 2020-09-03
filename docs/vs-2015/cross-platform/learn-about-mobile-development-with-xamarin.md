@@ -7,10 +7,10 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919006"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Подробности о разработке мобильных приложений с использованием Xamarin
@@ -61,9 +61,9 @@ ms.locfileid: "75919006"
   
 - Xamarin.Forms используется для создания экранов общего назначения, предоставляющих аналогичные пользовательский интерфейс и возможности на разных платформах, например страницы для входа, формы контактов и результаты поиска.  
   
-- Используйте различные возможности в Xamarin.Forms для настройки пользовательского интерфейса отдельно для каждой платформы. {2&gt;К ним относятся OnPlatform API, который можно использовать в коде и в XAML, создание настраиваемого представления, расширение существующего и создание пользовательского модуля отрисовки.&lt;2}  
+- Используйте различные возможности в Xamarin.Forms для настройки пользовательского интерфейса отдельно для каждой платформы. К ним относятся OnPlatform API, который можно использовать в коде и в XAML, создание настраиваемого представления, расширение существующего и создание пользовательского модуля отрисовки.  
   
-- {2&gt;При необходимости используйте Xamarin Native для создания экранов, использующих уникальные функции пользовательского интерфейса каждой из платформ, например экрана, который использует нативный захват с камеры и обработку изображений.&lt;2}  
+- При необходимости используйте Xamarin Native для создания экранов, применяющих уникальные возможности пользовательского интерфейса каждой из платформ, например экрана, который использует нативный захват с камеры и обработку изображений.  
   
   Рекомендуется всегда начинать с решения Xamarin.Forms, чтобы настроить общий доступ к коду пользовательского интерфейса для нескольких платформ, и использовать возможности по настройке для корректировки под конкретную платформу. Если и когда требуется создавать экраны полностью под определенную платформу, можно добавить их по отдельности с помощью Xamarin Native.  
   
@@ -86,15 +86,15 @@ ms.locfileid: "75919006"
   
 1. **Эмулятор Android.** В зависимости от того, какая версия Windows используется, рекомендуется либо эмулятор Microsoft Visual Studio для Android или Xamarin Player, которые обеспечивают высокую производительность и поддерживает широкий набор возможностей устройства:  
   
-    - **Компьютеры с Windows 8+.** Настоятельно рекомендуется использовать эмулятор Microsoft [Visual Studio для Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), который устанавливается вместе с Visual Studio.  Видео об [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 мин. 55 сек.) содержит еще один обзор и демонстрацию.  
+    - **Компьютеры с Windows 8+.** Настоятельно рекомендуется использовать эмулятор Microsoft [Visual Studio для Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), который устанавливается вместе с Visual Studio.  Видео о [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5m55s) предоставляет обзор и демонстрацию.  
   
     - **Windows 7 и более ранние версии или Windows на Mac OS X**. Используйте [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
-2. **Симулятор iOS Apple.** Дополнительные сведения см. в статье [Начало работы с симулятором iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **Имитатор iOS Apple.** Дополнительные сведения см. в статье [Начало работы с симулятором iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3. **Эмулятор Microsoft Windows Phone.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3. **Эмулятор Windows Phone Майкрософт.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-## <a name="components"></a> Deeper Dive: Xamarin Components  
- *10 минут*  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> Углубленное углубление: компоненты Xamarin  
+ *10 минут.*  
   
- Многие расширенные возможности доступны для приложений Xamarin через компоненты Xamarin. Полный каталог доступен для скачивания на сайте [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) и включает в себя компоненты для дополнительных элементов управления пользовательского интерфейса, проверки подлинности, разнообразные облачные службы, например Microsoft Azure, и многое другое.
+ Многие расширенные возможности доступны для приложений Xamarin через компоненты Xamarin. Полный каталог, доступный для загрузки [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) , включает компоненты для дополнительных элементов управления пользовательского интерфейса, проверки подлинности, различные облачные службы, такие как Microsoft Azure и многое другое.

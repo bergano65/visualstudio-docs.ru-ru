@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016255"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Как пометить элементы управления как защищенные
   Для обеспечения безопасности SharePoint различает веб-элементы управления, защищенные от внедрения скриптов и веб-элементов управления, которые не являются. Защищенные элементы управления или бездоверенные *элементы управления*могут быть доступны ненадежным пользователям. Элементы управления можно пометить как защищенные в свойстве элементов безопасного управления элемента проекта SharePoint или в **конструкторе пакетов** при добавлении сборки в пакет. Дополнительные сведения см. в разделе
 
-- [Параметры файлаweb.config изменить](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) и [зарегистрировать сборку веб-части в качестве безопасного элемента управления](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
+- [ Параметры файлаweb.config изменить](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) и [зарегистрировать сборку веб-части в качестве безопасного элемента управления](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
 > Эти процедуры предназначены для наглядных целей. Пометьте элементы управления безопасными только в том случае, если вы уверены, что они безопасны.

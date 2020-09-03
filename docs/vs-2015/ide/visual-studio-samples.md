@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0662506ab9ea19a033e6af2a26b495725fe5b838
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918101"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio Samples
+# <a name="visual-studio-samples"></a>Примеры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Примеры Visual Studio можно найти на веб-сайте [Галерея кода MSDN](https://code.msdn.microsoft.com/) .
@@ -28,18 +28,18 @@ ms.locfileid: "75918101"
 ## <a name="finding-samples"></a>Поиск примеров
  Ниже описаны некоторые места для поиска примеров.
 
-|Область|Описание|
+|Область|Описание:|
 |----------|-----------------|
 |[Примеры из центра разработчиков Windows](https://code.msdn.microsoft.com/windowsapps/)|Описание разработки приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|
 |[Примеры по платформе .NET Framework](/samples/browse/?products=dotnet)|Описание различных аспектов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в C# и Visual Basic.|
-|[Примеры C#](/samples/browse/?languages=csharp)|Показывает, как использовать различные возможности C#.|
+|[Примеры на C#](/samples/browse/?languages=csharp)|Показывает, как использовать различные возможности C#.|
 |[Примеры Visual Basic](/samples/browse/?languages=vb)|Показывает, как использовать различные возможности Visual Basic.|
-|[Примеры F#](/samples/browse/?languages=fsharp)|Показывает, как использовать различные возможности F#.|
+|[Примеры F #](/samples/browse/?languages=fsharp)|Показывает, как использовать различные возможности F#.|
 |[Примеры JavaScript](/samples/browse/?languages=javascript)|Показывает, как использовать различные функции в JavaScript.|
 |[Примеры C++](/samples/browse/?languages=cpp)|Показывает, как использовать различные функции в C++.|
 |[Примеры DirectX](/samples/browse/?products=xbox)|Показывает способы использования DirectX.|
 |[Примеры разработки решений Office](/samples/browse/?products=office)|Показывает способы использования средств разработки Office в Visual Studio. |
 |[Примеры VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)|Описание способов расширения Visual Studio.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Начало работы с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

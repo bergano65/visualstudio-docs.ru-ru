@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 198497c0f609401639218a54321427e51eb682ff
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918903"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>Создание доменного языка на основе WPF
@@ -23,5 +23,5 @@ ms.locfileid: "75918903"
 
  Сведения и примеры для этой функции можно найти в [пакете SDK для визуализации и моделирования Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918248"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Переход по отношениям с помощью UML API
@@ -50,7 +50,7 @@ foreach (IRelationship relationship in
 
 ```
 
-### <a name="association"></a>Ассоциация
+### <a name="association"></a>Взаимосвязь
  Ассоциация — это отношение между двумя свойствами, каждое из которых принадлежит к классификатору.
 
 ```
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Перечисление отношений
- Все свойства модели UML, возвращающие несколько значений, соответствуют интерфейсу IEnumerable < >. Это означает, что можно использовать [выражения запросов LINQ](/dotnet/csharp/linq/index) и методы расширения, определенные в пространстве имен **System. LINQ** .
+ Все свойства модели UML, возвращающие несколько значений, соответствуют интерфейсу IEnumerable<> . Это означает, что можно использовать [выражения запросов LINQ](/dotnet/csharp/linq/index) и методы расширения, определенные в пространстве имен **System. LINQ** .
 
- Например:
+ Пример:
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Навигация по модели UML](../modeling/navigate-the-uml-model.md)

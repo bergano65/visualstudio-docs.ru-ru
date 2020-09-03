@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567010"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Пошаговое руководство. Создание первой настройки уровня документа для Word
@@ -27,7 +27,7 @@ ms.locfileid: "74567010"
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - Создание проекта документа Word.
 
@@ -41,9 +41,9 @@ ms.locfileid: "74567010"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,9 +53,9 @@ ms.locfileid: "74567010"
 
 ### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Создание нового проекта документа Word в Visual Studio
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+2. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
 ::: moniker range="vs-2017"
 3. В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем узел **Office/SharePoint**.
 
@@ -80,7 +80,7 @@ ms.locfileid: "74567010"
 
 6. Выберите **создать новый документ** в **мастере инструменты Visual Studio для проектов Office**и нажмите кнопку **ОК**.
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **фирстдокументкустомизатион** и добавляет к проекту документ **фирстдокументкустомизатион** и файл кода ThisDocument. Документ **фирстдокументкустомизатион** открывается в конструкторе автоматически.
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **фирстдокументкустомизатион** и добавляет в проект документ **фирстдокументкустомизатион** и файл кода ThisDocument. Документ **фирстдокументкустомизатион** открывается в конструкторе автоматически.
 
 ## <a name="close-and-reopen-the-document-in-the-designer"></a>Закрытие и повторное открытие документа в конструкторе
 
@@ -152,7 +152,7 @@ ms.locfileid: "74567010"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
  Теперь после создания базовой настройки на уровне документа для Word в следующих разделах можно ознакомиться с процессом разработки настроек:
 
@@ -170,10 +170,10 @@ ms.locfileid: "74567010"
 
 - Развертывание настроек уровня документа для Word: [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Решения Word](../vsto/word-solutions.md)
+- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [решения Word](../vsto/word-solutions.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)
 - [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)

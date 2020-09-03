@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015700"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Пошаговое руководство. Импорт рабочего процесса с возможностью повторного использования SharePoint Designer в Visual Studio
@@ -49,7 +50,7 @@ ms.locfileid: "86015700"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 - Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
 
@@ -185,7 +186,7 @@ ms.locfileid: "86015700"
 
      Этот список отображается сразу же при отладке проекта.
 
-11. Поскольку шаблон " **Импорт повторно используемого рабочего процесса SharePoint 2010** " не импортирует значения свойств взаимосвязей для импортированного рабочего процесса, необходимо ввести их. Для этого:
+11. Поскольку шаблон " **Импорт повторно используемого рабочего процесса SharePoint 2010** " не импортирует значения свойств взаимосвязей для импортированного рабочего процесса, необходимо ввести их. Для этого выполните следующие действия.
 
     1. В **Обозреватель решений**выберите узел **SPD_Workflow_TestFT** .
 
