@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbols Документы Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Лоадсимболс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 805db1f0b0722b75e7a047d8509ed9e63e4565c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733658"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-Загружает указанные символы отладки в памяти.
+Загружает указанные отладочные символы в память.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,28 +50,28 @@ int LoadSymbols(
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-(в) Идентификатор домена приложения.
+окне Идентификатор домена приложения.
 
 `guidModule`\
-(в) Уникальный идентификатор mondule.
+окне Уникальный идентификатор мондуле.
 
 `baseAddress`\
-(в) Базовый адрес памяти.
+окне Адрес базовой памяти.
 
 `pUnkMetadataImport`\
-(в) Объект, содержащий метаданные символов.
+окне Объект, содержащий метаданные символов.
 
 `bstrModuleName`\
-(в) Название модуля.
+окне Имя модуля.
 
 `bstrSymSearchPath`\
-(в) Путь к поиску файла символа.
+окне Путь для поиска файла символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbols(
@@ -86,5 +86,5 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

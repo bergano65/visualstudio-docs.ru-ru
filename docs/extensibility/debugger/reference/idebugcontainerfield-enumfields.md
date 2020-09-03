@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerfield::EnumFields Документы Майкрософт
+title: 'Идебугконтаинерфиелд:: EnumFields | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733223"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
-Создает регистратор для полей контейнера.
+Создает перечислитель для полей контейнера.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,27 +49,27 @@ int EnumFields(
 
 ## <a name="parameters"></a>Параметры
 `dwKindFilter`\
-(в) Сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) констант, которые выбирают поля для перечисления. Виды полей могут описывать типы хранилищ, такие как класс или примитивная, или конкретную информацию, например локальную, параметрную или "эту" указку.
+окне Сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) констант, которые выбирают поля для перечисления. Виды полей могут описывать типы хранения, например класс или примитив, или конкретные сведения, такие как локальный, параметр или указатель.
 
 `dwModifiersFilter`\
-(в) Комбинация [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) констант, которые выбирают перечисленные поля. Полевыми модификаторами могут быть разрешения доступа, такие как общедоступные или частные, или сведения о хранении, такие как виртуальные, статические или окончательные.
+окне Сочетание [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) констант, которые выбирают поля для перечисления. Модификаторы полей могут иметь разрешения на доступ, такие как открытые или закрытые данные или сведения о хранении, например виртуальные, статические или окончательные.
 
 `pszNameFilter`\
-(в) Название поля, которое будет перечислено. Это может быть нулевая величина, если все поля должны быть возвращены.
+окне Имя поля для перечисления. Это может быть значение null, если должны возвращаться все поля.
 
 `nameMatch`\
-(в) Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления, которое контролирует, является ли поиск чувствительным или нет.
+окне Значение из перечисления [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) , которое определяет, учитывается ли регистр при поиске.
 
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugFields,](../../../extensibility/debugger/reference/ienumdebugfields.md) представляющий список полей. Возвращает нулевую стоимость, если нет полей.
+заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список полей. Возвращает значение null, если нет полей.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращает S_OK или S_FALSE, если нет полей. В противном случае возвращается код ошибки.
+ В случае успеха возвращает S_OK или S_FALSE, если нет полей. В противном случае возвращается код ошибки.
 
-## <a name="remarks"></a>Примечания
- В `dwKindFilter` `dwModifiersFilter`, `pszNameFilter` и параметры могут быть объединены, например, для выбора всех публичных виртуальных методов под названием "MyMethod".
+## <a name="remarks"></a>Remarks
+ `dwKindFilter`Параметры, `dwModifiersFilter` и `pszNameFilter` можно комбинировать, например, чтобы выбрать все открытые виртуальные методы с именем MyMethod.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

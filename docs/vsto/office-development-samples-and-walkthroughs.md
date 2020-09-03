@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551679"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по разработке решений Office
@@ -36,7 +36,7 @@ ms.locfileid: "69551679"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 |Раздел|Описание|
 |-----------|-----------------|
@@ -47,11 +47,11 @@ ms.locfileid: "69551679"
 |[Пошаговые руководства по настройке пользовательского интерфейса Office](../vsto/office-ui-customization-walkthroughs.md)|Содержит список пошаговых руководств, иллюстрирующих настройку пользовательского интерфейса Microsoft Office приложений.|
 |[Пошаговые руководства по безопасности и развертыванию](../vsto/security-and-deployment-walkthroughs.md)|Содержит список пошаговых руководств, демонстрирующих, как можно настроить политику безопасности, разрешающую выполнение решения, а также способ развертывания решения.|
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Начало работы &#40;с разработкой Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Содержит ссылки на сведения о настройке, шаблонах проектов, основных сборках взаимодействия Office и новых возможностях разработки решений Office.|
+|[Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Содержит ссылки на сведения о настройке, шаблонах проектов, основных сборках взаимодействия Office и новых возможностях разработки решений Office.|
 |[Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Описание работы решений Office с управляемым кодом с точки зрения разработчика и конечного пользователя, а также сведения о работе управляемого кода с документами и приложениями Office.|
 |[Распространенные задачи в программировании Office](../vsto/common-tasks-in-office-programming.md)|Содержит часто задаваемые вопросы о программировании с помощью разработки решений Office в Visual Studio, а также ссылки на разделы, которые могут помочь в решении распространенных проблем.|
 |[Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)|Содержит ссылки на сведения о создании Microsoft Office решений и о роли сборок в решении.|

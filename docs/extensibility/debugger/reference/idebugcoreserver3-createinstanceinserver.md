@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3:CreateInstanceServer Документы Майкрософт
+title: 'IDebugCoreServer3:: Креатеинстанцеинсервер | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733017"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
-Создает экземпляр отладки двигателя на сервере.
+Создает экземпляр модуля отладки на сервере.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,23 +49,23 @@ int CreateInstanceInServer(
 
 ## <a name="parameters"></a>Параметры
 `szDll`\
-(в) Путь к dll, который реализует CLSID, указанный в параметре. `clsidObject` Если это `NULL`так, то `CoCreateInstance` функция COM называется.
+окне Путь к библиотеке DLL, реализующей CLSID, указанный в `clsidObject` параметре. Если это так `NULL` , то `CoCreateInstance` вызывается функция com.
 
 `wLangId`\
-(в) Локаль двигателя отладки. Это может быть 0, если метод [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) не должен быть вызван.
+окне Языковой стандарт модуля отладки. Это значение может быть равно 0, если метод [setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) не должен вызываться.
 
 `clsidObject`\
-(в) CLSID отладки двигателя для создания.
+окне CLSID создаваемого модуля отладки.
 
 `riid`\
-(в) Идентификатор интерфейса конкретного интерфейса для извлечения из объекта класса.
+окне Идентификатор интерфейса конкретного интерфейса, который необходимо получить из объекта класса.
 
 `ppvObject`\
-(ваут) `IUnknown` интерфейс от мгновенного объекта. Влите или маршал этот объект к желаемому интерфейсу.
+[out] `IUnknown` интерфейс из созданного объекта. Приведите или маршалирует этот объект к нужному интерфейсу.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
-- [Setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)
+- [Pragma](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

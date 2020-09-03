@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2 Документы Майкрософт
+title: IDebugComPlusSymbolProvider2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28c68398b69196f53c4f8792f3479d403cbebcda
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733243"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
-Представляет поставщика символов КОМЗ с методами, которые специфичны для управляемого кода и расширяет **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).
+Представляет поставщик символов COM+ с методами, специфичными для управляемого кода, и расширяет[Идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) **идебугкомплуссимболпровидер**.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,21 +27,21 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 ```
 
 ## <a name="methods"></a>Методы
- В дополнение к методам на интерфейсе [IDebugComPlusSymbolProvider,](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) этот интерфейс реализует следующие методы:
+ В дополнение к методам в интерфейсе [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[FunctionHasLineInfo](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo.md)|Определяет, имеет ли указанный метод информацию о строке.|
-|[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|Извлекает тип, данный его имени.|
-|[GetTypeFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypefromtoken.md)|Извлекает тип, данный его маркер.|
-|[IsAddressSequencePoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint.md)|Определяет, является ли указанный адрес отладки точкой последовательности.|
-|[LoadSymbolsFromCallback](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromcallback.md)|Загружает символы с помощью указанного метода обратного вызова.|
-|[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|Загрузите символы отладки из потока данных с учетом объекта **ICorDebugModule.**|
-|[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Загружает символы, учитывая объект **ICorDebugModule.**|
+|[FunctionHasLineInfo](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo.md)|Определяет, содержит ли указанный метод сведения о строке.|
+|[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|Извлекает тип по заданному имени.|
+|[GetTypeFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypefromtoken.md)|Извлекает тип с учетом его токена.|
+|[IsAddressSequencePoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint.md)|Определяет, является ли указанный адрес отладки точкой следования.|
+|[LoadSymbolsFromCallback](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromcallback.md)|Загружает отладочные символы с помощью указанного метода обратного вызова.|
+|[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|Загрузка отладочных символов из потока данных по заданному объекту **ICorDebugModule** .|
+|[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Загружает символы отладки по заданному объекту **ICorDebugModule** .|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

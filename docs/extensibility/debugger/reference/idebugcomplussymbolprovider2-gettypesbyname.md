@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2:GetTypesByname Документы Майкрософт
+title: 'IDebugComPlusSymbolProvider2:: Жеттипесбинаме | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733418"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-Извлекает тип, данный его имени.
+Извлекает тип по заданному имени.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,22 +44,22 @@ int GetTypesByName(
 
 ## <a name="parameters"></a>Параметры
 `pszClassName`\
-(в) Имя типа.
+окне Имя типа.
 
 `nameMatch`\
-(в) Выбирает тип соответствия, например, чувствительный к случаю. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
+окне Выбирает тип соответствия, например с учетом регистра. Значение из перечисления [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .
 
 `ppEnum`\
-(ваут) Регистратор, содержащий тип или типы с заданное имя.
+заполняет Перечислитель, содержащий тип или типы с заданным именем.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Для типов общего значения имя, которое можно найти для "Список\<Int>" или "Список\<Int, int>" будет "Список". Если типы одного и того же `ppEnum` имени отображаются в нескольких модулях, параметр будет содержать все копии. Вы должны использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) и `guidModule` различать на основе параметра.
+## <a name="remarks"></a>Remarks
+Для универсальных типов имя для поиска "List \<int> " или "List \<int,int> " будет иметь вид "List". Если типы с одинаковыми именами появляются в нескольких модулях, `ppEnum` параметр будет содержать все копии. Необходимо использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) и различать параметры в зависимости от `guidModule` параметра.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(
@@ -124,5 +124,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

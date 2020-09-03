@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2:GetTypeFromToken Документы Майкрософт
+title: 'IDebugComPlusSymbolProvider2:: Жеттипефромтокен | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2d7d809281ce1ad6e71a3c4afe666c486c53077
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733449"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-Извлекает тип, данный его маркер.
+Извлекает тип с учетом его токена.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,22 +46,22 @@ int GetTypeFromToken(
 
 ## <a name="parameters"></a>Параметры
 `appDomain`\
-(в) Идентификатор домена приложения.
+окне Идентификатор домена приложения.
 
 `guidModule`\
-(в) Уникальный идентификатор модуля.
+окне Уникальный идентификатор модуля.
 
 `tdToken`\
-(в) Токен типа, который необходимо извлечь.
+окне Токен извлекаемого типа.
 
 `ppField`\
-(ваут) Возвращает тип, представленный [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+заполняет Возвращает тип, представленный [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(
@@ -89,5 +89,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

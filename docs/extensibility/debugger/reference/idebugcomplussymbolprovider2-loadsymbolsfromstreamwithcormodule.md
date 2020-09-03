@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa1d03b2f91cea03403f4893e61ec15bf5b82952
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733399"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Загрузите символы отладки из потока данных с учетом объекта **ICorDebugModule.**
+Загрузка отладочных символов из потока данных по заданному объекту **ICorDebugModule** .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,28 +50,28 @@ int LoadSymbolsFromStreamWithCorModule(
 
 ## <a name="parameters"></a>Параметры
 `ulAppDomainID`\
-(в) Идентификатор домена приложения.
+окне Идентификатор домена приложения.
 
 `guidModule`\
-(в) Уникальный идентификатор модуля.
+окне Уникальный идентификатор модуля.
 
 `baseAddress`\
-(в) Базовый адрес памяти.
+окне Адрес базовой памяти.
 
 `pUnkMetadataImport`\
-(в) Объект, содержащий метаданные символов.
+окне Объект, содержащий метаданные символов.
 
 `pUnkCorDebugModule`\
-(в) Объект, реализуемый [интерфейсом ICorDebugModule.](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)
+окне Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `pStream`\
-(в) Поток данных, содержащий символы отладки для загрузки.
+окне Поток данных, содержащий отладочные символы для загрузки.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(
@@ -143,5 +143,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
