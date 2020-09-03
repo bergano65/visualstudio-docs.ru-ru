@@ -1,5 +1,5 @@
 ---
-title: IDebugАдрес Документы Майкрософт
+title: Идебугаддресс | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1f281ceb1f305c5774fedbf725f2e6a9481d073d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736590"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
@@ -28,10 +28,10 @@ ms.locfileid: "80736590"
 IDebugAddress : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
  Поставщик символов реализует этот интерфейс для представления адреса объекта.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
  Многие методы на многих интерфейсах возвращают этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
@@ -39,18 +39,18 @@ IDebugAddress : IUnknown
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Извлекает [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуру, описывающую объект и его местоположение.|
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Возвращает структуру [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) , описывающую объект и его расположение.|
 
-## <a name="remarks"></a>Примечания
- Поставщик символов возвращает этот интерфейс для представления объекта и его местоположения в определенной области (например, функция, метод или класс). Этот интерфейс возвращается из и передается различным методам поставщика символов и оценщика выражения. Обычно поставщик символов является единственной сущностью, которая должна интерпретировать содержимое этого интерфейса.
+## <a name="remarks"></a>Remarks
+ Поставщик символов возвращает этот интерфейс для представления объекта и его расположения в определенной области (например, функции, метода или класса). Этот интерфейс возвращается из и передается различным методам поставщика символов и средства оценки выражений. Как правило, поставщик символов является единственной сущностью, которой необходимо интерпретировать содержимое этого интерфейса.
 
 ## <a name="requirements"></a>Требования
- Заголовок: sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

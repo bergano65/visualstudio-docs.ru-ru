@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673036"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Привязка элементов управления к данным в Visual Studio
@@ -38,11 +38,11 @@ ms.locfileid: "72673036"
 
 |Источник данных|Поддержка перетаскивания в **конструкторе Windows Forms**|Поддержка перетаскивания в **конструкторе WPF**|Поддержка перетаскивания в **конструкторе Silverlight**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Набор данных|Да|Да|Нет|
+|Dataset|Да|Да|Нет|
 |EDM (модель данных с использованием сущностей)|Да<sup>1</sup>|Да|Да|
-|Классы LINQ-SQL|Нет <sup>2</sup>|Нет <sup>2</sup>|Нет <sup>2</sup>|
+|Классы LINQ-SQL|Нет<sup>2</sup>|Нет<sup>2</sup>|Нет<sup>2</sup>|
 |Службы (включая [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], службы WCF и веб-службы)|Да|Да|Да|
-|Object|Да|Да|Да|
+|Объект|Да|Да|Да|
 |SharePoint|Да|Да|Да|
 
  1. Создайте модель с помощью мастера **EDM** , а затем перетащите эти объекты в конструктор.
@@ -61,7 +61,7 @@ ms.locfileid: "72673036"
 
 |Задача|Дополнительные сведения|
 |----------|----------------------|
-|Откройте окно **Источники данных**.|Откройте область конструктора в редакторе и выберите **просмотр**  > **Источники данных**.|
+|Откройте окно **Источники данных**.|Откройте область конструктора в редакторе и выберите **Просмотр**  >  **источников данных**.|
 |Добавьте источник данных к проекту.|[Добавление новых источников данных](../data-tools/add-new-data-sources.md)|
 |Задайте элемент управления, созданный при перетаскивании элемента из окна **Источники данных** в конструктор.|[Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Измените список элементов управления, связанных с объектами в окне **Источники данных**.|[Добавление пользовательских элементов управления в окно "Источники данных"](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
@@ -70,5 +70,5 @@ ms.locfileid: "72673036"
 |Фильтрация данных, отображаемых в пользовательском интерфейсе.|[Фильтрация и сортировка данных в приложении Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Настройка субтитров для элементов управления.|[Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Visual Studio Data Tools для .net](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms привязка данных](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

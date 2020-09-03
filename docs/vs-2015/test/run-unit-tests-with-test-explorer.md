@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6c6ebe39cf0d32480aee1019aa5ea47496bd793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548139"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Выполнение модульных тестов с помощью обозревателя тестов
@@ -44,7 +44,7 @@ ms.locfileid: "85548139"
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a>Запуск тестов в обозревателе тестов
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a> Запуск тестов в обозревателе тестов
  [Запуск тестов](#BKMK_Run_tests) **&#124;** [Запуск тестов после каждой сборки](#BKMK_Run_tests_after_every_build)
 
  При построении проекта тестирования тесты появляются в Обозревателе тестов. Если Обозреватель тестов не виден, выберите **Тест** в меню Visual Studio, выберите **Windows**, затем выберите **Обозреватель тестов**.
@@ -59,7 +59,7 @@ ms.locfileid: "85548139"
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-### <a name="run-tests"></a><a name="BKMK_Run_tests"></a>Выполнение тестов
+### <a name="run-tests"></a><a name="BKMK_Run_tests"></a> Выполнение тестов
  Можно выполнить все тесты в решении, все тесты в группе или выбранный набор тестов. Выполните одно из следующих действий.
 
 - Чтобы выполнить все тесты в решении, выберите **Запустить все**.
@@ -74,23 +74,23 @@ ms.locfileid: "85548139"
 
   ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a>Выполнять тесты после каждой сборки
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a> Выполнять тесты после каждой сборки
 
 > [!WARNING]
 > Запуск модульных тестов после каждой сборки поддерживается в Visual Studio Enterprise.
 
-|Образ —|Описание|
+|Изображение|Описание|
 |-|-|
 |![Запуск после построения](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Чтобы запускать модульные тесты после каждой локальной сборки, в стандартном меню выберите **Тест**, а затем выберите **Выполнить тесты после сборки** в панели инструментов обозревателя тестов.|
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a>Просмотр результатов теста
+## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a> Просмотр результатов теста
  [Просмотр сведений о тесте](#BKMK_View_test_details) **&#124;** [Просмотр исходного кода метода теста](#BKMK_View_the_source_code_of_a_test_method)
 
  При выполнении, написании и повторном запуске тестов обозреватель тестов отображает результаты в группах **Неудачные тесты**, **Пройденные тесты**, **Пропущенные тесты** и **Не запущенные тесты**. В области сведений в нижней части окна обозревателя тестов отображается сводка тестового запуска.
 
-### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a>Просмотреть сведения о тесте
+### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a> Просмотреть сведения о тесте
  Для просмотра подробных сведений для отдельного теста выберите тест.
 
  ![Сведения о выполнении теста](../test/media/ute-testdetails.png "UTE_TestDetails")
@@ -111,12 +111,12 @@ ms.locfileid: "85548139"
 
   ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a>Просмотр исходного кода метода теста
+### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a> Просмотр исходного кода метода теста
  Чтобы отобразить исходный код метода теста в редакторе Visual Studio, выберите тест и в контекстном меню выберите команду **Открыть тест** (клавиатура: F12).
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a>Группирование и фильтрация списка тестов
+## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a> Группирование и фильтрация списка тестов
  [Группирование списка тестов](#BKMK_Grouping_the_test_list) **&#124;** [Группировка по признакам](#BKMK_Group_by_traits) **&#124;** [Поиск и фильтрация списка тестов](#BKMK_Search_and_filter_the_test_list)
 
  Обозреватель тестов позволяет группировать тесты в стандартные категории. Большинство платформ модульного тестирования, которые работают в обозревателе тестов, позволяют определить собственные категории и пары "категория — значение" для группировки тестов. Кроме того, список тестов можно фильтровать, сопоставляя строки со свойствами теста.
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a>Поиск и фильтрация списка тестов
+### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a> Поиск и фильтрация списка тестов
  Фильтры обозревателя тестов можно использовать для ограничения методов теста в проектах, которые вы просматриваете и запускаете.
 
  Когда вы вводите строку в поле поиска обозревателя тестов и нажимаете клавишу ВВОД, список тестов фильтруется для отображения только тех тестов, полные имена которых содержат эту строку.
@@ -219,7 +219,7 @@ TEST_METHOD(Method1)
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
- Например,
+ Например, примененная к объекту директива
 
 ```
 FullName:"MyClass" - FullName:"PerfTest"
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a>Создание пользовательских списков воспроизведения
+## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a> Создание пользовательских списков воспроизведения
  Вы можете создавать и сохранять список тестов, которые необходимо выполнять или просматривать как группу. Если выбрать список воспроизведения, тесты в списке отображаются в обозревателе тестов. Вы можете добавить тест в несколько списков воспроизведения, а если выбрать список воспроизведения по умолчанию **Все тесты** , будут доступны все тесты в проекте.
 
  ![Выбор списка воспроизведения](../test/media/ute-playlist.png "UTE_Playlist")
@@ -244,7 +244,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a>Отладка и анализ модульных тестов
+## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a> Отладка и анализ модульных тестов
  [Отладка модульных тестов](#BKMK_Debug_unit_tests) **&#124;** [Диагностика проблем производительности метода теста](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Анализ покрытия кода модульного теста](#BKMK_Analyzeunit_test_code_coverage)
 
 ### <a name="debug-unit-tests"></a><a name="BKMK_Debug_unit_tests"></a> Отладка модульных тестов
@@ -261,10 +261,10 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a>Диагностика проблем производительности метода теста
+### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a> Диагностика проблем производительности метода теста
  Чтобы выяснить, почему выполнение метода теста занимает слишком много времени, выберите метод в обозревателе тестов, а затем выберите в контекстном меню пункт "Профиль". См. [Обозреватель производительности](../profiling/performance-explorer.md).
 
-### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a>Анализ покрытия кода модульного теста
+### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a> Анализ покрытия кода модульного теста
 
 > [!NOTE]
 > Анализ покрытия кода модульного теста доступен только в Visual Studio Enterprise.
@@ -287,10 +287,10 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)
 
-## <a name="external-resources"></a><a name="BKMK_External_resources"></a>Внешние ресурсы
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> Внешние ресурсы
 
-### <a name="guidance"></a><a name="BKMK_Guidance"></a>Руководство по
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> Руководство по
  [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Модульное тестирование кода](../test/unit-test-your-code.md) [Выполнение модульного теста как 64-разрядного процесса](../test/run-a-unit-test-as-a-64-bit-process.md)

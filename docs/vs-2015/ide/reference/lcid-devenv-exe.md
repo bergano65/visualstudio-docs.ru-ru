@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672699"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -38,7 +38,7 @@ devenv {/LCID|/l} LocaleID
 ## <a name="arguments"></a>Аргументы
  `LocaleID` Обязательный. Код языка (LCID) для заданного вами языка.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Загружает интегрированную среду разработки и устанавливает естественный язык по умолчанию для среды. Это изменение сохраняется между сеансами и отражается в области **Язык интерфейса** параметров **Среда** диалогового окна **Параметры** в интегрированной среде разработки.
 
  Если указанный язык недоступен в системе пользователя, параметр /LCID игнорируется.
@@ -64,5 +64,5 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Параметры [командной строки](../../ide/reference/devenv-command-line-switches.md) для [региональных параметров, среда, диалоговое окно "Параметры"](../../ide/reference/international-settings-environment-options-dialog-box.md) [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)

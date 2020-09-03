@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad4b6a06a2a145daa85d780f4d23dfac9bebf7a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205104"
 ---
-# <a name="pdbtype"></a>PDB_TYPE
+# <a name="pdb_type"></a>PDB_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Эта структура указывает сведения о типом поля, взятое из PDB-символов.  
+Эта структура задает сведения о типе поля, взятого из символа PDB.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,26 +43,26 @@ public struct PDB_TYPE {
 ```  
   
 #### <a name="parameters"></a>Параметры  
- ulAppDomainID  
- Идентификатор приложения, от которого поступило символа. Это используется для уникальной идентификации экземпляра приложения.  
+ улаппдомаинид  
+ Идентификатор приложения, от которого получен символ. Используется для уникальной идентификации экземпляра приложения.  
   
- guidModule  
+ гуидмодуле  
  Идентификатор GUID модуля, содержащего это поле.  
   
- symid  
- Идентификатор символ, соответствующий этому полю.  
+ симид  
+ ИДЕНТИФИКАТОР символа, соответствующего этому полю.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры, когда `dwKind` поле `TYPE_INFO` структура присваивается `TYPE_KIND_PDB` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).  
+## <a name="remarks"></a>Remarks  
+ Эта структура отображается как часть объединения в структуре [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) , если `dwKind` поле `TYPE_INFO` структуры имеет `TYPE_KIND_PDB` значение (Value из перечисления [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

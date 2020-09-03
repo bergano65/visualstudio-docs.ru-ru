@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType Документы Майкрософт
+title: 'Идебугаррайфиелд:: Жетелементтипе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3870f28ffb62239d0a092093d28c83d25e92bd31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736330"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
-Получает тип элемента в массиве.
+Возвращает тип элемента в массиве.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetElementType(
 
 ## <a name="parameters"></a>Параметры
 `ppType`\
-(ваут) Возвращает объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий тип элемента.
+заполняет Возвращает объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , описывающий тип элемента.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Объект [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) предполагает, что все элементы массива имеют один и тот же тип.
+## <a name="remarks"></a>Remarks
+ Объект [идебугаррайфиелд](../../../extensibility/debugger/reference/idebugarrayfield.md) предполагает, что все элементы массива имеют одинаковый тип.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
