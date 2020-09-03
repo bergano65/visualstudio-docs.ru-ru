@@ -1,5 +1,5 @@
 ---
-title: IDebugClassfield::GetEnclosingClass Документы Майкрософт
+title: 'Идебугклассфиелд:: Жетенклосингкласс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734391"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Получает класс, который примыкает к этому классу.
+Возвращает класс, который заключает в себя этот класс.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>Параметры
 `ppClassField`\
-(ваут) Возвращает объект [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий класс прилагающего. Возвращает нулевую стоимость, если нет прилагательного класса.
+заполняет Возвращает объект [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md) , представляющий включающий класс. Возвращает значение null, если не существует включающего класса.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Если класс, представленный этим объектом [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) является `ppClassField` вложенным `IDebugClassField` классом, то параметр возвращает объект, представляющий класс прилагающего. Например, с таким определением класса:
+## <a name="remarks"></a>Remarks
+Если класс, представленный этим объектом [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md) , является вложенным классом, то `ppClassField` параметр возвращает `IDebugClassField` объект, представляющий включающий класс. Например, с учетом этого определения класса:
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-Вызов `GetEnclosingClass` метода `IDebugClassField` на объект, `NestedClass` представляющий `IDebugClassField` класс, возвращает `RootClass`объект, представляющий класс.
+Вызов `GetEnclosingClass` метода для объекта, `IDebugClassField` представляющего `NestedClass` класс, возвращает объект, `IDebugClassField` представляющий класс `RootClass` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

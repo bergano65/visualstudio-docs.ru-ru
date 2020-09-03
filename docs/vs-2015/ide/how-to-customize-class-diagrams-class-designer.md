@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff78bea6759359d3703f5fed6157f051c89befb0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668006"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Практическое руководство. Настройка схем классов (конструктор классов)
@@ -53,7 +53,7 @@ ms.locfileid: "72668006"
 
 - [Удаление фигуры типа и ее кода](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)
 
-## <a name="ZoomInOut"></a> Увеличение или уменьшение масштаба отображения схемы классов
+## <a name="zoom-in-and-out-of-the-class-diagram"></a><a name="ZoomInOut"></a> Увеличить и уменьшить диаграмму классов
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72668006"
     > [!NOTE]
     > Изменение уровня масштабирования не оказывает влияния на масштаб печати схемы классов.
 
-## <a name="CustomizeGroupingSorting"></a> Настройка способа группировки и сортировки членов типа
+## <a name="customize-grouping-and-sorting-of-type-members"></a><a name="CustomizeGroupingSorting"></a> Настройка группирования и сортировки членов типа
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -80,7 +80,7 @@ ms.locfileid: "72668006"
 
     3. **Сортировать по алфавиту** отображает элементы, из которых состоит сущность, в виде единого упорядоченного в алфавитном порядке списка. Список сортируется в порядке возрастания.
 
-## <a name="HideCompartments"></a> Скрытие секций в типе
+## <a name="hide-compartments-on-a-type"></a><a name="HideCompartments"></a> Скрытие секций в типе
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72668006"
 
      Выбранная секция исчезнет из контейнера типа.
 
-## <a name="HideMembers"></a> Скрытие отдельных членов в типе
+## <a name="hide-individual-members-on-a-type"></a><a name="HideMembers"></a> Скрытие отдельных членов типа
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -100,7 +100,7 @@ ms.locfileid: "72668006"
 
      Выбранный член исчезнет из контейнера типа.
 
-## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Отображение скрытых секций и членов в типе
+## <a name="show-hidden-compartments-and-members-on-a-type"></a><a name="DisplayHiddenCompartmentsAndMemberrs"></a> Отображение скрытых секций и элементов в типе
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -110,7 +110,7 @@ ms.locfileid: "72668006"
 
      Все скрытые секции и члены появятся в контейнере типа.
 
-## <a name="HideAssociationAndInheritance"></a> Скрытие отношений
+## <a name="hide-relationships"></a><a name="HideAssociationAndInheritance"></a> Скрыть связи
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -122,7 +122,7 @@ ms.locfileid: "72668006"
 
      Все скрытые секции и члены появятся в контейнере типа.
 
-## <a name="DisplayAssociationAndInheritance"></a> Отображение скрытых отношений
+## <a name="show-hidden-relationships"></a><a name="DisplayAssociationAndInheritance"></a> Показывать скрытые связи
 
 1. Откройте и выберите файл схемы классов в конструкторе классов.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72668006"
 
    Щелкните **Показать все члены** для линий связи либо **Показать базовый класс** или **Показать производные классы** для линий наследования.
 
-## <a name="RemoveCodeAndShape"></a> Удаление фигуры со схемы классов
+## <a name="remove-a-shape-from-a-class-diagram"></a><a name="RemoveCodeAndShape"></a> Удаление фигуры из диаграммы классов
  Фигуру типа можно удалить из схемы классов, не затронув соответствующий код типа. Удаление фигур типов из схемы классов влияет только на данную схему. Базовый код, определяющий тип и другие схемы, отображающие тип, не затрагиваются.
 
 1. На схеме классов выберите фигуру типа, которую необходимо удалить из схемы.
@@ -139,7 +139,7 @@ ms.locfileid: "72668006"
 
      Фигура типа и все линии связи или наследования, соединенные с фигурой, больше не будут отображаться на схеме.
 
-## <a name="DeleteTypeShapeAndCode"></a> Удаление фигуры типа и ее кода
+## <a name="delete-a-type-shape-and-its-underlying-code"></a><a name="DeleteTypeShapeAndCode"></a> Удаление фигуры типа и ее базового кода
 
 1. Щелкните правой кнопкой мыши на рабочей области конструирования.
 
@@ -147,5 +147,5 @@ ms.locfileid: "72668006"
 
      Фигура удаляется из схемы, а ее базовый код удаляется из проекта.
 
-## <a name="see-also"></a>См. также раздел
- [Работа с схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [как перейти между записью члена и нотацией ассоциации (конструктор классов)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [как просмотреть существующие типы (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md) [Просмотр типов и связей (конструктор классов) ](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>См. также:
+ [Работа с схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [как перейти между записью члена и нотацией ассоциации (конструктор классов)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [как просмотреть существующие типы (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md) [Просмотр типов и связей (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)

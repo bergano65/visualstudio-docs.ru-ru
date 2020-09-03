@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumfield:GetStringFromValue Документы Майкрософт
+title: 'Идебуженумфиелд:: Жетстрингфромвалуе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730286"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Этот метод получает название постоянной перечисления, учитывая его ценность.
+Этот метод получает имя константы перечисления, учитывая его значение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>Параметры
 `value`\
-(в) Значение, для которого, чтобы получить название постоянной перечисления.
+окне Значение, для которого необходимо получить имя константы перечисления.
 
 `pbstrValue`\
-(ваут) Возвращает название постоянной перечисления.
+заполняет Возвращает имя константы перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращается, `S_FALSE` если значение не имеет связанного имени, или возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает, `S_FALSE` Если значение не имеет связанного имени, или возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если с одним значением связано несколько имен, будет возвращено имя, определенное в перечислении.
+## <a name="remarks"></a>Remarks
+ При наличии нескольких имен, связанных с одним и тем же значением, будет возвращено первое имя, определенное в перечислении.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

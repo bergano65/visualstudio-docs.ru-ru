@@ -52,7 +52,7 @@
       items:
         - name: Отладка облачной службы или виртуальной машины Azure
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Узнайте о различных способах отладки облачной службы Azure.
+        - name: Разные способы отладки облачной службы Azure
           href: vs-azure-tools-debugging-cloud-services-overview.md
         - name: Настройка системы диагностики для облачных служб и виртуальных машин Azure
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
@@ -80,7 +80,7 @@
           href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
         - name: Управление конфигурациями и профилями службы
           href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: Настройка именованных учетных данных для проверки подлинности
+        - name: Настройка учетных данных для проверки подлинности
           href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: Работа со Службой хранилища Azure
       items:
@@ -96,11 +96,11 @@
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Заметки о выпуске Обозревателя службы хранилища Microsoft Azure
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Специальные возможности Обозревателя службы хранилища
+        - name: Доступность Обозревателя службы хранилища
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:
-    - name: Обзор ресурсов хранилища с помощью обозревателя сервера и управление ими
+    - name: Просмотр и администрирование ресурсов хранилища с помощью обозревателя сервера
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: 'Управление ресурсами, связанными с учетными записями Azure, в Cloud Explorer'
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md

@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2:SetResponse Документы Майкрософт
+title: 'IDebugMessageEvent2:: Сетреспонсе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727389"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-Устанавливает ответ, если таковое имеется, из окна сообщений.
+Задает ответ, если он есть, из окна сообщения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,11 +42,11 @@ int SetResponse( 
 
 ## <a name="parameters"></a>Параметры
 `dwResponse`\
-(в) Определяет ответ, используя конвенции функции Win32. `MessageBox` Подробнее о функции [AfxMessageBox.](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
+окне Задает ответ с использованием соглашений `MessageBox` функции Win32. Дополнительные сведения см. в описании функции [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801871"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание Windows Forms элемента управления панели элементов
 
 Шаблон элемента элемента управления панели элементов Windows Forms, включенный в средства расширения Visual Studio (пакет VS SDK), позволяет создать элемент управления **панели элементов** , который автоматически добавляется при установке расширения. В этом пошаговом руководстве показано, как использовать шаблон для создания простого элемента управления счетчика, который можно распространить другим пользователям.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -58,9 +58,9 @@ ms.locfileid: "88801871"
 
     |Control|Property (Свойство)|Значение|
     |-------------|--------------|-----------|
-    |`Label1`|**Текст**|""|
+    |`Label1`|**Text**|""|
     |`Button1`|**Имя**|бтнресет|
-    |`Button1`|**Текст**|Reset|
+    |`Button1`|**Text**|Reset|
 
 ### <a name="code-the-user-control"></a>Код пользовательского элемента управления
 

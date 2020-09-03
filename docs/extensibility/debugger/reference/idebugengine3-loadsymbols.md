@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::LoadSymbols Документы Майкрософт
+title: 'IDebugEngine3:: Лоадсимболс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7963d39601a0d3a90ca2daa7632902d7aa506de8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730812"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
-Загружает (по мере необходимости) символы для всех модулей, отлаженных этим двигателем отладки.
+Загружает (при необходимости) символы для всех модулей, отлаживаемых с помощью этого модуля отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,11 +39,11 @@ int LoadSymbols();
  Нет.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Это нагрузок отладки символов для всех модулей, упомянутых этой отладки двигателя. Символы загружаются только в том случае, если они еще не загружены. Символы ищутся на путях, установленных вызовом [на SetSymbolPath.](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)
+## <a name="remarks"></a>Remarks
+ При этом загружаются отладочные символы для всех модулей, на которые ссылается этот модуль отладки. Символы загружаются, только если они еще не загружены. Поиск символов выполняется по путям, заданным путем вызова [сетсимболпас](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

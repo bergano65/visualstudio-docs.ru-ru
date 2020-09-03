@@ -1,5 +1,5 @@
 ---
-title: 'IDebugComPlusSymbolProvider:: IsHiddenCode Документы Майкрософт'
+title: 'Идебугкомплуссимболпровидер:: Ишидденкоде | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1ede1cbd8c2a69d45a8c653aa97d0bfb618f821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733666"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-Определяет, скрыт ли код по указанному адресу отладчика.
+Определяет, скрыт ли код в указанном адресе отладчика.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,13 +39,13 @@ int IsHiddenCode(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Адрес отладки, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+окне Адрес отладки, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
-Если код скрыт, `S_OK`возвращается ; в противном случае, возвращается `S_FALSE`.
+Если код скрыт, возвращает `S_OK` ; в противном случае возвращает `S_FALSE` .
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsHiddenCode(
@@ -92,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

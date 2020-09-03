@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10cc00fb3067727f2f7ec58182e7b5cf5215e91b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667092"
 ---
 # <a name="visual-studio-notifications"></a>Уведомления Visual Studio
@@ -31,7 +31,7 @@ ms.locfileid: "72667092"
 
    Вы можете настроить пропуск уведомлений, тогда они не будут отображаться в Visual Studio. Сбросить список игнорируемых уведомлений можно в диалоговом окне ["Уведомления", "Среда", "Параметры"](../ide/reference/notifications-environment-options-dialog-box.md).
 
-   ![Значок уведомления Visual Studio](../ide/media/vs2015-notificationicon.png "|::ref1::|")
+   ![Значок уведомления Visual Studio](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

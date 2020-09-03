@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668660"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Как отлаживать рабочие процессы, основанные на ASP.NET (для прежних версий)
@@ -28,7 +28,7 @@ ms.locfileid: "72668660"
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Отладка рабочих процессов, основанных на ASP.NET
 
-1. Включите отладку для приложения ASP.NET, задав **debug = true** в файле Web. config.
+1. Включите отладку для приложения ASP.NET, задав **debug = true** в файле web.config.
 
 2. Установите библиотеку рабочего процесса как автозагружаемый проект, установите в рабочем процессе точки останова.
 
@@ -52,5 +52,5 @@ ms.locfileid: "72668660"
 
 10. Откройте веб-страницу по умолчанию в браузере и запустите рабочий процесс.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Вызов отладчика Visual Studio для Windows Workflow Foundation (устаревшая)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [как установить точки останова в рабочих процессах (устаревший)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [Отладка устаревших рабочих процессов](../workflow-designer/debugging-legacy-workflows.md)

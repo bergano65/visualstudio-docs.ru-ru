@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetArrayTypeFromАдрес (ru) Документы Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Жетаррайтипефромаддресс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 048a086bae946b5ce730bdfe2c343b6cde1b29e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733988"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Извлекает информацию о типе указанного массива с учетом его отладки.
+Извлекает сведения о типе указанного массива по его адресу отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,22 +46,22 @@ int GetArrayTypeFromAddress(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Адрес отладки, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+окне Адрес отладки, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pSig`\
-(в) Массив для изучения.
+окне Массив для проверки.
 
 `dwSigLength`\
-(в) Длина байтов `pSig` массива.
+окне Длина массива в байтах `pSig` .
 
 `ppField`\
-(ваут) Возвращает тип массива, представленный интерфейсом [IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
+заполняет Возвращает тип массива, представленный интерфейсом [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugSymbolProvider,** который предоставляет интерфейс [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(
@@ -96,5 +96,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

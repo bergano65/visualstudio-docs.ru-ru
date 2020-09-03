@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorОшибкаРазрешение2:GetBreakpointType Документы Майкрософт
+title: 'IDebugErrorBreakpointResolution2:: Жетбреакпоинттипе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f933baed55216054ecfec3b3b4c29f15da652ba4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730050"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
-Получает тип точки разрыва.
+Возвращает тип точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>Параметры
 `pBPType`\
-(ваут) Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, описывающий тип точки разрыва.
+заполняет Возвращает значение из перечисления [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) , описывающего тип точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Этот метод возвращает тип точки разрыва, который не удалось связать, тем самым требуя события точки разрыва ошибки.
+## <a name="remarks"></a>Remarks
+Этот метод возвращает тип точки останова, для которой не удалось выполнить привязку, поэтому требуется событие точки останова.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CDebugErrorBreakpointResolution` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+В следующем примере показано, как реализовать этот метод для простого `CDebugErrorBreakpointResolution` объекта, предоставляющего интерфейс [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) .
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -83,6 +83,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281790"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
@@ -137,14 +137,14 @@ ADO.NET предоставляет простые методы для работ
 
 3. Задайте следующие свойства.
 
-    |Control|Свойство.|Параметр|
+    |Control|Property (Свойство)|Параметр|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**ScrollBars**|**Vertical**|
-    |`Button1`|**имя**;|`ReadXmlButton`|
-    ||**Текстовые**|`Read XML`|
-    |`Button2`|**имя**;|`ShowSchemaButton`|
-    ||**Текстовые**|`Show Schema`|
+    ||**ScrollBars**|**По вертикали**|
+    |`Button1`|**Имя**|`ReadXmlButton`|
+    ||**Text**|`Read XML`|
+    |`Button2`|**Имя**|`ShowSchemaButton`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Создание набора данных, который получает XML-данные
 

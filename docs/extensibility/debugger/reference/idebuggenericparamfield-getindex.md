@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetIndex Документы Майкрософт
+title: 'Идебугженерикпарамфиелд:: @ index | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6b31acd57685058795186fcecb73164218d5ad15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727982"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-Извлекает индекс этого общего параметра.
+Получает индекс этого универсального параметра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,16 +39,16 @@ int GetIndex(
 
 ## <a name="parameters"></a>Параметры
 `pIndex`\
-(ваут) Значение индекса этого общего параметра.
+заполняет Значение индекса этого универсального параметра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Например, для словаря (K,V), K является индексом 0, V - индексом 1.
+## <a name="remarks"></a>Remarks
+Например, для Dictionary (K, V), K — индекс 0, V — индекс 1.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugGenericParamFieldType,** который предоставляет интерфейс [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугженерикпарамфиелдтипе** , предоставляющего интерфейс [идебугженерикпарамфиелд](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)
@@ -68,5 +68,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetConstraints Документы Майкрософт
+title: 'Идебугженерикпарамфиелд:: наложенные ограничения | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728009"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-Извлекает ограничения, связанные с этим общим параметром.
+Извлекает ограничения, связанные с этим универсальным параметром.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>Параметры
 `cConstraints`\
-(в) Количество ограничений.
+окне Число ограничений.
 
 `ppConstraints`\
-(ваут) Возвращает массив, содержащий ограничения, связанные с этим полем.
+заполняет Возвращает массив, содержащий ограничения, связанные с этим полем.
 
 `pcConstraints`\
-(в, вне) Количество ограничений `ppConstraints` в массиве.
+[вход, выход] Число ограничений в `ppConstraints` массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugGenericParamFieldType,** который предоставляет интерфейс [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугженерикпарамфиелдтипе** , предоставляющего интерфейс [идебугженерикпарамфиелд](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(
@@ -151,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f358d5b95349fe99b2a2e01df5158d2c0aa10a11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668050"
 ---
 # <a name="how-to-create-project-templates"></a>Практическое руководство. Создание шаблонов проектов
@@ -40,7 +40,7 @@ ms.locfileid: "72668050"
 
 3. По мере необходимости отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения о замене параметров см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
-4. В меню **Файл** выберите команду **Экспорт шаблона**. Откроется мастер **экспорта шаблонов**.
+4. В меню **Файл** выберите команду **Экспорт шаблона**. Откроется мастер **экспорта шаблонов** .
 
 5. Щелкните **Шаблон проекта**.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72668050"
 
 10. Нажмите кнопку **Готово**. Проект будет экспортирован в ZIP-файл и помещен в указанное расположение вывода, а также (если установлен соответствующий флажок) импортирован в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-     Если у вас установлен [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], можно поместить готовый шаблон в оболочку — VSIX-файл для развертывания с помощью шаблона **Проект VSIX**. Дополнительные сведения см. в разделе [Приступая к работе с использованием шаблона проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
+     Если у вас установлен [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], можно поместить готовый шаблон в оболочку — VSIX-файл для развертывания с помощью шаблона **Проект VSIX**. Дополнительные сведения см. в разделе [Начало работы с помощью шаблона проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)

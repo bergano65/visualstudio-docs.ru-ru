@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668063"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
@@ -81,7 +81,7 @@ ms.locfileid: "72668063"
 
 1. Создайте проекты для включения в многопроектный шаблон.
 
-2. Создайте VSTEMPLATE-файлы для каждого проекта. Дополнительные сведения см. в статье [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md).
+2. Создайте VSTEMPLATE-файлы для каждого проекта. Дополнительные сведения см. [в разделе инструкции. Создание шаблонов проектов](../ide/how-to-create-project-templates.md).
 
 3. Создайте корневой VSTEMPLATE-файл, который будет содержать метаданные для многопроектного шаблона. Дополнительные сведения см. в первом примере в следующем разделе.
 
@@ -149,5 +149,5 @@ ms.locfileid: "72668063"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также раздел
- [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [. Справочник по схеме шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md) [Visual Studio шаблон Справочник по схеме шаблона](../extensibility/visual-studio-template-schema-reference.md) для [элемента SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ Элемент ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+## <a name="see-also"></a>См. также:
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [. Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md) создание справочника по схеме шаблонов [проектов](../ide/how-to-create-project-templates.md) [Visual Studio ссылка на](../extensibility/visual-studio-template-schema-reference.md) [Элемент SolutionFolder (шаблоны Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) элемент [ProjectTemplateLink (шаблоны Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

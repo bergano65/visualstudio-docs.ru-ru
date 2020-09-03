@@ -1,5 +1,5 @@
 ---
-title: IDebugIDECallback::DisplayMessage Документы Майкрософт
+title: Идебугидекаллбакк::D Исплаймессаже | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7073cc3d142d0faabe145b775780c177fbf0d732
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727853"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-Отправляет указанную строку сообщения в выходное окно отладчика.
+Отправляет указанную строку сообщения в окно вывода отладчика.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,10 +39,10 @@ int DisplayMessage (
 
 ## <a name="parameters"></a>Параметры
 `szMessage`\
-(в) Строка сообщения для отображения в выходном окне отладчика.
+окне Строка сообщения, отображаемая в окне вывода отладчика.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

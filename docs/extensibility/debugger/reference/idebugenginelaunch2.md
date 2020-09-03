@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2 Документы Майкрософт
+title: IDebugEngineLaunch2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee77cbd680df2c851d53aac298605023227fa6f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730492"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
-Используется движком отладки (DE) для запуска и прекращения программ.
+Используется ядром отладки (DE) для запуска и завершения программ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,28 +28,28 @@ ms.locfileid: "80730492"
 IDebugEngineLaunch2 : IDebugEngine2
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован пользовательским DE, если он имеет особые требования для запуска процесса, который не может быть полностью обработан пользовательским портом. Обычно это происходит в случае, когда DE является частью устного переводчика, а процесс отладки — это сценарий: сначала необходимо запустить переводчика, а затем загрузить и запустить скрипт. Порт может запустить переводчика, но скрипт может потребовать специальной обработки (где DE имеет роль). Этот интерфейс реализован только при наличии уникальных требований к запуску программы, с помощью которого пользовательский порт не может справиться.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется с помощью пользовательского интерфейса DE, если он имеет особые требования для запуска процесса, который не может быть полностью обработан пользовательским портом. Обычно это происходит, когда DE является частью интерпретатора, а отлаживаемый процесс является сценарием: сначала необходимо запустить интерпретатор, а затем загрузить и запустить сценарий. Порт может запустить интерпретатор, но сценарий может потребовать специальной обработки (где у DE есть роль). Этот интерфейс реализуется только в том случае, если существуют уникальные требования для запуска программы, которая не может быть обработана пользовательским портом.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Этот интерфейс вызывается менеджером отладки сеанса (SDM), если SDM может получить этот интерфейс из интерфейса [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (с помощью queryInterface). Если этот интерфейс может быть получен, SDM знает, что DE имеет особые требования и призывает этот интерфейс для запуска программы вместо того, чтобы порт запустить его.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот интерфейс вызывается диспетчером отладки сеанса (SDM), если SDM может получить этот интерфейс из интерфейса [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (с помощью QueryInterface). Если этот интерфейс можно получить, SDM знает, что у DE есть особые требования, и вызывает этот интерфейс для запуска программы, вместо того чтобы запускать его через порт.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugEngineLaunch2`.
+ В следующей таблице показаны методы `IDebugEngineLaunch2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Запускает процесс с помощью DE.|
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Запускает процесс с помощью средства DE.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Возобновляет выполнение процесса.|
-|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Определяет, может ли процесс быть прекращен.|
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Прекращает процесс.|
+|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Определяет, можно ли завершить процесс.|
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Завершает процесс.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Msdbg.h
+ Заголовок: Мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

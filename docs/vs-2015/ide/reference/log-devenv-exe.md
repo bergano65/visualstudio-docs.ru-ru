@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666845"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -35,10 +35,10 @@ ms.locfileid: "72666845"
 Devenv /log Path\NameOfLogFile
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Этот ключ должен находиться в конце командной строки после всех других параметров.
 
  Журнал записывается для всех экземпляров Visual Studio, которые были активированы с ключом /log. Для экземпляров Visual Studio, которые были активированы без данного ключа, журнал не записывается.
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки для команды devenv](../../ide/reference/devenv-command-line-switches.md)

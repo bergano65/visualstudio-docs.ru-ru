@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEventEvent2::GetExceptionОписание Документы Майкрософт
+title: 'IDebugExceptionEvent2:: Жетексцептиондескриптион | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7a6ea64540eaeef5ec258bc54b118b3a0600584c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729846"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-Получает отображаемое описание исключения.
+Возвращает отображаемое описание исключения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetExceptionDescription( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrDescription`\
-(ваут) Возвращает отображаемое описание исключения.
+заполняет Возвращает отображаемое описание исключения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Строка, возвращенная из этого метода, обычно является именем исключения и отображается в окне **вывода** при возникновении исключения.
+## <a name="remarks"></a>Remarks
+ Строка, возвращаемая этим методом, обычно является именем исключения и отображается в окне **вывода** при возникновении исключения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

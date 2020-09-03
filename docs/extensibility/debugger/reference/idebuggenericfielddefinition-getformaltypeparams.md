@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldОпределение::GetFormalTypeParams Документы Майкрософт
+title: 'Идебугженерикфиелддефинитион:: Жетформалтипепарамс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728242"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
-Извлекает параметры типа с учетом количества параметров.
+Получает параметры типа с учетом количества параметров.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int GetFormalTypeParams(
 
 ## <a name="parameters"></a>Параметры
 `cParams`\
-(в) Количество параметров.
+окне Число параметров.
 
 `ppParams`\
-(ваут) Массив параметров типа.
+заполняет Массив параметров типа.
 
 `pcParams`\
-(в, вне) Количество параметров в `ppParams` массиве.
+[вход, выход] Число параметров в `ppParams` массиве.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Верните параметры типа в порядке слева направо. Например, словарь\<K,V> возвращает IDebugFormalGenericПараметры (K,V).
+## <a name="remarks"></a>Remarks
+ Возврат параметров типа в порядке слева направо. Например, Dictionary \<K,V> возвращает идебугформалженерикпараметерс {K, V}.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

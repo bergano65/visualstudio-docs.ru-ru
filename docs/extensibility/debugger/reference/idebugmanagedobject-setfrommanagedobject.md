@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject Документы Майкрософт
+title: 'Идебугманажедобжект:: Сетфромманажедобжект | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4056befa0b5b053d480983901b24feb6b25cf538
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727696"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Устанавливает значение экземпляра объекта класса значений из экземпляра класса значений, предусмотренного в качестве параметра.
+Задает значение экземпляра объекта класса значения из экземпляра класса значений, указанного в качестве параметра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int SetFromManagedObject(
 
 ## <a name="parameters"></a>Параметры
 `pManagedObject`\
-(в) Интерфейс, представляющий управляемый объект, содержащий новое значение.
+окне Интерфейс, представляющий управляемый объект, содержащий новое значение.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод используется для изменения управляемого объекта в представлении объекта [IDebugManagedObject.](../../../extensibility/debugger/reference/idebugmanagedobject.md)
+## <a name="remarks"></a>Remarks
+ Этот метод используется для изменения управляемого объекта, представленного объектом [идебугманажедобжект](../../../extensibility/debugger/reference/idebugmanagedobject.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)
