@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType | Документация Майкрософт
+title: 'Идебугтипефиелдбуилдер:: Креатепоинтертотипе | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af549b9b5bb7c70ab8ae9e685c9335836ae757ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202290"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Создает указатель к заданному типу.  
+Создает указатель на указанный тип.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,13 +41,13 @@ int CreatePointerToType(
   
 #### <a name="parameters"></a>Параметры  
  `pTypeField`  
- [in] Тип, чтобы они указывали. Он представлен [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.  
+ окне Введите текст, указывающий на. Он представлен интерфейсом [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .  
   
  `pPtrToTypeField`  
- [out] Возвращает указателя, представленного новый **IDebugField** объекта.  
+ заполняет Возвращает указатель, представленный новым объектом **идебугфиелд** .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

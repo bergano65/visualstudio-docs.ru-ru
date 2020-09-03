@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905237"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Как зарегистрировать библиотеку с помощью диспетчера объектов
@@ -164,7 +164,7 @@ ms.locfileid: "85905237"
 
     ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Расширяемость языковой службы прежних версий](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [Поддержка средств обзора символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Пошаговое руководство. предоставление списка символов, предоставленных библиотекой, диспетчеру объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

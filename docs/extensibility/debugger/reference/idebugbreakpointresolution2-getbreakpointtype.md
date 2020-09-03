@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2:GetBreakpointType Документы Майкрософт
+title: 'IDebugBreakpointResolution2:: Жетбреакпоинттипе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734809"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-Получает тип точки разрыва, представленной в этой резолюции.
+Возвращает тип точки останова, представленной этим разрешением.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>Параметры
 `pBPType`\
-(ваут) Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, которое определяет тип этой точки разрыва.
+заполняет Возвращает значение из перечисления [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) , которое указывает тип этой точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки. Возвраты E_FAIL, если `bpResLocation` поле в связанной структуре [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) недействительно.
+В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки. Возвращает E_FAIL, если `bpResLocation` поле в связанной структуре [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) является недопустимым.
 
-## <a name="remarks"></a>Примечания
-Точкой разрыва может быть, например, код или точка разрыва данных.
+## <a name="remarks"></a>Remarks
+Точка останова может быть кодом или точкой останова по данным, например.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CDebugBreakpointResolution` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+В следующем примере показано, как реализовать этот метод для простого `CDebugBreakpointResolution` объекта, предоставляющего интерфейс [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -83,7 +83,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

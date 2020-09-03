@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE Документы Майкрософт
+title: BP_PASSCOUNT_STYLE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737914"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
-Определяет условие, связанное с количеством проходов точки разрыва, что приводит к возгоранию точки разрыва.
+Указывает условие, связанное с числом проходов точки останова, которое вызывает срабатывание точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,24 +48,24 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>Поля
 `BP_PASSCOUNT_NONE`\
-Указывает не тип подсчета очков брейк-пойнта.
+Указывает, что стиль количества проходов точек останова не задан.
 
 `BP_PASSCOUNT_EQUAL`\
-Устанавливает стиль подсчета проходов брейк-пойнта на равный. Точка разрыва сражается, когда количество ударов по точке разрыва равно количеству проходов.
+Задает значение "равно" для стиля количества проходов точки останова. Точка останова срабатывает, когда количество попаданий в точку останова равно количеству проходов.
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-Устанавливает стиль подсчета проходов точки разрыва на равный или больше. Точка разрыва сражается, когда количество ударов по точке разрыва равно или больше, чем количество проходов.
+Задает для параметра число проходов точки останова значение равно или больше. Точка останова срабатывает, когда количество попаданий в точку останова равно или превышает число проходов.
 
 `BP_PASSCOUNT_MOD`\
-Определяет количество пропусков модуло. Например, если количество проходов `BP_PASSCOUNT_MOD` имеет тип, а значение количества проходов составляет 4, точка разрыва сражается каждый раз, когда количество попаданий кратно ежей 4.
+Указывает число проходов по модулю. Например, если число проходов имеет тип, `BP_PASSCOUNT_MOD` а значение счетчика Pass равно 4, то точка останова срабатывает каждый раз, когда число попаданий кратно 4.
 
-## <a name="remarks"></a>Примечания
-Используется для `stylePassCount` члена [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуры, которая, в свою очередь, является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структур.
+## <a name="remarks"></a>Remarks
+Используется для `stylePassCount` элемента структуры [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , которая в свою очередь является членом структур [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2:SetPassCount (англ.) Документы Майкрософт
+title: 'IDebugBoundBreakpoint2:: Сетпасскаунт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735433"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Устанавливает или изменяет количество пропусков, связанное с этой связанной точкой разрыва.
+Задает или изменяет число проходов, связанных с этой привязанной точкой останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,17 +42,17 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Параметры
 `bpPassCount`\
-(в) Структура [BP_PASSCOUNT,](../../../extensibility/debugger/reference/bp-passcount.md) которая определяет количество проходов.
+окне Структура [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , указывающая число проходов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если состояние объекта точки разрыва `BPS_DELETED` установлено (часть [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` значение, если состояние привязанного объекта точки останова равно `BPS_DELETED` (часть перечисления [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Примечания
- Подсчет проходов определяет, когда точка разрыва высвобовывается. Текущий пропуск или количество попаданий можно получить, позвонив по методу [GetHitCount.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
+## <a name="remarks"></a>Remarks
+ Число проходов определяет время срабатывания точки останова. Текущий проход или число попаданий можно получить, вызвав метод [жеситкаунт](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .
 
- Любой проходный счет, который ранее был связан с этой точкой разрыва, теряется.
+ Все счетчики пройденных, которые ранее были связаны с этой точкой останова, теряются.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

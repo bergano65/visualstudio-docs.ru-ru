@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300538"
 ---
 # <a name="more-debugging-features"></a>Дополнительные функции отладки
@@ -41,7 +41,7 @@ ms.locfileid: "74300538"
  [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Описание JIT–отладки, способной автоматически запускать отладчик при аварийном завершении программы во время выполнения вне Visual Studio.  
   
- [Пошаговое руководство. Отладка во время разработки](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Пример. Отладка во время разработки](../debugger/walkthrough-debugging-at-design-time.md)  
  Использование окна интерпретации Visual Studio для выполнения функции или подпрограммы, когда приложение не запущено. 
   
  [Изменить и продолжить](../debugger/edit-and-continue.md)  

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Подписывание файлов с SignTool.exe (ClickOnce) установки | Документация Майкрософт
+title: Как подписывать файлы установки с помощью SignTool.exe (ClickOnce) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202177"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Практическое руководство. Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
@@ -39,7 +39,7 @@ ms.locfileid: "68202177"
   
 1. На компьютере разработчика установите сертификат для подписи манифестов.  
   
-2. Выберите проект в **обозревателе решений**.  
+2. Выберите проект в **Обозреватель решений**.  
   
 3. В меню **Проект** выберите пункт *Имя проекта* **Свойства**.  
   
@@ -79,5 +79,5 @@ ms.locfileid: "68202177"
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

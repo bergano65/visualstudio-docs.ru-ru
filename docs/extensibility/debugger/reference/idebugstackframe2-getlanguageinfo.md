@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo Документы Майкрософт
+title: 'IDebugStackFrame2:: Жетлангуажеинфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719704"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Получает язык, связанный с этой кадром стека.
+Возвращает язык, связанный с этим кадром стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Параметры
 
 `pbstrLanguage`\
-(ваут) Возвращает имя языка, реализуемого методом, связанным с этой кадром стека.
+заполняет Возвращает имя языка, реализующего метод, связанный с этим кадром стека.
 
 `pguidLanguage`\
-(ваут) `GUID` Возвращает язык. Например, для языков можно вернуть следующее: [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]
+заполняет Возвращает `GUID` язык. Например, для [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] языков можно вернуть следующее:
 
 - `guidVBScriptLang`\
 
@@ -66,6 +66,6 @@ int GetLanguageInfo ( 
 
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

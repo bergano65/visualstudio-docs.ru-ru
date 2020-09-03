@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointЗапрос Документы Майкрософт
+title: 'IDebugPendingBreakpoint2:: Жетбреакпоинтрекуест | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725812"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Получает запрос точки разрыва, который был использован для создания этой ожидачего точки разрыва.
+Получает запрос точки останова, который использовался для создания этой ожидающей точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,11 +42,11 @@ int GetBreakpointRequest( 
 
 ## <a name="parameters"></a>Параметры
 `ppBPRequest`\
-(ваут) Возвращает объект [IDebugBreakpointRequest2,](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) представляющий запрос точки разрыва, который использовался для создания этой ожидающей точки разрыва.
+заполняет Возвращает объект [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) , представляющий запрос точки останова, который использовался для создания этой ожидающей точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает значение `E_BP_DELETED` , если точка останова была удалена.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

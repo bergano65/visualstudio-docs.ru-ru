@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284923"
 ---
 # <a name="how-to-search-for-topics"></a>Практическое руководство. Поиск разделов
@@ -76,7 +76,7 @@ ms.locfileid: "85284923"
 
 Часто встречающиеся слова или цифры, которые иногда называются стоп-словами, автоматически игнорируются во время полнотекстового поиска. Например, при поиске фразы "проходить сквозь" результаты поиска будут содержать разделы, которые содержат слово "проходить", но не "сквозь".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Логические и расширенные операторы](../help-viewer/logical-operators-search-expressions.md)
 - [Практическое руководство. Поиск разделов в индексе](../help-viewer/find-topics-index.md)

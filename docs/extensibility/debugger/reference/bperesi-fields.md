@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS Документы Майкрософт
+title: BPERESI_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737764"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
-Определяет информацию, которая будет получена о неудачном разрешении точки разрыва.
+Указывает сведения, которые необходимо получить о неудачном разрешении точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,34 +52,34 @@ public enum enum_BPERESI_FIELDS {
 
 ## <a name="fields"></a>Поля
 `PERESI_BPRESLOCATION`\
-Инициализация/использование `bpResLocation` поля (место расположения точки разрыва) [структуры BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+Инициализируйте или используйте `bpResLocation` поле (расположение разрешения точки останова) структуры [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .
 
 `BPERESI_PROGRAM`\
-Инициализация/использование `pProgram` `BP_ERROR_RESOLUTION_INFO` поля структуры.
+Инициализируйте или используйте `pProgram` поле `BP_ERROR_RESOLUTION_INFO` структуры.
 
 `BPERESI_THREAD`\
-Инициализация/использование `pThread` `BP_ERROR_RESOLUTION_INFO` поля структуры.
+Инициализируйте или используйте `pThread` поле `BP_ERROR_RESOLUTION_INFO` структуры.
 
 `BPERESI_MESSAGE`\
-Инициализация/использование `bstrMessage` `BP_ERROR_RESOLUTION_INFO` поля структуры.
+Инициализируйте или используйте `bstrMessage` поле `BP_ERROR_RESOLUTION_INFO` структуры.
 
 `BPERESI_TYPE`\
-Инициализация/использование `dwType` (типа брейк-пойнта) поля `BP_ERROR_RESOLUTION_INFO` структуры.
+Инициализируйте или используйте `dwType` поле (тип точки останова) `BP_ERROR_RESOLUTION_INFO` структуры.
 
 `BPERESI_ALLFIELDS`\
-Инициализация/использование `BP_ERROR_RESOLUTION_INFO` всех полей структуры.
+Инициализация или использование всех полей `BP_ERROR_RESOLUTION_INFO` структуры.
 
-## <a name="remarks"></a>Примечания
-Прошел в качестве параметра для метода [GetResolutionInfo,](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) чтобы указать, какие поля [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+Передается в качестве параметра в метод [жетресолутионинфо](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) , чтобы указать, какие поля структуры [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) должны быть инициализированы.
 
-Эти значения также используются для указания `BP_ERROR_RESOLUTION_INFO` того, какие поля в структуре используются, и действительны при возврате этой структуры.
+Эти значения также используются для указания того, какие поля в `BP_ERROR_RESOLUTION_INFO` структуре используются и допустимы при возврате этой структуры.
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

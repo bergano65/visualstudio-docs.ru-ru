@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Документация Майкрософт
+title: 'Идебугпроцесскуерипропертиес:: Куерипропертиес | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccbeddeb02044898fbfe1426a187e386ad31a058
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202802"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод запрашивает заданных значений свойств процесса отладки.  
+Этот метод запрашивает заданные значения свойств процесса отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ int QueryProperties(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Размер массива, содержащего определения свойств и значений свойств.  
+ окне Размер массивов, содержащих определения свойств и значения свойств.  
   
  `dwPropType`  
- [in] Массив, содержащий определения запрашиваемого свойства. Допустимые значения:  
+ окне Массив, содержащий определения запрашиваемых свойств. Допустимые значения:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -52,13 +52,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
   `pvarPropValue`  
-  [out] Массив, содержащий значения свойств.  
+  заполняет Массив, содержащий значения свойств.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод используется редко.  
+## <a name="remarks"></a>Remarks  
+ Этот метод редко используется.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

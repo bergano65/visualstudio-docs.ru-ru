@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2:GetResolutionInfo Документы Майкрософт
+title: 'IDebugBreakpointResolution2:: Жетресолутионинфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734769"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Получает информацию о разрешении точки разрыва, описывающая эту точку разрыва.
+Возвращает сведения о разрешении точки останова, описывающие эту точку останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Комбинация флагов [из BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) перечисления, определяющих, какие поля `pBPResolutionInfo` параметра должны быть заполнены.
+окне Сочетание флагов из перечисления [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) , которое определяет, какие поля параметра должны `pBPResolutionInfo` быть заполнены.
 
 `pBPResolutionInfo`\
-(ваут) [Структура BP_RESOLUTION_INFO,](../../../extensibility/debugger/reference/bp-resolution-info.md) которая должна быть заполнена информацией об этой точке разрыва.
+заполняет Структура [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) , которая должна быть заполнена сведениями об этой точке останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
- Следующий пример реализует этот метод `CDebugBreakpointResolution` для простого объекта, который предоставляет интерфейс [IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+ В следующем примере этот метод реализуется для простого `CDebugBreakpointResolution` объекта, предоставляющего интерфейс [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(
@@ -141,7 +141,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

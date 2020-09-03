@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointЗапрос3::GetRequestInfo2 Документы Майкрософт
+title: 'IDebugBreakpointRequest3:: GetRequestInfo2 | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f5febf664da9cd69dbd88b70056d9eac953bf581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734835"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
-Этот метод получает информацию о запросе точки разрыва, описывающая этот запрос точки разрыва.
+Этот метод получает сведения о запросе точки останова, описывающие этот запрос на точку останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int GetRequestInfo2(
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Сочетание флагов [из BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, определяющих, какие поля должны быть `pBPRequestInfo` заполнены.
+окне Сочетание флагов из перечисления [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) , определяющих поля, которые должны `pBPRequestInfo` быть заполнены.
 
 `bBPRequestInfo`\
-(ваут) [Структура BP_REQUEST_INFO2,](../../../extensibility/debugger/reference/bp-request-info2.md) которая должна быть заполнена.
+заполняет Структура [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) , которую необходимо заполнить.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- В этом запросе больше информации, чем возвращается из метода [GetRequestInfo.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
+## <a name="remarks"></a>Remarks
+ В этом запросе больше сведений, чем возвращается методом [жетрекуестинфо](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

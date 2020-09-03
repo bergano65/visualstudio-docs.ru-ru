@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2:GetChecksum Документы Майкрософт
+title: IDebugBreakpointChecksumRequest2::/CHECKSUM | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735172"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Извлекает проверку документа для запроса точки разрыва с учетом уникального идентификатора алгоритма проверки для использования.
+Извлекает контрольную сумму документа для запроса точки останова по заданному уникальному идентификатору алгоритма контрольной суммы для использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Параметры
 `guidAlgorithm`\
-(в) Уникальный идентификатор алгоритма проверки.
+окне Уникальный идентификатор алгоритма контрольной суммы.
 
 `pChecksumData`\
-(ваут) Проверка документов для запроса точки разрыва.
+заполняет Контрольная сумма документа для запроса точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показана функция, которая проверяет, соответствует ли чековая часть документа, которая вот-вот будет связана, одной из функций uI.
+В следующем примере показана функция, которая проверяет, соответствует ли контрольная сумма документа, который должен быть привязан, сопоставляется с одним из элементов пользовательского интерфейса.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)
@@ -104,5 +104,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

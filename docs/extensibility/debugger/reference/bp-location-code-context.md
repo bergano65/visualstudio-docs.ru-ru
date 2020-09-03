@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT Документы Майкрософт
+title: BP_LOCATION_CODE_CONTEXT | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 4dcb8ffb1a1debcf6aeeca8dc4d21c1ab5f18b90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738027"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
-Описывает расположение точки разрыва, которая привязана непосредственно к отладке программы.
+Описывает расположение точки останова, привязанной непосредственно к адресу в отлаживаемой программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,19 +34,19 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 
 ## <a name="members"></a>Участники
 `pCodeContext`\
-Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) определяет положение точки разрыва в коде.
+Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий расположение точки останова в коде.
 
-## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуры в составе профсоюза.
+## <a name="remarks"></a>Remarks
+Эта структура является членом структуры [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) в составе объединения.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

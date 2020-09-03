@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING Документы Майкрософт
+title: BP_LOCATION_CODE_STRING | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737979"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
-Используется для настройки точек разрыва кода на основе строки, которую пользователь может ввести из интегрированной среды разработки (IDE).
+Используется для задания точек останова в коде на основе строки, которую пользователь может вводить из интегрированной среды разработки (IDE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,21 +35,21 @@ typedef struct _BP_LOCATION_CODE_STRING {
 
 ## <a name="members"></a>Участники
 `bstrContext`\
-Контекст точки разрыва в коде, как правило, метод или имя функции, как видно на стеке вызова.
+Контекст точки останова в коде, обычно это имя метода или функции, как показано в стеке вызовов.
 
 `bstrCodeExpr`\
-Строка, которую пользователь вводит для описания точки разрыва кода.
+Строка, которую пользователь вводит в для описания точки останова в коде.
 
-## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуры в составе профсоюза.
+## <a name="remarks"></a>Remarks
+Эта структура является членом структуры [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) в составе объединения.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

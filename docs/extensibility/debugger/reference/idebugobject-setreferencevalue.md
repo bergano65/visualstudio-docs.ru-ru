@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue Документы Майкрософт
+title: 'Идебугобжект:: Сетреференцевалуе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726376"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-Устанавливает эталонное значение этого объекта.
+Задает значение ссылки для этого объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Параметры
 `pObject`\
-(в) Объект [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий новое эталонное значение.
+окне Объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий новое значение ссылки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод делает этот объект [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ссылкой на `pObject` значение объекта, приведенного в параметре, выбрасывая любую предыдущую ссылку. Обратите внимание, что этот `IDebugObject` объект уже должен быть эталонным типом.
+## <a name="remarks"></a>Remarks
+ Этот метод делает этот объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) ссылкой на значение объекта, указанного в `pObject` параметре, вызывая предыдущую ссылку. Обратите внимание, что этот `IDebugObject` объект уже должен быть ссылочным типом.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

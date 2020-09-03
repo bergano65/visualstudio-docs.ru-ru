@@ -1,5 +1,5 @@
 ---
-title: UdtKind | Документация Майкрософт
+title: Удткинд | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202382"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Описывает различные определяемого пользователем типа (UDT).  
+Описывает разнообразные определяемые пользователем типы (UDT).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,24 +37,24 @@ enum UdtKind { 
 ```  
   
 ## <a name="elements"></a>Элементы  
- UdtStruct  
+ удтструкт  
  Определяемый пользователем тип является структурой.  
   
- UdtClass  
+ удткласс  
  Определяемый пользователем тип является классом.  
   
- UdtUnion  
- Определяемый пользователем тип — это объединение.  
+ удтунион  
+ Определяемый пользователем тип является объединением.  
   
- UdtInterface  
+ удтинтерфаце  
  Определяемый пользователем тип является интерфейсом.  
   
-## <a name="remarks"></a>Примечания  
- Возвращаемые значения в этом перечислении [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Значения в этом перечислении возвращаются методом [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

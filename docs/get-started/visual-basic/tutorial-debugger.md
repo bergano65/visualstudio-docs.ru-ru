@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77027242"
 ---
-# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Учебник. Отладка кода Visual Basic с помощью Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Руководство. Отладка кода Visual Basic с помощью Visual Studio
 
 В этом пошаговом руководстве рассматриваются возможности отладчика Visual Studio. Более полное описание функций отладчика см. в статье c [Знакомство с отладчиком Visual Studio](../../debugger/debugger-feature-tour.md). *Отладка приложения* обычно означает запуск и выполнение приложения с подключенным отладчиком. При этом в отладчике доступно множество способов наблюдения за выполнением кода. Вы можете пошагово перемещаться по коду и просматривать значения, хранящиеся в переменных, задавать контрольные значения для переменных, чтобы отслеживать изменение значений, изучать путь выполнения кода, просматривать выполнение ветви кода и т. д. Если вы не знакомы с процессом отладки, перед выполнением задач в этой статье рекомендуется прочесть документ об [отладке для начинающих](../../debugger/debugging-absolute-beginners.md).
 

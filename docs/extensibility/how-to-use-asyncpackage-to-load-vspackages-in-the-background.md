@@ -8,14 +8,14 @@ ms.author: anthc
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7727d53c84ab876fe6616c8ec5d438033216481e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905602"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Как использовать AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
-Загрузка и инициализация пакета VS могут привести к диску ввода-вывода. Если такие операции ввода-вывода выполняются в потоке пользовательского интерфейса, это может привести к проблемам реагирования. Чтобы устранить эту эту необходимость, в Visual Studio 2015 появился <xref:Microsoft.VisualStudio.Shell.AsyncPackage> класс, позволяющий загружать пакеты в фоновом потоке.
+Загрузка и инициализация пакета VS могут привести к диску ввода-вывода. Если такие операции ввода-вывода выполняются в потоке пользовательского интерфейса, это может привести к проблемам реагирования. Чтобы устранить эту эту необходимость, в Visual Studio 2015 появился  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> класс, позволяющий загружать пакеты в фоновом потоке.
 
 ## <a name="create-an-asyncpackage"></a>Создание AsyncPackage
  Вы можете начать с создания проекта VSIX (**файл**  >  **создать**  >  **проект**  >  **Visual C#**  >  **расширение**  >  **VSIX**) и добавить пакет VSPackage в проект (щелкните правой кнопкой мыши проект и **добавьте**  >  **новый элемент**  >  **C# item**  >  **Extensibility**  >  **Visual Studio**Расширяемость элемента C#). Затем можно создать службы и добавить эти службы в пакет.

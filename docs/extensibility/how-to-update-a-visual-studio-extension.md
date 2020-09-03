@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905625"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Руководство. обновление расширения Visual Studio
@@ -60,6 +60,6 @@ ms.locfileid: "85905625"
     > [!NOTE]
     > Начиная с Visual Studio 2015 с обновлением 2, можно указать (в **меню Сервис**  >  **Параметры**  >  **Environment**  >  **расширения и обновления**), требуется ли автоматическое обновление для расширений для каждого пользователя, всех расширений пользователя или обоих параметров (значение по умолчанию).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

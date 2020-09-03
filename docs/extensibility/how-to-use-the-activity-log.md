@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905584"
 ---
 # <a name="how-to-use-the-activity-log"></a>Как использовать журнал действий
@@ -38,7 +38,7 @@ ms.locfileid: "85905584"
         "Called for: {0}", this.ToString()));
     ```
 
-     Этот код получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службу и приводит ее к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейсу. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>Записывает информационную запись в журнал действий, используя текущий контекст культуры.
+     Этот код получает <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> службу и приводит ее к <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> интерфейсу. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> Записывает информационную запись в журнал действий, используя текущий контекст культуры.
 
 2. При загрузке VSPackage (обычно при вызове команды или открытии окна) текст записывается в журнал действий.
 
@@ -62,10 +62,10 @@ ms.locfileid: "85905584"
 
 Журнал действий следует получить непосредственно перед записью в него. Не кэшировать или не сохраняйте журнал действий для будущего использования.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [Устранение неполадок, связанных с пакетами VSPackage](../extensibility/troubleshooting-vspackages.md)
-- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+- [VSPackages](../extensibility/internals/vspackages.md)

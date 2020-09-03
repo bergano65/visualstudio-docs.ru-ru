@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3f7d09e29489dac0598b9558df595aedd0c5d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203061"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Указывает тип имени узла.  
@@ -48,16 +48,16 @@ public enum enum_GETHOSTNAME_TYPE { 
  GHN_FILE_NAME  
  Указывает имя файла узла.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения передаются в качестве аргумента [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) метод для извлечения имени узла в различных форматах.  
+## <a name="remarks"></a>Remarks  
+ Эти значения передаются в качестве аргумента [в метод метода](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) , чтобы получить имя узла в различных форматах.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

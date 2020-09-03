@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION Документы Майкрософт
+title: BP_LOCATION | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c98fde516a3e836302cd7eb2c73abd730d5cc8c5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737927"
 ---
 # <a name="bp_location"></a>BP_LOCATION
-Определяет тип структуры, используемой для описания местоположения точки разрыва.
+Указывает тип структуры, используемой для описания расположения точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -55,58 +55,58 @@ public struct BP_LOCATION {
 
 ## <a name="members"></a>Участники
 `bpLocationType`\
-Значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления используется для `bpLocation` интерпретации `unionmemberX` союза или членов.
+Значение из перечисления [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) , используемое для интерпретации `bpLocation` объединения или `unionmemberX` членов.
 
 `bpLocation`.`bplocCodeFileLine`\
-(только си) Содержит [структуру BP_LOCATION_CODE_FILE_LINE,](../../../extensibility/debugger/reference/bp-location-code-file-line.md) если `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
+[Только C++] Содержит структуру [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) , если `bpLocationType`  =  `BPLT_CODE_FILE_LINE` .
 
 `bpLocation.bplocCodeFuncOffset`\
-(только си) Содержит [структуру BP_LOCATION_CODE_FUNC_OFFSET,](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) если `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
+[Только C++] Содержит структуру [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) , если `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET` .
 
 `bpLocation.bplocCodeContext`\
-(только си) Содержит [структуру BP_LOCATION_CODE_CONTEXT,](../../../extensibility/debugger/reference/bp-location-code-context.md) если `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
+[Только C++] Содержит структуру [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) , если `bpLocationType`  =  `BPLT_CODE_CONTEXT` .
 
 `bpLocation.bplocCodeString`\
-(только си) Содержит [структуру BP_LOCATION_CODE_STRING,](../../../extensibility/debugger/reference/bp-location-code-string.md) если `bpLocationType`  =  `BPLT_CODE_STRING`.
+[Только C++] Содержит структуру [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) , если `bpLocationType`  =  `BPLT_CODE_STRING` .
 
 `bpLocation.bplocCodeAddress`\
-(только си) Содержит [структуру BP_LOCATION_CODE_ADDRESS,](../../../extensibility/debugger/reference/bp-location-code-address.md) если `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
+[Только C++] Содержит структуру [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) , если `bpLocationType`  =  `BPLT_CODE_ADDRESS` .
 
 `bpLocation.bplocDataString`\
-(только си) Содержит [структуру BP_LOCATION_DATA_STRING,](../../../extensibility/debugger/reference/bp-location-data-string.md) если `bpLocationType`  =  `BPLT_DATA_STRING`.
+[Только C++] Содержит структуру [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) , если `bpLocationType`  =  `BPLT_DATA_STRING` .
 
 `bpLocation.bplocResolution`\
-(только си) Содержит [структуру BP_LOCATION_RESOLUTION,](../../../extensibility/debugger/reference/bp-location-resolution.md) если `bpLocationType`  =  `BPLT_RESOLUTION`.
+[Только C++] Содержит структуру [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) , если `bpLocationType`  =  `BPLT_RESOLUTION` .
 
 `unionmember1`\
-(Только для C) Смотрите замечания о том, как интерпретировать.
+[Только C#] См. раздел Примечания о том, как интерпретировать.
 
 `unionmember2`\
-(Только для C) Смотрите замечания о том, как интерпретировать.
+[Только C#] См. раздел Примечания о том, как интерпретировать.
 
 `unionmember3`\
-(Только для C) Смотрите замечания о том, как интерпретировать.
+[Только C#] См. раздел Примечания о том, как интерпретировать.
 
 `unionmember4`\
-(Только для C) Смотрите замечания о том, как интерпретировать.
+[Только C#] См. раздел Примечания о том, как интерпретировать.
 
-## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структур.
+## <a name="remarks"></a>Remarks
+Эта структура является членом структур [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
- (Только для C) Члены `unionmemberX` интерпретируются в соответствии со следующей таблицей. Посмотрите вниз левой `bpLocationType` колонке значение затем посмотрите через `unionmemberX` другие столбцы, чтобы определить, что каждый член представляет и маршал `unionmemberX` соответственно. См. пример способа интерпретации части этой структуры в СЗ.
+ [Только C#] Элементы обрабатываются в `unionmemberX` соответствии со следующей таблицей. Взгляните на левый столбец для `bpLocationType` значения, затем взгляните на другие столбцы, чтобы определить, что каждый `unionmemberX` элемент представляет и маршалировать `unionmemberX` соответствующим образом. См. пример для интерпретации части этой структуры в C#.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
-|`BPLT_CODE_FILE_LINE`|`string`(контекст)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|
-|`BPLT_CODE_FUNC_OFFSET`|`string`(контекст)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|
+|`BPLT_CODE_FILE_LINE`|`string` (контекст)|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|-|-|
+|`BPLT_CODE_FUNC_OFFSET`|`string` (контекст)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPLT_CODE_STRING`|`string`(контекст)|`string`(условное выражение)|-|-|
-|`BPLT_CODE_ADDRESS`|`string`(контекст)|`string`(модульный URL)|`string`(имя функции)|`string`(адрес)|
-|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string`(контекст)|`string`(выражение данных)|`uint`(количество элементов)|
+|`BPLT_CODE_STRING`|`string` (контекст)|`string` (условное выражение)|-|-|
+|`BPLT_CODE_ADDRESS`|`string` (контекст)|`string` (URL-адрес модуля)|`string` (имя функции)|`string` Address|
+|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (контекст)|`string` (выражение данных)|`uint` (число элементов)|
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|
 
 ## <a name="example"></a>Пример
-В этом примере `BP_LOCATION` показано, как интерпретировать `BPLT_DATA_STRING` структуру в СЗ для типа. Данный тип показывает, как `unionmemberX` интерпретировать все четыре участника во всех возможных форматах (объект, строка и число).
+В этом примере показано, как интерпретировать `BP_LOCATION` структуру в C# для `BPLT_DATA_STRING` типа. Этот конкретный тип показывает, как интерпретировать все четыре `unionmemberX` элемента во всех возможных форматах (объект, строка и число).
 
 ```csharp
 using System;
@@ -132,13 +132,13 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

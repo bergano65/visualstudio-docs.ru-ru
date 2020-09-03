@@ -1,5 +1,5 @@
 ---
-title: BP_STATE Документы Майкрософт
+title: BP_STATE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737800"
 ---
 # <a name="bp_state"></a>BP_STATE
-Определяет наличие свяжей точки разрыва, а также указывает, включена ли она.
+Задает существование привязанной точки останова, а также указывает, включен ли он.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,24 +48,24 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>Поля
 `BPS_NONE`\
-Уточняется, что точки разрыва не существует.
+Указывает, что точка останова не существует.
 
 `BPS_DELETED`\
-Уточняется, что точка разрыва была удалена.
+Указывает, что точка останова была удалена.
 
 `BPS_DISABLED`\
-Уточняется, что точка разрыва отключена.
+Указывает, что точка останова отключена.
 
 `BPS_ENABLED`\
-Укажите, что точка разрыва включена.
+Указывает, что точка останова включена.
 
-## <a name="remarks"></a>Примечания
-Возвращается из метода [GetState.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+## <a name="remarks"></a>Remarks
+Возвращается методом метода « [State](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) ».
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

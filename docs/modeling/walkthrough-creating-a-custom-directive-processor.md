@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532240"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
@@ -603,11 +603,11 @@ End Property
 
 5. В меню **Файл** выберите команду **Сохранить все**.
 
-6. В меню **Сборка** выберите **Собрать решение**.
+6. В меню **Сборка** выберите **Построить решение**.
 
 ### <a name="build-the-project"></a>Постройте проект.
 
-Выполните построение проекта. В меню **Сборка** выберите **Собрать решение**.
+Выполните построение проекта. В меню **Сборка** выберите **Построить решение**.
 
 ## <a name="register-the-directive-processor"></a>Регистрация обработчика директив
 
@@ -724,7 +724,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </doc>
     ```
 
-3. Сохраните файл и закройте его.
+3. Сохраните и закройте файл.
 
 ### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>Создание текстового шаблона для тестирования процессора директив
 
