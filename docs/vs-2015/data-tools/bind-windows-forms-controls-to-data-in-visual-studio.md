@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672988"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "72672988"
 
  Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. [в разделе Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных в Windows Forms см. в разделе [Windows Forms привязка данных](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>В этом разделе
 
 - [Привязка элементов управления Windows Forms к данным](../data-tools/bind-windows-forms-controls-to-data.md)
 
@@ -62,7 +62,7 @@ ms.locfileid: "72672988"
 
  Во-вторых, он может управлять коллекцией объектов. Добавление типа в <xref:System.Windows.Forms.BindingSource> создает список этого типа.
 
- Дополнительные сведения о компоненте <xref:System.Windows.Forms.BindingSource> см. в следующих статьях:
+ Дополнительные сведения о <xref:System.Windows.Forms.BindingSource> компоненте см. в следующих статьях:
 
 - [Компонент BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
@@ -74,7 +74,7 @@ ms.locfileid: "72672988"
  Этот компонент предоставляет пользовательский интерфейс для навигации по данным, отображаемым приложением Windows. Дополнительные сведения см. в разделе [Элемент управления BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView - элемент управления
- Чтобы отобразить и изменить табличные данные из различных типов источников данных, используйте элемент управления <xref:System.Windows.Forms.DataGridView>. Можно привязать данные к <xref:System.Windows.Forms.DataGridView> с помощью свойства <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Дополнительные сведения см. в разделе [Общие сведения об элементе управления DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Чтобы отобразить и изменить табличные данные из различных типов источников данных, используйте <xref:System.Windows.Forms.DataGridView> элемент управления. Вы можете привязать данные к, <xref:System.Windows.Forms.DataGridView> используя <xref:System.Windows.Forms.DataGridView.DataSource%2A> свойство. Дополнительные сведения см. в разделе [Общие сведения об элементе управления DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

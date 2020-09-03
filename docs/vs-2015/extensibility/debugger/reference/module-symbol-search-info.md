@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2cfbaf8c3756bf758956d1f1e5964d8e9f8f0c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205187"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Содержит сведения о пути поиска символов, которые после состоянии.  
+Содержит сведения о состоянии для путей поиска символов, которые были просмотрены.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,21 +43,21 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>Параметры  
  `dwValidFields`  
- Сочетание флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисления, указывающее, какой тип поиска сведения, описанные в этой структуре.  
+ Сочетание флагов из перечисления [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) , определяющее тип сведений для поиска, описанных в этой структуре.  
   
  `bstrVerboseSearchInfo`  
- Пути поиска и результаты объединяются в одну строку.  
+ Путь поиска и результаты, Объединенные в одну строку.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура возвращается из вызова [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Эта структура возвращается из вызова метода [жетсимболинфо](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) .  
   
- Если `bstrVerboseSearchInfo` поле не пусто, то он содержит список пути поиска и результаты поиска. Путь, а затем кнопку с многоточием («...»), а затем результат имеет формат списка. Если имеется несколько пар результирующий путь, каждая пара отделяется пару «\r\n» (каретки возврата и перевода строки). Шаблон выглядит следующим образом:  
+ Если `bstrVerboseSearchInfo` поле не пусто, то оно содержит список путей поиска и результаты этого поискового запроса. Список форматируется с помощью пути, за которым следует многоточие ("..."), за которым следует результат. Если существует несколько пар результатов пути, каждая пара отделяется парой "\r\n" (возврат каретки или перевод строки). Шаблон выглядит следующим образом:  
   
- \<путь >... \<результат > \r\n\<путь >... \<результат > \r\n\<путь >... \<результата >  
+ \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>  
   
- Обратите внимание, что последний элемент последовательности \r\n.  
+ Обратите внимание, что последняя запись не содержит последовательность \r\n.  
   
- Вот возможного `bstrVerboseSearchInfo` строки, который был отправлен на стандартный выход.  
+ Ниже приведена возможная `bstrVerboseSearchInfo` строка, отправленная в стандартный выход.  
   
  `c:\symbols\user32.pdb... File not found.`  
   
@@ -66,12 +66,12 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

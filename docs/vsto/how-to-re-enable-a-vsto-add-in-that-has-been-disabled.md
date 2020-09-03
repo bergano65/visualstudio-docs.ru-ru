@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541262"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Пошаговое руководство. Повторное включение надстройки VSTO, которая была отключена
@@ -47,7 +47,7 @@ ms.locfileid: "85541262"
 
 6. Выберите надстройку VSTO и нажмите кнопку **Включить**.
 
-7. Щелкните **Закрыть**.
+7. Нажмите кнопку **Закрыть**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Обратимо Отключенные надстройки VSTO
  Мягкое отключение применяется, если вызванная надстройкой VSTO ошибка не приводит к неожиданному завершению работы приложения. Надстройка VSTO отключается мягким способом, например, если выдает необработанное исключение во время выполнения обработчика событий <xref:Microsoft.Office.Tools.AddIn.Startup> .

@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Документация Майкрософт
+title: 'Идебугклассфиелд:: Жетдефаултиндексер | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6be0a1925a1e5d48941c1c0e13ac1b4789687229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191018"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает имя индексатора по умолчанию.  
+Возвращает имя индексатора по умолчанию.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
   
 #### <a name="parameters"></a>Параметры  
  `pbstrIndexer`  
- [out] Возвращает строку, содержащую имя индексатора по умолчанию.  
+ заполняет Возвращает строку, содержащую имя индексатора по умолчанию.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если нет индексатора по умолчанию. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает S_OK или возвращает значение S_FALSE, если индексатор по умолчанию отсутствует. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Индексатор по умолчанию класса — свойство, которое помечается как `Default` свойство для обращений к массива. Это относится к [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]. Ниже приведен пример индексатор по умолчанию, объявленные в [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] и способах ее использования.  
+## <a name="remarks"></a>Remarks  
+ Индексатором по умолчанию для класса является свойство, которое помечено как `Default` свойство для доступа к массиву. Это относится только к [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] . Ниже приведен пример индексатора по умолчанию, объявленного в [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] и его использования.  
   
 ```vb  
 Imports System.Collections;  
@@ -78,5 +78,5 @@ Function GetItem(Index as Integer) as Integer
 End Function  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

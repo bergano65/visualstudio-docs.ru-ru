@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156590"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Практическое руководство. Игнорирование ошибок в задачах
@@ -37,11 +37,11 @@ ms.locfileid: "68156590"
   
   Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.  
   
-  Значением свойства `ContinueOnError` по умолчанию является `ErrorAndStop`. Если задать для атрибута значение `ErrorAndStop`, можно сделать такое поведение явным для всех объектов, считывающих файл проекта.  
+  Значение `ContinueOnError` по умолчанию — `ErrorAndStop`. Если задать для атрибута значение `ErrorAndStop`, можно сделать такое поведение явным для всех объектов, считывающих файл проекта.  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Игнорирование ошибки в задаче  
   
-- Используйте атрибут `ContinueOnError` задачи. Например:  
+- Используйте атрибут `ContinueOnError` задачи. Пример:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
@@ -64,7 +64,7 @@ ms.locfileid: "68156590"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [MSBuild](msbuild.md)  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

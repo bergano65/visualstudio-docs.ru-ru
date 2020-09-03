@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876194"
 ---
 # <a name="messaging-activity-designers"></a>Конструкторы действий обмена сообщениями
@@ -45,7 +45,7 @@ ms.locfileid: "86876194"
 
 - [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
 
-- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+- [Параметры выполнения](../workflow-designer/runtime-activity-designers.md)
 
 - [Примитивы](../workflow-designer/primitives-activity-designers.md)
 

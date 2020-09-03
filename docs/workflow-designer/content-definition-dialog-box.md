@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876207"
 ---
 # <a name="content-definition-dialog-box"></a>Диалоговое окно «Определение содержимого»
@@ -25,7 +25,7 @@ ms.locfileid: "86876207"
 
 |Элемент пользовательского интерфейса|Описание|
 |-|-----------------|
-|**Сообщение**|Задает содержимое сообщения с текстовым полем «выражение **данных сообщения** » и типом с помощью раскрывающегося списка **тип сообщения** . По умолчанию в **определении содержимого** используется объект <xref:System.ServiceModel.Activities.ReceiveMessageContent> , который принимает <xref:System.ServiceModel.Channels.Message> тип контракта сообщения или в определении службы рабочего процесса.|
+|**Message**|Задает содержимое сообщения с текстовым полем «выражение **данных сообщения** » и типом с помощью раскрывающегося списка **тип сообщения** . По умолчанию в **определении содержимого** используется объект <xref:System.ServiceModel.Activities.ReceiveMessageContent> , который принимает <xref:System.ServiceModel.Channels.Message> тип контракта сообщения или в определении службы рабочего процесса.|
 |**Параметры**|Выберите переключатель **Параметры** , который будет использоваться <xref:System.ServiceModel.Activities.ReceiveParametersContent> , если требуется контракт данных. Используйте сетку данных для задания универсальной коллекции пар «ключ/значение» <xref:System.Activities.OutArgument>, чьи значения присваиваются параметрам переменных в текущем рабочем процессе.|
 
 Диалоговое окно " **Определение содержимого** " используется конструкторами **отправки**, **получения**, **ReceiveAndSendReply**и **SendAndReceiveReply** . Доступ к ним в каждом варианте одинаков, и для иллюстрации процедуры используется вариант Receive.

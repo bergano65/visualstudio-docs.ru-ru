@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS Документы Майкрософт
+title: FIELD_INFO_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736904"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
-Определяет, какую информацию получить об объекте [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+Указывает, какие сведения следует получить о объекте [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,28 +52,28 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>Поля
 `FIF_FULLNAME`\
-Инициализация/использование `bstrFullName` поля в [структуре FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
+Инициализируйте или используйте `bstrFullName` поле в структуре [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
 `FIF_NAME`\
-Инициализация/использование `bstrName` `FIELD_INFO` поля в структуре.
+Инициализируйте или используйте `bstrName` поле в `FIELD_INFO` структуре.
 
 `FIF_TYPE`\
-Инициализация/использование `bstrType` `FIELD_INFO` поля в структуре.
+Инициализируйте или используйте `bstrType` поле в `FIELD_INFO` структуре.
 
 `FIF_MODIFIERS`\
-Инициализация/использование `bstrModifiers` `FIELD_INFO` поля в структуре.
+Инициализируйте или используйте `bstrModifiers` поле в `FIELD_INFO` структуре.
 
-## <a name="remarks"></a>Примечания
-Эти значения также передаются в качестве аргумента методу [GetInfo,](../../../extensibility/debugger/reference/idebugfield-getinfo.md) чтобы указать, какие поля [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+Эти значения также передаются в качестве аргумента в метод " [info](../../../extensibility/debugger/reference/idebugfield-getinfo.md) ", чтобы указать, какие поля структуры [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) должны быть инициализированы.
 
-Эти значения также используются `dwFields` в `FIELD_INFO` составе структуры для обозначения того, какие поля используются и действительны.
+Эти значения также используются в `dwFields` члене `FIELD_INFO` структуры для указания того, какие поля используются и являются допустимыми.
 
-Эти флаги могут быть `OR`объединены с bitwise .
+Эти флаги можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

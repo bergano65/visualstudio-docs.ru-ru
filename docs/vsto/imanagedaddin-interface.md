@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541132"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin - интерфейс
@@ -48,7 +48,7 @@ interface IManagedAddin : IUnknown
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Вызывается, когда приложение Microsoft Office загружает управляемую надстройку VSTO.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Вызывается непосредственно перед тем, как приложение Microsoft Office выгружает управляемую надстройку VSTO.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Microsoft Office приложений, начиная с системы Microsoft Office 2007, используйте интерфейс IManagedAddin, чтобы помочь в загрузке надстроек Office VSTO. Вы можете реализовать интерфейс IManagedAddin, чтобы создать собственный загрузчик надстройки VSTO и среду выполнения для управляемых надстроек VSTO вместо использования загрузчика надстроек VSTO (*VSTOLoader.dll*) и [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Для получения дополнительной информации см. [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Загрузка управляемых надстроек
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Этот идентификатор CLSID также используется *VSTOLoader.dll* в [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Поэтому, если вы используете IManagedAddin для создания собственного загрузчика надстройки VSTO и компонента среды выполнения, вы не сможете развернуть компонент на компьютерах, где выполняются надстройки VSTO, зависящие от [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по неуправляемым API &#40;разработке решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

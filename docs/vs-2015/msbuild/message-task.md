@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190904"
 ---
 # <a name="message-task"></a>Задача Message
@@ -34,19 +34,19 @@ ms.locfileid: "68190904"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи `Message`.  
   
-|Параметр|ОПИСАНИЕ|  
+|Параметр|Описание|  
 |---------------|-----------------|  
-|`Importance`|Необязательный параметр `String` .<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|  
-|`Text`|Необязательный параметр `String` .<br /><br /> Текст ошибки для записи в журнал.|  
+|`Importance`|Необязательный параметр `String`.<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|  
+|`Text`|Необязательный параметр `String`.<br /><br /> Текст ошибки для записи в журнал.|  
   
 ## <a name="remarks"></a>Примечания  
  Задача `Message` позволяет проектам [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] отправлять сообщения в средства ведения журнал на разных этапах процесса сборки.  
   
- Если параметр `Condition` равен `true`, значение параметра `Text` записывается, а процесс сборки продолжает выполняться. Если параметр `Condition` не существует, текст сообщения записывается в журнал. Дополнительные сведения о ведении журнала см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Если параметр `Condition` равен `true`, значение параметра `Text` записывается, а процесс сборки продолжает выполняться. Если параметр `Condition` не существует, текст сообщения записывается в журнал. Дополнительные сведения о ведении журналов см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
  По умолчанию сообщение отправляется в средство ведения журнала консоли MSBuild. Это поведение можно изменить, присвоив параметру <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> необходимое значение. Средство ведения журнала интерпретирует параметр `Importance`.  
   
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описание см. в разделе [базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода сообщения регистрируются во всех зарегистрированных средствах ведения журнала.  
@@ -61,6 +61,6 @@ ms.locfileid: "68190904"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
  [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)

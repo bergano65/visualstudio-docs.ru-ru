@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602403"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Работа со схемами классов (конструктор классов)
@@ -37,7 +37,7 @@ ms.locfileid: "72602403"
 > [!NOTE]
 > Конструктор классов не отслеживает расположение исходных файлов, поэтому, изменение структуры проекта или перемещение исходных файлов в проекте может привести к тому, что конструктор классов не будет отслеживать тип, особенно исходный тип для typedef, базовые классы или типы ассоциаций. Может возникнуть ошибка вида **Конструктору классов не удалось отобразить этот тип**. В этом случае перетащите измененный или перемещенный исходный код в схему классов и повторно отобразите ее.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
  Описывается как добавлять схемы классов в проекты.
@@ -58,7 +58,7 @@ ms.locfileid: "72602403"
 
  Объясняется, как распечатывать схемы классов.
 
- [Практическое руководство. Добавление комментариев в схему классов (конструктор классов)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
+ [Как добавить комментарии в схемы классов (конструктор классов)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
 
  Описывается, как добавлять комментарии в схему классов.
 
@@ -66,5 +66,5 @@ ms.locfileid: "72602403"
 
  Описывается, как удалять фигуры из схем классов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md) [как настроить схемы классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md) [руководство. Удаление фигур типа из диаграмм классов (конструктор классов)](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

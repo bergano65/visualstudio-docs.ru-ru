@@ -41,6 +41,6 @@ ms.locfileid: "80705613"
     > [!NOTE]
     > Если вы реализуете собственный механизм сохраняемости, не забудьте вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> метод для экономии времени. Этот метод проверяет, является ли сохранение файла защищенным (например, если файл не доступен только для чтения).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)
