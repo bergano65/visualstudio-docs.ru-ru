@@ -14,20 +14,20 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184615"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает, следует ли для сборки проекта, сразу же после его создания.  
+Указывает, следует ли выполнять сборку проекта сразу после его создания.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<BuildProjectOnLoad >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,10 +53,10 @@ ms.locfileid: "68184615"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, указывающее, что для сборки проекта, сразу же после его создания.  
+ Текст должен иметь значение `true` или `false` , что указывает, следует ли выполнять сборку проекта сразу после его создания.  
   
-## <a name="remarks"></a>Примечания  
- `BuildProjectOnLoad` является необязательным атрибутом. Значение по умолчанию — `false`.  
+## <a name="remarks"></a>Remarks  
+ `BuildProjectOnLoad` является необязательным атрибутом. Значение по умолчанию — `false`.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
@@ -86,7 +86,7 @@ ms.locfileid: "68184615"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Элемент TemplateContent (шаблоны Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

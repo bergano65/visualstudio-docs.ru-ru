@@ -1,5 +1,5 @@
 ---
-title: Элемент ASSEMBLY (расширение мастера шаблонов Visual Studio) | Документация Майкрософт
+title: Элемент Assembly (расширение мастера шаблонов Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184733"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Элемент Assembly (расширение мастера шаблонов Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает имя или строгое имя сборки, реализующей `IWizard` интерфейс.  
+Задает имя или строгое имя сборки, реализующей `IWizard` интерфейс.  
   
- \<VSTemplate >  
-\<WizardExtension >  
-\<Сборка >  
+ \<VSTemplate>  
+\<WizardExtension>  
+\<Assembly>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,13 +53,13 @@ ms.locfileid: "68184733"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Данный текст задает сборку, которая реализует `IWizard` интерфейс. Имя сборки необходимо указать как полное имя сборки. Например, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Этот текст указывает сборку, реализующую `IWizard` интерфейс. Это имя сборки должно быть указано как полное имя сборки. Например, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  `Assembly` — обязательный дочерний элемент элемента `WizardExtension`.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения Windows.  
+ В следующем примере показаны метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -89,7 +89,7 @@ ms.locfileid: "68184733"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)

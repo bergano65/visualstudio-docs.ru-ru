@@ -1,5 +1,5 @@
 ---
-title: Элемент ASSEMBLY (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Assembly (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,22 +14,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184708"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Элемент Assembly (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает сведения о сборке, в шаблоне используется для добавления в проекты ссылки сборки.  
+Указывает сведения о сборке, которую шаблон использует для добавления ссылки на эту сборку в проекты.  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<Ссылки >  
- \<Ссылка >  
- \<Сборка >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<References>  
+ \<Reference>  
+ \<Assembly>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,9 +55,9 @@ ms.locfileid: "68184708"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Данный текст задает сборку, чтобы добавить в проект при создании экземпляра шаблона элемента. Имя сборки необходимо указать в одном из следующих способов:  
+ Этот текст указывает сборку, добавляемую в проект при создании экземпляра шаблона элемента. Это имя сборки должно быть указано одним из следующих способов:  
   
-- Как полное имя сборки. Например:  
+- Как полное имя сборки. Пример:  
   
     ```  
     <Assembly>  
@@ -65,19 +65,19 @@ ms.locfileid: "68184708"
     </Assembly>  
     ```  
   
-- Простой текст справки. Например:  
+- Как простая ссылка на текст. Пример:  
   
     ```  
     <Assembly> System </Assembly>  
     ```  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  `Assembly` — обязательный дочерний элемент элемента `Reference`.  
   
- `Reference`, `References,` И `Assembly` элементы могут использоваться только в VSTEMPLATE-файлов, которые имеют `Type` значение атрибута `Item`.  
+ `Reference`Элементы, `References,` и `Assembly` можно использовать только в VSTEMPLATE-файлах, имеющих `Type` значение атрибута `Item` .  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано `TemplateContent` элемент шаблона элемента. Этот XML-код добавляет ссылки на сборки System.dll и System.Data.dll.  
+ В следующем примере показан `TemplateContent` элемент шаблона элемента. Этот XML-файл добавляет ссылки на сборки System.dll и System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -97,6 +97,6 @@ ms.locfileid: "68184708"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

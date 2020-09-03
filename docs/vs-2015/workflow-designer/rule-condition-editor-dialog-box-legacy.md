@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846336"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор условий для правила» (для прежних версий)
-В этом разделе описывается использование диалогового окна **Редактор условий правил** в [!INCLUDE[wfd1](../includes/wfd1-md.md)]устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Редактор условий правил** в устаревшей версии [!INCLUDE[wfd1](../includes/wfd1-md.md)] . [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Условия декларативного правила создаются и изменяются с помощью диалогового окна **Редактор условий правил** . Эти условия правила представляются как свойства в следующих готовых действиях Windows Workflow Foundation:
 
@@ -35,19 +35,19 @@ ms.locfileid: "75846336"
 
 - [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [статемачиневоркфловактивити](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
   Доступ к диалоговому окну **Редактор условий правил** можно получить с помощью [диалогового окна Выбор условия (прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
   В следующей таблице описаны элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса диалогового окна **Редактор условий правил** .
 
-|Элемент интерфейса|Описание|
+|Элемент пользовательского интерфейса|Описание|
 |----------------|-----------------|
 |**Выполняет**|Введите выражение для условия правила.|
 |**OK**|Нажмите для сохранения условия правила.|
 
 ## <a name="entering-condition-expressions"></a>Введите выражения условий.
- Выражения условий вводятся как текст. Это можно ввести **.** в редактор для ссылки на поля, свойства и методы, используемые в рабочем процессе, с помощью меню, похожего на IntelliSense. Либо можно прямо ввести имя члена рабочего процесса. К условию можно добавить логические операторы, например AND ("И"), OR ("ИЛИ") и NOT ("НЕ"). Также можно добавлять предикаты. Предикат - это бинарный оператор и два операнда. Поддерживаются бинарные операторы: **==** , **>** , **\<** , **>=** и **<=** . Поддерживаемые операнды - константа арифметическая функция и члены с соответствующей областью действия.
+ Выражения условий вводятся как текст. Это можно ввести **.** в редактор для ссылки на поля, свойства и методы, используемые в рабочем процессе, с помощью меню, похожего на IntelliSense. Либо можно прямо ввести имя члена рабочего процесса. К условию можно добавить логические операторы, например AND ("И"), OR ("ИЛИ") и NOT ("НЕ"). Можно также добавить предикаты. Предикат - это бинарный оператор и два операнда. Поддерживаются бинарные операторы: **==** ,, **>** **\<**, **>=** и **<=** . Поддерживаемые операнды - константа арифметическая функция и члены с соответствующей областью действия.
 
  Можно указать тип для сравнения, а также сравнить со **значением NULL** или с пустой строкой. Можно создать вложенные вызовы к членам в переменных, которые содержат сложный тип, например `this.Address.State == "WA"`.
 
@@ -55,13 +55,13 @@ ms.locfileid: "75846336"
 
 - Реляционные операторы: ==, =, !=
 
-- Операторы сравнения: <, \<=, >, > =
+- Операторы сравнения: <, \<=, > , >=
 
 - Арифметические операторы: +, -, *, /, MOD
 
-- Логические операторы: и, & & или, &#124; &#124;, not,!
+- Логические операторы: и,  && или,  &#124;&#124;, NOT,!
 
-- Побитовые операторы: &,&#124;
+- Побитовые операторы: &, &#124;
 
   Приоритет оператора выражения определяется правилами приоритета операторов языка C#.
 
@@ -81,5 +81,5 @@ ms.locfileid: "75846336"
 
   Дополнительные сведения об условиях см. [в разделе Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) [SELECT условие (устаревший)](../workflow-designer/select-condition-dialog-box-legacy.md) [Использование условий в рабочих процессах](https://msdn2.microsoft.com/library/bb628447.aspx) [устаревший конструктор для Windows Workflow Foundation справки по пользовательскому интерфейсу](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
