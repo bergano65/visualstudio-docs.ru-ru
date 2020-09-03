@@ -1,5 +1,5 @@
 ---
-title: CaptureCurrentFrame | Документация Майкрософт
+title: CaptureCurrentFrame | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2718e800e2a31eb66319259ed1e43f2ab8b084c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161635"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
@@ -30,8 +30,8 @@ void CaptureCurrentFrame();
 ## <a name="remarks"></a>Примечания  
  Если в данный момент выполняется другой захват — например, запущенный функцией `BeginCapture` — тот захват завершается и записывается в журнал графики как отдельный кадр. Сразу же после этого диагностика графики начинает захват остатка текущего кадра, который также записывается как отдельный кадр. Окончание текущего кадра отмечено вызовом метода Present.  
   
- Для захвата кадра необходимо подготовить приложение к захвату и записи данных графики — то есть вам необходимо вызвать метод [Init](../debugger/init.md) через экземпляр `VsgDbg` класса перед вызовом метода `CaptureCurrentFrame`.  
+ Для захвата кадра необходимо подготовить приложение к захвату и записи данных графики, т. е. необходимо вызвать метод [Init](../debugger/init.md) посредством экземпляра класса `VsgDbg`, прежде чем вызывать `CaptureCurrentFrame`.  
   
-## <a name="see-also"></a>См. также  
- [Init](../debugger/init.md)   
+## <a name="see-also"></a>См. также:  
+ [Ini](../debugger/init.md)   
  [BeginCapture](../debugger/begincapture.md)

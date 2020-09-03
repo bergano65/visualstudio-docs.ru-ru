@@ -1,5 +1,5 @@
 ---
-title: Родительский элемент Документы Майкрософт
+title: Родительский элемент | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702219"
 ---
 # <a name="parent-element"></a>Родительский элемент
-Родитель кнопки или комбо-бокса может быть только группой. Родитель меню или группы может быть любым другим меню или группой. В [элементе Командного Помещения](../extensibility/commandplacement-element.md)этот элемент необходим; во всех других случаях это необязательно. Если этот элемент опущен, материнский `Group_Undefined:0` элемент будет подразумеваться.
+Родительским элементом кнопки или поля со списком может быть только группа. Родительским элементом меню или группы может быть любое другое меню или группа. В [элементе CommandPlacement](../extensibility/commandplacement-element.md)этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент опущен, то родительский объект `Group_Undefined:0` будет подразумеваемым.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,20 +34,20 @@ ms.locfileid: "80702219"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный элемент. GUID идентификатора команды GUID/ID.|
-|идентификатор|Обязательный элемент. Идентификатор идентификатора идентификатора команды GUID/ID.|
+|guid|Обязательный. Идентификатор GUID идентификатора команды GUID/ID.|
+|идентификатор|Обязательный. Идентификатор идентификатора команды GUID/ID.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствуют
+ Нет
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, которые VSPackage предоставляет интегрированной среде разработки (IDE). Например, пункты меню, меню, панели инструментов и комбо-коробки.|
-|[Элемент кнопки](../extensibility/buttons-element.md)|[Элементы элементов кнопки](../extensibility/button-element.md) групп.|
-|[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|
-|[Элемент группы](../extensibility/groups-element.md)|Содержит записи, определяющие командные группы VSPackage.|
+|[Коммандтабле, элемент](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, предоставляемые пакетом VSPackage в интегрированной среде разработки (IDE). Например, пункты меню, меню, панели инструментов и поля со списком.|
+|[Button, элемент](../extensibility/buttons-element.md)|Группирует элементы [элемента Button](../extensibility/button-element.md) .|
+|[Элемент menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|
+|[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, определяющие группы команд VSPackage.|
 
-## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

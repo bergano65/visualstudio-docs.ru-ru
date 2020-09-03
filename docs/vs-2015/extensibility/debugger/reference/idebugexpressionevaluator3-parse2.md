@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Документация Майкрософт
+title: IDebugExpressionEvaluator3::P arse2 | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c8629fb996dd020882ce81ae9975ccd799d863c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148968"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Преобразует строку выражения проанализированное выражение с учетом поставщик символов и адрес оценке кадра.  
+Преобразует строку выражения в проанализированное выражение, учитывая поставщик символов и адрес кадра вычисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,37 +52,37 @@ HRESULT Parse2 (
   
 #### <a name="parameters"></a>Параметры  
  `upstrExpression`  
- [in] Строка выражения, который необходимо проанализировать.  
+ окне Строка выражения для синтаксического анализа.  
   
  `dwFlags`  
- [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.  
+ окне Коллекция констант [парсефлагс](../../../extensibility/debugger/reference/parseflags.md) , определяющих способ синтаксического анализа выражения.  
   
  `nRadix`  
- [in] Основание системы счисления для использования для интерпретации все числовые данные.  
+ окне Основание системы счисления, используемое для интерпретации любых числовых данных.  
   
  `pSymbolProvider`  
- [in] Интерфейс поставщика символов.  
+ окне Интерфейс поставщика символов.  
   
  `pAddress`  
- [in] Адрес оценке кадра.  
+ окне Адрес вычисления кадра.  
   
  `pbstrError`  
- [out] Возвращает ошибку в виде удобочитаемого текста.  
+ заполняет Возвращает ошибку в виде текста, читаемого человеком.  
   
  `pichError`  
- [out] Возвращает позицию символа начинается ошибка в строке выражения.  
+ заполняет Возвращает позиции символа начала ошибки в строке выражения.  
   
  `ppParsedExpression`  
- [out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
+ заполняет Возвращает проанализированное выражение в объекте [идебугпарседекспрессион](../../../extensibility/debugger/reference/idebugparsedexpression.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод создает проанализированное выражение, а не фактического значения. Проанализированное выражение готов для вычисления, то есть преобразовать в значение.  
+## <a name="remarks"></a>Remarks  
+ Этот метод создает проанализированное выражение, а не фактическое значение. Проанализированное выражение готово к вычислению, то есть преобразованному в значение.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CEE** объекта, который предоставляет [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **CEE** , предоставляющего интерфейс [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) .  
   
 ```cpp#  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
@@ -136,5 +136,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

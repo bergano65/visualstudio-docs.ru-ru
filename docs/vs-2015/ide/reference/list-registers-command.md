@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659502"
 ---
 # <a name="list-registers-command"></a>Команда List Registers
@@ -35,8 +35,8 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Переключатели
- /Дисплай [{`register`&#124; `registerGroup`}...] Отображает значения указанного `register` или `registerGroup`. Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:
+## <a name="switches"></a>Коммутаторы
+ /Дисплай [{ `register`&#124;`registerGroup` }...] Отображает значения указанного `register` или `registerGroup` . Если `register` или `registerGroup` не задан, отображается список регистров по умолчанию. Аналогичное поведение применяется при отсутствии заданных параметров. Пример:
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,11 +46,11 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List отображает все группы регистров в списке.
 
- /Ватч [{`register`&#124; `registerGroup`}...] Добавляет одно или несколько `register` или `registerGroup` значений в список.
+ /Ватч [{ `register`&#124;`registerGroup` }...] Добавляет одно или несколько `register` `registerGroup` значений или в список.
 
- /Унватч [{`register`&#124; `registerGroup`}...] Удаляет одно или несколько `register` или `registerGroup` значений из списка.
+ /Унватч [{ `register`&#124;`registerGroup` }...] Удаляет одно или несколько `register` `registerGroup` значений или из списка.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
  Вместо `Debug.ListRegisters` можно использовать псевдоним `r`.
 
 ## <a name="example"></a>Пример
@@ -60,5 +60,5 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Основные сведения об отладке](../../debugger/debugging-basics-registers-window.md) [команд Visual Studio](../../ide/reference/visual-studio-commands.md) : окно "регистрация" [как использовать окно "регистры](../../debugger/how-to-use-the-registers-window.md) "

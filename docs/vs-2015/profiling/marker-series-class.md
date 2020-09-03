@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194935"
 ---
-# <a name="markerseries-class"></a>Класс marker_series
+# <a name="marker_series-class"></a>Класс marker_series
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Представляет последовательный канал событий, созданных одним поставщиком.  
@@ -35,14 +35,14 @@ class marker_series;
   
 ### <a name="public-constructors"></a>Открытые конструкторы  
   
-|name|ОПИСАНИЕ|  
+|name|Описание|  
 |----------|-----------------|  
 |[Конструктор marker_series::marker_series](../profiling/marker-series-marker-series-constructor.md)|Инициализирует новый экземпляр класса `marker_series`.|  
 |[Деструктор marker_series::~marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Удаляет объект marker_series и освобождает все выделенные ресурсы.|  
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|name|ОПИСАНИЕ|  
+|name|Описание|  
 |----------|-----------------|  
 |[Метод marker_series::is_enabled](../profiling/marker-series-is-enabled-method.md)|Определяет, разрешен ли поставщик данным сеансом.|  
 |[Метод marker_series::write_alert](../profiling/marker-series-write-alert-method.md)|Записывает оповещение в файл трассировки визуализатора параллелизма.|  
@@ -57,5 +57,5 @@ class marker_series;
   
  **Пространство имен:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>См. также  
- [Пространство имен diagnostic](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>См. также:  
+ [Пространство имен диагностики](../profiling/diagnostic-namespace.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters | Документация Майкрософт
+title: 'Идебугмесодфиелд:: Енумпараметерс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ebdd604ba97fda8751cf037e7494b59e7bb77ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162593"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
@@ -40,20 +40,20 @@ int EnumParameters(
   
 #### <a name="parameters"></a>Параметры  
  `ppParams`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список параметров метода; в противном случае возвращает значение null, если параметров нет.  
+ заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список параметров метода. в противном случае возвращает значение null, если нет параметров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если параметров нет. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает S_OK или возвращает S_FALSE, если нет параметров. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий различные типы параметров. Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод для каждого объекта, чтобы определить точно какого рода параметр представляет объект.  
+## <a name="remarks"></a>Remarks  
+ Каждый элемент является объектом [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющим различные типы параметров. Вызовите метод [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) для каждого объекта, чтобы точно определить, какой тип параметра представляет объект.  
   
- Параметр включает в себя, как его имя переменной, так и его тип. Первый параметр метода класса обычно является указатель «this».  
+ Параметр включает как имя переменной, так и ее тип. Первый параметр метода класса обычно является указателем this.  
   
- Если только типы параметров требуется, вызовите [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) метод.  
+ Если требуются только типы параметров, вызовите метод [енумаргументс](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) .  
   
-## <a name="see-also"></a>См. также  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+ [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+ [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md)   
  [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)

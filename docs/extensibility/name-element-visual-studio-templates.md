@@ -1,5 +1,5 @@
 ---
-title: Элемент имени (Visual Studio Templates) Документы Майкрософт
+title: Элемент Name (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702459"
 ---
-# <a name="name-element-visual-studio-templates"></a>Элемент имени (шаблоны Visual Studio)
-Упоньте название шаблона в том виде, в каком он появляется в поле диалога **New Project** или **добавить новый элемент.**
+# <a name="name-element-visual-studio-templates"></a>Элемент Name (шаблоны Visual Studio)
+Задает имя шаблона в том виде, в каком оно отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .
 
- \<VSTemplate \<> TemplateData> \<название>
+ \<VSTemplate> \<TemplateData>
+ \<Name>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,11 +43,11 @@ ms.locfileid: "80702459"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Package`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
-|`ID`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
+|`Package`|Необязательный атрибут для сложных пользовательских сценариев.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
+|`ID`|Необязательный атрибут для сложных пользовательских сценариев.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -59,11 +60,11 @@ ms.locfileid: "80702459"
 
  Текстом передается имя шаблона.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  `Name` — обязательный дочерний элемент элемента `TemplateData`.
 
 ## <a name="example"></a>Пример
- В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +91,5 @@ ms.locfileid: "80702459"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

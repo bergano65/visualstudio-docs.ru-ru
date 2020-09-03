@@ -1,5 +1,5 @@
 ---
-title: Выберите диалоговое окно точек останова | Документация Майкрософт
+title: Диалоговое окно "Выбор точек останова" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161626"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Диалоговое окно «Выбор точек останова»
@@ -40,11 +40,11 @@ ms.locfileid: "68161626"
  **Точки останова**  
  Перечисляются все возможные точки останова, которые могут быть заданы на основании неоднозначных входных данных. Для установки можно выбрать одну или более точек останова.  
   
- **Все**  
+ **все**  
  Выбираются все точки останова, перечисленные в окне **Точки останова**.  
   
  **None**  
  Отменяются все точки останова, перечисленные в окне **Точки останова**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Использование точек останова](../debugger/using-breakpoints.md)

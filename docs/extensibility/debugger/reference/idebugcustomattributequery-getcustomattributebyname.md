@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomАтрибуты::GetCustomАтрибутЫНаимен (ru) Документы Майкрософт
+title: 'Идебугкустоматтрибутекуери:: Жеткустоматтрибутебинаме | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732644"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-Извлекает пользовательский атрибут, учитывая его имя.
+Извлекает настраиваемый атрибут по его имени.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,19 +44,19 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>Параметры
 `pszCustomAttributeName`\
-(в) Название пользовательского атрибута.
+окне Имя настраиваемого атрибута.
 
 `ppBlob`\
-(в,аут) Массив байтов, содержащих пользовательские данные атрибутов.
+[вход, выход] Массив байтов, содержащих данные настраиваемых атрибутов.
 
 `pdwLen`\
-(ваут) Длина в байтах `ppBlob` параметра.
+заполняет Длина параметра в байтах `ppBlob` .
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае успеха возвращает `S_OK`. Если пользовательского атрибута `S_FALSE`не существует, возвращается . В противном случае возвращается код ошибки.
+В случае успеха возвращает `S_OK`. Если пользовательский атрибут не существует, возвращает значение `S_FALSE` . В противном случае возвращается код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugClassFieldSymbol,** который предоставляет интерфейс [IDebugCustomAttribute'ry.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугклассфиелдсимбол** , предоставляющего интерфейс [идебугкустоматтрибутекуери](../../../extensibility/debugger/reference/idebugcustomattributequery.md) .
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(
@@ -93,5 +93,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomАтрибутикеи (ru) Документы Майкрософт
+title: Идебугкустоматтрибутекуери | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 598db5ad711c8b61339e188311c1a437a24d013c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732621"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
-Представляет запрос для пользовательских атрибутов на методе или типе.
+Представляет запрос для настраиваемых атрибутов метода или типа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,16 +27,16 @@ IDebugCustomAttributeQuery : IUnknown
 ```
 
 ## <a name="methods"></a>Методы
- Этот интерфейс реализует следующие методы:
+ Этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Извлекает пользовательский атрибут, учитывая его имя.|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Определены определения в указанном пользовательском атрибуте.|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Извлекает настраиваемый атрибут по его имени.|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Определяет определение в указанном пользовательском атрибуте.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,5 +1,5 @@
 ---
-title: КЕРИРАЗЕВФУНК Документы Майкрософт
+title: КУЕРИЧАНЖЕСФУНК | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701632"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-Это функция обратного вызова, используемая в операции [Scc'eryChanges](../extensibility/sccquerychanges-function.md) для перечисления коллекции имен файлов и определения статуса каждого файла.
+Это функция обратного вызова, используемая операцией [скккуеричанжес](../extensibility/sccquerychanges-function.md) для перечисления коллекции имен файлов и определения состояния каждого файла.
 
- Функция `SccQueryChanges` получает список файлов и указатель `QUERYCHANGESFUNC` на обратный вызов. Плагин управления исходным элементом перечисляет данный список и предоставляет статус (через этот обратный вызов) для каждого файла в списке.
+ `SccQueryChanges`Функции предоставляется список файлов и указатель на `QUERYCHANGESFUNC` обратный вызов. Подключаемый модуль системы управления версиями перечисляет данные по заданному списку и предоставляет состояние (через этот обратный вызов) для каждого файла в списке.
 
-## <a name="signature"></a>Сигнатура
+## <a name="signature"></a>Подпись
 
 ```cpp
 typedef BOOL (*QUERYCHANGESFUNC)(
@@ -35,25 +35,25 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ```
 
 ## <a name="parameters"></a>Параметры
- pvCallerData
+ пвкаллердата
 
-(в) Параметр, `pvCallerData` пройденый абонентом (IDE) на [Scc'eryChanges](../extensibility/sccquerychanges-function.md). Плагин управления исходным элементом не должен делать никаких предположений о содержании этого значения.
+окне `pvCallerData` Параметр, передаваемый вызывающей стороной (интегрированной средой разработки) в [скккуеричанжес](../extensibility/sccquerychanges-function.md). Подключаемый модуль системы управления версиями не должен делать никаких предположений о содержимом этого значения.
 
- pChangesData
+ пчанжесдата
 
-(в) Указатель на структуру [структуры КЕЭРИТЕРЕСТЕРСЕСТЕРСЕДА,](#LinkQUERYCHANGESDATA) описывающую изменения в файле.
+окне Указатель на структуру [структуры куеричанжесдата](#LinkQUERYCHANGESDATA) , описывающую изменения в файле.
 
 ## <a name="return-value"></a>Возвращаемое значение
- IDE возвращает соответствующий код ошибки:
+ Интегрированная среда разработки возвращает соответствующий код ошибки:
 
 |Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Продолжайте обработку.|
 |SCC_I_OPERATIONCANCELED|Останавливает обработку.|
-|SCC_E_xxx|Любая соответствующая ошибка SCC должна прекратить обработку.|
+|SCC_E_xxx|Любая соответствующая ошибка SCC должна прерывать обработку.|
 
-## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a>Структура КЕРИТЕНЕСЕСТА
- Структура, передаваемые для каждого файла, выглядит следующим образом:
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> Структура КУЕРИЧАНЖЕСДАТА
+ Структура, передаваемая для каждого файла, выглядит следующим образом:
 
 ```cpp
 struct QUERYCHANGESDATA_A
@@ -75,28 +75,28 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- dwSize Размер этой структуры (в байтах).
+ Двсизе размер этой структуры (в байтах).
 
- lpFileName Исходное имя файла для этого элемента.
+ Лпфиленаме имя исходного файла для этого элемента.
 
- dwChangeType Код с указанием статуса файла:
+ Код Двчанжетипе, указывающий состояние файла:
 
 |Код|Описание|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|Не могу сказать, что изменилось.|
-|`SCC_CHANGE_UNCHANGED`|Имя не изменяется для этого файла.|
-|`SCC_CHANGE_DIFFERENT`|Файл с другим именем, но то же имя существует в базе данных.|
-|`SCC_CHANGE_NONEXISTENT`|Файл не существует ни в базе данных, ни локально.|
+|`SCC_CHANGE_UNKNOWN`|Не удается определить, что изменилось.|
+|`SCC_CHANGE_UNCHANGED`|Для этого файла не изменяются имена.|
+|`SCC_CHANGE_DIFFERENT`|Файл с другим удостоверением, но в базе данных существует такое же имя.|
+|`SCC_CHANGE_NONEXISTENT`|Файл не существует ни в базе данных, ни на локальном компьютере.|
 |`SCC_CHANGE_DATABASE_DELETED`|Файл удален в базе данных.|
-|`SCC_CHANGE_LOCAL_DELETED`|Файл удален локально, но файл все еще существует в базе данных. Если это не может `SCC_CHANGE_DATABASE_ADDED`быть определено, вернуться .|
-|`SCC_CHANGE_DATABASE_ADDED`|Файл, добавленный в базу данных, но не существует локально.|
+|`SCC_CHANGE_LOCAL_DELETED`|Файл удален локально, но файл по-прежнему существует в базе данных. Если это невозможно определить, возвращается `SCC_CHANGE_DATABASE_ADDED` .|
+|`SCC_CHANGE_DATABASE_ADDED`|Файл добавлен в базу данных, но не существует локально.|
 |`SCC_CHANGE_LOCAL_ADDED`|Файл не существует в базе данных и является новым локальным файлом.|
-|`SCC_CHANGE_RENAMED_TO`|Файл переименован или перемещен в `lpLatestName`базу данных как .|
-|`SCC_CHANGE_RENAMED_FROM`|Файл переименован или перемещен в `lpLatestName`базу данных с ; если это слишком дорого отслеживать, верните другой `SCC_CHANGE_DATABASE_ADDED`флаг, например.|
+|`SCC_CHANGE_RENAMED_TO`|Файл переименован или перемещен в базе данных как `lpLatestName` .|
+|`SCC_CHANGE_RENAMED_FROM`|Файл переименован или перемещен в базу данных из `lpLatestName` ; если это слишком дорого для трассировки, возвращается другой флаг, например `SCC_CHANGE_DATABASE_ADDED` .|
 
- lpLatestName Текущее имя файла для этого элемента.
+ Лплатестнаме текущее имя файла для этого элемента.
 
-## <a name="see-also"></a>См. также
-- [Функции обратного вызова, реализованные IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
+## <a name="see-also"></a>См. также раздел
+- [Функции обратного вызова, реализованные интегрированной средой разработки](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [Коды ошибок](../extensibility/error-codes.md)

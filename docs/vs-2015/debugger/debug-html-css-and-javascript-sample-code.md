@@ -1,5 +1,5 @@
 ---
-title: Отладка примера кода HTML, CSS и JavaScript | Документация Майкрософт
+title: Отладка кода HTML, CSS и JavaScript | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161474"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Отладка примера кода HTML, CSS и JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
+Применяется к Windows и Windows Phone] (.. /Video windows_and_phone_content.png "windows_and_phone_content")  
   
- В этом разделе приведен пример файла для [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
+ Приведенный в этом разделе код — это файл примера для статьи [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
   
 ## <a name="sample-code"></a>Пример кода  
- Следующий код HTML используется в кратком руководстве в теге \<body>.  
+ Следующий HTML-код используется в \<body> теге в кратком руководстве.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -104,5 +104,5 @@ ms.locfileid: "68161474"
 })();  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

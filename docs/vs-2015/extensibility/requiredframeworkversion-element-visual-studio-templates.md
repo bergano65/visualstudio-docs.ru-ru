@@ -1,5 +1,5 @@
 ---
-title: Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Рекуиредфрамеворкверсион (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,20 +12,20 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ce312d7951f4c1be720604c006f9afcd63f364d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163655"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает Минимальная версия .NET Framework, требуемый шаблоном. Иерархия схемы.  
+Указывает минимальную версию .NET Framework, необходимую для шаблона. Иерархия схемы.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<RequiredFrameworkVersion >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<RequiredFrameworkVersion>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,17 +46,17 @@ ms.locfileid: "68163655"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Классификация шаблона и определение его отображения в диалоговом окне " **Новый проект** " или " **Добавление нового элемента** ".|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть минимальный номер версии платформы .NET Framework, которая необходима для шаблона.  
+ Текст должен быть минимальным номером версии .NET Framework, который необходим для шаблона.  
   
-## <a name="remarks"></a>Примечания  
- `RequiredFrameworkVersion` — это необязательный элемент. Этот элемент используется в том случае, если шаблон поддерживает только определенную минимальную версию и более поздних версий, если таковое имеется, платформы .NET Framework.  
+## <a name="remarks"></a>Remarks  
+ Параметр `RequiredFrameworkVersion` является необязательным элементом. Используйте этот элемент, если шаблон поддерживает только определенную минимальную версию, а более поздние версии .NET Framework.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

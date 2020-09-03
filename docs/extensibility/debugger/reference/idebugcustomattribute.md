@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomАтрибут (англ.) Документы Майкрософт
+title: Идебугкустоматтрибуте | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732675"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
-Этот интерфейс представляет собой пользовательский атрибут и может предоставить тип имени, родительских и классов.
+Этот интерфейс представляет пользовательский атрибут и может предоставить имя, родительский объект и тип класса атрибута.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,33 +28,33 @@ ms.locfileid: "80732675"
 IDebugCustomAttribute : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Поставщик символов реализует этот интерфейс для поддержки пользовательских атрибутов, связанных с символом. Как правило, он реализуется на своем собственном объекте.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Поставщик символов реализует этот интерфейс для поддержки настраиваемых атрибутов, связанных с символом. Обычно он реализуется для собственного объекта.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Вызов [в Следующую](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) возвращает этот интерфейс. Вызов в метод [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) возвращает интерфейс [IEnumDebugCustomAttributes.](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызов функции [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) возвращает этот интерфейс. Вызов метода [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) возвращает интерфейс [иенумдебугкустоматтрибутес](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) .
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugCustomAttribute`.
+ В следующей таблице показаны методы `IDebugCustomAttribute` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Получает поле, к которому прикрепляется текущий атрибут.|
-|[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Получает пользовательский тип класса атрибутов.|
-|[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Получает название пользовательского атрибута.|
-|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Получает информацию о атрибутах в виде капли байтов.|
+|[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|Возвращает поле, к которому присоединен текущий атрибут.|
+|[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|Возвращает тип класса настраиваемого атрибута.|
+|[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Возвращает имя настраиваемого атрибута.|
+|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Возвращает сведения об атрибуте в виде большого двоичного объекта в байтах.|
 
-## <a name="remarks"></a>Примечания
- Пользовательский атрибут — это структура для C, которая поставляет пользовательские метаданные, связанные с определенным классом или методом.
+## <a name="remarks"></a>Remarks
+ Настраиваемый атрибут — это структура C#, которая предоставляет пользовательские метаданные, связанные с определенным классом или методом.
 
 ## <a name="requirements"></a>Требования
- Заголовок: sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Читать Документы Майкрософт
+title: 'IDebugDisassemblyStream2:: Read | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732092"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Читает инструкции, начиная с текущего положения в потоке разборки.
+Считывает инструкции, начиная с текущей позицией в потоке дизассемблированного кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,28 +47,28 @@ int Read( 
 
 ## <a name="parameters"></a>Параметры
 `dwInstructions`\
-(в) Количество инструкций по разбору. Это значение также является максимальной длиной массива. `prgDisassembly`
+окне Количество инструкций для разсборки. Это значение также является максимальной длиной `prgDisassembly` массива.
 
 `dwFields`\
-(в) Комбинация флагов из [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) перечисления, которые `prgDisassembly` указывают, какие поля должны быть заполнены.
+окне Сочетание флагов из перечисления [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) , которые указывают, какие поля должны `prgDisassembly` быть заполнены.
 
 `pdwInstructionsRead`\
-(ваут) Возвращает количество инструкций, фактически разобранных.
+заполняет Возвращает количество фактически собранных инструкций.
 
 `prgDisassembly`\
-(ваут) Массив структур [DisassemblyData,](../../../extensibility/debugger/reference/disassemblydata.md) заполненный разобранным кодом, по одной структуре на разобранную инструкцию. Длина этого массива определяется `dwInstructions` параметром.
+заполняет Массив структур [дисассемблидата](../../../extensibility/debugger/reference/disassemblydata.md) , которые заполняются с помощью разсобранного кода, одной структуры на каждую разобранную инструкцию. Длина этого массива определяется `dwInstructions` параметром.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Максимальное количество инструкций, доступных в текущей области, можно получить, позвонив в метод [GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
+## <a name="remarks"></a>Remarks
+ Максимальное количество инструкций, доступных в текущей области, можно получить, вызвав [метод метода](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) superscope.
 
- Текущее положение, из которой читается следующая инструкция, может быть изменено, позвонив в метод [Seek.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+ Текущую позицию, из которой считывается следующая инструкция, можно изменить, вызвав метод [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
 
- Флаг `DSF_OPERANDS_SYMBOLS` может быть добавлен `DSF_OPERANDS` к `dwFields` флагу в параметре, чтобы указать, что имена символов должны использоваться при демонтаже инструкций.
+ `DSF_OPERANDS_SYMBOLS`Флаг можно добавить к `DSF_OPERANDS` флагу в `dwFields` параметре, чтобы указать, что при разсборке инструкций следует использовать имена символов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

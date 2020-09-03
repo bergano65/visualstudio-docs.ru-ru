@@ -11,22 +11,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e371056f367588005001b4d77b8e80a2e9cb67d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149078"
 ---
-# <a name="mparent-field"></a>Поле m_parent
+# <a name="m_parent-field"></a>Поле m_parent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Резервное поле для родительской задачи <xref:System.Threading.Tasks.Task>.
+Резервное поле для родителя задачи <xref:System.Threading.Tasks.Task> .
 
 **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
 **Сборка:** mscorlib (в mscorlib.dll)
 
-Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,6 +34,6 @@ ms.locfileid: "68149078"
 .field private initonly class System.Threading.Tasks.Task m_parent
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
