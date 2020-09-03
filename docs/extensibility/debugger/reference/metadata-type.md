@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE Документы Майкрософт
+title: METADATA_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714286"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
-Эта структура определяет информацию о типе поля, взятом из метаданных.
+Эта структура задает сведения о типе поля, взятого из метаданных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,29 +45,29 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>Параметры
  `ulAppDomainID`\
- Id приложения, из которого пришел символ. Это используется для однозначной идентификации экземпляра приложения.
+ Идентификатор приложения, от которого получен символ. Используется для уникальной идентификации экземпляра приложения.
 
  `guidModule`\
- GUID модуля, содержащего это поле.
+ Идентификатор GUID модуля, содержащего это поле.
 
  `tokClass`\
  Идентификатор маркера метаданных этого типа.
 
- (К) `_mdToken` является `typedef` для 32-битного `int`.
+ [C++] `_mdToken` — `typedef` для 32-разрядного `int` .
 
-## <a name="remarks"></a>Примечания
- Эта структура появляется как часть соединения в `dwKind` [структуре TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) когда `TYPE_KIND_METADATA` поле `TYPE_INFO` структуры устанавливается (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисления).
+## <a name="remarks"></a>Remarks
+ Эта структура отображается как часть объединения в структуре [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) , если `dwKind` поле `TYPE_INFO` структуры имеет `TYPE_KIND_METADATA` значение (Value из перечисления [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
- Значение `tokClass` представляет собой маркер метаданных, который однозначно идентифицирует тип. Подробную информацию о том, как интерпретировать верхние фрагменты идентификатора метаданных, можно узнать `CorTokenType` в файле corhdr.h в SDK .NET Framework.
+ `tokClass`Значение является маркером метаданных, уникальным образом определяющим тип. Дополнительные сведения о том, как интерпретировать верхние биты идентификатора маркера метаданных, см. в описании `CorTokenType` перечисления в файле корхдр. h в пакете SDK .NET Framework.
 
 ## <a name="requirements"></a>Требования
- Заголовок: sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

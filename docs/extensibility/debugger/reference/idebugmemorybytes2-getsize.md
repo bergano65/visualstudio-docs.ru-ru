@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::GetSize Документы Майкрософт
+title: 'IDebugMemoryBytes2:: DataSize | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6de4eccb395059112dde40af36ce75798db9064b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727546"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Получает размер байтов памяти, представленной этим объектом [IDebugMemoryBytes2.](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+Получает размер (в байтах) памяти, представленной этим объектом [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,10 +42,10 @@ int GetSize(
 
 ## <a name="parameters"></a>Параметры
 `pqwSize`\
-(ваут) Возвращает размер в байтах пространства памяти.
+заполняет Возвращает размер в байтах для пространства памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

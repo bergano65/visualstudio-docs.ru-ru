@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL Документы Майкрософт
+title: METADATA_ADDRESS_RETVAL | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714276"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
-Эта структура представляет собой значение возврата от метода или функции.
+Эта структура представляет возвращаемое значение из метода или функции.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,28 +47,28 @@ public struct METADATA_ADDRESS_RETVAL {
 
 ## <a name="members"></a>Участники
  `tokMethod`\
- Идентификатор метода, для этого значения возврата.
+ Идентификатор метода, для которого это возвращаемое значение.
 
  `dwCorType`\
- Базовый тип значения возврата. Это значение из `CorElementType` перечисления, определенного в файле .NET Framework SDK corhdr.h.
+ Базовый тип возвращаемого значения. Это значение из `CorElementType` перечисления, определенного в файле .NET Framework SDK корхдр. h.
 
  `dwSigSize`\
- Размер подписи значения возврата (как `rgSig`хранится в).
+ Размер подписи возвращаемого значения (хранимой в `rgSig` ).
 
  `rgSig`\
- Массив байтов, формирующих подпись значения возврата.
+ Массив байтов, формирующих сигнатуру возвращаемого значения.
 
-## <a name="remarks"></a>Примечания
- Эта структура является частью соединения в `dwKind` [структуре DEBUG_ADDRESS_UNION,](../../../extensibility/debugger/reference/debug-address-union.md) когда `ADDRESS_KIND_RETVAL` поле `DEBUG_ADDRESS_UNION` структуры устанавливается (значение от [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления).
+## <a name="remarks"></a>Remarks
+ Эта структура является частью объединения в структуре [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , если `dwKind` поле `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND_RETVAL` значение (Value из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Требования
- Заголовок: sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

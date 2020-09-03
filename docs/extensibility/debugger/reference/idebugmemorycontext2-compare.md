@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Сравните Документы Майкрософт
+title: 'IDebugMemoryContext2:: Compare | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727493"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
-Сравнивает контекст памяти с каждым контекстом в данном массиве в порядке, указанном сравните флаги, возвращая индекс первого контекста, который совпадает.
+Сравнивает контекст памяти с каждым контекстом в заданном массиве способом, указанным в параметре Compare flags, и возвращает индекс первого соответствующего контекста.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,23 +48,23 @@ int Compare(
 
 ## <a name="parameters"></a>Параметры
 `compare`\
-(в) Значение из [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) перечисления, определяющее тип сравнения.
+окне Значение из перечисления [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) , определяющее тип сравнения.
 
 `rgpMemoryContextSet`\
-(в) Массив ссылок на объекты [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) для сравнения.
+окне Массив ссылок на объекты [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) для сравнения.
 
 `dwMemoryContextSetLen`\
-(в) Количество контекстов в `rgpMemoryContextSet` массиве.
+окне Количество контекстов в `rgpMemoryContextSet` массиве.
 
 `pdwMemoryContext`\
-(ваут) Возвращает индекс первого контекста памяти, удовлетворяет сравнение.
+заполняет Возвращает индекс первого контекста памяти, удовлетворяющего условию сравнения.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает, `E_COMPARE_CANNOT_COMPARE` если два контекста не могут быть сопоставлены.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает значение `E_COMPARE_CANNOT_COMPARE` , если не удается сравнить два контекста.
 
-## <a name="remarks"></a>Примечания
- Отладка двигателя (DE) не должны поддерживать все типы сравнений, `CONTEXT_EQUAL` `CONTEXT_LESS_THAN`но `CONTEXT_GREATER_THAN` `CONTEXT_SAME_SCOPE`он должен поддерживать по крайней мере , и .
+## <a name="remarks"></a>Remarks
+ Модуль отладки (de) не обязан поддерживать все типы сравнений, но должен поддерживать как минимум `CONTEXT_EQUAL` , `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` и `CONTEXT_SAME_SCOPE` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

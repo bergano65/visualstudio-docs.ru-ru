@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Выделение текста
           href: walkthrough-highlighting-text.md
-        - name: Структура
+        - name: Структуризация
           href: walkthrough-outlining.md
         - name: Отображение парных скобок
           href: walkthrough-displaying-matching-braces.md
@@ -898,7 +898,7 @@
   items:
     - name: Создание пакета средств разработки для программного обеспечения
       href: creating-a-software-development-kit.md
-    - name: 'Создание пакета SDK с помощью C# или Visual Basic'
+    - name: Создание пакета SDK с помощью C# или Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Создание пакета SDK с помощью C++
       href: walkthrough-creating-an-sdk-using-cpp.md

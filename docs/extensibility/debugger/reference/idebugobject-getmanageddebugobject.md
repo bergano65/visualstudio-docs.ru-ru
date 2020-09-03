@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::УправляемыйDebugObject (ru) Документы Майкрософт
+title: 'Идебугобжект:: Жетманажеддебугобжект | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726693"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
-Создает копию управляемого объекта в адресном пространстве движка отладки.
+Создает копию управляемого объекта в адресном пространстве модуля отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetManagedDebugObject(
 
 ## <a name="parameters"></a>Параметры
 `ppObject`\
-(ваут) Возвращает объект [IDebugManagedObject,](../../../extensibility/debugger/reference/idebugmanagedobject.md) представляющий вновь созданный управляемый объект.
+заполняет Возвращает объект [идебугманажедобжект](../../../extensibility/debugger/reference/idebugmanagedobject.md) , представляющий созданный управляемый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки. Возвращает E_FAIL, если этот [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) не представляет экземпляр управляемого класса значений.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки. Возвращает E_FAIL, если этот [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) не представляет экземпляр управляемого класса значения.
 
-## <a name="remarks"></a>Примечания
- Этот объект [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) должен представлять экземпляр управляемого `System.Decimal` класса значений, например экземпляр. Имея локальную копию, накладные расходы на вызов [Оценка](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) устраняется.
+## <a name="remarks"></a>Remarks
+ Этот объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) должен представлять экземпляр управляемого класса значения, например `System.Decimal` экземпляр. При наличии локальной копии издержки вызова метода [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) исключаются.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

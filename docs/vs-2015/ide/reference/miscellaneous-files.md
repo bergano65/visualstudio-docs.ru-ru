@@ -1,5 +1,5 @@
 ---
-title: Прочие файлы | Документы Майкрософт
+title: Прочие файлы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666853"
 ---
 # <a name="miscellaneous-files"></a>Прочие файлы
@@ -35,7 +35,7 @@ ms.locfileid: "72666853"
 
  Открытие файлов независимо от контейнера может понадобиться по разным причинам. Может возникнуть необходимость просмотреть файл в процессе разработки решения с проектами, однако файл не будет являться частью этого процесса. Типичными примерами таких файлов являются замечания о разработке или инструкции, схема базы данных и фрагменты кода. Кроме того, может понадобиться создать автономный файл.
 
- ![Проекты решений](../../ide/reference/media/projects-solutions-misc.gif "|::ref1::|")
+ ![Проекты решений](../../ide/reference/media/projects-solutions-misc.gif "Projects_Solutions_Misc")
 
  В обозревателе решений папка "Прочие файлы" отображается в случае, если для папки включены необходимые параметры. Эти параметры можно задать в диалоговом окне [Документы > Среда > Параметры](../../ide/reference/documents-environment-options-dialog-box.md). После закрытия прочего файла он не связывается с решением или проектом, если не установлен специальный параметр.
 
@@ -50,5 +50,5 @@ ms.locfileid: "72666853"
 ## <a name="folder-display-options"></a>Параметры отображения папки
  Для папки "Прочее" можно задать параметры отображения таким образом, чтобы она отображалась даже в том случае, если прочие файлы не открыты. Файл решения не контролирует список прочих файлов постоянно. Он использует дополнительную функцию, которая позволяет ему запоминать список последних использованных файлов для каждого пользователя.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Документы [и проекты решения](../../ide/solutions-and-projects-in-visual-studio.md) [, среда, диалоговое окно "Параметры"](../../ide/reference/documents-environment-options-dialog-box.md)

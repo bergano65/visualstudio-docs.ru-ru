@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535269"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор R)
@@ -51,10 +51,10 @@ ms.locfileid: "85535269"
 
     |Имя столбца|Тип данных|Разрешить значения NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**IsFalse**|
+    |**Идентификатор**|**int**|**False**|
     |**Тип**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**IsFalse**|
-    |**LastName**|**nvarchar(200)**|**IsFalse**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
     |**Менеджер**|**int**|**True**|
 
 3. Задайте столбец ID в качестве первичного ключа
@@ -70,7 +70,7 @@ ms.locfileid: "85535269"
 
 2. Скопируйте в таблицу следующие данные. (Его можно скопировать, а затем вставить в таблицу, выбрав всю строку на панели **результатов** .)
 
-    |**ID**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
+    |**Идентификатор**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -184,7 +184,7 @@ ms.locfileid: "85535269"
 
 3. Закройте форму. (В меню **Отладка** выберите команду **прерывать отладку**.)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

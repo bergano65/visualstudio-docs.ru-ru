@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_INFO Документы Майкрософт
+title: PENDING_BP_STATE_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714081"
 ---
 # <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
-Содержит информацию о состоянии точки разрыва, которая готова привязаться к местоположению кода.
+Содержит сведения о состоянии точки останова, готовой к привязке к расположению кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,22 +43,22 @@ public struct PENDING_BP_STATE_INFO { 
 
 ## <a name="members"></a>Участники
  `state`\
- Значение из [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) перечисления, которое определяет состояние ожидающего разрыва.
+ Значение из перечисления [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) , указывающее состояние ожидающей точки останова.
 
  `flags`\
- Комбинация флагов из [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) перечисления, которая определяет, является ли точка разрыва виртуализированной.
+ Сочетание флагов из перечисления [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) , которое указывает, является ли точка останова виртуализированной.
 
-## <a name="remarks"></a>Примечания
- Эта структура передается методу [GetState,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) где она заполняется.
+## <a name="remarks"></a>Remarks
+ Эта структура передается в [метод WebMethod](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) , где он заполнен.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
 - [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)

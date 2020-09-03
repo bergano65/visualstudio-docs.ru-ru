@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryКонтекст2::GetInfo Документы Майкрософт
+title: IDebugMemoryContext2::/info | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727465"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Извлекает [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуру, описываемую контекст.
+Извлекает структуру [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) , описывающую контекст.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,15 +44,15 @@ int GetInfo(
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Комбинация флагов [из CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисления, которые указывают, какие поля [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры должны быть заполнены.
+окне Сочетание флагов из перечисления [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) , которое указывает, какие поля структуры [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) должны заполняться.
 
 `pInfo`\
-(в, вне) Структура, `CONTEXT_INFO` которая заполнена.
+[вход, выход] `CONTEXT_INFO` Заполненная структура.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

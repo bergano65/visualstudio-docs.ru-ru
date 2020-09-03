@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476788"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка изолированного профилировщика
@@ -48,13 +48,13 @@ ms.locfileid: "77476788"
      **start %COMSPEC%**  
   
     > [!NOTE]
-    > Подробные инструкции по настройке пакета сервера символов см. в разделе [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Подробные инструкции по настройке пакета сервера символов см. [в разделе руководство. справочные сведения о символах Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Для сериализации символов в файл данных профилирования (VSP) используется средство [VSPerfReport](../profiling/vsperfreport.md). Следует использовать параметры **VSPerfReport /summary:all /packsymbols**. Если символы в файл данных не вставлены, убедитесь в том, что переменная среды _NT_SYMBOL_PATH задана.  
   
 ## <a name="see-also"></a>См. также:  
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Пошаговое руководство. Профилирование из командной строки с помощью выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Пошаговое руководство. Профилирование из командной строки с помощью метода инструментирования](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Пошаговое руководство. Профилирование из командной строки с использованием выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Пошаговое руководство. Профилирование из командной строки с помощью инструментирования](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Инструкции: справочные сведения о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

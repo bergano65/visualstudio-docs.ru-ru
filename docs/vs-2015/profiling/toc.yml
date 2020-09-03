@@ -12,9 +12,9 @@
           href: memory-usage.md
         - name: Использование памяти без отладки
           href: memory-usage-without-debugging2.md
-    - name: Загрузка ЦП
+    - name: Использование ЦП
       items:
-        - name: Загрузка ЦП
+        - name: Использование ЦП
           href: cpu-usage.md
         - name: Анализ использования ЦП
           href: analyze-cpu-usage-in-a-windows-universal-app.md
@@ -34,7 +34,7 @@
       items:
         - name: Скорость реагирования ИП HTML
           href: html-ui-responsiveness.md
-        - name: Повышение скорости отклика пользовательского интерфейса (HTML)
+        - name: Повышение скорости реагирования пользовательского интерфейса (HTML)
           href: walkthrough-improving-ui-responsiveness-html.md
     - name: Обозреватель производительности
       items:
@@ -42,9 +42,9 @@
           href: performance-explorer.md
         - name: "Средства производительности в приложениях Windows\_8 и Windows Server\_2012"
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
-        - name: Общие сведения
+        - name: Разделы общих сведений
           items:
-            - name: Общие сведения
+            - name: Разделы общих сведений
               href: overviews-performance-tools.md
             - name: Общие сведения о сеансе анализа производительности
               href: performance-session-overview.md
@@ -66,9 +66,9 @@
               href: performance-session-properties.md
             - name: Профилирование и безопасность Windows Vista
               href: profiling-and-windows-vista-security.md
-        - name: Приступая к работе
+        - name: Начало работы
           items:
-            - name: Приступая к работе
+            - name: Начало работы
               href: getting-started-with-performance-tools.md
             - name: Руководство по профилированию производительности для начинающих
               href: beginners-guide-to-performance-profiling.md
@@ -178,7 +178,7 @@
                           href: dotnet-framework-usage-performance-rules.md
                         - name: DA0001. Использование StringBuilder для объединений
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: частые коллекции GC2'
+                        - name: DA0005. Часто используемые коллекции GC2
                           href: da0005-frequent-gc2-collections.md
                         - name: DA0006. Переопределение Equals() для типов значений
                           href: da0006-override-equals-parens-for-value-types.md
@@ -186,21 +186,21 @@
                           href: da0007-avoid-using-exceptions-for-control-flow.md
                         - name: DA0010. Затратный метод GetHashCode
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: затратное CompareTo'
+                        - name: DA0011. Затратный метод CompareTo
                           href: da0011-expensive-compareto.md
                         - name: DA0012. Слишком много вызовов метода Reflection
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: интенсивное использование String.Split или String.Substring'
+                        - name: DA0013. Интенсивное использование String.Split или String.Substring
                           href: da0013-high-usage-of-string-split-or-string-substring.md
                         - name: DA0018. 32-битное приложение выполняется с ограничениями управляемой памяти процесса
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: 'DA0021: Высокая доля сборок мусора в генерации 1'
+                        - name: DA0021. Высокая доля сборок мусора в генерации 1
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: 'DA0022: Высокая доля сборок мусора в генерации 2'
+                        - name: DA0022. Высокая доля сборок мусора в генерации 2
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: DA0023. Высокое время ЦП ГК
+                        - name: DA0023. Высокое время сборки мусора в ЦП
                           href: da0023-high-gc-cpu-time.md
-                        - name: DA0024. Избыточное время ЦП ГК
+                        - name: DA0024. Избыточное время сборки мусора в ЦП
                           href: da0024-excessive-gc-cpu-time.md
                         - name: DA0038. Большое число конфликтов при блокировке
                           href: da0038-high-rate-of-lock-contentions.md
@@ -210,27 +210,27 @@
                       items:
                         - name: Правила производительности памяти и подкачки
                           href: memory-and-paging-performance-rules.md
-                        - name: 'DA0014: исключительно высокая скорость подкачки активной памяти на диск'
+                        - name: DA0014. Исключительно высокая скорость подкачки активной памяти на диск
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: высокая скорость подкачки активной памяти на диск'
+                        - name: DA0017. Высокая скорость подкачки активной памяти на диск
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Правила использования средств профилирования
                       items:
                         - name: Правила использования средств профилирования
                           href: profiling-tools-usage-rules.md
-                        - name: 'DA0002: отсутствует файл VSPerfCorProf.dll'
+                        - name: DA0002. Отсутствует файл VSPerfCorProf.dll
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: DA0003. Много выборок в режиме ядра
                           href: da0003-many-kernel-samples.md
-                        - name: 'DA0004: потребление значительных ресурсов процессора'
+                        - name: DA0004. Потребление значительных ресурсов процессора
                           href: da0004-high-processor-usage.md
-                        - name: DA0008. Собрано несколько образцов
+                        - name: DA0008. Собрано мало выборок
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: обработка чрезмерного времени ядра ЦП'
+                        - name: DA0026. Обработка чрезмерного времени ядра ЦП
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: неподдерживаемая версия среды CLR'
+                        - name: DA0029. Неподдерживаемая версия среды CLR
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: сбор измерений взаимодействия уровней для проектов баз данных'
+                        - name: DA0030. Сбор измерений взаимодействия уровней для проектов баз данных
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Правила производительности отслеживания ресурсов
                       items:
@@ -238,11 +238,11 @@
                           href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: средняя загрузка ЦП профилируемым процессом.'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: DA0502. Максимальное использование ЦП профилируемым процессом
+                        - name: DA0502. Максимальная загрузка ЦП профилируемым процессом
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
                         - name: DA0503. Средний рабочий набор в байтах для профилируемого процесса
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: DA0505. Максимальный рабочий набор в байтах для профилируемого процесса
+                        - name: DA0504. Максимальный рабочий набор в байтах для профилируемого процесса
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0505. Среднее число байт исключительного пользования, распределенное для профилируемого процесса'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
@@ -266,7 +266,7 @@
                       href: summary-view.md
                     - name: Представление "Дерево вызовов"
                       href: call-tree-view.md
-                    - name: Представление «Вызывающий/вызываемый»
+                    - name: представление "Вызывающий/вызываемый"
                       href: caller-callee-view.md
                     - name: Представление "Модули"
                       href: modules-view.md
@@ -318,7 +318,7 @@
                       href: dotnet-memory-data-views.md
                     - name: Представление "Сводка"
                       href: summary-view-dotnet-memory-data.md
-                    - name: Представление выделения
+                    - name: Представление "Выделения"
                       href: dotnet-memory-allocations-view.md
                     - name: Представление "Время существования объектов"
                       href: object-lifetime-view.md
@@ -326,21 +326,21 @@
                       href: call-tree-view-dotnet-memory-sampling-data.md
                     - name: Представление "Модули" — выборка
                       href: modules-view-dotnet-memory-sampling-data.md
-                    - name: Представление "Вызывающий/вызываемый" —выборка
+                    - name: "Представление \"Вызывающий/вызываемый\"\_— выборка"
                       href: caller-callee-view-dotnet-memory-sampling-data.md
-                    - name: Представление "Функции" — выборка
+                    - name: "Представление \"Функции\"\_— выборка"
                       href: functions-view-dotnet-memory-sampling-data.md
                     - name: Представление "Строки" — выборка
                       href: lines-view-dotnet-memory-sampling-data.md
-                    - name: Представление указателей инструкций — выборка
+                    - name: Представление "Указатели инструкций" — выборка
                       href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
-                    - name: Представление "Дерево вызовов" — инструментирование
+                    - name: "Представление \"Дерево вызовов\"\_— инструментирование"
                       href: call-tree-view-dotnet-memory-instrumentation-data.md
                     - name: Представление "Модули" — инструментирование
                       href: modules-view-dotnet-memory-instrumentation-data.md
-                    - name: Представление "Вызывающий/вызываемый" — инструментирование
+                    - name: "Представление \"Вызывающий/вызываемый\"\_— инструментирование"
                       href: caller-callee-view-net-memory-instrumentation-data.md
-                    - name: Представление "Функции" — инструментирование
+                    - name: "Представление \"Функции\"\_— инструментирование"
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Представления данных о конфликтах ресурсов
                   items:
@@ -360,7 +360,7 @@
                       href: resource-details-view-contention-data.md
                     - name: Представление "Сведения о потоке"
                       href: thread-details-view-contention-data.md
-                    - name: Представление "Конфликты обращения к ресурсам"
+                    - name: Представление "Состязание за ресурсы"
                       href: resource-contentions-view-contention-data.md
                     - name: Представление "Процесс"
                       href: process-view-contention-data.md
@@ -416,9 +416,9 @@
               items:
                 - name: Профилирование автономных приложений
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Использование метода выборки для сбора статистики приложения
+                - name: Сбор статистики приложения с помощью метода выборки
                   items:
-                    - name: Использование метода выборки для сбора статистики приложения
+                    - name: Сбор статистики приложения с помощью метода выборки
                       href: collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md
                     - name: Запуск автономного приложения и сбор статистики приложения
                       href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
@@ -466,9 +466,9 @@
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Использование метода выборки для сбора статистики приложения
+                - name: Сбор статистики приложения с помощью метода выборки
                   items:
-                    - name: Использование метода выборки для сбора статистики приложения
+                    - name: Сбор статистики приложения с помощью метода выборки
                       href: collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md
                     - name: Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
@@ -502,9 +502,9 @@
               items:
                 - name: Службы профилирования
                   href: command-line-profiling-of-services.md
-                - name: Использование метода выборки для сбора статистики приложения
+                - name: Сбор статистики приложения с помощью метода выборки
                   items:
-                    - name: Использование метода выборки для сбора статистики приложения
+                    - name: Сбор статистики приложения с помощью метода выборки
                       href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                     - name: Присоединение профилировщика к службе .NET для сбора статистики приложения
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
@@ -566,11 +566,11 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Запуск
+                    - name: Начало
                       href: start.md
                     - name: Параметр CrossSession
                       href: crosssession.md
-                    - name: Выходные данные
+                    - name: Вывод
                       href: output.md
                     - name: WinCounter
                       href: wincounter.md
@@ -580,13 +580,13 @@
                       href: waitstart.md
                     - name: Параметр AutoMark
                       href: automark.md
-                    - name: Пользователь
+                    - name: User (Пользователь)
                       href: user-vsperfcmd.md
                     - name: Параметр QueryCounters
                       href: querycounters.md
                     - name: События
                       href: events-vsperfcmd.md
-                    - name: Shutdown
+                    - name: Завершить работу
                       href: shutdown.md
                     - name: Параметры GlobalOn и GlobalOff
                       href: globalon-and-globaloff.md
@@ -594,7 +594,7 @@
                       href: processon-and-processoff.md
                     - name: Параметры ThreadOn и ThreadOff
                       href: threadon-and-threadoff.md
-                    - name: сборка мусора
+                    - name: Сборка мусора
                       href: gc-vsperfcmd.md
                     - name: Launch
                       href: launch.md
@@ -616,7 +616,7 @@
                       href: lineoff.md
                     - name: Консоль
                       href: console.md
-                    - name: Состояние
+                    - name: Status
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md
@@ -700,7 +700,7 @@
               href: copy-selection.md
             - name: Вкладка "Текущий"
               href: current-tab.md
-            - name: Отчет операций диска
+            - name: Отчет об операциях с диском
               href: disk-operations-report-threads-view.md
             - name: Пустой сегмент временной шкалы
               href: empty-timeline-segment.md
@@ -852,5 +852,5 @@
                   href: cvwritemessage-function.md
         - name: Служебная программа с интерфейсом командной строки визуализатора параллелизма (CVCollectionCmd)
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: Анализ расхода энергии
+    - name: Анализ энергопотребления
       href: analyze-energy-use-in-store-apps.md

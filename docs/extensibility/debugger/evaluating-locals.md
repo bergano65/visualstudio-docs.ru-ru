@@ -1,5 +1,5 @@
 ---
-title: Оценка Местных жителей (ru) Документы Майкрософт
+title: Оценка локальных переменных | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738817"
 ---
-# <a name="evaluate-locals"></a>Оценить местных жителей
+# <a name="evaluate-locals"></a>Оценка локальных переменных
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) называется для получения стоимости местного, а также имя и тип местного. Поскольку значение локального зависит от текущего состояния программы, значение локального должно быть получено из памяти. Объект [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) используется для привязки объекта [IDebugField,](../../extensibility/debugger/reference/idebugfield.md) представляющего локальное место, содержащее значение. Это место в памяти представлено объектом [IDebugObject.](../../extensibility/debugger/reference/idebugobject.md)
+[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вызывается для получения значения локального, а также имени и типа локального компьютера. Так как значение локального объекта зависит от текущего состояния программы, значение локального объекта должно быть получено из памяти. Объект [идебугбиндер](../../extensibility/debugger/reference/idebugbinder.md) используется для привязки объекта [идебугфиелд](../../extensibility/debugger/reference/idebugfield.md) , представляющего локальный объект, с соответствующим местом в памяти, содержащим значение. Это расположение в памяти представлено объектом [идебугобжект](../../extensibility/debugger/reference/idebugobject.md) .
 
-Эта функциональность получения значения локального инкапсулируется в функции помощника, выполняющей следующие задачи:
+Эта функция извлечения значения локальной функции инкапсулирована в вспомогательную функцию, которая выполняет следующие задачи:
 
-1. Связывает `IDebugField` объект с памятью `IDebugObject` для получения объекта.
+1. Привязывает `IDebugField` объект к памяти для получения `IDebugObject` объекта.
 
-2. Получает значение из памяти. Это значение представлено как серия байтов.
+2. Возвращает значение из памяти. Это значение представлено в виде последовательности байтов.
 
-3. Форматы значения в зависимости от типа локального.
+3. Форматирует значение на основе типа локального объекта.
 
-4. Возвращает общий объект, содержащий значение локального значения. В C, это `object`, и в СЗ, `VARIANT`это .
+4. Возвращает универсальный объект, содержащий значение локального объекта. В C# это — `object` , а в C++ — `VARIANT` .
 
 ## <a name="managed-code"></a>Управляемый код
- Это реализация функции, которая извлекает значение локального в управляемом коде.
+ Это реализация функции, которая получает значение локального объекта в управляемом коде.
 
 ```csharp
 namespace EEMC
@@ -77,7 +77,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Неуправляемый код
- Это реализация функции, которая извлекает значение локального в неуправляемом коде. `FieldGetType`показано в [получении местных значений.](../../extensibility/debugger/getting-local-values.md)
+ Это реализация функции, которая получает значение локального объекта в неуправляемом коде. `FieldGetType` отображается в окне [получение локальных значений](../../extensibility/debugger/getting-local-values.md).
 
 ```cpp
 HRESULT FieldGetPrimitiveValue(
@@ -190,6 +190,6 @@ HRESULT FieldGetPrimitiveValue(
 ```
 
 ## <a name="see-also"></a>См. также
-- [Пример реализации местных жителей](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [Получить локальные значения](../../extensibility/debugger/getting-local-values.md)
 - [Контекст оценки](../../extensibility/debugger/evaluation-context.md)

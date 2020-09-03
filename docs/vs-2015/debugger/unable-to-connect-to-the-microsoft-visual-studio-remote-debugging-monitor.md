@@ -1,5 +1,5 @@
 ---
-title: Не удается подключиться к Microsoft Visual Studio Монитор удаленной отладки | Документация Майкрософт
+title: Не удается подключиться к монитору удаленной отладки Microsoft Visual Studio | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477063"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
@@ -61,9 +61,9 @@ ms.locfileid: "77477063"
   
 - Вы можете остановить работу удаленного отладчика и перезапустить его с учетной записью, используемой на локальном компьютере.  
   
-- Удаленный отладчик можно запустить из командной строки с параметром **/allow \<имя_пользователя>** параметр: `msvsmon /allow <username@computer>`  
+- Удаленный отладчик можно запустить из командной строки с параметром **/allow \<username>** параметр: `msvsmon /allow <username@computer>`.  
   
-- Добавить пользователя в список разрешений удаленного отладчика можно, выбрав пункт **Сервис/Разрешения**.  
+- Вы можете добавить пользователя к разрешениям удаленного отладчика (в окне удаленного отладчика, в **средствах и разрешениях**).  
   
 - Если описанные выше способы использовать нельзя, можно разрешить любому пользователю выполнять удаленную отладку. В окне удаленного отладчика откройте диалоговое окно **Сервис &gt; Параметры** . Если выбрать   **Без аутентификации**, то затем можно установить флажок **Разрешить отладку любому пользователю**. Однако этот параметр следует использовать, если нет другого выбора или если вы находитесь в частной сети.  
   
@@ -85,4 +85,4 @@ ms.locfileid: "77477063"
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>См. также:  
- [Удаленная отладка](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

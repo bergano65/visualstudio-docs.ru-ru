@@ -1,5 +1,5 @@
 ---
-title: Контекст оценки (англ.) Документы Майкрософт
+title: Контекст оценки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,31 +12,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738799"
 ---
 # <a name="evaluation-context"></a>Контекст оценки
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Когда движок отладки (DE) вызывает оценщика выражения (EE), три аргумента, которые передаются [EvaluateSync,](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) определяют контекст для поиска и оценки символов, как показано в следующей таблице.
+ Когда модуль отладки (DE) вызывает средство оценки выражений (EE), три аргумента, передаваемые в [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , определяют контекст для поиска и вычисления символов, как показано в следующей таблице.
 
 ## <a name="arguments"></a>Аргументы
 
 |Аргумент|Описание|
 |--------------|-----------------|
-|`pSymbolProvider`|Интерфейс [IDebugSymbolProvider,](../../extensibility/debugger/reference/idebugsymbolprovider.md) который определяет обработчик символов (SH), который будет использоваться для идентификации символа.|
-|`pAddress`|Интерфейс [IDebugAddress,](../../extensibility/debugger/reference/idebugaddress.md) который определяет текущую точку выполнения. Этот интерфейс находит метод, содержащий выполняемый код.|
-|`pBinder`|[Интерфейс IDebugBinder,](../../extensibility/debugger/reference/idebugbinder.md) который находит значение и тип символа, данного его имени.|
+|`pSymbolProvider`|Интерфейс [идебугсимболпровидер](../../extensibility/debugger/reference/idebugsymbolprovider.md) , указывающий обработчик символов (SH), используемый для обозначения символа.|
+|`pAddress`|Интерфейс [идебугаддресс](../../extensibility/debugger/reference/idebugaddress.md) , указывающий текущую точку выполнения. Этот интерфейс находит метод, содержащий выполняемый код.|
+|`pBinder`|Интерфейс [идебугбиндер](../../extensibility/debugger/reference/idebugbinder.md) , который находит значение и тип символа по его имени.|
 
- `IDebugParsedExpression::EvaluateSync`возвращает интерфейс [IDebugProperty2,](../../extensibility/debugger/reference/idebugproperty2.md) представляющий полученное значение и его тип.
+ `IDebugParsedExpression::EvaluateSync` Возвращает интерфейс [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , представляющий результирующее значение и его тип.
 
 ## <a name="see-also"></a>См. также
-- [Интерфейсы оценщика ключевых выражений](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
-- [Отображение местных жителей](../../extensibility/debugger/displaying-locals.md)
+- [Интерфейсы средства оценки ключевых выражений](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
+- [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)

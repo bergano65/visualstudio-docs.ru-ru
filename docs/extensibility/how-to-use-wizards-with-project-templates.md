@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905515"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Руководство. Использование мастеров с шаблонами проектов
@@ -242,7 +242,7 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
 
      Опять же, не забудьте кавычки. В выходных данных должна отобразиться строка, подобная следующей:
 
-     **Токен открытого ключа:\<token>**
+     **Токен открытого ключа: \<token>**
 
      Запишите это значение.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477086"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Практическое руководство. Устранение неполадок, связанных с шаблонами
@@ -58,7 +58,7 @@ ms.locfileid: "77477086"
 
 2. В левой области щелкните **Приложение**.
 
-3. Найдите события, у которых **имеет значение**Source`Visual Studio - VsTemplate`.
+3. Найдите события, у которых `Visual Studio - VsTemplate` имеет значение **Source**.
 
 4. Дважды щелкните событие шаблона, чтобы просмотреть ошибку.
 

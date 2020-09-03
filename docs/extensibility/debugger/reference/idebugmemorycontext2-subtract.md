@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Вычитание Документы Майкрософт
+title: 'IDebugMemoryContext2:: Subtract | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727446"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
@@ -44,18 +44,18 @@ int Subtract(
 
 ## <a name="parameters"></a>Параметры
 `dwCount`\
-(в) Количество байтов памяти до decrement.
+окне Число байтов памяти для уменьшения.
 
 `ppMemCxt`\
-(ваут) Возвращает новый объект [IDebugMemoryContext2.](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+заполняет Возвращает новый объект [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Контекст памяти — это адрес, поэтому вычитание значения из адреса создает новый адрес, требующий нового интерфейса контекста.
+## <a name="remarks"></a>Remarks
+ Контекст памяти — это адрес, поэтому при вычитании значения из адреса создается новый адрес, для которого требуется новый интерфейс контекста.
 
- Этот метод должен всегда создавать новый контекст, даже если полученный адрес находится за пределами пространства памяти, связанного с этим контекстом. Единственным исключением является, если память не может быть `ppMemCxt` выделена для нового контекста или если это нулевое значение (что является ошибкой).
+ Этот метод всегда должен создавать новый контекст, даже если полученный адрес находится вне области памяти, связанной с этим контекстом. Единственным исключением является то, что память не может быть выделена для нового контекста или если `ppMemCxt` является значением NULL (это ошибка).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

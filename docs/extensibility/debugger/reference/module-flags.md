@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS Документы Майкрософт
+title: MODULE_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714258"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
@@ -52,32 +52,32 @@ public enum enum_MODULE_FLAGS { 
 
 ## <a name="fields"></a>Поля
  `MODULE_FLAG_NONE`\
- Не указывается модуль.
+ Указывает, что модуль отсутствует.
 
  `MODULE_FLAG_SYSTEM`\
- Определяет модуль системы.
+ Указывает системный модуль.
 
  `MODULE_FLAG_SYMBOLS`\
- Определяет модуль символов.
+ Задает модуль символов.
 
  `MODULE_FLAG_64BIT`\
- Определяет 64-разрядный модуль.
+ Задает 64-разрядный модуль.
 
  `MODULE_FLAG_OPTIMIZED`\
- Специфика модуль была оптимизирована. Это состояние отражается в окне **модулей.**
+ Указывает, что модуль был оптимизирован. Это состояние отражается в окне **модули** .
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Специфика модуля не была оптимизирована. Это состояние отражается в окне **модулей.** Это состояние по умолчанию.
+ Указывает, что модуль не был оптимизирован. Это состояние отражается в окне **модули** . Это состояние по умолчанию.
 
-## <a name="remarks"></a>Примечания
- Используется для `m_dwModuleFlags` члена [структуры MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+## <a name="remarks"></a>Remarks
+ Используется для `m_dwModuleFlags` элемента структуры [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
- Эти флаги могут быть `OR`объединены с bitwise .
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

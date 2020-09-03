@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904976"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство. Создание пакета SDK на C# или Visual Basic
@@ -29,7 +29,7 @@ ms.locfileid: "85904976"
 ## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>Создание компонента среда выполнения Windows Симплемас
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Создание компонента среда выполнения Windows Симплемас
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -57,7 +57,7 @@ ms.locfileid: "85904976"
 
 9. В **Обозреватель решений**откройте контекстное меню для узла проекта **симплемас** и выберите пункт **Сборка**.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>Создание проекта расширения Симплемасвсикс
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Создание проекта расширения Симплемасвсикс
 
 1. В контекстном меню узла **решения "симплемас"** выберите **Добавить**  >  **Новый проект**.
 
@@ -154,7 +154,7 @@ ms.locfileid: "85904976"
 
 30. Нажмите кнопку **установить** , дождитесь завершения установки, а затем перезапустите Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Создание примера приложения, использующего библиотеку классов
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Создание примера приложения, использующего библиотеку классов
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -245,7 +245,7 @@ ms.locfileid: "85904976"
 
     Вы успешно создали и использовали пакет SDK для расширений.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Создание пакета SDK с помощью C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Пошаговое руководство. Создание пакета SDK с помощью JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Создание пакета средств разработки](../extensibility/creating-a-software-development-kit.md)

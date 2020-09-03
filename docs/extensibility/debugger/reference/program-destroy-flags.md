@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_DESTROY_FLAGS Документы Майкрософт
+title: PROGRAM_DESTROY_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713847"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
-Перечисляет действительные значения программы, уничтожая флаги.
+Перечисляет допустимые значения флагов удаления программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,15 +42,15 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 
 ## <a name="fields"></a>Поля
  `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
- Уничтожить программу, но продолжать отладить.
+ Уничтожить программу, но продолжить отладку.
 
-## <a name="remarks"></a>Примечания
- Перечисление возвращается методом [GetFlags.](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)
+## <a name="remarks"></a>Remarks
+ Перечисление возвращается методом- [flags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: Msdbg.h
+ Заголовок: Мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

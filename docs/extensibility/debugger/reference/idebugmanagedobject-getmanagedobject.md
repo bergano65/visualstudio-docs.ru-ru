@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::GetManagedObject Документы Майкрософт
+title: 'Идебугманажедобжект:: Жетманажедобжект | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727735"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>Параметры
 `ppManagedObject`\
-(ваут) Возвращает интерфейс, представляющий управляемый объект.
+заполняет Возвращает интерфейс, представляющий управляемый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Интерфейс, возвращенный из этого метода, может быть запрошен для любого интерфейса, реализованного управляемым классом, что позволяет вызывать его методы.
+## <a name="remarks"></a>Remarks
+ Интерфейс, возвращаемый из этого метода, можно запрашивать для любого интерфейса, реализованного управляемым классом, что позволяет вызывать его методы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

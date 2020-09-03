@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptАйдКомплектМероприятие2 (ru) Документы Майкрософт
+title: IDebugInterceptExceptionCompleteEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a07f2808c1aaeca3c1631fce658fdf6e8da32d60
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727761"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
-Этот интерфейс отправляется движком отладки (DE) менеджеру отладки сеанса (SDM), когда DE завершил обработку перехваченного события.
+Этот интерфейс отправляется модулем отладки (DE) в Диспетчер отладки сеансов (SDM) после завершения обработки перехваченного события.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,29 +28,29 @@ ms.locfileid: "80727761"
 IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- DE реализует этот интерфейс, чтобы сообщить, что обработка перехваченного исключения завершена. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует [QueryInterface](/cpp/atl/queryinterface) для `IDebugEvent2` доступа к интерфейсу.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Метод DE реализует этот интерфейс для сообщения о том, что обработка перехваченного исключения завершена. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. Модель SDM использует [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейсу.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- DE создает и отправляет объект этого события, чтобы сообщить о завершении перехваченного исключения. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) которая поставляется SDM при подключении к отладке программы.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Параметр DE создает и отправляет этот объект события, чтобы сообщить о завершении перехваченного исключения. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , предоставляемой SDM при присоединении к отлаживаемой программе.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- Интерфейс `IDebugInterceptExceptionCompleteEvent2` реализует следующие методы.
+ `IDebugInterceptExceptionCompleteEvent2`Интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Возвращает уникальное значение, связанное с обрабатываемым исключением.|
+|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Возвращает уникальное значение, связанное с обработанным исключением.|
 
-## <a name="remarks"></a>Примечания
- Это событие будет отправлено [InterceptCurrentException,](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) когда этот метод успешно завершит обработку перехваченного исключения.
+## <a name="remarks"></a>Remarks
+ Это событие будет отправлено [интерцепткуррентексцептион](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) , когда этот метод успешно завершил обработку перехваченного исключения.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

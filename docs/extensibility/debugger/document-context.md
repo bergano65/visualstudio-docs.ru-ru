@@ -1,5 +1,5 @@
 ---
-title: Контекст документов Документы Майкрософт
+title: Контекст документа | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 48fe651e69e5e2c97756788cc30e54454c26e51e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738917"
 ---
 # <a name="document-context"></a>Контекст документа
-При [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладке *контекст документа:*
+При [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладке — *контекст документа*:
 
-- Представляет позицию в исходном файле. Для языков, в которых исходный файл может не присутствовать, контекст документа определяет позицию в документе, обычно генерируемом средой времени выполнения. Например, движок скриптов может создать документ из скрипта. Для получения дополнительной информации [см.](../../extensibility/debugger/document-position.md)
+- Представляет расположение в исходном файле. Для языков, где исходный файл может отсутствовать, контекст документа определяет позицию в документе, обычно создаваемую средой выполнения. Например, обработчик сценариев может создать документ из скрипта. Дополнительные сведения см. в разделе [расположение документа](../../extensibility/debugger/document-position.md).
 
-- Описывает позицию в исходном документе, соответствующем контексту кода. Обработчик символов отображает контекст кода в контексте документации, используя информацию, генерируемую компилятором или переводчиком.
+- Описывает расположение в исходном документе, соответствующее контексту кода. Обработчик символов сопоставляет контекст кода с контекстом документации, используя сведения, созданные компилятором или интерпретатором.
 
-- Реализован интерфейсом [IDebugDocumentContext2.](../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- Реализуется с помощью интерфейса [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
 
 ## <a name="see-also"></a>См. также
 - [Контекст кода](../../extensibility/debugger/code-context.md)
 - [Поставщик символов](../../extensibility/debugger/symbol-provider.md)
 - [Интерфейсы поставщика символов](../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-- [Контексты debugger](../../extensibility/debugger/debugger-contexts.md)
+- [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::GetInfo Документы Майкрософт
+title: IDebugModule2::/info | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726961"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
-Получает информацию об этом модуле.
+Получает сведения об этом модуле.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,18 +44,18 @@ int GetInfo( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Комбинация флагов [из MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисления, которые `pInfo` определяют, какие поля должны быть заполнены.
+окне Сочетание флагов из перечисления [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) , определяющих поля, которые должны `pInfo` быть заполнены.
 
 `pInfo`\
-(в, вне) [Структура MODULE_INFO,](../../../extensibility/debugger/reference/module-info.md) заполненная описанием модуля.
+[вход, выход] Структура [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) , которая заполняется описанием модуля.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Структура [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) содержит название модуля, отображаемого в окне **модулей.**
+## <a name="remarks"></a>Remarks
+ Структура [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) содержит имя модуля, отображаемого в окне **модули** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

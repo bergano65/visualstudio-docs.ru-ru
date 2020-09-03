@@ -16,7 +16,7 @@
           href: automatic-feature-suspension.md
         - name: Практическое руководство. Запуск анализа кода вручную
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Пошаговое руководство. Анализ управляемого кода на наличие дефектов
+        - name: Пошаговое руководство. Проверка управляемого кода на наличие дефектов
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Подавление предупреждений при помощи атрибута SuppressMessage
           items:
@@ -24,7 +24,7 @@
               href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: Общие сведения о подавлении в исходном коде
               href: in-source-suppression-overview.md
-            - name: Практическое руководство. Отключение предупреждений с помощью пункта меню
+            - name: Практическое руководство. Отключение предупреждений при помощи пункта меню
               href: how-to-suppress-warnings-by-using-the-menu-item.md
             - name: Практическое руководство. Отключение предупреждений для созданного кода
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: CA1059. Члены не должны предоставлять определенные конкретные типы
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: CA1060. Переместите методы P/Invoke в класс NativeMethods
+                - name: 'CA1060: переместите P/Invokes в класс NativeMethods'
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: CA1061. Не скрывайте методы базовых классов
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -202,21 +202,21 @@
                   href: ca1308-normalize-strings-to-uppercase.md
                 - name: CA1309. Используйте порядковый параметр StringComparison
                   href: ca1309-use-ordinal-stringcomparison.md
-                - name: CA2101. Укажите тип маршалинга для строковых аргументов P/Invoke
+                - name: 'CA2101: укажите тип маршалинга для строковых аргументов P/Invoke'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: предупреждения взаимодействия
               items:
                 - name: предупреждения взаимодействия
                   href: interoperability-warnings.md
-                - name: CA1400. Для методов P/Invoke должны существовать точки входа
+                - name: 'CA1400: необходимо наличие точек входа P/Invoke'
                   href: ca1400-p-invoke-entry-points-should-exist.md
-                - name: CA1401. Методы P/Invoke не должны быть видимыми
+                - name: 'CA1401: методы P/Invoke не должны быть видимыми'
                   href: ca1401-p-invokes-should-not-be-visible.md
                 - name: CA1402. Избегайте перегрузок в видимых COM-интерфейсах
                   href: ca1402-avoid-overloads-in-com-visible-interfaces.md
                 - name: CA1403. Типы с автомакетом не должны быть видимыми для COM
                   href: ca1403-auto-layout-types-should-not-be-com-visible.md
-                - name: CA1404. Вызывайте GetLastError сразу после P/Invoke
+                - name: 'CA1404: вызывайте GetLastError сразу после P/Invoke'
                   href: ca1404-call-getlasterror-immediately-after-p-invoke.md
                 - name: 'CA1405. Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM'
                   href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -236,9 +236,9 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: CA1414. Пометьте логические аргументы P/Invoke с помощью MarshalAs
+                - name: 'CA1414: пометьте логические аргументы P/Invoke с помощью атрибута MarshalAs'
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-                - name: CA1415. Правильно объявляйте методы P/Invoke
+                - name: 'CA1415: правильно объявляйте методы P/Invoke'
                   href: ca1415-declare-p-invokes-correctly.md
                 - name: предупреждения удобства обслуживания
                   items:
@@ -356,7 +356,7 @@
                           href: portability-warnings.md
                         - name: CA1900. Поля типов значений должны быть переносимыми
                           href: ca1900-value-type-fields-should-be-portable.md
-                        - name: CA1901. Объявления P/Invoke должны быть переносимыми
+                        - name: 'CA1901: объявления P/Invoke должны быть переносимыми'
                           href: ca1901-p-invoke-declarations-should-be-portable.md
                         - name: CA1903. Используйте API только из целевой рабочей среды
                           href: ca1903-use-only-api-from-targeted-framework.md
@@ -580,11 +580,11 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: Общие сведения об анализе кода в C/C++
       href: code-analysis-for-c-cpp-overview.md
-    - name: Практическое руководство. Установка свойств анализа кода для проектов C/C++
+    - name: Практическое руководство. Задание свойств анализа кода для проектов C/C++
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: Пошаговое руководство. Анализ кода C/C++ на наличие дефектов
+    - name: Пошаговое руководство. Проверка кода C/C++ на наличие дефектов
       items:
-        - name: Пошаговое руководство. Анализ кода C/C++ на наличие дефектов
+        - name: Пошаговое руководство. Проверка кода C/C++ на наличие дефектов
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Пример Demo
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: Рекомендации и примеры
           href: best-practices-and-examples-sal.md
-        - name: Практическое руководство. Добавление дополнительных сведений о коде с помощью _Analysis_assume
+        - name: Практическое руководство. Добавление дополнительных сведений о коде с помощью __analysis_assume
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Анализ кода для предупреждений C/C++
           items:
@@ -1204,7 +1204,7 @@
               items:
                 - name: Создание настраиваемых наборов правил
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: Практическое руководство. Создание набора настраиваемых правил
+                - name: Практическое руководство. Создание настраиваемого набора правил
                   href: how-to-create-a-custom-rule-set.md
                 - name: Работа в редакторе набора правил
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1308,7 +1308,7 @@
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: Реализация пользовательских политик возврата для управляемого кода
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: Практическое руководство. Обеспечение поддерживаемого кода с помощью политики возврата с анализом кода
+                - name: Практическое руководство. Обеспечение простоты поддержки кода с помощью политики возврата с анализом кода
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: Совместимость версий для политик возврата анализа кода
                   href: version-compatibility-for-code-analysis-check-in-policies.md

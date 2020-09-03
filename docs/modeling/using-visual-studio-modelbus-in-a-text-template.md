@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535945"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
@@ -45,7 +45,7 @@ ms.locfileid: "85535945"
 
     5. Щелкните **преобразовать все шаблоны**.
 
-    6. Повторно создайте решение.
+    6. Выполните повторную сборку решения.
 
 2. Если вы хотите получить доступ к DSL как из текстового шаблона, так и из другого кода, например команды, скопируйте проект **ModelBusAdapter** :
 
@@ -257,7 +257,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. Создайте новый домен DSL с помощью шаблона минимального языкового решения. Присвойте языку имя Мбконсумер и задайте для расширения имени файла значение ". потреблено".
 
-2. В проекте DSL Добавьте ссылку на сборку DSL Мбпровидер. Щелкните правой кнопкой мыши `MBConsumer\Dsl\References` и выберите команду **Добавить ссылку**. На вкладке **Обзор** найдите`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. В проекте DSL Добавьте ссылку на сборку DSL Мбпровидер. Щелкните правой кнопкой мыши  `MBConsumer\Dsl\References` и выберите команду **Добавить ссылку**. На вкладке **Обзор** найдите `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     Это позволяет создавать код, использующий другой DSL. Если необходимо создать ссылки на несколько доменных языков, добавьте их также.
 

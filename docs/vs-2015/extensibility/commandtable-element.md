@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bb2b874f7bbe94e383e9e7fba755dcc373a93150
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477048"
 ---
 # <a name="commandtable-element"></a>Элемент CommandTable
@@ -46,28 +46,28 @@ ms.locfileid: "77477048"
   
 ### <a name="attributes"></a>Атрибуты  
   
-| attribute |                                                                                                                   Description                                                                                                                   |
+| Атрибут |                                                                                                                   Описание                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   xmlns   |                                   Обязательный элемент. Пространства имен XML:<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
-| Язык  | Необязательный параметр. Атрибут Language можно использовать для указания языка по умолчанию для всех \<строк, > элементов в таблице команд.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-US" |
+|   xmlns   |                                   Обязательный. Пространства имен XML:<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
+| язык  | Необязательный элемент. Атрибут Language можно использовать для указания языка по умолчанию для всех \<Strings> элементов в командной таблице.  Если язык не указан, будет использоваться язык текущего процесса:<br /><br /> Language = "en-US" |
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Description|  
+|Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент Extern](../extensibility/extern-element.md)|Необязательный параметр. Содержит директивы препроцессора для компилятора.|  
-|[Элемент Include](../extensibility/include-element.md)|Необязательный параметр. Содержит пути к любым файлам, которые необходимо включить в компиляцию.|  
-|[Элемент Define](../extensibility/define-element.md)|Необязательный параметр. Определяет символ с учетом его имени и значения.|  
-|[Commands, элемент](../extensibility/commands-element.md)|Необязательный параметр. Родительский элемент, определяющий все команды для VSPackage, которые содержат все остальные элементы.|  
-|[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Необязательный параметр. Определяет, где на панели команд должны размещаться команды.|  
-|[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Необязательный параметр. Определяет статическую видимость команд и панелей инструментов.|  
-|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Необязательный параметр. Задает сочетания клавиш, если они есть, для команд.|  
-|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Необязательный параметр. Позволяет пакету VSPackage при необходимости реализовать собственную версию функциональности, изначально поддерживаемую другими пакетами VSPackage.|  
-|[Элемент Symbols](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Необязательный параметр. Содержит любые символьные данные — идентификаторы GUID, идентификаторы и т. д. для компилятора.|  
+|[Элемент Extern](../extensibility/extern-element.md)|Необязательный элемент. Содержит директивы препроцессора для компилятора.|  
+|[Включить элемент](../extensibility/include-element.md)|Необязательный элемент. Содержит пути к любым файлам, которые необходимо включить в компиляцию.|  
+|[Элемент Define](../extensibility/define-element.md)|Необязательный элемент. Определяет символ с учетом его имени и значения.|  
+|[Commands, элемент](../extensibility/commands-element.md)|Необязательный элемент. Родительский элемент, определяющий все команды для VSPackage, которые содержат все остальные элементы.|  
+|[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Необязательный элемент. Определяет, где на панели команд должны размещаться команды.|  
+|[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Необязательный элемент. Определяет статическую видимость команд и панелей инструментов.|  
+|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Необязательный элемент. Задает сочетания клавиш, если они есть, для команд.|  
+|[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Необязательный элемент. Позволяет пакету VSPackage при необходимости реализовать собственную версию функциональности, изначально поддерживаемую другими пакетами VSPackage.|  
+|[Элемент Symbols](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Необязательный элемент. Содержит любые символьные данные — идентификаторы GUID, идентификаторы и т. д. для компилятора.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Description|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |None||  
   

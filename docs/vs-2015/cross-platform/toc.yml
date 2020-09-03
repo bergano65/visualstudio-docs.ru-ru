@@ -50,21 +50,21 @@
       items:
         - name: Visual C++ для разработки кроссплатформенных мобильных приложений
           href: visual-cpp-for-cross-platform-mobile-development.md
-        - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+        - name: Install Visual C++ for Cross-Platform Mobile Development
           items:
-            - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+            - name: Install Visual C++ for Cross-Platform Mobile Development
               href: install-visual-cpp-for-cross-platform-mobile-development.md
             - name: Install and Configure Tools to Build using iOS
               href: install-and-configure-tools-to-build-using-ios.md
         - name: Создание приложения Android Native Activity
           href: create-an-android-native-activity-app.md
-        - name: Создание приложения OpenGL ES в Android и iOS
+        - name: Build an OpenGL ES Application on Android and iOS
           href: build-an-opengl-es-application-on-android-and-ios.md
         - name: Импорт проекта XCode
           href: import-an-xcode-project.md
         - name: Изменения в синхронизации между XCode и Visual Studio
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Cross-Platform Mobile Development Examples
+        - name: Примеры разработки кроссплатформенных мобильных приложений
           href: cross-platform-mobile-development-examples.md
     - name: Разработка приложений для универсальной платформы Windows (UWP)
       href: develop-apps-for-the-universal-windows-platform-uwp.md

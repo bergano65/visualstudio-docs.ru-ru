@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77506464"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Использование наборов правил для группировки правил анализа кода
@@ -24,7 +24,7 @@ ms.locfileid: "77506464"
 
 Набор правил можно настроить, добавив или удалив правила или изменив серьезность правил, чтобы они отображались как предупреждения или ошибки в **Список ошибок**. Настроенные наборы правил могут удовлетворить потребности конкретной среды разработки. При настройке набора правил редактор набора правил предоставляет средства поиска и фильтрации, помогающие в процессе.
 
-Наборы правил доступны для [анализа управляемого кода](analyzer-rule-sets.md), [традиционного анализа управляемого кода](how-to-configure-code-analysis-for-a-managed-code-project.md)и [ C++ анализа кода](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
+Наборы правил доступны для [анализа управляемого кода](analyzer-rule-sets.md), [традиционного анализа управляемого кода](how-to-configure-code-analysis-for-a-managed-code-project.md)и [анализа кода C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Формат набора правил
 
@@ -58,7 +58,7 @@ ms.locfileid: "77506464"
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Укажите набор правил для проекта
 
-Набор правил для проекта указывается свойством **кодеаналисисрулесет** в файле проекта Visual Studio. Например:
+Набор правил для проекта указывается свойством **кодеаналисисрулесет** в файле проекта Visual Studio. Пример:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -67,6 +67,6 @@ ms.locfileid: "77506464"
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по набору правил анализа кода](../code-quality/rule-set-reference.md)
