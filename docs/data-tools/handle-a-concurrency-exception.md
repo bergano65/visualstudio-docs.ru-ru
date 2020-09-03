@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282362"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
@@ -212,6 +212,6 @@ ms.locfileid: "85282362"
 
    При выборе **нет** отменяется обновление, а набор данных обновляется значениями, которые в настоящее время находятся в базе данных. При нажатии кнопки **Да** в базу данных записывается предложенное значение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

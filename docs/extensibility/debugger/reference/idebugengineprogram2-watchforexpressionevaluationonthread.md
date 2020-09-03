@@ -1,5 +1,5 @@
 ---
-title: IdebugEngineProgram2::WatchForExpressionEvaluationOnThread Документы Майкрософт
+title: 'IDebugEngineProgram2:: Ватчфорекспрессионевалуатиононсреад | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730361"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Позволяет (или запрещает) оценку выражения происходит на данном потоке, даже если программа остановлена.
+Разрешает (или запрещает) вычисление выражений в заданном потоке, даже если программа остановлена.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,29 +49,29 @@ int WatchForExpressionEvaluationOnThread( 
 
 ## <a name="parameters"></a>Параметры
 `pOriginatingProgram`\
-(в) Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий программу, которая оценивает выражение.
+окне Объект [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий программу, которая вычисляет выражение.
 
 `dwTid`\
-(в) Определяет идентификатор потока.
+окне Задает идентификатор потока.
 
 `dwEvalFlags`\
-(в) Комбинация флагов из перечисления [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые определяют, как должна выполняться оценка.
+окне Сочетание флагов из перечисления [евалфлагс](../../../extensibility/debugger/reference/evalflags.md) , определяющее способ выполнения вычисления.
 
 `pExprCallback`\
-(в) Объект [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) который будет использоваться для отправки событий отладки, которые происходят во время оценки выражения.
+окне Объект [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , который будет использоваться для отправки событий отладки, происходящих во время вычисления выражения.
 
 `fWatch`\
-(в) Если не-ноль (),`TRUE`позволяет оценку `dwTid`выражения на потоке, идентифицированном ; в противном`FALSE`случае, ноль () запрещает оценку выражения на этом потоке.
+окне Если ненулевое значение ( `TRUE` ), разрешает вычисление выражений в потоке, определенном `dwTid` ; в противном случае ноль ( `FALSE` ) запрещает вычисление выражений в этом потоке.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Когда диспетчер отладки сеанса (SDM) `pOriginatingProgram` запрашивает программу, определенную параметром, для оценки выражения, он уведомляет все другие прилагаемые программы, вызывая этот метод.
+## <a name="remarks"></a>Remarks
+ Если диспетчер отладки сеансов (SDM) запрашивает программу, определяемую `pOriginatingProgram` параметром, для вычисления выражения уведомляет все другие присоединенные программы, вызывая этот метод.
 
- Оценка экспрессии в одной программе может привести к запуску `IDispatch` кода в другой из-за оценки функций или оценки любых свойств. Из-за этого этот метод позволяет оценивать выражения для запуска и завершения, даже если поток может быть остановлен в этой программе.
+ Вычисление выражений в одной программе может привести к тому, что код будет выполняться в другой из-за вычисления функции или оценки любых `IDispatch` свойств. Поэтому этот метод позволяет выполнять и завершать вычисление выражений, даже если поток может быть остановлен в этой программе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
