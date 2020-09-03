@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ecf86bdc7516f05935bd944f23633b3baad2c7c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663521"
 ---
 # <a name="showwebbrowser-command"></a>Команда ShowWebBrowser
@@ -35,12 +35,12 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Аргументы
  `URL` Обязательный. URL-адрес для веб-сайта.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /New необязательный. Указывает, что страница отображается в новом экземпляре браузера.
 
  /ext (необязательно). Указывает, что страница отображается в браузере по умолчанию вне интегрированной среды разработки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Псевдоним для команды **ShowWebBrowser** имеет значение **navigate** или **nav**.
 
 ## <a name="example"></a>Пример
@@ -50,5 +50,5 @@ View.ShowWebBrowser URL [/new][/ext]
 >View.ShowWebBrowser https://msdn.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Команды [Visual Studio командное](../../ide/reference/visual-studio-commands.md) [окно](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) командные [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

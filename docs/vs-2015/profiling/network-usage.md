@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548425"
 ---
 # <a name="network-usage"></a>Использование сети
@@ -24,7 +24,7 @@ ms.locfileid: "85548425"
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
-> Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](https://devblogs.microsoft.com/visualstudio/?m=20155) (Введение в средство "Сеть" Visual Studio).  
+> Более полное описание средства сети см. в статье [Знакомство с сетевым средством Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
   
 ## <a name="collecting-network-tool-data"></a>Сбор данных средством «Сеть»  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  
@@ -54,13 +54,13 @@ ms.locfileid: "85548425"
   
  ![Область сведений об инструментах сети](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|Имя|Описание|  
+|name|Описание|  
 |-|-|  
 |**Заголовки**|Сведения о заголовках запроса события.|  
 |**Текст**|Полезные данные запросов и ответов.|  
 |**Параметры**|Имена параметров строки запроса и их значения.|  
 |**Файлы "cookie"**|Данные cookie в запросе и ответе.|  
-|**Расписание**|Диаграмма этапов при получении выбранных ресурсов.|  
+|**Время**|Диаграмма этапов при получении выбранных ресурсов.|  
   
  В строке **сводки** средства "Сеть" показано число отображенных сетевых операций, объем переданных данных, время их загрузки и число видимых ошибок (запросы с ответами 4xx или 5xx).  
   
@@ -73,7 +73,7 @@ ms.locfileid: "85548425"
   
 3. Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Блог по Visual Studio: знакомство с инспектором сети Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Видео канала 9: средства диагностики VS — новый профилировщик сети](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

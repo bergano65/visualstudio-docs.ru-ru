@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4503a9653123bf0b0668f5686b9fdb94c97a7bb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597026"
 ---
 # <a name="flowchart-activity-designers"></a>Конструктор действия блок-схемы
 
 Конструктор рабочих процессов включает ряд предоставляемых системой действий, которые можно использовать при создании рабочих процессов. Данный раздел содержит действия, предоставленные системой и используемые для управления блок-схемами в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.
 
-## <a name="reference"></a>Справочные сведения
+## <a name="reference"></a>Справочник
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>
@@ -35,9 +35,9 @@ ms.locfileid: "75597026"
 
  [Использование конструкторов действий](control-flow-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)
 
- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+ [Параметры выполнения](../workflow-designer/runtime-activity-designers.md)
 
  [Примитивы](../workflow-designer/primitives-activity-designers.md)
 
