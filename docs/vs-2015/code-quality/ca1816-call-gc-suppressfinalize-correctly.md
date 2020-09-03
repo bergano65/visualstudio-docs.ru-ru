@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546774"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|каллгксуппрессфинализекорректли|
 |CheckId|CA1816|
@@ -41,7 +41,7 @@ ms.locfileid: "85546774"
 - Метод вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> и передает нечто, отличное от this (я в Visual Basic).
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>Метод позволяет пользователям освобождать ресурсы в любое время, прежде чем объект станет доступным для сборки мусора. При <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> вызове метода он освобождает ресурсы объекта. Это делает завершение ненужным. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>следует вызвать <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , чтобы сборщик мусора не вызывал метод завершения объекта.
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>Метод позволяет пользователям освобождать ресурсы в любое время, прежде чем объект станет доступным для сборки мусора. При <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> вызове метода он освобождает ресурсы объекта. Это делает завершение ненужным. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> следует вызвать <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , чтобы сборщик мусора не вызывал метод завершения объекта.
 
  Чтобы не допустить повторной реализации [System. IDisposable] в производных типах с методами завершения,<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) и для вызова, незапечатанные типы без методов завершения должны по-прежнему вызывать <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
@@ -74,5 +74,5 @@ ms.locfileid: "85546774"
 
  [CA2216. Высвобождаемые типы должны объявлять методы завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

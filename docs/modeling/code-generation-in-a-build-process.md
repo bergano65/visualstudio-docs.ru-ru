@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546722"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Вызов преобразования текста в процессе сборки
@@ -26,7 +26,7 @@ ms.locfileid: "85546722"
 
 Возможности задач построения несколько отличаются в зависимости от используемого обработчика сборки. При сборке решения в Visual Studio текстовый шаблон может получить доступ к API Visual Studio (EnvDTE), если задан атрибут [hostspecific = "true"](../modeling/t4-template-directive.md) . Но это не верно при построении решения из командной строки или при запуске серверной сборки с помощью Visual Studio. В таких случаях сборка выполняется в MSBuild и используется другой узел T4. Это означает, что при создании текстового шаблона с помощью MSBuild доступ к таким файлам, как имена файлов проекта, невозможен. Тем не менее [сведения о среде можно передать в текстовые шаблоны и обработчики директив с помощью параметров сборки](#parameters).
 
-## <a name="configure-your-machines"></a><a name="buildserver"></a>Настройка компьютеров
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Настройка компьютеров
 
 Чтобы включить задачи сборки на компьютере разработчика, установите пакет SDK моделирования для Visual Studio.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Передача данных контекста сборки в шаблоны
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать свойства [сборки](../msbuild/msbuild-properties.md) и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue`Получает данные `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры имеют значения по умолчанию.
+> `ResolveParameterValue` Получает данные `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры имеют значения по умолчанию.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Использование свойств проекта в директивах сборки и включения
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Использование свойств проекта в директивах сборки и включения
 
 Макросы Visual Studio, такие как **$ (SolutionDir)** , не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -303,13 +303,13 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ::: moniker range="vs-2017"
 
-- В шаблоне T4 MSbuild есть хорошие рекомендации по адресу`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- В шаблоне T4 MSbuild есть хорошие рекомендации по адресу `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- В шаблоне T4 MSbuild есть хорошие рекомендации по адресу`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- В шаблоне T4 MSbuild есть хорошие рекомендации по адресу `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

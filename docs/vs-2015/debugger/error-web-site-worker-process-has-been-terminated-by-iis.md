@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Рабочий процесс веб-узла был завершен службами IIS | Документация Майкрософт'
+title: 'Ошибка: Рабочий процесс веб-сайта был завершен службами IIS | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185466"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Ошибка: Рабочий процесс веб-узла был завершен службами IIS
@@ -42,9 +42,9 @@ ms.locfileid: "68185466"
   
     Открывается диспетчер IIS.  
   
-3. При необходимости разверните узел \<имя компьютера> в области **Подключения**.  
+3. При необходимости разверните узел \<computer name> области **Подключения**.  
   
-4. В узле \<имя компьютера> щелкните **Пулы приложений**.  
+4. В узле \<computer name> щелкните **Пулы приложений**.  
   
 5. В списке **Пулы приложений** щелкните правой кнопкой мыши имя пула, в котором работает приложение, и нажмите кнопку **Дополнительные параметры**.  
   
@@ -60,5 +60,5 @@ ms.locfileid: "68185466"
   
 8. Закройте диспетчер IIS и окно **Администрирование**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)

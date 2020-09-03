@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297665"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
@@ -64,9 +64,9 @@ ms.locfileid: "74297665"
   
 3. Присоедините отладчик к замороженному экземпляру Visual Studio. В диалоговом окне **Присоединение к процессу** выберите замороженный экземпляр Visual Studio в таблице **Доступные процессы** , а затем нажмите кнопку **Присоединить** .  
   
-4. Приостановите отладчик. В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **Прервать все** или просто нажмите **CTRL+ALT+BREAK**.  
+4. Приостановите отладчик. В новом экземпляре Visual Studio в главном меню выберите **Отладка**, **прервать все** или просто нажмите клавиши **Ctrl + Alt + Break**.  
   
-5. Создайте дамп потока. В окне командной строки введите следующую команду и нажмите клавишу **Ввод**.  
+5. Создайте дамп потока. В командное окно введите следующую команду и нажмите клавишу **Ввод**.  
   
    ```powershell  
    Debug.ListCallStack /AllThreads /ShowExternalCode  

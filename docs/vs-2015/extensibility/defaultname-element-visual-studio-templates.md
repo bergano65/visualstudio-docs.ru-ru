@@ -1,5 +1,5 @@
 ---
-title: Элемент DefaultName (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Дефаултнаме (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185292"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Элемент DefaultName (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Задает имя, система проектов Visual Studio создаст для проекта или элемента при его создании.  
+Указывает имя, которое будет создавать система проектов Visual Studio для проекта или элемента при его создании.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<DefaultName >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -54,19 +54,19 @@ ms.locfileid: "68185292"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Данный текст задает по умолчанию имя проекта или элемента.  
+ В этом тексте указывается имя проекта или элемента по умолчанию.  
   
-## <a name="remarks"></a>Примечания  
- `DefaultName` — это необязательный элемент.  
+## <a name="remarks"></a>Remarks  
+ Параметр `DefaultName` является необязательным элементом.  
   
- Для проектов этот элемент указывает имя каталога, в котором хранится проект на диске. Для элементов он задает имя файла исходного файла.  
+ Для проектов этот элемент указывает имя каталога, в котором хранится проект на диске. Для элементов указывает имя файла исходного файла.  
   
- При создании проекта или элемента, можно изменить имя по умолчанию, используя **имя** параметр, который доступен из любого **новый проект** диалоговое окно или **Добавление нового элемента** диалоговое окно.  
+ При создании проекта или элемента можно изменить имя по умолчанию, используя параметр **имя** , который доступен в диалоговом окне **Создание проекта** или **Добавление нового элемента** .  
   
- Если вы не хотите, чтобы система проектов для создания имени по умолчанию для проекта или элемента, затем установите [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) элемент `False`.  
+ Если не требуется, чтобы система проектов создавала имя по умолчанию для проекта или элемента, установите для элемента [провидедефаултнаме](../extensibility/providedefaultname-element-visual-studio-templates.md) значение `False` .  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../includes/csprcs-md.md)] класса.  
+ В следующем примере показаны метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../includes/csprcs-md.md)] класса.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -84,6 +84,6 @@ ms.locfileid: "68185292"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

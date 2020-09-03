@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsСправка (ru) Документы Майкрософт
+title: 'IDebugProperty2:: Сетвалуеасреференце | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 73d00ccedc6985061448170735e9ebcaac42f530
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721252"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Устанавливает значение этого свойства к значению данной ссылки.
+Присваивает этому свойству значение, равное заданной ссылке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,27 +47,27 @@ int SetValueAsReference(
 
 ## <a name="parameters"></a>Параметры
 `rgpArgs`\
-(в) Массив аргументов для передачи управляемому набору свойств кода. Если сеттер свойств не принимает аргументы или если этот объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) не `rgpArgs` относится к такому сеттеру свойств, должен быть нулевым значением. Этот параметр обычно является нулевая величина.
+окне Массив аргументов, передаваемый методу задания свойств управляемого кода. Если метод задания свойств не принимает аргументы или этот объект [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) не ссылается на такой метод задания свойства, то `rgpArgs` должен иметь значение null. Обычно этот параметр имеет значение null.
 
 `dwArgCount`\
-(в) Количество аргументов в `rgpArgs` массиве.
+окне Число аргументов в `rgpArgs` массиве.
 
 `pValue`\
-(в) Ссылка в виде объекта [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) на значение, используемее для установки этого свойства.
+окне Ссылка в виде объекта [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) на значение, используемое для задания этого свойства.
 
 `dwTimeout`\
-(в) Сколько времени нужно, чтобы установить значение, в миллисекундах. Типичное значение `INFINITE`. Это влияет на время, которое может занять любая возможная оценка.
+окне Время, затрачиваемое на задание значения (в миллисекундах). Типичное значение — `INFINITE` . Это влияет на время, в течение которого может выполняться любая возможная оценка.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки, как правило, один из следующих:
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки, обычно один из следующих:
 
-|Error|Описание|
+|Ошибка|Описание|
 |-----------|-----------------|
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Установка значения из ссылки не поддерживается.|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Значение не может быть установлено, так как это свойство относится к методу.|
-|`E_SETVALUE_VALUE_IS_READONLY`|Значение только для чтения и не может быть установлено.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Значение не может быть задано, так как это свойство ссылается на метод.|
+|`E_SETVALUE_VALUE_IS_READONLY`|Значение доступно только для чтения и не может быть задано.|
 |`E_NOTIMPL`|Метод не реализован.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
