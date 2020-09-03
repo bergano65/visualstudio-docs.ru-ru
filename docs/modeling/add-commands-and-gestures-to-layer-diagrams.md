@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531395"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Добавление команд и жестов в схемы зависимостей
@@ -87,7 +87,7 @@ ms.locfileid: "85531395"
 
 5. Вернитесь к проекту команды или обработчика жестов и добавьте следующие ссылки на проект:
 
-   |**Справочник**|**Возможности**|
+   |**Ссылки**|**Возможности**|
    |-|-|
    |Program Files\Microsoft Visual Studio [версия]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Создание и редактирование слоев|
    |Microsoft.VisualStudio.Uml.Interfaces|Создание и редактирование слоев|
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** — вызывается, когда пользователь перетаскивает элемент на схему.
 
-- Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Пример:
+- Первым аргументом каждого метода является `IShape`, из которого можно получить элемент слоя. Например:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

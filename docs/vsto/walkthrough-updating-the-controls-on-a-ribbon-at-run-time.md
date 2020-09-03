@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255339"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Пошаговое руководство. Обновление элементов управления на ленте во время выполнения
@@ -32,7 +32,7 @@ ms.locfileid: "71255339"
 
 В данном примере данные извлекаются из примера базы данных Northwind (Борей) для заполнения поля со списком и меню в Microsoft Office Outlook. Элементы, выбранные в этих элементах управления, автоматически заполняют поля **, такие как,** и **подпадают** под сообщение электронной почты.
 
-В данном пошаговом руководстве рассмотрены следующие задачи:
+В этом пошаговом руководстве описаны следующие задачи:
 
 - Создайте новый проект надстройки VSTO для Outlook.
 
@@ -47,7 +47,7 @@ ms.locfileid: "71255339"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,13 +59,13 @@ ms.locfileid: "71255339"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Порядок создания нового проекта надстройки Outlook VSTO
 
-1. В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]создайте проект надстройки VSTO для Outlook с именем **Ribbon_Update_At_Runtime**.
+1. В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создайте проект надстройки VSTO для Outlook с именем **Ribbon_Update_At_Runtime**.
 
 2. В диалоговом окне **Создание проекта** выберите **Создать каталог для решения**.
 
 3. Сохраните проект в каталоге проекта по умолчанию.
 
-     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Создание пользовательской группы ленты
 
@@ -73,9 +73,9 @@ ms.locfileid: "71255339"
 
 ### <a name="to-design-a-custom-group"></a>Порядок создания пользовательской группы
 
-1. В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите **Добавить новый элемент**.
 
-2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)** .
+2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
 
 3. Измените имя новой ленты на **кустомерриббон**и нажмите кнопку **Добавить**.
 
@@ -149,13 +149,13 @@ ms.locfileid: "71255339"
 
 8. Установите флажок рядом с каждой из следующих таблиц.
 
-    1. **Заказчик**
+    1. **Клиенты**
 
     2. **Сведения о заказе**
 
-    3. **Перемещен**
+    3. **Orders**
 
-    4. **Продуктов**
+    4. **Продукты**
 
 9. Нажмите кнопку **Готово**.
 
@@ -171,7 +171,7 @@ ms.locfileid: "71255339"
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Порядок обновления элементов управления в пользовательской группе с помощью объектной модели ленты
 
-1. В меню **Проект** щелкните команду **Добавить ссылку**.
+1. В меню **Проект** выберите пункт **Добавить ссылку**.
 
 2. В диалоговом окне **Добавление ссылки** перейдите на вкладку **.NET** , выберите сборку **System. Data. LINQ** и нажмите кнопку **ОК**.
 
@@ -179,7 +179,7 @@ ms.locfileid: "71255339"
 
 3. В **Обозреватель решений**щелкните **CustomerRibbon.CS** или **кустомерриббон. vb** , чтобы выбрать его.
 
-4. В меню **вид** выберите пункт **код**.
+4. В меню **Вид** выберите пункт **Код**.
 
     Файл кода ленты открывается в редакторе кода.
 
@@ -188,7 +188,7 @@ ms.locfileid: "71255339"
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. Добавьте в `CustomerRibbon` класс следующий код. Этот код объявляет таблицу данных и адаптеры таблиц, которые будут использоваться для хранения информации из таблиц «Заказчики», «Заказы», «Сведения о заказе» и «Продукт» базы данных Northwind.
+6. Добавьте в класс следующий код `CustomerRibbon` . Этот код объявляет таблицу данных и адаптеры таблиц, которые будут использоваться для хранения информации из таблиц «Заказчики», «Заказы», «Сведения о заказе» и «Продукт» базы данных Northwind.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
@@ -207,7 +207,7 @@ ms.locfileid: "71255339"
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
-9. Добавьте следующий код в класс `CustomerRibbon` . Этот код использует запросы LINQ для выполнения следующих задач.
+9. Добавьте в класс `CustomerRibbon` приведенный далее код. Этот код использует запросы LINQ для выполнения следующих задач.
 
    - Добавляет подменю в меню **ProductsPurchased** для каждого заказа на продажу, связанного с выбранным клиентом.
 
@@ -240,7 +240,7 @@ ms.locfileid: "71255339"
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Добавьте следующий код в класс `CustomerRibbon` . Этот код выполняет следующие задачи:
+14. Добавьте в класс `CustomerRibbon` приведенный далее код. Этот код выполняет следующие задачи:
 
     - Заполнение строки новых сообщений электронной почты с помощью адреса электронной почты выбранного в данный момент клиента.
 
@@ -263,7 +263,7 @@ ms.locfileid: "71255339"
 
 2. В Outlook в меню **файл** выберите пункт **создать**, а затем пункт **сообщение электронной почты**.
 
-     Происходят следующие действия:
+     После этого будут выполнены указанные ниже действия:
 
     - Откроется новое окно инспектора сообщений электронной почты.
 
@@ -273,7 +273,7 @@ ms.locfileid: "71255339"
 
 3. На вкладке ленты **сообщение** в группе **покупки клиента** выберите клиента в поле со списком **Клиенты** .
 
-     Происходят следующие действия:
+     После этого будут выполнены указанные ниже действия:
 
     - Меню **приобретенных продуктов** обновляется для отображения каждого заказа на продажу для выбранного клиента.
 
@@ -285,28 +285,28 @@ ms.locfileid: "71255339"
 
      Имя продукта добавляется в тело сообщения электронной почты.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:
 
 - Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
 
-- Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание области](../vsto/walkthrough-designing-an-outlook-form-region.md)формы Outlook.
+- Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство. Проектирование области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Добавление настраиваемой области задач в Outlook. Дополнительные сведения см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
-- [Синтаксис LINQ](/dotnet/csharp/linq/index)
-- [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [LINQ](/dotnet/csharp/linq/index)
+- [Как приступить к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
-- [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Общие сведения об объектной модели ленты](../vsto/ribbon-object-model-overview.md)
 - [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Практическое руководство. Изменение позиции вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)
-- [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Практическое руководство. Экспорт ленты из конструктора ленты в XML-ленту](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Практическое руководство. Показывать ошибки пользовательского интерфейса надстройки](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Как изменить позицию вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Как настроить встроенную вкладку](../vsto/how-to-customize-a-built-in-tab.md)
+- [Как добавить элементы управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Как экспортировать ленту из конструктора лент в XML-ленту](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Пошаговое руководство. Отображение ошибок пользовательского интерфейса надстройки](../vsto/how-to-show-add-in-user-interface-errors.md)

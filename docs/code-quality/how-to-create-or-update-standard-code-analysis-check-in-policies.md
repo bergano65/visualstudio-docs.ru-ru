@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371902"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
@@ -67,6 +67,6 @@ ms.locfileid: "85371902"
 
 Дополнительные сведения о создании и реализации пользовательского набора правил политики возврата см. в разделе [Реализация пользовательских политик возврата для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Реализация настраиваемых политик возврата с анализом кода для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

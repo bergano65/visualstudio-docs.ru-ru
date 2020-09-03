@@ -9,27 +9,25 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196860"
 ---
 # <a name="delayed-document-loading"></a>Отложенная загрузка документов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-При повторном открытии решения Visual Studio, большая часть указанных документах не загружаются. Рамка окна документа создается в состоянии ожидания инициализации, а заполнитель документ (кадр заглушки) помещается в таблице выполняющихся документов (RDT).  
+Когда пользователь повторно открывает решение Visual Studio, большинство связанных документов не загружается немедленно. Фрейм окна документа создается в состоянии ожидания инициализации, а документ-заполнитель (называемый фреймом-заглушкой) помещается в таблицу выполняемых документов (РДТ).  
   
- Расширение может привести к документы проекта без необходимости загрузки путем запроса элементов в документах, прежде чем они будут загружены. Это может увеличить общий объем памяти для Visual Studio.  
+ Расширение может привести к тому, что документы проекта будут загружаться без необходимости путем запроса элементов в документах перед их загрузкой. Это может увеличить общий объем памяти для Visual Studio.  
   
 ## <a name="document-loading"></a>Загрузка документов  
- Фрейм заглушки и выполнения полной инициализации когда пользователь получает доступ к документа, например, выбрав вкладку окна области. Документ также может быть инициализирован с расширением, которое запрашивает данные документа, либо доступ к RDT непосредственно получить данные документа или при доступе к RDT косвенно, сделав один из следующих вызовов:  
+ Фрейм заглушки и документ полностью инициализируются, когда пользователь обращается к документу, например, путем выбора вкладки рамки окна. Документ также может инициализироваться расширением, которое запрашивает данные документа, путем прямого доступа к РДТ для получения данных документа или доступа к РДТ косвенным образом, выполнив один из следующих вызовов:  
   
-- Метод отображения окна: <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>.  
+- Метод отображения фрейма окна: <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> .  
   
-- Рамка окна метод GetProperty <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> на любом из следующих свойств:  
-  
-  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+- Метод Window Frame свойства <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> для любого из следующих свойств:  
   
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
@@ -41,27 +39,29 @@ ms.locfileid: "68196860"
   
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  Если расширение использует управляемый код, не следует вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> Если вы не уверены, что документ не находится в состоянии ожидания инициализации, или полной инициализации документа... Это обусловлено тем, этот метод всегда возвращает документ объект данных, чтобы создать его при необходимости. Вместо этого следует вызывать один из методов в интерфейсе IVsRunningDocumentTable4.  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  Если расширение использует C++, вы можете передать `null` для параметров, не нужно.  
+  Если расширение использует управляемый код, не следует вызывать метод, <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> Если нет уверенности, что документ не находится в состоянии ожидания инициализации, или вы хотите, чтобы документ был полностью инициализирован. Это происходит потому, что этот метод всегда возвращает объект данных doc, создавая его при необходимости. Вместо этого следует вызывать один из методов интерфейса IVsRunningDocumentTable4.  
   
-  Загрузка ненужных документов можно избежать путем вызова одного из следующих методов, прежде чем запрашивать соответствующие свойства: Прежде чем запрашивать другие свойства.  
+  Если расширение использует C++, можно передать `null` ненужные параметры.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> с помощью <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+  Вы можете избежать ненужной загрузки документа, вызвав один из следующих методов, прежде чем запрашивать соответствующие свойства: перед тем, как запрашивать другие свойства.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Этот метод возвращает <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> объект, который включает значение <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Если документ не был инициализирован.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> с помощью <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6> .  
   
-  Чтобы узнать при загрузке документа, подписавшись на событие RDT, которое возникает, когда документ будет полностью инициализирован. Существуют две возможности:  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Этот метод возвращает <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> объект, который содержит значение, <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Если документ еще не инициализирован.  
   
-- Если приемник событий реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>, вы можете подписаться на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>,  
+  Узнать, когда документ был загружен, можно с помощью подписки на событие РДТ, которое возникает при полной инициализации документа. Существует две возможности:  
   
-- В противном случае вы можете подписаться на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
+- Если приемник событий реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2> , можно подписываться на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A> ,  
   
-  Ниже приведен сценарий доступа гипотетической документа. Visual Studio, расширения должны отображаться некоторые сведения об открытых документов, для экземпляра редактирования заблокировать count и что-нибудь о данные документа. Он перечисляет документы в RDT с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, затем вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> для каждого документа, для извлечения данных с count и документа блокировку редактирования. Если документ находится в состоянии ожидания инициализации, запрашивающего данные документа приводит к инициализироваться без необходимости.  
+- В противном случае можно подписываться на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A> .  
   
-  Более эффективный способ сделать это позволяет использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> для получения количества блокировку редактирования, а затем используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> для определения, был ли инициализирован документа. Если флаги не включают <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, документ уже был инициализирован и запрос данных документа с <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> не вызывает инициализацию ненужные. Если включить флаги <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, модуль следует избегать, запрашивающего данные документа, пока не будет инициализирован документа. Это можно обнаружить в обработчике событий OnAfterAttributeChange(Ex).  
+  Ниже приведен гипотетический сценарий доступа к документам. В расширении Visual Studio необходимо отобразить некоторые сведения об открытых документах, например число блокировок редактирования и что-то о данных документа. Он перечисляет документы в РДТ с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments> , затем вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> для каждого документа, чтобы получить сведения об изменении количества блокировок и данных документа. Если документ находится в состоянии ожидания инициализации, запрос данных документа приводит к необязательной инициализации.  
   
-## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Тестирование расширения, чтобы увидеть, если они принудительно инициализации  
- Нет не обозначена указать документ был ли инициализирован, чтобы он может быть трудно узнать, если расширение после инициализации. Можно задать раздел реестра, который упрощает проверку подлинности, так как вызывает Заголовок каждого документа, который не был инициализирован полностью текста `[Stub]` в заголовке.  
+  Более эффективный способ — использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> для получения счетчика блокировок редактирования, а затем использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> для определения того, был ли документ инициализирован. Если флаги не включены <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> , документ уже инициализирован, и запрос данных документа с помощью не <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> приводит к ненужной инициализации. Если флаги включены <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> , расширение должно избегать запроса данных документа до инициализации документа. Это можно обнаружить в обработчике событий Онафтераттрибутечанже (ex).  
   
- В **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** , задайте **StubTabTitleFormatString** для  **{0} [заглушка]** .
+## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Тестирование расширений для проверки принудительной инициализации  
+ Отсутствует видимая подсказка, указывающая, был ли документ инициализирован, поэтому может быть трудно выяснить, что расширение является принудительной инициализацией. Можно задать раздел реестра, который упрощает проверку, так как в этом случае заголовок каждого документа, который не был полностью инициализирован, будет содержать текст `[Stub]` в заголовке.  
+  
+ В **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload]** задайте для **стубтабтитлеформатстринг** значение ** {0} [заглушка]**.

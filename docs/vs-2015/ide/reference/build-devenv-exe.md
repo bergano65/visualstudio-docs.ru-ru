@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419716d750771908a43318d051cb0b4681d35149
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660984"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -41,12 +41,12 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 
  /projectconfig `ProjConfigName` Необязательный. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Этот параметр выполняет те же функции, что и команда меню **Собрать решение** в интегрированной среде разработки (IDE).
 
  Строки с пробелами заключаются в двойные кавычки.
 
- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.
+ Сводные данные о сборках, включая ошибки, могут отображаться в **командном** окне или в любом файле журнала, указанном с помощью `/out` параметра.
 
  Эта команда выполняет сборку только тех проектов, которые изменились с момента последней сборки. Чтобы выполнить сборку всех проектов в решении, используйте [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md).
 
@@ -57,5 +57,5 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>См. также
- [Создание и очистка проектов и решений в Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/REBUILD (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (](../../ide/reference/clean-devenv-exe.md) devenv. exe) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>См. также:
+ [Создание и очистка проектов и решений в Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Параметры командной строки Devenv](../../ide/reference/devenv-command-line-switches.md) [/REBUILD (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

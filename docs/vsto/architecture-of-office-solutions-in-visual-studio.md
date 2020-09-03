@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551873"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Архитектура решений Office в Visual Studio
@@ -27,13 +27,13 @@ ms.locfileid: "69551873"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 [Архитектура настроек уровня документа](../vsto/architecture-of-document-level-customizations.md)
 
 Описание порядка работы настроек уровня документа, а также различий в их восприятии разработчиком и конечным пользователем.
 
-[Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)
+[Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 
 Описание компонентов надстроек VSTO, а также порядка их загрузки в приложения.
 
@@ -51,11 +51,11 @@ ms.locfileid: "69551873"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 Общие сведения об использовании пакета приложений Microsoft Office в качестве платформы для разработки бизнес-решений.
 
-[Начало работы &#40;с разработкой Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Ссылки на сведения о настройке компьютера разработчика для создания решений Office, первых шагах по созданию решений, а также об изменениях по сравнению с предыдущими версиями средств разработчика Office в Visual Studio.
 
@@ -63,6 +63,6 @@ ms.locfileid: "69551873"
 
 Ссылки на сведения о создании решений Office.
 
-[Общие справочные материалы &#40;по разработке для Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Общие справочные материалы &#40;разработке решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
 Ссылки на сведения об элементах пользовательского интерфейса в проектах Office, о манифестах приложения и развертывания для проектов Office, а также об API в среде выполнения [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].

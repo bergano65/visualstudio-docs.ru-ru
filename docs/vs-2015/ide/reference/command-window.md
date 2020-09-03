@@ -1,5 +1,5 @@
 ---
-title: Командное окно | Microsoft Docs
+title: Командное окно | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660845"
 ---
-# <a name="command-window"></a>Командное окно
+# <a name="command-window"></a>Окно команд
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **Командное** окно используется для выполнения команд или их псевдонимов непосредственно в интегрированной среде разработки (IDE) [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Можно выполнять команды меню и команды, которые не отображаются в меню. Для вывода **командного** окна в меню **Вид** выберите **Другие окна**, а затем **Командное окно**.
@@ -93,7 +93,7 @@ ms.locfileid: "72660845"
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
- В этом примере:
+ В этом примере
 
 - `Edit.ReplaceInFiles` — это команда;
 
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Крышка действует одинаково как внутри кавычек, так и за их пределами. Если крышка является последним символом в строке, она игнорируется. В следующем примере показано, как выполнить поиск шаблона "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Использование кавычек для путей с пробелами
- Например, если вы хотите открыть файл, путь к которому содержит пробелы, необходимо заключить путь или сегмент пути, содержащий пробелы, в двойные кавычки: **C:\\"Program Files"** или **"C:\Program Files"** .
+ Например, если вы хотите открыть файл, путь к которому содержит пробелы, необходимо заключить путь или сегмент пути, содержащий пробелы, в двойные кавычки: **C:\\"Program Files"** или **"C:\Program Files"**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Команды Visual Studio для [псевдонимов команд](../../ide/reference/visual-studio-command-aliases.md) [Visual](../../ide/reference/visual-studio-commands.md) Studio

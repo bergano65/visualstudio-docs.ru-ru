@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660808"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -36,7 +36,7 @@ Devenv /debugexe ExecutableFile
 
  Если EXE-файл не найден или не существует, никакие предупреждения или ошибки не выводятся, а [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запускается обычным образом.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Строки, следующие за параметром `ExecutableFile`, передаются в этот файл в качестве аргументов.
 
 ## <a name="example"></a>Пример
@@ -46,5 +46,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки для команды devenv](../../ide/reference/devenv-command-line-switches.md)

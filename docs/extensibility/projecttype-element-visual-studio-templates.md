@@ -1,5 +1,5 @@
 ---
-title: Элемент ProjectType (Шаблоны визуальной студии) Документы Майкрософт
+title: Элемент ProjectType (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,19 +14,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701806"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Элемент ProjectType (шаблоны Visual Studio)
-Категоризирует шаблон проекта таким образом, чтобы он отосвобождался в указанной группе в **new Project** или добавил диалоговую коробку **New Item.**
+Классификация шаблона проекта, чтобы он появился в указанной группе в диалоговом окне **Новый проект** или **Добавление нового элемента** .
 
 > [!WARNING]
-> Шаблоны проекта поддерживаются для СЗ, начиная с Visual Studio 2012. Они не поддерживаются для C » в Visual Studio 2010 и более ранних версиях.
+> Шаблоны проектов поддерживаются для C++ начиная с Visual Studio 2012. Они не поддерживаются для C++ в Visual Studio 2010 и более ранних версиях.
 
- \<VSTemplate \<> TemplateData> \<ProjectType>
+ \<VSTemplate> \<TemplateData>
+ \<ProjectType>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,10 +39,10 @@ ms.locfileid: "80701806"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -52,23 +53,23 @@ ms.locfileid: "80701806"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Это значение определяет тип проекта, который создаст шаблон, и должно содержать одно из следующих значений:
+ Это значение указывает тип проекта, который будет создан шаблоном и должен содержать одно из следующих значений:
 
-- `CSharp`: Упомянет, что [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблон создает проект или элемент.
+- `CSharp`: Указывает, что шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] проект или элемент.
 
-- `VisualBasic`: Упомянет, что [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] шаблон создает проект или элемент.
+- `VisualBasic`: Указывает, что шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проект или элемент.
 
-- `Web`: Упомянет, что шаблон создает веб-проект или элемент. Если `ProjectType` элемент содержит это значение, язык проекта или элемента определяется в [элементе ProjectSubType (Visual Studio Templates).](../extensibility/projectsubtype-element-visual-studio-templates.md)
+- `Web`: Указывает, что шаблон создает веб-проект или элемент. Если `ProjectType` элемент содержит это значение, язык проекта или элемента определяется в [элементе ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  `ProjectType` — обязательный дочерний элемент элемента `TemplateData`.
 
- Значение `ProjectType` элемента определяет, где шаблон находится в **новом проекте** или **добавить new Item** диалоговое окно. Например, шаблон со `ProjectType` значением `CSharp` отображается под узлом **Visual C'в** диалоговом поле Нового **Проекта.**
+ Значение `ProjectType` элемента указывает, где находится шаблон: в диалоговом окне **Новый проект** или **Добавление нового элемента** . Например, шаблон со `ProjectType` значением `CSharp` отображается в узле **Visual C#** диалогового окна **Новый проект** .
 
- Подтип шаблона можно указать с помощью элемента [ProjectSubType.](../extensibility/projectsubtype-element-visual-studio-templates.md)
+ Подтип шаблона можно указать с помощью элемента [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) .
 
 ## <a name="example"></a>Пример
- В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -95,6 +96,6 @@ ms.locfileid: "80701806"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Элемент ProjectSubType (шаблоны Визуальной студии)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+- [Элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)

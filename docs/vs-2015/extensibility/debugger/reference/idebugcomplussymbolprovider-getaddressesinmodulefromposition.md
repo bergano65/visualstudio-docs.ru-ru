@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Документация Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Жетаддрессесинмодулефромпоситион | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194823"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Сопоставляет позицию документ в указанном модуле массив адресов отладки.  
+Сопоставляет расположение документа в указанном модуле с массивом адресов отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- [in] Идентификатор домена приложения.  
+ окне Идентификатор домена приложения.  
   
  `guidModule`  
- [in] Уникальный идентификатор модуля.  
+ окне Уникальный идентификатор модуля.  
   
  `pDocPos`  
- [in] Позиция документа.  
+ окне Расположение документа.  
   
  `fStatmentOnly`  
- [in] Если `TRUE`, ограничивает адреса отладки для одной инструкции.  
+ окне Если `TRUE` значение равно, адреса отладки ограничиваются одной инструкцией.  
   
  `ppEnumBegAddresses`  
- [out] Возвращает перечислитель для начала отладки адресов, которые связаны с этой инструкции или строке.  
+ заполняет Возвращает перечислитель для начальных адресов отладки, связанных с данной инструкцией или строкой.  
   
  `ppEnumEndAddresses`  
- [out] Возвращает перечислитель для конечного адреса отладки, которые связаны с этой инструкции или строке.  
+ заполняет Возвращает перечислитель для конечных адресов отладки, связанных с данной инструкцией или строкой.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
@@ -223,5 +223,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

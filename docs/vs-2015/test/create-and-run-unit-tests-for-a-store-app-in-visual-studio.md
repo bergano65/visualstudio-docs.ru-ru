@@ -12,10 +12,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660626"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Создание и запуск модульных тестов для приложений Магазина в Visual Studio
@@ -32,8 +32,8 @@ ms.locfileid: "72660626"
 >
 >   См. дополнительные сведения о [модульном тестировании кода](../test/unit-test-your-code.md) в библиотеке MSDN.
 
-## <a name="in-this-section"></a>В данном разделе
- [Модульное тестирование кода C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
+## <a name="in-this-section"></a>В этом разделе
+ [Код C# модульного теста](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
 
  [Модульное тестирование библиотеки DLL на C++](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)
 

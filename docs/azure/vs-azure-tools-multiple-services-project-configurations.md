@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280548"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций служб
@@ -53,7 +53,7 @@ ms.locfileid: "85280548"
 
 По умолчанию для веб-роли включена диагностика. Облачная служба проекта Azure и учетная запись хранения настраиваются для использования локального эмулятора хранения. Когда все будет готово к развертыванию в Azure, нажмите кнопку конструктора (**...**), чтобы использовать хранилище Azure. Данные диагностики можно перенести в учетную запись хранения по требованию или по автоматически заданному расписанию. Дополнительные сведения о системе диагностики Azure см. в статье [Включение диагностики в облачных службах и виртуальных машинах Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Страница «Параметры»
+## <a name="settings-page"></a>Страница параметров
 
 На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". Код, выполняемый в роли, может считывать значения параметров конфигурации во время выполнения с помощью классов, предоставляемых [управляемой библиотекой Azure](/previous-versions/azure/dn602775(v=azure.11)), в частности, метода [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 

@@ -37,10 +37,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255931"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Общие сведения о ведущих элементах и элементах управления ведущего приложения
@@ -88,7 +88,7 @@ ms.locfileid: "71255931"
 
 - [Элемент управления диаграммы](../vsto/chart-control.md)
 
-- [Элемент управления ListObject](../vsto/listobject-control.md)
+- [ListObject - элемент управления](../vsto/listobject-control.md)
 
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
 
@@ -100,15 +100,15 @@ ms.locfileid: "71255931"
 
 - [Элементы управления содержимым](../vsto/content-controls.md)
 
-- [Элемент управления XMLNode](../vsto/xmlnode-control.md)
+- [XMLNode - элемент управления](../vsto/xmlnode-control.md)
 
-- [Элемент управления XMLNodes](../vsto/xmlnodes-control.md)
+- [XMLNodes - элемент управления](../vsto/xmlnodes-control.md)
 
   Элементы управления ведущего приложения, добавленные в документы Office, ведут себя как встроенные объекты Office; однако элементы управления ведущего приложения имеют дополнительные функциональные возможности, включая события и возможности привязки данных. Например, если требуется записать события встроенного объекта <xref:Microsoft.Office.Interop.Excel.Range> в Excel, вы должны сначала обработать событие изменения листа. Затем необходимо определить, произошло ли изменение в <xref:Microsoft.Office.Interop.Excel.Range>. В отличие от этого, элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.NamedRange> имеет событие <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> , которое может обрабатываться непосредственно.
 
   Связь между ведущим элементом и элементами управления ведущего приложения аналогична связи между элементами управления Windows Form и Windows Forms. Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> помещается в ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet> так же, как элемент управления "текстовое поле" помещается в форму Windows Forms. На следующем рисунке показана связь между ведущими элементами и элементами управления ведущего приложения.
 
-  ![Отношение между ведущими элементами и элементами управления ведущего приложения](../vsto/media/hostitemscontrols.png "Отношение между ведущими элементами и элементами управления ведущего приложения")
+  ![Отношение между размещаемыми элементами и элементами управления](../vsto/media/hostitemscontrols.png "Отношение между размещаемыми элементами и элементами управления")
 
   Вы также можете использовать в решениях Office элементы управления Windows Forms, добавляя их непосредственно в область документа Word и Excel. Дополнительные сведения см. [в разделе Windows Forms элементы управления в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
@@ -128,21 +128,21 @@ ms.locfileid: "71255931"
 
   Дополнительные сведения о добавлении элементов управления ведущего приложения в документы см. в следующих разделах.
 
-- [Практическое руководство. Добавление элементов управления диаграммы на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Как добавлять элементы управления "Диаграмма" на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)
 
-- [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [Как добавить элементы управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
-- [Практическое руководство. Добавление элементов управления NamedRange в листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Как добавить элементы управления NamedRange в листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 
-- [Практическое руководство. Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Как добавить элементы управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 
-- [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 
-- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Как добавить элементы управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 
-- [Практическое руководство. Добавление элементов управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
+- [Как добавить элементы управления XMLNode в документы Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
 
-- [Практическое руководство. Добавление элементов управления XMLNodes в документы Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
+- [Как добавить элементы управления XMLNodes в документы Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>Имя элементы управления ведущего приложения
  При перетаскивании элемента управления ведущего приложения из **панели элементов** в документ этому элементу управления автоматически присваивается имя в виде типа элемента управления с последовательным номером. Например, закладки именуются как **bookmark1**, **bookmark2**и т. д. При добавлении элемента управления с помощью встроенной функциональности Word или Excel вы можете назначить ему определенное имя во время его создания. Вы также можете переименовывать свои элементы управления, изменяя значение свойства **Имя** в окне **Свойства** .
@@ -163,12 +163,12 @@ ms.locfileid: "71255931"
 > Не удаляйте программным образом элементы управления во время работы обработчика событий `Shutdown` документа или листа. Если возникает событие `Shutdown` , элементы пользовательского интерфейса становятся недоступными. Если вы хотите удалить элементы управления до закрытия приложения, добавьте свой код в другой обработчик событий, например в `BeforeClose` или `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Программирование для событий элемента управления ведущего приложения
- Один из способов, которым элементы управления ведущего приложения расширяют объекты Office, является добавление событий. Например, объект <xref:Microsoft.Office.Interop.Excel.Range> в Excel и объект <xref:Microsoft.Office.Interop.Word.Bookmark> в Word не имеют событий, но [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] расширяет эти объекты, добавляя программируемые события. Вы можете получать доступ к этим событиям и программировать реакцию на них так же, как это делается с событиями элементов управления в Windows Forms: через раскрывающийся список событий в Visual Basic и страницу свойств событий в C#. Дополнительные сведения см. в разделе [Пошаговое руководство: Программирование для событий элемента управления](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)NamedRange.
+ Один из способов, которым элементы управления ведущего приложения расширяют объекты Office, является добавление событий. Например, объект <xref:Microsoft.Office.Interop.Excel.Range> в Excel и объект <xref:Microsoft.Office.Interop.Word.Bookmark> в Word не имеют событий, но [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] расширяет эти объекты, добавляя программируемые события. Вы можете получать доступ к этим событиям и программировать реакцию на них так же, как это делается с событиями элементов управления в Windows Forms: через раскрывающийся список событий в Visual Basic и страницу свойств событий в C#. Дополнительные сведения см. в разделе [Пошаговое руководство. Программирование для событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
-> Не устанавливайте для свойства <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> объекта <xref:Microsoft.Office.Interop.Excel.Application> в Excel значение **false**. Установка для этого свойства значения **false** предотвращает инициирование каких-либо событий в Excel, включая события элементов управления ведущего приложения.
+> Не устанавливайте для свойства <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> объекта <xref:Microsoft.Office.Interop.Excel.Application> в Excel значение **false**. Установка этого свойства в **значение false** предотвращает вызов приложением Excel каких бы то ни было событий, включая события элементов управления ведущего приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)

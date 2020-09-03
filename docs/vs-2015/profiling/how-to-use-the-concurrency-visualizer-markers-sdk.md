@@ -1,5 +1,5 @@
 ---
-title: Как Использование пакета SDK визуализатора параллелизма для создания маркеров | Документация Майкрософт
+title: Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870050"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как Использование пакета SDK визуализатора параллелизма для создания маркеров
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "68870050"
 
 6. Запустите текущий проект, чтобы открыть визуализатор параллелизма. Две последовательности маркеров отображаются на собственных дорожках в представлении потоков. На следующем рисунке показаны два новых интервала.
 
-     ![Визуализатор параллелизма с тремя пользовательскими последовательностями маркеров](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Визуализатор параллелизма с тремя сериями пользовательских маркеров](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Использование Visual Basic или C\#
 
@@ -90,7 +90,7 @@ ms.locfileid: "68870050"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект [span](/previous-versions/hh694189(v=vs.140)) создается путем вызова статического `EnterSpan` метода. Для записи в ряд по умолчанию используются статические методы записи класса [маркеров](/previous-versions/hh694099(v=vs.140)) .
+3. Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект [Span](/previous-versions/hh694189(v=vs.140)) можно создать путем вызова статического метода `EnterSpan`. Для записи ряда по умолчанию используйте статические методы записи класса [Markers](/previous-versions/hh694099(v=vs.140)).
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ ms.locfileid: "68870050"
 
      ![Визуализатор параллелизма с маркерами и оповещениями](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Добавьте код для создания серии маркеров клиента с помощью статического метода [креатемаркерсериес](/previous-versions/hh694171(v=vs.140)) . Класс [MarkerSeries](/previous-versions/hh694127(v=vs.140)) содержит методы для создания диапазонов и записи флагов, сообщений и предупреждений.
+5. Добавьте код для создания ряда маркеров клиента с помощью статического метода [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)). Класс [MarkerSeries](/previous-versions/hh694127(v=vs.140)) содержит методы для создания диапазонов и флагов записи, сообщений и оповещений.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")
@@ -166,8 +166,8 @@ ms.locfileid: "68870050"
 
 6. Запустите текущий проект, чтобы открыть визуализатор параллелизма. Три последовательности маркеров отображаются на собственных дорожках в представлении потоков. На следующем рисунке показаны три новых интервала.
 
-     ![Визуализатор параллелизма с тремя пользовательскими последовательностями маркеров](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesNative")
+     ![Визуализатор параллелизма с тремя сериями пользовательских маркеров](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

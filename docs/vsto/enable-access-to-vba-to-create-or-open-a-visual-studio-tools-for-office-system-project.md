@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551541"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Предоставление доступа к VBA для создания или открытия Инструменты Visual Studio для проекта Microsoft Office системы
@@ -99,7 +99,7 @@ ms.locfileid: "69551541"
 
 2. Выберите Office в списке **установленные программы** .
 
-3. Щелкните **Изменить**.
+3. Нажмите кнопку **Изменить**.
 
 4. Выберите **Добавить или удалить компоненты**, а затем нажмите кнопку **продолжить**.
 
@@ -119,11 +119,11 @@ ms.locfileid: "69551541"
 
 2. Выберите текущую версию Office в списке **установленные программы** .
 
-3. Щелкните **Изменить**.
+3. Нажмите кнопку **Изменить**.
 
 4. Выберите **переустановить или восстановить**, а затем нажмите кнопку **Далее**.
 
 5. Выберите **Обнаружение и исправление ошибок в установке Office**, а затем нажмите кнопку **установить**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)
