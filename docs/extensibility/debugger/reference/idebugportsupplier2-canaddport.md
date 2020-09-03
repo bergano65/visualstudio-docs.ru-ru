@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::CanAddPort Документы Майкрософт
+title: 'IDebugPortSupplier2:: Канаддпорт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724744"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
-Проверяется, что поставщик порта может добавить новые порты.
+Проверяет, может ли поставщик порта добавлять новые порты.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,11 +38,11 @@ int CanAddPort();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
- Если порт может быть `S_OK`добавлен, возвращается ; в противном случае возврат, `S_FALSE` указывающий на отсутствие портов, не может быть добавлен к этому поставщику порта.
+ Если порт можно добавить, возвращает значение `S_OK` ; в противном случае возвращается значение, `S_FALSE` указывающее, что порты не могут быть добавлены к этому поставщику портов.
 
-## <a name="remarks"></a>Примечания
- Вызовите этот метод, прежде чем вызывать метод [AddPort,](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) так как последний метод создает порт, а также добавляйте его, что может занять много времени.
+## <a name="remarks"></a>Remarks
+ Вызовите этот метод перед вызовом метода [аддпорт](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) , так как последний метод создает порт, а также добавляет его, что может занять много времени.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

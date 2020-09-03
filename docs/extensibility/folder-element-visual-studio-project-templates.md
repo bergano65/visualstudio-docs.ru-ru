@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769591"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Элемент Folder (шаблоны проектов Visual Studio)
@@ -50,7 +50,7 @@ ms.locfileid: "85769591"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|`Folder`|Указывает папку для добавления в проект. `Folder`элементы могут содержать дочерние `Folder` элементы.|
+|`Folder`|Указывает папку для добавления в проект. `Folder` элементы могут содержать дочерние `Folder` элементы.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Указывает файл, добавляемый в проект.|
 
 ### <a name="parent-elements"></a>Родительские элементы
@@ -59,8 +59,8 @@ ms.locfileid: "85769591"
 |-------------|-----------------|
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Необязательный дочерний элемент [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
-## <a name="remarks"></a>Примечания
- `Folder`является необязательным дочерним элементом `Project` .
+## <a name="remarks"></a>Remarks
+ `Folder` является необязательным дочерним элементом `Project` .
 
  Для организации элементов проекта в папки шаблона можно использовать любой из следующих методов:
 

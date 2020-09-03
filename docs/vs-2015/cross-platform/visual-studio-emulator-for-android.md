@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300776"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
@@ -36,11 +36,11 @@ ms.locfileid: "74300776"
   
 - [Возможности, которые можно тестировать в эмуляторе](#FeaturesTest)  
   
-- [Возможности, которые нельзя тестировать в эмуляторе](#FeaturesNonTest)  
+- [Функции, которые невозможно протестировать в эмуляторе](#FeaturesNonTest)  
   
 - [Ресурсы поддержки](#Support)  
   
-## <a name="Installing"></a> Установка и удаление  
+## <a name="installing-and-uninstalling"></a><a name="Installing"></a> Установка и удаление  
  Установка  
   
  Эмулятор Visual Studio для Android — это компонент, входящий в состав кроссплатформенных средств, которые доступны в Visual Studio. Он устанавливается во время выборочной установки Visual Studio при последовательном выборе параметров «Кроссплатформенная разработка мобильных приложений», «Общие средства и пакеты средств разработки программного обеспечения», а затем — «Эмулятор Visual Studio для Android».  
@@ -54,16 +54,16 @@ ms.locfileid: "74300776"
   
  При удалении эмулятора Visual Studio для Android виртуальные адаптеры Ethernet Hyper-V, созданные для эмулятора, не удаляются автоматически. Можно вручную удалить эти виртуальные адаптеры (если они не используются). Для этого откройте диспетчер Hyper-V, выберите один из VHD-образов эмулятора, перейдите на вкладку "Сеть" и выберите **Удалить** для каждого адаптера, который отображается на этой вкладке.  
   
-## <a name="Requirements"></a> Требования к системе и обратная совместимость  
+## <a name="system-requirements-and-backward-compatibility"></a><a name="Requirements"></a> Требования к системе и обратная совместимость  
  Важные сведения о требованиях к оборудованию, программному обеспечению и конфигурации для эмулятора Visual Studio для Android см. в следующих разделах.  
   
-- [Требования к системе для эмулятора Android для Visual Studio](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
   Эмулятору Visual Studio для Android требуется Visual Studio 2015. Он не поддерживает обратную совместимость с более ранними версиями Visual Studio.  
   
   Новые версии эмулятора устанавливаются поверх старых версий (и в некоторых случаях могут заменять старые образы, удаляя параметры, приложения и файлы, установленные в этих образах).  
   
-## <a name="Networking"></a>Сетевое подключение эмулятора Visual Studio для Android  
+## <a name="networking-in-the-visual-studio-emulator-for-android"></a><a name="Networking"></a> Сетевые подключения в эмуляторе Visual Studio для Android  
  Сетевое подключение эмулятора Visual Studio для Android действует аналогично подключению настольного компьютера со следующими характеристиками.  
   
 - Эмулятор отображается в сети как отдельное устройство с собственным IP-адресом.  
@@ -78,7 +78,7 @@ ms.locfileid: "74300776"
   
   Сведения об устранении сетевых проблем см. в разделе [Устранение неполадок в эмуляторе Visual Studio для Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
-## <a name="Configuring"></a> Настройка эмулятора Visual Studio для Android  
+## <a name="configure-the-visual-studio-emulator-for-android"></a><a name="Configuring"></a> Настройка эмулятора Visual Studio для Android  
  Тестирование приложения Android на совместимость с огромным количеством различного оборудования Android может оказаться сложной задачей. На рынке существует множество телефонов и планшетных компьютеров Android с экранами разного размера, поддерживающими различные версии и доступные для разных конфигураций оборудования (ОЗУ, ЦП, архитектура и т. д.). Эмулятор Visual Studio для Android упрощает использование разнообразных версий и конфигураций с помощью профилей устройств. Набор профилей устройств представляет наиболее распространенное оборудование на рынке, включая устройства от Samsung, Motorola, Sony, LG и многих других производителей.  
   
  В Visual Studio 2015 устанавливать, удалять и запускать профили устройств можно с помощью диспетчера эмуляторов. Для доступа к диспетчеру эмуляторов выберите в меню **Сервис** пункт **Эмулятор Visual Studio для Android**.  
@@ -89,10 +89,10 @@ ms.locfileid: "74300776"
   
  После установки набора профилей, которые будут являться целевыми, новые профили можно запускать непосредственно из диспетчера с помощью зеленой кнопки **Воспроизведение**. Они также будут отображаться в раскрывающемся меню целевого объекта отладки в кроссплатформенном мобильном проекте Visual Studio любого типа.  
   
-## <a name="FeaturesTest"></a> Возможности, которые можно тестировать в эмуляторе  
+## <a name="features-that-you-can-test-in-the-emulator"></a><a name="FeaturesTest"></a> Функции, которые можно тестировать в эмуляторе  
  Подробные сведения о возможностях, которые можно протестировать в эмуляторе, см. в [документации](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).  
   
-## <a name="FeaturesNonTest"></a> Возможности, которые нельзя тестировать в эмуляторе  
+## <a name="features-that-you-cant-test-in-the-emulator"></a><a name="FeaturesNonTest"></a> Функции, которые невозможно протестировать в эмуляторе  
  В следующем списке приведены возможности и компоненты платформы Android, которые **нельзя** тестировать в эмуляторе. Эти возможности и компоненты необходимо проверять на физическом устройстве.  
   
 - Компас  
@@ -103,13 +103,13 @@ ms.locfileid: "74300776"
   
 - Яркость. Изменение уровня яркости эмулятора не влияет на способ визуального отображения устройства на экране.  
   
-## <a name="Support"></a> Ресурсы поддержки  
+## <a name="support-resources"></a><a name="Support"></a> Ресурсы поддержки  
  Если главный компьютер отвечает требованиям к системе и возникают проблемы, не описанные в этом руководстве по устранению неполадок:  
   
 - задайте вопрос на сайте StackOverflow, используя теги [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) и visual-studio;  
   
 - сообщите о проблеме с помощью средства отправки одобрения в Visual Studio или в диспетчере эмуляторов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Требования к системе для эмулятора Visual Studio для Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Устранение неполадок эмулятора Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

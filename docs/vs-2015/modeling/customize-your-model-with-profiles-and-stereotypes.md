@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301193"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Настройка модели с помощью профилей и стереотипов
@@ -31,14 +31,14 @@ ms.locfileid: "74301193"
 
  Стереотипы можно устанавливать в списке свойств элемента. Для основных видов фигур на схеме примененные стереотипы отображаются и на фигуре, как показано в примере.
 
- ![Класс UML с стереотипом.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![Класс UML со стереотипом.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Если создать модель с помощью профиля, а затем отправить кому-либо эту модель, получатель не сможет видеть стереотипы, если на его компьютере не установлен тот же профиль.
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>См. также
 
-|Название|Описание|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Добавление стереотипов к элементам модели UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Размещение элемента модели в пакете, связывание пакета с профилем и применение стереотипа к элементу.|
 |[Стандартные стереотипы для моделей UML](../modeling/standard-stereotypes-for-uml-models.md)|Стандартные профили UML L2 и L3 устанавливаются вместе с Visual Studio, и все модели связаны с ними по умолчанию. Они предоставляют стереотипы для создания заметок к моделям.<br /><br /> Например, применив к классу стереотип Specification, можно указать, что он позволяет настраивать поведение только тех его экземпляров, которые видно извне.|

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc04cbc6d46d8dc47a08d06c8c5949bb5d9107f3
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79431369"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Часто задаваемые вопросы, посвященные FxCop и анализаторам FxCop
@@ -31,7 +31,7 @@ ms.locfileid: "79431369"
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Запускаются ли анализаторы FxCop с помощью команды "Запустить анализ кода"?
 
-До visual Studio 2019 16.5 релиз, когда вы выбираете **Анализ** > **запуска кода**, он выполняет устаревание анализа. Начиная Visual Studio 2019 16.5, Вариант меню **run Code Analysis** выполняет анализаторы на основе Roslyn для выбранного проекта или решения. Если вы установили анализаторы FxCop на основе Roslyn, они также будут выполнены. Для получения дополнительной информации [см. Как: Выполнить анализ кода вручную для управляемого кода](how-to-run-code-analysis-manually-for-managed-code.md).
+До выпуска Visual Studio 2019 16,5 **при выборе анализа**  >  **запустить анализ кода**выполняется анализ прежних версий. При запуске Visual Studio 2019 16,5 с помощью команды меню **выполнить анализ кода** выполняются анализаторы на основе Roslyn для выбранного проекта или решения. Если установлены анализаторы FxCop на основе Roslyn, они также будут выполнены. Дополнительные сведения см. [в разделе инструкции. Запуск анализа кода вручную для управляемого кода](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Запускаются ли анализаторы с помощью свойства проекта msbuild RunCodeAnalysis?
 
@@ -43,22 +43,22 @@ ms.locfileid: "79431369"
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Я получаю предупреждение CA0507 даже после установки пакета NuGet анализаторов FxCop
 
-Если вы установили анализаторы FxCop, но продолжаете получать предупреждение CA0507 **""Запуск анализа кода" был уволен в пользу анализаторов FxCop, которые работают во время сборки ",** возможно, потребуется установить **RunCodeAnalysis** msbuild собственности в [файле проекта](../ide/solutions-and-projects-in-visual-studio.md#project-file) **на ложные**. В противном случае анализ наследия будет выполняться после каждой сборки.
+Если вы установили FxCop Analyzer, но продолжите получать предупреждение CA0507 **"" Запуск анализа кода "не рекомендуется в пользу средств FxCop Analyzer, которые запускаются во время сборки"**, может потребоваться задать для свойства **рункодеаналисис** MSBuild в [файле проекта](../ide/solutions-and-projects-in-visual-studio.md#project-file) значение **false**. В противном случае прежний анализ будет выполняться после каждой сборки.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Какие правила были перенесены на анализаторы FxCop?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Какие правила были перенесены в средства FxCop Analyzer?
 
-Для получения информации о том, какие устаревшие правила [Fxcop rule port status](fxcop-rule-port-status.md)анализа были перенесены на [анализаторы FxCop,](install-fxcop-analyzers.md)см.
+Сведения о том, какие правила анализа прежних версий были перенесены в средства [FxCop Analyzer](install-fxcop-analyzers.md), см. в разделе [состояние порта правила FxCop](fxcop-rule-port-status.md).
 
-## <a name="code-analysis-warnings-are-treated-as-errors"></a>Предупреждения об анализе кода рассматриваются как ошибки
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Предупреждения анализа кода обрабатываются как ошибки
 
-Если проект использует опцию сборки для обработки предупреждений как ошибок, предупреждения аналитика FxCop могут отображаться как ошибки. Чтобы предотвратить обработку предупреждений о анализе кода как ошибки, выполните последующие шаги в [часто задаваемых вопросов анализа кода.](../code-quality/analyzers-faq.md#treat-warnings-as-errors)
+Если в проекте используется параметр Build для обработки предупреждений как ошибок, то предупреждения FxCop Analyzer могут отображаться как ошибки. Чтобы предотвратить невозможность обработки предупреждений анализа кода как ошибок, следуйте инструкциям в [разделе вопросы и ответы по анализу кода](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>См. также раздел
 
 - [Обзор анализаторов на платформе .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Переход на анализаторы FxCop](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
+- [Миграция на анализаторы FxCop](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
 - [Установка анализаторов FxCop](install-fxcop-analyzers.md)

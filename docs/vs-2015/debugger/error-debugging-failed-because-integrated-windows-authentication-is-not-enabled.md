@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Отладка не удалась, так как встроенная проверка подлинности Windows не включена | Документация Майкрософт'
+title: 'Ошибка: сбой отладки из-за отключенной встроенной проверки подлинности Windows | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851917"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Ошибка: не удается выполнить отладку, поскольку отключена встроенная проверка подлинности Windows
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Ошибка: сбой отладки из-за того, что отключена встроенная проверка подлинности Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Проверка подлинности пользователя, запросившего отладку, была прервана ошибкой проверки подлинности. Это может произойти при попытке выполнить пошаговую отладку веб-приложения или веб-службы XML. Одна из причин этой ошибки в том, что встроенная проверка подлинности Windows не включена. Чтобы включить ее, следуйте шагам в разделе "Включение встроенной проверки подлинности Windows".  
@@ -71,13 +71,13 @@ ms.locfileid: "75851917"
   
 2. Включите проверку подлинности Windows и совместимость управления IIS6, если раньше это не было выполнено, используя следующие шаги:  
   
-    1. Нажмите кнопку **Пуск**, выберите **Панель управления** , а затем — **программы**.  
+    1. Нажмите **Пуск**, выберите **Панель управления**, а затем нажмите **Программы**.  
   
     2. В группе **Программы и компоненты** выберите пункт **Включение или отключение компонентов Windows**.  
   
          Открывается диалоговое окно "Управление доступом на уровне пользователей" и запрашиваются разрешения, чтобы продолжить.  
   
-    3. Нажмите кнопку **Continue**(Продолжить).  
+    3. Нажмите кнопку **Продолжить**.  
   
          Откроется диалоговое окно Компоненты Windows.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "75851917"
   
 10. Закройте окно **Диспетчер служб IIS**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Дайджест-аутентификация Microsoft](https://msdn2.microsoft.com/library/Aa378744.aspx)   
- [Запуск веб-приложений в Windows Vista с помощью IIS 7,0 и Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Дайджест-проверка подлинности Microsoft](https://msdn2.microsoft.com/library/Aa378744.aspx)   
+ [Запуск веб-приложений в Windows Vista с помощью IIS 7.0 и Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes Документы Майкрософт
+title: 'Идебугпоинтеробжект:: GetBytes | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725513"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Получает значение, указано в виде серии последовательных байтов.
+Возвращает значение, которое указывает на последовательность последовательных байтов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>Параметры
 `dwStart`\
-(в) Смещение, в байтах, с самого начала объекта указал.
+окне Смещение в байтах от начала объекта, на который указывает.
 
 `dwCount`\
-(в) Количество байтов для извлечения.
+окне Число извлекаемых байтов.
 
 `pBytes`\
-(в, вне) Массив, заполняемый значением в виде серии последовательных байтов, начиная с заданного смещения от объекта, на который указывается.
+[вход, выход] Массив, который заполняется значением в виде последовательности последовательных байтов, начиная с заданного смещения от объекта, на который указывает.
 
 `pdwBytes`\
-(ваут) Возвращает количество байтов, фактически извлеченных.
+заполняет Возвращает число фактически извлеченных байтов.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод используется, если указатель, представленный этим [IDebugPointerObject,](../../../extensibility/debugger/reference/idebugpointerobject.md) указывает на примитивный тип или простой массив примитивных типов (т.е. массив, который может быть представлен простой последовательностью байтов).
+## <a name="remarks"></a>Remarks
+ Этот метод используется, если указатель, представленный этим [идебугпоинтеробжект](../../../extensibility/debugger/reference/idebugpointerobject.md) , указывает на примитивный тип или простой массив типов-примитивов (то есть массив, который может быть представлен простой последовательностью байтов).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
 - [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

@@ -1,0 +1,286 @@
+- name: Расширяемость отладчика Visual Studio
+  href: visual-studio-debugger-extensibility.md
+- name: Выбор стратегии реализации модуля отладки
+  href: choosing-a-debug-engine-implementation-strategy.md
+- name: Создание пользовательского модуля отладки
+  href: creating-a-custom-debug-engine.md
+  items:
+    - name: Регистрация пользовательского модуля отладки
+      href: registering-a-custom-debug-engine.md
+    - name: Включение программы для отладки
+      href: enabling-a-program-to-be-debugged.md
+      items:
+        - name: Получение порта
+          href: getting-a-port.md
+        - name: Регистрация программы
+          href: registering-the-program.md
+        - name: Присоединение к программе
+          href: attaching-to-the-program.md
+        - name: Вложение на основе запуска
+          href: launch-based-attachment.md
+        - name: Отправка необходимых событий
+          href: sending-the-required-events.md
+    - name: Элемент управления выполнением и анализ состояния
+      href: execution-control-and-state-evaluation.md
+      items:
+        - name: Элемент управления программой
+          href: program-control.md
+        - name: 'Методы, связанные с точкой останова'
+          href: breakpoint-related-methods.md
+        - name: Анализ стека вызова
+          href: call-stack-evaluation.md
+        - name: Вычисление выражений
+          href: expression-evaluation-visual-studio-debugging-sdk.md
+        - name: События элементов управления
+          href: control-events.md
+    - name: Отправка событий
+      href: sending-events.md
+      items:
+        - name: Источники событий
+          href: event-sources-visual-studio-sdk.md
+        - name: Поддерживаемые типы событий
+          href: supported-event-types.md
+        - name: Описания событий
+          href: event-descriptions.md
+    - name: Завершение и отсоединение
+      href: termination-and-detaching.md
+    - name: Вызов событий отладчика
+      href: calling-debugger-events.md
+      items:
+        - name: Присоединение к программе и отсоединение от нее
+          href: attaching-and-detaching-to-a-program.md
+        - name: Запуск отладчика
+          href: launching-the-debugger.md
+        - name: Завершение программы
+          href: terminating-a-program.md
+        - name: Создание точки останова
+          href: creating-a-breakpoint.md
+        - name: Когда точка останова привязывается или становится непривязанной
+          href: when-a-breakpoint-binds-or-becomes-unbound.md
+        - name: Ошибки точки останова
+          href: breakpoint-errors.md
+        - name: Попадание в точку останова
+          href: hitting-a-breakpoint.md
+        - name: Удаление точки останова
+          href: deleting-a-breakpoint.md
+        - name: Вход в режим приостановки выполнения
+          href: entering-break-mode.md
+        - name: Пошаговое выполнение в режиме приостановки выполнения
+          href: stepping-in-break-mode.md
+        - name: Вычисление выражений в режиме приостановки выполнения
+          href: expression-evaluation-in-break-mode.md
+        - name: Обработка исключений.
+          href: exception-handling-visual-studio-sdk.md
+    - name: Практическое руководство. Отладка пользовательского модуля отладки
+      href: how-to-debug-a-custom-debug-engine.md
+- name: Приступая к работе
+  href: getting-started-with-debugger-extensibility.md
+  items:
+    - name: Схема для расширения отладчика
+      href: roadmap-for-extending-the-debugger.md
+    - name: Компоненты отладчика
+      href: debugger-components.md
+      items:
+        - name: Пакет отладки
+          href: debug-package.md
+        - name: Диспетчер отладки процессов
+          href: process-debug-manager.md
+        - name: Диспетчер отладки сеансов
+          href: session-debug-manager.md
+        - name: Модуль отладки
+          href: debug-engine.md
+        - name: Рабочие режимы
+          href: operational-modes.md
+        - name: Вычислитель выражений
+          href: expression-evaluator.md
+        - name: Поставщик символов
+          href: symbol-provider.md
+        - name: Визуализатор типов и пользовательское средство просмотра
+          href: type-visualizer-and-custom-viewer.md
+    - name: 'Отладчик: основные понятия'
+      href: debugger-concepts.md
+      items:
+        - name: Сеанс отладки
+          href: debug-session.md
+        - name: Серверы
+          href: servers-visual-studio-sdk.md
+        - name: Поставщики портов
+          href: port-suppliers.md
+        - name: Порты
+          href: ports.md
+        - name: Процессы
+          href: processes.md
+        - name: Узлы программы
+          href: program-nodes.md
+        - name: Программы
+          href: programs.md
+        - name: Потоки
+          href: threads.md
+        - name: Кадры стека
+          href: stack-frames.md
+        - name: Модули
+          href: modules.md
+        - name: Точки останова
+          href: breakpoints-visual-studio-sdk.md
+    - name: Контексты отладчика
+      href: debugger-contexts.md
+      items:
+        - name: Контекст кода
+          href: code-context.md
+        - name: Позиция в документе
+          href: document-position.md
+        - name: Контекст документа
+          href: document-context.md
+        - name: Контекст вычисления выражений
+          href: expression-evaluation-context.md
+    - name: Задачи отладки
+      href: debugging-tasks.md
+      items:
+        - name: Проблемы с безопасностью
+          href: security-issues.md
+        - name: Запуск программы
+          href: launching-a-program.md
+          items:
+            - name: Уведомление порта
+              href: notifying-the-port.md
+            - name: Присоединение после запуска
+              href: attaching-after-a-launch.md
+        - name: Присоединение непосредственно к программе
+          href: attaching-directly-to-a-program.md
+        - name: Отправка событий запуска после запуска
+          href: sending-startup-events-after-a-launch.md
+        - name: Элемент управления выполнения
+          href: control-of-execution.md
+        - name: Связывание точек останова
+          href: binding-breakpoints.md
+        - name: Вычисление выражений
+          href: evaluating-expressions.md
+        - name: Визуализация и просмотр данных
+          href: visualizing-and-viewing-data.md
+- name: Запись вычислителя выражений CLR
+  href: writing-a-common-language-runtime-expression-evaluator.md
+  items:
+    - name: Вычисления выражений и среда CLR
+      href: common-language-runtime-and-expression-evaluation.md
+    - name: Архитектура вычислителя выражений
+      href: expression-evaluator-architecture.md
+      items:
+        - name: Контекст вычислений
+          href: evaluation-context.md
+        - name: Интерфейсы вычислителя ключевых выражений
+          href: key-expression-evaluator-interfaces.md
+    - name: Регистрация вычислителя выражений
+      href: registering-an-expression-evaluator.md
+    - name: Реализация вычислителя выражений
+      href: implementing-an-expression-evaluator.md
+      items:
+        - name: Стратегия реализации вычислителя выражений
+          href: expression-evaluator-implementation-strategy.md
+    - name: Отображение локальных переменных
+      href: displaying-locals.md
+      items:
+        - name: Пример реализации локальных переменных
+          href: sample-implementation-of-locals.md
+          items:
+            - name: Реализация GetMethodProperty
+              href: implementing-getmethodproperty.md
+            - name: Перечисление локальных переменных
+              href: enumerating-locals.md
+            - name: Получение локальных свойств
+              href: getting-local-properties.md
+            - name: Получение локальных значений
+              href: getting-local-values.md
+            - name: Вычисление локальных переменных
+              href: evaluating-locals.md
+    - name: Вычисление выражения окна контрольных значений
+      href: evaluating-a-watch-window-expression.md
+      items:
+        - name: Пример реализации вычисления выражений
+          href: sample-implementation-of-expression-evaluation.md
+        - name: Вычисление выражения контрольных значений
+          href: evaluating-a-watch-expression.md
+    - name: Изменение значения локальной переменной
+      href: changing-the-value-of-a-local.md
+      items:
+        - name: Пример реализации изменяющихся значений
+          href: sample-implementation-of-changing-values.md
+    - name: Реализация визуализаторов типов и пользовательских средств просмотра
+      href: implementing-type-visualizers-and-custom-viewers.md
+- name: Реализация поставщика порта
+  href: implementing-a-port-supplier.md
+  items:
+    - name: Реализация и регистрация поставщика порта
+      href: implementing-and-registering-a-port-supplier.md
+    - name: Интерфейс поставщика необходимого порта
+      href: required-port-supplier-interfaces.md
+- name: Внутренние компоненты параллельных расширений для .NET Framework
+  href: parallel-extension-internals-for-the-dotnet-framework.md
+  items:
+    - name: Класс Task
+      href: task-class-internal-members.md
+      items:
+        - name: Поле m_action
+          href: m-action-field.md
+        - name: Поле m_contingentProperties
+          href: m-contingentproperties-field.md
+        - name: Поле m_parent
+          href: m-parent-field.md
+        - name: Поле m_stateFlags
+          href: m-stateflags-field.md
+        - name: Поле m_stateObject
+          href: m-stateobject-field.md
+        - name: Поле m_taskId
+          href: m-taskid-field.md
+        - name: Поле s_taskIdCounter
+          href: s-taskidcounter-field.md
+        - name: Поле TASK_STATE_CANCELED
+          href: task-state-canceled-field.md
+        - name: Поле TASK_STATE_EXECUTED
+          href: task-state-executed-field.md
+        - name: Поле TASK_STATE_FAULTED
+          href: task-state-faulted-field.md
+        - name: Поле TASK_STATE_RAN_TO_COMPLETION
+          href: task-state-ran-to-completion-field.md
+        - name: Поле TASK_STATE_WAITING_ON_CHILDREN
+          href: task-state-waiting-on-children-field.md
+        - name: Метод SetNotificationForWaitCompletion
+          href: setnotificationforwaitcompletion-method.md
+        - name: Метод NotifyDebuggerOfWaitCompletion
+          href: notifydebuggerofwaitcompletion-method.md
+    - name: Класс TaskScheduler
+      href: taskscheduler-class-internal-members.md
+      items:
+        - name: Метод GetScheduledTasksForDebugger
+          href: getscheduledtasksfordebugger-method.md
+        - name: Метод GetTaskSchedulersForDebugger
+          href: gettaskschedulersfordebugger-method.md
+    - name: Класс ContingentProperties
+      href: contingentproperties-class-internal-members.md
+      items:
+        - name: Поле m_children
+          href: m-children-field.md
+    - name: Структура AsyncTaskMethodBuilder
+      href: asynctaskmethodbuilder-structure-internal-members.md
+      items:
+        - name: Свойство ObjectIdForDebugger
+          href: asynctaskmethodbuilder-objectidfordebugger-property.md
+        - name: Поле m_builder
+          href: asynctaskmethodbuilder-m-builder-field.md
+    - name: Структура AsyncTaskMethodBuilder\<TResult>
+      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
+      items:
+        - name: Свойство ObjectIdForDebugger
+          href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
+        - name: Поле m_task
+          href: asynctaskmethodbuilder-tresult-m-task-field.md
+    - name: Структура AsyncVoidMethodBuilder
+      href: asyncvoidmethodbuilder-structure-internal-members.md
+      items:
+        - name: Свойство ObjectIdForDebugger
+          href: asyncvoidmethodbuilder-objectidfordebugger-property.md
+        - name: Поле m_objectIdForDebugger
+          href: asyncvoidmethodbuilder-m-objectidfordebugger-field.md
+- name: Справочник
+  href: reference/reference-visual-studio-debugging-apis.md
+- name: Примеры
+  href: visual-studio-debugging-samples.md

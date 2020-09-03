@@ -1,0 +1,196 @@
+- name: "Подписки на Visual\_Studio"
+  href: index.yml
+- name: Новые возможности
+  href: whats-new-in-subscriptions.md
+- name: Подписки
+  items:
+    - name: Приобретение подписок
+      items:
+        - name: Retail
+          href: buy-activate-retail.md
+        - name: Cloud
+          items:
+            - name: Обзор
+              href: vscloud-overview.md
+            - name: Вопросы и ответы по выставлению счетов
+              href: vscloud-billing-faq.md
+            - name: Покупка для поставщиков облачных решений
+              href: vscloud-csp.md
+        - name: Visual Studio с GitHub Enterprise
+          href: access-github.md
+        - name: "Microsoft Partner\_Network"
+          items:
+            - name: Подписки для партнеров
+              href: program-mpn.md
+            - name: Управление подписками для MPN
+              href: manage-mpn-subscriptions.md
+        - name: Майкрософт для стартапов
+          href: program-startups.md
+    - name: Войти
+      items:
+        - name: Вход с помощью учетных записей Майкрософт
+          href: sign-in-msa.md
+        - name: Вход с помощью рабочих или учебных учетных записей
+          href: sign-in-work.md
+        - name: Вход с использованием учетных данных GitHub
+          href: sign-in-github.md
+        - name: Подключенные удостоверения
+          href: use-connected-identities.md
+        - name: Альтернативные удостоверения
+          href: vs-alternate-identity.md
+        - name: Проблема входа
+          href: sign-in-issues.md
+        - name: Анонимизация данных подписчика
+          href: anonymization.md
+    - name: Общие сведения о портале подписок
+      href: using-the-subscriber-portal.md
+    - name: Управление подписками
+      href: manage-vs-subscriptions.md
+    - name: Обратитесь к администратору подписок
+      href: contact-my-admin.md
+    - name: Преимущества
+      items:
+        - name: Инструменты
+          items:
+            - name: Индивидуальный кредит Azure DevTest
+              href: vs-azure.md
+            - name: Azure DevOps
+              href: vs-azure-devops.md
+            - name: Azure DevTest с оплатой по мере использования
+              href: vs-azure-payg.md
+            - name: Azure EA DevTest
+              href: azure-ea-devtest.md
+            - name: "CAST\_Highlight"
+              href: vs-cast.md
+            - name: CloudPilot
+              href: vs-cloudpilot.md
+            - name: "Приложения Microsoft\_365 для предприятий"
+              href: microsoft-365-apps-for-enterprise.md
+            - name: "Разработчик Microsoft\_365"
+              href: vs-m365.md
+            - name: Parasoft
+              href: vs-parasoft.md
+            - name: "Power\_BI Pro"
+              href: vs-pbi.md
+            - name: Центр приложений Visual Studio
+              href: vs-visual-studio-app-center.md
+            - name: Интегрированная среда разработки Visual Studio
+              href: vs-ide-benefit.md
+            - name: "WhiteSource\_Bolt"
+              href: vs-whitesource.md
+            - name: "Учетная запись разработчика\_Windows"
+              href: vs-windows-dev.md
+            - name: Виртуальный рабочий стол Windows
+              href: vs-windows-virtual-desktop.md
+        - name: Профессиональное развитие
+          items:
+            - name: "Журнал\_CODE"
+              href: vs-code-magazine.md
+            - name: DataCamp
+              href: vs-datacamp.md
+            - name: LinkedIn Learning
+              href: vs-linkedin-learning.md
+            - name: Pluralsight
+              href: vs-pluralsight.md
+        - name: Поддержка
+          items:
+            - name: Сообщество Azure
+              href: vs-azure-community.md
+            - name: Поддержка Concierge
+              href: vs-concierge-chat.md
+            - name: Техническая поддержка
+              href: vs-tech-support.md
+- name: Программное обеспечение и ключи
+  items:
+    - name: Загрузка программного обеспечения
+      items:
+        - name: Доступность продуктов
+          href: product-availability.md
+        - name: Скачивание программного обеспечения
+          href: download-software.md
+    - name: Список доступного для скачивания программного обеспечения
+      href: software-download-list.md
+    - name: Ключи продуктов
+      items:
+        - name: Общие сведения о ключах продукта
+          href: product-keys.md
+        - name: Поиск и запрашивание ключей
+          href: find-keys.md
+        - name: Веб-материалы для демонстрации
+          href: internet-demos.md
+- name: Администраторы
+  items:
+    - name: Обязанности администратора
+      items:
+        - name: Обязанности администратора
+          href: admin-responsibilities.md
+        - name: Предварительная инвентаризация
+          href: admin-inventory.md
+        - name: Управление большими рабочими группами и сторонними подрядчиками
+          href: manage-teams.md
+        - name: Отслеживание назначений пользователей и обработка заказов
+          href: assignments-orders.md
+    - name: Доступ к порталу администрирования
+      items:
+        - name: Корпоративная лицензия
+          href: volume-license.md
+        - name: MPSA
+          href: mpsa.md
+        - name: Облачные подписки
+          href: cloud-admin.md
+        - name: 'Партнеры, управляющие от имени клиентов'
+          href: open-migration.md
+        - name: Видеоучебник. Доступ к порталу администрирования
+          href: 'https://youtu.be/plSu6fpi7UI'
+    - name: Использование портала администрирования
+      items:
+        - name: Суперадминистраторы и администраторы
+          href: admin-roles.md
+        - name: Настройка параметров соглашения
+          href: admin-prefs.md
+        - name: Обзор
+          href: using-admin-portal.md
+        - name: Добавление ежемесячных подписок
+          href: add-monthly-subs.md
+        - name: Назначение подписок
+          items:
+            - name: Добавление отдельных пользователей
+              href: assign-license.md
+            - name: Добавление нескольких пользователей
+              href: assign-license-bulk.md
+            - name: Назначение конкретных подписок
+              href: assign-guid.md
+        - name: Изменение подписок
+          href: edit-license.md
+        - name: Удаление подписок
+          href: delete-license.md
+        - name: Поиск подписки
+          href: search-license.md
+        - name: Экспорт подписок
+          href: exporting-subscriptions.md
+        - name: Превышение доступности
+          href: handle-overclaimed-license.md
+        - name: Максимальное использование
+          href: maximum-usage.md
+        - name: Подписки с истекшим сроком действия
+          href: handle-expired-license.md
+        - name: 'Сценарии входа подписчика  '
+          href: aliasing.md
+        - name: 'Подписчики, входящие по личным электронным адресам'
+          href: personal-email-sign-ins.md
+        - name: Управление Visual Studio в GitHub Enterprise
+          href: assign-github.md
+- name: Ресурсы
+  items:
+    - name: Документ по лицензированию Visual Studio
+      href: 'https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf'
+    - name: Сравнение вариантов и цен подписок
+      href: 'https://visualstudio.microsoft.com/vs/pricing'
+    - name: "Сравнение возможностей IDE Visual\_Studio"
+      href: 'https://visualstudio.microsoft.com/vs/compare'
+    - name: "Поддержка по администрированию и подпискам Visual\_Studio"
+      href: 'https://visualstudio.microsoft.com/support/support-overview-vs'
+    - name: Условия корпоративного лицензирования
+      href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
+    - name: "Соглашение Microsoft\_Products and Services Agreement\_(MPSA)"
+      href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'

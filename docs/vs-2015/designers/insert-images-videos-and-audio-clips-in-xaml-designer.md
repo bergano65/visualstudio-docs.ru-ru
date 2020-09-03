@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f18e8ccf51a5fc6a5d196fa05224dec55a3fd00
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300830"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Вставка изображений, видео- и аудиоклипов в конструкторе XAML
@@ -21,7 +21,7 @@ ms.locfileid: "74300830"
 
 Изображения, видео и аудиоклипы делают ваше приложение более зрелищным.
 
- ![Изображения по размеру](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
+ ![Изображения, подобранные по размеру](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
 
  Чтобы использовать изображение, видео или аудиоклип, добавьте его в проект, а затем перетащите его с панели **Ресурсы** в **область рисования**.
 
@@ -34,5 +34,5 @@ ms.locfileid: "74300830"
 |Импорт файла Adobe Photoshop|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Импорт файла Photoshop в Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|
 |Вставка аудиоклипов|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Добавление аудиоклипов](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

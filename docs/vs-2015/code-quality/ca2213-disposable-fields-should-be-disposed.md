@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534580"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213. Следует высвобождать высвобождаемые поля
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
@@ -50,9 +50,9 @@ ms.locfileid: "85534580"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Пример
- В следующем примере показан тип `TypeB` , нарушающий это правило, объявляя поле `aFieldOfADisposableType` ( `F` в предыдущем обсуждении) в качестве высвобождаемого типа ( `TypeA` ) и не обращающегося <xref:System.IDisposable.Dispose%2A> к полю. `TypeB`соответствует `T` в предыдущем обсуждении.
+ В следующем примере показан тип `TypeB` , нарушающий это правило, объявляя поле `aFieldOfADisposableType` ( `F` в предыдущем обсуждении) в качестве высвобождаемого типа ( `TypeA` ) и не обращающегося <xref:System.IDisposable.Dispose%2A> к полю. `TypeB` соответствует `T` в предыдущем обсуждении.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.IDisposable?displayProperty=fullName> [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

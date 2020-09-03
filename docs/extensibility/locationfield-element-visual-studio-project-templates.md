@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770023"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Элемент Локатионфиелд (шаблоны проектов Visual Studio)
@@ -36,7 +36,7 @@ ms.locfileid: "85770023"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.
@@ -58,7 +58,7 @@ ms.locfileid: "85770023"
 
 - `Hidden`, который указывает, что поле **Расположение** диалогового окна **Новый проект** скрыто.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Значение по умолчанию — `Enabled`.
 
  Текстовое поле **Расположение** в диалоговом окне **Новый проект** позволяет пользователям изменять каталог по умолчанию, в котором сохраняются новые проекты.

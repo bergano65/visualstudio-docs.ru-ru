@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: f110b8d6f7ab05d5a1b6942cd9ec599a8d8619b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299825"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
@@ -24,7 +24,7 @@ ms.locfileid: "74299825"
 > [!IMPORTANT]
 > В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Предварительные требования  
  Для использования средств Visual Studio для Unity вам потребуется следующее:  
   
 - версия **Visual Studio** , поддерживающая расширение, например Visual Studio Community, Professional, Premium или Enterprise (скачать Visual Studio Community можно бесплатно);  
@@ -63,53 +63,53 @@ ms.locfileid: "74299825"
 ### <a name="unity-52-and-higher-requires-vstu-21-or-higher"></a>Unity 5.2 или более поздней версии (требуются инструменты Visual Studio для Unity 2.1 или более поздней версии)  
  Начиная с версии Unity 5.2 больше не нужно импортировать пакет unitypackage инструментов Visual Studio в проекты. Если проект импортирует этот пакет unitypackage, Unity 5.2 игнорирует его и напрямую загружает инструменты Visual Studio для Unity из папки установки.  
   
-#### <a name="1---create-a-unity-project"></a>1\. Создание проекта Unity  
+#### <a name="1---create-a-unity-project"></a>1. Создание проекта Unity  
  Если у вас уже есть опыт работы с Unity, вы можете создать новый проект или загрузить один из собственных. Если вы загружаете проект, который импортировал пакет unitypackage инструментов Visual Studio для использования инструментов Visual Studio для Unity с предыдущей версией Unity, мы рекомендуем удалить его, удалив каталог UnityVS.  
   
  В противном случае, если у вас нет опыта работы с Unity, ознакомьтесь с базовым учебным пособием. На странице "Изучение Unity" найдите учебники с примерами проектов, с которых вы можете начать, а также с уроками, которые позволят вам создать собственную игру с помощью Unity. На данной странице имеются удобные учебники для нескольких различных игр.  
   
- [Учебники — страница "Изучение Unity"](https://learn.unity.com/tutorials)  
+ [Учебники – страница "Изучение Unity"](https://learn.unity.com/tutorials)  
   
-#### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2\. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
+#### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
  Чтобы в проекте можно было использовать инструменты Visual Studio для Unity, просто задайте Visual Studio в качестве внешнего редактора скриптов. В редакторе Unity в главном меню выберите пункт **Edit &gt; Preferences**(Правка &gt; Настройки), а затем в диалоговом окне **Unity Preferences** (Настройки Unity) выберите **External Tools**(Внешние средства). Далее укажите в качестве значения свойства **External Script Editor** (Внешний редактор скриптов) версию Visual Studio, которую нужно использовать (для этой версии Visual Studio должны быть установлены инструменты Visual Studio для Unity), и убедитесь в том, что задано свойство **Editor Attaching** (Присоединение редактора).  
   
  Чтобы проверить, включена ли встроенная поддержка инструментов Visual Studio для Unity, воспользуйтесь диалоговым окном **About Unity** (Сведения о Unity). In the Unity editor, on the main menu, choose **Help &gt; About Unity** (Справка &gt; Сведения о Unity). Если инструменты Visual Studio для Unity установлены и правильно настроены, в левом нижнем углу диалогового окна **About Unity** (Сведения о Unity).  
   
  Наконец, убедитесь в том, что вы установили целевой объект сборки на странице **Build Settings** (Параметры сборки) и что функция **Script Debugging** (Отладка скриптов) включена.  
   
- ![Настройка параметров сборки Unity для отладки.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Настройте параметры сборки Unity для отладки.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
-#### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3\. Запуск Visual Studio из редактора Unity  
+#### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3. Запуск Visual Studio из редактора Unity  
  Начиная с версии Unity 5.2 меню расширения **Инструменты Visual Studio** больше не требуется для запуска Visual Studio или настройки инструментов Visual Studio для Unity. Вместо этого после настройки Visual Studio в качестве внешнего редактора скриптов просто выберите файл скрипта в редакторе Unity, и ваш код откроется в Visual Studio.  
   
 ### <a name="previous-versions-of-unity-pre-52"></a>Предыдущие версии Unity (до версии 5.2)  
  До версии Unity 5.2 встроенная поддержка инструментов Visual Studio для Unity отсутствовала. Поэтому для использования инструментов Visual Studio для Unity каждому проекту приходилось импортировать пакет unitypackage инструментов Visual Studio и настраивать другие параметры проекта.  
   
-#### <a name="1---create-a-unity-project"></a>1\. Создание проекта Unity  
+#### <a name="1---create-a-unity-project"></a>1. Создание проекта Unity  
  Если у вас уже есть опыт работы с Unity, вы можете создать новый проект или загрузить один из собственных. Если вы начинаете новый проект, импортируйте пакет unitypackage инструментов Visual Studio при его создании.  
   
  В противном случае, если у вас нет опыта работы с Unity, ознакомьтесь с базовым учебным пособием. На странице "Изучение Unity" найдите учебники с примерами проектов, с которых вы можете начать, а также с уроками, которые позволят вам создать собственную игру с помощью Unity. На данной странице имеются удобные учебники для нескольких различных игр.  
   
- [Учебники — страница "Изучение Unity"](https://learn.unity.com/tutorials)  
+ [Учебники – страница "Изучение Unity"](https://learn.unity.com/tutorials)  
   
-#### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2\. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
+#### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
  Если вы используете существующий проект Unity или не импортировали пакет unitypackage инструментов Visual Studio на этапе создания проекта, необходимо импортировать этот пакет. В редакторе Unity в главном меню выберите **Assets &gt; Import Package &gt; Visual Studio 2015 Tools** (Ресурсы &gt; Импорт пакета &gt; Набор средств Visual Studio 2015) (вы увидите вариант для версии Visual Studio, которую вы установили).  
   
  ![Импортируйте пакет VSTU в проект Unity.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  Наконец, убедитесь в том, что вы установили целевой объект сборки на странице **Build Settings** (Параметры сборки) и что функция **Script Debugging** (Отладка скриптов) включена.  
   
- ![Настройка параметров сборки Unity для отладки.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Настройте параметры сборки Unity для отладки.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
-#### <a name="3---launch-visual-studio-from-unity-editor"></a>3\. Запуск Visual Studio из редактора Unity  
+#### <a name="3---launch-visual-studio-from-unity-editor"></a>3. Запуск Visual Studio из редактора Unity  
  Теперь необходимо запустить Visual Studio из Unity. При этом создается решение Visual Studio для вашего проекта, которое открывается в Visual Studio.  
   
- В редакторе Unity в главном меню выберите **"Средства Visual Studio", "Открыть в Visual Studio"** .  
+ В редакторе Unity в главном меню выберите **"Средства Visual Studio", "Открыть в Visual Studio"**.  
   
  ![Откройте проект Unity в Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
-## <a name="next-steps"></a>Следующие шаги  
- Информацию о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
+## <a name="next-steps"></a>Дальнейшие действия  
+ Сведения о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Использование инструментов Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Главная страница Unity](https://unity.com/)

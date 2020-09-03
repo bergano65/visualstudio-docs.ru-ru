@@ -32,10 +32,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850997"
 ---
 # <a name="link-task"></a>Связывание задачи
@@ -48,15 +48,15 @@ ms.locfileid: "75850997"
   
 - **AdditionalDependencies**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Определяет список входных файлов, добавляемых в команду.  
   
-   Дополнительные сведения см. в разделе [Входные файлы LINK](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
+   Дополнительные сведения см. в разделе [связывание входных файлов](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
   
 - **AdditionalLibraryDirectories**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Переопределяет путь к библиотеке среды. Задает имя каталога.  
   
@@ -64,27 +64,27 @@ ms.locfileid: "75850997"
   
 - **AdditionalManifestDependencies**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Определяет атрибуты, которые будут помещены в раздел `dependency` файла манифеста.  
   
-   Дополнительные сведения см. в разделе [Параметр /MANIFESTDEPENDENCY (определение зависимостей манифеста)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). См. также раздел "Файлы конфигурации издателя" на веб-сайте [MSDN](https://msdn.microsoft.com/).  
+   Дополнительные сведения см. в разделе [/MANIFESTDEPENDENCY (указание зависимостей манифеста)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). См. также раздел "Файлы конфигурации издателя" на веб-сайте [MSDN](https://msdn.microsoft.com/).  
   
 - **AdditionalOptions**  
   
    Необязательный параметр типа **String**.  
   
-   Список параметров компоновщика, как они указаны в командной строке. Например, **"** _/параметр1 /параметр2 /параметр#_ ". Этот параметр используется для указания параметров компоновщика, не представленных никаким другим параметром задачи **Link**.  
+   Список параметров компоновщика, как они указаны в командной строке. Например, **"**_/параметр1/параметр2/Option #_". Этот параметр используется для указания параметров компоновщика, не представленных никаким другим параметром задачи **Link**.  
   
    Дополнительные сведения см. в разделе [Параметры компоновщика](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 - **AddModuleNamesToAssembly**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Добавление в сборку ссылки на модуль.  
   
-   Дополнительные сведения см. в разделе [Параметр /ASSEMBLYMODULE (добавление в сборку модуля MSIL)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
+   Дополнительные сведения см. в разделе [/ASSEMBLYMODULE (Добавление модуля MSIL в сборку)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
   
 - **AllowIsolation**  
   
@@ -104,7 +104,7 @@ ms.locfileid: "75850997"
   
 - **AssemblyLinkResource**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Укажите имя ресурса.  
   
@@ -140,13 +140,13 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.  
   
-  - **Default** -  *\<отсутствует>*  
+  - **Параметры** - *\<none>*  
   
-  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
-  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
     Дополнительные сведения см. в разделе [Параметр /CLRIMAGETYPE (указание типа образа среды CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
@@ -158,11 +158,11 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.  
   
-  - **Enabled** -  **/CLRSupportLastError**  
+  - **Enabled** - **/CLRSupportLastError**  
   
-  - **Disabled** -  **/CLRSupportLastError:NO**  
+  - **Disabled** - **/CLRSupportLastError:NO**  
   
-  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
     Дополнительные сведения см. в разделе [Параметр /CLRSUPPORTLASTERROR (сохранение кода последней ошибки для вызовов PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
@@ -174,11 +174,11 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.  
   
-  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
   
-  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
-  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
     Дополнительные сведения см. в разделе [Параметр /CLRTHREADATTRIBUTE (определение атрибута потока среды CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
@@ -198,13 +198,13 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.  
   
-  - **Enabled** -  **/FUNCTIONPADMIN**  
+  - **Enabled** - **/FUNCTIONPADMIN**  
   
-  - **X86Image** -  **/FUNCTIONPADMIN:5**  
+  - **X86Image** - **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** -  **/FUNCTIONPADMIN:6**  
+  - **X64Image** - **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
   
     Дополнительные сведения см. в разделе [Параметр /FUNCTIONPADMIN (создание образа, допускающего оперативное обновление)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
@@ -218,11 +218,11 @@ ms.locfileid: "75850997"
   
 - **DelayLoadDLLs**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Этот параметр определяет *отложенную загрузку* библиотек DLL. Укажите имя DLL-библиотеки, загрузку которой нужно отложить.  
   
-   Дополнительные сведения см. в разделе [Параметр /DELAYLOAD (импорт с отложенной загрузкой)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
+   Дополнительные сведения см. в разделе [параметр/DELAYLOAD (отложенная загрузка импорта)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
   
 - **DelaySign**  
   
@@ -230,7 +230,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, сборка частично подписывается. Значение по умолчанию `false`.  
   
-   Дополнительные сведения см. в разделе [Параметр /DELAYSIGN (частичное подписание сборки)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
+   Дополнительные сведения см. в разделе [/delaysign (частичное подписание сборки)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
 - **Driver**  
   
@@ -240,19 +240,19 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.  
   
-  - **NotSet** -  *\<none>*  
+  - **Принимать** - *\<none>*  
   
-  - **Driver** -  **/Driver**  
+  - **Driver** - **/Driver**  
   
-  - **UpOnly** -  **/DRIVER:UPONLY**  
+  - **UpOnly** - **/DRIVER:UPONLY**  
   
-  - **WDM** -  **/DRIVER:WDM**  
+  - **WDM** - **/DRIVER:WDM**  
   
     Дополнительные сведения см. в разделе [Параметр /DRIVER (драйвер режима ядра Windows NT)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
 - **EmbedManagedResourceFile**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Внедрение файла ресурсов в сборку. Укажите имя нужного файла ресурсов. При необходимости укажите логическое имя, используемое для загрузки ресурса, и параметр **PRIVATE**, который указывает в манифесте сборки, что файл ресурсов является частным.  
   
@@ -298,21 +298,21 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
-  - **Enabled** -  **/FORCE**  
+  - **Enabled** - **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-    Дополнительные сведения см. в разделе [Параметр /FORCE (принудительный вывод файла)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
+    Дополнительные сведения см. в разделе [/Force (принудительный вывод файла)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
 - **ForceSymbolReferences**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Предписывает компоновщику добавить заданный символ в таблицу символов.  
   
-   Дополнительные сведения см. в разделе [Параметр /INCLUDE (принудительные ссылки на символы)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
+   Дополнительные сведения см. в разделе [/include (Принудительная ссылка на символы)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
   
 - **FunctionOrder**  
   
@@ -336,7 +336,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, создается файл манифеста параллельной сборки.  
   
-   Дополнительные сведения см. в разделе [Параметр /MANIFEST (создание манифеста параллельной сборки)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
+   Дополнительные сведения см. в разделе [/manifest (создание манифеста параллельной сборки)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
   
 - **GenerateMapFile**  
   
@@ -352,7 +352,7 @@ ms.locfileid: "75850997"
   
    Указывает объем физической памяти в куче для одновременного выделения.  
   
-   Дополнительные сведения см. в описании аргумента `commit` в разделе [Параметр /HEAP (определение размера кучи)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). См. также описание параметра **HeapReserveSize**.  
+   Дополнительные сведения см. в описании `commit` аргумента в [/heap (установка размера кучи)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). См. также описание параметра **HeapReserveSize**.  
   
 - **HeapReserveSize**  
   
@@ -360,7 +360,7 @@ ms.locfileid: "75850997"
   
    Определяет общий размер виртуальной памяти, выделяемой для кучи.  
   
-   Дополнительные сведения см. в описании аргумента `reserve` в разделе [Параметр /HEAP (определение размера кучи)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). См. также описание параметра **HeapCommitSize** в этой таблице.  
+   Дополнительные сведения см. в описании `reserve` аргумента в [/heap (установка размера кучи)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da). См. также описание параметра **HeapCommitSize** в этой таблице.  
   
 - **IgnoreAllDefaultLibraries**  
   
@@ -368,7 +368,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, компоновщик удалит одну или несколько стандартных библиотек из списка, в котором выполняется поиск при разрешении внешних ссылок.  
   
-   Дополнительные сведения см. в разделе [Параметр /NODEFAULTLIB (игнорировать библиотеки)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Дополнительные сведения см. в разделе [/NODEFAULTLIB (игнорирование библиотек)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **IgnoreEmbeddedIDL**  
   
@@ -376,7 +376,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, все атрибуты IDL в исходном коде должны игнорироваться при преобразовании в IDL-файл.  
   
-   Дополнительные сведения см. в разделе [Параметр /IGNOREIDL (не преобразовывать атрибуты в MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
+   Дополнительные сведения см. в разделе [/IGNOREIDL (не обрабатывать атрибуты в MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
   
 - **IgnoreImportLibrary**  
   
@@ -388,11 +388,11 @@ ms.locfileid: "75850997"
   
 - **IgnoreSpecificDefaultLibraries**  
   
-   Необязательный параметр типа **String[]** .  
+   Необязательный параметр типа **String[]**.  
   
    Указывает одно или несколько имен пропускаемых библиотек по умолчанию. Разделяйте библиотеки с помощью точки с запятой.  
   
-   Дополнительные сведения см. в разделе [Параметр /NODEFAULTLIB (игнорировать библиотеки)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Дополнительные сведения см. в разделе [/NODEFAULTLIB (игнорирование библиотек)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **ImageHasSafeExceptionHandlers**  
   
@@ -430,7 +430,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, приложение может обрабатывать адреса размером более 2 ГБ.  
   
-   Дополнительные сведения см. в разделе [Параметр /LARGEADDRESSAWARE (обработка больших адресов)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
+   Дополнительные сведения см. в разделе [/LARGEADDRESSAWARE (работа с большими адресами)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
   
 - **LinkDLL**  
   
@@ -448,15 +448,15 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
-  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
+  - **NoErrorReport** - **/ERRORREPORT:NONE**  
   
-  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
-  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
+  - **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-    Дополнительные сведения см. в разделе [Параметр /ERRORREPORT (создание отчетов о внутренних ошибках компоновщика)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
+    Дополнительные сведения см. в разделе [/errorreport (отчет о внутренних ошибках компоновщика)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
 - **LinkIncremental**  
   
@@ -464,7 +464,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, разрешается инкрементная компоновка.  
   
-   Дополнительные сведения см. в разделе [Параметр /INCREMENTAL (инкрементная компоновка)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
+   Дополнительные сведения см. в разделе [/incremental (инкрементная компоновка)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
   
 - **LinkLibraryDependencies**  
   
@@ -490,19 +490,19 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
-  - **Default** -  *\<отсутствует>*  
+  - **Параметры** - *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
+  - **UseLinkTimeCodeGeneration** - **/LTCG**  
   
-  - **PGInstrument** -  **/LTCG:PGInstrument**  
+  - **PGInstrument** - **/LTCG:PGInstrument**  
   
-  - **PGOptimization** -  **/LTCG:PGOptimize**  
+  - **PGOptimization** - **/LTCG:PGOptimize**  
   
   - **PGUpdate**  
   
      \- **/LTCG:PGUpdate**  
   
-    Дополнительные сведения см. в разделе [Параметр /LTCG (создание кода во время компоновки)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+    Дополнительные сведения см. в разделе [/LTCG (создание кода во время компоновки)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
 - **ManifestFile**  
   
@@ -582,7 +582,7 @@ ms.locfileid: "75850997"
   
 - **ObjectFiles**  
   
-   Неявный параметр **String[]** .  
+   Неявный параметр **String[]**.  
   
    Определяет скомпонованные файлы объектов.  
   
@@ -628,7 +628,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, создается выходной файл, который может быть использован для работы с профилировщиком **средств оценки производительности**.  
   
-   Дополнительные сведения см. в разделе [Параметр /PROFILE (профилировщик средств оценки производительности)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
+   Дополнительные сведения см. в разделе [/Profile (профилировщик средств оценки производительности)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
   
 - **ProfileGuidedDatabase**  
   
@@ -636,7 +636,7 @@ ms.locfileid: "75850997"
   
    Определяет имя PGD-файла, который будет использоваться для хранения сведений о выполняемой программе.  
   
-   Дополнительные сведения см. в разделе [Параметр /PGD (указание базы данных для профильной оптимизации)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
+   Дополнительные сведения см. в разделе [/PGD (указание базы данных для профильной оптимизации)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
   
 - **ProgramDatabaseFile**  
   
@@ -644,7 +644,7 @@ ms.locfileid: "75850997"
   
    Определяет имя базы данных программы (PDB), создаваемой компоновщиком.  
   
-   Дополнительные сведения см. в разделе [Параметр /PDB (использование базы данных программы)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
+   Дополнительные сведения см. в разделе [/pdb (использование базы данных программы)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
   
 - **RandomizedBaseAddress**  
   
@@ -666,7 +666,7 @@ ms.locfileid: "75850997"
   
    Определяет выравнивание каждого раздела в рамках линейного адресного пространства программы. Значение параметра — число байтов. Равно степени числа два.  
   
-   Дополнительные сведения см. в разделе [Параметр /ALIGN (выравнивание разделов)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
+   Дополнительные сведения см. в разделе [/align (выравнивание разделов)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
 - **SetChecksum**  
   
@@ -684,21 +684,21 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
-  - **NotSet** -  *\<none>*  
+  - **Принимать** - *\<none>*  
   
-  - **LinkVerbose** -  **/VERBOSE**  
+  - **LinkVerbose** - **/VERBOSE**  
   
-  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
+  - **LinkVerboseLib** - **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
+  - **LinkVerboseICF** - **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** -  **/VERBOSE:REF**  
+  - **LinkVerboseREF** - **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-    Дополнительные сведения см. в разделе [Параметр /VERBOSE (печать сообщений о ходе выполнения)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
+    Дополнительные сведения см. в разделе [/verbose (печать сообщений о ходе выполнения)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
 - **Sources**  
   
@@ -720,7 +720,7 @@ ms.locfileid: "75850997"
   
    Определяет объем физической памяти в каждом выделении при выделении дополнительной памяти.  
   
-   Дополнительные сведения см. в описании аргумента `commit` в разделе [Параметр /STACK (выделение памяти в стеке)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Дополнительные сведения см. в описании `commit` аргумента параметра [/Stack (выделения стека)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StackReserveSize**  
   
@@ -728,7 +728,7 @@ ms.locfileid: "75850997"
   
    Определяет общий размер виртуальной памяти, выделяемой для стека.  
   
-   Дополнительные сведения см. в описании аргумента `reserve` в разделе [Параметр /STACK (выделение памяти в стеке)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Дополнительные сведения см. в описании `reserve` аргумента параметра [/Stack (выделения стека)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StripPrivateSymbols**  
   
@@ -736,7 +736,7 @@ ms.locfileid: "75850997"
   
    Определяет создание второго файла базы данных программы (PDB), в котором пропущены символы, не предназначенные для распространения заказчикам. Укажите имя второго файла PDB.  
   
-   Дополнительные сведения см. в разделе [Параметр /PDBSTRIPPED (пропуск частных символов)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
+   Дополнительные сведения см. в разделе [/PDBSTRIPPED (чередование закрытых символов)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
   
 - **SubSystem**  
   
@@ -746,25 +746,25 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
-  - **NotSet** -  *\<none>*  
+  - **Принимать** - *\<none>*  
   
-  - **Console** -  **/SUBSYSTEM:CONSOLE**  
+  - **Console** - **/SUBSYSTEM:CONSOLE**  
   
-  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
+  - **Windows** - **/SUBSYSTEM:WINDOWS**  
   
-  - **Native** -  **/SUBSYSTEM:NATIVE**  
+  - **Native** - **/SUBSYSTEM:NATIVE**  
   
-  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
+  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** -  **/SUBSYSTEM:POSIX**  
+  - **POSIX** - **/SUBSYSTEM:POSIX**  
   
     Дополнительные сведения см. в разделе [Параметр /SUBSYSTEM (определение подсистемы)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
@@ -790,7 +790,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.  
   
-   Дополнительные сведения см. в разделе [Параметр /NOLOGO (отмена вывода начального заголовка) (компоновщик)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
+   Дополнительные сведения см. в разделе [/nologo (отключение загрузочного баннера) (компоновщик)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
   
 - **SwapRunFromCD**  
   
@@ -816,29 +816,29 @@ ms.locfileid: "75850997"
   
    Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
-  - **NotSet** -  *\<none>*  
+  - **Принимать** - *\<none>*  
   
-  - **MachineARM** -  **/MACHINE:ARM**  
+  - **MachineARM** - **/MACHINE:ARM**  
   
-  - **MachineEBC** -  **/MACHINE:EBC**  
+  - **MachineEBC** - **/MACHINE:EBC**  
   
-  - **MachineIA64** -  **/MACHINE:IA64**  
+  - **MachineIA64** - **/MACHINE:IA64**  
   
-  - **MachineMIPS** -  **/MACHINE:MIPS**  
+  - **MachineMIPS** - **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
+  - **MachineMIPS16** - **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** -  **/MACHINE:SH4**  
+  - **MachineSH4** - **/MACHINE:SH4**  
   
-  - **MachineTHUMB** -  **/MACHINE:THUMB**  
+  - **MachineTHUMB** - **/MACHINE:THUMB**  
   
-  - **MachineX64** -  **/MACHINE:X64**  
+  - **MachineX64** - **/MACHINE:X64**  
   
-  - **MachineX86** -  **/MACHINE:X86**  
+  - **MachineX86** - **/MACHINE:X86**  
   
     Дополнительные сведения см. в разделе [Параметр /MACHINE (определение целевой платформы)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
@@ -862,7 +862,7 @@ ms.locfileid: "75850997"
   
    Если задано значение `true`, выходной файл не будет создан в случае, если компоновщик выдаст предупреждение.  
   
-   Дополнительные сведения см. в разделе [Параметр /WX (обработка предупреждений компоновщика как ошибок)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
+   Дополнительные сведения см. в разделе [/WX (обрабатывать предупреждения компоновщика как ошибки)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
   
 - **TurnOffAssemblyGeneration**  
   
@@ -878,7 +878,7 @@ ms.locfileid: "75850997"
   
    Определяет имя и расширение TLB-файла. Укажите имя файла или путь и имя файла.  
   
-   Дополнительные сведения см. в разделе [Параметр /TLBOUT (имя TLB-файла)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
+   Дополнительные сведения см. в разделе [/TLBOUT (имя. TLB-файл)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
   
 - **TypeLibraryResourceID**  
   
@@ -926,5 +926,5 @@ ms.locfileid: "75850997"
   
    Дополнительные сведения см. в разделе [Параметр /VERSION (сведения о версии)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также:  
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)

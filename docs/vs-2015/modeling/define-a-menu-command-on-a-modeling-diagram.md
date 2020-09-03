@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534216"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Определение команды меню на схеме моделирования
@@ -166,13 +166,13 @@ ms.locfileid: "85534216"
 
          **Проект Project**  =  *Ваш проект библиотеки классов*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Реализация команды меню
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> Реализация команды меню
  Класс команды меню реализует необходимые методы для <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
 
-|Сигнатура|Описание|
+|Подпись|Описание|
 |-|-|
 |`string Text { get; }`|Возвратите метку пункта меню.|
-|`void QueryStatus(IMenuCommand command);`|Вызывается, когда пользователь щелкает схему правой кнопкой мыши.<br /><br /> Этот метод не должен изменять модель.<br /><br /> Используйте `DiagramContext.CurrentDiagram.SelectedShapes` , чтобы определить, должна ли команда отображаться и быть доступной.<br /><br /> Задайте следующие значения:<br /><br /> -   `command.Visible`значение, `true` Если команда должна отображаться в меню при щелчке правой кнопкой мыши на схеме<br />-   `command.Enabled`значение, `true` Если пользователь может щелкнуть команду в меню<br />-   `command.Text`Динамическое задание метки меню|
+|`void QueryStatus(IMenuCommand command);`|Вызывается, когда пользователь щелкает схему правой кнопкой мыши.<br /><br /> Этот метод не должен изменять модель.<br /><br /> Используйте `DiagramContext.CurrentDiagram.SelectedShapes` , чтобы определить, должна ли команда отображаться и быть доступной.<br /><br /> Задайте следующие значения:<br /><br /> -   `command.Visible` значение, `true` Если команда должна отображаться в меню при щелчке правой кнопкой мыши на схеме<br />-   `command.Enabled` значение, `true` Если пользователь может щелкнуть команду в меню<br />-   `command.Text` Динамическое задание метки меню|
 |`void Execute (IMenuCommand command);`|Вызывается при выборе пункта меню пользователем, если этот пункт отображается и доступен.|
 
 ### <a name="accessing-the-model-in-code"></a>Доступ к модели в коде
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Однако следует помнить, что хранилище моделей не является потокобезопасным. Следует всегда использовать поток пользовательского интерфейса для выполнения обновления и, если это возможно, запретить пользователям вносить изменения во время выполнения фоновой операции. Пример см. в разделе [обновление модели UML из фонового потока](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>Выполняя команду меню
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> Выполняя команду меню
  В целях проверки запустите команду в режиме отладки.
 
 #### <a name="to-test-the-menu-command"></a>Проверка команды меню
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Используемый тип схемы модели (класс UML, последовательность и т. п.) указан как один из атрибутов класса команды меню `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` и т. д.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Установка и удаление расширения
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Установка и удаление расширения
  Расширение [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] можно установить как на своем компьютере, так и на других.
 
 #### <a name="to-install-an-extension"></a>Установка расширения
@@ -362,6 +362,6 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Определение и установка расширения моделирования](../modeling/define-and-install-a-modeling-extension.md) [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [изменение UML-схем последовательностей с помощью API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [для UML](../modeling/programming-with-the-uml-api.md)
  
