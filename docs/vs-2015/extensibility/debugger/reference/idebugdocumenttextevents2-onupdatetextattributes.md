@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Документация Майкрософт
+title: 'IDebugDocumentTextEvents2:: Онупдатетекстаттрибутес | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6eaa39ae3116a452488e80bf54c06ab4bde5cb64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148731"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Уведомляет отладочный пакет об обновлении атрибуты текста в документе.  
+Уведомляет пакет отладки, что в документе были обновлены текстовые атрибуты.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,14 +42,14 @@ int onUpdateTextAttributes( 
   
 #### <a name="parameters"></a>Параметры  
  `pos`  
- [in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает, где были обновлены атрибуты текста.  
+ окне Структура [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , показывающая, где были обновлены текстовые атрибуты.  
   
  `dwNumToUpdate`  
- [in] Указывает количество символов текста, которые были обновлены.  
+ окне Указывает количество символов в тексте, которые были обновлены.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

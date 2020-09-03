@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa2706f2013c348524b64900418fa02f47b4d26c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152847"
 ---
 # <a name="debugging-wpf"></a>Отладка WPF
@@ -36,5 +36,5 @@ ms.locfileid: "68152847"
 |[Практическое руководство. Использование визуализатора дерева WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md)|Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. В этом разделе описывается пользовательский интерфейс визуализатора дерева WPF.|  
 |[Практическое руководство. Отображение данных трассировки WPF](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может получать сведения о трассировке отладки от приложений WPF и отображать эти сведения в окне **Вывод**. Этот раздел описывает включение и настройку отображения сведений о трассировке WPF.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Документация Майкрософт
+title: 'IDebugTypeFieldBuilder2:: Креатеаррайофтипе | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b02b7c6ef29e1b6c00b5d5a0b7fbfa93c03f132b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152881"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
@@ -43,16 +43,16 @@ int CreateArrayOfType (
   
 #### <a name="parameters"></a>Параметры  
  `pTypeField`  
- [in] Тип элементов, которые будет содержать массив.  
+ окне Тип элементов, который будет храниться в массиве.  
   
  `rank`  
- [in] Число элементов в массиве.  
+ окне Число элементов в массиве.  
   
  `pArrayOfTypeField`  
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекты, представляющие новый массив.  
+ заполняет Возвращает объекты [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющие новый массив.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

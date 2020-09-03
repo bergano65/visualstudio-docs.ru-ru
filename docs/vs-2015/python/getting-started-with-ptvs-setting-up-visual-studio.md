@@ -11,10 +11,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: cf841c181b3a7e0b378e53e3901a079b7136b32c
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586986"
 ---
 # <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Начало работы с PTVS. Настройка Visual Studio
@@ -39,6 +39,6 @@ Visual Studio позволяет быстрее установить PTVS и с�
 
 Эти инструкции можно просмотреть в коротком [видеоролике в YouTube](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Видеоролики по началу работы и углубленному рассмотрению PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

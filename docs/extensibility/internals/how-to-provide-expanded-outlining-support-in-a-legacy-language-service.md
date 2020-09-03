@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905286"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Руководство. Предоставление расширенной поддержки структурирования в языковой службе прежних версий
@@ -27,7 +27,7 @@ ms.locfileid: "85905286"
 
 ### <a name="to-implement-an-editor-controlled-outline-region"></a>Реализация области структуры, управляемой редактором
 
-1. Вызов `QueryService` для<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Вызов `QueryService` для <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
      Он возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 

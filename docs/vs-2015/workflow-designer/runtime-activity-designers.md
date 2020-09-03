@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4e2c8f455818f2e034cf91f989f8277cc69f7838
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663315"
 ---
 # <a name="runtime-activity-designers"></a>Конструкторы действий среды выполнения
 Конструкторы действий времени выполнения служат для сохранения и завершения действий рабочего процесса. В подразделах этого раздела описывается использование конструкторов действий [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
-## <a name="in-this-section"></a>Содержание
- [Сохранить](../workflow-designer/persist-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.Persist>.
+## <a name="in-this-section"></a>в этом разделе
+ [Сохранить](../workflow-designer/persist-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.Persist> действия.
 
- [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.TerminateWorkflow>.
+ [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.TerminateWorkflow> действия.
 
 ## <a name="reference"></a>Справочник
 
@@ -31,7 +31,7 @@ ms.locfileid: "72663315"
 
  [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)
 
  [Примитивы](../workflow-designer/primitives-activity-designers.md)
 
@@ -41,5 +41,5 @@ ms.locfileid: "72663315"
 
  [Обработка ошибок](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586979"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Запись действий в непустой ячейке получается более сложной, так как при добавлении текста в ячейку новый элемент управления \<div> добавляется в качестве дочернего элемента ячейки. Новый элемент управления \<div> содержит только что введенный текст. Записывающему устройству необходимо записать действия в новый элемент управления \<div>; но оно не может это сделать, так как новый элемент управления \<div> не существует, пока не закончен ввод теста. Необходимо вручную внести следующие изменения кода, чтобы уладить эту проблему.
+ Если вы записываете действия в непустую ячейку, запись становится немного сложнее, так как при добавлении текста в ячейку новый \<div> элемент управления добавляется в качестве дочернего элемента ячейки. Новый \<div> элемент управления содержит только что введенный текст. Средство записи должно записать действия в новый \<div> элемент управления, однако оно не может быть связано с тем, что новый \<div> элемент управления не существует до тех пор, пока не будет введен тест. Необходимо вручную внести следующие изменения кода, чтобы уладить эту проблему.
 
 1. В инициализации ячейки измените основные свойства `RowIndex` и `ColumnIndex` :
 
@@ -143,5 +143,5 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Форум
  [Блог по Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Использование модели автоматизации пользовательского интерфейса для тестирования](../test/use-ui-automation-to-test-your-code.md) [веб-тестов производительности и нагрузочного тестирования приложения sharepoint 2010 и 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Создание решений SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Проверка и отладка кода SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Создание и отладка решений SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Профилирование производительности приложений SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

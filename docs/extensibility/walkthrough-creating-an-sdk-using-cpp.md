@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905016"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Пошаговое руководство. Создание пакета SDK с помощью C++
@@ -27,7 +27,7 @@ ms.locfileid: "85905016"
 ## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>Создание собственных и среда выполнения Windows библиотек
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> Создание собственных и среда выполнения Windows библиотек
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "85905016"
 
 9. В строке меню последовательно выберите **Сборка** > **Собрать решение**.
 
-## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a>Создание проекта расширения Нативемасвсикс
+## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> Создание проекта расширения Нативемасвсикс
 
 1. В **Обозреватель решений**откройте контекстное меню **решения "нативемас"** и выберите команду **добавить**  >  **Новый проект**.
 
@@ -137,7 +137,7 @@ ms.locfileid: "85905016"
 
 18. Нажмите кнопку **установить** , дождитесь завершения установки, а затем откройте Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Создание примера приложения, использующего библиотеку классов
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Создание примера приложения, использующего библиотеку классов
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 

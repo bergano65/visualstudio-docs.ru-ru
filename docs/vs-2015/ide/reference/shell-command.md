@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663544"
 ---
 # <a name="shell-command"></a>Команда Shell
@@ -42,14 +42,14 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  `args` Необязательный. Все аргументы, передаваемые в вызванную программу.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /коммандвиндов [или]/Command [или]/c [или]/КМД необязательный. Указывает, что выходные данные для исполняемого файла отображаются в окне **Команда**.
 
- /Dir: `folder` [или]/d: `folder` необязательный. Указывает рабочий каталог, задаваемый при запуске программы.
+ /Dir: `folder` [или]/d: `folder` необязательный параметр. Указывает рабочий каталог, задаваемый при запуске программы.
 
  /OutputWindow [или]/Output [или]/out [или]/o необязательный. Указывает, что выходные данные для исполняемого файла отображаются в окне **Вывод**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Параметры /dir /o /c должны быть указаны сразу после `Tools.Shell`. Все, что указано после имени исполняемого файла, передается в виде аргументов командной строки.
 
  Вместо `Tools.Shell` можно использовать предопределенный псевдоним `Shell`.
@@ -77,5 +77,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>См. также
- [Команды Visual Studio ](../../ide/reference/visual-studio-commands.md) [Command окно ](../../ide/reference/command-window.md) [Output окно ](../../ide/reference/output-window.md) [Find/Command ](../../ide/find-command-box.md) [командные псевдонимы команды Studio](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>См. также:
+ Командная Командная команда [Visual studio](../../ide/reference/visual-studio-commands.md) [Command Window](../../ide/reference/command-window.md) [окно вывода](../../ide/reference/output-window.md) команд ["найти/команда"](../../ide/find-command-box.md) в командной строке [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

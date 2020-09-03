@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer Документы Майкрософт
+title: 'Иивисуализердатапровидер:: Жетобжектфорвисуализер | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718118"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-Этот метод получает объект, который представляет этот визуализатор.
+Этот метод получает объект, представляемый этим визуализатором.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int GetObjectForVisualizer(
 
 ## <a name="parameters"></a>Параметры
 `ppObject`\
-(ваут) Объект, представленный этим визуализатором
+заполняет Объект, представляемый этим визуализатором
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- `GetObjectForVisualizer`разрешается возвращать кэшированную версию объекта. Если абонент хочет убедиться, что объект в актуальном состоянии, то он будет [называтьgetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
+## <a name="remarks"></a>Remarks
+ `GetObjectForVisualizer` может возвращать кэшированную версию объекта. Если вызывающий объект хочет обеспечить актуальность объекта, он будет вызывать [жетневобжектфорвисуализер](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

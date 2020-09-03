@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255589"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым
@@ -30,7 +30,7 @@ ms.locfileid: "71255589"
 
  После создания документа на основе шаблона можно добавить любую из таблиц в документ, используя несколько объектов <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>, отображающих доступные стандартные блоки в шаблоне.
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - создание таблиц с элементами управления содержимым в шаблоне Word во время разработки;
 
@@ -45,7 +45,7 @@ ms.locfileid: "71255589"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -56,9 +56,9 @@ ms.locfileid: "71255589"
 
 ### <a name="to-create-a-new-word-template-project"></a>Создание проекта шаблона Word
 
-1. Создайте проект шаблона Word с именем **мибуилдингблокктемплате**. В мастере создайте документ в решении. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект шаблона Word с именем **мибуилдингблокктемплате**. В мастере создайте документ в решении. Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]открывает новый шаблон Word в конструкторе и добавляет проект **мибуилдингблокктемплате** в **Обозреватель решений**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает новый шаблон Word в конструкторе и добавляет проект **мибуилдингблокктемплате** в **Обозреватель решений**.
 
 ## <a name="create-the-employee-table"></a>Создание таблицы Employee
  Создайте таблицу, содержащую четыре различных типа элементов управления содержимым, в которой пользователь может ввести сведения о сотруднике.
@@ -74,7 +74,7 @@ ms.locfileid: "71255589"
    ||
    |-|
    |**Имя сотрудника**|
-   |**Дата найма**|
+   |**Дата приема на работу**|
    |**Заголовок**|
    |**Снимки**|
 
@@ -83,21 +83,21 @@ ms.locfileid: "71255589"
 5. На ленте перейдите на вкладку **Разработчик** .
 
    > [!NOTE]
-   > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки "Разработчик" на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [инструкции. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. В группе **элементы управления** нажмите кнопку с **текстом** ![плаинтекстконтентконтрол](../vsto/media/plaintextcontrol.gif "плаинтекстконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.
+6. В группе **элементы управления** нажмите кнопку Text ![плаинтекстконтентконтрол](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ( **текст** ), чтобы добавить в <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> первую ячейку.
 
 7. Щелкните вторую ячейку во втором столбце (рядом с полем **Дата найма**).
 
-8. В группе **элементы управления** нажмите кнопку **выбора даты** ![датепиккерконтентконтрол](../vsto/media/datepicker.gif "датепиккерконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> к второй ячейке.
+8. В группе **элементы управления** нажмите кнопку **выбора даты** ![датепиккерконтентконтрол](../vsto/media/datepicker.gif "DatePickerContentControl") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> к второй ячейке.
 
 9. Щелкните третью ячейку во втором столбце (рядом с **заголовком**).
 
-10. В группе **элементы управления** нажмите кнопку с **полем со списком** ![комбобоксконтентконтрол](../vsto/media/combobox.gif "комбобоксконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> в третью ячейку.
+10. В группе **элементы управления** нажмите кнопку с **полем со списком** ![комбобоксконтентконтрол](../vsto/media/combobox.gif "ComboBoxContentControl") , чтобы добавить в <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> третью ячейку.
 
 11. Щелкните последнюю ячейку во втором столбце (рядом с **изображением**).
 
-12. В группе **элементы управления** нажмите кнопку **элемент управления содержимым изображения** , ![пиктуреконтентконтрол](../vsto/media/pictcontentcontrol.gif "пиктуреконтентконтрол") , чтобы <xref:Microsoft.Office.Tools.Word.PictureContentControl> добавить к последней ячейке.
+12. В группе **элементы управления** нажмите кнопку с **изображением элемента управления содержимым** ![пиктуреконтентконтрол](../vsto/media/pictcontentcontrol.gif "PictureContentControl") , чтобы добавить <xref:Microsoft.Office.Tools.Word.PictureContentControl> к последней ячейке.
 
 ## <a name="create-the-customer-feedback-table"></a>Создание таблицы отзывов клиентов
  Создайте таблицу, содержащую три различных типа элементов управления содержимым, в которой пользователь может ввести отзывы клиентов.
@@ -115,31 +115,31 @@ ms.locfileid: "71255589"
    ||
    |-|
    |**Имя клиента**|
-   |**Оценка удовлетворенности**|
+   |**Степень удовлетворенности**|
    |**Комментарии**|
 
 5. Щелкните первую ячейку второго столбца (рядом с полем **имя клиента**).
 
 6. На ленте перейдите на вкладку **Разработчик** .
 
-7. В группе **элементы управления** нажмите кнопку с **текстом** ![плаинтекстконтентконтрол](../vsto/media/plaintextcontrol.gif "плаинтекстконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.
+7. В группе **элементы управления** нажмите кнопку Text ![плаинтекстконтентконтрол](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") ( **текст** ), чтобы добавить в <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> первую ячейку.
 
 8. Щелкните во второй ячейке второго столбца (рядом с **рейтингом удовлетворенности**).
 
-9. В группе **элементы управления** нажмите кнопку раскрывающегося **списка** ![дропдовнлистконтентконтрол](../vsto/media/dropdownlist.gif "дропдовнлистконтентконтрол") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> к второй ячейке.
+9. В группе **элементы управления** нажмите кнопку раскрывающегося **списка** ![дропдовнлистконтентконтрол](../vsto/media/dropdownlist.gif "DropDownListContentControl") , чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> к второй ячейке.
 
 10. Щелкните последнюю ячейку второго столбца (рядом с **комментариями**).
 
 11. В группе **элементы управления** нажмите кнопку **форматированный текст** ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") , чтобы добавить <xref:Microsoft.Office.Tools.Word.RichTextContentControl> к последней ячейке.
 
 ## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Заполнение поля со списком и раскрывающегося списка программным способом
- Элементы управления содержимым можно инициализировать во время разработки с помощью окна **Свойства** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]среде. Также их можно инициализировать во время выполнения, что позволяет динамически задавать их начальное состояние. В этом пошаговом руководстве используется код для заполнения записей в <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> и <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во время выполнения, чтобы можно было увидеть, как работают эти объекты.
+ Элементы управления содержимым можно инициализировать во время разработки с помощью окна **Свойства** в среде [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Также их можно инициализировать во время выполнения, что позволяет динамически задавать их начальное состояние. В этом пошаговом руководстве используется код для заполнения записей в <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> и <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во время выполнения, чтобы можно было увидеть, как работают эти объекты.
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Изменение пользовательского интерфейса элементов управления содержимым программным способом
 
 1. В **Обозреватель решений**щелкните правой кнопкой мыши **ThisDocument.CS** или **ThisDocument. vb**и выберите пункт **Просмотреть код**.
 
-2. Добавьте следующий код в класс `ThisDocument` . В этом коде объявляются несколько объектов, которые вы будете использовать позже в этом пошаговом руководстве.
+2. Добавьте в класс `ThisDocument` приведенный далее код. В этом коде объявляются несколько объектов, которые вы будете использовать позже в этом пошаговом руководстве.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
@@ -164,7 +164,7 @@ ms.locfileid: "71255589"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Добавление таблиц в стандартные блоки в шаблоне
 
-1. Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код добавляет новые стандартные блоки, содержащие таблицы, в коллекцию Microsoft. Office. Interop. Word. Буилдингблоккентриес, которая содержит все повторно используемые стандартные блоки в шаблоне. Новые стандартные блоки определяются в новой категории с именем **Employee и Customer** , и им назначается тип `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`стандартного блока.
+1. Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код добавляет новые стандартные блоки, содержащие таблицы, в коллекцию Microsoft. Office. Interop. Word. Буилдингблоккентриес, которая содержит все повторно используемые стандартные блоки в шаблоне. Новые стандартные блоки определяются в новой категории с именем **Employee и Customer** , и им назначается тип стандартного блока `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
@@ -179,7 +179,7 @@ ms.locfileid: "71255589"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Создание элемента управления содержимым, отображающего доступные стандартные блоки
 
-1. Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код инициализирует объект <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>, объявленный ранее. Компонент отображает все стандартные блоки, определенные в категории **Employee и Customer** , с типом `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`стандартного блока. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>
+1. Добавьте следующий код в метод `ThisDocument_Startup` класса `ThisDocument` после кода, добавленного на предыдущем шаге. Этот код инициализирует объект <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>, объявленный ранее. Компонент <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> отображает все стандартные блоки, определенные в категории **Employee и Customer** , с типом стандартного блока `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -189,7 +189,7 @@ ms.locfileid: "71255589"
 
 ### <a name="to-test-the-employee-table"></a>Проверка таблицы сотрудников
 
-1. Нажмите клавишу **F5**, чтобы запустить проект.
+1. Нажмите клавишу **F5** , чтобы запустить проект.
 
 2. Щелкните **выбрать первый стандартный блок** , чтобы отобразить первый элемент управления содержимым коллекции стандартных блоков.
 
@@ -229,16 +229,16 @@ ms.locfileid: "71255589"
 
 7. Закройте шаблон.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об использовании элементов управления содержимым см. в следующем разделе:
 
-- Привязка элементов управления содержимым к фрагментам XML-кода, которые также называют пользовательскими XML-частями, внедренным в документ. Дополнительные сведения см. в разделе [Пошаговое руководство: Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+- Привязка элементов управления содержимым к фрагментам XML-кода, которые также называют пользовательскими XML-частями, внедренным в документ. Дополнительные сведения см. [в разделе Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Элементы управления содержимым](../vsto/content-controls.md)
-- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
+- [Как добавить элементы управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Пошаговое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer Документы Майкрософт
+title: 'Иивисуализердатапровидер:: Жетневобжектфорвисуализер | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718113"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-Этот метод получает новый объект для визуализатора. Этот метод всегда будет создавать новый объект из существующего объекта.
+Этот метод получает новый объект для визуализатора. Этот метод всегда будет создавать новый объект на основе существующего объекта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>Параметры
 `ppObject`\
-(ваут) Новый объект.
+заполняет Новый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- `This method`переоценивает объект, который он в настоящее время представляет, и возвращает результат в качестве нового объекта. Существующий объект будет обновлен в результате оценки.
+## <a name="remarks"></a>Remarks
+ `This method` повторно вычисляет объект, который он представляет в данный момент, и возвращает результат в виде нового объекта. Существующий объект будет обновлен в результате вычисления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

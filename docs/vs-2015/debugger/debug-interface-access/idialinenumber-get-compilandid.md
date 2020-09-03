@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_compilandId | Документация Майкрософт
+title: 'IDiaLineNumber:: get_compilandId | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1210276728e40e43f8ae40eef78de4d53cf6262d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152079"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Извлекает уникальный идентификатор для компилируемого объекта, который участвует в этой строке.  
@@ -35,10 +35,10 @@ HRESULT get_compilandId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `DWORD` , содержащее уникальный идентификатор для компилируемого объекта, который участвует в этой строке.  
+ заполняет Возвращает значение `DWORD` , содержащее уникальный идентификатор для компилируемого объекта, который участвует в этой строке.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_sourceFileId | Документация Майкрософт
+title: 'IDiaLineNumber:: get_sourceFileId | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 23e1d2dafc570e31d8fa4a1dcbe84b575ce851cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152020"
 ---
-# <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
+# <a name="idialinenumberget_sourcefileid"></a>IDiaLineNumber::get_sourceFileId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает уникальный исходный файл идентификатор для исходного файла, который участвует в этой строке.  
+Извлекает уникальный идентификатор исходного файла для исходного файла, который участвует в этой строке.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_sourceFileId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает идентификатор файла уникальный источника для исходного файла, который участвует в этой строке.  
+ заполняет Возвращает уникальный идентификатор исходного файла для исходного файла, который участвует в этой строке.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

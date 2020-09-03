@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904931"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Пошаговое руководство. Настройка представления текста
@@ -32,7 +32,7 @@ ms.locfileid: "85904931"
 
 - Видимый пробел
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
@@ -54,9 +54,9 @@ ms.locfileid: "85904931"
 
 3. Объявите класс с именем `TestViewCreationListener` , наследуемый от <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Экспортируйте этот класс со следующими атрибутами:
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>для указания типа содержимого, к которому применяется этот прослушиватель.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> для указания типа содержимого, к которому применяется этот прослушиватель.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>для указания роли этого прослушивателя.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> для указания роли этого прослушивателя.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
@@ -75,7 +75,7 @@ ms.locfileid: "85904931"
 
 ## <a name="build-and-test-the-code"></a>Сборка и тестирование кода
 
-1. Постройте решение.
+1. Создайте решение.
 
      При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
@@ -91,5 +91,5 @@ ms.locfileid: "85904931"
 
 5. Включите видимый пробел. (В меню **Правка** наведите указатель на пункт **Дополнительно** и выберите пункт **Показать пустое пространство**). Введите в текст некоторые вкладки. Должны отобразиться красные стрелки, представляющие вкладки.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

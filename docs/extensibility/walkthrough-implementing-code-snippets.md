@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904716"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Пошаговое руководство. Реализация фрагментов кода
@@ -226,7 +226,7 @@ ms.locfileid: "85904716"
 ## <a name="build-and-test-code-snippet-expansion"></a>Расширение фрагмента кода для сборки и тестирования
  Можно проверить, работает ли расширение фрагментов кода в проекте.
 
-1. Постройте решение. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
+1. Создайте решение. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
 2. Откройте текстовый файл и введите некоторый текст.
 

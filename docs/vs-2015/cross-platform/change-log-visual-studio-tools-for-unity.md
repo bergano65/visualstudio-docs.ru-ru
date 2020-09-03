@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825970"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
@@ -119,7 +119,7 @@ ms.locfileid: "67825970"
 
 - Сообщение об ошибке больше не выводится, когда Visual Studio блокирует XML-файлы IntelliSense.
 
-- Условные точки останова <\<При изменении>> обрабатываются, если условный аргумент не является логическим значением.
+- Условные точки останова <\<When Changed>> обрабатываются, если условный аргумент не является логическим значением.
 
 - Исправлены ссылки на сборки UnityEngine и UnityEditor для приложений Магазина Windows.
 
@@ -361,7 +361,7 @@ ms.locfileid: "67825970"
 
 - Исправление открытия скриптов с помощью VSTU в 64-разрядных версиях Unity.
 
-## <a name="19"></a>1.9
+## <a name="19"></a>1,9
 
 Выпущено 29.07.2014 г.
 
@@ -552,7 +552,7 @@ ms.locfileid: "67825970"
 
 - Исправлена привязка точек останова в некоторых внешних библиотеках DLL.
 
-## <a name="12"></a>1.2
+## <a name="12"></a>1,2
 
 Выпущено 25.03.2013 г.
 

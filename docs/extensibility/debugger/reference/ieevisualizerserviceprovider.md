@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider (англ.) Документы Майкрософт
+title: Иивисуализерсервицепровидер | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717888"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Этот интерфейс дает доступ к методу, который может создать службу визуализатора, которая используется для обработки задач визуализатора типов для IDE.
+ Этот интерфейс предоставляет доступ к методу, который может создать службу визуализатора, которая используется для управления задачами визуализатора типов в интегрированной среде разработки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,31 +31,31 @@ ms.locfileid: "80717888"
 IEEVisualizerServiceProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Visual Studio реализует этот интерфейс для создания объекта службы визуализаторов,`CLSID`который, в свою очередь, используется для предоставления идентификаторов классов (ы) визуализаторов типа в Visual Studio IDE.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Visual Studio реализует этот интерфейс для создания объекта службы визуализатора, который, в свою очередь, используется для предоставления идентификаторов классов для `CLSID` визуализаторов типов в интегрированной среде разработки Visual Studio.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Оценщик выражений (EE) вызывает [GetEEService,](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) чтобы получить этот интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Средство оценки выражений (EE) вызывает [жетисервице](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) для получения этого интерфейса.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
+## <a name="methods-in-vtable-order"></a>Методы в порядке vtable
 
 |Метод|Описание|
 |------------|-----------------|
-|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Создает сервис визуализаторов|
+|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Создает службу визуализатора|
 
-## <a name="remarks"></a>Примечания
- Интерфейс `IEEVisualizerServiceProvider` получен во время реализации [EvaluateSync.](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) Служба визуализаторов, которую создает этот интерфейс, используется для предоставления функциональности интерфейсу [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) который EE отвечает за реализацию. EE также отвечает за реализацию интерфейса [IEEVisualizerDataProvider,](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) который позволяет визуализаторам типа просматривать и изменять ценность свойства.
+## <a name="remarks"></a>Remarks
+ `IEEVisualizerServiceProvider`Интерфейс получается во время реализации [евалуатесинк](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Служба визуализатора, создаваемая этим интерфейсом, используется для предоставления функциональных возможностей интерфейсу [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , который отвечает за реализацию. EE также отвечает за реализацию интерфейса [иивисуализердатапровидер](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) , который позволяет визуализаторам типов просматривать и изменять значения свойств.
 
- Подробную информацию о том, как эти интерфейсы взаимодействуют, читайте в [визуализации и просмотре данных.](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ Сведения о взаимодействии этих интерфейсов см. в разделе [визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: ee.h
+ Заголовок: ee. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы вычисления выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

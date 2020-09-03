@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904795"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство: отображение завершения операторов
@@ -81,7 +81,7 @@ ms.locfileid: "85904795"
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> метод, добавив набор завершения, содержащий завершения, которые необходимо предоставить в контексте. Каждый набор завершения содержит набор <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> завершений и соответствует вкладке окна завершения. (В Visual Basic проектах вкладки окна завершения именуются как **Общие** и **все**.) `FindTokenSpanAtPosition`Метод определяется на следующем шаге.
+6. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> метод, добавив набор завершения, содержащий завершения, которые необходимо предоставить в контексте. Каждый набор завершения содержит набор <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> завершений и соответствует вкладке окна завершения. (В Visual Basic проектах вкладки окна завершения именуются как **Общие** и **все**.) `FindTokenSpanAtPosition` Метод определяется на следующем шаге.
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
@@ -196,7 +196,7 @@ ms.locfileid: "85904795"
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Создание и тестирование решения Комплетионтест
 
-1. Постройте решение.
+1. Создайте решение.
 
 2. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
@@ -204,5 +204,5 @@ ms.locfileid: "85904795"
 
 4. При вводе первого "a" и затем "d" должен появиться список, содержащий "Сложение" и "Адаптация". Обратите внимание, что выбрано сложение. При вводе другого "d" список должен содержать только "Сложение", которое теперь выбрано. Можно применить "Сложение", нажав клавиши **пробел**, **Tab**или клавишу **Ввод** или отклонить список, введя ESC или любой другой ключ.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

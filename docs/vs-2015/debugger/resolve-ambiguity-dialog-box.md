@@ -1,5 +1,5 @@
 ---
-title: Разрешение неоднозначности-диалоговое окно | Документация Майкрософт
+title: Диалоговое окно "Разрешение неоднозначности" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b35d305bbd011adc02692cd7c9c687ac0bfc7d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148791"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Разрешение неоднозначности - диалоговое окно
@@ -44,5 +44,5 @@ ms.locfileid: "68148791"
  `Module`  
  Отображается модуль (EXE или DLL), содержащий объектный код для функции.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Выражения в отладчике](../debugger/expressions-in-the-debugger.md)

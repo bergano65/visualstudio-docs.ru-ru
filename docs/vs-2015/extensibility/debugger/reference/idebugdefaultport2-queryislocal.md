@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::QueryIsLocal | Документация Майкрософт
+title: 'IDebugDefaultPort2:: Куерислокал | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77c521a364b33c1bd6fdde544d27237ead12ca46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196262"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод определяет, является ли этот порт на локальном компьютере.  
+Этот метод определяет, находится ли этот порт на локальном компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,7 +37,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK` Если этот порт является локальным (на том же компьютере, что и вызывающий объект) или `S_FALSE` Если порт находится на другом компьютере.  
+ Возвращает, `S_OK` Если этот порт является локальным (на том же компьютере, что и вызывающий объект), или `S_FALSE` порт находится на другом компьютере.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

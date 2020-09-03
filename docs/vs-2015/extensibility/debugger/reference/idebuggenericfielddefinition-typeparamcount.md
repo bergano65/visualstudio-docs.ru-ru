@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount | Документация Майкрософт
+title: 'Идебугженерикфиелддефинитион:: Типепарамкаунт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6459b7b6d1297085b7311e8e7ae20dbfa9c0f366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180875"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает число параметров типа, которые связаны с универсального поля.  
+Извлекает количество параметров типа, связанных с универсальным полем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,13 +39,13 @@ int TypeParamCount(
   
 #### <a name="parameters"></a>Параметры  
  `pcParams`  
- [in, out] Число параметров типа.  
+ [вход, выход] Число параметров типа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Если список\<T >, этот метод возвращает значение 1 и, если список\<T1, T2 >, этот метод возвращает значение 2. Этот метод возвращает 0, если отсутствуют параметры типа.  
+## <a name="remarks"></a>Remarks  
+ Если \<T> значение List, этот метод возвращает 1, а в списке — \<T1,T2> значение 2. Этот метод возвращает 0, если отсутствуют параметры типа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

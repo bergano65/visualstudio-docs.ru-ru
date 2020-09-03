@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141896"
 ---
 # <a name="functions-view---contention-data"></a>Представление "Функции" — данные о конфликтах
@@ -25,7 +25,7 @@ ms.locfileid: "68141896"
   
  В таблице ниже приведено объяснение значений в представлении "Функции" файла данных профилирования, которые были получены с помощью метода параллелизма.  
   
-|Столбец|ОПИСАНИЕ|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время блокировки выполнения функцией кода в теле функции. Время блокирования в функциях, которые были вызваны данной функцией, не включается.|  
 |**Эксклюзивное время блокировки %**|Процент общего времени блокировки в ходе сеанса профилирования, которое являлось эксклюзивным временем блокировки указанной функции.|  
@@ -44,10 +44,10 @@ ms.locfileid: "68141896"
 |**Имя процесса**|Имя процесса.|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Функции"](../profiling/functions-view.md)   
- [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Представление "Функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "функции"](../profiling/functions-view.md)   
+ [Представление "функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Представление "функции"](../profiling/functions-view-instrumentation-data.md)   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)

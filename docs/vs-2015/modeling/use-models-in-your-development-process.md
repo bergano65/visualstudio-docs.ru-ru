@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586357"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
@@ -137,5 +137,5 @@ ms.locfileid: "82586357"
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Создание моделей для модели приложения](../modeling/create-models-for-your-app.md) [требования к пользователям](../modeling/model-user-requirements.md) модель. [архитектура приложения](../modeling/model-your-app-s-architecture.md) [Разработка тестов на основе модели](../modeling/develop-tests-from-a-model.md) [Структура решения для моделирования](../modeling/structure-your-modeling-solution.md)
