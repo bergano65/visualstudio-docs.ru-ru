@@ -1,5 +1,5 @@
 ---
-title: Начало работы с управлением источником VSPackages (ru) Документы Майкрософт
+title: начало работы с пакетом VSPackage системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708328"
 ---
-# <a name="get-started-with-source-control-vspackages"></a>Начало работы с управлением исходным ресурсом VSPackages
+# <a name="get-started-with-source-control-vspackages"></a>Приступая к работе с пакетом VSPackage в системе управления версиями
 
-Источник управления VSPackage является более продвинутой альтернативой плагинуправления управления исходным управлением. Для получения дополнительной информации о плагинах управления исходным управлением [см.](../../extensibility/internals/creating-a-source-control-plug-in.md) Ресурсный контроль VSPackage позволяет полностью контролировать модель управления исходным интерфейсом, функции и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательский интерфейс (UI), и он интегрируется в среду в качестве VSPackage.
+Пакет VSPackage системы управления версиями — это более сложная альтернатива подключаемому модулю системы управления версиями. Дополнительные сведения о подключаемых модулях системы управления версиями см. [в разделе Создание подключаемого модуля системы управления](../../extensibility/internals/creating-a-source-control-plug-in.md)версиями. Пакет VSPackage для управления исходным кодом обеспечивает полный контроль над моделью системы управления версиями, функциями и интерфейсом пользователя, а также интегрируется в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среду как VSPackage.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-[Определить, следует ли реализовывать элемент управления исходным источником VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+[Определение необходимости реализации пакета VSPackage системы управления версиями](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
-Объясняет выбор решений для управления исходными исходами и предоставляет широкие рекомендации по выбору подходящего пути интеграции.
+Описывает варианты решений системы управления версиями и предоставляет широкие рекомендации по выбору соответствующего пути интеграции.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
-- [Что нового в управлении исходным источником](../../extensibility/internals/what-s-new-in-source-control.md)
+- [Новые возможности системы управления версиями](../../extensibility/internals/what-s-new-in-source-control.md)
 
-   Описывает новые функции с помощью VSPackages с исходным управлением.
+   Описание новых возможностей, использующих пакеты VSPackage с системой управления версиями.
 
-- [Создание управления исходным элементом VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [Создание пакета VSPackage для системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
-   Обсуждается, как создать элемент управления исходным элементом VSPackage, который не [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] только поставляет функциональность управления исходным источником, но и может быть использован для настройки uI управления исходным управлением.
+   Описывает, как создать пакет VSPackage системы управления версиями, который не только обеспечивает функциональность управления версиями, но и может использоваться для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса системы управления версиями.

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2:GetReason (ru) Документы Майкрософт
+title: 'IDebugBreakpointUnboundEvent2:: Reason | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734721"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Получает причину, по которой точка разрыва была несвязанной.
+Возвращает причину, по которой точка останова была непривязанной.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>Параметры
 `pdwUnboundReason`\
-(ваут) Возвращает значение из [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) перечисления с указанием причины, по которой точка разрыва была несвязана.
+заполняет Возвращает значение из перечисления [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) , указывающее причину, по которой точка останова была непривязана.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Причины включают отскок точки разрыва в другое место после операции по правке и продолжению или определение того, что точка разрыва была связана по ошибке.
+## <a name="remarks"></a>Remarks
+Причина заключается в том, что точка останова повторно привязана к другому расположению после операции "изменить и продолжить", или при определении того, что точка останова была привязана по ошибке.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CBreakpointUnboundDebugEventBase,** который предоставляет интерфейс [IDebugBreakpointUnboundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+В следующем примере показано, как реализовать этот метод для объекта **кбреакпоинтунбаунддебужевентбасе** , предоставляющего интерфейс [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) .
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
@@ -71,5 +71,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

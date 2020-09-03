@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bbc55204987f4b6ea0d45c4228f6c194f1ebaf64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671310"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Чтение модели UML в программном коде
@@ -23,7 +23,7 @@ ms.locfileid: "72671310"
 
 Вы можете загрузить модель UML и ее схемы, используя UML API.
 
-## <a name="Reading"></a>Чтение модели в программном коде
+## <a name="reading-a-model-in-program-code"></a><a name="Reading"></a> Чтение модели в программном коде
  Чтобы получить доступ к содержимому модели, не отображая ее в окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], используйте метод `ModelingProject.LoadReadOnly()`.
 
  Пример:
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
  Кроме того, с помощью API-интерфейса [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно открывать модели и схемы в пользовательском интерфейсе. Дополнительные сведения см. [в статье открытие модели UML с помощью API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
-## <a name="Standalone"></a>Изолированные приложения
+## <a name="stand-alone-applications"></a><a name="Standalone"></a> Изолированные приложения
  Пример из предыдущего подраздела можно выполнить в расширениях Visual Studio. Можно прочитать модель в отдельном приложении, однако необходимо добавить несколько ссылок на проект [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 > [!NOTE]
@@ -104,5 +104,5 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
    - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Программирование с помощью API UML](../modeling/programming-with-the-uml-api.md) [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)

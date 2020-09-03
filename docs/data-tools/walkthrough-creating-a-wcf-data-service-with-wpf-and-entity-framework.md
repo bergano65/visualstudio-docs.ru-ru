@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585994"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
@@ -30,9 +30,9 @@ ms.locfileid: "75585994"
 
 - Создайте веб-приложение для размещения [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
-- Создайте [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], представляющий `Customers` таблицу в базе данных Northwind.
+- Создайте объект [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , представляющий `Customers` таблицу в базе данных Northwind.
 
-- Создайте [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Создайте таблицу [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 - Создайте клиентское приложение и добавьте ссылку на [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
@@ -40,7 +40,7 @@ ms.locfileid: "75585994"
 
 - При необходимости в приложение будут добавлены возможности фильтрации.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
 1. Если у вас нет SQL Server Express LocalDB, установите его на [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)или с помощью **Visual Studio Installer**. В **Visual Studio Installer**можно установить SQL Server Express LocalDB как часть рабочей нагрузки **хранения и обработки данных** или как отдельный компонент.
@@ -74,17 +74,17 @@ ms.locfileid: "75585994"
 
 4. В диалоговом окне **Новый проект ASP.NET** в списке **Выбор шаблона** выберите **Пустой**, а затем нажмите кнопку **ОК**.
 
-На следующем шаге создается [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], представляющий `Customers` таблицу в базе данных Northwind.
+На следующем шаге создается объект [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , представляющий `Customers` таблицу в базе данных Northwind.
 
 ### <a name="to-create-the-entity-data-model"></a>Создание модели EDM
 
-1. В строке меню выберите **Проект** > **Добавить новый элемент**.
+1. В строке меню выберите **проект**  >  **Добавить новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** выберите узел **Данные** и выберите элемент **Модель EDM ADO.NET**.
 
-3. В текстовом поле **имя** введите `NorthwindModel`, а затем нажмите кнопку **Добавить** .
+3. В текстовом поле **имя** введите `NorthwindModel` , а затем нажмите кнопку **добавить** .
 
-     Появится Мастер моделей EDM.
+     Появится мастер модели EDM.
 
 4. В мастере моделей EDM на странице **Выбор модели содержимого** выберите элемент **Конструктор EF из базы данных** и нажмите кнопку **Далее**.
 
@@ -92,7 +92,7 @@ ms.locfileid: "75585994"
 
     - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
 
-         \- или -
+         -или-
 
     - Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых соединений](../data-tools/add-new-connections.md).
 
@@ -114,11 +114,11 @@ ms.locfileid: "75585994"
 
 ### <a name="to-create-the-data-service"></a>Создание службы данных
 
-1. В строке меню выберите **Проект** > **Добавить новый элемент**.
+1. В строке меню выберите **проект**  >  **Добавить новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** выберите узел **Веб** и элемент **Служба данных WCF 5.6**.
 
-3. В текстовом поле **имя** введите `NorthwindCustomers`, а затем нажмите кнопку **Добавить** .
+3. В текстовом поле **имя** введите `NorthwindCustomers` , а затем нажмите кнопку **добавить** .
 
      Файл **NorthwindCustomers.svc** появится в **редакторе кода**.
 
@@ -132,11 +132,11 @@ ms.locfileid: "75585994"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. В строке меню выберите **отладка** > **начать без отладки** , чтобы запустить службу. Откроется окно браузера, и отобразится схема XML для службы.
+6. В строке меню выберите **Отладка**  >  **начать без отладки** , чтобы запустить службу. Откроется окно браузера, и отобразится схема XML для службы.
 
 7. В **адресной** строке введите `Customers` в конце URL-адреса для **норсвиндкустомерс. svc**, а затем нажмите клавишу **Ввод** .
 
-     Отобразится XML-представление данных в таблице `Customers`.
+     Отобразится XML-представление данных в `Customers` таблице.
 
     > [!NOTE]
     > В некоторых случаях обозреватель Internet Explorer может неправильно интерпретировать данные как RSS-канал. Необходимо убедиться, что параметр, определяющий, отображаются ли RSS-каналы, отключен. Дополнительные сведения см. в разделе [Устранение неполадок ссылок на службы](../data-tools/troubleshooting-service-references.md).
@@ -152,9 +152,9 @@ ms.locfileid: "75585994"
 
 ### <a name="to-create-the-client-application"></a>Создание клиентского приложения
 
-1. В строке меню выберите файл, **добавить** > **Новый проект**.
+1. В строке меню выберите файл, **Добавить**  >  **Новый проект**.
 
-2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#**  , выберите узел **Windows** , а затем выберите **Windows Forms приложение**.
+2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#** , выберите узел **Windows** , а затем выберите **Windows Forms приложение**.
 
 3. В текстовом поле **Имя** введите `NorthwindClient` и нажмите кнопку **ОК**.
 
@@ -162,11 +162,11 @@ ms.locfileid: "75585994"
 
 5. В строке меню выберите **Проект**, затем **Назначить запускаемым проектом**.
 
-На следующем шаге вы добавите ссылку на службу в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-проекте.
+На следующем шаге вы добавите в [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] веб-проект ссылку на службу.
 
 ### <a name="to-add-a-service-reference"></a>Добавление ссылки на службу
 
-1. В строке меню выберите **проект** > **Добавление ссылки на службу**.
+1. В строке меню выберите **проект**  >  **Добавление ссылки на службу**.
 
 2. В диалоговом окне **Добавление ссылки на службу** нажмите кнопку **Найти**.
 
@@ -178,13 +178,13 @@ ms.locfileid: "75585994"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Включение привязки данных к службе
 
-1. В строке меню выберите **просмотреть** > другие > **Источники данных** **Windows** .
+1. В строке меню выберите **Просмотреть**  >  **другие**  >  **Источники данных**Windows.
 
    Открывается окно **Источники данных**.
 
 2. В окне **Источники данных** нажмите кнопку **Добавить новый источник данных**.
 
-3. На странице **Выбор типа источника данных** **мастера настройки источника данных** выберите **Объект** и нажмите кнопку **Далее**.
+3. На странице **Выбор типа источника данных****мастера настройки источника данных** выберите **Объект** и нажмите кнопку **Далее**.
 
 4. На странице **Выбор объектов данных** последовательно разверните узлы **NorthwindClient** и **NorthwindClient.ServiceReference1**.
 
@@ -202,7 +202,7 @@ ms.locfileid: "75585994"
 
 3. Выберите элемент управления **CustomersDataGridView** и в окне **Свойства** установите для свойства **Закрепить** значение **Заполнение**.
 
-4. В **Обозреватель решений**откройте контекстное меню узла **Form1** и выберите пункт **Просмотреть код** , чтобы открыть редактор кода, и добавьте в начало файла следующую инструкцию `Imports` или `Using`:
+4. В **Обозреватель решений**откройте контекстное меню узла **Form1** и выберите пункт **Просмотреть код** , чтобы открыть редактор кода, и добавьте следующий `Imports` `Using` оператор или в начало файла:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -236,7 +236,7 @@ ms.locfileid: "75585994"
 
 8. В коде, добавленном на этапе 4, выберите код `http://localhost:53161/NorthwindCustomers.svc/` и замените его только что скопированным URL-адресом.
 
-9. В строке меню выберите **отладка** > **начать отладку** , чтобы запустить приложение. Отобразятся сведения о клиенте.
+9. В строке меню выберите **Отладка**  >  **начать отладку** , чтобы запустить приложение. Отобразятся сведения о клиенте.
 
    Теперь в наличии имеется рабочее приложение, которое будет отображать список клиентов из службы NorthwindCustomers. При необходимости в отображении дополнительных данных посредством службы, свойство [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] можно изменить, чтобы включить дополнительные таблицы из базы данных Northwind.
 
@@ -251,7 +251,7 @@ ms.locfileid: "75585994"
 
 2. Добавьте в форму элементы управления <xref:System.Windows.Forms.TextBox> и <xref:System.Windows.Forms.Button> с **панели элементов**.
 
-3. Откройте контекстное меню для элемента управления <xref:System.Windows.Forms.Button>, выберите **Просмотреть код**, а затем добавьте следующий код в обработчик событий `Button1_Click`:
+3. Откройте контекстное меню для <xref:System.Windows.Forms.Button> элемента управления, выберите **Просмотреть код**, а затем добавьте следующий код в `Button1_Click` обработчик событий:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -282,11 +282,11 @@ ms.locfileid: "75585994"
 
 4. В коде выше замените `http://localhost:53161/NorthwindCustomers.svc` URL-адресом из обработчика событий `Form1_Load`.
 
-5. В строке меню выберите **отладка** > **начать отладку** , чтобы запустить приложение.
+5. В строке меню выберите **Отладка**  >  **начать отладку** , чтобы запустить приложение.
 
 6. В текстовом поле введите **London** и нажмите кнопку. Будут отображены только клиенты из Лондона.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Как добавить, обновить или удалить ссылку на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

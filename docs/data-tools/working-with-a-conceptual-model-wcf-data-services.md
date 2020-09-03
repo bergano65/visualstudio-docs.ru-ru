@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585916"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Работа с концептуальной моделью (WCF Data Services)
@@ -27,8 +27,8 @@ ms.locfileid: "75585916"
 
 | Раздел | Описание |
 | - | - |
-| [Практическое руководство. Выполнение запросов к службе данных](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Показывает, как запросить службу данных из приложения .NET. |
-| [Практическое руководство. Проекция результатов запроса](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Показывает, как уменьшить объем данных, возвращаемых с помощью запроса службы данных. |
+| [Инструкции. выполнение запросов службы данных](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Показывает, как запросить службу данных из приложения .NET. |
+| [Как выполнить запрос проекта к результатам запроса](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Показывает, как уменьшить объем данных, возвращаемых с помощью запроса службы данных. |
 
 При использовании концептуальной модели можно определить допустимый тип данных на языке, соответствующем вашему домену. В модели можно определить допустимые данные или добавить проверку в операции, выполняемые с сущностью или службой данных.
 
@@ -36,16 +36,16 @@ ms.locfileid: "75585916"
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Практическое руководство. Перехват сообщений службы данных](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Показывает, как добавить проверку в операцию службы данных.|
+|[Как перехватывать сообщения службы данных](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Показывает, как добавить проверку в операцию службы данных.|
 
  В следующих разделах показано, как создавать, обновлять и удалять данные, выполняя операции с сущностями.
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[Практическое руководство. Добавление, изменение и удаление сущностей](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Показывает, как создавать, обновлять и удалять данные сущностей в службе данных.|
-|[Практическое руководство. Определение связей сущностей](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Показывает, как создавать или изменять связи в службе данных.|
+|[Как добавлять, изменять и удалять сущности](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Показывает, как создавать, обновлять и удалять данные сущностей в службе данных.|
+|[Руководство. Определение связей сущностей](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Показывает, как создавать или изменять связи в службе данных.|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Выполнение запросов к службе данных](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

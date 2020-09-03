@@ -1,5 +1,5 @@
 ---
-title: Обработка специализированного развертывания Документы Майкрософт
+title: Обработка специализированного развертывания | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708212"
 ---
-# <a name="handle-specialized-deployment"></a>Обработка специализированного развертывания
-Развертывание — это необязательная операция для проектов. Например, веб-проект поддерживает развертывание, чтобы позволить проекту обновить веб-сервер. Аналогичным образом, проект **Smart Device** поддерживает развертывание для копирования построенного приложения на целевое устройство. Подтипы проекта могут обеспечить специализированное поведение развертывания путем реализации интерфейса. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Этот интерфейс определяет полный набор операций развертывания:
+# <a name="handle-specialized-deployment"></a>Обрабатывайте специализированное развертывание
+Развертывание является необязательной операцией для проектов. Веб-проект, например, поддерживает развертывание, чтобы проект мог обновить веб-сервер. Аналогично, проект **смарт-устройства** поддерживает развертывание для копирования приложения на целевое устройство. Подтипы проектов могут предоставлять специализированное поведение при развертывании путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейса. Этот интерфейс определяет полный набор операций развертывания:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>
 
@@ -37,13 +37,13 @@ ms.locfileid: "80708212"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>
 
-  Фактическая операция развертывания должна выполняться в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отдельном потоке, чтобы сделать еще более чутким к взаимодействию с пользователем. Предоставляемые методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> называются асинхронно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и работают в фоновом режиме, что позволяет среде задавить вопрос о состоянии операции развертывания в любое время или при необходимости остановить операцию. Операции <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> развертывания интерфейса вызываются средой, когда пользователь выбирает команду развертывания.
+  Фактическая операция развертывания должна выполняться в отдельном потоке, чтобы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] еще больше реагировать на взаимодействие с пользователем. Методы, предоставляемые, <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> вызываются асинхронно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и работают в фоновом режиме, позволяя среде запрашивать состояние операции развертывания в любое время, а также при необходимости прекращать выполнение операции. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>Операции развертывания интерфейса вызываются средой, когда пользователь выбирает команду deploy.
 
-  Чтобы уведомить среду о том, что операция развертывания началась <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> завершена, подтип проекта должен вызвать и методы.
+  Чтобы уведомить среду о начале или завершении операции развертывания, подтип проекта должен вызывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> методы и.
 
-## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Обработка специализированного развертывания по подтипному проекту
+## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Для управления специализированным развертыванием по проекту подтипа
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> метода регистрации среды для получения уведомлений о событиях состояния развертывания.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> метод, чтобы зарегистрировать среду для получения уведомлений о событиях состояния развертывания.
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -74,7 +74,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> метода отмены регистрации среды для получения уведомлений о событиях состояния развертывания.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> метод, чтобы отменить регистрацию в среде для получения уведомлений о событиях состояния развертывания.
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -92,7 +92,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> метода выполнения операции коммитов, специфичной для приложения.  Этот метод используется в основном для развертывания баз данных.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> метод для выполнения операции фиксации, характерной для вашего приложения.  Этот метод используется главным образом для развертывания базы данных.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -110,7 +110,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> метода выполнения операции отката. Когда этот метод вызывается, проект развертывания должен делать все, что уместно, чтобы откатить изменения и восстановить состояние проекта. Этот метод используется в основном для развертывания баз данных.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> метод для выполнения операции отката. При вызове этого метода проект развертывания должен выполнить все необходимые действия для отката изменений и восстановления состояния проекта. Этот метод используется главным образом для развертывания базы данных.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -128,7 +128,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> метода для определения того, может ли проект начать операцию развертывания.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> метод, чтобы определить, может ли проект запустить операцию развертывания.
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -161,7 +161,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> метода для определения успешного завершения операции развертывания.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> метод, чтобы определить, завершилась ли операция развертывания успешно.
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -184,7 +184,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> метода для начала операции развертывания в отдельном потоке. Разместите код, специфичный `Deploy` для развертывания приложения, в методе.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> метод, чтобы начать операцию развертывания в отдельном потоке. Поместите код, относящийся к развертыванию приложения, внутри `Deploy` метода.
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -241,7 +241,7 @@ ms.locfileid: "80708212"
 
     ```
 
-- Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> метода остановки операции развертывания. Этот метод вызывается, когда пользователь нажимает кнопку **«Отмена»** во время процесса развертывания.
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> метод, чтобы прерывать операцию развертывания. Этот метод вызывается, когда пользователь нажимает кнопку **Отмена** в процессе развертывания.
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer
@@ -287,7 +287,7 @@ ms.locfileid: "80708212"
     ```
 
 > [!NOTE]
-> Все примеры кода, приведенные в этой теме, являются частями более крупного примера в [образцах VSSDK.](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
+> Все примеры кода, приведенные в этом разделе, являются частями более крупного примера в примерах [VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>См. также
-- [Подтипы проекта](../../extensibility/internals/project-subtypes.md)
+## <a name="see-also"></a>См. также раздел
+- [Подтипы проектов](../../extensibility/internals/project-subtypes.md)

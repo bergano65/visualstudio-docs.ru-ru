@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2 Документы Майкрософт
+title: IDebugCanStopEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734509"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Этот интерфейс используется для того, чтобы спросить менеджера отладки сеанса (SDM), стоит ли останавливаться на текущем местоположении кода.
+Этот интерфейс используется для запроса диспетчера отладки сеанса (SDM) на то, следует ли останавливаться в текущем расположении кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,34 +28,34 @@ ms.locfileid: "80734509"
 IDebugCanStopEvent2 : IUknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Движок отладки (DE) реализует этот интерфейс для поддержки шага через исходный код. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот `IDebugEvent2` интерфейс (SDM использует [queryInterface](/cpp/atl/queryinterface) для доступа к интерфейсу).
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс для поддержки пошагового выполнения исходного кода. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс (модель SDM использует [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейсу).
 
- Реализация этого интерфейса должна сообщить вызов SDM [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) к движку отладки. Например, это можно сделать с помощью сообщения, размещенного на потоке обработки сообщений отладки, или объект, реализующий этот `IDebugCanStopEvent2::CanStop`интерфейс, может содержать ссылку на движок отладки и перезвонить обратно в движок отладки с переданным флагом.
+ Реализация этого интерфейса должна передавать вызов [КАНСТОП](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) SDM в модуль отладки. Например, это можно сделать с помощью сообщения, отправленного в поток обработки сообщений модуля отладки, или объекта, реализующего этот интерфейс, может содержать ссылку на модуль отладки и обратный вызов отладчика с флагом, переданным в `IDebugCanStopEvent2::CanStop` .
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- DE может отправлять этот метод каждый раз, когда DE просят продолжить выполнение и DE шагает через код. Это событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) поставляемой SDM при его подключении к отладке программы.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ DE может отправить этот метод каждый раз, когда запрос DE запрашивает продолжение выполнения, а DE — по пошаговому выполнению кода. Это событие отправляется с помощью функции обратного вызова [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , предоставляемой SDM при присоединении к отлаживаемой программе.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugCanStopEvent2`.
+ В следующей таблице показаны методы `IDebugCanStopEvent2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Получает причину этого события.|
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Определяется, должна ли отладить программу останавливаться в месте расположения этого события (и отправлять событие, описывающие причину остановки) или просто продолжать выполнение.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Получает контекст документа, описывающий местоположение этого события.|
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Получает контекст кода, описывающий местоположение этого события.|
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Возвращает причину этого события.|
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Указывает, должна ли отлаживаемая программа останавливаться в расположении этого события (и отправить событие, описывающее причину остановки) или просто продолжить выполнение.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Возвращает контекст документа, описывающий расположение этого события.|
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Возвращает контекст кода, описывающий расположение этого события.|
 
-## <a name="remarks"></a>Примечания
- DE отправляет этот интерфейс, если пользователь вступает в функцию и DE не находит информацию об отладке там или информация об отладке существует, но DE не знает, если исходный код может быть отображено для этого местоположения.
+## <a name="remarks"></a>Remarks
+ Параметр DE отправляет этот интерфейс, если пользователь выполняет шаги в функции, а параметр DE не находит отладочную информацию или отладочная информация существует, но параметр DE не знает, можно ли отобразить исходный код для этого расположения.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

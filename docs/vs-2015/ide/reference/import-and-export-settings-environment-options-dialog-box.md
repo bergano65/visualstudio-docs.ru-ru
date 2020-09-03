@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85f52873f52a822a6f6a79ebea545569dc40bf73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671027"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Страница "Параметры импорта и экспорта", папка "Среда", диалоговое окно "Параметры"
@@ -23,5 +23,5 @@ ms.locfileid: "72671027"
 
 Эта страница служит для задания места сохранения файла параметров пользователя и указания необходимости использования файла параметров команды. Дополнительные сведения о параметрах см. в разделе [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="see-also"></a>См. также раздел
- [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>См. также:
+ [Диалоговое окно "параметры среды"](../../ide/reference/environment-options-dialog-box.md)

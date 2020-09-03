@@ -1,5 +1,5 @@
 ---
-title: Фильтрация ящика Диагностика AddItem для вложенных проектов (ru) Документы Майкрософт
+title: Фильтрация диалогового окна AddItem для вложенных проектов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708384"
 ---
-# <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Фильтр овоедело диалога AddItem для вложенных проектов
-При отображении диалогового окна **AddItem** для вложенного проекта родительский проект может контролировать элементы, отображаемые в диалоговом поле.
+# <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Фильтрация диалогового окна AddItem для вложенных проектов
+При отображении диалогового окна **AddItem** для вложенного проекта родительский проект может управлять тем, какие элементы отображаются в диалоговом окне.
 
- Интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> позволяет фильтровать узлы, которые будут находиться в диалоговом окне **AddItem.** Когда проект «ребенок» отображает диалоговую коробку **AddItem,** родитель может реализовать элементы `IVsFilterAddProjectItemDlg` интерфейса и фильтрации, которые в противном случае были бы отображены в проекте ребенка.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>Интерфейс позволяет фильтровать узлы, которые будут находиться в диалоговом окне **AddItem** . Когда в дочернем проекте отображается диалоговое окно **AddItem** , родительский проект может реализовать `IVsFilterAddProjectItemDlg` интерфейс и фильтровать элементы, которые в противном случае будут отображаться в проекте дочернего проекта.
 
- Когда проекты группируются по функциям по `IVsFilterAddProjectItemDlg` определенным родительским проектам, можно реализовать, когда пользователь выбирает **Элемент добавления в** меню ярлыка в вложенном проекте. Реализация `IvsFilterAddProjectItemDlg displays` только элементов проекта или файлов, специфиченных для этой группы. Элементы проекта для других групп отфильтровываются из окна диалога, даже если они хранятся в том же каталоге.
+ Если проекты группируются по функциям в конкретных родительских проектах, можно реализовать, `IVsFilterAddProjectItemDlg` когда пользователь выбирает пункт **Добавить проект** в контекстном меню вложенного проекта. Реализация `IvsFilterAddProjectItemDlg displays` только элементов проекта или файлов, относящихся к этой группе. Элементы проекта для других групп отфильтровываются из диалогового окна, даже если они хранятся в одном и том же каталоге.
 
- Когда пользователь открывает диалоговую коробку **AddItem** для ребенка, `IVsFilterAddProjectItemDlg` требуется реализация интерфейса родительского проекта.
+ Когда пользователь открывает диалоговое окно **AddItem** для дочернего элемента, вызывается реализация интерфейса для родительского проекта `IVsFilterAddProjectItemDlg` .
 
- Интерфейс `IVsFilterAddProjectItemDlg` также может осуществлять фильтрацию по категориям. Для получения дополнительной информации [Register project and item templates](../../extensibility/internals/registering-project-and-item-templates.md)см. [Add items to the Add New Item dialog box](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+ `IVsFilterAddProjectItemDlg`Интерфейс также может реализовывать фильтрацию по категории. Дополнительные сведения см. в разделе [Добавление элементов в диалоговое окно "Добавление нового элемента"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) и [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [Добавление элементов в диалоговую окно Добавить новый элемент](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Добавление элементов в диалоговое окно "Добавление нового элемента"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Проекты гнезда](../../extensibility/internals/nesting-projects.md)
+- [Вложенные проекты](../../extensibility/internals/nesting-projects.md)

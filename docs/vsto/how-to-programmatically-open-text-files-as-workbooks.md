@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519837"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Руководство. Программное открытие текстовых файлов в виде книг
@@ -37,7 +37,7 @@ ms.locfileid: "85519837"
 
 - Текстовый файл `Test.txt` , который будет сохранен на диске C.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с книгами](../vsto/working-with-workbooks.md)
 - [Руководство. Программное открытие книг](../vsto/how-to-programmatically-open-workbooks.md)
 - [Как создать новые книги программным способом](../vsto/how-to-programmatically-create-new-workbooks.md)

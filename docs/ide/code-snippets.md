@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585422"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
@@ -95,7 +95,7 @@ End Property
 
 Если изменить `newPropertyValue` на `m_property`, изменяется каждое вхождение `newPropertyValue`. Если изменить `String` на `Int` в объявлении свойства, то значение метода SET также изменится на `Int`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство: Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
 - [Практическое руководство. Распространение фрагментов кода](../ide/how-to-distribute-code-snippets.md)

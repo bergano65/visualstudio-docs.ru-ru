@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 562990b14edba11abf50dc735279cba36bb21518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671192"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
@@ -38,7 +38,7 @@ ms.locfileid: "72671192"
  Рекомендации по организации моделей в среднем или крупном проекте см. в разделе [структурирование решения моделирования](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Чтение и рецензирование моделей
- Члены группы, использующие некоторые версии Visual Studio (которые не могут создавать модели), могут считывать модели, схемы моделирования и направленные графы, но не могут изменять их.  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Члены команды, использующие некоторые версии Visual Studio (в которых нельзя создавать модели), могут читать модели, схемы моделирования и направленные графы, но не могут их редактировать.  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Схему UML или схему слоев можно открыть только в модели, в которой она была создана. Чтобы предоставить доступ к схеме, нужно предоставить доступ ко всем файлам проекта моделирования или к их копиям.
 
@@ -60,5 +60,5 @@ ms.locfileid: "72671192"
 |[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)|Обзор моделей и схем.|
 |[Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Если модель, в которой используется профиль UML, отправляется другому пользователю, у этого пользователя должен быть установлен тот же профиль.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md) [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

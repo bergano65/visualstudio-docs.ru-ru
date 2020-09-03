@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c4a20939ed2e3a036831930749bb59b5a42315
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670054"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Создание пользовательского элемента управления Windows Forms со сложной привязкой данных
@@ -58,7 +58,7 @@ ms.locfileid: "72670054"
 
 - Добавьте новый элемент управления, перетащив его из **окна Источники данных** на **форму Form1**.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения данного пошагового руководства требуется:
 
 - Доступ к примеру базы данных "Борей".
@@ -109,7 +109,7 @@ ms.locfileid: "72670054"
 3. В меню **Построение** выберите пункт **Построить решение**.
 
 ## <a name="creating-a-data-source-from-your-database"></a>Создание источника данных из базы данных
- В этом шаге **Мастер настройки источника данных** используется для создания источника данных на основе таблицы `Customers` в учебной базе данных "Борей". Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке образца базы данных Northwind см. в разделе [Install SQL Server Sample databases](../data-tools/install-sql-server-sample-databases.md).
+ На этом шаге мастер **настройки источника данных** используется для создания источника данных на основе `Customers` таблицы в образце базы данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке образца базы данных Northwind см. в разделе [Install SQL Server Sample databases](../data-tools/install-sql-server-sample-databases.md).
 
 #### <a name="to-create-the-data-source"></a>Создание источника данных
 
@@ -133,7 +133,7 @@ ms.locfileid: "72670054"
 
 8. Выберите таблицу `Customers` и нажмите кнопку **Готово**.
 
-     Объект **NorthwindDataSet** добавляется в проект, и таблица `Customers` отображается в окне **Источники данных**.
+     Параметр **NorthwindDataSet** добавляется в проект, а `Customers` таблица отображается в окне **Источники данных** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Настройка таблицы Customers для использования элемента управления ComplexDataGridView
  Вы можете задать создаваемый элемент управления в окне **Источники данных** перед перетаскиванием элементов на форму.
@@ -163,12 +163,12 @@ ms.locfileid: "72670054"
 
 - Нажмите клавишу F5 для запуска приложения.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
  В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания элемента управления, поддерживающего привязку к данным. Некоторые типичные дальнейшие действия.
 
 - Помещение пользовательских элементов управления в библиотеку элементов управления, чтобы их можно было повторно использовать в других приложениях.
 
 - Создание элементов управления, поддерживающих сценарии поиска. Дополнительные сведения см. [в разделе создание Windows Forms пользовательского элемента управления, поддерживающего привязку данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Привязка Windows Forms элементов управления к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [Настройка элемента управления для создания при перетаскивании из окна "источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md) [Windows Forms элементов управления](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

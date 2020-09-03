@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282678"
 ---
 # <a name="create-and-configure-tableadapters"></a>Создание и настройка адаптеров таблиц TableAdapter
@@ -115,6 +115,6 @@ ms.locfileid: "85282678"
     > [!NOTE]
     > Перетаскивание объекта **запроса** непосредственно на **Конструктор наборов данных** создает метод, возвращающий только скалярное (одиночное) значение. Хотя выбранный запрос или хранимая процедура может возвращать больше одного значения, метод, созданный мастером, возвращает только одно значение. Например, запрос может вернуть первый столбец первой строки возвращаемых данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

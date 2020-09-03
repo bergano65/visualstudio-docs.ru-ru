@@ -1,5 +1,5 @@
 ---
-title: Отображение файлов с помощью открытого с командой (ru) Документы Майкрософт
+title: Отображение файлов при помощи команды "Открыть с помощью" | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708578"
 ---
-# <a name="display-files-by-using-the-open-with-command"></a>Отображение файлов с помощью команды Open With
-Проект может попросить IDE отобразить **окно Open With** Dialog. Этот запрос побуждает пользователя открыть файл с выбором стандартных редакторов. Следующие шаги описывают этот процесс:
+# <a name="display-files-by-using-the-open-with-command"></a>Отображение файлов при помощи команды "Открыть с помощью"
+Проект может попросить интегрированной среды разработки отобразить диалоговое окно " **Открыть с помощью** ". Этот запрос предлагает пользователю открыть файл с выбранными стандартными редакторами. Этот процесс описан в следующих шагах.
 
-1. Проект вызывает, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>указывая значение `OSE_UseOpenWithDialog` для `OSEOpenDocEditor` параметра.
+1. Проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> , указывая значение `OSE_UseOpenWithDialog` для `OSEOpenDocEditor` параметра.
 
-2. На основе расширения имени файла документа IDE определяет, какие редакторы, перечисленные в реестре, могут открыть указанный документ, и отображает эту информацию в поле **Open With** dialog.
+2. На основе расширения имени файла документа интегрированная среда разработки определяет, какие редакторы, перечисленные в реестре, могут открыть указанный документ и отобразить эти сведения в диалоговом окне **Открыть с помощью** .
 
     > [!NOTE]
-    > Проекты, которые имеют внутренний редактор, который должен быть включен в **Open With** диалоговые окна должны зарегистрировать фабрику редактора для каждого такого редактора. Внутренние редакторы функционируют только вместе с определенным типом проекта, который применяется при реализации метода. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> IDE имеет встроенную фабрику редакторов для основного текстового редактора и двоичного редактора. IDE также создает экземпляр фабрики редакторов от имени каждой зарегистрированной ассоциации файлов Windows. Примером такого файла является Microsoft Word.
+    > Проекты, имеющие встроенный редактор, который должен быть добавлен в диалоговое окно « **Открыть с помощью** », должны зарегистрировать фабрику редактора для каждого такого редактора. Встроенные редакторы работают только вместе с определенным типом проекта, который применяется в реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метода. Интегрированная среда разработки имеет встроенную фабрику редактора для основного текстового редактора и двоичного редактора. Интегрированная среда разработки также создает экземпляр фабрики редактора от имени каждой зарегистрированной ассоциации файлов Windows. Примером такого файла является Microsoft Word.
 
-3. Как только пользователь выбирает элемент из **окна Open With** dialog, IDE открывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> документ методом вызова. Для получения дополнительной [How to: Open standard editors](../../extensibility/how-to-open-standard-editors.md)информации см.
+3. Как только пользователь выбирает элемент в диалоговом окне **Открыть с помощью** , интегрированная среда разработки открывает документ путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метода. Дополнительные сведения см. [в разделе как открыть стандартные редакторы](../../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>См. также
-- [Откройте и сохраните элементы проекта](../../extensibility/internals/opening-and-saving-project-items.md)
-- [Отображение файлов с помощью команды Open File](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-- [Как: Открытые стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)
+- [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)
+- [Отображение файлов с помощью команды "открыть файл"](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+- [Руководство. Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md)

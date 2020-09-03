@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671207"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Задание фонового изображения схемы
@@ -21,7 +21,7 @@ ms.locfileid: "72671207"
 
 С помощью пользовательского кода в пакете SDK для визуализации и моделирования в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно установить фоновое изображение для сгенерированного конструктора.
 
-## <a name="setting-the-background-image"></a>Установка фонового изображения
+## <a name="setting-the-background-image"></a>Настройка фонового изображения
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Установка фонового изображения для сгенерированного конструктора
 
@@ -57,7 +57,7 @@ ms.locfileid: "72671207"
 
 16. В диалоговом окне **Добавление нового элемента** в списке **шаблоны** щелкните **файл кода**.
 
-17. В поле **имя** введите `BackgroundImage.cs` и нажмите кнопку **Добавить**.
+17. В поле **имя** введите `BackgroundImage.cs` и нажмите кнопку **добавить**.
 
 18. Скопируйте указанный ниже код в файл BackgroundImage.cs, изменив пространство имен, имя класса схемы и имя ресурса файла изображения.
 
@@ -104,5 +104,5 @@ ms.locfileid: "72671207"
 
      Дополнительные сведения о настройке модели с помощью программного кода см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md) [Настройка полей текста и изображений](../modeling/customizing-text-and-image-fields.md) [Навигация и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md) [написание кода для настройки предметно-ориентированного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

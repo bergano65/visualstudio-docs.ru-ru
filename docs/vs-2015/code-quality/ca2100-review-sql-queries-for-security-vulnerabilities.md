@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521216"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
@@ -57,7 +57,7 @@ ms.locfileid: "85521216"
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> и <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-  Обратите внимание, что это правило нарушается, если метод ToString типа используется явно или неявно для создания строки запроса. Пример.
+  Обратите внимание, что это правило нарушается, если метод ToString типа используется явно или неявно для создания строки запроса. Пример приведен ниже.
 
 ```
 int x = 10;
@@ -86,5 +86,5 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Обзор безопасности](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

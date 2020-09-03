@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f759ea679af818d85dd365f5615ce4fc664df89a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200740"
 ---
-# <a name="markerserieswritemessage-method"></a>Метод marker_series::write_message
+# <a name="marker_serieswrite_message-method"></a>Метод marker_series::write_message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Записывает сообщение в файл трассировки визуализатора параллелизма.  
@@ -65,5 +65,5 @@ void write_message(
   
  **Пространство имен:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Класс marker_series](../profiling/marker-series-class.md)
