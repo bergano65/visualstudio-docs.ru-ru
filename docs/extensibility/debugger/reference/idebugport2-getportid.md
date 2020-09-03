@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortId Документы Майкрософт
+title: 'IDebugPort2:: Жетпортид | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 97b0134b083b3f9b4697ce26bc4bd57c0b455a63
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725414"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
-Получает идентификатор порта.
+Возвращает идентификатор порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetPortId( 
 
 ## <a name="parameters"></a>Параметры
 `pguidPort`\
-(ваут) Возвращает GUID, который идентифицирует порт.
+заполняет Возвращает идентификатор GUID, определяющий порт.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 56dc8a6ecd88fe9d947bdcb99277a756a047d2e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664038"
 ---
 # <a name="value-xelement-dynamic-property"></a>Value (динамическое свойство XElement)
@@ -27,11 +27,11 @@ ms.locfileid: "72664038"
 elem.Value
 ```
 
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение
  Строка <xref:System.String>, представляющая объединенное содержимое элемента.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
  Это свойство эквивалентно свойству <xref:System.Xml.Linq.XElement.Value%2A> класса <xref:System.Xml.Linq.XElement?displayProperty=fullName>, однако это динамическое свойство также поддерживает уведомление об изменениях.
 
-## <a name="see-also"></a>См. также раздел
- [XML-код](../designers/xml-xelement-dynamic-property.md) [динамических свойств <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName> класса XElement](../designers/xelement-class-dynamic-properties.md)
+## <a name="see-also"></a>См. также:
+ <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>[XML-код](../designers/xml-xelement-dynamic-property.md) [динамических свойств класса XElement](../designers/xelement-class-dynamic-properties.md)

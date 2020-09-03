@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9a31b4c4182ed67a3e67d3c25c2c5ccf50e083f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664052"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (динамическое свойство XAttribute)
@@ -31,7 +31,7 @@ ms.locfileid: "72664052"
 attrib.Value
 ```
 
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение
  Объект типа <xref:System.String>, содержащий значение этого атрибута.
 
 ## <a name="exceptions"></a>Исключения
@@ -40,8 +40,8 @@ attrib.Value
 |--------------------|---------------|
 |<xref:System.ArgumentNullException>|При настройке значение параметра `value` - `null`.|
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
  Это свойство эквивалентно свойству <xref:System.Xml.Linq.XAttribute.Value%2A> класса <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, однако это динамическое свойство также поддерживает уведомление об изменениях.
 
-## <a name="see-also"></a>См. также раздел
- <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName> [атрибут](../designers/attribute-xelement-dynamic-property.md) [динамических свойств класса XAttribute](../designers/xattribute-class-dynamic-properties.md)
+## <a name="see-also"></a>См. также:
+ <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>[Атрибут](../designers/attribute-xelement-dynamic-property.md) [динамических свойств класса XAttribute](../designers/xattribute-class-dynamic-properties.md)

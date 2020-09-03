@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851070"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Устранение неполадок средства просмотра справки
@@ -32,7 +32,7 @@ ms.locfileid: "75851070"
 
 #### <a name="to-activate-windows-search-service"></a>Включение службы Windows Search
 
-1. Запустите диспетчер сервера.
+1. Запустите диспетчер серверов.
 
 2. В левой области навигации выберите **Роли**.
 
@@ -49,5 +49,5 @@ ms.locfileid: "75851070"
 
 - Дополнительные сведения см. на форуме и [справочной документации для разработчиков](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) и [в](https://blogs.msdn.com/b/thehelpguy/) блоге помощника.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Руководство администратора Help Viewer 2.1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

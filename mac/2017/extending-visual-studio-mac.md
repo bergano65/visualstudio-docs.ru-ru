@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851953"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
@@ -155,15 +155,15 @@ public enum DateInserterCommands
 * Требуемые версии .NET Framework
 * Целевая среда выполнения
 * Серверные компоненты VCS
-* Refactoring
+* Рефакторинг
 * Обработчики выражения
-* Выделение синтаксиса
+* Подсветка синтаксиса
 
 ## <a name="additional-information"></a>Дополнительные сведения
 
 > [!NOTE]
 > Сейчас мы работаем над улучшением сценариев расширения для Visual Studio для Mac. Если вы создаете расширения и нуждаетесь в дополнительной помощи или информации или хотите оставить отзыв, заполните форму [создания расширений Visual Studio для Mac](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Разработка расширений Visual Studio (в Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

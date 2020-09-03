@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount | Документация Майкрософт
+title: 'Иивисуализерсервице:: Жеткустомвиеверкаунт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a167fc504bb1a6486cf69ed7eb155aac73f9d3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197039"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод возвращает число типа визуализаторы доступны из этой службы.  
+Этот метод возвращает число визуализаторов типов, доступных из этой службы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>Параметры  
  `pcelt`  
- [out] Возвращает количество доступных визуализаторами типов.  
+ заполняет Возвращает число доступных визуализаторов типов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) передает запрос в этот метод в поддержке для визуализаторов типов.  
+## <a name="remarks"></a>Remarks  
+ [Жеткустомвиеверкаунт](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) передает запрос этому методу в его поддержке визуализаторов типов.  
   
-## <a name="see-also"></a>См. также  
- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
+## <a name="see-also"></a>См. также:  
+ [иивисуализерсервице](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)

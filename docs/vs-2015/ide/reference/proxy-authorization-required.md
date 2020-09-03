@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297821"
 ---
 # <a name="proxy-authorization-required"></a>Требуется проверка подлинности на прокси-сервере
@@ -31,13 +31,13 @@ ms.locfileid: "74297821"
 
   - *.microsoftonline.com
 
-  - *.visualStudio.com
+  - *.visualstudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- Вы можете удалить адрес https://go.microsoft.com из списка разрешений, чтобы диалоговое окно проверки подлинности прокси-сервера выпускалось как для адреса https://go.microsoft.com, так и для конечных точек сервера при перезапуске Visual Studio.
+- Вы можете удалить https://go.microsoft.com адрес из списка разрешений, чтобы диалоговое окно проверки подлинности прокси-сервера https://go.microsoft.com выпускалось как для адреса, так и для конечных точек сервера при перезапуске Visual Studio.
 
 - Если вы хотите использовать учетные данные по умолчанию с прокси-сервером, выполните следующие действия.
 
@@ -51,6 +51,6 @@ ms.locfileid: "74297821"
       </defaultProxy>
       ```
 
-      Вставьте правильный прокси-адрес для сети в `proxyaddress="<http://<yourproxy:port#>`.
+      Вставьте правильный прокси-адрес для вашей сети в `proxyaddress="<http://<yourproxy:port#>` .
 
 - Следуйте инструкциям в [этой записи блога](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) , чтобы добавить код, позволяющий использовать прокси-сервер.

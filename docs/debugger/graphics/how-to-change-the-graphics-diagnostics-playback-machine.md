@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769386"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Практическое руководство. изменение компьютера воспроизведения диагностики графики

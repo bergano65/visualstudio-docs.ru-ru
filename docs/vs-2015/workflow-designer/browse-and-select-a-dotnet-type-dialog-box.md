@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851427"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Диалоговое окно "Обзор и выбор типа .NET"
@@ -61,14 +61,14 @@ ms.locfileid: "75851427"
 ## <a name="filtering-search-results-in-the-type-browser"></a>Фильтрация результатов поиска в браузере типов
  Список типов в поле **имя типа** сокращается по мере ввода большего числа символов для поиска совпадения. В отфильтрованном списке отображаются только те типы, чье полное или короткое имя начинается с введенной строки.
 
- Например:
+ Пример:
 
-1. **Операция** ввода соответствует <xref:System.OperationCanceledException>, но не <xref:System.InvalidOperationException>. Чтобы введенное слово совпало с <xref:System.InvalidOperationException>, начните строку с System.I или Invalid.
+1. **Операция** ввода совпадений <xref:System.OperationCanceledException> не выполняется <xref:System.InvalidOperationException> . Чтобы введенное слово совпало с <xref:System.InvalidOperationException>, начните строку с System.I или Invalid.
 
-2. Ввод **универсальных** совпадений <xref:System.GenericUriParser> но не типов в пространстве имен <xref:System.Collections.Generic>. Чтобы выполнить поиск типов в пространстве имен <xref:System.Collections.Generic>, введите полное имя пространства имен.
+2. Ввод **универсальных** совпадений <xref:System.GenericUriParser> , но не типов в <xref:System.Collections.Generic> пространстве имен. Чтобы выполнить поиск типов в пространстве имен <xref:System.Collections.Generic>, введите полное имя пространства имен.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Выбор контракта службы с помощью диалогового окна браузера типов
  При выборе типа контракта службы браузер типов отображает только типы, имеющие атрибут <xref:System.ServiceModel.ServiceContractAttribute>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)

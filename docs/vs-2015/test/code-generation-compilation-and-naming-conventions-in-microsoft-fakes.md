@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851834"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes
@@ -24,8 +24,8 @@ ms.locfileid: "75851834"
 
 - Visual Studio Enterprise
 
-## <a name="BKMK_In_this_topic"></a> Содержание раздела
- [Формирование и компиляция кода](#BKMK_Code_generation_and_compilation)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела
+ [Создание и компиляция кода](#BKMK_Code_generation_and_compilation)
 
 - [Настройка формирования кода заглушек](#BKMK_Configuring_code_generation_of_stubs) • [Фильтрация типов](#BKMK_Type_filtering) • [Создание заглушек для конкретных классов и виртуальных методов](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Внутренние типы](#BKMK_Internal_types) • [Оптимизация времени сборки](#BKMK_Optimizing_build_times) • [Предотвращение конфликтов имен сборок](#BKMK_Avoiding_assembly_name_clashing)
 
@@ -37,9 +37,9 @@ ms.locfileid: "75851834"
 
 - [Руководство](#BKMK_Guidance)
 
-## <a name="BKMK_Code_generation_and_compilation"></a> Формирование и компиляция кода
+## <a name="code-generation-and-compilation"></a><a name="BKMK_Code_generation_and_compilation"></a> Создание и компиляция кода
 
-### <a name="BKMK_Configuring_code_generation_of_stubs"></a> Настройка формирования кода заглушек
+### <a name="configuring-code-generation-of-stubs"></a><a name="BKMK_Configuring_code_generation_of_stubs"></a> Настройка формирования кода заглушек
  Создание типов заглушек настраивается в XML-файле с расширением FAKES. Платформа Fakes интегрируется в процесс сборки с помощью пользовательских задач MSBuild и обнаруживает эти файлы во время сборки. Генератор кода Fakes компилирует типы заглушек в сборку и добавляет ссылку на проект.
 
  Следующий пример иллюстрирует типы заглушек, определенные в FileSystem.dll:
@@ -51,7 +51,7 @@ ms.locfileid: "75851834"
 
 ```
 
-### <a name="BKMK_Type_filtering"></a> Фильтрация типов
+### <a name="type-filtering"></a><a name="BKMK_Type_filtering"></a> Фильтрация типов
  Фильтры можно задать в файле FAKES, чтобы ограничить перечень типов, которые должны быть заменены заглушками. Можно добавить неограниченное число элементов Clear, Add, Remove в элемент StubGeneration, чтобы сформировать список выбранных типов.
 
  Например, этот файл FAKES создает заглушки для типов в пространствах имен System и System.IO, но исключает любой тип, содержащий Handle в пространстве имен System:
@@ -92,7 +92,7 @@ ms.locfileid: "75851834"
 
      `el;wo` соответствует значениям hello и world
 
-### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Создание заглушек для конкретных классов и виртуальных методов
+### <a name="stubbing-concrete-classes-and-virtual-methods"></a><a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Создание заглушек конкретные классы и виртуальные методы
  По умолчанию типы заглушек создаются для всех незапечатанных классов. Типы заглушки можно ограничить абстрактными классами с помощью файла конфигурации FAKES:
 
 ```xml
@@ -109,8 +109,8 @@ ms.locfileid: "75851834"
 </Fakes>
 ```
 
-### <a name="BKMK_Internal_types"></a> Внутренние типы
- Генератор кода Fakes будет создавать типы оболочек и типы заглушки для типов, которые являются видимыми для созданной сборки Fakes. Чтобы сделать внутренние типы сборки с оболочкой совместимости видимыми для сборки Fakes и тестовой сборки, добавьте атрибуты <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> в код сборки с оболочкой совместимости, отвечающий за видимость для созданной сборки Fakes и тестовой сборки. Ниже приведен пример:
+### <a name="internal-types"></a><a name="BKMK_Internal_types"></a> Внутренние типы
+ Генератор кода Fakes будет создавать типы оболочек и типы заглушки для типов, которые являются видимыми для созданной сборки Fakes. Чтобы сделать внутренние типы сборки с оболочкой совместимости видимыми для сборки Fakes и тестовой сборки, добавьте атрибуты <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> в код сборки с оболочкой совместимости, отвечающий за видимость для созданной сборки Fakes и тестовой сборки. Пример:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -142,7 +142,7 @@ ms.locfileid: "75851834"
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
- Можно указать другой открытый ключ для сборки Fakes, например ключ, созданный для сборки с оболочкой совместимости, указав полный путь к **SNK-файлу**, который содержит альтернативный ключ в виде значения атрибута `KeyFile` в элементе `Fakes`\\`Compilation`**FAKES-файла**. Пример:
+ Можно указать другой открытый ключ для имитации сборки, например ключ, созданный для сборки оболочкой совместимости, указав полный путь к **SNK** -файлу, который содержит альтернативный ключ `KeyFile` в качестве значения атрибута в `Fakes` \\ `Compilation` элементе файла **. имитируете** . Например:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -164,7 +164,7 @@ ms.locfileid: "75851834"
 
  В приведенном выше примере значения `Alternate_public_key` и `Test_assembly_public_key` могут быть одинаковыми.
 
-### <a name="BKMK_Optimizing_build_times"></a> Оптимизация времени сборки
+### <a name="optimizing-build-times"></a><a name="BKMK_Optimizing_build_times"></a> Оптимизация времени сборки
  Компиляция сборок Fakes может значительно затянуть время сборки. Можно сократить время сборки, создав сборки имитаций для сборки Fakes для системных сборок платформы .NET системы и сторонних сборок в отдельном централизованном проекте. Поскольку такие сборки редко изменяются на компьютере, созданные сборки Fakes можно повторно использовать в других проектах.
 
  Из проектов модульных тестов можно просто указать ссылку на скомпилированные сборки Fakes, помещенные в FakesAssemblies в папке проекта.
@@ -183,7 +183,7 @@ ms.locfileid: "75851834"
 
     - Для каждой сборки, для которой вы создали Fakes, добавьте ссылку на соответствующий файл DLL в папке Fakes.Prebuild\FakesAssemblies проекта.
 
-### <a name="BKMK_Avoiding_assembly_name_clashing"></a> Предотвращение конфликтов имен сборок
+### <a name="avoiding-assembly-name-clashing"></a><a name="BKMK_Avoiding_assembly_name_clashing"></a> Предотвращение конфликта имен сборок
  В среде Team Build все выходные данные сборки объединяются в одном каталоге. При работе с несколькими проектами, где используется Fakes, может возникнуть ситуация, когда сборки Fakes из другой версии переопределяют друг друга. Например, как mscorlib.dll сборки Fakes TestProject1 имитаций из .NET Framework 2.0, так и mscorlib.dll сборки Fakes TestProject2 для .NET Framework 4 будут выводить данные в mscorlib. сборку Fakes mscorlib.Fakes.dll.
 
  Чтобы избежать этой проблемы, платформа Fakes должна автоматически создавать учитывающие версию имена сборок Fakes для ссылок, не относящихся к проектам, при добавлении файлов FAKES. Учитывающее версию имя сборки Fakes внедряет номер версии при создании имени сборки Fakes:
@@ -201,9 +201,9 @@ attribute of the Assembly element in the .fakes:
 
 ```
 
-## <a name="BKMK_Fakes_naming_conventions"></a> Соглашения об именовании для Fakes
+## <a name="fakes-naming-conventions"></a><a name="BKMK_Fakes_naming_conventions"></a> Имитация соглашений об именовании
 
-### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Соглашения об именовании для типов заглушек и типов оболочек
+### <a name="shim-type-and-stub-type-naming-conventions"></a><a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Соглашения об именовании типов и заглушек оболочки
  **Пространства имен**
 
 - К пространству имен добавляется суффикс .Fakes.
@@ -228,7 +228,7 @@ attribute of the Assembly element in the .fakes:
 
 - Структура вложенного типа копируется для типов оболочек.
 
-### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Соглашения об именовании для свойства делегата оболочки или поля делегата заглушки
+### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a><a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Соглашения об именовании поля делегата оболочки или делегата-заглушки
  **Основные правила** для именования полей, начиная с пустого имени:
 
 - Имя метода добавляется.
@@ -237,7 +237,7 @@ attribute of the Assembly element in the .fakes:
 
 - Если метод является универсальным, добавляется `Of`*n*, где *n* — число аргументов универсального метода.
 
-  **Имена особых методов**, таких как методы получения или задания свойства, обрабатываются согласно описанию в следующей таблице.
+  **Специальные имена методов** , такие как метод получения или задания свойства, обрабатываются, как описано в следующей таблице.
 
 |Чем является метод...|Пример|Добавление к имени метода|
 |-------------------|-------------|--------------------------|
@@ -260,32 +260,32 @@ attribute of the Assembly element in the .fakes:
 
 - **Тип возвращаемого значения** игнорируется, если нет неоднозначности перегрузки. В этом случае тип возвращаемого значения добавляется в конец имени.
 
-### <a name="BKMK_Parameter_type_naming_conventions"></a> Соглашения об именовании для типов параметров
+### <a name="parameter-type-naming-conventions"></a><a name="BKMK_Parameter_type_naming_conventions"></a> Соглашения об именовании типов параметров
 
 |Задано|Добавляемая строка...|
 |-----------|-------------------------|
 |**Тип**`T`|T<br /><br /> Пространство имен, вложенная структура и универсальные регистрации удаляются.|
-|**Параметр вывода**`out T`|`TOut`|
+|**Выходной параметр**`out T`|`TOut`|
 |**Параметр ссылки** `ref T`|`TRef`|
 |**Тип массива**`T[]`|`TArray`|
 |Тип **многомерного массива**`T[ , , ]`|`T3`|
 |Тип **указателя**`T*`|`TPtr`|
 |**Универсальный тип**`T<R1, …>`|`TOfR1`|
-|**Аргумент универсального типа**`!i` для типа `C<TType>`|`Ti`|
-|**Аргумент универсального метода**`!!i` для метода `M<MMethod>`|`Mi`|
+|**Аргумент универсального типа** `!i` типа`C<TType>`|`Ti`|
+|**Аргумент универсального метода** `!!i` метода`M<MMethod>`|`Mi`|
 |**Вложенный тип**`N.T`|Добавляется `N`, затем `T`|
 
-### <a name="BKMK_Recursive_rules"></a> Рекурсивные правила
+### <a name="recursive-rules"></a><a name="BKMK_Recursive_rules"></a> Рекурсивные правила
  Рекурсивно применяются следующие правила:
 
 - Поскольку платформа Fakes использует C# для создания сборок Fakes, любой символ приведет к тому, что недопустимый токен C#, экранируется за «_» (символ подчеркивания).
 
 - Если результирующее имя конфликтует с любым членом объявляющего типа, используется схема нумерации, заключающаяся в добавлении двухзначного счетчика, начиная со значения 01.
 
-## <a name="BKMK_External_resources"></a> Внешние ресурсы
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> Внешние ресурсы
 
-### <a name="BKMK_Guidance"></a> Руководство
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://msdn.microsoft.com/library/jj159340.aspx) (Тестирование при непрерывной доставке с использованием Visual Studio 2012, глава 2, "Модульное тестирование. Внутреннее тестирование.")
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> Руководство по
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -1,5 +1,5 @@
 ---
-title: Элемент ButtonText Документы Майкрософт
+title: Элемент ButtonText | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739906"
 ---
-# <a name="buttontext-element"></a>Элемент ButtonText
-Это поле позволяет указать текст, который отображается в различных меню. По умолчанию `ButtonText` элемент отображается в контроллерах меню. Элемент `ButtonText` также становится по умолчанию, если другие текстовые поля пусты. Элемент `ButtonText` не может быть пустым, даже если указаны другие текстовые поля.
+# <a name="buttontext-element"></a>ButtonText, элемент
+Это поле позволяет указать текст, отображаемый в различных меню. По умолчанию `ButtonText` элемент отображается в контроллерах меню. `ButtonText`Элемент также станет значением по умолчанию, если другие текстовые поля пусты. `ButtonText`Элемент не может быть пустым, даже если указаны другие текстовые поля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,19 +31,19 @@ ms.locfileid: "80739906"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент Strings](../extensibility/strings-element.md)|Группы текстовых `ButtonText` элементов, таких как и `CommandName`.|
+|[Элемент Strings](../extensibility/strings-element.md)|Группирует текстовые элементы, такие как `ButtonText` и `CommandName` .|
 
 ## <a name="text-value"></a>Текстовое значение
- Текстовое значение `ButtonText` элемента предоставляет текст, отображаемый для элементов меню, комбо и других элементов пользовательского интерфейса (UI), которые имеют видимый текст.
+ Текстовое значение `ButtonText` элемента содержит текст, отображаемый для пунктов меню, КомБОС и других элементов пользовательского интерфейса, имеющих видимый текст.
 
 ## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

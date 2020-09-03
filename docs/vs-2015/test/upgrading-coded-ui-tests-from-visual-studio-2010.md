@@ -9,10 +9,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a29e531ca9b2a74e67abf80a0e3017a0f5b0b07
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298004"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010
@@ -20,7 +20,7 @@ ms.locfileid: "74298004"
 
 Тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, которые созданы в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1, автоматически восстанавливаются при открытии их в Visual Studio 2012. Если тестовые проекты помещаются в систему управления версиями, файлы проектов извлекаются для этого восстановления. После восстановления эти тестовые проекты, содержащие закодированные тесты пользовательского интерфейса, можно использовать в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 и [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
- **Requirements**
+ **Требования**
 
 - Visual Studio Enterprise
 
@@ -43,10 +43,10 @@ ms.locfileid: "74298004"
 |----------------------------|-----------|--------------|
 |Тестирование пользовательского интерфейса Silverlight в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]не поддерживается|**Сборка завершится ошибкой**<br /><br /> Если у вас имеется пакет 2 дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и вы создали проекты закодированных тестов пользовательского интерфейса для приложений Silverlight, то эти проекты не получится открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Рекомендуется управлять этими проектами только в пакете дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2.|
 |Тестирование пользовательского интерфейса Firefox в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]не поддерживается|**Сборка будет выполнена успешно, тестовый запуск завершится ошибкой**<br /><br /> Если у вас имеется пакет 2 дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] и вы создали проекты закодированных тестов пользовательского интерфейса для веб-приложений в Firefox, то эти проекты не получится открыть в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Рекомендуется управлять этими проектами только в пакете дополнительных компонентов [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2.|
-|Новые интерфейсы API тестирования кода пользовательского интерфейса были добавлены в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Сборка завершится ошибкой**<br /><br /> Если вы создали закодированные тесты пользовательского интерфейса с помощью нового API тестирования пользовательского интерфейса в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], эти проекты не получится открыть в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Проекты с новым API должны управляться только в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .|
+|Новые интерфейсы API тестирования кода пользовательского интерфейса были добавлены в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Сборка завершится ошибкой**<br /><br /> Если вы создали закодированные тесты пользовательского интерфейса с помощью нового API тестирования пользовательского интерфейса в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], эти проекты не получится открыть в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Проекты с новым API должны управляться только в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |В [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]ссылки были добавлены в оператор "Choose" в CSPROJ-файле. В [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]мы используем файл целевых объектов обратной связи для включения ссылок на сборки закодированных тестов пользовательского интерфейса.|В [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], закодированный тест пользовательского интерфейса не получится добавить в тестовый проект, созданный в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (или SP1), который не содержит закодированный тест пользовательского интерфейса.<br /><br /> Процесс восстановления добавляет целевые файлы и оператор выбора. Если закодированного теста пользовательского интерфейса нет в тестовом проекте, проект помечается как восстановленный, и соответствующие ссылки не будут добавлены во время добавления закодированного теста пользовательского интерфейса в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Вам необходимо создать новый тестовый проект в том же решении с помощью [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] и добавить в него новый закодированный тест пользовательского интерфейса. Кроме того, вы можете добавить закодированные тесты пользовательского интерфейса в тестовый проект в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 и открыть этот проект в [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-## <a name="UpgradingCodedUIFromVS2010_Update"></a> Обновление Visual Studio 2010 с пакетом обновления 1 (SP1)
+## <a name="visual-studio-2010-sp1-update"></a><a name="UpgradingCodedUIFromVS2010_Update"></a> Обновление Visual Studio 2010 с пакетом обновления 1 (SP1)
  Обновление до [!INCLUDE[vs2010](../includes/vs2010-md.md)] с пакетом обновления 1 (SP1) с поддержкой совместимости для Visual Studio 2012 и Windows 8 доступно для загрузки в [Центре загрузки Microsoft](https://www.microsoft.com/download/details.aspx?id=34677) , а также как обновление Visual Studio.
 
  После применения обновления улучшатся следующие функции средства закодированного теста пользовательского интерфейса [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 для Windows 8.
@@ -63,5 +63,5 @@ ms.locfileid: "74298004"
 
 - **Нагрузочное тестирование:** при выполнении нагрузочного теста вместе с типом сети, отличным от профиля локальной сети (LAN) на компьютере с Windows 8, драйвер эмулятора сети вызывает сбой операционной системы. Дополнительные сведения см. в [статье базы знаний 2736182](https://support.microsoft.com/help/2736182/a-gdr-update-for-visual-studio-2010-sp1-is-available-to-add-compatibil).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Обновление тестов из предыдущих версий Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [, создающего закодированный тест пользовательского интерфейса на основе существующей записи действий](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

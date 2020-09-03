@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1490708dc3dce4120d79879ded69283dd6108f67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656365"
 ---
 # <a name="using-the-workflow-designer"></a>Использование конструктора рабочих процессов
 В данном разделе показан способ создания новых действий и проектов рабочих процессов при помощи встроенных конструкторов и редактора выражений, размещенного в нескольких конструкторах операций.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Создание проекта рабочего процесса](../workflow-designer/creating-a-workflow-project.md) Разделы, описывающие создание библиотек с помощью этих шаблонов.
 
  [Как добавить действия на панель элементов](../workflow-designer/how-to-add-activities-to-the-toolbox.md) Показывает различные способы добавления действий на панель элементов.

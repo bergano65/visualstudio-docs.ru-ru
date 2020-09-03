@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetPortProcessId Документы Майкрософт
+title: 'IDebugPortEx2:: Жетпортпроцессид | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ae974461e312c68e6fcc14150a08879ac7709950
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725137"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
-Получает идентификатор процесса самого порта.
+Возвращает идентификатор процесса самого порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetPortProcessId ( 
 
 ## <a name="parameters"></a>Параметры
 `pdwProcessId`\
-(ваут) Возвращает идентификатор физического процесса самого порта.
+заполняет Возвращает идентификатор физического процесса самого порта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Например, в runtime Win32 этот метод обычно `GetCurrentProcessId` вызывает функцию Win32, чтобы получить идентификатор физического процесса.
+## <a name="remarks"></a>Remarks
+ Например, в среде выполнения Win32 этот метод обычно вызывает функцию Win32 `GetCurrentProcessId` для получения идентификатора физического процесса.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

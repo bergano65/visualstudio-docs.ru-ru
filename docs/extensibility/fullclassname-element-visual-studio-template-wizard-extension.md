@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769607"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Элемент Фуллкласснаме (расширение мастера шаблонов Visual Studio)
@@ -36,7 +36,7 @@ ms.locfileid: "85769607"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.
@@ -52,7 +52,7 @@ ms.locfileid: "85769607"
 
  Этот текст указывает класс, реализующий `IWizard` интерфейс. Указанный класс должен существовать в сборке, указанной в элементе [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  `FullClassName` — обязательный дочерний элемент элемента `WizardExtension`.
 
 ## <a name="example"></a>Пример

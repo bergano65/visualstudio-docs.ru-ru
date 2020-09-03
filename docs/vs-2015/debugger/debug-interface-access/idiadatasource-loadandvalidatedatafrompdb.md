@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::loadAndValidateDataFromPdb | Документация Майкрософт
+title: 'Идиадатасаурце:: Лоадандвалидатедатафромпдб | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f19a910af45ed70ae74c72441890ecae6c81d2a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198623"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Открывает и проверяет соответствие подписи сведений, предоставленных в PDB-файл программы и подготавливает PDB-файл в качестве источника данных отладки.  
+Открывает и проверяет, совпадает ли файл базы данных программы (PDB) с предоставленными сведениями о сигнатуре, и готовит PDB-файл в качестве источника данных отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,37 +38,37 @@ HRESULT loadAndValidateDataFromPdb ( 
   
 #### <a name="parameters"></a>Параметры  
  `pdbPath`  
- [in] Путь к PDB-файл.  
+ окне Путь к PDB-файлу.  
   
  `pcsig70`  
- [in] Подпись GUID для проверки подписи файла PDB-файл. Файлы только PDB-файл в [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] и более поздней версии имеют подписи GUID.  
+ окне Подпись GUID для проверки на соответствие с подписью PDB-файла. Только PDB-файлы в [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] и более поздних версиях имеют сигнатуры GUID.  
   
  `sig`  
- [in] 32-разрядных подпись для проверки подписи файла PDB-файл.  
+ окне 32-разрядная сигнатура, которую необходимо проверить на соответствие с заданной сигнатурой PDB-файла.  
   
  `age`  
- [in] Значение возраста, чтобы проверить. Возраст необязательно соответствует любому значению известных времени, он используется для определения того, если PDB-файл не синхронизирован с соответствующим файлом .exe.  
+ окне Значение age для проверки. Возраст не обязательно соответствует ни одному известному значению времени, он используется, чтобы определить, не синхронизирован ли PDB-файл с соответствующим exe-файлом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|E_PDB_NOT_FOUND|Не удалось открыть файл или файл имеет недопустимый формат.|  
-|E_PDB_FORMAT|Предпринята попытка получить доступ к файлу с устаревший формат.|  
-|E_PDB_INVALID_SIG|Подпись не совпадает.|  
-|E_PDB_INVALID_AGE|Возраст не совпадает.|  
+|E_PDB_NOT_FOUND|Не удалось открыть файл, или файл имеет недопустимый формат.|  
+|E_PDB_FORMAT|Попытка доступа к файлу с устаревшим форматом.|  
+|E_PDB_INVALID_SIG|Сигнатура не совпадает.|  
+|E_PDB_INVALID_AGE|Возраст не соответствует.|  
 |E_INVALIDARG|Недопустимый параметр.|  
 |E_UNEXPECTED|Источник данных уже подготовлен.|  
   
-## <a name="remarks"></a>Примечания  
- PDB-файл содержит значения, подпись и возраст. Эти значения, реплицируются в файле .exe или .dll, который соответствует PDB-файл. Перед подготовкой источника данных, этот метод проверяет соответствие значений, указанных сигнатура и возраст именованный PDB-файл.  
+## <a name="remarks"></a>Remarks  
+ PDB-файл содержит как сигнатуры, так и возрастные значения. Эти значения реплицируются в exe-или DLL-файл, соответствующий PDB-файлу. Перед тем как подготовить источник данных, этот метод проверяет, совпадают ли сигнатура и возраст именованного PDB-файла с указанными значениями.  
   
- Чтобы загрузить PDB-файл без проверки, используйте [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) метод.  
+ Чтобы загрузить PDB-файл без проверки, используйте метод [идиадатасаурце:: лоаддатафромпдб](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .  
   
- Чтобы получить доступ к процесс загрузки данных (через механизм обратного вызова), используйте [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод.  
+ Чтобы получить доступ к процессу загрузки данных (посредством механизма обратного вызова), используйте метод [идиадатасаурце:: лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
- Чтобы загрузить PDB-файл непосредственно из памяти, используйте [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) метод.  
+ Чтобы загрузить PDB-файл непосредственно из памяти, используйте метод [идиадатасаурце:: лоаддатафромистреам](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .  
   
 ## <a name="example"></a>Пример  
   
@@ -90,8 +90,8 @@ if (FAILED(hr))
   
 ```  
   
-## <a name="see-also"></a>См. также  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+## <a name="see-also"></a>См. также:  
+ [идиадатасаурце](../../debugger/debug-interface-access/idiadatasource.md)   
+ [Идиадатасаурце:: Лоаддатафорексе](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [Идиадатасаурце:: Лоаддатафромпдб](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

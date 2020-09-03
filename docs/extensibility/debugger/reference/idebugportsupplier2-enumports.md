@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::EnumPorts Документы Майкрософт
+title: 'IDebugPortSupplier2:: Енумпортс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 657d42647cd6c9ffdaa410c21522a5ed70807019
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724670"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
-Извлекает список всех портов, поставляемых поставщиком порта.
+Извлекает список всех портов, предоставленных поставщиком портов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,11 +41,11 @@ int EnumPorts( 
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugPorts2,](../../../extensibility/debugger/reference/ienumdebugports2.md) содержащий список поставляемых портов.
+заполняет Возвращает объект [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) , содержащий список предоставляемых портов.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

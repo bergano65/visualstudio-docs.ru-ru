@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852010"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
@@ -73,19 +73,19 @@ ms.locfileid: "75852010"
 
 ## <a name="common-tasks"></a>Общие задачи
 
-|**статья**;|**Задача**|
+|**Раздел**|**Задача**|
 |---------------|--------------|
 |[Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Создание моделей** и Добавление схем.|
 |[Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)|Для изменения модели **Нарисуйте диаграммы** .|
 |[Определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md)|**Создание пакетов** для разделения модели на единицы, над которыми могут работать различные члены группы.|
-|[Создание кода на основе схем классов UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Создайте C# код на основе схем классов** , чтобы начать реализацию.|
+|[Создание кода на основе схем классов UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Создайте код C# на основе схем классов** , чтобы начать реализацию.|
 |[Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Настройка элементов модели** с помощью стереотипов для расширения стандартных элементов модели UML для конкретных целей.|
 |[Связывание элементов модели и рабочих элементов](../modeling/link-model-elements-and-work-items.md)|**Создавайте связи между элементами модели и рабочими элементами** , чтобы контролировать задачи, тестовые случаи, ошибки, требования, проблемы или другие виды работы, связанные с определенными частями модели.|
-|[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|**Сохраните модель и схемы** , чтобы предоставить общий доступ другим пользователям, включая тех, кто не использует [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
+|[Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)|**Сохраните модель и схемы** , чтобы предоставить доступ к ним другим пользователям, включая тех, кто не использует [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] .|
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|**статья**;|**Задача**|
+|**Раздел**|**Задача**|
 |---------------|--------------|
 |[Визуализация кода](../modeling/visualize-code.md)|Создавайте карты кода и схемы слоев, чтобы лучше разобраться в незнакомом коде.|
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|
@@ -96,6 +96,6 @@ ms.locfileid: "75852010"
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
-|**Категория**|**Links**|
+|**Категория**|**Ссылки**|
 |------------------|---------------|
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
