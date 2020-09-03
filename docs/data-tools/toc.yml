@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Разделение наборов данных и адаптеров таблиц TableAdapter по проектам
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Управление
+    - name: Элементы управления
       items:
         - name: Привязка элементов управления к источникам данных
           href: bind-controls-to-data-in-visual-studio.md

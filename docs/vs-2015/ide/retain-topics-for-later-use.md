@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669987"
 ---
 # <a name="retain-topics-for-later-use"></a>Сохранение разделов для дальнейшего использования
@@ -32,5 +32,5 @@ ms.locfileid: "72669987"
 ## <a name="using-the-favorites-tab"></a>Использование вкладки "Избранное"
  На вкладке **Избранное** можно открыть контекстное меню для любой записи и затем переименовать или удалить эту запись либо упорядочить записи по папкам.
 
-## <a name="see-also"></a>См. также
- [Сочетания клавиш (средство просмотра справки)](../ide/shortcut-keys-help-viewer.md)
+## <a name="see-also"></a>См. также:
+ [Сочетания клавиш (окно справки)](../ide/shortcut-keys-help-viewer.md)

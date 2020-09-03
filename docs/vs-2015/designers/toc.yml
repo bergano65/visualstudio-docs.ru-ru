@@ -38,7 +38,7 @@
               items:
                 - name: Сочетания клавиш и клавиши-модификаторы
                   href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-                - name: сочетания клавиш
+                - name: Сочетания клавиш
                   href: keyboard-shortcuts-in-blend.md
                 - name: Клавиши-модификаторы монтажной панели
                   href: artboard-modifier-keys-in-blend.md
@@ -88,13 +88,13 @@
                       items:
                         - name: Динамические свойства класса XElement
                           href: xelement-class-dynamic-properties.md
-                        - name: attribute
+                        - name: Атрибут
                           href: attribute-xelement-dynamic-property.md
                         - name: Элемент
                           href: element-xelement-dynamic-property.md
                         - name: Элементы
                           href: elements-xelement-dynamic-property.md
-                        - name: Descendants
+                        - name: Потомки
                           href: descendants-xelement-dynamic-property.md
                         - name: Значение
                           href: value-xelement-dynamic-property.md

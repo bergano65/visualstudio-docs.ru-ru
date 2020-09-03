@@ -317,7 +317,7 @@
           href: text-template-utility-methods.md
         - name: "Обращение к Visual\_Studio и другим основным приложениям из текстового шаблона"
           href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-        - name: Escape-последовательности
+        - name: Escape-последовательность
           items:
             - name: Использование escape-последовательностей в текстовых шаблонах
               href: using-escape-sequences-in-text-templates.md

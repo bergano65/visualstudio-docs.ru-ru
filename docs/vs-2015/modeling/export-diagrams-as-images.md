@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669675"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В Visual Studio можно сохранять схемы моделирования в форматах только для чтения, чтобы вы могли поделиться ими с заинтересованными лицами, пользователями или членами группы проекта, которые не используют одну и ту же версию Visual Studio.
+В Visual Studio можно сохранять схемы моделирования в форматах только для чтения, чтобы иметь возможность совместно использовать их с заинтересованными лицами, пользователями или членами проектной группы, использующими другие версии Visual Studio.
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -45,9 +45,9 @@ ms.locfileid: "72669675"
 
 2. В списке **имя** выберите **средство записи документов XPS (Майкрософт**) и нажмите кнопку **ОК**.
 
-3. В диалоговом окне **Сохранение файла как** сохраните файл в формате **XPS-документа (\*. XPS)** .
+3. В диалоговом окне **Сохранение файла как** сохраните файл в формате XPS- ** \* документа** .
 
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
+## <a name="net-framework-security"></a>Безопасность .NET Framework
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание моделей для](../modeling/create-models-for-your-app.md) [общих моделей приложений и экспорт схем](../modeling/share-models-and-exporting-diagrams.md)

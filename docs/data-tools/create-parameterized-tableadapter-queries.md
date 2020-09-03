@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282609"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Создание параметризованных запросов адаптера таблицы TableAdapter
@@ -71,7 +71,7 @@ ms.locfileid: "85282609"
 
 5. В **текстовом поле запрос** введите запрос, который принимает параметры.
 
-6. Нажмите кнопку **ОК**.
+6. Щелкните **ОК**.
 
      Элемент управления для ввода параметра и кнопка **Загрузка** добавляются на форму в элемент управления <xref:System.Windows.Forms.ToolStrip>.
 
@@ -98,6 +98,6 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 3. Выберите параметр, допускающий значения NULL, и задайте для свойства **AllowDbNull** значение `true` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

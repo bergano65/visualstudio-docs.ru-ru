@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669692"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Встраивание схемы в форму Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Схему DSL можно внедрить в элемент управления Windows, который отображается в окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Схему DSL можно внедрить в элемент управления Windows, который отображается в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] окне.
 
 ## <a name="embedding-a-diagram"></a>Внедрение схемы
 
@@ -75,7 +75,7 @@ ms.locfileid: "72669692"
 
 #### <a name="updating-the-form-using-store-events"></a>Обновление формы с помощью событий хранилища
 
-1. В конструкторе форм добавьте **ListBox** с именем `listBox1`. Отобразится список элементов модели. Он будет храниться в синчронисм с моделью, использующей *события хранилища*. Дополнительные сведения см. в разделе " [обработчики событий" распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. В конструкторе форм добавьте **ListBox** с именем `listBox1` . Отобразится список элементов модели. Он будет храниться в синчронисм с моделью, использующей *события хранилища*. Дополнительные сведения см. в разделе " [обработчики событий" распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. В файле пользовательского кода Переопределите дополнительные методы для класса DocView:
 
@@ -153,5 +153,5 @@ ms.locfileid: "72669692"
 
      Обратите внимание, что в списке отображается список элементов в модели и они верны после добавления или удаления, а также после операций отмены и повтора.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md) [написание кода для моделирования предметно-ориентированного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

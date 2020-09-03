@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668113"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Практическое руководство. Создание ассоциаций между типами (конструктор классов)
@@ -36,7 +36,7 @@ ms.locfileid: "72668113"
 
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Определение линии связи в конструкторе классов
 
-1. В области "Конструктор классов" панели элементов выберите элемент **Ассоциация**.
+1. В области элементов в разделе конструктор классов выберите **Association (Ассоциация**).
 
 2. Нарисуйте линию между двумя фигурами, которые необходимо связать ассоциацией.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72668113"
 
 2. В окне "Сведения о классе" или в окне "Свойства" введите имя поля для свойства и нажмите клавишу ВВОД.
 
-     Имя обновится в окне **Сведения о классе**, на линии связи, в окне "Свойства" и в коде.
+     Имя обновится в окне **Сведения о классе**, на линии связи, в окне Свойства и коде.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации (конструктор классов)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

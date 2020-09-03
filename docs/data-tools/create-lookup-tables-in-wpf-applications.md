@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282622"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
@@ -81,14 +81,14 @@ ms.locfileid: "85282622"
 
      Visual Studio задает некоторые свойства элемента управления для настройки привязки подстановки. В следующей таблице перечислены свойства, изменяемые Visual Studio. При необходимости эти свойства можно изменить в XAML или в окне " **Свойства** ".
 
-    |Свойство.|Пояснение к параметру|
+    |Свойство|Пояснение к параметру|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Это свойство задает коллекцию или привязку, используемые для получения данных, отображаемых в элементе управления. Visual Studio присваивает этому свойству значение <xref:System.Windows.Data.CollectionViewSource> для родительских данных, которые были перенесены в элемент управления.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Это свойство задает путь к элементу данных, отображаемому в элементе управления. Visual Studio устанавливает это свойство в первый столбец или свойство в родительских данных после первичного ключа, имеющего строковый тип данных.<br /><br /> Если необходимо отобразить другой столбец или свойство в родительских данных, измените это свойство на путь другого свойства.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio привязывает это свойство к столбцу или свойству дочерних данных, которые были перенесены в конструктор. Это внешний ключ к родительским данным.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio задает этому свойству путь к столбцу или свойству дочерних данных, которые являются внешним ключом для родительских данных.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)
