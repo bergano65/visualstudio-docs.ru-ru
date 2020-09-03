@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND Документы Майкрософт
+title: ADDRESS_KIND | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738158"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
-Определяет виды адресов.
+Указывает типы адресов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,39 +58,39 @@ public enum enum_ADDRESS_KIND {
 
 ## <a name="fields"></a>Поля
 `ADDRESS_KIND_NATIVE`\
-Родной адрес, представленный [структурой NATIVE_ADDRESS.](../../../extensibility/debugger/reference/native-address.md)
+Собственный адрес, представленный структурой [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) .
 
 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
-Неуправляемый адрес по `this` `Me` отношению к указателю (в Visual Basic) и представленный [структурой UNMANAGED_ADDRESS_THIS_RELATIVE.](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)
+Неуправляемый адрес относительно `this` `Me` указателя (в Visual Basic), представленный структурой [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) .
 
 `ADDRESS_KIND_UNMANAGED_PHYSICAL`\
-Неуправляемый физический адрес, представленный [структурой UNMANAGED_ADDRESS_PHYSICAL.](../../../extensibility/debugger/reference/unmanaged-address-physical.md)
+Неуправляемый физический адрес, представленный структурой [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) .
 
 `ADDRESS_KIND_METHOD`\
-Метод класса, представленный [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) структурой.
+Метод класса, представленный структурой [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) .
 
 `ADDRESS_KIND_FIELD`\
-Поле класса, представленное [структурой METADATA_ADDRESS_FIELD.](../../../extensibility/debugger/reference/metadata-address-field.md)
+Поле класса, представленное структурой [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) .
 
 `ADDRESS_KIND_LOCAL`\
-Адрес предназначен для локальной переменной и представлен [структурой METADATA_ADDRESS_LOCAL.](../../../extensibility/debugger/reference/metadata-address-local.md)
+Адрес предназначен для локальной переменной и представлен структурой [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) .
 
 `ADDRESS_KIND_PARAM`\
-Параметр метода или функции, представленный [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) структурой.
+Метод или параметр функции, представленный структурой [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) .
 
 `ADDRESS_KIND_ARRAYELEM`\
-Элемент массива, представленный [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) структурой.
+Элемент массива, представленный структурой [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) .
 
 `ADDRESS_KIND_RETVAL`\
-Значение возврата, представленное [структурой METADATA_ADDRESS_RETVAL.](../../../extensibility/debugger/reference/metadata-address-retval.md)
+Возвращаемое значение, представленное структурой [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) .
 
-## <a name="remarks"></a>Примечания
-Метод [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) возвращает [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуру, которая содержит объединение возможных структур, [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуру. Поле `dwKind` `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND` значение и описывает, как интерпретировать поле союза.
+## <a name="remarks"></a>Remarks
+Метод [метода](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) WebMethod возвращает структуру [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) , содержащую объединение возможных структур, [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуру. `dwKind`Поле `DEBUG_ADDRESS_UNION` структуры содержит `ADDRESS_KIND` значение и описывает способ интерпретации поля объединения.
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

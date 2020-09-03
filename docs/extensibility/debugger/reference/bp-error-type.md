@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE Документы Майкрософт
+title: BP_ERROR_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738079"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
-Определяет тип ошибки точки разрыва.
+Указывает тип ошибки точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -62,47 +62,47 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Поля
 `BPET_NONE`\
-Указывает отсутствие ошибки точки разрыва.
+Указывает отсутствие ошибки точки останова.
 
 `BPET_TYPE_WARNING`\
-Укажите ошибку точки разрыва в стиле предупреждения.
+Указывает ошибку точки останова в стиле предупреждения.
 
 `BPET_TYPE_ERROR`\
-Укажите ошибку точки ошибки.
+Указывает ошибку точки останова в стиле ошибки.
 
 `BPET_SEV_HIGH`\
-Указывает на ошибку точки разрыва высокой степени тяжести.
+Указывает ошибку точки останова с высокой степенью серьезности.
 
 `BPET_SEV_GENERAL`\
-Указывает ошибку точки разрыва средней степени тяжести.
+Указывает ошибку точки останова со средним уровнем серьезности.
 
 `BPET_SEV_LOW`\
-Указывает ошибку низкой степени тяжести точки разрыва.
+Указывает ошибку точки останова с низким уровнем серьезности.
 
 `BPET_TYPE_MASK`\
-Указывает ошибку точки разрыва в стиле маски.
+Указывает ошибку точки останова в стиле маски.
 
 `BPET_SEV_MASK`\
-Указывает ошибку точки разрыва в стиле серьезности-маски.
+Задает ошибку точки останова с уровнем серьезности-маска.
 
 `BPET_GENERAL_WARNING`\
-Укажите ошибку точки разрыва в стиле общего предупреждения.
+Указывает ошибку точки останова общего стиля предупреждения.
 
 `BPET_GENERAL_ERROR`\
-Укажите ошибку точки разрыва в стиле общего ошибки.
+Указывает общую ошибку точки останова в стиле ошибки.
 
 `BPET_ALL`\
-Определяет все типы ошибок точки разрыва.
+Указывает все типы ошибок точек останова.
 
-## <a name="remarks"></a>Примечания
-Эти значения могут быть объединены `OR` с бигэром и использоваться для `dwType` члена [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры. Прошел в качестве параметра для метода [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+## <a name="remarks"></a>Remarks
+Эти значения можно комбинировать с помощью побитового `OR` и используемого для `dwType` элемента структуры [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Передается в качестве параметра в метод [енумеррорбреакпоинтс](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
-Тип точки разрыва состоит из типа и серьезности. Это означает, что тип ошибки точки разрыва никогда не является просто типом (например, `BPET_TYPE_ERROR`,) или серьезностью (например,) `BPET_SEV_GENERAL`сам по себе. `BPET_GENERAL_WARNING`и `BPET_GENERAL_ERROR` предоставлять предопределенные значения для общих точек предупреждения и ошибок.
+Тип ошибки точки останова состоит из типа и степени серьезности. Это означает, что тип ошибки точки останова никогда не является просто типом (например, `BPET_TYPE_ERROR` ) или уровнем серьезности (например, `BPET_SEV_GENERAL` ). `BPET_GENERAL_WARNING` и `BPET_GENERAL_ERROR` предоставляют стандартные значения для общих точек останова и предупреждений об ошибках.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

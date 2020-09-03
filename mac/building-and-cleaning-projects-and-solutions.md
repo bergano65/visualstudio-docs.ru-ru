@@ -7,10 +7,10 @@ ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
 ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939099"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Сборка и очистка проектов и решений
@@ -56,6 +56,6 @@ ms.locfileid: "85939099"
 
 * Нажмите клавиши **CMD+SHIFT+RETURN**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание и очистка проектов и решений (Visual Studio в Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

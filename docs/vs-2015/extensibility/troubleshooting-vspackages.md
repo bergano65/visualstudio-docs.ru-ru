@@ -12,10 +12,10 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557969"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
@@ -25,11 +25,11 @@ ms.locfileid: "77557969"
   
 ### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Устранение неполадок в VSPackage, сохраняющем запуск Visual Studio  
   
-- Запуск [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в защищенном режиме.  
+- Запустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в защищенном режиме.  
   
-     Чтобы запустить [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в защищенном режиме, в командной строке введите **devenv. exe/SafeMode**.  
+     Чтобы запустить [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в защищенном режиме, в командной строке введите **devenv.exe/SafeMode**.  
   
-     Во время этого процесса пакеты VSPackage не загружаются, за исключением пакетов VSPackage, которые входят в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Во время этого процесса пакеты VSPackage не загружаются, за исключением пакетов VSPackage, которые входят в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>Устранение неполадок с пакетом VSPackage, который не загружается  
   
@@ -37,7 +37,7 @@ ms.locfileid: "77557969"
   
      Дополнительные сведения см. [в статье экспериментальный экземпляр](../extensibility/the-experimental-instance.md).  
   
-2. Если пакет VSPackage предназначен для запуска в экспериментальном корне реестра, убедитесь, что вы используете экспериментальную версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Если пакет VSPackage предназначен для запуска в экспериментальном корне реестра, убедитесь, что вы используете экспериментальную версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      Чтобы запустить экспериментальную версию, введите в командном окне следующую команду: **devenv/рутсуффикс exp**.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "77557969"
   
      Дополнительные сведения см. в разделе [Регистрация пакетов VSPackage](internals/registering-vspackages.md) и Управление пакетами [VSPackage](../extensibility/managing-vspackages.md).  
   
-4. Откройте окно **вывода** экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], который не может загрузить VSPackage. Сведения о том, почему пакет VSPackage не удается загрузить, может отображаться в этом окне.  
+4. Откройте окно **вывода** экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , который не может загрузить VSPackage. Сведения о том, почему пакет VSPackage не удается загрузить, может отображаться в этом окне.  
   
     > [!NOTE]
     > Если вы запускаете экспериментальную версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE), проверьте окно **вывода** обеих версий.  
@@ -62,13 +62,13 @@ ms.locfileid: "77557969"
   
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Устранение неполадок с командой, которая не отображается или вызывает ошибку при нажатии команды  
   
-1. Объедините новые или измененные команды меню и те, которые уже находятся в интегрированной среде разработки, введя следующую команду в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] командной строке: **devenv/Рутсуффикс exp/Setup**.  
+1. Объедините новые или измененные команды меню и те, которые уже находятся в интегрированной среде разработки, введя в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] командной строке следующую команду: **devenv/рутсуффикс exp/Setup**.  
   
-2. Убедитесь, что [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может найти файл UI. dll для VSPackage.  
+2. Убедитесь, что [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] может найти UI.dll для VSPackage.  
   
     1. Найдите идентификатор CLSID пакета VSPackage в разделе Packages реестра:  
   
-         Хклм\софтваре\микрософт\висуал Studio\\ *\<версии >* \паккажес  
+         \Паккажес Хклм\софтваре\микрософт\висуал Studio \\ *\<version>*  
   
     2. Убедитесь, что путь, указанный в подразделе Сателлитедлл, указан правильно.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "77557969"
   
     1. В меню **Сервис/параметры** перейдите в диалоговое окно **Отладка/символы** .  
   
-    2. Добавьте следующее **расположение файла символов (. pdb)** :  
+    2. Добавьте следующее **расположение файла символов (. pdb)**:  
   
        `https://msdl.microsoft.com/download/symbols`  
   
@@ -115,13 +115,13 @@ ms.locfileid: "77557969"
   
    2. Перейдите на вкладку **ссылки** в диалоговом окне **страницы свойств** и убедитесь, что все пути указаны правильно. Кроме того, можно использовать **Обозреватель объектов** для поиска объектов, на которые имеются ссылки.  
   
-        Для управляемого кода можно использовать [Fuslogvw. exe (средство просмотра журнала привязки сборок)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) для просмотра сведений о неудачных загрузках сборок.  
+        Для управляемого кода можно использовать [Fuslogvw.exe (средство просмотра журналов привязки сборок)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) для просмотра сведений о неудачных загрузках сборок.  
   
-2. Для неуправляемого кода найдите CLSID пакета VSPackage в узле реестра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID:  
+2. Для неуправляемого кода найдите CLSID пакета VSPackage в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] узле реестра CLSID:  
   
-    Хклм\софтваре\микрософт\висуал Studio\\ *\<версии >* \клсид  
+    \Клсид Хклм\софтваре\микрософт\висуал Studio \\ *\<version>*  
   
    Убедитесь, что запись InprocServer32 имеет правильный путь к библиотеке DLL VSPackage.  
   
 ## <a name="see-also"></a>См. также:  
- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+ [VSPackages](../extensibility/internals/vspackages.md)

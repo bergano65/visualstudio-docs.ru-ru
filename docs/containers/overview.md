@@ -7,10 +7,10 @@ ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916564"
 ---
 # <a name="container-tools-in-visual-studio"></a>Средства для контейнеров в Visual Studio
@@ -76,7 +76,7 @@ ms.locfileid: "75916564"
 > [!NOTE]
 > Для проектов .NET Framework (не .NET Core) доступны только контейнеры Windows.
 
-Можно добавить поддержку Docker в существующий проект, выбрав **Добавить** > **Поддержка Docker** в **обозревателе решений**. Для проектов ASP.NET Core команды **Добавить > Поддержка Docker** и **Добавить > Поддержка оркестратора контейнеров** доступны в контекстном меню, открываемом правым щелчком мыши по узлу проекта в  **обозревателе решений**, как показано на следующем снимке экрана:
+Можно добавить поддержку Docker в существующий проект, выбрав **Добавить** > **Поддержка Docker** в **обозревателе решений**. Для проектов ASP.NET Core команды **Добавить > Поддержка Docker** и **Добавить > Поддержка оркестратора контейнеров** доступны в контекстном меню, открываемом правым щелчком мыши по узлу проекта в ** обозревателе решений**, как показано на следующем снимке экрана:
 
 ![Добавление поддержки Docker из меню в Visual Studio](./media/overview/add-docker-support-menu.png)
 
@@ -146,10 +146,10 @@ Visual Studio легко интегрируется с Azure Pipelines для а
 
 Сведения касательно Kubernetes см. в статье о [развертывании приложения из контейнера Docker в Службе Azure Kubernetes](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Чтобы получить дополнительные сведения о реализации служб и использовании средств Visual Studio для работы с контейнерами, ознакомьтесь со следующими статьями:
 
 [Отладка приложений в локальном контейнере Docker](edit-and-refresh.md)
 
-[Deploy an ASP.NET container to a container registry using Visual Studio](hosting-web-apps-in-docker.md) (Развертывание контейнера ASP.NET в реестр контейнеров с использованием Visual Studio)
+[Развертывание контейнера ASP.NET в реестр контейнеров из Visual Studio](hosting-web-apps-in-docker.md)

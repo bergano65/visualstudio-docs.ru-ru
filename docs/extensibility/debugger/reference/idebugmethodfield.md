@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField Документы Майкрософт
+title: Идебугмесодфиелд | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 061035933e57ea4ca8e7857f68ac3d6311bae32c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727061"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
@@ -28,37 +28,37 @@ ms.locfileid: "80727061"
 IDebugMethodField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Поставщик символов реализует этот интерфейс на том же объекте, который реализует интерфейс [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md) Этот интерфейс представляет собой специализацию, которая представляет метод.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Поставщик символов реализует этот интерфейс для того же объекта, который реализует интерфейс [идебугконтаинерфиелд](../../../extensibility/debugger/reference/idebugcontainerfield.md) . Этот интерфейс представляет собой специализацию, представляющую метод.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Используйте [queryInterface,](/cpp/atl/queryinterface) чтобы получить этот интерфейс из интерфейса `FIELD_TYPE_METHOD` [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращается. Кроме того, методы, [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md), [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md), и [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md), все вернуть `IDebugMethodField` интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Используйте [QueryInterface](/cpp/atl/queryinterface) для получения этого интерфейса из интерфейса [идебугконтаинерфиелд](../../../extensibility/debugger/reference/idebugcontainerfield.md) , если метод [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_METHOD` . Кроме того, методы, [жетпропертижеттер](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md), [жетпропертисеттер](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)и [енумконструкторс](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md), возвращают `IDebugMethodField` интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам на интерфейсах [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) этот интерфейс реализует следующие методы:
+ Помимо методов в интерфейсах [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) и [идебугконтаинерфиелд](../../../extensibility/debugger/reference/idebugcontainerfield.md) , этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)|Создает регистратор параметров метода.|
-|[GetThis](../../../extensibility/debugger/reference/idebugmethodfield-getthis.md)|Получает "этот" указатель объекта, содержащего метод.|
-|[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)|Создает регистратор для всех локальных переменных метода.|
-|[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)|Создает регистратор для отдельных локальных переменных метода.|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugmethodfield-iscustomattributedefined.md)|Определяет, был ли определен определенный атрибут.|
-|[EnumStaticLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumstaticlocals.md)|Создает регистратор для статических локальных переменных метода.|
-|[GetGlobalContainer](../../../extensibility/debugger/reference/idebugmethodfield-getglobalcontainer.md)|Получает глобальный контейнер метода.|
-|[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)|Создает регистратор для типа каждого аргумента, необходимого для вызова метода.|
+|[EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)|Создает перечислитель для параметров метода.|
+|[GetThis](../../../extensibility/debugger/reference/idebugmethodfield-getthis.md)|Возвращает указатель "this" объекта, содержащего метод.|
+|[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)|Создает перечислитель для всех локальных переменных метода.|
+|[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)|Создает перечислитель для выбранных локальных переменных метода.|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugmethodfield-iscustomattributedefined.md)|Определяет, определен ли определенный настраиваемый атрибут.|
+|[EnumStaticLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumstaticlocals.md)|Создает перечислитель для статических локальных переменных метода.|
+|[GetGlobalContainer](../../../extensibility/debugger/reference/idebugmethodfield-getglobalcontainer.md)|Возвращает глобальный контейнер метода.|
+|[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)|Создает перечислитель для типа каждого аргумента, необходимого для вызова метода.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Метод может содержать параметры, а также локальные переменные.
 
 ## <a name="requirements"></a>Требования
- Заголовок: sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

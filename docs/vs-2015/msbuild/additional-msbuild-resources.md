@@ -600,10 +600,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445055"
 ---
 # <a name="additional-msbuild-resources"></a>Дополнительные ресурсы MSBuild
@@ -612,7 +612,7 @@ ms.locfileid: "81445055"
 Если вы пытаетесь решить проблему, и вам не удалось найти нужные сведения в документации, можете обратиться к другим ресурсам, таким как статьи базы знаний, сообщество разработчиков или служба технической поддержки.  
   
 ## <a name="knowledge-base-articles"></a>Статьи базы знаний  
- Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Вы можете получить доступ к статьям КБ на веб-сайте [базы знаний.](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)  
+ Вы можете искать сведения о проблемах с продуктами в статьях базы знаний (KB) через Интернет. Не все проблемы снабжены статьями в базе знаний, но обычно ошибки, возникающие у значительного числа пользователей, документируются. Вы можете получить доступ к статьям базы знаний на веб-сайте [Knowledge Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) .  
   
 ## <a name="community-forums"></a>Форумы сообщества  
  Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме. Форум Visual Studio MSBuild доступен на веб сайте [форумов MSDN](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/).  

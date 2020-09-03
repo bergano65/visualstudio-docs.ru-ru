@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 070106dc4db0f5200c1346bbbf8c0b653aa104e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619676"
 ---
 # <a name="codeindex-command"></a>Команда CodeIndex
@@ -40,7 +40,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 #### <a name="parameters"></a>Параметры
 
-|**Аргумент**|**Описание**|
+|**Argument**|**Описание**|
 |------------------|---------------------|
 |`CollectionName`|Задает имя коллекции командных проектов. Если имя содержит пробелы, заключите его в кавычки, например "веб-сайт компании Fabrikam".|
 |`CollectionId`|Задает идентификационный номер коллекции командных проектов.|
@@ -62,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>Примеры
 
 > [!NOTE]
-> Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, логотипы, имена людей, географические названия и события являются вымышленными.  Любые совпадения с реальными именами и названиями случайны.
+> Приведенные здесь примеры предприятий, организаций, товаров, имен доменов, адресов электронной почты, эмблем, лиц, мест и событий являются вымышленными.  Любые совпадения с реальными именами и названиями случайны.
 
  Просмотр состояния и конфигурации индексации кода:
 
@@ -124,5 +124,5 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Управление конфигурацией сервера с помощью](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) [средств командной строки TFSConfig для TFS](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

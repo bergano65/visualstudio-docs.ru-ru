@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586731"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
@@ -118,5 +118,5 @@ ms.locfileid: "82586731"
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Создание моделей для](../modeling/create-models-for-your-app.md) [справочника по API приложений для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

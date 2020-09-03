@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558171"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Мастер публикации (разработка решений Office в Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558171"
 
 - Относительный или абсолютный путь в стандартном формате Windows, например *к:\деплой\мяппликатион* или *\мяппликатион*.
 
-- Путь в формате UNC, например *\\\сервернаме\мяппликатион\\* .
+- Путь в формате UNC, например * \\ \сервернаме\мяппликатион \\ *.
 
-- URL веб-сайта, например `http://www.contoso.com/MyApplication`.
+- URL веб-сайта, например `http://www.contoso.com/MyApplication` .
 
-  По умолчанию расположение публикации *http://localhost/projectname/* , если установлены службы IIS, или каталог publish \, если службы IIS не установлены.
+  По умолчанию используется расположение публикации *http://localhost/projectname/* , если службы IIS установлены, или каталог publish \, если службы IIS не установлены.
 
 > [!NOTE]
-> Если на целевом компьютере установлена ОС Windows Vista, необходимо учитывать дополнительные моменты. Для использования параметра Локальная публикация требуются права администратора на компьютере Windows Vista. Кроме того, расположением по умолчанию всегда является каталог *publish\\* , независимо от того, установлены ли службы IIS.
+> Если на целевом компьютере установлена ОС Windows Vista, необходимо учитывать дополнительные моменты. Для использования параметра Локальная публикация требуются права администратора на компьютере Windows Vista. Кроме того, расположением по умолчанию всегда является каталог *публикации \\ * , независимо от того, установлены ли службы IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Каков путь установки по умолчанию на компьютерах конечных пользователей?
  Путь установки является необязательным. Путь установки можно задать позже при желании. Дополнительные сведения см. в разделе [инструкции. изменение пути установки решения Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
@@ -61,7 +61,7 @@ ms.locfileid: "77558171"
 
  Visual Studio не выполняет запись компакт-диска или DVD-диска. Необходимо скопировать выходные данные на компакт-диск или DVD-диск вручную.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Страница "публикация" в &#40;конструкторе проектов Разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Страница публикации, конструктор проектов &#40;разработка решений Office в Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

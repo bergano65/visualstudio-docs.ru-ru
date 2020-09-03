@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS Документы Майкрософт
+title: BP_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738058"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
-Предоставляет дополнительные флаги, которые могут быть использованы для указания дополнительной информации при настройке точки разрыва.
+Предоставляет необязательные флаги, которые можно использовать для указания дополнительных сведений при задании точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,23 +46,23 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>Поля
 `BP_FLAG_NONE`\
-Указывает отсутствие флага точки разрыва.
+Указывает отсутствие флага точки останова.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Уточняется, что движок отладки (DE) должен отображать точку разрыва с помощью позиции документа. Это применимо только к точкам разрыва, установленным в исходных файлах, ориентированных на сценарий, таких как Active Server Pages (ASP).
+Указывает, что модуль отладки (DE) должен сопоставлять точку останова с позицией документа. Это применимо только к точкам останова, заданным в исходных файлах, ориентированных на скрипт, например Active Server Pages (ASP).
 
 `BP_FLAG_DONT_STOP`\
-Уточняется, что точка разрыва должна быть обработана движком отладки, но что отладка двигателя в конечном счете, не должна останавливаться на достигнутом (т.е. объект события [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не должен быть отправлен). Этот флаг предназначен для использования в основном со следами.
+Указывает, что точка останова должна обрабатываться модулем отладки, но в конечном итоге отладчик не должен останавливаться (то есть объект события [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не должен отправляться). Этот флаг предназначен для использования в основном с точками трассировки.
 
-## <a name="remarks"></a>Примечания
-Используется для `dwFlags` членов [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структур.
+## <a name="remarks"></a>Remarks
+Используется для `dwFlags` элемента структур [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630929"
 ---
 # <a name="when-element-msbuild"></a>Элемент When (MSBuild)
 
 Указывает один из возможных блоков кода, который может выбрать элемент `Choose`.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -65,7 +70,7 @@ ms.locfileid: "77630929"
 |-------------|-----------------|
 |[Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Вычисляет дочерние элементы, чтобы выбрать один раздел кода для выполнения.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Если атрибут `Condition` имеет значение true, дочерние элементы `ItemGroup` и `PropertyGroup` элемента `When` выполняются, а все последующие элементы `When` пропускаются.
 
@@ -120,7 +125,7 @@ ms.locfileid: "77630929"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

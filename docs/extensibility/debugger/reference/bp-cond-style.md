@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE Документы Майкрософт
+title: BP_COND_STYLE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738112"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
-Определяет стиль состояния точки разрыва для ожидающих и связанных моментов.
+Задает стиль условия точки останова для ожидающих и связанных точек останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,21 +46,21 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Поля
 `BP_COND_NONE`\
-Запускает точку разрыва при достигепозиции точки разрыва. Условие точки разрыва не указано.
+Вызывает точку останова, когда достигнута точка точки останова. Условие для точки останова не указано.
 
 `BP_COND_WHEN_TRUE`\
-Запускает точку разрыва только тогда, когда условное `true`выражение, связанное с точкой разрыва, оценивается до .
+Вызывает точку останова только в том случае, если условное выражение, связанное с точкой останова, имеет значение `true` .
 
 `BP_COND_WHEN_CHANGED`\
-Запускает точку разрыва только тогда, когда значение условного выражения, связанного с точкой разрыва, изменилось по сравнению с предыдущей оценкой.
+Вызывает точку останова только в том случае, если значение условного выражения, связанное с точкой останова, изменилось по сравнению с предыдущим вычислением.
 
-## <a name="remarks"></a>Примечания
-Используется для `styleCondition` члена [структуры BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
+## <a name="remarks"></a>Remarks
+Используется для `styleCondition` элемента структуры [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

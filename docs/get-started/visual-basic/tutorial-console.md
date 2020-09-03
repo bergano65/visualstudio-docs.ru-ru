@@ -15,13 +15,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579932"
 ---
-# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Учебник. Начало работы с Visual Basic в Visual Studio
+# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Руководство. Начало работы с Visual Basic в Visual Studio
 
 В этом руководстве по Visual Basic вы будете работать со средой Visual Studio для создания и запуска нескольких разных консольных приложений. Вы также ознакомитесь с некоторыми возможностями [интегрированной среды разработки (IDE) Visual Studio](visual-studio-ide.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "77579932"
 
 ## <a name="create-a-what-is-your-name-application"></a>Создание приложения для запроса имени
 
-Давайте создадим приложение, которое запрашивает имя пользователя, а затем выводит его вместе с датой и временем. Это делается так.
+Давайте создадим приложение, которое запрашивает имя пользователя, а затем выводит его вместе с датой и временем. Вот как это сделать.
 
  ::: moniker range="vs-2017"
 
@@ -268,7 +268,7 @@ Visual Studio — это интегрированный набор средст
 > [!div class="nextstepaction"]
 > [Создание библиотеки .NET Standard с помощью Visual Basic и пакета SDK для .NET Core в Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 * [Пошаговые руководства по Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Справочник по языку Visual Basic](/dotnet/visual-basic/language-reference/index)
