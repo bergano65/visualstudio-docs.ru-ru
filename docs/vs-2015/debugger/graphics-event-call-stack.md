@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192760"
 ---
 # <a name="graphics-event-call-stack"></a>Стек вызовов событий графики
@@ -25,7 +25,7 @@ ms.locfileid: "68192760"
   
  Окно «Стек вызовов событий» выглядит так:  
   
- ![Стек вызовов на событие DrawIndexed. ](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Стек вызовов, предшествующих событию DrawIndexed.](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Основные сведения о стеке вызовов событий графики  
  Стек вызовов событий можно использовать для анализа потока выполнения, который привел к определенному событию Direct3D. Это окно напоминает окно стека вызовов Visual Studio за тем исключением, что вместо вывода текущего стека вызовов активного потока в выполняющемся приложении отображается стек вызовов в том состоянии, которое существовало, когда произошло выбранное событие Direct3D. Из стека вызовов событий можно перейти к месту вызова выбранного события Direct3D, чтобы проверить окружающий код.  
@@ -44,5 +44,5 @@ ms.locfileid: "68192760"
 ### <a name="links-to-graphics-objects"></a>Ссылки на графические объекты  
  Для анализа выбранного события графики могут понадобиться сведения об объектах Direct3D, с которыми оно связано. В окне **Стек вызовов событий графики** есть ссылки на эти сведения.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Пошаговое руководство: Отсутствие объектов вследствие заливки вершин](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)

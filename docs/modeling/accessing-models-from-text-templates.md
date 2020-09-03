@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531473"
 ---
 # <a name="access-models-from-text-templates"></a>Доступ к моделям из текстовых шаблонов
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - Несмотря на то, что язык, на котором написаны фрагменты кода, — это C#, можно создать текст любого типа. Можно также написать код в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , добавив свойство `language="VB"` в `template` директиву.
 
-- Чтобы выполнить отладку шаблона, добавьте `debug="true"` `template` директиву. При возникновении исключения шаблон будет открыт в другом экземпляре Visual Studio. Если вы хотите прервать работу отладчика в определенной точке кода, вставьте оператор`System.Diagnostics.Debugger.Break();`
+- Чтобы выполнить отладку шаблона, добавьте `debug="true"` `template` директиву. При возникновении исключения шаблон будет открыт в другом экземпляре Visual Studio. Если вы хотите прервать работу отладчика в определенной точке кода, вставьте оператор `System.Diagnostics.Debugger.Break();`
 
    Дополнительные сведения см. [в разделе Отладка текстового шаблона T4](../modeling/debugging-a-t4-text-template.md).
 
@@ -95,7 +95,7 @@ Here is a list of elements in the model:
 
    Если ошибка обнаружена, она будет отображаться в окне ошибок, а файл результатов будет содержать сообщение об ошибке.
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>Доступ к нескольким моделям из текстового шаблона
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> Доступ к нескольким моделям из текстового шаблона
 
 > [!NOTE]
 > Этот метод позволяет считывать несколько моделей в одном шаблоне, но не поддерживает ссылки ModelBus. Сведения о чтении моделей, связанных ссылками ModelBus, см. [в разделе использование Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt`вызывает `LoopTemplate.t4` , а затем разделяет получившийся файл в его сегменты. Обратите внимание, что этот шаблон не обязательно должен быть шаблоном моделирования, так как он не считывает модель.
+ `LoopSplitter.tt` вызывает `LoopTemplate.t4` , а затем разделяет получившийся файл в его сегменты. Обратите внимание, что этот шаблон не обязательно должен быть шаблоном моделирования, так как он не считывает модель.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

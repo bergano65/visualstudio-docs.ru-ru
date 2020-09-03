@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d5f86eb40e1401f98a4c66d0b971fb006762cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659693"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Модульное тестирование библиотеки DLL на Visual C++ для приложений Магазина
@@ -25,40 +25,40 @@ ms.locfileid: "72659693"
 
  В этом разделе также создается одно решение Visual Studio и отдельные проекты для модульных тестов и для тестируемой библиотеки DLL. Модульные тесты можно включить непосредственно в проект библиотеки DLL или создать отдельные решения для модульных тестов и для библиотеки DLL. Рекомендации по выбору структуры см. в разделе [Добавление модульных тестов в существующие приложения C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).
 
-## <a name="BKMK_In_this_topic"></a> Содержание раздела
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела
  В этом разделе рассматривается выполнение следующих задач.
 
  [Создание решения и проекта модульного теста](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [Убедитесь в том, что тесты выполняются в обозревателе тестов.](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [Проверка выполнения тестов в обозревателе тестов](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Добавление в решение проекта библиотеки DLL](#BKMK_Add_the_DLL_project_to_the_solution)
+ [Добавление проекта библиотеки DLL в решение](#BKMK_Add_the_DLL_project_to_the_solution)
 
- [Привязка тестового проекта к проекту библиотеки DLL](#BKMK_Couple_the_test_project_to_the_dll_project)
+ [Объединение тестового проекта с DLL-проектом](#BKMK_Couple_the_test_project_to_the_dll_project)
 
- [Итеративное расширение тестов и обеспечение их успешного выполнения](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
+ [Итеративное дополнение тестов и их передача](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
  [Отладка непройденного теста](#BKMK_Debug_a_failing_test)
 
  [Рефакторинг кода без изменения тестов](#BKMK_Refactor_the_code_without_changing_tests)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
 
 1. В меню **Файл** выберите команду **Создать** и пункт **Новый проект**.
 
-2. В диалоговом окне "Новый проект" разверните узел **Установленные**, а затем — узел **Visual C#** и выберите **Магазин Windows**. В списке шаблонов проектов выберите **Библиотека модульных тестов (приложения для Магазина Windows)** .
+2. В диалоговом окне "Новый проект" разверните узел **Установленные**, а затем — узел **Visual C#** и выберите **Магазин Windows**. В списке шаблонов проектов выберите **Библиотека модульных тестов (приложения для Магазина Windows)**.
 
-     ![Создание библиотеки модульных тестов C&#43; &#43;](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
+     ![Создание библиотеки модульных тестов C&#43;&#43; ](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
 
 3. Назовите проект `RooterLibTests`, укажите расположение, назовите решение `RooterLib`, установите флажок **Создать каталог для решения**.
 
-     ![Указание имени и расположения проекта и решения](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Задание решения, имени проекта и расположения](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
 
 4. В новом проекте откройте файл **unittest1.cpp**.
 
-     ![UnitTest1. cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
 
-     Обратите внимание на следующие условия.
+     Обратите внимание на следующее.
 
     - Каждый тест определяется с использованием `TEST_METHOD(YourTestName){...}`.
 
@@ -68,7 +68,7 @@ ms.locfileid: "72659693"
 
          Во время выполнения тестов создается экземпляр каждого тестового класса. Тестовые методы вызываются в неопределенном порядке. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) в библиотеке MSDN.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
 
 1. Добавьте код теста:
 
@@ -87,13 +87,13 @@ ms.locfileid: "72659693"
 
      ![Обозреватель тестов](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Добавление в решение проекта библиотеки DLL
+## <a name="add-the-dll-project-to-the-solution"></a><a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Добавление в решение проекта библиотеки DLL
 
 1. В обозревателе решений выберите имя проекта. В контекстном меню выберите команду **Добавить**, а затем — пункт **Добавить новый проект**.
 
      ![Создание проекта RooterLib](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
 
-2. В диалоговом окне **Добавление нового проекта** выберите **DLL (приложения из Магазина Windows)** .
+2. В диалоговом окне **Добавление нового проекта** выберите ** DLL (приложения из Магазина Windows) **.
 
 3. Добавьте следующий код в файл **RooterLib.h**:
 
@@ -123,13 +123,13 @@ ms.locfileid: "72659693"
 
 4. Добавьте символ ROOTERLIB_EXPORTS в командную строку.
 
-    1. В обозревателе решений выберите проект **RooterLib**, а затем выберите пункт **Свойства** в контекстном меню.
+    1. В обозреватель решений выберите проект **RooterLib** , а затем в контекстном меню выберите пункт **свойства** .
 
          ![Добавление определения символа препроцессора](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
 
     2. В диалоговом окне страницы свойств RooterLib разверните узел **Свойства конфигурации**, затем — узел **C++** и выберите параметр **Препроцессор**.
 
-    3. Выберите пункт **\<Изменить...>** в списке **Определения препроцессора**, а затем добавьте `ROOTERLIB_EXPORTS` в диалоговом окне "Определения препроцессора".
+    3. Выберите пункт **\<Edit...>** в списке **Определения препроцессора**, а затем добавьте `ROOTERLIB_EXPORTS` в диалоговом окне Определения препроцессора.
 
 5. Добавьте минимальные реализации объявленных функций. Откройте файл **RooterLib.cpp** и добавьте следующий код:
 
@@ -147,15 +147,15 @@ ms.locfileid: "72659693"
 
     ```
 
-## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Привязка тестового проекта к проекту библиотеки DLL
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Объединение тестового проекта с DLL-проектом
 
 1. Добавьте RooterLib в проект RooterLibTests.
 
-   1. В обозревателе решений выберите проект **RooterLibTests**, а затем в контекстном меню выберите пункт **Ссылки...** .
+   1. В обозреватель решений выберите проект **проект RooterLibTests** , а затем в контекстном меню выберите **ссылки...** .
 
    2. В диалоговом окне свойств проекта RooterLib разверните узел **Общие свойства** и выберите узел **.NET Framework и ссылки**.
 
-   3. Выберите команду **Добавить новую ссылку...** .
+   3. Выберите **Добавить новую ссылку....**
 
    4. В диалоговом окне **Добавление ссылки** разверните узел **Решение** и выберите **Проекты**. Затем выберите элемент **RouterLib**.
 
@@ -194,13 +194,13 @@ ms.locfileid: "72659693"
 
     Новый тест появится в обозревателе тестов в узле **Незапускавшиеся тесты**.
 
-5. В разделе "Обозреватель тестов" выберите **Запустить все**.
+5. В обозревателе тестов выберите **выполнить все**.
 
-    ![Базовый тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![Основной тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
 
 1. Добавьте новый тест.
 
@@ -224,11 +224,11 @@ ms.locfileid: "72659693"
     >
     >  При изменении пользователями требований отключите тесты, которые больше не являются корректными. Создайте новые тесты и сделайте так, чтобы они работали по одному в инкрементном режиме.
 
-2. В разделе "Обозреватель тестов" выберите **Запустить все**.
+2. В обозревателе тестов выберите **выполнить все**.
 
 3. Тест не пройден.
 
-     ![Сбой сбой](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Сбой теста RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Убедитесь в том, что каждый тест завершается сбоем, сразу после того, как вы написали его. Это поможет избежать распространенной ошибки, заключающейся в написании теста, который никогда не завершается сбоем.
@@ -254,14 +254,14 @@ ms.locfileid: "72659693"
 
     ```
 
-5. Выполните сборку решения, а затем в обозревателе тестов щелкните **Запустить все**.
+5. Выполните сборку решения, а затем в обозревателе тестов выберите **запустить все**.
 
      Оба теста будут пройдены успешно.
 
 > [!TIP]
 > Разрабатывайте код, добавляя тесты по одному. После каждой итерации проверяйте, все ли тесты завершаются успешно.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Отладка непройденного теста
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Отладка непройденного теста
 
 1. Добавьте еще один тест в файл **unittest1.cpp**:
 
@@ -295,11 +295,11 @@ ms.locfileid: "72659693"
 
    ```
 
-2. В разделе "Обозреватель тестов" выберите **Запустить все**.
+2. В обозревателе тестов выберите **выполнить все**.
 
     Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.
 
-    ![Сбой сбой тестов negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![Сбой тестов NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.
 
@@ -325,13 +325,13 @@ ms.locfileid: "72659693"
 
        ```
 
-   1. В обозревателе тестов выберите **Запустить все**, чтобы протестировать исправленный метод и убедиться в том, что не была добавлена регрессия.
+   1. В обозревателе тестов выберите **запустить все** , чтобы проверить исправленный метод и убедиться, что вы еще не предоставили регрессию.
 
    Теперь все тесты проходят успешно.
 
    ![Все тесты пройдены](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Рефакторинг кода без изменения тестов
+## <a name="refactor-the-code-without-changing-tests"></a><a name="BKMK_Refactor_the_code_without_changing_tests"></a> Рефакторинг кода без изменения тестов
 
 1. Упростите основной расчет функции `SquareRoot`:
 

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69548012"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Пошаговое руководство. Создание первой надстройки VSTO для Excel
@@ -29,7 +29,7 @@ ms.locfileid: "69548012"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - Создание проекта надстройки VSTO Excel для Excel.
 
@@ -42,7 +42,7 @@ ms.locfileid: "69548012"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -52,9 +52,9 @@ ms.locfileid: "69548012"
 
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Создание проекта надстройки VSTO Excel в Visual Studio
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+2. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
 
 3. В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем узел **Office/SharePoint**.
 
@@ -66,12 +66,12 @@ ms.locfileid: "69548012"
 
 7. Нажмите кнопку **ОК**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **FirstExcelAddIn** и открывает файл кода ThisAddIn в редакторе.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **проект firstexceladdin** и открывает файл кода ThisAddIn в редакторе.
 
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Написание кода для добавления текста в сохраненную книгу
  Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель Excel для вставки стандартного текста в первую строку активного листа. Активным является лист, открытый в момент сохранения книги пользователем. По умолчанию файл кода ThisAddIn содержит следующий созданный код:
 
-- Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Excel. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.
+- Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Excel. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Оставшаяся часть `ThisAddIn` класса определяется в скрытом файле кода, который не следует изменять.
 
 - Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Excel загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения используемых надбавкой ресурсов при ее выгрузке. Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
@@ -117,24 +117,24 @@ ms.locfileid: "69548012"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Теперь, когда вы создали базовую надстройку VSTO для Excel, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах.
 
 - Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md).
 
-- Задачи программирования, характерные для надстроек VSTO для Excel: [Решения Excel](../vsto/excel-solutions.md).
+- Задачи программирования, характерные для надстроек VSTO для Excel: [решения Excel](../vsto/excel-solutions.md).
 
 - Использование объектной модели Excel: [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md).
 
 - Настройка пользовательского интерфейса Excel, например добавление настраиваемой вкладки на ленту или создание собственной настраиваемой области задач: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).
 
-- Создание и отладка надстроек VSTO для Excel: [Создание решений Office](../vsto/building-office-solutions.md).
+- Построение и отладка надстроек VSTO для Excel. [Создание решений Office](../vsto/building-office-solutions.md).
 
-- Развертывание надстроек VSTO для Excel: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).
+- Развертывание надстроек VSTO для Excel: [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также
-- [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Решения Excel](../vsto/excel-solutions.md)
+## <a name="see-also"></a>См. также раздел
+- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [решения Excel](../vsto/excel-solutions.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545838"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Как изменить размер элементов управления ListObject
@@ -37,12 +37,12 @@ ms.locfileid: "85545838"
 
   Дополнительные сведения об элементах <xref:Microsoft.Office.Tools.Excel.ListObject> управления см. в разделе [элемент управления ListObject](../vsto/listobject-control.md).
 
-## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a>Изменение размера элемента управления ListObject во время разработки
+## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a> Изменение размера элемента управления ListObject во время разработки
  Чтобы изменить размер списка, можно щелкнуть и перетащить один из маркеров размера или переопределить его размер в диалоговом окне **изменения размеров списка** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Изменение размеров списка в диалоговом окне изменения размера списка
 
-1. Щелкните в любом месте <xref:Microsoft.Office.Tools.Excel.ListObject> таблицы. Откроется вкладка Конструктор **инструментов таблиц**  >  **Design** на ленте.
+1. Щелкните в любом месте  <xref:Microsoft.Office.Tools.Excel.ListObject> таблицы. Откроется вкладка Конструктор **инструментов таблиц**  >  **Design** на ленте.
 
 2. В разделе Свойства щелкните **изменить размер таблицы**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "85545838"
 
 4. Нажмите кнопку **ОК**.
 
-## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Изменение размера элемента управления ListObject во время выполнения в проекте уровня документа
+## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Изменение размера элемента управления ListObject во время выполнения в проекте уровня документа
  Вы можете изменить размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> во время выполнения с помощью метода <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> . Этот метод нельзя использовать для перемещения элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> на новое место в листе. Заголовки должны оставаться в той же строке, а измененный элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> должен совмещаться с первоначальным объектом-списком. Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с измененным размером должен содержать строку заголовка и хотя бы одну строку данных.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Изменение размеров объекта-списка программными средствами
@@ -67,7 +67,7 @@ ms.locfileid: "85545838"
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Изменение размера элемента ListObject во время выполнения в проекте надстройки VSTO
+## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Изменение размера элемента ListObject во время выполнения в проекте надстройки VSTO
  Размер элемента управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно изменять во время выполнения на любом открытом листе. Дополнительные сведения о добавлении <xref:Microsoft.Office.Tools.Excel.ListObject> элемента управления на лист с помощью надстройки VSTO см. в разделе [как добавить элементы управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Изменение размеров объекта-списка программными средствами

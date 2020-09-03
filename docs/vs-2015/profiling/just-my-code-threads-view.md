@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85126a7816fa583db94bb93659a7d4cbb29078ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154772"
 ---
 # <a name="just-my-code-threads-view"></a>Только мой код (представление "Потоки")
@@ -29,6 +29,6 @@ ms.locfileid: "68154772"
   
  В некоторых случаях выбор этого параметра может отфильтровать блокирующий вызов. Если вам нужны полные данные стека вызовов, чтобы выполнить определение, отмените выбор этого параметра.  
   
-## <a name="see-also"></a>См. также  
- [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)   
+## <a name="see-also"></a>См. также:  
+ [Представление "потоки"](../profiling/threads-view-parallel-performance.md)   
  [Процент снижения шума](../profiling/noise-reduction-percentage.md)

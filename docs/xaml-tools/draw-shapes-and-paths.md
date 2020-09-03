@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350827"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
@@ -104,7 +104,7 @@ ms.locfileid: "85350827"
 |![Две фигуры до объединения](../designers/media/b1_1.png)|Две фигуры до объединения|
 |![Объединение](../designers/media/b1_2.png)|Объединение|
 |![Divide](../designers/media/b1_3.png)|Divide|
-|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Пересечение](../designers/media/b1_4.png)|Пересечение|
 |![Исключение наложения](../designers/media/b1_5.png)|Исключение перекрытия|
 |![Subtract](../designers/media/b1_6.png)|Subtract|
 

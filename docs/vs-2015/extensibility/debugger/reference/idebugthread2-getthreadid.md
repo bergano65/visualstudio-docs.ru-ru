@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId | Документация Майкрософт
+title: 'IDebugThread2:: Жетсреадид | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3e9df6746cb2b1828b3020e473f2de19799b582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153020"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает идентификатор потока системы.  
+Возвращает идентификатор системного потока.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,16 +40,16 @@ int GetThreadId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pdwThreadId`  
- [out] Возвращает идентификатор потока системы.  
+ заполняет Возвращает идентификатор системного потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Идентификатор потока используется для идентификации потока используется всеми потоками процесса.  
+## <a name="remarks"></a>Remarks  
+ Идентификатор потока используется для идентификации потока между всеми другими потоками в процессе.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для простого `CProgram` объекта, реализующего интерфейс [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .  
   
 ```cpp#  
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
@@ -58,5 +58,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

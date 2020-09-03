@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bb2e53102221194dc829df162c44bbf04378b28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154088"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Общеизвестные метаданные элементов MSBuild
@@ -37,19 +37,19 @@ ms.locfileid: "68154088"
   
 |Метаданные элементов|Описание|  
 |-------------------|-----------------|  
-|%(FullPath)|Содержит полный путь к элементу. Например:<br /><br /> `C:\MyProject\Source\Program.cs`|  
-|%(RootDir)|Содержит корневой каталог элемента. Например:<br /><br /> `C:\`|  
-|%(Filename)|Содержит имя файла элемента без расширения. Например:<br /><br /> `Program`|  
-|%(Extension)|Содержит расширение имени файла элемента. Например:<br /><br /> `.cs`|  
-|%(RelativeDir)|Содержит путь, указанный в атрибуте `Include`, до последней обратной косой черты (\\). Например:<br /><br /> `Source\`|  
-|%(Directory)|Содержит каталог элемента без корневого каталога. Например:<br /><br /> `MyProject\Source\`|  
-|%(RecursiveDir)|Если атрибут `Include` содержит подстановочный знак \*\*, эти метаданные определяют путь, который используется вместо подстановочного знака. Дополнительные сведения о подстановочных знаках см. в статье [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Если папка *C:\MySolution\MyProject\Source\\*  содержит файл Program.cs, а файл проекта содержит такой элемент:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> то параметр `%(MyItem.RecursiveDir)` принимает значение *MySolution\MyProject\Source\\* .|  
-|%(Identity)|Элемент, заданный в атрибуте `Include`. Например:<br /><br /> `Source\Program.cs`|  
-|%(ModifiedTime)|Содержит метку времени, соответствующую времени последнего изменения элемента. Например:<br /><br /> `2004-07-01 00:21:31.5073316`|  
-|%(CreatedTime)|Содержит метку времени, соответствующую времени создания элемента. Например:<br /><br /> `2004-06-25 09:26:45.8237425`|  
+|%(FullPath)|Содержит полный путь к элементу. Пример:<br /><br /> `C:\MyProject\Source\Program.cs`|  
+|%(RootDir)|Содержит корневой каталог элемента. Пример:<br /><br /> `C:\`|  
+|%(Filename)|Содержит имя файла элемента без расширения. Пример:<br /><br /> `Program`|  
+|%(Extension)|Содержит расширение имени файла элемента. Пример:<br /><br /> `.cs`|  
+|%(RelativeDir)|Содержит путь, указанный в атрибуте `Include`, до последней обратной косой черты (\\). Пример:<br /><br /> `Source\`|  
+|%(Directory)|Содержит каталог элемента без корневого каталога. Пример:<br /><br /> `MyProject\Source\`|  
+|%(RecursiveDir)|Если атрибут `Include` содержит подстановочный знак \*\*, эти метаданные определяют путь, который используется вместо подстановочного знака. Дополнительные сведения об подстановочных знаках см. в разделе [как выбрать файлы для сборки](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Если папка *к:\мисолутион\мипрожект\саурце \\ * содержит файл Program.cs, а файл проекта содержит этот элемент:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> то параметр `%(MyItem.RecursiveDir)` принимает значение *MySolution\MyProject\Source\\* .|  
+|%(Identity)|Элемент, заданный в атрибуте `Include`. Пример:<br /><br /> `Source\Program.cs`|  
+|%(ModifiedTime)|Содержит метку времени, соответствующую времени последнего изменения элемента. Пример:<br /><br /> `2004-07-01 00:21:31.5073316`|  
+|%(CreatedTime)|Содержит метку времени, соответствующую времени создания элемента. Пример:<br /><br /> `2004-06-25 09:26:45.8237425`|  
 |%(AccessedTime)|Содержит метку времени, соответствующую времени последнего доступа к элементу.<br /><br /> `2004-08-14 16:52:36.3168743`|  
   
-## <a name="see-also"></a>См. также  
- [Элементы](../msbuild/msbuild-items.md)   
- [Пакетная обработка](../msbuild/msbuild-batching.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>См. также:  
+ [Файлов](../msbuild/msbuild-items.md)   
+ [Пакетной обработки](../msbuild/msbuild-batching.md)   
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)

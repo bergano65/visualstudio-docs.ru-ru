@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184020"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Использование скриптов Windows PowerShell для публикации в средах разработки и тестирования
@@ -24,7 +24,7 @@ ms.locfileid: "84184020"
 
 С помощью этих сценариев вы можете подготавливать временные пользовательские версии сайта. Эти версии также называют средами разработки и тестирования. Например, на виртуальной машине Azure или в промежуточном слоте веб-сайта можно настроить определенную версию веб-сайта и использовать ее для проведения различных тестов, воспроизведения ошибки, проверки исправления ошибки или исследования предлагаемого изменения. Вы также можете создать специальную среду для демонстраций или презентаций. Создав сценарий публикации проекта, вы можете с его помощью воссоздавать идентичные среды или использовать его в своей сборке веб-приложения для создания отдельной среды тестирования.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Пакет Azure SDK, начиная с версии 2.3. Ознакомьтесь со страницей [скачиваемых компонентов Visual Studio](https://visualstudio.microsoft.com/downloads/). (Пакет Azure SDK не нужен для создания сценариев для веб-проектов. Он предназначен для веб-проектов, а не веб-ролей облачных служб.)
 * Azure PowerShell, начиная с версии 0.7.4. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/overview).
@@ -252,7 +252,7 @@ Visual Studio создает папку на уровне решения с им
         #Write a function to build and package your web application
     ```
 
-    Для создания веб-приложения используйте файл MsBuild.exe. Справочные сведения см. в справочнике по командной строке MSBuild по адресу:[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    Для создания веб-приложения используйте файл MsBuild.exe. Справочные сведения см. в справочнике по командной строке MSBuild по адресу: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -308,7 +308,7 @@ return $WebDeployPackage
     Чтобы автоматизировать тестирование приложения, добавьте код в `Test-WebApplication`. Обязательно раскомментируйте строки в файле **Publish-WebApplication.ps1** , в которых вызываются эти функции. Если реализация не указана, проект можно вручную собрать в Visual Studio и опубликовать его в Azure с помощью сценария публикации.
 
 ## <a name="publishing-function-summary"></a>Обзор функций публикации
-Чтобы получить справку по функциям, выполните в командной строке Windows PowerShell команду `Get-Help function-name`. Справочная информация содержит описание параметров и примеры их использования. Этот же текст справки также находится в исходных файлах сценария **азуревебапппублишмодуле. PSM1** и **Publish-WebApplication. ps1**. Сценарий и справка переведены на язык интерфейса Visual Studio.
+Чтобы получить справку по функциям, выполните в командной строке Windows PowerShell команду `Get-Help function-name`. Справочная информация содержит описание параметров и примеры их использования. Этот же текст справки также находится в исходных файлах сценария **азуревебапппублишмодуле. PSM1** и **Publish-WebApplication.ps1**. Сценарий и справка переведены на язык интерфейса Visual Studio.
 
 **AzureWebAppPublishModule**
 

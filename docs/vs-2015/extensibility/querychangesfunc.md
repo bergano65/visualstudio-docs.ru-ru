@@ -1,5 +1,5 @@
 ---
-title: QUERYCHANGESFUNC | Документация Майкрософт
+title: КУЕРИЧАНЖЕСФУНК | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193851"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Это функция обратного вызова, используемые [SccQueryChanges](../extensibility/sccquerychanges-function.md) операцию, чтобы перечислить коллекцию имен файлов и определить состояние каждого файла.  
+Это функция обратного вызова, используемая операцией [скккуеричанжес](../extensibility/sccquerychanges-function.md) для перечисления коллекции имен файлов и определения состояния каждого файла.  
   
- `SccQueryChanges` Функции приводится список файлов и указатель на `QUERYCHANGESFUNC` обратного вызова. Подключаемый модуль системы управления версиями перечисляет для данного списка и предоставляет статус (с помощью этой функции обратного вызова) для каждого файла в списке.  
+ `SccQueryChanges`Функции предоставляется список файлов и указатель на `QUERYCHANGESFUNC` обратный вызов. Подключаемый модуль системы управления версиями перечисляет данные по заданному списку и предоставляет состояние (через этот обратный вызов) для каждого файла в списке.  
   
 ## <a name="signature"></a>Подпись  
   
@@ -37,23 +37,23 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ```  
   
 ## <a name="parameters"></a>Параметры  
- pvCallerData  
- [in] `pvCallerData` Параметр, передаваемый в вызывающем объекте (IDE) [SccQueryChanges](../extensibility/sccquerychanges-function.md). Подключаемый модуль системы управления версиями следует делать никаких предположений относительно содержимого этого значения.  
+ пвкаллердата  
+ окне `pvCallerData` Параметр, передаваемый вызывающей стороной (интегрированной средой разработки) в [скккуеричанжес](../extensibility/sccquerychanges-function.md). Подключаемый модуль системы управления версиями не должен делать никаких предположений о содержимом этого значения.  
   
- pChangesData  
- [in] Указатель на [QUERYCHANGESDATA структуры](#LinkQUERYCHANGESDATA) структуры, описывающие изменения в файл.  
+ пчанжесдата  
+ окне Указатель на структуру [структуры куеричанжесдата](#LinkQUERYCHANGESDATA) , описывающую изменения в файле.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
+ Интегрированная среда разработки возвращает соответствующий код ошибки:  
   
 |Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
-|SCC_I_OPERATIONCANCELED|Остановите обработку.|  
-|SCC_E_xxx|Любой соответствующее сообщение об ошибке SCC следует остановить обработку.|  
+|SCC_I_OPERATIONCANCELED|Останавливает обработку.|  
+|SCC_E_xxx|Любая соответствующая ошибка SCC должна прерывать обработку.|  
   
-## <a name="LinkQUERYCHANGESDATA"></a> Структура QUERYCHANGESDATA  
- Структуры, переданной в для каждого файла выглядит следующим образом:  
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> Структура КУЕРИЧАНЖЕСДАТА  
+ Структура, передаваемая для каждого файла, выглядит следующим образом:  
   
 ```cpp#  
 struct QUERYCHANGESDATA_A  
@@ -75,32 +75,32 @@ struct QUERYCHANGESDATA_W
 };  
 ```  
   
- dwSize  
+ двсизе  
  Размер этой структуры (в байтах).  
   
- lpFileName  
+ лпфиленаме  
  Исходное имя файла для этого элемента.  
   
- dwChangeType  
+ двчанжетипе  
  Код, указывающий состояние файла:  
   
 |Код|Описание|  
 |----------|-----------------|  
-|`SCC_CHANGE_UNKNOWN`|Не удается определить, какие изменения были внесены.|  
-|`SCC_CHANGE_UNCHANGED`|Имя этого файла не изменены.|  
-|`SCC_CHANGE_DIFFERENT`|Файл с идентификатором, но тем же именем существует в базе данных.|  
-|`SCC_CHANGE_NONEXISTENT`|Файл не существует в базе данных или локально.|  
+|`SCC_CHANGE_UNKNOWN`|Не удается определить, что изменилось.|  
+|`SCC_CHANGE_UNCHANGED`|Для этого файла не изменяются имена.|  
+|`SCC_CHANGE_DIFFERENT`|Файл с другим удостоверением, но в базе данных существует такое же имя.|  
+|`SCC_CHANGE_NONEXISTENT`|Файл не существует ни в базе данных, ни на локальном компьютере.|  
 |`SCC_CHANGE_DATABASE_DELETED`|Файл удален в базе данных.|  
-|`SCC_CHANGE_LOCAL_DELETED`|Файл удален локально, но файл по-прежнему существует в базе данных. Если это не может быть определено, возвращается `SCC_CHANGE_DATABASE_ADDED`.|  
+|`SCC_CHANGE_LOCAL_DELETED`|Файл удален локально, но файл по-прежнему существует в базе данных. Если это невозможно определить, возвращается `SCC_CHANGE_DATABASE_ADDED` .|  
 |`SCC_CHANGE_DATABASE_ADDED`|Файл добавлен в базу данных, но не существует локально.|  
-|`SCC_CHANGE_LOCAL_ADDED`|Файл не существует в базе данных и представляет собой новый локальный файл.|  
-|`SCC_CHANGE_RENAMED_TO`|Файл переименован или перемещен в базе данных как `lpLatestName`.|  
-|`SCC_CHANGE_RENAMED_FROM`|Файл переименован или перемещен в базе данных на `lpLatestName`; Если это слишком дорого отслеживать, возвращает другой флаг, например `SCC_CHANGE_DATABASE_ADDED`.|  
+|`SCC_CHANGE_LOCAL_ADDED`|Файл не существует в базе данных и является новым локальным файлом.|  
+|`SCC_CHANGE_RENAMED_TO`|Файл переименован или перемещен в базе данных как `lpLatestName` .|  
+|`SCC_CHANGE_RENAMED_FROM`|Файл переименован или перемещен в базу данных из `lpLatestName` ; если это слишком дорого для трассировки, возвращается другой флаг, например `SCC_CHANGE_DATABASE_ADDED` .|  
   
- lpLatestName  
+ лплатестнаме  
  Текущее имя файла для этого элемента.  
   
-## <a name="see-also"></a>См. также  
- [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
- [Коды ошибок](../extensibility/error-codes.md)
+## <a name="see-also"></a>См. также:  
+ [Функции обратного вызова, реализованные интегрированной средой разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [скккуеричанжес](../extensibility/sccquerychanges-function.md)   
+ [Код ошибки](../extensibility/error-codes.md)

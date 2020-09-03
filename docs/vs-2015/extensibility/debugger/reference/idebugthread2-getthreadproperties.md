@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties | Документация Майкрософт
+title: 'IDebugThread2:: Жетсреадпропертиес | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd32c32d2ccdb041ea34ce8d9d7ca72f2035db94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153009"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает свойства, описывающие этот поток.  
+Возвращает свойства, описывающие этот поток.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,19 +42,19 @@ int GetThreadProperties ( 
   
 #### <a name="parameters"></a>Параметры  
  `dwFields`  
- [in] Сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисления, определяющее, какие поля `ptp` должны быть заполнены.  
+ окне Сочетание флагов из перечисления [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) , которое определяет, какие поля должны `ptp` быть заполнены.  
   
  `ptp`  
- [in, out] Объект [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры, который заполняется свойства потока.  
+ [вход, выход] Структура [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md) , которая заполняется свойствами потока.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Сведения, возвращаемые из этого метода обычно отображается в **потоков** окно отладки.  
+## <a name="remarks"></a>Remarks  
+ Сведения, возвращаемые этим методом, обычно отображаются в окне отладки **потоков** .  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CProgram` объект, реализующий [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для простого `CProgram` объекта, реализующего интерфейс [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .  
   
 ```cpp#  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  
@@ -92,7 +92,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

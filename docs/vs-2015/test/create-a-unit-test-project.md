@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfc85b0616fdf8f30732f2409a1a15040967dbb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660641"
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
@@ -35,20 +35,20 @@ ms.locfileid: "72660641"
 
     1. Выберите проект в обозревателе решений.
 
-    2. В меню **Проект** выберите **Добавить ссылку...** .
+    2. В меню **Проект** выберите **Добавить ссылку...**.
 
     3. В диалоговом окне диспетчера ссылок откройте узел **Решение** и выберите **Проекты**. Выберите имя проекта кода и закройте диалоговое окно.
 
 5. Если код, который требуется протестировать, находится в другом месте, сведения о добавлении ссылок см. в разделе [Управление ссылками в проекте](../ide/managing-references-in-a-project.md).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  **Создание модульных тестов**
 
  См. один из следующих разделов:
 
 - [Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 
-- [Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+- [Написание модульных тестов для C/C++ с помощью платформы модульного тестирования Майкрософт для C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
 
   **Выполнение модульных тестов**
 

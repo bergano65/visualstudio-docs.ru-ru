@@ -16,10 +16,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9dc5ad44a73f517b91562209abfab8b0b3e8d4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660523"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
@@ -27,7 +27,7 @@ ms.locfileid: "72660523"
 
 Используя платформу модульного тестирования Майкрософт для управляемого кода, можно настроить метод модульного теста для получения значений из источника данных, которые впоследствии будут использоваться в методе теста. Этот метод последовательно выполняется для каждой строки в источнике данных, что облегчает тестирование разнообразных входных данных с помощью одного метода.
 
- В этом разделе содержатся следующие подразделы.
+ Этот раздел состоит из следующих подразделов.
 
 - [Тестируемый метод](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)
 
@@ -53,7 +53,7 @@ ms.locfileid: "72660523"
 
 4. Используйте свойство индексатора <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> для получения значений, используемых в тесте.
 
-## <a name="BKMK_The_method_under_test"></a> Тестируемый метод
+## <a name="the-method-under-test"></a><a name="BKMK_The_method_under_test"></a> Тестируемый метод
  Например, допустим, что были созданы следующие объекты:
 
 1. решение с именем `MyBank`, которое принимает и обрабатывает транзакции для различных типов счетов;
@@ -80,16 +80,16 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="BKMK_Creating_a_data_source"></a> Создание источника данных
+## <a name="creating-a-data-source"></a><a name="BKMK_Creating_a_data_source"></a> Создание источника данных
  Чтобы проверить метод `AddIntegers`, создадим источник данных, определяющий диапазон значений для параметров и ожидаемую возвращаемую сумму. В нашем примере создадим базу данных SQL Compact с именем `MathsData` и таблицу с именем `AddIntegersData`, которая содержит следующие имена столбцов и значений:
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-----------------|------------------|---------|
 |0|1|1|
 |1|1|2|
-|2|-3|-1|
+|2|–3|-1|
 
-## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Добавление TestContext в тестовый класс
+## <a name="adding-a-testcontext-to-the-test-class"></a><a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Добавление TestContext в тестовый класс
  Платформа модульного тестирования создает объект `TestContext` для хранения информации из источника данных для теста, управляемого данными. Затем платформа присваивает этому объекту значение свойства `TestContext`, которое мы создаем.
 
 ```
@@ -103,9 +103,9 @@ public TestContext TestContext
 
 ```
 
- В методе теста получить доступ к данным можно через свойство индексатора `DataRow` `TestContext`.
+ В методе теста получить доступ к данным можно через свойство индексатора `DataRow``TestContext`.
 
-## <a name="BKMK_Writing_the_test_method"></a> Написание метода теста
+## <a name="writing-the-test-method"></a><a name="BKMK_Writing_the_test_method"></a> Написание метода теста
  Метод теста для `AddIntegers` достаточно прост. Для каждой строки в источнике данных вызываем `AddIntegers` со значениями столбцов **FirstNumber** и **SecondNumber** в качестве параметров и сверяем возвращаемое значение со значением столбца **Sum**:
 
 ```
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Обратите внимание, что метод `Assert` содержит сообщение, которое отображает значения `x` и `y` итерации, в которой произошел сбой. По умолчанию утвержденные значения `expected` и `actual` уже содержатся в сведениях неудачного теста.
 
-### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Определение DataSourceAttribute
+### <a name="specifying-the-datasourceattribute"></a><a name="BKMK_Specifying_the_DataSourceAttribute"></a> Указание DataSourceAttribute
  Атрибут `DataSource` задает строку подключения для источника данных и имя таблицы, которая используется в методе теста. Точные сведения в строке подключения отличаются в зависимости от типа используемого источника данных. В этом примере используется база данных SqlServerCe.
 
 ```
@@ -146,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Конструктор с одним параметром использует информацию о подключении, хранящуюся в файле app.config решения. В файле конфигурации XML-элемент с именем *dataSourceSettingsName* содержит в себе информацию о подключении.
 
- Использование файла app.config позволяет менять расположение источника данных и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла app.config см. в разделе [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Использование файла app.config позволяет менять расположение источника данных, и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла app.config см. в статье [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 ```
 [DataSource(connectionString, tableName)]
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]
 ```
 
-### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Использование TestContext.DataRow для доступа к данным
+### <a name="using-testcontextdatarow-to-access-the-data"></a><a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Использование TestContext. DataRow для доступа к данным
  Для доступа к данным в таблице `AddIntegersData` используйте индексатор `TestContext.DataRow`. `DataRow` является объектом <xref:System.Data.DataRow>, поэтому значения столбца извлекаются по индексу или имени столбца. Так как значения возвращаются в виде объектов, необходимо преобразовать их в соответствующий тип.
 
 ```
@@ -173,8 +173,8 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ```
 
-## <a name="BKMK_Running_the_test_and_viewing_results"></a> Выполнение теста и просмотр результатов
- Завершив написание метода теста, выполните сборку тестового проекта. Метод теста приводится в окне обозревателя тестов в группе **Незапускавшиеся тесты**. При запуске, написании и повторном запуске тестов в обозревателе тестов результаты отображаются в группах **Неудачные тесты**, **Пройденные тесты** и **Незапускавшиеся тесты**. Можно выбрать **Запустить все**, чтобы запустить все тесты, или **Запустить**, чтобы выбрать подмножество тестов для выполнения.
+## <a name="running-the-test-and-viewing-results"></a><a name="BKMK_Running_the_test_and_viewing_results"></a> Выполнение теста и просмотр результатов
+ Завершив написание метода теста, выполните сборку тестового проекта. Метод теста приводится в окне обозревателя тестов в группе **Незапускавшиеся тесты**. При запуске, написании и повторном запуске тестов в обозревателе тестов результаты отображаются в группах **Неудачные тесты**, **Пройденные тесты** и **Незапускавшиеся тесты**. Чтобы выполнить все тесты, выберите команду **запустить все** , а затем выберите **выполнить...** , чтобы выбрать подмножество тестов для запуска.
 
  Панель результатов теста в верхней части обозревателя обновляется по мере выполнения тестов. По завершении тестового запуска область становится зеленой, если все тесты пройдены, или красной, если какой-либо из тестов не был пройден успешно. Сводка тестового запуска приводится в области сведений в нижней части окна обозревателя тестов. Выберите тест, чтобы просмотреть детальную информацию по данному тесту в нижней панели.
 
@@ -182,7 +182,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
  После исправления тестируемого метода и повторного выполнения теста панель результатов станет зеленой и метод теста переместится в группу **Пройденные тесты**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetPortNotify Документы Майкрософт
+title: 'IDebugDefaultPort2:: Жетпортнотифи | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 670dd128e6962c1e1d12f81eea03f9759fa56621
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732406"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
@@ -41,14 +41,14 @@ int GetPortNotify(
 
 ## <a name="parameters"></a>Параметры
 `ppPortNotify`\
-(ваут) Объект [IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md)
+заполняет Объект [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Обычно `QueryInterface` метод вызывается на объект, реализующий интерфейс [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) для получения интерфейса [IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md) Однако существуют обстоятельства, при которых желаемый интерфейс реализуется на другом объекте. Этот метод скрывает эти обстоятельства `IDebugPortNotify2` и возвращает интерфейс от наиболее подходящего объекта.
+## <a name="remarks"></a>Remarks
+ Как правило, `QueryInterface` метод вызывается для объекта, реализующего интерфейс [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , чтобы получить интерфейс [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) . Однако существуют обстоятельства, в которых требуемый интерфейс реализуется на другом объекте. Этот метод скрывает эти обстоятельства и возвращает `IDebugPortNotify2` интерфейс из наиболее подходящего объекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

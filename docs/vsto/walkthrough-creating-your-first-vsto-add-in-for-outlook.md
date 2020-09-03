@@ -16,20 +16,20 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69547972"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Пошаговое руководство. Создание первой надстройки VSTO для Outlook
-  В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Outlook. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какой элемент Outlook открыт. Дополнительные сведения см. в статье [о &#40;разработке решений Office&#41;VSTO](../vsto/office-solutions-development-overview-vsto.md).
+  В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Outlook. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какой элемент Outlook открыт. Дополнительные сведения см. в статье [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - создание проекта надстройки VSTO для Outlook;
 
@@ -42,7 +42,7 @@ ms.locfileid: "69547972"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -52,9 +52,9 @@ ms.locfileid: "69547972"
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Создание проекта Outlook в Visual Studio
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+2. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
 
 3. В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем узел **Office/SharePoint**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "69547972"
 ## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Написание кода, добавляющего текст в каждое новое сообщение электронной почты
  Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель Outlook для добавления текста к каждому новому почтовому сообщению. По умолчанию файл кода ThisAddIn содержит следующий созданный код:
 
-- Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Outlook. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.
+- Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Outlook. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Оставшаяся часть `ThisAddIn` класса определяется в скрытом файле кода, который не следует изменять.
 
 - Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Outlook загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
@@ -82,7 +82,7 @@ ms.locfileid: "69547972"
     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]
 
-2. Замените метод `ThisAddIn_Startup` следующим кодом. Этот код присоединяет обработчик событий к <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .
+2. Замените метод `ThisAddIn_Startup` приведенным ниже кодом. Этот код присоединяет обработчик событий к <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .
 
     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]
@@ -124,7 +124,7 @@ ms.locfileid: "69547972"
 
 1. В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Теперь, когда вы создали базовую надстройку VSTO для Outlook, изучите более подробную информацию о разработке надстроек VSTO в следующих разделах.
 
 - Общие задачи программирования, которые можно выполнять с помощью надстроек VSTO для Outlook. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
@@ -137,7 +137,7 @@ ms.locfileid: "69547972"
 
 - Развертывание надстроек VSTO для Outlook. Дополнительные сведения см. в разделе [развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
 - [Решения Outlook](../vsto/outlook-solutions.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)

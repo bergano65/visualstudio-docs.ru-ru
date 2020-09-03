@@ -1,5 +1,5 @@
 ---
-title: Опубликовать в Службе приложений Azure
+title: Публикация в службу приложений Azure
 ms.date: 01/17/2019
 helpviewer_keywords:
 - deployment, website
@@ -13,23 +13,23 @@ ms.topic: how-to
 ms.workload:
 - azure
 ms.openlocfilehash: 42f455c824697e0909c990932611bb440a23a2af
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950450"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Публикация веб-приложения в службу приложений Azure с помощью Visual Studio для Mac
 
 Вы можете использовать средство публикации для публикации приложений ASP.NET Core в службу приложений Azure.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
 - [Visual Studio 2017 для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017), установленный с поддержкой ASP.NET Core.
 - Подписка Azure. Если у вас еще нет подписки, [подпишитесь на бесплатную версию](https://azure.microsoft.com/free/dotnet/), которая включает кредит в размере 200 USD на 30 дней и 12 месяцев доступа к популярным бесплатным службам.
 - Проект ASP.NET Core. Если у вас еще нет проекта, вы можете [создать его](/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
-## <a name="publish-to-azure-app-service"></a>Опубликовать в Службе приложений Azure
+## <a name="publish-to-azure-app-service"></a>Публикация в службу приложений Azure
 
  1. На панели решений щелкните проект правой кнопкой мыши и выберите пункт **Опубликовать**.
 

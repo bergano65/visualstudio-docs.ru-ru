@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545812"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Как настроить сведения о конфигурации для решения Office
@@ -43,7 +43,7 @@ ms.locfileid: "85545812"
 
    Нет особых рекомендаций по использованию файлов конфигурации с проектами Office.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Схема файла конфигурации для .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

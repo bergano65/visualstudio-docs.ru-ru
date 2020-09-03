@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184436"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Элемент &lt;trustInfo&gt; (приложение ClickOnce)
@@ -142,7 +142,7 @@ ms.locfileid: "84184436"
 
 - `Level`
 
-   Обязательный. Указывает уровень безопасности, запрошенный приложением. Доступны следующие значения:
+   Обязательный. Указывает уровень безопасности, запрошенный приложением. Возможны следующие значения:
 
    `asInvoker`: дополнительные разрешения не запрашиваются. Для этого уровня не требуются дополнительные запросы о доверии.
 
@@ -156,7 +156,7 @@ ms.locfileid: "84184436"
 
    Необязательный элемент. Указывает, требуется ли приложению доступ к защищенным элементам пользовательского интерфейса. Доступные значения: `true` или `false`; значение по умолчанию — false. Только для подписанных приложений требуется значение true.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
  Если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запрашивает больше разрешений, чем клиентский компьютер предоставит по умолчанию, диспетчер доверия среды CLR спросит пользователя, следует ли предоставить приложению повышенный уровень доверия. Если ответ — "нет", приложение не будет запущено; в противном случае оно будет запущено с запрошенными разрешениями.
 
  Все разрешения, запрошенные через `defaultAssemblyRequest` и `assemblyRequest` , будут предоставлены без вывода запросов пользователям, если манифест развертывания содержит действительную лицензию доверия.
@@ -267,6 +267,6 @@ ms.locfileid: "84184436"
 </trustInfo>
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)
 - [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

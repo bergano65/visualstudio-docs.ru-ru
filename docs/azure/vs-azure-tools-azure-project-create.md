@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
 ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280379"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Создание проекта облачной службы в Visual Studio
@@ -36,7 +36,7 @@ Visual Studio предоставляет шаблон проекта, котор
 
 1. Введите имя проекта, его расположение и имя решения.
 
-1. Нажмите кнопку **ОК**.
+1. Щелкните **ОК**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. На начальном экране выберите **Создать проект**.

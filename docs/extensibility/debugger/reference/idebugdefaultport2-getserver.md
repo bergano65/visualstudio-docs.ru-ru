@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetServer Документы Майкрософт
+title: 'IDebugDefaultPort2:: Server | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3dbe6d813b85865b0fdbc20296473684203a3f1e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732381"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
-Этот метод получает интерфейс на сервер, на который находится этот порт.
+Этот метод получает интерфейс к серверу, на котором включен этот порт.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetServer(
 
 ## <a name="parameters"></a>Параметры
 `ppServer`\
-(ваут) Возвращает объект, реализующий интерфейс [IDebugCoreServer3.](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+заполняет Возвращает объект, реализующий интерфейс [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) реализован Visual Studio и представляет сервер, на который расположен порт.
+## <a name="remarks"></a>Remarks
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) реализуется в Visual Studio и представляет сервер, на котором расположен порт.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

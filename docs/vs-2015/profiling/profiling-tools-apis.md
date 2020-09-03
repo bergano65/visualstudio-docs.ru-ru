@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871588"
 ---
 # <a name="profiling-tools-apis"></a>Интерфейсы API средств профилирования
@@ -21,8 +21,8 @@ ms.locfileid: "68871588"
 
 Вы можете вставить управляемые или собственные методы интерфейсов API средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], чтобы управлять сбором данных во время выполнения профилирования. В этом разделе описываются методы интерфейсов API и способы их использования.
 
-## <a name="in-this-section"></a>В этом разделе
- [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)\
+## <a name="in-this-section"></a>в этом разделе
+ [Справочник по API профилировщика Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)\
  Описывает методы средств профилирования C++.
 
  [Profiler](/previous-versions/ms242704(v=vs.140))\
@@ -31,8 +31,8 @@ ms.locfileid: "68871588"
  [Пошаговое руководство. Использование API-интерфейсов профилировщика](../profiling/walkthrough-using-profiler-apis.md)\
  Узнайте, как использовать методы средств профилирования .NET в этом полном примере.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Управление сбором данных](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Обозреватель производительности](../profiling/performance-explorer.md)

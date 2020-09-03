@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660596"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Настройка анализа покрытия кода
@@ -55,7 +55,7 @@ ms.locfileid: "72660596"
 
    ![Меню параметров тестирования с пользовательским файлом параметров](../test/media/codecoverage-settingsfile.png "CodeCoverage — settingsFile")
 
-   Другие аспекты модульных тестов можно настроить в том же RUNSETTINGS-файле. Для получения дополнительной информации см. [Unit Test Your Code](../test/unit-test-your-code.md).
+   Другие аспекты модульных тестов можно настроить в том же RUNSETTINGS-файле. Дополнительные сведения см. в статье [Модульное тестирование кода](../test/unit-test-your-code.md).
 
 ### <a name="specifying-symbol-search-paths"></a>Указание путей поиска символов
  Для покрытия кода необходимо наличие символов (PDB-файлов) в сборках. В случае сборок, созданных в вашем решении, файлы символов обычно предоставляются вместе с двоичными файлами, и покрытие кода работает автоматически. Однако в некоторых случаях может потребоваться включить сборки, на которые указывают ссылки, в анализ покрытия кода. В таких случаях PDB-файлы могут находиться далеко от двоичных файлов, однако путь поиска символов можно указать в RUNSETTINGS-файле.
@@ -101,7 +101,7 @@ ms.locfileid: "72660596"
 ### <a name="regular-expressions"></a>Регулярные выражения
  Узлы включения и исключения используют регулярные выражения. Дополнительные сведения см. в разделе [Using Regular Expressions in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md) (Использование регулярных выражений в Visual Studio). Регулярные выражения не равнозначны подстановочным знакам. В частности:
 
-1. **\.\\** * соответствует строке любых символов
+1. **\.\\*** соответствует строке любых символов
 
 2. **\\.** соответствует точке (".")
 
@@ -187,14 +187,14 @@ ms.locfileid: "72660596"
 
      В меню **Пуск** последовательно выберите **Все программы**, **Microsoft Visual Studio**, **Инструменты Visual Studio**, **Командная строка разработчика**.
 
-2. Выполните следующий файл.
+2. Выполните:
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
 
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>Настройка параметров запуска в определении сборки
  Можно получить данные о покрытии кода из командной сборки.
 
- ![Указание runsettings в определении сборки](../test/media/codecoverage-buildrunsettings.png "CodeCoverage — Буилдрунсеттингс")
+ ![Задание параметров запуска в определении построения](../test/media/codecoverage-buildrunsettings.png "CodeCoverage — Буилдрунсеттингс")
 
 1. Убедитесь, что RUNSETTINGS-файл возвращен.
 
@@ -208,7 +208,7 @@ ms.locfileid: "72660596"
 
    Результаты отображаются в сводном разделе отчета о сборке.
 
-## <a name="sample"></a> Пример RUNSETTINGS-файла
+## <a name="sample-runsettings-file"></a><a name="sample"></a> Файл Sample. runsettings
  Скопируйте этот код и измените его в соответствии с собственными требованиями. Это RUNSETTINGS-файл по умолчанию.
 
  (Другие варианты применения RUNSETTINGS-файла см. в разделе [Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
@@ -325,5 +325,5 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Использование покрытия кода для определения объема протестированного](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) кода [модульного теста](../test/unit-test-your-code.md)

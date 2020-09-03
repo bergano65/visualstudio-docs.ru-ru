@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545851"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Как отобразить вкладку "Разработчик" на ленте
@@ -66,5 +66,5 @@ ms.locfileid: "85545851"
 
 5. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **Параметры** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
