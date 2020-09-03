@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 858ae1a265b577da8ad151d2cadde641a42f36ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669832"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Развертывание решений на доменных языках
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете установить доменный язык на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] уже должны быть установлены на целевом компьютере.
+Вы можете установить доменный язык на своем компьютере или на других компьютерах. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] уже должен быть установлен на конечном компьютере.
 
 - [Развертывание доменного языка с использование MSI и VSIX](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
 

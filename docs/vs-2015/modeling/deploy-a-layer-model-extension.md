@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669865"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
@@ -29,9 +29,9 @@ ms.locfileid: "72669865"
 
 #### <a name="to-install-the-extension"></a>Установка расширения
 
-1. В проекте, содержащем файл **source. VSIX. manifest**, откройте **bin \\ \\** * в проводнике.
+1. В проекте, содержащем файл **source. VSIX. manifest**, откройте **bin \\ \\ *** в проводнике.
 
-2. Скопируйте файл **\*. VSIX** на компьютер, на котором нужно установить расширение.
+2. Скопируйте ** \* VSIX** файл на компьютер, на котором необходимо установить расширение.
 
 3. На конечном компьютере дважды щелкните VSIX-файл в проводнике.
 
@@ -44,11 +44,11 @@ ms.locfileid: "72669865"
 2. Щелкните имя расширения и нажмите кнопку **Удалить**.
 
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Установка расширения на сервере Team Foundation Build
- Как правило, на серверах [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] не установлена среда Visual Studio, поэтому установить VSIX двойным щелчком мыши невозможно. Установка [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.
+ [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] на серверах обычно не установлен Visual Studio, поэтому нельзя установить VSIX, дважды щелкнув его. Установка [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Установка расширения слоев на сервере [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>Установка расширения слоев на сервере [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
 
-1. Скопируйте **VSIX** файлы с компьютера разработчика на компьютер [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+1. Скопируйте **VSIX** файлы с компьютера разработчика на [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] компьютер.
 
      Поместите VSIX-файл в одно из указанных ниже мест.
 
@@ -62,10 +62,10 @@ ms.locfileid: "72669865"
 
     - Если сервер [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] настроен на выполнение в интерактивном режиме от имени определенного пользователя, установить расширение можно только для этого пользователя:
 
-         %Локалаппдата%\микрософт\висуалстудио \\ [версия] \Екстенсионс\микрософт
+         %Локалаппдата%\микрософт\висуалстудио \\ [версия] \екстенсионс\микрософт
 
         > [!NOTE]
-        > % LocalAppData% обычно *DriveName* *: Users*аппдаталокал.
+        > % LocalAppData% обычно *DriveName**: Users*аппдаталокал.
 
 2. Разверните каждый VSIX-файл в папке в том же местоположении.
 

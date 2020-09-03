@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b8b0683024e2881f76bb6c54d9420d351fced08a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668729"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды Devenv
@@ -34,7 +34,7 @@ ms.locfileid: "72668729"
 Команда Devenv позволяет задавать из командной строки различные параметры для интегрированной среды разработки (IDE), а также для сборки, отладки и развертывания проектов. Используйте эти параметры для запуска IDE из файла скрипта или из BAT-файла, например скрипта сборки программы в ночное время, либо для запуска IDE в особой конфигурации.
 
 > [!NOTE]
-> Для задач, связанных со сборкой, теперь рекомендуется использовать MSBuild вместо devenv. Дополнительные сведения см. в [справочнике по командной строке](../../msbuild/msbuild-command-line-reference.md).
+> Для задач, связанных со сборкой, теперь рекомендуется использовать MSBuild вместо devenv. Дополнительные сведения см. в разделе [Справочник по командной строке](../../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Для использования параметров [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) и [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) нужно запустить devenv от имени администратора.
@@ -68,7 +68,7 @@ ms.locfileid: "72668729"
 ## <a name="devenv-switches"></a>Параметры команды Devenv
  Используйте перечисленные ниже параметры командной строки для отображения интегрированной среды разработки и выполнения описанных задач.
 
-|Параметр командной строки|ОПИСАНИЕ|
+|Параметр командной строки|Описание|
 |-------------------------|-----------------|
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Запускает среду IDE и выполняет указанную команду.|
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Загружает исполняемый файл [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] под управлением отладчика. Этот параметр недоступен для исполняемых файлов [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] и [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Дополнительные сведения см. в разделе [Автоматический запуск процесса в отладчике](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
@@ -76,30 +76,30 @@ ms.locfileid: "72668729"
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и записывает все действия в файл журнала.|
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) или `/r`|Компилирует и запускает указанное решение.|
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Компилирует и выполняет указанное решение, свертывая окно IDE при выполнении решения и закрывая IDE после завершения выполнения.|
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Инициирует использование в IDE переменных среды PATH, INCLUDE и LIB для компиляции на [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] вместо параметров, указанных в диалоговом окне **Параметры** в разделе "Каталоги VC++" параметров **проектов**. Дополнительные сведения см. в разделе [Установка переменных пути и среды при построении из командной строки](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|
+|[/Useenv. (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Инициирует использование в IDE переменных среды PATH, INCLUDE и LIB для компиляции на [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] вместо параметров, указанных в диалоговом окне **Параметры** в разделе "Каталоги VC++" параметров **проектов**. Дополнительные сведения см. [в разделе Задание переменных пути и среды для сборок из командной строки](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4) .|
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Открывает указанные файлы в запущенном экземпляре этого приложения. Если нет запущенных экземпляров, то запускается новый экземпляр с упрощенной структурой окна.|
-|[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Запускает экземпляр среды IDE Visual Studio без загрузки указанной надстройки.|
+|[/Ресетаддин (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Запускает экземпляр среды IDE Visual Studio без загрузки указанной надстройки.|
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в безопасном режиме и загружает только среду и службы по умолчанию, а также прилагаемые версии сторонних пакетов.|
 |[/ResetSkipPkgs (devenv.exe)](../../ide/reference/resetskippkgs-devenv-exe.md)|Удаляет все теги SkipLoading, добавленные в пакеты VSPackage пользователями, желающими исключить загрузку проблемных пакетов VSPackage.|
 |[/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md)|Заставляет Visual Studio выполнить слияние метаданных ресурсов, описывающих меню, панели инструментов и группы команд, из всех доступных пакетов VSPackage.|
 
  Используйте перечисленные ниже параметры командной строки для выполнения описанных задач. Эти параметры командной строки не отображают интегрированную среду разработки.
 
-|Параметр командной строки|ОПИСАНИЕ|
+|Параметр командной строки|Описание|
 |-------------------------|-----------------|
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Отображает справку по параметрам devenv в **окне командной строки**.<br /><br /> **Devenv /?**|
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Выполняет сборку указанного решения или проекта согласно конфигурации заданного решения.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Удаляет все файлы, созданные командой сборки, не затрагивая исходные файлы.<br /><br /> **Devenv myproj.csproj /clean**|
 |[/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)|Выполняет сборку решения, а также файлов, необходимых для развертывания, согласно конфигурации решений.<br /><br /> **Devenv myproj.csproj /deploy**|
 |[/Diff](../../ide/reference/diff.md)|Сравнение двух файлов.  Принимает четыре параметра: SourceFile, TargetFile, SourceDisplayName (необязательно), TargetDisplayName (необязательно).|
-|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Регистрирует шаблоны проектов или элементов, которые находятся в папке *\<каталог_установки_Visual_Studio>* \Common7\IDE\ProjectTemplates или *\<каталог_установки_Visual_Studio>* \Common7\IDE\ItemTemplates, чтобы они были доступны в диалоговых окнах **Создание проекта** и **Добавление нового элемента**.<br /><br /> **Devenv /InstallVSTemplates**|
+|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Регистрирует шаблоны проектов или элементов, расположенные в *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates или *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates, чтобы они могли быть доступны через диалоговые окна **Новый проект** и **Добавить новый элемент** .<br /><br /> **Devenv /InstallVSTemplates**|
 |[/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)|Позволяет указать файл для приема ошибок во время сборки.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
 |[/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|Проект, который требуется собрать, очистить или развернуть. Этот параметр можно использовать, только если указан параметр /build, /rebuild, /clean или /deploy.|
 |[/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)|Задает конфигурацию проекта, которую требуется собрать или развернуть. Этот параметр можно использовать, только если указан параметр /project.|
 |[/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)|Выполняет очистку, а затем сборку указанного решения или проекта согласно конфигурации заданного решения.|
 |[/ResetSettings (devenv.exe)](../../ide/reference/resetsettings-devenv-exe.md)|Восстанавливает параметры Visual Studio по умолчанию. При необходимости выполняет сброс параметров в соответствии с указанным файлом VSSETTINGS.|
-|[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Предписывает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] выполнить слияние пакетов [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в системе и проверить наличие изменений в кэше MEF.|
+|[/Упдатеконфигуратион (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Предписывает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] выполнить слияние пакетов [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в системе и проверить наличие изменений в кэше MEF.|
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Обновляет указанный файл решения и все его файлы проектов либо указанный файл проекта до текущих форматов [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] для этих файлов.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)

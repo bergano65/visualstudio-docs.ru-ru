@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Документация Майкрософт
+title: 'Ипропертипроксеесиде:: Ресолвеассемблиреф | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47c397746a82247a8cb1ee329d56004d013486de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199492"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет расположение ссылки указанной управляемой сборки.  
+Определяет расположение указанной ссылки на управляемую сборку.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,27 +48,27 @@ int ResolveAssemblyRef(
   
 #### <a name="parameters"></a>Параметры  
  `assemName`  
- [in] Имя сборки для решения.  
+ окне Имя сборки для разрешения.  
   
  `assemBytes`  
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанный со ссылкой.  
+ заполняет Возвращает объект [иидатастораже](../../../extensibility/debugger/reference/ieedatastorage.md) , содержащий байты сборки, связанные со ссылкой.  
   
  `assemPdb`  
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить данные, связанные с этой ссылкой.  
+ заполняет Возвращает `IEEDataStorage` объект, содержащий данные хранилища символов, связанные с этой ссылкой.  
   
  `assemLocation`  
- [out] Возвращает путь данной ссылки.  
+ заполняет Возвращает расположение пути для этой ссылки.  
   
  `alr`  
- [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение этой ссылки сборки.  
+ заполняет Возвращает значение из перечисления [ассемблилокресолутион](../../../extensibility/debugger/reference/assemblylocresolution.md) , указывающее расположение сборки этой ссылки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Обычно этот метод не реализован вычислителем пользовательское выражение.  
+## <a name="remarks"></a>Remarks  
+ Этот метод обычно не реализуется с помощью пользовательского средства оценки выражений.  
   
-## <a name="see-also"></a>См. также  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
+## <a name="see-also"></a>См. также:  
+ [ипропертипроксеесиде](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
+ [иидатастораже](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

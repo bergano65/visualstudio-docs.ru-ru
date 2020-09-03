@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc49b096bc22a7f95ee1a95e7cbd0b1f2f8603cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669438"
 ---
-# <a name="xml-editor"></a>XML-редактор
+# <a name="xml-editor"></a>Редактор XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Редактор XML построен на основе [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio Text Editor и включает дополнительную поддержку языков на базе XML. Редактор XML обладает следующими возможностями.
@@ -54,7 +54,7 @@ ms.locfileid: "72669438"
 
 - Обозреватель XML-схем.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Проверка XML-документа](../xml-tools/xml-document-validation.md) Описывает функции проверки синтаксиса и проверки подлинности.
 
  [Функции IntelliSense редактора XML](../xml-tools/xml-editor-intellisense-features.md) Описание функциональных возможностей IntelliSense в редакторе.
@@ -67,10 +67,10 @@ ms.locfileid: "72669438"
 
  [Компоненты редактора XML](../xml-tools/xml-editor-components.md) Описывает компоненты пользовательского интерфейса редактора XML.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Редактирование текста, кода и разметки](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439) Предоставляет сведения о текстовом редакторе.
 
  [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Предоставляет сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

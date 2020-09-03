@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668780"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных
@@ -58,7 +58,7 @@ ms.locfileid: "72668780"
 
 - Создание формы для отображения данных в новом элементе управления.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения данного пошагового руководства требуется:
 
 - Доступ к примеру базы данных "Борей".
@@ -83,7 +83,7 @@ ms.locfileid: "72668780"
 
 1. В меню **Проект** выберите пункт **Добавить пользовательский элемент управления**.
 
-2. Введите `LookupBox` в поле **имя** и нажмите кнопку **Добавить**.
+2. Введите `LookupBox` в поле **имя** и нажмите кнопку **добавить**.
 
      Элемент управления **LookupBox** добавляется в **Обозреватель решений** и открывается в конструкторе.
 
@@ -132,7 +132,7 @@ ms.locfileid: "72668780"
 
 8. Выберите таблицы `Customers` и `Orders` и нажмите кнопку **Готово**.
 
-     Объект **NorthwindDataSet** добавляется в проект, и таблицы `Customers` и `Orders` отображаются в окне **Источники данных**.
+     В проект добавляется **NorthwindDataSet** , а `Customers` `Orders` таблицы и отображаются в окне **Источники данных** .
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Задание столбца CustomerID таблицы Orders для использования элемента управления LookupBox
  Вы можете задать создаваемый элемент управления в окне **Источники данных** перед перетаскиванием элементов на форму.
@@ -160,7 +160,7 @@ ms.locfileid: "72668780"
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Создание элементов управления с привязкой к данным на форме Windows Forms
 
-- Перетащите узел **заказы** из окна **Источники данных** на форму Windows Forms и убедитесь, что элемент управления **LookupBox** используется для вывода данных в столбец `CustomerID`.
+- Перетащите узел **заказы** из окна **Источники данных** на форму Windows Forms и убедитесь, что элемент управления **LookupBox** используется для вывода данных в `CustomerID` столбце.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Привязка элемента управления для поиска CompanyName из таблицы Customers
 
@@ -178,5 +178,5 @@ ms.locfileid: "72668780"
 
 - Перейдите по нескольким записям и проверьте, что `CompanyName` отображается в элементе управления `LookupBox`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

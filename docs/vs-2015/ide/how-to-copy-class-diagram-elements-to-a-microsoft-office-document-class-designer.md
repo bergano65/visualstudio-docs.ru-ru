@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a44b551e5b2a0b145040dc13cb0e624134f56cf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668172"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)
@@ -42,5 +42,5 @@ ms.locfileid: "72668172"
 
    Можно также выбрать команду **Копировать** вместо **Копировать изображение**. Команда **Копировать** копирует изображение как обычный точечный рисунок. Команда **Копировать изображение** копирует изображение как векторное изображение, что лучше подходит для большинства приложений Office.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как печатать схемы классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md) [как экспортировать схемы классов как изображения (конструктор классов)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf7fe3ef493caa3b77e3e25e8cfa7873fb51eeb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669401"
 ---
 # <a name="xml-schema-designer-tasks"></a>Задачи конструктора XML-схемы.
@@ -21,7 +21,7 @@ ms.locfileid: "72669401"
 
 Данный раздел описывает способы выполнения типичных задач с использованием панели инструментов конструктора XML-схемы.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Как создать и изменить файл XSD-схемы](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md) Описывает, как создать новый файл схемы XML (XSD), а затем добавить содержимое в XSD-файл.
 
  [Как создать XML-документ на основе схемы XSD](../xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema.md) Описывает создание XML-документа на основе схемы XSD.
@@ -44,5 +44,5 @@ ms.locfileid: "72669401"
 
  [Образцы XSD-файлов](../xml-tools/sample-xsd-files.md) Содержит листинги кода для примеров XSD-документов, которые используются в примерах задач.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Конструктор схемы XML](../xml-tools/xml-schema-designer.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669712"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Редактирование схем последовательностей UML с помощью API UML
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Дополнительные сведения см. [в разделе Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="getting-the-context"></a>Получение контекста
- При редактировании взаимодействия как части команды или обработчика жестов на схеме последовательностей вы можете получить ссылку на контекст. Пример:
+ При редактировании взаимодействия как части команды или обработчика жестов на схеме последовательностей вы можете получить ссылку на контекст. Например:
 
 ```
 [SequenceDesignerExtension]
@@ -124,7 +124,7 @@ public void Execute (IMenuCommand command)
 
   Это особенно важно при вставке новых элементов или перемещении существующих элементов. Они не будут находиться в правильном положении на схеме, пока вы не выполните одну из этих операций. Одну из этих операций необходимо вызывать лишь однократно в конце последовательности изменений.
 
-  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Пример:
+  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Например:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>Создание сообщений
- Чтобы создать сообщение, необходимо определить точки вставки в исходном и целевом жизненных циклах. Пример:
+ Чтобы создать сообщение, необходимо определить точки вставки в исходном и целевом жизненных циклах. Например:
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,
@@ -246,11 +246,11 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 
  Большинство проблем вызвано несогласованностью точек вставки, что приводит к наложению новых сообщений или фрагментов на другие. Симптомы могут заключаться в том, что изменение не выполняется или выдается исключение. Исключение не может выдаваться до выполнения операции `UpdateShapePositions()` или `Layout()`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Microsoft. VisualStudio. UML. Interactions](/previous-versions/dd493373(v=vs.140))
 - [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)
 - [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 - [Определение пользовательского элемента для панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md)
 - [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)
-- [Программирование с UML API](../modeling/programming-with-the-uml-api.md)
+- [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

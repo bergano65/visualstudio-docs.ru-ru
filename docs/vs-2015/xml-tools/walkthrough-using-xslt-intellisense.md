@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b65f2279270be0d5baef16d6d06e35a7fb0b854
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669544"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Пошаговое руководство. Использование XSLT IntelliSense
@@ -162,5 +162,5 @@ ms.locfileid: "72669544"
 
      Обратите внимание, что в атрибутах `stylesheet-prefix` и `result-prefix` элемента `xsl:namespace-alias` появится список префиксов.
 
-## <a name="see-also"></a>См. также раздел
- [Возможности IntelliSense редактора XML](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>См. также:
+ [Функции IntelliSense редактора XML](../xml-tools/xml-editor-intellisense-features.md)

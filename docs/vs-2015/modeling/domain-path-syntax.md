@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669742"
 ---
 # <a name="domain-path-syntax"></a>Синтаксис пути домена
@@ -27,9 +27,9 @@ ms.locfileid: "72669742"
 
  Путь домена имеет следующий вид:
 
- *Relationshipname атрибута. PropertyName/! Role*
+ *RelationshipName.PropertyName/!Role*
 
- ![Ссылочная связь Комментреференцессубжектс](../modeling/media/dsl-reference.png "dsl_reference")
+ ![Связь типа “Ссылка" CommentReferencesSubjects](../modeling/media/dsl-reference.png "dsl_reference")
 
  Синтаксис перебирает дерево модели. Например, Доменная связь **комментреференцессубжектс** на рисунке выше имеет роль **субъектов** . Сегмент пути **/! Subject** указывает, что путь заканчивается на элементах, доступ к которым осуществляется через роль **субъектов** .
 
@@ -39,5 +39,5 @@ ms.locfileid: "72669742"
 
  Имя, используемое для перехода от элемента к связи, является значением роли `Property Name`. Имя, используемое для перехода от связи к элементу, является именем целевой роли.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3eebefeab6b78955b03d4546a60dd811f5e9ae4e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547658"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Поддерживаемые выпуски Visual Studio для &amp; пакета SDK для моделирования визуализации
@@ -32,7 +32,7 @@ ms.locfileid: "85547658"
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK для Visual Studio](../extensibility/visual-studio-sdk.md)|
 |Пакет SDK для визуализации и моделирования в Visual Studio|[Загрузка пакета SDK для моделирования](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>Развертывание выпусков
- [!INCLUDE[dsl](../includes/dsl-md.md)]поддерживает следующие конфигурации для развертывания создаваемых доменных языков:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] поддерживает следующие конфигурации для развертывания создаваемых доменных языков:
 
 - Visual Studio Enterprise
 
@@ -45,5 +45,5 @@ ms.locfileid: "85547658"
 > [!NOTE]
 > Чтобы обеспечить возможность запуска DSL в продукте оболочки, необходимо задать поле **Supported VS Edition** в манифесте расширения. Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

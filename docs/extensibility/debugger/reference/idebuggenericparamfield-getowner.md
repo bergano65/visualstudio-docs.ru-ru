@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetOwner Документы Майкрософт
+title: 'Идебугженерикпарамфиелд:: [владелец | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 040b8cf21cda1a0634c1c423516109b1ef214f01
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727870"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-Извлекает тип или владелец метода этого общего параметра.
+Возвращает владельца типа или метода этого универсального параметра.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,13 +39,13 @@ int GetOwner(
 
 ## <a name="parameters"></a>Параметры
 `ppOwner`\
-(ваут) Возвращает объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) которому принадлежит этот общий параметр.
+заполняет Возвращает объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , которому принадлежит этот универсальный параметр.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CDebugGenericParamFieldType,** который предоставляет интерфейс [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+В следующем примере показано, как реализовать этот метод для объекта **кдебугженерикпарамфиелдтипе** , предоставляющего интерфейс [идебугженерикпарамфиелд](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)
@@ -95,5 +95,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

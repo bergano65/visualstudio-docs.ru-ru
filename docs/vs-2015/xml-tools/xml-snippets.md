@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669363"
 ---
 # <a name="xml-snippets"></a>XML-фрагменты
@@ -38,7 +38,7 @@ ms.locfileid: "72669363"
 </xs:element>
 ```
 
- Существует два способа вставки фрагментов. Команда **Вставить фрагмент** вставляет XML-фрагмент в позицию курсора. Команда **окружить с помощью** оболочки фрагмента кода XML вокруг выделенного текста. Обе команды доступны либо из подменю **IntelliSense** в меню **Правка** , либо из контекстного меню редактора.
+ Существует два способа вставки фрагментов. Команда **Вставить фрагмент кода** вставляет XML-фрагмент в положении курсора. Команда **Разместить во фрагменте** заключает выделенный текст в XML-фрагмент. Обе команды доступны либо из подменю **IntelliSense** в меню **Правка** , либо из контекстного меню редактора.
 
  Дополнительные сведения см. [в разделе Практические руководства. Использование XML-фрагментов](../xml-tools/how-to-use-xml-snippets.md).
 
@@ -52,5 +52,5 @@ ms.locfileid: "72669363"
 
  Дополнительные сведения см. [в разделе инструкции. Создание XML-фрагментов](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>См. также раздел
- [XML-редактор](../xml-tools/xml-editor.md)
+## <a name="see-also"></a>См. также:
+ [Редактор XML](../xml-tools/xml-editor.md)

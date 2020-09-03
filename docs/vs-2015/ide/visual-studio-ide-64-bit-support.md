@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667120"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Поддержка 64-разрядных сред IDE Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] см. в разделе [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в см [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . в разделе [64-bit Applications](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="deploying-a-64-bit-application"></a>Развертывание 64-разрядных приложений
  Развертывание 64-разрядных приложений рассматривается в следующих разделах.
@@ -35,7 +35,7 @@ ms.locfileid: "72667120"
 ## <a name="configuring-projects-as-64-bit-applications"></a>Настройка проектов как 64-разрядных приложений
  Настройка проектов для создания 64-разрядных приложений рассматривается в следующих разделах.
 
-- [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md)
+- [Как настроить целевые платформы для проектов](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Отладка 64-разрядного приложения
  Функция "Изменить и продолжить" не работает при использовании [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] в 64-разрядной операционной системе Windows. Отладка 64-разрядных приложений рассматривается в следующих разделах.
@@ -46,5 +46,5 @@ ms.locfileid: "72667120"
 
 - [Использование файлов дампа](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>См. также
- [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md)
+## <a name="see-also"></a>См. также:
+ [Как настроить целевые платформы для проектов](../ide/how-to-configure-projects-to-target-platforms.md)

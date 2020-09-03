@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281998"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 
 Чтобы вставить новые записи в базу данных, можно использовать `TableAdapter.Update` метод или один из методов DBDirect адаптера таблицы (в частности, `TableAdapter.Insert` метод). Дополнительные сведения см. в разделе [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Если приложение не использует адаптеры таблиц, можно использовать объекты команд (например, <xref:System.Data.SqlClient.SqlCommand> ) для вставки новых записей в базу данных.
+Если приложение не использует адаптеры таблиц, можно использовать объекты команд (например,  <xref:System.Data.SqlClient.SqlCommand> ) для вставки новых записей в базу данных.
 
 Если приложение использует наборы данных для хранения, используйте `TableAdapter.Update` метод. `Update`Метод отправляет все изменения (обновления, вставки и удаления) в базу данных.
 
@@ -84,6 +84,6 @@ ms.locfileid: "85281998"
 
 Необходимо иметь доступ к базе данных, к которой вы пытаетесь подключиться, а также разрешение на выполнение вставки в нужную таблицу.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

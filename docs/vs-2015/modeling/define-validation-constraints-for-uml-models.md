@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547593"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Определение ограничений проверки для моделей UML
@@ -89,7 +89,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 2. Создайте проект VSIX, если ваше решение еще его не содержит.
 
-    1. В **Обозреватель решений**в контекстном меню решения выберите **Добавить**, **Новый проект**.
+    1. В **Обозреватель решений**в контекстном меню решения выберите  **Добавить**, **Новый проект**.
 
     2. В разделе **Установленные шаблоны**разверните узел **Visual C#** или **Visual Basic**и выберите пункт **Расширение среды**. В среднем столбце выберите пункт **Проект VSIX**.
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Исполнение ограничения проверки
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Исполнение ограничения проверки
  В целях тестирования запустите методы проверки в режиме отладки.
 
 #### <a name="to-test-the-validation-constraint"></a>Тестирование ограничения проверки
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - К методам проверки добавлены правильные атрибуты `Export` и `ValidationMethod` .
 
-    - `ValidationCategories.Menu`включается в аргумент для `ValidationMethod` атрибута и состоит из других значений с помощью логического или (&#124;).
+    - `ValidationCategories.Menu` включается в аргумент для `ValidationMethod` атрибута и состоит из других значений с помощью логического или (&#124;).
 
     - Параметры всех атрибутов `Import` и `Export` являются допустимыми.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Оценка ограничения
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Оценка ограничения
  Метод проверки должен определить, имеет ли ограничение проверки, которое нужно применить, значение true или false. Если задано значение true, метод не должен выполнять никаких действий. Если задано значение false, метод должен сообщить об ошибке с помощью методов, предоставленных параметром `ValidationContext` .
 
 > [!NOTE]
@@ -256,7 +256,7 @@ public void ValidateSomething
 
  Каждый метод проверки имеет указанные ниже атрибуты и параметры.
 
-|Сигнатура|Описание|
+|Подпись|Описание|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Определяет метод как ограничение проверки с помощью Managed Extensibility Framework (MEF).|
 |`[ValidationMethod (ValidationCategories.Menu)]`|Указывает, когда будет выполнена проверка. Используйте побитовое или (&#124;), если хотите объединить более одного параметра.<br /><br /> `Menu` = вызывается из меню проверки.<br /><br /> `Save` = вызывается при сохранении модели.<br /><br /> `Open` = вызывается при открытии модели. `Load` = вызывается при сохранении модели, но в случае конфликта пользователь предупреждается о том, что повторное открытие модели может быть невозможно. Также вызывается при загрузке до того, как будет выполнен анализ модели.|
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Координация нескольких проверок
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Координация нескольких проверок
  При вызове проверки, например, пользователем из меню схемы, каждый метод проверки применяется к каждому элементу модели. Это означает, что в ходе одного вызова рабочей среды проверки один и тот же метод может быть применен много раз к различным элементам.
 
  Это представляет проблему для проверок, обрабатывающих отношения между элементами. Например, можно создать проверку, которая начинается с варианта использования и перебирает отношения **include** , чтобы убедиться в отсутствии циклов. Но если метод применяется к каждому варианту использования в модели, обладающей множеством связей **include** , он с большой вероятностью будет многократно обрабатывать одни и те же области модели.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Получение значения.|
 |`Context.GetValue<T>()`|Получение значения указанного типа.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Установка и удаление расширения
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Установка и удаление расширения
  Расширение [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] можно установить как на своем компьютере, так и на других.
 
 #### <a name="to-install-an-extension"></a>Установка расширения
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Определение и установка программирования расширения моделирования](../modeling/define-and-install-a-modeling-extension.md) [с помощью API UML](../modeling/programming-with-the-uml-api.md)

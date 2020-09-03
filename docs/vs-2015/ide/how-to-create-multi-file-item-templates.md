@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668092"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
@@ -55,7 +55,7 @@ ms.locfileid: "72668092"
 
 3. Выберите файлы, которые нужно включить в шаблон, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.
 
-4. Поместите ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+4. Поместите ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\. Дополнительные сведения см. [в разделе руководство. размещение и упорядочение шаблонов](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="example"></a>Пример
  Приведенный ниже пример показывает шаблон Windows Forms [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Когда на основе этого шаблона создается элемент, имена трех созданных файлов будут соответствовать имени, введенному в диалоговом окне **Добавление нового элемента**.
@@ -83,5 +83,5 @@ ms.locfileid: "72668092"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md) [шаблон параметры шаблона](../ide/template-parameters.md) [руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md)

@@ -15,18 +15,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668079"
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Шаги [первой процедуры](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) этого раздела показывают, как создать шаблон элемента с помощью мастера **экспорта шаблона**. Если шаблон будет состоять из нескольких файлов, см. раздел [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md).
+Шаги [первой процедуры](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) этого раздела показывают, как создать шаблон элемента с помощью мастера **экспорта шаблона**. Если шаблон будет состоять из нескольких файлов, см. раздел [как создавать многофайловые шаблоны элементов](../ide/how-to-create-multi-file-item-templates.md).
 
- Мастер выполняет за вас большой объем работы по созданию базового шаблона, но во многих случаях необходимо вручную изменить VSTEMPLATE-файл после экспорта шаблона. Например, если элемент должен отображаться в диалоговом окне **Добавление нового элемента** для проекта приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], необходимо выполнить ряд дополнительных действий. [Вторая процедура](#to-enable-the-item-template-to-be-used-in-a-store-project) этого раздела помогает выполнить данную задачу.
+ Мастер выполняет за вас большой объем работы по созданию базового шаблона, но во многих случаях необходимо вручную изменить VSTEMPLATE-файл после экспорта шаблона. Например, если элемент должен отображаться в диалоговом окне **Добавление нового элемента** для [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] проекта приложения, потребуется выполнить несколько дополнительных действий. [Вторая процедура](#to-enable-the-item-template-to-be-used-in-a-store-project) этого раздела помогает выполнить данную задачу.
 
  В некоторых случаях может потребоваться вручную создать шаблон элемента с нуля. В [третьей процедуре](#to-enable-templates-for-specific-project-sub-types) показано, как это сделать.
 
@@ -38,7 +38,7 @@ ms.locfileid: "72668079"
 
 2. Добавьте элемент в проект и измените его по своему усмотрению.
 
-3. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Отредактируйте файл кода, чтобы указать, где должна быть выполнена замена параметра. Дополнительные сведения см. в разделе [инструкции. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. В меню **Файл** выберите команду **Экспорт шаблона**.
 
@@ -50,10 +50,10 @@ ms.locfileid: "72668079"
 
 8. Введите имя файла значка, изображение для предварительного просмотра, имя и описание шаблона и нажмите кнопку **Готово**.
 
-     Файлы для шаблона добавляются в ZIP-файл и копируются к тот каталог, который вы указываете в диалоговом окне. Расположением по умолчанию является папка **\Users\\<имя_пользователя\>\Documents\Visual Studio \<версия>\My Exported Templates\\** .
+     Файлы для шаблона добавляются в ZIP-файл и копируются к тот каталог, который вы указываете в диалоговом окне. Расположение по умолчанию — **.. \Users \\<имя_пользователя \> \Documents\Visual Studio \ папка \<Version> экспортированных шаблонов \\ ** .
 
     > [!WARNING]
-    > В более ранних версиях Visual Studio расположением по умолчанию является папка **\Users\\<имя_пользователя\>\Documents\Visual Studio \<версия>\Templates\ItemTemplates**.
+    > В более ранних версиях Visual Studio расположением по умолчанию является **.. \Users \\<имя_пользователя \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Включение шаблона элемента для использования в проекте Магазина
 
@@ -67,7 +67,7 @@ ms.locfileid: "72668079"
 
     Проект C++ магазина Windows 8.1 использует значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить \<ProjectType > и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)>, чтобы указать другие типы языков и проектов.
+    В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить \<ProjectType> элементы и, \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> чтобы указать другие типы языков и проектов.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -118,7 +118,7 @@ ms.locfileid: "72668079"
 
    4. Интернет
 
-      Пример: `<ProjectSubType>Database</ProjectSubType>`.
+      Например, `<ProjectSubType>Database</ProjectSubType>`.
 
       В следующем примере показан шаблон элемента, доступный для проектов Office.
 
@@ -157,5 +157,5 @@ ms.locfileid: "72668079"
 
 8. Скопируйте ZIP-файл и вставьте его в расположение, где находится пользовательский шаблон элемента. В Visual Studio 2015 каталогом по умолчанию является \Users\\<имя_пользователя\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе "Практическое руководство. Размещение и упорядочение шаблонов проектов и элементов".
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [руководство. создание многофайловых шаблонов элементов Справочник по](../ide/how-to-create-multi-file-item-templates.md) [схемам шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

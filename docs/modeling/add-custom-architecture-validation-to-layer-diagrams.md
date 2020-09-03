@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546929"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Добавление пользовательской проверки архитектуры в схемы зависимостей
@@ -107,7 +107,7 @@ ms.locfileid: "85546929"
 
 6. Вернитесь в проект проверки слоев и добавьте указанные ниже ссылки на проект.
 
-    |**Справочник**|**Возможности**|
+    |**Ссылки**|**Возможности**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Чтение графа архитектуры|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Чтение кода DOM, связанного со слоями|
@@ -125,7 +125,7 @@ ms.locfileid: "85546929"
 
 9. Чтобы установить VSIX в основном экземпляре Visual Studio или на другом компьютере, найдите **VSIX** файл в каталоге **bin** проекта VSIX. Скопируйте его на компьютер, где требуется выполнить установку VSIX. Дважды щелкните файл VSIX в проводнике Windows
 
-## <a name="programming-validation"></a><a name="programming"></a>Проверка программирования
+## <a name="programming-validation"></a><a name="programming"></a> Проверка программирования
 
 Чтобы определить расширение проверки слоя, необходимо определить класс указанным ниже образом.
 
@@ -194,7 +194,7 @@ ms.locfileid: "85546929"
 
 Связи от слоев к элементам в коде имеют категорию «Представляет».
 
-## <a name="debugging-validation"></a><a name="debugging"></a>Проверка отладки
+## <a name="debugging-validation"></a><a name="debugging"></a> Проверка отладки
 
 Чтобы выполнить отладку расширения проверки слоев, нажмите клавиши CTRL+F5. Откроется экспериментальный экземпляр Visual Studio. Откройте или создайте модель слоев в этом экземпляре. Эта модель должна быть связана с кодом и иметь хотя бы одну зависимость.
 
@@ -226,7 +226,7 @@ ms.locfileid: "85546929"
 
 Чтобы установить расширение проверки на компьютер, на котором установлена подходящая версия Visual Studio, откройте VSIX-файл на конечном компьютере.
 
-## <a name="example-code"></a><a name="example"></a>Пример кода
+## <a name="example-code"></a><a name="example"></a> Пример кода
 
 ```csharp
 using System;

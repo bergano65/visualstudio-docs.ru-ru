@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::IsPositionInDocument | Документация Майкрософт
+title: 'IDebugDocumentPosition2:: Испоситиониндокумент | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7950f091d34d03222044455be671e15f5297a747
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200285"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет, содержится ли позиции документа в данного документа.  
+Определяет, содержится ли в данном документе расположение документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int IsPositionInDocument( 
   
 #### <a name="parameters"></a>Параметры  
  `pDoc`  
- [in] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) , представляющий содержащий кандидата документа.  
+ окне Объект [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) , представляющий документ, содержащий кандидат.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод используется главным образом в задание точек останова [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) интерфейсов. По мере загрузки, чтобы определить, содержит ли документ этой позиции называется положение точки останова.  
+## <a name="remarks"></a>Remarks  
+ Этот метод используется главным образом при задании точек останова в интерфейсах [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) . По мере загрузки документов вызывается точка останова, чтобы определить, содержит ли документ эту точку.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

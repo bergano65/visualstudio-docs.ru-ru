@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281881"
 ---
 # <a name="pass-data-between-forms"></a>Передача данных между формами
@@ -152,7 +152,7 @@ ms.locfileid: "85281881"
     > [!NOTE]
     > Проверьте правильность синтаксиса параметров для своей базы данных. Например, в Microsoft Access предложение WHERE должно выглядеть следующим образом: `WHERE CustomerID = ?`.
 
-6. Щелкните **Далее**.
+6. Нажмите кнопку **Далее**.
 
 7. Для поля **заполнить Дататаблемесод имя**введите `FillByCustomerID` .
 
@@ -198,6 +198,6 @@ ms.locfileid: "85281881"
 
 - Добавление функциональности для сохранения данных в базу данных. Дополнительные сведения см. [в разделе Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

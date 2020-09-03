@@ -1,5 +1,5 @@
 ---
-title: Позиция документа | Документация Майкрософт
+title: Расположение документа | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,24 +11,24 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200593"
 ---
 # <a name="document-position"></a>Позиция в документе
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладки, **позиция документа**:  
+В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладке, **расположение документа**:  
   
-- Предоставляет абстракцию для положения в файле исходного кода, как оно известно в интегрированной среде разработки. Для большинства языков в настоящее время позиции документа может рассматриваться как позиция в исходном файле.  
+- Предоставляет абстракцию расположения в исходном файле, как известно интегрированной среде разработки. В настоящее время для большинства языков расположение документа можно рассматривать как расположение в исходном файле.  
   
-- Описание позиции в исходном документе к модуля отладки.  
+- Описывает расположение в исходном документе для модуля отладки.  
   
-- Реализуется [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) интерфейс.  
+- Реализуется с помощью интерфейса [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Контекст кода](../../extensibility/debugger/code-context.md)   
  [Контекст документа](../../extensibility/debugger/document-context.md)   
  [Поставщик символов](../../extensibility/debugger/symbol-provider.md)   

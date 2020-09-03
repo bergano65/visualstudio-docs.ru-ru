@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667826"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Управление видимостью значка или декоратора
@@ -62,13 +62,13 @@ ms.locfileid: "72667826"
 
 1. Добавьте вычисляемое свойство домена в доменный класс. В окне **Свойства** задайте следующие значения:
 
-     С **возможностью просмотра =** `False` **— это свойство скрывается от пользователя** .
+     **Отображаемый =** `False` **— скрывает свойство от пользователя** .    
 
-     **Kind =** `Calculated` **— это означает, что вы будете предоставлять код, вычисляющий его значение**
+     **Тип =** `Calculated` **— это означает, что вы будете предоставлять код, который вычисляет свое значение** .    
 
      **Имя** , например **декораторконтрол**
 
-     **Введите**  =  `Boolean`
+     **Тип** = `Boolean`
 
      Дополнительные сведения см. в разделе [вычисляемые и настраиваемые свойства хранилища](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -80,7 +80,7 @@ ms.locfileid: "72667826"
 
     3. В поле **Свойства фильтра**выберите свойство элемента управления **декораторконтрол**.
 
-    4. В разделе **записи видимости**введите `True`.
+    4. В разделе **записи видимости**введите `True` .
 
 3. Щелкните **преобразовать все шаблоны** на панели инструментов Обозреватель решений.
 
@@ -107,5 +107,5 @@ ms.locfileid: "72667826"
 
 8. Перестройте и запустите решение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Определение фигур и соединителей](../modeling/defining-shapes-and-connectors.md) [Установка фонового изображения на схеме](../modeling/setting-a-background-image-on-a-diagram.md) [Навигация и обновление модели в коде программного кода](../modeling/navigating-and-updating-a-model-in-program-code.md) [Создание кода для настройки предметно-ориентированного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

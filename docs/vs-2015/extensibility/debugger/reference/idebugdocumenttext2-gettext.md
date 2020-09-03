@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Документация Майкрософт
+title: 'IDebugDocumentText2:: GetText | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200183"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получение текста из указанной позиции в документе.  
+Извлекает текст из указанной позицией в документе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>Параметры  
  `pos`  
- [in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает расположение текста, который требуется получить.  
+ окне Структура [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , указывающая расположение извлекаемого текста.  
   
  `cMaxChars`  
- [in] Максимальное количество символов текста, который требуется получить.  
+ окне Максимальное число символов в тексте, которое необходимо получить.  
   
  `pText`  
- [in, out] Указатель на буфер, который должен быть заполнен с помощью требуемый текст. Этот буфер должен иметь возможность содержать по крайней мере `cMaxChars` число расширенных символов.  
+ [вход, выход] Указатель на буфер, который должен быть заполнен требуемым текстом. Этот буфер должен содержать не менее `cMaxChars` нескольких расширенных символов.  
   
  `pcNumChars`  
- [out] Возвращает число фактически полученных символов.  
+ заполняет Возвращает число фактически извлеченных символов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как этот метод может вызываться с помощью C#.  
+ В этом примере показано, как этот метод можно вызывать из C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  
@@ -99,6 +99,6 @@ namespace Mynamespace
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667945"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Практическое руководство. Исключение проектов из построения
@@ -43,7 +43,7 @@ ms.locfileid: "72667945"
 
 1. В строке меню последовательно выберите пункты **Сборка**и **Диспетчер конфигураций**.
 
-2. В списке **Активная конфигурация решения** выберите **\<Создать>** .
+2. В списке **Активная конфигурация решения** выберите **\<New>** .
 
 3. В поле **Имя** введите имя конфигурации решения.
 
@@ -55,5 +55,5 @@ ms.locfileid: "72667945"
 
 7. В строке меню последовательно выберите пункты **Сборка**, **Перестроить решение**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md) [Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md) [руководство. построение нескольких конфигураций одновременно](../ide/how-to-build-multiple-configurations-simultaneously.md)
