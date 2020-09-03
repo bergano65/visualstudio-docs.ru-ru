@@ -12,28 +12,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5aafed36dd9e011cef34391aa3b87027257b91d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185190"
 ---
 # <a name="how-to-change-fonts"></a>Практическое руководство. изменение шрифтов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Можно изменить шрифт, начертание и размер шрифта для окнах Spy ++.  
+Вы можете изменить шрифт, стиль и размер шрифта для окон Spy ++.  
   
-### <a name="to-change-font-options"></a>Чтобы изменить параметры шрифта  
+### <a name="to-change-font-options"></a>Изменение параметров шрифта  
   
-1. Из **представление** меню, выберите **шрифта**.  
+1. В меню **Вид** выберите пункт **Шрифт**.  
   
-2. Выберите шрифт, начертание и размер шрифта.  
+2. Выберите шрифт, стиль и размер шрифта.  
   
 3. Нажмите кнопку **ОК**.  
   
-   Выбрав **установить шрифт по умолчанию** будет во всех новых окнах Spy ++ для использования данного шрифта.  
+   Если вы нажмете **Сохранить шрифт по умолчанию**, все будущие окна Spy++ будут использовать этот шрифт.  
   
-## <a name="see-also"></a>См. также  
- [Использование Spy++](../debugger/using-spy-increment.md)   
- [Представления Spy++](../debugger/spy-increment-views.md)   
+## <a name="see-also"></a>См. также:  
+ [Использование Spy + +](../debugger/using-spy-increment.md)   
+ [Представления Spy + +](../debugger/spy-increment-views.md)   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)

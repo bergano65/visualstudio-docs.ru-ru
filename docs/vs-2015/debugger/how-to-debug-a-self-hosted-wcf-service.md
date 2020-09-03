@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185171"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Практическое руководство. отладку резидентной службы WCF
@@ -32,11 +32,11 @@ ms.locfileid: "68185171"
   
  Если служба WCF является резидентной внутри или является процессом, который не может быть запущен таким же образом, как служба NT, использовать этот метод нельзя. Вместо этого можно выполнить одно из следующих действий:  
   
-- Вручную присоединить отладчик к главному процессу. Дополнительные сведения см. в разделе [подключиться к процессам, под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Вручную присоединить отладчик к главному процессу. Дополнительные сведения см. в статье [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
      Или...  
   
-- Начать отладку клиента, а затем сделать шаг с заходом в вызов службы. Для этого необходимо включить отладку в файле app.config file. Дополнительные сведения [ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md).  
+- Начать отладку клиента, а затем сделать шаг с заходом в вызов службы. Для этого необходимо включить отладку в файле app.config file. Дополнительные сведения см. в разделе [Ограничения по отладке WCF](../debugger/limitations-on-wcf-debugging.md).  
   
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Запуск клиента и процесса размещения из Visual Studio  
   
@@ -48,7 +48,7 @@ ms.locfileid: "68185171"
   
     2. Щелкните **Установка запускаемых проектов**.  
   
-    3. В диалоговом окне **Свойства \<имя> решения** выберите **Несколько запускаемых проектов**.  
+    3. В диалоговом окне **Свойства решения \<name>** выберите **Несколько запускаемых проектов**.  
   
     4. В сетке **Несколько запускаемых проектов** на строке, соответствующей серверному проекту, щелкните **Действие** и выберите **Пуск**.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "68185171"
   
     6. Нажмите кнопку **ОК**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка служб WCF](../debugger/debugging-wcf-services.md)   
  [Ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md)   
  [Практическое руководство. Пошаговая отладка служб WCF](../debugger/how-to-step-into-wcf-services.md)

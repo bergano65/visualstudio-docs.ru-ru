@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850715"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
@@ -27,7 +27,7 @@ ms.locfileid: "75850715"
 
 Это означает, что доступ к таким параметрам, как имена файлов проекта, не может производиться таким же образом, как при сборке текстового шаблона в MSBuild. Тем не менее [сведения о среде можно передать в текстовые шаблоны и обработчики директив с помощью параметров сборки](#parameters).
 
-## <a name="buildserver"></a>Настройка компьютеров
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Настройка компьютеров
 
 Чтобы включить задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Передача данных контекста сборки в шаблоны
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать свойства сборки и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Использование свойств проекта в директивах Assembly и include
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Использование свойств проекта в директивах Assembly и include
 
 Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -269,7 +269,7 @@ The project folder is: <#= ProjectFolder #>
 
 При обновлении включенного файла или другого файл, считываемого шаблоном, Visual Studio не преобразует файл автоматически. Преобразование шаблонов в процессе сборки гарантирует обновление всех компонентов.
 
-**Какие существуют другие варианты преобразования текстовых шаблонов?**
+**Имеют ли другие варианты преобразования текстовых шаблонов?**
 
 - [Служебную программу TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в скриптах команд. В большинстве случаев удобнее использовать MSBuild.
 
@@ -284,5 +284,5 @@ The project folder is: <#= ProjectFolder #>
 Хорошее руководство содержится в шаблоне MSbuild T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
-- [Пакет SDK визуализации и моделирования Visual Studio](https://www.visualstudio.com/)
+- [Пакет SDK для визуализации и моделирования в Visual Studio](https://www.visualstudio.com/)
 - [Олег сыч: основные сведения о средстве T4: интеграция MSBuild](https://github.com/olegsych/T4Toolbox)

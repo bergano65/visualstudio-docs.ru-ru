@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78937563"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Переход от традиционного анализа (FxCop) к исходному анализу (FxCop Analyzer)
@@ -27,7 +27,7 @@ ms.locfileid: "78937563"
 
 Дополнительные сведения о различиях между анализом прежних версий и анализом исходного кода см. в следующих статьях:
 
-- [Анализ исходного кода и анализ прежних версий](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Сравнение анализа исходного кода и устаревшей функции анализа](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
 
 - [Вопросы и ответы об анализаторах FxCop](../code-quality/fxcop-analyzers-faq.md)
 

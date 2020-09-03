@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyСозданиеСобытие2 Документы Майкрософт
+title: IDebugPropertyCreateEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720928"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
-Этот интерфейс отправляется движком отладки (DE) менеджеру отладки сеанса (SDM), когда он создает свойство, связанное с конкретным документом.
+Этот интерфейс отправляется модулем отладки (DE) в Диспетчер отладки сеансов (SDM) при создании свойства, связанного с конкретным документом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,30 +28,30 @@ ms.locfileid: "80720928"
 IDebugPropertyCreateEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- DE реализует этот интерфейс, чтобы сообщить о создании свойства. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. SDM использует [QueryInterface](/cpp/atl/queryinterface) для `IDebugEvent2` доступа к интерфейсу. Этот интерфейс реализован, если DE создал свойство, связанное с загруженным или созданным скриптом, и если этот скрипт должен появиться в IDE.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Метод DE реализует этот интерфейс, чтобы сообщить о том, что свойство было создано. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс. Модель SDM использует [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейсу. Этот интерфейс реализуется, если параметр DE создал свойство, связанное с скриптом, который был загружен или создан, и если этот сценарий должен появиться в интегрированной среде разработки.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- DE создает и отправляет объект события для сообщения о создании объекта. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) поставляемой SDM при подключении к отладочной программе.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Параметр DE создает и отправляет этот объект события, чтобы сообщить о создании свойства. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , предоставляемой SDM при присоединении к отлаживаемой программе.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показан `IDebugPropertyCreateEvent2` метод интерфейса.
+ В следующей таблице показан метод `IDebugPropertyCreateEvent2` интерфейса.
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Получает новое свойство.|
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Возвращает новое свойство.|
 
-## <a name="remarks"></a>Примечания
- Если с ним связан определенный документ или скрипт, DE может отправить это событие в SDM для обновления окна **документов с** указанием имени документа. SDM вызовет [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) с `guidDocument` аргументом, `VARIANT` чтобы получить содержащий [указатель IUnknown.](/cpp/atl/iunknown) SDM вызовет [queryInterface](/cpp/atl/queryinterface) на этом указателе для получения интерфейса [IDebugDocument2,](../../../extensibility/debugger/reference/idebugdocument2.md) который используется для обновления окна **документов скрипта.**
+## <a name="remarks"></a>Remarks
+ Если с свойством связан конкретный документ или сценарий, то параметр DE может отправить это событие в SDM, чтобы обновить окно « **документы скрипта** » с именем документа. SDM будет вызывать [жетекстендединфо](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) с аргументом `guidDocument` для получения объекта, `VARIANT` содержащего указатель [IUnknown](/cpp/atl/iunknown) . SDM будет вызывать [QueryInterface](/cpp/atl/queryinterface) на этом указателе для получения интерфейса [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) , используемого для обновления окна " **документы скрипта** ".
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

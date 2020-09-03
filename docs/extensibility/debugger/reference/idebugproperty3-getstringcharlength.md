@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharДлин (ru) Документы Майкрософт
+title: 'IDebugProperty3:: Жетстрингчарленгс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721126"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
@@ -43,16 +43,16 @@ int GetStringCharLength(
 
 |Параметр|Описание|
 |---------------|-----------------|
-|`pLen`|(ваут) Возвращает количество символов в строке свойства.|
+|`pLen`|заполняет Возвращает количество символов в строке свойства.|
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Как правило, этот метод используется в качестве прелюдии к выделению буфера для вызова методу [GetStringChars.](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
+## <a name="remarks"></a>Remarks
+Как правило, этот метод используется как версионного для выделения буфера для вызова метода [жетстрингчарс](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CProperty,** который предоставляет интерфейс [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
+В следующем примере показано, как реализовать этот метод для объекта **кпроперти** , предоставляющего интерфейс [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
@@ -94,6 +94,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

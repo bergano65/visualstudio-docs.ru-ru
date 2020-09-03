@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: SQL можно&#39;t обнаружить компонент SSDEBUGPS | Документация Майкрософт'
+title: 'Ошибка: SQL не удается обнаружить компонент SSDEBUGPS | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185208"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Ошибка: SQL можно&#39;t обнаружить компонент SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>Ошибка: SQL не удается обнаружить компонент SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Файл SSDEBUGPS.dll — компонент узла отладки SQL Server.  
@@ -33,9 +33,9 @@ ms.locfileid: "68185208"
   
  Существуют два способа разрешить эту проблему: повторное выполнение установки удаленной отладки и копирование файла на компьютер [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)].  
   
- Повторное выполнение установки удаленной отладки, следуйте инструкциям в [удаленной отладки](../debugger/remote-debugging.md).  
+ Чтобы выполнить повторный запуск установки удаленной отладки, следуйте инструкциям в статье [Удаленная отладка](../debugger/remote-debugging.md).  
   
- Если есть возможность найти копию файла ssdebugps.dll, можно скопировать этот файл на компьютер [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]. Этот файл должен быть в каталоге \Program Files\ Common Files\Microsoft Shared\SQL Debugging. Может оказаться на другом [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] компьютере или на компьютере, который имеет [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] установлен.  
+ Если есть возможность найти копию файла ssdebugps.dll, можно скопировать этот файл на компьютер [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]. Этот файл должен быть в каталоге \Program Files\ Common Files\Microsoft Shared\SQL Debugging. Он может находиться на другом [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] компьютере или на компьютере, на котором [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] установлен.  
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>Копирование файла SSDEBUGPS.dll на компьютер SQL Server 2005  
   

@@ -1,5 +1,5 @@
 ---
-title: Начало работы с Extensibility Debugger (ru) Документы Майкрософт
+title: начало работы с расширяемостью отладчика | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,34 +13,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738591"
 ---
-# <a name="get-started-with-debugger-extensibility"></a>Начало работы с разладом
-Предоставляет [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] информацию, необходимую для создания и настройки компонентов отладчика, используемых для отладки программ из среды. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
+# <a name="get-started-with-debugger-extensibility"></a>Приступая к работе с расширяемостью отладчика
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Предоставляет сведения, необходимые для создания и настройки компонентов отладчика, используемых для отладки программ в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среде.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]отладка добавила улучшений, полученных в результате [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обширного тестирования удобства использования, выполненного на предыдущих отладчиках. Отладка [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] можно использовать для прохождения многоязычного приложения, или можно реализовать редактирование переменных на лету при отладке приложений и многоязычных решений.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] в отладке добавлены улучшения, полученные в результате расширенного тестирования удобства использования, выполненного на предыдущих [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчиках. Можно использовать [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладку для пошагового выполнения многоязыкового приложения. также можно реализовать Оперативное редактирование переменных во время отладки приложений и решений на разных языках.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]отладка выполняется вне процесса с отладкой программы и поэтому менее интрузивна в пространстве процесса приложения. Следовательно, проще писать компоненты, которые взаимодействуют с отладчиком, не влияя на программу отладки.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладка выполняется вне процесса с отлаживаемой программой и, таким образом, менее агрессивна в пространстве процесса приложения. Следовательно, проще писать компоненты, взаимодействующие с отладчиком, не влияя на программу отладки.
 
- Чтобы наилучшим [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]образом использовать, вы должны быть знакомы со следующими элементами:
+ Для лучшего использования необходимо [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ознакомиться со следующими элементами:
 
-- Интегрированная [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среда разработки (IDE)
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Интегрированная среда разработки (IDE)
 
-- Язык программирования СЗЗ
+- Язык программирования C++
 
 - ATL COM
 
 ## <a name="in-this-section"></a>В этом разделе
- [Дорожная карта для расширения отладчика](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Очертания процесса реализации отладки в продукте, в зависимости от компилятора и его вывода.
+ [Стратегия расширения отладчика](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Описывает процесс реализации отладки в продукте в зависимости от компилятора и его выходных данных.
 
- [Компоненты debugger](../../extensibility/debugger/debugger-components.md) Обеспечивает обзор компонентов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки, которые включают движок отладки (DE), оценщик выражения (EE) и обработчик символов (SH).
+ [Компоненты отладчика](../../extensibility/debugger/debugger-components.md) Содержит общие сведения о [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компонентах отладки, включая модуль отладки (de), средство оценки выражений (EE) и обработчик символов (SH).
 
- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md) Описывает основные архитектурные концепции отладки.
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md) Описывает основные понятия архитектуры отладки.
 
- [Контексты debugger](../../extensibility/debugger/debugger-contexts.md) Объясняет, как отладка двигателя (DE) работает одновременно в контексте кода, документации и оценки выражения. Описывает для каждого из трех контекстов место, положение или оценку, относящуюся к нему.
+ [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md) Объясняет, как подсистема отладки (DE) работает одновременно в рамках кода, документации и контекстов оценки выражений. Описывает, для каждого из трех контекстов: расположение, положение или вычисление, относящиеся к нему.
 
- [Задачи отладки](../../extensibility/debugger/debugging-tasks.md) Содержит ссылки на различные задачи отладки, такие как запуск программы и оценка выражений.
+ [Задачи отладки](../../extensibility/debugger/debugging-tasks.md) Содержит ссылки на различные задачи отладки, такие как запуск программы и вычисление выражений.

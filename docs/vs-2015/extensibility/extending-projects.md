@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d741ff59c3b57923912bcbb08a3a22ad20bf8a93
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295981"
 ---
 # <a name="extending-projects"></a>Расширение проектов
@@ -27,7 +27,7 @@ ms.locfileid: "74295981"
   
  В подразделах этого раздела описывается создание пользовательских проектов и управление различными типами решений Visual Studio.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Создание системы базового проекта. Часть 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Описывает создание пользовательской системы проектов.  
   
@@ -52,4 +52,4 @@ ms.locfileid: "74295981"
  [Управление универсальными проектами Windows](../extensibility/managing-universal-windows-projects.md)  
  Объясняется, как управлять универсальными проектами.  
   
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также

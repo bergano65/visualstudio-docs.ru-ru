@@ -1,5 +1,5 @@
 ---
-title: Получение порта Документы Майкрософт
+title: Получение порта | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738629"
 ---
-# <a name="get-a-port"></a>Получить порт
-Порт представляет собой подключение к машине, на которой работают процессы. Эта машина может быть локальной машиной или удаленной машиной (которая, возможно, работает на основе Windows операционной системы; [см. Порты](../../extensibility/debugger/ports.md) для получения дополнительной информации).
+# <a name="get-a-port"></a>Получение порта
+Порт представляет подключение к компьютеру, на котором выполняются процессы. Это может быть локальный компьютер или удаленный компьютер (который может работать под управлением операционных систем, отличных от Windows; Дополнительные сведения см. в разделе [порты](../../extensibility/debugger/ports.md) ).
 
-Порт представлен интерфейсом [IDebugPort2.](../../extensibility/debugger/reference/idebugport2.md) Он используется для получения информации о процессах, работающих на машине, к ней подключен порт.
+Порт представлен интерфейсом [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) . Он используется для получения сведений о процессах, выполняемых на компьютере, к которому подключен порт.
 
-Отладочная движок нуждается в доступе к порту для регистрации узлов программы в порту и удовлетворения запросов на информацию о процессе. Например, если отладка двигателя реализует интерфейс [IDebugProgramProvider2,](../../extensibility/debugger/reference/idebugprogramprovider2.md) реализация для метода [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) может запросить порт для получения необходимой информации о процессе.
+Отладчику требуется доступ к порту для регистрации узлов программ с помощью порта и для удовлетворения запросов сведений о процессах. Например, если обработчик отладки реализует интерфейс [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) , то реализация метода [жетпровидерпроцессдата](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) может попросить указать порт на необходимость возврата сведений о процессе.
 
-Visual Studio поставляет необходимый порт для двигателя отладки, и она получает этот порт от поставщика порта. Если к программе прилагается (либо изнутри отладчика, либо из-за исключения, которое запускает поле диалога "JIT") как раз в времени), пользователю предоставляется выбор транспорта (другое название поставщика порта) для использования. В противном случае, если пользователь запускает программу из нутриундера, проектная система определяет поставщика порта для использования. В любом случае Visual Studio мгновенно вызывает у поставщика порта, представленного интерфейсом [IDebugPortSupplier2,](../../extensibility/debugger/reference/idebugportsupplier2.md) и просит новый порт, позвонив в [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) с интерфейсом [IDebugPortRequest2.](../../extensibility/debugger/reference/idebugportrequest2.md) Этот порт затем передается на отладку двигателя в той или иной форме.
+Visual Studio предоставляет необходимый порт модулю отладки и получает этот порт от поставщика порта. Если программа подключена к (из отладчика или вызвана исключением, которое запускает диалоговое окно JIT [JIT]), пользователю предоставляется выбор транспорта (другое имя для поставщика порта) для использования. В противном случае, если пользователь запускает программу из отладчика, система проекта указывает поставщика порта для использования. В любом из этих событий Visual Studio создает экземпляр поставщика порта, представленного интерфейсом [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) , и запрашивает новый порт путем вызова [аддпорт](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) с помощью интерфейса [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) . Затем этот порт передается модулю отладки в одной форме или другой.
 
 ## <a name="example"></a>Пример
-Этот фрагмент кода показывает, как использовать порт, поставляемый [launchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) для регистрации узла программы в [ResumeProcess.](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) Параметры, не имеющие прямого отношения к этой концепции, были опущены для ясности.
+В этом фрагменте кода показано, как использовать порт, указанный для [лаунчсуспендед](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) , чтобы зарегистрировать узел программы в [ресумепроцесс](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Параметры, не связанные непосредственно с этой концепцией, были опущены для ясности.
 
 > [!NOTE]
-> Этот пример использует порт для запуска и возобновления процесса и предполагает, что интерфейс [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) реализован в порту. Это далеко не единственный способ выполнения этих задач, и вполне возможно, что порт может даже не быть вовлечен, кроме как иметь [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) программы, данное ему.
+> В этом примере порт используется для запуска и возобновления процесса, и предполагается, что интерфейс [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) реализован в порте. Это не значит, что единственный способ выполнить эти задачи, и возможно, что порт даже не участвует в [IDebugProgramNode2е](../../extensibility/debugger/reference/idebugprogramnode2.md) программы.
 
 ```cpp
 // This is an IDebugEngineLaunch2 method.
@@ -96,7 +96,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Регистрация программы](../../extensibility/debugger/registering-the-program.md)
 - [Включение отладки программы](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [Поставщики портов](../../extensibility/debugger/port-suppliers.md)

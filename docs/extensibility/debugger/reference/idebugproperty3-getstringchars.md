@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars Документы Майкрософт
+title: 'IDebugProperty3:: Жетстрингчарс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721083"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Извлекает строку, связанную с этим свойством, и хранит ее в буфере, поставляемом пользователем.
+Извлекает строку, связанную с этим свойством, и сохраняет ее в предоставляемом пользователем буфере.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Параметры
 `buflen`\
-(в) Максимальное количество символов, которые может содержать буфер, поставляемый пользователем.
+окне Максимальное число символов, которое может храниться в пользовательском буфере.
 
 `rgString`\
-(ваут) Возвращает строку.
+заполняет Возвращает строку.
 
- Только указатель на `rgString` буфер, который получает символы Unicode строки. Этот буфер должен `buflen` быть по крайней мере символы (не байты) в размере.
+ [Только C++] `rgString` — это указатель на буфер, который получает символы Юникода строки. Размер этого буфера должен быть `buflen` не менее символов (не в байтах).
 
 `pceltFetched`\
-(ваут) В тех случаях, когда число символов, фактически хранящихся в буфере, возвращается. (Может `NULL` быть в СЗ.)
+заполняет , Где возвращается количество символов, хранимых в буфере. (Может находиться `NULL` в C++.)
 
 ## <a name="return-value"></a>Возвращаемое значение
-В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-В СЗ необходимо позаботиться о том, чтобы `buflen` буфер, по крайней мере, долго символов Unicode. Обратите внимание, что символ Unicode длиной 2 байта.
+## <a name="remarks"></a>Remarks
+В C++ необходимо соблюдать осторожность, чтобы убедиться в том, что буфер имеет длину не менее `buflen` Юникода символов. Обратите внимание, что символ Юникода имеет длину 2 байта.
 
 > [!NOTE]
-> В C q, возвращенная строка не включает термин null. Если дано, `pceltFetched` укажите количество символов в строке.
+> В C++ возвращаемая строка не содержит завершающего нуль-символа. Если задано `pceltFetched` значение, будет указываться число символов в строке.
 
 ## <a name="example"></a>Пример
 
@@ -87,7 +87,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,5 +1,5 @@
 ---
-title: Оценка экспрессии Документы Майкрософт
+title: Средство оценки выражений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738692"
 ---
 # <a name="expression-evaluator"></a>Вычислитель выражений
-Оценки экспрессии (EE) изучают синтаксис языка для разбора и оценки переменных и выражений во время выполнения, что позволяет просматривать их пользователю, когда IDE находится в режиме перерыва.
+Оценивающие выражения (EE) анализируют синтаксис языка для синтаксического анализа и оценки переменных и выражений во время выполнения, что позволяет пользователю просматривать их, когда интегрированная среда разработки находится в режиме приостановки выполнения.
 
-## <a name="use-expression-evaluators"></a>Использование оценщиков выражений
- Выражения создаются с помощью метода [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) следующим образом:
+## <a name="use-expression-evaluators"></a>Использование оценивающих выражений
+ Выражения создаются с помощью метода [парсетекст](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) следующим образом:
 
-1. Отладка двигателя (DE) реализует интерфейс [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md)
+1. Модуль отладки (DE) реализует интерфейс [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .
 
-2. Пакет отладки `IDebugExpressionContext2` получает объект из интерфейса [IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) а затем вызывает `IDebugStackFrame2::ParseText` метод на нем, чтобы получить объект [IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md)
+2. Пакет отладки получает `IDebugExpressionContext2` объект из интерфейса [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , а затем вызывает `IDebugStackFrame2::ParseText` метод для него, чтобы получить объект [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) .
 
-3. Пакет отладки вызывает метод [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или метод [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для получения значения выражения. `IDebugExpression2::EvaluateAsync`вызывается из окна Командования/Немедленного. Все остальные компоненты `IDebugExpression2::EvaluateSync`uI вызываются .
+3. Пакет отладки вызывает метод [евалуатесинк](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или метод [евалуатеасинк](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) для получения значения выражения. `IDebugExpression2::EvaluateAsync` вызывается из окна «Команда» или «интерпретация». Все остальные компоненты пользовательского интерфейса вызывают `IDebugExpression2::EvaluateSync` .
 
-4. Результатом оценки выражения является объект [IDebugProperty2,](../../extensibility/debugger/reference/idebugproperty2.md) содержащий имя, тип и значение результата оценки выражения.
+4. Результатом вычисления выражения является объект [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , который содержит имя, тип и значение результата вычисления выражения.
 
-   Во время оценки выражения EE требуется информация от компонента поставщика символов. Поставщик символов предоставляет символическую информацию, используемую для идентификации и понимания разогнанных выражений.
+   Во время вычисления выражения для EE требуются сведения из компонента поставщика символов. Поставщик символов предоставляет символьную информацию, используемую для определения и понимания проанализированного выражения.
 
-   Когда асинхронная оценка выражения завершается, асинхронное событие отправляется DE через диспетчера отладки сеанса (SDM), чтобы уведомить IDE о завершении оценки выражения. И, результат оценки затем возвращается из `IDebugExpression2::EvaluateSync` вызова в метод.
+   При завершении асинхронного вычисления выражения в DE через диспетчер отладки сеансов (SDM) отправляется асинхронное событие для уведомления интегрированной среды разработки о завершении вычисления выражения. После этого результат вычисления возвращается из вызова `IDebugExpression2::EvaluateSync` метода.
 
 ## <a name="implementation-notes"></a>Примечания по реализации
- Двигатели [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки рассчитывают поговорить с оценщиком выражения с помощью интерфейсов Common Language Runtime (CLR). В результате, оценщик выражения, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] который работает с двигателями отладки, должен поддерживать CLR (полный список всех интерфейсов отладки CLR можно найти в debugref.doc, который является частью [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Модули отладки должны взаимодействовать с вычислителем выражений с помощью интерфейсов среды CLR. В результате средство оценки выражений, работающее с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] механизмами отладки, должно поддерживать среду CLR (полный список всех интерфейсов отладки среды CLR можно найти в debugref.doc, который является частью компонента [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
-## <a name="see-also"></a>См. также
-- [Компоненты debugger](../../extensibility/debugger/debugger-components.md)
+## <a name="see-also"></a>См. также раздел
+- [Компоненты отладчика](../../extensibility/debugger/debugger-components.md)

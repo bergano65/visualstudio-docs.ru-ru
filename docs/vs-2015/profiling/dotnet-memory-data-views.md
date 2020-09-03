@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185244"
 ---
 # <a name="net-memory-data-views"></a>Представления данных в памяти .NET
@@ -24,7 +24,7 @@ ms.locfileid: "68185244"
 
 В этом разделе содержатся справочные сведения, связанные с представлениями и отчетами по файлам данных профилировщика, содержащим данные профилирования памяти .NET.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Представление "Сводка"](../profiling/summary-view-dotnet-memory-data.md)  
  Перечисляет функции и типы, которые выделяют больше всего памяти.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "68185244"
  [Представление "Дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
  Отображает иерархическое дерево, представляющее пути выполнения и данные о выделении памяти функций в сеансе профилирования.  
   
- [Представление "Модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)  
+ [Представление "Модули" — выборка](../profiling/modules-view-dotnet-memory-sampling-data.md)  
  Организует данные о выделении памяти .NET по модулям и перечисляет функции, строки исходного кода и инструкции, выполняемые при выделении памяти.  
   
  [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md) (Представление "Вызывающий/вызываемый" — данные выборки памяти .NET)  
@@ -64,7 +64,7 @@ ms.locfileid: "68185244"
  [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
  Перечисляет данные о выделении памяти для инструментированных функций в сеансе профилирования.  
   
-## <a name="reference"></a>Ссылка  
+## <a name="reference"></a>Справочник  
  [Представление "Сведения о функции"](../profiling/function-details-view.md)  
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "68185244"
  [Представление "Метки"](../profiling/marks-view.md)  
  Содержит список трассировки событий Windows и событий выборки, вставленных в файл данных профилирования.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода выборки.  
   

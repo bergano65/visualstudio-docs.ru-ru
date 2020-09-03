@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetvalueAsStringWithОшибка (ru) Документы Майкрософт
+title: 'IDebugProperty3:: Сетвалуеасстрингвисеррор | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721075"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-Устанавливает значение этого свойства и при необходимости возвращает сообщение об ошибке.
+Задает значение этого свойства и при необходимости возвращает сообщение об ошибке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Параметры
 `pszValue`\
-(в) Значение для установки.
+окне Заданное значение.
 
 `dwRadix`\
-(в) Радикс набора значения.
+окне Основание для установки значения.
 
 `dwTimeout`\
-(в) Продолжительность ожидания значения (означает`INFINITE` ждать вечно).
+окне Интервал времени ожидания установки значения ( `INFINITE` означает, что ожидание бесконечно).
 
 `errorString`\
-(ваут) Если значение было установлено ошибкой, это удерживает причину сбоя.
+заполняет Если при установке этого значения произошла ошибка, это содержит причину сбоя.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Входящие значения могут быть выражением для оценки.
+## <a name="remarks"></a>Remarks
+Входящее значение может быть вычисляемым выражением.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CProperty,** который предоставляет интерфейс [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
+В следующем примере показано, как реализовать этот метод для объекта **кпроперти** , предоставляющего интерфейс [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(
@@ -169,5 +169,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

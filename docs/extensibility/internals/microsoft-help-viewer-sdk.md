@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168740"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Пакет SDK окна справки (Майкрософт)
@@ -131,17 +131,17 @@ ms.locfileid: "88168740"
 
 Текст (не включая верхний и нижний колонтитул) раздела будет содержать ссылки на страницы, раздел примечаний, Свертываемая область, фрагмент кода и раздел текста, относящегося к конкретному языку.  Сведения об этих областях представленного раздела см. в разделе Фирменная символика.
 
-1. Добавьте тег заголовка раздела:`<div class="title">Contoso Topic 4</div>`
+1. Добавьте тег заголовка раздела:  `<div class="title">Contoso Topic 4</div>`
 
-2. Добавить раздел примечаний:`<div class="alert"> add your table tag and text </div>`
+2. Добавить раздел примечаний: `<div class="alert"> add your table tag and text </div>`
 
-3. Добавление сворачиваемой области:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Добавление сворачиваемой области:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Добавьте фрагмент кода:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Добавьте фрагмент кода:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Добавить текст, зависящий от языка кода. `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Обратите внимание, что `devLangnu=` позволяет вводить другие языки. Например, `devLangnu="Fortran"` отображает Fortran, когда фрагмент кода дисплайлангуаже = Fortran.
+5. Добавить текст, зависящий от языка кода.  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Обратите внимание, что `devLangnu=` позволяет вводить другие языки. Например, `devLangnu="Fortran"` отображает Fortran, когда фрагмент кода дисплайлангуаже = Fortran.
 
-6. Добавить ссылки на страницы:`<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. Добавить ссылки на страницы: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Примечание. для неподдерживаемого нового языка "язык интерфейса" (например, F #, COBOL, Fortran) фрагмент кода будет монохромным.
@@ -449,12 +449,12 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 | - | - |
 | Функция: | **коллапсиблеареа** |
 | Используйте следующую команду: | Разворачивание свертывания текста элемента управления содержимым |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | експандтекст | Разверните |
 | коллапсетекст | Свернуть |
 | Функция: | **CodeSnippet** |
 | Используйте следующую команду: | Текст элемента управления фрагмента кода.  Примечание. содержимое фрагмента кода с "неразрывным" пространством будет заменено на "пространство". |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | копитоклипбоард | Копировать в буфер обмена |
 | виевколоризедтекст | Просмотр с выделением цветом |
 | комбинедвбтабдисплайлангуаже | Visual Basic (пример) |
@@ -471,7 +471,7 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 | логофиленамехк | vs_logo_wh.gif |
 | Функция: | **Отказ от ответственности** |
 | Используйте следующую команду: | Набор относящихся к регистру отказов для содержимого машинного перевода. |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | MT_Editable | Эта статья переведена на машинный перевод. При наличии подключения к Интернету выберите "просмотреть этот раздел в сети", чтобы просмотреть эту страницу в режиме редактирования с исходным содержимым на английском языке одновременно. |
 | MT_NonEditable | Эта статья переведена на машинный перевод. При наличии подключения к Интернету выберите "просмотреть этот раздел в сети", чтобы просмотреть эту страницу в режиме редактирования с исходным содержимым на английском языке одновременно. |
 | MT_QualityEditable | Эта статья переведена вручную. При наличии подключения к Интернету выберите "просмотреть этот раздел в сети", чтобы просмотреть эту страницу в режиме редактирования с исходным содержимым на английском языке одновременно. |
@@ -480,14 +480,14 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 | MT_BetaRecycledContents | Эта статья была переведена вручную для предварительного выпуска. При наличии подключения к Интернету выберите "просмотреть этот раздел в сети", чтобы просмотреть эту страницу в режиме редактирования с исходным содержимым на английском языке одновременно. |
 | Функция: | **линктабле** |
 | Используйте следующую команду: | Поддержка ссылок на разделы в Интернете |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | линктаблетитле | Таблица связей |
 | топиценулинктекст | Просмотрите английскую версию \</a> этой статьи, которая доступна на вашем компьютере. |
 | топиконлинелинктекст | Просмотреть этот раздел в \<a href="{0}" {1}> Интернете\</a> |
 | онлинетекст | Миграция по сети |
 | Функция: | **Управление звуком видео** |
 | Используйте следующую команду: | Отображение элементов и текста для видеоматериала |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | мултимедианотсуппортед | Для поддержки содержимого необходимо установить Internet Explorer 9 или более поздней версии {0} . |
 | видеотекст | отображение видео |
 | аудиотекст | Потоковая передача звука |
@@ -495,25 +495,25 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 | онлинеаудиолинктекст | \<p>Чтобы прослушать звук, связанный с этим разделом, щелкните {0} \<a href="{1}"> {2} здесь \</a> .\</p> |
 | Функция: | **Управление содержимым не установлено** |
 | Используйте следующую команду: | Текстовые элементы (строки), используемые для отрисовки contentnotinstalled.htm |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | контентнотинсталледтитле | Содержимое на вашем компьютере не найдено. |
 | контентнотинсталледдовнлоадконтенттекст | \<p>Чтобы загрузить содержимое на компьютер, \<a href="{0}" {1}> перейдите на вкладку Управление \</a> .\</p> |
 | контентнотинсталледтекст | \<p>На компьютере не установлено ни одного содержимого. Обратитесь к администратору для установки содержимого локальной справки.\</p> |
 | Функция: | **Элемент управления раздела не найден** |
 | Используйте следующую команду: | Текстовые элементы (строки), используемые для отрисовки topicnotfound.htm |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | топикнотфаундтитле | Не удается найти запрошенный раздел на компьютере. |
 | топикнотфаундвиевонлинетекст | \<p>Запрошенный раздел не найден на компьютере, но вы можете \<a href="{0}" {1}> просмотреть раздел в Интернете \</a> .\</p> |
 | топикнотфаунддовнлоадконтенттекст | \<p>Ссылки на Похожие разделы см. в области навигации или на \<a href="{0}" {1}> вкладке Управление \</a> для загрузки содержимого на компьютер.\</p> |
 | топикнотфаундтекст | \<p>Запрошенный раздел не найден на вашем компьютере.\</p> |
 | Функция: | **Поврежденный элемент управления раздела** |
 | Используйте следующую команду: | Текстовые элементы (строки), используемые для отрисовки topiccorrupted.htm |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | топиккорруптедтитле | Не удалось отобразить запрошенный раздел. |
 | топиккорруптедвиевонлинетекст | \<p>Средству просмотра справки не удалось отобразить запрошенный раздел. Возможно, произошла ошибка в содержимом раздела или базовой системной зависимости.\</p> |
 | Функция: | **Элемент управления домашней страницы** |
 | Используйте следующую команду: | Текст, поддерживающий отображение содержимого узла верхнего уровня окна справки. |
-| **Element** | **Value** |
+| **Element** | **Значение** |
 | HomePageTitle | Домашняя страница средства просмотра справки |
 | хомепажеинтродуктион | \<p>Добро пожаловать в окно справки (Майкрософт) — важный источник информации для всех пользователей, использующих средства, продукты, технологии и службы Майкрософт. Средство просмотра справки предоставляет доступ к инструкциям и справочным сведениям, примерам кода, техническим статьям и т. д. Чтобы найти нужные материалы, просмотрите оглавление, используйте полнотекстовый поиск или перейдите по содержимому с помощью ключевого слова index.\</p> |
 | хомепажеконтентинсталлтекст | \<p>\<br />Используйте \<a href="{0}" {1}> вкладку Управление содержимым, \</a> чтобы сделать следующее: \<ul> \<li> Добавить содержимое на компьютер. \</li> \<li> Проверьте наличие обновлений для локального содержимого. \</li> \<li> Удаление содержимого с компьютера.\</li>\</ul>\</p> |
@@ -566,22 +566,22 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 |**Файл**|**Использование**|**Отображаемый источник содержимого**|
 |-|-|-|
 |homepage.htm|Это страница, на которой отображается текущее установленное содержимое, а также любое другое сообщение, подходящее пользователю о своем содержимом.  Этот файл содержит дополнительный атрибут метаданных "Microsoft.Help.Id" Content = "-1", который размещает это содержимое в верхней части ОГЛАВЛЕНИя локального содержимого.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, тег\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, тег\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, тег\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Раздел заголовков Branding.xml тег \<HomePageInstalledBooks> , данные, созданные из приложения, \<HomePageNoBooksInstalled> Если книги не установлены.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, тег \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, тег \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, тег \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Раздел заголовков Branding.xml тег \<HomePageInstalledBooks> , данные, созданные из приложения,  \<HomePageNoBooksInstalled> Если книги не установлены.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Раздел заголовка Branding.xml тег \<HomePageHelpSettings> , текст раздела \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Если раздел существует в локальном наборе, но по какой-либо причине не может быть отображено (поврежденное содержимое).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, тег\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, тег\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, тег \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, тег \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Если раздел не найден в локальном наборе содержимого и не доступен в сети||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, тег\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, тег\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, тег\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, тег \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, тег \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, тег \<TopicNotFoundText>|
 |contentnotinstalled.htm|Если для продукта не установлено локальное содержимое.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, тег\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, тег\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, тег\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, тег \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, тег \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, тег \<ContentNotInstalledText>|
 
 **Файлы CSS**
 
@@ -741,9 +741,9 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 
 Чтобы создать расширение изолированной оболочки, выполните следующие действия.
 
-1. В Visual Studio в разделе **файл**выберите **Новый проект**, в разделе **другие типы проектов** выберите **расширяемость**, а затем выберите **изолированная оболочка Visual Studio**. Присвойте проекту имя, `ContosoHelpShell` чтобы создать проект расширения, основанный на шаблоне изолированной оболочки Visual Studio.
+1. В Visual Studio в разделе **файл**выберите **Новый проект**, в разделе **другие типы проектов** выберите **расширяемость**, а затем выберите  **изолированная оболочка Visual Studio**. Присвойте проекту имя, `ContosoHelpShell` чтобы создать проект расширения, основанный на шаблоне изолированной оболочки Visual Studio.
 
-2. В обозреватель решений в проекте Контосохелпшеллуи в папке файлы ресурсов откройте файл ApplicationCommands. vsct. Убедитесь, что эта строка снабжена комментариями (выполните поиск по запросу "No_Help"):`<!-- <define name="No_HelpMenuCommands"/> -->`
+2. В обозреватель решений в проекте Контосохелпшеллуи в папке файлы ресурсов откройте файл ApplicationCommands. vsct. Убедитесь, что эта строка снабжена комментариями (выполните поиск по запросу "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
 3. Нажмите клавишу F5, чтобы скомпилировать и запустить **отладку**. В экспериментальном экземпляре интегрированной среды разработки изолированной оболочки выберите меню **Справка** . Убедитесь, что отображаются команды **Просмотр справки**, **Добавление и удаление содержимого справки**и **Настройка параметров справки** .
 
@@ -785,7 +785,7 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 
 3. Скопируйте содержимое из папки Release Контосохелпшелл в \\ папку \Program Files (x86) \контосо\.
 
-4. Запустите редактор реестра, выбрав команду **выполнить** в меню **Пуск** и введя `Regedit` . В редакторе реестра выберите **файл**, а затем **Импорт**. Перейдите в папку проекта Контосохелпшелл. В подпапке Контосохелпшелл выберите Контосохелпшелл. reg.
+4. Запустите редактор реестра, выбрав команду  **выполнить** в меню **Пуск** и введя `Regedit` . В редакторе реестра выберите **файл**, а затем **Импорт**. Перейдите в папку проекта Контосохелпшелл. В подпапке Контосохелпшелл выберите Контосохелпшелл. reg.
 
 5. Создайте хранилище содержимого.
 
@@ -808,7 +808,7 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15
 
-    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Интегрированная оболочка:
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Интегрированная оболочка:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 

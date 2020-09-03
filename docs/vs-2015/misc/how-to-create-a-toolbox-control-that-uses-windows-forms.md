@@ -12,10 +12,10 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850324"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Практическое руководство. Создание элемента управления панели элементов, использующего Windows Forms
@@ -29,7 +29,7 @@ ms.locfileid: "75850324"
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Создание проекта элемента управления панели элементов Windows Forms  
   
-1. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
+1. В меню **Файл** выберите **Создать**, а затем пункт **Проект**.  
   
 2. В диалоговом окне **создания проекта** в разделе **Установленные шаблоны**щелкните узел предпочтительного языка программирования, а затем выберите пункт **Расширяемость**. В списке типов проектов выберите пункт **Элемент управления панели элементов Windows Forms**.  
   
@@ -89,5 +89,5 @@ ms.locfileid: "75850324"
   
      При передаче файла на веб-сайт [Visual Studio Marketplace](https://marketplace.visualstudio.com/) другие пользователи могут использовать **Диспетчер расширений** в Visual Studio для нахождения элемента управления и его установки.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)

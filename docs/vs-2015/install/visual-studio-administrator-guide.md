@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295921"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
@@ -42,11 +42,11 @@ ms.locfileid: "74295921"
   
 |Состояние установки|Перезагрузка не требуется|Требуется перезагрузка|Описание|  
 |------------------|--------------------------|----------------------|-----------------|  
-|Success|0x00000000 [0]|0x00000bc2 [3010]|Установка выполнена успешно.|  
-|Block|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Если единственная блокировка, о которой сообщается, это "Ожидается перезагрузка", возвращаемое значение — Incomplete-Reboot Required (0x80048bc7).|  
-|Отмена|0x00000642 [1602]|0x80048642 [-2147187134]|Если возвращено значение перезагрузки, код возврата — 1602.|  
+|Успех|0x00000000 [0]|0x00000bc2 [3010]|Установка выполнена успешно.|  
+|Блокировать|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Если единственная блокировка, о которой сообщается, это "Ожидается перезагрузка", возвращаемое значение — Incomplete-Reboot Required (0x80048bc7).|  
+|Отменить|0x00000642 [1602]|0x80048642 [-2147187134]|Если возвращено значение перезагрузки, код возврата — 1602.|  
 |Incomplete-Reboot Required|Н/Д|0x80048bc7 [-2147185721]|Прежде чем можно будет продолжить установку, требуется перезагрузка.|  
-|Failure|0x00000643 [1603]|0x80048643 [-2147187133]|Если возвращено значение перезагрузки, код возврата — 1603.|  
+|Сбой|0x00000643 [1603]|0x80048643 [-2147187133]|Если возвращено значение перезагрузки, код возврата — 1603.|  
   
 ## <a name="interactive-administrator-installer"></a>Интерактивный установщик администратора  
  При создании интерактивного установщика поверх установки Visual Studio ход выполнения можно отслеживать из установщика Visual Studio. Установщик Visual Studio 2015 основан на технологии формирователя цепочки с открытым кодом Windows Installer XML (WiX), также называемой записью. Технология записи поддерживает два протокола связи: burn и netfx4. Краткий справочник см. в описании атрибута Protocol в документации по элементу Ексепаккаже по адресу [wixtoolset.org](https://wixtoolset.org/). Для интеграции может потребоваться проверка реализации этого атрибута протокола с открытым кодом WiX.  
@@ -65,12 +65,12 @@ ms.locfileid: "74295921"
   
 (Например, изменить эту строку на HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0".)  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
 |Раздел|Описание|  
 |-----------|-----------------|  
-|[Практическое руководство. Установка конкретного выпуска Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Описывает установку конкретных конфигураций текущей версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Практическое руководство. Создание и выполнение автоматической установки Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Описание установки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в автоматическом режиме.|  
-|[Практическое руководство. Автоматическое применение ключей продуктов при развертывании Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Описывает, как применять ключи продуктов при развертывании на нескольких компьютерах.|  
+|[Практическое руководство. Установка конкретного выпуска Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Описывает установку конкретных конфигураций текущей версии  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|[How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Описание установки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в автоматическом режиме.|  
+|[How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Описывает, как применять ключи продуктов при развертывании на нескольких компьютерах.|  
 |[Руководство администратора Help Viewer](../ide/help-viewer-administrator-guide.md)|Содержит сведения об управлении локальными установками справки для сетевых сред, которые имеют или не имеют доступа к Интернету.|  
-|[Установка Visual Studio](../install/install-visual-studio-2015.md)|Содержит инструкции и ссылки на разделы, в которых описывается установка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Установка Visual Studio](../install/install-visual-studio-2015.md)|Содержит инструкции и ссылки на разделы, в которых описывается установка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

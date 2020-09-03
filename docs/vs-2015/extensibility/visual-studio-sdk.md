@@ -15,10 +15,10 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850370"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
@@ -75,9 +75,9 @@ ms.locfileid: "75850370"
   
 - [Расширение Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Как перенести проекты расширяемости в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [Руководство. Миграция проектов расширяемости в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)   
@@ -91,10 +91,10 @@ ms.locfileid: "75850370"
  [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Использование и предоставление служб](../extensibility/using-and-providing-services.md)   
  [Расширение Подключенные службы](../extensibility/extending-connected-services.md)   
- [Управление](../extensibility/managing-vspackages.md) пакетами VSPackage   
-   [изолированной оболочки Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
+ [Управление пакетами VSPackage](../extensibility/managing-vspackages.md)   
+ [Изолированная оболочка Visual Studio](../extensibility/visual-studio-isolated-shell.md)   
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
- В [пакете SDK для Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)   
+ [В пакете SDK для Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Поддержка пакета SDK для Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
-   [архива](../extensibility/archive.md)  
+ [Упражнени](../extensibility/archive.md)   
  [Справочник по пакету SDK для Visual Studio](../extensibility/visual-studio-sdk-reference.md)

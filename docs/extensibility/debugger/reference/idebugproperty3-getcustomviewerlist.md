@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList Документы Майкрософт
+title: 'IDebugProperty3:: Жеткустомвиеверлист | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721161"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Получает список пользовательских зрителей, связанных с этим свойством.
+Возвращает список пользовательских средств просмотра, связанных с этим свойством.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,27 +47,27 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Параметры
 `celtSkip`\
-(в) Количество зрителей, чтобы пропустить.
+окне Число посетителей для пропуска.
 
 `celtRequested`\
-(в) Количество зрителей для получения (также указывает размер массива). `rgViewers`
+окне Число получаемых средств просмотра (также определяет размер `rgViewers` массива).
 
 `rgViewers`\
-(в, вне) Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур, которые должны быть заполнены.
+[вход, выход] Массив [DEBUG_CUSTOM_VIEWERных](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур, которые необходимо заполнить.
 
 `pceltFetched`\
-(ваут) Фактическое количество зрителей вернулось.
+заполняет Фактическое число возвращаемых средств просмотра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Для поддержки визуализаторов типов этот метод перенаправляет вызов на метод [GetCustomViewerList.](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) Если оценщик выражения также поддерживает пользовательские просмотрели для типа этого свойства, этот метод может причислить соответствующих пользовательских зрителей к списку.
+## <a name="remarks"></a>Remarks
+Для поддержки визуализаторов типов этот метод пересылает вызов методу [жеткустомвиеверлист](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) . Если средство оценки выражений также поддерживает пользовательские средства просмотра для типа этого свойства, этот метод может добавлять к списку соответствующие пользовательские средства просмотра.
 
-См [Тип Визуализатор и пользовательский зритель](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) для получения подробной информации о различиях между типом визуализаторов и пользовательских зрителей.
+Дополнительные сведения о различиях между визуализаторами типов и пользовательскими средствами просмотра см. в разделе [Визуализатор типов и пользовательское средство](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) .
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для объекта **CProperty,** который предоставляет интерфейс [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
+В следующем примере показано, как реализовать этот метод для объекта **кпроперти** , предоставляющего интерфейс [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)
@@ -88,7 +88,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

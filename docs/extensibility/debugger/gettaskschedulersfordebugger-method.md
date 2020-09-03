@@ -1,5 +1,5 @@
 ---
-title: Метод GetTaskSchedulersForDebugger (англ.) Документы Майкрософт
+title: Метод Жеттасксчедулерсфордебугжер | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738645"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Метод GetTaskSchedulersForDebugger
-Извлекает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые в настоящее время активны.
+Извлекает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в данный момент.
 
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
+ Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +33,10 @@ ms.locfileid: "80738645"
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
- Массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые в <xref:System.AppDomain>настоящее время активны в этом.
+ Массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые в настоящее время активны в данный момент <xref:System.AppDomain> .
 
-## <a name="remarks"></a>Примечания
- Этот метод не является безопасным потоком, и вы не <xref:System.Threading.Tasks.TaskScheduler>должны использовать его одновременно с другими экземплярами. Вызов ими метода отладчика только тогда, когда отладчик приостановил все другие потоки.
+## <a name="remarks"></a>Remarks
+ Этот метод не является потокобезопасным, и его нельзя использовать параллельно с другими экземплярами <xref:System.Threading.Tasks.TaskScheduler> . Вызывайте этот метод из отладчика только в том случае, если отладчик приостановил все остальные потоки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Класс TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

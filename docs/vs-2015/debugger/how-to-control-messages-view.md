@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Элемент управления представлением "сообщения" | Документация Майкрософт
+title: Практическое руководство. Управление представлением сообщений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,23 +13,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66e7b546b507f1f96dbd4aa4a62b4db501eff2fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185162"
 ---
 # <a name="how-to-control-messages-view"></a>Практическое руководство. Управление представлением "Сообщения"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-С помощью Spy ++, у вас есть значительной степени контролировать содержимое [представления сообщений](../debugger/messages-view.md) окна. Вы можете [запускать и останавливать](../debugger/how-to-start-and-stop-the-message-log-display.md) отображение сообщений в любое время и вы можете указать:  
+В Spy++ доступны различные возможности управления содержимым окна [представления сообщений](../debugger/messages-view.md). Вы можете [запустить и прекратить](../debugger/how-to-start-and-stop-the-message-log-display.md) отображение сообщений в любое время, а также определить следующее:  
   
-- Тип сообщений, которые вы хотите просмотреть.  
+- сообщения каких типов должны отображаться;  
   
-- Какие windows, вы хотите отслеживать.  
+- какие окна необходимо отслеживать;  
   
-- Формат отображения для строки сообщения.  
+- формат отображения для строк сообщений.  
   
-  Эти параметры доступны в [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), и они применяются только к активному [представления сообщений](../debugger/messages-view.md) окна. Чтобы открыть это диалоговое окно, выберите **сообщений журнала** из **Spy** меню.  
+  Эти параметры доступны в диалоговом окне [Параметры сообщений](../debugger/message-options-dialog-box.md) и применяются только к активному окну [представления сообщений](../debugger/messages-view.md). Чтобы открыть это диалоговое окно, в меню **Spy** выберите пункт **Записывать сообщения**.  
   
-  Доступны три вкладки Параметры сообщения. Для получения дополнительных сведений см. в разделе [вкладка «Windows», диалоговое окно "Параметры сообщения"](../debugger/windows-tab-message-options-dialog-box.md), [вкладка "сообщения", диалоговое окно "Параметры сообщения"](../debugger/messages-tab-message-options-dialog-box.md), и [вкладка «Вывод», диалоговое окно "Параметры сообщения"](../debugger/output-tab-message-options-dialog-box.md).
+  В нем доступны три вкладки параметров сообщений. Дополнительные сведения см. в статьях [Вкладка "Окна" диалогового окна "Параметры сообщений"](../debugger/windows-tab-message-options-dialog-box.md), [Вкладка "Сообщения" диалогового окна "Параметры сообщений"](../debugger/messages-tab-message-options-dialog-box.md) и [Вкладка "Вывод" диалогового окна "Параметры сообщений"](../debugger/output-tab-message-options-dialog-box.md).

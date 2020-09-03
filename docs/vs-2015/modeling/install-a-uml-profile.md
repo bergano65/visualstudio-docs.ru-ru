@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850654"
 ---
 # <a name="install-a-uml-profile"></a>Установка профиля UML
@@ -45,5 +45,5 @@ ms.locfileid: "75850654"
 
 2. Выберите расширение, которое требуется удалить, а затем нажмите кнопку **Отключить** или **Удалить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md)
