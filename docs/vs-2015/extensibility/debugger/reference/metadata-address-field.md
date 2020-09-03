@@ -13,13 +13,13 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c3f3697473a20a2f62f4209a0bdbae89c30b8e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181152"
 ---
-# <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
+# <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Эта структура представляет адрес поля класса или структуры.  
@@ -39,22 +39,22 @@ public struct METADATA_ADDRESS_FIELD {
 ```  
   
 ## <a name="terms"></a>Термины  
- tokField  
- Идентификатор поля токена.  
+ токфиелд  
+ Идентификатор маркера поля.  
   
- [C++] `_mdToken` — `typedef` для 32-разрядных `int`.  
+ [C++] `_mdToken` — `typedef` для 32-разрядного `int` .  
   
-## <a name="remarks"></a>Примечания  
- Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_FIELD` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).  
+## <a name="remarks"></a>Remarks  
+ Эта структура является частью объединения в структуре [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , если `dwKind` поле `DEBUG_ADDRESS_UNION` структуры имеет `ADDRESS_KIND_FIELD` значение (Value из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

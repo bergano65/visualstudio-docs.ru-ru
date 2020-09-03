@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugАдреса Документы Майкрософт
+title: Иенумдебугаддрессес | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717582"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
-Этот интерфейс представляет собой набор объектов, реализующих интерфейс [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+Этот интерфейс представляет коллекцию объектов, реализующих интерфейс [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,34 +28,34 @@ ms.locfileid: "80717582"
 IEnumDebugAdresses : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован поставщиком символов для предоставления наборов объектов, реализующих интерфейс [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Обратите внимание, что это не стандартный пересчет COM из-за присутствия метода [GetCount.](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется поставщиком символов для предоставления наборов объектов, реализующих интерфейс [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) . Обратите внимание, что это не стандартное перечисление COM из-за наличия метода [NOCOUNT](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) .
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Этот интерфейс возвращается [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) и [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот интерфейс возвращается [жетаддрессесфромконтекст](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) и [жетаддрессесфромпоситион](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
+## <a name="methods-in-vtable-order"></a>Методы в порядке vtable
  Этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Далее](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Извлекает следующий набор объектов [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) из перечисления.|
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Пропускает определенное количество записей.|
-|[Сбросить](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Сброс исчисляется перечислением первой записи.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md) (Клонировать)|Извлекает копию текущего перечисления.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Извлекает количество записей в перечислении.|
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Извлекает из перечисления следующий набор объектов [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Пропускает указанное число записей.|
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Сбрасывает перечисление до первой записи.|
+|[Клонировать](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Извлекает копию текущего перечисления.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Возвращает количество записей в перечислении.|
 
-## <a name="remarks"></a>Примечания
- Этот интерфейс обычно используется движком отладки, чтобы помочь определить подходящий адрес, чтобы дать оценщику выражения.
+## <a name="remarks"></a>Remarks
+ Этот интерфейс обычно используется модулем отладки для определения подходящего адреса, который будет предоставлен средству оценки выражений.
 
 ## <a name="requirements"></a>Требования
- Заголовок: sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)

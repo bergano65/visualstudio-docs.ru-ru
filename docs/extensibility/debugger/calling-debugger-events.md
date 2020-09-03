@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904317"
 ---
 # <a name="call-debugger-events"></a>События отладчика Call
 События в сеансах отладки выполняются в определенном порядке.
 
-## <a name="discussion"></a>Обсуждение
+## <a name="discussion"></a>Разговор
  Чтобы понять схему вызовов между модулем отладки (DE) и диспетчером отладки сеансов (SDM), ниже представлен порядок вызова событий, происходящих в типичном сеансе отладки.
 
 1. [Присоединение и отсоединение программы](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
@@ -47,5 +47,5 @@ ms.locfileid: "85904317"
 
 12. [Обработка исключений](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)

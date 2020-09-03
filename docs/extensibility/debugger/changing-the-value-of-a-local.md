@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904267"
 ---
 # <a name="change-the-value-of-a-local"></a>Изменение значения локального
@@ -42,9 +42,9 @@ ms.locfileid: "85904267"
 
    Эта процедура также используется для изменения значения переменной в окне **контрольных** значений, за исключением того, что это `IDebugProperty2` объект, связанный со значением локального объекта, который используется вместо `IDebugProperty2` объекта, связанного с локальным.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
  [Пример реализации изменяемых значений](../../extensibility/debugger/sample-implementation-of-changing-values.md) Использует пример Мицее для пошагового выполнения процесса изменения значений.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Написание вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)

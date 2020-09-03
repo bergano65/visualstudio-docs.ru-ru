@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14c9f36c82445f5279615591d38b110163a0829d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181132"
 ---
-# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+# <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает состояние символы для модуля.  
+Указывает состояние символов для модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,18 +41,18 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>Участники  
  MIF_SYMBOLS_LOADED  
- По крайней мере один набор символов был загружен в модуле (в противном случае не были загружены символы).  
+ Модуль загрузил по крайней мере один набор символов (в противном случае символы не были загружены).  
   
-## <a name="remarks"></a>Примечания  
- Это значение возвращается по [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Это значение возвращается методом [жетсимболсеарчинфо](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

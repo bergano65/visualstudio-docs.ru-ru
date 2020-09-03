@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255510"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Настройка ленты для InfoPath
@@ -29,7 +29,7 @@ ms.locfileid: "71255510"
 
 - Окно предварительного просмотра перед печатью.
 
-  **Применимо к:** Сведения в этом разделе относятся к проектам надстроек VSTO для InfoPath 2010. Дополнительные сведения см. в разделе [доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).
+  **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для InfoPath 2010. Дополнительные сведения см. в разделе [доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).
 
   Пользователи и разработчики открывают шаблон формы в режиме конструктора, чтобы изменить внешний вид и макет шаблона. Пользователи открывают формы, созданные на основе шаблона формы, для добавления содержимого.
 
@@ -65,4 +65,4 @@ ms.locfileid: "71255510"
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор ленты](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
+- [XML-ленты](../vsto/ribbon-xml.md)

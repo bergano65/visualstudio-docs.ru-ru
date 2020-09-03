@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::Attach | Документация Майкрософт
+title: 'IDebugEngine2:: Attach | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a82d26fbfd6fe08f4976aaa7643bcaa95008032f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196046"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Присоединяет отладчик (DE) к программе или программы. Вызывается диспетчером сеанса отладки (SDM), в то время когда DE выполняется в процессе для SDM.  
+Присоединяет модуль отладки (DE) к программе или программам. Вызывается диспетчером отладки сеанса (SDM), когда DE выполняется в процессе в SDM.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,47 +48,47 @@ int Attach( 
   
 #### <a name="parameters"></a>Параметры  
  `pProgram`  
- [in] Массив [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекты, представляющие программы должны быть присоединены к. Это порт программы.  
+ окне Массив объектов [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющих программы, к которым следует присоединиться. Это программы порта.  
   
  `rgpProgramNodes`  
- [in] Массив [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объекты, представляющие программы узлов, по одному для каждой программы. Узлы программы в этом массиве представляют же программы, как показано на `pProgram`. Узлы программы предоставляется таким образом, DE может распознавать программы, чтобы присоединить.  
+ окне Массив объектов [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющих узлы программы, по одному для каждой программы. Узлы программы в этом массиве представляют те же программы, что и в `pProgram` . Узлы программы предоставляются таким образом, чтобы программа DE могла определить программы, к которым следует присоединиться.  
   
  `celtPrograms`  
- [in] Количество программ и узлах программы `pProgram` и `rgpProgramNodes` массивов.  
+ окне Количество программ и/или узлов программ в `pProgram` `rgpProgramNodes` массивах и.  
   
  `pCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для отправки событий отладки SDM.  
+ окне Объект [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , который будет использоваться для отправки событий отладки в SDM.  
   
  `dwReason`  
- [in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, которое указывает причину для присоединения этих программ. Дополнительные сведения см. в разделе "Примечания".  
+ окне Значение из перечисления [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) , указывающее причину присоединения этих программ. Дополнительные сведения см. в разделе "Примечания".  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Существуют три причины для присоединения к программе, следующим образом:  
+## <a name="remarks"></a>Remarks  
+ Существует три причины присоединения к программе следующим образом.  
   
-- `ATTACH_REASON_LAUNCH` Указывает, что DE присоединяется к программы, так как пользователь запустит процесс, который его содержит.  
+- `ATTACH_REASON_LAUNCH` Указывает, что DE присоединяется к программе, так как пользователь запускает процесс, который его содержит.  
   
-- `ATTACH_REASON_USER` Указывает, что пользователь явно запросил DE для присоединения к программе (или процесс, который содержит программу).  
+- `ATTACH_REASON_USER` Указывает, что пользователь явным образом запросил соединение DE к программе (или процессу, содержащему программу).  
   
-- `ATTACH_REASON_AUTO` Указывает, что DE присоединяется к конкретной программы, так как он уже отладки других программ в определенном процессе. Это также называется автоматического присоединения.  
+- `ATTACH_REASON_AUTO` Указывает, что DE присоединяется к определенной программе, поскольку уже выполняется отладка других программ в определенном процессе. Это также называется присоединением.  
   
-  При вызове этого метода, DE должен отправить эти события в последовательности:  
+  При вызове этого метода метод DE должен отправить эти события последовательно:  
   
-1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (если он не уже был отправлен для конкретного экземпляра модуля отладки)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (если он еще не был отправлен для конкретного экземпляра модуля отладки)  
   
 2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
 3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
-   Кроме того, если присоединение связано `ATTACH_REASON_LAUNCH`, DE должен отправить [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) событий.  
+   Кроме того, если причиной присоединения является `ATTACH_REASON_LAUNCH` , то de должен отправить событие [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) .  
   
-   Приведенный ниже код один раз получает DE [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объект, соответствующий отлаживаемой программы могут запрашиваться для любого частного интерфейса.  
+   После того, как программа DE получает объект [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , соответствующий отлаживаемой программе, она может быть запрошена для любого частного интерфейса.  
   
-   Перед вызовом методов, программа узла в массиве, выданный `pProgram` или `rgpProgramNodes`, олицетворение, при необходимости, должен быть включен на `IDebugProgram2` интерфейс, представляющий узел программы. Как правило тем не менее, этот шаг необязателен. Дополнительные сведения см. в разделе [проблемы безопасности](../../../extensibility/debugger/security-issues.md).  
+   Перед вызовом методов узла программы в массиве, заданном параметром `pProgram` или `rgpProgramNodes` , необходимо включить олицетворение (при необходимости) для `IDebugProgram2` интерфейса, представляющего узел программы. Однако обычно этот шаг не требуется. Дополнительные сведения см. в разделе [вопросы безопасности](../../../extensibility/debugger/security-issues.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

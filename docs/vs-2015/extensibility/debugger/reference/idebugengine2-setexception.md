@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException | Документация Майкрософт
+title: 'IDebugEngine2:: Сетексцептион | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a7001b502d3d0296ab35d3753c7c2ac0ddc5623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195978"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает, как модуль отладки (DE) должен обрабатывать данного исключения.  
+Указывает, как модуль отладки (DE) должен выполнять обработку данного исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,14 +40,14 @@ int SetException( 
   
 #### <a name="parameters"></a>Параметры  
  `pException`  
- [in] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структура, описывающая исключение и как выполнить его отладку.  
+ окне Структура [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , описывающая исключение и способ его отладки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Чтобы остановить программу, генерации исключения в первый шанс обработки, второй вероятность того, можно было передать инструкцию DE или вообще не.  
+## <a name="remarks"></a>Remarks  
+ Команда DE может быть указана для того, чтобы программа не создавала исключение при первой попытке, во второй вероятности или вообще не была.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

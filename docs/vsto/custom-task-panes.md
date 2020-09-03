@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254398"
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
@@ -56,7 +56,7 @@ ms.locfileid: "71254398"
 
 2. Создайте экземпляр настраиваемой области задач путем передачи пользовательского элемента управления в объект <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> в надстройке VSTO. Эта коллекция возвращает новый объект <xref:Microsoft.Office.Tools.CustomTaskPane>, который можно использовать для изменения внешнего вида области задач и реагирования на инициируемые пользователем события.
 
-   Дополнительные сведения см. в разделе [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+   Дополнительные сведения см. в разделе [инструкции. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 ### <a name="create-the-user-interface"></a>Создание пользовательского интерфейса
  Все настраиваемые области задач, созданные с помощью средств разработки Office в Visual Studio, содержат объект <xref:System.Windows.Forms.UserControl>. Этот пользовательский элемент управления предоставляет пользовательский интерфейс настраиваемой области задач. Пользовательский элемент управления можно создать во время разработки или во время выполнения. При создании пользовательского элемента управления во время разработки можно использовать конструктор Windows Forms для создания пользовательского интерфейса своей области задач.
@@ -83,7 +83,7 @@ ms.locfileid: "71254398"
 ## <a name="access-the-application-from-the-task-pane"></a>Доступ к приложению из области задач
  Если требуется автоматизация приложения из пользовательского элемента управления, к объектной модели можно непосредственно обращаться с помощью `Globals.ThisAddIn.Application` в своем коде. Доступ к объекту `ThisAddIn` обеспечивает статический класс `Globals`. Поле `Application` данного объекта является точкой входа в объектную модель приложения.
 
- Дополнительные сведения о поле `Application` `ThisAddIn` объекта см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Пошаговое руководство, в котором показано, как автоматизировать приложение с помощью настраиваемой области [задач, см. в разделе Пошаговое руководство. Автоматическое приложение из настраиваемой области](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)задач. Дополнительные сведения о `Globals` классе см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Дополнительные сведения о `Application` поле `ThisAddIn` объекта см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Пошаговое руководство по автоматизации приложения из настраиваемой области задач см. в разделе [Пошаговое руководство. Автоматическое приложение из настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Дополнительные сведения о `Globals` классе см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).
 
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Управление пользовательским интерфейсом области задач
  После создания области задач можно использовать свойства и события объекта <xref:Microsoft.Office.Tools.CustomTaskPane> для управления пользовательским интерфейсом области задач и реагирования на изменение пользователем области задач.
@@ -93,7 +93,7 @@ ms.locfileid: "71254398"
 
  Пользователи могут закрыть область задач в любое время, нажав кнопку **Закрыть** (X) в углу области задач. Тем не менее у пользователей нет стандартного способа, чтобы снова открыть настраиваемую область задач. Если пользователь закрывает настраиваемую область задач, он сможет снова ее увидеть только в том случае, если вы предоставите ему такую возможность.
 
- При создании настраиваемой области задач в своей надстройке VSTO также следует создать элемент пользовательского интерфейса, например кнопку, которую пользователи могут нажать, чтобы отобразить или скрыть эту область. При создании настраиваемой области задач в приложении Microsoft Office, поддерживающем настройку ленты, на ленте можно добавить группу элементов управления с кнопкой, при нажатии которой эта область будет отображаться или закрываться. Пошаговое руководство, в котором показано, как это [сделать, см. в разделе Пошаговое руководство. Синхронизация настраиваемой области задач с помощью кнопки](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)на ленте.
+ При создании настраиваемой области задач в своей надстройке VSTO также следует создать элемент пользовательского интерфейса, например кнопку, которую пользователи могут нажать, чтобы отобразить или скрыть эту область. При создании настраиваемой области задач в приложении Microsoft Office, поддерживающем настройку ленты, на ленте можно добавить группу элементов управления с кнопкой, при нажатии которой эта область будет отображаться или закрываться. Пошаговое руководство, в котором показано, как это сделать, см. в разделе [Пошаговое руководство. Синхронизация настраиваемой области задач с помощью кнопки на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
  При создании настраиваемой области задач в приложении Microsoft Office, не поддерживающем настройку ленты, можно добавить кнопку <xref:Microsoft.Office.Core.CommandBarButton>, при нажатии которой данная область будет отображаться или закрываться.
 
@@ -102,7 +102,7 @@ ms.locfileid: "71254398"
 
  В следующей таблице перечислены изменения, которые можно выполнять в настраиваемой области задач с помощью свойств <xref:Microsoft.Office.Tools.CustomTaskPane>.
 
-|Задача|Свойство.|
+|Задача|Свойство|
 |----------|--------------|
 |Изменение размера области задач|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|
 |Изменение расположения области задач|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|
@@ -114,7 +114,7 @@ ms.locfileid: "71254398"
 
  В следующей таблице перечислены события, которые можно обрабатывать для реагирования на изменения, вносимые пользователем в настраиваемой области задач.
 
-|Задача|событие|
+|Задача|Событие|
 |----------|-----------|
 |Реагирование на изменение пользователем расположения области задач.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |Реагирование в случае, когда пользователь скрывает область задач или делает ее видимой.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|
@@ -124,25 +124,25 @@ ms.locfileid: "71254398"
 
  Чтобы освободить ресурсы, используемые областью задач, пока надстройка VSTO продолжает работать, используйте методы <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Эти методы позволяют удалить указанный объект <xref:Microsoft.Office.Tools.CustomTaskPane> из коллекции `CustomTaskPanes` и вызывают метод <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> объекта.
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически освобождает ресурсы, используемые настраиваемой областью задач, при выгрузке надстройки VSTO. Не вызывайте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> методы или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> в `ThisAddIn_Shutdown` обработчике событий в проекте. Эти методы создадут исключение <xref:System.ObjectDisposedException>, так как [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] освобождает ресурсы, используемые объектом <xref:Microsoft.Office.Tools.CustomTaskPane> перед вызовом `ThisAddIn_Shutdown`. Дополнительные сведения о `ThisAddIn_Shutdown`см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически освобождает ресурсы, используемые настраиваемой областью задач, при выгрузке надстройки VSTO. Не вызывайте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> методы или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> в `ThisAddIn_Shutdown` обработчике событий в проекте. Эти методы создадут исключение <xref:System.ObjectDisposedException>, так как [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] освобождает ресурсы, используемые объектом <xref:Microsoft.Office.Tools.CustomTaskPane> перед вызовом `ThisAddIn_Shutdown`. Дополнительные сведения о см `ThisAddIn_Shutdown` . [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
-## <a name="Managing"></a>Управление настраиваемыми областями задач в нескольких окнах приложений
+## <a name="manage-custom-task-panes-in-multiple-application-windows"></a><a name="Managing"></a> Управление настраиваемыми областями задач в нескольких окнах приложений
  При создании настраиваемой области задач в приложении, которое использует несколько окон для отображения документов и других элементов, необходимо выполнить дополнительные шаги, чтобы гарантировать, что область задач отображается в нужное для пользователя время.
 
  Настраиваемые области задач во всех приложениях связаны с окном фрейма документа, в котором пользователю отображается представление документа или элемента. Область задач отображается только в том случае, когда отображается соответствующее окно. Однако приложения используют окна фрейма документа по-разному.
 
  Следующие группы приложений имеют различные требования по разработке.
 
-- [Невозможно](#Outlook)
+- [Outlook](#Outlook)
 
 - [Word, InfoPath и PowerPoint](#WordAndInfoPath)
 
-## <a name="Outlook"></a>Невозможно
+## <a name="outlook"></a><a name="Outlook"></a> Невозможно
  При создании настраиваемой области задач для Outlook для данной области устанавливается связь с конкретным окном проводника или инспектора. Обозреватели — это окна, в которых отображается содержимое папки, а инспекторы — окна, в которых отображается элемент, например сообщение электронной почты или задача.
 
  Если необходимо отобразить настраиваемую область задач с несколькими окнами проводника или инспектора, то при открытии окна проводника или инспектора нужно создать новый экземпляр данной области. Для этого обработайте событие, возникающее при создании окна проводника или инспектора, а затем создайте область задач в обработчике событий. Также можно обрабатывать события проводника или инспектора, чтобы скрывать или отображать области задач в зависимости от того, какое окно является видимым.
 
- Чтобы связать область задач с конкретным обозревателем или инспектором, используйте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> метод для создания области задач и <xref:Microsoft.Office.Interop.Outlook.Explorer> передайте объект или <xref:Microsoft.Office.Interop.Outlook.Inspector> в параметр *Window* . Дополнительные сведения о создании настраиваемых областей задач см. в разделе [Общие сведения о настраиваемых панелях задач](../vsto/custom-task-panes.md).
+ Чтобы связать область задач с конкретным обозревателем или инспектором, используйте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> метод для создания области задач и передайте <xref:Microsoft.Office.Interop.Outlook.Explorer> <xref:Microsoft.Office.Interop.Outlook.Inspector> объект или в параметр *Window* . Дополнительные сведения о создании настраиваемых областей задач см. в разделе [Общие сведения о настраиваемых панелях задач](../vsto/custom-task-panes.md).
 
 - <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>
 
@@ -167,12 +167,12 @@ ms.locfileid: "71254398"
 
  Если настраиваемая область задач не будет удалена явным образом, в окнах Outlook могут отображаться несколько экземпляров данной области. Outlook иногда перезапускает окна. А такие окна сохраняют ссылки на все присоединенные к ним настраиваемые области задач.
 
-## <a name="WordAndInfoPath"></a>Word, InfoPath и PowerPoint
+## <a name="word-infopath-and-powerpoint"></a><a name="WordAndInfoPath"></a> Word, InfoPath и PowerPoint
  Word, InfoPath и PowerPoint отображают каждый документ в отдельном окне фрейма документа. При создании настраиваемой области задач для этих приложений данная область связывается только с конкретным документом. Если пользователь открывает другой документ, настраиваемая область задач будет скрыта до тех пор, пока более ранний документ не станет снова видимым.
 
  Если необходимо отобразить настраиваемую область задач с несколькими документами, создайте новый экземпляр этой области, когда пользователь создает новый документ или открывает существующий документ. Для этого обработайте события, возникающие при создании или открытии документа, а затем создайте область задач в обработчиках событий. Также можно обрабатывать события документа для скрытия или отображения областей задач, в зависимости от документа, который является видимым.
 
- Чтобы связать область задач с конкретным окном документа, <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> используйте метод для создания области задач и <xref:Microsoft.Office.Interop.Word.Window> передачи (для Word), <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (для InfoPath) или [документвиндов](/previous-versions/office/developer/office-2010/ff762047(v=office.14)) (для PowerPoint) в параметр *Window* . .
+ Чтобы связать область задач с конкретным окном документа, используйте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> метод, чтобы создать область задач, и передайте <xref:Microsoft.Office.Interop.Word.Window> (для Word),  <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (для InfoPath) или [документвиндов](/previous-versions/office/developer/office-2010/ff762047(v=office.14)) (для PowerPoint) в параметр *Window* .
 
 ### <a name="word-events"></a>События Word
  Для отслеживания состояния окон документов в Word можно обрабатывать следующие события.
@@ -205,18 +205,18 @@ ms.locfileid: "71254398"
 
 - [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Афтерневпресентатион](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Афтерпресентатионопен](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
 - [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Невпресентатион](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Пресентатионопен](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
 - [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Виндовактивате](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
 - [Microsoft. Office. Interop. PowerPoint. EApplication_Event. Виндовдеактивате](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Пошаговое руководство: Автоматизация приложения с помощью настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [Пошаговое руководство: Синхронизация настраиваемой области задач с помощью кнопки на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Как добавить настраиваемую область задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Пошаговое руководство. Автоматизация приложения с помощью настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [Пошаговое руководство. Синхронизация настраиваемой области задач с помощью кнопки на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Пошаговое руководство. Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

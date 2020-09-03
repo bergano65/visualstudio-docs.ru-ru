@@ -1,5 +1,5 @@
 ---
-title: IDebugДокументКонтекст2:GetName Документы Майкрософт
+title: 'IDebugDocumentContext2:: Name | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 253ef509a60e8bb2ce177235f4b93b370e66f484
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731810"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
-Получает отображаемое имя документа, содержащего контекст этого документа.
+Возвращает отображаемое имя документа, содержащего этот контекст документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,7 +43,7 @@ int GetName(
 
 ## <a name="parameters"></a>Параметры
 `gnType`\
-(в) Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисления, которое определяет тип имени для возврата.
+окне Значение из перечисления [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) , указывающее тип возвращаемого имени.
 
 `pbstrFileName`\
 [out] Возвращает имя файла.
@@ -51,11 +51,11 @@ int GetName(
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
-Этот метод обычно перенаправляет вызов на метод [GetName,](../../../extensibility/debugger/reference/idebugdocument2-getname.md) если только контекст документа не написан для хранения самого имени документа (как показывает пример).
+## <a name="remarks"></a>Remarks
+Этот метод обычно пересылает вызов методу [Name](../../../extensibility/debugger/reference/idebugdocument2-getname.md) , если только не записывается контекст документа для сохранения самого имени документа (как показано в примере).
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CDebugContext` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+В следующем примере показано, как реализовать этот метод для простого `CDebugContext` объекта, предоставляющего интерфейс [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
 
 ```cpp
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
@@ -94,6 +94,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

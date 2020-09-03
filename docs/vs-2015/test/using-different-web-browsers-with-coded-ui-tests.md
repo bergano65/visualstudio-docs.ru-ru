@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586337"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
@@ -109,9 +109,9 @@ ms.locfileid: "82586337"
 
 - ![Предварительное требование предварительное](../test/media/prereq.png "Prereq") Автоматизация действий пользовательского интерфейса, основанных на браузерах, таких как максимизация, сворачивания и восстановление, не поддерживается.
 
-  **"Советы"**
+  **Предпринять**
 
-- ![Совет](../test/media/tip.png "Подсказка") Можно настроить вывод для включения снимков экрана в закодированные журналы пользовательского интерфейса. Для этого необходимо задать некоторые параметры конфигурации в файле QTAgent32.exe.config. По умолчанию этот файл устанавливается в следующую папку:
+- ![Совет](../test/media/tip.png "Совет") Можно настроить вывод для включения снимков экрана в закодированные журналы пользовательского интерфейса. Для этого необходимо задать некоторые параметры конфигурации в файле QTAgent32.exe.config. По умолчанию этот файл устанавливается в следующую папку:
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -143,7 +143,7 @@ ms.locfileid: "82586337"
 
  [Тестирование непрерывной поставки с помощью Visual Studio 2012 – Глава 5. Автоматизация системных тестов](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>часто задаваемые вопросы
+### <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
  [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
@@ -151,5 +151,5 @@ ms.locfileid: "82586337"
 ### <a name="forum"></a>Форум
  [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает Coded UI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Использование модели автоматизации пользовательского интерфейса для тестирования поддерживаемых в коде](../test/use-ui-automation-to-test-your-code.md) [конфигураций и платформ для ЗАКОДИРОВАННЫХ тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md) интерфейса

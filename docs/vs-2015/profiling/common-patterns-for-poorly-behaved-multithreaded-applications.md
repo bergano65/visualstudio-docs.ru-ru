@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586640"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Общие шаблоны для неправильно работающих многопоточных приложений
@@ -66,5 +66,5 @@ ms.locfileid: "82586640"
   
  Колонны блокировок возникают, когда приложение получает блокировки в порядке поступления запросов и когда скорость прибытия на блокировку превышает скорость получения блокировок. При сочетании этих двух условий блокировки начинают резервироваться. Один из способов устранения этой проблемы заключается в использовании "нечестных" блокировок или блокировок, которые предоставляют доступ первому потоку, чтобы он мог перейти в разблокированное состояние. На предыдущем рисунке показано такое построение в колонну. Для решения этой проблемы попытайтесь снизить число конфликтов при синхронизации объектов и прибегнуть к "нечестным" блокировкам.  
   
-## <a name="see-also"></a>См. также  
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также:  
+ [Представление "потоки"](../profiling/threads-view-parallel-performance.md)

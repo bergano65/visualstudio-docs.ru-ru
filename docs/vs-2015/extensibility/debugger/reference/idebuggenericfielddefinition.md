@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition | Документация Майкрософт
+title: Идебугженерикфиелддефинитион | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 224b9a5c0e2412b9ae89c1767348b8fbd1a528be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180868"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
@@ -29,17 +29,17 @@ IDebugGenericFieldDefinition : IUnknown
 ```  
   
 ## <a name="methods"></a>Методы  
- Этот интерфейс реализует следующие методы:  
+ Этот интерфейс реализует следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Создает экземпляр поля задан массив аргументов типа.|  
-|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Получает параметры типа, учитывая количество параметров.|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Возвращает число параметров типа, связанное с этим универсальным.|  
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Конструирует экземпляр поля по заданному массиву аргументов типа.|  
+|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Получает параметры типа с учетом количества параметров.|  
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Извлекает количество параметров типа, связанных с универсальным полем.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

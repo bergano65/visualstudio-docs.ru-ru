@@ -1,5 +1,5 @@
 ---
-title: IDebugДокументКонтекст2:GetDocument Документы Майкрософт
+title: 'IDebugDocumentContext2:: \ Document | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6bb93fe3efb4bc114cf583e8e2c066c337109d12
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731835"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
-Получает документ, содержащий контекст этого документа.
+Возвращает документ, содержащий этот контекст документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Параметры
 `ppDocument`\
-(ваут) Возвращает объект [IDebugDocument2,](../../../extensibility/debugger/reference/idebugdocument2.md) представляющий документ, содержащий контекст этого документа.
+заполняет Возвращает объект [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) , представляющий документ, содержащий этот контекст документа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод предназначен для тех отладок двигателей, которые поставляют документы непосредственно в IDE. В противном случае, этот метод должен вернуться `E_NOTIMPL`.
+## <a name="remarks"></a>Remarks
+ Этот метод предназначен для модулей отладки, предоставляя документы непосредственно в интегрированной среде разработки. В противном случае этот метод должен возвращать значение `E_NOTIMPL` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

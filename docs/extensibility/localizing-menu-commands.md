@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904559"
 ---
 # <a name="localize-menu-commands"></a>Команды меню "локализовать"
@@ -147,7 +147,7 @@ ms.locfileid: "85904559"
     </EmbeddedResource>
     ```
 
-8. Для каждого локализованного языка скопируйте `EmbeddedResource` элемент для `VsPackage.en-US` и задайте атрибут **include** и элемент **LogicalName** копии в целевом языковом стандарте.
+8. Для каждого локализованного языка скопируйте  `EmbeddedResource` элемент для `VsPackage.en-US` и задайте атрибут **include** и элемент **LogicalName** копии в целевом языковом стандарте.
 
 9. К каждому локализованному `VSCTCompile` элементу добавьте `ResourceName` элемент, указывающий на `Menus.ctmenu` , как показано в следующем примере:
 
@@ -165,7 +165,7 @@ ms.locfileid: "85904559"
 
      При этом создается Главная сборка и сборки ресурсов для каждого языка. Сведения о локализации процесса развертывания см. в разделе [Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md) .
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
 - [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

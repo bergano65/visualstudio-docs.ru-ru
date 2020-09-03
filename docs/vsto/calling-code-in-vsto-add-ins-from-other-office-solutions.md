@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255327"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Вызов кода в надстройках VSTO из других решений Office
@@ -66,7 +66,7 @@ ms.locfileid: "71255327"
 
 3. Измените класс для реализации этого интерфейса.
 
-4. Примените <xref:System.Runtime.InteropServices.ClassInterfaceType> атрибут к классу и присвойте этому атрибуту значение **None перечисления.** <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
+4. Примените <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> атрибут к классу и присвойте этому атрибуту значение **None** <xref:System.Runtime.InteropServices.ClassInterfaceType> перечисления.
 
 5. Если вы хотите предоставить этот класс клиентам вне процесса, вам также может потребоваться выполнить следующие действия.
 
@@ -74,7 +74,7 @@ ms.locfileid: "71255327"
 
    - Задайте свойство **Регистрация для COM-взаимодействия** в проекте, в которым вы определили интерфейс. Это свойство необходимо только в том случае, если вы хотите разрешить клиентам использовать раннее связывание для вызова надстройки VSTO.
 
-   Следующие примеры кода демонстрируют класс `AddInUtilities` с методом `ImportData` , который может вызываться другими решениями. Чтобы просмотреть этот код в контексте более полного пошагового руководства, [см. Пошаговое руководство. Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+   Следующие примеры кода демонстрируют класс `AddInUtilities` с методом `ImportData` , который может вызываться другими решениями. Чтобы просмотреть этот код в контексте более полного пошагового руководства, см. раздел [Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
@@ -82,9 +82,9 @@ ms.locfileid: "71255327"
 ### <a name="expose-classes-to-vba"></a>Предоставление классов коду VBA
  Если вы выполните приведенные выше действия, код VBA сможет вызывать только те методы, которые будут объявлены в интерфейсе. Код VBA не может вызывать остальные методы в классе, включая методы, получаемые классом из базовых классов, таких как <xref:System.Object>.
 
- Можно также предоставить интерфейс [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) , задав <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> для атрибута значение <xref:System.Runtime.InteropServices.ClassInterfaceType> автодиспетчеризации или перечисление перечисления. Если вы предоставляете интерфейс, не нужно объявлять методы в отдельном интерфейсе. Тем не менее код VBA сможет вызывать все общие и нестатические методы в классе, включая полученные из базовых классов, таких как <xref:System.Object>. Кроме того, внепроцессные клиенты, использующие раннее связывание, не смогут вызывать ваш класс.
+ Можно также предоставить интерфейс [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) , задав <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> для атрибута значение автодиспетчеризации или <xref:System.Runtime.InteropServices.ClassInterfaceType> перечисление перечисления. Если вы предоставляете интерфейс, не нужно объявлять методы в отдельном интерфейсе. Тем не менее код VBA сможет вызывать все общие и нестатические методы в классе, включая полученные из базовых классов, таких как <xref:System.Object>. Кроме того, внепроцессные клиенты, использующие раннее связывание, не смогут вызывать ваш класс.
 
-### <a name="outofproc"></a>Предоставление классов для необработанных клиентов
+### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> Предоставление классов для необработанных клиентов
  Чтобы предоставить класс в надстройке VSTO внепроцессным клиентам, необходимо создать класс, производный от <xref:System.Runtime.InteropServices.StandardOleMarshalObject> . Это гарантирует, что внепроцессные клиенты смогут вызывать предоставленный объект надстройки VSTO. В противном случае попытки получить экземпляр предоставленного объекта во внепроцессном клиенте может завершиться неожиданным сбоем.
 
  Эта ошибка вызвана тем, что все вызовы объектной модели приложения Office должны выполняться в основном потоке пользовательского интерфейса, но вызовы от стороннего клиента к объекту будут поступать в произвольный поток RPC (удаленный вызов процедур). Механизм маршалинга COM в .NET Framework не переключает потоки и вместо этого попытается выполнить маршалинг вызова в объект для входящего потока RPC вместо основного потока пользовательского интерфейса. Если объект является экземпляром класса, производного от <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, для входящих вызовов вашего объекта автоматически выполняется маршалинг в поток, в котором был создан предоставляемый объект (то есть в основной поток пользовательского интерфейса ведущего приложения).
@@ -92,26 +92,26 @@ ms.locfileid: "71255327"
  Дополнительные сведения об использовании потоков в решениях Office см. [в разделе Поддержка потоков в Office](../vsto/threading-support-in-office.md).
 
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Переопределение метода Рекуесткомаддинаутоматионсервице
- Следующий пример кода демонстрирует переопределение метода <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` в надстройке VSTO. В этом примере предполагается, что вы определили `AddInUtilities` класс с именем, который требуется предоставить другим решениям. Чтобы просмотреть этот код в контексте более полного пошагового руководства, [см. Пошаговое руководство. Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+ Следующий пример кода демонстрирует переопределение метода <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> в классе `ThisAddIn` в надстройке VSTO. В этом примере предполагается, что вы определили класс с именем `AddInUtilities` , который требуется предоставить другим решениям. Чтобы просмотреть этот код в контексте более полного пошагового руководства, см. раздел [Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
- При загрузке надстройки VSTO [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Среда выполнения присваивает возвращенный объект свойству <xref:Microsoft.Office.Core.COMAddIn> комаддин. Object объекта, который представляет вашу надстройку VSTO. Этот объект <xref:Microsoft.Office.Core.COMAddIn> доступен для других решений Office, а также для решений, отвечающих за автоматизацию Office.
+ При загрузке надстройки VSTO [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] вызывает метод <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Среда выполнения присваивает возвращенный объект свойству Комаддин. Object <xref:Microsoft.Office.Core.COMAddIn> объекта, который представляет вашу надстройку VSTO. Этот объект <xref:Microsoft.Office.Core.COMAddIn> доступен для других решений Office, а также для решений, отвечающих за автоматизацию Office.
 
 ## <a name="access-objects-from-other-solutions"></a>Доступ к объектам из других решений
  Чтобы вызвать предоставляемый объект в вашей надстройке VSTO, выполните в клиентском решении указанные ниже действия.
 
 1. Получите объект <xref:Microsoft.Office.Core.COMAddIn> , представляющий предоставляемую надстройку VSTO. Клиенты могут получать доступ ко всем доступным надстройкам VSTO, используя свойство `Application.COMAddIns` в объектной модели ведущего приложения Office.
 
-2. Получите доступ к свойству <xref:Microsoft.Office.Core.COMAddIn> комаддин. Object объекта. Это свойство возвращает предоставленный объект из надстройки VSTO.
+2. Получите доступ к свойству Комаддин. Object <xref:Microsoft.Office.Core.COMAddIn> объекта. Это свойство возвращает предоставленный объект из надстройки VSTO.
 
 3. Вызовите члены предоставляемого объекта.
 
    Способ использования возвращаемого значения свойства Комаддин. Object отличается для клиентов VBA и клиентов, не являющихся клиентами VBA. Для внепроцессных клиентов требуется дополнительный код, который позволит избежать возникновения состояния гонки.
 
 ### <a name="access-objects-from-vba-solutions"></a>Доступ к объектам из решений VBA
- В следующем примере кода показано, как использовать VBA для вызова метода, предоставляемого надстройкой VSTO. Этот макрос VBA вызывает метод с именем `ImportData` , который определен в надстройке VSTO с именем **ExcelImportData**. Чтобы просмотреть этот код в контексте более полного пошагового руководства, [см. Пошаговое руководство. Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+ В следующем примере кода показано, как использовать VBA для вызова метода, предоставляемого надстройкой VSTO. Этот макрос VBA вызывает метод с именем `ImportData` , который определен в надстройке VSTO с именем **ExcelImportData**. Чтобы просмотреть этот код в контексте более полного пошагового руководства, см. раздел [Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
 ```vb
 Sub CallVSTOMethod()
@@ -140,12 +140,12 @@ ExcelImportData.IAddInUtilities utilities = (ExcelImportData.IAddInUtilities)add
 utilities.ImportData();
 ```
 
- В этом примере при попытке привести значение свойства комаддин. Object к `AddInUtilities` классу, а не к `IAddInUtilities` интерфейсу, код <xref:System.InvalidCastException>выдаст исключение.
+ В этом примере при попытке привести значение свойства Комаддин. Object к `AddInUtilities` классу, а не к `IAddInUtilities` интерфейсу, код выдаст исключение <xref:System.InvalidCastException> .
 
 ## <a name="see-also"></a>См. также
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
-- [Пошаговое руководство: Вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+- [Пошаговое руководство. вызов кода в надстройке VSTO из VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Разработка решений Office](../vsto/developing-office-solutions.md)
-- [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Архитектура надстроек VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Настройка функций пользовательского интерфейса с помощью интерфейсов расширяемости](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
