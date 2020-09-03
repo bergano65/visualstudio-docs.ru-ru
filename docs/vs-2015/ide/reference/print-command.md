@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662160"
 ---
 # <a name="print-command"></a>Команда Print
@@ -36,7 +36,7 @@ Debug.Print text
 ## <a name="arguments"></a>Аргументы
  `text` Обязательный. Вычисляемое выражение или отображаемый текст.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда
 
 ```
@@ -57,5 +57,5 @@ Debug.Print text
 >Debug.Print varA
 ```
 
-## <a name="see-also"></a>См. также
- [Команда Evaluate инструкции ](../../ide/reference/evaluate-statement-command.md) [Visual команды Studio ](../../ide/reference/visual-studio-commands.md) [Command Window ](../../ide/reference/command-window.md) [Find/Command ](../../ide/find-command-box.md) [Visual псевдонимы команд Studio](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>См. также:
+ [Команда "вычислить инструкцию](../../ide/reference/evaluate-statement-command.md) " команды [Visual Studio команды команд](../../ide/reference/visual-studio-commands.md) [Command Window](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) [Visual Studio псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)

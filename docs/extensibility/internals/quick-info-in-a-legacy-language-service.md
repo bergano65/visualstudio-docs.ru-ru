@@ -1,5 +1,5 @@
 ---
-title: Быстрая информация в устаревшей языковой службе (ru) Документы Майкрософт
+title: Краткие сведения в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705942"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Краткие сведения в языковой службе прежних версий
-IntelliSense Быстрая информация показывает информацию об идентификаторе в источнике, когда пользователь либо помещает caret в идентификатор и выбирает **Быструю информацию** из меню **IntelliSense** или держит курсор мыши над идентификатором. Это приводит к тому, что наконечник инструмента появляется с информацией об идентификаторе. Эта информация обычно состоит из типа идентификатора. Когда движок отладки активен, эта информация может включать текущее значение. Отладка двигателя поставляет значения выражения, в то время как языковая служба обрабатывает только идентификаторы.
+Краткие сведения IntelliSense отображает сведения об идентификаторе в источнике, когда пользователь либо помещает курсор в идентификатор, либо выбирает **краткие сведения** из меню **IntelliSense** или удерживает курсор мыши над идентификатором. В результате появится всплывающая подсказка со сведениями об идентификаторе. Эти сведения обычно состоят из типа идентификатора. Если активен модуль отладки, эти сведения могут включать текущее значение. Модуль отладки предоставляет значения выражений, тогда как языковая служба обрабатывает только идентификаторы.
 
- Устаревшие языковые службы реализуются как часть VSPackage, но новый способ реализации функций языкового сервиса заключается в использовании расширений MEF. Чтобы узнать больше, [см.](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ Устаревшие языковые службы реализуются как часть VSPackage, но более новым способом реализации функций языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство. Отображение подсказок краткие сведения](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).
 
 > [!NOTE]
-> Мы рекомендуем вам начать использовать новый API редактора как можно скорее. Это повысит производительность вашего языкового сервиса и позволит вам воспользоваться новыми функциями редактора.
+> Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.
 
- Классы языковых услуг управляемого пакета (MPF) обеспечивают полную поддержку для отображения наконечника инструмента IntelliSense Быстрая информация. Все, что вам нужно сделать, это поставить текст для отображения и включить функцию быстрой информации.
+ Классы языковой службы для управляемых пакетов Framework (MPF) обеспечивают полную поддержку отображения подсказок IntelliSense для быстрой информации. Все, что нужно сделать, — предоставить отображаемый текст и включить функцию кратких сведений.
 
- Текст, который будет отображаться, получен <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> путем вызова метода парсер <xref:Microsoft.VisualStudio.Package.ParseReason>с разбором значение причины . Эта причина говорит parser для того чтобы получить информацию типа (или все, что соотвествующее <xref:Microsoft.VisualStudio.Package.ParseRequest> быть отображено в подсказке инструмента быстроinfo) для идентификатора на положении, указанном в объекте. Объект <xref:Microsoft.VisualStudio.Package.ParseRequest> — это то, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> что было передано методу.
+ Отображаемый текст получается путем вызова <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средства синтаксического анализа метода со значением причины синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> . По этой причине средство синтаксического анализа получает сведения о типе (или то, что подходит для отображения в подсказке кратких сведений) для идентификатора в расположении, указанном в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекте. <xref:Microsoft.VisualStudio.Package.ParseRequest>Объект передается в <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод.
 
- Парсер должен разобрать все до положения объекта, <xref:Microsoft.VisualStudio.Package.ParseRequest> чтобы определить типы всех идентификаторов. Затем парсер должен получить идентификатор в месте запроса. Наконец, парсер должен передать объекту данные наконечника инструмента, связанные с этим идентификатором, чтобы <xref:Microsoft.VisualStudio.Package.AuthoringScope> объект мог вернуть текст из метода. <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>
+ Синтаксический анализатор должен выполнить синтаксический анализ всех элементов, находящийся в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекте, чтобы определить типы всех идентификаторов. Затем средство синтаксического анализа должно получить идентификатор в расположении запроса синтаксического анализа. Наконец, синтаксический анализатор должен передать в объект данные всплывающей подсказки, связанные с этим идентификатором, <xref:Microsoft.VisualStudio.Package.AuthoringScope> чтобы объект мог вернуть текст из <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> метода.
 
-## <a name="enabling-the-quick-info-feature"></a>Включение функции быстрой информации
- Для включения функции «Быстрая `CodeSense` информация» необходимо установить и `QuickInfo` назвать <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>параметры. Эти атрибуты <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> устанавливают <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> свойства и свойства.
+## <a name="enabling-the-quick-info-feature"></a>Включение функции "краткие сведения"
+ Чтобы включить функцию "быстрые сведения", необходимо задать `CodeSense` Параметры и `QuickInfo` с именем <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Эти атрибуты задают <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> Свойства и.
 
-## <a name="implementing-the-quick-info-feature"></a>Реализация функции «Быстрая информация»
- Класс <xref:Microsoft.VisualStudio.Package.ViewFilter> обрабатывает операцию IntelliSense Быстрая информация. Когда <xref:Microsoft.VisualStudio.Package.ViewFilter> класс получает <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команду, класс <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> вызывает метод с причиной <xref:Microsoft.VisualStudio.Package.ParseReason> разбора и расположением caret <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> во время отправки команды. Затем <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> парсер метода должен разогнать источник до данного местоположения, а затем разобрать идентификатор в данном месте, чтобы определить, что отобразить в наконечнике инструмента «Быстрая информация».
+## <a name="implementing-the-quick-info-feature"></a>Реализация функции "краткие сведения"
+ <xref:Microsoft.VisualStudio.Package.ViewFilter>Класс обрабатывает операцию быстрой информации IntelliSense. Когда <xref:Microsoft.VisualStudio.Package.ViewFilter> класс получает <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команду, класс вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод с причиной синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> и расположением курсора на момент <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> отправки команды. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>После этого средство синтаксического анализа методов должно выполнить синтаксический анализ источника вплоть до заданного расположения, а затем проанализировать идентификатор в заданном расположении, чтобы определить, что следует отображать в подсказке инструмента "краткие сведения".
 
- Большинство разборников делают первоначальный разбор всего исходного файла и хранят результаты в дереве разбора. Полный разбор осуществляется при <xref:Microsoft.VisualStudio.Package.ParseReason> перегоне к методу. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Другие виды разбора могут затем использовать дерево разбора для получения нужной информации.
+ Большинство синтаксических анализаторов выполняют первоначальный синтаксический анализ всего исходного файла и сохраняют результаты в дереве синтаксического анализа. Полный анализ выполняется, когда <xref:Microsoft.VisualStudio.Package.ParseReason> передается <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> методу. Другие виды анализа могут затем использовать дерево синтаксического анализа для получения нужных сведений.
 
- Например, значение причины разбора <xref:Microsoft.VisualStudio.Package.ParseReason> может найти идентификатор в исходном месте и посмотреть его в дереве разбора для получения информации о типе. Информация этого типа затем <xref:Microsoft.VisualStudio.Package.AuthoringScope> передается классу <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> и возвращается методом.
+ Например, значение причины синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> может найти идентификатор в исходном расположении и найти его в дереве синтаксического анализа для получения сведений о типе. Эти сведения о типе затем передаются в <xref:Microsoft.VisualStudio.Package.AuthoringScope> класс и возвращаются <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> методом.

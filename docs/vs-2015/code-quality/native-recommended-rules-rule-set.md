@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db76627afdf44ef1c46ed9ff7a9e204da8eb112d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608879"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для машинного кода"
@@ -156,7 +156,7 @@ ms.locfileid: "72608879"
 |                      [C28020](../code-quality/c28020.md)                       |                                               Выражение не равно true в этом вызове                                               |
 |                      [C28021](../code-quality/c28021.md)                       |                                           Аннотируемый параметр должен быть указателем                                           |
 |                      [C28022](../code-quality/c28022.md)                       |            Классы функций для этой функции не соответствуют классам-функциям typedef, используемому для его определения.            |
-|                      [C28023](../code-quality/c28023.md)                       |         Назначенная или передаваемая функция должна иметь \_Function_class \_ Аннотация по крайней мере для одного из классов.         |
+|                      [C28023](../code-quality/c28023.md)                       |         Назначенная или передаваемая функция должна иметь \_ Function_class \_ заметку по крайней мере для одного класса (ES).         |
 |                      [C28024](../code-quality/c28024.md)                       | Указатель функции, которому присваивается значение, записывается в класс Function, который не содержится в списке классов функций. |
 |                      [C28039](../code-quality/c28039.md)                       |                                     Тип фактического параметра должен точно соответствовать типу                                      |
 |                      [C28112](../code-quality/c28112.md)                       |            Доступ к переменной, доступ к которой осуществляется через блокируемую функцию, всегда должен осуществляться через блокируемую функцию.            |

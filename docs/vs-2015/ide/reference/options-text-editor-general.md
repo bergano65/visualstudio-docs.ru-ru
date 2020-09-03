@@ -49,10 +49,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662260"
 ---
 # <a name="options-text-editor-general"></a>Параметры, текстовый редактор, общие
@@ -61,7 +61,7 @@ ms.locfileid: "72662260"
 Это диалоговое окно позволяет изменять глобальные параметры для редактора кода и текста [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Для вывода этого диалогового окна щелкните элемент **Параметры** в меню **Сервис**, разверните папку **Текстовый редактор**, а затем щелкните **Общие**.
 
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. [в разделе Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Параметры
  Перетаскивание редактирования текста при выборе позволяет перемещать текст, выбирая его и перетаскивая мышью в другое место в текущем документе или в любой другой открытый документ.
@@ -77,7 +77,7 @@ ms.locfileid: "72662260"
 
 |Поле выделения включено|Поле выделения выключено|
 |-------------------------|--------------------------|
-|![Снимок экрана HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![Снимок экрана HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+|![Снимок экрана HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "вксселмарон")|![Снимок экрана HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "вксселмарофф")|
 
  Поле индикатора Если выбрано, отображается вертикальное поле за пределами левого края текстового поля редактора. Если щелкнуть это поле, отображаются значок и подсказка, связанные с текстом. Например, в поле индикаторов отображаются ярлыки точки останова или списка задач. Сведения в поле индикаторов не выводятся на печать.
 
@@ -87,5 +87,5 @@ ms.locfileid: "72662260"
 
  Выделение текущей строки если выбрано, отображает серое поле вокруг строки кода, в которой находится курсор.
 
-## <a name="see-also"></a>См. также
- [Параметры, текстовый редактор, все языки,](../../ide/reference/options-text-editor-all-languages.md) [текстовый редактор, все языки, параметры табуляции](../../ide/reference/options-text-editor-all-languages-tabs.md) [, текстовый редактор, расширение файла](../../ide/reference/options-text-editor-file-extension.md) [Идентификация и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Настройка редактора](../../ide/customizing-the-editor.md) [с помощью Технология IntelliSense](../../ide/using-intellisense.md)
+## <a name="see-also"></a>См. также:
+ [Параметры, текстовый редактор, все языки,](../../ide/reference/options-text-editor-all-languages.md) [текстовый редактор, все языки, параметры табуляции](../../ide/reference/options-text-editor-all-languages-tabs.md) [, текстовый редактор, расширение файла](../../ide/reference/options-text-editor-file-extension.md) [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Настройка редактора](../../ide/customizing-the-editor.md) [с помощью IntelliSense](../../ide/using-intellisense.md)

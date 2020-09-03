@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b974f3450b88ab22e58e284881f270c1b3d72298
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619277"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Создание комментариев JSDoc для JavaScript IntelliSense
@@ -26,17 +26,17 @@ ms.locfileid: "72619277"
 
 |  Тег JSDoc   |                       Синтаксис                        |                                                     Примечания                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *описание*              |                                   Указывает устаревшую функцию или метод.                                   |
-| @description |             @description *описание*              |                              Указывает описание для функции или метода.                               |
-|    @param    | @param {*Type*}<em>Описание</em> ParameterName | Указывает сведения для параметра в функции или методе.<br /><br /> TypeScript также поддерживает @paramTag. |
+| @deprecated  |              @deprecated*Описание*              |                                   Указывает устаревшую функцию или метод.                                   |
+| @description |             @description*Описание*              |                              Указывает описание для функции или метода.                               |
+|    @param    | @param{*Type*} *parameterName*<em>Описание</em> ParameterName | Указывает сведения для параметра в функции или методе.<br /><br /> TypeScript также поддерживает @paramTag . |
 |  @property   |          @property {*тип*} *имя_свойства*          |   Указывает сведения, включая описание, для поля или элемента, который определен в объекте.    |
-|   @returns   |                  @returns {*тип*}                  |           Указывает возвращаемое значение.<br /><br /> Для TypeScript используйте @returnType вместо @returns.           |
-|   @summary   |               @summary *описание*                |                   Задает описание функции или метода (то же, что @description).                   |
-|    @type     |                   @type {*тип*}                    |                                Указывает тип для константы или переменной.                                |
+|   @returns   |                  @returns {*Type*}                  |           Указывает возвращаемое значение.<br /><br /> Для TypeScript используйте @returnType вместо @returns .           |
+|   @summary   |               @summary*Описание*                |                   Задает описание функции или метода (то же, что и @description ).                   |
+|    @type     |                   @type {*Type*}                    |                                Указывает тип для константы или переменной.                                |
 |   @typedef   |         @typedef {*тип*} *пользовательское_имя_свойства*          |                                            Указывает пользовательский тип.                                            |
 
 ### <a name="examples"></a>Примеры
- В следующем примере показано использование тегов @description, @param и @return JSDoc для функции с именем `getArea`.
+ В следующем примере показано использование @description @param тегов, и @return JSDoc для функции с именем `getArea` .
 
 ```javascript
 /** @description Determines the area of a circle that has the specified radius parameter.
@@ -52,9 +52,9 @@ function getArea(radius) {
 
  В предыдущем примере IntelliSense отображает описание, параметры и возвращаемые сведения при вводе открывающей скобки для `getArea`.
 
- ![Сведения об IntelliSense для функции](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
+ ![Сведения IntelliSense для функции](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
 
- В следующем примере показано, как использовать тег @typedef с тегом @property.
+ В следующем примере показано, как использовать @typedef тег с @property тегом.
 
 ```javascript
 /**
@@ -67,7 +67,7 @@ function getForecast(Weather) {
 var w = new Weather();
 ```
 
- В следующем примере показано использование тегов @type JSDoc. Как показано в этом примере, одиночные звездочки (*), которые следуют за начальными двойными звездочками (\*\*), не являются обязательными.
+ В следующем примере показано использование @type тегов JSDoc. Как показано в этом примере, одиночные звездочки (*), которые следуют за начальными двойными звездочками (\*\*), не являются обязательными.
 
 ```javascript
 /**
@@ -77,7 +77,7 @@ const RED = 'FF0000';
 
 ```
 
- В следующем примере показано, как использовать тег @deprecated JSDoc.
+ В следующем примере показано, как использовать @deprecated тег JSDoc.
 
 ```javascript
 /**

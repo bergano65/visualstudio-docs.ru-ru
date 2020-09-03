@@ -1,5 +1,5 @@
 ---
-title: ДАМПТИП Документы Майкрософт
+title: ДУМПТИПЕ | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737198"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Определяет, сколько состояния программы (например, текущие потоки, кадры стека и текущий адрес инструкции) сбрасываются.
+Указывает, какая часть состояния программы (например, выполняемые потоки, кадры стека и адрес текущей инструкции) следует дампу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,18 +44,18 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>Поля
 `DUMP_MINIDUMP`\
-Определяет небольшую, компактную свалку.
+Задает небольшой, компактный дамп.
 
 `DUMP_FULLDUMP`\
-Определяет большую, полную свалку.
+Указывает большой полный дамп.
 
-## <a name="remarks"></a>Примечания
-Прошел в качестве аргумента методу [WriteDump.](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+## <a name="remarks"></a>Remarks
+Передается в качестве аргумента в метод [вритедумп](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

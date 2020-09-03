@@ -1,63 +1,62 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Документация Майкрософт
-ms.date: 11/04/2016
+title: 'IDebugProgramEngines2:: Енумпоссиблингинес | Документация Майкрософт'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: a417fd4f0d90ffebd291179dee28a0e81f92cce9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182190"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-Возвращает идентификаторы GUID для всех возможных отладчики (DE), которые можно отлаживать этой программы.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```cpp
-HRESULT EnumPossibleEngines( 
-   DWORD  celtBuffer,
-   GUID*  rgguidEngines,
-   DWORD* pceltEngines
-);
-```
-
-```csharp
-int EnumPossibleEngines( 
-   uint      celtBuffer,
-   GUID[]    rgguidEngines,
-   ref DWORD pceltEngines
-);
-```
-
-#### <a name="parameters"></a>Параметры
- `celtBuffer`
-
- [in] Число GUID DE для возврата. Это также указывает максимальный размер `rgguidEngines` массива.
-
- `rgguidEngines`
-
- [in, out] Массив идентификаторов GUID DE для заполнения.
-
- `pceltEngines`
-
- [out] Возвращает фактическое количество GUID DE, которые возвращаются.
-
-## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` или [C#] 0x8007007A, если буфер недостаточно велик.
-
-## <a name="remarks"></a>Примечания
- Чтобы определить, сколько антивирусных ядер, этот метод вызывается один раз со `celtBuffer` параметр значение 0 и `rgguidEngines` параметру присвоить значение null. Эта команда возвращает `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A для C#) и `pceltEngines` параметр Возвращает нужного размера буфера.
-
-## <a name="see-also"></a>См. также
-- [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)
+Возвращает идентификаторы GUID для всех возможных модулей отладки (DE), которые могут отлаживать эту программу.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT EnumPossibleEngines(   
+   DWORD  celtBuffer,  
+   GUID*  rgguidEngines,  
+   DWORD* pceltEngines  
+);  
+```  
+  
+```csharp  
+int EnumPossibleEngines(   
+   uint      celtBuffer,  
+   GUID[]    rgguidEngines,  
+   ref DWORD pceltEngines  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `celtBuffer`  
+ окне Число возвращаемых ИДЕНТИФИКАТОРов DE. Это также указывает максимальный размер `rgguidEngines` массива.  
+  
+ `rgguidEngines`  
+ [вход, выход] Массив ИДЕНТИФИКАТОРов DE, которые необходимо заполнить.  
+  
+ `pceltEngines`  
+ заполняет Возвращает фактическое число возвращаемых ИДЕНТИФИКАТОРов DE.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` или [C#] 0x8007007A, если буфер недостаточно велик.  
+  
+## <a name="remarks"></a>Remarks  
+ Чтобы определить, сколько ядер существует, вызовите этот метод один раз, указав `celtBuffer` для параметра значение 0, а для `rgguidEngines` параметра задается NULL. Этот метод возвращает `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A для C#), а `pceltEngines` параметр возвращает необходимый размер буфера.  
+  
+## <a name="see-also"></a>См. также:  
+ [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

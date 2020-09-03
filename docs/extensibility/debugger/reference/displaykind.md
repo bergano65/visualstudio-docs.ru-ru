@@ -1,5 +1,5 @@
 ---
-title: DisplayKind Документы Майкрософт
+title: Дисплайкинд | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737262"
 ---
 # <a name="displaykind"></a>DisplayKind
-Перечисляет допустимые значения, которые представляют виды информации, которую следует взять с объекта [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и отображения пользователю.
+Перечисляет допустимые значения, представляющие типы данных, которые необходимо взять из объекта [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) и отобразить пользователю.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -55,9 +55,9 @@ public enum enum_DisplayKind
 Тип поля.
 
 ## <a name="requirements"></a>Требования
-Заголовок: Ee.h
+Заголовок: ee. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

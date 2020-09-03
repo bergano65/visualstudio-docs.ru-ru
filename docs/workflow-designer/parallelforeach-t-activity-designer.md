@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876051"
 ---
 # <a name="parallelforeach-activity-designer"></a>Конструктор действия ParallelForEach
@@ -25,7 +25,7 @@ ms.locfileid: "86876051"
 
 ## <a name="the-parallelforeacht-activity"></a>Действие ParallelForEach<T \>
 
-<xref:System.Activities.Statements.ParallelForEach%601>Перечисляет значения и планирует <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> для каждого значения, по которому выполняется перечисление. Планируются только <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. Выполнение тела зависит от перехода <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> в состояние простоя.
+<xref:System.Activities.Statements.ParallelForEach%601> Перечисляет значения и планирует <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> для каждого значения, по которому выполняется перечисление. Планируются только <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. Выполнение тела зависит от перехода <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> в состояние простоя.
 
 Если <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> не переходит в состояние простоя, то выполнение производится в обратном порядке, так как запланированные действия помещаются в стек, то есть последнее запланированное действие выполняется первым. Например, если имеется коллекция {1,2,3,4} в <xref:System.Activities.Statements.ParallelForEach%601> и для записи значения используется параметр **WriteLine** в качестве текста. В консоли есть 4, 3, 2 и 1 распечатанные. Это происходит потому, что **WriteLine** не переходит в режим простоя, поэтому после **выполнения 4 действий** , запланированных, они выполнялись с использованием поведения стека (первая за последней).
 
@@ -45,8 +45,8 @@ ms.locfileid: "86876051"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию **— \<Int32> ParallelForEach**. Значение можно дополнительно изменить в сетке **свойств** или непосредственно в заголовке конструктора операций.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Неверно|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите действие из области элементов в поле **текст** в конструкторе действия **ParallelForEach \<T> ** с текстом подсказки "перетащите действие сюда".|
-|**TypeArgument**|Да|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, заданном универсальным параметром *T*. По умолчанию **TypeArgument** имеет значение **Int32**. Чтобы изменить тип T в конструкторе действий **ParallelForEach<\> T** , измените значение поля со списком **TypeArgument** в сетке свойств.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Да|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \> ** в поле с текстом подсказки "введите выражение VB" или в поле " **значения** " в окне " **Свойства** ".|
+|**TypeArgument**|Верно|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, заданном универсальным параметром *T*. По умолчанию **TypeArgument** имеет значение **Int32**. Чтобы изменить тип T в конструкторе действий **ParallelForEach<\> T** , измените значение поля со списком **TypeArgument** в сетке свойств.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Верно|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , введите Visual Basic выражение в поле **значения** в конструкторе действий **foreach<T \> ** в поле с текстом подсказки "введите выражение VB" или в поле " **значения** " в окне " **Свойства** ".|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Оценивается после каждого выполнения итерации. Если результат оценки равен true, то запланированные ожидающие итерации отменяются. Если это свойство не задано, все запланированные инструкции выполняются до завершения.|
 
 По умолчанию итератор цикла является именованным элементом. Имя переменной итератора можно изменить в поле **foreach** конструктора действий **ParallelForEach \<T> ** . Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ParallelForEach%601>.

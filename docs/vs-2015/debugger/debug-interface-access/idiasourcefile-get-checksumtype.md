@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_checksumType | Документация Майкрософт
+title: 'IDiaSourceFile:: get_checksumType | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f859bce63e2976b23ab613e249dad41b2bc63486
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190704"
 ---
-# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+# <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает тип контрольной суммы.  
+Возвращает тип контрольной суммы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,24 +35,24 @@ HRESULT get_checksumType ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает тип контрольной суммы.  
+ заполняет Возвращает тип контрольной суммы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Тип контрольной суммы — значение, которое может быть сопоставлен алгоритма подсчета контрольной суммы. Например стандартные PDB-файлов можно обычно имеют один из следующих значений:  
+## <a name="remarks"></a>Remarks  
+ Тип контрольной суммы — это значение, которое может быть сопоставлено с алгоритмом контрольной суммы. Например, стандартный формат PDB-файла обычно может иметь одно из следующих значений:  
   
 |Тип контрольной суммы|Метка CryptoAPI|Описание|  
 |-------------------|---------------------|-----------------|  
-|0|\<none>|Контрольная сумма не существует.|  
-|1|`CALG_MD5`|контрольная сумма, созданных с использованием алгоритма хэширования MD5.|  
-|2|`CALG_SHA1`|контрольная сумма, созданных с использованием алгоритма хэширования SHA1.|  
+|0|\<none>|Контрольная сумма отсутствует.|  
+|1|`CALG_MD5`|Контрольная сумма, созданная с помощью алгоритма хэширования MD5.|  
+|2|`CALG_SHA1`|Контрольная сумма, созданная с помощью алгоритма хэширования SHA1.|  
   
- `CryptoAPI` Метки являются из `ALG_ID` перечисления. Дополнительные сведения о алгоритмы хэширования, обратитесь к `CryptoAPI` раздел Microsoft [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)].  
+ `CryptoAPI`Метки помещаются из `ALG_ID` перечисления. Дополнительные сведения о алгоритмах хэширования см. в `CryptoAPI` разделе корпорации Майкрософт [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] .  
   
- Чтобы получить байты фактическая контрольная сумма для исходного файла, вызовите [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) метод.  
+ Чтобы получить фактические байты контрольной суммы для исходного файла, вызовите метод [IDiaSourceFile:: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

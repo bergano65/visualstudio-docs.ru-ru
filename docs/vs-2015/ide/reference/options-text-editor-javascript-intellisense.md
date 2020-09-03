@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b0d9dec8ec9b3eb8860bb8b3a4ed8f7347aa54d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662232"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
@@ -72,5 +72,5 @@ ms.locfileid: "72662232"
 
  **Добавление ссылки на группу** Этот параметр позволяет добавить дополнительные файлы IntelliSense. js, перейдя к соответствующим файлам.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [IntelliSense для JavaScript](../../ide/javascript-intellisense.md)

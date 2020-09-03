@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b44e30648e2be9bcf77ce6847ac88673e714d3be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72607000"
 ---
 # <a name="transaction-activity-designers"></a>Конструкторы действий транзакций
 Конструкторы операций транзакций используются для создания и настройки действий транзакций, например, компенсации и подтверждения. В подразделах этого раздела и перечисленных в следующей таблице приводится описание использования действия [!INCLUDE[wfd2](../includes/wfd2-md.md)] и конструкторов шаблонов.
 
-## <a name="in-this-section"></a>Содержание
- [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.CancellationScope>.
+## <a name="in-this-section"></a>в этом разделе
+ [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.CancellationScope> действия.
 
- [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.CompensableActivity>.
+ [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.CompensableActivity> действия.
 
- [Компенсация](../workflow-designer/compensate-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.Compensate>.
+ [Компенсация](../workflow-designer/compensate-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.Compensate> действия.
 
- [Подтверждение](../workflow-designer/confirm-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.Confirm>.
+ [Подтверждение](../workflow-designer/confirm-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.Confirm> действия.
 
- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.TransactionScope>.
+ [TransactionScope](../workflow-designer/transactionscope-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.TransactionScope> действия.
 
 ## <a name="reference"></a>Справочник
 

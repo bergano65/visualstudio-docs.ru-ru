@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fc312736508a11d43cadf789b08aae77c528d35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608679"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Чтобы просмотреть классы, которые являются базовыми для выбранного, щелкните правой кнопкой мыши фигуру класса и выберите **Показать базовые классы**.
 
 > [!NOTE]
-> Команда **Показать производные классы** в коде C++ не поддерживается. Чтобы просмотреть производные классы, перейдите в представление классов, разверните узел типа, затем разверните вложенную папку **Производные типы** и перетащите нужные типы на схему классов.
+> Команда **Показать производные классы** в коде C++ не поддерживается. Можно отобразить производные классы, перейдя в представление классов, развернув узел типа, развернув вложенную папку **производных типов** , а затем перетащив эти типы на схему классов.
 
  Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование (NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) и [Несколько базовых классов](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).
 
@@ -119,7 +119,7 @@ typedef struct
 } POINT;
 ```
 
- Структуры также могут быть анонимными. Конструктор классов отображает анонимные классы и структуры таким же образом, как и соответствующие типы. Несмотря на то что можно объявить и отобразить анонимные классы и структуры, конструктор классов не будет использовать указанное имя тега. В этом случае будет использоваться имя, созданное в представлении классов. Класс или структура отображается в представлении и дизайнере классов в виде элемента с именем **__unnamed**.
+ Структуры также могут быть анонимными. Конструктор классов отображает анонимные классы и структуры таким же образом, как и соответствующие типы. Несмотря на то что можно объявить и отобразить анонимные классы и структуры, конструктор классов не будет использовать указанное имя тега. В этом случае будет использоваться имя, созданное в представлении классов. Класс или структура отображаются в представлении классов и конструкторе классов в виде элемента с именем **__unnamed**.
 
  Дополнительные сведения об анонимных классах см. в разделе [Типы анонимных классов](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).
 
@@ -152,7 +152,7 @@ typedef struct
 
 |Code, элемент|Представление конструктора классов|
 |------------------|-------------------------|
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 перегрузка)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U> (+ 1 перегрузка)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Класс шаблона<br /><br /> `B<T2>`<br /><br /> Класс шаблона<br /><br /> (Класс B содержится в классе A в разделе **Вложенные типы**)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Класс<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Класс шаблона|
 
@@ -167,7 +167,7 @@ typedef struct
 |Code, элемент|Представление конструктора классов|
 |------------------|-------------------------|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Класс<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Класс<br /><br /> `C<T>`<br /><br /> Класс шаблона<br /><br /> `D`<br /><br /> Класс<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> минимум \<T>|
 
-## <a name="see-also"></a>См. также
- [Работа с визуальным C++ кодом (конструктор классов) ](../ide/working-with-visual-cpp-code-class-designer.md) [Classes и структуры ](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Anonymous типы классов ](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [ (сборке) множественное наследование ](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [Multiple базовых классов ](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [Templates](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+## <a name="see-also"></a>См. также:
+ [Работа с классами Visual C++ Code (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md) [и структурами](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [типы анонимных классов](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(сборке) множественное наследование](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [нескольких шаблонов базовых классов](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [Templates](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

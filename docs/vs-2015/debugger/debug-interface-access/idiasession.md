@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190719"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Предоставляет контекст запроса для символов отладки.  
+Предоставляет контекст запроса для отладочных символов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,52 +32,52 @@ IDiaSession : IUnknown
 ```  
   
 ## <a name="methods"></a>Методы  
- В следующей таблице показаны методы `IDiaSession`.  
+ В следующей таблице показаны методы `IDiaSession` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Извлекает адрес загрузки исполняемого файла, соответствующее символов в данном хранилище символов. Это же значение, которое было передано `put_loadAddress` метод.|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Задает адрес загрузки исполняемого файла, соответствующее к символам в данном хранилище символов. **Примечание.**  Очень важно для вызова этого метода при получении `IDiaSession` объекта и перед началом работы с помощью объекта.|  
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Извлекает адрес загрузки для исполняемого файла, который соответствует символам в этом хранилище символов. Это то же значение, которое было передано в `put_loadAddress` метод.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Задает адрес загрузки для исполняемого файла, который соответствует символам в этом хранилище символов. **Примечание.**  Важно вызывать этот метод при получении `IDiaSession` объекта и перед началом использования объекта.|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Извлекает ссылку на глобальную область.|  
-|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Возвращает перечислитель для всех таблиц, содержащихся в хранилище символов.|  
-|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Возвращает перечислитель для всех именованных символов в статических расположениях.|  
-|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Получает все дочерние элементы идентификатора указанного родительского элемента, которые соответствуют типу имя и символов.|  
-|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Возвращает тип указанного символа, который содержит, или ближайший к указанному адресу.|  
-|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Возвращает тип указанного символа, который содержит, или ближайший к указанным относительный виртуальный адрес (RVA).|  
-|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Возвращает тип указанного символа, который содержит, или ближайший к указанному виртуальному адресу (VA).|  
-|[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Получает символ, который содержит заданным токеном метаданных.|  
-|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|Проверяет, являются ли эквивалентными двух символов.|  
-|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Получает символ по его уникальному идентификатору.|  
-|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Возвращает тип указанного символа, который содержит, или ближайший к указанным относительный виртуальный адрес и смещение.|  
-|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Возвращает тип указанного символа, который содержит, или ближайший к указанному виртуальному адресу и смещение.|  
-|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Извлекает исходный файл, компилируемого объекта и имя.|  
-|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Извлекает исходный файл, идентификатор файла источника.|  
-|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Извлекает номера строк в указанной единице компиляции и источник идентификатор файла.|  
-|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Извлекает строки в указанной единице компиляции, которые содержат указанный адрес.|  
-|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Извлекает строки в указанной единице компиляции, которые содержат указанный относительный виртуальный адрес.|  
-|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Находит информация о номере строки для строк, содержащихся в указанный диапазон адресов.|  
-|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Извлекает строки в указанной единице компиляции с исходного файла и номер строки.|  
-|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Извлекает источник, который был помещен в хранилище символов поставщиками атрибут или другие компоненты в процессе компиляции.|  
-|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Извлекает перечисленной последовательности, потоков данных отладки.|  
-|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров по указанному адресу.|  
-|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров на указанный относительный виртуальный адрес (RVA).|  
-|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров на указанный виртуальный адрес (VA).|  
-|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта.|  
-|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта и содержащихся в указанный диапазон адресов.|  
-|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского элемента и содержатся в пределах указанного относительного виртуального адреса (RVA).|  
-|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта и содержащихся в указанный виртуальный адрес (VA).|  
-|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, в указанный исходный файл и номер строки.|  
-|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки из всех встроенных функций, которые сопоставлены заданному имени.|  
-|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Возвращает перечисление символов для переменной, которая соответствует указанным значением тега в родительском объекте функция заглушки сочетаний клавиш.|  
-|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Учитывая соответствующее значение тега, этот метод возвращает перечисление символы, которые содержатся в функции заглушки Accelerator указанного родительского объекта в указанный относительный виртуальный адрес.|  
-|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Возвращает перечисление символы для встроенных кадров, соответствующий имени функции задан встроенным.|  
-|[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Возвращает перечисление символы для встроенных кадров, которые соответствуют указанным исходным расположением.|  
+|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Извлекает перечислитель для всех таблиц, содержащихся в хранилище символов.|  
+|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Извлекает перечислитель для всех именованных символов в статических расположениях.|  
+|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Извлекает все дочерние элементы указанного родительского идентификатора, соответствующие имени и типу символа.|  
+|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Извлекает указанный тип символа, который содержит или ближайший к указанному адресу.|  
+|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Извлекает указанный тип символа, который содержит или ближайший к определенному относительному виртуальному адресу (RVA).|  
+|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Извлекает указанный тип символа, который содержит или ближайший к конкретному виртуальному адресу (ва).|  
+|[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Извлекает символ, который содержит указанный токен метаданных.|  
+|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|Проверяет, эквивалентны ли два символа.|  
+|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Извлекает символ по его уникальному идентификатору.|  
+|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Извлекает указанный тип символа, который содержит, или ближайший к, заданный относительный виртуальный адрес и смещение.|  
+|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Извлекает указанный тип символа, который содержит или ближайший к указанному виртуальному адресу и смещению.|  
+|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Извлекает исходный файл по компилируемого объекта и имени.|  
+|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Извлекает исходный файл по идентификатору исходного файла.|  
+|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Получает номера строк в указанном компилируемого объекта и идентификаторе исходного файла.|  
+|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Получает строки в указанном компилируемого объекта, содержащем указанный адрес.|  
+|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Получает строки в указанном компилируемого объекта, которые содержат заданный относительный виртуальный адрес.|  
+|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Находит сведения о номере строки для строк, содержащихся в указанном диапазоне адресов.|  
+|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Получает строки в указанном компилируемого объекта по исходному файлу и номеру строки.|  
+|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Извлекает источник, помещенный в хранилище символов поставщиками атрибутов или другими компонентами процесса компиляции.|  
+|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Извлекает перечислимую последовательность потоков данных отладки.|  
+|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров по заданному адресу.|  
+|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров на указанном относительном виртуальном адресе (RVA).|  
+|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию всех встроенных кадров на указанном виртуальном адресе (ва).|  
+|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, по указанному родительскому символу.|  
+|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, которые прямо или косвенно связаны с указанным родительским символом и содержатся в указанном диапазоне адресов.|  
+|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, которые прямо или косвенно связаны с указанным родительским символом и содержатся в указанном относительном виртуальном адресе (RVA).|  
+|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, которые прямо или косвенно связаны с указанным родительским символом и содержатся в указанном виртуальном адресе (ва).|  
+|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, в указанном исходном файле и номере строки.|  
+|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех встроенных функций, соответствующих заданному имени.|  
+|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Возвращает перечисление символов для переменной, которой соответствует указанное значение тега в родительской функции-заглушке ускорителя.|  
+|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|При наличии соответствующего значения тега этот метод возвращает перечисление символов, содержащихся в указанной родительской функции-заглушке ускорителя, по указанному относительному виртуальному адресу.|  
+|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Возвращает перечисление символов для встроенных кадров, соответствующих указанному имени встроенной функции.|  
+|[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Возвращает перечисление символов для встраиваемых кадров, соответствующих указанному исходному расположению.|  
   
-## <a name="remarks"></a>Примечания  
- Очень важно для вызова [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод после создания `IDiaSession` объекта и значение, передаваемое в `put_loadAddress` метод должен быть ненулевое значение — свойствами виртуального адреса (VA) должны быть символы возможен доступ. Адрес загрузки поступают из любой программы загружен отлаживаемому исполняемому файлу. Например, можно вызвать функцию Win32 `GetModuleInformation` для получения адреса загрузки исполняемого файла, учитывая дескриптор к исполняемому файлу.  
+## <a name="remarks"></a>Remarks  
+ Важно вызвать метод [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) после создания `IDiaSession` объекта, и значение, передаваемое `put_loadAddress` методу, должно быть ненулевым — для доступа к любому свойству СИМВОЛА виртуального адреса (ва). Адрес загрузки поступает из любой программы, загруженной в отлаживаемый исполняемый файл. Например, можно вызвать функцию Win32 `GetModuleInformation` , чтобы получить адрес загрузки для исполняемого файла, учитывая обработчик для исполняемого файла.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить `IDiaSession` интерфейс как часть общего инициализации пакета SDK для доступа к интерфейсу отладки.  
+ В этом примере показано, как получить `IDiaSession` интерфейс в рамках общей инициализации пакета SDK Dia.  
   
 ```cpp#  
 CComPtr<IDiaDataSource> pSource;  
@@ -113,18 +113,18 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [Exe](../../debugger/debug-interface-access/exe.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Средств](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
+ [Программы](../../debugger/debug-interface-access/exe.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [идиадатасаурце](../../debugger/debug-interface-access/idiadatasource.md)   
+ [Идиадатасаурце:: Опенсессион](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [IDiaSymbol:: Финдчилдрен](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

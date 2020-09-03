@@ -1,5 +1,5 @@
 ---
-title: Список объектов окна свойств (ru) Документы Майкрософт
+title: Список объектов окна свойств | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706149"
 ---
 # <a name="properties-window-object-list"></a>Список объектов окна свойств
-Список объектов в окне **Свойств** представляет собой список выпадающих, который позволяет изменять выбор на другие объекты, доступные в одном или нескольких выбранных окнах. Выбор другого объекта из этого списка вызывает <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> вызов для информирования среды о том, что выбран новый объект. Затем информация, отображаемый в окне **Свойств,** изменяется, чтобы показать свойства, связанные с недавно выбранным объектом.
+Список объектов в окне « **Свойства** » — это раскрывающийся список, позволяющий изменить выделенный фрагмент на другие объекты, доступные в одном или нескольких выбранных окнах. Выбор другого объекта из этого списка вызывает метод, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> чтобы сообщить среде о том, что был выбран новый объект. Сведения, отображаемые в окне **Свойства** , изменяются для отображения свойств, связанных с вновь выбранным объектом.
 
 ## <a name="the-object-list"></a>Список объектов
- Список объектов состоит из двух полей: имени объекта (отображается жирным шрифтом) и типа объекта.
+ Список объектов состоит из двух полей: имени объекта (отображается полужирным шрифтом) и типа объекта.
 
- Имя объекта, отображаемое слева от типа объекта жирным `Name` шрифтом, <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> извлекается из самого объекта с помощью свойства, предоставляемого интерфейсом. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, единственный <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>метод <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> на , возвращается для совместного класса этого интерфейса. Окно **Свойства** <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> использует для получения имени coclass, которое отображается как имя объекта в списке выпадающих.
+ Имя объекта, отображаемое слева от типа объекта полужирным шрифтом, извлекается из самого объекта с помощью `Name` свойства, предоставленного <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> интерфейсом. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, единственный метод в <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , возвращает <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> для компонентного класса этого интерфейса. В окне **Свойства** используется <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> для получения имени компонентного класса, который отображается как имя объекта в раскрывающемся списке.
 
- Если объект не имеет `Name` свойства, имя не отображается в области имени списка объектов. Вы можете добавить свойство «Имя» объекту, если требуется, чтобы имя было отображено в списке объектов.
+ Если объект не имеет `Name` свойства, имя не отображается в области имен в списке объектов. Если требуется, чтобы имя отображалось в списке объектов, можно добавить в объект свойство Name.
 
- Если объект COM не <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>выполняется, окно **Свойств** отображает имя интерфейса вместо имени объекта в левой части списка.
+ Если COM-объект не реализует <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , в окне **свойства** отображается имя интерфейса вместо имени объекта в левой части списка.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширение свойств](../../extensibility/internals/extending-properties.md)

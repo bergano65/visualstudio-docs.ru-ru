@@ -57,17 +57,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984628"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Дополнительная поддержка ошибок в решениях Office
 
 Следующие ресурсы помогут найти ответы на проблемы, возникающие при создании решений Office в Visual Studio.
 
-## <a name="troubleshoot-specific-errors"></a>Устранение конкретных ошибок
+## <a name="troubleshoot-specific-errors"></a>Устранение определенных ошибок
 
 Дополнительные сведения об общих ошибках в решениях Office см. в следующих разделах:
 
@@ -77,7 +77,7 @@ ms.locfileid: "72984628"
 
 - [Устранение неполадок развертывания решений Office](../vsto/troubleshooting-office-solution-deployment.md)
 
-## <a name="other-resources"></a>Другие источники
+## <a name="other-resources"></a>Другие ресурсы
 
 [Форум по средствам Visual Studio для Office](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
@@ -91,7 +91,7 @@ ms.locfileid: "72984628"
 
 Ссылки на дополнительные ресурсы для изучения разработки решений Office и разработки приложений для Office с помощью Visual Studio.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Устранение неполадок в системе безопасности решений Office](../vsto/troubleshooting-office-solution-security.md)
