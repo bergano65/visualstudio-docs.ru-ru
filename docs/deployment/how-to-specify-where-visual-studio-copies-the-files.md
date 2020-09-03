@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0618a6e0b74c16efaaf8a70b7b8745e0f3dd142
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381721"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Практическое руководство. Указание расположения, в которое среда Visual Studio копирует файлы
@@ -45,6 +45,6 @@ ms.locfileid: "85381721"
 
      Обратите внимание, что в поле **Расположение публикации** должен присутствовать текст, чтобы кнопка обзора (**...**) работала.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

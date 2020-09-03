@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement Документы Майкрософт
+title: 'IDebugThread2:: Кансетнекстстатемент | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718856"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Определяет, можно ли установить указатель текущей инструкции на заданную рамку стека.
+Определяет, можно ли задать текущий указатель инструкции для данного кадра стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,18 +43,18 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Параметры
 `pStackFrame`\
-Зарезервировано для использования в будущем; установлен на нулевую стоимость. Если это нулевое значение, используйте текущую рамку стека.
+Зарезервировано для будущего использования; Задайте для значение null. Если это значение равно null, используйте текущий кадр стека.
 
 `pCodeContext`\
-(в) Объект [IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) описывающий местоположение кода, которое должно быть выполнено, и его контекст.
+окне Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , описывающий расположение кода для выполнения и его контекст.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если этот `S_OK`метод возвращается, затем позвоните в метод [SetNextStatement,](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) чтобы фактически установить следующее утверждение.
+## <a name="remarks"></a>Remarks
+ Если этот метод возвращает `S_OK` , вызовите метод [сетнекстстатемент](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) для фактической установки следующего оператора.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -1,5 +1,5 @@
 ---
-title: Структура VSPackage (пакет VSPackage управления версиями) | Документация Майкрософт
+title: Структура VSPackage (пакет VSPackage системы управления версиями) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08bb0a296daca0de1c02b905a75fb10ce05f254e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205997"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Структура VSPackage (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Пакет SDK для пакета управления для источника предоставляет рекомендации по созданию пакетов VSPackage, который позволяет разработчику элемента управления источника интегрировать свой функции системы управления версиями с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] среды. VSPackage — это компонент COM, который загружается по запросу обычно [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) на основе служб, которые объявляются с помощью пакета в записи в реестр. Каждый пакет VSPackage должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage обычно потребляет служб, предоставляемых [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки и предлагает некоторые службы.  
+Пакет SDK пакета системы управления версиями содержит рекомендации по созданию VSPackage, позволяющему разработчику системы управления версиями интегрировать свои функции управления версиями в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] среду. VSPackage — это COM-компонент, который обычно загружается по запросу [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной средой разработки (IDE) на основе служб, объявленных пакетом в записях реестра. Каждый пакет VSPackage должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> . Пакет VSPackage обычно использует службы, предлагаемые [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной средой разработки, и профферс некоторые службы.  
   
- VSPackage объявляет элементами меню и устанавливает состояние элемента по умолчанию с помощью файла .vsct. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Среда интегрированной разработки отобразит пункты меню в этом состоянии до загрузки VSPackage. Как следствие, реализацию VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод вызывается для включения или отключения пунктов меню.  
+ Пакет VSPackage объявляет свои пункты меню и устанавливает состояние элемента по умолчанию с помощью файла. vsct. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Интегрированная среда разработки отображает пункты меню в этом состоянии до тех пор, пока не будет загружен пакет VSPackage. Затем <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> для включения или отключения пунктов меню вызывается реализация метода VSPackage.  
   
-## <a name="source-control-package-characteristics"></a>Характеристик пакета управления источника  
- VSPackage является тесная интеграция системы управления версиями [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+## <a name="source-control-package-characteristics"></a>Характеристики пакета системы управления версиями  
+ Пакет VSPackage для системы управления версиями тесно интегрирован в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
- Семантика VSPackage включают:  
+ Семантика VSPackage включает в себя следующее:  
   
-- Интерфейс, реализуемый размещению VSPackage ( `IVsPackage` интерфейс)  
+- Интерфейс, который должен быть реализован с помощью VSPackage ( `IVsPackage` интерфейс)  
   
-- Реализация команды пользовательского интерфейса (vsct-файл и реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс)  
+- Реализация команд пользовательского интерфейса (vsct-файл и реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса)  
   
-- Регистрация пакета VSPackage с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Регистрация пакета VSPackage с помощью [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-  Пакет VSPackage системы управления версиями должны взаимодействовать с этими других [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] сущностей:  
+  Пакет VSPackage системы управления версиями должен взаимодействовать с этими другими [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] сущностями:  
   
 - Проекты  
   
@@ -46,9 +46,9 @@ ms.locfileid: "68205997"
   
 - Windows  
   
-- В таблице выполняющихся документов  
+- Таблица выполняющегося документа  
   
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Службы среды Visual Studio, которые могут включать  
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Службы среды Visual Studio, которые могут быть использованы  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
@@ -57,7 +57,7 @@ ms.locfileid: "68205997"
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>  
   
- Служба SVsRegisterScciProvider  
+ Служба СвсрегистерскЦипровидер  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>  
   
@@ -65,15 +65,15 @@ ms.locfileid: "68205997"
   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>  
   
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP интерфейсы реализованы и вызывается  
- Пакет системы управления версиями является VSPackage, и поэтому она может напрямую взаимодействовать с других пакетов VSPackage, должны быть зарегистрированы с помощью [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Чтобы обеспечить доступ ко всем возможностям функции системы управления версиями, системы управления версиями VSPackage могут работать с интерфейсов, предоставляемых платформой проектов или оболочки.  
+### <a name="vsip-interfaces-implemented-and-called"></a>Реализованные и вызываемые интерфейсы VSIP  
+ Пакет управления версиями является VSPackage и поэтому может взаимодействовать напрямую с другими пакетами VSPackage, зарегистрированными в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Чтобы обеспечить полный спектр функций управления версиями, пакет VSPackage системы управления версиями может работать с интерфейсами, предоставляемыми проектами или оболочкой.  
   
- Каждый проект в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] должен реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> распознается как проект внутри [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки. Тем не менее, этот интерфейс не является специальным достаточно для системы управления версиями. Проекты, которые должны быть под источником управления реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Этот интерфейс используется системой управления версиями VSPackage для запроса проекта за их содержимое и предоставлять его глифы и сведения о привязке (сведения, необходимые для установления соединения между расположением сервера и расположение проекта, который находится под на диске Система управления версиями).  
+ Каждый проект в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] должен реализовывать, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> чтобы быть распознанным как проект в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среде разработки. Однако этот интерфейс не является достаточно специализированным для системы управления версиями. Проекты, которые должны находиться в системе управления версиями, реализуют <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> . Этот интерфейс используется пакетом VSPackage системы управления версиями для запроса содержимого проекта и предоставления ему глифов и сведений о привязке (сведения, необходимые для установления соединения между расположением сервера и расположением на диске проекта, который находится в системе управления версиями).  
   
- Системы управления версиями, VSPackage реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, который в свою очередь позволяет проектам регистрироваться для системы управления версиями и получить их состояние глифов.  
+ Пакет VSPackage системы управления версиями реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> , который, в свою очередь, позволяет проектам регистрировать себя для системы управления версиями и извлекать их глифы состояния.  
   
- Полный список интерфейсов, которые необходимо учитывать VSPackage системы управления версиями, см. в разделе [связанные службы и интерфейсы](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).  
+ Полный список интерфейсов, которые должен учитывать пакет VSPackage системы управления версиями, см. в разделе [связанные службы и интерфейсы](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).  
   
-## <a name="see-also"></a>См. также  
- [Элементы проектирования](../../extensibility/internals/source-control-vspackage-design-elements.md)   
+## <a name="see-also"></a>См. также:  
+ [Элементы дизайна](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [Связанные службы и интерфейсы](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

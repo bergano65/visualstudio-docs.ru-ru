@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr | Документация Майкрософт
+title: Идиаенумсимболсбяддр | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a4b36b27c43beaa0f975adc5ddfa0a4feb9c069
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194868"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Перечисляет по адресу различных символов, содержащихся в источнике данных.  
+Перечисляет по адресу различные символы, содержащиеся в источнике данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,25 +32,25 @@ IDiaEnumSymbolsByAddr : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaEnumSymbolsByAddr`.  
+ В следующей таблице показаны методы `IDiaEnumSymbolsByAddr` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Помещает перечислитель, выполняя поиск раздела и смещение.|  
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Помещает перечислитель, выполняя поиск по относительный виртуальный адрес (RVA).|  
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Помещает перечислитель, выполняя поиск по виртуальный адрес (VA).|  
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Извлекает следующий символы в порядке по адресу. Обновляет позицию перечислителя число выбранных элементов.|  
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Извлекает предыдущий символы в порядке по адресу. Обновляет позицию перечислителя число выбранных элементов.|  
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Размещает перечислитель, выполняя поиск по разделу и смещению.|  
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Размещает перечислитель, выполняя поиск по относительному виртуальному адресу (RVA).|  
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Размещает перечислитель, выполняя поиск по виртуальному адресу (ва).|  
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Извлекает следующие символы в упорядочении по адресу. Обновляет расположение перечислителя по количеству извлекаемых элементов.|  
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Извлекает предыдущие символы в упорядочении по адресу. Обновляет расположение перечислителя по количеству извлекаемых элементов.|  
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Создает копию объекта.|  
   
-## <a name="remarks"></a>Примечания  
- Этот интерфейс предоставляет символы, сгруппированными по адресам. Для работы с символами, сгруппированных по типам, например `SymTagUDT` (определяемый пользователем тип) или `SymTagBaseClass`, использовать [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) интерфейс.  
+## <a name="remarks"></a>Remarks  
+ Этот интерфейс предоставляет символы, сгруппированные по адресу. Для работы с символами, сгруппированными по типу, например `SymTagUDT` (определяемый пользователем тип) или `SymTagBaseClass` , используйте интерфейс [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md) .  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Получить этот интерфейс, вызвав [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) метод.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получите этот интерфейс, вызвав метод [IDiaSession:: жетсимболсбяддр](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) .  
   
 ## <a name="example"></a>Пример  
- Эта функция отображает имя и адрес, упорядоченный по относительному виртуальному адресу всех символов.  
+ Эта функция отображает имя и адрес всех символов, упорядоченных по относительному виртуальному адресу.  
   
 ```cpp#  
 void ShowSymbolsByAddress(IDiaSession *pSession)  
@@ -97,13 +97,13 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession:: Жетсимболсбяддр](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

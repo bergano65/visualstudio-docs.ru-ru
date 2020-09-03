@@ -1,5 +1,5 @@
 ---
-title: ОбеспечитьDefaultName Элемент (Visual Studio шаблоны) Документы Майкрософт
+title: Элемент Провидедефаултнаме (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701720"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>Элемент ProvideDefaultName (шаблоны Visual Studio)
-Уточняется, будет [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ли проектная система генерировать имя по умолчанию для шаблона в диалоговом окне **Добавления нового элемента** или **нового проекта.**
+# <a name="providedefaultname-element-visual-studio-templates"></a>Элемент Провидедефаултнаме (шаблоны Visual Studio)
+Указывает, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет ли система проекта создавать имя по умолчанию для шаблона в диалоговом окне " **Добавление нового элемента** " или " **Создание проекта** ".
 
- \<VSTemplate \<> TemplateData> \<provideDefaultName>
+ \<VSTemplate> \<TemplateData>
+ \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,10 +36,10 @@ ms.locfileid: "80701720"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -49,17 +50,17 @@ ms.locfileid: "80701720"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Текст должен быть `true` `false`либо, либо , с указанием того, следует ли создавать имя по умолчанию для шаблона в **добавлении нового элемента** или нового диалога **проекта.**
+ Текст должен иметь значение `true` или `false` , что указывает, следует ли создавать имя по умолчанию для шаблона в диалоговом окне **Добавление нового элемента** или **Создание проекта** .
 
-## <a name="remarks"></a>Примечания
- Параметр `ProvideDefaultName` является необязательным элементом. Значение по умолчанию — `true`.
+## <a name="remarks"></a>Remarks
+ Параметр `ProvideDefaultName` является необязательным элементом. Значение по умолчанию — `true`.
 
- Если `ProvideDefaultName` `false`элемент, **имя** коробки **Добавить новый пункт** и **новый** `<Enter_name>`проект диалоговых коробок содержат значение.
+ Если `ProvideDefaultName` элемент имеет `false` значение, поля **Name** диалоговых окон **Добавление нового элемента** и **Новый проект** содержат значения `<Enter_name>` .
 
- Используйте элемент [DefaultName,](../extensibility/defaultname-element-visual-studio-templates.md) чтобы указать имя проекта по умолчанию или элемент в диалоговых коробках **Добавить новый элемент** и **новый проект.** Когда значение `ProvideDefaultName` элемента, `true`упущение `DefaultName` элемента для проектов заполняет поле диалога с именем шаблона, то есть значение от элемента [имя.](../extensibility/name-element-visual-studio-templates.md)
+ Используйте элемент [дефаултнаме](../extensibility/defaultname-element-visual-studio-templates.md) , чтобы указать имя проекта или элемента по умолчанию в диалоговых окнах **Добавление нового элемента** и **Новый проект** . Если значение элемента равно, то при пропуске `ProvideDefaultName` `true` `DefaultName` элемента для проектов в диалоговом окне заносится имя шаблона, то есть значение из элемента [Name](../extensibility/name-element-visual-studio-templates.md) .
 
 ## <a name="example"></a>Пример
- Следующий пример кода `ProvideDefaultName` устанавливает `false`элемент для .
+ В следующем примере кода для элемента задается `ProvideDefaultName` значение `false` .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -78,5 +79,5 @@ ms.locfileid: "80701720"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2 Документы Майкрософт
+title: IDebugDefaultPort2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732313"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Этот интерфейс предоставляет несколько методов для доступа к серверу порта и средствам уведомления.
+Этот интерфейс предоставляет несколько методов для доступа к серверу и средствам уведомления на порту.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,31 +28,31 @@ ms.locfileid: "80732313"
 IDebugDefaultPort2 : IDebugPort2
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Visual Studio реализует этот интерфейс, чтобы представить порт отладки для доступа к программам. Поставщик пользовательских портов также может реализовать этот интерфейс, если он обрабатывает удаленную отладку.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Visual Studio реализует этот интерфейс, чтобы представить порт отладки для доступа к программам. Пользовательский поставщик порта также может реализовать этот интерфейс, если он обрабатывает удаленную отладку.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Аргумент методы на интерфейсе [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) поставляет этот интерфейс. Вызов [queryInterface](/cpp/atl/queryinterface) на [интерфейсе IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) также может получить этот интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот интерфейс предоставляет аргумент для методов в интерфейсе [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . Вызов [QueryInterface](/cpp/atl/queryinterface) в интерфейсе [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) также может получить этот интерфейс.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
- В дополнение к методам, определенным в [IDebugPort2,](../../../extensibility/debugger/reference/idebugport2.md)этот интерфейс реализует следующие методы:
+## <a name="methods-in-vtable-order"></a>Методы в порядке vtable
+ В дополнение к методам, определенным в [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), этот интерфейс реализует следующие методы:
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Получает интерфейс уведомления порта из этого порта.|
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Получает интерфейс на сервер, размещая этот порт.|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Определяет, работает ли этот порт на локальной машине.|
+|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Получает интерфейс уведомления порта от этого порта.|
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Возвращает интерфейс для сервера, на котором размещен этот порт.|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Определяет, работает ли этот порт на локальном компьютере.|
 
-## <a name="remarks"></a>Примечания
- Название «`IDebugDefaultPort2`немного неправильно, так как оно не представляет собой порт по умолчанию. Его можно назвать "IDebugPort3".
+## <a name="remarks"></a>Remarks
+ Имя " `IDebugDefaultPort2` " является битом атрибутаDurableService, так как оно не представляет порт по умолчанию. Его можно назвать «IDebugPort3».
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

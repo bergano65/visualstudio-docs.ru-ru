@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetEntryPoint | Документация Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Жетентрипоинт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6f7e1c588c18f06e8be19d506d5f2b676a56056
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194765"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает точку входа приложения.  
+Получает точку входа приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,19 +43,19 @@ int GetEntryPoint(
   
 #### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- [in] Идентификатор домена приложения.  
+ окне Идентификатор домена приложения.  
   
  `guidModule`  
- [in] Уникальный идентификатор для модуля.  
+ окне Уникальный идентификатор модуля.  
   
  `ppAddress`  
- [out] Возвращает точку входа, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
+ заполняет Возвращает точку входа, представленную интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetEntryPoint(  
@@ -89,5 +89,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder (англ.) Документы Майкрософт
+title: Идебугтипефиелдбуилдер | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718395"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
@@ -26,20 +26,20 @@ ms.locfileid: "80718395"
 IDebugTypeFieldBuilder : IUnknown
 ```
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Этот интерфейс получен от поставщика символов.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Этот интерфейс получается от поставщика символов.
 
 ## <a name="methods"></a>Методы
- Этот интерфейс реализует следующие методы:
+ Этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Создает объект, представляющий примитивный тип.|
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Создает указатель к указанному типу.|
+|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Создает объект, представляющий тип-примитив.|
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Создает указатель на указанный тип.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Sh.h
+ Заголовок: sh. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660515"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Установка платформ модульного тестирования сторонних поставщиков
@@ -20,7 +20,7 @@ ms.locfileid: "72660515"
 
 Обозреватель тестов Visual Studio может запускать любую платформу модульного тестирования, разработавшую интерфейс адаптера для обозревателя. Программа установки платформы устанавливает двоичные файлы и добавляет шаблоны проекта Visual Studio для поддерживаемых языков. При создании проекта с шаблоном платформа регистрируется с помощью обозревателя тестов. Решение Visual Studio может содержать проекты модульного тестирования, которые используют разные платформы, предназначенные для разных языков. Обозреватель тестов выполняет их все.
 
- **Requirements**
+ **Требования**
 
 - Visual Studio Enterprise, Visual Studio Professional
 
@@ -52,11 +52,11 @@ ms.locfileid: "72660515"
 
 4. Откройте [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-5. Щелкните **Обзор**.
+5. Нажмите кнопку **Обзор**.
 
 6. В списке **Категория** разверните узел **Сервис** и выберите **Тестирование**.
 
 7. Выберите платформу в списке результатов, чтобы перейти на страницу "Коллекция Visual Studio" инструмента.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Модульное тестирование кода](../test/unit-test-your-code.md)

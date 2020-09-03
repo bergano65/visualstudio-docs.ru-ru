@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Документация Майкрософт
+title: 'IDiaSession:: Финдсимболсфоракцелераторпоинтертаг | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 55e69ae6380faa58d2b63074734cfe3c065759e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196345"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает перечисление символов для переменной, которая соответствует указанным значением тега в родительском объекте функция заглушки сочетаний клавиш.  
+Возвращает перечисление символов для переменной, которой соответствует указанное значение тега в родительской функции-заглушке ускорителя.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,17 +35,17 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
   
 #### <a name="parameters"></a>Параметры  
  `parent`  
- [in] IDiaSymbol, соответствующую функцию заглушки сочетаний клавиш для поиска.  
+ окне Объект IDiaSymbol, соответствующий функции-заглушке ускорителя для поиска.  
   
  `tagValue`  
- [in] Указатель на значение тега.  
+ окне Значение тега указателя.  
   
  `ppResult`  
- [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
+ заполняет Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с помощью результата.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

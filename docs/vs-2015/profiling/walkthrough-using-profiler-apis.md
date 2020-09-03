@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование API-интерфейсов профилировщика | Документация Майкрософт
+title: Пошаговое руководство. Использование интерфейсов API профилировщика | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871541"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
@@ -34,14 +34,14 @@ ms.locfileid: "68871541"
 
  Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле VSPerf.dll. Файл заголовка VSPerf.h и библиотека импорта VSPerf.lib расположены в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools.
 
- Для управляемого кода интерфейсы API находятся в файле Microsoft.VisualStudio.Profiler.dll. Эта библиотека DLL расположена в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools. Дополнительные сведения см. в разделе [Profiler](/previous-versions/ms242704(v=vs.140)).
+ Для управляемого кода интерфейсы API находятся в файле Microsoft.VisualStudio.Profiler.dll. Эта библиотека DLL расположена в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools. Дополнительные сведения см. в статье о [пространстве имен Microsoft.VisualStudio.Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Предварительные требования
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:
 
- [Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)
+ [Как выбрать методы сбора](../profiling/how-to-choose-collection-methods.md)
 
- [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)
+ [Инструкции: справочные сведения о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
  По умолчанию при запуске профилировщика он выполняет сбор данных на глобальном уровне. При включении в начало программы указанного ниже кода профилирование на глобальном уровне отключается.
 
@@ -127,7 +127,7 @@ DataCollection.CurrentId);
 
 4. Нажмите кнопку **Запустить с профилированием**.
 
-    Профилировщик выполнит инструментирование, запустит двоичный файл и создаст файл отчета о производительности. Файл отчета о производительности отображается в узле **Отчеты** **обозревателя производительности**.
+    Профилировщик выполнит инструментирование, запустит двоичный файл и создаст файл отчета о производительности. Файл отчета о производительности отображается в узле **Отчеты****обозревателя производительности**.
 
 5. Откройте созданный файл отчета о производительности.
 
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. Введите следующую команду: **VSInstr \<имя_файла>.exe**
+3. Введите следующую команду:**VSInstr \<filename> . exe**
 
-4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**
+4. Введите следующую команду:**VSPerfCmd/start: Trace/OUTPUT: \<filename> . vsp**
 
 5. Введите следующую команду: **VSPerfCmd /globaloff**
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. Введите следующую команду: **VSPerfCmd /shutdown**
 
-8. Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**
+8. Введите следующую команду:**VSPerfReport/calltrace: \<filename> . vsp**
 
      В текущем каталоге создается CSV-файл, содержащий результирующие данные производительности.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
-- [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Справочник по API профилировщика Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Начало работы](../profiling/getting-started-with-performance-tools.md)
 - [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

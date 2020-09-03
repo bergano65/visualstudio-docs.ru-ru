@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea1411925c6858bceaea3e2e190ecb1a5f2c7f89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196553"
 ---
 # <a name="delete-task"></a>Задача Delete
@@ -34,14 +34,14 @@ ms.locfileid: "68196553"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Delete` .  
   
-|Параметр|ОПИСАНИЕ|  
+|Параметр|Описание|  
 |---------------|-----------------|  
 |`DeletedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, которые были успешно удалены.|  
 |`Files`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы для удаления.|  
 |`TreatErrorsAsWarnings`|Необязательный параметр `Boolean`.<br /><br /> Если `true`, ошибки регистрируются как предупреждения. По умолчанию используется значение `false`.|  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описание см. в разделе [базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере рассматривается удаление файла `MyApp.pdb`.  
@@ -59,6 +59,6 @@ ms.locfileid: "68196553"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также:  
+ [Операции](../msbuild/msbuild-tasks.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)
