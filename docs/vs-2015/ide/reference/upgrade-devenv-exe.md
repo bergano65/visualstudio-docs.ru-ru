@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657902"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -36,7 +36,7 @@ devenv SolutionFile | ProjectFile /upgrade
 
  `ProjectFile` Требуется при обновлении одного проекта. Путь и имя для файла проекта в решении. Можно ввести только имя файла проекта или полный путь и имя файла проекта. Если папка или файл еще не существуют, они будут созданы.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Резервные копии автоматически создаются и копируются в каталог с именем Backup, который создается в текущем каталоге.
 
  Решения или проекты в системе управления версиями необходимо получать для изменения, прежде чем их можно будет обновить.
@@ -50,5 +50,5 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Как устранить неудачные попытки обновления проекта Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [devenv параметры командной строки](../../ide/reference/devenv-command-line-switches.md)

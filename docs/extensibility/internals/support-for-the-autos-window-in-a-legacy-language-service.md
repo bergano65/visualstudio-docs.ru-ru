@@ -1,5 +1,5 @@
 ---
-title: Поддержка окна Autos в службе языка Наследия (ru) Документы Майкрософт
+title: Поддержка окна "видимые" в устаревшей языковой службе | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704881"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Поддержка окна видимых переменных в языковой службе прежних версий
-Окно **Autos** отображает такие выражения, как переменные и параметры, которые находятся в области при приостановке программы (либо из-за точки разрыва, либо из-за исключения). Выражения могут включать переменные, локальные или глобальные, а также параметры, которые были изменены в локальной области. Окно **Autos** также может включать в себя моменты класса, структуры или другого типа. Все, что может оценить оценщик выражения, потенциально может быть показано в окне **Autos.**
+В окне **видимые** отображаются такие выражения, как переменные и параметры, которые находятся в области действия при приостановке отлаживаемой программы (из-за точки останова или исключения). Выражения могут включать в себя переменные, локальные или глобальные, а также параметры, измененные в локальной области. Окно **видимые** может также содержать экземпляры класса, структуры или другого типа. Все, что может вычислить средство оценки выражений, потенциально может быть показано в окне **видимые** .
 
- Платформа управляемого пакета (MPF) не обеспечивает прямую поддержку окна **Autos.** Однако, если вы <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> переопределяете метод, вы можете вернуть список выражений, которые будут представлены в окне **Autos.**
+ Платформа управляемого пакета (MPF) не обеспечивает прямую поддержку для окна " **видимые** ". Однако при переопределении <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метода можно возвратить список выражений, которые должны быть представлены в окне **видимые** .
 
-## <a name="implementing-support-for-the-autos-window"></a>Реализация поддержки окна Авто
- Все, что вам нужно сделать для поддержки окна <xref:Microsoft.VisualStudio.Package.LanguageService> **Autos,** это реализовать <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метод в классе. Ваша реализация должна решить, учитывая местоположение в исходном файле, какие выражения должны отображаться в окне **Autos.** Метод возвращает список строк, в которых каждая строка представляет одно выражение. Значение возврата <xref:Microsoft.VisualStudio.VSConstants.S_OK> указывает, что список содержит <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> выражения, в то время как указывает на отсутствие высыхаевых.
+## <a name="implementing-support-for-the-autos-window"></a>Реализация поддержки для окна "видимые"
+ Все, что необходимо сделать для поддержки окна **видимые** , — это реализовать <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> классе. Ваша реализация должна принять решение, учитывая расположение в исходном файле, какие выражения должны отображаться в окне **видимые** . Метод возвращает список строк, в которых каждая строка представляет одно выражение. Возвращаемое значение <xref:Microsoft.VisualStudio.VSConstants.S_OK> указывает, что список содержит выражения, а <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> указывает, что нет выражений для отображения.
 
- Возврат фактических возвращенных выражений – это имена переменных или параметров, которые отображаются в этом месте в коде. Эти имена передаются оценщику выражения для получения значений и типов, которые затем отображаются в окне **Autos.**
+ Фактически возвращаемые выражения — это имена переменных или параметров, которые отображаются в этом месте кода. Эти имена передаются средству оценки выражений для получения значений и типов, которые затем отображаются в окне **видимые** .
 
 ### <a name="example"></a>Пример
- В следующем примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метода, который <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> получает список выражений <xref:Microsoft.VisualStudio.Package.ParseReason>из метода с помощью причины разбора. Каждое из выражений обернут `TestVsEnumBSTR` как <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> интерфейс, который реализует интерфейс.
+ В следующем примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> метода, который получает список выражений из <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метода, используя причину синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> . Каждое из выражений упаковывается как объект `TestVsEnumBSTR` , реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> интерфейс.
 
- Обратите внимание, что методы `GetAutoExpressionsCount` и `GetAutoExpression` `TestAuthoringSink` методы являются пользовательскими методами на объекте и были добавлены для поддержки этого примера. Они представляют собой один из способов, в котором выражения, добавленные к `TestAuthoringSink` объекту парсером (по звонку <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> метода), могут быть доступны за пределами парсера.
+ Обратите внимание, что `GetAutoExpressionsCount` `GetAutoExpression` методы и являются пользовательскими методами `TestAuthoringSink` объекта и были добавлены для поддержки этого примера. Они представляют один из способов, с помощью которых выражения, добавляемые в `TestAuthoringSink` объект средством синтаксического анализа (путем вызова <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> метода), доступны вне средства синтаксического анализа.
 
 ```csharp
 using Microsoft.VisualStudio;

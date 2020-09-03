@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString | Документация Майкрософт
+title: 'Идебуженумфиелд:: Жетвалуефромстринг | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f553b7f019dd89af771e057a46a11b1affed1308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188943"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
@@ -42,17 +42,17 @@ int GetValueFromString(
   
 #### <a name="parameters"></a>Параметры  
  `pszValue`  
- [in] Строка, указывающая имя, для которого следует получить значение. Обратите внимание на то, что для C++, это строку расширенных символов.  
+ окне Строка, указывающая имя, для которого необходимо получить значение. Обратите внимание, что для C++ это строка расширенных символов.  
   
  `pValue`  
- [out] Возвращает соответствующее числовое значение.  
+ заполняет Возвращает связанное числовое значение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE`, если имя не является частью перечисление, или код ошибки.  
+ В случае успеха возвращает значение `S_OK` ; в противном случае возвращает значение `S_FALSE` , если имя не является частью перечисления, или код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод не учитывает регистр. Не учитывать регистр при необходимости (например, в языке, как Visual Basic, где имена не учитывается регистр), используйте [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
+## <a name="remarks"></a>Remarks  
+ Этот метод учитывает регистр. Если требуется поиск без учета регистра (например, на языке, например Visual Basic, где имена не чувствительны к регистру), используйте [жетвалуефромстрингкасеинсенситиве](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
   
-## <a name="see-also"></a>См. также  
- [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
+## <a name="see-also"></a>См. также:  
+ [идебуженумфиелд](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)

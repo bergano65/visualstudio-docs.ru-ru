@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::НеопубликованнаяПрограмма Документы Майкрософт
+title: 'IDebugProgramPublisher2:: Унпублишпрограм | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721587"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
@@ -41,14 +41,14 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>Параметры
 `pDebuggeeInterface`\
-(в) Интерфейс `IUnknown` программы. Это то же самое значение, поставляемое методу [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и однозначно определяет удаляемую программу (т.е. она используется в качестве cookie).
+окне `IUnknown` Интерфейс программы. Это то же значение, которое передается в метод [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и уникально идентифицирует удаляемую программу (то есть она используется как файл cookie).
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Чтобы сделать программу доступной для отладки двигателей и менеджера отладки сеансов, используйте метод [PublishProgram.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
+## <a name="remarks"></a>Remarks
+ Чтобы сделать программу доступной для модулей отладки и диспетчера отладки сеансов, используйте метод [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

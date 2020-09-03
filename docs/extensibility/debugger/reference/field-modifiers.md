@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS Документы Майкрософт
+title: FIELD_MODIFIERS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736856"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
-Определяет модификаторы для типа поля.
+Задает модификаторы для типа поля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -106,92 +106,92 @@ public enum enum_FIELD_MODIFIERS {
 
 ## <a name="fields"></a>Поля
 `FIELD_MOD_ACCESS_TYPE`\
-Означает, что поле не доступно.
+Указывает, что доступ к полю невозможен.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-Означает, что поле имеет открытый доступ.
+Указывает, что поле имеет открытый доступ.
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-Означает, что поле защищено доступом.
+Указывает, что поле имеет защищенный доступ.
 
 `FIELD_MOD_ACCESS_PRIVATE`\
-Означает, что поле имеет частный доступ.
+Указывает, что поле имеет закрытый доступ.
 
 `FIELD_MOD_NOMODIFIERS`\
-Означает, что поле не имеет модификаторов.
+Указывает, что поле не имеет модификаторов.
 
 `FIELD_MOD_STATIC`\
-Означает, что поле статично.
+Указывает, что поле является статическим.
 
 `FIELD_MOD_CONSTANT`\
-Означает, что поле является постоянным.
+Указывает, что поле является константой.
 
 `FIELD_MOD_TRANSIENT`\
-Означает, что поле является временным.
+Указывает, что поле является временным.
 
 `FIELD_MOD_VOLATILE`\
-Означает, что поле нестабильно.
+Указывает, что поле является временным.
 
 `FIELD_MOD_ABSTRACT`\
-Означает, что поле является абстрактным.
+Указывает, что поле является абстрактным.
 
 `FIELD_MOD_NATIVE`\
-Означает, что поле является родным.
+Указывает, что поле является машинным.
 
 `FIELD_MOD_SYNCHRONIZED`\
-Означает, что поле синхронизировано.
+Указывает, что поле синхронизировано.
 
 `FIELD_MOD_VIRTUAL`\
-Означает, что поле виртуальное.
+Указывает, что поле является виртуальным.
 
 `FIELD_MOD_INTERFACE`\
-Означает, что поле является интерфейсом.
+Указывает, что поле является интерфейсом.
 
 `FIELD_MOD_FINAL`\
-Означает, что поле является окончательным.
+Указывает, что поле является окончательным.
 
 `FIELD_MOD_SENTINEL`\
-Означает, что поле является дозорным.
+Указывает, что поле является Sentinel.
 
 `FIELD_MOD_INNERCLASS`\
-Означает, что поле является внутренним классом.
+Указывает, что поле является внутренним классом.
 
 `FIELD_TYPE_OPTIONAL`\
 Указывает, что поле является необязательным.
 
 `FIELD_MOD_BYREF`\
-Означает, что поле является эталонным аргументом. Это специально для метода аргументов.
+Указывает, что поле является ссылочным аргументом. Это конкретно для аргументов метода.
 
 `FIELD_MOD_HIDDEN`\
-Означает, что поле должно быть скрыто или представлено в другом контексте; например, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] статических местных жителей.
+Указывает, что поле должно быть скрыто или представлено в другом контексте. Например, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] Статические локальные переменные.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Означает, что поле представляет `IUnknown` объект с интерфейсом.
+Указывает, что поле представляет объект с `IUnknown` интерфейсом.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Означает, что поле имеет специальное `.ctor` название, например, для конструктора (только).[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]
+Указывает, что поле имеет специальное имя, например, `.ctor` для конструктора ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только).
 
 `FIELD_MOD_HIDEBYSIG`\
-Означает, что поле `Overloads` имеет ключевое[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] слово применяется к нему (только).
+Указывает, что к полю `Overloads` применено ключевое слово ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только).
 
 `FIELD_MOD_WRITEONLY`\
-Означает, что поле только для записи. Это значение не `FIELD_MOD_ALL`включено в , так как единственное использование таких полей только для записи для оценки функции. Пользователь должен явно запрашивать `FIELD_MOD_WRITEONLY` поля.
+Указывает, что поле доступно только на запись. Это значение не включено в `FIELD_MOD_ALL` , так как только такие поля только для записи используются для вычисления функции. Пользователь должен явно запрашивать `FIELD_MOD_WRITEONLY` поля.
 
 `FIELD_MOD_ACCESS_MASK`\
-Указывает маску для доступа к полям.
+Указывает маску доступа к полю.
 
 `FIELD_MOD_MASK`\
-Указывает маску для полевых модификаторов.
+Указывает маску для модификаторов полей.
 
-## <a name="remarks"></a>Примечания
-Используется для `dwModifiers` члена [структуры FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
+## <a name="remarks"></a>Remarks
+Используется для `dwModifiers` элемента структуры [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
-Эти значения также передаются методу [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) для фильтрации для определенных полей.
+Эти значения также передаются методу [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) для фильтрации конкретных полей.
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

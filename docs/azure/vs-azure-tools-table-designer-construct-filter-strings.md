@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911649"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>Создание строк фильтра для конструктора таблиц
+# <a name="constructing-filter-strings-for-the-table-designer"></a>Построение строк фильтра для конструктора таблиц
 ## <a name="overview"></a>Обзор
 Для фильтрации данных в таблице Azure, отображаемой в **конструкторе таблиц**Visual Studio, нужно создать строку фильтра и ввести ее в поле фильтра. Синтаксис строки фильтра определяется службами данных WCF и напоминает предложение SQL WHERE, но отправляется в службу таблиц через HTTP-запрос. **Конструктор таблиц** обрабатывает соответствующую кодировку, поэтому для фильтрации по определенному значению свойства в поле фильтра необходимо ввести только имя свойства, оператор сравнения, значение критерия и, при необходимости, логический оператор. Не нужно включать параметр запроса $filter, как при построении URL-адреса для запроса к таблице через [Справочник по API REST служб хранилища](/rest/api/storageservices/).
 
-Службы данных WCF основаны на протоколе [OData](https://www.odata.org/). Дополнительные сведения о параметре системного запроса фильтрации ( **$filter**) см. в [спецификации соглашений об универсальных кодах ресурсов (URI) для OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Службы данных WCF основаны на протоколе [OData](https://www.odata.org/). Дополнительные сведения о параметре системного запроса фильтрации (**$filter**) см. в [спецификации соглашений об универсальных кодах ресурсов (URI) для OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Операторы сравнения
 Для всех типов свойств поддерживаются следующие логические операторы:
@@ -28,14 +28,14 @@ ms.locfileid: "72911649"
 | Логический оператор | Описание | Пример строки фильтра |
 | --- | --- | --- |
 | eq |Равно |City eq 'Redmond' |
-| gt |Больше |Price gt 20 |
+| gt |Больше чем |Price gt 20 |
 | ge |Больше или равно |Price ge 10 |
-| lt |Меньше |Price lt 20 |
+| lt |Меньше чем |Price lt 20 |
 | le |Меньше или равно |Price le 100 |
 | ne |Не равно |City ne 'London' |
-| и |и |Price le 200 and Price gt 3.5 |
-| или |Или |Price le 3.5 or Price gt 200 |
-| not |not |not isAvailable |
+| и |And |Price le 200 and Price gt 3.5 |
+| или |либо |Price le 3.5 or Price gt 200 |
+| not |Not |not isAvailable |
 
 При создании строки фильтра соблюдайте следующие правила.
 

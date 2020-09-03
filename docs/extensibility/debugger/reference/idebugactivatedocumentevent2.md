@@ -1,5 +1,5 @@
 ---
-title: IDebugАктивированоДокументальныйТурнир2 Документы Майкрософт
+title: IDebugActivateDocumentEvent2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736614"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
-Движок отладки (DE) использует этот интерфейс для запроса документа для загрузки.
+Модуль отладки (DE) использует этот интерфейс для запроса загрузки документа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,31 +28,31 @@ ms.locfileid: "80736614"
 IDebugActivateDocumentEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- DE реализует этот интерфейс, когда ему требуется исходный файл для открытия. Этот интерфейс реализован только путем отладки двигателей, которые работают с или являются частью скриптов переводчиков. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот `IDebugEvent2` интерфейс (SDM использует [queryInterface](/cpp/atl/queryinterface) для доступа к интерфейсу).
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Метод DE реализует этот интерфейс, когда ему требуется открыть исходный файл. Этот интерфейс реализуется только модулями отладки, которые работают с или являются частью интерпретаторов сценариев. Интерфейс [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) должен быть реализован на том же объекте, что и этот интерфейс (модель SDM использует [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейсу).
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- DE создает и отправляет объект события, когда ему необходимо открыть исходный файл. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) поставляемой SDM при его подключении к отладке программы.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Параметр DE создает и отправляет этот объект события, когда ему требуется открыть исходный файл. Событие отправляется с помощью функции обратного вызова [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , предоставляемой SDM при присоединении к отлаживаемой программе.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugActivateDocumentEvent2`.
+ В следующей таблице показаны методы `IDebugActivateDocumentEvent2` .
 
 |Методы|Описание|
 |-------------|-----------------|
-|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Получает документ для активации.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Получает контекст документа, описывающий позицию в документе.|
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Возвращает документ для активации.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Возвращает контекст документа, описывающий расположение в документе.|
 
-## <a name="remarks"></a>Примечания
- Типичный сценарий, в котором этот интерфейс используется, если ошибка разбора происходит в коде скрипта на странице HTML, скрипт DE отправляет этот интерфейс в SDM, так что документ с ошибкой разбора может быть отображается.
+## <a name="remarks"></a>Remarks
+ Типичный сценарий, в котором используется этот интерфейс, заключается в том, что при возникновении ошибки синтаксического анализа в коде скрипта на HTML-странице Скрипт отправит этот интерфейс SDM, чтобы можно было отобразить документ с ошибкой синтаксического анализа.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

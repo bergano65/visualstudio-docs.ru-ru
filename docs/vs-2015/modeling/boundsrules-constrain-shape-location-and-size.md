@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672731"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Класс BoundsRules ограничивает расположение и размеры фигур
@@ -25,7 +25,7 @@ ms.locfileid: "72672731"
 
  В следующем примере прямоугольная фигура ограничивается полосой фиксированного размера, горизонтальной или вертикальной. Когда пользователь перетаскивает углы или стороны, контур переворачивается между двумя разрешенными настройками высоты и ширины.
 
- Правило Bounds является классом, производным от <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Экземпляр правила создается в фигуре:
+ Правило границ является классом, производным от <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> . Экземпляр правила создается в фигуре:
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -67,5 +67,5 @@ public class BarBoundsRule: BoundsRules
 
  Обратите внимание, что при необходимости расположение и размер могут быть ограничены.
 
-## <a name="see-also"></a>См. также раздел
- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [реагирования на изменения и распространения изменений](../modeling/responding-to-and-propagating-changes.md)
+## <a name="see-also"></a>См. также:
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)

@@ -1,5 +1,5 @@
 ---
-title: Командный стол визуальной студии (. Vsct) Файлы Документы Майкрософт
+title: Командная таблица Visual Studio (. Vsct) файлы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,40 +12,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704027"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Файлы таблицы команд Visual Studio (VSCT-файлы)
-Файл конфигурации командной таблицы — это текстовый файл, описывающий набор команд, содержащийся в VSPackage. Компилятор командной [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] таблицы (VSCT) компилирует файлы конфигурации на основе XML (.vsct- файлы) в двоичные выводные таблицы команд (.cto) файлы. Полученные файлы .cto такие же, как те, которые создаются с помощью компилятора командной таблицы (CTC) для компиляции файлов конфигурации .ctc. Тем не менее, XML-файлы на основе .vsct имеют некоторые преимущества, такие как редактор XML и XML IntelliSense.
+Файл конфигурации командной таблицы — это текстовый файл, описывающий набор команд, содержащихся в VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Компилятор командной таблицы (VSCT) компилирует файлы конфигурации на основе XML (VSCT-файлы) в двоичные файлы командных таблиц (. CTO). Результирующие CTO-файлы те же, что создаются с помощью компилятора командной таблицы (CTC) для компиляции файлов конфигурации CTC. Однако vsct-файлы на основе XML имеют некоторые преимущества, такие как редактор XML и IntelliSense XML.
 
- Подробнее о синтаксисе и семантике файлов .vsct можно узнать о таблице [командования XML (. Vsct) Файлы](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+ Дополнительные сведения о синтаксисе и семантике vsct-файлов см. в разделе [Разработка командной таблицы XML (. Vsct) файлы](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
  [Разработка файлов таблицы команд XML (VSCT-файлы)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
- Описывает, как проектировать файлы .vsct.
+ Описывает, как проектировать файлы vsct.
 
  [Практическое руководство. Создание VSCT-файла](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
- Сравнивает методы создания файла .vsct. Описывает процесс ручного создания нового файла .vsct.
+ Сравнивает методы создания vsct-файла. Описывает процесс создания нового vsct-файла вручную.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
 
- Предоставляет подробную информацию о каждом разделе файла конфигурации xML таблицы команды.
+ Предоставляет сведения о каждом разделе XML-файла конфигурации в таблице команд.
 
- [Конфигурация командной таблицы (. Ctc) Файлы](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) представляет обзор устаревшного формата файла .ctc.
+ [Конфигурация таблицы команд (. CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) содержит общие сведения о нерекомендуемом формате файла CTC.
 
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Описывает спецификацию формата таблицы команд.
+ Описывает спецификацию формата командной таблицы.
 
  [Ресурсы в пакетах VSPackage](../../extensibility/internals/resources-in-vspackages.md)
 
- Описывает, как использовать управляемые и неуправляемые ресурсы в управляемых VSPackages.
+ Описывает, как использовать управляемые и неуправляемые ресурсы в управляемых пакетах VSPackage.
 
  [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)
 

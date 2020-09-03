@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d10e0811044d7169eaf46f48f53389fa7b3076ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179169"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Структура, определяющая пользовательское средство просмотра или введите визуализатора.  
+Структура, идентифицирующая пользовательское средство просмотра или визуализатор типов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,35 +49,35 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```  
   
 ## <a name="members"></a>Участники  
- dwID  
- Идентификатор для различения нескольких средств просмотра или визуализаторы, реализованных в одном `GUID`.  
+ двид  
+ Идентификатор для различения нескольких средств просмотра или визуализаторов, реализованных одним из них `GUID` .  
   
- bstrMenuName  
+ бстрменунаме  
  Текст, который будет отображаться в раскрывающемся меню.  
   
  bstrDescription  
- Описание пользовательское средство просмотра или тип визуализатора (должен иметь значение null, если не используется).  
+ Описание пользовательского средства просмотра или визуализатора типов (если оно не используется, должно быть задано значение null).  
   
- guidLang  
- Язык обеспечивает средство оценки выражений.  
+ гуидланг  
+ Язык вычислителя выражений.  
   
- guidVendor  
- Поставщик обеспечивает средство оценки выражений.  
+ гуидвендор  
+ Поставщик средства оценки выражений.  
   
- bstrMetric  
- Метрики, под которой пользовательское средство просмотра или тип визуализатора `CLSID` хранится.  
+ бстрметрик  
+ Метрика, в которой хранится пользовательское средство просмотра или визуализатор типов `CLSID` .  
   
-## <a name="remarks"></a>Примечания  
- Возвращает список этой структуры с помощью вызова [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) метод (и, следовательно, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод).  
+## <a name="remarks"></a>Remarks  
+ Список этой структуры возвращается путем вызова метода [жеткустомвиеверлист](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) (и, по расширению, метода [жеткустомвиеверлист](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) ).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
+ [жеткустомвиеверлист](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Прекращение Документы Майкрософт
+title: 'IDebugProgram2:: Terminate | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 913c90e34e308ce5bb4ceecface739afc8d03f3d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722743"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
-Прекращает программу.
+Завершает программу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,11 +40,11 @@ int Terminate();
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если это возможно, программа будет прекращена и выгружена из процесса; в противном случае, отладка двигателя (DE) будет выполнять любые необходимые очистки.
+## <a name="remarks"></a>Remarks
+ Если возможно, программа будет завершена и выгружена из процесса. в противном случае модуль отладки (DE) выполнит необходимую очистку.
 
- Этот метод или метод [«Прекращение»](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) вызывается IDE, как правило, в ответ на то, что пользователь останавливает все отладки. Реализация этого метода должна, в идеале, прекратить программу в рамках процесса. Если это невозможно, DE должен предотвратить запуск программы в этом процессе (и сделать любую необходимую очистку). Если `IDebugProcess2::Terminate` метод был вызван IDE, весь процесс будет завершен через `IDebugProgram2::Terminate` некоторое время после вызова метода.
+ Этот метод или метод [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) вызывается интегрированной средой разработки, обычно в ответ на то, что пользователь останавливает всю отладку. Реализация этого метода в идеале должна завершать программу внутри процесса. Если это невозможно, параметр DE должен препятствовать запуску программы в этом процессе (и выполнить все необходимые действия по очистке). Если `IDebugProcess2::Terminate` метод вызывался интегрированной средой разработки, весь процесс будет завершен некоторое время после `IDebugProgram2::Terminate` вызова метода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-- [Завершить](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+- [Завершение](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

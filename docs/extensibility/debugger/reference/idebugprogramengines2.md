@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2 Документы Майкрософт
+title: IDebugProgramEngines2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722401"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
-Этот интерфейс используется узлами программы для определения всех возможных отладок двигателей (DE), которые могут отладить эту программу.
+Этот интерфейс используется узлами программы для указания всех возможных модулей отладки (DE), которые могут отлаживать эту программу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,31 +28,31 @@ ms.locfileid: "80722401"
 IDebugProgramEngines2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- DE или поставщик пользовательских портов реализует этот интерфейс на том же объекте, который реализует [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки создания конкретного DE для использования для конкретной программы.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Поставщик DE или пользовательский порт реализует этот интерфейс для того же объекта, который реализует [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки установки конкретного de-используемого для конкретной программы.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Вызов [queryInterface](/cpp/atl/queryinterface) `IDebugProgramNode2` на интерфейс, чтобы получить этот интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызовите [QueryInterface](/cpp/atl/queryinterface) для `IDebugProgramNode2` интерфейса, чтобы получить этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugProgramEngines2`.
+ В следующей таблице показаны методы `IDebugProgramEngines2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Указывает все возможные DEs, которые могут отладить эту программу.|
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Выбирает DE для использования для отладки этой программы.|
+|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Указывает все возможные алгоритмы DEs, которые могут отлаживать эту программу.|
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Выбирает DE, используемый для отладки этой программы.|
 
-## <a name="remarks"></a>Примечания
- Как только DE выбран пользователем, этот выбор регистрируется в узлах программы, позвонив [в SetEngine.](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md) Выбранный двигатель становится двигателем, возвращенным [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
+## <a name="remarks"></a>Remarks
+ После выбора пользователем DE этот вариант регистрируется в узле программы путем вызова [сетенгине](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Выбранный обработчик преобразуется в обработчик, возвращенный [жетенгинеинфо](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)

@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND Документы Майкрософт
+title: FIELD_KIND | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736864"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-Определяет вид поля, содержащегося в объекте [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+Указывает тип поля, содержащегося в объекте [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -126,113 +126,113 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>Поля
 `FIELD_KIND_TYPE`\
-Означает, что поле является только типом.
+Указывает, что поле является только типом.
 
 `FIELD_KIND_SYMBOL`\
-Означает, что поле является символом с типом, именем и другой информацией.
+Указывает, что поле является символом, с типом, именем и другой информацией.
 
 `FIELD_TYPE_PRIMITIVE`\
-Означает, что поле является примитивным типом данных.
+Указывает, что поле является примитивным типом данных.
 
 `FIELD_TYPE_STRUCT`\
-Означает, что поле является структурой.
+Указывает, что поле является структурой.
 
 `FIELD_TYPE_CLASS`\
-Означает, что поле является классом.
+Указывает, что поле является классом.
 
 `FIELD_TYPE_INTERFACE`\
-Означает, что поле является интерфейсом.
+Указывает, что поле является интерфейсом.
 
 `FIELD_TYPE_UNION`\
-Означает, что поле является союзом.
+Указывает, что поле является объединением.
 
 `FIELD_TYPE_ARRAY`\
-Означает, что поле представляет собой массив.
+Указывает, что поле является массивом.
 
 `FIELD_TYPE_METHOD`\
-Означает, что поле является методом.
+Указывает, что поле является методом.
 
 `FIELD_TYPE_BLOCK`\
-Означает, что поле является блоком.
+Указывает, что поле является блоком.
 
 `FIELD_TYPE_POINTER`\
-Означает, что поле является указателем.
+Указывает, что поле является указателем.
 
 `FIELD_TYPE_ENUM`\
-Означает, что поле является перечисленным типом данных.
+Указывает, что поле является перечислимым типом данных.
 
 `FIELD_TYPE_LABEL`\
-Означает, что поле является меткой.
+Указывает, что поле является меткой.
 
 `FIELD_TYPE_TYPEDEF`\
-Означает, что поле является typedef.
+Указывает, что поле является typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Означает, что поле является битовым полем.
+Указывает, что поле является битовым.
 
 `FIELD_TYPE_NAMESPACE`\
-Означает, что поле является пространством имен.
+Указывает, что поле является пространством имен.
 
 `FIELD_TYPE_MODULE`\
-Означает, что поле является модулем.
+Указывает, что поле является модулем.
 
 `FIELD_TYPE_DYNAMIC`\
-Означает, что поле является динамическим.
+Указывает, что поле является динамическим.
 
 `FIELD_TYPE_PROP`\
-Означает, что поле является свойством.
+Указывает, что поле является свойством.
 
 `FIELD_TYPE_INNERCLASS`\
-Означает, что поле является внутренним классом.
+Указывает, что поле является внутренним классом.
 
 `FIELD_TYPE_REFERENCE`\
-Означает, что поле является эталоном.
+Указывает, что поле является ссылкой.
 
 `FIELD_TYPE_EXTENDED`\
-Зарезервировано для последующего использования.
+Зарезервировано для будущего использования.
 
 `FIELD_SYM_MEMBER`\
-Означает, что поле является членом.
+Указывает, что поле является элементом.
 
 `FIELD_SYM_LOCAL`\
-Означает, что поле локальное.
+Указывает, что поле является локальным.
 
 `FIELD_SYM_PARAMETER`\
-Означает, что поле является параметром.
+Указывает, что поле является параметром.
 
 `FIELD_SYM_THIS`\
-Означает, что поле является "этим" указателем.
+Указывает, что поле является указателем this.
 
 `FIELD_SYM_GLOBAL`\
-Означает, что поле является глобальным.
+Указывает, что поле является глобальным.
 
 `FIELD_SYM_PROP_GETTER`\
-Означает, что поле извлекает свойства.
+Указывает, что поле получает свойства.
 
 `FIELD_SYM_PROP_SETTER`\
-Означает, что поле устанавливает свойства.
+Указывает, что поле задает свойства.
 
 `FIELD_SYM_EXTENDED`\
-Зарезервировано для последующего использования.
+Зарезервировано для будущего использования.
 
 `FIELD_KIND_MASK`\
-Указывает маску для видов полей.
+Указывает маску для типов полей.
 
 `FIELD_TYPE_MASK`\
 Указывает маску для типов полей.
 
 `FIELD_SYM_MASK`\
-Указывает маску для информации о символах.
+Указывает маску для символьной информации.
 
-## <a name="remarks"></a>Примечания
-Возвращается с вызова на метод [GetKind.](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+## <a name="remarks"></a>Remarks
+Возвращается из вызова метода [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
-В зависимости от типа поля, [queryInterface](/cpp/atl/queryinterface) можно вызвать на [интерфейсе IDebugField](../../../extensibility/debugger/reference/idebugfield.md) для более конкретной формы интерфейса. Например, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_METHOD`возвращается, `QueryInterface` вы`DebugField` можете вызвать I, чтобы получить интерфейс [IDebugMethodField.](../../../extensibility/debugger/reference/idebugmethodfield.md)
+В зависимости от типа поля [QueryInterface](/cpp/atl/queryinterface) может вызываться в интерфейсе [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) для более специфической формы интерфейса. Например, если функция [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_TYPE_METHOD` , то можно вызвать метод `QueryInterface` в I, `DebugField` чтобы получить интерфейс [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

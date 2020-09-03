@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590531"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
@@ -44,7 +44,7 @@ ms.locfileid: "75590531"
 
 ## <a name="related-tasks"></a>Связанные задачи
 
-|**статья**;|**Задача**|
+|**Раздел**|**Задача**|
 |-|-|
 |[Визуализация кода](../modeling/visualize-code.md)|Создайте карты кода и схемы зависимостей, чтобы лучше понять незнакомый код.|
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|

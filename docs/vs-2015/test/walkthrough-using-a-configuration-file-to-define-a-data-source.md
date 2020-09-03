@@ -13,10 +13,10 @@ caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547983"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
@@ -55,7 +55,7 @@ ms.locfileid: "85547983"
 
 3. Выберите шаблон **Файл конфигурации приложения** и нажмите кнопку **Добавить**.
 
-## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Определение пользовательского раздела конфигурации
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a> Определение пользовательского раздела конфигурации
  Просмотрите файл app.config. Он содержит как минимум объявление XML и корневой элемент.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Добавление настраиваемого раздела конфигурации в файл app.config
@@ -94,7 +94,7 @@ ms.locfileid: "85547983"
 
  Во втором элементе `add` создайте следующие атрибуты и значения для подключения к таблице Microsoft Excel.
 
-|attribute|Значения|
+|Атрибут|Значения|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -141,7 +141,7 @@ ms.locfileid: "85547983"
 
  Во втором элементе `add` создайте следующие атрибуты и значения для источника данных Microsoft Excel.
 
-|attribute|Значение|
+|Атрибут|Значение|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -268,5 +268,5 @@ ms.locfileid: "85547983"
 > [!IMPORTANT]
 > Разверните элементы как источники данных, чтобы они были доступны для теста в каталоге развертывания.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Модульное тестирование кода](../test/unit-test-your-code.md) [Создание и выполнение модульных тестов для существующего кода](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [Тестирование приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [как создать модульный тест, управляемый данными](../test/how-to-create-a-data-driven-unit-test.md)

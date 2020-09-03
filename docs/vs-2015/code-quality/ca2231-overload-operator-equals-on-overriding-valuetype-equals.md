@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f01495e4238461d0b1dfe5a13a208b528df1581f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540300"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals
@@ -39,7 +39,7 @@ ms.locfileid: "85540300"
 ## <a name="rule-description"></a>Описание правила
  В большинстве языков программирования отсутствует стандартная реализация оператора равенства (= =) для типов значений. Если ваш язык программирования поддерживает перегрузки операторов, следует рассмотреть возможность реализации оператора равенства. Его поведение должно быть идентично его поведению <xref:System.Object.Equals%2A> .
 
- Нельзя использовать оператор равенства по умолчанию в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object. Equals в реализации. Пример.
+ Нельзя использовать оператор равенства по умолчанию в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object. Equals в реализации. Пример:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -77,5 +77,5 @@ return left.Equals(right);
 
  [CA2218. Переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.Object.Equals%2A?displayProperty=fullName>

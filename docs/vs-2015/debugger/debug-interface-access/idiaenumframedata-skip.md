@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Skip | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Skip | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ff8b58f6d36e9ce9759e2672f7e438bc0019fc1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179497"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Пропускает указанное число кадров данных элементов в последовательности перечисления.  
+Пропускает указанное число элементов данных кадра в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Номер кадра данных элементов в последовательности перечисления для пропуска.  
+ окне Число пропускаемых элементов данных кадра в последовательности перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные записи для пропуска.  
+ В случае успеха возвращает значение `S_OK` ; в противном случае возвращает значение, `S_FALSE` Если больше нет записей для пропуска.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

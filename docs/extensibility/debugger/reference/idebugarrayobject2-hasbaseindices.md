@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2:HasBaseIndices Документы Майкрософт
+title: 'IDebugArrayObject2:: Хасбасеиндицес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 48250b3328310c3f1cb1c84c8fe1a9c61c534cad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736146"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
-Определяет, определены ли в массиве базовые индексы (нижние границы).
+Определяет, определен ли в массиве базовые индексы (нижние границы).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,7 +40,7 @@ int HasBaseIndices (
 
 ## <a name="parameters"></a>Параметры
 `pfHasBaseIndices`\
-(ваут) TRUE указать, что массив имеет базовые индексы (нижние границы); в противном случае, FALSE.
+заполняет Значение TRUE, чтобы указать, что массив имеет базовые индексы (нижние границы); в противном случае — значение FALSE.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.

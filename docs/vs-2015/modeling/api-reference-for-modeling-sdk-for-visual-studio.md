@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 65f8703597d6297afde6e2685594784fdd1d755c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672847"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Справка по API SDK моделирования для Visual Studio
@@ -42,13 +42,13 @@ ms.locfileid: "72672847"
 |[Microsoft. VisualStudio. моделирование. Интеграция](/previous-versions/ee904412(v=vs.140))|API ModelBus, который помогает интегрировать различные модели.|
 |[Microsoft. VisualStudio. моделирование. Integration. средство выбора](/previous-versions/ee904394(v=vs.140))|Диалоговое окно, позволяющее пользователям переходить к моделям и элементам для создания ссылок ModelBus.|
 |`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Служба выбора.|
-|[Microsoft. VisualStudio. моделирование. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Платформа адаптера ModelBus для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Microsoft. VisualStudio. моделирование. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Платформа адаптера ModelBus для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|
 |[Microsoft. VisualStudio. моделирование. Integration. Shell. средство выбора](/previous-versions/ee886769(v=vs.140))|Диалоговое окно выбора позволяет пользователям переходить к моделям и элементам для создания ссылок ModelBus.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Интерфейс между DSL и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Интерфейс между DSL и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Позволяет определять команды контекстного меню.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Позволяет определять ограничения проверки.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
 - [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)

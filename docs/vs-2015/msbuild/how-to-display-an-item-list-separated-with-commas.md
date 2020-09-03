@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отображение списка элементов, разделенных запятыми | Документы Майкрософт
+title: Практическое руководство. Отображение списка элементов, разделенных запятыми | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156628"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
@@ -46,7 +46,7 @@ ms.locfileid: "68156628"
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Пример  
- В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt. В команде findstr искомые литеральные строки обозначены параметром **/c:** , поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
+ В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt. В команде findstr строки поиска указываются с помощью параметра **/c:** , поэтому разделитель элементов `/c:` вставляется между элементами в `@(Phrase)` списке элементов.  
   
  Для этого примера эквивалентная команда в командной строке имеет вид:  
   
@@ -69,6 +69,6 @@ ms.locfileid: "68156628"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)   
  [Элементы](../msbuild/msbuild-items.md)

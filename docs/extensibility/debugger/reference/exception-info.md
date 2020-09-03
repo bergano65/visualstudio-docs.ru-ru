@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO Документы Майкрософт
+title: EXCEPTION_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737028"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
-Описывает исключение или ошибку времени выполнения, брошенную отладкой программы.
+Описывает исключение или ошибку времени выполнения, вызванную отлаживаемой программой.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,10 +51,10 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>Участники
 `pProgram`\
-Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий программу, в которой произошло исключение.
+Объект [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий программу, в которой возникло исключение.
 
 `bstrProgramName`\
-Название программы, в которой произошло исключение.
+Имя программы, в которой возникло исключение.
 
 `bstrExceptionName`\
 Имя исключения.
@@ -63,18 +63,18 @@ public struct EXCEPTION_INFO {
 Идентификационный код для исключения или ошибки времени выполнения.
 
 `dwState`\
-Значение из [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) перечисления, определяющее состояние исключения.
+Значение из перечисления [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) , определяющее состояние исключения.
 
 `guidType`\
-Идентификатор языка `guidLang` GUID, или `guidEng`.
+Идентификатор языка GUID: `guidLang` или `guidEng` .
 
-## <a name="remarks"></a>Примечания
-Эта структура передается в качестве параметра методам [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) и [RemoveSetException.](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) Эта структура также передается методу [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) для заполнения.
+## <a name="remarks"></a>Remarks
+Эта структура передается в качестве параметра методам [сетексцептион](../../../extensibility/debugger/reference/idebugengine2-setexception.md) и [ремовесетексцептион](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) . Эта структура также передается в метод [except](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) , который должен быть заполнен.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

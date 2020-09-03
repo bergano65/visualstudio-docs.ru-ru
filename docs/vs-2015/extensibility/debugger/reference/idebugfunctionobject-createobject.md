@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObject | Документация Майкрософт
+title: 'Идебугфунктионобжект:: CreateObject | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08483d5f015af7088eb5968a5bf6358ce5065579
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179475"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Создает объект, с помощью конструктора.  
+Создает объект с помощью конструктора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,25 +46,25 @@ int CreateObject(
   
 #### <a name="parameters"></a>Параметры  
  `pConstructor`  
- [in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) объект, представляющий конструктор объекта должен быть создан.  
+ окне Объект [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) , представляющий конструктор создаваемого объекта.  
   
  `dwArgs`  
- [in] Число параметров в `pArg` массива. Представляет число параметров, переданных конструктору.  
+ окне Число параметров в `pArg` массиве. Представляет число параметров, передаваемых конструктору.  
   
  `pArg`  
- [in] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объектов, представляющих параметры, переданные в конструктор.  
+ окне Массив объектов [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющих параметры, передаваемые конструктору.  
   
  `ppObject`  
- [out] Возвращает `IDebugObject` представляющий только что созданный объект.  
+ заполняет Возвращает объект, `IDebugObject` представляющий созданный объект.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Вызовите этот метод, чтобы создать объект, представляющий экземпляр класса (или других сложный тип, который требуется конструктор) то есть параметра функции, который представляется [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.  
+## <a name="remarks"></a>Remarks  
+ Вызовите этот метод, чтобы создать объект, представляющий экземпляр класса (или другого сложного типа, которому требуется конструктор), который является параметром функции, представленной интерфейсом [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
   
- Если конструктор не требует параметра объекта, вызовите [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) метод.  
+ Если параметру объекта не требуется конструктор, вызовите метод [креатеобжектноконструктор](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) .  
   
-## <a name="see-also"></a>См. также  
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугфунктионобжект](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
  [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

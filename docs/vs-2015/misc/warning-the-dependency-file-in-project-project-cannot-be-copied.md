@@ -1,5 +1,5 @@
 ---
-title: '&#39;Внимание! файл&#39; зависимостей в &#39;проекте&#39; проекта не может быть скопирован в каталог выполнения, так как он перезаписал файл ссылки &#39;. &#39; | Документация Майкрософт'
+title: Внимание! файл зависимости &#39;&#39; в проекте &#39;проекта&#39; не может быть скопирован в каталог выполнения, так как он перезапишет файл ссылки &#39;. &#39; | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672817"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>&#39;Внимание! файл&#39; зависимостей в &#39;проекте&#39; проекта не может быть скопирован в каталог выполнения, так как он перезаписал файл ссылки &#39;.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Внимание! файл зависимости &#39;&#39; в проекте &#39;проекта&#39; не может быть скопирован в каталог выполнения, так как он перезапишет файл ссылки &#39;. &#39;
 Существует конфликт между зависимостями. Чтобы запустить приложение, необходимо скопировать несколько разных файлов сборки с одним именем в каталог bin. Каталог запуска может разрешить конфликт, так как одна из зависимостей является первичной ссылкой.
 
  Дважды щелкните этот элемент списка задач, чтобы перейти к конфликтующему узлу первичной ссылки.
@@ -29,9 +29,9 @@ ms.locfileid: "72672817"
 
  Это сообщение появляется каждый раз при возникновении конфликта в каталоге bin, и работа приложения может быть нарушена. Даже несмотря на то, что вы, возможно, решили эту проблему, данное предупреждение будет по-прежнему отображаться, так как системе проектов не удается определить, будет ли версия зависимости правильно работать со всеми компонентами.
 
- **Исправление этой ошибки**
+ **Исправление ошибки**
 
 - Скопируйте один (или ни одного) файл сборки в каталог bin. Для этого поместите файлы сборки в глобальный кэш сборок. Глобальный кэш сборок разрешит конфликты имен файлов. Локальные копии файла сборки созданы не будут, поскольку среде CLR известно, как находить сборки в глобальном кэше сборок. Дополнительные сведения см. в разделах [Working with Assemblies and the Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) и [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Управление ссылками в](../ide/managing-references-in-a-project.md) [глобальном кэше сборок](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) проекта создание [и удаление зависимостей проекта](../ide/how-to-create-and-remove-project-dependencies.md)

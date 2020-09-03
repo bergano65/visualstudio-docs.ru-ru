@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO Документы Майкрософт
+title: ФРАМЕИНФО | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736792"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
@@ -65,22 +65,22 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Участники
 `m_dwValidFields`\
-Комбинация флагов [из FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, которая определяет, какие поля заполнены.
+Сочетание флагов из перечисления [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , которое указывает, какие поля заполняются.
 
 `m_bstrFuncName`\
-Имя функции, связанное с кадром стека.
+Имя функции, связанной с кадром стека.
 
 `m_bstrReturnType`\
-Тип возврата, связанный с кадром стека.
+Возвращаемый тип, связанный с кадром стека.
 
 `m_bstrArgs`\
-Аргументы к функции, связанной с кадром стека.
+Аргументы функции, связанной с кадром стека.
 
 `m_bstrLanguage`\
 Язык, на котором реализована функция.
 
 `m_bstrModule`\
-Имя модуля, связанное с кадром стека.
+Имя модуля, связанного с кадром стека.
 
 `m_addrMin`\
 Минимальный физический адрес стека.
@@ -89,31 +89,31 @@ public struct FRAMEINFO {
 Максимальный физический адрес стека.
 
 `m_pFrame`\
-Объект [IDebugStackFrame2,](../../../extensibility/debugger/reference/idebugstackframe2.md) представляющий этот кадр стека.
+Объект [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , представляющий этот кадр стека.
 
 `m_pModule`\
-Объект [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) представляющий модуль, содержащий этот кадр стека.
+Объект [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , представляющий модуль, содержащий этот кадр стека.
 
 `m_fHasDebugInfo`\
-Ненулевой`TRUE`( ), если информация об отладке существует в данном кадре.
+Ненулевое значение ( `TRUE` ), если отладочная информация существует в данном кадре.
 
 `m_fStaleCode`\
-Ненулевой`TRUE`( ), если кадр стека связан с кодом, который больше не действителен.
+Ненулевое значение ( `TRUE` ), если кадр стека связан с кодом, который больше не является допустимым.
 
 `m_fAnnotatedFrame`\
-Ненулевой`TRUE`(), если кадр стека аннотирован менеджером отладки сеанса (SDM).
+Ненулевое значение ( `TRUE` ), если кадр стека снабжен заметками диспетчером отладки сеансов (SDM).
 
-## <a name="remarks"></a>Примечания
-Эта структура передается методу [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) для заполнения. Эта структура также содержится в списке, который содержится в интерфейсе [IEnumDebugFrameInfo2,](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) который, в свою очередь, возвращается из вызова в метод [EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+## <a name="remarks"></a>Remarks
+Эта структура передается в метод " [info](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) ", который должен быть заполнен. Эта структура также содержится в списке, который содержится в интерфейсе [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) , который, в свою очередь, возвращается из вызова метода [енумфрамеинфо](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

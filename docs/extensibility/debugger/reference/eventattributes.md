@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES Документы Майкрософт
+title: ЕВЕНТАТТРИБУТЕС | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737056"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
-Определяет атрибуты события.
+Задает атрибуты события.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,35 +54,35 @@ public enum enum_EVENTATTRIBUTES {
 
 ## <a name="fields"></a>Поля
 `EVENT_ASYNCHRONOUS`\
-Означает, что событие является асинхронным и никакого ответа на событие не требуется.
+Указывает, что событие является асинхронным и ответ на событие не требуется.
 
 `EVENT_SYNCHRONOUS`\
-Означает, что событие синхронное; ответ с помощью [continueFromSynusEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+Указывает, что событие является синхронным; ответ — с помощью [континуефромсинчронаусевент](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
 `EVENT_STOPPING`\
-Означает, что это событие остановки. Должны быть объединены с любой `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS`.
+Указывает, что это событие остановки. Необходимо сочетать с `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS` .
 
 `EVENT_ASYNC_STOP`\
-Указывает на асинхронное событие остановки. В настоящее время такого мероприятия нет. Этот флаг является лишь заполнителем.
+Указывает на асинхронное событие остановки. В настоящее время такого события нет. Этот флаг является только заполнителем.
 
 `EVENT_SYNC_STOP`\
-Указывает на синхронное событие `EVENT_SYNCHRONOUS` `EVENT_STOPPING`остановки (комбинация и). Это значение используется движком отладки (DE) при отправке события остановки. Ответ производится с помощью вызова для [выполнения,](../../../extensibility/debugger/reference/idebugprogram2-execute.md) [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md), или [продолжить](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+Указывает на синхронную остановку события (сочетание `EVENT_SYNCHRONOUS` и `EVENT_STOPPING` ). Это значение используется модулем отладки (DE) при отправке события остановки. Ответ делается с помощью вызова метода [EXECUTE](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)или [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 `EVENT_IMMEDIATE`\
-Указывает событие, которое немедленно и синхронно отправляется в IDE. Этот флаг сочетается с `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS`другими `EVENT_SYNC_STOP` флагами, такими как , или указать тип события и тот факт, что механизм ответа (если таковой имеется) известен.
+Указывает на событие, которое отправляется в интегрированную среду разработки немедленно и синхронно. Этот флаг сочетается с другими флагами `EVENT_ASYNCHRONOUS` , например, `EVENT_SYNCHRONOUS` или, `EVENT_SYNC_STOP` чтобы указать тип события и тот факт, что известен механизм ответа (если таковой имеется).
 
 `EVENT_EXPRESSION_EVALUATION`\
-Событие является результатом оценки выражения.
+Событие является результатом вычисления выражения.
 
-## <a name="remarks"></a>Примечания
-Эти значения передаются `dwAttrib` в параметре метода [События.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+## <a name="remarks"></a>Remarks
+Эти значения передаются в `dwAttrib` параметре метода [события](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

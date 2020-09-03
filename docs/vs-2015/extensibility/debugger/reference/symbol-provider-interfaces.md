@@ -13,52 +13,52 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204870"
 ---
 # <a name="symbol-provider-interfaces"></a>Интерфейсы поставщика символов
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ниже перечислены интерфейсы обработки символов для [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)].  
+Ниже приведены интерфейсы обработки символов для [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)] .  
   
-## <a name="discussion"></a>Обсуждение  
- Эти интерфейсы используются для оценки переменных в стеке вызовов в режиме приостановки выполнения. Они реализуются только для общих поставщиков символ среды выполнения языка (SP).  
+## <a name="discussion"></a>Разговор  
+ Эти интерфейсы используются для вычисления переменных в стеке вызовов в режиме приостановки выполнения. Они реализуются только для поставщиков символов общеязыковой среды выполнения (SP).  
   
-|Интерфейс|Реализуется|Описание|  
+|Интерфейс|Реализовано|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Представляет адрес элемента.|  
-|[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Представляет собой адрес элемента, предоставление доступа к идентификатор процесса.|  
-|[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)|SP|Представляет тип массива или массива символов.|  
-|[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)|SP|Представляет символ класс или тип класса.|  
-|[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)|SP|Представляет поставщик символов COM + с методами, характерные для управляемого кода.|  
-|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|SP|Представляет поставщик символов COM + с методами, которые относятся к управляемому коду и расширяет **IDebugComPlusSymbolProvider**.|  
-|[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)|SP|Представляет символ или тип, который является контейнером для других символов или типов.|  
-|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)|SP|Представляет пользовательский атрибут, который может быть присоединен к символа.|  
-|[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)|SP|Представляет запрос для настраиваемых атрибутов для метода или типа.|  
-|[IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)|SP|Предоставляет доступ к настраиваемые атрибуты в символ.|  
-|[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|Базовый интерфейс для любого типа, который можно определить во время выполнения.|  
-|[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Представляет динамическое поле для [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.|  
+|[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Представляет адрес элемента, предоставляющий доступ к ИДЕНТИФИКАТОРу процесса.|  
+|[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)|SP|Представляет символ массива или тип массива.|  
+|[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)|SP|Представляет символ класса или тип класса.|  
+|[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)|SP|Представляет поставщик символов COM+ с методами, характерными для управляемого кода.|  
+|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|SP|Представляет поставщик символов COM+ с методами, специфичными для управляемого кода, и расширяет **идебугкомплуссимболпровидер**.|  
+|[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)|SP|Представляет символ или тип, являющийся контейнером для других символов или типов.|  
+|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)|SP|Представляет настраиваемый атрибут, который можно присоединить к символу.|  
+|[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)|SP|Представляет запрос для настраиваемых атрибутов метода или типа.|  
+|[IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)|SP|Предоставляет доступ к настраиваемым атрибутам символа.|  
+|[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|Базовый интерфейс для любого типа, который может быть определен во время выполнения.|  
+|[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Представляет динамическое поле для объекта [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) .|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Представляет тип перечисления.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Расширяет типы доступных полей для поддержки универсальных типов в управляемом коде.|  
-|[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|Базовый класс для всех полей; Представляет описание символа или тип.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Портов|Расширяет типы доступных полей для поддержки универсальных типов управляемого кода.|  
+|[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|Базовый класс для всех полей; представляет описание символа или типа.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Представляет определение поля для универсального типа управляемого кода.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Представляет экземпляр поля для универсального типа управляемого кода.|  
-|[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)|SP|Представляет параметр универсального типа управляемого кода.|  
+|[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)|SP|Представляет параметр для универсального типа управляемого кода.|  
 |[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)|SP|Представляет метод.|  
 |[IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)|SP|Представляет необязательный модификатор отладки.|  
 |[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)|SP|Представляет указатель.|  
-|[IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)|SP|Представляет значение примитивного типа перечисления из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.|  
-|[IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)|SP|Представляет свойство класса управляемого кода, который можно получить или задать.|  
-|[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)|SP|Представляет поставщик символов, который предоставляет типы и символы.|  
-|[IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)|SP|Представляет поставщика символов с прямым доступом к интерфейсам символ метаданных и core.|  
-|[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)|SP|Представляет возможность создавать поле, которое представляет тип.|  
-|[IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)|SP|Расширяет **IDebugTypeFieldBuilder** чтобы иметь возможность создавать типы массивов.|  
-|[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)|SP|Представляет коллекцию [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объектов.|  
-|[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Представляет коллекцию [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) объектов.|  
-|[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Представляет коллекцию [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объектов.|  
+|[IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)|SP|Представляет значение перечисления типа-примитива из интерфейса [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .|  
+|[IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)|SP|Представляет свойство управляемого класса кода, которое может быть получено или задано.|  
+|[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)|SP|Представляет поставщик символов, предоставляющий символы и типы.|  
+|[IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)|SP|Представляет поставщик символов с прямым доступом к метаданным и основным интерфейсам символов.|  
+|[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)|SP|Представляет возможность создания поля, представляющего тип.|  
+|[IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)|SP|Расширяет **идебугтипефиелдбуилдер** , чтобы иметь возможность создавать типы массивов.|  
+|[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)|SP|Представляет коллекцию объектов [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .|  
+|[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Представляет коллекцию объектов [идебугкустоматтрибуте](../../../extensibility/debugger/reference/idebugcustomattribute.md) .|  
+|[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Представляет коллекцию объектов [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание отчета о трассировке вызовов для средств профилирования | Документация Майкрософт
+title: Практическое руководство. Создание отчета о трассировке вызовов для средств профилирования | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbf92b38f9408455e10048fbd4a5e84fdf822ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547996"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Практическое руководство. Создание отчета трассировки вызовов для средств профилирования
@@ -41,6 +41,6 @@ ms.locfileid: "85547996"
     |*VSPFile*|Файл данных профилирования (VSP или VSPS). Допускаются полные или частичные пути.|  
     |Xml|Создает отчет в формате XML.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Как получить данные трассировки событий для Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
- [Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)
+ [Средства профилирования API](../profiling/profiling-tools-apis.md)

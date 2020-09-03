@@ -1,5 +1,5 @@
 ---
-title: Регистрация языковой службы прежних версий1 | Документация Майкрософт
+title: Регистрация устаревшего языка Service1 | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d78050f455e83b43dc114ad80fc084dc5604103
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188869"
 ---
 # <a name="registering-a-legacy-language-service"></a>Регистрация языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-В managed package framework (MPF), языковой службы является предлагаемых VSPackage (см. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md)) и зарегистрирован [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , добавив разделы реестра и записи. Этот процесс регистрации выполняется в частично во время установки и частично во время выполнения.  
+В управляемой среде пакетов (MPF) языковая служба предложенной пакетом VSPackage (см. [пакеты VSPackage](../../extensibility/internals/vspackages.md)) и регистрируется в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , добавляя разделы и записи реестра. Процесс регистрации выполняется частично во время установки и частично во время выполнения.  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>Регистрация языковой службы с помощью атрибутов  
- Следующие атрибуты используются для регистрации службы языка.  
+ Для регистрации языковой службы используются следующие атрибуты.  
   
 - <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
@@ -35,10 +35,10 @@ ms.locfileid: "68188869"
   
 - <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
-  Эти атрибуты описаны ниже  
+  Ниже описаны эти атрибуты.  
   
-### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
- Этот атрибут регистрирует службы вашего языка как услуга.  
+### <a name="provideserviceattribute"></a>провидесервицеаттрибуте  
+ Этот атрибут регистрирует языковую службу как службу.  
   
 ### <a name="example"></a>Пример  
   
@@ -56,8 +56,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute  
- Этот атрибут регистрирует службы вашего языка специально как языковой службы. Он позволяет задать параметры, укажите компоненты, которые предлагает службы вашего языка. В примере подмножество параметров, которые может создать служба языка. Полный набор параметров службы языка, см. в разделе <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
+### <a name="providelanguageserviceattribute"></a>провиделангуажесервицеаттрибуте  
+ Этот атрибут регистрирует языковую службу специально в качестве языковой службы. Он позволяет задавать параметры, определяющие возможности, предоставляемые языковой службой. В примере показано подмножество параметров, которые может предоставить языковая служба. Полный набор параметров языковой службы см. в разделе <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> .  
   
 ### <a name="example"></a>Пример  
   
@@ -81,8 +81,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute  
- Этот атрибут связывает службы вашего языка с расширением файла. Каждый раз, когда загружается файл с таким расширением, в любом проекте службе языка будет запущен и использован для отображения содержимого файла.  
+### <a name="providelanguageextensionattribute"></a>провиделангуажеекстенсионаттрибуте  
+ Этот атрибут связывает языковую службу с расширением файла. Каждый раз при загрузке файла с таким расширением в любом проекте служба языка запускается и используется для вывода содержимого файла.  
   
 ### <a name="example"></a>Пример  
   
@@ -100,8 +100,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute  
- Этот атрибут регистрирует расположение, из какой код получаются Шаблоны расширения или фрагмент кода. Эта информация используется **браузера фрагменты кода** и с помощью редактора, при вставке фрагмента кода в исходном файле.  
+### <a name="providelanguagecodeexpansionattribute"></a>провиделангуажекодикспансионаттрибуте  
+ Этот атрибут регистрирует расположение, из которого получаются шаблоны расширения или фрагментов кода. Эта информация используется **браузером фрагментов кода** и редактором при вставке фрагмента кода в исходный файл.  
   
 ### <a name="example"></a>Пример  
   
@@ -126,11 +126,11 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute  
- Этот атрибут регистрирует страницу свойств для отображения в **параметры** диалогового окна **текстовый редактор** категории. Используйте один из этих атрибутов для каждой страницы для отображения для языковой службы. Если вам нужно организовать страницы в виде древовидной структуры, используйте дополнительные атрибуты для определения каждого узла дерева.  
+### <a name="providelanguageeditoroptionpageattribute"></a>провиделангуажеедитороптионпажеаттрибуте  
+ Этот атрибут регистрирует страницу свойств, отображаемую в диалоговом окне " **Параметры** " в категории " **текстовый редактор** ". Используйте один из этих атрибутов для каждой страницы, которая будет отображаться для языковой службы. Если необходимо упорядочить страницы в древовидной структуре, используйте дополнительные атрибуты для определения каждого узла дерева.  
   
 ### <a name="example"></a>Пример  
- В этом примере показано две страницы свойств, **параметры** и **отступ**и один узел, содержащий второй страницы свойств.  
+ В этом примере показаны две страницы свойств, **Параметры** и **Отступы**, а также один узел, содержащий вторую страницу свойств.  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;  
@@ -161,11 +161,11 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="proffer-the-language-service-at-runtime"></a>Предложить службу языка во время выполнения  
- При загрузке пакета языка необходимо сообщить [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] что готов языковой службы. Для этого proffering службы. Это можно сделать в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод. Кроме того необходимо запустить таймер, который вызывает службу языка периоды простоя, поэтому фоновый синтаксический анализ может быть выполнено. Этот таймер простоя также используется для обновления свойств документа, при реализации любого через <xref:Microsoft.VisualStudio.Package.DocumentProperties> класса. Чтобы обеспечить поддержку таймера, необходимо реализовать ваш пакет <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> интерфейс (только <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> метод должен быть полностью реализованы; остальные методы могут возвращать значения по умолчанию).  
+## <a name="proffer-the-language-service-at-runtime"></a>Предложить языковую службу во время выполнения  
+ После загрузки языкового пакета необходимо сообщить [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] о том, что языковая служба готова. Это можно сделать, профферинг службу. Это делается в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> методе. Кроме того, необходимо запустить таймер, который вызывает языковую службу во время периода простоя, чтобы можно было выполнить фоновый анализ. Этот таймер простоя также используется для обновления свойств документа, если они реализованы с помощью <xref:Microsoft.VisualStudio.Package.DocumentProperties> класса. Для поддержки таймера пакет должен реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> интерфейс (только <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> метод должен быть полностью реализован; остальные методы могут возвращать значения по умолчанию).  
   
 ### <a name="example"></a>Пример  
- В этом примере показан типичный подход к proffering службы и предоставление таймер простоя.  
+ В этом примере показан типичный подход к профферинг службы и предоставлению таймера бездействия.  
   
 ```csharp  
   

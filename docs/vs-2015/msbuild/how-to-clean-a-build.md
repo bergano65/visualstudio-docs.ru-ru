@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156640"
 ---
 # <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка построения
@@ -35,7 +35,7 @@ ms.locfileid: "68156640"
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:  
+2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Пример:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,18 +46,18 @@ ms.locfileid: "68156640"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем  
   
-- Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:  
+- Используйте задачу `RemoveDir`, чтобы удалить каталог. Пример:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже проект с примером кода содержит новый целевой объект `Clean`, который использует задачу `RemoveDir`, чтобы удалить каталог и все содержащиеся в нем файлы и каталоги. Также в этом примере целевой объект `Compile` создает отдельный каталог для выходных файлов, удаляемых при очистке сборки.  
   
- `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **/target**, чтобы указать другой целевой объект. Например:  
+ `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **/Target** , чтобы указать другой целевой объект. Пример:  
   
  `msbuild <file name>.proj /target:Clean`  
   
- Параметр **/target** можно укоротить до **/t**, кроме того, он может указывать сразу несколько целевых объектов. Например, чтобы использовать целевой объект `Clean` и затем целевой объект `Compile`, введите:  
+ Параметр **/Target** может быть сокращен до **/t** и может указывать более одного целевого объекта. Например, чтобы использовать целевой объект `Clean` и затем целевой объект `Compile`, введите:  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
@@ -101,9 +101,9 @@ ms.locfileid: "68156640"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Задача Exec](../msbuild/exec-task.md)   
  [Задача MakeDir](../msbuild/makedir-task.md)   
  [Задача RemoveDir](../msbuild/removedir-task.md)   
- [Задача Csc](../msbuild/csc-task.md)   
+ [Задача CSC](../msbuild/csc-task.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)

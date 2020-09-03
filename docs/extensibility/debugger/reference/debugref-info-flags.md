@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS Документы Майкрософт
+title: DEBUGREF_INFO_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737388"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
-Определяет, какую информацию получить об объекте отладки.
+Указывает, какие сведения следует получить об эталонном объекте Debug.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,43 +58,43 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Поля
 `DEBUGREF_INFO_NAME`\
-Инициализация/использование `bstrName` поля в структуре.
+Инициализируйте или используйте `bstrName` поле в структуре.
 
 `DEBUGREF_INFO_TYPE`\
-Инициализация/использование `bstrType` поля в структуре.
+Инициализируйте или используйте `bstrType` поле в структуре.
 
 `DEBUGREF_INFO_VALUE`\
-Инициализация/использование `bstrValue` поля в структуре.
+Инициализируйте или используйте `bstrValue` поле в структуре.
 
 `DEBUGREF_INFO_ATTRIB`\
-Инициализация/использование `dwAttrib` поля в структуре.
+Инициализируйте или используйте `dwAttrib` поле в структуре.
 
 `DEBUGREF_INFO_REFTYPE`\
-Инициализация/использование `dwRefType` поля в структуре.
+Инициализируйте или используйте `dwRefType` поле в структуре.
 
 `DEBUGREF_INFO_REF`\
-Инициализация/использование `pReference` поля в структуре.
+Инициализируйте или используйте `pReference` поле в структуре.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Поле значений должно содержать автоматическое расширенное значение, если доступно, для этого типа объекта.
+Поле значения должно содержать автоматическое развернутое значение (если доступно) для этого типа объекта.
 
 `DEBUGREF_INFO_NONE`\
-Означает, что флаги не установлены.
+Указывает, что флаги не заданы.
 
 `DEBUGREF_INFO_ALL`\
-Указывает на маску флагов.
+Указывает маску флагов.
 
-## <a name="remarks"></a>Примечания
-Эти флаги передаются методам [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo,](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+Эти флаги передаются методам [енумчилдрен](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [жетреференцеинфо](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) , чтобы указать, какие поля структуры [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) должны быть инициализированы.
 
-Используется для `dwFields` члена `DEBUG_REFERENCE_INFO` структуры для указания того, какие поля используются и действительны при возврате структуры.
+Используется для `dwFields` элемента `DEBUG_REFERENCE_INFO` структуры, чтобы указать, какие поля используются и допустимы при возврате структуры.
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Поддержка управления источниками (ru) Документы Майкрософт
+title: Поддержка системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,48 +11,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704729"
 ---
 # <a name="supporting-source-control"></a>Поддержка системы управления версиями
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]поддерживает проверки файлов, регистрацию и другие операции управления исходным источником для вашего проекта или редактора. Как клиент управления [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] исходным источником, предназначен для взаимодействия [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]с пакетом управления исходным источником, таким как , который обеспечивает архивирование, версия и управление средствами для динамически определенного набора файлов.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает извлечение файлов, возвраты и другие операции системы управления версиями для проекта или редактора. Как клиент системы управления версиями, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предназначен для взаимодействия с пакетом управления версиями, например [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , который обеспечивает архивацию, управление версиями и средства управления для динамически определяемого набора файлов.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 - [Модель для пакетов системы управления версиями](../../extensibility/internals/model-for-source-control-packages.md)
 
- Описывает интерфейсы, которые должен быть реализован тип проекта для поддержки управления исходным ресурсом.
+ Описывает интерфейсы, которые должен реализовать тип проекта для поддержки системы управления версиями.
 
 - [Проектные решения](../../extensibility/internals/source-control-design-decisions.md)
 
- Предоставляет вопросы, ответы на которые изменяют способ реализации типа проекта.
+ Предоставляет вопросы, ответы на которые меняются при реализации типа проекта.
 
-- [Подробная информация о конфигурации](../../extensibility/internals/source-control-configuration-details.md)
+- [Сведения о конфигурации](../../extensibility/internals/source-control-configuration-details.md)
 
- Описывает, как поддержка управления исходным источником изменяет реализацию типа проекта.
+ Описывает, как поддерживающая управление версиями изменяет реализацию типа проекта.
 
 - [Дополнительные рекомендации для проектов и редакторов](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)
 
- Обсуждает лучшие практики для типов проектов и редакторов.
+ Обсуждаются рекомендации по типам проектов и редакторам.
 
 - [Сведения о среде выполнения](../../extensibility/internals/source-control-runtime-details.md)
 
- Описывает, как зарегистрировать проект, когда пользователь добавляет его в систему управления исходным элементом.
+ Описывает, как зарегистрировать проект при его добавлении пользователем в систему управления версиями.
 
 ## <a name="reference"></a>Справочник
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>Указывает на пакет управления средой или исходным ресурсом, что файл вот-вот будет изменен в памяти или сохранен.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Указывает среде или пакету системы управления версиями, что файл будет изменен в памяти или сохранен.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>Позволяет проектам и иерархиям зарегистрироваться с помощью управления исходным ресурсом и получить информацию о состоянии управления исходным источником.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Позволяет проектам и иерархиям регистрировать себя в системе управления версиями и получать сведения о состоянии системы управления версиями.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>Реализована в проектной системе для обеспечения управления исходным элементом для файлов проектов и элементов проекта.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> Реализован в системе проектов для обеспечения системы управления версиями файлов проектов и элементов проектов.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>Используется проектами для запроса среды для получения разрешения на добавление, удаление или переименование файла или каталога в решении.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Используется проектами для запроса к среде разрешения на добавление, удаление или переименование файла или каталога в решении.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>Уведомляет клиентов об изменениях, внесенных в файлы или каталоги проектов.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> Уведомляет клиентов об изменениях, внесенных в файлы проекта или каталоги.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
 - [Типы проектов](../../extensibility/internals/project-types.md)
 
- Обеспечивает обзор проектов в качестве основных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] строительных блоков интегрированной среды разработки (IDE). Ссылки предоставляются на дополнительные темы, объясняющие, как проекты контролируют строительство и компиляцию кода.
+ Содержит общие сведения о проектах в качестве основных стандартных блоков [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Имеются ссылки на дополнительные разделы, объясняющие, как проекты управляют сборкой и компиляцией кода.
