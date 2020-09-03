@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534879"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408. Не используйте тип AutoDual ClassInterfaceType
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
@@ -57,5 +57,5 @@ ms.locfileid: "85534879"
 
  [CA1412. Пометьте интерфейсы ComSource как IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Введение в интерфейс класса,](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [соответствующий типам .NET для](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) взаимодействия [с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

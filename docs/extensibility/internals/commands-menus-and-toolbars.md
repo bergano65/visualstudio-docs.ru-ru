@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65f5a43bee5a89492bc1ecc7bf7c1126b5a80456
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173594"
 ---
 # <a name="commands-menus-and-toolbars"></a>Команды, меню и панели инструментов
@@ -34,7 +34,7 @@ ms.locfileid: "84173594"
 
   В подразделах этого раздела объясняется, как работают команды, меню и панели инструментов в пакетах VSPackage.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
  Подробное описание спецификации формата командной таблицы.

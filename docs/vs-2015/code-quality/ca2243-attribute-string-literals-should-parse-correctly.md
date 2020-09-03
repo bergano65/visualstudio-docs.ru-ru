@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535750"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243. Синтаксический разбор строковых литералов должен осуществляться правильно
@@ -61,5 +61,5 @@ ms.locfileid: "85535750"
 
 - Параметры, содержащие "URI", "urn" или "URL", и не могут быть проанализированы в System. URI.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [CA1054. Параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

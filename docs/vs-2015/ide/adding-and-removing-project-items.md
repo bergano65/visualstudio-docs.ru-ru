@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 073e8186040f920426b3e9aa96879afac923c19c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620948"
 ---
 # <a name="adding-and-removing-project-items"></a>Добавление и удаление элементов проекта
@@ -24,5 +24,5 @@ ms.locfileid: "72620948"
 
 Чтобы добавить или удалить проекты и их элементы, щелкните правой кнопкой мыши узел проекта или решения в **обозревателе решений** и выберите команду **Добавить** или **Удалить**. При удалении проекта из решения или элемента из проекта он не удаляется с диска или из системы управления версиями, если вы не выберете параметр окончательного удаления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md) [Управление свойствами проекта и решения](../ide/managing-project-and-solution-properties.md)

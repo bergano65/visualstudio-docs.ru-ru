@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852210"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Дополнительные сведения об ошибках конструктора классов
@@ -43,9 +43,9 @@ ms.locfileid: "75852210"
 
  Вы можете получить помощь по другим ошибкам и предупреждениям в следующих ресурсах:
 
- [Работа с визуальным C++ кодом (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md) включает сведения об устранении неполадок отображения C++ на схеме классов.
+ [Работа с кодом Visual C++ (конструктор классов)](../ide/working-with-visual-cpp-code-class-designer.md) Содержит сведения об устранении неполадок при отображении C++ на схеме классов.
 
  [Форум по конструктору классов Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Форум предназначен для вопросов по работе с конструктором классов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Разработка и просмотр классов и типов](../ide/designing-and-viewing-classes-and-types.md)

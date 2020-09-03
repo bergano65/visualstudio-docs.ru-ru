@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21fdc15b161b7d1cef30effe82e518a174bc9666
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619545"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Создание комментариев XML-документации для JavaScript IntelliSense
@@ -26,14 +26,14 @@ ms.locfileid: "72619545"
 
 *Комментарии XML-документации* — это комментарии JavaScript, которые добавляются в скрипт для предоставления сведений об элементах кода, таких как функции, поля и переменные. В Visual Studio эти текстовые описания отображаются с IntelliSense при ссылке на функцию скрипта.
 
- В этом разделе приводится краткое руководство по использованию комментариев XML-документации. Дополнительные сведения об использовании других элементов, таких как [\<var >](../ide/var-javascript.md) и [\<value >](../ide/value-javascript.md), а также дополнительные примеры кода см. в разделе [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md). Сведения о предоставлении информации IntelliSense для асинхронного обратного вызова, например `Promise`, см. в разделе [\<returns >](../ide/returns-javascript.md).
+ В этом разделе приводится краткое руководство по использованию комментариев XML-документации. Сведения об использовании других элементов, таких как [\<var>](../ide/var-javascript.md) и [\<value>](../ide/value-javascript.md) , а также дополнительные примеры кода см. в разделе [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md). Сведения о предоставлении информации IntelliSense для асинхронного обратного вызова, например `Promise` , см [\<returns>](../ide/returns-javascript.md) . в разделе.
 
 > [!NOTE]
 > Комментарии XML-документации доступны только из файлов, сборок и служб со ссылками.
 
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Создание комментариев XML-документации для функции JavaScript
 
-- В функции добавьте элементы [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)и [\<returns >](../ide/returns-javascript.md) и перед каждым элементом с тремя знаками косой черты (///).
+- В функции добавьте [\<summary>](../ide/summary-javascript.md) [\<param>](../ide/param-javascript.md) элементы, и и [\<returns>](../ide/returns-javascript.md) перед каждым элементом с тремя знаками косой черты (///).
 
     > [!NOTE]
     > Каждый элемент должен находиться в одной строке.
@@ -62,9 +62,9 @@ ms.locfileid: "72619545"
 
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>Создание комментариев XML-документации для поля JavaScript
 
-- В определении функции или объекта-конструктора добавьте элемент [\<field >](../ide/field-javascript.md) перед тремя знаками косой черты (///).
+- В определении функции или объекта-конструктора добавьте элемент, [\<field>](../ide/field-javascript.md) перед которым следуют три знака косой черты (///).
 
-     В следующем примере показано использование элемента `<field>` в функции-конструкторе. Дополнительные примеры см. в разделе [\<field >](../ide/field-javascript.md).
+     В следующем примере показано использование `<field>` элемента в функции конструктора. Дополнительные примеры см. в разделе [\<field>](../ide/field-javascript.md) .
 
     ```javascript
     function Engine() {
@@ -87,7 +87,7 @@ ms.locfileid: "72619545"
 
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>Создание комментариев XML-документации для перегруженной функции
 
-1. В функции добавьте элемент [> \<signature](../ide/signature-javascript.md) для каждой перегрузки. В этих элементах добавьте другие элементы, такие как `<summary>`, `<param>` и `<returns>`, предшествующие каждому элементу с тремя знаками косой черты (///).
+1. В функции добавьте [\<signature>](../ide/signature-javascript.md) элемент для каждой перегрузки. В этих элементах добавьте другие элементы, такие как `<summary>` , `<param>` и `<returns>` , предшествующие каждому элементу с тремя знаками косой черты (///).
 
      В следующем примере показана перегруженная функция JavaScript. В этом примере перегрузки отличаются типом параметра.
 
@@ -118,9 +118,9 @@ ms.locfileid: "72619545"
 1. Создайте XML-файл с комментариями документации в формате Опенажакс Мессажебундле.
 
     > [!IMPORTANT]
-    > Рекомендуемый формат — Мессажебундле. Этот формат не поддерживается в Microsoft AJAX или в WinMD-файлах. Дополнительные сведения об использовании альтернативного формата `VSDoc` см. в разделе [\<loc >](../ide/loc-javascript.md).
+    > Рекомендуемый формат — Мессажебундле. Этот формат не поддерживается в Microsoft AJAX или в WinMD-файлах. Дополнительные сведения об использовании альтернативного `VSDoc` формата см. в разделе [\<loc>](../ide/loc-javascript.md) .
 
-     В следующем примере показано содержимое в файле расширения, который содержит локализованные данные IntelliSense. Это XML-файл, расположенный в папке, зависящей от языка и региональных параметров, например JA. Папка должна находиться в том же расположении, что и файл. js, содержащий элемент `<loc>`. Имя файла XML-файла должно соответствовать параметру `filename`, указанному в элементе `<loc>`.
+     В следующем примере показано содержимое в файле расширения, который содержит локализованные данные IntelliSense. Это XML-файл, расположенный в папке, зависящей от языка и региональных параметров, например JA. Папка должна находиться в том же расположении, что и файл. js, содержащий `<loc>` элемент. Имя файла XML-файла должно соответствовать `filename` параметру, указанному в `<loc>` элементе.
 
     ```
     <messagebundle>
@@ -131,14 +131,14 @@ ms.locfileid: "72619545"
 
     ```
 
-2. Добавьте в файл. js следующий код. Элемент `<loc>` должен быть объявлен перед любым скриптом и следовать тем же правилам использования, что и элемент `<reference>`. Дополнительные сведения см. в разделе [JavaScript IntelliSense](../ide/javascript-intellisense.md) и [\<loc >](../ide/loc-javascript.md).
+2. Добавьте в файл. js следующий код. `<loc>`Элемент должен быть объявлен перед любым скриптом и следовать тем же правилам использования, что и `<reference>` элемент. Дополнительные сведения см. в разделе [JavaScript IntelliSense](../ide/javascript-intellisense.md) и [\<loc>](../ide/loc-javascript.md) .
 
     ```javascript
     /// <loc filename="messageFilename.xml" format="messagebundle"/>
 
     ```
 
-3. В JS-файл добавьте элементы документации XML и описания по умолчанию. Установите `locid` значения атрибутов в соответствии с соответствующими значениями атрибутов `name` из файла расширения. Описания по умолчанию будут заменены локализованными данными IntelliSense, если они доступны.
+3. В JS-файл добавьте элементы документации XML и описания по умолчанию. Установите `locid` значения атрибутов так, чтобы они совпадали с соответствующими `name` значениями атрибутов из файла расширения. Описания по умолчанию будут заменены локализованными данными IntelliSense, если они доступны.
 
     ```javascript
     function add(a,b)
@@ -156,5 +156,5 @@ ms.locfileid: "72619545"
     add(
     ```
 
-## <a name="see-also"></a>См. также
- [IntelliSense для JavaScript](../ide/javascript-intellisense.md) [Комментарии к XML-документации по](../ide/xml-documentation-comments-javascript.md) [NIB: Пошаговое руководство. JavaScript IntelliSense в ASP.NET](https://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
+## <a name="see-also"></a>См. также:
+ [JavaScript IntelliSense](../ide/javascript-intellisense.md) [Комментарии к XML-документации по](../ide/xml-documentation-comments-javascript.md) IntelliSense [для JavaScript NIB: пошаговое руководство. IntelliSense для JavaScript в ASP.NET](https://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

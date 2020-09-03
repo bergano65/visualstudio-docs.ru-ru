@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc2d05c6b6aae4b2f33d135c6859da7b17de963
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533163"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Отладка приложений Магазина в Visual Studio
@@ -31,12 +31,12 @@ ms.locfileid: "85533163"
 |Заголовок|Описание|
 |-|-|
 |[Запуск сеанса отладки (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|В разделе "Запуск сеанса отладки" описываются различные варианты настройки и запуска сеанса отладки для приложения, написанного на JavaScript.|
-|[Управление выполнение в сеансе отладки (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|В разделе "Навигация по отладчику" приведено простое приложение, демонстрирующее, как запускать и останавливать отладку, осуществлять переходы по коду и просматривать состояние программы.|
+|[Управление выполнением в сеансе отладки (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|В разделе "Навигация по отладчику" приведено простое приложение, демонстрирующее, как запускать и останавливать отладку, осуществлять переходы по коду и просматривать состояние программы.|
 |[Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)|В разделе "Отладка HTML и CSS" показано, как осуществлять интерактивную отладку приложения JavaScript с помощью инструментов проверки Live DOM для просмотра и изменения HTML и CSS.|
 |[Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|Отладка JavaScript с помощью консоли показывает, как выполнять интерактивную отладку приложения JavaScript с помощью [команд консоли JavaScript](../debugger/javascript-console-commands.md).|
 |[Запуск сеанса отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|В разделе "Запуск сеанса отладки (Visual C++, Visual C# и Visual Basic)" описываются различные варианты настройки и запуска сеанса отладки для приложения, написанного на Visual C++, Visual C# или Visual Basic.|
 |[Навигация по сеансу отладки (XAML и C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|В разделе "Навигация по отладчику" приведено простое приложение, демонстрирующее, как запускать и останавливать отладку, осуществлять переходы по коду, а также просматривать и изменять состояние программы.|
 |[Вызов событий приостановки, возобновления и фоновых событий для Магазина Windows](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Отладчик отключает события управления жизненным циклом процесса Windows, которые приостанавливают приложения, возобновляют и завершают их работу. Вы можете активировать эти события из панели инструментов отладчика.<br /><br /> Фоновые задачи позволяют выполнять важные операции, даже если приложение приостановлено. Отладчик позволяет вам запустить такую фоновую задачу и выполнить ее отладку.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Отладка в Visual Studio (в библиотеке MSDN)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

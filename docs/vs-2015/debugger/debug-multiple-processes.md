@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97d98522e011023cb3a021a69c9a82e8bb34cef3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533280"
 ---
 # <a name="debug-multiple-processes"></a>Отладка нескольких процессов
@@ -43,7 +43,7 @@ ms.locfileid: "85533280"
   
  [Остановка отладки, окончание или отсоединение от процессов](#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
-## <a name="configure-the-execution-behavior-of-multiple-processes"></a><a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>Настройка поведения выполнения нескольких процессов  
+## <a name="configure-the-execution-behavior-of-multiple-processes"></a><a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Настройка поведения выполнения нескольких процессов  
  Когда в отладчике запущено одновременно несколько процессов, команды приостановки выполнения и пошагового выполнения, а также остановка команд отладчика по умолчанию влияют на все процессы. Например, когда один процесс приостанавливается в точке останова, выполнение всех остальных процессов также приостанавливается. Можно изменить это принимаемое по умолчанию поведение, чтобы обрести больший контроль над целевыми объектами команд выполнения.  
   
 1. В меню **Отладка** выберите **Параметры и настройки**.  
@@ -59,7 +59,7 @@ ms.locfileid: "85533280"
   
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)  
   
-## <a name="start-multiple-processes-in-a-vs-solution-attach-to-a-process-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a>Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике  
+## <a name="start-multiple-processes-in-a-vs-solution-attach-to-a-process-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике  
   
 - [Запуск отладки нескольких процессов в решении Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [изменение запускаемого проекта](#BKMK_Change_the_startup_project) • [Запуск конкретного проекта в решении](#BKMK_Start_a_specific_project_in_a_solution) • [Запуск нескольких проектов в решении](#BKMK_Start_multiple_projects_in_a_solution) • [Присоединение к процессу](#BKMK_Attach_to_a_process) • [Автоматический запуск процесса в отладчике](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
@@ -71,22 +71,22 @@ ms.locfileid: "85533280"
 >   -или-  
 >   - Настройте параметры Windows таким образом, что дочерний процесс автоматически запускался в новом экземпляре отладчика.  
   
-### <a name="start-debugging-multiple-processes-in-a-visual-studio-solution"></a><a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>Запуск отладки нескольких процессов в решении Visual Studio  
+### <a name="start-debugging-multiple-processes-in-a-visual-studio-solution"></a><a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Запуск отладки нескольких процессов в решении Visual Studio  
  Если в решении Visual Studio имеется несколько проектов, которые могут выполняться независимо (проекты, выполняемые в отдельных процессах), можно выбрать, какие проекты запускаются отладчиком.  
   
  ![Изменение типа запуска для проекта](../debugger/media/dbg-execution-startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
   
-#### <a name="change-the-startup-project"></a><a name="BKMK_Change_the_startup_project"></a>Изменение запускаемого проекта  
+#### <a name="change-the-startup-project"></a><a name="BKMK_Change_the_startup_project"></a> Изменение запускаемого проекта  
  Чтобы изменить запускаемый проект для решения, выберите проект в обозреватель решений а затем в контекстном меню выберите пункт **Назначить запускаемым проектом** .  
   
-#### <a name="start-a-specific-project-in-a-solution"></a><a name="BKMK_Start_a_specific_project_in_a_solution"></a>Запуск конкретного проекта в решении  
+#### <a name="start-a-specific-project-in-a-solution"></a><a name="BKMK_Start_a_specific_project_in_a_solution"></a> Запуск конкретного проекта в решении  
  Чтобы запустить проект для решения без изменения запускаемого по умолчанию проекта, выберите проект в обозреватель решений а затем в контекстном меню выберите пункт **Отладка** . Затем можно выбрать пункт **запустить новый экземпляр** или **Шаг с заходом в новый экземпляр**.  
   
  К ![началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") работы [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)  
   
-#### <a name="start-multiple-projects-in-a-solution"></a><a name="BKMK_Start_multiple_projects_in_a_solution"></a>Запуск нескольких проектов в решении  
+#### <a name="start-multiple-projects-in-a-solution"></a><a name="BKMK_Start_multiple_projects_in_a_solution"></a> Запуск нескольких проектов в решении  
   
 1. Выберите решение в обозреватель решений а затем в контекстном меню выберите пункт **Свойства** .  
   
@@ -111,7 +111,7 @@ ms.locfileid: "85533280"
   
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)  
   
-### <a name="automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Автоматический запуск процесса в отладчике  
+### <a name="automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Автоматический запуск процесса в отладчике  
  В некоторых случаях может потребоваться отладить код запуска для программы, которая запускается другим процессом. К ним относятся службы и действия пользовательской настройки. В этих случаях можно заставить отладчик запускаться и автоматически присоединяться при запуске приложения.  
   
 1. Запустите редактор реестра (**regedit.exe**).  
@@ -136,7 +136,7 @@ ms.locfileid: "85533280"
   
    ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)  
   
-## <a name="switch-processes-break-and-continue-execution-step-through-source"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Переключение процессов, выполнение останова и продолжение выполнения, пошаговая обработка исходного кода  
+## <a name="switch-processes-break-and-continue-execution-step-through-source"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Переключение процессов, выполнение останова и продолжение выполнения, пошаговая обработка исходного кода  
   
 - [Переключение между процессами](#BKMK_Switch_between_processes) • [команды break, Step и Continue](#BKMK_Break__step__and_continue_commands)  
   
@@ -168,22 +168,22 @@ ms.locfileid: "85533280"
 > [!NOTE]
 > По умолчанию предусмотренные в отладчике команды прерывания, продолжения и пошагового выполнения влияют на все отлаживаемые в данный момент процессы. Сведения об изменении этого поведения см. в разделе [Настройка поведения выполнения нескольких процессов](#BKMK_Configure_the_execution_behavior_of_multiple_processes) .  
   
-|**Command**|**Прерывать все процессы при прерывании одного процесса**<br /><br /> Флажок установлен (по умолчанию)|**Прерывать все процессы при прерывании одного процесса**<br /><br /> Очищено|  
+|**Команда**|**Прерывать все процессы при прерывании одного процесса**<br /><br /> Флажок установлен (по умолчанию)|**Прерывать все процессы при прерывании одного процесса**<br /><br /> Очищено|  
 |-|-|-|
 |Меню **отладки** :<br /><br /> -   **Прервать все**|Все процессы приостанавливаются.|Все процессы приостанавливаются.|  
 |Меню **отладки** :<br /><br /> -   **Продолжения**|Все процессы возобновляются.|Все приостановленные процессы возобновляются.|  
 |Меню **отладки** :<br /><br /> -   **Шаг с заходом**<br />-   **Шаг с обходом**<br />-   **Шаг с выходом**|Во время выполнения шага текущего процесса все процессы выполняются.<br /><br /> Затем все процессы приостанавливаются.|Текущий процесс выполняется пошагово.<br /><br /> Приостановленные процессы возобновляются.<br /><br /> Выполняемые процессы продолжают выполняться.|  
-|Меню **отладки** :<br /><br /> -   **Шаг с заходом в текущий процесс**<br />-   **Шаг с обходом текущего процесса**<br />-   **Шаг с выходом текущего процесса**|Недоступно|Текущий процесс выполняется пошагово.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
+|Меню **отладки** :<br /><br /> -   **Шаг с заходом в текущий процесс**<br />-   **Шаг с обходом текущего процесса**<br />-   **Шаг с выходом текущего процесса**|Н/Д|Текущий процесс выполняется пошагово.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
 |Окна исходного кода.<br /><br /> -   **Установлена**|Все процессы приостанавливаются.|Приостанавливается только процесс окна исходного кода.|  
 |Контекстное меню окна исходного кода:<br /><br /> -   **Выполнить до текущей позиции**<br /><br /> Окно исходного кода должно находиться в текущем процессе.|Все процессы выполняются, а процесс в окне исходного кода выполняется до курсора и приостанавливается.<br /><br /> После этого приостанавливаются все остальные процессы.|Процесс в окне исходного кода выполняется до курсора.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
-|Контекстное меню окна **процессов** :<br /><br /> -   **Остановить процесс**|Недоступно|Выбранный процесс приостанавливается.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
+|Контекстное меню окна **процессов** :<br /><br /> -   **Остановить процесс**|Н/Д|Выбранный процесс приостанавливается.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
 |Контекстное меню окна **процессов** :<br /><br /> -   **Продолжить процесс**|Н/Д|Выбранный процесс возобновляется.<br /><br /> Остальные процессы сохраняют свое текущее состояние (остаются приостановленными или продолжают выполняться).|  
   
  ![Возврат к началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [процессов переключения, выполнение останова и продолжение выполнения, пошаговая обработка исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)  
   
-## <a name="stop-debugging-terminate-or-detach-from-processes"></a><a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a>Остановка отладки, завершение или отсоединение процессов  
+## <a name="stop-debugging-terminate-or-detach-from-processes"></a><a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Остановка отладки, завершение или отсоединение процессов  
   
 - [Команды остановки, окончания и отсоединения](#BKMK_Stop__terminate__and_detach_commands)  
   
@@ -202,7 +202,7 @@ ms.locfileid: "85533280"
   
 - Откройте окно **процессы** (сочетание **клавиш CTRL + ALT + Z**). Выберите процесс и установите или снимите флажок **отсоединить при остановке отладки** .  
   
-### <a name="stop-terminate-and-detach-commands"></a><a name="BKMK_Stop__terminate__and_detach_commands"></a>Команды "остановить", "завершить" и "отсоединить"  
+### <a name="stop-terminate-and-detach-commands"></a><a name="BKMK_Stop__terminate__and_detach_commands"></a> Команды "остановить", "завершить" и "отсоединить"  
   
 |**Команда**|**Описание**|  
 |-|-|  
@@ -217,7 +217,7 @@ ms.locfileid: "85533280"
   
  ![В начало](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержимое](#BKMK_Contents)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Указание символов (. pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Присоединение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)   

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533085"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Практическое руководство. Создание решения на доменном языке
@@ -42,9 +42,9 @@ ms.locfileid: "85533085"
 
 1. Запустите мастер DSL.
 
-   1. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
+   1. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
 
-   2. Откроется диалоговое окно **Создание проекта** .
+   2. Откроется диалоговое окно **Новый проект** .
 
    3. В разделе **типы проектов**разверните узел **другие типы проектов** и щелкните **расширяемость**.
 
@@ -78,7 +78,7 @@ ms.locfileid: "85533085"
    > [!NOTE]
    > Если появится сообщение о том, что не нужно запускать текстовые шаблоны из ненадежных источников, нажмите кнопку **ОК**. Вы можете задать, чтобы это сообщение не отображалось снова.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Страницы мастера Конструктор DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Страницы мастера Конструктор DSL
  Можно оставить несколько полей неизменными по значениям по умолчанию. Однако убедитесь, что задано поле расширения файла.
 
 ### <a name="solution-settings-page"></a>Страница "параметры решения"
@@ -129,5 +129,5 @@ ms.locfileid: "85533085"
 
  Дополнительные сведения о строгом именовании см. в разделе [Создание и использование сборок со строгими именами](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Как определить доменный язык](../modeling/how-to-define-a-domain-specific-language.md) [средства предметно-ориентированных языков Глоссарий](/previous-versions/bb126564(v=vs.100))

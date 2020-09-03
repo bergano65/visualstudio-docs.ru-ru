@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916801"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Практическое руководство. Расширение конструктора доменного языка
@@ -26,11 +26,11 @@ ms.locfileid: "75916801"
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Создание решения расширения Конструктор DSL
 
-1. Создайте новый проект, используя шаблон проекта библиотеки классов. В диалоговом окне **Новый проект** нажмите кнопку **визуальный C#**  элемент, а затем в среднем окне щелкните **Библиотека классов**.
+1. Создайте новый проект, используя шаблон проекта библиотеки классов. В диалоговом окне **Новый проект** щелкните **Visual C#** , а затем в среднем окне щелкните **Библиотека классов**.
 
      Этот проект будет содержать код ваших расширений.
 
-2. Создайте новый проект с помощью шаблона проекта VSIX. В диалоговом окне **Новый проект** разверните узел **визуальный C#** элемент, щелкните **расширяемость**, а затем в среднем окне выберите **проект VSIX**.
+2. Создайте новый проект с помощью шаблона проекта VSIX. В диалоговом окне **Новый проект** разверните узел **Visual C#**, щелкните **расширяемость**, а затем в среднем окне выберите **проект VSIX**.
 
      Выберите **Добавить в решение**.
 
@@ -46,13 +46,13 @@ ms.locfileid: "75916801"
 
 7. В проекте библиотеки классов добавьте ссылки на следующие сборки:
 
-     Microsoft.VisualStudio.CoreUtility
+     Microsoft. VisualStudio. Кореутилити
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     Microsoft. VisualStudio. моделирование. SDK. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     Microsoft. VisualStudio. моделирование. SDK. схемы. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     Microsoft. VisualStudio. моделирование. SDK. DslDefinition. 11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0;
 
@@ -67,24 +67,24 @@ ms.locfileid: "75916801"
 ## <a name="testing-and-deployment"></a>Тестирование и развертывание
  Чтобы протестировать любое из расширений в этом разделе, выполните сборку и запустите решение. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . В этом экземпляре откройте решение DSL. Измените схему DslDefinition. Поведение расширения можно увидеть.
 
- Чтобы развернуть расширения в основной [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], а также на другие компьютеры, выполните следующие действия.
+ Чтобы развернуть расширения на главном [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] компьютере, а также на другие компьютеры, выполните следующие действия.
 
-1. Найдите VSIX-файл установки, в проект VSIX в bin\\*\*\\\*.vsix
+1. Найдите файл установки VSIX в проекте VSIX в bin \\ * \\ \* . VSIX
 
 2. Скопируйте этот файл на конечный компьютер, а затем в проводнике Windows (или в проводнике) дважды щелкните его.
 
-    Откроется диспетчер расширений [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], чтобы убедиться, что расширение установлено.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Откроется диспетчер расширений, чтобы убедиться, что расширение установлено.
 
    Чтобы удалить расширение, выполните следующие действия.
 
-3. в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]в меню **Сервис** выберите пункт **Диспетчер расширений**.
+3. в в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] меню **Сервис** выберите пункт **Диспетчер расширений**.
 
 4. Выберите расширение и удалите его.
 
 ## <a name="adding-a-shortcut-menu-command"></a>Добавление команды контекстного меню
  Чтобы отобразить команду контекстного меню на Конструктор DSL поверхности или в окне обозревателя DSL, напишите класс, подобный приведенному ниже.
 
- Класс должен реализовывать `ICommandExtension` и должен иметь атрибут `DslDefinitionModelCommandExtension`.
+ Класс должен реализовывать `ICommandExtension` и должен иметь атрибут `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

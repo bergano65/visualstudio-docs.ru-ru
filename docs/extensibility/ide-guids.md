@@ -1,5 +1,5 @@
 ---
-title: ГИДГУДы Документы Майкрософт
+title: Идентификаторы GUID IDE | Документация Майкрософт
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41f9931b8e36dcb363624ecbc67e186bd3f5f71c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710487"
 ---
 # <a name="ide-guids"></a>Идентификаторы GUID среды IDE
 
-Класс <xref:Microsoft.VisualStudio.VSConstants> публикует GUID некоторые части интегрированной среды разработки (IDE), как указано в таблице ниже.
+<xref:Microsoft.VisualStudio.VSConstants>Класс публикует идентификаторы GUID некоторых частей интегрированной среды разработки (IDE), как указано в таблице ниже.
 
 ## <a name="core-systems"></a>Основные системы
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.HtmlEditorPackage_guid>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
@@ -35,27 +35,27 @@ ms.locfileid: "80710487"
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>Широко видимые компоненты
+## <a name="broadly-visible-components"></a>Широкие видимые компоненты
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
-|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
+|Microsoft. VisualStudio. Всконстантс. SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
+|Microsoft. VisualStudio. Всконстантс. SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Файлы, виртуальные и физические папки и подпроекты
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFile_guid>|6bb5f8ee-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFolder_guid>|6bb5f8ef-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.SubProject_guid>|EA6618E8-6E24-4528-94BE-6889FE16485C|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.VirtualFolder_guid>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|
 
-## <a name="ui-contexts"></a>Контексты uI
+## <a name="ui-contexts"></a>Контексты пользовательского интерфейса
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>|8fe2df1d-e0da-4ebe-9d5c-415d40e487b5|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11d1-9f4e-00a0c911004f|
@@ -71,31 +71,31 @@ ms.locfileid: "80710487"
 
 ## <a name="output-pane"></a>Панель вывода
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.BuildOutputPane_guid>|1BD8A850-02D1-11D1-BEE7-00A0C913D1F8|
-|<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.DebugPane_guid>|FC076020-078A-11D1-A7DF-00A0C910051|
+|<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.DebugPane_guid>|FC076020-078A-11D1-A7DF-00A0C9110051|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.GeneralPane_guid>|3C24D581-5591-4884-A571-9FE89915CD64|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.SortedBuildOutputPane_guid>|2032B126-7C8D-48AD-8026-0E0348004FC0|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
-|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
+|Microsoft. VisualStudio. Всконстантс. SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="command-sets-and-properties"></a>Наборы команд и свойства
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
-|Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
+|Microsoft. VisualStudio. Всконстантс. GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
+|Microsoft. VisualStudio. Всконстантс. GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-0000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>Графические интерфейсы списка задач
+## <a name="task-list-guids"></a>Идентификаторы GUID списка задач
 
-|Константа|GUID|
+|Константа|Код GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
@@ -109,24 +109,24 @@ ms.locfileid: "80710487"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>Страница селектора компонентов GUIDs
+## <a name="component-selector-page-guids"></a>Идентификаторы GUID для страниц выбора компонентов
 
-|Константы|GUID|
+|Константы|Код GUID|
 |---------------|----------|
-|Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|
-|Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
-|Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
+|Microsoft. VisualStudio. Всконстантс. GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|
+|Microsoft. VisualStudio. Всконстантс. GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
+|Microsoft. VisualStudio. Всконстантс. GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>Разное GUID-интерфейсы оболочки
+## <a name="miscellaneous-shell-guids"></a>Другие идентификаторы GUID оболочки
 
-|Константы|GUID|
+|Константы|Код GUID|
 |---------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
-|Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
+|Microsoft. VisualStudio. Всконстантс. SID_SVsToolboxActiveXDataProvider|35222106-bb44-11D0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Константы COM в управляемом коде](../extensibility/com-constants-in-managed-code.md)
 - [Константы IDE](../extensibility/ide-constants.md)
-- [IDE-определенные команды для расширения проектов sstems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Команды, определяемые интегрированной средой разработки для расширения Project s истемс](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

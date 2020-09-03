@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619730"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
@@ -48,7 +48,7 @@ finally
 
 ```
 
- Чтобы вставить этот фрагмент, выберите в контекстном меню окна кода команду **Вставить фрагмент**, затем команду **Visual C#** , после чего введите `tryf` и нажмите клавишу TAB или введите `tryf` и нажмите клавишу TAB+TAB.
+ Чтобы вставить этот фрагмент, выберите в контекстном меню окна кода команду **Вставить фрагмент**, затем команду **Visual C#**, после чего введите `tryf` и нажмите клавишу TAB или введите `tryf` и нажмите клавишу TAB+TAB.
 
  Пример фрагмента окружения. В C++ ярлык `if` может использоваться для вставки фрагмента или для добавления фрагмента обрамления. Если выбрать строку кода (например, `return FALSE;`) и последовательно выбрать команды **Разместить во фрагменте** и **if**, фрагмент кода будет развернут около этой строки:
 
@@ -85,5 +85,5 @@ End Property
 
  Вы можете добавлять и удалять каталоги фрагментов с помощью кнопок **Добавить** и **Удалить** в диалоговом окне **Диспетчер фрагментов кода**. Чтобы добавить отдельные фрагменты, используйте кнопку **Импорт**.
 
-## <a name="see-also"></a>См. также раздел
- [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md) [Практическое руководство. распространение фрагментов кода](../ide/how-to-distribute-code-snippets.md) [рекомендации по использованию фрагментов](../ide/best-practices-for-using-code-snippets.md) кода [Устранение неполадок](../ide/troubleshooting-snippets.md) фрагментов [визуального C# ](../ide/visual-csharp-code-snippets.md) кода фрагменты визуальных [элементов C++ ](../ide/visual-cpp-code-snippets.md) кода [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>См. также:
+ [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md) [Практическое руководство. распространение фрагментов кода](../ide/how-to-distribute-code-snippets.md) [рекомендации по использованию фрагментов](../ide/best-practices-for-using-code-snippets.md) [кода устранение неполадок](../ide/troubleshooting-snippets.md) фрагментов кода на [Visual C#](../ide/visual-csharp-code-snippets.md) [Visual C++](../ide/visual-cpp-code-snippets.md) фрагменты кода [Справочник по схеме фрагментов](../ide/code-snippets-schema-reference.md) кода

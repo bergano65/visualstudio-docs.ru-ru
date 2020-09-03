@@ -13,21 +13,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621109"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Специальные возможности средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В этот раздел входит информация о функциях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) 2.2 для людей с разными физическими возможностями.
+Корпорация Майкрософт стремится стремится сделать использование своих продуктов и услуг простым для всех пользователей. В этот раздел входит информация о функциях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) 2.2 для людей с разными физическими возможностями.
 
 ## <a name="keyboard-access"></a>Доступ с клавиатуры
  Вы можете получить доступ ко всем функциям окна справки, используя клавиатуру. Дополнительные сведения см. в разделе [Сочетания клавиш (окно справки)](../ide/shortcut-keys-help-viewer.md).
 
-## <a name="font-size"></a>Font size
+## <a name="font-size"></a>Размер шрифта
  Вы можете изменить размер шрифта текста, отображаемого в окне документа. Дополнительные сведения см. в разделе [Настройка окна справки](../ide/customize-the-help-viewer.md).
 
 ## <a name="window-size"></a>Размер окна
@@ -39,5 +39,5 @@ ms.locfileid: "72621109"
 ## <a name="internet-explorer-options"></a>Параметры Internet Explorer
  Вы можете сделать окно справки более доступным, изменив параметры Internet Explorer, связанные с отображением веб-страниц. Дополнительные сведения см. в разделе [Настройка окна справки](../ide/customize-the-help-viewer.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Окно справки (Майкрософт)](../ide/microsoft-help-viewer.md)

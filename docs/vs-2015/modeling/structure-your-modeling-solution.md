@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917317"
 ---
 # <a name="structure-your-modeling-solution"></a>Разработка структуры решения моделирования
@@ -117,7 +117,7 @@ ms.locfileid: "75917317"
 
 [Руководство по использованию средств архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) — дополнительные рекомендации по управлению моделями в команде
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 
-[Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md)
-[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
+[Управление моделями и диаграммами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)

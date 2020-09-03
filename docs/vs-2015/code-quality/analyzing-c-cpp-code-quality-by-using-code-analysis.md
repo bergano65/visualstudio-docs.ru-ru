@@ -18,10 +18,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 31eda172d21fdce5ca3d6e03b91955318adb623d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533579"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Анализ качества кода C/C++ с помощью метода анализа кода
@@ -43,6 +43,6 @@ ms.locfileid: "85533579"
 |[Использование аннотаций SAL для сокращения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|Сведения о функциях аннотации средства анализа кода для обнаружения нарушений контракта между вызывающим и вызываемым объектами.|  
 |[Анализ кода для предупреждений C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)|Содержит список и описание предупреждений анализа кода.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Анализ качества приложения](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

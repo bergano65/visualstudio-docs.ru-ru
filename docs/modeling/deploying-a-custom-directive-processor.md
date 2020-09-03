@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536023"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
@@ -62,7 +62,7 @@ ms.locfileid: "85536023"
 
     1. Создайте текстовый файл и назовите его \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*>обычно совпадает с именем проекта.
+         \<*assemblyName*> обычно совпадает с именем проекта.
 
     2. Выберите его в обозревателе решений и задайте его свойства следующим образом:
 
@@ -196,6 +196,6 @@ ms.locfileid: "85536023"
 |Класс|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Сборка|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание пользовательских обработчиков директив для текстовых шаблонов T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

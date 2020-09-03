@@ -1,5 +1,5 @@
 ---
-title: Ошибки и предупреждения для изменения и продолженияC#() | Документация Майкрософт
+title: Ошибки и предупреждения для изменения и продолжения (C#) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -62,10 +62,10 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850976"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Ошибки и предупреждения режима "Изменить и продолжить" (C#)
@@ -81,9 +81,9 @@ ms.locfileid: "75850976"
   
 1. Выберите команду **Отменить** в меню **Отладка** для отмены изменений.  
   
-     \- или -  
+     -или-  
   
 2. Остановите сеанс отладки, внесите изменения и начните новый сеанс отладки.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Режим "Изменить и продолжить" (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

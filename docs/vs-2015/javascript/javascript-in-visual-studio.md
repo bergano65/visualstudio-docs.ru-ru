@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852257"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
@@ -41,7 +41,7 @@ JavaScript — полноправный язык в Visual Studio. При нап
 ## <a name="whats-new-in-javascript"></a>Новые возможности JavaScript
  Новые функции для JavaScript перечислены в следующей таблице.
 
-|Функция|Описание|
+|Компонент|Описание|
 |-------------|-----------------|
 |Классы|Новый синтаксис поддерживает объявление [классов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Обещания|[Обещания](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) упрощают создание асинхронного и более чистого кода. Конструкторы обещаний поддерживаются вместе со служебными методами `all` и `race`.|
@@ -49,9 +49,9 @@ JavaScript — полноправный язык в Visual Studio. При нап
 |Функции со стрелкой|Функция со стрелкой (=>) предоставляет сокращенный синтаксис для ключевого слова `function` с лексической привязкой `this`.|
 |Новые методы для встроенных объектов|Встроенные объекты [Array Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) и [String Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) предоставляют множество новых служебных функций и свойств для обработки и инспектирования данных.|
 |Усовершенствования объектного литерала|Объекты теперь поддерживают вычисляемые свойства, точные определения методов и сокращенный синтаксис для свойств, значения которых инициализируются в переменную с таким же именем. См. дополнительные сведения о [создании объектов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
-|Прокси-элементы|[Прокси-элементы](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) позволяют настраивать пользовательское поведение объектов.|
+|прокси-серверы;|[Прокси-элементы](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) позволяют настраивать пользовательское поведение объектов.|
 |Параметры Rest|Параметры Rest позволяют преобразовать последовательные аргументы в вызове функции в массив. См. дополнительные сведения о [функциях](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
-|Оператор Spread|[Оператор spread](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) расширяет доступные для итерации выражения в отдельные аргументы. Например, `a.b(…array)` примерно равен `a.b.apply(a, array)`.|
+|Оператор Spread|[Оператор распределения](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) ( `…` ) расширяет выражения Iterable в отдельные аргументы. Например, `a.b(…array)` примерно равен `a.b.apply(a, array)`.|
 |Символы|Объекты [Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) позволяют добавлять свойства в существующие объекты без создания помех существующим свойствам объектов, непредусмотренной видимости и других несогласованных дополнений, которые могут быть реализованы другими частями кода.|
 |Строки шаблона|[Строки шаблона](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) — это строковые литералы, позволяющие оценивать выражения и сцеплять их со строковым литералом.|
 |Усовершенствования Юникода|Была усовершенствована поддержка Юникода. Так, новый формат escape-последовательности поддерживает астральные кодовые точки (кодовые точки с более 4 шестнадцатеричных цифр). См. дополнительные сведения о [специальных символах](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|

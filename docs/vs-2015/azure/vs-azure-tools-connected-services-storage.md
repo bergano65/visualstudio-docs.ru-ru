@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
 ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916697"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Добавление хранилища Azure с использованием подключенных служб Visual Studio
@@ -44,7 +44,7 @@ ms.locfileid: "75916697"
 
 1. В диалоговом окне **Служба хранилища Azure** выберите существующую учетную запись хранения и нажмите кнопку **Добавить**.
 
-    Если вам нужно создать учетную запись хранения, перейдите к следующему шагу. В противном случае перейдите к шагу 6.
+    Если вам нужно создать учетную запись хранения, перейдите к следующему шагу. В противном случае переходите к шагу 6.
 
     ![Добавление существующей учетной записи хранения в проект](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
@@ -68,7 +68,7 @@ ms.locfileid: "75916697"
 - Проекты облачной службы (веб-роли и рабочие роли): ознакомьтесь со статьей [Начало работы с хранилищем больших двоичных объектов Azure и подключенными службами Visual Studio (проектами облачных служб)](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs).
 - Проекты веб-заданий: ознакомьтесь со статьей [Что произошло с моим проектом веб-заданий (подключенными к службе хранилища Azure службами Visual Studio)?](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Форум MSDN: хранилище Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Блог команды разработчиков службы хранилища Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Документация по службе хранилища Azure](/azure/storage/)

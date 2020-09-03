@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536101"
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
@@ -40,7 +40,7 @@ ms.locfileid: "85536101"
 </Themes>
 ```
 
- **Тема**
+ **Тема**.
 
  \<Theme>Элемент определяет всю тему. Тема должна содержать по крайней мере один \<Category> элемент. Элементы темы определяются следующим образом:
 
@@ -50,10 +50,10 @@ ms.locfileid: "85536101"
 </Theme>
 ```
 
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Attribute**|**Определение**|
 |-|-|
-|name|Необходимости Имя темы|
-|GUID|Необходимости Идентификатор GUID темы (должен соответствовать форматированию GUID)|
+|Имя|Необходимости Имя темы|
+|Код GUID|Необходимости Идентификатор GUID темы (должен соответствовать форматированию GUID)|
 
  При создании пользовательских цветов для Visual Studio эти цвета должны быть определены для следующих тем. Если для конкретной темы цвета не существуют, Visual Studio пытается загрузить недостающие цвета из светлой темы.
 
@@ -74,10 +74,10 @@ ms.locfileid: "85536101"
  </Category>
 ```
 
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Attribute**|**Определение**|
 |-|-|
-|name|Необходимости Имя категории|
-|GUID|Необходимости GUID категории (должен соответствовать форматированию GUID)|
+|Имя|Необходимости Имя категории|
+|Код GUID|Необходимости GUID категории (должен соответствовать форматированию GUID)|
 
  **Цвет**
 
@@ -90,9 +90,9 @@ ms.locfileid: "85536101"
  </Color>
 ```
 
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Attribute**|**Определение**|
 |-|-|
-|name|Необходимости Имя цвета|
+|Имя|Необходимости Имя цвета|
 
  **Фон и (или) передний план**
 
@@ -103,7 +103,7 @@ ms.locfileid: "85536101"
 <Foreground Type="type" Source="int" />
 ```
 
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Определение**|
+|**Attribute**|**Определение**|
 |-|-|
 |Тип|Необходимости Тип цвета. Может принимать одно из следующих значений:<br /><br /> *CT_INVALID:* Недопустимый или неустановленный цвет.<br /><br /> *CT_RAW:* Необработанное значение ARGB.<br /><br /> *CT_COLORINDEX:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_SYSCOLOR:* Системный цвет Windows из Сисколор.<br /><br /> *CT_VSCOLOR:* Цвет Visual Studio из __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Автоматический цвет.<br /><br /> *CT_TRACK_FOREGROUND:* НЕ ИСПОЛЬЗУЙТЕ.<br /><br /> *CT_TRACK_BACKGROUND:* НЕ ИСПОЛЬЗУЙТЕ.|
 |Источник|Необходимости Значение цвета, представленного в шестнадцатеричном формате|

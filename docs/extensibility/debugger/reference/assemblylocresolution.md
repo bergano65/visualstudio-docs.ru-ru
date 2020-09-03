@@ -1,5 +1,5 @@
 ---
-title: АССЕМСЛОКОЦИЯ (англ.) Документы Майкрософт
+title: АССЕМБЛИЛОКРЕСОЛУТИОН | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738135"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Определяет, где находится сборка.
+Указывает, где находится сборка.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,23 +51,23 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 Сборка находится в текущем пространстве имен.
 
 `ALR_USERDIR`\
-Сборка находится в каталоге пользователей.
+Сборка находится в каталоге пользователя.
 
 `ALR_SHAREDDIR`\
 Сборка находится в общем каталоге.
 
 `ALR_REMOTEDIR`\
-Сборка расположена в удаленном каталоге.
+Сборка находится в удаленном каталоге.
 
-## <a name="remarks"></a>Примечания
-Эти значения возвращаются методами [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+## <a name="remarks"></a>Remarks
+Эти значения возвращаются методами [ресолвеассемблиреф](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) и [жетманажедвиеверкреатиондата](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .
 
-Эти значения можно комбинировать с операцией. `OR`
+Эти значения можно сочетать с `OR` операцией.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

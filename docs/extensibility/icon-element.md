@@ -1,5 +1,5 @@
 ---
-title: Элемент значков Документы Майкрософт
+title: Icon, элемент | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710509"
 ---
-# <a name="icon-element"></a>Элемент значка
-Атрибут омички тега значок является руководством определенной битовой карты. Атрибут `id` выбирает слот в полосе bitmap. Этот элемент является необязательным. Если этот элемент не включен значение **guidOfficeIcon:msotcidNoIcon** будет подразумеваться.
+# <a name="icon-element"></a>Icon, элемент
+Атрибут GUID тега Icon является идентификатором GUID определенного растрового изображения. `id`Атрибут выбирает слот на панели растрового изображения. Этот элемент является необязательным. Если этот элемент не включен в значение **гуидоффицеикон: мсотЦидноикон** будет подразумеваемым.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,20 +34,20 @@ ms.locfileid: "80710509"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|guid|Обязательный элемент. Руководство определенной бит-карты.|
-|идентификатор|Обязательный элемент. Выбирает слот в полосе bitmap.|
+|guid|Обязательный. Идентификатор GUID определенного растрового изображения.|
+|идентификатор|Обязательный. Выбирает слот в полоске точечного рисунка.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Нет.|Нет.|
+|Нет.|Отсутствует.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент кнопки](../extensibility/buttons-element.md)||
+|[Button, элемент](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

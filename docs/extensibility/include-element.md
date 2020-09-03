@@ -1,5 +1,5 @@
 ---
-title: Включить Элемент Документы Майкрософт
+title: Включить элемент | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710362"
 ---
 # <a name="include-element"></a>Включить элемент
-Элемент "Включить" определяет файл, который может быть расположен на поставляемом включении пути вставки в текущий файл.  Все символы и типы, определенные, станут частью компилированного результата.
+Элемент include указывает файл, который можно найти по указанному пути поиска включаемых файлов для вставки в текущий файл.  Все определенные символы и типы станут частью скомпилированного результата.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,20 +36,20 @@ ms.locfileid: "80710362"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|href|Обязательный элемент. Путь к файлу заголовка:<br /><br /> хрефе "stdidcmd.h"|
-|Условие|Необязательный параметр. Смотрите [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|href|Обязательный. Путь к файлу заголовка:<br /><br /> href = "стдидкмд. h"|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|Нет.|Нет.|
+|Нет.|Отсутствует.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, т.е. пункты меню, меню, панели инструментов и комбо-коробки, которые VSPackage предоставляет IDE.|
+|[Коммандтабле, элемент](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, т. е. пункты меню, меню, панели инструментов и поля со списком, которые пакет VSPackage предоставляет интегрированной среде разработки.|
 
 ## <a name="example"></a>Пример
 
@@ -57,5 +57,5 @@ ms.locfileid: "80710362"
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

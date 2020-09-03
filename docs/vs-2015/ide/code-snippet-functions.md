@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620231"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
@@ -28,14 +28,14 @@ ms.locfileid: "72620231"
 ## <a name="functions"></a>Функции
  Следующая таблица описывает функции, доступные для использования с элементом `Function` во фрагментах кода.
 
-|Функция|ОПИСАНИЕ|Язык|
+|Компонент|Description|Язык|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`SimpleTypeName(` `TypeName` `)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как использовать функцию `GenerateSwitchCases`. При вставке данного фрагмента и вводе перечисления в литерал `$switch_on$` литерал `$cases$` создает оператор `case` для каждого значения в перечислении.
+ Ниже представлен пример использования функции `GenerateSwitchCases`. При вставке данного фрагмента и вводе перечисления в литерал `$switch_on$` литерал `$cases$` создает оператор `case` для каждого значения в перечислении.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -76,7 +76,7 @@ ms.locfileid: "72620231"
 ```
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как использовать функцию `ClassName`. При вставке этого фрагмента литерал `$classname$` заменяется именем включающего класса в этом месте файла кода.
+ Ниже представлен пример использования функции `ClassName`. При вставке этого фрагмента литерал `$classname$` заменяется именем включающего класса в этом месте файла кода.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -153,5 +153,5 @@ ms.locfileid: "72620231"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Элемент Function (фрагменты кода IntelliSense)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)

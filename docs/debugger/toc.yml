@@ -12,7 +12,7 @@
   items:
     - name: Первое знакомство с отладчиком
       href: debugger-feature-tour.md
-    - name: 'Отладка приложения C# или Visual Basic'
+    - name: Отладка приложения C# или Visual Basic
       href: quickstart-debug-with-managed.md
     - name: Отладка приложения C++
       href: quickstart-debug-with-cplusplus.md
@@ -20,7 +20,7 @@
       href: quickstart-debug-aspnet.md
 - name: Учебники
   items:
-    - name: 'Обучение отладке кода C#'
+    - name: Обучение отладке кода C#
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
     - name: Обучение отладке кода C++
       href: getting-started-with-the-debugger-cpp.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Отладка живого приложения Azure
       href: debug-live-azure-applications.md
-    - name: 'Отладка кода C# и C++'
+    - name: Отладка кода C# и C++
       href: how-to-debug-managed-and-native-code.md
     - name: Проверка предыдущих состояний приложения
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: Устранение неполадок точек останова
           href: troubleshooting-breakpoints.md
-        - name: 'Устранение неполадок точек останова в данных C#'
+        - name: Устранение неполадок точек останова в данных C#
           href: troubleshoot-data-breakpoint-errors.md
     - name: Проверка данных
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Оператор контекста (C++)
                   href: context-operator-cpp.md
-                - name: 'Определители формата в C#'
+                - name: Определители формата в C#
                   href: format-specifiers-in-csharp.md
                 - name: Псевдопеременные
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: Поддерживаемые изменения кода (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Режим "Изменить и продолжить" (Visual C#)'
+        - name: Режим "Изменить и продолжить" (Visual C#)
           items:
-            - name: 'Изменить и продолжить (C#)'
+            - name: Изменить и продолжить (C#)
               href: edit-and-continue-visual-csharp.md
-            - name: 'Изменить и продолжить (C#)'
+            - name: Изменить и продолжить (C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: Поддерживаемые изменения кода
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Устранение неполадок горячей перезагрузки XAML
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'Функция "Изменить и продолжить" не поддерживается для языка F#'
+        - name: Функция "Изменить и продолжить" не поддерживается для языка F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Записать в окно вывода
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Параметры страниц свойств для веб-проектов
                   href: property-pages-settings-for-web-projects.md
-                - name: 'Параметры проекта для конфигураций отладки C#'
+                - name: Параметры проекта для конфигураций отладки C#
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Параметры проекта для конфигурации отладки Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -254,7 +254,7 @@
                   href: create-custom-visualizers-of-data.md
                 - name: Архитектура визуализатора
                   href: visualizer-architecture.md
-                - name: 'Пошаговое руководство. Создание визуализатора на C#'
+                - name: Пошаговое руководство. Создание визуализатора на C#
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Пошаговое руководство. Создание визуализатора на Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Удаленная отладка ASP.NET Core в Azure
           href: remote-debugging-azure.md
-        - name: 'Удаленная отладка проекта C# или Visual Basic'
+        - name: Удаленная отладка проекта C# или Visual Basic
           href: remote-debugging-csharp.md
         - name: Удаленная отладка проекта на C++
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Отображение данных трассировки WPF
                   href: how-to-display-wpf-trace-information.md
-            - name: 'Отладка F#'
+            - name: Отладка F#
               href: debugging-f-hash.md
         - name: Код C/C++
           items:

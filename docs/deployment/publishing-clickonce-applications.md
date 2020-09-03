@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536296"
 ---
 # <a name="publish-clickonce-applications"></a>Публикация приложений ClickOnce
@@ -61,7 +61,7 @@ ms.locfileid: "85536296"
 ### <a name="application-files-dialog-box"></a>Диалоговое окно "Файлы приложения"
  В этом диалоговом окне можно указать, способ категоризации файлов проекта для публикации, динамической загрузки и обновления. В нем находится таблица со списком файлов проекта, которые не исключены по умолчанию или имеют группу загрузки.
 
- Чтобы исключить файлы, пометьте файлы как файлы данных или необходимые компоненты и создайте группы файлов для условной установки в пользовательском интерфейсе Visual Studio, см. раздел [как указать, какие файлы публикуются с помощью ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Можно также пометить файлы данных с помощью средства Mage.exe. Дополнительные сведения см. в разделе [Практическое руководство. Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Чтобы исключить файлы, пометьте файлы как файлы данных или необходимые компоненты и создайте группы файлов для условной установки в пользовательском интерфейсе Visual Studio, см. раздел [как указать, какие файлы публикуются с помощью ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Можно также пометить файлы данных с помощью средства Mage.exe. Дополнительные сведения см. в разделе [инструкции. Включение файла данных в приложение ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
 ### <a name="prerequisites-dialog-box"></a>Диалоговое окно «Необходимые компоненты»
  В этом диалоговом окне определяются установленные необходимые компоненты, а также способ их установки. Дополнительные сведения см. [в разделе инструкции. Установка необходимых компонентов с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) и [необходимых компонентов](../ide/reference/prerequisites-dialog-box.md).
@@ -95,11 +95,11 @@ ms.locfileid: "85536296"
 |[Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Содержит сведения о пометке вспомогательных сборок как необязательных и загрузке только тех сборок, которые необходимы клиентскому компьютеру для использования текущих параметров культуры.|
 |[Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Содержит сведения об использовании служебных программ .NET Framework для развертывания приложения ClickOnce.|
 |[Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не требует повторного подписания и сохраняет сведения о фирменной символике](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Содержит сведения об использовании служебных программ .NET Framework для развертывания приложения ClickOnce без повторной подписи манифестов.|
-|[Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md)|Содержит сведения о процессе публикации 64-разрядного процессора путем изменения свойства **Целевой ЦП** или **Целевая платформа** в проекте.|
+|[Практическое руководство. настройку целевых платформ в проектах](../ide/how-to-configure-projects-to-target-platforms.md)|Содержит сведения о процессе публикации 64-разрядного процессора путем изменения свойства **Целевой ЦП** или **Целевая платформа** в проекте.|
 |[Пошаговое руководство. Включение запуска приложения ClickOnce на нескольких .NET Framework версиях](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Содержит сведения об установке и запуске приложения ClickOnce на нескольких версиях платформы .NET Framework.|
 |[Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Содержит сведения о создании настраиваемого установщика для установки приложения ClickOnce.|
 |[Практическое руководство. Публикация приложения WPF с включенными визуальными стилями](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Содержит пошаговые инструкции для устранения ошибки, которая появляется при попытке публикации приложения WPF с включенными визуальными стилями.|
 
-## <a name="see-also"></a>См. также
-- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>См. также раздел
+- [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Справочник по ClickOnce](../deployment/clickonce-reference.md)

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852131"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-API-интерфейс UML Visual Studio позволяет писать код для создания, чтения и обновления моделей и схем UML. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+UML API Visual Studio позволяет создавать код для разработки, чтения и обновления моделей и схем UML. Чтобы узнать, какие версии Visual Studio поддерживают модели UML, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  API описывается на страницах справочных материалов об API и в следующих разделах.
 
@@ -51,7 +51,7 @@ API-интерфейс UML Visual Studio позволяет писать код 
 ## <a name="the-api-assemblies"></a>Сборки API
  В этой таблице представлены сборки, позволяющие расширять инструменты UML, и пространства имен, которые рекомендуется использовать.
 
-|Assembly|Пространства имен|К чему предоставляет доступ|
+|Сборка|Пространства имен|К чему предоставляет доступ|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(Все)|Типы UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. Арчитектуретулс. Extensibility. UML|[Методы создания](../modeling/create-elements-and-relationships-in-uml-models.md)|
@@ -65,8 +65,8 @@ API-интерфейс UML Visual Studio позволяет писать код 
 |Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Ссылки на рабочие элементы](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Рабочие элементы и их поля](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Рабочие элементы и их поля](../modeling/define-a-work-item-link-handler.md).|
-|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Экспорт и импорт для компонентов MEF](../modeling/define-and-install-a-modeling-extension.md)|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Экспорт и импорт компонентов MEF](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[Простота управления коллекциями, особенно при работе с связями](../modeling/navigate-relationships-with-the-uml-api.md).|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Справочник по API для РАСШИРЯЕМости моделирования UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

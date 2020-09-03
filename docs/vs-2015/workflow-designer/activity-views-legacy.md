@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851480"
 ---
 # <a name="activity-views-legacy"></a>Представления действий (для прежних версий)
@@ -29,7 +29,7 @@ ms.locfileid: "75851480"
 
 |Параметры меню/вкладок|Описание|
 |----------------------|-----------------|
-|**View [тип действия]**|Выберите эту команду меню (вкладки) для просмотра графического представления по умолчанию выбранного действия.|
+|**Просмотр [тип действия]**|Выберите эту команду меню (вкладки) для просмотра графического представления по умолчанию выбранного действия.|
 |**Просмотр обработчика отмены**|Выберите это меню или режим вкладки, чтобы просмотреть [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) , связанный с выбранным действием.|
 |**Просмотр обработчика ошибок**|Выберите это меню или режим вкладки, чтобы просмотреть [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) , связанный с выбранным действием.|
 |**Просмотр обработчика компенсаций**|Выберите это меню или режим вкладки, чтобы просмотреть [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) , связанный с выбранным [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx).|
@@ -37,5 +37,5 @@ ms.locfileid: "75851480"
 
  Сведения о схожих представлениях см. в разделе [последовательные представления рабочего процесса (прежние версии)](../workflow-designer/sequential-workflow-views-legacy.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  Устаревшие представления рабочего процесса с последовательными [действиями рабочих процессов](../workflow-designer/legacy-workflow-activities.md) [(прежние версии)](../workflow-designer/sequential-workflow-views-legacy.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586800"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
@@ -84,7 +84,7 @@ ms.locfileid: "82586800"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Использование нового поставщика маркеров в проекте C# или Visual Basic
 
-1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER. Конструктор принимает идентификатор GUID * и PCV_PROVIDER\*.
+1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER. Конструктор принимает идентификатор GUID * и PCV_PROVIDER \* .
 
 2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.
 

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 665dc76126eac964f405be06605c40b5b30cc9a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532942"
 ---
 # <a name="visualize-code"></a>Визуализация кода
@@ -41,7 +41,7 @@ ms.locfileid: "85532942"
 
 |Сценарий|Статьи|
 |-|-|
-|**Анализ кода и его связей:**<br /><br /> Установите связи между определенными частями кода.<br /><br /> Получите общие сведения о связях в коде для всего решения.<br /><br /> **Примечание**. В этой версии Visual Studio термин *карта кода* используется вместо *графа зависимостей*.|-   [Сопоставьте зависимости в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Сопоставлять методы в стеке вызовов во время отладки](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Анализ кода и его связей:**<br /><br /> Установите связи между определенными частями кода.<br /><br /> Получите общие сведения о связях в коде для всего решения.<br /><br /> **Примечание**. В этой версии Visual Studio термин *карта кода* используется вместо *графа зависимостей*.|-   [Сопоставление зависимостей в решениях](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Сопоставлять методы в стеке вызовов во время отладки](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Анализ структуры классов:**<br /><br /> Визуализируйте структуру классов в проекте путем создания схем классов на основе кода.|[Практическое руководство. Добавление схем классов в проекты (конструктор классов)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
 |**Описание высокоуровневой структуры системы и проверка кода на соответствие этой структуре:**<br /><br /> Опишите высокоуровневую структуру системы и ее предполагаемые зависимости, создав схемы слоев. Проверьте код на соответствие этой структуре, чтобы убедиться в том, что зависимости в коде согласованы с ней.|-   [Создание схем слоев из кода](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)<br />-   [Схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br />-   [Проверка кода с помощью схем слоев](../modeling/validate-code-with-layer-diagrams.md)|
 |**Передача требований пользователей и сведений об архитектуре:**<br /><br /> Смоделируйте требования пользователей и архитектуру программной системы, нарисовав схемы UML: схемы деятельности, компонентов, классов, последовательностей и вариантов использования.|-   [Создание моделей для приложения](../modeling/create-models-for-your-app.md)<br />-   [Требования к модели пользователя](../modeling/model-user-requirements.md)<br />-   [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|
@@ -54,5 +54,5 @@ ms.locfileid: "85532942"
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Технические статьи и журналы**|[Форум MSDN по архитектуре](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Сценарий. изменение структуры с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [архитектура и архитектурное моделирование](../modeling/analyze-and-model-your-architecture.md) [Создание моделей для вашей модели приложения](../modeling/create-models-for-your-app.md) [требования пользователя](../modeling/model-user-requirements.md) [модель модели](../modeling/model-your-app-s-architecture.md) приложения [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
