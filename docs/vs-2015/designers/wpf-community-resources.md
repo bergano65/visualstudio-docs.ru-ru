@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843880"
 ---
 # <a name="wpf-community-resources"></a>Ресурсы сообщества по WPF
@@ -32,6 +32,6 @@ ms.locfileid: "75843880"
 
  [Центр разработчиков Windows Presentation Foundation](https://www.visualstudio.com/features/wpf-vs)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

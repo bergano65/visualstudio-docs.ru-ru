@@ -1,5 +1,5 @@
 ---
-title: IDebugСправка2:SetReferenceType Документы Майкрософт
+title: 'IDebugReference2:: Сетреференцетипе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720350"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-Устанавливает тип ссылки. Зарезервировано для последующего использования.
+Задает тип ссылки. Зарезервировано для будущего использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,11 +41,11 @@ int SetReferenceType ( 
 
 ## <a name="parameters"></a>Параметры
 `dwRefType`\
-(в) Значение из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисления, которое определяет тип ссылки.
+окне Значение из перечисления [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) , указывающее ссылочный тип.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

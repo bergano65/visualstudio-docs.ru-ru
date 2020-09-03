@@ -12,21 +12,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843877"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Разработка приложений рабочих процессов, предназначенных для платформы .NET 3.0 или .NET 3.5
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] предоставляет [!INCLUDE[wfd1](../includes/wfd1-md.md)] для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], предназначенных для [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Конструктор использует привычный пользовательский интерфейс [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для графического конструирования и отладки приложений рабочих процессов.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] предоставляет [!INCLUDE[wfd1](../includes/wfd1-md.md)] для создания [!INCLUDE[wf](../includes/wf-md.md)] приложений, предназначенных для [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . Конструктор использует привычный пользовательский интерфейс [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для графического конструирования и отладки приложений рабочих процессов.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)] также предоставляет доступ к конструктору рабочих процессов прежних версий, которые можно использовать при создании приложений, ориентированных на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Этот раздел содержит руководство по использованию конструктора прежних версий.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
  [Использование конструктора рабочих процессов для прежних версий](../workflow-designer/using-the-legacy-workflow-designer.md)
 
  [Отладка рабочих процессов прежних версий](../workflow-designer/debugging-legacy-workflows.md)
 
-## <a name="related-sections"></a>Связанные разделы
- [Windows Workflow Foundationое программное руководством](https://msdn2.microsoft.com/library/bb628474.aspx)
+## <a name="related-sections"></a>См. также
+ [Руководство по программированию Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)

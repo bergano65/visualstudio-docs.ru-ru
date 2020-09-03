@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f80f0898167de133d78d27d26f97d0ab8ced0b31
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843954"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Параллельное построение нескольких проектов с помощью MSBuild
@@ -30,14 +30,14 @@ ms.locfileid: "75843954"
 - Параметр задачи <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> в задаче MSBuild.  
   
 > [!NOTE]
-> Также на производительность сборки может влиять параметр командной строки **/verbosity** ( **/v**). Производительность сборки снижается, если установлен "подробный" или "диагностический" уровень детализации журнала сборки (обычно используются для устранения неполадок). Дополнительные сведения см. в [статье о получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md) и [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
+> Параметр **/verbosity** (**/v**) в командной строке может также влиять на производительность сборки. Производительность сборки снижается, если установлен "подробный" или "диагностический" уровень детализации журнала сборки (обычно используются для устранения неполадок). Дополнительные сведения см. в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md) и [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="maxcpucount-switch"></a>Ключ /maxcpucount  
  Если вы используете параметр `/maxcpucount` (или его короткую версию `/m`), MSBuild может создать заданное число процессов MSBuild.exe, которые будут выполняться параллельно. Эти процессы называются рабочими процессами. Каждый рабочий процесс использует отдельное ядро или процессор, если они доступны, и выполняет сборку проекта. Параллельно с этим другие доступные процессоры работают над другими проектами. Например, если для этого параметра задано значение 4, MSBuild создаст четыре рабочих процесса для сборки проекта.  
   
  Если параметр `/maxcpucount` включается в командную строку без указания значения, MSBuild использует значение, соответствующее числу процессоров в компьютере.  
   
- Дополнительные сведения об этом параметре, который появился в версии MSBuild 3.5, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
+ Дополнительные сведения об этом параметре, который появился в MSBuild 3,5, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
   
  Следующий пример сообщает MSBuild, что нужно использовать три рабочих процесса. С этой конфигурацией MSBuild сможет одновременно выполнять сборку трех проектов.  
   
@@ -72,7 +72,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 </MSBuild>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Использование нескольких процессоров при построении проектов](../msbuild/using-multiple-processors-to-build-projects.md)   
- [Написание средств ведения журнала с поддержкой многопроцессорности](../msbuild/writing-multi-processor-aware-loggers.md)   
- [Блог о настройке параллелизма сборки в C++](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)
+## <a name="see-also"></a>См. также:  
+ [Использование нескольких процессоров для построения проектов](../msbuild/using-multiple-processors-to-build-projects.md)   
+ [Написание средств ведения журнала с поддержкой нескольких процессоров](../msbuild/writing-multi-processor-aware-loggers.md)   
+ [Блог о настройке параллелизма сборки C++](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)

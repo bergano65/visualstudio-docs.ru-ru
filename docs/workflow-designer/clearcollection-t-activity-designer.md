@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711629"
 ---
 # <a name="clearcollectiont-activity-designer"></a>Конструктор действия ClearCollection\<T>
@@ -41,7 +41,7 @@ ms.locfileid: "88711629"
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Верно|Задает коллекцию для очистки от элементов. Эта коллекция имеет тип **ICollection \<TypeArgument> .** Чтобы указать коллекцию, введите выражение Visual Basic в таблице свойств.|
 |*TypeArgument*|Верно|Задает тип T для элементов, содержащихся в коллекции <xref:System.Collections.Generic.ICollection%601>. По умолчанию для этого типа *TypeArgument* задано значение **Int32**. Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в сетке свойств.|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Коллекция](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

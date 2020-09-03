@@ -1,5 +1,5 @@
 ---
-title: Модули Документы Майкрософт
+title: Модули | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738349"
 ---
 # <a name="modules"></a>Модули
-С точки зрения архитектуры отладчика *модуль:*
+В плане архитектуры отладчика это *модуль*:
 
-- Является физическим контейнером кода, например, исполняемым файлом или DLL.
+- — Это физический контейнер кода, например исполняемый файл или библиотека DLL.
 
-- Можно перезагрузить его символы и описать себя. Описания модулей отображаются в окне модулей IDE.
+- Может перезагружать свои символы и описывать саму себя. Описания модулей отображаются в окне Модули интегрированной среды разработки.
 
-- Представлен интерфейсом [IDebugModule2,](../../extensibility/debugger/reference/idebugmodule2.md) созданным движком отладки для описания модуля.
+- Представляется интерфейсом [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , созданным модулем отладки для описания модуля.
 
-## <a name="see-also"></a>См. также
-- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
+## <a name="see-also"></a>См. также раздел
+- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

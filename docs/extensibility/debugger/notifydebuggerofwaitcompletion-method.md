@@ -1,5 +1,5 @@
 ---
-title: УведомлятьDebuggerOfWaitCompletion Метод (ru) Документы Майкрософт
+title: Метод Нотифидебугжерофваиткомплетион | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738330"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>Уведомить DebuggerOfWaitCompletion метод
-Метод заплатиса, используемый в качестве цели точки разрыва отладчиком. Этот метод не должен быть подстроен или оптимизирован.
+# <a name="notifydebuggerofwaitcompletion-method"></a>Метод Нотифидебугжерофваиткомплетион
+Метод-заполнитель, используемый отладчиком в качестве цели точки останова. Этот метод не должен быть встроенным или оптимизированным.
 
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
@@ -30,10 +30,10 @@ ms.locfileid: "80738330"
 private void NotifyDebuggerOfWaitCompletion()
 ```
 
-## <a name="remarks"></a>Примечания
- Все операции соединения с задачей должны вызвать этот метод, если настроен бит уведомления отладчика.
+## <a name="remarks"></a>Remarks
+ Все операции JOIN с задачей должны вызывать этот метод, если задан бит уведомления отладчика.
 
 ## <a name="requirements"></a>Требования
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
