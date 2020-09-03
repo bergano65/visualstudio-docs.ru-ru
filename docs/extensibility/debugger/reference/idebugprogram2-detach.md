@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Detach Документы Майкрософт
+title: IDebugProgram2::D етач | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e177b1347981e420223ecafad18eedcf9de30234
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723057"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
-Отсоединяет отладку двигателя из программы.
+Отсоединяет модуль отладки от программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,8 +40,8 @@ int Detach();
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Отдельная программа продолжает работать, но она больше не является частью сеанса отладки. Больше никаких событий отладки программы не отправляются после отладки двигателя.
+## <a name="remarks"></a>Remarks
+ Отсоединенная программа продолжит выполняться, но больше не является частью сеанса отладки. Больше никакие события отладки программы не отправляются после отсоединения отладчика.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

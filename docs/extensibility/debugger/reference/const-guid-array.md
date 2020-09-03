@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY Документы Майкрософт
+title: CONST_GUID_ARRAY | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737637"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-Структура, соотвественная списка `GUID`s.
+Структура, содержащая список `GUID` s.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,24 +43,24 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Участники
 `dwCount`\
-Количество `GUID`s в `Members` массиве.
+Число объектов `GUID` в `Members` массиве.
 
 `Members`\
-Массив `GUID`с.
+Массив объектов `GUID` s.
 
-## <a name="remarks"></a>Примечания
-Эта структура передается методу [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и возвращается из методов [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents.](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+## <a name="remarks"></a>Remarks
+Эта структура передается в метод [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и возвращается из методов [жетпровидерпроцессдата](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [ватчфорпровидеревентс](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .
 
-Владелец экземпляра этой структуры несет ответственность за освобождение любой выделенной памяти.
+Владелец экземпляра этой структуры отвечает за освобождение выделенной памяти.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

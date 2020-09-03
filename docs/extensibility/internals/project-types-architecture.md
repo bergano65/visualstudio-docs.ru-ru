@@ -1,5 +1,5 @@
 ---
-title: Архитектура типов проектов Документы Майкрософт
+title: Архитектура типов проектов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706322"
 ---
 # <a name="project-types-architecture"></a>Архитектура типов проектов
-Данный раздел содержит подробную информацию [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]об архитектуре типов проектов в .
+В этом разделе содержатся подробные сведения об архитектуре типов проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)
 
- Перечисляет службы, которые может потреблять тип проекта, и интерфейсы, которые он должен реализовать.
+ Перечисляет службы, которые может использовать тип проекта, и интерфейсы, которые он должен реализовать.
 
 - [Основные компоненты модели проекта](../../extensibility/internals/project-model-core-components.md)
 
- Описывает типы интерфейсов проекта, которые необходимо реализовать и дополнительно реализовать для обеспечения дополнительной функциональности.
+ Описывает типы проектов интерфейсов, которые должны быть реализованы и могут быть реализованы для предоставления дополнительных функциональных возможностей.
 
 - [Когда следует создавать типы проектов](../../extensibility/internals/when-to-create-project-types.md)
 
- Помогает вам решить, когда необходимо создать тип проекта [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и когда вы можете использовать другую функцию расширяемости, такую как VSPackages и редакторы для достижения той же цели.
+ Помогает решить, когда необходимо создать тип проекта, а также можно использовать другие [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функции расширяемости, такие как пакеты VSPackage и редакторы, для достижения той же цели.
 
 - [Иерархии и выбор](../../extensibility/internals/hierarchies-and-selection.md)
 
- Описывает, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] как использует иерархии и контекст выбора для обеспечения согласованного и упрощенного пользовательского интерфейса.
+ Описывает использование [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархий и контекста выбора для обеспечения единообразного и упрощенного взаимодействия с пользователем.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
 - [Подтипы проектов](../../extensibility/internals/project-subtypes.md)
 
- Объясняет, как подтипы проекта позволяют настроить [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] поведение [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]проектных систем и .
+ Объясняет, как подтипы проектов позволяют настраивать поведение систем проектов [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] .
 
 - [Типы проектов](../../extensibility/internals/project-types.md)
 
- Обеспечивает обзор проектов в качестве основных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] строительных блоков интегрированной среды разработки (IDE). Ссылки предоставляются на дополнительные темы, объясняющие, как проекты контролируют строительство и компиляцию кода.
+ Содержит общие сведения о проектах в качестве основных стандартных блоков [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Имеются ссылки на дополнительные разделы, объясняющие, как проекты управляют сборкой и компиляцией кода.

@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO Документы Майкрософт
+title: CONTEXT_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737565"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
@@ -53,35 +53,35 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Сочетание флагов от него [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисления, которая определяет, какие поля заполнены<strong>.</strong>
+Сочетание флагов из [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) перечисление, которое указывает, какие поля заполняются<strong>.</strong>
 
 `bstrModuleUrl`\
-Название модуля, в котором находится контекст.
+Имя модуля, в котором находится контекст.
 
 `bstrFunction`\
-Имя функции, в котором находится контекст.
+Имя функции, в которой находится контекст.
 
 `posFunctionOffset`\
-Структура [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) которая определяет линию и столбец, смещение функции, связанной с контекстом кода.
+Структура [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , определяющая смещение строки и столбца функции, связанной с контекстом кода.
 
 `bstrAddress`\
-Адрес в коде, где находится данный контекст.
+Адрес в коде, где находится заданный контекст.
 
 `bstrAddressOffset`\
-Смещение адреса в коде, в котором находится данный контекст.
+Смещение адреса в коде, где находится заданный контекст.
 
 `bstrAddressAbsolute`\
-Абсолютный адрес в памяти, где находится данный контекст.
+Абсолютный адрес в памяти, где находится заданный контекст.
 
-## <a name="remarks"></a>Примечания
-Эта структура возвращается из вызова в метод [GetInfo.](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+## <a name="remarks"></a>Remarks
+Эта структура возвращается из вызова метода " [info](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) ".
 
-Типичное использование этой структуры в поддержку окна отладки **памяти.**
+Типичное использование этой структуры — поддержка окна отладки **памяти** .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON Документы Майкрософт
+title: BP_UNBOUND_REASON | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737775"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Дает причину, по которой точка разрыва была несвязана.
+Дает причину, по которой точка останова была непривязанной.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,21 +51,21 @@ public enum enum_BP_UNBOUND_REASON {
 Причина неизвестна.
 
 `BPUR_CODE_UNLOADED`\
-Код, содержащий точку разрыва, был выгружен.
+Код, содержащий точку останова, выгружен.
 
 `BPUR_BREAKPOINT_REBIND`\
-Точка разрыва была отскок в другое место. Это может произойти после операций «Отработка» и «Продолжить» при движении точки разрыва или при привязке точки разрыва к файлу с недопустимыми путями.
+Точка останова была повторно привязана к другому расположению. Это может произойти после операций Edit и Continue при перемещении точки останова или при привязке точки останова к файлу с путем, который больше не является допустимым.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Точка разрыва определяется как по ошибке после того, как она связана. Это происходит с управляемыми точками разрыва, условия которых больше не действуют.
+Точка останова определяется как ошибка после привязки. Это происходит с управляемыми точками останова, условия которых больше не действительны.
 
-## <a name="remarks"></a>Примечания
-Возвращается методом [GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+## <a name="remarks"></a>Remarks
+Возвращается методом [Reason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 Документы Майкрософт
+title: BP_REQUEST_INFO2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737879"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
-Содержит информацию, необходимую для реализации точки разрыва, включая GUID поставщика, ограничение и точку трассировки.
+Содержит сведения, необходимые для реализации точки останова, включая GUID поставщика, ограничение и точку трассировки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -65,55 +65,55 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Комбинация флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которая определяет, какие поля заполнены.
+Сочетание флагов из перечисления [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) , которое указывает, какие поля заполняются.
 
 `guidLanguage`\
 GUID языка.
 
 `bpLocation`\
-Структура [BP_LOCATION,](../../../extensibility/debugger/reference/bp-location.md) которая определяет тип местоположения точки разрыва.
+Структура [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) , указывающая тип расположения точки останова.
 
 `pProgram`\
-Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий приложение, в котором происходит точка разрыва.
+Объект [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий приложение, в котором находится точка останова.
 
 `bstrProgramName`\
-Название приложения, в котором происходит точка разрыва.
+Имя приложения, в котором происходит точка останова.
 
 `pThread`\
-Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий поток, в котором происходит точка разрыва.
+Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точка останова.
 
 `bstrThreadName`\
-Название потока, в котором происходит точка разрыва.
+Имя потока, в котором происходит точка останова.
 
 `bpCondition`\
-Структура [BP_CONDITION,](../../../extensibility/debugger/reference/bp-condition.md) описывающая условия, при которых будет гореть точка разрыва.
+Структура [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) , описывающая условия, при которых будет срабатывать точка останова.
 
 `bpPassCount`\
-Структура [BP_PASSCOUNT,](../../../extensibility/debugger/reference/bp-passcount.md) содержащая информацию о подсчете пропусков точки разрыва.
+Структура [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , содержащая сведения о количестве проходов точки останова.
 
 `dwFlags`\
-Комбинация флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, которая определяет флаги для запрошенной точки разрыва.
+Сочетание флагов из перечисления [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) , которое указывает флаги для запрошенной точки останова.
 
 `guidVendor`\
-GUID поставщика. Может быть нулевая стоимость.
+Идентификатор GUID поставщика. Может иметь значение null.
 
 `bstrConstraint`\
-Наименование ограничения точки разрыва. Может быть нулевая стоимость.
+Имя ограничения точки останова. Может иметь значение null.
 
 `bstrTracepoint`\
-Название точки трассировки. Может быть нулевая стоимость.
+Имя точки трассировки. Может иметь значение null.
 
-## <a name="remarks"></a>Примечания
-Эта структура возвращается методом [GetRequestInfo2.](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
+## <a name="remarks"></a>Remarks
+Эта структура возвращается методом [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

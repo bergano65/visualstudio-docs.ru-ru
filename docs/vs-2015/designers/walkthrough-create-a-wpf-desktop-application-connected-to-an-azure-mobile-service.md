@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664029"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure
@@ -21,16 +21,16 @@ ms.locfileid: "72664029"
 
 С помощью платформы Windows Presentation Foundation (WPF) можно быстро создать современное классическое приложение, использующее мобильную службу Azure для хранения и предоставления данных.
 
-## <a name="Requirements"></a> Необходимые компоненты
+## <a name="prerequisites"></a><a name="Requirements"></a> Предварительные требования
  Для выполнения этого пошагового руководства необходимо следующее:
 
 - Visual Studio 2015 — любая версия, поддерживающая разработку на основе WPF
 
-- Активная учетная запись Microsoft Azure
+- Активная учетная запись Microsoft Azure.
 
   - Зарегистрировать бесплатную пробную учетную запись можно [здесь](https://azure.microsoft.com/pricing/free-trial/).
 
-  - Вы можете активировать [преимущества подписки MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). С подпиской MSDN вы каждый месяц получаете кредиты, которые можно использовать для оплаты служб Azure.
+  - Вы можете активировать [преимущества подписки MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Ваша подписка MSDN каждый месяц приносит вам кредиты, которые можно использовать для оплаты использования служб Azure.
 
 ## <a name="create-a-project-and-add-references"></a>Создание проекта и добавление ссылок
  Сначала нужно создать проект WPF и добавить пакет NuGet, позволяющий подключаться к мобильным службам Azure.
@@ -49,7 +49,7 @@ ms.locfileid: "72664029"
 
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Добавление ссылки на пакет SDK для мобильных служб Microsoft Azure
 
-1. В **обозревателе решений**откройте контекстное меню узла **Ссылки** и выберите пункт **Управление пакетами NuGet**.
+1. В **Обозреватель решений**откройте контекстное меню узла **ссылки** и выберите пункт **Управление пакетами NuGet**.
 
 2. В диалоговом окне **диспетчере пакетов NuGet**выберите поле **Поиск** и введите `mobileservices`.
 
@@ -204,9 +204,9 @@ ms.locfileid: "72664029"
 
 #### <a name="to-create-and-modify-the-main-window"></a>Создание и изменение главного окна
 
-1. В **обозревателе решений**откройте файл **MainWindow.xaml** .
+1. В **обозревателе решений** откройте файл **MainWindow.xaml**.
 
-2. **Внимание**! Это действие необходимо выполнить только для C#. При использовании Visual Basic перейдите к следующему шагу. В нижней области конструктора найдите строку `xmlns:local=”clr-namespace:WPFQuickStart”` и замените ее следующим кодом XAML:
+2. **Важное** — Это действие необходимо выполнить только для C#. При использовании Visual Basic перейдите к следующему шагу. В нижней области конструктора найдите строку `xmlns:local=”clr-namespace:WPFQuickStart”` и замените ее следующим кодом XAML:
 
     ```xaml
     xmlns:local=”clr-namespace:WPFQuickStart.Common”
@@ -285,7 +285,7 @@ ms.locfileid: "72664029"
 
      На этом этапе интерфейс должен выглядеть так, как показано на рисунке ниже.
 
-     ![Окно MainWindow в конструкторе](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
+     ![Элемент MainWindow в конструкторе](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
 
     > [!NOTE]
     > При выполнении нескольких следующих процедур вы можете увидеть ошибки в **списке ошибок** , если он открыт. Не беспокойтесь, они пропадут после завершения остальных процедур.
@@ -484,7 +484,7 @@ ms.locfileid: "72664029"
     > [!NOTE]
     > Может потребоваться изменить число в URL-адресе. Для каждой мобильной службы в Microsoft Azure требуется уникальный URL-адрес.
 
-     При этом задается URL-адрес службы для `https://wpfquickstart01.azure-mobile.net/`.
+     При этом для службы задается URL-адрес `https://wpfquickstart01.azure-mobile.net/` .
 
 4. В списке **База данных** выберите один из вариантов. Так как это приложение, вероятно, будет использоваться не очень интенсивно, можно выбрать вариант **Создать бесплатную базу данных 20 МБ SQL** или бесплатную базу данных, уже связанную с вашей подпиской.
 
@@ -547,7 +547,7 @@ ms.locfileid: "72664029"
 
 #### <a name="to-run-the-application"></a>Запуск приложения
 
-1. В строке меню выберите **Отладка**, **Начать отладку** (или нажмите клавишу F5).
+1. В строке меню выберите **Отладка**, **начать отладку** (или нажмите клавишу F5).
 
 2. В диалоговом окне **Insert a TodoItem** (Добавление задачи) введите `Do something`и нажмите кнопку **Save** .
 
@@ -555,18 +555,18 @@ ms.locfileid: "72664029"
 
      Обратите внимание на то, что в списке **Query and Update Data** (Запрос и обновление данных) появились два пункта, как показано на рисунке ниже.
 
-     ![Элементы TODO добавляются в список.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
+     ![Элементы Todo добавляются в список.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
 
 4. Установите флажок **Do something else** в списке.
 
      Будет вызван метод **UpdateCheckedTodoItem** , и элемент будет удален как из списка, так и из базы данных.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
  Вы ознакомились с весьма простым примером классического приложения WPF, сервером для которого является Azure. Безусловно, реальное приложение скорее всего будет гораздо более сложными, но основные принципы те же. См. статью [WPF в .NET Framework](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx).
 
  Вы можете сделать пользовательский интерфейс более привлекательным, добавив цвета, фигуры, графические элементы и даже анимацию. См. раздел [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 
  С помощью мобильных служб Azure можно подключаться к существующим базам данных SQL или другим источникам данных. См. [документацию по мобильным службам](https://azure.microsoft.com/services/app-service/mobile/).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. мое первое классическое приложение WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md) [создает современные классические приложения с Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

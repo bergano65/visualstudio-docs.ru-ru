@@ -1,5 +1,5 @@
 ---
-title: 'Новое поколение проекта: Под капотом, часть вторая (ru) Документы Майкрософт'
+title: 'Создание нового проекта: внутри, часть 2 | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707021"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Создание нового проекта. Как это работает, часть 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Создание проекта: как это работает, часть 2
 
-В [новом проекте поколения: под капотом, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы видели, как **новый проект** диалог Box заселен. Предположим, что вы выбрали **приложение для Windows Visual C',** заполнили текстовые ящики **с именами** и **местоположениеми** и нажали OK.
+В [новом создании проекта: в части](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы увидели, как заполняется диалоговое окно **Новый проект** . Предположим, что вы выбрали **приложение Windows на Visual C#**, заполнили текстовые поля **имя** и **Расположение** и щелкнули ОК.
 
-## <a name="generating-the-solution-files"></a>Создание файлов решений
- Выбор шаблона приложения [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] направляет на распаковку и открытие соответствующего файла .vstemplate, а также на запуск шаблона для интерпретации команд XML в этом файле. Эти команды создают проекты и элементы проекта в новом или существующем решении.
+## <a name="generating-the-solution-files"></a>Создание файлов решения
+ При выборе шаблона приложения выполняется [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Распаковка и открытие соответствующего VSTEMPLATE-файла, а также запуск шаблона для интерпретации команд XML в этом файле. Эти команды создают проекты и элементы проекта в новом или существующем решении.
 
- Шаблон распаковывает исходные файлы, называемые шаблонами элементов, из той же папки .zip, в мещавей которого находится файл .vstemplate. Шаблон копирует эти файлы в новый проект, настраивая их соответствующим образом.
+ Шаблон распаковать исходные файлы, называемые шаблонами элементов, из той же ZIP-папки, в которой находится VSTEMPLATE-файл. Шаблон копирует эти файлы в новый проект, соответствующим образом настраивая их.
 
 ### <a name="template-parameter-replacement"></a>Замена параметра шаблона
- Когда шаблон копирует шаблон элемента для нового проекта, он заменяет любые параметры шаблона строками для настройки файла. Параметр шаблона — это специальный токен, который предшествует и сопровождается знаком доллара, например, $date$.
+ Когда шаблон копирует шаблон элемента в новый проект, он заменяет все параметры шаблона строками для настройки файла. Параметр шаблона — это специальный маркер, которому предшествует и следует знак доллара, например $date $.
 
- Рассмотрим типичный шаблон элемента проекта. Извлеките и изучите Program.cs в папке «Файлы» (Microsoft Visual Studio) 8-Common7-IDE-ProjectTemplates-CSharp-Windows-1033-WindowsApplication.zip.zip.
+ Рассмотрим типичный шаблон элемента проекта. Извлеките и изучите Program.cs в папке Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ namespace $safeprojectname$
 }
 ```
 
-При создании нового проекта приложения Windows под названием `$safeprojectname$` Simple шаблон заменяет параметр названием проекта.
+При создании нового проекта приложения Windows с именем Simple шаблон заменяет `$safeprojectname$` параметр именем проекта.
 
 ```csharp
 using System;
@@ -64,8 +64,8 @@ namespace Simple
 
  Полный список параметров шаблона см. в разделе [Параметры шаблона](../../ide/template-parameters.md).
 
-## <a name="a-look-inside-a-vstemplate-file"></a>Взгляд внутрь . Файл VSTemplate
- Базовый файл .vstemplate имеет этот формат
+## <a name="a-look-inside-a-vstemplate-file"></a>Взгляните внутри. Файл VSTemplate
+ Файл Basic. vstemplate имеет этот формат
 
 ```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>
 ```
 
- Мы рассмотрели \<раздел TemplateData> в [новом поколении проекта: Под капотом, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Теги в этом разделе используются для управления внешним видом диалогового окна **нового проекта.**
+ Мы рассматривали \<TemplateData> раздел, посвященный [созданию нового проекта: внутри его части](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Теги в этом разделе используются для управления внешним видом диалогового окна « **Создание проекта** ».
 
- Теги в \<разделе TemplateContent> контролировать генерацию новых проектов и элементов проекта. Вот \<раздел TemplateContent> из файла cswindowsapplication.vstemplate в папке «Файлы программы» Microsoft Visual Studio 8»Common7-IDE-ProjectTemplates,CSharp-Windows-1033»WindowsApplication.zip.zip.
+ Теги в \<TemplateContent> разделе управляют созданием новых проектов и элементов проектов. Ниже приведен \<TemplateContent> раздел из файла ксвиндовсаппликатион. vstemplate в папке \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```xml
 <TemplateContent>
@@ -112,26 +112,26 @@ namespace Simple
 </TemplateContent>
 ```
 
- Тег \<project> управляет генерацией проекта, \<а тег ProjectItem> управляет генерацией элемента проекта. Если параметр ReplaceParameters верен, шаблон будет настраивать все параметры шаблона в файле проекта или элементе. В этом случае все элементы проекта настроены, за исключением Settings.settings.
+ \<Project>Тег управляет созданием проекта, а \<ProjectItem> тег управляет созданием элемента проекта. Если параметр Реплацепараметерс имеет значение true, шаблон будет настраивать все параметры шаблона в файле проекта или элементе. В этом случае все элементы проекта настроены, за исключением Settings. Settings.
 
- Параметр TargetFileName определяет имя и относительный путь полученного файла или элемента проекта. Это позволяет создать структуру папок для вашего проекта. Если вы не укажете этот аргумент, элемент проекта будет иметь то же имя, что и шаблон элемента проекта.
+ Параметр Таржетфиленаме задает имя и относительный путь к результирующему файлу проекта или элементу. Это позволяет создать структуру папок для проекта. Если не указать этот аргумент, элемент проекта будет иметь то же имя, что и шаблон элемента проекта.
 
- Полученная структура папки приложений Windows выглядит следующим образом:
+ Итоговая структура папки приложения Windows выглядит следующим образом:
 
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
 
- Первый и \<единственный тег> Project в шаблоне гласит:
+ Первый и только \<Project> тег в шаблоне считывает:
 
 ```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
- Это поручает шаблону Нового проекта создать файл проекта Simple.csproj путем копирования и настройки элемента шаблона windowsapplication.csproj.
+ Это указывает новому шаблону проекта создать файл проекта Simple. csproj путем копирования и настройки элемента шаблона виндовсаппликатион. csproj.
 
-### <a name="designers-and-references"></a>Дизайнеры и справочники
- В папке «Разновидец решений» можно увидеть, что папка «Свойства» присутствует и содержит ожидаемые файлы. Но как насчет ссылок на проекты и зависимостей от файлов-дизайнеров, таких как Resources.Designer.cs на Resources.resx и Form1.Designer.cs Form1.cs?  Они настроены в файле Simple.csproj при его сгенерировании.
+### <a name="designers-and-references"></a>Конструкторы и ссылки
+ В обозреватель решений можно увидеть, что папка Properties существует и содержит ожидаемые файлы. Но как насчет ссылок проекта и зависимостей файлов конструктора, таких как Resources.Designer.cs to Resources. resx и Form1.Designer.cs to Form1.cs?  Они настраиваются в файле Simple. csproj при его создании.
 
- Вот \<> ItemGroup от Simple.csproj, который создает ссылки проекта:
+ Вот \<ItemGroup> из простого. csproj, который создает ссылки на проект:
 
 ```xml
 <ItemGroup>
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Вы можете видеть, что это шесть ссылок проекта, которые отображаются в Solution Explorer. Вот раздел из другого \<> ItemGroup. Многие строки кода были удалены для ясности. Этот раздел делает Settings.Designer.cs зависимым от settings.settings:
+ Вы видите, что это шесть ссылок на проекты, которые отображаются в обозреватель решений. Вот раздел из другого \<ItemGroup> . Для ясности было удалено несколько строк кода. Этот раздел делает Settings.Designer.cs зависимым от Settings. Settings:
 
 ```xml
 <ItemGroup>
@@ -154,7 +154,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Создание нового проекта. Как это работает, часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Создание проекта: как это работает, часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

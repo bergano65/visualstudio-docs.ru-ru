@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS Документы Майкрософт
+title: BPREQI_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737746"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
-Укажите информацию, которая будет получена о запросе точки разрыва.
+Задает сведения, которые необходимо получить о запросе точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -68,58 +68,58 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Поля
 `BPREQI_BPLOCATION`\
-Инициализация/использование `bpLocation` поля (точки разрыва) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) или [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.
+Инициализируйте или используйте `bpLocation` поле (расположение точки останова) структуры [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) или [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 `BPREQI_LANGUAGE`\
-Инициализация/использование `guidLanguage` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `guidLanguage` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_PROGRAM`\
-Инициализация/использование `pProgram` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `pProgram` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_PROGRAMNAME`\
-Инициализация/использование `bstrProgramName` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `bstrProgramName` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_THREAD`\
-Инициализация/использование `pThread` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `pThread` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_THREADNAME`\
-Инициализация/использование `bstrThreadName` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `bstrThreadName` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_PASSCOUNT`\
-Инициализация/использование `bpPassCount` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `bpPassCount` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_CONDITION`\
-Инициализация/использование `bpCondition` (условие брейк-пойнта) поля `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.
+Инициализируйте или используйте `bpCondition` поле (условие точки останова) `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_FLAGS`\
-Инициализация/использование `dwFlags` `BP_REQUEST_INFO` поля `BP_REQUEST_INFO2` или структуры.
+Инициализируйте или используйте `dwFlags` поле `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры или.
 
 `BPREQI_ALLOLDFIELDS`\
-Инициализация/использование всех `BP_REQUEST_INFO` полей для структуры.
+Инициализация/использование всех полей для `BP_REQUEST_INFO` структуры.
 
 `BPREQI_VENDOR`\
-`guidVendor` Инициализация/использование `BP_REQUEST_INFO2` области структуры.
+Инициализируйте или используйте `guidVendor` поле `BP_REQUEST_INFO2` структуры.
 
 `BPREQI_CONSTRAINT`\
-`bstrConstraint` Инициализация/использование `BP_REQUEST_INFO2` области структуры.
+Инициализируйте или используйте `bstrConstraint` поле `BP_REQUEST_INFO2` структуры.
 
 `BPREQI_TRACEPOINT`\
-`bstrTracepoint` Инициализация/использование `BP_REQUEST_INFO2` области структуры.
+Инициализируйте или используйте `bstrTracepoint` поле `BP_REQUEST_INFO2` структуры.
 
 `BPREQI_ALLFIELDS`\
-Определяет все поля для `BP_REQUEST_INFO2` структуры.
+Задает все поля для `BP_REQUEST_INFO2` структуры.
 
-## <a name="remarks"></a>Примечания
-Прошел в качестве аргумента [в GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) и [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) методы, чтобы указать, какие поля [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+Передается в качестве аргумента методам [жетрекуестинфо](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) и [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) , чтобы указать, какие поля структур [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) должны быть инициализированы.
 
-Эти флаги также используются для `BP_REQUEST_INFO` `BP_REQUEST_INFO2` указания того, какие поля и структуры используются и действительны при возврате каждой структуры.
+Эти флаги также используются для указания того, какие поля `BP_REQUEST_INFO` `BP_REQUEST_INFO2` структуры и используются и являются допустимыми при возврате каждой структуры.
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

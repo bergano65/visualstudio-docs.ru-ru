@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams | Документация Майкрософт
+title: Идиаенумдебугстреамс | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b56170ce1551f4443d511d4b6fde6c5d177d9c21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182521"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Перечисляет различные потоки отладки, содержащихся в источнике данных.  
+Перечисляет различные потоки отладки, содержащиеся в источнике данных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,26 +32,26 @@ IDiaEnumDebugStreams : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaEnumDebugStreams`.  
+ В следующей таблице показаны методы `IDiaEnumDebugStreams` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Извлекает `IEnumVARIANT` версии этот перечислитель.|  
-|[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Получает количество потоков для отладки.|  
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Извлекает `IEnumVARIANT` версию этого перечислителя.|  
+|[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Возвращает количество потоков отладки.|  
 |[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Извлекает поток отладки с помощью индекса.|  
 |[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Извлекает указанное число потоков отладки в последовательности перечисления.|  
-|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Пропускает заданное число потоков отладки в последовательности перечисления.|  
+|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Пропускает указанное число отладочных потоков в последовательности перечисления.|  
 |[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|  
   
-## <a name="remarks"></a>Примечания  
- Содержание потоки отладки зависит от реализации и форматов данных не документированы.  
+## <a name="remarks"></a>Remarks  
+ Содержимое отладочных потоков зависит от реализации, и форматы данных не документированы.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызовите [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) метод, чтобы получить `IDiaEnumDebugStreams` объекта.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите метод [IDiaSession:: жетенумдебугстреамс](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) , чтобы получить `IDiaEnumDebugStreams` объект.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить доступ к потоков данных, доступных из этого интерфейса. См. в разделе [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) интерфейс для реализации `PrintStreamData` функции.  
+ В этом примере показано, как получить доступ к потокам данных, доступным из этого интерфейса. Сведения о реализации функции см. в интерфейсе [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) `PrintStreamData` .  
   
 ```cpp#  
 void DumpAllDebugStreams( IDiaSession* pSession)  
@@ -81,13 +81,13 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

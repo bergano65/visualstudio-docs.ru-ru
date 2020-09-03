@@ -1,5 +1,5 @@
 ---
-title: Страницы вариантов и опций Документы Майкрософт
+title: Страницы параметров и параметров | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,73 +15,73 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d21bf6d5ab7e23047a02e1188fff9a47d0cbd58
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706841"
 ---
 # <a name="options-and-options-pages"></a>Параметры и страницы параметров
-Нажатие **параметры** в меню **Инструменты** открывает поле диалога **Параметры.** Параметры в этом диалоговом поле коллективно называются страницами вариантов. Управление деревом в навигационном стеле включает в себя категории опций, и каждая категория имеет страницы вариантов. При выборе страницы ее параметры отображаются в правом стене. Эти страницы позволяют изменить значения параметров, определяющих состояние VSPackage.
+При выборе пункта **Параметры** в меню **Сервис** открывается диалоговое окно **Параметры** . Параметры в этом диалоговом окне в совокупности называются страницами параметров. Элемент управления "дерево" в области навигации включает категории "Параметры", и каждая категория содержит страницы параметров. При выборе страницы ее параметры отображаются на правой панели. Эти страницы позволяют изменить значения параметров, определяющих состояние VSPackage.
 
-## <a name="support-for-options-pages"></a>Поддержка страниц опционов
- Класс <xref:Microsoft.VisualStudio.Shell.Package> обеспечивает поддержку для создания страниц вариантов и категорий вариантов. Класс <xref:Microsoft.VisualStudio.Shell.DialogPage> реализует страницу опций.
+## <a name="support-for-options-pages"></a>Поддержка страниц параметров
+ <xref:Microsoft.VisualStudio.Shell.Package>Класс обеспечивает поддержку для создания параметров страницы и категории параметров. <xref:Microsoft.VisualStudio.Shell.DialogPage>Класс реализует страницу параметров.
 
- Реализация по <xref:Microsoft.VisualStudio.Shell.DialogPage> умолчанию предлагает свои общедоступные свойства пользователю в общей сетке свойств. Вы можете настроить это поведение, переопределив различные методы на странице, чтобы создать пользовательскую страницу опций, которая имеет свой собственный пользовательский интерфейс (UI). Для получения дополнительной информации [см.](../../extensibility/creating-an-options-page.md)
+ Реализация по умолчанию <xref:Microsoft.VisualStudio.Shell.DialogPage> предлагает своим открытым свойствам пользователя в универсальной сетке свойств. Это поведение можно настроить, переопределив различные методы на странице, чтобы создать страницу настраиваемых параметров, имеющую собственный пользовательский интерфейс. Дополнительные сведения см. в разделе [Создание страницы параметров](../../extensibility/creating-an-options-page.md).
 
- Класс <xref:Microsoft.VisualStudio.Shell.DialogPage> <xref:Microsoft.VisualStudio.Shell.IProfileManager>реализует, который обеспечивает сохранение для страниц вариантов, а также для настроек пользователя. Реализации и <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> методы по умолчанию сохраняют изменения свойств в разделе пользователя реестра, если свойство может быть преобразовано в строку и из нее.
+ <xref:Microsoft.VisualStudio.Shell.DialogPage>Класс реализует <xref:Microsoft.VisualStudio.Shell.IProfileManager> , который обеспечивает сохраняемость для страниц параметров, а также для параметров пользователя. Реализации по умолчанию <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> методов и сохраняют изменения свойств в пользовательском разделе реестра, если это свойство можно преобразовать в строку и из нее.
 
-## <a name="options-page-registry-path"></a>Путь регистрации страниц вариантов
- По умолчанию путь реестра свойств, управляемых страницей <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>опционов, определяется путем объединения, слова DialogPage и имени типа класса страницы опционов. Например, класс страницы параметров может быть определен следующим образом.
+## <a name="options-page-registry-path"></a>Путь к реестру страницы параметров
+ По умолчанию путь реестра для свойств, управляемых страницей параметров, определяется сочетанием <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , словом DialogPage и именем типа для класса страницы Options. Например, класс страницы Options можно определить следующим образом.
 
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
 
- Если <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> это HKEY_CURRENT_USER-Программное обеспечение,Microsoft-VisualStudio,8.0Exp, то имя свойства и пары значений являются подключаемыми HKEY_CURRENT_USER»Software»Microsoft-VisualStudio-8.0Exp-DialogPage-Компания.OptionsPage.OptionsPageGeneral.
+ Если <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, то пары имен и значений свойств являются подразделами HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\dialogpage\company.OptionsPage.optionspagegeneral.
 
- Путь реестра самой страницы опционов <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>определяется путем объединения, слова, ToolsOptionsPages, а также категории страницы опций и имени. Например, если страница пользовательских опций имеет категорию, My Option Pages, и <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio,8.0Exp, то страница вариантов имеет ключ реестра, HKEY_LOCAL_MACHINE»-ПРОГРАММЫ-Microsoft-VisualStudio-8.0Exp-ToolsOptionsPages-My Option Pages-Custom.
+ Путь реестра страницы параметров определяется путем объединения <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , слова, тулсоптионспажес, а также категории и имени страницы параметров. Например, если на странице «настраиваемые параметры» есть страница «Категория», страницы «Мои параметры» и <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp, то на странице «Параметры» будет раздел реестра HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio\8.0exp\toolsoptionspages\my пажес\кустом.
 
-## <a name="toolsoptions-page-attributes-and-layout"></a>Атрибуты страницы инструментов/опционов и планировка
- Атрибут <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> определяет группировку пользовательских страниц опций в категории в навигационном дереве диалогового окна **Options.** Атрибут <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> связывает страницу опций с VSPackage, который предоставляет интерфейс. Рассмотрим следующий фрагмент кода:
+## <a name="toolsoptions-page-attributes-and-layout"></a>Атрибуты и макет страницы "Сервис/Параметры"
+ <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>Атрибут определяет группировку страниц настраиваемых параметров по категориям в дереве переходов диалогового окна " **Параметры** ". <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>Атрибут связывает страницу параметров с пакетом VSPackage, предоставляющим интерфейс. Рассмотрим следующий фрагмент кода:
 
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
 
- Это объявляет, что MyPackage предоставляет два варианта страницы, OptionsPageGeneral и OptionsPageCustom. В диалоговом поле **Options** обе страницы опций отображаются в категории **My Option Pages** как **общие** и **пользовательские**соответственно.
+ Это объявляет, что MyPackage предоставляет две страницы параметров: Оптионспажеженерал и Оптионспажекустом. В диалоговом окне **Параметры** обе страницы параметров отображаются в категории **Мои страницы** параметров как **Общие** и **Настраиваемые**соответственно.
 
-## <a name="option-attributes-and-layout"></a>Атрибуты опций и планировка
- Пользовательский интерфейс (UI), который предоставляетстраница, определяет внешний вид параметров на странице пользовательских опций. Макет, маркировка и описание параметров на странице общих опций определяются следующими атрибутами:
+## <a name="option-attributes-and-layout"></a>Атрибуты и макет параметров
+ Пользовательский интерфейс, предоставляемый страницей, определяет внешний вид параметров на странице настраиваемых параметров. Макет, метки и описание параметров на странице универсальные параметры определяются следующими атрибутами.
 
-- <xref:System.ComponentModel.CategoryAttribute>определяет категорию опциона.
+- <xref:System.ComponentModel.CategoryAttribute> Определяет категорию параметра.
 
-- <xref:System.ComponentModel.DisplayNameAttribute>определяет имя отображения опции.
+- <xref:System.ComponentModel.DisplayNameAttribute> Определяет отображаемое имя параметра.
 
-- <xref:System.ComponentModel.DescriptionAttribute>определяет описание опции.
+- <xref:System.ComponentModel.DescriptionAttribute> Определяет описание параметра.
 
   > [!NOTE]
-  > Эквивалентные атрибуты, SRCategory, LocDisplayName и SRDescription используют строковые ресурсы для локализации и определяются в [управляемом примере проекта.](/azure/devops/integrate/index)
+  > Эквивалентные атрибуты, Сркатегори, Локдисплайнаме и Срдескриптион, используют строковые ресурсы для локализации и определяются в [примере управляемого проекта](/azure/devops/integrate/index).
 
   Рассмотрим следующий фрагмент кода:
 
   [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
   [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
 
-  Опция OptionInteger отображается на странице опций в качестве **варианта Integer** в категории **My Options.** Если вариант выбран, описание, **Мой вариант integer**, появляется в поле описания.
+  Параметр Оптионинтежер отображается на странице Параметры в виде **целочисленного параметра** в категории **Мои параметры** . Если этот параметр выбран, в поле Описание отображается **параметр Description (мое целое число**).
 
-## <a name="accessing-options-pages-from-another-vspackage"></a>Доступ к страницам опционов из другого VSPackage
- VSPackage, который размещает и управляет страницей опций, может быть программно доступен из другого VSPackage с помощью модели автоматизации. Например, в следующем коде VSPackage зарегистрирован как хостинг страницы опции.
+## <a name="accessing-options-pages-from-another-vspackage"></a>Доступ к страницам параметров из другого пакета VSPackage
+ Пакет VSPackage, на котором размещается страница параметров и управляет им, может быть программно доступен из другого пакета VSPackage с помощью модели автоматизации. Например, в следующем коде пакет VSPackage регистрируется как размещенная страница параметров.
 
  [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
 
- Следующий фрагмент кода получает значение OptionInteger от MyOptionPage:
+ Следующий фрагмент кода получает значение Оптионинтежер из Мйоптионпаже:
 
  [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
 
- Когда <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> атрибут регистрирует страницу опций, страница регистрируется под `SupportsAutomation` ключом AutomationProperties, если аргумент атрибута . `true` Автоматизация проверяет эту запись реестра, чтобы найти связанный VSPackage, и автоматизация затем получает доступ к свойству через страницу размещенных опций, в данном случае, My Grid Page.
+ Когда <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> атрибут регистрирует страницу параметров, эта страница регистрируется в ключе AutomationProperties, если `SupportsAutomation` аргумент атрибута имеет значение `true` . Автоматизация проверяет эту запись реестра, чтобы найти соответствующий пакет VSPackage, а затем автоматизирует доступ к свойству на странице "размещенные параметры", в данном случае на странице "Сетка".
 
- Путь реестра свойства автоматизации определяется <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>путем объединения, слова, AutomationProperties, а также категории страницы опций и имени. Например, если страница опций имеет категорию Моя Категория, <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>имя страницы My Grid, а также , HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-8.0Exp, то свойство автоматизации имеет ключ реестра, HKEY_LOCAL_MACHINE»SOFTWARE-Microsoft-VisualStudio-8.0Exp-AutomationProperties-My Category-My Grid Page.
+ Путь реестра для свойства службы автоматизации определяется путем объединения <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , слова, AutomationProperties, а также категории и имени страницы параметров. Например, если на странице «Параметры» имеется категория «моя Категория», имя страницы «Моя сетка» и <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp, то свойство автоматизации содержит раздел реестра HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio\8.0exp\automationproperties\my Категори\ми Page (сетка).
 
 > [!NOTE]
-> Каноническое название, My Category.My Grid Page, является значением подключаемого ключа "Имя".
+> Каноническое имя, страница Category.My Grid, является значением подраздела имени этого раздела.

@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS Документы Майкрософт
+title: BPRESI_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737720"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
-Определяет информацию, которая будет получена об успешном разрешении точки разрыва.
+Задает сведения, которые должны быть получены об успешном разрешении точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,28 +48,28 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>Поля
 `BPRESI_BPRESLOCATION`\
-Инициализация/использование `bpResLocation` поля (место расположения точки разрыва) [структуры BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
+Инициализируйте или используйте `bpResLocation` поле (расположение разрешения точки останова) структуры [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .
 
 `BPRESI_PROGRAM`\
-Инициализация/использование `pProgram` `BP_RESOLUTION_INFO` поля структуры.
+Инициализируйте или используйте `pProgram` поле `BP_RESOLUTION_INFO` структуры.
 
 `BPRESI_THREAD`\
-Инициализация/использование `pThread` `BP_RESOLUTION_INFO` поля структуры.
+Инициализируйте или используйте `pThread` поле `BP_RESOLUTION_INFO` структуры.
 
 `BPRESI_ALLFIELDS`\
-Определяет все поля.
+Задает все поля.
 
-## <a name="remarks"></a>Примечания
-Прошел метод [GetResolutionInfo,](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) чтобы указать, какие поля [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+Передается в метод [жетресолутионинфо](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) , чтобы указать, какие поля структуры [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) должны быть инициализированы.
 
-Эти флаги также используются для `BP_RESOLUTION_INFO` указания того, какие поля структуры используются и действительны при возврате этой структуры.
+Эти флаги также используются для указания того, какие поля `BP_RESOLUTION_INFO` структуры используются и являются допустимыми при возврате этой структуры.
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

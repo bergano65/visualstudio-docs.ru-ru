@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE Документы Майкрософт
+title: BUILT_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737696"
 ---
 # <a name="built_type"></a>BUILT_TYPE
-Эта структура определяет информацию о типе поля, взятом из метаданных.
+Эта структура задает сведения о типе поля, взятого из метаданных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,25 +45,25 @@ public struct BUILT_TYPE {
 
 ## <a name="members"></a>Участники
 `ulAppDomainID`\
-Id приложения, из которого пришел символ. Это используется для однозначной идентификации экземпляра приложения.
+Идентификатор приложения, от которого получен символ. Используется для уникальной идентификации экземпляра приложения.
 
 `guidModule`\
-GUID модуля, содержащего это поле.
+Идентификатор GUID модуля, содержащего это поле.
 
 `pUnderlyingField`\
-Объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) идентифицирующий основное поле, связанное с этим построенным полем.
+Объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , определяющий базовое поле, связанное с этим построенным полем.
 
-## <a name="remarks"></a>Примечания
-Эта структура появляется как часть соединения в `dwKind` [структуре TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) когда `TYPE_KIND_BUILT` поле `TYPE_INFO` структуры устанавливается (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисления).
+## <a name="remarks"></a>Remarks
+Эта структура отображается как часть объединения в структуре [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) , если `dwKind` поле `TYPE_INFO` структуры имеет `TYPE_KIND_BUILT` значение (Value из перечисления [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

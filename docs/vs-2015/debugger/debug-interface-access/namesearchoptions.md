@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions | Документация Майкрософт
+title: Намесеарчоптионс | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d721ebc5849fc459d24173ad0500b4b1c12260f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182969"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Указывает параметры поиска для символов и имена файлов.  
+Задает параметры поиска для символов и имен файлов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,22 +50,22 @@ enum NameSearchOptions { 
  Параметры не указаны.  
   
  `nsfCaseSensitive`  
- Применяет совпадения имени, с учетом регистра.  
+ Применяет совпадение имен с учетом регистра.  
   
  `nsfCaseInsensitive`  
- Применяет совпадение имя без учета регистра.  
+ Применяет совпадение имен без учета регистра.  
   
  `nsfFNameExt`  
- Обрабатывает имена как пути и применяет имяфайла.расширение совпадения имени.  
+ Обрабатывает имена как пути и применяет совпадение имен filename. ext.  
   
  `nsfRegularExpression`  
- Применяется на совпадение имени с учетом регистра, с помощью звездочки (*) и вопросительные знаки (?) в качестве символов-шаблонов.  
+ Применяет совпадение имен с учетом регистра, используя звездочки (*) и вопросительные знаки (?) в качестве подстановочных знаков.  
   
  `nsfUndecoratedName`  
- Применяется только к символам, которые внешних и внутренних имен.  
+ Применяется только к символам, имеющим недекорированные и декорированные имена.  
   
-## <a name="remarks"></a>Примечания  
- Значения из этого перечисления передаются следующие методы:  
+## <a name="remarks"></a>Remarks  
+ Значения из этого перечисления передаются следующим методам:  
   
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -74,10 +74,10 @@ enum NameSearchOptions { 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: dia2. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: Финдчилдрен](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession:: Финдфиле](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
