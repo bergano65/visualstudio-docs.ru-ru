@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c58c218991226a954185853097dc81da36c69ed6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543693"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717. Только перечисления FlagsAttribute должны иметь имена во множественном числе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
@@ -55,5 +55,5 @@ ms.locfileid: "85543693"
 
  [CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.FlagsAttribute?displayProperty=fullName>[Конструктор перечислений](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

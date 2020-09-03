@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851532"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
@@ -21,7 +21,7 @@ ms.locfileid: "75851532"
 
 На данном шаге производится добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Затем на форму добавляются кнопки.
 
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений на Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) или в [руководстве 1. Создание средства просмотра изображений C# в видеоролике 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этой статьи см. [руководство 1. Создание средства просмотра изображений на Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) или [в учебнике 1. Создание средства просмотра изображений на C# — видео 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Добавление элементов управления в форму
 

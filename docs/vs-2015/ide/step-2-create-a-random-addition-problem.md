@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54dee9c25fc9b8ddf1f8cf6c54c40d68ce53dc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671859"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Шаг 2. Создание задачи на сложение случайных чисел
@@ -22,7 +22,7 @@ ms.locfileid: "72671859"
 Во второй части этого урока вам предстоит реализовать логику головоломки, добавив арифметические задачи на основе случайных чисел. Также необходимо будет создать метод с именем `StartTheQuiz()`, который проставляет числа для задач и запускает таймер обратного отсчета. Далее в этом уроке вы добавите задачи на вычитание, умножение и деление.
 
 > [!NOTE]
-> Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор учебника см. в статье [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) (Учебное руководство 2. Создание ограниченной по времени математической головоломки).
+> Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор этого руководства см. в разделе [учебник 2. Создание математической головоломки с течением времени](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ### <a name="to-create-a-random-addition-problem"></a>Создание задачи на сложение случайных чисел
 
@@ -95,6 +95,6 @@ ms.locfileid: "72671859"
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий шаг руководства см. в разделе [Step 3: Add a Countdown Timer](../ide/step-3-add-a-countdown-timer.md) (Шаг 3. Добавление таймера с обратным отсчетом).
+- Следующий шаг руководства см. в разделе [Шаг 3. Добавление таймера обратного отсчета](../ide/step-3-add-a-countdown-timer.md).
 
-- Предыдущий шаг руководства см. в разделе [Step 1: Create a Project and Add Labels to Your Form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md) (Шаг 1. Создание проекта и добавление в форму элементов управления Label).
+- Предыдущий шаг руководства см. в разделе [Шаг 1. Создание проекта и добавление меток в форму](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

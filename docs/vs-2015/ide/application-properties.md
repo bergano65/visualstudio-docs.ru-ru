@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f4777bf6c94997b9291bb84fed07befa197a8c5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620316"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете задать общие свойства приложений Visual Basic, C# и F#, такие как тип приложения, автоматически запускаемый объект и сведения о сборке, в области **Приложение** **конструктора проектов**.
+Вы можете задать общие свойства приложений Visual Basic, C# и F#, такие как тип приложения, автоматически запускаемый объект и сведения о сборке, в области **Приложение****конструктора проектов**.
 
  В области **Приложение** можно выполнить следующие задачи:
 
@@ -53,8 +53,8 @@ ms.locfileid: "72620316"
 
   Задачи, доступные для приложения, зависят от используемого языка разработки.
 
-## <a name="in-this-section"></a>В этом разделе
- [Практическое руководство. Задание значка приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+## <a name="in-this-section"></a>в этом разделе
+ [Как указать значок приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
-## <a name="see-also"></a>См. также
- [Страница "приложение" в конструкторе проектов (Visual Basic) страница "](../ide/reference/application-page-project-designer-visual-basic.md) [приложениеC#](../ide/reference/application-page-project-designer-csharp.md) " в конструкторе проектов () [Общие сведения о конструкторе проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md) [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md) [Управление свойствами отладки](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [Управление свойствами компиляции](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) управление [ресурсами приложения (.NET)](../ide/managing-application-resources-dotnet.md) [Управление параметрами приложения (.NET)](../ide/managing-application-settings-dotnet.md)
+## <a name="see-also"></a>См. также:
+ [Страница "приложение", конструктор проектов (Visual Basic) страница "](../ide/reference/application-page-project-designer-visual-basic.md) приложение" в конструкторе проектов [(C#)](../ide/reference/application-page-project-designer-csharp.md) [Общие сведения о конструкторе проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md) [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md) [Управление свойствами отладки](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [Управление свойствами компиляции](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [Управление приложениями ресурсы (.NET)](../ide/managing-application-resources-dotnet.md) [Управление параметрами приложения](../ide/managing-application-settings-dotnet.md) (.NET)

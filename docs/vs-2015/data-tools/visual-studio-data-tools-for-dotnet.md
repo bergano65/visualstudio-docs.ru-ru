@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d591595c65f00e0198ded9492ae0b8399e363e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670103"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools для .NET
@@ -21,7 +21,7 @@ ms.locfileid: "72670103"
 
 Visual Studio и .NET Framework предоставляют обширную поддержку API и средств для подключения к базам данных, моделирования данных в памяти и отображения данных в пользовательском интерфейсе.  .NET Framework классы, предоставляющие функциональные возможности доступа к данным, называются [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, а также инструменты для работы с данными в Visual Studio изначально разрабатывались в основном для поддержки реляционных баз данных и XML. Эти дни, многие поставщики баз данных NoSQL или сторонние лица предлагают поставщиков ADO.NET.
 
- Visual Studio 2015 с обновлением 2 включает последние обновления [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), которые обеспечивают поддержку новейших функций в [базе данных SQL](https://azure.microsoft.com/services/sql-database/) Azure и [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) поддерживает ADO.NET, за исключением наборов данных и связанных типов. Если вы нацелены на .NET Core и требуется уровень объектно-реляционного сопоставления (ORM), используйте [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
+ Visual Studio 2015 с обновлением 2 включает последние обновления            [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), которые обеспечивают поддержку новейших функций в [базе данных SQL](https://azure.microsoft.com/services/sql-database/) Azure и [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) поддерживает ADO.NET, за исключением наборов данных и связанных типов. Если вы нацелены на .NET Core и требуется уровень объектно-реляционного сопоставления (ORM), используйте [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
 
  На следующей диаграмме показано упрощенное представление базовой архитектуры.
 
@@ -41,7 +41,7 @@ Visual Studio и .NET Framework предоставляют обширную по
 
    Можно пропустить шаг 3 и программировать приложение .NET для выполнения команд непосредственно в базе данных, а не использовать модель. В этом случае вы найдете здесь документацию: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Обратите внимание, что по-прежнему можно использовать мастер настройки источника данных и конструкторы для создания кода привязки данных при заполнении собственных объектов в памяти, а затем привязывать к этим объектам элементы управления ИП привязки данных.
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>В этом разделе
 
 - [Создание простого приложения для работы с данными с помощью ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)
 
@@ -51,7 +51,7 @@ Visual Studio и .NET Framework предоставляют обширную по
 
 - [Средства работы с моделью EDM в Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)
 
-- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 
@@ -59,11 +59,11 @@ Visual Studio и .NET Framework предоставляют обширную по
 
 - [Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)
 
-- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
 - [Создание баз данных и приложений уровня данных, а также управление ими в Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)
 
 - [Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

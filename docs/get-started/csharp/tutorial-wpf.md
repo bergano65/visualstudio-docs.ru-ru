@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419280"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Учебник. Создание простого приложения на C\#
@@ -64,9 +64,9 @@ ms.locfileid: "85419280"
 
 1. Создайте новый проект. В строке меню выберите **Файл** > **Новый** > **Проект**.
 
-     ![В строке меню выберите Файл, Создать, Проект](../media/exploreide-filenewproject.png "Снимок экрана: строка меню, в которой нужно выбрать Файл, Создать, Проект")
+     ![В строке меню выберите "Файл", "Создать", "Проект"](../media/exploreide-filenewproject.png "Снимок экрана: строка меню, в которой нужно выбрать Файл, Создать, Проект")
 
-1. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual C#**  > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)** . Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
+1. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual C#** > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)**. Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
 
      ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/exploreide-newprojectcsharp.png "Снимок экрана: шаблон приложения WPF в диалоговом окне Создать проект")
 
@@ -78,7 +78,7 @@ ms.locfileid: "85419280"
 
 1. На начальном экране выберите **Создать проект**.
 
-   ![Просмотр окна Создание проекта](../../get-started/media/vs-2019/start-window-create-new-project.png "Снимок экрана: окно "Создание проекта"")
+   ![Просмотр окна "Создание проекта"](../../get-started/media/vs-2019/start-window-create-new-project.png "Снимок экрана: окно "Создание проекта"")
 
 1. На экране **Создание проекта** выполните поиск по запросу "WPF", выберите в результатах **Приложение WPF (.NET Core)** и нажмите кнопку **Далее**.
 
@@ -355,6 +355,6 @@ Visual Studio создает решение и проект HelloWPFApp, а в *
 > [!div class="nextstepaction"]
 > [Другие руководства по WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Советы по повышению производительности](../../ide/productivity-features.md)

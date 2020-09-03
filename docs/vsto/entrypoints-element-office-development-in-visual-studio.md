@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543576"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент entryPoint (разработка решений Office в Visual Studio)
@@ -42,14 +42,14 @@ ms.locfileid: "85543576"
 
  Элемент `entryPoints` имеет указанный ниже атрибут.
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |идентификатор|Требуется для многопроектного развертывания. Имя решения Office. Идентификатор не может содержать знак равенства (=).|
 
  У элемента`entryPoints` имеются перечисленные ниже элементы.
 
 ### <a name="entrypoint"></a>entryPoint
- Обязательный элемент. Роль `entryPoint` элемента в `vstav3` пространстве имен определяется в [&#60;entryPoint&#62; элемент &#40;разработке решений Office в Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+ Обязательный. Роль `entryPoint` элемента в `vstav3` пространстве имен определяется в [&#60;entryPoint&#62; элемент &#40;разработке решений Office в Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
@@ -171,7 +171,7 @@ ms.locfileid: "85543576"
 </vstav3:entryPoints>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

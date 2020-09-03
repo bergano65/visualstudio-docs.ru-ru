@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS Документы Майкрософт
+title: MODULE_INFO_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 20a11488c32b4259105e346e7fa28fd706e48a48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714233"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
-Определяет состояние символов для модуля.
+Указывает состояние символов для модуля.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,15 +42,15 @@ public enum enum_MODULE_INFO_FLAGS {
 
 ## <a name="fields"></a>Поля
  `MIF_SYMBOLS_LOADED`\
- По крайней мере один набор символов был загружен модулем (в противном случае символы не были загружены).
+ Модуль загрузил по крайней мере один набор символов (в противном случае символы не были загружены).
 
-## <a name="remarks"></a>Примечания
- Это значение возвращается методом [GetSymbolSearchInfo.](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)
+## <a name="remarks"></a>Remarks
+ Это значение возвращается методом [жетсимболсеарчинфо](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

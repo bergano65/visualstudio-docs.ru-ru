@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a37ff592784d7c12c245337983808bd4064dc922
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669992"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Один или несколько выбранных объектов базы данных возвращает схему, не соответствующую схеме целевого класса
@@ -29,5 +29,5 @@ ms.locfileid: "72669992"
 
 2. Выберите объект базы данных, который возвращает данные, не соответствующие схеме целевого класса (класс объекта базы данных, который сбрасывается в реляционный конструктор объектов).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [LINQ to SQL средства в](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [методах DataContext Visual Studio (реляционный конструктор)](../data-tools/datacontext-methods-o-r-designer.md) [как создать методы DataContext, сопоставленные с хранимыми процедурами и функциями (реляционный конструктор r)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

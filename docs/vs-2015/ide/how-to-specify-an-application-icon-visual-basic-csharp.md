@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136fd00bea736af0f0c589c28eae597ff8fd558e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670692"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Практическое руководство. Задание значка приложения (Visual Basic, C#)
@@ -34,13 +34,13 @@ ms.locfileid: "72670692"
 
 1. В **обозревателе решений** выберите узел проекта (не узел **Решение**).
 
-2. В строке меню выберите **Проект**, **Свойства**.
+2. В строке меню выберите **проект**, **свойства**.
 
 3. Когда откроется **Конструктор проектов**, выберите вкладку **Приложение**.
 
 4. **(Visual Basic)** В списке **Значок** выберите файл значка (ICO).
 
-     **C#** Рядом со списком **Значок** нажмите кнопку **\<Обзор... >** , а затем перейдите в расположение файла значка.
+     **C#** Рядом со списком **значок** нажмите **\<Browse...>** кнопку, а затем перейдите к расположению файла значка, который вам нужен.
 
-## <a name="see-also"></a>См. также раздел
- [Страница "приложение", конструктор проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Страница "приложение"C#в конструкторе проектов ()](../ide/reference/application-page-project-designer-csharp.md) [Управление свойствами приложения](../ide/application-properties.md) [как добавить или удалить ресурсы](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+## <a name="see-also"></a>См. также:
+ [Страница "приложение", конструктор проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [Страница "приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md) [Управление свойствами приложения](../ide/application-properties.md) [руководство. Добавление и удаление ресурсов](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

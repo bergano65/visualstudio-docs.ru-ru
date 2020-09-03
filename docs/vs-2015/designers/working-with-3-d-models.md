@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 555a9065e76d93a4c8dfbfc1acae30bfe4ea2a5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663963"
 ---
 # <a name="working-with-3-d-models"></a>Работа с трехмерными моделями
@@ -28,9 +28,9 @@ ms.locfileid: "72663963"
 
  В редакторе моделей также можно просмотреть существующие трехмерные модели, созданные с помощью полнофункциональных средств, и изменить их, если наблюдаются проблемы с ресурсами рисунков.
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
-|Заголовок|Описание|
+|Title|Description|
 |-----------|-----------------|
 |[Редактор моделей](../designers/model-editor.md)|Описывает порядок использования редактора моделей для работы с трехмерными моделями.|
 |[Примеры редактора моделей](../designers/model-editor-examples.md)|Содержит ссылки на статьи, в которых демонстрируется использование редактора моделей для выполнения распространенных задач трехмерного моделирования.|

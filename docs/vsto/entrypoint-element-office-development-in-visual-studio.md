@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543602"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент entryPoint (разработка решений Office в Visual Studio)
@@ -41,14 +41,14 @@ ms.locfileid: "85543602"
 
  Элемент `entryPoint` имеет перечисленные ниже атрибуты.
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
-|`class`|Обязательный элемент. Идентифицирует сборку настройки для выполнения. Синтаксис для этого атрибута: *ИмяПространстваИмен.ИмяКласса*.|
+|`class`|Обязательный. Идентифицирует сборку настройки для выполнения. Синтаксис для этого атрибута: *ИмяПространстваИмен.ИмяКласса*.|
 
  Объект`entryPoint` имеет следующий элемент.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Обязательный элемент. Элемент `assemblyIdentity` в пространстве имен `vstav3` ссылается на существующий элемент `assemblyIdentity` в манифесте приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
+ Обязательный. Элемент `assemblyIdentity` в пространстве имен `vstav3` ссылается на существующий элемент `assemblyIdentity` в манифесте приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
  Роль `assemblyIdentity` и ее атрибуты определены в [&#60;assemblyIdentity&#62; элементе &#40;ClickOnce Application&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
 
@@ -112,7 +112,7 @@ ms.locfileid: "85543602"
 </vstav3:entryPoint>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

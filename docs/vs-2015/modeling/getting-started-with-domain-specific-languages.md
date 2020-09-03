@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543199"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Начало работы с доменными языками
@@ -94,7 +94,7 @@ ms.locfileid: "85543199"
 
 - **Проект DslPackage** Этот проект содержит код, позволяющий открывать и редактировать экземпляры DSL в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Запуск DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Запуск DSL
  Вы можете запустить решение DSL, как только оно будет создано. Позже определение DSL можно изменить постепенно, повторно выполнив решение после каждого изменения.
 
 #### <a name="to-experiment-with-the-dsl"></a>Эксперименты с DSL
@@ -383,7 +383,7 @@ ms.locfileid: "85543199"
 
  Дополнительные сведения см. в разделе [Развертывание решения на предметно-ориентированном языке](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Удаление старого экспериментального DSL
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Удаление старого экспериментального DSL
  Если вы создали экспериментальный домен, который больше не нужен, его можно удалить с компьютера, переустановив [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] экспериментальный экземпляр.
 
  Это приведет к удалению с компьютера всех экспериментальных и других экспериментальных [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширений. Это расширения, которые были выполнены в режиме отладки.
@@ -396,5 +396,5 @@ ms.locfileid: "85543199"
 
 2. Перестройте все экспериментальные или другие экспериментальные [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] расширения, которые вы по-прежнему хотите использовать.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md) определение [пакета SDK для висуализатон и моделирования](https://www.microsoft.com/download/details.aspx?id=48148) [для определенного домена](../modeling/how-to-define-a-domain-specific-language.md)

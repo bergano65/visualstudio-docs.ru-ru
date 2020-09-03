@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620335"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Операторы расширенного поиска в выражениях поиска
@@ -31,9 +31,9 @@ ms.locfileid: "72620335"
 > [!WARNING]
 > Операторы расширенного поиска вводятся с двоеточием на конце и без промежуточных пробелов перед двоеточием: только так поисковая система сможет распознать их.
 
-|Условие, которое требуется найти|Использовать|Пример|Результат|
+|Условие, которое требуется найти|Использование|Пример|Результат|
 |-------------------|---------|-------------|------------|
-|Термин в заголовке раздела|title:|title:binaryreader|Разделы, содержащие "binaryreader" в заголовках.|
+|Термин в заголовке раздела|заголовок:|title:binaryreader|Разделы, содержащие "binaryreader" в заголовках.|
 |Термин в примере кода|code:|code:readdouble|Разделы, содержащие"readdouble" в примере кода.|
 |Термин в примере конкретного языка программирования|code:vb:|code:vb:string|Разделы, содержащие "string", в примере Visual Basic.|
 |Раздел, связанный с конкретным ключевым словом индекса|keyword:|keyword:readbyte|Разделы, связанные с ключевым словом индекса "readbyte"|
@@ -49,5 +49,5 @@ ms.locfileid: "72620335"
 |JavaScript|code:javascript<br /><br /> или<br /><br /> code:js|
 |XAML|code:xaml|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Логические операторы в выражениях поиска](../ide/logical-operators-in-search-expressions.md) [Советы по полнотекстовому поиску](../ide/full-text-search-tips.md)

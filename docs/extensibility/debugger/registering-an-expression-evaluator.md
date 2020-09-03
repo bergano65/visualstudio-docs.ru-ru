@@ -1,5 +1,5 @@
 ---
-title: Регистрация оценщика экспрессии Документы Майкрософт
+title: Регистрация средства оценки выражений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713198"
 ---
-# <a name="register-an-expression-evaluator"></a>Регистрация оценщика выражений
+# <a name="register-an-expression-evaluator"></a>Регистрация средства оценки выражений
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Оценщик выражения (EE) должен зарегистрироваться как фабрика классов как с средой Windows COM, так и с Visual Studio. EE настроен как DLL так, что он вводится либо в отладку двигателя (DE) адресное пространство или визуальный Studio адресное пространство, в зависимости от того, какая сущность мгновенно EE.
+ Средство оценки выражений (EE) должно зарегистрировать себя как фабрика класса как в среде Windows COM, так и в Visual Studio. EE настраивается как библиотека DLL, чтобы она была внедрена в адресное пространство отладчика (DE) или в адресное пространство Visual Studio в зависимости от того, какая сущность создает экземпляр EE.
 
-## <a name="managed-code-expression-evaluator"></a>Оценщик управляемого выражения кода
- Управляемый код EE реализован как библиотека класса, которая является DLL, который регистрируется в среде COM, обычно начатый с вызова в программу VSIP, *regpkg.exe*. Фактический процесс написания ключей реестра для среды COM обрабатывается автоматически.
+## <a name="managed-code-expression-evaluator"></a>Средство оценки выражений управляемого кода
+ Управляемый код EE реализуется как библиотека классов, которая является библиотекой DLL, которая регистрируется в среде COM, обычно запускаемой вызовом программы VSIP, *regpkg.exe*. Фактический процесс записи разделов реестра для среды COM осуществляется автоматически.
 
- Метод основного класса <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>отмечен, что указывает на то, что метод должен быть вызван, когда DLL регистрируется с COM. Этот метод регистрации, часто называемый, `RegisterClass`выполняет задачу регистрации DLL с Visual Studio. Соответствующий `UnregisterClass` <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>(отмеченный), отменяет эффекты, `RegisterClass` когда DLL не установлен.
-Те же записи реестра сделаны, как для EE, написанного в неуправляемом коде; Разница лишь в том, что нет `SetEEMetric` функции помощника, например, чтобы сделать работу за вас. Ниже приводится пример процесса регистрации и нерегистрации.
+ Метод основного класса помечается атрибутом <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> , указывающим, что метод должен вызываться при регистрации библиотеки DLL в com. Этот метод регистрации, часто называемый `RegisterClass` , выполняет задачу регистрации библиотеки DLL в Visual Studio. Соответствующий `UnregisterClass` (помеченный <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ), отменяет эффекты `RegisterClass` при удалении библиотеки DLL.
+Те же записи реестра создаются так же, как и для EE, написанного в неуправляемом коде; Единственное отличие заключается в отсутствии вспомогательной функции, например, `SetEEMetric` для выполнения работы. Ниже приведен пример процесса регистрации и отмены регистрации.
 
 ### <a name="example"></a>Пример
- Следующая функция показывает, как управляемый код EE регистрируется и не регистрируется в Visual Studio.
+ Следующая функция показывает, как управляемый код EE регистрируется и отменяет регистрацию в Visual Studio.
 
 ```csharp
 namespace EEMC
@@ -97,33 +97,33 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code-expression-evaluator"></a>Неуправляемый оценщик выражения кода
- EE DLL реализует `DllRegisterServer` функцию регистрации в среде COM, а также Visual Studio.
+## <a name="unmanaged-code-expression-evaluator"></a>Вычислители выражений неуправляемого кода
+ Библиотека DLL EE реализует `DllRegisterServer` функцию для регистрации в среде com, а также в Visual Studio.
 
 > [!NOTE]
-> Вы можете найти образец кода MyCEE код реестра код в *файле dllentry.cpp*, который находится в установке VSIP под EnVSDK-MyCPkgs-MyCEE.
+> Пример кода реестра Мицее можно найти в файле *дллентри. cpp*, который находится в установке VSIP в разделе енвсдк\микпкгс\мицее.
 
-### <a name="dll-server-process"></a>Процесс dLL сервера
- При регистрации EE сервер DLL:
+### <a name="dll-server-process"></a>Серверный процесс DLL
+ При регистрации EE — сервер DLL:
 
-1. Регистрирует свою фабрику `CLSID` класса в рамках обычных конвенций COM.
+1. Регистрирует фабрику класса в `CLSID` соответствии с обычными соглашениями COM.
 
-2. Вызывает функцию `SetEEMetric` помощника, чтобы зарегистрироваться в Visual Studio метрикe EE, показанных в следующей таблице. Функция `SetEEMetric` и метрики, указанные следующим образом, являются частью библиотеки *dbgmetric.lib.* Подробнее о ней читайте в материале [помощников SDK.](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+2. Вызывает вспомогательную функцию `SetEEMetric` для регистрации в Visual Studio метрики ee, показанные в следующей таблице. Функция `SetEEMetric` и метрики, указанные следующим образом, являются частью библиотеки *дбгметрик. lib* . Дополнительные сведения см. в разделе [вспомогательные методы SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) .
 
     |Метрика|Описание|
     |------------|-----------------|
-    |`metricCLSID`|`CLSID`завода класса EE|
-    |`metricName`|Название EE как отображаемая строка|
-    |`metricLanguage`|Название языка, который EE предназначен для оценки|
-    |`metricEngine`|`GUID`s отладки двигателей (DE), которые работают с этим EE|
+    |`metricCLSID`|`CLSID` фабрики класса EE|
+    |`metricName`|Имя EE в виде отображаемой строки|
+    |`metricLanguage`|Название языка, который должен быть рассчитан EE|
+    |`metricEngine`|`GUID`модулей отладки (DE), работающих с этим EE|
 
     > [!NOTE]
-    > Язык `metricLanguage``GUID` идентифицирует язык по имени, `guidLang` но `SetEEMetric` это аргумент, который выбирает язык. Когда компилятор генерирует файл информации об отладке, он должен написать соответствующий, `guidLang` чтобы DE знал, какой EE использовать. DE обычно запрашивает поставщика символов для этого языка, `GUID`который хранится в файле информации отладки.
+    > `metricLanguage``GUID`Определяет язык по имени, но он является `guidLang` аргументом `SetEEMetric` , который выбирает язык. Когда компилятор создает файл отладочной информации, он должен записать соответствующее значение, `guidLang` чтобы параметр de знал, какой ee следует использовать. Обычно в параметре DE запрашивается поставщик символов для этого языка `GUID` , который хранится в файле отладочной информации.
 
-3. Регистрируется в Visual Studio, создавая ключи под\\HKEY_LOCAL_MACHINE»SOFTWARE-Microsoft-VisualStudio*X.Y*, где *X.Y* является версией Visual Studio для регистрации.
+3. Регистрирует в Visual Studio, создавая ключи в разделе HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *X. y*, где *X. y* — это версия Visual Studio для регистрации.
 
 ### <a name="example"></a>Пример
- Следующая функция показывает, как неуправляемый код (КЗ) EE регистрируется и не регистрируется в Visual Studio.
+ Следующая функция показывает, как неуправляемый код (C++) EE регистрирует и отменяет регистрацию в Visual Studio.
 
 ```cpp
 /*---------------------------------------------------------
@@ -209,6 +209,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>См. также
-- [Написание оценщика экспрессии CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Помощники SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+## <a name="see-also"></a>См. также раздел
+- [Написание вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Вспомогательные методы SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

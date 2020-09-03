@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac9a4517fcf13dbb0e1d7a6f994092168723e660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672150"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Пример расширения Excel. Класс TechnologyManager
@@ -60,7 +60,7 @@ ms.locfileid: "72672150"
 ## <a name="getexcelelement-internal-method"></a>Внутренний метод GetExcelElement
  Этот внутренний метод принимает дескриптор окна и сведения об элементе Excel и возвращает запрошенный элемент Excel.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> <xref:System.NotSupportedException>
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>

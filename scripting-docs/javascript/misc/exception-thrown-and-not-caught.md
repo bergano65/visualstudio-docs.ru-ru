@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 44f207d2e32a7ca79ee0d5851a80261c5da9743d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814594"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Исключение возникло, но не перехвачено
@@ -32,7 +32,7 @@ ms.locfileid: "85814594"
   
 - Если исключение создается повторно, убедитесь, что имеется другой соответствующий оператор catch.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Объект Error](../../javascript/reference/error-object-javascript.md)   
  [Оператор Throw](../../javascript/reference/throw-statement-javascript.md)   
  [Попробуйте... перехватить... Оператор finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541353"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Пошаговое руководство. Защита частей документов с помощью элементов управления содержимым
@@ -34,7 +34,7 @@ ms.locfileid: "85541353"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Защита элемента управления содержимым
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Защита элемента управления содержимым
  Вы можете запретить пользователям изменять или удалять элемент управления содержимым, задав свойства элемента управления в проекте уровня документа во время разработки или во время выполнения.
 
  Также можно защитить элементы управления содержимым, которые вы добавляете в документ во время выполнения с помощью проекта надстройки VSTO. Дополнительные сведения см. [в разделе руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md).

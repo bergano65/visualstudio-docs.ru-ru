@@ -12,16 +12,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203970"
 ---
 # <a name="idsymbol-element"></a>Элемент IDSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`IDSymbol` Элемент содержит идентификатор GUID: ID пары, который представляет меню, группы или команды. Идентификатор GUID поступает из родительского `GuidSymbol` элемент. `IDSymbol` Элемент имеет `name` атрибут, который содержит понятное имя для идентификатора, который содержится в `value` атрибута.  
+`IDSymbol`Элемент содержит идентификатор пары GUID: ID, представляющей меню, группу или команду. Идентификатор GUID поступает из родительского `GuidSymbol` элемента. `IDSymbol`Элемент имеет `name` атрибут, который предоставляет понятное имя для идентификатора, содержащегося в `value` атрибуте.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,7 +36,7 @@ ms.locfileid: "68203970"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Обязательный. Имя символа идентификатора.|  
+|name|Обязательный. Имя символа идентификатора.|  
 |value|Обязательный. Числовое значение идентификатора символа идентификатора.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -46,10 +46,10 @@ ms.locfileid: "68203970"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент GuidSymbol](../extensibility/guidsymbol-element.md)|Содержит идентификатор GUID пары GUID: ID, который представляет меню, группы или команды. Группирует элементы `IDSymbol`.|  
+|[Элемент GuidSymbol](../extensibility/guidsymbol-element.md)|Содержит идентификатор GUID пары GUID: ID, представляющей меню, группу или команду. Группирует элементы `IDSymbol`.|  
   
-## <a name="remarks"></a>Примечания  
- Каждый `IDSymbol` элемент в заданной `GuidSymbol` элемент должен иметь уникальный `value`. Тем не менее `IDSymbol` до тех пор, пока они имеют разные родительские элементы, которые имеют одинаковые значения могут существовать в пакете.  
+## <a name="remarks"></a>Remarks  
+ Каждый `IDSymbol` элемент в заданном `GuidSymbol` элементе должен иметь уникальное значение `value` . Однако `IDSymbol` в пакете могут существовать элементы, имеющие одинаковые значения, если они имеют разные родительские объекты.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

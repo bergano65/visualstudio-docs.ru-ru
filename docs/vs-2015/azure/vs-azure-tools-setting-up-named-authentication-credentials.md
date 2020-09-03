@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917369"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Настройка учетных данных для проверки подлинности
@@ -37,7 +37,7 @@ ms.locfileid: "75917369"
 
 Если вы хотите создать сертификат самостоятельно, следуйте инструкциям в статье [Общие сведения о сертификатах для облачных служб Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) и вручную передайте сертификат на [портал Azure](https://portal.azure.com/).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Документация по веб-приложениям](/azure/app-service/)
 - [Развертывание приложения в службе приложений Azure](/azure/app-service/app-service-deploy-local-git) 

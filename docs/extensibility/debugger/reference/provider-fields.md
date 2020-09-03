@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS Документы Майкрософт
+title: PROVIDER_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713789"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
-Определяет свойства, связанные с поставщиком программы.
+Указывает свойства, связанные с поставщиком программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,20 +44,20 @@ public enum enum_PROVIDER_FIELDS {
 
 ## <a name="fields"></a>Поля
  `PFIELD_PROGRAM_NODES`\
- Поле `ProgramNodes` действительно.
+ `ProgramNodes`Поле является допустимым.
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
- Поле `fIsDebuggerPresent` действительно.
+ `fIsDebuggerPresent`Поле является допустимым.
 
-## <a name="remarks"></a>Примечания
- Эти значения возвращаются `Fields` в состав [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, чтобы указать, какие поля структуры были явно заполнены.
+## <a name="remarks"></a>Remarks
+ Эти значения возвращаются в элементе `Fields` структуры [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) , чтобы указать, какие поля структуры были явно заполнены.
 
- Эти значения могут быть объединены `OR`с bitwise .
+ Эти значения можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

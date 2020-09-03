@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 Документы Майкрософт
+title: TEXT_DOC_ATTR_2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713454"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
@@ -38,19 +38,19 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 
 ## <a name="members"></a>Участники
  `TEXT_DOC_ATTR_READONLY_2`\
- Указано, что документ читается только для чтения.
+ Указывает, что документ доступен только для чтения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 > [!NOTE]
-> Это значение фактически не определено в сборке для C. Вместо этого необходимо скопировать определение в исходный файл.
+> Это значение фактически не определено в сборке для C#. Вместо этого необходимо скопировать определение в исходный файл.
 
- Прошел в качестве аргумента методу [onUpdateDocumentAttributes.](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)
+ Передается в качестве аргумента в метод [онупдатедокументаттрибутес](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

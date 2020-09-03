@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535711"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)
@@ -51,10 +51,10 @@ ms.locfileid: "85535711"
 
     |Имя столбца|Тип данных|Разрешить значения NULL|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**IsFalse**|
+    |**Идентификатор**|**int**|**False**|
     |**Тип**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**IsFalse**|
-    |**LastName**|**nvarchar(200)**|**IsFalse**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
     |**Менеджер**|**int**|**True**|
 
 3. Задайте столбец ID в качестве первичного ключа
@@ -70,7 +70,7 @@ ms.locfileid: "85535711"
 
 2. Скопируйте в таблицу следующие данные. (Его можно скопировать, а затем вставить в таблицу, выбрав всю строку на панели результатов.)
 
-    |**ID**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
+    |**Идентификатор**|**Тип**|**FirstName**|**LastName**|**Менеджер**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -185,5 +185,5 @@ ms.locfileid: "85535711"
 
 3. Закройте форму. (В меню **Отладка** выберите команду **прерывать отладку**.)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Практическое руководство. Добавление LINQ to SQL классов в проект (o-r Designer](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6) [) Пошаговое руководство. Создание классов LINQ to SQL (o-r Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [Практическое руководство. назначение хранимых процедур для выполнения операций обновления, вставки и удаления (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Практическое руководство. Создание объектной модели в Visual Basic или C#](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 099be38c5585fe19c00b31c00ac3a7ddcd3d7fe2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76111464"
 ---
 # <a name="if-activity-designer"></a>Конструктор действия If
@@ -25,14 +25,14 @@ ms.locfileid: "76111464"
 
 В следующей таблице показаны свойства действия <xref:System.Activities.Statements.If>, которые применяются чаще всего, и описано их использование в конструкторе.
 
-|Имя свойства|Обязательное|Метрики|
+|Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|Да|Условие, определяющее, какое дочернее действие следует выполнить. Чтобы задать <xref:System.Activities.Statements.If.Condition%2A>, введите Visual Basic выражение в поле **условие** в конструкторе действий **If** или в сетке свойств.|
-|<xref:System.Activities.Statements.If.Else%2A>|Ложь|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> имеет **значение false**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Else%2A> ветви, перетащите действие из **области элементов** в поле **else** в конструкторе действий **If** с текстом подсказки "перетащите действие сюда".|
-|<xref:System.Activities.Statements.If.Then%2A>|Ложь|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> имеет **значение true**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Then%2A> ветви, перетащите действие из **области элементов** в поле **затем** в конструкторе действий **If** с текстом подсказки "перетащите действие сюда".|
+|<xref:System.Activities.Statements.If.Condition%2A>|Верно|Условие, определяющее, какое дочернее действие следует выполнить. Чтобы задать <xref:System.Activities.Statements.If.Condition%2A> , введите Visual Basic выражение в поле **условие** в конструкторе действий **If** или в сетке свойств.|
+|<xref:System.Activities.Statements.If.Else%2A>|Неверно|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> имеет значение **false**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Else%2A> ветвью, перетащите действие из **области элементов** в поле **else** в конструкторе действий **If** с текстом подсказки "перетащите действие здесь".|
+|<xref:System.Activities.Statements.If.Then%2A>|Неверно|Действие, выполняемое, если <xref:System.Activities.Statements.If.Condition%2A> имеет **значение true**. Чтобы добавить действие, выполняемое <xref:System.Activities.Statements.If.Then%2A> ветвью, перетащите действие из **области элементов** в поле **затем** в конструкторе действий **If** с текстом подсказки "перетащите действие сюда".|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Последовательность](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)

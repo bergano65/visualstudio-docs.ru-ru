@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 831a67fe567c2e6ae1e288d1bc7ee91026ff2273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651027"
 ---
 # <a name="find-in-files-command"></a>Команда Find in Files
@@ -37,7 +37,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="arguments"></a>Аргументы
  `findwhat` Обязательный. Текст для поиска совпадения.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /case или /c Необязательный. Совпадение происходит только в том случае, если прописные и строчные знаки точно соответствуют тем, что указаны в аргументе `findwhat`.
 
  /ext: `extensions` Необязательный. Определяет расширения файлов, в которых будет проводиться поиск. Если переключатель не определен, используется предыдущее расширение, вводившееся ранее.
@@ -73,5 +73,5 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Поиск в файлах](../../ide/find-in-files.md) [командное окно](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) Командная кнопка [Visual Studio команды](../../ide/reference/visual-studio-commands.md) Visual Studio [псевдонимы команд](../../ide/reference/visual-studio-command-aliases.md)

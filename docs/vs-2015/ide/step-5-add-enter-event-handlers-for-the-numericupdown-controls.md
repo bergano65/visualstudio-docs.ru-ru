@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671751"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
@@ -22,7 +22,7 @@ ms.locfileid: "72671751"
 В пятой части этого учебника вам предстоит добавить обработчики событий "Ввод", чтобы сделать ввод ответов на задачи головоломки немного удобнее. Этот код будет выделять и удалять текущее значение в каждом элементе управления NumericUpDown, как только игрок выберет элемент управления и начнет вводить другое значение.
 
 > [!NOTE]
-> Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор учебника см. в статье [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) (Учебное руководство 2. Создание ограниченной по времени математической головоломки).
+> Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор этого руководства см. в разделе [учебник 2. Создание математической головоломки с течением времени](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ### <a name="to-verify-the-default-behavior"></a>Проверка поведения по умолчанию
 
@@ -40,7 +40,7 @@ ms.locfileid: "72671751"
 
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Добавление обработчика событий "Ввод" для элемента управления NumericUpDown
 
-1. Выберите первый элемент управления NumericUpDown (с именем "sum") в форме, а затем в диалоговом окне **Свойства** выберите на панели инструментов значок **События**.
+1. Выберите первый элемент управления NumericUpDown (с именем sum) в форме, а затем в диалоговом окне **Свойства** выберите на панели инструментов значок **События**.
 
      На вкладке **События** в диалоговом окне **Свойства** отображаются все события для выбранного в форме элемента, на которые можно реагировать (т. е. которые можно обрабатывать). Поскольку выбран элемент управления NumericUpDown, все перечисленные события относятся к нему.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72671751"
 
      Вы только что добавили обработчик событий "Ввод" для элемента управления NumericUpDown с именем "sum" и назвали этот обработчик **answer_Enter**.
 
-3. В методе для обработчика событий **answer_Enter** введите следующий код.
+3. В методе для обработчика событий **answer_Enter** добавьте следующий код.
 
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
@@ -71,6 +71,6 @@ ms.locfileid: "72671751"
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий шаг руководства см. в разделе [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md) (Шаг 6. Добавление задачи на вычитание).
+- Чтобы перейти к следующему шагу руководства, см. [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).
 
-- Предыдущий шаг руководства см. в разделе [Step 4: Add the CheckTheAnswer() Method](../ide/step-4-add-the-checktheanswer-parens-method.md) (Шаг 4. Добавление метода CheckTheAnswer()).
+- Чтобы вернуться к предыдущему шагу руководства, см. [Шаг 4. Добавление метода метода CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 38434d89544ed290f9adfd077593d7de9bdc1231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664017"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
@@ -25,7 +25,7 @@ ms.locfileid: "72664017"
 
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Создание класса для использования в качестве источника данных
 
-1. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.
+1. В меню **Файл** последовательно выберите пункты **Создать**, **Проект**.
 
 2. В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic**, разверните узел **Классическое приложение Windows** и выберите шаблон **Приложение WPF**.
 
@@ -82,7 +82,7 @@ ms.locfileid: "72664017"
 
      На следующем рисунке показано диалоговое окно **Выбор объекта** с выбранным объектом **ShoppingCart**.
 
-     ![Диалоговое окно «Выбор объекта»](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Диалоговое окно "Выбор объекта"](../designers/media/blendselectobject.PNG "BlendSelectObject")
 
 5. В **области элементов** выберите элемент управления `TextBlock`, чтобы добавить его на форму.
 
@@ -92,11 +92,11 @@ ms.locfileid: "72664017"
 
      На следующем рисунке показано диалоговое окно **Создание привязки данных** с выбранным свойством **ItemCount**.
 
-     ![Диалоговое окно «Создание привязки данных»](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
+     ![Диалоговое окно "Создание привязки данных"](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
 
-8. Нажмите клавишу F5 для запуска приложения.
+8. Нажмите клавишу F5, чтобы запустить приложение.
 
      Элемент управления `TextBlock` должен отображать значение по умолчанию 0 как текст.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание пользовательского интерфейса с помощью Конструктор XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md) [NIB: диалоговое окно "Добавление преобразователя значений"](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015922"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Как добавить свойство в проекты SharePoint
@@ -44,9 +45,9 @@ ms.locfileid: "86015922"
 
  Чтобы сохранить изменения в значениях свойств, методы доступа **Set** для свойств используют следующие API:
 
-- `CustomUserFileProperty`использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство, чтобы сохранить свое значение в файле параметров пользователя проекта.
+- `CustomUserFileProperty` использует <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> свойство, чтобы сохранить свое значение в файле параметров пользователя проекта.
 
-- `CustomProjectFileProperty`использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить свое значение в файле проекта.
+- `CustomProjectFileProperty` использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить свое значение в файле проекта.
 
   Дополнительные сведения о сохранении данных в этих файлах см. в разделе [Сохранение данных в расширениях системы проектов SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
