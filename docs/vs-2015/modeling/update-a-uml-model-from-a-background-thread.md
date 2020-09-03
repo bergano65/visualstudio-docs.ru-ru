@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659467"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Обновление модели UML из фонового потока
@@ -32,7 +32,7 @@ ms.locfileid: "72659467"
 
 #### <a name="to-run-the-example"></a>Запуск примера
 
-1. Создайте обработчик команд в C# проекте, как описано в разделе [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+1. Создайте обработчик команд в проекте C#, как описано в разделе [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 2. Убедитесь в том, что проект включает ссылки на следующие сборки:
 
@@ -187,5 +187,5 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  Для выполнения операций в потоке пользовательского интерфейса можно использовать метод `uiThreadHolder.Invoke()`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

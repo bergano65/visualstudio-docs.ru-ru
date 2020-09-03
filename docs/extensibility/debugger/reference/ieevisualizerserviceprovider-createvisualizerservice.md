@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider::CreateVisualizerService Документы Майкрософт
+title: 'Иивисуализерсервицепровидер:: Креатевисуализерсервице | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717916"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
-Этот метод создает услугу визуализатора.
+Этот метод создает службу визуализатора.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,27 +49,27 @@ int CreateVisualizerService(
 
 ## <a name="parameters"></a>Параметры
 `binder`\
-(в) Объект [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) перешел в [EvaluateSync.](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
+окне Объект [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) , переданный в [евалуатесинк](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
 
 `pSymProv`\
-(в) Объект [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) передан `IDebugParsedExpression::EvaluateSync`.
+окне Объект [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md) , переданный в `IDebugParsedExpression::EvaluateSync` .
 
 `pAddress`\
-(в) Объект [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) передан `IDebugParsedExression::EvaluateSync`.
+окне Объект [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) , переданный в `IDebugParsedExression::EvaluateSync` .
 
 `dataProvider`\
-(в) Объект, реализующий интерфейс [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) (поставляется оценщиком выражения).
+окне Объект, реализующий интерфейс [иивисуализердатапровидер](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) (предоставленный средством оценки выражений).
 
 `ppService`\
-(ваут) Созданная служба.
+заполняет Созданная служба.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- , `binder` `pSymProv`и `pAddress` параметры были переданы `IDebugParsedExpression::EvaluateSync` методу. `CreateVisualizerService`должен вызываться только `IDebugParsedExpression::EvaluateSync` из поддержки оценщика выражения для визуализаторов типов.
+## <a name="remarks"></a>Remarks
+ `binder` `pSymProv` Все параметры, и `pAddress` были переданы в `IDebugParsedExpression::EvaluateSync` метод. `CreateVisualizerService` метод должен вызываться только в `IDebugParsedExpression::EvaluateSync` составе поддержки средства оценки выражений для визуализаторов типов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

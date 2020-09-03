@@ -1,5 +1,5 @@
 ---
-title: ПОПДИРЛИСФУНК Документы Майкрософт
+title: ПОПДИРЛИСТФУНК | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702081"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Это функция обратного вызова, предоставленная функции [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) для обновления коллекции каталогов и (по желанию) имен файлов, чтобы узнать, какие из них находятся под контролем источника.
+Это функция обратного вызова, предоставляемая функции [сккпопулатедирлист](../extensibility/sccpopulatedirlist-function.md) для обновления коллекции каталогов и (необязательно) имен файлов, которые следует найти в системе управления версиями.
 
- Обратный `POPDIRLISTFUNC` вызов должен вызываться только для тех каталогов и `SccPopulateDirList` имен файлов (в списке, отданном функции), которые фактически находятся под контролем источника.
+ `POPDIRLISTFUNC`Обратный вызов должен вызываться только для тех каталогов и имен файлов (в списке, заданном для `SccPopulateDirList` функции), которые фактически находятся в системе управления версиями.
 
-## <a name="signature"></a>Сигнатура
+## <a name="signature"></a>Подпись
 
 ```cpp
 typedef BOOL (*POPDIRLISTFUNC)(
@@ -35,31 +35,31 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ```
 
 ## <a name="parameters"></a>Параметры
- pvCallerData
+ пвкаллердата
 
-(в) Значение пользователя, присваиваемые [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
+окне Значение пользователя, заданное в [сккпопулатедирлист](../extensibility/sccpopulatedirlist-function.md).
 
- bFolder
+ бфолдер
 
-(в) `TRUE` если имя `lpDirectoryOrFileName` в каталоге; в противном случае имя — это имя файла.
+[входные] `TRUE` значение, если имя в `lpDirectoryOrFileName` папке является каталогом; в противном случае — имя файла.
 
- lpDirectoryOrFileName
+ лпдиректорйорфиленаме
 
-(в) Полный локальный путь к каталогу или имени файла, накоторомуму ею, находится под контролем исходного кода.
+окне Полный локальный путь к каталогу или имени файла в системе управления исходным кодом.
 
 ## <a name="return-value"></a>Возвращаемое значение
- IDE возвращает соответствующий код ошибки:
+ Интегрированная среда разработки возвращает соответствующий код ошибки:
 
 |Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Продолжайте обработку.|
 |SCC_I_OPERATIONCANCELED|Останавливает обработку.|
-|SCC_E_xxx|Любая соответствующая ошибка управления исходом должна прекратить обработку.|
+|SCC_E_xxx|Любая соответствующая ошибка системы управления версиями должна прерывать обработку.|
 
-## <a name="remarks"></a>Примечания
- Если `fOptions` параметр `SccPopulateDirList` функции `SCC_PDL_INCLUDEFILES` содержит флаг, то список, возможно, будет содержать имена файлов, а также имена каталогов.
+## <a name="remarks"></a>Remarks
+ Если `fOptions` параметр `SccPopulateDirList` функции содержит `SCC_PDL_INCLUDEFILES` флаг, то список может содержать имена файлов, а также имена каталогов.
 
-## <a name="see-also"></a>См. также
-- [Функции обратного вызова, реализованные IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
+## <a name="see-also"></a>См. также раздел
+- [Функции обратного вызова, реализованные интегрированной средой разработки](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Коды ошибок](../extensibility/error-codes.md)

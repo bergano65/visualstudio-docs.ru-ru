@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Skip | Документация Майкрософт
+title: 'Иенумдебугфиелдс:: Skip | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0d6fcce58611c6ec45d2f7b0a4ece725a134e3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161108"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
@@ -40,13 +40,13 @@ int Skip(
   
 #### <a name="parameters"></a>Параметры  
  `celt`  
- [in] Количество пропускаемых элементов.  
+ [in] Число пропускаемых элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` `celt` , если больше числа оставшихся элементов; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.  
+## <a name="remarks"></a>Remarks  
+ Если `celt` задает значение, превышающее число оставшихся элементов, перечисление устанавливается в конец и `S_FALSE` возвращается.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

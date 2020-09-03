@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetSize | Документация Майкрософт
+title: 'Иидатастораже:: DataSize | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c76ae583d089b23d21664c9e312d2486a14c2aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192120"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
@@ -40,14 +40,14 @@ int GetSize(
   
 #### <a name="parameters"></a>Параметры  
  `size`  
- [out] Число байтов, содержащихся в этом объекте.  
+ заполняет Число байтов, содержащихся в этом объекте.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Используйте [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) метод для извлечения фактических данных байты.  
+## <a name="remarks"></a>Remarks  
+ Используйте метод [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) для получения фактических байтов данных.  
   
-## <a name="see-also"></a>См. также  
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
+## <a name="see-also"></a>См. также:  
+ [иидатастораже](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

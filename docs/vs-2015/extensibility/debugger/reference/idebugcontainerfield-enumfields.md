@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Документация Майкрософт
+title: 'Идебугконтаинерфиелд:: EnumFields | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 485de4bdc9ff5b17c056c0db4e2930f5c6986fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205300"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -48,29 +48,29 @@ int EnumFields(
   
 #### <a name="parameters"></a>Параметры  
  `dwKindFilter`  
- [in] Сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) константы, выберите поля, которые необходимо перечислить. Типы полей можно описать типы хранилища, например класса или примитивных или определенные сведения, такие как local, параметра или указатель «this».  
+ окне Сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) констант, которые выбирают поля для перечисления. Виды полей могут описывать типы хранения, например класс или примитив, или конкретные сведения, такие как локальный, параметр или указатель.  
   
  `dwModifiersFilter`  
- [in] Сочетание [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) константы, выберите поля, которые необходимо перечислить. Модификаторы поля могут быть разрешения на доступ, такие как public, private или хранения сведения, такие как виртуальные, статическими или окончательными.  
+ окне Сочетание [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) констант, которые выбирают поля для перечисления. Модификаторы полей могут иметь разрешения на доступ, такие как открытые или закрытые данные или сведения о хранении, например виртуальные, статические или окончательные.  
   
  `pszNameFilter`  
- [in] Имя поля, которые необходимо перечислить. Это может быть значение null, если все поля должны быть возвращены.  
+ окне Имя поля для перечисления. Это может быть значение null, если должны возвращаться все поля.  
   
  `nameMatch`  
- [in] Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисление, управляет ли поиск с учетом регистра, или нет.  
+ окне Значение из перечисления [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) , которое определяет, учитывается ли регистр при поиске.  
   
  `ppEnum`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список полей. Возвращает значение null, если нет полей.  
+ заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список полей. Возвращает значение null, если нет полей.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK или S_FALSE, если нет полей. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает S_OK или S_FALSE, если нет полей. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- `dwKindFilter`, `dwModifiersFilter`, И `pszNameFilter` параметры можно объединить, например, чтобы выбрать все публичные виртуальные методы, с именем «MyMethod».  
+## <a name="remarks"></a>Remarks  
+ `dwKindFilter`Параметры, `dwModifiersFilter` и `pszNameFilter` можно комбинировать, например, чтобы выбрать все открытые виртуальные методы с именем MyMethod.  
   
-## <a name="see-also"></a>См. также  
- [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугконтаинерфиелд](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
+ [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

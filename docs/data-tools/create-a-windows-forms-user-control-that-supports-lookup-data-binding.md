@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586800"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных
@@ -36,11 +36,11 @@ ms.locfileid: "75586800"
 |Реализуйте <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.DataGridView>, которые отображают списки (или таблицы) данных. Дополнительные сведения см. [в разделе создание Windows Forms пользовательского элемента управления, поддерживающего сложную привязку данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Реализуйте <xref:System.ComponentModel.LookupBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.ComboBox>, которые отображают списки (или таблицы) данных, но также должны представлять отдельный столбец или отдельное свойство. (Этот процесс описан в данном пошаговом руководстве.)|
 
-В этом пошаговом руководстве создается элемент управления поиска, который привязан к данным из двух таблиц. В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей". Элемент управления "Уточняющий запрос" привязан к полю `CustomerID` из таблицы `Orders`. Это значение используется для поиска `CompanyName` из таблицы `Customers`.
+В этом пошаговом руководстве создается элемент управления поиска, который привязан к данным из двух таблиц. В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей". Элемент управления "Уточняющий запрос" привязан к `CustomerID` полю `Orders` таблицы. Он использует это значение для поиска в `CompanyName` `Customers` таблице.
 
 В ходе этого пошагового руководства вы научитесь:
 
-- Создание **приложения Windows Forms**.
+- Создайте новое **приложение Windows Forms**.
 
 - Добавление нового **пользовательского элемента управления** в проект.
 
@@ -54,7 +54,7 @@ ms.locfileid: "75586800"
 
 - Создание формы для отображения данных в новом элементе управления.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -78,7 +78,7 @@ ms.locfileid: "75586800"
 
 1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
-2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
+2. В левой области разверните элемент **Visual C#** или **Visual Basic** , а затем выберите пункт **Windows Desktop**.
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
@@ -92,13 +92,13 @@ ms.locfileid: "75586800"
 
 1. В меню **Проект** выберите пункт **Добавить пользовательский элемент управления**.
 
-2. Введите `LookupBox` в поле **имя** и нажмите кнопку **Добавить**.
+2. Введите `LookupBox` в поле **имя** и нажмите кнопку **добавить**.
 
      Элемент управления **LookupBox** добавляется в **Обозреватель решений** и открывается в конструкторе.
 
 ## <a name="design-the-lookupbox-control"></a>Проектирование элемента управления LookupBox
 
-Чтобы спроектировать элемент управления LookupBox, перетащите <xref:System.Windows.Forms.ComboBox> из **панели элементов** в область конструктора пользовательского элемента управления.
+Чтобы спроектировать элемент управления LookupBox, перетащите объект <xref:System.Windows.Forms.ComboBox> из **области элементов** в область конструктора пользовательского элемента управления.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Добавление требуемого атрибута привязки данных
 
@@ -137,7 +137,7 @@ ms.locfileid: "75586800"
 
 8. Выберите таблицы `Customers` и `Orders` и нажмите кнопку **Готово**.
 
-     Объект **NorthwindDataSet** добавляется в проект, и таблицы `Customers` и `Orders` отображаются в окне **Источники данных**.
+     В проект добавляется **NorthwindDataSet** , а `Customers` `Orders` таблицы и отображаются в окне **Источники данных** .
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Задание столбца CustomerID таблицы Orders для использования элемента управления LookupBox
 
@@ -163,7 +163,7 @@ ms.locfileid: "75586800"
 
 Вы можете создавать элементы управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на форму **Form1**.
 
-Чтобы создать элементы управления с привязкой к данным в форме Windows, перетащите узел **заказы** из окна **Источники данных** на форму Windows Forms и убедитесь, что элемент управления **LookupBox** используется для вывода данных в столбец `CustomerID`.
+Чтобы создать элементы управления с привязкой к данным в форме Windows Forms, перетащите узел **заказы** из окна **Источники данных** на форму Windows Forms и убедитесь, что элемент управления **LookupBox** используется для вывода данных в `CustomerID` столбце.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Привязка элемента управления для поиска CompanyName из таблицы Customers
 
@@ -171,12 +171,12 @@ ms.locfileid: "75586800"
 
 При этом задается привязка к данным для отображения `CompanyName` из таблицы `Customers` с сохранением значения `CustomerID` из таблицы `Orders`.
 
-## <a name="run-the-application"></a>Запуск приложения
+## <a name="run-the-application"></a>Выполнение приложения
 
 - Нажмите клавишу **F5** для запуска приложения.
 
 - Перейдите по нескольким записям и проверьте, что `CompanyName` отображается в элементе управления `LookupBox`.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

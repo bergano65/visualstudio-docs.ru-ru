@@ -1,5 +1,5 @@
 ---
-title: Регистрация окна инструмента (ru) Документы Майкрософт
+title: Регистрация окна инструментов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701602"
 ---
-# <a name="register-a-tool-window"></a>Регистрация окна инструмента
-Вы можете зарегистрировать окна <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>инструмента, используя и .
+# <a name="register-a-tool-window"></a>Регистрация окна инструментов
+Вы можете зарегистрировать окна инструментов с помощью <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> и  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
 
 ## <a name="example"></a>Пример
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- В приведенном выше <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> коде `PersistedWindowPane` `DynamicWindowPane` регистрируется окна инструментов с Visual Studio. Упорный окне инструмента пристыкован и вкладка с **Solution Explorer**, и динамическое окно дается исходное положение по умолчанию и размер. Динамическое окно сделано переходным, что указывает на то, что оно не создается при запуске. Это записывает `DontForceCreate` значение `ToolWindows` в ключе в реестре системы. Для получения дополнительной [Tool window display configuration](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)информации см.
+ В приведенном выше коде <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> регистрирует `PersistedWindowPane` `DynamicWindowPane` окна инструментов и в Visual Studio. Окно сохраненного инструмента закреплено с **Обозреватель решений**, а динамическому окну дается начальное положение и размер по умолчанию. Динамическое окно становится временным, что означает, что он не создается при запуске. При этом записывается `DontForceCreate` значение `ToolWindows` ключа в системном реестре. Дополнительные сведения см. в разделе [Настройка экрана окна инструментов](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

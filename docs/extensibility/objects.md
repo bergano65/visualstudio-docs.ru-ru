@@ -1,5 +1,5 @@
 ---
-title: Объекты Документы Майкрософт
+title: Объекты | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702271"
 ---
 # <a name="objects"></a>Объекты
-В следующей справочной информации отображаются объекты, которые используются для создания экземпляра основного текстового редактора.
+Ниже приведены справочные сведения об объектах, которые используются для создания экземпляра текстового редактора.
 
 ## <a name="in-this-section"></a>В этом разделе
-- [Объект VSCodeWindow](../extensibility/vscodewindow-object.md) Описывает объект оконного кода, специализированное окно документа, которое может приложить одно или несколько текстовых представлений.
+- [Объект вскодевиндов](../extensibility/vscodewindow-object.md) Описывает объект окна кода — специализированное окно документа, которое может заключать одно или несколько текстовых представлений.
 
-- [Объект VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Описывает объект диспетчера оконного кода, который реализуется языковой службой и отвечает за управление украшениями.
+- [Объект вскодевиндовманажер](../extensibility/vscodewindowmanager-object.md) Описывает объект диспетчера окон кода, реализуемый языковой службой и отвечающий за управление декоративными элементами.
 
-- [Объект VSTextBuffer](../extensibility/vstextbuffer-object.md) Описывает объект буфера текста, представляющий собой поток текста Unicode, данные для файла.
+- [Объект встекстбуффер](../extensibility/vstextbuffer-object.md) Описывает объект текстового буфера, представляющий поток текста в Юникоде, данные для файла.
 
-- [Объект VSTextView](../extensibility/vstextview-object.md) Описывает текстовое представление, окно, которое позволяет пользователям просматривать и отсваговывать текст текстового буфера Unicode.
+- [Объект встекствиев](../extensibility/vstextview-object.md) Описывает представление текста — окно, которое позволяет пользователям просматривать и редактировать текст в Юникоде для текстового буфера.
 
-## <a name="related-sections"></a>См. также
-- [Визуальная студия SDK ссылка](../extensibility/visual-studio-sdk-reference.md) Представляет список справочных тем.
+## <a name="related-sections"></a>Связанные разделы
+- [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) Содержит список справочных разделов.

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Расписания&gt; элемент (загрузчик) | Документация Майкрософт'
+title: '&lt;Элемент Schedules &gt; (начальный загрузчик) | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85ffab2272a55bfe77c5f2a73c6e25967a203c85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206095"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Расписания&gt; элемент (установщик)
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Элемент Schedules &gt; (начальный загрузчик)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Schedules` Элемент содержит `Schedule` элементы, которые определяют времена команд, определенных по `Command` элемент должен выполняться.  
+`Schedules`Элемент содержит `Schedule` элементы, которые определяют определенное время выполнения команд, определенных `Command` элементом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,28 +43,28 @@ ms.locfileid: "68206095"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `Schedules` Элемент является дочерним элементом `Product` элемент. Каждый `Product` элемент может содержать не более одного `Schedules` элемент. У элемента `Schedules` нет атрибутов.  
+ `Schedules`Элемент является дочерним по отношению к `Product` элементу. Каждый `Product` элемент может иметь не более одного `Schedules` элемента. У элемента `Schedules` нет атрибутов.  
   
 ## <a name="schedule"></a>Расписание  
- `Schedule` Элемент является дочерним элементом `Schedules` элемент. Объект `Schedules` элемент должен иметь по крайней мере `Schedule` элемент.  
+ `Schedule`Элемент является дочерним по отношению к `Schedules` элементу. `Schedules`Элемент должен иметь по крайней мере один `Schedule` элемент.  
   
- `Schedule` содержит следующий атрибут.  
+ `Schedule` имеет следующий атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Name`|Обязательный. Имя элемента расписания. Это соответствует `ScheduleName` свойство `Command` элемент. Когда `Command` ссылается на именованное расписание будет выполняться только по этим в указанное время `Schedule` элемент. Расписания также могут быть связаны с `FailIf` и `BypassIf` элементы, которые ограничивают эти условия выполнения по указанному расписанию. Дополнительные сведения см. в разделе [ \<команды > элемент](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Обязательный. Имя элемента расписания. Это соответствует `ScheduleName` свойству `Command` элемента. Когда объект `Command` ссылается на именованное расписание, он будет выполняться только в момент, указанный этим `Schedule` элементом. Расписания также могут быть связаны с `FailIf` элементами и `BypassIf` , которые ограничивают эти условные тесты для выполнения по указанному расписанию. Дополнительные сведения см. в разделе [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|  
   
- Заданный `Schedule` элемент может иметь только один из следующих дочерних элементов.  
+ Данный `Schedule` элемент может иметь только один из следующих дочерних элементов.  
   
-## <a name="buildlist"></a>BuildList  
- `BuildList` Элемент указывает, что установщик, чтобы выполнить команду, сразу после запуска приложение начальной загрузки.  
+## <a name="buildlist"></a>буилдлист  
+ `BuildList`Элемент указывает установщику выполнить команду сразу после запуска приложения начальной загрузки.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- `BeforePackage` Элемент указывает, что установщик, чтобы выполнить команду перед установкой указанного пакета.  
+ `BeforePackage`Элемент указывает установщику выполнить команду перед установкой указанного пакета.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- `AfterPackage` Элемент указывает, что установщик, чтобы выполнить команду после установки указанного пакета.  
+ `AfterPackage`Элемент указывает установщику выполнить команду после установки указанного пакета.  
   
-## <a name="see-also"></a>См. также  
- [\<Продукт > элемент](../deployment/product-element-bootstrapper.md)   
+## <a name="see-also"></a>См. также:  
+ [\<Product> Дерев](../deployment/product-element-bootstrapper.md)   
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)

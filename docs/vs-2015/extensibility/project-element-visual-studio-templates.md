@@ -1,5 +1,5 @@
 ---
-title: Проект элемент (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Project (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193963"
 ---
 # <a name="project-element-visual-studio-templates"></a>Элемент Project (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает, файлов или каталогов, добавляемых в проект.  
+Указывает файлы или каталоги, добавляемые в проект.  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -49,16 +49,16 @@ ms.locfileid: "68193963"
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`File`|Обязательный атрибут.<br /><br /> Указывает имя файла проекта в ZIP-файле шаблона.|  
-|`ReplaceParameters`|Необязательный атрибут.<br /><br /> Логическое значение, указывающее, имеет ли файл проекта значения параметров, которые должны быть заменены при создании проекта из шаблона. Значение по умолчанию — `false`.|  
-|`TargetFileName`|Необязательный атрибут.<br /><br /> Задает имя файла проекта, при создании проекта из шаблона.|  
-|`IgnoreProjectParameter`|Необязательный атрибут.<br /><br /> Указывает, следует ли добавлять проект в текущее решение. Если значение пользовательского параметра, «$*myCustomParameter*$» существует в файле параметров замены проект создается, но не добавляется как часть открытого решения.|  
+|`ReplaceParameters`|Необязательный атрибут.<br /><br /> Логическое значение, указывающее, содержит ли файл проекта значения параметров, которые необходимо заменить при создании проекта из шаблона. Значение по умолчанию — `false`.|  
+|`TargetFileName`|Необязательный атрибут.<br /><br /> Указывает имя файла проекта при создании проекта на основе шаблона.|  
+|`IgnoreProjectParameter`|Необязательный атрибут.<br /><br /> Указывает, следует ли добавить проект в текущее решение. Если значение пользовательского параметра "$*микустомпараметер*$" существует в файле замены параметров, проект создается, но не добавляется как часть текущего открытого решения.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Папка](../extensibility/folder-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает папку, чтобы добавить в проект.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Задает файл для добавления в проект.|  
+|[Папка](../extensibility/folder-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает папку для добавления в проект.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает файл, добавляемый в проект.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -66,17 +66,17 @@ ms.locfileid: "68193963"
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  `Project` — необязательный дочерний элемент элемента `TemplateContent`.  
   
- `Project` Элемент используется для определения проекта и таким образом, допустимо только в шаблонах проектов.  
+ `Project`Элемент используется для указания проекта и, следовательно, допустим только в шаблонах проектов.  
   
- `Project` элементы могут иметь [папку](../extensibility/folder-element-visual-studio-project-templates.md) дочерние элементы или [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) дочерние элементы, но не сочетание обоих `Folder` и `ProjectItem` дочерние элементы.  
+ `Project` элементы могут иметь дочерние элементы [папки](../extensibility/folder-element-visual-studio-project-templates.md) или дочерние элементы [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) , но не `Folder` оба `ProjectItem` дочерних элемента.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически переименовывает имя файла проекта, на основе имени, введенного в **новый проект** диалоговое окно. Используйте `TargetFileName` атрибут, если вы хотите предоставить альтернативное имя файла для файлов проекта, созданный с помощью шаблона.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически переименовывает имя файла проекта на основе имени, введенного пользователем в диалоговом окне **Новый проект** . Используйте `TargetFileName` атрибут, если требуется указать альтернативное имя файла для файлов проекта, созданных с помощью шаблона.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения.  
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -102,7 +102,7 @@ ms.locfileid: "68193963"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Элемент ProjectItem (шаблоны проектов Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   

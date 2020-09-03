@@ -1,5 +1,5 @@
 ---
-title: Структура файла Content_types.xml Документы Майкрософт
+title: Структура файла Content_types]. XML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,36 +14,36 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2d6eca44c08cf35e7b2075965c1b6139e7fb95bc
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395359"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Структура файла [типы_содержимого].xml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Содержит информацию о видах содержимого в пакете VSIX. Visual Studio использует файл «Content_Types.xml для установки пакета, но сам файл не устанавливается.  
+Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types]. XML для установки пакета, но не устанавливает сам файл.  
   
 > [!NOTE]
-> Хотя эта тема применима только к файлам «Content_Type.xml, которые используются в пакетах VSIX, тип файла «Content_Types». *Open Packaging Conventions (OPC)* Для получения дополнительной информации [см.](https://msdn.microsoft.com/magazine/cc163372.aspx)  
+> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx) на веб-сайте MSDN.  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
- В следующих разделах описаны корневой элемент, его атрибуты и элементы ребенка.  
+ В следующих разделах описывается корневой элемент, его атрибуты и дочерние элементы.  
   
 ### <a name="root-element"></a>Корневой элемент  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|`Types`|Содержит элементы ребенка, перечисляющие типы файлов в пакете VSIX.|  
+|`Types`|Содержит дочерние элементы, которые перечисляют типы файлов в пакете VSIX.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Xmlns`|(Обязательно.) Расположение схемы, используемой для этого файла «Content_Types.xml.|  
+|`Xmlns`|(Обязательно.) Расположение схемы, используемой для этого файла [Content_Types]. XML.|  
   
-### <a name="attribute-name-attribute"></a>(Имя атрибута) Атрибут  
+### <a name="attribute-name-attribute"></a>{Имя атрибута} Версию  
   
 |                           Значение                           |                Описание                |
 |-----------------------------------------------------------|-------------------------------------------|
@@ -54,17 +54,17 @@ ms.locfileid: "80395359"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|`Default`|Описывает тип содержимого в пакете VSIX. Каждый тип файла в `Default` пакете должен иметь свой собственный элемент.|  
+|`Default`|Описывает тип содержимого в пакете VSIX. Каждый тип файлов в пакете должен иметь собственный `Default` элемент.|  
   
 ### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Extension`|Расширение файла в пакете VSIX.|  
-|`ContentType`|Описывает вид содержимого, связанного с расширением имени файла.|  
+|`Extension`|Расширение имени файла в пакете VSIX.|  
+|`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|  
   
-### <a name="attribute-name-attribute"></a>(Имя атрибута) Атрибут  
- Visual Studio распознает `ContentType` следующие значения `Extension` для связанных типов.  
+### <a name="attribute-name-attribute"></a>{Имя атрибута} Версию  
+ Visual Studio распознает следующие `ContentType` значения для связанных `Extension` типов.  
   
 |Расширение|ContentType|  
 |---------------|-----------------|  
@@ -72,21 +72,21 @@ ms.locfileid: "80395359"
 |pkgdef|text/plain|  
 |Xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm или html|text/html|  
-|Rtf|приложение/rtf|  
-|pdf|приложение/pdf|  
+|htm или HTML|text/html|  
+|RTF|приложение/RTF|  
+|pdf|приложение/PDF|  
 |GIF|image/gif|  
-|jpg или jpeg|изображение/jpg|  
+|JPG или JPEG|Image/JPG|  
 |tiff|image/tiff|  
-|vsix|применение/zip|  
-|zip|применение/zip|  
+|vsix|приложение/ZIP-файл|  
+|zip|приложение/ZIP-файл|  
 |Файл DLL.|application/octet-stream|  
-|все другие типы файлов|application/octet-stream|  
+|Все прочие типы файлов|application/octet-stream|  
   
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание  
- Следующий файл «Content_Types.xml описывает типичный пакет VSIX.  
+ Следующий файл [Content_Types]. XML описывает типичный пакет VSIX.  
   
 ### <a name="code"></a>Код  
   
@@ -101,7 +101,7 @@ ms.locfileid: "80395359"
 </Types>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Схема расширения VSIX 1.0 Справка](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx)

@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81876493d48407549237ed626fc6ec5d2175fcd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659609"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Модульное тестирование кода Visual C# в приложениях Магазина
@@ -34,22 +34,22 @@ ms.locfileid: "72659609"
 >
 >   Дополнительные сведения см. в разделе [Проверка кода с помощью модульных тестов](https://msdn.microsoft.com/library/dd264975.aspx) в библиотеке MSDN.
 
-## <a name="BKMK_In_this_topic"></a> Содержание раздела
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела
  [Создание решения и проекта модульного теста](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [Убедитесь в том, что тесты выполняются в обозревателе тестов.](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [Проверка выполнения тестов в обозревателе тестов](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Добавление класса Rooter в проект Maths](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
+ [Добавление класса root в проект Maths](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
 
- [Объединение проекта теста с проектом приложения](#BKMK_Couple_the_test_project_to_the_app_project)
+ [Присоедините тестовый проект к проекту приложения](#BKMK_Couple_the_test_project_to_the_app_project)
 
- [Итеративное расширение тестов и обеспечение их успешного выполнения](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
+ [Итеративное дополнение тестов и их передача](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
  [Отладка непройденного теста](#BKMK_Debug_a_failing_test)
 
  [Рефакторинг кода](#BKMK_Refactor_the_code_)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Создание решения и проекта модульного теста
 
 1. В меню **Файл** выберите команду **Создать** и пункт **Новый проект**.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72659609"
 
 4. В обозревателе решений выберите имя решения, в контекстном меню выберите команду **Добавить** и выберите пункт **Новый проект**.
 
-5. В диалоговом окне **Новый проект** разверните узел **Установленные**, узел **Visual C#** и выберите **Магазин Windows** . В списке шаблонов проектов выберите **Библиотека модульных тестов (приложения для Магазина Windows)** .
+5. В диалоговом окне **Новый проект** разверните узел **Установленные**, узел **Visual C#** и выберите **Магазин Windows** . В списке шаблонов проектов выберите **Библиотека модульных тестов (приложения для Магазина Windows)**.
 
-     ![Создание проекта модульного теста](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")
+     ![Создание проекта модульного тестирования](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")
 
 6. В редакторе Visual Studio откройте файл UnitTest1.cs.
 
@@ -97,7 +97,7 @@ ms.locfileid: "72659609"
 
     3. Можно задать особые методы, которые вызываются до и после каждого модуля, класса или метода. Дополнительные сведения см. в разделе [Использование элементов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) в библиотеке MSDN.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Проверка с помощью обозревателя тестов того, что тесты запускаются
 
 1. Добавьте некоторый код теста в `TestMethod1` файла **UnitTest1.cs**:
 
@@ -119,7 +119,7 @@ ms.locfileid: "72659609"
 
      ![Обозреватель тестов](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Добавление класса Rooter в проект Maths
+## <a name="add-the-rooter-class-to-the-maths-project"></a><a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Добавление класса Rooter в проект Maths
 
 1. В обозревателе решений выберите имя проекта **Maths**. В контекстном меню выберите команду **Добавить** и затем **Класс**.
 
@@ -145,7 +145,7 @@ ms.locfileid: "72659609"
 
 4. Метод `SqareRoot` представляет собой минимальную реализацию, достаточную для проверки базовой структуры тестирования.
 
-## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Объединение проекта теста с проектом приложения
+## <a name="couple-the-test-project-to-the-app-project"></a><a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Объединение проекта теста с проектом приложения
 
 1. Добавьте ссылку на приложение Maths в проект RooterTests.
 
@@ -165,7 +165,7 @@ ms.locfileid: "72659609"
        using Maths;
        ```
 
-3. Добавьте тест, который использует функцию Rooter. Добавьте следующий код в файл **UnitTest1.cpp**:
+3. Добавьте тест, который использует функцию Rooter. Добавьте следующий код в **UnitTest1. cpp**:
 
    ```csharp
    [TestMethod]
@@ -180,17 +180,17 @@ ms.locfileid: "72659609"
 
    ```
 
-4. Постройте решение.
+4. Создайте решение.
 
     Новый тест появится в обозревателе тестов в узле **Незапускавшиеся тесты**.
 
-5. В разделе "Обозреватель тестов" выберите **Запустить все**.
+5. В обозревателе тестов выберите **выполнить все**.
 
-    ![Базовый тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![Основной тест пройден](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Итеративное расширение тестов и обеспечение их успешного выполнения
 
 1. Добавьте новый тест.
 
@@ -215,11 +215,11 @@ ms.locfileid: "72659609"
     >
     >  При изменении пользователями требований отключите тесты, которые больше не являются корректными. Создайте новые тесты и сделайте так, чтобы они работали по одному в инкрементном режиме.
 
-2. В разделе "Обозреватель тестов" выберите **Запустить все**.
+2. В обозревателе тестов выберите **выполнить все**.
 
 3. Тест не пройден.
 
-     ![Сбой сбой](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Сбой теста RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Непосредственно после написания кода теста проверьте, что тест не пройден. Это поможет избежать распространенной ошибки, заключающейся в написании теста, который никогда не завершается сбоем.
@@ -242,14 +242,14 @@ ms.locfileid: "72659609"
 
     ```
 
-5. Выполните сборку решения, а затем в обозревателе тестов щелкните **Запустить все**.
+5. Выполните сборку решения, а затем в обозревателе тестов выберите **запустить все**.
 
      Теперь все три теста проходятся.
 
 > [!TIP]
 > Разрабатывайте код, добавляя тесты по одному. После каждой итерации проверяйте, все ли тесты завершаются успешно.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Отладка непройденного теста
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Отладка непройденного теста
 
 1. Добавьте еще один тест в файл **UnitTest1.cs**:
 
@@ -284,11 +284,11 @@ ms.locfileid: "72659609"
 
    ```
 
-2. В разделе "Обозреватель тестов" выберите **Запустить все**.
+2. В обозревателе тестов выберите **выполнить все**.
 
     Тест не пройден. Выберите имя теста в обозревателе тестов. Ошибочное проверочное утверждение будет выделено. Сообщение об ошибке отображается в области сведений обозревателя тестов.
 
-    ![Сбой сбой тестов negativerangetests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![Сбой тестов NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Чтобы увидеть, почему тест не был пройден, выполните функцию пошагово.
 
@@ -310,13 +310,13 @@ ms.locfileid: "72659609"
 
        ```
 
-   1. В обозревателе тестов выберите **Запустить все**, чтобы протестировать исправленный метод и убедиться в том, что не была добавлена регрессия.
+   1. В обозревателе тестов выберите **запустить все** , чтобы проверить исправленный метод и убедиться, что вы еще не предоставили регрессию.
 
    Теперь все тесты проходят успешно.
 
    ![Все тесты пройдены](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_"></a> Рефакторинг кода
+## <a name="refactor-the-code"></a><a name="BKMK_Refactor_the_code_"></a> Рефакторинг кода
  **Упростите основное вычисление в функции SquareRoot.**
 
 1. Измените реализацию результата

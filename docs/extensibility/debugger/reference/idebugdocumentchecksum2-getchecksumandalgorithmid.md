@@ -1,5 +1,5 @@
 ---
-title: IdebugDocumentChecksum2:GetChecksumAndAlgorithmid Документы Майкрософт
+title: 'IDebugDocumentChecksum2:: Жетчекксумандалгорисмид | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731944"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Извлекает проверку документа и идентификатор алгоритма с учетом максимального количества байтов для использования.
+Извлекает контрольную сумму документа и идентификатор алгоритма с учетом максимального числа используемых байтов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>Параметры
 `pRetVal`\
-(ваут) Уникальный идентификатор для алгоритма проверки.
+заполняет Уникальный идентификатор для алгоритма контрольной суммы.
 
 `cMaxBytes`\
-(в) Максимальное количество байтов, которые будут использоваться для проверки.
+окне Максимальное число байтов, которое будет использоваться для вычисления контрольной суммы.
 
 `pChecksum`\
-(ваут) Значение чекового сум.
+заполняет Значение контрольной суммы.
 
 `pcNumBytes`\
-(ваут) Фактическое количество байтов, используемых для проверки.
+заполняет Фактическое число байтов, использованных для контрольной суммы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
 ## <a name="example"></a>Пример
-Следующий пример использует этот метод для получения проверки и алгоритма для документа.
+В следующем примере этот метод используется для получения контрольной суммы и алгоритма для документа.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)
@@ -126,5 +126,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

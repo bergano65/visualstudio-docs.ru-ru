@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205973"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Ведение журнала в многопроцессорной среде
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Для переадресации событий в средстве ведения журнала с переадресацией вызовите метод <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> интерфейса <xref:Microsoft.Build.Framework.IEventRedirector>. В качестве параметра передайте соответствующий <xref:Microsoft.Build.Framework.BuildEventArgs> или производный от него.  
   
- Дополнительные сведения см. в разделе [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md).  
+ Дополнительные сведения см. в разделе [Создание средств ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Присоединение распределенного средства ведения журнала  
  Чтобы присоединить распределенное средство ведения журнала для сборки из командной строки, используйте параметр `/distributedlogger` (сокращенно `/dl`). Для указания имен типов и классов средства ведения журнала используется тот же формат, что и для параметра `/logger`, с той лишь разницей, что распределенное средство ведения журнала всегда включает два класса: средство ведения журнала с переадресацией и центральное средство ведения журнала. Ниже приведен пример присоединения распределенного средства ведения журнала:  
@@ -73,6 +73,6 @@ Culture=neutral
   
  В параметре `/dl` имена двух средств ведения журнала разделены звездочкой (*).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Средства ведения журнала сборки](../msbuild/build-loggers.md)   
- [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)
+ [Создание средств ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)

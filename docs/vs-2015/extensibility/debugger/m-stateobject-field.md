@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149043"
 ---
-# <a name="mstateobject-field"></a>Поле m_stateObject
+# <a name="m_stateobject-field"></a>Поле m_stateObject
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Объект, представляющий данные, которые будет использовать действие.  
@@ -26,7 +26,7 @@ ms.locfileid: "68149043"
   
  **Сборка:** mscorlib (в mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
+ Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,8 +34,8 @@ ms.locfileid: "68149043"
 .field assembly object m_stateObject  
 ```  
   
-## <a name="remarks"></a>Примечания  
- Это `state` параметр в <xref:System.Threading.Tasks.Task.%23ctor%2A> конструктор. Это также резервное поле для <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> свойство.  
+## <a name="remarks"></a>Remarks  
+ Это `state` параметр в <xref:System.Threading.Tasks.Task.%23ctor%2A> конструкторе. Это также резервное поле для <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Свойства.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
