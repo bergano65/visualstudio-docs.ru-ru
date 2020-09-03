@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656335"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Практическое руководство. Запуск отладки XSLT.
@@ -21,7 +21,7 @@ ms.locfileid: "72656335"
 
 Для отладки таблицы стилей XSLT или приложения XSLT можно использовать отладчик XSLT. При отладке можно выполнять код по одной строке, делая шаг с входом, шаг с пропуском или шаг с выходом. Команды для использования возможностей пошагового прохождения кода аналогичны в отладчике XSLT и в других отладчиках Visual Studio. При запуске отладки отладчик XSLT открывает окна, в которых отображается входной документ и выход XSLT.
 
-## <a name="xml-editor"></a>XML-редактор
+## <a name="xml-editor"></a>Редактор XML
  Отладчик можно запустить из редактора XML. Это позволяет выполнять отладку по мере создания таблицы стилей.
 
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Запуск отладки из таблицы стилей
@@ -87,5 +87,5 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. Отладка](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) [обзора пошагового выполнения кода](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) таблицы стилей XSLT

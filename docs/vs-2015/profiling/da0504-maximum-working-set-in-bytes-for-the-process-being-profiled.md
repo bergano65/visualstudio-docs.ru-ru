@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2c57e006196611b49909f3ad6bfc866a028a8621
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850883"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0505. Максимальный рабочий набор в байтах для профилируемого процесса
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504. Максимальный рабочий набор в байтах для профилируемого процесса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Идентификатор правила | DA0504 |  
