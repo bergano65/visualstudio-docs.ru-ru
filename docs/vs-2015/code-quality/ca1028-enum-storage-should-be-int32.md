@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0b2e8ebcc7720f5cd9dc6c700bcc08b68f89e275
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542497"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028. Хранилище перечисляемых типов должно относиться к типу Int32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
@@ -73,7 +73,7 @@ ms.locfileid: "85542497"
 
  [CA1712. Не добавляйте имя типа перед перечисляемыми значениями](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName>
  <xref:System.Int32?displayProperty=fullName>
  <xref:System.Int64?displayProperty=fullName>

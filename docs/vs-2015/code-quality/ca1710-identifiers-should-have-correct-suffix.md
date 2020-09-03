@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ee7ce7c4e9edad9d941b4a70b2a199a37130e43
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543992"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710. Идентификаторы должны иметь правильные суффиксы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
@@ -44,7 +44,7 @@ ms.locfileid: "85543992"
 
 |Базовый тип или интерфейс|Суффикс|
 |--------------------------|------------|
-|<xref:System.Attribute?displayProperty=fullName>|attribute|
+|<xref:System.Attribute?displayProperty=fullName>|Атрибут|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Исключение|
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Коллекция|
@@ -56,7 +56,7 @@ ms.locfileid: "85543992"
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Словарь|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Коллекция или DataTable|
-|<xref:System.IO.Stream?displayProperty=fullName>|STREAM|
+|<xref:System.IO.Stream?displayProperty=fullName>|Поток|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Разрешение|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Условие|
 |Делегат обработчика событий.|EventHandler|
@@ -92,5 +92,5 @@ foreach(SomeType x in SomeDictionary.Values) { }
 ## <a name="related-rules"></a>Связанные правила
  [CA1711. Идентификаторы не должны иметь неправильные суффиксы](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Атрибуты](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: события и делегаты](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

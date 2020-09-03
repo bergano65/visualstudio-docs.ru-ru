@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2f019af21beba231a5f135c49fb00dcb463e110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671014"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Регистрирует шаблоны проектов или элементов, которые находятся в папке *\<путь_установки_Visual_Studio>* \Common7\IDE\ProjectTemplates\ или *\<путь_установки_Visual_Studio>* \Common7\IDE\ItemTemplates\, чтобы они были доступны в диалоговых окнах **Создание проекта** и **Добавление нового элемента**.
+Регистрирует шаблоны проектов или элементов, расположенные в *\<Visual Studio installation path>* \Common7\IDE\ProjectTemplates\ или *\<Visual Studio installation path>* \Common7\IDE\ItemTemplates\, чтобы они могли быть доступны через диалоговые окна **Новый проект** и **Добавить новый элемент** .
 
 > [!WARNING]
 > Этот параметр поддерживается только при партнерской разработке Visual Studio и недоступен в выпусках Express. Для использования параметров [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) и [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) нужно запустить devenv от имени администратора. Дополнительные сведения см. в разделе [Разрешения пользователей](../../ide/user-permissions-and-visual-studio.md).
@@ -34,7 +34,7 @@ ms.locfileid: "72671014"
 devenv.exe /InstallVSTemplates
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки для команды devenv](../../ide/reference/devenv-command-line-switches.md)

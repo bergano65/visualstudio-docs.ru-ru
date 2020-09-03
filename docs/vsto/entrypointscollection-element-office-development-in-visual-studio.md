@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ffa3c76f0f1afa0c9c445cfaf6f5f92484a73ba7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543563"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент ентрипоинтсколлектион (разработка решений Office в Visual Studio)
@@ -49,7 +49,7 @@ ms.locfileid: "85543563"
  У элемента`entryPointsCollection` имеются перечисленные ниже элементы.
 
 ### <a name="entrypoints"></a>entryPoints
- Обязательный элемент. Роль `entryPoints` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Обязательный. Роль `entryPoints` элемента в `vstav3` пространстве имен определяется в [&#60;entrypoint&#62; элемент &#40;разработке решений Office в&#41;Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
@@ -177,7 +177,7 @@ ms.locfileid: "85543563"
     </vstav3:entryPointsCollection>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

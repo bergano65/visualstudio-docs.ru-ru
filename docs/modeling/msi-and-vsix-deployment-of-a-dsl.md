@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542620"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Развертывание доменного языка с использование MSI и VSIX
 Вы можете установить доменный язык на своем компьютере или на других компьютерах. Visual Studio уже должна быть установлена на целевом компьютере.
 
-## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a>Выбор между развертыванием VSIX и MSI
+## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> Выбор между развертыванием VSIX и MSI
  Существует два способа развертывания предметно-ориентированного языка:
 
 |Метод|Преимущества|
@@ -25,7 +25,7 @@ ms.locfileid: "85542620"
 |VSX (расширение Visual Studio)|Простота развертывания: Скопируйте и выполните **VSIX** файл из проекта DslPackage.<br /><br /> Дополнительные сведения см. [в статье Установка и удаление DSL с помощью VSX](#Installing).|
 |MSI (файл установщика)|— Позволяет пользователю открыть Visual Studio, дважды щелкнув файл DSL.<br />— Связывает значок с типом файла DSL на конечном компьютере.<br />— Связывает XSD (схему XML) с типом файла DSL. Это позволяет избежать предупреждений при загрузке файла в Visual Studio.<br /><br /> Чтобы создать MSI-файл, необходимо добавить в решение проект установки.<br /><br /> Дополнительные сведения см. в разделе [Развертывание DSL с помощью MSI-файла](#msi).|
 
-## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a>Установка и удаление DSL с помощью VSX
+## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> Установка и удаление DSL с помощью VSX
 
 При установке DSL этим методом пользователь может открыть файл DSL в Visual Studio, но файл нельзя открыть из проводника Windows.
 
@@ -63,7 +63,7 @@ ms.locfileid: "85542620"
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a>Развертывание DSL в MSI
+## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a> Развертывание DSL в MSI
  Определив файл MSI (установщик Windows) для DSL, можно разрешить пользователям открывать файлы DSL из проводника Windows. Можно также связать значок и краткое описание с расширением имени файла. Кроме того, MSI может установить XSD, который можно использовать для проверки файлов DSL. При необходимости можно добавить в MSI другие компоненты, которые будут установлены одновременно.
 
  Дополнительные сведения о файлах MSI и других вариантах развертывания см. в разделе [развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md).
@@ -114,7 +114,7 @@ ms.locfileid: "85542620"
 
     Установите флажок рядом с **DslPackage**.
 
-9. Повторно создайте решение.
+9. Выполните повторную сборку решения.
 
 10. В проводнике Windows выберите в проекте установки созданный MSI файл.
 

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542601"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
@@ -44,11 +44,11 @@ ms.locfileid: "85542601"
 
    2. Для каждого DSL выберите **Добавить содержимое** и добавьте:
 
-       - `Dsl*`проект как **компонент MEF**
+       - `Dsl*` проект как **компонент MEF**
 
-       - `DslPackage*`проект как **компонент MEF**
+       - `DslPackage*` проект как **компонент MEF**
 
-       - `DslPackage*`проект как **пакет VS**
+       - `DslPackage*` проект как **пакет VS**
 
 3. Создайте решение.
 

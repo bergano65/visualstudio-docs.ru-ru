@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c668172ca318000068fb4e90f4848e456c32208d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543628"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115. Вызывайте GC.KeepAlive при использовании собственных ресурсов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
 |CheckId|CA2115|
@@ -53,14 +53,14 @@ ms.locfileid: "85543628"
   Внимательно проверьте другие сообщения, прежде чем исключать их. Это правило обнаруживает ошибки, которые трудно воспроизвести и отладить.
 
 ## <a name="example"></a>Пример
- В следующем примере не `BadMethod` включает вызов `GC.KeepAlive` и, следовательно, нарушает правило. `GoodMethod`содержит исправленный код.
+ В следующем примере не `BadMethod` включает вызов `GC.KeepAlive` и, следовательно, нарушает правило. `GoodMethod` содержит исправленный код.
 
 > [!NOTE]
 > Этот пример является псевдо-кодом, хотя код компилируется и выполняется, предупреждение не срабатывает, так как неуправляемый ресурс не создается или освобождается.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>

@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015891"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание настраиваемого шага развертывания для проектов SharePoint
@@ -79,7 +80,7 @@ ms.locfileid: "86015891"
 
 5. Выберите шаблон **проекта VSIX** , присвойте проекту имя **упградедеплойментстеп**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **упградедеплойментстеп** в **Обозреватель решений**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **упградедеплойментстеп** в **Обозреватель решений**.
 
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения
 
@@ -91,7 +92,7 @@ ms.locfileid: "86015891"
 
 4. Выберите шаблон проекта **Библиотека классов** , назовите проект **деплойментстепекстенсион**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **деплойментстепекстенсион** в решение и открывает файл кода Class1 по умолчанию.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **деплойментстепекстенсион** в решение и открывает файл кода Class1 по умолчанию.
 
 5. Удалите файл кода Class1 из проекта.
 
@@ -265,7 +266,7 @@ ms.locfileid: "86015891"
 
 7. Нажмите кнопку **Готово**.
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]создает проект Емплойислистдефинитион.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект Емплойислистдефинитион.
 
 8. Откройте контекстное меню проекта Емплойислистдефинитион, выберите **Добавить**, а затем выберите **новый элемент**.
 
@@ -283,7 +284,7 @@ ms.locfileid: "86015891"
 
     3. **Значение по умолчанию (пустое)** выбирается в списке **создать настраиваемый список на основе:** .
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]создает элемент списка Employees со столбцом Title и одним пустым экземпляром и открывает конструктор списка.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает элемент списка Employees со столбцом Title и одним пустым экземпляром и открывает конструктор списка.
 
 12. В конструкторе списков на вкладке **столбцы** выберите **тип новой или существующей строки имени столбца** , а затем добавьте следующие столбцы в список **Отображаемое имя столбца** :
 
