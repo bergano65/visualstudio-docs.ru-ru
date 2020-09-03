@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: be60d2a1dcb769a0b7a8574984de3d288bf57af4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538883"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309. Используйте порядковый параметр StringComparison
@@ -41,10 +41,10 @@ ms.locfileid: "85538883"
  При указании либо **StringComparison. Ordinal** , либо **StringComparison. OrdinalIgnoreCase**, сравнение строк будет нелингвистическим. То есть функции, характерные для естественного языка, игнорируются при принятии решений по сравнению. Это означает, что решения основаны на простых сравнениях байтов и не учитывают регистр или таблицы эквивалентности, параметризованные языком и региональными параметрами. В результате, явно присвоив параметру значение **StringComparison. Ordinal** или **StringComparison. OrdinalIgnoreCase**, ваш код часто получает скорость, увеличивает правильность и становится более надежным.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените метод сравнения строк на перегрузку, принимающую <xref:System.StringComparison?displayProperty=fullName> перечисление в качестве параметра, и укажите либо **Ordinal** , либо **OrdinalIgnoreCase**. Например, измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Чтобы устранить нарушение этого правила, измените метод сравнения строк на перегрузку, принимающую <xref:System.StringComparison?displayProperty=fullName> перечисление в качестве параметра, и укажите либо **Ordinal** , либо **OrdinalIgnoreCase**. Например измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Предупреждение из этого правила можно отключить, если библиотека или приложение предназначены для ограниченной локальной аудитории или если необходимо использовать семантику текущего языка и региональных параметров.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Предупреждения глобализации](../code-quality/globalization-warnings.md) [CA1307: укажите StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

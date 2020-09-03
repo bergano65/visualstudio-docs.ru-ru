@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Документация Майкрософт
+title: С + + Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e2f6e8011b001c88743871a137ebc0b8cd7c26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204794"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -49,30 +49,30 @@ public enum enum_THREADSTATE { 
   
 ## <a name="members"></a>Участники  
  THREADSTATE_RUNNING  
- Указывает, что поток выполняется.  
+ Указывает, что поток работает.  
   
  THREADSTATE_STOPPED  
  Указывает, что поток остановлен из-за точки останова.  
   
  THREADSTATE_FRESH  
- Указывает, что поток будет создана, но еще не выполняется код.  
+ Указывает, что поток был создан, но еще не выполняет код.  
   
  THREADSTATE_DEAD  
- Указывает, что поток бездействует.  
+ Указывает, что поток не существует.  
   
  THREADSTATE_FROZEN  
- Указывает, что поток заморожен (выполнение не может выполняться).  
+ Указывает, что поток заморожен (выполнение не может быть выполнено).  
   
-## <a name="remarks"></a>Примечания  
- Используется для `dwThreadState` поле [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры.  
+## <a name="remarks"></a>Remarks  
+ Используется для `dwThreadState` поля структуры [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

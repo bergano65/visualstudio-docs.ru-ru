@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9424eb099516761866ec459888ff830fcf56a28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154743"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -40,13 +40,13 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Обязательные параметры  
  Параметр **WinCounter** можно использовать только вместе с параметром **Start**.  
   
- **Start:** `Method`  
- Параметр **Start** инициализирует профилировщик для заданного метода профилирования.  
+ **Начало работы:**`Method`  
+  Параметр **Start** инициализирует профилировщик для заданного метода профилирования.  
   
 ## <a name="exclusive-options"></a>Монопольные параметры  
  Параметр **AutoMark** можно использовать только вместе с параметром **WinCounter**.  
   
- **AutoMark:** `Milliseconds`  
+ **Автомаркировка:**`Milliseconds`  
  Задает интервал времени (в миллисекундах) между сбором данных счетчика производительности Windows.  
   
 ## <a name="example"></a>Пример  
@@ -56,8 +56,8 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

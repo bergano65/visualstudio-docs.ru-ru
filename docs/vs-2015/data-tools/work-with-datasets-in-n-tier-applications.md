@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657815"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n-уровневых приложениях
@@ -41,7 +41,7 @@ N-уровневые приложения для обработки данных
 
  N-уровневая поддержка в типизированных наборах данных позволяет итеративно разрабатывать архитектуру приложения в n-уровневой конструкции. Также устраняется необходимость разделения кода вручную на более одного проекта. Начните разработку уровня данных с помощью конструктор наборов данных. Когда все готово к переводу архитектуры приложения на n-уровневую структуру, задайте свойство **Проект DataSet** набора данных, чтобы сформировать класс набора данных в отдельном проекте.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Отделение наборов данных и адаптеров таблиц к разным проектам](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md) Описывает, как переместить созданный класс набора данных из проекта, содержащего созданные классы TableAdapter и в новый проект.
 
  [Добавление кода для адаптеров таблиц в n-уровневые приложения](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md) Описывает, как создать разделяемый класс, в котором можно добавить код для n-уровневого TableAdapter.
@@ -63,6 +63,6 @@ N-уровневые приложения для обработки данных
 
 - [Общие сведения о N-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
-- [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Инструменты набора данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [N-уровневые и удаленные приложения и LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

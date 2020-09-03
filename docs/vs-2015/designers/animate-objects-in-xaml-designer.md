@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658025"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Анимирование объектов в конструкторе XAML
@@ -29,7 +29,7 @@ ms.locfileid: "72658025"
 
  Посмотрите следующие видео, чтобы узнать, как создавать анимацию.
 
-|Ознакомьтесь с коротким видео.|Получите следующие сведения:|
+|Ознакомьтесь с коротким видео.|Вы узнаете, как выполнять следующие задачи:|
 |--------------------------|-------------------|
 |![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание временных шкал](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Создание временной шкалы и работа с объектами временной шкалы.|
 |![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Добавление опорных кадров и повторение анимации](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Добавьте ключевые кадры и задайте свойства для каждого ключевого кадра. Затем запустите анимацию, и вы увидите, как объекты плавно перемещаются между ключевыми кадрами.|
@@ -40,5 +40,5 @@ ms.locfileid: "72658025"
 |![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [анимация кнопки](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Создание интересных эффектов, которые отображаются на кнопке при наведении на нее курсора.|
 |![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание анимации и работа с замедлением](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Анимация эффектов, которые отображаются в том случае, когда пользователь нажимает кнопку на изображении калькулятора.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

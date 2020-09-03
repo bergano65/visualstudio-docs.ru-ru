@@ -1,5 +1,5 @@
 ---
-title: Элемент EnableLocationBrowseButton (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент Енаблелокатионбровсебуттон (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef9f42bfb24caaf2775ba2c70110eaaa5d616116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204596"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговом окне, чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен проект.  
+Указывает, доступна ли кнопка " **Обзор** " в диалоговом окне " **Новый проект** ", чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен новый проект.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableLocationBrowseButton >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableLocationBrowseButton>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,15 +52,15 @@ ms.locfileid: "68204596"
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Этот текст должен быть либо `true` или `false`, указывающее, следует ли отображать **Обзор** кнопку **новый проект** диалоговое окно.  
+ Текст должен иметь значение `true` или `false` , что указывает, следует ли отображать кнопку " **Обзор** " в диалоговом окне " **Создание проекта** ".  
   
-## <a name="remarks"></a>Примечания  
- `EnableLocationBrowseButton` — это необязательный элемент. Значение по умолчанию — `true`, которое отображает **Обзор** кнопку **новый проект** диалоговое окно.  
+## <a name="remarks"></a>Remarks  
+ Параметр `EnableLocationBrowseButton` является необязательным элементом. Значение по умолчанию — `true` , которое отображает кнопку « **Обзор** » в диалоговом окне « **Новый проект** ».  
   
- В **новый проект** диалоговом окне **расположение** текстовое поле указывает каталоге, где сохранен проект. **Обзор** кнопка помогает изменить этот каталог, отобразив **расположение проекта** поле диалогового окна, которое позволяет легко перейти в другой каталог, который доступен с компьютера, и затем выберите его в качестве каталога, где сохранен новый проект.  
+ В диалоговом окне **Новый проект** в текстовом поле **Расположение** указывается каталог, в котором сохранен новый проект. Кнопка **Обзор** позволяет изменить этот каталог, отображая диалоговое окно **расположение проекта** , которое позволяет легко перейти в другой каталог, доступный на компьютере, а затем выбрать его в качестве каталога, в котором сохранен новый проект.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано метаданные для [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения Windows.  
+ В следующем примере показаны метаданные для [!INCLUDE[csprcs](../includes/csprcs-md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ ms.locfileid: "68204596"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

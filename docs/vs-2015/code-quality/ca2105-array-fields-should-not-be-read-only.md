@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db52bf869642a5bdcc28eeb0792b295ae314a508
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538675"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105. Поля массивов не должны быть доступны только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
@@ -68,5 +68,5 @@ ms.locfileid: "85538675"
 
  **Перед незаконным изменением: оценки: 90, 90, 90 частные оценки: 90, 90, 90 Secure Grades, 90, 90, 90** 
  **После изменения: оценки: 90, 555, 90 частные оценки: 90, 555, 90 Secure Grades, 90, 90, 90**
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

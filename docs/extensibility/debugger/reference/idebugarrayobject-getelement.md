@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement Документы Майкрософт
+title: 'Идебугаррайобжект:: элемент | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736181"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
-Получает элемент массива.
+Возвращает элемент массива.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int GetElement(
 
 ## <a name="parameters"></a>Параметры
 `dwIndex`\
-(в) Индекс элемента.
+окне Индекс элемента.
 
 `ppElement`\
-(ваут) Возвращает интерфейс [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий элемент.
+заполняет Возвращает интерфейс [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий элемент.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод рассматривает все элементы объекта массива как одномерный массив, даже если объект массива многомерный. Например, учитывая `myarray[3][2][6]` массив `dwIndex` и параметр 20, этот `myarray[1][1][2]`метод будет `dwIndex` возвращать элемент из, и `myarray[1][1][3]`параметр 21 будет возвращать элемент из . Используйте метод [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) для определения общего количества элементов в массиве.
+## <a name="remarks"></a>Remarks
+ Этот метод видит все элементы объекта массива в виде одномерного массива, даже если объект массива является многомерным. Например, при наличии массива `myarray[3][2][6]` и `dwIndex` параметра 20 этот метод возвратит элемент из `myarray[1][1][2]` , а `dwIndex` параметр, равный 21, возвратит элемент из `myarray[1][1][3]` . Используйте метод [NOCOUNT](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) , чтобы определить общее число элементов в массиве.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

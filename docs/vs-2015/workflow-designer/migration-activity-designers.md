@@ -10,17 +10,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bb2cf8e85dadb6ad9391da8227508b770c39bbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672647"
 ---
 # <a name="migration-activity-designers"></a>Конструкторы действий миграции
 Конструкторы операций миграции используются для вызова действий рабочих процессов 3.0/3.5 из рабочих процессов, предназначенных для выполнения в [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. В подразделах этого раздела описывается использование конструкторов действий [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
-## <a name="in-this-section"></a>Содержание
- [Взаимодействие](../workflow-designer/interop-activity-designer.md) Используется для создания и настройки действия <xref:System.Activities.Statements.Interop>.
+## <a name="in-this-section"></a>в этом разделе
+ [Взаимодействие](../workflow-designer/interop-activity-designer.md) Используется для создания и настройки <xref:System.Activities.Statements.Interop> действия.
 
 ## <a name="reference"></a>Справочник
 
@@ -33,9 +33,9 @@ ms.locfileid: "72672647"
 
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)
 
- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+ [Параметры выполнения](../workflow-designer/runtime-activity-designers.md)
 
  [Примитивы](../workflow-designer/primitives-activity-designers.md)
 

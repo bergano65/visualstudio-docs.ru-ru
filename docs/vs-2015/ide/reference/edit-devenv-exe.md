@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c81f59f2dadf535af4e9a76949a29fd1355c33f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657746"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -35,7 +35,7 @@ Devenv /edit [file1[ file2]]
 
  `file2` Необязательный. Один или несколько дополнительных файлов для открытия в существующем экземпляре [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Если файл не указан и существует экземпляр [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], этот экземпляр [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] получает фокус. Если файл не указан и экземпляр [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отсутствует, создается экземпляр [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] с упрощенным макетом окна.
 
  Если существующий экземпляр [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] находится в модальном состоянии, например, если открыто [диалоговое окно "Параметры"](../../ide/reference/options-dialog-box-visual-studio.md), файл открывается в существующем экземпляре, когда [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] выходит из модального состояния.
@@ -47,5 +47,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs
 ```
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки для команды devenv](../../ide/reference/devenv-command-line-switches.md)

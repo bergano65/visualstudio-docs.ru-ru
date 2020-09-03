@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode Документы Майкрософт
+title: 'IDebugProgramPublisher2:: Унпублишпрограмноде | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721579"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Удаляет указанный узло программы из наличия для отладки двигателей (DEs) и диспетчера отладки сеанса (SDM).
+Удаляет указанный узел программы из уровня доступности в модули отладки (DEs) и диспетчер отладки сеансов (SDM).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,17 +41,17 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>Параметры
 `pProgramNode`\
-(в) Объект [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) представляющий уза программы, удаляется.
+окне Объект [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий удаляемый узел программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- После удаления узла программы больше не доступен для запроса информации о программе.
+## <a name="remarks"></a>Remarks
+ После удаления узел программы больше не будет доступен для запроса сведений о программе.
 
- Чтобы сделать узлы программы доступными, позвоните в метод [PublishProgramNode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)
+ Чтобы сделать узел программы доступным, вызовите метод [публишпрограмноде](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

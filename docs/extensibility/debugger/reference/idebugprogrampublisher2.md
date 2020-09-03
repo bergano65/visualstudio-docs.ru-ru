@@ -1,5 +1,5 @@
 ---
-title: IDebugПрограммаИздатель2 Документы Майкрософт
+title: IDebugProgramPublisher2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721523"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-Этот интерфейс позволяет отладке двигателя (DE) или пользовательских поставщиков порта для регистрации программ для отладки.
+Этот интерфейс позволяет подсистеме отладки (DE) или поставщикам пользовательских портов регистрировать программы для отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,35 +28,35 @@ ms.locfileid: "80721523"
 IDebugProgramPublisher2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
-Visual Studio реализует этот интерфейс для регистрации отладки программ, чтобы сделать их видимыми для отладки в нескольких процессах.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+Visual Studio реализует этот интерфейс для регистрации отлаживаемых программ, чтобы сделать их видимыми для отладки между несколькими процессами.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
-Функция COM `CoCreateInstance` с `CLSID_ProgramPublisher` для получения этого интерфейса (см. пример). DE или поставщик пользовательских портов использует этот интерфейс для регистрации узлов программы, представляющих отладудинированные программы.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Вызовите `CoCreateInstance` функцию COM с `CLSID_ProgramPublisher` для получения этого интерфейса (см. пример). Поставщик DE или настраиваемого порта использует этот интерфейс для регистрации узлов программы, представляющих отлаживаемые программы.
 
-## <a name="methods-in-vtable-order"></a>Методы в порядке Vtable
-Этот интерфейс реализует следующие методы:
+## <a name="methods-in-vtable-order"></a>Методы в порядке vtable
+Этот интерфейс реализует следующие методы.
 
 |Метод|Описание|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Делает узло программы доступным для DEs и менеджера отладки сеанса (SDM).|
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Удаляет узла программы, чтобы он больше не был доступен.|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Делает узел программы доступным для DEs и диспетчера отладки сеансов (SDM).|
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Удаляет узел программы, чтобы он стал недоступным.|
 |[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Делает программу доступной для DEs и SDM.|
 |[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Удаляет программу, чтобы она больше не была доступна.|
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Устанавливает флаг, указывающий на наличие отладчика.|
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Задает флаг, указывающий на наличие отладчика.|
 
-## <a name="remarks"></a>Примечания
-Этот интерфейс делает программы и узлы программы доступными (т.е. «публикует» их) для использования DEs и диспетчером отладки сеансов (SDM). Чтобы получить доступ к опубликованным программам и узлам программы, используйте интерфейс [IDebugProgramProvider2.](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Это единственный способ Visual Studio распознать, что программа отлажается.
+## <a name="remarks"></a>Remarks
+Этот интерфейс делает доступными программы и узлы программ (то есть «публикует их») для использования алгоритмом DEs и диспетчером отладки сеансов (SDM). Для доступа к опубликованным программам и узлам программ используйте интерфейс [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . Это единственный способ, которым Visual Studio может распознать, что программа отлаживается.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Пример
-Этот пример показывает, как мгновенно узла программы и зарегистрировать узла программы. Это взято из учебника, [Публикация узла программы](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
+В этом примере показано, как создать экземпляр издателя программы и зарегистрировать узел программы. Это взято из руководства по [публикации узла программы](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

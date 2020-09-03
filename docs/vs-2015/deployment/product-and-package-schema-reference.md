@@ -1,5 +1,5 @@
 ---
-title: Продукт и справочник по схемам пакета | Документация Майкрософт
+title: Справочник по схеме продуктов и пакетов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -27,36 +27,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188958"
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и Microsoft Data Access Components (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависит от языка и региональных параметров, зависимости, такие как локализованных сборок, лицензионные соглашения и документации.  
+*Файл продукта* — это XML-манифест, который описывает все внешние зависимости, необходимые для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения. Примеры внешних зависимостей включают в себя [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] и компоненты Microsoft Data Access Components (MDAC). Файл пакета аналогичен файлу продукта, но используется для установки зависимых от языка и региональных параметров компонентов зависимости, таких как локализованные сборки, лицензионные соглашения и документация.  
   
- Файл продукта и пакета состоит из верхнего уровня `Product` или `Package` элемент, каждый из которых содержит следующие элементы.  
+ Файл Product и Packages состоит из элемента верхнего уровня `Product` или `Package` , каждый из которых содержит следующие элементы.  
   
 |Элемент|Описание|Атрибуты|  
 |-------------|-----------------|----------------|  
-|[Элемент \<Product>](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|None|  
-|[Элемент \<Package>](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[Элемент \<RelatedProducts>](../deployment/relatedproducts-element-bootstrapper.md)|Необязательный элемент, для файла продукта. Другие продукты, устанавливает или зависит от этого продукта.|None|  
-|[Элемент \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)|Обязательный элемент. Список проверок зависимостей для выполнения на локальном компьютере во время установки.|None|  
-|[Элемент \<Commands>](../deployment/commands-element-bootstrapper.md)|Обязательный элемент.  Выполняет одну или несколько проверок установки согласно `InstallChecks`и указывает, какой пакет следует установить проверка завершилась ошибкой.|None|  
-|[Элемент \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Обязательный элемент. Список пакетов, которые могут быть установлены в процессе установки.|None|  
-|[Элемент \<Strings>](../deployment/strings-element-bootstrapper.md)|Обязательный элемент. Сохраняет локализованную версию строки имени и ошибка продукта.|None|  
+|[\<Product> Элемент](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов продукта.|Нет|  
+|[\<Package> Элемент](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> Элемент](../deployment/relatedproducts-element-bootstrapper.md)|Необязательный элемент для файлов продукта. Другие продукты, которые устанавливаются или зависят от продукта.|Нет|  
+|[\<InstallChecks> Элемент](../deployment/installchecks-element-bootstrapper.md)|Обязательный элемент. Список проверок зависимостей, выполняемых на локальном компьютере во время установки.|Нет|  
+|[\<Commands> Элемент](../deployment/commands-element-bootstrapper.md)|Обязательный элемент.  Выполняет одну или несколько проверок установки, описанных в `InstallChecks` , и указывает, какой пакет следует установить, если проверка не пройдена.|Нет|  
+|[\<PackageFiles> Элемент](../deployment/packagefiles-element-bootstrapper.md)|Обязательный элемент. Список пакетов, которые могут быть установлены в процессе установки.|Нет|  
+|[\<Strings> Элемент](../deployment/strings-element-bootstrapper.md)|Обязательный элемент. Хранит локализованные версии имени продукта и строки ошибок.|None|  
   
-## <a name="remarks"></a>Примечания  
- Схема пакета, используемая Setup.exe, программу-заглушку, созданный задачей начальной загрузки MS Build, которая содержит немного логики жестко свои собственные. Схема управляет всеми аспектами процесса установки.  
+## <a name="remarks"></a>Remarks  
+ Схема пакета используется Setup.exe, программой-заглушкой, созданной задачей начальной загрузки сборки MS Build, которая содержит небольшую жестко запрограммированную логику. Схема управляет всеми аспектами процесса установки.  
   
- `InstallChecks` тесты, setup.exe следует выполнить для проверки наличия заданного пакета. `PackageFiles` Перечисляет все пакеты, которые процесс установки может потребоваться установить, если заданный тест завершается неуспешно. Каждая запись команды в группе команды выполняет один из тестов, описываемого `InstallChecks`и указывает, какой `PackageFile` для запуска при неудачной проверке. Можно использовать `Strings` элемент локализовать названия продуктов и сообщений об ошибках, которые можно использовать один единый двоичный файл установки для установки приложения для любого числа языков.  
+ `InstallChecks` тесты, которые setup.exe должны выполняться для существования заданного пакета. `PackageFiles` Список всех пакетов, которые могут быть установлены в процессе установки, в случае сбоя данного теста. Каждая запись команды в разделе команды выполняет один из тестов, описанных в `InstallChecks` , и указывает, какой из них `PackageFile` следует запускать, если тест не пройден. Элемент можно использовать `Strings` для локализации названий продуктов и сообщений об ошибках, чтобы можно было использовать один двоичный файл установки для установки приложения на любом числе языков.  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показано создание файла продукта для установки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ В следующем примере кода показан полный файл продукта для установки [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -160,6 +160,6 @@ ms.locfileid: "68188958"
 </Product>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

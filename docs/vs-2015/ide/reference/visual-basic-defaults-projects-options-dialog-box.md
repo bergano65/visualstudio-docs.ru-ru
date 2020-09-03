@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f08cc817fab6e81ae1160462c9b6d1221ca41160
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657877"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Страница "Параметры Visual Basic по умолчанию", папка "Проекты", диалоговое окно "Параметры"
@@ -33,9 +33,9 @@ ms.locfileid: "72657877"
 
  **Optioned** Задает значение по умолчанию компилятора, чтобы явное сужающие преобразования требовались, а позднее связывание не разрешено. По умолчанию **Option Strict** имеет значение **Off**. Дополнительные сведения см. в описании [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).
 
- **Параметр Compare** Задает компилятор по умолчанию для сравнений строк: двоичный (с учетом регистра) или текст (без учета регистра). По умолчанию Option Compare имеет значение **Binary**. Дополнительные сведения см. в описании [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).
+ **Параметр Compare** Задает компилятор по умолчанию для сравнений строк: двоичный (с учетом регистра) или текст (без учета регистра). По умолчанию **параметр Compare** имеет значение **binary**. Дополнительные сведения см. в описании [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).
 
  **Параметр Infer** Задает значение по умолчанию компилятора для определения локального типа. По умолчанию **Option Infer** имеет значение **On** для вновь созданных проектов и **Off** для проектов, перенесенных из более ранних версий Visual Basic. Дополнительные сведения см. в описании [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 551e072b05e7a88ff9624c5d16e4aa199a6afd66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657978"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (динамическое свойство XElement)
@@ -27,11 +27,11 @@ ms.locfileid: "72657978"
 elem.Attribute[{namespaceName}attribName]
 ```
 
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение
  Индексатор типа `XAttribute Item(String expandedName)`. Данный индексатор принимает развернутое имя указанного атрибута и возвращает соответствующий <xref:System.Xml.Linq.XAttribute> или значение `null`, если не существует атрибута с указанным именем.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Это свойство эквивалентно методу <xref:System.Xml.Linq.XElement.Attribute%2A> класса <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
-## <a name="see-also"></a>См. также
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName> [значение](../designers/value-xattribute-dynamic-property.md) динамических свойств класса [XElement](../designers/xelement-class-dynamic-properties.md)
+## <a name="see-also"></a>См. также:
+ <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>[Значение](../designers/value-xattribute-dynamic-property.md) [динамических свойств класса XElement](../designers/xelement-class-dynamic-properties.md)

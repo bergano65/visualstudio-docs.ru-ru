@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren Документы Майкрософт
+title: 'IDebugProperty2:: Енумчилдрен | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721512"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-Извлекает список дочерних детей отеля.
+Извлекает список дочерних элементов свойства.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,30 +53,30 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Сочетание флагов [из DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, которое определяет, какие поля в перечисленных [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры должны быть заполнены.
+окне Сочетание флагов из перечисления [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , которое указывает, какие поля в перечисленных структурах [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) должны быть заполнены.
 
 `dwRadix`\
-(в) Определяет сятик, который будет использоваться при форматировании любой численной информации.
+окне Указывает основание системы счисления, используемое при форматировании любых числовых данных.
 
 `guidFilter`\
-(в) GUID фильтра, используемого с `dwAttribFilter` `pszNameFilter` параметрами для выбора, какие `DEBUG_PROPERTY_INFO` дети должны быть перечислены. Например, `guidFilterLocals` фильтры для локальных переменных.
+окне Идентификатор GUID фильтра, используемого с `dwAttribFilter` параметрами и, `pszNameFilter` для выбора `DEBUG_PROPERTY_INFO` дочерних элементов для перечисления. Например, `guidFilterLocals` фильтры для локальных переменных.
 
 `dwAttribFilter`\
-(в) Комбинация флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, которая определяет, какой тип объектов `DBG_ATTRIB_METHOD` перечислить, например для всех методов, которые могут быть детьми этого свойства. Используется в `guidFilter` сочетании `pszNameFilter` с параметрами.
+окне Сочетание флагов из перечисления [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) , которое указывает тип объектов для перечисления, например `DBG_ATTRIB_METHOD` для всех методов, которые могут быть дочерними для данного свойства. Используется в сочетании с `guidFilter` параметрами и `pszNameFilter` .
 
 `pszNameFilter`\
-(в) Название фильтра, используемого `guidFilter` `dwAttribFilter` с параметрами `DEBUG_PROPERTY_INFO` для выбора, какие дети должны быть перечислены. Например, установка этого параметра на фильтры "MyX" для всех детей с названием "MyX".
+окне Имя фильтра, используемого с `guidFilter` параметрами и, `dwAttribFilter` для выбора `DEBUG_PROPERTY_INFO` дочерних элементов для перечисления. Например, при присвоении этому параметру фильтров "микс" для всех дочерних элементов с именем "микс".
 
 `dwTimeout`\
-(в) Определяет максимальное время, в миллисекундах, чтобы ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
+окне Указывает максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.
 
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugPropertyInfo2,](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) содержащий список свойств ребенка.
+заполняет Возвращает объект [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , содержащий список дочерних свойств.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае возвращает код ошибки.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658075"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Оценка сложности и удобства сопровождения управляемого кода
@@ -33,9 +33,9 @@ ms.locfileid: "72658075"
 
  Разработчики могут использовать [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] для создания данных метрик кода, которые измеряют сложность и удобство обслуживания управляемого кода. Данные метрик кода могут создаваться для всего решения или отдельного проекта.
 
- В этом разделе описывается создание и использование метрик кода в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ В этом разделе описывается создание и использование метрик кода в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Значения метрик кода](../code-quality/code-metrics-values.md)
 
  [Практическое руководство. Создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
@@ -48,5 +48,5 @@ ms.locfileid: "72658075"
 
  [Как создать рабочий элемент на основе результата](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Устранение неполадок, связанных с метриками кода](../code-quality/troubleshooting-code-metrics-issues.md) при [выполнении стандартных задач разработки](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

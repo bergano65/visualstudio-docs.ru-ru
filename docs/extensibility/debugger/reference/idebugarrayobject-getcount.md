@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount Документы Майкрософт
+title: 'Идебугаррайобжект:: NOCOUNT | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d9d5e322b7bcd5238335c74caa21989f1f1962ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736207"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
-Получает количество элементов в массиве.
+Возвращает число элементов в массиве.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Параметры
 `pdwElements`\
-(ваут) Возвращает счет.
+заполняет Возвращает число.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод рассматривает все элементы объекта массива как одномерный массив, даже если объект массива многомерный. Например, с `myarray[3][2][6]`учетом массива этот метод `pdwElements` возвращает 36 в параметре. Используйте метод [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) для извлечения отдельных элементов по одному.
+## <a name="remarks"></a>Remarks
+ Этот метод видит все элементы объекта массива в виде одномерного массива, даже если объект массива является многомерным. Например, при наличии массива `myarray[3][2][6]` этот метод возвратит 36 в `pdwElements` параметре. Используйте метод [WebMethod](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) для получения отдельных элементов по одному за раз.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

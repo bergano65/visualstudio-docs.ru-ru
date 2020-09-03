@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547892"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009. Правильно объявляйте обработчики событий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
@@ -47,7 +47,7 @@ ms.locfileid: "85547892"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показан делегат, подходящий для обработки событий. Методы, которые могут вызываться этим обработчиком событий, соответствуют сигнатуре, указанной в руководствах по проектированию. `AlarmEventHandler`имя типа делегата. `AlarmEventArgs`является производным от базового класса для данных события, <xref:System.EventArgs> и содержит данные события будильника.
+ В следующем примере показан делегат, подходящий для обработки событий. Методы, которые могут вызываться этим обработчиком событий, соответствуют сигнатуре, указанной в руководствах по проектированию. `AlarmEventHandler` имя типа делегата. `AlarmEventArgs` является производным от базового класса для данных события, <xref:System.EventArgs> и содержит данные события будильника.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]
@@ -56,6 +56,6 @@ ms.locfileid: "85547892"
 ## <a name="related-rules"></a>Связанные правила
  [CA2109. Проверьте видимые обработчики событий](../code-quality/ca2109-review-visible-event-handlers.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
  [NIB: события и делегаты](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658475"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Устранение неполадок, связанных с расширениями для схем слоев
@@ -24,11 +24,11 @@ ms.locfileid: "72658475"
 
 В этом разделе рассматриваются некоторые проблемы, которые могут возникнуть при создании расширений модели слоев.
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>При нажатии клавиши F5 для отладки расширения команды, обработчики жестов, расширения проверки или пользовательские свойства не отображаются на схемах слоев в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>При нажатии клавиши F5 для отладки расширения команды, обработчики жестов, расширения проверки или пользовательские свойства не отображаются на схемах слоев в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 1. Откройте решение расширения в экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и в меню **Сборка** выберите **Перестроить решение**.
 
-2. Нажмите клавишу **F5** или **CTRL + F5** , чтобы запустить экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Откройте схему слоев и протестируйте расширение.
+2. Нажмите клавишу **F5** или **CTRL + F5** , чтобы запустить экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Откройте схему слоев и протестируйте расширение.
 
    При необходимости выполните описанную ниже процедуру.
 
@@ -36,10 +36,10 @@ ms.locfileid: "72658475"
 
 1. Убедитесь в том, что не выполняется экспериментальный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-2. Удалите следующую папку:%Локалаппдата%\микрософт\висуалстудио \\ [версия] \Компонентмоделкаче
+2. Удалите следующую папку:%Локалаппдата%\микрософт\висуалстудио \\ [версия] \компонентмоделкаче
 
    > [!NOTE]
-   > % LocalAppData% обычно *DriveName*: \Users \\*username*\аппдата\локал.
+   > % LocalAppData% обычно *DriveName*: \Users \\ *username*\аппдата\локал.
 
    При необходимости выполните описанную ниже процедуру.
 
@@ -53,5 +53,5 @@ ms.locfileid: "72658475"
 
 4. В разделе **source. extension. vsixmanifest** проекта проверки слоев убедитесь, что в поле **содержимое**добавлены элемент **компонента MEF** и **Пользовательский элемент типа расширения** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Расширение схем слоев](../modeling/extend-layer-diagrams.md)

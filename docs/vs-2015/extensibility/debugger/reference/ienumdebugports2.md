@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c30e42592af4d34765951b5e229555556c9b57b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155021"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот интерфейс перечисляет порты машинного или порта поставщика.  
+Этот интерфейс перечисляет порты компьютера или поставщика порта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,35 +31,35 @@ IEnumDebugPorts2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Поставщика пользовательского порта реализует этот интерфейс для представления список портов, созданные поставщиком. Visual Studio реализует этот интерфейс для поддержки свой собственный поставщик порта.  
+ Пользовательский поставщик портов реализует этот интерфейс для представления списка портов, созданных поставщиком. Visual Studio реализует этот интерфейс для поддержки собственного поставщика порта.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызовите [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) для получения этого интерфейса, представляющий список портов, созданные поставщика порта. Вызовите [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) для получения этого интерфейса, представляющий список портов, которые были сохранены на диск.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [енумпортс](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) , чтобы получить этот интерфейс, представляющий список портов, созданных поставщиком порта. Вызовите [енумперсистедпортс](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) , чтобы получить этот интерфейс, представляющий список портов, сохраненных на диске.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IEnumDebugPorts2`.  
+ В следующей таблице показаны методы `IEnumDebugPorts2` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
 |[Вперед](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Извлекает указанное число портов в последовательности перечисления.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Пропускает заданное число портов в последовательности перечисления.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Получает количество портов в перечислителе.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Пропускает указанное число портов в последовательности перечисления.|  
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[Клонировать](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Возвращает количество портов в перечислителе.|  
   
-## <a name="remarks"></a>Примечания  
- Visual Studio использует этот интерфейс, помогающий заполнить Мой список портов, используемых для присоединения к процессам.  
+## <a name="remarks"></a>Remarks  
+ Visual Studio использует этот интерфейс для заполнения списка портов, используемых для присоединения к процессам.  
   
- Обычно модуль отладки не использует этот интерфейс.  
+ Модуль отладки обычно не использует этот интерфейс.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)   
+## <a name="see-also"></a>См. также:  
+ [Основные интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [енумпортс](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)   
  [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

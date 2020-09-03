@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 96241026afff71c061abcfae3547d25cc2166902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152879"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Расширяет **IDebugTypeFieldBuilder** чтобы иметь возможность создавать типы массивов.  
+Расширяет **идебугтипефиелдбуилдер** , чтобы иметь возможность создавать типы массивов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -28,19 +28,19 @@ ms.locfileid: "68152879"
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
  Этот интерфейс можно получить от поставщика символов.  
   
 ## <a name="methods"></a>Методы  
- В дополнение к методам на [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) интерфейс, этот интерфейс реализует следующий метод:  
+ В дополнение к методам в интерфейсе [идебугтипефиелдбуилдер](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
 |------------|-----------------|  
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Создает массив указанного типа и размера.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

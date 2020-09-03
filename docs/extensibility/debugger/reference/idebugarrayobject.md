@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject Документы Майкрософт
+title: Идебугаррайобжект | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 709273b89d89759163acb725220d1092d33ad72f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736212"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии CLR, пожалуйста, ознакомьтесь с [clR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образцом управляемого оценщика экспрессии.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Этот интерфейс представляет собой объект массива.
+ Этот интерфейс представляет объект массива.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,32 +31,32 @@ ms.locfileid: "80736212"
 IDebugArrayObject : IDebugObject
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Оценщик выражения реализует этот интерфейс для представления массива.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Средство оценки выражений реализует этот интерфейс для представления массива.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Интерфейс [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) может получить этот интерфейс с помощью [queryInterface,](/cpp/atl/queryinterface) если объект представляет массив.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Интерфейс [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) может получить этот интерфейс с помощью [QueryInterface](/cpp/atl/queryinterface) , если объект представляет массив.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В дополнение к методам `IDebugObject` на интерфейсе, следующие методы реализованы на интерфейсе. `IDebugArrayObject`
+ Помимо методов `IDebugObject` интерфейса, в интерфейсе реализуются следующие методы `IDebugArrayObject` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|Получает количество элементов в массиве.|
-|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|Получает элемент массива.|
-|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|Получает все элементы массива.|
-|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|Получает ранг массива.|
-|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Получает размеры массива.|
+|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|Возвращает число элементов в массиве.|
+|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|Возвращает элемент массива.|
+|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|Возвращает все элементы массива.|
+|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|Возвращает ранг массива.|
+|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Возвращает размеры массива.|
 
-## <a name="remarks"></a>Примечания
- Оценщик выражения использует этот интерфейс для представления массивов в дереве разбора.
+## <a name="remarks"></a>Remarks
+ Средство оценки выражений использует этот интерфейс для представления массивов в дереве синтаксического анализа.
 
 ## <a name="requirements"></a>Требования
- Заголовок: ee.h
+ Заголовок: ee. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
