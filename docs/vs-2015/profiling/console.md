@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e947fb28c92323f0d4d66c697c272699fc63450e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161314"
 ---
 # <a name="console"></a>Консоль
@@ -28,16 +28,16 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```  
   
 #### <a name="parameters"></a>Параметры  
- Нет  
+ Отсутствуют  
   
 ## <a name="required-options"></a>Обязательные параметры  
  Параметр **Console** можно указывать только в командной строке, в которой также содержится параметр **Launch**.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает профилировщик и приложение, заданное параметром `AppName`.  
   
-## <a name="see-also"></a>См. также  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

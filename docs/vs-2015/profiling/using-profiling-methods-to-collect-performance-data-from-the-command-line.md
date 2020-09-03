@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fe9e8d3dbd1e7395287cd7241f1e6145dffca7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145399"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
@@ -23,28 +23,28 @@ ms.locfileid: "68145399"
   
  В этом разделе подразделы, касающиеся процедур командной строки, упорядочены в соответствии с выбранным методом профилирования.  
   
-## <a name="in-this-topic"></a>Содержание раздела  
+## <a name="in-this-topic"></a>В этом разделе  
  [Использование метода выборки для сбора статистики производительности](#BKMK_Using_the_sampling_method_to_collect_performance_statistics)  
   
- [Использование метода инструментирования для сбора подробных сведений о времени](#BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data)  
+ [Использование метода инструментирования для получения подробных сведений о времени](#BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data)  
   
- [Применение методов анализа использования памяти .NET для сбора сведений о выделении памяти и времени существования объектов](#BKMK_Using__NET_memory_methods_to_collect_memory_allocation_and_object_lifetime_data)  
+ [Использование методов памяти .NET для получения данных о выделении памяти и времени существования объектов](#BKMK_Using__NET_memory_methods_to_collect_memory_allocation_and_object_lifetime_data)  
   
  [Использование метода параллелизма для сбора сведений о состязании за ресурсы и действиях потока](#BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data)  
   
  [Добавление данных уровневого взаимодействия в сеанс профилирования](#BKMK_Adding_tier_interaction_data_to_a_profiling_run)  
   
-## <a name="BKMK_Using_the_sampling_method_to_collect_performance_statistics"></a> Использование метода выборки для сбора статистики производительности  
+## <a name="using-the-sampling-method-to-collect-performance-statistics"></a><a name="BKMK_Using_the_sampling_method_to_collect_performance_statistics"></a> Использование метода выборки для сбора статистики производительности  
  Метод выборки средств профилирования позволяет собирать в сеансе профилирования данные производительности с заданными интервалами. Данные выборки позволяют получить представление о проблемах производительности, связанных с ограничением ЦП, и могут послужить хорошей отправной точкой для анализа производительности приложения.  
   
  Профилировщик можно запустить одновременно с приложением или присоединить к уже запущенному экземпляру приложения.  
   
 |Задача|Тип целевого приложения|  
 |----------|-----------------------------|  
-|**Запуск приложения**|-   [Автономные приложения](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Запуск приложения**|-   [Изолированные приложения](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
 |**Присоединение к выполняемому процессу**|-   [Автономные приложения .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Автономные приложения в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Веб-приложения ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Службы .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Службы в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
-## <a name="BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data"></a> Использование метода инструментирования для сбора подробных сведений о времени  
+## <a name="using-the-instrumentation-method-to-collect-detailed-timing-data"></a><a name="BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data"></a> Использование метода инструментирования для сбора подробных сведений о времени  
  Метод инструментирования средств профилирования обеспечивает сбор данных производительности из копий двоичных файлов приложения, в которых содержатся зонды для записи сведений о производительности. Данные инструментирования собираются в начале и в конце выполнения каждой инструментированной функции и при каждом вызове других функций из этой инструментированной функции. Метод инструментирования удобно использовать для обнаружения проблем производительности, связанных с проблемами ввода-вывода, например проблемой использования диска.  
   
  Для создания инструментированного двоичного файла используется средство [VInstr.exe](../profiling/vsinstr.md). После инициализации профилировщика данные автоматически собираются из инструментированных двоичных файлов при запуске целевого приложения.  
@@ -63,7 +63,7 @@ ms.locfileid: "68145399"
   
 - [Службы в машинном коде](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)  
   
-## <a name="BKMK_Using__NET_memory_methods_to_collect_memory_allocation_and_object_lifetime_data"></a> Применение методов анализа использования памяти .NET для сбора сведений о выделении памяти и времени существования объектов  
+## <a name="using-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a><a name="BKMK_Using__NET_memory_methods_to_collect_memory_allocation_and_object_lifetime_data"></a> Применение методов анализа использования памяти .NET для сбора сведений о выделении памяти и времени существования объектов  
  Метод анализа использования памяти средств профилирования .NET позволяет собирать сведения о выделении памяти [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], а также сведения о времени существования объектов в [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
  Вы можете запустить целевое приложение с помощью профилировщика, присоединить профилировщик к выполняемому экземпляру приложения и создать инструментированные версии приложения для сбора подробных сведений о времени вместе с данными использования памяти [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -72,9 +72,9 @@ ms.locfileid: "68145399"
 |----------|-----------------------------|  
 |**Запуск приложения**|-   [Автономные приложения .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Присоединение к выполняемому процессу**|-   [Автономные приложения .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Веб-приложения ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Службы .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Инструментированные модули**|-   [Автономные компоненты .NET Framework](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)<br />-   [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Динамически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Службы .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Инструментированные модули**|-   [.NET Framework автономных компонентов](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)<br />-   [Статически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Динамически скомпилированные веб-приложения ASP.NET](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Службы .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
-## <a name="BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data"></a> Использование метода параллелизма для сбора сведений о состязании за ресурсы и действиях потока  
+## <a name="using-the-concurrency-method-to-collect-resource-contention-and-thread-activity-data"></a><a name="BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data"></a> Использование метода параллелизма для сбора сведений о состязании за ресурсы и действиях потока  
  Метод параллелизма средств профилирования позволяет собирать сведения о состязании за ресурсы, а также о действиях потоков и процессов в многопоточных приложениях.  
   
  Профилировщик можно использовать при запуске приложения или присоединить к уже запущенному экземпляру приложения.  
@@ -84,10 +84,10 @@ ms.locfileid: "68145399"
 |**Запуск приложения**|-   [Автономное приложение .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Автономное приложение в машинном коде](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
 |**Присоединение к выполняемому процессу**|-   [Автономное приложение .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Автономное приложение в машинном коде](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)<br />-   [Веб-приложение ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Служба .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Служба в машинном коде](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
-## <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Добавление данных уровневого взаимодействия в сеанс профилирования  
- Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. раздел [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
+## <a name="adding-tier-interaction-data-to-a-profiling-run"></a><a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Добавление данных уровневого взаимодействия в сеанс профилирования  
+ Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. раздел [сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

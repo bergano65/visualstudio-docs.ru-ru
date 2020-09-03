@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659265"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
@@ -46,7 +46,7 @@ ms.locfileid: "72659265"
 
 2. Добавьте текстовый файл с именем `DebugTest.tt` в проект отладки.
 
-3. Убедитесь, что для свойства **Custom Tool** объекта DebugTest.TT задано значение `TextTemplatingFileGenerator`.
+3. Убедитесь, что для свойства **Custom Tool** объекта DebugTest.TT задано значение `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Директивы отладки, обращающиеся к модели из текстового шаблона
  Прежде чем можно будет получить доступ к модели из инструкций и выражений в текстовом шаблоне, необходимо сначала вызвать созданный обработчик директив. Вызов созданного обработчика директив делает классы модели доступными для кода текстового шаблона как свойства. Дополнительные сведения см. в разделе [доступ к моделям из текстовых шаблонов](../modeling/accessing-models-from-text-templates.md).
@@ -97,11 +97,11 @@ ms.locfileid: "72659265"
 
      **Процессор с именем "Дебуггингтестлангуажедирективепроцессор" не поддерживает директиву с именем "Моделрут". Преобразование не будет выполняться.**
 
-     В этом случае вызов директивы содержит неправильное имя директивы. В качестве имени директивы указан `modelRoot`, но правильное имя директивы — `DebuggingTestLanguage`.
+     В этом случае вызов директивы содержит неправильное имя директивы. Вы указали `modelRoot` имя директивы, но правильное имя директивы — `DebuggingTestLanguage` .
 
 3. Дважды щелкните ошибку в окне **Список ошибок** , чтобы перейти к коду.
 
-4. Чтобы исправить код, измените имя директивы на `DebuggingTestLanguage`.
+4. Чтобы исправить код, измените имя директивы на `DebuggingTestLanguage` .
 
      Изменение выделено.
 
@@ -159,15 +159,15 @@ ms.locfileid: "72659265"
 
      Появится окно **Список ошибок** , в котором отображается одна из следующих ошибок:
 
-     (C#)
+     C#
 
-     **Компиляция преобразования: Microsoft. VisualStudio. TextTemplating \<GUID >. Женератедтексттрансформатион "не содержит определения для" пространстве ExampleModel "**
+     **Компиляция преобразования: Microsoft. VisualStudio. TextTemplating \<GUID> . Женератедтексттрансформатион "не содержит определения для" пространстве ExampleModel "**
 
      (Visual Basic)
 
-     **Компиляция преобразования: "пространстве ExampleModel" не является членом "Microsoft. VisualStudio. TextTemplating \<GUID >. Женератедтексттрансформатион ".**
+     **Компиляция преобразования: "пространстве ExampleModel" не является членом "Microsoft. VisualStudio. TextTemplating" \<GUID> . Женератедтексттрансформатион ".**
 
-     В этом случае код текстового шаблона содержит неправильное имя свойства. В качестве имени свойства указан `ExampleModel`, но правильное имя свойства — `LibraryModel`. Правильное имя свойства можно найти в параметре, как показано в следующем коде:
+     В этом случае код текстового шаблона содержит неправильное имя свойства. Вы указали `ExampleModel` имя свойства, но правильное имя свойства — `LibraryModel` . Правильное имя свойства можно найти в параметре, как показано в следующем коде:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183721"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Изменение внешнего вида команды
@@ -84,7 +84,7 @@ ms.locfileid: "84183721"
 
 8. В меню **Сервис** должен появиться **новый текст**. Нажмите кнопку **создать текст**. Команда теперь должна быть неактивна.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)

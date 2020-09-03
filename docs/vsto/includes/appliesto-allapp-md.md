@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: fc0cd945d30995e475a42ddc3338b581785c263d
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68183741"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315485"
 ---
-  **Область применения:** Сведения этого раздела применяются к VSTO добавьте\-в проектах. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Применимо к:** Сведения в этом разделе относятся к добавлению \- в проекты VSTO в проектах. Дополнительные сведения см. в разделе [доступность функций по типам приложений Office и проектов](../../vsto/features-available-by-office-application-and-project-type.md).

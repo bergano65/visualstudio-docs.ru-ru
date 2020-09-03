@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetSize Документы Майкрософт
+title: 'Иидатастораже:: DataSize | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e7d9000889d082826f46bdceb0476dd5d06c24d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718198"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
-Возвращает количество байтов, содержащихся в этом объекте.
+Возвращает число байтов, содержащихся в этом объекте.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetSize(
 
 ## <a name="parameters"></a>Параметры
 `size`\
-(ваут) Количество байтов, содержащихся в этом объекте.
+заполняет Число байтов, содержащихся в этом объекте.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Используйте метод [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) для получения фактических байтов данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

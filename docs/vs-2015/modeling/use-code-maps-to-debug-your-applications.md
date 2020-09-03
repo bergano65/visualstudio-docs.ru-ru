@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 33f8d583c369ae365b8d7063a7b0c1d6353a3c56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659478"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Использование карт кода для отладки приложений
@@ -30,9 +30,9 @@ ms.locfileid: "72659478"
 
 Карты кода помогают не запутаться в больших базах кода, малознакомом или устаревшем коде. Например, при отладке может потребоваться просмотреть код во множестве файлов и проектов. Используйте карты кода для перехода между частями кода и просмотра связей между ними. Таким образом, вам не нужно держать весь этот код у себя в голове или рисовать отдельную схему. Карты кода помогут вспомнить особенности кода в случае перерыва в работе.
 
- ![&#45; Схема кода сопоставляет связи в коде](../modeling/media/codemapstoryboardpaint.png "кодемапсторибоардпаинт")
+ ![Схема кода &#45; связей карт в коде](../modeling/media/codemapstoryboardpaint.png "кодемапсторибоардпаинт")
 
- **Зеленая стрелка показывает, где в редакторе отображается курсор.**
+ **Зеленая стрелка показывает нахождение курсора в редакторе.**
 
  Дополнительные сведения о командах и действиях, которые можно использовать при работе с картами кода, см. в разделе [Обзор и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -41,28 +41,28 @@ ms.locfileid: "72659478"
 
  Когда вы нарисуете линию и выбираете **отменить последний росчерк**, ничего не происходит, пока вы не нарисуете следующую строку.
 
- ![Ошибка при &#45; воспроизведении карт кода](../modeling/media/codemapstoryboardpaint0.png "CodeMapStoryboardPaint0")
+ ![Схема кода &#45; воспроизвести ошибку](../modeling/media/codemapstoryboardpaint0.png "CodeMapStoryboardPaint0")
 
  Таким образом, вы начинаете поиск ошибки с поиска метода `Undo`. Он находится в классе `PaintCanvas`.
 
- ![Поиск кода &#45; в карте кода](../modeling/media/codemapstoryboardpaint1.png "CodeMapStoryboardPaint1")
+ ![Схема кода &#45; поиска кода](../modeling/media/codemapstoryboardpaint1.png "CodeMapStoryboardPaint1")
 
 ## <a name="start-mapping-the-code"></a>Запуск сопоставления кода
  Теперь можно начинать сопоставление метода `undo` и его отношений. В редакторе кода добавьте метод `undo` и поля, на которые он ссылается, в новую карту кода. При создании новой карты потребуется какое-то время на индексацию кода. Благодаря этому последующие операции выполняются быстрее.
 
- ![Отображение метода &#45; и связанных полей в карте кода](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")
+ ![Таблица кода &#45; отображение метода и связанных полей](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")
 
 > [!TIP]
 > Зеленым цветом выделены последние элементы, добавленные на карту. Зеленая стрелка указывает положение курсора в коде. Стрелки между элементами представляют различные отношения. Можно получить дополнительные сведения об элементах на карте, наведя на них указатель мыши и изучив подсказки.
 
- ![Отображение всплывающих подсказок в карте &#45; кода](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")
+ ![&#45; отображения всплывающих подсказок в карте кода](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")
 
 ## <a name="navigate-and-examine-code-from-the-map"></a>Навигация и просмотр кода из сопоставления
  Чтобы просмотреть определение кода для каждого поля, дважды щелкните поле на карте или выберите поле и нажмите клавишу **F12**. Зеленая стрелка перемещается между элементами на карте. Курсор в редакторе кода также перемещается автоматически.
 
- ![Проверка определения &#45; поля в карте кода](../modeling/media/codemapstoryboardpaint5.png "CodeMapStoryboardPaint5")
+ ![Схема кода &#45; изучения определения поля](../modeling/media/codemapstoryboardpaint5.png "CodeMapStoryboardPaint5")
 
- ![Проверка определения &#45; поля в карте кода](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")
+ ![Схема кода &#45; изучения определения поля](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")
 
 > [!TIP]
 > Кроме того, для перемещения зеленой стрелки на карте можно перемещать курсор в редакторе кода.
@@ -70,75 +70,75 @@ ms.locfileid: "72659478"
 ## <a name="understand-relationships-between-pieces-of-code"></a>Отношения между частями кода
  Теперь необходимо узнать, какой другой код взаимодействует с полями `history` и `paintObjects`. Можно добавить все методы, которые ссылаются на эти поля, на карту. Это можно сделать из карты или из редактора кода.
 
- ![Схема &#45; кода "найти все ссылки"](../modeling/media/codemapstoryboardpaint6.png "CodeMapStoryboardPaint6")
+ ![Схема кода &#45; найти все ссылки](../modeling/media/codemapstoryboardpaint6.png "CodeMapStoryboardPaint6")
 
- ![Открытие схемы кода в редакторе кода](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")
+ ![Открытие карты кода из редактора кода](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")
 
 > [!NOTE]
 > Если вы добавляете элементы из проекта, который совместно используется несколькими приложениями, такими как приложения Windows Phone или Магазина Windows, эти элементы всегда отображаются вместе с текущим активным проектом приложения на карте. Таким образом, при изменении контекста на другой проект приложения контекст на карте для вновь добавленных элементов из общего проекта также изменяется. Операции, выполняемые с элементом на карте, применяются только к тем элементам, которые имеют общий контекст.
 
  Измените макет, чтобы изменить поток отношений и упростить чтение карты. Также можно перемещать элементы по карте, перетаскивая их.
 
- ![Макет изменения &#45; схемы кода](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")
+ ![Схема кода &#45; изменить макет](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")
 
 > [!TIP]
 > По умолчанию **добавочный макет** включен. Это значит, что изменение макета карты будет минимальным при добавлении новых элементов. Чтобы перераспределить всю карту каждый раз при добавлении новых элементов, отключите **добавочный макет**.
 
- ![Макет изменения &#45; схемы кода](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")
+ ![Схема кода &#45; изменить макет](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")
 
  Рассмотрим эти методы. На карте дважды щелкните метод **паинтканвас** или выберите этот метод и нажмите клавишу **F12**. Этот метод создаст `history` и `paintObjects` как пустые списки.
 
- ![Определение метода &#45; для проверки соответствия кода](../modeling/media/codemapstoryboardpaint8.png "CodeMapStoryboardPaint8")
+ ![Схема кода &#45; изучение определения метода](../modeling/media/codemapstoryboardpaint8.png "CodeMapStoryboardPaint8")
 
  Теперь повторите эти же шаги, чтобы просмотреть определение метода `clear`. Метод `clear` выполнит некоторые задачи с `paintObjects` и `history`. Затем он вызовет метод `Repaint`.
 
- ![Определение метода &#45; для проверки соответствия кода](../modeling/media/codemapstoryboardpaint9.png "CodeMapStoryboardPaint9")
+ ![Схема кода &#45; изучение определения метода](../modeling/media/codemapstoryboardpaint9.png "CodeMapStoryboardPaint9")
 
  Теперь просмотрите определение метода `addPaintObject`. Он также выполнит некоторые задачи с `history` и `paintObjects`. Он также вызовет `Repaint`.
 
- ![Определение метода &#45; для проверки соответствия кода](../modeling/media/codemapstoryboardpaint10.png "CodeMapStoryboardPaint10")
+ ![Схема кода &#45; изучение определения метода](../modeling/media/codemapstoryboardpaint10.png "CodeMapStoryboardPaint10")
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Поиск проблемы путем анализа сопоставления
  Кажется, что все методы, изменяющие `history` и `paintObjects`, вызывают `Repaint`. Однако метод `undo` не вызывает `Repaint`, даже если `undo` изменяет те же поля. Поэтому эту проблему можно решить, вызвав метод `Repaint` из `undo`.
 
- ![Схема &#45; кода "найти вызов отсутствующего метода"](../modeling/media/codemapstoryboardpaint11.png "CodeMapStoryboardPaint11")
+ ![Схема кода &#45; найти вызов отсутствующего метода](../modeling/media/codemapstoryboardpaint11.png "CodeMapStoryboardPaint11")
 
  Если бы не было карты, на которой можно проверить этот отсутствующий вызов, найти эту проблему было бы сложнее, особенно в более сложном коде.
 
 ## <a name="share-your-discovery-and-next-steps"></a>Совместное использование обнаружения и следующие действия
  Прежде чем вы или кто-то другой исправит эту ошибку, можно оставить на карте примечания о проблеме и о том, как ее исправить.
 
- ![Комментарий к &#45; карте кода и элементы флагов для дальнейших](../modeling/media/codemapstoryboardpaint12.png "CodeMapStoryboardPaint12")
+ ![Схема кода &#45; комментарии и элементы флагов для дальнейших](../modeling/media/codemapstoryboardpaint12.png "CodeMapStoryboardPaint12")
 
  Например, можно добавить комментарии на карту и отметить элементы с помощью цветов.
 
- ![Элементы с &#45; комментариями и помеченными элементами в карте кода](../modeling/media/codemapstoryboardpaint12a.png "CodeMapStoryboardPaint12A")
+ ![Схема кода &#45; элементов с комментариями и помеченными элементами](../modeling/media/codemapstoryboardpaint12a.png "CodeMapStoryboardPaint12A")
 
  Если установлена программа Microsoft Outlook, можно отправить карту другим пользователям по электронной почте. Можно также экспортировать карту в виде изображения или в другом формате.
 
- ![Общий доступ &#45; к карте кода, экспорт, почта](../modeling/media/codemapstoryboardpaint13.png "CodeMapStoryboardPaint13")
+ ![Схема кода &#45; общий доступ, экспорт, почта](../modeling/media/codemapstoryboardpaint13.png "CodeMapStoryboardPaint13")
 
 ## <a name="fix-the-problem-and-show-what-you-did"></a>Устранение проблемы и отображение сделанного
  Чтобы исправить ошибку, добавьте вызов `Repaint` в `undo`.
 
- ![Схема &#45; кода. Добавление вызова отсутствующего метода](../modeling/media/codemapstoryboardpaint14.png "CodeMapStoryboardPaint14")
+ ![Схема кода &#45; добавить вызов отсутствующего метода](../modeling/media/codemapstoryboardpaint14.png "CodeMapStoryboardPaint14")
 
  Чтобы убедиться, что ошибка исправлена, перезапустите сеанс отладки и попробуйте воспроизвести ошибку. Теперь, выбрав пункт **отменить последний рукописный** ввод, вы можете подтвердить, что вы внесли правильное исправление.
 
- ![Исправление кода &#45; для подтверждения кодовой карте кода](../modeling/media/codemapstoryboardpaint15.png "CodeMapStoryboardPaint15")
+ ![Таблица кода &#45; подтвердить исправление кода](../modeling/media/codemapstoryboardpaint15.png "CodeMapStoryboardPaint15")
 
  Можно обновить карту для отображения внесенного исправления.
 
- ![Схема кода &#45; обновления Map с отсутствующим вызовом метода](../modeling/media/codemapstoryboardpaint16.png "CodeMapStoryboardPaint16")
+ ![Схема кода &#45; обновить карту с помощью вызова пропущенного метода](../modeling/media/codemapstoryboardpaint16.png "CodeMapStoryboardPaint16")
 
  Теперь на карте отображается ссылка между **операциями отмены** и **перерисовки**.
 
- ![Таблица &#45; кода обновила карту с вызовом метода](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")
+ ![Схема кода &#45; обновленную карту с помощью вызова метода](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")
 
 > [!NOTE]
 > При обновлении карты можно увидеть сообщение об обновлении индекса кода, используемого для создания карты. Это значит, что кто-то изменил код, в результате чего ваша карта не соответствует текущему коду. Это не помешает обновить карту, однако может потребоваться заново создать карту, чтобы убедиться, что она соответствует коду.
 
  Расследование закончено. Вы успешно нашли и устранили проблему путем сопоставления кода. Также у вас есть карта, с помощью которой можно переходить по коду, вспоминать предыдущие действия и просматривать действия, предпринятые для решения проблемы.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Сопоставьте методы в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) [кода визуализации](../modeling/visualize-code.md)

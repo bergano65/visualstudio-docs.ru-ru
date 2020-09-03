@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545669"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>— Этот метод вызывается, если пользователь отпускает кнопку мыши в то время, когда указатель мыши находится на этой фигуре или схеме, если `OnDragOver(DiagramDragEventArgs e)` ранее для него было задано `e.Effect` значение, отличное от `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Этот метод вызывается, если пользователь отпускает кнопку мыши в то время, когда указатель мыши находится на этой фигуре или схеме, если `OnDragOver(DiagramDragEventArgs e)` ранее для него было задано `e.Effect` значение, отличное от `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ using System.Linq;
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>— Этот метод вызывается, когда пользователь дважды щелкает форму или схему.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Этот метод вызывается, когда пользователь дважды щелкает форму или схему.
 
      Дополнительные сведения см. в разделе [как перехватить щелчок фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,11 +124,11 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 Для поиска форматов, в которых доступны сведения об источнике перетаскивания, запустите код в режиме отладки, задав точку останова на входе в `OnDragOver()` или `CanDragDrop()`. Проверьте значения параметра `DiagramDragEventArgs`. Сведения предоставляются в двух формах.
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`— Это свойство переносит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:
+- <xref:System.Windows.Forms.IDataObject>  `Data` — Это свойство переносит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:
 
   - Диаграмевентаргс. Data. Жетдатаформатс () — содержит список форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)`— Декодирует перетаскиваемый объект в указанном формате. Приведите объект в соответствующий тип. Пример.
+  - `diagramEventArgs.Data.GetData(format)` — Декодирует перетаскиваемый объект в указанном формате. Приведите объект в соответствующий тип. Пример:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
      Чтобы принять фигуры UML, определите идентификаторы GUID классов фигур UML, выполнив эксперимент. Помните, что на любой схеме обычно бывает больше одного типа элементов. Кроме того, объект, перетаскиваемый из доменного языка или схемы UML, является фигурой, а не элементом модели.
 
-`DiagramDragEventArgs`также имеет свойства, указывающие текущее расположение указателя мыши и то, нажаты ли клавиши CTRL, ALT или SHIFT.
+`DiagramDragEventArgs` также имеет свойства, указывающие текущее расположение указателя мыши и то, нажаты ли клавиши CTRL, ALT или SHIFT.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Получение оригинала перетаскиваемого элемента
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка функции копирования](../modeling/customizing-copy-behavior.md)
 - [Развертывание решений на доменных языках](msi-and-vsix-deployment-of-a-dsl.md)

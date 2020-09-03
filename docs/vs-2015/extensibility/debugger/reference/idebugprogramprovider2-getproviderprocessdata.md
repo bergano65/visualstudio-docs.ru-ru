@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Документация Майкрософт
+title: 'IDebugProgramProvider2:: Жетпровидерпроцессдата | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a50faf4531a098dde544adcffe535ed26e9c5cd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148521"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает список запуска программ из указанного процесса.  
+Извлекает список запущенных программ из указанного процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,34 +48,34 @@ int GetProviderProcessData(
   
 #### <a name="parameters"></a>Параметры  
  `Flags`  
- [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:  
+ окне Сочетание флагов из перечисления [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Для этого вызова обычно используются следующие флаги:  
   
 |Flag|Описание|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Вызывающий объект выполняется на удаленном компьютере.|  
-|`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинга будет возвращаться для каждого узла).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|  
-|`PFLAG_GET_PROGRAM_NODES`|Вызывающий объект запрашивает список узлов, программы должны быть возвращены.|  
+|`PFLAG_REMOTE_PORT`|Вызывающий объект работает на удаленном компьютере.|  
+|`PFLAG_DEBUGGEE`|Выполняется отладка вызывающего объекта (для каждого узла будет возвращена дополнительная информация о маршалинге).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не был запущен отладчиком.|  
+|`PFLAG_GET_PROGRAM_NODES`|Вызывающий объект запрашивает список узлов программ, которые должны быть возвращены.|  
   
  `pPort`  
- [in] Порт вызывающий процесс выполняется на.  
+ окне Порт, на котором выполняется вызывающий процесс.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.  
+ окне Структура [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) , содержащая идентификатор процесса, содержащего рассматриваемую программу.  
   
  `EngineFilter`  
- [in] Массив идентификаторов GUID для обработчиков отладки, назначенный для отладки этого процесса (они будут использоваться для фильтрации программы, которые возвращаются реальные на основе что поддержки предоставленного ядер; Если все обработчики не заданы, то будут возвращены все программы).  
+ окне Массив идентификаторов GUID для модулей отладки, назначенных для отладки этого процесса (они будут использоваться для фильтрации фактически возвращаемых программ в зависимости от того, какие модули поддерживаются. Если не указать ни одного ядра, будут возвращены все программы).  
   
  `pProcess`  
- [out] Объект [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, который заполняется запрашиваемые данные.  
+ заполняет Структура [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) , которая заполняется запрашиваемой информацией.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод обычно вызывается процессом, чтобы получить список программ, работающих в этом процессе. Возвращенные сведения приведен список [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объектов.  
+## <a name="remarks"></a>Remarks  
+ Этот метод обычно вызывается процессом для получения списка программ, выполняющихся в этом процессе. Возвращаемые сведения представляют собой список объектов [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   

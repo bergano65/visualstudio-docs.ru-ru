@@ -1,5 +1,5 @@
 ---
-title: Элемент VSTemplate (Visual Studio Templates) Документы Майкрософт
+title: Элемент VSTemplate (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697866"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>Элемент VSTemplate (Шаблоны визуальной студии)
-Содержит все метаданные о шаблоне проекта, шаблоне элемента или стартовом комплекте.
+# <a name="vstemplate-element-visual-studio-templates"></a>Элемент VSTemplate (шаблоны Visual Studio)
+Содержит все метаданные о шаблоне проекта, шаблоне элемента или начальном наборе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,26 +40,26 @@ ms.locfileid: "80697866"
 
 | Атрибут | Описание |
 |-----------| - |
-| `Type` | Идентифицирует шаблон как шаблон проекта или шаблон элемента. Этот атрибут может иметь `Project` `Item`значение или . |
-| `Version` | Уотек номера версии для шаблона. Шаблоны [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] и `Version` имеют `3.0.0`значение атрибута . |
+| `Type` | Идентифицирует шаблон как шаблон проекта или шаблон элемента. Этот атрибут может иметь значение `Project` или `Item` . |
+| `Version` | Указывает номер версии для шаблона. Шаблоны в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] и [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] имеют `Version` значение атрибута `3.0.0` . |
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет данные, которые классифицируют шаблон, и определяет, как он отображается в **новом проекте** или добавить диалоговую коробку **New Item.**|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет содержимое шаблона.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Указывает данные, которые классифицируют шаблон, и определяет, как он отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** .|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Необязательный элемент.|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Необязательный элемент.|
 
 ### <a name="parent-elements"></a>Родительские элементы
  Нет.
 
-## <a name="remarks"></a>Примечания
- Элемент `VSTemplate` является корневым элементом файлов *.vstemplate.*
+## <a name="remarks"></a>Remarks
+ `VSTemplate`Элемент является корневым элементом *VSTEMPLATE* -файлов.
 
 ## <a name="example"></a>Пример
- В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,5 +86,5 @@ ms.locfileid: "80697866"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

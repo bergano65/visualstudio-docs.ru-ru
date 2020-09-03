@@ -1,5 +1,5 @@
 ---
-title: IDebugWindowsComputerPort2 Документы Майкрософт
+title: IDebugWindowsComputerPort2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718227"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-Позволяет запросить информацию о целевом компьютере.
+Разрешает запрос сведений о конечном компьютере.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,19 +26,19 @@ ms.locfileid: "80718227"
 IDebugWindowsComputerPort2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован портовыми объектами диспетчера отладки сеанса.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется объектами Port диспетчера отладки сеанса.
 
 ## <a name="methods"></a>Методы
- В следующей таблице показаны методы `IDebugWindowsComputerPort2`.
+ В следующей таблице показаны методы `IDebugWindowsComputerPort2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Получает информацию о компьютере, на котором работает отладчик.|
+|[жеткомпутеринфо](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Извлекает сведения о компьютере, на котором выполняется отладчик.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Msdbg.h
+ Заголовок: Мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

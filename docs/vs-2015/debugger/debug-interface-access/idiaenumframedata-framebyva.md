@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::frameByVA | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Фрамебива | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0560965858bd6d9ee823a6056332bdd9a7b654a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146501"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает кадр, виртуальный адрес (VA).  
+Возвращает кадр по виртуальному адресу (ва).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,15 +35,15 @@ HRESULT frameByVA( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- virtualAddress  
- [in] VA кадра интерес.  
+ виртуаладдресс  
+ окне ВА, представляющая интерес к интересующему кадру.  
   
- фрейм  
- [out] Возвращает [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий рамку, содержащую указанный адрес.  
+ frame  
+ заполняет Возвращает объект [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , представляющий кадр, содержащий указанный адрес.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет кадров данных, соответствующей указанному адресу. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если данные кадра не соответствуют указанному адресу. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумфрамедата](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Next | Документация Майкрософт
+title: 'Идиаенумфрамедата:: Next | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe8735511e9830542ce8622a6d984a0a817671
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161218"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает указанное число кадров данных элементов в последовательности перечисления.  
+Извлекает указанное число элементов данных кадра в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,17 +37,17 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Число элементов данных кадра в перечислителе требуется получить.  
+ окне Количество элементов данных кадра в перечислителе для извлечения.  
   
  rgelt  
- [out] Массив [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) объектов необходимо заполнить элементы данных требуемой рамке.  
+ заполняет Массив объектов [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) , которые должны быть заполнены элементами данных запрошенного кадра.  
   
  pceltFetched  
- [out] Возвращает число элементов данных кадра в выбранных перечислитель.  
+ заполняет Возвращает количество элементов данных кадра в выбранном перечислителе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если отсутствуют дополнительные записи. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если больше нет записей. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумфрамедата](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

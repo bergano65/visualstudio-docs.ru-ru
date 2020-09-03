@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545630"
 ---
 # <a name="debugger-windows"></a>Окна отладчика
@@ -21,7 +21,7 @@ ms.locfileid: "85545630"
 
 В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. При достижении точки останова и остановке выполнения нажмите кнопку **Отладка/Windows**.  
   
-|**Window**|**Сочетание клавиш**|**См. раздел**|  
+|**Окно**|**Сочетание клавиш**|**См. раздел**|  
 |-|-|-|  
 |Точки останова|CTRL+ALT+B|[Использование точек останова](../debugger/using-breakpoints.md)|  
 |Параметры исключений|CTRL+ALT+E|[Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)|  
@@ -48,5 +48,5 @@ ms.locfileid: "85545630"
 |Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|  
 |Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Основы отладки](../debugger/debugger-basics.md)

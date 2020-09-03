@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183734"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Добавление команды на панель инструментов обозреватель решений
@@ -29,7 +29,7 @@ ms.locfileid: "84183734"
 > [!NOTE]
 > Используйте файлы таблицы команд XML (*vsct*) вместо файлов конфигурации командной таблицы (*. CTC*), чтобы определить, как меню и команды отображаются в пакетах VSPackage. Дополнительные сведения см. в разделе [Командная таблица Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
@@ -38,7 +38,7 @@ ms.locfileid: "84183734"
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Добавление кнопки на панель инструментов обозреватель решений
  В этом разделе пошагового руководства показано, как добавить кнопку на панель инструментов **Обозреватель решений** . При нажатии кнопки выполняется код в методе обратного вызова.
 
-1. В файле *тулбарбуттонпаккаже. vsct* перейдите к `<Symbols>` разделу. `<GuidSymbol>`Узел содержит группу меню и команду, созданную с помощью шаблона пакета. Добавьте `<IDSymbol>` элемент в этот узел, чтобы объявить группу, в которой будет содержаться команда.
+1. В файле *тулбарбуттонпаккаже. vsct* перейдите к  `<Symbols>` разделу. `<GuidSymbol>`Узел содержит группу меню и команду, созданную с помощью шаблона пакета. Добавьте `<IDSymbol>` элемент в этот узел, чтобы объявить группу, в которой будет содержаться команда.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
@@ -116,5 +116,5 @@ ms.locfileid: "84183734"
 
    Видимость кнопки контролируется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] до тех пор, пока не будет загружен пакет VSPackage. После загрузки VSPackage видимость кнопки управляется пакетом VSPackage.  Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

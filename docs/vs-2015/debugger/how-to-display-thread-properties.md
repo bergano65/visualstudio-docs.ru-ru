@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a9d311563134850a7b2efd04eb6d6ed00dfcc25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205353"
 ---
 # <a name="how-to-display-thread-properties"></a>Практическое руководство. Отображение свойств потока
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Чтобы получить дополнительные сведения о потоках, перечисленных в [представление "Потоки"](../debugger/threads-view.md), использовать [поток свойства](../debugger/thread-properties-dialog-box.md).  
+Чтобы узнать больше о потоке, указанном в [представлении потоков](../debugger/threads-view.md), используйте [диалоговое окно "Свойства потока"](../debugger/thread-properties-dialog-box.md).  
   
-### <a name="to-open-a-thread-properties-dialog-box"></a>Чтобы открыть диалоговое окно свойств потока  
+### <a name="to-open-a-thread-properties-dialog-box"></a>Открытие диалогового окна "Свойства потока"  
   
-1. Выберите дерево, отображаемое в поток [представление "Потоки"](../debugger/threads-view.md).  
+1. Выберите поток из дерева, отображаемого в [представлении потоков](../debugger/threads-view.md).  
   
-2. Из **представление** меню, выберите **свойства**.  
+2. В меню **Просмотр** выберите команду **Свойства**.  
   
-   Диалоговые окна свойств не модальным, поэтому вы можете щелкнуть другой элемент в окне представления и диалоговом окне будут отображены сведения о выбранного элемента.
+   Диалоговые окна свойств не являются модальными. Вы можете щелкнуть другой элемент в окне представления, и в диалоговом окне отобразятся сведения о выбранном элементе.
