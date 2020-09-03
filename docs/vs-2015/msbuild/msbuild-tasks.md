@@ -1,5 +1,5 @@
 ---
-title: Задачи MSBuild | Документы Майкрософт
+title: Задачи MSBuild | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154814"
 ---
 # <a name="msbuild-tasks"></a>Задачи MSBuild
@@ -62,12 +62,12 @@ ms.locfileid: "68154814"
 ```  
   
 ## <a name="included-tasks"></a>Включенные задачи  
- В состав [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] включено много задач, например, [Copy](../msbuild/copy-task.md) — копирование файлов, [MakeDir](../msbuild/makedir-task.md) — создание каталогов и [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Полный список доступных задач и сведения об их использовании см. в разделе [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md).  
+ В состав [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] включено много задач, например, [Copy](../msbuild/copy-task.md) — копирование файлов, [MakeDir](../msbuild/makedir-task.md) — создание каталогов и [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Полный список доступных задач и сведений об использовании см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Переопределенные задачи  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] обнаруживает задачи в нескольких местах. Во первых, в файлах с расширением OverrideTasks, которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением Tasks, расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [Написание задач](../msbuild/task-writing.md)   

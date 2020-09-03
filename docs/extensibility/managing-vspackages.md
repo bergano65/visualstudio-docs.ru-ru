@@ -1,5 +1,5 @@
 ---
-title: Управление VSPackages (ru) Документы Майкрософт
+title: Управление пакетами VSPackage | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702655"
 ---
 # <a name="manage-vspackages"></a>Управление пакетами VSPackage
-В большинстве случаев вам не нужно беспокоиться об управлении VSPackages, так как шаблоны проекта и элемента регистрируются и загружают пакет автоматически. Тем не менее, в некоторых случаях вам может понадобиться узнать немного больше для того, чтобы управлять своим пакетом.
+В большинстве случаев вам не нужно беспокоиться об управлении пакетами VSPackage, так как шаблоны проектов и элементов регистрируются и загружаются автоматически. Однако в некоторых случаях для управления пакетом может потребоваться несколько дополнительных изучений.
 
 ## <a name="use-the-experimental-instance"></a>Использование экспериментального экземпляра
- Чтобы узнать больше об экспериментальном экземпляре, [см.](../extensibility/the-experimental-instance.md)
+ Чтобы узнать больше об экспериментальном экземпляре, см. [экспериментальный экземпляр](../extensibility/the-experimental-instance.md).
 
-## <a name="register-and-unregister-vspackages"></a>Регистрация и распаковка VSPackages
- Чтобы узнать, как зарегистрировать и отменить VSPackages и другие виды расширения, [см.](../extensibility/registering-and-unregistering-vspackages.md)
+## <a name="register-and-unregister-vspackages"></a>Регистрация и Отмена регистрации пакетов VSPackage
+ Сведения о регистрации и отмене регистрации пакетов VSPackage и других типов расширений см. в статье [Регистрация пакетов VSPackage](../extensibility/registering-and-unregistering-vspackages.md)и их отмена.
 
-## <a name="load-a-vspackage"></a>Загрузить VSPackage
- VSPackages можно настроить для автоматической загрузки при включении конкретного GUID CMDUICONTEXT. Для получения дополнительной [информации см.](../extensibility/loading-vspackages.md)
+## <a name="load-a-vspackage"></a>Загрузка пакета VSPackage
+ Пакеты VSPackage можно установить в значение автозагрузки, если включен определенный идентификатор GUID КМДУИКОНТЕКСТ. Дополнительные сведения см. в разделе [Load VSPackage](../extensibility/loading-vspackages.md).
 
-## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Используйте AsyncPackage для загрузки VSPackages в фоновом режиме
- Класс `AsyncPackage` позволяет загрузить пакет на фоновый поток для лучшей отзывчивости uI в Visual Studio. Для получения дополнительной [информации см. Как: Используйте AsyncPackage для загрузки VSPackages в фоновом режиме.](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
+ `AsyncPackage`Класс включает загрузку пакетов в фоновом потоке для улучшения скорости реагирования пользовательского интерфейса в Visual Studio. Дополнительные сведения см. в разделе [как использовать AsyncPackage для загрузки пакетов VSPackage в фоновом режиме](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).
 
-## <a name="rule-based-ui-context-for-extensions"></a>Контекст uI на основе правил для расширений
- Контексты uI, основанные на правилах, позволяют авторам расширения определить точные условия, при которых активируется контекст uI и загружается связанные с ними VSPackages. Для получения дополнительной информации [см. Как: Используйте контекст uI на основе правил для расширений Visual Studio.](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
+## <a name="rule-based-ui-context-for-extensions"></a>Контекст пользовательского интерфейса на основе правил для расширений
+ Контексты пользовательского интерфейса на основе правил позволяют авторам расширений определять точные условия, при которых активируется контекст пользовательского интерфейса и загружаются связанные пакеты VSPackage. Дополнительные сведения см. [в разделе руководство. использование контекста пользовательского интерфейса на основе правил для расширений Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).
 
 ## <a name="diagnose-extension-performance"></a>Диагностика производительности расширения
-Расширения могут повлиять на производительность загрузки стартапа и решения. Узнайте, как рассчитывается влияние расширения Visual Studio и как его можно анализировать локально, чтобы проверить, может ли расширение отображаться как расширение, влияющие на производительность. Для получения дополнительной информации [см.](how-to-diagnose-extension-performance.md)
+Расширения могут повлиять на скорость запуска и загрузки решения. Узнайте, как вычисляется воздействие на расширение Visual Studio и как его можно анализировать локально, чтобы проверить, может ли расширение отображаться в качестве расширения, влияющего на производительность. Дополнительные сведения см. [в разделе как диагностировать производительность расширения](how-to-diagnose-extension-performance.md).
 
-## <a name="troubleshoot-vspackages"></a>Устранение неприятностей VSPackages
- Узнайте о методах устранения неполадок VSPackages, которые не загружаются или испытывают ошибки: [Troubleshoot VSPackages](../extensibility/troubleshooting-vspackages.md)
+## <a name="troubleshoot-vspackages"></a>Устранение неполадок пакетов VSPackage
+ Узнайте о методах устранения неполадок пакетов VSPackage, которые не загружаются или в которых возникают ошибки: [Устранение неполадок пакетов VSPackage](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>См. также
-- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>См. также раздел
+- [VSPackages](../extensibility/internals/vspackages.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381734"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. Указание URL-адреса службы поддержки для определенных компонентов, необходимых для развертывания ClickOnce
@@ -65,7 +65,7 @@ ms.locfileid: "85381734"
      </dependency>
    ```
 
-5. Необязательный параметр. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
+5. Необязательный элемент. Для приложений, предназначенных для .NET Framework 4, откройте манифест развертывания (файл *. Application* ) для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в текстовом редакторе.
 
 6. Для .NET Framework 4 необходимых компонентов добавьте `supportUrl` атрибут к `compatibleFrameworks` элементу:
 
@@ -81,9 +81,9 @@ ms.locfileid: "85381734"
 ## <a name="net-framework-security"></a>безопасность платформы .NET Framework
  URL-адрес поддержки не отображается в диалоговом окне, если приложение помечено для выполнения в режиме частичного доверия.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks>дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)

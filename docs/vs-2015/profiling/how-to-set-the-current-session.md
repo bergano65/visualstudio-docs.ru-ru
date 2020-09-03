@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка текущего сеанса | Документация Майкрософт
+title: Практическое руководство. Установка текущего сеанса | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205715"
 ---
-# <a name="how-to-set-the-current-session"></a>Практическое руководство. Настройка текущего сеанса
+# <a name="how-to-set-the-current-session"></a>Практическое руководство. Установка текущего сеанса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно открыть несколько сеансов анализа производительности в **обозревателе производительности**, а затем выбрать один из отображающихся сеансов в качестве текущего.  
@@ -41,8 +41,8 @@ ms.locfileid: "68205715"
   
      Имя сеанса отображается полужирным шрифтом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
- [Окно "Обозреватель производительности"](../profiling/performance-explorer-window.md)   
+ [Окно Обозреватель производительности](../profiling/performance-explorer-window.md)   
  [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)   
- [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
+ [Обзор сеанса анализа производительности](../profiling/performance-session-overview.md)

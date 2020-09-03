@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161527"
 ---
 # <a name="context-operator-c"></a>Оператор контекста (C++)
@@ -35,7 +35,7 @@ ms.locfileid: "68161527"
 
 Оператор контекста в C++ можно использовать для уточнения имени переменной, выражения или расположения точки останова. С помощью оператора контекста можно указать имя из внешней области, чтобы это имя не оказалось перекрыто локальным именем.  
   
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Синтаксис  
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Синтаксис  
  Указать контекст можно двумя способами:  
   
 1. {,,[*модуль*] } *выражение*  

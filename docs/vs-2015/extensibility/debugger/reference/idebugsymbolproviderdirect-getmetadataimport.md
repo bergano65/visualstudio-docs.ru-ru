@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMetaDataImport | Документация Майкрософт
+title: 'Идебугсимболпровидердирект:: Жетметадатаимпорт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 738169ece185bfc4b861b8f8220199dbf3c762b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155125"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает сведения о импорта метаданных.  
+Извлекает сведения об импорте метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,16 +43,16 @@ int GetMetaDataImport (
   
 #### <a name="parameters"></a>Параметры  
  `guid`  
- [in] Уникальный идентификатор для модуля.  
+ окне Уникальный идентификатор модуля.  
   
  `appID`  
- [in] Идентификатор домена приложения.  
+ окне Идентификатор домена приложения.  
   
  `ppImport`  
- [out] Возвращает объект, содержащий метаданные Импорт данных.  
+ заполняет Возвращает объект, содержащий сведения об импорте метаданных.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

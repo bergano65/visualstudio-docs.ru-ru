@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeTypeField Документы Майкрософт
+title: 'Идебугкустоматтрибуте:: Жетаттрибутетипефиелд | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 51341b3c9b351307d2662538cc3a6797c58b62f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732780"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
-Получает пользовательский тип класса атрибутов.
+Возвращает тип класса настраиваемого атрибута.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetAttributeTypeField(
 
 ## <a name="parameters"></a>Параметры
 `ppCAType`\
-(ваут) Возвращает объект [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий класс, экземпляром которого является пользовательский атрибут.
+заполняет Возвращает объект [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md) , представляющий класс, для которого настраиваемый атрибут является экземпляром.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Пользовательский атрибут всегда является классом. Этот метод обеспечивает доступ к объекту [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) описывающий этот класс.
+## <a name="remarks"></a>Remarks
+ Настраиваемый атрибут всегда является классом. Этот метод предоставляет доступ к объекту [идебугклассфиелд](../../../extensibility/debugger/reference/idebugclassfield.md) , который описывает этот класс.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

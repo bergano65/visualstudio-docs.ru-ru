@@ -1,5 +1,5 @@
 ---
-title: Локализация пакетов VSIX Документы Майкрософт
+title: Локализация пакетов VSIX | Документация Майкрософт
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702902"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
-Вы можете локализовать пакет VSIX, создав файл *Extension.vsixlangpack* для каждого целевого языка, а затем поместить их в правильную папку. При установке локализованного пакета локализованное название расширения отображается вместе с локализованным описанием. Если вы предоставите локализованный файл лицензии или URL-адрес, указывают на локализованную информацию, они также отображаются.
+Вы можете локализовать пакет VSIX, создав файл *Extension. всикслангпакк* для каждого целевого языка и поместив их в соответствующую папку. При установке локализованного пакета локализованное имя расширения отображается вместе с локализованным описанием. Если указать локализованный файл лицензии или URL-адрес, указывающий на локализованные сведения, они также будут отображаться.
 
-Если содержимое пакета VSIX содержит VSPackage, который добавляет команды меню или другой uI, см. [Команды меню Localize](../extensibility/localizing-menu-commands.md) для получения информации о локализации новых элементов uI.
+Если содержимое пакета VSIX содержит пакет VSPackage, который добавляет команды меню или другой пользовательский интерфейс, см. раздел [команды меню Localize](../extensibility/localizing-menu-commands.md) для получения сведений о локализации новых элементов пользовательского интерфейса.
 
 ## <a name="directory-structure"></a>Структура каталогов
 
- Когда пользователь устанавливает расширение, **расширения и обновления** проверяют верхний уровень пакета VSIX для папки, имя которой совпадает с локалью Visual Studio целевого компьютера. Если **extensions and Updates** находит файл *.vsixlangpack* в папке, он заменяет локализованные значения в этом файле на соответствующие значения в файле *.vsixmanifest.* Эти значения отображаются при установке расширения. Ниже приводится структура каталога для пакета VSIX, локализованного на испанском (es-ES) и французском (fr-FR).
+ Когда пользователь устанавливает расширение, **расширения и обновления** проверяют верхний уровень пакета VSIX для папки, имя которой соответствует языковому стандарту Visual Studio конечного компьютера. Если **расширения и обновления** обнаруживают *всикслангпакк* -файл в папке, он заменяет локализованные значения в этом файле соответствующими значениями в *vsixmanifest* -файле. Эти значения отображаются при установке расширения. В следующем примере показана структура каталогов для пакета VSIX, который локализован на Испанский (ES-ES) и французский (fr-FR).
 
 ```text
 .
@@ -41,29 +41,29 @@ ms.locfileid: "80702902"
 ```
 
 > [!NOTE]
-> Поддерживаемые VSIX шаблоны проекта [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] в манифесте VSIX и назовите его *source.extension.vsixmanifest*. Когда Visual Studio создает проект, она копирует содержимое этого файла в Extension.VsixManifest в пакете VSIX.
+> Поддерживаемые VSIX шаблоны проектов в [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Создайте манифест VSIX и назовите его *source. extension. vsixmanifest*. Когда Visual Studio выполняет сборку проекта, он копирует содержимое этого файла в Extension. VsixManifest в пакете VSIX.
 
-## <a name="the-extensionvsixlangpack-file"></a>Файл Extension.vsixlangpack
+## <a name="the-extensionvsixlangpack-file"></a>Файл Extension. всикслангпакк
 
-Файл *Extension.vsixlangpack* следует [схеме VSIX Language Pack 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md). Эта схема `PackageLanguagePackManifest`имеет, который сразу же `Metadata` сопровождается элементом ребенка. Элемент Metadata может содержать до 6 `DisplayName` `Description`элементов `License` `ReleaseNotes`ребенка, , `Icon` `MoreInfo`, , и . Эти элементы ребенка `Description` `MoreInfo`соответствуют `ReleaseNotes` `DisplayName`, `Icon` , , `Metadata` `License`, , , и элементы ребенка *элемента Extension.vsixmanifest* файла.
+Файл *Extension. всикслангпакк* соответствует [схеме языкового пакета VSIX 2,0](../extensibility/vsix-language-pack-schema-2-0-reference.md). Эта схема имеет объект `PackageLanguagePackManifest` , за которым сразу следует `Metadata` дочерний элемент. Элемент Metadata может содержать до 6 дочерних элементов,,,,, `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` и `Icon` . Эти дочерние элементы соответствуют `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` дочерним элементам,,,, и для `Icon` `Metadata` элемента файла *Extension. vsixmanifest* .
 
-При создании файла vsixlangpack необходимо `Include in Vsix` настроить `true`свойство. В противном случае локальный текст установки будет проигнорирован.
+При создании файла всикслангпакк необходимо задать `Include in Vsix` для свойства значение `true` . В противном случае локализованный текст установки будет проигнорирован.
 
-### <a name="to-set-the-include-in-vsix-property"></a>Установить включение в свойство Vsix
+### <a name="to-set-the-include-in-vsix-property"></a>Задание свойства include в VSIX
 
-1. В **Solution Explorer**, правой кнопкой мыши Extension.vsixlangpack файл, а затем нажмите **Свойства**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши файл Extension. всикслангпакк и выберите пункт **свойства**.
 
-2. В **сетке свойств**, нажмите Включить в `true` **Vsix**, и установить его значение.
+2. В **сетке свойств**щелкните **включить в VSIX**и присвойте ему значение `true` .
 
 ## <a name="example"></a>Пример
 
 ### <a name="description"></a>Описание
 
-В следующем примере показаны соответствующие части файла *Extension.vsixmanifest.* Файл также включает в себя соответствующий файл *Extension.vsixlangpack* для испанского языка. Значения из языкового пакета заменяют значения из манифеста, если язык Visual Studio целевого компьютера установлен на испанский язык.
+В следующем примере показаны соответствующие части файла *Extension. vsixmanifest* . Файл также содержит соответствующий файл *Extension. всикслангпакк* для испанского языка. Значения из языкового пакета заменяют значения из манифеста, если для языка Visual Studio целевого компьютера задано значение испанский.
 
 ### <a name="code"></a>Код
 
-- -*Extension.vsixmanifest*
+- [*Extension. vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ ms.locfileid: "80702902"
 </PackageManifest>
 ```
 
-- -*Extension.vsixlangpack*
+- [*Extension. всикслангпакк*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,6 +103,6 @@ ms.locfileid: "80702902"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[Схема языкового пакета VSIX 2.0](vsix-language-pack-schema-2-0-reference.md)|Пакет языков VSIX описывает информацию о локализации файла развертывания .vsix.|
-|[Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Описывает структуру и содержимое пакета vsix.|
-|[Локализация команд меню](../extensibility/localizing-menu-commands.md)|Показывает, как локализовать другие текстовые ресурсы в расширении.|
+|[Справочник по схеме языкового пакета VSIX 2,0](vsix-language-pack-schema-2-0-reference.md)|Языковой пакет VSIX описывает сведения о локализации VSIX-файла развертывания.|
+|[Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Описывает структуру и содержимое пакета VSIX.|
+|[Команды меню "локализовать"](../extensibility/localizing-menu-commands.md)|Показывает, как локализовать другие текстовые ресурсы в расширении.|

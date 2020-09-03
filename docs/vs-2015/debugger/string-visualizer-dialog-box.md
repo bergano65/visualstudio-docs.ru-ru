@@ -1,5 +1,5 @@
 ---
-title: Строка, диалоговое окно визуализатора | Документация Майкрософт
+title: Диалоговое окно визуализатора строки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 244c5e22fadaa17cb107dc2e733870fafe14477e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164102"
 ---
 # <a name="string-visualizer-dialog-box"></a>Диалоговое окно визуализатора строки
@@ -36,6 +36,6 @@ ms.locfileid: "68164102"
 
 Это диалоговое окно является одним из стандартных визуализаторов, входящих в состав отладчика Visual Studio. Кроме обычного текста визуализатор строки может вычислять строки HTML и XML, позволяя просматривать результаты в удобном и понятном формате.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)

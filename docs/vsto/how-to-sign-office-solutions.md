@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545760"
 ---
 # <a name="how-to-sign-office-solutions"></a>Практические руководства. Подписывание решений Office
@@ -37,7 +37,7 @@ ms.locfileid: "85545760"
 
 1. В меню **проект** выберите**Свойства** _имя_решения_.
 
-2. Откройте вкладку **Подписывание**.
+2. Откройте вкладку **Подписание** .
 
 3. Выберите **подписать манифесты ClickOnce**.
 
@@ -45,7 +45,7 @@ ms.locfileid: "85545760"
 
 5. Чтобы проверить, используется ли правильный сертификат, щелкните **Дополнительные сведения** , чтобы просмотреть сведения о сертификате.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)
 - [Предоставление доверия решениям Office](../vsto/granting-trust-to-office-solutions.md)

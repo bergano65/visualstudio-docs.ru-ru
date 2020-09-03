@@ -1,5 +1,5 @@
 ---
-title: Загрузка VSPackages Документы Майкрософт
+title: Загрузка пакетов VSPackage | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702968"
 ---
-# <a name="load-vspackages"></a>Нагрузка VSПакеты
-VSPackages загружаются в Visual Studio только тогда, когда требуется их функциональность. Например, VSPackage загружается, когда Visual Studio использует проектную фабрику или службу, которую реализует VSPackage. Эта функция называется задержкой загрузки, которая используется по возможности для повышения производительности.
+# <a name="load-vspackages"></a>Загрузка пакетов VSPackage
+Пакеты VSPackage загружаются в Visual Studio только в том случае, если их функциональные возможности необходимы. Например, пакет VSPackage загружается, когда Visual Studio использует фабрику проекта или службу, реализуемую VSPackage. Эта функция называется отложенной загрузкой, которая используется, когда это возможно, для повышения производительности.
 
 > [!NOTE]
-> Visual Studio может определить определенную информацию VSPackage, например команды, которые предлагает VSPackage, без загрузки VSPackage.
+> Visual Studio может определить определенные сведения VSPackage, например команды, предлагаемые пакетом VSPackage, без загрузки VSPackage.
 
- VSPackages можно настроить для автоматической загрузки в определенном контексте пользовательского интерфейса (UI), например, когда решение открыто. Атрибут <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> задает этот контекст.
+ Пакеты VSPackage можно установить в автозагрузки в определенном контексте пользовательского интерфейса, например, когда решение открыто. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>Атрибут задает этот контекст.
 
-### <a name="autoload-a-vspackage-in-a-specific-context"></a>Автоматическая загрузка VSPackage в определенном контексте
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Автозагрузки VSPackage в определенном контексте
 
-- Добавьте `ProvideAutoLoad` атрибут атрибуты VSPackage:
+- Добавьте `ProvideAutoLoad` атрибут к атрибутам VSPackage:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -39,22 +39,22 @@ VSPackages загружаются в Visual Studio только тогда, ко
     {. . .}
     ```
 
-     Ознакомьтесь с перечисленными полями <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> для списка контекстов интерфейса и их значений GUID.
+     <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>Список контекстов пользовательского интерфейса и их значений GUID см. в списке полей перечисления.
 
-- Установите точку <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> разрыва в методе.
+- Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> методе.
 
-- Создайте VSPackage и начните отладку.
+- Создайте пакет VSPackage и начните отладку.
 
 - Загрузите решение или создайте его.
 
-     VSPackage загружается и останавливается в точке разрыва.
+     Пакет VSPackage загружается и останавливается в точке останова.
 
-## <a name="force-a-vspackage-to-load"></a>Заставить VSPackage для загрузки
- При некоторых обстоятельствах VSPackage, возможно, придется заставить другой VSPackage быть загружены. Например, легкий VSPackage может загрузить больший VSPackage в контексте, который недоступен в качестве CMDUIContext.
+## <a name="force-a-vspackage-to-load"></a>Принудительная Загрузка VSPackage
+ В некоторых обстоятельствах пакету VSPackage может потребоваться принудительно загрузить другой пакет VSPackage. Например, упрощенный пакет VSPackage может загрузить более крупный пакет VSPackage в контексте, недоступном в качестве Кмдуиконтекст.
 
- Вы можете <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> использовать метод, чтобы заставить VSPackage для загрузки.
+ Для <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> принудительной загрузки VSPackage можно использовать метод.
 
-- Вставьте этот <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> код в метод VSPackage, который заставляет другой VSPackage загружать:
+- Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод VSPackage, который вызывает загрузку другого пакета VSPackage:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
@@ -67,9 +67,9 @@ VSPackages загружаются в Visual Studio только тогда, ко
 
     ```
 
-     Когда VSPackage инициализирован, `PackageToBeLoaded` он заставит загрузиться.
+     После инициализации VSPackage будет принудительно `PackageToBeLoaded` загружен.
 
-     Силовая нагрузка не должна использоваться для связи VSPackage. Используйте [и предоставляя услуги](../extensibility/using-and-providing-services.md) вместо этого.
+     Принудительная загрузка не должна использоваться для связи VSPackage. Используйте вместо этого использование [и предоставление служб](../extensibility/using-and-providing-services.md) .
 
-## <a name="see-also"></a>См. также
-- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>См. также раздел
+- [VSPackages](../extensibility/internals/vspackages.md)

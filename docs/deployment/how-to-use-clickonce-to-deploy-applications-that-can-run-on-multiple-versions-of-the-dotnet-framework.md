@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381708"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
@@ -102,9 +102,9 @@ ms.locfileid: "85381708"
 
 - Обновите и повторно подпишите манифесты приложения и развертывания. Дополнительные сведения см. [в разделе как повторно подписывать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks>дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency>дерев](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks> дерев](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency> дерев](../deployment/dependency-element-clickonce-application.md)
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Схема файла конфигурации](/dotnet/framework/configure-apps/file-schema/index)

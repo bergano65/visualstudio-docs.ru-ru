@@ -17,15 +17,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014619"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Пошаговое руководство. Создание и отладка решения для рабочих процессов SharePoint
   В этом пошаговом руководстве показано, как создать базовый шаблон последовательного рабочего процесса. Рабочий процесс проверяет свойство библиотеки общих документов, чтобы определить, проверен ли документ. Если документ был проверен, Рабочий процесс завершается.
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - Создание проекта последовательного рабочего процесса определения списка SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
@@ -43,7 +44,7 @@ ms.locfileid: "86014619"
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 ## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Добавление свойств в библиотеку общих документов SharePoint
  Для трассировки состояния проверки документов в библиотеке **общих документов** мы создадим три новых свойства для общих документов на нашем сайте SharePoint: `Status` , `Assignee` и `Review Comments` . Эти свойства определяются в библиотеке " **Общие документы** ".

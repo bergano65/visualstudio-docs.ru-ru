@@ -9,10 +9,10 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce4c6ceec9489abcd3573c126aefe98a268187c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660434"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Тестирование приложений Windows UWP и приложений Магазина Windows 8.1 с помощью закодированных тестов пользовательского интерфейса
@@ -32,11 +32,11 @@ ms.locfileid: "72660434"
 
 2. Создайте проект пустого XAML-приложения Магазина Windows, используя шаблон Visual C# или Visual Basic.
 
-     ![Создание XAML пустого приложения &#40;для Магазина Windows&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
+     ![Создание пустого приложения для Магазина Windows &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
 
 3. В обозревателе решений выберите файл MainPage.xaml. Из панели инструментов перетащите элемент управления "Кнопка" и "Текстовое поле" на поверхность разработки.
 
-     ![Разработка приложения для Магазина Windows](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
+     ![Проектирования приложения для Магазина Windows](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
 
 4. Дважды щелкните элемент управления "Кнопка" и добавьте следующий код:
 
@@ -66,27 +66,27 @@ ms.locfileid: "72660434"
 
 1. Создайте проект закодированного теста ИП для приложения Магазина Windows.
 
-    ![Новый проект &#40;закодированного пользовательского интерфейса закодированного приложения для Магазина Windows&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
+    ![Новый проект закодированного пользовательского интерфейса закодированного &#40;приложений Магазина Windows&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
 
 2. С помощью перекрестия включите режим редактирования карты ИП.
 
-    ![Выберите Изменить карту ИП или добавить утверждения.](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
+    ![Выбор изменения карты ИП или добавление утверждений](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
 
 3. Выберите плитку приложения с помощью перекрестья в построителе закодированных тестов ИП, щелкните правой кнопкой свойство **AutomationId** и выберите команду **Скопировать значение в буфер обмена**. Это значение будет использоваться позднее для записи действия, необходимого для запуска тестируемого приложения.
 
-    ![Копировать AutomationId в буфер обмена](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
+    ![Копирование AutomationId в буфер обмена](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
 
 4. В запущенном приложении Магазина Windows с помощью перекрестья выберите элемент управления "Кнопка" и "Текстовое поле". После добавления каждого элемента управления нажмите кнопку **Добавить элемент управления на карту элементов управления ИП** на панели инструментов построителя закодированных тестов ИП.
 
-    ![Добавление элемента управления в карту пользовательского интерфейса](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
+    ![Добавление элемента на карту ИП](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
 
 5. Нажмите кнопку **Создать код** на панели инструментов построителя закодированных тестов ИП и щелкните **Создать** , чтобы сформировать код изменений карты элементов управления ИП.
 
-    ![Создание кода для схемы пользовательского интерфейса](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")
+    ![Формирование кода для карты ИП](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")
 
 6. Выберите кнопку, чтобы задать значение в текстовом поле.
 
-    ![Щелкните элемент управления "Кнопка", чтобы задать значение TextBox](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
+    ![Нажмите элемент управления "кнопка", чтобы задать значение текстового поля](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
 
 7. С помощью перекрестья выберите текстовое поле, а затем свойство **Text** .
 
@@ -94,19 +94,19 @@ ms.locfileid: "72660434"
 
 8. Добавьте утверждение. Оно будет использоваться для проверки значения.
 
-    ![Выбор тестбокс с перекрестными&#45;крестиками и добавление утверждения](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
+    ![Выбор тестбокс с крестиками&#45;и добавление утверждений](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
 
 9. Добавьте и создайте код для утверждения.
 
-     ![Создать код для утверждения TextBox](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
+     ![Формирование кода для утверждения текстового поля](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      В обозревателе решений откройте файл UIMap.Designer.cs, чтобы просмотреть добавленный код для метода assert и элементов управления.
 
      **Visual Basic**
 
-     В обозревателе решений откройте файл CodedUITest1.vb и затем в коде метода теста CodedUITestMethod1() щелкните правой кнопкой вызов метода assert, который был автоматически добавлен в `Me.UIMap.AssertMethod1()` , и выберите команду **Перейти к определению**. Файл UIMap.Designer.vb откроется в редакторе кода, где вы сможете просмотреть код, добавленный для метода assert и элементов управления.
+     В обозревателе решений откройте файл CodedUITest1.vb и затем в коде метода теста CodedUITestMethod1() щелкните правой кнопкой вызов метода assert, который был автоматически добавлен в `Me.UIMap.AssertMethod1()`, и выберите команду **Перейти к определению**. Файл UIMap.Designer.vb откроется в редакторе кода, где вы сможете просмотреть код, добавленный для метода assert и элементов управления.
 
     > [!WARNING]
     > Не изменяйте файл UIMap.Designer.cs или UIMap.Designer.vb напрямую. В этом случае изменения файла будут перезаписываться при каждом создании теста.
@@ -282,19 +282,19 @@ ms.locfileid: "72660434"
 
 12. Выполните построение теста и запустите его в обозревателе тестов.
 
-     ![Запуск закодированного теста пользовательского интерфейса из обозревателя тестов](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
+     ![Запуск кодированного теста ИП из обозревателя тестов](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
 
      Приложение Магазина Windows запустится, будет выполнено действие касания кнопки, а свойство Text текстового поля будет заполнено и проверено с помощью метода assert.
 
-     ![Выполнение закодированного теста пользовательского интерфейса](../test/media/cuit-windowsstoreapp-running.png "CUIT_WindowsStoreApp_Running")
+     ![Выполнение кодированного теста ИП](../test/media/cuit-windowsstoreapp-running.png "CUIT_WindowsStoreApp_Running")
 
      После завершения теста обозреватель тестов подтвердит, что тест был пройден.
 
-     ![Пройденные тесты отображаются в обозревателе тестов](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
+     ![Пройденный тест отображается в обозревателе тестов](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-- **В. Почему я не вижу параметр для записи закодированного теста пользовательского интерфейса в меню "Сформировать код" в диалоговом окне "Закодированный тест пользовательского интерфейса"?**
+- **В. Почему я не вижу параметр для записи закодированного теста ИП в диалоговом окне "Создать код" или "Закодированный тест ИП"?**
 
      **О**. Параметр записи не поддерживается для приложений Магазина Windows.
 
@@ -319,7 +319,7 @@ ms.locfileid: "72660434"
 
 - **В. Почему не следует изменять файл UIMap.Designer?**
 
-   **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.
+   Ответ **. любые**изменения кода, вносимые в файл UIMapDesigner.cs, будут перезаписаны при каждом создании кода с помощью построителя кодированных тестов ИП. Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md) [Задайте уникальное свойство автоматизации для элементов управления магазина Windows для тестирования](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

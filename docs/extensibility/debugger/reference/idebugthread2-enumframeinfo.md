@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo Документы Майкрософт
+title: 'IDebugThread2:: Енумфрамеинфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718859"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
@@ -45,21 +45,21 @@ int EnumFrameInfo ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFieldSpec`\
-(в) Комбинация флагов [из FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, которая определяет, какие поля структур [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) должны быть заполнены. Укажите `FIF_FUNCNAME_FORMAT` флаг для формата имени функции в одну строку.
+окне Сочетание флагов из перечисления [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , которое указывает, какие поля структур [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) должны быть заполнены. Укажите `FIF_FUNCNAME_FORMAT` флаг для форматирования имени функции в одной строке.
 
 `nRadix`\
-(в) Radix используется при форматировании численной информации в регистраторе.
+окне Основание системы счисления, используемое для форматирования числовых данных в перечислителе.
 
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugFrameInfo2,](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) содержащий список структур [FRAMEINFO,](../../../extensibility/debugger/reference/frameinfo.md) описывающих кадр стека.
+заполняет Возвращает объект [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) , содержащий список структур [фрамеинфо](../../../extensibility/debugger/reference/frameinfo.md) , описывающих кадр стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Кадры потока перечислены в порядке, с текущей кадра перечислены первый и старейший кадр перечислены в прошлом.
+## <a name="remarks"></a>Remarks
+ Фреймы потока перечисляются по порядку, а текущий фрейм перечислится первыми, а самый старый кадр перечисляется последним.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

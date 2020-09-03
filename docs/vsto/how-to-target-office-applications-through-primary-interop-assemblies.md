@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545773"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия
@@ -38,7 +38,7 @@ ms.locfileid: "85545773"
 
 1. Откройте проект Office и выберите имя проекта в **Обозреватель решений**.
 
-2. В меню **Проект** щелкните команду **Добавить ссылку**.
+2. В меню **Проект** выберите пункт **Добавить ссылку**.
 
 3. На вкладке **платформа** выберите нужную сборку PIA в списке **имя компонента** . Дополнительные сведения о доступных Microsoft Office основных сборках взаимодействия см. в разделе [основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md).
 
