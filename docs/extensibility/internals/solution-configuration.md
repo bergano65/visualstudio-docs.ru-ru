@@ -55,7 +55,7 @@ ms.locfileid: "80705376"
 
   После добавления новой конфигурации решения пользователь может выбрать ее из раскрывающегося списка Конфигурация решения на стандартной панели инструментов для построения и (или) запуска этой конфигурации.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md)
 - [Конфигурация проекта для сборки](../../extensibility/internals/project-configuration-for-building.md)
 - [Объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md)

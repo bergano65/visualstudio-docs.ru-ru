@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump Документы Майкрософт
+title: 'IDebugProgram2:: Вритедумп | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722737"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-Записывает свалку в файл.
+Записывает дамп в файл.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int WriteDump( 
 
 ## <a name="parameters"></a>Параметры
 `DumpType`\
-(в) Значение из перечисления [DUMPTYPE,](../../../extensibility/debugger/reference/dumptype.md) которое определяет тип дампа, например, короткий или длинный.
+окне Значение из перечисления [думптипе](../../../extensibility/debugger/reference/dumptype.md) , указывающее тип дампа, например short или long.
 
 `pszDumpUrl`\
-(в) URL-адрес для записи дампа. Как правило, это в `file://c:\path\filename.ext`виде, но может быть любой действительный URL.
+окне URL-адрес для записи дампа. Как правило, он имеет вид `file://c:\path\filename.ext` , но может быть любым допустимым URL-адресом.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Дамп программы обычно включает текущий кадр стека, сам стек, список потоков, работающих в программе, и, возможно, любую память, которой владеет программа.
+## <a name="remarks"></a>Remarks
+ Дамп программы обычно включает текущий кадр стека, стек, список потоков, выполняющихся в программе, и, возможно, любой объем памяти, который владеет программой.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

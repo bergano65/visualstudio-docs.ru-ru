@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255527"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
@@ -29,7 +29,7 @@ ms.locfileid: "71255527"
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - [Создание панелей действий](#BKMK_CreateActionsPanes).
 
@@ -41,7 +41,7 @@ ms.locfileid: "71255527"
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -52,11 +52,11 @@ ms.locfileid: "71255527"
 
 ### <a name="to-create-an-excel-workbook-project"></a>Создание проекта книги Excel
 
-- Создайте проект книги Excel с именем **мексцелриббон**. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Создайте проект книги Excel с именем **мексцелриббон**. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio откроет новую книгу в конструкторе и добавит проект **мексцелриббон** в **Обозреватель решений**.
 
-## <a name="BKMK_CreateActionsPanes"></a>Создание панелей действий
+## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> Создание панелей действий
  Добавьте в проект две настраиваемые панели действий. Позже на настраиваемой вкладке будут добавлены кнопки для скрытия и отображения этих панелей действий.
 
 ### <a name="to-create-actions-panes"></a>Создание панелей действий
@@ -73,14 +73,14 @@ ms.locfileid: "71255527"
 
 5. Повторите этапы 1–5, чтобы создать вторую панель действий и метку. Задайте для свойства **Text** второй метки значение **панель действий 2**.
 
-## <a name="BKMK_CreateCustomTab"></a>Создание настраиваемой вкладки
+## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> Создание настраиваемой вкладки
  Один из принципов проектирования приложений Office состоит в том, что пользователь всегда должен иметь возможность распоряжаться пользовательским интерфейсом приложения Office. Чтобы обеспечить такую возможность для панелей действий, можно добавить на настраиваемую вкладку ленты кнопки, скрывающие и отображающие каждую панель. Чтобы создать настраиваемую вкладку, добавьте в проект элемент **Лента (визуальный конструктор)** . Конструктор помогает добавлять и размещать элементы управления, задавать их свойства и обрабатывать связанные с ними события.
 
 ### <a name="to-create-a-custom-tab"></a>Создание настраиваемой вкладки
 
 1. В меню **Проект** выберите пункт **Добавить новый элемент**.
 
-2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)** .
+2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
 
 3. Измените имя новой ленты на **MyRibbon**и нажмите кнопку **Добавить**.
 
@@ -108,7 +108,7 @@ ms.locfileid: "71255527"
 
 14. Задайте свойство **Метка** , чтобы **Скрыть панель действий**.
 
-## <a name="BKMK_HideShowActionsPane"></a>Скрытие и отображение панелей действий с помощью кнопок на пользовательской вкладке
+## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> Скрытие и отображение панелей действий с помощью кнопок на пользовательской вкладке
  Последним этапом является добавление кода, который взаимодействует с пользователем. Добавьте обработчики событий для событий <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> обеих кнопок и события <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Добавьте в эти обработчики событий код для скрытия и отображения панелей действий.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки
@@ -120,7 +120,7 @@ ms.locfileid: "71255527"
      [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
 
-3. Замените метод `MyRibbon_Load` следующим кодом. Данный код добавляет объекты панелей действий в коллекцию панелей действий <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> и скрывает объекты. Кроме того, код Visual C# присоединяет делегаты к нескольким событиям элементов управления ленты.
+3. Замените метод `MyRibbon_Load` приведенным ниже кодом. Данный код добавляет объекты панелей действий в коллекцию панелей действий <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> и скрывает объекты. Кроме того, код Visual C# присоединяет делегаты к нескольким событиям элементов управления ленты.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
@@ -151,20 +151,20 @@ ms.locfileid: "71255527"
 
      Панели действий будут скрыты.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:
 
 - Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
 
-- Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание области](../vsto/walkthrough-designing-an-outlook-form-region.md)формы Outlook.
+- Расширение стандартной или пользовательской формы Microsoft Office Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство. Проектирование области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Общие сведения о ленте](../vsto/ribbon-overview.md)
 - [Конструктор лент](../vsto/ribbon-designer.md)
 - [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Практическое руководство. Изменение позиции вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)
-- [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Как приступить к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Как изменить позицию вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Как настроить встроенную вкладку](../vsto/how-to-customize-a-built-in-tab.md)
+- [Как добавить элементы управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [Общие сведения об объектной модели ленты](../vsto/ribbon-object-model-overview.md)

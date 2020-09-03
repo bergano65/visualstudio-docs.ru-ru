@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b359d49ed4d670581406da3aad4cf05393f6b446
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662106"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
@@ -26,7 +26,7 @@ ms.locfileid: "72662106"
 
 ## <a name="project-properties-pages"></a>Страницы свойств проекта
 
-|Заголовок|ОПИСАНИЕ|
+|Title|Description|
 |-----------|-----------------|
 |[Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].|
 |[Страница "Приложение" в конструкторе проектов (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[csprcs](../../includes/csprcs-md.md)].|
@@ -44,5 +44,5 @@ ms.locfileid: "72662106"
 |||
 |||
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Общие сведения](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) о [решениях и проектах](../../ide/solutions-and-projects-in-visual-studio.md) конструктора проектов

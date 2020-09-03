@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_uniqueId | Документация Майкрософт
+title: 'IDiaSourceFile:: get_uniqueId | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5237d8a524bd77f67c86a650bb4c8f075e407fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190625"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает значение ключа простым целым числом, которое является уникальным для этого образа.  
+Возвращает простое значение целочисленного ключа, которое является уникальным для этого образа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT get_uniqueId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает значение ключа простым целым числом, которое является уникальным для этого образа.  
+ заполняет Возвращает простое значение целочисленного ключа, которое является уникальным для этого образа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Сравнении ключей, а не строк могут ускорить обработка номеров строк.  
+## <a name="remarks"></a>Remarks  
+ Сравнение ключей, а не строк, может ускорить обработку номеров строк.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

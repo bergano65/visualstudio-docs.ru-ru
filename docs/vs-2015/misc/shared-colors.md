@@ -8,10 +8,10 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548360"
 ---
 # <a name="shared-colors"></a>Общие цвета
@@ -35,7 +35,7 @@ ms.locfileid: "85548360"
   
 ### <a name="command-structures"></a>Структура команд  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Ярлык  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Ярлык  
  Меню встречаются в Visual Studio 2013 в нескольких местах. Они могут находиться в главной строке меню, внедряться в окна документов или инструментов или вызываться при щелчке правой кнопкой мыши различным элементам интегрированной среды разработки. Реализация меню, связанных с другими элементами пользовательского интерфейса, рассматривается в разделах, посвященных соответствующим элементам. Всегда используйте стандартную реализацию меню, предоставляемую средой Visual Studio. Однако в некоторых редких случаях доступ к стандартным меню Visual Studio может отсутствовать. В таких ситуациях используйте указанные ниже имена токенов для обеспечения согласованности пользовательского интерфейса с другими меню в Visual Studio.  
   
  ![Красная линия меню](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 — 000_MenuRedline")  
@@ -65,10 +65,10 @@ ms.locfileid: "85548360"
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Заголовок меню по умолчанию](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 — 002_MenuTitleDefault")<br /><br /> **Заголовок меню**|Фон|None|  
+|![Заголовок меню по умолчанию](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 — 002_MenuTitleDefault")<br /><br /> **Заголовок меню**|Фон|Нет|  
 |![Заголовок меню по умолчанию](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 — 002_MenuTitleDefault")<br /><br /> **Заголовок меню**|Передний план (текст)|`Environment.CommandBarTextActive`|  
 |![Заголовок меню с глифом по умолчанию](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 — 003_MenuTitleWithGlyphDefault")<br /><br /> **Заголовок меню с глифом**|Передний план (глиф)|`Environment.CommandBarMenuGlyph`|  
-|![Заголовок меню с глифом по умолчанию](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 — 003_MenuTitleWithGlyphDefault")<br /><br /> **Заголовок меню с глифом**|Border|None|  
+|![Заголовок меню с глифом по умолчанию](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 — 003_MenuTitleWithGlyphDefault")<br /><br /> **Заголовок меню с глифом**|Рамка|Нет|  
   
  **Наведение**  
   
@@ -77,7 +77,7 @@ ms.locfileid: "85548360"
 |![Заголовок меню при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 — 004_MenuTitleHover")<br /><br /> **Заголовок меню**|Фон|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Заголовок меню при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 — 004_MenuTitleHover")<br /><br /> **Заголовок меню**|Передний план (текст)|`Environment.CommandBarTextHover`|  
 |![Заголовок меню с глифом при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 — 005_MenuTitleWithGlyphHover")<br /><br /> **Заголовок меню с глифом**|Передний план (глиф)|`Environment.CommandBarMenuMouseOverGlyph`|  
-|![Заголовок меню с глифом при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 — 005_MenuTitleWithGlyphHover")<br /><br /> **Заголовок меню с глифом**|Border|`Environment.CommandBarBorder`|  
+|![Заголовок меню с глифом при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 — 005_MenuTitleWithGlyphHover")<br /><br /> **Заголовок меню с глифом**|Рамка|`Environment.CommandBarBorder`|  
   
  **Pressed**  
   
@@ -86,16 +86,16 @@ ms.locfileid: "85548360"
 |![Активная кнопка заголовка меню](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 — 006_MenuTitlePressed")<br /><br /> **Заголовок меню**|Фон|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Активная кнопка заголовка меню](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 — 006_MenuTitlePressed")<br /><br /> **Заголовок меню**|Передний план (текст)|`Environment.CommandBarTextActive`|  
 |![Активная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 — 007_MenuTitleWithGlyphPressed")<br /><br /> **Заголовок меню с глифом**|Передний план (глиф)|`Environment.CommandBarMenuMouseDownGlyph`|  
-|![Активная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 — 007_MenuTitleWithGlyphPressed")<br /><br /> **Заголовок меню с глифом**|Border|`Environment.CommandBarMenuBorder`<br /><br /> Только с левой, верхней и правой сторон.|  
+|![Активная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 — 007_MenuTitleWithGlyphPressed")<br /><br /> **Заголовок меню с глифом**|Рамка|`Environment.CommandBarMenuBorder`<br /><br /> Только с левой, верхней и правой сторон.|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Неактивная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")<br /><br /> **Заголовок меню с глифом**|Фон|None|  
+|![Неактивная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")<br /><br /> **Заголовок меню с глифом**|Фон|Нет|  
 |![Неактивная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")<br /><br /> **Заголовок меню с глифом**|Передний план (текст)|`Environment.CommandBarTextInactive`|  
 |![Неактивная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")<br /><br /> **Заголовок меню с глифом**|Передний план (глиф)|`Environment.CommandBarTextInactive`|  
-|![Неактивная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")<br /><br /> **Заголовок меню с глифом**|Border|None|  
+|![Неактивная кнопка заголовка меню с глифом](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 — 008_MenuTitleWithGlyphDisabled")<br /><br /> **Заголовок меню с глифом**|Рамка|Нет|  
   
 ##### <a name="menu"></a>Меню  
  Отдельный пункт меню состоит из текста и необязательных значка, флажка или глифа подменю. Его цвета фона и текста меняются при наведении указателя. Этот токен цвета представляет собой пару, состоящую из цвета фона и цвета переднего плана.  
@@ -117,7 +117,7 @@ ms.locfileid: "85548360"
 |![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Фон|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Передний план (текст)|`Environment.CommandBarTextActive`|  
 |![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Передний план (глиф подменю)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Border|`Environment.CommandBarMenuBorder`|  
+|![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Рамка|`Environment.CommandBarMenuBorder`|  
 |![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Фон канала значка|`Environment.CommandBarMenuIconBackground`|  
 |![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Separator|`Environment.CommandBarMenuSeparator`|  
 |![Меню по умолчанию](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 — 010_MenuDefault")<br /><br /> **Меню**|Shadow|`Environment.DropShadowBackground`|  
@@ -138,7 +138,7 @@ ms.locfileid: "85548360"
 |![Выбранное меню при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 — 015_MenuHoverSelected")<br /><br /> **Selected**|Фон значка|`Environment.CommandBarHoverOverSelected`|  
 |![Выбранное меню при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 — 015_MenuHoverSelected")<br /><br /> **Selected**|Граница значка|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -182,7 +182,7 @@ ms.locfileid: "85548360"
 |Элемент|Имя токена: Category.color|  
 |-------------|--------------------------------|  
 |Фон|`Environment.CommandBarGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
-|Border|`Environment.CommandBarToolBarBorder`|  
+|Рамка|`Environment.CommandBarToolBarBorder`|  
 |Маркер перетаскивания|`Environment.CommandBarDragHandle`|  
 |Separator|`Environment.CommandBarToolBarSeparator`<br /><br /> `Environment.CommandBarToolBarSeparatorHighlight`|  
   
@@ -205,10 +205,10 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 — 023_CommandIconDefault")<br /><br /> **Default**|Фон|Н/Д (наследуется от фона панели команд)|  
 |![Значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 — 023_CommandIconDefault")<br /><br /> **Default**|Передний план (текст)|`Environment.CommandBarTextActive`|  
-|![Значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 — 023_CommandIconDefault")<br /><br /> **Default**|Border|Недоступно|  
+|![Значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 — 023_CommandIconDefault")<br /><br /> **Default**|Рамка|Н/Д|  
 |![Выбранный значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 — 024_CommandIconDefaultSelected")<br /><br /> **Selected**|Фон|`Environment.CommandBarSelected`|  
 |![Выбранный значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 — 024_CommandIconDefaultSelected")<br /><br /> **Selected**|Передний план (текст)|`Environment.CommandBarTextSelected`|  
-|![Выбранный значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 — 024_CommandIconDefaultSelected")<br /><br /> **Selected**|Border|`Environment.CommandBarSelectedBorder`|  
+|![Выбранный значок команды по умолчанию](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 — 024_CommandIconDefaultSelected")<br /><br /> **Selected**|Рамка|`Environment.CommandBarSelectedBorder`|  
   
  **Наведение указателя мыши и получение фокуса с клавиатуры**  
   
@@ -216,10 +216,10 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 — 025_CommandIconHover")<br /><br /> **Стандартный при наведении указателя мыши**|Фон|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 — 025_CommandIconHover")<br /><br /> **Стандартный при наведении указателя мыши**|Передний план (текст)|`Environment.CommandBarTextHover`|  
-|![Значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 — 025_CommandIconHover")<br /><br /> **Стандартный при наведении указателя мыши**|Border|`Environment.CommandBarBorder`|  
+|![Значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 — 025_CommandIconHover")<br /><br /> **Стандартный при наведении указателя мыши**|Рамка|`Environment.CommandBarBorder`|  
 |![Выбранный значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 — 026_CommandIconHoverSelected")<br /><br /> **Выбор при наведении указателя мыши**|Фон|`Environment.CommandBarHoverOverSelected`|  
 |![Выбранный значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 — 026_CommandIconHoverSelected")<br /><br /> **Выбор при наведении указателя мыши**|Передний план (текст)|`Environment.CommandBarTextHoverOverSelected`|  
-|![Выбранный значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 — 026_CommandIconHoverSelected")<br /><br /> **Выбор при наведении указателя мыши**|Border|`Environment.CommandBarHoverOverSelectedIconBorder`|  
+|![Выбранный значок команды при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 — 026_CommandIconHoverSelected")<br /><br /> **Выбор при наведении указателя мыши**|Рамка|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
  **Pressed**  
   
@@ -227,17 +227,17 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Активный значок команды](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 — 027_CommandIconPressed")<br /><br /> **Активный значок команды**|Фон|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Активный значок команды](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 — 027_CommandIconPressed")<br /><br /> **Активный значок команды**|Передний план (текст)|`Environment.CommandBarTextMouseDown`|  
-|![Активный значок команды](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 — 027_CommandIconPressed")<br /><br /> **Активный значок команды**|Border|`Environment.CommandBarBorder`|  
+|![Активный значок команды](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 — 027_CommandIconPressed")<br /><br /> **Активный значок команды**|Рамка|`Environment.CommandBarBorder`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Неактивный значок команды](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 — 028_CommandIconDisabled")<br /><br /> **Неактивный значок команды**|Фон|Н/Д (наследуется от фона панели команд)|  
 |![Неактивный значок команды](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 — 028_CommandIconDisabled")<br /><br /> **Неактивный значок команды**|Передний план (текст)|`Environment.CommandBarTextInactive`|  
-|![Неактивный значок команды](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 — 028_CommandIconDisabled")<br /><br /> **Неактивный значок команды**|Border|Недоступно|  
+|![Неактивный значок команды](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 — 028_CommandIconDisabled")<br /><br /> **Неактивный значок команды**|Рамка|Н/Д|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Поле со списком  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Поле со списком  
   
 > [!IMPORTANT]
 > Поле со списком похоже на раскрывающийся список, но включает область для ввода и редактирования текста. Если раскрывающийся список не включает область для ввода и редактирования текста, используйте токены цветов, указанные в разделе [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
@@ -260,13 +260,13 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 — 030_ComboBoxInputField")<br /><br /> **Поле ввода**|Фон|`Environment.ComboBoxBackground`|  
 |![Поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 — 030_ComboBoxInputField")<br /><br /> **Поле ввода**|Передний план (текст)|`Environment.ComboBoxText`|  
-|![Поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 — 030_ComboBoxInputField")<br /><br /> **Поле ввода**|Border|`Environment.ComboBoxBorder`|  
+|![Поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 — 030_ComboBoxInputField")<br /><br /> **Поле ввода**|Рамка|`Environment.ComboBoxBorder`|  
 |![Поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 — 030_ComboBoxInputField")<br /><br /> **Поле ввода**|Separator|Без разделителя|  
 |![Кнопка раскрывающегося списка&#45;вниз](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 — 031_ComboBoxDropdownButton")<br /><br /> **Кнопка раскрывающегося списка**|Фон|Н/Д (наследуется)|  
 |![Кнопка раскрывающегося списка&#45;вниз](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 — 031_ComboBoxDropdownButton")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.ComboBoxGlyph`|  
 |![Поле со списком&#47;&#45;раскрывающегося списка](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 — 032_ComboBoxDropdownList")<br /><br /> **Раскрывающийся список**|Фон|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Поле со списком&#47;&#45;раскрывающегося списка](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 — 032_ComboBoxDropdownList")<br /><br /> **Раскрывающийся список**|Передний план (текст)|`Environment.ComboBoxItemText`|  
-|![Поле со списком&#47;&#45;раскрывающегося списка](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 — 032_ComboBoxDropdownList")<br /><br /> **Раскрывающийся список**|Border|`Environment.ComboBoxPopupBorder`|  
+|![Поле со списком&#47;&#45;раскрывающегося списка](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 — 032_ComboBoxDropdownList")<br /><br /> **Раскрывающийся список**|Рамка|`Environment.ComboBoxPopupBorder`|  
   
  **Наведение**  
   
@@ -274,7 +274,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Поле ввода поля со списком при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 — 033_ComboBoxInputFieldHover")<br /><br /> **Поле ввода**|Фон|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Поле ввода поля со списком при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 — 033_ComboBoxInputFieldHover")<br /><br /> **Поле ввода**|Передний план (текст)|`Environment.ComboBoxMouseOverText`|  
-|![Поле ввода поля со списком при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 — 033_ComboBoxInputFieldHover")<br /><br /> **Поле ввода**|Border|`Environment.ComboBoxMouseOverBorder`|  
+|![Поле ввода поля со списком при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 — 033_ComboBoxInputFieldHover")<br /><br /> **Поле ввода**|Рамка|`Environment.ComboBoxMouseOverBorder`|  
 |![Поле ввода поля со списком при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 — 033_ComboBoxInputFieldHover")<br /><br /> **Поле ввода**|Separator|`Environment.ComboBoxMouseOverSeparator`|  
 |![Поле со списком&#47;удалить&#45;кнопку "вниз" при наведении указателя](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 — 034_ComboBoxDropdownButtonHover")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`Environment.ComboBoxButtonMouseOverBackground`|  
 |![Поле со списком&#47;удалить&#45;кнопку "вниз" при наведении указателя](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 — 034_ComboBoxDropdownButtonHover")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.ComboBoxMouseOverGlyph`|  
@@ -288,7 +288,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Поле ввода поля со списком с фокусом ввода](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 — 036_ComboBoxInputFieldFocused")<br /><br /> **Поле ввода**|Фон|`Environment.ComboBoxFocusedBackground`|  
 |![Поле ввода поля со списком с фокусом ввода](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 — 036_ComboBoxInputFieldFocused")<br /><br /> **Поле ввода**|Передний план (текст)|`Environment.ComboBoxFocusedText`|  
-|![Поле ввода поля со списком с фокусом ввода](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 — 036_ComboBoxInputFieldFocused")<br /><br /> **Поле ввода**|Border|`Environment.ComboBoxFocusedBorder`|  
+|![Поле ввода поля со списком с фокусом ввода](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 — 036_ComboBoxInputFieldFocused")<br /><br /> **Поле ввода**|Рамка|`Environment.ComboBoxFocusedBorder`|  
 |![Поле ввода поля со списком с фокусом ввода](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 — 036_ComboBoxInputFieldFocused")<br /><br /> **Поле ввода**|Separator|`Environment.ComboBoxFocusedButtonSeparator`|  
 |![Поле со списком&#47;кнопка "удалить&#45;"](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 — 037_ComboBoxDropdownButtonFocused")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`Environment.ComboBoxFocusedButtonBackground`|  
 |![Поле со списком&#47;кнопка "удалить&#45;"](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 — 037_ComboBoxDropdownButtonFocused")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.ComboBoxFocusedGlyph`|  
@@ -299,23 +299,23 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Активное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 — 038_ComboBoxInputFieldPressed")<br /><br /> **Поле ввода**|Фон|`Environment.ComboBoxMouseDownBackground`|  
 |![Активное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 — 038_ComboBoxInputFieldPressed")<br /><br /> **Поле ввода**|Передний план (текст)|`Environment.ComboBoxMouseDownText`|  
-|![Активное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 — 038_ComboBoxInputFieldPressed")<br /><br /> **Поле ввода**|Border|`Environment.ComboBoxMouseDownBorder`|  
+|![Активное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 — 038_ComboBoxInputFieldPressed")<br /><br /> **Поле ввода**|Рамка|`Environment.ComboBoxMouseDownBorder`|  
 |![Активное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 — 038_ComboBoxInputFieldPressed")<br /><br /> **Поле ввода**|Separator|`Environment.ComboBoxMouseDownSeparator`|  
 |![Поле со списком&#47;нажатой кнопки "удалить&#45;"](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 — 039_ComboBoxDropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`Environment.ComboBoxButtonMouseDownBackground`|  
 |![Поле со списком&#47;нажатой кнопки "удалить&#45;"](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 — 039_ComboBoxDropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.ComboBoxMouseDownGlyph`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Цвет.категория|  
 |---------------|-------------|--------------------------------|  
 |![Неактивное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 — 041_ComboBoxInputFieldDisabled")<br /><br /> **Поле ввода**|Фон|`Environment.ComboBoxDisabledBackground`|  
 |![Неактивное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 — 041_ComboBoxInputFieldDisabled")<br /><br /> **Поле ввода**|Передний план (текст)|`Environment.ComboBoxDisabledText`|  
-|![Неактивное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 — 041_ComboBoxInputFieldDisabled")<br /><br /> **Поле ввода**|Border|`Environment.ComboBoxDisabledBorder`|  
+|![Неактивное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 — 041_ComboBoxInputFieldDisabled")<br /><br /> **Поле ввода**|Рамка|`Environment.ComboBoxDisabledBorder`|  
 |![Неактивное поле ввода поля со списком](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 — 041_ComboBoxInputFieldDisabled")<br /><br /> **Поле ввода**|Separator|Без разделителя|  
-|![Поле со списком&#47;кнопка "удалить&#45;" отключена](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 — 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Фон|None|  
+|![Поле со списком&#47;кнопка "удалить&#45;" отключена](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 — 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Фон|Нет|  
 |![Поле со списком&#47;кнопка "удалить&#45;" отключена](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 — 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Раскрывающийся список  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Раскрывающийся список  
   
 > [!IMPORTANT]
 > Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для ввода и редактирования текста, используйте токены цветов, указанные в разделе [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
@@ -336,13 +336,13 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Удалить&#45;поле выбора](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 — 043_DropdownSelectionField")<br /><br /> **Поле выбора**|Фон|`Environment.DropDownBackground`|  
 |![Удалить&#45;поле выбора](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 — 043_DropdownSelectionField")<br /><br /> **Поле выбора**|Передний план (текст)|`DropDownText`|  
-|![Удалить&#45;поле выбора](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 — 043_DropdownSelectionField")<br /><br /> **Поле выбора**|Border|`DropDownBorder`|  
+|![Удалить&#45;поле выбора](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 — 043_DropdownSelectionField")<br /><br /> **Поле выбора**|Рамка|`DropDownBorder`|  
 |![Удалить&#45;поле выбора](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 — 043_DropdownSelectionField")<br /><br /> **Поле выбора**|Separator|Без разделителя|  
-|![Кнопка "удалить&#45;вниз"](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 — 044_DropdownButton")<br /><br /> **Кнопка раскрывающегося списка**|Фон|None|  
+|![Кнопка "удалить&#45;вниз"](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 — 044_DropdownButton")<br /><br /> **Кнопка раскрывающегося списка**|Фон|Нет|  
 |![Кнопка "удалить&#45;вниз"](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 — 044_DropdownButton")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.DropDownGlyph`|  
 |![Удалить&#45;список](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 — 045_DropdownList")<br /><br /> **Раскрывающийся список**|Фон|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Удалить&#45;список](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 — 045_DropdownList")<br /><br /> **Раскрывающийся список**|Передний план (текст)|`Environment.ComboBoxItemText`|  
-|![Удалить&#45;список](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 — 045_DropdownList")<br /><br /> **Раскрывающийся список**|Border|`Environment.DropDownPopupBorder`|  
+|![Удалить&#45;список](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 — 045_DropdownList")<br /><br /> **Раскрывающийся список**|Рамка|`Environment.DropDownPopupBorder`|  
 |![Удалить&#45;список](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 — 045_DropdownList")<br /><br /> **Раскрывающийся список**|Shadow|`Environment.DropShadowBackground`|  
   
  **Наведение**  
@@ -351,7 +351,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Удалить&#45;поле выбора при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 — 046_DropdownSelectionFieldHover")<br /><br /> **Поле выбора**|Фон|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Удалить&#45;поле выбора при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 — 046_DropdownSelectionFieldHover")<br /><br /> **Поле выбора**|Передний план (текст)|`Environment.DropDownMouseOverText`|  
-|![Удалить&#45;поле выбора при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 — 046_DropdownSelectionFieldHover")<br /><br /> **Поле выбора**|Border|`Environment.DropDownMouseOverBorder`|  
+|![Удалить&#45;поле выбора при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 — 046_DropdownSelectionFieldHover")<br /><br /> **Поле выбора**|Рамка|`Environment.DropDownMouseOverBorder`|  
 |![Удалить&#45;поле выбора при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 — 046_DropdownSelectionFieldHover")<br /><br /> **Поле выбора**|Separator|`Environment.DropDownButtonMouseOverSeparator`|  
 |![Удалить&#45;кнопку "вниз" при наведении указателя](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 — 047_DropdownButtonHover")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`Environment.DropDownButtonMouseOverBackground`|  
 |![Удалить&#45;кнопку "вниз" при наведении указателя](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 — 047_DropdownButtonHover")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.DropDownMouseOverGlyph`|  
@@ -365,20 +365,20 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Перетащите выделенное поле&#45;вниз](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 — 049_DropdownSelectionFieldPressed")<br /><br /> **Поле выбора**|Фон|`Environment.DropDownMouseDownBackground`|  
 |![Перетащите выделенное поле&#45;вниз](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 — 049_DropdownSelectionFieldPressed")<br /><br /> **Поле выбора**|Передний план (текст)|`Environment.DropDownMouseDownText`|  
-|![Перетащите выделенное поле&#45;вниз](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 — 049_DropdownSelectionFieldPressed")<br /><br /> **Поле выбора**|Border|`Environment.DropDownMouseDownBorder`|  
+|![Перетащите выделенное поле&#45;вниз](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 — 049_DropdownSelectionFieldPressed")<br /><br /> **Поле выбора**|Рамка|`Environment.DropDownMouseDownBorder`|  
 |![Перетащите выделенное поле&#45;вниз](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 — 049_DropdownSelectionFieldPressed")<br /><br /> **Поле выбора**|Separator|`Environment.DropDownButtonMouseDownSeparator`|  
 |![Нажата кнопка "удалить&#45;" вниз](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 — 050_DropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`Environment.DropDownButtonMouseDownBackground`|  
 |![Нажата кнопка "удалить&#45;" вниз](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 — 050_DropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`Environment.DropDownMouseDownGlyph`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Удалить&#45;поле выбора отключено](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 — 051_DropdownSelectionFieldDisabled")|Фон|`Environment.DropDownDisabledBackground`|  
 |![Удалить&#45;поле выбора отключено](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 — 051_DropdownSelectionFieldDisabled")|Передний план (текст)|`Environment.DropDownDisabledText`|  
-|![Удалить&#45;поле выбора отключено](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 — 051_DropdownSelectionFieldDisabled")|Border|`Environment.DropDownDisabledBorder`|  
+|![Удалить&#45;поле выбора отключено](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 — 051_DropdownSelectionFieldDisabled")|Рамка|`Environment.DropDownDisabledBorder`|  
 |![Удалить&#45;поле выбора отключено](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 — 051_DropdownSelectionFieldDisabled")|Separator|Без разделителя|  
-|![Кнопка удаления&#45;вниз отключена](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 — 052_DropdownButtonDisabled")|Фон|Недоступно|  
+|![Кнопка удаления&#45;вниз отключена](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 — 052_DropdownButtonDisabled")|Фон|Н/Д|  
 |![Кнопка удаления&#45;вниз отключена](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 — 052_DropdownButtonDisabled")|Передний план (глиф)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Разворачивающаяся кнопка  
@@ -398,11 +398,11 @@ ms.locfileid: "85548360"
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Фон|None|  
+|![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Фон|Нет|  
 |![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Передний план (текст)|`Environment.CommandBarTextActive`|  
 |![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Передний план (глиф)|`Environment.CommandBarSplitButtonGlyph`|  
-|![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Border|Недоступно|  
-|![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Separator|Недоступно|  
+|![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Рамка|Н/Д|  
+|![Разворачивающаяся кнопка](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 — 054_SplitButton")<br /><br /> **Разворачивающаяся кнопка (по умолчанию)**|Separator|Н/Д|  
   
  **Наведение**  
   
@@ -411,7 +411,7 @@ ms.locfileid: "85548360"
 |![Разворачивающаяся кнопка при наведении указателя](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")<br /><br /> **Разворачивающаяся кнопка (при наведении указателя мыши)**|Фон|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Разворачивающаяся кнопка при наведении указателя](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")<br /><br /> **Разворачивающаяся кнопка (при наведении указателя мыши)**|Передний план (текст)|`Environment.CommandBarTextHover`|  
 |![Разворачивающаяся кнопка при наведении указателя](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")<br /><br /> **Разворачивающаяся кнопка (при наведении указателя мыши)**|Передний план (глиф)|`Environment.CommandBarSplitButtonMouseOverGlyph`|  
-|![Разворачивающаяся кнопка при наведении указателя](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")<br /><br /> **Разворачивающаяся кнопка (при наведении указателя мыши)**|Border|`Environment.CommandBarBorder`|  
+|![Разворачивающаяся кнопка при наведении указателя](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")<br /><br /> **Разворачивающаяся кнопка (при наведении указателя мыши)**|Рамка|`Environment.CommandBarBorder`|  
 |![Разворачивающаяся кнопка при наведении указателя](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 — 055_SplitButtonHover")<br /><br /> **Разворачивающаяся кнопка (при наведении указателя мыши)**|Separator|`Environment.CommandBarSplitButtonSeparator`|  
   
  **Pressed**  
@@ -421,18 +421,18 @@ ms.locfileid: "85548360"
 |![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Фон|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Передний план (текст)|`Environment.CommandBarTextMouseDown`|  
 |![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Передний план (глиф)|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
-|![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Border|`Environment.CommandBarBorder`|  
-|![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Separator|Недоступно|  
+|![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Рамка|`Environment.CommandBarBorder`|  
+|![Нажата кнопка разворачивающегося](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 — 056_SplitButtonPressed")<br /><br /> **Разворачивающаяся кнопка (активная)**|Separator|Н/Д|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Фон|Недоступно|  
+|![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Фон|Н/Д|  
 |![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Передний план (текст)|`Environment.ComboBoxItemTextInactive`|  
 |![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Передний план (глиф)|`Environment.CommandBarTextInactive`|  
-|![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Border|Недоступно|  
-|![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Separator|Недоступно|  
+|![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Рамка|Н/Д|  
+|![Кнопка разделения отключена](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 — 057_SplitButtonDisabled")<br /><br /> **Разворачивающаяся кнопка (неактивная)**|Separator|Н/Д|  
   
 ##### <a name="more-options-and-overflow-buttons"></a>Кнопки "Дополнительно" и "Переполнение"  
  Кнопка "Дополнительно" используется, если группа панели команд может настраиваться путем добавления или удаления связанных кнопок. Кнопка "Переполнение" появляется, если панель команд усекается из-за отсутствия места по горизонтали. При ее нажатии открывается меню, содержащее кнопки, которые не поместились на панели команд. Цвета этих двух кнопок определяются одним и тем же набором имен токенов.  
@@ -500,16 +500,16 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |Документ: закрепленный или перемещаемый|Фон|Зависит от типа документа|  
 |Документ: закрепленный или перемещаемый|Передний план (текст)|Зависит от типа документа|  
-|Документ: закрепленный или перемещаемый|Border|`Environment.ToolWindowBorder`|  
+|Документ: закрепленный или перемещаемый|Рамка|`Environment.ToolWindowBorder`|  
 |![Кадр с фокусом ввода](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")<br /><br /> **Рамка: перемещаемая, с фокусом ввода**|Фон|`Environment.ToolWindowFloatingFrame`|  
 |![Кадр с фокусом ввода](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")<br /><br /> **Рамка: перемещаемая, с фокусом ввода**|Передний план (текст)|`Environment.ToolWindowFloatingFrame`|  
 |![Кадр с фокусом ввода](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")<br /><br /> **Рамка: перемещаемая, с фокусом ввода**|Передний план (глиф)|`Environment.RaftedWindowButtonActiveGlyph`|  
-|![Кадр с фокусом ввода](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")<br /><br /> **Рамка: перемещаемая, с фокусом ввода**|Border|`Environment.MainWindowActiveDefaultBorder`|  
+|![Кадр с фокусом ввода](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")<br /><br /> **Рамка: перемещаемая, с фокусом ввода**|Рамка|`Environment.MainWindowActiveDefaultBorder`|  
 |![Кадр с фокусом ввода](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 — 067_FrameFocused")<br /><br /> **Рамка: перемещаемая, с фокусом ввода**|Граница (глиф)|`Environment.RaftedWindowButtonActiveBorder`<br /><br /> Задается как прозрачная|  
 |![Кадр без фокуса ввода](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")<br /><br /> **Рамка: перемещаемая, без фокуса ввода**|Фон|`Environment.ToolWindowFloatingFrameInactive`|  
 |![Кадр без фокуса ввода](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")<br /><br /> **Рамка: перемещаемая, без фокуса ввода**|Передний план (текст)|`Environment.ToolWindowFloatingFrameInactive`|  
 |![Кадр без фокуса ввода](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")<br /><br /> **Рамка: перемещаемая, без фокуса ввода**|Передний план (глиф)|`Environment.RaftedWindowButtonInactiveGlyph`|  
-|![Кадр без фокуса ввода](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")<br /><br /> **Рамка: перемещаемая, без фокуса ввода**|Border|`Environment.MainWindowInactiveBorder`|  
+|![Кадр без фокуса ввода](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")<br /><br /> **Рамка: перемещаемая, без фокуса ввода**|Рамка|`Environment.MainWindowInactiveBorder`|  
 |![Кадр без фокуса ввода](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 — 068_FrameUnfocused")<br /><br /> **Рамка: перемещаемая, без фокуса ввода**|Граница (глиф)|`Environment.RaftedWindowButtonInactiveBorder`<br /><br /> Задается как прозрачная|  
   
  **Наведение**  
@@ -566,7 +566,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Выбранная вкладка с фокусом ввода](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 — 074_SelectedTabFocused")<br /><br /> **Выбранная вкладка документа, с фокусом ввода**|Фон|`Environment.FileTabSelectedGradientTop`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Выбранная вкладка с фокусом ввода](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 — 074_SelectedTabFocused")<br /><br /> **Выбранная вкладка документа, с фокусом ввода**|Передний план (текст)|`Environment.FileTabSelectedText`|  
-|![Выбранная вкладка с фокусом ввода](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 — 074_SelectedTabFocused")<br /><br /> **Выбранная вкладка документа, с фокусом ввода**|Border|`Environment.FileTabSelectedBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Выбранная вкладка с фокусом ввода](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 — 074_SelectedTabFocused")<br /><br /> **Выбранная вкладка документа, с фокусом ввода**|Рамка|`Environment.FileTabSelectedBorder`<br /><br /> Цвет совпадает с цветом фона.|  
 |![Выбранная вкладка с фокусом ввода](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 — 074_SelectedTabFocused")<br /><br /> **Выбранная вкладка документа, с фокусом ввода**|Граница документа|`Environment.FileTabDocumentBorderBackground`|  
   
  **Без фокуса ввода**  
@@ -575,7 +575,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Выбранная вкладка без фокуса ввода](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 — 075_SelectedTabUnfocused")<br /><br /> **Выбранная вкладка документа, без фокуса ввода**|Фон|`Environment.FileTabInactiveGradientTop`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Выбранная вкладка без фокуса ввода](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 — 075_SelectedTabUnfocused")<br /><br /> **Выбранная вкладка документа, без фокуса ввода**|Передний план (текст)|`Environment.FileTabInactiveText`|  
-|![Выбранная вкладка без фокуса ввода](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 — 075_SelectedTabUnfocused")<br /><br /> **Выбранная вкладка документа, без фокуса ввода**|Border|`Environment.FileTabInactiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Выбранная вкладка без фокуса ввода](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 — 075_SelectedTabUnfocused")<br /><br /> **Выбранная вкладка документа, без фокуса ввода**|Рамка|`Environment.FileTabInactiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
 |![Выбранная вкладка без фокуса ввода](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 — 075_SelectedTabUnfocused")<br /><br /> **Выбранная вкладка документа, без фокуса ввода**|Граница документа|`Environment.FileTabInactiveDocumentBorderBackground`|  
   
 ##### <a name="background-tab"></a>Вкладка фона  
@@ -585,7 +585,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка фона](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 — 076_BackgroundTab")<br /><br /> **Вкладка фона по умолчанию**|Фон|`Environment.FileTabBackground`|  
 |![Вкладка фона](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 — 076_BackgroundTab")<br /><br /> **Вкладка фона по умолчанию**|Передний план (текст)|`Environment.FileTabText`|  
-|![Вкладка фона](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 — 076_BackgroundTab")<br /><br /> **Вкладка фона по умолчанию**|Border|`Environment.FileTabBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка фона](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 — 076_BackgroundTab")<br /><br /> **Вкладка фона по умолчанию**|Рамка|`Environment.FileTabBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
  **Наведение**  
   
@@ -593,7 +593,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка фона при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 — 077_BackgroundTabHover")<br /><br /> **Вкладка фона при наведении курсора мыши**|Фон|`Environment.FileTabHotGradientTop`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Вкладка фона при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 — 077_BackgroundTabHover")<br /><br /> **Вкладка фона при наведении курсора мыши**|Передний план (текст)|`Environment.FileTabHotText`|  
-|![Вкладка фона при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 — 077_BackgroundTabHover")<br /><br /> **Вкладка фона при наведении курсора мыши**|Border|`Environment.FileTabHotBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка фона при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 — 077_BackgroundTabHover")<br /><br /> **Вкладка фона при наведении курсора мыши**|Рамка|`Environment.FileTabHotBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
 ##### <a name="preview-tab"></a>Вкладка предварительного просмотра  
  Вкладка предварительного просмотра отображается в правой части канала вкладок документов, когда пользователь щелкает элемент в окне инструментов обозревателя решений. Она служит для предварительного просмотра документа и дает пользователю возможность сохранять документ открытым в левой части канала вкладок документов. Одновременно может быть открыта только одна вкладка предварительного просмотра. Так же как открытые вкладки, вкладки предварительного просмотра имеют как фоновое, так и выбранное состояния и в активном состоянии могут получать фокус ввода и терять его.  
@@ -614,7 +614,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка предварительного просмотра с фокусом ввода](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 — 079_PreviewTabFocused")<br /><br /> **Вкладка предварительного просмотра с фокусом ввода**|Фон|`Environment.FileTabProvisionalSelectedActive`|  
 |![Вкладка предварительного просмотра с фокусом ввода](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 — 079_PreviewTabFocused")<br /><br /> **Вкладка предварительного просмотра с фокусом ввода**|Передний план (текст)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
-|![Вкладка предварительного просмотра с фокусом ввода](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 — 079_PreviewTabFocused")<br /><br /> **Вкладка предварительного просмотра с фокусом ввода**|Border|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка предварительного просмотра с фокусом ввода](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 — 079_PreviewTabFocused")<br /><br /> **Вкладка предварительного просмотра с фокусом ввода**|Рамка|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
 |![Вкладка предварительного просмотра с фокусом ввода](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 — 079_PreviewTabFocused")<br /><br /> **Вкладка предварительного просмотра с фокусом ввода**|Граница документа|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
  **Выбранная вкладка предварительного просмотра без фокуса ввода**  
@@ -623,7 +623,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка предварительного просмотра без фокуса ввода](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 — 080_PreviewTabUnfocused")<br /><br /> **Вкладка предварительного просмотра без фокуса ввода**|Фон|`Environment.FileTabProvisionalSelectedInactive`|  
 |![Вкладка предварительного просмотра без фокуса ввода](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 — 080_PreviewTabUnfocused")<br /><br /> **Вкладка предварительного просмотра без фокуса ввода**|Передний план (текст)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
-|![Вкладка предварительного просмотра без фокуса ввода](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 — 080_PreviewTabUnfocused")<br /><br /> **Вкладка предварительного просмотра без фокуса ввода**|Border|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
+|![Вкладка предварительного просмотра без фокуса ввода](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 — 080_PreviewTabUnfocused")<br /><br /> **Вкладка предварительного просмотра без фокуса ввода**|Рамка|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
 |![Вкладка предварительного просмотра без фокуса ввода](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 — 080_PreviewTabUnfocused")<br /><br /> **Вкладка предварительного просмотра без фокуса ввода**|Граница документа|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
  **Фоновая вкладка предварительного просмотра: по умолчанию**  
@@ -632,7 +632,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка фона предварительного просмотра](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 — 081_PreviewBackgroundTab")<br /><br /> **Фоновая вкладка предварительного просмотра**|Фон|`Environment.FileTabProvisionalInactive`|  
 |![Вкладка фона предварительного просмотра](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 — 081_PreviewBackgroundTab")<br /><br /> **Фоновая вкладка предварительного просмотра**|Передний план (текст)|`Environment.FileTabProvisionalInactiveForeground`|  
-|![Вкладка фона предварительного просмотра](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 — 081_PreviewBackgroundTab")<br /><br /> **Фоновая вкладка предварительного просмотра**|Border|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка фона предварительного просмотра](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 — 081_PreviewBackgroundTab")<br /><br /> **Фоновая вкладка предварительного просмотра**|Рамка|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
  **Фоновая вкладка предварительного просмотра: при наведении указателя**  
   
@@ -640,7 +640,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка фона предварительного просмотра при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 — 082_PreviewBackgroundTabHover")<br /><br /> **Фоновая вкладка предварительного просмотра при наведении указателя**|Фон|`Environment.FileTabProvisionalHover`|  
 |![Вкладка фона предварительного просмотра при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 — 082_PreviewBackgroundTabHover")<br /><br /> **Фоновая вкладка предварительного просмотра при наведении указателя**|Передний план (текст)|`Environment.FileTabProvisionalHoverForeground`|  
-|![Вкладка фона предварительного просмотра при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 — 082_PreviewBackgroundTabHover")<br /><br /> **Фоновая вкладка предварительного просмотра при наведении указателя**|Border|`Environment.FileTabProvisionalHoverBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка фона предварительного просмотра при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 — 082_PreviewBackgroundTabHover")<br /><br /> **Фоновая вкладка предварительного просмотра при наведении указателя**|Рамка|`Environment.FileTabProvisionalHoverBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
 ##### <a name="document-overflow-button"></a>Кнопка переполнения документа  
  Кнопка переполнения документа присутствует, если открыт один или несколько документов, вне зависимости от того, имеется ли в текущей конфигурации пространство по вертикали для размещения всех вкладок документов. В раскрывающемся меню переполнения документа, к которому применяются цвета **CommandBarMenu** (см. раздел [Menus](../misc/shared-colors.md#BKMK_CommandMenus)), приводится список всех открытых документов, как видимых, так и скрытых. Глиф переполнения меняется в зависимости от того, отображаются ли все открытые документы в канале вкладок.  
@@ -661,7 +661,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Переполнение](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 — 084_Overflow")<br /><br /> **Кнопка переполнения документа**|Фон|`Environment.DocWellOverflowButtonBackground`|  
 |![Переполнение](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 — 084_Overflow")<br /><br /> **Кнопка переполнения документа**|Передний план (глиф)|`Environment.DocWellOverflowButtonGlyph`|  
-|![Переполнение](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 — 084_Overflow")<br /><br /> **Кнопка переполнения документа**|Border|Недоступно|  
+|![Переполнение](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 — 084_Overflow")<br /><br /> **Кнопка переполнения документа**|Рамка|Н/Д|  
   
  **Наведение**  
   
@@ -669,7 +669,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Переполнение при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 — 085_OverflowHover")<br /><br /> **Кнопка переполнения документа при наведении указателя**|Фон|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![Переполнение при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 — 085_OverflowHover")<br /><br /> **Кнопка переполнения документа при наведении указателя**|Передний план (глиф)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
-|![Переполнение при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 — 085_OverflowHover")<br /><br /> **Кнопка переполнения документа при наведении указателя**|Border|`Environment.DocWellOverflowButtonMouseOverBorder`|  
+|![Переполнение при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 — 085_OverflowHover")<br /><br /> **Кнопка переполнения документа при наведении указателя**|Рамка|`Environment.DocWellOverflowButtonMouseOverBorder`|  
   
  **Pressed**  
   
@@ -677,7 +677,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Активное переполнение](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 — 086_OverflowPressed")<br /><br /> **Активная кнопка переполнения документа**|Фон|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![Активное переполнение](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 — 086_OverflowPressed")<br /><br /> **Активная кнопка переполнения документа**|Передний план (глиф)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
-|![Активное переполнение](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 — 086_OverflowPressed")<br /><br /> **Активная кнопка переполнения документа**|Border|`Environment.DocWellOverflowButtonMouseDownBorder`|  
+|![Активное переполнение](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 — 086_OverflowPressed")<br /><br /> **Активная кнопка переполнения документа**|Рамка|`Environment.DocWellOverflowButtonMouseDownBorder`|  
   
 ### <a name="tool-windows"></a>Окна инструментов  
  Воссоздавать окна инструментов не нужно, так как они предоставляются средой Visual Studio. Однако может потребоваться использовать цвета, применяемые в окнах инструментов, чтобы ваш пользовательский интерфейс был согласован с этой частью среды Visual Studio.  
@@ -701,26 +701,26 @@ ms.locfileid: "85548360"
  Не используйте:  
  для пользовательского интерфейса, который не должен обновляться автоматически при изменении темы оболочки.  
   
- **Закрепленное**  
+ **Закрепить**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Закрепленное окно инструментов](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 — 089_ToolWindowDocked")|Фон|`Environment.ToolWindowBackground`|  
-|![Закрепленное окно инструментов](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 — 089_ToolWindowDocked")|Border|`Environment.ToolWindowBorder`|  
+|![Закрепленное окно инструментов](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 — 089_ToolWindowDocked")|Рамка|`Environment.ToolWindowBorder`|  
   
  **Перемещаемое: с фокусом ввода**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Окно инструментов в фокусе](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 — 090_ToolWindowFocused")|Фон|`Environment.ToolWindowBackground`|  
-|![Окно инструментов в фокусе](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 — 090_ToolWindowFocused")|Border|`Environment.MainWindowActiveDefaultBorder`|  
+|![Окно инструментов в фокусе](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 — 090_ToolWindowFocused")|Рамка|`Environment.MainWindowActiveDefaultBorder`|  
   
  **Перемещаемое: без фокуса ввода**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Окно инструментов не в фокусе](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 — 091_ToolWindowUnfocused")|Фон|`Environment.ToolWindowBackground`|  
-|![Окно инструментов не в фокусе](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 — 091_ToolWindowUnfocused")|Border|`Environment.MainWindowInactiveBorder`|  
+|![Окно инструментов не в фокусе](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 — 091_ToolWindowUnfocused")|Рамка|`Environment.MainWindowInactiveBorder`|  
   
 #### <a name="tool-window-title-bar"></a>Заголовок окна инструментов  
  Граница заголовка окна является, по сути, не границей, а толстой линией по верхнему краю заголовка. Она не имеет имени токена для состояния без фокуса ввода.  
@@ -739,7 +739,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Панель заголовка в фокусе](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 — 093_TitleBarFocused")<br /><br /> **Заголовок окна с фокусом ввода**|Фон|`Environment.TitleBarActiveGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Панель заголовка в фокусе](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 — 093_TitleBarFocused")<br /><br /> **Заголовок окна с фокусом ввода**|Передний план (текст)|`Environment.TitleBarActiveText`|  
-|![Панель заголовка в фокусе](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 — 093_TitleBarFocused")<br /><br /> **Заголовок окна с фокусом ввода**|Border|`Environment.TitleBarActiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Панель заголовка в фокусе](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 — 093_TitleBarFocused")<br /><br /> **Заголовок окна с фокусом ввода**|Рамка|`Environment.TitleBarActiveBorder`<br /><br /> Цвет совпадает с цветом фона.|  
 |![Панель заголовка в фокусе](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 — 093_TitleBarFocused")<br /><br /> **Заголовок окна с фокусом ввода**|Маркер перетаскивания|`Environment.TitleBarDragHandleActive`|  
   
  **Без фокуса ввода**  
@@ -748,7 +748,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Панель заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 — 094_TitleBarUnfocused")<br /><br /> **Заголовок окна без фокуса ввода**|Фон|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Панель заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 — 094_TitleBarUnfocused")<br /><br /> **Заголовок окна без фокуса ввода**|Передний план (текст)|`Environment.TitleBarInactiveText`|  
-|![Панель заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 — 094_TitleBarUnfocused")<br /><br /> **Заголовок окна без фокуса ввода**|Border|Недоступно|  
+|![Панель заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 — 094_TitleBarUnfocused")<br /><br /> **Заголовок окна без фокуса ввода**|Рамка|Н/Д|  
 |![Панель заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 — 094_TitleBarUnfocused")<br /><br /> **Заголовок окна без фокуса ввода**|Маркер перетаскивания|`Environment.TitleBarDragHandle`|  
   
 ##### <a name="title-bar-buttons"></a>Кнопки в заголовке окна  
@@ -766,12 +766,12 @@ ms.locfileid: "85548360"
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 — 096_TitleBarButtonFocused")<br /><br /> **Focused**|Фон|Недоступно|  
+|![Кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 — 096_TitleBarButtonFocused")<br /><br /> **Focused**|Фон|Н/Д|  
 |![Кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 — 096_TitleBarButtonFocused")<br /><br /> **Focused**|Передний план (глиф)|`Environment.ToolWindowButtonActiveGlyph`|  
-|![Кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 — 096_TitleBarButtonFocused")<br /><br /> **Focused**|Border|Недоступно|  
-|![Кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 — 097_TitleBarButtonUnfocused")<br /><br /> **Без фокуса ввода**|Фон|Недоступно|  
+|![Кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 — 096_TitleBarButtonFocused")<br /><br /> **Focused**|Рамка|Н/Д|  
+|![Кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 — 097_TitleBarButtonUnfocused")<br /><br /> **Без фокуса ввода**|Фон|Н/Д|  
 |![Кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 — 097_TitleBarButtonUnfocused")<br /><br /> **Без фокуса ввода**|Передний план (глиф)|`Environment.ToolWindowButtonInactiveGlyph`|  
-|![Кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 — 097_TitleBarButtonUnfocused")<br /><br /> **Без фокуса ввода**|Border|Недоступно|  
+|![Кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 — 097_TitleBarButtonUnfocused")<br /><br /> **Без фокуса ввода**|Рамка|Н/Д|  
   
  **Наведение**  
   
@@ -779,10 +779,10 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Кнопка панели заголовка с фокусом ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 — 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Фон|`Environment.ToolWindowButtonHoverActive`|  
 |![Кнопка панели заголовка с фокусом ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 — 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Передний план (глиф)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
-|![Кнопка панели заголовка с фокусом ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 — 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Border|`Environment.ToolWindowButtonHoverActiveBorder`|  
+|![Кнопка панели заголовка с фокусом ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 — 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Рамка|`Environment.ToolWindowButtonHoverActiveBorder`|  
 |![Кнопка панели заголовка без фокуса ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 — 099_TitleBarButtonUnfocusedHover")<br /><br /> **Без фокуса ввода**|Фон|`Environment.ToolWindowButtonHoverInactive`|  
 |![Кнопка панели заголовка без фокуса ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 — 099_TitleBarButtonUnfocusedHover")<br /><br /> **Без фокуса ввода**|Передний план (глиф)|`Environment.ToolWindowButtonHoverInactiveGlyph`|  
-|![Кнопка панели заголовка без фокуса ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 — 099_TitleBarButtonUnfocusedHover")<br /><br /> **Без фокуса ввода**|Border|`Environment.ToolWindowButtonHoverInactiveBorder`|  
+|![Кнопка панели заголовка без фокуса ввода при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 — 099_TitleBarButtonUnfocusedHover")<br /><br /> **Без фокуса ввода**|Рамка|`Environment.ToolWindowButtonHoverInactiveBorder`|  
   
  **Pressed**  
   
@@ -790,10 +790,10 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Активная кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 — 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Фон|`Environment.ToolWindowButtonDown`|  
 |![Активная кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 — 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Передний план (глиф)|`Environment.ToolWindowButtonDownActiveGlyph`|  
-|![Активная кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 — 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Border|`Environment.ToolWindowButtonDownBorder`|  
+|![Активная кнопка панели заголовка с фокусом ввода](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 — 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Рамка|`Environment.ToolWindowButtonDownBorder`|  
 |![Активная кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 — 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Без фокуса ввода**|Фон|`Environment.ToolWindowButtonDown`|  
 |![Активная кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 — 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Без фокуса ввода**|Передний план (глиф)|`Environment.ToolWindowButtonDownInactiveGlyph`|  
-|![Активная кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 — 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Без фокуса ввода**|Border|`Environment.ToolWindowButtonDownBorder`|  
+|![Активная кнопка панели заголовка без фокуса ввода](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 — 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Без фокуса ввода**|Рамка|`Environment.ToolWindowButtonDownBorder`|  
   
 #### <a name="tool-window-tabs"></a>Вкладки окна инструментов  
  ![Красная линия вкладки окна инструментов](../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 — 102_ToolWindowTabRedline")  
@@ -810,13 +810,13 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка окна инструментов с фокусом ввода](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 — 103_ToolWindowTabFocused")<br /><br /> **Выбранная вкладка окна инструментов с фокусом ввода**|Фон|`Environment.ToolWindowTabSelectedTab`|  
 |![Вкладка окна инструментов с фокусом ввода](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 — 103_ToolWindowTabFocused")<br /><br /> **Выбранная вкладка окна инструментов с фокусом ввода**|Передний план (текст)|`Environment.ToolWindowTabSelectedActiveText`|  
-|![Вкладка окна инструментов с фокусом ввода](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 — 103_ToolWindowTabFocused")<br /><br /> **Выбранная вкладка окна инструментов с фокусом ввода**|Border|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка окна инструментов с фокусом ввода](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 — 103_ToolWindowTabFocused")<br /><br /> **Выбранная вкладка окна инструментов с фокусом ввода**|Рамка|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Вкладка окна инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 — 104_ToolWindowTabUnfocused")<br /><br /> **Выбранная вкладка окна инструментов без фокуса ввода**|Фон|`Environment.ToolWindowTabSelectedTab`|  
 |![Вкладка окна инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 — 104_ToolWindowTabUnfocused")<br /><br /> **Выбранная вкладка окна инструментов без фокуса ввода**|Передний план (текст)|`Environment.ToolWindowTabSelectedText`|  
-|![Вкладка окна инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 — 104_ToolWindowTabUnfocused")<br /><br /> **Выбранная вкладка окна инструментов без фокуса ввода**|Border|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка окна инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 — 104_ToolWindowTabUnfocused")<br /><br /> **Выбранная вкладка окна инструментов без фокуса ввода**|Рамка|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
  **Вкладка фона**  
   
@@ -824,13 +824,13 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Вкладка фона окна инструментов](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 — 105_ToolWindowBackgroundTab")<br /><br /> **Фоновая вкладка окна инструментов**|Фон|`Environment.ToolWindowTabGradientBegin`<br /><br /> Ограничения градиента устанавливаются в Visual Studio 2013 в то же значение цвета.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Ограничения градиента устанавливаются в Visual Studio 2013 в то же значение цвета.|  
 |![Вкладка фона окна инструментов](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 — 105_ToolWindowBackgroundTab")<br /><br /> **Фоновая вкладка окна инструментов**|Передний план (текст)|`Environment.ToolWindowTabText`|  
-|![Вкладка фона окна инструментов](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 — 105_ToolWindowBackgroundTab")<br /><br /> **Фоновая вкладка окна инструментов**|Border|`Environment.ToolWindowTabBorder`|  
+|![Вкладка фона окна инструментов](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 — 105_ToolWindowBackgroundTab")<br /><br /> **Фоновая вкладка окна инструментов**|Рамка|`Environment.ToolWindowTabBorder`|  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Вкладка фона окна инструментов при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 — 106_ToolWindowBackgroundTabHover")<br /><br /> **Фоновая вкладка окна инструментов при наведении указателя**|Фон|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> Ограничения градиента устанавливаются в Visual Studio 2013 в то же значение цвета.<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> Ограничения градиента устанавливаются в Visual Studio 2013 в то же значение цвета.|  
 |![Вкладка фона окна инструментов при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 — 106_ToolWindowBackgroundTabHover")<br /><br /> **Фоновая вкладка окна инструментов при наведении указателя**|Передний план (текст)|`Environment.ToolWindowTabMouseOverText`|  
-|![Вкладка фона окна инструментов при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 — 106_ToolWindowBackgroundTabHover")<br /><br /> **Фоновая вкладка окна инструментов при наведении указателя**|Border|`Environment.ToolWindowTabMouseOverBorder`<br /><br /> Цвет совпадает с цветом фона.|  
+|![Вкладка фона окна инструментов при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 — 106_ToolWindowBackgroundTabHover")<br /><br /> **Фоновая вкладка окна инструментов при наведении указателя**|Рамка|`Environment.ToolWindowTabMouseOverBorder`<br /><br /> Цвет совпадает с цветом фона.|  
   
 #### <a name="auto-hide-tabs"></a>Автоматически скрываемые вкладки  
  ![Автоматически&#45;скрыть красная линия](../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303 — 107_AutoHideRedline")  
@@ -847,7 +847,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Автоматически&#45;вкладка "скрыть"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 — 108_AutoHideTab")<br /><br /> **Автоматически скрываемая вкладка по умолчанию**|Фон|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Автоматически&#45;вкладка "скрыть"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 — 108_AutoHideTab")<br /><br /> **Автоматически скрываемая вкладка по умолчанию**|Передний план (текст)|`Environment.AutoHideTabText`|  
-|![Автоматически&#45;вкладка "скрыть"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 — 108_AutoHideTab")<br /><br /> **Автоматически скрываемая вкладка по умолчанию**|Border|`Environment.AutoHideTabBorder`|  
+|![Автоматически&#45;вкладка "скрыть"](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 — 108_AutoHideTab")<br /><br /> **Автоматически скрываемая вкладка по умолчанию**|Рамка|`Environment.AutoHideTabBorder`|  
   
  **Наведение**  
   
@@ -855,12 +855,12 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Автоматически&#45;скрывать табуляцию при наведении указателя](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 — 109_AutoHideTabHover")<br /><br /> **Вкладка автоматического скрытия при наведении курсора мыши**|Фон|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Автоматически&#45;скрывать табуляцию при наведении указателя](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 — 109_AutoHideTabHover")<br /><br /> **Вкладка автоматического скрытия при наведении курсора мыши**|Передний план (текст)|`Environment.AutoHideTabMouseOverText`|  
-|![Автоматически&#45;скрывать табуляцию при наведении указателя](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 — 109_AutoHideTabHover")<br /><br /> **Вкладка автоматического скрытия при наведении курсора мыши**|Border|`Environment.AutoHideTabMouseOverBorder`|  
+|![Автоматически&#45;скрывать табуляцию при наведении указателя](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 — 109_AutoHideTabHover")<br /><br /> **Вкладка автоматического скрытия при наведении курсора мыши**|Рамка|`Environment.AutoHideTabMouseOverBorder`|  
   
 ### <a name="common-shared-controls"></a>Стандартные общие элементы управления  
  При использовании в компоненте стандартной панели команд Visual Studio вы имеете доступ к оформленным элементам управления оболочки. Изменять шаблон этих стандартных элементов управления не следует. Однако если вам нужно создать пользовательскую панель команд, вам также может потребоваться создать пользовательские элементы управления. В этом случае используйте правильные имена токенов для каждого из указанных ниже элементов управления, чтобы ваш пользовательский интерфейс был согласован с остальной средой Visual Studio.  
   
-#### <a name="search-box"></a>поле поиска;  
+#### <a name="search-box"></a>Поле поиска  
  По возможности используйте стандартный элемент управления поиском, предоставляемый средой Visual Studio. Цвета поля поиска находятся в категории SearchControl в файле **ShellColors.pkgdef** , который содержит имена токенов для поля ввода, управляющей кнопки, кнопки раскрывающегося списка и раскрывающегося меню.  
   
  Поле поиска может находиться в одном из нескольких состояний. Некоторые из них взаимоисключающие.  
@@ -889,16 +889,16 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Поле ввода окна поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 — 111_SearchInputFieldFocused")<br /><br /> **Поле ввода**|Фон|`SearchControl.FocusedBackground`|  
 |![Поле ввода окна поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 — 111_SearchInputFieldFocused")<br /><br /> **Поле ввода**|Передний план (текст)|`SearchControl.FocusedBackground`|  
-|![Поле ввода окна поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 — 111_SearchInputFieldFocused")<br /><br /> **Поле ввода**|Border|`SearchControl.FocusedBorder`|  
+|![Поле ввода окна поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 — 111_SearchInputFieldFocused")<br /><br /> **Поле ввода**|Рамка|`SearchControl.FocusedBorder`|  
 |![Поле ввода окна поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 — 111_SearchInputFieldFocused")<br /><br /> **Поле ввода**|Separator|`SearchControl.FocusedDropDownSeparator`|  
-|![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Фон|None|  
+|![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Фон|Нет|  
 |![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Передний план (глиф поиска)|`SearchControl.SearchGlyph`|  
 |![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Передний план (глиф остановки)|`SearchControl.StopGlyph`|  
 |![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Передний план (глиф очистки)|`SearchControl.ClearGlyph`|  
-|![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Border|Недоступно|  
+|![Кнопка поиска с фокусом ввода](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 — 112_SearchActionButtonFocused")<br /><br /> **Кнопка действия**|Рамка|Н/Д|  
 |![Кнопка "&#45;", направленная вниз](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 — 113_SearchDropdownButtonFocused")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`SearchControl.FocusedDropDownButton`|  
 |![Кнопка "&#45;", направленная вниз](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 — 113_SearchDropdownButtonFocused")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`SearchControl.FocusedDropDownButtonGlyph`|  
-|![Кнопка "&#45;", направленная вниз](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 — 113_SearchDropdownButtonFocused")<br /><br /> **Кнопка раскрывающегося списка**|Border|`SearchControl.FocusedDropDownButtonBorder`|  
+|![Кнопка "&#45;", направленная вниз](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 — 113_SearchDropdownButtonFocused")<br /><br /> **Кнопка раскрывающегося списка**|Рамка|`SearchControl.FocusedDropDownButtonBorder`|  
   
  **Без фокуса ввода**  
   
@@ -906,20 +906,20 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 — 114_SearchInputFieldUnfocused")<br /><br /> **Активное поле ввода**|Фон|`SearchControl.SearchActiveBackground`|  
 |![Поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 — 114_SearchInputFieldUnfocused")<br /><br /> **Активное поле ввода**|Передний план (текст)|`SearchControl.SearchActiveBackground`|  
-|![Поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 — 114_SearchInputFieldUnfocused")<br /><br /> **Активное поле ввода**|Border|`SearchControl.UnfocusedBorder`|  
+|![Поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 — 114_SearchInputFieldUnfocused")<br /><br /> **Активное поле ввода**|Рамка|`SearchControl.UnfocusedBorder`|  
 |![Поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 — 114_SearchInputFieldUnfocused")<br /><br /> **Активное поле ввода**|Separator|`SearchControl.DropDownSeparator`|  
 |![Неактивное поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Неактивное поле ввода**|Фон|`SearchControl.Unfocused`|  
 |![Неактивное поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Неактивное поле ввода**|Передний план (текст)|`SearchControl.Unfocused`|  
-|![Неактивное поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Неактивное поле ввода**|Border|`SearchControl.UnfocusedBorder`|  
+|![Неактивное поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Неактивное поле ввода**|Рамка|`SearchControl.UnfocusedBorder`|  
 |![Неактивное поле ввода окна поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Неактивное поле ввода**|Separator|`SearchControl.DropDownSeparator`|  
-|![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Фон|Недоступно|  
+|![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Фон|Н/Д|  
 |![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Передний план (глиф поиска)|`SearchControl.SearchGlyph`|  
 |![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Передний план (глиф остановки)|`SearchControl.StopGlyph`|  
 |![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Передний план (глиф очистки)|`SearchControl.ClearGlyph`|  
-|![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Border|Недоступно|  
+|![Кнопка поиска без фокуса ввода](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 — 115_SearchActionButtonUnfocused")<br /><br /> **Кнопка действия**|Рамка|Н/Д|  
 |![Кнопка "Удалить"&#45;"вниз" нефокусна](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 — 116_SearchDropdownButtonUnfocused")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`SearchControl.UnfocusedDropDownButton`|  
 |![Кнопка "Удалить"&#45;"вниз" нефокусна](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 — 116_SearchDropdownButtonUnfocused")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
-|![Кнопка "Удалить"&#45;"вниз" нефокусна](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 — 116_SearchDropdownButtonUnfocused")<br /><br /> **Кнопка раскрывающегося списка**|Border|`SearchControl.UnfocusedDropDownButtonBorder`|  
+|![Кнопка "Удалить"&#45;"вниз" нефокусна](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 — 116_SearchDropdownButtonUnfocused")<br /><br /> **Кнопка раскрывающегося списка**|Рамка|`SearchControl.UnfocusedDropDownButtonBorder`|  
   
  **Pressed**  
   
@@ -927,10 +927,10 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Активная кнопка поиска](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Кнопка действия**|Фон|`SearchControl.ActionButtonMouseDown`|  
 |![Активная кнопка поиска](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Кнопка действия**|Передний план (глиф)|`SearchControl.ActionButtonMouseDownGlyph`|  
-|![Активная кнопка поиска](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Кнопка действия**|Border|`SearchControl.ActionButtonMouseDownBorder`|  
+|![Активная кнопка поиска](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Кнопка действия**|Рамка|`SearchControl.ActionButtonMouseDownBorder`|  
 |![Кнопка "Удалить"&#45;нажатии кнопки вниз](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Фон|`SearchControl.MouseDownDropDownButton`|  
 |![Кнопка "Удалить"&#45;нажатии кнопки вниз](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`SearchControl.MouseDownDropDownButtonGlyph`|  
-|![Кнопка "Удалить"&#45;нажатии кнопки вниз](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Border|`SearchControl.MouseDownDropDownButtonBorder`|  
+|![Кнопка "Удалить"&#45;нажатии кнопки вниз](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Кнопка раскрывающегося списка**|Рамка|`SearchControl.MouseDownDropDownButtonBorder`|  
   
  **Выделено (только текст)**  
   
@@ -938,23 +938,23 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Выделение поля ввода окна поиска](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 — 120_SearchInputFieldHighlight")<br /><br /> **Поле ввода с выделенным текстом**|Фон|`SearchControl.Selection`|  
 |![Выделение поля ввода окна поиска](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 — 120_SearchInputFieldHighlight")<br /><br /> **Поле ввода с выделенным текстом**|Передний план (текст)|`SearchControl.FocusedBackground`|  
-|![Выделение поля ввода окна поиска](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 — 120_SearchInputFieldHighlight")<br /><br /> **Поле ввода с выделенным текстом**|Border|None|  
+|![Выделение поля ввода окна поиска](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 — 120_SearchInputFieldHighlight")<br /><br /> **Поле ввода с выделенным текстом**|Рамка|Нет|  
 |![Выделение поля ввода окна поиска](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 — 120_SearchInputFieldHighlight")<br /><br /> **Поле ввода с выделенным текстом**|Separator|`SearchControl.FocusedDropDownSeparator`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Неактивное поле ввода окна поиска](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 — 121_SearchInputFieldDisabled")<br /><br /> **Поле ввода**|Фон|`SearchControl.Disabled`|  
 |![Неактивное поле ввода окна поиска](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 — 121_SearchInputFieldDisabled")<br /><br /> **Поле ввода**|Передний план (текст)|`SearchControl.Disabled`|  
-|![Неактивное поле ввода окна поиска](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 — 121_SearchInputFieldDisabled")<br /><br /> **Поле ввода**|Border|`SearchControl.DisabledBorder`|  
+|![Неактивное поле ввода окна поиска](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 — 121_SearchInputFieldDisabled")<br /><br /> **Поле ввода**|Рамка|`SearchControl.DisabledBorder`|  
 |![Неактивное поле ввода окна поиска](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 — 121_SearchInputFieldDisabled")<br /><br /> **Поле ввода**|Separator|`SearchControl.DropDownSeparator`|  
-|![Неактивная кнопка поиска](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 — 122_SearchActionButtonDisabled")<br /><br /> **Кнопка действия**|Фон|None|  
+|![Неактивная кнопка поиска](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 — 122_SearchActionButtonDisabled")<br /><br /> **Кнопка действия**|Фон|Нет|  
 |![Неактивная кнопка поиска](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 — 122_SearchActionButtonDisabled")<br /><br /> **Кнопка действия**|Передний план (глиф)|`SearchControl.ActionButtonDisabledGlyph`|  
-|![Неактивная кнопка поиска](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 — 122_SearchActionButtonDisabled")<br /><br /> **Кнопка действия**|Border|None|  
-|![Кнопка "Удалить"&#45;"вниз" отключена](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 — 123_SearchDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Фон|None|  
+|![Неактивная кнопка поиска](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 — 122_SearchActionButtonDisabled")<br /><br /> **Кнопка действия**|Рамка|Нет|  
+|![Кнопка "Удалить"&#45;"вниз" отключена](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 — 123_SearchDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Фон|Нет|  
 |![Кнопка "Удалить"&#45;"вниз" отключена](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 — 123_SearchDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Передний план (глиф)|`SearchControl.DisabledDownButtonGlyph`|  
-|![Кнопка "Удалить"&#45;"вниз" отключена](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 — 123_SearchDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Border|None|  
+|![Кнопка "Удалить"&#45;"вниз" отключена](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 — 123_SearchDropdownButtonDisabled")<br /><br /> **Кнопка раскрывающегося списка**|Рамка|Нет|  
   
 ##### <a name="search-drop-down-lists"></a>Раскрывающиеся списки поиска  
  Раскрывающиеся меню в поле поиска могут быть немного более сложными, чем другие раскрывающиеся меню в Visual Studio. Разделы "предлагаемые запросы поиска" и "параметры поиска" могут присутствовать в меню вместе или по отдельности. Каждый из них имеет особые цвета. Если имеются оба этих раздела, они разделяются линией, а все раскрывающееся меню окружено границей.  
@@ -975,7 +975,7 @@ ms.locfileid: "85548360"
   
 |Элемент|Имя токена: Category.color|  
 |-------------|--------------------------------|  
-|Border|`SearchControl.PopupBorder`|  
+|Рамка|`SearchControl.PopupBorder`|  
 |Separator|`SearchControl.PopupSectionHeaderSeparator`|  
 |Shadow|`Environment.DropShadowBackground`|  
   
@@ -1002,15 +1002,15 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Предлагаемый поиск при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 — 128_SearchSuggestedHover")<br /><br /> **Предлагаемые запросы поиска**|Фон|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Предлагаемый поиск при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 — 128_SearchSuggestedHover")<br /><br /> **Предлагаемые запросы поиска**|Передний план (текст)|`SearchControl.PopupMouseOverItemText`|  
-|![Предлагаемый поиск при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 — 128_SearchSuggestedHover")<br /><br /> **Предлагаемые запросы поиска**|Border|`SearchControl.PopupControlMouseOverBorder`|  
+|![Предлагаемый поиск при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 — 128_SearchSuggestedHover")<br /><br /> **Предлагаемые запросы поиска**|Рамка|`SearchControl.PopupControlMouseOverBorder`|  
 |![Флажок поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 — 129_SearchCheckboxHover")<br /><br /> **Предлагаемые запросы поиска (флажок)**|Фон|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Параметры поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 — 130_SearchOptionsHover")<br /><br /> **Параметры поиска**|Фон|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Хотя этот цвет фона не используется в современной теме пользовательского интерфейса, для него заданы значения и ограничения градиента.|  
 |![Флажок поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 — 129_SearchCheckboxHover")<br /><br /> **Предлагаемые запросы поиска (флажок)**|Передний план (текст флажка)|`SearchControl.PopupCheckboxMouseDownText`|  
 |![Параметры поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 — 130_SearchOptionsHover")<br /><br /> **Параметры поиска**|Передний план (текст флажка)|`SearchControl.PopupCheckboxMouseDownText`|  
 |![Флажок поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 — 129_SearchCheckboxHover")<br /><br /> **Предлагаемые запросы поиска (флажок)**|Передний план (текст ссылки)|`SearchControl.PopupButtonMouseDownText`|  
 |![Параметры поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 — 130_SearchOptionsHover")<br /><br /> **Параметры поиска**|Передний план (текст ссылки)|`SearchControl.PopupButtonMouseDownText`|  
-|![Флажок поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 — 129_SearchCheckboxHover")<br /><br /> **Предлагаемые запросы поиска (флажок)**|Border|`SearchControl.PopupControlMouseOverBorder`|  
-|![Параметры поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 — 130_SearchOptionsHover")<br /><br /> **Параметры поиска**|Border|`SearchControl.PopupControlMouseOverBorder`|  
+|![Флажок поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 — 129_SearchCheckboxHover")<br /><br /> **Предлагаемые запросы поиска (флажок)**|Рамка|`SearchControl.PopupControlMouseOverBorder`|  
+|![Параметры поиска при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 — 130_SearchOptionsHover")<br /><br /> **Параметры поиска**|Рамка|`SearchControl.PopupControlMouseOverBorder`|  
   
  **Pressed**  
   
@@ -1056,7 +1056,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Активная гиперссылка](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 — 136_HyperlinkPressed")|Передний план (текст)|`Environment.PanelHyperlinkPressed`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1077,9 +1077,9 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Информационная панель](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 — 139_Infobar")<br /><br /> **Информационная панель**|Фон|`Environment.InfoBackground`|  
 |![Информационная панель](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 — 139_Infobar")<br /><br /> **Информационная панель**|Передний план (текст)|`Environment.InfoText`|  
-|![Информационная панель](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 — 139_Infobar")<br /><br /> **Информационная панель**|Border|`Environment.ToolWindowBorder`|  
+|![Информационная панель](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 — 139_Infobar")<br /><br /> **Информационная панель**|Рамка|`Environment.ToolWindowBorder`|  
   
-#### <a name="scroll-bar"></a>Полоса прокрутки  
+#### <a name="scroll-bar"></a>полоса прокрутки;  
  Полосы прокрутки оформляются средой Visual Studio, и применять к ним темы не нужно. Однако вы можете решить, что вы хотите использовать цвета, используемые в полосах прокрутки, чтобы пользовательский интерфейс всегда соответствовал этой части среды Visual Studio.  
   
  ![Красная линия полосы прокрутки](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 — 140_ScrollbarRedline")  
@@ -1094,8 +1094,8 @@ ms.locfileid: "85548360"
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Полоса прокрутки](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 — 141_Scrollbar")<br /><br /> **Элемента**|Полоса прокрутки|`Environment.ScrollBarBackground`|  
-|![Полоса прокрутки](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 — 141_Scrollbar")<br /><br /> **Элемента**|Передний план (бегунок)|`Environment.ScrollBarThumbBackground`|  
+|![полоса прокрутки;](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 — 141_Scrollbar")<br /><br /> **Элемента**|Полоса прокрутки|`Environment.ScrollBarBackground`|  
+|![полоса прокрутки;](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 — 141_Scrollbar")<br /><br /> **Элемента**|Передний план (бегунок)|`Environment.ScrollBarThumbBackground`|  
 |![Стрелки полосы прокрутки](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 — 142_ScrollbarArrow")<br /><br /> **Стрелка прокрутки**|Фон|`Environment.ScrollBarArrowBackground`<br /><br /> Цвет совпадает с цветом полосы прокрутки.|  
 |![Стрелки полосы прокрутки](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 — 142_ScrollbarArrow")<br /><br /> **Стрелка прокрутки**|Передний план (глиф)|`Environment.ScrollBarArrowGlyph`|  
   
@@ -1117,7 +1117,7 @@ ms.locfileid: "85548360"
 |![Активные стрелки полосы прокрутки](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 — 146_ScrollbarArrowPressed")<br /><br /> **Стрелка прокрутки**|Фон|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Цвет совпадает с цветом полосы прокрутки.|  
 |![Активные стрелки полосы прокрутки](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 — 146_ScrollbarArrowPressed")<br /><br /> **Стрелка прокрутки**|Передний план (глиф)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Представление в виде дерева  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Представление в виде дерева  
  В некоторых окнах инструментов, включая обозреватель решений, обозреватель сервера и представление классов, реализована иерархическая организационная схема, цвета которой определяются названиями цветов в категории TreeView. Все элементы в иерархическом представлении имеют цвета фона и текста. Элементы с вложенными дочерними элементами также имеют глифы, которые указывают на то, является ли элемент свернутым или развернутым.  
   
  ![Красная линия представления в виде дерева](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 — 147_TreeViewRedline")  
@@ -1137,7 +1137,7 @@ ms.locfileid: "85548360"
 |![Представление в виде дерева](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 — 148_TreeView")|Фон|`TreeView.Background`|  
 |![Представление в виде дерева](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 — 148_TreeView")|Передний план (текст)|`TreeView.Background`|  
 |![Представление в виде дерева](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 — 148_TreeView")|Передний план (глиф)|`TreeView.Glyph`|  
-|![Представление в виде дерева](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 — 148_TreeView")|Border|None|  
+|![Представление в виде дерева](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 — 148_TreeView")|Рамка|Нет|  
   
  **Наведение**  
   
@@ -1146,7 +1146,7 @@ ms.locfileid: "85548360"
 |![Представление в виде дерева при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 — 149_TreeViewHover")|Фон|`TreeView.Background`|  
 |![Представление в виде дерева при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 — 149_TreeViewHover")|Передний план (текст)|`TreeView.Background`|  
 |![Представление в виде дерева при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 — 149_TreeViewHover")|Передний план (глиф)|`TreeView.GlyphMouseOver`|  
-|![Представление в виде дерева при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 — 149_TreeViewHover")|Border|None|  
+|![Представление в виде дерева при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 — 149_TreeViewHover")|Рамка|Нет|  
   
  **Перетаскивание**  
   
@@ -1155,7 +1155,7 @@ ms.locfileid: "85548360"
 |![Перетаскивание иерархического представления](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 — 150_TreeViewDragOver")|Фон|`TreeView.DragOverItem`|  
 |![Перетаскивание иерархического представления](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 — 150_TreeViewDragOver")|Передний план (текст)|`TreeView.DragOverItem`|  
 |![Перетаскивание иерархического представления](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 — 150_TreeViewDragOver")|Передний план (глиф)|`TreeView.DragOverItemGlyph`|  
-|![Перетаскивание иерархического представления](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 — 150_TreeViewDragOver")|Border|None|  
+|![Перетаскивание иерархического представления](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 — 150_TreeViewDragOver")|Рамка|Нет|  
   
  **Selected**  
   
@@ -1164,11 +1164,11 @@ ms.locfileid: "85548360"
 |![Иерархическое представление в фокусе](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 — 151_TreeViewFocused")<br /><br /> **Focused**|Фон|`TreeView.SelectedItemActive`|  
 |![Иерархическое представление в фокусе](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 — 151_TreeViewFocused")<br /><br /> **Focused**|Передний план (текст)|`TreeView.SelectedItemActive`|  
 |![Иерархическое представление в фокусе](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 — 151_TreeViewFocused")<br /><br /> **Focused**|Передний план (глиф)|`TreeView.SelectedItemActiveGlyph`|  
-|![Иерархическое представление в фокусе](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 — 151_TreeViewFocused")<br /><br /> **Focused**|Border|`TreeView.FocusVisualBorder`|  
+|![Иерархическое представление в фокусе](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 — 151_TreeViewFocused")<br /><br /> **Focused**|Рамка|`TreeView.FocusVisualBorder`|  
 |![Представление в виде дерева в фокусе](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 — 152_TreeViewUnfocused")<br /><br /> **Без фокуса ввода**|Фон|`TreeView.SelectedItemInactive`|  
 |![Представление в виде дерева в фокусе](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 — 152_TreeViewUnfocused")<br /><br /> **Без фокуса ввода**|Передний план (текст)|`TreeView.SelectedItemInactive`|  
 |![Представление в виде дерева в фокусе](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 — 152_TreeViewUnfocused")<br /><br /> **Без фокуса ввода**|Передний план (глиф)|`TreeView.SelectedItemInactiveGlyph`|  
-|![Представление в виде дерева в фокусе](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 — 152_TreeViewUnfocused")<br /><br /> **Без фокуса ввода**|Border|None|  
+|![Представление в виде дерева в фокусе](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 — 152_TreeViewUnfocused")<br /><br /> **Без фокуса ввода**|Рамка|Нет|  
   
  **Наведение указателя на выделенный элемент**  
   
@@ -1177,11 +1177,11 @@ ms.locfileid: "85548360"
 |![Представление в виде дерева в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 — 153_TreeViewFocusedHover")<br /><br /> **Focused**|Фон|`TreeView.SelectedItemActive`|  
 |![Представление в виде дерева в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 — 153_TreeViewFocusedHover")<br /><br /> **Focused**|Передний план (текст)|`TreeView.SelectedItemActive`|  
 |![Представление в виде дерева в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 — 153_TreeViewFocusedHover")<br /><br /> **Focused**|Передний план (глиф)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Представление в виде дерева в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 — 153_TreeViewFocusedHover")<br /><br /> **Focused**|Border|Нет`TreeView.FocusVisualBorder`|  
+|![Представление в виде дерева в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 — 153_TreeViewFocusedHover")<br /><br /> **Focused**|Рамка|Нет`TreeView.FocusVisualBorder`|  
 |![Иерархическое представление не в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 — 154_TreeViewUnfocusedHover")<br /><br /> **Без фокуса ввода**|Фон|`TreeView.SelectedItemInactive`|  
 |![Иерархическое представление не в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 — 154_TreeViewUnfocusedHover")<br /><br /> **Без фокуса ввода**|Передний план (текст)|`TreeView.SelectedItemInactive`|  
 |![Иерархическое представление не в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 — 154_TreeViewUnfocusedHover")<br /><br /> **Без фокуса ввода**|Передний план (глиф)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Иерархическое представление не в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 — 154_TreeViewUnfocusedHover")<br /><br /> **Без фокуса ввода**|Border|None|  
+|![Иерархическое представление не в фокусе при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 — 154_TreeViewUnfocusedHover")<br /><br /> **Без фокуса ввода**|Рамка|Нет|  
   
 #### <a name="button-controls"></a>Элементы управления "Кнопка"  
  ![Красная линия элемента управления "Кнопка"](../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 — 155_ButtonControlRedline")  
@@ -1199,7 +1199,7 @@ ms.locfileid: "85548360"
 |![Кнопка](../extensibility/ux-guidelines/media/0303-156-button.png "0303 — 156_Button")|Кнопка|`CommonControls.Button`|  
 |![Кнопка](../extensibility/ux-guidelines/media/0303-156-button.png "0303 — 156_Button")|Граница кнопки|`CommonControls.ButtonBorder`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1241,17 +1241,17 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Флажок](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")|Фон|`CommonControls.CheckBoxBackground`|  
-|![Флажок](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")|Border|`CommonControls.CheckBoxBorder`|  
-|![Флажок](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")|текст|`CommonControls.CheckBoxText`|  
+|![Флажок](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")|Рамка|`CommonControls.CheckBoxBorder`|  
+|![Флажок](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")|Текст|`CommonControls.CheckBoxText`|  
 |![Флажок](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 — 162_Checkbox")|Глиф|`CommonControls.CheckBoxGlyph`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Неактивный флажок](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")|Фон|`CommonControls.CheckBoxBackgroundDisabled`|  
-|![Неактивный флажок](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")|Border|`CommonControls.CheckBoxBorderDisabled`|  
-|![Неактивный флажок](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")|текст|`CommonControls.CheckBoxTextDisabled`|  
+|![Неактивный флажок](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")|Рамка|`CommonControls.CheckBoxBorderDisabled`|  
+|![Неактивный флажок](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")|Текст|`CommonControls.CheckBoxTextDisabled`|  
 |![Неактивный флажок](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 — 163_CheckboxDisabled")|Глиф|`CommonControls.CheckBoxGlyphDisabled`|  
   
  **Наведение**  
@@ -1259,8 +1259,8 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Флажок при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")|Фон|`CommonControls.CheckBoxBackgroundHover`|  
-|![Флажок при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")|Border|`CommonControls.CheckBoxBorderHover`|  
-|![Флажок при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")|текст|`CommonControls.CheckBoxTextHover`|  
+|![Флажок при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")|Рамка|`CommonControls.CheckBoxBorderHover`|  
+|![Флажок при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")|Текст|`CommonControls.CheckBoxTextHover`|  
 |![Флажок при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 — 164_CheckboxHover")|Глиф|`CommonControls.CheckBoxGlyphHover`|  
   
  **Pressed**  
@@ -1268,8 +1268,8 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Активный флажок](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")|Фон|`CommonControls.CheckBoxBackgroundPressed`|  
-|![Активный флажок](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")|Border|`CommonControls.CheckBoxBorderPressed`|  
-|![Активный флажок](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")|текст|`CommonControls.CheckBoxTextPressed`|  
+|![Активный флажок](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")|Рамка|`CommonControls.CheckBoxBorderPressed`|  
+|![Активный флажок](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")|Текст|`CommonControls.CheckBoxTextPressed`|  
 |![Активный флажок](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 — 165_CheckboxPressed")|Глиф|`CommonControls.CheckBoxGlyphPressed`|  
   
  **Focused**  
@@ -1277,8 +1277,8 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Флажок с фокусом ввода](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")|Фон|`CommonControls.CheckBoxBackgroundFocused`|  
-|![Флажок с фокусом ввода](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")|Border|`CommonControls.CheckBoxBorderFocused`|  
-|![Флажок с фокусом ввода](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")|текст|`CommonControls.CheckBoxTextFocused`|  
+|![Флажок с фокусом ввода](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")|Рамка|`CommonControls.CheckBoxBorderFocused`|  
+|![Флажок с фокусом ввода](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")|Текст|`CommonControls.CheckBoxTextFocused`|  
 |![Флажок с фокусом ввода](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 — 166_CheckboxFocused")|Глиф|`CommonControls.CheckBoxGlyphFocused`|  
   
 #### <a name="drop-boxcombo-box-controls"></a>Элементы управления "Раскрывающийся список" и "Поле со списком"  
@@ -1297,19 +1297,19 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Фон|`CommonControls.ComboBoxBackground`|  
-|![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Border|`CommonControls.ComboBoxBorder`|  
-|![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|текст|`CommonControls.ComboBoxText`|  
+|![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Рамка|`CommonControls.ComboBoxBorder`|  
+|![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Текст|`CommonControls.ComboBoxText`|  
 |![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Separator|`CommonControls.ComboBoxSeparator`|  
 |![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Глиф|`CommonControls.ComboBoxGlyph`|  
 |![Удалить&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 — 168_DropDownComboBox")|Фон глифа|`CommonControls.ComboBoxGlyphBackground`|  
   
- **Отключено**  
+ **Отключен**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Фон|`CommonControls.ComboBoxBackgroundDisabled`|  
-|![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Border|`CommonControls.ComboBoxBorderDisabled`|  
-|![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|текст|`CommonControls.ComboBoxTextDisabled`|  
+|![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Рамка|`CommonControls.ComboBoxBorderDisabled`|  
+|![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Текст|`CommonControls.ComboBoxTextDisabled`|  
 |![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Separator|`CommonControls.ComboBoxSeparatorDisabled`|  
 |![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Глиф|`CommonControls.ComboBoxGlyphDisabled`|  
 |![Drop&#45;&#47;поле со списком отключено](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 — 169_DropDownComboBoxDisabled")|Фон глифа|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
@@ -1319,8 +1319,8 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Фон|`CommonControls.ComboBoxBackgroundHover`|  
-|![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Border|`CommonControls.ComboBoxBorderHover`|  
-|![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|текст|`CommonControls.ComboBoxTextHover`|  
+|![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Рамка|`CommonControls.ComboBoxBorderHover`|  
+|![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Текст|`CommonControls.ComboBoxTextHover`|  
 |![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Separator|`CommonControls.ComboBoxSeparatorHover`|  
 |![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Глиф|`CommonControls.ComboBoxGlyphHover`|  
 |![Drop&#45;&#47;поле со списком при наведении указателя](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 — 170_DropDownComboBoxHover")|Фон глифа|`CommonControls.ComboBoxGlyphBackgroundHover`|  
@@ -1330,8 +1330,8 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Фон|`CommonControls.ComboBoxBackgroundPressed`|  
-|![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Border|`CommonControls.ComboBoxBorderPressed`|  
-|![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|текст|`CommonControls.ComboBoxTextPressed`|  
+|![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Рамка|`CommonControls.ComboBoxBorderPressed`|  
+|![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Текст|`CommonControls.ComboBoxTextPressed`|  
 |![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Separator|`CommonControls.ComboBoxSeparatorPressed`|  
 |![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Глиф|`CommonControls.ComboBoxGlyphPressed`|  
 |![Удалить&#45;вниз&#47;нажатии поля со списком](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 — 171_DropDownComboBoxPressed")|Фон глифа|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
@@ -1341,8 +1341,8 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Фон|`CommonControls.ComboBoxBackgroundFocused`|  
-|![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Border|`CommonControls.ComboBoxBorderFocused`|  
-|![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|текст|`CommonControls.ComboBoxTextFocused`|  
+|![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Рамка|`CommonControls.ComboBoxBorderFocused`|  
+|![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Текст|`CommonControls.ComboBoxTextFocused`|  
 |![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Separator|`CommonControls.ComboBoxSeparatorFocused`|  
 |![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Глиф|`CommonControls.ComboBoxGlyphFocused`|  
 |![Перетащите&#45;вниз&#47;поле со списком](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 — 172_DropDownComboBoxFocused")|Фон глифа|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
@@ -1361,10 +1361,10 @@ ms.locfileid: "85548360"
 |![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Фон|`CommonControls.ComboBoxListBackgroundHover`|  
 |![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Фон|`CommonControls.ComboBoxListItemBackgroundPressed`|  
 |![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Фон|`CommonControls.ComboBoxListItemBackgroundFocused`|  
-|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Border|`CommonControls.ComboBoxListBorder`|  
-|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Border|`CommonControls.ComboBoxListBorderHover`|  
-|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Border|`CommonControls.ComboBoxListBorderPressed`|  
-|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Border|`CommonControls.ComboBoxListBorderFocused`|  
+|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Рамка|`CommonControls.ComboBoxListBorder`|  
+|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Рамка|`CommonControls.ComboBoxListBorderHover`|  
+|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Рамка|`CommonControls.ComboBoxListBorderPressed`|  
+|![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Рамка|`CommonControls.ComboBoxListBorderFocused`|  
 |![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Текст элемента|`CommonControls.ComboBoxListItemText`|  
 |![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Текст элемента|`CommonControls.ComboBoxListItemTextHover`|  
 |![Перетащите&#45;вниз&#47;поле со списком в виде списка](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 — 174_DropDownComboBoxListView")|Текст элемента|`CommonControls.ComboBoxListItemTextPressed`|  
@@ -1390,15 +1390,15 @@ ms.locfileid: "85548360"
 |По умолчанию|Фон|`Header.Default`|  
 |По умолчанию|Передний план (текст)|`Environment.CommandBarTextActive`|  
 |По умолчанию|Передний план (глиф)|`Header.Glyph`|  
-|По умолчанию|Border|`Header.SeparatorLine`|  
+|По умолчанию|Рамка|`Header.SeparatorLine`|  
 |Наведение|Фон|`Header.MouseOver`|  
 |Наведение|Передний план (текст)|`Environment.CommandBarTextHover`|  
 |Наведение|Передний план (глиф)|`Header.MouseOverGlyph`|  
-|Наведение|Border|`Header.SeparatorLine`|  
+|Наведение|Рамка|`Header.SeparatorLine`|  
 |Нажато|Фон|`CommonControls.CheckBoxBackgroundPressed`|  
 |Нажато|Передний план (текст)|`CommonControls.CheckBoxBorderPressed`|  
 |Нажато|Передний план (глиф)|`CommonControls.CheckBoxTextPressed`|  
-|Нажато|Border|`CommonControls.CheckBoxGlyphPressed`|  
+|Нажато|Рамка|`CommonControls.CheckBoxGlyphPressed`|  
   
 ##### <a name="list-view-items"></a>Элементы представления списка  
  Элементы представления списка состоят из фона и содержимого. Содержимым может быть текст, значок или и то и другое.  
@@ -1407,13 +1407,13 @@ ms.locfileid: "85548360"
 |-----------|-------------|--------------------------------|  
 |По умолчанию|Фон|Прозрачный|  
 |По умолчанию|Передний план (текст)|`Environment.CommandBarTextActive`|  
-|По умолчанию|Border|None|  
+|По умолчанию|Рамка|Нет|  
 |Выбран (активен)|Фон|`TreeView.SelectedItemActive`|  
 |Выбран (активен)|Передний план (текст)|`TreeView.SelectedItemActiveText`|  
-|Выбран (активен)|Border|None|  
+|Выбран (активен)|Рамка|Нет|  
 |Выбран (неактивен)|Фон|`TreeView.SelectedItemInactive`|  
 |Выбран (неактивен)|Передний план (текст)|`TreeView.SelectedItemInactiveText`|  
-|Выбран (неактивен)|Border|None|  
+|Выбран (неактивен)|Рамка|Нет|  
   
 ### <a name="manifest-designer"></a>Конструктор манифеста  
  Конструктор манифеста призван упростить редактирование файла манифеста в проектах Windows 8 и Windows Phone 8. Хотя общего готового шаблона нет, рекомендуется обеспечивать соответствие макету и цветам вкладок ориентации и навигации, а также общей структуре. Дополнительные сведения о макете см. в разделе [Layout for Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md).  
@@ -1433,7 +1433,7 @@ ms.locfileid: "85548360"
 |Состояние|Компонент|Элемент|Имя токена: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |По умолчанию (выбрано)|Вкладка|Фон|`ManifestDesigner.TabActive`|  
-|По умолчанию (выбрано)|Вкладка|Border|None|  
+|По умолчанию (выбрано)|Вкладка|Рамка|Нет|  
 |По умолчанию (выбрано)|Панель описания|Фон|`ManifestDesigner.DescriptionPane`|  
 |По умолчанию (выбрано)|Страница содержимого|Фон|`ManifestDesigner.Background`|  
 |По умолчанию (выбрано)|Страница содержимого|Текст подсказки для диалогового окна|`ManifestDesigner.WatermarkText`<br /><br /> Это имя токена не соответствует его функции.|  
@@ -1469,8 +1469,8 @@ ms.locfileid: "85548360"
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![&#41;&#40;тега](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 — 181_TagGlyph")<br /><br /> **По умолчанию (тег по умолчанию)**|Фон|Недоступно|  
-|![&#41;&#40;тега](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 — 181_TagGlyph")<br /><br /> **По умолчанию (тег по умолчанию)**|Передний план (глиф)|`Tag.TagHoverGlyph`|  
+|![&#41;&#40;тега ](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 — 181_TagGlyph")<br /><br /> **По умолчанию (тег по умолчанию)**|Фон|Н/Д|  
+|![&#41;&#40;тега ](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 — 181_TagGlyph")<br /><br /> **По умолчанию (тег по умолчанию)**|Передний план (глиф)|`Tag.TagHoverGlyph`|  
   
  **Наведение**  
   
@@ -1478,7 +1478,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Тег &#40;&#41; глифа при наведении указателя](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 — 182_TagGlyphHover")<br /><br /> **При наведении указателя (тег по умолчанию)**|Фон|`Tag.TagHoverGlyphHoverBackground`|  
 |![Тег &#40;&#41; глифа при наведении указателя](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 — 182_TagGlyphHover")<br /><br /> **При наведении указателя (тег по умолчанию)**|Передний план (глиф)|`Tag.TagHoverGlyphHover`|  
-|![Тег &#40;&#41; глифа при наведении указателя](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 — 182_TagGlyphHover")<br /><br /> **При наведении указателя (тег по умолчанию)**|Border|`Tag.TagHoverGlyphHoverBorder`|  
+|![Тег &#40;&#41; глифа при наведении указателя](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 — 182_TagGlyphHover")<br /><br /> **При наведении указателя (тег по умолчанию)**|Рамка|`Tag.TagHoverGlyphHoverBorder`|  
   
  **Pressed**  
   
@@ -1486,13 +1486,13 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Тег &#40;глифа&#41; нажата](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 — 183_TagGlyphPressed")<br /><br /> **Активен (тег по умолчанию)**|Фон|`Tag.TagHoverGlyphPressedBackground`|  
 |![Тег &#40;глифа&#41; нажата](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 — 183_TagGlyphPressed")<br /><br /> **Активен (тег по умолчанию)**|Передний план (глиф)|`Tag.TagHoverGlyphPressed`|  
-|![Тег &#40;глифа&#41; нажата](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 — 183_TagGlyphPressed")<br /><br /> **Активен (тег по умолчанию)**|Border|`Tag.TagHoverGlyphPressedBorder`|  
+|![Тег &#40;глифа&#41; нажата](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 — 183_TagGlyphPressed")<br /><br /> **Активен (тег по умолчанию)**|Рамка|`Tag.TagHoverGlyphPressedBorder`|  
   
  **Тег выбран/глиф по умолчанию**  
   
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Выбранный тег](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 — 184_TagSelected")<br /><br /> **По умолчанию (активный тег)**|Фон|Недоступно|  
+|![Выбранный тег](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 — 184_TagSelected")<br /><br /> **По умолчанию (активный тег)**|Фон|Н/Д|  
 |![Выбранный тег](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 — 184_TagSelected")<br /><br /> **По умолчанию (активный тег)**|Передний план (глиф)|`Tag.TagSelectedGlyph`|  
   
  **Тег выбран/глиф при наведении указателя**  
@@ -1501,7 +1501,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Выбранный тег при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 — 185_TagSelectedHover")<br /><br /> **При наведении указателя (тег выбран)**|Фон|`Tag.TagSelectedGlyphHoverBackground`|  
 |![Выбранный тег при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 — 185_TagSelectedHover")<br /><br /> **При наведении указателя (тег выбран)**|Передний план (глиф)|`Tag.TagSelectedGlyphHover`|  
-|![Выбранный тег при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 — 185_TagSelectedHover")<br /><br /> **При наведении указателя (тег выбран)**|Border|`Tag.TagSelectedGlyphHoverBorder`|  
+|![Выбранный тег при наведении курсора мыши](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 — 185_TagSelectedHover")<br /><br /> **При наведении указателя (тег выбран)**|Рамка|`Tag.TagSelectedGlyphHoverBorder`|  
   
  **Тег выбран/активный глиф**  
   
@@ -1509,7 +1509,7 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Выбранный активный тег](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 — 186_TagSelectedPressed")<br /><br /> **Активен (тег выбран)**|Фон|`Tag.TagSelectedGlyphPressedBackground`|  
 |![Выбранный активный тег](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 — 186_TagSelectedPressed")<br /><br /> **Активен (тег выбран)**|Передний план (глиф)|`Tag.TagSelectedGlyphPressed`|  
-|![Выбранный активный тег](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 — 186_TagSelectedPressed")<br /><br /> **Активен (тег выбран)**|Border|`Tag.TagSelectedGlyphPressedBorder`|  
+|![Выбранный активный тег](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 — 186_TagSelectedPressed")<br /><br /> **Активен (тег выбран)**|Рамка|`Tag.TagSelectedGlyphPressedBorder`|  
   
 ### <a name="shell"></a>Оболочка  
   
@@ -1576,8 +1576,8 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Родительский узел панели инструментов](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 — 190_ToolboxParentNode")<br /><br /> **Родительский узел**|Фон|`Environment.ToolboxContent`<br /><br /> Заголовки<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Отдельные элементы или все окно, если нет доступных элементов управления|  
 |![Дочерний узел панели инструментов](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 — 191_ToolboxChildNode")<br /><br /> **Дочерний узел**|Фон|`Environment.ToolboxContent`<br /><br /> Заголовки<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Отдельные элементы или все окно, если нет доступных элементов управления|  
-|![Родительский узел панели инструментов](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 — 190_ToolboxParentNode")<br /><br /> **Родительский узел**|Border|None|  
-|![Дочерний узел панели инструментов](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 — 191_ToolboxChildNode")<br /><br /> **Дочерний узел**|Border|None|  
+|![Родительский узел панели инструментов](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 — 190_ToolboxParentNode")<br /><br /> **Родительский узел**|Рамка|Нет|  
+|![Дочерний узел панели инструментов](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 — 191_ToolboxChildNode")<br /><br /> **Дочерний узел**|Рамка|Нет|  
 |![Родительский узел панели инструментов](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 — 190_ToolboxParentNode")<br /><br /> **Родительский узел**|Передний план (глиф)|`Environment.ToolboxContent`|  
 |![Дочерний узел панели инструментов](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 — 191_ToolboxChildNode")<br /><br /> **Дочерний узел**|Передний план (глиф)|`Environment.ToolboxContent`|  
 |![Родительский узел панели инструментов](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 — 190_ToolboxParentNode")<br /><br /> **Родительский узел**|Передний план (текст)|`Environment.ToolboxContent`|  
@@ -1588,7 +1588,7 @@ ms.locfileid: "85548360"
 |Компонент|Элемент|Имя токена: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![Дочерний узел панели инструментов при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 — 192_ToolboxChildNodeHover")<br /><br /> **Наведение указателя на дочерний узел панели элементов**|Фон|`Environment.ToolboxContentMouseOver`<br /><br /> Только отдельные элементы|  
-|![Дочерний узел панели инструментов при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 — 192_ToolboxChildNodeHover")<br /><br /> **Наведение указателя на дочерний узел панели элементов**|Border|None|  
+|![Дочерний узел панели инструментов при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 — 192_ToolboxChildNodeHover")<br /><br /> **Наведение указателя на дочерний узел панели элементов**|Рамка|Нет|  
 |![Дочерний узел панели инструментов при наведении указателя мыши](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 — 192_ToolboxChildNodeHover")<br /><br /> **Наведение указателя на дочерний узел панели элементов**|Передний план (текст)|`Environment.ToolboxContentMouseOver`<br /><br /> Только отдельные элементы|  
   
  **Selected**  
@@ -1597,16 +1597,16 @@ ms.locfileid: "85548360"
 |---------------|-------------|--------------------------------|  
 |![Родительский узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 — 193_ToolboxParentNodeFocused")<br /><br /> **Родительский узел с фокусом ввода**|Фон|`TreeView.SelectedItemActive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Дочерний узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 — 194_ToolboxChildNodeFocused")<br /><br /> **Дочерний узел с фокусом ввода**|Фон|`TreeView.SelectedItemActive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
-|![Родительский узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 — 193_ToolboxParentNodeFocused")<br /><br /> **Родительский узел с фокусом ввода**|Border|`TreeView.FocusVisualBorder`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
-|![Дочерний узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 — 194_ToolboxChildNodeFocused")<br /><br /> **Дочерний узел с фокусом ввода**|Border|`TreeView.FocusVisualBorder`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Родительский узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 — 193_ToolboxParentNodeFocused")<br /><br /> **Родительский узел с фокусом ввода**|Рамка|`TreeView.FocusVisualBorder`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Дочерний узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 — 194_ToolboxChildNodeFocused")<br /><br /> **Дочерний узел с фокусом ввода**|Рамка|`TreeView.FocusVisualBorder`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Родительский узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 — 193_ToolboxParentNodeFocused")<br /><br /> **Родительский узел с фокусом ввода**|Передний план (глиф)|`TreeView.SelectedItemActive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Дочерний узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 — 194_ToolboxChildNodeFocused")<br /><br /> **Дочерний узел с фокусом ввода**|Передний план (глиф)|`TreeView.SelectedItemActive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Родительский узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 — 193_ToolboxParentNodeFocused")<br /><br /> **Родительский узел с фокусом ввода**|Передний план (текст)|`TreeView.SelectedItemActive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Дочерний узел панели инструментов в фокусе](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 — 194_ToolboxChildNodeFocused")<br /><br /> **Дочерний узел с фокусом ввода**|Передний план (текст)|`TreeView.SelectedItemActive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Родительский узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 — 195_ToolboxParentNodeUnfocused")<br /><br /> **Родительский узел без фокуса ввода**|Фон|`TreeView.SelectedItemInactive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Дочерний узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 — 196_ToolboxChildNodeUnfocused")<br /><br /> **Дочерний узел без фокуса ввода**|Фон|`TreeView.SelectedItemInactive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
-|![Родительский узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 — 195_ToolboxParentNodeUnfocused")<br /><br /> **Родительский узел без фокуса ввода**|Border|None|  
-|![Дочерний узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 — 196_ToolboxChildNodeUnfocused")<br /><br /> **Дочерний узел без фокуса ввода**|Border|None|  
+|![Родительский узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 — 195_ToolboxParentNodeUnfocused")<br /><br /> **Родительский узел без фокуса ввода**|Рамка|Нет|  
+|![Дочерний узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 — 196_ToolboxChildNodeUnfocused")<br /><br /> **Дочерний узел без фокуса ввода**|Рамка|Нет|  
 |![Родительский узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 — 195_ToolboxParentNodeUnfocused")<br /><br /> **Родительский узел без фокуса ввода**|Передний план (глиф)|`TreeView.SelectedItemInactive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Дочерний узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 — 196_ToolboxChildNodeUnfocused")<br /><br /> **Дочерний узел без фокуса ввода**|Передний план (глиф)|`TreeView.SelectedItemInactive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Родительский узел панели инструментов без фокуса ввода](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 — 195_ToolboxParentNodeUnfocused")<br /><br /> **Родительский узел без фокуса ввода**|Передний план (текст)|`TreeView.SelectedItemInactive`<br /><br /> Из категории [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
@@ -1614,12 +1614,12 @@ ms.locfileid: "85548360"
   
 ## <a name="color-value-reference"></a>Справочник по значениям цвета  
   
-|Компонент|Часть|Элемент|Состояние|Светлый|Темный|Синий|Высокая контрастность|
+|Компонент|Часть|Элемент|Состояние|Легкий|Темный|Синий|Высокая контрастность|
 |---------|----|-------|-----|-----|----|----|----|  
 |Разделительные строки|||По умолчанию|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
 |Глиф развертывания||Передний план|По умолчанию|||||  
 |Глиф развертывания||Передний план|Наведение|||||  
 |Глиф развертывания||Фон|По умолчанию|||||  
 |Глиф развертывания||Фон|Наведение|||||  
-|Глиф развертывания||Border|По умолчанию|||||  
-|Глиф развертывания||Border|Наведение|||||
+|Глиф развертывания||Рамка|По умолчанию|||||  
+|Глиф развертывания||Рамка|Наведение|||||

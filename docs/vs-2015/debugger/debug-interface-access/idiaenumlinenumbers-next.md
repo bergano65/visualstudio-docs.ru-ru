@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers::Next | Документация Майкрософт
+title: 'Идиаенумлиненумберс:: Next | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebf4016b3bff52a74607fe01918655c0587f51d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190106"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает указанное количество номеров строк в последовательности перечисления.  
+Извлекает указанное число номеров строк в последовательности перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Число номеров строк в перечислителе требуется получить.  
+ окне Число возвращаемых номеров строк в перечислителе.  
   
  rgelt  
- [out] Возвращает массив [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объекты, представляющие числа нужной строке.  
+ заполняет Возвращает массив объектов [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) , представляющих нужные номера строк.  
   
  pceltFetched  
- [out] Возвращает количество номеров строк в выбранных перечислитель.  
+ заполняет Возвращает количество номеров строк в выбранном перечислителе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии без несколько номеров строк. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если больше нет номеров строк. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумлиненумберс](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25b144409ae58f006602706a5b5cb498c0535ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540170"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Привязка элементов управления WPF к данным в Visual Studio
@@ -68,7 +68,7 @@ ms.locfileid: "85540170"
 
 - Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, язык XAML привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер XAML создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
 
-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]также вносит следующие изменения в файл кода программной части:
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] также вносит следующие изменения в файл кода программной части:
 
 - Создает обработчик событий <xref:System.Windows.FrameworkElement.Loaded> для элемента [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)], который содержит элемент управления. Обработчик событий наполняет таблицу данными, извлекает <xref:System.Windows.Data.CollectionViewSource> из ресурсов контейнера, а затем делает первый элемент данных текущим элементом. Если <xref:System.Windows.FrameworkElement.Loaded> обработчик событий уже существует, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] добавляет этот код в существующий обработчик событий.
 
@@ -100,11 +100,11 @@ ms.locfileid: "85540170"
 > [!NOTE]
 > Пользовательские классы должны быть открытыми и, по умолчанию, иметь конструктор без параметров. Они не могут быть вложенными классами, в синтаксисе которых есть точка. Дополнительные сведения см. в разделе [XAML и пользовательские классы для WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]создает [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , что выполняет следующие действия:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] создает [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , что выполняет следующие действия:
 
 - Добавление нового <xref:System.Windows.Data.CollectionViewSource> в ресурсы контейнера, на который пользователь перетащил элемент. <xref:System.Windows.Data.CollectionViewSource> — это объект, который можно использовать для навигации и отображения данных в объекте.
 
 - Создание привязки данных для элемента управления. Если перетащить элемент на существующий элемент управления в конструкторе, язык XAML привязывает элемент управления к этому элементу. При перетаскивании элемента в контейнер XAML создает элемент управления, который был выбран для перетаскиваемого элемента, и привязывает элемент управления к элементу. Элемент управления создается внутри нового <xref:System.Windows.Controls.Grid>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

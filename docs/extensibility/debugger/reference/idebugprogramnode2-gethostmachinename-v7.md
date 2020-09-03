@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 Документы Майкрософт
+title: 'IDebugProgramNode2:: GetHostMachineName_V7 | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722083"
 ---
 # <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> Устаревшие. НЕ ИСПОЛЬЗУЙТЕ.
+> Не рекомендуется. НЕ ИСПОЛЬЗУЙТЕ.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,17 +44,17 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>Параметры
 
 `pbstrHostMachineName`\
-(ваут) Возвращает имя машины, в которой работает программа.
+заполняет Возвращает имя компьютера, на котором выполняется программа.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Реализация должна всегда `E_NOTIMPL`возвращаться.
+Реализация всегда должна возвращать `E_NOTIMPL` .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> По состоянию на Visual Studio 2005, этот `E_NOTIMPL`метод больше не используется и всегда должен вернуться .
+> Начиная с Visual Studio 2005 этот метод больше не используется и всегда должен возвращать `E_NOTIMPL` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658970"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Сочетания клавиш конструктора рабочих процессов
@@ -41,7 +41,7 @@ ms.locfileid: "72658970"
 |CTRL+E, S|Добавляет элемент с фокусом ввода к текущему выделению.|
 |CTRL+E, V|Отображает или скрывает конструктор переменных.|
 |CTRL+E, X|Развертывает все действия в рабочем процессе.|
-|CTRL+ALT+F6|Перемещает фокус ввода от текущей области пользовательского интерфейса к следующей области в последовательности. Порядок выглядит следующим образом:<br /><br /> 1. иерархическая панель навигации.<br />2. область конструктора<br />3. Arguments/Variables/Imports Designer if Open<br />4. оболочка|
+|CTRL+ALT+F6|Перемещает фокус ввода от текущей области пользовательского интерфейса к следующей области в последовательности. Порядок выглядит следующим образом.<br /><br /> 1. иерархическая панель навигации.<br />2. область конструктора<br />3. Arguments/Variables/Imports Designer if Open<br />4. оболочка|
 
 ### <a name="flowchart"></a>Блок-схема
  Следующий список содержит жесты, используемые для создания блок-схемы с помощью клавиатуры. Как и в остальных областях [!INCLUDE[wfd2](../includes/wfd2-md.md)], действия добавляются в область конструктора с помощью глобальных сочетаний клавиш элементов, обеспечиваемых [!INCLUDE[vs2010](../includes/vs2010-md.md)].

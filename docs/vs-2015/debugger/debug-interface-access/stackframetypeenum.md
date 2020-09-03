@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum | Документация Майкрософт
+title: Стаккфраметипинум | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 655911bac1efbafe1838e24e2056282f9036479b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179188"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -40,29 +40,29 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Элементы  
  `FrameTypeFPO`  
- Указатель на фреймы опустить; FPO сведения недоступны.  
+ Пропущен указатель фрейма; Сведения о FPO доступны.  
   
  `FrameTypeTrap`  
- Кадр перехвата ядра.  
+ Кадр ловушки ядра.  
   
  `FrameTypeTSS`  
- Кадр перехвата ядра.  
+ Кадр ловушки ядра.  
   
  `FrameTypeStandard`  
- Стандартный кадр стека EBP.  
+ Стандартный фрейм стека EBP.  
   
  `FrameTypeFrameData`  
- Указатель на фреймы опустить; Кадр данных сведения о доступных.  
+ Пропущен указатель фрейма; Сведения о данных кадра доступны.  
   
  `FrameTypeUnknown`  
- Кадр, который не поддерживает любой отладочной информации.  
+ Кадр, у которого нет отладочной информации.  
   
-## <a name="remarks"></a>Примечания  
- Значения в этом перечислении возвращаются путем вызова [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Значения в этом перечислении возвращаются путем вызова метода [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
+ Заголовок: квконст. h  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 42bb554f8e57c036d41a89fdc2657a25ecc74e20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540287"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232. Отметьте точки входа Windows Forms меткой STAThread
@@ -36,10 +36,10 @@ ms.locfileid: "85540287"
  Сборка ссылается на <xref:System.Windows.Forms> пространство имен, а точка входа не помечена <xref:System.STAThreadAttribute?displayProperty=fullName> атрибутом.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.STAThreadAttribute>Указывает, что потоковая модель COM для приложения является однопотоковым апартаментом. Данный атрибут должен находиться в точке входа любого приложения, использующего Windows Forms; если он отсутствует, компоненты Windows могут работать неправильно. Если атрибут отсутствует, приложение использует модель многопоточного подразделения, которая не поддерживается для Windows Forms.
+ <xref:System.STAThreadAttribute> Указывает, что потоковая модель COM для приложения является однопотоковым апартаментом. Данный атрибут должен находиться в точке входа любого приложения, использующего Windows Forms; если он отсутствует, компоненты Windows могут работать неправильно. Если атрибут отсутствует, приложение использует модель многопоточного подразделения, которая не поддерживается для Windows Forms.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]в проектах, использующих платформу приложений, метод **Main** не должен помечаться STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Компилятор выполняет его автоматически.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] в проектах, использующих платформу приложений, метод **Main** не должен помечаться STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Компилятор выполняет его автоматически.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, добавьте <xref:System.STAThreadAttribute> атрибут в точку входа. Если <xref:System.MTAThreadAttribute?displayProperty=fullName> атрибут имеется, удалите его.

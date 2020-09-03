@@ -92,7 +92,7 @@ ms.locfileid: "80705497"
 
     Этот код получает службу Свсактивитилог и приводит ее к интерфейсу Ивсактивитилог, который можно использовать для записи в журнал действий. Пример см. в разделе [как использовать журнал действий](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Список доступных служб](../../extensibility/internals/list-of-available-services.md)
 - [Использование и предоставление служб](../../extensibility/using-and-providing-services.md)

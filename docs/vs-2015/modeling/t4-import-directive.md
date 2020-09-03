@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4a931ca05f8b12175deded8b316d0177d8f8c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661818"
 ---
 # <a name="t4-import-directive"></a>Директива Import T4
@@ -52,5 +52,5 @@ The file contains: <#=  fileContent #>
 
 - Пространство имен доменного языка
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Директива Assembly T4](../modeling/t4-assembly-directive.md)

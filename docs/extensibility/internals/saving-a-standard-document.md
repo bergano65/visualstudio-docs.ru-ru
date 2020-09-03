@@ -56,6 +56,6 @@ ms.locfileid: "80705551"
 
 2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` метод (, `punkWindowFrame` ), чтобы переместить документ в новую иерархию. Иерархия, выполняющая команду "Сохранить как", вызывает этот метод.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)
