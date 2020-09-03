@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382657"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Отладка приложений ClickOnce, использующих System.Deployment.Application
@@ -76,5 +76,5 @@ ms.locfileid: "85382657"
 
    Используйте <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> свойство для вызова <xref:System.Deployment.Application> API только при развертывании приложения. API не следует вызывать во время отладки в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:System.Deployment.Application>

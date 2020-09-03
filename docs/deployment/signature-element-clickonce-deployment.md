@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835424"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Элемент Signature (развертывание ClickOnce)
@@ -33,7 +33,7 @@ ms.locfileid: "85835424"
 </Signature>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Подпись манифеста развертывания с помощью подписи конверта является необязательной, но рекомендуется. Дополнительные сведения о подписывании XML-файлов см. в разделе консорциум W3C рекомендации «синтаксис XML-подписи и обработка», описанная в статье [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
 
  Если вы хотите подписать манифест, необходимо предоставить хэши для всех файлов. Манифест с файлами, которые не хэшируются, не может быть подписан, так как пользователи не могут проверить содержимое нехэшированных файлов.
@@ -70,5 +70,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

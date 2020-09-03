@@ -84,7 +84,7 @@ ms.locfileid: "75566180"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Существуют также другие методы доступа к ссылкам. Пример:
+ Существуют также другие методы доступа к ссылкам. Например:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "75566180"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> Доступ к сведениям о классе
- Вы можете получить сведения о классах, связях и других аспектах определения DSL. Пример:
+ Вы можете получить сведения о классах, связях и других аспектах определения DSL. Например:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  Существует три способа, с помощью которых можно создать экземпляр связи. Каждый из этих трех методов имеет одинаковый результат:
 
-- Задайте свойство исходного исполнителя роли. Пример:
+- Задайте свойство исходного исполнителя роли. Например:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Задайте свойство целевого исполнителя роли. Пример:
+- Задайте свойство целевого исполнителя роли. Например:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        Кратность этой роли — `0..*` , поэтому мы добавляем в коллекцию.
 
-- Явным образом создайте экземпляр связи. Пример:
+- Явным образом создайте экземпляр связи. Например:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -482,7 +482,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Хранение секций
  При загрузке модели соответствующая схема загружается в то же время. Как правило, модель загружается в Store. Дефаултпартитион, а содержимое схемы загружается в другую секцию. Как правило, содержимое каждой секции загружается и сохраняется в отдельный файл.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)

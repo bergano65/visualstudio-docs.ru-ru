@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904821"
 ---
 # <a name="walkthrough-display-signature-help"></a>Пошаговое руководство. Отображение справки по сигнатурам
@@ -236,7 +236,7 @@ ms.locfileid: "85904821"
 
 #### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Создание и тестирование решения Сигнатурехелптест
 
-1. Постройте решение.
+1. Создайте решение.
 
 2. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
@@ -244,5 +244,5 @@ ms.locfileid: "85904821"
 
 4. После ввода открывающей скобки вы увидите подсказку, которая отображает список двух сигнатур для `add()` метода.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

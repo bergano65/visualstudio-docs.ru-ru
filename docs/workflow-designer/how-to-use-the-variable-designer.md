@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817415"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Как использовать конструктор переменных
@@ -36,7 +36,7 @@ ms.locfileid: "85817415"
     > [!NOTE]
     > Чтобы удалить переменную, щелкните ее, а затем нажмите клавишу **Delete** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)
 - [Переменные и аргументы](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

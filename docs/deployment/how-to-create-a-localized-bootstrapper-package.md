@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382566"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета начального загрузчика
@@ -45,9 +45,9 @@ ms.locfileid: "85382566"
 
      В следующей таблице показано, какие имена папок можно использовать для соотнесения с языковым стандартом.
 
-    |Языковой стандарт|Имя папки|
+    |Локаль|Имя папки|
     |------------|-----------------|
-    |Китайский (упрощенное письмо)|zh-HanS|
+    |Китайский (упрощенное письмо)|zh-Hans|
     |Китайский (традиционное письмо)|zh-Hant|
     |Чешский|cs|
     |Немецкий|de|
@@ -90,7 +90,7 @@ ms.locfileid: "85382566"
 
 6. Сохраните файл *package.xml* .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Создание пакетов начального загрузчика](../deployment/creating-bootstrapper-packages.md)
 - [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
 - [Как создать манифест пакета](../deployment/how-to-create-a-package-manifest.md)

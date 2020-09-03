@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817454"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Как использовать конструктор аргументов
@@ -33,7 +33,7 @@ ms.locfileid: "85817454"
     > [!NOTE]
     > Чтобы удалить аргумент, выберите его, щелкнув его, и нажмите клавишу **Delete** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование конструктора рабочих процессов](developing-applications-with-the-workflow-designer.md)
 - [Переменные и аргументы](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

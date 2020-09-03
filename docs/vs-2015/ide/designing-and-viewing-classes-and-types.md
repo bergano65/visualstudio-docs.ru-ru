@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cfedaa51ef62b5a9519a7aef23b942d6c1e5f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665780"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Разработка и просмотр классов и типов
@@ -37,7 +37,7 @@ ms.locfileid: "72665780"
 
 - **Рефакторинг**: переопределяйте методы, переименовывайте идентификаторы, выполняйте рефакторинг параметров, реализуйте интерфейсы и абстрактные классы.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Работа с классами и другими типами (конструктор классов)](../ide/working-with-classes-and-other-types-class-designer.md)
 
  [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)
@@ -52,7 +52,7 @@ ms.locfileid: "72665780"
 
  [Дополнительные сведения об ошибках конструктора классов](../ide/additional-information-about-class-designer-errors.md)
 
-## <a name="related-sections"></a>Связанные разделы
- [Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)
+## <a name="related-sections"></a>См. также
+ [Написание кода](../ide/writing-code-in-the-code-and-text-editor.md)
 
  [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)

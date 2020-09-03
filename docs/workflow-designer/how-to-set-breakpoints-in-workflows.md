@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9530e7ec018a89c3648f61660a5651eddaace805
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817493"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Как задать точки останова в рабочих процессах
@@ -38,7 +38,7 @@ ms.locfileid: "85817493"
 
    Кроме того, можно нажать клавишу **F9** , чтобы выбрать действие, или щелкнуть правой кнопкой мыши действие и выбрать пункт **точка останова**  >  **Вставить точку останова** в контекстном меню.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Отладка рабочих процессов с помощью конструктора рабочих процессов](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 - [Как отлаживать XAML в конструкторе рабочих процессов](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

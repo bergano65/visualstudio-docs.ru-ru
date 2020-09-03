@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync Документы Майкрософт
+title: 'Идебугпарседекспрессион:: Евалуатесинк | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726007"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Этот метод оценивает разобранное выражение и дополнительно отбрасывает результат в другой тип данных.
+Этот метод вычисляет проанализированное выражение и при необходимости приводит результат к другому типу данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,33 +53,33 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Параметры
 `dwEvalFlags`\
-(в) Сочетание констант [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) которые контролируют, как выражение должно быть оценено.
+окне Сочетание констант [евалфлагс](../../../extensibility/debugger/reference/evalflags.md) , определяющих способ вычисления выражения.
 
 `dwTimeout`\
-(в) Определяет максимальное время, в миллисекундах, чтобы ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
+окне Указывает максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.
 
 `pSymbolProvider`\
-(в) Поставщик символов, выраженный как интерфейс [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+окне Поставщик символов, выраженный в виде интерфейса [идебугсимболпровидер](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .
 
 `pAddress`\
-(в) Текущее местоположение выполнения в методе, выраженное как интерфейс [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+окне Текущее место выполнения в методе, выраженное как интерфейс [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pBinder`\
-(в) Связующее звено, выраженное как интерфейс [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
+окне Связыватель, выраженный в виде интерфейса [идебугбиндер](../../../extensibility/debugger/reference/idebugbinder.md) .
 
 `bstrResultType`\
-(в) Тип результата должен быть отлит. Этот аргумент может быть нулевая стоимость.
+окне Тип результата, к которому должен быть приведен результат. Этот аргумент может иметь значение null.
 
 `ppResult`\
-(ваут) Возвращает интерфейс [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) представляющий результаты оценки.
+заполняет Возвращает интерфейс [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий результаты вычисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Контекст оценки выражения `pAddress`дается, что позволяет определить содержащий метод, а затем использовать правила языкового скопирования для определения значения символов в выражении.
+## <a name="remarks"></a>Remarks
+ Контекст вычисления выражения предоставляется методом `pAddress` , который позволяет определить содержащий метод, а затем использовать правила определения области языка, чтобы определить значение символов в выражении.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

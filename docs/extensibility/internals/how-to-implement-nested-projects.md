@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905343"
 ---
 # <a name="how-to-implement-nested-projects"></a>Руководство. Реализация вложенных проектов
@@ -37,7 +37,7 @@ ms.locfileid: "85905343"
 
 4. Родительский проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> метод или <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> метод для каждого из его дочерних проектов.
 
-     Передайте <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> метод, `AddVirtualProject` чтобы указать, что виртуальный (вложенный) проект должен быть добавлен в окно проекта, исключен из сборки, добавлен в систему управления исходным кодом и т. д. `VSADDVPFLAGS`позволяет управлять видимостью вложенного проекта и указывать, какие функции связаны с ним.
+     Передайте <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> метод, `AddVirtualProject` чтобы указать, что виртуальный (вложенный) проект должен быть добавлен в окно проекта, исключен из сборки, добавлен в систему управления исходным кодом и т. д. `VSADDVPFLAGS` позволяет управлять видимостью вложенного проекта и указывать, какие функции связаны с ним.
 
      При перезагрузке ранее существующего дочернего проекта с идентификатором GUID проекта, хранящимся в файле проекта родительского проекта, родительский проект вызывает `AddVirtualProjectEx` . Единственное различие между `AddVirtualProject` и `AddVirtualProjectEX` состоит в том, что имеет параметр, позволяющий `AddVirtualProjectEX` родительскому проекту указывать для каждого экземпляра `guidProjectID` дочернего проекта, который должен быть включен <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> правильно функционировать.
 
@@ -45,7 +45,7 @@ ms.locfileid: "85905343"
 
 5. Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> метод для каждого дочернего проекта родительского проекта.
 
-     Родительский проект должен быть реализован, `IVsParentProject` Если нужно вложить проекты. Но родительский проект никогда не `QueryInterface` вызывает `IVsParentProject` , даже если у него есть родительские проекты под ним. Решение обрабатывает вызов функции `IVsParentProject` и, если он реализован, вызывается `OpenChildren` для создания вложенных проектов. `AddVirtualProjectEX`метод всегда вызывается из `OpenChildren` . Он никогда не должен вызываться родительским проектом для сохранения порядка событий создания иерархии.
+     Родительский проект должен быть реализован, `IVsParentProject` Если нужно вложить проекты. Но родительский проект никогда не `QueryInterface` вызывает `IVsParentProject` , даже если у него есть родительские проекты под ним. Решение обрабатывает вызов функции `IVsParentProject` и, если он реализован, вызывается `OpenChildren` для создания вложенных проектов. `AddVirtualProjectEX` метод всегда вызывается из `OpenChildren` . Он никогда не должен вызываться родительским проектом для сохранения порядка событий создания иерархии.
 
 6. Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> метод для дочернего проекта.
 
@@ -56,7 +56,7 @@ ms.locfileid: "85905343"
      Если он еще не существует, родительский проект создает идентификатор GUID для каждого вложенного проекта путем вызова `CoCreateGuid` .
 
     > [!NOTE]
-    > `CoCreateGuid`— Это COM-API, вызываемый при создании идентификатора GUID. Дополнительные сведения см `CoCreateGuid` . в разделе и идентификаторы GUID в библиотеке MSDN.
+    > `CoCreateGuid` — Это COM-API, вызываемый при создании идентификатора GUID. Дополнительные сведения см `CoCreateGuid` . в разделе и идентификаторы GUID в библиотеке MSDN.
 
      Родительский проект сохраняет этот GUID в файле проекта для извлечения при следующем открытии в интегрированной среде разработки. Дополнительные сведения о вызове метода для `AddVirtualProjectEX` получения `guidProjectID` для дочернего проекта см. в разделе Шаг 4.
 
@@ -84,7 +84,7 @@ ms.locfileid: "85905343"
 - [Реализация обработки команд для вложенных проектов](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Фильтрация диалогового окна AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Добавление элементов в диалоговое окно "Добавление нового элемента"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints Документы Майкрософт
+title: 'IDebugPendingBreakpoint2:: Енумеррорбреакпоинтс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725858"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
-Получает список всех моментов ошибки, которые возникли в результате этого ожидающего разрыва.
+Возвращает список всех точек останова, которые привели к возникновению этой ожидающей точки останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,16 +44,16 @@ int EnumErrorBreakpoints( 
 
 ## <a name="parameters"></a>Параметры
 `bpErrorType`\
-(в) Комбинация значений из [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) перечисления, которая выбирает тип ошибок для перечисления.
+окне Сочетание значений из перечисления [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) , которое выбирает тип ошибок для перечисления.
 
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugErrorBreakpoints2,](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) содержащий список объектов [IDebugErrorBreakpoint2.](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+заполняет Возвращает объект [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , содержащий список объектов [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает значение `E_BP_DELETED` , если точка останова была удалена.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как `CPendingBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+ В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, предоставляющего интерфейс [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
@@ -127,7 +127,7 @@ HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

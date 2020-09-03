@@ -117,7 +117,7 @@ sections:
             html: <p>Доступ к учетным записям хранения Azure в Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: Память
+            title: Хранилище
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
             html: <p>Доступ к виртуальным машинам из Visual Studio</p>
             image:

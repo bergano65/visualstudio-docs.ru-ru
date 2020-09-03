@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue Документы Майкрософт
+title: 'Идебугобжект:: SetValue | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726367"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Устанавливает значение объекта из последовательной серии байтов.
+Задает значение объекта из последовательности байтов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,17 +43,17 @@ int SetValue(
 
 ## <a name="parameters"></a>Параметры
 `pValue`\
-(в) Массив байтов, представляющих новое значение.
+окне Массив байтов, представляющий новое значение.
 
 `nSize`\
-(в) Размер значения в байтах.
+окне Размер значения в байтах.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Значения в массиве копируются в объект [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) заменяя любое существующее значение. Размер нового значения может быть больше или меньше существующего значения. Это `IDebugObject` не может быть нулевой ссылкой.
+## <a name="remarks"></a>Remarks
+ Значения в массиве копируются в этот объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , заменяя любое существующее значение. Размер нового значения может быть больше или меньше существующего значения. Это `IDebugObject` не может быть пустой ссылкой.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

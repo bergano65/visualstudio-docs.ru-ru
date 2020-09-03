@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905032"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Пошаговое руководство. Создание элемента оформления, команд и параметров представления (направляющие столбцов)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`чтобы получить представление кода, необходимо немного подробно изучить <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> его.  При трассировке с помощью `GetActiveTextView` , `GetActiveView` и `GetTextViewFromVsTextView` можно увидеть, как это сделать. Следующий код является абстрактным и связанным с ним, начиная с текущего выбора, получая рамку выбора, получая DocView кадра как <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , а затем получая <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> из IVsTextView, получая узел представления и, наконец, IWpfTextView:
+`GetCurrentEditorColumn` чтобы получить представление кода, необходимо немного подробно изучить <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> его.  При трассировке с помощью `GetActiveTextView` , `GetActiveView` и `GetTextViewFromVsTextView` можно увидеть, как это сделать. Следующий код является абстрактным и связанным с ним, начиная с текущего выбора, получая рамку выбора, получая DocView кадра как <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , а затем получая <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> из IVsTextView, получая узел представления и, наконец, IWpfTextView:
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1339,7 +1339,7 @@ private int GetApplicableColumn(EventArgs e)
 
 С помощью этого[расширения](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)коллекции Visual Studio можно опробовать версию руководства по столбцам.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Внутри редактора](../extensibility/inside-the-editor.md)
 - [Расширение редактора и языковых служб](../extensibility/extending-the-editor-and-language-services.md)
 - [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

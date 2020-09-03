@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9be7c8da251a9698e0fceba64e3941ba8fbdf803
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817519"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Как отлаживать XAML в конструкторе рабочих процессов
@@ -34,7 +34,7 @@ ms.locfileid: "85817519"
 
 5. Когда выполнение кода достигнет одной из заданных точек останова, то элемент XAML, связанный с этой точкой останова, будет выделен. Чтобы перейти к следующей точке останова, используйте клавишу **F10** или **F11** .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Задание точек останова в рабочих процессах](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Отладка рабочих процессов](debugging-workflows-with-the-workflow-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize (ru) Документы Майкрософт
+title: 'IDebugPendingBreakpoint2:: виртуализировать | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7ad5aac997cf694a7cf8fa887ae63fbef54ca07f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725659"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-Переключает виртуализированное состояние этой ожидающего разрыва. При виртуализировать ожидаемную точку разрыва движок отладки будет пытаться связать его каждый раз, когда новый код загружается в программу.
+Переключает виртуализированное состояние этой ожидающей точки останова. Если ожидающая точка останова виртуализирована, модуль отладки попытается привязать его каждый раз, когда в программу будет загружен новый код.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,16 +42,16 @@ int Virtualize(
 
 ## <a name="parameters"></a>Параметры
 `fVirtualize`\
-(в) Установите на`TRUE`nonzero () для виртуализации`FALSE`ожидающего разрыва, или до нуля () для выключения виртуализации.
+окне Задайте для параметра значение ненулевой ( `TRUE` ), чтобы выполнить виртуализацию ожидающей точки останова, или нуль ( `FALSE` ), чтобы отключить виртуализацию.
 
 ## <a name="return-value"></a>Возвращаемое значение
-Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает значение `E_BP_DELETED` , если точка останова была удалена.
 
-## <a name="remarks"></a>Примечания
-Виртуализированная точка разрыва связана каждый раз, когда код загружается.
+## <a name="remarks"></a>Remarks
+Виртуальная точка останова привязывается каждый раз при загрузке кода.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CPendingBreakpoint` реализовать этот метод для простого объекта, который предоставляет интерфейс [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, предоставляющего интерфейс [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

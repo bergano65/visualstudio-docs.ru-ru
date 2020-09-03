@@ -1,5 +1,5 @@
 ---
-title: IDebugПредмет2::GetAlias Документы Майкрософт
+title: IDebugObject2::/Alias | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 53c72182b497e2b24d41a784c405d169c3db195f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726284"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
-Получает псевдоним, связанный с этим объектом, если таковые имеется.
+Возвращает псевдоним, связанный с этим объектом, если он есть.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetAlias(
 
 ## <a name="parameters"></a>Параметры
 `ppAlias`\
-(ваут) Возвращает объект [IDebugAlias,](../../../extensibility/debugger/reference/idebugalias.md) представляющий псевдоним для этого объекта; в противном случае возвращает нулевую стоимость.
+заполняет Возвращает объект [идебугалиас](../../../extensibility/debugger/reference/idebugalias.md) , представляющий псевдоним для данного объекта. в противном случае возвращает значение null.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Псевдоним объекта создается с вызовом к методу [CreateAlias.](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
+## <a name="remarks"></a>Remarks
+ Псевдоним для объекта создается с помощью вызова метода [креатеалиас](../../../extensibility/debugger/reference/idebugobject2-createalias.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
