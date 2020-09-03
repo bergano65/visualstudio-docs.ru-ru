@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328477"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Устранение неполадок горячей перезагрузки XAML
@@ -51,7 +51,7 @@ ms.locfileid: "85328477"
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Проверьте правильность свойств MSBuild.
 
-По умолчанию сведения об источнике включаются в конфигурацию отладки. Управление осуществляется с помощью свойств MSBuild в файлах проекта (например, в файле *. csproj). Для WPF свойство имеет значение `XamlDebuggingInformation` , которое должно быть равно `True` . Для UWP свойство имеет значение `DisableXbfLineInfo` , которое должно быть равно `False` . Пример.
+По умолчанию сведения об источнике включаются в конфигурацию отладки. Управление осуществляется с помощью свойств MSBuild в файлах проекта (например, в файле *. csproj). Для WPF свойство имеет значение `XamlDebuggingInformation` , которое должно быть равно `True` . Для UWP свойство имеет значение `DisableXbfLineInfo` , которое должно быть равно `False` . Пример:
 
 WPF:
 
@@ -69,6 +69,6 @@ UWP
 
 Если в файле XAML отображаются ошибки в **Список ошибок**, то Горячая перезагрузка XAML может не работать.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Запись и отладка выполняемого кода XAML с помощью горячей перезагрузки XAML](xaml-hot-reload.md)
