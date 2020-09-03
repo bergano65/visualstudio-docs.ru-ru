@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Регистрация расширений платформы .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Параллельное построение нескольких проектов
+        - name: Параллельная сборка нескольких проектов
           items:
-            - name: Параллельное построение нескольких проектов
+            - name: Параллельная сборка нескольких проектов
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Использование нескольких процессоров при построении проектов
               href: using-multiple-processors-to-build-projects.md
@@ -162,7 +162,7 @@
       items:
         - name: Ведение журнала в MSBuild
           href: logging-in-msbuild.md
-        - name: Получение журналов построения
+        - name: Получение журналов сборки
           href: obtaining-build-logs-with-msbuild.md
         - name: Средства ведения журнала построения
           href: build-loggers.md
@@ -180,9 +180,9 @@
       items:
         - name: Справочные сведения о MSBuild
           href: msbuild-reference.md
-        - name: Справочные сведения о схеме файлов проектов
+        - name: Справочник по схеме файла проекта
           items:
-            - name: Справочные сведения о схеме файлов проектов
+            - name: Справочник по схеме файла проекта
               href: msbuild-project-file-schema-reference.md
             - name: Элемент Choose (MSBuild)
               href: choose-element-msbuild.md

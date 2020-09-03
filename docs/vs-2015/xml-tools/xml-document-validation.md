@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee5d3cff260346a5bcc1806b09b955642c608f14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669494"
 ---
 # <a name="xml-document-validation"></a>Проверка XML-документа
@@ -23,7 +23,7 @@ ms.locfileid: "72669494"
 
  Поиск схем, используемых для проверки правильности, осуществляется путем сопоставления пространства имен `targetNamespace` скомпилированной схемы с декларацией xmlns элемента. Скомпилированные схемы загружаются из одного из следующих мест, перечисленных в порядке приоритета.
 
-- Из имени файла, указанного в поле **схемы** документа окно свойств.
+- Из файла с именем, указанным в поле **Схемы** окна Свойства документа.
 
 - Из встроенной схемы или DTD.
 
@@ -45,5 +45,5 @@ ms.locfileid: "72669494"
 ## <a name="xml-schema-xsd-files"></a>XSD-файлы
  При редактировании файла схемы XML для проверки правильности используется файл xsdschema.xsd, расположенный в кэше схем. Ошибки проверки подчеркнуты синей волнистой линией. Все ошибки компиляции также подчеркиваются красными волнистыми линиями.
 
-## <a name="see-also"></a>См. также раздел
- [XML-редактор](../xml-tools/xml-editor.md)
+## <a name="see-also"></a>См. также:
+ [Редактор XML](../xml-tools/xml-editor.md)

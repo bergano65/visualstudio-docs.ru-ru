@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666866"
 ---
 # <a name="log-command-window-output-command"></a>Команда Log Command Window Output
@@ -38,14 +38,14 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > Чтобы изменить расположение для сохранения файла журнала, введите полный путь. Если этот путь содержит пробелы, заключите его в кавычки.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /On является необязательным. Запускает ведение журнала для окна **Команда** в указанном файле, добавляя в него новые данные.
 
  /off (необязательно). Останавливает ведение журнала для окна **Команда**.
 
  /overwrite необязательный. Если указанный в аргументе `filename` файл совпадает с существующим файлом, он перезаписывается.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Если файл не указан, создается файл по умолчанию cmdline.log. По умолчанию эта команда имеет псевдоним Log.
 
 ## <a name="examples"></a>Примеры
@@ -67,5 +67,5 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Команды [Visual Studio командное](../../ide/reference/visual-studio-commands.md) [окно](../../ide/reference/command-window.md) [Найти/Команда](../../ide/find-command-box.md) командные [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667130"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий построения в Visual Studio
@@ -25,14 +25,14 @@ ms.locfileid: "72667130"
 
  Конкретные сведения об используемом языке программирования см. в следующих разделах:
 
-- Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[практические указания: Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
 - Visual C# и F# — [Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ — [Указание событий сборки ](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Синтаксис
- События сборки следуют тому же синтаксису, что и команды DOS, но для упрощения процесса создания событий сборки можно использовать макросы. Список доступных макросов см. в разделе [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+ События сборки следуют тому же синтаксису, что и команды DOS, но для упрощения процесса создания событий сборки можно использовать макросы. Список доступных макросов см. в разделе [диалоговое окно "Командная строка события перед сборкой события/после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Для улучшения результатов воспользуйтесь советами по форматированию:
 
@@ -55,5 +55,5 @@ ms.locfileid: "72667130"
     > [!NOTE]
     > Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) ["диалогового окна командной строки события и после сборки события перед сборкой"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [специальные знаки MSBuild](../msbuild/msbuild-special-characters.md) [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768579"
 ---
 # <a name="extend-menus-and-commands"></a>Расширение меню и команд
@@ -28,7 +28,7 @@ ms.locfileid: "85768579"
 
  В следующих разделах описывается добавление различных типов команд, меню и панелей инструментов.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Добавление меню в строку меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Объясняет, как добавить меню в верхнюю строку меню Visual Studio.
 
 - [Привязка сочетаний клавиш к](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) пунктам меню Объясняет, как добавить сочетание клавиш (например, CTRL + 3) к пункту меню.

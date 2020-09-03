@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668841"
 ---
 # <a name="options-page-debugging-node-properties"></a>Страница "Параметры", свойства узла отладки
@@ -21,10 +21,10 @@ ms.locfileid: "72668841"
 
 В следующих таблицах описываются некоторые из страниц (или коллекций свойств), связанных с категорией **отладки** — `DTE.Properties("Debugging", <Property Page>)` — диалогового окна **Параметры**.
 
-## <a name="general"></a>Общее
+## <a name="general"></a>Общие сведения
  `DTE.Properties("Debugging", "General")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Определяет, запрашивает ли отладчик разрешение перед удалением всех точек останова в проекте.|
 |BreakAllProcesses|Get/Set (Boolean)|Определяет, прерывает ли отладчик все процессы при прекращении одного процесса.|
@@ -54,7 +54,7 @@ ms.locfileid: "72668841"
 ## <a name="edit-and-continue"></a>Изменить и продолжить
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Определяет, включена ли функция "Изменить и продолжить". Этот параметр применяется для всех языков, поддерживающих функцию "Изменить и продолжить".|
 |InvokedByCommands|Get/Set (Boolean)|Определяет, применяет ли функция "Изменить и продолжить" изменения кода автоматически, когда пользователь выбирает команду отладки, такую как **Шаг** или **Продолжить**. Этот параметр применяется только к машинному коду.|
@@ -66,19 +66,19 @@ ms.locfileid: "72668841"
 ## <a name="just-in-time"></a>JIT
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для управляемого кода.|
 |JitNative|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для машинного кода.|
 |JitScript|Get/Set (Boolean)|Определяет, включена ли JIT-отладка для кода скриптов.|
 
-## <a name="native"></a>машинный код;
+## <a name="native"></a>Собственный
  `DTE.Properties("Debugging", "Native")`
 
-|Имя элемента свойства|Значение|ОПИСАНИЕ|
+|Имя элемента свойства|Значение|Описание|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|Определяет, загружает ли отладчик таблицы экспорта библиотеки DLL.|
 |EnableRPC|Get/Set (Boolean)|Определяет, может ли отладчик войти в удаленные вызовы процедур COM.|
 
-## <a name="see-also"></a>См. также
- [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) параметры [Определение имен элементов свойств на](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) странице "параметры страниц параметров" [, "шрифты и цвета](../../ide/reference/options-page-fonts-and-colors-node-properties.md) " страница "Параметры". свойства узла [текстового редактора](../../ide/reference/options-page-text-editor-node-properties.md) [Общие, отладка, диалоговое окно "Параметры" ](../../debugger/general-debugging-options-dialog-box.md)" [Изменить и продолжить", "Отладка", "JIT" диалогового окна "Параметры](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) " [, "Отладка", "Параметры"](../../debugger/just-in-time-debugging-options-dialog-box.md)
+## <a name="see-also"></a>См. также:
+ [Управление параметрами параметры](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [Определение имен элементов свойств на](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) странице параметров страницы параметров страницы параметры [, шрифты и цвета](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Страница параметров свойства узла текстовый редактор](../../ide/reference/options-page-text-editor-node-properties.md) [Общие, отладка, диалоговое окно параметров](../../debugger/general-debugging-options-dialog-box.md) [изменить и продолжить, отладка, диалоговое окно Параметры](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) [JIT, отладка, диалоговое окно "Параметры](../../debugger/just-in-time-debugging-options-dialog-box.md) ".

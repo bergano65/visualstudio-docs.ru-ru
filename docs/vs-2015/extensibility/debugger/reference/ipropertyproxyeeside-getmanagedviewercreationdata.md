@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Документация Майкрософт
+title: 'Ипропертипроксеесиде:: Жетманажедвиеверкреатиондата | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5161894875ac683e5a6e49ae623bd6025531006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199530"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого средства просмотра.  
+Получает сведения о средстве просмотра для этого типа свойства, чтобы создать экземпляр этого средства просмотра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,30 +50,30 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>Параметры  
  `assemName`  
- [out] Возвращает имя сборки, содержащий этот объект.  
+ заполняет Возвращает имя сборки, содержащей этот объект.  
   
  `assemBytes`  
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если ни одного байта доступны).  
+ заполняет Возвращает объект [иидатастораже](../../../extensibility/debugger/reference/ieedatastorage.md) , содержащий байты сборки данного объекта (это значение null, если нет доступных байтов).  
   
  `assemPdb`  
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это та значение null, если нет хранилища символов).  
+ заполняет Возвращает `IEEDataStorage` объект, содержащий сведения о хранилище символов для этого объекта (значение null, если хранилище символов недоступно).  
   
  `className`  
- [out] Возвращает имя класса, содержащий этот объект.  
+ заполняет Возвращает имя класса, содержащего этот объект.  
   
  `alr`  
- [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки.  
+ заполняет Возвращает значение из перечисления [ассемблилокресолутион](../../../extensibility/debugger/reference/assemblylocresolution.md) , указывающее расположение сборки.  
   
  `replacementOk`  
- [out] Возвращает ненулевое значение (`TRUE`), если значение этого объекта можно изменить; ноль (`FALSE`), если объект доступен только для чтения.  
+ заполняет Возвращает ненулевой ( `TRUE` ), если значение этого объекта может быть изменено; ноль ( `FALSE` ), если объект доступен только для чтения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод используется с визуализаторами типов для создания экземпляра управляемого средство просмотра.  
+## <a name="remarks"></a>Remarks  
+ Этот метод используется визуализаторами типов для создания экземпляра управляемого средства просмотра.  
   
-## <a name="see-also"></a>См. также  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
+## <a name="see-also"></a>См. также:  
+ [ипропертипроксеесиде](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
+ [ассемблилокресолутион](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

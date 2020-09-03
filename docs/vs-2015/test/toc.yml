@@ -158,15 +158,15 @@
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: Модульное тестирование библиотеки DLL на C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Модульное тестирование кода C#'
+            - name: Модульное тестирование кода C#
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Выполнение модульных тестов в обозревателе тестов
               href: run-unit-tests-for-store-apps-in-visual-studio.md
-        - name: Анализ качества кода с помощью статического анализа кода
+        - name: Анализ качества кода помощью метода анализа статического кода
           items:
-            - name: Анализ качества кода с помощью статического анализа кода
+            - name: Анализ качества кода помощью метода анализа статического кода
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Анализ качества кода Visual Basic и C#'
+            - name: Анализ качества кода Visual Basic и C#
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: Анализ качества кода C++
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

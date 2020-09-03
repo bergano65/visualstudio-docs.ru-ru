@@ -1,5 +1,5 @@
 ---
-title: Не удается удалить свойство &lt;property имя &gt; | Документация Майкрософт
+title: '&lt;Имя свойства свойства &gt; не может быть удалено | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aca36919cb4c82d6ca76e0f3eecbbacd48cde768
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667240"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Не удается удалить свойство &lt;property имя &gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>&lt; &gt; Не удается удалить имя свойства свойства
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Не удается удалить свойство \<property name >, так как оно задано как свойство дискриминатора для наследования между \<class name > и \<class name >
+Свойство \<property name> не может быть удалено, так как оно задано как свойство дискриминатора для наследования между \<class name> и \<class name>
 
  Выбранное свойство назначено в качестве **свойства дискриминатора** для наследования между классами, указанными в сообщении об ошибке. Свойства не могут быть удалены, если они участвуют в конфигурации наследования между классами данных.
 
@@ -33,5 +33,5 @@ ms.locfileid: "72667240"
 
 3. Попытайтесь снова удалить свойство.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Практическое руководство. Настройка наследования с помощью наследования классов данных в конструкторе o/](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) r [(конструктор o/r Designer)](../data-tools/data-class-inheritance-o-r-designer.md) [Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)

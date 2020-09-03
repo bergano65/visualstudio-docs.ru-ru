@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf68c1a28f662bfa4e271d3c402ef1c8946b6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668680"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Как создавать проекты рабочих процессов (для прежних версий)
@@ -24,9 +24,9 @@ ms.locfileid: "72668680"
 
 ### <a name="to-create-a-workflow-project"></a>Создание проекта рабочего процесса
 
-1. Запустите [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].
+1. Запустите среду [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].
 
-2. В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
+2. В меню **Файл** последовательно выберите команды **Создать**и **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 
@@ -35,7 +35,7 @@ ms.locfileid: "72668680"
     > [!NOTE]
     > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] имеет значение **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.
 
-4. В области **типы проектов** выберите визуальные C# проекты или проекты Visual Basic, а затем выберите **Рабочий процесс**.
+4. На панели **типы проектов** выберите проекты Visual C# или проекты Visual Basic, а затем выберите **Рабочий процесс**.
 
 5. В области **шаблоны** выберите один из установленных шаблонов проектов.
 
@@ -59,5 +59,5 @@ ms.locfileid: "72668680"
 
 8. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)

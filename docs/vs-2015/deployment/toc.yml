@@ -26,7 +26,7 @@
               href: securing-clickonce-applications.md
             - name: ClickOnce и технология Authenticode
               href: clickonce-and-authenticode.md
-            - name: Общие сведения о развертывании доверенных приложений
+            - name: Trusted Application Deployment Overview
               href: trusted-application-deployment-overview.md
             - name: Управление доступом для кода для приложения ClickOnce
               href: code-access-security-for-clickonce-applications.md

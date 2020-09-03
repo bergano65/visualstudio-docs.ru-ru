@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199404"
 ---
 # <a name="servers-visual-studio-sdk"></a>Серверы (пакет SDK для Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-С точки зрения архитектуры отладчика **server**:  
+В плане архитектуры отладчика — **сервер**:  
   
-- Представляет контейнер портов и поставщикам портов и используется для передачи порты и поставщикам портов диспетчер отладки сеансов (SDM) и модули отладки.  
+- — Это контейнер портов и поставщиков портов, который используется для обмена портами и поставщиками портов с механизмами отладки и отладки сеанса.  
   
-- Можно перечислить его порты и поставщикам портов и идентификации по имени.  
+- Может идентифицировать себя по имени и перечислять его порты и поставщиков портов.  
   
-- Представленный [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) интерфейс, который реализуется только с Visual Studio (один экземпляр сервера для каждого экземпляра работы Visual Studio).  
+- Представляется интерфейсом [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , который реализован только в Visual Studio (один экземпляр сервера для каждого выполняемого экземпляра Visual Studio).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Порты](../../extensibility/debugger/ports.md)   
  [Поставщики портов](../../extensibility/debugger/port-suppliers.md)   
- [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)   
+ [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

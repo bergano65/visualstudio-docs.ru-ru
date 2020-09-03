@@ -138,9 +138,9 @@
           href: develop-tests-from-a-model.md
         - name: Проверка кода по схемам слоев
           href: validate-code-with-layer-diagrams.md
-    - name: Extend UML models and diagrams
+    - name: Расширение моделей и схем UML
       items:
-        - name: Extend UML models and diagrams
+        - name: Расширение моделей и схем UML
           href: extend-uml-models-and-diagrams.md
         - name: Определение и установка расширения моделирования
           href: define-and-install-a-modeling-extension.md

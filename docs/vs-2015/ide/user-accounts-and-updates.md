@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547619"
 ---
 # <a name="user-accounts-and-updates"></a>Учетные записи пользователей и обновления
@@ -35,6 +35,6 @@ ms.locfileid: "85547619"
 |[Как разблокировать Visual Studio](../ide/how-to-unlock-visual-studio.md)|Описывает способ разблокировки Visual Studio в разных сценариях.|
 |[Уведомления](../ide/visual-studio-notifications.md)|Описывает, как среда Visual Studio информирует вас о доступности обновлений для компонентов, например пакетов SDK, или непосредственно Visual Studio.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
