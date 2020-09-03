@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4346b0e7459ee3c78669ab9178555370ffac16d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545513"
 ---
 # <a name="summary-view"></a>Представление "Сводка"
@@ -57,7 +57,7 @@ ms.locfileid: "85545513"
 |**Фильтровать данные отчета**|Отображает область фильтра отчета профилирования, в которой можно указать условие для ограничения данных в представлении отчета. Дополнительные сведения см. в разделе [Фильтр представления отчетов о производительности](../profiling/performance-report-view-filter.md) .|  
 |**Переключиться в полноэкранный режим**|Переключение полноэкранного режима для представления отчета.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Сводное представление](../profiling/summary-view-sampling-data.md)   
  [Сводное представление](../profiling/summary-view-instrumentation-data.md)   
  [Сводное представление](../profiling/summary-view-dotnet-memory-data.md)

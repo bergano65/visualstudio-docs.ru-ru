@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e568b5e19d7d5f8034ba2bd3b96e3b6968c4b5fe
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328505"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Анимирование объектов в конструкторе XAML
@@ -46,6 +46,6 @@ ms.locfileid: "85328505"
 
 Поэкспериментируйте с другими изменениями в прямоугольнике, воспроизводимыми в разные моменты времени. Например, можно изменить цвет заливки или ориентацию в окне свойств.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

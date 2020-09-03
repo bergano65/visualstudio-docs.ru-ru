@@ -1,5 +1,5 @@
 ---
-title: Элемент IDSymbol Документы Майкрософт
+title: Элемент IDSymbol | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710377"
 ---
-# <a name="idsymbol-element"></a>Элемент IDSymbol
-Элемент `IDSymbol` содержит идентификатор пары GUID:ID, представляющий меню, группу или команду. GUID происходит от `GuidSymbol` родительского элемента. Элемент `IDSymbol` имеет `name` атрибут, который предоставляет дружественное имя для идентификатора, которое содержится в атрибуте. `value`
+# <a name="idsymbol-element"></a>IDSymbol, элемент
+`IDSymbol`Элемент содержит идентификатор пары GUID: ID, представляющей меню, группу или команду. Идентификатор GUID поступает из родительского `GuidSymbol` элемента. `IDSymbol`Элемент имеет `name` атрибут, который предоставляет понятное имя для идентификатора, содержащегося в `value` атрибуте.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,20 +34,20 @@ ms.locfileid: "80710377"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|name|Обязательный элемент. Название символа ID.|
-|value|Обязательный элемент. Значение числа идентификатора символа идентификатора.|
+|name|Обязательный. Имя символа идентификатора.|
+|value|Обязательный. Числовое значение идентификатора символа идентификатора.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент GuidSymbol](../extensibility/guidsymbol-element.md)|Содержит GUID пары GUID:ID, представляющую меню, группу или команду. Группирует элементы `IDSymbol`.|
+|[GuidSymbol, элемент](../extensibility/guidsymbol-element.md)|Содержит идентификатор GUID пары GUID: ID, представляющей меню, группу или команду. Группирует элементы `IDSymbol`.|
 
-## <a name="remarks"></a>Примечания
- Каждый `IDSymbol` элемент `GuidSymbol` в данном элементе должен иметь уникальный. `value` Тем `IDSymbol` не менее, элементы, которые имеют одинаковые значения могут существовать в пакете до тех пор, пока у них есть разные родители.
+## <a name="remarks"></a>Remarks
+ Каждый `IDSymbol` элемент в заданном `GuidSymbol` элементе должен иметь уникальное значение `value` . Однако `IDSymbol` в пакете могут существовать элементы, имеющие одинаковые значения, если они имеют разные родительские объекты.
 
-## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

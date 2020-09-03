@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Оператор контекста (C++)
                   href: context-operator-cpp.md
-                - name: 'Определители формата в C#'
+                - name: Определители формата в C#
                   href: format-specifiers-in-csharp.md
                 - name: Псевдопеременные
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: Параметры страниц свойств для веб-проектов
               href: property-pages-settings-for-web-projects.md
-            - name: 'Параметры проекта для конфигураций отладки C#'
+            - name: Параметры проекта для конфигураций отладки C#
               href: project-settings-for-csharp-debug-configurations.md
             - name: Project Settings for a Visual Basic Debug Configuration
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Архитектура визуализатора
                   href: visualizer-architecture.md
-                - name: 'Написание визуализатора на C#'
+                - name: Написание визуализатора на C#
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Написание визуализатора на Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: Поддерживаемые изменения кода (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Режим "Изменить и продолжить" (Visual C#)'
+        - name: Режим "Изменить и продолжить" (Visual C#)
           items:
-            - name: 'Режим "Изменить и продолжить" (Visual C#)'
+            - name: Режим "Изменить и продолжить" (Visual C#)
               href: edit-and-continue-visual-csharp.md
-            - name: 'Изменить и продолжить (C#)'
+            - name: Изменить и продолжить (C#)
               href: how-to-use-edit-and-continue-csharp.md
-            - name: 'Поддерживаемые изменения кода (C#)'
+            - name: Поддерживаемые изменения кода (C#)
               href: supported-code-changes-csharp.md
         - name: Режим "Изменить и продолжить" (Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: 'Изменения, не поддерживаемые в режиме "Изменить и продолжить" Visual Basic'
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'Функция "Изменить и продолжить" не поддерживается для языка F#'
+        - name: Функция "Изменить и продолжить" не поддерживается для языка F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Использование файлов дампа
       items:
@@ -400,11 +400,11 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Отладка XAML в Blend для Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Навигация по сеансу отладки (XAML и C#)'
+            - name: Навигация по сеансу отладки (XAML и C#)
               items:
-                - name: 'Навигация по сеансу отладки (XAML и C#)'
+                - name: Навигация по сеансу отладки (XAML и C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: 'Пример кода навигации по отладчику (XAML and C#)'
+                - name: Пример кода навигации по отладчику (XAML and C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 'Вызов событий приостановки, возобновления и фоновых событий для Магазина Windows'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: отображение данных трассировки WPF
               href: how-to-display-wpf-trace-information.md
-        - name: 'Отладка F#'
+        - name: Отладка F#
           href: debugging-f-hash.md
     - name: Отладка машинного кода
       items:

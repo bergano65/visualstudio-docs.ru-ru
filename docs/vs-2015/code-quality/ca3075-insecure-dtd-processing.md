@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545175"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075. Обработка небезопасных DTD
@@ -35,13 +35,13 @@ ms.locfileid: "85545175"
 
 - задано свойство <xref:System.Xml.XmlNode.InnerXml%2A> в XML;
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>для свойства задано значение Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> для свойства задано значение Parse.
 
 - недоверенные входные данные обрабатываются с помощью <xref:System.Xml.XmlResolver> вместо <xref:System.Xml.XmlSecureResolver> ;
 
 - XmlReader.<xref:System.Xml.XmlReader.Create%2A> метод вызывается с небезопасным <xref:System.Xml.XmlReaderSettings> экземпляром или вообще без экземпляра.
 
-- <xref:System.Xml.XmlReader>создается с небезопасными параметрами или значениями по умолчанию.
+- <xref:System.Xml.XmlReader> создается с небезопасными параметрами или значениями по умолчанию.
 
   В каждом из этих случаев результат одинаковый: содержимое из файловой системы или сетевых папок с компьютера, на котором обрабатывается XML, станет доступно злоумышленнику, что впоследствии можно использовать для атак типа "отказ в обслуживании".
 

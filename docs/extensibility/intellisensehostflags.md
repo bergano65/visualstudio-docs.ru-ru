@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags Документы Майкрософт
+title: Интеллисенсехостфлагс | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710272"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
@@ -38,16 +38,16 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>Параметры
 
-|Участники|Описание|
+|Элементы|Описание|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|Буфер контекста читается только для чтения.|
-|`IHF_NOSEPARATESUBJECT`|Нет текста темы. Контекстный буфер содержит цель IntelliSense (подразумевается). `!IHF_READONLYCONTEXT`|
-|`IHF_SINGLELINESUBJECT`|Текст темы не является многолинейным.|
+|`IHF_READONLYCONTEXT`|Буфер контекста доступен только для чтения.|
+|`IHF_NOSEPARATESUBJECT`|Нет текста темы. Буфер контекста содержит IntelliSense-Target (подразумевается `!IHF_READONLYCONTEXT` ).|
+|`IHF_SINGLELINESUBJECT`|Текст темы не поддерживает несколько строк.|
 |`IHF_FORCECOMMITTOCONTEXT`|Эквивалентно `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|Редактирование (в предмете или контексте) должно осуществляться в режиме овертипа.|
+|`IHF_OVERTYPE`|Редактирование (в теме или контексте) должно выполняться в режиме переввода.|
 
 ## <a name="requirements"></a>Требования
- SingleFileeditor.idl
+ Синглефилидитор. idl
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

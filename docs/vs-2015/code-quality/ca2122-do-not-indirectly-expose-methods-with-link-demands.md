@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 846ce010cddfd505bb967ec612a5c31dd8321977
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544330"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122. Не используйте косвенное представление методов с требованиями ссылки
@@ -57,5 +57,5 @@ ms.locfileid: "85544330"
  В этом примере формируются следующие данные:
 
  **Значение из незащищенного члена: seattle.corp.contoso.com**
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Рекомендации по безопасному кодированию](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [требования](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) к [данным и моделированию](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

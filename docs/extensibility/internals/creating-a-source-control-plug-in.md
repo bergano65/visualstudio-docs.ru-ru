@@ -1,5 +1,5 @@
 ---
-title: Создание подключаемого подключения к управлению исходным элементом (ru) Документы Майкрософт
+title: Создание подключаемого модуля системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709172"
 ---
-# <a name="create-a-source-control-plug-in"></a>Создание плагина управления исходным элементом
-Visual Studio SDK предоставляет ресурсы, позволяющие добавлять [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] возможности управления исходными данными в интегрированную среду разработки (IDE). Он позволяет использовать любой плагин DLL, который соответствует API-разъему управления исходным элементом, изложенным в настоящей документации.
+# <a name="create-a-source-control-plug-in"></a>Создание подключаемого модуля системы управления версиями
+Пакет SDK для Visual Studio предоставляет ресурсы, позволяющие добавлять возможности системы управления версиями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированную среду разработки (IDE). Он позволяет использовать любую подключаемую библиотеку DLL, которая соответствует интерфейсу API подключаемого модуля системы управления версиями, описанному в этой документации.
 
 ## <a name="in-this-section"></a>В этом разделе
 - [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
- Описывает, как установить плагин управления исходным управлением и выделяет доступные в настоящее время версии API управления исходным управлением.
+ Описывает, как установить подключаемый модуль системы управления версиями и выделить доступные в настоящее время версии API подключаемого модуля системы управления версиями.
 
-- [Architecture](../../extensibility/internals/source-control-plug-in-architecture.md)
+- [Архитектура](../../extensibility/internals/source-control-plug-in-architecture.md)
 
- Использует диаграмму архитектуры для объяснения интеграции плагина [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] управления исходным управлением с IDE.
+ Использует схему архитектуры для объяснения интеграции подключаемого модуля системы управления версиями с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной средой разработки.
 
-- [Руководство по тестированию](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+- [Тестовый обзор](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
 
- Предоставляет рекомендации о том, как проверить установку и эксплуатацию плагина управления исходным управлением.
+ Содержит рекомендации по тестированию установки и эксплуатации подключаемого модуля системы управления версиями.
 
-## <a name="related-sections"></a>См. также
-- [Создание управления исходным элементом VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
+## <a name="related-sections"></a>Связанные разделы
+- [Создание пакета VSPackage для системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Обсуждается, как создать элемент управления исходным источником VSPackage, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] который не только поставляет функциональность управления исходным источником, но и заменяет uI управления исходным управлением.
+ Описывает, как создать пакет VSPackage системы управления версиями, который не только обеспечивает функциональность системы управления версиями, но и заменяет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Пользовательский интерфейс системы управления версиями.
 
-- [Плагины управления исходным элементом](../../extensibility/source-control-plug-ins.md)
+- [Подключаемые модули системы управления версиями](../../extensibility/source-control-plug-ins.md)
 
- Предоставляет полный список всех элементов в API для управления исходным управлением.
+ Содержит полный список всех элементов в интерфейсе API подключаемого модуля системы управления версиями.
 
-- [Управление исходом](../../extensibility/internals/source-control.md)
+- [Система управления версиями](../../extensibility/internals/source-control.md)
 
- Обсуждается варианты реализации управления исходным [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]источником в качестве интегрированной функции .
+ Описывает варианты реализации системы управления версиями в качестве интегрированной функции [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

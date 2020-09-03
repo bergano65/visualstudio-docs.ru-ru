@@ -1,5 +1,5 @@
 ---
-title: Рассмотрение вопросов разгрузки и перегрузки nested проектов (ru) Документы Майкрософт
+title: Рекомендации по выгрузке и перезагрузке вложенных проектов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ab705953eea1fcac99883bb4f88c0e95eced108
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709288"
 ---
-# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Рассмотрение вопросов разгрузки и перегрузки вложенных проектов
+# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Рекомендации по выгрузке и перезагрузке вложенных проектов
 
-При реализации вложенных типов проектов необходимо выполнить дополнительные действия при разгрузке и перезагрузке проектов. Чтобы правильно уведомить слушателей о событиях `OnBeforeUnloadProject` решения, необходимо правильно поднять `OnAfterLoadProject` и события.
+При реализации вложенных типов проектов необходимо выполнить дополнительные действия при выгрузке и перезагрузке проектов. Чтобы правильно уведомить прослушиватели о событиях решения, необходимо правильно вызвать `OnBeforeUnloadProject` `OnAfterLoadProject` события и.
 
-Одной из причин для повышения этих событий является контроль исходного кода (SCC). Вы не хотите, чтобы SCC удалял элементы с сервера, `Get` а затем добавлял их обратно в *качестве новых,* если есть операция от SCC. В этом случае новый файл будет загружен из SCC. Вам придется выгрузить и перезагрузить все файлы в случае, если они отличаются.
+Одной из причин для вызова этих событий является управление исходным кодом (SCC). Вы не хотите, чтобы SCC удалили элементы с сервера, а затем добавили *их вновь, если в* SCC имеется `Get` операция. В этом случае новый файл будет загружен из SCC. Вам пришлось бы выгружать и перезагружать все файлы на случай, если они отличаются.
 
-Вызовы `ReloadItem`управления исходного кода . Реализуйте `OnBeforeUnloadProject` интерфейс `OnAfterLoadProject` для <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> вызова и удаления проекта и воссоздайте его. При реализации интерфейса таким образом, SCC сообщается, что проект был временно удален и добавлен снова. Таким образом, SCC не работает на проекте, как если бы проект был *фактически* удален и повторно добавлен.
+Вызовы системы управления исходным кодом `ReloadItem` . Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> интерфейс для вызова `OnBeforeUnloadProject` и `OnAfterLoadProject` удаления проекта и его повторного создания. При таком способе реализации интерфейса SCC уведомляет о том, что проект был временно удален и добавлен снова. Таким образом, SCC не работает с проектом, как если бы проект был *фактически* удален и добавлен повторно.
 
 ## <a name="reload-projects"></a>Перезагрузить проекты
 
-Для поддержки перезагрузки вложенных проектов, вы реализуете <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> метод. В вашей `ReloadItem`реализации, вы закрываете вложенные проекты, а затем воссоздать их.
+Для поддержки перезагрузки вложенных проектов необходимо реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> метод. В реализации `ReloadItem` вы закрываете вложенные проекты, а затем создаете их повторно.
 
-Обычно при перезагрузке проекта IDE поднимает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> и события. Однако для вложенных проектов, которые удаляются и перезагружаются, родительский проект инициирует процесс, а не IDE. Поскольку родительский проект не поднимает события решения, а IDE не располагает информацией о инициализации процесса, события не поднимаются.
+Как правило, при повторной загрузке проекта интегрированная среда разработки создает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> события и. Однако для удаленных и перезагруженных вложенных проектов родительский проект запускает процесс, а не интегрированную среду разработки. Поскольку родительский проект не создает события решения, и в интегрированной среде разработки нет сведений о инициализации процесса, события не вызываются.
 
-Чтобы справиться с этим `QueryInterface` процессом, родительский проект вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> интерфейс. `IVsFireSolutionEvents`имеет функции, которые говорят `OnBeforeUnloadProject` IDE поднять событие для разгрузки `OnAfterLoadProject` вложенного проекта, а затем поднять событие для перезагрузки того же проекта.
+Для обработки этого процесса родительский проект вызывает `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> интерфейс. `IVsFireSolutionEvents` содержит функции, которые сообщают интегрированной среде разработки о необходимости вызова `OnBeforeUnloadProject` события для выгрузки вложенного проекта, а затем вызывают `OnAfterLoadProject` событие для повторной загрузки того же проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
-- [Проекты гнезда](../../extensibility/internals/nesting-projects.md)
+- [Вложенные проекты](../../extensibility/internals/nesting-projects.md)

@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 78d950b777d866835ef516c4910180b21de295e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545006"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
@@ -86,7 +86,7 @@ ms.locfileid: "85545006"
 ### <a name="net-languages"></a>Языки платформы .NET
  Весь доступ к данным .NET, включая в .NET Core, основан на ADO.NET, наборе классов, определяющих интерфейс для доступа к любому типу источника данных — реляционному и нереляционному. Visual Studio содержит несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, управления данными и предоставления данных пользователю. В документации в этом разделе описывается использование этих средств. Вы также можете программировать непосредственно для командных объектов ADO.NET. Дополнительные сведения о непосредственном вызове API-интерфейсов ADO.NET см. в разделе [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) библиотеки MSDN.
 
- Документацию по доступу к данным, специально связанная с ASP.NET, см. в разделе [Работа с данными](/aspnet/web-forms/overview/presenting-and-managing-data/) на сайте ASP.NET. Руководство по использованию Entity Framework с ASP.NET MVC см. в разделе [Начало работы с Entity Framework 6 Code First с помощью MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Документацию по доступу к данным, специально связанная с ASP.NET, см. в разделе  [Работа с данными](/aspnet/web-forms/overview/presenting-and-managing-data/) на сайте ASP.NET. Руководство по использованию Entity Framework с ASP.NET MVC см. в разделе [Начало работы с Entity Framework 6 Code First с помощью MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Приложения универсальная платформа Windows (UWP) на C# или Visual Basic могут использовать Пакет Microsoft Azure SDK для .NET для доступа к службе хранилища Azure и другим службам Azure. Класс Windows. Web. HttpClient обеспечивает взаимодействие с любой службой RESTFUL. Дополнительные сведения см. в разделе [Подключение к HTTP-серверу с помощью Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -124,14 +124,14 @@ ms.locfileid: "85545006"
  [JavaScript в Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) — это язык первого класса для создания кросс-платформенных приложений, приложений UWP, облачных служб, веб-сайтов и веб-приложений. Вы можете использовать Bower, grunt, gulp, NPM и NuGet в Visual Studio для установки избранных библиотек JavaScript и продуктов баз данных. Подключитесь к службе хранилища Azure и службам, загрузив пакеты SDK с [веб-сайта Azure](https://azure.microsoft.com/).  Edge.js — это библиотека, которая подключает серверный код JavaScript (Node.js) к источникам данных ADO.NET.
 
 ### <a name="python"></a>Python
- Установите [Инструменты Python для Visual Studio](http://microsoft.github.io/PTVS/) вместе с предпочтительной платформой Python для создания приложений CPython или IronPython (.NET).  На веб-сайте Инструменты Python для Visual Studio есть несколько руководств по подключению к данным, включая [Django и базу данных SQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django и MySQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , а также на [MongoDB в Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+ Установите  [Инструменты Python для Visual Studio](http://microsoft.github.io/PTVS/) вместе с предпочтительной платформой Python для создания приложений CPython или IronPython (.NET).  На веб-сайте Инструменты Python для Visual Studio есть несколько руководств по подключению к данным, включая [Django и базу данных SQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django и MySQL в Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , а также на [MongoDB в Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
  [Установка систем баз данных, средств и примеров](../data-tools/installing-database-systems-tools-and-samples.md) Описывает, как получить продукты базы данных и расширения или драйверы Visual Studio, которые их поддерживают, а также где можно найти образцы баз данных для экспериментов и обучения.
 
  [Visual Studio Data Tools для .NET](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Описывает использование окон инструментов Visual Studio для подключения к источникам данных, создания или Entity Framework моделей, а также привязки данных к элементам управления пользовательского интерфейса.
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные темы
  [Данные, устройства и аналитика](https://msdn.microsoft.com/data-and-devices) Содержит введение в интеллектуальное облако Майкрософт, включая Кортану Analytics Suite и поддержку "Интернет вещей".
 
  [Служба хранилища Microsoft Azure](/azure/storage/) Описание службы хранилища Azure и создания приложений с помощью больших двоичных объектов, таблиц, очередей и файлов Azure.
