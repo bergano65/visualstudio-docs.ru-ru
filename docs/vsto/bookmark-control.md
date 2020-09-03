@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255147"
 ---
 # <a name="bookmark-control"></a>Bookmark - элемент управления
@@ -29,14 +29,14 @@ ms.locfileid: "71255147"
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- В проектах на уровне документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ во время разработки или во время выполнения. В проектах надстроек VSTO вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в любой открытый документ во время выполнения. Дополнительные сведения см. в разделе [Практическое руководство. Добавление элементов управления Bookmark в документы](../vsto/how-to-add-bookmark-controls-to-word-documents.md)Word.
+ В проектах на уровне документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документ во время разработки или во время выполнения. В проектах надстроек VSTO вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Word.Bookmark> в любой открытый документ во время выполнения. Дополнительные сведения см. [в разделе руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ## <a name="bind-data-to-the-control"></a>Привязка данных к элементу управления
  Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> поддерживает простую привязку данных. Закладка должна быть привязана к источнику данных с помощью свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . Свойство <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> — это свойство привязки данных по умолчанию для закладки.
 
- Если данные в связанном наборе данных обновляются, <xref:Microsoft.Office.Tools.Word.Bookmark> эти изменения отображаются в элементе управления.
+ Если данные в связанном наборе данных обновляются, эти <xref:Microsoft.Office.Tools.Word.Bookmark> изменения отображаются в элементе управления.
 
- В проектах на уровне документа вы также можете привязывать данные к закладкам с помощью окна **Источники данных** . Дополнительные сведения см. в разделе [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ В проектах на уровне документа вы также можете привязывать данные к закладкам с помощью окна **Источники данных** . Дополнительные сведения см. [в разделе инструкции. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Форматирование
  Любое форматирование, которое можно применить к <xref:Microsoft.Office.Interop.Word.Bookmark> , также можно применить и к элементу управления <xref:Microsoft.Office.Tools.Word.Bookmark> . Это форматирование включает в себя шрифты, отступы, промежутки, нумерацию и стили.
@@ -44,7 +44,7 @@ ms.locfileid: "71255147"
 ## <a name="assign-text-to-the-bookmark"></a>Назначение текста закладке
  Дополнительное различие между объектом <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> и элементом управления <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> состоит в их поведении при назначении текста закладке. Если вы назначаете текст <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>нулевой длины, этот текст добавляется справа от закладки, а закладка останется нулевой длины. Однако если вы назначаете текст <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>нулевой длины, этот текст вставляется в закладку, и длина закладки увеличивается на число вставленных символов.
 
- Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> также имеет свойство <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> . Это свойство <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> отличается от свойства, доступного <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> в свойстве <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> элемента управления, или <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> свойства <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> объекта.
+ Элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> также имеет свойство <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> . Это свойство отличается от <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> свойства, доступного в <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> свойстве <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> элемента управления, или <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> свойства <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> объекта.
 
 |Свойство Text|Описание|
 |-------------------|-----------------|
@@ -59,7 +59,7 @@ ms.locfileid: "71255147"
 
  В следующей таблице показано, как предложение "это образец текста." совместно используется двумя перекрывающимися закладками:
 
-|Закладка|Text|
+|Закладка|Текст|
 |--------------|----------|
 |Перекрывающиеся закладки|[это {образец] текста.}|
 |Bookmark1|это образец|
@@ -67,7 +67,7 @@ ms.locfileid: "71255147"
 
  Если назначить новый текст "это замена" для Bookmark1 закладки не перекрываются, и Bookmark2 оставляет только текст, который изначально не был частью Bookmark1.
 
-|Закладка|Text|
+|Закладка|Текст|
 |--------------|----------|
 |Две отдельные закладки|[это замена]{ текста}|
 |Bookmark1|это замена|
@@ -77,19 +77,19 @@ ms.locfileid: "71255147"
 
 В следующей таблице показано, как предложение "это образец текста." совместно используется закладкой, которая содержится в другой закладке:
 
-|Закладка|Text|
+|Закладка|Текст|
 |--------------|----------|
 |Перекрывающиеся закладки|[это {образец} текста.]|
 |Bookmark1|это образец текста.|
-|Bookmark2|пример|
+|Bookmark2|sample|
 
  Если назначить новый текст "это замена" закладке Bookmark1, то закладки больше не будут перекрываться, и закладка Bookmark2 становится пустой закладкой, расположенной в конце Bookmark1.
 
-|Закладка|Text|
+|Закладка|Текст|
 |--------------|----------|
 |Две отдельные закладки|[это замена.]{}|
 |Bookmark1|это замена.|
-|Bookmark2|*\<пустой >*|
+|Bookmark2|*\<empty>*|
 
 ## <a name="events"></a>События
 
@@ -112,7 +112,7 @@ ms.locfileid: "71255147"
 ## <a name="see-also"></a>См. также
 
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
-- [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Пошаговое руководство: Создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Пошаговое руководство. создание контекстных меню для закладок](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254403"
 ---
 # <a name="controls-on-office-documents"></a>Элементы управления в документах Office
@@ -32,7 +32,7 @@ ms.locfileid: "71254403"
 
  При разработке проектов для Excel или Word на уровне документа можно добавлять элементы управления в среду выполнения программным образом или использовать конструктор Visual Studio и добавлять их на этапе разработки.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 
  Описывает функциональные возможности ведущих элементов и элементов управления ведущего приложения, включая программирование реакции на события и привязку элементов управления к данным, а также отличия элементов управления от собственных объектов.

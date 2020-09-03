@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254336"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Автоматизация Excel с помощью расширенных объектов
@@ -54,23 +54,23 @@ ms.locfileid: "71254336"
 
 - [Элемент управления диаграммы](../vsto/chart-control.md)
 
-- [Элемент управления ListObject](../vsto/listobject-control.md)
+- [ListObject - элемент управления](../vsto/listobject-control.md)
 
 - [Элемент управления NamedRange](../vsto/namedrange-control.md)
 
 - [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>См. также
-- [Практическое руководство. Заполнение элементов управления ListObject данными](../vsto/how-to-fill-listobject-controls-with-data.md)
-- [Практическое руководство. Добавление элементов управления диаграммы на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)
-- [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [Практическое руководство. Добавление элементов управления NamedRange в листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [Практическое руководство. Добавление элементов управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
-- [Практическое руководство. Изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)
-- [Практическое руководство. Изменить размер элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)
-- [Практическое руководство. Проверять данные при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
-- [Практическое руководство. Сопоставьте столбцы ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)
-- [Пошаговое руководство: Программирование для событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+## <a name="see-also"></a>См. также раздел
+- [Как заполнить элементы управления ListObject данными](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Как добавлять элементы управления "Диаграмма" на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Как добавить элементы управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [Как добавить элементы управления NamedRange в листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Как добавить элементы управления XMLMappedRange на листы](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Как изменить размер элементов управления NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Как изменить размер элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Как проверить данные при добавлении новой строки в элемент управления ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
+- [Как сопоставлять столбцы ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Пошаговое руководство. Программирование событий элемента управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)

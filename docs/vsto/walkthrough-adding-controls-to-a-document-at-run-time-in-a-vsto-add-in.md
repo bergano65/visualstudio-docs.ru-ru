@@ -16,18 +16,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254175"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Пошаговое руководство. Добавление элементов управления в документ во время выполнения в надстройке VSTO
-  Вы можете добавлять элементы управления в любой документ Word, Открытый Microsoft Office, с помощью надстройки VSTO. В этом пошаговом руководстве показано, как использовать ленту, чтобы <xref:Microsoft.Office.Tools.Word.Controls.Button> разрешить пользователям <xref:Microsoft.Office.Tools.Word.RichTextContentControl> добавлять в документ или.
+  Вы можете добавлять элементы управления в любой документ Word, Открытый Microsoft Office, с помощью надстройки VSTO. В этом пошаговом руководстве показано, как использовать ленту, чтобы разрешить пользователям добавлять в <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> документ или.
 
- **Применимо к:** Сведения в этом разделе относятся к проектам надстроек VSTO для Word 2010. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
+ **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Word 2010. Для получения дополнительной информации см. [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - Создание нового проекта надстройки VSTO для Word.
 
@@ -40,7 +40,7 @@ ms.locfileid: "71254175"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "71254175"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Создание нового проекта надстройки VSTO для Word
 
-1. Создайте проект надстройки VSTO для Word с именем **ворддинамикконтролс**. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект надстройки VSTO для Word с именем **ворддинамикконтролс**. Дополнительные сведения см. в разделе [как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. Добавьте ссылку на сборку **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
 
@@ -60,9 +60,9 @@ ms.locfileid: "71254175"
 
 ### <a name="to-provide-a-ui-to-add-controls-to-a-document"></a>Предоставление пользовательского интерфейса для добавления элементов управления в документ
 
-1. В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите **Добавить новый элемент**.
 
-2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)** .
+2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
 
 3. Измените имя новой ленты на **MyRibbon**и нажмите кнопку **Добавить**.
 
@@ -72,22 +72,22 @@ ms.locfileid: "71254175"
 
 5. В окне **Свойства** измените свойство **Метка** для **group1** на **Добавить элементы управления**.
 
-6. Перетащите элемент управления **CheckBox** с вкладки **Элементы управления ленты Office** **панели элементов** в группу **group1**.
+6. Перетащите элемент управления **CheckBox** с вкладки **Элементы управления ленты Office****панели элементов** в группу **group1**.
 
 7. Щелкните **CheckBox1** , чтобы выбрать его.
 
 8. В окне **Свойства** измените следующие свойства.
 
-   | Свойство. | Значение |
+   | Свойство | Значение |
    |-----------|-----------------------|
-   | **Name** | **addButtonCheckBox** |
-   | **Метка** | **Кнопка “Добавить”** |
+   | **Имя** | **addButtonCheckBox** |
+   | **Label** | **Кнопка "Добавить"** |
 
 9. Добавьте второй флажок в **group1**, а затем измените следующие свойства.
 
-   | Свойство. | Значение |
+   | Свойство | Значение |
    |-----------|---------------------------|
-   | **Name** | **addRichTextCheckBox** |
+   | **Имя** | **addRichTextCheckBox** |
    | **Label** | **Добавление элемента управления форматированием текста** |
 
 10. В конструкторе лент дважды щелкните элемент **Добавить кнопку**.
@@ -109,27 +109,27 @@ ms.locfileid: "71254175"
 
 1. В **Обозреватель решений**дважды щелкните *ThisAddIn.CS* или *ThisAddIn. vb* , чтобы открыть файл в редакторе кода.
 
-2. Добавьте следующий код в класс `ThisAddIn` . Этот код объявляет объекты <xref:Microsoft.Office.Tools.Word.Controls.Button> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl> , представляющие элементы управления, которые будут добавлены в документ.
+2. Добавьте в класс `ThisAddIn` приведенный далее код. Этот код объявляет объекты <xref:Microsoft.Office.Tools.Word.Controls.Button> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl> , представляющие элементы управления, которые будут добавлены в документ.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3. Добавьте следующий метод в класс `ThisAddIn` . Когда пользователь щелкает флажок **Добавить кнопку** на ленте, этот метод добавляет <xref:Microsoft.Office.Tools.Word.Controls.Button> в выделенный фрагмент документа, если флажок устанавливается, или удаляет <xref:Microsoft.Office.Tools.Word.Controls.Button> , если флажок снимается.
+3. Добавьте следующий метод в класс `ThisAddIn`. Когда пользователь щелкает флажок **Добавить кнопку** на ленте, этот метод добавляет <xref:Microsoft.Office.Tools.Word.Controls.Button> в выделенный фрагмент документа, если флажок устанавливается, или удаляет <xref:Microsoft.Office.Tools.Word.Controls.Button> , если флажок снимается.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4. Добавьте следующий метод в класс `ThisAddIn` . Когда пользователь щелкает флажок **Добавить элемент управления форматированием текста** на ленте, этот метод добавляет <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в выделенный фрагмент документа, если флажок устанавливается, или удаляет <xref:Microsoft.Office.Tools.Word.RichTextContentControl> , если флажок снимается.
+4. Добавьте следующий метод в класс `ThisAddIn`. Когда пользователь щелкает флажок **Добавить элемент управления форматированием текста** на ленте, этот метод добавляет <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в выделенный фрагмент документа, если флажок устанавливается, или удаляет <xref:Microsoft.Office.Tools.Word.RichTextContentControl> , если флажок снимается.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
 
 ## <a name="remove-the-button-control-when-the-document-is-saved"></a>Удалить элемент управления "Кнопка" при сохранении документа
- Элементы управления Windows Forms не сохраняются, когда документ сохраняется, а затем закрывается. Однако оболочка ActiveX для каждого элемента управления остается в документе, и границу этой оболочки конечные пользователи могут видеть при повторном открытии документа. Существует несколько способов очистить динамически созданные элементы управления Windows Forms в надстройках VSTO. В этом пошаговом руководстве вы будете программными средствами удалять элемент управления <xref:Microsoft.Office.Tools.Word.Controls.Button> при сохранении документа.
+ Элементы управления Windows Forms не сохраняются, когда документ сохраняется, а затем закрывается. Однако оболочка ActiveX для каждого элемента управления остается в документе, и границу этой оболочки конечные пользователи могут видеть при повторном открытии документа. Существует несколько способов очистки динамически создаваемых Windows Forms элементов управления в надстройках VSTO. В этом пошаговом руководстве вы программно удаляете <xref:Microsoft.Office.Tools.Word.Controls.Button> элемент управления при сохранении документа.
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Удаление элемента управления "Кнопка" при сохранении документа
 
-1. В файл кода *ThisAddIn.CS* или *ThisAddIn. vb* добавьте в `ThisAddIn` класс следующий метод. Этот метод является обработчиком событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Если у сохраненного документа есть связанный с ним ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , обработчик событий получает этот ведущий элемент и удаляет элемент управления <xref:Microsoft.Office.Tools.Word.Controls.Button> , если он существует.
+1. В файл кода *ThisAddIn.CS* или *ThisAddIn. vb* добавьте в класс следующий метод `ThisAddIn` . Этот метод является обработчиком событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Если у сохраненного документа есть связанный с ним ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , обработчик событий получает этот ведущий элемент и удаляет элемент управления <xref:Microsoft.Office.Tools.Word.Controls.Button> , если он существует.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
@@ -143,7 +143,7 @@ ms.locfileid: "71254175"
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Добавление или удаление элементов управления при нажатии пользователем флажков на ленте
 
-1. В файле кода *MyRibbon.CS* или *MyRibbon. vb* Замените созданные `addButtonCheckBox_Click` обработчики событий и `addRichTextCheckBox_Click` следующим кодом. Этот код переопределяет данные обработчики событий, задавая вызов методов `ToggleButtonOnDocument` и `ToggleRichTextControlOnDocument` , которые вы добавили в класс `ThisAddIn` ранее в этом пошаговом руководстве.
+1. В файле кода *MyRibbon.CS* или *MyRibbon. vb* Замените созданные `addButtonCheckBox_Click` `addRichTextCheckBox_Click` обработчики событий и следующим кодом. Этот код переопределяет данные обработчики событий, задавая вызов методов `ToggleButtonOnDocument` и `ToggleRichTextControlOnDocument` , которые вы добавили в класс `ThisAddIn` ранее в этом пошаговом руководстве.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -175,17 +175,17 @@ ms.locfileid: "71254175"
 
      Кнопка удаляется из документа.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения об элементах управления в надстройках VSTO см. в следующих статьях.
 
 - Пример, демонстрирующий Добавление многих других типов элементов управления в документ во время выполнения и повторное создание элементов управления при повторном открытии документа, см. в образце динамических элементов управления надстройки Word в примерах [разработки Office и пошаговых руководствах](../vsto/office-development-samples-and-walkthroughs.md).
 
-- Пошаговое руководство, в котором показано, как добавлять элементы управления в лист с помощью надстройки VSTO для Excel, [см. в разделе Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)надстройки VSTO.
+- Пошаговое руководство, в котором показано, как добавлять элементы управления на лист с помощью надстройки VSTO для Excel, см. [в разделе Пошаговое руководство. Добавление элементов управления в лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
-## <a name="see-also"></a>См. также
-- [Решения Word](../vsto/word-solutions.md)
+## <a name="see-also"></a>См. также раздел
+- [решения Word](../vsto/word-solutions.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Сохранение динамических элементов управления в документах Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
-- [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Добавление Windows Forms элементов управления в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Как добавить элементы управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
