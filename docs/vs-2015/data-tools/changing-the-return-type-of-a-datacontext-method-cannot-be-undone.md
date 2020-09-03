@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f020aed4c1213d3db008862386704c0f63b86bde
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662472"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Невозможно отменить замену типа данных, возвращаемых методом DataContext
@@ -25,7 +25,7 @@ ms.locfileid: "72662472"
 
 ### <a name="to-change-the-return-type-of-a-datacontext"></a>Для изменения типа возврата метода DataContext
 
-- Щелкните **Да**.
+- Нажмите кнопку **Да**.
 
 ### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Для закрытия окна сообщения, оставляя тип возвращаемого значения неизмененным
 
@@ -39,5 +39,5 @@ ms.locfileid: "72662472"
 
      Метод <xref:System.Data.Linq.DataContext> создается с первоначальным типом возвращаемого значения по умолчанию.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [LINQ to SQL средства в](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [методах DataContext Visual Studio (реляционный конструктор)](../data-tools/datacontext-methods-o-r-designer.md) [как создать методы DataContext, сопоставленные с хранимыми процедурами и функциями (реляционный конструктор r)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

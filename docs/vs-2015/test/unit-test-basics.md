@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543784"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
@@ -40,9 +40,9 @@ ms.locfileid: "85543784"
 
 - [Выполнение и просмотр тестов](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>Общие сведения о модульном тестировании
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> Общие сведения о модульном тестировании
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Быстрые запуски
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> Быстрые запуски
  Для получения информации по введению в модульное тестирование, которое знакомит вас сразу с созданием кода, см. один из следующих разделов.
 
 - [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ ms.locfileid: "85543784"
 
 - [Модульное тестирование машинного кода с использованием обозревателя тестов](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>Пример решения MyBank
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> Пример решения MyBank
  В данном разделе в качестве примера используется разработка ненастоящего приложения, которое называется `MyBank` . Чтобы следовать разъяснениям в данном разделе, действительного кодирования не потребуется. Методы тестирования написаны на C# и представлены при помощи платформы модульного тестирования Microsoft для управляемого кода, однако концепции легко переносятся на другие языки и платформы.
 
  ![Решение MyBank](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - Класс`CheckingAccountTests` содержит методы модульного тестирования для класса `CheckingAccount` .
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Написание тестов
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> Написание тестов
  Платформа модульного тестирования и Visual Studio IntelliSense помогут вам в написании кода модульных тестов для проекта кода. Для запуска в Обозревателе тестов многие платформы требуют добавления особых атрибутов для определения методов модульного тестирования. Платформы также предоставляют способ — обычно при помощи оператора контроля или атрибутов метода -— для определения успешности или не успешности теста. Другие атрибуты определяют необязательные методы установки, которые выполняются при инициализации класса и перед каждым методом тестирования, а также методы разборки, которые запускаются после каждого метода тестирования и после уничтожения класса.
 
  Модель AAA (размещение, действие, утверждение) является стандартным способом написания модульных тестов для метода тестирования.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Запуск тестов в обозревателе тестов
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Запуск тестов в обозревателе тестов
  При построении проекта тестирования тесты появляются в Обозревателе тестов. Если Обозреватель тестов не виден, выберите **Тест** в меню Visual Studio, выберите **Windows**, затем выберите **Обозреватель тестов**.
 
  ![Обозреватель модульных тестов](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,7 +226,7 @@ public void My_Test ()
 
  Кроме того, можно фильтровать тесты по совпадению текста в поле поиска на глобальном уровне или с помощью одного из предустановленных фильтров. Можно запустить любую выборку тестов в любое время. Результаты запущенного теста появляются сразу же в строке "успешно/не успешно" наверху окна обозревателя. Детальная информация результата метода тестирования отображается при выборе теста.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Запуск и Просмотр тестов
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Запуск и Просмотр тестов
  Панель инструментов Обозревателя тестов помогает найти, организовать и запустить необходимые тесты.
 
  ![Запуск тестов из панели инструментов обозревателя тестов](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -235,21 +235,21 @@ public void My_Test ()
 
  Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-малый") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>Выполнять тесты после каждой сборки
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a> Выполнять тесты после каждой сборки
 
 > [!WARNING]
 > Запуск модульных тестов после каждой сборки поддерживается только в Visual Studio Enterprise.
 
-|Образ —|Описание|
+|Изображение|Описание|
 |-|-|
 |![Запуск после построения](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Чтобы запустить модульные тесты после каждого локального построения, в стандартном меню выберите **Тест**, затем выберите **Запустить тесты после сборки** в панели инструментов обозревателя тестов.|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>Фильтрация и группировка списка тестов
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> Фильтрация и группировка списка тестов
  Если существует много тестов, можно ввести текст в панели поиска Обозревателя тестов, чтобы отфильтровать список по указанной строке. Можно ограничить фильтр при помощи выбора фильтров из списка.
 
  ![Категории фильтров поиска](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-|Образ —|Описание|
+|Изображение|Описание|
 |-|-|
 |![Кнопка группы обозревателя тестов](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Для группировки тестов по категории, нажмите кнопку **Группировать по** .|
 

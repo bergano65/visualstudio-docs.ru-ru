@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253698"
 ---
 # <a name="document-host-item"></a>Ведущий элемент документа
@@ -40,14 +40,14 @@ ms.locfileid: "71253698"
 ### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Ограничения ведущего элемента документа в проектах уровня документа
  Проект уровня документа может содержать только один ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> (то есть класс `ThisDocument` ). Вы не можете добавлять новые ведущие элементы <xref:Microsoft.Office.Tools.Word.Document> в проект во время разработки и не можете создавать новые ведущие элементы <xref:Microsoft.Office.Tools.Word.Document> во время выполнения в настройке уровня документа.
 
- При создании нового документа Word во время выполнения он будет иметь тип <xref:Microsoft.Office.Interop.Word.Document>. Поскольку это не ведущий элемент, он не может содержать никаких элементов управления ведущего приложения или элементов управления Windows Forms. Дополнительные сведения о создании документов во время выполнения см. в [разделе как Программное создание новых](../vsto/how-to-programmatically-create-new-documents.md)документов.
+ При создании нового документа Word во время выполнения он будет иметь тип <xref:Microsoft.Office.Interop.Word.Document>. Поскольку это не ведущий элемент, он не может содержать никаких элементов управления ведущего приложения или элементов управления Windows Forms. Дополнительные сведения о создании документов во время выполнения см. [в разделе инструкции. Программное создание новых документов](../vsto/how-to-programmatically-create-new-documents.md).
 
 ## <a name="understand-document-host-items-in-application-level-projects"></a>Общие сведения о ведущих элементах документов в проектах уровня приложения
  В проектах надстроек VSTO можно создавать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> во время выполнения для любого документа, открытого в Word. Вы можете использовать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> для добавления элементов управления в связанный документ или для обработки событий, которые недоступны в объектах <xref:Microsoft.Office.Interop.Word.Document> .
 
  Для создания ведущего элемента <xref:Microsoft.Office.Tools.Word.Document> используйте метод `GetVstoObject`. Дополнительные сведения см. [в разделе Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)

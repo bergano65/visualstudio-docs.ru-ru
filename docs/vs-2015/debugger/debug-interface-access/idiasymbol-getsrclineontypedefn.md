@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3a70cec3ab9e03dd97a1df5f0ccf8713a79cc28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180475"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает исходный файл и номер строки, указывающие, где определен указанного определяемого пользователем типа.  
+Извлекает исходный файл и номер строки, указывающие, где определен определяемый пользователем тип.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,11 +32,11 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Параметры  
  `ppResult`  
- [out] Объект `IDiaLineNumber` , содержащий исходный файл и номер строки, где определяются пользователем.  
+ заполняет `IDiaLineNumber` Объект, содержащий исходный файл и номер строки, в которой определяется пользователем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

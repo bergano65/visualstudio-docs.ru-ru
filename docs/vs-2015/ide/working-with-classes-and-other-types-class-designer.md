@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bab5b86856029615231d908f1e523bb3d42583aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662625"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>Работа с классами и другими типами (конструктор классов)
@@ -37,7 +37,7 @@ ms.locfileid: "72662625"
 
 Сосредотачивайтесь более удобным образом на необходимых классах и типах, когда вы создаете и редактируете их с помощью конструктора классов в Visual Studio. Используйте схемы классов для более визуальной работы со своим кодом Visual C# .NET, Visual Basic .NET или C++.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)
 
  [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)

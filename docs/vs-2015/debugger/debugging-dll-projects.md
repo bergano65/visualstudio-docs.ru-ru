@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a4533c304f84d9dc59ec6b05328528870e49655
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691396"
 ---
 # <a name="debugging-dll-projects"></a>Отладка проектов DLL
@@ -33,58 +33,58 @@ ms.locfileid: "65691396"
   
 - Библиотека классов (C++, C# и Visual Basic)  
   
-- (C++, C#и Visual Basic): Библиотека элементов управления Windows Forms  
+- (C++, C# и Visual Basic): Библиотека элементов управления Windows Forms  
   
    Отладка библиотеки элементов управления Windows аналогична отладке проекта библиотеки классов. В большинстве случаев элемент управления Windows вызывается из другого проекта. При отладке вызывающего проекта можно осуществлять пошаговое выполнение элемента управления Windows, устанавливать точки останова и выполнять другие операции отладки. Дополнительные сведения см. в разделе [Элементы управления Windows Forms](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
-- (C# и Visual Basic): Web Control Library  
+- (C# и Visual Basic): библиотека элементов управления веб  
   
    Для получения дополнительной информации см. [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
   
-- (C++): Элемент управления ActiveX библиотеки MFC и элемент управления ActiveX в смарт-устройств MFC  
+- (C++): Элементы управления ActiveX и Smart Device ActiveX библиотеки MFC  
   
    Элементы управления ActiveX — это элементы управления, которые могут быть загружены через Интернет на компьютер клиента, а затем отображены и активированы на веб–страницах.  
   
-   Отладка элементов управления ActiveX аналогична отладке других типов элементов управления, поскольку они не могут быть запущены сами по себе, а должны быть внедрены в веб–страницу HTML. Дополнительные сведения см. в разделе [Практическое руководство. Отладка элемента ActiveX](../debugger/how-to-debug-an-activex-control.md).  
+   Отладка элементов управления ActiveX аналогична отладке других типов элементов управления, поскольку они не могут быть запущены сами по себе, а должны быть внедрены в веб–страницу HTML. Дополнительные сведения см. в разделе [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
   
-- (C++): DLL смарт-устройств MFC  
+- (C++): MFC Smart Device DLL  
   
-   Дополнительные сведения см. в разделе [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
+   Дополнительные сведения см. в разделе [методы отладки MFC](../debugger/mfc-debugging-techniques.md).  
   
   В этом разделе также содержатся сведения по следующим темам:  
   
-- [Практическое руководство. Отладка из проекта DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Как выполнять отладку из проекта библиотеки DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
-- [Практическое руководство. Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Как выполнять отладку в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md)  
   
   В этом разделе содержатся следующие подразделы, относящиеся к подготовке отладки библиотек классов:  
   
-- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Построение отладочной версии](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
-- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Отладка в смешанном режиме](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
-- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Изменение настроек по умолчанию](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
-- [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Способы отладки библиотек DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
-- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [Вызывающее приложение](#vxtskdebuggingdllprojectsthecallingapplication)  
   
-- [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Элементы управления на веб–странице](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
-- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [Окно "Интерпретация"](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
-## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
- Независимо от того, как выполняется отладка, сначала убедитесь, что собрана отладочная версия DLL, и что эта версия находится в том месте, в котором приложение и ожидает ее найти. Это может казаться очевидным, но если этот этап будет пропущен, приложение может найти другую версию этой DLL и загрузить ее. После этого программа продолжит выполнение, а вы будете удивляться, почему выполнение ни разу не прервалось на точке останова. В процессе отладки можно проверить, какую DLL загрузила программа, открыв в отладчике окно **Модули** . В окне **Модули** имеется список всех DLL или исполняемых файлов, загруженных в отлаживаемый процесс. Дополнительные сведения см. в разделе [Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md).  
+## <a name="building-a-debug-version"></a><a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Создание отладочной версии  
+ Независимо от того, как выполняется отладка, сначала убедитесь, что собрана отладочная версия DLL, и что эта версия находится в том месте, в котором приложение и ожидает ее найти. Это может казаться очевидным, но если этот этап будет пропущен, приложение может найти другую версию этой DLL и загрузить ее. После этого программа продолжит выполнение, а вы будете удивляться, почему выполнение ни разу не прервалось на точке останова. В процессе отладки можно проверить, какую DLL загрузила программа, открыв в отладчике окно **Модули** . В окне **Модули** имеется список всех DLL или исполняемых файлов, загруженных в отлаживаемый процесс. Дополнительные сведения см. в разделе [как использовать окно "модули"](../debugger/how-to-use-the-modules-window.md).  
   
  Чтобы отладчик мог присоединиться к коду на языке C++, код должен иметь `DebuggableAttribute`. Это можно добавить в код автоматически, путем связывания с параметром [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) компоновщика.  
   
-## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode Debugging  
- Вызывающее DLL приложение может быть написано как в управляемом, так и в машинном коде. Если управляемая DLL вызывается машинным кодом, а надо отлаживать обе части кода, то оба отладчика — управляемый и машинный — должны быть включены. Это можно сделать в  **\<проект > страницы свойств** диалогового окна или окна. Способ выполнения этой операции зависит от того, откуда была запущена отладка: из проекта DLL или из проекта вызывающего приложения. Дополнительные сведения см. в разделе [Практическое руководство. Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).  
+## <a name="mixed-mode-debugging"></a><a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Отладка в смешанном режиме  
+ Вызывающее DLL приложение может быть написано как в управляемом, так и в машинном коде. Если управляемая DLL вызывается машинным кодом, а надо отлаживать обе части кода, то оба отладчика — управляемый и машинный — должны быть включены. Это можно выбрать в диалоговом окне ** \<Project> страницы свойств** или в окне. Способ выполнения этой операции зависит от того, откуда была запущена отладка: из проекта DLL или из проекта вызывающего приложения. Дополнительные сведения см. [в разделе инструкции. Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).  
   
-## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Changing Default Configurations  
- При создании проекта консольного приложения с использованием шаблона проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически устанавливает необходимые параметры для отладочной и окончательной конфигурации. При необходимости эти параметры можно изменить. Дополнительные сведения см. в разделе [параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [параметры проекта для C# конфигурации отладки](../debugger/project-settings-for-csharp-debug-configurations.md), [параметры проекта для Visual Basic, отладка Конфигурация](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), и [как: настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
+## <a name="changing-default-configurations"></a><a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Изменение конфигураций по умолчанию  
+ При создании проекта консольного приложения с использованием шаблона проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически устанавливает необходимые параметры для отладочной и окончательной конфигурации. При необходимости эти параметры можно изменить. Дополнительные сведения см. в статьях [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Параметры проекта для конфигураций отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md), [параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)и [инструкции: Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
   
-## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to Debug the DLL  
+## <a name="ways-to-debug-the-dll"></a><a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Способы отладки библиотеки DLL  
  Каждый из проектов в данном разделе создает библиотеку DLL. Нельзя запустить библиотеку DLL напрямую;она должна быть вызвана приложением, как правило, исполняемым файлом. Для получения дополнительной информации см. [Creating and Managing Visual C++ Projects](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). Вызывающее приложение может удовлетворять любому из следующих критериев:  
   
 - Программа построена в другом проекте в том же решении [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , которое содержит библиотеку классов.  
@@ -95,25 +95,25 @@ ms.locfileid: "65691396"
   
 - Веб–приложение содержит веб–страницу, в которую внедрена библиотека DLL.  
   
-### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Отладка вызывающего приложения  
+### <a name="debugging-the-calling-application"></a><a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Отладка вызывающего приложения  
  Для отладки библиотеки DLL, запустите отладку вызывающего приложения — как правило, это исполняемый файл или веб–приложение. Есть несколько способов её отладки.  
   
-- Если для вызывающего приложения имеется проект, можно открыть этот проект и запустить выполнение из меню **Отладка** . Дополнительные сведения см. в разделе [Практическое руководство. Запуск выполнения](https://msdn.microsoft.com/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Если для вызывающего приложения имеется проект, можно открыть этот проект и запустить выполнение из меню **Отладка** . Для получения дополнительной информации см. [How to: Start Execution](https://msdn.microsoft.com/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
-- Если вызывающее приложение — это существующая программа, уже развернутая на рабочем или тестовом компьютере и уже выполняемая, можно присоединиться к нему. Используйте этот метод, если DLL — это элемент управления, размещенный в Internet Explorer или на веб–странице. Дополнительные сведения см. в разделе [Практическое руководство. Присоединение к выполняемому процессу](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Если вызывающее приложение — это существующая программа, уже развернутая на рабочем или тестовом компьютере и уже выполняемая, можно присоединиться к нему. Используйте этот метод, если DLL — это элемент управления, размещенный в Internet Explorer или на веб–странице. Дополнительные сведения см. в разделе [как присоединиться к выполняющемуся процессу](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
-- Можно выполнять отладку из проекта DLL. Дополнительные сведения см. в разделе [Практическое руководство. Отладка из проекта DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+- Можно выполнять отладку из проекта DLL. Дополнительные сведения см. в разделе [инструкции. Отладка из проекта DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
 - Можно выполнять отладку из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. В этом случае окно **Интерпретация** выступает в качестве приложения.  
   
-  Перед запуском отладки этого вызывающего приложения нужно задать точку останова в библиотеке классов. Для получения дополнительной информации см. [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). При срабатывании точки останова можно пошагово проходить по коду, наблюдая действия в каждой строке, до тех пор, пока не будет выделена возникшая проблема. Для получения дополнительной информации см. [Code Stepping Overview](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Перед запуском отладки этого вызывающего приложения нужно задать точку останова в библиотеке классов. Для получения дополнительной информации см. [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). При срабатывании точки останова можно пошагово проходить по коду, наблюдая действия в каждой строке, до тех пор, пока не будет выделена возникшая проблема. Дополнительные сведения см. в разделе [Обзор пошагового выполнения кода](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
-### <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controls on a Web Page  
+### <a name="controls-on-a-web-page"></a><a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Элементы управления на веб-странице  
  Чтобы отлаживать элемент управления веб–страницы, создайте страницу [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , которая его содержит, если такая страница еще не существует. Затем следует расставить точки останова в коде веб–страницы и в коде элемента управления. Затем можно вызвать веб–страницу из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Перед запуском отладки этого вызывающего приложения нужно установить точку останова в DLL. При срабатывании точки останова можно пошагово проходить по коду, наблюдая действия в каждой строке, до тех пор, пока не будет выделена возникшая проблема. Для получения дополнительной информации см. [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> The Immediate Window  
+### <a name="the-immediate-window"></a><a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Окно интерпретации  
  Можно вычислять функции или методы библиотеки DLL без вызывающего приложения. Происходит отладка во время разработки и используется окно **Интерпретация** . Для такой отладки выполните следующие действия, пока открыт проект DLL:  
   
 1. Откройте окно **Интерпретация** отладчика.  
@@ -142,10 +142,10 @@ ms.locfileid: "65691396"
   
      Случится прерывание на точке останова и можно будет пройти `Test`в пошаговом режиме. После выполнения `Test`, отладчик вернется в режим разработки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
  [Типы проектов Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Типы проектов C#, F # и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Параметры проекта для конфигураций отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   

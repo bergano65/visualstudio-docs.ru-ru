@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::СозданиеВ ожиданииТочка (англ.) Документы Майкрософт
+title: 'IDebugEngine2:: Креатепендингбреакпоинт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731119"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
-Создает ожидающий момент разрыва в движке отладки (DE).
+Создает отложенную точку останова в модуле отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,23 +43,23 @@ int CreatePendingBreakpoint(
 
 ## <a name="parameters"></a>Параметры
 `pBPRequest`\
-(в) Объект [IDebugBreakpointRequest2,](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) описывающий отложенную точку разрыва для создания.
+окне Объект [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) , описывающий отложенную точку останова для создания.
 
 `ppPendingBP`\
-(ваут) Возвращает объект [IDebugPendingBreakpoint2,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) представляющий ожидачий точку разрыва.
+заполняет Возвращает объект [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающие точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
-Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Обычно `E_FAIL` возвращается, `pBPRequest` если параметр не соответствует языку, поддерживаемому DE, если `pBPRequest` параметр является недействительным или неполным.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Обычно возвращает значение `E_FAIL` , если `pBPRequest` параметр не соответствует ни одному из языков, поддерживаемых de, если `pBPRequest` параметр является недопустимым или неполным.
 
-## <a name="remarks"></a>Примечания
-Ожидаемая точка разрыва по существу представляет собой набор всей информации, необходимой для привязки точки разрыва к коду. Ожидаемая точка разрыва, возвращенная из этого метода, не привязана к коду до тех пор, пока не будет вызван метод [Bind.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+## <a name="remarks"></a>Remarks
+Ожидающая точка останова по сути является коллекцией всех сведений, необходимых для привязки точки останова к коду. Ожидающая точка останова, возвращенная этим методом, не привязана к коду до вызова метода [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .
 
-Для каждого ожидающего завершения момента, который устанавливает пользователь, диспетчер сеанса отладки (SDM) вызывает этот метод в каждом присоединенном DE. Это до DE, чтобы убедиться, что точка разрыва действительна для программ, работающих в этом DE.
+Для каждой ожидающей точки останова, заданной пользователем, диспетчер отладки сеансов (SDM) вызывает этот метод в каждом присоединенном DE. Чтобы убедиться в том, что точка останова является допустимой для программ, запущенных в этой сети.
 
-Когда пользователь устанавливает точку разрыва на строке кода, DE может связать точку разрыва с ближайшей строкой в документе, которая соответствует этому коду. Это позволяет пользователю установить точку разрыва на первой строке многолиневого оператора, но связать ее на последней строке (где весь код приписывается информации об отладке).
+Когда пользователь устанавливает точку останова в строке кода, DE может привязать точку останова к ближайшей строке документа, соответствующей этому коду. Это дает пользователю возможность установить точку останова на первой строке многострочного оператора, но привязать ее к последней строке (где весь код имеет атрибут в отладочной информации).
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CProgram` реализовать этот метод для простого объекта. Реализация DE `IDebugEngine2::CreatePendingBreakpoint` может затем направить все вызовы для этой реализации метода в каждой программе.
+В следующем примере показано, как реализовать этот метод для простого `CProgram` объекта. После этого реализация DE `IDebugEngine2::CreatePendingBreakpoint` может пересылать все вызовы данной реализации метода в каждой программе.
 
 ```
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)
@@ -72,8 +72,8 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Выполняется](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

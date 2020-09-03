@@ -1,5 +1,5 @@
 ---
-title: Использование библиотеки отладки CRT | Документация Майкрософт
+title: Работа с библиотекой отладки CRT | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,16 +31,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7e14a181b432dede3f00a4465d40154fdb393bb0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697860"
 ---
 # <a name="crt-debug-library-use"></a>Работа с библиотекой отладки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Библиотека CRT предоставляет расширенную отладочную поддержку. Чтобы использовать отладочные библиотеки CRT, необходимо связать с [/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) и скомпилируйте его с **/MDd**, **/MTd**, или **/LDd**.  
+Библиотека CRT предоставляет расширенную отладочную поддержку. Чтобы использовать отладочные библиотеки CRT, необходимо скомпоновать их с помощью [/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103), а затем скомпилировать с параметром **/MDd**, **/MTd** или **/LDd**.  
   
 ## <a name="remarks"></a>Примечания  
  Основные определения и макросы для отладки CRT содержатся в файле заголовка CRTDBG.h.  
@@ -51,6 +51,6 @@ ms.locfileid: "65697860"
   
  Дополнительные сведения о различных библиотеках времени выполнения см. в разделе [Библиотеки времени выполнения C](https://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Методы отладки CRT](../debugger/crt-debugging-techniques.md)   
  [/MD, /MT, /LD (использование библиотеки времени выполнения)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)

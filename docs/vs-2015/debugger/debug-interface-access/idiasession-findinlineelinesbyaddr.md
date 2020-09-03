@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b35850367ef4bcc4e49cc3d6e76b41a2e9f4cd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151704"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, символ из указанного родительского объекта и содержащихся в указанный диапазон адресов.  
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, которые прямо или косвенно связаны с указанным родительским символом и содержатся в указанном диапазоне адресов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,25 +34,25 @@ HRESULT findInlineeLinesByAddr ( 
   
 #### <a name="parameters"></a>Параметры  
  `parent`  
- [in] `IDiaSymbol` Объект, представляющий родительский объект.  
+ окне `IDiaSymbol` Объект, представляющий родительский элемент.  
   
  `isect`  
- [in] Задает компонент прокрутки на разделе адреса.  
+ окне Указывает компонент раздела адреса.  
   
  `offset`  
- [in] Задает компонент прокрутки на смещения адреса.  
+ окне Указывает компонент смещения адреса.  
   
  `length`  
- [in] Указывает диапазон адресов, в байтах, чтобы охватить с этим запросом.  
+ окне Указывает диапазон адресов (в байтах), который охватывает этот запрос.  
   
  `ppResult`  
- [out] Содержит `IDiaEnumLineNumbers` , содержащий список номеров строк, возвращаемых.  
+ заполняет Содержит `IDiaEnumLineNumbers` объект, содержащий список извлекаемых номеров строк.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
+ [Перечисление Симтаженум](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2:onUpdateTextTextAttributes Документы Майкрософт
+title: 'IDebugDocumentTextEvents2:: Онупдатетекстаттрибутес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82cda44c50319ef76efbc8fa3ae2712c3a4ae8f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731378"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Уведомляет пакет отладки, что атрибуты текста были обновлены в документе.
+Уведомляет пакет отладки, что в документе были обновлены текстовые атрибуты.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,14 +43,14 @@ int onUpdateTextAttributes( 
 
 ## <a name="parameters"></a>Параметры
 `pos`\
-(в) [Структура TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) которая указывает, где были обновлены атрибуты текста.
+окне Структура [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , показывающая, где были обновлены текстовые атрибуты.
 
 `dwNumToUpdate`\
-(в) Определяет количество символов текста, которые были обновлены.
+окне Указывает количество символов в тексте, которые были обновлены.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

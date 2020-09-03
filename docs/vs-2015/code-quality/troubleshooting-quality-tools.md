@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c48c2bad3594e716a363ff932bd041d27bca528
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662492"
 ---
 # <a name="troubleshooting-quality-tools"></a>Устранение неполадок, связанных с качеством
@@ -23,7 +23,7 @@ ms.locfileid: "72662492"
 
 Если при запуске средств контроля качества Visual Studio возникают проблемы, подразделы данной статьи помогут вам диагностировать и устранить неполадки.
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>В этом разделе
  [Устранение проблем, связанных с анализом кода](../code-quality/troubleshooting-code-analysis-issues.md)
 
  [Устранение неполадок, связанных с метриками кода](../code-quality/troubleshooting-code-metrics-issues.md)

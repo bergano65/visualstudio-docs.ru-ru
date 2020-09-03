@@ -97,7 +97,7 @@ ms.locfileid: "71252448"
 
  Недостаток этого метода заключается в том, что он требует от клиента установки средств пакета SDK для .NET Framework, а также для разработчика или системного администратора, который будет квалифицирован на их использование. Некоторые клиенты могут запросить решение, которое не требует каких-либо технических усилий с их стороны.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 - [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не нуждается в повторном подписывании и сохраняет фирменную символику](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

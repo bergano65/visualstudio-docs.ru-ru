@@ -1,5 +1,5 @@
 ---
-title: Отладка ошибок и предупреждений диалоговым окнам | Документация Майкрософт
+title: Диалоговые окна ошибок и предупреждений отладки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691187"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
@@ -60,7 +60,7 @@ ms.locfileid: "65691187"
  [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Отладка скрипта и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Отладка сценария и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
