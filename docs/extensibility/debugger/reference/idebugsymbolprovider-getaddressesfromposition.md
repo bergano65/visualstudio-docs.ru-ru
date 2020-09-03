@@ -1,5 +1,5 @@
 ---
-title: IDebugСимволпровайдер::GetAddressesFromPosition Документы Майкрософт
+title: 'Идебугсимболпровидер:: Жетаддрессесфромпоситион | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719402"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-Этот метод отображает положение документа в массив адресов отладки.
+Этот метод сопоставляет расположение документа с массивом адресов отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,26 +47,26 @@ int GetAddressesFromPosition( 
 
 ## <a name="parameters"></a>Параметры
 `pDocPos`\
-(в) Позиция документа.
+окне Расположение документа.
 
 `fStatmentOnly`\
-(в) Если true, ограничивает адреса отладки одним утверждением.
+окне Если значение — TRUE, адреса отладки ограничиваются одной инструкцией.
 
 `ppEnumBegAddresses`\
-(ваут) Возвращает регистратор для исходных отладочных адресов, связанных с этой выпиской или строкой.
+заполняет Возвращает перечислитель для начальных адресов отладки, связанных с данной инструкцией или строкой.
 
 `ppEnumEndAddresses`\
-(ваут) Возвращает enumerator [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) для адресов окончания отладки, связанных с этим утверждением или строкой.
+заполняет Возвращает перечислитель [иенумдебугаддрессес](../../../extensibility/debugger/reference/ienumdebugaddresses.md) для конечных адресов отладки, связанных с данной инструкцией или строкой.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Позиция документа обычно указывает диапазон исходных строк. Этот метод обеспечивает начальные и окончание отладки адреса, связанные с этими строками. Некоторые языки позволяют операторы, которые охватывают несколько строк, или строки, которые содержат более одного оператора. Этот метод предоставляет флаг для ограничения адресов отладки одним утверждением.
+## <a name="remarks"></a>Remarks
+ Расположение документа обычно указывает на диапазон исходных строк. Этот метод предоставляет начальный и конечный отладочные адреса, связанные с этими строками. Некоторые языки разрешают операторы, охватывающие несколько строк, или строки, содержащие более одной инструкции. Этот метод предоставляет флаг для ограничения адресов отладки одной инструкцией.
 
- Одно утверждение может иметь несколько адресов отладки, как в случае шаблонов.
+ Одна инструкция может иметь несколько отладочных адресов, как в случае с шаблонами.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

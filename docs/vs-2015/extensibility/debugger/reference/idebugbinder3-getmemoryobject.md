@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Документация Майкрософт
+title: 'IDebugBinder3:: Жетмеморйобжект | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0019b1691cb36b9d23be546cdfdb0e061779647d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193020"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод извлекает объект памяти, который представляет этот объект привязан к памяти.  
+Этот метод извлекает объект памяти, представляющий память, к которой привязан этот объект.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,18 +44,18 @@ int GetMemoryObject(
   
 #### <a name="parameters"></a>Параметры  
  `pField`  
- [in] Указывает, какое поле для получения для объекта памяти.  
+ окне Указывает поле, для которого необходимо получить объект памяти.  
   
  `uConstant`  
- [in] Представляет адрес памяти или значение для значения константы.  
+ окне Представляет адрес или значение памяти для постоянного значения.  
   
  `ppObject`  
- [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет этот объект привязан к памяти.  
+ заполняет Объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий память, к которой привязан этот объект.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
+ [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

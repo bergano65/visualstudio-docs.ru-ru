@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 620be9ea458d55a8c9610079b357cc9466a03f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660771"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
@@ -41,12 +41,12 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 
  /projectconfig `ProjConfigName` Необязательный. Имя конфигурации сборки проекта, которая применяется при сборке указанного `/project`.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Указанный проект должен быть проектом развертывания. В противном случае при передаче собранного проекта для развертывания возникает ошибка.
 
  Строки с пробелами заключаются в двойные кавычки.
 
- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.
+ Сводные данные о сборках, включая ошибки, могут отображаться в **командном** окне или в любом файле журнала, указанном с помощью `/out` параметра.
 
 ## <a name="example"></a>Пример
  Этот пример развертывает проект `CSharpConsoleApp` с использованием конфигурации сборки проекта `Release` в пределах конфигурация решения `Release` для `MySolution`.
@@ -55,5 +55,5 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
-## <a name="see-also"></a>См. также
- [Команды devenv параметры командной строки](../../ide/reference/devenv-command-line-switches.md) [/Project (devenv](../../ide/reference/project-devenv-exe.md) . exe) [/Build (](../../ide/reference/build-devenv-exe.md) devenv. exe) [/Clean (](../../ide/reference/clean-devenv-exe.md) devenv. exe) [/REBUILD (](../../ide/reference/rebuild-devenv-exe.md) devenv. exe) [/out (devenv. exe](../../ide/reference/out-devenv-exe.md) )
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/REBUILD (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

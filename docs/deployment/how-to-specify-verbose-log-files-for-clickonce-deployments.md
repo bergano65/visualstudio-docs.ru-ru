@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381773"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Практическое руководство. Указание подробных файлов журнала для развертывания ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся сведения, относящиеся к установке, инициализации, обновлению и удалению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Чтобы увеличить детализацию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] записи в эти файлы журнала, используйте редактор реестра (*regedit.exe*), чтобы указать уровень детализации.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] поддерживает файлы журналов действий для всех развертываний. В этих журналах содержатся сведения, относящиеся к установке, инициализации, обновлению и удалению [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания. Чтобы увеличить детализацию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] записи в эти файлы журнала, используйте редактор реестра (*regedit.exe*), чтобы указать уровень детализации.
 
 > [!CAUTION]
 > Неправильное использование редактора реестра может привести к серьезным проблемам, которые могут потребовать переустановки операционной системы. Используйте редактор реестра на свой страх и риск.
@@ -40,5 +40,5 @@ ms.locfileid: "85381773"
 
 4. Установите для `LogVerbosityLevel` значение `1`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

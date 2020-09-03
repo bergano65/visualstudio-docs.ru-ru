@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage Документы Майкрософт
+title: 'Идебугсимболпровидер:: отличный язык | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719244"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Этот метод получает язык, который использовался для компиляции кода по адресу отладки.
+Этот метод возвращает язык, который использовался для компиляции кода по адресу отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,20 +45,20 @@ int GetLanguage(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Объект адреса, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+окне Объект Address, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pguidLanguage`\
-(ваут) Возвращает `GUID` язык, который определяет язык.
+заполняет Возвращает значение типа `GUID` , указывающее язык.
 
 `pguidLanguageVendor`\
-(ваут) Возвращает `GUID` опечатка поставщика языка.
+заполняет Возвращает значение типа `GUID` , указывающее поставщика языка.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Двигатель отладки называет этот метод для получения информации, необходимой для выбора правильного оценщика выражения.
+## <a name="remarks"></a>Remarks
+ Обработчик отладки вызывает этот метод для получения сведений, необходимых для выбора правильного средства оценки выражений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

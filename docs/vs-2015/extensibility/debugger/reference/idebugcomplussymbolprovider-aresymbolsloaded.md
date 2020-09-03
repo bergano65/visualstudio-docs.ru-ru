@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Документация Майкрософт
+title: 'Идебугкомплуссимболпровидер:: Аресимболслоадед | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a0e8930dfa38554f2f09e59753abc7845477171
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194815"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Определяет, если для указанного модуля, заданному идентификатору домена приложения загружаются символы отладки.  
+Определяет, загружаются ли отладочные символы для указанного модуля по заданному идентификатору домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,16 +41,16 @@ int AreSymbolsLoaded (
   
 #### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- [in] Идентификатор домена приложения.  
+ окне Идентификатор домена приложения.  
   
  `guidModule`  
- [in] Уникальный идентификатор для модуля.  
+ окне Уникальный идентификатор модуля.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если отладочные символы загружены, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.  
+ Если отладочные символы загружены, возвращает `S_OK` ; в противном случае возвращает `S_FALSE` .  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кдебугсимболпровидер** , предоставляющего интерфейс [идебугкомплуссимболпровидер](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  
@@ -72,5 +72,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

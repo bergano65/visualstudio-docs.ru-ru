@@ -1,5 +1,5 @@
 ---
-title: Языковая служба и баллы расширения редактора Документы Майкрософт
+title: Точки расширения языковой службы и редактора | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,43 +11,43 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703056"
 ---
-# <a name="language-service-and-editor-extension-points"></a>Языковой сервис и точки расширения редактора
-Редактор предоставляет точки расширения, которые можно расширить в качестве компонентов управляемой рамки расширения (MEF), включая большинство функций языковой службы. Вот основные категории пунктов расширения:
+# <a name="language-service-and-editor-extension-points"></a>Точки расширения языковой службы и редактора
+Редактор предоставляет точки расширения, которые можно расширять как компоненты Managed Extensibility Framework (MEF), включая большинство функций языковой службы. Ниже приведены основные категории точек расширения.
 
 - Типы содержимого
 
 - Типы классификации и форматы классификации
 
-- Поля и прокрутки
+- Поля и полосы прокрутки
 
 - Теги
 
-- Украшения
+- Элементов оформления
 
-- Мышиные процессоры
+- Обработчики мыши
 
-- Обработчики выпадения
+- Удалить обработчики
 
-- Параметры
+- Варианты
 
-- IntelliSense
+- технология IntelliSense
 
 ## <a name="extend-content-types"></a>Расширение типов содержимого
- Типы содержимого — это определения видов текста, обрабатываемых редактором, например, "текст", "код" или "CSharp". Вы определяете новый тип содержимого, <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> объявляя переменную типа и придавая новому типу содержимого уникальное имя. Чтобы зарегистрировать тип содержимого в редакторе, экспортируйте его вместе со следующими атрибутами:
+ Типы содержимого — это определения типов текста, обрабатываемых редактором, например "Text", "Code" или "CSharp". Новый тип содержимого определяется путем объявления переменной типа <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> и присвоения новому типу уникального имени. Чтобы зарегистрировать тип содержимого в редакторе, экспортируйте его вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>— это название типа содержимого.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute> имя типа содержимого.
 
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>— это название типа содержимого, из которого происходит этот тип содержимого. Тип содержимого может наследоваться из нескольких других типов содержимого.
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> имя типа содержимого, производным от которого является этот тип содержимого. Тип содержимого может наследовать от нескольких других типов содержимого.
 
-  Поскольку <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> класс опечатан, его можно экспортировать без параметра типа.
+  Поскольку <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> класс запечатан, его можно экспортировать без параметра типа.
 
-  В следующем примере показаны атрибуты экспорта в определении типа содержимого.
+  В следующем примере показаны атрибуты экспорта для определения типа содержимого.
 
 ```
 [Export]
@@ -57,41 +57,41 @@ ms.locfileid: "80703056"
 internal static ContentTypeDefinition TestContentTypeDefinition;
 ```
 
- Типы содержимого могут основываться на нулевых или более уже существующих типах содержимого. Это встроенные типы:
+ Типы содержимого могут быть основаны на уже существующих типах содержимого (ноль или более). Это встроенные типы:
 
-- Любой: базовый тип содержимого. Родитель всех других типов контента.
+- Any: основной тип содержимого. Родительский объект для всех других типов содержимого.
 
-- Текст: базовый тип для непроекционного контента. Наследует от "любого".
+- Text: базовый тип для содержимого, не относящегося к проекции. Наследуется от any.
 
-- Plaintext: для некодового текста. Наследует от "текста".
+- Обычный текст: для текста, отличного от кода. Наследуется от "Text".
 
-- Код: для кода всех видов. Наследует от "текста".
+- Код: для кода всех типов. Наследуется от "Text".
 
-- Инертный: исключает текст из любого вида обработки. Текст этого типа содержимого никогда не будет применяться к нему.
+- Инерт: исключает текст из любого вида обработки. К тексту этого типа содержимого никогда не применялись никакие расширения.
 
-- Проекция: для содержимого проекционных буферов. Наследует от "любого".
+- Проекция: для содержимого буферов проекции. Наследуется от any.
 
-- Intellisense: для содержания IntelliSense. Наследует от "текста".
+- IntelliSense: для содержимого IntelliSense. Наследуется от "Text".
 
-- Sighelp: подпись помочь. Наследует от "интеллект".
+- Сигхелп: Справка по сигнатурам. Наследует от IntelliSense.
 
-- Sighelp-doc: документация справки подписи. Наследует от "интеллект".
+- Сигхелп-doc: Справочная документация по сигнатурам. Наследует от IntelliSense.
 
-  Вот некоторые из типов контента, которые определяются Visual Studio, и некоторые языки, размещенные в Visual Studio:
+  Это некоторые типы содержимого, определяемые Visual Studio, и некоторые языки, размещенные в Visual Studio:
 
-- Basic
+- Базовый
 
 - C/C++
 
-- Консольный выход
+- консолеаутпут
 
-- C#
+- CSharp
 
 - CSS
 
-- Enc
+- ENC
 
-- НайтиРезультаты
+- финдресултс
 
 - F#
 
@@ -103,27 +103,27 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
 - XML
 
-  Чтобы обнаружить список доступных <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>типов контента, импортируйте , который поддерживает сбор типов контента для редактора. Следующий код импортирует эту услугу как свойство.
+  Чтобы обнаружить список доступных типов содержимого, импортируйте объект <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> , который поддерживает коллекцию типов содержимого для редактора. Следующий код импортирует эту службу как свойство.
 
 ```
 [Import]
 internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 ```
 
- Чтобы связать тип содержимого с расширением имени файла, используйте: <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>
+ Чтобы связать тип содержимого с расширением имени файла, используйте <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> .
 
 > [!NOTE]
-> В Visual Studio расширения имен файлов регистрируются с помощью <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> пакета языковых услуг. Ассоциирует <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> тип содержимого MEF с расширением имени файла, которое было зарегистрировано таким образом.
+> В Visual Studio расширения имен файлов регистрируются с помощью <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> пакета языковой службы. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>Связывает тип содержимого MEF с расширением имени файла, зарегистрированным таким образом.
 
  Чтобы экспортировать расширение имени файла в определение типа содержимого, необходимо включить следующие атрибуты:
 
-- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: определяет расширение имени файла.
+- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: Указывает расширение имени файла.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: определяет тип содержимого.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: указывает тип содержимого.
 
-  Поскольку <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> класс опечатан, его можно экспортировать без параметра типа.
+  Поскольку <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> класс запечатан, его можно экспортировать без параметра типа.
 
-  В следующем примере показаны атрибуты экспорта в расширении имени файла к определению типа содержимого.
+  В следующем примере показано, как экспортировать атрибуты для расширения имени файла в определение типа содержимого.
 
 ```
 [Export]
@@ -132,20 +132,20 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition;
 ```
 
- Управление <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService> ассоциациями между расширениями имен файлов и типами содержимого.
+ <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>Управляет связями между расширениями имен файлов и типами содержимого.
 
 ## <a name="extend-classification-types-and-classification-formats"></a>Расширение типов классификации и форматов классификации
- Типы классификации можно использовать для определения видов текста, для которых требуется различная обработка (например, раскраска текста "ключевое слово" синим и "комментарий" текст зеленый). Определите новый тип классификации, <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> объявив переменную типа и придав ему уникальное имя.
+ Типы классификации можно использовать для определения типов текста, для которых требуется обеспечить разную обработку (например, цвет «ключевое слово» синего цвета и зеленый текст «комментарий»). Определите новый тип классификации, объявляя переменную типа <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> и присвоив ей уникальное имя.
 
- Чтобы зарегистрировать тип классификации с редактором, выведите его вместе со следующими атрибутами:
+ Чтобы зарегистрировать тип классификации в редакторе, экспортируйте его вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: название типа классификации.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя типа классификации.
 
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: название типа классификации, из которого этот тип классификации наследует. Все типы классификации наследуются от "текста", а тип классификации может наследовать сяочку из нескольких других типов классификации.
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: имя типа классификации, от которого наследует данный тип классификации. Все типы классификации наследуются от "Text", и тип классификации может наследовать от нескольких других типов классификации.
 
-  Поскольку <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> класс опечатан, его можно экспортировать без параметра типа.
+  Поскольку <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> класс запечатан, его можно экспортировать без параметра типа.
 
-  В следующем примере показаны атрибуты экспорта в определении типа классификации.
+  В следующем примере показаны атрибуты экспорта для определения типа классификации.
 
 ```
 [Export]
@@ -154,48 +154,48 @@ internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition
 internal static ClassificationTypeDefinition CSharpTestDefinition;
 ```
 
- Обеспечивает <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService> доступ к стандартным классификациям. Встроенные типы классификации включают в себя следующие:
+ <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>Предоставляет доступ к стандартным классификациям. К встроенным типам классификации относятся:
 
 - "text"
 
-- "естественный язык" (вывод из "текста")
+- "естественный язык" (является производным от "Text")
 
-- "формальный язык" (выводизется из "текста")
+- "формальный язык" (является производным от "Text")
 
-- "строка" (производные от "буквального")
+- "String" (является производным от "Literal")
 
-- "характер" (производные от "буквального")
+- "символ" (является производным от "Literal")
 
-- "числовая" (производные от "буквального")
+- "числовое" (является производным от "Literal")
 
-  Набор различных типов ошибок наследуют от <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>. Они включают в себя следующие типы ошибок:
+  Набор различных типов ошибок наследуется от <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition> . Они включают следующие типы ошибок:
 
-- "ошибка синтаксиса"
+- "Синтаксическая ошибка"
 
 - "Ошибка компилятора"
 
 - "другая ошибка"
 
-- "предупреждение"
+- !
 
-  Чтобы обнаружить список доступных <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>типов классификации, импортируйте , который поддерживает сбор типов классификации для редактора. Следующий код импортирует эту услугу как свойство.
+  Чтобы обнаружить список доступных типов классификации, импортируйте объект <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> , который поддерживает коллекцию типов классификации для редактора. Следующий код импортирует эту службу как свойство.
 
 ```
 [Import]
 internal IClassificationTypeRegistryService ClassificationTypeRegistryService { get; set; }
 ```
 
- Можно определить определение формата классификации для нового типа классификации. Выизведите <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> класс и экспортите его с типом, <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>вместе со следующими атрибутами:
+ Можно определить определение формата классификации для нового типа классификации. Создайте производный класс от <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> и экспортируйте его с типом <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition> вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: название формата.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя формата.
 
-- <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: название дисплея формата.
+- <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: отображаемое имя формата.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: определяет, отображается ли формат на странице **шрифтов и цветов** диалогового окна **Options.**
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: указывает, отображается ли формат на странице " **шрифты и цвета** " диалогового окна " **Параметры** ".
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: приоритет формата. Допустимые значения <xref:Microsoft.VisualStudio.Text.Classification.Priority>от .
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: приоритет формата. Допустимые значения: из <xref:Microsoft.VisualStudio.Text.Classification.Priority> .
 
-- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: название типа классификации, к которому отображается этот формат.
+- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: имя типа классификации, с которым сопоставлен этот формат.
 
   В следующем примере показаны атрибуты экспорта в определении формата классификации.
 
@@ -209,39 +209,39 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 internal sealed class TestFormat : ClassificationFormatDefinition
 ```
 
- Чтобы открыть для себя список <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>доступных форматов, импортируйте, который поддерживает коллекцию форматов для редактора. Следующий код импортирует эту услугу как свойство.
+ Чтобы обнаружить список доступных форматов, импортируйте объект <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> , который поддерживает коллекцию форматов для редактора. Следующий код импортирует эту службу как свойство.
 
 ```
 [Import]
 internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
-## <a name="extend-margins-and-scrollbars"></a>Расширить поля и прокрутки
- Поля и прокрутки являются основными элементами представления редактора в дополнение к самому текстовому представлению. Вы можете предоставить любое количество полей в дополнение к стандартным полям, которые отображаются вокруг представления текста.
+## <a name="extend-margins-and-scrollbars"></a>Расширение полей и полос прокрутки
+ Поля и полосы прокрутки — это основные элементы представления редактора в дополнение к самому представлению текста. Помимо стандартных полей, отображаемых вокруг текстового представления, можно указать любое количество полей.
 
- Реализация <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> интерфейса для определения маржи. Необходимо также реализовать <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> интерфейс для создания поля.
+ Реализуйте <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> интерфейс для определения поля. Также необходимо реализовать <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> интерфейс для создания поля.
 
- Чтобы зарегистрировать поставщика маржи с редактором, необходимо экспортировать поставщика вместе со следующими атрибутами:
+ Чтобы зарегистрировать поставщик полей в редакторе, необходимо экспортировать поставщик вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: название поля.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя поля.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: порядок, в котором маржа появляется, по сравнению с другими полями.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: порядок, в котором поле отображается относительно других полей.
 
    Это встроенные поля:
 
-  - "Wpf Горизонтальный Прокрутка"
+  - "Горизонтальная полоса прокрутки WPF"
 
-  - "Вертикальная прокрутка Wpf"
+  - "Вертикальная полоса прокрутки WPF"
 
-  - "Wpf Линия номер маржи"
+  - "Поле номера строки WPF"
 
-    Горизонтальные поля, которые имеют `After="Wpf Horizontal Scrollbar"` атрибут заказа, отображаются ниже встроенной поляны, а горизонтальные поля, которые имеют атрибут заказа, `Before ="Wpf Horizontal Scrollbar"` отображаются выше встроенной поляны. Правые вертикальные поля, которые `After="Wpf Vertical Scrollbar"` имеют атрибут заказа, отображаются справа от панели прокрутки. Левые вертикальные края, которые `After="Wpf Line Number Margin"` имеют атрибут заказа, появляются слева от поля номера линии (если она видна).
+    Горизонтальные поля, для которых атрибут order имеет `After="Wpf Horizontal Scrollbar"` значение, отображаются под встроенным полем, а горизонтальные поля с атрибутом Order элемента `Before ="Wpf Horizontal Scrollbar"` отображаются над встроенным полем. Правая вертикальные поля, для которых атрибут order имеет значение, `After="Wpf Vertical Scrollbar"` отображаются справа от полосы прокрутки. Левые вертикальные поля, для которых атрибут order имеет значение, `After="Wpf Line Number Margin"` отображаются слева от поля номера строки (если оно отображается).
 
-- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: вид поля (левый, правый, верхний или нижний).
+- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: тип поля (слева, справа, сверху или снизу).
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: вид контента (например, "текст" или "код"), для которого ваша маржа действительна.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, "Text" или "Code"), для которого действует поле.
 
-  В следующем примере показаны экспортные атрибуты на марже поставщика для маржи, которая кажется справа от маржи числа строк.
+  В следующем примере показаны атрибуты экспорта в поставщике полей для поля, расположенного справа от поля номера строки.
 
 ```
 [Export(typeof(IWpfTextViewMarginProvider))]
@@ -251,49 +251,49 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 [ContentType("text")]
 ```
 
-## <a name="extend-tags"></a>Расширить теги
- Теги — это способ связывания данных с различными видами текста. Во многих случаях связанные данные отображаются как визуальный эффект, но не все теги имеют визуальную презентацию. Вы можете определить свой собственный <xref:Microsoft.VisualStudio.Text.Tagging.ITag>вид тега, реализовав. Необходимо также <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> реализовать, чтобы предоставить теги для заданного <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> набора текстовых диапазонов, а также предоставить теггер. Вы должны экспортировать поставщика tagger вместе со следующими атрибутами:
+## <a name="extend-tags"></a>Расширение тегов
+ Теги — это способ связывания данных с различными видами текста. Во многих случаях связанные данные отображаются в виде визуальных эффектов, но не все теги имеют визуальную презентацию. Можно определить собственный тип тега, реализовав <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . Кроме того, необходимо реализовать, <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> чтобы предоставить теги для заданного набора текстовых диапазонов, а также <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> для предоставления средства создания тегов. Поставщик тегов необходимо экспортировать вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: вид содержимого (например, "текст" или "код"), для которого ваш тег действителен.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, "Text" или "Code"), для которого тег является допустимым.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: вид тега.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: тип тега.
 
-  В следующем примере показаны атрибуты экспорта на поставщике tagger.
+  В следующем примере показаны атрибуты экспорта для поставщика тегов.
 
-\<CodeContentPlaceHolder></CodeContentPlaceHolder> 8 Следующие виды тегов встроены:
+\<CodeContentPlaceHolder>8 </CodeContentPlaceHolder> следующие типы тегов являются встроенными:
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: связанный <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>с .
+- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: связан с <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> .
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: связанные с типами ошибок.
+- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: связан с типами ошибок.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: связанс с украшением.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: связан с элементом оформления.
 
   > [!NOTE]
-  > Для примера <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, см. определение HighlightWordTag в [Пошагово: Выделение текста](../extensibility/walkthrough-highlighting-text.md).
+  > Пример см. в описании <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> определения хигхлигхтвордтаг в разделе [Пошаговое руководство. выделение текста](../extensibility/walkthrough-highlighting-text.md).
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: связанные с регионами, которые могут быть расширены или рухнули в изложении.
+- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: связан с регионами, которые можно развернуть или свернуть в структурировании.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: определяет пространство, занимаемое украшением в текстовом представлении. Для получения дополнительной информации об украшениях для переговоров о космосе см.
+- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: определяет пространство, занимаемое элементом оформления в текстовом представлении. Дополнительные сведения о оформлении, посвященном согласованию пространства, см. в следующем разделе.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: обеспечивает автоматическое расстояние и размер для украшения.
+- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: предоставляет автоматические промежутки и размеры для оформления.
 
-  Чтобы найти и использовать теги для буферов и представлений, импортируйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> или <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>, которые дают вам запрашиваемый <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> тип. Следующий код импортирует эту услугу как свойство.
+  Чтобы найти и использовать теги для буферов и представлений, импортируйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> или <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService> , чтобы предоставить <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> запрошенный тип. Следующий код импортирует эту службу как свойство.
 
 ```
 [Import]
 internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get; set; }
 ```
 
-#### <a name="tags-and-markerformatdefinitions"></a>Теги и маркерФорматныеОпределения
- Можно расширить <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> класс, чтобы определить внешний вид тега. Вы должны экспортировать свой <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>класс (как) со следующими атрибутами:
+#### <a name="tags-and-markerformatdefinitions"></a>Теги и Маркерформатдефинитионс
+ Можно расширить класс, <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> чтобы определить внешний вид тега. Необходимо экспортировать класс (как <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition> ) со следующими атрибутами:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя, используемое для ссылки на этот формат
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: это приводит к тому, что формат появляется в uI
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: это приводит к тому, что формат отображается в пользовательском интерфейсе
 
-  В конструкторе определяется имя дисплея и внешний вид тега. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>определяет цвет заполнения и <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> определяет цвет границы. Это <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> локальное название определения формата.
+  В конструкторе определяется отображаемое имя и внешний вид тега. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> Определяет цвет заливки и <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> определяет цвет границы. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>— Это Локализуемое имя определения формата.
 
-  Ниже приводится пример определения формата:
+  Ниже приведен пример определения формата.
 
 ```
 [Export(typeof(EditorFormatDefinition))]
@@ -312,21 +312,21 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 
 ```
 
- Чтобы применить это определение формата к тегу, отобрадайте имя, установленное в атрибуте имени класса (а не имя дисплея).
+ Чтобы применить это определение формата к тегу, сослаться на имя, заданное в атрибуте Name класса (не отображаемое имя).
 
 > [!NOTE]
-> Для примера <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, см. выделитеWordFormatОпределение класса в [Пошаговая: Выделение текста](../extensibility/walkthrough-highlighting-text.md).
+> Пример см <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> . в разделе класс хигхлигхтвордформатдефинитион в [разделе Пошаговое руководство. выделение текста](../extensibility/walkthrough-highlighting-text.md).
 
-## <a name="extend-adornments"></a>Продлить украшения
- Украшения определяют визуальные эффекты, которые могут быть добавлены либо к тексту, который отображается в текстовом представлении, либо к самому текстовому представлению. Вы можете определить свой собственный <xref:System.Windows.UIElement>украшение, как любой тип .
+## <a name="extend-adornments"></a>Расширить декоративные элементы
+ Декоративные элементы определяют визуальные эффекты, которые могут быть добавлены к тексту, отображаемому в текстовом представлении, или к самому текстовому представлению. Можно определить собственное оформление как любой тип <xref:System.Windows.UIElement> .
 
- В вашем классе украшений, <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>вы должны объявить . Чтобы зарегистрировать слой украшения, вывешив его вместе со следующими атрибутами:
+ В классе оформления необходимо объявить <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> . Чтобы зарегистрировать слой оформления, экспортируйте его вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: название украшения.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя оформления.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: заказ украшения по отношению к другим слоям украшения. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> определяет четыре слоя по умолчанию: выбор, выделение, Caret и Текст.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: упорядоченность оформления по отношению к другим слоям оформления. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> определяет четыре слоя по умолчанию: выделение, структуризацию, курсор и текст.
 
-  В следующем примере показаны атрибуты экспорта в определении слоя украшения.
+  В следующем примере показаны атрибуты экспорта для определения слоя оформления.
 
 ```
 [Export]
@@ -335,13 +335,13 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 internal AdornmentLayerDefinition testLayerDefinition;
 ```
 
- Необходимо создать второй класс, <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> который реализует <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> и обрабатывает свое событие, мгновенно украшая. Вы должны экспортировать этот класс вместе со следующими атрибутами:
+ Необходимо создать второй класс, который реализует <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> и обрабатывает его <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> событие, создавая экземпляр оформления. Этот класс необходимо экспортировать вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: вид содержимого (например, "текст" или "код"), для которого украшение является действительным.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, "Text" или "Code"), для которого допустимо автооформление.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: вид представления текста, для которого это украшение является действительным. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> в основном используется для текстовых представлений файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>используется для текстовых представлений, которые пользователь может отсеить или перемещать с помощью мыши и клавиатуры. Примерами <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представлений являются текстовый вид редактора и окно **вывода.**
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: вид текстового представления, для которого является допустимым данное оформление. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например, в <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> основном используется для текстовых представлений файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> используется для текстовых представлений, которые пользователь может изменять или перемещать с помощью мыши и клавиатуры. Примерами <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представлений являются текстовое представление редактора и окно **вывода** .
 
-  В следующем примере показаны экспортные атрибуты поставщика украшений.
+  В следующем примере показаны атрибуты экспорта для поставщика оформлений.
 
 ```
 [Export(typeof(IWpfTextViewCreationListener))]
@@ -350,9 +350,9 @@ internal AdornmentLayerDefinition testLayerDefinition;
 internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 ```
 
- Украшение, переговорное в пространстве, занимает пространство на том же уровне, что и текст. Чтобы создать такого рода украшения, необходимо определить класс <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>тегов, который наследует от , который определяет количество места, занимаемое украшением.
+ Элемент оформления, ориентированный на пробелы, занимает место на том же уровне, что и текст. Чтобы создать этот тип оформления, необходимо определить класс тегов, который наследует от <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> , который определяет объем пространства, занимаемого декоративным элементом.
 
- Как и во всех украшениях, вы должны экспортировать определение слоя украшения.
+ Как и во всех оформлениях, необходимо экспортировать определение слоя оформления.
 
 ```
 [Export]
@@ -361,17 +361,17 @@ internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 internal AdornmentLayerDefinition testAdornmentLayer;
 ```
 
- Чтобы мгновенно украсить пространство-переговоры, вы должны создать <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>класс, который реализует, <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> в дополнение к классу, который реализует (как и другие виды украшений).
+ Чтобы создать экземпляр элемента оформления уровня пространства, необходимо создать класс, реализующий <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> , в дополнение к классу, реализующему <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> (как и другие виды оформлений).
 
- Чтобы зарегистрировать поставщика tagger, вы должны экспортировать его вместе со следующими атрибутами:
+ Для регистрации поставщика тегов необходимо экспортировать его вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: вид контента (например, "текст" или "код"), для которого ваше украшение является действительным.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, "Text" или "Code"), для которого допустимо ваше Оформление.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: вид представления текста, для которого этот тег или украшение является действительным. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> в основном используется для текстовых представлений файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>используется для текстовых представлений, которые пользователь может отсеить или перемещать с помощью мыши и клавиатуры. Примерами <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представлений являются текстовый вид редактора и окно **вывода.**
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: вид текстового представления, для которого является допустимым этот тег или декоративный элемент. Класс <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> имеет набор предопределенных ролей представления текста. Например, в <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> основном используется для текстовых представлений файлов. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> используется для текстовых представлений, которые пользователь может изменять или перемещать с помощью мыши и клавиатуры. Примерами <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> представлений являются текстовое представление редактора и окно **вывода** .
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: вид тега или украшения, которые вы определили. Вы должны добавить секунду <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> для <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: тип определенного тега или оформленного обрамления. Необходимо добавить секунды <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> для <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> .
 
-  В следующем примере отображаются атрибуты экспорта на поставщике tagger для тега украшения для космических переговоров.
+  В следующем примере показаны атрибуты экспорта в поставщике тегов для тега оформления, используемого в качестве пространства.
 
 ```
 [Export(typeof(ITaggerProvider))]
@@ -382,10 +382,10 @@ internal AdornmentLayerDefinition testAdornmentLayer;
 internal sealed class TestTaggerProvider : ITaggerProvider
 ```
 
-## <a name="extending-mouse-processors"></a>Расширение процессоров мыши
- Можно добавить специальную обработку для ввода мыши. Создайте класс, который <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> наследует и переопределить события мыши для ввода, который вы хотите обрабатывать. Необходимо также <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> реализовать во втором классе и <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> экспортировать его вместе с тем, который определяет вид содержимого (например, "текст" или "код"), для которого обработчик мыши действителен.
+## <a name="extending-mouse-processors"></a>Расширение обработчиков мыши
+ Можно добавить специальную обработку для ввода с помощью мыши. Создайте класс, который наследует от <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> и переопределяет события мыши для входных данных, которые требуется обойти. Также необходимо реализовать <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> во втором классе и экспортировать его вместе с параметром <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> , который указывает тип содержимого (например, "Text" или "Code"), для которого обработчик мыши является допустимым.
 
- В следующем примере показаны экспортные атрибуты поставщика процессоров мыши.
+ В следующем примере показаны атрибуты экспорта для поставщика обработчика мыши.
 
 ```
 [Export(typeof(IMouseProcessorProvider))]
@@ -395,62 +395,62 @@ internal sealed class TestTaggerProvider : ITaggerProvider
 internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 ```
 
-## <a name="extend-drop-handlers"></a>Расширить обработчики сбросов
- Можно настроить поведение обработчиков капель для определенных видов текста, <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> создав класс, <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> который реализует, и второй класс, который реализует для создания обработчика капель. Вы должны экспортировать обработчик капли вместе со следующими атрибутами:
+## <a name="extend-drop-handlers"></a>Расширение обработчиков Drop
+ Можно настроить поведение обработчиков Drop для определенных типов текста, создав класс, реализующий, <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> и второй класс, реализующий <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> для создания обработчика перетаскивания. Необходимо экспортировать обработчик перетаскивания вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: текстовый формат, для которого этот обработчик капли действителен. Следующие форматы обрабатываются в порядке приоритета от самого высокого до самого низкого:
+- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: формат текста, для которого этот обработчик перетаскивания является допустимым. Следующие форматы обрабатываются в порядке приоритета от самого высокого до самого низкого:
 
   1. Любой пользовательский формат
 
-  2. FileDrop
+  2. филедроп
 
-  3. Улучшенныйметафил
+  3. енханцедметафиле
 
-  4. WaveAudio
+  4. вавеаудио
 
-  5. Riff
+  5. Metallica
 
-  6. Dif
+  6. DIF
 
   7. Локаль
 
   8. Палитра
 
-  9. PenData
+  9. пендата
 
   10. Упорядочиваемый уровень изоляции
 
-  11. Символическаяссылка
+  11. SymbolicLink
 
-  12. Xaml
+  12. Кода
 
-  13. XamlPackage
+  13. ксамлпаккаже
 
   14. Tiff
 
   15. Bitmap
 
-  16. Dib
+  16. Рисунок
 
-  17. MetafilePicture
+  17. метафилепиктуре
 
   18. CSV
 
   19. System.String
 
-  20. Html Формат
+  20. Формат HTML
 
-  21. UnicodeText
+  21. уникодетекст
 
-  22. OEMText
+  22. оемтекст
 
-  23. Text
+  23. Текст
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя обработчика капли.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя обработчика перетаскивания.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: заказ обработчика капли до или после обработчика капли по умолчанию. Обработчик падения по умолчанию для Visual Studio называется "DefaultFileDropHandler".
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: упорядочение обработчика перетаскивания до или после обработчика перетаскивания по умолчанию. Обработчик удаления по умолчанию для Visual Studio называется "Дефаултфиледрофандлер".
 
-  В следующем примере показаны атрибуты экспорта в поставщике обработчиков капель.
+  В следующем примере показаны атрибуты экспорта для поставщика обработчика перетаскивания.
 
 ```
 [Export(typeof(IDropHandlerProvider))]
@@ -460,10 +460,10 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 internal class TestDropHandlerProvider : IDropHandlerProvider
 ```
 
-## <a name="extending-editor-options"></a>Расширение вариантов редактора
- Параметры можно определить, чтобы они были действительны только в определенной области, например, в текстовом представлении. Редактор предоставляет этот набор предопределенных вариантов: параметры редактора, параметры просмотра и параметры представления Windows Presentation Foundation (WPF). Эти варианты можно <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions> <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions>найти <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions>в , и .
+## <a name="extending-editor-options"></a>Расширение параметров редактора
+ Можно определить допустимые параметры только в определенной области, например в текстовом представлении. Редактор предоставляет этот набор предопределенных параметров: параметры редактора, параметры представления и параметры представления Windows Presentation Foundation (WPF). Эти параметры можно найти в <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions> , <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions> и <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions> .
 
- Чтобы добавить новую опцию, вывемите класс из одного из этих классов определения вариантов:
+ Чтобы добавить новый параметр, сделайте класс производным от одного из следующих классов определения параметров:
 
 - <xref:Microsoft.VisualStudio.Text.Editor.EditorOptionDefinition%601>
 
@@ -471,32 +471,32 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.WpfViewOptionDefinition%601>
 
-  Ниже приводится следующий пример, как экспортировать определение опциона, который имеет значение Boolean.
+  В следующем примере показано, как экспортировать определение параметра, имеющее логическое значение.
 
 ```
 [Export(typeof(EditorOptionDefinition))]
 internal sealed class TestOption : EditorOptionDefinition<bool>
 ```
 
-## <a name="extend-intellisense"></a>Расширить IntelliSense
- IntelliSense — это общий термин для группы функций, предоставляющих информацию о структурированном тексте и завершении заявления для него. Эти функции включают в себя завершение оператора, помощь в подписи, Быстрая информация и лампочки. Завершение выполнения заявления помогает пользователям правильно введите ключевое слово или имя пользователя. Подпись помогает отображать подпись или подписи для метода, который пользователь только что набрал. Быстрая информация отображает полную подпись для типа или имени члена, когда мышь опирается на него. Лампочка предоставляет дополнительные действия для определенных идентификаторов в определенных контекстах, например, переименование всех случаев переменной после того, как одно явление было переименовано.
+## <a name="extend-intellisense"></a>Расширение IntelliSense
+ Технология IntelliSense является общим термином для группы функций, предоставляющих сведения о структурированном тексте и завершении операторов для нее. К таким функциям относятся завершение операторов, Справка по сигнатурам, краткие сведения и лампочки. Завершение операторов помогает пользователям правильно ввести ключевое слово языка или имя члена. Справка по сигнатуре отображает сигнатуру или подписи для метода, который только что ввел пользователь. Краткие сведения отображает полную сигнатуру для имени типа или члена при наведении на нее курсора мыши. Лампочка предоставляет дополнительные действия для определенных идентификаторов в определенных контекстах, например переименование всех вхождений переменной после того, как одно вхождение было переименовано.
 
- Дизайн функции IntelliSense во всех случаях одинаков:
+ Структура функции IntelliSense во всех случаях очень одинакова:
 
-- Брокер IntelliSense *broker* отвечает за общий процесс.
+- Для общего процесса отвечает *брокер* IntelliSense.
 
-- *Сеанс* IntelliSense представляет последовательность событий между запуском докладчика и коммитталом или отменой выбора. Сеанс обычно запускается каким-то жестом пользователя.
+- *Сеанс* IntelliSense представляет последовательность событий между триггерами выступающего и фиксацией или отменой выбора. Сеанс обычно запускается некоторым жестом пользователя.
 
-- *Контроллер* IntelliSense отвечает за принятие решения о том, когда сеанс должен начаться и закончиться. Он также принимает решение о том, когда информация должна быть совершена и когда сессия должна быть отменена.
+- *Контроллер* IntelliSense отвечает за принятие решения о начале и завершении сеанса. Также принимает решение о том, следует ли зафиксировать информацию и время отмены сеанса.
 
-- *Источник* IntelliSense предоставляет содержимое и определяет наилучший матч.
+- *Источник* IntelliSense предоставляет содержимое и определяет лучшее соответствие.
 
-- *Ведущий* IntelliSense отвечает за отображение содержимого.
+- Модуль отображения *IntelliSense отвечает* за отображение содержимого.
 
-  В большинстве случаев мы рекомендуем предоставить хотя бы источник и контроллер. Вы также можете предоставить докладчика, если вы хотите настроить дисплей.
+  В большинстве случаев рекомендуется предоставлять по крайней мере источник и контроллер. Кроме того, можно предоставить выступающий, если требуется настроить отображение.
 
 ### <a name="implement-an-intellisense-source"></a>Реализация источника IntelliSense
- Чтобы настроить исходный чеисточник, необходимо реализовать один (или более) из следующих интерфейсов исходного кода:
+ Для настройки источника необходимо реализовать один (или несколько) следующих исходных интерфейсов:
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
@@ -507,9 +507,9 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>был уволен в пользу <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> является нерекомендуемым в пользу <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> .
 
- Кроме того, необходимо реализовать поставщика того же вида:
+ Кроме того, необходимо реализовать поставщик такого же типа:
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
@@ -520,17 +520,17 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>был уволен в пользу <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> является нерекомендуемым в пользу <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> .
 
- Вы должны экспортировать поставщика вместе со следующими атрибутами:
+ Необходимо экспортировать поставщик вместе со следующими атрибутами:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя источника.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: вид содержимого (например, "текст" или "код"), к которому применяется источник.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, "Text" или "Code"), к которому применяется источник.
 
 - <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: порядок, в котором должен отображаться источник (по отношению к другим источникам).
 
-- В следующем примере показаны атрибуты экспорта в поставщике источников завершения.
+- В следующем примере показаны атрибуты экспорта для поставщика источника завершения.
 
 ```
 Export(typeof(ICompletionSourceProvider))]
@@ -540,24 +540,24 @@ Export(typeof(ICompletionSourceProvider))]
 internal class TestCompletionSourceProvider : ICompletionSourceProvider
 ```
 
- Для получения дополнительной информации о реализации источников IntelliSense, см.
+ Дополнительные сведения о реализации источников IntelliSense см. в следующих пошаговых руководствах.
 
-- [Прохождение: Отображение инструментов quickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [Пошаговое руководство. Отображение подсказок краткие сведения](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
-- [Пошаговая прогулка: Помощь в отображении подписи](../extensibility/walkthrough-displaying-signature-help.md)
+- [Пошаговое руководство. Отображение справки по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)
 
-- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
 
 ### <a name="implement-an-intellisense-controller"></a>Реализация контроллера IntelliSense
- Чтобы настроить контроллер, необходимо реализовать <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> интерфейс. Кроме того, необходимо реализовать поставщика контроллеров вместе со следующими атрибутами:
+ Чтобы настроить контроллер, необходимо реализовать <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> интерфейс. Кроме того, необходимо реализовать поставщик контроллера вместе со следующими атрибутами:
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: имя контроллера.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>— имя контроллера.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: вид содержимого (например, "текст" или "код"), к которому применяется контроллер.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: тип содержимого (например, "Text" или "Code"), к которому применяется контроллер.
 
 - <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: порядок, в котором должен отображаться контроллер (по отношению к другим контроллерам).
 
-  В следующем примере показаны экспортные атрибуты поставщика контроллеров завершения.
+  В следующем примере показаны атрибуты экспорта в поставщике контроллера завершения.
 
 ```
 Export(typeof(IIntellisenseControllerProvider))]
@@ -567,6 +567,6 @@ Export(typeof(IIntellisenseControllerProvider))]
 internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvider
 ```
 
- Для получения дополнительной информации об использовании контроллеров IntelliSense см.
+ Дополнительные сведения об использовании контроллеров IntelliSense см. в следующих пошаговых руководствах.
 
-- [Прохождение: Отображение инструментов quickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [Пошаговое руководство. Отображение подсказок краткие сведения](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

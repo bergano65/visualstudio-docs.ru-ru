@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2918826d6923efa3db42f4f572c416b9668513a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660888"
 ---
 # <a name="code-snippet-picker"></a>Выбор фрагмента кода
@@ -31,7 +31,7 @@ ms.locfileid: "72660888"
 
 - [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] — щелкните правой кнопкой мыши в нужном месте редактора кода и в открывшемся контекстном меню выберите пункт **Вставить фрагмент**.
 
-- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] — щелкните правой кнопкой мыши в нужном месте редактора кода и в открывшемся контекстном меню выберите пункт **Вставить фрагмент** или **Разместить во фрагменте**.
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] — Щелкните правой кнопкой мыши в нужном месте редактора кода, чтобы открыть контекстное меню, и выберите команду **Вставить фрагмент** или **окружить**.
 
 - [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] — **средство выбора фрагмента кода** недоступно.
 
@@ -52,5 +52,5 @@ ms.locfileid: "72660888"
 
  Список элементов список фрагментов кода, доступных для вставки, или список папок, содержащих фрагменты кода. Чтобы вставить фрагмент или развернуть папку, выберите требуемый элемент и нажмите клавишу ВВОД.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  Рекомендации [по использованию фрагментов кода](../../ide/best-practices-for-using-code-snippets.md) [Visual Basic фрагментах кода IntelliSense](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643) [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md) [Практическое руководство. Использование окружающих фрагментов кода](../../ide/how-to-use-surround-with-code-snippets.md)

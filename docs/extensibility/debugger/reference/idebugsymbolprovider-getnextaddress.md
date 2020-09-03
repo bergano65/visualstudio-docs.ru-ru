@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextАдрес Документы Майкрософт
+title: 'Идебугсимболпровидер:: Жетнекстаддресс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719194"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Получает адрес отладки, который следует за заданным адресом отладки в методе.
+Возвращает адрес отладки, следующий за заданным адресом отладки в методе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Учитывая адрес отладки.
+окне Заданный адрес отладки.
 
 `fStatementOnly`\
-(в) Если true, ограничивает адреса отладки одним утверждением.
+окне Если значение — TRUE, адреса отладки ограничиваются одной инструкцией.
 
 `ppAddress`\
-(ваут) Возвращает следующий адрес отладки.
+заполняет Возвращает следующий адрес отладки.
 
 ## <a name="return-value"></a>Возвращаемое значение
- Возвращает действительный, `HRESULT`как правило, S_OK.
+ Возвращает допустимый `HRESULT` , обычно S_OK.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

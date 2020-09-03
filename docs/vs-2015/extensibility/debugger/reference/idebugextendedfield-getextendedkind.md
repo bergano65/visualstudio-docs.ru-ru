@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedField::GetExtendedKind | Документация Майкрософт
+title: 'Идебужекстендедфиелд:: Жетекстендедкинд | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe3289652dd7880bd902f397e0c76584fdcda0ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148961"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает значение указанного поля расширенного типа.  
+Извлекает указанный тип расширенного поля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,10 +39,10 @@ int GetExtendedKind(
   
 #### <a name="parameters"></a>Параметры  
  `pdwKind`  
- [in, out] Значение из [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) перечисление, определяющее тип поля.  
+ [вход, выход] Значение из перечисления [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) , определяющее тип поля.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

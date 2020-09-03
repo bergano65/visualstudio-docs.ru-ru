@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660868"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
@@ -51,5 +51,5 @@ ms.locfileid: "72660868"
 
  Правила использования включают или отключает правила использования. Вы также можете расширить эту запись, чтобы включить или отключить отдельные правила.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Обзор анализа кода [предупреждений управляемого](../../code-quality/code-analysis-for-managed-code-warnings.md) кода для анализа управляемого [кода](../../code-quality/code-analysis-for-managed-code-overview.md) [. Пошаговое руководство. анализ управляемого кода на предмет дефектов кода](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

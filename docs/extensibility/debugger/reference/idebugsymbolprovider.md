@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider Документы Майкрософт
+title: Идебугсимболпровидер | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719169"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-Этот интерфейс представляет собой поставщик символов, который предоставляет символы и типы, возвращая их в поле.
+Этот интерфейс представляет поставщик символов, который предоставляет символы и типы, возвращая их в виде полей.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,44 +28,44 @@ ms.locfileid: "80719169"
 IDebugSymbolProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
-Поставщик символов должен реализовать этот интерфейс для предоставления информации о символе и введите его оценщику выражения.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+Поставщик символов должен реализовать этот интерфейс для передачи сведений о символах и типах в средство оценки выражений.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
-Этот интерфейс получен с помощью `CoCreateInstance` функции COM (для неуправляемых поставщиков символов) или путем загрузки соответствующей управляемой сборки кода и мгновенного поставщика символов на основе информации, найденной в этой сборке. Двигатель отладки мгновляет поставщика символов работать в координации с оценщиком выражения. См. Пример для одного подхода к мгновенному воспроизведению этого интерфейса.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+Этот интерфейс получается с помощью функции COM `CoCreateInstance` (для неуправляемых поставщиков символов) или путем загрузки соответствующей сборки управляемого кода и создания экземпляра поставщика символов на основе информации, найденной в этой сборке. Модуль отладки создает экземпляр поставщика символов для работы в координации с вычислителем выражений. См. пример для одного из подходов к созданию экземпляра этого интерфейса.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
-В следующей таблице показаны методы `IDebugSymbolProvider`.
+В следующей таблице показаны методы `IDebugSymbolProvider` .
 
 |Метод|Описание|
 |------------|-----------------|
-|`Initialize`|Не рекомендуется. Не используйте.|
-|`Uninitialize`|Не рекомендуется. Не используйте.|
-|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Получает поле, содержащее адрес отладки.|
-|`GetField`|Не рекомендуется. Не используйте.|
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Карты позиции документа в массив адресов отладки.|
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Карты контекста документа в массив адресов отладки.|
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Карты адреса отладки в контексте документа.|
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Получает язык, используемый для компиляции кода по адресу отладки.|
-|`GetGlobalContainer`|Не рекомендуется. Не используйте.|
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Получает поле, представляющее полностью квалифицированное название метода.|
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Получает тип поля класса, представляющий полностью квалифицированное имя класса.|
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Создает регистратор для пространства имен, связанных с адресом отладки.|
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Отображает имя символа к типу символа.|
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Получает адрес отладки, который следует за заданным адресом отладки в методе.|
+|`Initialize`|Не рекомендуется. Не используется.|
+|`Uninitialize`|Не рекомендуется. Не используется.|
+|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Возвращает поле, содержащее адрес отладки.|
+|`GetField`|Не рекомендуется. Не используется.|
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Сопоставляет расположение документа с массивом адресов отладки.|
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Сопоставляет контекст документа с массивом адресов отладки.|
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Сопоставляет адрес отладки с контекстом документа.|
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Возвращает язык, используемый для компиляции кода по адресу отладки.|
+|`GetGlobalContainer`|Не рекомендуется. Не используется.|
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Возвращает поле, представляющее полное имя метода.|
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Возвращает тип поля класса, представляющий полное имя класса.|
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Создает перечислитель для пространств имен, связанных с адресом отладки.|
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Сопоставляет имя символа с типом символа.|
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Возвращает адрес отладки, следующий за заданным адресом отладки в методе.|
 
-## <a name="remarks"></a>Примечания
-Этот интерфейс карты документ позиции в отладки адреса и наоборот.
+## <a name="remarks"></a>Remarks
+Этот интерфейс сопоставляет позиции документа с адресами отладки и наоборот.
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Пример
-Этот пример показывает, как мгновенно гостев символ, учитывая его GUID (отладка двигатель должен знать это значение).
+В этом примере показано, как создать экземпляр поставщика символов с учетом его GUID (обработчик отладки должен иметь это значение).
 
 ```cpp
 // A debug engine uses its own symbol provider and would know the GUID
@@ -103,5 +103,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

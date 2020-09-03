@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014634"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера
@@ -78,13 +79,13 @@ ms.locfileid: "86014634"
 
 6. В поле **имя** введите **вебпартноде**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **вебпартноде** в **Обозреватель решений**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **вебпартноде** в **Обозреватель решений**.
 
 #### <a name="to-create-the-extension-project"></a>Создание проекта расширения
 
 1. В **Обозреватель решений**откройте контекстное меню узла решения, выберите **Добавить**, а затем выберите **Новый проект**.
 
-2. В диалоговом окне **Новый проект** разверните узлы **Visual C#** или **Visual Basic** , а затем выберите **Windows**.
+2. В диалоговом окне  **Новый проект** разверните узлы **Visual C#** или **Visual Basic** , а затем выберите **Windows**.
 
 3. В верхней части диалогового окна выберите **.NET Framework 4,5** в списке версий .NET Framework.
 
@@ -92,7 +93,7 @@ ms.locfileid: "86014634"
 
 5. В поле **имя** введите **вебпартнодикстенсион**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **вебпартнодикстенсион** в решение и открывает файл кода Class1 по умолчанию.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **вебпартнодикстенсион** в решение и открывает файл кода Class1 по умолчанию.
 
 6. Удалите файл кода Class1 из проекта.
 

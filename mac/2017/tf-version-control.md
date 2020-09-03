@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950593"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Подключение к системе управления версиями Team Foundation
@@ -117,7 +117,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 В коллекции Visual Studio для Mac есть расширение системы управления версиями Team Foundation, которое предлагает ограниченную поддержку для подключения к TFVC. Расширение не поддерживается и имеет несколько известных проблем, поэтому при его использовании ваша работа может отличаться.
 
-Чтобы установить расширение, запустите Visual Studio для Mac и выберите меню **Visual Studio > Расширения**. На вкладке **Gallery** выберите **Version Control > Team Foundation Version Control for TFS and Azure DevOps** и щелкните **Установить...** .
+Чтобы установить расширение, запустите Visual Studio для Mac и выберите меню **Visual Studio > Расширения**. На вкладке **Gallery** выберите **Version Control > Team Foundation Version Control for TFS and Azure DevOps** и щелкните **Установить...**.
 
 ![Диспетчер расширений](media/tfvc-install.png)
 
@@ -131,7 +131,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 ### <a name="using-the-extension"></a>Использование расширения
 
-После установки расширения в меню выберите **Version Control > TFS/Azure DevOps > Open from Remote Repository...** .
+После установки расширения в меню выберите **Version Control > TFS/Azure DevOps > Open from Remote Repository...**.
 
 ![Элемент меню, чтобы открыть расширение](media/tfvc-source-control-explorer-devops.png)
 
@@ -197,7 +197,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 - Извлечение и возврат файлов
 - Блокировка и разблокировка файлов
 - Добавление, удаление и переименование файлов
-- Просмотр журнала
+- Просмотр истории
 - Сравнивать изменения.
 
 Многие из этих действий доступны посредством контекстных действий с проектом:
@@ -237,8 +237,8 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 Для проверки подлинности связи с сервером можно использовать следующие параметры:
 
-- Oauth
-- Basic
+- OAuth
+- Базовый
 - Ntlm
 
 Для использования обычной проверки подлинности нужно включить **альтернативные учетные данные** в Azure DevOps Services, выполнив следующие действия:

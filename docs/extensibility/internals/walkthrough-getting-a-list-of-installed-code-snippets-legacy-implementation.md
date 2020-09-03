@@ -1,5 +1,5 @@
 ---
-title: Получение списка установленных фрагментов кода (Наследие) Документы Майкрософт
+title: Получение списка установленных фрагментов кода (прежние версии) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703655"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство. Получение списка фрагментов кода (реализация прежних версий)
-Фрагмент кода — это фрагмент кода, который может быть вставлен в исходный буфер либо с командой меню (что позволяет выбрать среди списка установленных фрагментов кода), либо путем выбора фрагмента ярлыка из списка завершения IntelliSense.
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство. Получение списка установленных фрагментов кода (реализация прежних версий)
+Фрагмент кода — это фрагмент кода, который можно вставить в исходный буфер с помощью команды меню (которая позволяет выбрать из списка установленных фрагментов кода) или выбрать ярлык фрагмента из списка завершения IntelliSense.
 
- Метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> получает все фрагменты кода для определенного языка GUID. Ярлыки для этих фрагментов могут быть вставлены в список завершения IntelliSense.
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>Метод получает все фрагменты кода для определенного идентификатора GUID языка. Сочетания клавиш для этих фрагментов можно вставить в список завершения IntelliSense.
 
- Подробную информацию о реализации фрагментов кода в языковой службе управляемого пакета (MPF) можно просмотреть в службе поддержки [фрагментов кода в Программе Legacy Language Service.](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+ Дополнительные сведения о реализации фрагментов кода в языковой службе платформы управляемых пакетов (MPF) см. [в разделе Поддержка фрагментов кода в языковой службе прежних версий](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) .
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>Для получения списка фрагментов кода
+### <a name="to-retrieve-a-list-of-code-snippets"></a>Получение списка фрагментов кода
 
-1. Следующий код показывает, как получить список фрагментов кода для данного языка. Результаты хранятся в <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> массиве структур. Этот метод использует <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> статический <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> метод, <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> чтобы получить интерфейс от службы. Тем не менее, вы также можете использовать поставщика <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> услуг, предоставленных вашему VSPackage и вызвать метод.
+1. В следующем коде показано, как получить список фрагментов кода для данного языка. Результаты хранятся в массиве <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> структур. Этот метод использует статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> метод для получения <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> интерфейса из <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> службы. Однако можно также использовать поставщик услуг, предоставленный для VSPackage, и вызвать <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> метод.
 
     ```csharp
     using System;
@@ -101,12 +101,12 @@ ms.locfileid: "80703655"
     }
     ```
 
-### <a name="to-call-the-getsnippets-method"></a>Вызов метода GetSnippets
+### <a name="to-call-the-getsnippets-method"></a>Вызов метода snippet
 
-1. Следующий метод показывает, `GetSnippets` как вызвать метод по завершении операции разбора. Метод <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> называется после операции разбора, которая была <xref:Microsoft.VisualStudio.Package.ParseReason>начата с причиной.
+1. Следующий метод показывает, как вызвать `GetSnippets` метод при выполнении операции синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>Метод вызывается после операции синтаксического анализа, которая была запущена по причине <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
 > [!NOTE]
-> Список `expansionsList` массивов кэшируется по причинам производительности. Изменения в фрагментах не отражаются в списке до тех пор, пока языковая служба не [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]будет остановлена и перезагружена (например, путем остановки и перезапуска).
+> `expansionsList`Список массивов кэшируется по соображениям производительности. Изменения фрагментов кода не отражаются в списке до тех пор, пока служба языка не будет остановлена и перезагружена (например, при остановке и перезапуске [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ).
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>Использовать информацию о фрагментах
+### <a name="to-use-the-snippet-information"></a>Использование данных фрагмента
 
-1. В следующем коде показано, как использовать информацию фрагмента, возвращенную методом. `GetSnippets` Метод `AddSnippets` вызывается из парсера в ответ на любую причину разбора, которая используется для заполнения списка фрагментов кода. Это должно происходить после того, как полный разбор был сделан в первый раз.
+1. В следующем коде показано, как использовать сведения о фрагментах кода, возвращаемые `GetSnippets` методом. `AddSnippets`Метод вызывается из средства синтаксического анализа в ответ на любые причины синтаксического анализа, которые используются для заполнения списка фрагментов кода. Это должно происходить после завершения полного синтаксического анализа в первый раз.
 
-     Метод `AddDeclaration` создает список деклараций, который позже отображается в списке завершения.
+     `AddDeclaration`Метод создает список объявлений, которые позже отображаются в списке завершения.
 
-     Класс `TestDeclaration` содержит всю информацию, которая может быть отображана в списке завершения, а также тип декларации.
+     `TestDeclaration`Класс содержит все сведения, которые могут быть отображены в списке завершения, а также тип объявления.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope
@@ -176,5 +176,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Поддержка фрагментов кода в языковой службе прежних версий](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

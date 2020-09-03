@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress Документы Майкрософт
+title: 'Идебугсимболпровидер:: Жетнамеспацесуседатаддресс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719207"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Этот метод создает регистратор для областей имен, связанных с адресом отладки.
+Этот метод создает перечислитель для пространств имен, связанных с адресом отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,17 +43,17 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Адрес отладки.
+окне Адрес отладки.
 
 `ppEnum`\
-(ваут) Возвращает регистратор [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) для пространства имен.
+заполняет Возвращает перечислитель [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) для пространств имен.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Может быть несколько областей имен, связанных с данным адресом `using` отладки, например, вложенные пространства имен или несколько инструкций.
+## <a name="remarks"></a>Remarks
+ С указанным адресом отладки может быть связано несколько пространств имен, например вложенные пространства имен или несколько `using` инструкций.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

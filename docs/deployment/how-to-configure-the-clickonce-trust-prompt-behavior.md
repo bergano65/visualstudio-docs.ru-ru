@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382553"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое руководство. Настройка поведения запроса о доверии ClickOnce
@@ -30,7 +30,7 @@ ms.locfileid: "85382553"
 
  В следующей таблице показаны параметры конфигурации, которые можно применить к каждой из пяти зон (Internet, Унтрустедситес, MyComputer, LocalIntranet и Трустедситес).
 
-|Параметр|Значение параметра реестра|Описание:|
+|Параметр|Значение параметра реестра|Описание|
 |------------|----------------------------|-----------------|
 |Включите запрос о доверии.|`Enabled`|Запрос о доверии ClickOnce отображается таким образом, чтобы конечные пользователи могли предоставлять доверие приложениям ClickOnce.|
 |Ограничьте запрос о доверии.|`AuthenticodeRequired`|Запрос о доверии ClickOnce отображается только в том случае, если приложения ClickOnce подписаны сертификатом, идентифицирующим издателя.|
@@ -222,7 +222,7 @@ ms.locfileid: "85382553"
 
 3. Выполните сборку и запустите приложение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)

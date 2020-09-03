@@ -1,5 +1,5 @@
 ---
-title: Слово Завершение в Наследие Языковая служба (ru) Документы Майкрософт
+title: Завершение слов в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703166"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Завершение машинных слов в языковой службе прежних версий
-Завершение слова заполняет недостающие символы на частично набранном слове. Если есть только одно возможное завершение, слово завершается при входе в символ завершения. Если частичное слово совпадает с более чем одной возможностью, отображается список возможных завершений. Символом завершения может быть любой символ, который не используется для идентификаторов.
+При заполнении слова отсутствующие символы заполняются частично типизированным словом. Если существует только одно возможное завершение, слово завершается после ввода символа завершения. Если частичное слово совпадает с более чем одной возможностью, отображается список возможных завершений. Символом завершения может быть любой символ, который не используется для идентификаторов.
 
- Устаревшие языковые службы реализуются как часть VSPackage, но новый способ реализации функций языкового сервиса заключается в использовании расширений MEF. Чтобы узнать больше, смотрите [Расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
+ Устаревшие языковые службы реализуются как часть VSPackage, но более новым способом реализации функций языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Мы рекомендуем вам начать использовать новый API редактора как можно скорее. Это повысит производительность вашего языкового сервиса и позволит вам воспользоваться новыми функциями редактора.
+> Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.
 
 ## <a name="implementation-steps"></a>Шаги реализации
 
-1. Когда пользователь выбирает **Полное Слово** из меню **IntelliSense,** <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команда отправляется в языковую службу.
+1. Когда пользователь выбирает пункт **завершить слово** в меню **IntelliSense** , <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команда отправляется в языковую службу.
 
-2. Класс <xref:Microsoft.VisualStudio.Package.ViewFilter> ловит команду и <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> вызывает метод с причиной <xref:Microsoft.VisualStudio.Package.ParseReason>разбора .
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter>Класс перехватывает команду и вызывает <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
-3. Затем <xref:Microsoft.VisualStudio.Package.Source> класс вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод, чтобы получить список возможных завершений слов, а <xref:Microsoft.VisualStudio.Package.CompletionSet> затем отображает слова в списке наконечников инструментов с помощью класса.
+3. <xref:Microsoft.VisualStudio.Package.Source>Затем класс вызывает метод, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> чтобы получить список возможных завершений слов, а затем отображает слова в списке подсказок с помощью <xref:Microsoft.VisualStudio.Package.CompletionSet> класса.
 
-    Если есть только одно соответствующее <xref:Microsoft.VisualStudio.Package.Source> слово, класс завершает слово.
+    Если имеется только одно совпадающее слово, <xref:Microsoft.VisualStudio.Package.Source> класс завершает слово.
 
-   Кроме того, если сканер возвращает <xref:Microsoft.VisualStudio.Package.TokenTriggers> значение триггера при набранном первом <xref:Microsoft.VisualStudio.Package.Source> символе идентификатора, класс обнаруживает это и вызывает <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной разбора <xref:Microsoft.VisualStudio.Package.ParseReason>. В этом случае парсер должен обнаружить наличие символа выбора участника и предоставить список членов.
+   Кроме того, если средство проверки возвращает значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> при вводе первого символа идентификатора, <xref:Microsoft.VisualStudio.Package.Source> класс обнаруживает это и вызывает <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> метод с причиной синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> . В этом случае средство синтаксического анализа должно обнаружить наличие символа выбора элемента и предоставить список элементов.
 
-## <a name="enabling-support-for-the-complete-word"></a>Включение поддержки полного слова
- Для поддержки набора завершения `CodeSense` слова указанный <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> параметр передается атрибуту пользователя, связанному с пакетом языка. Это устанавливает <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> на класс.
+## <a name="enabling-support-for-the-complete-word"></a>Включение поддержки для полного слова
+ Чтобы включить поддержку автозаполнения слов, задайте `CodeSense` именованный параметр, передаваемый <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> атрибуту пользователя, связанному с языковым пакетом. При этом задается <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.
 
- Ваш парсер должен вернуть список деклараций в ответ <xref:Microsoft.VisualStudio.Package.ParseReason>на значение причины разбора, для завершения слова для работы.
+ Средство синтаксического анализа должно возвращать список объявлений в ответ на значение причины синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> , для работы с завершением слов.
 
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>Реализация Полного слова в методе ParseSource
- Для завершения слова <xref:Microsoft.VisualStudio.Package.Source> класс <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> вызывает метод <xref:Microsoft.VisualStudio.Package.AuthoringScope> в классе, чтобы получить список возможных совпадений слов. Необходимо реализовать список в классе, который <xref:Microsoft.VisualStudio.Package.Declarations> происходит из класса. Просмотрите <xref:Microsoft.VisualStudio.Package.Declarations> класс для получения подробной информации о методах, которые необходимо реализовать.
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>Реализация полного слова в методе Парсесаурце
+ Для завершения слов <xref:Microsoft.VisualStudio.Package.Source> класс вызывает <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> метод <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса для получения списка возможных совпадений слов. Необходимо реализовать список в классе, производном от <xref:Microsoft.VisualStudio.Package.Declarations> класса. Дополнительные <xref:Microsoft.VisualStudio.Package.Declarations> сведения о методах, которые необходимо реализовать, см. в классе.
 
- Если список содержит только одно <xref:Microsoft.VisualStudio.Package.Source> слово, то класс автоматически вставляет это слово вместо частичного слова. Если список содержит более одного <xref:Microsoft.VisualStudio.Package.Source> слова, класс представляет список наконечников инструментов, из которого пользователь может выбрать подходящий выбор.
+ Если список содержит только одно слово, то <xref:Microsoft.VisualStudio.Package.Source> класс автоматически вставляет это слово вместо частичного слова. Если список содержит более одного слова, <xref:Microsoft.VisualStudio.Package.Source> класс представляет список подсказок, из которого пользователь может выбрать подходящий вариант.
 
- Также посмотрите на <xref:Microsoft.VisualStudio.Package.Declarations> пример реализации класса в [Службе обучения в Языковой службе Legacy.](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)
+ Также взгляните на пример <xref:Microsoft.VisualStudio.Package.Declarations> реализации класса в области [завершения членов в языковой службе прежних версий](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).

@@ -1,5 +1,5 @@
 ---
-title: Атрибуты поддержки веб-сайта Документы Майкрософт
+title: Атрибуты поддержки веб-сайта | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,48 +11,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703501"
 ---
 # <a name="web-site-support-attributes"></a>Атрибуты поддержки веб-сайтов
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Проект веб-сайта может быть расширен для поддержки языков веб-программирования. Язык должен зарегистрироваться [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] таким образом, чтобы шаблоны проектов могли отображаться в поле диалога **нового веб-узла** при выборе языка.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Проект веб-сайта можно расширить, чтобы обеспечить поддержку языков веб-программирования. Язык должен быть зарегистрирован в, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поэтому шаблоны проектов могут отображаться в диалоговом окне **новый веб-сайт** при выборе языка.
 
-Образец IronPython Studio включает в себя поддержку веб-сайта. Выборка содержит следующие классы атрибутов для регистрации IronPython в качестве языка код-за ими для новых веб-проектов.
+Образец IronPython Studio включает в себя поддержку веб-сайтов. Пример содержит следующие классы атрибутов для регистрации IronPython в качестве языка CodeBehind для новых веб-проектов.
 
-## <a name="websiteprojectattribute"></a>Веб-сайтПроектАattributeец
- Этот атрибут размещается в языковом проекте. Он добавляет язык в список языков веб-программирования в списке **языков** в новом диалоговом поле **Web Site.** Например, следующий код добавляет IronPython в список:
+## <a name="websiteprojectattribute"></a>вебситепрожектаттрибуте
+ Этот атрибут размещается в проекте языка. Он добавляет язык в список языков веб-программирования в списке **язык** диалогового окна **новый веб-сайт** . Например, следующий код добавляет IronPython в список:
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- Этот атрибут также устанавливает путь шаблонов, чтобы указать на папку шаблонов. Для получения дополнительной информации о местоположении [Web Site Support Templates](../../extensibility/internals/web-site-support-templates.md)папки шаблонов см.
+ Этот атрибут также задает путь к шаблонам для указания на папку Templates. Дополнительные сведения о расположении папки Templates см. в разделе [шаблоны поддержки веб-сайтов](../../extensibility/internals/web-site-support-templates.md).
 
-## <a name="websiteprojectrelatedfilesattribute"></a>Веб-сайтProjectRelatedFilesAttribute
- Этот атрибут размещается в языковом проекте. Это позволяет проекту website гнездить один тип файла (связанный) под другой тип файла (первичный) в **Solution Explorer.**
+## <a name="websiteprojectrelatedfilesattribute"></a>вебситепрожектрелатедфилесаттрибуте
+ Этот атрибут размещается в проекте языка. Он позволяет проекту веб-сайта вкладывать один тип файла (связанный) в другой тип файла (основной) в **Обозреватель решений**.
 
- Например, в следующем коде указывается, что кодовый файл IronPython связан с файлом .aspx. При создании новой веб-страницы .aspx в решении веб-узла IronPython создается новый исходный файл .py, который отображается в виде детского узла страницы .aspx.
+ Например, следующий код указывает, что файл фонового кода IronPython связан с файлом. aspx. При создании новой веб-страницы. aspx в решении веб-сайта IronPython создается новый исходный файл с расширением «копировать», который отображается как дочерний узел страницы. aspx.
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
-## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- Этот атрибут размещается в пакете языкового проекта. Он выбирает поставщика IntelliSense для языка.
+## <a name="provideintellisenseproviderattribute"></a>провидеинтеллисенсепровидераттрибуте
+ Этот атрибут размещается в пакете языкового проекта. Он выбирает поставщик IntelliSense для языка.
 
- Например, в следующем коде указывается, что экземпляр PythonIntellisenseProvider, который <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>реализует, должен быть создан по требованию для предоставления языковых услуг.
+ Например, следующий код указывает, что экземпляр Писонинтеллисенсепровидер, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> , должен быть создан по запросу для предоставления языковых служб.
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- Реализация IVsIntellisenseProject обрабатывает ссылки и вызывает компилятор языка, когда веб-страница с кодом запрашивается, но не кэшируется.
+ Реализация Ивсинтеллисенсепрожект обрабатывает ссылки и вызывает компилятор языка, когда веб-страница с кодом запрашивается, но не кэшируется.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Поддержка веб-сайтов](../../extensibility/internals/web-site-support.md)

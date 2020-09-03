@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetThreadName Документы Майкрософт
+title: 'IDebugThread2:: Сетсреаднаме | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718667"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
-Устанавливает название потока.
+Задает имя потока.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int SetThreadName ( 
 
 ## <a name="parameters"></a>Параметры
 `pszName`\
-(в) Название нити.
+окне Имя потока.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Чтобы получить имя потока, позвоните в метод [GetName.](../../../extensibility/debugger/reference/idebugthread2-getname.md)
+## <a name="remarks"></a>Remarks
+ Чтобы получить имя потока, вызовите метод метода [Name](../../../extensibility/debugger/reference/idebugthread2-getname.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)

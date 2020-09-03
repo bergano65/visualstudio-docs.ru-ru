@@ -1,5 +1,5 @@
 ---
-title: Анализ Visual Basic и C# качества кода в приложениях магазина с помощью статического анализа кода
+title: Анализ качества кода Visual Basic и C# в приложениях магазина с помощью статического анализа кода
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,25 +12,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660740"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода Visual Basic и C# в приложениях Магазина с помощью функций анализа статического кода Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+Применяется к Windows и Windows Phone] (.. /Video windows_and_phone_content.png "windows_and_phone_content")
 
  Средство анализа кода в Visual Studio Express анализирует код с целью найти общие дефекты и нарушения рекомендаций программирования. Предупреждения, возникающие в ходе анализа кода, отличаются от ошибок и предупреждений компилятора, потому что средство анализа кода выполняет поиск конкретных шаблонов кода, которые являются допустимыми, но, тем не менее, могут вызвать проблемы при использовании кода вами или другими специалистами. Анализ кода позволяет находить дефекты в коде, которые невозможно обнаружить в процессе тестирования. Регулярный запуск средства анализа кода в процессе разработки позволяет создать приложение более высокого качества.
 
 > [!NOTE]
 > В Visual Studio Ultimate, Visual Studio Premium и Visual Studio Professional можно пользоваться всеми функциональными возможностями анализа кода. См. статью [Анализ качества приложений с помощью средств анализа кода](https://msdn.microsoft.com/library/dd264897.aspx) в библиотеке MSDN.
 
-## <a name="in-this-topic"></a>Содержание раздела
- Рассматриваются следующие вопросы:
+## <a name="in-this-topic"></a>В этом разделе
+ Узнайте о следующем.
 
  [Запуск анализа кода](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)
 
@@ -42,7 +42,7 @@ ms.locfileid: "72660740"
 
  [Предупреждения анализа кода Visual Basic и C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-## <a name="BKMK_Run"></a> Запуск анализа кода
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Выполнение анализа кода
  Чтобы запустить анализ кода для решения Visual Studio, выполните следующие действия:
 
 - В меню **Сборка** выберите **Выполнить анализ кода в решении**.
@@ -51,27 +51,27 @@ ms.locfileid: "72660740"
 
 1. В обозревателе решений щелкните правой кнопкой мыши имя проекта и выберите пункт **Свойства**.
 
-2. На странице свойств проекта выберите **Анализ кода** и установите флажок **Включить анализ кода в построении (определяет константу CODEANALYSIS)** .
+2. На странице свойств проекта выберите **Анализ кода** и установите флажок **Включить анализ кода в построении (определяет константу CODEANALYSIS)**.
 
    Решение компилируется, и запускается анализ кода. Результаты выводятся в окне "Анализ кода".
 
-   ![Окно "анализ кода"](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Окно анализа кода](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Анализ и разрешение предупреждений анализа кода
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Анализ и разрешение предупреждений анализа кода
  Чтобы проанализировать конкретное предупреждение, щелкните заголовок предупреждения в окне "Анализ кода". Предупреждение разворачивается, позволяя просмотреть подробные сведения о проблеме.
 
- ![Предупреждение анализа расширенного кода](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![Расширенное предупреждение анализа кода](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
  При разворачивании предупреждения строка кода, которая вызвала предупреждение, выделяется в редакторе кода Visual Studio.
 
- ![Выделение текста для анализа кода](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Выделение текста при анализе кода](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  Поняв, в чем заключается проблема, можно разрешить ее в коде. После этого повторно запустите анализ кода, чтобы убедиться, что предупреждение больше не отображается в окне анализа кода и исправление не привело к появлению новых предупреждений.
 
 > [!TIP]
 > Повторно запустить анализ кода можно из окна "Анализ кода". Нажмите кнопку **Анализировать** и выберите область анализа. Можно повторно запустить анализ для всего решения или для выбранного проекта.
 
-## <a name="BKMK_Suppress"></a> Подавление предупреждений анализа кода
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Подавление предупреждений анализа кода
  В некоторых случаях разработчик может принять решение не разрешать предупреждение анализа кода. Возможно, разрешение предупреждения требует слишком значительного переписывания кода в сравнении с вероятностью того, что проблема проявит себя в какой-либо реальной его реализации. Или, например, разработчик может посчитать, что используемая в предупреждении логика анализа не соответствует данному контексту. Можно подавить отдельные предупреждения, чтобы они больше не отображались в окне "Анализа кода".
 
  Чтобы подавить предупреждение, выполните следующие действия.
@@ -88,22 +88,22 @@ ms.locfileid: "72660740"
 
      Решение, где подавлять предупреждение — в файле исходного кода или в файле блокируемых предупреждений — зависит от стиля написания кода и потребностей разработчика.
 
-## <a name="BKMK_Search"></a> Поиск и фильтрация результатов анализа кода
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Поиск и фильтрация результатов анализа кода
  Можно выполнять поиск в длинных списках предупреждений, а также фильтровать предупреждения в решениях, состоящих из нескольких проектов.
 
- ![Поиск и фильтрация окна "анализ кода"](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Поиск и фильтрация в окне анализа кода](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  В [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] все предупреждения анализа кода имеют степень серьезности "Предупреждение".
 
-## <a name="BKMK_Warnings"></a> Предупреждения анализа кода Visual Basic и C#
+## <a name="visual-basic-and-c-code-analysis-warnings"></a><a name="BKMK_Warnings"></a> Предупреждения анализа кода Visual Basic и C#
  Анализ кода вызывает следующие предупреждения:
 
- [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001. Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: удаляйте пустые методы завершения](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821. Удалите пустые методы завершения](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: следует высвобождать высвобождаемые поля](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213. Следует высвобождать высвобождаемые поля](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: применяйте конструкторы сериализации](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229. Реализуйте конструкторы сериализации](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)
