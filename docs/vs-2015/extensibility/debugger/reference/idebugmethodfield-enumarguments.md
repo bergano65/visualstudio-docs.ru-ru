@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumArguments | Документация Майкрософт
+title: 'Идебугмесодфиелд:: Енумаргументс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5744e25f76676e70e25777596fb0d8eb3a580511
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205224"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Создает перечислитель для тип каждого аргумента, необходимые для вызова метода.  
+Создает перечислитель для типа каждого аргумента, необходимого для вызова метода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,18 +40,18 @@ int EnumArguments(
   
 #### <a name="parameters"></a>Параметры  
  `ppParams`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список типов аргументов. Возвращает значение null, если аргументы не используются.  
+ заполняет Возвращает объект [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md) , представляющий список типов аргументов. Возвращает значение null, если аргументы отсутствуют.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если аргументы не используются. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает S_OK или возвращает S_FALSE, если аргументы отсутствуют. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип каждого параметра. Вызовите [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод для извлечения сведений о типе каждого параметра.  
+## <a name="remarks"></a>Remarks  
+ Каждый элемент является объектом [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющим типы каждого параметра. Вызовите метод " [info](../../../extensibility/debugger/reference/idebugfield-getinfo.md) ", чтобы получить сведения о типе каждого параметра.  
   
- Если требуется указать имя параметра вместе с типом, затем вызвать [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) метод.  
+ Если требуется имя параметра вместе с типом, вызовите метод [енумпараметерс](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) .  
   
-## <a name="see-also"></a>См. также  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
+## <a name="see-also"></a>См. также:  
+ [идебугмесодфиелд](../../../extensibility/debugger/reference/idebugmethodfield.md)   
+ [иенумдебугфиелдс](../../../extensibility/debugger/reference/ienumdebugfields.md)   
+ [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md)   
  [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)

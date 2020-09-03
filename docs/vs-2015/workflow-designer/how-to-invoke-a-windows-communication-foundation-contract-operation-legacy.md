@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f42600a739561a27a6dd8f6caa237027bac4554
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603704"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Как вызвать операцию контракта Windows Communication Foundation (для прежних версий)
@@ -41,11 +41,11 @@ ms.locfileid: "72603704"
 
 1. Выделите действие <xref:System.Workflow.Activities.SendActivity> в конструкторе.
 
-2. На панели **Свойства** укажите имя <xref:System.Workflow.Activities.ChannelToken>. Имя однозначно идентифицирует маркер канала.
+2. На панели **Свойства** укажите имя <xref:System.Workflow.Activities.ChannelToken> . Имя однозначно идентифицирует маркер канала.
 
 3. Разверните узел маркера канала и введите имя для клиентской конечной точки в поле <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>, которую предполагается использовать. Для конфигурации канала будет использоваться конфигурация конечной точки с тем же именем в файле конфигурации.
 
 4. Создайте конфигурацию конечной точки в файле конфигурации, если она в нем не существует. Дополнительные сведения о настройке клиента см. в разделе [Общие сведения о клиенте WCF](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Диалоговое окно «Выбор операции» (устаревшая)](../workflow-designer/choose-operation-dialog-box-legacy.md) [руководство. Реализация операций контракта WCF (устаревших)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [устаревшие действия рабочего процесса](../workflow-designer/legacy-workflow-activities.md)

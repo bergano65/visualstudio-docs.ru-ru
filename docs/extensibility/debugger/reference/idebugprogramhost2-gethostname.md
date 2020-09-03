@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostName Документы Майкрософт
+title: 'IDebugProgramHost2:: @ HostName | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f1bd63d6b53359cf3b86f5e3849cb18bd8367f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722228"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
-Получает название, дружеское имя или название файла процесса хостинга этой программы.
+Возвращает заголовок, понятное имя или имя файла ведущего процесса этой программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,17 +43,17 @@ int GetHostName( 
 
 ## <a name="parameters"></a>Параметры
 `dwType`\
-(в) Значение из [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) перечисления.
+окне Значение из перечисления [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) .
 
 `pbstrHostName`\
-(ваут) Возвращает запрашиваемое название процесса хостинга.
+заполняет Возвращает запрошенное имя ведущего процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- В типичной реализации этого `dwType` метода параметр игнорируется и возвращается дружественное имя хост-машины. Другой возможной реализацией `dwType` является передача параметра на вызов методу [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) для получения имени.
+## <a name="remarks"></a>Remarks
+ В обычной реализации этого метода `dwType` параметр игнорируется, и возвращается понятное имя хост-компьютера. Другой возможной реализацией является передача `dwType` параметра в вызов метода- [HostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) для получения имени.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

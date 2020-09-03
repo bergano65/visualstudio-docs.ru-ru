@@ -1,5 +1,5 @@
 ---
-title: ЭВАЛЕСЕС Документы Майкрософт
+title: ЕВАЛФЛАГС | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737109"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Определяет флаги, контролирующие оценку выражения.
+Задает флаги, управляющие вычислением выражений.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,35 +54,35 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>Поля
 `EVAL_RETURNVALUE`\
-Упомяните, что значение возврата, если таковое, будет оценено.
+Указывает, что должно быть вычислено возвращаемое значение, если оно имеется.
 
 `EVAL_NOSIDEEFFECTS`\
-Упомянет, что побочные эффекты не допускаются.
+Указывает, что побочные эффекты не допускаются.
 
 `EVAL_ALLOWBPS`\
-Определяет остановку на брейк-пойнтах.
+Задает остановку в точках останова.
 
 `EVAL_ALLOWERRORREPORT`\
-Упогоняет разрешение сообщения об ошибке к усею. В первую очередь используется для оценки выражения в скрипте в Internet Explorer.
+Указывает, что сообщение об ошибках должно быть разрешено узлу. В основном используется для вычисления выражений в скрипте в Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Функции сил должны оцениваться как адреса, а не ссылаться на функцию.
+Заставляет функции оцениваться как адреса, а не вызывать функцию.
 
 `EVAL_NOFUNCEVAL`\
-Предотвращает оценку функции. Например, рассмотрим `int` маркер в `myExpression(int) + 10`выражении . Эту функцию можно правильно оценить как адрес, но не как значение.
+Предотвращает вычисление функции. Например, рассмотрим `int` маркер в выражении `myExpression(int) + 10` . Эта функция может быть правильно оценена как адрес, но не как значение.
 
 `EVAL_NOEVENTS`\
-Пометить, чтобы указать, что события, возникающие во время оценки выражения, не должны отправляться менеджеру отладки сеанса (SDM) или IDE.
+Флаг, указывающий, что события, происходящие во время оценки выражения, не должны отправляться в Диспетчер отладки сеанса (SDM) или в интегрированную среду разработки.
 
-## <a name="remarks"></a>Примечания
-Эти флаги передаются в качестве аргумента методам [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync.](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+## <a name="remarks"></a>Remarks
+Эти флаги передаются в качестве аргумента методам [евалуатеасинк](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [евалуатесинк](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
-Эти флаги могут быть объединены с bitwise OR.
+Эти флаги можно сочетать с помощью побитового или.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

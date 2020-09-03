@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba1510745b4781d56655fe83fffbb18f4ca65254
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156482"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Представляет контрольную сумму для документа отладки и обеспечивает передачи контрольную сумму между компонентами.  
+Представляет контрольную сумму для документа отладки и позволяет передавать контрольную сумму между компонентами.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,18 +29,18 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Этот интерфейс может быть реализован любой компонент, предоставляющий [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейс. Тем не менее она главным образом реализуется отладчиков, чтобы контрольная сумма, внедренных в файл символов (*.pdb) могут передаваться обратно в интегрированной среде разработки и используется при поиске источника.  
+ Этот интерфейс может быть реализован любым компонентом, предоставляющим интерфейс [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Однако он реализуется механизмами отладки, чтобы контрольная сумма, внедренная в файл символов (*. pdb), могла быть передана обратно в интегрированную среду разработки и использована при поиске источника.  
   
 ## <a name="methods"></a>Методы  
- В следующей таблице показаны методы `IDebugDocumentChecksum2`.  
+ В следующей таблице показаны методы `IDebugDocumentChecksum2` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.|  
+|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Извлекает контрольную сумму документа и идентификатор алгоритма с учетом максимального числа используемых байтов.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Msdbg.h  
+ Заголовок: Мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

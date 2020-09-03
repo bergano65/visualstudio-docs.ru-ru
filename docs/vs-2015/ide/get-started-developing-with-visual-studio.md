@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1da2c07d5a412a7ac1865cfc2669e2f4ff992b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548074"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
@@ -33,23 +33,23 @@ ms.locfileid: "85548074"
 
 - **[Создание кроссплатформенных мобильных приложений на C# или Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : начало работы с Visual Studio и средствами для Xamarin в целях создания мобильных приложений, работающих на Android, iOS и универсальной платформе Windows из базы общего кода.
 
-     Загрузка примера: [таскипортабле](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (собственный пользовательский интерфейс) или [Пример Xamarin Forms TODO](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский интерфейс Xamarin. Forms) &#124; [учебник](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [просмотре документов](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [просмотра видео](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Загрузка примера: [таскипортабле](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (собственный пользовательский интерфейс) или  [Пример Xamarin Forms TODO](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (общий пользовательский интерфейс Xamarin. Forms) &#124;   [учебник](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [просмотре документов](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [просмотра видео](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Создание кроссплатформенных приложений и библиотек на C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Перейдите сюда, чтобы начать создавать приложения и библиотеки C++, которые работают на Android, iOS и универсальной платформе Windows.
 
-     [Загрузка примера](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124; [учебник](https://msdn.microsoft.com/library/dn707595.aspx) &#124; [просмотре документов](https://msdn.microsoft.com/library/dn707591.aspx) &#124; [просмотра видео](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
+     [Загрузка примера](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [учебник](https://msdn.microsoft.com/library/dn707595.aspx) &#124;                             [просмотре документов](https://msdn.microsoft.com/library/dn707591.aspx) &#124;                                  [просмотра видео](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
 
 - **[Создание игр с помощью DirectX](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**: создание игр на универсальной платформе Windows с использованием DirectX.
 
-     [Загрузка примера](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124; [учебник](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124; [просмотре документов](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124; [просмотра видео](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
+     [Загрузка примера](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124;                    [учебник](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124;                                [просмотре документов](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124;                                   [просмотра видео](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
 
 - **[Создание игр с помощью Unity](../cross-platform/visual-studio-tools-for-unity.md)**: создание кроссплатформенных игр на платформе Unity.
 
-     [Загрузка примера](http://unity3d.com/learn/resources/downloads) &#124; [учебник](https://learn.unity.com/projects) &#124; [просмотре документов](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124; [просмотра видео](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
+     [Загрузка примера](http://unity3d.com/learn/resources/downloads) &#124;                     [учебник](https://learn.unity.com/projects) &#124;                               [просмотре документов](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124;     [просмотра видео](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
 - **[Создание приложений на универсальной платформе Windows](https://dev.windows.com/windows-apps)** : создание приложений, которые работают на универсальной платформе Windows (XBox, ПК, планшетах, Windows Phone, Surface Hub и в "Интернете вещей").
 
-     [Загрузка примера](https://github.com/Microsoft/Windows-universal-samples) &#124; [учебник](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124; [просмотре документов](https://dev.windows.com) &#124; [просмотра видео](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
+     [Загрузка примера](https://github.com/Microsoft/Windows-universal-samples) &#124;                          [учебник](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124;                                [просмотре документов](https://dev.windows.com) &#124;     [просмотра видео](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
 
 - **[Создание классических приложений](https://dev.windows.com/desktop)** : перейдите сюда, чтобы начать создавать классические приложения, работающие на ПК Windows.
 
@@ -57,7 +57,7 @@ ms.locfileid: "85548074"
 
 - Создание **[приложений Office](https://msdn.microsoft.com/library/fp161347.aspx)** . Начните создавать приложения Office, которые расширяют и настраивают Word, Excel, Outlook и PowerPoint с помощью служб Office 365.
 
-     [Загрузка примера](https://code.msdn.microsoft.com/office365/) &#124; [учебник](https://developer.microsoft.com/graph) &#124; [просмотре документов](https://msdn.microsoft.com/office/aa905340.aspx) &#124; [просмотра видео](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
+     [Загрузка примера](https://code.msdn.microsoft.com/office365/) &#124;                       [учебник](https://developer.microsoft.com/graph) &#124;                              [просмотре документов](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [просмотра видео](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 
 - **[Тур по Visual Studio Team Services и Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Дополнительные сведения о Visual Studio Team Services и Team Foundation Server.
 

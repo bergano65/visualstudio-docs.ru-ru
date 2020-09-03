@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539819"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder - элемент
@@ -37,10 +37,10 @@ ms.locfileid: "85539819"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
-|**Целевой объект**|Обязательный атрибут **xs: String** .<br /><br /> Путь к папке в установке SharePoint, которой соответствует сопоставленная папка, относительно корневой папки развертывания. Корневая папка развертывания определяется типом развертывания, указанным в атрибуте **Type** .<br /><br /> Дополнительные сведения см. в описании свойств **пути развертывания** и **корня развертывания** элементов проекта SharePoint статьи [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Обязательный атрибут **xs: String** .<br /><br /> Тип развертывания для сопоставленной папки. Дополнительные сведения о возможных значениях см. в описании свойства " **тип развертывания** " элементов проекта SharePoint в разделе [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Цель**|Обязательный атрибут **xs: String** .<br /><br /> Путь к папке в установке SharePoint, которой соответствует сопоставленная папка, относительно корневой папки развертывания. Корневая папка развертывания определяется типом развертывания, указанным в атрибуте **Type** .<br /><br /> Дополнительные сведения см. в описании свойств **пути развертывания** и **корня развертывания** элементов проекта SharePoint статьи [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Тип**|Обязательный атрибут **xs: String** .<br /><br /> Тип развертывания для сопоставленной папки. Дополнительные сведения о возможных значениях см. в описании свойства " **тип развертывания** " элементов проекта SharePoint в разделе [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.
@@ -51,18 +51,18 @@ ms.locfileid: "85539819"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент является обязательным корневым элементом для файла *данных..*|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Дополнительные сведения о сопоставленных папках см. [в разделе инструкции. Добавление и удаление сопоставленных папок](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Свойство.|Значение|
+|Свойство|Значение|
 |-|-|
 |**Пространство имен**|http: \/ \/ Schemas.Microsoft.com/VisualStudio/2010/<br>Шарепоинттулс/Шарепоинтпрожектитеммодел|
 |**Имя схемы**|Схема элемента проекта SharePoint|
 |**Файл проверки**|Прожектитеммоделсчема. xsd|
 |**Может быть пустым**|Нет|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме элементов проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Как добавлять и удалять сопоставленные папки](../sharepoint/how-to-add-and-remove-mapped-folders.md)

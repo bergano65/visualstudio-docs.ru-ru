@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603867"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Как реализовать операцию контракта Windows Communication Foundation (для прежних версий)
 В этом разделе описывается реализация операции контракта [!INCLUDE[indigo1](../includes/indigo1-md.md)] с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- После перетаскивания действия **ReceiveActivity** из области элементов в рабочую область конструктора рабочих процессов вы создадите новый [!INCLUDE[indigo2](../includes/indigo2-md.md)]ный контракт или импортируете существующий контракт и реализуем операции. Вы выбираете и/или создаете контракт и его операции в [диалоговом окне Выбор операции (прежние версии)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+ После перетаскивания действия **ReceiveActivity** из области элементов в рабочую область конструктора рабочих процессов вы создадите новый [!INCLUDE[indigo2](../includes/indigo2-md.md)] контракт или импортируете существующий контракт и реализуем операции. Вы выбираете и/или создаете контракт и его операции в [диалоговом окне Выбор операции (прежние версии)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
 ### <a name="to-implement-a-wcf-contract-operation"></a>Реализация операции контракта WCF
 
@@ -29,7 +29,7 @@ ms.locfileid: "72603867"
 
    - Щелкните **Добавить контракт** в правом верхнем углу диалогового окна. Будет создан новый контракт [!INCLUDE[indigo2](../includes/indigo2-md.md)] и операция.
 
-      \- или -
+      -или-
 
    - Щелкните **Импорт** в правом верхнем углу диалогового окна. Откроется [диалоговое окно "Обзор и выбор типа .NET" (устаревшая)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) . Найдите сборку или проект, который содержит нужный контракт. Выберите контракт и нажмите кнопку **ОК**.
 
@@ -49,5 +49,5 @@ ms.locfileid: "72603867"
 
 5. Поместите действия рабочего процесса, которые будут использоваться для реализации этой операции, в рамках действия **ReceiveActivity** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Диалоговое окно «Выбор операции» (устаревшая)](../workflow-designer/choose-operation-dialog-box-legacy.md) как вызывать [устаревшие действия](../workflow-designer/legacy-workflow-activities.md) [по контракту WCF (устаревшие).](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Обновление проектов Visual C++ до версии Visual Studio 2015 | Документация Майкрософт
+title: Практическое руководство. Обновление проектов Visual C++ до версии Visual Studio 2015 | Документация Майкрософт
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278725"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Практическое руководство. Обновление проектов Visual C++ до Visual Studio 2015
@@ -53,5 +53,5 @@ ms.locfileid: "77278725"
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Продолжение работы с пользовательским набором PlatformToolset
  Если требуется работать с пользовательским набором PlatformToolset в [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], набор инструментов должен находиться в папке %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x86 или в папке %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ на компьютере x64. Сведения о создании пользовательского набора PlatformToolset см. в разделе [Настройка для различных версий для C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) в блоге группы Visual C++.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство по переносу и обновлению Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

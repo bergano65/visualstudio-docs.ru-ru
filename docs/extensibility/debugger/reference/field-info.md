@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO Документы Майкрософт
+title: FIELD_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736894"
 ---
 # <a name="field_info"></a>FIELD_INFO
@@ -49,27 +49,27 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Комбинация флагов из [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) перечисления, которая определяет, какие члены заполнены.
+Сочетание флагов из перечисления [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) , которое указывает, какие элементы заполняются.
 
 `bstrFullName`\
-Полное название поля.
+Полное имя поля.
 
 `bstrName`\
-Краткое название поля.
+Краткое имя поля.
 
 `bstrType`\
 Тип поля.
 
 `dwModifiers`\
-Комбинация флагов из [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) перечисления, описывающая поле.
+Сочетание флагов из перечисления [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) , которое описывает поле.
 
-## <a name="remarks"></a>Примечания
-Эта структура передается методу [GetInfo,](../../../extensibility/debugger/reference/idebugfield-getinfo.md) где она заполняется.
+## <a name="remarks"></a>Remarks
+Эта структура передается в метод " [info](../../../extensibility/debugger/reference/idebugfield-getinfo.md) ", где он заполняется.
 
 ## <a name="requirements"></a>Требования
-Заголовок: sh.h
+Заголовок: sh. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

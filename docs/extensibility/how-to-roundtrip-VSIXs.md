@@ -9,10 +9,10 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387282"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Как сделать расширения совместимыми с Visual Studio 2019/2017 и Visual Studio 2015
@@ -74,7 +74,7 @@ ms.locfileid: "86387282"
 Visual Studio 2015 | Microsoft. VisualStudio. SDK. Буилдтаскс.,
 Visual Studio 2019 или 2017 | Microsoft. VSSDK. Буилдтул
 
-Для этого:
+Для этого сделайте следующее:
 
 * Добавьте в проект пакет NuGet Microsoft. VisualStudio. SDK. Буилдтаскс. ".
 * Если проект не содержит Microsoft. VSSDK. BuildTools, добавьте его.

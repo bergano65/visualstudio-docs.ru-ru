@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProgramNode Документы Майкрософт
+title: 'IDebugProgramProvider2:: Жетпровидерпрограмноде | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd8ca7d5120ba20695caef2e9021ee25869df72f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721802"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
-Извлекает узла программы для конкретной программы.
+Извлекает узел программы для определенной программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,33 +51,33 @@ int GetProviderProgramNode(
 
 ## <a name="parameters"></a>Параметры
 `Flags`\
-(в) Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова характерны следующие флаги:
+окне Сочетание флагов из перечисления [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Для этого вызова обычно используются следующие флаги:
 
-|Флаг|Описание|
+|Flag|Описание|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Звонящий работает на удаленной машине.|
-|`PFLAG_DEBUGGEE`|В настоящее время вызыватель отлажается (дополнительная информация о сборе будет возвращена для каждого узла).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Звонящее было прикреплено к отладчику, но не запущено.|
+|`PFLAG_REMOTE_PORT`|Вызывающий объект работает на удаленном компьютере.|
+|`PFLAG_DEBUGGEE`|Выполняется отладка вызывающего объекта (для каждого узла будет возвращена дополнительная информация о маршалинге).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не был запущен отладчиком.|
 
 `pPort`\
-(в) Порт, в котором работает процесс вызова.
+окне Порт, на котором выполняется вызывающий процесс.
 
 `processId`\
-(в) [Структура AD_PROCESS_ID,](../../../extensibility/debugger/reference/ad-process-id.md) держащая идентификатор процесса, содержащего данную программу.
+окне Структура [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) , содержащая идентификатор процесса, содержащего рассматриваемую программу.
 
 `guidEngine`\
-(в) GUID отладки двигателя, что программа прилагается к (если таковые имеется).
+окне Идентификатор GUID модуля отладки, к которому присоединена программа (если она есть).
 
 `programId`\
-(в) Идентификатор программы, для которого можно получить узла программы.
+окне Идентификатор программы, для которой необходимо получить узел программы.
 
 `ppProgramNode`\
-(ваут) Объект [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) представляющий запрашиваемый узла программы.
+заполняет Объект [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий запрошенный узел программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

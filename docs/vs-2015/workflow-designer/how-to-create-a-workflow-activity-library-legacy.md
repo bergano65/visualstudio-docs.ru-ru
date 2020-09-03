@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5bc4566c1ea520ac1050227ac8e4c0aee22e617
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604964"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Как создать библиотеку действий рабочих процессов (для прежних версий)
@@ -27,7 +27,7 @@ ms.locfileid: "72604964"
 
 1. Запустите Visual Studio.
 
-2. В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.
+2. В меню **Файл** последовательно выберите команды **Создать**и **Проект**.
 
      Откроется диалоговое окно **Новый проект** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "72604964"
     > [!NOTE]
     > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] имеет значение **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.
 
-4. На панели **типы проектов** выберите визуальный C# элемент или Visual Basic (в разделе **другие языки**), а затем выберите **Рабочий процесс**.
+4. На панели **типы проектов** выберите Visual C# или Visual Basic (в разделе **другие языки**), а затем выберите **Рабочий процесс**.
 
 5. В области **шаблоны** выберите **Библиотека действий рабочего процесса**.
 
@@ -48,5 +48,5 @@ ms.locfileid: "72604964"
 
 8. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание устаревших проектов рабочих процессов](../workflow-designer/creating-legacy-workflow-projects.md) с помощью устаревших [действий рабочего процесса](../workflow-designer/legacy-workflow-activities.md) [в конструкторе](../workflow-designer/using-the-legacy-activity-designer.md) устаревшие действия [Разработка действий рабочего процесса](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52) [Windows Workflow Foundation действия](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
