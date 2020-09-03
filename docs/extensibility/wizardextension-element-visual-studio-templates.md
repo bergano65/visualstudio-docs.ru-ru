@@ -1,5 +1,5 @@
 ---
-title: Элемент WizardExtension (Visual Studio Templates) Документы Майкрософт
+title: Элемент Визардекстенсион (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740371"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Элемент WizardExtension (шаблоны Visual Studio)
-Содержит элементы регистрации для настройки мастера шаблона.
+Содержит элементы регистрации для настройки мастера шаблонов.
 
- \<VSTemplate> ... \<> WizardExtension
+ \<VSTemplate> ... \<WizardExtension>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,26 +39,26 @@ ms.locfileid: "80740371"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Сборки](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Упогоняет имя или сильное название сборки, которая отображается в кэше глобальной сборки. В элементе `WizardExtension` должен `Assembly` быть хотя бы один элемент.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Полностью квалифицированное название класса, `IWizard` который реализует интерфейс. В элементе `WizardExtension` должен `FullClassName` быть хотя бы один элемент.|
+|[Сборок](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Указывает имя или строгое имя сборки, которая отображается в глобальном кэше сборок. Элемент должен содержать по крайней мере один `Assembly` элемент `WizardExtension` .|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Обязательный элемент.<br /><br /> Полное имя класса, реализующего `IWizard` интерфейс. Элемент должен содержать по крайней мере один `FullClassName` элемент `WizardExtension` .|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Содержит все метаданные для шаблона проекта, шаблона элементов или стартового комплекта.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Содержит все метаданные для шаблона проекта, шаблона элемента или начального набора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  `WizardExtension` — необязательный дочерний элемент элемента `VSTemplate`.
 
 ## <a name="example"></a>Пример
- Следующий пример иллюстрирует метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона проекта для приложения Windows.
+ В следующем примере показаны метаданные для стандартного шаблона проекта для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,7 +88,7 @@ ms.locfileid: "80740371"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)

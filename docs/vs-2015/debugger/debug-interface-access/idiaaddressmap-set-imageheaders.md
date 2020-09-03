@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::set_imageHeaders | Документация Майкрософт
+title: 'IDiaAddressMap:: set_imageHeaders | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18fa69929f78d5ae661169a09db97697d98f4d94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198643"
 ---
-# <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
+# <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Наборы изображений заголовки, чтобы включить трансляцию относительный виртуальный адрес.  
+Задает заголовки изображений для включения преобразования относительных виртуальных адресов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,24 +37,24 @@ HRESULT set_imageHeaders ( 
   
 #### <a name="parameters"></a>Параметры  
  cbData  
- [in] Число байтов данных заголовка. Должно быть `n*sizeof(IMAGE_SECTION_HEADER)` где `n` число заголовков разделов в исполняемом файле.  
+ окне Число байтов данных заголовка. Должно быть `n*sizeof(IMAGE_SECTION_HEADER)` `n` указано, где — число заголовков разделов в исполняемом файле.  
   
  data[]  
- [in] Массив `IMAGE_SECTION_HEADER` структур для использования в качестве заголовков образа.  
+ окне Массив структур,  `IMAGE_SECTION_HEADER` используемых в качестве заголовков изображений.  
   
- originalHeaders  
- [in] Значение `FALSE` из нового образа, если заголовки изображение `TRUE` если они отражают исходное изображение до обновления. Как правило, это может быть присвоено `TRUE` только в сочетании с вызовами [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) метод.  
+ оригиналхеадерс  
+ окне Задайте значение, `FALSE` Если заголовки изображений относятся к новому образу, `TRUE` если они соответствуют исходному изображению до обновления. Как правило, это можно сделать `TRUE` только в сочетании с вызовами метода [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- `IMAGE_SECTION_HEADER` Структура объявляется в файле Winnt.h и представляет формат изображения раздел заголовка исполняемого файла.  
+## <a name="remarks"></a>Remarks  
+ `IMAGE_SECTION_HEADER`Структура объявляется в файле WINNT. h и представляет формат заголовка раздела Image исполняемого файла.  
   
- Относительный виртуальный адрес вычисления зависят от `IMAGE_SECTION_HEADER` значения. Как правило доступа к интерфейсу отладки извлекает их из PDB-файла программы. Если эти значения отсутствуют, доступа к интерфейсу отладки не сможет вычислить относительными виртуальными адресами и [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) возвращает метод `FALSE`. Клиент затем должен вызвать [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) способ включения вычисления относительного виртуального адреса после предоставления отсутствуют заголовки изображения из самого изображения.  
+ Относительные вычисления виртуальных адресов зависят от `IMAGE_SECTION_HEADER` значений. Обычно DIA извлекает эти данные из файла базы данных программы (. pdb). Если эти значения отсутствуют, DIA не может вычислить относительные виртуальные адреса и метод [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) возвращает `FALSE` . Затем клиент должен вызвать метод [IDiaAddressMap::p ut_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) , чтобы обеспечить относительный расчет виртуального адреса после предоставления отсутствующих заголовков изображений из самого образа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

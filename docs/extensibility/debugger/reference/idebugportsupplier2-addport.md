@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2:AddPort Документы Майкрософт
+title: 'IDebugPortSupplier2:: Аддпорт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724737"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
@@ -43,18 +43,18 @@ int AddPort( 
 
 ## <a name="parameters"></a>Параметры
 `pRequest`\
-(в) Объект [IDebugPortRequest2,](../../../extensibility/debugger/reference/idebugportrequest2.md) описывающий порт, который должен быть добавлен.
+окне Объект [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий добавляемый порт.
 
 `ppPort`\
-(ваут) Возвращает объект [IDebugPort2,](../../../extensibility/debugger/reference/idebugport2.md) представляющий порт.
+заполняет Возвращает объект [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , представляющий порт.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод фактически создает запрашиваемый порт, а также добавляет его во внутренний список активных портов поставщика порта. Метод [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) можно назвать первым, чтобы избежать возможных задержек с длительным трудом.
+## <a name="remarks"></a>Remarks
+ Этот метод фактически создает запрошенный порт, а также добавляет его в внутренний список активных портов поставщика порта. Сначала можно вызвать метод [канаддпорт](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) , чтобы избежать возможных длительных задержек.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

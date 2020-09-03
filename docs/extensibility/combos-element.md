@@ -1,5 +1,5 @@
 ---
-title: Комбо Элемент Документы Майкрософт
+title: Элемент КомБОС | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739804"
 ---
-# <a name="combos-element"></a>Элемент комбо
-Элементы [элементов комбо-](../extensibility/combo-element.md)
+# <a name="combos-element"></a>КомБОС, элемент
+Группирует элементы [элемента списка](../extensibility/combo-element.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,20 +37,20 @@ ms.locfileid: "80739804"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент комбо](../extensibility/combos-element.md)|Группы Комбо элементов.|
-|[Комбо элемент](../extensibility/combo-element.md)|Определяет команды, которые отображаются в комбо-коробке.|
+|[КомБОС, элемент](../extensibility/combos-element.md)|Элементы комбинированных элементов групп.|
+|[Элемент Combo](../extensibility/combo-element.md)|Определяет команды, которые отображаются в поле со списком.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент команд](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
+|[Commands, элемент](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
 
 ## <a name="example"></a>Пример
 
@@ -76,6 +76,6 @@ ms.locfileid: "80739804"
 </Combos>
 ```
 
-## <a name="see-also"></a>См. также
-- [Как VSPackages добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>См. также раздел
+- [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

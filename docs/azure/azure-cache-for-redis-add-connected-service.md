@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643279"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Добавление кэша Azure для Redis с помощью Visual Studio Подключенные службы
@@ -34,7 +34,7 @@ ms.locfileid: "88643279"
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Подключенные службы в Visual Studio для Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 - Visual Studio с установленной рабочей нагрузкой Azure.
 - Проект одного из поддерживаемых типов
@@ -51,7 +51,7 @@ ms.locfileid: "88643279"
 
 1. На странице **Добавление зависимости** выберите **кэш Azure для Redis**.
 
-    ![Добавление кэша Azure для Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
+    ![Добавление Кэша Azure для Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
     Если вы еще не вошли в систему, войдите в свою учетную запись Azure. Если у вас нет учетной записи Azure, вы можете зарегистрироваться для получения [бесплатной пробной версии](https://azure.microsoft.com/account/free).
 
@@ -83,7 +83,7 @@ ms.locfileid: "88643279"
 
    ![Зависимости служб](./media/azure-redis-cache-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "кэш Azure для Redis продукта"](https://azure.microsoft.com/services/cache)
 - [Документация по кэшу Azure для Redis](/azure/azure-cache-for-redis/)

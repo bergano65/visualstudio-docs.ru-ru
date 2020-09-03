@@ -1,5 +1,5 @@
 ---
-title: Командный код Enumerator Документы Майкрософт
+title: Перечислитель кода команды | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739797"
 ---
-# <a name="command-code-enumerator"></a>Перечисление командного кода
-Этот регистратор используется в опциях [Для SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md)для обозначения команды, для которой указаны параметры.
+# <a name="command-code-enumerator"></a>Перечислитель кода команды
+Этот перечислитель используется в параметрах [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [сккпопулателист](../extensibility/sccpopulatelist-function.md)для указания команды, для которой указаны параметры.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,29 +40,29 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>Участники
-SCC_COMMAND_GET соответствует [SccGet](../extensibility/sccget-function.md).
+SCC_COMMAND_GET соответствует [сккжет](../extensibility/sccget-function.md).
 
-SCC_COMMAND_CHECKOUT соответствует [SccCheckout](../extensibility/scccheckout-function.md).
+SCC_COMMAND_CHECKOUT соответствует [сккчеккаут](../extensibility/scccheckout-function.md).
 
-SCC_COMMAND_CHECKIN соответствует [SccCheckin](../extensibility/scccheckin-function.md).
+SCC_COMMAND_CHECKIN соответствует [сккчеккин](../extensibility/scccheckin-function.md).
 
-SCC_COMMAND_UNCHECKOUT соответствует [SccUncheckout](../extensibility/sccuncheckout-function.md).
+SCC_COMMAND_UNCHECKOUT соответствует [сккунчеккаут](../extensibility/sccuncheckout-function.md).
 
-SCC_COMMAND_ADD соответствует [SccAdd](../extensibility/sccadd-function.md).
+SCC_COMMAND_ADD соответствует [сккадд](../extensibility/sccadd-function.md).
 
-SCC_COMMAND_REMOVE соответствует [SccRemove](../extensibility/sccremove-function.md).
+SCC_COMMAND_REMOVE соответствует [сккремове](../extensibility/sccremove-function.md).
 
-SCC_COMMAND_DIFF соответствует [SccDiff](../extensibility/sccdiff-function.md).
+SCC_COMMAND_DIFF соответствует [сккдифф](../extensibility/sccdiff-function.md).
 
-SCC_COMMAND_HISTORY соответствует [SccHistory](../extensibility/scchistory-function.md).
+SCC_COMMAND_HISTORY соответствует [скчистори](../extensibility/scchistory-function.md).
 
-SCC_COMMAND_RENAME соответствует [SccRename](../extensibility/sccrename-function.md).
+SCC_COMMAND_RENAME соответствует [сккренаме](../extensibility/sccrename-function.md).
 
-SCC_COMMAND_PROPERTIES соответствует [SccProperties](../extensibility/sccproperties-function.md).
+SCC_COMMAND_PROPERTIES соответствует [сккпропертиес](../extensibility/sccproperties-function.md).
 
-SCC_COMMAND_OPTIONS соответствует [SccSetOption](../extensibility/sccsetoption-function.md).
+SCC_COMMAND_OPTIONS соответствует [скксетоптион](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>См. также
-- [Плагины управления исходным элементом](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>См. также раздел
+- [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

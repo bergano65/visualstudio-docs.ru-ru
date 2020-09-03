@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657606"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Связывание обновлений модели UML с использованием транзакций
@@ -60,7 +60,7 @@ ms.locfileid: "72657606"
 
  `}`
 
- Обратите внимание на следующее:
+ Обратите внимание на следующее.
 
 - Необходимо всегда включать `Commit()` в конце транзакции. В случае ликвидации транзакции без фиксации выполняется ее откат. То есть модель будет восстановлена в том состоянии, которое предшествовало началу транзакции.
 
@@ -108,5 +108,5 @@ ms.locfileid: "72657606"
  }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Программирование с помощью API UML](../modeling/programming-with-the-uml-api.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)

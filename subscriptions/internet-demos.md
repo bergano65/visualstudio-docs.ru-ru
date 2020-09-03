@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Узнайте, как использовать ключи продуктов для поддержки интернет-демонстраций в службах терминалов и включения доступа RDS
 ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232430"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Интернет-демонстрации в службах терминалов

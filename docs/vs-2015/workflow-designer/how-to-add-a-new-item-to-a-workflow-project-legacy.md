@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46f6e9daafc2688b9bea75cba9eddd8c8a53c9bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656674"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Как добавить новый элемент в проект рабочего процесса (для прежних версий)
@@ -47,5 +47,5 @@ ms.locfileid: "72656674"
 
 3. Нажмите кнопку **Добавить** , чтобы добавить элемент в проект рабочего процесса.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)
