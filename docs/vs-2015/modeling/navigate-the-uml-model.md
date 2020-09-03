@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74289859"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
@@ -24,7 +24,7 @@ ms.locfileid: "74289859"
 В этом разделе представлены основные типы модели UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Элементы модели, модель и ее хранилище
- Типы, определенные в сборке **Microsoft. VisualStudio. UML. interfaces. dll** , соответствуют типам, определенным в [спецификации UML версии 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ Типы, определенные в сборке **Microsoft.VisualStudio.Uml.Interfaces.dll** соответствуют типам, определенным в [спецификации UML, версия 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
  Типы в спецификации UML реализуются в Visual Studio как интерфейсы. Перед именем каждого типа добавляется буква "I". Например: [IElement](/previous-versions/dd516035(v=vs.140)), [икласс](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
@@ -45,16 +45,16 @@ ms.locfileid: "74289859"
 
  При удалении элемента из модели все связи, в которых он был задействован, автоматически удаляются с обновлением свойства на другом конце.
 
- Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*type*`>`.
+ Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Кратность с максимальным значением больше 1 означает, что свойство .NET имеет тип: `IEnumerable<` *Type* `>` .
 
  Дополнительные сведения о просмотре связей см. [в разделе Навигация по связям с помощью API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Дерево собственности
  Модель содержит дерево объектов [IElement](/previous-versions/dd516035(v=vs.140)) . У каждого элемента есть свойства `OwnedElements` и `Owner`.
 
- В большинстве случаев на свойства `Owner` и `OwnedElements` также ссылаются другие свойства с более конкретными именами. Например, каждая операция UML принадлежит классу UML. Поэтому [IOperation](/previous-versions/dd481186(v=vs.140)) имеет свойство с именем [IOperation. class](/previous-versions/dd473473%28v%3dvs.140%29)и в каждом объекте [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner`.
+ В большинстве случаев на свойства `Owner` и `OwnedElements` также ссылаются другие свойства с более конкретными именами. Например, каждая операция UML принадлежит классу UML. Поэтому [IOperation](/previous-versions/dd481186(v=vs.140)) имеет свойство с именем [IOperation. class](/previous-versions/dd473473%28v%3dvs.140%29)и в каждом объекте [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner` .
 
- Самый верхний элемент дерева, который не имеет владельца, является `AuxiliaryConstructs.IModel`ом. Имодел содержится в `IModelStore`, где это [имоделсторе. root](/previous-versions/ee789368(v=vs.140)).
+ Самый верхний элемент дерева, не имеющий владельца, — это `AuxiliaryConstructs.IModel` . Имодел содержится в `IModelStore` , в котором он является [Имоделсторе. root](/previous-versions/ee789368(v=vs.140)).
 
  Каждый элемент модели создается с владельцем. Дополнительные сведения см. [в разделе Создание элементов и связей в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
@@ -128,7 +128,7 @@ foreach (IShape<IInterface> in
 
 - Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. Дополнительные сведения см. [в статье открытие модели UML с помощью API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)
-- [Программирование с UML API](../modeling/programming-with-the-uml-api.md)
+- [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

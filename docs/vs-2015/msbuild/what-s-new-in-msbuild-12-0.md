@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844457"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Новые возможности MSBuild 12.0
@@ -41,5 +41,5 @@ MSBuild теперь устанавливается вместе с Visual Studi
   
 - Свойства `MSBuildToolsPath` и `MSBuildFrameworkToolsPath` имеют 32-разрядные эквиваленты — `MSBuildToolsPath32` и `MSBuildFrameworkToolsPath32`, — которые всегда указывают на расположение 32-разрядной версии независимо от того, используется ли 32-разрядная или 64-разрядная версия MSBuild.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [MSBuild](msbuild.md)

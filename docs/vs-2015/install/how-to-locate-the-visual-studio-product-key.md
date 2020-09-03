@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983798"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>How to: Locate the Visual Studio Product Key
@@ -34,7 +34,7 @@ ms.locfileid: "73983798"
 
   - В документации или в других материалах, полученных от поставщика, у которого закуплено программное обеспечение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  * [Практическое руководство. Переход с ознакомительного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
  * [Установка Visual Studio](../install/install-visual-studio-2015.md)
- * [Документ по лицензированию Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)
+ * [Технический документ по лицензированию Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)

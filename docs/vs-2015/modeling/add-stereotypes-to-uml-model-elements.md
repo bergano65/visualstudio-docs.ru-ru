@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292336"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Добавление стереотипов к элементам модели UML
@@ -81,6 +81,6 @@ ms.locfileid: "74292336"
 
          Это допускают только некоторые типы схем.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Настройка модели с помощью профилей и стереотипов](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md)
 

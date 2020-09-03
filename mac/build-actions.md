@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
 ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714399"
 ---
 # <a name="build-actions"></a>Действия при сборке
@@ -31,9 +31,9 @@ ms.locfileid: "73714399"
 
 Вот некоторые стандартные действия сборки для проектов в Visual Studio для Mac.
 
-|Действие построения | Типы проектов | Description |
+|Действие построения | Типы проектов | Описание |
 |--|--|--|
-| **Compile** | any | Файл передается компилятору C# в виде файла исходного кода.|
+| **Компилятор** | any | Файл передается компилятору C# в виде файла исходного кода.|
 | **Содержимое** | .NET, Xamarin | Для проектов ASP.NET эти файлы включаются в состав сайта при его развертывании. Для проектов Xamarin.iOS и Xamarin.Mac они будут включены в пакет приложений.|
 | **Embedded Resource** | .NET | Файл передается компилятору C# в виде ресурса, внедряемого в сборку. После этого можно использовать [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream) из пространства имен `System.Reflection` для чтения файла из сборки.|
 | **None** | any | Файл не является частью сборки. Он включен в проект для упрощения доступа из интегрированной среды разработки. Это значение можно использовать для файлов документации, например файлов сведений.|

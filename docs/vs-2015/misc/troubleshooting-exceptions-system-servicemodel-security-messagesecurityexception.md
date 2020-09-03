@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655354"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Разрешение вопросов, связанных с исключениями: System.ServiceModel.Security.MessageSecurityException
-Исключение <xref:System.ServiceModel.Security.MessageSecurityException> возникает, когда [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] определяет, что сообщение неправильно защищено или было незаконно изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:
+<xref:System.ServiceModel.Security.MessageSecurityException>Исключение возникает [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] , когда определяет, что сообщение неправильно защищено или было незаконно изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:
 
 - Для связи веб–узла или проекта веб–приложения со службой WCF (.svc) используется ссылка на службу WCF через удаленное подключение, такое как подключение к удаленному рабочему столу или службы терминалов.
 
@@ -29,7 +29,7 @@ ms.locfileid: "72655354"
 - Запросы к localhost на удаленном веб–узле обрабатываются [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.
 
 ## <a name="associated-tips"></a>Полезные советы
- **Устраните проблемы проверки подлинности NTLM при использовании Development Server ASP.Net.**
+ **Устраните проблемы с проверкой подлинности NTLM при использовании ASP.NET Development Server.**
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server обычно отключает безопасность Windows NT Challenge/Response (NTLM), что разрешает анонимный доступ. По умолчанию при выполнении сеанса служб терминалов или использовании удаленного подключения безопасность NTLM включена. Когда NTLM включена, все запросы к localhost проверяются по учетным данным пользователя или процесса, запустившего [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server. Это снижает угрозу безопасности. Однако WCF также выполняет собственную проверку подлинности и не разрешает учетной записи, не относящейся к администраторам, пользоваться службами WCF.
 
  Если удаленный пользователь может запустить веб–узел с помощью [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server, а также работать с веб–службой или службой WCF, можно создать пользовательскую привязку службы или отключить безопасность NTLM.
@@ -84,5 +84,5 @@ ms.locfileid: "72655354"
 
 3. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  <xref:System.ServiceModel.Security.MessageSecurityException> [Использование помощника по исключениям](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

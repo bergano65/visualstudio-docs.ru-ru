@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293862"
 ---
 # <a name="managing-application-settings-net"></a>Управление параметрами приложения (.NET)
@@ -48,7 +48,7 @@ ms.locfileid: "74293862"
 
 ## <a name="creating-application-settings-at-design-time"></a>Создание параметров приложения во время разработки
 
-В режиме разработки можно создавать параметры приложения двумя способами: с помощью страницы **Параметры** **Конструктора проектов**либо с помощью окна **Свойства** формы или элемента управления, которое позволяет привязать параметр к свойству.
+В режиме разработки можно создавать параметры приложения двумя способами: с помощью страницы **Параметры****Конструктора проектов**либо с помощью окна **Свойства** формы или элемента управления, которое позволяет привязать параметр к свойству.
 
 При создании параметра, область действия которого ограничивается приложением (например строки подключения к базе данных или ссылки на ресурсы сервера), [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] сохраняет его в файл app.config с тегом `<applicationSettings>` . (Строки подключения сохраняются под тегом `<connectionStrings>` .)
 
@@ -70,11 +70,11 @@ ms.locfileid: "74293862"
 
 Например, можно добавить в проект такой файл, как SpecialSettings.Settings. Хотя класс `SpecialSettings` и не открыт для доступа через пространство имен `My` , но функция **Просмотр кода** позволяет прочесть индивидуальный файл параметров, содержащий `Partial Class SpecialSettings`.
 
-Конструктор параметров сначала ищет файл Settings.settings, который создает система работы с проектами; это файл, отображаемый Конструктором проектов по умолчанию на вкладке **Параметры** . Файл Settings.Settings находится в папке "Мои проекты", предназначенной для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , и в папке "Свойства", предназначенной для проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)] . Затем Конструктор проектов ищет другие файлы параметров в корневой папке проекта. Таким образом, индивидуальный файл параметров следует помещать туда же. Если добавить файл с расширением SETTINGS в другое место проекта, Конструктор проекта не сможет его найти.
+Конструктор параметров сначала ищет файл Settings. Settings, создаваемый системой проектов. Это файл по умолчанию, который отображается в конструкторе проектов на вкладке **Параметры** . Settings. Settings находится в папке My Project для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проектов и в папке Properties для [!INCLUDE[csprcs](../includes/csprcs-md.md)] проектов. Затем Конструктор проектов ищет другие файлы параметров в корневой папке проекта. Таким образом, индивидуальный файл параметров следует помещать туда же. Если добавить файл с расширением SETTINGS в другое место проекта, Конструктор проекта не сможет его найти.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Доступ или изменение параметров приложения во время выполнения в Visual Basic
 
-В проектах [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] во время выполнения доступ к параметрам приложения можно получить с помощью объекта `My.Settings` . На странице **Параметры** нажмите кнопку **Просмотреть код** , чтобы просмотреть файл Settings.vb. Файл Settings.vb определяет класс `Settings` , который позволяет обрабатывать эти события в классе параметров: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>и <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Обратите внимание, что класс `Settings` в файле Settings.vb является частичным классом, который отображает только принадлежащий пользователю код, а не весь сгенерированный класс. Более подробную информацию о доступе к параметрам приложения с помощью объекта `My.Settings` см. в разделе [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+В проектах [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] во время выполнения доступ к параметрам приложения можно получить с помощью объекта `My.Settings` . На странице **Параметры** нажмите кнопку **Просмотреть код**, чтобы просмотреть файл Settings.vb. Файл Settings.vb определяет класс `Settings` , который позволяет обрабатывать эти события в классе параметров: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>и <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Обратите внимание, что класс `Settings` в файле Settings.vb является частичным классом, который отображает только принадлежащий пользователю код, а не весь сгенерированный класс. Более подробную информацию о доступе к параметрам приложения с помощью объекта `My.Settings` см. в разделе [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Значения любого изменяемого пользователем во время выполнения приложения параметра, область действия которого ограничивается пользователем (например положение формы), хранятся в файле User.config. Обратите внимание, что значения по умолчанию по-прежнему сохраняются в файл app.config.
 
@@ -86,7 +86,7 @@ ms.locfileid: "74293862"
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Доступ или изменение параметров приложения во время выполнения в Visual C#
 <!-- markdownlint-enable MD003 MD020 -->
 
-В языках, отличных от [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], например [!INCLUDE[csprcs](../includes/csprcs-md.md)], доступ к классу `Settings` необходимо осуществлять напрямую, как показано в следующем примере [!INCLUDE[csprcs](../includes/csprcs-md.md)] .
+В языках, отличных от [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], например [!INCLUDE[csprcs](../includes/csprcs-md.md)], доступ к классу `Settings` необходимо осуществлять напрямую, как показано в следующем примере [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Общие сведения о параметрах приложений](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Информацию об итерации параметров см. в этой [записи форума](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Application Settings Overview](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Информацию об итерации параметров см. в этой [записи форума](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Доступ к параметрам приложения](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

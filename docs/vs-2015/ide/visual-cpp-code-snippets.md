@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655392"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C++
@@ -51,7 +51,7 @@ ms.locfileid: "72655392"
 
 3. Нажмите клавиши **CTRL+K+S**.
 
-   Выберите **#if**. Результат должен быть примерно таким:
+   Выберите **#if**. Вы увидите нечто вроде этого:
 
 ```cpp
 #if 0

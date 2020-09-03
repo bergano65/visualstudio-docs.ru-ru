@@ -7,10 +7,10 @@ ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
 ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74127239"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Установка пакетов NuGet и управление ими в Visual Studio для Mac
@@ -23,7 +23,7 @@ ms.locfileid: "74127239"
 
 ## <a name="find-and-install-a-package"></a>Поиск и установка пакета
 
-1. Открыв проект в Visual Studio для Mac, щелкните правой кнопкой мыши папку **Зависимости** (папку **Пакеты** для проекта Xamarin) на **Панели решения** и выберите пункт **Управление пакетами NuGet...** .
+1. Открыв проект в Visual Studio для Mac, щелкните правой кнопкой мыши папку **Зависимости** (папку **Пакеты** для проекта Xamarin) на **Панели решения** и выберите пункт **Управление пакетами NuGet...**.
 
     ![Действие для добавления пакета NuGet в контекстном меню](media/nuget-walkthrough-packages-menu.png)
 
@@ -89,7 +89,7 @@ using Newtonsoft.Json;
 
 Управление пакетами для решения — это удобный способ одновременно работать с несколькими проектами.
 
-1. Щелкните решение правой кнопкой мыши и выберите пункт **Управление пакетами NuGet…** .
+1. Щелкните решение правой кнопкой мыши и выберите пункт **Управление пакетами NuGet…**.
 
     ![Управление пакетами NuGet для решения](media/nuget-walkthrough-manage-packages-solution.png)
 

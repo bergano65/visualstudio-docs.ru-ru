@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655135"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Практическое руководство. Создание рабочего элемента для дефекта управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Функцию отслеживания рабочих элементов можно использовать для записи в журнал рабочего элемента из [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Чтобы использовать эту функцию, проект должен быть частью командного проекта в [!INCLUDE[esprfound](../includes/esprfound-md.md)].
+Функцию отслеживания рабочих элементов можно использовать для записи в журнал рабочего элемента из [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Чтобы использовать эту функцию, проект должен быть частью командного проекта в [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Создание рабочего элемента для ошибки управляемого кода
 
