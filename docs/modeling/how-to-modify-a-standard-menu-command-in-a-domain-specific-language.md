@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532500"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
@@ -55,7 +55,7 @@ ms.locfileid: "85532500"
 
 2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs` .
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Например:
 
     ```csharp
     using System;
@@ -131,19 +131,19 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
-- `this.IsDiagramSelected()` - `true`значение, если пользователь щелкнул пустую часть диаграммы.
+- `this.IsDiagramSelected()` - `true` значение, если пользователь щелкнул пустую часть диаграммы.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`— пользователь не выберет несколько фигур.
+- `this.IsSingleSelection()` — пользователь не выберет несколько фигур.
 
-- `this.SingleSelection`— Фигура или схема, которую пользователь щелкнул правой кнопкой мыши
+- `this.SingleSelection` — Фигура или схема, которую пользователь щелкнул правой кнопкой мыши
 
-- `shape.ModelElement as MyLanguageElement`— элемент модели, представленный фигурой.
+- `shape.ModelElement as MyLanguageElement` — элемент модели, представленный фигурой.
 
 Дополнительные сведения о переходе от элемента к элементу и о создании объектов и ссылок см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)

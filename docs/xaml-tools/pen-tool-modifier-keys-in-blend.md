@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328377"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Клавиши-модификаторы инструмента "Перо" в Blend для Visual Studio
@@ -36,7 +36,7 @@ ms.locfileid: "85328377"
 |Создание сглаженного угла при соединении двух контуров|Выберите два контура, щелкните инструмент **Перо**, щелкните конечную точку одного из контуров и перетащите конечную точку другого контура|![Создание сглаженного угла при соединении двух контуров](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Указатель объединения пера|
 |Создание нового контура|Удерживая клавишу **CTRL**, щелкните за пределами предыдущего контура, чтобы к нему больше не добавлялись точки, а затем щелкните или перетащите указатель в место создания нового контура|![Создание нового контура](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Указатель начала пера|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Клавиши-модификаторы монтажной панели](artboard-modifier-keys-in-blend.md)
 - [Клавиши-модификаторы инструмента "Прямой выбор"](direct-selection-tool-modifier-keys-in-blend.md)

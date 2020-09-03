@@ -1,5 +1,5 @@
 ---
-title: Элемент DefaultName (шаблоны визуальной студии) Документы Майкрософт
+title: Элемент Дефаултнаме (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712304"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>Элемент DefaultName (шаблоны Visual Studio)
-Упоняет имя, которое система проекта Visual Studio будет генерировать для проекта или элемента при его создании.
+# <a name="defaultname-element-visual-studio-templates"></a>Элемент Дефаултнаме (шаблоны Visual Studio)
+Указывает имя, которое будет создавать система проектов Visual Studio для проекта или элемента при его создании.
 
- \<VSTemplate \<> TemplateData> \<по умолчаниюНазову>
+ \<VSTemplate> \<TemplateData>
+ \<DefaultName>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,10 +38,10 @@ ms.locfileid: "80712304"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -53,17 +54,17 @@ ms.locfileid: "80712304"
 
  В этом тексте указывается имя проекта или элемента по умолчанию.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Параметр `DefaultName` является необязательным элементом.
 
- Для проектов этот элемент определяет название каталога, который хранит проект на диске. Для элементов указывается имя файла исходного файла.
+ Для проектов этот элемент указывает имя каталога, в котором хранится проект на диске. Для элементов указывает имя файла исходного файла.
 
- При создании проекта или элемента можно изменить имя по умолчанию с помощью опции **"Имя",** которая доступна либо из диалогового окна **нового проекта,** либо из окна диалога **New Item.**
+ При создании проекта или элемента можно изменить имя по умолчанию, используя параметр **имя** , который доступен в диалоговом окне **Создание проекта** или **Добавление нового элемента** .
 
- Если вы не хотите, чтобы проектная система генерировать имя по умолчанию для `False`проекта или элемента, установите элемент [ProvideDefaultName.](../extensibility/providedefaultname-element-visual-studio-templates.md)
+ Если не требуется, чтобы система проектов создавала имя по умолчанию для проекта или элемента, установите для элемента [провидедефаултнаме](../extensibility/providedefaultname-element-visual-studio-templates.md) значение `False` .
 
 ## <a name="example"></a>Пример
- Следующий пример иллюстрирует метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона элементов для класса.
+ В следующем примере показаны метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] класса.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,5 +83,5 @@ ms.locfileid: "80712304"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

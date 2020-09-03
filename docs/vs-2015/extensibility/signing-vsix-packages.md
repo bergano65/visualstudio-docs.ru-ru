@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918734"
 ---
 # <a name="signing-vsix-packages"></a>Подписывание пакетов VSIX
@@ -38,15 +38,15 @@ ms.locfileid: "75918734"
   
 1. Добавьте VSIX в проект.  
   
-2. Щелкните правой кнопкой мыши узел проекта в обозреватель решений, выберите **Добавить &#124; Управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавлении пакетов NuGet см. в статье [Общие сведения о NuGet](/nuget/) и [Управление пакетами NuGet с помощью диалогового окна](/nuget/consume-packages/install-use-packages-visual-studio).  
+2. Щелкните правой кнопкой мыши узел проекта в обозреватель решений, выберите **добавить &#124; Управление пакетами NuGet**.  Дополнительные сведения о NuGet и добавлении пакетов NuGet см. в статье [Общие сведения о NuGet](/nuget/) и [Управление пакетами NuGet с помощью диалогового окна](/nuget/consume-packages/install-use-packages-visual-studio).  
   
 3. Выполните поиск по запросу Всикссигнтул из Висуалстудиоекстенсибилити и установите пакет NuGet.  
   
-4. Теперь можно запустить Всикссигнтул из расположения локальных пакетов проекта. Сведения о сценарии подписывания (Всикссигнтул. exe/?) см. в справке командной строки средства.  
+4. Теперь можно запустить Всикссигнтул из расположения локальных пакетов проекта. Сведения о сценарии подписывания (VSIXSignTool.exe/?) см. в командной строке средства.  
   
    Например, чтобы подписать файл сертификата, защищенный паролем:  
   
-   Всикссигнтул. exe Sign/f \<CertFile >/p \<пароль > \<Всиксфиле >  
+   VSIXSignTool.exeный знак/f \<certfile> /p \<password>\<VSIXfile>  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

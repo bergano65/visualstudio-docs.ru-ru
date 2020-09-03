@@ -1,5 +1,5 @@
 ---
-title: EnableEditOfLocationField Элемент (Visual Studio шаблоны) Документы Майкрософт
+title: Элемент EnableEditOfLocationField (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,16 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711991"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Элемент EnableEditOfLocationField (шаблоны Visual Studio)
-Упоняет, может ли пользователь отсеять поле местоположения.
+Указывает, может ли пользователь изменять поле расположения.
 
- \<VSTemplate \<> TemplateData> \<EnableEditOfLocationField>
+ \<VSTemplate> \<TemplateData>
+ \<EnableEditOfLocationField>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,10 +34,10 @@ ms.locfileid: "80711991"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствуют
+ Нет
 
 ### <a name="child-elements"></a>Дочерние элементы
- Отсутствуют
+ Нет
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -47,15 +48,15 @@ ms.locfileid: "80711991"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Текст должен быть `true` `false`либо, либо , указывая, может ли пользователь отсеять текстовый ящик **Местоположения** в диалоговом поле **Нового проекта.**
+ Текст должен иметь значение `true` или `false` , что указывает, может ли пользователь изменять текстовое поле **Расположение** в диалоговом окне **Новый проект** .
 
-## <a name="remarks"></a>Примечания
- Параметр `EnableEditOfLocationField` является необязательным элементом. Значение по `true`умолчанию, что позволяет пользователю отсеивать значение в текстовом поле **Местоположение** в поле диалога **Нового проекта.**
+## <a name="remarks"></a>Remarks
+ Параметр `EnableEditOfLocationField` является необязательным элементом. Значение по умолчанию — `true` , что позволяет пользователю изменять значение в текстовом поле **Расположение** в диалоговом окне **Новый проект** .
 
- В диалоговом окне **нового проекта** текстовый окне **Местоположения** определяет каталог, где сохраняется новый проект.
+ В диалоговом окне **Новый проект** в текстовом поле **Расположение** указывается каталог, в котором сохранен новый проект.
 
 ## <a name="example"></a>Пример
- Следующий пример иллюстрирует метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для приложения Windows.
+ В следующем примере показаны метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,5 +85,5 @@ ms.locfileid: "80711991"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

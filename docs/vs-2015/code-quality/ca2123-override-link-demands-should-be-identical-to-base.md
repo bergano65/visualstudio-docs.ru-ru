@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a722eb95561a1a81b0d17b8876df8b4bac048b5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544265"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123. Переопределяющие требования ссылки должны быть идентичны базовым
@@ -51,5 +51,5 @@ ms.locfileid: "85544265"
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.OverridesAndSecurity/cs/FxCop.Security.OverridesAndSecurity.cs#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  Требования к [обеспечению безопасности](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ссылок](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

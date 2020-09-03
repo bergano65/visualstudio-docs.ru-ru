@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016099"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
@@ -65,7 +66,7 @@ ms.locfileid: "86016099"
 
 5. Выберите шаблон проекта **Библиотека пользовательского элемента управления WPF** , присвойте проекту имя **итемтемплатевизард**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **итемтемплатевизард** в решение.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **итемтемплатевизард** в решение.
 
 6. Удалите элемент UserControl1 из проекта.
 
@@ -207,7 +208,7 @@ ms.locfileid: "86016099"
 
      Дополнительные сведения об `WizardExtension` элементе см. в разделе [визардекстенсион element &#40;Visual Studio templates&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
-3. Сохраните файл и закройте его.
+3. Сохраните и закройте файл.
 
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Добавление заменяемых параметров в файл *Elements.xml* в шаблоне элемента
  Добавьте несколько заменяемых параметров в файл *Elements.xml* в проекте ItemTemplate. Эти параметры инициализируются в `PopulateReplacementDictionary` методе `CustomActionWizard` класса, который был определен ранее. Когда пользователь добавляет в проект элемент проекта настраиваемого действия, Visual Studio автоматически заменяет эти параметры в файле *Elements.xml* в новом элементе проекта значениями, указанными в мастере.
@@ -234,7 +235,7 @@ ms.locfileid: "86016099"
 
      Новый XML-файл изменяет значения `Id` атрибутов,, `GroupId` `Location` , `Description` и `Url` на заменяемые параметры.
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 ## <a name="add-the-wizard-to-the-vsix-package"></a>Добавление мастера в пакет VSIX
  В файле source. extension. vsixmanifest в проекте VSIX добавьте ссылку на проект мастера, чтобы она была развернута с помощью пакета VSIX, содержащего элемент проекта.
@@ -300,7 +301,7 @@ ms.locfileid: "86016099"
 
 12. В поле **название** введите **Центр разработчиков SharePoint**.
 
-13. В поле **Описание** введите, чтобы **Открыть веб-сайт центра разработчиков SharePoint**.
+13. В поле  **Описание** введите, чтобы **Открыть веб-сайт центра разработчиков SharePoint**.
 
 14. В поле **URL-адрес** введите **https://docs.microsoft.com/sharepoint/dev/** , а затем нажмите кнопку **Готово** .
 

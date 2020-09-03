@@ -1,5 +1,5 @@
 ---
-title: Определить элемент Документы Майкрософт
+title: Определение элемента | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712273"
 ---
-# <a name="define-element"></a>Определить элемент
-Определяет имя символа и пару значений. Этот символ можно оценить по условным атрибутам. Для получения дополнительной [информации см.](../extensibility/vsct-xml-schema-conditional-attributes.md) Смотрите также [элемент Символы](../extensibility/symbols-element.md).
+# <a name="define-element"></a>Определение элемента
+Определяет пару "имя символа" и "значение". Этот символ может быть вычислен с помощью условных атрибутов. Дополнительные сведения см. в разделе [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md). См. также [элемент Symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,18 +34,18 @@ ms.locfileid: "80712273"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|name|Обязательный элемент. Название символа:<br /><br /> имя»Mode"|
-|value|Обязательный элемент. Значение символа:<br /><br /> значение»Стандарт"|
-|Условие|Необязательный параметр. Для получения дополнительной [информации см.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|name|Обязательный. Имя символа:<br /><br /> Name = "Mode"|
+|value|Обязательный. Значение символа:<br /><br /> value = "Standard"|
+|Условие|Необязательный элемент. Дополнительные сведения см. в разделе [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, которые VSPackage предоставляет интегрированной среде разработки (IDE). Например, пункты меню, меню, панели инструментов и комбо-коробки.|
+|[Коммандтабле, элемент](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, предоставляемые пакетом VSPackage в интегрированной среде разработки (IDE). Например, пункты меню, меню, панели инструментов и поля со списком.|
 
 ## <a name="example"></a>Пример
 
@@ -54,5 +54,5 @@ ms.locfileid: "80712273"
 <Define name="MODE" value="Standard"/>
 ```
 
-## <a name="see-also"></a>См. также
-- [Таблица команд Visual Studio (.vsct) файлов](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>См. также раздел
+- [Файлы таблицы команд Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

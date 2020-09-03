@@ -1,5 +1,5 @@
 ---
-title: Класс TaskScheduler - Внутренние участники Документы Майкрософт
+title: Класс TaskScheduler — внутренние элементы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712569"
 ---
-# <a name="taskscheduler-class---internal-members"></a>Класс TaskScheduler - Внутренние члены
-В этой статье описаны <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> внутренние члены класса, которые помогают реализовать пользовательский отладчик. Для получения общей информации <xref:System.Threading.Tasks.TaskScheduler> об этом классе см.
+# <a name="taskscheduler-class---internal-members"></a>Класс TaskScheduler — внутренние элементы
+В этой статье описываются внутренние члены <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> класса, помогающие реализовать пользовательский отладчик. Общие сведения об этом классе см <xref:System.Threading.Tasks.TaskScheduler> . в справочной статье.
 
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Поскольку вы не можете получить доступ к этим внутренним членам из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
+ Так как вы не можете получить доступ к этим внутренним членам из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,13 +38,13 @@ ms.locfileid: "80712569"
 
 ### <a name="methods"></a>Методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Извлекает массив всех запланированных задач.|
-|[GetTaskПланировщиксдляДебуггер](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Извлекает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые в настоящее время активны.|
+|[жетсчедуледтасксфордебугжер](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Извлекает массив всех запланированных задач.|
+|[жеттасксчедулерсфордебугжер](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Извлекает массив всех <xref:System.Threading.Tasks.TaskScheduler> объектов, которые активны в данный момент.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Параллельные внутренние расширения для рамочной программы .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

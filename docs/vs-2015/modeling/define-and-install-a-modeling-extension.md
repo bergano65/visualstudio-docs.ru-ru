@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544993"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Определение и установка расширения моделирования
@@ -24,7 +24,7 @@ ms.locfileid: "85544993"
 
 В Visual Studio можно определять расширения для схем моделирования. Таким образом можно адаптировать схемы и модели под свои потребности. Например, можно определить команды меню, профили UML, ограничения проверки и элементы панели элементов. В одном расширении можно определить несколько компонентов. Можно также предоставить эти расширения другим пользователям Visual Studio в виде [Visual Studio Integration Extension (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx). Расширение VSIX можно создать с помощью проекта VSIX в Visual Studio.
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
  См. раздел [Требования](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -109,7 +109,7 @@ ms.locfileid: "85544993"
 
 3. Если был выбран параметр **Запуск без отладки** и необходимо использовать отладчик, вернитесь в основной экземпляр Visual Studio. В меню **Отладка** выберите пункт **Прикрепить к процессу**. В диалоговом окне выберите экспериментальный экземпляр Visual Studio, который имеет имя программы **devenv**.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Установка и удаление расширения
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Установка и удаление расширения
  Выполните указанные ниже действия, чтобы запустить расширение в основном экземпляре Visual Studio на своем компьютере или на других компьютерах.
 
 1. На своем компьютере найдите файл **.vsix** , который был создан проектом расширения.
@@ -140,5 +140,5 @@ ms.locfileid: "85544993"
 
    *% LocalAppData%* **\микрософт\висуалстудио \\ [версия] \екстенсионс**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md) [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md) [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

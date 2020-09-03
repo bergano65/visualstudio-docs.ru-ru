@@ -1,5 +1,5 @@
 ---
-title: Расширение свойств и окна свойства (ru) Документы Майкрософт
+title: Расширение свойств и окна свойств | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711738"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Расширить свойства и окно свойства
-Окно **Свойств** используется для просмотра и отправления свойств времени проектирования и событий выбранных объектов.
+# <a name="extend-properties-and-the-property-window"></a>Расширение свойств и окна свойств
+Окно **Свойства** используется для просмотра и изменения свойств и событий времени разработки для выбранных объектов.
 
- При выборе объекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]в окне свойств свойств свойств отображаются в окне **Свойств.** Для получения дополнительной информации смотрите [обзор окна Свойств](../extensibility/internals/properties-window-overview.md).
+ При выборе объекта в в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] окне « **свойства** » отображаются открытые свойства этого объекта. Дополнительные сведения см. в разделе [окно свойств обзор](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>В этом разделе
-- [Выставляет свойства в окно Свойств](../extensibility/exposing-properties-to-the-properties-window.md) Объясняет, как можно отображать пользовательские свойства в окне Свойств.
+- [Предоставление свойств окно свойств](../extensibility/exposing-properties-to-the-properties-window.md) Описание того, как можно настроить отображение пользовательских свойств в окно свойств.
 
-- [Получить свойства проекта](../extensibility/getting-project-properties.md) Объясняет, как получить свойства проекта.
+- [Получение свойств проекта](../extensibility/getting-project-properties.md) Объясняет, как получить свойства проекта.

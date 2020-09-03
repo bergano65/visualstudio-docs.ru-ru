@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015762"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Пошаговое руководство. Развертывание определения списка задач проекта
@@ -24,7 +25,7 @@ ms.locfileid: "86015762"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Поддерживаемые редакции Microsoft Windows и SharePoint.
 
@@ -173,5 +174,5 @@ Visual Studio перезапускает пул приложений IIS, отз
 
 - [Windows PowerShell для SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

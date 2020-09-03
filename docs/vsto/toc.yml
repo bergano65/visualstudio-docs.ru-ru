@@ -42,9 +42,9 @@
           items:
             - name: Обновление и перенос решений Office
               href: upgrading-and-migrating-office-solutions.md
-            - name: Перенос решений Office на платформу .NET Framework 4 или более поздней версии
+            - name: Migrating Office Solutions to the .NET Framework 4 or later
               items:
-                - name: Перенос решений Office на платформу .NET Framework 4 или более поздней версии
+                - name: Migrating Office Solutions to the .NET Framework 4 or later
                   href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: 'Изменения, необходимые для выполнения проектов Office'
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
@@ -60,17 +60,17 @@
               href: architecture-of-office-solutions-in-visual-studio.md
             - name: Архитектура настроек на уровне документа
               href: architecture-of-document-level-customizations.md
-            - name: Архитектура надстроек VSTO
+            - name: Architecture of VSTO Add-ins
               href: architecture-of-vsto-add-ins.md
-            - name: Общие сведения об инструментах Visual Studio для среды выполнения Office
+            - name: Visual Studio Tools for Office Runtime Overview
               items:
-                - name: Общие сведения об инструментах Visual Studio для среды выполнения Office
+                - name: Visual Studio Tools for Office Runtime Overview
                   href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Visual Studio Tools for Office Runtime Installation Scenarios
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: Сборки среды выполнения Visual Studio Tools for Office
                   href: assemblies-in-the-visual-studio-tools-for-office-runtime.md
-            - name: Записи реестра для надстроек VSTO
+            - name: Registry Entries for VSTO Add-ins
               href: registry-entries-for-vsto-add-ins.md
             - name: Custom Document Properties Overview
               href: custom-document-properties-overview.md
@@ -86,7 +86,7 @@
               href: running-solutions-in-different-versions-of-microsoft-office.md
             - name: Проекты Office в среде Visual Studio
               href: office-projects-in-the-visual-studio-environment.md
-            - name: Свойства в проектах Office
+            - name: Properties in Office Projects
               href: properties-in-office-projects.md
             - name: Манифесты приложения и развертывания в решениях Office
               href: application-and-deployment-manifests-in-office-solutions.md
@@ -134,11 +134,11 @@
                   href: programming-vsto-add-ins.md
                 - name: Повышение производительности надстройки VSTO
                   href: improving-the-performance-of-a-vsto-add-in.md
-                - name: Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения
+                - name: Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time
                   href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
                 - name: Вызов кода в надстройках VSTO из других решений Office
                   href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
-                - name: Пошаговое руководство. Вызов кода в надстройке VSTO из VBA
+                - name: Пошаговое руководство. Вызов кода из VBA в надстройках VSTO
                   href: walkthrough-calling-code-in-a-vsto-add-in-from-vba.md
                 - name: Настройка функций пользовательского интерфейса с помощью интерфейсов расширяемости
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
@@ -152,11 +152,11 @@
                       href: combining-vba-and-document-level-customizations.md
                     - name: Предоставление доступа к коду со стороны VBA в проекте Visual Basic
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-                    - name: 'Предоставление доступа к коду со стороны VBA в проекте Visual C#'
+                    - name: Предоставление доступа к коду со стороны VBA в проекте Visual C#
                       href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
                     - name: Пошаговое руководство. Вызов кода из VBA в проекте Visual Basic
                       href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
-                    - name: 'Пошаговое руководство. Вызов кода из VBA в проекте Visual C#'
+                    - name: Пошаговое руководство. Вызов кода из VBA в проекте Visual C#
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Managing Documents on a Server by Using the ServerDocument Class
                   items:
@@ -192,7 +192,7 @@
                           href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
                         - name: Пошаговое руководство. Отображение текста в текстовом поле документа с помощью кнопки
                           href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
-                        - name: Пошаговое руководство. Отображение текста в текстовом поле на листе с помощью кнопки
+                        - name: Пошаговое руководство. Отображение текста в текстовом поле рабочего листа с помощью кнопки
                           href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
                         - name: Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей
                           href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
@@ -238,9 +238,9 @@
                       href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
                     - name: Экспорт лент из конструктора лент в XML-ленты
                       href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
-                    - name: XML-ленты
+                    - name: Ribbon XML
                       href: ribbon-xml.md
-                    - name: Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-ленты
+                    - name: 'Walkthrough: Creating a Custom Tab by Using Ribbon XML'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Общие сведения о панели действий
                   items:
@@ -262,11 +262,11 @@
                       href: custom-task-panes.md
                     - name: Добавление настраиваемой панели задач в приложение
                       href: how-to-add-a-custom-task-pane-to-an-application.md
-                    - name: Пошаговое руководство. Автоматизация приложения из настраиваемой области задач
+                    - name: 'Walkthrough: Automating an Application from a Custom Task Pane'
                       href: walkthrough-automating-an-application-from-a-custom-task-pane.md
-                    - name: Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте
+                    - name: 'Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button'
                       href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-                    - name: Пошаговое руководство. Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook
+                    - name: Пошаговое руководство. Отображение в Outlook настраиваемых областей задач с сообщениями электронной почты
                       href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
                 - name: Использование элементов управления WPF в решениях Office
                   href: using-wpf-controls-in-office-solutions.md
@@ -276,7 +276,7 @@
                   href: how-to-show-add-in-user-interface-errors.md
                 - name: Добавление команд в контекстное меню
                   href: how-to-add-commands-to-shortcut-menus.md
-                - name: Пошаговое руководство. Сбор данных с использованием формы Windows
+                - name: Пошаговое руководство. Сбор данных с использованием формы Windows Forms
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Данные в решениях Office
               items:
@@ -376,9 +376,9 @@
               href: how-to-target-the-office-multilingual-user-interface.md
             - name: Специальные возможности в проектах Office
               href: accessibility-in-office-projects.md
-        - name: Решения Excel
+        - name: Excel Solutions
           items:
-            - name: Решения Excel
+            - name: Excel Solutions
               href: excel-solutions.md
             - name: Excel Object Model Overview
               items:
@@ -502,7 +502,7 @@
               href: globalization-and-localization-of-excel-solutions.md
             - name: Использование элементов управления Windows Forms в листах Excel
               href: using-windows-forms-controls-on-excel-worksheets.md
-            - name: Пошаговое руководство. Создание первой настройки на уровне документа для Excel
+            - name: Пошаговое руководство. Создание первой настройки уровня документа для Excel
               href: walkthrough-creating-your-first-document-level-customization-for-excel.md
             - name: Пошаговое руководство. Создание первой надстройки VSTO для Excel
               href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
@@ -510,13 +510,13 @@
               href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
         - name: Решения InfoPath
           href: infopath-solutions.md
-        - name: Решения Outlook
+        - name: Outlook Solutions
           items:
-            - name: Решения Outlook
+            - name: Outlook Solutions
               href: outlook-solutions.md
-            - name: Общие сведения об объектной модели Outlook
+            - name: Outlook Object Model Overview
               items:
-                - name: Общие сведения об объектной модели Outlook
+                - name: Outlook Object Model Overview
                   href: outlook-object-model-overview.md
                 - name: Работа с элементами контактов
                   items:
@@ -608,7 +608,7 @@
           items:
             - name: Решения Project
               href: project-solutions.md
-            - name: Пошаговое руководство. Создание первой надстройки VSTO для проекта
+            - name: Пошаговое руководство. Создание первой надстройки VSTO для Project
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Решения Visio
           items:

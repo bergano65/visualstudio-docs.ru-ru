@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544876"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент настройки (разработка решений Office в Visual Studio)
@@ -57,7 +57,7 @@ ms.locfileid: "85544876"
 
  Элемент `customization` имеет указанный ниже атрибут.
 
-|attribute|Описание|
+|Атрибут|Описание:|
 |---------------|-----------------|
 |`id`|Требуется для многопроектного развертывания. Элемент `id` уникальным образом идентифицирует решение Office.|
 
@@ -75,7 +75,7 @@ ms.locfileid: "85544876"
 
 ## <a name="example-of-a-document-level-customization"></a>Пример настройки на уровне документа
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  В приведенном ниже примере кода показан элемент `customization` для настройки на уровне документа. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
@@ -89,7 +89,7 @@ ms.locfileid: "85544876"
 
 ## <a name="example-of-a-vsto-add-in"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
  В следующем примере кода показан `customization` элемент для надстройки VSTO. Это надстройка VSTO для Outlook, в которой используются области форм. Этот пример кода является частью большого примера, приведенного в разделе [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
@@ -119,7 +119,7 @@ ms.locfileid: "85544876"
 </vstov4:customization>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)
 - [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Класс задач - Внутренние члены Документы Майкрософт
+title: Класс Task-внутренние элементы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712738"
 ---
-# <a name="task-class---internal-members"></a>Класс задач - внутренние члены
-В этой статье описаны <xref:System.Threading.Tasks.Task?displayProperty=fullName> внутренние члены класса, которые помогают реализовать пользовательский отладчик. Для получения общей информации <xref:System.Threading.Tasks.Task> об этом классе см.
+# <a name="task-class---internal-members"></a>Класс Task — внутренние элементы
+В этой статье описываются внутренние члены <xref:System.Threading.Tasks.Task?displayProperty=fullName> класса, помогающие реализовать пользовательский отладчик. Общие сведения об этом классе см <xref:System.Threading.Tasks.Task> . в справочной статье.
 
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Поскольку вы не можете получить доступ к этим внутренним членам из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
+ Так как вы не можете получить доступ к этим внутренним членам из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,30 +42,30 @@ ms.locfileid: "80712738"
 
 ### <a name="methods"></a>Методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[Метод SetNotificationForWaitCompletion](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Устанавливает или очищает TASK_STATE_WAIT_COMPLETION_NOTIFICATION бит состояния.|
-|[Метод NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Метод заплатиса, используемый в качестве цели точки разрыва отладчиком.|
+|[Метод SetNotificationForWaitCompletion](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Задает или очищает бит состояния TASK_STATE_WAIT_COMPLETION_NOTIFICATION.|
+|[Метод NotifyDebuggerOfWaitCompletion](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Метод-заполнитель, используемый отладчиком в качестве цели точки останова.|
 
 ### <a name="fields"></a>Поля
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[m_action](../../extensibility/debugger/m-action-field.md)|Делегат, представляющий код для <xref:System.Threading.Tasks.Task> выполнения в объекте.|
-|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Хранит дополнительные <xref:System.Threading.Tasks.Task> свойства объекта.|
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|Резервное поле <xref:System.Threading.Tasks.Task?displayProperty=fullName> для родительского свойства.|
-|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Хранит информацию о текущем <xref:System.Threading.Tasks.Task> состоянии объекта.|
+|[m_action](../../extensibility/debugger/m-action-field.md)|Делегат, представляющий код для выполнения в <xref:System.Threading.Tasks.Task> объекте.|
+|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.|
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|Резервное поле для <xref:System.Threading.Tasks.Task?displayProperty=fullName> родительского свойства.|
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|Хранит сведения о текущем состоянии <xref:System.Threading.Tasks.Task> объекта.|
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|Объект, представляющий данные, которые будут использоваться действием.|
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Резервное <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> поле для свойства.|
-|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Следующий доступный <xref:System.Threading.Tasks.Task> идентификатор для объекта.|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Указывается, что задача отменена до достижения запущенного состояния или что задача подтвердила ее отмену и завершилась без исключения.|
-|[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Означает, что задача запущена.|
-|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Указано, что задача выполнена из-за необработанного исключения.|
-|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Означает, что задача успешно выполнена.|
-|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Означает, что задача завершила выполнение своего делегата и неявно ждет завершения прилагаемых детских задач.|
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|Резервное поле для <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> Свойства.|
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|Следующий доступный идентификатор для <xref:System.Threading.Tasks.Task> объекта.|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|Указывает, что задача была отменена до достижения состояния выполнения или что задача подтвердила ее отмену и завершилась без исключения.|
+|[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|Указывает, что задача запущена.|
+|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|Указывает, что задача завершена из-за необработанного исключения.|
+|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Указывает, что выполнение задачи успешно завершено.|
+|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Указывает, что задача завершила выполнение своего делегата и неявно ожидает завершения присоединенных дочерних задач.|
 
-## <a name="remarks"></a>Примечания
- Следующие внутренние методы полезны для двигателя отладчика, поскольку они обозначают вход в <xref:System.Threading.Tasks.Task> выполнение кода:
+## <a name="remarks"></a>Remarks
+ Следующие внутренние методы полезны для обработчика отладчика, так как они помечают вход на <xref:System.Threading.Tasks.Task> выполнение кода:
 
 - `Execute`
 
@@ -79,6 +79,6 @@ ms.locfileid: "80712738"
 
 - `InternalWait`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
-- [Параллельные внутренние расширения для рамочной программы .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Внутренние модули параллельного расширения для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

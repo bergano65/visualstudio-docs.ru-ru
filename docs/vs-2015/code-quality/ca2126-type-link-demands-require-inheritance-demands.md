@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 051a041c245fae55e3d4759130c145c662734aa8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544278"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126. Для требований ссылок на тип необходимы требования наследования
@@ -60,5 +60,5 @@ ms.locfileid: "85544278"
 
  [CA2123. Переопределяющие требования ссылки должны быть идентичны базовым](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Рекомендации по безопасному написанию кода](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [требования к](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) запросам на [требование связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Demands](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)

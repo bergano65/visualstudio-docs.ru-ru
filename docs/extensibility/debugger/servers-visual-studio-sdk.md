@@ -1,5 +1,5 @@
 ---
-title: Серверы (Визуальная студия SDK) Документы Майкрософт
+title: Серверы (пакет SDK для Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712896"
 ---
 # <a name="servers-visual-studio-sdk"></a>Серверы (пакет SDK для Visual Studio)
-В архитектуре отладчика *сервер:*
+В архитектуре отладчика *сервер*:
 
-- Является контейнером портов и поставщиков портов и сообщает порты и портпоставщиков сессии отладки менеджера (SDM) и отладки двигателей.
+- — Это контейнер портов и поставщиков портов, который передает порты и поставщики портов диспетчеру отладки сеансов (SDM) и отладчикам.
 
-- Может идентифицировать себя по имени, и перечислить свои порты и порт поставщиков.
+- Может идентифицировать себя по имени и перечислять его порты и поставщиков портов.
 
-- Представлен интерфейсом [IDebugCoreServer2,](../../extensibility/debugger/reference/idebugcoreserver2.md) который реализуется только Visual Studio (один экземпляр сервера для каждого экземпляра запуска Visual Studio).
+- Представляется интерфейсом [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , который реализован только в Visual Studio (один экземпляр сервера для каждого выполняемого экземпляра Visual Studio).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Порты](../../extensibility/debugger/ports.md)
 - [Поставщики портов](../../extensibility/debugger/port-suppliers.md)
-- [Концепции debugger](../../extensibility/debugger/debugger-concepts.md)
+- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

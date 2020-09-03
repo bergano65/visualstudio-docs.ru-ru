@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a8e393ad46b6d37bd74806a0a4b84825bd059457
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672271"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Невозможно изменить конструктор во время отладки
@@ -27,5 +27,5 @@ ms.locfileid: "72672271"
 
      Приложение выходит из режима отладки, и элементы в реляционном конструкторе объектов можно изменять.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [LINQ to SQL средства в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

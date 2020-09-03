@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543498"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Как добавить элементы управления XMLNodes в документы Word
@@ -67,7 +67,7 @@ ms.locfileid: "85543498"
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Создается элемент управления, который добавляется в проект.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [XMLNodes - элемент управления](../vsto/xmlnodes-control.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

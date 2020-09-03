@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544772"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Руководство. программный кэш источника данных в документе Office
@@ -54,7 +54,7 @@ ms.locfileid: "85544772"
     > [!NOTE]
     > Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` возникновения события слишком поздно изменять кэш данных. Дополнительные сведения о `Shutdown` событии см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Кэширование данных](../vsto/caching-data.md)
 - [Как кэшировать данные для использования в автономном режиме или на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

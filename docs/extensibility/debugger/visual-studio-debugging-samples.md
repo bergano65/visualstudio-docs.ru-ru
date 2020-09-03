@@ -1,5 +1,5 @@
 ---
-title: Визуальная студия Отладка Образцы (ru) Документы Майкрософт
+title: Примеры отладки Visual Studio | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c3ac20f541f83103e0ded8c11881317e8d1aca4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712415"
 ---
-# <a name="visual-studio-debugging-samples"></a>Отладка образцов визуальной студии
-Два образца показывают, как расширить Visual [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Studio отладчик ат-бугнет с помощью .
+# <a name="visual-studio-debugging-samples"></a>Примеры отладки Visual Studio
+В двух примерах показано, как расширить отладчик Visual Studio с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
-- Образец оценщика экспрессии Debugger для [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]управляемых языков включен в . В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] окне щелкните вкладку **«Образцы»,** щелкните **все** или **C в** списке языков, а затем нажмите **Debugger.**
+- Пример средства оценки выражений отладчика для управляемых языков включен в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] окне перейдите на вкладку **примеры** , выберите **все** или **C#** в списке языков, а затем щелкните **отладчик**.
 
-- Образная студия Debug Engine Sample, для родных языков, доступна на MSDN Code Gallery. Для получения дополнительной информации на [веб-сайте Visual Studio можно ознакомиться с образцом движка Visual Studio.](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e)
+- Пример модуля отладки Visual Studio для собственных языков доступен в коллекции кода MSDN. Дополнительные сведения см. в разделе [Пример модуля отладки Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) на веб-сайте Майкрософт.

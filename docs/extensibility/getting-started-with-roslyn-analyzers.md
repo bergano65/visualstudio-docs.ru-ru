@@ -1,5 +1,5 @@
 ---
-title: Начало работы с Рослин Анализаторы (ru) Документы Майкрософт
+title: начало работы с анализаторами Roslyn | Документация Майкрософт
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
@@ -9,30 +9,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711271"
 ---
-# <a name="get-started-with-roslyn-analyzers"></a>Начало работы с анализаторов Roslyn
+# <a name="get-started-with-roslyn-analyzers"></a>Начало работы с анализаторами Roslyn
 
-С помощью анализаторов кода на основе проектов в Visual Studio авторы API могут поставлять анализ кода, специфичный для доменов, как часть своих пакетов NuGet. Поскольку эти анализаторы питаются от платформы компиляторов .NET (кодовое название "Roslyn"), они могут создавать предупреждения в коде при вводе еще до того, как вы закончите строку (больше не ждать, чтобы построить код, чтобы обнаружить проблемы). Анализаторы могут также поверхности автоматического кода исправить через Visual Studio лампочка подсказка, чтобы позволить вам очистить ваш код немедленно.
+С помощью динамических анализаторов кода, основанных на проектах в Visual Studio, авторы API могут поставлять анализ кода, зависящего от домена, как часть пакетов NuGet. Поскольку эти анализаторы работают на основе .NET Compiler Platform (с кодовым названием «Roslyn»), они могут создавать предупреждения в коде по мере ввода, прежде чем завершить строку (больше не нужно дожидаться сборки кода для обнаружения проблем). Анализаторы также могут выполнять автоматическое исправление кода в командной строке лампочки Visual Studio, чтобы вы могли немедленно выполнить очистку кода.
 
 ## <a name="get-started"></a>Начало работы
 
-[Обзор анализаторов Рослин](../code-quality/roslyn-analyzers-overview.md)
+[Обзор анализаторов Roslyn](../code-quality/roslyn-analyzers-overview.md)
 
-[Руководство. Создание анализатора и исправления кода](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+[Учебник. Создание средства для анализа и исправления кода](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[Добавление кодов исправления Walkthrough: Предоставление пользователям исправлений для анализатора проблем](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Добавление исправлений кода пошаговое руководство. предоставление пользователям исправлений для проблем с анализатором](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Реальный мир Рослин анализатор,](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) который вы также можете смотреть, как [говорить](https://channel9.msdn.com/events/Build/2015/3-725)
+[Roslyn анализатор реального мира](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , который можно также просмотреть в качестве [разговора](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Несколько примеров на GitHub, сгруппированных в три вида анализаторов](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Несколько примеров на сайте GitHub, сгруппированных в три вида анализаторов](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ссылка на пакет пакетов платформы компилятора .NET](roslyn-version-support.md)
-- [Другие документы на сайте GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [Правила FxCop, реализованные с помощью анализаторов Roslyn](../code-quality/fxcop-rule-port-status.md)
+- [Справочник по версии пакета платформы компилятора .NET](roslyn-version-support.md)
+- [Дополнительные документы на сайте OSS для GitHub](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Правила FxCop, реализованные с анализаторами Roslyn](../code-quality/fxcop-rule-port-status.md)

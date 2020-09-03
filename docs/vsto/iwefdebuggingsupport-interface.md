@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544733"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Интерфейс IWefDebuggingSupport
@@ -39,7 +39,7 @@ interface IWefDebuggingSupport : IUnknown
 ## <a name="methods"></a>Методы
  В следующей таблице перечислены методы, определяемые интерфейсом IWefDebuggingSupport.
 
-|Имя|Описание|
+|Имя|Описание:|
 |----------|-----------------|
 |[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Возвращает сведения о приложениях для Office, которые будут автоматически вставляться во время отладки.|
 |[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Предоставляет идентификатор процесса, который будет запускать содержимое платформы веб-расширений (WEF).|

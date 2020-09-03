@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75929227"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
@@ -86,5 +86,5 @@ ms.locfileid: "75929227"
 |[CA3010](../code-quality/ca3010.md)|Проверьте код на наличие уязвимостей к внедрению кода XAML|
 |[CA3011](../code-quality/ca3011.md)|Проверьте код на наличие уязвимостей к внедрению DLL|
 |[CA3012](../code-quality/ca3012.md)|Проверьте код на наличие уязвимостей к внедрению регулярных выражений|
-|[CA5358](../code-quality/ca5358.md)|Не использовать ненадежные режимы шифрования|
+|[CA5358](../code-quality/ca5358.md)|Не используйте небезопасные режимы шифрования|
 |[CA5403](../code-quality/ca5403.md)|Не используйте жестко заданный сертификат|

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f9dc15cec4012d2b63eb5f21c25bd709961c95c8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544083"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702. Для сложных слов следует использовать правильный регистр
@@ -27,7 +27,7 @@ ms.locfileid: "85544083"
 
 Последнюю документацию по Visual Studio см. в разделе [CA1702: составные слова должны иметь правильный регистр](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
@@ -55,5 +55,5 @@ ms.locfileid: "85544083"
 
  [CA1708. Идентификаторы должны отличаться не только прописными и строчными буквами](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Рекомендации по именованию](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) [соглашения о прописных буквах](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

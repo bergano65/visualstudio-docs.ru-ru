@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544798"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Использование изображений в Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Использование изображений в Visual Studio
  Перед созданием иллюстрации рассмотрите возможность использования 1000 изображений в [библиотеке изображений Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Типы образов
@@ -35,7 +35,7 @@ ms.locfileid: "85544798"
 
 - **Курсоры.** Используется для указания, разрешена ли операция с помощью мыши, когда объект может быть удален и т. д.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Конструктор значков
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Конструктор значков
 
 ### <a name="overview"></a>Обзор
  В Visual Studio используются значки современных стилей, которые имеют четкие геометрические значения и баланс 50/50 с положительным/отрицательным (светлым/темным) и используют прямые, понятные метафоры. Критически важный значок. Разработайте точки в центре ясности, упрощения и контекста.
@@ -269,7 +269,7 @@ ms.locfileid: "85544798"
 
  Дополнительные сведения об использовании цвета в значках Visual Studio см. в разделе [Использование цвета в изображениях](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Использование цвета в изображениях
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Использование цвета в изображениях
 
 ### <a name="overview"></a>Обзор
  Значки в Visual Studio в основном являются монохромными. Цвет зарезервирован для передачи определенной информации и никогда не предназначен для оформления. Цвет используется:
@@ -282,7 +282,7 @@ ms.locfileid: "85544798"
 
 - Различение элементов в IntelliSense
 
-### <a name="accessibility"></a>Возможности доступа
+### <a name="accessibility"></a>Специальные возможности
  Рекомендации по соответствию требованиям Visual Studio потребовали, чтобы все значки, возвращенные в продукт, прошли требования к специальным возможностям для цвета и контрастности. Цвета в палитре Visual Language были протестированы и удовлетворяют этим требованиям.
 
 #### <a name="color-inversion-for-dark-themes"></a>Инверсия цвета для темных тем
@@ -310,15 +310,15 @@ ms.locfileid: "85544798"
 
 |Использование|Имя|Значение (все темы)|Градиент|
 |-----------|----------|--------------------------|------------|
-|Positive|Зеленое действие VS|388A34/56138, 52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|Negative|VS действие Red|A1260D/161, 38, 13|![Палитра A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
+|Положительное число|Зеленое действие VS|388A34/56138, 52|![Палитра 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|Отрицательное число|VS действие Red|A1260D/161, 38, 13|![Палитра A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |нейтральное выражение.|Синее действие VS|00539C/0, 83156|![Палитра 00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |Создать или создать|VS действие, оранжевый|C27D1A/194156, 26|![Палитра C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>Примеры
  Зеленый используется для положительных модификаторов действия, таких как "Добавить", "выполнить", "Воспроизвести" и "проверить".
 
-|Выполните команду|Выполнение запроса|Воспроизвести все шаги|Добавить элемент управления|
+|Выполнить|Выполнение запроса|Воспроизвести все шаги|Добавить элемент управления|
 |-|-|-|-|
 |![Значок запуска](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Значок выполнения запроса](../../extensibility/ux-guidelines/media/0405-04-executequery.png "0405 — 04_ExecuteQuery")|![Значок воспроизведения всех этапов](../../extensibility/ux-guidelines/media/0405-05-playallsteps.png "0405 — 05_PlayAllSteps")|![Значок добавления элемента управления](../../extensibility/ux-guidelines/media/0405-06-addcontrol.png "0405 — 06_AddControl")|
 
@@ -336,14 +336,14 @@ ms.locfileid: "85544798"
 
  Темно-золотистый в основном используется для модификатора new.
 
-|Создание проекта|Создать диаграмму|Новый модульный тест|Новый элемент списка|
+|Создать проект|Создать диаграмму|Новый модульный тест|Новый элемент списка|
 |-|-|-|-|
 |![Значок нового проекта](../../extensibility/ux-guidelines/media/0405-15-newproject.png "0405 — 15_NewProject")|![Значок создания новой диаграммы](../../extensibility/ux-guidelines/media/0405-16-createnewgraph.png "0405 — 16_CreateNewGraph")|![Значок нового модульного теста](../../extensibility/ux-guidelines/media/0405-17-newunittest.png "0405 — 17_NewUnitTest")|![Значок нового элемента списка](../../extensibility/ux-guidelines/media/0405-18-newlistitem.png "0405 — 18_NewListItem")|
 
 #### <a name="special-cases"></a>Особые случаи
  В особых случаях цветовой модификатор действия может использоваться независимо в качестве отдельного значка. Цвет, используемый для значка, отражает действия, с которыми связан значок. Это ограничение используется только для небольшого подмножества значков, включая:
 
-|Выполните команду|Остановить|Удалить|Сохранить|Назад|
+|Выполнить|Остановить|Удалить|Сохранить|Назад|
 |-|-|-|-|-|
 |![Значок запуска](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Значок остановки](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405 — 19_Stop")|![Значок удаления](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405 — 20_Delete")|![Значок "Сохранить"](../../extensibility/ux-guidelines/media/0405-21-save.png "0405 — 21_Save")|![Значок перехода назад](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405 — 22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>Палитра иерархии кода
@@ -379,7 +379,7 @@ ms.locfileid: "85544798"
 |-|-|-|-|-|-|
 |![Значок HTML](../../extensibility/ux-guidelines/media/0405-31-html.png "0405 — 31_HTML")<br />HTML|![Значок WPF](../../extensibility/ux-guidelines/media/0405-32-wpf.png "0405 — 32_WPF")<br />WPF|![Значок ASP](../../extensibility/ux-guidelines/media/0405-33-asp.png "0405 — 33_ASP")<br />ASP|![Значок CSS](../../extensibility/ux-guidelines/media/0405-34-css.png "0405 — 34_CSS")<br />CSS|![Значок TypeScript](../../extensibility/ux-guidelines/media/0405-35-typescript.png "0405 — 35_TypeScript")<br />TypeScript||
 
-#### <a name="intellisense"></a>IntelliSense
+#### <a name="intellisense"></a>технология IntelliSense
  Значки IntelliSense используют эксклюзивную цветовую палитру. Эти цвета помогают пользователям быстро различать различные элементы в списке всплывающих функций IntelliSense.
 
 |Использование|Имя|Значение (все темы)|Градиент|
@@ -431,11 +431,11 @@ ms.locfileid: "85544798"
 |F12|Фон|White|FFFFFF/255, 255, 255|![Палитра FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Норм.|Grey_Primary F12|555555/85, 85, 85|![Палитра 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|Наведение|Blue_Hover F12|2279BF/34 121 191|![Палитра 2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Выключено|LtGrey_Disabled F12|АБАБАК/171 171 172|![Палитра ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Отключено|LtGrey_Disabled F12|АБАБАК/171 171 172|![Палитра ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Фон при наведении|Наведение вверх|D9EBF7/217 235 247|![Палитра D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Фон нажатой клавиши|Нажали клавишу BG|B2D7F0/178 215 240|![Палитра B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|Контур|VS OUT|F6F6F6/246 246 246|![Палитра F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
-|F12|Сведения|Сведения|00BCF2/0188 242|![Палитра 00BCF2](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
+|F12|Информация|Информация|00BCF2/0188 242|![Палитра 00BCF2](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
 |F12|Предупреждение|Предупреждение|F28300/242131, 0|![Палитра F28300](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
 |F12|Ошибка/отрицательное значение|Error_Negative|E81123/232, 17, 35|![Палитра E81123](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|
 |F12|Начало/положительный|Start_Positive|009E49/0158, 73|![Палитра 009E49](../../extensibility/ux-guidelines/media/0405-009e49.png "0405_009E49")|

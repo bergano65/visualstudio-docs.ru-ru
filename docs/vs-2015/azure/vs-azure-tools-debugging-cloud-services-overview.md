@@ -11,10 +11,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.openlocfilehash: df0322b26768ad5d325fc0fd07585f805fc96825
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919150"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Разные способы отладки облачной службы Azure
@@ -29,5 +29,5 @@ ms.locfileid: "75919150"
 ## <a name="remote-debugging"></a>Удаленная отладка 
 Удаленную отладку облачной службы можно включить при развертывании облачной службы в Visual Studio. Если для развертывания выбрана удаленная отладка, службы удаленной отладки будут установлены на все виртуальные машины, где выполняются экземпляры роли. Такие службы (например, `msvsmon.exe`) не влияют на производительность и не требуют дополнительных расходов. Дополнительные сведения см. в разделе [Отладка облачной службы в Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Отладка облачной службы или виртуальной машины Azure в Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md): сведения об отладке облачных служб Azure.

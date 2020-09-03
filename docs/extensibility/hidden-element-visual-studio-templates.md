@@ -1,5 +1,5 @@
 ---
-title: Скрытый элемент (Visual Studio шаблоны) Документы Майкрософт
+title: Hidden-элемент (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711110"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Скрытый элемент (шаблоны Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Hidden-элемент (шаблоны Visual Studio)
 
-Уточняется, отображается ли шаблон в новых коробках диалога проекта или **добавлении нового элемента.**
+Указывает, отображается ли шаблон в диалоговых окнах Новый проект или **Добавление нового элемента** .
 
 ```xml
 <VSTemplate>
@@ -43,11 +43,11 @@ ms.locfileid: "80711110"
 
 ### <a name="attributes"></a>Атрибуты
 
-Нет.
+Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Нет.
+Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -59,17 +59,17 @@ ms.locfileid: "80711110"
 
 Текстовое значение является обязательным.
 
-Текст должен быть `true` `false`либо, либо , указывая, будет ли шаблон отображаться в **новом проекте** или **добавить новый элемент** диалоговые коробки.
+Текст должен иметь значение `true` или `false` , что указывает, будет ли шаблон отображаться в диалоговых окнах **Новый проект** или **Добавить новый элемент** .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Параметр `Hidden` является необязательным элементом.
 
-Если указано, никаких `TemplateData` других элементов элемента ребенка не требуется.
+Если этот параметр указан, другие дочерние элементы `TemplateData` элемента не требуются.
 
 ## <a name="example"></a>Пример
 
-Следующий пример иллюстрирует метаданные для шаблона C'.
+В следующем примере показаны метаданные для шаблона C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,7 +96,7 @@ ms.locfileid: "80711110"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ссылка на схему шаблона](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблона](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

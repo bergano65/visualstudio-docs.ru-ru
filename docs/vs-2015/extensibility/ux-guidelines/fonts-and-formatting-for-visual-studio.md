@@ -9,16 +9,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e88f314ccdf2b91215fdfe579741591c7eb724d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544213"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Шрифты и форматирование для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Шрифт среды
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Шрифт среды
  Для настройки все шрифты в Visual Studio должны быть предоставлены пользователю. Это делается в первую очередь с помощью страницы **шрифты и цвета** в диалоговом окне **Сервис > Options (параметры** ). Три основные категории параметров шрифта:
 
 - **Шрифт окружения** — основной шрифт IDE (интегрированная среда разработки), используемый для всех элементов интерфейса, включая диалоговые окна, меню, окна инструментов и окна документов. По умолчанию шрифт среды привязан к системному шрифту, который отображается в виде 9 пт Segoe UI в текущих версиях Windows. Использование одного шрифта для всех элементов интерфейса позволяет обеспечить единообразное отображение шрифта в интегрированной среде разработки.
@@ -34,7 +34,7 @@ ms.locfileid: "85544213"
 
 1. Для текста кода в редакторе измените размер с помощью параметра шрифт текста кода и ответьте на уровень масштабирования текста в редакторе.
 
-2. Все остальные элементы интерфейса должны быть привязаны к параметру шрифта среды и отвечать на любые глобальные изменения в среде. Сюда входят (но не ограничиваются ими):
+2. Все остальные элементы интерфейса должны быть привязаны к параметру шрифта среды и отвечать на любые глобальные изменения в среде. Среди прочего необходимо отметить следующие улучшения:
 
     - Текст в контекстных меню
 
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Справка по форматированию (масштабирование и выделение полужирным шрифтом)
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Справка по форматированию (масштабирование и выделение полужирным шрифтом)
  Для некоторых диалоговых окон требуется, чтобы определенный текст был полужирным или иметь размер, отличный от шрифта среды. Ранее шрифты, превышающие шрифт окружения, были закодированы как "шрифты среды + 2" или аналогично. С помощью предоставленных фрагментов кода будут поддерживаться мониторы с высоким разрешением, а отображаемый текст всегда будет иметь правильный размер и вес (например, Light или Semilight).
 
 > **Примечание. перед применением форматирования убедитесь, что вы выполните рекомендации, приведенные в [поле стиль текста](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Чтобы сбросить шрифт, нажмите кнопку "использовать значения по умолчанию" в меню **сервис > параметры > среда > шрифты и цвета**.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Стиль текста
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Стиль текста
  Стиль текста относится к размеру, весу и регистру шрифта. Рекомендации по реализации см. [в статье шрифт среды](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Регистр текста
@@ -491,5 +491,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Текст шрифта в окружении с полужирным начертанием должен соответствовать заданному по умолчанию расстоянию и заполнению по высоте.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [MSDN: шрифты (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN: текст пользовательского интерфейса (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)

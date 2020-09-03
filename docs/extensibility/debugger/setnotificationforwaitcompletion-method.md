@@ -1,5 +1,5 @@
 ---
-title: Метод SetNotificationForWaitCompletion Документы Майкрософт
+title: Метод Сетнотификатионфорваиткомплетион | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712862"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Метод SetNotificationForWaitCompletion
-Устанавливает или очищает TASK_STATE_WAIT_COMPLETION_NOTIFICATION бит состояния.
+Задает или очищает бит состояния TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
@@ -33,14 +33,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Параметры
  `enabled`
 
- `true`установить бит; `false` чтобы разгрузить бит.
+ `true` значение бита; `false` значение, чтобы отменить бит.
 
 ## <a name="exceptions"></a>Исключения
 
-## <a name="remarks"></a>Примечания
- Отладчик устанавливает этот бит, чтобы помочь выйти из тела метода асин. Если `enabled` `true`есть, этот метод должен вызываться только на задачу, которая еще не завершена. Когда `enabled` `false`это, этот метод может быть вызван на завершенные задачи. В любом случае он должен использоваться только для задач в стиле обещания.
+## <a name="remarks"></a>Remarks
+ Отладчик задает этот бит, чтобы помочь выйти из тела асинхронного метода. Если `enabled` имеет значение `true` , этот метод должен вызываться только для задачи, которая еще не завершена. Если `enabled` имеет это `false` , этот метод может быть вызван для завершенных задач. В любом из событий его следует использовать только для задач в стиле Promise.
 
 ## <a name="requirements"></a>Требования
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

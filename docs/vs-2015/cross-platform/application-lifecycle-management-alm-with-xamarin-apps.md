@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 37c855f7940cbed847dcb7d5c6414be436cee993
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918373"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
@@ -46,7 +46,7 @@ ms.locfileid: "75918373"
   
  Функции разработки не зависят от языка программирования или работы с языками .NET, такими как C#. Аспекты, связанные с кодом, описаны в статье [Роли архитектуры и схем моделирования в разработке программного обеспечения](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Схемы последовательностей|Да||  
 |Графы зависимости|Да||  
@@ -67,12 +67,12 @@ ms.locfileid: "75918373"
 |[Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)|Да|Кроме выхода за границы конкретной платформы, где реализация не разрешается до времени выполнения.|  
 |[Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)|Да||  
   
-## <a name="build"></a>Построить  
+## <a name="build"></a>Сборка  
  Ссылка: **[Сборка](/azure/devops/pipelines/index)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
-|Локальный сервер TFS|Да|На компьютерах для сборки должна быть установлена платформа Xamarin; кроме того, они могут быть связаны с компьютером OSX для сборки приложений для iOS. См. раздел [Настройка TFS для Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (веб-сайт Xamarin)|  
+|Локальный сервер TFS|Да|На компьютерах для сборки должна быть установлена платформа Xamarin; кроме того, они могут быть связаны с компьютером OSX для сборки приложений для iOS. См. раздел [Настройка TFS для Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (веб-сайт Xamarin).|  
 |Локальный сервер сборки, связанный с Visual Studio Team Services|Да|Инструкции см. в разделе [Сервер сборки](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
 |Служба размещенного контроллера Visual Studio Team Services|Да|См. [Сборка приложения Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Определения сборки с сценариями до и после сборки|Да||  
@@ -81,19 +81,19 @@ ms.locfileid: "75918373"
 ## <a name="testing"></a>Тестирование  
  Ссылка: **[Тестирование приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Планирование тестов, создание тестовых случаев и организация наборов тестов|Да||  
 |Тестирование вручную|Да||  
 |Test Manager (запись и воспроизведение тестов)|Да|Только устройства Windows и эмуляторы Android из Visual Studio. Возможна запись для всех устройств с помощью [Средства записи тестов Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
 |Покрытие кода|Н/Д||  
 |[Модульное тестирование кода](../test/unit-test-your-code.md)|Да|Для целевых платформ Windows и Android можно использовать встроенные средства MSTest. Для выполнения модульных тестов в Windows, iOS и Android Xamarin рекомендует использовать NUnit. См. раздел [Настройка TFS для Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (веб-сайт Xamarin).|  
-|[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)|Только для Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Средства для других платформ описаны в разделе [Средство записи тестов Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
+|[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)|Только в Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Средства для других платформ описаны в разделе [Средство записи тестов Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Улучшите качество кода  
- Ссылка: **[Улучшите качество кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Ссылка: ** [улучшение качества кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |[Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Да||  
 |[Поиск повторяющегося кода с помощью обнаружения клонов кода](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Да||  
@@ -104,14 +104,14 @@ ms.locfileid: "75918373"
 ## <a name="release-management"></a>Управление выпуском  
  Ссылка: **[Автоматизация развертываний с помощью Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Управление процессами выпуска|Да||  
 |Развертывание на серверах для загрузки неопубликованных приложений через сценарии|Да||  
 |Отправка в магазин приложений|Partial|Доступны расширения, которые автоматизируют этот процесс для некоторых магазинов приложений.  См. раздел [Расширения для Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), например, [расширение для Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Мониторинг с HockeyApp  
- Ссылка: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**  
+ Ссылка для справки: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**  
   
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  

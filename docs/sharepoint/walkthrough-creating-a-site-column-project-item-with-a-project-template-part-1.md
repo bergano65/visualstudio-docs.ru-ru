@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016510"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
@@ -80,7 +81,7 @@ ms.locfileid: "86016510"
 
 6. В поле **имя** введите **ситеколумнпрожектитем**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **ситеколумнпрожектитем** в **Обозреватель решений**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **ситеколумнпрожектитем** в **Обозреватель решений**.
 
 #### <a name="to-create-the-project-template-project"></a>Создание проекта шаблона проекта
 
@@ -94,7 +95,7 @@ ms.locfileid: "86016510"
 
 5. В поле **имя** введите **ситеколумнпрожекттемплате**, а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **ситеколумнпрожекттемплате** в решение.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **ситеколумнпрожекттемплате** в решение.
 
 6. Удалите файл кода Class1 из проекта.
 
@@ -122,7 +123,7 @@ ms.locfileid: "86016510"
 
 4. В поле **имя** введите **прожектитемтипедефинитион** , а затем нажмите кнопку **ОК** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет проект **прожектитемтипедефинитион** в решение и открывает файл кода Class1 по умолчанию.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **прожектитемтипедефинитион** в решение и открывает файл кода Class1 по умолчанию.
 
 5. Удалите файл кода Class1 из проекта.
 
@@ -214,7 +215,7 @@ ms.locfileid: "86016510"
 
      `OutputSubPath`Элемент задает дополнительные папки в пути, по которому создается шаблон проекта при построении проекта. Указанные здесь папки гарантируют, что шаблон проекта будет доступен только тогда, когда клиенты открывают диалоговое окно **Новый проект** , разверните узел **SharePoint** , а затем выберите узел **2010** .
 
-5. Сохраните файл и закройте его.
+5. Сохраните и закройте файл.
 
 6. В **Обозреватель решений**откройте контекстное меню проекта **ситеколумнпрожекттемплате** и выберите **Перезагрузить проект**.
 
@@ -251,7 +252,7 @@ ms.locfileid: "86016510"
 
      Если свойство **"изолированное решение"** проекта SharePoint имеет значение **true**, Visual Studio добавляет в <xref:System.Security.AllowPartiallyTrustedCallersAttribute> файл кода AssemblyInfo. Однако файл кода AssemblyInfo в шаблоне проекта не импортирует <xref:System.Security> пространство имен по умолчанию. Чтобы избежать ошибок компиляции, необходимо добавить инструкцию **using** или **Imports** .
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-elementsxml-file"></a>Изменение файла Elements.xml
 
@@ -271,7 +272,7 @@ ms.locfileid: "86016510"
 
      Новый XML-файл добавляет `Field` элемент, определяющий имя столбца сайта, его базовый тип и группу, в которой будет перечисляться столбец сайта в коллекции. Дополнительные сведения о содержимом этого файла см. в разделе [схема определения поля](/previous-versions/office/developer/sharepoint-2010/ms196289(v=office.14)).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>Изменение файла Шарепоинтпрожектитем. данных
 
@@ -295,7 +296,7 @@ ms.locfileid: "86016510"
 
      Дополнительные сведения о содержимом файлов *данных с данными* см. в разделе [Справочник по схеме элементов проекта SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-feature1feature-file"></a>Изменение файла Feature1. feature
 
@@ -321,7 +322,7 @@ ms.locfileid: "86016510"
 
      Дополнительные сведения о файлах *Feature* см. в разделе [Создание шаблонов элементов и шаблонов проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-packagepackage-file"></a>Изменение файла пакета. Package
 
@@ -346,7 +347,7 @@ ms.locfileid: "86016510"
 
      Дополнительные сведения о *пакетных* файлах см. в разделе [Создание шаблонов элементов и шаблонов проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>Изменение файла ситеколумнпрожекттемплате. vstemplate
 
@@ -434,7 +435,7 @@ ms.locfileid: "86016510"
 
      Дополнительные сведения о содержимом *VSTEMPLATE* файлов см. в разделе [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 #### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Изменение файла projecttemplate. csproj или projecttemplate. vbproj
 
@@ -629,7 +630,7 @@ ms.locfileid: "86016510"
 
     - Добавляет элементы для каждого файла по умолчанию в проекте, например *Elements.xml* и *шарепоинтпрожектитем. данных*.
 
-2. Сохраните файл и закройте его.
+2. Сохраните и закройте файл.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-template"></a>Создание пакета VSIX для развертывания шаблона проекта
  Чтобы развернуть расширение, используйте проект VSIX в решении **ситеколумнпрожектитем** для создания пакета VSIX. Сначала настройте пакет VSIX, изменив файл Source. extension. vsixmanifest, который включен в проект VSIX. Затем создайте пакет VSIX, создав решение.

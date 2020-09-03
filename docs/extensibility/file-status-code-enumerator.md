@@ -1,5 +1,5 @@
 ---
-title: Код кода файла Enumerator (ru) Документы Майкрософт
+title: Перечислитель кода состояния файла | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711451"
 ---
-# <a name="file-status-code-enumerator"></a>Перечисление кода файла
-Регистратор `SccStatus` содержит именованные постоянные значения, которые определяют состояние файла в системе управления исходным источником. Этот перечисление используется [Scc'eryInfo](../extensibility/sccqueryinfo-function.md) и `POPLISTFUNC` функцией обратного вызова (подробнее см. [POPLISTFUNC).](../extensibility/poplistfunc.md)
+# <a name="file-status-code-enumerator"></a>Перечислитель кода состояния файла
+`SccStatus`Перечислитель содержит именованные постоянные значения, которые определяют состояние файла в системе управления версиями. Это перечисление используется [скккуеринфо](../extensibility/sccqueryinfo-function.md) и `POPLISTFUNC` функцией обратного вызова (Дополнительные сведения см. в разделе [поплистфунк](../extensibility/poplistfunc.md) ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,43 +49,43 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Участники
- SCC_STATUS_INVALID статус не может быть получен; не полагайтесь на него.
+ Не удалось получить состояние SCC_STATUS_INVALID; не полагайтесь на нее.
 
- SCC_STATUS_NOTCONTROLLED файл не находится под контролем источника.
+ Файл SCC_STATUS_NOTCONTROLLED не находится в системе управления версиями.
 
- SCC_STATUS_CONTROLLED файл находится под контролем источника.
+ Файл SCC_STATUS_CONTROLLED находится в системе управления версиями.
 
- SCC_STATUS_CHECKEDOUT Проверено текущим пользователем на локальном диске.
+ SCC_STATUS_CHECKEDOUT извлечен текущим пользователем на локальном диске.
 
- SCC_STATUS_OUTOTHER файл проверяется другим пользователем.
+ Файл SCC_STATUS_OUTOTHER извлечен другим пользователем.
 
- SCC_STATUS_OUTEXCLUSIVE файл исключительно проверяется.
+ Файл SCC_STATUS_OUTEXCLUSIVE извлечен в монопольном режиме.
 
- SCC_STATUS_OUTMULTIPLE файл проверяется более чем одним пользователем.
+ Файл SCC_STATUS_OUTMULTIPLE извлечен несколькими пользователями.
 
- SCC_STATUS_OUTOFDATE Файл не самый недавний.
+ SCC_STATUS_OUTOFDATE файл не является самым последним.
 
- SCC_STATUS_DELETED файл был удален из проекта.
+ Файл SCC_STATUS_DELETED был удален из проекта.
 
- SCC_STATUS_LOCKED файл заблокирован; больше не допускается версий.
+ Файл SCC_STATUS_LOCKED заблокирован; больше нет разрешенных версий.
 
- SCC_STATUS_MERGED файл был объединен, но еще не исправлена/проверена.
+ Файл SCC_STATUS_MERGED был объединен, но еще не исправлен или проверен.
 
- SCC_STATUS_SHARED файл амеразийный между проектами.
+ Файл SCC_STATUS_SHARED является общим для проектов.
 
- SCC_STATUS_PINNED файл амебь явная версия.
+ Файл SCC_STATUS_PINNED является общим для явной версии.
 
- SCC_STATUS_MODIFIED файл был изменен/сломан/нарушен.
+ SCC_STATUS_MODIFIED файл был изменен, поврежден или нарушен.
 
- SCC_STATUS_OUTBYUSER файл проверяется текущим пользователем.
+ Файл SCC_STATUS_OUTBYUSER извлечен текущим пользователем.
 
- SCC_STATUS_NOMERGE файл никогда не может быть объединен с и не должны быть сохранены до GET.
+ Файл SCC_STATUS_NOMERGE не может быть объединен с и не должен быть сохранен перед ПОЛУЧЕНИЕм.
 
- SCC_STATUS_RESERVED_1 зарезервированы для внутреннего использования.
+ SCC_STATUS_RESERVED_1 зарезервировано для внутреннего использования.
 
- SCC_STATUS_RESERVED_2 зарезервированы для внутреннего использования.
+ SCC_STATUS_RESERVED_2 зарезервировано для внутреннего использования.
 
-## <a name="see-also"></a>См. также
-- [Плагины управления исходным элементом](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>См. также раздел
+- [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

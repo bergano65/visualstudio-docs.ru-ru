@@ -1,5 +1,5 @@
 ---
-title: Элемент группы Документы Майкрософт
+title: Элемент Groups | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711178"
 ---
 # <a name="groups-element"></a>Элемент Groups
-Содержит записи, определяющие командные группы VSPackage.
+Содержит записи, определяющие группы команд VSPackage.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,20 +37,20 @@ ms.locfileid: "80711178"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|Условие|Необязательный параметр. Посмотреть [условные атрибуты.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Group, элемент](../extensibility/group-element.md)|Представляет единую командную группу.|
-|[Элемент группы](../extensibility/groups-element.md)|Содержит записи, определяющие командные группы VSPackage.|
+|[Group, элемент](../extensibility/group-element.md)|Представляет одну группу команд.|
+|[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, определяющие группы команд VSPackage.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Элемент команд](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
+|[Commands, элемент](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов VSPackage.|
 
 ## <a name="example"></a>Пример
 
@@ -62,6 +62,6 @@ ms.locfileid: "80711178"
 </Groups>
 ```
 
-## <a name="see-also"></a>См. также
-- [Как VSPackages добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>См. также раздел
+- [Как пакеты VSPackage добавляют элементы пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
