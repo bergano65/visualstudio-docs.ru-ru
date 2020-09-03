@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties Документы Майкрософт
+title: 'IDebugStackFrame2:: Енумпропертиес | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719895"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
-Создает регистратор для свойств, связанных с кадром стека, таких как локальные переменные.
+Создает перечислитель для свойств, связанных с кадром стека, например локальных переменных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,30 +51,30 @@ int EnumProperties ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFieldSpec`\
-(в) Сочетание флагов [из DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, которое определяет, какие поля в перечисленных [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры должны быть заполнены.
+окне Сочетание флагов из перечисления [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , которое указывает, какие поля в перечисленных структурах [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) должны быть заполнены.
 
 `nRadix`\
-(в) Радикс, который будет использоваться при форматировании любой численной информации.
+окне Основание системы счисления, используемое при форматировании любой числовой информации.
 
 `refiid`\
-(в) GUID фильтра, используемого для выбора [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структур, должны быть `guidFilterLocals`перечислены, такие как .
+окне Идентификатор GUID фильтра, используемый для выбора структур, [подDEBUG_PROPERTY_INFOых](../../../extensibility/debugger/reference/debug-property-info.md) для перечисления, например `guidFilterLocals` .
 
 `dwTimeout`\
-(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
+окне Максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.
 
 `pcelt`\
-(ваут) Возвращает количество перечисленных свойств. Это то же самое, что вызов метода [GetCount.](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)
+заполняет Возвращает число перечисленных свойств. Это аналогично вызову метода [NOCOUNT](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) .
 
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugPropertyInfo2,](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) содержащий список желаемых свойств.
+заполняет Возвращает объект [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , содержащий список требуемых свойств.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Поскольку этот метод позволяет извлекать все выбранные свойства с помощью одного вызова, он быстрее, чем последовательное вызов методов [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) и [EnumChildren.](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
+## <a name="remarks"></a>Remarks
+ Поскольку этот метод позволяет получать все выбранные свойства с помощью одного вызова, он выполняется быстрее, чем последовательный вызов методов [жетдебугпроперти](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) и [енумчилдрен](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

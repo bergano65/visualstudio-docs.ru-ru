@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d22808b8d68c0fdb3b6a2374985ae25a539f0e8c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546046"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>Руководство. Программное создание элемента электронной почты
@@ -29,6 +29,6 @@ ms.locfileid: "85546046"
 ## <a name="example"></a>Пример
  [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с элементами почты](../vsto/working-with-mail-items.md)
 - [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

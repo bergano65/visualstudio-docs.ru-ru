@@ -8,10 +8,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155279"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Средства Visual Studio для Apache Cordova
@@ -31,4 +31,4 @@ ms.locfileid: "68155279"
   
 Если вас интересуют эти инструменты, но вы еще не готовы попробовать их в работе, посетите нашу страницу с [описанием возможностей](https://www.visualstudio.com/explore/cordova-vs) , и мы расскажем вам о них подробнее.  
   
-Если вы готовы начать, см. в разделе [разработки мобильных приложений на JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).
+Если вы готовы начать, см. статью [Разработка мобильных приложений на JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).

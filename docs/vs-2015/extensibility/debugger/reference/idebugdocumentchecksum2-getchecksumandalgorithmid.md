@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Документация Майкрософт
+title: 'IDebugDocumentChecksum2:: Жетчекксумандалгорисмид | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a603a025d6a9b5b2ba4f0418807666bba4d8b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156493"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.  
+Извлекает контрольную сумму документа и идентификатор алгоритма с учетом максимального числа используемых байтов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,22 +45,22 @@ public int GetChecksumAndAlgorithmId(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Уникальный идентификатор алгоритма подсчета контрольной суммы.  
+ заполняет Уникальный идентификатор для алгоритма контрольной суммы.  
   
  `cMaxBytes`  
- [in] Максимальное число байтов, которое должно использоваться для контрольной суммы.  
+ окне Максимальное число байтов, которое будет использоваться для вычисления контрольной суммы.  
   
  `pChecksum`  
- [out] Значение контрольной суммы.  
+ заполняет Значение контрольной суммы.  
   
  `pcNumBytes`  
- [out] Фактическое число байтов, используемых для контрольной суммы.  
+ заполняет Фактическое число байтов, использованных для контрольной суммы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 ## <a name="example"></a>Пример  
- В следующем примере этот метод используется для получения контрольной суммы и алгоритм для документа.  
+ В следующем примере этот метод используется для получения контрольной суммы и алгоритма для документа.  
   
 ```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  
@@ -125,5 +125,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Документация Майкрософт
+title: 'IDebugBoundBreakpoint2:: Сеситкаунт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 292e36878594841f200f744f2809256b05e84d94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156188"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает количество обращений к связанная точка останова.  
+Задает число попаданий для привязанной точки останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,16 +41,16 @@ int SetHitCount( 
   
 #### <a name="parameters"></a>Параметры  
  `dwHitCount`  
- [in] Число попаданий для задания.  
+ окне Заданное число попаданий.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова присваивается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` значение, если состояние привязанного объекта точки останова равно `BPS_DELETED` (часть перечисления [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).  
   
-## <a name="remarks"></a>Примечания  
- Число попаданий — количество раз, когда данная точка останова возникло во время выполнения текущего сеанса.  
+## <a name="remarks"></a>Remarks  
+ Число попаданий — это количество срабатываний этой точки останова во время текущего выполнения сеанса.  
   
- Как правило, этот метод вызывается подсистемой отладки, чтобы обновить текущий счетчик числа попаданий в эту точку останова.  
+ Этот метод обычно вызывается модулем отладки для обновления текущего числа попаданий в этой точке останова.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

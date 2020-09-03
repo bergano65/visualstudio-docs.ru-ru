@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName Документы Майкрософт
+title: 'IDebugCoreServer2:: Жетмачиненаме | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 238088caa3229a0e57da90baeb0ee0f791c2908a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733140"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
-Получает название машины, на которую работает основной сервер.
+Возвращает имя компьютера, на котором работает основной сервер.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetName( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-(ваут) Возвращает строку, содержащую имя машины.
+заполняет Возвращает строку, содержащую имя компьютера.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

@@ -4,10 +4,10 @@ ms.author: paulming
 ms.date: 04/05/2019
 ms.topic: include
 ms.openlocfilehash: 054198eff46c0983a5610b29dee5e29e5ac67a70
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68147104"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89323485"
 ---
 Небезопасные десериализаторы уязвимы при десериализации ненадежных данных. Злоумышленник может изменить сериализованные данные, чтобы включить непредвиденные типы для внедрения объектов с вредоносными побочными эффектами. Атака в небезопасном десериализаторе может, например, выполнять команды в базовой операционной системе, взаимодействовать по сети или удалять файлы.

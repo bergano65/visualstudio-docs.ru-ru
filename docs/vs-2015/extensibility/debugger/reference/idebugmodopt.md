@@ -1,5 +1,5 @@
 ---
-title: IDebugModOpt | Документация Майкрософт
+title: Идебугмодопт | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66f499225d2b319f3678c88894a1217d90b10135
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162521"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
@@ -28,19 +28,19 @@ ms.locfileid: "68162521"
 IDebugModOpt : IUnknown  
 ```  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Полученный из [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, который представляет собой класс или метод.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получен из объекта [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющего класс или метод.  
   
 ## <a name="methods"></a>Методы  
  Этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Возвращает список необязательных модификаторов.|  
+|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Извлекает список необязательных модификаторов.|  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

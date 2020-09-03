@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Анализ системного кода после исключения | Документация Майкрософт
+title: Руководство. Проверка системного кода после исключения | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c34b2fdf2b6400ffe88f9e9ff08cbe6e4b41daa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155579"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Практическое руководство. анализ системного кода после исключения
@@ -45,5 +45,5 @@ ms.locfileid: "68155579"
   
 4. Теперь можно рассматривать системный код в окне **Стек вызовов** и других окнах. Например, можно дважды щелкнуть на кадре стека вызовов для просмотра кода в источнике или в окне **Дизассемблированный код**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)

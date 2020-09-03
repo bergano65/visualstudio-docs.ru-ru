@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeКонтекст (ru) Документы Майкрософт
+title: 'IDebugStackFrame3:: Жетунвиндкодеконтекст | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719499"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Возвращает контекст кода, представляющий местоположение, если операция раскручивания стека произошла.
+Возвращает контекст кода, представляющий расположение, если была выполнена операция очистки стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>Параметры
 `ppCodeContext`\
-(ваут) Возвращает объект [IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) представляющий местоположение контекста кода, если произошел стек.
+заполняет Возвращает объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий расположение контекста кода, если произошло завершение стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Несмотря на то, что этот метод может вернуть контекст кода для местоположения после раскручивания стека, это не обязательно означает, что раскручивание стека действительно может произойти в текущем кадре стека.
+## <a name="remarks"></a>Remarks
+ Несмотря на то, что этот метод может возвращать контекст кода для местоположения после очистки стека, это не обязательно означает, что очистка стека в текущем кадре стека может быть невозможной.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

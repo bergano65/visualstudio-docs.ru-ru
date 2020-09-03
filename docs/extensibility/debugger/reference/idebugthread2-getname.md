@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName Документы Майкрософт
+title: 'IDebugThread2:: Name | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9d4828b573585969154f2ad1d484c9fcdf767417
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718773"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
-Получает название потока.
+Возвращает имя потока.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetName ( 
 
 ## <a name="parameters"></a>Параметры
 `pbstrName`\
-(ваут) Возвращает имя потока.
+заполняет Возвращает имя потока.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Извлеченное имя всегда является именем, которое может быть отображено, и это имя описывает поток. Имя потока может быть получено из архитектуры времени выполнения, которая поддерживает названные потоки, или это может быть имя, полученное от движка отладки. Кроме того, имя потока может быть установлено путем вызова метода [SetThreadName.](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)
+## <a name="remarks"></a>Remarks
+ Извлеченное имя всегда является именем, которое может быть отображено, и это имя описывает поток. Имя потока может быть производным от архитектуры времени выполнения, которая поддерживает именованные потоки, или именем, полученным от модуля отладки. Кроме того, имя потока можно задать с помощью вызова метода [сетсреаднаме](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

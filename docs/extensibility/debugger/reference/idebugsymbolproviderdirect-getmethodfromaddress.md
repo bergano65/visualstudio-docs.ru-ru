@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromАдрес Документы Майкрософт
+title: 'Идебугсимболпровидердирект:: Жетмесодфромаддресс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718942"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Извлекает информацию о методе по указанному адресу отладки.
+Извлекает сведения о методе по указанному адресу отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -52,28 +52,28 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>Параметры
 `pAddress`\
-(в) Адрес debug, представленный интерфейсом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+окне Адрес отладки, представленный интерфейсом [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pGuid`\
-(ваут) Уникальный идентификатор модуля.
+заполняет Уникальный идентификатор модуля.
 
 `pAppID`\
-(ваут) Идентификатор домена приложения.
+заполняет Идентификатор домена приложения.
 
 `pTokenClass`\
-(ваут) Токен, представляющий класс, содержащий.
+заполняет Токен, представляющий содержащий класс.
 
 `pTokenMethod`\
-(ваут) Токен, представляющий модуль.
+заполняет Токен, представляющий модуль.
 
 `pdwOffset`\
-(ваут) Смещение в байтах `pAddress` с начала параметра.
+заполняет Смещение в байтах от начала `pAddress` параметра.
 
 `pdwVersion`\
-(ваут) Номер версии метода.
+заполняет Номер версии метода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

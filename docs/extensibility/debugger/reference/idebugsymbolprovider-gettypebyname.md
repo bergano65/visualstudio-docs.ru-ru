@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByname Документы Майкрософт
+title: 'Идебугсимболпровидер:: Жеттипебинаме | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719185"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Этот метод отображает имя символа к типу символа.
+Этот метод сопоставляет имя символа с типом символа.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,21 +45,21 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>Параметры
 `pszClassName`\
-(в) Название символа.
+окне Имя символа.
 
 `nameMatch`\
-(в) Выбирает тип соответствия, например, чувствительный к случаю. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
+окне Выбирает тип соответствия, например с учетом регистра. Значение из перечисления [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .
 
 `ppField`\
-(ваут) Возвращает тип символа в качестве объекта [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+заполняет Возвращает тип символа в виде объекта [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод является универсальной версией [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
+## <a name="remarks"></a>Remarks
+ Этот метод является универсальной версией [жеткласстипебинаме](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

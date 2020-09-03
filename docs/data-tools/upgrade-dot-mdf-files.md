@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281127"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
@@ -61,7 +61,7 @@ Visual Studio можно использовать для открытия про
 
 2. В диалоговом окне **Добавление соединения** укажите следующие сведения.
 
-    - **Источник данных**:`Microsoft SQL Server (SqlClient)`
+    - **Источник данных**: `Microsoft SQL Server (SqlClient)`
 
     - **Имя сервера**:
 
@@ -101,7 +101,7 @@ Visual Studio можно использовать для открытия про
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Создание SQL Server Express ядра СУБД по умолчанию
 
-1. В строке меню выберите **Сервис**  >  **Параметры**.
+1. В строке меню выберите пункт **Сервис** > **Параметры**.
 
 2. В диалоговом окне **Параметры** разверните узел Параметры **инструментов базы данных** и выберите подключения к **данным**.
 
@@ -111,6 +111,6 @@ Visual Studio можно использовать для открытия про
 
     SQL Server Express будет ядром СУБД по умолчанию для приложений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Доступ к данным в Visual Studio](accessing-data-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;сборка&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
+title: '&lt;&gt;элемент Assembly (развертывание ClickOnce) | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155738"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;сборка&gt; элемент (развертывание ClickOnce)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;элемент Assembly (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Элемент верхнего уровня для манифеста развертывания.  
@@ -39,16 +39,16 @@ ms.locfileid: "68155738"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `assembly` Элемент является корневым элементом и является обязательным. Его первый содержащийся элемент должен быть `assemblyIdentity` элемент. Манифеста элементы должны быть в следующих пространствах имен: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, и `http://www.w3.org/2000/09/xmldsig#`. Дочерние элементы сборки также необходимо включить в эти пространства имен путем наследования или маркировки.  
+ `assembly`Элемент является корневым и является обязательным. Его первый содержащийся элемент должен быть `assemblyIdentity` элементом. Элементы манифеста должны находиться в следующих пространствах имен: `urn:schemas-microsoft-com:asm.v1` , `urn:schemas-microsoft-com:asm.v2` и `http://www.w3.org/2000/09/xmldsig#` . Дочерние элементы сборки также должны находиться в этих пространствах имен путем наследования или добавления тегов.  
   
- Элемент `assembly` имеет перечисленные ниже атрибуты.  
+ Элемент `assembly` имеет указанный ниже атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`manifestVersion`|Обязательный. Этот атрибут должно быть присвоено `1.0`.|  
+|`manifestVersion`|Обязательный. Для этого атрибута необходимо задать значение `1.0` .|  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показано `assembly` элемент в манифест развертывания для приложения, развернутого с помощью [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера для [манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) раздела.  
+ В следующем примере кода показан `assembly` элемент в манифесте развертывания для приложения, развернутого с помощью [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Этот пример кода является частью большого примера, приведенного в разделе [манифеста развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) .  
   
 ```  
 <asmv1:assembly   
@@ -65,6 +65,6 @@ ms.locfileid: "68155738"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Элемент \<assembly>](../deployment/assembly-element-clickonce-application.md)
+ [\<assembly> Элемент](../deployment/assembly-element-clickonce-application.md)
