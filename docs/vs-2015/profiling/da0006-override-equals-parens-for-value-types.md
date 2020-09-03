@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852367"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006. Переопределение Equals() для типов значений
@@ -30,7 +30,7 @@ ms.locfileid: "75852367"
 | Сообщение | Переопределите Equals и оператор равенства для типов значений. |  
 | Тип сообщений | Предупреждение |  
   
-## <a name="cause"></a>Причина:  
+## <a name="cause"></a>Причина  
  Вызовы метода Equals или операторов равенства открытого типа составляют значительную часть данных профилирования. Рекомендуется использовать более эффективный метод.  
   
 ## <a name="rule-description"></a>Описание правила  
@@ -39,4 +39,4 @@ ms.locfileid: "75852367"
  Дополнительные сведения о переопределении Equals и операторов равенства см. в разделе [Правила реализации метода Equals и оператора равенства (==)](https://msdn.microsoft.com/library/7h9bszxx.aspx).  
   
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения  
- Пример реализации Equals и операторов равенства см. в описании правила анализа кода [CA1815: следует переопределять равенства и равенства операторов в типах значений](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md).
+ Пример реализации Equals и операторов равенства см. в описании правила анализа кода [CA1815: Переопределяйте операторы Equals и равенства для типов значений](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

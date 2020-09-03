@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.topic: overview
 ms.openlocfilehash: 9ef6ecdb5dce8d337aa74232a0bffa8a63f87ea8
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939043"
 ---
 # <a name="projects-and-solutions"></a>Проекты и решения
@@ -25,6 +25,6 @@ ms.locfileid: "85939043"
 
 Вы можете управлять свойствами проектов и решений, дважды щелкнув имя проекта или решения или щелкнув правой кнопкой мыши и выбрав пункт **Параметры**. Дополнительные сведения об этих параметрах см. в статье [Управление свойствами проекта и решения](managing-solutions-and-project-properties.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Решения и проекты в Visual Studio (в Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

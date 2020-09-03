@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06a22161068dd7604fe7bb4153e322c0954b89d2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533022"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Отображение модели UML на схемах
@@ -36,10 +36,10 @@ ms.locfileid: "85533022"
 
 - [Пример. Команда для выравнивания фигур](#AlignCommand)
 
-## <a name="to-display-an-element-on-a-diagram"></a><a name="Display"></a>Отображение элемента на схеме
+## <a name="to-display-an-element-on-a-diagram"></a><a name="Display"></a> Отображение элемента на схеме
  При создании элемента, такого как вариант использования или действие, пользователь может видеть его в обозревателе моделей UML, однако он не всегда автоматически отображается на схеме. В некоторых случаях для его отображения необходимо написать код. В следующей таблице приведены сводные сведения о доступных альтернативах.
 
-|Тип элемента|Например:|Чтобы отобразить это, ваш код должен соответствовать следующим требованиям|
+|Тип элемента|Например.|Чтобы отобразить это, ваш код должен соответствовать следующим требованиям|
 |---------------------|-----------------|-------------------------------------|
 |Классификатор|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Создайте связанные фигуры на заданных схемах. Можно создать любое количество фигур для каждого классификатора.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Задайте для `parentShape` значение `null` для фигуры на верхнем уровне схемы.<br /><br /> Отображение одной фигуры внутри другой:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**Примечание.**  Если вы выполняете отображение внутри транзакции **илинкедундо** , метод иногда возвращает значение No `IShape` . Однако фигура создается правильно и доступна посредством `IElement.Shapes().`|
 |Дочерний элемент классификатора|Атрибут, операция,<br /><br /> Часть, порт|Выполняется автоматически — код не требуется.<br /><br /> Он отображается в качестве части родительского элемента.|
@@ -47,7 +47,7 @@ ms.locfileid: "85533022"
 |Дочерний элемент поведения|Жизненные циклы, сообщения, действия, узлы объектов|Выполняется автоматически — код не требуется.<br /><br /> Отображается, если родительский объект привязан к схеме.|
 |Связь|Ассоциация, обобщение, поток, зависимость|Выполняется автоматически — код не требуется.<br /><br /> Он отображается на каждой схеме, на которой показаны оба конца.|
 
-## <a name="accessing-the-shapes-that-represent-an-element"></a><a name="GetShapes"></a>Доступ к фигурам, представляющим элемент
+## <a name="accessing-the-shapes-that-represent-an-element"></a><a name="GetShapes"></a> Доступ к фигурам, представляющим элемент
  Фигура, представляющая элемент, принадлежит к следующим типам:
 
  `IShape`
@@ -68,7 +68,7 @@ ms.locfileid: "85533022"
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Приведите универсальный `IShape` к строго типизированному `IShape<IElement>`.|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Приведите фигуру из одного параметризованного типа фигуры в другой.|
 
-## <a name="moving-and-resizing-shapes"></a><a name="Moving"></a>Перемещение и изменение размеров фигур
+## <a name="moving-and-resizing-shapes"></a><a name="Moving"></a> Перемещение и изменение размеров фигур
 
 |Синтаксис|Описание|
 |-|-|
@@ -77,7 +77,7 @@ ms.locfileid: "85533022"
 
  Пример см. в разделе [Определение команды выравнивания](#AlignCommand).
 
-## <a name="to-remove-a-shape-from-a-diagram"></a><a name="Removing"></a>Удаление фигуры из диаграммы
+## <a name="to-remove-a-shape-from-a-diagram"></a><a name="Removing"></a> Удаление фигуры из диаграммы
  Фигуры некоторых типов элементов можно удалить без удаления самого элемента.
 
 |Элемент модели|Удаление фигуры|
@@ -86,7 +86,7 @@ ms.locfileid: "85533022"
 |Поведение: взаимодействие или действие|Можно удалить схему из проекта. Используйте `IDiagram.FileName` для получения пути.<br /><br /> Это не приводит к удалению поведения из модели.|
 |Любая другая фигура|вы не можете явно удалить другие фигуры со схемы. Фигура автоматически исчезнет, если элемент удаляется из модели или если родительская фигура удаляется со схемы.|
 
-## <a name="opening-and-creating-diagrams"></a><a name="Opening"></a>Открытие и создание диаграмм
+## <a name="opening-and-creating-diagrams"></a><a name="Opening"></a> Открытие и создание диаграмм
 
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Доступ к текущей схеме пользователя из расширения команды или жеста
  Объявите это импортированное свойство в своем классе:
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;
 ```
 
-## <a name="example-command-for-aligning-shapes"></a><a name="AlignCommand"></a>Пример: команда для выровняйте фигур
+## <a name="example-command-for-aligning-shapes"></a><a name="AlignCommand"></a> Пример: команда для выровняйте фигур
  Следующий код реализует команду меню, аккуратно выравнивающую фигуры. Пользователю следует сначала расположить две или более фигур, приблизительно выровняв их по вертикали или по горизонтали. Затем можно использовать команду выравнивания для выравнивания их центров.
 
  Чтобы сделать команду доступной, добавьте этот код в проект команд меню, а затем разверните полученное расширение для пользователей. Дополнительные сведения см. [в разделе Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
@@ -378,6 +378,6 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Навигация по модели UML](../modeling/navigate-the-uml-model.md)
  

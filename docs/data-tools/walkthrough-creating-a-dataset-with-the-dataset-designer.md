@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586033"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктор наборов данных
 
 В этом пошаговом руководстве вы создадите набор данных с помощью **Конструктор наборов данных**. В этой статье описывается процесс создания нового проекта и добавления в него нового элемента **набора данных** . Вы узнаете, как создавать таблицы на основе таблиц в базе данных без использования мастера.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 В этом пошаговом руководстве используется SQL Server Express LocalDB и образец базы данных Northwind.
 
@@ -46,7 +46,7 @@ ms.locfileid: "75586033"
 
 1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
-2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
+2. В левой области разверните элемент **Visual C#** или **Visual Basic** , а затем выберите пункт **Windows Desktop**.
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
@@ -56,7 +56,7 @@ ms.locfileid: "75586033"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Добавление нового набора данных в приложение
 
-1. В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите команду **Добавить новый элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
@@ -98,7 +98,7 @@ ms.locfileid: "75586033"
 
      Таблица данных **Order Details** , **ордердетаилстаблеадаптер**и связь данных между таблицами **Orders** и **OrderDetails** добавляются в набор данных.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 - Сохраните набор данных.
 
@@ -106,9 +106,9 @@ ms.locfileid: "75586033"
 
 - Добавление запросов в TableAdapter.
 
-- Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> события таблиц данных в наборе данных. Дополнительные сведения см. [в разделе Проверка данных в DataSets](../data-tools/validate-data-in-datasets.md).
+- Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> события или таблиц данных в наборе данных. Дополнительные сведения см. [в разделе Проверка данных в DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

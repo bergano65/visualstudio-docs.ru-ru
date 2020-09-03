@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915972"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Руководство. Миграция проектов расширяемости в Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Практическое руководство. Перенос проектов расширяемости в Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вот как можно обновить расширение.  
@@ -29,15 +29,15 @@ ms.locfileid: "75915972"
   
 1. Используя копию, которую необходимо обновить, откройте ее в новой версии. Вам будет рекомендовано, что обновление необратимо.  
   
-2. После завершения обновления измените путь к внешней программе на новую версию devenv. exe. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений**, а затем выберите пункт **свойства**. На вкладке **Отладка** найдите текстовое поле, **запустите внешнюю программу** и измените путь к файлу devenv. exe на путь Visual Studio 2015, который должен выглядеть примерно так:  
+2. После завершения обновления измените путь к внешней программе на новую версию devenv.exe. Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений**, а затем выберите пункт **свойства**. На вкладке **Отладка** найдите текстовое поле, **Запуск внешней программы** и измените путь к devenv.exe на путь Visual Studio 2015, который должен выглядеть примерно так:  
   
-     **%ProgramFiles%\Microsoft Visual Studio (Common7\IDE\devenv.exe)**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. Добавьте ссылку на Microsoft. VisualStudio. Shell. «. *. dll». (Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений** и выберите **Добавить/ссылка**. Перейдите на вкладку **расширения** и проверьте **Microsoft. VisualStudio. Shell.,**  
+3. Добавьте ссылку на Microsoft.VisualStudio.Shell.14.0.dll. (Щелкните правой кнопкой мыши узел проекта в **Обозреватель решений** и выберите **Добавить/ссылка**. Перейдите на вкладку **расширения** и проверьте **Microsoft. VisualStudio. Shell.,**  
   
-4. Выполните сборку решения. Созданные файлы развертываются в:  
+4. Создайте решение. Созданные файлы развертываются в:  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< имя автора\>\\< имя проекта** \>\\< версия проекта\>\\.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions \\<имя автора \> \\<имя проекта \> \\<\> \\ версию проекта**.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Обновление проекта расширения для ссылочных сборок NuGet VS SDK  
   

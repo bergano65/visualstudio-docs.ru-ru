@@ -14,10 +14,10 @@ dev_langs:
 - csharp
 - vb
 ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904824"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Пошаговое руководство. Отображение подсказок краткие сведения
@@ -37,7 +37,7 @@ ms.locfileid: "85904824"
 
   В этом примере источник краткие сведения использует жестко закодированный список имен и описаний методов, но в полной реализации языковая служба и документация по языку отвечают за предоставление этого содержимого.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Начиная с Visual Studio 2015 вам не нужно устанавливать пакет SDK для Visual Studio из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
@@ -169,7 +169,7 @@ ms.locfileid: "85904824"
 
 ### <a name="to-build-and-test-the-quickinfotest-solution"></a>Создание и тестирование решения Куиккинфотест
 
-1. Постройте решение.
+1. Создайте решение.
 
 2. При запуске этого проекта в отладчике запускается второй экземпляр Visual Studio.
 
@@ -177,5 +177,5 @@ ms.locfileid: "85904824"
 
 4. Наведите указатель мыши на одно из вхождений "Добавить". Должна отобразиться подпись и описание `add` метода.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

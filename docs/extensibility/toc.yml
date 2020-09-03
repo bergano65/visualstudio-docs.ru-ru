@@ -828,7 +828,7 @@
       href: creating-a-software-development-kit.md
     - name: Сравнение пакетов SDK и NuGet
       href: nuget-versus-sdk-references.md
-    - name: 'Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic'
+    - name: Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Пошаговое руководство. Создание пакета SDK с помощью C++
       href: walkthrough-creating-an-sdk-using-cpp.md

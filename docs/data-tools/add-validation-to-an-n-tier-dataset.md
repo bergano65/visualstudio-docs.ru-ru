@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283025"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Добавление проверки в n-уровневом наборе данных
@@ -58,7 +58,7 @@ End Sub
 2. Дважды щелкните столбец, который необходимо проверить. Это действие создает <xref:System.Data.DataTable.ColumnChanging> обработчик событий.
 
     > [!NOTE]
-    > Конструктор наборов данных не создает обработчик событий для события C# автоматически. Код, необходимый для работы с событием в C#, включен в следующий раздел. `SampleColumnChangingEvent`создается, а затем присоединяется к <xref:System.Data.DataTable.ColumnChanging> событию в <xref:System.Data.DataTable.EndInit%2A> методе.
+    > Конструктор наборов данных не создает обработчик событий для события C# автоматически. Код, необходимый для работы с событием в C#, включен в следующий раздел. `SampleColumnChangingEvent` создается, а затем присоединяется к <xref:System.Data.DataTable.ColumnChanging> событию в <xref:System.Data.DataTable.EndInit%2A> методе.
 
 3. Добавьте код для проверки того, что `e.ProposedValue` содержит данные, соответствующие требованиям приложения. Если предложенное значение недопустимо, установите столбец, чтобы указать, что он содержит ошибку.
 
@@ -166,7 +166,7 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

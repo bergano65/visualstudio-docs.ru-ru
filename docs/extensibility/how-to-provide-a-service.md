@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905762"
 ---
 # <a name="how-to-provide-a-service"></a>Руководство. предоставление службы
 Пакет VSPackage может предоставлять службы, которые могут использоваться другими пакетами VSPackage. Для предоставления службы пакет VSPackage должен зарегистрировать службу в Visual Studio и добавить службу.
 
- <xref:Microsoft.VisualStudio.Shell.Package>Класс реализует <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> и <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer>содержит методы обратного вызова, предоставляющие службы по запросу.
+ <xref:Microsoft.VisualStudio.Shell.Package>Класс реализует <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> и <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer> содержит методы обратного вызова, предоставляющие службы по запросу.
 
  Дополнительные сведения о службах см. в разделе [Service Essentials](../extensibility/internals/service-essentials.md) .
 
@@ -76,7 +76,7 @@ ms.locfileid: "85905762"
 
 ### <a name="register-a-service"></a>Регистрация службы
 
-1. Чтобы зарегистрировать службу, добавьте в <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage, предоставляющий службу. Например:
+1. Чтобы зарегистрировать службу, добавьте в <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage, предоставляющий службу. Пример:
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -138,7 +138,7 @@ ms.locfileid: "85905762"
 
      Значение `helloString` должно быть "Hello".
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Руководство. Получение службы](../extensibility/how-to-get-a-service.md)
 - [Использование и предоставление служб](../extensibility/using-and-providing-services.md)
 - [Основные компоненты службы](../extensibility/internals/service-essentials.md)

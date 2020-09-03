@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619309"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
@@ -38,7 +38,7 @@ ms.locfileid: "72619309"
 
  Параметр командной строки **/warnaserror** компилятора можно также использовать для указания того, считаются ли предупреждения ошибками. К этому параметру можно добавить список с разделителями-запятыми, чтобы указать, какие предупреждения следует рассматривать как ошибки или предупреждения, с помощью + или -. В следующей таблице приведены возможные параметры.
 
-|Параметр командной строки|Что определяет|
+|Параметр командной строки|Указывает|
 |--------------------------|---------------|
 |`/warnaserror+`|Обрабатывать предупреждения как ошибки.|
 |`/warnsaserror`-|Не обрабатывать предупреждения как ошибки. Это значение по умолчанию.|
@@ -52,7 +52,7 @@ ms.locfileid: "72619309"
 ## <a name="examples"></a>Примеры
  Эта таблица с примерами аргументов командной строки описывает назначение каждого аргумента.
 
-|Аргумент|Описание|
+|Аргумент|Description|
 |--------------|-----------------|
 |`vbc /warnaserror`|Указывает, что все предупреждения должны рассматриваться как ошибки.|
 |`vbc /warnaserror:42024`|Указывает, что предупреждение 42024 должно рассматриваться как ошибка.|
@@ -90,7 +90,7 @@ ms.locfileid: "72619309"
  Идентификатор: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Предупреждение о неиспользуемой локальной переменной
- Создается, когда локальная переменная объявлена, но не используется. По умолчанию включено.
+ Создается, когда локальная переменная объявлена, но не используется. По умолчанию включен.
 
  Идентификатор: 42024
 
@@ -119,5 +119,5 @@ ms.locfileid: "72619309"
 
  Идентификатор: 42029, 42031
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Диалоговое окно помощника по исключениям](../debugger/exception-assistant-dialog-box.md) : [типы ошибок](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f) [try... Перехватить... Инструкция Finally](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) [(Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1) [страница компиляции, конструктор проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [предупреждения компилятора, отключенные по умолчанию](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

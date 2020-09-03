@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533150"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
@@ -36,7 +36,7 @@ ms.locfileid: "85533150"
 
 - [Применение пользовательского атрибута к члену типа](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Создать новый тип
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Создать новый тип
 
 1. В панели инструментов, в конструкторе классов, перетащите в диаграмму классов один из следующих элементов:
 
@@ -84,7 +84,7 @@ ms.locfileid: "85533150"
 
      По завершении пользовательские атрибуты будут применены к типу.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Применение настраиваемого атрибута к члену типа
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Применение настраиваемого атрибута к члену типа
 
 1. Щелкните на схеме классов имя члена на его фигуре типа или его строку в окне "Сведения о классе".
 
@@ -94,5 +94,5 @@ ms.locfileid: "85533150"
 
      По завершении пользовательские атрибуты будут применены к типу.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Как создать наследование между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md) [как создать ассоциации между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md) [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md) [Работа с схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md) [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)

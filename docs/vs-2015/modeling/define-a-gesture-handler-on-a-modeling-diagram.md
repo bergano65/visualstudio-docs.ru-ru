@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533072"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Определение обработчика жестов на схеме моделирования
@@ -230,7 +230,7 @@ ms.locfileid: "85533072"
 
          **Проект Project**  =  *Ваш проект библиотеки классов*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Исполнение обработчика жестов
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Исполнение обработчика жестов
  В целях проверки запустите обработчик жестов в режиме отладки.
 
 #### <a name="to-test-the-gesture-handler"></a>Проверка обработчика жестов
@@ -265,12 +265,12 @@ ms.locfileid: "85533072"
 
 - Для данного типа целевого и перетаскиваемого элемента не предусмотрено встроенной функциональности.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Реализация обработчика жестов
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Реализация обработчика жестов
 
 ### <a name="the-gesture-handler-methods"></a>Методы обработчика жестов
  Класс обработчика жестов реализует и экспортирует тип <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Ниже перечислены методы, которые необходимо определить.
 
-|Сигнатура|Описание|
+|Подпись|Описание|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Чтобы разрешить перетаскивание исходного элемента, на который ссылается `true` , на данный целевой объект, этот метод должен возвращать значение `dragEvent` .<br /><br /> Этот метод не должен вносить изменения в модель. Метод должен работать быстро, так как используется для определения состояния указателя по мере того, как пользователь перемещает мышь.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Обновите модель на основе исходного объекта, на который ссылается `dragEvent`, и целевого объекта.<br /><br /> Метод вызывается, когда пользователь отпускает кнопку мыши после перетаскивания.|
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Дополнительные сведения см. [в разделе Навигация по модели UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Установка и удаление расширения
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Установка и удаление расширения
  Расширение [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] можно установить как на своем компьютере, так и на других.
 
 #### <a name="to-install-an-extension"></a>Установка расширения
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  Код `GetModelElementsFromDragEvent()` описан в разделе [Получение элементов модели UML из IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Определение и установка расширения моделирования расширение](../modeling/define-and-install-a-modeling-extension.md) [моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md) [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Определение ограничений проверки для программирования UML-моделей](../modeling/define-validation-constraints-for-uml-models.md) [с помощью API UML](../modeling/programming-with-the-uml-api.md)
