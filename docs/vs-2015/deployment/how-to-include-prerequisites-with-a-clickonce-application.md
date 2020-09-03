@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557673"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Включение требуемых компонентов в дистрибутив приложения ClickOnce
@@ -24,7 +24,7 @@ ms.locfileid: "77557673"
 > [!NOTE]
 > Чтобы добавить пакет установщика для .NET Framework, ознакомьтесь с [руководством по развертыванию .NET Framework для разработчиков](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
-## <a name="Package"></a> Добавление пакета установщика с помощью файла Package.xml  
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Добавление пакета установщика с помощью файла Package.xml  
   
 1. В проводнике откройте папку **Packages**.  
   
@@ -34,10 +34,10 @@ ms.locfileid: "77557673"
   
 3. В блокноте откройте файл **Package.xml**.  
   
-4. Выберите элемент **Name** , содержащий `http://go.microsoft.com/fwlink`, и скопируйте URL-адрес. Включите часть **LinkID**.  
+4. Выберите элемент **Name** , содержащий `http://go.microsoft.com/fwlink` , и скопируйте URL-адрес. Включите часть **LinkID**.  
   
     > [!NOTE]
-    > Если элемент **Name** не содержит `http://go.microsoft.com/fwlink`, откройте файл **Product. XML** в корневой папке для необходимого компонента и перейдите к строке **fwlink** .  
+    > Если элемент **Name** не содержит `http://go.microsoft.com/fwlink` , откройте файл **Product.xml** в корневой папке для необходимого компонента и перейдите к строке **fwlink** .  
   
     > [!IMPORTANT]
     > Некоторые необходимые компоненты имеют несколько пакетов установщиков (например, для 32-разрядных или 64-разрядных систем). Если строка **fwlink** содержится в нескольких элементах **Имя**, оставшиеся действия следует выполнить для каждого из них.  
@@ -53,4 +53,4 @@ ms.locfileid: "77557673"
      Теперь можно распространить пакет установщика с приложением.  
   
 ## <a name="see-also"></a>См. также:  
- [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Практическое руководство. Установка необходимых компонентов при помощи ClickOnce-приложения](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

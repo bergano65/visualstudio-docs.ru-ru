@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905048"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Пошаговое руководство. Создание глифа поля
@@ -53,7 +53,7 @@ ms.locfileid: "85905048"
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5. Реализуйте `GenerateGlyph` , определив элемент пользовательского интерфейса глифа. `TodoTag`задается далее в этом пошаговом руководстве.
+5. Реализуйте `GenerateGlyph` , определив элемент пользовательского интерфейса глифа. `TodoTag` задается далее в этом пошаговом руководстве.
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]
@@ -130,7 +130,7 @@ ms.locfileid: "85905048"
 
 ### <a name="to-build-and-test-the-todoglyphtest-solution"></a>Создание и тестирование решения Тодоглифтест
 
-1. Постройте решение.
+1. Создайте решение.
 
 2. Запустите проект, нажав клавишу **F5**. Запускается второй экземпляр Visual Studio.
 

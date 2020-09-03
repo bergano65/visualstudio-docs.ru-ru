@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904943"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Пошаговое руководство. Создание пакета SDK с помощью JavaScript
@@ -24,10 +24,10 @@ ms.locfileid: "85904943"
 
   Для JavaScript тип проекта библиотеки классов отсутствует. В этом пошаговом руководстве файл примера *arithmetic.js* создается непосредственно в проекте VSIX. На практике рекомендуется сначала создать и протестировать файлы JavaScript и CSS как приложение для Магазина Windows, например с помощью шаблона **пустое приложение** , прежде чем добавлять их в проект VSIX.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>Создание проекта пакета SDK для расширения Симплемасвсикс
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Создание проекта пакета SDK для расширения Симплемасвсикс
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -138,7 +138,7 @@ ms.locfileid: "85904943"
 
 21. Перезапустите Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>Создание примера приложения, использующего пакет SDK
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> Создание примера приложения, использующего пакет SDK
 
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
@@ -313,5 +313,5 @@ ms.locfileid: "85904943"
 
 12. В пользовательском интерфейсе приложения введите любые два числа, выберите операцию, а затем нажмите **=** кнопку. Появится правильный результат.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Создание пакета средств разработки](../extensibility/creating-a-software-development-kit.md)

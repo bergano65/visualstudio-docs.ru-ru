@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817441"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Как использовать редактор выражений
@@ -53,6 +53,6 @@ ms.locfileid: "85817441"
 
      Альтернативный способ ввода или изменения выражения — нажать кнопку с многоточием рядом с именем свойства в сетке свойств. При нажатии многоточия открывается **Редактор выражений** как диалоговое окно.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

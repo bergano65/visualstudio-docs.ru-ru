@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532526"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Практическое руководство. Перехват щелчка фигуры или декоратора
 В следующих процедурах показано, как перехватить щелчок фигуры или декоратора значка. Можно перехватывать щелчки, двойные щелчки, перетаскивания и другие жесты, а также отреагировать на элемент.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Перехват щелчков на фигурах
- В проекте DSL в файле кода, отдельном от созданных файлов кода, напишите определение разделяемого класса для класса Shape. Переопределите `OnDoubleClick()` или один из других методов, имя которого начинается с `On...` . Пример:
+ В проекте DSL в файле кода, отдельном от созданных файлов кода, напишите определение разделяемого класса для класса Shape. Переопределите `OnDoubleClick()` или один из других методов, имя которого начинается с `On...` . Например:
 
 ```csharp
 public partial class MyShape // change
@@ -393,7 +393,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
 - [Свойства декораторов](../modeling/properties-of-decorators.md)

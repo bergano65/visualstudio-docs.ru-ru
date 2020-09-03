@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_allocatesBasePointer | Документация Майкрософт
+title: 'IDiaFrameData:: get_allocatesBasePointer | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 90a32930c51caad61e07b0e6fdfe5b164a5515bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203672"
 ---
-# <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
+# <a name="idiaframedataget_allocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий тип базового указателя, выделяемые для кода в этот диапазон адресов. Этот метод является нерекомендуемым.  
+Получает флаг, указывающий, выделен ли базовый указатель для кода в этом диапазоне адресов. Этот метод является устаревшим.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,14 +35,14 @@ HRESULT get_allocatesBasePointer ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если базового указателя выделяется; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает значение `TRUE` , если базовый указатель выделен; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Это свойство следует использовать только в коде, которые ранее доступны FPO_DATA или когда строка программы, возвращенные [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод `NULL`. В противном случае программа строка содержит все сведения, необходимые для вычисления предыдущих значений регистров.  
+## <a name="remarks"></a>Remarks  
+ Это свойство должно использоваться только кодом, к которому ранее обращался FPO_DATA, или когда программная строка, возвращаемая методом [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) , — `NULL` . В противном случае строка программы содержит все сведения, необходимые для расчета предыдущих значений регистров.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

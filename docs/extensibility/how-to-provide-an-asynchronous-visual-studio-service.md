@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905737"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Как предоставить асинхронную службу Visual Studio
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Чтобы эта служба стала видимой за пределами этого пакета, установите для флага Promote значение *true* в качестве последнего параметра:`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Чтобы эта служба стала видимой за пределами этого пакета, установите для флага Promote значение *true* в качестве последнего параметра:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Добавьте ссылку на *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
@@ -238,5 +238,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. Постройте решение и запустите отладку. Когда появится экспериментальный экземпляр Visual Studio, перейдите в меню **Сервис** и найдите пункт меню **вызвать тестасинккомманд** . Если щелкнуть его, Текствритерсервице запишет в указанный файл. (Не нужно открывать решение, так как вызов команды также вызывает загрузку пакета.)
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Использование и предоставление служб](../extensibility/using-and-providing-services.md)

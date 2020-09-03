@@ -8,10 +8,10 @@ ms.date: 06/23/2020
 ms.topic: how-to
 description: Узнайте, как приобрести ежемесячные подписки Visual Studio с помощью портала администрирования подписок
 ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904694"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Добавление новых ежемесячных подписок Visual Studio на портале администрирования подписок

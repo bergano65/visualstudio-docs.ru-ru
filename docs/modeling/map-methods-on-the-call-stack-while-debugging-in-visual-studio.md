@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532708"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
@@ -41,7 +41,7 @@ ms.locfileid: "85532708"
 
  ![Отладка со стеками вызовов на картах кода](../debugger/media/debuggermap_overview.png)
 
- Что вам понадобится:
+ Что вам понадобится
 
  ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ ms.locfileid: "85532708"
 
 - Код, который можно отладить, например Visual C#, Visual Basic, C++, JavaScript или X + +.
 
-  Пример
+  См.
 
 - [Видео. Отладка с помощью отладчика карт кода (канал 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -71,13 +71,13 @@ ms.locfileid: "85532708"
 
 - [Поиск ошибок с помощью Map](#FindBugs)
 
-- [ВОПРОСЫ & A](#QA)
+- [ВОПРОСЫ И ОТВЕТЫ](#QA)
 
   Дополнительные сведения о командах и действиях, которые можно использовать при работе с картами кода, см. в разделе [Обзор и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
 
 ## <a name="map-the-call-stack"></a><a name="MapStack"></a> Сопоставление стека вызова
 
-1. Приступите к отладке. (Клавиатура: **F5**)
+1. Запустите отладку. (Клавиатура: **F5**)
 
 2. После того как приложение переходит в режим приостановки выполнения или вы выполняете шаг с заходом в функцию, выберите **карту кода**. (Клавиатура: **CTRL**  +  **SHIFT**  +  **`** )
 
@@ -188,7 +188,7 @@ ms.locfileid: "85532708"
 
    ![Расшифровка значков на карте кода со стеком вызовов](../debugger/media/debuggermap_showlegend.png)
 
-  Пример
+  См.
 
 - [Сопоставьте стек вызовов](#MapStack)
 

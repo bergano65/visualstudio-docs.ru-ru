@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly Документы Майкрософт
+title: 'Идебугобжект:: IsReadOnly | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19546550f916e9d42adf634b0d85958ce9697d28
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726413"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
-Определяет, является ли этот объект прочитан только для чтения.
+Определяет, доступен ли этот объект только для чтения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int IsReadOnly(
 
 ## <a name="parameters"></a>Параметры
 `pfIsReadOnly`\
-(ваут) Возвращает ненулевой`TRUE`( ) если этот объект читается только для чтения; в противном`FALSE`случае, возвращаетнулно ноль ().
+заполняет Возвращает ненулевое значение ( `TRUE` ), если данный объект доступен только для чтения; в противном случае возвращает ноль ( `FALSE` ).
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Объект только для чтения не может изменить его значение после его создания.
+## <a name="remarks"></a>Remarks
+ После создания объекта, доступного только для чтения, его значение не может быть изменено.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
