@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2 Документы Майкрософт
+title: IDebugBreakpointResolution2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734748"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
-Этот интерфейс представляет информацию, описываемую точку разрыва.
+Этот интерфейс представляет сведения, описывающие связанную точку останова.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,26 +28,26 @@ ms.locfileid: "80734748"
 IDebugBreakpointResolution2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Движок отладки (DE) реализует этот интерфейс как часть своей поддержки точек разрыва. Этот интерфейс содержит описание связанной точки разрыва, которую использует диспетчер сеанса при просмотре свойствами точки разрыва.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Модуль отладки (DE) реализует этот интерфейс в рамках поддержки точек останова. Этот интерфейс предоставляет описание привязанной точки останова, которую диспетчер отладки сеанса использует, когда пользователь просматривает свойства точки останова.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Звонок в [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) возвращает этот интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызов [жетбреакпоинтресолутион](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) возвращает этот интерфейс.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugBreakpointResolution2`.
+ В следующей таблице показаны методы `IDebugBreakpointResolution2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Получает тип точки разрыва, представленной в этой резолюции.|
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Получает информацию о разрешении точки разрыва, описывающая эту точку разрыва.|
+|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Возвращает тип точки останова, представленной этим разрешением.|
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Возвращает сведения о разрешении точки останова, описывающие эту точку останова.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)

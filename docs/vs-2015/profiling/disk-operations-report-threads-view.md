@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202437"
 ---
 # <a name="disk-operations-report-threads-view"></a>Отчет операций диска (представление потоков)
@@ -45,5 +45,5 @@ ms.locfileid: "68202437"
   
 - задержка записи в миллисекундах.  
   
-## <a name="see-also"></a>См. также  
- [Представление потоков](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>См. также:  
+ [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)

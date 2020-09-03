@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream | Документация Майкрософт
+title: 'IDebugProgram2:: Жетдисассемблистреам | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f918b9895975554534ef1702334d7a006112f77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202728"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает поток Дизассемблированный код для этой программы или часть этой программы.  
+Возвращает поток дизассемблированного кода для этой программы или части программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,21 +44,21 @@ int GetDisassemblyStream( 
   
 #### <a name="parameters"></a>Параметры  
  `dwScope`  
- [in] Указывает значение из [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) перечисление, определяющее область потока Дизассемблированный код.  
+ окне Задает значение из перечисления [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) , определяющего область потока дизассемблированного кода.  
   
  `pCodeContext`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий положение которого следует начать поток Дизассемблированный код.  
+ окне Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий позицию, с которой начинается поток дизассемблирования.  
   
  `ppDisassemblyStream`  
- [out] Возвращает [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) , представляющий поток Дизассемблированный код.  
+ заполняет Возвращает объект [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) , представляющий поток дизассемблированного кода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_DISASM_NOTSUPPORTED` Если Дизассемблированный код не поддерживается для этой конкретной архитектуры.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает `E_DISASM_NOTSUPPORTED` , если дизассемблирование не поддерживается для этой конкретной архитектуры.  
   
-## <a name="remarks"></a>Примечания  
- Если `dwScopes` параметр имеет `DSS_HUGE` флаг [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) значение перечисления, то должен возвратить большое количество инструкций Дизассемблированный код, например, для всего файла дизассемблированного кода или модуля. Если `DSS_HUGE` флаг не установлен, а затем Дизассемблированный код, как ожидается, будет ограничено небольшой области, как правило, одной функции.  
+## <a name="remarks"></a>Remarks  
+ Если `dwScopes` параметр имеет `DSS_HUGE` флаг [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) наборе перечисления, предполагается, что дизассемблирование будет возвращено большое количество инструкций дизассемблирования, например для всего файла или модуля. Если `DSS_HUGE` флаг не установлен, то Дизассемблированный код должен быть ограничен небольшим регионом, как правило, для одной функции.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

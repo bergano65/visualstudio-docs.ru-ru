@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202454"
 ---
 # <a name="average-cpu-utilization"></a>Среднее использование ЦП
@@ -25,6 +25,6 @@ ms.locfileid: "68202454"
 
 Показывает среднее использование логических ядер системы процессом профилирования в течение всего процесса. Этот граф не показывает, какое из ядер активно в заданный момент времени. Например, если два ядра были загружены на 50 % производительности в течение заданного периода времени, граф покажет, что использовалось одно логическое ядро.  
   
-## <a name="see-also"></a>См. также  
- [Cores View](../profiling/cores-view.md)  (Представление "Ядра")  
+## <a name="see-also"></a>См. также:  
+ [Представление "ядра"](../profiling/cores-view.md)   
  [Граф использования ЦП](../profiling/cpu-utilization-graph.md)

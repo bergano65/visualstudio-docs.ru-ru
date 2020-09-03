@@ -1,5 +1,5 @@
 ---
-title: '&lt;RelatedProducts&gt; элемент (загрузчик) | Документация Майкрософт'
+title: '&lt;&gt;Элемент релатедпродуктс (начальный загрузчик) | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202534"
 ---
-# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (установщик)
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;&gt;Элемент релатедпродуктс (начальный загрузчик)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.  
+`RelatedProducts`Элемент определяет другие продукты, которые либо зависят от, либо включены в текущий продукт.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,31 +53,31 @@ ms.locfileid: "68202534"
 ```  
   
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `RelatedProducts` Элемент является дочерним элементом `Product` элемент. Он не имеет атрибутов.  
+ `RelatedProducts`Элемент является дочерним по отношению к `Product` элементу. У него нет атрибутов.  
   
-## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct` Элемент указывает, что текущий продукт зависит от данного продукта, и что данного продукта должно быть установлено перед текущим объектом. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.  
+## <a name="dependsonproduct"></a>депендсонпродукт  
+ `DependsOnProduct`Элемент означает, что текущий продукт зависит от именованного продукта и что именованный продукт должен быть установлен перед текущим. Это дочерний `RelatedProducts` элемент элемента. `RelatedProducts`Элемент может иметь один или несколько `DependsOnProduct` элементов.  
   
- `DependsOnProduct` содержит следующий атрибут.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
-  
-## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в рамках этого курса необходимо установить перед текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.  
-  
-## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct` Элемент указывает, что продукт входит в состав текущей установки и не требует отдельной установки. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.  
-  
- `IncludesProduct` содержит следующий атрибут.  
+ `DependsOnProduct` имеет следующий атрибут.  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
+|`Code`|Кодовое имя включаемого продукта, как указано в `ProductCode` атрибуте `Product` элемента. Дополнительные сведения см. в разделе [\<Product>Element](../deployment/product-element-bootstrapper.md).|  
+  
+## <a name="eitherproducts"></a>еисерпродуктс  
+ `EitherProducts`Элемент определяет ноль или более `DependsOnProduct` элементов и не имеет атрибутов. По крайней мере один `DependsOnProduct` из этих наборов должен быть установлен до текущего продукта. `RelatedProducts`Элемент может иметь ноль или более `EitherProducts` элементов.  
+  
+## <a name="includesproduct"></a>инклудеспродукт  
+ `IncludesProduct`Элемент означает, что продукт включен в текущую установку и не требует отдельной установки. Это дочерний `RelatedProducts` элемент элемента. `RelatedProducts`Элемент может иметь один или несколько `IncludesProduct` элементов.  
+  
+ `IncludesProduct` имеет следующий атрибут.  
+  
+|Атрибут|Описание|  
+|---------------|-----------------|  
+|`Code`|Кодовое имя включаемого продукта, как указано в `ProductCode` атрибуте `Product` элемента. Дополнительные сведения см. в разделе [\<Product>Element](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]и поэтому не требует отдельной установки.  
+ В следующем примере кода указывается, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , и поэтому не требуется отдельная установка.  
   
 ```  
 <RelatedProducts>  
@@ -85,5 +85,5 @@ ms.locfileid: "68202534"
 </RelatedProducts>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Элемент \<Product>](../deployment/product-element-bootstrapper.md)
+## <a name="see-also"></a>См. также:  
+ [\<Product> Элемент](../deployment/product-element-bootstrapper.md)

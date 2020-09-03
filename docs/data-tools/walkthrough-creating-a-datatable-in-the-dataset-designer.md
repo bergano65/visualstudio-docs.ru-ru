@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586007"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство. Создание таблицы данных в конструктор наборов данных
@@ -27,7 +27,7 @@ ms.locfileid: "75586007"
 
 1. В Visual Studio в меню **Файл** выберите пункты **Создать** > **Проект**.
 
-2. Разверните **визуальный C#**  элемент или **Visual Basic** на левой панели, а затем выберите **Windows Desktop**.
+2. В левой области разверните элемент **Visual C#** или **Visual Basic** , а затем выберите пункт **Windows Desktop**.
 
 3. В средней области выберите тип проекта **приложения Windows Forms** .
 
@@ -37,7 +37,7 @@ ms.locfileid: "75586007"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Добавление нового набора данных в приложение
 
-1. В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите команду **Добавить новый элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
@@ -53,13 +53,13 @@ ms.locfileid: "75586007"
 
      В набор данных добавляется таблица с именем **DataTable1** .
 
-2. Щелкните строку заголовка **DataTable1** и переименуйте ее `Music`.
+2. Щелкните строку заголовка **DataTable1** и переименуйте ее `Music` .
 
 ## <a name="add-columns-to-the-datatable"></a>Добавить столбцы в таблицу данных
 
 1. Щелкните правой кнопкой мыши таблицу **Music** . Наведите указатель мыши на пункт **Добавить**и выберите **столбец**.
 
-2. Присвойте столбцу имя `SongID`.
+2. Присвойте столбцу имя `SongID` .
 
 3. В окне **Свойства** присвойте свойству <xref:System.Data.DataColumn.DataType%2A> значение <xref:System.Int16?displayProperty=fullName>.
 
@@ -81,7 +81,7 @@ ms.locfileid: "75586007"
 
 Чтобы сохранить проект **дататаблевалксраугх** , в меню **файл** выберите **сохранить все**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

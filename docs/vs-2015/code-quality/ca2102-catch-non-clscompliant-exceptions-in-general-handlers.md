@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521307"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102. Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков
@@ -39,7 +39,7 @@ ms.locfileid: "85521307"
 
 - В C#: `catch {}`
 
-- C++: `catch(...) {}` или`catch(Object^) {}`
+- C++: `catch(...) {}` или `catch(Object^) {}`
 
   Необработанное исключение, несовместимое с CLS, стало проблемой безопасности, когда ранее разрешенные разрешения удаляются из блока catch. Так как несовместимые с CLS исключения не перехватываются, вредоносный метод, порождающий несовместимое с CLS исключение, может работать с повышенными разрешениями.
 
@@ -81,5 +81,5 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>Связанные правила
  [CA1031. Не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Исключения и обработка исключений](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (ассемблер IL)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [Переопределение безопасности](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [— независимость от языка и независимые от языка компоненты](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ec0bdd3ebae52158c5631a880e63ee0f3a455de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671714"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
@@ -54,9 +54,9 @@ ms.locfileid: "72671714"
 
      ![Подсказка окна IntelliSense](../ide/media/express-overloads.png "Express_Overloads") Подсказка окна IntelliSense
 
-     В подсказке сказано **(+2 перегрузки)** , что означает, что вызвать метод `Next()` можно еще двумя способами. Перегрузки методов содержат разное количество или типы аргументов, поэтому работают слегка по-разному. Например, метод может принимать один целочисленный аргумент, тогда как одна из его перегрузок может принимать целое число и строку. Выбирайте подходящую перегрузку в зависимости от того, что требуется сделать. При добавлении кода в метод `StartTheQuiz()` в окне Intellisense появляется дополнительная информация, как только вы введете `randomizer.Next(`. Нажимайте клавиши СТРЕЛКА ВВЕРХ и СТРЕЛКА ВНИЗ для перебора перегрузок, как показано на следующем рисунке.
+     В подсказке сказано **(+2 перегрузки)**, что означает, что вызвать метод `Next()` можно еще двумя способами. Перегрузки методов содержат разное количество или типы аргументов, поэтому работают слегка по-разному. Например, метод может принимать один целочисленный аргумент, тогда как одна из его перегрузок может принимать целое число и строку. Выбирайте подходящую перегрузку в зависимости от того, что требуется сделать. При добавлении кода в метод `StartTheQuiz()` в окне Intellisense появляется дополнительная информация, как только вы введете `randomizer.Next(`. Нажимайте клавиши СТРЕЛКА ВВЕРХ и СТРЕЛКА ВНИЗ для перебора перегрузок, как показано на следующем рисунке.
 
-     ![Перегрузка для следующего&#40; &#41; метода в IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Перегрузка метода Next () в IntelliSense
+     ![Перегрузка метода Next() в IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Перегрузка метода Next() в IntelliSense
 
      В данном случае необходимо выбрать последнюю перегрузку, чтобы можно было задать минимальное и максимальное значения.
 
@@ -80,6 +80,6 @@ ms.locfileid: "72671714"
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий шаг руководства см. в разделе [Step 7: Add Multiplication and Division Problems](../ide/step-7-add-multiplication-and-division-problems.md) (Шаг 7. Добавление задач на умножение и деление).
+- Следующий шаг руководства см. в разделе [Шаг 7. Добавление проблем с умножением и делением](../ide/step-7-add-multiplication-and-division-problems.md).
 
-- Предыдущий шаг руководства см. в разделе [Step 5: Add Enter Event Handlers for the NumericUpDown Controls](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md) (Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown).
+- Предыдущий шаг руководства см. в разделе [Шаг 5. Добавление обработчиков событий ввода для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

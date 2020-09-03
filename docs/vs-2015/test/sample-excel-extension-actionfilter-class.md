@@ -9,16 +9,16 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4c286f25159f3ee1934a27d2242e97482f7ec424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672181"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Пример расширения Excel. Класс ActionFilter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Этот внутренний класс расширяет класс [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) и представляет фильтр для действий теста в элементе [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
+Этот внутренний класс расширяет класс [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) и представляет фильтр для действий теста в [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] элементе.
 
 ## <a name="simple-properties"></a>Простые свойства
  Эти свойства только для чтения позволяют разработчику указывать, как фильтр действий теста должен применяться платформой закодированных тестов пользовательского интерфейса. Например, свойство `UITestActionFilter.Name` предоставляет имя фильтра действий. Другие свойства получают категорию (`UITestActionFilter.Category`) фильтра действий, тип фильтра (`UITestActionFilter.FilterType`), имя группы (`UITestActionFilter.Group`) для действий теста, фильтруемых данным фильтром действий. Другие свойства определяют, следует ли применять время ожидания (`UITestActionFilter.ApplyTimeout`), а также включен ли фильтр действий теста (`UITestActionFilter.Enabled`).
@@ -29,6 +29,6 @@ ms.locfileid: "72672181"
 ## <a name="private-methods"></a>Закрытые методы
  Метод `IsLeftClick` определяет, представляет ли указанное действие щелчок левой кнопкой мыши. Метод `AreActionsOnSameExcelCell` определяет, выполняются ли два указанных действия в одной ячейке Excel.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

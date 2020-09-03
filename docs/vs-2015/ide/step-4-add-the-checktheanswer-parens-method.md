@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbfdc15b06d857b7537a4a327f3201c86d4db2d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671782"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Шаг 4. Добавление метода CheckTheAnswer()
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В четвертой части этого урока вам предстоит написать метод `CheckTheAnswer()`, который проверяет правильность ответов на арифметические задачи. Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор учебника см. в статье [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) (Учебное руководство 2. Создание ограниченной по времени математической головоломки).
+В четвертой части этого урока вам предстоит написать метод `CheckTheAnswer()`, который проверяет правильность ответов на арифметические задачи. Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор этого руководства см. в разделе [учебник 2. Создание математической головоломки с течением времени](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 > [!NOTE]
 > Если вы разрабатываете головоломку на Visual Basic, вам необходимо будет использовать ключевое слово `Function` вместо обычного ключевого слова `Sub`, потому что этот метод возвращает значение. Это объясняется просто: процедуры не возвращают значения, в отличие от функций.
@@ -51,6 +51,6 @@ ms.locfileid: "72671782"
 
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий шаг руководства см. в разделе [Step 5: Add Enter Event Handlers for the NumericUpDown Controls](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md) (Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown).
+- Следующий шаг руководства см. в разделе [Шаг 5. Добавление обработчиков событий ввода для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
 
-- Предыдущий шаг руководства см. в разделе [Step 3: Add a Countdown Timer](../ide/step-3-add-a-countdown-timer.md) (Шаг 6. Добавление таймера с обратным отсчетом).
+- Предыдущий шаг руководства см. в разделе [Шаг 3. Добавление таймера обратного отсчета](../ide/step-3-add-a-countdown-timer.md).

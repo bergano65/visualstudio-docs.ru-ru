@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths | Документация Майкрософт
+title: 'IDebugProgram2:: Енумкодепасс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4d34b1b6519407e02d4340a5108ef03cece12b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202767"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает список путей для заданной позиции в исходном файле.  
+Возвращает список путей кода для заданной позицией в исходном файле.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,30 +50,30 @@ int EnumCodePaths( 
   
 #### <a name="parameters"></a>Параметры  
  `pszHint`  
- [in] Слово под курсором в **источника** или **Дизассемблированный код** представления в интегрированной среде разработки.  
+ окне Слово под курсором в представлении **источника** или **дизассемблирования** в интегрированной среде разработки.  
   
  `pStart`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект, представляющий текущий контекст кода.  
+ окне Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий текущий контекст кода.  
   
  `pFrame`  
- [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) объект, представляющий кадр стека связанный с текущей точкой останова.  
+ окне Объект [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , представляющий кадр стека, связанный с текущей точкой останова.  
   
  `fSource`  
- [in] Ненулевое значение (`TRUE`) if в **источника** представления, или нуль (`FALSE`) if в **Дизассемблированный код** представления.  
+ окне Ненулевое `TRUE` значение (), если в представлении **исходного кода** или ноль ( `FALSE` ) в представлении **дизассемблирования** .  
   
  `ppEnum`  
- [out] Возвращает [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) объект, содержащий список путей кода.  
+ заполняет Возвращает объект [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) , содержащий список путей кода.  
   
  `ppSafety`  
- [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект, представляющий контекст дополнительный код в качестве точки останова в случае, если выбранный путь кода пропускается. Это может произойти в случае сокращенное логическое выражение, например.  
+ заполняет Возвращает объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий дополнительный контекст кода, который необходимо задать в качестве точки останова в случае, если выбранный путь к коду пропущен. Это может произойти в случае сокращенного логического выражения, например.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Путь код описывает имя метода или функции, который был вызван для получения к текущей точке выполнения программы. Список путей кода представляет стек вызовов.  
+## <a name="remarks"></a>Remarks  
+ Путь кода описывает имя метода или функции, которые были вызваны для перехода к текущей точке выполнения программы. Список путей кода представляет стек вызовов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
