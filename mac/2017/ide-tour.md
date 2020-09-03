@@ -7,10 +7,10 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984980"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Общие сведения о Visual Studio 2017 для Mac
@@ -94,7 +94,7 @@ NuGet — это наиболее популярный диспетчер па�
 
 Сведения об использовании пакета NuGet в приложении см. в статье [Включение пакета NuGet в проект](/visualstudio/mac/nuget-walkthrough).
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Рефакторинг
 
 Visual Studio для Mac предоставляет два удобных способа выполнить рефакторинг кода: анализ источника и контекстные действия. Подробнее о них вы можете прочитать в статье [Рефакторинг](/visualstudio/mac/refactoring).
 
@@ -122,6 +122,6 @@ Visual Studio для Mac интегрируется с системами упр
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интегрированная среда разработки Visual Studio (в Windows)](/visualstudio/ide/visual-studio-ide)

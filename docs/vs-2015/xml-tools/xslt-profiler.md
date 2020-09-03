@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406733"
 ---
 # <a name="xslt-profiler"></a>Профилировщик XSLT
@@ -30,5 +30,5 @@ ms.locfileid: "75406733"
 > [!NOTE]
 > Внешний вид некоторых окон в Visual Studio 2010 может отличаться от изображенного в этих документах, так как некоторые визуальные элементы были изменены по сравнению с версией Visual Studio 2008.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)

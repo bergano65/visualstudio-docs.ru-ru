@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643249"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Добавление подключения к базе данных SQL Azure
@@ -34,7 +34,7 @@ ms.locfileid: "88643249"
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Подключенные службы в Visual Studio для Mac](/visualstudio/mac/connected-services).
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 - Visual Studio с установленной рабочей нагрузкой Azure.
 - Проект одного из поддерживаемых типов
@@ -87,7 +87,7 @@ ms.locfileid: "88643249"
 
    ![Зависимости служб](./media/azure-sql-database-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница продукта базы данных SQL Azure](https://azure.microsoft.com/services/sql-database/)
 - [Документация по базе данных SQL Azure](/azure/azure-sql/database/)
