@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfRegisterIndices | Документация Майкрософт
+title: 'IDiaSymbol:: get_numberOfRegisterIndices | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18506739ca113679590b63a3a6bec981374da144
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183145"
 ---
-# <a name="idiasymbolgetnumberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
+# <a name="idiasymbolget_numberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает количество индексов регистра.  
+Возвращает число индексов регистров.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,10 +32,10 @@ HRESULT get_numberOfRegisterIndices(
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Указатель на `DWORD` , содержащий количество индексов регистра.  
+ заполняет Указатель на объект `DWORD` , который содержит число индексов регистров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

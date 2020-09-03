@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName | Документация Майкрософт
+title: 'IDebugCoreServer2:: Жетмачиненаме | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0be8ffadec79906ecc27e797627cfbcb2a8782d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182932"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает имя компьютера, на которой выполняется основной сервер.  
+Возвращает имя компьютера, на котором работает основной сервер.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,10 +40,10 @@ int GetName( 
   
 #### <a name="parameters"></a>Параметры  
  `pbstrName`  
- [out] Возвращает строку, содержащую имя компьютера.  
+ заполняет Возвращает строку, содержащую имя компьютера.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

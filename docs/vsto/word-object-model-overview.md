@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985390"
 ---
 # <a name="word-object-model-overview"></a>Общие сведения об объектной модели Word
@@ -39,7 +39,7 @@ ms.locfileid: "72985390"
 
 - [Работа с таблицами](../vsto/working-with-tables.md)
 
-## <a name="understanding"></a>Общие сведения об объектной модели Word
+## <a name="understand-the-word-object-model"></a><a name="understanding"></a> Общие сведения об объектной модели Word
  Word предоставляет сотни различных объектов, с которыми можно взаимодействовать. Они организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект <xref:Microsoft.Office.Interop.Word.Application> . Этот объект представляет текущий экземпляр Word. Объект <xref:Microsoft.Office.Interop.Word.Application> содержит объекты <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>и <xref:Microsoft.Office.Interop.Word.Range> . Каждый из этих объектов содержит множество методов и свойств, к которым можно обращаться для работы с объектом и взаимодействия с ним.
 
  На следующем рисунке показано одно представление этих объектов в иерархии объектной модели Word.
@@ -48,11 +48,11 @@ ms.locfileid: "72985390"
 
  На первый взгляд объекты перекрываются друг с другом. Например, объекты <xref:Microsoft.Office.Interop.Word.Document> и <xref:Microsoft.Office.Interop.Word.Selection> являются элементами объекта <xref:Microsoft.Office.Interop.Word.Application> , но объект <xref:Microsoft.Office.Interop.Word.Document> также является элементом объекта <xref:Microsoft.Office.Interop.Word.Selection> . Объекты <xref:Microsoft.Office.Interop.Word.Document> и <xref:Microsoft.Office.Interop.Word.Selection> содержат объекты <xref:Microsoft.Office.Interop.Word.Bookmark> и <xref:Microsoft.Office.Interop.Word.Range> . Перекрытие существует, так как для доступа к объекту одного и того же типа можно использовать различные способы. Например, вы применяете форматирование к объекту <xref:Microsoft.Office.Interop.Word.Range> , но может потребоваться доступ к диапазону текущего выделения, конкретного абзаца, раздела или всего документа.
 
- В следующих разделах кратко описаны объекты верхнего уровня и их взаимодействие друг с другом. К таким объектам относятся пять следующих объектов.
+ В следующих разделах кратко описываются объекты верхнего уровня и их взаимодействие друг с другом. К таким объектам относятся пять следующих объектов.
 
-- Объект Application
+- Объект приложения
 
-- Объект Document
+- объект документа;
 
 - Объект Selection
 
@@ -62,14 +62,14 @@ ms.locfileid: "72985390"
 
   Помимо объектной модели Word, проекты Office в Visual Studio предоставляют *ведущие элементы* и *элементы управления ведущего приложения* , расширяющие некоторые объекты из объектной модели Word. Поведение ведущих элементов и элементов управления ведущего приложения аналогично поведению объектов Word, однако они обладают дополнительными функциональными возможностями, такими как возможность привязки данных и дополнительные события. Дополнительные сведения см. в разделе [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md) , [ведущих элементов и элементов управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).
 
-### <a name="application-object"></a>Объект Application
+### <a name="application-object"></a>Объект приложения
  Объект <xref:Microsoft.Office.Interop.Word.Application> представляет приложение Word и является родителем для всех других объектов. Обычно его элементы применяются к Word как к единому целому. Свойства и методы данного объекта можно использовать для управления средой Word.
 
  В проектах надстройки VSTO для получения доступа к объекту <xref:Microsoft.Office.Interop.Word.Application> можно использовать поле `Application` класса `ThisAddIn` . Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
  В проектах на уровне документа для получения доступа к объекту <xref:Microsoft.Office.Interop.Word.Application> можно использовать свойство <xref:Microsoft.Office.Tools.Word.Document.Application%2A> класса `ThisDocument` .
 
-### <a name="document-object"></a>Объект Document
+### <a name="document-object"></a>объект документа;
  <xref:Microsoft.Office.Interop.Word.Document> – это центральный объект для программирования в Word. Он представляет документ и все его содержимое. При открытии существующего документа или создании нового документа вы создаете новый объект <xref:Microsoft.Office.Interop.Word.Document> , который добавляется в коллекцию <xref:Microsoft.Office.Interop.Word.Documents> объекта <xref:Microsoft.Office.Interop.Word.Application> . Документ, который находится в фокусе, называется активным документом. Он представлен свойством <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> объекта <xref:Microsoft.Office.Interop.Word.Application> .
 
  Средства разработки Office в Visual Studio расширяют объект <xref:Microsoft.Office.Interop.Word.Document> , предоставляя тип <xref:Microsoft.Office.Tools.Word.Document> . Этот тип является *ведущим элементом* , который предоставляет доступ ко всем функциям объекта <xref:Microsoft.Office.Interop.Word.Document> и добавляет дополнительные события, а также позволяет добавлять управляемые элементы управления.
@@ -115,7 +115,7 @@ ms.locfileid: "72985390"
 
   Visual Studio расширяет объект <xref:Microsoft.Office.Interop.Word.Bookmark> , предоставляя элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark> . Поведение элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark> аналогично поведению собственного элемента <xref:Microsoft.Office.Interop.Word.Bookmark>, однако он имеет дополнительные события и возможности привязки данных. Для привязки данных к элементу управления закладками в документе можно использовать тот же способ, что и для привязки данных к элементу управления текстовым полем в форме Windows Forms. Дополнительные сведения см. в разделе [элемент управления Bookmark](../vsto/bookmark-control.md).
 
-## <a name="WordOMDocumentation"></a>Использование документации по объектной модели Word
+## <a name="use-the-word-object-model-documentation"></a><a name="WordOMDocumentation"></a> Использование документации по объектной модели Word
  Полные сведения об объектной модели Word см. в справочнике по основной сборке взаимодействия (PIA) Word, а также в справочнике по объектной модели Visual Basic для приложений (VBA).
 
 ### <a name="primary-interop-assembly-reference"></a>Ссылка на основную сборку взаимодействия
@@ -126,10 +126,10 @@ ms.locfileid: "72985390"
 ### <a name="vba-object-model-reference"></a>Справочник по объектной модели VBA
  В справочных документах по объектной модели VBA объектная модель Word описана в том виде, в котором она предоставляется коду VBA. Дополнительные сведения см. в статье [Справочник по объектной модели Word 2010](/office/vba/api/overview/Word/object-model).
 
- Все объекты и элементы в справочнике по объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Word. Например, объект документа в справочнике по объектной модели VBA соответствует объекту <xref:Microsoft.Office.Interop.Word.Document> в сборке PIA Word. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте Word, создаваемом с помощью Visual Studio.
+ Все объекты и элементы в справочнике по объектной модели VBA соответствуют типам и участникам основной сборки взаимодействия Word. Например, объект документа в справочнике по объектной модели VBA соответствует <xref:Microsoft.Office.Interop.Word.Document> объекту в сборке PIA Word. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте Word, создаваемом с помощью Visual Studio.
 
-## <a name="see-also"></a>См. также
-- [Основные сборки взаимодействия Office](../vsto/office-primary-interop-assemblies.md)
+## <a name="see-also"></a>См. также раздел
+- [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
 - [Работа с документами](../vsto/working-with-documents.md)
 - [Работа с текстом в документах](../vsto/working-with-text-in-documents.md)

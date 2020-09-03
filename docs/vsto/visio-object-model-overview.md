@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88695511d22e38262dc969d66e469441c9c3ac47
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985483"
 ---
 # <a name="visio-object-model-overview"></a>Общие сведения об объектной модели Visio
@@ -34,27 +34,27 @@ ms.locfileid: "72985483"
 - [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Общие сведения об объектной модели Visio
- Visio предоставляет множество различных объектов, с которыми можно взаимодействовать. Они организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) . Он представляет текущий экземпляр Visio. Объект `Microsoft.Office.Interop.Visio.Application` содержит `Microsoft.Office.Interop.Visio.Document` и `Microsoft.Office.Interop.Visio.Page` объекты, а также коллекции `Microsoft.Office.Interop.Visio.Documents` и `Microsoft.Office.Interop.Visio.Pages`. Каждый из этих объектов и коллекций содержит много методов и свойств, к которым можно обращаться для работы и взаимодействия с ними.
+ Visio предоставляет множество различных объектов, с которыми можно взаимодействовать. Они организованы в виде иерархии, которая точно соответствует пользовательскому интерфейсу. В верхней части иерархии находится объект [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) . Он представляет текущий экземпляр Visio. `Microsoft.Office.Interop.Visio.Application`Объект содержит `Microsoft.Office.Interop.Visio.Document` объекты и, а `Microsoft.Office.Interop.Visio.Page` также `Microsoft.Office.Interop.Visio.Documents` `Microsoft.Office.Interop.Visio.Pages` коллекции и. Каждый из этих объектов и коллекций содержит много методов и свойств, к которым можно обращаться для работы и взаимодействия с ними.
 
  Дополнительные сведения см. в справочной документации VBA для объектов [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application), [Microsoft.Office.Interop.Visio.Document](/office/vba/api/Visio.Document)и [Microsoft.Office.Interop.Visio.Page](/office/vba/api/Visio.Page) , а также для коллекций [Microsoft.Office.Interop.Visio.Documents](/office/vba/api/Visio.Documents) и [Microsoft.Office.Interop.Visio.Pages](/office/vba/api/Visio.Pages) .
 
- В следующих разделах кратко описаны объекты верхнего уровня и их взаимодействие друг с другом. К числу этих объектов относятся следующие:
+ В следующих разделах кратко описываются объекты верхнего уровня и их взаимодействие друг с другом. К числу этих объектов относятся следующие:
 
-- Объект Application
+- Объект приложения
 
-- Объект Document
+- объект документа;
 
 - Page - объект
 
-### <a name="application-object"></a>Объект Application
+### <a name="application-object"></a>Объект приложения
  Объект Microsoft. Office. Interop. Visio. Application представляет приложение Visio и является родительским для всех других объектов. Обычно его элементы применяются к Visio как к единому целому. Для управления средой Visio можно использовать свойства и методы Microsoft. Office. Interop. Visio. Application и `Microsoft.Office.Interop.Visio.ApplicationSettings` объектов.
 
- В проектах надстроек VSTO доступ к объекту Microsoft. Office. Interop. Visio. Application можно получить с помощью поля `Application` класса `ThisAddIn`. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).
+ В проектах надстроек VSTO доступ к объекту Microsoft. Office. Interop. Visio. Application можно получить с помощью `Application` поля `ThisAddIn` класса. Для получения дополнительной информации см. [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).
 
-### <a name="document-object"></a>Объект Document
- Объект Microsoft. Office. Interop. Visio. Document является центральным для программирования Visio. Он представляет документ, набор элементов или файл шаблона. При открытии документа Visio или создании нового документа создается новый объект Microsoft. Office. Interop. Visio. Document, который добавляется в коллекцию Microsoft. Office. Interop. Visio. Documents объекта Microsoft. Office. Interop. Visio. Application. .
+### <a name="document-object"></a>объект документа;
+ Объект Microsoft.Office.Interop.Visio.Docумент является центральным для программирования в Visio. Он представляет документ, набор элементов или файл шаблона. При открытии документа Visio или создании нового документа создается новый объект Microsoft.Office.Interop.Visio.Docумент, который добавляется в коллекцию Microsoft.Office.Interop.Visio.Docументс объекта Microsoft. Office. Interop. Visio. Application.
 
- Документ, который находится в фокусе, называется активным документом. Он представлен свойством `Microsoft.Office.Interop.Visio.Application.ActiveDocument` объекта Microsoft. Office. Interop. Visio. Application.
+ Документ, который находится в фокусе, называется активным документом. Он представлен `Microsoft.Office.Interop.Visio.Application.ActiveDocument` свойством объекта Microsoft. Office. Interop. Visio. Application.
 
 ### <a name="page-object"></a>Page - объект
  Объект Microsoft. Office. Interop. Visio. Page представляет область рисования переднего плана или фоновой страницы. Вы можете использовать свойство `Microsoft.Office.Interop.Visio.Page.Background`, чтобы определить, является ли страница основной или фоновой.
@@ -64,7 +64,7 @@ ms.locfileid: "72985483"
 ## <a name="use-the-visio-object-model-documentation"></a>Использование документации по объектной модели Visio
  Полные сведения об объектной модели Visio см. в справочнике по объектной модели Visio VBA. В справочных документах по объектной модели VBA объектная модель Visio описана в том виде, в котором она предоставляется коду Visual Basic для приложений. Дополнительные сведения см. в [справочнике по объектной модели Visio](/office/vba/api/overview/visio/object-model).
 
- Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и членам основной сборки взаимодействия Visio. Например, объект `Document` в справочнике по объектной модели VBA соответствует типу Microsoft. Office. Interop. Visio. Document в сборке PIA Visio. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте надстройки Visio VSTO, создаваемом с помощью Visual Studio.
+ Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и членам основной сборки взаимодействия Visio. Например, `Document` объект в справочнике по объектной модели VBA соответствует типу Microsoft.Office.Interop.Visio.Docумент в сборке PIA Visio. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте надстройки Visio VSTO, создаваемом с помощью Visual Studio.
 
 > [!NOTE]
 > В настоящее время справочная документация по основной сборке взаимодействия Visio отсутствует.
@@ -76,7 +76,7 @@ ms.locfileid: "72985483"
 
  Дополнительные сведения см. в разделе Общие сведения о [классах и интерфейсах в основных сборках взаимодействия Office](/previous-versions/office/office-12/ms247299(v=office.12)) и [основных сборках взаимодействия Office](../vsto/office-primary-interop-assemblies.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Visio](../vsto/visio-solutions.md)
 - [Работа с документами Visio](../vsto/working-with-visio-documents.md)
 - [Работа с фигурами Visio](../vsto/working-with-visio-shapes.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985405"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство. Простая привязка данных в проекте надстройки VSTO
@@ -27,25 +27,25 @@ ms.locfileid: "72985405"
 
 [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
 
-В данном пошаговом руководстве рассмотрены следующие задачи:
+В этом пошаговом руководстве описаны следующие задачи:
 
 - Добавление <xref:Microsoft.Office.Tools.Word.ContentControl> в документ во время выполнения.
 
-- Создание объекта <xref:System.Windows.Forms.BindingSource> , подключающего элемент управления к экземпляру набора данных.
+- создание объекта <xref:System.Windows.Forms.BindingSource> , соединяющего элемент управления с экземпляром набора данных.
 
 - Предоставление пользователю возможности прокручивать записи и просматривать их в элементе управления.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
-Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-- Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . Базу данных `AdventureWorksLT` можно скачать в [репозитории SQL Server примеров GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Дополнительные сведения о подключении базы данных см. в следующих разделах:
+- Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . Вы можете скачать `AdventureWorksLT` базу данных из [репозитория SQL Server примеров GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
   - Сведения о присоединении базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express см. в разделе [как присоединить базу данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
@@ -63,7 +63,7 @@ ms.locfileid: "72985405"
 
      Visual Studio открывает файл *ThisAddIn. vb* или *ThisAddIn.CS* и добавляет **заполненные документы из проекта базы данных** в **Обозреватель решений**.
 
-2. Если проект предназначен для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], добавьте ссылку на сборку *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* . Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
+2. Если проект предназначен для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , добавьте ссылку на сборку *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* . Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
 
 ## <a name="create-a-data-source"></a>Создание источника данных
 
@@ -71,7 +71,7 @@ ms.locfileid: "72985405"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Добавление типизированного набора данных в проект
 
-1. Если окно **Источники данных** не отображается, отобразите его в строке меню, выбрав **вид** > другие > **Источники данных** **Windows** .
+1. Если окно **Источники данных** не отображается, отобразите его с помощью команды **Просмотреть**  >  **другие**  >  **Источники данных**Windows в строке меню.
 
 2. Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
@@ -83,7 +83,7 @@ ms.locfileid: "72985405"
 
 5. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
-6. На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **Customer (SalesLT)** .
+6. На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **Customer (SalesLT)**.
 
 7. Нажмите кнопку **Готово**.
 
@@ -91,7 +91,7 @@ ms.locfileid: "72985405"
 
    - Типизированный набор данных с именем `AdventureWorksLTDataSet`. Этот набор данных представляет содержимое таблицы **Customer (SalesLT)** в базе данных AdventureWorksLT.
 
-   - Адаптер таблицы с именем `CustomerTableAdapter`. Этот TableAdapter можно использовать для чтения и записи данных в `AdventureWorksLTDataSet`. Дополнительные сведения см. в разделе [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Адаптер таблицы с именем `CustomerTableAdapter` . Этот TableAdapter можно использовать для чтения и записи данных в `AdventureWorksLTDataSet` . Дополнительные сведения см. в разделе [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Далее в пошаговом руководстве используются оба эти объекта.
 
@@ -146,11 +146,11 @@ ms.locfileid: "72985405"
 
 1. Нажмите клавишу **F5**.
 
-     Элемент управления содержимым с именем `customerContentControl` создается и заполняется данными. В то же время в проект добавляется объект набора данных с именем `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `customerBindingSource` . Объект <xref:Microsoft.Office.Tools.Word.ContentControl> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
+     Элемент управления содержимым с именем `customerContentControl` создается и заполняется данными. Одновременно в проект добавляется объект набора данных `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `customerBindingSource` . Объект <xref:Microsoft.Office.Tools.Word.ContentControl> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
 
 2. Нажимайте кнопки **Далее** и **Назад** , чтобы прокрутить записи базы данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Данные в решениях Office](../vsto/data-in-office-solutions.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2:GetEEMetricFile (ru) Документы Майкрософт
+title: 'IDebugSettingsCallback2:: Жетиметрикфиле | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720045"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Извлекает файл метрики оценщика выражения с учетом имени или метрики.
+Извлекает файл метрики средства оценки выражений по заданному имени или метрике.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ private int GetEEMetricFile(
 
 ## <a name="parameters"></a>Параметры
 `guidLang`\
-(в) Уникальный идентификатор языка программирования.
+окне Уникальный идентификатор языка программирования.
 
 `guidVendor`\
-(в) Уникальный идентификатор поставщика.
+окне Уникальный идентификатор поставщика.
 
 `pszMetric`\
-(в) Название метрики.
+окне Имя метрики.
 
 `pbstrValue`\
-(ваут) Возвращает содержимое метрического файла в виде строки.
+заполняет Возвращает содержимое файла метрики в виде строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

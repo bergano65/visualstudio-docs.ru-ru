@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 19367f812a87d6aa585e123100f1d08144c57ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672362"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Расширение функциональных возможностей адаптера таблицы TableAdapter
@@ -35,22 +35,22 @@ ms.locfileid: "72672362"
  Разделяемые классы позволяют разделить код для определенного класса между несколькими физическими файлами. Дополнительные сведения см. в разделе [partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) или [partial (Type)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).
 
 ## <a name="locate-tableadapters-in-code"></a>Обнаружение адаптеров таблиц в коде
- Хотя адаптеры таблиц разработаны с **Конструктор наборов данных**, создаваемые классы TableAdapter не являются вложенными классами <xref:System.Data.DataSet>. Адаптеры таблиц расположены в пространстве имен на основе имени связанного с TableAdapter набора данных. Например, если приложение содержит набор данных с именем `HRDataSet`, адаптеры таблиц будут расположены в пространстве имен `HRDataSetTableAdapters`. (Соглашение об именовании соответствует следующему шаблону: *DatasetName* + `TableAdapters`).
+ Хотя адаптеры таблиц разработаны с **Конструктор наборов данных**, созданные классы TableAdapter не являются вложенными классами <xref:System.Data.DataSet> . Адаптеры таблиц расположены в пространстве имен на основе имени связанного с TableAdapter набора данных. Например, если приложение содержит набор данных с именем `HRDataSet` , адаптеры таблиц будут находиться в `HRDataSetTableAdapters` пространстве имен. (Соглашение об именовании соответствует следующему шаблону: *DataSetName*  +  `TableAdapters` ).
 
- В следующем примере предполагается, что TableAdapter с именем `CustomersTableAdapter`is в проекте с `NorthwindDataSet`.
+ В следующем примере предполагается, что TableAdapter с именем `CustomersTableAdapter` находится в проекте с `NorthwindDataSet` .
 
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Создание разделяемого класса для TableAdapter
 
 1. Добавьте новый класс в проект, выбрав в меню **проект** пункт**Добавить класс**.
 
-2. Присвойте классу имя `CustomersTableAdapterExtended`.
+2. Назовите класс `CustomersTableAdapterExtended`.
 
-3. Нажмите **Добавить**.
+3. Выберите **Добавить**.
 
 4. Замените код правильным пространством имен и именем разделяемого класса для проекта следующим образом:
 
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]
 
-## <a name="see-also"></a>См. также раздел
- [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
+## <a name="see-also"></a>См. также:
+ [Заполнение наборов данных с помощью адаптеров таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

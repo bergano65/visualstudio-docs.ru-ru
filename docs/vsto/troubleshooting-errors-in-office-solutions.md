@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234696"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Устранение ошибок в решениях Office
@@ -40,7 +40,7 @@ ms.locfileid: "87234696"
 
 - [Отладка проектов](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Создание, обновление и открытие проектов
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Создание, обновление и открытие проектов
  При создании или открытии проектов Office могут возникнуть следующие ошибки.
 
 ### <a name="the-project-cannot-be-created"></a>Не удается создать проект
@@ -84,7 +84,7 @@ ms.locfileid: "87234696"
 
  После завершения обновления проекта можно удалить среду выполнения набора средств Visual Studio 2005 для Office (второй выпуск) с компьютера разработчика, если она не используется другими решениями Office.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Использование конструкторов
+## <a name="use-the-designers"></a><a name="designers"></a> Использование конструкторов
  При работе с конструктором документов, книг или листов в проектах уровня документа могут возникнуть следующие ошибки.
 
 ### <a name="designer-failed-to-load-correctly"></a>Не удалось правильно загрузить конструктор
@@ -105,7 +105,7 @@ ms.locfileid: "87234696"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Команда "вставить картинку" ничего не делает в конструкторе Visual Studio
  Когда Excel или Word открыт в конструкторе Visual Studio, при нажатии кнопки **Коллекция картинок** на вкладке **иллюстрации** на ленте не открывается область задач **Коллекция картинок** . Чтобы добавить картинку, необходимо открыть копию книги или документа, находящегося в главной папке проекта (а не в папке *\bin* ) вне Visual Studio, добавить картинку, а затем сохранить книгу или документ.
 
-## <a name="write-code"></a><a name="code"></a>Написание кода
+## <a name="write-code"></a><a name="code"></a> Написание кода
  При написании кода в проектах Office могут возникнуть следующие ошибки.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Некоторые события объектов Office недоступны при использовании C\#
@@ -123,7 +123,7 @@ ms.locfileid: "87234696"
 
  Дополнительные сведения о интерфейсах событий в основных сборках взаимодействия Office см. в разделе [Общие сведения о классах и интерфейсах в основной сборке взаимодействий Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Не может ссылаться на классы PIA Office в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Не может ссылаться на классы PIA Office в проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  В проектах, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], по умолчанию код, ссылающийся на класс, определенный в основной сборке взаимодействия Office, не компилируется. Классы в основных сборках взаимодействия используют соглашение об именовании *objectname*Class, например <xref:Microsoft.Office.Interop.Word.DocumentClass> и <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Так, следующий код из проекта надстройки VSTO для Word не будет компилироваться.
 
 ```vb
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Ошибки компилятора, возникающие после удаления элемента управления NamedRange
  При удалении элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с неактивного листа в конструкторе невозможно удалить автоматически создаваемый код из проекта, и могут возникать ошибки компилятора. Чтобы удалить код, перед удалением элемента управления необходимо выбрать лист, содержащий элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>, чтобы сделать его активным. Если автоматически создаваемый код не удаляется при удалении элемента управления, можно удалить код с помощью конструктора, сделав лист активным и изменив его, чтобы пометить его как измененный. При повторной сборке проекта код удаляется.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Отладка проектов
+## <a name="debug-projects"></a><a name="debugging"></a> Отладка проектов
  При отладке проектов Office могут возникнуть следующие ошибки.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Запрос на удаление появляется при публикации и установке решения на компьютере разработчика.

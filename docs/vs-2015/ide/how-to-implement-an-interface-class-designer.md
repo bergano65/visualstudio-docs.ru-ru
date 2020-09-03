@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6b750830e8263d0016f52a71ad4eac8c6950eda8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651853"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Практическое руководство. Реализация интерфейса (конструктор классов)
@@ -44,11 +44,11 @@ ms.locfileid: "72651853"
 2. Откройте представление классов и найдите интерфейс.
 
     > [!TIP]
-    > Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).
+    > Если представление классов не открыт, откройте представление классов в меню **вид** . Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).
 
 3. Перетащите узел интерфейса на фигуру класса на диаграмме.
 
      Отображается интерфейс без описания операций, подключенный к классу, а метка с именем интерфейса идентифицирует наследственную связь. Visual Studio создает заглушки для всех членов интерфейса, на этом этапе реализуется интерфейс.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Инструкции. Создание типов с помощью Конструктор классов](../ide/how-to-create-types-by-using-class-designer.md) [инструкции. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md) [как создать наследование между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md) [Рефакторинг классов и типов (конструктор классов)](../ide/refactoring-classes-and-types-class-designer.md)

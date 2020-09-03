@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID_TYPE Документы Майкрософт
+title: AD_PROCESS_ID_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a88fbe97cede8d343f1a96bc1917a69b8905b02b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738187"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
-Определяет, как интерпретировать идентификатор процесса в [структуре AD_PROCESS_ID.](../../../extensibility/debugger/reference/ad-process-id.md)
+Указывает способ интерпретации идентификатора процесса в структуре [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,18 +44,18 @@ public enum enum_AD_PROCESS_ID {
 
 ## <a name="fields"></a>Поля
 `AD_PROCESS_ID_SYSTEM`\
-Идентификатор процесса — это идентификатор системы. Используйте `ProcessId.dwProcessId` поле [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры.
+Идентификатор процесса является системным идентификатором. Используйте `ProcessId.dwProcessId` поле структуры [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .
 
 `AD_PROCESS_ID_GUID`\
-Идентификатор процесса — это GUID. Используйте `ProcessId.guidProcessId` поле `AD_PROCESS_ID` структуры.
+Идентификатор процесса — это идентификатор GUID. Используйте `ProcessId.guidProcessId` поле `AD_PROCESS_ID` структуры.
 
-## <a name="remarks"></a>Примечания
-Используется для `ProcessIdType` AD_PROCESS_ID [структуры](../../../extensibility/debugger/reference/ad-process-id.md) для определения типа идентификатора процесса, содержащегося в структуре. Определяет, как интерпретировать `ProcessId` союз в структуре.
+## <a name="remarks"></a>Remarks
+Используется для `ProcessIdType` элемента структуры [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) для идентификации типа идентификатора процесса, содержащегося в структуре. Определяет способ интерпретации `ProcessId` объединения в структуре.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

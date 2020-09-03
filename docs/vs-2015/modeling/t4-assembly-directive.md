@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672341"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
@@ -24,7 +24,7 @@ ms.locfileid: "72672341"
  Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавьте необходимые сборки в **ссылки** проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавьте необходимые сборки в **ссылки** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проекта.
 
 ## <a name="using-the-assembly-directive"></a>Использование директивы Assembly
  Синтаксис директивы таков:
@@ -45,7 +45,7 @@ ms.locfileid: "72672341"
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого включите необходимые ссылки в раздел **References** проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ В предварительно преобразованном текстовом шаблоне директива assembly не производит никакого эффекта. Вместо этого включите необходимые ссылки в раздел **ссылок** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проекта. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Стандартные сборки
  Следующие сборки загружаются автоматически, поэтому для них не нужно создавать директивы сборки:
@@ -66,7 +66,7 @@ ms.locfileid: "72672341"
 
 - Сборка, содержащая DSL.
 
-## <a name="msbuild"></a>Использование свойств проекта в MSBuild и Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Использование свойств проекта в MSBuild и Visual Studio
  Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Если требуется преобразовывать шаблоны на компьютере сборки, необходимо использовать свойства проекта.
 
  Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.
@@ -92,5 +92,5 @@ ms.locfileid: "72672341"
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Директива Include T4](../modeling/t4-include-directive.md)

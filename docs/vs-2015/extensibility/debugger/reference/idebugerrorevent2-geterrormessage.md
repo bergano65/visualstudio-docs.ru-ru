@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage | Документация Майкрософт
+title: 'IDebugErrorEvent2:: Жетеррормессаже | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4b25e040fe391b0bfbd05159779096e6bad9951
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183520"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Возвращает информацию, позволяющую конструкции понятное сообщение.  
+Возвращает сведения, позволяющие создавать удобное для восприятия сообщение об ошибке.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,29 +50,29 @@ int GetErrorMessage(
   
 #### <a name="parameters"></a>Параметры  
  `pMessageType`  
- [out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.  
+ заполняет Возвращает значение из перечисления [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) , описывающее тип сообщения.  
   
  `pbstrErrorFormat`  
- [out] Формат окончательное сообщение для пользователя (см. в разделе «Примечания» Дополнительные сведения).  
+ заполняет Формат последнего сообщения для пользователя (Дополнительные сведения см. в разделе "Примечания").  
   
  `hrErrorReason`  
- [out] Код ошибки сообщения посвящен.  
+ заполняет Код ошибки, о которой подается сообщение.  
   
  `pdwType`  
- [out] Серьезность ошибки (использовать константы MB_XXX для `MessageBox`, например `MB_EXCLAMATION` или `MB_WARNING`).  
+ заполняет Серьезность ошибки (Используйте константы MB_XXX для, например `MessageBox` `MB_EXCLAMATION` или `MB_WARNING` ).  
   
  `pbstrHelpFileName`  
- [out] Путь к файлу справки (указано значение null, если отсутствует файл справки).  
+ заполняет Путь к файлу справки (значение null, если файл справки отсутствует).  
   
  `pdwHelpId`  
- [out] Идентификатор раздела справки для отображения (значение 0, если ни одного раздела).  
+ заполняет Идентификатор отображаемого раздела справки (значение 0, если раздел справки отсутствует).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Сообщение об ошибке должно форматироваться вроде `"What I was doing.  %1"`. `"%1"` Бы заменить вызывающим с сообщением об ошибке, производным от кода ошибки (которое возвращается в `hrErrorReason`). `pMessageType` Указывает вызывающий объект как окончательный должно появиться сообщение об ошибке.  
+## <a name="remarks"></a>Remarks  
+ Сообщение об ошибке должно быть отформатировано по строкам `"What I was doing.  %1"` . `"%1"`Затем объект будет заменен вызывающим объектом с сообщением об ошибке, полученным на основе кода ошибки (возвращаемого в `hrErrorReason` ). `pMessageType`Параметр указывает вызывающему объекту, как должно отображаться окончательное сообщение об ошибке.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651807"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл VSTEMPLATE должен указывать, что это веб-шаблон, а также задавать язык программирования.
+Создание веб-шаблона отличается от создания других типов шаблонов. Поскольку шаблоны веб-проектов отображаются в диалоговом окне **Добавление нового веб-сайта** , а элементы веб-проекта классифицируются по языку программирования, файл VSTEMPLATE должен указывать шаблон в качестве веб-шаблона и определять язык программирования.
 
 > [!NOTE]
 > Веб-шаблоны должны содержать пустой файл WEBPROJ, указанный с помощью атрибута `File` элемента `Project`. Хотя веб-проектам не нужны файлы проекта, этот файл необходим для правильной работы веб-шаблона.
@@ -86,5 +86,5 @@ ms.locfileid: "72651807"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md) [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

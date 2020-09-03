@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs Документы Майкрософт
+title: 'IDebugSettingsCallback2:: Енумис | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720240"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Перечисляет доступные оценщики выражений с учетом идентификаторов языка и поставщиков.
+Перечисляет доступные средства оценки выражений по идентификаторам языка и поставщика.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,19 +45,19 @@ public int EnumEEs(
 
 ## <a name="parameters"></a>Параметры
 `celtBuffer`\
-(в) Количество элементов `pceltEEs` в буфере.
+окне Число элементов в `pceltEEs` буфере.
 
 `rgguidLang`\
-(в, вне) Уникальный идентификатор для языка программирования.
+[вход, выход] Уникальный идентификатор языка программирования.
 
 `rgguidVendor`\
-(в, вне) Уникальный идентификатор для поставщика.
+[вход, выход] Уникальный идентификатор поставщика.
 
 `pceltEEs`\
-(в, вне) Массив оценщиков выражений.
+[вход, выход] Массив средств оценки выражений.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

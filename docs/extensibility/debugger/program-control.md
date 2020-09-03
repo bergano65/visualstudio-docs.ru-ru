@@ -1,5 +1,5 @@
 ---
-title: Управление программой Документы Майкрософт
+title: Управление программой | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738227"
 ---
-# <a name="program-control"></a>Контроль программы
-При отладке Visual Studio все следующие процедуры на уровне программы происходят следующим образом:
+# <a name="program-control"></a>Управление программой
+В отладке Visual Studio все следующие пошаговые и продолжающиеся подпрограммы выполняются на уровне программы:
 
-- Установка следующего оператора, т.е. настройка компьютера на следующую инструкцию, которая будет выполнена в определенной среде кадра
+- Задание следующего оператора, то есть перевод компьютера в следующую инструкцию для выполнения в определенной среде кадров
 
-- Выполнение, то есть продолжение выхода из режима шага
+- Выполнение, то есть продолжение выхода из режима пошагового выполнения
 
-- Переход к следующей инструкции
+- Шаг с заходом в следующую инструкцию
 
-- Продолжение текущего режима шага
+- Продолжение текущего режима пошагового выполнения
 
 - Приостановка потоков, содержащихся в программе
 
 - Возобновление потоков, содержащихся в программе
 
 > [!NOTE]
-> Просмотр стека вызовов реализован на уровне потока. Чтобы перечислить информацию о кадре при просмотре стека вызовов для потока, необходимо реализовать все методы интерфейса [IEnumDebugFrameInfo2.](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
+> Просмотр стека вызовов реализуется на уровне потока. Чтобы перечислить сведения о кадрах при просмотре стека вызовов для потока, необходимо реализовать все методы интерфейса [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) .
 
-## <a name="methods-of-program-control"></a>Методы управления программами
- В следующей таблице показаны методы [IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) которые должны быть реализованы для минимально функционального двигателя отладки (DE) и управления выполнением.
+## <a name="methods-of-program-control"></a>Методы управления программой
+ В следующей таблице показаны методы [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , которые должны быть реализованы для минимально функционального модуля отладки (de) и управления выполнением.
 
 |Метод|Описание|
 |------------|-----------------|
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Продолжает работать все потоки, содержащиеся в программе из остановленного состояния. Требуется для контроля выполнения.|
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Продолжает работать все потоки, содержащиеся в программе из остановленного состояния. Требуется для контроля выполнения.|
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Выполняет шаг на данном потоке. Продолжает работать все другие потоки, содержащиеся в программе. Требуется для контроля выполнения.|
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|Возобновляет выполнение всех потоков, содержащихся в программе, из остановленного состояния. Требуется для управления выполнением.|
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|Возобновляет выполнение всех потоков, содержащихся в программе, из остановленного состояния. Требуется для управления выполнением.|
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|Выполняет шаг в заданном потоке. Возобновляет выполнение всех остальных потоков, содержащихся в программе. Требуется для управления выполнением.|
 
- Для многопоточных программ необходимо также реализовать метод [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) и все методы интерфейса [IEnumDebugThreads2.](../../extensibility/debugger/reference/ienumdebugthreads2.md)
+ Для многопоточных программ также необходимо реализовать метод [IDebugProgram2:: EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) и все методы интерфейса [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) .
 
-## <a name="see-also"></a>См. также
-- [Контроль исполнения и государственная оценка](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>См. также раздел
+- [Контроль выполнения и оценка состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)

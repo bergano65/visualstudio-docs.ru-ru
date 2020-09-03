@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9d9c01e07ab51e1ef21e9b886629dd7bb493c2c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651820"
 ---
 # <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
@@ -56,5 +56,5 @@ ms.locfileid: "72651820"
 
      Добавляется новый экземпляр редактора с вкладками.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Настройка редактора](../ide/customizing-the-editor.md) [рукописного кода](../ide/writing-code-in-the-code-and-text-editor.md) [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md)

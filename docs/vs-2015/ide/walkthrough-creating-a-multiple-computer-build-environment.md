@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672314"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
@@ -58,7 +58,7 @@ ms.locfileid: "72672314"
 
 - [Создание параметров реестра](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
 
-- [Задание переменных среды для компьютера построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
+- [Настройка переменных среды на компьютере построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
 - [Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
@@ -72,7 +72,7 @@ ms.locfileid: "72672314"
 
 - Копия .NET Framework 4.5.1, которую можно скачать с веб-сайта [Майкрософт](https://www.microsoft.com/download/details.aspx?id=40779).
 
-## <a name="InstallingSoftware"></a> Установка программного обеспечения на компьютеры
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> Установка программного обеспечения на компьютерах
  Сначала необходимо настроить главный компьютер, а затем компьютер построения.
 
  При установке Visual Studio на главный компьютер создаются файлы и параметры, которые впоследствии необходимо скопировать на компьютер построения. Visual Studio можно установить на компьютер с архитектурой x86 или x64, но при этом главный компьютер и компьютер построения должны иметь одинаковые архитектуры.
@@ -83,7 +83,7 @@ ms.locfileid: "72672314"
 
 2. Установите .NET Framework 4.5 на компьютер построения. Чтобы проверить правильность установки, убедитесь, что значение в разделе реестра HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version начинается с "4.5".
 
-## <a name="CopyingFiles"></a> Копирование файлов с главного компьютера на компьютер построения
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a> Копирование файлов с главного компьютера на компьютер построения
  В этом разделе описывается копирование необходимых файлов, компиляторов, средств построения, ресурсов MSBuild и параметров реестра с главного компьютера на компьютер построения. При разработке этих инструкций подразумевалось, что решение Visual Studio установлено на главном компьютере в каталоге по умолчанию. Если установка выполнена в другом месте, внесите соответствующие изменения.
 
 - На компьютере с архитектурой x86 установка по умолчанию производится в папку C:\Program Files\Microsoft Visual Studio 11.0\
@@ -215,7 +215,7 @@ ms.locfileid: "72672314"
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a> Создание параметров реестра
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a> Создание параметров реестра
  Необходимо создать записи реестра для настройки параметров для MSBuild.
 
 #### <a name="to-create-registry-settings"></a>Создание параметров реестра
@@ -277,7 +277,7 @@ ms.locfileid: "72672314"
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a> Задание переменных среды для компьютера построения
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> Задание переменных среды для компьютера построения
  Чтобы использовать MSBuild на компьютере построения, необходимо задать переменные среды PATH. Вы можете задать переменные с помощью файла vcvarsall.bat или настроить их вручную.
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Использование файла vcvarsall.bat для установки переменных среды
@@ -314,7 +314,7 @@ ms.locfileid: "72672314"
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения
  Для работы MSBuild на компьютере построения необходимо установить дополнительные сборки в глобальный кэш сборок.
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Копирование сборок с главного компьютера и их установка на компьютере построения
@@ -331,26 +331,26 @@ ms.locfileid: "72672314"
 
      Откройте окно командной строки с правами администратора и выполните следующую команду для каждого файла:
 
-     **gacutil -i \<file>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > Для полной установки сборки в глобальный кэш сборок может потребоваться перезагрузка.
 
-## <a name="BuildingProjects"></a> Сборка проектов
+## <a name="building-projects"></a><a name="BuildingProjects"></a> Создание проектов
  Для построения проектов и решений [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] можно использовать средство Team Foundation Build или командную строку. Если вы используете Team Foundation Build, это средство вызывает исполняемый файл MSBuild, соответствующий архитектуре системы.  В командной строке можно использовать 32- и 64-разрядную версию MSBuild. Кроме того, можно выбрать версию архитектуры MSBuild, задав переменную среды PATH или напрямую вызвав исполняемый файл MSBuild, соответствующий архитектуре.
 
  Чтобы использовать средство msbuild.exe в командной строке, выполните следующую команду, где вместо *solution.sln* следует указать имя вашего решения.
 
  **msbuild** *solution.sln*
 
- Дополнительные сведения об использовании средства MSBuild в командной строке см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
+ Дополнительные сведения об использовании MSBuild в командной строке см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Для построения проектов [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] необходимо использовать набор инструментов платформы "v110". Если вы не хотите изменять файлы проекта [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], можно задать набор инструментов платформы с помощью следующего аргумента командной строки:
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> Создание среды построения с возможностью возврата в систему управления версиями
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> Создание среды сборки, чтобы ее можно было вернуть в систему управления версиями
  Вы можете создать среду построения, которая может развертываться на различных компьютерах и не требует установки файлов в глобальный кэш сборок или изменения параметров реестра. Ниже приведен один из способов сделать это. Внесите в эту процедуру изменения в соответствии с характеристиками вашей среды построения.
 
 > [!NOTE]
@@ -423,5 +423,5 @@ ms.locfileid: "72672314"
 
          Для собственной 64-разрядной архитектуры построения задайте ссылку на 64-разрядную версию MSBuild.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Подготовка тестового компьютера к запуску](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [справочника по командной строке](../msbuild/msbuild-command-line-reference.md) для отладки

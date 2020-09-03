@@ -17,24 +17,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9dcd22ca124ee5ea4002277f91071727a3e9e1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985430"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Пошаговое руководство. Вставка данных в книгу на сервере
-  В этом пошаговом руководстве показано, как вставить данные в набор данных, кэшированный в Microsoft Office книгу Excel, не запуская Excel с помощью класса <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>.
+  В этом пошаговом руководстве показано, как вставить данные в набор данных, кэшированный в Microsoft Office книгу Excel, не запуская Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - Определение набора данных, содержащего данные из базы данных AdventureWorksLT.
 
 - Создание экземпляров набора данных в проекте книги Excel и проекте консольного приложения.
 
-- Создание <xref:Microsoft.Office.Tools.Excel.ListObject>, привязанного к набору данных в книге.
+- Создание объекта <xref:Microsoft.Office.Tools.Excel.ListObject> , привязанного к набору данных в книге.
 
 - Добавление набора данных в книгу в кэш данных.
 
@@ -45,8 +45,8 @@ ms.locfileid: "72985430"
 > [!NOTE]
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+## <a name="prerequisites"></a>Предварительные требования
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -63,11 +63,11 @@ ms.locfileid: "72985430"
 
 ### <a name="to-create-the-class-library-project"></a>Создание проекта библиотеки классов
 
-1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите среду [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+2. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
 
-3. В области Шаблоны разверните элемент **визуальный C#**  или **Visual Basic**, а затем выберите пункт **Windows**.
+3. В области Шаблоны разверните узел **Visual C#** или **Visual Basic**, а затем выберите пункт **Windows**.
 
 4. В списке шаблонов проектов выберите **Библиотека классов**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "72985430"
 
 8. Нажмите кнопку **ОК**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавляет проект **AdventureWorksDataset** в **Обозреватель решений** и открывает файл кода **Class1.CS** или **Class1. vb** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **AdventureWorksDataset** в **Обозреватель решений** и открывает файл кода **Class1.CS** или **Class1. vb** .
 
 9. В **Обозреватель решений**щелкните правой кнопкой мыши **Class1.CS** или **Class1. vb**и выберите команду **Удалить**. Этот файл не требуется для этого пошагового руководства.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72985430"
 
 1. В **Обозреватель решений**щелкните проект **AdventureWorksDataset** .
 
-2. Если окно **Источники данных** не отображается, отобразите его в строке меню, выбрав **вид** > другие > **Источники данных** **Windows** .
+2. Если окно **Источники данных** не отображается, отобразите его с помощью команды **Просмотреть**  >  **другие**  >  **Источники данных**Windows в строке меню.
 
 3. Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "72985430"
 
 6. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
-7. На странице **Выбор объектов базы данных** разверните узел **таблицы** и выберите **продукт (SalesLT)** .
+7. На странице **Выбор объектов базы данных** разверните узел **таблицы** и выберите **продукт (SalesLT)**.
 
 8. Нажмите кнопку **Готово**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "72985430"
 
    - Типизированный набор данных с именем `AdventureWorksLTDataSet`. Этот набор данных представляет содержимое таблицы Product в базе данных AdventureWorksLT.
 
-   - Адаптер таблицы с именем `ProductTableAdapter`. Этот TableAdapter можно использовать для чтения и записи данных в `AdventureWorksLTDataSet`. Дополнительные сведения см. в разделе [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Адаптер таблицы с именем `ProductTableAdapter` . Этот TableAdapter можно использовать для чтения и записи данных в `AdventureWorksLTDataSet` . Дополнительные сведения см. в разделе [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Далее в пошаговом руководстве используются оба эти объекта.
 
@@ -121,7 +121,7 @@ ms.locfileid: "72985430"
      Убедитесь, что сборка проекта выполняется без ошибок.
 
 ## <a name="create-an-excel-workbook-project"></a>Создание проекта книги Excel
- Создайте проект книги Excel для интерфейса для данных. Далее в этом пошаговом руководстве вы создадите <xref:Microsoft.Office.Tools.Excel.ListObject>, отображающую данные, и добавите экземпляр набора данных в кэш данных в книге.
+ Создайте проект книги Excel для интерфейса для данных. Далее в этом пошаговом руководстве будет создан объект <xref:Microsoft.Office.Tools.Excel.ListObject> , отображающий данные, и в книге будет добавлен экземпляр набора данных в кэш данных.
 
 ### <a name="to-create-the-excel-workbook-project"></a>Создание проекта книги Excel
 
@@ -154,7 +154,7 @@ ms.locfileid: "72985430"
 
 2. В меню **Данные** выберите команду **Добавить новый источник данных**.
 
-     Открывается **мастер настройки источника данных**.
+     Откроется **Мастер настройки источника данных** .
 
 3. Щелкните **объект**, а затем нажмите кнопку **Далее**.
 
@@ -167,7 +167,7 @@ ms.locfileid: "72985430"
      Откроется окно **Источники данных** , и в список источников данных будет добавлен **AdventureWorksLTDataSet** .
 
 ## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Создание объекта ListObject, привязанного к экземпляру набора данных
- Чтобы отобразить набор данных в книге, создайте <xref:Microsoft.Office.Tools.Excel.ListObject>, привязанный к экземпляру набора данных. Дополнительные сведения о привязке элементов управления к данным см. [в разделе Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Чтобы отобразить набор данных в книге, создайте объект <xref:Microsoft.Office.Tools.Excel.ListObject> , привязанный к экземпляру набора данных. Дополнительные сведения о привязке элементов управления к данным см. [в разделе Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Создание объекта ListObject, привязанного к экземпляру набора данных
 
@@ -179,7 +179,7 @@ ms.locfileid: "72985430"
 
 3. Перетащите таблицу **Product** в ячейку a1.
 
-     На листе создается элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с именем `productListObject`, начиная с ячейки a1. В то же время в проект добавляется объект набора данных с именем `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `productBindingSource` . Объект <xref:Microsoft.Office.Tools.Excel.ListObject> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
+     <xref:Microsoft.Office.Tools.Excel.ListObject>На листе создается элемент управления с именем `productListObject` , начиная с ячейки a1. Одновременно в проект добавляется объект набора данных `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `productBindingSource` . Объект <xref:Microsoft.Office.Tools.Excel.ListObject> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>Добавление набора данных в кэш данных
  Чтобы включить код вне проекта книги Excel для доступа к набору данных в книге, необходимо добавить набор данных в кэш данных. Дополнительные сведения о кэше данных см. в разделе [кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md) и [кэширование данных](../vsto/caching-data.md).
@@ -190,7 +190,7 @@ ms.locfileid: "72985430"
 
 2. В окне **Свойства** задайте для свойства **модификаторы** значение **Public**.
 
-3. Присвойте свойству CacheInDocument **значение true**.
+3. Присвойте **CacheInDocument** свойству CacheInDocument **значение true**.
 
 ## <a name="checkpoint"></a>Контрольная точка
  Создайте и запустите проект книги Excel, чтобы убедиться, что он компилируется и выполняется без ошибок.
@@ -199,7 +199,7 @@ ms.locfileid: "72985430"
 
 1. В **Обозреватель решений**щелкните правой кнопкой мыши проект **адвентуреворксрепорт** , выберите пункт **Отладка**и щелкните **запустить новый экземпляр**.
 
-     Проект будет построен, а книга откроется в Excel. <xref:Microsoft.Office.Tools.Excel.ListObject> в **Лист1** пуст, так как объект `adventureWorksLTDataSet` в кэше данных еще не содержит данных. В следующем разделе вы будете использовать консольное приложение для заполнения объекта `adventureWorksLTDataSet` данными.
+     Проект будет построен, а книга откроется в Excel. Элемент <xref:Microsoft.Office.Tools.Excel.ListObject> в **Лист1** пуст, так как `adventureWorksLTDataSet` объект в кэше данных еще не содержит данных. В следующем разделе будет использоваться консольное приложение для заполнения `adventureWorksLTDataSet` объекта данными.
 
 2. Закройте Excel. Не сохраняйте изменения.
 
@@ -210,18 +210,18 @@ ms.locfileid: "72985430"
 
 1. В **Обозреватель решений**щелкните правой кнопкой мыши решение **AdventureWorksDataset** , наведите указатель на пункт **добавить**и выберите пункт **Новый проект**.
 
-2. В области **типы проектов** разверните узел **Visual C#**  или **Visual Basic**, а затем выберите пункт **Windows**.
+2. В области **типы проектов** разверните узел **Visual C#** или **Visual Basic**, а затем выберите пункт **Windows**.
 
-3. В области **шаблоны** выберите **консольное приложение**.
+3. Выберите панель **Консольное приложение** в области **Шаблоны**.
 
 4. В поле **имя** введите объект **записи**. Не изменяйте расположение.
 
 5. Нажмите кнопку **ОК**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавляет проект **записи** в **Обозреватель решений** и открывает файл кода **Program.CS** или **Module1. vb** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет проект **записи** в **Обозреватель решений** и открывает файл кода **Program.CS** или **Module1. vb** .
 
 ## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>Добавление данных в кэшированный набор данных с помощью консольного приложения
- Используйте класс <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> в консольном приложении для заполнения кэшированного набора данных в книге данными.
+ Используйте <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класс в консольном приложении для заполнения кэшированного набора данных в книге данными.
 
 ### <a name="to-add-data-to-the-cached-dataset"></a>Добавление данных в кэшированный набор данных
 
@@ -244,11 +244,11 @@ ms.locfileid: "72985430"
 
 8. Добавьте следующий код в метод `Main` . Этот код объявляет следующие объекты:
 
-   - Экземпляры типов `AdventureWorksLTDataSet` и `ProductTableAdapter`, определенные в проекте **AdventureWorksDataset** .
+   - Экземпляры `AdventureWorksLTDataSet` `ProductTableAdapter` типов и, определенные в проекте **AdventureWorksDataset** .
 
    - Путь к книге Адвентуреворксрепорт в папке Build проекта **адвентуреворксрепорт** .
 
-   - Объект <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>, используемый для доступа к кэшу данных в книге.
+   - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>Объект, используемый для доступа к кэшу данных в книге.
 
      > [!NOTE]
      > В следующем коде предполагается, что вы используете книгу с расширением *xlsx* . Если книга в проекте имеет другое расширение файла, при необходимости измените путь.
@@ -256,23 +256,23 @@ ms.locfileid: "72985430"
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
 
-9. Добавьте следующий код в метод `Main` после кода, добавленного на предыдущем шаге. Этот код выполняет следующие задачи:
+9. Добавьте следующий код в `Main` метод после кода, добавленного на предыдущем шаге. Этот код выполняет следующие задачи:
 
    - Он заполняет объект типизированного набора данных с помощью адаптера таблицы.
 
-   - Для доступа к кэшированному набору данных в книге используется свойство <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> класса <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>.
+   - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Для доступа к кэшированному набору данных в книге используется свойство класса.
 
-   - Он использует метод <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> для заполнения кэшированного набора данных данными из локального типизированного набора данных.
+   - Он использует <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> метод для заполнения кэшированного набора данных данными из локального типизированного набора данных.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
      [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
 
 10. В **Обозреватель решений**щелкните правой кнопкой мыши проект **записи** , наведите указатель на пункт **Отладка**и выберите команду **запустить новый экземпляр**.
 
-     Проект будет построен, а консольное приложение отобразит несколько сообщений о состоянии, когда заполнится локальный набор данных и когда приложение сохранит данные в кэшированном наборе данных в книге. Нажмите клавишу **Ввод** , чтобы закрыть приложение.
+     Проект будет построен, а консольное приложение отобразит несколько сообщений о состоянии, когда заполнится локальный набор данных и когда приложение сохранит данные в кэшированном наборе данных в книге. Нажмите клавишу **Enter** , чтобы закрыть это приложение.
 
 ## <a name="test-the-workbook"></a>Тестирование книги
- При открытии книги <xref:Microsoft.Office.Tools.Excel.ListObject> теперь отображает данные, которые были добавлены в кэшированный набор данных с помощью консольного приложения.
+ При открытии книги в <xref:Microsoft.Office.Tools.Excel.ListObject> теперь отображаются данные, добавленные в кэшированный набор данных с помощью консольного приложения.
 
 ### <a name="to-test-the-workbook"></a>Тестирование книги
 
@@ -286,12 +286,12 @@ ms.locfileid: "72985430"
 
 3. Убедитесь, что <xref:Microsoft.Office.Tools.Excel.ListObject> заполнены данными после открытия книги.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о работе с кэшированными данными см. в следующих разделах:
 
 - Изменение данных в кэшированном наборе данных без запуска Excel. Дополнительные сведения см. [в разделе Пошаговое руководство. изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. изменение кэшированных данных в книге на сервере](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

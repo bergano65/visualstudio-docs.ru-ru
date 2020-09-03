@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546345"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201. Не порождайте исключения зарезервированных типов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -66,19 +66,19 @@ ms.locfileid: "85546345"
 
 |Описание параметра|Исключение|
 |---------------------------|---------------|
-|`null`IsReference|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null` IsReference|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |За пределами допустимого диапазона значений (например, индекса для коллекции или списка);|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |Недопустимое `enum` значение|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
 |Содержит формат, который не соответствует спецификациям параметров метода (например, строке форматирования для `ToString(String)` ).|<xref:System.FormatException?displayProperty=fullName>|
 |В противном случае недопустимо|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Если операция недопустима для текущего состояния выдачи объекта<xref:System.InvalidOperationException?displayProperty=fullName>
+ Если операция недопустима для текущего состояния выдачи объекта <xref:System.InvalidOperationException?displayProperty=fullName>
 
- При выполнении операции с объектом, для которого было ликвидировано исключение<xref:System.ObjectDisposedException?displayProperty=fullName>
+ При выполнении операции с объектом, для которого было ликвидировано исключение <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Если операция не поддерживается (например, в переопределенном **потоке. Write** в потоке, открытом для чтения), выдается исключение<xref:System.NotSupportedException?displayProperty=fullName>
+ Если операция не поддерживается (например, в переопределенном **потоке. Write** в потоке, открытом для чтения), выдается исключение <xref:System.NotSupportedException?displayProperty=fullName>
 
- Если преобразование приведет к переполнению (например, в явной перегрузке оператора приведения), выдается исключение<xref:System.OverflowException?displayProperty=fullName>
+ Если преобразование приведет к переполнению (например, в явной перегрузке оператора приведения), выдается исключение <xref:System.OverflowException?displayProperty=fullName>
 
  Во всех остальных случаях рекомендуется создать собственный тип, производный от, <xref:System.Exception> и создать его.
 

@@ -20,44 +20,44 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85f3584073523e748168faf569aa918ba912fbf8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652835"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Сохранение данных с помощью транзакции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Данные сохраняются в транзакции с помощью пространства имен <xref:System.Transactions>. Используйте объект <xref:System.Transactions.TransactionScope> для участия в транзакции, которая автоматически управляется.
+Данные сохраняются в транзакции с помощью <xref:System.Transactions> пространства имен. Используйте <xref:System.Transactions.TransactionScope> объект для участия в транзакции, которая автоматически управляется.
 
  Проекты не создаются со ссылкой на сборку System. Transactions, поэтому необходимо вручную добавить ссылку на проекты, использующие транзакции.
 
 > [!NOTE]
-> Пространство имен <xref:System.Transactions> поддерживается в Windows 2000 или более поздней версии.
+> <xref:System.Transactions>Пространство имен поддерживается в Windows 2000 или более поздней версии.
 
- Самым простым способом реализации транзакции является создание экземпляра объекта <xref:System.Transactions.TransactionScope> в инструкции `using`. (Дополнительные сведения см. в разделе [оператор using](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)и [оператор using](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) Код, который выполняется в инструкции `using`, участвует в транзакции.
+ Самый простой способ реализовать транзакцию — создать экземпляр <xref:System.Transactions.TransactionScope> объекта в `using` операторе. (Дополнительные сведения см. в разделе [оператор using](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)и [оператор using](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) Код, выполняемый внутри `using` инструкции, участвует в транзакции.
 
- Чтобы зафиксировать транзакцию, вызовите метод <xref:System.Transactions.TransactionScope.Complete%2A> в качестве последней инструкции в блоке using.
+ Чтобы зафиксировать транзакцию, вызовите <xref:System.Transactions.TransactionScope.Complete%2A> метод в качестве последней инструкции в блоке using.
 
- Чтобы выполнить откат транзакции, вызовите исключение перед вызовом метода <xref:System.Transactions.TransactionScope.Complete%2A>.
+ Чтобы выполнить откат транзакции, вызовите исключение перед вызовом <xref:System.Transactions.TransactionScope.Complete%2A> метода.
 
  Дополнительные сведения см. [в разделе Сохранение данных в транзакции](../data-tools/save-data-in-a-transaction.md).
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>Добавление ссылки на библиотеку DLL System. Transactions
 
-1. В меню **проект** выберите команду **Добавить ссылку**.
+1. В меню **Проект** выберите пункт **Добавить ссылку**.
 
 2. На вкладке **.NET** (вкладка "**SQL Server** " для SQL Server проектов) выберите **System. Transactions**и нажмите кнопку **ОК**.
 
-     В проект добавляется ссылка на библиотеку System. Transactions. dll.
+     Ссылка на System.Transactions.dll добавляется в проект.
 
 ### <a name="to-save-data-in-a-transaction"></a>Сохранение данных в транзакции
 
-- Добавьте код для сохранения данных в инструкции using, содержащей транзакцию. В следующем коде показано, как создать объект <xref:System.Transactions.TransactionScope> и создать его экземпляр в операторе using:
+- Добавьте код для сохранения данных в инструкции using, содержащей транзакцию. В следующем коде показано, как создать объект и создать его экземпляр <xref:System.Transactions.TransactionScope> в операторе using:
 
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

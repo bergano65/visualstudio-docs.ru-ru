@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985468"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Пошаговое руководство. Проектирование области формы Outlook
@@ -24,7 +24,7 @@ ms.locfileid: "72985468"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - Создание нового проекта надстройки Outlook VSTO
 
@@ -39,8 +39,8 @@ ms.locfileid: "72985468"
 > [!NOTE]
 > Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+## <a name="prerequisites"></a>Предварительные требования
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "72985468"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Порядок создания нового проекта надстройки Outlook VSTO
 
-1. В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]создайте проект надстройки VSTO для Outlook с именем **мапитаддин**.
+1. В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Создайте проект надстройки VSTO для Outlook с именем **мапитаддин**.
 
 2. В диалоговом окне **Создание проекта** выберите **Создать каталог для решения**.
 
@@ -68,7 +68,7 @@ ms.locfileid: "72985468"
 
 1. В **Обозреватель решений**выберите проект **мапитаддин** .
 
-2. В меню **Проект** выберите пункт **Добавить новый элемент**.
+2. В меню **Проект** выберите **Добавить новый элемент**.
 
 3. В диалоговом окне **Добавление нового элемента** выберите **область формы Outlook**, присвойте файлу имя **MAPI**и нажмите кнопку **Добавить**.
 
@@ -103,7 +103,7 @@ ms.locfileid: "72985468"
 
      Это гарантирует, что область формы будет достаточно большой, чтобы отображать карту.
 
-4. В меню **Вид** выберите пункт **Панель элементов**.
+4. В меню **Вид** выберите пункт **Область элементов**.
 
 5. На вкладке **Общие элементы управления** **панели элементов**добавьте в область формы **браузер** .
 
@@ -122,7 +122,7 @@ ms.locfileid: "72985468"
 
     Предоставляется класс фабрики областей формы с именем `MapItFactory`.
 
-3. Добавьте следующий код в обработчик событий `MapItFactory_FormRegionInitializing`. Этот обработчик событий будет вызываться, когда пользователь открывает элемент контактов. Следующий код определяет, содержит ли элемент контактов адрес. Если элемент Contact не содержит адрес, этот код задает для свойства <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> класса <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> **значение true** , а область формы не отображается. В противном случае надстройка VSTO выдает событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> и отображает область формы.
+3. Добавьте следующий код в обработчик событий `MapItFactory_FormRegionInitializing`. Этот обработчик событий будет вызываться, когда пользователь открывает элемент контактов. Следующий код определяет, содержит ли элемент контактов адрес. Если элемент Contact не содержит адрес, этот код устанавливает <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> для свойства класса **значение true** , а область формы не отображается. В противном случае надстройка VSTO выдает событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> и отображает область формы.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
@@ -143,7 +143,7 @@ ms.locfileid: "72985468"
 
 ### <a name="to-test-the-map-it-form-region"></a>Порядок тестирования области формы Map It
 
-1. Нажмите клавишу **F5**, чтобы запустить проект.
+1. Нажмите клавишу **F5** , чтобы запустить проект.
 
      Открывается Outlook.
 
@@ -153,7 +153,7 @@ ms.locfileid: "72985468"
 
     |Тип адреса|Адрес|
     |------------------|-------------|
-    |**Разделение**|**4567. Главный, Нью-Йорк**|
+    |**Рабочий телефон**|**4567. Главный, Нью-Йорк**|
     |**Корневая папка**|**1234 Северная Санкт-Йорк, Москва**|
     |**Другое**|**3456. Главный Сиэтл, штат Вашингтон**|
 
@@ -167,12 +167,12 @@ ms.locfileid: "72985468"
 
      Появляется область формы Map It, где отображается веб-сайт локального поиска. **Деловые**, **домашние**и **другие** адреса отображаются на вспомогательной панели. Выберите в тестовой области адрес, который необходимо сопоставить.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о настройке пользовательского интерфейса приложения Outlook см. в следующих разделах.
 
 - Дополнительные сведения о настройке ленты элемента Outlook см. в разделе [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
 - [Рекомендации по созданию областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

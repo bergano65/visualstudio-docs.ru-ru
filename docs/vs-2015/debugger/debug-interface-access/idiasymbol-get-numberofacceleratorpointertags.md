@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Документация Майкрософт
+title: 'IDiaSymbol:: get_numberOfAcceleratorPointerTags | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b25cd941b8f06909ca1bf777d0e3251c78732706
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183187"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.  
+Возвращает число тегов указателя ускорителя в функции-заглушке C++ AMP.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,13 +32,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Параметры  
  `count`  
- [out] Указатель на `DWORD` , содержащий количество сочетаний клавиш тегов указатель в C++ функции AMP заглушки.  
+ заполняет Указатель на объект `DWORD` , содержащий число тегов-указателей ускорителя в C++ amp функции-заглушке.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Этот метод вызывается на `IDiaSymbol` интерфейс, который соответствует функции заглушки accelerator C++ AMP.  
+## <a name="remarks"></a>Remarks  
+ Этот метод вызывается для `IDiaSymbol` интерфейса, который соответствует функции-заглушке C++ amp ускорителя.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

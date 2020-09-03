@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985439"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Пошаговое руководство. импорт области формы, разработанной в Outlook
@@ -25,7 +25,7 @@ ms.locfileid: "72985439"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- В данном пошаговом руководстве рассмотрены следующие задачи:
+ В этом пошаговом руководстве описаны следующие задачи:
 
 - создание области формы с помощью конструктора областей формы Outlook;
 
@@ -35,8 +35,8 @@ ms.locfileid: "72985439"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
+## <a name="prerequisites"></a>Предварительные требования
+ Для выполнения этого пошагового руководства требуются следующие компоненты:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -108,7 +108,7 @@ ms.locfileid: "72985439"
 
      Назовите область формы **TaskFormRegion** и сохраните в каталог локального компьютера.
 
-     Outlook сохраняет область формы в виде файла хранилища форм Outlook ( *. OFS*). Область формы сохраняется с именем *TaskFormRegion. OFS*.
+     Outlook сохраняет область формы в виде файла хранилища форм Outlook (*. OFS*). Область формы сохраняется с именем *TaskFormRegion. OFS*.
 
 27. Закройте Outlook.
 
@@ -136,7 +136,7 @@ ms.locfileid: "72985439"
 
      Запустится мастер **Неваутлук области формы** .
 
-3. На странице **Выберите способ создания области формы** нажмите **Импортировать файл хранилища форм Outlook (.ofs)** , а затем кнопку **Обзор**.
+3. На странице **Выберите способ создания области формы** нажмите **Импортировать файл хранилища форм Outlook (.ofs)**, а затем кнопку **Обзор**.
 
 4. В диалоговом окне **Расположение существующих файлов области формы Outlook** найдите размещение файла *TaskFormRegion.ofs*, выберите файл **TaskFormRegion.ofs**, нажмите кнопку **Открыть**, а затем кнопку **Далее**.
 
@@ -161,12 +161,12 @@ ms.locfileid: "72985439"
 
     *TaskFormRegion.CS* или *TaskFormRegion. vb* откроется в редакторе кода.
 
-2. Добавьте следующий код в класс `TaskFormRegion` . Этот код заполняет поле со списком в области формы строкой темы каждой задачи из папки задач Outlook.
+2. Добавьте в класс `TaskFormRegion` приведенный далее код. Этот код заполняет поле со списком в области формы строкой темы каждой задачи из папки задач Outlook.
 
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
 
-3. Добавьте следующий код в класс `TaskFormRegion` . Этот код выполняет следующие задачи:
+3. Добавьте в класс `TaskFormRegion` приведенный далее код. Этот код выполняет следующие задачи:
 
    - находит объект `Microsoft.Office.Interop.Outlook.TaskItem` в папке "Задачи" путем вызова вспомогательного метода `FindTaskBySubjectName` и передачи темы необходимой задачи; вспомогательный метод `FindTaskBySubjectName` будет добавлен позже;
 
@@ -177,16 +177,16 @@ ms.locfileid: "72985439"
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
 
-4. Добавьте следующий код в класс `TaskFormRegion` . В этом коде представлен вспомогательный метод `FindTaskBySubjectName` , описанный в предыдущем шаге.
+4. Добавьте в класс `TaskFormRegion` приведенный далее код. В этом коде представлен вспомогательный метод `FindTaskBySubjectName` , описанный в предыдущем шаге.
 
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
 
-5. Добавьте следующий код в класс `TaskFormRegion` . Этот код выполняет следующие задачи:
+5. Добавьте в класс `TaskFormRegion` приведенный далее код. Этот код выполняет следующие задачи:
 
    - обновляет список в области формы, используя текущее состояние завершения каждой зависимой задачи;
 
-   - выполняет синтаксический анализ скрытого текстового поля, чтобы получить тему каждой зависимой задачи; Затем он находит каждую `Microsoft.Office.Interop.Outlook.TaskItem` в папке *tasks* , вызывая вспомогательный метод `FindTaskBySubjectName` и передавая тему каждой задачи.
+   - выполняет синтаксический анализ скрытого текстового поля, чтобы получить тему каждой зависимой задачи; Затем он находит каждый `Microsoft.Office.Interop.Outlook.TaskItem` в папке *tasks* , вызывая `FindTaskBySubjectName` вспомогательный метод и передавая тему каждой задачи.
 
    - добавляет значения `Microsoft.Office.Interop.Outlook.TaskItem.Subject` и `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` в список зависимых задач.
 
@@ -207,7 +207,7 @@ ms.locfileid: "72985439"
 
 ### <a name="to-test-the-form-region"></a>Тестирование области формы
 
-1. Нажмите клавишу **F5**, чтобы запустить проект.
+1. Нажмите клавишу **F5** , чтобы запустить проект.
 
      Запускается Outlook.
 
@@ -215,7 +215,7 @@ ms.locfileid: "72985439"
 
 3. В поле **Тема** формы задач введите **Зависимая задача** .
 
-4. На вкладке ленты **задача** в группе **действия** щелкните **Сохранить & Закрыть**.
+4. На вкладке ленты **задача** в группе **действия** щелкните **сохранить & закрыть**.
 
 5. В Outlook на вкладке **Главная** нажмите кнопку **Новые элементы**, щелкните **Другие элементы**и нажмите кнопку **Выбрать форму**.
 
@@ -233,15 +233,15 @@ ms.locfileid: "72985439"
 
 10. Повторно откройте элемент "Зависимая задача" в Outlook.
 
-11. В форме "Зависимая задача" измените значение поля **% завершено** на **50 %** .
+11. В форме "Зависимая задача" измените значение поля **% завершено** на **50 %**.
 
-12. На вкладке **задача** ленты Зависимая задача в группе **действия** щелкните **Сохранить & Закрыть**.
+12. На вкладке **задача** ленты Зависимая задача в группе **действия** щелкните **сохранить & закрыть**.
 
 13. Повторно откройте элемент **Основная задача** в Outlook.
 
      В списке**Эта задача зависит от следующих задач** появится пункт **50 % завершено — Зависимая задача** .
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
  Дополнительные сведения о настройке пользовательского интерфейса приложения Outlook см. в следующих разделах.
 
 - Дополнительные сведения о проектировании внешнего вида области формы путем перетаскивания управляемых элементов управления на визуальный конструктор см. в разделе [Пошаговое руководство. Проектирование области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
@@ -250,7 +250,7 @@ ms.locfileid: "72985439"
 
 - Дополнительные сведения о добавлении настраиваемой области задач в Outlook см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)
 - [Создание областей формы Outlook](../vsto/creating-outlook-form-regions.md)
 - [Рекомендации по созданию областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

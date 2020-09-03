@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651940"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Практическое руководство. Поиск разделов в указателе
@@ -43,5 +43,5 @@ ms.locfileid: "72651940"
 
      Если указанное ключевое слово связано только с одним разделом, отображается этот раздел. В противном случае отображается список всех разделов, связанных с этим ключевым словом.
 
-## <a name="see-also"></a>См. также
- [Советы по поиску в указателе](../ide/index-search-tips.md)
+## <a name="see-also"></a>См. также:
+ [Советы по поиску в индексе](../ide/index-search-tips.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597117"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Диалоговое окно "Обзор и выбор типа .NET"
@@ -63,16 +63,16 @@ ms.locfileid: "75597117"
 
 Список типов в поле **имя типа** сокращается по мере ввода большего числа символов для поиска совпадения. В отфильтрованном списке отображаются только типы, имя FullyQualified которых начинается со введенной строки или типов, краткое имя которых начинается со введенной строки.
 
-Например:
+Пример:
 
-1. **Операция** ввода соответствует <xref:System.OperationCanceledException>, но не <xref:System.InvalidOperationException>. Чтобы введенное слово совпало с <xref:System.InvalidOperationException>, начните строку с System.I или Invalid.
+1. **Операция** ввода совпадений <xref:System.OperationCanceledException> не выполняется <xref:System.InvalidOperationException> . Чтобы введенное слово совпало с <xref:System.InvalidOperationException>, начните строку с System.I или Invalid.
 
-2. Ввод **универсальных** совпадений <xref:System.GenericUriParser> но не типов в пространстве имен <xref:System.Collections.Generic>. Чтобы найти типы в пространстве имен <xref:System.Collections.Generic>, введите полное имя пространства имен.
+2. Ввод **универсальных** совпадений <xref:System.GenericUriParser> , но не типов в <xref:System.Collections.Generic> пространстве имен. Чтобы найти типы в <xref:System.Collections.Generic> пространстве имен, введите полное имя пространства имен.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Выбор контракта службы с помощью диалогового окна браузера типов
 
 При выборе типа контракта службы браузер типов отображает только типы, имеющие атрибут <xref:System.ServiceModel.ServiceContractAttribute>.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Использование конструкторов действий](control-flow-activity-designers.md)

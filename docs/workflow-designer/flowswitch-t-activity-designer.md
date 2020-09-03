@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711577"
 ---
 # <a name="flowswitcht-activity-designer"></a>Конструктор действия FlowSwitch\<T>
@@ -46,7 +46,7 @@ ms.locfileid: "88711577"
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Неверно|Задает уникальное сопоставление возможных результатов, полученных при вычислении <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, набору объектов <xref:System.Activities.Statements.FlowNode>.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Верно|Задает сопоставление, когда вычисление <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> не совпадает ни с одним значением, содержащимся в объекте <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
 - [Блок-схема](../workflow-designer/flowchart-activity-designer.md)

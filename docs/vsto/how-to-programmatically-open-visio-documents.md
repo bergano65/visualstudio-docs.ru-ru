@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519994"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Руководство. Программное открытие документов Visio
@@ -48,7 +48,7 @@ ms.locfileid: "85519994"
 
 - Документ Visio с именем `myDrawing.vsd` должен находиться в каталоге с именем `Test` в папке " *Мои документы* " (для Windows XP и более ранних версий) или в папке " *документы* " (для Windows Vista).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Решения Visio](../vsto/visio-solutions.md)
 - [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)
 - [Как программно создавать новые документы Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)

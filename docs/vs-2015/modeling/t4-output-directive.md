@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652317"
 ---
 # <a name="t4-output-directive"></a>Директива Output T4
@@ -21,7 +21,7 @@ ms.locfileid: "72652317"
 
 В текстовых шаблонах [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] директива `output` используется для определения расширения файла и кодировки преобразованного файла.
 
- Например, если проект [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] содержит файл шаблона с именем **MyTemplate.TT** , содержащий следующую директиву:
+ Например, если [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект содержит файл шаблона с именем **MyTemplate.TT** , содержащий следующую директиву:
 
  `<#@output extension=".cs"#>`
 
@@ -53,7 +53,7 @@ ms.locfileid: "72652317"
  Допустимые значения: любое допустимое расширение имени файла.
 
 ## <a name="encoding-attribute"></a>атрибут Encoding
- Задает кодировку для использования при создании выходного файла. Пример:
+ Задает кодировку для использования при создании выходного файла. Например:
 
  `<#@ output encoding="utf-8"#>`
 
@@ -71,6 +71,6 @@ ms.locfileid: "72652317"
 
  `utf-32`
 
- `0` (системное значение по умолчанию)
+ `0` (Система по умолчанию)
 
  Как правило, можно использовать строку WebName или число CodePage любых кодировок, возвращаемых <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.
