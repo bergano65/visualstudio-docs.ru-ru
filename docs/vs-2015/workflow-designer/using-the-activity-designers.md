@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1595be559f28868d0d749f6b163a63d98a9a6e45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670141"
 ---
 # <a name="using-the-activity-designers"></a>Использование конструкторов действий
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] включает определенное количество системных действий, которые могут быть использованы для построения пользовательских рабочих процессов и действий. В этом разделе описываются категории системных действий и их конструкторы, которые доступны как системные функции. Темы индивидуальных действий и их соответствующих конструкторов внутри каждой из этих категорий описывают, что эти действия могут предпринять и предоставить руководство, как их следует использовать.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Поток управления](../workflow-designer/control-flow-activity-designers.md) Конструкторы действий, используемые для управления потоком в рабочем процессе
 
  [Блок-схема](../workflow-designer/flowchart-activity-designers.md) Конструкторы действий, используемые для создания действий блок-схемы.
@@ -41,7 +41,7 @@ ms.locfileid: "72670141"
 
  [Обработка ошибок](../workflow-designer/error-handling-activity-designers.md) Конструкторы действий, используемые для управления действиями по обработке ошибок.
 
- [Миграция](../workflow-designer/migration-activity-designers.md) Конструкторы действий, используемые для взаимодействия между [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] и [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] рабочих процессов.
+ [Миграция](../workflow-designer/migration-activity-designers.md) Конструкторы действий, используемые для взаимодействия между [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] и [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] рабочими процессами.
 
 ## <a name="reference"></a>Справочник
  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>

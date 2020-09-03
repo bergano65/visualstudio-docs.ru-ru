@@ -1,5 +1,5 @@
 ---
-title: Развертывание типов проектов (ru) Документы Майкрософт
+title: Развертывание типов проектов | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 835e85ade4d309d0b5692aa9b857476cd6b5927a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708792"
 ---
 # <a name="deploy-project-types"></a>Развертывание типов проектов
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]устанавливает новый агрегатор проектного типа *(ProjectAggregator2.dll*), а также пакет установки Windows для перераспределения *(ProjectAggregator2.msi*). Необходимо использовать новый агрегатор для типов управляемых кодов. ProjectAggregator2 работает вокруг ограничений в агрегаторе [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекта, который не позволяет управляемым типам кода работать правильно. Ниже описано, как изменить ваш VSPackage, чтобы использовать новый агрегатор.
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] устанавливает новый агрегатор типа проекта (*ProjectAggregator2.dll*), а также пакет установщик Windows для распространения (*ProjectAggregator2.msi*). Для типов проектов с управляемым кодом необходимо использовать новый агрегатор. ProjectAggregator2 работает с ограничениями в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] агрегаторе проекта, что предотвращает неправильную работу типов проектов управляемого кода. Следующие шаги описывают, как изменить пакет VSPackage для использования новой агрегаторы.
 
-1. Удалите проект NativeHierarchyWrapper из решения.
+1. Удалите проект Нативехиерарчивраппер из решения.
 
-2. Удалите любые бинарные файлы NativeHierarchyWrapper из вашей установки.
+2. Удалите из программы установки все двоичные файлы Нативехиерарчивраппер.
 
-3. Добавьте *ProjectAggregator2.msi* в настройку.
+3. Добавьте *ProjectAggregator2.msi* в программу установки.

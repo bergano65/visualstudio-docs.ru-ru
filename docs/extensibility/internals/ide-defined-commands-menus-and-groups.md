@@ -1,5 +1,5 @@
 ---
-title: IDE-Определенные команды, меню и группы Документы Майкрософт
+title: Команды, меню и группы, определенные интегрированной средой разработки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,42 +13,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707719"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Команды, меню и группы, определенные в интегрированной среде разработки
-Многие меню, команды и группы команд уже [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] определены для использования IDE. Эти команды также доступны для использования [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]при расширении.
+Многие меню, команды и группы команд уже определены для использования [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной средой разработки. Эти команды также доступны для использования при расширении [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Поиск экологически хотековых команд
- Команды среды определяются в наборе из четырех файлов .vsct:
+## <a name="finding-environment-defined-commands"></a>Поиск команд, определяемых средой
+ Команды среды определены в наборе из четырех vsct-файлов:
 
-- SharedCmdDef.vsct
+- Шаредкмддеф. vsct
 
-- SharedCmdPlace.vsct
+- Шаредкмдплаце. vsct
 
-- ShellCmdDef.vsct
+- Шеллкмддеф. vsct
 
-- ShellCmdPlace.vsct
+- Шеллкмдплаце. vsct
 
-  Эти файлы расположены в\\ * \<Visual Studio SDK путь установки>*«VisualStudioIntegration»Common.Inc . Эти файлы предоставляют определения и GUID меню и группы, которые можно использовать в конфигурации командной таблицы (.vsct) файлв вашего VSPackage в качестве контейнеров для ваших собственных меню, групп и команд.
+  Эти файлы находятся в *\<Visual Studio SDK installation path>* \висуалстудиоинтегратион\коммон\инк \\ . Эти файлы содержат определения и идентификаторы GUID меню и групп, которые можно использовать в файле конфигурации командной таблицы (. vsct) пакета VSPackage в качестве контейнеров для собственных меню, групп и команд.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 - [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
- Дает значения GUID и ID меню в панели меню Visual Studio и групп, которые они содержат.
+ Предоставляет значения GUID и идентификатора меню в строке меню Visual Studio и содержащихся в них группах.
 
 - [Идентификаторы GUID и идентификаторы панелей инструментов Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 
- Дает значения GUID и ID инструментов в Visual Studio IDE, а также групп, которые они содержат.
+ Предоставляет идентификатор GUID и значения идентификатора панелей инструментов в интегрированной среде разработки Visual Studio и содержащихся в них групп.
 
 - [Идентификаторы GUID и идентификаторы команд Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 
- Дает значения GUID и ID команд, определенные Visual Studio IDE.
+ Предоставляет идентификаторы GUID и ИДЕНТИФИКАТОРы команд, определенных интегрированной средой разработки Visual Studio.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Файлы таблицы команд Visual Studio (VSCT-файлы)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Команды, определенные в интегрированной среде разработки, для расширения систем проектов](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 - [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

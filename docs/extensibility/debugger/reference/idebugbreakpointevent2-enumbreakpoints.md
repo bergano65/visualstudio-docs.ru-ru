@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints Документы Майкрософт
+title: 'IDebugBreakpointEvent2:: Енумбреакпоинтс | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735028"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Создает регистратор для всех точек разрыва, которые выражаются в текущем местоположении кода.
+Создает перечислитель для всех точек останова, которые срабатывают в текущем расположении кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugBoundPointspoints2,](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) который перечисляет все точки разрыва, связанные с текущим местоположением кода.
+заполняет Возвращает объект [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) , перечисляющий все точки останова, связанные с текущим расположением кода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Не все точки разрыва в определенном месте могут гореть в определенное время (например, точка разрыва с условием не будет гореть до тех пор, пока это условие не будет выполнено).
+## <a name="remarks"></a>Remarks
+ Не все точки останова в определенном месте могут срабатывать в определенное время (например, точка останова с условием не будет срабатывать до выполнения условия).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Контрольный список: Создание унаследованных языковых служб (ru) Документы Майкрософт'
+title: 'Контрольный список: создание языковой службы прежних версий | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,117 +12,117 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709787"
 ---
-# <a name="checklist-create-a-legacy-language-service"></a>Контрольный список: Создание устаревшей языковой службы
-Следующий контрольный список обобщает основные шаги, которые [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] необходимо предпринять для создания языковой службы для основного редактора. Чтобы интегрировать языковую [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]службу в систему, необходимо создать оценщика выражения отладки. Для получения дополнительной информации [см. Напишите оценщика выражения CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширяемости отладки Visual Studio.](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+# <a name="checklist-create-a-legacy-language-service"></a>Контрольный список: создание языковой службы прежних версий
+В следующем контрольном списке перечислены основные шаги, которые необходимо выполнить, чтобы создать языковую службу для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базового редактора. Чтобы интегрировать языковую службу в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , необходимо создать средство оценки выражений отладки. Дополнительные сведения см. в разделе [написание вычислительных выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширяемости отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
 
-## <a name="steps-to-create-a-language-service"></a>Шаги по созданию языковой службы
+## <a name="steps-to-create-a-language-service"></a>Действия по созданию языковой службы
 
-1. Реализуйте интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.
+1. Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.
 
-    - В VSPackage внедрить <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс для предоставления языковой службы.
+    - В VSPackage реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс для предоставления языковой службы.
 
-    - Сделайте свой языковой сервис доступным для интегрированной <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> среды разработки (IDE) в вашей реализации.
+    - Обеспечьте доступность языковой службы в интегрированной среде разработки (IDE) в вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации.
 
-2. Реализация <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса в основном классе языкового обслуживания.
+2. Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс в основном классе языковой службы.
 
-     Интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> является отправной точкой взаимодействия между основным редактором и языковой службой.
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>Интерфейс является отправной точкой взаимодействия между основным редактором и языковой службой.
 
 ### <a name="optional-features"></a>Дополнительные функции
- Следующие функции не являются обязательными и могут быть реализованы в любом порядке. Эти функции повышают функциональность вашего языкового сервиса.
+ Следующие функции являются необязательными и могут быть реализованы в любом порядке. Эти функции повышают функциональность языковой службы.
 
 - Цветовая подсветка синтаксиса
 
-  Реализуйте интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>. Ваша реализация этого интерфейса должна иметь информацию о parser, чтобы вернуть соответствующую цветовую информацию.
+  Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>. Ваша реализация этого интерфейса должна получить сведения о соответствующем цветовом средстве синтаксического анализа.
 
-  Метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> возвращает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс. Для каждого буфера текста создается отдельный экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> colorizer, поэтому следует реализовать интерфейс отдельно. Для получения дополнительной информации смотрите [раскраску Syntax в устаревшем языковом сервисе.](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>Метод возвращает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс. Для каждого текстового буфера создается отдельный экземпляр тонирования, поэтому необходимо реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс отдельно. Дополнительные сведения см. [в разделе цветовое выделение синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).
 
 - Окно кода
 
-  Реализация <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> интерфейса для получения языковой службой уведомления о создании нового окна кода.
+  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> интерфейс, чтобы разрешить языковой службе принимать уведомления при создании нового окна кода.
 
-  Метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> возвращает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> интерфейс. Языковая служба может добавить специальный uI в окне кода в. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> Языковая служба также может выполнять любую специальную обработку, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>например, добавляя фильтр представления текста.
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>Метод возвращает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> интерфейс. Языковая служба затем может добавить специальный пользовательский интерфейс в окно кода в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> . Языковая служба также может выполнять любую специальную обработку, например добавление фильтра представления текста в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A> .
 
 - Фильтр представления текста
 
-  Чтобы обеспечить завершение оператора IntelliSense в языковой службе, необходимо перехватить некоторые команды, которые в противном случае было бы обработано текстовым представлением. Чтобы перехватить эти команды, выполните следующие шаги:
+  Чтобы обеспечить завершение операторов IntelliSense в языковой службе, необходимо перехватить некоторые команды, которые в противном случае будут обработаны в текстовом представлении. Чтобы перехватить эти команды, выполните следующие действия.
 
-  - Реализация <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> для участия в цепочке команд и обработки команд редактора.
+  - Реализуйте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , чтобы участвовать в цепочке команд и управлять командами редактора.
 
-  - Вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метода и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> пройти в вашей реализации.
+  - Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод и передайте <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализацию.
 
-  - Вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> метода, когда вы отсоедините от представления, так что эти команды больше не передаются вам.
+  - Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> метод при отсоединении от представления, чтобы эти команды больше не передавались.
 
-  Команды, которые должны быть обработаны, зависят от предоставляемых услуг. Для получения дополнительной [информации см.](../../extensibility/internals/important-commands-for-language-service-filters.md)
+  Команды, которые необходимо обработать, зависят от предоставленных служб. Дополнительные сведения см. в разделе [важные команды для фильтров языковой службы](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
   > [!NOTE]
-  > Интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> должен быть реализован на том <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> же объекте, что и интерфейс.
+  > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>Интерфейс должен быть реализован в том же объекте, что и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.
 
 - Завершение операторов
 
-  Реализуйте интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.
+  Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.
 
-  Поддерживайте команду завершения оператора <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>(т.е. ) и вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод в интерфейсе, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> передавая <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> интерфейс. Для получения дополнительной информации смотрите [завершение заявления в устаревшей языковой службе](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).
+  Поддерживает команду завершения операторов (то есть <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ) и вызывают <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейсе, передавая <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> интерфейс. Дополнительные сведения см. [в разделе Завершение операторов в языковой службе прежних версий](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).
 
-- Советы по методу
+- Советы по методам
 
-  Реализация <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейса для предоставления данных для окна наконечника метода.
+  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейс, чтобы предоставить данные для окна подсказки метода.
 
-  Установите фильтр представления текста для обработки команд надлежащим образом, чтобы вы знали, когда следует показать окно наконечника данных метода. Для получения дополнительной информации [см. Информация о параметре в устаревшей языковой службе.](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
+  Установите фильтр текстового представления для правильной обработки команд, чтобы узнать, когда следует отображать окно подсказки данных метода. Дополнительные сведения см. [в разделе сведения о параметрах в устаревшей языковой службе](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).
 
 - Маркеры ошибок
 
-  Реализуйте интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>.
+  Реализовать интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>.
 
-  Создайте объекты маркера <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ошибок, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> которые реализуют интерфейс и вызывают метод, проходя <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс объекта маркера ошибки.
+  Создайте объекты маркера ошибок, реализующие <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс, и вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метод, передав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс объекта маркера ошибки.
 
-  Обычно каждый маркер ошибки управляет элементом в окне списка задач.
+  Обычно каждый маркер ошибки управляет элементом в окне Список задач.
 
 - Элементы списка задач
 
-  Реализация класса элементов <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> задач, обеспечивающего интерфейс.
+  Реализуйте класс элемента задачи, предоставляющий <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> интерфейс.
 
-  Реализация класса поставщика задач, обеспечивающего <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> интерфейс и <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> интерфейс.
+  Реализуйте класс поставщика задач, предоставляющий <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> интерфейс и <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> интерфейс.
 
-  Реализация класса перечисления задач, <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> обеспечивающего интерфейс.
+  Реализуйте класс перечислителя задач, предоставляющий <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> интерфейс.
 
-  Зарегистрируйте поставщика задач методом <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> списка задач.
+  Зарегистрируйте поставщик задач в методе списка задач <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> .
 
-  Получите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> интерфейс, позвонив поставщику услуг языковой службы с помощью GUID. <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>
+  Получите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> интерфейс, вызвав поставщик службы языковой службы с идентификатором GUID службы <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> .
 
-  Создавайте объекты элемента задачи и вызывайте <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> метод в интерфейсе <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> при походе новых или обновленных задач.
+  Создание объектов элементов задач и вызов <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> метода в <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> интерфейсе при наличии новых или обновленных задач.
 
-- Элементы задач комментариев
+- Закомментировать элементы задачи
 
-  Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> и интерфейс для получения токенов задач комментариев.
+  Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> интерфейс и <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> интерфейс для получения маркеров задачи комментария.
 
-  Получите <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> от службы.
+  Получите <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> интерфейс от <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> службы.
 
-  Получите <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> от метода.
+  Получите <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> интерфейс из <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> метода.
 
-  Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> интерфейса для прослушивания изменений в списке маркеров.
+  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> интерфейс для прослушивания изменений в списке токенов.
 
 - Структуризация
 
-  Существует несколько вариантов поддержки с изложением. Например, можно поддерживать команду **«Обюги к определениям»,** предоставлять регионы контуров, контролируемых редакторами, или поддерживать регионы, контролируемые клиентами. Для получения дополнительной информации [см. Как: Предоставьте расширенную поддержку в устаревшей языковой службе.](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+  Существует несколько вариантов поддержки структурирования. Например, можно поддерживать команду **Свернуть в определения** , предоставлять управляемые редактором области структуры или поддерживать регионы, управляемые клиентом. Дополнительные сведения см. в разделе [инструкции. Предоставление расширенной поддержки структурирования в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).
 
-- Регистрация языковых услуг
+- Регистрация языковой службы
 
-  Для получения дополнительной информации о том, как зарегистрировать [Manage VSPackages](../../extensibility/managing-vspackages.md)языковую службу, [см.](../../extensibility/internals/registering-a-legacy-language-service2.md)
+  Дополнительные сведения о регистрации языковой службы см. в статьях [Регистрация устаревшей языковой службы](../../extensibility/internals/registering-a-legacy-language-service2.md) и Управление пакетами [VSPackage](../../extensibility/managing-vspackages.md).
 
-- Чувствительная справка, чувствительная к контексту
+- Контекстно-зависимая справка
 
-  Предоставьте контекст редактору одним из следующих способов:
+  Предоставьте контекст для редактора одним из следующих способов:
 
-  - Предоставьте контекст для текстовых <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> маркеров путем реализации интерфейса.
+  - Предоставьте контекст для текстовых маркеров, реализовав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс.
 
-  - Предоставьте весь пользовательский <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> контекст, реализовав интерфейс.
+  - Предоставьте весь контекст пользователя, реализовав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> интерфейс.
 
-## <a name="see-also"></a>См. также
-- [Разработка устаревшего языкового сервиса](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [Написать оценщика экспрессии CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>См. также раздел
+- [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)
+- [Написание вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

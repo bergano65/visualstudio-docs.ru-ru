@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851324"
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Учебник 1. Создание приложения для просмотра рисунков
+# <a name="tutorial-1-create-a-picture-viewer"></a>Учебное руководство 1. Создание приложения для просмотра рисунков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом руководстве выполняется создание программы, которая загружает изображение из файла и отображает его в окне. Изучается процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Выполняется настройка свойств элементов управления. Изучается использование контейнеров для согласованного изменения размеров формы. Также начинается создание кода. Вы научитесь:
@@ -39,27 +39,27 @@ ms.locfileid: "75851324"
 
   ![Изображение результата, создаваемого в этом учебнике](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Изображение результата, создаваемого в этом учебнике
 
-  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этого раздела см [. раздел практические руководства. Создание средства просмотра изображений в Visual Basic?](https://msdn.microsoft.com/vstudio/gg315352) или [инструкции. Создание средства просмотра изображений в C#?](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
+  ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") Для получения видео-версии этого раздела см [. раздел практические руководства. Создание средства просмотра изображений в Visual Basic?](https://msdn.microsoft.com/vstudio/gg315352) или [инструкции. Создание средства просмотра изображений на языке C#](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
 
 > [!NOTE]
 > Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio. В этом руководстве приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
 >
-> Чтобы просмотреть код для Visual Basic, выберите вкладку **VB** в верхней части блоков кода, а чтобы увидеть код для визуального элемента C#, выберите **C#** вкладку. Если вы заинтересованы в изучении визуального элемента C++, ознакомьтесь с руководством по [Начало работы](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) и [ C++ языку](http://www.cplusplus.com/doc/tutorial/).
+> Чтобы просмотреть код для Visual Basic, перейдите на вкладку **VB** в верхней части блоков кода, а чтобы просмотреть код для Visual C#, перейдите на вкладку **C#** . Если вы заинтересованы в изучении Visual C++, см. [руководство по языку](http://www.cplusplus.com/doc/tutorial/) [Начало работы](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) и C++.
 >
 > Если вас интересует написание приложений для Магазина Windows на языках Visual C# или Visual Basic, см. раздел [Создание своего первого приложения Магазина Windows на C# или Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Сведения о создании приложений для Магазина Windows на языке JavaScript см. в разделе [Создание вашего первого приложения Магазина Windows на JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>См. также
 
 |Заголовок|Описание|
 |-----------|-----------------|
 |[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начало разработки программы с создания проекта приложения Windows Forms.|
 |[Шаг 2. Запуск программы](../ide/step-2-run-your-program.md)|Запуск программы приложения Windows Forms, которая была создана на предыдущем шаге.|
-|[Шаг 3. Настройка свойств формы](../ide/step-3-set-your-form-properties.md)|Изменение внешнего вида формы с помощью окна **Свойства**.|
+|[Шаг 3. Задание свойств формы](../ide/step-3-set-your-form-properties.md)|Изменение внешнего вида формы с помощью окна **Свойства**.|
 |[Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Добавьте элемент управления `TableLayoutPanel` в форму.|
 |[Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md)|Добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Добавление в форму кнопок.|
-|[Шаг 6. Присвоение имен элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md)|Назначение кнопкам понятных имен.|
+|[Шаг 6. присвойте имя элементам управления "Кнопка"](../ide/step-6-name-your-button-controls.md)|Назначение кнопкам понятных имен.|
 |[Шаг 7. Добавление компонентов диалогового окна в форму](../ide/step-7-add-dialog-components-to-your-form.md)|Добавление в форму компонента **OpenFileDialog** и компонента **ColorDialog**.|
-|[Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Создание кода с помощью средства IntelliSense.|
+|[Шаг 8. Написание кода для обработчика событий кнопки "отобразить рисунок"](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Создание кода с помощью средства IntelliSense.|
 |[Шаг 9. Проверка, комментирование и тестирование кода](../ide/step-9-review-comment-and-test-your-code.md)|Просмотр и тестирование кода. Добавление необходимых комментариев.|
-|[Шаг 10. Написание кода дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Создание кода с помощью IntelliSense для описания поведения кнопок и флажков.|
-|[Шаг 11. Запуск программы и изучение других возможностей](../ide/step-11-run-your-program-and-try-other-features.md)|Запуск программы и настройка цвета фона. Изучение других возможности, например, изменение цветов, шрифтов и границ.|
+|[Шаг 10. Написание кода для дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Создание кода с помощью IntelliSense для описания поведения кнопок и флажков.|
+|[Шаг 11. Запуск программы и изучение других функций](../ide/step-11-run-your-program-and-try-other-features.md)|Запуск программы и настройка цвета фона. Изучение других возможности, например, изменение цветов, шрифтов и границ.|

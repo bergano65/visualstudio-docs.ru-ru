@@ -1,5 +1,5 @@
 ---
-title: Just-In-Time, отладка, диалоговое окно параметров | Документация Майкрософт
+title: Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201106"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"
@@ -61,6 +61,6 @@ ms.locfileid: "68201106"
   
  **Отказано в доступе. Администратор должен включить JIT-отладку или восстановить установку Visual Studio.**  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка, диалоговое окно "Параметры"](../debugger/debugging-options-dialog-box.md)   
  [Практическое руководство. Установка параметров отладчика](../debugger/how-to-specify-debugger-settings.md)

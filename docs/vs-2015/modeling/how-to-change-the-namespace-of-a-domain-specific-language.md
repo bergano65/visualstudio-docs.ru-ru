@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b61b248876f701e9d5286063f28b4f71d73e18b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671721"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Практическое руководство. Изменение пространства имен доменного языка
@@ -49,11 +49,11 @@ ms.locfileid: "72671721"
 
 10. Сброс экспериментального экземпляра Visual Studio.
 
-    1. Удалите **\Users \\** _{ваше имя}_ **\аппдата\локал\микрософт\висуалстудио \\ \*Exp**
+    1. Удалить **\Users \\ **_{ваше имя}_**\аппдата\локал\микрософт\висуалстудио \\ \* exp**
 
     2. В меню **Пуск** Windows выберите **все программы**, **Microsoft Visual Studio пакет SDK для 2010**, **инструменты**, **сбросить экспериментальный экземпляр**.
 
 11. В меню **Сборка** выберите пункт **Перестроить решение**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

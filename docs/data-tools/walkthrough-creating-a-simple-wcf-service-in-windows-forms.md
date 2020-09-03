@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586020"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Пошаговое руководство. Создание простой службы WCF в Windows Forms
@@ -31,15 +31,15 @@ ms.locfileid: "75586020"
 
 ## <a name="create-a-service"></a>Создание службы
 
-1. Откройте Visual Studio.
+1. Запустите Visual Studio.
 
 ::: moniker range="vs-2017"
 
-2. В меню **файл** выберите пункт **создать** > **проект**.
+2. В меню **Файл** щелкните **Создать** > **Проект**.
 
-3. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#**  и выберите **WCF**, а затем — **библиотеку службы WCF**.
+3. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#** и выберите **WCF**, а затем — **библиотеку служб WCF**.
 
-4. Нажмите кнопку **ОК**, чтобы создать проект.
+4. Чтобы создать проект, нажмите кнопку **ОК** .
 
    ![Проект библиотеки служб WCF](../data-tools/media/wcf1.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "75586020"
 
 2. На начальном экране выберите **Создать проект**.
 
-3. Введите **библиотеку служб WCF** в поле поиска на странице **Создание нового проекта** . Выберите шаблон C# или Visual Basic шаблона для **библиотеки службы WCF**, а затем нажмите кнопку **Далее**.
+3. Введите **библиотеку служб WCF** в поле поиска на странице **Создание нового проекта** . Выберите шаблон C# или Visual Basic для **библиотеки службы WCF**, а затем нажмите кнопку **Далее**.
 
    ![Создание нового проекта библиотеки службы WCF в Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "75586020"
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
 
-   Измените тип параметра `value` на String:
+   Измените тип `value` параметра на String:
 
    [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
    [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
@@ -88,18 +88,18 @@ ms.locfileid: "75586020"
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
 
-   Измените тип параметра `value` на String:
+   Измените тип `value` параметра на String:
 
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
 
-## <a name="test-the-service"></a>Проверка службы
+## <a name="test-the-service"></a>Тестирование службы
 
 1. Нажмите клавишу **F5**, чтобы запустить службу. Откроется форма **тестового клиента WCF** , которая загружает службу.
 
 2. В форме **Тестовый клиент WCF** дважды щелкните метод **GetData()** в разделе **IService1**. Откроется вкладка **GetData** .
 
-     ![Метод GetData&#40; &#41;](../data-tools/media/wcf4.png)
+     ![Метод&#40;&#41; GetData](../data-tools/media/wcf4.png)
 
 3. В диалоговом окне **Запрос** выберите поле **Значение** и введите `Hello`.
 
@@ -115,15 +115,15 @@ ms.locfileid: "75586020"
 
 ### <a name="reference-the-wcf-service"></a>Ссылка на службу WCF
 
-1. В меню **Файл** выберите команду **Добавить**, а затем **Создать проект**.
+1. В меню **файл** выберите команду **Добавить** , а затем — **Новый проект**.
 
-2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#**  , выберите пункт **Windows**, а затем выберите **Windows Forms приложение**. Нажмите кнопку **ОК**, чтобы открыть проект.
+2. В диалоговом окне **Новый проект** разверните узел **Visual Basic** или **Visual C#** , выберите пункт **Windows**, а затем выберите **Windows Forms приложение**. Нажмите кнопку **ОК**, чтобы открыть проект.
 
      ![Проект приложения Windows Forms](../data-tools/media/wcf7.png)
 
-3. Щелкните правой кнопкой мыши **WindowsApplication1** и выберите команду **Добавить ссылку на службу**. Откроется диалоговое окно **Добавление ссылки на службу** .
+3. Щелкните правой кнопкой мыши **WindowsApplication1** и выберите команду **Добавить ссылку на службу**. Откроется диалоговое окно **Добавить ссылку на службу**.
 
-4. В диалоговом окне **Добавление ссылки на службу** щелкните элемент **Найти**.
+4. В диалоговом окне **Добавление ссылки на службу** выберите **Найти**.
 
      ![Добавить ссылку на службу - диалоговое окно](../data-tools/media/wcf8.png)
 
@@ -146,10 +146,10 @@ ms.locfileid: "75586020"
 
 4. В **Обозревателе решений** щелкните правой кнопкой мыши **WindowsApplication1** и выберите команду **Назначить запускаемым проектом**.
 
-5. Нажмите клавишу **F5**, чтобы запустить проект. Введите любой текст и нажмите кнопку. На этой метке отображается введенный текст:.
+5. Нажмите клавишу **F5** , чтобы запустить проект. Введите любой текст и нажмите кнопку. На этой метке отображается введенный текст:.
 
      ![Форма с результатом](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation служб и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

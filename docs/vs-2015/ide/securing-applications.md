@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c590c88894c930f04caf0f7e8afd4eee298f077a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669948"
 ---
 # <a name="securing-applications"></a>Защита приложений
@@ -29,7 +29,7 @@ ms.locfileid: "72669948"
 
  [Рекомендации по обеспечению безопасности](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Сведения о компонентах безопасности и методах безопасной работы, доступных в Visual C++.
 
- [НЕ в сборке. безопасность и программирование (C# и Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) предоставляет сведения о трех основных вопросах безопасности для Visual Basic и C# разработчиков: привилегий, веб-приложений и установки Visual Studio.
+ [Не в сборке. безопасность и программирование (C# и Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) Содержит сведения о трех основных вопросах безопасности для разработчиков Visual Basic и C#: привилегий, веб-приложений и установки Visual Studio.
 
 ## <a name="securing-mobile-applications"></a>Защита мобильных приложений
  По мере роста популярности мобильных устройств вопросы обеспечения безопасности информации и данных на этих устройствах становятся все более актуальными.
@@ -56,5 +56,5 @@ ms.locfileid: "72669948"
 
  [Безопасность Windows Forms](https://msdn.microsoft.com/library/932d438a-5285-46d8-a958-8c93d0ad6cae) Общие сведения о реализации механизмов безопасности форм Windows Forms.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Безопасность](../ide/security-in-visual-studio.md)
