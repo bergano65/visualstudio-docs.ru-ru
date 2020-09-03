@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS Документы Майкрософт
+title: CONTEXT_INFO_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737594"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
-Определяет, какую информацию получить о контексте памяти.
+Указывает, какие сведения следует получить о контексте памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,34 +54,34 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Поля
 `CIF_MODULEURL`\
-Инициализация/использование `bstrModuleUrl` поля [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры.
+Инициализируйте или используйте `bstrModuleUrl` поле структуры [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) .
 
 `CIF_FUNCTION`\
-Инициализация/использование `bstrFunction` `CONTEXT_INFO` поля структуры.
+Инициализируйте или используйте `bstrFunction` поле `CONTEXT_INFO` структуры.
 
 `CIF_FUNCTIONOFFSET`\
-Инициализация/использование `posFunctionOffset` `CONTEXT_INFO` поля структуры.
+Инициализируйте или используйте `posFunctionOffset` поле `CONTEXT_INFO` структуры.
 
 `CIF_ADDRESS`\
-Инициализация/использование `bstrAddress` `CONTEXT_INFO` поля структуры.
+Инициализируйте или используйте `bstrAddress` поле `CONTEXT_INFO` структуры.
 
 `CIF_ADDRESSOFFSET`\
-Инициализация/использование `bstrAddressOffset` `CONTEXT_INFO` поля структуры.
+Инициализируйте или используйте `bstrAddressOffset` поле `CONTEXT_INFO` структуры.
 
 `CIF_ALLFIELDS`\
-Инициализация/использование `CONTEXT_INFO` всех полей структуры.
+Инициализация или использование всех полей `CONTEXT_INFO` структуры.
 
-## <a name="remarks"></a>Примечания
-Эти значения передаются параметру методу [GetInfo,](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) чтобы указать, какие поля [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+Эти значения передаются параметру в метод " [info](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) ", чтобы указать, какие поля структуры [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) должны быть инициализированы.
 
-Эти флаги также используются для `CONTEXT_INFO` указания того, какие поля структуры используются и действительны при возврате структуры.
+Эти флаги также используются для указания того, какие поля `CONTEXT_INFO` структуры используются и являются допустимыми при возврате структуры.
 
-Эти значения могут быть объединены с bitwise OR.
+Эти значения можно комбинировать с помощью побитового или.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

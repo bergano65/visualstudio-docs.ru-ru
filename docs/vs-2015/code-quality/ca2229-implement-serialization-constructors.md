@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ba654496d80654f0d9790a01bbc41326f7a5f13e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540495"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229. Реализуйте конструкторы сериализации
@@ -58,6 +58,6 @@ ms.locfileid: "85540495"
 ## <a name="related-rules"></a>Связанные правила
  [CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

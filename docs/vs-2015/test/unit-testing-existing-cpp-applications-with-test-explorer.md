@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540079"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Модульное тестирование существующих приложений C++ с использованием обозревателя тестов
@@ -119,9 +119,9 @@ ms.locfileid: "85540079"
 
    3. Измените каталоги включения и библиотек:
 
-       |Свойство.|Применение|
+       |Свойство|Значение|
        |-|-|
-       |**Каталоги включения**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**Каталоги включаемых файлов**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Каталоги библиотек**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2. Добавьте файл модульного тестирования С++:
@@ -134,7 +134,7 @@ ms.locfileid: "85540079"
 
 1. В каждом файле кода модульного теста добавьте оператор `#include` для заголовков тестируемого проекта.
 
-2. Добавьте тестовые классы и методы в файлы кода модульного теста. Пример.
+2. Добавьте тестовые классы и методы в файлы кода модульного теста. Пример:
 
    ```cpp
    #include "stdafx.h"

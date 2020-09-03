@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY Документы Майкрософт
+title: BSTR_ARRAY | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737706"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
@@ -46,20 +46,20 @@ struct BSTR_ARRAY {
 Количество строк в `Members` массиве.
 
 `Members`\
-Массив струн.
+Массив строк.
 
-## <a name="remarks"></a>Примечания
-Эта структура возвращается из метода [EnumPersistedPorts.](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+## <a name="remarks"></a>Remarks
+Эта структура возвращается методом [енумперсистедпортс](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
- (только си) Каждая отдельная строка должна `Members` быть освобождена `CoTaskMemFree`с помощью, `SysFreeString`и массив должен быть освобожден с .
+ [Только C++] Каждая отдельная строка должна быть освобождена с помощью `SysFreeString` , а `Members` массив должен быть освобожден с использованием `CoTaskMemFree` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

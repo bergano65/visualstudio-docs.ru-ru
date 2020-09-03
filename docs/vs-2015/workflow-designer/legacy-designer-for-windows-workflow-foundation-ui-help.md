@@ -14,23 +14,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2ad067adf79a2a7d08c6a45e7c205480621abf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658957"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
 В этом разделе содержатся разделы контекстной Справки, относящиеся к средству [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий в [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Используйте конструктор прежних версий, если приложение ориентируется на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Вы можете получить доступ к этим темам из [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] пользовательского интерфейса, нажав клавишу **F1** , когда открыто диалоговое окно устаревший [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+ Доступ к этим темам можно получить из [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] пользовательского интерфейса, нажав клавишу **F1** , когда открыто устаревшее [!INCLUDE[wfd2](../includes/wfd2-md.md)] диалоговое окно.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Диалоговое окно "Привязка к свойству действия" (для прежних версий)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)
 
  [Диалоговое окно "Выбор набора правил" (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md)
 
- [Диалоговое окно "Редактор набора правил" (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)
+ [Диалоговое окно «Редактор набора правил» (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)
 
  [Диалоговое окно "Выбор условия" (для прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md)
 

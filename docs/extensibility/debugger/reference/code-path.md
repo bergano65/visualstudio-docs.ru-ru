@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH Документы Майкрософт
+title: CODE_PATH | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737678"
 ---
 # <a name="code_path"></a>CODE_PATH
-Описывает вызов метода или функции.
+Описывает метод или вызов функции.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,22 +43,22 @@ public struct CODE_PATH {
 
 ## <a name="members"></a>Участники
 `bstrName`\
-Название пути кода.
+Имя пути кода.
 
 `pCode`\
-[Объект IDebugCodeContext2,](../../../extensibility/debugger/reference/idebugcodecontext2.md) который определяет, где в коде войти в функцию.
+Объект [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий место в коде для пошагового перехода в функцию.
 
-## <a name="remarks"></a>Примечания
-Эта структура используется для реализации шага в функцию. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы из текущего местоположения отладки программы. Эта структура представляет собой один из таких вызовов.
+## <a name="remarks"></a>Remarks
+Эта структура используется для реализации пошагового выполнения функции. [Енумкодепасс](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы из текущего расположения в отлаживаемой программе. Эта структура представляет один такой вызов.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

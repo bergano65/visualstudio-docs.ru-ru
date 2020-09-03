@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON Документы Майкрософт
+title: DEBUG_REASON | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737423"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
-Уточняется, почему процесс был запущен для отладки.
+Указывает, почему процесс был запущен для отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,27 +50,27 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Поля
 `DEBUG_REASON_ERROR`\
-Произошла неспецифическая ошибка (это используется в качестве условия по умолчанию, когда ни одна из других причин не подходит).
+Произошла неспецифическая ошибка (используется в качестве условия по умолчанию, если по каким-либо причинам не подходит).
 
 `DEBUG_REASON_USER_LAUNCHED`\
 Процесс был запущен по запросу пользователя.
 
 `DEBUG_REASON_USER_ATTACHED`\
-Уже запущенный процесс был присоединен к пользователю.
+Этот уже запущенный процесс был подключен пользователем.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Процесс был автоматически присоединен к тому, когда он был запущен.
+Процесс был автоматически присоединен к моменту запуска.
 
 `DEBUG_REASON_CAUSALITY`\
-Процесс был запущен из-за события отладки *Just-In-Time* (JIT).
+Процесс был запущен из-за JIT *-события* отладки.
 
-## <a name="remarks"></a>Примечания
-Вернулся из метода [GetDebugReason.](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+## <a name="remarks"></a>Remarks
+Возвращается методом [жетдебугреасон](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

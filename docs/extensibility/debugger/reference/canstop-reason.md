@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON Документы Майкрософт
+title: CANSTOP_REASON | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737682"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
-Используется для определения того, может ли программа остановить выполнение после достижения определенной точки в выполнении.
+Используется, чтобы определить, может ли программа прерывать выполнение после достижения определенной точки выполнения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,18 +44,18 @@ public enum enum_CANSTOP_REASON {
 
 ## <a name="fields"></a>Поля
 `CANSTOP_ENTRYPOINT`\
-Определяет точку входа данной программы.
+Указывает точку входа данной программы.
 
 `CANSTOP_STEPIN`\
-Определяет шаг в функцию.
+Указывает шаг с заходом в функцию.
 
-## <a name="remarks"></a>Примечания
-Прошел в качестве аргумента в метод [GetReason,](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) чтобы подтвердить с диспетчером дебуга сеанса (SDM), если это нормально, чтобы остановить после достижения точки входа в программу или после вступления в функцию или метод.
+## <a name="remarks"></a>Remarks
+Передается в качестве аргумента в метод [Reason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) для подтверждения в диспетчере отладки сеанса (SDM), если после достижения точки входа программы или после пошагового выполнения в функцию или метод.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

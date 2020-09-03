@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539767"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051. Не объявляйте видимые поля экземпляров
@@ -47,12 +47,12 @@ ms.locfileid: "85539767"
  Для этого правила отключать вывод предупреждений не следует. Внешние видимые поля не предоставляют никаких преимуществ, недоступных для свойств. Кроме того, открытые поля не могут быть защищены [запросами компоновки](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). См. раздел [CA2112: Secure Types не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Пример
- В следующем примере показан тип ( `BadPublicInstanceFields` ), нарушающий это правило. `GoodPublicInstanceFields`Отображает исправленный код.
+ В следующем примере показан тип ( `BadPublicInstanceFields` ), нарушающий это правило. `GoodPublicInstanceFields` Отображает исправленный код.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
  [CA2112. Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

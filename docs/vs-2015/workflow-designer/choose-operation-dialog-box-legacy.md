@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2736db7e18733a9477238cafad21088eb135e89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659164"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Диалоговое окно «Выбор операции» (для прежних версий)
-В этом разделе описывается использование диалогового окна **Выбор операции** в [!INCLUDE[wfd1](../includes/wfd1-md.md)] устаревших версий. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+В этом разделе описывается использование диалогового окна **Выбор операции** в устаревшей версии [!INCLUDE[wfd1](../includes/wfd1-md.md)] . [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Диалоговое окно **Выбор операции** используется для выбора операции, связываемой с <xref:System.Workflow.Activities.ReceiveActivity> действием или <xref:System.Workflow.Activities.SendActivity> действием. Дополнительные сведения об использовании этого диалогового окна с этими действиями см. в статьях [как реализовать операцию контракта WCF (устаревшая)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) и [как вызвать операцию контракта WCF (устаревшая)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).
 
@@ -36,7 +36,7 @@ ms.locfileid: "72659164"
 |**Разрешения**|Вкладка содержит свойства пользователей <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> и <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A>, которые разрешается вызывать этой операции. Например, если только пользователям из группы "Администраторы" разрешено вызывать эту операцию, в текстовом поле **роль** будет записано «Администраторы».<br /><br /> Эта вкладка включена для обеих операций, созданных с помощью диалогового окна **чусеоператион** , и операций, импортированных с помощью кнопки **Импорт** .|
 
 > [!NOTE]
-> В диалоговом окне **Выбор операции** отображаются только контракты или операции, используемые другими действиями <xref:System.Workflow.Activities.SendActivity> в рабочем процессе. Аналогично, диалоговое окно **Выбор операции** для действий <xref:System.Workflow.Activities.ReceiveActivity> отображает только контракты или операции, используемые другими действиями **ReceiveActivity** в рабочем процессе.
+> В диалоговом окне **Выбор операции** отображаются только контракты или операции, используемые другими <xref:System.Workflow.Activities.SendActivity> действиями в рабочем процессе. Аналогично, диалоговое окно **Выбор операции** для <xref:System.Workflow.Activities.ReceiveActivity> действий показывает только контракты или операции, используемые другими действиями **ReceiveActivity** в рабочем процессе.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как реализовать операцию контракта WCF (устаревшая)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [: как вызвать устаревший конструктор операций контракта WCF (устаревший)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [для справки по пользовательскому интерфейсу Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE Документы Майкрософт
+title: DISASSEMBLY_STREAM_SCOPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737269"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
-Определяет область потока разборки.
+Задает область потока дизассемблированного кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,26 +48,26 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>Поля
 `DSS_HUGE`\
-Указывается, что разборка контекста кода создаст больше выходных данных, чем обычно требуется клиенту в одном вызове.
+Указывает, что при разсборке контекста кода будет создаваться больше выходных данных, чем клиент, как правило, в одном вызове.
 
 `DSS_FUNCTION`\
-Уточняется, что функция, содержащаяся в контексте кода, должна быть разобрана. Уточняется, что поток разборки представляет собой функцию, когда возвращается методом [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+Указывает, что функция, содержащаяся в контексте кода, должна быть собрана. Указывает, что поток дизассемблированного кода представляет функцию, возвращаемую методом [superscope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 `DSS_MODULE`\
-При возвращении `IDebugDisassemblyStream2::GetScope` методом указывается, что поток разборки представляет собой модуль.
+При возврате `IDebugDisassemblyStream2::GetScope` методом указывает, что поток дизассемблированного кода представляет модуль.
 
 `DSS_ALL`\
-Определяет разборку для всего адресного пространства.
+Указывает Дизассемблированный код для всего адресного пространства.
 
-## <a name="remarks"></a>Примечания
-Прошел в качестве аргумента методу [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) и возвращен методом [GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+## <a name="remarks"></a>Remarks
+Передается в качестве аргумента в метод [жетдисассемблистреам](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) и возвращается методом [superscope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
-Эти значения могут быть объединены `OR`с bitwise .
+Эти значения можно объединить с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
