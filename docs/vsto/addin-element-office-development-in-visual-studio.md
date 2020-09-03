@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543771"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;элемент ADDIN (разработка решений Office в Visual Studio)
@@ -59,7 +59,7 @@ ms.locfileid: "85543771"
 ### <a name="entrypoints"></a>entryPoints
  Обязательный. Элемент **EntryPoint** описан в разделе [&#60;entrypoint&#62; элемента &#40;разработке решений Office в Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-### <a name="update"></a>обновление
+### <a name="update"></a>обновить
  Обязательный. Элемент **Update** описан в разделе [&#60;обновление&#62; элемента &#40;разработке решений Office в&#41;Visual Studio ](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions

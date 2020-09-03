@@ -1,5 +1,5 @@
 ---
-title: команды MenuCommand и OleMenuCommands | Документация Майкрософт
+title: Команды MenuCommand и Олеменукоммандс | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,14 +12,14 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624458"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
-Вы можете создавать команды меню путем наследования из <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , а также реализации соответствующих обработчиков событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+# <a name="menucommands-vs-olemenucommands"></a>Команды MenuCommand и Олеменукоммандс
+Команды меню можно создавать путем наследования либо из <xref:System.ComponentModel.Design.MenuCommand> <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> объекта, и реализации соответствующих обработчиков событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Команды, которые VSPackage делает доступными в IDE, должны быть видимы и включены, чтобы пользователь смог их применять. Если команды создаются в VSCT-файле с помощью шаблона Visual Studio Package для проектов, то они видимы и включены по умолчанию. Устанавливая некоторые флаги команд, например `DynamicItemStart`, можно изменить это поведение по умолчанию. Видимость, включенность и другие свойства команды также можно изменять в коде во время выполнения, обратившись к объекту <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , связанному с командой.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "67624458"
 ## <a name="creating-a-command"></a>Создание команды  
  Все команды, группы команд, меню, панели инструментов и окна инструментов определяются в VSCT-файле. Дополнительные сведения см. в разделе [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Если вы создаете VSPackage с помощью шаблона пакета, выберите пункт **Команда меню** , чтобы создать VSCT-файл и определить команду меню по умолчанию. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Если вы создаете VSPackage с помощью шаблона пакета, выберите пункт **Команда меню** , чтобы создать VSCT-файл и определить команду меню по умолчанию. Дополнительные сведения см. в разделе [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 #### <a name="to-add-a-command-to-the-ide"></a>Добавление команды в IDE  
   
@@ -117,7 +117,7 @@ ms.locfileid: "67624458"
       
       Если создать несколько размещений команд, имеющих одинаковые пары GUID:ID и разные родительские группы, меню будет отображаться в нескольких местах. Дополнительные сведения см. в описании элемента [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
-    Дополнительные сведения о связях и группах команд см. в разделе [группы кнопок для повторного использования создание](../extensibility/creating-reusable-groups-of-buttons.md).  
+    Дополнительные сведения о группах команд и родительских элементах см. в разделе [Создание многократно используемых групп кнопок](../extensibility/creating-reusable-groups-of-buttons.md).  
   
    На этом этапе команда будет отображаться в IDE, но не будет иметь никаких функций. Если команда была создана с помощью шаблона пакета, по умолчанию она будет иметь обработчик щелчка, выводящий сообщение.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "67624458"
   
     Объект `EventHandler` получает имя метода, который вызывается при запросе состояния команды меню.  
   
-2. Реализуйте метод обработчика состояния запроса для команды. Параметр `object` `sender` можно привести к объекту <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , который используется для задания различных атрибутов команды меню, включая ее текст. В следующей таблице показаны свойства в классе <xref:System.ComponentModel.Design.MenuCommand> (от которого является производным класс <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> MPF), соответствующие флагам <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
+2. Реализуйте метод обработчика состояния запроса для команды. `object` `sender` Параметр может быть приведен к <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> объекту, который используется для задания различных атрибутов команды меню, включая текст. В следующей таблице показаны свойства в классе <xref:System.ComponentModel.Design.MenuCommand> (от которого является производным класс <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> MPF), соответствующие флагам <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
   
    |Свойство MenuCommand|Флаг OLECMDF|  
    |--------------------------|------------------|  
@@ -197,7 +197,7 @@ ms.locfileid: "67624458"
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Обработка команд с помощью интерфейса IOleCommandTarget  
  Для кода, использующего интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> напрямую, VSPackage должен реализовать методы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> интерфейса <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . Если VSPackage реализует иерархию проекта, вместо этих методов должны быть реализованы методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> .  
   
- Оба метода, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> , разработаны для получения в качестве входных данных одного `GUID` набора команд и массива идентификаторов команд. Рекомендуется, чтобы пакеты VSPackage полностью поддерживали эту концепцию нескольких идентификаторов в одном вызове. Однако поскольку VSPackage не вызывается из других пакетов VSPackage, вы можете предположить, что массив команд содержит только один идентификатор команды, так как методы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> выполняются в строго определенном порядке. Дополнительные сведения о маршрутизации см. в разделе [маршрутизация команд в пакетах VSPackage](../extensibility/internals/command-routing-in-vspackages.md).  
+ Оба метода, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> , разработаны для получения в качестве входных данных одного `GUID` набора команд и массива идентификаторов команд. Рекомендуется, чтобы пакеты VSPackage полностью поддерживали эту концепцию нескольких идентификаторов в одном вызове. Однако поскольку VSPackage не вызывается из других пакетов VSPackage, вы можете предположить, что массив команд содержит только один идентификатор команды, так как методы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> выполняются в строго определенном порядке. Дополнительные сведения о маршрутизации см. [в разделе Маршрутизация команд в](../extensibility/internals/command-routing-in-vspackages.md)пакетах VSPackage.  
   
  Для кода, использующего интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> непосредственно для обработки команд, вы должны реализовать метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> в VSPackage следующим образом для обработки команд.  
   
@@ -251,6 +251,6 @@ ms.locfileid: "67624458"
   
 - Если `GUID` и ID команды соответствуют паре GUID:ID, которая используется командой в VSCT-файле, выполните код, связанный с командой, и верните значение <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
-## <a name="see-also"></a>См. также  
- [Справочник по схемам VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Справочник по XML-схеме VSCT](../extensibility/vsct-xml-schema-reference.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
