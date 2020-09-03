@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7172c868780aec61de8688614fbb93627dc23bf5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462399"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Наследование классов данных (реляционный конструктор объектов)
@@ -27,7 +27,7 @@ ms.locfileid: "85462399"
 
 В следующей таблице содержится список свойств наследования и их описания.
 
-|Свойство|Описание:|
+|Свойство|Описание|
 |--------------|-----------------|
 |**Свойство дискриминатора**|Свойство (сопоставляемое столбцу), которое определяет какому классу принадлежит текущая запись.|
 |**Значение дискриминатора базового класса**|Значение (в столбце, обозначенном как **Свойство дискриминатора**), которое определяет, что запись относится к базовому классу.|
@@ -41,7 +41,7 @@ ms.locfileid: "85462399"
 |[Практическое руководство. Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Описывает настройку классов сущностей, использующих наследование одной таблицы с помощью **конструктора O/R**.|
 |[Пошаговое руководство. Создание LINQ to SQL классов с помощью наследования одной таблицы (реляционный конструктор R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Содержит пошаговые инструкции по настройке классов сущностей, использующих наследование одной таблицы с помощью **конструктора O/R**.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

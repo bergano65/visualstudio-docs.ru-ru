@@ -1,5 +1,5 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS Документы Майкрософт
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,15 +14,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713983"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-Определяет метаданные, которые могут быть получены о поставщике порта.
+Определяет метаданные, которые могут быть получены от поставщика порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,21 +44,21 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Поля
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-При выборе значок предупреждения будет отображаться в ui.
+Если этот флажок установлен, в пользовательском интерфейсе будет отображаться значок предупреждения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Это перечисление возвращается методом [GetDescription.](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+Это перечисление возвращается методом метода [Description](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) .
 
 ## <a name="requirements"></a>Требования
 
-Заголовок: Msdbg.h
+Заголовок: Мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [GetОписание](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+- [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

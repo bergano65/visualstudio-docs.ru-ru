@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543615"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117. APTCA-типы должны расширять только базовые APTCA-типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
 |CheckId|CA2117|
@@ -40,9 +40,9 @@ ms.locfileid: "85543615"
 
  Если атрибут APTCA существует в полностью доверенной сборке, а тип в сборке наследуется от типа, который не допускает частично доверенных вызывающих объектов, то может использоваться уязвимость безопасности. Если два типа `T1` и `T2` отвечают приведенным ниже условиям, то вредоносные вызывающие объекты могут использовать этот тип `T1` для обхода неявного требования наследования с полным доверием, защищающего `T2` :
 
-- `T1`— Это открытый тип, объявленный в полностью доверенной сборке, имеющей атрибут APTCA.
+- `T1` — Это открытый тип, объявленный в полностью доверенной сборке, имеющей атрибут APTCA.
 
-- `T1`наследуется от типа `T2` вне его сборки.
+- `T1` наследуется от типа `T2` вне его сборки.
 
 - `T2`не имеет атрибута APTCA и, следовательно, не должны наследоваться типами в частично доверенных сборках.
 
@@ -83,5 +83,5 @@ ms.locfileid: "85543615"
 ## <a name="related-rules"></a>Связанные правила
  [CA2116. APTCA-методы должны вызывать только APTCA-методы](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Рекомендации по безопасному кодированию](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework сборки, вызываемые частично доверенным кодом,](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [с использованием библиотек из](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [требований наследования](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) частично доверенного кода

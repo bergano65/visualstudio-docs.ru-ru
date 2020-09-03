@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542991"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по работе в Visual Studio
@@ -49,7 +49,7 @@ ms.locfileid: "85542991"
 |Показать список открытых файлов|CTRL+ALT+СТРЕЛКА ВНИЗ|
 |Показать все плавающие окна|CTRL+SHIFT+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Сочетания клавиш для окон
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> Сочетания клавиш для окон
 
 |Команда|Сочетание клавиш|
 |-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "85542991"
 |Запустить новый экземпляр|WIN+SHIFT+N|
 |Переключиться между окнами|WIN+N|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Поиск в Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Поиск в Visual Studio
 
 |Команда|Сочетание клавиш|
 |-|-|
@@ -69,7 +69,7 @@ ms.locfileid: "85542991"
 |Быстрый запуск — задание области результатов|— @opt Параметры<br />— @cmd Команды<br />— @mru Самые последние использовавшиеся<br />— @doc Открытие документов|
 |Искать в "Инструменты" > "Параметры"|Ctrl+E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Поиск в редакторе
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> Поиск в редакторе
 
 |Команда|Сочетание клавиш|
 |-|-|
@@ -82,9 +82,9 @@ ms.locfileid: "85542991"
 |Быстрая замена — заменить следующий|Alt+R|
 |Быстрая замена — заменить все|ALT+A|
 |Поиск в файлах|Ctrl+Shift+F|
-|Заменить в файлах|Ctrl+Shift+H|
+|Замена в файлах|Ctrl+Shift+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Редактор кода
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Редактор кода
 
 |Команда|Сочетание клавиш|
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "85542991"
 |Перемещение между несколькими результатами "Показать"|F8 и SHIFT+F8|
 |Переключение между окном редактора кода и окном "Показать определение"|SHIFT+ESC|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Toolbar
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Toolbar
 
 |Команда|Сочетание клавиш|
 |-|-|
@@ -137,11 +137,11 @@ ms.locfileid: "85542991"
 |Очистить буфер окна интерпретации|>cls|
 |Значение печати окна интерпретации|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Управление жизненным циклом приложений
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Управление жизненным циклом приложений
 
 См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Блог по Visual Studio](https://devblogs.microsoft.com/visualstudio/)
 - [Блог советов и рекомендаций по Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)

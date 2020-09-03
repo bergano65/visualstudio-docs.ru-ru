@@ -1,5 +1,5 @@
 ---
-title: SEEK_START Документы Майкрософт
+title: SEEK_START | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713590"
 ---
 # <a name="seek_start"></a>SEEK_START
-Определяет положение, с которого можно начать поиск в потоке разборки.
+Указывает начальную точку поиска в потоке дизассемблированного кода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -56,21 +56,21 @@ public enum enum_SEEK_START { 
  Начинает поиск в конце текущего документа.
 
  `SEEK_START_CURRENT`\
- Начинает поиск текущей позиции текущего документа.
+ Начинает поиск в текущей позиции текущего документа.
 
  `SEEK_START_CODECONTEXT`\
- Начинает поиск в данном контексте кода текущего документа.
+ Начинает поиск в заданном контексте кода текущего документа.
 
  `SEEK_START_CODELOCID`\
- Начинает поиск в данном идентификаторе местоположения кода. Идентификаторы местоположения кода можно получить по телефону [GetCurrentLocation.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)
+ Начинает поиск по указанному идентификатору расположения кода. Идентификаторы расположения кода получаются путем вызова [жеткуррентлокатион](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
-## <a name="remarks"></a>Примечания
- Прошел в качестве аргумента в метод [Поиска.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+## <a name="remarks"></a>Remarks
+ Передается в качестве аргумента в метод [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

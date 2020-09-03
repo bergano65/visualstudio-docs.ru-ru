@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS Документы Майкрософт
+title: SYMBOL_SEARCH_INFO_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713481"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Определяет вид информации о символах для извлечения.
+Указывает тип символьных сведений для извлечения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,21 +47,21 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Поля
  `SSIF_NONE`\
- Отозначает отсутствие флагов
+ Указывает отсутствие флагов
 
  `SSIF_VERBOSE_SEARCH_INFO`\
  Возвращает все пути поиска, используемые для поиска символов
 
-## <a name="remarks"></a>Примечания
- Эти флаги передаются в качестве параметра методу [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) для определения объема возвращенной информации.
+## <a name="remarks"></a>Remarks
+ Эти флаги передаются в метод [жетсимболинфо](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) в качестве параметра, чтобы определить объем возвращаемой информации.
 
 > [!NOTE]
-> В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, `dwFlags` и `IDebugModule3::GetSymbolInfo`он должен быть указан в качестве параметра. Все остальные значения возвращают ошибку.
+> В настоящее время `SSIF_VERBOSE_SEARCH_INFO` поддерживается только, и его необходимо указать в качестве `dwFlags` параметра `IDebugModule3::GetSymbolInfo` . Все остальные значения возвращают ошибку.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

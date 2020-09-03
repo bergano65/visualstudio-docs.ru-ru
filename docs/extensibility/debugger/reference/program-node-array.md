@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY Документы Майкрософт
+title: PROGRAM_NODE_ARRAY | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713800"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
-Содержит множество объектов, описывающих интересующие программы.
+Содержит массив объектов, описывающих интересующие программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,22 +43,22 @@ public struct tagPROGRAM_NODE_ARRAY {
 
 ## <a name="members"></a>Участники
  `dwCount`\
- Количество объектов `Members` в массиве.
+ Количество объектов в `Members` массиве.
 
  `Members`\
- Массив объектов [IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) описывающих запрашиваемые программы.
+ Массив объектов [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , описывающих запрошенные программы.
 
-## <a name="remarks"></a>Примечания
- Эта структура является частью [структуры PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) которая, в свою очередь, заполняется вызовом к методу [GetProviderProcessData.](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+## <a name="remarks"></a>Remarks
+ Эта структура является частью структуры [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) , которая, в свою очередь, заполняется вызовом метода [жетпровидерпроцессдата](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS Документы Майкрософт
+title: PROVIDER_FLAGS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713823"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
-Определяет желаемые свойства, которые можно получить у поставщика программы.
+Указывает требуемые свойства, которые будут получены от поставщика программы.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,27 +54,27 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>Поля
  `PFLAG_NONE`\
- Флаги не указаны.
+ Не указаны флаги.
 
  `PFLAG_REMOTE_PORT`\
- Абонент хочет список программ на другой [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]машине, чем .
+ Вызывающему объекту нужен список программ на компьютере, отличном от [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_DEBUGGEE`\
- Процесс в настоящее время отлажается в этом экземпляре [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Процесс в данный момент отлаживается этим экземпляром [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]прилагается к отладке программы, но не запускает ее.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] прикрепляется к отлаживаемой программе, но не запускает ее.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]наблюдает за событиями.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отслеживает события.
 
  `PFLAG_GET_PROGRAM_NODES`\
- Звонящее `ProgramNodes` хочет поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.
+ Вызывающему объекту требуется `ProgramNodes` поле структуры [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) .
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- Звонящее `fIsTheDebuggerPresent` `PROVIDER_PROCESS_DATA` хочет поле структуры.
+ Вызывающему объекту требуется `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Эти флаги передаются следующим методам:
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
@@ -83,12 +83,12 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Эти значения могут быть объединены `OR`с bitwise .
+  Эти значения можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

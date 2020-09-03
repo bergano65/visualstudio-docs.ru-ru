@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542549"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Совместное использование классов в различных доменных языках с помощью библиотеки доменных языков
@@ -41,7 +41,7 @@ ms.locfileid: "85542549"
 
 6. Выполните построение проекта.
 
-7. При распространении DSL для использования другими людьми необходимо предоставить как скомпилированную сборку (DLL), так и файл `DslDefinition.dsl` . Скомпилированную сборку можно найти в папке в разделе`Dsl\bin\*`
+7. При распространении DSL для использования другими людьми необходимо предоставить как скомпилированную сборку (DLL), так и файл `DslDefinition.dsl` . Скомпилированную сборку можно найти в папке в разделе `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Импорт библиотеки DSL
 

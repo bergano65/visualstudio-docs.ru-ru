@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542211"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
@@ -37,7 +37,7 @@ ms.locfileid: "85542211"
 
 - [Создание обтравочного контура](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Рисование фигуры
+## <a name="draw-a-shape"></a><a name="Shape"></a> Рисование фигуры
  Фигуры можно найти на панели **Ресурсы** .
 
  ![Категория фигур на панели ресурсов](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -46,7 +46,7 @@ ms.locfileid: "85542211"
 
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
-## <a name="draw-a-path"></a><a name="Path"></a>Рисование контура
+## <a name="draw-a-path"></a><a name="Path"></a> Рисование контура
  Контур — это последовательность соединенных линий и кривых. Используйте контур для создания интересных фигур, которые недоступны на панели **Ресурсы** .
 
  Контур можно нарисовать с помощью линии, пера или карандаша. Эти инструменты доступны на панели **Средства** .
@@ -89,32 +89,32 @@ ms.locfileid: "85542211"
 ### <a name="remove-a-point-in-a-path"></a>Удаление точки контура
  Используйте средства **Выделение**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")и **Перо**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54").
 
- Используйте инструмент **выбора** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") для выбора пути. Затем с помощью инструмента **Pen** "перо ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") " щелкните точку, которую нужно удалить.
+ Используйте инструмент **выбора**  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") для выбора пути. Затем с помощью инструмента **Pen** "перо ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") " щелкните точку, которую нужно удалить.
 
 ### <a name="add-a-point-to-a-path"></a>Добавление точки контура
  Используйте средства **Выделение**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")и **Перо**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54").
 
- Используйте инструмент **выбора** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") для выбора пути. Используйте инструмент « **перо** », ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") чтобы щелкнуть в любом месте пути, куда нужно добавить точку.
+ Используйте инструмент **выбора**  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") для выбора пути. Используйте инструмент « **перо** », ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84cf-a9bc8f38fc54") чтобы щелкнуть в любом месте пути, куда нужно добавить точку.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Преобразование фигуры в контур
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Преобразование фигуры в контур
  Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур.
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-## <a name="combine-paths"></a><a name="Combine"></a>Объединить пути
+## <a name="combine-paths"></a><a name="Combine"></a> Объединить пути
  Контуры и фигуры можно объединить в один контур.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
 |Изображение|Описание|Изображение|Описание|
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|Две фигуры до объединения|![](../designers/media/b1-4.png "B1_4")|Intersect|
+|![](../designers/media/b1-1.png "B1_1")|Две фигуры до объединения|![](../designers/media/b1-4.png "B1_4")|Пересечение|
 |![](../designers/media/b1-2.png "B1_2")|Объединение|![](../designers/media/b1-5.png "B1_5")|Исключение перекрытия|
 |![](../designers/media/b1-3.png "B1_3")|Divide|![](../designers/media/b1-6.png "B1_6")|Subtract|
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Создание составного пути
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Создание составного пути
  При создании составного контура все пересекающиеся части контуров исключаются из результата, и результирующий контур принимает визуальные свойства нижнего контура.
 
  В любой момент после создания составного пути он может быть разбит на составляющие части.
@@ -123,12 +123,12 @@ ms.locfileid: "85542211"
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание составного контура](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Создание обтравочного контура
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Создание обтравочного контура
  Контур обрезки — это контур или фигура, применяемая к другому объекту, чтобы скрыть части маскируемого объекта за пределами контура обрезки.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

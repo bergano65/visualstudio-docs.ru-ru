@@ -1,5 +1,5 @@
 ---
-title: НИТИ-ГОСУДАРСТВО Документы Майкрософт
+title: С + + Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713338"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Определяет состояние потока.
+Указывает состояние потока.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,27 +50,27 @@ public enum enum_THREADSTATE { 
 
 ## <a name="fields"></a>Поля
  `THREADSTATE_RUNNING`\
- Означает, что поток работает.
+ Указывает, что поток работает.
 
  `THREADSTATE_STOPPED`\
- Означает, что поток остановлен из-за точки разрыва.
+ Указывает, что поток остановлен из-за точки останова.
 
  `THREADSTATE_FRESH`\
- Означает, что поток создан, но еще не запущен код.
+ Указывает, что поток был создан, но еще не выполняет код.
 
  `THREADSTATE_DEAD`\
- Означает, что поток мертв.
+ Указывает, что поток не существует.
 
  `THREADSTATE_FROZEN`\
- Означает, что поток заморожен (выполнение не может быть выполнено).
+ Указывает, что поток заморожен (выполнение не может быть выполнено).
 
-## <a name="remarks"></a>Примечания
- Используется для `dwThreadState` поля структуры [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+## <a name="remarks"></a>Remarks
+ Используется для `dwThreadState` поля структуры [среадпропертиес](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

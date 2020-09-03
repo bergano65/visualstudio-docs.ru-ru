@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES (АНГЛ. Документы Майкрософт
+title: СРЕАДПРОПЕРТИЕС | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713423"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
@@ -53,33 +53,33 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Участники
  `dwFields`\
- Комбинация флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисления, описывающая, какие поля в этой структуре являются действительными.
+ Сочетание флагов из перечисления [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) , описывающее, какие поля в этой структуре являются допустимыми.
 
  `dwThreadId`\
- Идентификатор нити.
+ Идентификатор потока.
 
  `dwSuspendCount`\
- Поток приостанавливает подсчет.
+ Число приостановок потока.
 
  `dwThreadState`\
- Значение из перечисления [THREADSTATE,](../../../extensibility/debugger/reference/threadstate.md) указывающее состояние рабочего потока.
+ Значение из перечисления "перечисление [", указывающее](../../../extensibility/debugger/reference/threadstate.md) состояние операционного потока.
 
  `bstrPriority`\
- Строка, определяющая приоритет потока; например, "Выше нормы", "Нормальный" или "Критические моменты".
+ Строка, указывающая приоритет потока; Например, "выше обычного", "нормального" или "критическое время".
 
  `bstName`\
  Имя потока.
 
  `bstrLocation`\
- Местоположение потока (обычно верхняя рамка стека), обычно выраженное как название метода, где выполнение в настоящее время остановлено.
+ Расположение потока (обычно самый верхний кадр стека), обычно выраженное в виде имени метода, в котором выполнение в данный момент останавливается.
 
-## <a name="remarks"></a>Примечания
- Эта структура заполняется вызовом к методу [GetThreadProperties.](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) Используемая таким образом информация обычно используется при заполнении окна **потоков.**
+## <a name="remarks"></a>Remarks
+ Эта структура заполняется вызовом метода [жетсреадпропертиес](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) . Эти сведения обычно используются при заполнении окна **потоков** .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

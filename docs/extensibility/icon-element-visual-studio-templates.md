@@ -1,5 +1,5 @@
 ---
-title: Элемент значки (Visual Studio Templates) Документы Майкрософт
+title: Элемент Icon (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710533"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Элемент значка (шаблоны Visual Studio)
-Для шаблона указывается путь и имя файла изображения, который служит в качестве значка, который отображается в поле для диалога **«Новый элемент»** или в диалоговом поле **«Добавить новый элемент».**
+# <a name="icon-element-visual-studio-templates"></a>Элемент Icon (шаблоны Visual Studio)
+Задает путь и имя файла изображения, который выступает в качестве значка, который отображается в диалоговом окне **Новый проект** или **Добавление нового элемента** для шаблона.
 
- \<> \<> templateData \<>>
+ \<VSTemplate> \<TemplateData>
+ \<Icon>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,11 +45,11 @@ ms.locfileid: "80710533"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Package`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
-|`ID`|Дополнительный атрибут для расширенных пользовательских сценариев.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
+|`Package`|Необязательный атрибут для сложных пользовательских сценариев.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
+|`ID`|Необязательный атрибут для сложных пользовательских сценариев.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -59,13 +60,13 @@ ms.locfileid: "80710533"
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным, если не используются атрибуты `Package` и `ID`.
 
- Текст предоставляет имя пути и файла значка шаблона, которое появится в диалоговом окне **нового проекта.**
+ Текст содержит путь и имя файла значка шаблона, который будет отображаться в диалоговом окне **Новый проект** .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  `Icon` — обязательный дочерний элемент элемента `TemplateData`.
 
 ## <a name="example"></a>Пример
- В следующем примере показаны метаданные [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для шаблона проекта для приложения.
+ В следующем примере показаны метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +93,5 @@ ms.locfileid: "80710533"
 ```
 
 ## <a name="see-also"></a>См. также
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

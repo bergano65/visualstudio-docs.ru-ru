@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114767"
 ---
 # <a name="persist-activity-designer"></a>Конструктор действия Persist
 
-Конструктор **сохранения** действия используется для создания и настройки действия <xref:System.Activities.Statements.Persist>.
+Конструктор **сохранения** действий используется для создания и настройки <xref:System.Activities.Statements.Persist> действия.
 
 ## <a name="the-persist-activity"></a>Действие Persist
 
@@ -29,17 +29,17 @@ ms.locfileid: "76114767"
 
 Конструктор **хранимых** операций можно найти в категории **Среда выполнения** **панели элементов**, щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
 
-Конструктор действий по **сохранению** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано действие <xref:System.Activities.Statements.Persist> с **отображаемым** по умолчанию значением DisplayName. <xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора **сохраненных** действий или в поле **DisplayName** сетки свойств.
+Конструктор действий по **сохранению** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence> . <xref:System.Activities.Statements.Persist>Будет создано действие с **отображаемым значением DisplayName** по умолчанию. <xref:System.Activities.Activity.DisplayName%2A>Можно изменить в заголовке конструктора **хранимых** операций или в поле **DisplayName** сетки свойств.
 
 ### <a name="the-persist-properties"></a>Свойства Persist
 
 В следующей таблице показаны свойства <xref:System.Activities.Statements.Persist> и описано их использование в конструкторе. Эти свойства можно изменять в сетке свойств, а некоторые из них можно редактировать на конструктор рабочих процессов поверхности.
 
-|Имя свойства|Обязательное|Метрики|
+|Имя свойства|Обязательно|Использование|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Ложь|Понятное имя действия <xref:System.Activities.Statements.Persist>. По умолчанию используется значение Persist. Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Неверно|Понятное имя действия <xref:System.Activities.Statements.Persist>. По умолчанию используется значение Persist. Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+- [Параметры выполнения](../workflow-designer/runtime-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

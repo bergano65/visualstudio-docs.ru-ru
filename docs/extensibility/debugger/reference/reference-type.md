@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE Документы Майкрософт
+title: REFERENCE_TYPE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713661"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
-Определяет тип ссылки.
+Указывает ссылочный тип.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,20 +44,20 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>Поля
  `REF_TYPE_WEAK`\
- Указывает слабую ссылку. Не может `REF_TYPE_STRONG`быть объединена с .
+ Указывает слабую ссылку. Не может использоваться вместе с `REF_TYPE_STRONG` .
 
  `REF_TYPE_STRONG`\
- Указывает на сильную ссылку. Не может `REF_TYPE_WEAK`быть объединена с .
+ Задает строгую ссылку. Не может использоваться вместе с `REF_TYPE_WEAK` .
 
-## <a name="remarks"></a>Примечания
- Используется в `dwRefType` качестве члена [структуры DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
+## <a name="remarks"></a>Remarks
+ Используется в качестве `dwRefType` члена структуры [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
 
- Прошел в качестве параметра к методу [SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
+ Передается в качестве параметра в метод [сетреференцетипе](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

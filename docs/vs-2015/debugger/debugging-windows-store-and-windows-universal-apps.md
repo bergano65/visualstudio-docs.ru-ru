@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545565"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Отладка приложений для Магазина Windows и универсальных приложений для Windows
@@ -38,5 +38,5 @@ ms.locfileid: "85545565"
 |[Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Находите и исправляйте ошибки в своих приложениях Магазина с помощью отладчика Visual Studio.|  
 |[Предварительная загрузка контента для приложений Магазина Windows](../debugger/prefetch-content-for-windows-store-apps.md)|Анализируйте влияние класса ContentPrefetcher на приложения Магазина Windows.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Анализ качества кода помощью метода анализа статического кода](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

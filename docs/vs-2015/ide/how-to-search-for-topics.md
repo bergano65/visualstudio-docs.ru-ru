@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5830bb71f66b27acf2ba63133a130c2ea24a9c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670759"
 ---
 # <a name="how-to-search-for-topics"></a>Практическое руководство. Поиск разделов
@@ -42,5 +42,5 @@ ms.locfileid: "72670759"
 
 4. Чтобы просмотреть раздел, выберите его заголовок в списке результатов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Советы по полнотекстовому поиску](../ide/full-text-search-tips.md) . [логические операторы в выражениях поиска](../ide/logical-operators-in-search-expressions.md) [Дополнительные операторы поиска в выражениях поиска](../ide/advanced-search-operators-in-search-expressions.md) [как настроить результаты поиска](../ide/how-to-customize-search-results.md)

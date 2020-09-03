@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657466"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Практическое руководство. Настройка анализа кода для веб-приложения ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] и [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] можно выбрать *набор правил* анализа кода, применяемых к [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] веб-приложению. Набор правил по умолчанию — Рекомендуемые правила Microsoft мининимум. Можно выбрать другой набор правил для применения к веб-сайту.
+В [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] и [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] можно выбрать *набор правил* анализа кода для применения к [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] веб-приложению. Набор правил по умолчанию — Рекомендуемые правила Microsoft мининимум. Можно выбрать другой набор правил для применения к веб-сайту.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Настройка набора правил для проекта платформы веб-страниц ASP.NET
 
@@ -43,6 +43,6 @@ ms.locfileid: "72657466"
 
     - Выберите набор правил, который хотите использовать.
 
-    - Выберите **\<Browse >** , чтобы указать существующий настраиваемый набор правил, отсутствующий в списке.
+    - Выберите, **\<Browse>** чтобы указать существующий настраиваемый набор правил, отсутствующий в списке.
 
     - Определите настраиваемый набор правил. Дополнительные сведения см. в разделе [Создание настраиваемых наборов правил](../code-quality/creating-custom-code-analysis-rule-sets.md).

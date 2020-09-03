@@ -1,5 +1,5 @@
 ---
-title: СТЕПУНИТ Документы Майкрософт
+title: СТЕПУНИТ | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a87c86647407d90c9f4292b1307fd5623e85d13b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713523"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Определяет единицу шага для шага.
+Указывает единицу шага для пошагового выполнения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,24 +46,24 @@ enum enum_STEPUNIT { 
 
 ## <a name="fields"></a>Поля
  `STEP_STATEMENT`\
- Шаги за заявлением.
+ Пошаговые инструкции.
 
  `STEP_LINE`\
- Шаги за строкой.
+ Пошаговые действия по строке.
 
  `STEP_INSTRUCTION`\
- Шаги за инструкцией.
+ Шаги по инструкциям.
 
-## <a name="remarks"></a>Примечания
- Прошел в качестве аргумента методу [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+## <a name="remarks"></a>Remarks
+ Передается в качестве аргумента в метод [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>См. также
 - [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

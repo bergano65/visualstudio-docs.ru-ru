@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 16f675cb62c0c3fd5f3aba7ba6190427fe101353
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814807"
 ---
 # <a name="unterminated-comment"></a>Комментарий без признака завершения
-Вы начали многострочный комментарий, но не завершили его правильно. Многострочные комментарии начинаются с сочетания "/*" и заканчиваются на обратную \* комбинацию "/". Ниже приведен пример:  
+Вы начали многострочный комментарий, но не завершили его правильно. Многострочные комментарии начинаются с сочетания "/*" и заканчиваются на обратную \* комбинацию "/". Ниже представлен пример такого кода:  
   
 ```JavaScript  
 /* This is a comment  
@@ -33,5 +33,5 @@ This is another part of the same comment.*/
   
 - Не забудьте прервать многострочные комментарии с помощью "*/".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Операторы комментария](../../javascript/reference/comment-statements-javascript.md)

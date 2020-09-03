@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO Документы Майкрософт
+title: PROCESS_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713887"
 ---
 # <a name="process_info"></a>PROCESS_INFO
-Содержит информацию о процессе.
+Содержит сведения о процессе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -57,43 +57,43 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Участники
  `Fields`\
- Комбинация флагов [из PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисления, которые определяют, какие поля заполнены.
+ Сочетание флагов из перечисления [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) , которые указывают, какие поля заполняются.
 
  `bstrFileName`\
- Полное название пути процесса. Эквивалент вызову метода [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) с параметром. `GN_FILENAME`
+ Полное имя пути процесса. Эквивалентно вызову метода [Зовите](../../../extensibility/debugger/reference/idebugprocess2-getname.md) с параметром `GN_FILENAME` .
 
  `bstrBaseName`\
- Имя файла и расширение процесса. Эквивалент вызову `IDebugProcess2::Getname` метода `GN_BASENAME`с параметром.
+ Имя и расширение файла процесса. Эквивалентно вызову `IDebugProcess2::Getname` метода с параметром `GN_BASENAME` .
 
  `bstrTitle`\
- Название процесса, если он существует. Эквивалент вызову `IDebugProcess2::Getname` метода `GN_TITLE`с параметром.
+ Заголовок процесса, если он существует. Эквивалентно вызову `IDebugProcess2::Getname` метода с параметром `GN_TITLE` .
 
  `ProcessId`\
- [Структура AD_PROCESS_ID,](../../../extensibility/debugger/reference/ad-process-id.md) которая определяет процесс. Эквивалент вызова метода [GetPhysicalProcessId.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+ Структура [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) , идентифицирующая процесс. Эквивалентно вызову метода [жетфисикалпроцессид](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .
 
  `dwSessionId`\
- Идентификатор сеанса отладки, в который находится этот процесс.
+ Идентификатор сеанса отладки, в котором выполняется этот процесс.
 
  `bstrAttachedSessionName`\
- Прилагаемое имя сеанса. Эквивалент вызова метода [GetAttachedSessionName.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+ Имя присоединенного сеанса. Эквивалентно вызову метода [жетаттачедсессионнаме](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .
 
  `CreationTime`\
  Время создания процесса.
 
  `Flags`\
- Комбинация флагов [из PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) перечисления, которые определяют свойства процесса.
+ Сочетание флагов из перечисления [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) , определяющих свойства процесса.
 
-## <a name="remarks"></a>Примечания
- Эта структура передается методу [GetInfo,](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) где она заполняется.
+## <a name="remarks"></a>Remarks
+ Эта структура передается в метод " [info](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) ", где он заполняется.
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)
