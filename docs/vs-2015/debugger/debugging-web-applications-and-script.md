@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155901"
 ---
 # <a name="debugging-web-applications-and-script"></a>Отладка веб-приложений и скриптов
@@ -34,16 +34,16 @@ ms.locfileid: "68155901"
 
 Условные обозначения:  
   
- В этом подразделе описаны общие методы отладки веб-приложений. Дополнительные сведения см. в разделе [Общие сведения об отладчике](../debugger/debugger-basics.md).  
+ В этом подразделе описаны общие методы отладки веб-приложений. Дополнительные сведения см. в разделе [основы отладчика](../debugger/debugger-basics.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
  Описание необходимых компонентов и указания по отладке приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] во время или после разработки.  
   
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Перечисление ошибок, с которыми можно столкнуться при отладке веб-приложения, и предполагаемые методы их устранения.  
   
- [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Пошаговое руководство: Отладка параллельного приложения в Visual Studio](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Описывает использование окон инструментов **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
@@ -59,6 +59,6 @@ ms.locfileid: "68155901"
  [IntelliTrace](../debugger/intellitrace.md)  
  Используйте IntelliTrace для ведения журнала выполнения приложений, чтобы сделать поиск ошибок более быстрым и удобным. Перемещайтесь вперед или назад между различными записанными событиями и вызовами для определения состояния приложения в соответствующие моменты времени. Производите отладку приложения, не устанавливая множество точек останова и не перезапуская приложение слишком часто. Доступно только в Visual Studio Ultimate.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByAddr | Документация Майкрософт
+title: 'Идиаенумсимболсбяддр:: Симболбяддр | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6561c3afd273a2a559138ed2363b4ffa4fdd0fd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189610"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Помещает перечислитель, выполняя поиск образа номер раздела и смещение.  
+Размещает перечислитель, выполняя поиск по номеру и смещению раздела изображения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,18 +36,18 @@ HRESULT symbolByAddr ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- isect  
- [in] Изображение номер раздела.  
+ исект  
+ окне Номер раздела изображения.  
   
- offsect  
- [in] Смещение в разделе.  
+ оффсект  
+ окне Смещение в разделе.  
   
- ppsymbol  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий найден символ.  
+ ппсимбол  
+ заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий найденный символ.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символ не найден. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если не удалось найти символ. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумсимболсбяддр](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

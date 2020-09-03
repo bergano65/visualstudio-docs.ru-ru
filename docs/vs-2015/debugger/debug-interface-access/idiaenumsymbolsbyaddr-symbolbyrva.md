@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByRVA | Документация Майкрософт
+title: 'Идиаенумсимболсбяддр:: Симболбирва | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7548e1b983384029f8019ef0b140aa5abc6ee7fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189618"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Помещает перечислитель, выполняя поиск по относительный виртуальный адрес (RVA).  
+Размещает перечислитель, выполняя поиск по относительному виртуальному адресу (RVA).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,16 +35,16 @@ HRESULT symbolByRVA ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- relativeVirtualAddress  
- [in] Адрес относительно начала изображения.  
+ релативевиртуаладдресс  
+ окне Адрес относительно начала образа.  
   
- ppsymbol  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий найден символ.  
+ ппсимбол  
+ заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий найденный символ.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если символ не найден. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если не удалось найти символ. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумсимболсбяддр](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
+ [Идиаенумсимболсбяддр:: Симболбива](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::Skip | Документация Майкрософт
+title: 'IDiaEnumSourceFiles:: Skip | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14bfe8762d914770dd2523a431bada883d003511
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189770"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Количество исходных файлов в последовательности перечисления для пропуска.  
+ окне Число пропускаемых исходных файлов в последовательности перечисления.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если нет другие исходные файлы, чтобы пропустить.  
+ В случае успеха возвращает значение `S_OK` ; в противном случае возвращает значение, `S_FALSE` Если нет других исходных файлов для пропуска.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Next | Документация Майкрософт
+title: 'Идиаенумсимболс:: Next | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdea32ece50e83c046a67399a0d5f36410edb9a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189706"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Параметры  
  celt  
- [in] Количество символов в перечислителе требуется получить.  
+ окне Число извлекаемых символов в перечислителе.  
   
  rgelt  
- [out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие нужные символы.  
+ заполняет Массив, который должен быть заполнен объектами [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющими нужные символы.  
   
  pceltFetched  
- [out] Возвращает количество символов в выбираемых перечислитель.  
+ заполняет Возвращает количество символов в полученном перечислителе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии отсутствуют дополнительные символы. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если больше нет символов. В противном случае возвращается код ошибки.  
   
 ## <a name="example"></a>Пример  
   
@@ -57,7 +57,7 @@ DWORD celt;
 pEnum->Next( 1, &pSym, &celt );  
 ```  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+## <a name="see-also"></a>См. также:  
+ [идиаенумсимболс](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [IDiaSession:: Финдлинесбилиненум](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

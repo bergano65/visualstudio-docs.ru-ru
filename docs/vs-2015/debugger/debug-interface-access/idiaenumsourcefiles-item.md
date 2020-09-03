@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::Item | Документация Майкрософт
+title: 'IDiaEnumSourceFiles:: Item | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62dce70d3ebf05694b453d13e1f11529dd21e8ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189784"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
@@ -35,15 +35,15 @@ HRESULT Item ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- индекс  
- [in] Индекс [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md) метод.  
+ index  
+ окне Индекс объекта [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) для извлечения. Индекс находится в диапазоне от 0 до `count` -1, где `count` возвращается методом [IDiaEnumSourceFiles:: get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md) .  
   
  sourceFile  
- [out] Возвращает [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объект, представляющий нужный исходный файл.  
+ заполняет Возвращает объект [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , представляющий нужный исходный файл.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

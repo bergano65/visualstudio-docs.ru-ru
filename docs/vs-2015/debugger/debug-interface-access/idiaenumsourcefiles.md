@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8b095515be5e3c032667c96d8b13d92aa5995c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189727"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
@@ -32,25 +32,25 @@ IDiaEnumSourceFiles : IUknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDiaEnumSourceFiles`.  
+ В следующей таблице показаны методы `IDiaEnumSourceFiles` .  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версии этот перечислитель.|  
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версию этого перечислителя.|  
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Возвращает число исходных файлов.|  
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Извлекает исходный файл с помощью индекса.|  
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Извлекает указанное число исходных файлов в последовательности перечисления.|  
 |[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Пропускает указанное число исходных файлов в последовательности перечисления.|  
 |[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Создает перечислитель, который содержит то же состояние перечисления, что и текущий перечислитель.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Получить этот интерфейс, вызвав `QueryInterface` метод [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объекта. Дополнительные сведения см.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получите этот интерфейс, вызвав `QueryInterface` метод для объекта [идиатабле](../../debugger/debug-interface-access/idiatable.md) . Дополнительные сведения см. в примере.  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как получить `IDiaEnumSourceFiles` интерфейс из списка таблиц в объекте сеанса доступа к интерфейсу отладки. Пример доступа к данные исходного файла, см. в разделе [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) интерфейс.  
+ В этом примере показано, как получить `IDiaEnumSourceFiles` интерфейс из списка таблиц в объекте сеанса Dia. Пример доступа к сведениям об исходном файле см. в разделе интерфейс [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) .  
   
 ```cpp#  
   
@@ -83,14 +83,14 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы (пакет SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession:: Финдфиле](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: Финдлинесбилиненум](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89192d814ccee3dd2a134807d8ce01880689d951
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204935"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Эта структура предоставляет сведения о процессах, запущенных на компьютере.  
+Эта структура предоставляет сведения о процессах, выполняемых на компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,25 +44,25 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>Участники  
  Поля  
- Сочетание флагов из [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) перечисления, указывающее, какие поля заполнены.  
+ Сочетание флагов из перечисления [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) , указывающее, какие поля заполняются.  
   
- ProgramNodes  
- Объект [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) структуру, содержащую массив узлов программы.  
+ програмнодес  
+ Структура [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) , содержащая массив узлов программы.  
   
- fIsDebuggerPresent  
- Ненулевое значение (`TRUE`) Если [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] работы отладчика, ноль (`FALSE`) Если это не так.  
+ фисдебугжерпресент  
+ Ненулевое `TRUE` значение () [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] , если отладчик работает, ноль (), если это не так `FALSE` .  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод, где он заполняется.  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается в метод [жетпровидерпроцессдата](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) , где она заполнена.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)   

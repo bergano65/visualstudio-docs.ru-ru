@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286197"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Приступая к разработке расширений Visual Studio
@@ -63,7 +63,7 @@ ms.locfileid: "85286197"
 
 - [Изолированная оболочка Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>Какие шаблоны проектов предоставляются VSSDK?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Какие шаблоны проектов предоставляются VSSDK?
  Два основных типа расширений — это пакеты VSPackage и расширения MEF. Как правило, расширения VSPackage используются для расширений, которые используют или расширяют команды, окна инструментов и проекты. Расширения MEF используются для расширения или настройки редактора Visual Studio.
 
  Для расширений Visual C# и Visual Basic VSSDK предоставляет пустой шаблон проекта VSIX, который можно использовать вместе с новыми шаблонами элементов, которые создают команды меню, окна инструментов и расширения редактора. Этот шаблон также можно использовать для упаковки шаблонов проектов, фрагментов кода и других артефактов для распространения другим пользователям.

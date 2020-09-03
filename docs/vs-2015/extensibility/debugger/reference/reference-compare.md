@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d617d428c9551bc821e1c72fa517497769e6f047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204922"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
+# <a name="reference_compare"></a>REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает тип сравнения для ссылки.  
+Указывает тип сравнения для ссылок.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,24 +45,24 @@ public enum enum_REFERENCE_COMPARE { 
   
 ## <a name="members"></a>Участники  
  REF_COMPARE_EQUAL  
- Указывает, обозначающая неравенство.  
+ Задает сравнение равенства.  
   
  REF_COMPARE_LESS_THAN  
- Указывает менее-чем сравнения.  
+ Указывает сравнение "меньше чем".  
   
  REF_COMPARE_GREATER_THAN  
- Указывает, больше — сравнение.  
+ Задает сравнение "больше чем".  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugreference2-compare.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве аргумента в метод [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Сравнить](../../../extensibility/debugger/reference/idebugreference2-compare.md)

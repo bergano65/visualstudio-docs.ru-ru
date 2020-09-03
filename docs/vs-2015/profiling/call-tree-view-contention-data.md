@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189364"
 ---
 # <a name="call-tree-view---contention-data"></a>Представление в виде дерева вызовов — данные о конфликтах
@@ -35,7 +35,7 @@ ms.locfileid: "68189364"
   
  Когда вы выбираете корневой узел, из представления удаляются все записи, кроме поддерева этого узла. Чтобы восстановить исходное значение корневого узла, щелкните правой кнопкой мыши в окне представления в виде дерева вызовов и выберите **Сбросить корень**.  
   
-|Столбец|ОПИСАНИЕ|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время, в течение которого экземпляры этой функции в этом пути выполнения были заблокированы при выполнении сеанса профилирования. Сюда не включается время блокировки дочерних функций, которые были вызваны этой функцией.|  
 |**Эксклюзивное время блокировки %**|Доля времени в процентах от общего времени блокировки в сеансе профилирования, в течение которого эта функция была эксклюзивно заблокирована в этом пути выполнения.|  
@@ -55,10 +55,10 @@ ms.locfileid: "68189364"
 |**Имя процесса**|Имя процесса.|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Call Tree View](../profiling/call-tree-view.md)  (Представление "Дерево вызовов")  
- [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  (Представление "Дерево вызовов" — инструментирование)  
- [Call Tree View - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  (Представление "Дерево вызовов" — выборка)  
- [Представление "Дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "дерево вызовов"](../profiling/call-tree-view.md)   
+ [Представление "дерево вызовов" — инструментирование](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Представление "дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)   
  [Представление "Дерево вызовов"](../profiling/call-tree-view-sampling-data.md)

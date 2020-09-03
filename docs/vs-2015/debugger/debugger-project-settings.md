@@ -1,5 +1,5 @@
 ---
-title: Параметры проекта отладчика | Документация Майкрософт
+title: Параметры проекта отладчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189569"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
@@ -53,7 +53,7 @@ ms.locfileid: "68189569"
  [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
  Список свойств, доступных в диалоговом окне **Страницы свойств** для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
  [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  В этом разделе описывается, как отладчик использует файлы символов и исходные файлы для отображения отладочной информации.  
   
@@ -63,5 +63,5 @@ ms.locfileid: "68189569"
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)  
  Описание параметров отладчика и подготовки, необходимой для отладки программы отладчиком [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)

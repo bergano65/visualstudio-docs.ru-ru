@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Документация Майкрософт
+title: 'IDebugBoundBreakpoint2:: Жетпендингбреакпоинт | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2030de26c384405bafaa22582145130a6a2e5da6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156231"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает ожидающая точка останова, из которого был создан указанного связанная точка останова.  
+Возвращает ожидающую точку останова, из которой была создана указанная связанная точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,16 +41,16 @@ int GetPendingBreakpoint( 
   
 #### <a name="parameters"></a>Параметры  
  `ppPendingBreakpoint`  
- [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающая точка останова, которая использовалась для создания данного привязан точки останова.  
+ заполняет Возвращает объект [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий отложенную точку останова, которая использовалась для создания этой привязанной точки останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Ожидающая точка останова может рассматриваться как коллекция все необходимые сведения, необходимые для привязки точку останова для кода, которые могут применяться для одного или нескольких программ.  
+## <a name="remarks"></a>Remarks  
+ Отложенная точка останова может рассматриваться как коллекция всех необходимых сведений, необходимых для привязки точки останова к коду, который может быть применен к одной или нескольким программам.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объекта, предоставляющего интерфейс [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
   
 ```  
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(  
@@ -83,6 +83,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }    
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
