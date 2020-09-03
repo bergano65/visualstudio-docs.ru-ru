@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520839"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
@@ -62,7 +62,7 @@ This report is Company Confidential.
     > [!NOTE]
     > Имя файла шаблона будет использоваться в качестве имени класса в созданном коде. Поэтому в нем не должно быть пробелов или знаков препинания.
 
-4. Нажмите кнопку **Добавить**.
+4. Выберите **Добавить**.
 
     Будет создан новый файл с расширением **. TT**. Его свойство **Custom Tool** имеет значение **тексттемплатингфилепрепроцессор**. Он содержит следующие строки:
 
@@ -107,7 +107,7 @@ This report is Company Confidential.
 
 ### <a name="plain-content"></a>Простое содержимое
 
-Измените **TT** файл, чтобы он содержал текст, который должен быть создан приложением. Пример:
+Измените **TT** файл, чтобы он содержал текст, который должен быть создан приложением. Например:
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Встроенный код программы
 
-Программный код можно вставлять между `<#` и `#>` . Пример:
+Программный код можно вставлять между `<#` и `#>` . Например:
 
 ```csharp
 <table>
@@ -427,13 +427,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные разделы
 
 Шаблоны времени разработки. Если вы хотите использовать шаблон для создания кода, который станет частью приложения, см. статью [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Шаблоны времени выполнения можно использовать в любом приложении, где шаблоны и их содержимое определяются во время компиляции. Но если вы хотите написать расширение Visual Studio, которое создает текст из шаблонов, которые изменяются во время выполнения, см. раздел [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
