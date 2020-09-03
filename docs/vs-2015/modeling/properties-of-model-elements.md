@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 22f7da98d349da2d80019750b18c0ed5a1bbb3bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671374"
 ---
 # <a name="properties-of-model-elements"></a>Свойства элементов модели
@@ -23,7 +23,7 @@ ms.locfileid: "72671374"
 
  В некоторых случаях дополнительные свойства можно найти в окне сведения о DSL.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  [Переопределение и расширение созданных классов](../modeling/overriding-and-extending-the-generated-classes.md)

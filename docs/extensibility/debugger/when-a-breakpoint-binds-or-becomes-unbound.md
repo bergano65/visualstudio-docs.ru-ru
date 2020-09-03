@@ -1,5 +1,5 @@
 ---
-title: Когда точка разрыва связывается или становится неограниченной (ru) Документы Майкрософт
+title: Когда точка останова привязывается или перестанет быть несвязанной | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712333"
 ---
-# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Когда точка разрыва связывается или становится неограниченной
-Когда точка разрыва не может быть связана в момент вызова [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) метод, время связывания и создания точки разрыва отличаются.
+# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Когда точка останова привязывается или перестанет быть несвязанной
+Если точка останова не может быть привязана во время вызова метода [IDebugPendingBreakpoint2:: канбинд](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , время привязки и время создания точки останова различаются.
 
-## <a name="methods-called"></a>Методы, называемые
- Менеджер отладки сеанса (SDM) называет следующие методы:
+## <a name="methods-called"></a>Вызываемые методы
+ Диспетчер отладки сеансов (SDM) вызывает следующие методы:
 
-1. [IDebugEngine2::СозданиеВ ожиданииТочки](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). DE возвращает [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).
+1. [IDebugEngine2:: креатепендингбреакпоинт](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Метод DE возвращает [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).
 
-2. [IDebugPendingBreakpoint2::Включить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).
+2. [IDebugPendingBreakpoint2:: enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).
 
-3. [IDebugPendingBreakpoint2::Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
+3. [IDebugPendingBreakpoint2:: виртуализировать](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
 
-4. [IDebugPendingBreakpoint2::Привязка](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) метод и возвращает S_OK. DE отправляет [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) или [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).
+4. Метод [IDebugPendingBreakpoint2:: BIND](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) и возвращает S_OK. Параметр DE отправляет [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) или [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).
 
-5. [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) и [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) методы проверки и получения связанных точек разрыва.
+5. Методы [IDebugBreakpointBoundEvent2:: жетпендингбреакпоинт](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) и [IDebugBreakpointBoundEvent2:: енумбаундбреакпоинтс](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) для проверки и получения связанных точек останова.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

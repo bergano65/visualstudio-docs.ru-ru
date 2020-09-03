@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8a2a2b83b818e37c0b62e103fe284c5c4d110c6c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815637"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>В регулярном выражении ожидался символ "]" (JavaScript)
@@ -31,6 +31,6 @@ ms.locfileid: "85815637"
     > [!NOTE]
     > Если нужно сопоставить одну квадратную скобку, построчно отменяйте ее с помощью обратной косой черты \\ [-, поэтому она не интерпретируется как Специальный символ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
  [Синтаксис регулярных выражений (JavaScript)](https://msdn.microsoft.com/library/1400241x)

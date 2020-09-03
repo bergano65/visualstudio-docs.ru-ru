@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID Документы Майкрософт
+title: AD_PROCESS_ID | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738165"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
-Упоняет идентификатор процесса, который может быть либо идентификатором системы, либо GUID.
+Указывает идентификатор процесса, который может быть либо системным ИДЕНТИФИКАТОРом, либо идентификатором GUID.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,17 +49,17 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>Участники
 `ProcessIdType`\
-Значение из [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) перечисления с указанием `ProcessId` того, как интерпретировать союз (или, для управляемого кода, к которому должен получить доступ член структуры).
+Значение из перечисления [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) , указывающее способ интерпретации `ProcessId` объединения (или для управляемого кода, к которому необходимо получить доступ).
 
 `dwProcessId`\
-Идентификатор процесса как значение из системы.
+Идентификатор процесса в виде значения из системы.
 
 `guidProcessId`\
-Идентификатор процесса как GUID.
+Идентификатор процесса в виде идентификатора GUID.
 
-dwUnused Padding.
+Заполнение Двунусед.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 Эта структура передается следующим методам:
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
@@ -77,13 +77,13 @@ dwUnused Padding.
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

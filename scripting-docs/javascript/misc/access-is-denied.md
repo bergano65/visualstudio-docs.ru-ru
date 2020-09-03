@@ -14,13 +14,13 @@ ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814841"
 ---
-# <a name="access-is-denied"></a>Отказано в доступе
+# <a name="access-is-denied"></a>Доступ запрещен
 Скрипт попытался получить доступ к данным из источника, который не является узлом текущей страницы. Политика одного источника, которой следует Internet Explorer и другие браузеры, позволяет скриптам получать доступ к данным только из тех источников, которые находятся в той же схеме, на том же узле и в том же порте, что и URL-адрес текущей страницы.  
   
  Например, если текущая страница имеет значение `https://employees.mycompany.com` , доступ к данным из следующих URL-адресов невозможен:  

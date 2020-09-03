@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546111"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Руководство. программное копирование данных и форматирование на листах
@@ -34,7 +34,7 @@ ms.locfileid: "85546111"
 ## <a name="compile-the-code"></a>Компиляция кода
  Для этого примера требуется диапазон с именем `rangeData` в листе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Работа с листами](../vsto/working-with-worksheets.md)
 - [Как программно добавлять новые листы в книги](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Руководство. Программное изменение форматирования в строках листа, содержащих выбранные ячейки](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)

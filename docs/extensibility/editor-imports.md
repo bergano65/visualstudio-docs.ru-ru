@@ -1,5 +1,5 @@
 ---
-title: Редактор Импорт (ru) Документы Майкрософт
+title: Редактор импортирует | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,114 +11,114 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712014"
 ---
-# <a name="editor-imports"></a>Импорт редактора
-Вы можете импортировать ряд услуг редактора, заводов и брокеров, которые предоставляют ваше расширение с различными видами доступа к основному редактору. Например, можно импортировать, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> чтобы <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> предоставить вам данный тип содержимого. (Этот навигатор позволяет выполнять различные виды поиска в буфере текста.)
+# <a name="editor-imports"></a>Импорт в редактор
+Можно импортировать несколько служб редактора, фабрик и брокеров, которые предоставляют расширение с разными видами доступа к основному редактору. Например, можно импортировать, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> чтобы предоставить <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для определенного типа содержимого. (Этот Навигатор позволяет выполнять различные виды поиска в текстовом буфере.)
 
- Чтобы использовать импорт редактора, вы импортируете его в поле или свойство класса, экспортируемого компонента Рамочной основы управляемой расширительности.
+ Чтобы использовать импорт редактора, импортируйте его как поле или свойство класса, который экспортирует компонент Managed Extensibility Framework компонента.
 
 > [!NOTE]
-> Для получения дополнительной информации о Рамочной системе управляемого повышения [см.](/dotnet/framework/mef/index)
+> Дополнительные сведения о Managed Extensibility Framework см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-## <a name="import-syntax"></a>Импортный синтаксис
- Ниже приводится следующий пример, как импортировать услугу фабрики вариантов редактора.
+## <a name="import-syntax"></a>Синтаксис импорта
+ В следующем примере показано, как импортировать службу фабрики параметров редактора.
 
 ```
 [Import]
 internal IEditorOptionsFactoryService EditorOptions { get; set; }
 ```
 
- Если вы хотите импортировать службу в качестве поля, а `null` не свойства, вы должны установить его в декларации, чтобы избежать предупреждения компилятора о не назначении переменной:
+ Если вы хотите импортировать службу как поле, а не свойство, следует задать для него значение `null` в объявлении, чтобы избежать предупреждений компилятора о неназначении переменной.
 
 ```
 [Import]
 internal IEditorOptionsFactoryService m_editorOptions = null;
 ```
 
- Дополнительные примеры использования импорта можно найти в следующих пошаговых предложениях:
+ Дополнительные примеры использования импортов см. в следующих пошаговых руководствах.
 
-- [Прохождение: Создать маржиглиф](../extensibility/walkthrough-creating-a-margin-glyph.md)
+- [Пошаговое руководство. Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)
 
-- [Пошаговое: Настроить текстовое представление](../extensibility/walkthrough-customizing-the-text-view.md)
+- [Пошаговое руководство. Настройка представления текста](../extensibility/walkthrough-customizing-the-text-view.md)
 
-- [Пошаговое прохождение: Выделите текст](../extensibility/walkthrough-highlighting-text.md)
+- [Пошаговое руководство. выделение текста](../extensibility/walkthrough-highlighting-text.md)
 
-- [Прохождение: Отображение инструментов quickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [Пошаговое руководство. Отображение подсказок краткие сведения](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
-- [Пошаговая прогулка: Помощь в отображении подписи](../extensibility/walkthrough-displaying-signature-help.md)
+- [Пошаговое руководство. Отображение справки по сигнатурам](../extensibility/walkthrough-displaying-signature-help.md)
 
-- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
 
-- [Прохождение: Отображение лампочки предложения](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)
+- [Пошаговое руководство. Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)
 
 ## <a name="import-the-service-provider"></a>Импорт поставщика услуг
- Вы также можете <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> импортировать (находится в сборке Microsoft.VisualStudio.Shell.Immutable.10.0) таким же образом, чтобы получить доступ к услугам Visual Studio:
+ Чтобы <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> получить доступ к службам Visual Studio, можно также импортировать (в сборке Microsoft. VisualStudio. Shell. неизменяемый. 10.0).
 
 ```csharp
 [Import]
 internal SVsServiceProvider ServiceProvider = null;
 ```
 
- Смотрите [Walkthrough: Доступ к объекту DTE из расширения редактора](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) для получения дополнительной информации.
+ Дополнительные сведения см. [в разделе Пошаговое руководство. доступ к объекту DTE из расширения редактора](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) .
 
 ## <a name="services"></a>Службы
- Службы редактора, как правило, являются отдельными объектами, предоставляющими услуги и совместно распределенными по нескольким компонентам.
+ Службы редактора обычно являются отдельными сущностями, которые предоставляют службу и являются общими для нескольких компонентов.
 
 |Импорт|Предоставляет|
 |------------|--------------|
-|<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Взаимосвязь между расширениями <xref:Microsoft.VisualStudio.Utilities.IContentType> файлов и объектами.|
+|<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Отношение между расширениями файлов и <xref:Microsoft.VisualStudio.Utilities.IContentType> объектами.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Коллекция объектов <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>Объектов.|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> объект.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Многие объекты адаптера редактора:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
-|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> для заданного текстового представления.|
-|<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>.|
-|<xref:Microsoft.VisualStudio.Text.ITextDocumentFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextDocument>.|
-|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceService>|Разница <xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceCollection%601> в чем.|
-|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalStringDifferenceService>|Разница <xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalDifferenceCollection> в чем.|
-|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>|A <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> или <xref:Microsoft.VisualStudio.Text.Projection.IElisionBuffer>.|
-|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>|Для <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> набора объектов. <xref:Microsoft.VisualStudio.Text.ITextBuffer>|
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassifierAggregatorService>|An <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> для <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|
-|<xref:Microsoft.VisualStudio.Text.Classification.IViewClassifierAggregatorService>|An <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMapService>|An <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
-|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>|An <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>|Поддерживает сбор объектов. <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>|
-|<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>|Для <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> буфера текста.|
-|<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>|Для <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> текстового представления.|
-|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptionsFactoryService>|Для <xref:Microsoft.VisualStudio.Text.Editor.IEditorOptions> указанного объема.|
-|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMapFactoryService>|Для <xref:Microsoft.VisualStudio.Text.Editor.IScrollMap> текстового представления.|
-|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|An <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
-|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Получает автоматический отступ через <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> объекты.|
-|<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|Управляет <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> для <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>.|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|Генерирует текст с форматом RTF из набора диапазонов моментальных снимков.|
-|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|An <xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
-|<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|Для <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> форматирования текстовых строк в представлении.|
-|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperations> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>|Поиск моментального снимка текста.|
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>|An <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для <xref:Microsoft.VisualStudio.Text.ITextBuffer> <xref:Microsoft.VisualStudio.Utilities.IContentType>by .|
-|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>|Для <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager> текстового представления.|
+|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch>Объект для заданного текстового представления.|
+|<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|
+|<xref:Microsoft.VisualStudio.Text.ITextDocumentFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.ITextDocument>.|
+|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceCollection%601>Различия между ними.|
+|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalStringDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalDifferenceCollection>Различия между ними.|
+|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> или <xref:Microsoft.VisualStudio.Text.Projection.IElisionBuffer> .|
+|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph>Для набора <xref:Microsoft.VisualStudio.Text.ITextBuffer> объектов.|
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>Для <xref:Microsoft.VisualStudio.Text.ITextBuffer> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IViewClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>Для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>Для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap>Для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>|Поддерживает коллекцию <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> объектов.|
+|<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> для текстового буфера.|
+|<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>Для текстового представления.|
+|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptionsFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptions>Для указанной области.|
+|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMapFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMap>Для текстового представления.|
+|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent>Для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Возвращает автоматический отступ через <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> объекты.|
+|<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|Управляет <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> для <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> .|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|Создает текст в формате RTF из набора диапазонов снимка.|
+|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer>Для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|Объект <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> для форматирования строк текста в представлении.|
+|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperations>Объект для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>|Выполняет поиск моментального снимка текста.|
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>|Объект <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для <xref:Microsoft.VisualStudio.Text.ITextBuffer> <xref:Microsoft.VisualStudio.Utilities.IContentType> .|
+|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>Для текстового представления.|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IGlyphService>|Стандартный набор глифов.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStackMapService>|An <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStack> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStackMapService>|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStack>Для <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IWpfKeyboardTrackingService>|Отслеживает обработку клавиатуры.|
 |<xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>|Стандартные <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> объекты.|
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistoryRegistry>|Поддерживает связь между текстовыми <xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistory> буферами и объектами.|
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistoryRegistry>|Поддерживает связь между текстовыми буферами и  <xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistory> объектами.|
 
-## <a name="other-imports"></a>Прочие импортные товары
- Фабрики-поставщики и брокеры, как правило, являются субъектами, которые могут иметь несколько экземпляров в нескольких компонентах.
+## <a name="other-imports"></a>Другие операции импорта
+ Фабрики поставщиков и брокеры — это обычно сущности, которые могут иметь несколько экземпляров в нескольких компонентах.
 
 |Импорт|Предоставляет|
 |------------|--------------|
-|<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|A <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> типа <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) для данного буфера.|
-|<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Текстовый маркер tagger <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> (тип). <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>|
-|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProviderFactory>|An <xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProvider> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>данного .|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
+|<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|Объект <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> типа <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> ) для заданного буфера.|
+|<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Средство создания тегов текстовых меток ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> типа <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> ).|
+|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProviderFactory>|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProvider>Для заданного объекта <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>|Объект <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|Объект <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|Объект <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
 
 ## <a name="see-also"></a>См. также
-- [Языковой сервис и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)
+- [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

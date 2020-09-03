@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a8ff19ab503efe58e207d36a87babb5b8a80b28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645396"
 ---
 # <a name="text-editor-options-dialog-box"></a>Диалоговое окно "Параметры текстового редактора"
@@ -33,7 +33,7 @@ ms.locfileid: "72645396"
 
 Параметры редактора в диалоговом окне **Параметры** позволяют настраивать внешний вид и поведение редактора.
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>в этом разделе
  [Как изменить шрифты и цвета в редакторе](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) Описывает, как изменить шрифты и цвета редактора.
 
  [Руководство. Управление переносом слов в редакторе](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md) Объясняет параметры переноса по словам.
@@ -54,15 +54,15 @@ ms.locfileid: "72645396"
 
  [Параметры, текстовый редактор, базовый (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Описание Visual Basic параметров.
 
- [Параметры, текстовый редактор, C/C++, форматирование](../../ide/reference/options-text-editor-c-cpp-formatting.md) описывает параметры CC++ /форматирование.
+ [Параметры, текстовый редактор, C/C++, форматирование](../../ide/reference/options-text-editor-c-cpp-formatting.md) Описывает параметры форматирования C/C++.
 
- [Параметры, текстовый редактор, C/C++, расширенные](../../ide/reference/options-text-editor-c-cpp-advanced.md) пояснения кC++ параметрам c/Advanced.
+ [Параметры, текстовый редактор, C/C++, расширенный](../../ide/reference/options-text-editor-c-cpp-advanced.md) Описание дополнительных параметров C/C++.
 
- [Параметры, текстовый редактор, C#форматирование](../../ide/reference/options-text-editor-csharp-formatting.md) . Описание C# параметров форматирования.
+ [Параметры, текстовый редактор, C#, форматирование](../../ide/reference/options-text-editor-csharp-formatting.md) Описание параметров форматирования C#.
 
- [Параметры, текстовый редактор, C#, дополнительные](../../ide/reference/options-text-editor-csharp-advanced.md) пояснения C# к дополнительным параметрам.
+ [Параметры, текстовый редактор, C#, расширенный](../../ide/reference/options-text-editor-csharp-advanced.md) Описание дополнительных параметров C#.
 
- [Параметры, текстовый редактор, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) описывает C# параметры IntelliSense.
+ [Параметры, текстовый редактор, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) Описывает параметры C# IntelliSense.
 
  [Параметры, текстовый редактор, JavaScript, форматирование](../../ide/reference/options-text-editor-javascript-formatting.md) Описание параметров форматирования JavaScript.
 
@@ -70,5 +70,5 @@ ms.locfileid: "72645396"
 
  [Параметры, текстовый редактор, XAML, форматирование](../../ide/reference/options-text-editor-xaml-formatting.md) Описывает параметры форматирования XAML.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Написание кода](../../ide/writing-code-in-the-code-and-text-editor.md) Описывает различные способы использования редактора кода.

@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE Документы Майкрософт
+title: REFERENCE_COMPARE | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713721"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
-Определяет тип сравнения для ссылок.
+Указывает тип сравнения для ссылок.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,21 +46,21 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>Поля
  `REF_COMPARE_EQUAL`\
- Определяет равное сравнение.
+ Задает сравнение равенства.
 
  `REF_COMPARE_LESS_THAN`\
- Указывает меньше, чем сравнение.
+ Указывает сравнение "меньше чем".
 
  `REF_COMPARE_GREATER_THAN`\
- Определяет больше, чем сравнение.
+ Задает сравнение "больше чем".
 
-## <a name="remarks"></a>Примечания
- Прошел в качестве аргумента методу [Сравнения.](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+## <a name="remarks"></a>Remarks
+ Передается в качестве аргумента в метод [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

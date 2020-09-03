@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535061"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018. Пометьте атрибуты с помощью AttributeUsageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
@@ -41,13 +41,13 @@ ms.locfileid: "85535061"
  <xref:System.AttributeTargets?displayProperty=fullName>Перечисление определяет целевые объекты, которые можно указать для настраиваемого атрибута. Если опустить <xref:System.AttributeUsageAttribute> , пользовательский атрибут будет действителен для всех целевых объектов, как определено `All` значением <xref:System.AttributeTargets> перечисления.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, укажите целевые объекты для атрибута с помощью <xref:System.AttributeUsageAttribute> . См. указанный ниже пример.
+ Чтобы устранить нарушение этого правила, укажите целевые объекты для атрибута с помощью <xref:System.AttributeUsageAttribute> . См. следующий пример.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Следует устранить нарушение этого правила, не исключая сообщение. Даже если атрибут наследуется <xref:System.AttributeUsageAttribute> , для упрощения обслуживания кода должен присутствовать атрибут.
 
 ## <a name="example"></a>Пример
- В следующем примере определяются два атрибута. `BadCodeMaintainerAttribute`неправильно опускает <xref:System.AttributeUsageAttribute> оператор и `GoodCodeMaintainerAttribute` правильно реализует атрибут, описанный ранее в этом разделе. Обратите внимание, что свойство `DeveloperName` является обязательным для правила разработки [CA1019: определяйте методы доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) и включается для полноты.
+ В следующем примере определяются два атрибута. `BadCodeMaintainerAttribute` неправильно опускает <xref:System.AttributeUsageAttribute> оператор и `GoodCodeMaintainerAttribute` правильно реализует атрибут, описанный ранее в этом разделе. Обратите внимание, что свойство `DeveloperName` является обязательным для правила разработки [CA1019: определяйте методы доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) и включается для полноты.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]
@@ -57,5 +57,5 @@ ms.locfileid: "85535061"
 
  [CA1813. Избегайте незапечатанных атрибутов](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Атрибуты](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

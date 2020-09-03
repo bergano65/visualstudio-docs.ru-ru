@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO Документы Майкрософт
+title: BP_ERROR_RESOLUTION_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738083"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
-Описывает разрешение точки разрыва ошибки, включая местоположение, программу и поток.
+Описывает разрешение точки останова по ошибке, включая расположение, программу и поток.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,34 +51,34 @@ public struct BP_ERROR_RESOLUTION_INFO {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Комбинация значений из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисления, определяющая, какие поля этой структуры заполнены.
+Сочетание значений перечисления [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) , указывающее, какие поля этой структуры заполнены.
 
 `bpResLocation`\
-[Профсоюз BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) который определяет местоположение разрешения точки разрыва.
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) объединение, которое указывает расположение разрешения точки останова.
 
 `pProgram`\
-Объект [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) представляющий приложение, в котором произошла ошибка точки разрыва.
+Объект [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий приложение, в котором произошла ошибка точки останова.
 
 `pThread`\
-Объект [IDebugThread2,](../../../extensibility/debugger/reference/idebugthread2.md) представляющий поток, на котором работает приложение, генерируемый ошибкой точки разрыва.
+Объект [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором работает приложение, создавшее ошибку точки останова.
 
 `bstrMessage`\
-Строка, содержащая любое сообщение предупреждения или ошибки в результате этого разрешения ошибок.
+Строка, содержащая любое предупреждение или сообщение об ошибке, полученное при этом разрешении ошибки.
 
 `dwType`\
-Значение из [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) перечисления, которое определяет тип ошибки точки разрыва.
+Значение из перечисления [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) , указывающее тип ошибки точки останова.
 
-## <a name="remarks"></a>Примечания
-Эта структура возвращается из метода [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+## <a name="remarks"></a>Remarks
+Эта структура возвращается методом [жетресолутионинфо](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

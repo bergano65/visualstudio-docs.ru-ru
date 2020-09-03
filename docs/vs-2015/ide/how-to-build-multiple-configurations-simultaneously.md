@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719b31e834b5410dd137a0c5b69cc07ae01651e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645472"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Практическое руководство. Построение с использованием нескольких конфигураций
@@ -25,7 +25,7 @@ ms.locfileid: "72645472"
 
 2. Все проекты Visual Basic.
 
-   Дополнительные сведения о конфигурациях сборки см. в разделе [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).
+   Дополнительные сведения о конфигурациях сборки см. в разделе [Основные сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).
 
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Сборка проекта в нескольких конфигурациях сборок
 
@@ -38,5 +38,5 @@ ms.locfileid: "72645472"
 
 3. Нажмите кнопку **Сборка** или **Пересобрать** для сборки проекта с указанными конфигурациями.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Как создавать и изменять конфигурации](../ide/how-to-create-and-edit-configurations.md) [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md) , [создающих несколько проектов в параллельном](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) режиме

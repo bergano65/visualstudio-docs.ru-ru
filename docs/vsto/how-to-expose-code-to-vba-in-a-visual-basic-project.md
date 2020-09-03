@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544850"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Руководство. предоставление кода коду VBA в Visual Basicном проекте
@@ -36,7 +36,7 @@ ms.locfileid: "85544850"
 
 - [Предоставить код, не наявляющийся классом ведущего элемента](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>Предоставление кода в классе ведущего элемента
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Предоставление кода в классе ведущего элемента
  Чтобы включить код VBA для вызова Visual Basic кода в классе ведущего элемента, задайте для свойства **свойства EnableVbaCallers** ведущего элемента **значение true**.
 
  Пошаговое руководство, в котором показано, как предоставить метод класса ведущего элемента и затем вызвать его из VBA, см. [в разделе Пошаговое руководство. вызов кода из VBA в Visual Basic проекте](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Дополнительные сведения о ведущих элементах см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).
@@ -71,7 +71,7 @@ ms.locfileid: "85544850"
 
 6. Выполните построение проекта.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>Предоставить код, не наявляющийся классом ведущего элемента
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Предоставить код, не наявляющийся классом ведущего элемента
  Чтобы включить код VBA для вызова Visual Basic кода, который не находится в классе ведущего элемента, измените код так, чтобы он был видим для VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Предоставление коду VBA кода, который не входит в класс ведущего элемента
@@ -115,7 +115,7 @@ ms.locfileid: "85544850"
 
 9. Выполните построение проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как создавать проекты Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
 - [Объединение настроек VBA и параметров на уровне документа](../vsto/combining-vba-and-document-level-customizations.md)

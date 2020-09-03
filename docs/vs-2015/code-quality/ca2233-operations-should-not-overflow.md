@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545240"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233. В операциях не должно быть переполнений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
@@ -47,7 +47,7 @@ ms.locfileid: "85545240"
 ## <a name="example-of-a-violation"></a>Пример нарушения
 
 ### <a name="description"></a>Описание
- Метод в следующем примере управляет целым числом, нарушающим это правило. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]для срабатывания этого параметра требуется отключить параметр " **Удалить** целочисленный переполнение".
+ Метод в следующем примере управляет целым числом, нарушающим это правило. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] для срабатывания этого параметра требуется отключить параметр " **Удалить** целочисленный переполнение".
 
 ### <a name="code"></a>Код
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
@@ -113,5 +113,5 @@ End Sub
 
 3. Выберите **проверка арифметического переполнения/потери точности** и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.OverflowException?displayProperty=fullName>[Операторы C#](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [установлены и сняты](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

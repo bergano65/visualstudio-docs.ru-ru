@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS Документы Майкрософт
+title: PROCESS_INFO_FIELDS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714011"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
-Указано, какую информацию получить для процесса.
+Указывает, какой тип сведений необходимо получить для процесса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,43 +58,43 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
 ## <a name="fields"></a>Поля
  `PIF_FILE_NAME`\
- Инициализация/использование `bstrFileName` поля [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.
+ Инициализируйте или используйте `bstrFileName` поле структуры [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 
  `PIF_BASE_NAME`\
- Инициализация/использование `bstrBaseName` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `bstrBaseName` поле `PROCESS_INFO` структуры.
 
  `PIF_TITLE`\
- Инициализация/использование `bstrTitle` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `bstrTitle` поле `PROCESS_INFO` структуры.
 
  `PIF_PROCESS_ID`\
- Инициализация/использование `ProcessId` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `ProcessId` поле `PROCESS_INFO` структуры.
 
  `PIF_SESSION_ID`\
- Инициализация/использование `dwSessionId` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `dwSessionId` поле `PROCESS_INFO` структуры.
 
  `PIF_ATTACHED_SESSION_NAME`\
- Инициализация/использование `bstrAttachedSessionName` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `bstrAttachedSessionName` поле `PROCESS_INFO` структуры.
 
  `PIF_CREATION_TIME`\
- Инициализация/использование `CreationTime` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `CreationTime` поле `PROCESS_INFO` структуры.
 
  `PIF_FLAGS`\
- Инициализация/использование `Flags` `PROCESS_INFO` поля структуры.
+ Инициализируйте или используйте `Flags` поле `PROCESS_INFO` структуры.
 
  `PIF_ALL`\
  Заполняет все поля.
 
-## <a name="remarks"></a>Примечания
- Прошел в метод [GetInfo,](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) чтобы указать, какие поля [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры должны быть инициализированы.
+## <a name="remarks"></a>Remarks
+ Передается в метод " [info](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) ", чтобы указать, какие поля структуры [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) должны быть инициализированы.
 
- Также используется `Fields` в `PROCESS_INFO` поле структуры, чтобы указать, какие поля используются и действительны.
+ Также используется в `Fields` поле структуры, `PROCESS_INFO` чтобы указать, какие поля используются и являются допустимыми.
 
- Эти флаги могут быть `OR`объединены с bitwise .
+ Эти флаги можно сочетать с помощью побитовой операции `OR` .
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 

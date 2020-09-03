@@ -1,5 +1,5 @@
 ---
-title: Регистратор кода каталога (ru) Документы Майкрософт
+title: Перечислитель кода состояния каталога | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712156"
 ---
-# <a name="directory-status-code-enumerator"></a>Перечисление кода каталога
-Регистратор `SccDirStatus` содержит именованные постоянные значения, определяющие состояние каталога в системе управления исходным источником. Этот перечисление используется [SccDir-EryInfo](../extensibility/sccdirqueryinfo-function.md). Это было введено в версии 1.2 API подключаемого элемента управления исходным управлением.
+# <a name="directory-status-code-enumerator"></a>Перечислитель кода состояния каталога
+`SccDirStatus`Перечислитель содержит именованные постоянные значения, указывающие состояние каталога в системе управления версиями. Это перечисление используется [сккдиркуеринфо](../extensibility/sccdirqueryinfo-function.md). Это было представлено в версии 1,2 API подключаемого модуля системы управления версиями.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,14 +33,14 @@ enum SccDirStatus {
 ```
 
 ## <a name="members"></a>Участники
- SCC_DIRSTATUS_INVALID статус не может быть получен; не полагайтесь на него.
+ Не удалось получить состояние SCC_DIRSTATUS_INVALID; не полагайтесь на нее.
 
- SCC_DIRSTATUS_NOTCONTROLLED каталог не находится под контролем источника.
+ SCC_DIRSTATUS_NOTCONTROLLED каталог не находится в системе управления версиями.
 
- SCC_DIRSTATUS_CONTROLLED каталог находится под контролем источника.
+ SCC_DIRSTATUS_CONTROLLED Directory находится в системе управления версиями.
 
- SCC_DIRSTATUS_EMPTYPROJ проект, соответствующий этому каталогу, пуст.
+ Проект SCC_DIRSTATUS_EMPTYPROJ, соответствующий этому каталогу, пуст.
 
 ## <a name="see-also"></a>См. также
-- [Плагины управления исходным элементом](../extensibility/source-control-plug-ins.md)
+- [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

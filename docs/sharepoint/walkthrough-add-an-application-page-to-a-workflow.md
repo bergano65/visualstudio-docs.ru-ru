@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015497"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство. Добавление страницы приложения в рабочий процесс
@@ -39,7 +40,7 @@ ms.locfileid: "86015497"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 - Кроме того, необходимо выполнить проект, [описанный в разделе Пошаговое руководство. Создание рабочего процесса с формами ассоциаций и инициации](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
@@ -130,7 +131,7 @@ ms.locfileid: "86015497"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3. Добавьте в метод `Page_Load` следующий код:
+3. Добавьте следующий код в метод `Page_Load`:
 
     ```vb
     Try

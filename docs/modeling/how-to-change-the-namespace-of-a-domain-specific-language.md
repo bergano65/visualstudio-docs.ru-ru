@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542679"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Как изменить пространство имен для предметно-ориентированного языка
@@ -32,7 +32,7 @@ ms.locfileid: "85542679"
 
    Отобразятся свойства проекта.
 
-5. Перейдите на вкладку **приложение** .
+5. Перейдите на вкладку **Приложение**.
 
 6. Измените значение свойства **пространство имен по умолчанию** на новое имя пространства имен.
 

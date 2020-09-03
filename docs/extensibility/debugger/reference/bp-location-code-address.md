@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS Документы Майкрософт
+title: BP_LOCATION_CODE_ADDRESS | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738035"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
-Описывает расположение точки разрыва по адресу в коде.
+Описывает расположение точки останова по адресу в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,28 +37,28 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>Участники
 `bstrContext`\
-Контекст точки разрыва, как правило, метод или имя функции, как видно на стеке вызова.
+Контекст точки останова, обычно имя метода или функции, как показано в стеке вызовов.
 
 `bstrModuleUrl`\
-URL-адрес модуля, содержащего точку разрыва.
+URL-адрес модуля, содержащего точку останова.
 
 `bstrFunction`\
-Название функции, содержащей точку разрыва.
+Имя функции, содержащей точку останова.
 
 `bstrAddress`\
-Адрес точки разрыва, который разбирается оценщиком выражения, чтобы связать его с объектом [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+Адрес точки останова, который анализируется средством оценки выражений для привязки его к объекту [идебугаддресс](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="remarks"></a>Примечания
-Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуры в составе профсоюза.
+## <a name="remarks"></a>Remarks
+Эта структура является членом структуры [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) в составе объединения.
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

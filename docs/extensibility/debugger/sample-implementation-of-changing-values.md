@@ -1,5 +1,5 @@
 ---
-title: Пример реализации изменяющихся значений Документы Майкрософт
+title: Пример реализации изменения значений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713119"
 ---
-# <a name="sample-implementation-of-changing-values"></a>Пример реализации изменяющихся значений
+# <a name="sample-implementation-of-changing-values"></a>Пример реализации изменяемых значений
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Каждый локальный элемент, отображаемый в окне **Locals,** имеет связанный с ним объект [IDebugProperty2.](../../extensibility/debugger/reference/idebugproperty2.md) Этот `IDebugProperty2` объект содержит имя, значение и тип локального значения. Когда пользователь изменяет значение локального, Visual Studio вызывает [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) для обновления значения локального значения в памяти. В этом примере локальный интерес `CFieldProperty` представлен классом, который реализует `IDebugProperty2` интерфейс.
+ С каждым локальным окном, отображаемым в окне **локальные** , связан объект [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) . Этот `IDebugProperty2` объект содержит имя, значение и тип локального компьютера. Когда пользователь изменяет значение локального, Visual Studio вызывает [сетвалуеасстринг](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) для обновления значения локальной в памяти. В этом примере локаль представляется `CFieldProperty` классом, реализующим `IDebugProperty2` интерфейс.
 
 > [!NOTE]
-> Для выражений **Watch** и **quickWatch** изменение значения представлено `CValueProperty` классом в образце MyCEE. Тем не менее, реализация `IDebugProperty2::SetValueAsString` такая же, как показано здесь.
+> Для выражений **Watch** и **Быстрая проверка** значение изменяемого значения представлено `CValueProperty` классом в примере мицее. Однако реализация аналогична приведенной `IDebugProperty2::SetValueAsString` здесь.
 
  Реализация `IDebugProperty2::SetValueAsString` выполняет следующие задачи:
 
-1. Оценивает выражение для создания значения.
+1. Вычисляет выражение для получения значения.
 
-2. Связывает связанный объект [IDebugField](../../extensibility/debugger/reference/idebugfield.md) с его местоположением памяти и производит объект [IDebugObject.](../../extensibility/debugger/reference/idebugobject.md)
+2. Привязывает связанный объект [идебугфиелд](../../extensibility/debugger/reference/idebugfield.md) к его расположению в памяти и создает объект [идебугобжект](../../extensibility/debugger/reference/idebugobject.md) .
 
-3. Преобразует значение в ряд байтов.
+3. Преобразует значение в последовательность байтов.
 
-4. Вызовы [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) для хранения байтов в памяти.
+4. Вызывает [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) для хранения байтов в памяти.
 
 ## <a name="managed-code"></a>Управляемый код
- Следующий код — `IDebugProperty2::SetValueAsString` это реализация управляемого кода.
+ Следующий код является реализацией `IDebugProperty2::SetValueAsString` в управляемом коде.
 
 ```csharp
 namespace EEMC
@@ -223,7 +223,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Неуправляемый код
- Следующий код — `IDebugProperty2::SetValueAsString` это реализация управляемого кода. Функция `FieldCoerceValueType` помощника (не показана) `VARIANT` заставляет быть определенным типом и гарантирует, `FieldSetValue` что значение является одним из типов может обрабатывать.
+ Следующий код является реализацией `IDebugProperty2::SetValueAsString` в управляемом коде. Вспомогательная функция `FieldCoerceValueType` (не показана) принудительно `VARIANT` применяет к конкретному типу и гарантирует, что значение `FieldSetValue` может обрабатываться одним из типов.
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(
@@ -420,6 +420,6 @@ HRESULT FieldSetValue(
 
 ```
 
-## <a name="see-also"></a>См. также
-- [Изменение ценности локального](../../extensibility/debugger/changing-the-value-of-a-local.md)
+## <a name="see-also"></a>См. также раздел
+- [Изменение значения локального](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [Контекст оценки](../../extensibility/debugger/evaluation-context.md)

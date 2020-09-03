@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION Документы Майкрософт
+title: TEXT_POSITION | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713414"
 ---
 # <a name="text_position"></a>TEXT_POSITION
-Описывает расположение строки и столбца в данном тексте.
+Описывает положение строк и столбцов в заданном тексте.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,13 +47,13 @@ public struct TEXT_POSITION { 
 Индекс строки в исходном файле.
 
 `dwColumn`\
-Персонаж смещен в линию.
+Смещение символа в строке.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Эта структура используется в [структурах CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) и [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
+Эта структура используется в структурах [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) и [дисассемблидата](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Эта структура заполняется призывом к следующим методам:
+Эта структура заполняется вызовом следующих методов:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -77,9 +77,9 @@ public struct TEXT_POSITION { 
 
 ## <a name="requirements"></a>Требования
 
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
