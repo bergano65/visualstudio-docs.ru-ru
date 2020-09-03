@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField Документы Майкрософт
+title: 'Идебугкустоматтрибуте:: Жетпарентфиелд | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fae84a4d02438335aea00c50dd9b89520d08bae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732698"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Получает поле, к которому прикрепляется пользовательский атрибут.
+Возвращает поле, к которому присоединен настраиваемый атрибут.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetParentField(
 
 ## <a name="parameters"></a>Параметры
 `ppField`\
-(ваут) Возвращает объект [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) представляющий поле, к которому прикрепляется пользовательский атрибут.
+заполняет Возвращает объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , представляющий поле, к которому присоединен настраиваемый атрибут.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Позвоните в метод [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) на возвращенном объекте [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) чтобы определить, какое поле является родителем.
+## <a name="remarks"></a>Remarks
+ Вызовите метод [Kind](../../../extensibility/debugger/reference/idebugfield-getkind.md) для возвращенного объекта [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , чтобы определить, какой тип поля является родительским.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
