@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544980"
 ---
 # <a name="microsoft-help-viewer"></a>Окно справки (Майкрософт)
@@ -74,5 +74,5 @@ ms.locfileid: "85544980"
 
   В нижней области окна справки содержится информация об общем размере ожидающих файлов для скачивания, объеме требуемого дискового пространства и объеме свободного дискового пространства. Эта область также содержит сведения об ошибках, которые могли произойти, и ссылку, по которой можно обновить установленное содержимое при наличии обновлений.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Средство просмотра справки Руководство администратора по](../ide/help-viewer-administrator-guide.md) [установке и управлению локальным содержимым](../ide/install-and-manage-local-content.md) [Поиск сведений об](../ide/locate-information.md) [устранении неполадок в средстве просмотра справки](../ide/troubleshooting-the-help-viewer.md)

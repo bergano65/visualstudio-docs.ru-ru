@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016487"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Пошаговое руководство. Создание страницы приложения SharePoint
@@ -25,7 +26,7 @@ ms.locfileid: "86016487"
 
 В этом пошаговом руководстве показано, как создать страницу приложения, а затем выполнить ее отладку с помощью локального сайта SharePoint. На этой странице показаны все элементы, созданные или измененные каждым пользователем на всех сайтах фермы серверов.
 
-В данном пошаговом руководстве рассмотрены следующие задачи:
+В этом пошаговом руководстве описаны следующие задачи:
 
 - Создание проекта SharePoint.
 - Добавление страницы приложения в проект SharePoint.

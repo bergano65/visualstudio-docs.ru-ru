@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544785"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Руководство. Установка основных сборок взаимодействия Office
@@ -34,7 +34,7 @@ ms.locfileid: "85544785"
     > [!WARNING]
     > По умолчанию PIA внедряются в решение при его сборке, поэтому вам не нужно распространять PIA для пользователей в качестве необходимого компонента для использования надстройки или настройки VSTO.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Office - основные сборки взаимодействия](../vsto/office-primary-interop-assemblies.md)
 - [Пошаговое руководство. Назначение приложений Office через основные сборки взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Как настроить компьютер для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

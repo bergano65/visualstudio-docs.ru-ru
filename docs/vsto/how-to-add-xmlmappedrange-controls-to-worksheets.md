@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544889"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Как добавить элементы управления XMLMappedRange на листы
@@ -60,7 +60,7 @@ ms.locfileid: "85544889"
     > [!NOTE]
     > При перетаскивании родительского элемента из области задач **Источник XML** <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Расширение других частей визуальной студии (ru) Документы Майкрософт
+title: Расширение других частей Visual Studio | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3c9076fbba822a1dfcff1ef13294ebd4dcafd9e9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711768"
 ---
-# <a name="extend-other-parts-of-visual-studio"></a>Расширить другие части Визуальной студии
+# <a name="extend-other-parts-of-visual-studio"></a>Расширение других частей Visual Studio
 
-Есть еще много частей визуальной студии uI, которые можно расширить. Здесь мы покажем вам несколько.
+Существует множество дополнительных частей пользовательского интерфейса Visual Studio, которые можно расширить. Здесь мы покажем всего несколько.
 
 ## <a name="create-a-vspackage"></a>Создание VSPackage
 
-Основными строительными блоками Visual Studio Extensibility являются VSPackages.  Узнайте, как добавить VSPackage: [Создайте расширение с VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+Основными стандартными блоками расширения Visual Studio являются пакеты VSPackage.  Узнайте, как добавить пакет VSPackage: [Создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-## <a name="extend-the-toolbox"></a>Расширить набор инструментов
+## <a name="extend-the-toolbox"></a>Расширение области элементов
 
-Узнайте, как добавить новые элементы управления и другие элементы в Набор инструментов и как использовать функциональность Toolbox:
+Узнайте, как добавлять новые элементы управления и другие элементы на панель элементов и как использовать функциональные возможности панели элементов.
 
-- [Создание управления ящиком инструментов WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Создание элемента управления панели элементов WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
-- [Создание управления набором инструментов форм Windows](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Создание Windows Forms элемента управления панели элементов](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
-## <a name="extend-the-status-bar"></a>Расширить планку состояния
+## <a name="extend-the-status-bar"></a>Расширение строки состояния
 
-Узнайте, как читать и писать в бар статуса и панель прогресса, а также как предоставить анимацию и другой uI: [Продлите планку статуса.](../extensibility/extending-the-status-bar.md)
+Узнайте, как выполнять чтение и запись в строке состояния и на индикаторе выполнения, а также как предоставлять анимацию и другой пользовательский интерфейс: [расширять строку состояния](../extensibility/extending-the-status-bar.md).
 
 ::: moniker range="vs-2017"
 
-## <a name="create-custom-start-pages"></a>Создание пользовательских страниц запуска
+## <a name="create-custom-start-pages"></a>Создание настраиваемых начальных страниц
 
-Узнайте, как сделать свою собственную стартовую страницу, либо с нуля, либо из загружаемого образца стартовой страницы: [Создайте пользовательскую стартовую страницу.](../extensibility/creating-a-custom-start-page.md)
+Узнайте, как создать собственную начальную страницу, с нуля или с помощью загружаемого образца начальной страницы: [Создание настраиваемой начальной страницы](../extensibility/creating-a-custom-start-page.md).
 
 ::: moniker-end
 
-## <a name="write-to-the-activity-log"></a>Запись в журнал активности
+## <a name="write-to-the-activity-log"></a>Запись в журнал действий
 
-Узнайте, как написать в журнал активности: [Как: Используйте журнал активности](../extensibility/how-to-use-the-activity-log.md).
+Сведения о записи в журнал действий: [как использовать журнал действий](../extensibility/how-to-use-the-activity-log.md).

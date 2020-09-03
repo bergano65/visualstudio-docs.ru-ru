@@ -1,5 +1,5 @@
 ---
-title: Примерная реализация оценки экспрессии Документы Майкрософт
+title: Пример реализации вычисления выражения | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713100"
 ---
-# <a name="sample-implementation-of-expression-evaluation"></a>Пример реализации оценки выражений
+# <a name="sample-implementation-of-expression-evaluation"></a>Пример реализации вычисления выражений
 > [!IMPORTANT]
-> В Visual Studio 2015 этот способ внедрения оценщиков экспресс-выражений унижается. Для получения информации о реализации оценщиков экспрессии [Managed expression evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)CLR [см.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Для выражения окна **Watch** Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания объекта [IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md) `IDebugExpressionContext2::ParseText`мгновенно оценивает выражение (EE) и вызывает [Parse,](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) чтобы получить объект [IDebugParsedExpression.](../../extensibility/debugger/reference/idebugparsedexpression.md)
+ Для выражения окна **контрольных значений** Visual Studio вызывает [парсетекст](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания объекта [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) . `IDebugExpressionContext2::ParseText` создает экземпляр средства оценки выражений (EE) и вызывает метод [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для получения объекта [идебугпарседекспрессион](../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
- Выполняет `IDebugExpressionEvaluator::Parse` следующие задачи:
+ `IDebugExpressionEvaluator::Parse`Выполняет следующие задачи:
 
-1. (только си) Сравнивает выражение для поиска ошибок.
+1. [Только C++] Анализирует выражение для поиска ошибок.
 
-2. Мгновения класса `CParsedExpression` (называется в этом `IDebugParsedExpression` примере), который запускает интерфейс и хранит в классе выражение, которое будет разогнано.
+2. Создает экземпляр класса (вызываемого `CParsedExpression` в этом примере), который запускает `IDebugParsedExpression` интерфейс и сохраняет в классе анализируемое выражение.
 
-3. Возвращает `IDebugParsedExpression` интерфейс с `CParsedExpression` объекта.
+3. Возвращает `IDebugParsedExpression` интерфейс из `CParsedExpression` объекта.
 
 > [!NOTE]
-> В примерах, которые следуют за выборкой MyCEE, оценщик выражения не отделяет разбор от оценки.
+> В примерах ниже и в образце Мицее средство оценки выражений не отделяет анализ от оценки.
 
 ## <a name="managed-code"></a>Управляемый код
- Следующий код показывает `IDebugExpressionEvaluator::Parse` реализацию управляемого кода. Эта версия метода откладывает разбор [для EvaluateSync,](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) как код для разбора также оценивает в то же время [(см. Оценить выражение Watch).](../../extensibility/debugger/evaluating-a-watch-expression.md)
+ В следующем коде показана реализация `IDebugExpressionEvaluator::Parse` в управляемом коде. Эта версия метода откладывает анализ на [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , так как код для синтаксического анализа также вычисляется одновременно (см. статью [Вычисление выражения контрольных значений](../../extensibility/debugger/evaluating-a-watch-expression.md)).
 
 ```csharp
 namespace EEMC
@@ -64,7 +64,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Неуправляемый код
-Следующий код — `IDebugExpressionEvaluator::Parse` это реализация неуправляемого кода. Этот метод вызывает функцию `Parse`помощника, чтобы разобрать выражение и проверить на наличие ошибок, но этот метод игнорирует полученное значение. Официальная оценка откладывается до [EvaluateSync,](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) где выражение разбирается во время оценки (см. [Оценить выражение Watch).](../../extensibility/debugger/evaluating-a-watch-expression.md)
+Следующий код является реализацией `IDebugExpressionEvaluator::Parse` в неуправляемом коде. Этот метод вызывает вспомогательную функцию, `Parse` для синтаксического анализа выражения и проверки на наличие ошибок, но этот метод игнорирует результирующее значение. Формальное вычисление откладывается до [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , где выражение анализируется при его вычислении (см. статью [Вычисление выражения контрольных значений](../../extensibility/debugger/evaluating-a-watch-expression.md)).
 
 ```cpp
 STDMETHODIMP CExpressionEvaluator::Parse(
@@ -107,6 +107,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>См. также
-- [Оценка выражения окна Watch](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [Оценка выражения Watch](../../extensibility/debugger/evaluating-a-watch-expression.md)
+## <a name="see-also"></a>См. также раздел
+- [Вычисление выражения окно контрольных значений](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Вычисление выражения контрольных значений](../../extensibility/debugger/evaluating-a-watch-expression.md)

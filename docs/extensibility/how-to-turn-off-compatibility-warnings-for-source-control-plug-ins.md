@@ -1,5 +1,5 @@
 ---
-title: Выключите предупреждения о совместимости для подключаемых модули управления исходным управлением (ru) Документы Майкрософт
+title: Отключение предупреждений о совместимости для подключаемых модулей системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710725"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Как: Выключить предупреждения о совместимости для плагинов управления исходным управлением
-Пользователь может видеть несколько предупреждений о совместимости при использовании элемента управления исходом в. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Предупреждения, представленные зависит от возможностей плагина управления исходным источником и могут быть отключены, как описано здесь.
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Пошаговое руководство. Отключение предупреждений о совместимости для подключаемых модулей системы управления версиями
+Пользователь может столкнуться с несколькими предупреждениями о совместимости при использовании системы управления версиями в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Представленные предупреждения зависят от возможностей подключаемого модуля системы управления версиями и могут быть отключены, как описано здесь.
 
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Отключить предупреждение: "Обеспечить оптимальную интеграцию управления исходным источником с Visual Studio"
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Отключение предупреждения: "чтобы обеспечить оптимальную интеграцию системы управления версиями с Visual Studio"
 
-- Установите следующую запись реестра (при необходимости добавляя значение):
+- Задайте следующую запись реестра (при необходимости добавьте значение):
 
-   **HKEY_CURRENT_USER-Программное обеспечение,Microsoft-VisualStudio-8.0 -ИсточникКонтроль/DontDisplayCheckDotCOMPATIBLe - dword:00000001**
+   **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
 
-   Это предупреждение отображается для[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] всех не-плагинов.
+   Это предупреждение отображается для всех не [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] подключаемых модулей.
 
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Отключить предупреждение: "Поставщик управления установленным исходным источником не поддерживает все возможности"
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Чтобы отключить предупреждение: "установленный поставщик системы управления версиями не поддерживает все возможности"
 
-- Установите следующие два значения реестра (при необходимости добавлении значений):
+- Задайте следующие два значения реестра (при необходимости добавьте значения):
 
-     **HKEY_CURRENT_USER-Программное обеспечение,Microsoft-VisualStudio-8.0 -ИсточникКонтроль-ПредупрежденОлдMsSCCIProvider - dword:00000000**
+     **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**
 
-    **HKEY_CURRENT_USER-Программное обеспечение,Microsoft-VisualStudio-8.0 -ИсточникКонтроль-UseOldSCC - dword:00000001**
+    **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
 
-     Это предупреждение отображается, если плагин управления исходным элементом явно не поддерживает повторное размещение для нескольких проектов (т.е. если он может зарегистрировать только один файл и проект одновременно).
+     Это предупреждение отображается, если подключаемый модуль системы управления версиями не поддерживает повторное повторное вход для нескольких проектов (то есть если он может одновременно выполнять возврат только одного файла и проекта).
 
-     Лучше всего поддерживать ретрансцию`SCC_CAP_REENTRANT` (возможности); это удалит это предупреждение. Однако, если эта поддержка непредставляется, эти записи реестра могут быть установлены.
+     Рекомендуется поддерживать повторный вход ( `SCC_CAP_REENTRANT` возможность); это приведет к удалению этого предупреждения. Однако если такая поддержка невозможна, можно установить эти записи реестра.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Флаги возможностей](../extensibility/capability-flags.md)

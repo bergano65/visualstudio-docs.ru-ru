@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114640"
 ---
 # <a name="domain-path-syntax"></a>Синтаксис пути домена
@@ -23,7 +23,7 @@ ms.locfileid: "76114640"
 
  Путь домена имеет следующий вид:
 
- *Relationshipname атрибута. PropertyName/! Role*
+ *RelationshipName.PropertyName/!Role*
 
  ![Связь типа “Ссылка" CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
@@ -35,6 +35,6 @@ ms.locfileid: "76114640"
 
  Имя, используемое для перехода от элемента к связи, является значением роли `Property Name`. Имя, используемое для перехода от связи к элементу, является именем целевой роли.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)

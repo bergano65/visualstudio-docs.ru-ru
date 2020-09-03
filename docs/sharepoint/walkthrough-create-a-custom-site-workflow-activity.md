@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016532"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Пошаговое руководство. Создание настраиваемого действия рабочего процесса сайта
@@ -44,7 +45,7 @@ ms.locfileid: "86016532"
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
-- приведенному.
+- Visual Studio.
 
 ## <a name="create-a-site-workflow-custom-activity-project"></a>Создание проекта настраиваемого действия рабочего процесса сайта
  Сначала создайте проект для хранения и тестирования настраиваемого действия рабочего процесса.

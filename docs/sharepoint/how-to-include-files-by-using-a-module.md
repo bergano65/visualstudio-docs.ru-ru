@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016295"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Инструкции. Включение файлов с помощью модуля
@@ -52,7 +53,7 @@ ms.locfileid: "86016295"
 
      При добавлении файла в проект запись для него автоматически добавляется в файл Elements.xml модуля. При развертывании проекта файлы копируются на сервер SharePoint Server относительно корневого каталога проекта, который задается атрибутом **URL-адреса** элемента **File** , например `Url="Module1/New Folder/SomeFile.doc` . Если вы хотите изменить расположение развертывания для файла, переместите его в другую папку в **Обозреватель решений** или измените его **URL-адрес** .
 
-8. Для файлов, которые должны отображаться в библиотеке документов, добавьте `Type="GhostableInLibrary"` атрибут к записи в *Elements.xml*. Например,
+8. Для файлов, которые должны отображаться в библиотеке документов, добавьте `Type="GhostableInLibrary"` атрибут к записи в *Elements.xml*. Например, примененная к объекту директива
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

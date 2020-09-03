@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114670"
 ---
 # <a name="control-flow-activity-designers"></a>Конструкторы действия управления потоком
 
 Конструктор рабочих процессов включает ряд предоставляемых системой действий, которые можно использовать при создании рабочих процессов. В этом разделе содержатся действия, предусмотренные системой, и служащие для управления потоком в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.
 
-## <a name="reference"></a>Справочные сведения
+## <a name="reference"></a>Справочник
 
  <xref:System.Activities.Activity>
 
@@ -51,9 +51,9 @@ ms.locfileid: "76114670"
 
  [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)
 
- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+ [Параметры выполнения](../workflow-designer/runtime-activity-designers.md)
 
  [Примитивы](../workflow-designer/primitives-activity-designers.md)
 

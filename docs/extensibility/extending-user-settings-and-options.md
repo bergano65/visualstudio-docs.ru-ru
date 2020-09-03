@@ -1,5 +1,5 @@
 ---
-title: Расширение пользовательских настроек и опций (ru) Документы Майкрософт
+title: Расширение параметров пользователя и параметров | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711553"
 ---
-# <a name="extend-user-settings-and-options"></a>Расширение настроек и параметров пользователя
-В Visual Studio есть два основных способа поддержания пользовательских предпочтений. Страницы > **«Инструменты параметры»** позволяют пользователям устанавливать свои собственные значения для различных типов настроек, как общих, так и специфических для языка. **Tools** Настройки пользователя позволяют пользователям указывать общие свойства конфигурации Visual Studio. Для получения дополнительной информации о страницах опционов смотрите [страницы Options and Options.](../extensibility/internals/options-and-options-pages.md) Для получения дополнительной информации [Support for user settings](../extensibility/internals/support-for-user-settings.md)о настройках пользователя см.
+# <a name="extend-user-settings-and-options"></a>Расширение параметров пользователя и параметров
+В Visual Studio есть два основных способа сохранения пользовательских настроек. Страницы **Tools**  >  **параметров** инструментов позволяют пользователям задавать собственные значения для различных типов параметров, как общих, так и зависящих от языка. Параметры пользователя позволяют пользователям указывать общие свойства конфигурации Visual Studio. Дополнительные сведения о страницах параметров см. в разделе [Параметры и страницы](../extensibility/internals/options-and-options-pages.md)параметров. Дополнительные сведения о параметрах пользователей см. в разделе [Поддержка параметров пользователя](../extensibility/internals/support-for-user-settings.md).
 
-- [Создание страницы опций](../extensibility/creating-an-options-page.md) Объясняет, как создать страницу опций.
+- [Создание страницы параметров](../extensibility/creating-an-options-page.md) Объясняется, как создать страницу параметров.
 
-- [Создание категории настроек](../extensibility/creating-a-settings-category.md) Объясняет, как создать категорию настроек.
+- [Создание категории параметров](../extensibility/creating-a-settings-category.md) Объясняет, как создать категорию параметров.
 
-- [Использование хранилища настроек](../extensibility/using-the-settings-store.md) Объясняет, как использовать хранилище настроек.
+- [Использование хранилища параметров](../extensibility/using-the-settings-store.md) Объясняется, как использовать хранилище параметров.
 
-- [Получить информацию об услугах в магазине настроек](../extensibility/getting-service-information-from-the-settings-store.md) Объясняет, как получить доступные услуги в магазине настроек.
+- [Получение сведений о службе из хранилища параметров](../extensibility/getting-service-information-from-the-settings-store.md) Сведения о том, как получить доступные службы из хранилища параметров.
 
-- [Запись в хранилище настроек пользователя](../extensibility/writing-to-the-user-settings-store.md) Объясняет, как писать в хранилище настроек пользователя.
+- [Запись в хранилище параметров пользователя](../extensibility/writing-to-the-user-settings-store.md) Описание процесса записи в хранилище параметров пользователя.
