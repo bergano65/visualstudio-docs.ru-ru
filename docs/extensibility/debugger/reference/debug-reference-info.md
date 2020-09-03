@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REFERENCE_INFO Документы Майкрософт
+title: DEBUG_REFERENCE_INFO | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e31205f52151679f932877c9c4fdc56907ea59e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737411"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
@@ -53,37 +53,37 @@ public struct DEBUG_REFERENCE_INFO {
 
 ## <a name="members"></a>Участники
 `dwFields`\
-Комбинация флагов [из DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисления, которая определяет, какие поля заполнены.
+Сочетание флагов из перечисления [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) , которое указывает, какие поля заполняются.
 
 `bstrName`\
-Указанное пользователем имя объекта [IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md)
+Заданное пользователем имя объекта [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) .
 
 `bstrType`\
-Тип отсчета как отформатированная строка.
+Ссылочный тип в виде форматированной строки.
 
 `bstrValue`\
-Справочное значение как отформатированная строка
+Ссылочное значение в виде форматированной строки
 
 `dwAttrib`\
-Комбинация флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, которая определяет флаги для атрибутов свойства отладки.
+Сочетание флагов из перечисления [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) , которое задает флаги для атрибутов свойств отладки.
 
 `dwRefType`\
-Значение из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисления, которое определяет, является ли тип ссылки сильным или слабым.
+Значение из перечисления [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) , указывающее, является ли ссылочный тип строгим или слабым.
 
 `m_pReference`\
-Объект [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) который определяет справочную информацию.
+Объект [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , указывающий справочные сведения.
 
-## <a name="remarks"></a>Примечания
-Эта структура передается на вызов к методу [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) для заполнения. Эта структура также возвращается как часть списка из интерфейса [IEnumDebugReferenceInfo2,](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) который, в свою очередь, возвращается из вызова в метод [EnumChildren.](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+## <a name="remarks"></a>Remarks
+Эта структура передается в вызов метода [жетреференцеинфо](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) , который должен быть заполнен. Эта структура также возвращается как часть списка из интерфейса [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) , который, в свою очередь, возвращается из вызова метода [енумчилдрен](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) .
 
 ## <a name="requirements"></a>Требования
-Заголовок: msdbg.h
+Заголовок: мсдбг. h
 
-Название: Microsoft.VisualStudio.Debugger.Interop
+Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
 Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)

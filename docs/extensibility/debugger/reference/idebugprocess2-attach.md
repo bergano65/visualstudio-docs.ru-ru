@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцесс2::Прикрепите Документы Майкрософт
+title: 'IDebugProcess2:: Attach | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724196"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-Прикрепляет к процессу менеджер отладки сеанса (SDM).
+Присоединяет диспетчер отладки сеансов (SDM) к процессу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,31 +47,31 @@ int Attach( 
 
 ## <a name="parameters"></a>Параметры
 `pCallback`\
-(в) Объект [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) используемый для уведомления о событиях.
+окне Объект [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , используемый для уведомления о событии отладки.
 
 `rgguidSpecificEngines`\
-(в) Массив GUIDs отладок двигателей, которые будут использоваться для отладки программ, работающих в этом процессе. Этот параметр может быть нулевая величина. Дополнительные сведения см. в разделе "Примечания".
+окне Массив идентификаторов GUID модулей отладки, которые будут использоваться для отладки программ, выполняющихся в процессе. Этот параметр может иметь значение null. Дополнительные сведения см. в разделе "Примечания".
 
 `celtSpecificEngines`\
-(в) Количество отладок двигателей `rgguidSpecificEngines` в массиве `rghrEngineAttach` и размер массива.
+окне Количество модулей отладки в `rgguidSpecificEngines` массиве и размер `rghrEngineAttach` массива.
 
 `rghrEngineAttach`\
-(в, вне) Массив кодов HRESULT, возвращенных двигателями отладки. Размер этого массива указан `celtSpecificEngines` в параметре. Каждый код, `S_OK` `S_ATTACH_DEFERRED`как правило, либо . Последний указывает на то, что DE в настоящее время прилагается к программам.
+[вход, выход] Массив кодов HRESULT, возвращаемых отладчиками. Размер этого массива указывается в `celtSpecificEngines` параметре. Каждый код обычно имеет значение `S_OK` или `S_ATTACH_DEFERRED` . Последнее означает, что в настоящее время в программе «DE» прикрепляется.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. В следующей таблице показаны другие возможные значения.
 
 |Значение|Описание|
 |-----------|-----------------|
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Указанный процесс уже подключен к отладчику.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Нарушение безопасности произошло во время процедуры присоединения.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Процесс рабочего стола не может быть прикреплен к отладчику.|
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Указанный процесс уже присоединен к отладчику.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Во время процедуры подключения возникло нарушение безопасности.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Рабочий процесс не может быть присоединен к отладчику.|
 
-## <a name="remarks"></a>Примечания
- Присоединение к процессу прикрепляет SDM ко всем программам, работающим в этом процессе, которые `rgguidSpecificEngines` могут быть отдипированы двигателями отладки (DE), указанными в массиве. Установите `rgguidSpecificEngines` параметр на нулевую величину или включите `GUID_NULL` в массив, чтобы прикрепить ко всем программам в процессе.
+## <a name="remarks"></a>Remarks
+ Присоединение к процессу прикрепляет SDM ко всем программам, выполняемым в этом процессе, которые могут быть отлажены модулями отладки (DE), указанными в `rgguidSpecificEngines` массиве. Задайте `rgguidSpecificEngines` для параметра значение null или включите `GUID_NULL` в массив, чтобы присоединить его ко всем программам в процессе.
 
- Все события отладки, возникающие в процессе, отправляются на данный объект [IDebugEventCallback2.](../../../extensibility/debugger/reference/idebugeventcallback2.md) Этот `IDebugEventCallback2` объект предоставляется при вызове этого метода SDM.
+ Все события отладки, происходящие в процессе, отправляются в указанный объект [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) . Этот `IDebugEventCallback2` объект предоставляется, когда SDM вызывает этот метод.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541249"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения
@@ -90,7 +90,7 @@ ms.locfileid: "85541249"
 6. Закройте диалоговое окно **Форматирование и дополнительная привязка** .
 
 ## <a name="update-the-database"></a>Обновление базы данных
- Если источник данных в памяти связан с базой данных, необходимо обновить базу данных с использованием изменений в источнике данных. Дополнительные сведения об обновлении базы данных см. в разделе [Сохранение данных в базе данных](../data-tools/save-data-back-to-the-database.md) и [Обновление данных с помощью адаптера таблицы TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
+ Если источник данных в памяти связан с базой данных, необходимо обновить базу данных с использованием изменений в источнике данных. Дополнительные сведения об обновлении базы данных см. в разделе [Сохранение данных в базе данных](../data-tools/save-data-back-to-the-database.md)  и [Обновление данных с помощью адаптера таблицы TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Обновление базы данных
 
@@ -112,7 +112,7 @@ ms.locfileid: "85541249"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 - [Обновление данных с помощью адаптера таблицы](../data-tools/update-data-by-using-a-tableadapter.md)

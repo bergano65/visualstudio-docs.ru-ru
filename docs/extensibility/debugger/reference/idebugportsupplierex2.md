@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2 Документы Майкрософт
+title: IDebugPortSupplierEx2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724321"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Предоставляет поддержку поставщику порта для выбора и взаимодействия с основным сервером.
+Обеспечивает поддержку поставщика порта для выбора и взаимодействия с основным сервером.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,24 +26,24 @@ ms.locfileid: "80724321"
 IDebugPortSupplierEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Поставщик пользовательских портов реализует этот интерфейс, чтобы он мог выбрать основной сервер для использования.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Пользовательский поставщик портов реализует этот интерфейс, чтобы он мог выбрать основной сервер для использования.
 
 ## <a name="methods"></a>Методы
  В следующей таблице показаны методы **IDebugPortSupplierEx2**.
 
 |Метод|Описание|
 |------------|-----------------|
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Устанавливает основной сервер для поставщика порта.|
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Задает основной сервер для поставщика порта.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Portpriv.h
+ Заголовок: Портприв. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

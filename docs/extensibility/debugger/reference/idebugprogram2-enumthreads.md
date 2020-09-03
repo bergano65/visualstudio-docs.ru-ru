@@ -1,5 +1,5 @@
 ---
-title: IDebugПрограмма2::EnumThreads Документы Майкрософт
+title: 'IDebugProgram2:: EnumThreads | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 76b93ef5489e57f74c05e5925b4304f1e93e9830
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722995"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
-Извлекает список потоков, запущенных в программе.
+Извлекает список потоков, выполняемых в программе.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,12 +41,12 @@ int EnumThreads( 
 
 ## <a name="parameters"></a>Параметры
 `ppEnum`\
-(ваут) Возвращает объект [IEnumDebugThreads2,](../../../extensibility/debugger/reference/ienumdebugthreads2.md) содержащий список потоков.
+заполняет Возвращает объект [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) , содержащий список потоков.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

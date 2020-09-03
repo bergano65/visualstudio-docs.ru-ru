@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 783f7fad05cad18efea2f83b6d76c4c9e644f119
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548386"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: пометьте логические аргументы P/Invoke с помощью атрибута MarshalAs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Item|Значение|
+|Элемент|Значение|
 |-|-|
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
@@ -36,7 +36,7 @@ ms.locfileid: "85548386"
  Объявление метода вызова неуправляемого кода включает <xref:System.Boolean?displayProperty=fullName> параметр или возвращаемое значение, но <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> атрибут не применяется к параметру или возвращаемому значению.
 
 ## <a name="rule-description"></a>Описание правила
- Метод вызова платформы обращается к неуправляемому коду и определяется с помощью `Declare` ключевого слова в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute>Задает поведение маршалинга, используемое для преобразования типов данных между управляемым и неуправляемым кодом. Многие простые типы данных, такие как <xref:System.Byte?displayProperty=fullName> и <xref:System.Int32?displayProperty=fullName> , имеют одно представление в неуправляемом коде и не нуждаются в спецификации их поведения при маршалинге. среда CLR автоматически предоставляет правильное поведение.
+ Метод вызова платформы обращается к неуправляемому коду и определяется с помощью `Declare` ключевого слова в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute> Задает поведение маршалинга, используемое для преобразования типов данных между управляемым и неуправляемым кодом. Многие простые типы данных, такие как <xref:System.Byte?displayProperty=fullName> и <xref:System.Int32?displayProperty=fullName> , имеют одно представление в неуправляемом коде и не нуждаются в спецификации их поведения при маршалинге. среда CLR автоматически предоставляет правильное поведение.
 
  <xref:System.Boolean>Тип данных имеет несколько представлений в неуправляемом коде. Если параметр <xref:System.Runtime.InteropServices.MarshalAsAttribute> не указан, поведением маршалинга по умолчанию для <xref:System.Boolean> типа данных является <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . Это 32-разрядное целое число, которое не подходит во всех обстоятельствах. Логическое представление, необходимое для неуправляемого метода, должно быть определено и сопоставлено с соответствующим <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . UnmanagedType. bool — это тип BOOL Win32, который всегда равен 4 байтам. UnmanagedType. U1 следует использовать для C++ `bool` или других 1-байтовых типов. Дополнительные сведения см. в разделе [маршалирование по умолчанию для логических типов](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 
@@ -58,5 +58,5 @@ ms.locfileid: "85548386"
 
  [CA2101: укажите маршалирование для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>[Маршалирование по умолчанию для логических типов](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [, взаимодействии с неуправляемым кодом](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

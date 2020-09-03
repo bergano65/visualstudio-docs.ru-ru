@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972339"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
 
 В этом пошаговом руководстве показано, как создать расширение с помощью команды меню, запускающей Блокнот.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 

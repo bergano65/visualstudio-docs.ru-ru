@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierLocale2 Документы Майкрософт
+title: IDebugPortSupplierLocale2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724301"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Предоставляет локальную поддержку поставщику порта.
+Обеспечивает поддержку языкового стандарта для поставщика порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,24 +26,24 @@ ms.locfileid: "80724301"
 IDebugPortSupplierLocale2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Поставщик пользовательских портов реализует этот интерфейс для установки локализации.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Пользовательский поставщик портов реализует этот интерфейс для задания языкового стандарта.
 
 ## <a name="methods"></a>Методы
  В следующей таблице показаны методы **IDebugPortSupplierLocale2**.
 
 |Метод|Описание|
 |------------|-----------------|
-|[Setlocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Устанавливает локаль для поставщика порта.|
+|[Pragma](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Задает языковой стандарт для поставщика порта.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Portpriv.h
+ Заголовок: Портприв. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

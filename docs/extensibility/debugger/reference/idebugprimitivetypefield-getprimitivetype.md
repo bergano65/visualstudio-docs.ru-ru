@@ -1,5 +1,5 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType Документы Майкрософт
+title: 'Идебугпримитиветипефиелд:: Жетпримитиветипе | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a66c7c2e312795fa4303c8702e70cd509536de98
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724276"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
-Извлекает примитивный тип, связанный с этим полем.
+Извлекает тип-примитив, связанный с этим полем.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,10 +40,10 @@ int GetPrimitiveType (
 
 ## <a name="parameters"></a>Параметры
 `pdwType`\
-(ваут) Значение из [значения CorElementType Enumeration,](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) представляющего примитивный тип.
+заполняет Значение из [перечисления корелементтипе](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющее тип-примитив.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае `S_OK`успеха, возвращается ; в противном случае, возвращается `S_FALSE`.
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)

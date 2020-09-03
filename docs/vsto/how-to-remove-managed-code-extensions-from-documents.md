@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b4f5cb3098289463cea7e650332583ec7b12258
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541314"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Руководство. Удаление расширений управляемого кода из документов
@@ -51,6 +51,6 @@ ms.locfileid: "85541314"
 
 4. Выполните сборку проекта и запустите приложение на компьютере, на котором нужно удалить настройку. На компьютере должна быть установлена среда выполнения средств Visual Studio 2010 для Office.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Как присоединить расширения управляемого кода к документам](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

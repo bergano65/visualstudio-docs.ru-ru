@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548373"
 ---
 # <a name="customizing-the-model-explorer"></a>Настройка обозревателя моделей
@@ -111,6 +111,6 @@ ms.locfileid: "85548373"
 
      Обозреватель должен показывать только узел **актеров** и не должен отображать узел **Комментарии** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

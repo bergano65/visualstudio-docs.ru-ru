@@ -1,5 +1,5 @@
 ---
-title: IDebugПроцессКЕвирЫСвойства::КвирНедвижимость Документы Майкрософт
+title: 'Идебугпроцесскуерипропертиес:: Куерипроперти | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b190d7ed1d3690be898334270bbd1d16584b81a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723294"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-Этот метод запрашивает для определенного значения свойства процесса отладки.
+Этот метод запрашивает указанное значение свойства процесса отладки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,13 +39,13 @@ int QueryProperty(
 
 ## <a name="parameters"></a>Параметры
 `dwPropType`\
-(в) Определение запрашиваемого свойства. Значения качества производительности:
+окне Определение запрошенного свойства. Значения качества производительности:
 
-- PROCESS_PROPERTY_COMMAND_LINE No 1
+- PROCESS_PROPERTY_COMMAND_LINE = 1
 
-- PROCESS_PROPERTY_CURRENT_DIRECTORY No 2
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
 
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES No 3
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
 [out] Значение свойства.
@@ -53,8 +53,8 @@ int QueryProperty(
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Этот метод используется редко.
+## <a name="remarks"></a>Remarks
+ Этот метод редко используется.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)
