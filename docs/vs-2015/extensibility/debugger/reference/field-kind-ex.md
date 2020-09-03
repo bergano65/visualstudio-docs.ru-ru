@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198755"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Перечисляет дополнительные типы полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.  
+Перечисляет дополнительные типы полей, которые может содержать объект [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) . Это перечисление расширяет перечисление [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,18 +48,18 @@ public enum enum_FIELD_KIND_EX
  Поле не содержит расширенного типа.  
   
  FIELD_TYPE_EX_METHODVAR  
- Поле содержит переменную в метод.  
+ Поле содержит переменную метода.  
   
  FIELD_TYPE_EX_CLASSVAR  
- Поле содержит переменной класса.  
+ Поле содержит переменную класса.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule (англ.) Документы Майкрософт
+title: Идебугсаурцесервермодуле | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2c362bc4a103c707238acfa3b3148f00c0e25be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719910"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
-Представляет информацию об исходном сервере, содержащуюся в файле PDB.
+Представляет сведения о исходном сервере, содержащиеся в PDB-файле.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,19 +26,19 @@ ms.locfileid: "80719910"
 IDebugSourceServerModule : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Этот интерфейс реализован с помощью двигателей-отладчиков и потребляется uI-интерфейсом отладчика.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Этот интерфейс реализуется механизмами отладчика и используется в пользовательском интерфейсе отладчика.
 
 ## <a name="methods"></a>Методы
- В следующей таблице показаны методы `IDebugSourceServerModule`.
+ В следующей таблице показаны методы `IDebugSourceServerModule` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив информации об исходном сервере.|
+|[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Извлекает массив сведений о исходном сервере.|
 
 ## <a name="requirements"></a>Требования
- Заголовок: Msdbg.h
+ Заголовок: Мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll

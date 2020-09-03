@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 008169829a6cf76e959d00f010959239a5f390b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665651"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
@@ -42,7 +42,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 
  /projectconfig `ProjConfigName` Необязательный. Имя конфигурации сборки проекта, которая применяется при перестроении указанного `/project`.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 - Этот параметр выполняет те же функции, что и команда меню **Перестроить решение** в интегрированной среде разработки (IDE).
 
@@ -51,11 +51,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 - Сводные данные для удаления и сборки, включая ошибки, могут отображаться в окне **Команда** или любом файле журнала, указанном с помощью параметра `/out`.
 
 ## <a name="example"></a>Пример
- В этом примере выполняется удаление и перестроение проекта `CSharpWinApp` с помощью конфигурации сборки `Debug` в конфигурации решения `Debug` `MySolution`.
+ В этом примере выполняется удаление и перестроение проекта `CSharpWinApp` с помощью конфигурации сборки `Debug` в конфигурации решения `Debug``MySolution`.
 
 ```
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.](../../ide/reference/clean-devenv-exe.md) exe) [/out (devenv. exe](../../ide/reference/out-devenv-exe.md) )
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

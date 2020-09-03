@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d5088366548c9f92d04f1b65a3afc378db29d6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665607"
 ---
 # <a name="replace-in-files-command"></a>Команда Replace In Files
@@ -40,7 +40,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
  `replacewith` Обязательный. Текст для замены совпавшего текста.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /ALL или/a необязательный. Заменяет все вхождения искомого текста на замещающий текст.
 
  /case или /c Необязательный. Совпадение происходит только в том случае, если прописные и строчные знаки точно соответствуют тем, что указаны в аргументе `findwhat`.
@@ -78,5 +78,5 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Поиск и замена текста](../../ide/finding-and-replacing-text.md) ["заменить в файлах](../../ide/replace-in-files.md) " [командное окно](../../ide/reference/command-window.md) ["Поиск/команда"](../../ide/find-command-box.md) в [Visual Studio командные](../../ide/reference/visual-studio-commands.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

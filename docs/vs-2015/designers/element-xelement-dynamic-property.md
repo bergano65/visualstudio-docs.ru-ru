@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c6171a5dedfd6985a6f54e748011bf86e03f4d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664654"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (динамическое свойство XElement)
@@ -31,11 +31,11 @@ ms.locfileid: "72664654"
 elem.Element[{namespaceName}localName]
 ```
 
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение
  Индексатор типа `XElement Item(String expandedName)`. Этот индексатор берет параметр развернутого имени и возвращает соответствующее значение элемента <xref:System.Xml.Linq.XElement> или `null`, если элемента с таким именем не существует.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Это свойство эквивалентно методу <xref:System.Xml.Linq.XContainer.Element%2A> класса <xref:System.Xml.Linq.XContainer?displayProperty=fullName>.
 
-## <a name="see-also"></a>См. также
- <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName> [элементы](../designers/elements-xelement-dynamic-property.md) [динамических свойств класса XElement](../designers/xelement-class-dynamic-properties.md)
+## <a name="see-also"></a>См. также:
+ <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>[Элементы](../designers/elements-xelement-dynamic-property.md) [динамических свойств класса XElement](../designers/xelement-class-dynamic-properties.md)

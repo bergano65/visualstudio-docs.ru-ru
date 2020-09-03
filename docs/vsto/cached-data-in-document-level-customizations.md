@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238352"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Кэшированные данные в настройках уровня документа
@@ -60,6 +60,6 @@ ms.locfileid: "88238352"
 |Какие типы данных можно хранить?|Любой открытый объект в сборке настройки, соответствующий определенным требованиям. Дополнительные сведения см. в разделе [кэширование данных](../vsto/caching-data.md).|Любые XML-данные.|
 |Можно ли получить доступ к данным без запуска Microsoft Office приложений?|Да, используя класс, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> предоставляемый [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Да, с помощью классов в <xref:System.IO.Packaging> пространстве имен или с помощью пакета SDK формата Open XML.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Данные в решениях Office](../vsto/data-in-office-solutions.md)
 - [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

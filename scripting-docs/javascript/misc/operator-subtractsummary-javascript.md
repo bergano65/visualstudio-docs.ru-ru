@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816791"
 ---
 # <a name="operator-summary-javascript"></a>Сводный список операторов (JavaScript)
@@ -29,8 +29,8 @@ ms.locfileid: "85816791"
 |[Полняют](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Decrement](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Отдел](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Производим](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Дальнейшем](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Приращение](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Остаток](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Умножения](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Вычитания](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Унарное отрицание](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,21 +39,21 @@ ms.locfileid: "85816791"
   
 |Оператор|Символ|  
 |--------------|------------|  
-|[Запятая](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[Символа](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Conditional (Ternary)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Равенство](../../javascript/reference/comparison-operators-javascript.md)|==|  
-|[Больше](../../javascript/reference/comparison-operators-javascript.md)|>|  
+|[Больше чем](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[Больше или равно](../../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[Удостоверение](../../javascript/reference/comparison-operators-javascript.md)|===|  
+|[Идентификация](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Неравенство](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Меньше чем](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Меньше или равно](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[Логическое и](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[Логическое И](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[Логическое НЕ](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Логическое или](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[Нетождества](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
-## <a name="bitwise-operators"></a>Битовые операторы  
+## <a name="bitwise-operators"></a>Побитовые операторы  
   
 |Оператор|Символ|  
 |--------------|------------|  

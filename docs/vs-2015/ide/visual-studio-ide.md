@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534320"
 ---
 # <a name="visual-studio-ide"></a>Интегрированная среда разработки Visual Studio
@@ -192,7 +192,7 @@ Visual Studio можно использовать для создания раз
 
 - [Учетные записи пользователей и обновления](../ide/user-accounts-and-updates.md)
 - [Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [How to: Move Around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Практическое руководство. Перемещение по интегрированной среде разработки)
+- [Руководство. Перемещение по интегрированной среде разработки](../ide/how-to-move-around-in-the-visual-studio-ide.md)
 - [Приступая к разработке с помощью Visual Studio](../ide/get-started-developing-with-visual-studio.md)
 - [Поиск и использование расширений Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)
@@ -211,7 +211,7 @@ Visual Studio можно использовать для создания раз
 - [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)
 - [Справочник по пользовательскому интерфейсу](../ide/reference/general-user-interface-elements-visual-studio.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Установка Visual Studio 2015](../install/install-visual-studio-2015.md)
 - [Редактирование своего кода](https://www.visualstudio.com/features/ide-vs)

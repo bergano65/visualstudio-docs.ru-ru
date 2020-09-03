@@ -15,19 +15,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817311"
 ---
 # <a name="expected-end"></a>Требуется " \@ End"
-Предпринята попытка создать условный скомпилированный блок кода, но в конце не включалась <strong>@end</strong> инструкция. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]операторы можно компилировать условно, заключив их в <strong>@if/@end</strong> блок.  
+Предпринята попытка создать условный скомпилированный блок кода, но в конце не включалась <strong>@end</strong> инструкция. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] операторы можно компилировать условно, заключив их в <strong>@if/@end</strong> блок.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
 - Добавьте соответствующий <strong>@end</strong> оператор.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Переменные условной компиляции](../../javascript/advanced/conditional-compilation-variables-javascript.md)

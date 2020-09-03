@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 11e1cd997c76974e7b4b8771c0579c175469eca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665476"
 ---
 # <a name="services-page-project-designer"></a>Страница "Службы" в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы** **конструктора проектов**, чтобы включать и настраивать службы клиентских приложений для своего проекта.
+Службы клиентских приложений предоставляют упрощенный доступ к службам входа, ролей и профилей [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] из приложений Windows Forms и Windows Presentation Foundation (WPF). Вы можете использовать страницу **Службы** **конструктора проектов**, чтобы включать и настраивать службы клиентских приложений для своего проекта.
 
  Благодаря службам клиентских приложений можно использовать централизованный сервер для проверки подлинности пользователей, определения ролей, назначенных каждому из пользователей, а также хранения индивидуальных параметров приложений, которые можно совместно использовать в рамках всей сети. Дополнительные сведения см. в разделе [Службы клиентских приложений](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).
 
@@ -33,7 +33,7 @@ ms.locfileid: "72665476"
 > [!NOTE]
 > Для служб клиентских приложений требуется полная версия .NET Framework, и они не поддерживаются в клиентском профиле .NET Framework. Если флажок **Включить службы клиентского приложения** снят, убедитесь, что **Целевая рабочая среда** имеет значение .NET Framework 3.5 или более поздней версии. Чтобы просмотреть значение параметра **Целевая рабочая среда** в C#, откройте конструктор проектов и щелкните страницу **Приложение**. Чтобы просмотреть значение параметра **Целевая рабочая среда** в Visual Basic, откройте конструктор проектов, щелкните страницу **Компиляция** и выберите **Дополнительные параметры компиляции**.
 
-## <a name="task-list"></a>список задач
+## <a name="task-list"></a>Список задач
  [Практическое руководство. Настройка служб клиентских приложений](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
@@ -49,7 +49,7 @@ ms.locfileid: "72665476"
 
  **Расположение службы проверки подлинности** Используется только с проверкой подлинности с помощью форм. Задает расположение службы проверки подлинности.
 
- **Дополнительно. Поставщик учетных данных**  используется только с проверкой подлинности с помощью форм. Указывает реализацию <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, которую служба аутентификации будет использовать для вывода диалогового окна входа в систему, если приложение вызывает метод `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> и передает пустые строки или `null` в качестве параметров. Если оставить это поле пустым, необходимо передать допустимое имя пользователя и пароль в метод <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Поставщиков учетных данных следует задать как имя типа с указанием сборки. Дополнительные сведения см. в разделах <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> и [Имена сборок](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). В простейшем виде имя типа сборки выглядит примерно так: `MyNamespace.MyLoginClass, MyAssembly`
+ **Необязательно: поставщик учетных данных** Используется только с проверкой подлинности с помощью форм. Указывает реализацию <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, которую служба аутентификации будет использовать для вывода диалогового окна входа в систему, если приложение вызывает метод `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> и передает пустые строки или `null` в качестве параметров. Если оставить это поле пустым, необходимо передать допустимое имя пользователя и пароль в метод <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Поставщиков учетных данных следует задать как имя типа с указанием сборки. Дополнительные сведения см. в разделах <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> и [Имена сборок](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). В простейшем виде имя типа сборки выглядит примерно так: `MyNamespace.MyLoginClass, MyAssembly`
 
  **Расположение службы ролей** Указывает расположение службы ролей.
 
@@ -57,5 +57,5 @@ ms.locfileid: "72665476"
 
  **Дополнительно** Открывает [диалоговое окно Дополнительные параметры служб](../../ide/reference/advanced-settings-for-services-dialog-box.md), которое можно использовать для переопределения поведения по умолчанию. Например, с его помощью можно задать базу данных для автономного хранилища вместо использования локальной файловой системы. Дополнительные сведения см. в разделе [Расширенные параметры для диалогового окна служб](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
-## <a name="see-also"></a>См. также
- ["дополнительные параметры клиента](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Службы приложений служб" Диалоговое окно](../../ide/reference/advanced-settings-for-services-dialog-box.md) [How: Настройка клиента службы приложений](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Страница компиляции, конструктор проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [страница сборки, конструктор проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Введение в конструктор проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+## <a name="see-also"></a>См. также:
+ [Client Application Services](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [Диалоговое окно "дополнительные параметры клиента службы приложений служб"](../../ide/reference/advanced-settings-for-services-dialog-box.md) [как настроить клиентский службы приложений](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [Страница компиляции, конструктор проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [страница сборки, конструктор проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Введение в конструктор проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

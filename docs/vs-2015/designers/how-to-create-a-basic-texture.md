@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664572"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Практическое руководство. Создание простейшей текстуры
@@ -38,7 +38,7 @@ ms.locfileid: "72664572"
 
  В следующей процедуре показано, как создать текстуру, представляющую цель "яблочко". По завершении работы текстура должна выглядеть так, как показано на следующем рисунке. Для лучшей демонстрации прозрачности в текстуре редактор изображений был настроен на использование зеленого клетчатого шаблона для ее отображения.
 
- ![Цель "Яблочко" с прозрачностью, показанной зеленым цветом](../designers/media/digit-bullseye-texture-in-editor.png "Digit-яблочко-текстура в редакторе")
+ ![Целевой объект bullseye с зеленой прозрачной областью](../designers/media/digit-bullseye-texture-in-editor.png "Digit-яблочко-текстура в редакторе")
 
  Перед началом убедитесь, что отображается окно **Свойства**. В окне **Свойства** можно задать размер изображения, а также изменять свойства инструментов и задавать цвета в процессе работы.
 
@@ -86,9 +86,9 @@ ms.locfileid: "72664572"
 
     Текстура цели "яблочко" закончена. Ниже показано готовое изображение с прозрачностью:
 
-    ![Полная текстура цели "Яблочко"](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
+    ![Полная текстура целевого объекта bullseye](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
 
     В качестве следующего шага можно создать уровни MIP для этой текстуры. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение MIP-уровней](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>См. также раздел
- [Image Editor](../designers/image-editor.md)
+## <a name="see-also"></a>См. также:
+ [Редактор изображений](../designers/image-editor.md)

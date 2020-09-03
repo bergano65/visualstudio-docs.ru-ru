@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Документация Майкрософт
+title: 'IDebugProgramProvider2:: Ватчфорпровидеревентс | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198709"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Позволяет процессу получать уведомления о событиях порт.  
+Позволяет процессу получать уведомления о событиях портов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,38 +50,38 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Параметры  
  `Flags`  
- [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:  
+ окне Сочетание флагов из перечисления [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Для этого вызова обычно используются следующие флаги:  
   
 |Flag|Описание|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Вызывающий объект выполняется на удаленном компьютере.|  
-|`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинга значение возвращается для каждого узла).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|  
-|`PFLAG_REASON_WATCH`|Вызывающая сторона хочет слежения за событиями. Если этот флаг не установлен. затем удаляется событие обратного вызова, и вызывающий объект больше не получает уведомления.|  
+|`PFLAG_REMOTE_PORT`|Вызывающий объект работает на удаленном компьютере.|  
+|`PFLAG_DEBUGGEE`|Выполняется отладка вызывающего объекта (для каждого узла возвращается дополнительная информация о маршалинге).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не был запущен отладчиком.|  
+|`PFLAG_REASON_WATCH`|Вызывающий объект хочет отслеживать события. Если этот флаг не установлен. Затем событие обратного вызова удаляется, а вызывающий объект больше не получает уведомления.|  
   
  `pPort`  
- [in] Порт вызывающий процесс выполняется на.  
+ окне Порт, на котором выполняется вызывающий процесс.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.  
+ окне Структура [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) , содержащая идентификатор процесса, содержащего рассматриваемую программу.  
   
  `EngineFilter`  
- [in] Массив идентификаторов GUID отладчиков, связанных с процессом.  
+ окне Массив идентификаторов GUID модулей отладки, связанных с процессом.  
   
  `guidLaunchingEngine`  
- [in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).  
+ окне Идентификатор GUID модуля отладки, который запустил этот процесс (при наличии).  
   
  `pEventCallback`  
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.  
+ окне Объект [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) , получающий уведомления о событиях.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Когда вызывающий объект хочет удалить обработчик событий, которое было установлено с предыдущего вызова этого метода, вызывающий объект передает те же параметры, как в первый раз, но оставляет `PFLAG_REASON_WATCH` флаг.  
+## <a name="remarks"></a>Remarks  
+ Когда вызывающий объект хочет удалить обработчик событий, установленный с предыдущим вызовом этого метода, вызывающий объект передает те же параметры, что и первый раз, но не отключает `PFLAG_REASON_WATCH` флаг.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugEngine** объекта, который предоставляет [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) интерфейс.  
+ В следующем примере показано, как реализовать этот метод для объекта **кдебуженгине** , предоставляющего интерфейс [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) .  
   
 ```cpp#  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  
@@ -209,7 +209,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   

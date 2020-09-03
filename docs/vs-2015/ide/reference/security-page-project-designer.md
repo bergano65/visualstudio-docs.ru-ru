@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 768b0d43d8e6b52781e3f2dc2029e0b96b3a6548
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665540"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
@@ -64,6 +64,6 @@ ms.locfileid: "72665540"
 
  **Дополнительно** Открывает [диалоговое окно Дополнительные параметры безопасности](../../ide/reference/advanced-security-settings-dialog-box.md), которое используется для настройки параметров отладки приложения с ограниченными разрешениями. Эти параметры проверяются во время отладки, а исключения разрешений указывают, что приложение может потребовать больше разрешений, чем предусмотрено соответствующей зоной.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  <xref:System.Security.Permissions.WebBrowserPermission> <xref:System.Security.Permissions.MediaPermission>
- [Управление доступом для кода для приложений ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md) [руководство. Включение параметров безопасности ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md) : [как задать зону безопасности для приложения ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) [как задать пользовательские разрешения для приложения ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [как: Отладка приложения ClickOnce с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) свойства проекта [безопасности и развертывания ClickOnce](../../deployment/clickonce-security-and-deployment.md) [ссылки на](../../ide/reference/project-properties-reference.md) [Дополнительные параметры безопасности](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Управление доступом для кода для приложений ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md) [руководство. Включение параметров безопасности ClickOnce:](../../deployment/how-to-enable-clickonce-security-settings.md) [как задать зону безопасности для приложения ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) . как [задать пользовательские разрешения для приложения](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) ClickOnce как [выполнить отладку приложения ClickOnce с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [безопасность и](../../deployment/clickonce-security-and-deployment.md) [Свойства проекта развертывания ClickOnce ссылки на](../../ide/reference/project-properties-reference.md) [Дополнительные параметры безопасности диалоговое окно](../../ide/reference/advanced-security-settings-dialog-box.md)

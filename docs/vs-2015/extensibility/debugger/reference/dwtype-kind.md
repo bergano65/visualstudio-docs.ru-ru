@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f37fb773a07291a883f5cb65e4cb4ac840a87a14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198782"
 ---
-# <a name="dwtypekind"></a>dwTYPE_KIND
+# <a name="dwtype_kind"></a>dwTYPE_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает, как интерпретировать тип [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
+Указывает способ интерпретации типа объекта [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,25 +46,25 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>Параметры  
  TYPE_KIND_METADATA  
- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) объединения должны интерпретироваться как [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) структуры.  
+ [TYPE_INFOное](../../../extensibility/debugger/reference/type-info.md) объединение должно интерпретироваться как структура [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) .  
   
  TYPE_KIND_PDB  
- `TYPE_INFO` Объединения должны интерпретироваться как [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) структуры.  
+ `TYPE_INFO`Объединение должно интерпретироваться как структура [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) .  
   
  TYPE_KIND_BUILT  
- `TYPE_INFO` Объединения должны интерпретироваться как [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) структуры.  
+ `TYPE_INFO`Объединение должно интерпретироваться как структура [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) .  
   
-## <a name="remarks"></a>Примечания  
- Значения этого перечисления отображаются в `dwKind` поле [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структурировать и используются для определения интерпретации `type` члена объединения. `TYPE_INFO` Структура возвращается путем вызова [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Значения этого перечисления отображаются в `dwKind` поле структуры [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) и используются для определения способа интерпретации `type` элемента объединения. `TYPE_INFO`Структура возвращается вызовом метода [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)   

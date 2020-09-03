@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43715ca8fa8174b2b8b9509a93e98cf15ad4611c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198866"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Структура, содержащая список `GUID`s.  
+Структура, содержащая список `GUID` s.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,26 +41,26 @@ public struct CONST_GUID_ARRAY {
 ```  
   
 ## <a name="members"></a>Участники  
- dwCount  
- Число `GUID`s в `Members` массива.  
+ двкаунт  
+ Число объектов `GUID` в `Members` массиве.  
   
- Участники  
- Массив `GUID`s.  
+ Элементы  
+ Массив объектов `GUID` s.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и возвращается из [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) методы.  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается в метод [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) и возвращается из методов [жетпровидерпроцессдата](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) и [ватчфорпровидеревентс](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .  
   
- Владелец экземпляра этой структуры отвечает за освобождение памяти, выделенной.  
+ Владелец экземпляра этой структуры отвечает за освобождение выделенной памяти.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
+ [публишпрограм](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
+ [жетпровидерпроцессдата](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

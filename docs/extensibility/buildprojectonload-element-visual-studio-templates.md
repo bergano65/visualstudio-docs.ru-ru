@@ -1,5 +1,5 @@
 ---
-title: Элемент BuildProjectOnload (Шаблоны визуальной студии) Документы Майкрософт
+title: Элемент BuildProjectOnload (шаблоны Visual Studio) | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739944"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Элемент BuildProjectOnload (шаблоны Visual Studio)
-Создает только новые проекты при создании и добавлении их в решение. Все решение не построено.
+Создает только новые проекты при создании и добавлении их в решение. Все решение не строится.
 
 Иерархия элементов:
 
@@ -37,27 +37,27 @@ ms.locfileid: "80739944"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет.
+ Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
- Нет.
+ Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|`TemplateData`|Категоризирует шаблон и определяет, как он отображается как в **new Project,** так и в диалоговых коробках **Add New Item.**|
+|`TemplateData`|Классификация шаблона и определение его отображения в диалоговых окнах **Новый проект** и **Добавление нового элемента** .|
 
 ## <a name="text-value"></a>Текстовое значение
  Текстовое значение является обязательным.
 
- Текст должен быть `true` `false` либо или указать, следует ли строить только новый проект, когда он создан из шаблона.
+ Текст должен иметь значение `true` или `false` , чтобы указать, следует ли создавать новый проект только при его создании на основе шаблона.
 
-## <a name="remarks"></a>Примечания
- Параметр `BuildProjectOnLoad` является необязательным элементом. Значение по умолчанию — `false`.
+## <a name="remarks"></a>Remarks
+ Параметр `BuildProjectOnLoad` является необязательным элементом. Значение по умолчанию — `false`.
 
 ## <a name="example"></a>Пример
- Ниже приводится пример, иллюстрирующий метаданные для шаблона Visual C.
+ В следующем примере показаны метаданные для шаблона Visual C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ ms.locfileid: "80739944"
 
 ## <a name="see-also"></a>См. также
 
-- [Атрибут и элемент BuildOnLoad](buildonload-visual-studio-templates.md)
+- [Атрибут и элемент Буилдонлоад](buildonload-visual-studio-templates.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Ссылка на схему шаблона Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

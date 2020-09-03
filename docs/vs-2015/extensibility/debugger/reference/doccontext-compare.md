@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d0fd8cff2f352c8ede674be64062a738c1f3d02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198793"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает критерии для сравнения двух контекстов документа.  
+Задает критерий для сравнения двух контекстов документа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,29 +47,29 @@ enum enum_DOCCONTEXT_COMPARE { 
   
 ## <a name="members"></a>Участники  
  DOCCONTEXT_EQUAL  
- Найти первый контекст документа в списке, который равен целевой контекст документа.  
+ Найдите в списке первый контекст документа, равный контексту целевого документа.  
   
  DOCCONTEXT_LESS_THAN  
- Найти первый контекст документа в списке, который меньше, чем целевой контекст документа.  
+ Найдите в списке первый контекст документа, который меньше целевого контекста документа.  
   
  DOCCONTEXT_GREATER_THAN  
- Найти первый контекст документа в списке, который больше, чем целевой контекст документа.  
+ Найдите в списке первый контекст документа, превышающий целевой контекст документа.  
   
  DOCCONTEXT_SAME_DOCUMENT  
- Найти первый контекст документа в списке, который находится в том же документе целевой контекст документа.  
+ Найдите в списке первый контекст документа, который находится в том же документе, что и целевой контекст документа.  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве аргумента в метод [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) .  
   
- Эти значения используются для указания критерии сравнения для нахождения первого контекст документа в виде списка. Контекст документа предоставляется список контекстов документа сравнивать себя с помощью `IDebugDocumentContext2::Compare` метод. Первый контекст документа в списке, для которого является оператор сравнения `true` затем возвращается.  
+ Эти значения используются для указания критериев сравнения для поиска первого контекста документа в списке. Контекст документа получает список контекстов документов для сравнения с помощью `IDebugDocumentContext2::Compare` метода. Затем возвращается первый контекст документа в списке, для которого выполняется оператор сравнения `true` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+ [Сравнить](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

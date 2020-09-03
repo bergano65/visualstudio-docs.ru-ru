@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание простого шейдера Ламберта | Документация Майкрософт
+title: Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 038b3e7db7f1e3b79ee3e41b6e256216a39b91bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664555"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера с моделью освещения Ламберта
+# <a name="how-to-create-a-basic-lambert-shader"></a>Практическое руководство. Создание простейшего шейдера освещения с использованием модели Ламберта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом документе показано, как использовать конструктор шейдеров и язык шейдеров ориентированных графов (Directed Graph Shader Language — DGSL) для создания шейдера, реализующего классическую модель освещения Ламберта.
@@ -51,15 +51,15 @@ ms.locfileid: "72664555"
 > [!NOTE]
 > Для лучшей демонстрации эффекта шейдера на этом рисунке оранжевый цвет был задан с использованием параметра **MaterialDiffuse** шейдера. Игра или приложение могут использовать этот параметр, чтобы предоставить уникальное значение цвета для каждого объекта. Дополнительные сведения о параметрах материалов см. в подразделе "Предварительный просмотр шейдеров" раздела [Конструктор шейдеров](../designers/shader-designer.md).
 
- ![Граф шейдера и предварительный просмотр его результата.](../designers/media/digit-lambert-effect-graph.png "Digit — Ламберта-Effect — Graph")
+ ![Граф шейдера и предварительный просмотр его эффекта.](../designers/media/digit-lambert-effect-graph.png "Digit — Ламберта-Effect — Graph")
 
- Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о предварительном просмотре шейдеров в конструкторе шейдеров см. в подразделе "Предварительный просмотр шейдеров" раздела [Конструктор шейдеров](../designers/shader-designer.md).
+ Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о предварительной версии шейдеров в конструкторе шейдеров см. в разделе предварительного просмотра шейдеров в [конструкторе шейдеров](../designers/shader-designer.md).
 
  На следующем рисунке шейдер, описанный в этом документе, применяется к трехмерной модели.
 
- ![Ламбертаное освещение, применяемое к модели.](../designers/media/digit-lambert-effect-result.png "Digit-Ламберта-Effect — результат")
+ ![Применение к модели освещения по методу Ламберта.](../designers/media/digit-lambert-effect-result.png "Digit-Ламберта-Effect — результат")
 
- Дополнительные сведения о применении шейдера к трехмерной модели см. в разделе [How to: Применение шейдера к трехмерной модели ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Дополнительные сведения о способах применения шейдера к трехмерной модели см. в разделе [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>См. также
- [Практическое руководство. Применение шейдера к трехмерной модели ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How: Экспорт шейдера ](../designers/how-to-export-a-shader.md) [How в: Создание простого шейдера [по методу фонга ](../designers/how-to-create-a-basic-phong-shader.md)](../designers/shader-designer.md) [узлов конструктора](../designers/shader-designer-nodes.md) шейдеров в конструкторе шейдеров
+## <a name="see-also"></a>См. также:
+ [Как применить шейдер к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [руководство. экспорт шейдера](../designers/how-to-export-a-shader.md) [как создать базовые](../designers/how-to-create-a-basic-phong-shader.md) [Shader Designer](../designers/shader-designer.md) [узлы конструктора](../designers/shader-designer-nodes.md) шейдеров шейдеров по методу Фонга.

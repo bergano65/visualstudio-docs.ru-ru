@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 383101679827f19b9a85d36f0f5a39eb772c68ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664692"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (динамическое свойство XElement)
@@ -31,15 +31,15 @@ ms.locfileid: "72664692"
 elem.Elements[{namespaceName}localName]
 ```
 
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение
  Индексатор типа `IEnumerable<XElement> Item(String expandedName)`. Индексатор принимает развернутое имя нужных дочерних элементов и возвращает соответствующие дочерние элементы в коллекцию <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
  Это свойство эквивалентно методу <xref:System.Xml.Linq.XContainer.Elements%28System.Xml.Linq.XName%29?displayProperty=fullName> класса <xref:System.Xml.Linq.XContainer>.
 
  Элементы в возвращаемой коллекции располагаются в порядке исходного XML-документа.
 
  В данном свойстве используется отложенное выполнение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Потомки](../designers/descendants-xelement-dynamic-property.md) [элементов](../designers/element-xelement-dynamic-property.md) [динамических свойств класса XElement](../designers/xelement-class-dynamic-properties.md)

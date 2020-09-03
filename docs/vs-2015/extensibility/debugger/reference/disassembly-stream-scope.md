@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0132aad5ad6e37e7bb811693afde7ebfe80b272d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198830"
 ---
-# <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
+# <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает область потока Дизассемблированный код.  
+Задает область потока дизассемблированного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,30 +47,30 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE { 
   
 ## <a name="members"></a>Участники  
  DSS_HUGE  
- Указывает, что Дизассемблирование контекст кода будет создавать дополнительные выходные данные, чем клиент обычно необходимо получить в одном вызове.  
+ Указывает, что при разсборке контекста кода будет создаваться больше выходных данных, чем клиент, как правило, в одном вызове.  
   
  DSS_FUNCTION  
- Указывает, что функции, содержащиеся в контексте кода должны быть дизассемблирован. Указывает, что поток Дизассемблированный код представляет функцию, при возврате [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.  
+ Указывает, что функция, содержащаяся в контексте кода, должна быть собрана. Указывает, что поток дизассемблированного кода представляет функцию, возвращаемую методом [superscope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .  
   
  DSS_MODULE  
- При возврате `IDebugDisassemblyStream2::GetScope` методом, указывает, что поток Дизассемблированный код представляет модуль.  
+ При возврате `IDebugDisassemblyStream2::GetScope` методом указывает, что поток дизассемблированного кода представляет модуль.  
   
  DSS_ALL  
- Указывает Дизассемблированный код для во всем адресном пространстве.  
+ Указывает Дизассемблированный код для всего адресного пространства.  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) метод и возвращенный [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Передается в качестве аргумента в метод [жетдисассемблистреам](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) и возвращается методом [superscope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .  
   
- Эти значения могут объединяться с побитовым объектом `OR`.  
+ Эти значения можно объединить с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
+ [жетдисассемблистреам](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

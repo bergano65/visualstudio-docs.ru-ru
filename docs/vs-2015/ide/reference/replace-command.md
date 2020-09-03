@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665629"
 ---
 # <a name="replace-command"></a>Команда Replace
@@ -39,7 +39,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  `replacewith` Обязательный. Текст для замены совпавшего текста.
 
-## <a name="switches"></a>Переключатели
+## <a name="switches"></a>Коммутаторы
  /ALL или/a необязательный. Заменяет все вхождения искомого текста на замещающий текст.
 
  /case или /c Необязательный. Совпадение происходит только в том случае, если прописные и строчные знаки точно соответствуют тем, что указаны в аргументе `findwhat`.
@@ -52,7 +52,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  /options или /t Необязательный. Отображает список текущих параметров поиска, но не выполняет сам поиск.
 
- /proc или /p Необязательный. Выполняет поиск только в текущей процедуре. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
+ /proc или /p Необязательный. Выполняет поиск только в текущей процедуре. Укажите только одну из доступных областей поиска — `/doc`, `/proc`, `/open` или `/sel`.
 
  /regex или /r Необязательный. Использует стандартные специальные символы в аргументе `findwhat` для представления текстовых шаблонов вместо самих букв. Полный список знаков регулярных выражений см. в разделе [Регулярные выражения](../../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -73,5 +73,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Поиск и замена текста](../../ide/finding-and-replacing-text.md) [командное окно](../../ide/reference/command-window.md) [Поиск/команда](../../ide/find-command-box.md) [Visual Studio командные](../../ide/reference/visual-studio-commands.md) [псевдонимы команд Visual](../../ide/reference/visual-studio-command-aliases.md) Studio

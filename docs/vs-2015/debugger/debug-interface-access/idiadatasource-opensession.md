@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::openSession | Документация Майкрософт
+title: 'Идиадатасаурце:: Опенсессион | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bec5507d15374e6e88afd4567d4b0fec9ca6cb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198605"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Открывает сеанс для выполнения запросов к символы.  
+Открывает сеанс для запроса символов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,22 +34,22 @@ HRESULT openSession ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- ppSession  
- [out] Возвращает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект, представляющий открытый сеанс.  
+ ппсессион  
+ заполняет Возвращает объект [IDiaSession](../../debugger/debug-interface-access/idiasession.md) , представляющий открытый сеанс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объекта не ранее был инициализирован с источником символов.|  
+|E_UNEXPECTED|Объект [идиадатасаурце](../../debugger/debug-interface-access/idiadatasource.md) ранее не был инициализирован с источником символов.|  
 |E_INVALIDARG|Недопустимый параметр `ppSession`.|  
 |E_OUTOFMEMORY|Недостаточно памяти для открытия сеанса.|  
   
-## <a name="remarks"></a>Примечания  
- Этот метод открывает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объекта для источника данных.  
+## <a name="remarks"></a>Remarks  
+ Этот метод открывает объект [IDiaSession](../../debugger/debug-interface-access/idiasession.md) для источника данных.  
   
- `IDiaSession` объекты реализацию запросов в источник данных. Сеанс управляет одно адресное пространство для каждого набора символов отладки. Если файл .exe или .dll, описываемый символы источника данных активное участие в нескольких адресов диапазонов (например, так как несколько процессов будет загружен), то следует использовать один сеанс для каждого диапазона адресов.  
+ `IDiaSession` объекты реализуют запросы к источнику данных. Сеанс управляет одним адресным пространством для каждого набора отладочных символов. Если файл exe или DLL, описываемый символами источника данных, активен в нескольких диапазонах адресов (например, из-за загрузки нескольких процессов), следует использовать один сеанс для каждого диапазона адресов.  
   
 ## <a name="example"></a>Пример  
   
@@ -62,8 +62,8 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также:  
+ [идиадатасаурце](../../debugger/debug-interface-access/idiadatasource.md)   
+ [Средств](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

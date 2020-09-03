@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534242"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
@@ -28,13 +28,13 @@ ms.locfileid: "85534242"
 
 - [Сборка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
-- [Edit](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit) (Изменение)
+- [Правка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
 
-- [Проект](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
+- [Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
 
 - [Инструменты](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
 
-- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+- [Окно](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
 
 - [Отладка](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
 
@@ -44,7 +44,7 @@ ms.locfileid: "85534242"
 
 - [Режиме](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Строит
+## <a name="build"></a><a name="bkmk_build"></a> Сборка
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -53,7 +53,7 @@ ms.locfileid: "85534242"
 |Build.Compile|Ctrl+F7 [глобальный]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [глобальный]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>См
+## <a name="debug"></a><a name="bkmk_debug"></a> Отладка
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -124,7 +124,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [текстовый редактор]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [текстовый редактор]|
 
-## <a name="file"></a><a name="bkmk_file"></a>File
+## <a name="file"></a><a name="bkmk_file"></a> Файл
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -147,19 +147,19 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [глобальный]|
 |Project.AddExistingItem|Shift+Alt+A [глобальный]|
 |Project.AddNewItem|Ctrl+Shift+A [глобальный]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Структурирован
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Рефакторинг
 
-|Get-Help|Сочетание клавиш [контекст]|
+|Команда|Сочетание клавиш [контекст]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [глобальный]|
 
 ## <a name="tools"></a><a name="bkmk_tools"></a> Инструменты
 
-|Get-Help|Сочетание клавиш [контекст]|
+|Команда|Сочетание клавиш [контекст]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [глобальный]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Режиме
+## <a name="view"></a><a name="bkmk_view"></a> Вид
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|
@@ -180,7 +180,7 @@ iew.TfsTeamExplorer|CTRL+\\, CTRL+M [глобальный]|
 |View.ViewCode|ВВОД [схема классов]<br /><br /> или F7 [конструктор параметров]|
 |View.ViewDesigner|Shift+F7 [HTML-редактор в представлении кода]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Окно
+## <a name="window"></a><a name="bkmk_window"></a> Окно
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------|-------------------------------------|

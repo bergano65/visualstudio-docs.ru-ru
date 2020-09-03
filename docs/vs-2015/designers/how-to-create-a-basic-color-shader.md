@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание простого шейдера цветов | Документация Майкрософт
+title: Практическое руководство. Создание простейшего шейдера цвета | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664589"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Практическое руководство. Создание простейшего шейдера цвета
@@ -57,5 +57,5 @@ ms.locfileid: "72664589"
 
  Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).
 
-## <a name="see-also"></a>См. также
- [Практическое руководство. Применение шейдера к трехмерной модели ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How: Экспорт шейдера](../designers/how-to-export-a-shader.md) [конструктор шейдеров](../designers/shader-designer.md) [конструктора шейдеров](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>См. также:
+ [Как применить шейдер к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [руководство: экспорт](../designers/how-to-export-a-shader.md) [Shader Designer](../designers/shader-designer.md) [узлов конструктора](../designers/shader-designer-nodes.md) шейдеров шейдеров

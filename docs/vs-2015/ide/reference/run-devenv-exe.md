@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2716995e8ff3a318262284b5733a471086c68c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665526"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -39,7 +39,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
 
  `ProjectName` Обязательный. Полный путь и имя для файла проекта.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Компилирует и запускает указанный проект или указанное решение согласно параметрам, заданным для активной конфигурации решения. Этот параметр запускает интегрированную среду разработки (IDE), которая остается активной после завершения выполнения проекта или решения.
 
 - Строки с пробелами заключаются в двойные кавычки.
@@ -53,5 +53,5 @@ devenv {/run|/r} {SolutionName|ProjectName}
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/runexit (devenv. exe)](../../ide/reference/runexit-devenv-exe.md) [/Build (devenv](../../ide/reference/build-devenv-exe.md) . exe) [/REBUILD (](../../ide/reference/rebuild-devenv-exe.md) devenv. exe) [/out (devenv. exe](../../ide/reference/out-devenv-exe.md) )
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/REBUILD (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05a073b3663ff85fe3d68878999aaf1dfa9e0017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198849"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Указывает, какую информацию нужно извлечь сведения об объекте debug ссылку.  
+Указывает, какие сведения следует получить об эталонном объекте Debug.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -57,48 +57,48 @@ public enum enum_DEBUGREF_INFO_FLAGS { 
   
 ## <a name="members"></a>Участники  
  DEBUGREF_INFO_NAME  
- Инициализация и использование `bstrName` в структуре.  
+ Инициализируйте или используйте `bstrName` поле в структуре.  
   
  DEBUGREF_INFO_TYPE  
- Инициализация и использование `bstrType` в структуре.  
+ Инициализируйте или используйте `bstrType` поле в структуре.  
   
  DEBUGREF_INFO_VALUE  
- Инициализация и использование `bstrValue` в структуре.  
+ Инициализируйте или используйте `bstrValue` поле в структуре.  
   
  DEBUGREF_INFO_ATTRIB  
- Инициализация и использование `dwAttrib` в структуре.  
+ Инициализируйте или используйте `dwAttrib` поле в структуре.  
   
  DEBUGREF_INFO_REFTYPE  
- Инициализация и использование `dwRefType` в структуре.  
+ Инициализируйте или используйте `dwRefType` поле в структуре.  
   
  DEBUGREF_INFO_REF  
- Инициализация и использование `pReference` в структуре.  
+ Инициализируйте или используйте `pReference` поле в структуре.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- Поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.  
+ Поле значения должно содержать автоматическое развернутое значение (если доступно) для этого типа объекта.  
   
  DEBUGREF_INFO_NONE  
- Указывает, что флаги не установлены.  
+ Указывает, что флаги не заданы.  
   
  DEBUGREF_INFO_ALL  
  Указывает маску флагов.  
   
-## <a name="remarks"></a>Примечания  
- Эти флаги передаются [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) методы, чтобы указать, какие поля [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть инициализированы.  
+## <a name="remarks"></a>Remarks  
+ Эти флаги передаются методам [енумчилдрен](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) и [жетреференцеинфо](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) , чтобы указать, какие поля структуры [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) должны быть инициализированы.  
   
- Используется для `dwFields` членом `DEBUG_REFERENCE_INFO` структура указывает, какие поля используются и допустимым при возвращении структуры.  
+ Используется для `dwFields` элемента `DEBUG_REFERENCE_INFO` структуры, чтобы указать, какие поля используются и допустимы при возврате структуры.  
   
- Эти значения могут объединяться с побитовым объектом `OR`.  
+ Эти значения можно объединить с помощью побитовой операции `OR` .  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
+ [енумчилдрен](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
  [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)

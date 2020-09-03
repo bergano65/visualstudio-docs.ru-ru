@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2:GetMetricString Документы Майкрософт
+title: 'IDebugSettingsCallback2:: Жетметрикстринг | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719960"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-Извлекает строку значения метрики с учетом ее имени.
+Возвращает строку значения метрики, заданную ее именем.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,19 +46,19 @@ private int GetMetricString(
 
 ## <a name="parameters"></a>Параметры
 `pszType`\
-(в) Тип метрики.
+окне Тип метрики.
 
 `guidSection`\
-(в) Уникальный идентификатор раздела.
+окне Уникальный идентификатор раздела.
 
 `pszMetric`\
-(в) Название метрики.
+окне Имя метрики.
 
 `pbstrValue`\
-(ваут) Возвращает строку значения метрики.
+заполняет Возвращает строку значения метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

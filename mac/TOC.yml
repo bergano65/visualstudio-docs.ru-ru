@@ -62,7 +62,7 @@
       href: source-editor.md
     - name: Рефакторинг
       href: refactoring.md
-    - name: IntelliSense
+    - name: технология IntelliSense
       href: intellisense.md
     - name: Отображение элементов импорта
       href: show-imports.md
@@ -158,7 +158,7 @@
       items:
         - name: Обзор
           href: azure-workload.md
-        - name: Общие сведения о Функциях Azure
+        - name: Введение в функции Azure
           href: azure-functions.md
         - name: Руководство по Функции Azure
           href: azure-functions-lab.md

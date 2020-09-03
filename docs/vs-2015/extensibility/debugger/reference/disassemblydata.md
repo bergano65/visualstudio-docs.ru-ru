@@ -1,5 +1,5 @@
 ---
-title: DisassemblyData | Документация Майкрософт
+title: Дисассемблидата | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea21b4ae9e6e852efcc3625dc3af24478bd88155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198822"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Описывает одну инструкцию Дизассемблированный код для интегрированной среде разработки (IDE) для отображения.  
+Описывает одну инструкцию дизассемблирования для отображаемой интегрированной среды разработки (IDE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -64,56 +64,56 @@ public struct DisassemblyData { 
   
 ## <a name="members"></a>Участники  
  `dwFields`  
- [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) константа, указывающая, какие поля заполнены.  
+ Константа [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) , указывающая, какие поля заполняются.  
   
  `bstrAddress`  
- Адрес как смещение от некоторых отправной точки (обычно начало соответствующего функции).  
+ Адрес в виде смещения от некоторой начальной точки (обычно это начало связанной функции).  
   
  `bstrCodeBytes`  
- Байты кода для данной инструкции.  
+ Байты кода для этой инструкции.  
   
  `bstrOpcode`  
- Код операции для данной инструкции.  
+ Код операции для этой инструкции.  
   
  `bstrOperands`  
- Операнды для данной инструкции.  
+ Операнды для этой инструкции.  
   
  `bstrSymbol`  
- Имя символа, если таковое имеется, связанный с адресом (открытых символов, метки и т. д.).  
+ Имя символа (если имеется), связанное с адресом (открытый символ, метка и т. д.).  
   
  `uCodeLocationId`  
- Идентификатор расположения кода это дисассемблированный строки. Если адрес контекста кода из одной строки больше, чем адрес контекста кода другого идентификатора расположения Дизассемблированный код первого также будет больше, чем второй идентификатор расположение кода.  
+ Идентификатор расположения кода для этой разобранной строки. Если адрес контекста кода в одной строке больше, чем адрес другого контекста кода, то идентификатор местонахождения кода первого будет также больше, чем идентификатор расположения кода второго.  
   
  `posBeg`  
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, в котором начинаются данные Дизассемблированный код.  
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий положению в документе, где начинаются данные дизассемблирования.  
   
  `posEnd`  
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, где заканчивается данных Дизассемблированный код.  
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий положению в документе, где заканчиваются Дизассемблированный данные.  
   
  `bstrDocumentUrl`  
- Для текстовых документов, которые могут быть представлены как имена файлов `bstrDocumentUrl` вводится имя файла, где можно найти источник, используя формат `file://file name`.  
+ Для текстовых документов, которые могут быть представлены в виде имен файлов, `bstrDocumentUrl` поле заполняется именем файла, в котором можно найти источник, используя формат `file://file name` .  
   
- Для текстовых документов, которые невозможно представить как имена файлов `bstrDocumentUrl` — это уникальный идентификатор для документа, и отладчик должен реализовывать [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) метод.  
+ Для текстовых документов, которые не могут быть представлены в виде имен файлов, `bstrDocumentUrl` является уникальным идентификатором документа, а модуль отладки должен реализовать метод [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) GetText.  
   
- Это поле также может содержать дополнительные сведения о контрольных суммах. Дополнительные сведения см. примечания.  
+ Это поле также может содержать дополнительные сведения о контрольных суммах. Дополнительные сведения см. в разделе "Примечания".  
   
  `dwByteOffset`  
- Число байтов, которое считается инструкции от начала строки кода.  
+ Число байтов, на которое инструкция находится в начале строки кода.  
   
  `dwFlags`  
- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) константа, указывающая, какие флаги активны.  
+ Константа [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) , указывающая, какие флаги активны.  
   
-## <a name="remarks"></a>Примечания  
- Каждый `DisassemblyData` структура описывает одну инструкцию дизассемблированного кода. Возвращаемый массив этих структур [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Каждая `DisassemblyData` структура описывает одну инструкцию дизассемблирования. Массив этих структур возвращается методом [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .  
   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структура используется для текстовых документов. Исходный диапазон кода для данной инструкции заполняется только для первой инструкции, созданные из инструкции или строке, например, если `dwByteOffset == 0`.  
+ Структура [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) используется только для текстовых документов. Диапазон исходного кода для этой инструкции заполнен только для первой инструкции, созданной из инструкции или строки, например when `dwByteOffset == 0` .  
   
- Для документов, которые являются нетекстовые, контекст документа можно получить из кода и `bstrDocumentUrl` поле должно быть значение null. Если `bstrDocumentUrl` поле совпадает со значением `bstrDocumentUrl` в предыдущем `DisassemblyData` элемента массива, а затем задайте `bstrDocumentUrl` со значением null.  
+ Для документов, которые не являются текстовыми, контекст документа можно получить из кода, а `bstrDocumentUrl` поле должно иметь значение null. Если поле совпадает с `bstrDocumentUrl` `bstrDocumentUrl` полем в предыдущем `DisassemblyData` элементе массива, установите `bstrDocumentUrl` для параметра значение null.  
   
- Если `dwFlags` поле имеет `DF_DOCUMENT_CHECKSUM` набор флагов, затем сведения о контрольной сумме дополнительные строки, на которые указывают `bstrDocumentUrl` поля. В частности после конца строки null, соответствует GUID, идентифицирующий используемый алгоритм контрольной суммы, в свою очередь, сопровождается 4-байтовым значением, указывающее количество байтов в контрольную сумму и, в свою очередь сопровождается байты контрольной суммы. В примере этого раздела см. в разделе о том, как для кодирования и декодирования этого поля в [!INCLUDE[csprcs](../../../includes/csprcs-md.md)].  
+ Если `dwFlags` поле имеет `DF_DOCUMENT_CHECKSUM` установленный флаг, дополнительные сведения о контрольной сумме следуют за строкой, на которую указывает `bstrDocumentUrl` поле. В частности, после нулевого признака конца строки следует идентификатор GUID, определяющий алгоритм контрольной суммы, который, в свою очередь, за которым следует 4-байтовый параметр, указывающий число байтов в контрольной сумме, за которыми следуют контрольные суммы. См. пример в этом разделе о кодировании и декодировании этого поля в [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] .  
   
 ## <a name="example"></a>Пример  
- `bstrDocumentUrl` Поле может содержать дополнительную информацию, кроме строки, если `DF_DOCUMENT_CHECKSUM` флага. Процесс создания и чтения этой закодированной строки достаточно прост [!INCLUDE[vcprvc](../../../includes/vcprvc-md.md)]. Однако в [!INCLUDE[csprcs](../../../includes/csprcs-md.md)], это совсем другое дело. Для тех, кому интересно, в примере показан один из способов создать зашифрованную строку из [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] и один из способов декодировать закодированную строку в [!INCLUDE[csprcs](../../../includes/csprcs-md.md)].  
+ `bstrDocumentUrl`Поле может содержать дополнительные сведения, кроме строки, если установлен `DF_DOCUMENT_CHECKSUM` флаг. Процесс создания и чтения этой закодированной строки прост в [!INCLUDE[vcprvc](../../../includes/vcprvc-md.md)] . Однако в это [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] еще один вопрос. Для тех, кто интересует, в следующем примере показан один из способов создания закодированной строки из [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] и один способ декодирования закодированной строки в [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] .  
   
 ```csharp  
 using System;  
@@ -224,9 +224,9 @@ namespace MyNamespace
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [Чтение](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [Просмотр](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

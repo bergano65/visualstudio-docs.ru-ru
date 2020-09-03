@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59a926ab35e04aa120bc57250c3e5b2712858aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664489"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
@@ -61,9 +61,9 @@ ms.locfileid: "72664489"
 > [!NOTE]
 > На этом рисунке в качестве фигуры для предварительного просмотра используется плоскость, и задана текстура, чтобы лучше продемонстрировать эффект шейдера.
 
- ![Граф шейдера и предварительный просмотр его эффекта](../designers/media/digit-texture-effect.png "|::ref1::|")
+ ![Граф шейдера и предварительный просмотр его эффекта](../designers/media/digit-texture-effect.png "Цифровая текстура-результат")
 
- Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).
+ Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о предварительной версии шейдеров в конструкторе шейдеров см. в разделе [конструктор шейдеров](../designers/shader-designer.md) .
 
-## <a name="see-also"></a>См. также
- [Как применить шейдер к трехмерной модели ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) редактор [Image ](../designers/image-editor.md) [Shader конструктор ](../designers/shader-designer.md) [Shader конструктор](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>См. также:
+ [Пошаговое руководство. применение шейдера к трехмерному](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [изображению модели редактор](../designers/image-editor.md) [Shader Designer](../designers/shader-designer.md) [шейдеров конструктор Shader](../designers/shader-designer-nodes.md)

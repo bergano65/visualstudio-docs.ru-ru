@@ -1,5 +1,5 @@
 ---
-title: Отладчик, параметры и подготовка | Документация Майкрософт
+title: Параметры отладчика и подготовка | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198878"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
@@ -46,7 +46,7 @@ ms.locfileid: "68198878"
  [Веб-приложения ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Содержит инструкции по способам настройки веб-приложений ASP.NET.  
   
- [Практическое руководство. Отладка исполняемого файла, не входящего в состав решения Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Как выполнить отладку исполняемого файла, не входящего в решение Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Объясняется, как отладить исполняемый объект, который не был создан, как часть проекта Visual Studio.  
   
  [Практическое руководство. Отладка исходного кода Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -61,6 +61,6 @@ ms.locfileid: "68198878"
  [Практическое руководство. Установка версии платформы .NET Framework для отладки](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Описано, как задать раздел реестра для указания версии для использования в отладчике.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Безопасность отладчика](../debugger/debugger-security.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
