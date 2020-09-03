@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184093"
 ---
 # <a name="comparing-properties-and-items"></a>Сравнение свойств и элементов
@@ -43,7 +43,7 @@ ms.locfileid: "68184093"
 </PropertyGroup>  
 ```  
   
- Свойство `BuildDependsOn` в основном используется в качестве аргумента атрибута `DependsOnTargets` целевого объекта и эффективно его преобразует в список элементов. Это свойство можно переопределить, чтобы добавить целевой объект или изменить порядок выполнения целевых объектов. Например, примененная к объекту директива  
+ Свойство `BuildDependsOn` в основном используется в качестве аргумента атрибута `DependsOnTargets` целевого объекта и эффективно его преобразует в список элементов. Это свойство можно переопределить, чтобы добавить целевой объект или изменить порядок выполнения целевых объектов. Например,  
   
 ```  
 <PropertyGroup>  
@@ -56,7 +56,7 @@ ms.locfileid: "68184093"
   
  добавляет целевой объект CustomBuild в список целевых объектов, присваивая `BuildDependsOn` значение `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- Начиная с MSBuild версии 4.0, внедрение зависимости для целевых объектов не рекомендуется. Используйте вместо него атрибуты `AfterTargets` и `BeforeTargets`. Дополнительные сведения см. в разделе [Порядок сборки целевых объектов](../msbuild/target-build-order.md).  
+ Начиная с MSBuild версии 4.0, внедрение зависимости для целевых объектов не рекомендуется. Используйте вместо него атрибуты `AfterTargets` и `BeforeTargets`. Дополнительные сведения см. в разделе [целевой порядок сборки](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Преобразование между строками и списками элементов  
  MSBuild по мере необходимости осуществляет преобразование в типы элементов и строковые значения и наоборот. Чтобы проанализировать, как список элементов становится строковым значением, рассмотрим, что происходит, когда тип элемента используется в качестве значения свойства MSBuild.  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>См. также:  
+ [Дополнительные понятия](../msbuild/msbuild-advanced-concepts.md)

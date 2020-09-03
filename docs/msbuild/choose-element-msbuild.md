@@ -20,17 +20,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634478"
 ---
 # <a name="choose-element-msbuild"></a>Элемент Choose (MSBuild)
 
 Вычисляет дочерние элементы для выбора одного набора элементов `ItemGroup` и/или элементов `PropertyGroup` для вычисления.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -64,7 +69,7 @@ ms.locfileid: "77634478"
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта MSBuild. |
 | [When](../msbuild/when-element-msbuild.md) | Указывает один из возможных блоков кода, который может выбрать элемент `Choose`. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  Элементы `Choose`, `When` и `Otherwise` используются совместно, чтобы обеспечить выбор одного блока кода для выполнения из множества доступных вариантов. См. дополнительные сведения об [условных конструкциях](../msbuild/msbuild-conditional-constructs.md).
 
@@ -117,7 +122,7 @@ ms.locfileid: "77634478"
 </Project>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)
 - [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

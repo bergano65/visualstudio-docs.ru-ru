@@ -1,5 +1,5 @@
 ---
-title: Запуск Debugger (англ.) Документы Майкрософт
+title: Запуск отладчика | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,45 +12,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ceb2f484449d1b3f8474a6586d298b057875b342
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738455"
 ---
 # <a name="launch-the-debugger"></a>Запуск отладчика
-Запуск отладчика требует отправки правильной последовательности методов и событий с их соответствующими атрибутами.
+Для запуска отладчика необходимо отправить правильную последовательность методов и событий с соответствующими атрибутами.
 
 ## <a name="sequences-of-methods-and-events"></a>Последовательности методов и событий
 
-1. Менеджер отладки сеанса (SDM) называется, выбрав меню **Debug,** а затем выбрав **Start**. Для получения дополнительной информации смотрите [запуск программы](../../extensibility/debugger/launching-a-program.md).
+1. Чтобы вызвать диспетчер отладки сеансов (SDM), выберите в меню **Отладка** пункт **запустить**. Дополнительные сведения см. [в разделе Запуск программы](../../extensibility/debugger/launching-a-program.md).
 
-2. SDM вызывает метод [OnAttach.](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
+2. Модель SDM вызывает метод [onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .
 
-3. На основе модели процесса отладки `IDebugProgramNodeAttach2::OnAttach` двигателя (DE) метод возвращает один из следующих методов, который определяет, что произойдет дальше.
+3. В зависимости от модели процесса модуля отладки (DE) `IDebugProgramNodeAttach2::OnAttach` метод возвращает один из следующих методов, который определяет, что происходит дальше.
 
-     При `S_FALSE` возврате, отладка двигателя (DE) должен быть загружен в процессе виртуальной машины.
+     Если `S_FALSE` возвращается, подсистема отладки (de) загружается в процесс виртуальной машины.
 
      -или-
 
-     При `S_OK` возврате DE должен быть загружен в процессе SDM. Затем SDM выполняет следующие задачи:
+     Если `S_OK` возвращает, то de загружается в процессе SDM. Затем SDM выполняет следующие задачи:
 
-    1. Звонит [GetEngineInfo,](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) чтобы получить информацию о движке DE.
+    1. Вызывает [жетенгинеинфо](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) для получения сведений о подсистеме de.
 
-    2. Со-создает DE.
+    2. Совместно создает значение DE.
 
-    3. Вызовы [Атташе](../../extensibility/debugger/reference/idebugengine2-attach.md).
+    3. Вызывает [attach](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
-4. DE отправляет [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.
+4. Параметр DE отправляет [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.
 
-5. DE отправляет [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.
+5. Параметр DE отправляет [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.
 
-6. DE отправляет [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.
+6. Параметр DE отправляет [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) в SDM с `EVENT_SYNC` атрибутом.
 
-7. DE отправляет [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) в SDM с `EVENT_SYNC` атрибутом.
+7. Параметр DE отправляет [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) в SDM с `EVENT_SYNC` атрибутом.
 
-8. DE отправляет [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) в SDM с `EVENT_SYNC` атрибутом.
+8. Параметр DE отправляет [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) в SDM с `EVENT_SYNC` атрибутом.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)
 - [Запуск программы](../../extensibility/debugger/launching-a-program.md)

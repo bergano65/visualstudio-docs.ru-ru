@@ -1,5 +1,5 @@
 ---
-title: IDebugСправка2:GetReferenceInfo Документы Майкрософт
+title: 'IDebugReference2:: Жетреференцеинфо | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720419"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-Получает [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуру, описываемую ссылку. Зарезервировано для последующего использования.
+Возвращает структуру [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) , описывающую ссылку. Зарезервировано для будущего использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,27 +51,27 @@ int GetReferenceInfo ( 
 
 ## <a name="parameters"></a>Параметры
 `dwFields`\
-(в) Комбинация флагов [из DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисления, определяющих поля, которые должны быть заполнены в [структуре DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
+окне Сочетание флагов из перечисления [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) , определяющее поля, которые должны быть заполнены в структуре [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
 
 `nRadix`\
-(в) Радикс, который будет использоваться при форматировании любой численной информации.
+окне Основание системы счисления, используемое при форматировании любой числовой информации.
 
 `dwTimeout`\
-(в) Максимальное время, в миллисекундах, ждать, прежде чем вернуться из этого метода. Используйте, `INFINITE` чтобы ждать бесконечно.
+окне Максимальное время ожидания (в миллисекундах) перед возвратом из этого метода. Используйте `INFINITE` для бесконечного ожидания.
 
 `rgpArgs`\
-(в) Массив объектов [IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md) Зарезервировано для использования в будущем; установлен на нулевую стоимость.
+окне Массив объектов [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Зарезервировано для будущего использования; Задайте для значение null.
 
 `dwArgCount`\
-(в) Количество аргументов в массиве. `rgpArgs` Зарезервировано для использования в будущем; установлен до 0.
+окне Число ссылочных аргументов в `rgpArgs` массиве. Зарезервировано для будущего использования; Задайте значение 0.
 
 `pReferenceInfo`\
-(ваут) [Структура DEBUG_REFERENCE_INFO,](../../../extensibility/debugger/reference/debug-reference-info.md) заполненная описанием свойства.
+заполняет Структура [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) , которая заполняется описанием свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

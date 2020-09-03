@@ -1,5 +1,5 @@
 ---
-title: IDebug-КериEngine2:GetEngineInterface (англ.) Документы Майкрософт
+title: 'IDebugQueryEngine2:: Жетенгинеинтерфаце | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82f3214783a35e668bf3164c8659f60f863e9a43
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720664"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
-Получает пользовательский интерфейс отладки двигателя (DE).
+Возвращает интерфейс пользовательского модуля отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,15 +41,15 @@ int GetEngineInterface( 
 
 ## <a name="parameters"></a>Параметры
 `ppUnk`\
-(ваут) Возвращает `IUnknown` объект представляет движок отладки (DE), и который может быть запрошен для любого другого действительного интерфейса, связанного с DE (например, [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) или [IDebugEngineLaunch2).](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
+заполняет Возвращает `IUnknown` объект, представляющий модуль отладки (de), который может быть запрошен для любого другого допустимого интерфейса, связанного с методом de (например, [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) или [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Полученный интерфейс следует использовать с осторожностью, поскольку вызов через интерфейсы, извлеченные из этого метода, обходит обработку диспетчера сеанса и может привести к тому, что SDM попадет в плохое состояние или создадит ошибки при отладке.
+## <a name="remarks"></a>Remarks
+ Полученный интерфейс следует использовать с осторожностью, поскольку вызов через интерфейсы, полученные из этого метода, обходит обработку диспетчера отладки сеанса и может привести к неправильному состоянию SDM или формированию ошибок во время отладки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

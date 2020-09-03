@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331070"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Просмотр свойств XAML во время отладки
@@ -24,7 +24,7 @@ ms.locfileid: "85331070"
 |Тип приложения|Операционная система и средства|
 |-----------------|--------------------------------|
 |Приложения Windows Presentation Foundation (4.0 и более поздних версий)|Windows 7 и более поздних версий|
-|Универсальные приложения Windows|Windows 10 и более поздней версии с [пакетом SDK для Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Универсальные приложения для Windows|Windows 10 и более поздней версии с [пакетом SDK для Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Просмотр элементов в динамическом визуальном дереве
 
@@ -150,6 +150,6 @@ ms.locfileid: "85331070"
 
 4. Во втором экземпляре Visual Studio откройте **динамическое визуальное дерево** (**Отладка > Окна > Динамическое визуальное дерево**). Вы должны увидеть элементы пользовательского интерфейса **TestXaml** и иметь возможность изменять их, как во время отладки приложения напрямую.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Запись и отладка выполняемого кода XAML с помощью горячей перезагрузки XAML](xaml-hot-reload.md)

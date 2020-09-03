@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711759"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Новые&#39;в API подключаемого модуля системы управления версиями 1,2
@@ -32,5 +32,5 @@ ms.locfileid: "88711759"
 
 - [Удаление данных системы управления версиями из. Proj и. В файлах SLN](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) объясняется, как в API версии 1,2 для подключаемого модуля системы управления версиями хранятся сведения о проектах и решениях.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 - [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

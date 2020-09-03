@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800636"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Подключение к данным в базе данных Access
 
 Вы можете подключиться к базе данных Access ( *MDB* -или *ACCDB* -файлу) с помощью Visual Studio. После того как определено подключение, источник данных отображается в окне **Источник данных**. После этого можно перетаскивать таблицы или представления в область конструктора.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 Чтобы использовать эти процедуры, необходим проект Windows Forms или WPF и база данных Access (*ACCDB* -файл) или база данных Access 2000-2003 (*MDB* -файл). Выполните процедуру, соответствующую типу файла.
 

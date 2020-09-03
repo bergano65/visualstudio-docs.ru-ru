@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986311"
 ---
 # <a name="actions-pane-overview"></a>Обзор панели действий
@@ -41,7 +41,7 @@ ms.locfileid: "72986311"
  Панель действий становится видимой во время выполнения, как только вы явно добавляете на нее элемент управления. После отображения панели действий вы можете динамически добавлять или удалять элементы управления в ответ на действия пользователя. Как правило, вы добавляете код, чтобы показать панель действий, в обработчик событий `Startup` для `ThisDocument` или `ThisWorkbook`, чтобы панель действий отображалась при первом открытии документа. Однако вам может потребоваться отобразить панель действий только в ответ на действия пользователя в документе. Например, можно добавить код в событие `Click` элемента управления в документе.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Добавление нескольких элементов управления на панель «действия»
- При добавлении нескольких элементов управления на панель действий следует сгруппировать элементы управления в пользовательский элемент управления, а затем добавить пользовательский элемент управления в свойство <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Этот процесс состоит из следующих шагов.
+ При добавлении нескольких элементов управления на панель действий следует сгруппировать элементы управления в пользовательский элемент управления, а затем добавить пользовательский элемент управления к <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> свойству. Этот процесс состоит из следующих шагов.
 
 1. Создайте пользовательский интерфейс панели действий, добавив элемент **управления панели действий** или элемент **пользовательского элемента управления** в проект. Оба эти элемента включают пользовательский класс <xref:System.Windows.Forms.UserControl> Windows Forms. **Элемент управления панели действий** и элементы **пользовательского элемента управления** эквивалентны; Единственное отличие заключается в их имени.
 
@@ -55,21 +55,21 @@ ms.locfileid: "72986311"
    Примеры, демонстрирующие этот процесс более подробно, см. в разделе [руководство. Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
 ## <a name="hide-the-actions-pane"></a>Скрыть панель действий
- Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит метод <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> и свойство <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, панель действий невозможно удалить из пользовательского интерфейса с помощью членов класса <xref:Microsoft.Office.Tools.ActionsPane>. Вызов метода <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> или присвоение свойству <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> значения **false** скрывает только элементы управления на панели действий. она не скрывает область задач.
+ Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит метод <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> и свойство <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, панель действий невозможно удалить из пользовательского интерфейса с помощью членов класса <xref:Microsoft.Office.Tools.ActionsPane>. Вызов <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> метода или присвоение <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> свойству значения **false** скрывает только элементы управления на панели действий; она не скрывает область задач.
 
  Существует несколько способов скрыть область задач в решении.
 
-- Для Word задайте для свойства <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> объекта <xref:Microsoft.Office.Interop.Word.TaskPane>, представляющего область задач «действия с документом» **значение false**. Код в следующем примере должен выполняться из класса `ThisDocument` в проекте.
+- Для Word установите <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> свойство <xref:Microsoft.Office.Interop.Word.TaskPane> объекта, представляющего область задач «действия с документом», в **значение false**. Код в следующем примере должен выполняться из класса `ThisDocument` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Для Excel установите для свойства <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> объекта <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> значение **false**. Код в следующем примере должен выполняться из класса `ThisWorkbook` в проекте.
+- Для Excel присвойте <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> свойству объекта значение <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false**. Код в следующем примере должен выполняться из класса `ThisWorkbook` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Для Word или Excel можно также задать свойство <xref:Microsoft.Office.Core.CommandBar.Visible%2A> панели команд, представляющей область задач, равным **false**. Код в следующем примере должен выполняться из класса `ThisDocument` или `ThisWorkbook` в проекте.
+- Для Word или Excel можно также задать <xref:Microsoft.Office.Core.CommandBar.Visible%2A> для свойства панели команд, представляющей область задач, **значение false**. Код в следующем примере должен выполняться из класса `ThisDocument` или `ThisWorkbook` в проекте.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -78,7 +78,7 @@ ms.locfileid: "72986311"
  Когда пользователь сохраняет документ, когда отображается область действий, панель действий отображается каждый раз при открытии документа, независимо от того, содержит ли панель действий элементы управления. Если вы хотите управлять отображением панели действий, вызовите метод <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> поля `ActionsPane` в обработчике событий `Startup` для `ThisDocument` или `ThisWorkbook`, чтобы убедиться, что панель действий невидима при открытии документа.
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>Определение того, когда панель действий закрыта
- При закрытии панели действий события не инициируются. Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит событие <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, оно не возникает, когда пользователь закрывает панель действий. Вместо этого событие возникает, когда элементы управления на панели действий скрыты путем вызова метода <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> или присвоения свойству <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> значения **false**.
+ При закрытии панели действий события не инициируются. Хотя класс <xref:Microsoft.Office.Tools.ActionsPane> содержит событие <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, оно не возникает, когда пользователь закрывает панель действий. Вместо этого событие возникает при скрытии элементов управления на панели действий путем вызова <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> метода или присвоения <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> свойству значения **false**.
 
  Когда пользователь закрывает панель действий, пользователь может снова отобразить его, выполнив одну из следующих процедур в пользовательском интерфейсе приложения.
 
@@ -112,7 +112,7 @@ ms.locfileid: "72986311"
 |фромлефт|Размещение от левой части панели действий.|
 |фромригхт|Размещение от правой части панели действий.|
 |фромтоп|Размещение от верхней части панели действий.|
-|Отсутствуют|Порядок расположения не определен, он определяется разработчиком.|
+|Нет|Порядок расположения не определен, он определяется разработчиком.|
 
  Следующий код задает свойство <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> так, чтобы располагать пользовательские элементы управления в верхней части панели действий.
 
@@ -141,7 +141,7 @@ ms.locfileid: "72986311"
 > [!NOTE]
 > Пользователи могут в любое время переместить область задач вручную. Нельзя гарантировать, что область задач останется закрепленной в положении, заданном программными средствами. Однако можно проверить изменение ориентации и убедиться, что элементы управления на панели действий располагаются в правильном направлении. Дополнительные сведения см. в разделе [руководство. Управление макетом элементов управления на панелях действий](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
- Задание свойств <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> и <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> <xref:Microsoft.Office.Tools.ActionsPane> не изменяет его расположение, так как объект <xref:Microsoft.Office.Tools.ActionsPane> внедряется в область задач.
+ Установка <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> свойств и <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> для объекта <xref:Microsoft.Office.Tools.ActionsPane> не изменяет его расположение, так как <xref:Microsoft.Office.Tools.ActionsPane> объект внедряется в область задач.
 
  Если область задач не закреплена, можно установить свойства <xref:Microsoft.Office.Core.CommandBar.Top%2A> и <xref:Microsoft.Office.Core.CommandBar.Left%2A> объекта <xref:Microsoft.Office.Core.CommandBar>, представляющего область задач. Следующий код перемещает панель задач в верхний левый угол документа.
 

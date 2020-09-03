@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184338"
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, у вас нет полностью переопределить эти элементы, чтобы изменить внешний вид пользовательского интерфейса.  
+Элемент CommandPlacement позволяет включать кнопки, группы и меню в более чем одну группу или меню. С помощью элемента CommandPlacement не нужно полностью переопределять эти элементы, чтобы изменить внешний вид пользовательского интерфейса.  
   
- Дополнительные сведения см. в разделе [группы кнопок для повторного использования создание](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Дополнительные сведения см. в разделе [Создание многократно используемых групп кнопок](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,22 +40,22 @@ ms.locfileid: "68184338"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательный. Идентификатор guid набора команд, как определено в [элемент Symbols](../extensibility/symbols-element.md).|  
-|id|Обязательный. Идентификатор меню, группу или команду, чтобы поместить, как определено в `Symbols Element`.|  
+|guid|Обязательный. Идентификатор GUID набора команд, как определено в [элементе Symbols](../extensibility/symbols-element.md).|  
+|идентификатор|Обязательный. Идентификатор меню, группы или команды, которые необходимо разместить, как определено в `Symbols Element` .|  
 |priority|Обязательный. Определяет визуальную позицию элемента в его родительском элементе.|  
-|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательный элемент. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|Родительский|Обязательный. Меню или группы, на котором размещается элемент, чтобы разместить.|  
+|Parent|Обязательный. Меню или группу, в которой размещен элемент, который необходимо разместить.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Указывает группы элементов CommandPlacements и CommandPlacement.|  
+|[Элемент CommandPlacements](../extensibility/commandplacements-element.md)|Задает группы элементов CommandPlacements и CommandPlacement.|  
   
 ## <a name="example"></a>Пример  
   
@@ -68,6 +68,6 @@ ms.locfileid: "68184338"
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Элемент CommandPlacements](../extensibility/commandplacements-element.md)   
+## <a name="see-also"></a>См. также:  
+ [CommandPlacements, элемент](../extensibility/commandplacements-element.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

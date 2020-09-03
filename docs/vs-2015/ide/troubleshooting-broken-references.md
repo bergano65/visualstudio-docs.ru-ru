@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1dd1312fc5728fbb68994fb6e70e253fa19172e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654799"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
@@ -90,5 +90,5 @@ ms.locfileid: "72654799"
 ## <a name="com-component-is-not-installed-on-computer"></a>На компьютере не установлен COM-компонент
  Если пользователь добавил ссылку на COM-компонент, а другой пользователь пытается выполнить этот код на компьютере, где этот компонент не установлен, второй пользователь получит сообщение о неработающей ссылке. Для исправления ошибки достаточно установить этот компонент на втором компьютере. Дополнительные сведения об использовании ссылок на COM-компоненты в проектах см. в разделе [COM-взаимодействие в приложениях .NET Framework](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Введение в конструктор проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [Страница "ссылки", конструктор проектов (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md) [NIB. как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

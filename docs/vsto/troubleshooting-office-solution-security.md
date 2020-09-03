@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234813"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Устранение неполадок в системе безопасности решений Office
@@ -31,7 +31,7 @@ ms.locfileid: "87234813"
 
 - Мой компьютер
 
-- Internet
+- Интернет
 
 - Местная интрасеть
 
@@ -48,6 +48,6 @@ ms.locfileid: "87234813"
 
  Чтобы управлять действиями ИИСК и Internet Explorer 7 и более поздних версий, вычислить веб-сайты и пути в формате UNC, которые вы доверяете, и добавить их в одну из доверенных зон безопасности (локальная интрасеть или надежные сайты). Сведения об управлении зонами см. в разделе [Configure ClickOnce Trusted Publishers](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)
 - [Устранение неполадок в Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

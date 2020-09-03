@@ -1,5 +1,5 @@
 ---
-title: IDebugСправка2::GetSize Документы Майкрософт
+title: 'IDebugReference2:: DataSize | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7ea57467c6bcc716226ac7075976a0fb9daf5f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720367"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-Получает размер, в байтах, значения ссылки. Зарезервировано для последующего использования.
+Возвращает размер значения ссылки в байтах. Зарезервировано для будущего использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetSize ( 
 
 ## <a name="parameters"></a>Параметры
 `pdwSize`\
-(ваут) Возвращает размер, в байтах, стоимости ссылки.
+заполняет Возвращает размер значения ссылки в байтах.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

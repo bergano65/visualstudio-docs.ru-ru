@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655013"
 ---
 # <a name="customizing-element-tools"></a>Настройка средств элемента
@@ -24,7 +24,7 @@ ms.locfileid: "72655013"
  Можно также переопределить то, что происходит при перетаскивании инструмента на схему или элемент.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>Настройка содержимого инструмента элемента
- Каждый инструмент элемента хранит экземпляр <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (ЕГП), который содержит сериализованную версию одного или нескольких элементов модели и ссылок. По умолчанию ЕГП инструмента element содержит один экземпляр класса, указанный для средства. Это можно изменить путем переопределения *вашязык* `ToolboxHelper.CreateElementToolPrototype`. Этот метод вызывается при загрузке пакета DSL.
+ Каждый инструмент элемента хранит экземпляр <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (ЕГП), который содержит сериализованную версию одного или нескольких элементов модели и ссылок. По умолчанию ЕГП инструмента element содержит один экземпляр класса, указанный для средства. Это можно изменить путем переопределения *вашязык* `ToolboxHelper.CreateElementToolPrototype` . Этот метод вызывается при загрузке пакета DSL.
 
  Параметр метода является ИДЕНТИФИКАТОРом класса, указанного в определении DSL. Когда метод вызывается с интересующим вас классом, в ЕГП можно добавить дополнительные элементы.
 
@@ -62,5 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)

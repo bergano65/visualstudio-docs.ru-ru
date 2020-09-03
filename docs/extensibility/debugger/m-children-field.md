@@ -1,5 +1,5 @@
 ---
-title: поле m_children Документы Майкрософт
+title: m_children поле | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738426"
 ---
 # <a name="m_children-field"></a>m_children поле
-Список детских задач, зарегистрированных с этой задачей.
+Список дочерних задач, зарегистрированных в этой задаче.
 
- **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Сборка:** mscorlib (в *mscorlib.dll*)
 
- Поскольку вы не можете получить доступ к этому внутреннему члену из рамочного соглашения .NET, следующий синтаксис предоставляется на общем промежуточном языке (CIL).
+ Так как вы не можете получить доступ к этому внутреннему элементу из .NET Framework, на стандартном промежуточном языке (CIL) приведен следующий синтаксис.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,10 +32,10 @@ ms.locfileid: "80738426"
 .field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children
 ```
 
-## <a name="remarks"></a>Примечания
- В то время как задача выполняется, только поток, выполняемый задачей, должен получить доступ к этому массиву.
+## <a name="remarks"></a>Remarks
+ Во время выполнения задачи только тот поток, который выполняет задачу, должен получить доступ к этому массиву.
 
- Если задача выполнена, другие потоки могут получить доступ к этому полю до тех пор, пока они ничего не добавят к нему или удалит что-либо из него.
+ Если задача завершена, другие потоки могут получить доступ к этому полю, если они не добавляют ничего в него или не удаляют что-либо из него.
 
-## <a name="see-also"></a>См. также
-- [Класс ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+## <a name="see-also"></a>См. также раздел
+- [Класс Континжентпропертиес](../../extensibility/debugger/contingentproperties-class-internal-members.md)

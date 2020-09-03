@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985550"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Доверять решениям Office с помощью списков включения
@@ -42,6 +42,6 @@ ms.locfileid: "72985550"
 ## <a name="structure-of-the-inclusion-list"></a>Структура списка включения
  Правильная запись в списке включений состоит из двух частей: пути к манифесту развертывания и открытого ключа, используемого для подписи решения. После добавления решения в список включений оно считается доверенным. При запуске решения Office приложение Office сравнивает открытый ключ в списке включений с ключом подписывания в манифесте развертывания для проверки, что запущенное решение совпадает с исходной доверенной версией.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Предоставление доверия решениям Office](../vsto/granting-trust-to-office-solutions.md)
 - [Безопасные решения Office](../vsto/securing-office-solutions.md)

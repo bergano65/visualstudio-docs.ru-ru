@@ -1,5 +1,5 @@
 ---
-title: ИдебугКериИнженер2 Документы Майкрософт
+title: IDebugQueryEngine2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 31b1784055c54c9243237c81edb708e13de9bc5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720649"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
-Этот интерфейс позволяет диспетчеру отладки сеанса (SDM) получить интерфейс, представляющий движок отладки (DE).
+Этот интерфейс позволяет диспетчеру отладки сеансов (SDM) получать интерфейс, представляющий модуль отладки (DE).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,30 +28,30 @@ ms.locfileid: "80720649"
 IDebugQueryEngine2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- DE реализует этот интерфейс на объектах, которые реализуют наиболее распространенные интерфейсы DE (например, [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)и [IDebugStackFrame2),](../../../extensibility/debugger/reference/idebugstackframe2.md)чтобы обеспечить доступ к интерфейсу [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) самого DE.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Метод DE реализует этот интерфейс для объектов, реализующих наиболее распространенные интерфейсы DE (например, [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)и [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)), чтобы обеспечить доступ к интерфейсу [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) интерфейса de.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- Вызов [queryInterface](/cpp/atl/queryinterface) на типичный интерфейс DE, чтобы получить этот интерфейс.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Вызовите [QueryInterface](/cpp/atl/queryinterface) на типичном интерфейсе de для получения этого интерфейса.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugQueryEngine2`.
+ В следующей таблице показаны методы `IDebugQueryEngine2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Получает пользовательский интерфейс отладки двигателя (DE).|
+|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Возвращает интерфейс пользовательского модуля отладки (DE).|
 
-## <a name="remarks"></a>Примечания
- Этот интерфейс обычно реализуется в объекте, который реализует интерфейс [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) для поддержки заказанных причинно-следственных связей, выполняя функции; то есть, когда отладчик выходит из функции, следующая функция для выполнения может быть не предыдущей функцией в стеке, но функция в другом потоке вообще. Для определения "причинность", [см.](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
+## <a name="remarks"></a>Remarks
+ Этот интерфейс обычно реализуется в объекте, реализующем интерфейс [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , для поддержки последовательного упорядочения по функциям. то есть, когда отладчик выполняет шаг с выходом из функции, следующая выполняемая функция может не быть предыдущей функцией в стеке, а функция в другом потоке — вообще. Определение причинности см. в разделе [Глоссарий отладчика Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
 
 ## <a name="requirements"></a>Требования
- Заголовок: msdbg.h
+ Заголовок: мсдбг. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

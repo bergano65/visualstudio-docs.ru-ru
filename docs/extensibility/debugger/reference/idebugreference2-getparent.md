@@ -1,5 +1,5 @@
 ---
-title: IDebugСправка2::GetParent Документы Майкрософт
+title: 'IDebugReference2:: Parent | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8af5f08ae0b06e508794851ff0fff238f19519b4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720438"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
-Получает родительскую ссылку на ссылку. Зарезервировано для последующего использования.
+Возвращает родительскую ссылку ссылки. Зарезервировано для будущего использования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,10 +41,10 @@ int GetParent ( 
 
 ## <a name="parameters"></a>Параметры
 `ppParent`\
-(ваут) Возвращает объект [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) представляющий родительский элемент этого свойства.
+заполняет Возвращает объект [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , представляющий родительский элемент этого свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

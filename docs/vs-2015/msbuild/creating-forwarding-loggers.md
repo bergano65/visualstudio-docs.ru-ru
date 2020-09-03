@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184030"
 ---
 # <a name="creating-forwarding-loggers"></a>Создание средства ведения журнала переадресации
@@ -41,7 +41,7 @@ ms.locfileid: "68184030"
 ## <a name="multi-processor-aware-loggers"></a>Средства ведения журнала с поддержкой многопроцессорности  
  При сборке проекта в многопроцессорной системе сообщения о сборке от каждого процессора не чередуются автоматически в определенной последовательности. Вместо этого нужно назначить приоритет группирования сообщений с помощью класса <xref:Microsoft.Build.Framework.BuildEventContext>, который присоединяется к каждому сообщению. Дополнительные сведения о сборке в многопроцессорной среде см. в разделе [Ведение журнала в многопроцессорной среде](../msbuild/logging-in-a-multi-processor-environment.md).  
   
-## <a name="see-also"></a>См. также  
- [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
+## <a name="see-also"></a>См. также:  
+ [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Средства ведения журнала сборки](../msbuild/build-loggers.md)   
  [Ведение журнала в многопроцессорной среде](../msbuild/logging-in-a-multi-processor-environment.md)

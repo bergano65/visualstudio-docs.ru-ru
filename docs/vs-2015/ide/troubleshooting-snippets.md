@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f73cb7ba59daf2f8ee957d95dee36bba59f87614
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654779"
 ---
 # <a name="troubleshooting-snippets"></a>Устранение неполадок, связанных с использованием фрагментов
@@ -39,5 +39,5 @@ ms.locfileid: "72654779"
 
 - Возможно, не определена переменная. Неопределенные переменные во фрагменте кода должны быть выделены. В противном случае об этой ошибке можно сообщить автору фрагмента.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Фрагменты кода](../ide/code-snippets.md)
