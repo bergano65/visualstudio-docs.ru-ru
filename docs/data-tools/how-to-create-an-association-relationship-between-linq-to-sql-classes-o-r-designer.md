@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282154"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Как создать ассоциацию между классами LINQ to SQL (реляционный конструктор R)
@@ -26,7 +26,7 @@ ms.locfileid: "85282154"
 ## <a name="association-properties"></a>Свойства ассоциации
 После создания ассоциации при выборе ассоциации в **реляционном конструкторе объектов** имеются некоторые конфигурируемые свойства в окне **Свойства**. (Ассоциация — это линия между связанными классами.) В следующей таблице приведены описания свойств ассоциации.
 
-|Свойство.|Описание|
+|Свойство|Описание|
 |--------------|-----------------|
 |**Кратность**|Контролирует, представляет ли ассоциация отношение "один-ко-многим" или отношение "один-к-одному".|
 |**Дочернее свойство**|Определяет, создавать ли свойство на основе родителя, который является коллекцией, или на основе ссылки на дочерние записи на стороне внешнего ключа ассоциации. Например, в связи между `Customer` и `Order` , если **дочернее свойство** имеет значение **true**, в `Orders` родительском классе создается свойство с именем.|
@@ -46,7 +46,7 @@ ms.locfileid: "85282154"
 
 5. Нажмите кнопку **OK** для создания ассоциации.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

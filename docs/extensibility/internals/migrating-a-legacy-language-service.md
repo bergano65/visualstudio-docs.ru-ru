@@ -1,5 +1,5 @@
 ---
-title: Миграция службы языка наследия (ru) Документы Майкрософт
+title: Миграция языковой службы прежних версий | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,101 +11,101 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707110"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковой службы прежних версий
-Вы можете перенести устаревший языковой сервис на более позднюю версию Visual Studio, обновив проект и добавив файл source.extension.vsixmanifest в проект. Сам языковой сервис будет продолжать функционировать, как и прежде, потому что редактор Visual Studio адаптирует его.
+Вы можете перенести устаревшую языковую службу в более позднюю версию Visual Studio, обновив проект и добавив файл Source. extension. vsixmanifest в проект. Сама языковая служба будет работать, как и раньше, поскольку редактор Visual Studio адаптирует его.
 
- Устаревшие языковые службы реализуются как часть VSPackage, но новый способ реализации функций языкового сервиса заключается в использовании расширений MEF. Чтобы узнать больше о новом способе реализации языковой [службы,](../../extensibility/editor-and-language-service-extensions.md)см.
+ Устаревшие языковые службы реализуются как часть VSPackage, но более новым способом реализации функций языковой службы является использование расширений MEF. Дополнительные сведения о новом способе реализации языковой службы см. в статье [расширения редактора и языковой службы](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Мы рекомендуем вам начать использовать новый API редактора как можно скорее. Это повысит производительность вашего языкового сервиса и позволит вам воспользоваться новыми функциями редактора.
+> Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.
 
-## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Миграция Визуальной студии 2008 Языковое обслуживание решение для более поздней версии
- Следующие шаги показывают, как адаптировать образную студию 2008 образец под названием RegExLanguageService. Вы можете найти этот образец в Visual Studio 2008 SDK установки, в *Visual Studio SDK установки путь*"VisualStudioIntegration"ОбразнаяСтудияИнтеграция "Образцы"IDE-CSharp-Пример.RegExLanguageService папку.
+## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Миграция решения Visual Studio 2008 Language Service в более позднюю версию
+ Ниже описано, как адаптировать пример Visual Studio 2008 с именем Режекслангуажесервице. Этот пример можно найти в установке пакета SDK для Visual Studio 2008 в папке *путь установки пакета SDK для Visual Studio*\висуалстудиоинтегратион\самплес\иде\кшарп\ексампле.режекслангуажесервице\.
 
 > [!IMPORTANT]
-> Если языковая служба не определяет цвета, <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> необходимо `true` явно установить на VSPackage:
+> Если языковая служба не определяет цвета, необходимо явно задать для пакета <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> `true` VSPackage:
 
 ```
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]
 ```
 
-#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Перенести языковую службу Visual Studio 2008 в более позднюю версию
+#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Миграция языковой службы Visual Studio 2008 в более позднюю версию
 
-1. Установите новые версии Visual Studio и Visual Studio SDK. Для получения дополнительной информации о способах установки SDK, [см.](../../extensibility/installing-the-visual-studio-sdk.md)
+1. Установите более новые версии Visual Studio и Visual Studio SDK. Дополнительные сведения о способах установки пакета SDK см. [в разделе Установка пакета SDK для Visual Studio](../../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Отобразите файл RegExLangServ.csproj (без загрузки в Visual Studio.
+2. Измените файл Режекслангсерв. csproj (не загружая его в Visual Studio).
 
-     В `Import` узло, отсылаемом к файлу Microsoft.VsSDK.targets, замените значение следующим текстом.
+     В `Import` узле, который ссылается на файл Microsoft. VsSDK. targets, замените значение следующим текстом.
 
     ```
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets
     ```
 
-3. Сохранить файл, а затем закрыть его.
+3. Сохраните файл и закройте его.
 
-4. Откройте решение RegExLangServ.sln.
+4. Откройте решение Режекслангсерв. sln.
 
-5. Отображается окно **обновления в одну сторону.** Нажмите кнопку **ОК**.
+5. Откроется окно **одностороннего обновления** . Нажмите кнопку **ОК**.
 
-6. Обновление свойств проекта. Откройте окно **Project Properties,** выбрав узла проекта в **solution Explorer,** нажав правой кнопкой и выбрав **свойства.**
+6. Обновите свойства проекта. Откройте окно **свойств проекта** , выбрав узел проекта в **Обозреватель решений**, щелкните правой кнопкой мыши и выберите пункт **Свойства**.
 
-    - На вкладке **Приложения** измените **платформу Target** до **4.6.1**.
+    - На вкладке **приложение** измените **целевую платформу** на **4.6.1**.
 
-    - На вкладке **Debug,** в поле **внешней программы «Старт»,** введите ** \<путь установки Visual Studio>»Common7-IDE'devenv.exe.**.
+    - На вкладке **Отладка** в поле **Запуск внешней программы** введите ** \<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
 
-         В поле **аргументов командной строки,** тип /**корниuffис Exp**.
+         В поле **аргументы командной строки** введите/**рутсуффикс exp**.
 
-7. Обновление следующих ссылок:
+7. Обновите следующие ссылки:
 
-    - Удалите ссылку на Microsoft.VisualStudio.Shell.9.0.dll, затем добавьте ссылки на Microsoft.VisualStudio.Shell.14.0.dll и Microsoft.VisualStudio.Shell.Immutable.11.0.dll.
+    - Удалите ссылку на Microsoft.VisualStudio.Shell.9.0.dll, а затем добавьте ссылки на Microsoft.VisualStudio.Shell.14.0.dll и Microsoft.VisualStudio.Shell.Immutable.11.0.dll.
 
-    - Удалить ссылку на Microsoft.VisualStudio.Package.LanguageService.9.0.dll, а затем добавить ссылку на Microsoft.VisualStudio.Package.LanguageService.14.0.dll.
+    - Удалите ссылку на Microsoft.VisualStudio.Package.LanguageService.9.0.dll, а затем добавьте ссылку на Microsoft.VisualStudio.Package.LanguageService.14.0.dll.
 
-    - Добавить ссылку на Microsoft.VisualStudio.Shell.Interop.10.0.dll.
+    - Добавьте ссылку на Microsoft.VisualStudio.Shell.Interop.10.0.dll.
 
-8. Откройте файл VsPkg.cs и измените значение атрибута на `DefaultRegistryRoot`
+8. Откройте файл VsPkg.cs и измените значение `DefaultRegistryRoot` атрибута на
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
     ```
 
-9. Первоначальный образец не регистрирует свою языковую службу, поэтому необходимо добавить следующий атрибут в VsPkg.cs.
+9. В исходном примере не регистрируется языковая служба, поэтому необходимо добавить следующий атрибут в VsPkg.cs.
 
     ```
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]
     ```
 
-10. Необходимо добавить файл source.extension.vsixmanifest.
+10. Необходимо добавить файл Source. extension. vsixmanifest.
 
-    - Копируйте этот файл из существующего расширения в каталог проекта. (Один из способов получить этот файл заключается в создании проекта VSIX (под **файлом,** нажмите **Новый**, затем нажмите **проекта**. В рамках Visual Basic или C' нажмите **Расширительность**, а затем выберите **VSIX проекта**.)
+    - Скопируйте этот файл из существующего расширения в каталог проекта. (Один из способов получить этот файл — создать проект VSIX (в разделе **файл**выберите **создать**, а затем — **проект**). В разделе Visual Basic или C# щелкните **расширяемость**, а затем выберите **проект VSIX**.)
 
     - Добавьте полученный файл в проект.
 
-    - В **свойствах**файла, установить **действие сборки** **нет**.
+    - В **свойствах**файла задайте для параметра **действие сборки** значение **нет**.
 
-    - Откройте файл с **vSIX Manifest редактором**.
+    - Откройте файл с помощью **редактора манифеста VSIX**.
 
     - Измените следующие поля:
 
-    - **ID**: RegExLangServ
+    - **Идентификатор**: режекслангсерв
 
-    - **Название продукта**: RegExLangServ
+    - **Имя продукта**: режекслангсерв
 
-    - **Описание**: Регулярная служба языка выражения.
+    - **Описание**: служба языка регулярных выражений.
 
-    - Под **активами**, нажмите **Новый**, выберите **тип** **Microsoft.VisualStudio.VsPackage**, установить **источник** проекта в **текущем решении**, а затем установить **проект** **RegExLangServ**.
+    - В **разделе активы**щелкните **создать**, выберите **Тип** в **Microsoft. VisualStudio. VSPackage**, задайте в качестве **источника** **проект в текущем решении**, а затем задайте для **проекта** значение **режекслангсерв**.
 
-    - Сохраните файл и закройте его.
+    - Сохраните и закройте файл.
 
-11. Создайте решение. Встроенные файлы развернуты в **%USERPROFILE% -AppData-Местный -Microsoft-VisualStudio -14.0Exp-Расширения -MSIT - RegExLangServ\\**.
+11. Создайте решение. Созданные файлы развертываются в **%UserProfile%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ режекслангсерв \\ **.
 
-12. Приступите к отладке. Открылся второй экземпляр Visual Studio.
+12. Запустите отладку. Второй экземпляр Visual Studio открыт.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Расширяемость языковой службы прежних версий](../../extensibility/internals/legacy-language-service-extensibility.md)

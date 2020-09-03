@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldОпределение::TypeParamCount (англ.) Документы Майкрософт
+title: 'Идебугженерикфиелддефинитион:: Типепарамкаунт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a488bce2ad5822f875776bdfc4c4de29eee71bbb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728240"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
-Извлекает количество параметров типа, связанных с общим полем.
+Извлекает количество параметров типа, связанных с универсальным полем.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,13 +40,13 @@ int TypeParamCount(
 
 ## <a name="parameters"></a>Параметры
 `pcParams`\
-(в, вне) Количество параметров типа.
+[вход, выход] Число параметров типа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если\<list T>, этот метод возвращает\<1, и, если список T1,T2>, этот метод возвращает 2. Этот метод возвращает 0, если нет параметров типа.
+## <a name="remarks"></a>Remarks
+ Если \<T> значение List, этот метод возвращает 1, а в списке — \<T1,T2> значение 2. Этот метод возвращает 0, если отсутствуют параметры типа.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

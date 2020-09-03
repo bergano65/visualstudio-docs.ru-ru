@@ -1,5 +1,5 @@
 ---
-title: Модель для пакетов управления исходом (ru) Документы Майкрософт
+title: Модель для пакетов управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707074"
 ---
 # <a name="model-for-source-control-packages"></a>Модель для пакетов системы управления версиями
-Следующая модель представляет собой пример реализации управления исходным ресурсом. В модели вы видите интерфейсы, которые необходимо реализовать, и службы среды, которые необходимо вызвать. Как и все службы, вы на самом деле называют методы определенного интерфейса, который вы получаете с помощью службы. Имена классов определены, чтобы было легче увидеть, как осуществляется контроль источника.
+В следующей модели представлен пример реализации системы управления версиями. В модели отображаются интерфейсы, которые необходимо реализовать, и службы среды, которые необходимо вызвать. Как и все службы, в действительности вызываются методы определенного интерфейса, получаемые посредством службы. Имена классов идентифицируются, чтобы упростить просмотр управления исходным кодом.
 
- ![SCC&#95;примеры TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Пример проекта управления исходом
+ ![Примеры SCC&#95;тройки](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Пример проекта системы управления версиями
 
 ## <a name="interfaces"></a>Интерфейсы
- Вы можете реализовать элемент управления исходным интерфейсом для новых типов проектов в Visual Studio, используя список интерфейсов, показанных в следующей таблице.
+ Вы можете реализовать систему управления версиями для новых типов проектов в Visual Studio, используя список интерфейсов, приведенных в следующей таблице.
 
 |Интерфейс|Использовать|
 |---------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Вызывается по проектам и редакторам, прежде чем они сохраняют или изменяют (грязные) файлы. Этот интерфейс доступен <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> с помощью службы.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Вызывается по проектам, чтобы запросить разрешение на добавление, удаление или переименование файла или каталога. Этот интерфейс также вызывается проектами для информирования среды, когда утвержденное действие добавить, удалить или переименовать действие завершено. Доступ к нему <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> осуществляется с помощью сервиса.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Реализовано любой организацией, которая регистрируется для уведомления при добавлении, переименовании или удалении файла или каталога. Чтобы зарегистрироваться для <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>уведомления о событии, позвоните .|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Вызывается по проектам, чтобы зарегистрироваться в пакете управления исходным ресурсом и получить информацию о статусе управления исходным источником. Этот интерфейс доступен <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> с помощью службы.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Реализовано проектом для ответа на запросы управления исходными данными о файлах и получения параметров управления исходным элементом, необходимых для файла проекта.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Вызывается проектами и редакторами перед сохранением или изменением (грязных) файлов. Доступ к этому интерфейсу осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> службы.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Вызывается проектами для запроса разрешения на добавление, удаление или переименование файла или каталога. Этот интерфейс также вызывается проектами для информирования среды о завершении утвержденного действия Add, Remove или Rename. Доступ к нему осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> службы.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Реализуется любой сущностью, которая регистрируется для получения уведомления о добавлении, переименовании или удалении файла или каталога в проектах. Чтобы зарегистрироваться для получения уведомления о событии, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A> .|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Вызывается проектами для регистрации в пакете системы управления версиями и получения сведений о состоянии системы управления версиями. Доступ к этому интерфейсу осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> службы.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Реализуется проектом для реагирования на запросы системы управления версиями на получение сведений о файлах и получения параметров системы управления версиями, необходимых для файла проекта.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

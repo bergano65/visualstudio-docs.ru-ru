@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6675a136b2bbdc1ef19d90ee19ecf7497053bfe1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282051"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Практическое руководство. Включение и выключение плюрализации (реляционный конструктор объектов)
@@ -38,7 +38,7 @@ ms.locfileid: "85282051"
 
 5. Задайте для **параметра множественное преобразование имен** значение **Enabled**  =  **true** , чтобы применить правила множественного преобразования к именам классов объектов, добавленных в **конструктор O/R**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

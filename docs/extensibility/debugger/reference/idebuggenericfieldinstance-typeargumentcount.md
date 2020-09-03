@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount (англ.) Документы Майкрософт
+title: 'Идебугженерикфиелдинстанце:: Типеаргументкаунт | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728157"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
@@ -40,13 +40,13 @@ int TypeArgumentCount(
 
 ## <a name="parameters"></a>Параметры
 `pcArgs`\
-(в, вне) Количество аргументов параметра типа для данного экземпляра.
+[вход, выход] Число аргументов параметра типа для данного экземпляра.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Например, если\<List int>, этот метод\<возвращает 1, и, если List int, float2> этот метод возвращает 2. Этот метод возвращает 0, если нет аргументов типа.
+## <a name="remarks"></a>Remarks
+ Например, если List \<int> , этот метод возвращает значение 1, а если List \<int,float2> возвращает значение 2. Этот метод возвращает 0, если отсутствуют аргументы типа.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

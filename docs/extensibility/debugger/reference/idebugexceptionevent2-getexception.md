@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEventEvent2::GetException Документы Майкрософт
+title: 'IDebugExceptionEvent2:: except | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729861"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Получает подробное описание исключения, которое произвело это событие.
+Возвращает подробное описание исключения, которое вызвало это событие.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,16 +41,16 @@ int GetException( 
 
 ## <a name="parameters"></a>Параметры
 `pExceptionInfo`\
-(в, вне) [Структура EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) заполненная описанием исключения.
+[вход, выход] Структура [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , которая заполняется описанием исключения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
- (только си) Звонящий отвечает за освобождение любых строк в [структуре EXCEPTION_INFO,](../../../extensibility/debugger/reference/exception-info.md) а также за освобождение объекта [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) в структуре.
+ [Только C++] Вызывающий объект отвечает за освобождение всех строк в структуре [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , а также освобождение объекта [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) в структуре.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

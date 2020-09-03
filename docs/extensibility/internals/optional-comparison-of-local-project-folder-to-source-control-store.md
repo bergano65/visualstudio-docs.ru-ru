@@ -1,5 +1,5 @@
 ---
-title: Сравните проект Фолдер с магазином управления исходом (ru) Документы Майкрософт
+title: Сравнение папки проекта с хранилищем системы управления версиями | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706864"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Необязательное сравнение папки локального проекта с системой управления версиями
-В элементе управления source Plug-in API 1.2 сравнение локальной папки проекта и управления исходным кодом осуществляется с помощью функций [SccDir-''иенфофо](../../extensibility/sccdirqueryinfo-function.md) и [SccDirDiff.](../../extensibility/sccdirdiff-function.md)
+В API подключаемого модуля системы управления версиями 1,2 Сравнение между локальной папкой проекта и системой управления версиями осуществляется с помощью функций [сккдиркуеринфо](../../extensibility/sccdirqueryinfo-function.md) и [сккдирдифф](../../extensibility/sccdirdiff-function.md).
 
- В **solution Explorer**, если папка выбрана вместо отдельного файла, меню ярлыка **версий Сравнения** вызывает новые [SccDir'eryInfo](../../extensibility/sccdirqueryinfo-function.md) и [SccDirDiff](../../extensibility/sccdirdiff-function.md) в плагине управления исходным кодом.
+ В **Обозреватель решений**, если вместо отдельного файла выбрана папка, контекстное меню **Compare Versions** вызывает New [сккдиркуеринфо](../../extensibility/sccdirqueryinfo-function.md) и [сккдирдифф](../../extensibility/sccdirdiff-function.md) в подключаемом модуле системы управления версиями.
 
-## <a name="new-capability-flags"></a>Флаги новых возможностей
+## <a name="new-capability-flags"></a>Новые флаги возможностей
  `SCC_CAP_DIRECTORYDIFF`
 
  `SCC_CAP_DIRECTORYCHECKOUT`
@@ -33,10 +33,10 @@ ms.locfileid: "80706864"
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- Функция `SccDirQueryInfo` вызывается `SccDirDiff` раньше, чтобы определить, контролируется ли рабочий каталог. Функция `SccDirDiff` отображает различия между текущим локальным каталогом и соответствующей папкой управления исходом. Эта команда просит плагин управления исходным источником для отображения списка изменений в каталоге. Плагин управления исходным элементом обеспечивает свой собственный uii для отображения различий.
+ `SccDirQueryInfo`Функция вызывается до того, как `SccDirDiff` определить, является ли рабочий каталог управляемым источником. `SccDirDiff`Функция отображает различия между текущим локальным каталогом и соответствующей папкой системы управления версиями. Эта команда запрашивает у подключаемого модуля системы управления версиями список изменений, внесенных в каталог. Подключаемый модуль системы управления версиями предоставляет собственный пользовательский интерфейс для просмотра различий.
 
 > [!NOTE]
-> Эта функция использует те же флаги команды, [что и SccDiff.](../../extensibility/sccdiff-function.md) Как поставщик плагинов управления исходным кодом, вы можете отказаться от поддержки операции «быстрый дифф» для каталогов.
+> Эта функция использует те же флаги команд, что и [сккдифф](../../extensibility/sccdiff-function.md). В качестве поставщика подключаемого модуля системы управления версиями вы можете не поддерживать операцию быстрого поиска в каталогах.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Новые возможности в API версии 1.2 подключаемого модуля системы управления версиями](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
