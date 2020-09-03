@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586930"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Настроить ссылку на службу - диалоговое окно
@@ -71,11 +71,11 @@ ms.locfileid: "75586930"
 
 **Тип коллекции**
 
-Указывает тип коллекции списка для клиента WCF. Тип по умолчанию —<xref:System.Array>.
+Указывает тип коллекции списка для клиента WCF. Значение по умолчанию — <xref:System.Array>.
 
 **Тип коллекции для словаря**
 
-Указывает тип коллекции словаря для клиента WCF. Тип по умолчанию —<xref:System.Collections.Generic.Dictionary%602>.
+Указывает тип коллекции словаря для клиента WCF. Значение по умолчанию — <xref:System.Collections.Generic.Dictionary%602>.
 
 **Повторно использовать типы в сборках, на которые есть ссылки**
 
@@ -103,7 +103,7 @@ ms.locfileid: "75586930"
 > [!NOTE]
 > Кнопка **Добавить веб-ссылку** доступна только в том случае, если диалоговое окно **Настройка ссылки на службу** отображается из **диалогового окна Добавление ссылки на службу**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Добавление ссылки на веб-службу](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
-- [Службы Windows Communication Foundation и службы данных WCF](../data-tools/configure-service-reference-dialog-box.md)
+- [Службы Windows Communication Foundation и WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

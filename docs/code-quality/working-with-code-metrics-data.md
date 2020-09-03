@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587086"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Использование окна "Результаты метрик кода"
@@ -30,9 +30,9 @@ ms.locfileid: "75587086"
 
 Окно Результаты метрик кода можно отобразить с помощью одной из следующих последовательностей меню:
 
-- В меню **анализ** выберите пункт **Результаты метрик кода** **Windows** > .
+- В меню **анализ** выберите пункт **Windows**  >  **Результаты метрик кода**Windows.
 
-- В меню **вид** выберите **другие окна** > **Результаты метрик кода**.
+- В меню **вид** выберите **другие**  >  **Результаты метрик кода**Windows.
 
 Откроется окно **Результаты метрик кода** , даже если оно не содержит результатов.
 
@@ -106,7 +106,7 @@ ms.locfileid: "75587086"
 
 4. В меню **файл** выберите команду **сохранить все** , чтобы сохранить рабочий элемент.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Значения метрик кода](../code-quality/code-metrics-values.md)
-- [Практическое: создание данных для метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
+- [Как создавать данные метрик кода](../code-quality/how-to-generate-code-metrics-data.md)
