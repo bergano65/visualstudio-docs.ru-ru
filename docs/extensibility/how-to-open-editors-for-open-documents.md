@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905823"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Руководство. открытие редакторов для открытых документов
@@ -25,7 +25,7 @@ ms.locfileid: "85905823"
 
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Открытие редактора проекта для открытого файла
 
-1. Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.
+1. Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> .
 
     Этот вызов возвращает указатели на иерархию документа, элемент иерархии и рамку окна, если это уместно.
 
@@ -52,7 +52,7 @@ ms.locfileid: "85905823"
 
 2. Если документ не открыт, выполните действия, описанные в разделе [как открыть стандартные редакторы](../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)
 - [Пошаговое руководство. открытие редакторов, зависящих от проекта](../extensibility/how-to-open-project-specific-editors.md)
 - [Руководство. Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)

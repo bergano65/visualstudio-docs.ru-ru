@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delete Документы Майкрософт
+title: IDebugPendingBreakpoint2::D удалить | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd6e2d61eb7a7ce927a966281bba2f0cbf470dc6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725903"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-Удаляет эту ожидавную точку разрыва и все точки разрыва, связанные с ней.
+Удаляет данную отложенную точку останова и все точки останова, привязанные к ней.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>Возвращаемое значение
-Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращается, `E_BP_DELETED` если точка разрыва была удалена.
+Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки. Возвращает значение `E_BP_DELETED` , если точка останова была удалена.
 
 ## <a name="example"></a>Пример
-В следующем примере показано, как `CPendingBreakpoint` реализовать этот метод для простого объекта, который реализует интерфейс [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объекта, реализующего интерфейс [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::Delete(void)
@@ -84,5 +84,5 @@ HRESULT CPendingBreakpoint::Delete(void)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

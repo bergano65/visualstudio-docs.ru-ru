@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullСправка (ru) Документы Майкрософт
+title: 'Идебугобжект:: Иснуллреференце | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726514"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Проверяет, является ли этот объект нулевой ссылкой.
+Проверяет, является ли этот объект пустой ссылкой.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,13 +41,13 @@ int IsNullReference(
 
 ## <a name="parameters"></a>Параметры
 `pfIsNull`\
-(ваут) Возвращает ненулевой`TRUE`( ) если этот объект является нулевой ссылкой; в противном`FALSE`случае, возвращаетнулно ноль ().
+заполняет Возвращает ненулевое значение ( `TRUE` ), если этот объект является пустой ссылкой; в противном случае возвращает ноль ( `FALSE` ).
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Нулевая ссылка означает пустой объект или объект, который не был назначен.
+## <a name="remarks"></a>Remarks
+ Пустая ссылка означает пустой объект или объект, который не был назначен.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

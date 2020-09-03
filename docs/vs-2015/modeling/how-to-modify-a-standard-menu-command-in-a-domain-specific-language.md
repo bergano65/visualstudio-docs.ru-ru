@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300870"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в доменном языке
@@ -37,13 +37,13 @@ ms.locfileid: "74300870"
 > [!NOTE]
 > Если вы хотите создать собственные команды меню, см. раздел [как добавить команду в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-## <a name="what"></a>Какие команды можно изменить?
+## <a name="what-commands-can-you-modify"></a><a name="what"></a> Какие команды можно изменить?
 
 #### <a name="to-discover-what-commands-you-can-modify"></a>Поиск команд, доступных для изменения
 
-1. В проекте `DslPackage` откройте `GeneratedCode\CommandSet.cs`. Этот C# файл можно найти в Обозреватель решений в качестве дочерней компании `CommandSet.tt`.
+1. В проекте `DslPackage` откройте `GeneratedCode\CommandSet.cs`. Этот файл C# можно найти в обозреватель решений в качестве дочернего элемента `CommandSet.tt` .
 
-2. Найдите в этом файле классы, имена которых заканчиваются на "`CommandSet`", например `Language1CommandSet` и `Language1ClipboardCommandSet`.
+2. Найдите в этом файле классы, имена которых заканчиваются на " `CommandSet` ", например `Language1CommandSet` и `Language1ClipboardCommandSet` .
 
 3. В каждом классе наборов команд введите "`override`" и пробел. IntelliSense отобразит список методов, которые можно переопределить. Каждая команда имеет пару методов, имена которых начинаются с "`ProcessOnStatus`" и "`ProcessOnMenu`".
 
@@ -54,7 +54,7 @@ ms.locfileid: "74300870"
     > [!NOTE]
     > Обычно генерируемые файлы не редактируются. При следующей генерации файлов все изменения будут утеряны.
 
-## <a name="extend"></a>Расширение соответствующего класса набора команд
+## <a name="extend-the-appropriate-command-set-class"></a><a name="extend"></a> Расширение соответствующего класса набора команд
  Создайте новый файл, содержащий частичное описание класса наборов команд.
 
 #### <a name="to-extend-the-command-set-class"></a>Расширение класса наборов команд
@@ -65,9 +65,9 @@ ms.locfileid: "74300870"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
+2. В **DslPackage**создайте папку с именем **Пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs` .
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример.
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
 
     ```
     using System;
@@ -79,8 +79,8 @@ ms.locfileid: "74300870"
 
      **Примечание** . Если для создания нового файла использовался шаблон файла класса, необходимо исправить как пространство имен, так и имя класса.
 
-## <a name="override"></a>Переопределение методов команд
- У большинства команд есть два связанных метода: метод с именем, например `ProcessOnStatus`... Определяет, должна ли команда быть видимой и включена. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`... вызывается, когда пользователь щелкает команду и выполняет функцию команды. Возможно, потребуется переопределение одного или двух этих методов.
+## <a name="override-the-command-methods"></a><a name="override"></a> Переопределение методов команд
+ У большинства команд есть два связанных метода: метод с именем, например `ProcessOnStatus` ... Определяет, должна ли команда быть видимой и включена. Она вызывается, когда пользователь щелкает схему правой кнопкой мыши, и должна выполняться быстро и не вносить изменений. `ProcessOnMenu`... вызывается, когда пользователь щелкает команду и выполняет функцию команды. Возможно, потребуется переопределение одного или двух этих методов.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Изменение условий отображения команды в меню
  Переопределите ProcessOnStatus... Method. Он должен задавать свойства Visible и Enabled своего параметра MenuCommand. Обычно команда проверяет this.CurrentSelection, чтобы определить, применяется ли команда к выбранным элементам, а также может проверить их свойства, чтобы определить возможность применения команды в их текущем состоянии.
@@ -138,17 +138,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. Фигура, которую пользователь щелкает правой кнопкой мыши, всегда включается в этот список фигур и соединителей. Если пользователь щелкает пустую область схемы, схема становится единственным членом списка.
 
-- `this.IsDiagramSelected()` - `true`, если пользователь щелкнул пустую часть диаграммы.
+- `this.IsDiagramSelected()` - `true` значение, если пользователь щелкнул пустую часть диаграммы.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` — пользователь не выберет несколько фигур
+- `this.IsSingleSelection()` — пользователь не выберет несколько фигур.
 
-- `this.SingleSelection` — фигура или схема, которую щелкнул пользователь правой кнопкой мыши
+- `this.SingleSelection` — Фигура или схема, которую пользователь щелкнул правой кнопкой мыши
 
 - `shape.ModelElement as MyLanguageElement` — элемент модели, представленный фигурой.
 
   Дополнительные сведения о переходе от элемента к элементу и о создании объектов и ссылок см. [в разделе Навигация и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>См. также
- <xref:System.ComponentModel.Design.MenuCommand> [написание кода для выбора доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md) [Практическое руководство. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Пошаговое руководство. Получение сведений из выбранной ссылки](../misc/walkthrough-getting-information-from-a-selected-link.md) [как пакеты VSPackage Добавление элементов пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md) в [командную таблицу Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct Справочник по XML-схеме](../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>См. также:
+ <xref:System.ComponentModel.Design.MenuCommand>[Написание кода для использования доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md) [Практическое руководство. Добавление команды в контекстное меню](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Пошаговое руководство. Получение сведений из выбранной ссылки](../misc/walkthrough-getting-information-from-a-selected-link.md) [как пакеты VSPackage Добавление элементов пользовательского интерфейса](../extensibility/internals/how-vspackages-add-user-interface-elements.md) в [командную таблицу Visual Studio (. Vsct) файлы](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct Справочник по XML-схеме](../extensibility/vsct-xml-schema-reference.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905944"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление компонентов в пользовательский редактор
@@ -51,7 +51,7 @@ ms.locfileid: "85905944"
         > [!NOTE]
         > Вызовите `QueryService` On <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> , чтобы получить указатель на `IVsFileChangeEx` .
 
-7. Координация событий изменения документа с помощью системы управления исходным кодом. Выполните следующие действия.
+7. Координация событий изменения документа с помощью системы управления исходным кодом. Выполните следующие действия:
 
     1. Получите указатель на `IVsQueryEditQuerySave2` , вызвав `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -63,13 +63,13 @@ ms.locfileid: "85905944"
 
          Этот метод предлагает пользователю сохранить файл, если он не был сохранен или был изменен с момента последнего сохранения.
 
-8. Включите окно " **Свойства** ", чтобы отобразить свойства для текста, выбранного в редакторе. Выполните следующие действия.
+8. Включите окно " **Свойства** ", чтобы отобразить свойства для текста, выбранного в редакторе. Выполните следующие действия:
 
     1. Вызывайте <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> каждый раз при изменении выбора текста, передавая реализацию <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Вызовите `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> службу, чтобы получить указатель на <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Разрешить пользователям перетаскивать элементы между редактором и **панелью элементов**, а также между внешними редакторами (например, Microsoft Word) и **панелью элементов**. Выполните следующие действия.
+9. Разрешить пользователям перетаскивать элементы между редактором и **панелью элементов**, а также между внешними редакторами (например, Microsoft Word) и **панелью элементов**. Выполните следующие действия:
 
     1. Реализуйте `IDropTarget` в редакторе, чтобы предупредить интегрированную среду разработки о том, что редактор является целью перетаскивания.
 
@@ -142,7 +142,7 @@ ms.locfileid: "85905944"
 
 - Чтобы команда меню кровдинг в пользовательском интерфейсе, следует использовать существующие команды в интегрированной среде разработки перед созданием новых команд. Общие команды определяются в *шаредкмддеф. vsct* и *шеллкмддеф. vsct*. Эти файлы устанавливаются по умолчанию в подкаталог Висуалстудиоинтегратион\коммон\инк [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] установки.
 
-- `ISelectionContainer`может выражать как один, так и несколько элементов. Каждый выбранный объект реализуется как `IDispatch` объект.
+- `ISelectionContainer` может выражать как один, так и несколько элементов. Каждый выбранный объект реализуется как `IDispatch` объект.
 
 - Интегрированная среда разработки реализует `IOleUndoManager` как службу, доступную из, <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> или как объект, экземпляр которого можно создать с помощью <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . Редактор реализует `IOleUndoUnit` интерфейс для каждого `Undo` действия.
 
@@ -152,6 +152,6 @@ ms.locfileid: "85905944"
 
   - `Window.Object`
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Участие в модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)

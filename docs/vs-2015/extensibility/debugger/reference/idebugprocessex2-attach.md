@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Документация Майкрософт
+title: 'IDebugProcessEx2:: Attach | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a62f21a6606466d5a5976a031b3c4cb6452206f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202813"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод сообщает процесс, что сеанс теперь является отладка процесса.  
+Этот метод информирует процесс о том, что сеанс теперь отлаживается процесс.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ int Attach(
   
 #### <a name="parameters"></a>Параметры  
  `pSession`  
- [in] Значение, уникально идентифицирующий сеанс, присоединение к этому процессу.  
+ окне Значение, уникально идентифицирующее сеанс, присоединяемый к этому процессу.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Переданный интерфейс `pSession` следует рассматривать только как файл cookie, значение, однозначно определяющий диспетчер отладки сеансов, присоединение к этому процессу; ни один из методов предоставленного интерфейса являются рабочими.  
+## <a name="remarks"></a>Remarks  
+ Переданный интерфейс `pSession` должен обрабатываться только как файл cookie, значение, однозначно идентифицирующее диспетчер отладки сеанса, присоединенный к этому процессу; ни один из методов предоставленного интерфейса не работает.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

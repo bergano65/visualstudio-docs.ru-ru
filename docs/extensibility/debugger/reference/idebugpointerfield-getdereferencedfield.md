@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField Документы Майкрософт
+title: 'Идебугпоинтерфиелд:: Жетдереференцедфиелд | Документация Майкрософт'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725622"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Этот метод возвращает тип объекта, на который указывает объект указателя.
+Этот метод возвращает тип объекта, на который указывает этот объект указателя.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,14 +41,14 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Параметры
 `ppField`\
-(ваут) Возвращает [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) описывающий тип целевого объекта.
+заполняет Возвращает [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , описывающий тип целевого объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.
 
-## <a name="remarks"></a>Примечания
- Если, например, объект [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) указывает на несколько, тип [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) возвращенный этим методом, описывает этот тип.
+## <a name="remarks"></a>Remarks
+ Если, например, объект [идебугпоинтерфиелд](../../../extensibility/debugger/reference/idebugpointerfield.md) указывает на целое число, тип [идебугфиелд](../../../extensibility/debugger/reference/idebugfield.md) , возвращаемый этим методом, описывает этот целочисленный тип.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

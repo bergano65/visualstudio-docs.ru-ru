@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 063767f8f50793253c236db5d5b90e1d6db1bff4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905874"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Как добавить зависимость в пакет VSIX
@@ -46,7 +46,7 @@ ms.locfileid: "85905874"
 
 Всиксинсталлер обнаружит более ранние версии Visual Studio и сообщит пользователю о необходимости последующего обновления.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
 - [Анатомия пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dссылка (ru) Документы Майкрософт
+title: Идебугпоинтеробжект::D ереференце | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725575"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Получает объект указал.
+Возвращает объект, на который указывает.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>Параметры
 `dwIndex`\
-(в) Простое смещение байта от начала объекта указал на.
+окне Простое смещение в байтах от начала объекта, на который указывает.
 
 `ppObject`\
-(ваут) Возвращает объект [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) представляющий указанный объект, плюс смещение, если таковой имеется.
+заполняет Возвращает объект [идебугобжект](../../../extensibility/debugger/reference/idebugobject.md) , представляющий объект, на который указывает, а также смещение, если оно есть.
 
 ## <a name="return-value"></a>Возвращаемое значение
- В случае успеха, возвращается S_OK; в противном случае возвращает код ошибки. Возвращает E_FAIL, если этот объект не указывает на другой объект.
+ В случае успеха возвращает S_OK; в противном случае возвращает код ошибки. Возвращает E_FAIL, если этот объект не указывает на другой объект.
 
-## <a name="remarks"></a>Примечания
- Указанный объект может быть примитивным или более сложным типом, например классом или структурой.
+## <a name="remarks"></a>Remarks
+ Объект, на который указывает, может быть примитивом или более сложным типом, например классом или структурой.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

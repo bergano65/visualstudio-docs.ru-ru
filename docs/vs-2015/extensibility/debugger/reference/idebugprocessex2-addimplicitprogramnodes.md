@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Документация Майкрософт
+title: 'IDebugProcessEx2:: АддимплиЦитпрограмнодес | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: faca728144bde572d8a1d3424fbfcf908403d679
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202817"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод добавляет узел программы для каждого ядра отладки (DE) указан.  
+Этот метод добавляет узел программы для каждого указанного модуля отладки (DE).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,20 +44,20 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Параметры  
  `guidLaunchingEngine`  
- [in] `GUID` Из Развернутой, будет использоваться для запуска программ (и предполагается, что добавлять свои собственные узлы программы).  
+ окне Параметр `GUID` de, который используется для запуска программ (предполагает добавление собственных узлов программы).  
   
  `rgguidSpecificEngines`  
- [in] Массив `GUID`s из DEs, какие программы будут добавлены узлы.  
+ окне Массив типа `GUID` DEs, для которого будут добавлены узлы программ.  
   
  `celtSpecificEngines`  
- [in] Число `GUID`s в `rgguidSpecificEngines` массива.  
+ окне Число элементов `GUID` в `rgguidSpecificEngines` массиве.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- [Программы узлы](../../../extensibility/debugger/program-nodes.md) добавляется для каждого DE, перечисленных в `rgguidSpecificEngines`— за исключением запуска ядра (как в `guidLaunchingEngine`), который предполагается добавить собственный узел программы при запуске программы.  
+## <a name="remarks"></a>Remarks  
+ [Узлы программы](../../../extensibility/debugger/program-nodes.md) будут добавляться для каждого из них, кроме `rgguidSpecificEngines` модуля запуска (как указано в `guidLaunchingEngine` ), который предполагает добавление собственного узла программы при запуске программы.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [Узлы программы](../../../extensibility/debugger/program-nodes.md)

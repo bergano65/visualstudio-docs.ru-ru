@@ -13,10 +13,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905960"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Пошаговое руководство. Добавление пользовательского XAML-кода на начальную страницу
@@ -87,7 +87,7 @@ ms.locfileid: "85905960"
 
 Теперь начальная страница Visual Studio содержит вкладку, в которой отображается вкладка веб-браузер и вкладка MyButton. Можно создать пользовательские начальные страницы с другими функциями с помощью модели *кода программной части* , чтобы добавить пользовательскую библиотеку DLL, как показано в статье [Добавление пользовательского элемента управления на начальную страницу](../extensibility/adding-user-control-to-the-start-page.md). Пользовательские начальные страницы можно совместно использовать с другими пользователями, публикуя полученный VSIX-файл на [Visual Studio Marketplaceм](https://marketplace.visualstudio.com/) сайте или на другом веб-сайте или в сетевой папке. Для получения дополнительной информации см. [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Элементы управления контейнера WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

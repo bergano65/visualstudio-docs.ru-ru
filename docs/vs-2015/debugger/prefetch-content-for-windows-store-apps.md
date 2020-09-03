@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ac6479b4dbb0815374174140deb0d660636ac9e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300525"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Предварительная загрузка контента для приложений Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Применяется только к Windows] (.. /Video windows_only_content. png "windows_only_content")  
+Применяется только к Windows] (.. /Video windows_only_content.png "windows_only_content")  
   
  Чтобы обеспечить более высокую скорость реагирования приложения из Магазина Windows, можно запросить Windows загрузить некоторое веб-содержимое, например веб-страницы или изображения, в кэш [WinInet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinInet](https://msdn.microsoft.com/library/aa383630.aspx)приложения. Эта функциональность называется предварительной загрузкой. Он особенно эффективен для содержимого, которое используется при запуске, но также можно выполнять предварительную загрузку другого часто используемого содержимого. Методы класса [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) позволяют указывать URI содержимого, которое необходимо предварительно загрузить.  
   
@@ -33,9 +33,9 @@ ms.locfileid: "74300525"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>Принудительная предварительная загрузка ресурсов, указанных ContentPrefetcher  
  В этой процедуре предполагается, что вы уже настроили функцию ContentPrefetcher и указали URI содержимого, которое необходимо предварительно загрузить в проекте приложения. Для принудительной предварительной загрузки содержимого, если указанные ресурсы являются новыми или изменены, необходимо запустить и остановить приложение перед выбором команды **Запустить предварительную загрузку приложения для Microsoft Store**. Сначала приложение запускается для регистрации URI. Затем команда **Запустить предварительную загрузку приложения для Microsoft Store** заставляет ContentPrefetcher загрузить содержимое и добавить его в кэш. При дальнейших запусках приложения можно считать, что содержимое предварительно загружается.  
   
-1. Запустите приложение для регистрации URI подлежащего предварительной загрузке содержимого с этим приложением. В меню **Отладка** выберите пункт **Начать отладку** (клавиша F5).  
+1. Запустите приложение для регистрации URI подлежащего предварительной загрузке содержимого с этим приложением. В меню **Отладка** выберите пункт **Начать отладку** (сочетание клавиш: F5).  
   
-2. В меню **Отладка** выберите **Остановить отладку** (клавиши SHIFT+F5).  
+2. В диалоговом окне **Отладка** выберите команду **Остановить отладку** (клавиатура: Shift + F5).  
   
 3. В меню **Отладка** выберите **Другие целевые объекты отладки**, а затем выберите **Запустить предварительную загрузку для приложения Microsoft Store**.  
   
@@ -44,5 +44,5 @@ ms.locfileid: "74300525"
 > [!NOTE]
 > Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
   
-## <a name="see-also"></a>См. также  
- [Запись блога: Активация предвыборки для приложений Магазина Windows в Visual Studio 2013 обновление 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+## <a name="see-also"></a>См. также:  
+ [Запись блога. Активация предварительной выборки для приложений Магазина Windows в Visual Studio 2013 с обновлением 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

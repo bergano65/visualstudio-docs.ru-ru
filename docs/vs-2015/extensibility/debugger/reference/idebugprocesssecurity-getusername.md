@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Документация Майкрософт
+title: 'Идебугпроцесссекурити:: имя_пользователя | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a6ef52d7df1c60b0cb6581a7e15eeaf67e7875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202785"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
@@ -38,13 +38,13 @@ int GetUserName (
   
 #### <a name="parameters"></a>Параметры  
  `pbstrUserName`  
- [out] Строка, содержащая имя пользователя.  
+ заполняет Строка, содержащая имя пользователя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Если метод завершается успешно, возвращается `S_OK`. В противном случае он возвращает код ошибки.  
+ Если метод завершается успешно, возвращает значение `S_OK`. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- `GetUserName` Возвращает имя пользователя, который отображается в **имя пользователя** столбец **присоединение к процессу** диалоговое окно. Чтобы просмотреть **присоединение к процессу** диалоговом окне щелкните **присоединение к процессу** на **средства** меню в [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE).  
+## <a name="remarks"></a>Remarks  
+ `GetUserName` Возвращает имя пользователя, отображаемое в столбце **имя пользователя** диалогового окна **Присоединение к процессу** . Чтобы открыть диалоговое окно **Присоединение к процессу** , щелкните **присоединить к процессу** в меню **Сервис** в [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] интегрированной среде разработки (IDE).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115053"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
@@ -86,7 +86,7 @@ ms.locfileid: "76115053"
 
 - В конце каждой итерации проводите обсуждение требований, чтобы подробно определить требования или пользовательские истории, которые будут реализованы в следующей итерации. Пригласите пользователей и заинтересованных лиц из бизнес-среды, которые могут определить приоритеты, а также разработчиков и системных тест-инженеров. Отведите три часа на определение требований для 2-недельной итерации.
 
-- Задача обсуждения заключается в том, чтобы все участники договорились о том, что должно быть сделано к концу следующей итерации. Используйте модели как одно из средств для уточнения этих требований. Выходные данные этого семинара — это список задач по разработке в Team Foundation и наборах тестов в [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Задача обсуждения заключается в том, чтобы все участники договорились о том, что должно быть сделано к концу следующей итерации. Используйте модели как одно из средств для уточнения этих требований. Выходные данные этого семинара: список задач разработки в Team Foundation и наборы тестов в [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - В обсуждение требований рассматривайте структуру только до такой степени, которая позволяет определить оценки для задач разработки. В противном случае обсуждайте поведение системы, с которым пользователи могут столкнуться непосредственно. Отделите модель требований от модели архитектуры.
 
@@ -129,14 +129,14 @@ ms.locfileid: "76115053"
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
-|**Категория**|**Links**|
+|**Категория**|**Ссылки**|
 |-|-|
-|**Видеоролики**|![ссылки на видео](../data-tools/media/playvideo.gif) [видео практические руководства MSDN. Создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![ссылки на видео](../data-tools/media/playvideo.gif) [Channel 9: UML с Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![ссылки на видео](../data-tools/media/playvideo.gif) [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Видео**|![Ссылка на видео видео ](../data-tools/media/playvideo.gif) [практические руководства MSDN: создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![Ссылка на видео- ](../data-tools/media/playvideo.gif) [канал 9: UML с Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![Ссылка на видео ](../data-tools/media/playvideo.gif) [серия "практические руководства" MSDN: средства и расширяемость UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Форумы**|- [Средства моделирования и визуализации Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Блоги**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

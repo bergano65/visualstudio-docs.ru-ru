@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905805"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Пошаговое руководство. открытие редакторов, зависящих от проекта
@@ -51,7 +51,7 @@ ms.locfileid: "85905805"
 
 6. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод, чтобы показать и открыть представление.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)
 - [Руководство. Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)
 - [Руководство. открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)

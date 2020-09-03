@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Item | Документация Майкрософт
+title: 'IDiaEnumInjectedSources:: Item | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fec8369e07c563891d476ccbdee5ae11ec6bbdbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202613"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает введенный код с помощью индекса.  
+Получает внедренный источник с помощью индекса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,15 +35,15 @@ HRESULT Item ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- индекс  
- [in] Индекс [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) метод.  
+ index  
+ окне Индекс объекта [идиаинжектедсаурце](../../debugger/debug-interface-access/idiainjectedsource.md) для извлечения. Индекс — это диапазон от 0 до `count` -1, где `count` возвращается методом [IDiaEnumInjectedSources:: get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) .  
   
- injectedSource  
- [out] Возвращает [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) объект, представляющий введенный код.  
+ инжектедсаурце  
+ заполняет Возвращает объект [идиаинжектедсаурце](../../debugger/debug-interface-access/idiainjectedsource.md) , представляющий внедренный источник.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

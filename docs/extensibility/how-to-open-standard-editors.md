@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905796"
 ---
 # <a name="how-to-open-standard-editors"></a>Руководство. Открытие стандартных редакторов
@@ -49,7 +49,7 @@ ms.locfileid: "85905796"
 
      Если представление документа или объект представления документа успешно размещается в рамке окна, объект инициализируется с данными путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)
 - [Пошаговое руководство. открытие редакторов, зависящих от проекта](../extensibility/how-to-open-project-specific-editors.md)

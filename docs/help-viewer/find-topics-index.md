@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284962"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Поиск разделов с помощью указателя окна справки
@@ -77,7 +77,7 @@ ms.locfileid: "85284962"
 
     Например, если вы ввели термин "сборка", вместо него введите "создание".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Поиск разделов в ОГЛАВЛЕНИи](../help-viewer/find-topics-toc.md)
 - [Практическое руководство. Поиск разделов](../help-viewer/find-topics.md)

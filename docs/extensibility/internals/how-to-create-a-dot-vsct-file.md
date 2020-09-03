@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905537"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Как создать vsct-файл
@@ -148,7 +148,7 @@ ms.locfileid: "85905537"
 
      Первое значение параметра должно соответствовать значению `ResourceName` атрибута, определенного в файле проекта.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 - [Файлы Author. vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Файлы таблицы команд Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Справочник по XML-схеме VSCT](../../extensibility/vsct-xml-schema-reference.md)
