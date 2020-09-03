@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c7d2263642c2ff8a2c36f274d2c7b80745ed845
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179482"
 ---
-# <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
+# <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Определяет своим наличием, нужно ли экземпляр по умолчанию [класс VsgDbg](../debugger/vsgdbg-class.md) класс, который предоставляет программный интерфейс захвата — предоставляется.  
+Определяет своим наличием, предоставляется ли экземпляр по умолчанию класса [VsgDbg Class](../debugger/vsgdbg-class.md), предоставляющего интерфейс программного захвата.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ VsgDbg *g_pVsgDbg;
   
  Если экземпляр по умолчанию не отключен, он автоматически инициализируется до начала работы программы и автоматически уничтожается при ее завершении. Инициализировать или уничтожать этот экземпляр явно нет необходимости.  
   
- Чтобы отключить экземпляр по умолчанию, необходимо определить `VSG_NODEFAULT_INSTANCE` перед включением `vsgcapture.h` в программе.  
+ Чтобы отключить экземпляр по умолчанию, необходимо определить `VSG_NODEFAULT_INSTANCE` до включения `vsgcapture.h` в программу.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как отключить экземпляр по умолчанию:  

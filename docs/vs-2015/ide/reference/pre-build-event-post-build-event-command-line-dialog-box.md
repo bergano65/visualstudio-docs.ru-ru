@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662169"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
@@ -86,5 +86,5 @@ ms.locfileid: "72662169"
 |`$(TargetFileName)`|Имя основного выходного файла для сборки (определяется базовым именем и расширением файла).|
 |`$(TargetExt)`|Расширение имени основного выходного файла сборки. Включает символ "." перед расширением файла.|
 
-## <a name="see-also"></a>См. также раздел
- [Указание пользовательских событий сборки на](../../ide/specifying-custom-build-events-in-visual-studio.md) [странице событий сборки Visual Studio, конструктор проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) [руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [как указать события сборки (C#)](../../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>См. также:
+ [Указание пользовательских событий сборки на](../../ide/specifying-custom-build-events-in-visual-studio.md) [странице событий сборки Visual Studio. конструктор проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) [как указать события сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [как указать события сборки (C#)](../../ide/how-to-specify-build-events-csharp.md)

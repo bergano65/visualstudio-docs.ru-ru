@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659152"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Как использовать навигатор
@@ -47,7 +47,7 @@ ms.locfileid: "72659152"
 2. После применения состояния развернуть все или свернуть все можно нажать кнопку **восстановить** , которая вернется к просмотру состояния, ранее примененного к каждому действию.
 
     > [!WARNING]
-    > Если действие, например <xref:System.Activities.Statements.Flowchart>, отказалось от расширения на месте, функциональные возможности, связанные с кнопками **Развернуть все** и **Свернуть все** , отключаются в конструкторе **блок-схемы** . [!INCLUDE[crabout](../includes/crabout-md.md)] конструкторе **блок-схемы** см. в разделе [блок-схема](../workflow-designer/flowchart-activity-designer.md) .
+    > Если действие, например <xref:System.Activities.Statements.Flowchart> , отказалось от расширения на месте, функциональные возможности, связанные с кнопками **Развернуть все** и **Свернуть все** , отключаются в конструкторе **блок-схемы** . [!INCLUDE[crabout](../includes/crabout-md.md)] Конструктор **блок-схемы** см. в разделе [блок-схема](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Раскрыть все также имеет особый результат в конструкторах действий **switch** и **TryCatch** . При нажатии кнопки **Развернуть все**все варианты переключения и все блоки try/catch/finally отображаются. Нажатие кнопки **восстановить** или **Свернуть все** возвращает эти конструкторы в состояние по умолчанию, из которого можно щелкнуть отдельный вариант или блок, чтобы просмотреть его содержимое.

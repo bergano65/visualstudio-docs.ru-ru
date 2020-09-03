@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459298"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
@@ -33,7 +33,7 @@ ms.locfileid: "86459298"
 
 Упорядочивание объектов по строкам и столбцам.
 
-![Панель макета Grid](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![Панель макета "Сетка"](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
@@ -43,11 +43,11 @@ ms.locfileid: "86459298"
 
 ![Панель макета UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>Элемент Canvas
 
 Упорядочивание объектов любым образом При запуске приложения пользователями эти элементы будут иметь фиксированные позиции на экране.
 
-![Панель макета Canvas](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![Панель макета "Холст"](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
@@ -73,13 +73,13 @@ ms.locfileid: "86459298"
 
 **Просмотрите короткое видео:** ![Кнопка воспроизведения](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF: DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).
 
-## <a name="layout-controls"></a>Элементы управления макета
+## <a name="layout-controls"></a>Элементы управления для макета
 
 Вы также можете добавить объекты к элементам управления. Они не так многофункциональны, как панель макета, но также могут оказаться полезными в определенных случаях.
 
 Перечисленные ниже элементы управления макета используются наиболее часто, но существуют и другие. Их можно найти на **панели элементов** в Visual Studio или на панели **Ресурсы** в Blend для Visual Studio.
 
-### <a name="border"></a>Border
+### <a name="border"></a>Рамка
 
 Создайте границу, фон или одновременно границу и фон вокруг объекта. Для **границы** можно добавить только один объект. Если вы хотите применить границу или фон для нескольких объектов, добавьте панель макета для **границы**. Затем добавьте объекты для панели или элемента управления.
 
@@ -101,7 +101,7 @@ ms.locfileid: "86459298"
 
 ![Элемент управления макета ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Работа с элементами в конструкторе XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Создание пользовательского интерфейса с помощью конструктора XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548113"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
@@ -102,7 +102,7 @@ ms.locfileid: "85548113"
 
 |Имя папки|Описание|
 |-----------------|-----------------|
-|\\*\<language name>*|Папка языка. Замените на *\<language name>* имя языка. Например, **\Matlab**.|
+|\\*\<language name>*|Папка языка. Замените *\<language name>* именем языка. Например, **\Matlab**.|
 |\Syntaxes|Папка грамматики. Содержит файлы JSON грамматики для языка, например **Matlab.json**.|
 |\Snippets|Папка фрагментов кода. Содержит фрагменты кода для языка.|
 
@@ -110,5 +110,5 @@ ms.locfileid: "85548113"
 
  Дополнительные сведения о создании грамматик TextMate см. в статьях [TextMate. Общие сведения о грамматике языка: добавление выделения синтаксиса исходного кода, внедренного и HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Заметки о создании грамматики языка и пользовательской темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Visual Studio 2013 перейдите к](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) разделу "улучшения". Пошаговое руководство по [созданию фрагментов кода](../ide/walkthrough-creating-a-code-snippet.md) [: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672977"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Привязка элементов управления Windows Forms к данным
@@ -36,7 +36,7 @@ ms.locfileid: "72672977"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Привязка к данным в элементе управления DataGridView
- Для DataGridView вся таблица привязана к одному элементу управления. При перетаскивании элемента DataGridView в форму также появляется панель инструментов для просмотра записей (<xref:System.Windows.Forms.BindingNavigator>). [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов. На следующем рисунке также добавлен TableAdapterManager, так как таблица Customers имеет связь с таблицей Orders. Все эти переменные объявляются в автоматически созданном коде как закрытые члены класса Form. Автоматически созданный код для заполнения DataGridView находится в обработчике событий Form_Load. Код для сохранения данных для обновления базы данных находится в обработчике событий Save для BindingNavigator. Этот код можно перемещать или изменять при необходимости.
+ Для DataGridView вся таблица привязана к одному элементу управления. При перетаскивании элемента DataGridView в форму также появляется панель инструментов для навигации по записям ( <xref:System.Windows.Forms.BindingNavigator> ). [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator> отображается в области компонентов. На следующем рисунке также добавлен TableAdapterManager, так как таблица Customers имеет связь с таблицей Orders. Все эти переменные объявляются в автоматически созданном коде как закрытые члены класса Form. Автоматически созданный код для заполнения DataGridView находится в обработчике событий form_load. Код для сохранения данных для обновления базы данных находится в обработчике событий Save для BindingNavigator. Этот код можно перемещать или изменять при необходимости.
 
  ![GridView с BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "раддата GridView с BindingNavigator")
 
@@ -46,7 +46,7 @@ ms.locfileid: "72672977"
 
  Если элементы управления, необходимые приложению, недоступны в окне **Источники данных** , можно добавить элементы управления. Дополнительные сведения см. в разделе [Добавление пользовательских элементов управления в окно Источники данных](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
- Кроме того, можно перетаскивать элементы из окна **Источники данных** на элементы управления, которые уже находятся в форме, чтобы привязать элемент управления к данным. Элементы управления, которые уже привязаны к данным, применяют привязку данных к элементу, который был перемещен в последнее время. Чтобы быть допустимым целевым объектом перетаскивания, элементы управления должны иметь возможность отображения базового типа данных элемента, перетаскиваемого в него, из окна **Источники данных** . Например, недопустимо перетаскивать элемент с типом данных <xref:System.DateTime> в <xref:System.Windows.Forms.CheckBox>, поскольку <xref:System.Windows.Forms.CheckBox> не может отобразить дату.
+ Кроме того, можно перетаскивать элементы из окна **Источники данных** на элементы управления, которые уже находятся в форме, чтобы привязать элемент управления к данным. Элементы управления, которые уже привязаны к данным, применяют привязку данных к элементу, который был перемещен в последнее время. Чтобы быть допустимым целевым объектом перетаскивания, элементы управления должны иметь возможность отображения базового типа данных элемента, перетаскиваемого в него, из окна **Источники данных** . Например, нельзя перетащить элемент, имеющий тип данных <xref:System.DateTime> <xref:System.Windows.Forms.CheckBox> , на, поскольку не <xref:System.Windows.Forms.CheckBox> может отобразить дату.
 
 ## <a name="bind-to--data-in-individual-controls"></a>Привязка к данным в отдельных элементах управления
  При привязке источника данных к «Details» каждый столбец в наборе данных привязывается к отдельному элементу управления.
@@ -62,5 +62,5 @@ ms.locfileid: "72672977"
 
  Обратите внимание, что каждый элемент управления имеет смарт-тег. Этот тег включает настройки, применяемые только к этому элементу управления.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

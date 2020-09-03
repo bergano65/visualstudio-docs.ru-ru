@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2 Документы Майкрософт
+title: IDebugProgramEx2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722328"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-Этот интерфейс позволяет диспетчеру отладки сеанса (SDM) прикрепить к программе и получить узло программы, связанное с программой.
+Этот интерфейс позволяет диспетчеру отладки сеансов (SDM) присоединяться к программе и получать узел программы, связанный с программой.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,30 +28,30 @@ ms.locfileid: "80722328"
 IDebugProgramEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>Заметки для исполнителей
- Поставщик пользовательских портов реализует этот интерфейс на том же объекте, что и интерфейс [IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) чтобы позволить SDM прикрепить сяопродачку к программе и в то же время позволяет поставщику порта отслеживать все сеансы, прикрепленные к программе. Поставщик пользовательских портов может реализовать этот интерфейс, если он выбирает.
+## <a name="notes-for-implementers"></a>Примечания для разработчиков
+ Пользовательский поставщик порта реализует этот интерфейс на том же объекте, что и интерфейс [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , чтобы позволить модели SDM присоединяться к программе одновременно с тем, чтобы поставщик порта мог относить все сеансы, подключенные к программе. Поставщик настраиваемого порта может реализовать этот интерфейс, если он выбрал.
 
-## <a name="notes-for-callers"></a>Заметки для абонентов
- SDM вызывает [queryInterface](/cpp/atl/queryinterface) `IDebugProgram2` на интерфейсе, чтобы получить этот интерфейс для отслеживания сеансов, которые прилагаются к программам.
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов
+ Модель SDM вызывает [QueryInterface](/cpp/atl/queryinterface) на `IDebugProgram2` интерфейсе, чтобы получить этот интерфейс для наблюдения за сеансами, подключенными к программам.
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
- В следующей таблице показаны методы `IDebugProgramEx2`.
+ В следующей таблице показаны методы `IDebugProgramEx2` .
 
 |Метод|Описание|
 |------------|-----------------|
-|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Прикрепляет программу к сеансу.|
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Получает узл программы, связанный с программой.|
+|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Присоединяет программу к сеансу.|
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Возвращает узел программы, связанный с программой.|
 
-## <a name="remarks"></a>Примечания
- Этот интерфейс является закрытым между SDM и программой.
+## <a name="remarks"></a>Remarks
+ Этот интерфейс является частным между SDM и программой.
 
 ## <a name="requirements"></a>Требования
- Заголовок: Portpriv.h
+ Заголовок: Портприв. h
 
- Название: Microsoft.VisualStudio.Debugger.Interop
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop
 
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

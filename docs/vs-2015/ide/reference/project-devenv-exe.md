@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f9c54691ed343493ef1e43798faf4d2ab6f60fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662110"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -37,11 +37,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 ```
 
 ## <a name="arguments"></a>Аргументы
- /Build выполняет сборку проекта, указанного `/project` `ProjName`.
+ /Build выполняет сборку проекта, указанного параметром `/project` `ProjName` .
 
  /Clean очищает все промежуточные файлы и выходные каталоги, созданные во время сборки.
 
- /Rebuild очищает проект, указанный в `/project` `ProjName`.
+ /Rebuild очищает проект, указанный в `/project` `ProjName` .
 
  /Deploy указывает, что проект должен быть развернут после сборки или перестроения.
 
@@ -53,13 +53,13 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 
  /projectconfig `ProjConfigName` Необязательный. Имя конфигурации сборки проекта, которая применяется к указанному `/project`.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 - Следует использовать в составе команды `devenv /build`, /`clean`, `/rebuild` или `/deploy`.
 
 - Строки с пробелами заключаются в двойные кавычки.
 
-- Сводные данные для сборок, включая ошибки, могут отображаться в окне **команд** или в любом файле журнала, указанном с помощью параметра `/out`.
+- Сводные данные о сборках, включая ошибки, могут отображаться в **командном** окне или в любом файле журнала, указанном с помощью `/out` параметра.
 
 ## <a name="example"></a>Пример
  В этом примере выполняется сборка проекта `CSharpConsoleApp` с использованием конфигурации проекта `Debug` в пределах конфигурация решения `Debug` для `MySolution`.
@@ -68,5 +68,5 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/ProjectConfig (devenv. exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (](../../ide/reference/build-devenv-exe.md) devenv. exe) [/Clean (devenv](../../ide/reference/clean-devenv-exe.md) . exe) [/REBUILD (](../../ide/reference/rebuild-devenv-exe.md) devenv. exe) [/deploy (devenv.](../../ide/reference/deploy-devenv-exe.md) exe) [/out (devenv. exe](../../ide/reference/out-devenv-exe.md) )
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/REBUILD (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

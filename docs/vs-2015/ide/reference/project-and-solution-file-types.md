@@ -31,10 +31,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59f9fb1f628da6bc4d958fdca3843adebe61b798
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662141"
 ---
 # <a name="project-and-solution-file-types"></a>Типы файлов проектов и решений
@@ -45,7 +45,7 @@ ms.locfileid: "72662141"
 ## <a name="solution-files-sln-and-suo"></a>Файлы решений (.SLN и .SUO)
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использует два типа файлов (.SLN и .SUO) для хранения параметров, связанных с решениями. Эти файлы, которые называют файлами решений, предоставляют Обозревателю решений информацию, необходимую для отображения графического интерфейса, используемого для управления файлами. Они позволяют сконцентрироваться на проектах и конечных целях, а не на самой среде при каждом возврате к задачам разработки.
 
-|Расширение|name|ОПИСАНИЕ|
+|Расширение|name|Описание|
 |---------------|----------|-----------------|
 |.SLN|Решение [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]|Организует проекты, элементы проектов и решений в решение.|
 |SUO|Параметры пользователя решения|Отслеживает настройки на уровне пользователя в Visual Studio, такие как контрольные точки.|
@@ -56,9 +56,9 @@ ms.locfileid: "72662141"
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]
  [Типы файлов, создаваемых для проектов Visual C++](https://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)
 
- [Создание проектов Visual C++ и управление ими](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)
+ [Creating and Managing Visual C++ Projects](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)
 
  [Юникод](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)

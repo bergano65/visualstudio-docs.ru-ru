@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3ad3c6b1c66ffa5ec512cfda857738d1219628e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606692"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Использование тем в рабочих процессах (для прежних версий)
@@ -29,5 +29,5 @@ ms.locfileid: "72606692"
 
  Можно выбрать параметры по умолчанию и сохранить пользовательские темы с помощью [темы, конструктор рабочих процессов, диалогового окна Параметры (прежние версии)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md). Чтобы открыть это диалоговое окно, щелкните **выбрать пользовательскую тему** в меню **Рабочий процесс** (или щелкните правой кнопкой мыши рабочую область конструктора рабочих процессов и выберите пункт **выбрать пользовательскую тему**), а затем выберите параметр **Конструктор рабочих процессов** . Выберите нужную тему и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Диалоговое окно "Конфигурация темы" (устаревшие)](../workflow-designer/theme-configuration-dialog-box-legacy.md) [темы, конструктор рабочих процессов, диалоговое окно "Параметры" (устаревшая)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md) [с использованием устаревших конструктор рабочих процессов](../workflow-designer/using-the-legacy-workflow-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_lengthSavedRegisters | Документация Майкрософт
+title: 'IDiaStackFrame:: get_lengthSavedRegisters | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 747c5f561368df92d3c9472df93a0066f3815c2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190513"
 ---
-# <a name="idiastackframegetlengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
+# <a name="idiastackframeget_lengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает число байтов, сохраненных регистров в стек.  
+Возвращает число байтов сохраненных регистров, отправленных в стек.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_lengthSavedRegisters ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает число байтов, сохраненных регистров.  
+ заполняет Возвращает число байтов сохраненных регистров.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.  
+ В случае успеха возвращает `S_OK`. Возвращает значение, `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876064"
 ---
 # <a name="state-machine-activity-designers"></a>Конструкторы действий конечных автоматов
@@ -39,7 +39,7 @@ ms.locfileid: "86876064"
 
  [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)
 
- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+ [Параметры выполнения](../workflow-designer/runtime-activity-designers.md)
 
  [Примитивы](../workflow-designer/primitives-activity-designers.md)
 

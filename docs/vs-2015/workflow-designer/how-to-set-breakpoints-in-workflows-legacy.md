@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603595"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Как задать точки останова в рабочих процессах (для прежних версий)
@@ -49,10 +49,10 @@ ms.locfileid: "72603595"
 
      Откроется диалоговое окно **Новая точка останова** .
 
-3. Укажите имя действия в текстовом поле **функции** , используя следующий синтаксис: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.
+3. Укажите имя действия в текстовом поле **функции** , используя следующий синтаксис: `QualifiedActivityId[:[FullClassName][:InstanceId]]` .
 
     > [!NOTE]
-    > При необходимости вместо использования имени действия в текстовом поле **функция** можно установить точку останова, указав абсолютный путь к действию рабочего процесса. Например, предположим, что имеется решение рабочего процесса с именем **WorkflowConsoleApplication1** и рабочий процесс в решении с именем **Workflow1** , которое использует действие с именем **Delay1**. Можно использовать имя действия **Delay1** или указать путь как **Delay1: WorkflowConsoleApplication1. Workflow1** или **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}** .
+    > При необходимости вместо использования имени действия в текстовом поле **функция** можно установить точку останова, указав абсолютный путь к действию рабочего процесса. Например, предположим, что имеется решение рабочего процесса с именем **WorkflowConsoleApplication1** и рабочий процесс в решении с именем **Workflow1** , которое использует действие с именем **Delay1**. Можно использовать имя действия **Delay1** или указать путь как **Delay1: WorkflowConsoleApplication1. Workflow1** или **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**.
 
 4. Установите флажок **использовать IntelliSense** для проверки имени функции.
 
@@ -62,5 +62,5 @@ ms.locfileid: "72603595"
 
 6. Нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Отладка устаревших рабочих процессов](../workflow-designer/debugging-legacy-workflows.md) [вызов отладчика Visual Studio для Windows Workflow Foundation (прежние версии)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

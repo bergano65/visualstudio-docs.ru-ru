@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Item | Документация Майкрософт
+title: 'Идиаенумсектионконтрибс:: Item | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06a82fbb52ccdf0f9fb9fda50a74f2cfb30e7648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190004"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает раздел материалов с помощью индекса.  
+Извлекает вклады раздела с помощью индекса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,15 +35,15 @@ HRESULT Item ( 
 ```  
   
 #### <a name="parameters"></a>Параметры  
- индекс  
- [in] Индекс [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md) метод.  
+ index  
+ окне Индекс объекта [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) для извлечения. Индекс находится в диапазоне от 0 до `count` -1, где `count` возвращается методом [идиаенумсектионконтрибс:: get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md) .  
   
  section  
- [out] Возвращает [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) объект, представляющий нужный раздел вклад.  
+ заполняет Возвращает объект [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) , представляющий нужную публикацию раздела.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
- [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
+## <a name="see-also"></a>См. также:  
+ [Идиаенумсектионконтрибс:: get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

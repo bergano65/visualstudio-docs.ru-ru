@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 075746353440462a66133cd83ed9158470d8de5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662202"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -40,7 +40,7 @@ devenv /out FileName
 ## <a name="arguments"></a>Аргументы
  `FileName` Обязательный. Путь и имя файла для приема ошибок при сборке исполняемого файла.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
  Если указано несуществующее имя файла, такой файл создается автоматически. Если файл уже существует, то результаты добавляются к имеющемуся в нем содержимому.
 
  Ошибки сборки в командной строке отображаются в окне **Команда** и представлении "Построитель решений" окна **Вывод**. Этот параметр полезен, если вы выполняете автоматические сборки и хотите видеть результаты.
@@ -52,5 +52,5 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>См. также
- [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv. exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv](../../ide/reference/build-devenv-exe.md) . exe) [/REBUILD (](../../ide/reference/rebuild-devenv-exe.md) devenv. exe) [/deploy (devenv. exe](../../ide/reference/deploy-devenv-exe.md) )
+## <a name="see-also"></a>См. также:
+ [Параметры командной строки devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/REBUILD (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

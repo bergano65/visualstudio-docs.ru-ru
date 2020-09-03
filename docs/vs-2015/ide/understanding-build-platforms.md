@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 191db7fa1079ef971e6e00a5f2618a6720b93e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672689"
 ---
 # <a name="understanding-build-platforms"></a>Общие сведения о платформах построения
@@ -29,10 +29,10 @@ ms.locfileid: "72672689"
 
 Можно сохранять различные версии решения и свойств проекта, которые применяются к разным целевым платформам. Например, можно создать конфигурацию отладки, предназначенную для платформы x86, и конфигурацию отладки, предназначенную для платформы x64. Можно быстро изменить активную среду так, чтобы без труда создавать несколько конфигураций.
 
-## <a name="in-this-section"></a>Содержание
- [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md) Описание настройки проекта для определенной платформы.
+## <a name="in-this-section"></a>в этом разделе
+ [Как настроить целевые платформы для проектов](../ide/how-to-configure-projects-to-target-platforms.md) Объясняется, как настроить проект для конкретной платформы.
 
- [Практическое руководство. Настройка проекта для нескольких платформ](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Описание настройки проекта для нескольких платформ.
+ [Как настроить проекты для нескольких платформ](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Объясняется, как настроить проект для нескольких платформ.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Пошаговое руководство. Создание приложения](../ide/walkthrough-building-an-application.md) [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

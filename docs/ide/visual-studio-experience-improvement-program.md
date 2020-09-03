@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71693016"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Программа улучшения качества программного обеспечения Visual Studio
@@ -65,7 +65,7 @@ ms.locfileid: "71693016"
 - **1** — согласиться (включить VSCEIP)
 
 > [!CAUTION]
-> Неправильное изменение реестра может привести к серьезным неполадкам системы. Перед внесением изменений в реестр рекомендуется создать резервную копию всех важных данных. В случае возникновения неполадок после внесения изменений вручную можно использовать параметр запуска **Загрузка последней удачной конфигурации**.
+> Неправильное изменение реестра может серьезно повредить систему. Перед внесением изменений следует сделать резервную копию всех ценных данных на компьютере. В случае возникновения неполадок после внесения изменений вручную можно использовать параметр запуска **Загрузка последней удачной конфигурации**.
 
 Для получения информации о собранных, обработанных или переданных VSCEIP сведениях см. [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement).
 
@@ -75,4 +75,4 @@ ms.locfileid: "71693016"
 * [Параметры обратной связи Visual Studio](../ide/feedback-options.md)
 * [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Сообщество разработчиков Visual Studio](https://developercommunity.visualstudio.com/)
-* [Заявление Майкрософт о конфиденциальности](https://privacy.microsoft.com/privacystatement)
+* [Заявление о конфиденциальности Майкрософт](https://privacy.microsoft.com/privacystatement)

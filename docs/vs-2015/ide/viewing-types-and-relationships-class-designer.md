@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663179"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Просмотр типов и отношений (конструктор классов)
@@ -32,8 +32,8 @@ ms.locfileid: "72663179"
 > [!NOTE]
 > Если проект содержит диаграмму классов и еще один проект ссылается на тип, который находится в другом проекте, диаграмма классов не отображает этот тип до сборки проекта для него. Аналогичным образом, диаграмма не отображает изменения кода внешней сущности, пока вы не перестроите проект с этой сущностью. Сведения о типах в сборках, указываемых в ссылках, и файлах, доступных только для чтения, см. в разделе [Отображение информации только для чтения (конструктор классов)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).
 
-## <a name="in-this-section"></a>Содержание
- [Практическое руководство. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md)
+## <a name="in-this-section"></a>в этом разделе
+ [Как просмотреть существующие типы (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md)
 
  Описывает, как можно использовать конструктор классов для визуализации уже существующего кода.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72663179"
 
  Описывает, как переключиться между нотацией элемента и нотацией ассоциации.
 
-## <a name="related-sections"></a>Связанные разделы
+## <a name="related-sections"></a>См. также
  [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)
 
  [Рефакторинг классов и типов (конструктор классов)](../ide/refactoring-classes-and-types-class-designer.md)

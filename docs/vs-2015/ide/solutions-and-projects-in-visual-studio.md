@@ -1,5 +1,5 @@
 ---
-title: Проекты и решения
+title: Решения и проекты
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661194"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
@@ -70,19 +70,19 @@ ms.locfileid: "72661194"
 
  На следующей схеме показана связь между проектами и решениями, а также элементы, которые они логически содержат.
 
- ![Проекты и решения Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Проекты и решения Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  Вы можете также создать пользовательские шаблоны проектов и элементов. Дополнительные сведения см. в статье [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md) (Создание шаблонов проектов и элементов).
 
 ## <a name="creating-new-projects"></a>Создание новых проектов
- Самый простой способ создать новый проект — начать с существующего шаблона проекта, который состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров для создания приложения или веб-сайта определенного типа на конкретном языке программирования. Эти шаблоны отображаются в **диалоговом окне "Новый проект"** , если последовательно выбрать пункты **Файл | Создать | Проект** или **Файл | Создать | Веб-сайт** в главном меню. Дополнительные сведения см. в статьях [Создание решений и проектов](../ide/creating-solutions-and-projects.md) и [NIB Создание проектов из шаблонов](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Самый простой способ создать новый проект — начать с существующего шаблона проекта, который состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров для создания приложения или веб-сайта определенного типа на конкретном языке программирования. Эти шаблоны отображаются в **диалоговом окне "Новый проект"**, если последовательно выбрать пункты **Файл | Создать | Проект** или **Файл | Создать | Веб-сайт** в главном меню. Дополнительные сведения см. в статьях [Создание решений и проектов](../ide/creating-solutions-and-projects.md) и [NIB Создание проектов из шаблонов](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Управление проектами в обозревателе решений
  После создания нового проекта вы используете **обозреватель решений** для просмотра проектов и решений, их связанных элементов, а также для управления ими. На следующем рисунке показан обозреватель серверов с решением C#, включающим два проекта.
 
- ![Обозреватель решений](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![Обозреватель решений](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 - [Создание решений и проектов](../ide/creating-solutions-and-projects.md)
 
@@ -96,11 +96,11 @@ ms.locfileid: "72661194"
 
 - [Управление сборками и подписывание манифестов](../ide/managing-assembly-and-manifest-signing.md)
 
-- [Практическое руководство. Задание значка приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Как указать значок приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

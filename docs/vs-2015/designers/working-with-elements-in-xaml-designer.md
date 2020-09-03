@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663988"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -22,7 +22,7 @@ ms.locfileid: "72663988"
 Элементы к приложению XAML (элементы управления, макеты и фигуры) можно добавлять, работая непосредственно с кодом, или с помощью конструктора XAML. В этом разделе описывается работа с элементами в конструкторе XAML в Visual Studio или Blend для Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Добавление элемента к макету
- *Макет* — это процесс изменения размеров и положения элементов в пользовательском интерфейсе. Для размещения визуальных элементов необходимо поместить их в структуру [Панель](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). `Panel` имеет дочернее свойство, которое является коллекцией типов [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Вы можете использовать различные дочерние элементы `Panel`, такие как [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) и [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), в качестве контейнеров макета и для размещения и упорядочения элементов на странице.
+ *Макет* — это процесс изменения размеров и положения элементов в пользовательском интерфейсе. Для размещения визуальных элементов необходимо поместить их в структуру [Панель](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). `Panel` имеет дочернее свойство, которое является коллекцией типов [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Можно использовать различные  `Panel` дочерние элементы, такие как [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)и [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), для использования в качестве контейнеров макета, а также для позиционирования и упорядочения элементов на странице.
 
  По умолчанию панель `Grid` используется в качестве контейнера макета верхнего уровня на странице или форме. Можно добавлять панели макета, элементы управления и другие элементы на верхнем уровне макета страницы.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72663988"
   - На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) или [Прямоугольник](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) и создайте объект на активной панели.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Изменение порядка слоев элементов
- Если на монтажной панели конструктора XAML имеется два элемента, один из них будет находиться перед другим в структуре слоев. В нижней части списка элементов в окне "Структура документа" находится первый передний элемент (если не задано свойство **ZIndex** элемента). При вставке элемента на страницу, форму или в контейнер макета элемент автоматически помещается перед другими элементами в активном элементе контейнера. Чтобы изменить порядок элементов, можно использовать команды **Порядок** или перетаскивать элементы в дереве объектов в окне "Структура документа".
+ Если на монтажной панели конструктора XAML имеется два элемента, один из них будет находиться перед другим в структуре слоев. В нижней части списка элементов в окне "Структура документа" находится самый передний элемент (за исключением случаев, когда для элемента задано свойство **ZIndex** ). При вставке элемента на страницу, форму или в контейнер макета элемент автоматически помещается перед другими элементами в активном элементе контейнера. Чтобы изменить порядок элементов, можно использовать команды **Порядок** или перетаскивать элементы в дереве объектов в окне "Структура документа".
 
 #### <a name="to-change-the-layering-order"></a>Изменение последовательности слоев
 
@@ -60,7 +60,7 @@ ms.locfileid: "72663988"
 ## <a name="changing-the-alignment-of-an-element"></a>Изменение выравнивания элемента
  Вы можете выравнивать элементы в области рисования, используя команды меню или перетаскивая элементы к линиям привязки.
 
- *Линия привязки* является визуальным средством, помогающим выравнивать элементы относительно других элементов в приложении.
+ *Линия привязки* — это визуальная подсказка, которая помогает выстроить элемент относительно других элементов в приложении.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Выравнивание нескольких элементов с помощью команд меню
 
@@ -121,5 +121,5 @@ ms.locfileid: "72663988"
 
 - В окне "Структура документа" или в области рисования щелкните правой кнопкой мыши элемент и последовательно выберите **Макет**, **Сброс** *имя_свойства*, где *имя_свойства* — это свойство, которое нужно переустановить (или выберите **Макет**, **Сбросить все**, чтобы переустановить все свойства макета элемента).
 
-## <a name="see-also"></a>См. также
- [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+## <a name="see-also"></a>См. также:
+ [Создание пользовательского интерфейса с помощью Конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

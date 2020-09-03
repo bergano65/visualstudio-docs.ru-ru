@@ -160,7 +160,7 @@ EndGlobal
 
 Только файл. sln содержит записи в `preSolution` `postSolution` разделах и. В файле SUO Нет похожих разделов, так как решению требуется правильная загрузка этих сведений. Suo-файл содержит пользовательские параметры, такие как закрытые заметки, которые не предназначены для совместного использования или размещения в системе управления исходным кодом.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Файл параметров пользователя решения (SUO-файл)](../../extensibility/internals/solution-user-options-dot-suo-file.md)
