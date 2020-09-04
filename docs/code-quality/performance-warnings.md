@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 974b98408d7c88bd437439d10c2cf3b1711a339c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cb3e83b06b3533d1feb1e683fb246f238da732
+ms.sourcegitcommit: 6a43ace7b84c401ebd03f65abc17ae1d2a21a130
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219640"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471483"
 ---
 # <a name="performance-warnings"></a>предупреждения производительности
 Предупреждения производительности поддерживают высокопроизводительные библиотеки и приложения.
@@ -58,6 +58,7 @@ ms.locfileid: "89219640"
 | [CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки](../code-quality/ca1831.md) | При использовании в строке индексатора Range и неявного присваивания значения Реадонлиспан &lt; &gt; типу Char метод <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части строки. |
 | [CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory](../code-quality/ca1832.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
 | [CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory](../code-quality/ca1833.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.Span%601> <xref:System.Memory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
+| [CA1834: используйте StringBuilder. append (char) для отдельных символьных строк](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> имеет `Append` перегрузку, которая принимает в `char` качестве аргумента. Предпочитать вызов `char` перегрузки для повышения производительности. |
 | [CA1835: предпочитать перегрузки на основе Мемори' для "ReadAsync" и "WriteAsync"](../code-quality/ca1835.md) | "Stream" имеет перегрузку "ReadAsync", которая принимает " &lt; байт памяти &gt; " в качестве первого аргумента, и перегрузка "WriteAsync", принимающая в &lt; &gt; качестве первого аргумента значение "реадонлимемори Byte". Предпочитать вызов перегрузок на основе памяти, что более эффективно. |
 | [CA1836: предпочитать `IsEmpty` `Count` при доступности](../code-quality/ca1836.md) | Предпочитать `IsEmpty` свойство, которое более эффективно, чем `Count` , `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> или, <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> чтобы определить, содержит ли объект какие-либо элементы или нет. |
 | [CA1837: используйте `Environment.ProcessId` вместо `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` проще и быстрее, чем `Process.GetCurrentProcess().Id` . |
