@@ -927,7 +927,7 @@
       href: ide/managing-external-tools.md
     - name: Учетные записи персонализации
       items:
-        - name: Выполните вход в Visual Studio
+        - name: Вход в Visual Studio
           displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Работа с несколькими учетными записями пользователя
@@ -1160,7 +1160,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Просмотр
+                    - name: Представление
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: F#
                   items:
@@ -1218,7 +1218,7 @@
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: Конструктор XAML
               href: ide/reference/xaml-designer.md
-        - name: Окно вывода
+        - name: окно выходных данных
           href: ide/reference/output-window.md
         - name: Свойства проекта
           items:
@@ -1411,6 +1411,8 @@
       href: ide/whats-new-visual-studio-2019.md
     - name: Новые возможности в документации по Visual Studio
       href: ide/whats-new-visual-studio-docs.md
+    - name: История новых возможностей в документации по Visual Studio
+      href: ide/whats-new-visual-studio-docs-history.md
     - name: Заметки о выпуске и требования к системе
       items:
         - name: График выпуска
@@ -1429,7 +1431,7 @@
               href: /visualstudio/productinfo/vs2017-compatibility-vs/
             - name: Требования к системе
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: "Visual Studio\_2019"
+        - name: Visual Studio 2019
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releases/2019/release-notes/
