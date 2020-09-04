@@ -32,7 +32,7 @@
           href: work-with-datasets-in-n-tier-applications.md
     - name: Проекты базы данных и приложения уровня данных (DAC)
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
-    - name: Общие сведения об n-уровневых приложениях для работы с данными
+    - name: Общие сведения об n-уровневых приложениях
       href: n-tier-data-applications-overview.md
 - name: Практические руководства
   items:
@@ -50,7 +50,7 @@
       href: add-new-data-sources.md
     - name: Инструменты LINQ to SQL
       items:
-        - name: Обзор
+        - name: Общие сведения
           displayName: LINQ to SQL tools
           href: linq-to-sql-tools-in-visual-studio2.md
         - name: Изменения типа возвращаемого значения метода DataContext
@@ -105,7 +105,7 @@
           href: validate-data-in-datasets.md
         - name: Сохранение данных обратно в базу данных
           items:
-            - name: Обзор
+            - name: Общие сведения
               displayName: Save data to database
               href: save-data-back-to-the-database.md
             - name: Вставка новых записей в базу данных
@@ -132,7 +132,7 @@
               href: save-a-dataset-as-xml.md
         - name: Выполнение запросов к наборам данных
           href: query-datasets.md
-        - name: n-уровневые приложения
+        - name: N-уровневые приложения
           items:
             - name: Добавление проверки в n-уровневом наборе данных
               href: add-validation-to-an-n-tier-dataset.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Устранение ошибок доступа к данным
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Справочник
+- name: Ссылка
   items:
     - name: Реляционный конструктор объектов (Linq to SQL)
       items:
