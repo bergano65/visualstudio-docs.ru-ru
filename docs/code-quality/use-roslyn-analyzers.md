@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219781"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490291"
 ---
 # <a name="use-code-analyzers"></a>Использование анализаторов кода
 
@@ -76,6 +76,13 @@ ms.locfileid: "89219781"
 На следующем снимке экрана показаны те же три нарушения, которые отображаются в Список ошибок:
 
 ![Ошибка, предупреждение и нарушение сведений в Список ошибок](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>"Hidden" серьезность и серьезность "нет"
+
+`Hidden` правила серьезности, включенные по умолчанию, отличаются от правил "отключено" или " `None` серьезность" несколькими способами.
+
+- Если для правила серьезности было зарегистрировано какое-либо исправление кода `Hidden` , то исправление предлагается как действие рефакторинга кода лампочки в Visual Studio, даже если скрытая диагностика не видна пользователю. Это не так для отключенных `None` правил серьезности.
+- `Hidden` правила серьезности можно настроить с помощью записей, которые [определяют серьезность правила для нескольких правил анализатора одновременно в файле EditorConfig](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file). `None` правила серьезности не могут быть настроены таким образом. Вместо этого они должны быть настроены с помощью записей, которые [задают серьезность правила в файле EditorConfig для каждого идентификатора правила](#set-rule-severity-in-an-editorconfig-file).
 
 ::: moniker range=">=vs-2019"
 
@@ -395,7 +402,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Отправка ошибки анализатора кода](https://github.com/dotnet/roslyn-analyzers/issues)
