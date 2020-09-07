@@ -248,9 +248,9 @@
           items:
             - name: 'Создание баз данных и приложений уровня данных, а также управление ими в Visual Studio'
               href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
-            - name: Создание N-уровневого приложения для работы с данными
+            - name: Создание n-уровневого приложения для работы с данными
               href: walkthrough-creating-an-n-tier-data-application.md
-            - name: Общие сведения о N-уровневых приложениях для работы с данными
+            - name: Общие сведения об n-уровневых приложениях для работы с данными
               href: n-tier-data-applications-overview.md
         - name: 'Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным'
           href: additional-resources-for-troubleshooting-data-access-errors.md
