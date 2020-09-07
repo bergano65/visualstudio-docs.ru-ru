@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219677"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509865"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Набор правил "Правила глобализации" для управляемого кода
 
@@ -21,13 +21,9 @@ ms.locfileid: "89219677"
 
 |Правило|Описание|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|Укажите MessageBoxOptions|
-|[CA1301](../code-quality/ca1301.md)|Избегайте повторяющихся акселераторов|
-|[CA1302](../code-quality/ca1302.md)|Не кодировать строки, зависящие от языкового стандарта|
 |[CA1303](../code-quality/ca1303.md)|Не передавайте литералы в качестве локализованных параметров|
 |[CA1304](../code-quality/ca1304.md)|Указывайте CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Указывайте IFormatProvider|
-|[CA1306](../code-quality/ca1306.md)|Задавайте языковой стандарт для типов данных|
 |[CA1307](../code-quality/ca1307.md)|Укажите StringComparison для ясности|
 |[CA1308](../code-quality/ca1308.md)|Нормализуйте строки в верхний регистр|
 |[CA1309](../code-quality/ca1309.md)|Используйте порядковый параметр StringComparison|

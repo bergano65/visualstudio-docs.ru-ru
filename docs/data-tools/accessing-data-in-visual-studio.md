@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272091"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509839"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Работа с данными в Visual Studio
 
@@ -89,7 +89,7 @@ ms.locfileid: "77272091"
 
 Документацию по доступу к данным, связанную с ASP.NET, см. в разделе [Работа с данными](https://www.asp.net/web-forms/overview/presenting-and-managing-data) на сайте ASP.NET. Руководство по использованию Entity Framework с ASP.NET MVC см. в разделе [Начало работы с Entity Framework 6 Code First с помощью MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Приложения универсальная платформа Windows (UWP) на C# или Visual Basic могут использовать Пакет Microsoft Azure SDK для .NET для доступа к службе хранилища Azure и другим службам Azure. Класс Windows. Web. HttpClient обеспечивает взаимодействие с любой службой RESTFUL. Дополнительные сведения см. в разделе [Подключение к HTTP-серверу с помощью Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Приложения универсальная платформа Windows (UWP) на C# или Visual Basic могут использовать Пакет Microsoft Azure SDK для .NET для доступа к службе хранилища Azure и другим службам Azure. Класс Windows. Web. HttpClient обеспечивает взаимодействие с любой службой RESTFUL. Дополнительные сведения см. в разделе [Подключение к HTTP-серверу с помощью Windows. Web. http](/previous-versions/windows/apps/dn469430(v=win.10)).
 
 Для хранения данных на локальном компьютере рекомендуемым подходом является использование SQLite, который выполняется в том же процессе, что и приложение. Если требуется уровень объектно-реляционного сопоставления (ORM), можно использовать Entity Framework. Дополнительные сведения см. в статье [доступ к данным](/windows/uwp/data-access/index) в центре разработчиков Windows.
 

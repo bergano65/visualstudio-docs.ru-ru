@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65849a3d9ad1cdd073551f96e61997fe5f91118a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b57fb96bf06f5dcafd87e44522575126d7bac55
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444899"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509826"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Анализаторы Roslyn и библиотека для ImmutableArrays с поддержкой кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "81444899"
 
 - [Пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md). При установке Visual Studio также можно проверить средства расширения Visual Studio в разделе Общие средства для установки пакета SDK одновременно. Если вы уже установили Visual Studio, можно также установить этот пакет SDK, перейдя в главный **файл меню &#124; новый &#124;проект...**, выбрав C# в левой области навигации, а затем выбрав пункт расширяемость. При выборе шаблона проекта "**установить средства расширения Visual Studio**" будет предложено скачать и установить пакет SDK.
 
-- [Пакет SDK .NET Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Вы также можете установить этот пакет SDK, перейдя в главный **файл меню &#124; новый &#124; проект...**, выбрав **C#** в левой области навигации, а затем выбрав пункт **расширяемость**. При выборе шаблона проект иерархического проекта "**скачать .NET COMPILER Platform SDK**" будет предложено скачать и установить пакет SDK. Этот пакет SDK включает [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Это чрезвычайно полезное средство помогает понять, какие типы модели кода следует искать в анализаторе. Инфраструктура анализатора обращается к коду для конкретных типов моделей кода, поэтому код выполняется только при необходимости и может сосредоточиться только на анализе соответствующего кода.
+- [Пакет SDK .NET Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Вы также можете установить этот пакет SDK, перейдя в главный **файл меню &#124; новый &#124; проект...**, выбрав **C#** в левой области навигации, а затем выбрав пункт **расширяемость**. При выборе шаблона проект иерархического проекта "**скачать .NET COMPILER Platform SDK**" будет предложено скачать и установить пакет SDK. Этот пакет SDK включает [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Это чрезвычайно полезное средство помогает понять, какие типы модели кода следует искать в анализаторе. Инфраструктура анализатора обращается к коду для конкретных типов моделей кода, поэтому код выполняется только при необходимости и может сосредоточиться только на анализе соответствующего кода.
 
 ## <a name="whats-the-problem"></a>В чем проблема?
 Представьте, что вы предоставляете библиотеку с ImmutableArray (например, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName> ). Разработчики на C# имеют множество возможностей для массивов .NET. Однако из-за природы методов Иммутаблеаррайс и оптимизации, используемых в реализации, разработчик C# интуитионс приводил к написанию неработающего кода, как описано ниже. Более того, пользователи не видят свои ошибки до времени выполнения, а это не то, что используется в Visual Studio с .NET.
@@ -309,7 +309,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 Весь готовый код можно просмотреть [здесь](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Вложенные папки Донотусеиммутаблеаррайколлектионинитиализер и Донотусеиммутаблеаррайктор имеют файл C# для поиска проблем и файл C#, который реализует исправления кода, отображаемые в пользовательском интерфейсе лампочки Visual Studio. Обратите внимание, что завершенный код имеет немного более абстракцию, чтобы избежать повторной выборки \<T> объекта типа ImmutableArray. Он использует вложенные зарегистрированные действия для сохранения объекта типа в контексте, который доступен при выполнении вложенных действий (анализ создания объекта и анализ инициализации коллекции).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [ \\ \Буилд 2015. проговорите](https://channel9.msdn.com/events/Build/2015/3-725), как 
  [выполнить код на GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)  
  [несколько примеров на GitHub, сгруппированных в три вида анализаторов](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md).  
