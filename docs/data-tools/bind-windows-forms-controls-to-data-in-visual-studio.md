@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283012"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508552"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
 
@@ -53,7 +53,7 @@ ms.locfileid: "85283012"
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Привязка к данным в элементе управления DataGridView
 
-Для [элемента управления DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)вся таблица привязана к этому отдельному элементу управления. При перетаскивании **элемента DataGridView** в форму также появляется панель инструментов для навигации по записям ( <xref:System.Windows.Forms.BindingNavigator> ). [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator> отображается в области компонентов. На следующем рисунке также добавлен [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) , так как таблица Customers имеет связь с таблицей Orders. Все эти переменные объявляются в автоматически созданном коде как закрытые члены класса Form. Автоматически созданный код для заполнения **DataGridView** находится в `Form_Load` обработчике событий. Код для сохранения данных для обновления базы данных находится в `Save` обработчике событий для **BindingNavigator**. Этот код можно перемещать или изменять при необходимости.
+Для [элемента управления DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)вся таблица привязана к этому отдельному элементу управления. При перетаскивании **элемента DataGridView** в форму также появляется панель инструментов для навигации по записям ( <xref:System.Windows.Forms.BindingNavigator> ). [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator> отображается в области компонентов. На следующем рисунке также добавлен [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) , так как таблица Customers имеет связь с таблицей Orders. Все эти переменные объявляются в автоматически созданном коде как закрытые члены класса Form. Автоматически созданный код для заполнения **DataGridView** находится в `Form_Load` обработчике событий. Код для сохранения данных для обновления базы данных находится в `Save` обработчике событий для **BindingNavigator**. Этот код можно перемещать или изменять при необходимости.
 
 ![GridView с BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769479"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508383"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 
@@ -40,7 +40,7 @@ ms.locfileid: "85769479"
 
 ## <a name="improve-visual-studio-performance"></a>Улучшение производительности Visual Studio
 
-Советы и рекомендации по улучшению производительности Visual Studio при работе с большими решениями и нехваткой памяти см. в статье [рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Советы и рекомендации по улучшению производительности Visual Studio при работе с большими решениями и нехваткой памяти см. в статье [рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Анализ кода в реальном времени сокращается до минимальной области.
 
@@ -65,8 +65,8 @@ ms.locfileid: "85769479"
 > [!NOTE]
 > Предупреждение о приостановке автоматического приостановки признака выполняется только один раз для каждого решения, а не для каждого сеанса. Это означает, что при переключении с Visual Basic на Visual C# (или наоборот) и выполнении в другое состояние нехватки памяти можно получить еще одно предупреждение о приостановке приостановки компонента.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Как настроить область анализа активного кода для управляемого кода](./configure-live-code-analysis-scope-managed-code.md)
 - [Основные сведения о сборке мусора](/dotnet/standard/garbage-collection/fundamentals)
-- [Рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

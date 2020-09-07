@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911670"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508396"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Настройка учетных данных для проверки подлинности
 
@@ -33,7 +33,7 @@ ms.locfileid: "72911670"
 - Выберите активную подписку, затем диалоговое окно **Редактирование**, в котором можно изменить существующую подписку для использования при аутентификации.
 - Выберите **Создать**, чтобы открыть диалоговое окно **Создать подписку** и введите необходимые сведения. Чтобы отправить сертификат в облачную службу, указанную в диалоговом окне входа на портал Azure, перейдите к облачной службе, выберите **Параметры > Сертификаты управления**, щелкните **Отправить**, а затем укажите путь к файлу `.cer`.
 
-Если вы хотите создать сертификат самостоятельно, следуйте инструкциям в статье [Общие сведения о сертификатах для облачных служб Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) и вручную передайте сертификат на [портал Azure](https://portal.azure.com/).
+Если вы хотите создать сертификат самостоятельно, следуйте инструкциям в статье [Общие сведения о сертификатах для облачных служб Azure](/azure/cloud-services/cloud-services-certs-create) и вручную передайте сертификат на [портал Azure](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

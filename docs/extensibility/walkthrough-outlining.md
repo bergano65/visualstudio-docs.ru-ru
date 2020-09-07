@@ -10,17 +10,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906185"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508929"
 ---
 # <a name="walkthrough-outlining"></a>Пошаговое руководство. Структурирование
 Настройте языковые функции, такие как структурирование, определив типы текстовых областей, которые необходимо развернуть или свернуть. Можно определить регионы в контексте языковой службы или определить собственное расширение имени файла и тип содержимого и применить определение региона только к этому типу или применить определения областей к существующему типу содержимого (например, "Text"). В этом пошаговом руководстве показано, как определить и отобразить области структуры.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
  Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Создание проекта Managed Extensibility Framework (MEF)
@@ -131,5 +134,5 @@ ms.locfileid: "85906185"
 
 4. Должна существовать область структуры, включающая обе скобки. Чтобы свернуть область структуры, щелкните знак "минус" слева от открывающей скобки. Если область свернута, то символ многоточия (..*.*) должен отображаться слева от свернутой области, а всплывающее окно, содержащее текст, нарисованный при **наведении** указателя на многоточие, должно отобразиться.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

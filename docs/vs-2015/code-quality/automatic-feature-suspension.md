@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1dddc235131322a61cdb0106d866b138040d8c18
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72655150"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508240"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "72655150"
 - Кэши Visual Studio сбрасываются.
 
 ## <a name="improve-visual-studio-performance"></a>Улучшение производительности Visual Studio
- Советы и рекомендации по улучшению производительности Visual Studio при работе с большими решениями и нехваткой памяти см. в статье [рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+ Советы и рекомендации по улучшению производительности Visual Studio при работе с большими решениями и нехваткой памяти см. в статье [рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="full-solution-analysis-suspended"></a>Анализ полного решения приостановлен
  По умолчанию полный анализ решения включен для Visual Basic и отключен для Visual C#. Однако при нехватке памяти полный анализ решения автоматически отключается для Visual Basic и Visual C# независимо от их параметров в диалоговом окне Параметры. Однако можно повторно включить полный анализ решения, нажав кнопку **повторно включить** на панели информации при ее появлении, установив флажок **Включить анализ полного решения** в диалоговом окне Параметры или перезапустив Visual Studio. В диалоговом окне Параметры всегда отображаются текущие параметры анализа полного решения. Дополнительные сведения см. [в разделе инструкции. Включение и отключение полного анализа решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
@@ -59,8 +59,8 @@ ms.locfileid: "72655150"
 > [!NOTE]
 > Предупреждение о приостановке автоматического приостановки признака выполняется только один раз для каждого решения, а не для каждого сеанса. Это означает, что при переключении с Visual Basic на Visual C# (или наоборот) и выполнении в другое состояние нехватки памяти можно получить еще одно предупреждение о приостановке приостановки компонента.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Включение и отключение полного анализа решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Основные сведения о сборке мусора](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
-- [Рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Рекомендации по повышению производительности для больших решений](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)
