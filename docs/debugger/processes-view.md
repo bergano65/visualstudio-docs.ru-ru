@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62904237"
 ---
 # <a name="processes-view"></a>Представление процессов
@@ -32,7 +32,7 @@ ms.locfileid: "62904237"
 
 1. В меню **Spy** выберите пункт **Процессы**.
 
-   ![Представление процессов в Spy++](../debugger/media/spy--_processes.png "Spy++_Processes")Представление процессов в Spy++
+   ![Представление процессов в Spy++](../debugger/media/spy--_processes.png "Spy++_Processes") Представление процессов в Spy++
 
    На рисунке выше показано представление процессов, где развернуты узлы процессов и потоков.
 

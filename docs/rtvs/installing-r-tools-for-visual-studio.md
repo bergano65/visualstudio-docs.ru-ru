@@ -10,10 +10,10 @@ ms.workload:
 - data-science
 monikerRange: vs-2017
 ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843734"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Порядок установки инструментов R для Visual Studio
@@ -46,7 +46,7 @@ ms.locfileid: "75843734"
 
 1. Настройте дополнительные параметры справа в разделе под тем же именем рабочей нагрузки. По умолчанию эта рабочая нагрузка включает поддержку F# и Python. Для R нужно выбрать по меньшей мере компоненты **Поддержка языка R**, **Поддержка времени выполнения для средств разработки R** и **Microsoft R Client**.
 
-RTVS устанавливается в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\<версия>\<выпуск>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*, где *\<версия>* обычно `2017`, а *\<выпуск>*  — `Community`, `Professional` или `Enterprise`.
+RTVS устанавливается в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*, где *\<version>* обычно `2017`, а *\<edition>*  — `Community`, `Professional` или `Enterprise`.
 
 ## <a name="install-rtvs-in-visual-studio-2015"></a>Установка RTVS в Visual Studio 2015
 

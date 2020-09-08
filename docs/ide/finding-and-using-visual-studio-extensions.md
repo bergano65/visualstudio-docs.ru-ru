@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594413"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Управление расширениями для Visual Studio
@@ -106,7 +106,7 @@ ms.locfileid: "75594413"
 
 ## <a name="per-user-and-administrative-extensions"></a>Расширения на уровне пользователя и администратора
 
-Большинство расширений устанавливаются на уровне пользователя в папке *%LocalAppData%\Microsoft\VisualStudio\\<версия Visual Studio\>\Extensions\\* . Некоторые расширения устанавливаются на уровне администратора в папку *\<папка установки Visual Studio>\Common7\IDE\Extensions\\* .
+Большинство расширений устанавливаются на уровне пользователя в папке *%LocalAppData%\Microsoft\VisualStudio\\<версия Visual Studio\>\Extensions\\* . Некоторые расширения устанавливаются на уровне администратора в папку *\<Visual Studio installation folder>\Common7\IDE\Extensions\\* .
 
 Чтобы защитить систему от расширений, которые могут содержать ошибки или вредоносный код, можно ограничить расширения на уровне пользователя, чтобы они загружались только при запуске Visual Studio под учетной записью пользователя со стандартными правами. Это означает, что расширения на уровне пользователя отключаются при запуске Visual Studio с повышенными разрешениями.
 

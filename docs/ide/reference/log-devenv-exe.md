@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595466"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -25,7 +25,7 @@ ms.locfileid: "75595466"
 
 **%APPDATA%\\Microsoft\\VisualStudio\\** \<Version\> **\\ActivityLog.xml**
 
-где \<Версия\> — это версия Visual Studio. Однако можно указать альтернативный путь и имя файла.
+где \<Version\> — это версия Visual Studio. Однако можно указать альтернативный путь и имя файла.
 
 ## <a name="syntax"></a>Синтаксис
 

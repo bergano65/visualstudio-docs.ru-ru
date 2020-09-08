@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595622"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"
@@ -196,7 +196,7 @@ ms.locfileid: "75595622"
 |**Атрибут XML**|Имена атрибутов.|
 |**Кавычки атрибута XML**|Символы кавычек для атрибутов XML.|
 |**Значение атрибута XML**|Содержимое атрибутов XML.|
-|**Секция XML CData**|Содержимое \<![CDATA[…]]>.|
+|**Секция XML CData**|Содержимое \<![CDATA[...]]>.|
 |**Комментарий XML**|Содержимое \<!-- -->.|
 |**Разделитель XML**|Разделители в синтаксисе XML, включая <, <?, <!, \<!--, -->, ?\>, \<![, ]]> и [, ].|
 |**Атрибут XML Doc**|Значение атрибута XML-документации, например \<param name="I">, где "I" выделяется цветом.|

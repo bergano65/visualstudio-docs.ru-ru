@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633360"
 ---
 # <a name="msbuild-targets-files"></a>Файлы TARGETS в MSBuild
@@ -29,7 +29,7 @@ MSBuild включает в себя несколько *TARGETS*-файлов, 
 
  Обычно проекты импортируют один или несколько *TARGETS*-файлов для определения своего процесса сборки. Например, проект C#, созданный Visual Studio, будет импортировать *Microsoft.CSharp.targets*, который импортирует *Microsoft.Common.targets*. Сам проект C# будет определять элементы и свойства, относящиеся к данному проекту, а стандартные правила сборки для проекта C# определяются в импортированных *TARGETS*-файлах.
 
- Значение `$(MSBuildToolsPath)` определяет путь к этим общим *TARGETS*-файлам. Если `ToolsVersion` имеет значение 4.0, файлы находятся в следующем расположении: *\<путь_установки_Windows>\Microsoft.NET\Framework\v4.0.30319\\*
+ Значение `$(MSBuildToolsPath)` определяет путь к этим общим *TARGETS*-файлам. Если `ToolsVersion` имеет значение 4.0, файлы находятся в следующем расположении: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
 > Дополнительные сведения о создании собственных целевых объектов см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md). Сведения об использовании элемента `Import` для вставки файла проекта в другой файл проекта см. в разделах [Элемент Import (MSBuild)](../msbuild/import-element-msbuild.md) и [Практическое руководство. Использование одного и того же целевого объекта в нескольких файлах проектов](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).

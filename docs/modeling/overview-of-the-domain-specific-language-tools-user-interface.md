@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532409"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Обзор пользовательского интерфейса средств доменных языков
-При первом открытии решения Средства предметно-ориентированных языков (DSL Tools) в Visual Studio пользовательский интерфейс будет выглядеть примерно так, как показано на следующем рисунке.
+При первом открытии средств предметно-ориентированных языков (средства DSL) в Visual Studio пользовательский интерфейс будет похож на пример на следующем рисунке.
 
  ![конструктор dsl](../modeling/media/dsl_designer.png)
 

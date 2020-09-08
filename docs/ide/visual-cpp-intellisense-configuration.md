@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279315"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
@@ -38,7 +38,7 @@ ms.locfileid: "77279315"
 
 ![Включаемые каталоги VC++](media/vcpp-intellisense-include-paths.png)
 
-Чтобы просмотреть текущие значения макросов сборки, например **VC_IncludePath**, выберите строку "Включаемые каталоги" и щелкните раскрывающийся список справа. Затем выберите **\<Изменить>** и нажмите кнопку **Макросы**.
+Чтобы просмотреть текущие значения макросов сборки, например **VC_IncludePath**, выберите строку "Включаемые каталоги" и щелкните раскрывающийся список справа. Затем выберите **\<Edit>** и нажмите кнопку **Макросы**.
 
 ### <a name="makefile-projects"></a>Проекты, использующие файл makefile
 

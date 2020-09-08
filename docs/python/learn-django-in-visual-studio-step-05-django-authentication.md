@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Руководство по Django в Visual Studio, шаг 5: аутентификация'
 titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio с описанием функций аутентификации, предоставляемых в шаблонах веб-проектов Django.
@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957889"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Шаг 5. Аутентификация пользователей в Django

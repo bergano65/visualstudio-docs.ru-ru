@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630851"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Справочные сведения о задачах WPF для MSBuild
@@ -65,7 +65,7 @@ ms.locfileid: "77630851"
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<имя_проекта>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
+ Добавляет элемент **\<hostInBrowser />** в манифест приложения ( *\<projectname>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
 
 ## <a name="see-also"></a>См. также
 

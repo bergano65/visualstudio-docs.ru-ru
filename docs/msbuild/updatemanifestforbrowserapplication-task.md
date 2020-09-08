@@ -19,22 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631332"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Задача UpdateManifestForBrowserApplication
 
-Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения ( *\<имя_проекта>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
+Задача <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> выполняется для добавления элемента **\<hostInBrowser />** в манифест приложения ( *\<projectname>.exe.manifest*) при сборке проекта Приложение обозревателя XAML (XBAP).
 
 ## <a name="task-parameters"></a>Параметры задачи
 
 |Параметр|Описание|
 |---------------|-----------------|
 |`ApplicationManifest`|Обязательный параметр **ITaskItem[]** .<br /><br /> Задает путь и имя файла манифеста приложения, в который необходимо добавить элемент `<hostInBrowser />`.|
-|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />** . Если задано значение **true**, новый элемент **\<hostInBrowser />** включается в элемент **\<entryPoint />** . Включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />** . Если задано значение **false**, манифест приложения не изменяется.|
+|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />** . Если значение **true**, новый элемент **\<hostInBrowser />** включается в элемент **\<entryPoint />** . Включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />** . Если задано значение **false**, манифест приложения не изменяется.|
 
 ## <a name="remarks"></a>Примечания
 

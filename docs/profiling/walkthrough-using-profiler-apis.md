@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779887"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
@@ -152,9 +152,9 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**.
 
-3. Введите следующую команду: **VSInstr \<имя_файла>.exe**.
+3. Введите следующую команду: **VSInstr \<filename>.exe**
 
-4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**.
+4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<filename>.vsp**
 
 5. Введите следующую команду: **VSPerfCmd /globaloff**.
 
@@ -162,7 +162,7 @@ DataCollection.CurrentId);
 
 7. Введите следующую команду: **VSPerfCmd /shutdown**.
 
-8. Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**.
+8. Введите следующую команду: **VSPerfReport /calltrace:\<filename>.vsp**
 
      В текущем каталоге создается *CSV*-файл, содержащий результирующие данные производительности.
 

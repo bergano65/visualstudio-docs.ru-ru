@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585526"
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
@@ -30,7 +30,7 @@ ms.locfileid: "75585526"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Исправление опечаток в символах или ключевых словах
 
-Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить "\<слово с опечаткой>" на "\<правильное слово>"** . Пример:
+Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить "\<misspelled word>" на "\<correct word>"** . Пример:
 
 ```csharp
 // Before

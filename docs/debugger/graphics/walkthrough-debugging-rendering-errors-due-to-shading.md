@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849301"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Пошаговое руководство. Отладка ошибок отрисовки, возникающих из-за заливки
@@ -31,7 +31,7 @@ ms.locfileid: "62849301"
 
  В данном сценарии вы недавно добавили объект в приложение. Вы также добавили новую вершину и построители текстуры для преобразования объекта и придали ему уникальный внешний вид. При запуске приложения во время теста объект окрашивается сплошным черным цветом. С помощью диагностики графики можно записать данные о проблеме в журнал графики, чтобы можно было выполнить отладку приложения. Проблема в приложении выглядит так, как показано на следующем рисунке.
 
- ![Объект преобразован для просмотра с использованием неправильных цветов.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
+ ![Объект выводится с неправильными цветами.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
 
 ## <a name="investigation"></a>Исследование
  С помощью средств диагностики графики можно загрузить документ журнала графики для проверки кадров, захваченных в ходе теста.
@@ -52,7 +52,7 @@ ms.locfileid: "62849301"
 
 2. Выберите пиксель для изучения. В окне документа журнала графики выберите один из пикселей на неправильно окрашенном объекте:
 
-    ![При выборе пикселя отображается журнал выполняемых с ним действий.](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
+    ![При выборе пикселя отображается его журнал.](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")
 
     Окно **журнала пикселей графики** будет обновлено, чтобы отразить выбранный пиксель. В этом случае окно **журнала пикселей графики** выглядит следующим образом.
 
@@ -70,7 +70,7 @@ ms.locfileid: "62849301"
 
 3. Наведите указатель на `input.color`. Обратите внимание, что его значение — полностью непрозрачный черный (0, 0, 0, 1).
 
-    ![Элемент "color" объекта "input"равен "black".](media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")
+    ![Член "color" объекта "input" равен "black".](media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")
 
     В этом сценарии анализ показывает, что неверный цвет, вероятно, является результатом работы шейдера вершин, который не предоставляет правильные сведения о цвете шейдеру пикселей, с которыми тот мог бы работать.
 
@@ -100,8 +100,8 @@ output.color = input.color;
 
  Этот код просто передает цвет вершины из вершин объекта без изменений, более сложные шейдеры вершин могут изменять цвет до его передачи. Исправленный код шейдера вершин должен выглядеть примерно так:
 
- ![Исправленный код вершинного построителя текстуры.](media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")
+ ![Исправленный код шейдера вершин.](media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")
 
  Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена.
 
- ![Объект преобразован для просмотра с использованием правильных цветов.](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![Объект выводится с правильными цветами.](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")

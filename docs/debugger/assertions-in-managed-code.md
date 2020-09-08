@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745779"
 ---
 # <a name="assertions-in-managed-code"></a>Утверждения в управляемом коде
@@ -154,7 +154,7 @@ Debug.Assert ( temp != 0 );
 
   Если методы Debug требуется использовать в выпускной сборке программы на языках C# или Visual Basic, необходимо определить символ DEBUG в конфигурации выпуска.
 
-  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. В случае C++ такого же результата можно добиться с помощью класса <xref:System.Diagnostics.Trace> в сочетании с условной компиляцией, например: `#ifdef DEBUG`... `#endif`. Эти символы можно задать в диалоговом окне **\<Проект> Страницы свойств**. Дополнительные сведения см. в разделе [Изменение параметров проекта для конфигурации отладки в Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) или [Изменение параметров проекта для конфигурации отладки в C или C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+  C++ не поддерживает методы класса <xref:System.Diagnostics.Debug>. В случае C++ такого же результата можно добиться с помощью класса <xref:System.Diagnostics.Trace> в сочетании с условной компиляцией, например: `#ifdef DEBUG`... `#endif`. Эти символы можно задать в диалоговом окне **\<Project> Страницы свойств**. Дополнительные сведения см. в разделе [Изменение параметров проекта для конфигурации отладки в Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) или [Изменение параметров проекта для конфигурации отладки в C или C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ## <a name="assert-arguments"></a><a name="BKMK_Assert_arguments"></a> Аргументы методов Assert
  Методы <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> и <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> принимают до трех аргументов. Первый аргумент является обязательным и задает условие, которое требуется проверить. Если вызвать метод <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> или <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> только с одним аргументом, то метод `Assert` проверит условие и, если оно ложно, выведет содержимое стека вызовов в окно **Вывод**. В следующем примере показаны методы <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> и <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593698"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992372"
 ---
 # <a name="manage-application-resources-net"></a>Управление ресурсами приложения (.NET)
 
@@ -31,7 +31,7 @@ ms.locfileid: "75593698"
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Управление ресурсами приложения (Visual Studio для Mac)](/visualstudio/mac/managing-app-resources).
 
-Более подробную информацию о ресурсах в классических приложениях .NET см. в разделе [Ресурсы в классических приложениях](/dotnet/framework/resources/index).
+Дополнительные сведения о ресурсах в приложениях .NET см. в разделе [Ресурсы в приложениях .NET](/dotnet/framework/resources/index).
 
 ## <a name="work-with-resources"></a>Работа с ресурсами
 
@@ -52,5 +52,5 @@ ms.locfileid: "75593698"
 
 ## <a name="see-also"></a>См. также
 
-- [Ресурсы в классических приложениях (.NET Framework)](/dotnet/framework/resources/index)
+- [Ресурсы в приложениях (.NET Framework)](/dotnet/framework/resources/index)
 - [Управление ресурсами приложения (Visual Studio для Mac)](/visualstudio/mac/managing-app-resources)

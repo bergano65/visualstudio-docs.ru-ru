@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773903"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Сохранение и экспорт данных средств оценки производительности
@@ -66,7 +66,7 @@ ms.locfileid: "74773903"
 
 6. Щелкните **Экспорт**.
 
-     Каждое представление отчета сохраняется в виде отдельного файла с именем \<префикс>_\<имя представления отчета>.\<csv&#124;xml>
+     Каждое представление отчета сохраняется в виде отдельного файла с именем \<prefix>_\<report view name>.\<csv&#124;xml>
 
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Экспорт отчетов о производительности из окна представления отчета
 
@@ -86,7 +86,7 @@ ms.locfileid: "74773903"
 
 8. Щелкните **Экспорт**.
 
-     Каждое представление отчета сохраняется в виде отдельного файла с именем \<префикс>_\<имя представления отчета>.\<csv&#124;xml>
+     Каждое представление отчета сохраняется в виде отдельного файла с именем \<prefix>_\<report view name>.\<csv&#124;xml>
 
 ## <a name="see-also"></a>См. также раздел
 - [Обозреватель производительности](../profiling/performance-explorer.md)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916312"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Подготовка к отладке: Типы проектов C++
@@ -101,7 +101,7 @@ ms.locfileid: "75916312"
 
  Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] аналогична отладке управляемых приложений Windows Forms.
 
- При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. Если необходимо, эти параметры можно изменить в диалоговом окне **\<имя проекта> Страницы свойств**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).
+ При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. Если необходимо, эти параметры можно изменить в диалоговом окне **\<project name>Страницы свойств**. Дополнительные сведения см. в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).
 
  Дополнительные сведения см. в статье [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 

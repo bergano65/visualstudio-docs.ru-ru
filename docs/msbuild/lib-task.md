@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633594"
 ---
 # <a name="lib-task"></a>LIB - задача
@@ -44,7 +44,7 @@ ms.locfileid: "77633594"
 |---------------|-----------------|
 |**AdditionalDependencies**|Необязательный параметр типа **String[]** .<br /><br /> Указывает дополнительные элементы для добавления в командную строку.|
 |**AdditionalLibraryDirectories**|Необязательный параметр типа **String[]** .<br /><br /> Переопределяет путь к библиотеке среды. Задает имя каталога.<br /><br /> Дополнительные сведения см. в разделе [Параметр /LIBPATH (дополнительный параметр Libpath)](/cpp/build/reference/libpath-additional-libpath).|
-|**AdditionalOptions**|Необязательный параметр **String** .<br /><br /> Список параметров *lib.exe*, как указано в командной строке. Например, /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для указания параметров *lib.exe*, не представленных каким-либо другим параметром задачи **LIB**.<br /><br /> Дополнительные сведения см. в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|
+|**AdditionalOptions**|Необязательный параметр **String** .<br /><br /> Список параметров *lib.exe*, как указано в командной строке. Например, /\<option1> /\<option2> /\<option#>. Этот параметр используется для указания параметров *lib.exe*, не представленных каким-либо другим параметром задачи **LIB**.<br /><br /> Дополнительные сведения см. в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|
 |**DisplayLibrary**|Необязательный параметр **String** .<br /><br /> Отображает сведения о выходной библиотеке. Укажите имя файла для перенаправления сведений в файл. Укажите «CON» или ничего для перенаправления сведений на консоль.<br /><br /> Этот параметр соответствует параметру **/LIST** в *lib.exe*.|
 |**ErrorReporting**|Необязательный параметр **String** .<br /><br /> Указывает способ отправки сведений о внутренней ошибке в Майкрософт при сбое *lib.exe* во время выполнения.<br /><br /> Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.<br /><br /> -   **NoErrorReport** -  **/ERRORREPORT:NONE**<br />-   **PromptImmediately** -  **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** -  **/ERRORREPORT:SEND**<br /><br /> Дополнительные сведения см. в описании параметра командной строки **/ERRORREPORT** в разделе [Запуск программы LIB](/cpp/build/reference/running-lib).|
 |**ExportNamedFunctions**|Необязательный параметр типа **String[]** .<br /><br /> Указывает одну или несколько функций для экспорта.<br /><br /> Этот параметр соответствует параметру **/EXPORT:** в *lib.exe*.|

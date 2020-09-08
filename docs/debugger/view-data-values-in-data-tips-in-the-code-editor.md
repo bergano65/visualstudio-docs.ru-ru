@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75404280"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Просмотр значений данных в подсказках по данным в редакторе кода
@@ -75,7 +75,7 @@ ms.locfileid: "75404280"
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Закрытие всех подсказок по данным для определенного файла
 
-Чтобы закрыть все подсказки по данным для определенного файла, в меню **Отладка** выберите команду **Удалить все подсказки по данным, прикрепленные к \<имя_файла>** .
+Чтобы закрыть все подсказки по данным для определенного файла, в меню **Отладка** выберите команду **Удалить все подсказки по данным, прикрепленные к \<Filename>** .
 
 ## <a name="expand-and-edit-information"></a>Развертывание и изменение сведений
 Подсказки данных позволяют развернуть массив, структуру или объект для просмотра его элементов. Можно также изменить значение переменной из Подсказки Данных.

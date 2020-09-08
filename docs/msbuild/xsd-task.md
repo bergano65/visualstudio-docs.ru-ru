@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630786"
 ---
 # <a name="xsd-task"></a>XSD - задача
@@ -42,7 +42,7 @@ ms.locfileid: "77630786"
 
      Необязательный параметр **String** .
 
-     Список параметров, как указано в командной строке. Например, /\<параметр1> /\<параметр2> /\<параметр#>. Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.
+     Список параметров, как указано в командной строке. Например, /\<option1> /\<option2> /\<option#>. Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.
 
 - **GenerateFromSchema**
 

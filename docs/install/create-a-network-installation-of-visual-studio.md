@@ -1,7 +1,7 @@
 ---
 title: Создание сетевой установки
 description: Узнайте, как создать сетевую точку установки для развертывания Visual Studio на предприятии.
-ms.date: 03/27/2020
+ms.date: 08/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
-ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
+ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759729"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992359"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
@@ -73,7 +73,7 @@ ms.locfileid: "80759729"
 Для выполнения этого действия необходимо подключение к Интернету. Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, подобную приведенным в следующих примерах.
 
    > [!IMPORTANT]
-   > Для установки полного макета Visual Studio потребуется как минимум 35 ГБ дискового пространства. Загрузка может занять некоторое время. Чтобы создать макет, содержащий только выбранные компоненты для установки, см. инструкции в разделе [Настройка сетевого макета](#customize-the-network-layout).
+   > Полный макет для языкового стандарта одного языка требует около 35 ГБ дискового пространства для Visual Studio Community и 42 Гб для Visual Studio Enterprise. Для каждого дополнительного [языкового стандарта](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) требуется около половины указанного количества ГБ. Дополнительные сведения см. в разделе [Настройка сетевого макета](#customize-the-network-layout).
    >
    > [!TIP]
    > Эти команды необходимо выполнять из каталога загрузки. На компьютере с ОС Windows 10 это обычно каталог `C:\Users\<username>\Downloads`.
@@ -96,7 +96,7 @@ ms.locfileid: "80759729"
 
 Разместите макет на общем сетевом ресурсе, чтобы запускать его с других компьютеров.
 
-В следующем примере используется [xcopy](/windows-server/administration/windows-commands/xcopy/). Можно также использовать [robocopy](/windows-server/administration/windows-commands/robocopy/).  
+В следующем примере используется [xcopy](/windows-server/administration/windows-commands/xcopy/). Можно также использовать [robocopy](/windows-server/administration/windows-commands/robocopy/).
 
 ::: moniker range="vs-2017"
 
