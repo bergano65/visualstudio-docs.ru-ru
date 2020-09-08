@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154897"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Шаг 5. Использование шаблона веб-проекта опроса Flask

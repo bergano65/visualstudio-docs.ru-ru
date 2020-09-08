@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585734"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Рекомендации по сочетаниям клавиш в Visual Studio
@@ -106,7 +106,7 @@ ms.locfileid: "75585734"
 |Добавить кнопки|Нажать кнопку переполнения панели инструментов|
 |Поле со списком поиска на панели инструментов "Стандартная"|**CTRL**+**D**|
 |Режим команд для поля поиска|Введите **>**|
-|Создать новый псевдоним|Введите **псевдоним \<новый псевдоним> \<команда>** в окне **Command** (Команда)|
+|Создать новый псевдоним|Введите **псевдоним \<new alias> \<command>** в **командном окне**|
 
 ## <a name="debugging"></a>Отладка
 

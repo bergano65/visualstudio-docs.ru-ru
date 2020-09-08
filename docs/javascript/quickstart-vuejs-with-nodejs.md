@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744979"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
@@ -116,7 +116,7 @@ ms.locfileid: "81744979"
 1. Просмотрите результаты сборки в окне **вывода** и выберите **Сборка** в списке **Показать выходные данные из**.
 ::: moniker-end
 
-В шаблоне проекта JavaScript Vue.js (и более ранних версиях шаблона TypeScript) используйте скрипт `build` npm, настроив событие после сборки. Если вы хотите изменить этот параметр, откройте файл проекта ( *\<имя_проекта\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
+В шаблоне проекта JavaScript Vue.js (и более ранних версиях шаблона TypeScript) используйте скрипт `build` npm, настроив событие после сборки. Если вы хотите изменить этот параметр, откройте файл проекта ( *\<projectname\>.njsproj*) в проводнике Windows и найдите следующую строку кода:
 
 ```xml
 <PostBuildEvent>npm run build</PostBuildEvent>

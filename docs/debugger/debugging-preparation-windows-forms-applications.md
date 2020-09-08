@@ -21,16 +21,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916394"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: Приложения Windows Forms
 Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не вызывает никаких затруднений. Для получения дополнительной информации см. раздел [Создание проекта приложения Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
- При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры могут быть изменены в диалоговом окне **Страницы свойств \<имя проекта>** (**Мой проект** в Visual Basic).
+ При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры могут быть изменены в диалоговом окне **\<project name> Страницы свойств** (**Мой проект** в Visual Basic).
 
  Дополнительные сведения см. в статье [Рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md).
 

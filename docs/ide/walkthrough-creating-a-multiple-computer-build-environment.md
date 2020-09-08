@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461539"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
@@ -130,7 +130,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. Следующие библиотеки среды выполнения Visual C++ необходимы только в том случае, если вы запускаете сборку на компьютере построения, например в рамках автоматизированного тестирования. Эти файлы, как правило, находятся во вложенных папках *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* или *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64*, в зависимости от архитектуры системы. В системах с архитектурой x86 скопируйте двоичные файлы x86 в папку *Windows\System32*. В системах x64 скопируйте двоичные файлы x86 в папку *Windows\SysWOW64*, а двоичные файлы x64 в папку *Windows\System32*.
+4. Следующие библиотеки среды выполнения Visual C++ необходимы только в том случае, если вы запускаете сборку на компьютере построения, например в рамках автоматизированного тестирования. Эти файлы, как правило, находятся во вложенных папках в папке *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* или *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* в зависимости от архитектуры системы. В системах с архитектурой x86 скопируйте двоичные файлы x86 в папку *Windows\System32*. В системах x64 скопируйте двоичные файлы x86 в папку *Windows\SysWOW64*, а двоичные файлы x64 в папку *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 

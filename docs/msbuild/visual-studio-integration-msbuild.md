@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631202"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
@@ -151,7 +151,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      К проекту добавляется пометка **(недоступный)** .
 
-2. В **обозревателе решений** откройте контекстное меню для недоступного проекта и выберите **Изменить \<файл проекта>** .
+2. В **обозревателе решений** откройте контекстное меню для недоступного проекта и выберите пункт **Изменить\<Project File>** .
 
      В XML-редакторе Visual Studio открывается файл проекта.
 
@@ -161,7 +161,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="intellisense-and-validation"></a>IntelliSense и проверка
 
- При использовании XML-редактора для изменения файлов проекта работой IntelliSense и функции проверки управляют файлы схемы MSBuild. Они устанавливаются в кэш схемы, который можно найти по следующему пути *\<каталог установки Visual Studio>\Xml\Schemas\1033\MSBuild*.
+ При использовании XML-редактора для изменения файлов проекта работой IntelliSense и функции проверки управляют файлы схемы MSBuild. Они устанавливаются в кэш схемы, который можно найти в *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild*.
 
  Типы ядра MSBuild определяются в *Microsoft.Build.Core.xsd*, а стандартные типы, используемые Visual Studio, определяются в *Microsoft.Build.CommonTypes.xsd*. Чтобы настроить схемы таким образом, чтобы выполнялась функция IntelliSense и проверка пользовательских имен типов элементов, а также свойств и задач, можно либо изменить *Microsoft.Build.xsd*, либо создать собственную схему, включающую схемы CommonTypes или Core. Если создается собственная схема, необходимо с помощью XML-редактора найти ее, используя окно **Свойства** .
 

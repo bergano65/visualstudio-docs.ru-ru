@@ -5,19 +5,19 @@ description: Список выпущенных версий и номеров с
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/18/2020
+ms.date: 08/31/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 284237edf805ba4d41bbeb17b3675d662efcbd89
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.openlocfilehash: c836c101280da1884345dd5e95def383226942fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88584519"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285740"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,6 +29,8 @@ ms.locfileid: "88584519"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Предварительная версия 2.1 | 31 августа 2020 г. | 16.8.30428.66 |
+| 16.8.0 | Предварительная версия 2 | 25 августа 2020 г. | 16.8.30420.98 |
 | 16.7.2 | Выпуск | 18 августа 2020 г. | 16.7.30413.136 |
 | 16.7.1 | Выпуск | 11 августа 2020 г. | 16.7.30406.217 |
 | 16.4.12 | Выпуск | 11 августа 2020 г. | 16.4.30406.169 |

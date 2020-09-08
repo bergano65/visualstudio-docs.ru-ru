@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461395"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Диалоговое окно "Параметры": Проекты и решения \> "Сборка и запуск"
@@ -58,7 +58,7 @@ ms.locfileid: "68461395"
 
 *Применяется только к проектам на C++* .
 
-Определяет объем сведений, записываемых в файл журнала сборки *\\\<имя_проекта>\Debug\\\<имя_проекта>.log*.
+Определяет объем сведений, записываемых в файл журнала сборки, расположенный *\\\<ProjectName>\Debug\\\<ProjectName>.log*.
 
 ## <a name="see-also"></a>См. также
 

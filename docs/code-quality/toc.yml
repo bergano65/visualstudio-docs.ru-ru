@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: 'CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory'
                   href: ca1833.md
+                - name: 'CA1834: используйте StringBuilder.Append(char) для строк с одним символом.'
+                  href: ca1834.md
                 - name: 'CA1835: предпочитайте перегрузку памяти для методов Stream ReadAsync/WriteAsync'
                   href: ca1835.md
                 - name: 'CA1836: предпочитайте IsEmpty вместо Count (при наличии)'

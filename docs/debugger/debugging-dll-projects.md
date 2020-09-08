@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301167"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315074"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Отладка библиотек DLL в Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -66,7 +66,7 @@ ms.locfileid: "79301167"
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> Задание расположений файлов DLL C/C++
 
-Для отладки внешней библиотеки DLL вызывающий проект должен находить библиотеку DLL, ее [PDB-файл](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и любые другие файлы, необходимые библиотеке DLL. Вы можете создать пользовательскую задачу сборки, чтобы скопировать эти файлы в выходную папку проекта *\<папка проекта>\Debug*, или скопировать файлы вручную.
+Для отладки внешней библиотеки DLL вызывающий проект должен находить библиотеку DLL, ее [PDB-файл](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и любые другие файлы, необходимые библиотеке DLL. Вы можете создать пользовательскую задачу сборки, чтобы скопировать эти файлы в выходную папку *\<project folder>\Debug*, или скопировать файлы вручную.
 
 Для проектов C/C++ можно задать расположения файлов заголовков и LIBD-файла на страницах свойств проекта, а не копировать их в выходную папку.
 
@@ -90,7 +90,7 @@ ms.locfileid: "79301167"
 
 Перед началом отладки обязательно создайте отладочную версию библиотеки DLL. Для отладки библиотеки DLL вызывающее приложение должно находить [PDB-файл](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) и любые другие файлы, необходимые библиотеке DLL.
 
-Вы можете создать пользовательскую задачу сборки, чтобы скопировать эти файлы DLL в выходную папку проекта *\<папка вызывающего проекта>\Debug*, или скопировать файлы вручную.
+Вы можете создать пользовательскую задачу сборки, чтобы скопировать эти файлы DLL в выходную папку *\<calling project folder>\Debug*, или скопировать файлы вручную.
 
 Обязательно вызовите библиотеку DLL в правильном расположении. Это может показаться очевидным, но, если вызывающее приложение находит и загружает другую копию библиотеки DLL, отладчик никогда не достигнет заданных точек останова.
 

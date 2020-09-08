@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262867"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера
@@ -52,7 +52,7 @@ ms.locfileid: "66262867"
 
 2. Просмотрите **Список событий графики** для поиска события Draw, которое выполняет отрисовку набора данных. Чтобы упростить эту задачу, введите `Draw` в поле **Поиск** в верхнем правом углу окна **Список событий графики**. Список будет отфильтрован и будет содержать только события, в названиях которых присутствует слово «Draw». В этом сценарии вы выясняете, что эти события Draw произошли:
 
-    ![В списке событий отображаются события рисования.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
+    ![Список событий &#40;EL&#41;, содержащий события рисования.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
 
 3. Перейдите к каждому событию Draw, следя за целевым объектом отрисовки на вкладке документа журнала графики.
 
@@ -102,7 +102,7 @@ ms.locfileid: "66262867"
 
    После определения местоположения ошибки можно остановить отладку и изменить исходный код вычислительного шейдера, чтобы обеспечить правильное вычисление расстояния между взаимодействующими частицами. В этом сценарии вы просто меняете строку `float2 diff = N_position + P_position;` на `float2 diff = N_position - P_position;`:
 
-   ![Исправленный код вычислительного шейдера.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
+   ![Исправленный код&#45;вычислительного шейдера.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
 
    В этом сценарии, поскольку вычислительные шейдеры компилируются во время выполнения, можно просто перезапустить приложение после внесения изменений, чтобы посмотреть, как они влияют на симуляцию. Повторять сборку приложения не нужно. При запуске приложения выясняется, что теперь симуляция работает правильно.
 

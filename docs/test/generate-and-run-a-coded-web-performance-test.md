@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589582"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Создание и запуск закодированного веб-теста производительности
@@ -92,7 +92,7 @@ ms.locfileid: "75589582"
 
 При запуске закодированного теста с источником данных возможно отображение следующего сообщения об ошибке.
 
-**Не удалось выполнить тест \<имя_теста> на агенте \<имя_компьютера>: Ссылка на объект не указывает на экземпляр объекта.**
+**Не удалось выполнить тест \<Test Name> в агенте \<Computer Name>: Ссылка на объект не указывает на экземпляр объекта.**
 
 Это может произойти, если для класса теста определен атрибут DataSourceAttribute без соответствующего атрибута DataBindingAttribute. Чтобы устранить эту ошибку, добавьте соответствующий атрибут DataBindingAttribute, удалите лишний атрибут или преобразуйте его в комментарий в коде.
 

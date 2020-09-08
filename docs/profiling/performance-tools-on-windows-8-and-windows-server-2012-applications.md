@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778431"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
@@ -110,7 +110,7 @@ ms.locfileid: "74778431"
 
 **Сбор данных об уровневом взаимодействии на удаленном компьютере**
 
-Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_** _\<платформа>_ **\_** _\<язык>_ **.exe** из папки *%VSInstallDir%\Team Tools\Performance Tools\Setups*, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
+Чтобы собирать сведения об уровневом взаимодействии на удаленном компьютере, необходимо скопировать и установить файл **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** из папки *%VSInstallDir%\Team Tools\Performance Tools\Setups* на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
 
 Для сбора данных профилирования можно использовать [VSPerfCmd](../profiling/vsperfcmd.md) или [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) .
 

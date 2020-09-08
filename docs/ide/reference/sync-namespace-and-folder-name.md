@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67160760"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Синхронизация пространства имен и имени папки
@@ -32,7 +32,7 @@ ms.locfileid: "67160760"
 
 1. Поместите курсор в имени пространства имен.
 2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
-3. Выберите **Изменить пространство имен на \<имя_папки>** .
+3. Выберите команду **Изменить пространство имен на \<folder name>** .
 
    ![Синхронизация пространства имен и имени папки](media/sync-namespace-and-folder-name.png)
 

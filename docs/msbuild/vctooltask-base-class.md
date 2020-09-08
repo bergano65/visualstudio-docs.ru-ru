@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591675"
 ---
 # <a name="vctooltask-base-class"></a>Базовый класс VCToolTask
@@ -28,7 +28,7 @@ ms.locfileid: "75591675"
 
 |Параметр|Description|
 |---------------|-----------------|
-|**ActiveToolSwitchesValues**|Необязательный параметр типа **Dictionary\<string, ToolSwitch>** .|
+|**ActiveToolSwitchesValues**|Необязательный параметр **Dictionary\<string, ToolSwitch>** .|
 |**AdditionalOptions**|Необязательный параметр типа **string**.|
 |**EffectiveWorkingDirectory**|Необязательный параметр типа **string**.|
 |**EnableErrorListRegex**|Необязательный параметр типа **bool**.<br/><br/>Значение по умолчанию — `true`.|

@@ -8,17 +8,17 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82109433"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 В этом разделе перечислены открытые члены пространства имен `Microsoft::VisualStudio::CppUnitTestFramework`. С помощью этих интерфейсов API можно создавать модульные тесты для C++ на основе собственной платформы модульного тестирования Майкрософт. В конце раздела приводится [пример использования](#example).
 
-Файлы заголовков и библиотек находятся по пути *\<папка установки Visual Studio>\VC\Auxiliary\VS\UnitTest*.
+Файлы заголовков и библиотек находятся в папке *\<Visual Studio installation folder>\VC\Auxiliary\VS\UnitTest*.
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 

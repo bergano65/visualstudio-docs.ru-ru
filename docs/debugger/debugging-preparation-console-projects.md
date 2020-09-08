@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916272"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Подготовка к отладке: Проекты консоли (C#, C++, Visual Basic, F#)
@@ -41,7 +41,7 @@ ms.locfileid: "75916272"
 
 Может потребоваться задание аргументов командной строки для консольного приложения. Дополнительные сведения см. в статьях [Параметры проектов для конфигураций отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md) и [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), или [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Подобно всем свойствам проекта, эти аргументы сохраняются в интервале между сеансами (как отладки, так и Visual Studio). Поэтому необходимо учитывать, что если предыдущий сеанс был посвящен отладке консольного приложения, в диалоговом окне **Страницы свойств \<проект>** могут присутствовать аргументы, сохранившиеся от предыдущих сеансов отладки.
+Подобно всем свойствам проекта, эти аргументы сохраняются в интервале между сеансами (как отладки, так и Visual Studio). Поэтому необходимо учитывать, что если предыдущий сеанс был посвящен отладке консольного приложения, в диалоговом окне **Страницы свойств \<Project>** могут присутствовать аргументы, сохранившиеся от предыдущих сеансов.
 
 ## <a name="start-the-application"></a>Запуск приложения
 

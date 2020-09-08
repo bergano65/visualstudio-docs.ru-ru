@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a190790b915ac8dd011bc9843fe8abdf2d7381ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249582"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88893363"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
 
@@ -43,7 +43,7 @@ ms.locfileid: "88249582"
 
 1. Выполните действия, описанные в статье [Практическое руководство. Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. В [обозревателе схемы XML](../xml-tools/xml-schema-explorer.md) нажмите и удерживайте (или щелкните правой кнопкой мыши) глобальный элемент `PurchaseOrder`, а затем выберите **Создать образец XML**.
+2. В [обозревателе схемы XML](../xml-tools/xml-schema-explorer.md) щелкните правой кнопкой мыши глобальный элемент `PurchaseOrder`, а затем выберите пункт **Создать образец XML**.
 
      Если выбран данный параметр, файл PurchaseOrder.*xml* со следующим образцом XML-содержимого будет создан и открыт в редакторе XML:
 
