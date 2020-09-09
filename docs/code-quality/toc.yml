@@ -55,66 +55,6 @@
           items:
             - name: Отключение предупреждений при анализе прежних версий для генерируемого кода
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: 'Ошибки приложений, возникающие при анализе прежних версий'
-          items:
-            - name: 'Ошибки политик, возникающие при анализе прежних версий'
-              href: code-analysis-policy-errors.md
-            - name: Обзор
-              href: code-analysis-application-errors.md
-            - name: CA0001
-              href: ca0001.md
-            - name: CA0051
-              href: ca0051.md
-            - name: CA0052
-              href: ca0052.md
-            - name: CA0053
-              href: ca0053.md
-            - name: CA0054
-              href: ca0054.md
-            - name: CA0055
-              href: ca0055.md
-            - name: CA0056
-              href: ca0056.md
-            - name: CA0057
-              href: ca0057.md
-            - name: CA0058
-              href: ca0058.md
-            - name: CA0059
-              href: ca0059.md
-            - name: CA0060
-              href: ca0060.md
-            - name: CA0061
-              href: ca0061.md
-            - name: CA0062
-              href: ca0062.md
-            - name: CA0063
-              href: ca0063.md
-            - name: CA0064
-              href: ca0064.md
-            - name: A0065
-              href: ca0065.md
-            - name: CA0066
-              href: ca0066.md
-            - name: CA0067
-              href: ca0067.md
-            - name: CA0068
-              href: ca0068.md
-            - name: CA0069
-              href: ca0069.md
-            - name: CA0070
-              href: ca0070.md
-            - name: CA0501
-              href: ca0501.md
-            - name: CA0502
-              href: ca0502.md
-            - name: CA0503
-              href: ca0503.md
-            - name: CA0504
-              href: ca0504.md
-            - name: CA0505
-              href: ca0505.md
-            - name: FxCopCmd - ошибки
-              href: fxcopcmd-errors.md
         - name: Политики возврата
           items:
             - name: Создание или обновление политик возврата
@@ -137,40 +77,6 @@
                   href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
                 - name: ВОПРОСЫ И ОТВЕТЫ
                   href: fxcop-analyzers-faq.md
-                - name: Перенесенные правила
-                  href: fxcop-rule-port-status.md
-            - name: Настройка анализаторов FxCop
-              items:
-                - name: Наборы правил
-                  items:
-                    - name: Обзор
-                      href: rule-set-reference.md
-                    - name: Все правила
-                      href: all-rules-rule-set.md
-                    - name: Базовые правила определения правильности
-                      href: basic-correctness-rules-rule-set-for-managed-code.md
-                    - name: Базовые нормы и правила разработки
-                      href: basic-design-guideline-rules-rule-set-for-managed-code.md
-                    - name: Расширенные правила определения правильности
-                      href: extended-correctness-rules-rule-set-for-managed-code.md
-                    - name: Расширенные нормы и правила разработки
-                      href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-                    - name: Правила глобализации
-                      href: globalization-rules-rule-set-for-managed-code.md
-                    - name: Минимальные правила для управляемого кода
-                      href: managed-minimum-rules-rule-set-for-managed-code.md
-                    - name: Рекомендуемые правила для управляемого кода
-                      href: managed-recommended-rules-rule-set-for-managed-code.md
-                    - name: Минимальные правила для смешанного кода
-                      href: mixed-minimum-rules-rule-set.md
-                    - name: Рекомендуемые правила для смешанного кода
-                      href: mixed-recommended-rules-rule-set.md
-                    - name: Минимальные правила для машинного кода
-                      href: native-minimum-rules-rule-set.md
-                    - name: Рекомендуемые правила для машинного кода
-                      href: native-recommended-rules-rule-set.md
-                    - name: Правила безопасности
-                      href: security-rules-rule-set-for-managed-code.md
         - name: Наборы правил
           items:
             - name: Обзор
@@ -181,6 +87,347 @@
               href: how-to-create-a-custom-rule-set.md
             - name: Использование редактора набора правил
               href: working-in-the-code-analysis-rule-set-editor.md
+        - name: Справочник
+          items:
+            - name: Перенесенные правила
+              href: fxcop-rule-port-status.md
+            - name: Неперенесенные правила
+              href: fxcop-unported-rules.md
+              items:
+                - name: 'Неперенесенные правила, которые можно перенести'
+                  href: fxcop-unported-rules-may-get-ported.md
+                  items:
+                    - name: CA1004. Универсальные методы должны предоставлять параметр типа
+                      href: ca1004.md
+                    - name: CA1006. Не создавайте вложенные универсальные типы в сигнатурах членов
+                      href: ca1006.md
+                    - name: CA1007. По возможности используйте универсальные объекты
+                      href: ca1007.md
+                    - name: CA1011. Попробуйте передать базовые типы в качестве параметров
+                      href: ca1011.md
+                    - name: CA1013. Перегружайте оператор равенства при перегрузке операторов сложения и вычитания
+                      href: ca1013.md
+                    - name: CA1023. Индексы не должны быть многомерными
+                      href: ca1023.md
+                    - name: 'CA1049. Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми'
+                      href: ca1049.md
+                    - name: CA1057. Перегрузки строковых параметров URI вызывают перегрузки System.Uri
+                      href: ca1057.md
+                    - name: CA1300. Укажите MessageBoxOptions
+                      href: ca1300.md
+                    - name: CA1301. Избегайте повторяющихся акселераторов
+                      href: ca1301.md
+                    - name: CA1306. Задавайте языковой стандарт для типов данных
+                      href: ca1306.md
+                    - name: CA1402. Избегайте перегрузок в видимых COM-интерфейсах
+                      href: ca1402.md
+                    - name: CA1403. Типы с автомакетом не должны быть видимыми для COM
+                      href: ca1403.md
+                    - name: CA1404. Вызывайте GetLastError сразу после P/Invoke
+                      href: ca1404.md
+                    - name: 'CA1405. Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM'
+                      href: ca1405.md
+                    - name: 'CA1407. Не используйте статические члены в типах, видимых для COM'
+                      href: ca1407.md
+                    - name: CA1408. Не используйте тип AutoDual ClassInterfaceType
+                      href: ca1408.md
+                    - name: CA1409. Видимые для COM типы должны быть создаваемыми
+                      href: ca1409.md
+                    - name: CA1410. Методы регистрации COM должны быть согласованными
+                      href: ca1410.md
+                    - name: CA1411. Методы регистрации COM не должны быть видимыми
+                      href: ca1411.md
+                    - name: CA1412. Пометьте интерфейсы ComSource как IDispatch
+                      href: ca1412.md
+                    - name: 'CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM'
+                      href: ca1413.md
+                    - name: CA1414. Пометьте логические аргументы P/Invoke атрибутом MarshalAs
+                      href: ca1414.md
+                    - name: CA1415. Правильно объявляйте методы P/Invoke
+                      href: ca1415.md
+                    - name: CA1500. Имена переменных не должны совпадать с именами полей
+                      href: ca1500.md
+                    - name: CA1600. Не используйте приоритет процесса простоя
+                      href: ca1600.md
+                    - name: 'CA1601. Не используйте таймеры, препятствующие изменению состояния электропитания'
+                      href: ca1601.md
+                    - name: CA1704. Идентификаторы должны иметь правильное правописание
+                      href: ca1704.md
+                    - name: CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
+                      href: ca1709.md
+                    - name: CA1719. Имена параметров не должны совпадать с именами членов
+                      href: ca1719.md
+                    - name: CA1722. Идентификаторы не должны иметь неправильные префиксы
+                      href: ca1722.md
+                    - name: CA1726. Используйте предпочтительные термины
+                      href: ca1726.md
+                    - name: CA1900. Поля типов значений должны быть переносимыми
+                      href: ca1900.md
+                    - name: CA2001. Избегайте вызова проблемных методов
+                      href: ca2001.md
+                    - name: CA2004. Удалите вызовы GC.KeepAlive
+                      href: ca2004.md
+                    - name: CA2006. Используйте SafeHandle для инкапсуляции собственных ресурсов
+                      href: ca2006.md
+                    - name: CA2204. Литералы должны иметь правильное правописание
+                      href: ca2204.md
+                    - name: CA2205. Используйте управляемые эквиваленты Win32 API
+                      href: ca2205.md
+                    - name: CA2212. Не помечайте обслуживаемые компоненты с помощью WebMethod
+                      href: ca2212.md
+                    - name: CA2218. Переопределяйте GetHashCode при переопределении Equals
+                      href: ca2218.md
+                    - name: CA2224. Переопределяйте Equals при перегрузке оператора равенства
+                      href: ca2224.md
+                    - name: CA2232. Отметьте точки входа Windows Forms меткой STAThread
+                      href: ca2232.md
+                    - name: CA2236. Вызывайте методы базового класса для типов ISerializable
+                      href: ca2236.md
+                    - name: CA2238. Правильно реализуйте методы сериализации
+                      href: ca2238.md
+                    - name: CA2239. Обеспечьте наличие методов десериализации в необязательных полях
+                      href: ca2239.md
+                    - name: CA2240. Правильно реализуйте ISerializable
+                      href: ca2240.md
+                - name: Нерекомендуемые правила
+                  href: fxcop-unported-deprecated-rules.md
+                  items:
+                    - name: CA1009. Правильно объявляйте обработчики событий
+                      href: ca1009.md
+                    - name: CA1020. Не используйте пространства имен с несколькими типами
+                      href: ca1020.md
+                    - name: CA1025. Замените повторяющиеся аргументы массивом параметров
+                      href: ca1025.md
+                    - name: CA1026. Не следует использовать параметры по умолчанию
+                      href: ca1026.md
+                    - name: CA1035. В составе реализаций ICollection есть члены со строгим типом
+                      href: ca1035.md
+                    - name: CA1038. Перечислители должны иметь строгие типы
+                      href: ca1038.md
+                    - name: CA1039. Списки имеют строгие типы
+                      href: ca1039.md
+                    - name: CA1048. Не объявляйте виртуальные члены в запечатанных типах
+                      href: ca1048.md
+                    - name: CA1059. Члены не должны предоставлять определенные конкретные типы
+                      href: ca1059.md
+                    - name: 'CA1302. Не указывайте прямо в коде строки, зависящие от языковых стандартов'
+                      href: ca1302.md
+                    - name: CA1400. Для методов P/Invoke должны существовать точки входа
+                      href: ca1400.md
+                    - name: CA1406. Не используйте аргументы Int64 для клиентов Visual Basic 6
+                      href: ca1406.md
+                    - name: 'CA1504. Проверьте имена полей, которые могут ввести в заблуждение'
+                      href: ca1504.md
+                    - name: CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса
+                      href: ca1701.md
+                    - name: CA1702. Для сложных слов следует использовать правильный регистр
+                      href: ca1702.md
+                    - name: CA1703. Строки ресурса должны иметь правильное правописание
+                      href: ca1703.md
+                    - name: CA1800. Не делайте лишних приведений
+                      href: ca1800.md
+                    - name: CA1804. Удалите неиспользуемые локальные переменные
+                      href: ca1804.md
+                    - name: CA1809. Избегайте лишних локальных переменных
+                      href: ca1809.md
+                    - name: CA1811. Избегайте невызываемого частного кода
+                      href: ca1811.md
+                    - name: CA1901. Объявления P/Invoke должны быть переносимыми
+                      href: ca1901.md
+                    - name: CA1903. Используйте API только из целевой рабочей среды
+                      href: ca1903.md
+                    - name: CA2003. Не рассматривайте волокна в качестве потоков
+                      href: ca2003.md
+                    - name: 'CA2102. Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков'
+                      href: ca2102.md
+                    - name: CA2103. Проверьте принудительную безопасность
+                      href: ca2103.md
+                    - name: CA2104. Не объявляйте изменяющиеся ссылочные типы только для чтения
+                      href: ca2104.md
+                    - name: CA2105. Поля массивов не должны быть доступны только для чтения
+                      href: ca2105.md
+                    - name: CA2106. Обеспечьте безопасность утверждений
+                      href: ca2106.md
+                    - name: CA2107. Проверьте использование Deny и Permit Only
+                      href: ca2107.md
+                    - name: CA2108. Проверьте объявляемые параметры безопасности типов значений
+                      href: ca2108.md
+                    - name: CA2111. Указатели не должны быть видимыми
+                      href: ca2111.md
+                    - name: CA2112. Защищенные типы не должны предоставлять поля
+                      href: ca2112.md
+                    - name: CA2114. Безопасность метода должна быть надмножеством типа
+                      href: ca2114.md
+                    - name: CA2115. Вызывайте GC.KeepAlive при использовании собственных ресурсов
+                      href: ca2115.md
+                    - name: CA2116. APTCA-методы должны вызывать только APTCA-методы
+                      href: ca2116.md
+                    - name: CA2117. APTCA-типы должны расширять только базовые APTCA-типы
+                      href: ca2117.md
+                    - name: CA2118. Проверьте использование атрибута SuppressUnmanagedCodeSecurityAttribute
+                      href: ca2118.md
+                    - name: CA2120. Обеспечьте безопасность конструкторов сериализации
+                      href: ca2120.md
+                    - name: CA2121. Статические конструкторы должны быть частными
+                      href: ca2121.md
+                    - name: CA2122. Не используйте косвенное представление методов с требованиями ссылки
+                      href: ca2122.md
+                    - name: CA2123. Переопределяющие требования ссылки должны быть идентичны базовым
+                      href: ca2123.md
+                    - name: CA2124. Ограничьте уязвимые предложения finally во внешних блоках try
+                      href: ca2124.md
+                    - name: CA2126. Для требований ссылок на тип необходимы требования наследования
+                      href: ca2126.md
+                    - name: CA2130. Важные константы безопасности должны быть прозрачными
+                      href: ca2130.md
+                    - name: CA2131. Критические для безопасности типы не могут участвовать в эквивалентности типов
+                      href: ca2131.md
+                    - name: 'CA2132. Конструкторы по умолчанию должны быть по меньшей мере такими же критическими, как конструкторы по умолчанию базового типа'
+                      href: ca2132.md
+                    - name: CA2133. Делегаты должны быть привязаны к методам с соответствующей прозрачностью
+                      href: ca2133.md
+                    - name: CA2134. Методы должны сохранять одинаковую прозрачность при переопределении базовых методов
+                      href: ca2134.md
+                    - name: CA2135. Сборки уровня 2 не должны содержать LinkDemands
+                      href: ca2135.md
+                    - name: CA2136. Члены не должны иметь противоречащие заметки прозрачности
+                      href: ca2136.md
+                    - name: CA2137. Прозрачные методы должны содержать только поддающийся проверке промежуточный язык
+                      href: ca2137.md
+                    - name: CA2138. Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity
+                      href: ca2138.md
+                    - name: CA2139. Прозрачные методы могут не использовать атрибут HandleProcessCorruptingExceptions
+                      href: ca2139.md
+                    - name: CA2140. Прозрачный код не должен ссылаться на критические для безопасности элементы
+                      href: ca2140.md
+                    - name: 'CA2141: прозрачные методы не должны удовлетворять требования LinkDemand'
+                      href: ca2141.md
+                    - name: CA2142. Прозрачный код не должен быть защищен проверками LinkDemands
+                      href: ca2142.md
+                    - name: CA2143. Прозрачные методы не должны использовать требования безопасности
+                      href: ca2143.md
+                    - name: CA2144. Прозрачный код не должен выполнять загрузку сборок из массивов байтов
+                      href: ca2144.md
+                    - name: CA2145. Прозрачные методы не должны быть отмечены атрибутом SuppressUnmanagedCodeSecurityAttribute
+                      href: ca2145.md
+                    - name: 'CA2146. Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы'
+                      href: ca2146.md
+                    - name: CA2147. Прозрачные методы могут не использовать утверждения безопасности
+                      href: ca2147.md
+                    - name: CA2149. Прозрачные методы не должны вызывать машинный код
+                      href: ca2149.md
+                    - name: CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности
+                      href: ca2151.md
+                    - name: CA2202. Не ликвидируйте объекты несколько раз
+                      href: ca2202.md
+                    - name: CA2210. Сборки должны иметь допустимые строгие имена
+                      href: ca2210.md
+                    - name: CA2220. Методы завершения должны вызывать метод завершения базового класса
+                      href: ca2220.md
+                    - name: CA2221. Методы завершения должны быть защищенными
+                      href: ca2221.md
+                    - name: CA2222. Не уменьшайте видимость наследуемого члена
+                      href: ca2222.md
+                    - name: CA2223. Члены должны различаться не только возвращаемым типом
+                      href: ca2223.md
+                    - name: CA2228. Не поставляйте предварительные форматы ресурсов
+                      href: ca2228.md
+                    - name: CA2230. Используйте параметры для аргументов переменной
+                      href: ca2230.md
+                    - name: CA2233. В операциях не должно быть переполнений
+                      href: ca2233.md
+                    - name: CA5122. Объявления P-Invoke не могут быть надежными с точки зрения безопасности
+                      href: ca5122.md
+                - name: 'Ошибки приложений, возникающие при анализе прежних версий'
+                  items:
+                    - name: 'Ошибки политик, возникающие при анализе прежних версий'
+                      href: code-analysis-policy-errors.md
+                    - name: Обзор
+                      href: code-analysis-application-errors.md
+                    - name: CA0001
+                      href: ca0001.md
+                    - name: CA0051
+                      href: ca0051.md
+                    - name: CA0052
+                      href: ca0052.md
+                    - name: CA0053
+                      href: ca0053.md
+                    - name: CA0054
+                      href: ca0054.md
+                    - name: CA0055
+                      href: ca0055.md
+                    - name: CA0056
+                      href: ca0056.md
+                    - name: CA0057
+                      href: ca0057.md
+                    - name: CA0058
+                      href: ca0058.md
+                    - name: CA0059
+                      href: ca0059.md
+                    - name: CA0060
+                      href: ca0060.md
+                    - name: CA0061
+                      href: ca0061.md
+                    - name: CA0062
+                      href: ca0062.md
+                    - name: CA0063
+                      href: ca0063.md
+                    - name: CA0064
+                      href: ca0064.md
+                    - name: A0065
+                      href: ca0065.md
+                    - name: CA0066
+                      href: ca0066.md
+                    - name: CA0067
+                      href: ca0067.md
+                    - name: CA0068
+                      href: ca0068.md
+                    - name: CA0069
+                      href: ca0069.md
+                    - name: CA0070
+                      href: ca0070.md
+                    - name: CA0501
+                      href: ca0501.md
+                    - name: CA0502
+                      href: ca0502.md
+                    - name: CA0503
+                      href: ca0503.md
+                    - name: CA0504
+                      href: ca0504.md
+                    - name: CA0505
+                      href: ca0505.md
+                    - name: FxCopCmd - ошибки
+                      href: fxcopcmd-errors.md
+            - name: Наборы правил
+              items:
+                - name: Обзор
+                  href: rule-set-reference.md
+                - name: Все правила
+                  href: all-rules-rule-set.md
+                - name: Базовые правила определения правильности
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: Базовые нормы и правила разработки
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: Расширенные правила определения правильности
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: Расширенные нормы и правила разработки
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: Правила глобализации
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: Минимальные правила для управляемого кода
+                  href: managed-minimum-rules-rule-set-for-managed-code.md
+                - name: Рекомендуемые правила для управляемого кода
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: Минимальные правила для смешанного кода
+                  href: mixed-minimum-rules-rule-set.md
+                - name: Рекомендуемые правила для смешанного кода
+                  href: mixed-recommended-rules-rule-set.md
+                - name: Минимальные правила для машинного кода
+                  href: native-minimum-rules-rule-set.md
+                - name: Рекомендуемые правила для машинного кода
+                  href: native-recommended-rules-rule-set.md
+                - name: Правила безопасности
+                  href: security-rules-rule-set-for-managed-code.md
     - name: Метрики кода
       items:
         - name: Обзор
@@ -198,15 +445,6 @@
               href: code-analysis-for-managed-code-warnings.md
             - name: Обзор правил качества кода
               href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: 'Предупреждения, связанные с шифрованием'
-              items:
-                - name: Обзор
-                  displayName: cryptography warnings
-                  href: cryptography-warnings.md
-                - name: CA5350. Не используйте ненадежные алгоритмы шифрования
-                  href: ca5350.md
-                - name: 'CA5351: не используйте ослабленные алгоритмы шифрования'
-                  href: ca5351.md
             - name: Предупреждения по принципам разработки
               items:
                 - name: Обзор
@@ -220,26 +458,14 @@
                   href: ca1002.md
                 - name: CA1003. Используйте экземпляры обработчика универсальных событий
                   href: ca1003.md
-                - name: CA1004. Универсальные методы должны предоставлять параметр типа
-                  href: ca1004.md
                 - name: CA1005. Не используйте слишком много параметров в универсальных типах
                   href: ca1005.md
-                - name: CA1006. Не создавайте вложенные универсальные типы в сигнатурах членов
-                  href: ca1006.md
-                - name: CA1007. По возможности используйте универсальные объекты
-                  href: ca1007.md
                 - name: CA1008. Перечисляемые типы должны иметь нулевое значение
                   href: ca1008.md
-                - name: CA1009. Правильно объявляйте обработчики событий
-                  href: ca1009.md
                 - name: CA1010. Коллекции должны реализовать универсальный интерфейс
                   href: ca1010.md
-                - name: CA1011. Попробуйте передать базовые типы в качестве параметров
-                  href: ca1011.md
                 - name: CA1012. Абстрактные типы не должны иметь конструкторы
                   href: ca1012.md
-                - name: CA1013. Перегружайте оператор равенства при перегрузке операторов сложения и вычитания
-                  href: ca1013.md
                 - name: CA1014. Пометьте сборки с помощью CLSCompliantAttribute
                   href: ca1014.md
                 - name: CA1016. Пометьте сборки с помощью AssemblyVersionAttribute
@@ -250,18 +476,10 @@
                   href: ca1018.md
                 - name: CA1019. Определите методы доступа для аргументов атрибута
                   href: ca1019.md
-                - name: CA1020. Не используйте пространства имен с несколькими типами
-                  href: ca1020.md
                 - name: CA1021. Не используйте параметры out
                   href: ca1021.md
-                - name: CA1023. Индексы не должны быть многомерными
-                  href: ca1023.md
                 - name: CA1024. По возможности используйте свойства
                   href: ca1024.md
-                - name: CA1025. Замените повторяющиеся аргументы массивом параметров
-                  href: ca1025.md
-                - name: CA1026. Не следует использовать параметры по умолчанию
-                  href: ca1026.md
                 - name: CA1027. Пометьте перечисляемые типы с помощью FlagsAttribute
                   href: ca1027.md
                 - name: CA1028. Хранилище перечисляемых типов должно относиться к типу Int32
@@ -276,14 +494,8 @@
                   href: ca1033.md
                 - name: CA1034. Вложенные типы не должны быть видимыми
                   href: ca1034.md
-                - name: CA1035. В составе реализаций ICollection есть члены со строгим типом
-                  href: ca1035.md
                 - name: CA1036. Переопределите методы в сопоставимых типах
                   href: ca1036.md
-                - name: CA1038. Перечислители должны иметь строгие типы
-                  href: ca1038.md
-                - name: CA1039. Списки имеют строгие типы
-                  href: ca1039.md
                 - name: CA1040. Не используйте пустые интерфейсы
                   href: ca1040.md
                 - name: CA1041. Укажите сообщение ObsoleteAttribute
@@ -298,10 +510,6 @@
                   href: ca1046.md
                 - name: CA1047. Не объявляйте защищенные члены в запечатанных типах
                   href: ca1047.md
-                - name: CA1048. Не объявляйте виртуальные члены в запечатанных типах
-                  href: ca1048.md
-                - name: 'CA1049. Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми'
-                  href: ca1049.md
                 - name: CA1050. Объявите типы в пространствах имен
                   href: ca1050.md
                 - name: CA1051. Не объявляйте видимые поля экземпляров
@@ -316,12 +524,8 @@
                   href: ca1055.md
                 - name: CA1056. Свойства URI не должны быть строками
                   href: ca1056.md
-                - name: CA1057. Перегрузки строковых параметров URI вызывают перегрузки System.Uri
-                  href: ca1057.md
                 - name: CA1058. Типы не должны расширять определенные базовые типы
                   href: ca1058.md
-                - name: CA1059. Члены не должны предоставлять определенные конкретные типы
-                  href: ca1059.md
                 - name: CA1060. Переместите методы P/Invoke в класс NativeMethods
                   href: ca1060.md
                 - name: CA1061. Не скрывайте методы базовых классов
@@ -344,8 +548,6 @@
                   href: ca1069.md
                 - name: 'CA1070: не объявляйте поля событий как виртуальные'
                   href: ca1070.md
-                - name: CA2210. Сборки должны иметь допустимые строгие имена
-                  href: ca2210.md
             - name: Предупреждения по документации
               items:
                 - name: Обзор
@@ -358,20 +560,12 @@
                 - name: Обзор
                   displayName: globalization warnings
                   href: globalization-warnings.md
-                - name: CA1300. Укажите MessageBoxOptions
-                  href: ca1300.md
-                - name: CA1301. Избегайте повторяющихся акселераторов
-                  href: ca1301.md
-                - name: 'CA1302. Не указывайте прямо в коде строки, зависящие от языковых стандартов'
-                  href: ca1302.md
                 - name: CA1303. Не передавайте литералы в качестве локализованных параметров
                   href: ca1303.md
                 - name: CA1304. Указывайте CultureInfo
                   href: ca1304.md
                 - name: CA1305. Указывайте IFormatProvider
                   href: ca1305.md
-                - name: CA1306. Задавайте языковой стандарт для типов данных
-                  href: ca1306.md
                 - name: 'CA1307. Используйте StringComparison, чтобы ясно указать намерение.'
                   href: ca1307.md
                 - name: CA1308. Нормализуйте строки в верхний регистр
@@ -382,43 +576,13 @@
                   href: ca1310.md
                 - name: CA2101. Укажите тип маршалинга для строковых аргументов P/Invoke
                   href: ca2101.md
-            - name: 'Предупреждения, связанные с взаимодействием'
+            - name: 'Предупреждения, касающиеся переносимости и взаимодействия'
               items:
                 - name: Обзор
-                  displayName: interoperability warnings
+                  displayName: portability and interoperability warnings
                   href: interoperability-warnings.md
-                - name: CA1400. Для методов P/Invoke должны существовать точки входа
-                  href: ca1400.md
                 - name: CA1401. Методы P/Invoke не должны быть видимыми
                   href: ca1401.md
-                - name: CA1402. Избегайте перегрузок в видимых COM-интерфейсах
-                  href: ca1402.md
-                - name: CA1403. Типы с автомакетом не должны быть видимыми для COM
-                  href: ca1403.md
-                - name: CA1404. Вызывайте GetLastError сразу после P/Invoke
-                  href: ca1404.md
-                - name: 'CA1405. Базовые типы, относящиеся к типу, видимому для COM, должны быть видимыми для COM'
-                  href: ca1405.md
-                - name: CA1406. Не используйте аргументы Int64 для клиентов Visual Basic 6
-                  href: ca1406.md
-                - name: 'CA1407. Не используйте статические члены в типах, видимых для COM'
-                  href: ca1407.md
-                - name: CA1408. Не используйте тип AutoDual ClassInterfaceType
-                  href: ca1408.md
-                - name: CA1409. Видимые для COM типы должны быть создаваемыми
-                  href: ca1409.md
-                - name: CA1410. Методы регистрации COM должны быть согласованными
-                  href: ca1410.md
-                - name: CA1411. Методы регистрации COM не должны быть видимыми
-                  href: ca1411.md
-                - name: CA1412. Пометьте интерфейсы ComSource как IDispatch
-                  href: ca1412.md
-                - name: 'CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM'
-                  href: ca1413.md
-                - name: CA1414. Пометьте логические аргументы P/Invoke атрибутом MarshalAs
-                  href: ca1414.md
-                - name: CA1415. Правильно объявляйте методы P/Invoke
-                  href: ca1415.md
                 - name: CA1417. Не используйте OutAttribute в строковых параметрах для вызовов P/Invoke
                   href: ca1417.md
             - name: 'Предупреждения, связанные с удобством обслуживания'
@@ -426,14 +590,10 @@
                 - name: Обзор
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
-                - name: CA1500. Имена переменных не должны совпадать с именами полей
-                  href: ca1500.md
                 - name: CA1501. Избегайте излишнего наследования
                   href: ca1501.md
                 - name: CA1502. Избегайте чрезмерной сложности
                   href: ca1502.md
-                - name: 'CA1504. Проверьте имена полей, которые могут ввести в заблуждение'
-                  href: ca1504.md
                 - name: 'CA1505. Избегайте кода, неудобного для поддержки'
                   href: ca1505.md
                 - name: CA1506. Избегайте чрезмерной взаимозависимости классов
@@ -444,15 +604,6 @@
                   href: ca1508.md
                 - name: 'CA1509: недопустимая запись в файле конфигурации метрик кода'
                   href: ca1509.md
-            - name: 'Предупреждения, связанные с мобильностью'
-              items:
-                - name: Обзор
-                  displayName: mobility warnings
-                  href: mobility-warnings.md
-                - name: CA1600. Не используйте приоритет процесса простоя
-                  href: ca1600.md
-                - name: 'CA1601. Не используйте таймеры, препятствующие изменению состояния электропитания'
-                  href: ca1601.md
             - name: 'Предупреждения, связанные с именованием'
               items:
                 - name: Обзор
@@ -460,20 +611,10 @@
                   href: naming-warnings.md
                 - name: CA1700. Не присваивайте перечисляемым значениям имя Reserved
                   href: ca1700.md
-                - name: CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса
-                  href: ca1701.md
-                - name: CA1702. Для сложных слов следует использовать правильный регистр
-                  href: ca1702.md
-                - name: CA1703. Строки ресурса должны иметь правильное правописание
-                  href: ca1703.md
-                - name: CA1704. Идентификаторы должны иметь правильное правописание
-                  href: ca1704.md
                 - name: CA1707. Идентификаторы не должны содержать символы подчеркивания
                   href: ca1707.md
                 - name: CA1708. Идентификаторы должны отличаться не только прописными и строчными буквами
                   href: ca1708.md
-                - name: CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
-                  href: ca1709.md
                 - name: CA1710. Идентификаторы должны иметь правильные суффиксы
                   href: ca1710.md
                 - name: CA1711. Идентификаторы не должны иметь неправильные суффиксы
@@ -490,43 +631,27 @@
                   href: ca1716.md
                 - name: CA1717. Только перечисления FlagsAttribute должны иметь имена во множественном числе
                   href: ca1717.md
-                - name: CA1719. Имена параметров не должны совпадать с именами членов
-                  href: ca1719.md
                 - name: CA1720. Идентификаторы не должны содержать имена типов
                   href: ca1720.md
                 - name: CA1721. Имена свойств не должны совпадать с именами методов get
                   href: ca1721.md
-                - name: CA1722. Идентификаторы не должны иметь неправильные префиксы
-                  href: ca1722.md
-                - name: CA1725. Имена параметров должны соответствовать базовому объявлению
-                  href: ca1725.md
                 - name: CA1724. Имена типов не должны совпадать с именами пространства имен
                   href: ca1724.md
-                - name: CA1726. Используйте предпочтительные термины
-                  href: ca1726.md
+                - name: CA1725. Имена параметров должны соответствовать базовому объявлению
+                  href: ca1725.md
             - name: 'Предупреждения, связанные с производительностью'
               items:
                 - name: Обзор
                   displayName: performance warnings
                   href: performance-warnings.md
-                - name: CA1800. Не делайте лишних приведений
-                  href: ca1800.md
-                - name: CA1801. Проверьте неиспользуемые параметры
-                  href: ca1801.md
                 - name: CA1802. По возможности используйте литералы
                   href: ca1802.md
-                - name: CA1804. Удалите неиспользуемые локальные переменные
-                  href: ca1804.md
                 - name: 'CA1805: Не делайте лишних инициализаций'
                   href: ca1805.md
                 - name: CA1806. Не игнорируйте результаты метода
                   href: ca1806.md
-                - name: CA1809. Избегайте лишних локальных переменных
-                  href: ca1809.md
                 - name: CA1810. Инициализируйте статические поля ссылочных типов при объявлении
                   href: ca1810.md
-                - name: CA1811. Избегайте невызываемого частного кода
-                  href: ca1811.md
                 - name: CA1812. Избегайте неиспользуемых внутренних классов
                   href: ca1812.md
                 - name: CA1813. Избегайте незапечатанных атрибутов
@@ -535,8 +660,6 @@
                   href: ca1814.md
                 - name: CA1815. Переопределяйте операторы Equals и равенства для типов значений
                   href: ca1815.md
-                - name: CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
-                  href: ca1816.md
                 - name: CA1819. Свойства не должны возвращать массивы
                   href: ca1819.md
                 - name: 'CA1820. Проверяйте наличие пустых строк, используя длину строки'
@@ -577,17 +700,6 @@
                   href: ca1837.md
                 - name: 'CA1838: не используйте параметры StringBuilder для вызовов P/Invoke'
                   href: ca1838.md
-            - name: 'Предупреждения, связанные с переносимостью'
-              items:
-                - name: Обзор
-                  displayName: portability warnings
-                  href: portability-warnings.md
-                - name: CA1900. Поля типов значений должны быть переносимыми
-                  href: ca1900.md
-                - name: CA1901. Объявления P/Invoke должны быть переносимыми
-                  href: ca1901.md
-                - name: CA1903. Используйте API только из целевой рабочей среды
-                  href: ca1903.md
             - name: 'Предупреждения, связанные с надежностью'
               items:
                 - name: Обзор
@@ -595,16 +707,8 @@
                   href: reliability-warnings.md
                 - name: CA2000. Ликвидируйте объекты перед потерей области
                   href: ca2000.md
-                - name: CA2001. Избегайте вызова проблемных методов
-                  href: ca2001.md
                 - name: CA2002. Не блокируйте объекты с ненадежными удостоверениями
                   href: ca2002.md
-                - name: CA2003. Не рассматривайте волокна в качестве потоков
-                  href: ca2003.md
-                - name: CA2004. Удалите вызовы GC.KeepAlive
-                  href: ca2004.md
-                - name: CA2006. Используйте SafeHandle для инкапсуляции собственных ресурсов
-                  href: ca2006.md
                 - name: CA2007. Не следует напрямую ожидать Task
                   href: ca2007.md
                 - name: CA2008. Не создавайте задачи без передачи TaskScheduler
@@ -630,92 +734,12 @@
                   href: security-warnings.md
                 - name: CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
                   href: ca2100.md
-                - name: 'CA2102. Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков'
-                  href: ca2102.md
-                - name: CA2103. Проверьте принудительную безопасность
-                  href: ca2103.md
-                - name: CA2104. Не объявляйте изменяющиеся ссылочные типы только для чтения
-                  href: ca2104.md
-                - name: CA2105. Поля массивов не должны быть доступны только для чтения
-                  href: ca2105.md
-                - name: CA2106. Обеспечьте безопасность утверждений
-                  href: ca2106.md
-                - name: CA2107. Проверьте использование Deny и Permit Only
-                  href: ca2107.md
-                - name: CA2108. Проверьте объявляемые параметры безопасности типов значений
-                  href: ca2108.md
                 - name: CA2109. Проверьте видимые обработчики событий
                   href: ca2109.md
-                - name: CA2111. Указатели не должны быть видимыми
-                  href: ca2111.md
-                - name: CA2112. Защищенные типы не должны предоставлять поля
-                  href: ca2112.md
-                - name: CA2114. Безопасность метода должна быть надмножеством типа
-                  href: ca2114.md
-                - name: CA2115. Вызывайте GC.KeepAlive при использовании собственных ресурсов
-                  href: ca2115.md
-                - name: CA2116. APTCA-методы должны вызывать только APTCA-методы
-                  href: ca2116.md
-                - name: CA2117. APTCA-типы должны расширять только базовые APTCA-типы
-                  href: ca2117.md
-                - name: CA2118. Проверьте использование атрибута SuppressUnmanagedCodeSecurityAttribute
-                  href: ca2118.md
                 - name: 'CA2119. Запечатайте методы, соответствующие частным интерфейсам'
                   href: ca2119.md
-                - name: CA2120. Обеспечьте безопасность конструкторов сериализации
-                  href: ca2120.md
-                - name: CA2121. Статические конструкторы должны быть частными
-                  href: ca2121.md
-                - name: CA2122. Не используйте косвенное представление методов с требованиями ссылки
-                  href: ca2122.md
-                - name: CA2123. Переопределяющие требования ссылки должны быть идентичны базовым
-                  href: ca2123.md
-                - name: CA2124. Ограничьте уязвимые предложения finally во внешних блоках try
-                  href: ca2124.md
-                - name: CA2126. Для требований ссылок на тип необходимы требования наследования
-                  href: ca2126.md
-                - name: CA2130. Важные константы безопасности должны быть прозрачными
-                  href: ca2130.md
-                - name: CA2131. Критические для безопасности типы не могут участвовать в эквивалентности типов
-                  href: ca2131.md
-                - name: 'CA2132. Конструкторы по умолчанию должны быть по меньшей мере такими же критическими, как конструкторы по умолчанию базового типа'
-                  href: ca2132.md
-                - name: CA2133. Делегаты должны быть привязаны к методам с соответствующей прозрачностью
-                  href: ca2133.md
-                - name: CA2134. Методы должны сохранять одинаковую прозрачность при переопределении базовых методов
-                  href: ca2134.md
-                - name: CA2135. Сборки уровня 2 не должны содержать LinkDemands
-                  href: ca2135.md
-                - name: CA2136. Члены не должны иметь противоречащие заметки прозрачности
-                  href: ca2136.md
-                - name: CA2137. Прозрачные методы должны содержать только поддающийся проверке промежуточный язык
-                  href: ca2137.md
-                - name: CA2138. Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity
-                  href: ca2138.md
-                - name: CA2139. Прозрачные методы могут не использовать атрибут HandleProcessCorruptingExceptions
-                  href: ca2139.md
-                - name: CA2140. Прозрачный код не должен ссылаться на критические для безопасности элементы
-                  href: ca2140.md
-                - name: 'CA2141: прозрачные методы не должны удовлетворять требования LinkDemand'
-                  href: ca2141.md
-                - name: CA2142. Прозрачный код не должен быть защищен проверками LinkDemands
-                  href: ca2142.md
-                - name: CA2143. Прозрачные методы не должны использовать требования безопасности
-                  href: ca2143.md
-                - name: CA2144. Прозрачный код не должен выполнять загрузку сборок из массивов байтов
-                  href: ca2144.md
-                - name: CA2145. Прозрачные методы не должны быть отмечены атрибутом SuppressUnmanagedCodeSecurityAttribute
-                  href: ca2145.md
-                - name: 'CA2146. Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы'
-                  href: ca2146.md
-                - name: CA2147. Прозрачные методы могут не использовать утверждения безопасности
-                  href: ca2147.md
-                - name: CA2149. Прозрачные методы не должны вызывать машинный код
-                  href: ca2149.md
-                - name: CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности
-                  href: ca2151.md
-                - name: CA5122. Объявления P-Invoke не могут быть надежными с точки зрения безопасности
-                  href: ca5122.md
+                - name: CA2153. Не обрабатывайте исключения поврежденного состояния
+                  href: ca2153.md
                 - name: CA2153. Не используйте обработку исключений поврежденного состояния
                   href: ca2153.md
                 - name: CA2300. Не используйте небезопасный десериализатор BinaryFormatter
@@ -800,6 +824,10 @@
                   href: ca3077.md
                 - name: CA3147. Присвоение метки ValidateAntiForgeryToken обработчикам команд
                   href: ca3147.md
+                - name: CA5350. Не используйте ненадежные алгоритмы шифрования
+                  href: ca5350.md
+                - name: 'CA5351: не используйте ослабленные алгоритмы шифрования'
+                  href: ca5351.md
                 - name: CA5358. Не используйте небезопасные режимы шифрования
                   href: ca5358.md
                 - name: 'CA5359: не отключайте проверку сертификатов'
@@ -899,28 +927,18 @@
                   href: usage-warnings.md
                 - name: CA1801. Проверьте неиспользуемые параметры
                   href: ca1801.md
-                - name: CA1806. Не игнорируйте результаты метода
-                  href: ca1806.md
                 - name: CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
                   href: ca1816.md
                 - name: CA2200. Повторно порождайте исключения для сохранения сведений стека
                   href: ca2200.md
                 - name: CA2201. Не порождайте исключения зарезервированных типов
                   href: ca2201.md
-                - name: CA2202. Не ликвидируйте объекты несколько раз
-                  href: ca2202.md
-                - name: CA2204. Литералы должны иметь правильное правописание
-                  href: ca2204.md
-                - name: CA2205. Используйте управляемые эквиваленты Win32 API
-                  href: ca2205.md
                 - name: CA2207. Используйте встроенную инициализацию статических полей типов значений
                   href: ca2207.md
                 - name: CA2208. Правильно создавайте экземпляры исключений аргументов
                   href: ca2208.md
                 - name: 'CA2211. Поля, не являющиеся константами, не должны быть видимыми'
                   href: ca2211.md
-                - name: CA2212. Не помечайте обслуживаемые компоненты с помощью WebMethod
-                  href: ca2212.md
                 - name: CA2213. Следует высвобождать высвобождаемые поля
                   href: ca2213.md
                 - name: CA2214. Не вызывайте переопределяемые методы в конструкторах
@@ -931,52 +949,24 @@
                   href: ca2216.md
                 - name: CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute
                   href: ca2217.md
-                - name: CA2218. Переопределяйте GetHashCode при переопределении Equals
-                  href: ca2218.md
                 - name: CA2219. В предложениях с исключениями не должны порождаться исключения
                   href: ca2219.md
-                - name: CA2220. Методы завершения должны вызывать метод завершения базового класса
-                  href: ca2220.md
-                - name: CA2221. Методы завершения должны быть защищенными
-                  href: ca2221.md
-                - name: CA2222. Не уменьшайте видимость наследуемого члена
-                  href: ca2222.md
-                - name: CA2223. Члены должны различаться не только возвращаемым типом
-                  href: ca2223.md
-                - name: CA2224. Переопределяйте Equals при перегрузке оператора равенства
-                  href: ca2224.md
                 - name: CA2225. Для перегрузок операторов существуют варианты с именами
                   href: ca2225.md
                 - name: CA2226. Перегрузки операторов должны быть симметричными
                   href: ca2226.md
                 - name: 'CA2227. Свойства, возвращающие коллекции, должны быть доступными только для чтения'
                   href: ca2227.md
-                - name: CA2228. Не поставляйте предварительные форматы ресурсов
-                  href: ca2228.md
                 - name: CA2229. Реализуйте конструкторы сериализации
                   href: ca2229.md
-                - name: CA2230. Используйте параметры для аргументов переменной
-                  href: ca2230.md
                 - name: CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals
                   href: ca2231.md
-                - name: CA2232. Отметьте точки входа Windows Forms меткой STAThread
-                  href: ca2232.md
-                - name: CA2233. В операциях не должно быть переполнений
-                  href: ca2233.md
                 - name: CA2234. Передавайте объекты System.Uri вместо строк
                   href: ca2234.md
                 - name: CA2235. Пометьте все несериализуемые поля
                   href: ca2235.md
-                - name: CA2236. Вызывайте методы базового класса для типов ISerializable
-                  href: ca2236.md
                 - name: CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute
                   href: ca2237.md
-                - name: CA2238. Правильно реализуйте методы сериализации
-                  href: ca2238.md
-                - name: CA2239. Обеспечьте наличие методов десериализации в необязательных полях
-                  href: ca2239.md
-                - name: CA2240. Правильно реализуйте ISerializable
-                  href: ca2240.md
                 - name: CA2241. Задайте правильные аргументы для методов форматирования
                   href: ca2241.md
                 - name: CA2242. Правильно выполняйте проверку NaN
@@ -1001,6 +991,7 @@
               items:
                 - name: Обзор
                   displayName: publish warnings
+                  href: publish-warnings.md
                 - name: 'IL3000: не используйте путь к файлу сборки при публикации в виде одного файла'
                   href: il3000.md
                 - name: 'IL3001: не используйте путь к файлу сборки при публикации в виде одного файла'
