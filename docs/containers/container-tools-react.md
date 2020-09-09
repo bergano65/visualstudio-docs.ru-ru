@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249204"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485402"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Краткое руководство. Использование Docker с одностраничным приложением React в Visual Studio
 
@@ -246,7 +246,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-* [Разработка с помощью контейнеров в Visual Studio](/visualstudio/containers)
+* [Разработка с помощью контейнеров в Visual Studio](./index.yml)
 * [Устранение неполадок при разработке с Docker в Visual Studio](troubleshooting-docker-errors.md)
 * [Репозиторий GitHub со средствами Visual Studio для контейнеров](https://github.com/Microsoft/DockerTools)
 

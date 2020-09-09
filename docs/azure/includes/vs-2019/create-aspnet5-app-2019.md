@@ -7,11 +7,11 @@ ms.author: ghogen
 ms.topic: include
 ms.date: 03/05/2019
 ms.openlocfilehash: 81c2f7ae366efa70c3608e112dabcbfceb4087e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71126007"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89326791"
 ---
 1. В начальном окне Visual Studio выберите **Создать проект**.
 1. Выберите шаблон **Веб-приложение ASP.NET Core** и нажмите кнопку **Далее**.

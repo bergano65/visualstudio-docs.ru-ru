@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815140"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508981"
 ---
 # <a name="using-net-4x-in-unity"></a>Использование .NET 4.x в Unity
 
@@ -233,7 +233,7 @@ TAP — это сложная тема с определенными харак
 * К именам асинхронных функций, возвращающих задачу, необходимо добавлять суффикс **Async**. Суффикс Async означает, что эта функция требует ожидания.
 * Используйте тип возвращаемого значения `async void` только для тех функций, которые запускают асинхронные функции из традиционного синхронного кода. Сами такие функции не могут требовать ожидания, а их имена не должны содержать суффикс Async.
 * Чтобы асинхронные функции по умолчанию выполнялись в основном потоке, в Unity используется unitySynchronizationContext. API Unity за пределами основного потока недоступен.
-* Можно выполнять задачи в фоновых потоках с помощью таких методов, как [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) и [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx). Этот прием пригодится для выгрузки ресурсоемких операций из основного потока и повышения производительности. При этом использование фоновых потоков может привести к возникновению трудно устраняемых проблем, например привести к [состоянию гонки](https://wikipedia.org/wiki/Race_condition).
+* Можно выполнять задачи в фоновых потоках с помощью таких методов, как [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) и [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait). Этот прием пригодится для выгрузки ресурсоемких операций из основного потока и повышения производительности. При этом использование фоновых потоков может привести к возникновению трудно устраняемых проблем, например привести к [состоянию гонки](https://wikipedia.org/wiki/Race_condition).
 * API Unity за пределами основного потока недоступен.
 * Задачи, использующие потоки, в сборках Unity WebGL не поддерживаются.
 

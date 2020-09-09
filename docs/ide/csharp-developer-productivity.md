@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567506"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509943"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Руководство по повышению производительности работы в Visual Studio для разработчиков на платформе C#
 
@@ -139,7 +139,7 @@ ms.locfileid: "75567506"
 
 Дополнительные сведения см. в статье [Возможности создания кода в Visual Studio](code-generation-in-visual-studio.md).
 
-Вы можете [установить анализаторы FxCop](../code-quality/install-fxcop-analyzers.md), чтобы отметить проблемы в коде. Вы также можете создать собственные исправления кода или операции рефакторинга с помощью [анализаторов Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
+Вы можете [установить анализаторы FxCop](../code-quality/install-fxcop-analyzers.md), чтобы отметить проблемы в коде. Вы также можете создать собственные исправления кода или операции рефакторинга с помощью [анализаторов Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md).
 
 Участники сообщества написали бесплатные расширения, которые реализуют дополнительные проверки кода:
 

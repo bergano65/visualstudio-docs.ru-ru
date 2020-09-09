@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711668"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490317"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Учебник. Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -86,7 +86,7 @@ ms.locfileid: "88711668"
    ```
    
     > [!NOTE]
-    > В реальном коде не следует удалять `HttpClient` после каждого запроса. Рекомендации см. в разделе [Использование HttpClientFactory для реализации устойчивых HTTP-запросов](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > В реальном коде не следует удалять `HttpClient` после каждого запроса. Рекомендации см. в разделе [Использование HttpClientFactory для реализации устойчивых HTTP-запросов](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
    Для .NET Core 3.1 в Visual Studio 2019 или более поздней версии шаблон веб-API использует API WeatherForecast, поэтому раскомментируйте эту строку и закомментируйте строку для ASP.NET 2.x.
 
@@ -195,4 +195,4 @@ ms.locfileid: "88711668"
 ## <a name="see-also"></a>См. также раздел
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[Инструменты для работы с контейнерами](/visualstudio/containers/)
+[Инструменты для работы с контейнерами](./index.yml)

@@ -7,12 +7,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77279315"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509891"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
@@ -118,7 +118,7 @@ Visual Studio to investigate.
 
 Если присвоить переменной среды TRACEDESIGNTIME значение true и перезапустить Visual Studio, вы найдете в каталоге %TEMP% файл журнала, который может помочь при диагностике ошибки компиляции.
 
-Дополнительные сведения о переменной среды TRACEDESIGNTIME см. в статьях о [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) и [общей системе проектов](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Сведения в этих статьях относятся и к проектам C++.
+Дополнительные сведения о переменной среды TRACEDESIGNTIME см. в статьях о [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) и [общей системе проектов](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Сведения в этих статьях относятся и к проектам C++.
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815166"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508968"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Использование инструментов Visual Studio для Unity
 
@@ -181,7 +181,7 @@ ms.locfileid: "85815166"
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Отладка проекта с управляемой библиотекой DLL, используемой в проекте Unity
 
-1. Добавьте существующий проект библиотеки DLL в решение Visual Studio, которое создается набором средств Visual Studio для Unity. В ряде случаев вы можете создать новый проект с управляемой библиотекой DLL, который будет содержать компоненты кода проекта Unity. В этом сценарии в решение Visual Studio можно добавить новый проект с управляемой библиотекой DLL. Дополнительные сведения о добавлении нового или существующего проекта в решение см. в разделе [Практическое руководство. Добавление проектов в решение](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Добавьте существующий проект библиотеки DLL в решение Visual Studio, которое создается набором средств Visual Studio для Unity. В ряде случаев вы можете создать новый проект с управляемой библиотекой DLL, который будет содержать компоненты кода проекта Unity. В этом сценарии в решение Visual Studio можно добавить новый проект с управляемой библиотекой DLL.
 
    ![Добавьте существующий проект библиотеки DLL в решение.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 

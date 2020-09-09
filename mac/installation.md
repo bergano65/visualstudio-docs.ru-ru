@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250547"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426906"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
@@ -24,7 +24,7 @@ ms.locfileid: "88250547"
 
 ## <a name="requirements"></a>Требования
 
-- Компьютер Mac с macOS High Sierra 10.12 или более поздней версии.
+- Компьютер Mac с macOS High Sierra 10.13 или более поздней версии.
 
 Чтобы создавать приложения Xamarin для iOS или macOS, вам также потребуется:
 

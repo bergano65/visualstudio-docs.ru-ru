@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149204"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89325361"
 ---
 На удаленном устройстве или сервере, на котором требуется выполнить отладку (не на компьютере Visual Studio), скачайте и установите правильную версию инструментов удаленной отладки по ссылкам, приведенным в следующей таблице.
 

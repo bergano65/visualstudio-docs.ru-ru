@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729092"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509423"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Поддерживаемые изменения кода (C# и Visual Basic)
 Операция "Изменить и продолжить" обрабатывает большинство типов изменений, вносимых в код внутри тела метода. Однако большинство изменений за пределами тела метода и некоторые изменения в теле метода во время отладки применены быть не могут. Чтобы такие неподдерживаемые изменения вступили в силу, необходимо остановить отладку и заново запустить ее для обновленной версии кода.
@@ -32,15 +32,15 @@ ms.locfileid: "72729092"
 
 |Элемент или компонент языка|Поддерживаемые операции редактирования|Ограничения|
 |-|-|-|
-|Типы|Добавление методов, полей, конструкторов, и т. п.|[Да](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Типы|Добавление методов, полей, конструкторов, и т. п.|[Да](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Iterators|Добавить или изменить|Нет|
-|Выражения async и await|Добавить или изменить|[Да](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Выражения async и await|Добавить или изменить|[Да](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Динамические объекты|Добавить или изменить|Нет|
-|лямбда-выражения|Добавить или изменить|[Да](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Выражения LINQ|Добавить или изменить|[Аналогично лямбда-выражениям](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|лямбда-выражения|Добавить или изменить|[Да](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|Выражения LINQ|Добавить или изменить|[Аналогично лямбда-выражениям](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 
 > [!NOTE]
-> Новые функции языка, например интерполяция строк и условные операторы со значением NULL, обычно поддерживаются в режиме "Изменить и продолжить". См. актуальные сведения о [правках, поддерживаемых в режиме "Изменить и продолжить"](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits).
+> Новые функции языка, например интерполяция строк и условные операторы со значением NULL, обычно поддерживаются в режиме "Изменить и продолжить". См. актуальные сведения о [правках, поддерживаемых в режиме "Изменить и продолжить"](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md).
 
 ## <a name="unsupported-changes-to-code"></a>Неподдерживаемые изменения в коде
  Следующие изменения в коде C# и Visual Basic нельзя применять во время сеанса отладки.
@@ -60,7 +60,7 @@ ms.locfileid: "72729092"
 |Пространства имен, типы, члены|Удаление|
 |Универсальные шаблоны|Добавить или изменить|
 |Интерфейсы|Изменить|
-|Типы|Добавление абстрактного или виртуального члена, добавление переопределения (см. [здесь](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Типы|Добавление абстрактного или виртуального члена, добавление переопределения (см. [здесь](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Типы|Добавить деструктор|
 |Участники|Изменение члена, ссылающегося на внедренный тип взаимодействия|
 |Участники|Изменение статического члена после того, как к нему выполнено обращение из выполняемого кода|
@@ -75,8 +75,8 @@ ms.locfileid: "72729092"
 |catch - блоки|Изменение, когда блок содержит активный оператор|
 |Блоки try-catch-finally|Изменение, когда блок содержит активный оператор|
 |использование операторов|Add|
-|Асинхронные методы или лямбда-выражения|Изменение асинхронного метода или лямбда-выражения в проекте, предназначенном для .NET Framework 4 или более ранней версии (см. [здесь](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Изменение итератора в проекте, предназначенном для .NET Framework 4 или более ранней версии (см. [здесь](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Асинхронные методы или лямбда-выражения|Изменение асинхронного метода или лямбда-выражения в проекте, предназначенном для .NET Framework 4 или более ранней версии (см. [здесь](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
+|Iterators|Изменение итератора в проекте, предназначенном для .NET Framework 4 или более ранней версии (см. [здесь](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
 ## <a name="unsafe-code"></a>Небезопасный код
  В отношении изменений небезопасного кода действуют те же ограничения, что и для безопасного кода, а также следующее дополнительное ограничение: Режим "Изменить и продолжить" не поддерживает изменения в небезопасном коде, в котором осуществляется выход из метода, содержащего оператор `stackalloc`.

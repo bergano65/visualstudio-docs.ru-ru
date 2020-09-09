@@ -8,12 +8,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: c138d09ec229343e38edc8bbba50a5cac73e000a
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371512"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485389"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Общие сведения о Visual Studio Tools for AI
 
@@ -40,4 +40,4 @@ Visual Studio Tools for AI — это интегрированная сре�
 Дополнительные сведения о Visual Studio Tools for AI, включая требования к системе и варианты поддержки, см. на странице [обзора Visual Studio Tools for AI](about-ai-tools.md).
 
 ## <a name="see-also"></a>См. также
-[Расширяемость Visual Studio](/visualstudio/extensibility/?view=vs-2017)
+[Расширяемость Visual Studio](../extensibility/index.yml?view=vs-2017)

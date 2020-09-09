@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232947"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509046"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps с приложениями Unity
 
@@ -103,10 +103,10 @@ Visual Studio (совместно с Azure DevOps Services и Team Foundation Se
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|
 |-------------|--------------------------|-------------------------|
 |[Анализ качества управляемого кода](../code-quality/code-analysis-for-managed-code-overview.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
-|[Поиск повторяющегося кода с помощью обнаружения клонов кода](https://msdn.microsoft.com/library/hh205279.aspx)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
+|[Поиск повторяющегося кода с помощью обнаружения клонов кода](/previous-versions/hh205279(v=vs.140))|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
 |[Оценка сложности и удобства сопровождения управляемого кода](../code-quality/code-metrics-values.md)|Да|Возможность анализа кода скриптов на языке C# в Visual Studio.|
 |[Средства производительности](../profiling/performance-explorer.md)|Нет|Используйте [Профилировщик Unity](https://docs.unity3d.com/Manual/Profiler.html) (веб-сайт Unity).|
-|[Анализ проблем с памятью .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Нет|Средства Visual Studio не имеют обработчиков в платформе Mono (используемой средой Unity) для профилирования. Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (документация по Unity).|
+|[Анализ проблем с памятью .NET Framework](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|Нет|Средства Visual Studio не имеют обработчиков в платформе Mono (используемой средой Unity) для профилирования. Используйте [Профилировщик Unity](http://docs.unity3d.com/Manual/Profiler.html) (документация по Unity).|
 
 ## <a name="release-management"></a>Управление выпуском
 

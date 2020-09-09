@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250512"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509930"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Практическое руководство. Повышение шансов решения проблемы с производительностью
 
@@ -171,7 +171,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 
 **Расширенные трассировки производительности**
 
-В большинстве случаев возможностей сбора трассировки в средстве "Сообщить о проблеме" достаточно. Тем не менее, иногда требуется больший контроль над этим процессом (например, для трассировок с большим размером буфера). В таких ситуациях рекомендуется использовать средство PerfView. Инструкции по записи трассировки производительности вручную с помощью средства PerfView см. на [этой странице](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView).
+В большинстве случаев возможностей сбора трассировки в средстве "Сообщить о проблеме" достаточно. Тем не менее, иногда требуется больший контроль над этим процессом (например, для трассировок с большим размером буфера). В таких ситуациях рекомендуется использовать средство PerfView. Инструкции по записи трассировки производительности вручную с помощью средства PerfView см. на [этой странице](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md).
 
 ## <a name="out-of-process-issues"></a>Проблемы вне процесса
 

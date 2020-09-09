@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/24/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 775abc2699bf3cef2dd360df701ab12b69a49496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 348a3b4f6938e96931d795d23082be6a71abebb6
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027320"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485359"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>Краткое руководство. Использование Docker в Visual Studio
 
@@ -29,6 +29,6 @@ ms.locfileid: "77027320"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-* [Разработка с помощью контейнеров в Visual Studio](/visualstudio/containers)
+* [Разработка с помощью контейнеров в Visual Studio](./index.yml)
 * [Устранение неполадок при разработке с Docker в Visual Studio](troubleshooting-docker-errors.md)
 * [Репозиторий GitHub со средствами Visual Studio для контейнеров](https://github.com/Microsoft/DockerTools)
