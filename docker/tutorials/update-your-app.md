@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 4a1cba71481608803522336ad5c0f6b6354bca32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176842"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485432"
 ---
 # <a name="update-the-app"></a>Обновление приложения
 
@@ -82,7 +82,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 > [!TIP]
 > Вы можете отключить и удалить контейнер одной командой, добавив флаг force в команду `docker rm`. Пример: `docker rm -f <the-container-id>`
 
-### <a name="remove-a-container-using-the-docker-dashboard"></a>Удаление контейнера с помощью панели мониторинга Docker
+### <a name="remove-a-container-using-the-docker-view"></a>Удаление контейнера с помощью представления Docker
 
 Открыв расширение VS Code, можно удалить контейнер двумя щелчками мыши! Это, несомненно, намного проще, чем сначала искать идентификатор контейнера, а затем удалять его.
 
@@ -92,7 +92,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 
 1. Подтвердите удаление, и на этом всё!
 
-![Панель мониторинга Docker — удаление контейнера](media/vs-removing-container.png)
+![Представление Docker — удаление контейнера](media/vs-removing-container.png)
 
 ### <a name="start-the-updated-app-container"></a>Запуск обновленного контейнера приложения
 
