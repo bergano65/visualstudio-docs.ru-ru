@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: overview
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
 ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248345"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
@@ -67,13 +67,13 @@ ms.locfileid: "88248345"
 1. Если у вас несколько соглашений, выберите нужное соглашение в раскрывающемся списке.
 1. Нажмите значок **Обзор** в верхнем левом углу, чтобы отобразить сведения о подписках.  
 > [!div class="mx-imgBorder"]
-> ![Отображение сведений о подписках](_img/buy-vs-subscriptions/overview-button.png "Нажатие кнопки Обзор для отображения сведений о подписке")
+> ![Отображение сведений о подписках](_img/buy-vs-subscriptions/overview-button.png "Нажатие кнопки "Обзор" для отображения сведений о подписке")
 
 4. Выберите запись для подписок, которые вы хотите отменить, и нажмите **Изменить количество**.
 1. Измените количество на нуль (0). Ваши подписки будут действовать до запланированной даты выставления счетов, но не будут продлены в начале следующего расчетного периода.   
 
 > [!div class="mx-imgBorder"]
-> ![Управление подписками](_img/buy-vs-subscriptions/manage-subscriptions.png "Нажатие кнопки Изменить количество для отмены подписок")
+> ![Управление подписками](_img/buy-vs-subscriptions/manage-subscriptions.png "Нажатие кнопки "Изменить количество" для отмены подписок")
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
