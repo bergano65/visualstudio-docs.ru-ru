@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Связывание типа содержимого с расширением имени файла | Документация Майкрософт
+title: Связывание типа содержимого с расширением имени файла
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7224c98c55567ed091b09c1a69e630573eb34be8
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904685"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743216"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа содержимого с расширением имени файла
 Можно определить собственный тип содержимого и связать с ним расширение имени файла с помощью расширений Managed Extensibility Framework (MEF). В некоторых случаях расширение имени файла уже определено языковой службой. Однако, чтобы использовать его с MEF, необходимо по-прежнему связать его с типом содержимого.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Создание проекта MEF
 
@@ -101,5 +101,5 @@ ms.locfileid: "85904685"
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

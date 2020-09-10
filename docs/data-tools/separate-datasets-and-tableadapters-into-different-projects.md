@@ -1,5 +1,6 @@
 ---
-title: Разделение наборов данных и TableAdapter на разные проекты
+title: Использовать отдельные проекты ошибка
+description: Разделение наборов данных и TableAdapter на разные проекты
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281556"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743112"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Разделение наборов данных и TableAdapter на разные проекты
 Типизированные наборы данных были улучшены, чтобы классы [TableAdapter](create-and-configure-tableadapters.md) и наборы данных могли быть созданы в отдельных проектах. Это позволяет быстро разделять уровни приложений и создавать n-уровневые приложения для данных.
@@ -57,9 +58,9 @@ ms.locfileid: "85281556"
 > [!NOTE]
 > Чтобы просмотреть созданный файл класса, выберите набор данных или проект TableAdapter. Затем в **Обозреватель решений**выберите пункт **Показывать все файлы**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Обзор многоуровневых приложений для данных](../data-tools/n-tier-data-applications-overview.md)
+- [Общие сведения об n-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)
 - [Пошаговое руководство. Создание N-уровневого приложения для данных](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

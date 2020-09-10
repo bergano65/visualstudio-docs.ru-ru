@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282765"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743382"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Создание простого приложения для обработки данных с помощью WPF и Entity Framework 6
 
@@ -423,7 +423,7 @@ ms.locfileid: "85282765"
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>Выполнение приложения
+## <a name="run-the-application"></a>Запуск приложения
 
 Чтобы начать отладку, нажмите клавишу **F5**. Данные о клиентах и заказах должны быть заполнены в сетке, а кнопки навигации должны работать надлежащим образом. Щелкните **фиксация** , чтобы добавить нового клиента или заказ в модель после того, как вы введете данные. Нажмите кнопку **Отмена** , чтобы вернуться из нового клиента или новой формы заказа без сохранения данных. Вы можете вносить изменения в существующие клиенты и заказы непосредственно в текстовые поля, и эти изменения автоматически записываются в модель.
 

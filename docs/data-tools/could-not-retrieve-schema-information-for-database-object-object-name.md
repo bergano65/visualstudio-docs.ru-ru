@@ -1,5 +1,6 @@
 ---
-title: Не удается извлечь сведения о схеме для объекта базы данных
+title: Не удалось получить сведения о схеме
+description: Не удается извлечь сведения о схеме для объекта базы данных
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f730484ade07689f2a50e19a263adbcd10693151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45b0f359366351519fa5ac44fb19a81ef6f26779
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282700"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743370"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Не удается извлечь сведения о схеме для объекта базы данных \<object name>
 
@@ -21,4 +22,4 @@ ms.locfileid: "85282700"
 
 ## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

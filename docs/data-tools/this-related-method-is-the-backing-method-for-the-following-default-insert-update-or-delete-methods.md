@@ -1,5 +1,6 @@
 ---
-title: Этот связанный метод является основным для следующих методов вставки, обновления и удаления по умолчанию
+title: Не удается удалить метод резервного копирования
+description: Этот связанный метод является основным для следующих методов вставки, обновления и удаления по умолчанию
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 252303c4933501dd3a4672329d66ef4910238a08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad7c66c6d110d09940a93e694a897a7dafd92e17
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535256"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743088"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Этот связанный метод является основным для следующих методов вставки, обновления и удаления по умолчанию
 
@@ -31,6 +32,6 @@ ms.locfileid: "85535256"
 
    Окно сообщения закрывается без сохранения изменений.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

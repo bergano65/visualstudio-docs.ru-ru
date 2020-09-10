@@ -15,18 +15,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db14068c97ff6868f5fb73c9ddd790020e99e7c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711637"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743344"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение свойств, список задач, вывода и параметров
 Вы можете получить доступ к любому окну инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашем окне инструментов в новую страницу **параметров** и новый параметр на странице **свойств** , а также как выполнять запись в окна **список задач** и **вывода** .
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-tool-window"></a>Создание расширения с помощью окна инструментов
 

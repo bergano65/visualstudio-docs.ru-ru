@@ -1,5 +1,5 @@
 ---
-title: Использование таблиц подстановки в привязке данных — Windows Forms элементов управления | Документация Майкрософт
+title: Использование таблиц подстановки в привязке данных — Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68121cc98a1bdbc1f7f1bfa69ce8ee0d1d797bb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586800"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743355"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных
 
@@ -155,7 +155,7 @@ ms.locfileid: "75586800"
 
 6. Выберите **LookupBox** в списке **Связанные элементы управления** диалогового окна **Настройка данных интерфейса пользователя**.
 
-7. Нажмите кнопку **ОК**.
+7. Нажмите кнопку **OK**.
 
 8. Щелкните стрелку раскрывающегося списка в столбце **CustomerID** и выберите **LookupBox**.
 
@@ -171,12 +171,12 @@ ms.locfileid: "75586800"
 
 При этом задается привязка к данным для отображения `CompanyName` из таблицы `Customers` с сохранением значения `CustomerID` из таблицы `Orders`.
 
-## <a name="run-the-application"></a>Выполнение приложения
+## <a name="run-the-application"></a>Запуск приложения
 
 - Нажмите клавишу **F5** для запуска приложения.
 
 - Перейдите по нескольким записям и проверьте, что `CompanyName` отображается в элементе управления `LookupBox`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
