@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314866"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641652"
 ---
 # <a name="create-bootstrapper-packages"></a>Создание пакетов начального загрузчика
 Программа установки — это общий установщик, который можно настроить на обнаружение и установку распространяемых компонентов, таких как файлы установщика Windows (*.MSI*) и исполняемые программы. Установщик также называется начальным загрузчиком. Он программируется с помощью набора XML манифестов, определяющих метаданные для управления установкой компонента.  Каждый распространяемый компонент или предварительные требования, которые отображаются в диалоговом окне **необходимые компоненты** для технологии ClickOnce, являются пакетом загрузчика. Пакет начальной загрузки — это группа директорий и файлов, в которых содержатся файлы манифеста, описывающие порядок установки необходимого компонента.
@@ -70,7 +70,7 @@ CustomBootstrapperPackage
 *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 ```
 
-или
+or
 
 ```
 *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
@@ -122,4 +122,4 @@ CustomBootstrapperPackage
 - [Как установить необходимые компоненты с помощью приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Диалоговое окно "необходимые компоненты"](../ide/reference/prerequisites-dialog-box.md)
 - [Справочник по схеме продуктов и пакетов](../deployment/product-and-package-schema-reference.md)
-- [Использование загрузчика Visual Studio 2005 для запуска установки](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Использование загрузчика Visual Studio 2005 для запуска установки](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

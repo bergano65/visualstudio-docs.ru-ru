@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900390"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641462"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по развертыванию ClickOnce
 В этом разделе содержатся примеры приложений, примеры кода и пошаговые пошаговые руководства, иллюстрирующие синтаксис, структуру и приемы, используемые для развертывания Windows Forms, WPF и консольных приложений.
 
- Пример кода предназначен для инструкций и не должен использоваться в развернутых решениях без изменений. В частности, необходимо учитывать безопасность.
+ Пример кода предназначен для инструкций и не должен использоваться в развернутых решениях без изменений. В частности, особое внимание необходимо уделить вопросам безопасности.
 
 ## <a name="clickonce-deployment"></a>развертывание ClickOnce
 
@@ -39,4 +39,4 @@ ms.locfileid: "62900390"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Пошаговые руководства по Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)
+- [Пошаговые руководства по Visual Studio](/previous-versions/szatc41e(v=vs.110))
