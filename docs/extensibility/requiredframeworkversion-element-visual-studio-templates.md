@@ -1,5 +1,6 @@
 ---
-title: Элемент Рекуиредфрамеворкверсион (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ce8a342f7b3582fb8b2b3839a44e545071b7177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701501"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741696"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент Рекуиредфрамеворкверсион (шаблоны Visual Studio)
 
@@ -55,7 +56,7 @@ ms.locfileid: "80701501"
 
  Текст должен быть минимальным номером версии .NET Framework, который необходим для шаблона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр `RequiredFrameworkVersion` является необязательным элементом. Используйте этот элемент, только если шаблон поддерживает определенную минимальную версию (и более поздние версии, если таковые имеются) .NET Framework. Если указать элемент, `RequiredFrameworkVersion` а шаблон не поддерживает определенную минимальную версию .NET Framework, раскрывающийся список **Версия целевой платформы** будет отображаться, если он неприменим.
 

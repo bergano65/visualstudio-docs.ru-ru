@@ -1,5 +1,6 @@
 ---
-title: Элемент Рекуиредплатформверсион (шаблоны Visual Studio) | Документация Майкрософт
+title: RequiredPlatformVersion - элемент (шаблоны Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,14 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a3873a8107c60802edd07b567d65205a37dc213
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701494"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741672"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Элемент Рекуиредплатформверсион (шаблоны Visual Studio)
+
 Указывает минимальную версию операционной системы, которую должен правильно работать шаблон проекта. Этот элемент используется для шаблонов проектов, которые создают [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] приложения.
 
  `RequiredPlatformVersion`Значение сравнивается непосредственно с версией операционной системы. Если значение `RequiredPlatformVersion` выше версии операционной системы, шаблон не отображается в диалоговом окне **Новый проект** . Чтобы указать шаблон для [!INCLUDE[win8](../debugger/includes/win8_md.md)] или более поздней версии, задайте для параметра значение `RequiredPlatformVersion` 6.2.0. Чтобы указать шаблон для [!INCLUDE[win81](../debugger/includes/win81_md.md)] или более поздней версии, задайте для параметра значение `RequiredPlatformVersion` 6.3.0.
@@ -32,12 +34,15 @@ ms.locfileid: "80701494"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
- Нет.
+
+ Отсутствует.
 
 ### <a name="attributes"></a>Атрибуты
+
  Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
+
  Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
@@ -47,12 +52,15 @@ ms.locfileid: "80701494"
 |[темплатеплатформнаме](../extensibility/templatedata-element-visual-studio-templates.md)|Задает платформу, для которой предназначен шаблон проекта.|
 
 ## <a name="text-value"></a>Текстовое значение
+
  Текстовое значение является обязательным.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
+
  Этот текст указывает минимальную версию операционной системы, требуемую для шаблона.
 
 ## <a name="example"></a>Пример
+
  В этом примере указывается, что шаблон проекта предназначен для [!INCLUDE[win8](../debugger/includes/win8_md.md)] или более поздней версии.
 
 ```xml
@@ -68,7 +76,8 @@ ms.locfileid: "80701494"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
+
 - [Элемент Таржетплатформнаме (шаблоны Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
