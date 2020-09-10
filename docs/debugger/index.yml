@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: f65c41b4647a811377d1d090635c889a784678ae
+  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "86405426"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "89600136"
 landingContent:
 - title: Сведения об отладке
   linkLists:
@@ -34,11 +34,11 @@ landingContent:
     - text: Отладка для начинающих
       url: debugging-absolute-beginners.md
     - text: Обучение отладке кода C#
-      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      url: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - text: Обучение отладке кода C++
       url: getting-started-with-the-debugger-cpp.md
     - text: Обучение отладке кода Visual Basic
-      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      url: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - text: Выполнение кода Python в отладчике >>
       url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
 - title: Приостановка и навигация по коду
@@ -68,7 +68,7 @@ landingContent:
     - text: Советы и рекомендации по работе с отладчиком
       url: debugger-tips-and-tricks.md
     - text: Создание и отладка выполняющегося кода XAML
-      url: xaml-hot-reload.md
+      url: ../xaml-tools/xaml-hot-reload.md
     - text: Отладка живого приложения Azure
       url: debug-live-azure-applications.md
     - text: Указание отображаемых сведений для отладчика

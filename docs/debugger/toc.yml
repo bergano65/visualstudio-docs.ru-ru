@@ -21,11 +21,11 @@
 - name: Учебники
   items:
     - name: Обучение отладке кода C#
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Обучение отладке кода C++
       href: getting-started-with-the-debugger-cpp.md
     - name: Обучение отладке кода Visual Basic
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Запуск кода Python в отладчике...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Отладка живого приложения Azure
@@ -300,7 +300,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
+            - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе".
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: На удаленном компьютере монитор удаленной отладки Microsoft Visual Studio выполняется в контексте другого пользователя
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -313,7 +313,7 @@
             - name: 'Убедитесь, что DNS на удаленном компьютере настроена правильно'
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: 'Вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере.'
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: Не удается подключиться к монитору удаленной отладки Microsoft Visual Studio
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: Не удалось инициировать подключение DCOM
@@ -445,7 +445,7 @@
             - name: Отладка установленного пакета приложения
               href: debug-installed-app-package.md
             - name: Просмотр свойств XAML во время отладки
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: Создание и отладка выполняющегося кода XAML
               href: ../xaml-tools/xaml-hot-reload.md
             - name: Отладка XAML в Blend
@@ -505,7 +505,7 @@
                 - name: Отладка WPF
                   href: debugging-wpf.md
                 - name: Просмотр свойств XAML во время отладки
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: Создание и отладка выполняющегося кода XAML
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: Использование визуализатора дерева WPF
