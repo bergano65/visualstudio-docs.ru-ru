@@ -1,5 +1,6 @@
 ---
-title: Элемент Локатионфиелдмрупрефикс (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент LocationFieldMRUPrefix (шаблоны Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702814"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741347"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Элемент Локатионфиелдмрупрефикс (шаблоны Visual Studio)
+
 Указывает недавно использованные пути (MRU) в диалоговом окне **Новый проект** и **Добавление нового элемента** .
 
 ## <a name="syntax"></a>Синтаксис
@@ -31,12 +33,15 @@ ms.locfileid: "80702814"
 ```
 
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
+
  Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
+
  Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
@@ -45,9 +50,11 @@ ms.locfileid: "80702814"
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
+
  Этот элемент следует использовать только для шаблонов, созданных с помощью [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 
 ## <a name="see-also"></a>См. также
+
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка наследования с помощью реляционного конструктора объектов
+title: настройку наследования с использованием реляционного конструктора объектов
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282245"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742954"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Практическое руководство. Настройка наследования с помощью реляционного конструктора объектов
 **Реляционный конструктор объектов** (**Реляционный конструктор**объектов) поддерживает концепцию наследования одной таблицы, так как она часто реализуется в реляционных системах. При однотабличном наследовании имеется единственная таблица базы данных, которая содержит поля как для родительских данных, так и для дочерних. Для реляционных данных столбец дискриминатора содержит значение, которое определяет, какому классу принадлежит каждая запись.
@@ -50,9 +50,9 @@ ms.locfileid: "85282245"
 
 10. Дополнительно можно установить свойство **Наследование по умолчанию**, чтобы обозначить тип в иерархии наследования, который используется при загрузке строк, которые не соответствуют какому-либо определенному коду наследования. Иными словами, если у записи есть значение в столбце дискриминатора, которое не соответствует значению в свойствах **дискриминатора производного класса** или **значения дискриминатора базового класса** , запись загружается в тип, обозначенный как **наследование по умолчанию**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL (реляционный конструктор объектов)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

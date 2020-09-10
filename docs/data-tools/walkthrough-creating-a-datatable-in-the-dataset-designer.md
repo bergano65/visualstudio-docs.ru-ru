@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных
+title: Создание таблицы данных в конструктор наборов данных
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0b10fae4717f30f30fd98cb0ad1b5f5b8da4d35
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586007"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741913"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство. Создание таблицы данных в конструктор наборов данных
 
@@ -81,7 +81,7 @@ ms.locfileid: "75586007"
 
 Чтобы сохранить проект **дататаблевалксраугх** , в меню **файл** выберите **сохранить все**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

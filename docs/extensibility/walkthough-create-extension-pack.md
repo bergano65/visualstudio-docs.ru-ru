@@ -1,5 +1,6 @@
 ---
-title: Создание пакета расширений с помощью шаблона элемента пакета расширений | Документация Майкрософт
+title: Создание пакета расширения
+description: Узнайте, как создать пакет расширений с помощью шаблона элемента пакета расширений.
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697748"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742911"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Пошаговое руководство. Создание пакета расширения
 
@@ -23,7 +24,7 @@ ms.locfileid: "80697748"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Начиная с Visual Studio 2015, пакет SDK для Visual Studio входит в состав программы установки Visual Studio в качестве дополнительного компонента. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Начиная с Visual Studio 2015, пакет SDK для Visual Studio входит в состав программы установки Visual Studio в качестве дополнительного компонента. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в разделе Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 Функция пакета расширений доступна начиная с версии Visual Studio 15,8 Preview 2.
 

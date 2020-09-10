@@ -1,5 +1,5 @@
 ---
-title: Настройка поведения вставки, обновления и удаления классов сущностей
+title: Настройка поведения вставки, обновления и удаления
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585955"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741822"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка поведения вставки, обновления и удаления классов сущностей
 
@@ -189,7 +189,7 @@ ms.locfileid: "75585955"
 
 3. Перетащите все три хранимые процедуры в **конструктор O/R**.
 
-     Сохраненные процедуры добавляются в дерево методов как методы <xref:System.Data.Linq.DataContext>. Дополнительные сведения см. в разделе [методы DataContext (реляционный конструктор R)](../data-tools/datacontext-methods-o-r-designer.md).
+     Сохраненные процедуры добавляются в дерево методов как методы <xref:System.Data.Linq.DataContext>. Дополнительные сведения см. в разделе [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md).
 
 4. Выберите класс сущности **Customer** в **конструкторе объектов O/R**.
 
@@ -229,7 +229,7 @@ ms.locfileid: "75585955"
 
 18. Сопоставьте аргумент метода **Original_CustomerID** свойству класса **CustomerID (Original)**.
 
-19. Нажмите кнопку **ОК**.
+19. Нажмите кнопку **OK**.
 
 > [!NOTE]
 > Хотя это и не является проблемой в этом конкретном пошаговом руководстве, стоит отметить, что LINQ to SQL обрабатывает значения, сформированные базой данных, автоматически для идентификации (автоприращения), ROWGUIDCOL (идентификатор GUID, сформированный базой данных) и столбцов отметок времени во время операций вставки и обновления. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Чтобы получить значения, сформированные базой данных, необходимо вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в параметре `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> одно из следующих значений [: Автосинхронизация. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)или [Автосинхронизация. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
@@ -261,7 +261,7 @@ ms.locfileid: "75585955"
     > [!NOTE]
     > Если в приложении используется SQL Server Express Edition, то в зависимости от свойства **Копировать в выходной каталог** файла базы данных изменения могут не отображаться, когда на шаге 10 нажимается клавиша **F5**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 В зависимости от требований приложения существует несколько шагов, которые может потребоваться выполнить после создания LINQ to SQL классов сущностей. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.
 
@@ -269,9 +269,9 @@ ms.locfileid: "75585955"
 
 - Добавьте запросы LINQ в данные фильтра Дополнительные сведения см. [в разделе Введение в запросы LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext - методы](../data-tools/datacontext-methods-o-r-designer.md)
 - [Инструкции. назначение хранимых процедур для выполнения операций обновления, вставки и удаления](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

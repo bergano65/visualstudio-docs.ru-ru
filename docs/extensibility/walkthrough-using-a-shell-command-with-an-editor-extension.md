@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование команды оболочки с расширением редактора | Документация Майкрософт
+title: Использование команды оболочки с расширением редактора
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e9f7de69cfd969db8ae905ea65bbf868cf2c88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904450"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742034"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Пошаговое руководство. Использование команды оболочки с расширением редактора
 Из VSPackage можно добавить в редактор такие компоненты, как команды меню. В этом пошаговом руководстве показано, как добавить Оформление в текстовое представление в редакторе, вызвав команду меню.
@@ -23,7 +23,7 @@ ms.locfileid: "85904450"
  В этом пошаговом руководстве демонстрируется использование VSPackage вместе с частью компонента Managed Extensibility Framework (MEF). Для регистрации команды меню в оболочке Visual Studio необходимо использовать VSPackage. Для доступа к части компонента MEF можно использовать команду.
 
 ## <a name="prerequisites"></a>Предварительные требования
- Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Начиная с Visual Studio 2015, пакет SDK для Visual Studio не устанавливается из центра загрузки. Он входит в состав программы установки Visual Studio как дополнительный компонент. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
  Создайте пакет VSPackage, который помещает команду меню **Add оформления** в меню **Сервис** .
@@ -691,5 +691,5 @@ ms.locfileid: "85904450"
 
      Фаурскоре...
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Пошаговое руководство. Связывание типа содержимого с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

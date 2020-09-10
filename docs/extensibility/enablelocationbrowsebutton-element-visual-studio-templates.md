@@ -1,5 +1,6 @@
 ---
-title: Элемент Енаблелокатионбровсебуттон (шаблоны Visual Studio) | Документация Майкрософт
+title: Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711990"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742996"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Элемент Енаблелокатионбровсебуттон (шаблоны Visual Studio)
 Указывает, доступна ли кнопка " **Обзор** " в диалоговом окне " **Новый проект** ", чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен новый проект.
@@ -28,7 +29,7 @@ ms.locfileid: "80711990"
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```xml
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>
 ```
 
@@ -52,7 +53,7 @@ ms.locfileid: "80711990"
 
  Текст должен иметь значение `true` или `false` , что указывает, следует ли отображать кнопку " **Обзор** " в диалоговом окне " **Создание проекта** ".
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
  Параметр `EnableLocationBrowseButton` является необязательным элементом. Значение по умолчанию — `true` , которое отображает кнопку « **Обзор** » в диалоговом окне « **Новый проект** ».
 
  В диалоговом окне **Новый проект** в текстовом поле **Расположение** указывается каталог, в котором сохранен новый проект. Кнопка **Обзор** позволяет изменить этот каталог, отображая диалоговое окно **расположение проекта** , которое позволяет легко перейти в другой каталог, доступный на компьютере, а затем выбрать его в качестве каталога, в котором сохранен новый проект.
@@ -60,7 +61,7 @@ ms.locfileid: "80711990"
 ## <a name="example"></a>Пример
  В следующем примере показаны метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>

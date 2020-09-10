@@ -1,5 +1,5 @@
 ---
-title: Сохранение постоянного виртуального IP-адреса для облачной службы Azure
+title: Хранить постоянный виртуальный IP-адрес для облачной службы Azure
 description: Узнайте, как сохранить постоянный виртуальный IP-адрес (VIP) облачной службы Azure.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcc39c4321a6f9a081d2a0479ee60d3e56b8eb04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280854"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89740119"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Сохранение постоянного виртуального IP-адреса для облачной службы Azure
 При обновлении облачной службы, размещенной в Azure, необходимо убедиться в том, что виртуальный IP-адрес (VIP) службы не изменяется. Многие службы управления доменом используют службу доменных имен (DNS) для регистрации доменных имен. Регистрация с помощью DNS возможна, только если виртуальный IP-адрес остается неизменным. Проверить, изменяется ли виртуальный IP-адрес облачной службы при обновлении, можно с помощью **мастера публикации** в инструментах Azure. Дополнительные сведения об управлении доменами DNS для облачных служб см. в статье [Настройка пользовательского доменного имени для облачной службы Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -51,5 +51,5 @@ ms.locfileid: "85280854"
 
     ![Публикация приложения Azure: страница "Сводка"](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 - [Использование мастера публикации приложений Azure в Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)

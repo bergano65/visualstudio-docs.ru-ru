@@ -1,5 +1,5 @@
 ---
-title: '&apos;Новые возможности в API подключаемого модуля системы управления версиями 1,2 | Документация Майкрософт'
+title: '&apos;Новые возможности API подключаемого модуля системы управления версиями 1,2'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a3d81c3a03f4a8dcb8236057e931993f06f6ec
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711759"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741543"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Новые&#39;в API подключаемого модуля системы управления версиями 1,2
 В этом разделе описываются расширенные функции управления исходным кодом в API подключаемого модуля системы управления версиями 1,2. Ниже перечислены новые возможности версии 1,2.
@@ -32,5 +32,5 @@ ms.locfileid: "88711759"
 
 - [Удаление данных системы управления версиями из. Proj и. В файлах SLN](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) объясняется, как в API версии 1,2 для подключаемого модуля системы управления версиями хранятся сведения о проектах и решениях.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

@@ -1,5 +1,5 @@
 ---
-title: Изменить тип возвращаемого значения метода DataContext (O-R Designer)
+title: Изменить тип возвращаемого значения для метода DataContext
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c232e3e4261008fa736377801183d92420ffbf4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40851323efdf3c2cbf0900ae323f3c9c0a1ec17
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282271"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89737037"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Практическое руководство. Изменение типа значений, возвращаемых методом DataContext (реляционный конструктор объектов)
 Тип возвращаемого значения <xref:System.Data.Linq.DataContext> метода (созданного на основе хранимой процедуры или функции) зависит от места удаления хранимой процедуры или функции в **конструкторе O/R**. Если вы сбрасываете элемент прямо в существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возврата создаваемого класса сущностей (если схема данных, возвращенная сохраненной процедурой или функцией совпадает с формой класса сущностей). При перетаскивании элемента в пустую область **конструктора O/R** <xref:System.Data.Linq.DataContext> создается метод, который возвращает автоматически созданный тип. Можно изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext> после его добавления в область методов. Чтобы проверить или изменить тип возврата метода <xref:System.Data.Linq.DataContext>, выберите его и щелкните по свойству **Тип возврата** в окне **Свойства**.
@@ -39,9 +39,9 @@ ms.locfileid: "85282271"
 
 3. Сохраните файл *. dbml* .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Методы DataContext (реляционный конструктор R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Практическое руководство. Создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (реляционный конструктор объектов)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: Строки, используемые в качестве ключей для поиска подключаемого модуля системы управления версиями | Документация Майкрософт
+title: Строки, используемые в качестве ключей для поиска подключаемого модуля системы управления версиями
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 038441f7bcea9fa1dafdd61505d4150ecf28a966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699713"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741784"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Строки, используемые в качестве ключей поиска подключаемого модуля системы управления версиями
 Следующие строки являются ключами для доступа к реестру для поиска сведений о подключаемом модуле системы управления версиями.
@@ -46,7 +46,7 @@ ms.locfileid: "80699713"
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|софтваре\микрософт\саурцесафе|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
 - [Практическое руководство. Установка подключаемого модуля системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Файл MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

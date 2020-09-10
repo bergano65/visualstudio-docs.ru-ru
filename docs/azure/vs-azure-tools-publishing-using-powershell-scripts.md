@@ -1,5 +1,5 @@
 ---
-title: Скрипты PowerShell для публикации в тестовую среду и среду разработки
+title: Публикация в средах разработки и тестирования с помощью PowerShell
 description: Узнайте, как публиковать решения в среды разработки и тестирования с помощью сценариев Windows PowerShell в Visual Studio.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cec8f700e3ba4ce4b08bc57599570e2ef40bef2c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508409"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739972"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Использование скриптов Windows PowerShell для публикации в средах разработки и тестирования
 
@@ -22,7 +22,7 @@ ms.locfileid: "89508409"
 
 С помощью этих сценариев вы можете подготавливать временные пользовательские версии сайта. Эти версии также называют средами разработки и тестирования. Например, на виртуальной машине Azure или в промежуточном слоте веб-сайта можно настроить определенную версию веб-сайта и использовать ее для проведения различных тестов, воспроизведения ошибки, проверки исправления ошибки или исследования предлагаемого изменения. Вы также можете создать специальную среду для демонстраций или презентаций. Создав сценарий публикации проекта, вы можете с его помощью воссоздавать идентичные среды или использовать его в своей сборке веб-приложения для создания отдельной среды тестирования.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Visual Studio 2015 или последующей версии с установленной **рабочей нагрузкой Azure** или Visual Studio 2013 с пакетом Azure SDK, начиная с версии 2.3. Ознакомьтесь со страницей [скачиваемых компонентов Visual Studio](https://visualstudio.microsoft.com/downloads). (Пакет Azure SDK не нужен для создания сценариев для веб-проектов. Он предназначен для веб-проектов, а не веб-ролей облачных служб.)
 * Azure PowerShell, начиная с версии 0.7.4. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/overview).
@@ -347,5 +347,5 @@ return $WebDeployPackage
 | Publish-WebApplication |Создает и развертывает веб-приложения, виртуальные машины, базы данных SQL и учетные записи хранения для веб-проекта Visual Studio. |
 | Test-WebApplication |Эта функция не реализована. В нее можно добавлять команды для тестирования приложения. |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 Дополнительные сведения о сценариях PowerShell см. в статье [Работа со сценариями в Windows PowerShell](/powershell/scripting/overview). Рекомендуем также посетить [центр сценариев](https://azure.microsoft.com/documentation/scripts/) и ознакомиться с другими сценариями Azure PowerShell.

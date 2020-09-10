@@ -1,5 +1,5 @@
 ---
-title: Связи между классами LINQ to SQL (реляционный конструктор R)
+title: Связи между классами LINQ to SQL
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282154"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742945"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Как создать ассоциацию между классами LINQ to SQL (реляционный конструктор R)
 Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных. Ассоциации между классами сущностей можно создавать, используя диалоговое окно **Редактор ассоциаций**.
@@ -26,7 +26,7 @@ ms.locfileid: "85282154"
 ## <a name="association-properties"></a>Свойства ассоциации
 После создания ассоциации при выборе ассоциации в **реляционном конструкторе объектов** имеются некоторые конфигурируемые свойства в окне **Свойства**. (Ассоциация — это линия между связанными классами.) В следующей таблице приведены описания свойств ассоциации.
 
-|Свойство|Описание|
+|Свойство.|Описание|
 |--------------|-----------------|
 |**Кратность**|Контролирует, представляет ли ассоциация отношение "один-ко-многим" или отношение "один-к-одному".|
 |**Дочернее свойство**|Определяет, создавать ли свойство на основе родителя, который является коллекцией, или на основе ссылки на дочерние записи на стороне внешнего ключа ассоциации. Например, в связи между `Customer` и `Order` , если **дочернее свойство** имеет значение **true**, в `Orders` родительском классе создается свойство с именем.|
@@ -46,10 +46,10 @@ ms.locfileid: "85282154"
 
 5. Нажмите кнопку **OK** для создания ассоциации.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Методы DataContext (реляционный конструктор R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Руководство. Представление первичных ключей](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

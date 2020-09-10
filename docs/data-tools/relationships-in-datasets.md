@@ -1,5 +1,5 @@
 ---
-title: Использование DataRelation для создания связей между наборами данных
+title: Создание связей между наборами данных
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281764"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739223"
 ---
 # <a name="create-relationships-between-datasets"></a>Создание связей между наборами данных
 Набор данных, содержащий связанные таблицы данных, использует <xref:System.Data.DataRelation> объекты для представления связи «родители-потомки» между таблицами и для возвращения связанных записей друг от друга. При добавлении связанных таблиц в наборы данных с помощью **мастера настройки источника**или **Конструктор наборов данных**создает и настраивает <xref:System.Data.DataRelation> объект.
@@ -104,6 +104,6 @@ ms.locfileid: "85281764"
 
 2. В меню **данные** выберите команду **Показать связи меток** , чтобы отобразить имя связи. Очистите эту команду, чтобы скрыть имя связи.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
