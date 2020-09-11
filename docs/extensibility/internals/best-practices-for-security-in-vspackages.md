@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709908"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012143"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Рекомендации по обеспечению безопасности в VSPackage
 Чтобы установить [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] на компьютере, необходимо работать в контексте с административными учетными данными. Основной единицей безопасности и развертывания [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] приложения является пакет [VSPackage](../../extensibility/internals/vspackages.md). Пакет VSPackage должен быть зарегистрирован с помощью [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , который также требует учетных данных администратора.
@@ -30,6 +30,6 @@ ms.locfileid: "80709908"
 
  Дополнительные сведения см. [в разделе рекомендации по безопасному кодированию для .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
-## <a name="see-also"></a>См. также раздел
-- [Безопасность надстроек](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [Безопасность DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+## <a name="see-also"></a>См. также
+- [Безопасность надстроек](/previous-versions/1326zbk3(v=vs.140))
+- [Безопасность DDEX](/previous-versions/bb163703(v=vs.140))

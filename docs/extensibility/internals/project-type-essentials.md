@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706382"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012065"
 ---
 # <a name="project-type-essentials"></a>Основные компоненты типа проекта
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] включает несколько типов проектов для таких языков, как [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также позволяет создавать собственные типы проектов.
@@ -52,7 +52,7 @@ ms.locfileid: "80706382"
 
 - Типы проектов — это объекты в пакете VSPackage, реализующие набор интерфейсов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Если вы используете C# для разработки типа проекта, классы проектов платформы управляемых пакетов реализуют необходимые интерфейсы и позволяют наследовать эту реализацию. Дополнительные сведения см. в разделе [использование платформы управляемых пакетов для реализации типа проекта (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).
 
-- Для разработчиков на C++ классы в библиотеке Хиерутил работают аналогичным образом. Дополнительные сведения см. [в разделе не в сборке. Использование классов проектов HierUtil7 для реализации типа проекта (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+- Для разработчиков на C++ классы в библиотеке Хиерутил работают аналогичным образом. Дополнительные сведения см. [в разделе не в сборке. Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100)).
 
 - Типы проектов могут поддерживать данные, отличные от обычных файлов исходного кода, которые создаются в сборке exe или DLL. Например, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] проекты баз данных содержат ссылки на файлы скриптов и запросов, хранящиеся на диске, и добавляют команды для **Обозреватель решений** для выполнения скриптов и запросов к базе данных, но проекты не поддерживают поведение сборки. Дополнительные сведения см. в разделе [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md).
 
@@ -64,5 +64,5 @@ ms.locfileid: "80706382"
 
 - Типы проектов могут поддерживать несколько конфигураций, таких как отладка и выпуск. Пользователи могут изменять различные конфигурации проекта с помощью предоставленных страниц свойств. Дополнительные сведения см. в разделе [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Развертывание типов проектов](../../extensibility/internals/deploying-project-types.md)

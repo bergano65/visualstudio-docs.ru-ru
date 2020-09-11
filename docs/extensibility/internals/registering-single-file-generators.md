@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705810"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012039"
 ---
 # <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
 Чтобы сделать пользовательский инструмент доступным в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , необходимо зарегистрировать его, чтобы он [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] мог создать экземпляр и связать его с определенным типом проекта.
@@ -40,7 +40,7 @@ ms.locfileid: "80705810"
 
    - (по умолчанию)
 
-        Необязательный элемент. Предоставляет понятное описание пользовательского инструмента. Этот параметр является необязательным, но рекомендуется.
+        Необязательный параметр. Предоставляет понятное описание пользовательского инструмента. Этот параметр является необязательным, но рекомендуется.
 
    - CLSID
 
@@ -67,8 +67,8 @@ ms.locfileid: "80705810"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)
 - [Предоставление типов конструкторам визуальных элементов](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [Знакомство с объектом BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Знакомство с объектом BuildManager](/previous-versions/8f9kffa8(v=vs.140))

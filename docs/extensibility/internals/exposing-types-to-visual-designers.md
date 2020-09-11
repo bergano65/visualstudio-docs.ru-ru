@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708439"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012534"
 ---
 # <a name="expose-types-to-visual-designers"></a>Предоставление типов для визуальных конструкторов
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для отображения визуального конструктора необходимо иметь доступ к определениям классов и типов во время разработки. Классы загружаются из предопределенного набора сборок, включающего полный набор зависимостей текущего проекта (ссылки и их зависимости). Также может потребоваться, чтобы визуальные конструкторы могли обращаться к классам и типам, определенным в файлах, созданных настраиваемыми инструментами.
@@ -44,6 +44,6 @@ ms.locfileid: "80708439"
      При компиляции временного PE в компиляторе предоставляется только один исходный файл с данными пользовательского инструмента. Таким образом, Пользовательский инструмент, использующий временный PE, должен создавать выходные файлы, которые могут быть скомпилированы независимо от других файлов в проекте.
 
 ## <a name="see-also"></a>См. также
-- [Общие сведения об объекте BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Общие сведения об объекте BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Реализация генераторов с одним файлом](../../extensibility/internals/implementing-single-file-generators.md)
 - [Регистрация генераторов с одним файлом](../../extensibility/internals/registering-single-file-generators.md)

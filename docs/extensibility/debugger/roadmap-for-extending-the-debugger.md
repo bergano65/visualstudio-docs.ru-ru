@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713135"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011831"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Стратегия расширения отладчика
 Эта документация содержит руководство и справочные сведения по расширению [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] отладчика с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -29,7 +29,7 @@ ms.locfileid: "80713135"
 
 - Создает выходные данные промежуточного языка MSIL, можно выполнять отладку программ с помощью модуля отладки управляемого кода DE, который также интегрирован в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Поэтому требуется только реализовать средство оценки выражений. Для вас предоставляется пример средства оценки выражений. Дополнительные сведения см. в следующих разделах:
 
-   [Вычисление выражения](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
+   [Вычисление выражений](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
    [Вычисление выражений](../../extensibility/debugger/evaluating-expressions.md)
 
@@ -43,7 +43,7 @@ ms.locfileid: "80713135"
 
    [Создание пользовательского модуля отладки](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Учебник. Создание модуля отладки с помощью ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Учебник. Создание модуля отладки с помощью ATL COM](/previous-versions/bb147024(v=vs.90))
 
    [Реализация поставщика порта](../../extensibility/debugger/implementing-a-port-supplier.md)
 

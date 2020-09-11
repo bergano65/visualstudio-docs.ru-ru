@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705861"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012052"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 Пакет VSPackage должен быть зарегистрирован в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , чтобы интегрированная среда разработки (IDE) правильно маршрутизирует свои команды.
@@ -25,7 +25,7 @@ ms.locfileid: "80705861"
 
  Платформа управляемого пакета (MPF) предоставляет эту функцию через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> класс.
 
-- [Справочные ресурсы по формату командной таблицы](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) находятся в неуправляемых библиотеках DLL ВСПОМОГАТЕЛЬных интерфейсов.
+- [Справочные ресурсы по формату командной таблицы](/previous-versions/bb164647(v=vs.100)) находятся в неуправляемых библиотеках DLL ВСПОМОГАТЕЛЬных интерфейсов.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Регистрация пакета VSPackage в обработчике команд
  Пакет VSPackage, выступающий в качестве обработчика для команд на основе ПОЛЬЗОВАТЕЛЬСКОГО интерфейса, требует наличия записи реестра с именем после пакета VSPackage `GUID` . Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса VSPackage и ресурс меню в этом файле. Сама запись реестра находится в папке HKEY_LOCAL_MACHINE \Софтваре\микрософт\висуалстудио \\ *\<Version>* \менус, где *\<Version>* — это версия, например [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 9,0.
@@ -66,6 +66,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Команды и меню, которые используют сборки взаимодействия](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703975"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012117"
 ---
 # <a name="vspackage-setup-scenarios"></a>Сценарии установки VSPackage
 
@@ -74,9 +74,9 @@ ms.locfileid: "80703975"
 
 ![Установщик VS параллельного обновления пакетов VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Дополнительные сведения о развертывании параллельных сборок см. [в разделе Упрощение развертывания и решения Hell библиотек DLL с помощью .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Дополнительные сведения о развертывании параллельных сборок см. [в разделе Упрощение развертывания и решения Hell библиотек DLL с помощью .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Установщик Windows](/windows/desktop/Msi/windows-installer-portal)
 - [Поддержка нескольких версий Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

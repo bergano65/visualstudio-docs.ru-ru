@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b70e0f9091d40ed6b5fc44934606f42ccd84b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713071"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011896"
 ---
 # <a name="sample-implementation-of-locals"></a>Пример реализации локальных переменных
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ ms.locfileid: "80713071"
 
 10. Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) для каждого локального объекта, чтобы получить имя, значение и тип локального компьютера. Эти сведения отображаются в окне **локальные** .
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
  [Реализация жетмесодпроперти](../../extensibility/debugger/implementing-getmethodproperty.md) Описывает реализацию [жетмесодпроперти](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).
 
  [Перечислить локальные переменные](../../extensibility/debugger/enumerating-locals.md) Описывает, как модуль отладки (DE) выполняет вызов для перечисления локальных переменных или аргументов.
@@ -58,7 +58,7 @@ ms.locfileid: "80713071"
 ## <a name="related-sections"></a>Связанные разделы
  [Контекст оценки](../../extensibility/debugger/evaluation-context.md) Предоставляет аргументы, которые передаются, когда метод DE вызывает средство оценки выражений (EE).
 
- [Пример мицее](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f) Демонстрируется один подход к реализации для создания средства оценки выражений для языка Мик.
+ [Пример мицее](/previous-versions/) Демонстрируется один подход к реализации для создания средства оценки выражений для языка Мик.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)

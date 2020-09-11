@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739974"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011792"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -97,7 +97,7 @@ Visual Studio 2017 предоставляет более [Быстрый и об
 
 ### <a name="global-com-registration"></a>Глобальная регистрация COM
 
-* Ранее Visual Studio установила множество разделов реестра в HKEY_CLASSES_ROOT и HKEY_LOCAL_MACHINE Hive для поддержки собственной регистрации COM. Чтобы устранить это воздействие, Visual Studio теперь использует [активацию без регистрации для COM-компонентов](https://msdn.microsoft.com/library/ms973913.aspx).
+* Ранее Visual Studio установила множество разделов реестра в HKEY_CLASSES_ROOT и HKEY_LOCAL_MACHINE Hive для поддержки собственной регистрации COM. Чтобы устранить это воздействие, Visual Studio теперь использует [активацию без регистрации для COM-компонентов](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
 * В результате большинство файлов TLB/OLB/DLL в папке% ProgramFiles (x86)% \ Common Files\Microsoft Шаред\мсенв больше не устанавливаются Visual Studio по умолчанию. Теперь эти файлы устанавливаются в папке [INSTALLDIR] с соответствующими манифестами COM без регистрации, используемыми ведущим процессом Visual Studio.
 * В результате внешний код, который использует глобальную регистрацию COM для COM-интерфейсов Visual Studio, больше не будет находить эти регистрации. Код, выполняющийся в процессе Visual Studio, не будет видеть разницу.
 

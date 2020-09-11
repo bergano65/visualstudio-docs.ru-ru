@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3cd21242bd4b5a3bdb0da9691d6efb32288d3444
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742873"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012286"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Руководство. Миграция проектов расширяемости в Visual Studio 2017
 
@@ -180,7 +180,7 @@ WPF | Основные средства рабочей нагрузки упра
 
 ## <a name="find-component-ids"></a>Поиск идентификаторов компонентов
 
-Список компонентов, отсортированных по продукту Visual Studio, находится в [рабочей нагрузке Visual studio 2017 и идентификаторах компонентов](/visualstudio/install/workload-and-component-ids?view=vs-2019). Используйте эти идентификаторы компонентов в манифесте для своих идентификаторов.
+Список компонентов, отсортированных по продукту Visual Studio, находится в [рабочей нагрузке Visual studio 2017 и идентификаторах компонентов](../install/workload-and-component-ids.md?view=vs-2019). Используйте эти идентификаторы компонентов в манифесте для своих идентификаторов.
 
 Если вы не уверены, какой компонент содержит конкретный двоичный файл, скачайте [электронную таблицу сопоставления > компонентов](https://aka.ms/vs2017componentid-binaries).
 

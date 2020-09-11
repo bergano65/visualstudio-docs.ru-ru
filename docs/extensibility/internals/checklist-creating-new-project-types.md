@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9372762f713b6a5ec78a92eeb96e8a616101b5bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183396"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011922"
 ---
 # <a name="checklist-create-new-project-types"></a>Контрольный список: создание новых типов проектов
 Для создания нового типа проекта необходимо выполнить несколько задач. В следующем контрольном списке приведено руководство по этим задачам.
@@ -33,7 +33,7 @@ ms.locfileid: "84183396"
 
     - Фабрика проектов для управления созданием новых проектов и открытия существующих проектов. Дополнительные сведения см. в статье [Создание экземпляров проектов с помощью фабрик проекта](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Иерархия проектов и обработка команд. Дополнительные сведения см. в статьях [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [элементов модели проекта](../../extensibility/internals/elements-of-a-project-model.md), [основных компонентов модели проекта](../../extensibility/internals/project-model-core-components.md), а [команды MenuCommand и олеменукоммандс](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+    - Иерархия проектов и обработка команд. Дополнительные сведения см. в статьях [Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100)), [элементов модели проекта](../../extensibility/internals/elements-of-a-project-model.md), [основных компонентов модели проекта](../../extensibility/internals/project-model-core-components.md), а [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
     - Управление элементами проекта, включая добавление проекта в диалоговое окно **Новый проект** . Дополнительные сведения см. в статьях [Добавление шаблонов проектов и элементов проектов](../../extensibility/internals/adding-project-and-project-item-templates.md) и [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "84183396"
 
 8. Создайте файл установщика Microsoft (*MSI*) для установки пакетов VSPackage. Дополнительные сведения см. в статьях [Установка пакетов VSPackage с установщик Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [регистрация типа проекта](../../extensibility/internals/registering-a-project-type.md)и [пакетов VSPackage](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Когда следует создавать типы проектов](../../extensibility/internals/when-to-create-project-types.md)
 - [Создание типов проектов](../../extensibility/internals/creating-project-types.md)

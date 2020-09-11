@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 861250dac25288f353cbd5c57f510bf67dadce70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703433"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012013"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 Создание нового типа проекта предоставляет базу для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для пользователей. Однако создание нового типа проекта не является обязательным для всех [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] настроек. Следующие рекомендации помогут определить, требуется ли для вашего сценария новый тип проекта.
@@ -50,14 +50,14 @@ ms.locfileid: "80703433"
 |Задача|Описание|
 |----------|-----------------|
 |Обработка команд|Любой пакет VSPackage может выполнять команды.|
-|Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [окна документов и редакторы](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
+|Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [окна документов и редакторы](/previous-versions/bb165691(v=vs.100)).|
 |Владелец Windows|Вы можете создавать окна инструментов и документов, не добавляя новый тип проекта.|
 |Предоставление свойств в окно свойств|Все объекты могут предоставлять свойства.|
 
 ## <a name="create-a-project-subtype"></a>Создание подтипа проекта
  Подтипы проекта можно использовать для расширения типа управляемого проекта без создания нового типа проекта. Подтипы проектов используют агрегирование COM для расширения управляемых проектов, написанных на Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . С помощью агрегирования COM можно повторно использовать большую часть реализации управляемой системы проектов и по-прежнему настраивать для конкретного сценария посредством агрегирования и использования вспомогательных интерфейсов. Дополнительные сведения о подтипах проектов см. в разделе [Project подтипы](../../extensibility/internals/project-subtypes.md).
 
-## <a name="see-also"></a>См. также раздел
-- [Окна документов и редакторы](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+## <a name="see-also"></a>См. также
+- [Окна документов и редакторы](/previous-versions/bb165691(v=vs.100))
 - [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

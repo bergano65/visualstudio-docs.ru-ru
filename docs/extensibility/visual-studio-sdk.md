@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173569"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012364"
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
 Пакет SDK для Visual Studio помогает расширить возможности Visual Studio или интегрировать новые функции в Visual Studio. Вы можете распространять расширения для других пользователей, а также для Visual Studio Marketplace. Ниже перечислены некоторые из способов расширения Visual Studio:
@@ -41,7 +41,7 @@ ms.locfileid: "84173569"
   Если вы ранее не записали расширение Visual Studio, то получите дополнительные сведения об этих функциях и [Начните разработку расширений Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="install-the-visual-studio-sdk"></a>Установка пакета SDK для Visual Studio
- Пакет SDK для Visual Studio является дополнительным компонентом в программе установки Visual Studio. Кроме того, пакет SDK для VS можно установить позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Пакет SDK для Visual Studio является дополнительным компонентом в программе установки Visual Studio. Пакет SDK для VS можно установить и позже. Дополнительные сведения см. [в статье Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="whats-new-in-the-visual-studio-sdk"></a>Новые возможности пакета SDK для Visual Studio
  В пакете SDK для Visual Studio есть некоторые новые функции, такие как предупреждение о синхронно загружаемых расширениях и формат VSIX v3, а также критические изменения, которые могут потребовать обновления расширения. Дополнительные сведения см. в статьях [новые возможности пакета SDK для Visual studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md) и [новые возможности пакета SDK для Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
@@ -65,7 +65,7 @@ ms.locfileid: "84173569"
 ## <a name="other-visual-studio-sdk-resources"></a>Другие ресурсы пакета SDK для Visual Studio
  Если у вас есть вопросы о VSSDK или хотите поделиться опытом разработки расширений, вы можете использовать [форум по расширению Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) или [екстендвс gitter чатрум](https://gitter.im/Microsoft/extendvs).
 
- Дополнительные сведения см. в [блоге Аркана по VSX](https://blogs.msdn.microsoft.com/vsx/) и в нескольких блогах, написанных специалистами MVP корпорации Майкрософт:
+ Дополнительные сведения см. в [блоге Аркана по VSX](/archive/blogs/vsx/) и в нескольких блогах, написанных специалистами MVP корпорации Майкрософт:
 
 - [Избранные расширения Visual Studio](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -77,7 +77,7 @@ ms.locfileid: "84173569"
 
 - [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Руководство. Миграция проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [Часто задаваемые вопросы: преобразование надстроек в расширения VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
 - [Добавление команд в панели инструментов](../extensibility/adding-commands-to-toolbars.md)

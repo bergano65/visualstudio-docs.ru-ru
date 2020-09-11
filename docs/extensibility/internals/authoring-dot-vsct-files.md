@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173607"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012156"
 ---
 # <a name="author-vsct-files"></a>Файлы Author. vsct
 В этом документе показано, как создать файл *vsct* для добавления пунктов меню, панелей инструментов и других элементов пользовательского интерфейса в интегрированную среду разработки (IDE) Visual Studio. Используйте эти шаги при добавлении элементов пользовательского интерфейса в пакет Visual Studio (VSPackage), в котором еще нет *vsct* -файла.
@@ -108,7 +108,7 @@ ms.locfileid: "84173607"
        > [!NOTE]
        > Кнопки панели инструментов должны иметь значки.
 
-   Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   Дополнительные сведения см. в разделе [команды MenuCommand и олеменукоммандс](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 4. Если какой-либо из команд требует значков, добавьте в элемент элемент [Bitmaps](../../extensibility/bitmaps-element.md) `Commands` . Затем для каждого значка добавьте элемент [Bitmap](../../extensibility/bitmap-element.md) к `Bitmaps` элементу. Здесь указывается расположение ресурса точечного рисунка. Дополнительные сведения см. [в разделе Добавление значков в команды меню](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ ms.locfileid: "84173607"
 
    - Контроллер меню. контроллер меню — это кнопка со стрелкой рядом с ней. При нажатии стрелки открывается список. Чтобы добавить контроллер меню в пользовательский интерфейс, создайте `Menu` элемент и присвойте его `type` атрибуту значение `MenuController` или `MenuControllerLatched` , в зависимости от желаемого поведения. Чтобы заполнить контроллер меню, установите его в качестве родительского элемента для `Group` элемента. Контроллер меню отобразит все дочерние элементы этой группы в раскрывающемся списке.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Расширение меню и команд](../../extensibility/extending-menus-and-commands.md)
 - [Файлы таблицы команд Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Справочник по XML-схеме VSCT](../../extensibility/vsct-xml-schema-reference.md)

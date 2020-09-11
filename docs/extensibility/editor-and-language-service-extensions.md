@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e37165dc5fe9ac010545304218e807d923b424b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71a38d6718c22419a0a61ffbab4fe2bf6fe6c552
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712024"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012442"
 ---
 # <a name="editor-and-language-service-extensions"></a>Расширения редактора и языковой службы
 Большинство функций редактора кода Visual Studio можно расширить. Редактор основан на Windows Presentation Foundation (WPF) и написан в управляемом коде. Хотя этот проект отличается от дизайна в предыдущих версиях Visual Studio, он предоставляет большинство функций. Чтобы расширить редактор, используйте Managed Extensibility Framework (MEF).
@@ -28,7 +28,7 @@ ms.locfileid: "80712024"
 |-----------|-----------------|
 |[Создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Общие сведения об использовании шаблонов элементов редактора.|
 |[Расширение редактора и языковых служб](../extensibility/extending-the-editor-and-language-services.md)|Ссылки на документы со сведениями о проектировании и функциях базового редактора и о том, как его расширить.|
-|[Устаревшие интерфейсы в редакторе](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)|Ссылки на документы, объясняющие, как получить доступ к основному редактору из существующего кода.|
+|[Устаревшие интерфейсы в редакторе](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)|Ссылки на документы, объясняющие, как получить доступ к основному редактору из существующего кода.|
 |[Создание пользовательских редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)|Ссылки на документы, в которых объясняется, как создавать пользовательские редакторы.|
 |[Расширяемость языковой службы прежних версий](../extensibility/internals/legacy-language-service-extensibility.md)|Ссылки на документы, в которых описывается интеграция языков программирования в Visual Studio.|
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Вводит Managed Extensibility Framework (MEF).|

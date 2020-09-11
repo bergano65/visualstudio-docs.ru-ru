@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05dec8fbef40143f31f2c0ac484824717ea2e32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703923"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012130"
 ---
 # <a name="vspackage-registration"></a>Регистрация VSPackage
 Пакеты VSPackage должны [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] быть извещены о том, что они установлены и должны быть загружены. Этот процесс выполняется путем записи сведений в реестр. Это типичное задание установщика.
@@ -55,6 +55,6 @@ ms.locfileid: "80703923"
 
 - Коду с собственной регистрацией может быть отказано в доступе к сетевым ресурсам, например библиотекам типов, если компонент указан как Run-from-Source и перечислен в таблице Селфрег. Это может привести к сбою установки компонента во время административной установки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Установщик Windows](/windows/desktop/Msi/windows-installer-portal)
-- [Регистрация управляемого пакета](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [Регистрация управляемого пакета](/previous-versions/bb166783(v=vs.100))

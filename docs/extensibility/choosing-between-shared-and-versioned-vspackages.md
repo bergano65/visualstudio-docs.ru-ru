@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739887"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011935"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Выбор между общими и версиями пакетов VSPackage
 Разные версии Visual Studio могут сосуществовать на одном компьютере. Пакеты VSPackage могут поддерживать любой набор [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версий.
@@ -35,7 +35,7 @@ ms.locfileid: "80739887"
 
   - Заполните пакет VSPackage для адаптации к версии, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в которой он выполняется. Затем, если происходит сбой запросов к более новым службам, пакет VSPackage может предлагать другие службы, которые поддерживаются в более ранних версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Зарегистрируйте пакет VSPackage соответствующим образом. Дополнительные сведения см. в статье [Регистрация VSPackage](../extensibility/internals/vspackage-registration.md) и [управляемая регистрация VSPackage](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Зарегистрируйте пакет VSPackage соответствующим образом. Дополнительные сведения см. в статье [Регистрация VSPackage](../extensibility/internals/vspackage-registration.md) и [управляемая регистрация VSPackage](/previous-versions/bb166783(v=vs.100)).
 
 - Зарегистрируйте расширения файлов соответствующим образом. Дополнительные сведения см. в разделе [Регистрация расширений имен файлов для параллельных развертываний](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
@@ -61,6 +61,6 @@ ms.locfileid: "80739887"
 
   Помимо планирования двоичной совместимости для двоичных файлов VSPackage, следует также рассмотреть форматы файлов решения и проекта. Если пакет VSPackage создает новый тип проекта, необходимо решить, может ли он работать только в одной версии или в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Дополнительные сведения см. в разделе [Обновление пользовательских проектов](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Установка пакетов VSPackage с помощью установщик Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Управление компонентами](../extensibility/internals/component-management.md)

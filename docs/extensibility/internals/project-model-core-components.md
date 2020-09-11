@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f65973f0f3edc1dd6264c32d165503dca78681
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706542"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012416"
 ---
 # <a name="project-model-core-components"></a>Основные компоненты модели проекта
 В следующих таблицах расширена модель проекта. В таблицах представлены краткие описания интерфейсов и служб, определенных в модели, а также интерфейсы и службы, связанные с определенными объектами. Кроме того, в таблицах подробно описываются другие интерфейсы, которые являются необязательными при создании и обслуживании проекта в зависимости от требований конкретного типа проекта.
@@ -37,7 +37,7 @@ ms.locfileid: "80706542"
 
 ### <a name="project-objects"></a>Объекты проекта
 
-|Интерфейсы|Комментарии|
+|интерфейсов,|Комментарии|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|Управляет добавлением и удалением элементов проекта, открывает редакторы и поддерживает сопоставление между каждым моникером документа и `VSITEMID` . Наследует от `IVsProject` и `IVsProject2` .|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|Управление навигацией и отображением свойств и предоставлением событий.|
@@ -57,7 +57,7 @@ ms.locfileid: "80706542"
 
 ### <a name="configuration-object"></a>Объект конфигурации
 
-|Интерфейсы|Комментарии|
+|интерфейсов,|Комментарии|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|Предоставляет сведения о конфигурации.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|Позволяет проектам управлять сведениями о конфигурации.|
@@ -66,13 +66,13 @@ ms.locfileid: "80706542"
 
 ### <a name="configuration-builder-object"></a>Объект построителя конфигурации
 
-|Интерфейсы|Комментарии|
+|интерфейсов,|Комментарии|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|Управляет операцией построения конфигурации проекта.|
 
 ### <a name="additional-project-objects"></a>Дополнительные объекты проекта
 
-|Интерфейсы|Комментарии|
+|интерфейсов,|Комментарии|
 |----------------|--------------|
 |`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|Отображает свойства элемента в окне **Свойства** .|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|Отображает выходные данные для развертывания.|
@@ -99,9 +99,9 @@ ms.locfileid: "80706542"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Используется для реализации модели автоматизации. В модели проекта будет возвращен объект свойств, позволяющий создать экземпляр этого объекта.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Используется для реализации событий буфера обмена в объекте проекта в иерархии. `SVsUIHierWinClipboardHelper` позволяет правильно управлять операциями вырезания, копирования и вставки.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Не в сборке. Использование классов проектов HierUtil7 для реализации типа проекта (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Не в сборке. Использование классов проектов HierUtil7 для реализации типа проекта (C++)](/previous-versions/bb166212(v=vs.100))
 - [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)

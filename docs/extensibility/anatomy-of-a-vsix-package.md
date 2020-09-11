@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52f87426b9f06ad40d77c2cc9e7be1627d2c82d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250830"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012338"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Анатомия пакета VSIX
 Пакет VSIX — это *VSIX* -файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными, которые Visual Studio использует для классификации и установки расширений. Эти метаданные содержатся в манифесте VSIX и файле *[Content_Types]. XML* . Пакет VSIX может также содержать один или несколько файлов *Extension. всикслангпакк* для предоставления локализованного текста программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.
@@ -28,7 +28,7 @@ ms.locfileid: "88250830"
 > Имена файлов, включенных в пакеты VSIX, не должны содержать пробелы, а также символы, зарезервированные в универсальных идентификаторах ресурсов (URI), как определено в разделе [ \[ RFC2396 \] ](https://www.rfc-editor.org/rfc/rfc2396.txt).
 
 ## <a name="the-vsix-manifest"></a>Манифест VSIX
- Манифест VSIX содержит сведения о устанавливаемом расширении и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме расширений VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Пример манифеста VSIX см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).
+ Манифест VSIX содержит сведения о устанавливаемом расширении и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме расширений VSIX 1,0](/previous-versions/dd393700(v=vs.110)). Пример манифеста VSIX см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](/previous-versions/dd393754(v=vs.110)).
 
  Манифест VSIX должен иметь имя, `extension.vsixmanifest` если он включен в файл ^. VSIX *.
 
@@ -52,9 +52,9 @@ ms.locfileid: "88250830"
 ## <a name="installation-location"></a>Расположение установки
  Во время установки **расширения и обновления** просматривают содержимое пакета VSIX в папке в разделе *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.
 
- По умолчанию установка применяется только к текущему пользователю, так как *% LocalAppData%* является каталогом конкретного пользователя. Однако если задать для элемента [ALLUSERS](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) манифеста значение `True` , расширение будет установлено в <em>.. \\ </em> Висуалстудиоинсталлатионфолдер<em>\Common7\IDE\Extensions</em> и будет доступен всем пользователям компьютера.
+ По умолчанию установка применяется только к текущему пользователю, так как *% LocalAppData%* является каталогом конкретного пользователя. Однако если задать для элемента [ALLUSERS](/previous-versions/ee191547(v=vs.110)) манифеста значение `True` , расширение будет установлено в <em>.. \\ </em> Висуалстудиоинсталлатионфолдер<em>\Common7\IDE\Extensions</em> и будет доступен всем пользователям компьютера.
 
 ## <a name="content_typesxml"></a>[Content_Types]. XML
  Файл *[Content_Types]. XML* определяет типы файлов в развернутом *VSIX* -файле. Visual Studio использует этот файл во время установки пакета, но не устанавливает сам файл. Дополнительные сведения об этом файле см. [в разделе Структура файла [Content_types]. XML](the-structure-of-the-content-types-dot-xml-file.md).
 
- Для стандарта Open Packaging Conventions (OPC) требуется файл *[Content_Types]. XML* . Дополнительные сведения о OPC см. в статье [OPC: новый стандарт для упаковки данных](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) на веб-сайте MSDN.
+ Для стандарта Open Packaging Conventions (OPC) требуется файл *[Content_Types]. XML* . Дополнительные сведения о OPC см. в статье [OPC: новый стандарт для упаковки данных](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) на веб-сайте MSDN.

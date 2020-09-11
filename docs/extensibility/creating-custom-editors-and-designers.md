@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903740"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012273"
 ---
 # <a name="create-custom-editors-and-designers"></a>Создание пользовательских редакторов и конструкторов
 
@@ -59,7 +59,7 @@ ms.locfileid: "85903740"
 
 - Нужен ли редактор для размещения элементов управления ActiveX?
 
-   Если в редакторе размещены элементы управления ActiveX, реализуйте редактор активации на месте, как описано в этой [активации](/visualstudio/misc/in-place-activation?view=vs-2015). Если на нем не размещены элементы управления ActiveX, используйте упрощенный редактор внедрения или настройте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Редактор по умолчанию.
+   Если в редакторе размещены элементы управления ActiveX, реализуйте редактор активации на месте, как описано в этой [активации](../vs-2015/misc/in-place-activation.md?view=vs-2015). Если на нем не размещены элементы управления ActiveX, используйте упрощенный редактор внедрения или настройте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Редактор по умолчанию.
 
 - Будет ли редактор поддерживать несколько представлений? Если вы хотите, чтобы представления редактора были видимыми одновременно с редактором по умолчанию, необходимо поддерживать несколько представлений.
 
@@ -93,7 +93,7 @@ ms.locfileid: "85903740"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[Устаревшие интерфейсы в редакторе](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+[Устаревшие интерфейсы в редакторе](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
 Объясняется, как получить доступ к основному редактору с помощью устаревшего API.
 
 [Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)\
@@ -102,6 +102,6 @@ ms.locfileid: "85903740"
 [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
 Объясняет, как создавать элементы пользовательского интерфейса, соответствующие остальным элементам [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

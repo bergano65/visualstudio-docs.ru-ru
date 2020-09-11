@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699025"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012521"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Структура файла [типы_содержимого].xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types]. XML для установки пакета, но не устанавливает сам файл.
 
 > [!NOTE]
-> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx) на веб-сайте MSDN.
+> Хотя этот раздел применим только к файлам [Content_Type]. XML, которые используются в пакетах VSIX, тип файла [Content_Types]. XML является частью стандарта *Open Packaging Conventions (OPC)* . Дополнительные сведения см. в статье [OPC: новый стандарт для упаковки данных](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) на веб-сайте MSDN.
 
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы
  В следующих разделах описывается корневой элемент, его атрибуты и дочерние элементы.
@@ -101,5 +101,5 @@ ms.locfileid: "80699025"
 
 ## <a name="see-also"></a>См. также
 - [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: новый стандарт для упаковки данных](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110))
+- [OPC: новый стандарт для упаковки данных](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)
