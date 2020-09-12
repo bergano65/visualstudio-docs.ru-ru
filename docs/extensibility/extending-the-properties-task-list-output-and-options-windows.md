@@ -1,6 +1,7 @@
 ---
 title: Расширение свойств, список задач, выходных данных, окон параметров
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743344"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038482"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение свойств, список задач, вывода и параметров
 Вы можете получить доступ к любому окну инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашем окне инструментов в новую страницу **параметров** и новый параметр на странице **свойств** , а также как выполнять запись в окна **список задач** и **вывода** .

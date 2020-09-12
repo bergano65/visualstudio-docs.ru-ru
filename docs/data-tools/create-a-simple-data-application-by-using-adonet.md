@@ -1,5 +1,6 @@
 ---
 title: Создание простого приложения для работы с данными с помощью ADO.NET
+ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586878"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037436"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание простого приложения для работы с данными с помощью ADO.NET
 
@@ -233,6 +234,6 @@ ms.locfileid: "75586878"
 
 Нажмите клавишу **F5** для сборки и тестирования приложения после написания кода для каждого обработчика события нажатия кнопки и общего кода программы.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

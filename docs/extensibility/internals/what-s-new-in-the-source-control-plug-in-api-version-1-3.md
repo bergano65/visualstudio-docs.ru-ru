@@ -1,5 +1,6 @@
 ---
 title: '&apos;Новые возможности API подключаемого модуля системы управления версиями 1,3'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb580d018bbb858cd0214970bdba3d4ab4f391c
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741537"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037612"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Новые&#39;в API подключаемого модуля системы управления версиями 1,3
 В API-интерфейсе версии 1,3 для подключаемого модуля системы управления версиями представлены следующие новые функции, обеспечивающие более расширенный контроль.
@@ -24,7 +25,7 @@ ms.locfileid: "89741537"
 ## <a name="changes"></a>Изменения
  Следующие функции являются новыми для подключаемого модуля управления версиями для API версии 1,3:
 
-|Функция|Обзор|
+|Функция|Overview|
 |--------------|--------------|
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Позволяет сообщать о дополнительных битах возможностей|
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Позволяет проанализировать файлы, имеющие более новые версии в базе данных системы управления версиями, чем на локальном диске.|
@@ -34,6 +35,6 @@ ms.locfileid: "89741537"
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Выполняет неавтоматический "получение" указанных файлов (пользовательский интерфейс не отображается)|
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Разрешает доступ к параметрам, относящимся к пользователю|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [Новые возможности в API версии 1.2 подключаемого модуля системы управления версиями](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

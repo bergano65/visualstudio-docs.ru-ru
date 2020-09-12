@@ -1,5 +1,6 @@
 ---
 title: Связи между классами LINQ to SQL
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5c8872a7dc18829ca9a0b4328c58498352385ce6
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742945"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037072"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Как создать ассоциацию между классами LINQ to SQL (реляционный конструктор R)
 Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных. Ассоциации между классами сущностей можно создавать, используя диалоговое окно **Редактор ассоциаций**.
@@ -26,7 +27,7 @@ ms.locfileid: "89742945"
 ## <a name="association-properties"></a>Свойства ассоциации
 После создания ассоциации при выборе ассоциации в **реляционном конструкторе объектов** имеются некоторые конфигурируемые свойства в окне **Свойства**. (Ассоциация — это линия между связанными классами.) В следующей таблице приведены описания свойств ассоциации.
 
-|Свойство.|Описание|
+|Свойство|Описание|
 |--------------|-----------------|
 |**Кратность**|Контролирует, представляет ли ассоциация отношение "один-ко-многим" или отношение "один-к-одному".|
 |**Дочернее свойство**|Определяет, создавать ли свойство на основе родителя, который является коллекцией, или на основе ссылки на дочерние записи на стороне внешнего ключа ассоциации. Например, в связи между `Customer` и `Order` , если **дочернее свойство** имеет значение **true**, в `Orders` родительском классе создается свойство с именем.|
@@ -46,7 +47,7 @@ ms.locfileid: "89742945"
 
 5. Нажмите кнопку **OK** для создания ассоциации.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Пошаговое руководство. Создание классов LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

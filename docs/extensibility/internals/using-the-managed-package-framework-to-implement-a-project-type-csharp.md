@@ -1,5 +1,6 @@
 ---
 title: Использование платформы управляемых пакетов для типа проекта (C#)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 496a2528ae70d06696ef25b1adc6255622be3b2f
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741358"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038651"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Использование платформы управляемых пакетов для реализации типа проекта (C#)
 Платформа управляемых пакетов (MPF) предоставляет классы C#, которые можно использовать или наследовать от, чтобы реализовать собственные типы проектов. В MPF реализовано множество интерфейсов, которые Visual Studio предполагает предоставить для предоставления типа проекта, и вы можете сосредоточиться на реализации конкретных типов проектов.

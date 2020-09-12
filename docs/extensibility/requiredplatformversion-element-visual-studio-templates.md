@@ -1,6 +1,7 @@
 ---
 title: RequiredPlatformVersion - элемент (шаблоны Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a3873a8107c60802edd07b567d65205a37dc213
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 811cf013c7337e032f9ee5a37f9bc38329dff240
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741672"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037742"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Элемент Рекуиредплатформверсион (шаблоны Visual Studio)
 
@@ -55,7 +56,7 @@ ms.locfileid: "89741672"
 
  Текстовое значение является обязательным.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
  Этот текст указывает минимальную версию операционной системы, требуемую для шаблона.
 
@@ -76,7 +77,7 @@ ms.locfileid: "89741672"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Элемент Таржетплатформнаме (шаблоны Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

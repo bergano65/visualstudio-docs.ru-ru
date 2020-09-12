@@ -1,5 +1,6 @@
 ---
 title: Отключить предупреждения для подключаемых модулей системы управления версиями
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cf57aa86608cca96924faa2caeb9eec7fbdc0e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 406d063bd2df6dd1d831c3a8220d8d513596a79a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742777"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037189"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Пошаговое руководство. Отключение предупреждений о совместимости для подключаемых модулей системы управления версиями
 
@@ -42,6 +43,6 @@ ms.locfileid: "89742777"
 
      Рекомендуется поддерживать повторный вход ( `SCC_CAP_REENTRANT` возможность); это приведет к удалению этого предупреждения. Однако если такая поддержка невозможна, можно установить эти записи реестра.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Флаги возможностей](../extensibility/capability-flags.md)

@@ -1,6 +1,7 @@
 ---
 title: Добавление, обновление или удаление ссылки на службу данных WCF
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c09b2d487e58e6da2b4aaf62179784d96bdfe783
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: d9a05924bd7c790d2a1cc9ffd96d66eb905acb39
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741386"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037319"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
 
@@ -156,6 +157,6 @@ EDM в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] некот�
     > [!NOTE]
     > Любой код, ссылающийся на ссылку на службу, необходимо удалить вручную.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

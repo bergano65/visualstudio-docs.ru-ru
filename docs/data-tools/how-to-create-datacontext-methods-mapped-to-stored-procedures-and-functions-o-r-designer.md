@@ -1,5 +1,6 @@
 ---
 title: Сопоставьте методы DataContext с sprocs и функциями
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ea455e6cc29d17f9050e54dd2f8d11033320ac
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: e6926631cfd9d04992d92553a346348ea18af847
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742908"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038339"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Практическое руководство. Создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (реляционный конструктор объектов)
 
@@ -50,7 +51,7 @@ ms.locfileid: "89742908"
 > [!NOTE]
 > Дополнительные сведения об изменении типа возвращаемого значения существующих <xref:System.Data.Linq.DataContext> методы, см. в разделе [как: Изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Методы DataContext (реляционный конструктор R)](../data-tools/datacontext-methods-o-r-designer.md)

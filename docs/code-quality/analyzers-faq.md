@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599619"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037254"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода: вопросы и ответы
 
@@ -61,7 +61,7 @@ ms.locfileid: "89599619"
 
 **Вопрос**. в чем разница между устаревшим анализом и анализом кода на основе .NET Compiler Platform?
 
-Ответ **. анализ кода на основе**.NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в статье вопросы и ответы по [анализу на основе .NET Compiler Platform сравнению с устаревшим анализом](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) и [FxCop Analyzer](fxcop-analyzers-faq.md).
+Ответ **. анализ кода на основе**.NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в разделе [анализ на основе .NET Compiler Platform и анализ прежних версий](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
 
 ## <a name="treat-warnings-as-errors"></a>Рассматривать предупреждения как ошибки
 
