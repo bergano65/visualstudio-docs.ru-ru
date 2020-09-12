@@ -1,20 +1,20 @@
 ---
 title: Перенос и публикация веб-приложения в облачной службе
 description: Узнайте, как перенести и опубликовать веб-приложение в облачную службу Azure путем использования Visual Studio.
+ms.custom: vs-azure
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 06b283e7382fc135e3cd327db0200622de4f5228
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739987"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036539"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Как перенести веб-приложение в облачную службу Azure из Visual Studio и опубликовать его.
 
@@ -121,7 +121,7 @@ ms.locfileid: "89739987"
 | WCF | Приложение службы рабочего процесса WCF |
 | Рабочий процесс | Приложение службы рабочего процесса WCF |
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Подготовка к публикации или развертыванию приложения Azure из Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
 - [Настройка именованных учетных данных для проверки подлинности](vs-azure-tools-setting-up-named-authentication-credentials.md)

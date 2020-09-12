@@ -1,6 +1,7 @@
 ---
 title: Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742996"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036656"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Элемент Енаблелокатионбровсебуттон (шаблоны Visual Studio)
 Указывает, доступна ли кнопка " **Обзор** " в диалоговом окне " **Новый проект** ", чтобы пользователи могли легко изменять каталог по умолчанию, в котором сохранен новый проект.
@@ -53,7 +54,7 @@ ms.locfileid: "89742996"
 
  Текст должен иметь значение `true` или `false` , что указывает, следует ли отображать кнопку " **Обзор** " в диалоговом окне " **Создание проекта** ".
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
  Параметр `EnableLocationBrowseButton` является необязательным элементом. Значение по умолчанию — `true` , которое отображает кнопку « **Обзор** » в диалоговом окне « **Новый проект** ».
 
  В диалоговом окне **Новый проект** в текстовом поле **Расположение** указывается каталог, в котором сохранен новый проект. Кнопка **Обзор** позволяет изменить этот каталог, отображая диалоговое окно **расположение проекта** , которое позволяет легко перейти в другой каталог, доступный на компьютере, а затем выбрать его в качестве каталога, в котором сохранен новый проект.

@@ -1,6 +1,7 @@
 ---
 title: Отсутствует свойство соединения
 description: Свойство подключения в файле параметров приложения отсутствует или неверно
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78732eded3936a31099c871120406fff3929880c
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 9bd48b23273fe21031c25d7fea3b4208b29870ab
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89737017"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036253"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Свойство подключения в файле параметров приложения отсутствует или неверно
 
@@ -24,6 +25,6 @@ ms.locfileid: "89737017"
 
 Чтобы ответить на это сообщение, нажмите кнопку **ОК**. Сведения о соединении, содержащиеся в файле *. dbml* , добавляются в параметры приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инструменты LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

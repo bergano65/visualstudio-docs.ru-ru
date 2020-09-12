@@ -1,6 +1,7 @@
 ---
 title: Элемент LocationFieldMRUPrefix (шаблоны Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af2c295fa1a69d7815d117a99506a91f08c29aae
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741347"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034056"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Элемент Локатионфиелдмрупрефикс (шаблоны Visual Studio)
 
@@ -50,7 +51,7 @@ ms.locfileid: "89741347"
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
  Этот элемент следует использовать только для шаблонов, созданных с помощью [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 

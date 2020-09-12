@@ -1,5 +1,6 @@
 ---
 title: Поддержка панели навигации в языковой службе прежних версий
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741900"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036565"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
 В панели навигации в верхней части представления редактора отображаются типы и элементы в файле. Типы отображаются в левом раскрывающемся списке, и элементы отображаются в правом раскрывающемся списке. Когда пользователь выбирает тип, курсор помещается в первую строку типа. Когда пользователь выбирает элемент, курсор помещается в определение элемента. Раскрывающиеся списки обновляются в соответствии с текущим положением курсора.

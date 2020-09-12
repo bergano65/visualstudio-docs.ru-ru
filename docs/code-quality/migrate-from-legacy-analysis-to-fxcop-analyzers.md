@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937563"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036578"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Переход от традиционного анализа (FxCop) к исходному анализу (FxCop Analyzer)
 
@@ -27,11 +27,11 @@ ms.locfileid: "78937563"
 
 Дополнительные сведения о различиях между анализом прежних версий и анализом исходного кода см. в следующих статьях:
 
-- [Сравнение анализа исходного кода и устаревшей функции анализа](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Сравнение анализа исходного кода и устаревшей функции анализа](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [Вопросы и ответы об анализаторах FxCop](../code-quality/fxcop-analyzers-faq.md)
 
-Чтобы выполнить миграцию в исходный анализ, [установите анализаторы FxCop](../code-quality/install-fxcop-analyzers.md). Как и в случае нарушений правил устаревшей функции анализа, нарушения анализа исходного кода отображаются в Visual Studio в окне списка ошибок. Кроме того, нарушения анализа исходного кода выделяются в редакторе кода с помощью *волнистых линий* под соответствующим кодом. Цвет волнистой линии зависит [параметра серьезности](../code-quality/use-roslyn-analyzers.md#rule-severity) правила. Сведения о правилах, переданных в новые анализаторы FxCop, см. в статье [правила переноса и неперенесенных](../code-quality/fxcop-rule-port-status.md)правил.
+Чтобы выполнить миграцию в исходный анализ, [установите анализаторы FxCop](../code-quality/install-fxcop-analyzers.md). Как и в случае нарушений правил устаревшей функции анализа, нарушения анализа исходного кода отображаются в Visual Studio в окне списка ошибок. Кроме того, нарушения анализа исходного кода выделяются в редакторе кода с помощью *волнистых линий* под соответствующим кодом. Цвет волнистой линии зависит [параметра серьезности](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) правила. Сведения о правилах, переданных в новые анализаторы FxCop, см. в статье [правила переноса и неперенесенных](../code-quality/fxcop-rule-port-status.md)правил.
 
 Дополнительные сведения о настройке анализаторов FxCop:
 

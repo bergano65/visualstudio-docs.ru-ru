@@ -1,5 +1,6 @@
 ---
 title: Связывание типа содержимого с расширением имени файла
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7224c98c55567ed091b09c1a69e630573eb34be8
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743216"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034667"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Пошаговое руководство. Связывание типа содержимого с расширением имени файла
 Можно определить собственный тип содержимого и связать с ним расширение имени файла с помощью расширений Managed Extensibility Framework (MEF). В некоторых случаях расширение имени файла уже определено языковой службой. Однако, чтобы использовать его с MEF, необходимо по-прежнему связать его с типом содержимого.
@@ -101,5 +102,5 @@ ms.locfileid: "89743216"
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Точки расширения языковой службы и редактора](../extensibility/language-service-and-editor-extension-points.md)

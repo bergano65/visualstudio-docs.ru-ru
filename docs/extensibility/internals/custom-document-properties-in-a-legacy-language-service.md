@@ -1,5 +1,6 @@
 ---
 title: Пользовательские свойства документа в устаревших языковых службах
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741812"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036838"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Пользовательские свойства документа в языковой службе прежних версий
 Свойства документа можно отобразить в окне " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** ". Языки программирования обычно не имеют свойств, связанных с отдельными файлами исходного кода. Однако XML поддерживает свойства документа, которые влияют на кодировку, схему и таблицу стилей.
@@ -397,5 +398,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Функции устаревшей языковой службы](../../extensibility/internals/legacy-language-service-features1.md)

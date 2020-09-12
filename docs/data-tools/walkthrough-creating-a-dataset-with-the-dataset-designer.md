@@ -1,5 +1,6 @@
 ---
 title: Создание набора данных с помощью конструктор наборов данных
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742934"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036786"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Пошаговое руководство. Создание набора данных с помощью конструктор наборов данных
 
@@ -108,7 +109,7 @@ ms.locfileid: "89742934"
 
 - Добавьте логику проверки в <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> события или таблиц данных в наборе данных. Дополнительные сведения см. [в разделе Проверка данных в DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание и настройка наборов данных в Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
