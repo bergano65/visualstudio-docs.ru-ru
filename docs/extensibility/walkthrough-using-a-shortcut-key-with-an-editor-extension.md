@@ -1,5 +1,6 @@
 ---
 title: Использование сочетания клавиш с расширением редактора
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dcbf5c22af9cabeca0b89ffa98d4ddf86173a4a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89735146"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037462"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Использование сочетания клавиш с расширением редактора
 Вы можете реагировать на сочетания клавиш в расширении редактора. В следующем пошаговом руководстве показано, как добавить Оформление представления в текстовое представление с помощью сочетания клавиш. Это пошаговое руководство основано на шаблоне "редактор оформлений" окна просмотра и позволяет добавлять Оформление с помощью символа +.

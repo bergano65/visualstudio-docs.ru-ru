@@ -1,6 +1,7 @@
 ---
 title: Элемент EnableEditOfLocationField (шаблоны Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741712"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037410"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Элемент EnableEditOfLocationField (шаблоны Visual Studio)
 Указывает, может ли пользователь изменять поле расположения.
@@ -35,7 +36,7 @@ ms.locfileid: "89741712"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Нет
+ None
 
 ### <a name="child-elements"></a>Дочерние элементы
  Нет
@@ -51,7 +52,7 @@ ms.locfileid: "89741712"
 
  Текст должен иметь значение `true` или `false` , что указывает, может ли пользователь изменять текстовое поле **Расположение** в диалоговом окне **Новый проект** .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
  Параметр `EnableEditOfLocationField` является необязательным элементом. Значение по умолчанию — `true` , что позволяет пользователю изменять значение в текстовом поле **Расположение** в диалоговом окне **Новый проект** .
 
  В диалоговом окне **Новый проект** в текстовом поле **Расположение** указывается каталог, в котором сохранен новый проект.

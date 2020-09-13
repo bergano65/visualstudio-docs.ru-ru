@@ -25,7 +25,7 @@ ms.locfileid: "90037612"
 ## <a name="changes"></a>Изменения
  Следующие функции являются новыми для подключаемого модуля управления версиями для API версии 1,3:
 
-|Функция|Overview|
+|Функция|Обзор|
 |--------------|--------------|
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Позволяет сообщать о дополнительных битах возможностей|
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Позволяет проанализировать файлы, имеющие более новые версии в базе данных системы управления версиями, чем на локальном диске.|
