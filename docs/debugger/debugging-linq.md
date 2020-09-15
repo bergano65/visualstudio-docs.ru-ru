@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738207"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509774"
 ---
 # <a name="debugging-linq"></a>Отладка LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с некоторыми ограничениями поддерживает отладку кода встроенного языка запросов (LINQ). Большинство возможностей отладки работают с операторами LINQ, включая пошаговое выполнение, установку точек останова и просмотр результатов в окнах отладчика. В этом разделе описаны основные ограничения, связанные с отладкой кода LINQ.
@@ -105,7 +105,7 @@ End Function
  Измененный запрос вызывает функцию `IsEven` при каждом проходе через `items`. Чтобы проверить, выполняется ли для каждого элемента заданное условие, можно использовать окна отладчика или пройти по коду в пошаговом режиме в `IsEven`. Предикат в этом примере достаточно прост. Тем не менее, при отладке более сложных предикатов этот метод может оказаться весьма полезным.
 
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Операция "Изменить и продолжить" для LINQ не поддерживается
- Операция "Изменить и продолжить" поддерживает изменения запросов LINQ с некоторыми ограничениями. Дополнительные сведения см. в разделе [Поддерживаемые изменения EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits).
+ Операция "Изменить и продолжить" поддерживает изменения запросов LINQ с некоторыми ограничениями. Дополнительные сведения см. в разделе [Поддерживаемые изменения EnC](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md).
 
 ## <a name="see-also"></a>См. также
 

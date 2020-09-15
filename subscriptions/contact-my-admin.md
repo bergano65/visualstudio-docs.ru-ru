@@ -1,18 +1,18 @@
 ---
-title: Обращение к администратору подписки с помощью портала подписчика
+title: Обращение к администратору подписки с помощью портала подписчика | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 03/07/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Узнайте, как обратиться к администратору подписки за помощью с вопросами или проблемами.
-ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247435"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561420"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Получение помощи от администратора подписок
 Если ваша подписка на Visual Studio предоставляется вашим работодателем или учебным заведением, вероятно, она была назначена вам администратором подписок.  Администраторы могут назначать или удалять подписки, изменять адреса электронной почты для входа, определять возможность загрузки программного обеспечения и выполнять другие функции, связанные с вашей подпиской.

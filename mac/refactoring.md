@@ -1,17 +1,17 @@
 ---
 title: Рефакторинг кода
 description: Уточнение кода с помощью Visual Studio для Mac и быстрых действий.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691289"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402598"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -31,9 +31,9 @@ ms.locfileid: "67691289"
 
 ![Переименование и идентификатор](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Быстрые действия
+## <a name="quick-actions-and-refactorings"></a>Быстрые действия и операции рефакторинга
 
-Быстрые действия позволяют легко создавать и изменять код, а также выполнять его рефакторинг одним действием.
+Быстрые действия и операции рефакторинга позволяют легко создавать и изменять код, а также выполнять его рефакторинг одним действием.
 
 Быстрые действия можно использовать для решения следующих задач:
 
@@ -55,7 +55,7 @@ ms.locfileid: "67691289"
 
    ![Лампочка с наведением указателя мыши](media/refactoring-lightbulb-hover.png)
 
-- Лампочки и отвертки отображаются в левом поле редактора при перемещении курсора в строку кода, для которого доступно быстрое действие.
+- Лампочки и отвертки отображаются в левом поле редактора при перемещении курсора в строку кода, для которого доступно быстрое действие или рефакторинг.
 
 - Нажмите **Параметр (⌥)** +**ВВОД** в любом месте строки, чтобы увидеть список доступных быстрых действий и рефакторингов.
 
@@ -93,7 +93,7 @@ ms.locfileid: "67691289"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Быстрые действия (Visual Studio в Windows)](/visualstudio/ide/quick-actions)
 - [Рефакторинг кода (Visual Studio в Windows)](/visualstudio/ide/refactoring-in-visual-studio)

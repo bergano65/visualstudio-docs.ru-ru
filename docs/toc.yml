@@ -127,6 +127,8 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Использование Visual Studio на виртуальной машине Azure
       href: install/using-visual-studio-vm.md
+    - name: Использование Visual Studio на устройстве ARM
+      href: install/visual-studio-on-arm-devices.md
     - name: Контейнеры
       items:
         - name: Установка средств сборки в контейнер
@@ -1160,7 +1162,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Форматирование
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Представление
+                    - name: Просмотр
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: F#
                   items:

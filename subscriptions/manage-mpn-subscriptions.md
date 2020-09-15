@@ -1,18 +1,18 @@
 ---
-title: Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN) | Документы Майкрософт
+title: Управление подписками Visual Studio из Microsoft Partner Network | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
-ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250724"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561381"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.

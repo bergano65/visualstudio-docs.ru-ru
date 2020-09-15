@@ -1,18 +1,18 @@
 ---
-title: Добавление новых ежемесячных подписок Visual Studio на портале администрирования подписок | Документация Майкрософт
+title: Добавление новых ежемесячных подписок на портале администрирования подписок | Документация Майкрософт
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 06/23/2020
+ms.date: 09/03/2020
 ms.topic: how-to
 description: Узнайте, как приобрести ежемесячные подписки Visual Studio с помощью портала администрирования подписок
-ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904694"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561407"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Добавление новых ежемесячных подписок Visual Studio на портале администрирования подписок
 При покупке новых ежемесячных подписок Visual Studio с использованием подписки Azure может потребоваться добавить их на портал администрирования подписок, чтобы назначить их пользователям.  
@@ -25,17 +25,17 @@ ms.locfileid: "85904694"
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Как добавить ежемесячные подписки
 1. Войдите на портал администрирования подписок по адресу <https://manage.visualstudio.com>
-1. На вкладке **Manage subscribers** (Управление подписчиками) щелкните раскрывающийся список **New agreement** (Новое соглашение). 
+1. На вкладке **Manage subscribers** (Управление подписчиками) щелкните раскрывающийся список **Add agreement** (Добавить соглашение). 
 1. В раскрывающемся списке выберите пункт **New monthly subscriptions** (Новые ежемесячные подписки).
    > [!div class="mx-imgBorder"]
-   > ![Добавление новых ежемесячных подписок в раскрывающемся списке](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![Добавление новых ежемесячных подписок в раскрывающемся списке](_img/add-monthly-subs/add-subs-drop-down.png "Выберите элемент "Add agreement" (Добавить соглашение) и щелкните "New monthly subscriptions" (Новые ежемесячные подписки).")
 1. Система выполнит поиск любых подписок Azure, для которых у вас есть права администратора доступа пользователей, и импортирует все подписки Visual Studio, приобретенные с этими подписками Azure.
 1. Если нет подписок Azure, для которых у вас есть права администратора доступа пользователей, или если подходящие подписки Azure найдены, но нет подписок Visual Studio, вы получите следующее сообщение:
    > [!div class="mx-imgBorder"]
-   > ![Новые ежемесячные подписки не найдены](_img/add-monthly-subs/no-subs-found.png)
+   > ![Новые ежемесячные подписки не найдены](_img/add-monthly-subs/no-subs-found.png "Сообщение об ошибке с информацией о том, что отсутствуют доступные для вас подписки Azure или Visual Studio.")
 1. Если будут найдены новые ежемесячные подписки, вы получите сообщение с подтверждением.
    > [!div class="mx-imgBorder"]
-   > ![Сообщение с подтверждением добавленных подписок](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![Сообщение с подтверждением добавленных подписок](_img/add-monthly-subs/subs-added-confirmation.png "Появится сообщение с подтверждением, в котором будут отображаться добавленные подписки.")
 
 ## <a name="things-to-keep-in-mind"></a>Важные аспекты
 - Возможность добавления новых ежемесячных подписок будет доступна только при первом их приобретении.  После добавления ежемесячных подписок мы проверяем наличие новых при каждом вашем входе на портал. 

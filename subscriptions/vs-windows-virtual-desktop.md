@@ -1,18 +1,18 @@
 ---
-title: Преимущество "Виртуальный рабочий стол Windows (Майкрософт)" в подписках Visual Studio | Документация Майкрософт
+title: Виртуальный рабочий стол Windows (Майкрософт) в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Узнайте, как можно воспользоваться преимуществом "Виртуальный рабочий стол Windows (Майкрософт)" с помощью подписки Visual Studio.
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800610"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561368"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Доступ к Виртуальному рабочему столу Windows в подписках 
 Теперь подписчики Visual Studio могут использовать индивидуальные средства на счете для разработки и тестирования в Azure для служб виртуальных рабочих столов Windows (Майкрософт).  

@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: Развертывание на веб-сайт
       href: quickstart-deploy-to-a-web-site.md
-    - name: Развертывание в локальную папку
+    - name: Развертывание в папку
       href: quickstart-deploy-to-local-folder.md
 - name: Учебники
   items:

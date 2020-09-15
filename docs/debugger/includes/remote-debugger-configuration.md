@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149168"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312108"
 ---
 1. На удаленном компьютере найдите **Удаленный отладчик** в меню **Пуск** и запустите его. 
    
@@ -28,7 +28,7 @@ ms.locfileid: "68149168"
    
 1. При первом запуске удаленного отладчика (или перед его настройкой) появится диалоговое окно **Конфигурация удаленной отладки**.  
   
-    ![Конфигурация удаленного отладчика](../media/remotedebuggerconfwizardpage.png "Конфигурация удаленного отладчика")  
+    ![Настройка удаленного отладчика](../media/remotedebuggerconfwizardpage.png "Настройка удаленного отладчика")  
   
 1. Если API-интерфейс веб-служб Windows не установлен (это возможно только в Windows Server 2008 R2), нажмите кнопку **Установить**.  
   

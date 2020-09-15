@@ -1,18 +1,18 @@
 ---
-title: Подписки Visual Studio, предоставляемые начинающим компаниям по программе Microsoft for Startups
+title: Подписки Visual Studio, предоставляемые начинающим компаниям по программе "Майкрософт для стартапов" | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о подписках, предоставляемых по программе Microsoft for Startups.
-ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233256"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561459"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Подписки Visual Studio для начинающих компаний
 Начинающие компании, вступившие в программу Microsoft for Startups, могут получить пять [ежемесячных облачных подписок Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). 

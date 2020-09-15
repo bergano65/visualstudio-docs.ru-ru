@@ -1,18 +1,18 @@
 ---
 title: Использование ключей продуктов для поддержки интернет-демонстраций в службах терминалов | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Узнайте, как использовать ключи продуктов для поддержки интернет-демонстраций в службах терминалов и включения доступа RDS
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232430"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561316"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Интернет-демонстрации в службах терминалов
 Подписка Visual Studio позволяет вам предоставлять конечным пользователям доступ к интернет-демонстрациям программ через службы терминалов (Windows Server 2003 или Windows Server 2008) или службы удаленного рабочего стола (Windows Server 2008 R2 и более поздней версии). Это обеспечивает одновременный доступ к демонстрации до 200 анонимных пользователей. В демонстрации не должны использоваться производственные данные. Подписчики Visual Studio могут демонстрировать свои приложения конечным пользователям. Интернет-демонстрация с использованием служб терминалов или служб удаленного рабочего стола — это единственная возможность конечных пользователей без подписок Visual Studio взаимодействовать с демонстрационным приложением, если программное обеспечение предоставляется по подпискам Visual Studio.

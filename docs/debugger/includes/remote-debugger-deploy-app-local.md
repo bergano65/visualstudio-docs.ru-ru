@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149221"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89324857"
 ---
 1. В **обозревателе решений** щелкните правой кнопкой мыши узел проекта и выберите пункт **Опубликовать** (или **Опубликовать веб-приложение** для ASP.NET Web Forms).
 

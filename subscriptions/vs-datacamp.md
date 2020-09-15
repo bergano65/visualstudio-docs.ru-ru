@@ -1,18 +1,18 @@
 ---
-title: Повысьте свои навыки обработки и анализа данных, используя преимущество DataCamp в подписках Visual Studio. | Документы Майкрософт
+title: Развитие навыков обработки и анализа данных с помощью преимущества DataCamp в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904523"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561498"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 К подходящим подпискам Visual Studio относятся подписки на DataCamp.  С помощью DataCamp можно получить все необходимые навыки обработки и анализа данных, работая в браузере. Вы выбираете, когда и чему вы учитесь. Обучаться обработке и анализу данных стало намного проще, так как вам не нужно устанавливать программное обеспечение и выполнять особые требования к оборудованию.
