@@ -1,20 +1,23 @@
 ---
 title: Добавление пользовательской проверки архитектуры в схемы зависимостей
+description: Содержит сведения о том, как добавить пользовательскую проверку архитектуры в схемы зависимостей.
 ms.date: 11/04/2016
 ms.topic: how-to
+titleSuffix: ''
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546929"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100530"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Добавление пользовательской проверки архитектуры в схемы зависимостей
 
@@ -30,7 +33,7 @@ ms.locfileid: "85546929"
 > [!WARNING]
 > Создав проект проверки, скопируйте в него [пример кода](#example) , приведенный в конце этого раздела, и внесите в него изменения с учетом своих задач.
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 См. раздел [Требования](../modeling/extend-layer-diagrams.md#requirements).
 
