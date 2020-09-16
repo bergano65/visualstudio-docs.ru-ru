@@ -580,6 +580,8 @@
                       href: interoperability-warnings.md
                     - name: CA1401. Методы P/Invoke не должны быть видимыми
                       href: ca1401.md
+                    - name: CA1416. Проверка совместимости платформ
+                      href: ca1416.md
                     - name: CA1417. Не используйте OutAttribute в строковых параметрах для вызовов P/Invoke
                       href: ca1417.md
                 - name: 'Предупреждения, связанные с удобством обслуживания'

@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: Учебники
   items:
-    - name: Профилирование производительности приложений в Visual Studio
+    - name: Измерение производительности приложений в Visual Studio
       href: beginners-guide-to-performance-profiling.md
-    - name: Профилирование использования памяти в Visual Studio
+    - name: Измерение использования памяти в Visual Studio
       href: memory-usage.md
 - name: Основные понятия
   items:
