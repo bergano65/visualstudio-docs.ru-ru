@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144692"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037228"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Использование лабораторной среды для DevOps
 
@@ -129,23 +129,23 @@ ms.locfileid: "88144692"
 
 Дополнительные сведения о Lab Management см. в следующих материалах:
 
-* [Планирование лабораторной работы](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
-* [Администрирование лабораторной среды](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
-* [Настройка окружений SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Управление разрешениями](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
-* [Настройка изменений](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-* [Устранение неполадок](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [Планирование лабораторной работы](/previous-versions/ff756575(v=vs.140))
+* [Администрирование лабораторной среды](/previous-versions/dd936084(v=vs.140))
+* [Настройка окружений SCVMM](/previous-versions/dd380687(v=vs.140))
+* [Управление разрешениями](/previous-versions/dd380760(v=vs.140))
+* [Настройка изменений](/previous-versions/ee704508(v=vs.140))
+* [Устранение неполадок](/previous-versions/ee853230(v=vs.140))
 
 Дополнительные сведения о лабораторных средах см. в следующих материалах:
 
 * [Облачные среды сборок и выпусков](use-build-or-rm-instead-of-lab-management.md)
-* [Стандартные лабораторные среды](https://msdn.microsoft.com/library/ee390842.aspx)
-* [(Виртуальные) среды SCVMM](https://msdn.microsoft.com/library/ee943322.aspx)
-* [Создание и использование изолированной от сети среды](https://msdn.microsoft.com/library/ee518924.aspx)
+* [Стандартные лабораторные среды](/previous-versions/ee390842(v=vs.140))
+* [(Виртуальные) среды SCVMM](/previous-versions/ee943322(v=vs.140))
+* [Создание и использование изолированной от сети среды](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
 ## <a name="see-also"></a>См. также раздел
 
 * [Установка и настройка агентов тестирования](../../test/lab-management/install-configure-test-agents.md)
-* [Руководство по Visual Studio Lab Management](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
+* [Руководство по Visual Studio Lab Management](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)
 * [Блог Microsoft DevOps](https://devblogs.microsoft.com/devops/)

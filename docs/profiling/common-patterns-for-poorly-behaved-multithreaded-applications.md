@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62788930"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038508"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Общие шаблоны для неправильно работающих многопоточных приложений
 
@@ -30,7 +30,7 @@ ms.locfileid: "62788930"
 
 Как показано на следующем рисунке, визуализатор параллелизма может также обнаруживать подобные признаки в представлении использования ЦП, когда, несмотря на наличие нескольких потоков, приложение использует только одно логическое ядро.
 
-Дополнительные сведения см. в разделе "Запуск с помощью раздела проблем" в статье журнала MSDN Magazine [Производительность потоков — профилирование параллелизма на предмет состязания за ресурсы в Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
+Дополнительные сведения см. в разделе "Запуск с помощью раздела проблем" в статье журнала MSDN Magazine [Производительность потоков — профилирование параллелизма на предмет состязания за ресурсы в Visual Studio 2010](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010).
 
 ![Состязание при блокировке](../profiling/media/lockcontention_2.png "LockContention_2")
 

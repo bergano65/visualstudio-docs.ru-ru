@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Настройка проектов для нацеливания на несколько платформ
+title: Настройка проектов для нацеливания на несколько платформ
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2643e7f413a68d820780db80c87818dd0b8b9c03
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284572"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036513"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Практическое руководство. Настройка проектов для нацеливания на несколько платформ
 

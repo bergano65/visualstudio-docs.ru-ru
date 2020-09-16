@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef96bab28b1a17d4f20728a393511720fd10c624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b05e703958fe7a1c630b542522f1f33b0fe5981
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349475"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600281"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Практическое руководство. Возврат к функции, вызвавшей MFC, при прерывании работы в MFC
 
@@ -38,7 +38,7 @@ ms.locfileid: "85349475"
 
 При использовании команды **Прервать** из меню **Отладка** для остановки выполнения программы и завершения в MFC и при наличии ошибок в коде, можно вызвать окно "Стек вызовов" для обратного перехода к функции. Дополнительные сведения см. в разделе [Практическое руководство. использовать окно "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md).
 
-Иногда код может прерываться в генераторе сообщений. В таком случае в стеке вызовов нет пользовательского кода. Во избежание этой проблемы используются точки останова (с условиями и количеством обращений) вместо команды **Прервать**. Для получения дополнительной информации см. [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+Иногда код может прерываться в генераторе сообщений. В таком случае в стеке вызовов нет пользовательского кода. Во избежание этой проблемы используются точки останова (с условиями и количеством обращений) вместо команды **Прервать**. Для получения дополнительной информации см. [Breakpoints and Tracepoints](/previous-versions/ktf38f66(v=vs.100)).
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Переход к функции, из которой был вызван MFC
 

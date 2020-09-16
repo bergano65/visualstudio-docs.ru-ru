@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737898"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599657"
 ---
 # <a name="edit-and-continue-c"></a>Изменить и продолжить (C++)
 Вы можете использовать режим "Изменить и продолжить" в проектах C++. См. сведения об ограничениях режима "Изменить и продолжить" в руководстве по [поддерживаемым изменениям кода (C++)](../debugger/supported-code-changes-cpp.md).
 
 См. сведения об улучшениях Visual Studio 2015 с обновлением 3 в руководстве по [режиму "Изменить и продолжить" (С++) в Visual Studio 2015 с обновлением 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
- Параметр компилятора [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging), который появился в Visual Studio 2013 с обновлением 3, добавляет дополнительные сведения в PDB-файлы символов для двоичных файлов, скомпилированных без параметра [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).
+ Параметр компилятора [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging), который появился в Visual Studio 2013 с обновлением 3, добавляет дополнительные сведения в PDB-файлы символов для двоичных файлов, скомпилированных без параметра [/Od (Disable (Debug))](/cpp/build/reference/od-disable-debug).
 
  **/Zo** отключает режим "Изменить и продолжить". См. практическое руководство по [ отладке оптимизированного кода](../debugger/how-to-debug-optimized-code.md).
 
@@ -72,7 +72,7 @@ ms.locfileid: "72737898"
 ## <a name="how-to-reset-the-point-of-execution"></a><a name="BKMK_How_to_reset_the_point_of_execution"></a> Сброс точки выполнения
  Некоторые изменения в коде могут вызвать перемещение точки выполнения в новое расположение, после того как эти изменения будут применены операцией "Изменить и продолжить". Операция "Изменить и продолжить" стремится разместить точку выполнения с максимально возможной точностью, однако в некоторых случаях результаты могут быть неверными.
 
- В C++ об изменении точки выполнения сообщает диалоговое окно. Прежде чем продолжить процесс отладки, необходимо проверить, что точка установлена правильно. Если это не так, необходимо использовать команду **Задать следующий оператор** . Дополнительные сведения см. в разделе [Задание следующего оператора для выполнения](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
+ В C++ об изменении точки выполнения сообщает диалоговое окно. Прежде чем продолжить процесс отладки, необходимо проверить, что точка установлена правильно. Если это не так, необходимо использовать команду **Задать следующий оператор** . Дополнительные сведения см. в разделе [Задание следующего оператора для выполнения](./navigating-through-code-with-the-debugger.md#BKMK_Set_the_next_statement_to_execute).
 
 ## <a name="how-to-work-with-stale-code"></a><a name="BKMK_How_to_work_with_stale_code"></a> Работа с устаревшим кодом
  В некоторых случаях операция "Изменить и продолжить" не может немедленно внести изменения в исполняемый код, но может внести их позже, если отладка будет продолжена. Это происходит при изменении функции, вызвавшей текущую выполняемую функцию, или при добавлении новых переменных объемом более 64 байт в функцию, которая находится в стеке вызовов.

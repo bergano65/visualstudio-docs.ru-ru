@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348942"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600158"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Вызов событий приостановки, возобновления и фоновых событий при отладке приложений UWP в Visual Studio
 
@@ -48,7 +48,7 @@ ms.locfileid: "85348942"
      Команда **Приостановить и завершить работу** закрывает приложение и завершает сеанс отладки.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Активация фоновых задач
- Любое приложение может зарегистрировать фоновую задачу, чтобы отвечать на некоторые системные события, даже если приложение не выполняется. Фоновые задачи не могут выполнять код, который непосредственно обновляет пользовательский интерфейс; вместо этого они показывают пользователю сведения об обновлениях плитки, обновлениях эмблемы и всплывающие уведомления. Дополнительные сведения см. в статье [Поддержка приложения с помощью фоновых задач](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Любое приложение может зарегистрировать фоновую задачу, чтобы отвечать на некоторые системные события, даже если приложение не выполняется. Фоновые задачи не могут выполнять код, который непосредственно обновляет пользовательский интерфейс; вместо этого они показывают пользователю сведения об обновлениях плитки, обновлениях эмблемы и всплывающие уведомления. Дополнительные сведения см. в статье [Поддержка приложения с помощью фоновых задач](/previous-versions/windows/apps/hh977046(v=win.10)).
 
  Можно активировать события, которые запускают фоновые задачи для приложения, из отладчика.
 
@@ -110,7 +110,7 @@ ms.locfileid: "85348942"
 4. Выберите журнал **Диагностические** .
 
 ## <a name="see-also"></a>См. также
-- [Тестирование приложений UWP в Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Тестирование приложений UWP в Visual Studio](../test/unit-test-your-code.md)
 - [Отладка приложений в Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Жизненный цикл приложения](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

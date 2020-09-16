@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbe2b18b9edd6f2d4634ede41d676519f1b80ad3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533462"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035724"
 ---
 # <a name="language-conventions"></a>Языковые соглашения
 
@@ -76,7 +76,7 @@ ms.locfileid: "85533462"
 
    Visual Studio добавляет или изменяет параметр конфигурации в файле EditorConfig, как показано в поле предварительного просмотра.
 
-Чтобы изменить степень серьезности для нарушения стиля кода, выполните те же действия, но выберите пункт **Настроить степень серьезности \<rule ID>** вместо **Настроить стиль кода \<rule ID>** . Дополнительные сведения см. в разделе [Автоматическая настройка уровня серьезности правила](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Чтобы изменить степень серьезности для нарушения стиля кода, выполните те же действия, но выберите пункт **Настроить степень серьезности \<rule ID>** вместо **Настроить стиль кода \<rule ID>** . Дополнительные сведения см. в разделе [Автоматическая настройка уровня серьезности правила](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 ::: moniker-end
 
@@ -1049,6 +1049,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Применимые языки** | C# 6.0+ и Visual Basic 14+ |
 | **Значения** | `true` — предпочитать проверку значений NULL вместо метода равенства ссылок<br /><br />`false` — предпочитать метод равенства ссылок вместо проверки значений NULL |
 | **Значение по умолчанию в Visual Studio** | `true:silent` |
+
+Примеры кода:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
 
 ## <a name="net-code-quality-settings"></a>Параметры качества кода .NET
 

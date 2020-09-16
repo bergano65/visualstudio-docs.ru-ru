@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331277"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037488"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Анализ использования памяти JavaScript в приложениях UPW
 Анализатор памяти JavaScript доступен в Visual Studio и помогает получать информацию об использовании памяти и находить утечки памяти в приложениях универсальной платформы Windows, разработанных для Windows с использованием JavaScript. К поддерживаемым приложениям относятся приложения для универсальных приложений Windows.
@@ -363,7 +363,7 @@ if (performance && performance.mark) {
 
 - Посмотрите последнюю часть [этого видео](https://channel9.msdn.com/Events/Build/2013/3-316) с конференции Build 2013 об анализаторе памяти JavaScript.
 
-- См. статью [Управление памятью в приложениях универсальной платформы Windows](https://msdn.microsoft.com/magazine/jj651575.aspx).
+- См. статью [Управление памятью в приложениях универсальной платформы Windows](/archive/msdn-magazine/2012/windows-8-special-issue/javascript-managing-memory-in-windows-store-apps).
 
 - Попробуйте временно изменить код, чтобы изолировать проблемы. Например, можно сделать следующее:
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349111"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599860"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Практическое руководство. установку параметров отладчика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно задать различные параметры поведения отладчика, включая способ отображения переменных, возможность представления или непредставления некоторых предупреждающих сообщений, размещение точек останова и влияние останова на работу программы. Параметры отладчика задаются в диалоговом окне **Параметры**.
@@ -43,6 +43,6 @@ ms.locfileid: "85349111"
 
 ## <a name="see-also"></a>См. также
 - [Страница "Общие", папка "Отладка", диалоговое окно "Параметры"](../debugger/general-debugging-options-dialog-box.md)
-- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](./edit-and-continue.md)
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
 - [Стандартные макросы для команд и свойств сборки](/cpp/build/reference/common-macros-for-build-commands-and-properties)

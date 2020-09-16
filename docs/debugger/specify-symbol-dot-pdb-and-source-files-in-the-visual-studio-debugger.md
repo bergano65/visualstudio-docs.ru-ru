@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183826"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599590"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Указание файлов символов (PDB) и исходных файлов в отладчике Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -46,7 +46,7 @@ ms.locfileid: "84183826"
 
 - [Общие сведения о файлах символов и параметрах символов Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Почему Visual Studio требует, чтобы файлы символов отладчика точно соответствовали двоичным файлам, с которыми они были собраны?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Почему Visual Studio требует, чтобы файлы символов отладчика точно соответствовали двоичным файлам, с которыми они были собраны?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Принципы использования файлов символов
 
@@ -57,7 +57,7 @@ ms.locfileid: "84183826"
 
 В файлах символов также указываются расположение исходных файлов и при необходимости сервер, с которого они будут извлекаться.
 
-Отладчик загружает только те *PDB-файлы*, которые точно соответствуют *PDB-файлам*, созданным при построении приложения (то есть исходные *PDB-файлы* или их копии). [Точное дублирование](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) является обязательным, поскольку компоновка приложения может быть изменена даже в том случае, если сам код не изменялся.
+Отладчик загружает только те *PDB-файлы*, которые точно соответствуют *PDB-файлам*, созданным при построении приложения (то есть исходные *PDB-файлы* или их копии). [Точное дублирование](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) является обязательным, поскольку компоновка приложения может быть изменена даже в том случае, если сам код не изменялся.
 
 > [!TIP]
 > Если требуется выполнить отладку кода за пределами исходного кода проекта, например кода Windows или стороннего кода, вызываемого проектом, необходимо указать расположение *PDВ-файлов* (и, если необходимо, исходных файлов) для внешнего кода, причем эти файлы должны точно соответствовать сборкам вашего приложения.

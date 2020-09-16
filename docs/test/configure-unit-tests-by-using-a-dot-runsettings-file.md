@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972300"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038443"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
@@ -107,7 +107,7 @@ ms.locfileid: "86972300"
 
 - В настоящее время параметры запуска на уровне проекта поддерживаются в проектах C#, VB, C++ и F#.
 - Файл, указанный для проекта, переопределяет любой другой файл параметров запуска, указанный в решении.
-- [Эти свойства MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) можно использовать для указания пути к файлу параметров запуска. 
+- [Эти свойства MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) можно использовать для указания пути к файлу параметров запуска. 
 
 Пример указания файла с расширением *RUNSETTINGS* для проекта:
     
@@ -307,7 +307,7 @@ public void HomePageTest()
 |Параметр Configuration|Значение по умолчанию|Значения|
 |-|-|-|
 |**ForcedLegacyMode**|false|В Visual Studio 2012 адаптер MSTest был оптимизирован для повышения скорости и масштабируемости. Некоторое поведение, в частности порядок, в котором выполняются тесты, может немного отличаться от поведения в предыдущих выпусках Visual Studio. Чтобы использовать старый адаптер теста, установите для этого параметра значение **true**.<br /><br />Например, этот параметр можно использовать при наличии файла *app.config*, указанного для модульного теста.<br /><br />Рекомендуется рассмотреть возможность рефакторинга тестов для включения возможности использования более нового адаптера.|
-|**IgnoreTestImpact**|false|Функция влияния на тесты приоритизирует тесты, затронутые последними изменениями, при запуске в MSTest или из Microsoft Test Manager (не рекомендуется в Visual Studio 2017). Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|false|Функция влияния на тесты приоритизирует тесты, затронутые последними изменениями, при запуске в MSTest или из Microsoft Test Manager (не рекомендуется в Visual Studio 2017). Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||Здесь можно задать файл параметров тестирования для использования с адаптером MSTest. Этот файл можно также указать [из меню параметров](#specify-a-run-settings-file-in-the-ide).<br /><br />Если задано это значение, необходимо также задать для параметра **ForcedlegacyMode** значение **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|После завершения тестового запуска MSTest завершает работу. Будет также завершен любой процесс, запущенный в рамках теста. Чтобы сохранить исполнитель тестов в активном состоянии, задайте для этого параметра значение **true**. Например, этот параметр можно использовать, чтобы браузер продолжал работать в перерывах между закодированными тестами пользовательского интерфейса.|
 |**DeploymentEnabled**|true|Если установить для этого параметра значение **false**, то элементы развертывания, заданные в методе теста, не будут копироваться в каталог развертывания.|
@@ -463,4 +463,3 @@ public void HomePageTest()
 - [Настройка тестового запуска](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md)
 - [Задача теста Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

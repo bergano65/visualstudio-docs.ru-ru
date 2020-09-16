@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737884"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599641"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Изменение кода и продолжение отладки в Visual Studio (C#, VB, C++)
 "Изменить и продолжить" это режим, позволяющий экономить время за счет внесения изменений в исходный код, в то время как программа находится в режиме приостановки выполнения. При возобновлении выполнения программы с помощью команды **Продолжить** или **Шаг** в режиме "Изменить и продолжить" происходит автоматическое применение изменений кода с некоторыми ограничениями. Это позволяет вносить изменения в код во время сеанса отладки, без необходимости остановки, перекомпиляции всего приложения и перезапуска сеанса отладки.
@@ -47,5 +47,4 @@ ms.locfileid: "72737884"
 
 ## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
-- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

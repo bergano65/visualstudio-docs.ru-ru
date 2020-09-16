@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75845812"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036903"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -59,11 +59,11 @@ ms.locfileid: "75845812"
 | Windows Forms 2.0 и более поздних версий | Полностью поддерживается. **Примечание**. Элементы управления NetFx поддерживаются полностью, однако поддерживаются не все элементы управления сторонних разработчиков. |
 | WPF 3.5 и более поздние версии | Полностью поддерживается.<br /><br /> **Примечание.** Элементы управления NetFx поддерживаются полностью, однако поддерживаются не все элементы управления сторонних разработчиков. |
 | Windows Win32 | Может работать с некоторыми известными проблемами, но официально не поддерживается. |
-| MFC | Поддерживается частично. Дополнительные сведения о поддерживаемых функциях см. в статье о [платформе UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/). |
+| MFC | Поддерживается частично. Дополнительные сведения о поддерживаемых функциях см. в статье о [платформе UITest](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010). |
 | SharePoint | Полностью поддерживается. |
 | Клиентские приложения Office | Не поддерживается. |
 | Веб-клиент Dynamics CRM | Полностью поддерживается. |
-| Клиент Dynamics (Ax) 2012 | Запись и воспроизведение действий поддерживаются частично. Дополнительные сведения см. в статье о [поддержке в Visual Studio 10 закодированных тестов пользовательского интерфейса и записей действий для Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/). |
+| Клиент Dynamics (Ax) 2012 | Запись и воспроизведение действий поддерживаются частично. Дополнительные сведения см. в статье о [поддержке в Visual Studio 10 закодированных тестов пользовательского интерфейса и записей действий для Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012). |
 | SAP | Не поддерживается. |
 | Citrix/Службы терминалов | Мы не рекомендуем действия записи на сервере терминалов. Средство записи не поддерживает выполнение нескольких экземпляров одновременно. |
 | PowerBuilder | Поддерживается частично.<br /><br /> Поддержка элементов управления PowerBuilder ограничивается специальными возможностями. |

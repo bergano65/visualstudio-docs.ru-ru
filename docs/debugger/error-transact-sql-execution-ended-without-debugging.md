@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460251"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599932"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Ошибка: Выполнение Transact-SQL завершается без отладки
 
@@ -40,7 +40,7 @@ ms.locfileid: "85460251"
 
   Чтобы устранить эту ошибку, необходимо:
 
-  - Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Практическое руководство. Предоставление разрешений на отладку SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Практическое руководство. Предоставление разрешений на отладку SQL Server](/previous-versions/w1bhybwz(v=vs.100)).
 
   - Удостовериться в том, что отладка SQL настроена верно.
 
@@ -49,6 +49,6 @@ ms.locfileid: "85460251"
 ## <a name="see-also"></a>См. также
 
 - [Настройка отладки SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Практическое руководство. Предоставление разрешений на отладку SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Практическое руководство. Предоставление разрешений на отладку SQL Server](/previous-versions/w1bhybwz(v=vs.100))
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

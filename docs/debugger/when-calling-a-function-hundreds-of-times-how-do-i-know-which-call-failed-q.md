@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4790fa8c6fd0bba5b513fd2ce3d203b552b6c63b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728046"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599993"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Как определить конкретный вызов функции, приведший к сбою, если таких вызовов было порядка ста?
 ## <a name="problem-description"></a>Описание проблемы
@@ -50,5 +50,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
 ## <a name="see-also"></a>См. также
 - [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
-- [Задание точек останова](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [Задание точек останова](/previous-versions/ktf38f66(v=vs.100))
 - [Отладка машинного кода](../debugger/debugging-native-code.md)

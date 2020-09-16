@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349163"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599896"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Настройка конфигураций отладки и выпуска в Visual Studio
 
@@ -67,7 +67,7 @@ or
 Можно выбрать создание файлов символов (PDB) и отладочные данные, которые необходимо включить. Для большинства типов проектов компилятор создает файлы символов по умолчанию для отладочных и окончательных сборок, в то время как другие параметры по умолчанию отличаются по типу проекта и версии Visual Studio.
 
 > [!IMPORTANT]
-> Отладчик загружает PDB-файл для исполняемого файла, только если он точно соответствует PDB-файлу, который был создан при сборке исполняемого файла (то есть это должен быть либо оригинальный PDB-файл, либо его копия). Дополнительные сведения см. в статье [Почему Visual Studio требует, чтобы файлы символов отладчика точно соответствовали двоичным файлам, с которыми они были собраны?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> Отладчик загружает PDB-файл для исполняемого файла, только если он точно соответствует PDB-файлу, который был создан при сборке исполняемого файла (то есть это должен быть либо оригинальный PDB-файл, либо его копия). Дополнительные сведения см. в статье [Почему Visual Studio требует, чтобы файлы символов отладчика точно соответствовали двоичным файлам, с которыми они были собраны?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 Каждый тип проекта может иметь свой способ установки этих параметров.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144801"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599956"
 ---
 # <a name="debugging-gpu-code"></a>Отладка кода GPU
 Можно выполнять отладку кода C++, который выполняется в графическом процессоре (GPU). Поддержка отладки GPU в Visual Studio включает обнаружение состояния гонки, запуск процессов и присоединение к ним, а также интеграцию с окнами отладчика.
@@ -77,9 +77,9 @@ ms.locfileid: "77144801"
  Эта ошибка происходит при отладке на удаленном ПК. Пока не будет начато выполнение, отладчик не может определить, установлены ли драйверы на удаленном ПК. Драйверы предоставляются производителем видеоадаптера.
 
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Ошибка: На удаленном сайте необходимо отключить механизм обнаружения и исправления зависания во время ожидания (TDR).
- При выполнении вычислений C++ AMP существует вероятность превышения контрольного времени ожидания, установленного предусмотренным в Windows механизмом обнаружения и исправления зависаний (TDR). При возникновении этой ошибки вычисления прекращаются и данные утрачиваются. Дополнительные сведения см. в разделе [Обработка ошибок TDR в C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/).
+ При выполнении вычислений C++ AMP существует вероятность превышения контрольного времени ожидания, установленного предусмотренным в Windows механизмом обнаружения и исправления зависаний (TDR). При возникновении этой ошибки вычисления прекращаются и данные утрачиваются. Дополнительные сведения см. в разделе [Обработка ошибок TDR в C++ AMP](/archive/blogs/nativeconcurrency/handling-tdrs-in-c-amp).
 
 ## <a name="see-also"></a>См. также
 - [Пошаговое руководство: отладка приложения C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Запуск отладки GPU в Visual Studio](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)
+- [Запуск отладки GPU в Visual Studio](/archive/blogs/nativeconcurrency/start-gpu-debugging-in-visual-studio-2012)

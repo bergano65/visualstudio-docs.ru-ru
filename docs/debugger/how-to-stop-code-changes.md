@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348955"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599845"
 ---
 # <a name="how-to-stop-code-changes"></a>Практическое руководство. остановку внесения изменений в код
 Пока режим "Изменить и продолжить" находится в процессе внесения изменений в код, можно остановить эту операцию.
@@ -40,4 +40,4 @@ ms.locfileid: "85348955"
 
 ## <a name="see-also"></a>См. также
 - [Изменить и продолжить](../debugger/edit-and-continue.md)
-- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](./edit-and-continue.md)

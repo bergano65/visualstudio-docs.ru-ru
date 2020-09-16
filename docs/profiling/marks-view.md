@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773972"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037521"
 ---
 # <a name="marks-view"></a>Представление меток
 Представление меток указывает выборки и события трассировки событий Windows, вставленные в приложение.
@@ -43,4 +43,4 @@ ms.locfileid: "74773972"
 ## <a name="see-also"></a>См. также раздел
 - [Обзор отчета о производительности](../profiling/performance-report-overview.md)
 - [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [[NIB] Окно управления сбором данных](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [[NIB] Окно управления сбором данных](/previous-versions/bb385767(v=vs.110))

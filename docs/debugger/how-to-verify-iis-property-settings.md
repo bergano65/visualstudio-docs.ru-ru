@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348474"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600266"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Практическое руководство. проверку параметров свойства IIS
 
@@ -59,7 +59,7 @@ ms.locfileid: "85348474"
 
    3. Нажмите кнопку **OK**, чтобы закрыть диалоговое окно **Методы проверки подлинности**.
 
-5. Для приложения сервера ATL необходимо проверить, связана ли команда DEBUG с расширением ISAPI. Дополнительные сведения см. в разделе [Практическое руководство. Связывание команды DEBUG с расширением](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Для приложения сервера ATL необходимо проверить, связана ли команда DEBUG с расширением ISAPI. Дополнительные сведения см. в разделе [Практическое руководство. Связывание команды DEBUG с расширением](/previous-versions/ms165022(v=vs.100)).
 
 6. Убедитесь, что виртуальному каталогу для приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] задано имя приложения в компонентах **Диспетчер служб IIS**, **Диспетчер служб Интернета** или **Службы IIS**.
 

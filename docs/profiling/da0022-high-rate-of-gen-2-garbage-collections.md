@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c17c27c8827c8612f08298667f09eda89f90f8d9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: eb1834bf395d3a9c5d4f516a9fec1693d40ff378
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544681"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035694"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022. Высокая доля сборок мусора в генерации 2
 
@@ -51,4 +51,4 @@ ms.locfileid: "85544681"
 
  Чтобы понять схему использования управляемой памяти в приложении, выполните его повторное профилирование, запустив профиль выделения памяти .NET, и выберите параметр профилирования "Время жизни объекта".
 
- Сведения о том, как повысить производительность сборки мусора, см. в статье [Сведения о повышении производительности сборки мусора](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) на веб-сайте корпорации Майкрософт. Сведения о дополнительных затратах на автоматическую сборку мусора см. в статье [Представляем кучу для массивных объектов](https://msdn.microsoft.com/magazine/cc534993.aspx).
+ Сведения о том, как повысить производительность сборки мусора, см. в статье [Сведения о повышении производительности сборки мусора](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) на веб-сайте корпорации Майкрософт. Сведения о дополнительных затратах на автоматическую сборку мусора см. в статье [Представляем кучу для массивных объектов](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered).

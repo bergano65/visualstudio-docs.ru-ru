@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348145"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599523"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Запуск приложений UWP в симуляторе
 
@@ -115,7 +115,7 @@ ms.locfileid: "85348145"
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений
 
-Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) позволяют реагировать на события [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , на которые имеется подписка. Подробнее см. в [кратком руководстве по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) позволяют реагировать на события [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) и [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) , на которые имеется подписка. Подробнее см. в [кратком руководстве по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 Чтобы выполнить отладку или тестирование кода, учитывающего стоимость сетевых подключений, имитатор может имитировать свойства сети, представляемые с помощью объекта [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile), который возвращается методом [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -139,7 +139,7 @@ ms.locfileid: "85348145"
 
 Дополнительные сведения об управлении сетевыми подключениями см. в следующих статьях.
 
-[Краткое руководство. Управление ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+[Краткое руководство. Управление ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 [Пример информации по сети](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

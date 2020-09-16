@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596961"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036526"
 ---
 # <a name="quick-actions"></a>Быстрые действия
 
@@ -27,7 +27,7 @@ ms.locfileid: "75596961"
 
 ::: moniker range=">=vs-2019"
 
-- [игнорирование](../code-quality/use-roslyn-analyzers.md#suppress-violations) нарушений правил анализа кода или [настройка](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) их уровня серьезности;
+- [игнорирование](../code-quality/use-roslyn-analyzers.md#suppress-violations) нарушений правил анализа кода или [настройка](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) их уровня серьезности;
 
 ::: moniker-end
 

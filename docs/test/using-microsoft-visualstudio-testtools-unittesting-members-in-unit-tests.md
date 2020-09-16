@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585565"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038625"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Использование платформы MSTest в модульных тестах
 
@@ -43,7 +43,7 @@ ms.locfileid: "75585565"
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Атрибуты, используемые для упорядочивания вызовов
 
-Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в статье [Составляющие модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в статье [Составляющие модульного теста](/previous-versions/ms182517(v=vs.110)).
 
 ### <a name="attributes-for-assemblies"></a>Атрибуты для сборок
 
@@ -69,7 +69,7 @@ ms.locfileid: "75585565"
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Атрибуты для идентификации тестовых классов и методов
 
-Каждый тестовый класс должен иметь атрибут `TestClass`, а каждый тестовый метод — атрибут `TestMethod`. Дополнительные сведения см. в статье [Составляющие модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Каждый тестовый класс должен иметь атрибут `TestClass`, а каждый тестовый метод — атрибут `TestMethod`. Дополнительные сведения см. в статье [Составляющие модульного теста](/previous-versions/ms182517(v=vs.110)).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211274"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600180"
 ---
 # <a name="com-debugging-tools"></a>Средства отладки модели COM
 
@@ -46,5 +46,5 @@ OLEVIEW отображает объекты ActiveX и OLE, установлен
 - [Средства отладки модели COM](../debugger/com-debugging-tools.md)
 - [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
-- [Пример OCLIENT. Иллюстрирует контейнерное приложение визуального редактирования](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Пример SUPERPAD. Демонстрирует сервер визуального редактирования, который редактирует текст с помощью CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Пример OCLIENT. Иллюстрирует контейнерное приложение визуального редактирования](/previous-versions/c2f86tzd(v=vs.100))
+- [Пример SUPERPAD. Демонстрирует сервер визуального редактирования, который редактирует текст с помощью CEditView](/previous-versions/ms177543(v=vs.100))

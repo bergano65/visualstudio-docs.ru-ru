@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460842"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599625"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Ошибка: сбой отладки из-за того, что отключена встроенная проверка подлинности Windows
 Проверка подлинности пользователя, запросившего отладку, была прервана ошибкой проверки подлинности. Это может произойти при попытке выполнить пошаговую отладку веб-приложения или веб-службы XML. Одна из причин этой ошибки в том, что встроенная проверка подлинности Windows не включена. Чтобы включить ее, следуйте шагам в разделе "Включение встроенной проверки подлинности Windows".
@@ -116,4 +116,4 @@ ms.locfileid: "85460842"
 ## <a name="see-also"></a>См. также
 - [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Дайджест-проверка подлинности Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Запуск веб-приложений в Windows Vista с помощью IIS 7.0 и Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Запуск веб-приложений в Windows Vista с помощью IIS 7.0 и Visual Studio](/previous-versions/aa964620(v=vs.140))

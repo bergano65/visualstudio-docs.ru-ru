@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350398"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599883"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Как отладить функции Windows API?
 Если нужно отладить функцию Windows API с загруженными символами NT, необходимо выполнить следующие действия.
@@ -40,7 +40,7 @@ ms.locfileid: "85350398"
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Чтобы получить внутреннее имя, обратитесь к разделу [Просмотр внутренних имен](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Чтобы получить внутреннее имя, обратитесь к разделу [Просмотр внутренних имен](/previous-versions/5x49w699(v=vs.140)).
 
      Можно проверить внутреннее имя и просмотреть его в дизассемблированном коде. При паузе в выполнении функции в отладчике Visual Studio щелкните функцию правой кнопкой мыши в окне редактора кода или окне стека вызовов выберите **К дизассемблированному коду**.
 

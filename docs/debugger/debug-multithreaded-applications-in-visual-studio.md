@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431803"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600330"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Отладка многопоточных приложений в Visual Studio
 Поток — это последовательность инструкций, которой операционная система предоставляет время процессора. Каждый процесс, выполняющийся в операционной системе, состоит по крайней мере из одного потока. Процессы, имеющие более одного потока, называются многопоточными.
@@ -102,7 +102,7 @@ Visual Studio также предоставляет эффективные ср
 
 - [Использование точек останова](../debugger/using-breakpoints.md)
 - [Работа с потоками](/dotnet/standard/threading/index)
-- [Многопоточность в компонентах](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [Многопоточность в компонентах](/previous-versions/3es4b6yy(v=vs.140))
 - [Поддержка многопоточности для устаревшего кода](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Отладка потоков и процессов](../debugger/debug-threads-and-processes.md)
 - [Удаленная отладка](../debugger/remote-debugging.md)

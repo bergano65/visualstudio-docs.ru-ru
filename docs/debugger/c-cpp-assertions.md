@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911607"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600209"
 ---
 # <a name="cc-assertions"></a>Утверждения C/C++
 Оператор утверждения задает условие, которое должно выполняться на определенном этапе работы программы. Если это условие не выполняется, утверждение признается ложным, выполнение программы прерывается и появляется [диалоговое окно "Сбой утверждения"](../debugger/assertion-failed-dialog-box.md).
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [Содержание раздела](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> Утверждения MFC
-Для проверки утверждения MFC определяет макрос [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c). Здесь также определяются методы `MFC ASSERT_VALID` и `CObject::AssertValid` для проверки внутреннего состояния объекта, производного от `CObject`.
+Для проверки утверждения MFC определяет макрос [ASSERT](/previous-versions/ew16s3zc(v=vs.140)). Здесь также определяются методы `MFC ASSERT_VALID` и `CObject::AssertValid` для проверки внутреннего состояния объекта, производного от `CObject`.
 
 Если аргумент MFC-макроса `ASSERT` равняется нулю или значению false, макрос останавливает выполнение программы и предупреждает пользователя; в противном случае выполнение продолжается.
 
@@ -175,7 +175,7 @@ ASSERT можно применять с функцией [IsKindOf](/cpp/mfc/ref
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-Макрос `ASSERT` не создает никакого кода в окончательной версии. Если именно в окончательной версии нужно оценить выражение, вместо ASSERT следует применять макрос [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify).
+Макрос `ASSERT` не создает никакого кода в окончательной версии. Если именно в окончательной версии нужно оценить выражение, вместо ASSERT следует применять макрос [VERIFY](/cpp/mfc/reference/diagnostic-services#verify).
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID и CObject::AssertValid
 Функция-член [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) периодически проверяет внутреннее состояние объекта во время выполнения. Переопределение функции `AssertValid` при получении класса из `CObject` позволяет сделать данный класс более надежным, хотя такое переопределение необязательно. Функция `AssertValid` должна выполнить утверждения для всех переменных-членов объекта, чтобы подтвердить наличие только допустимых значений. Например, с ее помощью следует проверить, что переменные-члены указателя не равны NULL.

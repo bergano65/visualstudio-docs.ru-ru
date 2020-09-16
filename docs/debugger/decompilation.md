@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350567"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600109"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Создание исходного кода из сборок .NET во время отладки
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350567"
 > [!NOTE]
 > * Создание исходного кода (декомпиляция) возможно только для приложений .NET и построено на проекте [ILSpy](https://github.com/icsharpcode/ILSpy) с открытым кодом.
 > * Декомпиляция доступна только в Visual Studio 2019 версии 16.5 и более поздних версий.
-> * Атрибут [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute), примененный к сборке или модулю, не позволит Visual Studio выполнить декомпиляцию.
+> * Атрибут [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute), примененный к сборке или модулю, не позволит Visual Studio выполнить декомпиляцию.
 
 ## <a name="generate-source-code"></a>Создание исходного кода
 
@@ -99,7 +99,7 @@ ms.locfileid: "85350567"
 
 ### <a name="just-my-code"></a>Только мой код
 
-Параметры режима [Только мой код (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) позволяют Visual Studio выполнять шаг с обходом системы, платформы, библиотеки и других вызовов непользовательского кода. Во время сеанса отладки в окне **Модули** отображаются модули кода, которые отладчик воспринимает как "Мой код" (т. е. пользовательский код).
+Параметры режима [Только мой код (JMC)](./just-my-code.md) позволяют Visual Studio выполнять шаг с обходом системы, платформы, библиотеки и других вызовов непользовательского кода. Во время сеанса отладки в окне **Модули** отображаются модули кода, которые отладчик воспринимает как "Мой код" (т. е. пользовательский код).
 
 При декомпиляции оптимизированных модулей или модулей выпуска создается непользовательский код. Если отладчик прерывается в декомпилированном непользовательском коде, появляется окно **Отсутствует источник**. Чтобы отключить режим "Только мой код", перейдите в раздел **Инструменты** > **Параметры** (или **Отладка** > **Параметры**) > **Отладка** > **Общие** и снимите флажок **Включить только мой код.** .
 

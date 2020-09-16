@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291064"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037534"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Анализ производительности базы данных с помощью инструмента "База данных"
 
 С помощью инструмента "База данных" можно вести запись запросов к базе данных, которые отправляет приложение в ходе диагностического сеанса. Сведения об отдельных запросах затем можно анализировать, чтобы определить области для улучшения производительности приложения.
 
 > [!NOTE]
-> Для работы инструмента "База данных" требуется Visual Studio 2019 версии 16.3 или более поздней и проект .NET Core в Windows, использующий [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) или [Entity Framework Core](https://docs.microsoft.com/ef/core/).
+> Для работы инструмента "База данных" требуется Visual Studio 2019 версии 16.3 или более поздней и проект .NET Core в Windows, использующий [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) или [Entity Framework Core](/ef/core/).
 
 ## <a name="setup"></a>Установка
 
@@ -50,7 +50,7 @@ ms.locfileid: "85291064"
 
 ![Выбор пункта "Перейти к исходному файлу"](./media/db-gotosource.png "Выбор пункта Перейти к исходному файлу")
 
-Если вы укажете диапазон на временной шкале, в таблице будут показаны только те запросы, которые выполнялись в это время. Это особенно полезно при использовании инструмента "База данных" в паре с [инструментом "Загрузка ЦП"](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
+Если вы укажете диапазон на временной шкале, в таблице будут показаны только те запросы, которые выполнялись в это время. Это особенно полезно при использовании инструмента "База данных" в паре с [инструментом "Загрузка ЦП"](./cpu-usage.md?view=vs-2019).
 
 ## <a name="see-also"></a>См. также
 

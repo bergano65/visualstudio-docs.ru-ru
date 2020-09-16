@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77192407"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037345"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 
@@ -49,7 +49,7 @@ ms.locfileid: "77192407"
 |[Представление "Потоки"](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|
 |[Представление "Ядра"](../profiling/cores-view.md)|Содержит описание процедуры анализа миграции потоков между ядрами.|
 |[Общие шаблоны для неправильно работающих многопоточных приложений](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Описывает несколько общих шаблонов и показывает, как они отображаются в визуализаторе параллелизма.|
-|[Блог о параллельной разработке в Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Содержит советы и рекомендации для визуализатора параллелизма.|
+|[Блог о параллельной разработке в Visual Studio](/archive/blogs/visualizeparallel/)|Содержит советы и рекомендации для визуализатора параллелизма.|
 |[Представления отчетов о производительности](../profiling/performance-report-views.md)|Содержит справочные сведения по отчетам и представлениям средств профилирования Visual Studio.|
 |[Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)|Описывает, как инструментировать исходный код для отображения дополнительных сведений в визуализаторе параллелизма.|
 |[Служебная программа командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Описывает, как использовать программу командной строки визуализатора параллелизма (CVCollectionCmd.exe) для сбора и обработки трассировки на компьютерах, на которых не установлена Visual Studio.|

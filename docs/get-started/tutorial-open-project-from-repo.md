@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180442"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743031"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Учебник. Открытие проекта из репозитория
 
@@ -180,8 +180,8 @@ ms.locfileid: "70180442"
 - [Учебники по Visual Studio | **C#** ](./csharp/index.yml)
 - [Учебники по Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Учебники по Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
-- [Учебники по Visual Studio | **Python**](/visualstudio/python/)
-- [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](/visualstudio/javascript/)
+- [Учебники по Visual Studio | **Python**](../python/index.yml)
+- [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>См. также
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350463"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600101"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Начало работы с диагностикой графики Visual Studio
 В этом разделе вы подготовитесь к первому использованию диагностики графики, а затем запишите кадры из приложения Direct3D и проверите их в анализаторе графики.
@@ -56,7 +56,7 @@ ms.locfileid: "85350463"
 Если у вас уже есть свое приложение Direct3D для изучения диагностики графики, это замечательно! Или используйте одно из следующих значений:
 
 ::: moniker range=">=vs-2019"
-Скачайте [пример игры Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+Скачайте [пример игры Direct3D](/samples/microsoft/windows-universal-samples/simple3dgamedx/).
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Шаблоны проекта **Приложение DirectX 11 (универсальное приложение Windows)** или **Приложение DirectX 12 (универсальное приложение Windows)** для Windows 10.

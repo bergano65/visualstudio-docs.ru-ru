@@ -1,17 +1,18 @@
 ---
 title: Расширение существующего веб-приложения ASP.NET Core
 description: Этот документ содержит видеоучебники, показывающие, как расширить пример eShopOnWeb приложения ASP.NET Core.
+ms.custom: SEO-VS-2020
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: tutorial
-ms.openlocfilehash: aa0267cc185a83249c381d22b995570a2f3f244d
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d2813f70a497df9057f312f561504639b4e1afcd
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800793"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036994"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>Учебник. Расширение существующего веб-приложения ASP.NET Core
 

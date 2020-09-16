@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778431"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038612"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
 
@@ -42,9 +42,9 @@ ms.locfileid: "74778431"
 - [Запуск приложений UWP на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Первое знакомство со средствами профилирования](profiling-feature-tour.md)
 - [Память JavaScript](../profiling/javascript-memory.md)
-- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows на локальном компьютере](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows на удаленном устройстве](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Анализ данных по производительности кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows на локальном компьютере](/previous-versions/hh696631(v=vs.140))
+- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows на удаленном устройстве](/previous-versions/hh972878(v=vs.140))
+- [Анализ данных по производительности кода Visual C++, Visual C# и Visual Basic в приложениях универсальной платформы Windows](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio
 
