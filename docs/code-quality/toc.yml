@@ -10,12 +10,10 @@
         - name: Конфигурация
           expanded: true
           items:
+            - name: Обзор
+              href: use-roslyn-analyzers.md
             - name: Качество кода
-              items:
-                - name: Overview
-                  href: use-roslyn-analyzers.md
-                - name: Настройка анализа качества кода с помощью EditorConfig
-                  href: configure-fxcop-analyzers.md
+              href: configure-fxcop-analyzers.md
             - name: Настройка динамического анализа кода
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Запуск анализа кода вручную
