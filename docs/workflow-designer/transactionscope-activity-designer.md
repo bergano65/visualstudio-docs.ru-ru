@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114819"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713481"
 ---
 # <a name="transactionscope-activity-designer"></a>Конструктор действия TransactionScope
 
@@ -39,7 +39,7 @@ ms.locfileid: "76114819"
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Верно|Указывает действие, которое следует выполнить за одну транзакцию. Чтобы добавить <xref:System.Activities.Statements.TransactionScope.Body%2A> действие, перетащите действие из **области элементов** в поле **текст** в конструкторе операций **TransactionScope** с текстом подсказки "перетащите действие сюда".|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Верно|Задает <xref:System.Transactions.IsolationLevel> для объекта <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Неверно|Задает интервал времени (в формате 00:00:00, что означает часы:минуты:секунды), в течение которого транзакция должна завершиться. Значение по умолчанию - 1 минута (00:01:00).|
-|[System. Activity. Transactions. TransactionScope. AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Верно|Задает значение, которое указывает, следует ли прерывать рабочий процесс, если прервана транзакция.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Верно|Задает значение, которое указывает, следует ли прерывать рабочий процесс, если прервана транзакция.|
 
 ## <a name="see-also"></a>См. также раздел
 
