@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416566"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809353"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Развертывание решения Office с помощью ClickOnce
   Решение Office можно развернуть быстрее, если использовать ClickOnce. При публикации обновлений решение автоматически обнаруживает и устанавливает их. Однако для использования ClickOnce необходимо устанавливать решение отдельно для каждого пользователя компьютера. Поэтому следует рассмотреть возможность использования установщик Windows (*. msi*), если решение на одном компьютере будет выполняться более чем одним пользователем.
@@ -358,7 +358,7 @@ ms.locfileid: "79416566"
 |Код ошибки|Определение|
 |----------------|----------------|
 |0|Решение было успешно установлено или удалено, или появилась справка VSTOInstaller.|
-|–100|Один или несколько параметров командной строки являются недопустимыми или заданы несколько раз. Для получения дополнительных сведений введите «встоинсталлер/?». или см. раздел [Создание пользовательского установщика для решения ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|–100|Один или несколько параметров командной строки являются недопустимыми или заданы несколько раз. Для получения дополнительных сведений введите «встоинсталлер/?». или см. раздел [Создание пользовательского установщика для решения ClickOnce Office](/previous-versions/bb772078(v=vs.110)).|
 |–101|Один или несколько параметров командной строки являются недопустимыми. Для получения дополнительных сведений введите команду "vstoinstaller /?".|
 |-200|Недопустимый URI манифеста развертывания. Для получения дополнительных сведений введите команду "vstoinstaller /?".|
 |-201|Не удалось установить решение, так как манифест развертывания является недопустимым. См. раздел [манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md).|
@@ -460,7 +460,7 @@ ms.locfileid: "79416566"
 
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)
 - [Публикация решений Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Инструкции. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Руководство. Установка решения ClickOnce для Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Инструкции. Публикация решения Office на уровне документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [Создание пользовательского установщика для решения ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [Инструкции. Публикация решения Office с помощью ClickOnce](/previous-versions/bb386095(v=vs.110))
+- [Руководство. Установка решения ClickOnce для Office](/previous-versions/bb608592(v=vs.110))
+- [Инструкции. Публикация решения Office на уровне документа на сервере SharePoint с помощью ClickOnce](/previous-versions/bb608595(v=vs.110))
+- [Создание пользовательского установщика для решения ClickOnce Office](/previous-versions/bb772078(v=vs.110))

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836062"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810971"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Необходимые изменения для запуска проектов Office, переносимых на .NET Framework 4 или .NET Framework 4,5
   Если целевая платформа проекта Office изменена на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздняя из более ранней версии .NET Framework, необходимо выполнить следующие задачи, чтобы обеспечить возможность запуска решения на компьютере разработчика и на компьютерах конечных пользователей.
@@ -64,7 +64,7 @@ ms.locfileid: "66836062"
 ## <a name="update-the-prerequisites-for-deployment"></a>Обновление необходимых компонентов для развертывания
  При изменении целевой платформы для проекта Office на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии необходимо также обновить соответствующий обязательный .NET Framework в диалоговом окне " **необходимые компоненты** ". В противном случае процесс развертывания с помощью ClickOnce или проект InstallShield Limited Edition проверяет наличие предыдущей версии платформы .NET Framework и устанавливает ее.
 
- Дополнительные сведения об обновлении необходимых компонентов для развертывания на компьютерах конечных пользователей см. в разделе [инструкции. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Дополнительные сведения об обновлении необходимых компонентов для развертывания на компьютерах конечных пользователей см. в разделе [инструкции. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](/previous-versions/bb608608(v=vs.110)).
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Переустановка решений на компьютерах конечных пользователей
  Если вы используете технологию ClickOnce для развертывания решения Office, которое ориентируется на платформу .NET Framework 3.5, а затем переориентируете проект на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо удалить решение, а затем переустановить после его повторной публикации. При повторной публикации перенацеленного решения и обновлении решения на компьютерах конечных пользователей <xref:System.Runtime.InteropServices.COMException> при запуске обновленного решения пользователи получат сообщение.

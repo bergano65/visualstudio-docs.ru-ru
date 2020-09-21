@@ -1,29 +1,29 @@
 ---
-title: предупреждения производительности
+title: Правила производительности
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
-- warnings, performance
-- performance warnings
-- performance, warnings
-- managed code analysis warnings, performance warnings
+- rules, performance
+- performance rules
+- performance, rules
+- managed code analysis rules, performance rules
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e798b3a47d6a9d606e3c25768895096f752f53
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7ee44b74ca47de8059b68d95ea5e06c801842bc7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508994"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808575"
 ---
-# <a name="performance-warnings"></a>предупреждения производительности
-Предупреждения производительности поддерживают высокопроизводительные библиотеки и приложения.
+# <a name="performance-rules"></a>Правила производительности
+Правила производительности поддерживают высокопроизводительные библиотеки и приложения.
 
 ## <a name="in-this-section"></a>в этом разделе
 
@@ -52,7 +52,7 @@ ms.locfileid: "89508994"
 | [CA1831: при необходимости используйте AsSpan вместо индексаторов на основе диапазона для строки](../code-quality/ca1831.md) | При использовании в строке индексатора Range и неявного присваивания значения Реадонлиспан &lt; &gt; типу Char метод <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части строки. |
 | [CA1832: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива ReadOnlySpan или ReadOnlyMemory](../code-quality/ca1832.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
 | [CA1833: используйте AsSpan или AsMemory вместо индексаторов на основе диапазона для получения части массива Span или Memory](../code-quality/ca1833.md) | При использовании индексатора диапазонов для массива и неявного присваивания значения <xref:System.Span%601> <xref:System.Memory%601> типу или, метод <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> будет использоваться вместо <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , который создает копию запрошенной части массива. |
-| [CA1834: используйте StringBuilder. append (char) для отдельных символьных строк](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> имеет `Append` перегрузку, которая принимает в `char` качестве аргумента. Предпочитать вызов `char` перегрузки для повышения производительности. |
+| [CA1834: используйте StringBuilder.Append(char) для строк с одним символом.](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> имеет `Append` перегрузку, которая принимает в `char` качестве аргумента. Предпочитать вызов `char` перегрузки для повышения производительности. |
 | [CA1835: предпочитать перегрузки на основе Мемори' для "ReadAsync" и "WriteAsync"](../code-quality/ca1835.md) | "Stream" имеет перегрузку "ReadAsync", которая принимает " &lt; байт памяти &gt; " в качестве первого аргумента, и перегрузка "WriteAsync", принимающая в &lt; &gt; качестве первого аргумента значение "реадонлимемори Byte". Предпочитать вызов перегрузок на основе памяти, что более эффективно. |
 | [CA1836: предпочитать `IsEmpty` `Count` при доступности](../code-quality/ca1836.md) | Предпочитать `IsEmpty` свойство, которое более эффективно, чем `Count` , `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> или, <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> чтобы определить, содержит ли объект какие-либо элементы или нет. |
 | [CA1837: используйте `Environment.ProcessId` вместо `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` проще и быстрее, чем `Process.GetCurrentProcess().Id` . |

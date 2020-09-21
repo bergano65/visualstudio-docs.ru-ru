@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986162"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809366"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.
@@ -28,7 +28,7 @@ ms.locfileid: "72986162"
 
  Последние сведения о разработке решений Office см. в [центре разработчиков Microsoft Office](https://developer.microsoft.com/office/docs).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Ссылки на сведения о настройке компьютера разработчика для создания решений Office, первых шагах по созданию решений Office, а также новых возможностях разработки решений Office в Visual Studio.
@@ -49,11 +49,11 @@ ms.locfileid: "72986162"
 
  Сведения об использовании управляемого кода в решениях Office, в том числе о настройке пользовательского интерфейса Office, о работе с данными и об устранении неполадок.
 
-- [решения Excel](excel-solutions.md)
+- [Решения Excel](excel-solutions.md)
 
  Сведения об автоматизации работы Excel, о создании решений Excel, а также о характерных для Excel проблемах, связанных с глобализацией.
 
-- [решения InfoPath](infopath-solutions.md)
+- [Решения InfoPath](infopath-solutions.md)
 
  Сведения о способах создания шаблонов форм и надстроек VSTO для InfoPath.
 
@@ -73,7 +73,7 @@ ms.locfileid: "72986162"
 
  Сведения об автоматизации работы Visio и о создании надстроек VSTO Visio.
 
-- [решения Word](word-solutions.md)
+- [Решения Word](word-solutions.md)
 
  Сведения об автоматизации работы Word и о создании решений Word.
 
@@ -116,6 +116,6 @@ ms.locfileid: "72986162"
 
 - [Раздел "разработка Microsoft Office" библиотеки MSDN](/previous-versions/office/office-12/bb726434(v=office.12)) Область библиотеки MSDN, в которой можно найти статьи и справочную документацию по разработке решений для нескольких версий Office (не только для разработки Office с помощью Visual Studio).
 
-- [Разработка приложений в Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Содержит ссылки на разделы, в которых объясняется, как можно использовать Visual Studio для проектирования, разработки, отладки и развертывания веб-приложений, веб-служб XML и традиционных клиентских приложений.
+- [Разработка приложений в Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Содержит ссылки на разделы, в которых объясняется, как можно использовать Visual Studio для проектирования, разработки, отладки и развертывания веб-приложений, веб-служб XML и традиционных клиентских приложений.
 
 - [.NET Framework программировании в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Обсуждается разработка приложений с помощью .NET Framework в Visual Basic и Visual C#.

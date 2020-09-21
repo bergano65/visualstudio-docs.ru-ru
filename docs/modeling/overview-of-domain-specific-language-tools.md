@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532371"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808081"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 Средства предметно-ориентированных языков (средства DSL), которые размещаются в Visual Studio, позволяют проектировать предметно-ориентированный язык, а затем создавать все, что нужно, пользователям для создания моделей на базе этого языка.
@@ -77,4 +77,4 @@ ms.locfileid: "85532371"
 ## <a name="see-also"></a>См. также раздел
 
 - [Экспериментальный экземпляр](../extensibility/the-experimental-instance.md)
-- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](/previous-versions/bb126564(v=vs.100))

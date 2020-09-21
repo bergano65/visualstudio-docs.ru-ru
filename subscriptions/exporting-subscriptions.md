@@ -30,7 +30,7 @@ ms.locfileid: "87453565"
 1. Войдите на [портал администрирования](https://manage.visualstudio.com).
 2. Выберите вкладку **Экспорт**, и файл загрузится на локальный компьютер. Имя файла будет содержать имя соглашения с подпиской вашего пользователя и датой экспорта.
 > [!div class="mx-imgBorder"]
-> ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png "Щелкните "Экспорт", чтобы скачать полный список назначенных подписок.")
+> ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png "Щелкните «Экспорт», чтобы скачать полный список назначенных подписок.")
 
 ## <a name="see-also"></a>См. также
 - [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)

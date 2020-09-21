@@ -1,5 +1,6 @@
 ---
-title: Как указать, какие файлы публикуются с помощью ClickOnce | Документация Майкрософт
+title: Указание файлов для публикации (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ab6d724b40168f84227edb6ccfafc6245c30e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381786"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809496"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Практическое руководство. Задание файлов, публикуемых с помощью ClickOnce
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения все файлы, не являющиеся файлами кода проекта, развертываются вместе с приложением. В некоторых случаях может не потребоваться публикация определенных файлов или установка определенных файлов на основе условий. Visual Studio предоставляет возможности для исключения файлов, пометки файлов как файлов данных или необходимых компонентов, а также создания групп файлов для условной установки.

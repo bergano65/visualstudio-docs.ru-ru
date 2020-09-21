@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasCastOperator | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasCastOperator | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c29a8ddf3cf2f5a48f08c8baef4f41d59ad632e5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64797995"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90829668"
 ---
-# <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
+# <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, имеет ли тип пользовательских данных, любые операторы приведения, определенные.  
+Получает флаг, указывающий, содержит ли определяемый пользователем тип данных какие-либо операторы CAST.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_hasCastOperator ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если определяемый пользователем тип имеет любые операторы приведения определяется; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает, `TRUE` Если определяемый пользователем тип данных имеет определенные операторы приведения; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
@@ -47,8 +47,8 @@ HRESULT get_hasCastOperator ( 
   
 |Требование|Описание|  
 |-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 7.0|  
+|Заголовок:|dia2. h|  
+|Версия:|Пакет SDK для DIA версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

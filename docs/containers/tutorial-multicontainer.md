@@ -1,17 +1,18 @@
 ---
-title: Руководство по использованию нескольких контейнеров Docker Compose и ASP.NET Core
+title: Использование нескольких контейнеров с помощью Docker Compose
 author: ghogen
 description: Узнайте, как использовать несколько контейнеров с помощью Docker Compose
+ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490317"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037215"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Учебник. Создание многоконтейнерного приложения с помощью Docker Compose
 

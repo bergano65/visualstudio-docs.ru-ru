@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Вопросы выставления счетов за подписки на облачные службы.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561329"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641438"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio
 Сначала [сравните преимущества облачных подписок и цены](https://visualstudio.microsoft.com/vs/pricing/), чтобы понять преимущества каждой подписки Visual Studio, сравнить облачные и стандартные подписки Visual Studio, изучить детали преимуществ для подписчиков и многое другое.
@@ -31,7 +31,7 @@ ms.locfileid: "89561329"
 
 ## <a name="enterprise-agreement-ea-customers"></a>Клиенты с соглашением Enterprise (EA)
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Вопрос: Могу ли я использовать соглашение Enterprise для приобретения облачных подписок Visual Studio?
-Ответ. Да, можете. Необходимо быть владельцем или участником подписки Azure, созданной для вашего соглашения Enterprise. Убедитесь, что приобретаете облачные подписки Visual Studio непосредственно в Visual Studio Marketplace. Нельзя приобретать облачные подписки Visual Studio по заказу на покупку.
+Ответ. Да, можете. Необходимо иметь как минимум роль участника подписки Azure, созданной для вашего соглашения Enterprise. Убедитесь, что приобретаете облачные подписки Visual Studio непосредственно в Visual Studio Marketplace. Нельзя приобретать облачные подписки Visual Studio по заказу на покупку.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Вопрос: Как определить, есть ли у меня необходимые разрешения для приобретения служб в Visual Studio Marketplace по Соглашению Enterprise моей организации?
 Ответ. Самый простой способ определить, есть ли у вас необходимые разрешения, — нажать кнопку **Купить** для службы, предлагаемой в Visual Studio Marketplace.

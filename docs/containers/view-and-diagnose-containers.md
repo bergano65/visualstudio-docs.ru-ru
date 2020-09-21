@@ -1,5 +1,5 @@
 ---
-title: Журналы контейнеров Docker, переменные окружения и доступ к файловой системе
+title: Просмотр и диагностика контейнеров и образов Docker
 description: Узнайте, как расширить возможности отладки и диагностики контейнерных приложений в Visual Studio с помощью окна инструментов, которое позволяет видеть, что происходит в контейнерах с приложением.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490304"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742782"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Сведения о просмотре и диагностике контейнеров и изображений в Visual Studio
 

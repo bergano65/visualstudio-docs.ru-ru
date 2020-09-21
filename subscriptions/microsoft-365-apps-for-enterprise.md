@@ -1,5 +1,5 @@
 ---
-title: Преимущество "Приложения Microsoft 365 для предприятий" в подписках Visual Studio | Документация Майкрософт
+title: Приложения Microsoft 365 для предприятий в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Сведения о преимуществе "Приложения Microsoft 365 для предприятий" и о его установке
-ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800818"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561256"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Приложения Microsoft 365 для предприятий в подписках Visual Studio
 Преимущество "Приложения Microsoft 365 для предприятий" (ранее Office 365 профессиональный плюс) доступно в выбранных подписках Visual Studio. 
@@ -28,7 +28,7 @@ ms.locfileid: "88800818"
 1. Войдите в свою подписку Visual Studio на странице [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 1. Найдите элемент "Приложения Microsoft 365 для предприятий" и нажмите **Активировать**.
    > [!div class="mx-imgBorder"]
-   > ![Элемент "Приложения Microsoft 365 для предприятий"](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Нажмите кнопку "Активировать", чтобы начать работу с подпиской.")
+   > ![Элемент "Приложения Microsoft 365 для предприятий"](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Нажмите кнопку «Активировать» , чтобы начать работу с подпиской.")
 
 1. В диалоговом окне "Добро пожаловать! Укажите сведения о себе" введите требуемые персональные контактные данные и нажмите кнопку **Далее**.
    > [!div class="mx-imgBorder"]
@@ -48,7 +48,7 @@ ms.locfileid: "88800818"
 
 1. Вы автоматически войдете в систему на портале Office и сможете перейти к установке приложений.  Нажмите кнопку **Установить**, чтобы начать установку.
    > [!div class="mx-imgBorder"]
-   > ![Преимущество "Приложения Microsoft 365 для предприятий" — установка](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Нажмите кнопку "Установить", чтобы установить приложения.")
+   > ![Преимущество "Приложения Microsoft 365 для предприятий" — установка](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Нажмите кнопку «Установить» , чтобы установить приложения.")
 1. Следуйте инструкциям для установки выбранных приложений.  
 
 ## <a name="eligibility"></a>Право на участие

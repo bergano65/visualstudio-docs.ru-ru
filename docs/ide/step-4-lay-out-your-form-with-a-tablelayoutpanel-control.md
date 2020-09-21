@@ -1,6 +1,8 @@
 ---
-title: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
+title: Создание макета формы с помощью элемента управления TableLayoutPanel
+description: Создание макета формы с помощью элемента управления TableLayoutPanel в учебнике по созданию средств просмотра изображений.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4a0035040c3cce0c40b8462225c48aa5225b40d1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579379"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036981"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
 
@@ -62,7 +64,7 @@ ms.locfileid: "77579379"
 1. Обратите внимание на то, что после присвоения свойству **Dock** элемента управления TableLayoutPanel значения **Fill** панель заполнит всю форму. Если снова изменить размер формы, элемент управления TableLayoutPanel останется закрепленным и сам изменит свой размер для заполнения формы.
 
     > [!NOTE]
-    > Элемент управления TableLayoutPanel работает как таблица в Microsoft Office Word: он содержит строки и столбцы, и отдельная ячейка может занимать несколько строк и столбцов. Каждая ячейка может содержать один элемент управления (например, кнопку, флажок или метку). Этот элемент управления TableLayoutPanel должен содержать элемент управления <xref:System.Windows.Forms.PictureBox>, который займет всю верхнюю строку, элемент управления <xref:System.Windows.Forms.CheckBox> в левой нижней ячейке и четыре элемента управления <xref:System.Windows.Forms.Button> в правой нижней ячейке.
+    > Элемент управления TableLayoutPanel работает как таблица в Microsoft Office Word — он содержит строки и столбцы и отдельная ячейка может занимать несколько строк и столбцов. Каждая ячейка может содержать один элемент управления (например, кнопку, флажок или метку). Этот элемент управления TableLayoutPanel должен содержать элемент управления <xref:System.Windows.Forms.PictureBox>, который займет всю верхнюю строку, элемент управления <xref:System.Windows.Forms.CheckBox> в левой нижней ячейке и четыре элемента управления <xref:System.Windows.Forms.Button> в правой нижней ячейке.
 
 1. В данный момент элемент управления TableLayoutPanel содержит две одинаковые по размеру строки и два одинаковых по размеру столбца. Давайте изменим их размер, чтобы верхняя строка и правый столбец были намного больше. В **конструкторе Windows Forms** выберите элемент управления TableLayoutPanel. В правом верхнем углу расположена маленькая кнопка с черным треугольником, как показано на рисунке ниже.
 
@@ -88,11 +90,11 @@ ms.locfileid: "77579379"
      ![Form1 с измененным размером TableLayoutPanel](../ide/media/vs_formafterlayoutpanel.png)<br>
 *Элемент ***Form1*** (средство просмотра изображений) с измененным размером* ***TableLayoutPanel***
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Следующий раздел руководства: **[Шаг 5. Добавление элементов управления в форму](../ide/step-5-add-controls-to-your-form.md)** .
 
-* Предыдущий раздел руководства: [Шаг 3. Настройка свойств формы](../ide/step-3-set-your-form-properties.md).
+* Предыдущий раздел: [Шаг 3. Задание свойств формы](../ide/step-3-set-your-form-properties.md).
 
 ## <a name="see-also"></a>См. также
 

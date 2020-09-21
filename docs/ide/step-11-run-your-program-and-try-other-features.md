@@ -1,6 +1,8 @@
 ---
-title: Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
+title: Запуск приложения для просмотра изображений и изучение других функций
+description: Запустите приложение для просмотра изображений и воспользуйтесь другими функциями из учебника по созданию средств просмотра изображений.
 ms.date: 09/11/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579902"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036942"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
 
@@ -54,7 +56,7 @@ ms.locfileid: "77579902"
 > [!div class="nextstepaction"]
 > [Учебник 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-Предыдущий раздел руководства: [Шаг 10. Написание кода для дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+Предыдущий раздел: [Шаг 10. Написание кода дополнительных кнопок и флажка](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
 ## <a name="see-also"></a>См. также
 

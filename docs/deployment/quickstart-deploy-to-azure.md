@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800311"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036422"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Публикация веб-приложения в службе приложений Azure с помощью Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "88800311"
 
 * Для непрерывного (или автоматического) развертывания приложений используйте Azure DevOps с [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* Для однократного развертывания (или развертывания вручную) используйте средство **публикации** в Visual Studio, чтобы развертывать приложения ASP.NET, ASP.NET Core, Node.js и .NET Core в службе приложений Azure или службе приложений для Linux (с помощью контейнеров). Для приложений Python выполните инструкции, приведенные в статье [Python: публикация в службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* Для однократного развертывания (или развертывания вручную) используйте средство **публикации** в Visual Studio, чтобы развертывать приложения ASP.NET, ASP.NET Core, Node.js и .NET Core в службе приложений Azure или [службе приложений для Linux](../deployment/quickstart-deploy-to-linux.md) (с помощью контейнеров). Для приложений Python выполните инструкции, приведенные в статье [Python: публикация в службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 В этой статье описывается использование средства **публикации** для однократного развертывания.
 
@@ -35,7 +35,9 @@ ms.locfileid: "88800311"
 
     ![Команда Опубликовать в контекстном меню проекта в обозревателе решений](../deployment/media/quickstart-publish.png "Выбор команды Опубликовать")
 
-1. Выберите **Azure** в диалоговом окне **Публикация**.
+1. Если ранее вы настроили какие-либо профили публикации, появится окно **Опубликовать**. Нажмите кнопку **Создать**.
+
+1. В окне **Публикация** выберите **Azure**.
 
     ![Выбор целевого объекта публикации](../deployment/media/quickstart-publish-azure-new.png)
 
@@ -61,7 +63,7 @@ ms.locfileid: "88800311"
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 
-На предыдущих шагах вы создали ресурсы Azure в группе ресурсов. Если вы не планируете использовать эти ресурсы в будущем, вы можете удалить их, удалив саму группу ресурсов.
+На предыдущем шаге вы создали ресурсы Azure в группе ресурсов. Если вы не планируете использовать эти ресурсы в будущем, вы можете удалить их, удалив саму группу ресурсов.
 В меню слева на портале Azure выберите **Группы ресурсов**, после чего щелкните **myResourceGroup**.
 На странице группы ресурсов проверьте, действительно ли требуется удалить перечисленные ресурсы.
 Выберите **Удалить**, введите **myResourceGroup** в текстовое поле, после чего щелкните **Удалить**.

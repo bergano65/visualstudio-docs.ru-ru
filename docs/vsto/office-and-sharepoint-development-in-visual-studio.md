@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800948"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811036"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Разработка приложений для Office и SharePoint в Visual Studio
   Вы можете расширить возможности Microsoft Office и SharePoint, создав облегченное приложение или надстройку, которые пользователи загружают из [Магазина Office](https://store.office.com/) или каталога организации, либо создав решение на основе .NET Framework, которое пользователи устанавливают на компьютерах.
@@ -57,12 +57,12 @@ ms.locfileid: "88800948"
 
  ![Приложения содержимого для Office](../vsto/media/appforoffice.png "Приложения содержимого для Office")
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
 |Узнайте больше о надстройках Office, а затем создайте собственную надстройку.|[Надстройки Office](/office/dev/add-ins/publish/publish)|
-|Сравните различные способы расширения возможностей Office и решите, следует ли использовать приложение или надстройку Office.|[План для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Сравните различные способы расширения возможностей Office и решите, следует ли использовать приложение или надстройку Office.|[План для надстроек Office, VSTO и VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Создание надстройки SharePoint
  Чтобы расширить возможности SharePoint для пользователей, создайте надстройку SharePoint. Это, по сути, небольшое, простое в использовании автономное приложение, которое решает необходимость пользователей или бизнеса.
@@ -73,7 +73,7 @@ ms.locfileid: "88800948"
 
  ![Приложение Диспетчера контактов для SharePoint](../vsto/media/appforsharepoint.png "Приложение Диспетчера контактов для SharePoint")
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|
@@ -88,11 +88,11 @@ ms.locfileid: "88800948"
 
  ![Решение надстройки PowerPoint](../vsto/media/powerpointaddin.png "Надстройка PowerPoint")
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|Чтение|
 |--------|----------|
-|Сравните различные способы расширения возможностей Office и решите, следует ли использовать надстройку VSTO или надстройку Office.|[План для надстроек Office, VSTO и VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Сравните различные способы расширения возможностей Office и решите, следует ли использовать надстройку VSTO или надстройку Office.|[План для надстроек Office, VSTO и VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Создание надстройки VSTO.|[Создание настройки VSTO с помощью Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Создание решения SharePoint
@@ -100,7 +100,7 @@ ms.locfileid: "88800948"
 
  Для решений SharePoint требуется локальная ферма серверов SharePoint. Администраторы должны устанавливать их, а так как решения выполняются в SharePoint, они могут повлиять на производительность сервера. Однако решения обеспечивают более широкий доступ к объектам SharePoint. Кроме того, при создании решения SharePoint вы можете использовать платформу .NET Framework и языки программирования C# и Visual Basic для взаимодействия с объектами SharePoint.
 
- **Подробнее**
+ **Дополнительные сведения**
 
 |Кому|См.|
 |--------|---------|

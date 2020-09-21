@@ -1,5 +1,6 @@
 ---
-title: Как указать альтернативное расположение для обновлений развертывания | Документация Майкрософт
+title: Укажите альтернативное расположение для обновлений развертывания
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381916"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808754"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. Задание альтернативного местоположения для обновлений развертывания
 Приложение можно установить [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] изначально с компакт-диска или из общей папки, но приложение должно проверять наличие периодических обновлений в Интернете. Можно указать альтернативное расположение для обновлений в манифесте развертывания, чтобы приложение можно было обновлять из Интернета после первоначальной установки.

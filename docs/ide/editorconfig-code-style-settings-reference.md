@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402287"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741767"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
@@ -43,6 +43,14 @@ ms.locfileid: "89402287"
 - [Соглашения об именовании](../ide/editorconfig-naming-conventions.md)
 
    Правила, описывающие именование элементов кода. Например, можно указать, что методы `async` должны оканчиваться на "Async".
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>Применение соглашений о написании кода для сборки
+
+Начиная с Visual Studio 2019 версии 16.8, куда входит пакет SDK для .NET 5.0 RC2, можно [применять соглашения о написании кода .NET в сборке](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) для всех проектов .NET. Во время сборки нарушения стиля кода .NET будут отображаться в виде предупреждений или ошибок с префиксом IDE. Это позволяет строго применять единообразные стили кода в базе кода.
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>Пример файла EditorConfig
 
@@ -261,7 +269,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 > [!NOTE]
 > Дополнительные сведения о поддерживаемых категориях соглашений о стиле написания кода .NET см. на страницах [Языковые соглашения](../ide/editorconfig-language-conventions.md), [Соглашения по форматированию](../ide/editorconfig-formatting-conventions.md) и [Соглашения об именах](../ide/editorconfig-naming-conventions.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Быстрые действия](../ide/quick-actions.md)
 - [Создание переносимых, настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md)

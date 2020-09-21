@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015072"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739932"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создать расширение для проектов SharePoint. Расширение проекта можно использовать для реагирования на события уровня проекта, например при добавлении, удалении или переименовании проекта. Можно также добавить пользовательские свойства или ответить при изменении значения свойства. В отличие от расширений элементов проекта, расширения проектов не могут быть связаны с определенным типом проекта SharePoint. При создании расширения проекта это расширение загружается при открытии любого типа проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -40,7 +40,7 @@ ms.locfileid: "86015072"
 
 - Отладка и тестирование свойства проекта.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] , SharePoint и [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -114,7 +114,7 @@ ms.locfileid: "86015072"
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
 
-## <a name="build-the-solution"></a>Построение решения
+## <a name="build-the-solution"></a>Выполните сборку решения.
  Затем постройте решение, чтобы убедиться, что оно компилируется без ошибок.
 
 #### <a name="to-build-the-solution"></a>Построение решения
@@ -128,7 +128,7 @@ ms.locfileid: "86015072"
 
 1. В **Обозреватель решений**откройте контекстное меню для файла Source. extension. vsixmanifest, а затем нажмите кнопку **Открыть** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл в конструкторе манифестов. Сведения, отображаемые на вкладке **метаданные** , также отображаются в списке **расширения и обновления**. Для всех пакетов VSIX требуется файл Extension. vsixmanifest. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл в конструкторе манифестов. Сведения, отображаемые на вкладке **метаданные** , также отображаются в списке **расширения и обновления**. Для всех пакетов VSIX требуется файл Extension. vsixmanifest. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. В поле **Название продукта** введите **настраиваемое свойство проекта**.
 
@@ -200,7 +200,7 @@ ms.locfileid: "86015072"
 
 7. Закройте экспериментальный образец [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Расширение проектов SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Как добавить свойство в проекты SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

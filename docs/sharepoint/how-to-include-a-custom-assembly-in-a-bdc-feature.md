@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015263"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740075"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Как включить пользовательскую сборку в компонент BDC
   Проект может ссылаться на сборки из других проектов в том же решении. Однако эти сборки необходимо добавить в файл компонентов проекта, используя диалоговое окно **назначение упоминаемых сборок в бизнес – системам** .
@@ -40,16 +40,16 @@ ms.locfileid: "86015263"
 4. В списке **выберите сборку** выберите пользовательскую сборку.
 
     > [!NOTE]
-    > Сборки отображаются в диалоговом окне **назначение упоминаемых сборок в бизнес-системах** , если добавлена ссылка на проект, содержащий сборку. Дополнительные сведения см. в разделе [как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Сборки отображаются в диалоговом окне **назначение упоминаемых сборок в бизнес-системах** , если добавлена ссылка на проект, содержащий сборку. Дополнительные сведения см. в разделе [как добавить или удалить ссылки с помощью диалогового окна "Добавление ссылки"](/previous-versions/wkze6zky(v=vs.140)).
 
 5. В группе **Свойства ссылки** откройте список, который отображается для свойства **область LOBSYSTEM** , выберите бизнес-систему методов, использующих пользовательскую сборку, а затем нажмите кнопку **ОК** .
 
     > [!NOTE]
     > Для отладки кода в пользовательской сборке необходимо добавить сборку в пакет решения. Дополнительные сведения см. [в разделе инструкции. Добавление и удаление дополнительных сборок](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
-## <a name="see-also"></a>См. также раздел
-- [Как использовать файл ресурсов для указания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Как добавить существующий файл модели BDC в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+## <a name="see-also"></a>См. также
+- [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Как создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Практическое руководство. Создание модели подключения к бизнес-данным](../sharepoint/how-to-create-a-bdc-model.md)
 - [Интеграгте бизнес-данные в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

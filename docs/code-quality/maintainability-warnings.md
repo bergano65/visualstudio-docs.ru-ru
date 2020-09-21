@@ -1,31 +1,31 @@
 ---
-title: предупреждения удобства обслуживания
+title: Правила удобства сопровождения
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509904"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808588"
 ---
-# <a name="maintainability-warnings"></a>Предупреждения, связанные с удобством обслуживания
+# <a name="maintainability-rules"></a>Правила удобства сопровождения
 
-Предупреждения об обслуживании поддерживают обслуживание библиотек и приложений.
+Правила удобства поддержки поддерживают обслуживание библиотек и приложений.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 | Правило | Описание |
 |-----------|-----------------------------------|
@@ -37,6 +37,6 @@ ms.locfileid: "89509904"
 | [CA1508: Избегайте появления неиспользуемого условного кода](../code-quality/ca1508.md) | Метод имеет условный код, который всегда вычисляется как `true` или `false` во время выполнения. Это приводит к неработающему коду в `false` ветви условия. |
 | [CA1509: недопустимая запись в файле конфигурации метрик кода](../code-quality/ca1509.md) | Правила метрик кода, такие как [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) и [CA1506](ca1506.md), указали файл конфигурации с именем `CodeMetricsConfig.txt` , который имеет недопустимую запись. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Измерение сложности и удобства поддержки управляемого кода](../code-quality/code-metrics-values.md)

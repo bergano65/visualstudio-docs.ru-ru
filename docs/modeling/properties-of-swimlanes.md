@@ -11,21 +11,21 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115363"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807850"
 ---
 # <a name="properties-of-swimlanes"></a>Свойства дорожек
 На схему можно добавлять дорожки. Дорожки делят диаграмму на вертикальные или горизонтальные области. Можно определить другие фигуры для отображения в дорожках. Дополнительные сведения см. [в разделе Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
 
  Дорожки имеют свойства, перечисленные в следующей таблице.
 
-|Свойство|Описание|По умолчанию|
+|Свойство.|Описание|Значение по умолчанию|
 |-|-|-|
-|Цвет заливки текста|Цвет заливки для текста дорожки.|White|
+|Цвет заливки текста|Цвет заливки для текста дорожки.|Белый|
 |Цвет заливки заголовка|Цвет заливки для заголовка дорожки.|даркграй|
 |Цвет разделителя|Цвет разделительной линии.|лигхтграй|
 |Стиль разделительной линии|Стиль разделительной линии ( `Solid` , `Dash` ,,, `Dot` `DashDot` `DashDotDot` или `Custom` ).|`Dash`|
@@ -52,4 +52,4 @@ ms.locfileid: "76115363"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](/previous-versions/bb126564(v=vs.100))
