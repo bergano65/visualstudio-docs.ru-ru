@@ -1,8 +1,8 @@
 ---
-title: Создание приложения универсальной платформы Windows (UWP) с помощью Visual Studio и C#
+title: Создание приложения UWP с помощью Visual Studio и C#
 description: Создание приложения UWP в Visual Studio с помощью XAML и C#
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249258"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037280"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Учебник. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
@@ -72,7 +72,7 @@ ms.locfileid: "88249258"
 
 1. Подтвердите значения по умолчанию для параметров **Целевая версия** и **Минимальная версия** в диалоговом окне **Новый проект приложения для универсальной платформы Windows**.
 
-   ![Примите параметры целевой версии по умолчанию и минимальной версии в диалоговом окне нового проекта универсальной платформы Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Подтвердите значения по умолчанию для параметров Целевая версия и Минимальная версия в диалоговом окне Новый проект приложения для универсальной платформы Windows.](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ ms.locfileid: "88249258"
 
    Если посмотреть на код в **редакторе XAML**, мы увидим, что кнопка была также добавлена туда:
 
-   ![Щелкните элемент управления "Кнопка" и перетащите его на холст конструктора](media/uwp-xaml-control-code-window.png)
+   ![Кнопка "Показать" в редакторе XAML](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Добавление метки к кнопке
 
@@ -192,7 +192,7 @@ ms.locfileid: "88249258"
 
 1. Посмотрите на свое приложение, которое появится вскоре после исчезновения всплывающего окна. Приложение должно выглядеть следующим образом:
 
-   ![UWP-приложение "Hello World"](media/vs-2019/uwp-hello-world-app.png)
+   ![UWP-приложение Hello World](media/vs-2019/uwp-hello-world-app.png)
 
 1. Нажмите кнопку **Hello World**.
 

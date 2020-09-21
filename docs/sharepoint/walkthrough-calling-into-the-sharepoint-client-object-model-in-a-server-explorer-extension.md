@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014634"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740101"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера
   В этом пошаговом руководстве показано, как вызвать клиентскую объектную модель SharePoint из расширения для узла **подключений SharePoint** в **Обозреватель сервера**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -38,7 +38,7 @@ ms.locfileid: "86014634"
 > [!NOTE]
 > Расширение, создаваемое в этом пошаговом руководстве, напоминает расширение, созданное в [разделе Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). В этом пошаговом руководстве используется объектная модель сервера SharePoint, но в этом пошаговом руководстве выполняются те же задачи с помощью клиентской объектной модели.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Windows, SharePoint и Visual Studio.
@@ -192,7 +192,7 @@ ms.locfileid: "86014634"
 
 1. В **Обозреватель решений**в проекте **вебпартноде** откройте файл **source. extension. vsixmanifest** в редакторе манифеста.
 
-     Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. В поле **имя продукта** введите **узел коллекции веб-частей для обозреватель сервера**.
 
@@ -279,9 +279,9 @@ ms.locfileid: "86014634"
 
 5. Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр Visual Studio, в котором открыто решение Вебпартноде).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Пошаговое руководство. расширение обозреватель сервера для показа веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)
 - [Создание значка или другого изображения &#40;редактора изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

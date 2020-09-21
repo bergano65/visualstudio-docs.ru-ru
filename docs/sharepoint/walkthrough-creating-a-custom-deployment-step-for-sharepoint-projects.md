@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015891"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740023"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание настраиваемого шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint Visual Studio выполняет ряд шагов по развертыванию в определенном порядке. Visual Studio включает множество встроенных шагов по развертыванию, но вы также можете создать собственный.
@@ -39,7 +39,7 @@ ms.locfileid: "86015891"
 
 - Тестирование нового шага развертывания.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Windows, SharePoint и Visual Studio.
@@ -190,7 +190,7 @@ ms.locfileid: "86015891"
 
 1. В **Обозреватель решений**в проекте **упградедеплойментстеп** откройте контекстное меню для файла **source. extension. vsixmanifest** и выберите **Открыть**.
 
-     Visual Studio откроет файл в редакторе манифестов. Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio откроет файл в редакторе манифестов. Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. В поле **Название продукта** введите **шаг развертывания обновления для проектов SharePoint**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015891"
 10. В списке **тип** введите **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Этот элемент указывает пользовательское расширение, которое необходимо включить в расширение Visual Studio. Дополнительные сведения см. в разделе [элемент Asset (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Этот элемент указывает пользовательское расширение, которое необходимо включить в расширение Visual Studio. Дополнительные сведения см. в разделе [элемент Asset (Схема VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. В списке **источник** выберите **проект в текущем решении**.
 
@@ -483,5 +483,5 @@ ms.locfileid: "86015891"
 
 4. Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр Visual Studio, в котором открыто решение Упградедеплойментстеп).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Расширение упаковки и развертывания SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

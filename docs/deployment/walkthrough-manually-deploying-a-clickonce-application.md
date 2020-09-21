@@ -1,5 +1,6 @@
 ---
-title: Пошаговое руководство. Развертывание приложения ClickOnce вручную | Документация Майкрософт
+title: Развертывание приложения ClickOnce вручную
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249975"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809483"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Пошаговое руководство. Развертывание приложения ClickOnce вручную
 Если вы не можете использовать Visual Studio для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения или вам необходимо использовать расширенные функции развертывания, такие как развертывание доверенных приложений, следует использовать средство командной строки *Mage.exe* для создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифестов. В этом пошаговом руководстве описывается создание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания с помощью версии командной строки (*Mage.exe*) или графической версии (*MageUI.exe*) инструмент создания и изменения манифестов.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
  В этом пошаговом руководстве есть некоторые предварительные требования и параметры, которые необходимо выбрать перед созданием развертывания.
 
 - Установите *Mage.exe* и *MageUI.exe*.

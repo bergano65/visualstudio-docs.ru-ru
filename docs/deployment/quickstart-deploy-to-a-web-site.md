@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173705"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036409"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Публикация веб-приложения на веб-сайте с помощью Visual Studio
 
@@ -32,9 +32,9 @@ ms.locfileid: "84173705"
 
     ![Команда Опубликовать в контекстном меню проекта в обозревателе решений](../deployment/media/quickstart-publish.png "Выбор команды Опубликовать")
 
-1. Если ранее вы настроили какие-либо профили публикации, появится панель **Опубликовать**. Выберите команду **Создать профиль**.
+1. Если ранее вы настроили какие-либо профили публикации, появится панель **Опубликовать**. Нажмите кнопку **Создать**.
 
-1. В диалоговом окне **Публикация** выберите **Веб-сервер (IIS)** .
+1. В окне **Публикация** выберите **Веб-сервер (IIS)** .
 
     ![Выбор целевого объекта публикации](../deployment/media/quickstart-publish-iis.png "Выберите IIS, FTP или другой вариант.")
 
@@ -47,6 +47,8 @@ ms.locfileid: "84173705"
     ![Сведения о подключении для веб-развертывания](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. Для публикации выберите **Опубликовать** на странице сводки. В окне вывода отображаются ход развертывания и результаты.
+
+   Если вам нужна помощь в устранении неполадок ASP.NET Core IIS, см. статью [Устранение неполадок ASP.NET Core в Службе приложений Azure и в IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="next-steps"></a>Следующие шаги
 

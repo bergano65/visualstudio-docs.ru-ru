@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561768"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811010"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Обновление проекта, диалоговое окно "Параметры"
   Используйте страницу **обновления проектов** , чтобы указать, будет ли Visual Studio автоматически изменять проекты надстроек VSTO для версии Office, установленной на компьютере разработчика.
@@ -33,4 +33,4 @@ ms.locfileid: "62561768"
 
 ## <a name="see-also"></a>См. также раздел
 - [Обновление и перенос решений Office](../vsto/upgrading-and-migrating-office-solutions.md)
-- [Руководство. Обновление решений Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Руководство. Обновление решений Office](/previous-versions/4bez6837(v=vs.140))

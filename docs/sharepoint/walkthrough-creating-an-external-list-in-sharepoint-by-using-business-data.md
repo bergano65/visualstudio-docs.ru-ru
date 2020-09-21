@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015835"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740062"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -80,7 +80,7 @@ ms.locfileid: "86015835"
 
 2. Добавьте соединение с образцом базы данных AdventureWorks SQL Server.
 
-     Дополнительные сведения см. в разделе [Добавление и изменение подключения (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Дополнительные сведения см. в разделе [Добавление и изменение подключения (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140)).
 
 3. В области **Обозреватель решений**выберите узел проекта.
 
@@ -242,7 +242,7 @@ ms.locfileid: "86015835"
 При запуске проекта открывается сайт SharePoint, и Visual Studio добавляет модель в службу подключения к бизнес-данным. Создайте внешний список в SharePoint, который ссылается на сущность Contact. Данные для контактов в базе данных AdventureWorks появятся в списке.
 
 > [!NOTE]
-> Прежде чем выполнять отладку решения, может потребоваться изменить параметры безопасности в SharePoint. Дополнительные сведения см. [в разделе Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
+> Прежде чем выполнять отладку решения, может потребоваться изменить параметры безопасности в SharePoint. Дополнительные сведения см. в разделе [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 1. Нажмите клавишу **F5**.
 
@@ -266,7 +266,7 @@ ms.locfileid: "86015835"
 
      В форме отобразятся подробности выбранного контакта.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о проектировании моделей для службы BDC в SharePoint см. в следующих статьях:
 
@@ -274,7 +274,7 @@ ms.locfileid: "86015835"
 - [Как добавить метод обновления](../sharepoint/how-to-add-an-updater-method.md).
 - [Как добавить метод удаления](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Проектирование модели](../sharepoint/designing-a-business-data-connectivity-model.md) 
  подключения к бизнес-данным [Создание модели](../sharepoint/creating-a-business-data-connectivity-model.md) 

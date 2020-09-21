@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234982"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806737"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Устранение неполадок развертывания решений Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.
@@ -121,7 +121,7 @@ ms.locfileid: "87234982"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Не удается установить решение ClickOnce, открыв манифест развертывания из Интернета
  Пользователи могут установить решение Office путем открытия манифеста развертывания из Интернета. Однако некоторые установки службы IIS (IIS) блокируют расширение имени файла *VSTO* . Необходимо определить тип MIME в службах IIS, прежде чем использовать его для развертывания решения Office.
 
- Сведения о том, как определить тип MIME в IIS 7, см. в разделе [Добавление типа MIME (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Сведения о том, как определить тип MIME в IIS 7, см. в разделе [Добавление типа MIME (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10)).
 
  Установите **.vsto** в качестве расширения и **application/x-ms-vsto**в качестве типа MIME.
 

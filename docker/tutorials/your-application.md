@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485445"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739984"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Сборка и запуск примера приложения Todo
 
@@ -28,7 +28,7 @@ ms.locfileid: "89485445"
 
 Перед запуском приложения необходимо получить исходный код приложения на компьютере. Для реальных проектов обычно клонируется репозиторий. Но в этом учебнике вы создали ZIP-файл, содержащий приложение.
 
-1. [Скачайте ZIP-файл](/assets/app.zip). Откройте ZIP-файл и извлеките его содержимое.
+1. [Скачайте ZIP-файл](http://localhost/assets/app.zip). Откройте ZIP-файл и извлеките его содержимое.
 
 1. После извлечения используйте любой редактор кода, чтобы открыть проект. Если вам требуется редактор, можно использовать [Visual Studio Code](https://code.visualstudio.com/). Вы должны увидеть `package.json` и два подкаталога (`src` и `spec`).
 

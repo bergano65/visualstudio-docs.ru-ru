@@ -1,17 +1,18 @@
 ---
-title: Параметры сборки Docker Compose для инструментов Visual Studio для работы с контейнерами
+title: Параметры сборки Docker Compose
 author: ghogen
 description: Обзор процесса сборки с помощью инструментов для работы с контейнерами
+ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a25aca5082d8a55eccff861d542d16095c178a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283155"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036305"
 ---
 # <a name="docker-compose-build-properties"></a>Свойства сборки Docker Compose
 

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caf7d395c08a8c1e8c21f933ba63c8943813831b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532188"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810787"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
 **Обозреватель DSL** отображает несколько видов информации в представлении в виде дерева. Дополнительные сведения о большинстве элементов в обозревателе DSL см. в разделе [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
@@ -43,4 +43,4 @@ ms.locfileid: "85532188"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](/previous-versions/bb126564(v=vs.100))

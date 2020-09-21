@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d2d3d747c128cfa2afbb63ae43289e0b50519b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532279"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810071"
 ---
 # <a name="properties-of-connectors"></a>Свойства соединителей
 Соединители представляют доменные отношения в созданном конструкторе.
@@ -23,12 +23,12 @@ ms.locfileid: "85532279"
 
  У соединителей есть свойства, перечисленные в следующей таблице.
 
-|Свойство|Описание|По умолчанию|
+|Свойство.|Описание|Значение по умолчанию|
 |-|-|-|
-|Цвет|Цвет данного соединителя.|Черный|
+|Color|Цвет данного соединителя.|Черный|
 |Тип штриха|Стиль штриха для линии этого соединителя ("Сплошная", "тире", "точка", "Дашдот", "Дашдотдот" или "Настраиваемая").|Сплошная|
-|Конечный стиль источника|Конечный стиль источника для этого соединителя (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond или None).|Нет|
-|Конечный конечный стиль|Целевой конечный стиль для этого соединителя (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond или None).|Нет|
+|Конечный стиль источника|Конечный стиль источника для этого соединителя (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond или None).|None|
+|Конечный конечный стиль|Целевой конечный стиль для этого соединителя (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond или None).|None|
 |Цвет текста|Цвет, используемый для декораторов текста, связанных с этим соединителем.|Черный|
 |Thickness|Толщина линии для данного соединителя, измеренная в дюймах.|0,03125|
 |Модификатор доступа|Уровень доступа класса ( `public` или `internal` ).|Общие|
@@ -50,4 +50,4 @@ ms.locfileid: "85532279"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](/previous-versions/bb126564(v=vs.100))

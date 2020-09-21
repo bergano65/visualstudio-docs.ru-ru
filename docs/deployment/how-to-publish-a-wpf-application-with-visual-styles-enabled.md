@@ -1,5 +1,6 @@
 ---
-title: Публикация приложения WPF с включенными стилями оформления | Документация Майкрософт
+title: Публикация приложения WPF с включенными стилями оформления
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382215"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810462"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Практическое руководство. Публикация приложения WPF с включенными визуальными стилями
 
@@ -175,7 +176,7 @@ ms.locfileid: "85382215"
 
    После выполнения этих действий можно переместить опубликованные файлы в расположение, из которого конечные пользователи должны установить приложение. Если планируется частое обновление решения, эти команды можно переместить в сценарий и запустить скрипт при каждой публикации новой версии.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 -[Устранение конкретных ошибок в развертываниях ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Общие сведения о визуальных стилях](/windows/desktop/Controls/visual-styles-overview)
