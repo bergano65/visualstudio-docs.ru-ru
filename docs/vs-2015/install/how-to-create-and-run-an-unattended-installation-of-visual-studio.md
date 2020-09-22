@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433058"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843271"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "63433058"
     > [!NOTE]
     > Установка может завершиться сбоем, если сочетание имени файла и пути превышает максимально допустимое число знаков (260). Максимальная длина пути в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] — 221 символ.  Максимальная длина локального пути — 70 символов; сетевого пути — 39 символов.
 
-     Установка может также завершиться сбоем, если имена папок в пути включают пробелы (например, "\\\\*ИмяСервера*\IDE install" или \\\\*ИмяСервера*\Visual Studio\\).
+     Также может произойти сбой установки, если имена папок в пути содержат пробелы (например, " \\ \\ *ServerName*\иде Install" или \\ \\ *ServerName*\висуал Studio \\ ).
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>Развертывание Visual Studio в автоматическом режиме
- Для развертывания [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в автоматическом режиме необходимо изменить файл AdminDeployment.xml. Для этого необходимо сначала создать файл AdminDeployment.xml с помощью параметра командной строки `/CreateAdminFile` *\<расположение_файла>*. Затем этот файл можно использовать для переноса развертывания Visual Studio в сеть либо для ввода в среду установки в случае его размещения в каталоге *диск*:\IDEinstall\packages. Файл AdminDeployment.xml не является уникальным для операционной системы, архитектуры, выпуска Visual Studio или языка операционной системы.
+ Для развертывания [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в автоматическом режиме необходимо изменить файл AdminDeployment.xml. Для этого необходимо сначала создать файл AdminDeployment.xml с помощью `/CreateAdminFile` *\<file location>* параметра командной строки. Затем этот файл можно использовать для переноса развертывания Visual Studio в сеть либо для ввода в среду установки в случае его размещения в каталоге *диск*:\IDEinstall\packages. Файл AdminDeployment.xml не является уникальным для операционной системы, архитектуры, выпуска Visual Studio или языка операционной системы.
 
 > [!CAUTION]
 > Иногда элементы, перечисленные как выбранные в файле AdminDeployment.xml, не устанавливаются. Чтобы решить эту проблему, поместите элементы с пометкой "Selected="yes"" в **конец** файла AdminDeployment.xml.
@@ -63,9 +63,9 @@ ms.locfileid: "63433058"
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Путь*|Поведение аналогично переопределению пути в интерфейсе пользователя приложения установки. Этот элемент пропускается, если Visual Studio уже установлена.|
 |BundleCustomizations|NoWeb|да&#124;по умолчанию|Если значение этого элемента — yes (да), приложение установки не будет пытаться выйти в Интернет во время установки.|
-|SelectableItemCustomization|Hidden|даs&#124;нет|Если значение этого элемента — yes (да), элемент Selectable в дереве настройки скрывается.|
+|SelectableItemCustomization|Скрытый|даs&#124;нет|Если значение этого элемента — yes (да), элемент Selectable в дереве настройки скрывается.|
 |SelectableItemCustomization|Selected|даs&#124;нет|Выбирает или отменяет выделение выделяемого элемента в дереве пользовательской настройки.|
-|BundleCustomizations|Feed|Путь|Расположение веб-канала, который хочет применять пользователь.  Этот веб-канал используется для последующих операций изменения на компьютере (по умолчанию Default).|
+|BundleCustomizations|Веб-канал|Путь|Расположение веб-канала, который хочет применять пользователь.  Этот веб-канал используется для последующих операций изменения на компьютере (по умолчанию Default).|
 |BundleCustomizations|SuppressRefreshPrompt|да&#124;по умолчанию|Пользователю не выводится запрос на обновление установки, если доступна более новая версия.|
 |BundleCustomizations|NoRefresh|да&#124;по умолчанию|При наличии более новой версии установка не обновляется.|
 |BundleCustomizations|NoCacheOnlyMode|да&#124;по умолчанию|Предотвращает предварительное заполнение кэша пакета.|
@@ -77,7 +77,7 @@ ms.locfileid: "63433058"
 
 1. В файле *диск*:\IDEinstall\AdminDeployment.xml измените значение атрибута NoWeb элемента BundleCustomizations с "default" на "yes", как показано в следующем примере:
 
-     Измените `<BundleCustomizations TargetDir="default" NoWeb="default"/>` на `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`
+     Измените `<BundleCustomizations TargetDir="default" NoWeb="default"/>` на `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`.
 
 2. Измените требуемым образом атрибут SelectableItemCustomization для дополнительных компонентов, а затем сохраните файл.
 
@@ -131,14 +131,14 @@ ms.locfileid: "63433058"
 
 2. Откройте вкладку **Подробные сведения** и запишите значение свойства **Версия продукта**.
 
-    ![Пример диалогового окна "Свойства" автоматической установки Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Автоматическая установка — диалоговое окно \"Свойства\"")
+    ![Пример диалогового окна "Свойства" в автоматической установке Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Автоматическая установка-диалоговое окно "Свойства"")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Если продукт имеет версию 14.0.24720.0 или 14.0.24720.1, выполните следующие шаги:
    1. Выполните команду *продукт.exe* /Layout *диск:* \IDEinstall на компьютере с доступом к Интернету. (Например, выполните команду `vs_enterprise.exe /Layout d:\IDEinstall`.)
 
    2. После завершения работы /Layout скопируйте новый образ в новое расположение.
 
-   3. Создайте и измените файл AdminDeployment.xml. Для этого воспользуйтесь параметром командной строки `/CreateAdminFile`*\<расположение_файла>*. (См. подробнее о развертывании Visual Studio в автоматическом режиме в этой статье.)
+   3. Создайте и измените файл AdminDeployment.xml. Для этого используйте `/CreateAdminFile` *\<file location>* параметр командной строки. (См. подробнее о развертывании Visual Studio в автоматическом режиме в этой статье.)
 
    4. На клиентском компьютере выполните следующую команду, чтобы обновить копию Visual Studio, которую вы установили ранее: \\\\*сервер1*\IDEinstall_Updated_1\\*продукт.exe* /adminfile \\\сервер1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart.
 
@@ -148,7 +148,7 @@ ms.locfileid: "63433058"
 
    2. После завершения работы /Layout скопируйте новый образ в новое расположение. (Или вы можете переопределить существующий сетевой образ.)
 
-   3. Создайте и измените файл AdminDeployment.xml. Для этого воспользуйтесь параметром командной строки `/CreateAdminFile`*\<расположение_файла>*. (См. подробнее о развертывании Visual Studio в автоматическом режиме в этой статье.)
+   3. Создайте и измените файл AdminDeployment.xml. Для этого используйте `/CreateAdminFile` *\<file location>* параметр командной строки. (См. подробнее о развертывании Visual Studio в автоматическом режиме в этой статье.)
 
    4. Если вы скопировали образ в новое расположение, вам нужно выполнить следующую команду на клиентском компьютере, чтобы обновить копию Visual Studio, которую вы установили ранее: \\\\*сервер1*\IDEinstall_Updated_1\\*продукт.exe* /adminfile \\\сервер1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart.
 
@@ -166,7 +166,7 @@ ms.locfileid: "63433058"
 ## <a name="registering-the-product"></a>Регистрация продукта
  После завершения установки вы можете зарегистрировать свою копию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] прямо из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-#### <a name="to-register"></a>Регистрация
+#### <a name="to-register"></a>Для регистрации выполните следующие команды.
 
 1. В меню **Справка** выберите **Зарегистрировать продукт**.
 
@@ -174,5 +174,5 @@ ms.locfileid: "63433058"
 
      (См. подробнее о [поиске ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) и [автоматическом применении ключей продукта при развертывании Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Установка Visual Studio](../install/install-visual-studio-2015.md)

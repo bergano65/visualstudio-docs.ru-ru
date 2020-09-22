@@ -10,21 +10,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d343392c9e554c5e51325964949cd3ea13237b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434290"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842528"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Создание переносимых файлов данных профилирования в командной строке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Чтобы упростить общий доступ к данным профилирования, вы можете использовать программу командной строки [VSPerfReport](../profiling/vsperfreport.md) в целях внедрения символов для сеанса профилирования в VSP-файл.  
+Чтобы упростить совместное использование данных профилирования, можно использовать программу командной строки [VSPerfReport](../profiling/vsperfreport.md) , чтобы внедрить символы для запуска профилирования в VSP-файл.  
   
  Вы также можете создать файл предварительно проанализированных данных профилирования (VSPS), который меньше по размеру и быстрее загружается в интегрированной среде разработки.  
   
 > [!NOTE]
-> Убедитесь, что файлы символов (PDB) доступны для **VSPerfReport**. Дополнительные сведения см. в разделе [Как Определение расположения файлов символов из командной строки](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+> Убедитесь, что файлы символов (. pdb) доступны для **VSPerfReport**. Дополнительные сведения см. в разделе [как указать расположение файлов символов из командной строки](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
 >   
 > Дополнительные сведения о пути к **VSReport** см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
@@ -34,7 +34,7 @@ ms.locfileid: "63434290"
   
 - В окне командной строки введите следующую команду:  
   
-   \<Путь><strong>VSPerfReport \<</strong>VSP-файл> **/PackSymbols**  
+   \<Path><strong>VSPerfReport \<</strong>VSP-файл> **/PackSymbols**  
   
    По умолчанию VSPS-файл имеет базовое имя VSP-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.  
   
@@ -42,6 +42,6 @@ ms.locfileid: "63434290"
   
 - В окне командной строки введите следующую команду:  
   
-   \<Путь><strong>VSPerfReport \<</strong>VSP-файл> **/SummaryFile** [**/Output:**\<имя файла>]  
+   \<Path><strong>VSPerfReport \<</strong>VSP-файл> **/SummaryFile** [ **/Output:** \<File Name>]  
   
    По умолчанию VSPS-файл имеет базовое имя VSP-файла. Вы можете указать альтернативное имя с помощью параметра **Вывод**.

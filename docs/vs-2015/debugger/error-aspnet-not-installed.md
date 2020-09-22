@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Не установлено средство ASP.NET | Документация Майкрософт'
+title: 'Ошибка: ASP.NET не установлен | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447309"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843097"
 ---
 # <a name="error-aspnet-not-installed"></a>Ошибка: не установлено средство ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ ms.locfileid: "63447309"
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     где *версии* представляет номер версии платформы .NET Framework, установленной на компьютере, например v1.0.370. Можно определить версию платформы, просмотрев `\WINDOWS\Microsoft.NET\Framework` каталога.  
+     *version* представляет номер версии платформы .NET Framework, установленной на данном компьютере, например v1.0.370. Можно определить версию платформы в каталоге `\WINDOWS\Microsoft.NET\Framework`.  
   
     > [!NOTE]
     > В Windows Server 2003 можно установить [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], используя элемент **Установка и удаление программ** на "Панели управления".  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

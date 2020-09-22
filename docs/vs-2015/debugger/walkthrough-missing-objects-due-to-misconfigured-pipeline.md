@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Отсутствие объектов вследствие неправильной настройки конвейера | Документация Майкрософт
+title: Пошаговое руководство. отсутствие объектов из-за неправильно настроенного конвейера | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444283"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90843316"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Пошаговое руководство. Отсутствие объектов вследствие неправильной настройки конвейера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63444283"
   
 4. Остановитесь, когда достигнете вызова Draw, соответствующего отсутствующему объекту. В этом сценарии в окне **Этапы графического конвейера** видно, что геометрия была передана GPU (о чем говорит наличие этапа **Сборщик входных данных** ) и преобразована (о чем говорит наличие этапа **Шейдер вершин** ), однако она не отображается в целевом объекте отрисовки, поскольку нет активного шейдера пикселей (об этом говори отсутствие этапа **Шейдер пикселей** ). В этом сценарии можно даже видеть силуэт отсутствующего объекта на этапе **Средство слияния вывода** :  
   
-    ![Событие DrawIndexed и его влияние на конвейере](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![Событие DrawIndexed и его результат в конвейере](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
    После того как вы убедитесь, что приложение выполнило вызов рисования для геометрии отсутствующего объекта, и обнаружите, что этап шейдера пикселей был неактивен, вы можете проверить состояние устройства, чтобы подтвердить свои выводы. Для просмотра контекста устройства и других данных объектов Direct3D можно пользоваться окном **Таблица графических объектов** .  
   
@@ -100,7 +100,7 @@ ms.locfileid: "63444283"
   
    Чтобы устранить проблему, присвойте правильный шейдер пикселей, используя первый параметр вызова API `ID3D11DeviceContext::PSSetShader` .  
   
-   ![Исправленный C&#43; &#43; исходный код](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![Исправленный исходный код C&#43;&#43; ](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена:  
   

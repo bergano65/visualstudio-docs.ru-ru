@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Справочная информация о символах Windows | Документация Майкрософт
+title: Практическое руководство. Справочная информация о символах Windows | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443454"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843089"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Практическое руководство. Справочная информация о символах Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ ms.locfileid: "63443454"
   
      **C:\SymbolCache**  
   
-     Можно также нажать кнопку с многоточием (**...** ) и выбрать каталог в диалоговом окне **Выбрать папку**.  
+     Можно также нажать кнопку с многоточием ( **...** ) и выбрать каталог в диалоговом окне **Выбрать папку**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
- [Практическое руководство. Сериализация сведений о символах](../profiling/how-to-serialize-symbol-information.md)
+ [Инструкции. Сериализация сведений о символах](../profiling/how-to-serialize-symbol-information.md)

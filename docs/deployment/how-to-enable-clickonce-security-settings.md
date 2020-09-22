@@ -1,5 +1,5 @@
 ---
-title: Включение параметров безопасности ClickOnce | Документация Майкрософт
+title: Включить параметры безопасности ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382436"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850934"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Практическое руководство. Включение параметров безопасности ClickOnce
 Для публикации приложения необходимо включить управление доступом для кода для приложений ClickOnce. Это делается автоматически при публикации приложения с помощью мастера публикации.

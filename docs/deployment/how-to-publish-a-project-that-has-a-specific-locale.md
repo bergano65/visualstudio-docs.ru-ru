@@ -1,5 +1,5 @@
 ---
-title: Публикация проекта с заданным языковым стандартом | Документация Майкрософт
+title: публикацию проекта, имеющего конкретный языковый стандарт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38be27ca9873d662fd4839590f50c9788b5ae7ea
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382228"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851701"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Практическое руководство. Публикация проекта, имеющего конкретный языковой стандарт
 Приложения нередко содержат компоненты с разными языковыми стандартами. В данном сценарии вы создадите решение, включающее несколько проектов, а затем опубликуете отдельные проекты для каждого языкового стандарта. Эта процедура показывает, как использовать макрос для публикации первого проекта в решении, на примере языкового стандарта "en". Если вы хотите выполнить данную процедуру с другим языковым стандартом, выберите в макросе соответствующее значение `localeString` (например, "de" или "de-DE").
@@ -161,7 +161,7 @@ ms.locfileid: "85382228"
 
 7. Просмотрите *к:\инетпуб\ввврут\публишлокалес\ен*. В дополнение к локализованной библиотеке DLL ресурсов должны отобразиться установленные файлы, такие как манифесты, *setup.exe*и файл веб-страницы публикации. (По умолчанию ClickOnce добавляет расширение *. deploy* в exe-файлы и библиотеки DLL; это расширение можно удалить после развертывания.)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Среда разработки макросов](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Окно "Обозреватель макросов"](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

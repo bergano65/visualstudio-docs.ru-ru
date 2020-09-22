@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403275"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842740"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот интерфейс представляет свойство кадра стека, свойство документа программы или некоторые другие свойства. Свойство обычно является результатом вычисления выражения.  
+Этот интерфейс представляет свойство кадра стека, свойство документа программы или другое свойство. Свойство обычно является результатом вычисления выражения.  
   
 > [!NOTE]
-> Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugProperty2` может представлять такая сущность.  
+> Использование "Свойства" не следует путать с тем, что это означает переменную-член класса, хотя `IDebugProperty2` может представлять такую сущность.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,51 +34,51 @@ IDebugProperty2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс для представления определенного типа значения. Например значение может представлять числовое значение в результате вычисления выражения, контекста памяти, используемый для отображения в памяти, или список регистров и их значения.  
+ Метод DE реализует этот интерфейс, чтобы представить определенный тип значения. Например, значение может быть числовым значением в результате вычисления выражения, контекста памяти, используемого для отображения памяти, или списка регистров и их значений.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызовите [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) получить этот интерфейс, который представляет результат вычисления. `IDebugExpression2::EvaluateAsync` Возвращает этот интерфейс, отправляя [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) интерфейс SDM, который в свою очередь вызывает [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) требуется извлечь свойство.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [евалуатесинк](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) или [евалуатеасинк](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) , чтобы получить этот интерфейс, который представляет результат вычисления. `IDebugExpression2::EvaluateAsync` Возвращает этот интерфейс путем отправки интерфейса [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) в SDM, который, в свою очередь, вызывает метод [result](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) для получения свойства.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) возвращает этот интерфейс для предоставления документа связанного скрипта.  
+ [Жетдебугпроперти](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) возвращает этот интерфейс, чтобы предоставить связанный документ скрипта.  
   
- [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) возвращает этот интерфейс, представляющий возвращаемое значение функции.  
+ [Жетретурнвалуе](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) возвращает этот интерфейс, чтобы представить возвращаемое значение функции.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) возвращает этот интерфейс для представления различных свойств программы, такие как имя или контекст памяти.  
+ [Жетдебугпроперти](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) возвращает этот интерфейс для представления различных свойств программы, таких как имя или контекст памяти.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) возвращает этот интерфейс для представления различных свойств кадра стека, такие как локальные переменные.  
+ [Жетдебугпроперти](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) возвращает этот интерфейс для представления различных свойств кадра стека, например локальных переменных.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugProperty2`.  
+ В следующей таблице показаны методы `IDebugProperty2` .  
   
-|Метод|Описание|  
+|Метод|Description|  
 |------------|-----------------|  
-|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Заполняет [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структура, описывающая свойства.|  
+|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Заполняет структуру [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) , описывающую свойство.|  
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Задает значение свойства из строки.|  
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Задает значение свойства из значения данной ссылки.|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Задает значение свойства из значения заданной ссылки.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Перечисляет дочерние элементы свойства.|  
-|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Возвращает родителя данного свойства.|  
-|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Возвращает свойство, которое описывает свойство самого дальнего свойства.|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Возвращает количество байтов памяти, из которых состоит значение свойства.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Возвращает родителя свойства.|  
+|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Возвращает свойство, описывающее наиболее производное свойство свойства.|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Возвращает байты памяти, составляющие значение свойства.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Возвращает контекст памяти для значения свойства.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Возвращает размер в байтах, значение свойства.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Возвращает размер значения свойства в байтах.|  
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Возвращает ссылку на значение этого свойства.|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Возвращает расширенные сведения свойства.|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Возвращает расширенные сведения о свойстве.|  
   
-## <a name="remarks"></a>Примечания  
- Свойства, представленные как `IDebugProperty2` интерфейсом, может рассматриваться как значение с именем, типом и адрес. В более общие термины `IDebugProperty2` может представлять все, что имеет иерархическую структуру, с помощью родительских и дочерних узлов.  
+## <a name="remarks"></a>Remarks  
+ Свойство, представленное `IDebugProperty2` интерфейсом, может рассматриваться как значение с именем, типом и адресом. В общих чертах объект `IDebugProperty2` может представлять все, имеющее иерархическую структуру, с родительскими и дочерними узлами.  
   
- Свойство обычно временная, которое существует только в течение текущего кадра стека, например. С другой стороны, ссылки, представленные как [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) интерфейс, срок действия которой составляет до тех пор, пока значение остается в памяти.  
+ Свойство обычно является транзитным, исходящим только до текущего кадра стека, например. С другой стороны, ссылка, представленная интерфейсом [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , продолжается до тех пор, пока значение остается в памяти.  
   
- Можно использовать в интегрированной среде разработки `IDebugProperty2` интерфейс, позволяющий пользователям просматривать и изменять свойства во время выполнения.  
+ Интегрированная среда разработки может использовать `IDebugProperty2` интерфейс, чтобы позволить пользователям просматривать и изменять свойства во время выполнения.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>См. также:  
+ [Основные интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

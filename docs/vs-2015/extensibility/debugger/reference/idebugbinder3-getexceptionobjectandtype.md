@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
+title: 'IDebugBinder3:: Жетексцептионобжектандтипе | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6da9b1259518f3796968712b11c725a08aa9a01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443949"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843301"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод возвращает исключение, связанное с объектом, если таковые имеются.  
+Этот метод извлекает исключение, связанное с объектом, если таковой имеется.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,16 +42,16 @@ int GetExceptionObjectAndType(
   
 #### <a name="parameters"></a>Параметры  
  `ppException`  
- [out] Возвращает объект, представляющий исключение.  
+ заполняет Возвращает объект, представляющий исключение.  
   
  `ppField`  
- [out] Возвращает объект, представляющий определенного поля, которое вызвало исключение (это может быть значение null).  
+ заполняет Возвращает объект, представляющий конкретное поле, которое может вызвать исключение (это может быть значение null).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
 > [!NOTE]
-> Чтобы проверить, имеется ли исключение, проверьте значение, возвращаемое `ppException`: если он имеет значение null, то исключение не связан с данным объектом.  
+> Чтобы проверить, существует ли исключение, проверьте значение, возвращаемое `ppException` : если это значение null, то исключение не связано с этим объектом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,6 @@
 ---
-title: Как указать имя меню "Пуск" для приложения ClickOnce | Документация Майкрософт
+title: Укажите имя меню "Пуск" для приложения ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d6f7471530a101404040368dbc6088e9b5d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d60985d0fdf766fb49348bb9eb5d14d62d7e4d5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381929"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808767"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Практическое руководство. Указание названия приложения ClickOnce в меню "Пуск"
 При [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установке приложения как в интерактивном, так и в автономном режиме в меню " **Пуск** " и в списке " **Установка и удаление программ** " добавляется запись. По умолчанию отображаемое имя совпадает с именем сборки приложения, но вы можете изменить отображаемое имя, указав **имя продукта** в диалоговом окне **Параметры публикации** .

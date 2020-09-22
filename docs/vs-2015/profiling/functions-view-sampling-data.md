@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5aace03631cd768566dca8e314f280e20d9de77f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432939"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842840"
 ---
 # <a name="functions-view---sampling-data"></a>Представление "Функции" — данные выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,8 @@ ms.locfileid: "63432939"
 |**Эксклюзивные выборки**|Общее количество выборок, собранных во время выполнения кода в теле этой функции; то есть в течение времени, когда функция находилась в верхней части стека вызовов. Это значение не включает выборки, собранные в функциях, которые были вызваны этой функцией.|  
 |**% эксклюзивных выборок**|Процент от всех выборок сеанса профилирования, которые являются исключающими выборками данной функции.|  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Представление "Функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Представление "функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)

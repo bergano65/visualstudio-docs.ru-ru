@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424515"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842593"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Справочник API (отладка Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-В справочном разделе включает в себя общие сведения об API, направляющей, демонстрирует синтаксис и использование для всех элементов API, а также целый ряд примеров кода. Все ссылки перечислены в алфавитном порядке по категориям.  
+Справочный раздел содержит концептуальный обзор API, руководство, в котором показан синтаксис и использование для всех элементов API, а также ассортимент примеров кода. Все ссылки перечислены в алфавитном порядке по категориям.  
   
- В следующей таблице приведены распространенные `HRESULT` значения, возвращаемые методами.  
+ В следующей таблице показаны общие `HRESULT` значения, возвращаемые методами.  
   
-|name|Описание|Значение|  
+|Имя|Описание|Значение|  
 |----------|-----------------|-----------|  
-|S_OK|Выполнено.|0x00000000|  
-|E_UNEXPECTED|Непредвиденная ошибка.|0x8000FFFF|  
+|S_OK|Успешно.|0x00000000|  
+|E_UNEXPECTED|Непредвиденный сбой.|0x8000FFFF|  
 |E_NOTIMPL|Не реализовано.|0x80004001|  
 |E_OUTOFMEMORY|Недостаточно памяти для завершения операции.|0x8007000E|  
-|E_INVALIDARG|Один или несколько аргументов являются недопустимыми.|0x80070057|  
-|E_NOINTERFACE|Интерфейс не поддерживается.|0x80004002|  
+|E_INVALIDARG|Один или несколько аргументов недопустимы.|0x80070057|  
+|E_NOINTERFACE|Такой интерфейс не поддерживается.|0x80004002|  
 |E_POINTER|Недопустимый указатель.|0x80004003|  
-|E_HANDLE|Недопустимый дескриптор.|0x80070006|  
-|E_ABORT|Операция прервана.|0x80004004|  
-|E_FAIL|Непредвиденная ошибка.|0x80004005|  
-|E_ACCESSDENIED|Ошибка доступа.|0x80070005|  
+|E_HANDLE|Недопустимый маркер.|0x80070006|  
+|E_ABORT|Операция аварийно завершена.|0x80004004|  
+|E_FAIL|Непредвиденный сбой.|0x80004005|  
+|E_ACCESSDENIED|Общая ошибка отказа в доступе.|0x80070005|  
   
 > [!NOTE]
-> Когда [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладки метод возвращает `S_OK`, предполагается, что все указатели параметра являются допустимыми, то есть проверка не проводится на out параметр указателей при `S_OK` возвращается.  
+> При [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] возврате из метода отладки `S_OK` предполагается, что все указатели на параметры являются допустимыми, т `S_OK` . е. при возвращении указателей на параметры не выполняется проверка.  
   
 > [!NOTE]
-> Недопустимый или `NULL` [параметров out] может привести к сбою в работе интегрированной среды разработки.  
+> Недопустимые или `NULL` [исходящие] параметры могут привести к сбою интегрированной среды разработки.  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейс](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Вспомогательные методы SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Расширяемость отладчика Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

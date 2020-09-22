@@ -1,5 +1,6 @@
 ---
-title: Ручное развертывание приложений ClickOnce сохранение фирменной символики
+title: Развертывание вручную приложения ClickOnce & обеспечение фирменной символики
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263425"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809228"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Пошаговое руководство. Развертывание вручную приложения ClickOnce, которое не требует повторного подписания и сохраняет сведения о фирменной символике
 Когда вы создаете [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, а затем предоставляете его клиенту для публикации и развертывания, ему обычно пришлось обновить манифест развертывания и повторно подписать его. Хотя этот метод по-прежнему является предпочтительным в большинстве случаев, .NET Framework 3,5 позволяет создавать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, которые могут быть развернуты клиентами без необходимости повторно создавать новый манифест развертывания. Дополнительные сведения см. в статье [развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -37,7 +38,7 @@ ms.locfileid: "66263425"
 > [!NOTE]
 > В этом пошаговом руководстве вы создадите развертывания вручную с помощью программы командной строки *Mage.exe* или графического средства *MageUI.exe*. Дополнительные сведения о ручных развертываниях см. [в разделе Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
  Для выполнения действий, описанных в этом пошаговом руководстве, необходимо следующее.
 
 - Windows Forms приложение, готовое к развертыванию. Это приложение будет называться *WindowsFormsApp1*.
