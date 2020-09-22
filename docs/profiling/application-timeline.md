@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537284"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038352"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Анализ потребления ресурсов и активности потоков пользовательского интерфейса (XAML)
 
@@ -49,7 +49,7 @@ ms.locfileid: "85537284"
 
 3. Выберите **Временная шкала приложения** и щелкните **Запустить** в нижней части окна.
 
-   ![Выбор инструмента "Временная шкала приложения"](../profiling/media/apptimelineselect.png "Инструмент "Временная шкала приложения"")
+   ![Выбор инструмента "Временная шкала приложения"](../profiling/media/apptimelineselect.png "Инструмент «Временная шкала приложения»")
 
    > [!NOTE]
    > Может появиться окно "Контроль учетных записей" с запросом на разрешение запуска файла *VsEtwCollector.exe*. Нажмите кнопку **Да**.
@@ -125,7 +125,7 @@ ms.locfileid: "85537284"
 
 ## <a name="see-also"></a>См. также
 
-- [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Рекомендации по повышению производительности для приложений универсальной платформы Windows на C++, C# и Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Улучшение производительности приложений WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Профилирование в Visual Studio](../profiling/index.yml)

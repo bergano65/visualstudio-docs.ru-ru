@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор событий выборки | Документация Майкрософт
+title: Практическое руководство. Выбор событий выборки | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432838"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842345"
 ---
 # <a name="how-to-choose-sampling-events"></a>Практическое руководство. Выбор событий выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ ms.locfileid: "63432838"
   
 5. При выборе события выборки значение интервала выборки по умолчанию отображается в текстовом поле **Интервал выборки**. При необходимости можно ввести нужное значение в этом текстовом поле.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
- [Практическое руководство. Выбор методов сбора](../profiling/how-to-choose-collection-methods.md)   
+ [Как выбрать методы сбора](../profiling/how-to-choose-collection-methods.md)   
  [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)   
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)   
+ [Основные сведения о значениях данных выборки](../profiling/understanding-sampling-data-values.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

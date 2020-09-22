@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015940"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739945"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1
   Вы можете расширить систему проектов SharePoint в Visual Studio, создав собственные типы элементов проектов. В этом пошаговом руководстве будет создан элемент проекта, который можно добавить в проект SharePoint для создания настраиваемого действия на сайте SharePoint. Настраиваемое действие добавляет пункт меню в меню **действия сайта** сайта SharePoint.
@@ -46,7 +46,7 @@ ms.locfileid: "86015940"
 > [!NOTE]
 > Вы можете скачать пример из [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , в котором показано, как создавать пользовательские действия для рабочего процесса.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Microsoft Windows, SharePoint и Visual Studio.
@@ -295,7 +295,7 @@ ms.locfileid: "86015940"
 
 1. В **Обозреватель решений**откройте контекстное меню для файла **source. extension. vsixmanifest** в проекте кустомактионпрожектитем, а затем выберите **Открыть**.
 
-     Visual Studio откроет файл в редакторе манифестов. Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio откроет файл в редакторе манифестов. Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. В поле **Название продукта** введите **элемент проекта настраиваемого действия**.
 
@@ -446,7 +446,7 @@ ms.locfileid: "86015940"
 
 5. Закройте как экспериментальный экземпляр Visual Studio, так и экземпляр, в котором открыто решение Кустомактионпрожектитем.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
  После выполнения этого пошагового руководства можно добавить мастер в шаблон элемента. Когда пользователь добавляет элемент проекта настраиваемого действия в проект SharePoint, мастер собирает сведения о действии (например, его расположение и URL-адрес для перехода к, когда действие выбрано) и добавляет эти сведения в файл *Elements.xml* в новом элементе проекта. Дополнительные сведения см. в разделе [Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 ## <a name="see-also"></a>См. также

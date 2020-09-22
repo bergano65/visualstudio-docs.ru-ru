@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015679"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740010"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство. расширение типа элемента проекта SharePoint
   Элемент проекта **модели подключения к бизнес-данным** можно использовать для создания модели для службы подключения к бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта данные в модели не отображаются для пользователей. Кроме того, необходимо создать внешний список в SharePoint, чтобы позволить пользователям просматривать данные.
@@ -36,7 +36,7 @@ ms.locfileid: "86015679"
 
 - Тестирование расширения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Microsoft Windows, SharePoint и Visual Studio.
@@ -161,7 +161,7 @@ ms.locfileid: "86015679"
 
 1. В **Обозреватель решений**откройте контекстное меню для файла Source. extension. vsixmanifest в проекте женератикстерналдаталистс, а затем выберите **Открыть**.
 
-     Visual Studio откроет файл в редакторе манифестов. Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который является обязательным для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio откроет файл в редакторе манифестов. Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который является обязательным для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. В поле **Название продукта** введите " **генератор внешнего списка данных**".
 
@@ -292,7 +292,7 @@ ms.locfileid: "86015679"
 
 5. Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр, в котором открыто решение Женератикстерналдаталистс).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)

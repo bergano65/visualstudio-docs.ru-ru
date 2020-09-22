@@ -1,6 +1,6 @@
 ---
 title: Процесс обнаружил неустранимую ошибку
-ms.date: 06/22/2018
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544345"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025569"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Неустранимая ошибка процесса в Visual Studio
 
@@ -51,3 +51,6 @@ ms.locfileid: "81544345"
 - WindowsAzureTelemetryService.exe
 
 Если любой из этих процессов непредвиденно завершает работу, некоторые функциональные возможности в Visual Studio перестают работать. Для некоторых процессов потеря функциональности может быть незначительной. Другие процессы влияют на стабильность работы Visual Studio, и отображается сообщение об ошибке.
+
+> [!NOTE]
+> Если у вас возникла проблема, не указанная на этой странице, сообщите нам о ней с помощью средства [Сообщить о проблеме](../../ide/how-to-report-a-problem-with-visual-studio.md).Оно доступно как в Visual Studio Installer, так и в Visual Studio IDE.

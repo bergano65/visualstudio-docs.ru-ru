@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_machineType | Документация Майкрософт
+title: 'IDiaSymbol:: get_machineType | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ed70a2263cea9c6988149dacdf7269606fcdfe3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785534"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842448"
 ---
-# <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
+# <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает тип ЦП целевой объект.  
+Возвращает тип целевого ЦП.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,14 +35,14 @@ HRESULT get_machineType ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает значение из [перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) перечисление, указывающее тип ЦП целевой объект.  
+ заполняет Возвращает значение из перечисления [перечисления CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) , которое указывает тип целевого ЦП.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисление CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591844"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808068"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 
@@ -30,7 +30,7 @@ ms.locfileid: "75591844"
 
 ## <a name="compileroptions-attribute"></a>атрибут compilerOptions
 
-Пример.
+Пример:
 
 `compilerOptions="optimize+"`
 
@@ -44,7 +44,7 @@ ms.locfileid: "75591844"
 
 ## <a name="culture-attribute"></a>атрибут culture
 
-Пример.
+Пример:
 
 `culture="de-CH"`
 
@@ -58,7 +58,7 @@ ms.locfileid: "75591844"
 
 ## <a name="debug-attribute"></a>атрибут debug
 
-Пример.
+Пример:
 
 ```
 debug="true"
@@ -78,7 +78,7 @@ debug="true"
 
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific
 
-Пример.
+Пример:
 
 ```
 hostspecific="true"
@@ -122,7 +122,7 @@ Content of myFile is:
 
 ## <a name="language-attribute"></a>атрибут language
 
-Пример.
+Пример:
 
 `language="VB"`
 
@@ -156,7 +156,7 @@ Squares of numbers:
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Наследование в текстовом шаблоне времени выполнения (предварительно обработанном)
 
-Можно использовать наследование между текстовыми шаблонами времени выполнения для создания базового шаблона с несколькими производными вариантами. Шаблоны времени выполнения — это те, для которых свойство **Custom Tool** имеет значение **тексттемплатингфилепрепроцессор**. Шаблон времени выполнения создает код, который можно вызывать в приложении для создания текста, который определен в шаблоне. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Можно использовать наследование между текстовыми шаблонами времени выполнения для создания базового шаблона с несколькими производными вариантами. Шаблоны времени выполнения — это те, для которых свойство **Custom Tool** имеет значение **тексттемплатингфилепрепроцессор**. Шаблон времени выполнения создает код, который можно вызывать в приложении для создания текста, который определен в шаблоне. Дополнительные сведения см. в статье [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Если атрибут `inherits` не задан, базовый и производный классы создаются из текстового шаблона. При задании атрибута `inherits` создается только производный класс. Можно создать базовый класс вручную, однако он должен предоставлять методы, используемые производным классом.
 
@@ -235,11 +235,11 @@ This is the common footer.
 
 Для текстового шаблона времени разработки можно задать любой базовый класс, наследуемый от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Воспользуйтесь директивой `<#@assembly#>` для загрузки сборки или проекта, содержащего базовый класс.
 
-Дополнительные сведения см. [в разделе "наследование в текстовых шаблонах" в блоге Гарет Jones "](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
+Дополнительные сведения см. [в разделе "наследование в текстовых шаблонах" в блоге Гарет Jones "](/archive/blogs/garethj/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata).
 
 ## <a name="linepragmas-attribute"></a>атрибут Линепрагмас
 
-Пример.
+Пример:
 
 `linePragmas="false"`
 
@@ -255,7 +255,7 @@ This is the common footer.
 
 ## <a name="visibility-attribute"></a>атрибут видимости
 
-Пример.
+Пример:
 
 `visibility="internal"`
 
