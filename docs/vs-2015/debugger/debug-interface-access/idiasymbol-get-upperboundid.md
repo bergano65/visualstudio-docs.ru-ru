@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_upperBoundId | Документация Майкрософт
+title: 'IDiaSymbol:: get_upperBoundId | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2cca35fb1369214672b8740d41f65a2a725517e3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64826538"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843180"
 ---
-# <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
+# <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает идентификатор символа верхнюю границу измерения массива FORTRAN.  
+Возвращает идентификатор символа верхней границы измерения массива FORTRAN.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,16 +35,16 @@ HRESULT get_upperBoundId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает идентификатор символ, представляющий верхнюю границу измерения массива FORTRAN.  
+ [out,] Возвращает идентификатор символа, представляющего верхнюю границу измерения массива FORTRAN.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.  
+## <a name="remarks"></a>Remarks  
+ Идентификатор — это уникальное значение, созданное пакетом SDK для DIA, чтобы пометить все символы как уникальные.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

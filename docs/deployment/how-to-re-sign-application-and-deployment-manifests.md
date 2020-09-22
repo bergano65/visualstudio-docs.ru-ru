@@ -1,5 +1,5 @@
 ---
-title: Повторное подписание манифестов приложения и развертывания | Документация Майкрософт
+title: Повторно подписывать манифесты приложения и развертывания | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641600"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851688"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Практическое руководство. Повторное подписание манифестов приложения и развертывания
 После внесения изменений в свойства развертывания в манифесте приложения для Windows Forms приложений, Windows Presentation Foundation приложений (XBAP) или решений Office необходимо повторно подписать манифесты приложения и развертывания с помощью сертификата. Этот процесс позволяет проверить, не установлены ли на компьютер конечного пользователя измененные злоумышленниками файлы.
@@ -112,7 +112,7 @@ ms.locfileid: "89641600"
 
 7. При необходимости скопируйте главный манифест развертывания (*Publish \\ \<appname> . Application*) в каталог развертывания версии (*публиш\аппликатион Files \\ \<appname> _ \<version> *).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)

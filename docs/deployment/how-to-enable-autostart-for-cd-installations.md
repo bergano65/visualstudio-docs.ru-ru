@@ -1,5 +1,5 @@
 ---
-title: Включение автозапуска для установок компакт-дисков | Документация Майкрософт
+title: Включить автозапуск для установок компакт-дисков | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fa4830c3ea5ff840e0d58f6d31f718c28ec3fb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382449"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850947"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Практическое руководство. Включение автозапуска при установке с компакт-диска
 При развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения с помощью съемных носителей, таких как компакт-диски или DVD-диски, можно включить, `AutoStart` чтобы [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение автоматически запускалось при вставке носителя.

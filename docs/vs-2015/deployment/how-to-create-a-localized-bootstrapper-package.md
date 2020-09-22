@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание локализованного пакета загрузчика | Документация Майкрософт
+title: Как создать локализованный пакет начального загрузчика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440658"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843319"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета загрузчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63440658"
   
  По умолчанию в Visual Studio 2010 локализованные пакеты начальной загрузки включены только для .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 и F# Runtime 4.0. Чтобы создать локализованные пакеты для других начальных загрузчиков, сделайте следующее.  
   
-1. Создайте папку с именем после имени языкового стандарта в \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*.  
+1. Создайте папку с именем в виде имени локали в \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *бутстрапперпаккаженаме*.  
   
 2. Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.  
   
@@ -42,9 +42,9 @@ ms.locfileid: "63440658"
   
 1. Создайте папку с именем, соответствующим языковому стандарту.  
   
-     На 32-разрядных компьютерах, создайте папку в \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ папки.  
+     На 32-разрядных компьютерах создайте папку в папке \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *бутстрапперпаккаженаме*\.  
   
-     На 64-разрядных компьютерах, создайте папку в \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ папки.  
+     На 64-разрядных компьютерах создайте папку в папке \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *бутстрапперпаккаженаме*\.  
   
      В следующей таблице показано, какие имена папок можно использовать для соотнесения с языковым стандартом.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "63440658"
   
 2. Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.  
   
-3. Создайте манифест пакета с именем package.xml и сохраните его в новую папку. Дополнительные сведения см. в разделе [Как Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md).  
+3. Создайте манифест пакета с именем package.xml и сохраните его в новую папку. Дополнительные сведения см. [в разделе инструкции. Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md).  
   
 4. Обновите раздел `<Strings>` манифеста пакета, так чтобы язык строк соответствовал языковому стандарту.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "63440658"
   
 6. Сохраните файл package.xml.  
   
-## <a name="see-also"></a>См. также  
- [Создание пакетов загрузчика](../deployment/creating-bootstrapper-packages.md)   
- [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)   
+## <a name="see-also"></a>См. также:  
+ [Создание пакетов начального загрузчика](../deployment/creating-bootstrapper-packages.md)   
+ [Необходимые условия для развертывания приложения](../deployment/application-deployment-prerequisites.md)   
  [Практическое руководство. Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md)

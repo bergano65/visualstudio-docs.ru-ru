@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442341"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843394"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Выбор стратегии обновления ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442341"
 > Для обновлений приложений необходима связность узлов сети. Если сетевое подключение отсутствует, приложение выполняется без проверки наличия обновлений независимо от выбранной стратегии обновлений.  
   
 > [!NOTE]
-> В .NET Framework 2.0 и .NET Framework 3.0 при проверке приложением наличия обновлений в любое время, до или после запуска, либо с помощью API-функции <xref:System.Deployment.Application> необходимо установить параметр `deploymentProvider` в манифесте развертывания. Элемент `deploymentProvider` соответствует в Visual Studio полю **Местоположение обновления** в диалоговом окне **Обновления** на вкладке **Публикация**. Это правило — нестрогое в .NET Framework 3.5. Дополнительные сведения см. в разделе [развертывание ClickOnce приложений для тестирования и рабочих серверов без Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> В .NET Framework 2.0 и .NET Framework 3.0 при проверке приложением наличия обновлений в любое время, до или после запуска, либо с помощью API-функции <xref:System.Deployment.Application> необходимо установить параметр `deploymentProvider` в манифесте развертывания. `deploymentProvider`Элемент соответствует в Visual Studio полю **Расположение обновления** в диалоговом окне **обновления** на вкладке **Публикация** . Это правило ослаблено в .NET Framework 3,5. Дополнительные сведения см. в разделе [развертывание приложений ClickOnce для тестирования и рабочих серверов без подписывания](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Проверка наличия обновлений после запуска приложения  
  Используя эту стратегию, приложение пытается найти и прочитать файл манифеста развертывания в фоновом режиме во время работы приложения. Если обновление доступно, при следующем запуске пользователем приложения будет выведен запрос на загрузку и установку обновления.  
@@ -117,12 +117,12 @@ ms.locfileid: "63442341"
 ## <a name="permission-elevation-and-updates"></a>Повышение уровня разрешений и обновления  
  Если для выполнения новой версии приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] требуется более высокий уровень доверия, чем для предыдущей версии, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] запрашивает у пользователя, следует ли предоставить приложению этот более высокий уровень доверия. Если пользователь не может гарантировать высокий уровень доверия, обновление не будет установлено. При следующем перезапуске [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] снова запросит у пользователя разрешение на установку приложения. Если на этом этапе пользователь отклонит предоставление более высокого уровня доверия, и обновление не помечено как обязательное, запустится старая версия приложения. Однако если обновление является обязательным, приложение не запустится повторно до тех пор, пока пользователь не разрешит предоставление более высокого уровня доверия.  
   
- Если используется технология развертывания доверенных приложений, запрос по уровням доверия не будет выводиться. Для получения дополнительной информации см. [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Если используется технология развертывания доверенных приложений, запрос по уровням доверия не будет выводиться. Дополнительные сведения см. в разделе [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  <xref:System.Deployment.Application>   
- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Безопасность и развертывание ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Выполнение обновлений приложения службой ClickOnce](../deployment/how-clickonce-performs-application-updates.md)   
+ [Как ClickOnce выполняет обновления приложения](../deployment/how-clickonce-performs-application-updates.md)   
  [Практическое руководство. Управление обновлениями для ClickOnce-приложения](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

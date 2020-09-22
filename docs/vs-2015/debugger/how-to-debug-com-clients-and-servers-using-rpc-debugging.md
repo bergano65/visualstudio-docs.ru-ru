@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отладка COM-клиентов и серверов, с помощью отладки RPC | Документация Майкрософт
+title: Инструкции. отладка клиентов и серверов COM с помощью отладки RPC | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,11 +27,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384040"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843358"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "63384040"
   
 ### <a name="to-enable-rpc-debugging"></a>Включение отладки RPC  
   
-1. В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите команду **Параметры**.  
   
 2. В диалоговом окне **Параметры** щелкните папку **Отладка**.  
   
@@ -54,6 +54,6 @@ ms.locfileid: "63384040"
     > [!NOTE]
     > Выполнение удаленных вызовов процедур с заходом на удаленный сервер под управлением Microsoft Windows Vista будет работать только в том случае, если к удаленному серверу подключен отладчик машинного кода. В противном случае вызов RPC завершится сбоем без сообщения об ошибке. Или же вызов RPC будет выполнен, но пошаговое выполнение вызова RPC не будет работать.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

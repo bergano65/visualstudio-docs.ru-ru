@@ -1,5 +1,5 @@
 ---
-title: Как задать версию публикации ClickOnce | Документация Майкрософт
+title: Установка версии публикации ClickOnce | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5e1d91de14e3da4f188c276ef7dd74943d8978
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf99590bb78c425f570128ff7fae03c61d644b47
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382124"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851779"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Практическое руководство. Установка версии публикации приложения ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` Свойство определяет, будет ли публикуемое приложение рассматриваться как обновление. Каждый раз, когда версия увеличивается, приложение будет опубликовано как обновление.
@@ -42,7 +42,7 @@ ms.locfileid: "85382124"
     > [!NOTE]
     > Не следует уменьшать номер версии. Это может привести к непредсказуемому поведению обновления.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
