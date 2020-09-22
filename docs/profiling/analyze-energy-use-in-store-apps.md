@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537245"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075461"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. В меню **Отладка** выберите **Запуск диагностики без отладки**.
 
-     ![Выбор расхода энергии в концентраторе диагностики](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Выбор расхода энергии в Профилировщике производительности](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Выберите **Расход энергии** и нажмите кнопку **Запуск**.
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. В списке **Выберите установленный пакет приложения** выберите целевой объект.
 
-3. На странице концентратора диагностики выберите **Расход энергии** .
+3. Выберите **расхода энергии** в Профилировщике производительности.
 
 4. Выберите **Запуск** , чтобы начать профилирование.
 

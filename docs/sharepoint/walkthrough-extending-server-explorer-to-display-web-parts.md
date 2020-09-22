@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015636"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739997"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Пошаговое руководство. расширение обозреватель сервера для показа веб-частей
   В Visual Studio можно использовать узел **подключения SharePoint** **Обозреватель сервера** для просмотра компонентов на сайтах SharePoint. Однако по умолчанию **Обозреватель сервера** не отображает некоторые компоненты. В этом пошаговом руководстве вы расширяете **Обозреватель сервера** , чтобы на каждом подключенном сайте SharePoint отображалась Галерея веб-частей.
@@ -42,7 +42,7 @@ ms.locfileid: "86015636"
 > [!NOTE]
 > В альтернативной версии этого пошагового руководства, в которой используется клиентская объектная модель для SharePoint вместо серверной объектной модели, см. в разделе [Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Prerequisites
  Для выполнения этого пошагового руководства на компьютере разработчика потребуются следующие компоненты:
 
 - Поддерживаемые выпуски Windows, SharePoint и Visual Studio.
@@ -275,7 +275,7 @@ ms.locfileid: "86015636"
 
 1. В **Обозреватель решений**в проекте вебпартноде откройте файл **source. extension. vsixmanifest** в редакторе манифестов.
 
-     Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Файл Source. extension. vsixmanifest является основанием для файла Extension. vsixmanifest, который требуются для всех пакетов VSIX. Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. В поле **имя продукта** введите **узел коллекции веб-частей для обозреватель сервера**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015636"
 10. В поле **тип** введите **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Этот элемент указывает пользовательское расширение, которое необходимо включить в расширение Visual Studio. Дополнительные сведения см. в разделе [элемент Asset (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Этот элемент указывает пользовательское расширение, которое необходимо включить в расширение Visual Studio. Дополнительные сведения см. в разделе [элемент Asset (Схема VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. В списке **источник** выберите **проект в текущем** элементе списка решений.
 
@@ -369,8 +369,8 @@ ms.locfileid: "86015636"
 
 4. Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр Visual Studio, в котором открыто решение Вебпартноде).
 
-## <a name="see-also"></a>См. также раздел
-- [Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+## <a name="see-also"></a>См. также
+- [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Пошаговое руководство. вызов клиентской объектной модели SharePoint в расширении обозреватель сервера](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)
 - [Создание значка или другого изображения &#40;редактора изображений для значков&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

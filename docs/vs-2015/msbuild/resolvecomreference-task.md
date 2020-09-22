@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439350"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842945"
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ ms.locfileid: "63439350"
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`DelaySign`|Необязательный параметр `Boolean` .<br /><br /> Если присвоено значение `true`, помещает открытый ключ в сборку. Если присвоено значение `false`, полностью подписывает сборку.|  
-|`EnvironmentVariables`|Необязательный параметр `String[]` .<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденный tlbimp.exe и aximp.exe, дополняя или выборочно переопределяя обычный блок окружения.|  
-|`ExecuteAsTool`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, из соответствующей внепроцессной требуемой версии .NET Framework запустятся программы Tlbimp.exe и Aximp.exe для создания необходимых сборок-оболочек. Этот параметр разрешает настройку для различных версий.|  
-|`IncludeVersionInInteropName`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, версия библиотеки типов будет включена в имя программы-оболочки. Значение по умолчанию — `false`.|  
-|`KeyContainer`|Необязательный параметр `String` .<br /><br /> Задает контейнер, хранящий пару из открытого и закрытого<br /><br /> ключей.|  
-|`KeyFile`|Необязательный параметр `String` .<br /><br /> Задает элемент, содержащий пару из открытого и закрытого<br /><br /> ключей.|  
+|`DelaySign`|Необязательный параметр `Boolean`.<br /><br /> Если присвоено значение `true`, помещает открытый ключ в сборку. Если присвоено значение `false`, полностью подписывает сборку.|  
+|`EnvironmentVariables`|Необязательный параметр `String[]`.<br /><br /> Массив пар переменных среды, разделенных знаками равенства. Эти переменные частично передаются в порожденный tlbimp.exe и aximp.exe, дополняя или выборочно переопределяя обычный блок окружения.|  
+|`ExecuteAsTool`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, из соответствующей внепроцессной требуемой версии .NET Framework запустятся программы Tlbimp.exe и Aximp.exe для создания необходимых сборок-оболочек. Этот параметр разрешает настройку для различных версий.|  
+|`IncludeVersionInInteropName`|Необязательный параметр `Boolean`.<br /><br /> Если задано значение `true`, версия библиотеки типов будет включена в имя программы-оболочки. Значение по умолчанию — `false`.|  
+|`KeyContainer`|Необязательный параметр `String`.<br /><br /> Задает контейнер, хранящий пару из открытого и закрытого<br /><br /> ключей.|  
+|`KeyFile`|Необязательный параметр `String`.<br /><br /> Задает элемент, содержащий пару из открытого и закрытого<br /><br /> ключей.|  
 |`NoClassMembers`|Необязательный параметр `Boolean`.|  
 |`ResolvedAssemblyReferences`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает разрешенные ссылки на сборки.|  
 |`ResolvedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает полные имена файлов на диске, соответствующие физическим расположениям библиотек типов, которые были указаны во входных данных задачи.|  
 |`ResolvedModules`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.|  
 |`SdkToolsPath`|Дополнительный (строковый<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметр.<br /><br /> Если `ExecuteAsTool` имеет значение `true`, в качестве значения этого параметра следует установить путь к инструментам пакета SDK для целевой версии платформы.|  
-|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Указывает файл кэша для меток времени COM-компонентов. Если он отсутствует, при каждом запуске будут повторно создаваться все оболочки.|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
-|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Указывает предпочитаемую архитектуру целевого процессора. После преобразования передается во флаг /machine tlbimp.exe.<br /><br /> Значение параметра должно быть элементом <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`StateFile`|Необязательно <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметров).<br /><br /> Указывает файл кэша для меток времени COM-компонентов. Если он отсутствует, при каждом запуске будут повторно создаваться все оболочки.|  
+|`TargetFrameworkVersion`|Необязательно <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметров).<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
+|`TargetProcessorArchitecture`|Необязательно <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметров).<br /><br /> Указывает предпочитаемую архитектуру целевого процессора. После преобразования передается во флаг /machine tlbimp.exe.<br /><br /> Значение параметра должно быть элементом <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает путь к файлу библиотеки типов для COM-ссылок. Элементы, включенные в этот параметр, могут содержать метаданные элементов. Дополнительные сведения см. в разделе "Метаданные элементов TypeLibFiles" ниже.|  
 |`TypeLibNames`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает имена библиотек для разрешения. Элементы, включенные в этот параметр, должны содержать метаданные элементов. Дополнительные сведения см. в разделе "Метаданные элементов TypeLibNames" ниже.|  
-|`WrapperOutputDirectory`|Необязательный параметр `String` .<br /><br /> Расположение на диске, куда помещается созданная сборка взаимодействия. Если эти метаданные элемента не заданы, задача использует абсолютный путь к каталогу, где располагается файл проекта.|  
+|`WrapperOutputDirectory`|Необязательный параметр `String`.<br /><br /> Расположение на диске, куда помещается созданная сборка взаимодействия. Если эти метаданные элемента не заданы, задача использует абсолютный путь к каталогу, где располагается файл проекта.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="typelibnames-item-metadata"></a>Метаданные элементов TypeLibNames  
  В следующей таблице описаны метаданные, которые доступны для элементов, передаваемых в параметр `TypeLibNames`.  
@@ -78,8 +78,8 @@ ms.locfileid: "63439350"
 > Чем больше сведений вы предоставите для однозначного определения библиотеки типов, тем выше вероятность того, что задача разрешится в нужный файл на диске.  
   
 ## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Task Base Class](../msbuild/task-base-class.md) (Базовый класс Task).  
+ Помимо перечисленных выше параметров эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описание см. в разделе [базовый класс Task](../msbuild/task-base-class.md).  
   
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также:  
+ [Операции](../msbuild/msbuild-tasks.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)

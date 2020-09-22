@@ -1,5 +1,6 @@
 ---
-title: Установка необходимых компонентов с помощью приложения ClickOnce | Документация Майкрософт
+title: Установка необходимых компонентов с помощью приложения ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382384"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809124"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Практическое руководство. Установка необходимых компонентов для приложения ClickOnce
 Для всех [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений требуется, чтобы на компьютере была установлена правильная версия .NET Framework, прежде чем их можно будет запустить; у многих приложений также есть и другие необходимые компоненты. При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения можно выбрать набор необходимых компонентов, которые будут упакованы вместе с приложением. Во время установки для каждого необходимого компонента будет выполнена проверка, чтобы определить, существует ли он уже. Если это не так, то оно будет установлено до установки [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.
@@ -67,6 +68,6 @@ ms.locfileid: "85382384"
     > [!NOTE]
     > Необходимо убедиться, что установщики для указанных компонентов существуют в указанном расположении.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Инструкции. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433002"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842920"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Пакеты интерфейса пользователя (Microsoft LIP) и Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "63433002"
     > [!NOTE]
     > Для выполнения этих действий требуются права администратора.
 
-2. Откройте вкладку **Дополнительно** .
+2. Перейдите на вкладку **Дополнительно**.
 
 3. В выпадающем списке **Выберите язык, соответствующий языку используемых программ, которые не поддерживают Юникод** выберите используемый язык.
 
@@ -92,7 +92,7 @@ ms.locfileid: "63433002"
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Установка языка, используемого для текста интерфейса пользователя среды разработки Visual Studio
 
-1. В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите команду **Параметры**.
 
 2. В диалоговом окне **Параметры** разверните узел **Среда**, а затем щелкните **Международные параметры**.
 
@@ -102,5 +102,5 @@ ms.locfileid: "63433002"
 
    Можно также использовать команду devenv для задания языка, используемого для пользовательского интерфейса. Дополнительные сведения см. в [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
  [Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"](../ide/reference/international-settings-environment-options-dialog-box.md)

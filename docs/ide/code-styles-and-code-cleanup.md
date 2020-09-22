@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312591"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743328"
 ---
 # <a name="code-style-preferences"></a>Параметры стиля кода
 
@@ -60,6 +60,14 @@ ms.locfileid: "89312591"
 
 Для каждого параметра стиля кода на этой странице с помощью раскрывающихся списков в каждой строке можно задать значения для параметров **Предпочтение** и **Серьезность**. Для серьезности можно задать значения **Только рефакторинг**, **Предложение**, **Предупреждение** или **Ошибка**. Если вы хотите включить [быстрые действия](../ide/quick-actions.md) для стиля кода, убедитесь, что для параметра **Серьезность** задано значение, отличное от **Только рефакторинг**. Значок лампочки для **быстрых действий**![лампочка](media/light-bulb-dropdown.png), значок лампочки с ошибкой ![лампочка с ошибкой](media/error-bulb.png) или значок отвертки ![отвертка](media/screwdriver.png) отображаются при использовании альтернативного стиля. Вы можете выбрать нужный вариант в списке **быстрых действий** для автоматического повторного создания кода в предпочитаемом стиле.
 
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>Принудительное применение стиля кода в сборке
+
+Начиная с Visual Studio 2019 версии 16.8, куда входит пакет SDK для .NET 5.0 RC2, можно [применять соглашения о написании кода .NET в сборке](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) для всех проектов .NET. Во время сборки нарушения стиля кода .NET будут отображаться в виде предупреждений или ошибок с префиксом IDE. Это позволяет строго применять единообразные стили кода в базе кода.
+
+::: moniker-end
+
 ## <a name="apply-code-styles"></a>Применение стилей кода
 
 ::: moniker range="vs-2017"
@@ -101,7 +109,7 @@ ms.locfileid: "89312591"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Быстрые действия](../ide/quick-actions.md)
 - [Параметры соглашений о написании кода .NET в EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

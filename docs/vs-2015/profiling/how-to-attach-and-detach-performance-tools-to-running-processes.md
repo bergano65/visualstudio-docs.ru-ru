@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Присоединение и отсоединение средства обеспечения производительности к выполняемым процессам | Документация Майкрософт
+title: Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443713"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842764"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Присоединение и отсоединение средства обеспечения производительности к выполняемым процессам
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Подключение средств оценки производительности к выполняющимся процессам и отключение от этих процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.  
@@ -40,7 +40,7 @@ ms.locfileid: "63443713"
   
 - запрет доступа к профилированию для всех пользователей.  
   
-  Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и параметры администрирования в средстве [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Присоединение к выполняющемуся процессу  
   
@@ -68,11 +68,11 @@ ms.locfileid: "63443713"
   
 2. Щелкните имя процесса, который необходимо отключить.  
   
-3. Щелкните **Отсоединить**.  
+3. Щелкните **Отключить**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
- [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
- [Практическое руководство. Начало и окончания сбора данных производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Обзор сеанса анализа производительности](../profiling/performance-session-overview.md)   
+ [Как начать и завершить сбор данных о производительности](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

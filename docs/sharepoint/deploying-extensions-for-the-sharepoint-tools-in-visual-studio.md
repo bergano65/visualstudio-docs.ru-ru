@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580648"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740148"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Развертывание расширений для инструментов SharePoint в Visual Studio
 
@@ -234,11 +234,11 @@ ms.locfileid: "62580648"
 
     - Добавьте `Microsoft.VisualStudio.MefComponent` элемент в `Assets` элемент, а затем задайте в качестве значения нового элемента относительный путь к сборке, реализующей расширение в пакете VSIX. Дополнительные сведения см. в разделе [элемент MEFComponent (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    - Если расширение включает команду SharePoint, которая вызывает серверную объектную модель для SharePoint, добавьте `Microsoft.VisualStudio.Assembly` элемент в `Assets` элемент. Задайте в качестве значения нового элемента относительный путь к сборке, реализующей команду SharePoint в пакете VSIX. Дополнительные сведения см. в разделе [элемент Asset (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Если расширение включает команду SharePoint, которая вызывает серверную объектную модель для SharePoint, добавьте `Microsoft.VisualStudio.Assembly` элемент в `Assets` элемент. Задайте в качестве значения нового элемента относительный путь к сборке, реализующей команду SharePoint в пакете VSIX. Дополнительные сведения см. в разделе [элемент Asset (Схема VSX)](/previous-versions/dd393737(v=vs.110)).
 
     - Если расширение содержит шаблон проекта или элемента, добавьте `ProjectTemplate` `ItemTemplate` элемент или в `Assets` элемент. Задайте в качестве значения нового элемента относительный путь к папке, содержащей шаблон, в пакете VSIX. Дополнительные сведения см. в разделе [элемент ProjectTemplate (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) и [элемент ITEMTEMPLATE (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    - Если расширение содержит настраиваемый мастер для шаблона проекта или элемента, добавьте `Assembly` элемент в `Assets` элемент. Задайте для нового элемента относительный путь к сборке в пакете VSIX, а затем присвойте `AssemblyName` атрибуту полное имя сборки (включая версию, язык и региональные параметры и токен открытого ключа). Дополнительные сведения см. в разделе [элемент dependency (Схема VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Если расширение содержит настраиваемый мастер для шаблона проекта или элемента, добавьте `Assembly` элемент в `Assets` элемент. Задайте для нового элемента относительный путь к сборке в пакете VSIX, а затем присвойте `AssemblyName` атрибуту полное имя сборки (включая версию, язык и региональные параметры и токен открытого ключа). Дополнительные сведения см. в разделе [элемент dependency (Схема VSX)](/previous-versions/dd393682(v=vs.110)).
 
 ### <a name="example"></a>Пример
 
@@ -264,9 +264,9 @@ ms.locfileid: "62580648"
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Расширение системы проектов SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Расширение узла подключений SharePoint в обозреватель сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Расширение узла подключений SharePoint в обозревателе сервера](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Вызов объектных моделей SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Расширения отладки для инструментов SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Отладка расширений для инструментов SharePoint в Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

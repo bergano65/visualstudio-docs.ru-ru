@@ -1,6 +1,8 @@
 ---
-title: Сведения о параметрах в языковой службы прежних версий1 | Документация Майкрософт
-ms.date: 11/04/2016
+title: Сведения о параметре в устаревшем языке Service1 | Документация Майкрософт
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
@@ -9,72 +11,72 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 5b1707313c40e7ea720fff3b9f70546af00ea486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408658"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842392"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
-Подсказка о параметрах IntelliSense предоставляет пользователям указания о где они находятся в конструкции языка.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
-
+Подсказка о параметрах IntelliSense предоставляет пользователям подсказки о том, где они находятся в языковой конструкции.  
+  
+ Устаревшие языковые службы реализуются как часть VSPackage, но более новым способом реализации функций языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).  
+  
 > [!NOTE]
-> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
-
-## <a name="how-parameter-info-tooltips-work"></a>Как работают параметр отображение кратких сведений
- При вводе инструкцию в редакторе VSPackage отображается небольшой подсказки окно, содержащее определение оператора ввода. Например, если ввести инструкцию Microsoft Foundation Classes (MFC) (такие как `pMainFrame ->UpdateWindow`) и нажмите клавишу открывающей скобки, чтобы начать со списком параметров, отображается подсказка метода Отображение определения `UpdateWindow` метод.
-
- Отображение кратких сведений параметров обычно используются в сочетании с завершение операторов. Они наиболее полезны для языков, которые имеют параметры или других отформатированную информацию, после имени метода или ключевое слово.
-
- Сведения о параметрах подсказки инициируются через перехват команд языковой службы. Для перехвата пользователя символов, должен реализовывать объект службы языка <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и передать указатель на представление текста вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализации, путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс. Фильтр команды перехватывает команды, вводимые в окне кода. Мониторинг сведений о команде о том, когда для отображения сведений о параметрах для пользователя. Можно использовать один и тот же фильтр команды для завершения операторов, маркеры ошибок и т. д.
-
- При вводе ключевого слова, для которого языковая служба может предоставить подсказки языковая служба создаст <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> и вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейса для уведомления IDE, чтобы отобразить подсказку. Создание <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> с помощью `VSLocalCreateInstance` и указав компонентного класса `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` — Это функция, определенная в vsdoc.h файл заголовка, который вызывает `QueryService` для локального реестра и вызывает `CreateInstance` для данного объекта для `CLSID_VsMethodTipWindow`.
-
-## <a name="providing-a-method-tip"></a>Предоставляет подсказку метода
- Чтобы предоставить подсказку метода, вызвать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> интерфейса, передавая ему реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейс.
-
- Если ваш <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> вызывается класс, его методы вызываются в следующем порядке:
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
-
-     Возвращает положение и длину релевантных данных текущего буфера текста. Это указывает, что интегрированная среда разработки, чтобы не скрывать эти данные с помощью окна всплывающей подсказки.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
-
-     Возвращает номер метода (отсчитываемый от нуля индекс), вы должны отображаться изначально. Например если возвращается ноль, затем первый перегруженный метод, изначально отображаемого.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
-
-     Возвращает число перегруженных методов, которые можно использовать в текущем контексте. Если возвращается значение больше 1 для этого метода, затем представление текста отображает стрелки вверх и вниз для вас. Если щелкнуть стрелку вниз, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> метод. Если щелкнуть стрелку вверх, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> метод.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
-
-     Текст подсказки о параметрах создается во время несколько вызовов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> методы.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
-
-     Возвращает число параметров для отображения в методе.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
-
-     Если возвращается метод число, соответствующее перегрузки, которые необходимо отобразить, этот метод вызывается, а затем с помощью вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> метод.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
-
-     Сообщает службе языка для обновления редактора, когда отображается подсказка метода. В <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> метод, приведенный ниже код:
-
-    ```
-    <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
-    ```
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
-
-     Вы получите вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> метод при закрытии окна подсказки метода.
+> Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.  
+  
+## <a name="how-parameter-info-tooltips-work"></a>Как работают всплывающие подсказки о параметрах  
+ При вводе инструкции в редакторе VSPackage отображает небольшое окно подсказки, содержащее определение вводимой инструкции. Например, если ввести оператор Microsoft Foundation Classes (MFC) `pMainFrame ->UpdateWindow` и нажать клавишу открывающей скобки, чтобы начать вывод списка параметров, появится подсказка метода, отображающая определение `UpdateWindow` метода.  
+  
+ Подсказки сведений о параметрах обычно используются вместе с завершением операторов. Они наиболее полезны для языков с параметрами или другими отформатированными сведениями после имени метода или ключевого слова.  
+  
+ Подсказки сведений о параметрах инициируются языковой службой посредством перехвата команд. Для перехвата пользовательских символов объект языковой службы должен реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс и передать ему указатель на <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализацию, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейсе. Фильтр команд перехватывает команды, введенные в окно кода. Отслеживайте сведения о командах, чтобы выяснить, когда следует отображать сведения о параметрах пользователю. Вы можете использовать один и тот же фильтр команд для завершения операторов, маркеров ошибок и т. д.  
+  
+ При вводе ключевого слова, для которого языковая служба может предоставлять указания, служба языка создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> объект и вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейсе, чтобы уведомить интегрированную среду разработки о необходимости отобразить указание. Создайте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> объект с помощью `VSLocalCreateInstance` и укажите компонентный класс `CLSID_VsMethodTipWindow` . `VsLocalCreateInstance` — Это функция, определенная в файле заголовка всдок. h, который вызывает `QueryService` для локального реестра и вызывает `CreateInstance` объект для `CLSID_VsMethodTipWindow` .  
+  
+## <a name="providing-a-method-tip"></a>Предоставление подсказки метода  
+ Чтобы предоставить подсказку метода, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> интерфейсе, передав ему свою реализацию <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейса.  
+  
+ При <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> вызове класса его методы вызываются в следующем порядке:  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
+  
+     Возвращает расположение и длину соответствующих данных в текущем текстовом буфере. Это указывает интегрированной среде разработки не скрывать эти данные с помощью окна подсказки.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
+  
+     Возвращает номер метода (Отсчитываемый от нуля индекс), который должен отображаться изначально. Например, если вы возвращаете ноль, то изначально представляется первый перегруженный метод.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
+  
+     Возвращает количество перегруженных методов, которые применимы в текущем контексте. Если для этого метода возвращается значение больше 1, то в текстовом представлении отображаются стрелки вверх и вниз. Если щелкнуть стрелку вниз, среда IDE вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> метод. Если щелкнуть стрелку вверх, интегрированная среда разработки вызовет <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> метод.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
+  
+     Текст подсказки сведений о параметре создается во время нескольких вызовов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> методов и.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
+  
+     Возвращает число параметров, отображаемых в методе.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
+  
+     Если возвращается номер метода, соответствующий перегрузке, которую требуется отобразить, вызывается этот метод, после чего вызывается <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> метод.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
+  
+     Информирует языковую службу о необходимости обновления редактора при отображении подсказки метода. В <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> методе вызовите следующую команду:  
+  
+    ```  
+    <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
+    ```  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
+  
+     При <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> закрытии окна подсказки метода вы получаете вызов метода.

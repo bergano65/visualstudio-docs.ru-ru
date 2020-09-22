@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800841"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036702"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Развертывание приложения в папке, IIS, Azure или другом расположении
 
 Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке. В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания.
 
-Для многих распространенных типов приложений вы можете выполнить развертывание прямо из обозревателя решений в Visual Studio. Краткий обзор этой возможности см. в разделе [Первое знакомство с развертыванием](../deployment/deploying-applications-services-and-components.md).
+Справочные сведения о задаче развертывания:
 
-![Выбор варианта публикации](../deployment/media/quickstart-publish-dialog.png)
+- Не знаете, какой вариант развертывания выбрать? Ознакомьтесь со статьей [Выбор подходящих вариантов публикации](#what-publishing-options-are-right-for-me).
+- Сведения об устранении проблем с развертыванием Службы приложений Azure или служб IIS см. в [этой статье](/aspnet/core/test/troubleshoot-azure-iis).
+- Дополнительные сведения о настройке параметров развертывания .NET см. в [этой статье](#configure-net-deployment-settings).
+- Чтобы выполнить развертывание в новый целевой объект, если вы ранее создали профиль публикации, для настроенного профиля в окне **Публикация** выберите **Создать**.
+
+   ![Создание профиля публикации](../deployment/media/create-a-new-publish-profile.png)
+
+   Затем выберите вариант развертывания в окне "Публикация". Сведения о вариантах публикации см. в следующих разделах.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Выбор подходящих вариантов публикации
 
 Из среды Visual Studio приложения можно публиковать напрямую в следующие целевые объекты:
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Реестр контейнеров Docker](#docker-container-registry)
 - [Папка](#folder)
 - [сервер FTP или FTPS](#ftpftps-server);
 - [веб-сервер (IIS)](#web-server-iis);
 - [профиль импорта](#import-profile).
+::: moniker-end
+::: moniker range="vs-2017"
+- [Служба приложений](#azure-app-service)
+- [Служба приложений для Linux;](#azure-app-service)
+- [IIS (выберите IIS, FTP или другой вариант)](#web-server-iis)
+- [FTP/FTPS (выберите IIS, FTP или другой вариант)](#ftpftps-server)
+- [Папка](#folder)
+- [профиль импорта](#import-profile).
+::: moniker-end
+
+Как показано на следующем рисунке, при создании профиля публикации появятся перечисленные выше варианты.
+
+::: moniker range=">=vs-2019"
+![Выбор варианта публикации](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Выбор варианта публикации](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Краткий обзор общих вариантов развертывания приложений см. в статье [Первое знакомство с развертыванием](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 В Azure можно выбрать один из следующих вариантов:
 
-- Служба приложений Azure на базе ОС Windows, Linux или в виде образа Docker;
-- образ Docker, развернутый в Реестре контейнеров Azure;
-- Виртуальная машина Azure
+- [Служба приложений Azure на базе ОС Windows, Linux или в виде образа Docker](#azure-app-service);
+- [образ Docker, развернутый в Реестре контейнеров Azure](#azure-container-registry);
+- [Виртуальная машина Azure](#azure-virtual-machine).
 
 ![Выбор службы Azure](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ ms.locfileid: "88800841"
 > Если вы хотите использовать службу приложений Azure в своем центре обработки данных или на других локальных компьютерах, воспользуйтесь для этого [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 Дополнительные сведения о публикации в Службе приложений см. в следующих статьях:
-- [Публикация веб-приложения в Службе приложений Azure с помощью Visual Studio](quickstart-deploy-to-azure.md) и [Публикация веб-приложения ASP.NET Core в Службе приложений в Linux с помощью Visual Studio](quickstart-deploy-to-linux.md)
+- [Краткое руководство. Публикация в "Службе приложений Azure"](quickstart-deploy-to-azure.md).
+- [Краткое руководство. Публикация ASP.NET Core в Linux](quickstart-deploy-to-linux.md).
+- [Публикация приложения ASP.NET Core в "Службе приложений Azure"](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 - [Устранение неполадок ASP.NET Core в Службе приложений Azure и IIS](/aspnet/core/test/troubleshoot-azure-iis)
 
 ### <a name="azure-container-registry"></a>Реестр контейнеров Azure
@@ -78,13 +108,17 @@ ms.locfileid: "88800841"
 - Если у вас уже есть конвейер разработки и развертывания для контейнера Docker.
 - Если вы хотите создать образы контейнеров Docker в Azure.
 
-### <a name="azure-virtual-machines"></a>Виртуальные машины Azure
+Дополнительные сведения
+
+- [Развертывание контейнера ASP.NET в реестре контейнеров](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Виртуальная машина Azure
 
 [Виртуальные машины Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) позволяют создавать любое количество вычислительных ресурсов в облаке и управлять ими. Принимая на себя ответственность за все программное обеспечение и обновления на виртуальных машинах, вы можете настроить их в соответствии с требованиями своего приложения. Вы можете обращаться к виртуальным машинам напрямую через удаленный рабочий стол, и для каждой из них назначенный IP-адрес будет существовать столько, сколько нужно.
 
 Масштабирование приложения, размещенного на виртуальных машинах, предполагает запуск дополнительных виртуальных машин по требованию и последующее развертывание необходимого программного обеспечения. Этот дополнительный уровень управления позволяет вам применять разные режимы масштабирования в разных глобальных регионах. Например, если ваше приложение обслуживает сотрудников в различных региональных офисах, вы можете масштабировать ваши виртуальные машины в зависимости от количества сотрудников в этих регионах, что способствует сокращению затрат.
 
-Дополнительные сведения см. в статье с [подробным сравнением](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) службы приложений Azure, виртуальных машин Azure и других служб Azure, которые можно использовать в качестве целевого объекта развертывания, применив параметр "Пользовательский" в Visual Studio.
+Дополнительные сведения см. в статье с [подробным сравнением](/azure/architecture/guide/technology-choices/compute-decision-tree) службы приложений Azure, виртуальных машин Azure и других служб Azure, которые можно использовать в качестве целевого объекта развертывания, применив параметр "Пользовательский" в Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>В каких случаях нужно выбрать виртуальные машины Azure
 
@@ -97,11 +131,16 @@ ms.locfileid: "88800841"
 
 ## <a name="docker-container-registry"></a>Реестр контейнеров Docker
 
-Если в вашем контейнерном приложении используется Docker, вы можете опубликовать его в реестре контейнеров Docker.
+Если в вашем контейнерном приложении используется Docker, вы можете опубликовать его в реестре контейнеров Docker.
 
 ### <a name="when-to-choose-docker-container-registry"></a>В каких случаях следует выбирать реестр контейнеров Docker
 
 - Вам требуется развернуть контейнерное приложение
+
+Дополнительные сведения см. в следующих разделах:
+
+- [Развертывание контейнера ASP.NET в реестре контейнеров](../containers/hosting-web-apps-in-docker.md)
+- [Развертывание в Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>Папка
 
@@ -118,6 +157,12 @@ ms.locfileid: "88800841"
 - Вы хотите проверять и при необходимости изменять файлы приложения независимо друг от друга перед их отправкой в другой целевой объект развертывания.
 
 Дополнительные сведения см. в статье [Краткое руководство. Развертывание в локальную папку](quickstart-deploy-to-local-folder.md).
+
+Дополнительные сведения о выборе параметров см. в следующих статьях:
+
+- [Развертывание, зависящее от платформы, и автономное развертывание](/dotnet/core/deploying/)
+- [Идентификаторы целевой среды выполнения (переносной RID и т. п.)](/dotnet/core/rid-catalog)
+- [Конфигурации отладки и выпуска](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>Сервер FTP или FTPS
 
@@ -157,7 +202,9 @@ ms.locfileid: "88800841"
 - Вы хотите использовать для развертывания учетные данные, отличные от используемых в Visual Studio, или напрямую связанные с вашими учетными записями Azure.
 - Вы хотите удалять файлы из целевого объекта при каждом развертывании.
 
-Дополнительные сведения см. в [кратком руководстве по развертыванию на веб-сайте](quickstart-deploy-to-a-web-site.md) и статье [Устранение неполадок ASP.NET Core в Службе приложений Azure и IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Дополнительные сведения см. в [кратком руководстве по развертыванию на веб-сайте](quickstart-deploy-to-a-web-site.md)
+
+и статье [Устранение неполадок ASP.NET Core в Службе приложений Azure и IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Профиль импорта
 
@@ -174,6 +221,14 @@ ms.locfileid: "88800841"
 
 - [Импорт параметров публикации и развертывание в IIS](tutorial-import-publish-settings-iis.md)
 - [Импорт параметров публикации и развертывание в Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Настройка параметров развертывания .NET
+
+Дополнительные сведения о выборе параметров см. в следующих статьях:
+
+- [Развертывание, зависящее от платформы, и автономное развертывание](/dotnet/core/deploying/)
+- [Идентификаторы целевой среды выполнения (переносной RID и т. п.)](/dotnet/core/rid-catalog)
+- [Конфигурации отладки и выпуска](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Следующие шаги
 

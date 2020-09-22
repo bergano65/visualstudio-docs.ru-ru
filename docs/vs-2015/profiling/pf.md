@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442469"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842881"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,26 +43,26 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Обязательные параметры  
  Параметр **PF** можно указать только в командной строке, которая содержит один из перечисленных ниже параметров.  
   
- **Launch:** `AppName`  
+ **Запуск:**`AppName`  
  Запускает профилировщик и приложение, указанное в параметре AppName.  
   
- **Attach:** `PID`  
+ **Присоединиться:**`PID`  
  Подключает профилировщик к процессу, указанному в параметре AppName.  
   
 ## <a name="invalid-options"></a>Недопустимые параметры  
  Перечисленные ниже параметры нельзя указывать в одной командной строке с параметром **PF**.  
   
- **Timer**[ **:** `Cycles`]  
- Задает для события выборки значение, равное тактовой частоте процессора, и при необходимости задает для интервала выборки значение параметра `Cycles`. Значение этого параметра по умолчанию — 10 000 000.  
+ **Timer**[**:** `Cycles` ]  
+ Задает для события выборки значение, равное тактовой частоте процессора, и при необходимости задает для интервала выборки значение параметра `Cycles`. Значение этого параметра по умолчанию — 10 000 000.  
   
- **Sys**[ **:** `Events`]  
+ **Sys**[**:** `Events` ]  
  Задает для события выборки значение, равное числу вызовов ядра операционной системы (syscalls), поступивших из профилируемого приложения, и при необходимости задает в качестве интервала выборки значение параметра `Events`. Интервал Sys по умолчанию — 10.  
   
- **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
+ **Счетчик:** `Name` [`,Reload`[`,FriendlyName`]]  
  Задает в качестве события выборки счетчик производительности ЦП, указанный параметром `Name`, и устанавливает интервал выборки, равный `Reload`.  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- Собирает данные .NET. По умолчанию (**Allocation**) данные собираются для каждого события выделения памяти. Если указан параметр **Lifetime**, данные также собираются для каждого события сборки мусора.  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ Собирает данные .NET. По умолчанию (**выделение**) данные собираются при каждом событии выделения памяти. Если задан параметр **Lifetime** , данные также собираются для каждого события сборки мусора.  
   
 ## <a name="example"></a>Пример  
  В этом примере демонстрируется присвоение событию выборки профилирования значения, равного числу ошибок страницы, а также показано, как задать интервал выборки, равный 20 ошибкам страницы.  
@@ -72,8 +72,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+## <a name="see-also"></a>См. также:  
+ [Средства](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

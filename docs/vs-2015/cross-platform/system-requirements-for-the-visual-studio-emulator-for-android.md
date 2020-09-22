@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433917"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842529"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "63433917"
 
 - [Требования к сети](#Network)
 
-- [Требования к Hyper-V](#HyperV)
+- [Требования для Hyper-V](#HyperV)
 
 - [Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается](#BootableVHD)
 
 - [Для Hyper-V требуются несжатые и и незашифрованные файлы](#Files)
 
-## <a name="Checklist"></a> Краткий контрольный список
+## <a name="quick-checklist"></a><a name="Checklist"></a> Краткий контрольный список
  Ниже приведен краткий контрольный список требований для запуска эмулятора Visual Studio для Android. Более подробные сведения см. в последующих подразделах данного раздела.
 
  Требования к системе
@@ -62,18 +62,18 @@ ms.locfileid: "63433917"
 
 - В BIOS должны поддерживаться следующие функции.
 
-  - Виртуализация оборудования
+  - Аппаратные средства виртуализации
 
-  - Преобразование адресов второго уровня (SLAT)
+  - преобразование адресов второго уровня (SLAT);
 
-  - Предотвращение исполнения данных на основе оборудования (DEP)
+  - аппаратное предотвращение выполнения данных (DEP).
 
 - В Windows технология Hyper-V должна быть включена и запущена.
 
 - Необходимо быть членом локальной группы администраторов Hyper-V.
 
-## <a name="System"></a> Требования к системе
- Компьютер должен удовлетворять следующим требованиям.
+## <a name="system-requirements"></a><a name="System"></a> Требования к системе
+ Компьютер должен отвечать следующим требованиям:
 
 - Поддержка Hyper-V (см. раздел [Требования к Hyper-V](#HyperV))
 
@@ -83,9 +83,9 @@ ms.locfileid: "63433917"
 
   Чтобы проверить требования к оперативной памяти и Windows, в панели управления выберите "Система и безопасность", а затем — "Система".
 
-  ![Проверьте требования к системе](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
+  ![Проверка требований к системе](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-## <a name="Network"></a> Требования к сети
+## <a name="network-requirements"></a><a name="Network"></a> Требования к сети
  Сеть должна удовлетворять следующим требованиям.
 
 - DHCP
@@ -98,18 +98,18 @@ ms.locfileid: "63433917"
 
   Сведения об устранении сетевых неполадок в эмуляторе см. в следующих разделах.
 
-- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [Устранение неполадок эмулятора Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-## <a name="HyperV"></a> Требования к Hyper-V
+## <a name="hyper-v-requirements"></a><a name="HyperV"></a> Требования к Hyper-V
  Требования к Hyper-V в BIOS
 
  BIOS компьютера должна поддерживать следующие функции, которые должны быть включены.
 
-- Виртуализация оборудования
+- Аппаратные средства виртуализации
 
-- Преобразование адресов второго уровня (SLAT)
+- преобразование адресов второго уровня (SLAT);
 
-- Предотвращение исполнения данных на основе оборудования (DEP)
+- аппаратное предотвращение выполнения данных (DEP).
 
   Требования к Hyper-V в Windows
 
@@ -118,7 +118,7 @@ ms.locfileid: "63433917"
 |Требование|Проверка и включение этого необходимого компонента|
 |-----------------|----------------------------------------------|
 |Необходимо установить Hyper-V.|Выполните те же инструкции, что и для [включения Hyper-V для эмулятора Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Проверьте состояние службы **Управление виртуальными машинами Hyper-V** в оснастке "Службы".|
-|Технология Hyper-V должна быть запущена.|Дополнительные сведения об управлении службами см. в следующих разделах.<br /><br /> -   [Запуск, остановка, приостановка, возобновление работы или перезапуск службы](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Настройка способа запуска службы](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
+|Технология Hyper-V должна быть запущена.|Дополнительные сведения об управлении службами см. в следующих разделах.<br /><br /> -   [Запуск, остановка, приостановка, возобновление работы или перезапуск службы](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Настройка запуска службы](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Необходимо быть членом локальной группы администраторов Hyper-V.
 
@@ -129,16 +129,16 @@ ms.locfileid: "63433917"
 > [!IMPORTANT]
 > После входа в группу выйдите из системы или выполните перезагрузку, чтобы изменения вступили в силу.
 
- ![Присоединение к группе безопасности администраторов Hyper&#45;V](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")
+ ![Присоединение к группе безопасности администраторов Hyper-V](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")
 
  Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы".
 
-## <a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается
- При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: Произошел сбой при развертывании приложения. Повторите попытку.
+## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a><a name="BootableVHD"></a> Запуск эмулятора с загрузочного виртуального жесткого диска не поддерживается
+ При попытке запуска приложения в эмуляторе Visual Studio для Android в случае запуска Windows с загрузочного виртуального жесткого диска для запуска эмулятора обычно требуется несколько минут или же эмулятор может вообще не запуститься. Если запустить эмулятор не удается, появляется следующее сообщение: "Ошибка при развертывании приложения". Повторите попытку.
 
  Такая конфигурация не поддерживается. Информацию о связанных проблемах см. в разделе [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-## <a name="Files"></a> Для Hyper-V требуются несжатые и и незашифрованные файлы
+## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a><a name="Files"></a> Для Hyper-V требуются несжатые и незашифрованные файлы
  На жестком диске, настроенном с файловой системой NTFS, файлы виртуальных жестких дисков, используемых Hyper-V, не должны быть сжаты или зашифрованы. Убедитесь, что следующие каталоги не сжаты и не зашифрованы.
 
 - %LocalAppData%\Microsoft\XDE
@@ -154,5 +154,5 @@ ms.locfileid: "63433917"
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Требования к аппаратной пересылке графики (поддержка OpenGL ES)
  Чтобы эмулятор мог эмулировать вызовы в GPU, например используемые OpenGL ES, компьютер должен иметь GPU, совместимый с DirectX и установленный с соответствующими драйверами DirectX.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
  [Устранение неполадок эмулятора Android для Visual Studio](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

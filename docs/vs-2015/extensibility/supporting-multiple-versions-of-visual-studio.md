@@ -13,38 +13,38 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431357"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842353"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Поддержка нескольких версий Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Термин *side-by-side* означает, что можно установить и поддерживать несколько версий продукта на одном компьютере. Для пакетов VSPackage, это означает, что пользователь может иметь несколько версий Visual Studio, которые установлены на одном компьютере. Тем не менее не может иметь side-by-side версиях пакетов VSPackage загружается одна версия Visual Studio.
+Термин " *параллельно* " означает, что можно установить и поддерживать несколько версий продукта на одном компьютере. Для пакетов VSPackage это означает, что на одном компьютере может быть установлено несколько версий Visual Studio. Однако параллельные версии пакетов VSPackage не могут быть загружены в одну версию Visual Studio.
 
- Прежде чем вносить VSPackage может быть загружена в side-by-side версиях Visual Studio, необходимо учитывайте следующее:
+ Перед тем как сделать пакет VSPackage загруженным в параллельные версии Visual Studio, учитывайте следующие возможности.
 
-- Необходимо определить, какая стратегия реализации side-by-side, необходимо следовать.
+- Необходимо определить стратегию параллельной реализации, которую вы хотите соблюдать.
 
-     Дополнительные сведения см. в разделе [Выбор между общими и с контролем версий пакетов VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
+     Дополнительные сведения см. в статье [Выбор между общими и версиями пакетов VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
-- Форматы файлов вашего решения и проекта должны умещаться стратегии реализации.
+- Форматы файлов вашего решения и проекта должны соответствовать вашей стратегии реализации.
 
-     Дополнительные сведения см. в разделе [обновление пользовательских проектов](../misc/upgrading-custom-projects.md) и [Регистрация расширений имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+     Дополнительные сведения см. в статьях [Обновление пользовательских проектов](../misc/upgrading-custom-projects.md) и [Регистрация расширений имен файлов для параллельных развертываний](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- Установщик должен обрабатывать стратегии реализации, чтобы версий компонентов, а также компоненты, общие для всех версий правильно установлен и зарегистрирован.
+- Установщик должен реализовать стратегию реализации, чтобы компоненты с управлением версиями, а также компоненты, общие для всех версий, были правильно установлены и зарегистрированы.
 
-     Дополнительные сведения см. в разделе [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , а также [Управление компонентами](../extensibility/internals/component-management.md).
+     Дополнительные сведения см. [в разделе Установка пакетов VSPackage с помощью установщик Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , а также [Управление компонентами](../extensibility/internals/component-management.md).
 
     > [!NOTE]
-    > Установка версии Visual Studio также устанавливает соответствующую версию [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Например, при установке Visual Studio 2010 и Visual Studio 2012 на одном компьютере также устанавливается версии 4.0 и 4.5 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], соответственно.
+    > При установке версии Visual Studio также устанавливается соответствующая версия [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] . Например, при установке Visual Studio 2010 и Visual Studio 2012 на одном компьютере также устанавливаются версии 4,0 и 4,5 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] соответственно.
 
-## <a name="in-this-section"></a>В этом разделе
- [Выбор между общими и с контролем версий пакетов VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) объясняется, как устранить проблемы с side-by-side в VSPackage.
+## <a name="in-this-section"></a>в этом разделе
+ [Выбор между общими и версиями пакетов VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Описание способов устранения проблем, связанных с параллельным выполнением пакета VSPackage.
 
- [Регистрация расширений имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) описывает, как VSPackage может зарегистрировать сопоставлений файлов в сценарии side-by-side.
+ [Регистрация расширений имен файлов для параллельных развертываний](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) Описывает, как VSPackage может регистрировать сопоставления файлов в параллельном сценарии.
 
 ## <a name="related-sections"></a>Связанные разделы
- [Установка пакетов VSPackage](../misc/installing-vspackages.md) описывается, как выполнить сборку и установку пакетов VSPackage и как поддержать пользователей, выполняющих несколько версий Visual Studio, в то же время.
+ [Установка пакетов VSPackage](../misc/installing-vspackages.md) Описывает, как создавать и устанавливать пакеты VSPackage, а также как поддерживать пользователей, одновременно работающих с несколькими версиями Visual Studio.

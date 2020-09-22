@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434303"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842845"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63434303"
 ## <a name="windows-counters"></a>Счетчики Windows  
  Счетчики Windows являются компонентом инфраструктуры диагностики Windows, которая позволяет получать информацию о производительности операционной системы, приложения, службы или драйвера. Счетчики Windows определяются конфигурацией текущего компьютера, некоторые счетчики могут быть недоступны на других компьютерах. Счетчики производительности Windows собираются в файлах данных профилирования как метки профилирования, которые затем могут использоваться для фильтрования представлений и отчетов.  
   
-## <a name="cpu-counters"></a>Счетчики ЦПУ  
+## <a name="cpu-counters"></a>Счетчики ЦП:  
  Счетчики ЦП представляют собой функциональный механизм ЦП, который обеспечивает хранение информации о событиях, связанных с оборудованием.  Когда данные счетчиков ЦП собираются с использованием метода профилирования инструментирования, данные добавляются к данным для функций и модулей. Можно собирать данные с нескольких счетчиков ЦП с помощью метода инструментирования. Если используется метод выборки, вы выбираете один счетчик, который будет использоваться как событие выборки.  
   
  Счетчики производительности зависят от конкретного ЦП. Для использования одинаковых счетчиков производительности для ЦП различных моделей или версий может потребоваться значительная настройка параметров конфигурации. Переносимые события профилировщика [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] позволяют отделить некоторые типовые счетчики производительности от конкретных моделей процессоров и позволяют собирать или осуществлять выборку общих событий производительности.  
@@ -121,16 +121,16 @@ ms.locfileid: "63434303"
   
 1. Откройте окно командной строки.  
   
-2. Тип  
+2. Type  
   
-     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**,  
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     где **\<Visual Studio Performance Tools Directory>** — путь к каталогу Performance Tools установки Visual Studio (обычно  
+     где **\<Visual Studio Performance Tools Directory>** — путь к каталогу средств производительности установки Visual Studio, обычно  
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools).  
   
-## <a name="see-also"></a>См. также  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
- [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)   
- [Практическое руководство. Сбор данных счетчиков ЦП](../profiling/how-to-collect-cpu-counter-data.md)   
- [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
+ [Как выбрать события выборки](../profiling/how-to-choose-sampling-events.md)   
+ [Как получать данные счетчиков ЦП](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Руководство. получение данных счетчиков Windows](../profiling/how-to-collect-windows-counter-data.md)

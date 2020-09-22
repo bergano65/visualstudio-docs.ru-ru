@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::Attach_V7 | Документация Майкрософт
+title: 'IDebugProgramNode2:: Attach_V7 | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417912"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842437"
 ---
-# <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
+# <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-РЕКОМЕНДУЕТСЯ К ИСПОЛЬЗОВАНИЮ. НЕ ИСПОЛЬЗУЙТЕ.  
+Не рекомендуется. НЕ ИСПОЛЬЗУЙТЕ.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,33 +45,33 @@ int Attach_V7 ( 
   
 #### <a name="parameters"></a>Параметры  
  `pMDMProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс, который представляет присоединение к программе.  
+ окне Интерфейс [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , представляющий программу, к которой нужно присоединиться.  
   
  `pCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) интерфейс, который будет использоваться для отправки событий отладки SDM.  
+ окне Интерфейс [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , который будет использоваться для отправки событий отладки в SDM.  
   
  `dwReason`  
- [in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, которое указывает причину для присоединения.  
+ окне Значение из перечисления [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) , указывающее причину присоединения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Реализация всегда должны возвращать `E_NOTIMPL`.  
+ Реализация всегда должна возвращать `E_NOTIMPL` .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 > [!WARNING]
-> Начиная с версии [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], этот метод больше не используется и всегда должны возвращать `E_NOTIMPL`. См. в разделе [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) интерфейс альтернативный подход, если узел программы должен указывать, он не может быть присоединен к или если узел программы именно просто установить программу `GUID`. В противном случае реализация [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) метод.  
+> Начиная с [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , этот метод больше не используется и всегда должен возвращать `E_NOTIMPL` . См. интерфейс [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) для альтернативного подхода, если узлу программы нужно указать, что он не может быть присоединен к, или если узел программы просто настраивает программу `GUID` . В противном случае реализуйте метод [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .  
   
 ## <a name="prior-to-visual-studio-2005"></a>До Visual Studio 2005  
- Этот метод должен быть реализован только в том случае, если выполняется DE в адресном пространстве отлаживаемой программы. В противном случае этот метод должен возвращать `S_FALSE`.  
+ Этот метод необходимо реализовать только в том случае, если в адресном пространстве программы выполняется отладка. В противном случае этот метод должен возвращать значение `S_FALSE` .  
   
- При вызове этого метода, необходимо отправить DE [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) объект события, если он уже не был отправлен для данного экземпляра [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) интерфейс, а также [ IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) и [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) объектов событий. [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) объект события затем отправляется, если `dwReason` параметр `ATTACH_REASON_LAUNCH`.  
+ При вызове этого метода метод DE должен отправить объект события [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) , если он еще не был отправлен для этого экземпляра интерфейса [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , а также объекты событий [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) и [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) . Затем объект события [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) отправляется, если `dwReason` параметр имеет значение `ATTACH_REASON_LAUNCH` .  
   
- Необходимо вызвать DE [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) метод [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекта, заданного параметром [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) события объекта и необходимо сохранить идентификатор GUID этой программы в данных экземпляра для `IDebugProgram2` объект, реализуемый DE.  
+ Параметр DE должен вызывать метод [жетпрограмид](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) для объекта [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , предоставленного объектом события [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , и должен хранить идентификатор GUID этой программы в данных экземпляра для `IDebugProgram2` объекта, реализованного методом de.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
- [Присоединение](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Вновь](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)   

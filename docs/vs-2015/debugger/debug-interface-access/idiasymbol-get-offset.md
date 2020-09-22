@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_offset | Документация Майкрософт
+title: 'IDiaSymbol:: get_offset | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f99a9cef4266be9a3373d20f09fca8c64e5a33b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809667"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842853"
 ---
-# <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
+# <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает смещение расположения символов. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) — `LocIsRegRel` или `LocIsBitField`.  
+Возвращает смещение расположения символа. Используется, если [перечисление локатионтипе](../../debugger/debug-interface-access/locationtype.md) имеет значение `LocIsRegRel` или `LocIsBitField` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,24 +35,24 @@ HRESULT get_offset ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает смещение в байтах расположения символов.  
+ заполняет Возвращает смещение в байтах расположения символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Смещение считается от какой-то момент известных обнаружены. Например, смещение `LocIsBitField` расположение типом обычно является от начала содержащего класса.  
+## <a name="remarks"></a>Remarks  
+ Смещение определяется ранее определенной известной точкой. Например, смещение для `LocIsBitField` типа расположения обычно начинается с начала содержащего класса.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 7.0|  
+|Заголовок:|dia2. h|  
+|Версия:|Пакет SDK для DIA версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

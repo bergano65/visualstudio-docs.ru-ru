@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
+title: Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432789"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842460"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных производительности для веб-сайта
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В целях сбора данных о производительности для веб-приложения **можно использовать** Мастер производительности [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Можно профилировать веб-приложение, которое было открыто в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], или веб-сайт [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], который находится на локальном компьютере и не открыт в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+С помощью **мастера производительности** можно выполнять накопление данных о производительности для [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] веб-приложения. Можно профилировать веб-приложение, которое было открыто в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], или веб-сайт [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , который находится на локальном компьютере и не открыт в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 > [!NOTE]
 > **Мастер производительности** позволяет добавлять данные об уровневом взаимодействии (TIP) и/или данные о производительности JScript в собранные данные профилирования. TIP собирает данные из процессов на стороне сервера. Профилирование JScript собирает данные из скриптов, выполняющихся на локальном или удаленном веб-сайте. В большинстве случаев следует выбрать только один из этих параметров.  
@@ -42,7 +42,7 @@ ms.locfileid: "63432789"
   
 - Некоторые пользователи могут запрещать доступ к профилированию всем другим пользователям.  
   
-  Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и параметры администрирования в средстве [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Профилирование проекта веб-сайта  
   
@@ -80,11 +80,11 @@ ms.locfileid: "63432789"
   
 5. В поле **С какого локального URL-адреса или пути будет выполняться веб-приложение?** на третьей странице мастера введите URL-адрес для домашней страницы приложения и нажмите кнопку **Далее**.  
   
-   - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **http://localhost/MySite/default.aspx**. В результате профилируется приложение [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.  
+   - Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **http://localhost/MySite/default.aspx** . В результате профилируется приложение [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.  
   
    - Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.  
   
-   - Для внешних сайтов, который вы хотите собирать данные JavaScript, введите URL-адрес, например http:\//www.contoso.com.  
+   - Для внешних сайтов, на которых требуется получать данные JavaScript, введите URL-адрес, например http: \/ /www.contoso.com.  
   
      Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -100,10 +100,10 @@ ms.locfileid: "63432789"
   
 9. Для приложения ASP.NET создается сеанс производительности, а в браузере запускается веб-сайт. Воспользуйтесь функциями, которые вы хотите профилировать, и закройте браузер.  
   
-     Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="see-also"></a>См. также  
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>См. также:  
+ [Обзоры](../profiling/overviews-performance-tools.md)   
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)   
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
+ [Основные сведения о значениях данных выборки](../profiling/understanding-sampling-data-values.md)

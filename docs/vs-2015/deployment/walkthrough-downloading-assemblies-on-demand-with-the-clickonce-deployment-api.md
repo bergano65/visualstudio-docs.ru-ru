@@ -18,49 +18,49 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af03329a05501427f6d04d6cddbd637c3311b339
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434929"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842761"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-По умолчанию все сборки включены в [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения загружаются при первом запуске приложения. Тем не менее возможно, частей приложения, которые используются с небольшого набора пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.  
+По умолчанию все сборки, включенные в [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение, загружаются при первом запуске приложения. Однако у вас могут быть части приложения, которые используются небольшим набором пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.  
   
 > [!NOTE]
 > Для выполнения данной процедуры приложение должно выполняться с полным доверием.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
- Требуется один из следующих компонентов для выполнения этого пошагового руководства:  
+ Для выполнения этого пошагового руководства потребуется один из следующих компонентов:  
   
-- Windows SDK. Пакет Windows SDK можно загрузить из центра загрузки Майкрософт.  
+- Windows SDK. Windows SDK можно скачать в центре загрузки Майкрософт.  
   
 - Visual Studio.  
   
 ## <a name="creating-the-projects"></a>Создание проектов  
   
-#### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Чтобы создать проект, использующий сборку по запросу  
+#### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Создание проекта, использующего сборку по запросу  
   
-1. Создайте каталог с именем ClickOnceOnDemand.  
+1. Создайте каталог с именем Кликконцеондеманд.  
   
-2. Откройте окно командной строки Windows SDK или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] командной строки.  
+2. Откройте командную строку Windows SDK или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] командную строку.  
   
-3. Перейдите в каталог ClickOnceOnDemand.  
+3. Перейдите в каталог Кликконцеондеманд.  
   
-4. Создайте пару открытого и закрытого ключей, используя следующую команду:  
+4. Создайте пару открытого и закрытого ключей с помощью следующей команды:  
   
     ```  
     sn -k TestKey.snk  
     ```  
   
-5. С помощью блокнота или другого текстового редактора, определите класс с именем `DynamicClass` с одним свойством `Message`.  
+5. С помощью блокнота или другого текстового редактора определите класс `DynamicClass` с именем и одним свойством с именем `Message` .  
   
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-6. Сохраните файл с именем `ClickOnceLibrary.cs` или `ClickOnceLibrary.vb`в зависимости от используемого языка, каталогу ClickOnceOnDemand.  
+6. Сохраните текст в файле с именем `ClickOnceLibrary.cs` или в `ClickOnceLibrary.vb` зависимости от используемого языка в каталоге кликконцеондеманд.  
   
 7. Скомпилируйте файл в сборку.  
   
@@ -78,18 +78,18 @@ ms.locfileid: "63434929"
     sn -T ClickOnceLibrary.dll  
     ```  
   
-9. Создайте новый файл, используя текстовый редактор и введите следующий код. Этот код создает приложение Windows Forms, который загружает сборку ClickOnceLibrary при необходимости.  
+9. Создайте новый файл в текстовом редакторе и введите следующий код. Этот код создает Windows Forms приложение, которое скачивает сборку ClickOnceLibrary, когда это необходимо.  
   
      [!code-csharp[ClickOnceOnDemandCmdLine#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs#1)]
      [!code-vb[ClickOnceOnDemandCmdLine#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb#1)]  
   
-10. В коде, найдите вызов <xref:System.Reflection.Assembly.LoadFile%2A>.  
+10. В коде нахождение вызова <xref:System.Reflection.Assembly.LoadFile%2A> .  
   
-11. Задайте`PublicKeyToken` значение, которое вы получили ранее.  
+11. Задайте `PublicKeyToken` значение, полученное ранее.  
   
-12. Сохраните файл как `Form1.cs` или `Form1.vb`.  
+12. Сохраните файл как `Form1.cs` или `Form1.vb` .  
   
-13. Скомпилируйте его в исполняемый файл, выполнив следующую команду.  
+13. Скомпилируйте его в исполняемый файл с помощью следующей команды.  
   
     ```csharp  
     csc /target:exe /reference:ClickOnceLibrary.dll Form1.cs  
@@ -101,27 +101,27 @@ ms.locfileid: "63434929"
   
 ## <a name="marking-assemblies-as-optional"></a>Пометка сборок как необязательных  
   
-#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Пометка сборок как необязательных в приложении ClickOnce с помощью MageUI.exe  
+#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Чтобы пометить сборки как необязательные в приложении ClickOnce с помощью MageUI.exe  
   
-1. С помощью MageUI.exe, создайте манифест приложения, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:  
+1. С помощью MageUI.exe создайте манифест приложения, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста приложения:  
   
-    - Имя манифеста приложения `ClickOnceOnDemand`.  
+    - Назовите манифест приложения `ClickOnceOnDemand` .  
   
-    - На **файлы** , в строке ClickOnceLibrary.dll задать **тип файла** столбец **None**.  
+    - На странице **файлы** в строке ClickOnceLibrary.dll задайте для столбца **Тип файла** значение **нет**.  
   
-    - На **файлы** страницы, в строке ClickOnceLibrary.dll тип `ClickOnceLibrary.dll` в **группы** столбца.  
+    - На странице **файлы** в строке ClickOnceLibrary.dll введите `ClickOnceLibrary.dll` в столбец **Группа** .  
   
-2. С помощью MageUI.exe, создайте манифест развертывания, как описано в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Для манифеста развертывания используйте следующие параметры:  
+2. С помощью MageUI.exe создайте манифест развертывания, как описано в разделе [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Используйте следующие параметры для манифеста развертывания:  
   
-    - Имя манифеста развертывания `ClickOnceOnDemand`.  
+    - Присвойте имя манифесту развертывания `ClickOnceOnDemand` .  
   
 ## <a name="testing-the-new-assembly"></a>Тестирование новой сборки  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Тестирование сборки по запросу  
   
-1. Отправьте ваш [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания на веб-сервере.  
+1. Загрузите [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывание на веб-сервер.  
   
-2. Запустите приложение, развернутое с помощью [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] из веб-браузера, введя URL-адрес в манифест развертывания. При вызове вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения `ClickOnceOnDemand`и передать его в корневом каталоге adatum.com, URL-адрес будет выглядеть следующим образом:  
+2. Запустите приложение, развернутое с помощью [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] из веб-браузера, введя URL-адрес манифеста развертывания. Если вы вызываете [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение `ClickOnceOnDemand` и отправляете его в корневой каталог adatum.com, ваш URL-адрес будет выглядеть следующим образом:  
   
     ```  
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
