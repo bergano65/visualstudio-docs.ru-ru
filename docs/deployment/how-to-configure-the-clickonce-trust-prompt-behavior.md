@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382553"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852235"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Практическое руководство. Настройка поведения запроса о доверии ClickOnce
 Вы можете настроить запрос о доверии ClickOnce, чтобы контролировать, предоставлены ли конечным пользователям возможность установки приложений ClickOnce, таких как Windows Forms приложения, Windows Presentation Foundation приложения, консольные приложения, приложения браузера WPF и решения Office. Запрос о доверии настраивается путем установки разделов реестра на каждом компьютере конечного пользователя.
 
  В следующей таблице показаны параметры конфигурации, которые можно применить к каждой из пяти зон (Internet, Унтрустедситес, MyComputer, LocalIntranet и Трустедситес).
 
-|Параметр|Значение параметра реестра|Описание|
+|Параметр|Значение параметра реестра|Description|
 |------------|----------------------------|-----------------|
 |Включите запрос о доверии.|`Enabled`|Запрос о доверии ClickOnce отображается таким образом, чтобы конечные пользователи могли предоставлять доверие приложениям ClickOnce.|
 |Ограничьте запрос о доверии.|`AuthenticodeRequired`|Запрос о доверии ClickOnce отображается только в том случае, если приложения ClickOnce подписаны сертификатом, идентифицирующим издателя.|
@@ -222,7 +222,7 @@ ms.locfileid: "85382553"
 
 3. Выполните сборку и запустите приложение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Управление доступом для кода для приложений ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сбор данных трассировки событий Windows | Документация Майкрософт
+title: Практическое руководство. Сбор данных трассировки событий Windows | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d113a32622c40c68a030fdbc670ec19c6038de2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432821"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842864"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Практическое руководство. Сбор трассировки событий для Windows (ETW) данных
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Практическое руководство. Сбор данных трассировки событий Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Трассировка событий Windows (ETW) является эффективным средством трассировки на уровне ядра, которое позволяет профилировщику регистрировать события ядра или приложения. Данные, полученные от поставщика событий, можно просматривать только с помощью параметра /**Summary:ETW** программы командной строки [VSPerfReport](../profiling/vsperfreport.md). Этот отчет можно использовать для определения наличия проблем производительности в приложении.  
@@ -42,5 +42,5 @@ ms.locfileid: "63432821"
   
 3. В списке **Выберите поставщик трассировки для сбора данных** выберите поставщики событий для использования при профилировании приложения.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

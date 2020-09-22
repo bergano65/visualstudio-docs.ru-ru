@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка подавления шума для представлений отчетов | Документация Майкрософт
+title: Практическое руководство. Настройка подавления шума для представлений отчетов | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432771"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843209"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Практическое руководство. Настройка подавления шума для представлений отчетов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,8 +79,8 @@ ms.locfileid: "63432771"
   
 4. Нажмите кнопку **ОК**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка представлений отчетов средств производительности](../profiling/customizing-performance-tools-report-views.md)   
- [Практическое руководство. Исключение и включение малых функций при инструментировании](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
- [Представление "Дерево вызовов"](../profiling/call-tree-view.md)   
+ [Как исключить или включить небольшие функции из инструментирования](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Представление "дерево вызовов"](../profiling/call-tree-view.md)   
  [Представление "Выделения"](../profiling/dotnet-memory-allocations-view.md)

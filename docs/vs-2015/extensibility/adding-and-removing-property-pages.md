@@ -13,24 +13,24 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440143"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842852"
 ---
 # <a name="adding-and-removing-property-pages"></a>Добавление и удаление страниц свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В конструкторе проектов предоставляет централизованное расположение для управления свойства проекта, параметры и ресурсы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Он отображается как одного окна в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE) и содержит несколько областей в правой части, осуществляется с помощью вкладок слева. Области, которые в конструкторе проектов (часто обозначается как страницы свойств) зависят от типа проекта и языка. В конструкторе проектов может осуществляться с помощью **свойства** команды **проекта** меню.  
+Конструктор проектов предоставляет централизованное расположение для управления свойствами, параметрами и ресурсами проекта в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Он отображается в виде одного окна в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среде разработки (IDE) и содержит несколько панелей справа, доступ к которым осуществляется через вкладки слева. Панели (часто называемые страницами свойств) в конструкторе проектов зависят от типа и языка проекта. Доступ к конструктору проектов можно получить с помощью команды **Свойства** в меню **проект** .  
   
- Подтип проекта часто требуется отображать дополнительные страницы свойств в конструкторе проектов. Аналогичным образом некоторые подтипов проекта может потребоваться удалить встроенного свойства страницы. Чтобы сделать, необходимо реализовать вашей подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс и переопределить <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод. Путем переопределения этого метода и использования `propId` параметр, содержащий одно из значений из <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления, можно фильтровать, добавить или удалить свойства проекта. Например может потребоваться добавить страницу к страницам свойств, зависимых от конфигурации. Чтобы сделать это, необходимо фильтровать страницы свойств, зависимых от конфигурации, а затем добавьте новую страницу в существующий список.  
+ Подтипу проекта часто требуется отображать дополнительные страницы свойств в конструкторе проектов. Аналогичным образом, некоторые подтипы проектов могут потребовать удаления встроенных страниц свойств. Для этого в подтипе проекта должен быть реализован <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс и переопределен <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод. Переопределяя этот метод и используя `propId` параметр, содержащий одно из значений <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> перечисления, можно фильтровать, добавлять или удалять свойства проекта. Например, может потребоваться добавить страницу на страницы свойств, зависящие от конфигурации. Для этого необходимо отфильтровать страницы свойств, зависящие от конфигурации, а затем добавить новую страницу в существующий список.  
   
 ## <a name="adding-and-removing-property-pages-in-project-designer"></a>Добавление и удаление страниц свойств в конструкторе проектов  
   
-#### <a name="to-remove-a-property-page-in-project-designer"></a>Чтобы удалить страницу свойств в конструкторе проектов  
+#### <a name="to-remove-a-property-page-in-project-designer"></a>Удаление страницы свойств в конструкторе проектов  
   
-1. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств и получить `clsids` списка.  
+1. Переопределите `GetProperty(uint itemId, int propId, out object property)` метод, чтобы отфильтровать страницы свойств и получить `clsids` список.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ ms.locfileid: "63440143"
     }  
     ```  
   
-2. Удалить **события построения** страница из полученная `clsids` списка.  
+2. Удаляет страницу « **события сборки** » из `clsids` списка полученных.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -109,9 +109,9 @@ ms.locfileid: "63440143"
     property = propertyPagesList;  
     ```  
   
-#### <a name="to-add-a-property-page-in-project-designer"></a>Чтобы добавить страницы свойств в конструкторе проектов  
+#### <a name="to-add-a-property-page-in-project-designer"></a>Добавление страницы свойств в конструкторе проектов  
   
-1. Создание страницы свойств, которые вы хотите добавить.  
+1. Создайте страницу свойств, которую нужно добавить.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ ms.locfileid: "63440143"
     }  
     ```  
   
-2. Регистрация новой страницы свойств.  
+2. Зарегистрируйте новую страницу свойств.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ ms.locfileid: "63440143"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3. Переопределить `GetProperty(uint itemId, int propId, out object property)` метод для фильтрации страницы свойств, получить `clsids` списка и добавьте новую страницу свойств.  
+3. Переопределите `GetProperty(uint itemId, int propId, out object property)` метод, чтобы отфильтровать страницы свойств, получить `clsids` список и добавить новую страницу свойств.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -205,7 +205,7 @@ ms.locfileid: "63440143"
     ```  
   
 > [!NOTE]
-> Все примеры кода, приведенные в этом разделе являются частью более крупного примера [примеры VSSDK](../misc/vssdk-samples.md).  
+> Все примеры кода, приведенные в этом разделе, являются частями более крупного примера — [VSSDK Samples](../misc/vssdk-samples.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Подтипы проектов](../extensibility/internals/project-subtypes.md)

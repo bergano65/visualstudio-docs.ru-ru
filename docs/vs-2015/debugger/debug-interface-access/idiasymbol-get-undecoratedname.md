@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_undecoratedName | Документация Майкрософт
+title: 'IDiaSymbol:: get_undecoratedName | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d6a40bb739ea68dbc08c3dc3b3f98271261e6cf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791202"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842533"
 ---
-# <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
+# <a name="idiasymbolget_undecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает недекорированное имя для внутренних, C++ или компоновку, имя.  
+Возвращает недекорированное имя для декорированного (или) связывания C++ имени.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT get_undecoratedName ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает недекорированное имя для C++ декорированное имя.  
+ заполняет Возвращает недекорированное имя для декорированного имени C++.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

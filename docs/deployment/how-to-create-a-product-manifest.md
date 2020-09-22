@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382514"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852222"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Практическое руководство. Создание манифеста продукта
 Чтобы развернуть необходимые компоненты для приложения, можно создать пакет начального загрузчика. Пакет загрузчика содержит один файл манифеста продукта, но манифест пакета для каждого языкового стандарта. Манифест пакета содержит особенности локализации пакета. Сюда входят строки, лицензионные соглашения для конечных пользователей и языковые пакеты.

@@ -9,17 +9,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544161"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810006"
 ---
 # <a name="properties-of-domain-relationships"></a>Свойства доменных связей
 Свойства в следующей таблице связаны с доменной связью. Сведения о доменных отношениях см. в разделе [Основные сведения о моделях, классах и связях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. [в разделе Настройка и расширение предметно-](../modeling/customizing-and-extending-a-domain-specific-language.md)ориентированного языка.
 
-|Свойство|Описание|По умолчанию|
+|Свойство.|Описание|Значение по умолчанию|
 |-|-|-|
 |Модификатор доступа|Уровень доступа к доменной связи ( `public` или `internal` ).|`public`|
 |Настраиваемые атрибуты|Используется для добавления атрибутов в класс исходного кода, созданного из связи домена.|\<none>|
@@ -38,4 +38,4 @@ ms.locfileid: "85544161"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](/previous-versions/bb126564(v=vs.100))

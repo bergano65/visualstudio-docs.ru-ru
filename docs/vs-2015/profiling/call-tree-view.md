@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439336"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842344"
 ---
 # <a name="call-tree-view"></a>Представление "Дерево вызовов"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63439336"
   
  Представление "Дерево вызовов" можно настроить, удалив или добавив столбцы. Щелкните правой кнопкой мыши заголовок **Имя столбца** и выберите в контекстном меню команду **Добавить или удалить столбцы**.  
   
- Представление "Дерево вызовов" можно настроить для снижения шума, сократив объем представляемых данных. Благодаря снижению шума проблемы производительности в представлении становятся более наглядными. Возможность более простого выявления проблем повышает эффективность анализа. Дополнительные сведения см. в разделе [Как Настройка представлений отчетов снижение шума](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ Представление "Дерево вызовов" можно настроить для снижения шума, сократив объем представляемых данных. Благодаря снижению шума проблемы производительности в представлении становятся более наглядными. Возможность более простого выявления проблем повышает эффективность анализа. Дополнительные сведения см. [в разделе инструкции. Настройка снижения шума в представлениях отчетов](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
 > Если снижение шума настроено для отображения предупреждений при их появлении, в отчете появится информационная панель.  
@@ -47,11 +47,11 @@ ms.locfileid: "63439336"
   
  [Представление "Дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)  
   
- [Представление "Дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [Call Tree View - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md) (Представление "Дерево вызовов" — выборка)  
   
  [Представление "Дерево вызовов"](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Представления отчетов о производительности](../profiling/performance-report-views.md)   
  [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)   
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
+ [Основные сведения о значениях данных выборки](../profiling/understanding-sampling-data-values.md)

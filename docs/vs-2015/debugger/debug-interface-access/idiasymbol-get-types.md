@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_types | Документация Майкрософт
+title: 'IDiaSymbol:: get_types | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 813dcd692669d823548e52ce6bb7eccc9546de61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832259"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843233"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает массив типов специфичные для компилятора для этого символа.  
+Извлекает массив типов, зависящих от компилятора, для этого символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,19 +37,19 @@ HRESULT get_types ( 
   
 #### <a name="parameters"></a>Параметры  
  `cTypes`  
- [in] Размер буфера для хранения данных.  
+ окне Размер буфера для хранения данных.  
   
  `pcTypes`  
- [out] Возвращает количество типов, созданных, или, если `types` параметр `NULL`, то общее число доступных типов.  
+ заполняет Возвращает число записанных типов или значение, если `types` параметр имеет значение `NULL` , а затем общее число доступных типов.  
   
  `types[]`  
- [out] Массив, который должен быть заполнен с помощью [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объекты, представляющие все типы для этого символа.  
+ заполняет Массив, который должен быть заполнен объектами [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , которые представляют все типы для этого символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

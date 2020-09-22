@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382566"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852489"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание локализованного пакета начального загрузчика
 После создания пакета начального загрузчика можно создать локализованные версии пакета начального загрузчика, создав два дополнительных файла для каждого языкового стандарта: файл условий лицензии на программное обеспечение (например, *EULA. RTF*) и манифест пакета (*package.xml*).
@@ -45,7 +45,7 @@ ms.locfileid: "85382566"
 
      В следующей таблице показано, какие имена папок можно использовать для соотнесения с языковым стандартом.
 
-    |Локаль|Имя папки|
+    |Языковой стандарт|Имя папки|
     |------------|-----------------|
     |Китайский (упрощенное письмо)|zh-Hans|
     |Китайский (традиционное письмо)|zh-Hant|
@@ -90,7 +90,7 @@ ms.locfileid: "85382566"
 
 6. Сохраните файл *package.xml* .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Создание пакетов начального загрузчика](../deployment/creating-bootstrapper-packages.md)
 - [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
 - [Как создать манифест пакета](../deployment/how-to-create-a-package-manifest.md)

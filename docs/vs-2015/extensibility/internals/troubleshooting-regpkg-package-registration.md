@@ -11,22 +11,22 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 241975e475252a18d5e5a91c6e8c4fb40c067a95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441194"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842816"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Устранение неполадок регистрации пакета RegPkg
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
-> С помощью файлах pkgdef — предпочтительный способ зарегистрировать пакеты в Visual Studio. Это позволяет расширение развертывания без доступа в системный реестр. Файлов pkgdef создаются с помощью [программа CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).  
+> Для регистрации пакетов в Visual Studio предпочтительным способом является использование файлов pkgdef. Это позволяет развертывать расширения без доступа к системному реестру. Файлы pkgdef создаются с помощью [служебной программы CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).  
   
- Чтобы зарегистрировать пакет с помощью RegPkg в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], необходимо использовать версию RegPkg, который подходит для вашего пакета.  
+ Чтобы зарегистрировать пакет с помощью RegPkg в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , необходимо использовать версию regpkg, подходящую для вашего пакета.  
   
-## <a name="regpkg-versions-related-to-package-versions"></a>Версии RegPkg, связанное с версиями пакета  
- Существуют две версии RegPkg. Одна версия входит в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Эта версия используется для регистрации пакетов, созданных с помощью одного из следующих сборок:  
+## <a name="regpkg-versions-related-to-package-versions"></a>Версии RegPkg, связанные с версиями пакетов  
+ Существует две версии RegPkg. Одна версия включена в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Используйте эту версию для регистрации пакетов, созданных с помощью одной из следующих сборок:  
   
 1. Microsoft.VisualStudioShell.9.0.dll  
   
@@ -34,9 +34,9 @@ ms.locfileid: "63441194"
   
 3. Microsoft.VisualStudioShell.11.0.dll  
   
-   Его не удалось зарегистрировать пакетов, созданных с помощью более ранних Microsoft.VisualStudio.Shell.dll сборки.  
+   Он не может зарегистрировать пакеты, созданные с помощью предыдущей Microsoft.VisualStudio.Shell.dll сборки.  
   
-   На более раннюю версию RegPkg можно зарегистрировать пакеты, которые созданы с помощью Microsoft.VisualStudio.Shell.dll сборки. Тем не менее его не удалось зарегистрировать пакеты, созданные с помощью более поздней версии этой сборки.  
+   Более ранняя версия RegPkg может регистрировать пакеты, созданные с помощью сборки Microsoft.VisualStudio.Shell.dll. Однако он не может зарегистрировать пакеты, созданные с помощью более поздних версий этой сборки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Выпуск продукта](../../misc/releasing-a-visual-studio-integration-product.md)

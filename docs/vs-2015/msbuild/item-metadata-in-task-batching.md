@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436796"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843136"
 ---
 # <a name="item-metadata-in-task-batching"></a>Метаданные элементов в пакетной обработке задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436796"
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
 ## <a name="batching-one-item-at-a-time"></a>Пакетная обработка одного элемента за раз  
- Пакетная обработка может также выполняться со стандартными метаданными, назначенными каждому элементу при создании. Это гарантирует, что каждый элемент в коллекции будет содержать некоторые метаданные для пакетной обработки. Значение метаданных `Identity` уникально для каждого элемента и используется для его выделения из списка элементов в отдельный пакет. Полный список стандартных метаданных элементов см. в статье [Общеизвестные метаданные элементов MSBuild](../msbuild/msbuild-well-known-item-metadata.md).  
+ Пакетная обработка может также выполняться со стандартными метаданными, назначенными каждому элементу при создании. Это гарантирует, что каждый элемент в коллекции будет содержать некоторые метаданные для пакетной обработки. Значение метаданных `Identity` уникально для каждого элемента и используется для его выделения из списка элементов в отдельный пакет. Полный список стандартных метаданных элементов см. в разделе [стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Следующий пример демонстрирует поочередную пакетную обработку каждого элемента из списка элементов. Так как значение метаданных `Identity` каждого элемента является уникальным, список элементов `ExampColl` делится на шесть пакетов, каждый из которых содержит один элемент из списка элементов. Если в атрибуте `Text` есть `%(Identity)`, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] получает уведомление о том, что необходимо выполнить пакетную обработку.  
   
@@ -220,10 +220,10 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Общеизвестные метаданные элементов MSBuild](../msbuild/msbuild-well-known-item-metadata.md)   
+## <a name="see-also"></a>См. также:  
+ [Стандартные метаданные элементов](../msbuild/msbuild-well-known-item-metadata.md)   
  [Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [Пакетная обработка](../msbuild/msbuild-batching.md)   
+ [Пакетной обработки](../msbuild/msbuild-batching.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)

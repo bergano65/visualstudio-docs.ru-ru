@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование меток текста | Документация Майкрософт
+title: Как использовать текстовые маркеры | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,51 +11,51 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25c3c4f3a3d9a253b9ec671892d0d44ccf9ca3ab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430963"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842688"
 ---
-# <a name="how-to-use-text-markers"></a>Практическое руководство. Использовать текстовые метки
+# <a name="how-to-use-text-markers"></a>Практическое руководство. Использование текстовых маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Текстовые метки, которые могут применяться для редактирования <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> объекта.  
+Для редактирования объекта можно применить текстовые маркеры <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> .  
   
 ## <a name="procedures"></a>Процедуры  
   
-#### <a name="to-apply-text-markers"></a>Для применения меток текста  
+#### <a name="to-apply-text-markers"></a>Применение текстовых маркеров  
   
-1. Получить экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> класса.  
-  
-    > [!NOTE]
-    > Базовый редактор автоматически применяет стандартные текстовые метки в любой документ, он изменяет, и не должен быть необходимую, чтобы явным образом применить стандартные текстовые метки.  
-  
-2. Получить ИД типа маркера маркера, вам нужны, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> метод с `GUID` вы хотите работать с текстового маркера.  
+1. Получите экземпляр <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> класса.  
   
     > [!NOTE]
-    > Не используйте `GUID` VSPackage или служба, предоставляющая текстового маркера.  
+    > Основной редактор автоматически применяет стандартные маркеры текста к любому редактируемому документу, и нет необходимости явно применять стандартные маркеры текста.  
   
-3. Используйте идентификатор типа маркера, полученного путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> методу в качестве параметра для вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метод или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> метод, чтобы применить текстового маркера в зависимости от региона текста.  
+2. Получите идентификатор типа маркера для маркера, который вас интересует, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> метод с помощью `GUID` текстового маркера, с которым вы хотите работать.  
   
-#### <a name="to-add-features-to-text-markers"></a>Чтобы добавить компоненты в текстовые метки  
+    > [!NOTE]
+    > Не используйте `GUID` пакет VSPackage или службу, которая предоставляет текстовый маркер.  
   
-1. Может потребоваться добавить дополнительные функции для текстового маркера, например всплывающие подсказки, специальные контекстного меню или обработчик для особых случаев. Для этого сделайте следующее:  
+3. Используйте идентификатор типа маркера, полученный путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> метода в качестве параметра для вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метода или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> метода, чтобы применить текстовый маркер к заданной области текста.  
   
-2. Создайте объект, реализующий интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс.  
+#### <a name="to-add-features-to-text-markers"></a>Добавление компонентов в текстовые маркеры  
   
-3. При необходимости дополнительные функциональные возможности реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> интерфейсов на тот же объект, реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс.  
+1. Может потребоваться добавить дополнительные функции в текстовый маркер, например подсказки, специальное контекстное меню или обработчик для особых обстоятельств. Для этого сделайте следующее:  
   
-4. Передайте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс, который создается, чтобы вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метод или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> метод, используемый для применения текстового маркера в зависимости от региона текста.  
+2. Создайте объект, реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс.  
   
-5. При добавлении поддержки контекстное меню области текстового маркера необходимо создать в меню.  
+3. Если требуется дополнительная функциональность, реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> интерфейсы для того же объекта, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс.  
   
-     Дополнительные сведения о том, как создать контекстное меню см. в разделе [контекстные меню](../extensibility/context-menus.md).  
+4. Передайте созданный <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс в вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метода или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> метод, используемый для применения маркера текста к заданной области текста.  
   
-6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Среда вызывает методы из предоставленных интерфейсов, таких как <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> метод, или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> метод, при необходимости.  
+5. При добавлении поддержки контекстного меню в область текстового маркера необходимо создать меню.  
   
-## <a name="see-also"></a>См. также  
- [С помощью меток текста с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)   
- [Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
+     Дополнительные сведения о создании контекстного меню см. в разделе [Контекстные меню](../extensibility/context-menus.md).  
+  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Среда вызывает методы предоставляемых интерфейсов, например <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> метод, или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> метод по мере необходимости.  
+  
+## <a name="see-also"></a>См. также:  
+ [Использование текстовых маркеров с устаревшим API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Руководство. Добавление стандартных текстовых маркеров](../extensibility/how-to-add-standard-text-markers.md)   
+ [Как создавать пользовательские маркеры](../extensibility/how-to-create-custom-text-markers.md)   
  [Практическое руководство. Реализация маркеров ошибок](../extensibility/how-to-implement-error-markers.md)
