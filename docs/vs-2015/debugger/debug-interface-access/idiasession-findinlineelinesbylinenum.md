@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d16bc6f3e2e8f190e3a26023407237509984cece
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444687"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842732"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает перечисление, которое позволяет клиенту для выполнения итерации по информация о номере строки всех функций, которые являются встроенными, напрямую или косвенно, в указанный исходный файл и номер строки.  
+Извлекает перечисление, позволяющее клиенту выполнять итерацию по сведениям о номере строки всех функций, встроенных, прямо или косвенно, в указанном исходном файле и номере строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,29 +37,29 @@ HRESULT findInlineeLinesByVA ( 
   
 #### <a name="parameters"></a>Параметры  
  `compiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий единицу компиляции, в котором осуществляется поиск номера строк. Этот параметр не может быть `NULL`.  
+ окне Объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий компилируемого объекта, в котором выполняется поиск номеров строк. Этот параметр не может иметь значение `NULL`.  
   
  `file`  
- [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , представляющий исходный файл, в котором выполняется поиск. Этот параметр не может быть `NULL`.  
+ окне Объект [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , представляющий исходный файл, в котором выполняется поиск. Этот параметр не может иметь значение `NULL`.  
   
  `linenum`  
- [in] Указывает номер строки от единицы.  
+ окне Указывает номер строки, отсчитываемый от единицы.  
   
 > [!NOTE]
-> Нельзя использовать ноль для указания всех строк (использовать [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) метод для нахождения всех строк).  
+> Нельзя использовать ноль для указания всех строк (используйте метод [IDiaSession:: финдлинес](../../debugger/debug-interface-access/idiasession-findlines.md) для поиска всех строк).  
   
  `column`  
- [in] Указывает номер столбца. Использовать нуль для указания всех столбцов. Столбец — это смещение байтов в строку.  
+ окне Указывает номер столбца. Для указания всех столбцов используйте нуль. Столбец — это смещение в байтах для строки.  
   
  `ppResult`  
- [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список номеров строк, которые были получены.  
+ заполняет Возвращает объект [идиаенумлиненумберс](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список полученных номеров строк.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
+ [Перечисление Симтаженум](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -1,5 +1,5 @@
 ---
-title: Цветовая маркировка синтаксиса в языковой службе прежних версий | Документация Майкрософт
+title: Выделение синтаксиса в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,67 +12,67 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441272"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842937"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использует службу выделение цветом для определения элементов языка и вывода их указанными цветами в редакторе.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использует службу цветов для распознавания элементов языка и отображения их с указанными цветами в редакторе.  
   
-## <a name="colorizer-model"></a>Модель палитры  
- Служба реализует языка <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс, который затем используется редакторами. Эта реализация представляет собой отдельный объект в службе языка, как показано на следующем рисунке.  
+## <a name="colorizer-model"></a>Модель тонирования  
+ Языковая служба реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс, который затем используется редакторами. Эта реализация является отдельным объектом из языковой службы, как показано на следующем рисунке.  
   
- ![График SVC Colorizer](../../extensibility/internals/media/figlgsvccolorizer.gif "FigLgSvcColorizer")  
-Модель простого палитры  
+ ![График SVC Colorizer](../../extensibility/internals/media/figlgsvccolorizer.gif "фиглгсвкколоризер")  
+Простая модель тонирования  
   
 > [!NOTE]
-> Службы цветового выделения синтаксических конструкций отделен от общих [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизм для выделения текста цветом. Дополнительные сведения об общей [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] механизм поддержки выделения цветом, см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
+> Служба цветового выделения синтаксиса отличается от общего [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизма выделения цветом текста. Дополнительные сведения об общем [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] механизме, поддерживающем окраска, см. в разделе [Использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
   
- Помимо палитры языковая служба может предоставлять пользовательских цветных элементов, используемые редактором рекламы, что он передает пользовательских цветных элементов. Это можно сделать, реализовав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> тот же объект, реализующий интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс. Возвращает количество пользовательских цветных элементов, когда вызывает редактор <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> метод и он возвращает отдельные настраиваемого цветного элемента, когда вызывает редактор <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> метод.  
+ Помимо тонирования, языковая служба может предоставлять настраиваемые цветовые элементы, используемые редактором, составлять объявления о том, что он предоставляет настраиваемые цветные элементы. Это можно сделать, реализовав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> интерфейс для того же объекта, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс. Он возвращает число настраиваемых цветовых элементов, когда редактор вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> метод, и возвращает отдельный настраиваемый цветовой элемент, когда редактор вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> метод.  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Метод возвращает объект, реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> интерфейс. Если служба языка поддерживает значения цвета 24-разрядный или высокого уровня, он должен реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейса на один и тот же объект как <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> интерфейс.  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>Метод возвращает объект, реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> интерфейс. Если языковая служба поддерживает 24-разрядные или высокие значения цвета, она должна реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> интерфейс для того же объекта, что и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> интерфейс.  
   
-## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Как VSPackage использует палитру языковой службы  
+## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Как VSPackage использует цветовой цвет языковой службы  
   
-1. Пакет VSPackage должен получить службу языка, которая требуется служба языка VSPackage осуществлять следующее:  
+1. Пакет VSPackage должен получить соответствующую языковую службу, которая требует пакета VSPackage языковой службы, чтобы выполнить следующие действия:  
   
-    1. Использовать объект, реализующий интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейс для получения текста для выделения цветом.  
+    1. Используйте объект, реализующий <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейс, чтобы получить текст для выделения цветом.  
   
-         Текст обычно отображается с использованием объекта, реализующего <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.  
+         Текст обычно отображается с помощью объекта, реализующего <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.  
   
-    2. Языковая служба получите путем запроса поставщика услуг пакета VSPackage для GUID языковой службы. Языковые службы определяются в реестре по расширению файла.  
+    2. Получите языковую службу, запросив поставщика служб VSPackage для идентификатора GUID языковой службы. Языковые службы определяются в реестре по расширению файла.  
   
-    3. Связать службы языка с <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> путем вызова его <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> метод.  
+    3. Свяжите языковую службу с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> , вызвав ее <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> метод.  
   
-2. VSPackage теперь можно получить и использовать объект палитры следующим образом:  
+2. Пакет VSPackage теперь может получить и использовать объект «окраска» следующим образом:  
   
     > [!NOTE]
-    > Пакеты VSPackage, использующих базовый редактор не нужно явным образом получить объекты палитры службы языка. Как только экземпляр базового редактора Получает службу языка, он выполняет все задачи Раскраска, показано ниже.  
+    > Пакеты VSPackage, использующие основной редактор, не должны явным образом получать объекты цветовой службы языка. Как только экземпляр базового редактора получает соответствующую языковую службу, он выполняет все задачи выделения цветом, показанные здесь.  
   
-    1. Получить объект палитру языковой службы, который реализует `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> интерфейсы, путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод на языковой службе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> объекта.  
+    1. Получите объект языковой поддержки, который реализует `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer` интерфейсы, и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> , вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод в объекте языковой службы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> .  
   
-    2. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод для получения сведений палитры для определенного диапазона текста.  
+    2. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод, чтобы получить сведения о параметрах выделения цветом для определенного фрагмента текста.  
   
-         <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Возвращает массив значений, по одному для каждого символа в диапазон текста выделение цветом. Значения — это индексы в списке цветного элемента по умолчанию, поддерживаемом базовым редактором или настраиваемого цветного элемента списка, поддерживаемых службой языка, сам список цветного элемента.  
+         <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Возвращает массив значений, по одному для каждого символа в цветовом диапазоне текста. Значения — это индексы в списке элементов с цветовым списком, который является либо списком элементов по умолчанию, поддерживаемым основным редактором, либо настраиваемым списком элементов, поддерживаемым самой языковой службой.  
   
-    3. Использовать цветовое выделение сведения, возвращаемые функцией <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод для отображения выделенного текста.  
+    3. Используйте сведения о цветовой отсчете, возвращаемые <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> методом для вывода выбранного текста.  
   
 > [!NOTE]
-> Помимо использования палитру языковой службы, пакет VSPackage можно также использовать общего назначения [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизм цветовой подсветки текста. Дополнительные сведения о механизме см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
+> Помимо использования цветового интерфейса языковой службы, VSPackage также может использовать механизм выделения текста общего назначения [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Дополнительные сведения об этом механизме см. [в разделе Использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Реализация цветовой маркировки синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)  
- Описывает, как редактор получает доступ к языковой службы выделения синтаксиса цветом и его языковой службы необходимо реализовать поддержку синтаксиса выделение цветом.  
+ Описывает, как редактор обращается к цветовой маркировке синтаксиса языковой службы и какую языковую службу необходимо реализовать для поддержки цветового выделения синтаксиса.  
   
  [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
- В этой статье демонстрируется использование встроенных цветных элементов от языковой службы.  
+ Демонстрирует использование встроенных цветовых элементов из языковой службы.  
   
  [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md)  
- В этой статье описывается использование пользовательских цветных элементов.  
+ Обсуждается реализация пользовательских цветовых элементов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md)

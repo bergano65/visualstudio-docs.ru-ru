@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Документация Майкрософт
+title: 'IDebugCoreServer3:: Жетсерверфриендлинаме | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa81daf7ab1d592e6a2cd460268e5d66925f61e1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445268"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842509"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ int GetServerFriendlyName(
   
 #### <a name="parameters"></a>Параметры  
  `pbstrName`  
- [out] Возвращает понятное имя для сервера.  
+ заполняет Возвращает понятное имя для сервера.  
   
 > [!NOTE]
-> Вызывающий объект несет ответственность за освобождение строки.  
+> Вызывающий объект отвечает за освобождение строки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Для серверов запущен пользователем имя, возвращаемый этим методом является полное имя сервера. Для автоматического запуска серверов называется машины сервер работает.  
+## <a name="remarks"></a>Remarks  
+ Для серверов, запускаемых пользователем, имя, возвращаемое этим методом, является полным именем сервера. Для автоматического запуска серверов используется имя компьютера, на котором запущен сервер.  
   
- Для компьютера ориентированное имя, вызовите [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) метод.  
+ Для имени, ориентированного на компьютер, вызовите метод- [ServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
- [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
+ [Имя_сервера](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

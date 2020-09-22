@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 502ab8dbafd12f3b00949b5b52609c4c8c8ddce9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433920"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843029"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Представление "Указатели инструкций" — данные выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "63433920"
 В представлении "Указатели инструкций" данных выборки перечисляются данные о производительности инструкций сборки, непосредственно выполняемых во время сбора выборок в сеансе профилирования.  
   
 > [!NOTE]
-> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. статью [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-|Столбец|Описание|  
+|Столбец|Description|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  
@@ -44,5 +44,5 @@ ms.locfileid: "63433920"
 |**Эксклюзивные выборки**|Общее количество выборок, собранных в процессе выполнения инструкции.|  
 |**% эксклюзивных выборок**|Процент от всех выборок в сеансе профилирования, собранных во время выполнения инструкции.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Instruction Pointers (IPs) View — Sampling](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md) (Представление "Указатели инструкций" — выборка)

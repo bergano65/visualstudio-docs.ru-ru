@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создать. Vsct-файл из существующего. Файла ctc | Документация Майкрософт
+title: Как создать. Vsct файл из существующего. Файл CTC | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,20 +10,20 @@ ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443012"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842612"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Практическое руководство. Создать. Vsct-файл из существующего. Файла ctc
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Практическое руководство. Создание файла VSCT на основе существующего файла CTC
 Вы можете создать файл VSTC на основе XML из существующего исходного CTC-файла таблицы команд. Таким образом можно воспользоваться новым форматом компилятора таблицы команд [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на основе XML (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Создание файла VSCT на основе файла CTC  
   
 1. Получите копию языка Perl.  
   
-2. Получите копию скрипта ConvertCTCToVSCT.pl, Perl, обычно находится в  *\<путь установки пакета SDK для Visual Studio >* \VisualStudioIntegration\Tools\bin папку.  
+2. Получите копию ConvertCTCToVSCT.pl сценария Perl, которая обычно находится в *\<Visual Studio SDK installation path>* папке \висуалстудиоинтегратион\тулс\бин.  
   
 3. Получите копию исходного файла CTC, который нужно преобразовать.  
   
@@ -44,6 +44,6 @@ ms.locfileid: "63443012"
     > [!NOTE]
     > Чтобы повысить удобочитаемость файла VSCT, можно переформатировать комментарии XML.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Создать. Файл Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+## <a name="see-also"></a>См. также:  
+ [Как создать. Файл vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

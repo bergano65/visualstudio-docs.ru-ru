@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 720f37afbeea3c7440ad2ced9649039d671b1f1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383397"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842785"
 ---
 # <a name="call-tree-view---sampling-data"></a>Представление "Дерево вызовов" — данные выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,9 +55,9 @@ ms.locfileid: "63383397"
 |**Инклюзивные выборки**|Число выборок, собранных в этой функции при вызове ее родительской функцией в дереве вызовов. Это значение включает выборки, собранные в функциях, которые были вызваны этой функцией.|  
 |**Включающие выборки %**|Процент всех выборок в сеансе профилирования, которые оказались инклюзивными для данной функции при вызове ее родительской функцией в дереве вызовов.|  
   
-## <a name="see-also"></a>См. также раздел  
- [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
- [Call Tree View - Profiler Sampling Data](../profiling/call-tree-view-sampling-data.md)  (Представление "Дерево вызовов" — данные выборки профилировщика)  
- [Call Tree View - Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  (Представление "Дерево вызовов" — выборка)  
- [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  (Представление "Дерево вызовов" — инструментирование)  
+## <a name="see-also"></a>См. также:  
+ [Как настроить столбцы представления отчета](../profiling/how-to-customize-report-view-columns.md)   
+ [Представление "дерево вызовов" — данные выборки профилировщика](../profiling/call-tree-view-sampling-data.md)   
+ [Представление "дерево вызовов" — выборка](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Представление "дерево вызовов" — инструментирование](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Дерево вызовов"](../profiling/call-tree-view-instrumentation-data.md)

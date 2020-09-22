@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_value | Документация Майкрософт
+title: 'IDiaSymbol:: get_value | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9000a4d0a65fd450e3ef655e6b646990f682ba9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837926"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843382"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает значение константы.  
+Возвращает значение константы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,16 +35,16 @@ HRESULT get_value ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [in, out] Объект `VARIANT` объект, который заполняется значение константы.  
+ [вход, выход] `VARIANT` Объект, который заполняется значением константы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Указанный тип VARIANT необходимо инициализировать перед передачей в этот метод. Дополнительные сведения см. пример.  
+## <a name="remarks"></a>Remarks  
+ Указанный вариант должен быть инициализирован до передачи в этот метод. Дополнительные сведения см. в примере.  
   
 ## <a name="example"></a>Пример  
   
@@ -71,5 +71,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

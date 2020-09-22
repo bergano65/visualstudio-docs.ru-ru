@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 566cb2e7222aacbf992dc1693d8ce1de102605a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434970"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842552"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  Метка, которую нужно вставить. Меткой должно быть число больше нуля или нуль (0).  
   
-## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+## <a name="property-valuereturn-value"></a>Значение свойства/возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание|  
+|Перечислитель|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|Значение параметра меньше или равно нулю. Эти значения зарезервированы. Метка и комментарий не записываются.|  
 |MARK_ERROR_MODE_NEVER|На момент вызова функции был установлен режим профилирования NEVER. Метка и комментарий не записываются.|  
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|Длина строки превышает 256 символов. Строка комментария усекается. Метка и комментарий записываются.|  
 |MARK_OK|В случае успеха возвращается MARK_OK.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  Значение метки вставляется в VSP-файл при каждом выполнении кода, когда выполняется профилирование потока, содержащего функцию MarkProfile. MarkProfile можно вызывать многократно.  
   
  Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в VSP-файле.  
@@ -100,5 +100,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>См. также:  
+ [Справочник по API профилировщика Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Документация Майкрософт
+title: 'IDebugSymbolSearchEvent2:: Жетсимболсеарчинфо | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8ef097ed02ae90b03289e3a2f3a1ad3f0ad8618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446039"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842488"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,24 +45,24 @@ int GetSymbolSearchInfo(
   
 #### <a name="parameters"></a>Параметры  
  `pModule`  
- [out] IDebugModule3 объект, представляющий модуль, для которого были загружены символы.  
+ заполняет Объект IDebugModule3, представляющий модуль, для которого были загружены символы.  
   
  `pbstrDebugMessage`  
- [in, out] Возвращает строку, содержащую все сообщения об ошибках из модуля. Если отсутствуют ошибки, эта строка будет просто содержать имя модуля, но никогда не бывает пустым.  
+ [вход, выход] Возвращает строку, содержащую любые сообщения об ошибках из модуля. Если ошибка отсутствует, эта строка будет содержать только имя модуля, но не будет пустым.  
   
 > [!NOTE]
-> [C++] `pbstrDebugMessage` не может быть `NULL` и должны быть высвобождены с `SysFreeString`.  
+> [C++] `pbstrDebugMessage` параметр не может быть `NULL` и должен быть освобожден с помощью `SysFreeString` .  
   
  `pdwModuleInfoFlags`  
- [out] Сочетание флагов из [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) перечисления, указывающее, были ли загружены символы.  
+ заполняет Сочетание флагов из перечисления [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) , указывающее, загружены ли какие-либо символы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Когда обработчик получает [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) событие после попытки загрузить отладочные символы для модуля, обработчик можно вызвать этот метод, чтобы определить результаты эта нагрузка.  
+## <a name="remarks"></a>Remarks  
+ Когда обработчик получает событие [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) после попытки загрузить символы отладки для модуля, обработчик может вызвать сисмесод, чтобы определить результаты этой нагрузки.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
  [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

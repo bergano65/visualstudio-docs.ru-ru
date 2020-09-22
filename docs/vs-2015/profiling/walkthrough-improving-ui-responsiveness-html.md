@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML) | Документация Майкрософт
+title: Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML) | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433175"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842556"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63433175"
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Создание и запуск приложения тестирования производительности  
   
-1. В Visual Studio создайте проект универсального приложения Windows на JavaScript. (Выберите **Файл > Создать > Проект**.) Щелкните **JavaScript** в левой области, выберите **Windows**, **Windows 10**, а затем выберите **Универсальные приложения** или **Windows Phone**.  
+1. В Visual Studio создайте проект универсального приложения Windows на JavaScript. (Выберите **файл/создать/проект**. Щелкните **JavaScript** в левой области, выберите **Windows**, **Windows 10**, а затем выберите **Универсальные приложения** или **Windows Phone**.  
   
 2. > [!IMPORTANT]
     > Результаты диагностики, приведенные в этом разделе, проверены в приложении Windows 8.  
@@ -42,7 +42,7 @@ ms.locfileid: "63433175"
   
 4. В поле **Имя** укажите имя, например `JS_Perf_Tester`, а затем нажмите кнопку **ОК**.  
   
-5. В **обозревателе решений** откройте файл default.html и вставьте следующий код между тегами \<body>:  
+5. В **Обозреватель решений**откройте default.html и вставьте следующий код между \<body> тегами:  
   
     ```html  
     <div class="wrapper">  
@@ -156,7 +156,7 @@ ms.locfileid: "63433175"
   
      Теперь, когда проверено, что приложение работает, можно изучить его производительность с помощью профилировщика.  
   
-### <a name="analyzing-performance-data"></a>Анализ данных производительности  
+### <a name="analyzing-performance-data"></a>Анализ данных о производительности  
   
 1. На панели инструментов **Отладка** выберите в списке **Начать отладку** один из эмуляторов Windows Phone или **симулятор**.  
   
@@ -184,7 +184,7 @@ ms.locfileid: "63433175"
   
 7. Выделите часть в середине графика использования ЦП продолжительностью от 1 до 2 секунд (щелкните и перетащите или воспользуйтесь клавишей tab и клавишами со стрелками). На следующем рисунке показан график использования ЦП после выделения. Эта незатененная область представляет собой выделение.  
   
-    ![Граф использования ЦП](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Диаграмма использования ЦП](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
 8. Выберите **Увеличить**.  
   
@@ -242,5 +242,5 @@ ms.locfileid: "63433175"
   
 2. Запустите профилировщик отклика пользовательского интерфейса HTML еще раз и проверьте график использования ЦП. Обнаружится, что чрезмерные события удалены и использование ЦП опустилось практически до нуля. Готово!  
   
-## <a name="see-also"></a>См. также  
- [Скорость реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md)
+## <a name="see-also"></a>См. также:  
+ [HTML UI responsiveness](../profiling/html-ui-responsiveness.md)

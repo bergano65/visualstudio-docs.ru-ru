@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Инструментирование собственного автономного компонента и сбор данных по времени с помощью профилировщика из командной строки | Документация Майкрософт
+title: Практическое руководство. Инструментирование собственного автономного компонента и сбор данных по времени с помощью профилировщика из командной строки | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39773bbf821a4b7cec416ff726bf84cbb46935f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432660"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843367"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование собственного автономного компонента и сбор данных о времени с Profiler из командной строки
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование собственного автономного компонента и сбор данных о времени с помощью профилировщика из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью инструментирования таких собственных компонентов, как EXE- или DLL-файлы C++, а также для сбора подробных данных по использованию времени.  
@@ -40,15 +40,15 @@ ms.locfileid: "63432660"
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
 
-   - Параметр [/start](../profiling/start.md)**:trace** инициализирует профилировщик.  
+   - Параметр [/start](../profiling/start.md) **:trace** инициализирует профилировщик.  
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).  
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).  
 
      С параметром **/start:trace** можно использовать один или несколько из указанных ниже параметров.  
 
    |                                 Параметр                                  |                                                                                                                                                 Описание                                                                                                                                                 |
    |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |             Указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.             |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` |             Указывает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса. Этот параметр является обязательным только в том случае, если процесс выполняется в качестве пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.             |
    |              [/crossession](../profiling/crosssession.md)              | Включает профилирование процессов в других сеансах. Этот параметр является обязательным, если приложение выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
    |          [/globaloff](../profiling/globalon-and-globaloff.md)           |                                                                                        Запускает профилировщик в состоянии приостановки сбора данных. Используйте параметр [/globalon](../profiling/globalon-and-globaloff.md) для возобновления профилирования.                                                                                        |
    |           [/counter](../profiling/counter.md) **:** `Config`            |                                                               Собирает данные от счетчика производительности процессора, указанного в `Config`. Сведения о счетчике добавляются в данные, собранные для каждого события профилирования.                                                                |
@@ -67,9 +67,9 @@ ms.locfileid: "63432660"
 
     |Параметр|Описание|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает (**/threadon**) или останавливает (**/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает ( **/threadon**) или останавливает ( **/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|  
 
 ## <a name="ending-the-profiling-session"></a>Завершение сеанса профилирования  
  Для завершения сеанса профилирования закройте приложение, в котором выполняется инструментированный компонент, а затем вызовите параметр **VSPerfCmd** [/shutdown](../profiling/shutdown.md), чтобы выключить профилировщик и закрыть файл данных профилирования.  
@@ -82,6 +82,6 @@ ms.locfileid: "63432660"
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)
+ [Представления данных метода инструментирования](../profiling/instrumentation-method-data-views.md)

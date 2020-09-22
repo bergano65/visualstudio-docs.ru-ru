@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_oemSymbolId | Документация Майкрософт
+title: 'IDiaSymbol:: get_oemSymbolId | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4031672840237b0496ba7c6dbb9bb3b1658d7023
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837908"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843385"
 ---
-# <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
+# <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Возвращает значение идентификатора символа изготовителя оборудования (OEM).  
+Извлекает значение идентификатора изготовителя оборудования (OEM).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,19 +35,19 @@ HRESULT get_oemSymbolId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает OEM внутренне назначенный символ идентификатора.  
+ заполняет Возвращает идентификатор символа, назначенный поставщиком вычислительной техники.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.  
+## <a name="remarks"></a>Remarks  
+ Идентификатор — это уникальное значение, созданное пакетом SDK для DIA, чтобы пометить все символы как уникальные.  
   
- Это свойство применяется только к символам с [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) тип `SymTagCustomType`.  
+ Это свойство применяется только к символам с типом [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) `SymTagCustomType` .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433592"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842337"
 ---
 # <a name="item-definitions"></a>Определения элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63433592"
 > [!NOTE]
 > Во многих примерах в этом разделе показан элемент ItemDefinitionGroup, но соответствующее определение ItemGroup опущено для ясности.  
   
- Метаданные, явно определенные в ItemGroup, имеют приоритет над метаданными в ItemDefinitionGroup. Метаданные в ItemDefinitionGroup применяются только для метаданных, не определенных в ItemGroup. Например:  
+ Метаданные, явно определенные в ItemGroup, имеют приоритет над метаданными в ItemDefinitionGroup. Метаданные в ItemDefinitionGroup применяются только для метаданных, не определенных в ItemGroup. Пример:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -80,7 +80,7 @@ ms.locfileid: "63433592"
   
 - стандартные метаданные в элементе из ItemDefinitionGroup;  
   
-- раздел CDATA \<\!\[CDATA\[содержимое не анализируется\]\]\>.  
+- раздел CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > Метаданные элементов из ItemGroup не используются при объявлении метаданных ItemDefinitionGroup, так как элементы ItemDefinitionGroup обрабатываются раньше элементов ItemGroup.  
@@ -92,7 +92,7 @@ ms.locfileid: "63433592"
   
 - Последняя спецификация имеет приоритет.  
   
-  Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Например:  
+  Если имеется несколько элементов ItemDefinitionGroups, каждая следующая спецификация добавляет метаданные в предыдущее определение. Пример:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -110,7 +110,7 @@ ms.locfileid: "63433592"
   
  В этом примере метаданные o добавляются к m и n.  
   
- Кроме того, могут быть также добавлены ранее определенные значения метаданных. Например:  
+ Кроме того, могут быть также добавлены ранее определенные значения метаданных. Пример:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -146,7 +146,7 @@ ms.locfileid: "63433592"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Использование условий в ItemDefinitionGroup  
- Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Например:  
+ Для управления включением метаданных можно использовать условия в ItemDefinitionGroup. Пример:  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -161,7 +161,7 @@ ms.locfileid: "63433592"
 > [!NOTE]
 > В условиях поддерживаются только локальные ссылки на метаданные.  
   
- Ссылки на метаданные, ранее определенные в ItemDefinitionGroup, являются локальными для элемента, а не для группы определений. То есть область действия ссылок определяется элементом. Например:  
+ Ссылки на метаданные, ранее определенные в ItemDefinitionGroup, являются локальными для элемента, а не для группы определений. То есть область действия ссылок определяется элементом. Пример:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -177,7 +177,7 @@ ms.locfileid: "63433592"
  В этом примере элемент "i" содержит ссылку на элемент "test" в условии Condition.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Переопределение и удаление метаданных  
- Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Например:  
+ Метаданные, определенные в элементе ItemDefinitionGroup, можно переопределить в последующем элементе ItemDefinitionGroup, присвоив им пустое значение. Кроме того, можно удалить элемент метаданных, задав для него пустое значение. Пример:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -228,7 +228,7 @@ ms.locfileid: "63433592"
 </ItemDefinitionGroup>  
 ```  
   
- Начиная с версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Например:  
+ Начиная с версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 ItemGroups также могут ссылаться сами на себя. Пример:  
   
 ```  
 <ItemGroup>  
@@ -239,5 +239,5 @@ ms.locfileid: "63433592"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также:  
  [Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)

@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42cd353c216c21d14c4f6592da809c72acdba664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409410"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842804"
 ---
 # <a name="deleting-a-breakpoint"></a>Удаление точки останова
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ниже описан процесс, при удалении ожидающая точка останова:  
+Ниже описан процесс удаления ожидающей точки останова.  
   
 ## <a name="deletion-process"></a>Процесс удаления  
- Диспетчер отладки сеансов (SDM) вызывает [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) привязан метод для удаления ожидающая точка останова и всех связанных точек останова из него.  
+ Диспетчер отладки сеансов (SDM) вызывает метод [IDebugPendingBreakpoint2::D удалить](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) для удаления ожидающей точки останова и всех привязанных к ним точек останова.  
   
 > [!NOTE]
-> Связанная точка останова также можно удалить с помощью вызова [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
+> Можно также удалить одну привязанную точку останова с помощью вызова [IDebugBoundBreakpoint2::D удалить](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437895"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842568"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Практическое руководство. Использование переменных среды в построении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ ms.locfileid: "63437895"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
 
 [MSBuild](msbuild.md)
 
 [Свойства MSBuild](../msbuild/msbuild-properties1.md)
 
-[Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Как создавать одни и те же исходные файлы с разными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

@@ -14,16 +14,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445388"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842693"
 ---
 # <a name="task-writing"></a>Написание задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], см. в разделе [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md).  
+Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, которые включены в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Задачи  
  Примеры задач: [Copy](../msbuild/copy-task.md) — копирование одного или нескольких файлов; [MakeDir](../msbuild/makedir-task.md) — создание каталога; [Csc](../msbuild/csc-task.md) — компиляция файлов исходного кода [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Каждая задача реализована в виде класса платформы .NET, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>, который определен в сборке Microsoft.Build.Framework.dll.  
@@ -100,7 +100,7 @@ namespace MyTasks
 ```  
   
 ## <a name="registering-tasks"></a>Регистрация задач  
- Если проекту предстоит запускать задачу, платформе [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] необходимо знать, как найти сборку, содержащую класс задачи. Задачи регистрируются с использованием [элемента UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+ Если проекту предстоит запускать задачу, платформе [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] необходимо знать, как найти сборку, содержащую класс задачи. Задачи регистрируются с помощью [элемента UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  Файл Microsoft.Common.Tasks в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] — это файл проекта, который содержит список элементов `UsingTask`, регистрирующих все задачи, предоставленные вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в файле Microsoft.Common.Tasks, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.  
   
@@ -162,7 +162,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Description  
  В этом классе [!INCLUDE[csprcs](../includes/csprcs-md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.  
   
 ### <a name="code"></a>Код  
@@ -186,7 +186,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание  
+### <a name="description"></a>Description  
  В этом классе [!INCLUDE[csprcs](../includes/csprcs-md.md)] показана задача, реализующая интерфейс <xref:Microsoft.Build.Framework.ITask>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.  
   
 ### <a name="code"></a>Код  
@@ -268,6 +268,6 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также:  
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)

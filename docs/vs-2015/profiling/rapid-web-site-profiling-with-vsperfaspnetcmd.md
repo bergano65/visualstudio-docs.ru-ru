@@ -13,19 +13,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438904"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843322"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Средство командной строки **VSPerfASPNETCmd** позволяет без труда профилировать веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. У этой программы меньше параметров по сравнению с программой командной строки [VSPerfCmd](../profiling/vsperfcmd.md), в ней не нужно задавать переменные среды и не требуется перезагрузка компьютера. Средство **VSPerfASPNETCmd** предпочтительнее использовать для профилирования с помощью отдельного профилировщика. Дополнительные сведения см. в разделе [Как Установка автономного Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
+Средство командной строки **VSPerfASPNETCmd** позволяет без труда профилировать веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. У этой программы меньше параметров по сравнению с программой командной строки [VSPerfCmd](../profiling/vsperfcmd.md), в ней не нужно задавать переменные среды и не требуется перезагрузка компьютера. Средство **VSPerfASPNETCmd** предпочтительнее использовать для профилирования с помощью отдельного профилировщика. Дополнительные сведения см. в разделе [Практическое руководство. Установка изолированного профилировщика](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
-> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. статью [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  В некоторых сценариях, например при сборе данных о параллелизме или в случае приостановки и возобновления профилирования, более предпочтительным методом профилирования является использование **VSPerfCmd**.  
   
@@ -61,14 +61,14 @@ ms.locfileid: "63438904"
   
  Кроме того, можно воспользоваться параметром **/Trace** для включения подробных данных о времени вместе с данными о памяти .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Сбор данных взаимодействия уровней  
   
 > [!WARNING]
 > Данные профилирования уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] или [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования ( **/trace**).  
+> Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования (**/trace**).  
   
  Чтобы собрать данные об уровневом взаимодействии вместе с данными выборки, воспользуйтесь командной строкой:  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438904"
   
  Чтобы собрать данные об уровневом взаимодействии вместе с данными о памяти .NET, воспользуйтесь командной строкой:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
-## <a name="UsingNoWait"></a> Использование параметра /nowait  
+## <a name="using-the-nowait-option"></a><a name="UsingNoWait"></a> Использование параметра /nowait  
  По умолчанию командная строка после команды **vsperfaspnetcmd** не возвращается. Для принудительного возврата командной строки можно воспользоваться следующим синтаксисом. Затем в окне командной строки можно выполнить другие операции. Для завершения профилирования воспользуйтесь параметром **/shutdown** в отдельной команде **vsperfaspnetcmd**.  
   
  Чтобы начать профилирование, воспользуйтесь следующей командной строкой:  
   
- **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
   
  Для завершения профилирования воспользуйтесь следующей командной строкой:  
   
@@ -96,7 +96,7 @@ ms.locfileid: "63438904"
 ## <a name="additional-options"></a>Дополнительные параметры  
  Во все команды, перечисленные ранее в этом разделе, за исключением команды **vsperfaspnetcmd/shutdown**, можно добавить любой из следующих параметров.  
   
-|Параметр|Описание|  
+|Параметр|Description|  
 |------------|-----------------|  
-|**/Output:** `VspFile`|По умолчанию файл данных профилирования (VSP) создается в текущем каталоге с именем файла **PerformanceReport.vsp**. Параметр /output позволяет задать другое расположение, имя файла или и то, и другое.|  
+|**/OUTPUT:**`VspFile`|По умолчанию файл данных профилирования (VSP) создается в текущем каталоге с именем файла **PerformanceReport.vsp**. Параметр /output позволяет задать другое расположение, имя файла или и то, и другое.|  
 |**/PackSymbols:Off**|По умолчанию VsPerfASPNETCmd встраивает символы (имена функций и параметров и т. п.) в VSP-файл. Встраивание символов может привести к существенному увеличению файла данных профилирования. При обращении к PDB-файлам, содержащим такие символы, в процессе анализа данных следует воспользоваться параметром /packsymbols:off, чтобы отключить встраивание символов.|

@@ -12,34 +12,34 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409378"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842569"
 ---
 # <a name="displaying-locals"></a>Отображение локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Выполнение всегда выполняется в контексте метода, также известный как содержащего метода или текущий метод. Когда выполнение приостанавливается, Visual Studio вызывает модуль отладки (DE), чтобы получить список локальных переменных и аргументов, которые в совокупности называются локальные переменные метода. Visual Studio отображает эти локальные переменные и их значения в **"Локальные"** окна.  
+ Выполнение всегда происходит в контексте метода, также известного как содержащий метод или текущий метод. Когда выполнение приостанавливается, Visual Studio вызывает модуль отладки (DE) для получения списка локальных переменных и аргументов, которые вместе называются локальными переменными метода. Visual Studio отображает эти локальные переменные и их значения в окне **локальные** .  
   
- Чтобы отобразить "Локальные", вызывает DE [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) метода, принадлежащего объекту EE и присваивает ему контекст вычисления, который является, поставщика символов (SP), текущий адрес выполнения и объект связывателя. Дополнительные сведения см. в разделе [контекст оценки](../../extensibility/debugger/evaluation-context.md). Если вызов завершается успешно, `IDebugExpressionEvaluator::GetMethodProperty` возвращает [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, который представляет метод, который содержит адрес текущего выполнения.  
+ Чтобы отобразить локальные переменные, метод DE обращается к [жетмесодпроперти](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) , входящему в ee, и передает ему контекст вычисления, то есть поставщик символов (SP), текущий адрес выполнения и объект связывателя. Дополнительные сведения см. в разделе [контекст оценки](../../extensibility/debugger/evaluation-context.md). Если вызов завершается с ошибкой, `IDebugExpressionEvaluator::GetMethodProperty` метод возвращает объект [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , который представляет метод, содержащий текущий адрес выполнения.  
   
- Вызовы DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) для получения [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объекта, который является отфильтрованы, чтобы возвращать только локальные переменные и перечислить для создания списка [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)структуры. Каждая структура содержит имя, тип и значения локальной переменной. Тип и значение хранятся в виде форматированных строк, подходящее для отображения. Имя, тип и значение обычно отображаются вместе в одной строке **"Локальные"** окна.  
+ Метод DE вызывает [енумчилдрен](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) для получения объекта [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , который фильтруется для возврата только локальных переменных и перечисления для получения списка структур [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) . Каждая структура содержит имя, тип и значение локального объекта. Тип и значение хранятся в виде форматированных строк, подходящих для вывода. Имя, тип и значение обычно отображаются вместе в одной строке окна **локальные переменные** .  
   
 > [!NOTE]
-> **"Быстрая проверка"** и **Watch** окнах также отображаются переменные с тот же формат, имя, значение и тип. Тем не менее, эти значения получаются путем вызова [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вместо `IDebugProperty2::EnumChildren`.  
+> Окна " **Быстрая проверка** " и " **Контрольные значения** " также отображают переменные с одинаковым форматом имени, значения и типа. Однако эти значения получаются путем вызова [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вместо `IDebugProperty2::EnumChildren` .  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)  
- Используются примеры для пошагового выполнения процесс реализации "Локальные".  
+ Использует примеры для пошагового выполнения процесса реализации локальных переменных.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)  
- Объясняет, что когда модуль отладки (DE) вызывает средство оценки выражений (EE), он передает три аргумента.  
+ Объясняется, что когда модуль отладки (DE) вызывает средство оценки выражений (EE), оно передает три аргумента.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

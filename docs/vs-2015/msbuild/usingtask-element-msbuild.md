@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445651"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842941"
 ---
 # <a name="usingtask-element-msbuild"></a>Элемент UsingTask (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,13 +67,13 @@ ms.locfileid: "63445651"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
+|[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
  На переменные среды, свойства командной строки и свойства уровня проекта можно ссылаться в любом месте элемента `UsingTask`, если он отображается в файле проекта либо явно, либо через импортированный файл проекта. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
   
 > [!NOTE]
-> Свойства уровня проекта не имеют смысла, если элемент `UsingTask` получен из одного из файлов TASKS, зарегистрированных глобально в модуле MSBuild. Свойства уровня проекта не являются глобальными по отношению к MSBuild.  
+> Свойства уровня проекта не имеют смысла, если элемент получен из одного из файлов TASKS, зарегистрированных глобально в модуле MSBuild. Свойства уровня проекта не являются глобальными по отношению к MSBuild.  
   
  В MSBuild 4.0 задачи можно загрузить из файлов OVERRIDETASK.  
   
@@ -101,7 +101,7 @@ ms.locfileid: "63445651"
               AssemblyFile="c:\myTasks\myTask.dll" />  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>См. также:  
+ [Операции](../msbuild/msbuild-tasks.md)   
+ [Справочник по задачам](../msbuild/msbuild-task-reference.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

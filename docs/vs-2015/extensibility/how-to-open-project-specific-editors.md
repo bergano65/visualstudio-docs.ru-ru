@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Открытие редакторов соответствующих проектов | Документация Майкрософт
+title: Как открыть редакторы для конкретных проектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,47 +13,47 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435945"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843181"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Практическое руководство. Открытие редакторов соответствующих проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Если файл элемента, открываемый в проекте по своей природе привязана к конкретного редактора для этого проекта, проект необходимо открыть файл с помощью редактора определенного проекта. Файл не может быть делегирована вниз, чтобы механизм IDE для выбора редактора. Например вместо того чтобы использовать редактор стандартных растрового изображения, можно использовать этот параметр, редактор для конкретного проекта для указания в редакторе определенного точечного рисунка, который распознает сведения в файле, который является уникальным для проекта.  
+Если файл элемента, открываемый проектом, внутренне привязан к конкретному редактору для этого проекта, проект должен открыть файл с помощью редактора, зависящего от проекта. Не удается делегировать файл механизму IDE для выбора редактора. Например, вместо стандартного редактора точечных рисунков можно использовать этот параметр редактора для конкретного проекта, чтобы указать конкретный редактор растровых изображений, который распознает сведения в файле, который уникален для вашего проекта.  
   
- Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод, если класс определит, что файл следует открывать с конкретного проекта. Дополнительные сведения см. в разделе [отображение файлов с помощью команды откройте файл](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Следуйте приведенным ниже рекомендациям для реализации `OpenItem` методу иметь проекта откройте файл с помощью редактора определенного проекта.  
+ Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод, когда он определяет, что файл должен быть открыт конкретным проектом. Дополнительные сведения см. [в разделе Отображение файлов с помощью команды открыть файл](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Используйте следующие рекомендации для реализации метода, `OpenItem` чтобы проект открывал файл с помощью специального редактора.  
   
-### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Чтобы реализовать метод OpenItem с помощью редактора для конкретного проекта  
+### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Реализация метода Опенитем с помощью редактора для конкретного проекта  
   
-1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод (RDT_EditLock), чтобы определить, является ли файл (объект данных документа) уже открыт.  
+1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод (RDT_EditLock), чтобы определить, открыт ли файл (объект данных документа).  
   
     > [!NOTE]
-    > Дополнительные сведения о данных документа и объекты представления документа, см. в разделе [данные документа и представление документа в редакторах Custom](../extensibility/document-data-and-document-view-in-custom-editors.md).  
+    > Дополнительные сведения о данных документа и объектах представления документов см. [в разделе данные документа и представление документа в пользовательских редакторах](../extensibility/document-data-and-document-view-in-custom-editors.md).  
   
-2. Если файл уже открыт, resurface файл путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> метод и указав значение ido_activateifopen для `grfIDO` параметра.  
+2. Если файл уже открыт, переsurfaceйте его, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> метод и указав значение IDO_ActivateIfOpen для `grfIDO` параметра.  
   
-     Если файл открыт и принадлежит проект, отличный от вызывающего проекта документа, предупреждение отображается для пользователя, открывается редактор из другого проекта. Затем отображается окно файла.  
+     Если файл открыт, а документ принадлежит проекту, отличному от вызывающего проекта, пользователю будет выдано предупреждение о том, что редактор открывается из другого проекта. Затем отображается окно файла.  
   
-3. Если ваш текстовый буфер (объект данных документа) уже открыт и вы хотите назначить другое представление, вы несете ответственность для привязки этого представления. Рекомендуемый подход для создания представления (объекта представления документа) из проекта, выглядит следующим образом:  
+3. Если текстовый буфер (объект данных документа) уже открыт и вы хотите вложить в него другое представление, вы несете ответственность за подключение этого представления. Для создания экземпляра представления (объекта представления документа) из проекта рекомендуется использовать следующий подход:  
   
-    1. Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> службу, чтобы получить указатель на <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> интерфейс.  
+    1. Вызовите `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> службу, чтобы получить указатель на <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> интерфейс.  
   
-    2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> метод для создания экземпляра класса представления документа.  
+    2. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> метод, чтобы создать экземпляр класса представления документов.  
   
-4. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> метод, указывая объекте представления документа.  
+4. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> метод, указав объект представления документа.  
   
-     Этот метод узлы объекта представления документа в окне документа.  
+     Этот метод разсайтов объект представления документа в окне документа.  
   
-5. Выполните соответствующие вызовы либо <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> или <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> методы.  
+5. Выполните соответствующие вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> методов или.  
   
-     На этом этапе представление должно быть полностью инициализирована и готова для открытия.  
+     На этом этапе представление должно быть полностью инициализировано и готово к открытию.  
   
-6. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод для отображения и откройте представление.  
+6. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод, чтобы показать и открыть представление.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Практическое руководство. Стандартные редакторы](../extensibility/how-to-open-standard-editors.md)   
+ [Руководство. Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)   
  [Практическое руководство. Открытие редакторов для открытых документов](../extensibility/how-to-open-editors-for-open-documents.md)

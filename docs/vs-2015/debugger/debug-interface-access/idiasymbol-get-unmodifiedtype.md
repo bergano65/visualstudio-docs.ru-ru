@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_unmodifiedType | Документация Майкрософт
+title: 'IDiaSymbol:: get_unmodifiedType | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6ab6bd7fc756e648955efa6db5ba9c186952d84
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806574"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842788"
 ---
-# <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
+# <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает исходный тип для этого символа. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается тип.  
+Извлекает исходный тип для этого символа. Используется, если для [перечисления симтаженум](../../debugger/debug-interface-access/symtagenum.md) задан тип.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +35,23 @@ HRESULT get_unmodifiedType( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий исходный тип, от этого символа.  
+ заполняет Возвращает объект [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий исходный тип этого символа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Текущий тип является модификацией возвращаемого исходного типа. Исходный тип символа определяется сначала начало тип символа и затем опроса, возвращаемый тип для исходного типа. Обратите внимание, что некоторые символы не могут иметь измененный тип исходного типа.  
+## <a name="remarks"></a>Remarks  
+ Текущий тип является изменением возвращенного исходного типа. Исходный тип символа можно определить с помощью первого получения типа символа и последующего опроса возвращаемого типа для исходного типа. Обратите внимание, что некоторые символы могут не иметь измененного типа исходного типа.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

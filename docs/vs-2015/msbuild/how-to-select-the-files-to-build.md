@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437905"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842360"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
+# <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При создании проекта, содержащего несколько файлов, можно указать каждый файл отдельно в файле проекта либо можно использовать подстановочные знаки, чтобы включить все файлы в одном каталоге или наборе вложенных каталогов.  
@@ -172,6 +172,6 @@ ms.locfileid: "63437905"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Исключить файлы из сборки](../msbuild/how-to-exclude-files-from-the-build.md)   
+## <a name="see-also"></a>См. также:  
+ [Как исключить файлы из сборки](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Элементы](../msbuild/msbuild-items.md)

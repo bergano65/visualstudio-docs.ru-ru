@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429102"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843061"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Описывает атрибуты документа.  
@@ -39,20 +39,20 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  TEXT_DOC_ATTR_READONLY_2  
  Указывает, что документ доступен только для чтения.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
-> Это значение фактически не определен в сборке для C#. Вместо этого необходимо скопировать определение в файле исходного кода.  
+> Это значение фактически не определено в сборке для C#. Вместо этого необходимо скопировать определение в исходный файл.  
   
- Передается в качестве аргумента для [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) метод.  
+ Передается в качестве аргумента в метод [онупдатедокументаттрибутес](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)

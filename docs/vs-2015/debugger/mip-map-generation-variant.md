@@ -1,5 +1,5 @@
 ---
-title: Вариант создания MIP карты | Документация Майкрософт
+title: Вариант создания MIP-карты | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383963"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843056"
 ---
 # <a name="mip-map-generation-variant"></a>Вариант создания MIP-карты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,12 +65,12 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- Чтобы создать текстуру с полной MIP-цепочкой, задайте для свойства `D3D11_TEXTURE2D_DESC::MipLevels` значение 0. Количество уровней mip в полной mip цепочки является floor(log2(n) + 1), где n — это наибольший размер текстуры.  
+ Чтобы создать текстуру с полной MIP-цепочкой, задайте для свойства `D3D11_TEXTURE2D_DESC::MipLevels` значение 0. Число уровней MIP в полной MIP-цепочке равно floor(log2(n) + 1), где n — это наибольший размер текстуры.  
   
  Помните, что при предоставлении исходных данных методу `CreateTexture2D` необходимо предоставить объект D3D11_SUBRESOURCE_DATA для каждого уровня MIP.  
   
 > [!NOTE]
 > Если вы хотите предоставить собственное содержимое уровня MIP вместо автоматического его создания, вам необходимо создать текстуры с помощью редактора изображений, который поддерживает текстуры с MIP-картами, а затем загрузить файл и передать уровни MIP в `CreateTexture2D`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Вариант размера текстур: половина/четверть](../debugger/half-quarter-texture-dimensions-variant.md)

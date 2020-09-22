@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ddfda1e46dc1c5918a4ee1095f39db027bd3fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431598"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842896"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Использование правил производительности для анализа данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "63431598"
 > [!NOTE]
 > Предупреждения о производительности профилировщика формируются с помощью динамического анализа выполнения программы и не зависят от предупреждений анализа кода. Анализ кода также может формировать предупреждения о производительности для управляемого кода на основе статического анализа исходного кода. Дополнительные сведения см. в разделах [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) и [Предупреждения о производительности](../code-quality/performance-warnings.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Просмотр предупреждений о производительности](../profiling/how-to-view-performance-warnings.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [Руководство. Просмотр предупреждений о производительности](../profiling/how-to-view-performance-warnings.md)  
  Представлена информация об открытии окна **Список ошибок** для просмотра предупреждений профилировщика о производительности.  
   
- [Практическое руководство. Настройка правил производительности](../profiling/how-to-configure-performance-rules.md)  
+ [Как настроить правила производительности](../profiling/how-to-configure-performance-rules.md)  
  Представлена информация о включении или выключении отдельных предупреждений производительности.  
   
  [Справочник по правилам производительности](../profiling/performance-rules-reference.md)  

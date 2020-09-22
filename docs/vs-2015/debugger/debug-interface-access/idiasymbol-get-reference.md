@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_reference | Документация Майкрософт
+title: 'IDiaSymbol:: get_reference | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b76dad15f715aa624880d10b3391107c1c2d8724
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858146"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843137"
 ---
-# <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
+# <a name="idiasymbolget_reference"></a>IDiaSymbol::get_reference
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Получает флаг, указывающий, является ли тип указателя ссылкой.  
@@ -35,13 +35,13 @@ HRESULT get_reference ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если типом указателя является ссылкой; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает значение `TRUE` , если тип указателя является ссылкой; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

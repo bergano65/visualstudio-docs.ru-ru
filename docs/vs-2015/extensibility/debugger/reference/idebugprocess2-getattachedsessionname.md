@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Документация Майкрософт
+title: 'IDebugProcess2:: Жетаттачедсессионнаме | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3acc40e2b906bd46b832d9fa11578de346014042
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434070"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842472"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Получает имя сеанса, который выполняет отладку этого процесса. Интегрированная среда разработки для отображения этой информации для пользователя, который выполняет отладку определенного процесса на конкретном компьютере.  
+Возвращает имя сеанса, в котором выполняется отладка этого процесса. Интегрированная среда разработки может отображать эту информацию для пользователя, выполняющего отладку определенного процесса на определенном компьютере.  
   
 > [!NOTE]
-> Этот метод является устаревшим, и ее реализация должна всегда возвращать `E_NOTIMPL`.  
+> Этот метод является устаревшим, и его реализация всегда должна возвращать `E_NOTIMPL` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,7 +39,7 @@ HRESULT GetAttachedSessionName(
  `pbstrSessionName`  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Этот метод должен всегда возвращать `E_NOTIMPL`.  
+ Этот метод всегда должен возвращать `E_NOTIMPL` .  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

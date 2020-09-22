@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator | Документация Майкрософт
+title: Идебужекспрессионевалуатор | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,17 +13,17 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ceffebf10838fe147475dcda54b385b844676de4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426466"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843161"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Этот интерфейс представляет средство оценки выражений.  
   
@@ -34,36 +34,36 @@ IDebugExpressionEvaluator : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Средство оценки выражений должен реализовывать этот интерфейс.  
+ Средство оценки выражений должно реализовывать этот интерфейс.  
   
-## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Чтобы получить этот интерфейс, следует создать средство оценки выражений через `CoCreateInstance` метод с помощью класса идентификатор CLSID средства вычисления. См. пример.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Чтобы получить этот интерфейс, создайте экземпляр средства оценки выражений с помощью `CoCreateInstance` метода, используя идентификатор класса (CLSID) оценщика. См. пример.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- В следующей таблице показаны методы `IDebugExpressionEvaluator`.  
+ В следующей таблице показаны методы `IDebugExpressionEvaluator` .  
   
-|Метод|Описание|  
+|Метод|Description|  
 |------------|-----------------|  
-|[Анализ](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Преобразует строку выражения проанализированное выражение.|  
-|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Возвращает локальные переменные, аргументы и другие свойства для метода.|  
-|[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Преобразует метод расположение и смещение в адрес памяти.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Определяет, какой язык следует использовать для создания печатного результатов.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Задает корневой раздел реестра. Используется для отладки side-by-side.|  
+|[Анализ](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Преобразует строку выражения в проанализированное выражение.|  
+|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Возвращает локальные переменные, аргументы и другие свойства метода.|  
+|[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Преобразует положение и смещение метода в адрес памяти.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Определяет, какой язык следует использовать для создания печатных результатов.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Задает корень реестра. Используется для параллельной отладки.|  
   
-## <a name="remarks"></a>Примечания  
- В типичной ситуации, модуль отладки (DE) создает средство оценки выражений (EE) в результате вызова [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Поскольку DE знает, язык и поставщиком EE, он хочет использовать, DE возвращает CLSID EE из реестра ( [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функция, `GetEEMetric`, помогает в этом извлечение).  
+## <a name="remarks"></a>Remarks  
+ В типичной ситуации модуль отладки (DE) создает экземпляр средства оценки выражений (EE) в результате вызова [парсетекст](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Так как язык и поставщик EE, который он хочет использовать, de знает, он получает идентификатор CLSID EE из реестра ( [вспомогательные методы SDK для функции отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , которые `GetEEMetric` помогают в этом извлечении).  
   
- После создания экземпляра EE DE вызывает [проанализировать](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) синтаксический анализ выражения и сохраните его в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта. Позже вызов [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вычисляет выражение.  
+ После создания экземпляра EE метод DE вызывает [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) , чтобы проанализировать выражение и сохранить его в объекте [идебугпарседекспрессион](../../../extensibility/debugger/reference/idebugparsedexpression.md) . Позже при вызове [евалуатесинк](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вычисляется выражение.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: ee.h  
+ Заголовок: ee. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Пример  
- В этом примере показано, как создать экземпляр средство оценки выражений, назначить поставщика символов и адрес в исходном коде. В этом примере используется функция `GetEEMetric`, из [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) библиотеки, dbgmetric.lib.  
+ В этом примере показано, как создать экземпляр средства оценки выражений, используя поставщик символов и адрес в исходном коде. В этом примере используется функция, `GetEEMetric` из [вспомогательных средств SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) библиотеки дбгметрик. lib.  
   
 ```cpp#  
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,  
@@ -104,9 +104,9 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Интерфейсы оценки выражения](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
- [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
- [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
+## <a name="see-also"></a>См. также:  
+ [Интерфейсы оценки выражений](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [парсетекст](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
+ [идебугпарседекспрессион](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
+ [евалуатесинк](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

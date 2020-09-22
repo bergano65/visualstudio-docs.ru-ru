@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Документация Майкрософт
+title: 'IDebugProcess3:: Жетенкаваилаблестате | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5cf5941ff75360c64add85e72a4c02c3ad716309
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405682"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842717"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Этот метод возвращает текущее состояние изменить и продолжить процесс. Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.  
+Этот метод возвращает текущее состояние изменения и продолжения процесса. Пользовательский поставщик порта всегда должен возвращать значение `E_NOTIMPL` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,18 +40,18 @@ int GetENCAvailableState(
   
 #### <a name="parameters"></a>Параметры  
  `pReason`  
- [out] Значение из [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.  
+ заполняет Значение из перечисления [енкунаваилаблереасон](../../../extensibility/debugger/reference/encunavailablereason.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает код ошибки.  
   
 > [!NOTE]
-> Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.  
+> Пользовательский поставщик порта всегда должен возвращать значение `E_NOTIMPL` .  
   
-## <a name="remarks"></a>Примечания  
- Это состояние может зависеть от [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).  
+## <a name="remarks"></a>Remarks  
+ На это состояние может повлиять [дисаблинк](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)   
+ [дисаблинк](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

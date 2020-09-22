@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasManagedCode | Документация Майкрософт
+title: 'IDiaSymbol:: get_hasManagedCode | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49e78c062ba92bf93edfce9aa7dac215a96faeb1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64807249"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842809"
 ---
-# <a name="idiasymbolgethasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
+# <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, содержит ли модуль управляемого кода.  
+Получает флаг, указывающий, содержит ли модуль управляемый код.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,24 +35,24 @@ HRESULT get_hasManagedCode(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если модуль содержит управляемый код; в противном случае возвращает `FALSE`, код является неуправляемым кодом.  
+ заполняет Возвращает значение `TRUE` , если модуль содержит управляемый код; в противном случае возвращает `FALSE` код, неуправляемый код.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+## <a name="remarks"></a>Remarks  
+ Это свойство доступно из `SymTagCompilandDetails` типа символов (см. [компиланддетаилс](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
+|Заголовок:|dia2. h|  
+|Версия:|Пакет SDK для DIA v 8.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

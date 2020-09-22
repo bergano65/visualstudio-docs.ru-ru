@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Сбор данных счетчиков производительности ЦП | Документация Майкрософт
+title: Практическое руководство. Сбор данных счетчиков производительности ЦП | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432802"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843093"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Практическое руководство. Сбор данных счетчиков ЦП
+# <a name="how-to-collect-cpu-counter-data"></a>Практическое руководство. Сбор данных счетчиков производительности ЦП
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Счетчик событий ЦП используется для сбора данных о производительности конкретного оборудования. В этом разделе демонстрируется сбор данных счетчиков событий при использовании метода профилирования "Инструментирование".  
@@ -50,7 +50,7 @@ ms.locfileid: "63432802"
   
 - сбор данных из одного или нескольких счетчиков при профилировании путем инструментирования;  
   
-- указание события счетчика в качестве интервала выборки при профилировании путем выборки. Дополнительные сведения см. в разделе [Как Выбор событий выборки](../profiling/how-to-choose-sampling-events.md).  
+- указание события счетчика в качестве интервала выборки при профилировании путем выборки. Дополнительные сведения см. [в разделе как выбрать события выборки](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Сбор данных счетчика производительности ЦП при профилировании путем инструментирования  
   
@@ -65,8 +65,8 @@ ms.locfileid: "63432802"
     > [!NOTE]
     > Дерево **Доступные счетчики производительности** отображается только в том случае, если установлен флажок **Сбор данных счетчиков ЦП**.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)   
  [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)   
- [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)
+ [Как выбрать события выборки](../profiling/how-to-choose-sampling-events.md)

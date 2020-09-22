@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isDataAligned | Документация Майкрософт
+title: 'IDiaSymbol:: get_isDataAligned | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64810731"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842873"
 ---
-# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
+# <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, выровнены ли определяемый пользователем тип (UDT) для некоторых границ памяти.  
+Получает флаг, указывающий, соответствует ли определяемый пользователем тип (UDT) некоторой конкретной границе памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +35,23 @@ HRESULT get_isDataAligned(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если определяемый пользователем тип был выровнен по границе некоторых памяти; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает значение `TRUE` , если определяемый пользователем тип был согласован с некоторой границей памяти; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- Как правило, это свойство имеет значение, когда исполняемый файл компилируется с выравниванием данных не по умолчанию. Например, компилятор Microsoft C++ можно изменить выравнивание данных с параметром командной строки/Zp<em>#</em>, где *#* является байтовым значением.  
+## <a name="remarks"></a>Remarks  
+ Это свойство обычно задается при компиляции исполняемого файла с нестандартным выравниванием данных. Например, компилятор Microsoft C++ может изменить выравнивание данных с помощью параметра командной строки/Zp <em>#</em> , где *#* — значение Byte.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
+|Заголовок:|dia2. h|  
+|Версия:|Пакет SDK для DIA v 8.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

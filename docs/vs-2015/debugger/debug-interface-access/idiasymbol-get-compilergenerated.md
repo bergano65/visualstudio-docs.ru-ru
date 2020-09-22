@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_compilerGenerated | Документация Майкрософт
+title: 'IDiaSymbol:: get_compilerGenerated | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8b4a067facf713af1b0547654be9aaf54500025
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64819815"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843025"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, был ли создан компилятором символа.  
+Получает флаг, указывающий, был ли символ создан компилятором.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ HRESULT get_compilerGenerated ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если созданная компилятором символ; в противном случае возвращает `FALSE` Если символ был создан из источника, написанный пользователем.  
+ заполняет Возвращает значение `TRUE` , если компилятор создает символ; в противном случае возвращает значение, `FALSE` Если символ был создан из источника, написанного пользователем.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
@@ -47,8 +47,8 @@ HRESULT get_compilerGenerated ( 
   
 |Требование|Описание|  
 |-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 7.0|  
+|Заголовок:|dia2. h|  
+|Версия:|Пакет SDK для DIA версии 7.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

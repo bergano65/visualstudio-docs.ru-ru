@@ -1,5 +1,5 @@
 ---
-title: Основные интерфейсы вычислителя выражений | Документация Майкрософт
+title: Интерфейсы интерфейса средства оценки ключевых выражений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,51 +12,51 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b9c01c59e732b777967cf49a61f17305f666325f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430176"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842776"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Интерфейсы вычислителя ключевых выражений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- При составлении вычислителя выражений (EE), а также в контекст оценки, вы должны быть знакомы с следующие интерфейсы.  
+ При написании оценщика выражений (EE) вместе с контекстом оценки необходимо ознакомиться со следующими интерфейсами.  
   
-## <a name="interface-descriptions"></a>Описание интерфейса  
+## <a name="interface-descriptions"></a>Описания интерфейсов  
   
 - [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
-     Единственный метод, [GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md), который возвращает структуру данных, который представляет текущей точки выполнения. Эта структура данных является одним из трех аргументов, которые модуль отладки (DE) передает [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) метод для вычисления выражения. Этот интерфейс обычно реализуется поставщиком символ.  
+     Содержит единственный метод,- [Address](../../extensibility/debugger/reference/idebugaddress-getaddress.md), который получает структуру данных, представляющую текущую точку выполнения. Эта структура данных является одним из трех аргументов, которые модуль отладки (DE) передает методу [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) для вычисления выражения. Этот интерфейс обычно реализуется поставщиком символов.  
   
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
-     Имеет [привязать](../../extensibility/debugger/reference/idebugbinder-bind.md) метод, который получает область памяти, которая содержит текущее значение символа. Учитывая обоих содержащего метода, представленного [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объект и самого символа, представленного [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта, `IDebugBinder::Bind` возвращает значение символа. `IDebugBinder` обычно реализуют DE.  
+     Имеет метод [BIND](../../extensibility/debugger/reference/idebugbinder-bind.md) , который получает область памяти, содержащую текущее значение символа. При наличии как содержащего метода, представленного объектом [идебугобжект](../../extensibility/debugger/reference/idebugobject.md) , так и самого символа, представленного объектом [идебугфиелд](../../extensibility/debugger/reference/idebugfield.md) , `IDebugBinder::Bind` возвращает значение символа. `IDebugBinder` обычно реализуется методом DE.  
   
 - [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
-     Представляет простой тип данных. Для более сложных типов, таких как массивы и методы, используйте производные [IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md) и [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) интерфейсы, соответственно. [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) — другой важной производный интерфейс, представляющий символов, содержащий других символов, таких как методы и классы. `IDebugField` Интерфейс (и его производные) обычно реализуют поставщик символов.  
+     Представляет простой тип данных. Для более сложных типов, таких как массивы и методы, используйте производные интерфейсы [идебугаррайфиелд](../../extensibility/debugger/reference/idebugarrayfield.md) и [идебугмесодфиелд](../../extensibility/debugger/reference/idebugmethodfield.md) соответственно. [Идебугконтаинерфиелд](../../extensibility/debugger/reference/idebugcontainerfield.md) — это еще один важный производный интерфейс, который представляет символы, содержащие другие символы, такие как методы или классы. `IDebugField`Интерфейс (и его производные) обычно реализуется поставщиком символов.  
   
-     `IDebugField` Объект может быть используется, чтобы найти имя и тип символа и, вместе с [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объекта, можно использовать для поиска его значения.  
+     `IDebugField`Объект можно использовать для поиска имени и типа символа и, вместе с объектом [идебугбиндер](../../extensibility/debugger/reference/idebugbinder.md) , можно использовать для поиска его значения.  
   
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-     Представляет реальные биты значения времени выполнения символа. [Привязать](../../extensibility/debugger/reference/idebugbinder-bind.md) принимает [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объект, который представляет символ и возвращает [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта. [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md) метод возвращает значение символа в буфере памяти. DE обычно реализует этот интерфейс для представления значения свойства в памяти.  
+     Представляет фактические биты значения символа времени выполнения. [BIND](../../extensibility/debugger/reference/idebugbinder-bind.md) принимает объект [идебугфиелд](../../extensibility/debugger/reference/idebugfield.md) , который представляет символ, и возвращает объект [идебугобжект](../../extensibility/debugger/reference/idebugobject.md) . Метод [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md) возвращает значение символа в буфере памяти. Обычно DE реализует этот интерфейс для представления значения свойства в памяти.  
   
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
-     Этот интерфейс представляет средство оценки выражений, сам. Ключевым методом является [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md), который возвращает [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) интерфейс.  
+     Этот интерфейс представляет сам средство оценки выражений. Ключевой метод — это [синтаксический анализ](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md), который возвращает интерфейс [идебугпарседекспрессион](../../extensibility/debugger/reference/idebugparsedexpression.md) .  
   
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
-     Этот интерфейс представляет проанализированное выражение, готовое к вычислению. Ключевым методом является [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) который возвращает значение IDebugProperty2, предоставляющий значение и тип выражения.  
+     Этот интерфейс представляет проанализированное выражение, готовое для оценки. Ключевым методом является [евалуатесинк](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , который возвращает IDebugProperty2, представляющий значение и тип выражения.  
   
 - [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)  
   
-     Этот интерфейс, представляющий значение и его тип и является результатом вычисления выражения.  
+     Этот интерфейс представляет значение и его тип и является результатом вычисления выражения.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)

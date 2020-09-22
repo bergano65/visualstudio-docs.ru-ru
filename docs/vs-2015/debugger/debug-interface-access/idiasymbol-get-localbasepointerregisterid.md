@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_localBasePointerRegisterId | Документация Майкрософт
+title: 'IDiaSymbol:: get_localBasePointerRegisterId | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9692e9de7a3551b437691c5ca089756d1e2d50a5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800982"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842692"
 ---
-# <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
+# <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает идентификатор регистр, который содержит базовый указатель на локальные переменные в стеке. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.  
+Возвращает идентификатор регистра, содержащего базовый указатель на локальные переменные в стеке. Используется, если [перечисление симтаженум](../../debugger/debug-interface-access/symtagenum.md) имеет значение `SymTagFunction` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,22 +35,22 @@ HRESULT get_localBasePointerRegisterId ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает идентификатор регистр, который содержит базовый указатель на локальные переменные в стеке.  
+ заполняет Возвращает идентификатор регистра, который содержит базовый указатель на локальные переменные в стеке.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444376"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842713"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Стандартные и настраиваемые конфигурации наборов инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63444376"
 |     4.0      |           *Путь установки Windows*\Microsoft.NET\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
- Значение `ToolsVersion` определяет набор инструментов, который используется проектом, создаваемым в среде Visual Studio. В [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] значение по умолчанию — 12.0 (вне зависимости от версии, указанной в файле проекта), но этот атрибут можно переопределить с помощью параметра командной строки **/toolsversion**. Сведения об этом атрибуте и других способах указания `ToolsVersion` см. в разделе [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ Значение `ToolsVersion` определяет набор инструментов, который используется проектом, создаваемым в среде Visual Studio. В [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] значение по умолчанию — 12.0 (вне зависимости от версии, указанной в файле проекта), но этот атрибут можно переопределить с помощью параметра командной строки **/toolsversion**. Дополнительные сведения об этом атрибуте и другие способы указания см `ToolsVersion` . в разделе [Переопределение параметров ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
 
  Если атрибут `ToolsVersion` не указан, в разделе реестра **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Version Number\>\DefaultToolsVersion** определяется значение `ToolsVersion`, которое всегда равно 2.0.  
 
@@ -97,9 +97,9 @@ ms.locfileid: "63444376"
 
 - **$(MSBuildBinPath)**  — значение `ToolsPath`, которое задается либо в реестре, либо в файле конфигурации, где определено значение `ToolsVersion`. Параметр `$(MSBuildToolsPath)` в реестре или в файле конфигурации задает местоположение основных задач и целевых объектов. В файле проекта это соответствует свойству $(MSBuildBinPath), а также свойству $(MSBuildToolsPath).  
 
-- `$(MSBuildToolsPath)` — это зарезервированное свойство, которое предоставляется свойством MSBuildToolsPath, заданным в файле конфигурации. (Это свойство заменяет собой `$(MSBuildBinPath)`. Однако для обеспечения совместимости используется `$(MSBuildBinPath)`.) В пользовательском наборе инструментов должно быть определено свойство `$(MSBuildToolsPath)` или `$(MSBuildBinPath)`, но не оба эти свойства, если только их значения не совпадают.  
+- `$(MSBuildToolsPath)` — это зарезервированное свойство, которое предоставляется свойством MSBuildToolsPath, заданным в файле конфигурации. (Это свойство заменяет собой `$(MSBuildBinPath)`. Однако `$(MSBuildBinPath)` передается для обеспечения совместимости.) Пользовательский набор инструментов должен определять либо `$(MSBuildToolsPath)` `$(MSBuildBinPath)` , но не оба, если только они не имеют одинакового значения.  
 
   Вы можете также добавить в файл конфигурации пользовательские и зависящие от ToolsVersion свойства, используя тот же самый синтаксис, который применяется для добавления свойства MSBuildToolsPath. Такие пользовательские свойства будут доступны для файла проекта, если используется имя, совпадающее со значением, указанным в файле конфигурации. В файле конфигурации можно определять наборы инструментов, но не вложенные наборы инструментов.  
 
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

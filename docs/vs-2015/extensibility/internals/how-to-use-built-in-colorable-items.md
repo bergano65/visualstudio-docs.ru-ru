@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование встроенных цветных элементов | Документация Майкрософт
+title: Как использовать встроенные цветные элементы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a86361f28eb4c73a65093fc5c80ef15ddf791a77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436128"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842477"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Практическое руководство. Использование встроенных цветных элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Прежде чем использовать встроенные цветные элементы, необходимо сначала сообщается в интегрированной среде разработки (IDE), вы не предоставляли собственных пользовательских цветных элементов, которые в данном случае было бы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> объектов. Для этого параметру реестра для языковой службы.  
+Перед использованием встроенных цветовых элементов необходимо сначала сообщить в интегрированную среду разработки (IDE), которая не предоставляет собственные настраиваемые цветовые элементы, которые в данном случае будут <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> объектами. Это делается путем настройки записи реестра для языковой службы.  
   
-### <a name="to-use-built-in-colorable-items"></a>Чтобы использовать встроенные цветные элементы  
+### <a name="to-use-built-in-colorable-items"></a>Использование встроенных цветовых элементов  
   
-1. В разделе HKEY_LOCAL_MACHINE\VisualStudio\\*X.Y*служб \Languages\Language\\*название языка*, где *X.Y* — это версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и *название языка* — это имя языка, создайте значение записи реестра типа DWORD `RequestStockColors`.  
+1. В разделе HKEY_LOCAL_MACHINE \Висуалстудио \\ *X. y*\Лангуажес\лангуаже Services \\ *Language Name*, где *X. y* — версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и *название языка* — это имя вашего языка, создайте значение записи реестра типа DWORD с именем `RequestStockColors` .  
   
-2. Задайте `RequestStockColors` значение записи реестра значение 1.  
+2. Присвойте параметру `RequestStockColors` реестра значение 1.  
   
-     После создания реестра операции, ваш палитры <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод можно использовать члены <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> перечисления, заполните массив атрибутов цвета для использования с помощью редактора.  
+     После создания записи в реестре метод, используемый в этом <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> перечислении, может использовать члены <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> перечисления для заполнения массива атрибутов цвета, используемых редактором.  
   
     > [!NOTE]
-    > Не устанавливайте этот параметр реестра, если вы предоставляете пользовательских цветных элементов. Дополнительные сведения см. в разделе [пользовательских цветных элементов](../../extensibility/internals/custom-colorable-items.md).  
+    > Не устанавливайте эту запись реестра, если вы предоставляете настраиваемые цветные элементы. Дополнительные сведения см. в разделе [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md).  
   
-## <a name="see-also"></a>См. также  
- [Цветовая маркировка синтаксиса в специализированных редакторах](../../extensibility/syntax-coloring-in-custom-editors.md)   
- [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
- [Реализация цветовой маркировки синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)   
+## <a name="see-also"></a>См. также:  
+ [Выделение синтаксиса в пользовательских редакторах](../../extensibility/syntax-coloring-in-custom-editors.md)   
+ [Выделение синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
+ [Реализация цветового выделения синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)   
  [Настраиваемые цветные элементы](../../extensibility/internals/custom-colorable-items.md)   
  [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_framePointerPresent | Документация Майкрософт
+title: 'IDiaSymbol:: get_framePointerPresent | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51b5f8c24dd4109d8760ffeede4184daf06037f1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793114"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842557"
 ---
-# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+# <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, присутствует ли этот указатель фрейма. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) присваивается `SymTagFunction`.  
+Получает флаг, указывающий, имеется ли указатель на кадр. Используется, если [перечисление симтаженум](../../debugger/debug-interface-access/symtagenum.md) имеет значение `SymTagFunction` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,22 +35,22 @@ HRESULT get_framePointerPresent( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out]] Возвращает `TRUE` при наличии; в противном случае этот указатель фрейма возвращает `FALSE`.  
+ [out]] Возвращает `TRUE` , если указатель фрейма имеется; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

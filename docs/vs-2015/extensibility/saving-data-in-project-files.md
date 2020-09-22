@@ -1,5 +1,5 @@
 ---
-title: Сохранение данных в файлах проектов | Документация Майкрософт
+title: Сохранение данных в файлах проекта | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,28 +13,28 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432519"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842981"
 ---
 # <a name="saving-data-in-project-files"></a>Сохранение данных в файлах проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Подтип проекта можно сохранять и извлекать подтипа данных в файле проекта. Managed Package Framework (MPF) предоставляет два интерфейса для выполнения этой задачи:  
+Подтип проекта может сохранять и извлекать данные, относящиеся к подтипу, в файле проекта. Платформа управляемого пакета (MPF) предоставляет два интерфейса для выполнения этой задачи:  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Интерфейс обеспечивает доступ значений свойств из **MSBuild** раздел файла проекта. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> может вызываться любым пользователем, каждый раз, когда необходимо взвесить, чтобы загрузить или сохранить связанные данные сборок.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>Интерфейс позволяет получить доступ к значениям свойств из раздела **MSBuild** файла проекта. Методы, предоставляемые, <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> могут вызываться любым пользователем каждый раз, когда пользователю нужно загружать или сохранять данные, связанные с построением.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Используется для хранения без построения взаимосвязанные данные в XML произвольной формы. Методы, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> вызываются [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] всякий раз, когда [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] требуется сохранить связанные данные без построения в файле проекта.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>Используется для сохранения данных, не связанных с построением, в XML-коде свободной формы. Методы, предоставляемые методами, <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> вызываются при [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] каждом [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] необходимости сохранения данных, не связанных с построением, в файле проекта.  
   
-  Дополнительные сведения о том, как для сохранения сборки и связанные данные без построения см. в разделе [сохранение данных в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Дополнительные сведения о том, как сохранять данные, связанные с построением и без сборки, см. [в разделе Сохранение данных в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
-## <a name="saving-and-retrieving-build-related-data"></a>Сохранение и извлечение сборки связанных данных  
+## <a name="saving-and-retrieving-build-related-data"></a>Сохранение и извлечение данных, связанных с построением  
   
-#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Чтобы сохранить построения связанные данные в файле проекта  
+#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Сохранение данных, связанных с построением, в файле проекта  
   
-- Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить полный путь файла проекта.  
+- Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> метод, чтобы сохранить полный путь к файлу проекта.  
   
     ```  
     private SpecializedProject project;  
@@ -47,9 +47,9 @@ ms.locfileid: "63432519"
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));  
     ```  
   
-#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Для получения сборки связанные данные из файла проекта  
+#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Извлечение данных, связанных с построением, из файла проекта  
   
-- Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> метод для извлечения полный путь файла проекта.  
+- Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> метод, чтобы получить полный путь к файлу проекта.  
   
     ```  
     private SpecializedProject project;  
@@ -62,11 +62,11 @@ ms.locfileid: "63432519"
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));  
     ```  
   
-## <a name="saving-and-retrieving-non-build-related-data"></a>Сохранение и извлечение не build связанных данных  
+## <a name="saving-and-retrieving-non-build-related-data"></a>Сохранение и извлечение данных, связанных без сборки  
   
-#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Чтобы сохранить без построения связанные данные в файле проекта  
+#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Сохранение данных, не связанных с построением, в файле проекта  
   
-1. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> метод, чтобы определить, изменился ли фрагмент XML с момента его последнего сохранения в свой текущий файл.  
+1. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> метод, чтобы определить, изменился ли XML-фрагмент с момента последнего сохранения в текущий файл.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -96,7 +96,7 @@ ms.locfileid: "63432519"
     }  
     ```  
   
-2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> метод, чтобы сохранить данные XML в файле проекта.  
+2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> метод, чтобы сохранить XML-данные в файле проекта.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -145,9 +145,9 @@ ms.locfileid: "63432519"
     }  
     ```  
   
-#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Для получения взаимосвязанных данных без построения в файле проекта  
+#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Извлечение данных, не связанных с построением, в файле проекта  
   
-1. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> метод для инициализации свойства расширения проекта и другие независимые от построения данные. Этот метод вызывается в том случае, если отсутствуют данные конфигурации XML в файле проекта.  
+1. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> метод для инициализации свойств расширения проекта и других данных, не зависящих от сборки. Этот метод вызывается, если в файле проекта отсутствуют данные конфигурации XML.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -163,7 +163,7 @@ ms.locfileid: "63432519"
         return VSConstants.S_OK;  
     ```  
   
-2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> метод для загрузки XML-данные из файла проекта.  
+2. Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> метод для загрузки XML-данных из файла проекта.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  
@@ -208,7 +208,7 @@ ms.locfileid: "63432519"
     ```  
   
 > [!NOTE]
-> Все примеры кода, приведенные в этом разделе являются частью более крупного примера [примеры VSSDK](../misc/vssdk-samples.md).  
+> Все примеры кода, приведенные в этом разделе, являются частями более крупного примера — [VSSDK Samples](../misc/vssdk-samples.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Сохранение данных в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

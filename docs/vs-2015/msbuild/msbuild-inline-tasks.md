@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439363"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843173"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "63439363"
   
 - Если значением атрибута `Type` является `Fragment`, тогда код определяет содержимое метода `Execute`, а не сигнатуру или оператор `return`.  
   
-  Сам код отображается, как правило, между метками `<![CDATA[` и `]]>`. Так как код размещается в разделе CDATA, вы можете не беспокоиться об экранировании зарезервированных знаков, например "\<" или ">".  
+  Сам код отображается, как правило, между метками `<![CDATA[` и `]]>`. Так как код размещается в разделе CDATA, вам не нужно беспокоиться об экранировании зарезервированных знаков, например \<" or ">.  
   
   Вы также можете использовать атрибут `Source` элемента `Code`, чтобы указать расположение файла, содержащего код для задачи. Код в исходном файле должен иметь тип, заданный атрибутом `Type`. Если есть атрибут `Source`, тогда по умолчанию значением атрибута `Type` является `Class`. Если атрибут `Source` отсутствует, значением по умолчанию будет `Fragment`.  
   
@@ -191,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Пошаговое руководство: создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
+## <a name="see-also"></a>См. также:  
+ [Операции](../msbuild/msbuild-tasks.md)   
+ [Пошаговое руководство. Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)

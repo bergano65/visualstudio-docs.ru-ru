@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439770"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842704"
 ---
 # <a name="loading-vspackages"></a>Загрузка пакетов VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Пакеты VSPackage загружаются в Visual Studio только в том случае, если необходима их функциональность. Например пакет VSPackage загружается при Visual Studio использует фабрику проекта или служба, которая реализует VSPackage. Эта возможность называется отложенной загрузки, которая используется по возможности для повышения производительности.  
+Пакеты VSPackage загружаются в Visual Studio только в том случае, если их функциональные возможности необходимы. Например, пакет VSPackage загружается, когда Visual Studio использует фабрику проекта или службу, реализуемую VSPackage. Эта функция называется отложенной загрузкой, которая используется, когда это возможно, для повышения производительности.  
   
 > [!NOTE]
-> Visual Studio можно определить определенные сведения о пакете VSPackage, например команд, которые предлагает VSPackage, без загрузки VSPackage.  
+> Visual Studio может определить определенные сведения VSPackage, например команды, предлагаемые пакетом VSPackage, без загрузки VSPackage.  
   
- Пакеты VSPackage может быть присвоено автозагрузки в контексте определенного пользователя пользовательского интерфейса, например, при открытом решении. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Атрибут задает этот контекст.  
+ Пакеты VSPackage можно установить в автозагрузки в определенном контексте пользовательского интерфейса, например, когда решение открыто. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>Атрибут задает этот контекст.  
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Автозагрузка VSPackage в определенном контексте  
   
-- Добавление `ProvideAutoLoad` атрибута к VSPackage атрибуты:  
+- Добавьте `ProvideAutoLoad` атрибут к атрибутам VSPackage:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -41,22 +41,22 @@ ms.locfileid: "63439770"
     {. . .}  
     ```  
   
-     См. в разделе перечисления полей <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> список контекстов пользовательского интерфейса и их значения GUID.  
+     <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>Список контекстов пользовательского интерфейса и их значений GUID см. в списке полей перечисления.  
   
-- Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.  
+- Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> методе.  
   
-- Создание пакета VSPackage и начните отладку.  
+- Создайте пакет VSPackage и начните отладку.  
   
 - Загрузите решение или создайте его.  
   
-     Пакет VSPackage, загружает и останавливается в точке останова.  
+     Пакет VSPackage загружается и останавливается в точке останова.  
   
-## <a name="forcing-a-vspackage-to-load"></a>Принудительная загрузка VSPackage  
- В некоторых случаях пакет VSPackage может потребоваться принудительно другом пакете VSPackage для загрузки. Например упрощенный VSPackage может загрузить VSPackage большего размера в контексте, который будет доступен как CMDUIContext.  
+## <a name="forcing-a-vspackage-to-load"></a>Принудительная Загрузка VSPackage  
+ В некоторых обстоятельствах пакету VSPackage может потребоваться принудительно загрузить другой пакет VSPackage. Например, упрощенный пакет VSPackage может загрузить более крупный пакет VSPackage в контексте, недоступном в качестве Кмдуиконтекст.  
   
- Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> способ принудительного VSPackage для загрузки.  
+ Для <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> принудительной загрузки VSPackage можно использовать метод.  
   
-- Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> методе VSPackage, которое заставляет другом пакете VSPackage для загрузки:  
+- Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод VSPackage, который вызывает загрузку другого пакета VSPackage:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -69,15 +69,15 @@ ms.locfileid: "63439770"
   
     ```  
   
-     При инициализации VSPackage, этот параметр вызывает принудительную `PackageToBeLoaded` для загрузки.  
+     После инициализации VSPackage будет принудительно `PackageToBeLoaded` загружен.  
   
-     Загрузка Force для обмена данными VSPackage не следует. Используйте [использование и предоставление службы](../extensibility/using-and-providing-services.md) вместо этого.  
+     Принудительная загрузка не должна использоваться для связи VSPackage. Используйте вместо этого использование [и предоставление служб](../extensibility/using-and-providing-services.md) .  
   
 ## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Использование настраиваемого атрибута для регистрации VSPackage  
- В некоторых случаях может потребоваться создать новый атрибут регистрации для модуля. Чтобы добавить новый раздел реестра или добавить новые значения для существующих ключей можно использовать атрибуты регистрации. Новый атрибут должен быть производным от <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, и его необходимо переопределить <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> и <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> методы.  
+ В некоторых случаях может потребоваться создать новый атрибут регистрации для вашего расширения. Атрибуты регистрации можно использовать для добавления новых разделов реестра или для добавления новых значений к существующим ключам. Новый атрибут должен быть производным от и <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> должен переопределять <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> методы и.  
   
 ## <a name="creating-a-registry-key"></a>Создание раздела реестра  
- В следующем коде создается пользовательский атрибут **пользовательских** подраздела в разделе для регистрации VSPackage.  
+ В следующем коде пользовательский атрибут создает **Пользовательский** подраздел в ключе для регистрируемого пакета VSPackage.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -102,8 +102,8 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Создание нового значения существующего раздела реестра  
- Можно добавить пользовательские значения для существующего ключа. Ниже показано, как добавить новое значение для ключа регистрации VSPackage.  
+## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Создание нового значения в существующем разделе реестра  
+ Можно добавить пользовательские значения в существующий ключ. В следующем коде показано, как добавить новое значение в ключ регистрации VSPackage.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -127,5 +127,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Пакеты VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>См. также:  
+ [VSPackages](../extensibility/internals/vspackages.md)

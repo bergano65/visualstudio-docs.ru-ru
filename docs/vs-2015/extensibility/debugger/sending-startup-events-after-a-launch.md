@@ -11,40 +11,40 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436668"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842744"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Отправка событий запуска после запуска
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Когда модуль отладки (DE), подключенного к программе, он отправляет ряд событий запуска сеанса отладки.  
+После присоединения отладчика (DE) к программе отправляет в сеанс отладки ряд событий запуска.  
   
- Следующие события запуска, отправляемые сеанса отладки.  
+ События запуска, отправляемые обратно в сеанс отладки, включают следующее:  
   
-- Событие создания ядра.  
+- Событие создания подсистемы.  
   
 - Событие создания программы.  
   
-- Создание и события загрузки модулей потоков.  
+- Создание потоков и события загрузки модулей.  
   
-- Событие завершения загрузки, когда код будет загружен и готов к выполнению, а также перед выполнением любого кода  
+- Событие завершения загрузки, отправленное при загрузке кода и готовности к выполнению, но до выполнения любого кода  
   
   > [!NOTE]
-  > Когда это событие продолжает выполнение, инициализируются глобальные переменные и запустите программы запуска.  
+  > Когда это событие продолжает возобновлению, инициализируются глобальные переменные и запускаются подпрограммы запуска.  
   
-- Возможные других потоков, создания и события загрузки модулей.  
+- Возможно, другие события создания потоков и загрузки модулей.  
   
-- Событие точки входа, которое сигнализирует, что программа достиг основной точки входа, такие как **Main** или `WinMain`. Обычно это событие, не отправляется при DE присоединяет к программе, на котором уже выполняется.  
+- Событие точки входа, которое сигнализирует, что программа достигла своей основной точки входа, например **Main** или `WinMain` . Это событие обычно не отправляется, если DE подключается к уже запущенной программе.  
   
-  Программно, DE сначала отправляет диспетчер отладки сеансов (SDM) [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) интерфейс, который представляет событие создания ядра, за которым следует [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , который представляет событие создания программы.  
+  Программным способом метод DE сначала отправляет диспетчеру отладки сеанса (SDM) интерфейс [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) , представляющий событие создания подсистемы, за которым следует [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md), представляющий событие создания программы.  
   
-  Обычно загрузка сопровождается одним или несколькими [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) события создания потоков и [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) события загрузки модулей.  
+  Обычно за ним следуют одно или несколько событий создания потока [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) и события загрузки модуля [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) .  
   
-  Когда код загружены и готовы к запуску, но до выполнения любого кода, DE отправляет SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) событие завершения загрузки. Наконец, если программа еще не запущен, DE отправляет [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) запись точечное событие, сигнализации, что программа достиг основной точки входа и готов для отладки.  
+  Когда код загружается и готов к запуску, но перед выполнением любого кода, отсылает событие [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Load. Наконец, если программа еще не запущена, параметр DE отправляет событие точки входа [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , предупреждая о том, что программа достигла основной точки входа и готова к отладке.  
   
-## <a name="see-also"></a>См. также  
- [Элемент управления выполнения](../../extensibility/debugger/control-of-execution.md)   
+## <a name="see-also"></a>См. также:  
+ [Управление выполнением](../../extensibility/debugger/control-of-execution.md)   
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

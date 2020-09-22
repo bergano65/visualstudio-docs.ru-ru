@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a988e8f5409a3a9e1f9fd8a4b5bd863a3309acc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429033"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843217"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Задает тип сведений о символах для извлечения.  
+Указывает тип символьных сведений для извлечения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,24 +46,24 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
   
 ## <a name="members"></a>Участники  
  SSIF_NONE  
- Указывает флаги не  
+ Указывает отсутствие флагов  
   
  SSIF_VERBOSE_SEARCH_INFO  
- Возвращает все совпадения при поиске путей, используемых для поиска символов  
+ Возвращает все пути поиска, используемые для поиска символов  
   
-## <a name="remarks"></a>Примечания  
- Эти флаги передаются в качестве параметра [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) метод, чтобы определить объем сведений, завершился сбоем.  
+## <a name="remarks"></a>Remarks  
+ Эти флаги передаются в метод [жетсимболинфо](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) в качестве параметра, чтобы определить объем возвращаемой информации.  
   
 > [!NOTE]
-> В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, и он должен быть указан как `dwFlags` параметр `IDebugModule3::GetSymbolInfo`. Все остальные значения сообщение об ошибке.  
+> В настоящее время `SSIF_VERBOSE_SEARCH_INFO` поддерживается только, и его необходимо указать в качестве `dwFlags` параметра `IDebugModule3::GetSymbolInfo` . Все остальные значения возвращают ошибку.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: мсдбг. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

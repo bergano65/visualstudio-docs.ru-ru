@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439384"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842880"
 ---
 # <a name="msbuild-targets-files"></a>Файлы Targets в MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63439384"
  Значение `$(MSBuildToolsPath)` определяет путь к этим общим TARGETS-файлам. Если `ToolsVersion` 4.0, файлы находятся в следующей папке: `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
-> Дополнительные сведения о создании собственных целевых объектов см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md). Сведения об использовании `Import` элемент для вставки файла проекта в другой файл проекта, см. в разделе [элемент Import (MSBuild)](../msbuild/import-element-msbuild.md) и [как: Используйте тот же целевой объект в нескольких файлах проектов](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+> Дополнительные сведения о создании собственных целевых объектов см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md). Сведения об использовании `Import` элемента для вставки файла проекта в другой файл проекта см. в разделе [элемент Import (MSBuild)](../msbuild/import-element-msbuild.md) и [Пошаговое руководство. Использование одного и того же целевого объекта в нескольких файлах проекта](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
   
 ## <a name="common-targets-files"></a>Общие файлы TARGETS  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63439384"
 |Microsoft.CSharp.targets|Определяет этапы стандартного процесса сборки для проектов Visual C#.<br /><br /> Импортированы с помощью файлов проекта Visual C# (с расширением CSPROJ), которые включают в себя следующую инструкцию: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
 |Microsoft.VisualBasic.targets|Определяет этапы стандартного процесса сборки для проектов Visual Basic.<br /><br /> Импортированы с помощью файлов проекта Visual Basic (с расширением VBPROJ), которые включают в себя следующую инструкцию: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Элемент Import (MSBuild)](../msbuild/import-element-msbuild.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

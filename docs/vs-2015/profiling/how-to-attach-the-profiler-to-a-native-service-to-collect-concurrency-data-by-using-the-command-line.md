@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Присоединение профилировщика к собственной службе для сбора данных параллелизма при помощи командной строки | Документация Майкрософт
+title: Практическое руководство. Присоединение профилировщика к собственной службе для сбора данных параллелизма при помощи командной строки | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,19 +10,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab6e56d6b2d9a953b5549d59ea85049be8cc0306
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432883"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842480"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение Profiler к собственной службе для сбора данных о параллелизме с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к собственной службе для сбора данных параллелизма при помощи командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для подключения профилировщика к собственной службе (C/C++) и сбора данных о параллелизме потоков и процессов с помощью метода выборки.  
 
 > [!NOTE]
-> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. статью [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Средства производительности в приложениях Windows 8 и Windows Server 2012).  
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 
 > [!NOTE]
 > Программы командной строки средств профилирования расположены в подкаталоге \Team Tools\Performance Tools каталога установки Visual Studio. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна **командной строки** или в саму команду. Дополнительные сведения см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
@@ -40,7 +40,7 @@ ms.locfileid: "63432883"
 
     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency   /output:** `OutputFile` [`Options`]  
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).  
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).  
 
      С параметром **/start** можно использовать любой из параметров, приведенных в следующей таблице.  
 
@@ -49,7 +49,7 @@ ms.locfileid: "63432883"
 
    |                               Параметр                               |                                                                     Описание                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.                           |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` |                           Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику.                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               Включает профилирование процессов в других сеансах входа.                                                |
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Задает счетчик производительности Windows, данные которого будут собираться во время профилирования.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500. |
@@ -70,9 +70,9 @@ ms.locfileid: "63432883"
 
     |Параметр|Описание|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|  
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|  
 
 ## <a name="ending-the-profiling-session"></a>Завершение сеанса профилирования  
  Для завершения сеанса профилирования профилировщик не должен выполнять сбор данных. Вы можете остановить сбор данных из собственной службы, профилируемой с помощью метода параллелизма, остановив службу или вызвав параметр **VSPerfCmd /detach**. Затем можно вызвать параметр **VSPerfCmd/shutdown**, чтобы завершить работу профилировщика и закрыть файл данных профилирования.  

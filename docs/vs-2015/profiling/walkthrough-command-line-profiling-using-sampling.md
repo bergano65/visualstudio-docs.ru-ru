@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Профилирование из командной строки с помощью выборки | Документация Майкрософт
+title: Пошаговое руководство. Профилирование из командной строки с помощью выборки | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439683"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843041"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Командной строки, профилирование с помощью выборки
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Профилирование из командной строки с помощью выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве показано, как выполнить профилирование приложения с помощью программ командной строки и выборки для выявления проблем производительности.  
@@ -41,7 +41,7 @@ ms.locfileid: "63439683"
   
 - Средний уровень навыков работы с программами командной строки.  
   
-- Копия [примера PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
+- Копия [примера PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
 - Для работы со сведениями, полученными при профилировании, рекомендуется включить отладочные символы.  
   
@@ -105,9 +105,9 @@ ms.locfileid: "63439683"
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  
         ```  
   
-## <a name="see-also"></a>См. также  
- [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)   
+## <a name="see-also"></a>См. также:  
+ [Обзор сеанса анализа производительности](../profiling/performance-session-overview.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)   
+ [Средства](../profiling/vsperfcmd.md)   
+ [Основные сведения о значениях данных выборки](../profiling/understanding-sampling-data-values.md)   
  [Представления отчетов о производительности](../profiling/performance-report-views.md)

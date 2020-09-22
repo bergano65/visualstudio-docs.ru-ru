@@ -1,5 +1,5 @@
 ---
-title: Стратегия реализации вычислителя выражений | Документация Майкрософт
+title: Стратегия реализации средства оценки выражений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a9c2ded111c371fc1a42c8f1ee08769f5b06aeda
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421164"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843117"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Стратегия реализации вычислителя выражений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 такой способ реализации оценивающих выражений является устаревшим. Дополнительные сведения о реализации вычислителей выражений CLR см. в разделе средства [оценки выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [Пример управляемого средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Один из способов создания вычислитель выражений (EE) является сначала реализация минимальный код, необходимый для отображения локальных переменных в **"Локальные"** окна. Полезно понимать, что каждая строка в **"Локальные"** окне отображается имя, тип и значение локальной переменной, и все три представленных [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объекта. Имя, тип и значение локальной переменной можно получить из `IDebugProperty2` , вызвав его [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод. Дополнительные сведения о том, как для отображения локальных переменных в **"Локальные"** окно, см. в разделе ["Локальные" Отображение](../../extensibility/debugger/displaying-locals.md).  
+ Один из подходов к быстрому созданию средства оценки выражений (EE) заключается в том, чтобы сначала реализовать минимальный код, необходимый для вывода локальных переменных в окне **локальные** . Полезно понимать, что каждая строка в окне **локальные** отображает имя, тип и значение локальной переменной, а все три представляются объектом [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) . Имя, тип и значение локальной переменной можно получить из `IDebugProperty2` объекта, вызвав его метод [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . Дополнительные сведения о том, как отображать локальные переменные в окне **локальные** , см. в разделе [отображение локальных](../../extensibility/debugger/displaying-locals.md)переменных.  
   
-## <a name="discussion"></a>Обсуждение  
- Возможная реализация последовательность начинается с реализации [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). [Проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) и [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) методы должны быть реализованы для отображения локальных переменных. Вызов `IDebugExpressionEvaluator::GetMethodProperty` возвращает `IDebugProperty2` , представляющий метод: то есть [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) объекта. Сами методы не отображаются в **"Локальные"** окна.  
+## <a name="discussion"></a>Разговор  
+ Возможная последовательность реализации начинается с реализации [идебужекспрессионевалуатор](../../extensibility/debugger/reference/idebugexpressionevaluator.md). Для вывода локальных переменных необходимо реализовать методы [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) и [жетмесодпроперти](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) . Вызов `IDebugExpressionEvaluator::GetMethodProperty` возвращает `IDebugProperty2` объект, представляющий метод:, то есть объект [идебугмесодфиелд](../../extensibility/debugger/reference/idebugmethodfield.md) . Сами методы не отображаются в окне **локальные** .  
   
- [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) метод должен быть реализован рядом. Модуль отладки (DE) вызывает этот метод, чтобы получить список локальных переменных и аргументов, передавая `IDebugProperty2::EnumChildren` `guidFilter` аргумент `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` вызовы [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) и [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), объединение результатов в одного перечисления. См. в разделе [отображение "Локальные"](../../extensibility/debugger/displaying-locals.md) для получения дополнительных сведений.  
+ Метод [енумчилдрен](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) должен быть реализован далее. Модуль отладки (DE) вызывает этот метод для получения списка локальных переменных и аргументов путем передачи `IDebugProperty2::EnumChildren` `guidFilter` аргумента `guidFilterLocalsPlusArgs` . `IDebugProperty2::EnumChildren` вызывает [енумаргументс](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) и [енумлокалс](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), объединяя результаты в одно перечисление. Дополнительные сведения см. в разделе [отображение локальных переменных](../../extensibility/debugger/displaying-locals.md) .  
   
-## <a name="see-also"></a>См. также  
- [Реализация вычислителя выражений](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
+## <a name="see-also"></a>См. также:  
+ [Реализация средства оценки выражений](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [Отображение локальных переменных](../../extensibility/debugger/displaying-locals.md)

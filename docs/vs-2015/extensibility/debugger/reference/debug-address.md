@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444955"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843085"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Эта структура представляет адрес.  
@@ -45,27 +45,27 @@ public struct DEBUG_ADDRESS {
 ```  
   
 ## <a name="terms"></a>Термины  
- ulAppDomainID  
+ улаппдомаинид  
  Идентификатор процесса.  
   
- guidModule  
+ гуидмодуле  
  Идентификатор GUID модуля, содержащего этот адрес.  
   
- tokClass  
+ токкласс  
  Токен, идентифицирующий класс или тип этого адреса.  
   
 > [!NOTE]
-> Это значение относится к поставщика символов и поэтому не имеет общие значения отличное от как идентификатор для типа класса.  
+> Это значение характерно для поставщика символов и, следовательно, не имеет общего значения, кроме идентификатора типа класса.  
   
- Addr  
- Объект [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуру, которая содержит объединение структур, которые описывают типы отдельных адресов. Значение `addr`.`dwKind` поступает из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления, который объясняет, как интерпретировать объединение.  
+ addr  
+ Структура [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , которая содержит объединение структур, описывающих отдельные типы адресов. Значение `addr` .`dwKind` поступает из перечисления [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , в котором объясняется, как интерпретировать объединение.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) метод для заполнения.  
+## <a name="remarks"></a>Remarks  
+ Эта структура передается в [метод метода method, который](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) должен быть заполнен.  
   
- **Предупреждение [C++ только]**  
+ **Предупреждение [только C++]**  
   
- Если `addr.dwKind` — `ADDRESS_KIND_METADATA_LOCAL` и если `addr.addr.addrLocal.pLocal` не имеет значение null, то нужно вызвать `Release` маркеров указателя:  
+ Если `addr.dwKind` имеет `ADDRESS_KIND_METADATA_LOCAL` значение и `addr.addr.addrLocal.pLocal` , если не является значением NULL, необходимо вызвать `Release` для указателя токена:  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -75,14 +75,14 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: sh.h  
+ Заголовок: sh. h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft. VisualStudio. Debugger. Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
+ [Выадресовать](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
