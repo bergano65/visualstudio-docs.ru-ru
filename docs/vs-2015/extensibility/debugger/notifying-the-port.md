@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410075"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843164"
 ---
 # <a name="notifying-the-port"></a>Уведомление порта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-После запуска программы, порт должен быть уведомлен, следующим образом:  
+После запуска программы порт должен быть уведомлен следующим образом:  
   
-1. Порт, получив новый узел программы, он отправляет событие создания сеанса отладки. Событие несет с собой интерфейс, который представляет программу.  
+1. Когда порт получает новый узел программы, он отправляет событие создания программы обратно в сеанс отладки. Событие содержит интерфейс, представляющий программу.  
   
-2. Сеанс отладки запрашивает программа для идентификатора модуля отладки (DE), которое можно присоединить к.  
+2. Сеанс отладки запрашивает у программы идентификатор модуля отладки (DE), к которому можно присоединиться.  
   
-3. Сеанс отладки проверяет, находится ли DE включен в список допустимых DEs для этой программы. Сеанс отладки получает этот список из параметров активную программу решения, изначально переданные ему размер пакета отладки.  
+3. Сеанс отладки проверяет, находится ли параметр DE в списке разрешенных DEs для этой программы. Сеанс отладки получает этот список из параметров активной программы решения, изначально переданных ему пакетом отладки.  
   
-    DE должны находиться в список допустимых, иначе DE не будет присоединен к программе.  
+    Параметр DE должен находиться в списке допустимых, иначе он не будет присоединен к программе.  
   
-   Программным образом, когда порт сначала получает новый узел программы, он создает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) интерфейс для представления программы.  
-  
-> [!NOTE]
-> Это не следует путать с `IDebugProgram2` интерфейса, созданного в более поздней версии ядром отладки (DE).  
-  
- Отправляет порт [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) события создания программы диспетчеру сеанса отладки (SDM) с помощью COM `IConnectionPoint` интерфейс.  
+   Программным способом, когда порт впервые получает новый узел программы, он создает интерфейс [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) для представления программы.  
   
 > [!NOTE]
-> Это не следует путать с `IDebugProgramCreateEvent2` интерфейс, который отправляется DE позже.  
+> Это не следует путать с `IDebugProgram2` интерфейсом, созданным позже модулем отладки (de).  
   
- А также сам интерфейс событий, отправляет порт [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), и [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) интерфейсы, которые представляют порт, обрабатывать, и Программа, соответственно. Вызовы SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) для получения идентификатора GUID DE, который можно отлаживать программы. Идентификатор GUID, первоначально полученную из [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс.  
+ Порт отправляет событие создания программы [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) обратно в Диспетчер отладки сеансов (SDM) с помощью COM- `IConnectionPoint` интерфейса.  
   
- SDM проверяет, находится ли DE включен в список допустимых DEs. SDM получает этот список из параметров активную программу решения, изначально переданные ему размер пакета отладки. DE должны находиться в список допустимых, иначе он не будет присоединен к программе.  
+> [!NOTE]
+> Это не следует путать с `IDebugProgramCreateEvent2` интерфейсом, который позже отправляется de.  
   
- После получения удостоверения DE SDM готовы присоединить ее к программе.  
+ Вместе с интерфейсом событий порт отправляет интерфейсы [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)и [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , которые представляют порт, процесс и программу соответственно. Модель SDM вызывает [IDebugProgram2:: жетенгинеинфо](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) , чтобы получить идентификатор GUID для de, который может выполнять отладку программы. Идентификатор GUID изначально был получен из интерфейса [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
-## <a name="see-also"></a>См. также  
+ Модель SDM проверяет, находится ли параметр DE в списке допустимых DEs. Модель SDM получает этот список из текущих параметров программы решения, изначально переданного ему пакетом отладки. Параметр DE должен находиться в списке допустимых или не будет присоединен к программе.  
+  
+ После того, как удостоверение DE известно, модель SDM готова к присоединению к программе.  
+  
+## <a name="see-also"></a>См. также:  
  [Запуск программы](../../extensibility/debugger/launching-a-program.md)   
- [Присоединение после запуска](../../extensibility/debugger/attaching-after-a-launch.md)   
+ [Подключение после запуска](../../extensibility/debugger/attaching-after-a-launch.md)   
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)

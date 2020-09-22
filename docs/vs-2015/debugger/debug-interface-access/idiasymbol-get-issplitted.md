@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSplitted | Документация Майкрософт
+title: 'IDiaSymbol:: get_isSplitted | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b1aa0eafe321f41d5f9dcf9622e44f9079fc946
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64801714"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842712"
 ---
-# <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
+# <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, является ли символ данных был разбит на статистической обработки или коллекции других символов; Компилятор обрабатывает символы как отдельные сущности, несмотря на то, что они действительно являются частью большего размера символа.  
+Получает флаг, указывающий, был ли символ данных разбит на агрегат или коллекцию других символов. Компилятор обрабатывает символы как отдельные сущности, даже если они являются частью большего символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,24 +35,24 @@ HRESULT get_isSplitted(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если символ был разбит на статистическое вычисление символы; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает `TRUE` , если символ был разбит на совокупность символов; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
- [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) возвращает `TRUE` для всех символов, которые являются частью символ разделения.  
+## <a name="remarks"></a>Remarks  
+ Метод [IDiaSymbol:: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) возвращает `TRUE` для всех символов, которые являются частью символа разделения.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
+|Заголовок:|dia2. h|  
+|Версия:|Пакет SDK для DIA v 8.0|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)

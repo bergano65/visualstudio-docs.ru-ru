@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433082"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842924"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Практическое руководство. Установка конкретного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63433082"
 |Visual Studio Enterprise (исходное обновление 2 без последующих обновлений)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была доступной на момент выпуска обновления 2|
 |Visual Studio Enterprise с обновлением 1 (исходное обновление 1, но с обновлениями, вышедшими до выпуска обновления 2)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была текущей до выпуска обновления 2|
 |Обновление 1 для Visual Studio Enterprise (исходное обновление 1 без последующих обновлений)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была доступной на момент выпуска обновления 1|
-|Visual Studio Enterprise (исходный RTM, но с обновлениями, вышедшими до появления обновления 1)|Visual Studio Enterprise RTM (доступно на  [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была текущей до выпуска обновления 1|
+|Visual Studio Enterprise (исходный RTM, но с обновлениями, вышедшими до появления обновления 1)|Visual Studio Enterprise RTM (доступна на  [странице загрузки подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была текущей до выпуска обновления 1|
 |Visual Studio Enterprise (исходный RTM без обновлений)|Visual Studio Enterprise RTM (доступно на [странице скачивания подписок MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Программа установки Visual Studio будет использовать версию файла feed.xml, которая была доступной на момент выпуска RTM|
 
 > [!IMPORTANT]
@@ -59,5 +59,5 @@ ms.locfileid: "63433082"
 >   - rus (для русского языка)
 >   - trk (для турецкого языка)
 
-## <a name="see-also"></a>См. также раздел
- [Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md)
+## <a name="see-also"></a>См. также:
+ [Руководством администратора Visual Studio](../install/visual-studio-administrator-guide.md)

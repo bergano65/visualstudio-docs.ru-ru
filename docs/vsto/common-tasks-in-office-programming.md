@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b0856d3832d31dd7027b2f264dd0a9cd1d657ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007331"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809863"
 ---
 # <a name="common-tasks-in-office-programming"></a>Распространенные задачи в программировании Office
   Этот раздел призван помочь вам найти ответы на следующие категории часто задаваемых вопросов о программировании решений Office с помощью Visual Studio:
@@ -44,7 +44,7 @@ ms.locfileid: "63007331"
 
 - [Руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-- [Руководство. Обновление решений Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).
+- [Руководство. Обновление решений Office](/previous-versions/4bez6837(v=vs.140)).
 
 - [Руководство. Установка основных сборок взаимодействия Office](../vsto/how-to-install-office-primary-interop-assemblies.md).
 
@@ -216,19 +216,19 @@ ms.locfileid: "63007331"
 
 ## <a name="deployment-tasks"></a><a name="deployment"></a> Задачи развертывания
 
-- [Инструкции. Публикация решения Office с помощью ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+- [Инструкции. Публикация решения Office с помощью ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
-- [Инструкции. Публикация решения Office на уровне документа на сервере SharePoint с помощью ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- [Инструкции. Публикация решения Office на уровне документа на сервере SharePoint с помощью ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-- [Руководство. Установка решения ClickOnce для Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).
+- [Руководство. Установка решения ClickOnce для Office](/previous-versions/bb608592(v=vs.110)).
 
-- [Руководство. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+- [Руководство. Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](/previous-versions/bb608608(v=vs.110)).
 
-- [Руководство. Подготовка служб IIS к развертыванию решений Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).
+- [Руководство. Подготовка служб IIS к развертыванию решений Office](/previous-versions/bb608629(v=vs.110)).
 
-- [Руководство. Обновление развернутых решений Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).
+- [Руководство. Обновление развернутых решений Office](/previous-versions/bb157871(v=vs.110)).
 
-- [Как изменить путь установки решения Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+- [Как изменить путь установки решения Office](/previous-versions/bb608626(v=vs.110)).
 
 ## <a name="see-also"></a>См. также раздел
 - [Приступая к работе &#40;разработке решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

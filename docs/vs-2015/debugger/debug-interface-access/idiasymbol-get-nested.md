@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_nested | Документация Майкрософт
+title: 'IDiaSymbol:: get_nested | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f21a47c677d44e097c84c2f66ac06bd7e1a957dd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64788581"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842492"
 ---
-# <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
+# <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, вложен ли определяемый пользователем тип.  
+Получает флаг, указывающий, является ли определяемый пользователем тип данных вложенным.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT get_nested ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если определяемый пользователем тип является вложенным; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает значение `TRUE` , если определяемый пользователем тип данных является вложенным; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

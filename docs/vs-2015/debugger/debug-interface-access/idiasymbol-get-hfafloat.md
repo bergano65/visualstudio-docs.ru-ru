@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaFloat | Документация Майкрософт
+title: 'IDiaSymbol:: get_hfaFloat | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97f635688ff5cc96885479081962c9a48fccea84
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64782621"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842401"
 ---
-# <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
+# <a name="idiasymbolget_hfafloat"></a>IDiaSymbol::get_hfaFloat
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, содержит ли определяемого пользователем типа (UDT) однородных данных с плавающей запятой aggregate (HFA) типа float.  
+Получает флаг, указывающий, содержит ли определяемый пользователем тип (UDT) однородные статистические данные с плавающей запятой (ХФА) типа float.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +35,23 @@ HRESULT get_hfaFloat( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если определяемого пользователем ТИПА содержит HFA данных типа float; в противном случае возвращает `FALSE`.  
+ заполняет Возвращает `TRUE` , если определяемый пользователем тип содержит данные хфа типа float; в противном случае возвращает `FALSE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
+ Заголовок: Dia2. h  
   
- Библиотека: diaguids.lib  
+ Библиотека: диагуидс. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также:  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

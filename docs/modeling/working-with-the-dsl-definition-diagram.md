@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115289"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810800"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Работа со схемой определений доменных языков
 Схема [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] определения является важным инструментом для определения доменного языка. Вы можете добавлять элементы в модель домена, определять отношения на схеме и изменять макет схемы, чтобы сделать ее более удобной для чтения.
@@ -72,4 +72,4 @@ ms.locfileid: "76115289"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](/previous-versions/bb126564(v=vs.100))

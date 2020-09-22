@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Поддержка структурирования в языковой службе прежних версий | Документация Майкрософт
+title: Практические руководства. Поддержка структурирования в языковой службе прежних версий | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d92baa824dbb70dd591cadef99775f943c651aef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436143"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843349"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Практическое руководство. Поддержка структурирования в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Структурирование позволяет развернуть или свернуть другой области текста. Способ структурирования используется можно определить по-разному в разных языках. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md).  
+Структурирование используется для разворачивания или сворачивания различных областей текста. Способ структурирования можно определить по-разному на разных языках. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md).  
   
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать структурирование, см. в разделе [Пошаговое руководство: структуризация](../../extensibility/walkthrough-outlining.md).  
+ Устаревшие языковые службы реализуются как часть VSPackage, но более новым способом реализации функций языковой службы является использование расширений MEF. Дополнительные сведения о новом способе реализации структуры см. в разделе [Пошаговое руководство. структурирование](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
-> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Рекомендуется как можно скорее начать использовать новый API редактора. Это улучшит производительность языковой службы и позволит использовать новые функции редактора.  
   
- Ниже показано, как для поддержки этой команды для языковой службы.  
+ Ниже показано, как обеспечить поддержку этой команды для языковой службы.  
   
-### <a name="to-support-outlining"></a>Для поддержки структурирование  
+### <a name="to-support-outlining"></a>Поддержка структурирования  
   
-1. Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> на объект языковой службы.  
+1. Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> для своего объекта языковой службы.  
   
-2. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> на текущий объект сеанса структуры для добавления новых структурные области.  
+2. Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> для текущего объекта сеанса структуризации, чтобы добавить новые области структуры.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
- Когда пользователь выбирает **свернуть в определения** на **структура** меню, интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> в службе языка.  
+ Когда пользователь выбирает пункт **Свернуть в определения** в меню **Структура** , интегрированная среда разработки обращается к <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> языковой службе.  
   
- При вызове этот метод передает интегрированной среды разработки <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> указатель (указатель на текстовый буфер) и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (указатель в текущий сеанс структуры).  
+ При вызове этого метода интегрированная среда разработки передает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> указатель (указатель на текстовый буфер) и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (указатель на текущий сеанс структуры).  
   
- Можно вызвать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> метод для нескольких областей структуры, указав этих регионов в `rgOutlnReg` параметра. `rgOutlnReg` Параметр <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> структуры. Этот процесс позволяет указать разные характеристики скрытой области, такие как развернут или свернут определенного региона.  
+ Метод можно вызвать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> для нескольких областей структуры, указав эти регионы в `rgOutlnReg` параметре. `rgOutlnReg`Параметр является <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> структурой. Этот процесс позволяет задавать различные характеристики скрытой области, например, разворачивается или сворачивается определенный регион.  
   
 > [!NOTE]
-> Следите за тем, о скрытии символы новой строки. Скрытый текст должен следовать от начала первой строки до последней символ последней строки в разделе, оставляя видимым последним символом новой строки.  
+> Будьте внимательны, скрывая символы новой строки. Скрытый текст должен находиться от начала первой строки до последнего символа последней строки в разделе, в результате чего отображается итоговый символ новой строки.  
   
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Поддержка скрытого текста в языковой службе прежних версий](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+## <a name="see-also"></a>См. также:  
+ [Как обеспечить поддержку скрытого текста в языковой службе прежних версий](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
  [Практическое руководство. Расширенная поддержка структурирования в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
