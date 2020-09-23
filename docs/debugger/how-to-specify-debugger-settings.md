@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Задание параметров отладчика | Документация Майкрософт
+title: Задание параметров отладчика | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599860"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851948"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Практическое руководство. установку параметров отладчика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно задать различные параметры поведения отладчика, включая способ отображения переменных, возможность представления или непредставления некоторых предупреждающих сообщений, размещение точек останова и влияние останова на работу программы. Параметры отладчика задаются в диалоговом окне **Параметры**.

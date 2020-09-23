@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование проверок во время выполнения машинного кода | Документация Майкрософт
+title: Использование проверок во время выполнения машинного кода | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348851"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852671"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Практическое руководство. Настройка проверок во время выполнения машинного кода
 В проекте Visual Studio C++ можно использовать проверки в машинном коде [runtime_checks](/cpp/preprocessor/runtime-checks) для обнаружения таких распространенных ошибок, возникающих во время выполнения, как:

@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: сбой удаленного входа в систему рабочей группы | Документация Майкрософт'
+title: Сбой удаленного входа в систему рабочей группы | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97045215098b1f59d5f76a928e9e0a1ab8362756
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 36f6c236d306d952785e4d1974b5a31e8040e74b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460096"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851662"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Ошибка: сбой удаленного входа в систему рабочей группы
 Текст сообщения об ошибке:

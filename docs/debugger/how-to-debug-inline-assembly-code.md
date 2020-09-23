@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отладка встроенного ассемблерного кода | Документация Майкрософт
+title: Отладка встроенного ассемблерного кода | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 528defb516b704f0425ac4389a2fd65befef7063
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: b4366c84c87823d052452fa3fa81a3353e0c9e32
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350034"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852404"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Практическое руководство. отладку встроенного кода ассемблера
 

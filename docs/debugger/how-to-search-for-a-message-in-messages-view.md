@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Поиск сообщения в представлении сообщений | Документация Майкрософт
+title: Поиск сообщения в представлении сообщений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7145732ef635d550aa883603b0f56090eb6d1278
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349319"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852013"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Практическое руководство. поиск сообщения в представлении сообщений
 В представлении сообщений вы можете найти конкретное сообщение по значению его дескриптора, типа или идентификатора. Допустимым критерием для поиска считается любое из этих свойств или любое их сочетание. Также вы можете указать начальное направление поиска. Поля в диалоговом окне предварительно заполняются атрибутами текущего выбранного окна.

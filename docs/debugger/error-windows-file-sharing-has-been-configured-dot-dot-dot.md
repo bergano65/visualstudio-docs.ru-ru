@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: совместное использование файлов Windows настроено… | Документация Майкрософт'
+title: общий доступ к файлам Windows настроен... | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af92ff07958656d350f30fb6b7f8f2a2ea5898f1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 17dbb1f3493ead985ac946331fdbff7933b6d604
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460056"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851675"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Ошибка: Совместное использование файлов Windows настроено...
 Совместное использование файлов Windows настроено, поэтому подключение к компьютеру происходит с помощью другого имени пользователя. Это несовместимо с удаленной отладкой

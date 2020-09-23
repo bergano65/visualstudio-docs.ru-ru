@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование инструмента поиска | Документация Майкрософт
+title: Использование инструмента поиска | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851844"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Практическое руководство. использование инструмента поиска
 Инструмент поиска можно использовать в диалоговом окне **Поиск окна** для просмотра свойств или сообщений окна. Инструмент поиска может также находить отключенные дочерние окна и определять, какое окно следует выделить в случае перекрытия включенных дочерних окон.

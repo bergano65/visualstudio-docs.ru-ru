@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: убедитесь в правильности настройки службы DNS на целевом компьютере | Документация Майкрософт'
+title: убедитесь в правильности настройки службы DNS на целевом компьютере | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e374e75caca3dec28800a2eac86d921c861888ab
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: a6848363b3afa5c3216c242136c7909980f0ed60
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460829"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852762"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Ошибка: убедитесь в правильности настройки службы DNS на целевом компьютере
 При выполнении удаленной отладки может появиться следующее сообщение об ошибке:

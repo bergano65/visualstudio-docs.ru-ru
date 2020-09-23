@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: сбой проверки подлинности Kerberos | Документация Майкрософт'
+title: сбой проверки подлинности Kerberos | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460681"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852697"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Ошибка: сбой проверки подлинности Kerberos
 В ходе удаленной отладки может возникнуть следующее сообщение об ошибке:

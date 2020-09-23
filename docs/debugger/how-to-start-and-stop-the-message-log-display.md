@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Запуск и остановка записи сообщений | Документация Майкрософт
+title: Запуск и остановка записи сообщений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d9676d123828e0659480c532eeb48acf3012ccd4
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349046"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851922"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Практическое руководство. запуск и остановку записи сообщений
 Если окно [Представление сообщений](../debugger/messages-view.md) активно, в меню Spy++ **Сообщения** будет доступен параметр **Начать ведение журнала** или **Остановить ведение журнала**, а на панели мониторинга — соответствующая кнопка **Начать ведение журнала** или **Остановить ведение журнала**.

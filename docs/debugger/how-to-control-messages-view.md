@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Управление представлением "Сообщения" | Документация Майкрософт
+title: Управление представлением сообщений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350255"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850973"
 ---
 # <a name="how-to-control-messages-view"></a>Практическое руководство. Управление представлением "Сообщения"
 В Spy++ доступны различные возможности управления содержимым окна [представления сообщений](../debugger/messages-view.md). Вы можете [запустить и прекратить](../debugger/how-to-start-and-stop-the-message-log-display.md) отображение сообщений в любое время, а также определить следующее:

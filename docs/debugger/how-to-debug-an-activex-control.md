@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отладка элемента управления ActiveX | Документация Майкрософт
+title: Отладка элемента управления ActiveX | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bc982db167624e567f88a1cf139b41cad9feb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: fc15d42aa2984a7257687eeb051ce754bace9e81
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350216"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852169"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Практическое руководство. отладку элемента управления ActiveX
 

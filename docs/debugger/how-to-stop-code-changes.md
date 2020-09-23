@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Остановка внесения изменений в код | Документация Майкрософт
+title: Остановка внесения изменений в код | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 62a775944563d63834abf5e32b1f9d4c2453444c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599845"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851883"
 ---
 # <a name="how-to-stop-code-changes"></a>Практическое руководство. остановку внесения изменений в код
 Пока режим "Изменить и продолжить" находится в процессе внесения изменений в код, можно остановить эту операцию.

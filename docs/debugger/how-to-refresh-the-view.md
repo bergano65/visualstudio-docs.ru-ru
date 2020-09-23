@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Обновление представления | Документация Майкрософт
+title: Обновление представления | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349397"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852039"
 ---
 # <a name="how-to-refresh-the-view"></a>Практическое руководство. обновление представления
 Spy++ создает моментальный снимок системных таблиц и обновляет представление на основе этих данных. Важно периодически обновлять системные представления. Если вы открыли представление Spy++ и не обновили представление, эти процессы, потоки и окна, созданные позже, отображаться не будут. Кроме того, могут отображаться элементы, которые больше не существуют. Команда **Обновить** доступна для всех представлений, кроме представления сообщений.

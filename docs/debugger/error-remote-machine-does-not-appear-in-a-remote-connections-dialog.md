@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: удаленный компьютер не отображается в диалоговом окне удаленных подключений | Документация Майкрософт'
+title: Удаленный компьютер не отображается в диалоговом окне удаленных подключений | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac49379f513f753592191632cd3edf1af89a9dc4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5392a6219b1bf8bf42146cacf8216a63f1fa3832
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460602"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852567"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Ошибка: Удаленный компьютер не отображается в диалоговом окне удаленных подключений
 Если удаленный компьютер не отображается в диалоговом окне "Удаленные подключения", проверьте указанные ниже наиболее вероятные причины.
