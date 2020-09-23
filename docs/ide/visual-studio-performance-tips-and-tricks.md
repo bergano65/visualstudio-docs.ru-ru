@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427006"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810328"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
 
@@ -63,7 +63,7 @@ Visual Studio отображает уведомление на желтой па
 
     Задайте параметр **Только указанные модули** вместо **Все модули** и затем укажите, какие модули нужно загружать. Во время отладки также можно щелкнуть определенные модули правой кнопкой мыши в окне **Модули**, чтобы явно включить модуль в загрузку символов. (Чтобы открыть окно во время отладки, выберите **Отладка** > **Окна** > **Модули**.)
 
-    Дополнительные сведения см. в разделе [Общие сведения о файлах символов](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
+    Дополнительные сведения см. в разделе [Общие сведения о файлах символов](?view=vs-2019).
 
 - **Отключение средств диагностики**
 

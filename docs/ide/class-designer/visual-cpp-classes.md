@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590739"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808133"
 ---
 # <a name="c-classes-in-class-designer"></a>Классы проектирования C++ в конструкторе классов
 
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > Команда **Показать производные классы** в коде C++ не поддерживается. Чтобы просмотреть производные классы, перейдите в **представление классов**, разверните узел типа, затем разверните вложенную папку **Производные типы** и перетащите нужные типы на диаграмму классов.
 
-Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование](https://msdn.microsoft.com/library/6td5yws2.aspx) и [Несколько базовых классов](/cpp/cpp/multiple-base-classes).
+Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование](/previous-versions/6td5yws2(v=vs.140)) и [Несколько базовых классов](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Абстрактные классы
 
@@ -177,6 +177,6 @@ typedef struct
 - [Работа с кодом C++](working-with-visual-cpp-code.md)
 - [Классы и структуры](/cpp/cpp/classes-and-structs-cpp)
 - [Типы анонимных классов](/cpp/cpp/anonymous-class-types)
-- [Множественное наследование](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Множественное наследование](/previous-versions/6td5yws2(v=vs.140))
 - [Несколько базовых классов](/cpp/cpp/multiple-base-classes)
 - [Шаблоны](/cpp/cpp/templates-cpp)

@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250171"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740036"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Компиляция кода TypeScript (Node.js)
 
@@ -27,7 +27,7 @@ ms.locfileid: "88250171"
 
 [Пакет npm TypeScript](https://www.npmjs.com/package/typescript) позволяет включить поддержку TypeScript. Когда в проект устанавливается пакет npm или TypeScript 2.1 или более новой версии, в редактор загружается соответствующая версия языковой службы TypeScript.
 
-1. [Следуя инструкциям](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json), установите рабочую нагрузку разработки Node.js и среду выполнения Node.js.
+1. [Следуя инструкциям](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json), установите рабочую нагрузку разработки Node.js и среду выполнения Node.js.
 
    Для самой простой интеграции с Visual Studio создайте проект с помощью одного из шаблонов Node.js для TypeScript, например шаблона пустого веб-приложения Node.js. Либо используйте шаблон Node.js для JavaScript, предоставляемый в Visual Studio, и следуйте инструкциям в этом разделе или используйте проект [Открыть папку](../javascript/develop-javascript-code-without-solutions-projects.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка автономного профилировщика | Документация Майкрософт
+title: Установка автономного профилировщика | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 4005a7af5af1582f31b6c706be150a504355f3d2
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330143"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851155"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного профилировщика
 В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.

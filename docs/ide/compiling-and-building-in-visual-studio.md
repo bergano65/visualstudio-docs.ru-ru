@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76269104"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809037"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Компиляция и сборка в Visual Studio
 
@@ -55,6 +55,6 @@ ms.locfileid: "76269104"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Сборка (компиляция) проектов веб-узлов](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Сборка (компиляция) проектов веб-узлов](/previous-versions/hwxa5aha(v=vs.140))
 - [Компиляция и сборка (Visual Studio для Mac)](/visualstudio/mac/compiling-and-building)
 - [Проекты CMake в Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

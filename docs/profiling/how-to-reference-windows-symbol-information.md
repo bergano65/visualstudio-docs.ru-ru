@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Справочная информация о символах Windows | Документация Майкрософт
+title: Справочная информация о символах Windows | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 3d1527a9fde739ed72af5861a4863dce8e39cbaf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328832"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851363"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Практическое руководство. Справочная информация о символах Windows
 Файлы символов (*PDB*) средств профилирования Visual Studio используются для разрешения символьных имен, например имен функций в двоичных файлах программ. Вы можете выполнить следующие действия, чтобы автоматически скачать и изменить правильные *PDB*-файлы для версии Windows на локальном компьютере.

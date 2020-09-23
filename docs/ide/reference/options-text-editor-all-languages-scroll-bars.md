@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588802"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808094"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Диалоговое окно "Параметры", папка "Текстовый редактор", параметры "Все языки", "Полосы прокрутки"
 Это диалоговое окно позволяет изменять стандартное поведение полосы прокрутки редактора кода. Чтобы отобразить эти параметры, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните вложенную папку **Все языки**, а затем выберите **Полосы прокрутки**.
@@ -69,7 +69,7 @@ ms.locfileid: "75588802"
 
 Посмотрите, как он работает. Для этого откройте большой файл кода и замените любой текст, который повторяется в нескольких местах в файле. На полосе прокрутки отображаются результаты замены, поэтому вы сможете отменить операцию, если изменили что-то не то.
 
-О значении различных цветов и символов при редактировании кода можно узнать из статьи о [расширенной полосе прокрутки](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/).
+О значении различных цветов и символов при редактировании кода можно узнать из статьи о [расширенной полосе прокрутки](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar).
 
 ## <a name="behavior"></a>Поведение
 

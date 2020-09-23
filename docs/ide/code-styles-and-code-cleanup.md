@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743328"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682692"
 ---
 # <a name="code-style-preferences"></a>Параметры стиля кода
 
@@ -64,7 +64,7 @@ ms.locfileid: "89743328"
 
 ## <a name="enforce-code-styles-on-build"></a>Принудительное применение стиля кода в сборке
 
-Начиная с Visual Studio 2019 версии 16.8, куда входит пакет SDK для .NET 5.0 RC2, можно [применять соглашения о написании кода .NET в сборке](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) для всех проектов .NET. Во время сборки нарушения стиля кода .NET будут отображаться в виде предупреждений или ошибок с префиксом IDE. Это позволяет строго применять единообразные стили кода в базе кода.
+Начиная с Visual Studio 2019 версии 16.8, куда входит пакет SDK для .NET 5.0 RC2, можно [применять соглашения о написании кода .NET в сборке](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) для всех проектов .NET. Во время сборки нарушения стиля кода .NET будут отображаться в виде предупреждений или ошибок с префиксом IDE. Это позволяет строго применять единообразные стили кода в базе кода.
 
 ::: moniker-end
 

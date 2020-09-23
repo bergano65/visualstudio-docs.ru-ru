@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247635"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713442"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Руководство по Visual Studio Enterprise
 Начните с этой статьи, если вы хотите сэкономить время, настраивая Visual Studio в корпоративной среде. Это корпоративное руководство содержит советы, которые помогут вам установить и обновить Visual Studio в общих корпоративных сценариях, а также устранить возникающие проблемы. Кроме того, вы узнаете, как сообщить о проблеме, если вам нужна помощь. 
@@ -63,7 +63,7 @@ ms.locfileid: "88247635"
 
 - **[Восстановите](repair-visual-studio.md) Visual Studio, чтобы устранить проблемы с обновлением**. Иногда установка Visual Studio может повреждаться. Восстановление позволяет устранить проблемы, возникшие во время установки, во всех операциях установки, включая обновления. 
 
-- **Учитывайте [базовые показатели безопасности Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)** . Microsoft стремится предоставить своим клиентам защищенные операционные системы, такие как Windows 10 и Windows Server, а также предложить им безопасные приложения, например Microsoft Edge. Помимо гарантии безопасности своих продуктов, Microsoft также позволяет точно управлять средой с помощью различных возможностей конфигурации. 
+- **Учитывайте [базовые показатели безопасности Windows](/windows/security/threat-protection/windows-security-baselines)** . Microsoft стремится предоставить своим клиентам защищенные операционные системы, такие как Windows 10 и Windows Server, а также предложить им безопасные приложения, например Microsoft Edge. Помимо гарантии безопасности своих продуктов, Microsoft также позволяет точно управлять средой с помощью различных возможностей конфигурации. 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

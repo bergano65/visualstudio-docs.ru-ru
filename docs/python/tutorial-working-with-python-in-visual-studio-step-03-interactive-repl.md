@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801572"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811049"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Шаг 3. Использование интерактивного окна REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801572"
 **Интерактивное окно** Visual Studio для Python предоставляет цикл REPL (read–eval–print loop), который значительно сокращает обычный цикл "редактирование — сборка — отладка". **Интерактивное** окно предоставляет все возможности REPL, доступные в командной строке Python. Оно также очень упрощает обмен кодом с помощью исходных файлов в редакторе Visual Studio. Выполнение этой задачи с помощью командной строки представляет сложность.
 
 > [!NOTE]
-> Для решения проблем с REPL обязательно установите пакеты `ipython` и `ipykernel`. Сведения об установке пакетов см. в статье [Справочная информация по вкладкам окна "Окружения Python"](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Для решения проблем с REPL обязательно установите пакеты `ipython` и `ipykernel`. Сведения об установке пакетов см. в статье [Справочная информация по вкладкам окна "Окружения Python"](./python-environments-window-tab-reference.md#packages-tab).
 
 1. Чтобы открыть **интерактивное** окно, в **обозревателе решений** щелкните правой кнопкой мыши среду Python проекта (например, **Python 3.6 (32-разрядная версия)**, как на рисунке выше) и выберите пункт **Открыть интерактивное окно**. Также можно выбрать **Вид** > **Другие окна** > **Интерактивные окна Python** в главном меню Visual Studio.
 

@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579301"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810852"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебник 2. Создание ограниченной по времени математической головоломки
 
@@ -58,6 +58,6 @@ ms.locfileid: "77579301"
 
 ## <a name="see-also"></a>См. также
 
-* [Другие руководства по C#](/visualstudio/get-started/csharp/)
-* [Руководства по Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Другие руководства по C#](../get-started/csharp/index.yml)
+* [Руководства по Visual Basic](../get-started/visual-basic/index.yml)
 * [Руководства по C++](/cpp/get-started/tutorial-console-cpp)

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выбор событий выборки | Документация Майкрософт
+title: Выбор событий выборки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329287"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851298"
 ---
 # <a name="how-to-choose-sampling-events"></a>Практическое руководство. Выбор событий выборки
 По умолчанию средства профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] собирают данные о производительности с интервалом, заданным как число циклов процессора, используемых профилируемым процессом. По умолчанию число циклов в одном интервале — 10 000 000, что приблизительно соответствует 0,01 секунды для процессора 1 ГГц. Вы можете изменить число циклов в интервале и событие выборки. Доступны следующие события выборки:

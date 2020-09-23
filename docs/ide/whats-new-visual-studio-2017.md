@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386853"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809522"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
 
@@ -131,7 +131,7 @@ Visual Studio перемещает свои расширения, а также 
 
 Автоматическое тестирование является ключевой частью любого конвейера DevOps. Оно позволяет согласованно и стабильно тестировать и выпускать решения в более короткие сроки. Потоки CI/CD (непрерывной интеграции и непрерывной доставки) могут помочь повысить эффективность процесса.
 
-Дополнительные сведения об автоматических тестах см. в записи блога [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Конвейер CI/CD для автоматических тестов в DevOps).
+Дополнительные сведения об автоматических тестах см. в записи блога [CI/CD pipeline for automated tests in DevOps](/archive/blogs/visualstudioalmrangers/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently) (Конвейер CI/CD для автоматических тестов в DevOps).
 
 Дополнительные сведения о новых возможностях расширения DevLabs [Инструменты непрерывной поставки для Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) см. в записи блога [Уверенная фиксация: качество кода во время фиксации](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/).
 

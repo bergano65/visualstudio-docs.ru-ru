@@ -9,14 +9,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 042f01bcc53f12c240276374bdce5fb965c67be4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330132"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809613"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование службы .NET Framework и сбор данных об использовании памяти с помощью командной строки профилировщика
+
 Эта статья описывает использование программ командной строки для Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с целью инструментирования службы .NET Framework и сбора данных об использовании памяти. Вы можете собирать данные о выделении памяти или данные как о времени существования объекта, так и о выделении памяти.
 
 > [!NOTE]

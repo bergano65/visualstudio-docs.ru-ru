@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769995"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807889"
 ---
 # <a name="visual-studio-feedback-options"></a>Параметры обратной связи Visual Studio
 
@@ -71,7 +71,7 @@ ms.locfileid: "85769995"
 Существует два способа помочь нам улучшить качество документации:
 
 * Используйте средство обратной связи **Была ли эта страница полезной?** в правом верхнем углу любой страницы документации.
-* Использовать учетную запись GitHub для отзывов о любой странице по Visual Studio на сайте [docs.microsoft.com](/visualstudio/). Для этого используйте кнопку **Отправить отзыв** > **Об этой странице** (внизу любой страницы документации).
+* Использовать учетную запись GitHub для отзывов о любой странице по Visual Studio на сайте [docs.microsoft.com](../index.yml). Для этого используйте кнопку **Отправить отзыв** > **Об этой странице** (внизу любой страницы документации).
 
 ## <a name="contact-microsoft-support"></a>Обратиться в службу поддержки Майкрософт
 

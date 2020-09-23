@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290905"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808120"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Создание операторов IEquatable при создании Equals для структур
 
@@ -20,7 +20,7 @@ ms.locfileid: "85290905"
 
 - C#
 
-**Что?** Позволяет создавать операторы **Equals** и **IEquatable** для [структур](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/struct).
+**Что?** Позволяет создавать операторы **Equals** и **IEquatable** для [структур](/dotnet/csharp/language-reference/builtin-types/struct).
 
 **Когда?** Если у вас есть структура, IEquatable и операторы равенства и неравенства будут добавлены автоматически.
 

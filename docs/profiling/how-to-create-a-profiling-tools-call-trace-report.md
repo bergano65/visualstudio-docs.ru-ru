@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание отчета о трассировке вызовов для средств профилирования | Документация Майкрософт
+title: Создание отчета о трассировке вызовов для средств профилирования | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe1ae2870e2e48d092f303f3e7458e7498c0ba5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1d7d315d1931dfa64ce0070790c833651fa4fc11
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85548165"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851207"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Практическое руководство. Создание отчета трассировки вызовов для средств профилирования
 *Отчет о трассировке вызовов* для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] содержит сведения о времени для каждой точки входа и выхода в функциях приложения, а также для каждого вызова других функций вашей функцией. Отчеты о трассировке вызовов доступны для данных профилирования, только если они были собраны с помощью метода инструментирования.

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896624"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832324"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Описатели формата для C++ в отладчике Visual Studio
 С помощью описателей формата можно изменить формат, в котором значение отображается в окнах **Контрольные значения**, **Видимые** и **Локальные**.
@@ -78,7 +78,7 @@ int main() {
 |bb|двоичное целое число без знака (без 0b в начале)|25|00000000000000000000000000011001|
 |й|экспоненциальное представление|25000000|2.500000e+07|
 |н|более короткое экспоненциальное представление или представление с плавающей запятой|25000000|2.5e+07|
-|c|одиночный символ|0x0065, c|101 'e'|
+|c|одиночный символ|0x0065|101 'e'|
 |s|Строка const char* (с кавычками)|\<location> "hello world"|"Здравствуй, мир!"|
 |**sb**|Строка const char* (без кавычек)|\<location> "hello world"|Здравствуй, мир!|
 |s8|Строка UTF-8|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|

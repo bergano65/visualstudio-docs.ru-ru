@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Фильтрация отчетов из командной строки | Документация Майкрософт
+title: Фильтрация отчетов из командной строки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3461965f0944200c44570cff5362aeeb143ed43c
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1b6408975e8a3d7189db26913f3de75ad1c7c595
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332241"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851142"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Практическое руководство. Фильтрация отчетов из командной строки
 С помощью параметров команды **VSPerfReport** можно фильтровать отчеты за определенный период времени в файле данных профилирования или ограничивать данные одним или несколькими процессами или потоками. Дополнительные сведения об этой команде см. в разделе [VSPerfReport](../profiling/vsperfreport.md).

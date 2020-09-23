@@ -1,5 +1,6 @@
 ---
-title: Не удается подключиться к монитору удаленной отладки Microsoft Visual Studio | Документация Майкрософт
+title: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
+titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81397380"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852248"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 Это сообщение можно увидеть по следующим причинам: монитор удаленной отладки на удаленном компьютере неверно настроен или удаленный компьютер недоступен из-за неполадок в работе сети или из-за наличия брандмауэра.

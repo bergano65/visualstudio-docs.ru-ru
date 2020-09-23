@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589387"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808695"
 ---
 # <a name="symbol-path-command"></a>Команда Symbol Path
 Задает список каталогов для поиска символов отладчиком.
@@ -38,14 +38,14 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="remarks"></a>Remarks
 Если `pathname` не указан, эта команда выводит список текущих путей к символам.
 
-## <a name="example"></a>Пример
+## <a name="example-1"></a>Пример 1
 Этот пример добавляет два пути в список каталогов символов.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>Пример
+## <a name="example-2"></a>Пример 2
 Этот пример отображает список текущих путей к символам, разделенных точкой с запятой.
 
 ```

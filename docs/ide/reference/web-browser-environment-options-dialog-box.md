@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596506"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808682"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Диалоговое окно "Параметры": Страница "Веб-браузер" \> папка "Среда"
 
@@ -52,7 +52,7 @@ ms.locfileid: "75596506"
 
 - **Редактор исходного текста**. Выберите для просмотра исходного кода в [редакторе](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Редактор HTML**. Выберите для просмотра исходного кода в [конструкторе HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Используйте этот вариант, чтобы изменить веб-страницу в одном из двух представлений: представление конструктора или стандартное текстовое представление исходного кода.
+- **Редактор HTML**. Выберите для просмотра исходного кода в [конструкторе HTML](/previous-versions/ex0hkwbx(v=vs.140)). Используйте этот вариант, чтобы изменить веб-страницу в одном из двух представлений: представление конструктора или стандартное текстовое представление исходного кода.
 
 - **Внешний редактор**. Выберите для просмотра источника в другом редакторе. Укажите путь к любому редактору, например Notepad.exe.
 
@@ -66,4 +66,4 @@ ms.locfileid: "75596506"
 ## <a name="see-also"></a>См. также
 
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)
-- [Конструктор HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Конструктор HTML](/previous-versions/ex0hkwbx(v=vs.140))
