@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: 8aab10f3268fa9d9a822487c80efa4318cd9d3a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561472"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005837"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 
@@ -78,10 +78,10 @@ ms.locfileid: "89561472"
 
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 

@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Узнайте, как обратиться к администратору подписки за помощью с вопросами или проблемами.
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005692"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Получение помощи от администратора подписок
 Если ваша подписка на Visual Studio предоставляется вашим работодателем или учебным заведением, вероятно, она была назначена вам администратором подписок.  Администраторы могут назначать или удалять подписки, изменять адреса электронной почты для входа, определять возможность загрузки программного обеспечения и выполнять другие функции, связанные с вашей подпиской.
@@ -36,10 +36,10 @@ ms.locfileid: "89561420"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы еще этого не сделали, рекомендуем активировать эти преимущества, чтобы максимально эффективно использовать вашу подписку Visual Studio:
@@ -48,4 +48,3 @@ ms.locfileid: "89561420"
 - [Azure DevOps](vs-azure-devops.md)
 
 Эти преимущества и многое другое можно найти по адресу https://my.visualstudio.com/benefits.
-

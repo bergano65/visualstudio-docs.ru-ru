@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Узнайте, как работать с подключенными учетными записями Майкрософт и удостоверениями Azure Active Directory
-ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805620"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005242"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Использование подключенных удостоверений в подписках Visual Studio
 Если вы получаете подписку Visual Studio на работе или в учебном заведении и используете учетную запись Майкрософт для входа, администратор подписок может подключить учетную запись Майкрософт к удостоверению в Azure Active Directory (Azure AD) организации.  При этом изменится способ получения доступа к некоторым преимуществам, которые входят в состав вашей подписки. 
@@ -43,10 +43,10 @@ ms.locfileid: "87805620"
 Ответ.  Реализация подключенных удостоверений — простая задача.  Дополнительные сведения см. в [этой статье](personal-email-sign-ins.md). 
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
-После того, как администратор подключит учетные записи Azure AD и Майкрософт, советуем убедиться, что вы можете войти на [портал подписки](https://my.visualstudio.com?wt.mc_id=o~msft~docs) и получить доступ к преимуществам, таким как Azure DevOps, Visual Studio и индивидуальный кредит Azure DevTest. 
+После того, как администратор подключит учетные записи Azure AD и Майкрософт, советуем убедиться, что вы можете войти на [портал подписки](https://my.visualstudio.com?wt.mc_id=o~msft~docs) и получить доступ к преимуществам, таким как Azure DevOps, Visual Studio и индивидуальный кредит Azure DevTest.

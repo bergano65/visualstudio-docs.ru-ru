@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Сведения о преимуществе поддержки сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238625"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006245"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Доступ к форуму поддержки сообщества Azure в рамках подписки Visual Studio
 Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
@@ -92,10 +92,10 @@ ms.locfileid: "88238625"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Знаете ли вы, что вместе со многими подписками Visual Studio предоставляется отдельная сумма на счете в Azure DevTest?  Узнайте, [как активировать](vs-azure.md) свои деньги на счете в Azure.

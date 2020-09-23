@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Сведения о том, как найти и загрузить программное обеспечение Майкрософт в подписках Visual Studio
-ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801832"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005604"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Загрузка программного обеспечения в подписках Visual Studio
 В зависимости от вашей подписки Visual Studio вам доступно различное программное обеспечение Майкрософт.  В этой статье описывается, как найти и загрузить нужное программное обеспечение для максимально эффективного использования подписки. 
@@ -53,10 +53,10 @@ ms.locfileid: "88801832"
 > ![Запрос ключей продуктов Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Нажмите "Запросить ключи", чтобы запросить остальные ключи.")
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о поиске, запросе и экспорте ключей продуктов см. в документации по ключам продуктов:

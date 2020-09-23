@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Сведения о новом предложении Visual Studio с GitHub
-ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248190"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006102"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Общие сведения о подписках Visual Studio с GitHub Enterprise  
 
@@ -79,13 +79,10 @@ ms.locfileid: "88248190"
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы ранее не работали с GitHub, ознакомьтесь с [обучающей лабораторией по GitHub](https://lab.github.com/), в рамках которой вы сможете изучить ряд интересных и практически применимых проектов, работа с которыми будет сопровождаться полезными комментариями.
-
-
-

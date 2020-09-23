@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Сведения об активации подписки Parasoft Virtualize/SOA Test Professional, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904382"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006271"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -95,10 +95,10 @@ ms.locfileid: "85904382"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
-Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md). 
+Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md).

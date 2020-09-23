@@ -7,12 +7,12 @@ ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Сведения о том, как экспортировать список подписчиков, и подробные сведения о назначениях подписки.
-ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65d78625c0536b21b764a595590c7c260aa3b0a8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453565"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005578"
 ---
 # <a name="export-subscription-information"></a>Экспорт сведений о подписке
 На [портале администрирования](https://manage.visualstudio.com) подписок Visual Studio можно экспортировать список подписчиков и сведения об их назначениях. Эти сведения включают имя, адрес электронной почты, запасной адрес электронной почты, уровень подписки, дату назначения, состояние активации, дату окончания срока действия, эталонное поле, разрешенные загрузки, страну, язык, состояние подписки и GUID подписки.  Список экспортируется в виде CSV-файла, который можно открыть в Microsoft Excel для создания диаграмм, сводных данных и других артефактов.
@@ -33,10 +33,10 @@ ms.locfileid: "87453565"
 > ![Экспорт подписчиков](_img/exporting-subscriptions/exporting-subscriptions.png "Щелкните «Экспорт», чтобы скачать полный список назначенных подписок.")
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения об управлении подписками см. в следующих разделах:
@@ -44,5 +44,3 @@ ms.locfileid: "87453565"
     - [Превышение доступности](handle-overclaimed-license.md)
     - [Максимальное использование](maximum-usage.md)
 - Нужна помощь с управлением подписками?  Обратитесь в [службу поддержки по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

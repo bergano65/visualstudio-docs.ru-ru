@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов проводить предварительную инвентаризацию
-ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232758"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004161"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Инвентаризация подготовительной среды
 Подписки на Visual Studio упрощают управление активами благодаря инвентаризации пользователей, а не устройств.
@@ -31,10 +31,10 @@ ms.locfileid: "80232758"
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>См. также раздел
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об обязанностях администраторов:
@@ -42,6 +42,3 @@ ms.locfileid: "80232758"
 - [Управление большими рабочими группами и сторонними подрядчиками](manage-teams.md)
 - [Отслеживание назначений пользователей и обработка заказов](assignments-orders.md)
 - Используйте [Максимальное использование](maximum-usage.md) для учета обязательств по покупке
-
-
-

@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
-ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426555"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006063"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
 Для управления подписками на [портале администрирования подписок](https://manage.visualstudio.com) Visual Studio партнерам необходимо выполнить несколько действий. 
@@ -65,10 +65,10 @@ ms.locfileid: "89426555"
 - [Условия корпоративного лицензирования](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Посетите [портал администрирования подписок](https://manage.visualstudio.com) Visual Studio, чтобы управлять подписками.

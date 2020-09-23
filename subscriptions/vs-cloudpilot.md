@@ -7,12 +7,12 @@ ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Сведения о преимуществе CloudPilot, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274041"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005928"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Преимущество CloudPilot в подписках Visual Studio
 Перенесите приложения в Microsoft Azure, выполнив несколько простых действий. За считаные минуты определите все необходимые изменения кода вплоть до отдельных строк для успешной миграции в контейнеры, виртуальные машины, службы приложений, SQL Azure и (или) SQL MI. Затем выполните миграцию приложений в Azure с помощью мастеров, использующих ASR, DMA и DMS.
@@ -85,10 +85,10 @@ ms.locfileid: "80274041"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

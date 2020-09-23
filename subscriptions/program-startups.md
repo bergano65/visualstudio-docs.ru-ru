@@ -7,12 +7,12 @@ ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о подписках, предоставляемых по программе Microsoft for Startups.
-ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 8e46924d0980eed4eca27eef7766e12c8733d851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561459"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005824"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Подписки Visual Studio для начинающих компаний
 Начинающие компании, вступившие в программу Microsoft for Startups, могут получить пять [ежемесячных облачных подписок Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). 
@@ -41,10 +41,10 @@ ms.locfileid: "89561459"
 Отмена годовой облачной подписки вступает в силу с первого дня месяца, следующего за 12-месячным периодом после покупки или предыдущего продления. Например, если вы приобрели годовую облачную подписку на Visual Studio Enterprise 3 января 2018 года, она будет действовать до 1 февраля 2019 года, а затем будет автоматически продлена на следующий год. Если вы отмените подписку после этой даты и до 1 февраля 2020 года, срок ее действия истечет 1 февраля 2020 года. За отмену подписки до окончания срока действия не предусмотрено возмещение.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 [Узнайте больше о программе Microsoft for Startups](https://startups.microsoft.com)

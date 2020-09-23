@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
-ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561381"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005889"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -61,12 +61,10 @@ ms.locfileid: "89561381"
   - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
 
 ## <a name="see-also"></a>См. также раздел
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Подписчики и администраторы программ могут обратиться напрямую в службу поддержки Microsoft Partner Network, чтобы устранить любые проблемы, в том числе с доступом к подпискам. Посетите страницу [поддержки для партнеров](https://partner.microsoft.com/support), чтобы получить помощь. (Для входа нужно ввести учетные данные MPN.)
-
-

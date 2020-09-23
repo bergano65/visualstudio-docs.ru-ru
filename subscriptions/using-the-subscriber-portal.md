@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: Сведения о полном наборе преимуществ, доступных на портале подписок Visual Studio
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902881"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005203"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Сведения об использовании портала подписчика (my.visualstudio.com)
 
 Портал подписчика Visual Studio, размещенный по адресу [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), станет для вас единым источником всех преимуществ, предоставляемых подпиской Visual Studio.
 
-Чтобы использовать этот портал, выполните вход с учетными данными для вашей подписки.  Это может быть учетная запись Майкрософт (MSA) или адрес электронной почты, предоставленный организацией, например работодателем или учебным заведением.  Дополнительные сведения [о входе](signing-in.md).
+Чтобы использовать этот портал, выполните вход с учетными данными для вашей подписки.  Это может быть учетная запись Майкрософт (MSA) или адрес электронной почты, предоставленный организацией, например работодателем или учебным заведением.  Дополнительные сведения [о входе](./index.yml).
 
 Портал разделен на шесть страниц.  Каждая из них предоставляет доступ к определенным продуктам и (или) услугам, включенным в вашу подписку.  Выделяются следующие категории: преимущества, загрузки, ключи продуктов, подписки, поддержка и Marketplace.
 
@@ -54,10 +54,10 @@ ms.locfileid: "85902881"
 Пора обновить облачную подписку Visual Studio?  Нужно скачать свежие версии расширений для семейства продуктов Visual Studio?  Marketplace помогает пользователям найти расширения, средства и службы, дополняющие возможности Azure DevOps, Azure DevOps Server и Visual Studio Code. Вы даже можете стать издателем и опубликовать в Marketplace собственные расширения.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
-Войдите на портал [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) и ознакомьтесь с вашими преимуществами.  Вы также можете узнать больше о входе на портал с помощью [учетной записи Майкрософт ](sign-in-msa.md)(MSA), [рабочей или учебной учетной записи](sign-in-work.md) и даже [учетной записи GitHub](sign-in-github.md). 
+Войдите на портал [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) и ознакомьтесь с вашими преимуществами.  Вы также можете узнать больше о входе на портал с помощью [учетной записи Майкрософт ](sign-in-msa.md)(MSA), [рабочей или учебной учетной записи](sign-in-work.md) и даже [учетной записи GitHub](sign-in-github.md).

@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: Сведения о настройке учетной записи Azure с оплатой по мере использования.
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902896"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005077"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Использование подписок Azure для разработки и тестирования с оплатой по мере использования
 Работайте вместе с участниками команды в облаке.  Создайте несколько подписок для разработки и тестирования с оплатой по мере использования для совместной работы с другими подписчиками с одновременной поддержкой изоляции между командами и средами.  Вы получите специальные скидки на почасовые тарифы на использование средств разработки и тестирования в рамках ПО подписки Azure.
@@ -45,13 +45,12 @@ ms.locfileid: "85902896"
 4. Теперь вы можете управлять подпиской, отменить или переименовать ее, а также изменить каталог или передать права собственности на выставление счетов.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Многие подписки включают дополнительные преимущества, связанные с Azure, такие как Azure DevOps и индивидуальный кредит Azure DevTest.  См. о преимуществах в описании программы предоставляющей
 - [Azure DevOps](vs-azure-devops.md)
 - [Индивидуальный кредит Azure DevTest](vs-azure.md)
-

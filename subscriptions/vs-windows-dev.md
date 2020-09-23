@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Сведения об учетной записи разработчика Windows, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86875479"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005386"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Учетная запись разработчика Windows в подписках Visual Studio
 Учетная запись разработчика Windows, включенная в выбранные подписки Visual Studio, позволяет отправлять в Магазин Windows платные и бесплатные приложения Windows.
@@ -66,10 +66,10 @@ ms.locfileid: "86875479"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:

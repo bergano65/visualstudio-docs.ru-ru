@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649663"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005294"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "81649663"
 Упрощена процедура сопоставления подписчиков, использующих учетные записи Майкрософт (MSA), с пользователями в Azure Active Directory (Azure AD), и теперь вы можете быстро связывать два типа удостоверений.  Использование удостоверений Azure AD обеспечивает повышенную безопасность и удобство управления подписками.  Дополнительные сведения см. в статье о [входе по личным адресам электронной почты](personal-email-sign-ins.md). 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Добавление подписчиков с помощью групп Azure Active Directory
-Если в вашей организации используется Azure Active Directory (Azure AD), теперь вы можете управлять подписками с помощью групп Azure AD.  Благодаря назначению подписок группам можно очень быстро предоставлять подписки одного типа нескольким пользователям.  Новым пользователям, добавляемым в группу Azure AD, подписка назначается автоматически.  Если пользователь удаляется из группы Azure AD, его подписка также удаляется.  Это позволяет организации автоматизировать управление подписками, экономя время и усилия администраторов.  Дополнительные сведения см. в статье [Добавление нескольких пользователей](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions). 
+Если в вашей организации используется Azure Active Directory (Azure AD), теперь вы можете управлять подписками с помощью групп Azure AD.  Благодаря назначению подписок группам можно очень быстро предоставлять подписки одного типа нескольким пользователям.  Новым пользователям, добавляемым в группу Azure AD, подписка назначается автоматически.  Если пользователь удаляется из группы Azure AD, его подписка также удаляется.  Это позволяет организации автоматизировать управление подписками, экономя время и усилия администраторов.  Дополнительные сведения см. в статье [Добавление нескольких пользователей](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions). 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 Мы рады сообщить о продлении срока действия преимущества CAST Highlight, предлагаемого нашим партнером. 

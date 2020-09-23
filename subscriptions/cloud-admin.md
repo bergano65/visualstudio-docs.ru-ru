@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Настройка администраторов для ежемесячных подписок
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006115"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Настройка администраторов для ежемесячных подписок Visual Studio
 
@@ -60,10 +60,10 @@ ms.locfileid: "87434301"
 Сведения об ежемесячных подписках Visual Studio см. в статье [Обзор](vscloud-overview.md) в разделе "Приобретение подписок". Чтобы приобрести ежемесячные подписки Visual Studio, посетите Visual Studio Marketplace по адресу [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Узнайте больше об управлении подписками Visual Studio.
@@ -71,6 +71,3 @@ ms.locfileid: "87434301"
 - [Назначение нескольких подписок](assign-license-bulk.md)
 - [Изменение подписок](edit-license.md)
 - [Определение максимального использования](maximum-usage.md)
-
-
-

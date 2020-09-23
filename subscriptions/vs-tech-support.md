@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
-ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508942"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004550"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация и использование преимущества технической поддержки в подписках Visual Studio
 Преимущество технической поддержки в подписках Visual Studio предназначено для решения проблем, связанных с заменой и ремонтом, в **нерабочей среде** для продуктов, которые все еще находятся на этапе основной поддержки [жизненного цикла поддержки ](https://support.microsoft.com/lifecycle/search). Стандартная и годовая облачная подписки на Visual Studio Enterprise получают право на четыре обращения в службу поддержки, а стандартная и годовая облачная подписки на Visual Studio Professional — на два в течение 1 года с активации преимущества. Необходимо активировать преимущество в срок действия подписки.
@@ -137,10 +137,10 @@ ms.locfileid: "89508942"
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:

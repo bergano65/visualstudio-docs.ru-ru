@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Сведения о ролях суперадминистратора и администратора, а также о назначении администраторов.
-ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: fc44845ed403e9bf942761203b75c2277fd1aff2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426763"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022714"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Суперадминистраторы и администраторы для соглашений о подписке Visual Studio
 
@@ -45,15 +45,13 @@ ms.locfileid: "89426763"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Следующие шаги
 - Узнайте, как [назначать подписки](assign-license.md)
 - Узнайте обо всех [преимуществах подписки](https://visualstudio.microsoft.com/vs/benefits/)
-- [Настройка параметров соглашения](admin-prefs.md) 
-
-
+- [Настройка параметров соглашения](admin-prefs.md)

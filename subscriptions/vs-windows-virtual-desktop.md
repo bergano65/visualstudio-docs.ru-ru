@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Узнайте, как можно воспользоваться преимуществом "Виртуальный рабочий стол Windows (Майкрософт)" с помощью подписки Visual Studio.
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561368"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005050"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Доступ к Виртуальному рабочему столу Windows в подписках 
 Теперь подписчики Visual Studio могут использовать индивидуальные средства на счете для разработки и тестирования в Azure для служб виртуальных рабочих столов Windows (Майкрософт).  
@@ -23,7 +23,7 @@ ms.locfileid: "89561368"
 - Предоставление виртуальных рабочих столов Windows 7 с бесплатными расширенными обновлениями системы безопасности.
 - Перенос существующих служб удаленных рабочих столов, а также рабочих столов и приложений Windows Server на любой компьютер.
 - Виртуализация рабочих столов и приложений.
-- Управление рабочими столами и приложениями Windows 10, Windows Server и Windows 7 с помощью унифицированного интерфейса управления. Дополнительные сведения о задачах, выполняемых с помощью Виртуального рабочего стола Windows, см. во [вступительном видео](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- Управление рабочими столами и приложениями Windows 10, Windows Server и Windows 7 с помощью унифицированного интерфейса управления. Дополнительные сведения о задачах, выполняемых с помощью Виртуального рабочего стола Windows, см. во [вступительном видео](/azure/virtual-desktop/overview).
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Использование Виртуального рабочего стола Windows в Azure 
 Сейчас подписчикам Visual Studio доступно несколько способов использования подписок Azure для оплаты служб Виртуальных рабочих столов Windows:
@@ -35,13 +35,13 @@ ms.locfileid: "89561368"
 Для использования Виртуального рабочего стола Windows требуется служба Azure Active Directory (Azure AD), к которой будут присоединены виртуальные машины.  Пользователи должны быть членами этой службы Azure AD.  Существует два варианта реализации Azure AD:
 - Службы каталогов Azure AD.  Большинство пользователей может легко реализовать этот вариант.
 - Виртуальная машина, на которой запущен акционный контроллер домена.  Для настройки этого варианта требуются дополнительные усилия, но он предлагает большинству пользователей более низкие эксплуатационные затраты.
-Полный список предварительных требований к использованию Виртуального рабочего стола Windows см. на [странице обзора](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements). 
+Полный список предварительных требований к использованию Виртуального рабочего стола Windows см. на [странице обзора](/azure/virtual-desktop/overview#requirements). 
 
 ## <a name="get-started"></a>Начало работы 
 После выполнения всех необходимых условий нужно выполнить несколько действий для получения реализации.  Перед началом работы ознакомьтесь с этими учебниками:
-- [Создание клиента Виртуального рабочего стола Windows](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- [Создание пула узлов](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) на портале Azure
-- [Управление группами приложений](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) для Виртуального рабочего стола Windows
+- [Создание клиента Виртуального рабочего стола Windows](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- [Создание пула узлов](/azure/virtual-desktop/create-host-pools-azure-marketplace) на портале Azure
+- [Управление группами приложений](/azure/virtual-desktop/manage-app-groups) для Виртуального рабочего стола Windows
 
 ## <a name="eligibility"></a>Право на участие
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
@@ -63,11 +63,11 @@ ms.locfileid: "89561368"
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Виртуальному рабочему столу Windows](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Документация по Azure](/azure/)
+- [Документация по Виртуальному рабочему столу Windows](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>Следующие шаги
 -   Если вам необходимо приобрести подписки Visual Studio, ознакомьтесь со следующими материалами:
      - [Розничные цены](https://visualstudio.microsoft.com/vs/pricing/) на покупки в Microsoft Store
      - [Программы корпоративного лицензирования](https://www.microsoft.com/licensing/default)
--   Сведения о [Виртуальном рабочем столе Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) 
+-   Сведения о [Виртуальном рабочем столе Windows](/azure/virtual-desktop/overview)

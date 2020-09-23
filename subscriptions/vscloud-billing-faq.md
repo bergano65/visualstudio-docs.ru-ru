@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Вопросы выставления счетов за подписки на облачные службы.
-ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641438"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006008"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio
 Сначала [сравните преимущества облачных подписок и цены](https://visualstudio.microsoft.com/vs/pricing/), чтобы понять преимущества каждой подписки Visual Studio, сравнить облачные и стандартные подписки Visual Studio, изучить детали преимуществ для подписчиков и многое другое.
@@ -97,10 +97,10 @@ ms.locfileid: "89641438"
 - [Приобретение облачных подписок Visual Studio для поставщиков облачных решений](vscloud-csp.md)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Купить облачные подписки прямо сейчас

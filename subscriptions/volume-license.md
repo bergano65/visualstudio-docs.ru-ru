@@ -7,12 +7,12 @@ ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Узнайте, как администраторы по соглашениям корпоративного лицензирования могут получить доступ к порталу администрирования подписок Visual Studio
-ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a3846eb9d45c05440559e3ab2cae901d1521245
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233132"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005216"
 ---
 # <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Доступ к порталу администрирования в качестве администратора в рамках соглашения корпоративного лицензирования
 
@@ -29,12 +29,12 @@ ms.locfileid: "80233132"
 - [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Узнайте, как [назначать подписки](assign-license.md)
 - Узнайте обо всех [преимуществах подписки](https://visualstudio.microsoft.com/vs/benefits/)
-- [Настройка параметров соглашения](admin-prefs.md) 
+- [Настройка параметров соглашения](admin-prefs.md)

@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: how-to
 description: Сведения о преимуществе CAST Highlight, доступном в некоторых подписках Visual Studio.
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906070"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005954"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Преимущество CAST Highlight в подписках Visual Studio
 При миграции в облако разработчикам необходимы важные аналитические сведения о переносимом программном обеспечении. С помощью CAST Highlight подписчики Visual Studio могут быстро проверить исходный код приложения, чтобы определить его готовность к облаку для миграции в Azure, и отслеживать ход выполнения во время и после миграции приложения.
@@ -102,10 +102,10 @@ ms.locfileid: "85906070"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Если вы еще не активировали преимущество индивидуального кредита Azure DevTest, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать индивидуальный кредит Azure DevTest.

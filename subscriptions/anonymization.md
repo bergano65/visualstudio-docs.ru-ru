@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Сведения о том, как анонимизируются данные подписчика при потере доступа к подпискам.
-ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006193"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Анонимизация данных подписчика Visual Studio
 При возникновении события, блокирующего подписчику возможность пользования подпиской, например при истечении срока действия подписки или удалении учетной записи для входа подписчика, персональные данные пользователя, такие как имя и учетная запись для входа, шифруются, чтобы сделать их непригодными к использованию.  Это позволяет защитить персональные данные подписчика.
@@ -43,12 +43,10 @@ ms.locfileid: "80232737"
 - Сопоставление удостоверений AAD и MSA через клиент. 
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
-Сведения о запрете анонимизации посредством [связывания удостоверений MSA и AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
-
+Сведения о запрете анонимизации посредством [связывания удостоверений MSA и AAD](/azure/active-directory/b2b/add-users-administrator).

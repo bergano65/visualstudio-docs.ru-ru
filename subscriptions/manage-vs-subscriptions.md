@@ -1,18 +1,18 @@
 ---
 title: Управление подписками Visual Studio
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248435"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005902"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -114,10 +114,10 @@ ms.locfileid: "88248435"
 > - Мы не удаляем личные данные полностью при наличии активных подписок.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Вы управляете подписками для организации?  Узнайте больше об управлении подписками Visual Studio:

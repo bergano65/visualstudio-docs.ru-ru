@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Управление подписками в предложении Visual Studio с GitHub Enterprise
-ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249834"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006180"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Управление подписками Visual Studio с GitHub Enterprise
 Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
@@ -75,10 +75,10 @@ ms.locfileid: "88249834"
 
 ## <a name="see-also"></a>См. также
 
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 

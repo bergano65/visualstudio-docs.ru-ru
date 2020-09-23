@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Узнайте, какое программное обеспечение доступно для скачивания в вашей подписке Visual Studio.
-ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250692"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004015"
 ---
 # <a name="what-software-is-available-for-download"></a>Какое программное обеспечение доступно для загрузки?
 
@@ -31,10 +31,10 @@ ms.locfileid: "88250692"
 Кроме того, вы можете скачать электронную таблицу в формате Excel с полным списком [доступных программ](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) для каждого типа подписки.
 
 ## <a name="see-also"></a>См. также раздел
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Вы можете узнать больше о [загрузке программного обеспечения](download-software.md) или получении и управлении [ключами продуктов](product-keys.md).

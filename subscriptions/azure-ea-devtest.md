@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: Узнайте, как использовать специальные цены на Azure DevTest, доступные клиентам с соглашениями Enterprise.
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903144"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005744"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Предложение Azure DevTest по соглашению Enterprise
 
@@ -42,10 +42,10 @@ ms.locfileid: "85903144"
 0. Щелкните **Приобрести**.  (Используя это предложение, на самом деле вы ничего не покупаете.)
 
 ## <a name="see-also"></a>См. также раздел
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше об управлении подписками Visual Studio.
@@ -54,6 +54,3 @@ ms.locfileid: "85903144"
 - [Изменение подписок](edit-license.md)
 - [Удаление подписок](delete-license.md)
 - [Определение максимального использования](maximum-usage.md)
-
-
-

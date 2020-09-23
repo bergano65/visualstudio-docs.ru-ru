@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Сведения о преимуществе "Приложения Microsoft 365 для предприятий" и о его установке
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561256"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006128"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Приложения Microsoft 365 для предприятий в подписках Visual Studio
 Преимущество "Приложения Microsoft 365 для предприятий" (ранее Office 365 профессиональный плюс) доступно в выбранных подписках Visual Studio. 
@@ -78,13 +78,13 @@ ms.locfileid: "89561256"
 - У вас есть вопросы о среде IDE Visual Studio, Azure DevOps или других продуктах либо службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Индивидуальное предоставление денег на счет Azure DevTest.](vs-azure.md) Если вы планируете разрабатывать приложения для Office, вам потребуется активировать [подписку разработчика Office](vs-office-dev.md).
+- [Индивидуальное предоставление денег на счет Azure DevTest.](vs-azure.md) Если вы планируете разрабатывать приложения для Office, вам потребуется активировать [подписку разработчика Office](./vs-m365.md).

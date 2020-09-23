@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509761"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005346"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -111,12 +111,12 @@ ms.locfileid: "89509761"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 После создания учетной записи вы можете приступать к обучению.  Посетите [https://www.pluralsight.com](https://www.pluralsight.com) и нажмите элемент **вход** в правом верхнем углу страницы, чтобы начать новый курс или вернуться к курсу, который уже выполняется.
 
-Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md). 
+Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md).

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5fc25f6bb25c9471b1de1d464fa6afc4c80b3b
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 8505f98163c57fe276bcf4c76195fe843300394f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89410745"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809470"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>История новых возможностей в документации по Visual Studio
 
@@ -31,25 +31,25 @@ ms.locfileid: "89410745"
 
 **Новые статьи**
 
-- [CA1417. Не используйте в строковых параметрах `OutAttribute` для P/Invoke](/visualstudio/code-quality/ca1417). Добавлена документация по CA1417.
-- [CA1805. Не делайте лишних инициализаций.](/visualstudio/code-quality/ca1805) Добавлена документация по CA1805.
-- [CA1836. Отдавайте предпочтение IsEmpty перед Count (при наличии)](/visualstudio/code-quality/ca1836). Добавлена документация по CA1836 (предпочтение IsEmpty вместо Count)
-- [CA2016. Переадресуйте параметр CancellationToken методам, которые его принимают](/visualstudio/code-quality/ca2016). Документ CA2016 (переадресация параметра CancellationToken методам, которые его принимают).
-- [CA2350. Убедитесь, что входные данные DataTable.ReadXml() являются доверенными](/visualstudio/code-quality/ca2350) (базовая документация по правилам десериализации DataSet и DataTable).
-- [CA2351. Убедитесь, что входные данные DataSet.ReadXml() являются доверенными](/visualstudio/code-quality/ca2351) (базовая документация по правилам десериализации DataSet и DataTable).
-- [CA2352. Ненадежные данные DataSet или DataTable в сериализуемом типе могут быть уязвимыми для атак удаленного выполнения кода](/visualstudio/code-quality/ca2352) (базовая документация по правилам десериализации DataSet и DataTable).
-- [CA2353. Ненадежные данные DataSet или DataTable в сериализуемом типе](/visualstudio/code-quality/ca2353) (базовая документация по правилам десериализации DataSet и DataTable).
-- [CA2354. Ненадежные данные DataSet или DataTable в графе десериализованных объектов могут быть уязвимыми для атаки удаленного выполнения кода](/visualstudio/code-quality/ca2354) (базовая документация по правилам десериализации DataSet и DataTable).
-- [CA2355. Ненадежные данные DataSet или DataTable в графе десериализованных объектов](/visualstudio/code-quality/ca2355) (базовая документация по правилам десериализации DataSet и DataTable).
-- [CA2356. Ненадежные данные DataSet или DataTable в графе десериализованных веб-объектов](/visualstudio/code-quality/ca2356) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA1417. Не используйте в строковых параметрах `OutAttribute` для P/Invoke](../code-quality/ca1417.md). Добавлена документация по CA1417.
+- [CA1805. Не делайте лишних инициализаций.](../code-quality/ca1805.md) Добавлена документация по CA1805.
+- [CA1836. Отдавайте предпочтение IsEmpty перед Count (при наличии)](../code-quality/ca1836.md). Добавлена документация по CA1836 (предпочтение IsEmpty вместо Count)
+- [CA2016. Переадресуйте параметр CancellationToken методам, которые его принимают](../code-quality/ca2016.md). Документ CA2016 (переадресация параметра CancellationToken методам, которые его принимают).
+- [CA2350. Убедитесь, что входные данные DataTable.ReadXml() являются доверенными](../code-quality/ca2350.md) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA2351. Убедитесь, что входные данные DataSet.ReadXml() являются доверенными](../code-quality/ca2351.md) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA2352. Ненадежные данные DataSet или DataTable в сериализуемом типе могут быть уязвимыми для атак удаленного выполнения кода](../code-quality/ca2352.md) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA2353. Ненадежные данные DataSet или DataTable в сериализуемом типе](../code-quality/ca2353.md) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA2354. Ненадежные данные DataSet или DataTable в графе десериализованных объектов могут быть уязвимыми для атаки удаленного выполнения кода](../code-quality/ca2354.md) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA2355. Ненадежные данные DataSet или DataTable в графе десериализованных объектов](../code-quality/ca2355.md) (базовая документация по правилам десериализации DataSet и DataTable).
+- [CA2356. Ненадежные данные DataSet или DataTable в графе десериализованных веб-объектов](../code-quality/ca2356.md) (базовая документация по правилам десериализации DataSet и DataTable).
 
 ### <a name="containers"></a>Контейнеры
 
 **Новые статьи**
 
-- [Настройка функции "Локальный процесс с Kubernetes"](/visualstudio/containers/configure-local-process-with-kubernetes) (конфигурация YAML для локального процесса с Kubernetes).
-- [Использование Локального процесса с Kubernetes (предварительная версия)](/visualstudio/containers/local-process-kubernetes) — перенос Dev Spaces.
-- [Принцип работы функции "Локальный процесс с Kubernetes"](/visualstudio/containers/overview-local-process-kubernetes)
+- [Настройка функции "Локальный процесс с Kubernetes"](../containers/configure-local-process-with-kubernetes.md) (конфигурация YAML для локального процесса с Kubernetes).
+- [Использование Локального процесса с Kubernetes (предварительная версия)](../containers/local-process-kubernetes.md) — перенос Dev Spaces.
+- [Принцип работы функции "Локальный процесс с Kubernetes"](../containers/overview-local-process-kubernetes.md)
   - Локальный процесс для Kubernetes. Добавлен раздел по маршрутизации.
   - Перенос Dev Spaces.
 
@@ -57,51 +57,51 @@ ms.locfileid: "89410745"
 
 **Обновленные статьи**
 
-- [Журнал изменений (инструменты Visual Studio для Unity, Windows)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity), версия журнала изменений VSTU увеличена до 4.7.1.0
-- [Журнал изменений (инструменты Visual Studio для Unity, Mac)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac), версия журнала изменений VSTUM увеличена до 2.7.1.0
+- [Журнал изменений (инструменты Visual Studio для Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md), версия журнала изменений VSTU увеличена до 4.7.1.0
+- [Журнал изменений (инструменты Visual Studio для Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md), версия журнала изменений VSTUM увеличена до 2.7.1.0
 
 ### <a name="get-started"></a>Начало работы
 
 **Новые статьи**
 
-- [Учебник. Расширение простого консольного приложения C#](/visualstudio/get-started/csharp/tutorial-console-part-2), выпущена первая версия руководства по расширению Sidewalk
+- [Учебник. Расширение простого консольного приложения C#](../get-started/csharp/tutorial-console-part-2.md), выпущена первая версия руководства по расширению Sidewalk
 
 ### <a name="ide"></a>IDE
 
 **Новые статьи**
 
-- [Рекомендации сообщества разработчиков](/visualstudio/ide/developer-community-guidelines), добавлены рекомендации по DevCom
-- [Завершение IntelliSense для неимпортируемых типов и методов расширения](/visualstudio/ide/reference/intellisense-completion-unimported-types-extension-methods)
+- [Рекомендации сообщества разработчиков](./developer-community-guidelines.md), добавлены рекомендации по DevCom
+- [Завершение IntelliSense для неимпортируемых типов и методов расширения](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
 ### <a name="install"></a>Установка
 
 **Новые статьи**
 
-- [Обновление Visual Studio с использованием минимального автономного макета](/visualstudio/install/update-minimal-layout), задокументирована возможность минимального макета
-- [Руководство по Visual Studio Enterprise](/visualstudio/install/visual-studio-enterprise-guide) — инструкции по использованию Enterprise.
+- [Обновление Visual Studio с использованием минимального автономного макета](../install/update-minimal-layout.md), задокументирована возможность минимального макета
+- [Руководство по Visual Studio Enterprise](../install/visual-studio-enterprise-guide.md) — инструкции по использованию Enterprise.
 
 ### <a name="javascript"></a>JavaScript
 
 **Новые статьи**
 
-- [Компиляция кода TypeScript (Node.js)](/visualstudio/javascript/compile-typescript-code-npm) — компиляция и сборка для TypeScript.
-- [Компиляция кода TypeScript (ASP.NET Core)](/visualstudio/javascript/compile-typescript-code-nuget) — компиляция и сборка для TypeScript.
+- [Компиляция кода TypeScript (Node.js)](../javascript/compile-typescript-code-npm.md) — компиляция и сборка для TypeScript.
+- [Компиляция кода TypeScript (ASP.NET Core)](../javascript/compile-typescript-code-nuget.md) — компиляция и сборка для TypeScript.
 
 ### <a name="msbuild"></a>MSBuild
 
 **Новые статьи**
 
-- [Общие метаданные элементв MSBuild](/visualstudio/msbuild/common-msbuild-item-metadata), добавлена таблица в MSBuild для необязательных метаданных с элементами Link и LinkBase
-- [Фильтры решений в MSBuild](/visualstudio/msbuild/solution-filters) — фильтры решений MSBuild.
+- [Общие метаданные элементв MSBuild](../msbuild/common-msbuild-item-metadata.md), добавлена таблица в MSBuild для необязательных метаданных с элементами Link и LinkBase
+- [Фильтры решений в MSBuild](../msbuild/solution-filters.md) — фильтры решений MSBuild.
 
 ### <a name="test"></a>Тест
 
 **Новые статьи**
 
-- [Отладка и анализ модульных тестов с помощью Обозревателя тестов](/visualstudio/test/debug-unit-tests-with-test-explorer) — работа по улучшению производительности в обозревателе тестов.
+- [Отладка и анализ модульных тестов с помощью Обозревателя тестов](../test/debug-unit-tests-with-test-explorer.md) — работа по улучшению производительности в обозревателе тестов.
 
 **Обновленные статьи**
 
-- [Настройка модульных тестов с помощью файла *.runsettings*](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+- [Настройка модульных тестов с помощью файла *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
   - Внесены сведения о настройке модульных тестов с помощью файла .runsettings
   - Изменено описание параметра blame, добавлен пример.

@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Сведения о том, как найти, запросить и экспортировать ключи продукта в подписках Visual Studio
-ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004971"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Поиск и запрос ключей продуктов в подписках Visual Studio
 В этой статье объясняется, как находить, запрашивать и экспортировать ключи продуктов из https://my.visualstudio.com/productkeys.  Дополнительные сведения об активации продукта с помощью ключей, версиях ключей в розничных и корпоративных лицензиях, а также об ограничениях на ежедневный запрос ключей продуктов см. в [обзоре ключей продуктов](product-keys.md).
@@ -67,10 +67,10 @@ ms.locfileid: "88250738"
 Чтобы экспортировать ключи, просто нажмите ссылку **Экспорт всех ключей** в правой части страницы "Ключи продуктов".  Создается файл KeysExport.xml, который вы можете открыть или сохранить.  Вам нужно открыть файл с помощью приложения, позволяющего обрабатывать XML-файлы.  Например, файл можно открыть как книгу только для чтения в Excel.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Когда вы будете готовы загрузить программное обеспечение и использовать ключи, посетите https://my.visualstudio.com/downloads.  Дополнительные сведения о загрузке программного обеспечения см. в [обзоре загрузки](download-software.md).

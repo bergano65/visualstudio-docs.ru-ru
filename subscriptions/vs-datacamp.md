@@ -7,12 +7,12 @@ ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561498"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006336"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 К подходящим подпискам Visual Studio относятся подписки на DataCamp.  С помощью DataCamp можно получить все необходимые навыки обработки и анализа данных, работая в браузере. Вы выбираете, когда и чему вы учитесь. Обучаться обработке и анализу данных стало намного проще, так как вам не нужно устанавливать программное обеспечение и выполнять особые требования к оборудованию.
@@ -84,10 +84,10 @@ ms.locfileid: "89561498"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Ознакомьтесь с другими возможностями профессиональной разработки в вашей подписке:

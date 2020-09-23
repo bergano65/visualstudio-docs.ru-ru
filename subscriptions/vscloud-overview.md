@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641564"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005320"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
@@ -127,10 +127,10 @@ ms.locfileid: "89641564"
 - [Приобретение облачных подписок Visual Studio для поставщиков облачных решений](vscloud-csp.md)
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Купить облачные подписки

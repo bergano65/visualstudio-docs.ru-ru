@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Сведения о проблемах, которые могут возникнуть при входе в подписки Visual Studio
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801884"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005281"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Проблемы при входе в подписки Visual Studio
 Чтобы использовать свою подписку Visual Studio, вам сначала нужно войти в систему.  В зависимости от подписки вы можете настроить ее с помощью учетной записи Майкрософт (MSA) или удостоверения Azure Active Directory (AAD).  В этой статье рассматриваются некоторые проблемы, которые могут возникнуть при входе в подписку.
@@ -64,10 +64,10 @@ ms.locfileid: "88801884"
 С точки зрения подписчика здесь важно правильно взаимодействовать с администратором, чтобы составить представление о системе удостоверений в вашей компании. Возможно, администратору потребуется обновить параметры вашей учетной записи на портале администрирования или вам нужно будет создать учетную запись Майкрософт на основе рабочего адреса электронной почты. Прежде чем создавать MSA, обсудите с администратором политику в отношении таких действий и возможные проблемы. 
 
 ## <a name="see-also"></a>См. также раздел
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Сведения о том, как [связать учетные записи MSA и AAD](/azure/active-directory/b2b/add-users-administrator) внутри AAD.

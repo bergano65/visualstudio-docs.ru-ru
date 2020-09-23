@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Сведения о том, как активировать индивидуальный кредит Azure DevTest, входящий в вашу подписку Visual Studio.
-ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247326"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91003850"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 Подписчики Visual Studio могут использовать Microsoft Azure без дополнительной платы.  Вы получаете [ежемесячный индивидуальный кредит Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) и можете использовать Azure как персональную песочницу для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure.  Размер кредита зависит от уровня подписки.
@@ -48,21 +48,21 @@ ms.locfileid: "88247326"
 > [!IMPORTANT]
 > Перевести ресурсы на другую подписку Azure необходимо до того, как текущая подписка будет отключена, иначе вы потеряете доступ к своим данным.  
 
-Существует несколько способов продолжить использование ежемесячного кредита в Azure.  Чтобы сохранить ресурсы Azure, необходимо [перенести ресурсы](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure вне зависимости от выбранного действия ниже. 
+Существует несколько способов продолжить использование ежемесячного кредита в Azure.  Чтобы сохранить ресурсы Azure, необходимо [перенести ресурсы](/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure вне зависимости от выбранного действия ниже. 
 
 - **Если вы приобрели подписку Visual Studio напрямую**, приобретите новую или обновите текущую подписку через Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Если в вашей организации есть ответственный за приобретение подписок**, [обратитесь к администратору подписки на Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
-- **При наличии другой активной подписки на Visual Studio** того же уровня, которая связана с другой учетной записью Майкрософт, вы можете перенести преимущество Azure в другую активную подписку на Visual Studio, [добавив альтернативную учетную запись](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) на [портале подписок](https://my.visualstudio.com/subscriptions) Visual Studio.  
+- **Если в вашей организации есть ответственный за приобретение подписок**, [обратитесь к администратору подписки на Visual Studio](./contact-my-admin.md) и запросите подписку, предоставляющую требуемый вам ежемесячный кредит.  
+- **При наличии другой активной подписки на Visual Studio** того же уровня, которая связана с другой учетной записью Майкрософт, вы можете перенести преимущество Azure в другую активную подписку на Visual Studio, [добавив альтернативную учетную запись](./manage-vs-subscriptions.md#managing-my-profile) на [портале подписок](https://my.visualstudio.com/subscriptions) Visual Studio.  
 
 Таблица "Право на участие" ниже показывает, сколько кредитов включает каждый тип подписки.  
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Перевод подписки Azure на оплату по мере использования
 
-Если кредит или подписка на Visual Studio больше не требуются, но вы хотите продолжать использовать ресурсы Azure, [перенесите ресурсы](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure или переведите подписку на оплату по мере использования, [удалив предельную сумму расходов](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
+Если кредит или подписка на Visual Studio больше не требуются, но вы хотите продолжать использовать ресурсы Azure, [перенесите ресурсы](/azure/azure-resource-manager/management/move-resource-group-and-subscription) в другую подписку Azure или переведите подписку на оплату по мере использования, [удалив предельную сумму расходов](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
 Если не предпринять ни одно из вышеуказанных действий, подписка Azure будет отключена и удалена через 30 дней после получения соответствующего уведомления по электронной почте.  
 
@@ -117,10 +117,10 @@ ms.locfileid: "88247326"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о средствах и службах Майкрософт см. в документации по следующим продуктам:

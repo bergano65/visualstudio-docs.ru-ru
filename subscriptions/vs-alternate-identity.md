@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Как добавить альтернативный идентификатор для подписки Visual Studio, который будет использоваться для Azure DevOps и Azure
-ms.openlocfilehash: 0e19bff8885810e505dbe6481340e7a112160af0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800779"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005718"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Идентификаторы для подписчиков Visual Studio
 Когда вы активируете подписку Visual Studio, мы привязываем ваш идентификатор (или имя пользователя), использованный при активации, к подписке Visual Studio. Таким образом мы сможем узнать вас на [портале подписчиков Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), в Azure DevOps и в Azure.
@@ -58,10 +58,10 @@ ms.locfileid: "88800779"
 Если Azure DevOps по-прежнему не распознает вашу подписку, [обратитесь в службу поддержки Azure DevOps](https://azure.microsoft.com/support/devops/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги 
 Дополнительные сведения об использовании Azure, Azure DevOps или интегрированной среды разработки Visual Studio см. в следующих ресурсах:

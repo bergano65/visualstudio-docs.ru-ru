@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Узнайте об управлении подписками Visual Studio в рамках соглашения о продуктах и службах Майкрософт (MPSA)
-ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561394"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006089"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Подписки Visual Studio в соглашении о продуктах и службах Майкрософт (MPSA)
 Если вы приобрели подписки Visual Studio по программе MPSA, то существуют несколько моментов, которые следует учесть перед тем, как вы сможете стать администратором подписок Visual Studio и назначать подписки своим пользователям. Если вы уже назначены в качестве администратора, то можете перейти непосредственно на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com/).
@@ -63,10 +63,10 @@ ms.locfileid: "89561394"
 > После завершения процесса перехвата домена вы станете удовлетворять пяти условиям из раздела "Перед установлением связи с клиентом (управляемый клиент)". После выполнения всех условий останется только связаться со службой поддержки MPSA для подготовки дополнительных администраторов подписок Visual Studio.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Узнайте больше об управлении подписками Visual Studio.

@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Сведения о доступности продуктов в файлах для загрузки программного обеспечения для подписок Visual Studio
-ms.openlocfilehash: c7ab3f717b1af3447d88587e8455f0572fd09d09
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561485"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005863"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Доступность продуктов в файлах для загрузки программного обеспечения в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.
@@ -39,10 +39,10 @@ ms.locfileid: "89561485"
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Для установки и активации некоторых программ может потребоваться ключ продукта.  Дополнительные сведения о том, как получить ключи продуктов и управлять ими, см. в статье о [ключах продуктов](product-keys.md). 

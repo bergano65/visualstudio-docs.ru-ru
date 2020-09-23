@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Просмотр предупреждений о производительности | Документация Майкрософт
+title: Просмотр предупреждений о производительности | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c7121b3c860a43efde6268c240adb9a8287fc261
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: acd6fea43fcf256b91b4bdafad10f47c11523f92
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331318"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851324"
 ---
 # <a name="how-to-view-performance-warnings"></a>Практическое руководство. Просмотр предупреждений о производительности
 В предупреждениях о производительности Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] указываются проблемы профилируемого приложения, которые могут замедлить выполнение программы. Предупреждения также могут указывать на то, что может потребоваться изменить методы сбора для получения более полезных данных. Предупреждения о производительности создаются в сеансе профилирования автоматически и отображаются в окне **Список ошибок** при открытии файла данных профилирования в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

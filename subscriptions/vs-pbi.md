@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Сведения о подписке на Power BI Pro, входящей в некоторые подписки Visual Studio.
-ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005030"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro в подписках Visual Studio
 
@@ -114,11 +114,11 @@ ms.locfileid: "88801689"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Чтобы активировать преимущество Power BI Pro, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-- Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md). 
+- Воспользуйтесь собственной песочницей разработки, активировав [индивидуальный кредит Azure DevTest](vs-azure.md).

@@ -1,18 +1,18 @@
 ---
 title: Работа с подписками с превышенным числом назначений | Документация Майкрософт
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 03/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Узнайте, как администраторы могут устранить проблему, связанную с превышением числа назначений подписок
-ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453726"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022593"
 ---
 # <a name="over-allocated-subscriptions"></a>Подписки с превышением числа назначений
 Если заказ изменяется после добавления подписчиков, число назначенных подписок может превысить число лицензий, принадлежащих организации. Это называется превышением числа назначений.  
@@ -36,16 +36,12 @@ ms.locfileid: "87453726"
 ## <a name="billing-and-true-up"></a>Выставление и сверка счетов
 Если ваша организация заключила соглашение Enterprise (EA), администраторы могут назначать подписки, не приобретая их. При этом оплата за такие подписки осуществляется позднее в рамках процесса согласования, который также называется процессом сверки.  Если число назначений превышено, в ходе сверки вашей организации выставляется счет за максимальное количество подписок, назначенных пользователям.  Это верно даже в том случае, если на момент проведения сверки текущее количество назначенных подписок меньше, чем максимальное.  Дополнительные сведения о мониторинге максимального использования см. в разделе [Максимальное использование](maximum-usage.md).
 
-> [!Important]
-> Подписки Visual Studio с GitHub Enterprise, которые назначены администраторами подписки Visual Studio и никогда не приобретались, не будут видны администраторам GitHub Enterprise в организации. Чтобы отображать подписки GitHub Enterprise, при первичном назначении подписки необходимо совершить покупку, включающую **как минимум одну** подписку Visual Studio Professional с GitHub Enterprise или Visual Studio Enterprise с GitHub Enterprise.
->
-> В целях соблюдения требований лицензионных соглашений в отношении подписки клиент отвечает за проверку того, что для каждой назначенной таким образом подписки GitHub присутствует соответствующая подписка Visual Studio с GitHub, назначенная на портале управления.
 
-## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+## <a name="see-also"></a>См. также раздел
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 - Дополнительные сведения об управлении [подписками Visual Studio с GitHub Enterprise](assign-github.md).

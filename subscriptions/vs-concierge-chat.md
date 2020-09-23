@@ -7,12 +7,12 @@ ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Сведения о преимуществе Concierge Chat, входящем в состав подписок Visual Studio.
-ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906055"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006323"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat в подписках Visual Studio
 Службы Concierge Chat помогают найти сведения о продуктах и техническую документацию, а также предоставляют помощь по использованию преимуществ подписки Visual Studio.
@@ -62,10 +62,10 @@ ms.locfileid: "85906055"
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>См. также
-- [Документация по Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Документация по Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Документация по Azure](https://docs.microsoft.com/azure/)
-- [Документация по Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Документация по Visual Studio](/visualstudio/)
+- [Документация по Azure DevOps](/azure/devops/)
+- [Документация по Azure](/azure/)
+- [Документация по Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Следующие шаги
 Дополнительные сведения о средствах и службах Майкрософт см. в документации по следующим продуктам:
