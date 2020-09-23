@@ -1,7 +1,8 @@
 ---
 title: Рисование фигур и контуров
+description: Использование Blend для Visual Studio для добавления дополнительных сведений к фигурам и путям
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350827"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022516"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 
@@ -26,7 +27,7 @@ ms.locfileid: "85350827"
 
 Фигуры можно найти в окне **Ресурсы**.
 
-![Категория фигур в окне "Ресурсы"](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Снимок экрана: Категория "фигуры" окна "активы" в Blend для Visual Studio":::
 
 Перетащите любую нужную фигуру в область рисования. Затем используйте маркеры фигуры, чтобы масштабировать, поворачивать, перемещать и наклонять фигуру.
 
@@ -99,7 +100,7 @@ ms.locfileid: "85350827"
 
 ![Объединение контуров](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Действие|
+|Номер|Действие|
 |-|-|
 |![Две фигуры до объединения](../designers/media/b1_1.png)|Две фигуры до объединения|
 |![Объединение](../designers/media/b1_2.png)|Объединение|
