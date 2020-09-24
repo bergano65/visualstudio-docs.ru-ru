@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_typeIds | Документация Майкрософт
+title: 'IDiaSymbol:: get_typeIds | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 410f8afdac24139791c19c3936049c855a51d4f9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798161"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91146907"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Извлекает массив значений типа специфичные для компилятора идентификатор для этого символа.  
+Извлекает массив значений идентификаторов типов, относящихся к компилятору, для этого символа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,16 +37,16 @@ HRESULT get_typeIds ( 
   
 #### <a name="parameters"></a>Параметры  
  `cTypeIds`  
- [in] Размер буфера для хранения данных.  
+ окне Размер буфера для хранения данных.  
   
  `pcTypeIds`  
- [out] Возвращает количество `typeIds` записаны, или, если `typeIds` является `NULL`, затем общее число доступных идентификаторов типов.  
+ заполняет Возвращает число `typeIds` записанных или, если `typeIds` имеет значение `NULL` , а затем общее число доступных идентификаторов типов.  
   
  `typeIds[]`  
- [out] Массив, заполненный идентификаторы типа.  
+ заполняет Массив, который должен быть заполнен идентификаторами типов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK` ; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 > Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
