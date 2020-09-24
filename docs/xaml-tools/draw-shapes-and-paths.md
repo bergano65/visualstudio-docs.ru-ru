@@ -27,7 +27,7 @@ ms.locfileid: "91022516"
 
 Фигуры можно найти в окне **Ресурсы**.
 
-:::image type="content" source="media/blend-shapes.png" alt-text="Снимок экрана: Категория "фигуры" окна "активы" в Blend для Visual Studio":::
+:::image type="content" source="media/blend-shapes.png" alt-text="Снимок экрана: Категория фигуры окна активы в Blend для Visual Studio":::
 
 Перетащите любую нужную фигуру в область рисования. Затем используйте маркеры фигуры, чтобы масштабировать, поворачивать, перемещать и наклонять фигуру.
 
